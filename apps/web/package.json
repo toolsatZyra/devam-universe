@@ -11,6 +11,7 @@
     "verify:sarthi-ui": "node scripts/verify-sarthi-ui.mjs",
     "verify:sarthi-conversation-ui": "node scripts/verify-sarthi-conversation-ui.mjs",
     "verify:sarthi-understanding-phase0": "node scripts/validate-sarthi-understanding-phase0.mjs",
+    "verify:sarthi-phase1-admission": "node scripts/validate-sarthi-phase1-admission.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --exclude e2e/**",
     "test:product": "node scripts/run-product-tests.mjs",

@@ -1,0 +1,269 @@
+{
+  "contract": "DEVAM_SARTHI_PHASE1_EVIDENCE_ADMISSION_V1",
+  "status": "partial_admission_no_baseline_run",
+  "created_at": "2026-08-08",
+  "heldout_fixture_sha256": "1692482a6e36e422c47af353f69936288ddc401208b442fef89a1098ff6632fb",
+  "claim_ceiling": "evidence_packet_admission_only_no_answer_or_quality_claim",
+  "admission_rules": {
+    "all_declared_roles_required": true,
+    "exact_artifact_fixity_required": true,
+    "scope_fields_required": true,
+    "restricted_source_text_may_be_quoted": false,
+    "devam_reviewed_synthesis_must_remain_labelled": true,
+    "fixture_readiness_is_not_admission": true
+  },
+  "admission_index": [
+    ["uhp_01_ramcharitmanas_edition", "admitted"],
+    ["uhp_02_devi_mahatmya_chapter", "candidate_not_packeted"],
+    ["uhp_03_ganesha_hymn_source", "candidate_not_packeted"],
+    ["uhp_04_diwali_distinct_sources", "candidate_not_packeted"],
+    ["uhp_05_panchang_exactness", "candidate_not_packeted"],
+    ["uhp_06_ayodhya_text_place", "candidate_not_packeted"],
+    ["uhp_07_devi_translation_boundary", "candidate_not_packeted"],
+    ["uhp_08_ganesha_symbolism", "blocked_partial_evidence"],
+    ["uhp_09_diwali_many_observances", "candidate_not_packeted"],
+    ["uhp_10_navaratri_durga_puja", "candidate_not_packeted"],
+    ["uhp_11_ramayana_dharma_tension", "blocked_partial_evidence"],
+    ["uhp_12_hanuman_deliberation", "admitted"],
+    ["uhp_13_ganesha_origin_variants", "blocked_research_required"],
+    ["uhp_14_diwali_story_variants", "blocked_partial_evidence"],
+    ["uhp_15_shakti_place_worlds", "blocked_partial_evidence"],
+    ["uhp_16_ramayana_telling_scope", "blocked_partial_evidence"],
+    ["uhp_17_devi_theology_scope", "blocked_research_required"],
+    ["uhp_18_caste_text_history", "blocked_research_required"],
+    ["uhp_19_sacred_geography_historicity", "blocked_research_required"],
+    ["uhp_20_devotion_social_critique", "blocked_research_required"],
+    ["uhp_21_ganesh_chaturthi_practice", "admitted"],
+    ["uhp_22_navaratri_household_practice", "admitted"],
+    ["uhp_23_durga_puja_participant", "admitted"],
+    ["uhp_24_lakshmi_kali_practice", "admitted"],
+    ["uhp_25_panchang_location_change", "candidate_not_packeted"],
+    ["uhp_26_truth_and_protection", "blocked_partial_evidence"],
+    ["uhp_27_grief_without_bypass", "blocked_partial_evidence"],
+    ["uhp_28_family_ritual_consent", "candidate_not_packeted"],
+    ["uhp_29_giving_household_duty", "candidate_not_packeted"],
+    ["uhp_30_work_care_choice", "candidate_not_packeted"]
+  ],
+  "packets": [
+    {
+      "packet_id": "phase1-uhp-01-ramcharitmanas-v1",
+      "scenario_id": "uhp_01_ramcharitmanas_edition",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion"],
+      "present_roles": ["source_assertion"],
+      "scope": {
+        "work": "Ramcharitmanas",
+        "edition": "Belvedere Press Prayag second edition with pinned Hindi Wikisource page transcriptions",
+        "passage_or_page": "802 published page projections across seven sopanas; 359 low-quality and 11 malformed-markup pages excluded",
+        "rights_lane": "derivative_allowed"
+      },
+      "artifacts": [
+        {
+          "path": "apps/web/src/lib/sarthi/ramcharitmanas-preview.ts",
+          "sha256": "cec341c709b6660d35eb316fe0b6e927d9ea00864bb39fc14b249746bf5c6252",
+          "contract": "RAMCHARITMANAS_PREVIEW_FIXITY",
+          "admitted_use": "source_metadata_and_product_derivative_projection",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "passage_root_sha256": "92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26",
+        "hosted_verification_sha256": "29746a552a55bf176fb798f6fb39b88a821a48aa808316fc43031d2bd3c90e17",
+        "published_page_count": 802,
+        "excluded_page_count": 370
+      },
+      "admission_note": "Admitted for edition-and-coverage answers only; it cannot support every Ramcharitmanas edition, interpretation, translation, performance or tradition."
+    },
+    {
+      "packet_id": "phase1-uhp-12-hanuman-deliberation-v1",
+      "scenario_id": "uhp_12_hanuman_deliberation",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "source_aligned_translation", "devam_reviewed_synthesis"],
+      "present_roles": ["source_assertion", "source_aligned_translation", "devam_reviewed_synthesis"],
+      "scope": {
+        "episode": "Valmiki Ramayana Book 5 deliberation before Hanuman speaks to Sita",
+        "witness": "GRETIL sarga 28, Griffith Canto XXX and Dutt Section XXX",
+        "available_information": "ordered episode-content crosswalk with literal numbering divergence preserved",
+        "decision_boundary": "one reviewed episode is not a universal rule or every Ramayana telling"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/ramayana/sundarakanda-hanuman-deliberation-v1.json",
+          "sha256": "b89e00ea873f7d116b22d7fdc6a2385ac3898546a3bd392e46d40fa321181c8e",
+          "contract": "DEVAM_REVIEWED_RAMAYANA_EPISODE_V1",
+          "admitted_use": "source_metadata_and_reviewed_synthesis_without_source_quotation",
+          "source_rights_lanes": ["citation_only"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "witness_count": 3,
+        "source_sha256": [
+          "a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901",
+          "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
+          "6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062"
+        ]
+      },
+      "admission_note": "Admitted only for the reviewed episode synthesis; citation-only witnesses may identify and support the review but their text is not returned."
+    },
+    {
+      "packet_id": "phase1-uhp-21-ganesh-chaturthi-v1",
+      "scenario_id": "uhp_21_ganesh_chaturthi_practice",
+      "languages": ["en", "hi"],
+      "required_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "present_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "scope": {
+        "region": "west-india",
+        "household": "individual or family-led household",
+        "tradition": "smarta-west-india",
+        "stay_duration": "family-selected; not assigned by the packet",
+        "date": "2026-09-14 under the named location-aware madhyahna rule"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/rituals/ganesh-chaturthi-west-india-v1.json",
+          "sha256": "2c90bfba1e8eda5539186c96baca7027db3af7dd6ce6a293b3c86a9e7e47fa34",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "reviewed_devam_procedure_only",
+          "source_rights_lanes": ["reference_only", "private_evidence", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/ganesh-chaturthi-west-india-content-v1.json",
+          "sha256": "eaa9f4576ecd9587ea205039ca633c569ad61d4f79637e8eb7774182a86163dd",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_product_content_and_scope",
+          "source_rights_lanes": ["citation_only", "internal_only", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "decision_rule_id": "nirnayasindhu-1865-bhadrapada-shukla-chaturthi-madhyahna-v1",
+        "location_aware": true,
+        "tradition_aware": true
+      },
+      "admission_note": "Admitted only for the bounded household lane; restricted and reference sources support review but are never exposed or quoted."
+    },
+    {
+      "packet_id": "phase1-uhp-22-navaratri-v1",
+      "scenario_id": "uhp_22_navaratri_household_practice",
+      "languages": ["en", "hi"],
+      "required_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "present_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "scope": {
+        "region": "north-india or west-india",
+        "household": "individual or family-led household",
+        "tradition": "smarta-north-india or smarta-west-india",
+        "festival_day": "Shardiya Navaratri opening and sustainable nine-night household sequence",
+        "date": "resolved through the named location- and tradition-aware calendar lane"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/rituals/shardiya-navaratri-north-west-india-v1.json",
+          "sha256": "d25a2d4d1d16fe56e119ff78ad03d6d825ef09c5a40611c03e411ddb995fcbb9",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "reviewed_devam_procedure_only",
+          "source_rights_lanes": ["reference_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/shardiya-navaratri-north-west-india-content-v1.json",
+          "sha256": "320b79891597460b33a0ee031411d805afce56b8c9b64c35a18fc2f02df250b1",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_product_content_and_scope",
+          "source_rights_lanes": ["citation_only", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "region_count": 2,
+        "family_practice_overrides_generic_guidance": true,
+        "formal_priest_liturgy_included": false
+      },
+      "admission_note": "Admitted only for North/West India household support; Bengal Durga Puja and South Indian forms remain separate."
+    },
+    {
+      "packet_id": "phase1-uhp-23-mahashtami-v1",
+      "scenario_id": "uhp_23_durga_puja_participant",
+      "languages": ["en", "hi"],
+      "required_roles": ["living_practice_observation", "ordinary_practical_inference"],
+      "present_roles": ["living_practice_observation", "ordinary_practical_inference"],
+      "scope": {
+        "region": "bengal",
+        "community_role": "visitor, community participant, family participant or accessible remote participant",
+        "festival_day": "Maha Ashtami on the bounded Kolkata 2026 lane",
+        "ritual_authority": "family, temple, math, priest or puja committee; never Sarthi"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/rituals/bengal-mahashtami-community-participant-2026-v1.json",
+          "sha256": "8f4437ecb12e0c1cf6cd803312162f2b616f291b60dd24de309a6ee00f38625b",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_product_participant_content_and_scope",
+          "source_rights_lanes": ["derivative_allowed", "citation_only", "product_cleared"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "decision_rule_id": "kolkata-shukla-ashtami-navami-sandhi-24-minutes-each-side-v1",
+        "live_schedule_required": true,
+        "priest_led_liturgy_included": false
+      },
+      "admission_note": "Admitted for participant guidance only; live programme and priest-led ritual remain external local authority."
+    },
+    {
+      "packet_id": "phase1-uhp-24-lakshmi-kali-v1",
+      "scenario_id": "uhp_24_lakshmi_kali_practice",
+      "languages": ["en", "hi"],
+      "required_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "present_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "scope": {
+        "region": "west-india household Lakshmi Puja and Bengal participant Kali Puja",
+        "household_or_participant": "household for Lakshmi Puja; home, temple or public-puja participant for Kali Puja",
+        "tradition": "distinct Smarta West India and Bengali Shakta lanes",
+        "festival_day": "separately resolved observance lanes; no merged universal Diwali night"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/rituals/diwali-lakshmi-puja-west-india-v1.json",
+          "sha256": "c73343da9b873400ed7bcc307b30aedb7de751c38c6e672ac41f98de05b389c1",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "reviewed_devam_procedure_only",
+          "source_rights_lanes": ["reference_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/diwali-lakshmi-puja-west-india-content-v1.json",
+          "sha256": "f084c0355b1706831058e54586b8b2c782b0c24ae3f724de9494ff3c0f5d6f4f",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_product_content_and_scope",
+          "source_rights_lanes": ["citation_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bengal-kali-puja-participation-v1.json",
+          "sha256": "77520232ca50f335ae7eae075ae84c2cbf20dc7eb825dd73430768e82badd460",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "reviewed_devam_procedure_only",
+          "source_rights_lanes": ["reference_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bengal-kali-puja-participant-content-v1.json",
+          "sha256": "11cc811ae40c803ac8b3816b156fdc957f87fafcd59fc428119a8f1a7e02ac67",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_product_participant_content_and_scope",
+          "source_rights_lanes": ["citation_only", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "distinct_lane_count": 2,
+        "universal_diwali_procedure": false,
+        "formal_priest_liturgy_included": false
+      },
+      "admission_note": "Admitted only as two explicitly non-equivalent practice lanes; neither is authority for the other."
+    }
+  ]
+}

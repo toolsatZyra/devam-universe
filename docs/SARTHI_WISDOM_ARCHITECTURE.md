@@ -393,6 +393,12 @@ same model and evidence across grounded RAG, prompt-only guidance,
 context/coverage routing and the thin Governor. Warmth, fluency and answer length
 are controlled so charisma cannot counterfeit wisdom.
 
+The 2026-08-08 Phase 0 held-out set now freezes sixty independently rated
+English/Hindi scenarios. Phase 1 evidence admission is partial: six of thirty
+bilingual pairs have exact, rights-bounded, hash-bound packets; twenty-four
+remain explicitly unadmitted. This is packet readiness only. The runtime,
+answer baseline, blinded review and quality comparison remain unrun.
+
 ## Accepted, pilot, deferred and rejected
 
 ### Accepted now
