@@ -243,6 +243,62 @@ quarantined and unserved until quality sampling and correction; these holdings
 are not yet exact searchable text, a product-ready translation, every Sanskrit
 edition, every Ramayana tradition, or the complete hero universe.
 
+### Manmatha Nath Dutt complete electronic narrative lane (2026-08-08)
+
+Project Gutenberg's four separately identified UTF-8 electronic volumes now
+supply complete narrative-body coverage of Dutt's seven-kāṇḍa English prose
+translation: Bāla and Ayodhyā in eBook 57265; Araṇya, Kiṣkindhā and Sundara in
+57826; Yuddha in 60188; and Uttara in 62496. All four live normal-TLS responses
+exactly matched the unique objects already restored in `source_vault`, so the
+current acquisition added four provenance records and zero duplicate payload
+bytes.
+
+Devam publishes 652 source-relative SECTION units from the four immutable text
+carriers. Their raw spans losslessly cover every byte from each volume's first
+kāṇḍa body header to immediately before the Project Gutenberg END marker.
+Project Gutenberg and transcriber front matter, license/footer text, URLs and
+trademark framing are not product-indexed. Citation identity is source hash,
+volume, kāṇḍa, source-relative ordinal and byte span—never the printed section
+number alone.
+
+Literal numbering defects remain evidence, not silent corrections: Bāla has 75
+headings through literal 77, Araṇya 75 through 75, Sundara 66 through 67,
+Yuddha 128 through 130, and Uttara 123 through 124. Duplicate, missing and
+non-increasing literal markers are preserved in every locator. Ayodhyā's 118
+and Kiṣkindhā's 67 headings are locally contiguous. All seven kāṇḍa terminal
+boundaries are present; Bāla closes coherently into the next literal body header
+without an invented end formula.
+
+The product-rights record combines the underlying 1891-1894 publication,
+Dutt's 1912 death, India's section 22 life-plus-60 term, Project Gutenberg's
+United States public-domain record and trademark-removal boundary, and the
+seven Commons public-domain scan records. This is a documented India/United
+States product determination, not legal advice.
+
+Hosted closure reproduces 4 source rows, 7 kāṇḍas and 652 published passages
+with zero hierarchy/status mismatches and zero provider-framing matches. The
+local and hosted source/text/span root is
+`3226377be38be511463e8c09d56898a6b9f658d649cb376e51e3ac7c94a81c42`;
+the anonymous passage RPC retrieves the terminal Uttara unit at source ordinal
+123 / literal CXXIV.
+
+Fixities:
+
+- text acquisition plan SHA-256 `1cf9f89bd4ff94cce545f40e42f64db756011ff5341485b58cf7c18d9dbb6123`;
+- product plan SHA-256 `3eca2354bbe81418a11a2d9372237643d8c522e04ce88ce90018ba08ebdfeb5c`;
+- packet SHA-256 `edc6d858017a4788a65feac404583374b007b1084749925381abd47ca1a79d13`;
+- locator-bound passage root `1efc394e9fd07b394d74158344120d3cd247b63c8a362759266687c23c5307d8`;
+- deterministic report SHA-256 `747b5bf11ff769c969f7052e0c80e648a1e7e00602ece5ebe6222618bdcdd20f`;
+- hosted verification report SHA-256 `0b120fbc2d32153f29e6f4bff873511eac0c3d02d84c4f3fe08a42e072188597`;
+- compiler SHA-256 `de64cec20c7cf710c1b458cd08684bc973c97f0ffe117919b03bf39c1c25c2ad`;
+- test SHA-256 `f7aa128238528110183096f5adbbcf33c141b5e7e5539b4a5555e95110f408c7`;
+- 9/9 deterministic tests pass.
+
+This completes the exact four-carrier electronic narrative boundary, not
+page-by-page reconciliation to every print scan, corrected printed numbering,
+an edition-identified Sanskrit base, Hindi, every translation/commentary,
+every recension/tradition, the Ramayana hero universe, or the MVP library.
+
 ### Wikisource status and selected Sundara passage (2026-08-07)
 
 A fresh normal-TLS observation of the seven English Wikisource Index records
@@ -265,7 +321,7 @@ It authorizes an original summary with page-addressed citation, not an exact OCR
 quotation or a full-volume transcription claim.
 
 1. A product-usable, edition-identified Sanskrit Vālmīki Rāmāyaṇa with all seven kāṇḍas and exact sarga/śloka structure; the current GRETIL carrier supplies internal structural coverage but not this product/edition gate.
-2. A strong complete Hindi translation and a complete seven-book product-usable English translation, each attached to an identified Sanskrit edition and kept separate from the omission-bearing six-book Griffith electronic edition.
+2. A strong complete Hindi translation and further product-usable English translations attached to identified Sanskrit editions. The new complete seven-kāṇḍa Dutt electronic body remains separate from the omission-bearing six-book Griffith edition and still needs page-by-page print reconciliation.
 3. Ramcharitmanas: correct the edition-matched OCR against the public-domain Belvedere scan, or acquire a complete source-aligned transcription; then add Hindi/English aids, major commentary, performance, manuscript/print, script, and regional traditions. The structurally complete scan and quarantined OCR are not yet exact searchable text, and the GRETIL transliteration remains private evidence.
 4. Kamba, Krittivasi, Adhyatma, Jain, Buddhist, tribal/folk, and Southeast Asian Ramayana traditions as separately identified works and expressions.
 5. Story, character, place, route, temple, festival, ritual, ethics, and interpretation dossiers with passage evidence and explicit variant boundaries.

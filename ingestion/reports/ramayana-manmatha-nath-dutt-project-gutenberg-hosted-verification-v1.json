@@ -1,0 +1,69 @@
+{
+  "contract": "DEVAM_DUTT_RAMAYANA_PROJECT_GUTENBERG_HOSTED_VERIFICATION_V1",
+  "result": "PASS",
+  "observed_at": "2026-08-08",
+  "project_ref": "bucgdaunsuzithfigtmr",
+  "project_name": "devam-universe",
+  "target": {
+    "work_slug": "valmiki-ramayana",
+    "expression_language_code": "en",
+    "expression_kind": "prose_translation",
+    "expression_attribution": "Translated into English prose from Sanskrit by Manmatha Nath Dutt; Project Gutenberg electronic transcription produced by James Simmons",
+    "edition_title": "The Rāmāyana, translated into English prose by Manmatha Nath Dutt — Project Gutenberg four-volume electronic edition"
+  },
+  "hosted_closure": {
+    "source_count": 4,
+    "kanda_count": 7,
+    "passage_count": 652,
+    "passage_state_mismatches": 0,
+    "hierarchy_state_mismatches": 0,
+    "provider_framing_matches": 0,
+    "hosted_text_span_root_sha256": "3226377be38be511463e8c09d56898a6b9f658d649cb376e51e3ac7c94a81c42",
+    "local_text_span_root_sha256": "3226377be38be511463e8c09d56898a6b9f658d649cb376e51e3ac7c94a81c42",
+    "source_profiles": [
+      {"sha256": "076d03a68387f8ccd43b0cc211829f017ef120746d7b0f68a401f1c6fb4b221d", "passages": 123, "min_ordinal": 1, "max_ordinal": 123},
+      {"sha256": "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034", "passages": 193, "min_ordinal": 1, "max_ordinal": 193},
+      {"sha256": "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b", "passages": 128, "min_ordinal": 1, "max_ordinal": 128},
+      {"sha256": "c3ef74a07ef0cf016eb0428deb76d6036d13be343c65225946471113a2da475b", "passages": 208, "min_ordinal": 1, "max_ordinal": 208}
+    ]
+  },
+  "anonymous_rpc": {
+    "function": "search_public_passages",
+    "status": 200,
+    "query": "This Story ends with the Uttara",
+    "result_count": 1,
+    "source_sha256": "076d03a68387f8ccd43b0cc211829f017ef120746d7b0f68a401f1c6fb4b221d",
+    "source_ordinal": 123,
+    "kanda_slug": "uttara",
+    "literal_marker": "CXXIV",
+    "rights_lane": "product_allowed",
+    "publication_state": "published",
+    "source_completeness_status": "complete_four_carrier_seven_kanda_electronic_body_with_literal_section_numbering_defects_not_page_reconciled"
+  },
+  "hosted_census": {
+    "works": 21,
+    "expressions": 26,
+    "editions": 26,
+    "source_objects": 76,
+    "passages": 8289,
+    "published_passages": 2496,
+    "nonpublished_passages": 5793,
+    "claims": 1228,
+    "claim_evidence_links": 1233,
+    "entities": 6,
+    "relationships": 4,
+    "atlas_nodes": 41,
+    "atlas_edges": 45
+  },
+  "completion_denials": {
+    "page_by_page_reconciliation_to_all_seven_print_scans_complete": false,
+    "literal_section_numbering_gap_free_or_corrected": false,
+    "complete_valmiki_sanskrit_source_or_critical_edition": false,
+    "complete_ramayana_tradition_or_all_recensions": false,
+    "all_ramayana_translations_commentaries_and_adaptations": false,
+    "hindi_translation_present_in_this_expression": false,
+    "ramayana_hero_universe_complete": false,
+    "mvp_library_complete": false
+  },
+  "source_payloads_copied_to_database_or_app": false
+}

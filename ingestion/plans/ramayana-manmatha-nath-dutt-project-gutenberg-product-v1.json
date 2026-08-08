@@ -1,0 +1,279 @@
+{
+  "contract": "DEVAM_DUTT_RAMAYANA_PROJECT_GUTENBERG_INGESTION_V1",
+  "ingestion_id": "ramayana-manmatha-nath-dutt-project-gutenberg-product-v1",
+  "action": "register_existing_source_references_and_publish_exact_narrative_sections_without_copying_source_payloads",
+  "upstream_acquisition": {
+    "plan_path": "ingestion/plans/ramayana-manmatha-nath-dutt-project-gutenberg-text-acquisition-v1.json",
+    "expected_contract": "DEVAM_LEAN_SOURCE_VAULT_ACQUISITION_V1"
+  },
+  "work": {
+    "slug": "valmiki-ramayana",
+    "canonical_title": "Vālmīki Rāmāyaṇa",
+    "work_kind": "itihasa",
+    "tradition_scope": ["Ramayana", "Valmiki", "Sanskrit epic"],
+    "summary": "The Sanskrit epic attributed to Vālmīki, represented in Devam by separately identified source editions, recensions, translations, and adaptations."
+  },
+  "expression": {
+    "language_code": "en",
+    "script_code": "Latn",
+    "expression_kind": "prose_translation",
+    "attribution": "Translated into English prose from Sanskrit by Manmatha Nath Dutt; Project Gutenberg electronic transcription produced by James Simmons",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "The Rāmāyana, translated into English prose by Manmatha Nath Dutt — Project Gutenberg four-volume electronic edition",
+    "publisher": "Project Gutenberg",
+    "publication_place": null,
+    "publication_year": 2020,
+    "edition_statement": "Four electronic volumes released 2018-2020 from Dutt's 1891-1894 seven-kāṇḍa translation; narrative bodies only, preserving literal SECTION labels and their defects",
+    "identifiers": {
+      "project_gutenberg_ebooks": [57265, 57826, 60188, 62496],
+      "source_print_publication_years": "1891-1894"
+    }
+  },
+  "provider": {
+    "name": "Project Gutenberg",
+    "acquired_at": "2026-08-08T10:05:00+05:30",
+    "producer": "James Simmons"
+  },
+  "source_objects": [
+    {
+      "volume": 1,
+      "name": "pg57265.txt",
+      "ebook_id": 57265,
+      "sha256": "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034",
+      "bytes": 1021947,
+      "object_path": "objects/sha256/7d/7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034",
+      "media_type": "text/plain; charset=utf-8",
+      "source_url": "https://www.gutenberg.org/cache/epub/57265/pg57265.txt",
+      "provider_title": "The Rāmāyana, Volume 1. Bālakāndam and Ayodhyākāndam",
+      "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 1. BĀLAKĀNDAM AND AYODHYĀKĀNDAM ***",
+      "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 1. BĀLAKĀNDAM AND AYODHYĀKĀNDAM ***"
+    },
+    {
+      "volume": 2,
+      "name": "pg57826.txt",
+      "ebook_id": 57826,
+      "sha256": "c3ef74a07ef0cf016eb0428deb76d6036d13be343c65225946471113a2da475b",
+      "bytes": 1177505,
+      "object_path": "objects/sha256/c3/c3ef74a07ef0cf016eb0428deb76d6036d13be343c65225946471113a2da475b",
+      "media_type": "text/plain; charset=utf-8",
+      "source_url": "https://www.gutenberg.org/cache/epub/57826/pg57826.txt",
+      "provider_title": "The Rāmāyana, Volume 2. Āranya, Kishkindhā, and Sundara Kāndam",
+      "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 2. ĀRANYA, KISHKINDHĀ, AND SUNDARA KĀNDAM ***",
+      "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 2. ĀRANYA, KISHKINDHĀ, AND SUNDARA KĀNDAM ***"
+    },
+    {
+      "volume": 3,
+      "name": "pg60188.txt",
+      "ebook_id": 60188,
+      "sha256": "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b",
+      "bytes": 882581,
+      "object_path": "objects/sha256/8d/8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b",
+      "media_type": "text/plain; charset=utf-8",
+      "source_url": "https://www.gutenberg.org/cache/epub/60188/pg60188.txt",
+      "provider_title": "The Rāmāyana, Volume 3. Yuddhakāndam",
+      "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 3. YUDDHAKĀNDAM ***",
+      "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 3. YUDDHAKĀNDAM ***"
+    },
+    {
+      "volume": 4,
+      "name": "pg62496.txt",
+      "ebook_id": 62496,
+      "sha256": "076d03a68387f8ccd43b0cc211829f017ef120746d7b0f68a401f1c6fb4b221d",
+      "bytes": 573393,
+      "object_path": "objects/sha256/07/076d03a68387f8ccd43b0cc211829f017ef120746d7b0f68a401f1c6fb4b221d",
+      "media_type": "text/plain; charset=utf-8",
+      "source_url": "https://www.gutenberg.org/cache/epub/62496/pg62496.txt",
+      "provider_title": "The Rāmāyana, Volume 4. Uttara Kānda",
+      "start_marker": "*** START OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 4. UTTARA KĀNDA ***",
+      "end_marker": "*** END OF THE PROJECT GUTENBERG EBOOK THE RĀMĀYANA, VOLUME 4. UTTARA KĀNDA ***"
+    }
+  ],
+  "structure": {
+    "citation_contract": "DEVAM_DUTT_PG_SECTION_BYTE_SPAN_V1",
+    "body_definition": "For each volume, narrative coverage begins at the first literal kāṇḍa body header and ends immediately before the Project Gutenberg END marker. Every byte in that interval is covered once by a source-relative passage; Project Gutenberg header, transcriber front matter, license, footer and trademark framing are excluded.",
+    "passage_count": 652,
+    "kanda_count": 7,
+    "edition_completeness_status": "complete_four_carrier_seven_kanda_electronic_body_with_literal_section_numbering_defects_not_page_reconciled",
+    "text_status": "source_aligned_normalized_projection_from_exact_utf8_byte_span_product_usable_literal_numbering_preserved",
+    "kanda_profiles": [
+      {
+        "volume": 1,
+        "kanda_ordinal": 1,
+        "kanda_slug": "bala",
+        "kanda_title": "Bālakāṇḍa",
+        "header_literal": "BALAKANDAM.",
+        "section_count": 75,
+        "first_literal_number": 1,
+        "last_literal_number": 77,
+        "missing_literal_numbers": [32, 43, 73],
+        "duplicate_literal_numbers": [72],
+        "nonincreasing_transitions": [{"source_ordinal": 71, "from": 72, "to": 72}],
+        "terminal_literal": null,
+        "terminal_evidence": "The final Bāla section closes coherently and is immediately followed by the AYODHYAKANDAM body header; no invented Bāla end formula is asserted."
+      },
+      {
+        "volume": 1,
+        "kanda_ordinal": 2,
+        "kanda_slug": "ayodhya",
+        "kanda_title": "Ayodhyākāṇḍa",
+        "header_literal": "AYODHYAKANDAM",
+        "section_count": 118,
+        "first_literal_number": 1,
+        "last_literal_number": 118,
+        "missing_literal_numbers": [],
+        "duplicate_literal_numbers": [],
+        "nonincreasing_transitions": [],
+        "terminal_literal": "End of Ayodhyakandam."
+      },
+      {
+        "volume": 2,
+        "kanda_ordinal": 3,
+        "kanda_slug": "aranya",
+        "kanda_title": "Araṇyakāṇḍa",
+        "header_literal": "ARANYA KANDAM.",
+        "section_count": 75,
+        "first_literal_number": 1,
+        "last_literal_number": 75,
+        "missing_literal_numbers": [6],
+        "duplicate_literal_numbers": [56],
+        "nonincreasing_transitions": [{"source_ordinal": 56, "from": 56, "to": 56}],
+        "terminal_literal": "END OF THE ARANYAKANDAM"
+      },
+      {
+        "volume": 2,
+        "kanda_ordinal": 4,
+        "kanda_slug": "kishkindha",
+        "kanda_title": "Kiṣkindhākāṇḍa",
+        "header_literal": "KISHKINDHA KANDAM.",
+        "section_count": 67,
+        "first_literal_number": 1,
+        "last_literal_number": 67,
+        "missing_literal_numbers": [],
+        "duplicate_literal_numbers": [],
+        "nonincreasing_transitions": [],
+        "terminal_literal": "END OF KISHKINDHAKANDAM."
+      },
+      {
+        "volume": 2,
+        "kanda_ordinal": 5,
+        "kanda_slug": "sundara",
+        "kanda_title": "Sundarakāṇḍa",
+        "header_literal": "SUNDARA KANDAM.",
+        "section_count": 66,
+        "first_literal_number": 1,
+        "last_literal_number": 67,
+        "missing_literal_numbers": [28],
+        "duplicate_literal_numbers": [],
+        "nonincreasing_transitions": [],
+        "terminal_literal": "END OF SUNDARAKANDAM."
+      },
+      {
+        "volume": 3,
+        "kanda_ordinal": 6,
+        "kanda_slug": "yuddha",
+        "kanda_title": "Yuddhakāṇḍa",
+        "header_literal": "YUDDHAKANDAM.",
+        "section_count": 128,
+        "first_literal_number": 1,
+        "last_literal_number": 130,
+        "missing_literal_numbers": [26, 70, 72, 87],
+        "duplicate_literal_numbers": [31, 71],
+        "nonincreasing_transitions": [
+          {"source_ordinal": 27, "from": 31, "to": 27},
+          {"source_ordinal": 71, "from": 71, "to": 71}
+        ],
+        "terminal_literal": "THE END OF YUDDHAKANDAM."
+      },
+      {
+        "volume": 4,
+        "kanda_ordinal": 7,
+        "kanda_slug": "uttara",
+        "kanda_title": "Uttarakāṇḍa",
+        "header_literal": "UTTARAKĀNDAM",
+        "section_count": 123,
+        "first_literal_number": 1,
+        "last_literal_number": 124,
+        "missing_literal_numbers": [21, 42, 74, 75, 89, 91, 92, 96, 97, 114],
+        "duplicate_literal_numbers": [20, 67, 85, 111, 112, 113, 116, 117],
+        "nonincreasing_transitions": [
+          {"source_ordinal": 21, "from": 20, "to": 20},
+          {"source_ordinal": 74, "from": 85, "to": 76},
+          {"source_ordinal": 76, "from": 77, "to": 67},
+          {"source_ordinal": 88, "from": 88, "to": 85},
+          {"source_ordinal": 92, "from": 112, "to": 93},
+          {"source_ordinal": 97, "from": 117, "to": 98},
+          {"source_ordinal": 113, "from": 113, "to": 113}
+        ],
+        "terminal_literal": "THE END."
+      }
+    ]
+  },
+  "rights_decision": {
+    "result": "product_allowed_for_exact_extracted_narrative_units_with_source_attribution_and_project_gutenberg_trademark_isolation",
+    "decision_date": "2026-08-08",
+    "target_product_geography": ["India", "United States"],
+    "underlying_translation": {
+      "translator": "Manmatha Nath Dutt",
+      "translator_death_year": 1912,
+      "publication_years": "1891-1894",
+      "india_term_rule": "Copyright Act 1957 section 22: published literary works subsist until sixty years from the beginning of the calendar year following the author's death.",
+      "india_term_conclusion": "The Dutt translation's Indian copyright term expired no later than the beginning of 1973.",
+      "us_term_rule": "As of 2026, works published in the United States before 1931 are in the public domain.",
+      "us_term_conclusion": "The 1891-1894 Dutt translation is in the United States public domain."
+    },
+    "file_and_electronic_text_evidence": {
+      "project_gutenberg_record_literal": "Public domain in the USA",
+      "commons_scan_literals": "LicenseShortName=Public domain; UsageTerms=Public domain; Copyrighted=False for each of the seven edition-matched scan carriers",
+      "project_gutenberg_name_use": "bibliographic_source_and_provenance_reference_only_not_product_branding",
+      "license_or_trademark_framing_present_in_product_passages": false,
+      "source_payloads_copied_to_app_or_database": false
+    },
+    "evidence_references": [
+      {
+        "evidence_id": "india-copyright-act-section-22",
+        "url": "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html",
+        "required_literals": ["22.Term of copyright in published", "sixty years", "year in which the author dies"]
+      },
+      {
+        "evidence_id": "project-gutenberg-license",
+        "url": "https://www.gutenberg.org/policy/license",
+        "required_literals": ["strip the Project Gutenberg license", "all references to Project Gutenberg", "unrestricted by U.S. intellectual property law"]
+      },
+      {
+        "evidence_id": "dutt-biographical-boundary",
+        "url": "https://en.wikisource.org/wiki/Author:Manmatha_Nath_Dutt",
+        "required_literals": ["1855–1912", "The Ramayana (1891-94)"]
+      },
+      {
+        "evidence_id": "wikimedia-commons-seven-scan-acquisition",
+        "path": "ingestion/plans/ramayana-manmatha-nath-dutt-commons-source-acquisition-v1.json"
+      }
+    ],
+    "lane": "product_allowed",
+    "publication_state": "published",
+    "legal_characterization": "documented_product_rights_determination_not_legal_advice"
+  },
+  "product_boundary": {
+    "positive_claim": "Complete narrative-body coverage of the four-volume Project Gutenberg electronic edition of Manmatha Nath Dutt's seven-kāṇḍa English prose translation, with all seven kāṇḍa bodies and terminal boundaries preserved, exact byte-addressed citation spans, and literal SECTION numbering defects retained. Provider and transcriber front matter remains preserved only in the immutable source carriers and is not product-indexed.",
+    "completion_denials": {
+      "page_by_page_reconciliation_to_all_seven_print_scans_complete": false,
+      "literal_section_numbering_gap_free_or_corrected": false,
+      "complete_valmiki_sanskrit_source_or_critical_edition": false,
+      "complete_ramayana_tradition_or_all_recensions": false,
+      "all_ramayana_translations_commentaries_and_adaptations": false,
+      "hindi_translation_present_in_this_expression": false,
+      "ramayana_hero_universe_complete": false,
+      "mvp_library_complete": false
+    }
+  },
+  "mutation_boundary": {
+    "copy_or_download_source_payload": false,
+    "create_reader_payload": false,
+    "modify_existing_source_bytes": false,
+    "silently_correct_literal_section_labels": false,
+    "promote_unrelated_expression_or_edition": false
+  }
+}

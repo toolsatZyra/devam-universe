@@ -13,7 +13,7 @@ class SourceCatalogSearchIndexTest(unittest.TestCase):
         self.assertEqual(self.index["sourceObjectBytes"], 5968838654)
         self.assertEqual(
             self.index["sourceSummarySha256"],
-            "d19c50c87daac8e3be40e10b72556c8e58646c8bd74bda80ca0727d9dba55757",
+            "6993f72caa6c4412d8d9962ad3274dedbafc2f3ad0d8a0bd29fe491163d12e31",
         )
         self.assertEqual(len(self.index["records"]), 8455)
         self.assertEqual(len({row["sha256"] for row in self.index["records"]}), 8455)

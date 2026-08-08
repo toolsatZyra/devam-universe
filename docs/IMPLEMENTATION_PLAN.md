@@ -2192,10 +2192,10 @@ verifies at 8,447 unique objects / 5,844,275,173 bytes, summary SHA-256
 Checkpoint 2026-08-08 (current preserved-source discovery index): the compact
 metadata-only Library catalog has been regenerated from the exact 8,455-object
 vault and now accounts for all 5,968,838,654 retained bytes. Its canonical
-2,756,591-byte JSON is SHA-256
-`7b1902c0e3f91553958c14d70398cc8fc12260d1311da0d0f6711c6b36fb8d7e`
+2,756,799-byte JSON is SHA-256
+`380c06892e06f13dd2acdeccd2e3b31359f4b1989c1afcf61a94eff18313af4a`
 and binds source-summary SHA-256
-`d19c50c87daac8e3be40e10b72556c8e58646c8bd74bda80ca0727d9dba55757`.
+`6993f72caa6c4412d8d9962ad3274dedbafc2f3ad0d8a0bd29fe491163d12e31`.
 The exact Mudgala carrier, separate internal Ganesha Purana scan, two
 Wikisource revision batches, and Wikisource rights record are all discoverable
 by their preserved metadata. The result schema intentionally exposes no source
@@ -2249,10 +2249,32 @@ recension identity, all witnesses and traditions, ritual authority, and any
 empirical guarantee of devotional benefits remain false. No source carrier was
 duplicated.
 
-Live hosted census after these checkpoints: 21 works, 25 expressions, 25
-editions, 72 source-object references, 7,637 passages, 1,228 published claims,
+Checkpoint 2026-08-08 (complete Dutt English electronic narrative): the four
+Project Gutenberg UTF-8 volumes for Manmatha Nath Dutt's 1891-1894 prose
+translation were already present by unique hash, so acquisition added no
+duplicate source bytes. Devam now publishes all 652 literal SECTION units
+across Bāla, Ayodhyā, Araṇya, Kiṣkindhā, Sundara, Yuddha and Uttara. Exact raw
+spans cover each carrier's complete narrative-body interval once; provider and
+transcriber framing remains source-only. Citations combine source hash,
+volume, kāṇḍa, source-relative ordinal and byte span because the electronic
+edition preserves duplicate, missing and non-increasing printed section
+labels. All seven terminal boundaries are present, including the coherent
+Bāla-to-Ayodhyā transition without an invented Bāla end formula.
+
+Local and hosted text/span root both equal
+`3226377be38be511463e8c09d56898a6b9f658d649cb376e51e3ac7c94a81c42`.
+Hosted readback finds 4 source rows, 7 kāṇḍas, 652 published passages, zero
+hierarchy/status mismatches and zero Project Gutenberg framing matches; the
+anonymous exact-passage RPC returns Uttara source ordinal 123 / literal CXXIV.
+This completes the four-carrier electronic narrative boundary, not print-page
+reconciliation, corrected literal numbering, an edition-identified Sanskrit
+base, Hindi, every Ramayana expression or tradition, the hero universe, or the
+MVP library. Nine deterministic tests pass.
+
+Live hosted census after these checkpoints: 21 works, 26 expressions, 26
+editions, 76 source-object references, 8,289 passages, 1,228 published claims,
 1,233 claim-evidence links, 6 entities, 4 semantic relationships, 41 Atlas
-nodes and 45 Atlas edges. Of the hosted passages, 1,844 are published and 5,793
+nodes and 45 Atlas edges. Of the hosted passages, 2,496 are published and 5,793
 remain in review/private lanes. These are implementation counts, not
 percentages of the full civilizational library.
 
