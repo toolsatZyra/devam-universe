@@ -95,9 +95,6 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
 
   const ayodhya = page.getByRole("button", { name: "Ayodhya, Place" });
   await expect(ayodhya).toBeVisible();
-  await ayodhya.click();
-  await expect(page.getByRole("heading", { name: "Ayodhya" })).toBeVisible();
-
   const nodeBox = await ayodhya.boundingBox();
   expect(nodeBox).not.toBeNull();
   if (nodeBox) {
@@ -117,6 +114,8 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
     expect(after.x).not.toBe(before.x);
     expect(after.y).not.toBe(before.y);
   }
+  await ayodhya.click();
+  await expect(page.getByRole("heading", { name: "Ayodhya" })).toBeVisible();
 
   await atlas.focus();
   for (let index = 0; index < 12; index += 1) await page.keyboard.press("Shift+ArrowDown");
