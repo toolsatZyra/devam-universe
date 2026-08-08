@@ -16,13 +16,13 @@
     ["uhp_01_ramcharitmanas_edition", "admitted"],
     ["uhp_02_devi_mahatmya_chapter", "candidate_not_packeted"],
     ["uhp_03_ganesha_hymn_source", "candidate_not_packeted"],
-    ["uhp_04_diwali_distinct_sources", "candidate_not_packeted"],
+    ["uhp_04_diwali_distinct_sources", "admitted"],
     ["uhp_05_panchang_exactness", "candidate_not_packeted"],
     ["uhp_06_ayodhya_text_place", "candidate_not_packeted"],
     ["uhp_07_devi_translation_boundary", "candidate_not_packeted"],
     ["uhp_08_ganesha_symbolism", "blocked_partial_evidence"],
-    ["uhp_09_diwali_many_observances", "candidate_not_packeted"],
-    ["uhp_10_navaratri_durga_puja", "candidate_not_packeted"],
+    ["uhp_09_diwali_many_observances", "admitted"],
+    ["uhp_10_navaratri_durga_puja", "admitted"],
     ["uhp_11_ramayana_dharma_tension", "blocked_partial_evidence"],
     ["uhp_12_hanuman_deliberation", "admitted"],
     ["uhp_13_ganesha_origin_variants", "blocked_research_required"],
@@ -41,7 +41,7 @@
     ["uhp_26_truth_and_protection", "blocked_partial_evidence"],
     ["uhp_27_grief_without_bypass", "blocked_partial_evidence"],
     ["uhp_28_family_ritual_consent", "candidate_not_packeted"],
-    ["uhp_29_giving_household_duty", "candidate_not_packeted"],
+    ["uhp_29_giving_household_duty", "admitted"],
     ["uhp_30_work_care_choice", "candidate_not_packeted"]
   ],
   "packets": [
@@ -264,6 +264,195 @@
         "formal_priest_liturgy_included": false
       },
       "admission_note": "Admitted only as two explicitly non-equivalent practice lanes; neither is authority for the other."
+    },
+    {
+      "packet_id": "phase1-uhp-04-jain-bandi-chhor-v1",
+      "scenario_id": "uhp_04_diwali_distinct_sources",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "living_practice_observation"],
+      "present_roles": ["source_assertion", "living_practice_observation"],
+      "scope": {
+        "tradition": "Jain lay remembrance and Sikh SGPC-context participation remain separate",
+        "observance": "Jain Diwali and Bandi Chhor Divas",
+        "location": "Delhi Jain fixture and Amritsar SGPC calendar fixture for 2026",
+        "source_identity": "six-source reviewed Jain content lane and four-source reviewed Sikh procedure/content lane"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/rituals/jain-diwali-lay-remembrance-content-v1.json",
+          "sha256": "1b7224350413e7a7cf5938dfeabe7d2a7f246ec2043a726bf1ea24404a4b14a9",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_jain_lay_remembrance_content_and_source_separation",
+          "source_rights_lanes": ["citation_only", "internal_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bandi-chhor-sgpc-participation-v1.json",
+          "sha256": "3653b6ad96a2237830ca94bbe9e25cfffb4c50119c294f87e24742ff42f50388",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "reviewed_sikh_participant_procedure_and_scope",
+          "source_rights_lanes": ["reference_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bandi-chhor-sgpc-participant-content-v1.json",
+          "sha256": "2b8781a980a7e8aceb57a1e25a8ec2b6cf08a3d9a06cb6a2963d6d693c98e085",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_sikh_participant_content_and_source_separation",
+          "source_rights_lanes": ["citation_only", "internal_only", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "distinct_tradition_count": 2,
+        "generic_diwali_identity_merged": false,
+        "formal_sectarian_liturgy_included": false
+      },
+      "admission_note": "Admitted only to identify and contrast the two reviewed evidence lanes; it does not make either observance a Hindu Diwali variant or complete either tradition."
+    },
+    {
+      "packet_id": "phase1-uhp-09-diwali-plural-v1",
+      "scenario_id": "uhp_09_diwali_many_observances",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "present_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "scope": {
+        "observance": "bounded Lakshmi Puja, Kali Puja, Jain Diwali and Bandi Chhor lanes",
+        "tradition": "West India Smarta, Bengali Shakta, Jain lay and Sikh SGPC contexts",
+        "region": "West India, Bengal, Delhi Jain and Amritsar Sikh launch fixtures",
+        "calendar": "distinct deterministic 2026 observance records; coincident civil dates do not merge identities"
+      },
+      "artifacts": [
+        {
+          "path": "apps/web/src/lib/practice/diwali.ts",
+          "sha256": "1022a3fbd9216d432954d99ae38b18617deaf906d464b75f4a7208625bf21e5f",
+          "contract": "DEVAM_DIWALI_PRACTICE_ROUTING_IMPLEMENTATION",
+          "admitted_use": "reviewed_product_routing_synthesis_and_non_merge_boundaries",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/diwali-lakshmi-puja-west-india-content-v1.json",
+          "sha256": "f084c0355b1706831058e54586b8b2c782b0c24ae3f724de9494ff3c0f5d6f4f",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_west_india_lakshmi_content",
+          "source_rights_lanes": ["citation_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bengal-kali-puja-participant-content-v1.json",
+          "sha256": "11cc811ae40c803ac8b3816b156fdc957f87fafcd59fc428119a8f1a7e02ac67",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_bengal_kali_participant_content",
+          "source_rights_lanes": ["citation_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/jain-diwali-lay-remembrance-content-v1.json",
+          "sha256": "1b7224350413e7a7cf5938dfeabe7d2a7f246ec2043a726bf1ea24404a4b14a9",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_jain_lay_remembrance_content",
+          "source_rights_lanes": ["citation_only", "internal_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bandi-chhor-sgpc-participant-content-v1.json",
+          "sha256": "2b8781a980a7e8aceb57a1e25a8ec2b6cf08a3d9a06cb6a2963d6d693c98e085",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_sikh_participant_content",
+          "source_rights_lanes": ["citation_only", "internal_only", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "sampled_lane_count": 4,
+        "complete_diwali_universe": false,
+        "one_story_or_ritual_claimed": false
+      },
+      "admission_note": "Admitted to explain plural observance structure through four bounded examples; the examples are not a complete census of every Diwali or Deepavali tradition."
+    },
+    {
+      "packet_id": "phase1-uhp-10-navaratri-durga-puja-v1",
+      "scenario_id": "uhp_10_navaratri_durga_puja",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "present_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "scope": {
+        "region": "North/West India household Navaratri and Bengal community Durga Puja",
+        "community_role": "household participant versus family, temple, pandal or community participant",
+        "festival_sequence": "connected Shardiya autumn season with separately scoped sequences",
+        "ritual_authority": "family, sampradaya, temple, math, priest or puja committee overrides Devam guidance"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/rituals/shardiya-navaratri-north-west-india-content-v1.json",
+          "sha256": "320b79891597460b33a0ee031411d805afce56b8c9b64c35a18fc2f02df250b1",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_north_west_household_content_and_scope",
+          "source_rights_lanes": ["citation_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bengal-durga-puja-participation-v1.json",
+          "sha256": "78b96891f2197405086ac3c3a1b50e68a6fbb83c129794a6ae0c8fc13b0ab396",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "reviewed_bengal_participant_procedure_and_scope",
+          "source_rights_lanes": ["reference_only", "derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/bengal-durga-puja-participant-content-v1.json",
+          "sha256": "ef0727519e45314eefbdfcfd83f2ffc750b9ba5ea6399ab4cdbed64cf05afa59",
+          "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+          "admitted_use": "reviewed_bengal_participant_content_and_source_boundary",
+          "source_rights_lanes": ["citation_only", "internal_only", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "distinct_practice_world_count": 2,
+        "shared_season_implies_same_procedure": false,
+        "formal_priest_liturgy_included": false
+      },
+      "admission_note": "Admitted to explain connection without equivalence; the two product lanes do not define every Navaratri or Durga Puja region, community or lineage."
+    },
+    {
+      "packet_id": "phase1-uhp-29-household-giving-v1",
+      "scenario_id": "uhp_29_giving_household_duty",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "present_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "scope": {
+        "dependents": "user-reported household dependents and essential needs",
+        "resources": "essential needs versus genuine surplus; no fixed percentage",
+        "commitments": "near-term household obligations must be elicited and preserved",
+        "reversibility": "small, proportional, pausable monetary, in-kind or service options",
+        "alternatives": "money, goods, time, service, deferral or no present gift"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/wisdom/proportional-giving-household-v1.json",
+          "sha256": "3974435abeb3b03a6b434447ba07b19f1387603b19f4f4c2bb9ac949340e69f2",
+          "contract": "DEVAM_SARTHI_REVIEWED_MORAL_GUIDANCE_V1",
+          "admitted_use": "reviewed_bilingual_guidance_and_affected_party_boundary",
+          "source_rights_lanes": ["citation_only"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "apps/web/evaluation/sarthi-giving-pilot-supplement-v0.1.json",
+          "sha256": "be7dd07920812f2e793c51099f8654f6bc52ff7d26cc741f0fc72bb5322686ff",
+          "contract": "DEVAM_SARTHI_GIVING_GUIDANCE_PILOT_SUPPLEMENT_V0_1",
+          "admitted_use": "frozen_context_clarification_and_non_prescription_boundary",
+          "source_rights_lanes": ["internal_only"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "current_user_statement_source": "held_out_scenario_input",
+        "financial_advice_provided": false,
+        "fixed_percentage_prescribed": false
+      },
+      "admission_note": "Admitted for essentials-first clarification and proportional options only; cited passages are optional lenses and do not convert prudence into a scriptural command."
     }
   ]
 }

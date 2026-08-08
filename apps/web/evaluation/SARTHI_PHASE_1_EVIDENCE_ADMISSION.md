@@ -8,8 +8,8 @@ scenario is admitted. A packet is admitted only when every declared evidence
 role and scope field is present, the exact product artifact is hash-bound, and
 its use stays within its rights and quotation boundary.
 
-Six of the thirty bilingual held-out pairs are admitted. Twenty-four remain
-unadmitted: twelve ready candidates still need packet compilation, seven are
+Ten of the thirty bilingual held-out pairs are admitted. Twenty remain
+unadmitted: eight ready candidates still need packet compilation, seven are
 blocked by partial evidence, and five require research. English and Hindi share
 the same packet and scope boundary; admission does not certify answer quality in
 either language.
