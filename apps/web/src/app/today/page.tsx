@@ -7,5 +7,6 @@ export const metadata: Metadata = {
 };
 
 export default function TodayPage() {
-  return <TodayExperience />;
+  const initialDate = new Date().toISOString().slice(0, 10);
+  return <TodayExperience initialDate={initialDate} />;
 }

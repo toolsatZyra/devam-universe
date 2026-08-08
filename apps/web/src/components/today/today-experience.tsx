@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type { PanchangFact } from "@/lib/panchang/contracts";
 import type { ObservanceResolutionResult } from "@/lib/panchang/observance-rules";
 import type { PracticeGuidanceResult } from "@/lib/domain/practice";
@@ -106,8 +106,8 @@ async function loadPracticeGuidance(input: {
   }
 }
 
-export function TodayExperience() {
-  const [date, setDate] = useState(localDateNow);
+export function TodayExperience({ initialDate }: { initialDate: string }) {
+  const [date, setDate] = useState(initialDate);
   const [location, setLocation] = useState<LocationChoice>(LOCATIONS[0]);
   const [traditionCode, setTraditionCode] = useState(TRADITIONS[0].code);
   const [fact, setFact] = useState<PanchangFact | null>(null);
@@ -118,6 +118,13 @@ export function TodayExperience() {
   const [message, setMessage] = useState("");
   const campaignDay = useMemo(() => resolveHeroCampaignDay({ civilDate: date, traditionCode }), [date, traditionCode]);
   const ritualSeasonDay = useMemo(() => resolveRitualSeasonDay({ civilDate: date, traditionCode }), [date, traditionCode]);
+
+  useEffect(() => {
+    const localDate = localDateNow();
+    if (localDate === initialDate) return;
+    const sync = window.setTimeout(() => setDate(localDate), 0);
+    return () => window.clearTimeout(sync);
+  }, [initialDate]);
 
   const calculate = useCallback(async (nextLocation = location) => {
     setStatus("loading");
