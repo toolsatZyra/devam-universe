@@ -830,8 +830,11 @@ rights or masters.
   typical practice and timing, actionable steps, variants, safety boundaries,
   completion dimensions, and zero declared open gaps. “Complete” remains
   limited to each record's named region, tradition, role, language, and setting.
-- [ ] Ganesha, Navaratri/Durga Puja, Ramayana, and Diwali/Deepavali campaign content is connected
-  to the daily layer, Atlas nodes, journeys, challenges, and Sarthi.
+- [x] A cross-surface acceptance test binds Ganesha, Navaratri/Durga Puja,
+  Ramayana, and Diwali/Deepavali to at least one bounded Today/date context, an
+  Atlas gateway and world node, a source-addressed Journey, its non-spiritual-
+  score Challenge, and a source-bounded Sarthi route. This proves navigable MVP
+  connectivity, not completeness of any hero universe.
 - [ ] Contradictions and alternatives are retained in evidence and surfaced only
   when relevant or requested.
 
