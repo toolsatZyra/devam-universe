@@ -211,11 +211,23 @@ Rough focused effort with content work parallelized where possible:
 
 ## Immediate next action
 
-Do not resume with another acquisition on the main MVP thread. Review and merge
-the stacked PRs in order and ask the user to create the Vercel project from the
-consolidated branch.
-Configure the fixed Supabase Auth origin and SMTP, and run the checked-in
-acceptance suite against that deployed preview. Do not call the green
+The release-readiness review is complete. Its exact no-mutation consolidation,
+Vercel, Supabase Auth, SMTP, deployed-acceptance and rollback procedure is in
+`docs/DEPLOYMENT_READINESS_RUNBOOK_2026-08-08.md`.
+
+One deployment-test gap was closed locally: `apps/web/playwright.config.ts`
+now accepts a credential-free HTTPS `DEVAM_PREVIEW_URL`, skips its localhost
+web server in that mode, and runs the existing 12 desktop/mobile cases against
+the deployed origin. Local behavior is unchanged when the variable is absent.
+
+The four-PR stack is a strict ancestry chain and the cumulative PR #4 tip is the
+unit that CI proved. With explicit authorization, merge #1 ? #2 ? #3 ? #4 using
+merge commits in one maintenance window. Do not squash a lower stacked PR.
+Before connecting Vercel, require the final `main` tree to equal
+`37b67df0f303a4f8cf89ff563563282456eb9b0d` and require CI to pass again.
+Then create the isolated Vercel project with root `apps/web`, configure the
+fixed Supabase Auth origin and custom SMTP, and run both the deployed browser
+suite and the controlled-mailbox account acceptance. Do not call the green
 clean-checkout result a deployed or investor-ready result.
 
 Parallel library-acquisition tasks may continue under the one-copy source-vault
@@ -227,18 +239,21 @@ vertical slice.
 > Continue the Devam MVP in `C:\Work\Code\sanatan_knowledge_graph` from the
 > exact current Git state. Read `AGENTS.md` and
 > `DEVAM_MVP_CURRENT_HANDOFF_2026-08-08.md` completely, then follow its startup
-> sequence. Reverify branch, PR stack, hosted Supabase counts/security boundary,
-> and the latest test closure. Commit `d2b20fc` removes deployable runtime
-> coupling to local-only source bytes while preserving 17 exact rehash checks in
-> the named local-vault lane. GitHub Actions run `31247815169` passes both clean
-> jobs, including production build and 12 desktop/mobile Playwright cases; PR #4
-> is draft, mergeable and clean. The immediate objective is to review and merge
-> PRs #1 through #4 in order, create the Vercel project from the
-> consolidated branch with explicit user authorization, configure fixed-origin
-> Supabase Auth and SMTP, and rerun the suite on the deployed preview. Preserve the
-> one-copy source vault, explicit rights/edition/uncertainty boundaries, and the
-> separation between selected-scope counters and civilizational completeness.
-> Recommend the cheapest sufficient model before substantive work. Proceed
-> autonomously through safe local planning/implementation, but do not merge PRs,
-> deploy production, spend money, configure external email, or publish without
-> the relevant explicit authorization.
+> sequence. Read `docs/DEPLOYMENT_READINESS_RUNBOOK_2026-08-08.md` completely.
+> Reverify branch, clean worktree, the four-PR ancestry, current GitHub checks,
+> and the retained source-vault summary. The release-readiness review found the
+> stack clean and strictly ordered; GitHub Actions run `31247952813` passed both
+> jobs on cumulative tip `fa1c32c`. The restored vault also passed
+> `python tools/lean_cleanup.py verify` at 8,491 objects / 6,167,702,553 bytes /
+> 12,507 provenance records. Playwright now supports deployed-origin execution
+> through `DEVAM_PREVIEW_URL`. The next task is the explicitly authorized
+> consolidation and controlled deployment: merge PRs #1 through #4 in order
+> with merge commits, require final `main` tree
+> `37b67df0f303a4f8cf89ff563563282456eb9b0d`, rerun CI, create the isolated
+> Vercel project rooted at `apps/web`, bind the exact Supabase Auth origin and
+> custom SMTP, then run all 12 deployed browser cases plus controlled-mailbox
+> account continuity/export/deletion/sign-out acceptance. Preserve the one-copy
+> source vault, rights/edition/uncertainty boundaries, and honest selected-scope
+> counters. Recommend the cheapest sufficient model before substantive work.
+> Do not merge, deploy, spend, configure external email, or publish without the
+> relevant explicit authorization.

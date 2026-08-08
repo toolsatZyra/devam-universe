@@ -1,7 +1,18 @@
 import { defineConfig, devices } from "playwright/test";
 
 const port = 3100;
-const baseURL = `http://127.0.0.1:${port}`;
+const localBaseURL = `http://127.0.0.1:${port}`;
+const deployedBaseURL = process.env.DEVAM_PREVIEW_URL?.trim();
+
+if (deployedBaseURL) {
+  const parsed = new URL(deployedBaseURL);
+  if (parsed.protocol !== "https:" || parsed.username || parsed.password
+    || parsed.pathname !== "/" || parsed.search || parsed.hash) {
+    throw new Error("DEVAM_PREVIEW_URL must be a credential-free HTTPS origin.");
+  }
+}
+
+const baseURL = deployedBaseURL ?? localBaseURL;
 
 export default defineConfig({
   testDir: "./e2e",
@@ -19,14 +30,16 @@ export default defineConfig({
     screenshot: "only-on-failure",
     video: "retain-on-failure",
   },
-  webServer: {
-    command: `pnpm dev --hostname 127.0.0.1 --port ${port}`,
-    url: baseURL,
-    reuseExistingServer: !process.env.CI,
-    timeout: 120_000,
-    stdout: "pipe",
-    stderr: "pipe",
-  },
+  webServer: deployedBaseURL
+    ? undefined
+    : {
+        command: `pnpm dev --hostname 127.0.0.1 --port ${port}`,
+        url: localBaseURL,
+        reuseExistingServer: !process.env.CI,
+        timeout: 120_000,
+        stdout: "pipe",
+        stderr: "pipe",
+      },
   projects: [
     {
       name: "desktop-chromium",
