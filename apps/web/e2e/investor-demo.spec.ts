@@ -43,15 +43,27 @@ test("the Living Atlas exposes all four launch worlds and working map controls",
   await expect(scene).toHaveAttribute("data-view-scale", "1");
   await expect(scene).toHaveAttribute("data-view-x", "0");
 
+  await page.getByRole("button", { name: /Sacred geography/ }).click();
+  await expect(scene).toHaveAttribute("data-atlas-layer", "geography");
+  await expect(page.getByRole("button", { name: /Ayodhya, Place/ })).toBeVisible();
+  await expect(page.getByText("Illustrative positions · not a navigation map")).toBeVisible();
+  await page.getByRole("button", { name: "Durga", exact: true }).click();
+  await expect(page.getByRole("button", { name: /Kamakhya, Shakti Peetha/ })).toBeVisible();
+  await page.getByRole("button", { name: "Ramayana", exact: true }).click();
+  await page.getByRole("button", { name: "Knowledge universe" }).click();
+  await expect(scene).toHaveAttribute("data-atlas-layer", "universe");
+
   await page.getByRole("button", { name: "Place thread" }).click();
   const placeThread = page.getByRole("dialog", { name: "Ramayana place thread" });
   await expect(placeThread.getByRole("heading", { name: "Ayodhya to Chitrakoot" })).toBeVisible();
   await expect(placeThread).toContainText("not a literal route");
   await placeThread.getByRole("button", { name: /Chitrakoot/ }).click();
+  await expect(scene).toHaveAttribute("data-atlas-layer", "geography");
   await expect(scene).toHaveAttribute("data-view-scale", "1.45");
   await expect(page.getByRole("heading", { name: "Chitrakoot", exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Place thread" }).click();
   await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Knowledge universe" }).click();
 
   const atlas = page.getByRole("region", { name: /Interactive Atlas/ });
   const box = await atlas.boundingBox();

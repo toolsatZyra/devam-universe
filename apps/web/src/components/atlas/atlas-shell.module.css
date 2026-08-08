@@ -174,6 +174,7 @@
 .sceneCanvas { position: absolute; inset: 0; transform-origin: 0 0; will-change: transform; }
 .atlasBackdrop { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; background: #07101e; }
 .atlasBackdrop img { object-fit: cover; object-position: center 58%; filter: saturate(.86) contrast(1.04) brightness(.7); }
+.atlasBackdrop.geographyBackdrop img { filter: saturate(.55) contrast(1.08) brightness(.34) blur(1px); transform: scale(1.03); }
 .atlasBackdrop::after {
   content: "";
   position: absolute;
@@ -188,6 +189,14 @@
 .relationshipEdge { stroke: rgba(174, 151, 119, .34); stroke-width: .85; stroke-dasharray: 2 7; opacity: .62; }
 .edgeHighlighted { stroke: rgba(241, 191, 100, .88); stroke-width: 1.55; stroke-dasharray: 3 6; opacity: 1; filter: drop-shadow(0 0 3px rgba(238, 173, 80, .7)); }
 .edgeHidden { opacity: 0; }
+.indiaMap { position: absolute; z-index: 1; inset: 3% 1% 8%; width: 98%; height: 88%; overflow: visible; pointer-events: none; }
+.indiaGlow { fill: rgba(213, 173, 103, .16); stroke: none; filter: url(#land-glow); }
+.indiaLand { fill: url(#india-land); stroke: rgba(227, 193, 130, .55); stroke-width: .32; vector-effect: non-scaling-stroke; }
+.landContour { fill: none; stroke: rgba(210, 184, 139, .16); stroke-width: .28; stroke-dasharray: 1.2 2.4; vector-effect: non-scaling-stroke; }
+.riverLine { fill: none; stroke: rgba(101, 184, 196, .42); stroke-width: .42; vector-effect: non-scaling-stroke; }
+.seaLabel { fill: rgba(164, 182, 190, .32); font: 2.1px ui-sans-serif, system-ui; letter-spacing: .22em; }
+.geographyRoute { stroke: rgba(163, 171, 151, .27); stroke-width: .9; stroke-dasharray: 1.5 5; }
+.geographyRouteActive { stroke: rgba(241, 191, 100, .88); stroke-width: 1.4; filter: drop-shadow(0 0 3px rgba(238, 173, 80, .6)); }
 .rangeGlow { position: absolute; z-index: 2; left: 12%; top: 21%; width: 74%; height: 52%; border: 1px solid rgba(189, 157, 105, .08); border-radius: 50%; transform: rotate(-8deg); }
 
 .gateway, .worldNode { position: absolute; transform: translate(-50%, -50%); z-index: 6; border: 0; background: none; cursor: pointer; }
@@ -214,11 +223,25 @@
 .nodeDot { width: 7px; height: 7px; border-radius: 50%; border: 1px solid #b99a68; box-shadow: 0 0 0 5px rgba(218, 180, 112, .06); }
 .nodeLabel { display: grid; white-space: nowrap; }
 .nodeLabel strong { color: #d5cebf; font-family: Georgia, serif; font-size: 12px; font-weight: 400; }
+.nodeLabel small { margin-top: 2px; color: #8f9a9b; font-size: 7px; letter-spacing: .04em; }
+.geographyNode { opacity: .94; padding: 5px 7px; border-radius: 8px; background: rgba(6, 13, 23, .6); box-shadow: 0 6px 18px rgba(0,0,0,.2); backdrop-filter: blur(5px); }
+.geographyNode .nodeDot { flex: 0 0 auto; border-color: #e1bb76; background: #a9783c; box-shadow: 0 0 0 4px rgba(226, 181, 102, .11), 0 0 14px rgba(226, 181, 102, .32); }
+.geographyContextNode { padding: 8px; opacity: .44; background: transparent; box-shadow: none; backdrop-filter: none; }
+.geographyContextNode .nodeLabel { display: none; }
+.geographyContextNode:hover, .geographyContextNode:focus-visible { opacity: 1; background: rgba(6, 13, 23, .82); }
+.geographyContextNode:hover .nodeLabel, .geographyContextNode:focus-visible .nodeLabel { display: grid; }
 .majorNode .nodeDot { width: 9px; height: 9px; border-color: #d1ad70; box-shadow: 0 0 0 6px rgba(218, 180, 112, .08); }
 .majorNode .nodeLabel strong { font-size: 14px; }
 .nodeActive { opacity: 1; filter: drop-shadow(0 0 8px rgba(230, 181, 98, .52)); }
 .nodeActive .nodeDot { background: #e3b66c; }
 .nodeHidden { opacity: 0; pointer-events: none; }
+
+.layerControl { position: absolute; z-index: 12; left: 1.5%; top: 22px; display: grid; grid-template-columns: auto auto; padding: 4px; border: 1px solid rgba(226, 208, 175, .13); border-radius: 14px; background: rgba(10, 14, 29, .78); backdrop-filter: blur(16px); }
+.layerControl button { min-height: 31px; border: 0; border-radius: 10px; padding: 7px 10px; display: flex; align-items: center; gap: 5px; color: #898b95; background: transparent; cursor: pointer; font-size: 8px; }
+.layerControl button[aria-pressed="true"] { color: #efc779; background: rgba(224, 179, 100, .1); box-shadow: inset 0 0 0 1px rgba(226, 190, 124, .13); }
+.layerControl small { grid-column: 1 / -1; padding: 4px 7px 3px; color: #707681; font-size: 7px; letter-spacing: .025em; }
+.geographyWorlds { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; padding-top: 3px; border-top: 1px solid rgba(226, 208, 175, .08); }
+.geographyWorlds button { min-height: 25px; justify-content: center; padding: 5px 7px; }
 
 .viewControls { position: absolute; z-index: 12; right: 1.5%; top: 22px; display: grid; justify-items: end; gap: 7px; }
 .zoomControls { display: flex; align-items: center; gap: 3px; padding: 4px; border: 1px solid rgba(226, 208, 175, .13); border-radius: 999px; background: rgba(10, 14, 29, .72); backdrop-filter: blur(14px); }
@@ -430,6 +453,13 @@
   .nodeLabel strong { font-size: 10px; }
   .majorNode .nodeLabel strong { font-size: 11px; }
   .atlasBackdrop img { object-position: 54% 55%; }
+  .layerControl { left: 2%; top: 10px; max-width: calc(100% - 68px); }
+  .layerControl button { min-height: 29px; padding: 6px 8px; font-size: 7px; }
+  .layerControl small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .geographyWorlds { grid-template-columns: repeat(2, 1fr); }
+  .geographyWorlds button { min-height: 24px; }
+  .geographyNode { padding: 3px 5px; }
+  .geographyNode .nodeLabel small { display: none; }
   .viewControls { right: 2%; top: 58px; }
   .zoomControls { flex-direction: column; border-radius: 18px; }
   .zoomControls span { display: none; }
@@ -439,7 +469,7 @@
   .placeThreadToggle { width: 37px; height: 37px; border-radius: 50%; padding: 0; display: grid; place-items: center; }
   .motionMenu { top: 0; right: 46px; }
   .placeThreadPanel { top: 0; right: 46px; width: min(260px, calc(100vw - 92px)); max-height: 58svh; overflow: auto; }
-  .gestureHint { left: 3%; top: 16px; bottom: auto; font-size: 7px; }
+  .gestureHint { left: 3%; top: 93px; bottom: auto; max-width: 72%; font-size: 7px; }
   .eraControl { bottom: 265px; gap: 8px; }
   .eraTitle { display: none; }.eraButton, .eraActive { font-size: 7px; padding: 0 1px; }
   .discoveryCard {

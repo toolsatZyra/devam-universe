@@ -77,6 +77,7 @@ function worldNode(row: AtlasNodeRow): WorldNode {
     revealAt: Number(row.reveal_at),
     size,
     position: position(row.position),
+    geography: fallback.geography,
   };
 }
 

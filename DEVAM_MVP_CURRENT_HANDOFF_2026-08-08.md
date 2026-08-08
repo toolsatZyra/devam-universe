@@ -160,7 +160,7 @@ slice, much closer to an investor demo than to a paid public beta.
 | Panchang | Deterministic astronomy and location/tradition-aware selected 2026 rules; 79/79 selected resolved slugs have a current lane | The selected inventory is not every regional observance. Generalize exact-year/city fixtures only where MVP acceptance needs it. |
 | Ritual | Audit finds 46 current scoped user-complete lanes and one participation companion | These are schema-valid scoped lanes, not independent proof of every regional/family/priest-led practice; expert review remains. |
 | Sarthi | Conversation UI, exact-source/ritual/Panchang routes, four personal-guidance families, three moral families, one safety route, one Ramayana reflection, bounded optional generation code | The frozen 40-scenario fixture validates routing only. Run the 60–100 answer-level same-model blinded pilot before claiming improved wisdom or enabling broad generation. |
-| Living Atlas | Four gateways, 37 app world nodes, pan/zoom/pinch/double-tap, era filters, four journeys and four challenges | It is still a cosmic constellation prototype, not yet the promised historical/geographic India world; final hero art and depth remain. |
+| Living Atlas | Four gateways, 37 app world nodes, pan/zoom/pinch/double-tap, era filters, four journeys and four challenges, plus a distinct India geography layer for 11 evidence-bounded place nodes | The first map-grounded place experience is illustrative rather than navigational or politically authoritative; complete historical/geographic coverage, final hero art and depth remain. |
 | Account | Guest preview, passwordless-auth plumbing, profile context, consented memory, export/delete | Needs deployed fixed origin, real SMTP and production acceptance. |
 | Commercial | Provider-neutral `devam_one` entitlement boundary | No checkout, billing lifecycle or paid enforcement. |
 | Operations | Dedicated Supabase project, comprehensive deterministic tests, and checked-in desktop/mobile Playwright acceptance | No Vercel deployment, production domain, deployed-origin browser result, analytics funnel, monitoring or public launch gate. |
@@ -191,7 +191,8 @@ productization sequence below is now the active critical path.
 2. Run the checked-in Playwright suite on the deployed preview and complete
    real SMTP/account continuity, export, deletion, and fixed-origin acceptance.
 3. Polish one golden path for each of the four hero worlds, including final
-   quality scene art and at least one convincing time/geography map experience.
+   quality scene art. The first bounded time/geography map experience now
+   exists, but it is not complete historical or civilizational coverage.
 4. Run the frozen blinded Sarthi answer pilot. Enable bounded generation only
    if it beats the grounded baseline without source/applicability regressions.
 5. Publish an honest investor coverage dashboard separating preserved,

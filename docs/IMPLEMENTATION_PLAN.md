@@ -2312,6 +2312,13 @@ completion must not be inferred from passing tests:
   original shared cinematic environment, 37 connected, progressively revealed
   world nodes, and four gateways; density beyond the four hero launch worlds
   remains open.
+- The Living Atlas now separates its conceptual Knowledge universe from a
+  Sacred geography layer. The latter plots the 11 place nodes already used by
+  the four reviewed hero-world place threads on an illustrative India base,
+  retains era filtering and evidence-bounded discovery cards, and labels the
+  display as approximate and non-navigational. This closes the first credible
+  map-experience gap; it does not establish political boundaries, literal epic
+  routes, historical chronology, complete sacred geography, or final hero art.
 - All 79 currently resolved September-December observance slugs have a current
   actionability lane. The exact Jain Diwali default now includes a separately
   named, user-complete non-initiatory lay-remembrance lane while the broader

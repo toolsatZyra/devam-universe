@@ -44,6 +44,7 @@ type IconName =
 type ViewTransform = { x: number; y: number; scale: number };
 type Point = { x: number; y: number };
 type MotionMode = "cinematic" | "gentle" | "still";
+type AtlasLayer = "universe" | "geography";
 type SarthiCitation = {
   passageId: string;
   sourceOrdinal: number;
@@ -109,6 +110,7 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
   const [sarthiBusy, setSarthiBusy] = useState(false);
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [motionMode, setMotionMode] = useState<MotionMode>("gentle");
+  const [atlasLayer, setAtlasLayer] = useState<AtlasLayer>("universe");
   const [motionMenuOpen, setMotionMenuOpen] = useState(false);
   const [placeThreadOpen, setPlaceThreadOpen] = useState(false);
   const [signInPrompt, setSignInPrompt] = useState<"gateway" | "sarthi" | null>(null);
@@ -240,6 +242,9 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
     worldNodes.forEach((node) => { result[node.id] = node.position; });
     return result;
   }, [gateways, worldNodes]);
+  const geographyPoints = useMemo(() => Object.fromEntries(
+    worldNodes.flatMap((node) => node.geography ? [[node.id, node.geography.position]] : []),
+  ) as Record<string, Point>, [worldNodes]);
 
   const commitView = useCallback((next: ViewTransform) => {
     const bounded = { ...next, scale: clamp(next.scale, MIN_SCALE, MAX_SCALE) };
@@ -354,8 +359,14 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
       scale,
     });
     setActiveEra("Living");
+    setAtlasLayer("geography");
     setFocusedId(node.id);
     setSelectedId(node.gatewayId);
+  };
+  const chooseAtlasLayer = (layer: AtlasLayer) => {
+    setAtlasLayer(layer);
+    setPlaceThreadOpen(false);
+    resetView();
   };
   const chooseMotion = (mode: MotionMode) => {
     setMotionMode(mode);
@@ -420,12 +431,13 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
             <div
               className={styles.sceneCanvas}
               data-testid="atlas-scene"
+              data-atlas-layer={atlasLayer}
               data-view-x={Math.round(view.x)}
               data-view-y={Math.round(view.y)}
               data-view-scale={view.scale}
               style={{ transform: `translate3d(${view.x}px, ${view.y}px, 0) scale(${view.scale})` }}
             >
-              <div className={styles.atlasBackdrop} aria-hidden="true">
+              <div className={`${styles.atlasBackdrop} ${atlasLayer === "geography" ? styles.geographyBackdrop : ""}`} aria-hidden="true">
                 <Image
                   src="/atlas/atlas-cosmic-night-v1.png"
                   alt=""
@@ -434,10 +446,30 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
                   sizes="(max-width: 720px) 100vw, calc(100vw - 92px)"
                 />
               </div>
+              {atlasLayer === "geography" && (
+                <svg className={styles.indiaMap} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="india-land" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stopColor="rgba(195, 151, 83, .24)" />
+                      <stop offset=".55" stopColor="rgba(39, 92, 88, .26)" />
+                      <stop offset="1" stopColor="rgba(12, 32, 43, .14)" />
+                    </linearGradient>
+                    <filter id="land-glow"><feGaussianBlur stdDeviation="1.5" /></filter>
+                  </defs>
+                  <path className={styles.indiaGlow} d="M43 8L48 12 52 18 56 25 61 30 63 34 68 35 70 40 66 44 62 46 60 56 57 63 56 71 54 82 52 95 50 87 48 78 46 70 44 64 42 57 40 50 39 42 40 34 41 26 42 17Z" />
+                  <path className={styles.indiaLand} d="M43 8L48 12 52 18 56 25 61 30 63 34 68 35 70 40 66 44 62 46 60 56 57 63 56 71 54 82 52 95 50 87 48 78 46 70 44 64 42 57 40 50 39 42 40 34 41 26 42 17Z" />
+                  <path className={styles.landContour} d="M41 25Q49 30 58 26M40 42Q51 47 65 39M42 57Q51 61 59 54M46 70Q51 71 56 67" />
+                  <path className={styles.riverLine} d="M49 18Q53 29 57 35T61 51" />
+                  <text className={styles.seaLabel} x="25" y="68">ARABIAN SEA</text>
+                  <text className={styles.seaLabel} x="64" y="70">BAY OF BENGAL</text>
+                </svg>
+              )}
               <svg className={styles.mapLines} viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <path className={styles.ambientEdge} d="M3 67C24 35 39 14 57 38S78 72 98 21" />
-                <path className={styles.ambientEdge} d="M8 20C29 44 43 72 61 55S83 30 95 68" />
-                {worldEdges.map((edge, index) => {
+                {atlasLayer === "universe" && <>
+                  <path className={styles.ambientEdge} d="M3 67C24 35 39 14 57 38S78 72 98 21" />
+                  <path className={styles.ambientEdge} d="M8 20C29 44 43 72 61 55S83 30 95 68" />
+                </>}
+                {atlasLayer === "universe" && worldEdges.map((edge, index) => {
                   const from = points[edge.from];
                   const to = points[edge.to];
                   const endpointNodes = [edge.from, edge.to].map((id) => worldNodes.find((candidate) => candidate.id === id));
@@ -454,33 +486,43 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
                     />
                   );
                 })}
+                {atlasLayer === "geography" && placeThreads.flatMap((thread) => thread.nodeIds.slice(1).map((nodeId, index) => {
+                  const from = geographyPoints[thread.nodeIds[index]];
+                  const to = geographyPoints[nodeId];
+                  if (!from || !to) return null;
+                  const active = thread.gatewayId === selected.id;
+                  return <path className={`${styles.geographyRoute} ${active ? styles.geographyRouteActive : ""}`} d={`M${from.x} ${from.y} Q${(from.x + to.x) / 2} ${(from.y + to.y) / 2 - 4} ${to.x} ${to.y}`} key={`${thread.gatewayId}-${nodeId}`} />;
+                }))}
               </svg>
-              <div className={styles.rangeGlow} aria-hidden="true" />
+              {atlasLayer === "universe" && <div className={styles.rangeGlow} aria-hidden="true" />}
 
               {worldNodes.map((node) => {
-                const visible = view.scale >= node.revealAt && node.eras.includes(activeEra);
+                const isGeographic = Boolean(node.geography);
+                const visible = node.eras.includes(activeEra) && (atlasLayer === "geography" ? isGeographic : view.scale >= node.revealAt);
                 const active = node.id === focusedId;
+                const nodePosition = atlasLayer === "geography" && node.geography ? node.geography.position : node.position;
                 return (
                   <button
-                    className={`${styles.worldNode} ${node.size === "major" ? styles.majorNode : ""} ${active ? styles.nodeActive : ""} ${visible ? "" : styles.nodeHidden}`}
+                    className={`${styles.worldNode} ${atlasLayer === "geography" ? styles.geographyNode : ""} ${atlasLayer === "geography" && node.gatewayId !== selected.id ? styles.geographyContextNode : ""} ${node.size === "major" ? styles.majorNode : ""} ${active ? styles.nodeActive : ""} ${visible ? "" : styles.nodeHidden}`}
                     key={node.id}
-                    style={{ left: `${node.position.x}%`, top: `${node.position.y}%` }}
+                    style={{ left: `${nodePosition.x}%`, top: `${nodePosition.y}%` }}
                     type="button"
                     onClick={() => {
                       setFocusedId(node.id);
                       setSelectedId(node.gatewayId);
                     }}
                     aria-label={`${node.label}, ${node.kind}`}
+                    title={atlasLayer === "geography" ? `${node.label} · ${node.geography?.region}` : undefined}
                     aria-hidden={!visible}
                     tabIndex={visible ? 0 : -1}
                   >
                     <span className={styles.nodeDot} />
-                    <span className={styles.nodeLabel}><strong>{node.label}</strong></span>
+                    <span className={styles.nodeLabel}><strong>{node.label}</strong>{atlasLayer === "geography" && <small>{node.geography?.region}</small>}</span>
                   </button>
                 );
               })}
 
-              {gateways.map((gateway) => {
+              {atlasLayer === "universe" && gateways.map((gateway) => {
                 const active = gateway.id === selected.id;
                 return (
                   <button
@@ -505,6 +547,19 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
               })}
 
             </div>
+          </div>
+
+          <div className={styles.layerControl} role="group" aria-label="Atlas layer">
+            <button type="button" aria-pressed={atlasLayer === "universe"} onClick={() => chooseAtlasLayer("universe")}>Knowledge universe</button>
+            <button type="button" aria-pressed={atlasLayer === "geography"} onClick={() => chooseAtlasLayer("geography")}><Icon name="place" size={13} /> Sacred geography</button>
+            <small>{atlasLayer === "geography" ? "Illustrative positions · not a navigation map" : "Texts, practices, places, and relationships"}</small>
+            {atlasLayer === "geography" && (
+              <div className={styles.geographyWorlds} aria-label="Choose a hero-world place thread">
+                {gateways.map((gateway) => (
+                  <button type="button" aria-pressed={selected.id === gateway.id} onClick={() => selectGateway(gateway.id)} key={gateway.id}>{gateway.title}</button>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className={styles.viewControls}>
@@ -575,7 +630,7 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
               </div>
             )}
           </div>
-          <p className={styles.gestureHint}>Drag to move · Scroll or pinch to look closer</p>
+          <p className={styles.gestureHint}>{atlasLayer === "geography" ? "Place positions are approximate · boundaries remain evidence-scoped" : "Drag to move · Scroll or pinch to look closer"}</p>
 
           <div className={styles.eraControl} aria-label="Explore by era">
             <span className={styles.eraTitle}>Across time</span>

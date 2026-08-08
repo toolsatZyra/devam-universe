@@ -91,8 +91,17 @@ describe("Living Atlas exploration data", () => {
         expect(node, `${thread.gatewayId} place thread references ${nodeId}`).toBeDefined();
         expect(node?.gatewayId).toBe(thread.gatewayId);
         expect(node?.eras).toContain("Living");
+        expect(node?.geography?.region.length).toBeGreaterThan(2);
+        expect(node?.geography?.position.x).toBeGreaterThanOrEqual(0);
+        expect(node?.geography?.position.x).toBeLessThanOrEqual(100);
+        expect(node?.geography?.position.y).toBeGreaterThanOrEqual(0);
+        expect(node?.geography?.position.y).toBeLessThanOrEqual(100);
       }
     }
+    expect(new Set(placeThreads.flatMap((thread) => thread.nodeIds.map((nodeId) => {
+      const node = worldNodes.find((candidate) => candidate.id === nodeId)!;
+      return `${node.geography!.position.x},${node.geography!.position.y}`;
+    }))).size).toBe(placeThreads.flatMap((thread) => thread.nodeIds).length);
   });
 
   it("opens every new detail doorway into reviewed retrieval rather than an empty search", async () => {
