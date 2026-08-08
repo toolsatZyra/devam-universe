@@ -2357,9 +2357,21 @@ fallback, and the Living Atlas adds one edition-specific doorway and one
 navigation edge. The pack contains no exact source text, vault path, or copied
 source body. Literal SECTION defects, incomplete page-by-page print-scan
 reconciliation, absence of Sanskrit and Hindi in this expression, and wider
-Ramayana incompleteness remain visible. The local Atlas composition is now
-four gateways, 44 world nodes, and 52 navigation edges. Its forward-only
+Ramayana incompleteness remain visible. At that checkpoint the local Atlas
+composition was four gateways, 44 world nodes, and 52 navigation edges. Its forward-only
 migration is prepared but has not been applied to hosted Supabase.
+
+Checkpoint 2026-08-08 (distinct Diwali Atlas lane parity, local and unapplied):
+five already implemented, separately governed lanes now have direct world
+doorways rather than only indirect place or sequence references: BAPS Gujarat
+Kali Chaudas, BAPS Gujarati New Year, Karnataka Bali Padyami, Jain Diwali, and
+Bandi Chhor Divas. Each doorway resolves through the existing cited Search
+contract and continues in Sarthi with its exact region/tradition boundary. The
+new edges preserve Gujarat, Karnataka, Jain, and Sikh identities instead of
+merging them into Maharashtra Naraka Chaturdashi, Bali Pratipada, Hindu Diwali,
+or one universal procedure. The current local Atlas is four gateways, 49 world
+nodes, and 57 navigation edges; the generated forward-only sync migration
+alters no evidence, RLS, function, grant, or independently managed row.
 
 Live hosted census after these checkpoints: 21 works, 27 expressions, 27
 editions, 102 source-object references, 9,091 passages, 1,228 published claims,
@@ -2385,8 +2397,8 @@ completion must not be inferred from passing tests:
   Ramcharitmanas product editions, broader Ganesha and Durga source families,
   variant dossiers, complete civilizational Atlas coverage, and final
   gateway-specific scene art remain incomplete. The current Atlas has an
-  original shared cinematic environment, 44 connected, progressively revealed
-  world nodes, 52 navigation edges, and four gateways; density beyond the four
+  original shared cinematic environment, 49 connected, progressively revealed
+  world nodes, 57 navigation edges, and four gateways; density beyond the four
   hero launch worlds remains open.
 - The Living Atlas now separates its conceptual Knowledge universe from a
   Sacred geography layer. The latter plots the 11 place nodes already used by

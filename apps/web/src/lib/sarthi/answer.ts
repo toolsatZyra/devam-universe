@@ -540,13 +540,14 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
     }
   }
   const kaliChaudasContext = includesAny(query, ["kali chaudas", "kali chaudash", "kali chaudasa", "kalo chaudash", "काली चौदस", "काली चौदश"]);
-  if (kaliChaudasContext && ritualIntent) {
+  const kaliChaudasAtlasContext = request.context?.atlasNodeSlug === "kali-chaudas-baps" && contextualReference;
+  if ((kaliChaudasContext || kaliChaudasAtlasContext) && (ritualIntent || kaliChaudasAtlasContext)) {
     const baps = request.context?.traditionCode === "swaminarayan-baps" || includesAny(query, ["baps", "swaminarayan", "स्वामीनारायण"]);
     const gujarat = request.context?.regionCode === "baps-gujarat" || includesAny(query, ["gujarat", "ahmedabad", "गुजरात", "अहमदाबाद"]);
     const incompatibleSavedContext =
       (request.context?.traditionCode !== undefined && request.context.traditionCode !== "swaminarayan-baps") ||
       (request.context?.regionCode !== undefined && request.context.regionCode !== "baps-gujarat");
-    if (!baps || !gujarat || incompatibleSavedContext) {
+    if (!(baps || kaliChaudasAtlasContext) || !(gujarat || kaliChaudasAtlasContext) || incompatibleSavedContext) {
       const followUpQuestion = hindi
         ? "क्या आप BAPS/स्वामीनारायण गुजरात परम्परा, किसी दूसरी गुजराती पारिवारिक काली चौदस, महाराष्ट्र नरक चतुर्दशी, तमिल दीपावली या बंगाल काली पूजा की बात कर रहे हैं?"
         : "Do you mean BAPS/Swaminarayan Gujarat, another Gujarati family Kali Chaudas, Maharashtra Naraka Chaturdashi, Tamil Deepavali, or Bengal Kali Puja?";
@@ -759,10 +760,14 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
     }
   }
   const balipadyamiContext = includesAny(query, ["bali padyami", "balipadyami", "bali padya", "ಬಲಿ ಪಾಡ್ಯಮಿ", "बलि पाड्यमी", "बलिपाड्यमी"]);
-  if (balipadyamiContext && ritualIntent) {
+  const balipadyamiAtlasContext = request.context?.atlasNodeSlug === "balipadyami-karnataka" && contextualReference;
+  if ((balipadyamiContext || balipadyamiAtlasContext) && (ritualIntent || balipadyamiAtlasContext)) {
     const karnataka = request.context?.regionCode === "south-india" || includesAny(query, ["karnataka", "bengaluru", "bangalore", "mysuru", "मैसूर", "कर्नाटक", "बेंगलुरु"]);
     const supportedTradition = request.context?.traditionCode === undefined || request.context.traditionCode === "smarta-south-india";
-    if (!karnataka || !supportedTradition) {
+    const incompatibleSavedContext =
+      (request.context?.regionCode !== undefined && request.context.regionCode !== "south-india") ||
+      (request.context?.traditionCode !== undefined && request.context.traditionCode !== "smarta-south-india");
+    if (((!karnataka || !supportedTradition) && !balipadyamiAtlasContext) || incompatibleSavedContext) {
       const followUpQuestion = hindi ? "क्या आप कर्नाटक बलि पाड्यमी, महाराष्ट्र बलि प्रतिपदा/पाडवा, BAPS गुजराती नववर्ष, गोवर्धन पूजा या किसी दूसरी दक्षिण भारतीय परम्परा की बात कर रहे हैं?" : "Do you mean Karnataka Bali Padyami, Maharashtra Bali Pratipada/Padwa, BAPS Gujarati New Year, Govardhana Puja, or another South Indian tradition?";
       return { ok: true, mode: "context_clarification", answer: hindi ? `प्रतिपदा की ये परम्पराएँ एक जैसी नहीं हैं, इसलिए मैं कर्नाटक क्रम सब पर लागू नहीं करूँगा। ${followUpQuestion}` : `These Pratipada traditions are not interchangeable, so I will not apply the Karnataka lane to everyone. ${followUpQuestion}`, citations: [], alternativesAvailable: true, sourceBoundary: KARNATAKA_BALIPADYAMI_RITUAL_BOUNDARY, followUpQuestion };
     }
@@ -773,11 +778,12 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
     }
   }
   const gujaratiNewYearContext = includesAny(query, ["gujarati new year", "bestu varas", "bestu varash", "nutan varsh", "nutan varshabhinandan", "गुजराती नववर्ष", "बेस्तु वर्ष", "नूतन वर्ष"]);
-  if (gujaratiNewYearContext && ritualIntent) {
+  const gujaratiNewYearAtlasContext = request.context?.atlasNodeSlug === "gujarati-new-year-baps" && contextualReference;
+  if ((gujaratiNewYearContext || gujaratiNewYearAtlasContext) && (ritualIntent || gujaratiNewYearAtlasContext)) {
     const baps = request.context?.traditionCode === "swaminarayan-baps" || includesAny(query, ["baps", "swaminarayan", "स्वामीनारायण"]);
     const gujarat = request.context?.regionCode === "baps-gujarat" || includesAny(query, ["gujarat", "ahmedabad", "गुजरात", "अहमदाबाद"]);
     const incompatibleSavedContext = (request.context?.traditionCode !== undefined && request.context.traditionCode !== "swaminarayan-baps") || (request.context?.regionCode !== undefined && request.context.regionCode !== "baps-gujarat");
-    if (!baps || !gujarat || incompatibleSavedContext) {
+    if (!(baps || gujaratiNewYearAtlasContext) || !(gujarat || gujaratiNewYearAtlasContext) || incompatibleSavedContext) {
       const followUpQuestion = hindi
         ? "क्या आपका परिवार BAPS/स्वामीनारायण परम्परा मानता है, कोई दूसरी गुजराती पारिवारिक बेस्तु वर्ष रीति, या किसी दूसरे क्षेत्र का नववर्ष?"
         : "Does your family follow BAPS/Swaminarayan practice, another Gujarati family Bestu Varash tradition, or a different regional New Year?";
@@ -1063,8 +1069,12 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
     }
   }
   const bandiChhorContext = includesAny(query, ["bandi chhor", "bandi chor", "ਬੰਦੀ ਛੋੜ", "बंदी छोड़", "बंदी छोड"]);
-  if (bandiChhorContext && ritualIntent) {
-    const exactSikhContext = request.context?.regionCode === "sikh-punjab" && request.context?.traditionCode === "sikh-sgpc";
+  const bandiChhorAtlasContext = request.context?.atlasNodeSlug === "bandi-chhor-divas" && contextualReference;
+  if ((bandiChhorContext || bandiChhorAtlasContext) && (ritualIntent || bandiChhorAtlasContext)) {
+    const incompatibleSavedContext =
+      (request.context?.regionCode !== undefined && request.context.regionCode !== "sikh-punjab") ||
+      (request.context?.traditionCode !== undefined && request.context.traditionCode !== "sikh-sgpc");
+    const exactSikhContext = !incompatibleSavedContext && (bandiChhorAtlasContext || (request.context?.regionCode === "sikh-punjab" && request.context?.traditionCode === "sikh-sgpc"));
     if (!exactSikhContext) {
       const followUpQuestion = hindi
         ? "क्या आप किसी गुरुद्वारे के कार्यक्रम में जा रहे हैं या घर पर स्मरण करना चाहते हैं—और आपका स्थानीय गुरुद्वारा, सिख संस्था, परिवार या प्रवासी समुदाय कौन-सा कार्यक्रम रखता है?"
@@ -1078,8 +1088,12 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
     }
   }
   const jainDiwaliContext = includesAny(query, ["jain diwali", "mahavira nirvana", "mahavir nirvan", "nirvan kalyanak", "जैन दीपावली", "महावीर निर्वाण", "निर्वाण कल्याणक"]);
-  if (jainDiwaliContext && ritualIntent) {
-    const exactUmbrellaContext = request.context?.regionCode === "jain-india" && request.context?.traditionCode === "jain-umbrella";
+  const jainDiwaliAtlasContext = request.context?.atlasNodeSlug === "jain-diwali" && contextualReference;
+  if ((jainDiwaliContext || jainDiwaliAtlasContext) && (ritualIntent || jainDiwaliAtlasContext)) {
+    const incompatibleSavedContext =
+      (request.context?.regionCode !== undefined && request.context.regionCode !== "jain-india") ||
+      (request.context?.traditionCode !== undefined && request.context.traditionCode !== "jain-umbrella");
+    const exactUmbrellaContext = !incompatibleSavedContext && (jainDiwaliAtlasContext || (request.context?.regionCode === "jain-india" && request.context?.traditionCode === "jain-umbrella"));
     if (!exactUmbrellaContext) {
       const followUpQuestion = hindi
         ? "आप श्वेताम्बर, दिगम्बर, स्थानकवासी, तेरापंथ, श्रीमद राजचन्द्र, किसी अन्य जैन या परिवार-विशिष्ट परम्परा को मानते हैं—और आपका संघ या पंचांग दीपावली तथा महावीर निर्वाण की कौन-सी तिथि रखता है?"
