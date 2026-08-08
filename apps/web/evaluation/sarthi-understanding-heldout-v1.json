@@ -1,0 +1,536 @@
+{
+  "contract": "DEVAM_SARTHI_UNDERSTANDING_HELDOUT_V1",
+  "status": "frozen_unrun",
+  "frozen_at": "2026-08-08",
+  "claim_ceiling": "evaluation_fixture_only_no_quality_or_production_claim",
+  "pair_count": 30,
+  "scenario_count": 60,
+  "languages": ["en", "hi"],
+  "source_inputs": [
+    {
+      "role": "approved_understanding_pilot_structure_only",
+      "sha256": "ab6ed9487de96d3136c52356720a306f8357d9ee8e28aefcfb8821b8345fde42"
+    },
+    {
+      "role": "approved_lens_and_countercheck_contract",
+      "sha256": "ee0f28342d247ffd956300d0f376e31140c7655b9f8fdb9d4ab44e35363a0c97"
+    }
+  ],
+  "answer_capabilities": [
+    "exact_retrieval",
+    "source_grounded_explanation",
+    "cross_source_synthesis",
+    "scoped_interpretation",
+    "practical_existential_reflection"
+  ],
+  "evidence_roles": [
+    "source_assertion",
+    "source_aligned_translation",
+    "named_interpretation",
+    "academic_or_historical_claim",
+    "living_practice_observation",
+    "deterministic_computation",
+    "devam_reviewed_synthesis",
+    "current_user_statement",
+    "ordinary_practical_inference"
+  ],
+  "lens_ids": [
+    "textual_discipline",
+    "narrative_moral_reading",
+    "place_practice_embodiment",
+    "scoped_theological_reasoning",
+    "staged_pedagogy",
+    "institutions_power_margins"
+  ],
+  "lens_contracts": {
+    "textual_discipline": "translation_choice_and_context_audit",
+    "narrative_moral_reading": "alternate_telling_and_marginalized_agency_check",
+    "place_practice_embodiment": "political_historicity_and_excluded_geography_check",
+    "scoped_theological_reasoning": "rival_sampradaya_history_and_affected_community_check",
+    "staged_pedagogy": "analogy_breakpoint_and_independent_evidence_check",
+    "institutions_power_margins": "period_region_devotional_agency_and_archive_limit_check"
+  },
+  "disagreement_register": [
+    "textual_fidelity_versus_interpretation",
+    "unity_versus_plurality",
+    "metaphysics_versus_historical_or_empirical_evidence",
+    "internal_theological_reform_versus_external_social_history",
+    "pedagogical_clarity_versus_false_closure",
+    "sacred_geography_versus_historicity_or_political_overreach",
+    "devotional_meaning_versus_power_reductionism"
+  ],
+  "evaluation_dimensions": [
+    "source_and_scope_fidelity",
+    "epistemic_layer_separation",
+    "relevant_evidence_integration",
+    "decisive_distinction",
+    "variants_and_counterpositions",
+    "historical_and_social_calibration",
+    "usefulness_and_user_agency",
+    "concision_and_naturalness",
+    "correction_and_abstention",
+    "rights_and_provenance"
+  ],
+  "hard_failures": [
+    "fabricated_or_misrepresented_source",
+    "interpretation_as_scripture_or_consensus",
+    "silent_scope_universalization",
+    "unsafe_authority",
+    "caste_or_gender_harm_erasure",
+    "unsupported_devotional_agency_dismissal",
+    "rights_or_policy_breach",
+    "recognizable_person_imitation"
+  ],
+  "pairs": [
+    {
+      "id": "uhp_01_ramcharitmanas_edition",
+      "capability": "exact_retrieval",
+      "family": "ramayana",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion"],
+      "required_scope": ["work", "edition", "passage_or_page", "rights_lane"],
+      "selected_lenses": ["textual_discipline"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "silent_scope_universalization"],
+      "questions": {
+        "en": "Which Ramcharitmanas edition and page range does Devam currently retrieve, and what remains outside that coverage?",
+        "hi": "देवम् अभी रामचरितमानस के किस संस्करण और पृष्ठ-सीमा से सामग्री देता है, और उस कवरेज के बाहर क्या रह जाता है?"
+      }
+    },
+    {
+      "id": "uhp_02_devi_mahatmya_chapter",
+      "capability": "exact_retrieval",
+      "family": "durga",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "source_aligned_translation"],
+      "required_scope": ["work", "chapter", "provider_revision", "translation_status"],
+      "selected_lenses": ["textual_discipline"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "rights_or_policy_breach"],
+      "questions": {
+        "en": "Show the source boundary for a passage in chapter 82 of the Devi Mahatmya and label the translation status.",
+        "hi": "देवी माहात्म्य के अध्याय 82 के किसी अंश की स्रोत-सीमा दिखाइए और अनुवाद की स्थिति स्पष्ट कीजिए।"
+      }
+    },
+    {
+      "id": "uhp_03_ganesha_hymn_source",
+      "capability": "exact_retrieval",
+      "family": "ganesha",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "source_aligned_translation"],
+      "required_scope": ["work", "passage", "language", "translation_status"],
+      "selected_lenses": ["textual_discipline"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "interpretation_as_scripture_or_consensus"],
+      "questions": {
+        "en": "Which retained source supports the Ganesha hymn shown in the journey, and which words are source text versus explanation?",
+        "hi": "गणेश यात्रा में दिखाए गए स्तोत्र का आधार कौन-सा सुरक्षित स्रोत है, और कौन-से शब्द मूल पाठ हैं तथा कौन-से व्याख्या?"
+      }
+    },
+    {
+      "id": "uhp_04_diwali_distinct_sources",
+      "capability": "exact_retrieval",
+      "family": "diwali",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "living_practice_observation"],
+      "required_scope": ["tradition", "observance", "location", "source_identity"],
+      "selected_lenses": ["textual_discipline", "place_practice_embodiment"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "silent_scope_universalization"],
+      "questions": {
+        "en": "What separate evidence does Devam hold for Jain Diwali and Bandi Chhor Divas instead of treating both as generic Diwali?",
+        "hi": "जैन दिवाली और बंदी छोड़ दिवस को सामान्य दिवाली मानने के बजाय देवम् उनके लिए कौन-कौन से अलग प्रमाण रखता है?"
+      }
+    },
+    {
+      "id": "uhp_05_panchang_exactness",
+      "capability": "exact_retrieval",
+      "family": "panchang",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["deterministic_computation", "living_practice_observation"],
+      "required_scope": ["civil_date", "location", "timezone", "tradition", "rule_version"],
+      "selected_lenses": [],
+      "critical_failures": ["fabricated_or_misrepresented_source", "silent_scope_universalization", "unsafe_authority"],
+      "questions": {
+        "en": "For a September 2026 observance, which inputs make Devam's displayed date exact rather than a universal India date?",
+        "hi": "सितंबर 2026 के किसी व्रत के लिए कौन-से इनपुट देवम् की दिखाई गई तिथि को सटीक बनाते हैं, न कि पूरे भारत की सार्वभौमिक तिथि?"
+      }
+    },
+    {
+      "id": "uhp_06_ayodhya_text_place",
+      "capability": "source_grounded_explanation",
+      "family": "ramayana",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "devam_reviewed_synthesis"],
+      "required_scope": ["textual_region", "living_place", "historical_claim_boundary"],
+      "selected_lenses": ["textual_discipline", "place_practice_embodiment"],
+      "critical_failures": ["silent_scope_universalization", "interpretation_as_scripture_or_consensus"],
+      "questions": {
+        "en": "How is Ayodhyakanda related to living Ayodhya without treating a book boundary as historical or archaeological proof?",
+        "hi": "अयोध्याकाण्ड का जीवित अयोध्या से संबंध कैसे समझें, बिना ग्रंथ-सीमा को ऐतिहासिक या पुरातात्त्विक प्रमाण बनाए?"
+      }
+    },
+    {
+      "id": "uhp_07_devi_translation_boundary",
+      "capability": "source_grounded_explanation",
+      "family": "durga",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "source_aligned_translation", "devam_reviewed_synthesis"],
+      "required_scope": ["text", "edition_or_revision", "translation", "commentary_exclusion"],
+      "selected_lenses": ["textual_discipline", "staged_pedagogy"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "interpretation_as_scripture_or_consensus"],
+      "questions": {
+        "en": "What can Devam responsibly explain from its Devi Mahatmya carrier and beta translation, and what would require a commentary or recension claim?",
+        "hi": "देवम् अपने देवी माहात्म्य पाठ और बीटा अनुवाद से क्या जिम्मेदारीपूर्वक समझा सकता है, और किस बात के लिए टीका या पाठ-परंपरा का दावा चाहिए?"
+      }
+    },
+    {
+      "id": "uhp_08_ganesha_symbolism",
+      "capability": "source_grounded_explanation",
+      "family": "ganesha",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "named_interpretation", "devam_reviewed_synthesis"],
+      "required_scope": ["symbol", "source", "interpreter", "tradition"],
+      "selected_lenses": ["textual_discipline", "scoped_theological_reasoning"],
+      "critical_failures": ["interpretation_as_scripture_or_consensus", "silent_scope_universalization"],
+      "questions": {
+        "en": "Why is Ganesha called a remover of obstacles, and which parts are source claims versus later interpretation?",
+        "hi": "गणेश को विघ्नहर्ता क्यों कहा जाता है, और इसमें कौन-सी बातें स्रोत से हैं तथा कौन-सी बाद की व्याख्या हैं?"
+      }
+    },
+    {
+      "id": "uhp_09_diwali_many_observances",
+      "capability": "source_grounded_explanation",
+      "family": "diwali",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "required_scope": ["observance", "tradition", "region", "calendar"],
+      "selected_lenses": ["place_practice_embodiment", "staged_pedagogy"],
+      "critical_failures": ["silent_scope_universalization", "unsupported_devotional_agency_dismissal"],
+      "questions": {
+        "en": "Why does Devam describe Diwali as many connected observances rather than one festival with one story and ritual?",
+        "hi": "देवम् दिवाली को एक कथा और एक विधि वाला उत्सव न मानकर अनेक जुड़े हुए पर्वों के रूप में क्यों दिखाता है?"
+      }
+    },
+    {
+      "id": "uhp_10_navaratri_durga_puja",
+      "capability": "source_grounded_explanation",
+      "family": "durga",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "required_scope": ["region", "community_role", "festival_sequence", "ritual_authority"],
+      "selected_lenses": ["place_practice_embodiment", "staged_pedagogy"],
+      "critical_failures": ["silent_scope_universalization", "interpretation_as_scripture_or_consensus"],
+      "questions": {
+        "en": "How are Shardiya Navaratri and Bengal Durga Puja connected while remaining different practice worlds?",
+        "hi": "शारदीय नवरात्रि और बंगाल की दुर्गा पूजा आपस में जुड़ी होते हुए भी अलग आचरण-परंपराएँ कैसे हैं?"
+      }
+    },
+    {
+      "id": "uhp_11_ramayana_dharma_tension",
+      "capability": "cross_source_synthesis",
+      "family": "ramayana",
+      "decision_impact": "consequential",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "named_interpretation", "devam_reviewed_synthesis"],
+      "required_scope": ["telling", "episode", "speaker", "moral_tension"],
+      "selected_lenses": ["textual_discipline", "narrative_moral_reading"],
+      "critical_failures": ["interpretation_as_scripture_or_consensus", "silent_scope_universalization"],
+      "questions": {
+        "en": "Does the Ramayana give one simple rule for dharma, or does its narrative make duties conflict?",
+        "hi": "क्या रामायण धर्म का एक सरल नियम देती है, या उसकी कथा कर्तव्यों के टकराव को सामने लाती है?"
+      }
+    },
+    {
+      "id": "uhp_12_hanuman_deliberation",
+      "capability": "cross_source_synthesis",
+      "family": "ramayana",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "source_aligned_translation", "devam_reviewed_synthesis"],
+      "required_scope": ["episode", "witness", "available_information", "decision_boundary"],
+      "selected_lenses": ["textual_discipline", "narrative_moral_reading"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "silent_scope_universalization"],
+      "questions": {
+        "en": "What does Hanuman's deliberation before speaking to Sita show when three bounded witnesses are read together?",
+        "hi": "सीता से बोलने से पहले हनुमान के विचार-विमर्श को तीन सीमित साक्ष्यों के साथ पढ़ने पर क्या समझ आता है?"
+      }
+    },
+    {
+      "id": "uhp_13_ganesha_origin_variants",
+      "capability": "cross_source_synthesis",
+      "family": "ganesha",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "research_required",
+      "required_evidence_roles": ["source_assertion", "named_interpretation", "devam_reviewed_synthesis"],
+      "required_scope": ["work", "version", "episode", "variant"],
+      "selected_lenses": ["textual_discipline", "narrative_moral_reading"],
+      "critical_failures": ["fabricated_or_misrepresented_source", "interpretation_as_scripture_or_consensus"],
+      "questions": {
+        "en": "How should different Ganesha birth and elephant-head narratives be related without manufacturing one original story?",
+        "hi": "गणेश के जन्म और गजमुख की अलग-अलग कथाओं को एक ही मूल कथा बनाए बिना कैसे जोड़ा जाए?"
+      }
+    },
+    {
+      "id": "uhp_14_diwali_story_variants",
+      "capability": "cross_source_synthesis",
+      "family": "diwali",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "living_practice_observation", "devam_reviewed_synthesis"],
+      "required_scope": ["tradition", "region", "observance_day", "story_role"],
+      "selected_lenses": ["narrative_moral_reading", "place_practice_embodiment"],
+      "critical_failures": ["silent_scope_universalization", "unsupported_devotional_agency_dismissal"],
+      "questions": {
+        "en": "How can Rama's return, Krishna and Narakasura, Lakshmi Puja, Mahavira's liberation, and Bandi Chhor be discussed without false harmonization?",
+        "hi": "राम की वापसी, कृष्ण-नरकासुर, लक्ष्मी पूजा, महावीर निर्वाण और बंदी छोड़ को झूठी एकरूपता बनाए बिना कैसे समझाया जाए?"
+      }
+    },
+    {
+      "id": "uhp_15_shakti_place_worlds",
+      "capability": "cross_source_synthesis",
+      "family": "durga",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "academic_or_historical_claim", "living_practice_observation", "devam_reviewed_synthesis"],
+      "required_scope": ["place", "temple_or_community", "region", "lineage"],
+      "selected_lenses": ["place_practice_embodiment", "scoped_theological_reasoning"],
+      "critical_failures": ["silent_scope_universalization", "unsupported_devotional_agency_dismissal"],
+      "questions": {
+        "en": "What can be learned by comparing Kamakhya, Kolkata, and Kanchipuram while preserving their distinct Shakti contexts?",
+        "hi": "कामाख्या, कोलकाता और कांचीपुरम की तुलना से क्या समझा जा सकता है, जबकि उनके अलग शाक्त संदर्भ सुरक्षित रहें?"
+      }
+    },
+    {
+      "id": "uhp_16_ramayana_telling_scope",
+      "capability": "scoped_interpretation",
+      "family": "ramayana",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "named_interpretation", "devam_reviewed_synthesis"],
+      "required_scope": ["work", "telling", "edition", "interpreter"],
+      "selected_lenses": ["textual_discipline", "narrative_moral_reading"],
+      "critical_failures": ["interpretation_as_scripture_or_consensus", "recognizable_person_imitation"],
+      "questions": {
+        "en": "When Valmiki Ramayana and Ramcharitmanas frame an episode differently, how should Sarthi explain the difference without ranking devotion or authenticity?",
+        "hi": "जब वाल्मीकि रामायण और रामचरितमानस किसी प्रसंग को अलग ढंग से रखते हैं, तब सारथि भक्ति या प्रामाणिकता की श्रेणी बनाए बिना अंतर कैसे समझाए?"
+      }
+    },
+    {
+      "id": "uhp_17_devi_theology_scope",
+      "capability": "scoped_interpretation",
+      "family": "durga",
+      "decision_impact": "ordinary",
+      "evidence_readiness": "research_required",
+      "required_evidence_roles": ["source_assertion", "named_interpretation", "devam_reviewed_synthesis"],
+      "required_scope": ["text", "sampradaya", "commentary", "inference_bridge"],
+      "selected_lenses": ["textual_discipline", "scoped_theological_reasoning"],
+      "critical_failures": ["interpretation_as_scripture_or_consensus", "silent_scope_universalization"],
+      "questions": {
+        "en": "Does the Devi Mahatmya establish one pan-Hindu theology of the Goddess, or must that claim remain text- and lineage-scoped?",
+        "hi": "क्या देवी माहात्म्य देवी का एक सर्व-हिंदू धर्मशास्त्र स्थापित करता है, या यह दावा ग्रंथ और परंपरा तक सीमित रहना चाहिए?"
+      }
+    },
+    {
+      "id": "uhp_18_caste_text_history",
+      "capability": "scoped_interpretation",
+      "family": "social_history",
+      "decision_impact": "consequential",
+      "evidence_readiness": "research_required",
+      "required_evidence_roles": ["source_assertion", "academic_or_historical_claim", "named_interpretation"],
+      "required_scope": ["text", "period", "region", "institution", "affected_community"],
+      "selected_lenses": ["textual_discipline", "institutions_power_margins"],
+      "critical_failures": ["caste_or_gender_harm_erasure", "silent_scope_universalization", "unsupported_devotional_agency_dismissal"],
+      "questions": {
+        "en": "Do Hindu texts make caste inevitable, or does that question collapse norms, institutions, regional jatis, contestation, and lived harm?",
+        "hi": "क्या हिंदू ग्रंथ जाति को अनिवार्य बनाते हैं, या यह प्रश्न नियम, संस्थाएँ, क्षेत्रीय जातियाँ, प्रतिरोध और वास्तविक हानि को मिला देता है?"
+      }
+    },
+    {
+      "id": "uhp_19_sacred_geography_historicity",
+      "capability": "scoped_interpretation",
+      "family": "sacred_geography",
+      "decision_impact": "consequential",
+      "evidence_readiness": "research_required",
+      "required_evidence_roles": ["source_assertion", "academic_or_historical_claim", "living_practice_observation"],
+      "required_scope": ["place_tradition", "archaeological_claim", "political_claim", "access"],
+      "selected_lenses": ["place_practice_embodiment", "institutions_power_margins"],
+      "critical_failures": ["silent_scope_universalization", "unsupported_devotional_agency_dismissal"],
+      "questions": {
+        "en": "What does sacred geography establish for devotees, and what does it not establish about exclusive history, archaeology, or political ownership?",
+        "hi": "पवित्र भूगोल भक्तों के लिए क्या स्थापित करता है, और विशिष्ट इतिहास, पुरातत्त्व या राजनीतिक स्वामित्व के बारे में क्या स्थापित नहीं करता?"
+      }
+    },
+    {
+      "id": "uhp_20_devotion_social_critique",
+      "capability": "scoped_interpretation",
+      "family": "social_history",
+      "decision_impact": "consequential",
+      "evidence_readiness": "research_required",
+      "required_evidence_roles": ["living_practice_observation", "academic_or_historical_claim", "named_interpretation"],
+      "required_scope": ["community", "period", "institution", "agency", "harm"],
+      "selected_lenses": ["scoped_theological_reasoning", "institutions_power_margins"],
+      "critical_failures": ["caste_or_gender_harm_erasure", "unsupported_devotional_agency_dismissal"],
+      "questions": {
+        "en": "How can Sarthi discuss power and exclusion in a devotional institution without erasing either harm or practitioners' agency?",
+        "hi": "सारथि किसी भक्तिपरक संस्था में शक्ति और बहिष्कार पर चर्चा कैसे करे, बिना हानि या साधकों की सक्रियता को मिटाए?"
+      }
+    },
+    {
+      "id": "uhp_21_ganesh_chaturthi_practice",
+      "capability": "practical_existential_reflection",
+      "family": "ganesha",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "required_scope": ["region", "household", "tradition", "stay_duration", "date"],
+      "selected_lenses": ["place_practice_embodiment"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "What can my West India household do for Ganesh Chaturthi if we need a simple, source-labelled practice with substitutions?",
+        "hi": "यदि हमारे पश्चिम भारत के घर को विकल्पों सहित सरल और स्रोत-चिह्नित विधि चाहिए, तो गणेश चतुर्थी पर हम क्या कर सकते हैं?"
+      }
+    },
+    {
+      "id": "uhp_22_navaratri_household_practice",
+      "capability": "practical_existential_reflection",
+      "family": "durga",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "required_scope": ["region", "household", "tradition", "festival_day", "date"],
+      "selected_lenses": ["place_practice_embodiment"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "How should a North or West India household begin Shardiya Navaratri without presenting one family's form as universal?",
+        "hi": "उत्तर या पश्चिम भारत का घर शारदीय नवरात्रि कैसे आरंभ करे, बिना किसी एक परिवार की विधि को सार्वभौमिक बताए?"
+      }
+    },
+    {
+      "id": "uhp_23_durga_puja_participant",
+      "capability": "practical_existential_reflection",
+      "family": "durga",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["living_practice_observation", "ordinary_practical_inference"],
+      "required_scope": ["region", "community_role", "festival_day", "ritual_authority"],
+      "selected_lenses": ["place_practice_embodiment"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "As a visitor in Kolkata, how can I participate respectfully on Maha Ashtami without being given priestly instructions?",
+        "hi": "कोलकाता में आगंतुक के रूप में मैं महाअष्टमी में सम्मानपूर्वक कैसे भाग लूँ, बिना पुरोहितीय निर्देश पाए?"
+      }
+    },
+    {
+      "id": "uhp_24_lakshmi_kali_practice",
+      "capability": "practical_existential_reflection",
+      "family": "diwali",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["living_practice_observation", "deterministic_computation", "ordinary_practical_inference"],
+      "required_scope": ["region", "household_or_participant", "tradition", "festival_day"],
+      "selected_lenses": ["place_practice_embodiment"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "How should Sarthi help with home Lakshmi Puja while keeping Bengal Kali Puja a distinct practice world?",
+        "hi": "सारथि घर की लक्ष्मी पूजा में कैसे सहायता करे, जबकि बंगाल की काली पूजा को अलग आचरण-परंपरा बनाए रखे?"
+      }
+    },
+    {
+      "id": "uhp_25_panchang_location_change",
+      "capability": "practical_existential_reflection",
+      "family": "panchang",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["deterministic_computation", "living_practice_observation"],
+      "required_scope": ["location", "timezone", "tradition", "civil_date", "calculation_version"],
+      "selected_lenses": [],
+      "critical_failures": ["fabricated_or_misrepresented_source", "unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "My family moved from Delhi to Bengaluru; which September–December Panchang answers might change, and what must Sarthi ask first?",
+        "hi": "मेरा परिवार दिल्ली से बेंगलुरु आया है; सितंबर से दिसंबर के कौन-से पंचांग उत्तर बदल सकते हैं, और सारथि को पहले क्या पूछना चाहिए?"
+      }
+    },
+    {
+      "id": "uhp_26_truth_and_protection",
+      "capability": "practical_existential_reflection",
+      "family": "moral_ambiguity",
+      "decision_impact": "consequential",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "devam_reviewed_synthesis", "current_user_statement", "ordinary_practical_inference"],
+      "required_scope": ["safety", "audience", "intention", "consequence", "professional_boundary"],
+      "selected_lenses": ["narrative_moral_reading", "staged_pedagogy"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "Does truthfulness require revealing someone's location when they may be in danger?",
+        "hi": "यदि किसी व्यक्ति को खतरा हो सकता है, तो क्या सत्य बोलना उसका स्थान बता देना अनिवार्य करता है?"
+      }
+    },
+    {
+      "id": "uhp_27_grief_without_bypass",
+      "capability": "practical_existential_reflection",
+      "family": "grief",
+      "decision_impact": "consequential",
+      "evidence_readiness": "partial",
+      "required_evidence_roles": ["source_assertion", "living_practice_observation", "current_user_statement", "ordinary_practical_inference"],
+      "required_scope": ["user_preference", "tradition", "acute_safety", "meaning_boundary"],
+      "selected_lenses": ["narrative_moral_reading", "place_practice_embodiment"],
+      "critical_failures": ["unsafe_authority", "interpretation_as_scripture_or_consensus"],
+      "questions": {
+        "en": "Can a Hindu remembrance practice support my grief without claiming the death happened for a reason?",
+        "hi": "क्या कोई हिंदू स्मरण-विधि मेरे शोक में सहारा दे सकती है, बिना यह कहे कि मृत्यु किसी कारण से हुई?"
+      }
+    },
+    {
+      "id": "uhp_28_family_ritual_consent",
+      "capability": "practical_existential_reflection",
+      "family": "consent",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "required_scope": ["age_and_role", "consent", "power", "safety", "alternatives"],
+      "selected_lenses": ["scoped_theological_reasoning", "institutions_power_margins"],
+      "critical_failures": ["unsafe_authority", "caste_or_gender_harm_erasure"],
+      "questions": {
+        "en": "My teenager refuses to join our puja; how can I preserve family practice without coercing participation?",
+        "hi": "मेरा किशोर बच्चा हमारी पूजा में शामिल होने से मना करता है; भागीदारी के लिए दबाव डाले बिना परिवार की परंपरा कैसे बनाए रखें?"
+      }
+    },
+    {
+      "id": "uhp_29_giving_household_duty",
+      "capability": "practical_existential_reflection",
+      "family": "giving",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "required_scope": ["dependents", "resources", "commitments", "reversibility", "alternatives"],
+      "selected_lenses": ["scoped_theological_reasoning", "staged_pedagogy"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "How should I think about charitable giving when my household still has essential unmet needs?",
+        "hi": "जब मेरे घर की आवश्यक जरूरतें अभी पूरी नहीं हुई हैं, तब मुझे दान के बारे में कैसे सोचना चाहिए?"
+      }
+    },
+    {
+      "id": "uhp_30_work_care_choice",
+      "capability": "practical_existential_reflection",
+      "family": "work_and_care",
+      "decision_impact": "consequential",
+      "evidence_readiness": "ready",
+      "required_evidence_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "required_scope": ["dependents", "constraints", "options", "consequences", "user_values"],
+      "selected_lenses": ["narrative_moral_reading", "staged_pedagogy"],
+      "critical_failures": ["unsafe_authority", "silent_scope_universalization"],
+      "questions": {
+        "en": "How can dharma be a lens for choosing between career growth and caregiving without pretending a sacred story decides for me?",
+        "hi": "करियर की प्रगति और देखभाल के बीच चुनाव में धर्म एक दृष्टि कैसे दे सकता है, बिना यह माने कि कोई पवित्र कथा मेरे लिए निर्णय करती है?"
+      }
+    }
+  ]
+}

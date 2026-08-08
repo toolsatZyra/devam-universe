@@ -2370,6 +2370,18 @@ rights lanes, source and edition identity, variants and uncertainty.
 
 #### Understanding Phase 0 — contracts and evaluation fixtures
 
+Checkpoint 2026-08-08: Phase 0 is implemented and frozen, but unrun. The
+answer-free held-out fixture at
+`apps/web/evaluation/sarthi-understanding-heldout-v1.json` contains 30 matched
+English/Hindi pairs (60 independently rated scenarios) across all five answer
+capabilities. Every pair declares evidence roles, scope fields, selected
+lenses, evidence readiness and non-averagable critical failures. The evaluator
+contract and SHA-256 manifest sit beside it, and
+`pnpm verify:sarthi-understanding-phase0` validates counts, hero coverage,
+Devanagari presence, answer-field absence and byte identity. The fixture remains
+`frozen_unrun`; incomplete evidence packets are explicitly `partial` or
+`research_required`. No baseline answers, model run or quality gain is claimed.
+
 - **Inputs and rights prerequisites:** approved research packages; existing
   product and wisdom contracts; metadata and lawful links only for
   public-intellectual research; product-cleared evidence required before answer
@@ -2513,7 +2525,8 @@ rights lanes, source and edition identity, variants and uncertainty.
 Status after this documentation checkpoint:
 
 - `DESIGN INTEGRATED`;
-- `IMPLEMENTATION NOT YET RUN`;
+- `PHASE 0 HELD-OUT CONTRACT FROZEN, UNRUN`;
+- `RUNTIME AND BASELINE IMPLEMENTATION NOT YET RUN`;
 - `QUALITY IMPROVEMENT NOT YET ESTABLISHED`; and
 - `RIGHTS CLEARANCE REMAINS MATERIAL-SPECIFIC`.
 

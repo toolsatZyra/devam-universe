@@ -458,6 +458,9 @@ this design. Their validators establish package consistency only. The current
 status is:
 
 - **DESIGN INTEGRATED**;
-- **IMPLEMENTATION NOT YET RUN**;
+- **PHASE 0 HELD-OUT CONTRACT FROZEN, UNRUN**: 30 English/Hindi pairs and 60
+  independently rated scenarios are byte-bound under
+  `apps/web/evaluation/SARTHI_UNDERSTANDING_PHASE_0.sha256`;
+- **RUNTIME AND BASELINE IMPLEMENTATION NOT YET RUN**;
 - **QUALITY IMPROVEMENT NOT YET ESTABLISHED**; and
 - **RIGHTS CLEARANCE REMAINS MATERIAL-SPECIFIC**.

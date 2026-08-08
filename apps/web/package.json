@@ -10,6 +10,7 @@
     "verify:search-ui": "node scripts/verify-search-ui.mjs",
     "verify:sarthi-ui": "node scripts/verify-sarthi-ui.mjs",
     "verify:sarthi-conversation-ui": "node scripts/verify-sarthi-conversation-ui.mjs",
+    "verify:sarthi-understanding-phase0": "node scripts/validate-sarthi-understanding-phase0.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --exclude e2e/**",
     "test:product": "node scripts/run-product-tests.mjs",
