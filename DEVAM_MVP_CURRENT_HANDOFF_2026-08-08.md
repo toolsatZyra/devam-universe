@@ -5,6 +5,44 @@ Codex task. It deliberately replaces chat-only continuity. It does not replace
 the product brief, architecture, implementation plan, ritual contract, or
 Sarthi wisdom architecture.
 
+## 2026-08-09 superseding continuation checkpoint
+
+This section supersedes the older branch/PR and “Hindi still open” statements
+later in this handoff while preserving them as history.
+
+- Production `main` is currently `4478313ab3a2ad840dd2c5988205bca72412d9fc`
+  after the deployed cosmic Atlas and midnight `/today` hydration hotfix.
+- Current work is on `codex/cinematic-journey-worlds`, created from that commit.
+- Exact candidate commit: `c8f4e9f4ed393024a306c909456b24cdcd940449`;
+  draft PR: `https://github.com/toolsatZyra/devam-universe/pull/7`.
+- Local changes repair camera pan/zoom dead-ends, allow drag-start directly on
+  nodes, reveal cross-world paths, and add the evidence-bounded route Ramayana
+  → Diwali → Kali Puja → Durga → Durga Puja.
+- The reviewed local seed is 4 gateways, 50 world nodes and 62 navigation edges.
+  The corresponding hosted projection is 54 total app nodes including gateways
+  and 62 edges. Supabase migrations `20260808212130
+  add_devimahatmya_semantic_graph` and `20260808212142
+  sync_connected_cinematic_living_atlas` are applied and verified.
+- Four original cinematic journey assets are under `apps/web/public/journeys/`.
+  Every current journey stop now has a labelled English/Hindi Devam retelling
+  while exact source/edition boundaries remain separate.
+- The wider universe and its typed evidence-scoped connections are specified in
+  `docs/LIVING_ATLAS_OPEN_WORLD_CONTRACT.md`. The five-node path is a regression
+  example, not an ontology or completeness boundary.
+- Local acceptance currently passes: 772 portable product tests with 17 named
+  vault-only skips, TypeScript, lint, and desktop/mobile Playwright 12/12.
+- GitHub Actions run `31278793918` passed both jobs. Vercel preview
+  `https://devam-universe-kltwsdsbu-zyras-projects-c775ae8c.vercel.app` is READY
+  for the exact candidate and passed the deployed desktop/mobile suite 12/12
+  after the hosted Atlas synchronization.
+- The change set passed its local optimized build and final diff check. Reverify
+  its exact commit, PR, preview and hosted-migration status from Git/GitHub at
+  startup; require a merge-commit tree, fresh main CI, production Vercel identity
+  and stable-origin 12/12 before calling the candidate promoted.
+
+The two untracked research directories named later remain concurrent work and
+must not be staged, edited or deleted.
+
 ## Startup sequence
 
 1. Confirm the working directory is `C:\Work\Code\sanatan_knowledge_graph`.

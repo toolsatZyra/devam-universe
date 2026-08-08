@@ -25,6 +25,10 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 - pgvector + Postgres full-text: multilingual hybrid retrieval.
 - Object storage: immutable source objects, images, and derived media. One object per hash.
 - Relational graph tables plus recursive SQL for MVP. Benchmark before adding a native graph engine.
+- The Living Atlas projection and its evidence-scoped relationship vocabulary
+  follow `docs/LIVING_ATLAS_OPEN_WORLD_CONTRACT.md`. Progressive visual levels
+  of detail never weaken the underlying claim, applicability, rights or
+  uncertainty boundary.
 
 Core evidence classes: scripture/primary source; commentary/translation; academic/archaeological; official/current; living/oral/regional/family practice; and Devam synthesis.
 

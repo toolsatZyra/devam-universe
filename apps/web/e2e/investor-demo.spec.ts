@@ -28,10 +28,18 @@ async function expectNoHorizontalOverflow(page: Page) {
 }
 
 test("the Living Atlas is a full-screen cosmic world with spatial travel", async ({ page }) => {
+  test.setTimeout(90_000);
   const health = await page.request.get("/api/health");
   expect(health.status()).toBe(200);
   expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
-  await page.goto("/");
+  // Mount the Atlas as a returning explorer so the complete four-world navigation
+  // can be exercised without changing the product's separate guest-preview limit.
+  await page.goto("/search");
+  await page.evaluate(() => window.localStorage.setItem(
+    "devam-guest-gateways",
+    JSON.stringify(["ramayana", "ganesha", "durga", "diwali"]),
+  ));
+  await page.getByRole("link", { name: "Back to the Atlas" }).click();
   await expect(page.getByRole("heading", { name: "Choose a star. Enter a world." })).toBeVisible();
   const atlas = page.getByRole("region", { name: /Interactive Atlas cosmic universe/ });
   const initialBox = await atlas.boundingBox();
@@ -78,15 +86,70 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
     await page.mouse.down();
     await page.mouse.move(start.x + 40, start.y + 24, { steps: 3 });
     await page.mouse.up();
+    await page.waitForTimeout(20);
   }
   await expect(scene).not.toHaveAttribute("data-view-x", "0");
+  await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("button", { name: "Explore Ramayana" })).toHaveAttribute("aria-pressed", "true");
+
+  const ayodhya = page.getByRole("button", { name: "Ayodhya, Place" });
+  await expect(ayodhya).toBeVisible();
+  await ayodhya.click();
+  await expect(page.getByRole("heading", { name: "Ayodhya" })).toBeVisible();
+
+  const nodeBox = await ayodhya.boundingBox();
+  expect(nodeBox).not.toBeNull();
+  if (nodeBox) {
+    const before = await scene.evaluate((element) => ({
+      x: Number(element.getAttribute("data-view-x")),
+      y: Number(element.getAttribute("data-view-y")),
+    }));
+    await page.mouse.move(nodeBox.x + nodeBox.width / 2, nodeBox.y + nodeBox.height / 2);
+    await page.mouse.down();
+    await page.mouse.move(nodeBox.x + nodeBox.width / 2 + 96, nodeBox.y + nodeBox.height / 2 + 64, { steps: 5 });
+    await page.mouse.up();
+    await page.waitForTimeout(20);
+    const after = await scene.evaluate((element) => ({
+      x: Number(element.getAttribute("data-view-x")),
+      y: Number(element.getAttribute("data-view-y")),
+    }));
+    expect(after.x).not.toBe(before.x);
+    expect(after.y).not.toBe(before.y);
+  }
+
+  await atlas.focus();
+  for (let index = 0; index < 12; index += 1) await page.keyboard.press("Shift+ArrowDown");
+  const lowerBound = Number(await scene.getAttribute("data-view-y"));
+  for (let index = 0; index < 3; index += 1) await page.keyboard.press("Shift+ArrowUp");
+  expect(Number(await scene.getAttribute("data-view-y"))).toBeGreaterThan(lowerBound);
+  for (let index = 0; index < 12; index += 1) await page.keyboard.press("Shift+ArrowRight");
+  const rightBound = Number(await scene.getAttribute("data-view-x"));
+  for (let index = 0; index < 3; index += 1) await page.keyboard.press("Shift+ArrowLeft");
+  expect(Number(await scene.getAttribute("data-view-x"))).toBeGreaterThan(rightBound);
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
+  await page.getByRole("button", { name: "Follow Rama homecoming tradition to Diwali in another world" }).click();
+  await expect(page.getByRole("button", { name: "Explore Diwali" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "Follow same new-moon night, distinct Bengal festival to Kali Puja" }).click();
+  await expect(page.getByRole("heading", { name: "Kali Puja" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow connected Shakta goddess traditions to Durga in another world" }).click();
+  await expect(page.getByRole("button", { name: "Explore Durga" })).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "Follow living festival world to Durga Puja" }).click();
+  await expect(page.getByRole("heading", { name: "Durga Puja" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("link", { name: "Begin at Ayodhya" })).toBeVisible();
   await page.getByRole("link", { name: "Begin at Ayodhya" }).click();
   await expect(page.getByRole("region", { name: "Ramayana story world" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Bālakāṇḍa" })).toBeVisible();
   await expect(page.getByRole("listitem", { name: /2\. Ayodhyākāṇḍa/ })).toBeVisible();
+  await page.getByRole("button", { name: "हिं" }).click();
+  await expect(page.getByRole("heading", { name: "बालकाण्ड" })).toBeVisible();
+  await expect(page.getByText("देवम की स्रोत-आधारित सरल कथा")).toBeVisible();
+  await page.getByRole("button", { name: "EN", exact: true }).click();
   await expect(page.getByText("Story source", { exact: true })).toBeVisible();
   await expectNoHorizontalOverflow(page);
 });

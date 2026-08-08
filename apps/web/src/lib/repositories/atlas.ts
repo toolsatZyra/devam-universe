@@ -17,6 +17,9 @@ class FixtureAtlasRepository implements AtlasRepository {
 // implementation owns published node topology when configured; reviewed local
 // exploration copy remains a fail-safe for legacy rows until its migration is applied.
 export function getAtlasRepository(): AtlasRepository {
+  if (process.env.DEVAM_ATLAS_FIXTURE === "1") {
+    return new FixtureAtlasRepository();
+  }
   if (hasSupabaseConfiguration()) {
     return new SupabaseAtlasRepository();
   }

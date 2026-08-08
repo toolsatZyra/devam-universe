@@ -2720,6 +2720,51 @@ Status after this documentation checkpoint:
 - `QUALITY IMPROVEMENT NOT YET ESTABLISHED`; and
 - `RIGHTS CLEARANCE REMAINS MATERIAL-SPECIFIC`.
 
+## 2026-08-09 connected open-world and cinematic-journey checkpoint
+
+The first response to production Atlas interaction feedback is implemented on
+`codex/cinematic-journey-worlds`, based on production `main` commit `4478313`.
+This checkpoint does not claim deployment or civilizational completeness.
+
+- Camera movement now uses viewport-aware, reversible x/y/scale bounds. A drag
+  can begin directly on a node, reset clears gesture state, and keyboard travel
+  remains able to return from every tested extreme.
+- Cross-world nodes and paths are no longer hidden merely because their home
+  gateway differs from the selected world. Highly connected nodes expose the
+  complete reviewed path list rather than an arbitrary first six.
+- The first evidence-bounded regression route is Ramayana → Diwali → Kali Puja
+  → Durga → Durga Puja. It explicitly preserves the North Indian scope of the
+  Rama homecoming association, the distinct Bengal Kali Puja lane, and the
+  non-equivalence of Kali and Durga forms and traditions.
+- The reviewed seed is now 4 gateways, 50 world nodes and 62 navigation edges.
+  Migration `20260809020500_sync_current_living_atlas.sql` is generated. Its
+  semantic prerequisite and final projection are applied to hosted Supabase as
+  migration versions `20260808212130` and `20260808212142`; read-only
+  verification returned 54 app nodes including gateways, 62 edges, 4 semantic
+  entities, 4 semantic relationships and 5 evidence-bounded bridge edges.
+- Four original cinematic WebP world assets now fill the Ramayana, Ganesha,
+  Durga and Diwali journeys. Scene travel moves the background with parallax;
+  all current stops have everyday English and Hindi Devam retellings, visibly
+  distinct from exact sources and editions.
+- `docs/LIVING_ATLAS_OPEN_WORLD_CONTRACT.md` defines the broader entity,
+  relationship, camera, level-of-detail, art and expansion contract. The example
+  chain is one acceptance path, not the scope of the universe.
+
+Local validation after the changes:
+
+- product tests: 772 passed, 17 named source-vault-only tests skipped;
+- targeted Atlas/hero tests: 17 passed;
+- TypeScript and lint: pass; and
+- desktop/mobile Playwright: 12/12 pass, including direct-node dragging,
+  extreme camera recovery, the complete bridge route and Hindi story switching.
+- GitHub Actions run `31278793918`: both jobs pass; and
+- exact Vercel preview `devam-universe-kltwsdsbu-zyras-projects-c775ae8c.vercel.app`:
+  deployed desktop/mobile Playwright 12/12 pass after hosted synchronization.
+
+Still open: merge and fresh-main CI, production promotion and stable-origin
+12/12, broad character/place/story/polity/temple expansion, richer
+scene-specific art and the actual civilizational denominator.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.

@@ -33,6 +33,7 @@ export type WorldEdge = {
   from: string;
   to: string;
   relation: string;
+  evidenceBoundary?: string;
 };
 
 export type PlaceThread = {

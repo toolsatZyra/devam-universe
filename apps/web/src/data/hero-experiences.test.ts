@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { readFileSync } from "node:fs";
+import { readFileSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { sourceVaultIt } from "../test/source-vault";
@@ -17,6 +17,17 @@ describe("hero experiences", () => {
       expect(journey.sourceBoundary.length).toBeGreaterThan(80);
       expect(journey.stops.map((stop) => stop.ordinal)).toEqual(journey.stops.map((_, index) => index + 1));
       expect(new Set(journey.stops.map((stop) => stop.id)).size).toBe(journey.stops.length);
+    }
+  });
+
+  it("ships cinematic world art and a complete Hindi story retelling for every current stop", () => {
+    const publicRoot = resolve(process.cwd(), "public", "journeys");
+    const playerSource = readFileSync(resolve(process.cwd(), "src", "components", "experiences", "journey-player.tsx"), "utf8");
+    for (const journey of heroJourneys) {
+      expect(statSync(resolve(publicRoot, `${journey.slug}-world-v1.webp`)).size).toBeGreaterThan(150_000);
+      for (const stop of journey.stops) {
+        expect(playerSource, `${stop.id} has no Hindi story retelling`).toContain(`"${stop.id}": { title:`);
+      }
     }
   });
 
