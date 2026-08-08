@@ -176,7 +176,28 @@ inputs but are not promoted to full ritual completion unless they satisfy
 
 ## Experience plane
 
-A responsive web/PWA renders the 2.5D Atlas, Sarthi, Search, journeys, and challenges. Scenes are data-driven so content teams can publish places, stories, rituals, and missions without bespoke code for every node. Multi-resolution assets, prefetching, caching, and graceful bandwidth adaptation preserve a premium experience.
+A responsive web/PWA renders the Living Atlas as the full viewport rather than
+inside a dashboard shell. Its procedural/vector cosmic field, layered star
+planes, perspective camera rig, graph edges, master-star gateways, and
+progressively revealed discovery nodes remain resolution-independent under
+zoom. Pointer, wheel, keyboard, pinch, double-tap, and reduced-motion paths share
+one bounded camera state. The initial scene exposes all four hero universes;
+selecting one flies the camera into its local constellation without a hard cut.
+
+Hero journeys reuse the same spatial language: scene nodes, a moving 2.5D path,
+atmosphere, and short story beats replace article-first pages. Hindi and English
+story copy are the primary presentation contract. Citation, edition, variant,
+rights, and uncertainty data remain attached to the same scene records and open
+only through progressive disclosure. Sarthi is an overlay conversation bound to
+the active node. Search, account, Today/Panchang, ritual procedures, and deeper
+library views are destinations, not permanent Atlas rails or bars.
+
+Scenes are data-driven so content teams can publish places, stories, rituals,
+missions, and future visual layers without bespoke navigation code for every
+node. Multi-resolution assets, prefetching, caching, and graceful bandwidth
+adaptation preserve a premium experience. The MVP may simulate depth with CSS
+3D, transforms, vector geometry, and layered motion; a native 3D engine is added
+only when measured interaction or rendering needs justify its cost.
 
 ## Security and privacy
 

@@ -2064,6 +2064,35 @@ complete civilizational visual coverage. Current closure passes 89 web test
 files / 678 tests, type-check, lint, the production mojibake scan, and the
 production build.
 
+Checkpoint 2026-08-08 (consumer cosmic open-world correction): the Atlas no
+longer renders the cosmic bitmap as its zooming scene plane. That earlier asset
+is retained as an unused art source, while the playable surface now uses a
+resolution-independent procedural star field, nebula layers, SVG relationship
+paths, CSS perspective, and a bounded camera transform. The complete viewport is
+the experience: the permanent left rail, Atlas Panchang control, era strip,
+geography switcher, and bottom navigation bar are removed. Search and account
+remain small HUD destinations; Sārthi is a floating button opening an in-world
+conversation panel.
+
+All four hero gateways are visible as master stars on the first desktop and
+phone viewports. Unopened graph nodes remain as low-contrast constellation
+points; entering a hero world flies the camera to it, raises the local graph and
+relationship paths, and reveals short consumer story hooks. Ramayana, Ganesha,
+Durga, and Diwali journey routes now continue as spatial 2.5D story paths instead
+of returning to article cards. Story identity and one short English narrative
+beat lead; edition, locator, source boundary, variants, and ritual evidence stay
+collapsed as the trust layer. A Hindi story-copy switch and richer scene-specific
+art/audio remain explicit next experience work; this checkpoint does not claim
+final art, native 3D, every narrative scene, or complete bilingual presentation.
+
+Validation after this correction passes 115 portable web test files / 767 tests
+with 17 named vault-only skips, lint, TypeScript, a warning-free production
+build, and the complete local desktop/mobile Playwright matrix (12/12). The
+browser acceptance now proves a full-viewport Atlas, all four master stars inside
+the playable bounds, resolution-independent zoom/reset and pan, absence of the
+old Panchang/navigation chrome, continuous Ramayana story-world entry, no
+horizontal overflow, and no browser console or page errors.
+
 Checkpoint 2026-08-08 (hosted MVP data backbone): the dedicated
 `devam-universe` project now has all sixteen repository migrations applied. The
 hosted Atlas is synchronized to the reviewed composition—four gateways, 36

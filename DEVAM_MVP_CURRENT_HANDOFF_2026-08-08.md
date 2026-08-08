@@ -34,22 +34,69 @@ critical path is now productization rather than another isolated acquisition.
 ## Git and hosted state
 
 - Remote: `https://github.com/toolsatZyra/devam-universe.git`
-- Current branch: `codex/investor-demo-acceptance`
-- Latest verified functional/CI commit: `d2b20fc Make Devam product tests clean-checkout safe`
-- Last product checkpoint: `fce12a5 Add executable investor demo acceptance`
+- Current branch: `codex/sarthi-intellectual-apprenticeship-design`
+- Latest pushed functional/CI commit before the current cosmic-Atlas work:
+  `8d39ecab9a877e1abeae8b0dac0d14e162571429` (`Add fail-closed runtime readiness`)
 - Supabase project: `devam-universe`, ref `bucgdaunsuzithfigtmr`
-- Vercel: no project or production deployment yet.
-- Open draft PR stack, which must be reviewed/merged in order:
-  1. PR #1, `codex/complete-dutt-ramayana-english` → `main`
-  2. PR #2, `codex/acquire-dp-sharma-hindi-ramayana` → PR #1 branch
-  3. PR #3, `codex/acquire-ramcharitmanas-wikisource` → PR #2 branch
-  4. PR #4, `codex/investor-demo-acceptance` → PR #3 branch
-- PR #3: `https://github.com/toolsatZyra/devam-universe/pull/3`
-- PR #4: `https://github.com/toolsatZyra/devam-universe/pull/4`, stacked on PR #3
+- PRs #1, #2, #3, and #4 were merged in order on 2026-08-08 with merge commits
+  `93a6788`, `d95da2e`, `70d437d`, and `642fa6a`; `origin/main` is an ancestor
+  of the current branch.
+- Current draft PR #5:
+  `https://github.com/toolsatZyra/devam-universe/pull/5`, branch
+  `codex/sarthi-intellectual-apprenticeship-design` → `main`, currently `CLEAN`.
+- PR #5 GitHub Actions run `31260737173` passed both tracked-evidence/
+  portability and web-product/browser jobs on pushed commit `8d39eca`.
+- Vercel project `devam-universe` now exists and the stable production origin is
+  `https://devam-universe.vercel.app`. Its Framework Preset is Next.js and its
+  Root Directory is `apps/web`.
+- Vercel must use the exact `devam-universe` Supabase URL and matching
+  publishable key. Never expose the Supabase service-role secret to the browser
+  or Vercel public environment.
+- The production origin was made reachable after correcting Vercel framework
+  detection and the Supabase project binding. The cosmic Atlas correction in
+  the current worktree is not deployed until it is committed, pushed, accepted
+  on PR #5, and released.
 
-Do not point Vercel at `main` and call it current until this stack is reviewed
-and merged. A branch preview is acceptable for review, but production should be
-Git-connected to the consolidated branch.
+Two untracked research directories are concurrent other-task work and must not
+be staged, rewritten, deleted, or included in deployment commits:
+
+- `research/sarthi-artificial-wisdom/intellectual-apprenticeship-round-1/`; and
+- `research/sarthi-artificial-wisdom/understanding-layer-pilot/`.
+
+## Current consumer-experience checkpoint
+
+The Atlas has been rebuilt as a full-viewport cosmic open world. The permanent
+left menu, Panchang control, era/geography switchers, and bottom navigation have
+been removed from the Atlas. Four hero gateways are master stars in the initial
+desktop and phone viewports; graph nodes and edges read as a low-contrast deep
+constellation, then become interactive as the camera enters a world. Zoom uses
+procedural/vector/CSS layers rather than scaling the previous bitmap, so it
+remains sharp.
+
+Hero routes now continue into spatial 2.5D story paths rather than article-card
+screens. Sārthi is a floating overlay chat in both the Atlas and a journey.
+English story beats lead; sources, editions, locators, variants, uncertainty,
+and ritual evidence remain collapsed underneath. Hindi story presentation and
+richer scene-specific art/audio are still open and must not be represented as
+complete.
+
+Current local validation for the uncommitted consumer correction:
+
+- 115 portable web test files pass: 767 tests passed and 17 named vault-only
+  tests skipped;
+- lint passes;
+- TypeScript passes;
+- the warning-free Next.js production build passes;
+- the complete local desktop/mobile Playwright matrix passes 12/12; and
+- direct browser inspection at 1440x1000 and 412x915 confirms all four master
+  stars are in the playable viewport, Ramayana graph entry remains spatial, and
+  no browser page/console errors were observed.
+
+The next release boundary is to commit and push only the reviewed cosmic-Atlas
+files, obtain fresh PR #5 CI, review its Vercel preview, and merge/release only
+after the user approves that exact candidate. Deployed account continuity,
+custom SMTP, export/deletion/sign-out, and the full deployed 12-case browser
+matrix remain release acceptance gates.
 
 ## Latest completed checkpoint
 

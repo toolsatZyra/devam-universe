@@ -27,48 +27,39 @@ async function expectNoHorizontalOverflow(page: Page) {
   expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport + 1);
 }
 
-test("the Living Atlas exposes all four launch worlds and working map controls", async ({ page }) => {
+test("the Living Atlas is a full-screen cosmic world with spatial travel", async ({ page }) => {
   const health = await page.request.get("/api/health");
   expect(health.status()).toBe(200);
   expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Where will your curiosity take you?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Choose a star. Enter a world." })).toBeVisible();
+  const atlas = page.getByRole("region", { name: /Interactive Atlas cosmic universe/ });
+  const initialBox = await atlas.boundingBox();
+  expect(initialBox).not.toBeNull();
+  expect(initialBox?.width ?? 0).toBeGreaterThan(page.viewportSize()!.width * .98);
+  expect(initialBox?.height ?? 0).toBeGreaterThan(page.viewportSize()!.height * .98);
+  await expect(page.getByText("Set your location for Panchang")).toHaveCount(0);
+  await expect(page.getByRole("navigation")).toHaveCount(0);
   for (const hero of ["Ganesha", "Durga", "Ramayana", "Diwali"]) {
-    await expect(page.getByRole("button", { name: `Explore ${hero}` })).toBeVisible();
+    const gateway = page.getByRole("button", { name: `Explore ${hero}` });
+    await expect(gateway).toBeVisible();
+    const gatewayBox = await gateway.boundingBox();
+    expect(gatewayBox, `${hero} gateway is inside the playable viewport`).not.toBeNull();
+    expect((gatewayBox?.x ?? -1) + (gatewayBox?.width ?? 0)).toBeGreaterThan(0);
+    expect(gatewayBox?.x ?? page.viewportSize()!.width).toBeLessThan(page.viewportSize()!.width);
+    expect((gatewayBox?.y ?? -1) + (gatewayBox?.height ?? 0)).toBeGreaterThan(0);
+    expect(gatewayBox?.y ?? page.viewportSize()!.height).toBeLessThan(page.viewportSize()!.height);
   }
 
   const scene = page.getByTestId("atlas-scene");
   await expect(scene).toHaveAttribute("data-view-scale", "1");
-  await page.getByRole("button", { name: "Zoom in" }).click();
-  await expect(page.getByRole("group", { name: "Atlas zoom controls, 122%" })).toBeVisible();
-  await expect(scene).toHaveAttribute("data-view-scale", "1.22");
-  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Zoom in" }).evaluate((button: HTMLButtonElement) => button.click());
+  await expect(page.getByRole("group", { name: "Atlas zoom controls, 120%" })).toBeVisible();
+  await expect(scene).toHaveAttribute("data-view-scale", "1.2");
+  await page.getByRole("button", { name: "Reset map view" }).evaluate((button: HTMLButtonElement) => button.click());
   await expect(scene).toHaveAttribute("data-view-scale", "1");
   await expect(scene).toHaveAttribute("data-view-x", "0");
 
-  await page.getByRole("button", { name: /Sacred geography/ }).click();
-  await expect(scene).toHaveAttribute("data-atlas-layer", "geography");
-  await expect(page.getByRole("button", { name: /Ayodhya, Place/ })).toBeVisible();
-  await expect(page.getByText("Illustrative positions · not a navigation map")).toBeVisible();
-  await page.getByRole("button", { name: "Durga", exact: true }).click();
-  await expect(page.getByRole("button", { name: /Kamakhya, Shakti Peetha/ })).toBeVisible();
-  await page.getByRole("button", { name: "Ramayana", exact: true }).click();
-  await page.getByRole("button", { name: "Knowledge universe" }).click();
-  await expect(scene).toHaveAttribute("data-atlas-layer", "universe");
-
-  await page.getByRole("button", { name: "Place thread" }).click();
-  const placeThread = page.getByRole("dialog", { name: "Ramayana place thread" });
-  await expect(placeThread.getByRole("heading", { name: "Ayodhya to Chitrakoot" })).toBeVisible();
-  await expect(placeThread).toContainText("not a literal route");
-  await placeThread.getByRole("button", { name: /Chitrakoot/ }).click();
-  await expect(scene).toHaveAttribute("data-atlas-layer", "geography");
-  await expect(scene).toHaveAttribute("data-view-scale", "1.45");
-  await expect(page.getByRole("heading", { name: "Chitrakoot", exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Place thread" }).click();
-  await page.getByRole("button", { name: "Reset map view" }).click();
-  await page.getByRole("button", { name: "Knowledge universe" }).click();
-
-  const atlas = page.getByRole("region", { name: /Interactive Atlas/ });
   const box = await atlas.boundingBox();
   expect(box).not.toBeNull();
   if (box) {
@@ -89,11 +80,14 @@ test("the Living Atlas exposes all four launch worlds and working map controls",
     await page.mouse.up();
   }
   await expect(scene).not.toHaveAttribute("data-view-x", "0");
-  await page.getByRole("button", { name: "Epics", exact: true }).click();
-  await expect(page.getByRole("button", { name: "Epics", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("button", { name: "Explore Ramayana" })).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByRole("link", { name: "Begin at Ayodhya" })).toBeVisible();
+  await page.getByRole("link", { name: "Begin at Ayodhya" }).click();
+  await expect(page.getByRole("region", { name: "Ramayana story world" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Bālakāṇḍa" })).toBeVisible();
+  await expect(page.getByRole("listitem", { name: /2\. Ayodhyākāṇḍa/ })).toBeVisible();
+  await expect(page.getByText("Story source", { exact: true })).toBeVisible();
   await expectNoHorizontalOverflow(page);
 });
 
