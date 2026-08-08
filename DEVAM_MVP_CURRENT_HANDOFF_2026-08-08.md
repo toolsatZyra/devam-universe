@@ -199,9 +199,11 @@ productization sequence below is now the active critical path.
    dashboard separating preserved, structurally understood, indexed,
    product-usable, translated, reviewed and complete. Keep its live counters
    and denominator boundaries current as the library expands.
-6. Move new ritual selection away from per-observance TypeScript branching to
-   the generic database-driven applicability/content contract. Do not perform
-   another destructive cleanup.
+6. Current ritual selection now enters through the generic
+   `DEVAM_RITUAL_OBSERVANCE_CONTENT_V1` applicability/content registry before
+   one ordered legacy-compatibility registry; a source guard forbids restoring
+   per-observance resolver branches. New lanes must use the generic contract.
+   Do not perform another destructive cleanup.
 
 Rough focused effort with content work parallelized where possible:
 

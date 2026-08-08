@@ -1,4 +1,4 @@
-import type { PracticeGuidanceRequest, PracticeGuidanceResult, SourceBoundedPracticeGuide } from "../domain/practice";
+import type { PracticeGuidanceRequest, PracticeGuidanceResult, RitualProcedureGuide, SourceBoundedPracticeGuide } from "../domain/practice";
 import { resolveGaneshChaturthiProcedure } from "./ganesha-chaturthi";
 import { resolveGaneshaReading } from "./ganesha-reading";
 import { resolveNavaratriProcedure } from "./navaratri";
@@ -35,6 +35,46 @@ import { resolveBengalDurgaPujaProcedure } from "./bengal-durga-puja";
 import { resolveMasikaDurgashtamiProcedure } from "./masika-durgashtami";
 import { resolveUserCompleteRitualContent } from "./ritual-content";
 
+type LegacyProcedureResolver = (request: PracticeGuidanceRequest) => RitualProcedureGuide | null;
+
+// Compatibility only. New ritual lanes belong in the generic
+// DEVAM_RITUAL_OBSERVANCE_CONTENT_V1 registry and must not add another branch.
+// Ordering preserves the previously shipped resolver precedence.
+const LEGACY_PROCEDURE_RESOLVERS = [
+  resolveKrishnaJanmashtamiProcedure,
+  resolveHartalikaTeejProcedure,
+  resolveRadhaAshtamiProcedure,
+  resolveVivahaPanchamiProcedure,
+  resolveBengalDurgaPujaProcedure,
+  resolveMasikaDurgashtamiProcedure,
+  resolveWeekdayProcedure,
+  resolveDiwaliProcedure,
+  resolveChhathProcedure,
+  resolveVasuBarasProcedure,
+  resolveNarakaChaturdashiProcedure,
+  resolveKaliChaudasProcedure,
+  resolveGujaratiNewYearProcedure,
+  resolveBalipadyamiProcedure,
+  resolveJainDiwaliProcedure,
+  resolveBandiChhorProcedure,
+  resolveAhoiAshtamiProcedure,
+  resolveKarwaChauthProcedure,
+  resolveSankashtiChaturthiProcedure,
+  resolveEkadashiProcedure,
+  resolveMasikaShivaratriProcedure,
+  resolveDhantrayodashiProcedure,
+  resolveYamaDeepamProcedure,
+  resolveTamilDeepavaliProcedure,
+  resolveBengalKaliPujaProcedure,
+  resolveBaliPratipadaProcedure,
+  resolveGovardhanaPujaProcedure,
+  resolveBhaiDoojProcedure,
+  resolveTulasiVivahProcedure,
+  resolveDevDeepawaliProcedure,
+  resolveGitaJayantiProcedure,
+  resolveNavaratriProcedure,
+] satisfies LegacyProcedureResolver[];
+
 export function resolvePracticeGuidance(request: PracticeGuidanceRequest): PracticeGuidanceResult {
   const userComplete = resolveUserCompleteRitualContent(request);
   if (userComplete) {
@@ -44,70 +84,10 @@ export function resolvePracticeGuidance(request: PracticeGuidanceRequest): Pract
       : userComplete.companionReading;
     return { ok: true, status: "ritual_procedure_available", request, guide: { ...userComplete, companionReading } };
   }
-  const krishnaJanmashtami = resolveKrishnaJanmashtamiProcedure(request);
-  if (krishnaJanmashtami) return { ok: true, status: "ritual_procedure_available", request, guide: krishnaJanmashtami };
-  const hartalikaTeej = resolveHartalikaTeejProcedure(request);
-  if (hartalikaTeej) return { ok: true, status: "ritual_procedure_available", request, guide: hartalikaTeej };
-  const radhaAshtami = resolveRadhaAshtamiProcedure(request);
-  if (radhaAshtami) return { ok: true, status: "ritual_procedure_available", request, guide: radhaAshtami };
-  const vivahaPanchami = resolveVivahaPanchamiProcedure(request);
-  if (vivahaPanchami) return { ok: true, status: "ritual_procedure_available", request, guide: vivahaPanchami };
-  const bengalDurgaPuja = resolveBengalDurgaPujaProcedure(request);
-  if (bengalDurgaPuja) return { ok: true, status: "ritual_procedure_available", request, guide: bengalDurgaPuja };
-  const masikaDurgashtami = resolveMasikaDurgashtamiProcedure(request);
-  if (masikaDurgashtami) return { ok: true, status: "ritual_procedure_available", request, guide: masikaDurgashtami };
-  const weekday = resolveWeekdayProcedure(request);
-  if (weekday) return { ok: true, status: "ritual_procedure_available", request, guide: weekday };
-  const diwali = resolveDiwaliProcedure(request);
-  if (diwali) return { ok: true, status: "ritual_procedure_available", request, guide: diwali };
-  const chhath = resolveChhathProcedure(request);
-  if (chhath) return { ok: true, status: "ritual_procedure_available", request, guide: chhath };
-  const vasuBaras = resolveVasuBarasProcedure(request);
-  if (vasuBaras) return { ok: true, status: "ritual_procedure_available", request, guide: vasuBaras };
-  const narakaChaturdashi = resolveNarakaChaturdashiProcedure(request);
-  if (narakaChaturdashi) return { ok: true, status: "ritual_procedure_available", request, guide: narakaChaturdashi };
-  const kaliChaudas = resolveKaliChaudasProcedure(request);
-  if (kaliChaudas) return { ok: true, status: "ritual_procedure_available", request, guide: kaliChaudas };
-  const gujaratiNewYear = resolveGujaratiNewYearProcedure(request);
-  if (gujaratiNewYear) return { ok: true, status: "ritual_procedure_available", request, guide: gujaratiNewYear };
-  const balipadyami = resolveBalipadyamiProcedure(request);
-  if (balipadyami) return { ok: true, status: "ritual_procedure_available", request, guide: balipadyami };
-  const jainDiwali = resolveJainDiwaliProcedure(request);
-  if (jainDiwali) return { ok: true, status: "ritual_procedure_available", request, guide: jainDiwali };
-  const bandiChhor = resolveBandiChhorProcedure(request);
-  if (bandiChhor) return { ok: true, status: "ritual_procedure_available", request, guide: bandiChhor };
-  const ahoiAshtami = resolveAhoiAshtamiProcedure(request);
-  if (ahoiAshtami) return { ok: true, status: "ritual_procedure_available", request, guide: ahoiAshtami };
-  const karwaChauth = resolveKarwaChauthProcedure(request);
-  if (karwaChauth) return { ok: true, status: "ritual_procedure_available", request, guide: karwaChauth };
-  const sankashtiChaturthi = resolveSankashtiChaturthiProcedure(request);
-  if (sankashtiChaturthi) return { ok: true, status: "ritual_procedure_available", request, guide: sankashtiChaturthi };
-  const ekadashi = resolveEkadashiProcedure(request);
-  if (ekadashi) return { ok: true, status: "ritual_procedure_available", request, guide: ekadashi };
-  const masikaShivaratri = resolveMasikaShivaratriProcedure(request);
-  if (masikaShivaratri) return { ok: true, status: "ritual_procedure_available", request, guide: masikaShivaratri };
-  const dhantrayodashi = resolveDhantrayodashiProcedure(request);
-  if (dhantrayodashi) return { ok: true, status: "ritual_procedure_available", request, guide: dhantrayodashi };
-  const yamaDeepam = resolveYamaDeepamProcedure(request);
-  if (yamaDeepam) return { ok: true, status: "ritual_procedure_available", request, guide: yamaDeepam };
-  const tamilDeepavali = resolveTamilDeepavaliProcedure(request);
-  if (tamilDeepavali) return { ok: true, status: "ritual_procedure_available", request, guide: tamilDeepavali };
-  const bengalKaliPuja = resolveBengalKaliPujaProcedure(request);
-  if (bengalKaliPuja) return { ok: true, status: "ritual_procedure_available", request, guide: bengalKaliPuja };
-  const baliPratipada = resolveBaliPratipadaProcedure(request);
-  if (baliPratipada) return { ok: true, status: "ritual_procedure_available", request, guide: baliPratipada };
-  const govardhanaPuja = resolveGovardhanaPujaProcedure(request);
-  if (govardhanaPuja) return { ok: true, status: "ritual_procedure_available", request, guide: govardhanaPuja };
-  const bhaiDooj = resolveBhaiDoojProcedure(request);
-  if (bhaiDooj) return { ok: true, status: "ritual_procedure_available", request, guide: bhaiDooj };
-  const tulasiVivah = resolveTulasiVivahProcedure(request);
-  if (tulasiVivah) return { ok: true, status: "ritual_procedure_available", request, guide: tulasiVivah };
-  const devDeepawali = resolveDevDeepawaliProcedure(request);
-  if (devDeepawali) return { ok: true, status: "ritual_procedure_available", request, guide: devDeepawali };
-  const gitaJayanti = resolveGitaJayantiProcedure(request);
-  if (gitaJayanti) return { ok: true, status: "ritual_procedure_available", request, guide: gitaJayanti };
-  const navaratri = resolveNavaratriProcedure(request);
-  if (navaratri) return { ok: true, status: "ritual_procedure_available", request, guide: navaratri };
+  for (const resolveLegacyProcedure of LEGACY_PROCEDURE_RESOLVERS) {
+    const guide = resolveLegacyProcedure(request);
+    if (guide) return { ok: true, status: "ritual_procedure_available", request, guide };
+  }
   const readingResult = resolveGaneshaReading(request);
   const companionReading = readingResult.status === "source_bounded_companion_available"
     ? readingResult.guide as SourceBoundedPracticeGuide

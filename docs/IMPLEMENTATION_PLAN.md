@@ -2326,6 +2326,13 @@ completion must not be inferred from passing tests:
   temple, fasting, mantra, scripture-recitation, and puja practice. This still
   does not satisfy every regional, household, institutional, or priest-led
   procedure in the ritual product contract.
+- Practice-guidance routing now resolves the 47 current ritual records through
+  the generic `DEVAM_RITUAL_OBSERVANCE_CONTENT_V1` applicability/content
+  registry first. Older resolver modules remain in one ordered compatibility
+  registry, not a per-observance branch chain, and an architectural test rejects
+  restoration of that control flow. New ritual lanes must enter through the
+  generic contract; this is the database-ready migration boundary, not a claim
+  that every old compatibility module has been deleted.
 - Library search exposes reviewed claims, published product-compatible exact
   passages, and all preserved-object metadata, but most of the 8,491 retained
   objects are not yet passage-indexed product text. Its landing surface now
