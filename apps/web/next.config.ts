@@ -4,7 +4,11 @@ import { resolve } from "node:path";
 const nextConfig: NextConfig = {
   outputFileTracingRoot: resolve(process.cwd(), "../.."),
   outputFileTracingIncludes: {
-    "/api/practice-guidance": ["../../knowledge_packs/ganesha/shriganapatimantraksharavali-v1.json"],
+    "/*": [
+      "../../knowledge_packs/**/*.json",
+      "../../ingestion/plans/**/*.json",
+      "../../ingestion/reports/**/*.json",
+    ],
   },
 };
 

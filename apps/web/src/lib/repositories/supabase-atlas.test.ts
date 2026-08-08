@@ -3,7 +3,7 @@ import type { Tables } from "@/lib/supabase/database.types";
 import { mapAtlasRows } from "./atlas-row-mapper";
 
 type NodeRow = Pick<Tables<"atlas_nodes">, "id" | "slug" | "title" | "subtitle" | "node_kind" | "is_gateway" | "position" | "visual" | "reveal_at">;
-type EdgeRow = Pick<Tables<"atlas_edges">, "id" | "source_node_id" | "target_node_id" | "label">;
+type EdgeRow = Pick<Tables<"atlas_edges">, "id" | "source_node_id" | "target_node_id" | "label" | "visual">;
 
 const gatewayRows: NodeRow[] = [
   ["1", "ramayana", "Ramayana", "रामायण", "gateway", "saffron"],
@@ -18,7 +18,7 @@ const gatewayRows: NodeRow[] = [
   node_kind: kind,
   is_gateway: true,
   position: { x: 20 + index * 20, y: 30 },
-  visual: { tone, invitation: `Enter ${title}`, threads: [title] },
+  visual: { sourceId: slug, tone, invitation: `Enter ${title}`, threads: [title] },
   reveal_at: 1,
 })) as NodeRow[];
 
@@ -51,6 +51,7 @@ describe("Supabase Atlas mapping", () => {
       is_gateway: false,
       position: { x: 38, y: 24 },
       visual: {
+        sourceId: "ayodhya",
         size: "major",
         eras: ["Origins", "Epics", "Living"],
         gatewayId: "ramayana",
@@ -60,11 +61,31 @@ describe("Supabase Atlas mapping", () => {
       },
       reveal_at: 1,
     } as NodeRow;
-    const world = mapAtlasRows([...gatewayRows, explorableNode], [{ id: "e1", source_node_id: "1", target_node_id: "5", label: "begins in" }] as EdgeRow[]);
+    const world = mapAtlasRows([...gatewayRows, explorableNode], [{ id: "e1", source_node_id: "1", target_node_id: "5", label: "begins in", visual: { sourceId: "ramayana-ayodhya" } }] as EdgeRow[]);
     expect(world.worldNodes).toEqual([expect.objectContaining({ id: "ayodhya", eras: ["Origins", "Epics", "Living"], gatewayId: "ramayana", searchQuery: "Ayodhya Ramayana" })]);
     expect(world.worldEdges).toEqual([{ id: "e1", from: "ramayana", to: "ayodhya", relation: "begins in" }]);
-    const fallbackWorld = mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { size: "major" } }], []);
+    const fallbackWorld = mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { sourceId: "ayodhya", size: "major" } }], []);
     expect(fallbackWorld.worldNodes[0]).toMatchObject({ id: "ayodhya", gatewayId: "ramayana", eras: ["Origins", "Epics", "Living"] });
-    expect(() => mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { size: "major", eras: ["Epics"] } }], [])).toThrow("partially migrated exploration metadata");
+    expect(() => mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { sourceId: "ayodhya", size: "major", eras: ["Epics"] } }], [])).toThrow("partially migrated exploration metadata");
+  });
+
+  it("ignores independently managed nodes and edges outside the reviewed Devam universe", () => {
+    const externalNode = {
+      id: "external-1",
+      slug: "ganesha-purana",
+      title: "Ganesha Purana",
+      subtitle: null,
+      node_kind: "Source",
+      is_gateway: false,
+      position: { x: 50, y: 50 },
+      visual: { size: "major" },
+      reveal_at: 1,
+    } as NodeRow;
+    const world = mapAtlasRows(
+      [...gatewayRows, externalNode],
+      [{ id: "external-edge", source_node_id: "2", target_node_id: "external-1", label: "mentions", visual: {} }] as EdgeRow[],
+    );
+    expect(world.worldNodes).toEqual([]);
+    expect(world.worldEdges).toEqual([]);
   });
 });

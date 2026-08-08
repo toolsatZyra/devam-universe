@@ -11,7 +11,10 @@
     "verify:sarthi-ui": "node scripts/verify-sarthi-ui.mjs",
     "verify:sarthi-conversation-ui": "node scripts/verify-sarthi-conversation-ui.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run --exclude e2e/**",
+    "test:product": "node scripts/run-product-tests.mjs",
+    "test:vault": "node scripts/run-source-vault-tests.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.4",

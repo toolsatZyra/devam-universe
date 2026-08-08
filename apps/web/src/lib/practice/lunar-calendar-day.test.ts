@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveLunarCalendarDayProcedure } from "./lunar-calendar-day";
 
 describe("generic Purnima and Amavasya calendar-day companions", () => {
@@ -19,7 +20,7 @@ describe("generic Purnima and Amavasya calendar-day companions", () => {
     const guide = resolveLunarCalendarDayProcedure({ observanceSlug: "ashwina-amavasya", languageCode: "hi", regionCode: "west-india", traditionCode: "smarta-west-india" });
     expect(guide?.boundaries).toMatchObject({ coincidentSpecialObservancesRemainSeparate: true, fastOrNirjalaRegimenPrescribed: false, shraddhaTarpanDarshaOrAncestorRitePrescribed: false, ritualBathingMoonWorshipOfferingMantraOrTempleProcedurePrescribed: false, kojagaraDevDeepawaliDiwaliOrOtherSpecialFestivalMerged: false, margashirshaPurnimaPromoted: false, purificationProtectionMeritAncestorBenefitProsperityOrOtherOutcomeGuaranteed: false });
   });
-  it("rehashes the fixed historical source only in the test lane", () => {
+  sourceVaultIt("rehashes the fixed historical source only in the test lane", () => {
     const source = readFileSync(resolve(process.cwd(), "../..", "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));
     expect(source.length).toBe(93531683);
     expect(createHash("sha256").update(source).digest("hex")).toBe("a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b");

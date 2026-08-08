@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { answerSarthi } from "./answer";
 import { answerGaneshaPreview, GANESHA_PREVIEW_FIXITY } from "./ganesha-preview";
 
@@ -55,7 +56,7 @@ describe("answerGaneshaPreview", () => {
     });
   });
 
-  it("remains pinned to the retained knowledge pack and canonical source object", () => {
+  sourceVaultIt("remains pinned to the retained knowledge pack and canonical source object", () => {
     const root = resolve(process.cwd(), "../..");
     expect(sha256(resolve(root, "knowledge_packs/ganesha/shriganapatimantraksharavali-v1.json"))).toBe("492bafe94124f81de32acee6329b798fe09970eace160bdd1a9db646d5959d2d");
     expect(sha256(resolve(root, `source_vault/objects/sha256/21/${GANESHA_PREVIEW_FIXITY.sourceSha256}`))).toBe(GANESHA_PREVIEW_FIXITY.sourceSha256);

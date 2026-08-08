@@ -2,12 +2,13 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 
 import { answerSarthiWithKnowledge } from "./grounded-answer";
 import { loadPersonalGuidanceBundle, PERSONAL_GUIDANCE_PACK_SHA256 } from "./personal-guidance";
 
 describe("reviewed personal-guidance foundation", () => {
-  it("loads the fixity-bound source and exact reviewed principle universe", () => {
+  sourceVaultIt("loads the fixity-bound source and exact reviewed principle universe", () => {
     const bundle = loadPersonalGuidanceBundle();
     expect(PERSONAL_GUIDANCE_PACK_SHA256).toBe("423334be7bd4aa2d66129bf84894a60b6d7cb7b22ca1f9edee147f92d9d37eca");
     expect(bundle.principles.map((principle) => [principle.literal_marker, principle.source_ordinal])).toEqual([

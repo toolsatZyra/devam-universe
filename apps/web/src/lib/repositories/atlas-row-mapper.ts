@@ -1,17 +1,25 @@
 import type { AtlasWorld, Gateway, GatewayTone, WorldEdge, WorldNode } from "@/lib/domain/atlas";
 import type { Tables } from "@/lib/supabase/database.types";
-import { gateways as fallbackGateways, worldNodes as fallbackWorldNodes } from "../../data/atlas";
+import { gateways as fallbackGateways, worldEdges as fallbackWorldEdges, worldNodes as fallbackWorldNodes } from "../../data/atlas";
 
 export type AtlasNodeRow = Pick<Tables<"atlas_nodes">, "id" | "slug" | "title" | "subtitle" | "node_kind" | "is_gateway" | "position" | "visual" | "reveal_at">;
-export type AtlasEdgeRow = Pick<Tables<"atlas_edges">, "id" | "source_node_id" | "target_node_id" | "label">;
+export type AtlasEdgeRow = Pick<Tables<"atlas_edges">, "id" | "source_node_id" | "target_node_id" | "label" | "visual">;
 
 const ERAS = ["Origins", "Epics", "Classical", "Medieval", "Living"] as const;
 const FALLBACK_WORLD_NODE_BY_ID = new Map(fallbackWorldNodes.map((node) => [node.id, node]));
 const FALLBACK_GATEWAY_BY_ID = new Map(fallbackGateways.map((item) => [item.id, item]));
+const REVIEWED_NODE_SLUGS = new Set([...FALLBACK_GATEWAY_BY_ID.keys(), ...FALLBACK_WORLD_NODE_BY_ID.keys()]);
+const REVIEWED_EDGE_SOURCE_IDS = new Set(fallbackWorldEdges.map((edge) => edge.id));
 
 function record(value: unknown, label: string): Record<string, unknown> {
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error(`${label} must be a JSON object.`);
   return value as Record<string, unknown>;
+}
+
+function sourceId(value: unknown): string | undefined {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return undefined;
+  const candidate = (value as Record<string, unknown>).sourceId;
+  return typeof candidate === "string" ? candidate : undefined;
 }
 
 function position(value: unknown): { x: number; y: number } {
@@ -73,10 +81,19 @@ function worldNode(row: AtlasNodeRow): WorldNode {
 }
 
 export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[]): AtlasWorld {
-  const slugById = new Map(nodes.map((node) => [node.id, node.slug]));
-  const gateways = nodes.filter((node) => node.is_gateway).map(gateway);
-  const worldNodes = nodes.filter((node) => !node.is_gateway).map(worldNode);
-  const worldEdges: WorldEdge[] = edges.map((edge) => {
+  const reviewedNodes = nodes.filter((node) => REVIEWED_NODE_SLUGS.has(node.slug) && sourceId(node.visual) === node.slug);
+  const reviewedNodeIds = new Set(reviewedNodes.map((node) => node.id));
+  const reviewedEdges = edges.filter((edge) => {
+    const edgeSourceId = sourceId(edge.visual);
+    return edgeSourceId !== undefined
+      && REVIEWED_EDGE_SOURCE_IDS.has(edgeSourceId)
+      && reviewedNodeIds.has(edge.source_node_id)
+      && reviewedNodeIds.has(edge.target_node_id);
+  });
+  const slugById = new Map(reviewedNodes.map((node) => [node.id, node.slug]));
+  const gateways = reviewedNodes.filter((node) => node.is_gateway).map(gateway);
+  const worldNodes = reviewedNodes.filter((node) => !node.is_gateway).map(worldNode);
+  const worldEdges: WorldEdge[] = reviewedEdges.map((edge) => {
     const from = slugById.get(edge.source_node_id);
     const to = slugById.get(edge.target_node_id);
     if (!from || !to) throw new Error(`Atlas edge ${edge.id} references a missing node.`);

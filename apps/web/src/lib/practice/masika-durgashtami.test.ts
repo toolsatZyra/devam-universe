@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveMasikaDurgashtamiProcedure } from "./masika-durgashtami";
 
 describe("Masika Durgashtami recurring companion", () => {
@@ -20,7 +21,7 @@ describe("Masika Durgashtami recurring companion", () => {
     expect(guide?.title).toContain("मासिक दुर्गाष्टमी");
     expect(guide?.boundaries).toMatchObject({ fourMonthCalendarLaneAndSourceLabelledDurgaRemembranceSupported: true, materialFreeAndNonFastingFormSupported: true, fastFoodDietaryOrMedicalGuidanceGiven: false, formalPujaMantraImageOfferingAartiChandiRecitationOrHomaPrescribed: false, kumariPujaBaliOrHarmInstructed: false, shardiyaMahashtamiEquatedWithEveryMonthlyAshtami: false, bengalDurgaPujaOrOtherRegionalAshtamiImported: false, victoryProtectionMeritProsperityOrOtherOutcomeGuaranteed: false, oneDeviStoryTheologyOrPracticeClaimedUniversal: false });
   });
-  it("rehashes the exact calendar fixture and fixed historical carrier", () => {
+  sourceVaultIt("rehashes the exact calendar fixture and fixed historical carrier", () => {
     const root = resolve(process.cwd(), "../..");
     const fixture = readFileSync(resolve(root, "knowledge_packs/panchang/masika-durgashtami-delhi-september-december-2026-v1.json"));
     const source = readFileSync(resolve(root, "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));

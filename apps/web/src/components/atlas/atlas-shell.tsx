@@ -395,7 +395,14 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
             onPointerUp={handlePointerEnd}
             onPointerCancel={handlePointerEnd}
           >
-            <div className={styles.sceneCanvas} style={{ transform: `translate3d(${view.x}px, ${view.y}px, 0) scale(${view.scale})` }}>
+            <div
+              className={styles.sceneCanvas}
+              data-testid="atlas-scene"
+              data-view-x={Math.round(view.x)}
+              data-view-y={Math.round(view.y)}
+              data-view-scale={view.scale}
+              style={{ transform: `translate3d(${view.x}px, ${view.y}px, 0) scale(${view.scale})` }}
+            >
               <div className={styles.atlasBackdrop} aria-hidden="true">
                 <Image
                   src="/atlas/atlas-cosmic-night-v1.png"
@@ -479,7 +486,7 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
           </div>
 
           <div className={styles.viewControls}>
-            <div className={styles.zoomControls} aria-label="Atlas zoom controls">
+            <div className={styles.zoomControls} role="group" aria-label={`Atlas zoom controls, ${Math.round(view.scale * 100)}%`}>
               <button type="button" onClick={() => zoomFromCenter(1.22)} aria-label="Zoom in"><Icon name="plus" size={17} /></button>
               <button type="button" onClick={() => zoomFromCenter(0.82)} aria-label="Zoom out"><Icon name="minus" size={17} /></button>
               <button type="button" onClick={resetView} aria-label="Reset map view"><Icon name="reset" size={15} /></button>

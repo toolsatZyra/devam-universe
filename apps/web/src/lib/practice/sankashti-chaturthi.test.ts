@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveSankashtiChaturthiProcedure } from "./sankashti-chaturthi";
 
 describe("Sankashti Chaturthi West India recurring guidance", () => {
@@ -21,7 +22,7 @@ describe("Sankashti Chaturthi West India recurring guidance", () => {
     expect(guide?.boundaries).toMatchObject({ runtimeLocationSpecificMoonriseUsed: true, fastOrNirjalaRegimenPrescribed: false, medicalOrDietaryAdviceGiven: false, providerCityMoonriseReusedForUserLocation: false, oneMonthlyNameKathaOrPujaSequenceUniversalized: false, moonSightingTempleVisitOfferingMantraArghyaOrFoodRequired: false, obstacleRemovalSuccessProtectionMeritOrOtherOutcomeGuaranteed: false, ganeshChaturthiOrKarwaChauthMerged: false });
     expect(resolveSankashtiChaturthiProcedure({ observanceSlug: slugs[0], languageCode: "en", regionCode: "north-india", traditionCode: "smarta-north-india" })).toBeNull();
   });
-  it("rehashes the private historical carrier only in the test lane", () => {
+  sourceVaultIt("rehashes the private historical carrier only in the test lane", () => {
     const source = readFileSync(resolve(process.cwd(), "../..", "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));
     expect(source.length).toBe(93531683);
     expect(createHash("sha256").update(source).digest("hex")).toBe("a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b");

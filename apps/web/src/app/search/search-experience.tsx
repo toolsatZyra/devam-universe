@@ -122,7 +122,7 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
             {response.retrievalStatus === "temporarily_unavailable" && <p className={styles.boundary}>{response.coverage}</p>}
             {(response.results?.length ?? 0) > 0 && <div className={styles.resultGrid}>
               {response.results?.map((result) => (
-                <article className={styles.resultCard} key={result.id}>
+                <article className={styles.resultCard} data-result-id={result.id} key={result.id}>
                   <div className={styles.resultMeta}>
                     <span>{isEvidenceBoundedSynthesis(result) ? "Evidence-bounded synthesis" : "Source-bounded claim"}</span>
                     <small>{result.languageCode.toUpperCase()}</small>
