@@ -17,10 +17,12 @@ export const LIBRARY_COVERAGE_SNAPSHOT = {
   launchLayer: {
     deterministicDates: 122,
     deterministicDateTotal: 122,
+    regionalAcceptanceProfiles: 18,
+    regionalAcceptanceCities: 8,
     currentRitualRecords: 47,
     userCompleteScopedLanes: 46,
     participationCompanions: 1,
-    boundary: "All 79 resolved September-December calendar slugs have a current ritual lane. The prior Agastya, Balarama, and two Diwali preflights have exact bounded successors and remain only as provenance. A completed lane is complete only for its named location, tradition, role, language, and practice boundary—not for every Indian or Hindu tradition.",
+    boundary: "All 79 resolved September-December calendar slugs have a current ritual lane. Eighteen launch-acceptance profiles bind exact calendar and bilingual guidance contexts across eight comparison cities. The prior Agastya, Balarama, and two Diwali preflights have exact bounded successors and remain only as provenance. A completed lane is complete only for its named location, tradition, role, language, and practice boundary—not for every Indian or Hindu tradition.",
   },
   knowledgeLayer: {
     works: 21,

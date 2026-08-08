@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { LAUNCH_REGIONAL_ACCEPTANCE_PROFILES } from "./launch-regional-acceptance";
 import { LIBRARY_COVERAGE_SNAPSHOT, formatLibraryBytes } from "./library-coverage";
 
 const root = resolve(process.cwd(), "../..");
@@ -42,6 +43,8 @@ describe("honest library coverage snapshot", () => {
     expect(LIBRARY_COVERAGE_SNAPSHOT.heroes.every((hero) => hero.connected.length > 100 && hero.open.length > 90)).toBe(true);
     expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.deterministicDates).toBe(122);
     expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.deterministicDateTotal).toBe(122);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.regionalAcceptanceProfiles).toBe(LAUNCH_REGIONAL_ACCEPTANCE_PROFILES.length);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.regionalAcceptanceCities).toBe(new Set(LAUNCH_REGIONAL_ACCEPTANCE_PROFILES.map((profile) => profile.city)).size);
     expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer).toMatchObject({
       sourceReferences: 102,
       passages: 9_091,

@@ -810,7 +810,13 @@ rights or masters.
   Purnima is not promoted.
 - [ ] Every named and recurring observance has a machine-executable rule with
   a source citation, applicability, precedence logic, and test fixtures.
-- [ ] City/region comparison fixtures cover all launch-critical regional lanes.
+- [x] A bounded launch comparison matrix exercises 18 exact profiles across
+  Ahmedabad, Amritsar, Bengaluru, Chennai, Delhi, Kolkata, Mumbai, and Patna.
+  It binds the selected civil date and tradition-aware calendar lane to both
+  English and Hindi user-complete guidance, and fails closed for an unsupported
+  tradition. The matrix covers the four hero worlds and the named Bengal,
+  Tamil, Karnataka, BAPS, Sikh, Jain, ISKCON, and Chhath launch lanes; it is not
+  an all-city, all-region, or all-tradition completeness claim.
 - [ ] Every launch observance has Hindi and English explanation.
 - [ ] Every actionable procedure has minimum/standard/elaborate variants,
   substitutions, family-practice prompts, and source evidence.
