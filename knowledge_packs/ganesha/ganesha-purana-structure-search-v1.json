@@ -1,0 +1,95 @@
+{
+  "contract": "DEVAM_GANESHA_PURANA_STRUCTURE_SEARCH_V1",
+  "pack_id": "ganesha-purana-structure-search-v1",
+  "source_boundary": {
+    "profile_id": "GANESHA-PURANA-WIKISOURCE-97DBB2263E3486C5BB900E19",
+    "ingestion_packet_sha256": "668f6c5c46d9897447cfcdbcf969b474fe24bf504d316098ad194b0dbeace27d",
+    "passage_root_sha256": "2d5f60591bc3829cbaa4907de98153493d44e300bc0ee8b8b772d97822216c03",
+    "rights_lane": "derivative_allowed",
+    "publication_state": "published",
+    "scope": "exact_complete_two_khanda_sanskrit_wikisource_page_universe_at_pinned_revisions"
+  },
+  "overview": {
+    "title": "Ganesha Purana: two-khaṇḍa structure",
+    "statement_en": "In Devam's exact pinned Sanskrit Wikisource universe, the Ganesha Purana has two complete textual divisions: Upāsanākhaṇḍa with chapters 1–92 and Krīḍākhaṇḍa with chapters 1–155, represented by 62 lossless chapter-range passages.",
+    "statement_hi": "Devam के सटीक पिन किए गए संस्कृत विकिस्रोत-जगत में गणेशपुराण के दो पूर्ण पाठ-विभाग हैं: अध्याय 1–92 वाला उपासनाखण्ड और अध्याय 1–155 वाला क्रीडाखण्ड; इन्हें 62 अक्षुण्ण अध्याय-परास पाठांशों में रखा गया है।"
+  },
+  "divisions": [
+    {
+      "slug": "upasana-khanda",
+      "title": "Upāsanākhaṇḍa",
+      "title_hi": "उपासनाखण्ड",
+      "chapter_start": 1,
+      "chapter_end": 92,
+      "statement_en": "The exact pinned transcription preserves Upāsanākhaṇḍa chapters 1–92 and ends with its explicit division-close formula.",
+      "statement_hi": "सटीक पिन किया गया प्रतिलेखन उपासनाखण्ड के अध्याय 1–92 सुरक्षित रखता है और उसके स्पष्ट खण्ड-समापन सूत्र पर समाप्त होता है।",
+      "citations": [
+        {
+          "source_sha256": "14aab00040e20c533ce5fdd769d58fd4ebfec62dfd67729a569bb29124a23233",
+          "source_ordinal": 2,
+          "span_sha256": "9b35a510999b643168bfb426921be772724d383ee00ec597790973b302b366c3",
+          "provider_page_title": "गणेशपुराणम्/खण्डः १(उपासनाखण्डम्)/अध्यायः ०१",
+          "provider_page_id": 91021,
+          "provider_revision_id": 315651,
+          "khanda": "upasana",
+          "chapter_start": 1,
+          "chapter_end": 1
+        },
+        {
+          "source_sha256": "14aab00040e20c533ce5fdd769d58fd4ebfec62dfd67729a569bb29124a23233",
+          "source_ordinal": 32,
+          "span_sha256": "740b60cf6a25838bfefa987a2ec8e0901377d01ba0554358ebd8c97f44480aa7",
+          "provider_page_title": "गणेशपुराणम्/खण्डः १(उपासनाखण्डम्)/अध्यायाः ९१-९२",
+          "provider_page_id": 118441,
+          "provider_revision_id": 404167,
+          "khanda": "upasana",
+          "chapter_start": 91,
+          "chapter_end": 92
+        }
+      ]
+    },
+    {
+      "slug": "krida-khanda",
+      "title": "Krīḍākhaṇḍa",
+      "title_hi": "क्रीडाखण्ड",
+      "chapter_start": 1,
+      "chapter_end": 155,
+      "statement_en": "The exact pinned transcription preserves Krīḍākhaṇḍa chapters 1–155 and ends with its explicit whole-work terminal formulas.",
+      "statement_hi": "सटीक पिन किया गया प्रतिलेखन क्रीडाखण्ड के अध्याय 1–155 सुरक्षित रखता है और उसके स्पष्ट सम्पूर्ण-कृति समापन सूत्रों पर समाप्त होता है।",
+      "citations": [
+        {
+          "source_sha256": "14aab00040e20c533ce5fdd769d58fd4ebfec62dfd67729a569bb29124a23233",
+          "source_ordinal": 34,
+          "span_sha256": "3a989da03a361c5b01cc3229e58efcd91ed52712c8904111bca679e6bfcdd5fa",
+          "provider_page_title": "गणेशपुराणम्/खण्डः २(क्रीडाखण्डम्)/अध्यायाः ००१-००५",
+          "provider_page_id": 91020,
+          "provider_revision_id": 312179,
+          "khanda": "krida",
+          "chapter_start": 1,
+          "chapter_end": 5
+        },
+        {
+          "source_sha256": "0cf4723a2f49f5a431b03b0577b48cd1b8bbaee4355d8811a3d48e5509c1a1b3",
+          "source_ordinal": 64,
+          "span_sha256": "1ac6c970abfb166fe39c5499384a797c598a24a6f063f9e3e3a74b1ca62c8320",
+          "provider_page_title": "गणेशपुराणम्/खण्डः २(क्रीडाखण्डम्)/अध्यायाः १५१-१५५",
+          "provider_page_id": 117939,
+          "provider_revision_id": 314522,
+          "khanda": "krida",
+          "chapter_start": 151,
+          "chapter_end": 155
+        }
+      ]
+    }
+  ],
+  "denials": {
+    "underlying_print_edition_identified": false,
+    "textual_recension_identified": false,
+    "english_translation_included": false,
+    "hindi_translation_included": false,
+    "mudgala_purana_included": false,
+    "all_ganesha_literature_complete": false,
+    "all_ganesha_traditions_complete": false,
+    "ritual_authority_claimed": false
+  }
+}

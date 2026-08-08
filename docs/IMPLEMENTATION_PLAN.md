@@ -2107,6 +2107,24 @@ distinct from semantic graph counts. Two forward-only migrations are prepared
 but have not been applied to hosted Supabase, and no source payload is copied
 into either the app or database migration.
 
+Checkpoint 2026-08-08 (app-owned Ganesha Purana source doorway, local and
+unapplied): the previously ingested exact Sanskrit Wikisource universe is now
+reachable even when hosted retrieval is unavailable. A compact structure pack
+reconstructs against ingestion packet
+`668f6c5c46d9897447cfcdbcf969b474fe24bf504d316098ad194b0dbeace27d`
+and binds the opening and terminal passage of Upāsanākhaṇḍa chapters 1–92 and
+Krīḍākhaṇḍa chapters 1–155. Exact Search returns bilingual Devam structure
+summaries with four source-object, passage-ordinal, span, provider-page, and
+provider-revision citations. The pack contains no Sanskrit payload and retains
+all edition, recension, translation, Mudgala Purana, ritual-authority, and
+wider-tradition denials. The Living Atlas now treats `ganesha-purana` as a
+reviewed app-owned doorway instead of ignoring the earlier independently
+managed hosted node; a new forward-only migration binds that Atlas node to the
+published semantic entity. Its navigation edge remains deliberately distinct
+from the oppositely directed `sacred_text_of` semantic relationship. The local
+app composition is now four gateways, 42 world nodes, and 50 navigation edges;
+the migration has not been applied to hosted Supabase.
+
 Checkpoint 2026-08-08 (Griffith English Ramayana product lane): the exact
 Project Gutenberg eBook 24869 structural TEI remains referenced in the
 content-addressed vault rather than copied into the app or Supabase. A bounded
@@ -2326,9 +2344,9 @@ completion must not be inferred from passing tests:
   Ramcharitmanas product editions, broader Ganesha and Durga source families,
   variant dossiers, complete civilizational Atlas coverage, and final
   gateway-specific scene art remain incomplete. The current Atlas has an
-  original shared cinematic environment, 37 connected, progressively revealed
-  world nodes, and four gateways; density beyond the four hero launch worlds
-  remains open.
+  original shared cinematic environment, 42 connected, progressively revealed
+  world nodes, 50 navigation edges, and four gateways; density beyond the four
+  hero launch worlds remains open.
 - The Living Atlas now separates its conceptual Knowledge universe from a
   Sacred geography layer. The latter plots the 11 place nodes already used by
   the four reviewed hero-world place threads on an illustrative India base,

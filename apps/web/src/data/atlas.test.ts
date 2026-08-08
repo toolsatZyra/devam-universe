@@ -19,6 +19,7 @@ const reviewedDetailNodeIds = [
   "ganesh-chaturthi",
   "sankashti-chaturthi",
   "ananta-chaturdashi",
+  "ganesha-purana",
   "devi-mahatmya",
   "madhu-kaitabha",
   "mahishasura",
@@ -55,7 +56,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(41);
+    expect(worldNodes).toHaveLength(42);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -136,10 +137,11 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 45 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 49 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 46 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 50 app-owned Living Atlas edges");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
       expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
+      expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
       expect(sql).not.toContain("alter function");
       expect(sql).not.toContain("grant execute");
     } finally {

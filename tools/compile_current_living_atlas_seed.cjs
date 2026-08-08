@@ -6,10 +6,11 @@ const ROOT = path.resolve(__dirname, "..");
 const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
 const OUTPUT = process.argv[2]
   ? path.resolve(ROOT, process.argv[2])
-  : path.join(ROOT, "supabase/migrations/20260808174500_sync_current_living_atlas.sql");
+  : path.join(ROOT, "supabase/migrations/20260808180000_sync_current_living_atlas.sql");
 
-const SEMANTIC_NODE_SLUGS = ["madhu-kaitabha", "mahishasura", "shumbha", "nishumbha"];
-const SEMANTIC_EDGE_IDS = SEMANTIC_NODE_SLUGS.map((slug) => `devi-mahatmya-${slug}`);
+const DEVIMAHATMYA_SEMANTIC_NODE_SLUGS = ["madhu-kaitabha", "mahishasura", "shumbha", "nishumbha"];
+const ENTITY_BOUND_NODE_SLUGS = [...DEVIMAHATMYA_SEMANTIC_NODE_SLUGS, "ganesha-purana"];
+const DEVIMAHATMYA_SEMANTIC_EDGE_IDS = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug) => `devi-mahatmya-${slug}`);
 
 function loadAtlas() {
   const source = fs.readFileSync(ATLAS_SOURCE, "utf8");
@@ -68,26 +69,31 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 41 || worldEdges.length !== 49) {
+  if (gateways.length !== 4 || worldNodes.length !== 42 || worldEdges.length !== 50) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 45) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 49) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 46) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 50) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 49) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 50) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
       throw new Error(`Invalid Atlas edge ${edge.id}`);
     }
   }
-  for (const slug of SEMANTIC_NODE_SLUGS) {
+  for (const slug of DEVIMAHATMYA_SEMANTIC_NODE_SLUGS) {
     const node = worldNodes.find((candidate) => candidate.id === slug);
     const edge = worldEdges.find((candidate) => candidate.id === `devi-mahatmya-${slug}`);
     if (!node || node.gatewayId !== "durga" || edge?.from !== "devi-mahatmya" || edge.to !== slug || edge.relation !== "contains narrative of") {
       throw new Error(`Source-bounded Devimahatmya Atlas route is missing or invalid for ${slug}`);
     }
+  }
+  const ganeshaPuranaNode = worldNodes.find((candidate) => candidate.id === "ganesha-purana");
+  const ganeshaPuranaEdge = worldEdges.find((candidate) => candidate.id === "ganesha-ganesha-purana");
+  if (!ganeshaPuranaNode || ganeshaPuranaNode.gatewayId !== "ganesha" || ganeshaPuranaEdge?.from !== "ganesha" || ganeshaPuranaEdge.to !== "ganesha-purana") {
+    throw new Error("Source-bounded Ganesha Purana Atlas route is missing or invalid");
   }
 }
 
@@ -105,8 +111,8 @@ function buildMigration() {
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
-  const semanticNodeRows = SEMANTIC_NODE_SLUGS.map((slug) => `(${sqlText(slug)}, ${sqlText(slug)})`).join(",\n  ");
-  const semanticEdgeRows = SEMANTIC_NODE_SLUGS.map((slug, index) => `(${sqlText(SEMANTIC_EDGE_IDS[index])}, ${sqlText(slug)})`).join(",\n  ");
+  const semanticNodeRows = ENTITY_BOUND_NODE_SLUGS.map((slug) => `(${sqlText(slug)}, ${sqlText(slug)})`).join(",\n  ");
+  const semanticEdgeRows = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug, index) => `(${sqlText(DEVIMAHATMYA_SEMANTIC_EDGE_IDS[index])}, ${sqlText(slug)})`).join(",\n  ");
 
   return `-- Generated from apps/web/src/data/atlas.ts by
 -- tools/compile_current_living_atlas_seed.cjs.
@@ -198,11 +204,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 45 then
-    raise exception 'Expected 45 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> 46 then
+    raise exception 'Expected 46 app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 49 then
-    raise exception 'Expected 49 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> 50 then
+    raise exception 'Expected 50 app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1
@@ -232,7 +238,7 @@ begin
     select count(*)
     from public.atlas_nodes atlas
     join public.entities entity on entity.id = atlas.entity_id and entity.slug = atlas.slug
-    where atlas.slug = any (array[${SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
+    where atlas.slug = any (array[${DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
       and atlas.visual->>'gatewayId' = 'durga'
       and atlas.visual->>'evidenceBoundary' like '%revision 410281%'
   ) <> 4 then
@@ -244,12 +250,24 @@ begin
     join public.relationships relationship on relationship.id = edge.relationship_id
     join public.entities subject on subject.id = relationship.subject_entity_id
     join public.entities object on object.id = relationship.object_entity_id
-    where edge.visual->>'sourceId' = any (array[${SEMANTIC_EDGE_IDS.map(sqlText).join(", ")}])
+    where edge.visual->>'sourceId' = any (array[${DEVIMAHATMYA_SEMANTIC_EDGE_IDS.map(sqlText).join(", ")}])
       and subject.slug = 'devi-mahatmya'
-      and object.slug = any (array[${SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
+      and object.slug = any (array[${DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
       and relationship.predicate = 'contains_narrative_of'
   ) <> 4 then
     raise exception 'Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships';
+  end if;
+  if not exists (
+    select 1
+    from public.atlas_nodes atlas
+    join public.entities entity on entity.id = atlas.entity_id
+    where atlas.slug = 'ganesha-purana'
+      and entity.slug = 'ganesha-purana'
+      and atlas.visual->>'gatewayId' = 'ganesha'
+      and atlas.visual->>'searchQuery' = 'Ganesha Purana two khandas 247 chapters'
+      and atlas.visual->>'evidenceBoundary' like '%65 pinned Wikisource revisions%'
+  ) then
+    raise exception 'Ganesha Purana Atlas node is not bound to its exact source entity and boundary';
   end if;
 end
 $$;
