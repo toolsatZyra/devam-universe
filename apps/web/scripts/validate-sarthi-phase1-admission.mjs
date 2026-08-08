@@ -108,7 +108,7 @@ for (const packet of registry.packets ?? []) {
 
 const admittedIndexIds = new Set([...indexById].filter(([, status]) => status === "admitted").map(([id]) => id));
 check(sameSet([...packetScenarioIds], [...admittedIndexIds]), "admitted index and packet scenarios differ");
-check(packetScenarioIds.size === 13, "this checkpoint must contain exactly thirteen admitted packets");
+check(packetScenarioIds.size === 14, "this checkpoint must contain exactly fourteen admitted packets");
 
 const manifest = readFileSync(manifestPath, "utf8").trim().split(/\r?\n/u).filter(Boolean);
 check(manifest.length === 2, "admission manifest must contain exactly two entries");

@@ -2409,12 +2409,13 @@ Devanagari presence, answer-field absence and byte identity. The fixture remains
 
 Checkpoint 2026-08-08: evidence admission is partially implemented and the
 baseline remains unrun. The hash-bound registry at
-`apps/web/evaluation/sarthi-phase1-evidence-admission-v1.json` admits thirteen of the
+`apps/web/evaluation/sarthi-phase1-evidence-admission-v1.json` admits fourteen of the
 thirty bilingual pairs: Ramcharitmanas edition coverage, Hanuman's reviewed
 deliberation episode, bounded ritual and cross-observance lanes, and one
 household-giving guidance lane, plus the exact-revision Devi Mahatmya source and
 beta-translation boundary, and one exact Mumbai Ganesh Chaturthi Panchang
-example. Five ready candidates are not yet packeted,
+example and one Delhi-to-Bengaluru recomputation/clarification contract. Four
+ready candidates are not yet packeted,
 seven partial-evidence pairs remain blocked, and five pairs still require
 research. The validator enforces
 exact Phase 0 roles and scope, repository-local artifact fixity, rights and

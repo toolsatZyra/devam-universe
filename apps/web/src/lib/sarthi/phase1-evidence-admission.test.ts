@@ -22,7 +22,7 @@ describe("Sarthi Understanding Phase 1 evidence admission", () => {
       [resolve(process.cwd(), "scripts", "validate-sarthi-phase1-admission.mjs")],
       { cwd: process.cwd(), encoding: "utf8" },
     );
-    expect(output).toContain("PASS: 13 admitted packets; 30 scenarios indexed");
+    expect(output).toContain("PASS: 14 admitted packets; 30 scenarios indexed");
     expect(output).toContain("artifact fixity verified; no baseline run");
   });
 
@@ -34,12 +34,12 @@ describe("Sarthi Understanding Phase 1 evidence admission", () => {
     }
     expect(admission.status).toBe("partial_admission_no_baseline_run");
     expect(statusCounts).toEqual(new Map([
-      ["admitted", 13],
-      ["candidate_not_packeted", 5],
+      ["admitted", 14],
+      ["candidate_not_packeted", 4],
       ["blocked_partial_evidence", 7],
       ["blocked_research_required", 5],
     ]));
-    expect(admission.packets).toHaveLength(13);
+    expect(admission.packets).toHaveLength(14);
     expect(admission.packets.every((packet) => packet.languages.join("|") === "en|hi")).toBe(true);
   });
 });

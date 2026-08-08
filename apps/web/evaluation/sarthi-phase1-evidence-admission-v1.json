@@ -37,7 +37,7 @@
     ["uhp_22_navaratri_household_practice", "admitted"],
     ["uhp_23_durga_puja_participant", "admitted"],
     ["uhp_24_lakshmi_kali_practice", "admitted"],
-    ["uhp_25_panchang_location_change", "candidate_not_packeted"],
+    ["uhp_25_panchang_location_change", "admitted"],
     ["uhp_26_truth_and_protection", "blocked_partial_evidence"],
     ["uhp_27_grief_without_bypass", "blocked_partial_evidence"],
     ["uhp_28_family_ritual_consent", "candidate_not_packeted"],
@@ -578,7 +578,7 @@
         },
         {
           "path": "apps/web/src/lib/panchang/engine.test.ts",
-          "sha256": "1e8f70f536815c3c9898b8b62b1420026cc4b68c79c8deaa8684bedbf3e6db09",
+          "sha256": "9cc8d6bd7fc47d037744b8c4db55db0fb6c9a999cdbc0e3c66cb02b5db0fbb8c",
           "contract": "DEVAM_PANCHANG_ENGINE_REGRESSION",
           "admitted_use": "mumbai_ganesh_chaturthi_boundary_and_launch_window_calculation_verification",
           "source_rights_lanes": ["derivative_allowed"],
@@ -600,6 +600,61 @@
         "universal_india_date_claim": false
       },
       "admission_note": "Admitted only as a Mumbai West India Smarta September example; exactness comes from explicit context and versioned rules, not from treating one displayed date as universal India truth."
+    },
+    {
+      "packet_id": "phase1-uhp-25-panchang-location-change-v1",
+      "scenario_id": "uhp_25_panchang_location_change",
+      "languages": ["en", "hi"],
+      "required_roles": ["deterministic_computation", "living_practice_observation"],
+      "present_roles": ["deterministic_computation", "living_practice_observation"],
+      "scope": {
+        "location": "move from Delhi 28.6139,77.209 to Bengaluru 12.9716,77.5946; exact current coordinates must be confirmed",
+        "timezone": "Asia/Kolkata for both named cities, but timezone remains a required explicit input",
+        "tradition": "family or sampradaya practice must be asked rather than inferred from the destination city",
+        "civil_date": "the requested September-December 2026 date or named observance must be specified; regression example uses 2026-09-14",
+        "calculation_version": "astronomy-engine-2.1.19-lahiri-v3 with panchanga-five-limbs-sunrise-v1; observance and ritual rules remain separately versioned"
+      },
+      "artifacts": [
+        {
+          "path": "apps/web/src/lib/panchang/contracts.ts",
+          "sha256": "2ec3dda12bc056e9fec2fe07f582d71de126738bcc83091fe7fa4dcc9bb0da93",
+          "contract": "DEVAM_PANCHANG_REQUEST_CONTEXT",
+          "admitted_use": "required_date_coordinates_timezone_and_tradition_clarification_contract",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "apps/web/src/lib/panchang/engine.ts",
+          "sha256": "56db7e55cca2be892a2438455f04cb5aec92a0cea7c794169fd9f4c1c6be961a",
+          "contract": "DEVAM_DETERMINISTIC_PANCHANG_ENGINE",
+          "admitted_use": "location_aware_recomputation_of_astronomical_facts_and_windows",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "apps/web/src/lib/panchang/engine.test.ts",
+          "sha256": "9cc8d6bd7fc47d037744b8c4db55db0fb6c9a999cdbc0e3c66cb02b5db0fbb8c",
+          "contract": "DEVAM_PANCHANG_ENGINE_REGRESSION",
+          "admitted_use": "deterministic_delhi_to_bengaluru_location_change_verification",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/rituals/ganesh-chaturthi-west-india-v1.json",
+          "sha256": "2c90bfba1e8eda5539186c96baca7027db3af7dd6ce6a293b3c86a9e7e47fa34",
+          "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+          "admitted_use": "family_and_sampradaya_context_override_example_without_city_inference",
+          "source_rights_lanes": ["reference_only", "private_evidence", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "fields_recomputed": ["sunrise", "sunset", "moonrise", "moonset", "day_part_windows", "sunrise_sampled_panchanga_facts"],
+        "observance_date_may_change_near_rule_boundary": true,
+        "every_answer_changes": false,
+        "destination_city_assigns_family_tradition": false
+      },
+      "admission_note": "Admitted for recomputation and clarification only: location-derived facts and rule decisions may change, while family tradition and observance identity must be asked rather than assigned by city."
     }
   ]
 }
