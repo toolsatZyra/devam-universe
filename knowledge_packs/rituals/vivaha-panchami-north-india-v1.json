@@ -1,0 +1,132 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-vivaha-panchami-north-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "vivaha-panchami",
+  "scope": {
+    "region_codes": ["north-india"],
+    "tradition_codes": ["smarta-north-india"],
+    "supported_pairs": [{ "region_code": "north-india", "tradition_code": "smarta-north-india" }],
+    "language_codes": ["en", "hi"],
+    "delhi_2026_calendar_fixture_required": true,
+    "family_temple_and_sampradaya_practice_override_generic_form": true,
+    "janakpur_ayodhya_and_orchha_public_festival_forms_are_context_not_universal_home_procedure": true
+  },
+  "sources": [
+    {
+      "source_id": "devam-vivaha-panchami-calendar-fixture",
+      "title": "Bounded Delhi Vivaha Panchami calendar fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_evidence",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "5ac334e9efa8fe548b572ef6ce5d4d982206cc774a4a2672735c75b665a7770c"
+    },
+    {
+      "source_id": "drikpanchang-delhi-vivaha-panchami-2026",
+      "title": "2026 Vivah Panchami date and time for Delhi, NCT, India",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/vivah-panchami/vivah-panchami-date-time.html?geoname-id=1273294&year=2026",
+      "source_class": "current_practitioner_identity_tithi_and_location_specific_date_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://www.drikpanchang.com/festivals/vivah-panchami/vivah-panchami-date-time.html?geoname-id=1273294&year=2026", "response_bytes": 67949, "response_sha256": "d2522e46a93afc6cf0945f504c7230c5656c49fb04050015d1af4d033ac59977", "strict_utf8": true }
+    },
+    {
+      "source_id": "incredible-india-orchha-vivaha-panchami-2026",
+      "title": "Vivah Panchami Mahotsav at Orchha",
+      "publisher": "Ministry of Tourism, Government of India; source credited to Madhya Pradesh Tourism",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/vivah-panchami-mahotsav",
+      "source_class": "official_orchha_public_festival_identity_and_date_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/vivah-panchami-mahotsav", "response_bytes": 485310, "response_sha256": "8ce92ad620778f22f40d4ad350480516025943055821e44ed74c77197fa841d7", "strict_utf8": true }
+    },
+    {
+      "source_id": "pib-ayodhya-vivaha-panchami-context",
+      "title": "Vivaha Panchami context at Ayodhya",
+      "publisher": "Press Information Bureau, Government of India",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2194034",
+      "source_class": "official_ayodhya_margashirsha_shukla_panchami_identity_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2194034&reg=48&lang=2", "response_bytes": 245935, "response_sha256": "61f73318563249db6b9318af4f0f1918210d113abd672f037b2c73b50ac3b8d8", "strict_utf8": true }
+    },
+    {
+      "source_id": "devam-vivaha-panchami-safety-boundary",
+      "title": "Devam Vivaha Panchami internal-beta attribution and safety boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary",
+      "rights_lane": "derivative_allowed"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "vivaha-panchami-reflection-en-v1",
+      "language_code": "en",
+      "title": "Vivaha Panchami remembrance",
+      "summary": "Remember the Rama-Sita marriage through a source-labelled reading, gratitude for trustworthy partnership and family responsibility, and one practical act of respect. This is a reflection companion, not a reconstructed wedding or puja.",
+      "family_practice_note": "Tell Sarthi whether your family follows a Mithila, Ayodhya, Orchha, temple, Ramayana-recitation, or other established form. Use its known prayer, reading, song, offering, fast, and close. Janakpur, Ayodhya, and Orchha public celebrations are distinct contexts and are not copied into one home sequence.",
+      "context_prompts": ["Which family, regional, temple, or sampradaya practice applies?", "Which Ramayana edition, katha, prayer, song, or teacher does your family use?", "Do you want a quiet home reflection or help preparing for an established temple or public programme?", "Is an elder or priest directing a fast, puja, wedding reenactment, mantra, offering, procession, or vow?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10-minute remembrance", "estimated_minutes": 10, "materials": [{ "item": "No material required", "substitutions": ["A familiar Rama-Sita prayer", "A short identified Ramayana passage", "A quiet reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Name the family, regional, temple, or textual context if known; do not merge Mithila, Ayodhya, and Orchha practices.", "why": "Attribution preserves living differences instead of inventing a universal festival.", "optional": false, "source_ids": ["incredible-india-orchha-vivaha-panchami-2026", "pib-ayodhya-vivaha-panchami-context", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read or remember one short, identified account of Rama and Sita's marriage, or use a familiar family prayer.", "why": "A source-labelled remembrance remains grounded without pretending to settle every Ramayana version.", "optional": false, "source_ids": ["drikpanchang-delhi-vivaha-panchami-2026", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Choose one act of listening, honesty, mutual respect, family care, or keeping a responsibility today.", "why": "The observance becomes useful without promising marriage, fertility, prosperity, or another outcome.", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30-minute sourced reflection", "estimated_minutes": 30, "materials": [{ "item": "One identified Rama-Sita or Ramayana source", "substitutions": ["A family text", "A teacher-led explanation", "The material-free minimum form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Identify the edition, retelling, temple, region, or teacher whose marriage account you are using.", "why": "Rama-Sita narratives and meanings must remain attributable.", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read one coherent passage and distinguish its narrative, the source's interpretation, and your own reflection.", "why": "This keeps evidence and synthesis separate.", "optional": false, "source_ids": ["drikpanchang-delhi-vivaha-panchami-2026", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Discuss what trust, consent, responsibility, dignity, courage, and family care mean in your present relationships without forcing the story onto another person.", "why": "Actionable wisdom should support responsibility rather than prescribe someone else's life.", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Complete one concrete act of respectful care or repair and close with a familiar prayer or gratitude.", "why": "A practical close is useful without becoming an invented ritual promise.", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60-minute family or temple-connected form", "estimated_minutes": 60, "materials": [{ "item": "Family, temple, or source-labelled Rama-Sita material", "substitutions": ["A verified edition", "A teacher-guided explanation", "The standard individual form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "With family or a study group, name the exact text, retelling, place, temple, or lineage being followed.", "why": "Shared observance should remain source- and tradition-aware.", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read and discuss a coherent marriage episode, preserving variant details and uncertainty rather than blending versions.", "why": "Variant preservation supports Devam's exhaustive-library objective.", "optional": false, "source_ids": ["drikpanchang-delhi-vivaha-panchami-2026", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "If joining a temple or public celebration, verify current programme, access, travel, and crowd conditions locally; keep formal rites and reenactments under that organizer's authority.", "why": "Official festival context is neither live operations nor a universal home manual.", "optional": false, "source_ids": ["incredible-india-orchha-vivaha-panchami-2026", "pib-ayodhya-vivaha-panchami-context", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close with a shared commitment to respect, fidelity to responsibility, family care, or service and record the source used.", "why": "The close is attributable and actionable without guaranteeing a personal outcome.", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "vivaha-panchami-reflection-hi-v1",
+      "language_code": "hi",
+      "title": "विवाह पंचमी स्मरण",
+      "summary": "स्रोत-स्पष्ट राम-सीता विवाह-पाठ, विश्वसनीय सम्बन्ध और पारिवारिक जिम्मेदारी के लिए कृतज्ञता तथा सम्मान के एक व्यावहारिक कर्म से स्मरण। यह चिंतन-सहचर है, गढ़ी हुई विवाह या पूजा-विधि नहीं।",
+      "family_practice_note": "सार्थी को बताएं कि परिवार मिथिला, अयोध्या, ओरछा, मंदिर, रामायण-पाठ या किसी अन्य स्थापित रीति का पालन करता है। उसी की परिचित प्रार्थना, पाठ, गीत, अर्पण, उपवास और समापन रखें। जनकपुर, अयोध्या और ओरछा के सार्वजनिक उत्सव अलग सन्दर्भ हैं; उन्हें एक घरेलू क्रम में नहीं मिलाया जाता।",
+      "context_prompts": ["कौन-सी पारिवारिक, क्षेत्रीय, मंदिर या सम्प्रदायिक परम्परा लागू है?", "परिवार कौन-सा रामायण-संस्करण, कथा, प्रार्थना, गीत या गुरु-विवरण मानता है?", "आप शांत घरेलू चिंतन चाहते हैं या स्थापित मंदिर अथवा सार्वजनिक कार्यक्रम की तैयारी?", "क्या कोई बुज़ुर्ग या पुरोहित उपवास, पूजा, विवाह-अभिनय, मंत्र, अर्पण, यात्रा या व्रत निर्देशित कर रहा है?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10 मिनट का स्मरण", "estimated_minutes": 10, "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["परिचित राम-सीता प्रार्थना", "पहचाना छोटा रामायण-पाठ", "शांत चिंतन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "ज्ञात हो तो परिवार, क्षेत्र, मंदिर या ग्रन्थ-सन्दर्भ का नाम लें; मिथिला, अयोध्या और ओरछा की रीतियाँ न मिलाएं।", "why": "स्रोत-स्पष्टता जीवित भिन्नताओं को बचाती है।", "optional": false, "source_ids": ["incredible-india-orchha-vivaha-panchami-2026", "pib-ayodhya-vivaha-panchami-context", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "राम-सीता विवाह का एक छोटा पहचाना विवरण पढ़ें या परिचित पारिवारिक प्रार्थना करें।", "why": "इससे सभी रामायण-रूपों को एक माने बिना स्मरण स्रोत-आधारित रहता है।", "optional": false, "source_ids": ["drikpanchang-delhi-vivaha-panchami-2026", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "आज सुनने, ईमानदारी, परस्पर सम्मान, पारिवारिक देखभाल या जिम्मेदारी निभाने का एक काम चुनें।", "why": "यह विवाह, सन्तान, समृद्धि या अन्य फल का वादा किए बिना उपयोगी है।", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30 मिनट का स्रोत-स्पष्ट चिंतन", "estimated_minutes": 30, "materials": [{ "item": "एक पहचाना राम-सीता या रामायण स्रोत", "substitutions": ["पारिवारिक ग्रन्थ", "गुरु-निर्देशित व्याख्या", "सामग्री-रहित न्यूनतम रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "जिस संस्करण, पुनर्कथा, मंदिर, क्षेत्र या गुरु का विवाह-विवरण ले रहे हैं उसका नाम बताएं।", "why": "कथा और अर्थ स्रोत-स्पष्ट रहें।", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "एक पूरा छोटा अंश पढ़ें और कथा, स्रोत की व्याख्या तथा अपना चिंतन अलग रखें।", "why": "इससे प्रमाण और संश्लेषण नहीं मिलते।", "optional": false, "source_ids": ["drikpanchang-delhi-vivaha-panchami-2026", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "विश्वास, सहमति, जिम्मेदारी, गरिमा, साहस और पारिवारिक देखभाल पर विचार करें; कथा किसी दूसरे व्यक्ति पर न थोपें।", "why": "उपयोगी ज्ञान जिम्मेदारी बढ़ाए, किसी का जीवन निर्धारित न करे।", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "सम्मानपूर्ण देखभाल या सुधार का एक ठोस काम करें और परिचित प्रार्थना या कृतज्ञता से समापन करें।", "why": "समापन उपयोगी है पर गढ़ा हुआ फल-दावा नहीं।", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60 मिनट का परिवार या मंदिर-संबद्ध रूप", "estimated_minutes": 60, "materials": [{ "item": "पारिवारिक, मंदिर या स्रोत-स्पष्ट राम-सीता सामग्री", "substitutions": ["सत्यापित संस्करण", "गुरु-निर्देशित व्याख्या", "मानक व्यक्तिगत रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "परिवार या अध्ययन समूह के साथ लागू ग्रन्थ, पुनर्कथा, स्थान, मंदिर या परम्परा का ठीक नाम लें।", "why": "सामूहिक स्मरण भी स्रोत और परम्परा के प्रति स्पष्ट रहे।", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "विवाह-प्रसंग पढ़ें और विभिन्न रूपों तथा अनिश्चितता को मिलाए बिना चर्चा करें।", "why": "रूपान्तर-संरक्षण देवम के विशाल पुस्तकालय का उद्देश्य है।", "optional": false, "source_ids": ["drikpanchang-delhi-vivaha-panchami-2026", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "मंदिर या सार्वजनिक उत्सव में जाएं तो कार्यक्रम, प्रवेश, यात्रा और भीड़ स्थानीय रूप से जाँचें; औपचारिक विधि और अभिनय आयोजक के अधीन रखें।", "why": "आधिकारिक उत्सव-सन्दर्भ न लाइव संचालन है, न सार्वभौमिक घरेलू विधि।", "optional": false, "source_ids": ["incredible-india-orchha-vivaha-panchami-2026", "pib-ayodhya-vivaha-panchami-context", "devam-vivaha-panchami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "सम्मान, जिम्मेदारी, पारिवारिक देखभाल या सेवा का साझा संकल्प लेकर और स्रोत लिखकर समापन करें।", "why": "समापन किसी निजी फल की गारंटी दिए बिना स्रोत-स्पष्ट और उपयोगी है।", "optional": false, "source_ids": ["devam-vivaha-panchami-safety-boundary"] }
+        ] }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "attributable_rama_sita_marriage_remembrance_relationship_responsibility_and_safe_public_participation_supported": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "janakpur_ayodhya_and_orchha_contexts_kept_distinct": true,
+    "fast_food_dietary_or_medical_guidance_given": false,
+    "formal_wedding_reenactment_puja_mantra_offering_procession_or_vow_prescribed": false,
+    "marriage_spouse_fertility_progeny_prosperity_merit_or_other_outcome_guaranteed": false,
+    "one_ramayana_edition_story_interpretation_or_practice_claimed_universal": false,
+    "public_event_operations_or_travel_safety_claimed_current": false,
+    "all_regional_family_temple_sampradaya_and_ramayana_variants_complete": false
+  }
+}

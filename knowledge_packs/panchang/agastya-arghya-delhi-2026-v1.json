@@ -1,0 +1,213 @@
+{
+  "contract": "DEVAM_UNRESOLVED_AGASTYA_ARGHYA_TIMING_FIXTURE_V1",
+  "fixture_id": "devam-agastya-arghya-delhi-2026-v1",
+  "scope": {
+    "reference_location": "New Delhi, NCT, India",
+    "geoname_id": 1261481,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "elevation_meters": 216,
+    "timezone": "Asia/Kolkata",
+    "provider_candidate_civil_date": "2026-09-04",
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "date_resolved_by_devam": false,
+    "provider_visibility_method_reproduced": false,
+    "ritual_guidance_included": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drikpanchang-delhi-agastya-arghya-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/rituals/agastya-arghya/agastya-arghya-date-time.html?geoname-id=1261481&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_location_specific_date_and_displayed_timing_lead_not_calculation_authority",
+      "raw_page_is_dynamic": true,
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T19:33:56.417Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/rituals/agastya-arghya/agastya-arghya-date-time.html?geoname-id=1261481&year=2026",
+          "response_bytes": 60405,
+          "response_sha256": "19ee59d1d49372e3ea9e012572aec4b64941f219243dd36aa15d73303c79ac00",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T19:33:56.689Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/rituals/agastya-arghya/agastya-arghya-date-time.html?geoname-id=1261481&year=2026",
+          "response_bytes": 60405,
+          "response_sha256": "19ee59d1d49372e3ea9e012572aec4b64941f219243dd36aa15d73303c79ac00",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "title": "2026 Agastya Tara Uday, Canopus Rising date with Arghya timings for New Delhi, NCT, India",
+        "civil_date": "2026-09-04",
+        "weekday": "Friday",
+        "displayed_agastya_tara_rise_local": "04:58",
+        "displayed_arghya_window_local": "04:58-06:00",
+        "displayed_set_date": "2026-04-18",
+        "displayed_set_local": "19:54",
+        "calculation_method_published_on_page": false
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "simbad-canopus-basic-query-2026-08-07",
+      "provider": "SIMBAD Astronomical Database, CDS Strasbourg",
+      "url": "https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=Canopus",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_astronomical_identity_and_icrs_coordinate_observation",
+      "raw_page_is_dynamic": true,
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T19:46:28.297Z",
+          "status": 200,
+          "final_url": "https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=Canopus",
+          "response_bytes": 83432,
+          "response_sha256": "6afbc462a17696dc7ad75c5ad80d3b64e92cc80389b6f14218d019a480e86513",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T19:46:30.150Z",
+          "status": 200,
+          "final_url": "https://simbad.u-strasbg.fr/simbad/sim-basic?Ident=Canopus",
+          "response_bytes": 83432,
+          "response_sha256": "382777af0fc53ac9b0a63530b795d3c7394c8e149aef6830342c60353eb926e5",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "object_name": "Canopus",
+        "coordinate_frame": "ICRS J2000",
+        "right_ascension_literal": "06 23 57.10988",
+        "declination_literal": "-52 41 44.3810",
+        "right_ascension_hours_decimal": 6.399197188888889,
+        "declination_degrees_decimal": -52.69566138888889
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "fixed_sources": [
+    {
+      "source_id": "nirnayasindhu-marathi-1865-agastyodaya",
+      "provider": "Devam retained source vault",
+      "object_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "object_bytes": 93531683,
+      "media_type": "application/pdf",
+      "rights_lane": "private_evidence",
+      "visually_inspected_pdf_pages": [
+        159,
+        160
+      ],
+      "printed_pages": [
+        "142",
+        "143"
+      ],
+      "section_heading": "Agastyodaya-nirnaya / Agastya Arghya",
+      "evidence_observations": {
+        "one_rule_places_the_time_on_the_seventh_day_before_solar_entry_into_kanya": true,
+        "one_rule_places_rise_twenty_one_days_after_simha_sankranti": true,
+        "arghya_period_after_rise_extends_seven_days": true,
+        "rules_are_not_identical_to_an_ordinary_daily_star_rise": true,
+        "historical_procedure_and_promised_outcomes_present_but_not_promoted": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "ijhs-2016-heliacal-rising-canopus",
+      "provider": "Indian National Science Academy",
+      "object_sha256": "c97f44a0948cc100a592b60115fdcfc76253e16869a0ecdca564d3cbb3cc8a95",
+      "object_bytes": 967842,
+      "media_type": "application/pdf",
+      "rights_lane": "internal_reference_only",
+      "doi": "10.16943/ijhs/2016/v51i1/48379",
+      "visually_inspected_pdf_pages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "printed_pages": [
+        "84",
+        "85",
+        "86",
+        "87",
+        "88"
+      ],
+      "evidence_observations": {
+        "heliacal_visibility_depends_on_location_and_atmospheric_conditions": true,
+        "paper_estimate_star_altitude_degrees": 3,
+        "paper_estimate_sun_altitude_degrees": -5,
+        "paper_also_illustrates_a_standard_sun_altitude_degrees": -7,
+        "paper_requires_country_or_location_specific_calculation": true,
+        "paper_does_not_publish_the_drikpanchang_2026_method": true
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "astronomical_diagnostics": {
+    "engine": "astronomy-engine@2.1.19",
+    "canopus_distance_light_years_for_engine": 310,
+    "provider_moment_utc": "2026-09-03T23:28:00.000Z",
+    "provider_moment_local": "2026-09-04T04:58:00+05:30",
+    "provider_moment_star_apparent_altitude_degrees": 0.62382467,
+    "provider_moment_sun_apparent_altitude_degrees": -13.67826341,
+    "ordinary_geometric_rise_on_provider_date_utc": "2026-09-03T23:20:20.684Z",
+    "ordinary_geometric_rise_on_provider_date_local": "2026-09-04T04:50:20.684+05:30",
+    "paper_estimate_daily_checks": [
+      {
+        "civil_date": "2026-09-02",
+        "star_reaches_three_degrees_utc": "2026-09-02T00:09:13.219Z",
+        "sun_apparent_altitude_degrees": -4.61548681,
+        "paper_estimate_satisfied": false
+      },
+      {
+        "civil_date": "2026-09-03",
+        "star_reaches_three_degrees_utc": "2026-09-03T00:05:17.329Z",
+        "sun_apparent_altitude_degrees": -5.57874468,
+        "paper_estimate_satisfied": true
+      },
+      {
+        "civil_date": "2026-09-04",
+        "star_reaches_three_degrees_utc": "2026-09-04T00:01:21.438Z",
+        "sun_apparent_altitude_degrees": -6.54251036,
+        "paper_estimate_satisfied": true
+      }
+    ],
+    "first_date_satisfying_paper_estimate_in_test_window": "2026-09-03",
+    "provider_candidate_differs_by_civil_days": 1,
+    "ordinary_rise_equivalent_to_heliacal_rise": false,
+    "paper_estimate_equivalent_to_provider_method": false
+  },
+  "required_adjudication": [
+    "identify or define the exact location-aware heliacal-visibility convention used for product date assignment",
+    "reconcile the one-day difference between the live provider date and the independently reproduced paper estimate",
+    "decide whether a weather-independent standard or a practitioner-calendar fixture is authoritative for the supported tradition lane",
+    "separate ordinary geometric rise, heliacal visibility, arghya timing, and the seven-day historical offering period",
+    "research present-day regional and family practice before publishing any procedure",
+    "exclude historical caste restrictions, donations, homa, promised outcomes, and mantras from modern guidance unless separately justified"
+  ],
+  "denials": {
+    "devam_observance_date_assigned": false,
+    "provider_calculation_method_reproduced": false,
+    "provider_arghya_window_reproduced": false,
+    "ordinary_rise_treated_as_heliacal_rise": false,
+    "paper_estimate_treated_as_provider_method": false,
+    "historical_relative_day_rules_treated_as_exact_2026_provider_method": false,
+    "historical_procedure_promoted": false,
+    "historical_caste_or_gender_rules_promoted": false,
+    "historical_promised_outcomes_promoted": false,
+    "mantra_or_homa_guidance_published": false,
+    "fasting_or_puja_procedure_resolved": false,
+    "universal_india_observance_claim": false,
+    "all_regional_practice_resolved": false,
+    "source_text_product_cleared": false,
+    "complete_september_december_coverage": false
+  }
+}

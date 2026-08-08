@@ -1,0 +1,21 @@
+# Local dependencies and build products
+node_modules/
+.next/
+out/
+coverage/
+*.log
+__pycache__/
+*.py[cod]
+
+# Environment and local platform state
+.env
+.env.*
+!.env.example
+.vercel/
+.DS_Store
+Thumbs.db
+tmp/
+
+# The restored content-addressed vault is local evidence, not application source.
+# Keep its manifests and documentation; never upload the object payloads to Git.
+source_vault/objects/

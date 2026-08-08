@@ -1,0 +1,92 @@
+{
+  "contract": "DEVAM_BOUNDED_INDIA_SANKRANTI_DATE_FIXTURE_V1",
+  "fixture_id": "devam-india-sankranti-september-december-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "timezone": "Asia/Kolkata",
+    "civil_date_start": "2026-09-01",
+    "civil_date_end": "2026-12-31",
+    "date_identity_only": true,
+    "punya_kala_resolved": false,
+    "regional_procedure_resolved": false,
+    "universal_observance_claim": false
+  },
+  "source": {
+    "source_id": "drikpanchang-delhi-sankranti-calendar-2026",
+    "provider": "Drik Panchang",
+    "url": "https://www.drikpanchang.com/sankranti/sankranti.html?geoname-id=1273294&year=2026",
+    "fetched_at_utc": "2026-08-06T21:09:37.697Z",
+    "status": 200,
+    "final_url": "https://www.drikpanchang.com/sankranti/sankranti.html?geoname-id=1273294&year=2026",
+    "response_bytes": 90449,
+    "response_sha256": "084c211dc85fbe2a5f0333ed6c07d5ba54b5e25b3fd5ace5aeb168e0e306c97e",
+    "strict_utf8": true,
+    "raw_page_is_dynamic": true,
+    "evidence_role": "current_practitioner_india_standard_time_date_and_ingress_moment_fixture",
+    "rights_lane": "reference_only",
+    "source_text_returned_by_api": false
+  },
+  "engine": {
+    "id": "devam-panchang",
+    "version": "astronomy-engine-2.1.19-lahiri-v3",
+    "ayanamsha": "lahiri_mean_linear_v1",
+    "validation_tolerance_seconds": 600
+  },
+  "ingresses": [
+    {
+      "observance_slug": "kanya-sankranti",
+      "canonical_name": "Kanya Sankranti",
+      "from_rashi": "Simha",
+      "to_rashi": "Kanya",
+      "civil_date": "2026-09-17",
+      "published_moment_local": "2026-09-17T07:58:00+05:30",
+      "published_moment_utc": "2026-09-17T02:28:00.000Z"
+    },
+    {
+      "observance_slug": "tula-sankranti",
+      "canonical_name": "Tula Sankranti",
+      "from_rashi": "Kanya",
+      "to_rashi": "Tula",
+      "civil_date": "2026-10-17",
+      "published_moment_local": "2026-10-17T19:57:00+05:30",
+      "published_moment_utc": "2026-10-17T14:27:00.000Z"
+    },
+    {
+      "observance_slug": "vrishchika-sankranti",
+      "canonical_name": "Vrishchika Sankranti",
+      "from_rashi": "Tula",
+      "to_rashi": "Vrishchika",
+      "civil_date": "2026-11-16",
+      "published_moment_local": "2026-11-16T19:48:00+05:30",
+      "published_moment_utc": "2026-11-16T14:18:00.000Z"
+    },
+    {
+      "observance_slug": "dhanu-sankranti",
+      "canonical_name": "Dhanu Sankranti",
+      "from_rashi": "Vrishchika",
+      "to_rashi": "Dhanu",
+      "civil_date": "2026-12-16",
+      "published_moment_local": "2026-12-16T10:29:00+05:30",
+      "published_moment_utc": "2026-12-16T04:59:00.000Z"
+    }
+  ],
+  "resolution_contract": {
+    "selection": "assign_the_local_civil_date_containing_the_validated_sidereal_solar_ingress_for_Asia_Kolkata",
+    "astronomical_ingress_is_observance_identity_only": true,
+    "punya_kala_resolved": false,
+    "ritual_guidance_included": false,
+    "regional_festival_equivalence_resolved": false,
+    "outside_timezone": "fail_closed"
+  },
+  "denials": {
+    "punya_kala_resolved": false,
+    "snana_dana_procedure_resolved": false,
+    "regional_festival_equivalence_resolved": false,
+    "all_sankranti_traditions_complete": false,
+    "universal_household_practice": false,
+    "ritual_guidance_included": false,
+    "source_text_returned_by_api": false,
+    "complete_september_december_layer": false
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "contract": "DEVAM_DUTT_DJVU_VISUAL_REVIEW_V1",
+  "decision": "VISUAL_IDENTITY_AND_TERMINAL_BOUNDARIES_CONFIRMED_OCR_QUARANTINED",
+  "reviewed_at": "2026-08-07",
+  "source_profile": {
+    "path": "ingestion/reports/ramayana-manmatha-nath-dutt-commons-structure-v1.json",
+    "sha256": "4bac0c1f139980cff5e3c58640e37db0d2f154d1a22011ccb9c0d0330afe9b32"
+  },
+  "source_plan": {
+    "path": "ingestion/plans/ramayana-manmatha-nath-dutt-commons-source-acquisition-v1.json",
+    "sha256": "7fea488d9084f19bc8507291875c1512b7801fa4de776aebb7b21301a0b3cb58"
+  },
+  "local_render": {
+    "tool_path": "tools/render_dutt_djvu_review_images.mjs",
+    "tool_sha256": "4f8c935dc92147aefc58001f2ea48687664113af6c4174bb5927a2aec09a4830",
+    "manifest_path": "tmp/ramayana-dutt-visual-review/local-render-manifest-v3.json",
+    "manifest_sha256": "1a1a047ddc662c5739edd1997a8d2f9f065070b9c624117438cbbabee4c37094",
+    "record_count": 15,
+    "network_used_for_rendering": false,
+    "source_carriers_copied": false
+  },
+  "identity_boundary": "Seven separately preserved DjVu scan carriers for Manmatha Nath Dutt's 1891-1894 English prose translation of Valmiki's Ramayana, covering Bala, Ayodhya, Aranya, Kishkindha, Sundara, Yuddha and Uttara Kanda. This is one historical English edition, not every recension, translation, commentary, Ramcharitmanas, or the complete Ramayana tradition.",
+  "volumes": [
+    {
+      "volume": 1,
+      "kanda": "Balakandam",
+      "title_carrier_page_1_based": 7,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "BALAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Elysium Press", "Calcutta", "1891"],
+      "terminal_carrier_page_1_based": 192,
+      "terminal_printed_page": "176",
+      "terminal_observation": "The Balakandam narrative closes with Rama and Sita joined in happiness, followed by a closing rule; no literal END formula is printed on this leaf.",
+      "terminal_formula": null,
+      "trailing_matter": [{"carrier_page_1_based": 196, "observation": "Union Theological Seminary library circulation leaf; not source narrative."}]
+    },
+    {
+      "volume": 2,
+      "kanda": "Ayodhyakandam",
+      "title_carrier_page_1_based": 7,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "AYODHYAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Elysium Press", "Calcutta", "1892"],
+      "terminal_carrier_page_1_based": 335,
+      "terminal_printed_page": "503",
+      "terminal_observation": "An explicit end formula closes the volume.",
+      "terminal_formula": "END OF AYODHYAKANDAM.",
+      "trailing_matter": []
+    },
+    {
+      "volume": 3,
+      "kanda": "Aranyakandam",
+      "title_carrier_page_1_based": 9,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "ARANYAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Deva Press", "Calcutta", "1892", "All rights reserved"],
+      "terminal_carrier_page_1_based": 194,
+      "terminal_printed_page": "688",
+      "terminal_observation": "An explicit end formula closes the volume.",
+      "terminal_formula": "END OF THE ARANYAKANDAM.",
+      "trailing_matter": []
+    },
+    {
+      "volume": 4,
+      "kanda": "Kishkindhakandam",
+      "title_carrier_page_1_based": 6,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "KISHKINDHAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Deva Press", "Calcutta", "1891", "All rights reserved"],
+      "terminal_carrier_page_1_based": 189,
+      "terminal_printed_page": "870",
+      "terminal_observation": "An explicit end formula closes the volume.",
+      "terminal_formula": "END OF KISHKINDHAKANDAM.",
+      "trailing_matter": []
+    },
+    {
+      "volume": 5,
+      "kanda": "Sundarakandam",
+      "title_carrier_page_1_based": 6,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "SUNDARAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Deva Press", "Calcutta", "1892", "All rights reserved"],
+      "terminal_carrier_page_1_based": 232,
+      "terminal_printed_page": "1097",
+      "terminal_observation": "An explicit end formula closes the volume.",
+      "terminal_formula": "END OF SUNDARAKANDAM.",
+      "trailing_matter": []
+    },
+    {
+      "volume": 6,
+      "kanda": "Yuddhakandam",
+      "title_carrier_page_1_based": 7,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "YUDDHAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Deva Press", "Calcutta", "1893", "All rights reserved"],
+      "terminal_carrier_page_1_based": 453,
+      "terminal_printed_page": "1549",
+      "terminal_observation": "An explicit end formula closes the volume.",
+      "terminal_formula": "THE END OF YUDDHAKANDAM.",
+      "trailing_matter": []
+    },
+    {
+      "volume": 7,
+      "kanda": "Uttarakandam",
+      "title_carrier_page_1_based": 7,
+      "title_literals_observed": ["THE RAMAYANA", "Translated into English Prose from the original Sanskrit of Valmiki", "UTTARAKANDAM", "Edited and Published by MANMATHA NATH DUTT", "Calcutta", "1894"],
+      "terminal_carrier_page_1_based": 310,
+      "terminal_printed_page": "1933",
+      "terminal_observation": "The final narrative paragraph is followed by an explicit whole-work end formula.",
+      "terminal_formula": "THE END.",
+      "trailing_matter": []
+    }
+  ],
+  "rights_boundary": {
+    "commons_file_metadata_observed": "LicenseShortName=Public domain; UsageTerms=Public domain; Copyrighted=False for each of the seven files",
+    "printed_historical_notices_observed": "Volumes 3-6 print an All rights reserved notice on their title leaves.",
+    "interpretation": "The printed notices are edition-history evidence only. Product use relies on the separately bound Commons file-level public-domain metadata and still requires transcription and publication QA."
+  },
+  "claims": {
+    "exact_seven_carrier_identity_visually_confirmed": true,
+    "bounded_title_and_terminal_evidence_confirmed": true,
+    "all_page_coordinates_profiled": true,
+    "generated_renders_replace_source_carriers": false,
+    "provider_ocr_verified_for_product_search": false,
+    "provider_ocr_servable": false,
+    "exact_text_product_ready": false,
+    "internal_page_omission_fully_excluded_by_visual_sampling": false,
+    "all_ramayana_editions_or_traditions_complete": false,
+    "all_languages_complete": false
+  },
+  "next_gate": "Wikisource proofread-status observation after provider cooldown, then source-aligned transcription/OCR quality work before exact-text search or quotation serving."
+}

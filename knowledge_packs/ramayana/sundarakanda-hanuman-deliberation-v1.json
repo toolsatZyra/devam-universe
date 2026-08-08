@@ -1,0 +1,193 @@
+{
+  "contract": "DEVAM_REVIEWED_RAMAYANA_EPISODE_V1",
+  "bundle_id": "sundarakanda-hanuman-deliberation-v1",
+  "review_status": "internal_beta_reviewed",
+  "languages": ["en", "hi"],
+  "scope": "One source-bounded Sundarakanda episode: Hanuman deliberates before speaking to Sita in one GRETIL Sanskrit electronic transcription, compared with Ralph T. H. Griffith's separately attributable English verse translation and visually checked against Manmatha Nath Dutt's 1892 English prose scan.",
+  "positive_boundary": "Devam may explain the episode and offer its deliberative sequence as a reflective lens. It may not turn the narrative into a universal command or claim that this pair of carriers represents every Ramayana tradition.",
+  "denials": {
+    "griffith_canto_number_equals_gretil_sarga_number": false,
+    "griffith_is_complete_or_literal_translation": false,
+    "gretil_underlying_print_edition_identified": false,
+    "one_episode_is_universal_moral_rule": false,
+    "audience_sensitive_speech_justifies_deception": false,
+    "fear_or_safety_should_be_manipulated": false,
+    "ramayana_tradition_complete": false,
+    "product_rights_clearance_for_source_text": false,
+    "private_source_text_may_be_quoted": false,
+    "dutt_provider_ocr_may_be_quoted_as_verified_text": false,
+    "complete_proofread_dutt_transcription_available": false
+  },
+  "sources": [
+    {
+      "source_id": "gretil-valmiki-ramayana-tokunaga-smith-tei",
+      "work_title": "Valmiki Ramayana",
+      "edition_title": "Tokunaga/Smith GRETIL Sanskrit electronic transcription",
+      "expression_role": "Sanskrit electronic transcription",
+      "source_object_id": "sha256:a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901",
+      "source_path": "source_vault/objects/sha256/a5/a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901",
+      "byte_count": 4244751,
+      "sha256": "a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901",
+      "rights_lane": "citation_only",
+      "rights_boundary": "GRETIL CC BY-NC-SA 4.0 carrier retained as private evidence; no Sanskrit source text is exposed by this bundle.",
+      "ingestion_plan": "ingestion/plans/ramayana-gretil-tokunaga-smith-v1.json",
+      "ingestion_packet_sha256": "8c098135b883469878f1fa747b1aba4129ac63219238a1b8ed7ee88b1735cc34"
+    },
+    {
+      "source_id": "project-gutenberg-griffith-ramayana-tei",
+      "work_title": "The Ramayan of Valmiki, translated into English verse",
+      "edition_title": "Ralph T. H. Griffith translation, Project Gutenberg eBook 24869",
+      "expression_role": "Historical English verse translation",
+      "source_object_id": "sha256:1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
+      "source_path": "source_vault/objects/sha256/1f/1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
+      "byte_count": 3045202,
+      "sha256": "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
+      "rights_lane": "citation_only",
+      "rights_boundary": "Project Gutenberg says public domain in the USA and requires users elsewhere to check local law. Devam has not recorded general product clearance; no Griffith text is exposed by this bundle.",
+      "ingestion_plan": "ingestion/plans/ramayana-griffith-project-gutenberg-v1.json",
+      "ingestion_packet_sha256": "80a64ddf9897573f450783db885f3e434ef5d1e3f8672512c070aec512cfbf2f"
+    },
+    {
+      "source_id": "commons-dutt-ramayana-sundara-djvu",
+      "work_title": "The Ramayana",
+      "edition_title": "Sundara Kandam, translated into English prose from the original Sanskrit of Valmiki; edited and published by Manmatha Nath Dutt, Calcutta, 1892",
+      "expression_role": "Historical English prose translation scan",
+      "source_object_id": "sha256:6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062",
+      "source_path": "source_vault/objects/sha256/6f/6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062",
+      "byte_count": 9184804,
+      "sha256": "6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062",
+      "rights_lane": "citation_only",
+      "rights_boundary": "Commons currently reports Public domain and Copyrighted=False for the exact scan. Devam uses only page-addressed citation here; its uncorrected OCR is not exposed.",
+      "selected_passage_review": "ingestion/reports/ramayana-manmatha-nath-dutt-sundara-selected-passage-v1.json",
+      "selected_passage_review_sha256": "f506d39d6c9e3cd90c5f6629ecd64c050b59e51dfeb372fbaa8c717d902c268b"
+    }
+  ],
+  "passages": [
+    {
+      "passage_id": "gretil-sundarakanda-5-28",
+      "source_id": "gretil-valmiki-ramayana-tokunaga-smith-tei",
+      "source_ordinal": 352,
+      "literal_marker": "Book 5, sarga 28; R_5.028.001-R_5.028.044",
+      "byte_start": 2322824,
+      "byte_end_exclusive": 2332488,
+      "line_start": 41812,
+      "line_end": 41987,
+      "span_sha256": "31ef2670759fedf4116087f22f53cb344324543f02aefd276964a7560b4e7e81",
+      "language_code": "sa-Latn",
+      "verse_group_count": 44,
+      "role": "primary episode witness in this bundle"
+    },
+    {
+      "passage_id": "griffith-sundarakanda-canto-30",
+      "source_id": "project-gutenberg-griffith-ramayana-tei",
+      "source_ordinal": 367,
+      "literal_marker": "Book 5, Canto XXX. Hanuman's Deliberation",
+      "byte_start": 2226224,
+      "byte_end_exclusive": 2229923,
+      "line_start": 53344,
+      "line_end": 53425,
+      "span_sha256": "8621ebca63d13f6ed596b750503938fb826b0cd80c213d5d12ea31e0dbb3d78f",
+      "language_code": "en",
+      "role": "separately attributable historical translation and alignment evidence"
+    },
+    {
+      "passage_id": "dutt-sundara-section-30",
+      "source_id": "commons-dutt-ramayana-sundara-djvu",
+      "source_ordinal": 30,
+      "literal_marker": "Sundara Kandam, Section XXX; printed pp. 975-978; carrier pp. 110-113",
+      "carrier_page_start": 110,
+      "carrier_page_end": 113,
+      "printed_page_start": "975",
+      "printed_page_end": "978",
+      "page_evidence_sha256": [
+        "00fffb22fbf26789a1f3f6594070e749f00a4aeb5a64ce0e00c5cd7e79d07364",
+        "80c31eda5087110e17194837b78bedaa2d059b4bd8b569cc8c8ad0c89390aa6d",
+        "5922533d604268088e05a0c46dab56282dc63f8ea08aaae023ab9270aa65a712",
+        "b16c24ad6e2bcc2251aa738efeba9e386bd4812ff3c62ab56c5d38bfd15d876d"
+      ],
+      "language_code": "en",
+      "role": "visually reviewed historical prose scan corroborating the episode and adjacent sequence; OCR remains quarantined"
+    }
+  ],
+  "crosswalk": {
+    "status": "content_sequence_alignment_with_literal_numbering_divergence",
+    "gretil_locator": "Book 5, sarga 28",
+    "griffith_locator": "Book 5, Canto XXX",
+    "dutt_locator": "Sundara Kandam, Section XXX, printed pp. 975-978",
+    "numbering_statement": "The shared episode is not aligned by equal chapter number. Griffith explicitly omits his Cantos XXVIII and XXIX and resumes with Canto XXX; the GRETIL carrier places Hanuman's deliberation at sarga 28.",
+    "adjacent_sequence_check": [
+      {
+        "gretil": "5.28",
+        "griffith": "XXX",
+        "episode": "Hanuman deliberates before speaking",
+        "gretil_evidence": {"source_ordinal": 352, "byte_start": 2322824, "byte_end_exclusive": 2332488, "line_start": 41812, "line_end": 41987, "span_sha256": "31ef2670759fedf4116087f22f53cb344324543f02aefd276964a7560b4e7e81"},
+        "griffith_evidence": {"source_ordinal": 367, "byte_start": 2226224, "byte_end_exclusive": 2229923, "line_start": 53344, "line_end": 53425, "span_sha256": "8621ebca63d13f6ed596b750503938fb826b0cd80c213d5d12ea31e0dbb3d78f"}
+      },
+      {
+        "gretil": "5.29",
+        "griffith": "XXXI",
+        "episode": "Hanuman begins speaking about Rama",
+        "gretil_evidence": {"source_ordinal": 353, "byte_start": 2332491, "byte_end_exclusive": 2335440, "line_start": 41988, "line_end": 42037, "span_sha256": "83f4281e5ca060689cfdce0b5287d6f6731113aa1275b4c36d43510f2edf0d19"},
+        "griffith_evidence": {"source_ordinal": 368, "byte_start": 2229927, "byte_end_exclusive": 2232063, "line_start": 53427, "line_end": 53483, "span_sha256": "001b3bd24612d8b5e3f034904090560a6f52f8edbd79878256ba42d8cdd250ef"}
+      },
+      {
+        "gretil": "5.30",
+        "griffith": "XXXII",
+        "episode": "Sita sees the speaker and questions the encounter",
+        "gretil_evidence": {"source_ordinal": 354, "byte_start": 2335443, "byte_end_exclusive": 2338128, "line_start": 42038, "line_end": 42069, "span_sha256": "bc192ca2f35b65f45c6a1cf30b74dbd3351ba18e4a2bf5715ddb73db17217ddf"},
+        "griffith_evidence": {"source_ordinal": 369, "byte_start": 2232067, "byte_end_exclusive": 2233702, "line_start": 53485, "line_end": 53526, "span_sha256": "cefd1bf2d7301f962c372f7249c3be0991aaeee0fdcdcc5067475924434929be"}
+      }
+    ],
+    "ordered_alignment_anchors": [
+      {"ordinal": 1, "gretil_verse_groups": "1-2", "shared_event": "Hanuman observes Sita and the guards, then begins sustained deliberation."},
+      {"ordinal": 2, "gretil_verse_groups": "3-5", "shared_event": "He recognizes that he has found Sita and completed the reconnaissance part of his mission."},
+      {"ordinal": 3, "gretil_verse_groups": "6-16", "shared_event": "He decides that leaving without consoling or speaking to Sita could endanger her and leave Rama without her message."},
+      {"ordinal": 4, "gretil_verse_groups": "17-20", "shared_event": "He considers language, appearance, and the risk that Sita may mistake him for Ravana."},
+      {"ordinal": 5, "gretil_verse_groups": "21-35", "shared_event": "He anticipates alarm, intervention by the guards, capture or death, and failure of the wider mission."},
+      {"ordinal": 6, "gretil_verse_groups": "36-41", "shared_event": "He compares the harm of speaking badly with the harm of remaining silent and seeks a way to avoid both."},
+      {"ordinal": 7, "gretil_verse_groups": "42-44", "shared_event": "He chooses a truthful, reassuring opening centred on Rama before revealing himself more directly."}
+    ],
+    "alignment_boundary": "The ordered event correspondence across the Sanskrit transcription, Griffith translation, and visually reviewed Dutt scan supports an episode-level crosswalk. It does not prove line-by-line translation identity, identical recensions, or the correctness of one numbering system over the other.",
+    "dutt_selected_passage_review_sha256": "f506d39d6c9e3cd90c5f6629ecd64c050b59e51dfeb372fbaa8c717d902c268b"
+  },
+  "episode": {
+    "title": {"en": "Before Hanuman speaks to Sita", "hi": "सीता से बोलने से पहले हनुमान का विचार"},
+    "story": {
+      "en": "Hidden in the grove, Hanuman does not speak immediately. He considers Sita's distress, what Rama needs him to learn, how his form and language may be understood, and what could happen if the guards are alerted. He then chooses a gentle, truthful opening connected with Rama so that reassurance can come before further disclosure.",
+      "hi": "वाटिका में छिपे हनुमान तुरंत नहीं बोलते। वे सीता की व्यथा, राम के लिए आवश्यक संदेश, अपने रूप और भाषा के सम्भावित अर्थ, तथा राक्षसी पहरेदारों के सचेत होने के परिणाम पर विचार करते हैं। फिर वे राम से जुड़ी सत्य और मधुर बात से आरम्भ करने का निर्णय लेते हैं, ताकि आगे बढ़ने से पहले विश्वास और आश्वासन बन सके।"
+    }
+  },
+  "lenses": [
+    {
+      "lens_id": "pause-and-frame-the-real-purpose",
+      "en": "Before acting, name the real purpose and the person who most needs care; speed is not useful if it defeats the purpose.",
+      "hi": "कार्य से पहले वास्तविक उद्देश्य और उस व्यक्ति को पहचानें जिसकी सुरक्षा या सहायता सबसे अधिक आवश्यक है; यदि जल्दबाज़ी उद्देश्य को ही बिगाड़ दे तो वह उपयोगी नहीं है।",
+      "application_boundary": "A reflective prompt, not a command to delay urgent help."
+    },
+    {
+      "lens_id": "speak-for-the-listener-without-deception",
+      "en": "Choose truthful language that the listener can safely receive. Audience awareness can improve communication, but it never authorizes deception or manipulation.",
+      "hi": "ऐसी सत्य भाषा चुनें जिसे सामने वाला सुरक्षित रूप से ग्रहण कर सके। श्रोता का ध्यान रखना संवाद को बेहतर बना सकता है, पर छल या नियंत्रण को उचित नहीं बनाता।",
+      "application_boundary": "Do not conceal danger, consent, material facts, or power."
+    },
+    {
+      "lens_id": "test-second-order-consequences",
+      "en": "Consider not only the intended effect but also fear, misunderstanding, escalation, and the wider consequences if the first move goes badly.",
+      "hi": "केवल इच्छित परिणाम ही नहीं, बल्कि भय, गलतफहमी, तनाव बढ़ने और पहला कदम बिगड़ने पर व्यापक परिणामों पर भी विचार करें।",
+      "application_boundary": "This is qualitative reflection, not a causal forecast or guarantee."
+    },
+    {
+      "lens_id": "use-a-trust-building-first-step",
+      "en": "When several options carry risk, begin with the smallest truthful step that can build trust and reveal whether it is safe to continue.",
+      "hi": "जब कई विकल्प जोखिमपूर्ण हों, तो उस छोटे और सत्य कदम से आरम्भ करें जो विश्वास बना सके और यह बता सके कि आगे बढ़ना सुरक्षित है या नहीं।",
+      "application_boundary": "A reversible first step is not enough when urgent protection or qualified help is required."
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "hanuman-deliberation-before-speaking",
+      "match_concepts": ["hanuman deliberation", "hanuman decision", "before speaking to sita", "hanuman spoke to sita", "difficult conversation", "हनुमान विचार", "सीता से बोलने", "कठिन बातचीत"],
+      "lens_ids": ["pause-and-frame-the-real-purpose", "speak-for-the-listener-without-deception", "test-second-order-consequences", "use-a-trust-building-first-step"]
+    }
+  ]
+}

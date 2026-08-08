@@ -1,0 +1,94 @@
+{
+  "contract": "DEVAM_MULTI_LANE_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-pradosha-north-west-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slugs": ["pradosha-2026-09-krishna", "pradosha-2026-09-shukla", "pradosha-2026-10-krishna", "pradosha-2026-10-shukla", "pradosha-2026-11-krishna", "pradosha-2026-11-shukla", "pradosha-2026-12-krishna", "pradosha-2026-12-shukla"],
+  "scope": {
+    "supported_pairs": [{ "region_code": "north-india", "tradition_code": "smarta-north-india" }, { "region_code": "west-india", "tradition_code": "smarta-west-india" }],
+    "language_codes": ["en", "hi"],
+    "eight_2026_calendar_lanes_required": true,
+    "family_temple_and_sampradaya_practice_override_generic_form": true,
+    "krishna_and_shukla_paksha_lanes_remain_distinct": true,
+    "weekday_names_do_not_create_planetary_remedies_or_outcomes": true
+  },
+  "sources": [
+    { "source_id": "devam-pradosha-calendar-fixture", "title": "Bounded Delhi Pradosha September-December 2026 fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_calendar_evidence", "rights_lane": "derivative_allowed", "artifact_sha256": "ecda097f1233723c1e03f49149e12fb48670e88279ea04e49329aa8f931166c0" },
+    { "source_id": "nirnayasindhu-1865-general-naktavrata-context", "title": "Nirnayasindhu, Marathi translation, Mumbai 1865", "publisher": "Devam retained fixed edition", "url": "https://archive.org/details/in.ernet.dli.2015.365977", "source_class": "historical_general_naktavrata_pradosha_interval_and_conflict_context_not_fortnightly_vidhi", "rights_lane": "private_evidence", "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b", "pdf_pages": [37, 38, 48] },
+    { "source_id": "drikpanchang-delhi-pradosha-2026", "title": "2026 Pradosh dates for Delhi", "publisher": "Drik Panchang", "url": "https://www.drikpanchang.com/vrats/pradoshdates.html?geoname-id=1273294&year=2026", "source_class": "current_practitioner_rule_and_location_specific_date_fixture_not_complete_vidhi", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://www.drikpanchang.com/vrats/pradoshdates.html?geoname-id=1273294&year=2026", "response_bytes": 126821, "response_sha256": "94ab318ba1acfb84daa160fb161062420985fc07919c7a76de61b7ad439a9ac1", "strict_utf8": true } },
+    { "source_id": "incredible-india-surutapalli-pradosha-context", "title": "Surutapalli — Pradosha identity, regional legend, and Nandi context", "publisher": "Ministry of Tourism, Government of India", "url": "https://www.incredibleindia.gov.in/en/andhra-pradesh/chittoor/surutapalli", "source_class": "official_tourism_living_regional_identity_and_story_context_not_north_west_home_vidhi", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://www.incredibleindia.gov.in/en/andhra-pradesh/chittoor/surutapalli", "response_bytes": 458517, "response_sha256": "efc7562a04c08f2f9e0025a6854f6517db24bc858a3dc28534f63bccef953ce2", "strict_utf8": true } },
+    { "source_id": "nyganeshtemple-pradosham-institutional-context", "title": "Pradosham at Sri Maha Vallabha Ganapati Devasthanam", "publisher": "Hindu Temple Society of North America", "url": "https://nyganeshtemple.org/pradosham/", "source_class": "institutional_temple_programme_and_practice_example_not_india_wide_or_home_authority", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://nyganeshtemple.org/pradosham/", "response_bytes": 109369, "response_sha256": "6d76bddb1425f6de3f2f4655db74aff16d710f2629c657b21645a1bc1b1b83a4", "strict_utf8": true } },
+    { "source_id": "devam-pradosha-safety-boundary", "title": "Devam Pradosha internal-beta attribution and safety boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_boundary", "rights_lane": "derivative_allowed" }
+  ],
+  "guides": [
+    {
+      "guide_id": "pradosha-remembrance-en-v1",
+      "language_code": "en",
+      "title": "Pradosha twilight remembrance",
+      "summary": "A bounded Shiva-Parvati remembrance for the resolved Trayodashi evening: familiar prayer or source-labelled reading, quiet reflection, and one responsible act. It is complete as a short companion, not as a fast, Rudrabhishekam, temple liturgy, or formal home puja.",
+      "family_practice_note": "Use the Shiva, Parvati, Nandi, story, prayer, text, and close established by your family, temple, or sampradaya. Krishna and Shukla Paksha occurrences remain separate. Bhauma, Guru, Shukra, Ravi, and Soma labels name the weekday occurrence; this guide derives no planetary remedy or promised result from them.",
+      "context_prompts": ["Which region, family, temple, or Shaiva/Smarta sampradaya practice applies?", "Which Shiva-Parvati story, source, prayer, song, or teacher is familiar?", "Does your practice include Nandi, a temple programme, or a home form, and who directs it?", "Is an elder or priest directing a fast, abhisheka, mantra, offering, pradakshina, or close?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10-minute twilight remembrance", "estimated_minutes": 10, "materials": [{ "item": "No material required", "substitutions": ["A familiar Shiva prayer", "A short identified passage", "Quiet reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm that Today resolves this Pradosha evening for your supported place and practice context.", "why": "The date is selected by Trayodashi overlap with the locally recalculated twilight window, not by a generic date list.", "optional": false, "source_ids": ["devam-pradosha-calendar-fixture", "nirnayasindhu-1865-general-naktavrata-context"] },
+          { "ordinal": 2, "instruction": "Remember Shiva and Parvati through one familiar prayer, name, song, silence, or short source-labelled passage.", "why": "This supports devotion without inventing a formal home or temple liturgy.", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Name one difficult or harmful situation that calls for steadiness, restraint, and care; choose one safe action that reduces harm or supports another person.", "why": "The reflection becomes useful without promising victory, purification, planetary relief, merit, or another outcome.", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30-minute sourced reflection", "estimated_minutes": 30, "materials": [{ "item": "One identified Shiva or Pradosha source", "substitutions": ["A family text", "A teacher-led explanation", "The material-free minimum form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Name the exact story, text, edition, temple, lineage, or teacher being followed.", "why": "Pradosha stories and practices are not one universal account.", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read one coherent attributable passage or explanation, distinguishing its narrative, its interpretation, and your present reflection.", "why": "Devam keeps source, tradition, and synthesis separate.", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Reflect on composure, responsible strength, restraint, gratitude, and care without universalizing one regional legend or Nandi practice.", "why": "The official Surutapalli account is valuable regional evidence, not an all-India home procedure.", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Complete one practical act of repair, listening, protection from harm, or service; close with a familiar prayer if available.", "why": "A responsible action expresses the reflection without becoming a ritual guarantee.", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60-minute family or temple-connected form", "estimated_minutes": 60, "materials": [{ "item": "Family, temple, or source-labelled Shiva material", "substitutions": ["A verified edition", "A teacher-guided explanation", "The standard individual form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "With family or a study group, identify the exact source, story, Shiva form, temple, lineage, and authority for the evening.", "why": "Shared participation remains attributable and does not collapse regional or sampradaya variants.", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read or discuss a coherent source-labelled account, including the regional boundary of any Surutapalli, Nandi, Samudra Manthan, dance, or weekday interpretation.", "why": "The library preserves meaningful variants rather than blending them.", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 3, "instruction": "If joining a temple, verify its current programme locally and leave Rudrabhishekam, Shiva-Nandi worship, mantra, offerings, pradakshina, sponsorship, and liturgical handling to that institution.", "why": "An institutional programme is evidence of living practice, not a universal app-generated rite.", "optional": false, "source_ids": ["nyganeshtemple-pradosham-institutional-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close with one shared commitment to steadiness, restraint, care, repair, or service and record the source or tradition used.", "why": "The close remains useful and attributable without guaranteeing an outcome.", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "pradosha-remembrance-hi-v1",
+      "language_code": "hi",
+      "title": "प्रदोष सन्ध्या स्मरण",
+      "summary": "निर्णीत त्रयोदशी सन्ध्या के लिए सीमित शिव-पार्वती स्मरण: परिचित प्रार्थना या स्रोत-स्पष्ट पाठ, शान्त चिंतन और एक जिम्मेदार कर्म। यह छोटे सहचर के रूप में पूरा है, उपवास, रुद्राभिषेक, मन्दिर-विधि या औपचारिक गृह-पूजा नहीं।",
+      "family_practice_note": "अपने परिवार, मन्दिर या सम्प्रदाय में स्थापित शिव, पार्वती, नन्दी, कथा, प्रार्थना, ग्रन्थ और समापन रखें। कृष्ण और शुक्ल पक्ष अलग रहें। भौम, गुरु, शुक्र, रवि और सोम नाम वार बताते हैं; यह मार्गदर्शिका उनसे कोई ग्रह-उपाय या निश्चित फल नहीं निकालती।",
+      "context_prompts": ["कौन-सा क्षेत्र, परिवार, मन्दिर या शैव/स्मार्त सम्प्रदाय लागू है?", "कौन-सी शिव-पार्वती कथा, स्रोत, प्रार्थना, गीत या गुरु परिचित है?", "क्या आपकी परम्परा में नन्दी, मन्दिर-कार्यक्रम या गृह-रूप है, और उसका निर्देशन कौन करता है?", "क्या कोई बुजुर्ग या पुरोहित उपवास, अभिषेक, मन्त्र, अर्पण, प्रदक्षिणा या समापन निर्देशित कर रहा है?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10 मिनट का सन्ध्या स्मरण", "estimated_minutes": 10, "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["परिचित शिव-प्रार्थना", "छोटा पहचाना पाठ", "शान्त चिंतन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "पुष्टि करें कि Today आपके समर्थित स्थान और परम्परा के लिए इस प्रदोष सन्ध्या को निर्धारित करता है।", "why": "तिथि स्थानीय सन्ध्या में त्रयोदशी के विस्तार से चुनी जाती है, सामान्य तारीख-सूची से नहीं।", "optional": false, "source_ids": ["devam-pradosha-calendar-fixture", "nirnayasindhu-1865-general-naktavrata-context"] },
+          { "ordinal": 2, "instruction": "परिचित प्रार्थना, नाम, गीत, मौन या छोटे स्रोत-स्पष्ट पाठ से शिव और पार्वती का स्मरण करें।", "why": "इससे औपचारिक गृह या मन्दिर-विधि गढ़े बिना भक्ति सम्भव है।", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 3, "instruction": "ऐसी एक कठिन या हानिकारक स्थिति पहचानें जिसमें धैर्य, संयम और देखभाल चाहिए; हानि घटाने या किसी की सहायता का एक सुरक्षित कर्म चुनें।", "why": "इसमें विजय, शुद्धि, ग्रह-शान्ति, पुण्य या अन्य फल का वादा नहीं है।", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30 मिनट का स्रोत-स्पष्ट चिंतन", "estimated_minutes": 30, "materials": [{ "item": "एक पहचाना शिव या प्रदोष स्रोत", "substitutions": ["पारिवारिक ग्रन्थ", "गुरु-निर्देशित व्याख्या", "सामग्री-रहित न्यूनतम रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "लागू कथा, ग्रन्थ, संस्करण, मन्दिर, परम्परा या गुरु का ठीक नाम लें।", "why": "प्रदोष की कथाएँ और विधियाँ एक सार्वभौम रूप नहीं हैं।", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 2, "instruction": "एक सुसंगत स्रोत-स्पष्ट पाठ या व्याख्या पढ़ें और कथा, व्याख्या तथा अपने चिंतन को अलग रखें।", "why": "Devam स्रोत, परम्परा और संश्लेषण को अलग रखता है।", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 3, "instruction": "एक क्षेत्रीय कथा या नन्दी-परम्परा को सार्वभौम बनाए बिना धैर्य, जिम्मेदार शक्ति, संयम, कृतज्ञता और देखभाल पर विचार करें।", "why": "आधिकारिक सुरुटपल्ली विवरण मूल्यवान क्षेत्रीय प्रमाण है, अखिल-भारतीय गृह-विधि नहीं।", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 4, "instruction": "सुधार, ध्यान से सुनने, हानि से सुरक्षा या सेवा का एक काम पूरा करें; परिचित हो तो प्रार्थना से समापन करें।", "why": "जिम्मेदार कर्म चिंतन को उपयोगी बनाता है, कर्मकाण्डीय गारंटी नहीं।", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60 मिनट का परिवार या मन्दिर-संबद्ध रूप", "estimated_minutes": 60, "materials": [{ "item": "पारिवारिक, मन्दिर या स्रोत-स्पष्ट शिव सामग्री", "substitutions": ["सत्यापित संस्करण", "गुरु-निर्देशित व्याख्या", "मानक व्यक्तिगत रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "परिवार या अध्ययन-समूह के साथ सटीक स्रोत, कथा, शिव-रूप, मन्दिर, परम्परा और सन्ध्या के अधिकारी का नाम लें।", "why": "साझा सहभागिता स्रोत-स्पष्ट रहती है और क्षेत्रीय रूपों को नहीं मिलाती।", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] },
+          { "ordinal": 2, "instruction": "सुरुटपल्ली, नन्दी, समुद्र-मन्थन, नृत्य या वार की किसी भी व्याख्या की क्षेत्रीय सीमा सहित एक सुसंगत स्रोत-स्पष्ट कथा पढ़ें या चर्चा करें।", "why": "पुस्तकालय अर्थपूर्ण रूपान्तरों को मिलाने के बजाय संरक्षित करता है।", "optional": false, "source_ids": ["incredible-india-surutapalli-pradosha-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 3, "instruction": "मन्दिर जा रहे हों तो वर्तमान कार्यक्रम स्थानीय रूप से जाँचें और रुद्राभिषेक, शिव-नन्दी पूजा, मन्त्र, अर्पण, प्रदक्षिणा, प्रायोजन और विधि-व्यवस्था उस संस्था पर छोड़ें।", "why": "संस्थागत कार्यक्रम जीवित परम्परा का प्रमाण है, सार्वभौम ऐप-निर्मित कर्मकाण्ड नहीं।", "optional": false, "source_ids": ["nyganeshtemple-pradosham-institutional-context", "devam-pradosha-safety-boundary"] },
+          { "ordinal": 4, "instruction": "धैर्य, संयम, देखभाल, सुधार या सेवा की एक साझा प्रतिबद्धता और प्रयुक्त स्रोत या परम्परा दर्ज करके समापन करें।", "why": "समापन किसी फल की गारंटी दिए बिना उपयोगी और स्रोत-स्पष्ट रहता है।", "optional": false, "source_ids": ["devam-pradosha-safety-boundary"] }
+        ] }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "eight_calendar_lanes_and_source_labelled_shiva_parvati_remembrance_supported": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "fast_food_dietary_or_medical_guidance_given": false,
+    "rudrabhishekam_lingam_nandi_mantra_offering_aarti_or_pradakshina_prescribed": false,
+    "puja_muhurta_or_parana_served": false,
+    "weekday_planetary_remedy_or_special_outcome_prescribed": false,
+    "surutapalli_story_or_nandi_practice_claimed_universal": false,
+    "institutional_temple_programme_exported_as_home_vidhi": false,
+    "purification_victory_health_progeny_wealth_merit_moksha_or_other_outcome_guaranteed": false,
+    "all_shaiva_smarta_regional_family_and_temple_variants_complete": false
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "bengal",
+        "tradition_code": "shakta-bengal"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Are you joining an established Bengali Shakta home puja, a temple, a public pandal, or praying privately?",
+      "Who directs the prayer, offerings, devotional songs, timings, and closing practice?",
+      "Does your family or community call it Kali Puja, Shyama Puja, or Mahanisha Puja?",
+      "Do you need a short participation form or guidance for assisting an established full puja?"
+    ],
+    "region_codes": [
+      "bengal"
+    ],
+    "settings": [
+      "household",
+      "temple",
+      "community",
+      "individual",
+      "family_led"
+    ],
+    "tradition_codes": [
+      "shakta-bengal"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-bengal-kali-puja-amavasya-nishita-v1",
+    "freshness_note": "The bounded Kolkata/Bengal 2026 lane resolves Sunday, 8 November. Recheck the responsible home, temple, or organiser for live timings and participation rules.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-bengal-kali-puja-date-fixture",
+      "west-bengal-aasan-kali-puja",
+      "ramakrishna-math-kali-puja-night-context"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "bengal-kali-puja-participant-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "bengal-kali-strength-and-good-over-harm",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja"
+          ],
+          "summary": "West Bengal's AASAN portal describes Kali as representing strength, power, and the triumph of good over evil. Devam preserves that current official meaning as an attributable festival account, not verified history or the only Shakta interpretation.",
+          "title": "Kali as strength and the triumph of good over harm",
+          "tradition_scope": "West Bengal official public-puja context",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short Bengal Shakta remembrance or respectful visit",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kali-puja-safety-and-authority-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Simple respectful participation",
+          "materials": [
+            {
+              "item": "A safe supervised light or flame-free light",
+              "required": false,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "Use quiet prayer without a physical light"
+              ]
+            },
+            {
+              "item": "One flower, fruit, sweet, or offering already accepted in your setting",
+              "required": false,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "Offer respectful attention or service instead of inventing a material requirement"
+              ]
+            }
+          ],
+          "procedure_id": "bengal-kali-puja-participant-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-bengal-kali-puja-date-fixture",
+            "west-bengal-aasan-kali-puja",
+            "devam-kali-puja-safety-and-authority-boundary",
+            "ramakrishna-math-kali-puja-night-context"
+          ],
+          "steps": [
+            {
+              "instruction": "Use the resolved Bengal Shakta Kali Puja night and ask whether you are joining a home, temple, or public-puja form; do not substitute the North/West Lakshmi Puja procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-bengal-kali-puja-date-fixture"
+              ],
+              "why": "The calendar and practice lanes are separate even when the civil date coincides."
+            },
+            {
+              "instruction": "Prepare a clean respectful place or arrive at the community setting in time to follow its entry, footwear, photography, queue, and offering rules.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "Official regional context includes homes, temples, and public pujas, each with its own practical authority."
+            },
+            {
+              "instruction": "Offer a familiar short prayer to Mother Kali, join a devotional song, or sit in quiet remembrance; give only an offering accepted by the family, temple, or pandal.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "ramakrishna-math-kali-puja-night-context"
+              ],
+              "why": "Prayer, devotional songs, and offerings are the stable official participation core without inventing formal ritual detail."
+            },
+            {
+              "instruction": "Receive prasad if offered, help respectfully, and leave or close according to the recognised organiser or household; do not assume an all-night vigil is required.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "Participation can be complete in its own scope without claiming the full night-long puja discipline."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family-, temple-, or public-puja-led participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kali-puja-safety-and-authority-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Family- or community-led evening",
+          "materials": [
+            {
+              "item": "The image, flowers, food, light, and prayer material already used by the home, temple, or pandal",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "Use the minimum form when the established list is unknown"
+              ]
+            },
+            {
+              "item": "Safe transport, crowd, children, elder, and flame arrangements",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "Join from home or a less crowded community setting"
+              ]
+            }
+          ],
+          "procedure_id": "bengal-kali-puja-participant-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "devam-kali-puja-safety-and-authority-boundary",
+            "ramakrishna-math-kali-puja-night-context"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm the setting's sequence, accepted offerings, start and closing expectations, and who leads the worship before participating.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja"
+              ],
+              "why": "The full sequence belongs to a living household, temple, or community authority."
+            },
+            {
+              "instruction": "Join its preparation, prayer, devotional songs, and offerings without adding a mantra, mudra, bali, fast, or tantric element that was not authorised.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "The official source supports these public devotional forms but not one universal esoteric procedure."
+            },
+            {
+              "instruction": "Keep every flame, incense source, crowd movement, food, and late-night journey safely managed, especially for children and elders.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "ramakrishna-math-kali-puja-night-context",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "Night participation and large public celebrations need explicit physical safety."
+            },
+            {
+              "instruction": "Follow the recognised arati, prasad, closing, or return-home practice and help leave the shared space orderly.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "The organiser or family, not a generic app, determines the close."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established temple or public-puja participation only",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kali-puja-safety-and-authority-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 90,
+          "form": "institutional_participation",
+          "label": "Priest-, family-, or temple-led full puja",
+          "materials": [
+            {
+              "item": "The exact image, altar, offerings, texts, instruments, and closing materials specified by the recognised guide",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "Participate through the minimum or standard form rather than reconstructing unknown requirements"
+              ]
+            },
+            {
+              "item": "A documented plan for flame, electrical, crowd, food, transport, and late-night safety",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "Scale down or join a safely managed public or home observance"
+              ]
+            }
+          ],
+          "procedure_id": "bengal-kali-puja-participant-content-v1-en-elaborate-v1",
+          "setting": "temple_participation",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "devam-bengal-kali-puja-date-fixture",
+            "devam-kali-puja-safety-and-authority-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Have the recognised priest, household practitioner, temple, or puja committee determine the full sankalpa, deity form, mantra, upachara, offering, music, timing, and closing sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-bengal-kali-puja-date-fixture"
+              ],
+              "why": "These details are tradition-specific and cannot be responsibly generated from broad festival descriptions."
+            },
+            {
+              "instruction": "Assist only in the role assigned to you and follow that authority's safety and participation rules; do not self-initiate tantric, bali, fasting, or vigil practices.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "A full Kali Puja can carry specialist ritual boundaries beyond an MVP household synthesis."
+            },
+            {
+              "instruction": "Complete the recognised closing, prasad, cleanup, and safe journey home without treating attendance length or ritual complexity as spiritual scoring.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "Devam supports devotion and community rather than gamifying austerity or esoteric complexity."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Use only familiar prayer, song, reading, or an offering accepted by the home, temple, or public-puja setting.",
+        "Formal mantra, consecration, tantric or initiatory practice, bali, homa, fasting, all-night vigil, and priest-led worship remain with qualified living authority.",
+        "Do not infer live venue schedules, crowd access, immersion, food handling, donations, or safe travel from this pack.",
+        "West India Lakshmi Puja and other Diwali traditions remain separate."
+      ],
+      "short_answer": "Use the separately resolved Bengal Shakta night for prayer to Mother Kali through the home, temple, or public-puja form you actually know. A newcomer can join with a safe light, a simple familiar offering, prayer or devotional song, and respectful participation. Formal priestly, tantric, mantra, bali, fasting, and night-vigil procedures require their own recognised authority and are not reconstructed here.",
+      "significance": {
+        "scope_note": "The sources establish regional identity and participation context, not one universal Bengali liturgy.",
+        "source_ids": [
+          "west-bengal-aasan-kali-puja",
+          "ramakrishna-math-kali-puja-night-context"
+        ],
+        "text": "In this bounded Bengal Shakta participation lane, Kali Puja—also called Shyama Puja or Mahanisha Puja—honours Goddess Kali through family, temple, or public-puja participation on the Kartik Amavasya night."
+      },
+      "title": "Kali Puja with home or community",
+      "typical_practices": [
+        {
+          "description": "The official regional portal names elaborate puja, devotional songs, prayers, offerings, decorations, and public celebration; Ramakrishna Math documents an institution-led night-long Kali Puja. The app supports respectful participation but does not reproduce liturgy or promise a live programme.",
+          "instructional": false,
+          "population_scope": "Bengal Shakta family, temple, and public-puja participants",
+          "practice_id": "bengal-kali-puja-home-temple-public-participation",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "ramakrishna-math-kali-puja-night-context",
+            "devam-kali-puja-safety-and-authority-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Home remembrance, temple attendance, and public-pandal participation have different leaders, materials, schedules, queues, and closes.",
+          "scope": "Participation setting",
+          "separate_lane_required": false,
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "devam-kali-puja-safety-and-authority-boundary"
+          ],
+          "variant_id": "home-temple-and-public-puja-authorities"
+        },
+        {
+          "difference": "The cited Ramakrishna Math night-long programme is one institution's practice and is not copied into home or public-pandal guidance.",
+          "scope": "Ramakrishna institutional practice",
+          "separate_lane_required": true,
+          "source_ids": [
+            "ramakrishna-math-kali-puja-night-context"
+          ],
+          "variant_id": "ramakrishna-institutional-form-distinct"
+        },
+        {
+          "difference": "Lineage, household, temple, tantric, initiatory, regional, and diaspora forms need their own authorities and remain open.",
+          "scope": "Other Bengal and Shakta traditions",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kali-puja-safety-and-authority-boundary"
+          ],
+          "variant_id": "other-shakta-lineages-remain-open"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "bengal-kali-strength-and-good-over-harm",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja"
+          ],
+          "summary": "पश्चिम बंगाल का AASAN पोर्टल काली को शक्ति, सामर्थ्य और अशुभ पर शुभ की विजय का प्रतीक बताता है। देवम इस वर्तमान आधिकारिक अर्थ को स्रोत-सम्बद्ध पर्व-वर्णन के रूप में रखता है, सत्यापित इतिहास या एकमात्र शाक्त व्याख्या के रूप में नहीं।",
+          "title": "शक्ति और अहित पर शुभ की विजय के रूप में काली",
+          "tradition_scope": "पश्चिम बंगाल का आधिकारिक सार्वजनिक-पूजा संदर्भ",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short Bengal Shakta remembrance or respectful visit",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kali-puja-safety-and-authority-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "सरल सम्मानपूर्ण सहभागिता",
+          "materials": [
+            {
+              "item": "सुरक्षित देखरेख वाला दीप या बिना लौ का प्रकाश",
+              "required": false,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "भौतिक प्रकाश के बिना शांत प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "एक फूल, फल, मिठाई या वहाँ स्वीकार की जाने वाली भेंट",
+              "required": false,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "नई सामग्री गढ़ने के बजाय सम्मानपूर्ण ध्यान या सेवा अर्पित करें"
+              ]
+            }
+          ],
+          "procedure_id": "bengal-kali-puja-participant-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-bengal-kali-puja-date-fixture",
+            "west-bengal-aasan-kali-puja",
+            "devam-kali-puja-safety-and-authority-boundary",
+            "ramakrishna-math-kali-puja-night-context"
+          ],
+          "steps": [
+            {
+              "instruction": "निर्धारित बंगाल शाक्त काली पूजा रात्रि लें और जानें कि आप घर, मंदिर या सार्वजनिक पूजा में जुड़ रहे हैं; उत्तर/पश्चिम लक्ष्मी पूजा-विधि न मिलाएँ।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-bengal-kali-puja-date-fixture"
+              ],
+              "why": "एक ही नागरिक तिथि होने पर भी पंचांग और विधि के मार्ग अलग हैं।"
+            },
+            {
+              "instruction": "स्वच्छ सम्मानपूर्ण स्थान तैयार करें, या समय पर पहुँचकर प्रवेश, जूते, फोटो, कतार और भेंट के स्थानीय नियम मानें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "आधिकारिक क्षेत्रीय संदर्भ में घर, मंदिर और सार्वजनिक पूजा सभी आते हैं।"
+            },
+            {
+              "instruction": "माँ काली की परिचित छोटी प्रार्थना करें, भक्ति-गीत में जुड़ें या मौन स्मरण करें; वही भेंट दें जो परिवार, मंदिर या पंडाल स्वीकार करता है।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "ramakrishna-math-kali-puja-night-context"
+              ],
+              "why": "प्रार्थना, गीत और भेंट औपचारिक विधि गढ़े बिना स्थिर सहभागिता-केंद्र हैं।"
+            },
+            {
+              "instruction": "प्रसाद मिले तो सम्मान से लें, सहायता करें और आयोजक या परिवार के अनुसार लौटें या समापन करें; पूरी रात जागना अनिवार्य न मानें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "पूर्ण रात्रि-विधि का दावा किए बिना सहभागिता अपने दायरे में पूर्ण हो सकती है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family-, temple-, or public-puja-led participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kali-puja-safety-and-authority-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "परिवार या समुदाय-निर्देशित संध्या",
+          "materials": [
+            {
+              "item": "घर, मंदिर या पंडाल में पहले से प्रचलित चित्र, फूल, भोजन, प्रकाश और प्रार्थना सामग्री",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "सूची अज्ञात हो तो सरल रूप लें"
+              ]
+            },
+            {
+              "item": "सुरक्षित यात्रा, भीड़, बच्चों, बुज़ुर्गों और लौ की व्यवस्था",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "घर या कम भीड़ वाले समुदाय में जुड़ें"
+              ]
+            }
+          ],
+          "procedure_id": "bengal-kali-puja-participant-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "devam-kali-puja-safety-and-authority-boundary",
+            "ramakrishna-math-kali-puja-night-context"
+          ],
+          "steps": [
+            {
+              "instruction": "जुड़ने से पहले वहाँ का क्रम, स्वीकृत भेंट, आरम्भ-समापन और पूजा-नेतृत्व जानें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja"
+              ],
+              "why": "पूर्ण क्रम जीवित घर, मंदिर या समुदाय का है।"
+            },
+            {
+              "instruction": "तैयारी, प्रार्थना, भक्ति-गीत और भेंट में जुड़ें; अनधिकृत मंत्र, मुद्रा, बलि, व्रत या तांत्रिक तत्व न जोड़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "आधिकारिक स्रोत सार्वजनिक भक्ति-रूप का समर्थन करता है, सार्वभौमिक गूढ़ विधि का नहीं।"
+            },
+            {
+              "instruction": "लौ, धूप, भीड़, भोजन और देर-रात यात्रा सुरक्षित रखें, विशेषकर बच्चों और बुज़ुर्गों के लिए।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "ramakrishna-math-kali-puja-night-context",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "रात्रि और बड़ी सार्वजनिक पूजा में शारीरिक सुरक्षा स्पष्ट होनी चाहिए।"
+            },
+            {
+              "instruction": "मान्य आरती, प्रसाद, समापन या घर-वापसी क्रम मानें और साझा स्थान व्यवस्थित छोड़ने में सहायता करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "समापन आयोजक या परिवार तय करता है, सामान्य ऐप नहीं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established temple or public-puja participation only",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kali-puja-safety-and-authority-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 90,
+          "form": "institutional_participation",
+          "label": "पुरोहित, परिवार या मंदिर-निर्देशित पूर्ण पूजा",
+          "materials": [
+            {
+              "item": "मान्य जानकार द्वारा बताई सटीक प्रतिमा, वेदी, भेंट, ग्रंथ, वाद्य और समापन सामग्री",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "अज्ञात आवश्यकताएँ बनाने के बजाय सरल या मानक सहभागिता लें"
+              ]
+            },
+            {
+              "item": "लौ, बिजली, भीड़, भोजन, यात्रा और देर-रात सुरक्षा की लिखित योजना",
+              "required": true,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "substitutions": [
+                "कम रूप लें या सुरक्षित सार्वजनिक/घरेलू पूजा में जुड़ें"
+              ]
+            }
+          ],
+          "procedure_id": "bengal-kali-puja-participant-content-v1-hi-elaborate-v1",
+          "setting": "temple_participation",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "devam-bengal-kali-puja-date-fixture",
+            "devam-kali-puja-safety-and-authority-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "मान्य पुरोहित, गृह-साधक, मंदिर या पूजा समिति से संकल्प, देवी-रूप, मंत्र, उपचार, भेंट, संगीत, समय और समापन तय कराएँ।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-bengal-kali-puja-date-fixture"
+              ],
+              "why": "ये परम्परा-विशिष्ट हैं और व्यापक उत्सव-वर्णन से जिम्मेदारीपूर्वक नहीं बनाए जा सकते।"
+            },
+            {
+              "instruction": "केवल दी गई भूमिका में सहायता करें और सुरक्षा व सहभागिता-नियम मानें; अपने-आप तांत्रिक, बलि, व्रत या जागरण साधना शुरू न करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "पूर्ण काली पूजा में विशेषज्ञ सीमाएँ हो सकती हैं।"
+            },
+            {
+              "instruction": "मान्य समापन, प्रसाद, सफाई और सुरक्षित घर-वापसी पूरी करें; समय या जटिलता को आध्यात्मिक अंक न बनाएँ।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-aasan-kali-puja",
+                "devam-kali-puja-safety-and-authority-boundary"
+              ],
+              "why": "देवम भक्ति और समुदाय का समर्थन करता है, तप या गूढ़ जटिलता का गेमीकरण नहीं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "केवल परिचित प्रार्थना, गीत, पाठ या घर, मंदिर अथवा सार्वजनिक पूजा में स्वीकार्य अर्पण लें।",
+        "औपचारिक मंत्र, प्राण-प्रतिष्ठा, तांत्रिक या दीक्षित साधना, बलि, होम, उपवास, रात्रि-जागरण और पुरोहित-नेतृत्व वाली पूजा योग्य जीवित प्रामाणिकता के पास रहती है।",
+        "इस पैक से जीवंत समय, भीड़-प्रवेश, विसर्जन, भोजन-व्यवस्था, दान या सुरक्षित यात्रा का अनुमान न लगाएँ।",
+        "पश्चिम भारत लक्ष्मी पूजा और अन्य दिवाली परम्पराएँ अलग हैं।"
+      ],
+      "short_answer": "अलग से निर्धारित बंगाल शाक्त रात्रि में उसी घर, मंदिर या सार्वजनिक पूजा-रूप से माँ काली की प्रार्थना करें जिसे आप वास्तव में जानते हैं। नया सहभागी सुरक्षित प्रकाश, परिचित सरल भेंट, प्रार्थना या भक्ति-गीत और सम्मानपूर्ण सहभागिता से जुड़ सकता है। औपचारिक पुरोहित, तांत्रिक, मंत्र, बलि, व्रत और रात्रि-जागरण की विधियाँ मान्य जानकार के बिना यहाँ नहीं बनाई गई हैं।",
+      "significance": {
+        "scope_note": "स्रोत क्षेत्रीय पहचान और सहभागिता-संदर्भ बताते हैं, एक सार्वभौमिक बंगाली पूजा-विधान नहीं।",
+        "source_ids": [
+          "west-bengal-aasan-kali-puja",
+          "ramakrishna-math-kali-puja-night-context"
+        ],
+        "text": "इस सीमित बंगाल शाक्त सहभागिता-धारा में काली पूजा—जिसे श्यामा पूजा या महानिशा पूजा भी कहा जाता है—कार्तिक अमावस्या की रात्रि में परिवार, मंदिर या सार्वजनिक पूजा की सहभागिता से देवी काली का सम्मान करती है।"
+      },
+      "title": "घर या समुदाय के साथ काली पूजा",
+      "typical_practices": [
+        {
+          "description": "आधिकारिक क्षेत्रीय पोर्टल विस्तृत पूजा, भक्ति-गीत, प्रार्थना, अर्पण, सजावट और सार्वजनिक उत्सव बताता है; रामकृष्ण मठ संस्था-नेतृत्व वाली रात्रि-भर काली पूजा का वर्णन करता है। ऐप सम्मानजनक सहभागिता देता है, विधि या जीवंत कार्यक्रम की गारंटी नहीं।",
+          "instructional": false,
+          "population_scope": "बंगाल शाक्त परिवार, मंदिर और सार्वजनिक-पूजा सहभागी",
+          "practice_id": "bengal-kali-puja-home-temple-public-participation",
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "ramakrishna-math-kali-puja-night-context",
+            "devam-kali-puja-safety-and-authority-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "गृह-स्मरण, मंदिर-दर्शन और सार्वजनिक पंडाल सहभागिता के नेता, सामग्री, समय, कतार और समापन अलग होते हैं।",
+          "scope": "सहभागिता का स्थान",
+          "separate_lane_required": false,
+          "source_ids": [
+            "west-bengal-aasan-kali-puja",
+            "devam-kali-puja-safety-and-authority-boundary"
+          ],
+          "variant_id": "home-temple-and-public-puja-authorities"
+        },
+        {
+          "difference": "उद्धृत रामकृष्ण मठ का रात्रि-भर कार्यक्रम एक संस्था की रीति है; उसे घर या सार्वजनिक पंडाल के मार्ग में नहीं मिलाया जाता।",
+          "scope": "रामकृष्ण संस्थागत रीति",
+          "separate_lane_required": true,
+          "source_ids": [
+            "ramakrishna-math-kali-puja-night-context"
+          ],
+          "variant_id": "ramakrishna-institutional-form-distinct"
+        },
+        {
+          "difference": "वंश, घर, मंदिर, तांत्रिक, दीक्षित, क्षेत्रीय और प्रवासी रूपों के अपने प्रामाणिक स्रोत चाहिए और वे खुले हैं।",
+          "scope": "अन्य बंगाल और शाक्त परम्पराएँ",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kali-puja-safety-and-authority-boundary"
+          ],
+          "variant_id": "other-shakta-lineages-remain-open"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "bengal-kali-puja"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "faa675ee7ece5ed1513f75b49fef6db2ab0f9b0ea324f58a40990864c46c165c",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/kali-puja-kolkata-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-bengal-kali-puja-date-fixture",
+      "source_role": "Deterministic Kolkata date decision; not ritual authority",
+      "title": "Devam Bengal Kali Puja Kolkata 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://aasan.wb.gov.in/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 33705,
+        "response_sha256": "e141c492c1a5bdc008ff71ac32889028ef17c0ef7bd9dd88563775ed47b452ed",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Government of West Bengal",
+      "rights_lane": "citation_only",
+      "source_id": "west-bengal-aasan-kali-puja",
+      "source_role": "Official regional identity, aliases, public-puja, song, prayer, and offering context; not a complete liturgy",
+      "title": "AASAN — Kali Puja",
+      "url": "https://aasan.wb.gov.in/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://varanasimath.rkmm.org/festivals-celebrations",
+        "observed_at": "2026-08-07",
+        "response_bytes": 130731,
+        "response_sha256": "810240b3e69b1b769d5e9bac16651afff127411f355729398e24ecd49fc2bf54",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Ramakrishna Advaita Ashrama, Varanasi",
+      "rights_lane": "citation_only",
+      "source_id": "ramakrishna-math-kali-puja-night-context",
+      "source_role": "Official living-institution Kartik Amavasya night context; not Bengal-wide or household authority",
+      "title": "Festivals & Celebrations — Kali Puja",
+      "url": "https://varanasimath.rkmm.org/festivals-celebrations"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-kali-puja-safety-and-authority-boundary",
+      "source_role": "Editorial safety and scope boundary; not scripture or ritual authority",
+      "title": "Devam Kali Puja specialist-practice, crowd, food, flame, and authority boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-bengal-kali-puja-participation-v1"
+  ]
+}

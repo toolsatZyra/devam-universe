@@ -1,0 +1,90 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-bandi-chhor-sgpc-participation-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "bandi-chhor-divas-sgpc",
+  "scope": {
+    "region_codes": ["sikh-punjab"],
+    "tradition_codes": ["sikh-sgpc"],
+    "language_codes": ["en", "hi"],
+    "sgpc_2026_date_fixture_required": true,
+    "family_or_gurdwara_participation_only": true,
+    "local_gurdwara_or_family_programme_overrides_generic_sequence": true,
+    "hindu_and_jain_diwali_lanes_not_merged": true
+  },
+  "sources": [
+    {"source_id": "devam-bandi-chhor-date-fixture", "title": "Devam Bandi Chhor Amritsar 2026 date evidence fixture", "publisher": "Devam", "url": null, "source_class": "official_sgpc_calendar_date_and_identity_fixture", "rights_lane": "derivative_allowed", "artifact_sha256": "01536637248ca6fe97b426ffc1bc6e42f7e33e611c0d461e59f40a46b6573a7b"},
+    {"source_id": "sgpc-bandi-chhor-identity", "title": "SGPC Bandi Chhor Divas distinct Sikh identity statement", "publisher": "Shiromani Gurdwara Parbandhak Committee", "url": "https://sgpc.net/union-culture-ministrys-removal-of-bandi-chhor-diwas-post-unfortunate-harjinder-singh-dhami/", "source_class": "official_sikh_identity_and_history_context_not_complete_programme", "rights_lane": "reference_only"},
+    {"source_id": "baru-sahib-bandi-chhor-history", "title": "Bandi Chhor Divas: Guru Hargobind and the 52 rulers", "publisher": "The Kalgidhar Trust / Baru Sahib", "url": "https://barusahib.org/general/bandichhod-diwas-di-lakh-lakh-wadhai/", "source_class": "sikh_institution_history_kirtan_and_langar_context_not_complete_vidhi", "rights_lane": "reference_only"},
+    {"source_id": "devam-bandi-chhor-safety-boundary", "title": "Devam gurdwara, flame, food, donation, and liturgy boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_scope_boundary_not_sikh_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "bandi-chhor-sgpc-participation-en-v1",
+      "language_code": "en",
+      "title": "Bandi Chhor Divas remembrance and participation",
+      "summary": "Remember Guru Hargobind Sahib's release from Gwalior Fort together with 52 detained rulers, and reflect on freedom that is not accepted only for oneself. Choose one act of solidarity, service, or support for someone whose freedom or dignity is constrained. Join kirtan, langar, prayer, or another programme only through your established gurdwara or family; this guide does not invent a universal Sikh liturgy.",
+      "family_practice_note": "Tell Sarthi which gurdwara, Sikh institution, family calendar, or diaspora community you follow and whether you are at home or joining a programme. Follow local instructions for entry, head covering, shoes, seating, kirtan, paath, ardas, Hukamnama, langar, seva, lights, and closing. Ask rather than assuming.",
+      "context_prompts": ["Which gurdwara, Sikh institution, family, or diaspora calendar do you follow?", "Will you remember the day at home or join an established gurdwara programme?", "Which sakhi, kirtan, paath, ardas, langar, or seva is already familiar in your community?", "Do you need a short, flame-free, food-free, mobility-safe, sensory-considerate, or child-friendly form?"],
+      "tiers": [
+        {"tier": "minimum", "label": "Freedom with others", "estimated_minutes": 10, "materials": [{"item": "A quiet place", "substitutions": ["Pause wherever you are; no light, food, text, donation, or purchase is required"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Remember Guru Hargobind Sahib leaving Gwalior Fort with 52 detained rulers rather than accepting freedom only for himself.", "why": "The Sikh institutional sources establish the event and its collective-liberation identity.", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history", "sgpc-bandi-chhor-identity"]},
+          {"ordinal": 2, "instruction": "Reflect briefly on freedom joined with courage, justice, dignity, and responsibility for others.", "why": "This keeps the remembrance connected to its source-grounded meaning without inventing a prayer.", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history"]},
+          {"ordinal": 3, "instruction": "Choose one practical act of solidarity, fair support, or service and close without promising protection, merit, or success.", "why": "The historical remembrance becomes actionable while spiritual outcomes remain unclaimed.", "optional": false, "source_ids": ["devam-bandi-chhor-safety-boundary"]}
+        ]},
+        {"tier": "standard", "label": "Family remembrance or gurdwara participation", "estimated_minutes": 30, "materials": [{"item": "Only a familiar family sakhi or the established gurdwara programme", "substitutions": ["Use the material-free minimum reflection or listen to an already-known recording when appropriate"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Confirm the official 8 November SGPC date and ask which home or gurdwara programme your community actually keeps.", "why": "The date is resolved, but no universal programme follows from a calendar entry.", "optional": false, "source_ids": ["devam-bandi-chhor-date-fixture", "devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 2, "instruction": "At home, share the familiar Guru Hargobind and 52-rulers sakhi; at a gurdwara, follow posted and spoken directions for prayer, kirtan, seating, and participation.", "why": "The historical core is supported, while living gurdwara authority directs actual practice.", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history", "devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Join only the seva or langar role assigned or welcomed by organisers, then make one realistic commitment to dignity or freedom for others.", "why": "Participation should be useful, safe, and coordinated rather than self-appointed.", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history", "devam-bandi-chhor-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "Established gurdwara-led Bandi Chhor programme", "estimated_minutes": 60, "materials": [{"item": "Only materials, texts, and food-handling roles directed by the established gurdwara or family lead", "substitutions": ["Use the standard form rather than reconstructing an unknown paath, ardas, Hukamnama, kirtan, langar, light, or procession"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Let the established gurdwara or family lead define paath, kirtan, ardas, Hukamnama, langar, seva, lighting, timings, and the close.", "why": "The sources do not supply one universal programme for the app to reproduce.", "optional": false, "source_ids": ["sgpc-bandi-chhor-identity", "devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Follow local access, food hygiene, crowd, child, mobility, sensory, flame, and organiser instructions; do not independently light candles, use fireworks, handle langar, or start a donation collection.", "why": "An established programme needs coordinated safety and community authority.", "optional": false, "source_ids": ["devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Complete the community's established close and continue one accountable act of seva or solidarity beyond the festival.", "why": "This preserves the programme's authority and the remembrance's actionable collective focus.", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history"]}
+        ]}
+      ]
+    },
+    {
+      "guide_id": "bandi-chhor-sgpc-participation-hi-v1",
+      "language_code": "hi",
+      "title": "बंदी छोड़ दिवस स्मरण और सहभागिता",
+      "summary": "गुरु हरगोबिंद साहिब के ग्वालियर किले से 52 बंदी राजाओं के साथ मुक्त होने का स्मरण करें और ऐसी स्वतंत्रता पर विचार करें जो केवल अपने लिए स्वीकार नहीं की गई। किसी व्यक्ति की स्वतंत्रता या गरिमा के समर्थन में सेवा, साथ या न्याय का एक काम चुनें। कीर्तन, लंगर, प्रार्थना या कार्यक्रम में केवल अपने स्थापित गुरुद्वारे या परिवार के माध्यम से जुड़ें; यह मार्गदर्शिका कोई सार्वभौमिक सिख विधि नहीं गढ़ती।",
+      "family_practice_note": "सारथी को अपना गुरुद्वारा, सिख संस्था, पारिवारिक पंचांग या प्रवासी समुदाय और घर/गुरुद्वारा सन्दर्भ बताएं। प्रवेश, सिर ढकने, जूते, बैठने, कीर्तन, पाठ, अरदास, हुकमनामा, लंगर, सेवा, प्रकाश और समापन के लिए स्थानीय निर्देश मानें—अनुमान न लगाएं।",
+      "context_prompts": ["आप किस गुरुद्वारे, सिख संस्था, परिवार या प्रवासी पंचांग का पालन करते हैं?", "आप घर पर स्मरण करेंगे या स्थापित गुरुद्वारा कार्यक्रम में जाएंगे?", "आपके समुदाय में कौन-सी साखी, कीर्तन, पाठ, अरदास, लंगर या सेवा परिचित है?", "क्या आपको छोटा, लौ-रहित, भोजन-रहित, गतिशीलता-सुलभ, संवेदन-सुलभ या बच्चों के लिए सरल रूप चाहिए?"],
+      "tiers": [
+        {"tier": "minimum", "label": "दूसरों के साथ स्वतंत्रता", "estimated_minutes": 10, "materials": [{"item": "एक शांत स्थान", "substitutions": ["जहाँ हों वहीं रुकें; प्रकाश, भोजन, पाठ, दान या खरीद आवश्यक नहीं"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "गुरु हरगोबिंद साहिब का स्मरण करें जिन्होंने केवल अपनी मुक्ति स्वीकार करने के बजाय 52 बंदी राजाओं के साथ ग्वालियर किला छोड़ा।", "why": "सिख संस्थागत स्रोत इस घटना और सामूहिक मुक्ति की पहचान को स्थापित करते हैं।", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history", "sgpc-bandi-chhor-identity"]},
+          {"ordinal": 2, "instruction": "स्वतंत्रता को साहस, न्याय, गरिमा और दूसरों की जिम्मेदारी के साथ जोड़कर कुछ क्षण विचार करें।", "why": "यह प्रार्थना गढ़े बिना स्रोत-आधारित अर्थ से स्मरण को जोड़ता है।", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history"]},
+          {"ordinal": 3, "instruction": "साथ, न्यायपूर्ण सहायता या सेवा का एक व्यावहारिक काम चुनें और सुरक्षा, पुण्य या सफलता का वादा किए बिना समापन करें।", "why": "इससे ऐतिहासिक स्मरण जीवनोपयोगी बनता है और आध्यात्मिक फल का दावा नहीं होता।", "optional": false, "source_ids": ["devam-bandi-chhor-safety-boundary"]}
+        ]},
+        {"tier": "standard", "label": "पारिवारिक स्मरण या गुरुद्वारा सहभागिता", "estimated_minutes": 30, "materials": [{"item": "केवल परिवार की परिचित साखी या स्थापित गुरुद्वारा कार्यक्रम", "substitutions": ["बिना सामग्री का न्यूनतम चिंतन या उपयुक्त परिचित रिकॉर्डिंग लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "SGPC की 8 नवम्बर की आधिकारिक तिथि की पुष्टि करके पूछें कि परिवार या गुरुद्वारा वास्तव में कौन-सा कार्यक्रम रखता है।", "why": "तिथि तय है, पर पंचांग-प्रविष्टि से कोई सार्वभौमिक कार्यक्रम नहीं बनता।", "optional": false, "source_ids": ["devam-bandi-chhor-date-fixture", "devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 2, "instruction": "घर में परिचित गुरु हरगोबिंद और 52 राजाओं की साखी साझा करें; गुरुद्वारे में प्रार्थना, कीर्तन, बैठने और सहभागिता के लिखित व मौखिक निर्देश मानें।", "why": "इतिहास का मूल समर्थित है, और वास्तविक पालन का नेतृत्व जीवित गुरुद्वारा परम्परा करती है।", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history", "devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 3, "instruction": "केवल आयोजकों द्वारा बताई या स्वीकार की सेवा/लंगर भूमिका लें और दूसरों की गरिमा या स्वतंत्रता के लिए एक यथार्थ संकल्प रखें।", "why": "सहभागिता स्वयं घोषित नहीं, उपयोगी, सुरक्षित और समन्वित होनी चाहिए।", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history", "devam-bandi-chhor-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "स्थापित गुरुद्वारा-नेतृत्व वाला बंदी छोड़ कार्यक्रम", "estimated_minutes": 60, "materials": [{"item": "केवल स्थापित गुरुद्वारा या परिवार द्वारा बताई सामग्री, पाठ और भोजन-सेवा भूमिका", "substitutions": ["अज्ञात पाठ, अरदास, हुकमनामा, कीर्तन, लंगर, प्रकाश या यात्रा गढ़ने की जगह मानक रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "पाठ, कीर्तन, अरदास, हुकमनामा, लंगर, सेवा, प्रकाश, समय और समापन का निर्णय स्थापित गुरुद्वारा या परिवार को करने दें।", "why": "स्रोत ऐप के लिए एक सार्वभौमिक कार्यक्रम नहीं देते।", "optional": false, "source_ids": ["sgpc-bandi-chhor-identity", "devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 2, "instruction": "स्थानीय प्रवेश, भोजन-सफाई, भीड़, बच्चों, गतिशीलता, संवेदन, अग्नि और आयोजक निर्देश मानें; स्वयं मोमबत्ती, पटाखे, लंगर-कार्य या दान-संग्रह आरम्भ न करें।", "why": "स्थापित कार्यक्रम में समन्वित सुरक्षा और समुदाय का अधिकार आवश्यक है।", "optional": false, "source_ids": ["devam-bandi-chhor-safety-boundary"]},
+          {"ordinal": 3, "instruction": "समुदाय के स्थापित समापन को पूरा करके त्योहार के बाद भी सेवा या साथ का एक जवाबदेह काम जारी रखें।", "why": "इससे कार्यक्रम का अधिकार और स्मरण का सामूहिक जीवनोपयोगी अर्थ दोनों सुरक्षित रहते हैं।", "optional": false, "source_ids": ["baru-sahib-bandi-chhor-history"]}
+        ]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "guru_hargobind_52_rulers_and_collective_freedom_supported": true,
+    "material_free_and_flame_free_fallback_supported": true,
+    "formal_paath_kirtan_ardas_hukamnama_or_gurdwara_programme_included": false,
+    "langar_preparation_or_food_handling_prescribed": false,
+    "real_lights_candles_or_fireworks_required": false,
+    "donation_purchase_or_special_clothing_required": false,
+    "spiritual_merit_protection_or_success_guaranteed": false,
+    "hindu_diwali_merged": false,
+    "jain_diwali_merged": false,
+    "one_universal_sikh_procedure_claimed": false,
+    "all_sikh_institution_family_and_diaspora_variants_complete": false
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "contract": "DEVAM_BOUNDED_HARTALIKA_TEEJ_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-hartalika-teej-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "candidate_civil_dates": [
+      "2026-09-13",
+      "2026-09-14"
+    ],
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-hartalika-vrata-decision",
+      "title": "Nirnayasindhu - Marathi translation, Mumbai 1865",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [
+        150
+      ],
+      "printed_page": "133",
+      "evidence_role": "historical_bhadrapada_shukla_tritiya_later_day_even_when_briefly_present_after_sunrise",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-hartalika-teej-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/teej/hartalika-teej-date-time.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T18:40:08Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/festivals/teej/hartalika-teej-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 66646,
+      "response_sha256": "90f7b062dcd887fb0eb0c2922bef3ae281e4cf378ec5f680c4f3bc0c69a915ae",
+      "strict_utf8": true,
+      "evidence_role": "current_practitioner_observance_identity_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "historical_observation": {
+    "source_heading": "Haritalika-vrata-nirnaya",
+    "bhadrapada_shukla_tritiya_context_present": true,
+    "later_day_when_tritiya_is_briefly_present_after_sunrise": true,
+    "ritual_instructions_not_promoted": true
+  },
+  "modern_observation": {
+    "selected_civil_date": "2026-09-14",
+    "tritiya_tithi_begins_local": "2026-09-13T07:08:00+05:30",
+    "tritiya_tithi_ends_local": "2026-09-14T07:06:00+05:30",
+    "pratahkala_interval_begins_local": "2026-09-14T06:05:00+05:30",
+    "pratahkala_interval_ends_local": "2026-09-14T07:06:00+05:30"
+  },
+  "rule_contract": {
+    "target_tithi": "Tritiya",
+    "target_paksha": "shukla",
+    "selection": "select_the_later_candidate_day_with_bhadrapada_shukla_tritiya_at_local_sunrise",
+    "both_candidate_sunrises_qualify": "prefer_later_day",
+    "neither_candidate_sunrise_qualifies": "fail_closed",
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "outcome_claims_resolved": false,
+    "gowri_habba_equivalence_universal": false
+  },
+  "denials": {
+    "complete_hartalika_tradition_coverage": false,
+    "complete_north_india_regional_coverage": false,
+    "complete_west_india_regional_coverage": false,
+    "karnataka_andhra_tamil_gowri_habba_equivalence": false,
+    "fasting_procedure_ready": false,
+    "puja_procedure_ready": false,
+    "marital_or_progeny_outcome_claim_ready": false,
+    "universal_india_date_claim": false,
+    "source_text_publication_ready": false,
+    "complete_september_december_ritual_layer": false
+  }
+}

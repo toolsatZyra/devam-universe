@@ -1,0 +1,85 @@
+{
+  "contract": "DEVAM_BOUNDED_KOJAGARA_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-kojagara-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "candidate_civil_dates": [
+      "2026-10-25",
+      "2026-10-26"
+    ],
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "shakta-bengal"
+    ],
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-ashvayuja-kojagari",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [
+        208,
+        209
+      ],
+      "evidence_role": "historical_ashvina_purnima_night_vigil_and_kojagari_context",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-kojagara-2026",
+      "url": "https://www.drikpanchang.com/festivals/kojagara/kojagara-puja-date-time.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T18:20:56Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/festivals/kojagara/kojagara-puja-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 78509,
+      "response_sha256": "d0d9099a4b419a4544080ec6b652398bc37eb461f9f79ffce1782a960ddb7fac",
+      "strict_utf8": true,
+      "evidence_role": "current_practitioner_nishita_rule_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "historical_observation": {
+    "source_heading": "Ashvayuja decision section",
+    "ashvina_purnima_context_present": true,
+    "kojagari_night_vigil_present": true,
+    "page_209_transitions_to_kartika": true
+  },
+  "modern_observation": {
+    "selected_civil_date": "2026-10-25",
+    "kojagara_nishita_start_local": "2026-10-25T23:40:00+05:30",
+    "kojagara_nishita_end_local": "2026-10-26T00:31:00+05:30",
+    "moonrise_local": "2026-10-25T17:00:00+05:30",
+    "purnima_tithi_begins_local": "2026-10-25T11:55:00+05:30",
+    "purnima_tithi_ends_local": "2026-10-26T09:41:00+05:30",
+    "selection_statement_present": "select the day on which Purnima prevails during Nishita"
+  },
+  "rule_contract": {
+    "target_tithi": "Purnima",
+    "target_paksha": "shukla",
+    "selection": "select_only_when_exactly_one_candidate_civil_night_has_purnima_overlap_with_nishita",
+    "nishita_window": "eighth_of_fifteen_equal_muhurtas_from_local_sunset_to_next_local_sunrise",
+    "both_candidates_overlap": "fail_closed",
+    "neither_candidate_overlaps": "fail_closed",
+    "separate_named_purnima_calendar_day": true,
+    "puja_muhurta_calculated": false,
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "night_vigil_procedure_resolved": false
+  },
+  "denials": {
+    "complete_sharad_purnima_practice": false,
+    "complete_kojagara_puja_vidhi": false,
+    "complete_bengal_lakshmi_puja": false,
+    "complete_regional_variants": false,
+    "universal_india_rule": false,
+    "public_source_text": false,
+    "fasting_guidance": false,
+    "health_or_medicinal_moonlight_claims": false,
+    "guaranteed_wealth_outcomes": false,
+    "complete_september_december_layer": false
+  }
+}

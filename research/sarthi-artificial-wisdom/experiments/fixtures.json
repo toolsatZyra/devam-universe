@@ -1,0 +1,211 @@
+{
+  "documents": [
+    {
+      "id": "bengal_ashtami_context",
+      "kind": "festival_context",
+      "geography": "bengal",
+      "tradition": "shakta-bengal",
+      "text": "Ashtami Durga Puja Bengal Kolkata household and public participation context; anjali and Sandhi Puja remain institution or family directed."
+    },
+    {
+      "id": "karnataka_saraswati_procedure",
+      "kind": "procedure",
+      "geography": "karnataka",
+      "tradition": "smarta-south-india",
+      "text": "Ashtami Navaratri Saraswati Puja Karnataka household procedure with books, learning, materials, ordered steps and family variants."
+    },
+    {
+      "id": "west_lakshmi_procedure",
+      "kind": "procedure",
+      "geography": "west-india",
+      "tradition": "smarta-west-india",
+      "text": "Diwali Lakshmi Puja household vidhi West India materials timing preparation steps closing and substitutions."
+    },
+    {
+      "id": "jain_diwali_reflection",
+      "kind": "reflection",
+      "geography": "india",
+      "tradition": "jain-umbrella",
+      "text": "Diwali Jain Mahavira liberation Pavapuri inner light ahimsa anekantavada self effort and restraint reflection."
+    },
+    {
+      "id": "baps_kali_chaudas",
+      "kind": "procedure",
+      "geography": "gujarat",
+      "tradition": "swaminarayan-baps",
+      "text": "Kali Chaudas Gujarat BAPS Hanuman remembrance mandir family participation on the BAPS calendar lane."
+    },
+    {
+      "id": "maharashtra_naraka",
+      "kind": "procedure",
+      "geography": "maharashtra",
+      "tradition": "smarta-west-india",
+      "text": "Kali Chaudas Naraka Chaturdashi Maharashtra Smarta early morning household bath remembrance family procedure."
+    },
+    {
+      "id": "iskcon_janmashtami",
+      "kind": "applicability",
+      "geography": "delhi",
+      "tradition": "vaishnava-iskcon",
+      "text": "Krishna Janmashtami Delhi date applicability Nishita ISKCON Vaishnava lane and parana boundary."
+    },
+    {
+      "id": "smarta_janmashtami",
+      "kind": "applicability",
+      "geography": "delhi",
+      "tradition": "smarta-north-india",
+      "text": "Krishna Janmashtami Delhi date applicability Nishita Smarta North India lane; same civil date does not prove rule equivalence."
+    },
+    {
+      "id": "ganesha_passage",
+      "kind": "passage",
+      "geography": "none",
+      "tradition": "source-text",
+      "text": "Ganapatyatharvashirsha Sanskrit passage unit nine exact source coordinate and authorised text."
+    },
+    {
+      "id": "ganesha_claim",
+      "kind": "claim",
+      "geography": "none",
+      "tradition": "devam-synthesis",
+      "text": "Ganapatyatharvashirsha unit nine bilingual claim with evidence link; this paraphrase is not the exact passage."
+    },
+    {
+      "id": "family_holiday_case",
+      "kind": "case",
+      "geography": "synthetic",
+      "tradition": "evaluation-only",
+      "text": "Siblings argue about a family holiday and travel while caring for a parent; one wants a new city and family harmony."
+    },
+    {
+      "id": "shared_stewardship_case",
+      "kind": "case",
+      "geography": "synthetic",
+      "tradition": "evaluation-only",
+      "text": "Two stewards share a long obligation to a dependent person while one faces a livelihood relocation; power is asymmetric and the decision is hard to reverse."
+    },
+    {
+      "id": "duty_pattern",
+      "kind": "pattern",
+      "geography": "scoped",
+      "tradition": "devam-synthesis",
+      "text": "A duty conflict should separate the commitment from one assumed method of fulfilling it; examine affected people, alternatives, reversibility and long term consequences."
+    },
+    {
+      "id": "duty_countercase",
+      "kind": "counterexample",
+      "geography": "synthetic",
+      "tradition": "evaluation-only",
+      "text": "A promise was used coercively to demand silence about harm; preserving the literal promise would endanger another person."
+    },
+    {
+      "id": "competing_interpretation",
+      "kind": "interpretation",
+      "geography": "scoped",
+      "tradition": "named-reading",
+      "text": "A competing reading emphasises that role duty is context bound and does not erase other obligations or consequences."
+    }
+  ],
+  "scope_queries": [
+    {
+      "id": "q1",
+      "query": "What should I do for Ashtami at home in Bengal?",
+      "filters": {"geography": "bengal", "tradition": "shakta-bengal", "kind": "festival_context"},
+      "gold": "bengal_ashtami_context"
+    },
+    {
+      "id": "q2",
+      "query": "Give me the Saraswati Puja procedure for Ashtami in Karnataka",
+      "filters": {"geography": "karnataka", "tradition": "smarta-south-india", "kind": "procedure"},
+      "gold": "karnataka_saraswati_procedure"
+    },
+    {
+      "id": "q3",
+      "query": "A Jain Diwali reflection about liberation and restraint",
+      "filters": {"geography": "india", "tradition": "jain-umbrella", "kind": "reflection"},
+      "gold": "jain_diwali_reflection"
+    },
+    {
+      "id": "q4",
+      "query": "What is the BAPS Kali Chaudas family participation lane in Gujarat?",
+      "filters": {"geography": "gujarat", "tradition": "swaminarayan-baps", "kind": "procedure"},
+      "gold": "baps_kali_chaudas"
+    },
+    {
+      "id": "q5",
+      "query": "Which Janmashtami applicability rule does ISKCON use in Delhi?",
+      "filters": {"geography": "delhi", "tradition": "vaishnava-iskcon", "kind": "applicability"},
+      "gold": "iskcon_janmashtami"
+    },
+    {
+      "id": "q6",
+      "query": "Show the exact Sanskrit passage for Ganapatyatharvashirsha unit nine",
+      "filters": {"geography": "none", "tradition": "source-text", "kind": "passage"},
+      "gold": "ganesha_passage"
+    }
+  ],
+  "guidance_queries": [
+    {
+      "id": "g1",
+      "query": "My sibling and I share care for a dependent parent, but I may relocate for work. Help me weigh duty, family harmony and long-term consequences.",
+      "required_kinds": ["case", "pattern", "counterexample", "interpretation"]
+    },
+    {
+      "id": "g2",
+      "query": "A promise is being used to pressure me to hide harm. Help me think about duty and consequences without blindly agreeing.",
+      "required_kinds": ["case", "pattern", "counterexample", "interpretation"]
+    }
+  ],
+  "analogy": {
+    "query": "My sibling and I disagree about moving to a new city before a family holiday. Our parent needs care, I have a job opportunity, and I want family harmony.",
+    "target_features": {
+      "relationships": ["siblings", "shared_stewardship"],
+      "values": ["care", "livelihood", "fairness"],
+      "constraints": ["dependent_person", "relocation", "asymmetry"],
+      "affected": ["self", "sibling", "dependent_parent"],
+      "reversibility": ["low"]
+    },
+    "candidates": [
+      {
+        "id": "family_holiday_case",
+        "features": {
+          "relationships": ["siblings"],
+          "values": ["harmony"],
+          "constraints": ["holiday"],
+          "affected": ["self", "sibling", "parent"],
+          "reversibility": ["high"]
+        }
+      },
+      {
+        "id": "shared_stewardship_case",
+        "features": {
+          "relationships": ["siblings", "shared_stewardship"],
+          "values": ["care", "livelihood", "fairness"],
+          "constraints": ["dependent_person", "relocation", "asymmetry"],
+          "affected": ["self", "sibling", "dependent_parent"],
+          "reversibility": ["low"]
+        }
+      }
+    ]
+  },
+  "clarification": [
+    {
+      "scenario": "What should I do for Ashtami?",
+      "variables": {
+        "region": ["bengal_lane", "karnataka_lane"],
+        "tradition": ["shakta_lane", "smarta_lane"],
+        "language": ["same_lane_english", "same_lane_hindi"],
+        "nickname": ["same_lane", "same_lane"]
+      }
+    },
+    {
+      "scenario": "Which Janmashtami date and practice apply?",
+      "variables": {
+        "sampradaya": ["iskcon_lane", "smarta_lane"],
+        "location": ["delhi_calculation", "chennai_calculation"],
+        "preferred_answer_length": ["same_lane_short", "same_lane_long"],
+        "favourite_story": ["same_lane", "same_lane"]
+      }
+    }
+  ]
+}

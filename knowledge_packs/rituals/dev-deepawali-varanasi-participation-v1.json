@@ -1,0 +1,119 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-dev-deepawali-varanasi-participation-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "dev-deepawali-varanasi",
+  "scope": {
+    "region_codes": ["kashi-varanasi"],
+    "tradition_codes": ["regional-kashi-varanasi"],
+    "language_codes": ["en", "hi"],
+    "varanasi_2026_date_fixture_required": true,
+    "current_local_authority_or_organizer_overrides_generic_public_event_guidance": true,
+    "water_boat_firework_and_crowd_operations_excluded": true
+  },
+  "sources": [
+    {"source_id": "devam-dev-deepawali-date-fixture", "title": "Devam Varanasi Dev Deepawali 2026 evidence fixture", "publisher": "Devam", "url": null, "source_class": "bounded_date_identity_and_variant_fixture", "rights_lane": "derivative_allowed", "artifact_sha256": "84fb6f87eedb403c354312a414f6073b24b8a378c979e9da1a9b02f13921f1e8"},
+    {"source_id": "incredible-india-dev-deepawali-identity", "title": "Varanasi Dev Deepawali full-moon identity and story context", "publisher": "Ministry of Tourism, Government of India", "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/10-unmissable-travel-and-food-experiences", "source_class": "official_identity_and_story_variant_not_ritual_authority", "rights_lane": "reference_only"},
+    {"source_id": "incredible-india-dev-deepawali-ghats", "title": "Varanasi Dev Deepavali public-festival context", "publisher": "Ministry of Tourism, Government of India", "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi", "source_class": "official_ghat_lamp_and_public_festival_context_not_safety_or_vidhi_authority", "rights_lane": "reference_only"},
+    {"source_id": "utsav-india-dev-deepawali", "title": "Dev Deepawali", "publisher": "Ministry of Tourism, Government of India / Uttar Pradesh Tourism", "url": "https://utsav.gov.in/public/view-event/dev-deepawali-1", "source_class": "official_recurring_event_context_not_2026_operations_or_vidhi_authority", "rights_lane": "reference_only"},
+    {"source_id": "devam-dev-deepawali-safety-boundary", "title": "Devam flame, river, boat, crowd, travel, outcome, and scope boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_scope_boundary_not_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "dev-deepawali-varanasi-en-v1",
+      "language_code": "en",
+      "title": "Varanasi Dev Deepawali reflection and participation",
+      "summary": "Mark Varanasi's Kartika full-moon festival through prayer, light, and reflection on the Shiva-Tripurasura story variant. A flame-free form is complete in this scope; river entry, floating lamps, fireworks, boats, fasting, or promised purification are not required.",
+      "family_practice_note": "Tell Sarthi whether you are in Varanasi, observing from home, or joining an established temple or community. If attending the public festival, current district, police, ghat, temple, and organizer instructions take priority over this guide.",
+      "context_prompts": ["Are you in Varanasi, observing from home, or joining a temple or community?", "Does your family already keep a Kartika Purnima or Dev Deepawali prayer?", "Would you prefer a completely flame-free form?", "If attending in person, what current local authority or organizer guidance do you have?"],
+      "tiers": [
+        {
+          "tier": "minimum", "label": "Ten-minute light and reflection", "estimated_minutes": 10,
+          "materials": [{"item": "A quiet place and an electric light or mental image of light", "substitutions": ["Use daylight, a phone flashlight pointed safely away from eyes, or no physical light"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Remember Varanasi's Ganga ghats illuminated on the Kartika full moon and pause with the movement from darkness toward clarity.", "why": "Official tourism sources establish the place, full-moon, and light identity without requiring a physical lamp.", "optional": false, "source_ids": ["incredible-india-dev-deepawali-identity", "incredible-india-dev-deepawali-ghats"]},
+            {"ordinal": 2, "instruction": "Recall the Shiva and Tripurasura account as one festival story tradition, or use a familiar family prayer.", "why": "The story is preserved as a variant rather than asserted as the festival's only history.", "optional": false, "source_ids": ["incredible-india-dev-deepawali-identity"]},
+            {"ordinal": 3, "instruction": "Choose one concrete act that brings light through truthfulness, repair, learning, or service.", "why": "It makes the reflection actionable without promising merit or purification.", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard", "label": "Home or community remembrance", "estimated_minutes": 30,
+          "materials": [{"item": "One stable supervised lamp or an electric light", "substitutions": ["Use a flame-free light or mental remembrance"], "optional": true}, {"item": "A familiar prayer, song, or story source", "substitutions": ["Use silent reflection"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Prepare a clear, stable space. If using a lamp, keep it attended, away from children, fabric, plants, edges, and walkways; otherwise use an electric light.", "why": "The public lamp identity does not override ordinary fire safety.", "optional": false, "source_ids": ["incredible-india-dev-deepawali-ghats", "devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 2, "instruction": "Remember the Kartika full moon, Varanasi, and the Shiva-Tripurasura story variant; add only a prayer, chant, or song already familiar to your family or community.", "why": "This supports attributable participation without manufacturing a formal puja or Ganga Aarti sequence.", "optional": false, "source_ids": ["incredible-india-dev-deepawali-identity", "utsav-india-dev-deepawali"]},
+            {"ordinal": 3, "instruction": "Sit quietly, name one source of confusion or conflict you can address, and choose a practical act of learning, reconciliation, or service.", "why": "The symbolism becomes useful without a guaranteed spiritual or worldly outcome.", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 4, "instruction": "Extinguish any flame before leaving and dispose of nothing in a river or public space.", "why": "Floating offerings and unattended fire are not instructed by this guide.", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate", "label": "Established Varanasi programme", "estimated_minutes": 60,
+          "materials": [{"item": "Only items permitted and requested by the current temple, ghat, community, or public-event organizer", "substitutions": ["Attend as an observer or use the standard home form"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Check current official district, police, ghat, temple, and organizer instructions for access, crowd movement, timings, closures, and permitted items.", "why": "The retained sources establish recurring identity, not live 2026 operations.", "optional": false, "source_ids": ["utsav-india-dev-deepawali", "devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 2, "instruction": "Join prayer, chanting, lighting, or cultural participation only in the form directed at the established programme.", "why": "Formal Ganga Aarti, temple, and priestly liturgy must remain with recognised local authorities.", "optional": false, "source_ids": ["utsav-india-dev-deepawali", "incredible-india-dev-deepawali-ghats"]},
+            {"ordinal": 3, "instruction": "Do not enter the river, release a lamp or offering, use fireworks, or board a boat because of this guide; follow current safety authorities and your own accessibility needs.", "why": "Those are operational and safety decisions, not generic devotional instructions.", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 4, "instruction": "Leave the ghat or venue as directed, take all permitted belongings and waste, and close with gratitude without claiming sin removal, merit, protection, or guaranteed purification.", "why": "Responsible participation and honest outcome boundaries protect both people and place.", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "dev-deepawali-varanasi-hi-v1",
+      "language_code": "hi",
+      "title": "वाराणसी देव दीपावली चिंतन और सहभागिता",
+      "summary": "वाराणसी के कार्तिक पूर्णिमा उत्सव को प्रार्थना, प्रकाश और शिव-त्रिपुरासुर कथा-परम्परा के चिंतन से मानें। इस सीमा में बिना लौ का रूप पूर्ण है; नदी में उतरना, तैरते दीप, पटाखे, नाव, उपवास या शुद्धि का वादा आवश्यक नहीं है।",
+      "family_practice_note": "सार्थि को बताएं कि आप वाराणसी में हैं, घर से स्मरण कर रहे हैं, या किसी स्थापित मंदिर या समुदाय के साथ जुड़ रहे हैं। सार्वजनिक उत्सव में वर्तमान जिला, पुलिस, घाट, मंदिर और आयोजक निर्देश इस मार्गदर्शिका से ऊपर हैं।",
+      "context_prompts": ["आप वाराणसी में हैं, घर से स्मरण कर रहे हैं, या मंदिर/समुदाय से जुड़ रहे हैं?", "आपके परिवार में कार्तिक पूर्णिमा या देव दीपावली की परिचित प्रार्थना है?", "क्या आप पूरी तरह बिना लौ का रूप चाहेंगे?", "प्रत्यक्ष जाने पर आपके पास कौन-से वर्तमान स्थानीय निर्देश हैं?"],
+      "tiers": [
+        {
+          "tier": "minimum", "label": "दस मिनट का प्रकाश-चिंतन", "estimated_minutes": 10,
+          "materials": [{"item": "एक शांत स्थान और बिजली का प्रकाश या मन में प्रकाश की छवि", "substitutions": ["दिन का प्रकाश, आंखों से दूर सुरक्षित फोन-टॉर्च, या बिना किसी भौतिक प्रकाश के स्मरण"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "कार्तिक पूर्णिमा पर प्रकाशित वाराणसी के गंगा-घाटों का स्मरण करें और अंधकार से स्पष्टता की ओर बढ़ने पर कुछ क्षण रुकें।", "why": "आधिकारिक पर्यटन स्रोत स्थान, पूर्णिमा और प्रकाश की पहचान देते हैं, भौतिक दीप को अनिवार्य नहीं बनाते।", "optional": false, "source_ids": ["incredible-india-dev-deepawali-identity", "incredible-india-dev-deepawali-ghats"]},
+            {"ordinal": 2, "instruction": "शिव और त्रिपुरासुर की कथा को उत्सव की एक कथा-परम्परा के रूप में याद करें, या परिचित पारिवारिक प्रार्थना रखें।", "why": "कथा को एक रूप के रूप में रखा गया है, उत्सव का एकमात्र इतिहास नहीं।", "optional": false, "source_ids": ["incredible-india-dev-deepawali-identity"]},
+            {"ordinal": 3, "instruction": "सत्य, सुधार, सीख या सेवा के माध्यम से प्रकाश लाने वाला एक ठोस काम चुनें।", "why": "यह पुण्य या शुद्धि का वादा किए बिना चिंतन को उपयोगी बनाता है।", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard", "label": "घर या समुदाय में स्मरण", "estimated_minutes": 30,
+          "materials": [{"item": "एक स्थिर और निगरानी में रखा दीप या बिजली का प्रकाश", "substitutions": ["बिना लौ का प्रकाश या मानसिक स्मरण"], "optional": true}, {"item": "परिचित प्रार्थना, गीत या कथा-स्रोत", "substitutions": ["मौन चिंतन"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "साफ और स्थिर स्थान बनाएं। दीप हो तो उसे निगरानी में, बच्चों, कपड़े, पौधे, किनारे और रास्ते से दूर रखें; अन्यथा बिजली का प्रकाश लें।", "why": "सार्वजनिक दीप-परम्परा सामान्य अग्नि-सुरक्षा से ऊपर नहीं है।", "optional": false, "source_ids": ["incredible-india-dev-deepawali-ghats", "devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 2, "instruction": "कार्तिक पूर्णिमा, वाराणसी और शिव-त्रिपुरासुर कथा-परम्परा का स्मरण करें; केवल परिवार या समुदाय में परिचित प्रार्थना, जप या गीत जोड़ें।", "why": "इससे औपचारिक पूजा या गंगा आरती का बनाया हुआ क्रम नहीं बनता।", "optional": false, "source_ids": ["incredible-india-dev-deepawali-identity", "utsav-india-dev-deepawali"]},
+            {"ordinal": 3, "instruction": "शांत बैठकर किसी एक भ्रम या संघर्ष को पहचानें जिसे आप सुधार सकते हैं, फिर सीख, मेल-मिलाप या सेवा का एक काम चुनें।", "why": "प्रतीक उपयोगी बनता है, बिना किसी सुनिश्चित फल के।", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 4, "instruction": "जाने से पहले लौ बुझाएं और नदी या सार्वजनिक स्थान में कुछ न छोड़ें।", "why": "यह मार्गदर्शिका तैरते अर्पण या बिना निगरानी की आग नहीं बताती।", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate", "label": "स्थापित वाराणसी कार्यक्रम", "estimated_minutes": 60,
+          "materials": [{"item": "केवल वर्तमान मंदिर, घाट, समुदाय या सार्वजनिक आयोजक द्वारा अनुमत और मांगी गई सामग्री", "substitutions": ["दर्शक बनकर जुड़ें या घर का मानक रूप रखें"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "प्रवेश, भीड़-आवागमन, समय, बंद मार्ग और अनुमत सामग्री के लिए वर्तमान जिला, पुलिस, घाट, मंदिर और आयोजक निर्देश देखें।", "why": "स्रोत आवर्ती पहचान देते हैं, 2026 की जीवित संचालन-जानकारी नहीं।", "optional": false, "source_ids": ["utsav-india-dev-deepawali", "devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 2, "instruction": "प्रार्थना, जप, दीप या सांस्कृतिक कार्यक्रम में केवल स्थापित कार्यक्रम के निर्देशानुसार भाग लें।", "why": "औपचारिक गंगा आरती, मंदिर और पुरोहित-विधि मान्य स्थानीय नेतृत्व के पास रहती है।", "optional": false, "source_ids": ["utsav-india-dev-deepawali", "incredible-india-dev-deepawali-ghats"]},
+            {"ordinal": 3, "instruction": "इस मार्गदर्शिका के कारण नदी में न उतरें, दीप या अर्पण न बहाएं, पटाखे न चलाएं और नाव पर न चढ़ें; वर्तमान सुरक्षा अधिकारियों और अपनी सुगमता की जरूरतों का पालन करें।", "why": "ये संचालन और सुरक्षा के निर्णय हैं, सामान्य भक्ति-निर्देश नहीं।", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]},
+            {"ordinal": 4, "instruction": "निर्देशानुसार घाट या स्थल छोड़ें, अपना सामान और अनुमत कचरा साथ लें, और पाप-नाश, पुण्य, रक्षा या शुद्धि की गारंटी माने बिना कृतज्ञता से समापन करें।", "why": "जिम्मेदार सहभागिता और ईमानदार फल-सीमा लोगों और स्थान दोनों की रक्षा करती है।", "optional": false, "source_ids": ["devam-dev-deepawali-safety-boundary"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "flame_free_home_form_supported": true,
+    "varanasi_full_moon_ghat_light_and_story_variant_supported": true,
+    "generic_kartika_purnima_or_baps_dev_diwali_merged": false,
+    "ritual_bathing_or_water_entry_instructed": false,
+    "floating_lamps_or_river_offerings_instructed": false,
+    "unattended_flame_or_fireworks_recommended": false,
+    "boat_booking_crowd_route_access_or_travel_advice_given": false,
+    "formal_ganga_aarti_puja_mantra_or_priest_liturgy_included": false,
+    "fast_or_dietary_regimen_prescribed": false,
+    "sin_removal_purification_merit_protection_or_outcome_guaranteed": false,
+    "one_universal_kartika_purnima_or_dev_diwali_procedure_claimed": false,
+    "all_varanasi_temple_ghat_family_and_regional_variants_complete": false
+  }
+}

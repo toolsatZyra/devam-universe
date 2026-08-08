@@ -1,0 +1,63 @@
+{
+  "base_pilot": {
+    "bytes": 42288,
+    "pair_id": "guidance-04",
+    "path": "apps/web/evaluation/sarthi-answer-pilot-v0.1.json",
+    "sha256": "75c9b2cf69f7972fb2be890058cce026235e518243d91f4517994b774d86b74c"
+  },
+  "blinded_run": {
+    "human_blinded_review_required": true,
+    "paid_or_external_model_calls_made": false,
+    "promotion_claim_allowed": false,
+    "required_arms": [
+      "grounded_rag",
+      "prompt_only_guidance",
+      "material_context_and_typed_coverage",
+      "thin_governor"
+    ],
+    "same_evidence_bytes_required": true,
+    "same_model_required": true,
+    "status": "not_run"
+  },
+  "candidate_contract": {
+    "variant_a": {
+      "expected_citation_ordinals": [],
+      "expected_runtime_mode": "context_clarification",
+      "required_boundary": "Sarthi asks which affected person's need is time-sensitive and which work can safely wait instead of offering a productivity sermon or assigning family duty.",
+      "scenario_id": "guidance-04-a"
+    },
+    "variant_b": {
+      "expected_citation_ordinals": [
+        108,
+        227,
+        549,
+        620
+      ],
+      "expected_runtime_mode": "reviewed_personal_guidance",
+      "required_boundary": "Priority comes from the user's stated necessary child-care and safe-deferral facts; source passages remain optional lenses and do not assign care by gender or praise self-neglect.",
+      "scenario_id": "guidance-04-b"
+    }
+  },
+  "claim_boundary": "This supplement proves source fixity, affected-party routing, current deterministic mode separation and readiness for a controlled pilot. It does not prove improved judgment, professional care or employment advice, broad family-duty coverage, or artificial wisdom.",
+  "contract": "DEVAM_SARTHI_WORK_CARE_PILOT_SUPPLEMENT_V0_1",
+  "evidence_bundle": {
+    "bytes": 10400,
+    "path": "knowledge_packs/wisdom/work-care-prioritization-v1.json",
+    "private_commentary_quotation_allowed": false,
+    "review_status": "internal_beta_reviewed",
+    "sha256": "1898680e1b3ad37c37219969f5eb5d9fae9445981a648c1b3777a557087f02d6",
+    "source_payload_duplicated": false
+  },
+  "purpose": "Bind the reviewed work-care evidence bundle and deterministic candidate behaviour to guidance-04 in the frozen 64-scenario answer pilot without mutating that fixture or claiming a completed answer-quality evaluation.",
+  "research_manifests": [
+    {
+      "path": "research/sarthi-artificial-wisdom/ARTIFACT_MANIFEST.sha256",
+      "sha256": "d04f232b09ae7a27f4ff7ee50ff36db1a3e2890b13f2b37876e87d96355e96e0"
+    },
+    {
+      "path": "research/sarthi-artificial-wisdom/independent-foundations/FOUNDATIONAL_ARTIFACT_MANIFEST.sha256",
+      "sha256": "e42f6b586cde314f531f91d46928a8a43896f7a65ee423e594749ef9cd9fb594"
+    }
+  ],
+  "status": "deterministic_candidate_ready_same_model_and_blinded_review_not_run"
+}

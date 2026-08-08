@@ -1,0 +1,95 @@
+{
+  "contract": "DEVAM_BOUNDED_KALABHAIRAVA_JAYANTI_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-kalabhairava-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-12-01", "2026-12-02"],
+    "selected_civil_date": "2026-12-01",
+    "supported_tradition_codes": ["smarta-north-india", "regional-kashi-varanasi"],
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "drikpanchang-delhi-masika-kalashtami-2026",
+      "title": "2026 Kalashtami, Kala Ashtami dates for Delhi, NCT, India",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/vrats/masik-kalashtami-dates.html?geoname-id=1273294&year=2026",
+      "source_class": "current_practitioner_rule_and_location_specific_calendar_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/vrats/masik-kalashtami-dates.html?geoname-id=1273294&year=2026",
+        "response_bytes": 87703,
+        "response_sha256": "e172a630891bc7c13b403a1c4c315ae8ffd154b82c953036adf925b5f8a2c037",
+        "strict_utf8": true
+      },
+      "observed_literals": {
+        "selected_civil_date": "2026-12-01",
+        "weekday": "Tuesday",
+        "identity": "Kalabhairav Jayanti / Kalashtami / Bhairava Ashtami",
+        "north_lunar_month": "Margashirsha",
+        "south_lunar_month": "Kartika",
+        "paksha_tithi": "Krishna Ashtami",
+        "ashtami_begins_local": "2026-12-01T00:11:00+05:30",
+        "ashtami_ends_local": "2026-12-01T23:13:00+05:30",
+        "provider_rule": "select_the_fasting_day_where_ashtami_prevails_during_night_and_at_least_one_ghati_after_pradosha_otherwise_move_to_previous_day"
+      },
+      "evidence_role": "current_identity_lunar_month_variants_date_tithi_and_night_selection_rule_not_product_text_or_complete_vidhi"
+    },
+    {
+      "source_id": "kashi-official-shri-kaal-bhairav-temple",
+      "title": "Shri Kaal Bhairav Temple",
+      "publisher": "Kashi Official Web Portal",
+      "url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple",
+      "source_class": "official_regional_deity_and_temple_identity",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple",
+        "response_bytes": 100811,
+        "response_sha256": "f0fab6af66d8a42ade81f6ace680eda4c59e2bd885b64addd6c3c6fcfe039bb2",
+        "strict_utf8": true
+      },
+      "observed_identity": {
+        "kaal_bhairav_as_manifestation_of_shiva": true,
+        "kashi_guardian_or_kotwal_identity": true,
+        "temple_and_regional_practice_context": true,
+        "provider_protection_and_outcome_claims_promoted_by_devam": false
+      },
+      "evidence_role": "official_kashi_identity_and_living_temple_context_not_calendar_rule_or_universal_home_procedure"
+    }
+  ],
+  "rule": {
+    "observance_slug": "kalabhairava-jayanti",
+    "canonical_name": "Kalabhairava Jayanti / Bhairava Ashtami",
+    "target_tithi": "Ashtami",
+    "target_paksha": "krishna",
+    "decision_window": "local_sunset_to_following_sunrise",
+    "selection": "select_only_when_exactly_one_candidate_night_has_at_least_one_ghati_of_krishna_ashtami_after_local_sunset",
+    "one_ghati_seconds": 1440,
+    "both_candidates_qualify": "fail_closed",
+    "neither_candidate_qualifies": "fail_closed",
+    "north_and_south_lunar_month_names_preserved": true,
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "temple_timing_or_event_operations_resolved": false
+  },
+  "denials": {
+    "universal_india_date_claim": false,
+    "all_kalashtami_and_bhairava_traditions_complete": false,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "food_or_medical_guidance_given": false,
+    "formal_puja_mantra_tantra_offering_thread_or_oil_rite_prescribed": false,
+    "alcohol_meat_animal_offering_or_harm_instruction_given": false,
+    "fear_occult_exorcism_or_protection_rite_prescribed": false,
+    "night_vigil_or_unsafe_travel_required": false,
+    "kashi_temple_practice_universalized": false,
+    "fear_protection_liberation_merit_prosperity_or_other_outcome_guaranteed": false,
+    "source_page_text_returned_by_api": false
+  }
+}

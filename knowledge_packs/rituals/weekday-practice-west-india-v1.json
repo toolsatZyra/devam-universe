@@ -1,0 +1,260 @@
+{
+  "contract": "DEVAM_WEEKDAY_PRACTICE_PACK_V1",
+  "pack_id": "devam-weekday-practice-west-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "scope": {
+    "region_codes": ["west-india"],
+    "tradition_codes": ["smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "family_practice_overrides_weekday_suggestion": true
+  },
+  "sources": [
+    {
+      "source_id": "maharashtra-vishwakosh-vara-1",
+      "title": "Vara - 1",
+      "publisher": "Marathi Vishwakosh, Government of Maharashtra",
+      "url": "https://vishwakosh.marathi.gov.in/32476/",
+      "source_class": "state_encyclopaedia",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["one explicitly regional seven-day association: Surya, Shiva, Ganapati/Gauri, Vishnu/Vitthal, Datta, Devi, and Maruti", "vara as one of the five Panchang limbs"]
+    },
+    {
+      "source_id": "maharashtra-gazetteer-household-puja",
+      "title": "Hindu Religious Practices",
+      "publisher": "Gazetteers Department, Government of Maharashtra",
+      "url": "https://www.gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/Poona/PART%20III/Chap%20%283%29/Hindu%20Religious%20Practices.htm",
+      "source_class": "state_historical_ethnography",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["household shrine context", "water, flowers, light, and food among common offerings", "historical weekday and planetary associations"],
+      "limitations": ["historical regional description, not a modern universal household prescription"]
+    },
+    {
+      "source_id": "incredible-india-sankat-mochan",
+      "title": "Sankat Mochan Mandir",
+      "publisher": "Incredible India, Ministry of Tourism, Government of India",
+      "url": "https://www.prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/varanasi/spiritual/sankat-mochan-mandir.html",
+      "source_class": "official_current_temple_context",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["Tuesday and Saturday as especially frequented Hanuman worship days at this Varanasi temple"],
+      "limitations": ["temple-local observation, not a national-exclusive weekday rule"]
+    },
+    {
+      "source_id": "baps-daily-puja",
+      "title": "Daily Puja",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/Spiritual-Living/Hindu-Practices/Daily-Puja.aspx",
+      "source_class": "living_tradition_instruction",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["personal daily prayer as a regular home practice"],
+      "limitations": ["sect-specific source used only for the regular-practice pattern, not for a universal sequence"]
+    }
+  ],
+  "weekday_profiles": [
+    {
+      "vara_index": 1,
+      "vara_name": "Ravivara",
+      "practice_slug": "weekday-ravivara",
+      "display_name_en": "Sunday / Ravivara",
+      "display_name_hi": "रविवार",
+      "focus_en": "Surya, if that is part of your family practice",
+      "focus_hi": "सूर्य, यदि यह आपकी पारिवारिक परम्परा का भाग है",
+      "reflection_en": "gratitude, clarity, and steady energy",
+      "reflection_hi": "कृतज्ञता, स्पष्टता और स्थिर ऊर्जा",
+      "source_ids": ["maharashtra-vishwakosh-vara-1", "maharashtra-gazetteer-household-puja"],
+      "safety_note_en": "Do not look directly at the Sun. A water offering or any solar rite belongs only to a practice you already know safely.",
+      "safety_note_hi": "सूर्य को सीधे न देखें। जल-अर्घ्य या कोई सौर-विधि केवल तभी करें जब आप उसे अपनी परम्परा में सुरक्षित रूप से जानते हों।"
+    },
+    {
+      "vara_index": 2,
+      "vara_name": "Somavara",
+      "practice_slug": "weekday-somavara",
+      "display_name_en": "Monday / Somavara",
+      "display_name_hi": "सोमवार",
+      "focus_en": "Shiva, if that is part of your family practice",
+      "focus_hi": "शिव, यदि यह आपकी पारिवारिक परम्परा का भाग है",
+      "reflection_en": "calm, restraint, and compassion",
+      "reflection_hi": "शान्ति, संयम और करुणा",
+      "source_ids": ["maharashtra-vishwakosh-vara-1", "maharashtra-gazetteer-household-puja"],
+      "safety_note_en": "This guide does not prescribe a fast, abhisheka, or formal mantra.",
+      "safety_note_hi": "यह मार्गदर्शिका उपवास, अभिषेक या औपचारिक मन्त्र निर्धारित नहीं करती।"
+    },
+    {
+      "vara_index": 3,
+      "vara_name": "Mangalavara",
+      "practice_slug": "weekday-mangalavara",
+      "display_name_en": "Tuesday / Mangalavara",
+      "display_name_hi": "मंगलवार",
+      "focus_en": "Ganapati or Gauri in the cited Maharashtra mapping; Hanuman is another widely lived Tuesday option",
+      "focus_hi": "उद्धृत महाराष्ट्र परम्परा में गणपति या गौरी; हनुमान मंगलवार की एक अन्य व्यापक जीवित परम्परा हैं",
+      "reflection_en": "courage, disciplined action, and service",
+      "reflection_hi": "साहस, अनुशासित कर्म और सेवा",
+      "source_ids": ["maharashtra-vishwakosh-vara-1", "incredible-india-sankat-mochan"],
+      "safety_note_en": "Choose the deity and prayer your family actually follows; the options are not interchangeable mandates.",
+      "safety_note_hi": "वही देवता और प्रार्थना चुनें जिसका आपका परिवार वास्तव में पालन करता है; ये विकल्प एक-दूसरे के स्थान पर अनिवार्य नियम नहीं हैं।"
+    },
+    {
+      "vara_index": 4,
+      "vara_name": "Budhavara",
+      "practice_slug": "weekday-budhavara",
+      "display_name_en": "Wednesday / Budhavara",
+      "display_name_hi": "बुधवार",
+      "focus_en": "Vishnu or Vitthal, if that is part of your family practice",
+      "focus_hi": "विष्णु या विठ्ठल, यदि यह आपकी पारिवारिक परम्परा का भाग है",
+      "reflection_en": "attention, learning, and balance",
+      "reflection_hi": "एकाग्रता, अध्ययन और संतुलन",
+      "source_ids": ["maharashtra-vishwakosh-vara-1"],
+      "safety_note_en": "This is one regional association; other families may keep a different Wednesday focus.",
+      "safety_note_hi": "यह एक क्षेत्रीय सम्बन्ध है; अन्य परिवार बुधवार को किसी अन्य उपासना को मान सकते हैं।"
+    },
+    {
+      "vara_index": 5,
+      "vara_name": "Guruvara",
+      "practice_slug": "weekday-guruvara",
+      "display_name_en": "Thursday / Guruvara",
+      "display_name_hi": "गुरुवार",
+      "focus_en": "Dattatreya and gratitude to one's teachers, if that fits your tradition",
+      "focus_hi": "दत्तात्रेय और अपने गुरुजनों के प्रति कृतज्ञता, यदि यह आपकी परम्परा के अनुरूप हो",
+      "reflection_en": "learning, humility, and gratitude to teachers",
+      "reflection_hi": "अध्ययन, विनम्रता और गुरुजनों के प्रति कृतज्ञता",
+      "source_ids": ["maharashtra-vishwakosh-vara-1"],
+      "safety_note_en": "A living guru or sampradaya practice should not be replaced by a generic app sequence.",
+      "safety_note_hi": "जीवित गुरु या सम्प्रदाय की परम्परा को किसी सामान्य ऐप-क्रम से प्रतिस्थापित नहीं करना चाहिए।"
+    },
+    {
+      "vara_index": 6,
+      "vara_name": "Shukravara",
+      "practice_slug": "weekday-shukravara",
+      "display_name_en": "Friday / Shukravara",
+      "display_name_hi": "शुक्रवार",
+      "focus_en": "Devi, in the form your family knows",
+      "focus_hi": "देवी, उस स्वरूप में जिसे आपका परिवार मानता है",
+      "reflection_en": "care, abundance used well, and generosity",
+      "reflection_hi": "देखभाल, सदुपयोग की समृद्धि और उदारता",
+      "source_ids": ["maharashtra-vishwakosh-vara-1"],
+      "safety_note_en": "Lakshmi, Durga, a gramadevata, or another Devi focus may differ by family and region.",
+      "safety_note_hi": "लक्ष्मी, दुर्गा, ग्रामदेवता या देवी का अन्य स्वरूप परिवार और क्षेत्र के अनुसार भिन्न हो सकता है।"
+    },
+    {
+      "vara_index": 7,
+      "vara_name": "Shanivara",
+      "practice_slug": "weekday-shanivara",
+      "display_name_en": "Saturday / Shanivara",
+      "display_name_hi": "शनिवार",
+      "focus_en": "Maruti/Hanuman in the cited Maharashtra mapping; some families instead keep a Shani focus",
+      "focus_hi": "उद्धृत महाराष्ट्र परम्परा में मारुति/हनुमान; कुछ परिवार इसके स्थान पर शनि-उपासना करते हैं",
+      "reflection_en": "endurance, responsibility, and practical service",
+      "reflection_hi": "धैर्य, उत्तरदायित्व और व्यावहारिक सेवा",
+      "source_ids": ["maharashtra-vishwakosh-vara-1", "incredible-india-sankat-mochan", "maharashtra-gazetteer-household-puja"],
+      "safety_note_en": "This guide does not prescribe astrological remedies, oil offerings, donations, or fear-based appeasement.",
+      "safety_note_hi": "यह मार्गदर्शिका ज्योतिषीय उपाय, तेल-अर्पण, दान या भय-आधारित शान्ति-विधि निर्धारित नहीं करती।"
+    }
+  ],
+  "language_templates": {
+    "en": {
+      "title": "{display}: an optional weekly practice",
+      "summary": "If this weekday association fits your family, use it as a gentle devotional rhythm. The short form is complete in its own scope; no fast, formal mantra, or elaborate material is required.",
+      "family_practice_note": "Your kula, sampradaya, temple, and household custom take priority. Ask Sarthi to adapt this after sharing what your family actually follows. {safety}",
+      "context_prompts": ["Does your family already connect this weekday with a deity or vrata?", "Would you like a quiet prayer, a familiar reading, or a temple visit?", "Are you following a West India household practice?"],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "A five-minute pause",
+          "estimated_minutes": 5,
+          "materials": [{"item": "A clean, quiet place", "substitutions": ["Sit wherever you can be undisturbed for a few minutes"], "optional": false}, {"item": "Clean water or one flower", "substitutions": ["Make a respectful mental offering"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Choose {focus}—but only if it matches your household practice.", "why": "Weekday associations vary; this keeps one regional mapping visible without making it universal.", "optional": false, "source_ids": ["__WEEKDAY__"]},
+            {"ordinal": 2, "instruction": "Wash your hands, sit quietly, and offer water, a flower, or a sincere mental greeting.", "why": "A small respectful offering keeps the practice accessible without imitating a formal temple ritual.", "optional": false, "source_ids": ["maharashtra-gazetteer-household-puja"]},
+            {"ordinal": 3, "instruction": "Use a prayer or divine name you already know, then choose one action that expresses {reflection} today.", "why": "The weekly rhythm becomes useful in daily life while the app avoids inventing a compulsory mantra.", "optional": false, "source_ids": ["baps-daily-puja", "__WEEKDAY__"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Prayer, reading, and one act",
+          "estimated_minutes": 15,
+          "materials": [{"item": "Your existing home shrine, image, book, or mental focus", "substitutions": ["No new image is required"], "optional": false}, {"item": "Water, a flower or leaf, and fruit if available", "substitutions": ["Use one simple respectful offering"], "optional": true}, {"item": "A small lamp", "substitutions": ["Skip flame and smoke where unsafe"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Prepare the space and name the day's optional focus: {focus}.", "why": "Naming the bounded option keeps it distinct from your family's inherited practice.", "optional": false, "source_ids": ["__WEEKDAY__"]},
+            {"ordinal": 2, "instruction": "Offer water, a flower or leaf, and fruit if available; light a lamp only while someone is present.", "why": "These are common household offering forms, simplified with explicit fire safety.", "optional": false, "source_ids": ["maharashtra-gazetteer-household-puja"]},
+            {"ordinal": 3, "instruction": "Read or sing a short prayer your family already knows; if you do not know one, repeat the deity's familiar name without attempting a formal mantra.", "why": "This supports sincere practice without fabricating initiation-dependent or pronunciation-sensitive instruction.", "optional": false, "source_ids": ["baps-daily-puja", "__WEEKDAY__"]},
+            {"ordinal": 4, "instruction": "Close with gratitude and carry {reflection} into one specific decision or act of service.", "why": "The practice remains actionable beyond the shrine.", "optional": false, "source_ids": ["__WEEKDAY__"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Family-led weekly observance",
+          "estimated_minutes": 30,
+          "materials": [{"item": "The materials, text, and food offering your family normally uses", "substitutions": ["Use the standard form when those instructions are not known"], "optional": false}, {"item": "A safe plan for any lamp, incense, or temple visit", "substitutions": ["Keep the practice flame-free at home"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Ask a family elder, temple, or sampradaya practitioner for the exact weekly sequence connected with {focus}.", "why": "The elaborate form depends on lineage and locality and should not be reverse-engineered from a generic template.", "optional": false, "source_ids": ["__WEEKDAY__"]},
+            {"ordinal": 2, "instruction": "Follow that known sequence with its own reading, song, offerings, and closing; use this pack only as a checklist for context and safety.", "why": "Devam supports the living practice rather than replacing its authority.", "optional": false, "source_ids": ["maharashtra-gazetteer-household-puja", "baps-daily-puja"]},
+            {"ordinal": 3, "instruction": "If no inherited sequence is available, use the standard form and consider a temple visit or a longer source-grounded reading instead of adding invented rites.", "why": "More time should deepen attention, not create unsupported ritual claims.", "optional": false, "source_ids": ["__WEEKDAY__"]}
+          ]
+        }
+      ]
+    },
+    "hi": {
+      "title": "{display}: वैकल्पिक साप्ताहिक साधना",
+      "summary": "यदि यह वार-सम्बन्ध आपकी पारिवारिक परम्परा के अनुकूल है, तो इसे सरल भक्ति-क्रम की तरह अपनाएँ। छोटी विधि अपने सीमित स्वरूप में पूर्ण है; उपवास, औपचारिक मन्त्र या विस्तृत सामग्री अनिवार्य नहीं है।",
+      "family_practice_note": "आपके कुल, सम्प्रदाय, मन्दिर और घर की परम्परा को प्राथमिकता है। आपका परिवार क्या करता है यह बताकर सार्थी से इसे अनुकूलित कराएँ। {safety}",
+      "context_prompts": ["क्या आपके परिवार में इस वार का कोई देवता या व्रत पहले से मान्य है?", "आप शान्त प्रार्थना, परिचित पाठ या मन्दिर-दर्शन में से क्या चाहते हैं?", "क्या आप पश्चिम भारत की गृह-परम्परा का पालन करते हैं?"],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "पाँच मिनट का विराम",
+          "estimated_minutes": 5,
+          "materials": [{"item": "स्वच्छ और शान्त स्थान", "substitutions": ["जहाँ कुछ मिनट निर्विघ्न बैठ सकें"], "optional": false}, {"item": "स्वच्छ जल या एक फूल", "substitutions": ["मन में श्रद्धापूर्वक अर्पण करें"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "{focus} को चुनें—पर केवल तभी जब यह आपके घर की परम्परा के अनुकूल हो।", "why": "वार-सम्बन्ध भिन्न होते हैं; इससे एक क्षेत्रीय परम्परा दिखती है पर उसे सार्वभौम नहीं बनाया जाता।", "optional": false, "source_ids": ["__WEEKDAY__"]},
+            {"ordinal": 2, "instruction": "हाथ धोकर शान्त बैठें और जल, फूल या मन से श्रद्धापूर्ण नमस्कार अर्पित करें।", "why": "छोटा आदरपूर्ण अर्पण औपचारिक मन्दिर-विधि की नकल किए बिना साधना को सहज रखता है।", "optional": false, "source_ids": ["maharashtra-gazetteer-household-puja"]},
+            {"ordinal": 3, "instruction": "वह प्रार्थना या नाम लें जिसे आप पहले से जानते हैं, फिर आज {reflection} को व्यक्त करने वाला एक कर्म चुनें।", "why": "ऐप कोई अनिवार्य मन्त्र गढ़े बिना साप्ताहिक साधना को दैनिक जीवन में उपयोगी बनाता है।", "optional": false, "source_ids": ["baps-daily-puja", "__WEEKDAY__"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "प्रार्थना, पाठ और एक कर्म",
+          "estimated_minutes": 15,
+          "materials": [{"item": "घर का मौजूदा पूजा-स्थान, चित्र, पुस्तक या मानसिक ध्यान", "substitutions": ["नया चित्र आवश्यक नहीं है"], "optional": false}, {"item": "जल, फूल या पत्ता, और उपलब्ध हो तो फल", "substitutions": ["एक सरल श्रद्धापूर्ण अर्पण करें"], "optional": true}, {"item": "छोटा दीप", "substitutions": ["जहाँ असुरक्षित हो वहाँ अग्नि और धुआँ न करें"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थान तैयार करें और दिन के वैकल्पिक ध्यान का नाम लें: {focus}।", "why": "सीमित विकल्प का नाम लेने से वह आपकी विरासत में मिली पारिवारिक परम्परा से अलग और स्पष्ट रहता है।", "optional": false, "source_ids": ["__WEEKDAY__"]},
+            {"ordinal": 2, "instruction": "जल, फूल या पत्ता और उपलब्ध हो तो फल अर्पित करें; दीप केवल किसी की उपस्थिति में जलाएँ।", "why": "ये सामान्य गृह-अर्पण हैं जिन्हें अग्नि-सुरक्षा के साथ सरल बनाया गया है।", "optional": false, "source_ids": ["maharashtra-gazetteer-household-puja"]},
+            {"ordinal": 3, "instruction": "परिवार की परिचित छोटी प्रार्थना पढ़ें या गाएँ; यदि कोई पाठ ज्ञात न हो तो औपचारिक मन्त्र का प्रयास किए बिना परिचित देव-नाम लें।", "why": "यह दीक्षा या शुद्ध उच्चारण पर निर्भर निर्देश गढ़े बिना सच्ची साधना सम्भव करता है।", "optional": false, "source_ids": ["baps-daily-puja", "__WEEKDAY__"]},
+            {"ordinal": 4, "instruction": "कृतज्ञता के साथ समापन करें और {reflection} को एक निर्णय या सेवा-कर्म में उतारें।", "why": "साधना पूजा-स्थान से आगे भी उपयोगी रहती है।", "optional": false, "source_ids": ["__WEEKDAY__"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "परिवार-निर्देशित साप्ताहिक अनुष्ठान",
+          "estimated_minutes": 30,
+          "materials": [{"item": "परिवार में प्रचलित सामग्री, पाठ और नैवेद्य", "substitutions": ["निर्देश ज्ञात न हों तो मध्यम विधि अपनाएँ"], "optional": false}, {"item": "दीप, धूप या मन्दिर-दर्शन के लिए सुरक्षित योजना", "substitutions": ["घर में अग्नि-रहित साधना रखें"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "{focus} से जुड़ा ठीक साप्ताहिक क्रम परिवार के बड़े, मन्दिर या सम्प्रदाय के जानकार से पूछें।", "why": "विस्तृत विधि वंश-परम्परा और स्थान पर निर्भर है; इसे सामान्य टेम्पलेट से नहीं गढ़ना चाहिए।", "optional": false, "source_ids": ["__WEEKDAY__"]},
+            {"ordinal": 2, "instruction": "उस ज्ञात क्रम को उसके पाठ, गीत, अर्पण और समापन सहित करें; इस पैक को केवल सन्दर्भ और सुरक्षा की जाँच-सूची मानें।", "why": "देवम जीवित परम्परा का समर्थन करता है, उसके अधिकार को प्रतिस्थापित नहीं करता।", "optional": false, "source_ids": ["maharashtra-gazetteer-household-puja", "baps-daily-puja"]},
+            {"ordinal": 3, "instruction": "यदि विरासत में मिला क्रम उपलब्ध नहीं है तो मध्यम विधि करें और नए कर्म जोड़ने के बजाय मन्दिर-दर्शन या लम्बा स्रोत-आधारित पाठ चुनें।", "why": "अधिक समय का अर्थ गहरी एकाग्रता हो, असमर्थित विधि नहीं।", "optional": false, "source_ids": ["__WEEKDAY__"]}
+          ]
+        }
+      ]
+    }
+  },
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "all_seven_varas_included": true,
+    "formal_priest_mantras_included": false,
+    "fasting_or_medical_regimen_prescribed": false,
+    "astrological_remedies_prescribed": false,
+    "planetary_appeasement_prescribed": false,
+    "direct_sun_gazing_suggested": false,
+    "historical_prescriptions_promoted_as_modern_norms": false,
+    "one_universal_weekday_mapping_claimed": false,
+    "all_regional_variants_complete": false,
+    "north_india_weekday_lane_complete": false,
+    "south_india_weekday_lane_complete": false,
+    "east_india_weekday_lane_complete": false
+  }
+}

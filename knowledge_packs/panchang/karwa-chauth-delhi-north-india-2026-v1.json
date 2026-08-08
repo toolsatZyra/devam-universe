@@ -1,0 +1,108 @@
+{
+  "contract": "DEVAM_KARWA_CHAUTH_NORTH_INDIA_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-karwa-chauth-delhi-north-india-2026-v1",
+  "generated_at_utc": "2026-08-07T01:52:46.1535124Z",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-10-28", "2026-10-29"],
+    "selected_civil_date": "2026-10-29",
+    "supported_tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "location_specific": true,
+    "north_india_living_practice_lane_only": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-karaka-chaturthi-rule",
+      "provider": "Devam retained source vault",
+      "work": "Nirnayasindhu",
+      "edition": "Marathi translation, Mumbai 1865",
+      "internet_archive_identifier": "in.ernet.dli.2015.365977",
+      "fixed_carrier_path": "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "fixed_carrier_bytes": 93531683,
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [213],
+      "rights_lane": "private_evidence",
+      "evidence_role": "historical_karaka_chaturthi_krishna_chaturthi_at_moonrise_and_earlier_day_if_both_rule",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-karwa-chauth-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/karwa-chauth/karwa-chauth-date-time.html?geoname-id=1273294&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_location_specific_date_and_moonrise_fixture_not_rule_authority",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-07T01:52:46.1535124Z",
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/karwa-chauth/karwa-chauth-date-time.html?geoname-id=1273294&year=2026",
+        "response_bytes": 69852,
+        "response_sha256": "7582d6071c0f630231b4adadc38dd7ceb8ff3911b2b186d622f35ce495431a68",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "selected_civil_date": "2026-10-29",
+        "published_moonrise_local": "20:17",
+        "chaturthi_begins_local": "2026-10-29T01:06:00+05:30",
+        "chaturthi_ends_local": "2026-10-29T22:09:00+05:30",
+        "provider_puja_interval_served_by_devam": false,
+        "provider_fast_interval_adopted_by_devam": false
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "incredible-india-karva-chauth-living-practice",
+      "provider": "Incredible India, Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/karva-chauth",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_tourism_north_india_identity_and_punjab_uttar_pradesh_living_practice_variants_not_universal_vidhi",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-07T01:52:46.1535124Z",
+        "status": 200,
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/karva-chauth",
+        "response_bytes": 469344,
+        "response_sha256": "e6cbfcb9df0a6dc75cbe7972a8597514122c921670e76ed5bd06a26d7693f493",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "north_india_identity_present": true,
+        "punjab_variant_present": true,
+        "uttar_pradesh_variant_present": true,
+        "sargi_context_present": true,
+        "community_thali_and_story_context_present": true,
+        "moonrise_close_context_present": true,
+        "reciprocal_spouse_participation_described_as_recent_not_universal": true,
+        "festival_date_2026_10_29_present": true
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "rule": {
+    "observance_slug": "karwa-chauth",
+    "canonical_name": "Karwa Chauth / Karaka Chaturthi",
+    "target_tithi": "Chaturthi",
+    "target_paksha": "krishna",
+    "decision_window": "moonrise_presence",
+    "selection": "select_the_candidate_civil_day_with_krishna_chaturthi_at_local_moonrise",
+    "both_candidates_qualify": "select_earlier_day",
+    "neither_candidate_qualifies": "fail_closed",
+    "selected_civil_date": "2026-10-29",
+    "provider_puja_muhurta_served": false,
+    "fasting_procedure_resolved": false,
+    "one_north_india_procedure_universalized": false
+  },
+  "denials": {
+    "precise_puja_muhurta_served": false,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "medical_or_dietary_advice_given": false,
+    "women_only_participation_universalized": false,
+    "married_household_only_participation_required": false,
+    "sargi_bayaa_thali_sieve_arghya_or_spouse_fed_close_required": false,
+    "punjab_and_uttar_pradesh_variants_merged": false,
+    "spouse_longevity_health_or_marital_outcome_guaranteed": false,
+    "all_north_india_family_and_community_variants_complete": false,
+    "complete_september_december_coverage": false
+  }
+}

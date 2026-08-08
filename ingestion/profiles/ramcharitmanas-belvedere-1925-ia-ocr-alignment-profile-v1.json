@@ -1,0 +1,310 @@
+{
+  "contract": "DEVAM_OCR_ALIGNMENT_PROFILE_V1",
+  "profile_id": "RAMCHARITMANAS-BELVEDERE-1925-IA-OCR-ALIGNMENT-V1",
+  "decision": "OCR_QUARANTINED_ALIGNMENT_READY_QUALITY_NOT_PROVEN",
+  "fixed_carrier": {
+    "profile_path": "ingestion/profiles/ramcharitmanas-belvedere-1925-fixed-carrier-profile-v1.json",
+    "profile_sha256": "b8c3cb71887a80603455a9432ebd26f5ad62635e6bfc64f6fccace0efb6278f9",
+    "pdf_sha256": "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2",
+    "pdf_pages": 1240
+  },
+  "acquisition": {
+    "plan_path": "ingestion/plans/ramcharitmanas-belvedere-1925-ia-ocr-alignment-acquisition-v1.json",
+    "plan_sha256": "327d6a2c438abdeca91210bd34cf489173f76aae00a2012b3acd256a1a78c8cb",
+    "selected_representation_count": 4,
+    "selected_representation_bytes": 45842141,
+    "source_objects": {
+      "djvu_txt": {
+        "path": "source_vault/objects/sha256/61/61bb7c6f225c2ee08bbf0f848c575477413d3da71166db4d1b239090cccc5555",
+        "bytes": 5931293,
+        "sha256": "61bb7c6f225c2ee08bbf0f848c575477413d3da71166db4d1b239090cccc5555"
+      },
+      "djvu_xml": {
+        "path": "source_vault/objects/sha256/4d/4dba066cfbe3677601fa07c81c08de4fe1f99051c201cee3d45d097af93686b6",
+        "bytes": 39359478,
+        "sha256": "4dba066cfbe3677601fa07c81c08de4fe1f99051c201cee3d45d097af93686b6"
+      },
+      "page_numbers": {
+        "path": "source_vault/objects/sha256/af/af51472d489fdb3a5b3425613284f574bcd8bd5e38a5567f9e11277433f92ac5",
+        "bytes": 179002,
+        "sha256": "af51472d489fdb3a5b3425613284f574bcd8bd5e38a5567f9e11277433f92ac5"
+      },
+      "scandata": {
+        "path": "source_vault/objects/sha256/b2/b2c78f405bc4109e5b9d76841d6b587c4a2f42dc05955c4fbbe934475a5d93f1",
+        "bytes": 372368,
+        "sha256": "b2c78f405bc4109e5b9d76841d6b587c4a2f42dc05955c4fbbe934475a5d93f1"
+      }
+    }
+  },
+  "coordinate_ocr": {
+    "page_object_count": 1240,
+    "first_usemap": "2015.342236.99999990231847_0000.djvu",
+    "last_usemap": "2015.342236.99999990231847_1239.djvu",
+    "usemaps_contiguous_0000_through_1239": true,
+    "word_count": 463565,
+    "line_count": 40508,
+    "nonempty_page_count": 1219,
+    "empty_page_count": 21,
+    "page_text_hash_root": "aec78162ba5cd092d507c688fdaef3e71554b5b6f1618342cbb128de81315f78",
+    "normalized_xml_text_sha256": "cc1535ea9bcf58217f4b3aa21bc50dc963b6db0e8989b03d0ea474a33de6a6c4",
+    "normalized_plain_text_sha256": "cc1535ea9bcf58217f4b3aa21bc50dc963b6db0e8989b03d0ea474a33de6a6c4",
+    "plain_and_coordinate_ocr_normalized_text_equal": true,
+    "devanagari_character_count": 1775992,
+    "nonspace_character_count": 1847533,
+    "devanagari_nonspace_ratio": 0.96127755
+  },
+  "page_number_evidence": {
+    "record_count": 1239,
+    "first_leaf_num": 1,
+    "last_leaf_num": 1239,
+    "missing_leaf_nums": [
+      0
+    ],
+    "nonempty_page_number_count": 1206,
+    "positive_confidence_count": 0,
+    "trusted_as_authoritative_pagination": false
+  },
+  "scandata_alignment": {
+    "leaf_count_literal": 1240,
+    "page_record_count": 1240,
+    "first_leaf_num": 0,
+    "last_leaf_num": 1239,
+    "pdf_page_equals_leaf_num_plus_one": true
+  },
+  "landmark_quality_sample": {
+    "sample_count": 18,
+    "sample_scope": "Carrier title, every sopana start and close, Aarti, and Manas-Pingala start/close. This bounded sample diagnoses OCR risk but cannot prove whole-book accuracy.",
+    "exact_token_hits": 32,
+    "expected_token_count": 51,
+    "exact_literal_match_count": 3,
+    "rows": [
+      {
+        "pdf_page": 6,
+        "role": "illustrated title",
+        "expected_literal": "सटीक रामचरितमानस",
+        "ocr_text_sha256": "0f4d4902c968f8a20ff8cb6c311f159282721df4b7ffa168d64a777c0415e9af",
+        "ocr_word_count": 33,
+        "expected_token_count": 2,
+        "exact_token_hits": 1,
+        "longest_exact_character_run": 9,
+        "expected_normalized_characters": 11,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 52,
+        "role": "first sopana start",
+        "expected_literal": "बालकाण्ड",
+        "ocr_text_sha256": "2edc8c501fa015f9e65071151d2ae9c7b98aa1ee3c26fa8585e3fc43033e6390",
+        "ocr_word_count": 169,
+        "expected_token_count": 1,
+        "exact_token_hits": 1,
+        "longest_exact_character_run": 5,
+        "expected_normalized_characters": 5,
+        "exact_literal_present": true
+      },
+      {
+        "pdf_page": 424,
+        "role": "first sopana close",
+        "expected_literal": "प्रथमः सोपानः समाप्तः",
+        "ocr_text_sha256": "5c485e169ffc7cb5d4d6abf3bfe54cb4778ee01df69ca1ba63021ad5701ba1dd",
+        "ocr_word_count": 78,
+        "expected_token_count": 3,
+        "exact_token_hits": 3,
+        "longest_exact_character_run": 7,
+        "expected_normalized_characters": 11,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 425,
+        "role": "second sopana start",
+        "expected_literal": "द्वितीय सोपान अयोध्याकाण्ड",
+        "ocr_text_sha256": "ce0a9e010ec98c31b3b42bfcb11f2809fb324b2d2c6323d4215dcceffddb90c7",
+        "ocr_word_count": 136,
+        "expected_token_count": 3,
+        "exact_token_hits": 3,
+        "longest_exact_character_run": 7,
+        "expected_normalized_characters": 14,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 738,
+        "role": "second sopana close",
+        "expected_literal": "द्वितीयः सोपानः समाप्तः",
+        "ocr_text_sha256": "c1ca6a41bd3be7acdca5bf5daa875f233ef5704e63418c54feea682b6d2ef953",
+        "ocr_word_count": 341,
+        "expected_token_count": 3,
+        "exact_token_hits": 3,
+        "longest_exact_character_run": 8,
+        "expected_normalized_characters": 11,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 739,
+        "role": "third sopana start",
+        "expected_literal": "तृतीय सोपान अरण्यकाण्ड",
+        "ocr_text_sha256": "2d747853c765325f78a77629e014146fff79ca09df946e1f7d5c5e2130b6d4c0",
+        "ocr_word_count": 167,
+        "expected_token_count": 3,
+        "exact_token_hits": 1,
+        "longest_exact_character_run": 3,
+        "expected_normalized_characters": 13,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 807,
+        "role": "third sopana close",
+        "expected_literal": "तृतीयः सोपानः समाप्तः",
+        "ocr_text_sha256": "9c1a19d3501e1d5c353b72236e419623929b8bd7b88d4bed9b0016e674c80dcc",
+        "ocr_word_count": 314,
+        "expected_token_count": 3,
+        "exact_token_hits": 3,
+        "longest_exact_character_run": 7,
+        "expected_normalized_characters": 10,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 808,
+        "role": "fourth sopana start",
+        "expected_literal": "चतुर्थ सोपान किष्किन्धाकाण्ड",
+        "ocr_text_sha256": "d9a54c0b0123597674f62260b6cd80a82fc8bc2b9ba7807f593ab8f568ac31ac",
+        "ocr_word_count": 169,
+        "expected_token_count": 3,
+        "exact_token_hits": 0,
+        "longest_exact_character_run": 3,
+        "expected_normalized_characters": 15,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 849,
+        "role": "fourth sopana close",
+        "expected_literal": "चतुर्थः सोपानः समाप्तः",
+        "ocr_text_sha256": "c66d08b3e182edcd1ec9e2ab3e53bbfb92910265238a909ae55f98a9f9bca107",
+        "ocr_word_count": 330,
+        "expected_token_count": 3,
+        "exact_token_hits": 3,
+        "longest_exact_character_run": 11,
+        "expected_normalized_characters": 11,
+        "exact_literal_present": true
+      },
+      {
+        "pdf_page": 850,
+        "role": "fifth sopana start",
+        "expected_literal": "पञ्चम सोपान सुन्दरकाण्ड",
+        "ocr_text_sha256": "c98c39d2b36537e029a11724d6597a275469371a1605955bbe40e48e48f5da3c",
+        "ocr_word_count": 172,
+        "expected_token_count": 3,
+        "exact_token_hits": 1,
+        "longest_exact_character_run": 6,
+        "expected_normalized_characters": 14,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 921,
+        "role": "fifth sopana close",
+        "expected_literal": "पञ्चमः सोपानः समाप्तः",
+        "ocr_text_sha256": "58b3b9cfc823f7f500da79c83f38a162e4c9265f71db5dd54e6a6fdf7294dcea",
+        "ocr_word_count": 357,
+        "expected_token_count": 3,
+        "exact_token_hits": 2,
+        "longest_exact_character_run": 8,
+        "expected_normalized_characters": 11,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 922,
+        "role": "sixth sopana start",
+        "expected_literal": "षष्ठ सोपान लङ्काकाण्ड",
+        "ocr_text_sha256": "b3fe7e8e5ee7537c8da8ada47075abbb5fc2bc2a00d916b833da8269f1d195b1",
+        "ocr_word_count": 147,
+        "expected_token_count": 3,
+        "exact_token_hits": 0,
+        "longest_exact_character_run": 2,
+        "expected_normalized_characters": 12,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 1070,
+        "role": "sixth sopana close",
+        "expected_literal": "षष्ठः सोपानः समाप्तः",
+        "ocr_text_sha256": "01782f51560bb354d0650327b97f6951a4c945332dee662ccf35d7b0bdae19f6",
+        "ocr_word_count": 318,
+        "expected_token_count": 3,
+        "exact_token_hits": 2,
+        "longest_exact_character_run": 8,
+        "expected_normalized_characters": 10,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 1071,
+        "role": "seventh sopana start",
+        "expected_literal": "सप्तम सोपान उत्तरकाण्ड",
+        "ocr_text_sha256": "ca246e10de4f3efbf2183d3a9f21927cc3fb3e5e1104a11c7a4c8dd0e34aa411",
+        "ocr_word_count": 159,
+        "expected_token_count": 3,
+        "exact_token_hits": 2,
+        "longest_exact_character_run": 7,
+        "expected_normalized_characters": 14,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 1223,
+        "role": "seventh sopana close",
+        "expected_literal": "सप्तमः सोपानः समाप्तः",
+        "ocr_text_sha256": "782d31e1f68acfcac09e7a471eb5ed4c689acee496128eca8d3aeb8f5e3032f9",
+        "ocr_word_count": 179,
+        "expected_token_count": 3,
+        "exact_token_hits": 2,
+        "longest_exact_character_run": 8,
+        "expected_normalized_characters": 11,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 1224,
+        "role": "arati",
+        "expected_literal": "रामायण की आरती",
+        "ocr_text_sha256": "6a5106489717e86ad5f629f41f81fcf243848c346b6f1a0fbad80d145295f64f",
+        "ocr_word_count": 246,
+        "expected_token_count": 3,
+        "exact_token_hits": 3,
+        "longest_exact_character_run": 8,
+        "expected_normalized_characters": 8,
+        "exact_literal_present": true
+      },
+      {
+        "pdf_page": 1225,
+        "role": "Manas-Pingala start",
+        "expected_literal": "मानस पिङ्गल",
+        "ocr_text_sha256": "c40f4eb3f8d7a9ed8fe63d92e060b737e1354893e390b2317034be01b81e720f",
+        "ocr_word_count": 283,
+        "expected_token_count": 2,
+        "exact_token_hits": 1,
+        "longest_exact_character_run": 3,
+        "expected_normalized_characters": 7,
+        "exact_literal_present": false
+      },
+      {
+        "pdf_page": 1236,
+        "role": "Manas-Pingala close",
+        "expected_literal": "इति मानस पिङ्गल समाप्तः",
+        "ocr_text_sha256": "672d93a7efd3ce4d09a7503bb614a4f0f02bfaa1f4eac07b247eed4e5662e08f",
+        "ocr_word_count": 190,
+        "expected_token_count": 4,
+        "exact_token_hits": 1,
+        "longest_exact_character_run": 5,
+        "expected_normalized_characters": 13,
+        "exact_literal_present": false
+      }
+    ]
+  },
+  "product_boundary": {
+    "coordinate_alignment_ready_for_correction_work": true,
+    "ocr_quality_proven": false,
+    "ocr_text_exact": false,
+    "ocr_product_usable": false,
+    "passage_indexed": false,
+    "public_search_sarthi_api_vector_training_allowed": false,
+    "ai_translation_from_unverified_ocr_allowed": false,
+    "complete_ramcharitmanas_text_lane": false,
+    "next_required_step": "Use the coordinate OCR only as a correction draft. Establish a source-aligned ground-truth corpus, correct and validate text page by page, bind passage coordinates to the fixed PDF, and pass omission/duplication and sampled character-accuracy gates before product promotion."
+  }
+}

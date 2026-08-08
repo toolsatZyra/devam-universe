@@ -1,0 +1,97 @@
+{
+  "contract": "DEVAM_VARANASI_DEV_DEEPAWALI_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-dev-deepawali-varanasi-2026-v1",
+  "fetched_at_utc": "2026-08-07T01:20:00.000Z",
+  "scope": {
+    "reference_location": "Varanasi, Uttar Pradesh, India",
+    "geoname_id": 1253405,
+    "latitude": 25.3176,
+    "longitude": 82.9739,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-23", "2026-11-24"],
+    "selected_civil_date": "2026-11-24",
+    "supported_tradition_codes": ["regional-kashi-varanasi"],
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "drikpanchang-varanasi-dev-deepawali-2026",
+      "title": "2026 Dev Diwali for Varanasi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/diwali/dev-diwali/dev-deepawali-date-time.html?geoname-id=1253405&year=2026",
+      "observed_fetch": {"status": 200, "final_url": "https://www.drikpanchang.com/diwali/dev-diwali/dev-deepawali-date-time.html?geoname-id=1253405&year=2026", "response_bytes": 56405, "response_sha256": "5c5ee1ca3d167ac6568fb3c492b7c7ee21ab006027aed04efdfb8d093deaf344", "strict_utf8": true},
+      "observed_literals": {"selected_civil_date": "2026-11-24", "purnima_begins_local": "2026-11-23T23:42:00+05:30", "purnima_ends_local": "2026-11-24T20:23:00+05:30", "displayed_pradosha_start_local": "2026-11-24T17:08:00+05:30", "displayed_pradosha_end_local": "2026-11-24T19:47:00+05:30"},
+      "evidence_role": "current_practitioner_varanasi_date_and_pradosha_rule_fixture_not_universal_vidhi",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "incredible-india-varanasi-dev-deepawali-identity",
+      "title": "10 unmissable travel and food experiences - Dev Deepawali",
+      "publisher": "Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/10-unmissable-travel-and-food-experiences",
+      "observed_fetch": {"status": 200, "final_url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/10-unmissable-travel-and-food-experiences", "response_bytes": 477739, "response_sha256": "c3e1756e2eb39ed49fc829ad25dc882ede9832fc4e5b1bb4991849e49218df23", "strict_utf8": true},
+      "observed_literals": {"varanasi": true, "full_moon_after_diwali": true, "diwali_of_the_gods": true, "tripurasura_shiva_story_variant": true},
+      "evidence_role": "official_varanasi_full_moon_identity_and_story_variant_not_date_or_vidhi_authority",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "incredible-india-varanasi-ghat-lamps",
+      "title": "Varanasi - witness the true magic of Dev Deepavali",
+      "publisher": "Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi",
+      "observed_fetch": {"status": 200, "final_url": "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi", "response_bytes": 595856, "response_sha256": "2811c7169ce321ae1d94d72e5ad0f41b64075219b2b98f6e3b3c081100ad67f6", "strict_utf8": true},
+      "observed_literals": {"varanasi_ghats": true, "thousands_of_diyas": true, "public_festival_context": true},
+      "evidence_role": "official_varanasi_public_festival_and_lamp_context_not_safety_or_ritual_authority",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "utsav-india-dev-deepawali-varanasi-context",
+      "title": "Dev Deepawali",
+      "publisher": "Ministry of Tourism, Government of India / Uttar Pradesh Tourism",
+      "url": "https://utsav.gov.in/public/view-event/dev-deepawali-1",
+      "observed_fetch": {"status": 200, "final_url": "https://utsav.gov.in/public/view-event/dev-deepawali-1", "response_bytes": 30920, "response_sha256": "10c28073953840b0f6ceec42bcb8f4621a3bab23f316ded53931a6deafacdd3e", "strict_utf8": true},
+      "observed_literals": {"varanasi": true, "fifteen_days_after_deepawali": true, "ghats_lights_chants_prayers": true, "historical_event_dates_not_2026": true},
+      "evidence_role": "official_recurring_varanasi_event_context_not_2026_date_or_current_access_authority",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "rule": {
+    "observance_slug": "dev-deepawali-varanasi",
+    "canonical_name": "Dev Deepawali, Varanasi",
+    "selected_civil_date": "2026-11-24",
+    "target_tithi": "Purnima",
+    "target_paksha": "shukla",
+    "decision_window": "pradosha",
+    "selection": "select_only_when_exactly_one_candidate_civil_evening_has_purnima_overlap_with_local_pradosha",
+    "generic_kartika_purnima_record_remains_separate": true,
+    "baps_dev_diwali_and_tulsi_vivah_close_remain_separate": true,
+    "current_event_access_or_travel_operations_resolved": false
+  },
+  "identity": {
+    "bounded_positive_claim": "Varanasi Dev Deepawali is a Kartika full-moon public festival associated with illuminated Ganga ghats, prayer, the Diwali-of-the-gods identity, and a Shiva-Tripurasura story variant.",
+    "story_variant_not_single_historical_fact": true,
+    "entire_kartika_purnima_tradition_complete": false
+  },
+  "separate_lanes": [
+    {"lane": "generic-kartika-purnima", "status": "existing_lunar_calendar_day_record_not_merged"},
+    {"lane": "baps-dev-diwali-and-tulsi-vivah-samapt", "status": "existing_institutional_calendar_record_not_merged", "evidence_fixture_sha256": "fa33540adba85a7e4e79b454d98c80677c0b7c92b0e557a26ea6168b7f038257"}
+  ],
+  "denials": {
+    "one_universal_kartika_purnima_or_dev_diwali_identity": false,
+    "generic_kartika_purnima_merged": false,
+    "baps_dev_diwali_merged": false,
+    "ritual_bathing_or_water_entry_instructed": false,
+    "floating_lamps_or_offerings_in_river_instructed": false,
+    "unattended_flame_or_fireworks_recommended": false,
+    "boat_booking_crowd_route_access_or_travel_advice_given": false,
+    "formal_ganga_aarti_puja_mantra_or_priest_liturgy_included": false,
+    "fast_or_dietary_regimen_prescribed": false,
+    "sin_removal_purification_merit_protection_or_outcome_guaranteed": false,
+    "all_varanasi_kartika_purnima_temple_ghat_family_and_regional_variants_complete": false,
+    "source_text_returned_or_republished": false
+  }
+}

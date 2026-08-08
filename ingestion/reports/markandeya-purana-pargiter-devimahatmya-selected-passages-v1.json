@@ -1,0 +1,103 @@
+{
+  "contract": "DEVAM_PARGITER_DEVIMAHATMYA_SELECTED_PASSAGES_REPORT_V1",
+  "result": "PASS",
+  "promotion_id": "markandeya-purana-pargiter-devimahatmya-selected-passages-v1",
+  "generated_at": "2026-08-08T04:20:07.8462407+05:30",
+  "inputs": {
+    "plan": {
+      "path": "ingestion/plans/markandeya-purana-pargiter-devimahatmya-selected-passages-v1.json",
+      "bytes": 13105,
+      "sha256": "a3295fd022b09481d64d377ee13e82691c2c93d99cec0fd98966291465373102"
+    },
+    "compiler": {
+      "path": "tools/promote_pargiter_devimahatmya_selected_passages.py",
+      "bytes": 17738,
+      "sha256": "96360236eaf257a622366c68caac6379e6e9d956cd6feed8c32609451ccadad1"
+    },
+    "test": {
+      "path": "tools/test_promote_pargiter_devimahatmya_selected_passages.py",
+      "bytes": 4918,
+      "sha256": "bd9c7dbaa4a1e3365b04e8de9815fbf6b334920f4f3235ff0f4cba8e883893fe"
+    },
+    "upstream_plan_sha256": "fe1102e0624286cf2676da7249b52e7bca69f3310ba6008b82312b1fc04c9773",
+    "upstream_packet_sha256": "9b7ccd43163cadd84f3c41a8c4fbacf40205e4539678c2b51da16829fe257969",
+    "quarantined_ocr_passage_content_root_sha256": "c845a52904fdc92134e93f3c46064445eecb400e08db459b7d235d10bfca9a65",
+    "fixed_pdf_sha256": "f7023e3aa0127b9a093b88664c68374da72d469e4f790c4a7bd4606a392e7300",
+    "fixed_pdf_bytes": 47426809
+  },
+  "compiled": {
+    "sql_sha256": "d0eec4d692256ee990d6089662a14c193950343b423e3a939497432118bac5e4",
+    "selected_passage_count": 7,
+    "selected_passage_content_root_sha256": "94d4ca27d343fb78283c702c5bfee7109931417fa84c5b962eb6a0f6d16be17b",
+    "selected_text_sha256": [
+      "1951ee5981136f36e2895073d4f45f55e0c9a98191fc4a8f0901579da820010e",
+      "14870d138d9c1078c8fb0ee914b3ae8c2ec36fcc864e600c16a11e435af06837",
+      "4caca07043b9b14968bc50e8b251d4a982bc1a4233323aee715ad17bfcd2eb00",
+      "ba9ecf6dbe20c4d99e39ae4d13adea7512cd6ab33bdb1f94aa9a645517073965",
+      "952fc60e45f29bdea730e22785d90c94441f2506ed9b697757ba928bfe865f2b",
+      "f5cd75eb9f962b17801414c3e397eb5092aa5eea0d95d02ae0f3a86fac37901b",
+      "2600cc69d282db7cc32ea8bfb882c7ff318808d1b75ae7afe6ed518fd463d5b0"
+    ],
+    "cantos": [82, 83, 85, 90, 91, 92, 93],
+    "pdf_pages": [517, 524, 534, 553, 556, 562, 566],
+    "source_payloads_copied_or_downloaded": false,
+    "provider_ocr_promoted": false,
+    "comparison_witness_saved_or_promoted": false,
+    "reader_payload_created": false
+  },
+  "validation": {
+    "command": "python -m unittest tools.test_promote_pargiter_devimahatmya_selected_passages -v",
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "fixed_source_rehashed": true,
+    "all_selected_pages_visually_inspected": true,
+    "selected_text_fixities_recomputed_in_hosted_database": true
+  },
+  "hosted_import": {
+    "attempted": true,
+    "project_id": "bucgdaunsuzithfigtmr",
+    "applied_at": "2026-08-08T04:20:07.8462407+05:30",
+    "status": "PASS",
+    "verification": {
+      "work_rights_lane": "product_allowed",
+      "work_publication_state": "published",
+      "english_expression_rights_lane": "product_allowed",
+      "english_expression_publication_state": "published",
+      "pargiter_edition_rights_lane": "product_allowed",
+      "pargiter_edition_publication_state": "published",
+      "pdf_source_rights_lane": "product_allowed",
+      "selected_passage_count": 7,
+      "selected_passage_min_ordinal": 1,
+      "selected_passage_max_ordinal": 7,
+      "selected_passage_text_hashes_match_plan": true,
+      "quarantined_ocr_passage_count": 778,
+      "quarantined_ocr_published_count": 0,
+      "private_sanskrit_expression_rights_lane": "private_evidence",
+      "private_sanskrit_expression_publication_state": "review"
+    },
+    "anonymous_public_rpc": {
+      "tested": true,
+      "role": "anon",
+      "function": "public.search_public_passages",
+      "query": "heart of every living creature",
+      "language_code": "en",
+      "pargiter_result_observed": true,
+      "result_source_sha256": "f7023e3aa0127b9a093b88664c68374da72d469e4f790c4a7bd4606a392e7300",
+      "result_source_ordinal": 5,
+      "result_text_sha256": "952fc60e45f29bdea730e22785d90c94441f2506ed9b697757ba928bfe865f2b"
+    }
+  },
+  "positive_boundary": "Seven visually verified, page-addressed, source-aligned English passages from the complete fixed 1904 Pargiter edition’s Devīmāhātmya context and poem boundary.",
+  "completion_denials": {
+    "complete_transcription_of_cantos_81_93": false,
+    "complete_devimahatmya_tradition_or_all_recensions": false,
+    "complete_markandeya_purana_tradition": false,
+    "sanskrit_source_original_present_in_this_expression": false,
+    "provider_ocr_product_ready": false,
+    "page_layout_or_footnotes_preserved": false,
+    "universal_ritual_authority": false,
+    "divine_outcome_guaranteed_by_devam_or_sarthi": false,
+    "durga_hero_universe_complete": false,
+    "mvp_library_complete": false
+  }
+}

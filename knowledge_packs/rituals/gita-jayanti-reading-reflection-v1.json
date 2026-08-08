@@ -1,0 +1,120 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-gita-jayanti-reading-reflection-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "mokshada-ekadashi",
+  "scope": {
+    "region_codes": ["north-india", "west-india", "south-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india", "smarta-south-india", "vaishnava-iskcon"],
+    "language_codes": ["en", "hi"],
+    "gita_jayanti_reading_reflection_only": true,
+    "mokshada_ekadashi_fast_parana_and_temple_vidhi_excluded": true,
+    "user_selected_or_attributable_edition_required": true
+  },
+  "sources": [
+    {"source_id": "devam-gita-jayanti-evidence-fixture", "title": "Devam Gita Jayanti 2026 evidence fixture", "publisher": "Devam", "url": null, "source_class": "bounded_date_identity_text_and_variant_fixture", "rights_lane": "derivative_allowed", "artifact_sha256": "20e6f9f473cbdf5a68282b36af4a08a6471a0f814665132743e22fca6bd44930"},
+    {"source_id": "utsav-international-geeta-mahotsav", "title": "International Geeta Mahotsav", "publisher": "Ministry of Tourism, Government of India / Kurukshetra Development Board", "url": "https://utsav.gov.in/view-event/international-geeta-mahotsav", "source_class": "official_recurring_identity_and_public_programme_context_not_universal_vidhi", "rights_lane": "reference_only"},
+    {"source_id": "kurukshetra-jyotisar-events", "title": "Jyotisar Events - Geeta Jayanti Mahotsav", "publisher": "District Kurukshetra, Government of Haryana", "url": "https://kurukshetra.gov.in/jyotisarevents/", "source_class": "official_kurukshetra_identity_and_recitation_context_not_home_vidhi", "rights_lane": "reference_only"},
+    {"source_id": "iitk-gita-supersite-introduction", "title": "Introduction to the Bhagavadgita", "publisher": "Gita Supersite, Indian Institute of Technology Kanpur", "url": "https://www.gitasupersite.iitk.ac.in/srimad/intro", "source_class": "academic_text_identity_structure_and_commentary_variant_context", "rights_lane": "reference_only"},
+    {"source_id": "gretil-bhagavadgita-four-commentaries-tei", "title": "Bhagavadgita with four attributable Sanskrit commentaries", "publisher": "GRETIL / SUB Gottingen", "url": null, "source_class": "existing_private_library_source_reference_not_user_facing_translation", "rights_lane": "private_evidence"},
+    {"source_id": "devam-gita-reading-safety-boundary", "title": "Devam source attribution, fasting, outcome, and scope boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_scope_boundary_not_scriptural_or_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "gita-jayanti-reading-reflection-en-v1",
+      "language_code": "en",
+      "title": "Gita Jayanti reading and reflection",
+      "summary": "Mark Gita Jayanti by reading or listening to an attributable Bhagavad Gita edition, reflecting on Krishna and Arjuna's dialogue, and carrying one insight into action. This guide does not prescribe the Mokshada Ekadashi fast, parana, temple worship, or one commentary as universal.",
+      "family_practice_note": "Tell Sarthi which language, translation, commentary, family practice, or sampradaya you use. If you keep the Ekadashi vrata, obtain fasting, health, and parana guidance from your own established authority; the reading path here is complete without fasting.",
+      "context_prompts": ["Which language and edition of the Bhagavad Gita do you use?", "Does your family or sampradaya follow a particular commentary?", "Would you like a short passage, one chapter, or a guided group reading?", "Are you asking for Gita reflection or separately for Mokshada Ekadashi vrata guidance?"],
+      "tiers": [
+        {
+          "tier": "minimum", "label": "Ten-minute dialogue and action", "estimated_minutes": 10,
+          "materials": [{"item": "An attributable Bhagavad Gita edition in a language you understand", "substitutions": ["Use the IIT Kanpur Gita Supersite, an audio edition with named translator, or a trusted family edition"], "optional": false}, {"item": "A note or memory prompt", "substitutions": ["Reflect without writing"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Name the edition, translator, and commentary if present; do not treat an unattributed quotation or AI paraphrase as the source text.", "why": "The Gita has many translations and commentarial traditions, so attribution preserves the teaching's source boundary.", "optional": false, "source_ids": ["iitk-gita-supersite-introduction", "gretil-bhagavadgita-four-commentaries-tei"]},
+            {"ordinal": 2, "instruction": "Read or listen to one short, coherent passage and notice the question Arjuna is facing and the response Krishna gives in that passage.", "why": "The work is a dialogue in the Mahabharata context; reading speaker and context together is safer than isolating a slogan.", "optional": false, "source_ids": ["iitk-gita-supersite-introduction"]},
+            {"ordinal": 3, "instruction": "Write one sentence beginning, 'In my situation, this invites me to…', then choose one small action you can take without claiming that it is the passage's only interpretation.", "why": "It turns study into responsible daily reflection while retaining interpretive humility.", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard", "label": "One-chapter study", "estimated_minutes": 30,
+          "materials": [{"item": "One attributable translation and, optionally, one named commentary", "substitutions": ["Use Sanskrit plus a trusted translation, or an accessible audio edition"], "optional": false}, {"item": "Notebook or shared family discussion", "substitutions": ["Use a private voice note or silent reflection"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Choose one of the eighteen chapters and read its title and complete chapter in the edition you identified.", "why": "The Gita is structured in eighteen chapters; a complete chapter gives more context than disconnected quotations.", "optional": false, "source_ids": ["iitk-gita-supersite-introduction"]},
+            {"ordinal": 2, "instruction": "Separate the source verse, translator wording, commentary, and your own response in your notes.", "why": "This prevents later interpretation from being misremembered as the original Sanskrit or as a universal teaching.", "optional": false, "source_ids": ["iitk-gita-supersite-introduction", "gretil-bhagavadgita-four-commentaries-tei"]},
+            {"ordinal": 3, "instruction": "Discuss or reflect on one tension in the chapter—such as action and attachment, knowledge and practice, devotion and discernment—using the language of your edition rather than a fabricated quotation.", "why": "The reflection remains anchored while allowing the selected chapter and tradition to set its emphasis.", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]},
+            {"ordinal": 4, "instruction": "Close by choosing one realistic act of duty, restraint, learning, care, or devotion for the coming day.", "why": "A bounded action makes the study useful without promising liberation, success, or emotional certainty.", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate", "label": "Established study or recitation programme", "estimated_minutes": 90,
+          "materials": [{"item": "The edition and materials directed by an established teacher, temple, study group, or family", "substitutions": ["Use the standard one-chapter form at home"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the programme's edition, language, commentary lineage, duration, accessibility, and whether it includes Ekadashi observance separately.", "why": "Public and sampradaya programmes differ; their leaders, not a generic guide, define their recitation and vrata.", "optional": false, "source_ids": ["utsav-international-geeta-mahotsav", "kurukshetra-jyotisar-events", "devam-gita-reading-safety-boundary"]},
+            {"ordinal": 2, "instruction": "Participate in reading, discourse, bhajan, or discussion only in the form directed by that established programme.", "why": "Official sources establish these as observed activities without proving one universal home sequence.", "optional": false, "source_ids": ["utsav-international-geeta-mahotsav", "kurukshetra-jyotisar-events"]},
+            {"ordinal": 3, "instruction": "Record which words came from the Gita, which came from a named translator or commentator, and which were the speaker's application.", "why": "Attribution preserves differing interpretations and supports later source-grounded exploration in Devam.", "optional": false, "source_ids": ["iitk-gita-supersite-introduction", "gretil-bhagavadgita-four-commentaries-tei"]},
+            {"ordinal": 4, "instruction": "Close with one practical commitment and one question to revisit; do not treat completing a chapter or programme as a guaranteed spiritual or worldly outcome.", "why": "The study remains actionable and honest about what the evidence can establish.", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "gita-jayanti-reading-reflection-hi-v1",
+      "language_code": "hi",
+      "title": "गीता जयंती पाठ और चिंतन",
+      "summary": "स्रोत-पहचान वाले भगवद्गीता संस्करण को पढ़कर या सुनकर, कृष्ण-अर्जुन संवाद पर चिंतन करके और एक सीख को कर्म में लाकर गीता जयंती मनाएँ। यह मार्गदर्शिका मोक्षदा एकादशी व्रत, पारण, मंदिर-पूजा या किसी एक टीका को सार्वभौमिक नहीं बनाती।",
+      "family_practice_note": "सारथि को अपनी भाषा, अनुवाद, टीका, पारिवारिक परम्परा या सम्प्रदाय बताएं। यदि आप एकादशी व्रत रखते हैं, तो उपवास, स्वास्थ्य और पारण के निर्देश अपने स्थापित अधिकारी से लें; यहाँ का पाठ-मार्ग बिना उपवास के भी पूर्ण है।",
+      "context_prompts": ["आप भगवद्गीता किस भाषा और संस्करण में पढ़ते हैं?", "क्या आपके परिवार या सम्प्रदाय में कोई विशेष टीका मानी जाती है?", "आप छोटा अंश, एक अध्याय या समूह-पाठ चाहते हैं?", "आप गीता-चिंतन पूछ रहे हैं या अलग से मोक्षदा एकादशी व्रत-विधि?"],
+      "tiers": [
+        {
+          "tier": "minimum", "label": "दस मिनट का संवाद और कर्म", "estimated_minutes": 10,
+          "materials": [{"item": "आपकी समझ की भाषा में स्रोत-पहचान वाला भगवद्गीता संस्करण", "substitutions": ["IIT कानपुर गीता सुपरसाइट, अनुवादक-नाम वाला ऑडियो, या विश्वसनीय पारिवारिक संस्करण लें"], "optional": false}, {"item": "नोट या स्मरण-संकेत", "substitutions": ["बिना लिखे मन में चिंतन करें"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "संस्करण, अनुवादक और टीका का नाम देखें; बिना स्रोत का उद्धरण या AI-सार मूल पाठ न मानें।", "why": "गीता के अनेक अनुवाद और टीका-परम्पराएँ हैं, इसलिए स्रोत-पहचान आवश्यक है।", "optional": false, "source_ids": ["iitk-gita-supersite-introduction", "gretil-bhagavadgita-four-commentaries-tei"]},
+            {"ordinal": 2, "instruction": "एक छोटा, पूरा अंश पढ़ें या सुनें और देखें कि उसमें अर्जुन का प्रश्न क्या है तथा कृष्ण क्या उत्तर देते हैं।", "why": "यह महाभारत-सन्दर्भ में संवाद है; वक्ता और प्रसंग सहित पढ़ना अकेले नारे से अधिक विश्वसनीय है।", "optional": false, "source_ids": ["iitk-gita-supersite-introduction"]},
+            {"ordinal": 3, "instruction": "एक वाक्य लिखें—'मेरी परिस्थिति में यह मुझे… के लिए बुलाता है'—और एक छोटा कर्म चुनें, इसे एकमात्र अर्थ न कहें।", "why": "चिंतन दैनिक जीवन से जुड़ता है और व्याख्या में विनम्रता बनी रहती है।", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard", "label": "एक अध्याय का अध्ययन", "estimated_minutes": 30,
+          "materials": [{"item": "एक स्रोत-पहचान वाला अनुवाद और इच्छा हो तो एक नामित टीका", "substitutions": ["संस्कृत के साथ विश्वसनीय अनुवाद या सुलभ ऑडियो लें"], "optional": false}, {"item": "नोटबुक या पारिवारिक चर्चा", "substitutions": ["निजी वॉइस नोट या मौन चिंतन करें"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "अठारह अध्यायों में से एक चुनें और अपने चुने संस्करण में उसका शीर्षक तथा पूरा अध्याय पढ़ें।", "why": "पूरा अध्याय अलग-अलग उद्धरणों की तुलना में अधिक प्रसंग देता है।", "optional": false, "source_ids": ["iitk-gita-supersite-introduction"]},
+            {"ordinal": 2, "instruction": "नोट में मूल श्लोक, अनुवादक के शब्द, टीका और अपनी प्रतिक्रिया अलग रखें।", "why": "इससे बाद की व्याख्या मूल संस्कृत या सार्वभौमिक शिक्षा बनकर याद नहीं होती।", "optional": false, "source_ids": ["iitk-gita-supersite-introduction", "gretil-bhagavadgita-four-commentaries-tei"]},
+            {"ordinal": 3, "instruction": "अध्याय के किसी एक तनाव—जैसे कर्म और आसक्ति, ज्ञान और अभ्यास, भक्ति और विवेक—पर अपने संस्करण की भाषा में चिंतन करें।", "why": "चिंतन स्रोत से जुड़ा रहता है और चुने अध्याय/परम्परा का जोर बना रहता है।", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]},
+            {"ordinal": 4, "instruction": "अगले दिन के लिए कर्तव्य, संयम, सीख, सेवा या भक्ति का एक वास्तविक छोटा कर्म चुनें।", "why": "अध्ययन उपयोगी बनता है, मुक्ति, सफलता या भावनात्मक निश्चितता का वादा किए बिना।", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate", "label": "स्थापित अध्ययन या पाठ-कार्यक्रम", "estimated_minutes": 90,
+          "materials": [{"item": "स्थापित शिक्षक, मंदिर, अध्ययन-समूह या परिवार द्वारा निर्देशित संस्करण और सामग्री", "substitutions": ["घर पर एक-अध्याय वाला मानक रूप रखें"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "कार्यक्रम का संस्करण, भाषा, टीका-परम्परा, अवधि, सुगमता और अलग एकादशी-अनुष्ठान पूछ लें।", "why": "सार्वजनिक और सम्प्रदाय कार्यक्रम अलग होते हैं; उनका पाठ और व्रत उनके नेता निर्धारित करते हैं।", "optional": false, "source_ids": ["utsav-international-geeta-mahotsav", "kurukshetra-jyotisar-events", "devam-gita-reading-safety-boundary"]},
+            {"ordinal": 2, "instruction": "पाठ, प्रवचन, भजन या चर्चा में स्थापित कार्यक्रम के निर्देशानुसार ही भाग लें।", "why": "आधिकारिक स्रोत इन गतिविधियों की पहचान देते हैं, एक सार्वभौमिक गृह-विधि नहीं।", "optional": false, "source_ids": ["utsav-international-geeta-mahotsav", "kurukshetra-jyotisar-events"]},
+            {"ordinal": 3, "instruction": "लिखें कि कौन-से शब्द गीता से, कौन-से नामित अनुवादक या टीकाकार से और कौन-से वक्ता के अनुप्रयोग से आए।", "why": "स्रोत-पहचान अलग व्याख्याओं को सुरक्षित रखती है और Devam में आगे खोज संभव बनाती है।", "optional": false, "source_ids": ["iitk-gita-supersite-introduction", "gretil-bhagavadgita-four-commentaries-tei"]},
+            {"ordinal": 4, "instruction": "एक व्यावहारिक संकल्प और आगे पूछने के लिए एक प्रश्न रखें; पाठ पूरा करना किसी निश्चित आध्यात्मिक या सांसारिक फल की गारंटी न मानें।", "why": "अध्ययन उपयोगी और प्रमाण-सीमा के प्रति ईमानदार रहता है।", "optional": false, "source_ids": ["devam-gita-reading-safety-boundary"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "attributable_edition_and_commentary_boundaries_included": true,
+    "actionable_reflection_included": true,
+    "gita_jayanti_and_every_mokshada_or_vaikuntha_ekadashi_procedure_merged": false,
+    "one_translation_or_commentary_treated_as_universal": false,
+    "complete_gita_recitation_required": false,
+    "fast_or_dietary_regimen_prescribed": false,
+    "parana_timing_served_by_this_guide": false,
+    "ritual_bathing_deep_daan_puja_mantra_or_priestly_liturgy_instructed": false,
+    "kurukshetra_travel_event_or_crowd_operations_served": false,
+    "moksha_merit_success_clarity_or_other_outcome_guaranteed": false,
+    "all_textual_recensions_translations_commentaries_and_traditions_complete": false,
+    "source_text_returned_or_republished": false
+  }
+}

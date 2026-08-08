@@ -1,0 +1,50 @@
+{
+  "contract": "DEVAM_BOUNDED_AGASTYA_ARGHYA_PROVIDER_FIXTURE_V1",
+  "fixture_id": "devam-agastya-arghya-delhi-2026-resolved-v1",
+  "observance_slug": "agastya-arghya-delhi",
+  "scope": {
+    "reference_location": "New Delhi, NCT, India",
+    "geoname_id": 1261481,
+    "timezone": "Asia/Kolkata",
+    "supported_tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "selected_civil_date": "2026-09-04",
+    "displayed_arghya_window_local": "04:58-06:00",
+    "authority_kind": "location_specific_practitioner_calendar_fixture",
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "devam-unresolved-agastya-evidence-v1",
+      "artifact_path": "knowledge_packs/panchang/agastya-arghya-delhi-2026-v1.json",
+      "artifact_sha256": "38e1370c34a5179ad7ef57fdf73f2b28db8c1102ed261f3eb1c7e3e59c191640",
+      "evidence_role": "retained astronomical historical and practitioner evidence"
+    },
+    {
+      "source_id": "drikpanchang-delhi-agastya-arghya-2026",
+      "url": "https://www.drikpanchang.com/rituals/agastya-arghya/agastya-arghya-date-time.html?geoname-id=1261481&year=2026",
+      "response_bytes": 60405,
+      "response_sha256": "19ee59d1d49372e3ea9e012572aec4b64941f219243dd36aa15d73303c79ac00",
+      "evidence_role": "bounded New Delhi date and displayed arghya window"
+    }
+  ],
+  "decision": {
+    "selected_civil_date": "2026-09-04",
+    "displayed_star_rise_local": "04:58",
+    "displayed_arghya_window_local": "04:58-06:00",
+    "provider_fixture_accepted_for_exact_location_year_lane": true,
+    "provider_method_reproduced": false,
+    "ordinary_geometric_rise_treated_as_heliacal_rise": false,
+    "independent_three_degree_estimate_treated_as_provider_method": false
+  },
+  "denials": {
+    "general_agastya_date_algorithm_proved": false,
+    "provider_visibility_method_reproduced": false,
+    "ordinary_rise_equated_with_heliacal_visibility": false,
+    "weather_or_visibility_guaranteed": false,
+    "historical_caste_gender_donation_homa_or_outcome_rules_promoted": false,
+    "formal_mantra_or_full_vrata_procedure_claimed": false,
+    "universal_india_or_all_traditions_claimed": false,
+    "source_text_republished": false
+  }
+}

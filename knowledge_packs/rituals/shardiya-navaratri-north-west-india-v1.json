@@ -1,0 +1,254 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-shardiya-navaratri-north-west-india-practice-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "shardiya-navaratri-begins",
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "family_custom_overrides_generic_sequence": true,
+    "ghatasthapana_is_optional_not_universal": true,
+    "continuous_flame_requires_continuous_supervision": true
+  },
+  "sources": [
+    {
+      "source_id": "maharashtra-tourism-ghatasthapana-2026",
+      "title": "Ghatasthapana",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/ghatasthapana/",
+      "source_class": "official_current",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["Ghatasthapana as a Navaratri-opening practice", "clean ritual space", "soil and barley", "kalasha as a nine-day focus", "materials and regional variation"],
+      "live_observation": {"status": 200, "bytes": 624504, "sha256": "52d077de327998f36438e6ec36ab02024a0a7f1a722d8feee4becbc1a5b05b2a"}
+    },
+    {
+      "source_id": "incredible-india-navratri-2026",
+      "title": "Navratri: Nine nights of divine celebration",
+      "publisher": "Incredible India, Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/navratri",
+      "source_class": "official_current",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["nine-night festival", "common Navadurga list", "prayer and reflection", "regional distinction among Garba, Durga Puja, Ramlila and Golu"]
+    },
+    {
+      "source_id": "drikpanchang-kalasha-sthapana-2026",
+      "title": "Kalasha Sthapana Vidhi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/puja-vidhi/kalash-sthapana/kalash-sthapana.html",
+      "source_class": "current_practitioner_reference",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["expanded kalasha materials and sequence", "formal mantra-rich installation boundary", "offerings to the established kalasha"]
+    },
+    {
+      "source_id": "art-of-living-durga-saptashati-2026",
+      "title": "Durga Saptashati: A glorious song to the Divine Mother",
+      "publisher": "The Art of Living",
+      "url": "https://www.artofliving.org/in-en/navratri/durga-saptashati-a-glorious-song-to-the-divine-mother",
+      "source_class": "living_tradition_instruction",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["thirteen-chapter Durga Saptashati recitation", "multiple recitation frames", "day-divided Navaratri reading", "Chandi Homa as an elaborate trained practice"]
+    },
+    {
+      "source_id": "devam-devi-bhagavatam-vijnanananda-navaratri",
+      "title": "Srimad Devi Bhagavatam — Vijnanananda English digital compilation",
+      "publisher": "Devam retained source; historical translation by Swami Vijnanananda",
+      "url": "https://archive.org/details/SrimadDeviBhagavatamEnglish",
+      "source_class": "historical_primary_translation",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "derivative_allowed",
+      "supports": ["historical Navaratri observance chapters", "Kumari worship as an attributable historical practice", "scriptural practice context without modern universalization"],
+      "citation": {"ingestion_plan": "ingestion/plans/devi-bhagavatam-vijnanananda-english-v1.json", "packet_sha256": "4410de730dc585de7ee65c8b223ccfcfab7b0dace4f77256fbabb08c414f0c5e"}
+    },
+    {
+      "source_id": "devam-markandeya-purana-pargiter-devimahatmya",
+      "title": "The Markandeya Purana — Pargiter translation, Calcutta 1904",
+      "publisher": "Asiatic Society of Bengal; retained by Devam",
+      "url": "https://archive.org/details/in.ernet.dli.2015.47519",
+      "source_class": "historical_primary_translation",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "derivative_allowed",
+      "supports": ["complete Devimahatmya narrative boundary in one edition", "source-grounded optional reading context", "Mahishasura narrative without substituting it for current ritual procedure"],
+      "citation": {"ingestion_plan": "ingestion/plans/markandeya-purana-pargiter-1904-v1.json", "packet_sha256": "9b7ccd43163cadd84f3c41a8c4fbacf40205e4539678c2b51da16829fe257969"}
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "shardiya-navaratri-north-west-india-en-v1",
+      "language_code": "en",
+      "title": "Shardiya Navaratri at home",
+      "summary": "Choose a daily practice you can sustain for all nine nights. A simple lamp-free or supervised-lamp prayer is complete in its own scope; Ghatasthapana creates a nine-day care commitment and should be added only when it matches your family practice.",
+      "family_practice_note": "Tell Sarthi your region, family or sampradaya practice, whether you already perform Ghatasthapana, and whether someone can safely supervise a lamp. Bengali Durga Puja, Gujarati Garba, South Indian Golu and Nepal Dashain follow distinct practice worlds and are not folded into this guide.",
+      "context_prompts": [
+        "Does your family already establish a ghata or kalasha for Navaratri?",
+        "Are you following a North India or West India household practice?",
+        "Can an adult safely supervise every flame while it is lit?",
+        "Do you want a brief daily prayer, a text reading, or a priest/family-text-led observance?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "A sustainable daily Devi prayer",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "A clean place and a Devi image, symbol, or mental focus", "substitutions": ["Pray without an image if that is more natural for you"], "optional": false},
+            {"item": "Clean water and one flower, leaf, or fruit", "substitutions": ["Use one respectful locally available offering"], "optional": false},
+            {"item": "A small lamp", "substitutions": ["Skip the flame and pray in silence where fire is unsafe"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Clean the place and your hands, sit quietly, and state one intention for the nine-night practice in your own words.", "why": "A clear, sustainable intention is more useful than beginning a sequence the household cannot maintain.", "optional": false, "source_ids": ["incredible-india-navratri-2026", "art-of-living-durga-saptashati-2026"]},
+            {"ordinal": 2, "instruction": "Welcome Devi in the form your family knows. Offer water and the flower, leaf, or fruit; light a lamp only while an adult is present.", "why": "The guide preserves a simple household offering while keeping continuous-flame practice optional and supervised.", "optional": false, "source_ids": ["incredible-india-navratri-2026", "maharashtra-tourism-ghatasthapana-2026"]},
+            {"ordinal": 3, "instruction": "Recite a familiar Devi prayer, read a short source-grounded passage, sing your family arati, or repeat Devi's name calmly.", "why": "Prayer and textual recitation are widely present, while the exact text should follow the family's language and competence.", "optional": false, "source_ids": ["incredible-india-navratri-2026", "art-of-living-durga-saptashati-2026", "devam-markandeya-purana-pargiter-devimahatmya"]},
+            {"ordinal": 4, "instruction": "Sit silently, name one quality you want to practise that day, bow, and close the flame safely before leaving.", "why": "This makes the observance actionable without claiming that an editorial daily reflection is a mandatory rite.", "optional": false, "source_ids": ["incredible-india-navratri-2026"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Ghatasthapana and daily household care",
+          "estimated_minutes": 35,
+          "materials": [
+            {"item": "A clean stable platform, soil and a shallow earthen vessel", "substitutions": ["If sowing barley is not your family practice, use the minimum form instead of improvising"], "optional": false},
+            {"item": "Barley seed and clean water", "substitutions": ["Use only seed and soil suitable for safe indoor growing"], "optional": false},
+            {"item": "A clean kalasha or ghata, water, leaves used by your family, and a coconut if customary", "substitutions": ["Ask a family practitioner before changing inherited materials"], "optional": false},
+            {"item": "Flowers or leaves, fruit or another vegetarian naivedya, incense if safe, and a supervised lamp", "substitutions": ["Skip smoke and flame in unsafe or poorly ventilated spaces"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Use Devam's location-aware Ghatasthapana window for the first day. If the rule is unresolved or the window has passed, ask a family practitioner rather than guessing a substitute muhurta.", "why": "The established source treats timing as part of Ghatasthapana; the Panchang engine and ritual procedure remain separate evidence layers.", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026"]},
+            {"ordinal": 2, "instruction": "Prepare the clean platform, place soil in the shallow vessel, sow the barley, and establish the water-filled kalasha securely according to your family materials.", "why": "Soil, barley and the kalasha are central to the bounded North/West India lane.", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026", "drikpanchang-kalasha-sthapana-2026"]},
+            {"ordinal": 3, "instruction": "Welcome Devi with a simple sankalpa. Offer fragrance or flower, a safely supervised lamp, and naivedya; use only prayers or mantras you already know or have been taught.", "why": "The expanded sources contain formal mantra sequences, but Devam does not improvise or universalize them.", "optional": false, "source_ids": ["drikpanchang-kalasha-sthapana-2026", "art-of-living-durga-saptashati-2026"]},
+            {"ordinal": 4, "instruction": "Each day, refresh safe offerings, water the barley only as needed, keep the platform clean, pray or read, and extinguish ordinary lamps before leaving. Do not undertake an akhand flame unless continuous adult supervision is genuinely possible.", "why": "Ghatasthapana creates ongoing care; fire safety overrides the desire to imitate a continuous-flame observance.", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026"]},
+            {"ordinal": 5, "instruction": "On your family's concluding day, offer thanks and forgiveness, remove the setup respectfully, return clean water to plants where appropriate, compost untreated barley and flowers where possible, and retain or distribute food only when safe.", "why": "The close avoids unsafe or polluting immersion while acknowledging that exact family disposal practices vary.", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Family-text or priest-led Navaratri observance",
+          "estimated_minutes": 90,
+          "materials": [
+            {"item": "The materials specified by the family's text or officiant", "substitutions": ["Confirm the list before the observance rather than approximating ritual substances"], "optional": false},
+            {"item": "An edition-identified Devi Mahatmya or another authorized family text", "substitutions": ["Use a shorter familiar stotra if a complete recitation is not feasible"], "optional": false},
+            {"item": "A safely prepared space for any extended lamp or fire rite", "substitutions": ["Omit homa or continuous flame without trained supervision and a safe venue"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Have the family practitioner or officiant define the sankalpa, Ghatasthapana, daily upachara, recitation and conclusion appropriate to the lineage and location.", "why": "Formal Navaratri procedures differ and should not be reconstructed from a generic app sequence.", "optional": false, "source_ids": ["drikpanchang-kalasha-sthapana-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]},
+            {"ordinal": 2, "instruction": "If undertaking Durga Saptashati recitation, choose an edition and an authorized recitation frame; keep the thirteen chapters in their source order and do not treat Devam's summary as the recitation itself.", "why": "The living source attests multiple frames while Devam's Pargiter edition preserves one complete narrative boundary.", "optional": false, "source_ids": ["art-of-living-durga-saptashati-2026", "devam-markandeya-purana-pargiter-devimahatmya"]},
+            {"ordinal": 3, "instruction": "Treat Kumari worship, fasting, homa, animal-substitute symbolism and other lineage-specific observances as separate practices requiring contextual guidance; never pressure a child or medically vulnerable person.", "why": "Historical sources attest such practices, but attestation is not universal modern prescription.", "optional": false, "source_ids": ["devam-devi-bhagavatam-vijnanananda-navaratri", "art-of-living-durga-saptashati-2026"]},
+            {"ordinal": 4, "instruction": "Complete the formal conclusion and gifts or hospitality exactly as advised, then close or maintain the household setup according to the agreed sequence.", "why": "The concluding act belongs to the same family/tradition contract as the installation.", "optional": false, "source_ids": ["devam-devi-bhagavatam-vijnanananda-navaratri", "drikpanchang-kalasha-sthapana-2026"]}
+          ]
+        }
+      ],
+      "daily_sequence": [
+        {"ordinal": 1, "common_name": "Shailaputri", "reflection": "Begin steadily; establish the practice you can actually sustain.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 2, "common_name": "Brahmacharini", "reflection": "Practise patience and disciplined attention.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 3, "common_name": "Chandraghanta", "reflection": "Meet difficulty with alert courage rather than aggression.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 4, "common_name": "Kushmanda", "reflection": "Use creative energy to bring light and order into one part of life.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 5, "common_name": "Skandamata", "reflection": "Offer patient care without erasing your own limits.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 6, "common_name": "Katyayani", "reflection": "Choose one necessary action and take it with clarity.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 7, "common_name": "Kalaratri", "reflection": "Name a fear honestly and take one safe step through it.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 8, "common_name": "Mahagauri", "reflection": "Make room for repair, forgiveness and renewal; Ashtami customs vary by family and region.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]},
+        {"ordinal": 9, "common_name": "Siddhidatri", "reflection": "Complete what you began and acknowledge the help that made it possible; Navami customs vary.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]},
+        {"ordinal": 10, "common_name": "Vijayadashami", "reflection": "Close respectfully and carry one learned quality into ordinary life.", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]}
+      ]
+    },
+    {
+      "guide_id": "shardiya-navaratri-north-west-india-hi-v1",
+      "language_code": "hi",
+      "title": "घर पर शारदीय नवरात्रि",
+      "summary": "नौ रातों तक निभ सकने वाली साधना चुनें। सरल प्रार्थना अपने आप में पूर्ण हो सकती है; घटस्थापना नौ दिनों की देखभाल का संकल्प है और तभी जोड़ें जब वह आपके परिवार की परम्परा हो।",
+      "family_practice_note": "Sarthi को अपना क्षेत्र, पारिवारिक या सम्प्रदायिक परम्परा, घर में घटस्थापना का प्रचलन और दीप की सुरक्षित देखभाल की स्थिति बताएं। बंगाल की दुर्गा पूजा, गुजरात का गरबा, दक्षिण भारत का गोलू और नेपाल का दशैं अलग परम्पराएँ हैं; उन्हें इस विधि में नहीं मिलाया गया है।",
+      "context_prompts": [
+        "क्या आपके परिवार में नवरात्रि पर घट या कलश स्थापना होती है?",
+        "आप उत्तर भारत या पश्चिम भारत की किस गृह-परम्परा का पालन करते हैं?",
+        "दीप जलने तक क्या कोई वयस्क लगातार देखभाल कर सकता है?",
+        "आप संक्षिप्त दैनिक प्रार्थना, ग्रन्थ-पाठ या पुरोहित/पारिवारिक ग्रन्थ-आधारित पूजा चाहते हैं?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "निभ सकने वाली दैनिक देवी-प्रार्थना",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "स्वच्छ स्थान और देवी का चित्र, प्रतीक या मानसिक ध्यान", "substitutions": ["चित्र न हो तो मन में देवी का स्मरण करें"], "optional": false},
+            {"item": "स्वच्छ जल और एक फूल, पत्ता या फल", "substitutions": ["स्थानीय रूप से उपलब्ध एक सम्मानपूर्ण अर्पण पर्याप्त है"], "optional": false},
+            {"item": "छोटा दीप", "substitutions": ["अग्नि असुरक्षित हो तो दीप छोड़कर मौन प्रार्थना करें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थान और हाथ स्वच्छ करें, शांत बैठें और नौ रातों की साधना का एक संकल्प अपने शब्दों में कहें।", "why": "वही संकल्प उपयोगी है जिसे परिवार पूरे समय निभा सके।", "optional": false, "source_ids": ["incredible-india-navratri-2026", "art-of-living-durga-saptashati-2026"]},
+            {"ordinal": 2, "instruction": "परिवार में परिचित रूप में देवी का स्वागत करें। जल और फूल, पत्ता या फल अर्पित करें; दीप तभी जलाएं जब कोई वयस्क उपस्थित हो।", "why": "सरल गृह-अर्पण रखा गया है और अखण्ड दीप को अनिवार्य नहीं माना गया।", "optional": false, "source_ids": ["incredible-india-navratri-2026", "maharashtra-tourism-ghatasthapana-2026"]},
+            {"ordinal": 3, "instruction": "परिचित देवी-प्रार्थना करें, छोटा स्रोत-सम्बद्ध पाठ पढ़ें, पारिवारिक आरती गाएं या शांत भाव से देवी का नाम लें।", "why": "प्रार्थना और पाठ व्यापक हैं, पर ग्रन्थ और भाषा परिवार की क्षमता के अनुसार होने चाहिए।", "optional": false, "source_ids": ["incredible-india-navratri-2026", "art-of-living-durga-saptashati-2026", "devam-markandeya-purana-pargiter-devimahatmya"]},
+            {"ordinal": 4, "instruction": "कुछ देर मौन बैठें, आज अभ्यास करने योग्य एक गुण चुनें, प्रणाम करें और स्थान छोड़ने से पहले दीप सुरक्षित रूप से बुझाएं।", "why": "यह दैनिक जीवन से सम्बन्ध जोड़ता है; सम्पादकीय चिंतन को अनिवार्य कर्म नहीं बताता।", "optional": false, "source_ids": ["incredible-india-navratri-2026"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "घटस्थापना और दैनिक गृह-सेवा",
+          "estimated_minutes": 35,
+          "materials": [
+            {"item": "स्वच्छ स्थिर चौकी, मिट्टी और चौड़ा मिट्टी का पात्र", "substitutions": ["जौ बोना पारिवारिक प्रथा न हो तो नई विधि गढ़ने की जगह सरल रूप चुनें"], "optional": false},
+            {"item": "जौ और स्वच्छ जल", "substitutions": ["घर में सुरक्षित उगने योग्य बीज और मिट्टी ही लें"], "optional": false},
+            {"item": "स्वच्छ कलश या घट, जल, पारिवारिक प्रथा के पत्ते और प्रचलित हो तो नारियल", "substitutions": ["वंशानुगत सामग्री बदलने से पहले परिवार के जानकार से पूछें"], "optional": false},
+            {"item": "फूल या पत्ते, फल या अन्य शाकाहारी नैवेद्य, सुरक्षित हो तो धूप और देखरेख वाला दीप", "substitutions": ["असुरक्षित या कम हवादार स्थान में धुआँ और अग्नि छोड़ दें"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "पहले दिन Devam का स्थान-विशिष्ट घटस्थापना समय देखें। नियम अनिर्णीत हो या समय बीत गया हो तो वैकल्पिक मुहूर्त का अनुमान न लगाकर परिवार के जानकार से पूछें।", "why": "स्रोत में समय घटस्थापना का भाग है; पंचांग और विधि अलग प्रमाण-परतें हैं।", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026"]},
+            {"ordinal": 2, "instruction": "स्वच्छ चौकी तैयार करें, पात्र में मिट्टी रखकर जौ बोएं और पारिवारिक सामग्री के अनुसार जल-भरा कलश स्थिर रूप से स्थापित करें।", "why": "मिट्टी, जौ और कलश इस सीमित उत्तर/पश्चिम भारतीय परम्परा के मुख्य अंग हैं।", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026", "drikpanchang-kalasha-sthapana-2026"]},
+            {"ordinal": 3, "instruction": "सरल संकल्प से देवी का स्वागत करें। गन्ध या फूल, देखरेख वाला दीप और नैवेद्य अर्पित करें; केवल परिचित या सिखाए गए मंत्र प्रयोग करें।", "why": "विस्तृत स्रोतों में औपचारिक मंत्र हैं, पर Devam उनका अनुमान या सार्वभौमीकरण नहीं करता।", "optional": false, "source_ids": ["drikpanchang-kalasha-sthapana-2026", "art-of-living-durga-saptashati-2026"]},
+            {"ordinal": 4, "instruction": "प्रतिदिन सुरक्षित अर्पण बदलें, आवश्यकता भर जौ को जल दें, चौकी साफ रखें, प्रार्थना या पाठ करें और सामान्य दीप बुझाकर ही जाएं। निरन्तर वयस्क देखरेख सम्भव न हो तो अखण्ड ज्योति न लें।", "why": "घटस्थापना दैनिक देखभाल का संकल्प है; अग्नि-सुरक्षा किसी अनुकरण से अधिक महत्वपूर्ण है।", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026"]},
+            {"ordinal": 5, "instruction": "पारिवारिक समापन-दिन धन्यवाद और क्षमा-प्रार्थना करें, व्यवस्था सम्मानपूर्वक हटाएं, उपयुक्त हो तो स्वच्छ जल पौधों में दें, बिना रसायन के जौ और फूल कम्पोस्ट करें और सुरक्षित भोजन ही प्रसाद में बाँटें।", "why": "क्षेत्रानुसार समापन बदलता है; यह रूप असुरक्षित या प्रदूषणकारी विसर्जन से बचाता है।", "optional": false, "source_ids": ["maharashtra-tourism-ghatasthapana-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "पारिवारिक ग्रन्थ या पुरोहित-निर्देशित नवरात्रि",
+          "estimated_minutes": 90,
+          "materials": [
+            {"item": "पारिवारिक ग्रन्थ या आचार्य द्वारा निर्धारित सामग्री", "substitutions": ["अनुष्ठानिक पदार्थों का अनुमान लगाने के बजाय सूची पहले निश्चित करें"], "optional": false},
+            {"item": "संस्करण-परिचय सहित देवीमाहात्म्य या परिवार द्वारा मान्य ग्रन्थ", "substitutions": ["पूर्ण पाठ सम्भव न हो तो परिचित छोटा स्तोत्र चुनें"], "optional": false},
+            {"item": "लम्बे दीप या अग्निकर्म के लिए सुरक्षित तैयार स्थान", "substitutions": ["प्रशिक्षित देखरेख और सुरक्षित स्थान न हो तो होम या अखण्ड दीप न करें"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "परिवार के जानकार या आचार्य से स्थान और परम्परा के अनुसार संकल्प, घटस्थापना, दैनिक उपचार, पाठ और समापन निश्चित कराएं।", "why": "औपचारिक नवरात्रि-विधियाँ भिन्न हैं; ऐप को एक सामान्य क्रम से उन्हें पुनर्निर्मित नहीं करना चाहिए।", "optional": false, "source_ids": ["drikpanchang-kalasha-sthapana-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]},
+            {"ordinal": 2, "instruction": "दुर्गा सप्तशती पाठ करना हो तो पहचाना हुआ संस्करण और अधिकृत पाठ-क्रम चुनें; तेरह अध्याय स्रोत-क्रम में रखें और Devam के सार को मूल पाठ न मानें।", "why": "जीवित परम्परा-स्रोत अनेक पाठ-क्रम बताता है और Devam का Pargiter संस्करण एक पूर्ण कथात्मक सीमा रखता है।", "optional": false, "source_ids": ["art-of-living-durga-saptashati-2026", "devam-markandeya-purana-pargiter-devimahatmya"]},
+            {"ordinal": 3, "instruction": "कुमारी-पूजन, उपवास, होम और अन्य वंश-विशिष्ट कर्मों को अलग प्रसंग मानें; किसी बच्चे या स्वास्थ्य-संवेदनशील व्यक्ति पर दबाव न डालें।", "why": "ऐतिहासिक स्रोत प्रमाण देते हैं, पर प्रमाण सार्वभौमिक आधुनिक आदेश नहीं है।", "optional": false, "source_ids": ["devam-devi-bhagavatam-vijnanananda-navaratri", "art-of-living-durga-saptashati-2026"]},
+            {"ordinal": 4, "instruction": "आचार्य के अनुसार औपचारिक समापन, दान या आतिथ्य पूरा करें और सहमत क्रम से गृह-व्यवस्था का विसर्जन या रखरखाव करें।", "why": "समापन उसी पारिवारिक/परम्परागत अनुबंध का भाग है जिससे स्थापना हुई।", "optional": false, "source_ids": ["devam-devi-bhagavatam-vijnanananda-navaratri", "drikpanchang-kalasha-sthapana-2026"]}
+          ]
+        }
+      ],
+      "daily_sequence": [
+        {"ordinal": 1, "common_name": "शैलपुत्री", "reflection": "स्थिर आरम्भ करें और वही साधना स्थापित करें जिसे निभा सकें।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 2, "common_name": "ब्रह्मचारिणी", "reflection": "धैर्य और अनुशासित ध्यान का अभ्यास करें।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 3, "common_name": "चन्द्रघण्टा", "reflection": "कठिनाई का सामना सजग साहस से करें, आक्रामकता से नहीं।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 4, "common_name": "कूष्माण्डा", "reflection": "सृजनात्मक ऊर्जा से जीवन के एक भाग में प्रकाश और व्यवस्था लाएं।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 5, "common_name": "स्कन्दमाता", "reflection": "अपनी सीमाएँ मिटाए बिना धैर्यपूर्ण देखभाल करें।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 6, "common_name": "कात्यायनी", "reflection": "एक आवश्यक कर्म चुनें और स्पष्टता से करें।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 7, "common_name": "कालरात्रि", "reflection": "एक भय को ईमानदारी से पहचानें और उसके पार एक सुरक्षित कदम लें।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]},
+        {"ordinal": 8, "common_name": "महागौरी", "reflection": "सुधार, क्षमा और नवीनीकरण के लिए स्थान बनाएं; अष्टमी-परम्पराएँ परिवार और क्षेत्रानुसार बदलती हैं।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]},
+        {"ordinal": 9, "common_name": "सिद्धिदात्री", "reflection": "आरम्भ किए कार्य को पूरा करें और मिली सहायता को स्वीकारें; नवमी-परम्पराएँ भिन्न हैं।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026", "devam-devi-bhagavatam-vijnanananda-navaratri"]},
+        {"ordinal": 10, "common_name": "विजयादशमी", "reflection": "सम्मानपूर्वक समापन करें और सीखा हुआ एक गुण सामान्य जीवन में ले जाएं।", "ritual_requirement": false, "source_ids": ["incredible-india-navratri-2026"]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "ten_day_reflection_sequence_included": true,
+    "reflections_are_mandatory_ritual_claims": false,
+    "formal_priest_mantras_included": false,
+    "continuous_flame_prescribed_without_supervision": false,
+    "fasting_or_medical_regimen_prescribed": false,
+    "historical_prescriptions_promoted_as_modern_norms": false,
+    "one_universal_procedure_claimed": false,
+    "all_regional_variants_complete": false,
+    "bengali_durga_puja_included": false,
+    "south_indian_golu_included": false,
+    "gujarati_garba_included": false,
+    "nepal_dashain_included": false,
+    "all_navaratri_days_calendar_resolved": false
+  }
+}

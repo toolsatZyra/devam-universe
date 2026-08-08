@@ -1,0 +1,58 @@
+{
+  "contract": "DEVAM_SARTHI_PERSONAL_GUIDANCE_PILOT_SUPPLEMENT_V0_1",
+  "status": "deterministic_candidate_ready_same_model_and_blinded_review_not_run",
+  "purpose": "Bind the first reviewed personal-guidance evidence bundle and its current deterministic candidate behaviour to the pre-existing 64-scenario answer pilot without mutating that frozen fixture or claiming a completed answer-quality evaluation.",
+  "base_pilot": {
+    "path": "apps/web/evaluation/sarthi-answer-pilot-v0.1.json",
+    "bytes": 42288,
+    "sha256": "75c9b2cf69f7972fb2be890058cce026235e518243d91f4517994b774d86b74c",
+    "pair_id": "guidance-01"
+  },
+  "research_manifests": [
+    {
+      "path": "research/sarthi-artificial-wisdom/ARTIFACT_MANIFEST.sha256",
+      "sha256": "d04f232b09ae7a27f4ff7ee50ff36db1a3e2890b13f2b37876e87d96355e96e0"
+    },
+    {
+      "path": "research/sarthi-artificial-wisdom/independent-foundations/FOUNDATIONAL_ARTIFACT_MANIFEST.sha256",
+      "sha256": "e42f6b586cde314f531f91d46928a8a43896f7a65ee423e594749ef9cd9fb594"
+    }
+  ],
+  "evidence_bundle": {
+    "path": "knowledge_packs/wisdom/personal-guidance-foundation-v1.json",
+    "bytes": 9373,
+    "sha256": "423334be7bd4aa2d66129bf84894a60b6d7cb7b22ca1f9edee147f92d9d37eca",
+    "review_status": "internal_beta_reviewed",
+    "source_payload_duplicated": false,
+    "private_commentary_quotation_allowed": false
+  },
+  "candidate_contract": {
+    "variant_a": {
+      "scenario_id": "guidance-01-a",
+      "expected_runtime_mode": "context_clarification",
+      "expected_citation_ordinals": [],
+      "required_boundary": "No scripture, analogy, moral verdict, or personal action is prescribed before material context is known."
+    },
+    "variant_b": {
+      "scenario_id": "guidance-01-b",
+      "expected_runtime_mode": "reviewed_personal_guidance",
+      "expected_citation_ordinals": [620, 76, 549],
+      "required_boundary": "The response must treat family concern as counsel rather than an automatic veto, compare reversible steps, expose no private quotation, and leave the career decision with the user."
+    }
+  },
+  "blinded_run": {
+    "status": "not_run",
+    "required_arms": [
+      "grounded_rag",
+      "prompt_only_guidance",
+      "material_context_and_typed_coverage",
+      "thin_governor"
+    ],
+    "same_model_required": true,
+    "same_evidence_bytes_required": true,
+    "human_blinded_review_required": true,
+    "paid_or_external_model_calls_made": false,
+    "promotion_claim_allowed": false
+  },
+  "claim_boundary": "This supplement proves source fixity, current deterministic mode separation, citation identity and readiness for a controlled pilot. It does not prove that the thin Governor improves judgment, that Sarthi is wise, or that the full personal-guidance domain is covered."
+}

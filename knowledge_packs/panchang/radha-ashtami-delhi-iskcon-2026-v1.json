@@ -1,0 +1,76 @@
+{
+  "contract": "DEVAM_BOUNDED_RADHA_ASHTAMI_ISKCON_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-radha-ashtami-delhi-iskcon-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "candidate_civil_dates": [
+      "2026-09-18",
+      "2026-09-19"
+    ],
+    "supported_tradition_codes": [
+      "vaishnava-iskcon"
+    ],
+    "location_specific": true,
+    "universal_india_claim": false,
+    "all_vaishnava_traditions_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-general-shukla-ashtami-context",
+      "title": "Nirnayasindhu - Marathi translation, Mumbai 1865",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [
+        51,
+        52
+      ],
+      "evidence_role": "historical_general_shukla_ashtami_later_day_context_not_radha_identity_or_madhyahna_authority",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-radha-ashtami-iskcon-2026",
+      "provider": "Drik Panchang - ISKCON Panchang lane",
+      "url": "https://www.drikpanchang.com/festivals/radha-ashtami/radha-ashtami-date-time.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T18:53:12Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/festivals/radha-ashtami/radha-ashtami-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 67159,
+      "response_sha256": "fae89430859fb45d5f1f00fa9969477fd197646f2453e9e7befffad6546452b1",
+      "strict_utf8": true,
+      "evidence_role": "current_iskcon_practitioner_identity_madhyahna_rule_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "modern_observation": {
+    "selected_civil_date": "2026-09-19",
+    "ashtami_tithi_begins_local": "2026-09-18T13:00:00+05:30",
+    "ashtami_tithi_ends_local": "2026-09-19T15:26:00+05:30",
+    "madhyahna_interval_begins_local": "2026-09-19T11:01:00+05:30",
+    "madhyahna_interval_ends_local": "2026-09-19T13:28:00+05:30",
+    "iskcon_panchang_identity_present": true
+  },
+  "rule_contract": {
+    "target_tithi": "Ashtami",
+    "target_paksha": "shukla",
+    "selection": "select_candidate_with_greater_bhadrapada_shukla_ashtami_overlap_during_local_madhyahna_preferring_later_day_on_tie",
+    "neither_candidate_overlaps": "fail_closed",
+    "puja_muhurta_calculated": false,
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "all_vaishnava_traditions_equivalent": false
+  },
+  "denials": {
+    "complete_radha_ashtami_tradition_coverage": false,
+    "all_vaishnava_traditions_covered": false,
+    "smarta_calendar_equivalence": false,
+    "masika_durgashtami_same_observance": false,
+    "fasting_procedure_ready": false,
+    "puja_procedure_ready": false,
+    "published_madhyahna_interval_recomputed_or_served": false,
+    "universal_india_date_claim": false,
+    "source_text_publication_ready": false,
+    "complete_september_december_ritual_layer": false
+  }
+}

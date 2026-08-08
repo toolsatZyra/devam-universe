@@ -1,0 +1,94 @@
+{
+  "contract": "DEVAM_MULTI_LANE_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-masika-durgashtami-north-west-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slugs": ["masika-durgashtami-2026-09", "masika-durgashtami-2026-10", "masika-durgashtami-2026-11", "masika-durgashtami-2026-12"],
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "supported_pairs": [{ "region_code": "north-india", "tradition_code": "smarta-north-india" }, { "region_code": "west-india", "tradition_code": "smarta-west-india" }],
+    "language_codes": ["en", "hi"],
+    "four_month_2026_calendar_fixture_required": true,
+    "family_temple_and_sampradaya_practice_override_generic_form": true,
+    "monthly_durgashtami_is_not_automatically_shardiya_mahashtami_or_bengal_durga_puja": true
+  },
+  "sources": [
+    { "source_id": "devam-masika-durgashtami-calendar-fixture", "title": "Bounded Delhi Masika Durgashtami September-December 2026 fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_calendar_evidence", "rights_lane": "derivative_allowed", "artifact_sha256": "68130406f9cff8b5f2c12cff08b5b75d8d06cdef02e2d35653f34f2dbf8edcae" },
+    { "source_id": "nirnayasindhu-1865-general-shukla-ashtami-context", "title": "Nirnayasindhu, Marathi translation, Mumbai 1865, Shukla Ashtami context", "publisher": "Devam retained fixed edition", "url": "https://archive.org/details/in.ernet.dli.2015.365977", "source_class": "historical_tithi_and_shiva_shakti_festival_context_not_modern_monthly_vidhi", "rights_lane": "private_evidence", "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b", "pdf_pages": [51, 52] },
+    { "source_id": "drikpanchang-delhi-masika-durgashtami-2026", "title": "2026 Masik Durgashtami dates for Delhi", "publisher": "Drik Panchang", "url": "https://www.drikpanchang.com/vrats/masik-durgashtami-dates.html?geoname-id=1273294&year=2026", "source_class": "current_practitioner_identity_and_location_specific_date_fixture_not_complete_vidhi", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://www.drikpanchang.com/vrats/masik-durgashtami-dates.html?geoname-id=1273294&year=2026", "response_bytes": 82080, "response_sha256": "c4dd71aeb98c5bc76f76878428820ae41158f6d1f4a57096d6abd5982659b47d", "strict_utf8": true } },
+    { "source_id": "devam-markandeya-purana-pargiter-devimahatmya", "title": "The Markandeya Purana — Pargiter translation, Calcutta 1904", "publisher": "Asiatic Society of Bengal; retained by Devam", "url": "https://archive.org/details/in.ernet.dli.2015.47519", "source_class": "historical_primary_translation_for_source_labelled_reading_not_monthly_ritual_authority", "rights_lane": "derivative_allowed", "ingestion_plan": "ingestion/plans/markandeya-purana-pargiter-1904-v1.json", "packet_sha256": "9b7ccd43163cadd84f3c41a8c4fbacf40205e4539678c2b51da16829fe257969" },
+    { "source_id": "devam-masika-durgashtami-safety-boundary", "title": "Devam Masika Durgashtami internal-beta attribution and safety boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_boundary", "rights_lane": "derivative_allowed" }
+  ],
+  "guides": [
+    {
+      "guide_id": "masika-durgashtami-reflection-en-v1",
+      "language_code": "en",
+      "title": "Masika Durgashtami remembrance",
+      "summary": "A bounded monthly Durga remembrance through a familiar prayer or source-labelled reading, reflection on courage and care, and one practical act of service. It is complete as a short companion, not as a fast or formal monthly puja.",
+      "family_practice_note": "Tell Sarthi which family, temple, sampradaya, Devi form, prayer, or text you follow. Use its known fast, food, image, mantra, offering, aarti, and close. Monthly Durgashtami is not automatically Shardiya Mahashtami, Bengal Durga Puja, or every regional Ashtami practice.",
+      "context_prompts": ["Which region, family, temple, or sampradaya monthly Durga practice applies?", "Which Devi form, story, edition, prayer, song, or teacher is familiar?", "Does your family distinguish Masika Durgashtami from Shardiya Mahashtami and Bengal Durga Puja?", "Is an elder or priest directing a fast, mantra, offering, formal puja, or close?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10-minute remembrance", "estimated_minutes": 10, "materials": [{ "item": "No material required", "substitutions": ["A familiar Devi prayer", "A short identified Durga passage", "A quiet reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm that the bounded monthly Durgashtami lane applies and name the family or sampradaya context if known.", "why": "The calendar date does not make every regional Ashtami procedure identical.", "optional": false, "source_ids": ["devam-masika-durgashtami-calendar-fixture", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Remember Durga through one familiar prayer, song, name, or short source-labelled passage.", "why": "This supports grounded devotion without inventing a formal monthly liturgy.", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Name one situation requiring courage and care, then choose one safe act of protection, repair, or service that does not control or harm another person.", "why": "The reflection becomes actionable without promising victory, protection, merit, or another outcome.", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30-minute sourced reflection", "estimated_minutes": 30, "materials": [{ "item": "One identified Devi or Durga source", "substitutions": ["A family text", "A teacher-led explanation", "The material-free minimum form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Identify the exact text, edition, Devi form, temple, lineage, or teacher being followed.", "why": "Attribution preserves textual and living variants.", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read one coherent source-labelled passage and distinguish its narrative, the source's interpretation, and your present reflection.", "why": "Devam keeps source evidence and synthesis separate.", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Reflect on courage, dignity, responsible strength, care, and resistance to harm without universalizing one story or theology.", "why": "The monthly companion remains useful and plural.", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Complete one practical act of care, repair, or service and close with a familiar prayer if available.", "why": "A responsible action expresses the reflection without becoming a promised ritual result.", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60-minute family or temple-connected form", "estimated_minutes": 60, "materials": [{ "item": "Family, temple, or source-labelled Devi material", "substitutions": ["A verified edition", "A teacher-guided explanation", "The standard individual form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "With family or a study group, name the exact Devi form, source, edition, teacher, and monthly practice authority.", "why": "Shared observance must remain source- and tradition-aware.", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read and discuss a coherent attributable account, preserving variant boundaries rather than blending every Durga story or Ashtami.", "why": "Variant preservation advances Devam's exhaustive-library objective.", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "If joining a temple, verify the current programme locally; leave fasting, mantra, images, offerings, Chandi recitation, homa, bali, Kumari worship, and formal puja to the established authority.", "why": "A date fixture and reading source are not a priestly manual or live event service.", "optional": false, "source_ids": ["drikpanchang-delhi-masika-durgashtami-2026", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close with one shared commitment to courage, dignity, care, or service and record the source used.", "why": "The close remains attributable without guaranteeing an outcome.", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "masika-durgashtami-reflection-hi-v1",
+      "language_code": "hi",
+      "title": "मासिक दुर्गाष्टमी स्मरण",
+      "summary": "परिचित प्रार्थना या स्रोत-स्पष्ट पाठ, साहस और देखभाल पर चिंतन तथा सेवा के एक व्यावहारिक कर्म से मासिक दुर्गा स्मरण। यह छोटा सहचर अपने दायरे में पूरा है, उपवास या औपचारिक मासिक पूजा नहीं।",
+      "family_practice_note": "सार्थी को बताएं कि परिवार, मंदिर, सम्प्रदाय, देवी-रूप, प्रार्थना या ग्रन्थ कौन-सा है। उसी का परिचित उपवास, भोजन, प्रतिमा, मंत्र, अर्पण, आरती और समापन रखें। मासिक दुर्गाष्टमी अपने आप शारदीय महाष्टमी, बंगाल दुर्गा पूजा या हर क्षेत्रीय अष्टमी नहीं है।",
+      "context_prompts": ["कौन-सी क्षेत्रीय, पारिवारिक, मंदिर या सम्प्रदायिक मासिक दुर्गा परम्परा लागू है?", "कौन-सा देवी-रूप, कथा, संस्करण, प्रार्थना, गीत या गुरु परिचित है?", "क्या परिवार मासिक दुर्गाष्टमी को शारदीय महाष्टमी और बंगाल दुर्गा पूजा से अलग मानता है?", "क्या कोई बुज़ुर्ग या पुरोहित उपवास, मंत्र, अर्पण, औपचारिक पूजा या समापन निर्देशित कर रहा है?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10 मिनट का स्मरण", "estimated_minutes": 10, "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["परिचित देवी-प्रार्थना", "पहचाना छोटा दुर्गा-पाठ", "शांत चिंतन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "स्रोत-बद्ध मासिक दुर्गाष्टमी रेखा की पुष्टि करें और ज्ञात हो तो परिवार या सम्प्रदाय का नाम लें।", "why": "पंचांग की तिथि हर क्षेत्रीय अष्टमी-विधि को एक नहीं बनाती।", "optional": false, "source_ids": ["devam-masika-durgashtami-calendar-fixture", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "परिचित प्रार्थना, गीत, नाम या छोटे स्रोत-स्पष्ट पाठ से दुर्गा का स्मरण करें।", "why": "इससे औपचारिक मासिक पूजा गढ़े बिना भक्ति स्रोत-आधारित रहती है।", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "साहस और देखभाल माँगने वाली एक स्थिति पहचानें, फिर सुरक्षा, सुधार या सेवा का ऐसा काम चुनें जिसमें किसी को नियंत्रित या हानि न करें।", "why": "यह विजय, सुरक्षा, पुण्य या अन्य फल का वादा किए बिना उपयोगी है।", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30 मिनट का स्रोत-स्पष्ट चिंतन", "estimated_minutes": 30, "materials": [{ "item": "एक पहचाना देवी या दुर्गा स्रोत", "substitutions": ["पारिवारिक ग्रन्थ", "गुरु-निर्देशित व्याख्या", "सामग्री-रहित न्यूनतम रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "लागू ग्रन्थ, संस्करण, देवी-रूप, मंदिर, परम्परा या गुरु का ठीक नाम लें।", "why": "स्रोत-स्पष्टता पाठ और जीवित रूपान्तर बचाती है।", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "एक पूरा स्रोत-स्पष्ट अंश पढ़ें और कथा, स्रोत की व्याख्या तथा अपना चिंतन अलग रखें।", "why": "देवम स्रोत-प्रमाण और संश्लेषण अलग रखता है।", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "साहस, गरिमा, जिम्मेदार शक्ति, देखभाल और हानि के प्रतिरोध पर विचार करें; एक कथा या दर्शन को सार्वभौमिक न बनाएं।", "why": "मासिक सहचर उपयोगी और बहुल रहता है।", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "देखभाल, सुधार या सेवा का एक काम करें और उपलब्ध हो तो परिचित प्रार्थना से समापन करें।", "why": "जिम्मेदार कर्म फल-दावा बने बिना चिंतन व्यक्त करता है।", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60 मिनट का परिवार या मंदिर-संबद्ध रूप", "estimated_minutes": 60, "materials": [{ "item": "पारिवारिक, मंदिर या स्रोत-स्पष्ट देवी सामग्री", "substitutions": ["सत्यापित संस्करण", "गुरु-निर्देशित व्याख्या", "मानक व्यक्तिगत रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "परिवार या अध्ययन समूह के साथ देवी-रूप, स्रोत, संस्करण, गुरु और मासिक अभ्यास-अधिकार का ठीक नाम लें।", "why": "सामूहिक स्मरण भी स्रोत और परम्परा के प्रति स्पष्ट रहे।", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "स्रोत-स्पष्ट विवरण पढ़ें और हर दुर्गा-कथा या अष्टमी को मिलाए बिना रूपान्तर सुरक्षित रखें।", "why": "रूपान्तर-संरक्षण देवम के विशाल पुस्तकालय का उद्देश्य है।", "optional": false, "source_ids": ["devam-markandeya-purana-pargiter-devimahatmya", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "मंदिर जाएं तो वर्तमान कार्यक्रम स्थानीय रूप से जाँचें; उपवास, मंत्र, प्रतिमा, अर्पण, चण्डी-पाठ, होम, बलि, कुमारी पूजा और औपचारिक पूजा स्थापित अधिकारी पर छोड़ें।", "why": "तिथि-फिक्स्चर और पाठ-स्रोत पुरोहित-विधि या लाइव आयोजन-सेवा नहीं हैं।", "optional": false, "source_ids": ["drikpanchang-delhi-masika-durgashtami-2026", "devam-masika-durgashtami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "साहस, गरिमा, देखभाल या सेवा का साझा संकल्प लेकर और स्रोत लिखकर समापन करें।", "why": "समापन फल की गारंटी दिए बिना स्रोत-स्पष्ट रहता है।", "optional": false, "source_ids": ["devam-masika-durgashtami-safety-boundary"] }
+        ] }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "four_month_calendar_lane_and_source_labelled_durga_remembrance_supported": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "fast_food_dietary_or_medical_guidance_given": false,
+    "formal_puja_mantra_image_offering_aarti_chandi_recitation_or_homa_prescribed": false,
+    "kumari_puja_bali_or_harm_instructed": false,
+    "shardiya_mahashtami_equated_with_every_monthly_ashtami": false,
+    "bengal_durga_puja_or_other_regional_ashtami_imported": false,
+    "victory_protection_merit_prosperity_or_other_outcome_guaranteed": false,
+    "one_devi_story_theology_or_practice_claimed_universal": false,
+    "all_regional_family_temple_and_sampradaya_variants_complete": false
+  }
+}

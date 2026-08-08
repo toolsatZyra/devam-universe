@@ -1,0 +1,145 @@
+{
+  "contract": "DEVAM_DHANTRAYODASHI_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-dhantrayodashi-delhi-2026-v1",
+  "scope": {
+    "reference_location": "New Delhi, NCT, India",
+    "geoname_id": 1261481,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": [
+      "2026-11-05",
+      "2026-11-06"
+    ],
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "date_resolved_by_devam": true,
+    "precise_puja_muhurta_calculated": false,
+    "ritual_guidance_included": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drikpanchang-new-delhi-dhanteras-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?geoname-id=1261481&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_identity_location_specific_date_tithi_pradosha_and_sthir_lagna_fixture",
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T20:14:25.459Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?geoname-id=1261481&year=2026",
+          "response_bytes": 81810,
+          "response_sha256": "121255bba72fc486def14da6042e5dfb94556cac9b8b8ff92b489e36573e9471",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T20:14:25.767Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?geoname-id=1261481&year=2026",
+          "response_bytes": 81810,
+          "response_sha256": "121255bba72fc486def14da6042e5dfb94556cac9b8b8ff92b489e36573e9471",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "civil_date": "2026-11-06",
+        "weekday": "Friday",
+        "dhanteras_puja_begins_local": "18:02",
+        "dhanteras_puja_ends_local": "19:57",
+        "pradosha_begins_local": "17:33",
+        "pradosha_ends_local": "20:09",
+        "vrishabha_sthir_lagna_begins_local": "18:02",
+        "vrishabha_sthir_lagna_ends_local": "19:57",
+        "trayodashi_begins_local": "2026-11-06T10:30:00+05:30",
+        "trayodashi_ends_local": "2026-11-07T10:47:00+05:30",
+        "precise_provider_muhurta_requires_trayodashi_pradosha_and_sthir_lagna": true,
+        "dhanvantari_jayanti_associated": true,
+        "yama_deepam_identified_as_another_ritual_on_trayodashi": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "dd-news-on-air-dhanteras-identity-2026",
+      "provider": "DD News On Air",
+      "url": "https://www.newsonair.gov.in/dhanteras-auspicious-day-for-worship-and-new-purchases/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_public_broadcaster_identity_and_association_context_not_date_rule_authority",
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T20:14:25.861Z",
+          "status": 200,
+          "final_url": "https://newsonair.gov.in/dhanteras-auspicious-day-for-worship-and-new-purchases/",
+          "response_bytes": 69946,
+          "response_sha256": "d410e9e0692adb3457a979dcc7f188d2d8341cded12fbd30ee5b0fe0b0200524",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T20:14:26.649Z",
+          "status": 200,
+          "final_url": "https://newsonair.gov.in/dhanteras-auspicious-day-for-worship-and-new-purchases/",
+          "response_bytes": 69946,
+          "response_sha256": "d410e9e0692adb3457a979dcc7f188d2d8341cded12fbd30ee5b0fe0b0200524",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "dhanteras_alias_dhan_trayodashi": true,
+        "dhanvantari_jayanti_associated": true,
+        "dhanvantari_kubera_and_lakshmi_worship_associated": true,
+        "krishna_paksha_trayodashi_identity": true,
+        "five_day_festival_sequence_context": true
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "fixed_adjacent_evidence": {
+    "source_id": "nirnayasindhu-marathi-1865-kartika-trayodashi-yama-deepa",
+    "provider": "Devam retained source vault",
+    "object_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+    "object_bytes": 93531683,
+    "media_type": "application/pdf",
+    "rights_lane": "private_evidence",
+    "visually_inspected_pdf_pages": [
+      213
+    ],
+    "evidence_role": "historical_adjacent_yama_deepam_trayodashi_context_not_dhanteras_identity_or_sthir_lagna_authority",
+    "source_text_returned_by_api": false
+  },
+  "decision": {
+    "observance_slug": "dhantrayodashi",
+    "canonical_name": "Dhantrayodashi / Dhanteras",
+    "target_tithi": "Trayodashi",
+    "target_paksha": "krishna",
+    "decision_window": "pradosha",
+    "selection": "select_only_when_exactly_one_candidate_civil_evening_has_krishna_trayodashi_overlap_with_the_bounded_pradosha_window",
+    "selected_civil_date": "2026-11-06",
+    "both_candidates_overlap": "fail_closed",
+    "neither_candidate_overlaps": "fail_closed",
+    "bounded_pradosha_is_not_equivalent_to_provider_sthir_lagna_muhurta": true,
+    "dhantrayodashi_and_yama_deepam_remain_separate_records": true
+  },
+  "associations": {
+    "dhanvantari_jayanti": "associated_identity_not_a_medical_advice_lane",
+    "lakshmi_and_kubera_worship": "current_practice_association_not_a_complete_universal_puja_procedure",
+    "yama_deepam": "related_trayodashi_observance_preserved_as_a_separate_record"
+  },
+  "denials": {
+    "precise_provider_muhurta_reproduced": false,
+    "sthir_lagna_calculated": false,
+    "puja_procedure_resolved": false,
+    "fasting_procedure_resolved": false,
+    "shopping_or_metal_purchase_required": false,
+    "guaranteed_wealth_or_health_outcome": false,
+    "dhanvantari_medical_guidance_included": false,
+    "all_regional_practices_equivalent": false,
+    "universal_india_observance_claim": false,
+    "dhantrayodashi_merged_with_yama_deepam": false,
+    "historical_yama_deepa_page_treated_as_dhanteras_identity_authority": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false,
+    "complete_diwali_ritual_coverage": false,
+    "complete_september_december_coverage": false
+  }
+}

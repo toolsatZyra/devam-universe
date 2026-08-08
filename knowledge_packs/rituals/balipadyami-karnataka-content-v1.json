@@ -1,0 +1,684 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "south-india",
+        "tradition_code": "smarta-south-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family follow a Bengaluru, Mysuru, coastal Karnataka, or another South Indian Bali Padyami tradition?",
+      "Will you observe at home, visit a temple, or join a family elder?",
+      "Which Bali-Vamana story, prayer, rangoli, representation, lamp, food, or blessing is already known?",
+      "Do you need a flame-free, material-free, food-free, spend-free, child-safe, mobility-safe, or short form?"
+    ],
+    "region_codes": [
+      "south-india"
+    ],
+    "settings": [
+      "household",
+      "temple",
+      "individual",
+      "family_led"
+    ],
+    "tradition_codes": [
+      "smarta-south-india"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-karnataka-balipadyami-pratipada-sunrise-v1",
+    "freshness_note": "The bounded Bengaluru/Karnataka 2026 lane resolves Tuesday, 10 November. Recheck the family or temple for exact representation, prayer, abhisheka, and live programme details.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-balipadyami-date-fixture",
+      "karnataka-tourism-deepavali-balipratipada",
+      "akashvani-karnataka-bali-padyami"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "balipadyami-karnataka-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "karnataka-bali-vamana-return-account",
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada",
+            "akashvani-karnataka-bali-padyami"
+          ],
+          "summary": "Akashvani Karnataka recounts the belief that Bali Chakravarty visits the earthly realm under a boon given by Vishnu in the Vamana avatar. Karnataka Tourism separately connects the day with King Bali's generosity and righteousness. Devam preserves both as attributable living festival accounts, not verified history or a single universal theology.",
+          "title": "King Bali's return in the Vamana account",
+          "tradition_scope": "Current Karnataka official and public-broadcaster festival accounts",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short material-free Karnataka King Bali remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-balipadyami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Bali remembrance and one generous act",
+          "materials": [
+            {
+              "item": "A quiet place and the family's known story or prayer",
+              "required": true,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "substitutions": [
+                "Use a short spoken summary or silent reflection when no text or image is known"
+              ]
+            }
+          ],
+          "procedure_id": "balipadyami-karnataka-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-balipadyami-date-fixture",
+            "karnataka-tourism-deepavali-balipratipada",
+            "akashvani-karnataka-bali-padyami",
+            "devam-balipadyami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use the resolved Bengaluru Bali Padyami date only for this Karnataka context; keep Maharashtra Padwa, BAPS New Year, and Govardhana Puja separate.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-balipadyami-date-fixture"
+              ],
+              "why": "The shared Pratipada date does not make these traditions one ritual."
+            },
+            {
+              "instruction": "Use the family's known Bali-Vamana story or prayer; if none is known, briefly remember Bali's visit and reflect on generosity, responsibility, and righteous conduct.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami"
+              ],
+              "why": "The regional sources establish the story and values, while the app does not invent a mantra or formal puja."
+            },
+            {
+              "instruction": "Choose one practical act of generosity, fairness, family care, or service and close with goodwill, without treating the act as a guarantee of prosperity.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "This makes the remembrance actionable while preserving the source's symbolism as symbolism."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Karnataka family-led familiar form",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-balipadyami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Family story, welcome, and reflection",
+          "materials": [
+            {
+              "item": "Only the family's familiar prayer, story, flowers, rangoli, or safe light",
+              "required": true,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the material-free minimum form or a paper drawing and flame-free light"
+              ]
+            }
+          ],
+          "procedure_id": "balipadyami-karnataka-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada",
+            "devam-balipadyami-safety-boundary",
+            "akashvani-karnataka-bali-padyami"
+          ],
+          "steps": [
+            {
+              "instruction": "Ask an elder which Bali Padyami elements the household actually keeps and whether they belong to this inland, coastal, or family-specific practice.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "Karnataka Tourism explicitly notes coastal variation, so one app sequence cannot represent every family."
+            },
+            {
+              "instruction": "Tell the familiar Bali-Vamana story and use the household's known prayer. Add rangoli, flowers, a paper drawing, or a supervised safe light only when desired and established.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "Akashvani describes decorations and representations, but none is a universal requirement."
+            },
+            {
+              "instruction": "Share family time, familiar food if suitable, and one act of generosity or community care; account for allergies, consent, mobility, fire safety, and cleanup.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "The day can be meaningful without purchases, gifts, compulsory food, unsafe flame, or promised material results."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or temple-led Karnataka participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-balipadyami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 75,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Established family- or temple-led Bali Padyami",
+          "materials": [
+            {
+              "item": "Only materials and readings directed by the established family or temple lead",
+              "required": true,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the standard form rather than reconstructing an unknown image, abhisheka, mantra, or offering sequence"
+              ]
+            }
+          ],
+          "procedure_id": "balipadyami-karnataka-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "akashvani-karnataka-bali-padyami",
+            "karnataka-tourism-deepavali-balipratipada",
+            "devam-balipadyami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Let the established family elder or temple guide define any Bali representation, abhisheka, mantra, offering, lamp, procession, or coastal sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "akashvani-karnataka-bali-padyami",
+                "karnataka-tourism-deepavali-balipratipada"
+              ],
+              "why": "The sources describe living practice but do not provide a complete formal vidhi for the app to reproduce."
+            },
+            {
+              "instruction": "Use clean, safe materials and organiser directions; do not require clay or cow dung, ingest or apply unknown substances, leave lamps unattended, or improvise a temple abhisheka.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "Descriptive materials are not universal obligations and require safe handling and living-practice authority."
+            },
+            {
+              "instruction": "Complete the established prayer, family gathering or temple participation, food handling, cleanup, and shared seva without importing Maharashtra, BAPS, or Govardhana rites.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "A coherent Karnataka close preserves regional identity and adjacent traditions."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "A Bali representation is optional only when already known; use no clay, cow dung, flame, or material if unfamiliar, unavailable, or unsuitable.",
+        "Formal temple abhisheka, mantra, large lamp display, offerings, and live programme remain with the temple.",
+        "No fast, food, gift, purchase, special clothing, animal handling, donation, or prosperity outcome is required.",
+        "Maharashtra Bali Pratipada, BAPS Gujarati New Year, and Govardhana Puja remain separate."
+      ],
+      "short_answer": "Remember Bali Chakravarty and the Vamana story through the prayer or story your family knows, reflect on generosity and righteous care, and share time or service with family. Rangoli, flowers, a Bali representation, lamps, abhisheka, special food, gifts, and purchases are optional living-practice details—not requirements or promises of prosperity.",
+      "significance": {
+        "scope_note": "Published descriptions of images, lamps, abhisheka, prosperity, and regional customs are descriptive, not universal instructions.",
+        "source_ids": [
+          "karnataka-tourism-deepavali-balipratipada",
+          "akashvani-karnataka-bali-padyami"
+        ],
+        "text": "In this bounded Karnataka Smarta lane, Bali Padyami remembers King Bali, generosity, righteousness, family or temple devotion, and service while preserving coastal and household variation."
+      },
+      "title": "Karnataka Bali Padyami family participation",
+      "typical_practices": [
+        {
+          "description": "Sources describe prayers for King Bali, coastal variations, rangoli, lamps, temple abhisheka, and some household Bali representations. The app supports a material-free remembrance or a family-known form; temple rites and representation materials remain with responsible living authority.",
+          "instructional": false,
+          "population_scope": "Karnataka families and temples represented by the current sources",
+          "practice_id": "karnataka-balipadyami-family-temple-participation",
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada",
+            "akashvani-karnataka-bali-padyami",
+            "devam-balipadyami-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "A family-known clay or cow-dung representation is one described form; a spoken, written, floral, or material-free remembrance is the supported fallback.",
+          "scope": "Household form",
+          "separate_lane_required": false,
+          "source_ids": [
+            "akashvani-karnataka-bali-padyami",
+            "devam-balipadyami-safety-boundary"
+          ],
+          "variant_id": "representation-and-material-free-forms"
+        },
+        {
+          "difference": "Karnataka Tourism explicitly notes special coastal rituals and prayers; their detailed procedures require separate local authority.",
+          "scope": "Coastal Karnataka",
+          "separate_lane_required": true,
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada"
+          ],
+          "variant_id": "coastal-karnataka-forms-remain-open"
+        },
+        {
+          "difference": "Maharashtra Padwa, BAPS New Year, Govardhana Puja, and other regional Balipadyami forms retain their own sources and procedures.",
+          "scope": "Maharashtra, BAPS, Govardhana, and other South India traditions",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-balipadyami-safety-boundary"
+          ],
+          "variant_id": "other-pratipada-traditions-separate"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "karnataka-bali-vamana-return-account",
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada",
+            "akashvani-karnataka-bali-padyami"
+          ],
+          "summary": "आकाशवाणी कर्नाटक उस मान्यता का वर्णन करता है कि वामन अवतार में विष्णु के वर से बलि चक्रवर्ती पृथ्वी पर आते हैं। कर्नाटक पर्यटन दिन को राजा बलि की उदारता और धर्म से जोड़ता है। देवम दोनों को स्रोत-सम्बद्ध जीवित पर्व-कथाओं के रूप में रखता है, सत्यापित इतिहास या एक सार्वभौमिक धर्मकथा के रूप में नहीं।",
+          "title": "वामन-कथा में राजा बलि की वापसी",
+          "tradition_scope": "वर्तमान कर्नाटक आधिकारिक और सार्वजनिक-प्रसारक पर्व-वर्णन",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short material-free Karnataka King Bali remembrance",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-balipadyami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "बलि-स्मरण और उदारता का एक काम",
+          "materials": [
+            {
+              "item": "शांत स्थान और परिवार की परिचित कथा या प्रार्थना",
+              "required": true,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "substitutions": [
+                "कोई पाठ या प्रतिमा परिचित न हो तो छोटा मौखिक सार या मौन चिंतन रखें"
+              ]
+            }
+          ],
+          "procedure_id": "balipadyami-karnataka-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-balipadyami-date-fixture",
+            "karnataka-tourism-deepavali-balipratipada",
+            "akashvani-karnataka-bali-padyami",
+            "devam-balipadyami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "बेंगलुरु की निर्धारित बलि पाड्यमी तारीख केवल इस कर्नाटक सन्दर्भ में लें; महाराष्ट्र पाडवा, BAPS नववर्ष और गोवर्धन पूजा अलग रखें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-balipadyami-date-fixture"
+              ],
+              "why": "एक ही प्रतिपदा इन परम्पराओं को एक अनुष्ठान नहीं बनाती।"
+            },
+            {
+              "instruction": "परिवार की परिचित बलि-वामन कथा या प्रार्थना लें; कुछ परिचित न हो तो बलि के आगमन को याद कर उदारता, जिम्मेदारी और धर्मपूर्ण आचरण पर विचार करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami"
+              ],
+              "why": "क्षेत्रीय स्रोत कथा और मूल्य बताते हैं, पर ऐप मंत्र या औपचारिक पूजा नहीं गढ़ता।"
+            },
+            {
+              "instruction": "उदारता, न्याय, परिवार की देखभाल या सेवा का एक व्यावहारिक काम चुनें और सद्भावना से समापन करें; इसे समृद्धि की गारंटी न मानें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "इससे प्रतीक को प्रतीक ही रखते हुए स्मरण उपयोगी बनता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Karnataka family-led familiar form",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-balipadyami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "पारिवारिक कथा, स्वागत और चिंतन",
+          "materials": [
+            {
+              "item": "केवल परिचित प्रार्थना, कथा, फूल, रंगोली या सुरक्षित प्रकाश",
+              "required": true,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "substitutions": [
+                "बिना सामग्री का न्यूनतम रूप या कागज का चित्र और लौ-रहित प्रकाश लें"
+              ]
+            }
+          ],
+          "procedure_id": "balipadyami-karnataka-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada",
+            "devam-balipadyami-safety-boundary",
+            "akashvani-karnataka-bali-padyami"
+          ],
+          "steps": [
+            {
+              "instruction": "बुज़ुर्ग से पूछें कि घर बलि पाड्यमी के कौन-से तत्व रखता है और वे अंतर्देशीय, तटीय या परिवार-विशिष्ट हैं।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "कर्नाटक पर्यटन तटीय भिन्नता बताता है, इसलिए एक ऐप क्रम हर परिवार का प्रतिनिधित्व नहीं कर सकता।"
+            },
+            {
+              "instruction": "परिचित बलि-वामन कथा और प्रार्थना रखें। इच्छा और परम्परा हो तो रंगोली, फूल, कागज का चित्र या निगरानी वाला सुरक्षित प्रकाश जोड़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "आकाशवाणी सजावट और प्रतिमा का वर्णन करता है, पर कोई भी सार्वभौमिक अनिवार्यता नहीं।"
+            },
+            {
+              "instruction": "परिवार के साथ समय, उपयुक्त परिचित भोजन और उदारता या सामुदायिक सेवा का एक काम रखें; एलर्जी, सहमति, गतिशीलता, अग्नि-सुरक्षा और सफाई का ध्यान रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "खरीद, उपहार, अनिवार्य भोजन, असुरक्षित लौ या भौतिक फल के बिना भी दिन अर्थपूर्ण है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or temple-led Karnataka participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-balipadyami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 75,
+          "form": "fuller_family_or_teacher_led",
+          "label": "स्थापित परिवार या मंदिर के नेतृत्व में बलि पाड्यमी",
+          "materials": [
+            {
+              "item": "केवल स्थापित परिवार या मंदिर मार्गदर्शक द्वारा बताई सामग्री और पाठ",
+              "required": true,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "akashvani-karnataka-bali-padyami",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "substitutions": [
+                "अज्ञात प्रतिमा, अभिषेक, मंत्र या भोग-क्रम गढ़ने की जगह मानक रूप लें"
+              ]
+            }
+          ],
+          "procedure_id": "balipadyami-karnataka-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "akashvani-karnataka-bali-padyami",
+            "karnataka-tourism-deepavali-balipratipada",
+            "devam-balipadyami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "बलि की प्रतिमा, अभिषेक, मंत्र, भोग, दीप, यात्रा या तटीय क्रम का निर्णय स्थापित बुज़ुर्ग या मंदिर मार्गदर्शक को करने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "akashvani-karnataka-bali-padyami",
+                "karnataka-tourism-deepavali-balipratipada"
+              ],
+              "why": "स्रोत जीवित परम्परा का वर्णन करते हैं, ऐप के लिए पूर्ण औपचारिक विधि नहीं देते।"
+            },
+            {
+              "instruction": "स्वच्छ सुरक्षित सामग्री और आयोजक के निर्देश मानें; मिट्टी या गोबर अनिवार्य न करें, अज्ञात पदार्थ न खाएं या लगाएं, दीप अकेला न छोड़ें और मंदिर अभिषेक स्वयं न गढ़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "वर्णित सामग्री सार्वभौमिक बाध्यता नहीं और सुरक्षित संचालन तथा जीवित परम्परा का अधिकार मांगती है।"
+            },
+            {
+              "instruction": "स्थापित प्रार्थना, परिवार या मंदिर सहभागिता, भोजन-व्यवस्था, सफाई और साझा सेवा पूरी करें; महाराष्ट्र, BAPS या गोवर्धन की विधि न जोड़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "karnataka-tourism-deepavali-balipratipada",
+                "devam-balipadyami-safety-boundary"
+              ],
+              "why": "इससे कर्नाटक की पहचान और पास की दूसरी परम्पराएँ दोनों सुरक्षित रहती हैं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "बलि-प्रतिनिधित्व केवल परिवार में परिचित हो तो वैकल्पिक है; अपरिचित, अनुपलब्ध या अनुपयुक्त हो तो मिट्टी, गोबर, लौ या सामग्री न लें।",
+        "औपचारिक मंदिर अभिषेक, मंत्र, बड़े दीप-प्रदर्शन, अर्पण और जीवंत कार्यक्रम मंदिर के पास रहते हैं।",
+        "उपवास, भोजन, उपहार, खरीद, विशेष वस्त्र, पशु-संपर्क, दान या समृद्धि-फल अनिवार्य नहीं है।",
+        "महाराष्ट्र बलि प्रतिपदा, BAPS गुजराती नववर्ष और गोवर्धन पूजा अलग हैं।"
+      ],
+      "short_answer": "परिवार की परिचित प्रार्थना या कथा से बलि चक्रवर्ती और वामन की कथा का स्मरण करें, उदारता और धर्मपूर्ण देखभाल पर विचार करें और परिवार या सेवा में समय दें। रंगोली, फूल, बलि की प्रतिमा, दीप, अभिषेक, विशेष भोजन, उपहार और खरीद जीवित परम्परा के वैकल्पिक तत्व हैं—अनिवार्य नहीं और समृद्धि की गारंटी नहीं।",
+      "significance": {
+        "scope_note": "प्रतिमा, दीप, अभिषेक, समृद्धि और क्षेत्रीय रीति के प्रकाशित विवरण वर्णनात्मक हैं, सार्वभौमिक निर्देश नहीं।",
+        "source_ids": [
+          "karnataka-tourism-deepavali-balipratipada",
+          "akashvani-karnataka-bali-padyami"
+        ],
+        "text": "इस सीमित कर्नाटक स्मार्त परम्परा में बलि पाड्यमी राजा बलि, उदारता, धर्म, परिवार या मंदिर की भक्ति और सेवा का स्मरण है, साथ ही तटीय और घरेलू विविधता सुरक्षित रहती है।"
+      },
+      "title": "कर्नाटक बलि पाड्यमी पारिवारिक सहभागिता",
+      "typical_practices": [
+        {
+          "description": "स्रोत राजा बलि की प्रार्थना, तटीय विविधता, रंगोली, दीप, मंदिर अभिषेक और कुछ घरेलू बलि-प्रतिनिधित्व बताते हैं। ऐप सामग्री-रहित स्मरण या परिवार-परिचित रूप देता है; मंदिर-विधि और प्रतिनिधित्व सामग्री जीवित प्रामाणिकता के पास रहती है।",
+          "instructional": false,
+          "population_scope": "वर्तमान स्रोतों में दर्शाए कर्नाटक परिवार और मंदिर",
+          "practice_id": "karnataka-balipadyami-family-temple-participation",
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada",
+            "akashvani-karnataka-bali-padyami",
+            "devam-balipadyami-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "परिवार-परिचित मिट्टी या गोबर का प्रतिनिधित्व एक वर्णित रूप है; मौखिक, लिखित, पुष्प या सामग्री-रहित स्मरण समर्थित विकल्प है।",
+          "scope": "घरेलू रूप",
+          "separate_lane_required": false,
+          "source_ids": [
+            "akashvani-karnataka-bali-padyami",
+            "devam-balipadyami-safety-boundary"
+          ],
+          "variant_id": "representation-and-material-free-forms"
+        },
+        {
+          "difference": "कर्नाटक पर्यटन विशेष तटीय विधि और प्रार्थना का उल्लेख करता है; उनकी विस्तृत प्रक्रिया के लिए अलग स्थानीय प्रामाणिकता चाहिए।",
+          "scope": "तटीय कर्नाटक",
+          "separate_lane_required": true,
+          "source_ids": [
+            "karnataka-tourism-deepavali-balipratipada"
+          ],
+          "variant_id": "coastal-karnataka-forms-remain-open"
+        },
+        {
+          "difference": "महाराष्ट्र पाडवा, BAPS नववर्ष, गोवर्धन पूजा और अन्य क्षेत्रीय बलिपाड्यमी रूप अपने स्रोत और विधियाँ रखते हैं।",
+          "scope": "महाराष्ट्र, BAPS, गोवर्धन और अन्य दक्षिण भारतीय परम्पराएँ",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-balipadyami-safety-boundary"
+          ],
+          "variant_id": "other-pratipada-traditions-separate"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "karnataka-balipadyami"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "2378195e40a1cd93e0a0f700e1903ecf8bedea665a711b95eaa9a27fcdb09fcc",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/balipadyami-bengaluru-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-balipadyami-date-fixture",
+      "source_role": "Deterministic Bengaluru date decision; not ritual authority",
+      "title": "Devam Balipadyami Bengaluru 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://karnatakatourism.org/en/blogs/deepavali-celebrations-in-karnataka-a-festival-of-lights-and-joy",
+        "observed_at": "2026-08-07",
+        "response_bytes": 57273,
+        "response_sha256": "bd3699de8298dcfd1ec2efc2bc8c75b79b712fe092c8212a46ed07a0ae06ffeb",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Karnataka Tourism",
+      "rights_lane": "citation_only",
+      "source_id": "karnataka-tourism-deepavali-balipratipada",
+      "source_role": "Official regional sequence, King Bali, generosity, righteousness, and coastal-variation context; not a complete procedure",
+      "title": "Deepavali Celebrations in Karnataka",
+      "url": "https://karnatakatourism.org/en/blogs/deepavali-celebrations-in-karnataka-a-festival-of-lights-and-joy"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://newsonair.gov.in/karnataka-celebrates-bali-padyami-festival/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 78254,
+        "response_sha256": "42a39ef8f66fce02a6ef3248efca3639b078bf9e7647c156ea5e6fd7ddf74cbc",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Akashvani / News on AIR",
+      "rights_lane": "citation_only",
+      "source_id": "akashvani-karnataka-bali-padyami",
+      "source_role": "Official public-broadcaster identity, Vamana-Bali account, and descriptive household/temple context; not universal instruction",
+      "title": "Karnataka celebrates Bali Padyami festival",
+      "url": "https://www.newsonair.gov.in/karnataka-celebrates-bali-padyami-festival/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-balipadyami-safety-boundary",
+      "source_role": "Editorial safety and scope boundary; not scripture or ritual authority",
+      "title": "Devam Balipadyami material, flame, temple, animal, and cross-tradition boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-balipadyami-karnataka-family-v1"
+  ]
+}

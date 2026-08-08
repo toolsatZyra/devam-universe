@@ -1,0 +1,94 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-gujarati-new-year-baps-family-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "gujarati-new-year-baps",
+  "scope": {
+    "region_codes": ["baps-gujarat"],
+    "tradition_codes": ["swaminarayan-baps"],
+    "language_codes": ["en", "hi"],
+    "ahmedabad_2026_date_fixture_required": true,
+    "baps_family_or_mandir_participation_only": true,
+    "family_or_mandir_custom_overrides_generic_sequence": true,
+    "one_simple_vegetarian_offering_only_when_already_established": true,
+    "bali_pratipada_govardhana_and_balipadyami_not_merged": true
+  },
+  "sources": [
+    {"source_id": "devam-gujarati-new-year-date-fixture", "title": "Devam Gujarati New Year Ahmedabad BAPS 2026 date evidence fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_location_and_tradition_specific_date_fixture", "rights_lane": "derivative_allowed", "artifact_sha256": "afa7230ef7879b18a6dac1653e416db978946cc0c03c40ba7f0cefc0f54603f5"},
+    {"source_id": "baps-festival-list-2026-new-year", "title": "BAPS Festival List 2026: Annakut and Bestu Varash", "publisher": "BAPS Swaminarayan Sanstha", "url": "https://www.baps.org/Calendar/2026/FestivalList.aspx", "source_class": "official_sampradaya_date_first_day_and_food_offering_identity", "rights_lane": "reference_only"},
+    {"source_id": "baps-nutan-varsh-new-year-annakut", "title": "Nutan Varsh / New Year Annakut", "publisher": "BAPS Swaminarayan Sanstha", "url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/NutanVarsh/NewYearAnnakut.aspx", "source_class": "official_sampradaya_annakut_gratitude_food_thal_and_aarti_context_not_household_vidhi", "rights_lane": "reference_only"},
+    {"source_id": "akashvani-gujarati-new-year-context", "title": "Gujarati New Year being celebrated today", "publisher": "Akashvani News", "url": "https://newsonair.gov.in/gujarati-new-year-being-celebrated-today/", "source_class": "official_public_broadcaster_general_gujarat_living_practice_context_not_2026_date_authority", "rights_lane": "reference_only"},
+    {"source_id": "devam-gujarati-new-year-safety-boundary", "title": "Devam Gujarati New Year food, flame, spending, and scope boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_scope_boundary_not_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "gujarati-new-year-baps-family-en-v1",
+      "language_code": "en",
+      "title": "BAPS Gujarati New Year family participation",
+      "summary": "Begin Bestu Varash with the family or mandir prayer you already know, gratitude, New Year greetings, and one manageable act of generosity or service. A home may clean or make a small rangoli if that is its practice. A large Annakut, formal thal or aarti, business-account rite, purchase, new clothes, sweets, lamp, or promised prosperity is not required.",
+      "family_practice_note": "Tell Sarthi whether your family follows BAPS, attends a mandir Annakut, makes a home offering, visits relatives, keeps rangoli, or has a business custom. Let the family or mandir lead any formal offering, thal, aarti, or account-book practice. Other Gujarati and Hindu New Year traditions need their own attributable guidance.",
+      "context_prompts": ["Does your family follow BAPS or another Gujarati New Year tradition?", "Will you observe at home, visit a BAPS mandir Annakut, or greet relatives?", "Which prayer, food-offering, rangoli, greeting, business, or seva custom is already known?", "Do you need a flame-free, food-free, allergy-aware, spend-free, child-safe, mobility-safe, or short form?"],
+      "tiers": [
+        {"tier": "minimum", "label": "Prayer, gratitude, and New Year greeting", "estimated_minutes": 10, "materials": [{"item": "A quiet place and a way to greet family", "substitutions": ["Use a call, message, gesture, or silent goodwill when an in-person visit is not possible"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Use the BAPS Ahmedabad Bestu Varash date only for this exact context; keep Bali Pratipada, Govardhana Puja, and South Indian Balipadyami separate.", "why": "A shared civil day does not make these traditions one ritual.", "optional": false, "source_ids": ["devam-gujarati-new-year-date-fixture"]},
+          {"ordinal": 2, "instruction": "Keep a short family- or mandir-known prayer and name what you are grateful for from the past year; if no particular prayer is known, use quiet reflection.", "why": "BAPS explicitly frames Annakut as appreciation and gratitude, while the app does not invent a formal liturgy.", "optional": false, "source_ids": ["baps-nutan-varsh-new-year-annakut", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Offer Nutan Varshabhinandan to family or friends and choose one practical act of generosity, reconciliation, or seva for the new year.", "why": "Greetings are established public practice and the action makes the day useful without promising prosperity.", "optional": false, "source_ids": ["akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]}
+        ]},
+        {"tier": "standard", "label": "Home welcome, prayer, and simple offering", "estimated_minutes": 30, "materials": [{"item": "Only the family's familiar prayer and one manageable vegetarian food or flower if already offered at home", "substitutions": ["Use prayer, water, a flower or leaf, or the minimum food-free form"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Tidy a safe shared space and make a small entrance rangoli only if familiar and accessible; decoration and new purchases are optional.", "why": "Akashvani records cleaning and rangoli as living context, not as universal requirements.", "optional": false, "source_ids": ["akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Use the household's known prayer. If it already has a food-offering practice, offer one manageable vegetarian item through that practice; otherwise use a food-free prayer.", "why": "Annakut identifies food offered with gratitude, but a mountain of dishes and a newly invented offering method are not household requirements.", "optional": false, "source_ids": ["baps-festival-list-2026-new-year", "baps-nutan-varsh-new-year-annakut", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Share greetings and safe food where appropriate, account for allergies and storage, and choose one realistic seva or relationship intention.", "why": "Hospitality and sweets may be familiar, but food, spending, and material outcomes are not devotional obligations.", "optional": false, "source_ids": ["akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "Established family- or BAPS mandir-led Annakut", "estimated_minutes": 75, "materials": [{"item": "Only the materials, food, and readings directed by the established family or BAPS mandir lead", "substitutions": ["Use the standard form instead of reconstructing a formal Annakut, thal, or aarti"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Let the established family elder or BAPS mandir programme define the Annakut, thal, aarti, participant roles, food preparation, and crowd flow.", "why": "The official source describes the observance but is not a complete household or temple operations manual.", "optional": false, "source_ids": ["baps-nutan-varsh-new-year-annakut", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Follow food-hygiene, allergy, fire, accessibility, and organiser directions; do not leave lamps unattended or bring unapproved food to a mandir.", "why": "A larger celebration creates real safety and food responsibilities.", "optional": false, "source_ids": ["devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Complete prayer, greetings, prasadam or meal distribution, cleanup, and one shared seva intention under the established lead; do not add a business rite unless it is the family's own separate practice.", "why": "This preserves a coherent BAPS lane without making every Gujarati household or business identical.", "optional": false, "source_ids": ["baps-festival-list-2026-new-year", "akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]}
+        ]}
+      ]
+    },
+    {
+      "guide_id": "gujarati-new-year-baps-family-hi-v1",
+      "language_code": "hi",
+      "title": "BAPS गुजराती नववर्ष पारिवारिक सहभागिता",
+      "summary": "बेस्तु वर्ष की शुरुआत परिवार या मंदिर की परिचित प्रार्थना, कृतज्ञता, नववर्ष शुभकामना और सेवा या उदारता के एक छोटे काम से करें। घर अपनी परिचित रीति से सफाई या छोटी रंगोली कर सकता है। बड़ा अन्नकूट, औपचारिक थाल या आरती, बही-खाता पूजा, खरीद, नए वस्त्र, मिठाई, दीप या समृद्धि का वादा अनिवार्य नहीं है।",
+      "family_practice_note": "सार्थी को बताएं कि परिवार BAPS मानता है, मंदिर के अन्नकूट में जाता है, घर पर भोग लगाता है, रिश्तेदारों से मिलता है, रंगोली करता है या व्यापार की कोई अलग रीति रखता है। औपचारिक भोग, थाल, आरती या बही-खाता क्रम का नेतृत्व परिवार या मंदिर को करने दें।",
+      "context_prompts": ["क्या आपका परिवार BAPS मानता है या कोई दूसरी गुजराती नववर्ष परम्परा?", "आप घर पर मनाएंगे, BAPS मंदिर अन्नकूट जाएंगे या रिश्तेदारों से मिलेंगे?", "कौन-सी प्रार्थना, भोग, रंगोली, शुभकामना, व्यापार या सेवा की रीति परिचित है?", "क्या आपको बिना लौ, बिना भोजन, एलर्जी-सुरक्षित, बिना खर्च, बच्चों, गतिशीलता या कम समय का रूप चाहिए?"],
+      "tiers": [
+        {"tier": "minimum", "label": "प्रार्थना, कृतज्ञता और नववर्ष शुभकामना", "estimated_minutes": 10, "materials": [{"item": "शांत स्थान और परिवार को शुभकामना देने का साधन", "substitutions": ["मुलाकात संभव न हो तो कॉल, संदेश, संकेत या मौन सद्भावना रखें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "BAPS अहमदाबाद बेस्तु वर्ष की तारीख केवल इसी सन्दर्भ में लें; बलि प्रतिपदा, गोवर्धन पूजा और दक्षिण भारतीय बलिपाड्यमी अलग रखें।", "why": "एक ही तारीख इन परम्पराओं को एक अनुष्ठान नहीं बनाती।", "optional": false, "source_ids": ["devam-gujarati-new-year-date-fixture"]},
+          {"ordinal": 2, "instruction": "परिवार या मंदिर की परिचित छोटी प्रार्थना रखें और पिछले वर्ष की एक कृतज्ञता याद करें; कोई प्रार्थना न मालूम हो तो मौन चिंतन करें।", "why": "BAPS अन्नकूट को कृतज्ञता से जोड़ता है, पर ऐप औपचारिक विधान नहीं गढ़ता।", "optional": false, "source_ids": ["baps-nutan-varsh-new-year-annakut", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 3, "instruction": "परिवार या मित्रों को नूतन वर्षाभिनंदन दें और नए वर्ष के लिए उदारता, मेल-मिलाप या सेवा का एक काम चुनें।", "why": "शुभकामना स्थापित लोक-प्रथा है और यह समृद्धि का वादा किए बिना दिन को उपयोगी बनाती है।", "optional": false, "source_ids": ["akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]}
+        ]},
+        {"tier": "standard", "label": "गृह-स्वागत, प्रार्थना और सरल भोग", "estimated_minutes": 30, "materials": [{"item": "केवल परिचित प्रार्थना और घर में पहले से भोग लगता हो तो एक साधारण शाकाहारी भोजन या फूल", "substitutions": ["प्रार्थना, जल, फूल या पत्ता, अथवा बिना भोजन का न्यूनतम रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "सुरक्षित साझा स्थान साफ करें और परिचित व सुलभ हो तो छोटी रंगोली बनाएं; सजावट और खरीद वैकल्पिक हैं।", "why": "आकाशवाणी सफाई और रंगोली का जीवित सन्दर्भ देता है, सार्वभौमिक नियम नहीं।", "optional": false, "source_ids": ["akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 2, "instruction": "घर की परिचित प्रार्थना करें। घर में पहले से भोग-विधि हो तो उसी से एक साधारण शाकाहारी वस्तु अर्पित करें; अन्यथा बिना भोजन की प्रार्थना रखें।", "why": "अन्नकूट कृतज्ञता से भोजन-अर्पण बताता है, पर बहुत से व्यंजन या नई विधि अनिवार्य नहीं।", "optional": false, "source_ids": ["baps-festival-list-2026-new-year", "baps-nutan-varsh-new-year-annakut", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 3, "instruction": "एलर्जी और भंडारण का ध्यान रखकर शुभकामना व उपयुक्त भोजन साझा करें और सेवा या सम्बन्ध का एक यथार्थ संकल्प लें।", "why": "आतिथ्य और मिठाई परिचित हो सकते हैं, पर भोजन, खर्च और भौतिक परिणाम अनिवार्य नहीं।", "optional": false, "source_ids": ["akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "स्थापित परिवार या BAPS मंदिर के नेतृत्व में अन्नकूट", "estimated_minutes": 75, "materials": [{"item": "केवल स्थापित परिवार या BAPS मंदिर मार्गदर्शक द्वारा बताई सामग्री, भोजन और पाठ", "substitutions": ["औपचारिक अन्नकूट, थाल या आरती गढ़ने की जगह मानक रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "अन्नकूट, थाल, आरती, भूमिकाओं, भोजन-तैयारी और भीड़-व्यवस्था का निर्णय स्थापित बुज़ुर्ग या BAPS मंदिर कार्यक्रम को करने दें।", "why": "आधिकारिक स्रोत उत्सव का वर्णन करता है, पूर्ण गृह या मंदिर संचालन-पुस्तिका नहीं।", "optional": false, "source_ids": ["baps-nutan-varsh-new-year-annakut", "devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 2, "instruction": "भोजन-स्वच्छता, एलर्जी, अग्नि, सुलभता और आयोजक के निर्देश मानें; दीप अकेला न छोड़ें और मंदिर में बिना अनुमति भोजन न लाएं।", "why": "बड़े आयोजन में वास्तविक सुरक्षा और भोजन की जिम्मेदारियाँ होती हैं।", "optional": false, "source_ids": ["devam-gujarati-new-year-safety-boundary"]},
+          {"ordinal": 3, "instruction": "स्थापित नेतृत्व में प्रार्थना, शुभकामना, प्रसाद या भोजन-वितरण, सफाई और साझा सेवा-संकल्प पूरा करें; परिवार की अलग रीति न हो तो व्यापार पूजा न जोड़ें।", "why": "इससे BAPS परम्परा बनी रहती है और हर गुजराती घर या व्यापार को एक जैसा नहीं माना जाता।", "optional": false, "source_ids": ["baps-festival-list-2026-new-year", "akashvani-gujarati-new-year-context", "devam-gujarati-new-year-safety-boundary"]}
+        ]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "baps_family_or_mandir_prayer_gratitude_greetings_and_seva_supported": true,
+    "one_simple_home_offering_when_already_established_supported": true,
+    "formal_annakut_thal_aarti_or_mantras_included": false,
+    "large_food_array_required": false,
+    "business_account_book_puja_required": false,
+    "new_clothes_purchase_sweets_or_gift_required": false,
+    "real_flame_required": false,
+    "wealth_success_or_prosperity_guaranteed": false,
+    "bali_pratipada_merged": false,
+    "govardhana_puja_merged": false,
+    "south_indian_balipadyami_merged": false,
+    "one_universal_gujarat_or_hindu_new_year_procedure_claimed": false,
+    "all_gujarati_family_variants_complete": false
+  }
+}

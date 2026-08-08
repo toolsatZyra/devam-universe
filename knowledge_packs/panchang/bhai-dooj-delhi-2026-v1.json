@@ -1,0 +1,54 @@
+{
+  "contract": "DEVAM_BHAI_DOOJ_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-bhai-dooj-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-10", "2026-11-11"],
+    "supported_tradition_codes": ["smarta-north-india"],
+    "selected_civil_date": "2026-11-11",
+    "date_resolved_by_devam_rule": true,
+    "precise_provider_aparahna_interval_reproduced": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "incredible-india-bhai-dooj-2026",
+      "provider": "Incredible India, Ministry of Tourism",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/bhai-dooj",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_date_identity_story_and_north_india_household_core",
+      "observed_fetch": {"status": 200, "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/bhai-dooj", "response_bytes": 477821, "response_sha256": "d0ae202731bf2e98580a9fe9a302894d39dfb4ad3873ace5538639d85578d98a", "strict_utf8": true},
+      "semantic_observation": {"wednesday_11_november_2026": true, "aarti_and_tika_core": true, "yama_yami_story_present": true, "krishna_subhadra_story_present": true, "regional_variants_present": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "newsonair-bhai-dooj-regional-names",
+      "provider": "DD News On Air",
+      "url": "https://www.newsonair.gov.in/bulletins-detail/morning-news-532/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_current_regional_names_and_tika_prayer_corroboration",
+      "observed_fetch": {"status": 200, "final_url": "https://newsonair.gov.in/bulletins-detail/morning-news-532/", "response_bytes": 85601, "response_sha256": "011af6d6857209646ca27e53d6368e1fc072a7f7c99634de75b23e9510e7b20c", "strict_utf8": true},
+      "semantic_observation": {"bhai_phota_name": true, "bhaubeej_name": true, "bhai_tika_name": true, "yama_dwitiya_name": true, "sister_applies_tika_and_prays": true},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "bhai-dooj",
+    "canonical_name": "Bhai Dooj / Yama Dvitiya",
+    "target_tithi": "Kartika Shukla Dvitiya",
+    "decision_window": "aparahna",
+    "selected_civil_date": "2026-11-11",
+    "official_ministry_date_matches": true,
+    "regional_forms_remain_separate": true
+  },
+  "denials": {
+    "precise_provider_aparahna_interval_reproduced": false,
+    "bhau_beej_bhai_phota_bhai_tika_or_bihar_procedure_completed": false,
+    "fixed_tilak_recipe_required": false,
+    "fasting_prescribed": false,
+    "guaranteed_longevity_or_protection_claimed": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

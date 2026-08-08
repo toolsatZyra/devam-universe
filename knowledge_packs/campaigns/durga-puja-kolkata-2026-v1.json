@@ -1,0 +1,96 @@
+{
+  "contract": "DEVAM_HERO_CAMPAIGN_CALENDAR_V1",
+  "campaign_id": "durga-puja-2026-bengal-shakta",
+  "title": "Bengal Durga Puja",
+  "scope": {
+    "civil_date_start": "2026-10-16",
+    "civil_date_end": "2026-10-21",
+    "reference_location": "Kolkata, India",
+    "geoname_id": 1275004,
+    "supported_tradition_codes": ["shakta-bengal"],
+    "calendar_span_days": 6,
+    "official_peak_span_start": "2026-10-17",
+    "official_peak_span_end": "2026-10-21",
+    "ritual_procedure_resolved": false
+  },
+  "evidence": {
+    "historical_source": {
+      "source_id": "nirnayasindhu-1865-navaratri-durga-puja-section",
+      "internet_archive_identifier": "in.ernet.dli.2015.365977",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205],
+      "evidence_role": "historical_navaratri_and_durga_worship_context_not_modern_bengal_calendar_authority",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_product": false
+    },
+    "current_sources": [
+      {
+        "source_id": "incredible-india-durga-puja-2026",
+        "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/durga-puja",
+        "http_status": 200,
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/durga-puja",
+        "response_bytes": 512560,
+        "response_sha256": "bf370460363d541e1a6eaf98073a38555cdcfb398a930caeaae1a66072a06237",
+        "strict_utf8": true,
+        "repeat_fetch_byte_identical": true,
+        "evidence_role": "official_kolkata_peak_five_day_span_and_cultural_context",
+        "rights_lane": "reference_only",
+        "source_text_returned_by_product": false
+      },
+      {
+        "source_id": "west-bengal-government-holiday-notification-4188-fp2",
+        "url": "https://wb.gov.in/pdf/Holiday-2026.pdf",
+        "notification_number": "4188-F(P2)",
+        "notification_date": "2025-11-27",
+        "observed_calendar": {
+          "maha_panchami": "2026-10-16",
+          "maha_shashthi": "2026-10-17",
+          "maha_saptami": "2026-10-18",
+          "maha_ashtami": "2026-10-19",
+          "maha_navami": "2026-10-20",
+          "dasami": "2026-10-21"
+        },
+        "raw_fixity_frozen": false,
+        "raw_fixity_note": "The official PDF was read through the normal-TLS web source. A separate Node fetch timed out at connection establishment; TLS was not weakened and no raw carrier was acquired.",
+        "evidence_role": "official_west_bengal_civil_calendar_corroboration",
+        "rights_lane": "reference_only",
+        "source_text_returned_by_product": false
+      },
+      {
+        "source_id": "drikpanchang-kolkata-durga-puja-2026",
+        "url": "https://www.drikpanchang.com/navratri/durga-puja/durga-puja-calendar.html?geoname-id=1275004&year=2026",
+        "http_status": 200,
+        "final_url": "https://www.drikpanchang.com/navratri/durga-puja/durga-puja-calendar.html?geoname-id=1275004&year=2026",
+        "response_bytes": 88076,
+        "response_sha256": "6f43ca40afeec45fa1f3085695abbb75dbbdb29c9d1606c20043a40c4cc76ac9",
+        "strict_utf8": true,
+        "repeat_fetch_byte_identical": true,
+        "evidence_role": "current_kolkata_six_day_calendar_and_literal_event_labels",
+        "rights_lane": "reference_only",
+        "source_text_returned_by_product": false
+      }
+    ]
+  },
+  "days": [
+    {"civil_date": "2026-10-16", "ordinal": 1, "phase": "prelude", "common_name": "Bilva Nimantran", "labels": ["Bilva Nimantran", "Maha Panchami (West Bengal holiday label)"], "label_divergence": "The practitioner calendar calls this Durga Puja day 1 and labels the tithi Shashthi; the state holiday notification labels the civil date Maha Panchami."},
+    {"civil_date": "2026-10-17", "ordinal": 2, "phase": "shashthi_opening", "common_name": "Kalparambha and Maha Shashthi", "labels": ["Kalparambha", "Akal Bodhan", "Amantran and Adhivas", "Maha Shashthi"]},
+    {"civil_date": "2026-10-18", "ordinal": 3, "phase": "saptami", "common_name": "Maha Saptami", "labels": ["Durga Saptami", "Kolabou Puja", "Maha Saptami"]},
+    {"civil_date": "2026-10-19", "ordinal": 4, "phase": "ashtami", "common_name": "Maha Ashtami", "labels": ["Durga Ashtami", "Kumari Puja", "Sandhi Puja", "Maha Navami practitioner-calendar lead"]},
+    {"civil_date": "2026-10-20", "ordinal": 5, "phase": "navami", "common_name": "Maha Navami", "labels": ["Maha Navami", "Navami Homa", "Durga Balidan reference label", "Durga Visarjan practitioner-calendar lead", "Vijayadashami practitioner-calendar lead"], "label_divergence": "The state holiday notification labels this Maha Navami; the practitioner calendar also lists early Visarjan and Vijayadashami references. These labels are preserved without merging the day into the October 21 Dasami close."},
+    {"civil_date": "2026-10-21", "ordinal": 6, "phase": "dashami_closing", "common_name": "Vijayadashami and Bengal Durga Visarjan", "labels": ["Dasami", "Vijayadashami", "Bengal Durga Visarjan", "Sindoor Utsav"]}
+  ],
+  "display_note": "This is the bounded Kolkata/Bengal 2026 calendar lane. It is separate from the North/West Navaratri sequence, and it does not provide a household or priest-led Durga Puja procedure.",
+  "boundaries": {
+    "exact_bengal_shakta_2026_lane_only": true,
+    "calendar_label_divergences_preserved": true,
+    "north_west_navaratri_calendar_included": false,
+    "household_puja_procedure_resolved": false,
+    "community_pandal_procedure_resolved": false,
+    "priest_led_vidhi_resolved": false,
+    "sandhi_puja_timing_calculated": false,
+    "balidan_instruction_provided": false,
+    "visarjan_instruction_provided": false,
+    "all_bengal_variants_complete": false,
+    "all_durga_puja_traditions_complete": false
+  }
+}

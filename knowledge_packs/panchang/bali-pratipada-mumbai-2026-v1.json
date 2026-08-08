@@ -1,0 +1,55 @@
+{
+  "contract": "DEVAM_BALI_PRATIPADA_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-bali-pratipada-mumbai-2026-v1",
+  "scope": {
+    "reference_location": "Mumbai, Maharashtra, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-09", "2026-11-10"],
+    "supported_tradition_codes": ["smarta-west-india"],
+    "selected_civil_date": "2026-11-10",
+    "date_resolved_by_devam_rule": true,
+    "precise_provider_puja_interval_reproduced": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "maharashtra-tourism-diwali-balipratipada",
+      "provider": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_maharashtra_identity_king_bali_and_family_core",
+      "observed_fetch": {"status": 200, "final_url": "https://maharashtratourism.gov.in/festivals/diwali/", "response_bytes": 627476, "response_sha256": "843ba748f82e5b2ba4573a1b70ef2e7033b7ad01ec754a5fb89d489828278a64", "strict_utf8": true},
+      "semantic_observation": {"balipratipada_name": true, "padwa_name": true, "day_four_of_five_day_sequence": true, "honors_king_bali": true, "joyful_family_time": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "jnpa-port-holidays-2026-bali-pratipada",
+      "provider": "Jawaharlal Nehru Port Authority",
+      "url": "https://www.jnport.gov.in/page/port-holidays/UGw0dUxHZDJBNloybXVsV2wwY09MQT09",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_maharashtra_2026_civil_date_corroboration",
+      "observed_fetch": {"status": 200, "final_url": "https://www.jnport.gov.in/page/port-holidays/UGw0dUxHZDJBNloybXVsV2wwY09MQT09", "response_bytes": 77864, "response_sha256": "190612ddd6b8d008bf022f9180e9d3c6c5708545f5c37da481b1e8311f2bcdca", "strict_utf8": true},
+      "semantic_observation": {"balipratipda_name": true, "diwali_padava_name": true, "tuesday_10_november_2026": true},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "bali-pratipada",
+    "canonical_name": "Bali Pratipada / Diwali Padwa",
+    "target_tithi": "Kartika Shukla Pratipada",
+    "decision_window": "sunrise",
+    "selected_civil_date": "2026-11-10",
+    "official_maharashtra_date_matches": true,
+    "regional_forms_remain_separate": true
+  },
+  "denials": {
+    "precise_provider_puja_interval_reproduced": false,
+    "govardhana_or_annakut_merged": false,
+    "gujarati_new_year_or_baps_annakut_merged": false,
+    "south_india_balipadyami_completed": false,
+    "fixed_spouse_rite_or_gift_required": false,
+    "commercial_new_year_procedure_completed": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

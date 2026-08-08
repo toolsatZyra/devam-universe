@@ -1,0 +1,885 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family call this Sharad Purnima, Kojagiri, Kojagara, or another regional name?",
+      "Is your familiar emphasis Lakshmi, Krishna/Raas, harvest or new food, moonlit family gathering, temple worship, or a community programme?",
+      "Does your family already have a safe food, lamp, moon-viewing, song, prayer, or night-closing custom?",
+      "Would you prefer a material-free reflection, a family form, or participation in an official local programme?"
+    ],
+    "observance_context_notes": [
+      {
+        "language_code": "en",
+        "note": "Confirm the name and form your family uses: Sharad Purnima, Kojagiri, Kojagara, a Lakshmi observance, a Krishna or Raas remembrance, a harvest/new-food custom, or a community cultural night are not interchangeable everywhere. This guide does not cover Bengali Kojagari Lakshmi Puja. Follow your family or temple for formal worship, food, fast, vigil, and closing practice.",
+        "observance_slug": "kojagara-puja-sharad-purnima"
+      },
+      {
+        "language_code": "hi",
+        "note": "पहले जानें कि आपका परिवार इसे शरद पूर्णिमा, कोजागिरी, कोजागरा, लक्ष्मी-पर्व, कृष्ण या रास-स्मरण, नई फसल की परम्परा या सामुदायिक सांस्कृतिक रात्रि के रूप में मानता है। ये रूप हर जगह एक जैसे नहीं हैं। यह मार्गदर्शिका बंगाली कोजागरी लक्ष्मी पूजा नहीं है। औपचारिक पूजा, भोजन, उपवास, जागरण और समापन के लिए परिवार या मंदिर का निर्देश मानें।",
+        "observance_slug": "kojagara-puja-sharad-purnima"
+      }
+    ],
+    "region_codes": [
+      "north-india",
+      "west-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": null,
+    "decision_rule_id": "devam-kojagara-purnima-nishita-v1",
+    "freshness_note": "Resolve the named observance for the user's location and tradition. Family, temple, teacher, or sampradaya authority controls formal practice and close.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-kojagara-calendar-fixture",
+      "nirnayasindhu-1865-ashvayuja-kojagari",
+      "drikpanchang-delhi-kojagara-2026"
+    ],
+    "timing_kind": "textual_rule",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "kojagara-sharad-purnima-north-west-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "multiple-kojagara-tradition-contexts",
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024"
+          ],
+          "summary": "The retained sources preserve Lakshmi, Krishna-Raas, harvest, music, prayer, and community framings. They are related living contexts, not one universal origin story or theology.",
+          "title": "Several attributable Kojagara contexts",
+          "tradition_scope": "North/West India source-labelled contexts",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Self-guided reflection",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kojagara-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "10-minute gratitude form",
+          "materials": [
+            {
+              "item": "No material required",
+              "required": false,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "substitutions": [
+                "A familiar family prayer",
+                "An attributable Lakshmi or Krishna reading",
+                "Quiet reflection"
+              ]
+            }
+          ],
+          "procedure_id": "kojagara-sharad-purnima-north-west-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-kojagara-calendar-fixture",
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "devam-kojagara-safety-boundary",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm that the North/West India Smarta lane matches your family; do not import the Bengali Kojagari Lakshmi Puja sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kojagara-calendar-fixture",
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "The same full-moon night carries materially distinct regional identities and procedures."
+            },
+            {
+              "instruction": "Offer a brief prayer or quiet gratitude for sufficiency, care, and the people or conditions that sustain the household.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "This keeps the reflection meaningful without turning prosperity language into a guaranteed outcome."
+            },
+            {
+              "instruction": "If safe and comfortable, notice the night sky from a secure place; ordinary indoor reflection is an equal substitute.",
+              "optional": true,
+              "ordinal": 3,
+              "source_ids": [
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "Moonlit celebration is documented, but exposure is neither medically beneficial nor ritually mandatory on this guide's authority."
+            },
+            {
+              "instruction": "Choose one practical act of gratitude, sharing, or support that does not depend on a promised result.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "The observance becomes actionable while remaining free of wealth, healing, merit, or protection guarantees."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Individual or household reflection",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kojagara-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "30-minute family remembrance",
+          "materials": [
+            {
+              "item": "A family-known prayer, story, song, or short attributable reading",
+              "required": false,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "substitutions": [
+                "Quiet gratitude",
+                "An official temple recording",
+                "The material-free form"
+              ]
+            }
+          ],
+          "procedure_id": "kojagara-sharad-purnima-north-west-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024",
+            "devam-kojagara-safety-boundary",
+            "nirnayasindhu-1865-ashvayuja-kojagari"
+          ],
+          "steps": [
+            {
+              "instruction": "Name the regional and family identity being followed before beginning.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024"
+              ],
+              "why": "Lakshmi, Krishna/Raas, harvest, moonlit social, and public-event layers must remain attributable."
+            },
+            {
+              "instruction": "Read or hear one short teaching from an identified source, teacher, or temple appropriate to that identity.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "Source attribution prevents a local explanation from becoming universal doctrine."
+            },
+            {
+              "instruction": "Add a family-known prayer, bhajan, music, or silence; participation and listening are both valid.",
+              "optional": true,
+              "ordinal": 3,
+              "source_ids": [
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024"
+              ],
+              "why": "Official regional sources document prayer and music while leaving a low-material accessible form."
+            },
+            {
+              "instruction": "If your family serves milk, kheer, or another food, use ordinary food-safety practice and the established family recipe; food is optional and never medicine here.",
+              "optional": true,
+              "ordinal": 4,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "The food tradition is attributable living context, not a medical or mandatory ritual claim."
+            },
+            {
+              "instruction": "Close at a reasonable family-chosen time with one act of gratitude or sharing; an all-night vigil is not required.",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "nirnayasindhu-1865-ashvayuja-kojagari",
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "Historical and living sources mention wakefulness, but this guide does not prescribe a vigil."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family-, teacher-, community-, or temple-led participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kojagara-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "60-minute family or community participation",
+          "materials": [
+            {
+              "item": "Current official local temple or cultural programme",
+              "required": false,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "substitutions": [
+                "A family-led gathering",
+                "An official stream or recording",
+                "The standard home form"
+              ]
+            }
+          ],
+          "procedure_id": "kojagara-sharad-purnima-north-west-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-kojagara-calendar-fixture",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024",
+            "devam-kojagara-safety-boundary",
+            "maharashtra-tourism-kojagiri-purnima-2026"
+          ],
+          "steps": [
+            {
+              "instruction": "Check the current programme and safety instructions of your own temple, community, or venue; Delhi, Maharashtra, Sagar, and Nadabet observations are not reusable local schedules.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kojagara-calendar-fixture",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "Programme form, timing, crowd, flame, food, and venue rules are local and mutable."
+            },
+            {
+              "instruction": "Join only the prayer, music, cultural programme, darshan, or family activity actually offered by that authority.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024"
+              ],
+              "why": "Living participation remains under the institution or family that owns the programme."
+            },
+            {
+              "instruction": "Leave formal Lakshmi Puja, arati, deepdaan, offerings, fasting, vigil, and food distribution to the established organiser or family practice.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "Described regional practices are not converted into one unsupervised procedure."
+            },
+            {
+              "instruction": "Do not use gambling, medicinal moonlight, unsafe outdoor food, unattended flame, or guaranteed prosperity as requirements.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "Those claims or practices are unsafe, contested, or outside this bounded participation guide."
+            },
+            {
+              "instruction": "Close with gratitude and one concrete act of sharing or household care, recording the source or programme followed.",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "This makes the experience useful and attributable without claiming ritual or spiritual completion."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "No fast, food rule, health advice, formal Lakshmi Puja, arati, deepdaan, offering, moon worship, vigil, gambling, or promised outcome is supplied.",
+        "Do not claim medicinal or curative benefit from moonlight or food.",
+        "Use safe flame-free and food-safe options; family and regional practice controls formal observance."
+      ],
+      "short_answer": "A bounded North/West India Smarta form for gratitude, an attributable Lakshmi or Krishna remembrance where it belongs to the family, optional safe moonlit reflection, music or prayer, and community participation without prescribing fasting, vigil, food, formal worship, or health and prosperity claims.",
+      "significance": {
+        "scope_note": "Bengal Kojagari Lakshmi Puja and the next-day Ashwina Purnima calendar lane remain separate.",
+        "source_ids": [
+          "devam-kojagara-calendar-fixture",
+          "nirnayasindhu-1865-ashvayuja-kojagari",
+          "drikpanchang-delhi-kojagara-2026",
+          "maharashtra-tourism-kojagiri-purnima-2026"
+        ],
+        "text": "This bounded North/West India Smarta lane preserves Kojagara/Sharad Purnima as a night of source-attributable Lakshmi, Krishna-Raas, harvest, music, prayer, family, and community contexts."
+      },
+      "title": "Kojagara / Sharad Purnima reflection",
+      "typical_practices": [
+        {
+          "description": "Prayer, music, family or community gathering, and moonlit reflection are attributable practices; food is optional only where family-established and is never presented as medicine.",
+          "instructional": false,
+          "population_scope": "Attributable North/West family and community contexts",
+          "practice_id": "family-prayer-music-moonlit-gathering",
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024",
+            "devam-kojagara-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Lakshmi, Krishna-Raas, harvest, music, and local gathering emphases remain source-labelled.",
+          "scope": "North and West India family/community forms",
+          "separate_lane_required": false,
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024"
+          ],
+          "variant_id": "north-west-contexts"
+        },
+        {
+          "difference": "Bengali Kojagari Lakshmi Puja requires its own evidence and procedure lane.",
+          "scope": "Bengal Shakta household and community practice",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kojagara-safety-boundary"
+          ],
+          "variant_id": "bengal-kojagari-lakshmi-puja"
+        },
+        {
+          "difference": "The sunrise-based calendar day remains separate from the Nishita-selected Kojagara night.",
+          "scope": "Next-day generic Ashwina Purnima",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kojagara-calendar-fixture",
+            "drikpanchang-delhi-kojagara-2026"
+          ],
+          "variant_id": "ashwina-purnima-calendar-day"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "multiple-kojagara-tradition-contexts",
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024"
+          ],
+          "summary": "संचित स्रोत लक्ष्मी, कृष्ण-रास, फसल, संगीत, प्रार्थना और सामुदायिक रूप सुरक्षित रखते हैं। ये संबंधित जीवित संदर्भ हैं, एक सार्वभौमिक उत्पत्ति-कथा या दर्शन नहीं।",
+          "title": "कोजागरा के कई स्रोत-चिह्नित संदर्भ",
+          "tradition_scope": "North/West India source-labelled contexts",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Self-guided reflection",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kojagara-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "10 मिनट का कृतज्ञता रूप",
+          "materials": [
+            {
+              "item": "कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "substitutions": [
+                "परिवार-परिचित प्रार्थना",
+                "स्रोत-स्पष्ट लक्ष्मी या कृष्ण पाठ",
+                "मौन चिन्तन"
+              ]
+            }
+          ],
+          "procedure_id": "kojagara-sharad-purnima-north-west-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-kojagara-calendar-fixture",
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "devam-kojagara-safety-boundary",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024"
+          ],
+          "steps": [
+            {
+              "instruction": "पक्का करें कि उत्तर/पश्चिम भारत का स्मार्त रूप आपके परिवार पर लागू है; बंगाली कोजागरी लक्ष्मी पूजा का क्रम इसमें न मिलाएँ।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kojagara-calendar-fixture",
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "एक ही पूर्णिमा-रात्रि में अलग क्षेत्रीय पहचान और विधियाँ हैं।"
+            },
+            {
+              "instruction": "पर्याप्तता, देखभाल और परिवार को सम्भालने वाले लोगों या परिस्थितियों के लिए छोटी प्रार्थना या मौन कृतज्ञता रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "इससे समृद्धि की भाषा किसी गारंटी में बदले बिना स्मरण अर्थपूर्ण रहता है।"
+            },
+            {
+              "instruction": "सुरक्षित और सुविधाजनक हो तो किसी सुरक्षित स्थान से रात के आकाश को देखें; घर के भीतर चिन्तन समान विकल्प है।",
+              "optional": true,
+              "ordinal": 3,
+              "source_ids": [
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "चाँदनी में उत्सव दर्ज है, पर इस मार्गदर्शिका में वह न चिकित्सकीय लाभ है न अनिवार्य विधि।"
+            },
+            {
+              "instruction": "कृतज्ञता, बाँटने या सहयोग का एक ठोस काम चुनें, फल की शर्त के बिना।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "अभ्यास धन, आरोग्य, पुण्य या रक्षा की गारंटी के बिना उपयोगी बनता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Individual or household reflection",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kojagara-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "30 मिनट का पारिवारिक स्मरण",
+          "materials": [
+            {
+              "item": "परिवार-परिचित प्रार्थना, कथा, गीत या छोटा स्रोत-स्पष्ट पाठ",
+              "required": false,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "substitutions": [
+                "मौन कृतज्ञता",
+                "आधिकारिक मंदिर रिकॉर्डिंग",
+                "बिना सामग्री का रूप"
+              ]
+            }
+          ],
+          "procedure_id": "kojagara-sharad-purnima-north-west-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024",
+            "devam-kojagara-safety-boundary",
+            "nirnayasindhu-1865-ashvayuja-kojagari"
+          ],
+          "steps": [
+            {
+              "instruction": "आरम्भ से पहले उस क्षेत्रीय और पारिवारिक पहचान का नाम लें जिसका पालन हो रहा है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024"
+              ],
+              "why": "लक्ष्मी, कृष्ण/रास, नई फसल, चाँदनी में सामाजिक मिलन और सार्वजनिक कार्यक्रम अलग और स्रोत-स्पष्ट रहने चाहिए।"
+            },
+            {
+              "instruction": "उस पहचान से जुड़ी एक छोटी शिक्षा किसी पहचाने हुए स्रोत, गुरु या मंदिर से पढ़ें या सुनें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "स्रोत-स्पष्टता स्थानीय व्याख्या को सार्वभौमिक सिद्धान्त बनने से रोकती है।"
+            },
+            {
+              "instruction": "परिवार-परिचित प्रार्थना, भजन, संगीत या मौन जोड़ें; सुनना भी पूरी तरह मान्य है।",
+              "optional": true,
+              "ordinal": 3,
+              "source_ids": [
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024"
+              ],
+              "why": "आधिकारिक क्षेत्रीय स्रोत प्रार्थना और संगीत दर्ज करते हैं और सरल रूप की जगह छोड़ते हैं।"
+            },
+            {
+              "instruction": "यदि परिवार दूध, खीर या दूसरा भोजन रखता है, तो सामान्य खाद्य-सुरक्षा और परिचित पारिवारिक विधि अपनाएँ; भोजन वैकल्पिक है और यहाँ औषधि नहीं।",
+              "optional": true,
+              "ordinal": 4,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "भोजन की परम्परा जीवित सन्दर्भ है, चिकित्सकीय या अनिवार्य विधि नहीं।"
+            },
+            {
+              "instruction": "परिवार के चुने उचित समय पर कृतज्ञता या बाँटने के एक काम से समापन करें; पूरी रात जागना आवश्यक नहीं।",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "nirnayasindhu-1865-ashvayuja-kojagari",
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "ऐतिहासिक और जीवित स्रोत जागरण कहते हैं, पर यह मार्गदर्शिका जागरण निर्धारित नहीं करती।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family-, teacher-, community-, or temple-led participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kojagara-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "60 मिनट की पारिवारिक या सामुदायिक भागीदारी",
+          "materials": [
+            {
+              "item": "वर्तमान आधिकारिक स्थानीय मंदिर या सांस्कृतिक कार्यक्रम",
+              "required": false,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "substitutions": [
+                "परिवार का कार्यक्रम",
+                "आधिकारिक प्रसारण या रिकॉर्डिंग",
+                "मानक घरेलू रूप"
+              ]
+            }
+          ],
+          "procedure_id": "kojagara-sharad-purnima-north-west-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-kojagara-calendar-fixture",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024",
+            "devam-kojagara-safety-boundary",
+            "maharashtra-tourism-kojagiri-purnima-2026"
+          ],
+          "steps": [
+            {
+              "instruction": "अपने मंदिर, समुदाय या स्थल का वर्तमान कार्यक्रम और सुरक्षा-निर्देश देखें; दिल्ली, महाराष्ट्र, सागर और नडाबेट के प्रमाण स्थानीय समय-सारिणी नहीं हैं।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kojagara-calendar-fixture",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "समय, भीड़, दीप, भोजन और स्थल-नियम स्थानीय तथा बदलने वाले हैं।"
+            },
+            {
+              "instruction": "केवल वही प्रार्थना, संगीत, सांस्कृतिक कार्यक्रम, दर्शन या पारिवारिक गतिविधि अपनाएँ जो उस संस्था या परिवार ने वास्तव में दी है।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "utsav-sharad-purnima-nadabet-2024"
+              ],
+              "why": "जीवित भागीदारी कार्यक्रम चलाने वाली संस्था या परिवार के अधीन रहती है।"
+            },
+            {
+              "instruction": "औपचारिक लक्ष्मी पूजा, आरती, दीपदान, अर्पण, उपवास, जागरण और भोजन-वितरण स्थापित आयोजक या परिवार पर छोड़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "incredible-india-kojagiri-mahotsav-sagar-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "वर्णित क्षेत्रीय प्रथाएँ एक असुरक्षित सार्वभौमिक विधि नहीं बनतीं।"
+            },
+            {
+              "instruction": "जुआ, चाँदनी को औषधि मानना, असुरक्षित खुला भोजन, बिना निगरानी दीप या निश्चित समृद्धि को आवश्यकता न बनाएँ।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "maharashtra-tourism-kojagiri-purnima-2026",
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "ये दावे या प्रथाएँ असुरक्षित, विवादित या इस सीमित भागीदारी रूप से बाहर हैं।"
+            },
+            {
+              "instruction": "कृतज्ञता और बाँटने या घरेलू देखभाल के एक ठोस काम से समापन करें तथा उपयोग किए स्रोत या कार्यक्रम का नाम लिखें।",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "devam-kojagara-safety-boundary"
+              ],
+              "why": "अनुष्ठान या आध्यात्मिक पूर्णता का दावा किए बिना अनुभव उपयोगी और स्रोत-स्पष्ट रहता है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "No fast, food rule, health advice, formal Lakshmi Puja, arati, deepdaan, offering, moon worship, vigil, gambling, or promised outcome is supplied.",
+        "Do not claim medicinal or curative benefit from moonlight or food.",
+        "Use safe flame-free and food-safe options; family and regional practice controls formal observance."
+      ],
+      "short_answer": "कृतज्ञता, परिवार की परम्परा में हो तो स्रोत-स्पष्ट लक्ष्मी या कृष्ण स्मरण, वैकल्पिक सुरक्षित चाँदनी-चिन्तन, संगीत या प्रार्थना और सामुदायिक भागीदारी का सीमित उत्तर/पश्चिम भारतीय स्मार्त रूप—उपवास, जागरण, भोजन, औपचारिक पूजा, स्वास्थ्य या समृद्धि के दावे के बिना।",
+      "significance": {
+        "scope_note": "Bengal Kojagari Lakshmi Puja and the next-day Ashwina Purnima calendar lane remain separate.",
+        "source_ids": [
+          "devam-kojagara-calendar-fixture",
+          "nirnayasindhu-1865-ashvayuja-kojagari",
+          "drikpanchang-delhi-kojagara-2026",
+          "maharashtra-tourism-kojagiri-purnima-2026"
+        ],
+        "text": "यह सीमित उत्तर/पश्चिम भारत स्मार्त मार्ग कोजागरा/शरद पूर्णिमा को लक्ष्मी, कृष्ण-रास, फसल, संगीत, प्रार्थना, परिवार और समुदाय के स्रोत-चिह्नित संदर्भों सहित सुरक्षित रखता है।"
+      },
+      "title": "कोजागरा / शरद पूर्णिमा स्मरण",
+      "typical_practices": [
+        {
+          "description": "प्रार्थना, संगीत, परिवार या समुदाय का मिलना और चाँदनी में चिंतन स्रोत-चिह्नित अभ्यास हैं; भोजन केवल परिवार में स्थापित हो तो वैकल्पिक है और औषधि नहीं।",
+          "instructional": false,
+          "population_scope": "Attributable North/West family and community contexts",
+          "practice_id": "family-prayer-music-moonlit-gathering",
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024",
+            "devam-kojagara-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Lakshmi, Krishna-Raas, harvest, music, and local gathering emphases remain source-labelled.",
+          "scope": "North and West India family/community forms",
+          "separate_lane_required": false,
+          "source_ids": [
+            "maharashtra-tourism-kojagiri-purnima-2026",
+            "incredible-india-kojagiri-mahotsav-sagar-2026",
+            "utsav-sharad-purnima-nadabet-2024"
+          ],
+          "variant_id": "north-west-contexts"
+        },
+        {
+          "difference": "Bengali Kojagari Lakshmi Puja requires its own evidence and procedure lane.",
+          "scope": "Bengal Shakta household and community practice",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kojagara-safety-boundary"
+          ],
+          "variant_id": "bengal-kojagari-lakshmi-puja"
+        },
+        {
+          "difference": "The sunrise-based calendar day remains separate from the Nishita-selected Kojagara night.",
+          "scope": "Next-day generic Ashwina Purnima",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kojagara-calendar-fixture",
+            "drikpanchang-delhi-kojagara-2026"
+          ],
+          "variant_id": "ashwina-purnima-calendar-day"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "kojagara-puja-sharad-purnima"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "477309b994fffd5f89eed2d810248b823a650d738964c8f7f4aff8c32698e5f2",
+      "citation_coordinates": {
+        "legacy_pack": "knowledge_packs/rituals/kojagara-sharad-purnima-north-west-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-kojagara-calendar-fixture",
+      "source_role": "delhi_2026_unique_purnima_at_nishita_lane_only",
+      "title": "Bounded Delhi Kojagara / Sharad Purnima calendar fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "citation_coordinates": {
+        "legacy_pack": "knowledge_packs/rituals/kojagara-sharad-purnima-north-west-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "rights_lane": "citation_only",
+      "source_id": "nirnayasindhu-1865-ashvayuja-kojagari",
+      "source_role": "historical_purnima_night_and_vigil_context_not_modern_universal_procedure",
+      "title": "Nirnayasindhu Ashvayuja / Kojagari context",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/festivals/kojagara/kojagara-puja-date-time.html?geoname-id=1273294&year=2026",
+        "response_bytes": 78509,
+        "response_sha256": "d0d9099a4b419a4544080ec6b652398bc37eb461f9f79ffce1782a960ddb7fac",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-delhi-kojagara-2026",
+      "source_role": "current_nishita_identity_and_location_specific_date_context",
+      "title": "Kojagara Puja date and time for Delhi, 2026",
+      "url": "https://www.drikpanchang.com/festivals/kojagara/kojagara-puja-date-time.html?geoname-id=1273294&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://maharashtratourism.gov.in/festivals/kojagiri-purnima/",
+        "observed_at": "2026-08-07T03:21:01Z",
+        "response_bytes": 624258,
+        "response_sha256": "7f2d1d0322cc9459d8a527afa319a47b6eb919484943d1e347a0b65160241704",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "rights_lane": "citation_only",
+      "source_id": "maharashtra-tourism-kojagiri-purnima-2026",
+      "source_role": "maharashtra_lakshmi_night_vigil_milk_and_regional_variation_claims_as_attributable_context_not_universal_instruction_or_health_authority",
+      "title": "Kojagiri Purnima",
+      "url": "https://maharashtratourism.gov.in/festivals/kojagiri-purnima/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/kojagiri-mohotsav",
+        "observed_at": "2026-08-07T03:21:01Z",
+        "response_bytes": 485925,
+        "response_sha256": "92352c7ccc3fabd5e6ef20f0889db9cc98103a0d19e7a495431d30800de5797b",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Incredible India / Madhya Pradesh Tourism",
+      "rights_lane": "citation_only",
+      "source_id": "incredible-india-kojagiri-mahotsav-sagar-2026",
+      "source_role": "sagar_public_aarti_deepdaan_music_prayer_and_food_distribution_as_location_specific_event_context",
+      "title": "Kojagiri Mahotsav",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/kojagiri-mohotsav"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://utsav.gov.in/view-event/sharad-purnima-ki-raat-bsf-soldiers-ke-sath-1",
+        "observed_at": "2026-08-07T03:21:01Z",
+        "response_bytes": 33916,
+        "response_sha256": "b43f06d83459a3e0edf87bee787c1fb4f08b6ce8648b37943c8c55c9470ac514",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Utsav, Ministry of Tourism",
+      "rights_lane": "citation_only",
+      "source_id": "utsav-sharad-purnima-nadabet-2024",
+      "source_role": "gujarat_sharad_purnima_music_singing_and_garba_as_location_specific_cultural_context",
+      "title": "Sharad Purnima Ki Raat BSF Soldiers Ke Sath",
+      "url": "https://utsav.gov.in/view-event/sharad-purnima-ki-raat-bsf-soldiers-ke-sath-1"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-kojagara-safety-boundary",
+      "source_role": "excludes_fast_food_safety_health_moonlight_formal_puja_vigil_gambling_fire_and_guaranteed_outcome_prescriptions",
+      "title": "Devam Kojagara / Sharad Purnima internal-beta safety and attribution boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-kojagara-sharad-purnima-north-west-v1"
+  ]
+}

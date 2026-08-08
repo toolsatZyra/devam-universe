@@ -1,0 +1,103 @@
+{
+  "contract": "DEVAM_AMBUDA_DCS_SANSKRIT_EPIC_INGESTION_REPORT_V1",
+  "result": "PASS",
+  "pilot_id": "ramayana-ambuda-dcs-cc-by-v1",
+  "generated_at": "2026-08-08T03:04:16.6698333+05:30",
+  "inputs": {
+    "plan": {
+      "path": "ingestion/plans/ramayana-ambuda-dcs-product-v1.json",
+      "bytes": 7169,
+      "sha256": "32003557135048d0e21c0e0456fdd2ccdf79729879d1f9e43448f9c044cf3210"
+    },
+    "rights_readme": {
+      "path": "source_vault/objects/sha256/13/134c11945415556d6e86f17f3579c6fb69b559a90a5d38ccd841168b145c3583",
+      "bytes": 215,
+      "sha256": "134c11945415556d6e86f17f3579c6fb69b559a90a5d38ccd841168b145c3583"
+    },
+    "canonical_morphological_corpus": {
+      "path": "source_vault/objects/sha256/f8/f8d45c1289b15182867bd0c94d15886f8d8b1b10c4e7fc9a9b6a78fd5142e3b8",
+      "bytes": 7414730,
+      "sha256": "f8d45c1289b15182867bd0c94d15886f8d8b1b10c4e7fc9a9b6a78fd5142e3b8"
+    },
+    "compiler": {
+      "path": "tools/compile_ambuda_dcs_ramayana_ingestion.py",
+      "bytes": 22717,
+      "sha256": "a34e986498e03456bfc42382df9e132c96139aadd5f2f1ce38a8bf31f3506739"
+    },
+    "test": {
+      "path": "tools/test_compile_ambuda_dcs_ramayana_ingestion.py",
+      "bytes": 7556,
+      "sha256": "2b70ed86972eeb4a63708214454026e31ed4f88472911fe49a91b51fb7292aa4"
+    }
+  },
+  "compiled": {
+    "packet_sha256": "a74dacd012bf920627dd40c6f475fac531c919fd40b998820d40fc1c55ec8aed",
+    "sql_sha256": "f5afcb32e4fd72dfc5d7b3ccd4e1f484cfff4eb052d445592b77966bd04f98d0",
+    "sql_batch_count": 137,
+    "sql_batch_root_sha256": "1fd611c1cb81cf79cdb4fa1a92a3c830efaf8edd8987979d54ed45bdf8afa223",
+    "source_object_count": 2,
+    "source_object_bytes": 7414945,
+    "passage_count": 606,
+    "verse_record_count": 18713,
+    "token_line_count": 250660,
+    "literal_missing_verse_id_count": 46,
+    "source_order_anomaly_count": 3,
+    "record_span_root_sha256": "0e216e6781636fe6d34c1aaf2d19ccee36527c0df80c9568ad8be4b5db284ba9",
+    "passage_content_root_sha256": "28da24e57a8c9e1dfd9f7c096254d40130582621a3c163254e64a4e64a8718df",
+    "hosted_text_span_root_sha256": "5960a0bbd19dc0308e6075c18c906179408a8d1109f1a864e9cb6163cbd61460",
+    "rights_lane": "product_allowed",
+    "publication_state": "published",
+    "source_payloads_copied": false
+  },
+  "validation": {
+    "command": "python -m unittest tools.test_compile_ambuda_dcs_ramayana_ingestion -v",
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "independent_raw_reconstruction": true
+  },
+  "positive_boundary": "Product-compatible exact surface-token projection of the acquired seven-kāṇḍa, 606-sarga Ambuda/DCS Sanskrit electronic corpus, with every passage bound to the immutable source bytes.",
+  "limitations": {
+    "underlying_print_or_manuscript_edition_identified": false,
+    "critical_edition": false,
+    "gap_free_provider_record_sequence": false,
+    "source_order_monotonic_everywhere": false,
+    "complete_valmiki_ramayana_textual_tradition": false,
+    "all_recensions_and_variants": false,
+    "hindi_translation_present": false,
+    "english_translation_present": false,
+    "ramcharitmanas_present": false,
+    "ramayana_hero_universe_complete": false,
+    "mvp_library_complete": false
+  },
+  "hosted_import": {
+    "attempted": true,
+    "project_id": "bucgdaunsuzithfigtmr",
+    "applied_at": "2026-08-08T03:17:28.4125672+05:30",
+    "status": "PASS",
+    "verification": {
+      "source_sha256": "f8d45c1289b15182867bd0c94d15886f8d8b1b10c4e7fc9a9b6a78fd5142e3b8",
+      "passage_count": 606,
+      "min_source_ordinal": 1,
+      "max_source_ordinal": 606,
+      "distinct_source_ordinal_count": 606,
+      "published_product_allowed_count": 606,
+      "literal_missing_verse_id_count": 46,
+      "source_order_anomaly_count": 3,
+      "hosted_text_span_root_sha256": "5960a0bbd19dc0308e6075c18c906179408a8d1109f1a864e9cb6163cbd61460"
+    },
+    "anonymous_public_rpc": {
+      "tested": true,
+      "role": "anon",
+      "function": "public.search_public_passages",
+      "query": "tapaH svADyAya",
+      "language_code": "sa",
+      "requested_limit": 3,
+      "product_allowed_dcs_result_observed": true
+    },
+    "rights_isolation": {
+      "private_gretil_electronic_transcription_remains_private_evidence_review": true,
+      "private_dutt_and_translation_lanes_not_promoted_by_this_import": true,
+      "rights_inherited_across_sibling_expressions": false
+    }
+  }
+}

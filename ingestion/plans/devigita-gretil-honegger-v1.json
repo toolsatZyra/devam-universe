@@ -1,0 +1,118 @@
+{
+  "contract": "DEVAM_GRETIL_DEVIGITA_INGESTION_V1",
+  "pilot_id": "MVP-DURGA-DEVIGITA-GRETIL-2026-08-06",
+  "source_copy_policy": "reference_only_no_duplicate_payload",
+  "objective_boundary": "Adds one exact Sanskrit Devigita electronic transcription for source-grounded Durga theology, practice, and philosophy while preserving its parent-work, edition, rights, and tradition limits.",
+  "provider": {
+    "name": "GRETIL",
+    "provider_item_id": "GRE-00088",
+    "legacy_queue_id": "AQ-00712",
+    "catalogue_source_url": "https://gretil.sub.uni-goettingen.de/gretil.html",
+    "acquired_at": "2026-07-12T00:00:00Z"
+  },
+  "catalog_evidence": {
+    "provider_catalog_path": "source_vault/catalogs/providers/gretil-items-2026-07-12.csv",
+    "provider_catalog_sha256": "9bdce738aac68944f904d2e886fb71c9641dbad99b1332761881172375a005b8",
+    "provider_row_key": "GRE-00088",
+    "provider_row_sha256": "19ab327b87458fb632c11443131b2414a31e07d6bad8af3b19a4d964edb9542d",
+    "source_leads_path": "source_vault/catalogs/source-leads.csv",
+    "source_leads_sha256": "d678967886b5215700f672fe8e8505a065542d48fc042788f2f44173d8229b38",
+    "source_lead_key": "AQ-00712",
+    "source_lead_row_sha256": "bc380695553afded8b980ea6ebf786321db1cf0af1852b937e7a821a35eb915a"
+  },
+  "identity": {
+    "tei_title": "Devīgītā (= Devībhāgavata-Purāṇa 7,31-40)",
+    "tei_author_literal": "",
+    "tei_language": "sa-Latn",
+    "tei_xml_id": "sa_devIgItA",
+    "source_description_literal": "",
+    "data_entry": "Ursula Honegger",
+    "gretil_contribution": "Ursula Honegger",
+    "legacy_normalization": "Reinhold Grünendahl",
+    "tei_conversion": "Maximilian Mehner",
+    "underlying_source_edition_identified": false,
+    "parent_work": "Devībhāgavata Purāṇa",
+    "parent_book": 7,
+    "parent_chapter_start": 31,
+    "parent_chapter_end": 40
+  },
+  "work": {
+    "slug": "devi-gita",
+    "canonical_title": "Devīgītā",
+    "work_kind": "scripture_section",
+    "tradition_scope": ["Shakta", "Devi", "Devibhagavata Purana"],
+    "summary": "The Devīgītā, preserved here as Devībhāgavata Purāṇa book 7 chapters 31–40; its editions, recensions, translations, commentaries, and living reception remain separate library requirements."
+  },
+  "expression": {
+    "language_code": "sa",
+    "script_code": "Latn",
+    "expression_kind": "electronic_transliteration",
+    "attribution": "Ursula Honegger data entry and GRETIL contribution; Reinhold Grünendahl legacy normalization; Maximilian Mehner TEI conversion.",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "GRETIL Honegger input of Devīgītā (Devībhāgavata Purāṇa 7.31–40)",
+    "publisher": "GRETIL",
+    "publication_place": "Göttingen",
+    "publication_year": null,
+    "edition_statement": "GRETIL electronic transcription and normalization; the underlying print or manuscript source edition is not identified in sourceDesc.",
+    "identifiers": {"gretil_item_id": "GRE-00088", "legacy_queue_id": "AQ-00712", "tei_xml_id": "sa_devIgItA"}
+  },
+  "rights": {
+    "lane": "private_evidence",
+    "license": "CC-BY-NC-SA-4.0",
+    "required_literal": "Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+    "status": "noncommercial_sharealike_internal_review_only",
+    "product_clearance": false
+  },
+  "source_objects": [
+    {"role": "canonical_tei", "object_path": "objects/sha256/b5/b5fd8a711a2b06583f4b4208ee680e06f3d645507b8ccea82ba64b3a4a4fddfe", "source_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_devIgItA.xml", "bytes": 97174, "sha256": "b5fd8a711a2b06583f4b4208ee680e06f3d645507b8ccea82ba64b3a4a4fddfe", "media_type": "application/tei+xml"},
+    {"role": "access_text", "object_path": "objects/sha256/50/50a39ee91554b90f66271060b991a289e63927389c1c0c60a8f7e212c41f29bd", "source_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_devIgItA.txt", "bytes": 76378, "sha256": "50a39ee91554b90f66271060b991a289e63927389c1c0c60a8f7e212c41f29bd", "media_type": "text/plain; charset=utf-8"},
+    {"role": "access_html", "object_path": "objects/sha256/f1/f1d143c51675de026cf2923a6ed2486015414a6b51f2561cf7529d2c5b741a49", "source_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_devIgItA.htm", "bytes": 123053, "sha256": "f1d143c51675de026cf2923a6ed2486015414a6b51f2561cf7529d2c5b741a49", "media_type": "text/html; charset=utf-8"}
+  ],
+  "live_observations": [
+    {"role": "canonical_tei", "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_devIgItA.xml", "bytes": 97174, "sha256": "b5fd8a711a2b06583f4b4208ee680e06f3d645507b8ccea82ba64b3a4a4fddfe", "strict_utf8": true, "license_evidence_present": true},
+    {"role": "access_text", "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_devIgItA.txt", "bytes": 76378, "sha256": "50a39ee91554b90f66271060b991a289e63927389c1c0c60a8f7e212c41f29bd", "strict_utf8": true, "license_evidence_present": true},
+    {"role": "access_html", "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_devIgItA.htm", "bytes": 123053, "sha256": "f1d143c51675de026cf2923a6ed2486015414a6b51f2561cf7529d2c5b741a49", "strict_utf8": true, "license_evidence_present": true}
+  ],
+  "structure": {
+    "status": "exact_devigita_ten_chapter_carrier_structurally_covered",
+    "edition_completeness_status": "complete_exact_devigita_10_chapter_carrier_underlying_edition_unknown",
+    "text_status": "exact_tei_source_element_projection",
+    "publication_state": "review",
+    "source_div_count": 10,
+    "passage_count": 559,
+    "verse_marker_count": 510,
+    "verse_source_element_count": 510,
+    "nonverse_source_element_count": 49,
+    "lg_count": 504,
+    "direct_l_count": 5,
+    "direct_p_count": 50,
+    "verse_marker_root_sha256": "b732aa905c47c5db02adb8c1adea710792d5b1493491b9657beefe0f05a90669",
+    "source_child_span_root_sha256": "ed199e6641b5713e3282ae8c0f04023eab4262c74b48e9dcd7fa58a5a1a99648",
+    "source_child_content_root_sha256": "c4ad5114ecc76688765665651040487d12871258369cda8d52d85db9c111a47f",
+    "terminal_formula": "iti devīgītāyāṃ daśamo 'dhyāyaḥ devīgītā samāptā - iti śrīdevībhāgavate mahāpurāṇe saptamaskandhe devīgītāyāṃ catvāriṃśo 'dhyāyaḥ",
+    "chapter_profiles": [
+      {"chapter": 1, "parent_chapter": 31, "passage_count": 85, "direct_p_count": 11, "lg_count": 73, "direct_l_count": 1, "verse_count": 74, "div_start": 9226, "div_end_exclusive": 21865, "div_span_sha256": "575c6602bb8f347dc6ae77107d71ea059c9ab001ed84ef60dbe8349c3be13774", "passage_root_sha256": "0e420207b273d28850f6305024503dda91a39fb0009d28b6873dd74985171aaa"},
+      {"chapter": 2, "parent_chapter": 32, "passage_count": 53, "direct_p_count": 3, "lg_count": 50, "direct_l_count": 0, "verse_count": 50, "div_start": 21866, "div_end_exclusive": 30456, "div_span_sha256": "132e525fceb62ea9e4371ba2f5332ceac3b4efb42786cc532b3ee8abae745290", "passage_root_sha256": "ad44b7c01be72ec49b0256697a23e0043213400ed7d8ed862c6fee9cb5577cfc"},
+      {"chapter": 3, "parent_chapter": 33, "passage_count": 64, "direct_p_count": 8, "lg_count": 55, "direct_l_count": 1, "verse_count": 56, "div_start": 30457, "div_end_exclusive": 40184, "div_span_sha256": "7886140ecf306929621d499cd6f8157f52d4083c8085c00f1ad4abcf1551f6a2", "passage_root_sha256": "201d31d184e1bf0f4157f442360fbb6a005ef5b76b688cc97a098e17418829e6"},
+      {"chapter": 4, "parent_chapter": 34, "passage_count": 53, "direct_p_count": 3, "lg_count": 50, "direct_l_count": 0, "verse_count": 50, "div_start": 40185, "div_end_exclusive": 48799, "div_span_sha256": "e610ca72a610acabfb9b567559c1fbe17193c8a17bfc4ab60997572e31645a17", "passage_root_sha256": "8f87d74a53af81230d5e04c6998842ec07b5c169b8a4c965f9100f340bca2ede"},
+      {"chapter": 5, "parent_chapter": 35, "passage_count": 67, "direct_p_count": 5, "lg_count": 61, "direct_l_count": 1, "verse_count": 63, "div_start": 48800, "div_end_exclusive": 59513, "div_span_sha256": "b62bff86de7f0427bdfac9d5fc87d52d2ad43bb8a3f0c0c30e5d303bac116315", "passage_root_sha256": "21bf759d2662da3ae576b4fac1e52b0e9533c84f44460d02ece56d5f4dd1ae0b"},
+      {"chapter": 6, "parent_chapter": 36, "passage_count": 34, "direct_p_count": 4, "lg_count": 30, "direct_l_count": 0, "verse_count": 30, "div_start": 59514, "div_end_exclusive": 65137, "div_span_sha256": "be46e14bd4b98127486127142f389eedaf736f679fa7a430316c0af8b7d499ba", "passage_root_sha256": "356b7b10776cd35b9f0896e37616f4e7ecbb38d49ff3593570489438731f15e0"},
+      {"chapter": 7, "parent_chapter": 37, "passage_count": 49, "direct_p_count": 4, "lg_count": 45, "direct_l_count": 0, "verse_count": 45, "div_start": 65138, "div_end_exclusive": 72761, "div_span_sha256": "8f5852a8a4121bfb734bfa7408b47d1613982b66c7e43cbffb95e5549949d0be", "passage_root_sha256": "f4fe6be94963b80acc77408c8e3dc842cfb191296794716f78f07b7fcbdeba52"},
+      {"chapter": 8, "parent_chapter": 38, "passage_count": 54, "direct_p_count": 4, "lg_count": 49, "direct_l_count": 1, "verse_count": 50, "div_start": 72762, "div_end_exclusive": 81300, "div_span_sha256": "b2bd01becef69876374f1239b308e30489b714fbd5c1509ad4cad256d702c641", "passage_root_sha256": "641342fcc55060ad268ce17f15cbdbc339804c512fe088e99e39d75e1ee7e883"},
+      {"chapter": 9, "parent_chapter": 39, "passage_count": 51, "direct_p_count": 4, "lg_count": 47, "direct_l_count": 0, "verse_count": 47, "div_start": 81301, "div_end_exclusive": 89349, "div_span_sha256": "5c541d59d0cff6e48baed5e9f68e6b9160034d17d96341b1ab266424887dd54d", "passage_root_sha256": "c311c13d9b9bd7699d62330469b3889a939c40066ea20fe35ee808ff5f7f73fe"},
+      {"chapter": 10, "parent_chapter": 40, "passage_count": 49, "direct_p_count": 4, "lg_count": 44, "direct_l_count": 1, "verse_count": 45, "div_start": 89350, "div_end_exclusive": 97150, "div_span_sha256": "a54734763bcb0701f9c74ec403bf1d465326614314d5a2da1267e1f5851fb0a0", "passage_root_sha256": "56df990858f229acee0f36186e4df8f5739c127df303a65ec10646ae885b1547"}
+    ]
+  },
+  "completion_denials": {
+    "underlying_source_edition_identified": false,
+    "product_or_public_use_cleared": false,
+    "complete_devigita_textual_tradition": false,
+    "complete_devibhagavata_purana": false,
+    "all_editions_recensions_translations_and_commentaries": false,
+    "durga_hero_universe_complete": false,
+    "mvp_library_complete": false
+  }
+}

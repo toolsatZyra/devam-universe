@@ -1,0 +1,41 @@
+{
+  "contract": "DEVAM_BANDI_CHHOR_SGPC_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-bandi-chhor-amritsar-2026-v1",
+  "scope": {
+    "reference_location": "Amritsar, Punjab, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-08", "2026-11-09"],
+    "supported_tradition_codes": ["sikh-sgpc"],
+    "selected_civil_date": "2026-11-08",
+    "official_sgpc_calendar_date_resolved": true,
+    "provider_event_time_reproduced": false,
+    "universal_sikh_procedure_claim": false
+  },
+  "live_sources": [
+    {"source_id": "sgpc-nanakshahi-calendar-page-2026-27", "provider": "Shiromani Gurdwara Parbandhak Committee", "url": "https://sgpc.net/nanakshahi-calendar-3/", "rights_lane": "reference_only", "evidence_role": "official_calendar_landing_page_and_asset_identity", "observed_fetch": {"fetched_at_utc": "2026-08-07T00:16:56.703Z", "status": 200, "final_url": "https://sgpc.net/nanakshahi-calendar-3/", "response_bytes": 91549, "response_sha256": "585a69659d088493268388d38d335c1016e8f1a6e954850f8891dc3f228b1981", "strict_utf8": true}, "semantic_observation": {"official_2026_27_calendar_asset_link_present": true}, "source_text_returned_by_api": false},
+    {"source_id": "sgpc-nanakshahi-calendar-pdf-2026-27", "provider": "Shiromani Gurdwara Parbandhak Committee", "url": "https://sgpc.net/storage/2026/03/Calender_2026-1.pdf", "rights_lane": "reference_only", "evidence_role": "official_2026_date_authority_visually_inspected", "observed_fetch": {"fetched_at_utc": "2026-08-07T00:16:56.703Z", "status": 200, "final_url": "https://sgpc.net/storage/2026/03/Calender_2026-1.pdf", "response_bytes": 14760383, "response_sha256": "ad9ff9ad7f558a585003095aa6ee383b8cf03374b53e2abde5cea7be7d7929d5", "pdf_pages": 3}, "semantic_observation": {"visually_inspected_pdf_page": 2, "literal_event_label": "ਬੰਦੀ ਛੋੜ ਦਿਵਸ (ਦੀਵਾਲੀ)", "nanakshahi_date": "23 Kattak", "corresponding_gregorian_date": "2026-11-08", "date_crosswalk_visually_verified_in_same_official_calendar": true}, "source_text_returned_by_api": false},
+    {"source_id": "sgpc-bandi-chhor-distinct-identity", "provider": "Shiromani Gurdwara Parbandhak Committee", "url": "https://sgpc.net/union-culture-ministrys-removal-of-bandi-chhor-diwas-post-unfortunate-harjinder-singh-dhami/", "rights_lane": "reference_only", "evidence_role": "official_sikh_distinct_identity_and_history_context_not_practice_vidhi", "observed_fetch": {"fetched_at_utc": "2026-08-07T00:16:56.703Z", "status": 200, "final_url": "https://sgpc.net/union-culture-ministrys-removal-of-bandi-chhor-diwas-post-unfortunate-harjinder-singh-dhami/", "response_bytes": 99338, "response_sha256": "9d18097ec57976a409ea4c5f6150cd48ba231f72d4018150cb4c6abab407a03e", "strict_utf8": true}, "semantic_observation": {"bandi_chhor_distinct_sikh_identity_asserted": true, "sikh_history_and_tradition_context_asserted": true}, "source_text_returned_by_api": false},
+    {"source_id": "baru-sahib-bandi-chhor-history", "provider": "The Kalgidhar Trust / Baru Sahib", "url": "https://barusahib.org/general/bandichhod-diwas-di-lakh-lakh-wadhai/", "rights_lane": "reference_only", "evidence_role": "sikh_institution_guru_hargobind_52_rulers_gwalior_kirtan_and_langar_context_not_complete_vidhi", "observed_fetch": {"fetched_at_utc": "2026-08-07T00:16:56.703Z", "status": 200, "final_url": "https://barusahib.org/general/bandichhod-diwas-di-lakh-lakh-wadhai/", "response_bytes": 229213, "response_sha256": "16fdfa85260c9186a9c012f27589019ae91ca9ddd3547f9b7a70fa00e69c893d", "strict_utf8": true}, "semantic_observation": {"guru_hargobind_released_with_52_rulers": true, "gwalior_fort_identity": true, "freedom_with_others_theme": true, "gurdwara_kirtan_and_langar_described": true}, "source_text_returned_by_api": false},
+    {"source_id": "guru-nanak-sikh-gurdwara-2026-date", "provider": "Guru Nanak Sikh Gurdwara", "url": "https://gnsgh.co.uk/gurupurab-dates/", "rights_lane": "reference_only", "evidence_role": "gurdwara_2026_date_corroboration_not_sgpc_or_universal_practice_authority", "observed_fetch": {"fetched_at_utc": "2026-08-07T00:16:56.703Z", "status": 200, "final_url": "https://gnsgh.co.uk/gurupurab-dates/", "response_bytes": 42479, "response_sha256": "d5b0c4a9c99f27982694eeba458a3b06f27b009f4534f61c6d4c9f320754564c", "strict_utf8": true}, "semantic_observation": {"bandi_chhor_diwas_diwali_8_november_2026": true}, "source_text_returned_by_api": false}
+  ],
+  "decision": {
+    "observance_slug": "bandi-chhor-divas-sgpc",
+    "canonical_name": "Bandi Chhor Divas",
+    "devam_rule": "use_the_exact_official_sgpc_nanakshahi_calendar_date_for_the_sgpc_lane",
+    "selected_civil_date": "2026-11-08",
+    "sgpc_nanakshahi_date": "23 Kattak",
+    "hindu_jain_and_other_diwali_lanes_separate": true
+  },
+  "denials": {
+    "formal_paath_kirtan_ardas_hukamnama_or_gurdwara_program_prescribed": false,
+    "real_lamps_candles_or_fireworks_required": false,
+    "langar_preparation_or_food_handling_prescribed": false,
+    "donation_purchase_or_special_clothing_required": false,
+    "spiritual_merit_protection_or_outcome_guaranteed": false,
+    "all_sikh_institution_family_and_diaspora_variants_complete": false,
+    "hindu_diwali_or_jain_diwali_merged": false,
+    "provider_event_time_reproduced": false,
+    "source_text_returned_by_api": false,
+    "live_pages_or_pdf_copied_into_app_library": false
+  }
+}

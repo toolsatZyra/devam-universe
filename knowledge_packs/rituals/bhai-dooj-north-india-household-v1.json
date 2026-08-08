@@ -1,0 +1,89 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-bhai-dooj-north-india-household-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "bhai-dooj",
+  "scope": {
+    "region_codes": ["north-india"],
+    "tradition_codes": ["smarta-north-india"],
+    "language_codes": ["en", "hi"],
+    "delhi_2026_date_fixture_required": true,
+    "family_role_and_custom_override_generic_sequence": true,
+    "regional_variants_not_merged": true
+  },
+  "sources": [
+    {"source_id": "devam-bhai-dooj-date-fixture", "title": "Devam Bhai Dooj Delhi 2026 date evidence fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_calendar_crosswalk", "rights_lane": "derivative_allowed", "artifact_sha256": "b6156e6532521a91db78c9c049de91d5ac07f8cfdafe960d54d7112a8fe609d6"},
+    {"source_id": "incredible-india-bhai-dooj", "title": "Bhai Dooj: A timeless tradition celebrating sibling love", "publisher": "Incredible India, Ministry of Tourism", "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/bhai-dooj", "source_class": "official_identity_story_and_household_core", "rights_lane": "reference_only", "observed_fetch": {"status": 200, "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/bhai-dooj", "response_bytes": 477821, "response_sha256": "d0ae202731bf2e98580a9fe9a302894d39dfb4ad3873ace5538639d85578d98a", "strict_utf8": true}, "observed_literals": {"aarti_and_tika": true, "sibling_bond": true, "yama_yami_story": true, "krishna_subhadra_story": true, "sweets_and_shared_meal": true}},
+    {"source_id": "newsonair-bhai-dooj-regional-names", "title": "Morning News - Bhai Dooj regional names", "publisher": "DD News On Air", "url": "https://www.newsonair.gov.in/bulletins-detail/morning-news-532/", "source_class": "official_current_regional_names_and_tika_prayer_corroboration", "rights_lane": "reference_only", "observed_fetch": {"status": 200, "final_url": "https://newsonair.gov.in/bulletins-detail/morning-news-532/", "response_bytes": 85601, "response_sha256": "011af6d6857209646ca27e53d6368e1fc072a7f7c99634de75b23e9510e7b20c", "strict_utf8": true}, "observed_literals": {"bhai_phota": true, "bhaubeej": true, "bhai_tika": true, "yama_dwitiya": true, "sister_applies_tika_and_prays": true}},
+    {"source_id": "devam-bhai-dooj-safety-and-inclusion-boundary", "title": "Devam Bhai Dooj flame, skin, food, gift, and family boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_inclusion_boundary_not_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "bhai-dooj-north-india-household-en-v1",
+      "language_code": "en",
+      "title": "Bhai Dooj with your sibling",
+      "summary": "On the separately resolved North India date, meet or connect with your sibling, offer a family-known tika and prayer if both are comfortable, share something sweet or a meal, and express reciprocal care. Arati, gifts, a particular tilak mixture, and gendered promises are not compulsory in this bounded guide.",
+      "family_practice_note": "Tell Sarthi what your family calls the day, who traditionally hosts and applies tika, whether either person has skin, flame, food, travel, grief, or relationship constraints, and whether you are together or remote. Bhau Beej, Bhai Phota, Bhai Tika, and Bihar Yama Dvitiya remain distinct regional lanes.",
+      "context_prompts": ["What does your family call this day and which regional practice does it follow?", "Who hosts, applies tika, leads prayer, and prepares food in your family?", "Are you together, remote, estranged, grieving, or adapting the observance?", "Do you need a flame-free, skin-safe, food-safe, or gift-free form?"],
+      "tiers": [
+        {"tier": "minimum", "label": "A simple sibling blessing", "estimated_minutes": 10, "materials": [{"item": "A family-known, skin-safe tika if both people want it", "substitutions": ["Use a flower, gesture of blessing, spoken prayer, or no physical mark"], "optional": true}, {"item": "One sweet, fruit, or drink suitable for both people", "substitutions": ["Share a meal later or omit food"], "optional": true}], "steps": [
+          {"ordinal": 1, "instruction": "Use the resolved Bhai Dooj date and ask which regional or family form applies before copying any detailed sequence.", "why": "Bhai Dooj, Bhau Beej, Bhai Phota, Bhai Tika, and Yama Dvitiya have attributable differences.", "optional": false, "source_ids": ["devam-bhai-dooj-date-fixture", "newsonair-bhai-dooj-regional-names"]},
+          {"ordinal": 2, "instruction": "Welcome or call your sibling and express one sincere wish for their well-being; if both consent, the sister may apply the family's familiar tika, otherwise use a spoken or gesture-only blessing.", "why": "The sibling bond, tika, and prayer are the stable official core; consent and skin safety determine the physical form.", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "newsonair-bhai-dooj-regional-names", "devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 3, "instruction": "Share a suitable sweet, fruit, drink, or meal and exchange thanks or practical support; a purchased gift is optional.", "why": "Hospitality and reciprocal affection matter more than spending or a fixed menu.", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "devam-bhai-dooj-safety-and-inclusion-boundary"]}
+        ]},
+        {"tier": "standard", "label": "Family-led tika and meal", "estimated_minutes": 25, "materials": [{"item": "Only the tika, lamp or flame-free light, sweets, meal, and gifts your family already uses", "substitutions": ["Use the minimum form and omit any unsafe or unavailable item"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Confirm who hosts, the family's order, each person's comfort, allergies, dietary needs, and whether a real flame can be continuously supervised.", "why": "Living family practice and physical safety outrank a generic checklist.", "optional": false, "source_ids": ["devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 2, "instruction": "Follow the family's welcome, optional arati, tika, prayer, sweet, meal, and blessing sequence without adding a promised supernatural result.", "why": "Official evidence supports these common elements but not a guaranteed lifespan or one exact national rite.", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "newsonair-bhai-dooj-regional-names"]},
+          {"ordinal": 3, "instruction": "Let both siblings express gratitude and one concrete way they will support each other; exchange a gift only if desired and affordable.", "why": "The festival celebrates reciprocal trust and affection, not a compulsory transaction.", "optional": false, "source_ids": ["devam-bhai-dooj-safety-and-inclusion-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "Established extended-family gathering", "estimated_minutes": 60, "materials": [{"item": "The exact family thali, food, seating, prayer, and hospitality materials", "substitutions": ["Scale to the minimum or standard form"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Have the family elder or recognised practitioner set the exact regional order, ingredients, prayers, hosting roles, meal, and close.", "why": "The detailed rite belongs to the family's regional practice rather than an app-generated universal sequence.", "optional": false, "source_ids": ["newsonair-bhai-dooj-regional-names", "devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 2, "instruction": "Include siblings respectfully without pressuring travel, reconciliation, touch, spending, fasting, or a gendered protection promise.", "why": "A useful observance must respect real family circumstances while preserving the traditional sibling focus.", "optional": false, "source_ids": ["devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 3, "instruction": "Complete the recognised blessing, meal, thanks, safe flame closure, cleanup, and any gift exchange the family freely chooses.", "why": "The family determines the close and no flame or expense should be left unmanaged.", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "devam-bhai-dooj-safety-and-inclusion-boundary"]}
+        ]}
+      ]
+    },
+    {
+      "guide_id": "bhai-dooj-north-india-household-hi-v1",
+      "language_code": "hi",
+      "title": "अपने भाई-बहन के साथ भाई दूज",
+      "summary": "अलग से निर्धारित उत्तर भारत तिथि पर भाई-बहन मिलें या बात करें, दोनों सहज हों तो परिवार का परिचित टीका और प्रार्थना रखें, मिठाई या भोजन साझा करें और परस्पर सहयोग व्यक्त करें। इस सीमित मार्ग में आरती, उपहार, निश्चित तिलक-मिश्रण या लैंगिक सुरक्षा-वचन अनिवार्य नहीं हैं।",
+      "family_practice_note": "सार्थी को बताएँ कि परिवार इस दिन को क्या कहता है, कौन स्वागत और टीका करता है, कोई त्वचा, लौ, भोजन, यात्रा, शोक या सम्बन्ध की सीमा है या नहीं, और आप साथ हैं या दूर। भाऊ बीज, भाई फोटा, भाई टीका और बिहार यम द्वितीया अलग क्षेत्रीय मार्ग हैं।",
+      "context_prompts": ["आपका परिवार इस दिन को क्या कहता है और किस क्षेत्रीय रीति को मानता है?", "परिवार में स्वागत, टीका, प्रार्थना और भोजन कौन करता है?", "आप साथ हैं, दूर हैं, शोक में हैं या रीति को अनुकूल बना रहे हैं?", "क्या आपको बिना लौ, त्वचा-सुरक्षित, भोजन-सुरक्षित या बिना उपहार का रूप चाहिए?"],
+      "tiers": [
+        {"tier": "minimum", "label": "सरल भाई-बहन आशीर्वाद", "estimated_minutes": 10, "materials": [{"item": "दोनों चाहें तो परिवार का परिचित त्वचा-सुरक्षित टीका", "substitutions": ["फूल, आशीर्वाद का संकेत, बोलकर प्रार्थना या बिना चिह्न का रूप"], "optional": true}, {"item": "दोनों के लिए उपयुक्त एक मिठाई, फल या पेय", "substitutions": ["बाद में भोजन साझा करें या भोजन छोड़ दें"], "optional": true}], "steps": [
+          {"ordinal": 1, "instruction": "निर्धारित भाई दूज तिथि लें और विस्तृत क्रम लेने से पहले परिवार का क्षेत्रीय रूप पूछें।", "why": "भाई दूज, भाऊ बीज, भाई फोटा, भाई टीका और यम द्वितीया में मान्य भेद हैं।", "optional": false, "source_ids": ["devam-bhai-dooj-date-fixture", "newsonair-bhai-dooj-regional-names"]},
+          {"ordinal": 2, "instruction": "भाई-बहन मिलें या बात करें और कुशलता की सच्ची कामना करें; दोनों सहमत हों तो बहन परिचित टीका लगाए, अन्यथा बोलकर या संकेत से आशीर्वाद दें।", "why": "भाई-बहन का बन्धन, टीका और प्रार्थना स्थिर आधिकारिक केंद्र हैं; स्पर्श और त्वचा-सुरक्षा रूप तय करते हैं।", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "newsonair-bhai-dooj-regional-names", "devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 3, "instruction": "उपयुक्त मिठाई, फल, पेय या भोजन साझा करें और धन्यवाद या व्यावहारिक सहयोग दें; खरीदा उपहार वैकल्पिक है।", "why": "आतिथ्य और परस्पर स्नेह खर्च या निश्चित भोजन से अधिक महत्वपूर्ण हैं।", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "devam-bhai-dooj-safety-and-inclusion-boundary"]}
+        ]},
+        {"tier": "standard", "label": "परिवार-निर्देशित टीका और भोजन", "estimated_minutes": 25, "materials": [{"item": "केवल परिवार में प्रचलित टीका, दीप या बिना लौ का प्रकाश, मिठाई, भोजन और उपहार", "substitutions": ["सरल रूप लें और असुरक्षित वस्तु छोड़ दें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "स्वागत करने वाला, परिवार का क्रम, सहमति, एलर्जी, भोजन और लौ की निरन्तर देखरेख पहले तय करें।", "why": "जीवित पारिवारिक रीति और सुरक्षा सामान्य सूची से पहले हैं।", "optional": false, "source_ids": ["devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 2, "instruction": "परिवार का स्वागत, वैकल्पिक आरती, टीका, प्रार्थना, मिठाई, भोजन और आशीर्वाद करें; निश्चित अलौकिक फल न जोड़ें।", "why": "आधिकारिक प्रमाण सामान्य तत्वों का समर्थन करता है, गारंटी या एक राष्ट्रीय विधि का नहीं।", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "newsonair-bhai-dooj-regional-names"]},
+          {"ordinal": 3, "instruction": "दोनों भाई-बहन धन्यवाद और परस्पर सहयोग का एक ठोस तरीका कहें; उपहार केवल इच्छा और सामर्थ्य से दें।", "why": "उत्सव परस्पर विश्वास का है, अनिवार्य लेन-देन का नहीं।", "optional": false, "source_ids": ["devam-bhai-dooj-safety-and-inclusion-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "स्थापित विस्तृत पारिवारिक मिलन", "estimated_minutes": 60, "materials": [{"item": "परिवार की सटीक थाली, भोजन, बैठक, प्रार्थना और आतिथ्य सामग्री", "substitutions": ["सरल या मानक रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "परिवार के बुज़ुर्ग या मान्य जानकार से सटीक क्षेत्रीय क्रम, सामग्री, प्रार्थना, भूमिका, भोजन और समापन तय कराएँ।", "why": "विस्तृत विधि ऐप की सार्वभौमिक रचना नहीं, परिवार की क्षेत्रीय रीति है।", "optional": false, "source_ids": ["newsonair-bhai-dooj-regional-names", "devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 2, "instruction": "यात्रा, मेल-मिलाप, स्पर्श, खर्च, व्रत या लैंगिक सुरक्षा-वचन का दबाव दिए बिना भाई-बहनों को सम्मान से शामिल करें।", "why": "उपयोगी रूप वास्तविक परिस्थिति का सम्मान करते हुए पारम्परिक भाई-बहन केंद्र बचाता है।", "optional": false, "source_ids": ["devam-bhai-dooj-safety-and-inclusion-boundary"]},
+          {"ordinal": 3, "instruction": "मान्य आशीर्वाद, भोजन, धन्यवाद, सुरक्षित दीप-समापन, सफाई और स्वेच्छिक उपहार पूरा करें।", "why": "समापन परिवार तय करता है और लौ या खर्च असुरक्षित नहीं रहना चाहिए।", "optional": false, "source_ids": ["incredible-india-bhai-dooj", "devam-bhai-dooj-safety-and-inclusion-boundary"]}
+        ]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "sibling_tika_prayer_and_shared_food_core_supported": true,
+    "fixed_tilak_recipe_required": false,
+    "arati_or_real_flame_required": false,
+    "gift_or_spending_required": false,
+    "fasting_prescribed": false,
+    "curse_or_tongue_pricking_instruction_included": false,
+    "guaranteed_longevity_protection_or_prosperity_claimed": false,
+    "gendered_protection_promise_required": false,
+    "bhau_beej_bhai_phota_bhai_tika_or_bihar_yama_dvitiya_completed": false,
+    "one_universal_indian_procedure_claimed": false,
+    "all_family_and_regional_variants_complete": false
+  }
+}

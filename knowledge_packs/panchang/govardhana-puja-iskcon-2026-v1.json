@@ -1,0 +1,55 @@
+{
+  "contract": "DEVAM_GOVARDHANA_PUJA_ISKCON_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-govardhana-puja-iskcon-2026-v1",
+  "scope": {
+    "reference_location": "Bengaluru, Karnataka, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-09", "2026-11-10"],
+    "supported_tradition_codes": ["vaishnava-iskcon"],
+    "selected_civil_date": "2026-11-10",
+    "date_resolved_by_devam_rule": true,
+    "provider_event_time_reproduced": false,
+    "universal_vaishnava_calendar_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "iskcon-bangalore-govardhana-puja-2026",
+      "provider": "ISKCON Bangalore",
+      "url": "https://www.iskconbangalore.org/govardhana-puja/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_living_tradition_identity_story_practice_and_2026_date_corroboration",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T22:18:00.000Z", "status": 200, "final_url": "https://www.iskconbangalore.org/govardhana-puja/", "response_bytes": 114978, "response_sha256": "7b5cd69d388b08d0336bcff1bea5ebd1355befc7a23be7bb192aeb8fccebc1f2", "strict_utf8": true},
+      "semantic_observation": {"civil_date_10_nov_2026": true, "govardhana_puja_identity": true, "go_puja_present": true, "annakuta_alias_present": true, "food_hill_offering_present": true, "prasadam_distribution_present": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "iskcon-bangalore-public-calendar-2026",
+      "provider": "ISKCON Bangalore",
+      "url": "https://www.iskconbangalore.org/public-holidays-calendar/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_2026_civil_date_corroboration",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T22:18:00.000Z", "status": 200, "final_url": "https://www.iskconbangalore.org/public-holidays-calendar/", "response_bytes": 90675, "response_sha256": "354d0b622c785743016363fbcf4f4fbb9552cbc1a789f3c3a929a794d09d010a", "strict_utf8": true},
+      "semantic_observation": {"balipadyami_and_govardhan_puja_literal": true, "tuesday_10_november_2026": true},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "govardhan-puja",
+    "canonical_name": "Govardhana Puja / Annakut",
+    "selected_civil_date": "2026-11-10",
+    "devam_rule": "kartika_shukla_pratipada_present_at_local_sunrise",
+    "official_iskcon_bangalore_date_matches": true,
+    "balipadyami_identity_remains_separate": true
+  },
+  "denials": {
+    "provider_event_time_reproduced": false,
+    "go_puja_procedure_included": false,
+    "cow_contact_or_feeding_instructed": false,
+    "braj_parikrama_instructed": false,
+    "fasting_prescribed": false,
+    "all_annakut_or_vaishnava_traditions_equivalent": false,
+    "bali_pratipada_merged": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

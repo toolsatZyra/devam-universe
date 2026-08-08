@@ -1,0 +1,657 @@
+{
+  "applicability": {
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family or sampradaya observe Agastya Arghya?",
+      "Are you in New Delhi for the exact 2026 fixture, or do you need a local calendar?",
+      "Do you know a family prayer, mantra, or fuller sequence?",
+      "Can a small water offering be made safely without relying on star visibility?"
+    ],
+    "region_codes": [
+      "north-india",
+      "west-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "teacher_led"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-delhi-practitioner-calendar-agastya-arghya-2026-v1",
+    "freshness_note": "Exact only for New Delhi on 4 September 2026, 04:58–06:00; use a trusted local calendar elsewhere.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-agastya-resolved-fixture",
+      "drikpanchang-agastya-practice"
+    ],
+    "timing_kind": "institutional_schedule",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "agastya-arghya-delhi-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "agastya-rise-context-en",
+          "source_ids": [
+            "nirnayasindhu-agastya-context",
+            "drikpanchang-agastya-practice"
+          ],
+          "summary": "A retained Nirnayasindhu edition records Agastya-rise timing traditions and an arghya period. Those historical rules vary and do not reproduce the modern provider's calculation, so they supply context rather than one universal origin or modern procedure.",
+          "title": "Agastya Arghya in New Delhi",
+          "tradition_scope": "Retained historical context and bounded current practitioner calendar",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Exact New Delhi 2026 minimum participant form",
+          "closing": {
+            "scope_note": "Family or living-tradition detail overrides this bounded participant form.",
+            "source_ids": [
+              "devam-agastya-resolved-fixture",
+              "drikpanchang-agastya-practice",
+              "nirnayasindhu-agastya-context",
+              "devam-agastya-safety-boundary"
+            ],
+            "text": "Close quietly, dispose of or use the water respectfully and safely, and clean the place."
+          },
+          "estimated_minutes": 8,
+          "form": "accessible_short",
+          "label": "Simple water offering",
+          "materials": [
+            {
+              "item": "Clean water and a small safe vessel",
+              "required": true,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "substitutions": [
+                "A familiar prayer or silent remembrance; use no material if an offering is unsafe"
+              ]
+            }
+          ],
+          "procedure_id": "agastya-arghya-delhi-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "drikpanchang-agastya-practice",
+            "nirnayasindhu-agastya-context",
+            "devam-agastya-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm that your family observes Agastya Arghya and use the exact New Delhi 2026 date and displayed window only if the location matches.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-agastya-resolved-fixture"
+              ],
+              "why": "The evidence supports one location-year fixture, not a general rule."
+            },
+            {
+              "instruction": "From a stable safe place, offer a small amount of clean water with a familiar prayer, or observe a quiet remembrance of Rishi Agastya.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "This preserves the supported prayer-and-arghya core without inventing a mantra or requiring visual sighting."
+            },
+            {
+              "instruction": "Close respectfully and clean the place; treat visibility, outcome claims, and fuller procedures as unresolved unless your family authority supplies them.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "The bounded companion must not turn source descriptions into universal prescriptions."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family-confirmed Agastya Arghya form",
+          "closing": {
+            "scope_note": "Family or living-tradition detail overrides this bounded participant form.",
+            "source_ids": [
+              "devam-agastya-resolved-fixture",
+              "drikpanchang-agastya-practice",
+              "nirnayasindhu-agastya-context",
+              "devam-agastya-safety-boundary"
+            ],
+            "text": "Close quietly, dispose of or use the water respectfully and safely, and clean the place."
+          },
+          "estimated_minutes": 20,
+          "form": "traditional_household",
+          "label": "Family-confirmed form",
+          "materials": [
+            {
+              "item": "Clean water and a small safe vessel",
+              "required": true,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "substitutions": [
+                "A familiar prayer or silent remembrance; use no material if an offering is unsafe"
+              ]
+            }
+          ],
+          "procedure_id": "agastya-arghya-delhi-content-v1-en-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "drikpanchang-agastya-practice",
+            "nirnayasindhu-agastya-context",
+            "devam-agastya-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Ask an elder or recognised practitioner for your family's vessel, prayer, direction, and closing before beginning.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "Living practice controls details absent from the bounded sources."
+            },
+            {
+              "instruction": "Within the displayed New Delhi window, follow only those confirmed family details, keeping the offering small and physically safe.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice"
+              ],
+              "why": "The time is a provider fixture; the provider method and weather visibility are not guaranteed."
+            },
+            {
+              "instruction": "Conclude with remembrance or study of Agastya and Lopamudra if that belongs to your tradition, without adding promised outcomes.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "Study is an optional devotional extension, not a reconstructed rite."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Recognised family temple or sampradaya authority only",
+          "closing": {
+            "scope_note": "Family or living-tradition detail overrides this bounded participant form.",
+            "source_ids": [
+              "devam-agastya-resolved-fixture",
+              "drikpanchang-agastya-practice",
+              "nirnayasindhu-agastya-context",
+              "devam-agastya-safety-boundary"
+            ],
+            "text": "Close quietly, dispose of or use the water respectfully and safely, and clean the place."
+          },
+          "estimated_minutes": 40,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Recognised-guide form",
+          "materials": [
+            {
+              "item": "Clean water and a small safe vessel",
+              "required": true,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "substitutions": [
+                "A familiar prayer or silent remembrance; use no material if an offering is unsafe"
+              ]
+            }
+          ],
+          "procedure_id": "agastya-arghya-delhi-content-v1-en-elaborate-v1",
+          "setting": "teacher_led",
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "drikpanchang-agastya-practice",
+            "nirnayasindhu-agastya-context",
+            "devam-agastya-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use a recognised family, temple, or sampradaya guide for any mantra, multi-day offering, donation, homa, or formal vrata sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "The retained historical text is evidence, not a self-serve modern liturgy."
+            },
+            {
+              "instruction": "Follow only the confirmed sequence and its safe close; do not import historical social restrictions or guarantee spiritual or material results.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "Authority and safety remain explicit at the fuller boundary."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not infer the date for another place or year from this fixture.",
+        "Do not stare toward the Sun, climb, enter unsafe water, or depend on clear weather.",
+        "Historical caste restrictions, promised outcomes, donations, homa, and unverified mantras are not instructions."
+      ],
+      "short_answer": "For this exact New Delhi 2026 lane, the practitioner calendar places Agastya Arghya on 4 September, 04:58–06:00. First ask whether your family observes it. A safe minimum is a clean-water offering and familiar prayer or quiet remembrance of Rishi Agastya; the app does not claim a universal mantra, full vrata, or general astronomical rule.",
+      "significance": {
+        "scope_note": "One exact New Delhi 2026 participant lane; no general algorithm or universal procedure.",
+        "source_ids": [
+          "nirnayasindhu-agastya-context",
+          "drikpanchang-agastya-practice"
+        ],
+        "text": "The retained historical evidence links an offering to the seasonal rising associated with Agastya, while the modern page supplies only the bounded New Delhi date and window. Devam presents this as an attributable observance of Rishi Agastya, not as a guaranteed astronomical sighting or universal practice."
+      },
+      "title": "Agastya Arghya in New Delhi",
+      "typical_practices": [
+        {
+          "description": "The current practitioner page presents prayer and arghya around the displayed rise. Regional, family, mantra, donation, homa, and longer vrata details are not treated as universal.",
+          "instructional": false,
+          "population_scope": "Families that recognise Agastya Arghya in the supported New Delhi lane",
+          "practice_id": "agastya-prayer-arghya-en",
+          "source_ids": [
+            "drikpanchang-agastya-practice",
+            "devam-agastya-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Use a trusted local calendar; New Delhi's 2026 date and window are not portable.",
+          "scope": "Other locations and years",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "devam-agastya-safety-boundary"
+          ],
+          "variant_id": "agastya-1-en"
+        },
+        {
+          "difference": "Prayer, mantra, vessel, direction, offerings, duration, and closing remain with the family's living authority.",
+          "scope": "Family and sampradaya practice",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "devam-agastya-safety-boundary"
+          ],
+          "variant_id": "agastya-2-en"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "agastya-rise-context-hi",
+          "source_ids": [
+            "nirnayasindhu-agastya-context",
+            "drikpanchang-agastya-practice"
+          ],
+          "summary": "निरूपित निर्णयसिंधु संस्करण में अगस्त्योदय और अर्घ्य की अलग समय-परंपराएँ मिलती हैं। वे आधुनिक प्रदाता की गणना को पुनरुत्पादित नहीं करतीं, इसलिए संदर्भ हैं, एकमात्र आधुनिक विधि नहीं।",
+          "title": "नई दिल्ली में अगस्त्य अर्घ्य",
+          "tradition_scope": "Retained historical context and bounded current practitioner calendar",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Exact New Delhi 2026 minimum participant form",
+          "closing": {
+            "scope_note": "Family or living-tradition detail overrides this bounded participant form.",
+            "source_ids": [
+              "devam-agastya-resolved-fixture",
+              "drikpanchang-agastya-practice",
+              "nirnayasindhu-agastya-context",
+              "devam-agastya-safety-boundary"
+            ],
+            "text": "शांतिपूर्वक समापन करें, जल का सम्मानपूर्वक और सुरक्षित उपयोग या विसर्जन करें और स्थान साफ करें।"
+          },
+          "estimated_minutes": 8,
+          "form": "accessible_short",
+          "label": "सरल जल-अर्घ्य",
+          "materials": [
+            {
+              "item": "स्वच्छ जल और छोटा सुरक्षित पात्र",
+              "required": true,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "substitutions": [
+                "परिचित प्रार्थना या मौन स्मरण; अर्घ्य असुरक्षित हो तो सामग्री न लें"
+              ]
+            }
+          ],
+          "procedure_id": "agastya-arghya-delhi-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "drikpanchang-agastya-practice",
+            "nirnayasindhu-agastya-context",
+            "devam-agastya-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "पहले पुष्टि करें कि परिवार में अगस्त्य अर्घ्य होता है; नई दिल्ली 2026 का दिन और समय केवल उसी स्थान के लिए लें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-agastya-resolved-fixture"
+              ],
+              "why": "प्रमाण एक स्थान-वर्ष संदर्भ देता है, सामान्य नियम नहीं।"
+            },
+            {
+              "instruction": "स्थिर सुरक्षित स्थान से थोड़ा स्वच्छ जल अर्पित करें और परिचित प्रार्थना या ऋषि अगस्त्य का शांत स्मरण करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "इससे बिना मंत्र गढ़े और तारा देखना अनिवार्य किए प्रार्थना-अर्घ्य का मूल बना रहता है।"
+            },
+            {
+              "instruction": "सम्मान से समापन और सफाई करें; दृश्यता, फल और विस्तृत विधि को पारिवारिक मार्गदर्शन के बिना न मानें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "सीमित साथी सार्वभौमिक विधान नहीं बनाता।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family-confirmed Agastya Arghya form",
+          "closing": {
+            "scope_note": "Family or living-tradition detail overrides this bounded participant form.",
+            "source_ids": [
+              "devam-agastya-resolved-fixture",
+              "drikpanchang-agastya-practice",
+              "nirnayasindhu-agastya-context",
+              "devam-agastya-safety-boundary"
+            ],
+            "text": "शांतिपूर्वक समापन करें, जल का सम्मानपूर्वक और सुरक्षित उपयोग या विसर्जन करें और स्थान साफ करें।"
+          },
+          "estimated_minutes": 20,
+          "form": "traditional_household",
+          "label": "परिवार-पुष्ट रूप",
+          "materials": [
+            {
+              "item": "स्वच्छ जल और छोटा सुरक्षित पात्र",
+              "required": true,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "substitutions": [
+                "परिचित प्रार्थना या मौन स्मरण; अर्घ्य असुरक्षित हो तो सामग्री न लें"
+              ]
+            }
+          ],
+          "procedure_id": "agastya-arghya-delhi-content-v1-hi-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "drikpanchang-agastya-practice",
+            "nirnayasindhu-agastya-context",
+            "devam-agastya-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "बुजुर्ग या मान्य जानकार से पात्र, प्रार्थना, दिशा और समापन पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "अनुपस्थित विवरण जीवित परंपरा तय करती है।"
+            },
+            {
+              "instruction": "निर्धारित नई दिल्ली समय में केवल पुष्टि किए पारिवारिक विवरण सुरक्षित ढंग से करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice"
+              ],
+              "why": "समय प्रदाता-संदर्भ है; गणना-विधि और दृश्यता सिद्ध नहीं हैं।"
+            },
+            {
+              "instruction": "यदि परंपरा में हो तो अगस्त्य और लोपामुद्रा का स्मरण या अध्ययन करें, फल की गारंटी न दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "अध्ययन वैकल्पिक विस्तार है, गढ़ी हुई विधि नहीं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Recognised family temple or sampradaya authority only",
+          "closing": {
+            "scope_note": "Family or living-tradition detail overrides this bounded participant form.",
+            "source_ids": [
+              "devam-agastya-resolved-fixture",
+              "drikpanchang-agastya-practice",
+              "nirnayasindhu-agastya-context",
+              "devam-agastya-safety-boundary"
+            ],
+            "text": "शांतिपूर्वक समापन करें, जल का सम्मानपूर्वक और सुरक्षित उपयोग या विसर्जन करें और स्थान साफ करें।"
+          },
+          "estimated_minutes": 40,
+          "form": "fuller_family_or_teacher_led",
+          "label": "मान्य मार्गदर्शक का रूप",
+          "materials": [
+            {
+              "item": "स्वच्छ जल और छोटा सुरक्षित पात्र",
+              "required": true,
+              "source_ids": [
+                "devam-agastya-resolved-fixture",
+                "drikpanchang-agastya-practice",
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "substitutions": [
+                "परिचित प्रार्थना या मौन स्मरण; अर्घ्य असुरक्षित हो तो सामग्री न लें"
+              ]
+            }
+          ],
+          "procedure_id": "agastya-arghya-delhi-content-v1-hi-elaborate-v1",
+          "setting": "teacher_led",
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "drikpanchang-agastya-practice",
+            "nirnayasindhu-agastya-context",
+            "devam-agastya-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "मंत्र, बहुदिनी अर्घ्य, दान, होम या औपचारिक व्रत के लिए मान्य परिवार, मंदिर या संप्रदाय-मार्गदर्शक लें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "nirnayasindhu-agastya-context",
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "ऐतिहासिक पाठ प्रमाण है, स्वयं करने की आधुनिक पूर्ण विधि नहीं।"
+            },
+            {
+              "instruction": "केवल पुष्टि किया क्रम और सुरक्षित समापन करें; ऐतिहासिक सामाजिक प्रतिबंध या निश्चित फल न जोड़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-agastya-safety-boundary"
+              ],
+              "why": "विस्तृत सीमा पर अधिकार और सुरक्षा स्पष्ट रहते हैं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "इस तिथि को दूसरे स्थान या वर्ष पर लागू न करें।",
+        "सूर्य की ओर न देखें, ऊंचाई या असुरक्षित जल में न जाएं और साफ मौसम पर निर्भर न रहें।",
+        "ऐतिहासिक जाति-नियम, फल-दावे, दान, होम और अप्रमाणित मंत्र निर्देश नहीं हैं।"
+      ],
+      "short_answer": "नई दिल्ली 2026 के इस निश्चित संदर्भ में पंचांग 4 सितंबर, 04:58–06:00 का समय देता है। पहले जानें कि आपके परिवार में यह पालन होता है या नहीं। सरल रूप में स्वच्छ जल का सुरक्षित अर्घ्य और परिचित प्रार्थना या ऋषि अगस्त्य का शांत स्मरण करें; इसे सार्वभौमिक मंत्र, पूर्ण व्रत या सामान्य खगोलीय नियम न मानें।",
+      "significance": {
+        "scope_note": "One exact New Delhi 2026 participant lane; no general algorithm or universal procedure.",
+        "source_ids": [
+          "nirnayasindhu-agastya-context",
+          "drikpanchang-agastya-practice"
+        ],
+        "text": "सुरक्षित ऐतिहासिक प्रमाण अगस्त्य से जुड़े ऋतुजन्य उदय और अर्घ्य की परंपरा बताते हैं; आधुनिक पृष्ठ केवल नई दिल्ली का निश्चित दिन और समय देता है। यह ऋषि अगस्त्य का स्रोत-सापेक्ष स्मरण है, दृश्यता की गारंटी या सार्वभौमिक रीति नहीं।"
+      },
+      "title": "नई दिल्ली में अगस्त्य अर्घ्य",
+      "typical_practices": [
+        {
+          "description": "वर्तमान पंचांग पृष्ठ प्रार्थना और अर्घ्य का उल्लेख करता है। मंत्र, दान, होम, दीर्घ व्रत और क्षेत्रीय-पारिवारिक विवरण सार्वभौमिक नहीं माने गए हैं।",
+          "instructional": false,
+          "population_scope": "Families that recognise Agastya Arghya in the supported New Delhi lane",
+          "practice_id": "agastya-prayer-arghya-hi",
+          "source_ids": [
+            "drikpanchang-agastya-practice",
+            "devam-agastya-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "विश्वसनीय स्थानीय पंचांग लें; नई दिल्ली 2026 का समय अन्यत्र लागू नहीं है।",
+          "scope": "अन्य स्थान और वर्ष",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "devam-agastya-safety-boundary"
+          ],
+          "variant_id": "agastya-1-hi"
+        },
+        {
+          "difference": "मंत्र, पात्र, दिशा, सामग्री, अवधि और समापन जीवित पारिवारिक परंपरा के अनुसार हों।",
+          "scope": "परिवार और संप्रदाय",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-agastya-resolved-fixture",
+            "devam-agastya-safety-boundary"
+          ],
+          "variant_id": "agastya-2-hi"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "agastya-arghya-delhi"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "0d0413830f7accb290d27a94ffd72f73262a857aea20e90f5f3353d17856a744",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/agastya-arghya-delhi-2026-resolved-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-agastya-resolved-fixture",
+      "source_role": "Exact location-year provider-calendar decision, not a general algorithm",
+      "title": "Devam bounded Agastya Arghya New Delhi 2026 fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-agastya-practice",
+      "source_role": "Current practitioner date, displayed window, prayer and arghya context; not copied text or calculation authority",
+      "title": "Agastya Tara Uday and Arghya timings for New Delhi",
+      "url": "https://www.drikpanchang.com/rituals/agastya-arghya/agastya-arghya-date-time.html?geoname-id=1261481&year=2026"
+    },
+    {
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "citation_coordinates": {
+        "pdf_pages": [
+          159,
+          160
+        ],
+        "printed_pages": [
+          "142",
+          "143"
+        ]
+      },
+      "observed_fetch": null,
+      "publisher": "Devam retained source vault",
+      "rights_lane": "internal_only",
+      "source_id": "nirnayasindhu-agastya-context",
+      "source_role": "Private historical evidence for varied Agastya-rise and arghya context; not modern instruction",
+      "title": "Nirnayasindhu Marathi edition, Agastyodaya-nirnaya",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-agastya-safety-boundary",
+      "source_role": "Editorial location, visibility, water, historical-social-rule and outcome boundary",
+      "title": "Devam Agastya Arghya scope and safety boundary",
+      "url": null
+    }
+  ]
+}

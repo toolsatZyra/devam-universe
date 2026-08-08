@@ -1,0 +1,55 @@
+{
+  "contract": "DEVAM_SARTHI_WISDOM_SUPPORT_PILOT_SCENARIOS_V0_1",
+  "status": "frozen_before_thin_planner_implementation",
+  "purpose": "Test routing, material clarification, evidence requirements and answer modes without claiming general wisdom.",
+  "claim_boundary": "These authored scenarios are an engineering evaluation fixture, not human outcome evidence or a cultural authority.",
+  "scenarios": [
+    {"id":"exact-01","family":"exact_fact","prompt":"Which book of Valmiki's Ramayana contains the Sundara Kanda?","context":{},"expectedTaskClass":"exact_fact","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+    {"id":"exact-02","family":"exact_fact","prompt":"Show me the source for Bhagavad Gita 2.47.","context":{},"expectedTaskClass":"exact_fact","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+    {"id":"exact-03","family":"exact_fact","prompt":"Who is named as the speaker in this Ganapati Atharvashirsha passage?","context":{"atlasNodeSlug":"ganesha"},"expectedTaskClass":"exact_fact","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+    {"id":"exact-04","family":"exact_fact","prompt":"देवीमाहात्म्य किस ग्रंथ का भाग है?","context":{"languageCode":"hi"},"expectedTaskClass":"exact_fact","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+    {"id":"exact-05","family":"exact_fact","prompt":"What edition and passage supports this quotation about Hanuman?","context":{"atlasNodeSlug":"ramayana"},"expectedTaskClass":"exact_fact","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+
+    {"id":"panchang-01","family":"panchang","prompt":"When is the next Ekadashi in Delhi?","context":{"regionCode":"delhi"},"expectedTaskClass":"panchang","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+    {"id":"panchang-02","family":"panchang","prompt":"What time does Navaratri begin tomorrow?","context":{},"expectedTaskClass":"panchang","expectedDecisionImpact":"ordinary","expectedAnswerMode":"clarify"},
+    {"id":"panchang-03","family":"panchang","prompt":"Is today Amavasya for my location?","context":{},"expectedTaskClass":"panchang","expectedDecisionImpact":"ordinary","expectedAnswerMode":"clarify"},
+    {"id":"panchang-04","family":"panchang","prompt":"मुंबई में संकष्टी चतुर्थी का चंद्रोदय कितने बजे है?","context":{"languageCode":"hi","regionCode":"mumbai","traditionCode":"smarta-west-india"},"expectedTaskClass":"panchang","expectedDecisionImpact":"ordinary","expectedAnswerMode":"direct"},
+    {"id":"panchang-05","family":"panchang","prompt":"Which civil date should our Pune family observe Ganesh Chaturthi?","context":{"regionCode":"pune"},"expectedTaskClass":"panchang","expectedDecisionImpact":"ordinary","expectedAnswerMode":"clarify"},
+
+    {"id":"ritual-01","family":"ritual_vidhi","prompt":"What is the vidhi for Durga Puja at home?","context":{},"expectedTaskClass":"ritual_vidhi","expectedDecisionImpact":"consequential","expectedAnswerMode":"clarify"},
+    {"id":"ritual-02","family":"ritual_vidhi","prompt":"How should our Karnataka family perform Saraswati Puja?","context":{"regionCode":"karnataka"},"expectedTaskClass":"ritual_vidhi","expectedDecisionImpact":"consequential","expectedAnswerMode":"clarify"},
+    {"id":"ritual-03","family":"ritual_vidhi","prompt":"घर पर गणेश पूजा कैसे करूँ?","context":{"languageCode":"hi","regionCode":"mumbai","traditionCode":"smarta-west-india"},"expectedTaskClass":"ritual_vidhi","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"ritual-04","family":"ritual_vidhi","prompt":"What should I do on Ekadashi?","context":{},"expectedTaskClass":"ritual_vidhi","expectedDecisionImpact":"consequential","expectedAnswerMode":"clarify"},
+    {"id":"ritual-05","family":"ritual_vidhi","prompt":"Give me a simple Lakshmi Puja sequence for Diwali in Mumbai.","context":{"regionCode":"mumbai","traditionCode":"smarta-west-india"},"expectedTaskClass":"ritual_vidhi","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+
+    {"id":"story-01","family":"festival_story","prompt":"What is the origin story of Ganesh Chaturthi?","context":{},"expectedTaskClass":"festival_story","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"story-02","family":"festival_story","prompt":"Why is Durga Puja celebrated in Bengal?","context":{"regionCode":"bengal"},"expectedTaskClass":"festival_story","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"story-03","family":"festival_story","prompt":"दीवाली की उत्पत्ति की कहानी क्या है?","context":{"languageCode":"hi"},"expectedTaskClass":"festival_story","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"story-04","family":"festival_story","prompt":"Tell me the story and significance of Govardhan Puja.","context":{},"expectedTaskClass":"festival_story","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"story-05","family":"festival_story","prompt":"Why do different regions connect different stories with Vijayadashami?","context":{},"expectedTaskClass":"festival_story","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+
+    {"id":"compare-01","family":"comparison","prompt":"How do Smarta and ISKCON Janmashtami observance rules differ?","context":{},"expectedTaskClass":"comparison","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"compare-02","family":"comparison","prompt":"What is the practical difference between Bengal Kali Puja and North Indian Lakshmi Puja?","context":{},"expectedTaskClass":"comparison","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"compare-03","family":"comparison","prompt":"Compare Valmiki Ramayana and Ramcharitmanas without treating either as the one universal version.","context":{},"expectedTaskClass":"comparison","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"compare-04","family":"comparison","prompt":"उत्तर भारत की दशहरा परंपरा और मैसूर दशहरा में क्या अंतर है?","context":{"languageCode":"hi"},"expectedTaskClass":"comparison","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+    {"id":"compare-05","family":"comparison","prompt":"Is Bengal Mahashtami the same observance as monthly Durgashtami?","context":{},"expectedTaskClass":"comparison","expectedDecisionImpact":"ordinary","expectedAnswerMode":"plural"},
+
+    {"id":"guidance-01","family":"personal_guidance","prompt":"I am in conflict with my parents about my career. How might the Gita and Ramayana help me think about duty without simply obeying?","context":{},"expectedTaskClass":"personal_guidance","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"guidance-02","family":"personal_guidance","prompt":"I am afraid to change jobs even though I feel stuck. What would Sarthi suggest through an Indian wisdom lens?","context":{},"expectedTaskClass":"personal_guidance","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"guidance-03","family":"personal_guidance","prompt":"शोक के समय गीता की सीख को अपने जीवन में कैसे लागू करूँ?","context":{"languageCode":"hi"},"expectedTaskClass":"personal_guidance","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"guidance-04","family":"personal_guidance","prompt":"I am very angry with a close friend. Help me decide what to do without just telling me to forgive.","context":{},"expectedTaskClass":"personal_guidance","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"guidance-05","family":"personal_guidance","prompt":"My responsibilities to work and family are overwhelming me. How should I set priorities?","context":{},"expectedTaskClass":"personal_guidance","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+
+    {"id":"moral-01","family":"moral_ambiguity","prompt":"Is it ever right to lie to protect someone in my family?","context":{},"expectedTaskClass":"moral_ambiguity","expectedDecisionImpact":"consequential","expectedAnswerMode":"clarify"},
+    {"id":"moral-02","family":"moral_ambiguity","prompt":"My family is pressuring a dependent relative to join a ritual they do not want. What should I do?","context":{},"expectedTaskClass":"moral_ambiguity","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"moral-03","family":"moral_ambiguity","prompt":"काम पर निष्ठा और सच बोलने के कर्तव्य में टकराव हो तो क्या करूँ?","context":{"languageCode":"hi"},"expectedTaskClass":"moral_ambiguity","expectedDecisionImpact":"consequential","expectedAnswerMode":"clarify"},
+    {"id":"moral-04","family":"moral_ambiguity","prompt":"Should I forgive a person who keeps harming me because forgiveness is considered virtuous?","context":{},"expectedTaskClass":"moral_ambiguity","expectedDecisionImpact":"consequential","expectedAnswerMode":"conditional"},
+    {"id":"moral-05","family":"moral_ambiguity","prompt":"How should I balance giving to charity with my obligations to my household?","context":{},"expectedTaskClass":"moral_ambiguity","expectedDecisionImpact":"consequential","expectedAnswerMode":"clarify"},
+
+    {"id":"reflection-01","family":"reflection","prompt":"What can Hanuman's conduct teach me about courage without pretending my situation is the same as his?","context":{"atlasNodeSlug":"ramayana"},"expectedTaskClass":"reflection","expectedDecisionImpact":"ordinary","expectedAnswerMode":"conditional"},
+    {"id":"reflection-02","family":"reflection","prompt":"Help me reflect on Gita 2.47 rather than giving me a command.","context":{},"expectedTaskClass":"reflection","expectedDecisionImpact":"ordinary","expectedAnswerMode":"conditional"},
+    {"id":"reflection-03","family":"reflection","prompt":"सीता की दृढ़ता पर चिंतन करने में मेरी मदद करो, लेकिन उनके जीवन को मेरे लिए सीधा नियम मत बनाओ।","context":{"languageCode":"hi","atlasNodeSlug":"ramayana"},"expectedTaskClass":"reflection","expectedDecisionImpact":"ordinary","expectedAnswerMode":"conditional"},
+    {"id":"reflection-04","family":"reflection","prompt":"How can I use Ganesha's obstacle symbolism to examine a habit I want to change?","context":{"atlasNodeSlug":"ganesha"},"expectedTaskClass":"reflection","expectedDecisionImpact":"ordinary","expectedAnswerMode":"conditional"},
+    {"id":"reflection-05","family":"reflection","prompt":"Give me a short reflection on Diwali light that leads to one practical action, not a long essay.","context":{},"expectedTaskClass":"reflection","expectedDecisionImpact":"ordinary","expectedAnswerMode":"conditional"}
+  ]
+}

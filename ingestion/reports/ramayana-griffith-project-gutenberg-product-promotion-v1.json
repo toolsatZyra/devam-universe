@@ -1,0 +1,104 @@
+{
+  "contract": "DEVAM_GRIFFITH_RAMAYANA_PRODUCT_PROMOTION_REPORT_V1",
+  "result": "PASS",
+  "promotion_id": "ramayana-griffith-project-gutenberg-product-promotion-v1",
+  "generated_at": "2026-08-08T03:31:30.9095876+05:30",
+  "inputs": {
+    "plan": {
+      "path": "ingestion/plans/ramayana-griffith-project-gutenberg-product-promotion-v1.json",
+      "bytes": 7041,
+      "sha256": "c1647a70d57dab0af8d74d8ab8f3075ce948f22a0dda4fcc778c9a08f819c3d3"
+    },
+    "compiler": {
+      "path": "tools/promote_project_gutenberg_ramayana_product.py",
+      "bytes": 14421,
+      "sha256": "1f32b26c11cdf80e9629175461fe294d9df07d9cf2c368b43d1e51bde340ebbb"
+    },
+    "test": {
+      "path": "tools/test_promote_project_gutenberg_ramayana_product.py",
+      "bytes": 3763,
+      "sha256": "0f4016cb1c80165f7c60cadc4d3f7515c585812482769458ac21ace18f13d1ba"
+    },
+    "upstream_plan_sha256": "c154f3ab85079c8b5e16c191a355ea5dc2bfcb4107a318a56b4f825f5fb3fac4",
+    "upstream_packet_sha256": "80a64ddf9897573f450783db885f3e434ef5d1e3f8672512c070aec512cfbf2f",
+    "upstream_passage_content_root_sha256": "e0c62543a911092244d9ec03d413cca178b968cd99de2b9fe8f10d261cebe5d4"
+  },
+  "compiled": {
+    "sql_sha256": "3273214461713fecd867cd1bf7774d04d02f051fcf360d6d8eda9bbd51614d20",
+    "promoted_source_sha256": "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
+    "promoted_source_object_count": 1,
+    "promoted_passage_count": 560,
+    "product_passages_containing_project_gutenberg_reference": 0,
+    "source_payloads_copied_or_downloaded": false,
+    "reader_payload_created": false
+  },
+  "rights_decision": {
+    "result": "product_allowed_for_exact_extracted_text_units_with_source_attribution_and_trademark_isolation",
+    "target_product_geography": ["India", "United States"],
+    "translation_publication_years": "1870-1874",
+    "translator_death_date": "1906-11-07",
+    "india_conclusion": "The Griffith translation's Indian copyright term expired no later than the beginning of 1967 under section 22's life-plus-60 rule.",
+    "us_conclusion": "The Griffith translation predates the United States' current 1931 public-domain cutoff.",
+    "project_gutenberg_boundary": "Product passages exclude the Project Gutenberg license, header, footer, and trademark framing. The provider name remains bibliographic source/provenance attribution only.",
+    "legal_characterization": "documented_product_rights_determination_not_legal_advice"
+  },
+  "validation": {
+    "command": "python -m unittest tools.test_promote_project_gutenberg_ramayana_product -v",
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "independent_upstream_reconstruction": true,
+    "exact_sql_selection_and_drift_guards": true
+  },
+  "hosted_import": {
+    "attempted": true,
+    "project_id": "bucgdaunsuzithfigtmr",
+    "applied_at": "2026-08-08T03:31:30.9095876+05:30",
+    "status": "PASS",
+    "verification": {
+      "work_rights_lane": "product_allowed",
+      "work_publication_state": "published",
+      "expression_rights_lane": "product_allowed",
+      "expression_publication_state": "published",
+      "edition_rights_lane": "product_allowed",
+      "edition_publication_state": "published",
+      "indexed_source_count": 6,
+      "product_source_count": 1,
+      "retained_private_non_tei_source_count": 5,
+      "unintended_non_tei_promotions": 0,
+      "passage_count": 560,
+      "min_source_ordinal": 1,
+      "max_source_ordinal": 560,
+      "distinct_source_ordinal_count": 560,
+      "published_product_allowed_passage_count": 560,
+      "product_passages_containing_project_gutenberg_reference": 0,
+      "hosted_text_span_root_sha256": "be613cd8b4615a7746cf0ffdafdbfc7b6742c1c5e1d43fe23aab4ee9f8197e62"
+    },
+    "anonymous_public_rpc": {
+      "tested": true,
+      "role": "anon",
+      "function": "public.search_public_passages",
+      "query": "graceful speaker",
+      "language_code": "en",
+      "requested_limit": 5,
+      "griffith_product_result_observed": true,
+      "result_source_sha256": "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9"
+    },
+    "rights_isolation": {
+      "five_non_tei_griffith_sources_remain_private_evidence": true,
+      "other_private_ramayana_expression_remains_private_evidence_review": true,
+      "sibling_rights_inherited": false
+    }
+  },
+  "positive_boundary": "Product-usable, source-addressed English text units from the exact six-main-book Project Gutenberg electronic edition of Griffith's 1870-1874 verse translation, preserving its declared and numbering-evident omissions.",
+  "completion_denials": {
+    "complete_griffith_translation_without_omissions": false,
+    "uttarakanda_main_book_present": false,
+    "complete_valmiki_ramayana_sanskrit_source": false,
+    "complete_ramayana_tradition_or_all_recensions": false,
+    "page_layout_or_verse_lineation_preserved_in_normalized_passages": false,
+    "critical_or_authoritative_sanskrit_edition": false,
+    "hindi_translation_present": false,
+    "ramayana_hero_universe_complete": false,
+    "mvp_library_complete": false
+  }
+}

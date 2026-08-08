@@ -1,0 +1,210 @@
+{
+  "contract": "DEVAM_SOURCE_VAULT_TEI_BATCH_INGESTION_V1",
+  "batch_id": "durga-ambuda-five-stotras-v1",
+  "source_copy_policy": "reference_only_no_duplicate_payload",
+  "coverage_theme": "durga",
+  "required_work_kind": "stotra",
+  "required_tradition_scope_member": "shakta",
+  "expected_counts": {
+    "work_count": 5,
+    "source_object_count": 10,
+    "passage_count": 132
+  },
+  "provider": {
+    "name": "Ambuda",
+    "acquired_at": "2026-07-12T09:53:11.079361+00:00"
+  },
+  "rights": {
+    "lane": "derivative_allowed",
+    "license": "CC0-1.0",
+    "required_literal": "Distributed by Ambuda under a Creative Commons CC0 1.0 Universal Licence (public domain)",
+    "status": "rights_supported_structure_unresolved"
+  },
+  "vault": {
+    "object_count": 8415,
+    "object_bytes": 5482252883,
+    "objects_manifest_sha256": "1768ede5e703537174b856b47f76dc6f08af3bbaf9ca0e68dbb04e29a5cb83dd",
+    "provenance_map_sha256": "cb51aef3d66378954dc30beba9481355d3e6311ade790d817f44d128a32a9365",
+    "summary_sha256": "c378809b843e83599008d5e4ba01ae1ae1e4bfdd53b47a272aef7c5b1f5ac365"
+  },
+  "live_rights_observations": [
+    {
+      "slug": "bhavanibhujangam",
+      "url": "https://ambuda.org/texts/bhavanibhujangam/about",
+      "status": 200,
+      "final_url": "https://ambuda.org/texts/bhavanibhujangam/about",
+      "bytes": 9752,
+      "sha256": "3d2465107b18a083ff8a31e1f2f3fcd7f065380906fc00ab5d8a91ce45f2a6d9",
+      "strict_utf8": true,
+      "cc0_literal_present": true
+    },
+    {
+      "slug": "bhramarambashtakam",
+      "url": "https://ambuda.org/texts/bhramarambashtakam/about",
+      "status": 200,
+      "final_url": "https://ambuda.org/texts/bhramarambashtakam/about",
+      "bytes": 9646,
+      "sha256": "c90a560733cbb268de36751333442fc4ba611d34bb3f0a96f4a37bbb0b8e0e99",
+      "strict_utf8": true,
+      "cc0_literal_present": true
+    },
+    {
+      "slug": "devibhujangastotram",
+      "url": "https://ambuda.org/texts/devibhujangastotram/about",
+      "status": 200,
+      "final_url": "https://ambuda.org/texts/devibhujangastotram/about",
+      "bytes": 9666,
+      "sha256": "b8006f7d3af39d9422836cb15f41ebd7a3590c4d29d4a8b1e30cdf8a2aca7ee1",
+      "strict_utf8": true,
+      "cc0_literal_present": true
+    },
+    {
+      "slug": "devicatuhshashtyupacarapujastotram",
+      "url": "https://ambuda.org/texts/devicatuhshashtyupacarapujastotram/about",
+      "status": 200,
+      "final_url": "https://ambuda.org/texts/devicatuhshashtyupacarapujastotram/about",
+      "bytes": 9822,
+      "sha256": "fe831a3478207d4332e601bf261f9de570c36b2687344c72b5d57ce324c0ed90",
+      "strict_utf8": true,
+      "cc0_literal_present": true
+    },
+    {
+      "slug": "lalitapancaratnam",
+      "url": "https://ambuda.org/texts/lalitapancaratnam/about",
+      "status": 200,
+      "final_url": "https://ambuda.org/texts/lalitapancaratnam/about",
+      "bytes": 9781,
+      "sha256": "616ea263c2b38d7cc93024d281384d558fe506c571e27f40345fd22b8cb6a248",
+      "strict_utf8": true,
+      "cc0_literal_present": true
+    }
+  ],
+  "works": [
+    {
+      "slug": "bhavanibhujangam",
+      "canonical_title": "Bhavānībhujaṅgam",
+      "work_kind": "stotra",
+      "tradition_scope": ["durga", "shakta"],
+      "summary": "A Sanskrit hymn to Bhavānī attributed in this source edition to Ādi Śaṅkarācārya; the attribution remains source-specific.",
+      "identity": {
+        "main_title": "भवानीभुजंगम्",
+        "access_title": "भवानीभुजंगम्",
+        "text_xml_id": "bhavanibhujangam",
+        "language_code": "sa",
+        "trailer": "इति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्रीगोविन्दभगवत्पूज्यपादशिष्यस्य श्रीमच्छंकरभगवतः कृतौ भवानीभुजंगं संपूर्णम् ॥"
+      },
+      "expression": {
+        "language_code": "sa",
+        "script_code": "Deva",
+        "expression_kind": "electronic_transcription",
+        "attribution": "Ambuda; machine-readable version by Arun Prasad",
+        "is_source_original": false,
+        "ai_generated": false
+      },
+      "edition": {
+        "edition_title": "Bhavānībhujaṅgam — Ambuda electronic text based on The Works of Sri Sankaracharya, Volume 17",
+        "publisher": "Sri Vani Vilas Press",
+        "publication_place": null,
+        "publication_year": 1910,
+        "edition_statement": "Machine-readable Ambuda transcription of the cited 1910 source volume; attribution is source-specific and scan-to-TEI reconciliation remains unresolved",
+        "identifiers": {"ambuda": "bhavanibhujangam", "legacy_holding": "HLD-AMB-BHAVANIBHUJANGAM-20260512"}
+      },
+      "source_objects": [
+        {"role": "canonical_tei", "sha256": "278f9c6b41fd33cc3fb84a528257d44c4d19e0d7a756b110b29485343b492047", "bytes": 10095, "media_type": "application/tei+xml", "object_path": "objects/sha256/27/278f9c6b41fd33cc3fb84a528257d44c4d19e0d7a756b110b29485343b492047"},
+        {"role": "access_text", "sha256": "e3eca788d8be73e4c6ed33e6c22a2f08dc4851b6d555d7befba9622fc207cd7f", "bytes": 7491, "media_type": "text/plain; charset=utf-8", "object_path": "objects/sha256/e3/e3eca788d8be73e4c6ed33e6c22a2f08dc4851b6d555d7befba9622fc207cd7f"}
+      ],
+      "structure": {
+        "unit_element": "lg", "expected_observed_units": 17, "expected_literal_markers": [1, 17], "terminal_formula_observed": true,
+        "completeness_status": "observed_17_units_terminal_present_structure_authority_unresolved", "publication_state": "review", "text_status": "tei_extracted_unreviewed"
+      }
+    },
+    {
+      "slug": "bhramarambashtakam",
+      "canonical_title": "Bhramarāmbāṣṭakam",
+      "work_kind": "stotra",
+      "tradition_scope": ["durga", "shakta"],
+      "summary": "A Sanskrit hymn to Bhramarāmbā of Śrīśailam attributed in this source edition to Ādi Śaṅkarācārya; the attribution remains source-specific.",
+      "identity": {
+        "main_title": "भ्रमराम्बाष्टकम्", "access_title": "भ्रमराम्बाष्टकम्", "text_xml_id": "bhramarambashtakam", "language_code": "sa",
+        "trailer": "इति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्रीगोविन्दभगवत्पूज्यपादशिष्यस्य श्रीमच्छंकरभगवतः कृतौ भ्रमराम्बाष्टकं संपूर्णम् ॥"
+      },
+      "expression": {"language_code": "sa", "script_code": "Deva", "expression_kind": "electronic_transcription", "attribution": "Ambuda; machine-readable version by Arun Prasad", "is_source_original": false, "ai_generated": false},
+      "edition": {
+        "edition_title": "Bhramarāmbāṣṭakam — Ambuda electronic text based on The Works of Sri Sankaracharya, Volume 18", "publisher": "Sri Vani Vilas Press", "publication_place": null, "publication_year": 1910,
+        "edition_statement": "Machine-readable Ambuda transcription of the cited 1910 source volume; attribution is source-specific and scan-to-TEI reconciliation remains unresolved",
+        "identifiers": {"ambuda": "bhramarambashtakam", "legacy_holding": "HLD-AMB-BHRAMARAMBASHTAKAM-20260512"}
+      },
+      "source_objects": [
+        {"role": "canonical_tei", "sha256": "a049cac8b964b8931179ff8bc7ffee7afba5c613b9ab789abf9663169c5ee8be", "bytes": 7758, "media_type": "application/tei+xml", "object_path": "objects/sha256/a0/a049cac8b964b8931179ff8bc7ffee7afba5c613b9ab789abf9663169c5ee8be"},
+        {"role": "access_text", "sha256": "b7acad3e7023690f584744be49578471e61d12fabf1bae1ccf4869bf9c345dfe", "bytes": 5826, "media_type": "text/plain; charset=utf-8", "object_path": "objects/sha256/b7/b7acad3e7023690f584744be49578471e61d12fabf1bae1ccf4869bf9c345dfe"}
+      ],
+      "structure": {"unit_element": "lg", "expected_observed_units": 9, "expected_literal_markers": [1, 9], "terminal_formula_observed": true, "completeness_status": "observed_9_units_terminal_present_structure_authority_unresolved", "publication_state": "review", "text_status": "tei_extracted_unreviewed"}
+    },
+    {
+      "slug": "devibhujangastotram",
+      "canonical_title": "Devībhujaṅgastotram",
+      "work_kind": "stotra",
+      "tradition_scope": ["durga", "shakta"],
+      "summary": "A Sanskrit hymn to Devī attributed in this source edition to Ādi Śaṅkarācārya; the attribution remains source-specific.",
+      "identity": {
+        "main_title": "देवीभुजंगस्तोत्रम्", "access_title": "देवीभुजंगस्तोत्रम्", "text_xml_id": "devibhujangastotram", "language_code": "sa",
+        "trailer": "इति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्रीगोविन्दभगवत्पूज्यपादशिष्यस्य श्रीमच्छंकरभगवतः कृतौ देवीभुजंगस्तोत्रम् संपूर्णम् ॥"
+      },
+      "expression": {"language_code": "sa", "script_code": "Deva", "expression_kind": "electronic_transcription", "attribution": "Ambuda; machine-readable version by Arun Prasad", "is_source_original": false, "ai_generated": false},
+      "edition": {
+        "edition_title": "Devībhujaṅgastotram — Ambuda electronic text based on The Works of Sri Sankaracharya, Volume 17", "publisher": "Sri Vani Vilas Press", "publication_place": null, "publication_year": 1910,
+        "edition_statement": "Machine-readable Ambuda transcription of the cited 1910 source volume; attribution is source-specific and scan-to-TEI reconciliation remains unresolved",
+        "identifiers": {"ambuda": "devibhujangastotram", "legacy_holding": "HLD-AMB-DEVIBHUJANGASTOTRAM-20260512"}
+      },
+      "source_objects": [
+        {"role": "canonical_tei", "sha256": "cc20d1035ec180312948fd2702c92bf1f430b8255b630614fb294d4ce16a2fa2", "bytes": 14859, "media_type": "application/tei+xml", "object_path": "objects/sha256/cc/cc20d1035ec180312948fd2702c92bf1f430b8255b630614fb294d4ce16a2fa2"},
+        {"role": "access_text", "sha256": "8ebebb646269a957d0f12906a9a0a7c558f550829d463ec6e88225d8b7ad0ae5", "bytes": 11331, "media_type": "text/plain; charset=utf-8", "object_path": "objects/sha256/8e/8ebebb646269a957d0f12906a9a0a7c558f550829d463ec6e88225d8b7ad0ae5"}
+      ],
+      "structure": {"unit_element": "lg", "expected_observed_units": 28, "expected_literal_markers": [1, 28], "terminal_formula_observed": true, "completeness_status": "observed_28_units_terminal_present_structure_authority_unresolved", "publication_state": "review", "text_status": "tei_extracted_unreviewed"}
+    },
+    {
+      "slug": "devicatuhshashtyupacarapujastotram",
+      "canonical_title": "Devīcatuḥṣaṣṭyupacārapūjāstotram",
+      "work_kind": "stotra",
+      "tradition_scope": ["durga", "shakta"],
+      "summary": "A 72-stanza Sanskrit devotional hymn presenting sixty-four forms of worshipful offering to Devī; it is not represented as a universal or independently validated puja procedure.",
+      "identity": {
+        "main_title": "देवीचतुःषष्ट्युपचारपूजास्तोत्रम्", "access_title": "देवीचतुःषष्ट्युपचारपूजास्तोत्रम्", "text_xml_id": "devicatuhshashtyupacarapujastotram", "language_code": "sa",
+        "trailer": "इति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्री गोविन्दभगवत्पूज्यपादशिष्यस्य श्रीमच्छंकरभगवतः कृतौ देवीचतुःषष्ट्युपचारपूजास्तोत्रं संपूर्णम् ॥"
+      },
+      "expression": {"language_code": "sa", "script_code": "Deva", "expression_kind": "electronic_transcription", "attribution": "Ambuda; machine-readable version by Arun Prasad", "is_source_original": false, "ai_generated": false},
+      "edition": {
+        "edition_title": "Devīcatuḥṣaṣṭyupacārapūjāstotram — Ambuda electronic text based on The Works of Sri Sankaracharya, Volume 17", "publisher": "Sri Vani Vilas Press", "publication_place": null, "publication_year": 1910,
+        "edition_statement": "Machine-readable Ambuda transcription of the cited 1910 source volume; attribution is source-specific and scan-to-TEI reconciliation remains unresolved",
+        "identifiers": {"ambuda": "devicatuhshashtyupacarapujastotram", "legacy_holding": "HLD-AMB-DEVICATUHSHASHTYUPACARAPUJASTOTRAM-20260512"}
+      },
+      "source_objects": [
+        {"role": "canonical_tei", "sha256": "79deb7589f1d6aee869e581cdfe5fe37575757e1c9763fbf6bf006f405202443", "bytes": 34939, "media_type": "application/tei+xml", "object_path": "objects/sha256/79/79deb7589f1d6aee869e581cdfe5fe37575757e1c9763fbf6bf006f405202443"},
+        {"role": "access_text", "sha256": "d13726b99184a5fec8e343d3640a37ff5acb6e2da3e004351b0f4ec872a9adeb", "bytes": 27895, "media_type": "text/plain; charset=utf-8", "object_path": "objects/sha256/d1/d13726b99184a5fec8e343d3640a37ff5acb6e2da3e004351b0f4ec872a9adeb"}
+      ],
+      "structure": {"unit_element": "lg", "expected_observed_units": 72, "expected_literal_markers": [1, 72], "terminal_formula_observed": true, "completeness_status": "observed_72_units_terminal_present_structure_authority_unresolved", "publication_state": "review", "text_status": "tei_extracted_unreviewed"}
+    },
+    {
+      "slug": "lalitapancaratnam",
+      "canonical_title": "Lalitāpañcaratnam",
+      "work_kind": "stotra",
+      "tradition_scope": ["durga", "shakta"],
+      "summary": "A six-stanza Sanskrit hymn to Lalitā attributed in this source edition to Ādi Śaṅkarācārya; the attribution remains source-specific.",
+      "identity": {
+        "main_title": "ललितापञ्चरत्नम्", "access_title": "ललितापञ्चरत्नम्", "text_xml_id": "lalitapancaratnam", "language_code": "sa",
+        "trailer": "इति श्रीमत्परमहंसपरिव्राजकाचार्यस्य श्रीगोविन्दभगवत्पूज्यपादशिष्यस्य श्रीमच्छंकरभगवतः कृतौ ललितापञ्चरत्नं संपूर्णम् ॥"
+      },
+      "expression": {"language_code": "sa", "script_code": "Deva", "expression_kind": "electronic_transcription", "attribution": "Ambuda; machine-readable version by Arun Prasad", "is_source_original": false, "ai_generated": false},
+      "edition": {
+        "edition_title": "Lalitāpañcaratnam — Ambuda electronic text based on The Works of Sri Sankaracharya, Volume 17", "publisher": "Sri Vani Vilas Press", "publication_place": null, "publication_year": 1910,
+        "edition_statement": "Machine-readable Ambuda transcription of the cited 1910 source volume; attribution is source-specific and scan-to-TEI reconciliation remains unresolved",
+        "identifiers": {"ambuda": "lalitapancaratnam", "legacy_holding": "HLD-AMB-LALITAPANCARATNAM-20260512"}
+      },
+      "source_objects": [
+        {"role": "canonical_tei", "sha256": "8e5efb9a4c0e13385d243925aa950d20ba975b6037b68abe2b6392e01e625ca9", "bytes": 5177, "media_type": "application/tei+xml", "object_path": "objects/sha256/8e/8e5efb9a4c0e13385d243925aa950d20ba975b6037b68abe2b6392e01e625ca9"},
+        {"role": "access_text", "sha256": "ae2b742795d412a6eb9845a6058a4f1d3bf94a730e00dec2f3f273d37cb6d91f", "bytes": 3497, "media_type": "text/plain; charset=utf-8", "object_path": "objects/sha256/ae/ae2b742795d412a6eb9845a6058a4f1d3bf94a730e00dec2f3f273d37cb6d91f"}
+      ],
+      "structure": {"unit_element": "lg", "expected_observed_units": 6, "expected_literal_markers": [1, 6], "terminal_formula_observed": true, "completeness_status": "observed_6_units_terminal_present_structure_authority_unresolved", "publication_state": "review", "text_status": "tei_extracted_unreviewed"}
+    }
+  ]
+}

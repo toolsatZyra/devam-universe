@@ -1,0 +1,63 @@
+{
+  "base_pilot": {
+    "bytes": 42288,
+    "pair_id": "guidance-03",
+    "path": "apps/web/evaluation/sarthi-answer-pilot-v0.1.json",
+    "sha256": "75c9b2cf69f7972fb2be890058cce026235e518243d91f4517994b774d86b74c"
+  },
+  "blinded_run": {
+    "human_blinded_review_required": true,
+    "paid_or_external_model_calls_made": false,
+    "promotion_claim_allowed": false,
+    "required_arms": [
+      "grounded_rag",
+      "prompt_only_guidance",
+      "material_context_and_typed_coverage",
+      "thin_governor"
+    ],
+    "same_evidence_bytes_required": true,
+    "same_model_required": true,
+    "status": "not_run"
+  },
+  "candidate_contract": {
+    "variant_a": {
+      "expected_citation_ordinals": [],
+      "expected_runtime_mode": "context_clarification",
+      "required_boundary": "No passage may be used to shame grief, demand emotional suppression, or prove that the user should stop feeling.",
+      "scenario_id": "guidance-03-a"
+    },
+    "variant_b": {
+      "expected_citation_ordinals": [
+        43,
+        45,
+        46,
+        444
+      ],
+      "expected_runtime_mode": "reviewed_personal_guidance",
+      "required_boundary": "The named Gita lens remains optional, exposes no private quotation, gives no diagnosis, cure, metaphysical proof or grief timetable, and preserves the user's choice of support.",
+      "scenario_id": "guidance-03-b"
+    }
+  },
+  "claim_boundary": "This supplement proves source fixity, optional-lens routing, current deterministic mode separation and readiness for a controlled pilot. It does not prove that the thin Governor improves judgment, that Sarthi is wise, that a religious lens is appropriate for every grieving person, or that the personal-guidance domain is complete.",
+  "contract": "DEVAM_SARTHI_GRIEF_GUIDANCE_PILOT_SUPPLEMENT_V0_1",
+  "evidence_bundle": {
+    "bytes": 10509,
+    "path": "knowledge_packs/wisdom/grief-companion-v1.json",
+    "private_commentary_quotation_allowed": false,
+    "review_status": "internal_beta_reviewed",
+    "sha256": "93ac10a0d64773dff08222a6c4152a8b1feaa6ade00b6a571fa39b2833a5dd5a",
+    "source_payload_duplicated": false
+  },
+  "purpose": "Bind the reviewed grief-companion evidence bundle and its current deterministic candidate behaviour to guidance-03 in the frozen 64-scenario answer pilot without mutating that fixture or claiming a completed answer-quality evaluation.",
+  "research_manifests": [
+    {
+      "path": "research/sarthi-artificial-wisdom/ARTIFACT_MANIFEST.sha256",
+      "sha256": "d04f232b09ae7a27f4ff7ee50ff36db1a3e2890b13f2b37876e87d96355e96e0"
+    },
+    {
+      "path": "research/sarthi-artificial-wisdom/independent-foundations/FOUNDATIONAL_ARTIFACT_MANIFEST.sha256",
+      "sha256": "e42f6b586cde314f531f91d46928a8a43896f7a65ee423e594749ef9cd9fb594"
+    }
+  ],
+  "status": "deterministic_candidate_ready_same_model_and_blinded_review_not_run"
+}

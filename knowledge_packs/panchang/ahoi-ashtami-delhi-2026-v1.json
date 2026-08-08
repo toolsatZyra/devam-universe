@@ -1,0 +1,96 @@
+{
+  "contract": "DEVAM_AHOI_ASHTAMI_NORTH_INDIA_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-ahoi-ashtami-delhi-2026-v1",
+  "generated_at_utc": "2026-08-07T00:31:11.666Z",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-01", "2026-11-02"],
+    "selected_civil_date": "2026-11-01",
+    "supported_tradition_codes": ["smarta-north-india"],
+    "location_specific": true,
+    "north_india_living_practice_lane_only": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "drikpanchang-delhi-ahoi-ashtami-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/ahoi-ashtami-date-time.html?geoname-id=1273294&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_identity_pradosha_star_sighting_and_location_specific_date_fixture",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-07T00:31:11.666Z",
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/ahoi-ashtami-date-time.html?geoname-id=1273294&year=2026",
+        "response_bytes": 66050,
+        "response_sha256": "1f979e3c097e9c377f8f6a2ba03b7dcea3aa694e8ad7b6fc4bac98254ed9db76",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "selected_civil_date": "2026-11-01",
+        "published_puja_interval_local": "17:36-18:54",
+        "published_star_sighting_time_local": "18:00",
+        "published_moonrise_local": "23:40",
+        "ashtami_begins_local": "2026-11-01T14:51:00+05:30",
+        "ashtami_ends_local": "2026-11-02T13:10:00+05:30",
+        "north_india_popularity_stated": true,
+        "wellbeing_of_all_children_modern_inclusive_wording_present": true,
+        "star_and_moon_family_variants_present": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-ahoi-ashtami-practice-context",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/info/ahoi-ashtami-puja-vidhi.html",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_mata_ahoi_children_image_story_star_or_moon_and_family_practice_context_not_universal_vidhi",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-07T00:31:11.666Z",
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/info/ahoi-ashtami-puja-vidhi.html",
+        "response_bytes": 61590,
+        "response_sha256": "ecb47f01cf1ba104003819299acad58f079d62b9d111264beabf7e2afdaa3cb9",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "mata_ahoi_identity_present": true,
+        "children_wellbeing_identity_present": true,
+        "family_image_and_story_practice_present": true,
+        "star_or_moon_completion_variants_present": true,
+        "strict_fast_described_but_not_adopted_by_devam": true
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "rule": {
+    "observance_slug": "ahoi-ashtami-north-india",
+    "canonical_name": "Ahoi Ashtami / Ahoi Aathe",
+    "target_tithi": "Ashtami",
+    "target_paksha": "krishna",
+    "decision_window": "pradosha",
+    "selection": "select_only_when_exactly_one_candidate_civil_evening_has_krishna_ashtami_overlap_with_local_pradosha",
+    "both_candidates_overlap": "fail_closed",
+    "neither_candidate_overlaps": "fail_closed",
+    "selected_civil_date": "2026-11-01",
+    "provider_puja_interval_served": false,
+    "fasting_procedure_resolved": false,
+    "star_or_moon_completion_rule_universalized": false,
+    "all_north_india_family_practices_equivalent": false
+  },
+  "denials": {
+    "precise_puja_muhurta_served": false,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "medical_or_dietary_advice_given": false,
+    "mothers_or_women_only_universalized": false,
+    "sons_only_wording_adopted": false,
+    "one_mandatory_image_or_story_claimed": false,
+    "star_sighting_required_for_every_family": false,
+    "moon_sighting_required_for_every_family": false,
+    "child_longevity_or_protection_guaranteed": false,
+    "all_regional_family_and_temple_variants_complete": false,
+    "complete_september_december_coverage": false
+  }
+}

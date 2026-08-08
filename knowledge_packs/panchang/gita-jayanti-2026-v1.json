@@ -1,0 +1,95 @@
+{
+  "contract": "DEVAM_GITA_JAYANTI_2026_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-gita-jayanti-2026-v1",
+  "fetched_at_utc": "2026-08-07T01:55:00.000Z",
+  "scope": {
+    "observance_slug": "mokshada-ekadashi",
+    "gita_jayanti_identity": true,
+    "selected_civil_date": "2026-12-20",
+    "candidate_civil_dates": ["2026-12-19", "2026-12-20"],
+    "target_tithi": "Margashirsha Shukla Ekadashi",
+    "reference_profiles": ["delhi-smarta", "mumbai-smarta", "chennai-smarta", "delhi-iskcon", "mumbai-iskcon", "chennai-iskcon"],
+    "universal_india_date_or_procedure_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "devam-ekadashi-date-fixture",
+      "title": "Devam Delhi, Mumbai, and Chennai Ekadashi date fixture",
+      "publisher": "Devam",
+      "url": null,
+      "observed_artifact": {"bytes": 16807, "sha256": "6c860d6f2d778739c4a25b4b281b03a16975e8d43021baee24c55b1e1b72433d"},
+      "observed_literals": {"smarta_date": "2026-12-20", "iskcon_delhi_date": "2026-12-20", "iskcon_mumbai_date": "2026-12-20", "iskcon_chennai_date": "2026-12-20", "tithi_begins_local": "2026-12-19T22:09:00+05:30", "tithi_ends_local": "2026-12-20T20:14:00+05:30"},
+      "evidence_role": "existing_location_specific_date_rule_and_variant_fixture_not_gita_jayanti_vidhi",
+      "rights_lane": "derivative_allowed"
+    },
+    {
+      "source_id": "utsav-international-geeta-mahotsav",
+      "title": "International Geeta Mahotsav",
+      "publisher": "Ministry of Tourism, Government of India / Kurukshetra Development Board",
+      "url": "https://utsav.gov.in/view-event/international-geeta-mahotsav",
+      "observed_fetch": {"status": 200, "final_url": "https://utsav.gov.in/view-event/international-geeta-mahotsav", "response_bytes": 32815, "response_sha256": "8eb680e77e02204b6a0b282354287bc3f89bc2f4ab1aaaa9dcfecba55778d5a7", "strict_utf8": true},
+      "observed_literals": {"kurukshetra": true, "margashirsha_shukla_ekadashi": true, "krishna_arjuna_dialogue_commemoration": true, "reading_bhajan_and_public_programme_context": true},
+      "evidence_role": "official_recurring_identity_and_public_festival_context_not_2026_operations_or_universal_home_vidhi",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "kurukshetra-jyotisar-events",
+      "title": "Jyotisar Events - Geeta Jayanti Mahotsav",
+      "publisher": "District Kurukshetra, Government of Haryana",
+      "url": "https://kurukshetra.gov.in/jyotisarevents/",
+      "observed_fetch": {"status": 200, "final_url": "https://kurukshetra.gov.in/jyotisarevents/", "response_bytes": 114216, "response_sha256": "0cd58a16fc0a04b1df0ee8e53c7eb50bab4426aee06931815001987184c4a3f2", "strict_utf8": true},
+      "observed_literals": {"november_december": true, "margashirsha_shukla_ekadashi": true, "krishna_spoke_gita_to_arjuna": true, "recitation_discourse_and_cultural_programmes": true},
+      "evidence_role": "official_kurukshetra_identity_and_recitation_context_not_fixed_2026_programme_or_home_vidhi",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "iitk-gita-supersite-introduction",
+      "title": "Introduction to the Bhagavadgita",
+      "publisher": "Gita Supersite, Indian Institute of Technology Kanpur",
+      "url": "https://www.gitasupersite.iitk.ac.in/srimad/intro",
+      "observed_fetch": {"status": 200, "final_url": "https://www.gitasupersite.in/srimad/intro", "response_bytes": 5664, "response_sha256": "95136b3e9e58fc8d17ff873c227d78260ef377d6cc0d75574ad9e35e9dd2ed99", "strict_utf8": true},
+      "observed_literals": {"dialogue_between_krishna_and_arjuna": true, "bhishma_parva_context": true, "eighteen_chapters": true, "seven_hundred_or_seven_hundred_one_verse_variants": true, "multiple_scripts_translations_and_commentaries": true},
+      "evidence_role": "academic_text_identity_structure_and_variant_context_not_single_interpretation_authority",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "incredible-india-iskcon-kolkata-geeta-jayanti",
+      "title": "ISKCON Kolkata - Geeta Jayanti",
+      "publisher": "Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/west-bengal/kolkata/iskcon-kolkata",
+      "observed_fetch": {"status": 200, "final_url": "https://www.incredibleindia.gov.in/en/west-bengal/kolkata/iskcon-kolkata", "response_bytes": 487272, "response_sha256": "57b40a374956f86639e72b43ab50b008a2ed8553231002b93ccfd5abccd2cc76", "strict_utf8": true},
+      "observed_literals": {"geeta_jayanti": true, "margashirsha_shukla_ekadashi": true, "krishna_revealed_gita_to_arjuna": true, "iskcon_context": true},
+      "evidence_role": "official_tourism_corroboration_of_iskcon_identity_not_global_iskcon_procedure_or_date_authority",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "title": "Bhagavadgita with the commentaries of Sridhara, Madhusudana, Visvanatha and Baladeva",
+      "publisher": "GRETIL / SUB Gottingen; data contribution by Gaudiya Grantha Mandira",
+      "url": null,
+      "source_object": {"path": "source_vault/objects/sha256/e1/e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505", "bytes": 2056476, "sha256": "e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505", "format": "TEI XML", "language": "Sanskrit"},
+      "evidence_role": "existing_library_source_and_commentary_variant_reference_not_user_facing_translation_or_ritual_authority",
+      "rights_lane": "private_evidence_cc_by_nc_sa_4_0"
+    }
+  ],
+  "decision": {
+    "selected_civil_date": "2026-12-20",
+    "calendar_rule_reused": "devam-ekadashi-delhi-mumbai-chennai-2026-v1",
+    "gita_jayanti_reading_reflection_may_be_offered": true,
+    "mokshada_ekadashi_fast_parana_or_temple_vidhi_included": false,
+    "reading_edition_must_be_user_selected_or_source_identified": true,
+    "commentary_interpretations_must_remain_attributable": true
+  },
+  "denials": {
+    "gita_jayanti_and_every_mokshada_or_vaikuntha_ekadashi_procedure_are_identical": false,
+    "one_translation_or_commentary_is_canonical_for_all_users": false,
+    "complete_gita_recitation_is_required": false,
+    "fast_or_dietary_regimen_is_prescribed": false,
+    "parana_timing_is_served_by_this_guide": false,
+    "ritual_bathing_deep_daan_puja_mantra_or_priestly_liturgy_is_instructed": false,
+    "kurukshetra_travel_event_or_crowd_operations_are_served": false,
+    "moksha_merit_success_clarity_or_other_outcome_is_guaranteed": false,
+    "all_gita_textual_recensions_translations_commentaries_and_traditions_are_complete": false,
+    "source_text_is_returned_or_republished": false
+  }
+}

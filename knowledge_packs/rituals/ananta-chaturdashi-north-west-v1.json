@@ -1,0 +1,212 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-ananta-chaturdashi-north-west-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "ananta-chaturdashi",
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "supported_pairs": [
+      { "region_code": "north-india", "tradition_code": "smarta-north-india" },
+      { "region_code": "west-india", "tradition_code": "smarta-west-india" }
+    ],
+    "language_codes": ["en", "hi"],
+    "mumbai_2026_calendar_rule_required": true,
+    "family_temple_and_sampradaya_practice_override_generic_form": true,
+    "ananta_vrata_and_ganesh_visarjan_remain_separate": true
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-ananta-chaturdashi",
+      "title": "Nirnayasindhu Ananta Chaturdashi decision context",
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "url": null,
+      "source_class": "historical_rule_context",
+      "rights_lane": "reference_only",
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "evidence_pages": [159],
+      "evidence_role": "historical_bhadrapada_shukla_chaturdashi_ananta_identity_and_madhyahna_rule_not_modern_procedure"
+    },
+    {
+      "source_id": "drikpanchang-ananta-chaturdashi-mumbai-2026",
+      "title": "Anant Chaturdashi date and time for Mumbai, 2026",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/anant-chaturdashi/anant-chaturdashi-date-time.html?geoname-id=1275339&year=2026",
+      "source_class": "current_practitioner_calendar_context",
+      "rights_lane": "reference_only",
+      "prior_frozen_observation": {
+        "response_bytes": 69549,
+        "response_sha256": "2e438afe3667e8347b1ec58b585fa48fb72c77ba26e5caad4164a38653d4ac7e"
+      },
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/anant-chaturdashi/anant-chaturdashi-date-time.html?geoname-id=1275339&year=2026",
+        "response_bytes": 69549,
+        "response_sha256": "bc357fd36206146f21a2533bc7305c3877c0b560527f03925ea07e31de84220a",
+        "strict_utf8": true
+      },
+      "semantic_delta": "same_response_size_and_same_2026_mumbai_date_identity_but_changed_page_bytes; both hashes retained",
+      "evidence_role": "current_location_specific_date_identity_and_descriptive_context_not_product_text_or_universal_rule"
+    },
+    {
+      "source_id": "maharashtra-tourism-ganesh-chaturthi-visarjan",
+      "title": "Ganesh Chaturthi",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/ganesh-chaturthi/",
+      "source_class": "official_living_festival_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://maharashtratourism.gov.in/festivals/ganesh-chaturthi/",
+        "response_bytes": 626649,
+        "response_sha256": "2e71defa4a2d3c0cb1dc9f05263aa4f4c6f30a58bcea11eb7489bb2554d5025f",
+        "strict_utf8": true
+      },
+      "evidence_role": "ganeshotsav_and_visarjan_context_kept_separate_from_ananta_vrata_procedure"
+    },
+    {
+      "source_id": "incredible-india-ganesh-chaturthi-visarjan",
+      "title": "Ganesh Chaturthi",
+      "publisher": "Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/maharashtra/ganesh-chaturthi",
+      "source_class": "official_living_festival_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/maharashtra/ganesh-chaturthi",
+        "response_bytes": 489695,
+        "response_sha256": "43de268c884c9b5c06dfc2fc9deb2847eb1595aa545995eb9ad66464da12d9cb",
+        "strict_utf8": true
+      },
+      "evidence_role": "anant_chaturdashi_visarjan_day_and_responsible_celebration_context_not_ananta_vrata_procedure"
+    },
+    {
+      "source_id": "devam-ananta-chaturdashi-safety-boundary",
+      "title": "Devam Ananta Chaturdashi internal-beta safety and attribution boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary",
+      "rights_lane": "derivative_allowed",
+      "evidence_role": "supports_remembrance_reflection_and_responsible_commitment_without_inventing_formal_vrata_thread_fast_or_outcome_claims"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "ananta-chaturdashi-reflection-en-v1",
+      "language_code": "en",
+      "title": "Ananta Chaturdashi remembrance",
+      "summary": "A bounded Ananta/Vishnu remembrance through an attributable reading, reflection on continuity, and one responsible commitment; it is not Ganesh Visarjan or a formal Ananta-vrata manual.",
+      "family_practice_note": "Use your family's or temple's known Ananta story, prayer, vrata, thread, offerings, and close. This guide does not create those details. If you also observe Ganesh Visarjan on the same day, follow the separate Ganesha guide and your community's safety and environmental directions.",
+      "context_prompts": [
+        "Do you mean Ananta-vrata/Vishnu remembrance, Ganesh Visarjan, or both?",
+        "Which family, temple, or sampradaya Ananta tradition applies?",
+        "Is there an identified story, text, prayer, or teacher your family uses?",
+        "Is an elder or priest directing a fast, thread rite, formal puja, or offering?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "10-minute remembrance",
+          "estimated_minutes": 10,
+          "materials": [{ "item": "No material required", "substitutions": ["An identified family prayer", "A source-labelled Vishnu teaching", "A quiet reflection"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "Confirm whether you are observing Ananta remembrance, Ganesh Visarjan, or both, and keep their ritual identities separate.", "why": "They share the 2026 civil date in this lane but are not the same observance.", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "maharashtra-tourism-ganesh-chaturthi-visarjan", "incredible-india-ganesh-chaturthi-visarjan"] },
+            { "ordinal": 2, "instruction": "Remember Ananta as your family or sampradaya understands the name, using one familiar prayer or source-labelled Vishnu teaching if available.", "why": "The remembrance stays attributable without inventing a universal theology or rite.", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "Name one worthy commitment that needs patience and choose one small responsible action you can keep today.", "why": "This makes continuity actionable without promising a religious or material outcome.", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "30-minute sourced reflection",
+          "estimated_minutes": 30,
+          "materials": [{ "item": "One identified Ananta or Vishnu source", "substitutions": ["A family text", "A teacher-led explanation", "The material-free minimum form"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "Identify the family, temple, sampradaya, text, or teacher whose Ananta account you are using.", "why": "Attribution prevents one account from becoming a false universal version.", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 2, "instruction": "Read one short coherent passage or teaching and distinguish the source account from later explanation.", "why": "Source layers remain visible in Devam's library-first model.", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "Reflect on where steadiness, repair, or patience matters in your life without treating the story as a guaranteed prediction.", "why": "Wisdom can guide action without manufacturing certainty.", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "Write and begin one realistic commitment, including when you will revisit it.", "why": "A bounded practical action is safer than an outcome promise.", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "60-minute family or temple-connected form",
+          "estimated_minutes": 60,
+          "materials": [{ "item": "Family, temple, or sampradaya source", "substitutions": ["A verified edition", "A teacher-guided account", "The standard individual form"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "Invite family or a study group to name the exact Ananta account and lineage being followed.", "why": "The shared form remains source-aware and tradition-specific.", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 2, "instruction": "Read and discuss a short attributable account, preserving differences or uncertainty rather than blending versions.", "why": "Variant preservation is part of an exhaustive library.", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "If an established elder, priest, or temple leads the formal vrata, keep fasting, thread, mantra, image, kalasha, offerings, and timing under that authority.", "why": "This synthesis is not a formal ritual manual.", "optional": false, "source_ids": ["drikpanchang-ananta-chaturdashi-mumbai-2026", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "Choose one shared commitment to sustain or repair and record the source used for the reflection.", "why": "The close is attributable and actionable without claiming reward.", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] }
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "ananta-chaturdashi-reflection-hi-v1",
+      "language_code": "hi",
+      "title": "अनन्त चतुर्दशी स्मरण",
+      "summary": "स्रोत-स्पष्ट पाठ, निरन्तरता पर चिंतन और एक जिम्मेदार संकल्प के साथ अनन्त/विष्णु-स्मरण; यह गणेश विसर्जन या औपचारिक अनन्त-व्रत पुस्तिका नहीं है।",
+      "family_practice_note": "अनन्त-कथा, प्रार्थना, व्रत, सूत्र, अर्पण और समापन अपने परिवार या मंदिर की परिचित रीति से रखें। यह मार्गदर्शिका वे विवरण नहीं गढ़ती। उसी दिन गणेश विसर्जन हो तो अलग गणेश मार्गदर्शिका तथा सामुदायिक सुरक्षा और पर्यावरण निर्देश मानें।",
+      "context_prompts": [
+        "आप अनन्त-व्रत/विष्णु-स्मरण, गणेश विसर्जन या दोनों के बारे में पूछ रहे हैं?",
+        "कौन-सी पारिवारिक, मंदिर या सम्प्रदायिक अनन्त परम्परा लागू है?",
+        "परिवार किस पहचानी कथा, ग्रन्थ, प्रार्थना या गुरु-विवरण का उपयोग करता है?",
+        "क्या कोई बुज़ुर्ग या पुरोहित उपवास, सूत्र-विधि, औपचारिक पूजा या अर्पण निर्देशित कर रहा है?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "10 मिनट का स्मरण",
+          "estimated_minutes": 10,
+          "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["परिचित पारिवारिक प्रार्थना", "स्रोत-स्पष्ट विष्णु-शिक्षा", "शान्त चिंतन"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "स्पष्ट करें कि आप अनन्त-स्मरण, गणेश विसर्जन या दोनों कर रहे हैं और उनकी अनुष्ठानिक पहचान अलग रखें।", "why": "इस 2026 क्षेत्रीय क्रम में तिथि एक है, पर दोनों एक ही पर्व नहीं हैं।", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "maharashtra-tourism-ganesh-chaturthi-visarjan", "incredible-india-ganesh-chaturthi-visarjan"] },
+            { "ordinal": 2, "instruction": "अपने परिवार या सम्प्रदाय की समझ के अनुसार अनन्त का स्मरण करें; उपलब्ध हो तो परिचित प्रार्थना या स्रोत-स्पष्ट विष्णु-शिक्षा लें।", "why": "इससे कोई सार्वभौमिक धर्मविज्ञान या विधि गढ़े बिना स्मरण स्रोत-स्पष्ट रहता है।", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "धैर्य माँगने वाले एक उचित संकल्प का नाम लें और आज का एक छोटा जिम्मेदार कदम चुनें।", "why": "यह किसी धार्मिक या भौतिक फल का वादा किए बिना निरन्तरता को कर्म में बदलता है।", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "30 मिनट का स्रोत-स्पष्ट चिंतन",
+          "estimated_minutes": 30,
+          "materials": [{ "item": "एक पहचाना अनन्त या विष्णु स्रोत", "substitutions": ["पारिवारिक ग्रन्थ", "गुरु-निर्देशित व्याख्या", "सामग्री-रहित न्यूनतम रूप"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "जिस परिवार, मंदिर, सम्प्रदाय, ग्रन्थ या गुरु का अनन्त-विवरण ले रहे हैं उसका नाम बताएं।", "why": "स्रोत-स्पष्टता एक विवरण को झूठा सार्वभौमिक रूप बनने से रोकती है।", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 2, "instruction": "एक छोटा पूरा अंश या शिक्षा पढ़ें और मूल स्रोत को बाद की व्याख्या से अलग रखें।", "why": "देवम के पुस्तकालय-प्रथम मॉडल में स्रोत की परतें दिखाई देती रहती हैं।", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "जीवन में स्थिरता, सुधार या धैर्य की जरूरत पर विचार करें; कथा को गारंटीकृत भविष्यवाणी न मानें।", "why": "ज्ञान कार्रवाई का मार्ग दिखा सकता है, झूठी निश्चितता नहीं।", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "एक यथार्थ संकल्प लिखें, आरम्भ करें और उसकी समीक्षा का समय तय करें।", "why": "सीमित व्यावहारिक कर्म फल के वादे से सुरक्षित है।", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "60 मिनट का परिवार या मंदिर-संबद्ध रूप",
+          "estimated_minutes": 60,
+          "materials": [{ "item": "पारिवारिक, मंदिर या सम्प्रदायिक स्रोत", "substitutions": ["सत्यापित संस्करण", "गुरु-निर्देशित विवरण", "मानक व्यक्तिगत रूप"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "परिवार या अध्ययन समूह के साथ लागू अनन्त-विवरण और परम्परा का ठीक नाम लें।", "why": "सामूहिक रूप भी स्रोत और परम्परा के प्रति स्पष्ट रहता है।", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 2, "instruction": "एक छोटा स्रोत-स्पष्ट विवरण पढ़ें और मतभेद या अनिश्चितता को मिलाए बिना बचाएं।", "why": "रूपान्तरों का संरक्षण विशाल पुस्तकालय का हिस्सा है।", "optional": false, "source_ids": ["nirnayasindhu-1865-ananta-chaturdashi", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "स्थापित बुज़ुर्ग, पुरोहित या मंदिर औपचारिक व्रत कराए तो उपवास, सूत्र, मंत्र, प्रतिमा, कलश, अर्पण और समय उसी के अधीन रखें।", "why": "यह संश्लेषण औपचारिक अनुष्ठान-पुस्तिका नहीं है।", "optional": false, "source_ids": ["drikpanchang-ananta-chaturdashi-mumbai-2026", "devam-ananta-chaturdashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "एक साझा संकल्प चुनें जिसे निभाना या सुधारना है और चिंतन में प्रयुक्त स्रोत दर्ज करें।", "why": "समापन फल का दावा किए बिना स्रोत-स्पष्ट और उपयोगी रहता है।", "optional": false, "source_ids": ["devam-ananta-chaturdashi-safety-boundary"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "attributable_ananta_vishnu_remembrance_reflection_and_responsible_commitment_supported": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "ananta_vrata_and_ganesh_visarjan_kept_separate": true,
+    "prior_and_fresh_provider_hashes_with_semantic_delta_retained": true,
+    "fast_food_dietary_or_medical_guidance_given": false,
+    "formal_ananta_puja_kalasha_serpent_image_mantra_offering_or_homa_prescribed": false,
+    "fourteen_knot_thread_tying_removal_or_retention_prescribed": false,
+    "ganesh_immersion_imported_into_ananta_guide": false,
+    "wealth_prosperity_recovery_lost_kingdom_merit_protection_or_other_outcome_guaranteed": false,
+    "one_ananta_story_theology_or_practice_claimed_universal": false,
+    "all_regional_family_temple_and_sampradaya_variants_complete": false
+  }
+}

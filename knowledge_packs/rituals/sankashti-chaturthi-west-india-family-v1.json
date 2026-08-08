@@ -1,0 +1,198 @@
+{
+  "contract": "DEVAM_RECURRING_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-sankashti-chaturthi-west-india-family-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slugs": [
+    "sankashti-chaturthi-2026-09",
+    "sankashti-chaturthi-2026-10",
+    "sankashti-chaturthi-2026-11",
+    "sankashti-chaturthi-2026-12"
+  ],
+  "scope": {
+    "region_codes": ["west-india"],
+    "tradition_codes": ["smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "september_december_2026_fixture_required": true,
+    "family_known_practice_overrides_generic_sequence": true,
+    "local_moonrise_must_come_from_runtime_not_provider_table": true,
+    "fasting_and_medical_guidance_excluded": true
+  },
+  "sources": [
+    {
+      "source_id": "devam-sankashti-date-and-practice-fixture",
+      "title": "Devam Sankashti Chaturthi Delhi/Mumbai September-December 2026 evidence fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "historical_rule_current_dates_official_temple_and_maharashtra_living_practice_semantic_fixture",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "d14c3552f4ff41bae44bc4cabf4c0f24265d5e099bcfe707f28349f248701944"
+    },
+    {
+      "source_id": "siddhivinayak-trust-sankashti-dates",
+      "title": "Sankashti Chaturthi / Vinayak Chaturthi Dates for the Year 2026",
+      "publisher": "Shree Siddhivinayak Ganapati Temple Trust",
+      "url": "https://www.siddhivinayak.org/important-dates/",
+      "source_class": "official_temple_mumbai_date_and_moonrise_corroboration_not_universal_vidhi",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "maharashtra-tourism-ranjangaon-sankashti",
+      "title": "Ranjangaon Mahaganapati",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/mr/ashtavinayak/ranjangaon/",
+      "source_class": "official_maharashtra_monthly_sankashti_ganesha_prayer_and_moon_observation_context_not_universal_vidhi",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "devam-ganesha-hymn-pack-v1",
+      "title": "Devam source-bounded Shri Ganapatimantraksharavali reading pack",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "derivative_allowed_optional_four_step_ganesha_reading_not_sankashti_vidhi",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "492bafe94124f81de32acee6329b798fe09970eace160bdd1a9db646d5959d2d"
+    },
+    {
+      "source_id": "devam-sankashti-safety-boundary",
+      "title": "Devam fasting, health, moon-viewing, flame, food, and outcome boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_and_scope_boundary_not_ritual_authority",
+      "rights_lane": "derivative_allowed"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "sankashti-chaturthi-west-india-family-en-v1",
+      "language_code": "en",
+      "title": "Monthly Sankashti Chaturthi Ganesha practice",
+      "summary": "A bounded West India family form centred on Ganesha remembrance, one source-addressed optional reading, reflection on an obstacle, and an optional safe moonrise close—without prescribing fasting or promising that an obstacle will disappear.",
+      "family_practice_note": "Ask whether your family observes Sankashti, which monthly name or katha it recognises, whether it prays before or after moonrise, and whether an elder or temple directs fasting, arghya, offerings, food, or the close. Do not start, continue, or break a fast on the app's authority. Ganesh Chaturthi and same-day Karwa Chauth remain separate observances.",
+      "context_prompts": [
+        "Does your family observe monthly Sankashti Chaturthi, and which regional or sampradaya form does it follow?",
+        "Is there a familiar monthly katha, Ganesha prayer, image, arati, or temple that guides the practice?",
+        "Does your family observe the moon, and should Devam calculate moonrise for your exact location?",
+        "Would a material-free, flame-free, food-neutral, or non-fasting form work better today?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "Ganesha remembrance and one next step",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "No material required", "substitutions": ["A quiet place", "Your regular Ganesha image if already present"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Remember Ganesha through the name or short prayer your family already knows, or sit quietly with the idea of meeting obstacles with clarity and steadiness.", "why": "The source-bounded hymn addresses Ganesha through obstacle-related epithets, while Devam does not promise obstacle removal.", "optional": false, "source_ids": ["devam-ganesha-hymn-pack-v1", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 2, "instruction": "Name one real obstacle without exaggerating it, and separate what you can influence from what you cannot control.", "why": "This turns devotion into honest reflection rather than a guaranteed result.", "optional": false, "source_ids": ["devam-ganesha-hymn-pack-v1", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Choose one small, responsible next action and offer the effort with humility.", "why": "The practice becomes useful in daily life while success remains uncertain.", "optional": false, "source_ids": ["devam-sankashti-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Family-known Sankashti remembrance",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "Existing Ganesha image or mental remembrance", "substitutions": ["A family-owned digital image", "No image"], "optional": true},
+            {"item": "Optional familiar flower, durva, fruit, or sweet", "substitutions": ["One suitable item already available", "No offering"], "optional": true},
+            {"item": "Optional safe light", "substitutions": ["Electric lamp", "No light"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm today's resolved Sankashti record and, if relevant to the family close, use Devam's recalculated moonrise for the exact location rather than a city table copied from another place.", "why": "The date and moonrise are location-sensitive; the official Mumbai and practitioner Delhi tables are evidence checks, not universal user timings.", "optional": false, "source_ids": ["devam-sankashti-date-and-practice-fixture", "siddhivinayak-trust-sankashti-dates"]},
+            {"ordinal": 2, "instruction": "Use the family's familiar Ganesha prayer or arati, or choose the optional four-step source-bounded Ganesha reading; do not invent a monthly katha or mantra.", "why": "The retained reading is attributable, but it is not itself a Sankashti vidhi or the only valid Ganesha text.", "optional": false, "source_ids": ["devam-ganesha-hymn-pack-v1", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Offer only familiar, suitable items if desired, then reflect on one obstacle and one ethical next action.", "why": "Maharashtra living practice centres Ganesha prayer, while materials and outcomes should not be universalized.", "optional": false, "source_ids": ["maharashtra-tourism-ranjangaon-sankashti", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 4, "instruction": "If the family safely observes the moon, follow its known close; otherwise close indoors with prayer and the chosen action. The app does not direct starting, continuing, or breaking a fast.", "why": "Moon observation appears in the living practice, but visibility, access, fasting, arghya, food, and the close belong to local and family context.", "optional": false, "source_ids": ["devam-sankashti-date-and-practice-fixture", "maharashtra-tourism-ranjangaon-sankashti", "devam-sankashti-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Established family- or temple-led Sankashti programme",
+          "estimated_minutes": 60,
+          "materials": [
+            {"item": "Only materials named by the established elder or temple", "substitutions": ["Use their approved alternatives", "Join as an observer"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Let the established elder or temple define the monthly name, katha, sankalpa, puja, mantra, offerings, arghya, moon observation, fasting, food, and close.", "why": "The evidence does not authorize Devam to manufacture one West India or all-India Sankashti vidhi.", "optional": false, "source_ids": ["siddhivinayak-trust-sankashti-dates", "maharashtra-tourism-ranjangaon-sankashti", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 2, "instruction": "Keep flame, rooftop or balcony access, night visibility, food, mobility, and crowd safety under responsible adult and venue direction.", "why": "Moonrise participation must remain safe and accessible.", "optional": false, "source_ids": ["devam-sankashti-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Close through the established practice, then carry forward one realistic action related to the obstacle you named.", "why": "This preserves community authority and everyday usefulness without promising success, protection, merit, or obstacle removal.", "optional": false, "source_ids": ["devam-sankashti-safety-boundary"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "sankashti-chaturthi-west-india-family-hi-v1",
+      "language_code": "hi",
+      "title": "मासिक संकष्टी चतुर्थी गणेश साधना",
+      "summary": "पश्चिम भारत का सीमित पारिवारिक रूप—गणेश स्मरण, एक स्रोत-पते वाला वैकल्पिक पाठ, किसी बाधा पर चिंतन और वैकल्पिक सुरक्षित चन्द्रोदय-समापन पर केन्द्रित; उपवास निर्धारित किए बिना और बाधा दूर होने का वादा किए बिना।",
+      "family_practice_note": "पूछें कि क्या परिवार संकष्टी मानता है, कौन-सा मासिक नाम या कथा परिचित है, प्रार्थना चन्द्रोदय से पहले या बाद में होती है, और उपवास, अर्घ्य, अर्पण, भोजन या समापन कौन निर्देशित करता है। ऐप के कहने पर उपवास आरम्भ, जारी या समाप्त न करें। गणेश चतुर्थी और उसी दिन का करवा चौथ अलग पालन हैं।",
+      "context_prompts": [
+        "क्या आपका परिवार मासिक संकष्टी चतुर्थी मानता है, और किस क्षेत्रीय या सम्प्रदायिक रूप में?",
+        "क्या कोई परिचित मासिक कथा, गणेश प्रार्थना, विग्रह, आरती या मार्गदर्शक मंदिर है?",
+        "क्या परिवार चन्द्र-दर्शन करता है, और क्या Devam आपके सटीक स्थान का चन्द्रोदय निकाले?",
+        "क्या आज बिना सामग्री, बिना लौ, भोजन-तटस्थ या बिना उपवास का रूप बेहतर रहेगा?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "गणेश स्मरण और अगला छोटा कदम",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["शान्त स्थान", "पहले से उपस्थित नियमित गणेश-विग्रह"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "परिवार में परिचित गणेश-नाम या छोटी प्रार्थना से स्मरण करें, या बाधाओं का स्पष्टता और स्थिरता से सामना करने के भाव में शान्त बैठें।", "why": "स्रोत-पाठ गणेश को बाधाओं से जुड़े नामों से सम्बोधित करता है, पर Devam बाधा दूर होने का वादा नहीं करता।", "optional": false, "source_ids": ["devam-ganesha-hymn-pack-v1", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 2, "instruction": "एक वास्तविक बाधा का बिना अतिशयोक्ति नाम लें और जो आपके प्रभाव में है उसे अनियंत्रित बातों से अलग करें।", "why": "इससे भक्ति गारंटी के बजाय ईमानदार चिंतन बनती है।", "optional": false, "source_ids": ["devam-ganesha-hymn-pack-v1", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 3, "instruction": "एक छोटा जिम्मेदार अगला काम चुनें और प्रयास को विनम्रता से अर्पित करें।", "why": "सफलता अनिश्चित रखते हुए साधना दैनिक जीवन में उपयोगी बनती है।", "optional": false, "source_ids": ["devam-sankashti-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "परिवार-परिचित संकष्टी स्मरण",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "पहले से उपस्थित गणेश-विग्रह या मानसिक स्मरण", "substitutions": ["परिवार का अपना डिजिटल चित्र", "बिना चित्र"], "optional": true},
+            {"item": "वैकल्पिक परिचित फूल, दूर्वा, फल या मिठाई", "substitutions": ["घर में उपलब्ध एक उपयुक्त वस्तु", "बिना अर्पण"], "optional": true},
+            {"item": "वैकल्पिक सुरक्षित प्रकाश", "substitutions": ["बिजली का दीप", "बिना प्रकाश"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "आज का तय संकष्टी रिकॉर्ड देखें और परिवार के समापन के लिए आवश्यक हो तो किसी दूसरे शहर की तालिका के बजाय Devam से सटीक स्थान का चन्द्रोदय लें।", "why": "तिथि और चन्द्रोदय स्थान-संवेदी हैं; मुंबई और दिल्ली की तालिकाएँ साक्ष्य-जाँच हैं, सार्वभौमिक समय नहीं।", "optional": false, "source_ids": ["devam-sankashti-date-and-practice-fixture", "siddhivinayak-trust-sankashti-dates"]},
+            {"ordinal": 2, "instruction": "परिवार की परिचित गणेश प्रार्थना या आरती लें, या वैकल्पिक चार-चरण स्रोत-पाठ चुनें; मासिक कथा या मन्त्र न गढ़ें।", "why": "सुरक्षित पाठ उत्तरदायी है, पर वह स्वयं संकष्टी विधि या एकमात्र गणेश-पाठ नहीं है।", "optional": false, "source_ids": ["devam-ganesha-hymn-pack-v1", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 3, "instruction": "इच्छा हो तो केवल परिचित और उपयुक्त वस्तु अर्पित करें, फिर एक बाधा और एक नैतिक अगले काम पर विचार करें।", "why": "महाराष्ट्र की जीवन्त परम्परा गणेश-प्रार्थना को केन्द्र में रखती है; सामग्री और फल सार्वभौमिक नहीं किए जाने चाहिए।", "optional": false, "source_ids": ["maharashtra-tourism-ranjangaon-sankashti", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 4, "instruction": "परिवार सुरक्षित चन्द्र-दर्शन करता हो तो उसकी जानी हुई रीति से समापन करें; अन्यथा घर में प्रार्थना और चुने काम से समापन पर्याप्त है। ऐप उपवास आरम्भ, जारी या समाप्त नहीं कराता।", "why": "जीवन्त परम्परा में चन्द्र-दर्शन मिलता है, पर दृश्यता, पहुँच, उपवास, अर्घ्य, भोजन और समापन स्थानीय तथा पारिवारिक विषय हैं।", "optional": false, "source_ids": ["devam-sankashti-date-and-practice-fixture", "maharashtra-tourism-ranjangaon-sankashti", "devam-sankashti-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "स्थापित परिवार या मंदिर-नेतृत्व वाला संकष्टी कार्यक्रम",
+          "estimated_minutes": 60,
+          "materials": [
+            {"item": "केवल स्थापित बुज़ुर्ग या मंदिर द्वारा बताई सामग्री", "substitutions": ["उनके स्वीकृत विकल्प", "दर्शक के रूप में जुड़ें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "मासिक नाम, कथा, संकल्प, पूजा, मन्त्र, अर्पण, अर्घ्य, चन्द्र-दर्शन, उपवास, भोजन और समापन स्थापित बुज़ुर्ग या मंदिर को तय करने दें।", "why": "साक्ष्य Devam को एक पश्चिम भारतीय या सर्वभारतीय संकष्टी विधि गढ़ने का अधिकार नहीं देता।", "optional": false, "source_ids": ["siddhivinayak-trust-sankashti-dates", "maharashtra-tourism-ranjangaon-sankashti", "devam-sankashti-safety-boundary"]},
+            {"ordinal": 2, "instruction": "लौ, छत या बालकनी, रात की दृश्यता, भोजन, चलने-फिरने और भीड़ की सुरक्षा जिम्मेदार वयस्क और स्थल के निर्देशन में रखें।", "why": "चन्द्रोदय सहभागिता सुरक्षित और सुगम रहनी चाहिए।", "optional": false, "source_ids": ["devam-sankashti-safety-boundary"]},
+            {"ordinal": 3, "instruction": "स्थापित रीति से समापन करके नामित बाधा से जुड़ा एक यथार्थ काम जारी रखें।", "why": "इससे समुदाय का अधिकार और दैनिक उपयोगिता रहती है, बिना सफलता, सुरक्षा, पुण्य या बाधा-निवारण की गारंटी के।", "optional": false, "source_ids": ["devam-sankashti-safety-boundary"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "four_launch_month_observance_slugs_supported": true,
+    "source_bounded_ganesha_companion_reading_included": true,
+    "material_free_and_flame_free_fallback_supported": true,
+    "runtime_location_specific_moonrise_used": true,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "medical_or_dietary_advice_given": false,
+    "provider_city_moonrise_reused_for_user_location": false,
+    "one_monthly_name_katha_or_puja_sequence_universalized": false,
+    "moon_sighting_temple_visit_offering_mantra_arghya_or_food_required": false,
+    "obstacle_removal_success_protection_merit_or_other_outcome_guaranteed": false,
+    "ganesh_chaturthi_or_karwa_chauth_merged": false,
+    "all_regional_family_temple_and_sampradaya_variants_complete": false
+  }
+}

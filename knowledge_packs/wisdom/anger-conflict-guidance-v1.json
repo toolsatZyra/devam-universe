@@ -1,0 +1,136 @@
+{
+  "bundle_id": "anger-conflict-guidance-v1",
+  "contract": "DEVAM_SARTHI_REVIEWED_PERSONAL_GUIDANCE_V1",
+  "denials": {
+    "anger_proves_bad_character": false,
+    "compassion_requires_access_or_reconciliation": false,
+    "complete_bhagavadgita_tradition": false,
+    "harmed_person_is_responsible_for_abuse": false,
+    "one_commentary_is_universal": false,
+    "private_commentary_text_may_be_quoted": false,
+    "safety_or_professional_help_is_replaced": false,
+    "scripture_diagnoses_emotion_or_mental_health": false
+  },
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "positive_boundary": "Sarthi may use these reviewed principles to help a user notice escalation, pause, choose one stabilizing action, communicate carefully, and retain boundaries. They do not diagnose, command reconciliation, or replace human help.",
+  "principles": [
+    {
+      "application_boundary": "The passage does not prove one psychological mechanism for every person or justify blaming someone for an emotional response.",
+      "byte_end_exclusive": 309733,
+      "byte_start": 306053,
+      "en": "Repeated attention can feed attachment, frustrated desire, anger, confusion, and poorer judgment. Treat this as a warning map to notice early, not as a diagnosis or a verdict about your character.",
+      "hi": "बार-बार उसी बात पर टिके रहने से आसक्ति, बाधित इच्छा, क्रोध, भ्रम और निर्णय-क्षमता में कमी की शृंखला बन सकती है। इसे समय रहते पहचानने का संकेत मानें—न निदान, न आपके चरित्र पर फैसला।",
+      "line_end": 2937,
+      "line_start": 2913,
+      "literal_marker": "BhG 2.62-63",
+      "principle_id": "notice-the-escalation-chain",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 91,
+      "span_sha256": "217401c55f988f461182e300c93bcd6e71b41a9e2934caee5c5d093ec1cad7df"
+    },
+    {
+      "application_boundary": "This lens never transfers responsibility for abuse or coercion to the harmed person and never replaces qualified or emergency help.",
+      "byte_end_exclusive": 735347,
+      "byte_start": 733139,
+      "en": "Choose one action within your control that steadies rather than degrades the situation. Self-direction here means agency and practice, not self-blame or handling danger alone.",
+      "hi": "अपने नियंत्रण में ऐसा एक कदम चुनें जो परिस्थिति को बिगाड़ने के बजाय स्थिर करे। यहाँ आत्म-दिशा का अर्थ अपनी क्षमता और अभ्यास है—आत्म-दोष या खतरे को अकेले सहना नहीं।",
+      "line_end": 6403,
+      "line_start": 6382,
+      "literal_marker": "BhG 6.5",
+      "principle_id": "take-one-self-directed-step",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 217,
+      "span_sha256": "aeb25125bcfc8c4bb46a7f92402eadf76ead5d95f8ced16a7f4e1077ead44839"
+    },
+    {
+      "application_boundary": "Compassion is not permission for repeated harm, silence about material facts, or forced reconciliation.",
+      "byte_end_exclusive": 1499426,
+      "byte_start": 1492050,
+      "en": "Non-hatred, friendliness, compassion, steadiness, and restraint can guide the manner of a response without requiring agreement, access, reconciliation, or the abandonment of boundaries.",
+      "hi": "अद्वेष, मैत्री, करुणा, स्थिरता और संयम प्रतिक्रिया के ढंग को दिशा दे सकते हैं; इनका अर्थ सहमति, निकटता, मेल-मिलाप या अपनी सीमाएँ छोड़ना नहीं है।",
+      "line_end": 12703,
+      "line_start": 12640,
+      "literal_marker": "BhG 12.13-14",
+      "principle_id": "compassion-with-boundaries",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 444,
+      "span_sha256": "521b1a63e04298be46edf0054bcad04679a70d1aad3b99fff55434c99d19873d"
+    }
+  ],
+  "review_status": "internal_beta_reviewed",
+  "routes": [
+    {
+      "match_concepts": [
+        "anger",
+        "angry",
+        "temper",
+        "rage",
+        "fight",
+        "argument",
+        "conflict",
+        "क्रोध",
+        "गुस्सा",
+        "झगड़ा",
+        "बहस"
+      ],
+      "principle_ids": [
+        "notice-the-escalation-chain",
+        "take-one-self-directed-step",
+        "compassion-with-boundaries"
+      ],
+      "required_context": [
+        "whether anyone is in immediate danger",
+        "who is involved",
+        "what tends to happen immediately before escalation",
+        "what outcome the user wants"
+      ],
+      "response_moves": {
+        "en": [
+          "Check immediate safety before reflection.",
+          "Name the earliest observable escalation cue without moralising it.",
+          "Choose one short pause or separation step that does not hide material facts.",
+          "Return to the conversation only with a concrete purpose and boundary."
+        ],
+        "hi": [
+          "विचार से पहले तत्काल सुरक्षा जाँचें।",
+          "नैतिक फैसला सुनाए बिना बढ़ते तनाव का सबसे पहला दिखाई देने वाला संकेत पहचानें।",
+          "ऐसा छोटा विराम या दूरी चुनें जो जरूरी तथ्य न छिपाए।",
+          "स्पष्ट उद्देश्य और सीमा के साथ ही बातचीत पर लौटें।"
+        ]
+      },
+      "route_id": "recurring-anger-conflict"
+    }
+  ],
+  "scope": "A bounded conversation route for recurring anger or escalating interpersonal conflict after immediate danger has been excluded.",
+  "sources": [
+    {
+      "byte_count": 2056476,
+      "edition_title": "GRETIL TEI conversion dated 2020-07-31",
+      "ingestion_packet_sha256": "86eecb307effc8fb03c32888596f2b0c3538e325d41fa92c5281e9e9de3974f3",
+      "ingestion_plan": "ingestion/plans/bhagavadgita-gretil-four-commentaries-v1.json",
+      "rights_boundary": "CC BY-NC-SA 4.0 electronic carrier retained as private evidence; no exact source or commentary text is exposed by this bundle.",
+      "rights_lane": "citation_only",
+      "sha256": "e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_object_id": "sha256:e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505",
+      "source_path": "source_vault/objects/sha256/e1/e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505",
+      "work_title": "Bhagavadgita with four named commentary layers"
+    },
+    {
+      "edition_title": "IIT Kanpur Gita Supersite verse pages",
+      "rights_boundary": "External verse-identity and comparison reference only; modern translations are not copied.",
+      "rights_lane": "citation_only",
+      "source_id": "gita-supersite-verse-identity",
+      "source_object_id": "external:gitasupersite",
+      "urls": [
+        "https://www.gitasupersite.iitk.ac.in/srimad?field_chapter_value=2&field_nsutra_value=62&language=dv",
+        "https://www.gitasupersite.iitk.ac.in/srimad?field_chapter_value=6&field_nsutra_value=5&language=dv",
+        "https://www.gitasupersite.iitk.ac.in/srimad?field_chapter_value=12&field_nsutra_value=13&language=dv"
+      ],
+      "work_title": "Srimad Bhagavadgita"
+    }
+  ]
+}

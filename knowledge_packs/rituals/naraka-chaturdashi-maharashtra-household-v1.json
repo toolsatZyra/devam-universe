@@ -1,0 +1,97 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-naraka-chaturdashi-maharashtra-household-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "naraka-chaturdashi",
+  "scope": {
+    "region_codes": ["west-india"],
+    "tradition_codes": ["smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "mumbai_2026_date_fixture_required": true,
+    "maharashtra_naraka_abhyanga_household_only": true,
+    "family_custom_overrides_generic_sequence": true,
+    "oil_and_ubtan_optional_and_suitability_dependent": true,
+    "kali_chaudas_and_tamil_deepavali_not_merged": true
+  },
+  "sources": [
+    {"source_id": "devam-naraka-date-fixture", "title": "Devam Naraka Chaturdashi Mumbai 2026 date evidence fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_location_specific_date_and_window_fixture", "rights_lane": "derivative_allowed", "artifact_sha256": "adf5c3d43e6f2fb19ef3ecc75fc92d2cfc671105c2eed87edda11872d34a33a5"},
+    {"source_id": "drik-abhyang-snan-mumbai-2026", "title": "2026 Abhyang Snan on Narak Chaturdashi for Mumbai", "publisher": "Drik Panchang", "url": "https://www.drikpanchang.com/festivals/abhyangsnan/festivals-abhyangsnan-timings.html?geoname-id=1275339&year=2026", "source_class": "current_practitioner_identity_date_and_regional_window_reference", "rights_lane": "reference_only"},
+    {"source_id": "maharashtra-tourism-diwali-narak", "title": "Diwali", "publisher": "Department of Tourism, Government of Maharashtra", "url": "https://maharashtratourism.gov.in/festivals/diwali/", "source_class": "official_maharashtra_sequence_and_identity_context", "rights_lane": "reference_only"},
+    {"source_id": "maharashtra-gazetteers-naraka-context", "title": "Greater Bombay and Poona Gazetteer Naraka Chaturdashi accounts", "publisher": "Maharashtra State Gazetteers", "url": "https://gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/greater_bombay/people.html", "source_class": "official_historical_context_search_extraction_not_current_procedure_authority", "rights_lane": "reference_only", "access_boundary": {"normal_tls_fetch_failed_closed": true, "failure": "CERT_HAS_EXPIRED", "raw_bytes_retained": false, "search_provider_text_extraction_only": true}},
+    {"source_id": "devam-naraka-household-safety-boundary", "title": "Devam Naraka Chaturdashi bathing, flame, fireworks, food, and regional boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_scope_boundary_not_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "naraka-chaturdashi-maharashtra-household-en-v1",
+      "language_code": "en",
+      "title": "Maharashtra Naraka Chaturdashi morning",
+      "summary": "Use the resolved local moonrise-to-sunrise window for a safe family-led bath and remembrance of Krishna's victory over Narakasura. Oil, ubtan, karita, new clothes, fireworks, and a particular food are not requirements. Follow the household's known form and use a normal bath whenever oil, an early bath, or slippery flooring is unsuitable.",
+      "family_practice_note": "Tell Sarthi whether your family calls this Naraka Chaturdashi, Choti Diwali, or Abhyanga Snan; whether an elder applies oil or ubtan; and which prayer, story, food, clothing, or karita custom it actually keeps. Kali Chaudas and Tamil Deepavali are separate lanes.",
+      "context_prompts": ["Does your family keep a Maharashtra Abhyanga Snan on this morning?", "Who leads the bath or blessing, and is oil or ubtan customary and safe for everyone?", "Which Krishna-Narakasura remembrance, prayer, food, clothing, or karita custom is actually known at home?", "Do you need an oil-free, flame-free, food-free, spend-free, child-safe, mobility-safe, or later-morning form?"],
+      "tiers": [
+        {"tier": "minimum", "label": "Safe bath and short remembrance", "estimated_minutes": 10, "materials": [{"item": "A safe bathing space and clean clothes", "substitutions": ["Use an ordinary shower or wash at a safe time if the early window is unsuitable"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Use Today’s locally recalculated Maharashtra moonrise-to-sunrise window; do not copy a provider time for another place.", "why": "The bounded rule is location-aware and distinct from Kali Chaudas and Tamil Deepavali.", "optional": false, "source_ids": ["devam-naraka-date-fixture", "drik-abhyang-snan-mumbai-2026"]},
+          {"ordinal": 2, "instruction": "Make the floor and water safe, then take a normal bath; use a small amount of familiar oil or ubtan only when customary, suitable, and easy to remove.", "why": "The early bath is the bounded Maharashtra core, while oil and mixtures are not safe or appropriate for everyone.", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Wear clean clothes and keep a short family-known prayer, story, or quiet reflection on Krishna’s victory over Narakasura and the choice to overcome harmful conduct.", "why": "This preserves the attributable narrative without inventing a formal mantra or promised result.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-narak", "maharashtra-gazetteers-naraka-context"]}
+        ]},
+        {"tier": "standard", "label": "Family Abhyanga Snan morning", "estimated_minutes": 25, "materials": [{"item": "Only the family’s familiar and safe bath materials, clothes, prayer, and breakfast", "substitutions": ["Use the minimum ordinary-bath form with no oil, mixture, special clothing, flame, or food"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Ask an elder or the usual household lead which parts of Abhyanga Snan the family actually keeps and which should be omitted for children, skin sensitivity, pregnancy, illness, disability, or fall risk.", "why": "A historical regional account is not medical advice or one universal household checklist.", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Follow that safe bathing and blessing sequence, keeping oil, ubtan, karita, lamps, food, and new clothes optional rather than devotional requirements.", "why": "Family attribution and suitability take priority over copying every recorded custom.", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Close with the household’s familiar prayer or Narakasura remembrance, greet family, and share the food already prepared without fireworks or a promised spiritual or material outcome.", "why": "The day remains meaningful without unsafe noise, purchase pressure, or guaranteed claims.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-narak", "devam-naraka-household-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "Established elder-led household form", "estimated_minutes": 60, "materials": [{"item": "Only materials and readings recognised by the family or established guide", "substitutions": ["Use the standard or minimum form rather than improvising missing rites"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Let the family elder or recognised guide lead the known sequence and explain which elements belong specifically to this Maharashtra household.", "why": "The elaborate form depends on living family transmission, not a generic app reconstruction.", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Use only safe, familiar substances and supervised lights; never create a slippery floor, apply unknown mixtures, force participation, or use firecrackers as a ritual requirement.", "why": "Physical safety and consent are non-negotiable boundaries.", "optional": false, "source_ids": ["devam-naraka-household-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Complete the family prayer, story, meal, greetings, and cleanup, while leaving Kali Chaudas and Tamil Deepavali practices to their own guides.", "why": "A coherent Maharashtra household close does not erase adjacent regional traditions.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-narak", "devam-naraka-household-safety-boundary"]}
+        ]}
+      ]
+    },
+    {
+      "guide_id": "naraka-chaturdashi-maharashtra-household-hi-v1",
+      "language_code": "hi",
+      "title": "महाराष्ट्र नरक चतुर्दशी की सुबह",
+      "summary": "निर्धारित स्थानीय चन्द्रोदय-से-सूर्योदय सीमा में सुरक्षित पारिवारिक स्नान और श्रीकृष्ण की नरकासुर-विजय का स्मरण रखें। तेल, उबटन, करीत, नए वस्त्र, पटाखे और कोई विशेष भोजन अनिवार्य नहीं हैं। घर की परिचित रीति मानें और तेल, जल्दी स्नान या फिसलन अनुपयुक्त हो तो सामान्य सुरक्षित स्नान करें।",
+      "family_practice_note": "सार्थी को बताएँ कि परिवार इसे नरक चतुर्दशी, छोटी दिवाली या अभ्यंग स्नान में किस नाम से मानता है; क्या बुज़ुर्ग तेल या उबटन लगाते हैं; और कौन-सी प्रार्थना, कथा, भोजन, वस्त्र या करीत-रीति वास्तव में परिचित है। काली चौदस और तमिल दीपावली अलग हैं।",
+      "context_prompts": ["क्या परिवार इस सुबह महाराष्ट्र का अभ्यंग स्नान करता है?", "नेतृत्व कौन करता है और क्या तेल या उबटन सबके लिए परिचित तथा सुरक्षित है?", "घर में कौन-सी कृष्ण-नरकासुर कथा, प्रार्थना, भोजन, वस्त्र या करीत-रीति परिचित है?", "क्या आपको बिना तेल, बिना लौ, बिना विशेष भोजन, बिना खर्च, बच्चों, गतिशीलता या देर से स्नान का सुरक्षित रूप चाहिए?"],
+      "tiers": [
+        {"tier": "minimum", "label": "सुरक्षित स्नान और छोटा स्मरण", "estimated_minutes": 10, "materials": [{"item": "सुरक्षित स्नान-स्थान और स्वच्छ वस्त्र", "substitutions": ["जल्दी स्नान अनुपयुक्त हो तो सुरक्षित समय पर सामान्य स्नान करें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Today में स्थानीय रूप से पुनर्गणित महाराष्ट्र चन्द्रोदय-से-सूर्योदय सीमा लें; दूसरे स्थान का समय न अपनाएँ।", "why": "यह नियम स्थान-विशिष्ट है और काली चौदस तथा तमिल दीपावली से अलग है।", "optional": false, "source_ids": ["devam-naraka-date-fixture", "drik-abhyang-snan-mumbai-2026"]},
+          {"ordinal": 2, "instruction": "फर्श और पानी सुरक्षित करके सामान्य स्नान करें; परिचित तेल या उबटन तभी थोड़ा लगाएँ जब वह प्रचलित, उपयुक्त और आसानी से धुलने वाला हो।", "why": "प्रातः स्नान सीमित महाराष्ट्र केन्द्र है, पर तेल और मिश्रण सबके लिए सुरक्षित नहीं।", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 3, "instruction": "स्वच्छ वस्त्र पहनकर श्रीकृष्ण की नरकासुर-विजय और हानिकारक आचरण पर विजय के लिए छोटी परिचित प्रार्थना, कथा या मौन रखें।", "why": "इससे औपचारिक मंत्र या निश्चित फल गढ़े बिना परिचित कथा बचती है।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-narak", "maharashtra-gazetteers-naraka-context"]}
+        ]},
+        {"tier": "standard", "label": "पारिवारिक अभ्यंग स्नान", "estimated_minutes": 25, "materials": [{"item": "केवल परिवार की परिचित सुरक्षित स्नान-सामग्री, वस्त्र, प्रार्थना और नाश्ता", "substitutions": ["बिना तेल, मिश्रण, विशेष वस्त्र, लौ या भोजन का सरल रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "बुज़ुर्ग या सामान्य नेतृत्वकर्ता से पूछें कि घर अभ्यंग स्नान के कौन-से भाग रखता है और बच्चों, त्वचा-संवेदनशीलता, गर्भावस्था, बीमारी, दिव्यांगता या गिरने के जोखिम में क्या छोड़ा जाए।", "why": "ऐतिहासिक क्षेत्रीय विवरण चिकित्सा सलाह या सार्वभौमिक सूची नहीं है।", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 2, "instruction": "सुरक्षित पारिवारिक स्नान और आशीर्वाद क्रम रखें; तेल, उबटन, करीत, दीप, भोजन और नए वस्त्र को वैकल्पिक मानें।", "why": "हर दर्ज रीति की नकल से अधिक परिवार और उपयुक्तता महत्त्वपूर्ण हैं।", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 3, "instruction": "परिचित प्रार्थना या नरकासुर स्मरण, पारिवारिक अभिवादन और पहले से बना भोजन रखें; पटाखे या निश्चित फल न जोड़ें।", "why": "असुरक्षित शोर, खरीद या गारंटी के बिना भी दिन अर्थपूर्ण है।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-narak", "devam-naraka-household-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "स्थापित बुज़ुर्ग-नेतृत्व वाला गृह-रूप", "estimated_minutes": 60, "materials": [{"item": "केवल परिवार या स्थापित मार्गदर्शक की मान्य सामग्री और पाठ", "substitutions": ["अनुपलब्ध विधि गढ़ने की जगह मानक या सरल रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "परिवार के बुज़ुर्ग या मान्य मार्गदर्शक को परिचित क्रम चलाने और महाराष्ट्र के इस घर के विशेष तत्व समझाने दें।", "why": "विस्तृत रूप जीवित पारिवारिक परम्परा पर निर्भर है, ऐप की कल्पना पर नहीं।", "optional": false, "source_ids": ["maharashtra-gazetteers-naraka-context", "devam-naraka-household-safety-boundary"]},
+          {"ordinal": 2, "instruction": "केवल सुरक्षित परिचित पदार्थ और देखरेख वाला प्रकाश लें; फर्श फिसलन वाला न बनाएँ, अज्ञात मिश्रण न लगाएँ, किसी को बाध्य न करें और पटाखों को अनुष्ठान न मानें।", "why": "शारीरिक सुरक्षा और सहमति अनिवार्य सीमाएँ हैं।", "optional": false, "source_ids": ["devam-naraka-household-safety-boundary"]},
+          {"ordinal": 3, "instruction": "प्रार्थना, कथा, भोजन, अभिवादन और सफाई पूरी करें; काली चौदस और तमिल दीपावली को अलग मार्गदर्शनों में रखें।", "why": "महाराष्ट्र गृह-समापन अन्य क्षेत्रीय परम्पराओं को मिटाता नहीं।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-narak", "devam-naraka-household-safety-boundary"]}
+        ]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "maharashtra_early_bath_and_narakasura_remembrance_supported": true,
+    "normal_safe_bath_fallback_supported": true,
+    "formal_priest_mantras_included": false,
+    "historical_prescriptions_promoted_as_universal_norms": false,
+    "sesame_oil_or_ubtan_required_for_everyone": false,
+    "karita_crushing_required": false,
+    "fireworks_required_or_recommended": false,
+    "new_clothes_or_purchase_required": false,
+    "medical_or_dermatological_advice_given": false,
+    "fast_or_specific_food_prescribed": false,
+    "real_flame_required": false,
+    "guaranteed_avoidance_of_naraka_or_other_outcome_claimed": false,
+    "kali_chaudas_merged_or_completed": false,
+    "tamil_deepavali_merged_or_completed": false,
+    "one_universal_indian_procedure_claimed": false,
+    "all_maharashtra_family_variants_complete": false
+  }
+}

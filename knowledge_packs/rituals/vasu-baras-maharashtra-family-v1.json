@@ -1,0 +1,97 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-vasu-baras-maharashtra-family-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "govatsa-dwadashi",
+  "scope": {
+    "region_codes": ["west-india"],
+    "tradition_codes": ["smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "mumbai_2026_date_fixture_required": true,
+    "maharashtra_vasu_baras_family_participation_only": true,
+    "no_animal_contact_default": true,
+    "animal_keeper_authority_required_for_any_live_animal_interaction": true,
+    "regional_variants_not_merged": true
+  },
+  "sources": [
+    {"source_id": "devam-vasu-baras-date-fixture", "title": "Devam Vasu Baras Mumbai 2026 date evidence fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_calendar_crosswalk", "rights_lane": "derivative_allowed", "artifact_sha256": "901142c4c16503ac46125420b8788fa7585600d60a9c1ec07a18c6e3a15d9ea6"},
+    {"source_id": "maharashtra-tourism-diwali-vasubaras", "title": "Diwali - pre-celebrations start from Vasubaras", "publisher": "Department of Tourism, Government of Maharashtra", "url": "https://maharashtratourism.gov.in/festivals/diwali/", "source_class": "official_maharashtra_vasubaras_pre_diwali_identity_and_regional_diversity", "rights_lane": "reference_only", "observed_fetch": {"status": 200, "final_url": "https://maharashtratourism.gov.in/festivals/diwali/", "response_bytes": 627482, "response_sha256": "60e1cf513e43ca1654427a6817aea16886d14445434a1ad02f9459e7dfd8af08", "strict_utf8": true}, "observed_literals": {"pre_celebrations_start_from_vasubaras": true, "regional_diversity_explicit": true}},
+    {"source_id": "ansi-rural-livestock-markets-vasubaras", "title": "Rural Livestock Markets in India: Chandur Bazar Bail Bazar, Amravati, Maharashtra", "publisher": "Anthropological Survey of India, Central Regional Centre", "url": "https://ansi.gov.in/wp-content/uploads/2025/03/Rural-Livestock-Markets-in-India-A-Report-on-Chandur-Bazar-Bail-Bazar-Amravati-Maharashtra.pdf", "source_class": "official_current_vidarbha_field_report_identity_gratitude_and_agrarian_practice_context", "rights_lane": "reference_only", "provider_document_observation": {"content_type": "application/pdf", "page_count": 184, "relevant_pdf_pages": [108, 109], "vasubaras_maharashtra_and_diwali_opening": true, "gratitude_to_cows_and_agricultural_role": true, "farmer_interviews_and_practice_description": true}, "access_boundary": {"normal_tls_direct_fetch_status": 403, "raw_pdf_bytes_retained": false, "visual_render_completed": false, "search_provider_text_extraction_only": true}},
+    {"source_id": "devam-vasu-baras-animal-welfare-and-scope-boundary", "title": "Devam Vasu Baras animal welfare, food, flame, spending, and regional boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_and_scope_boundary_not_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "vasu-baras-maharashtra-family-en-v1",
+      "language_code": "en",
+      "title": "Vasu Baras: gratitude without unsafe animal contact",
+      "summary": "Mark Maharashtra's Vasu Baras as a prelude to Diwali by remembering cows, calves, agricultural livelihoods, nourishment, and responsible care. The default form requires no live animal. Any visit, touch, feeding, washing, decoration, or ritual around cattle belongs to the animal's owner or trained keeper and the family's established practice.",
+      "family_practice_note": "Tell Sarthi whether your family calls this Vasu Baras or Govatsa Dwadashi, whether it lives with cattle, visits a known gaushala or farm, or observes at home, and who normally leads. Gujarat Wagh Baras, Bachha Baras, Guru Dwadashi, Nandini Vrat, and other regional forms remain separate.",
+      "context_prompts": ["Does your family call the day Vasu Baras or Govatsa Dwadashi?", "Do you observe at home, with your own cattle, at a known farm or gaushala, or not around animals?", "Who owns or cares for any animal involved, and what interaction do they permit?", "Do you need a no-contact, flame-free, food-free, spend-free, child-safe, or remote form?"],
+      "tiers": [
+        {"tier": "minimum", "label": "No-contact gratitude for care and nourishment", "estimated_minutes": 10, "materials": [{"item": "A quiet place, or an optional family image of cattle or farming", "substitutions": ["Use no object and keep the reflection spoken or silent"], "optional": true}], "steps": [
+          {"ordinal": 1, "instruction": "Use the resolved Maharashtra Vasu Baras date and keep other Dwadashi, Wagh Baras, and regional cattle traditions outside this sequence.", "why": "A shared name or tithi does not make every regional observance identical.", "optional": false, "source_ids": ["devam-vasu-baras-date-fixture", "maharashtra-tourism-diwali-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 2, "instruction": "Offer a short family-known prayer, thanks, or quiet reflection for cows, calves, farmers, animal caregivers, nourishment, and responsible care.", "why": "The Maharashtra sources identify Vasu Baras with Diwali's opening and gratitude toward cattle and agricultural life.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-vasubaras", "ansi-rural-livestock-markets-vasubaras"]},
+          {"ordinal": 3, "instruction": "Name one practical act of care—such as reducing food waste, thanking a farmer or caregiver, or learning the rules of a trusted animal-welfare organisation—without buying, feeding, touching, or approaching an animal for the ritual.", "why": "The reflection becomes actionable while the no-contact default protects both people and animals.", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]}
+        ]},
+        {"tier": "standard", "label": "A family Vasu Baras reflection", "estimated_minutes": 25, "materials": [{"item": "Only a family-recognised story, prayer, image, and safe light", "substitutions": ["Use the minimum form; a flower, flame-free light, or no object is sufficient"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Ask the family elder or usual lead how the household understands Vasu Baras and whether it has an established prayer or story.", "why": "The official field report describes a bounded agrarian community context, not one universal household procedure.", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 2, "instruction": "Keep the family's familiar remembrance and discuss how cattle, farmers, soil care, food, and livelihoods are connected; use a supervised light away from animals only if desired.", "why": "This preserves the gratitude theme without copying livestock-handling details into an urban or unfamiliar setting.", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 3, "instruction": "Choose one non-transactional act of gratitude or responsible consumption, and close without claiming that a diet, fast, purchase, or ritual guarantees prosperity.", "why": "Care and gratitude do not require spending, food restriction, or a promised result.", "optional": false, "source_ids": ["devam-vasu-baras-animal-welfare-and-scope-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "Established keeper-led family or community observance", "estimated_minutes": 60, "materials": [{"item": "Only materials approved by the animal owner, trained keeper, and recognised family or community guide", "substitutions": ["Observe from a safe distance or use the standard no-contact form"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "If joining an established farm, gaushala, temple, or household event, let the owner or trained keeper control access, distance, touch, food, animal movement, and the decision to stop.", "why": "Live-animal welfare and keeper authority take priority over reproducing a ritual checklist.", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 2, "instruction": "Do not independently feed, wash, restrain, paint, decorate, light a flame near, photograph closely, buy, sell, or gift cattle; participate only in the safe family or community role assigned to you.", "why": "The field report records local practices but does not make an app user competent or authorised to handle an animal.", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 3, "instruction": "Complete the recognised prayer or gratitude, leave the animal undisturbed, close any supervised light, clean the human gathering area, and follow the keeper's exit instructions.", "why": "A safe close respects the living participant rather than treating the animal as a ritual prop.", "optional": false, "source_ids": ["devam-vasu-baras-animal-welfare-and-scope-boundary"]}
+        ]}
+      ]
+    },
+    {
+      "guide_id": "vasu-baras-maharashtra-family-hi-v1",
+      "language_code": "hi",
+      "title": "वसुबारस: पशु-सुरक्षित कृतज्ञता",
+      "summary": "महाराष्ट्र की वसुबारस को दीपावली की पूर्वपीठिका के रूप में गायों, बछड़ों, कृषि-जीविका, पोषण और उत्तरदायी देखभाल के स्मरण से मानें। सरल रूप में जीवित पशु की आवश्यकता नहीं है। पशु के पास जाना, छूना, खिलाना, नहलाना, सजाना या उसके निकट पूजा करना केवल मालिक या प्रशिक्षित देखभालकर्ता और स्थापित पारिवारिक रीति के अधीन है।",
+      "family_practice_note": "सार्थी को बताएँ कि परिवार इसे वसुबारस या गोवत्स द्वादशी में किस नाम से मानता है, क्या अपने पशु हैं, परिचित गोशाला या खेत में जाते हैं, अथवा घर पर मानते हैं, और नेतृत्व कौन करता है। गुजरात वाघ बारस, बछ बारस, गुरु द्वादशी, नन्दिनी व्रत और अन्य क्षेत्रीय रूप अलग हैं।",
+      "context_prompts": ["आपका परिवार इसे वसुबारस कहता है या गोवत्स द्वादशी?", "आप घर पर, अपने पशुओं के साथ, परिचित खेत या गोशाला में, या बिना पशु के मानते हैं?", "शामिल पशु का मालिक या देखभालकर्ता कौन है और वह कौन-सा सम्पर्क स्वीकार करता है?", "क्या आपको बिना सम्पर्क, बिना लौ, बिना भोजन, बिना खर्च, बच्चों के लिए सुरक्षित या दूरस्थ रूप चाहिए?"],
+      "tiers": [
+        {"tier": "minimum", "label": "देखभाल और पोषण के लिए बिना सम्पर्क कृतज्ञता", "estimated_minutes": 10, "materials": [{"item": "शान्त स्थान या पशु और खेती का वैकल्पिक पारिवारिक चित्र", "substitutions": ["बिना वस्तु के बोलकर या मौन मनन करें"], "optional": true}], "steps": [
+          {"ordinal": 1, "instruction": "महाराष्ट्र के लिए निर्धारित वसुबारस तिथि लें और अन्य द्वादशी, वाघ बारस तथा क्षेत्रीय पशु-परम्पराओं को इस क्रम में न मिलाएँ।", "why": "साझा नाम या तिथि से हर क्षेत्रीय पालन एक नहीं हो जाता।", "optional": false, "source_ids": ["devam-vasu-baras-date-fixture", "maharashtra-tourism-diwali-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 2, "instruction": "गायों, बछड़ों, किसानों, पशु-देखभालकर्ताओं, पोषण और उत्तरदायी देखभाल के लिए छोटी परिचित प्रार्थना, धन्यवाद या मौन रखें।", "why": "महाराष्ट्र स्रोत वसुबारस को दीपावली के आरम्भ और पशु-कृषि जीवन के प्रति कृतज्ञता से जोड़ते हैं।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-vasubaras", "ansi-rural-livestock-markets-vasubaras"]},
+          {"ordinal": 3, "instruction": "देखभाल का एक व्यावहारिक काम चुनें—जैसे भोजन की बर्बादी घटाना, किसान या देखभालकर्ता को धन्यवाद देना, या विश्वसनीय पशु-कल्याण संस्था के नियम जानना—पर अनुष्ठान के लिए पशु को खरीदें, खिलाएँ, छुएँ या उसके पास न जाएँ।", "why": "कृतज्ञता उपयोगी बनती है और बिना सम्पर्क का रूप मनुष्य तथा पशु दोनों को सुरक्षित रखता है।", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]}
+        ]},
+        {"tier": "standard", "label": "पारिवारिक वसुबारस मनन", "estimated_minutes": 25, "materials": [{"item": "केवल परिवार की परिचित कथा, प्रार्थना, चित्र और सुरक्षित प्रकाश", "substitutions": ["सरल रूप लें; फूल, बिना लौ का प्रकाश या कोई वस्तु न होना पर्याप्त है"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "परिवार के बुज़ुर्ग या सामान्य नेतृत्वकर्ता से पूछें कि घर वसुबारस को कैसे समझता है और क्या कोई स्थापित प्रार्थना या कथा है।", "why": "आधिकारिक क्षेत्र-अध्ययन सीमित कृषि-समुदाय का सन्दर्भ देता है, एक सार्वभौमिक गृह-विधि नहीं।", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 2, "instruction": "परिचित स्मरण रखें और चर्चा करें कि पशु, किसान, मिट्टी की देखभाल, भोजन और जीविका कैसे जुड़े हैं; इच्छा हो तो पशुओं से दूर निरन्तर देखरेख वाला प्रकाश रखें।", "why": "कृतज्ञता बचती है, पर स्थानीय पशु-सम्भाल को अपरिचित या शहरी स्थान में नहीं दोहराया जाता।", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 3, "instruction": "बिना लेन-देन का कृतज्ञता या उत्तरदायी उपभोग का एक काम चुनें और आहार, व्रत, खरीद या समृद्धि की गारंटी जोड़े बिना समापन करें।", "why": "देखभाल और कृतज्ञता के लिए खर्च, भोजन-प्रतिबन्ध या निश्चित फल आवश्यक नहीं।", "optional": false, "source_ids": ["devam-vasu-baras-animal-welfare-and-scope-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "स्थापित देखभालकर्ता-नेतृत्व वाला पारिवारिक या सामुदायिक पालन", "estimated_minutes": 60, "materials": [{"item": "केवल पशु-मालिक, प्रशिक्षित देखभालकर्ता और मान्य परिवार या समुदाय मार्गदर्शक द्वारा स्वीकृत सामग्री", "substitutions": ["सुरक्षित दूरी से देखें या बिना सम्पर्क का मानक रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "स्थापित खेत, गोशाला, मंदिर या गृह कार्यक्रम में पशु-मालिक या प्रशिक्षित देखभालकर्ता को प्रवेश, दूरी, स्पर्श, भोजन, पशु की चाल और रुकने का निर्णय लेने दें।", "why": "जीवित पशु का कल्याण और देखभालकर्ता का अधिकार अनुष्ठान-सूची से पहले हैं।", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 2, "instruction": "स्वयं से पशु को न खिलाएँ, न नहलाएँ, न बाँधें, न रंगें, न सजाएँ, उसके पास लौ न जलाएँ, निकट से चित्र न लें और न खरीदें, बेचें या उपहार दें; केवल दी गई सुरक्षित भूमिका निभाएँ।", "why": "क्षेत्र-अध्ययन स्थानीय रीति दर्ज करता है, ऐप उपयोगकर्ता को पशु-सम्भाल का अधिकार या कौशल नहीं देता।", "optional": false, "source_ids": ["ansi-rural-livestock-markets-vasubaras", "devam-vasu-baras-animal-welfare-and-scope-boundary"]},
+          {"ordinal": 3, "instruction": "मान्य प्रार्थना या धन्यवाद पूरा करें, पशु को शान्त छोड़ें, देखरेख वाले प्रकाश का समापन करें, मानव-समागम क्षेत्र साफ करें और देखभालकर्ता के निकास-निर्देश मानें।", "why": "सुरक्षित समापन जीवित सहभागी का सम्मान करता है, उसे अनुष्ठान की वस्तु नहीं बनाता।", "optional": false, "source_ids": ["devam-vasu-baras-animal-welfare-and-scope-boundary"]}
+        ]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "maharashtra_vasu_baras_diwali_opening_identity_supported": true,
+    "gratitude_to_cattle_farmers_and_responsible_care_supported": true,
+    "no_contact_family_form_supported": true,
+    "formal_priest_mantras_included": false,
+    "historical_or_field_observations_promoted_as_universal_norms": false,
+    "animal_contact_feeding_washing_restraining_or_decoration_instructed": false,
+    "flame_near_animals_instructed": false,
+    "cow_purchase_sale_or_gift_required": false,
+    "fast_or_dairy_wheat_abstention_prescribed": false,
+    "medical_veterinary_or_dietary_advice_given": false,
+    "specific_food_offering_required": false,
+    "gift_donation_or_spending_required": false,
+    "guaranteed_prosperity_merit_or_family_outcome_claimed": false,
+    "gujarat_wagh_baras_bachha_baras_guru_dwadashi_or_nandini_vrat_completed": false,
+    "one_universal_indian_procedure_claimed": false,
+    "all_family_regional_and_agrarian_variants_complete": false,
+    "raw_anthropological_report_acquired_or_visually_reconciled": false
+  }
+}

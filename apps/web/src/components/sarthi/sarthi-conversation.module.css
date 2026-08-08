@@ -1,0 +1,68 @@
+.shell { min-height: 100vh; position: relative; overflow: hidden; background: radial-gradient(circle at 18% 22%, #25204a 0, transparent 32%), radial-gradient(circle at 82% 18%, #17284b 0, transparent 30%), linear-gradient(145deg, #070817, #0d1024 58%, #080a17); color: #f8f0df; }
+.cosmos { position: fixed; inset: 0; pointer-events: none; opacity: .72; }
+.cosmos span { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,.72) 0 1px, transparent 1.4px); background-size: 83px 83px; }
+.cosmos span:nth-child(2) { transform: translate(19px, 31px); background-size: 137px 137px; opacity: .48; }
+.cosmos span:nth-child(3) { background: radial-gradient(circle at 54% 42%, rgba(222,177,101,.13), transparent 32%); }
+.header { position: relative; z-index: 2; height: 76px; padding: 0 clamp(20px, 5vw, 76px); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(16px); }
+.brand { display: flex; align-items: center; gap: 11px; font-family: Georgia, serif; font-size: 21px; }
+.brand img { border-radius: 50%; }
+.header nav { display: flex; align-items: center; gap: clamp(14px, 3vw, 34px); color: #c9c4cc; font-size: 14px; }
+.header nav a:hover { color: #f1c873; }
+.stage { position: relative; z-index: 1; width: min(1420px, calc(100% - 48px)); min-height: calc(100vh - 76px); margin: 0 auto; padding: 54px 0; display: grid; grid-template-columns: minmax(280px, .72fr) minmax(500px, 1.28fr); gap: clamp(34px, 6vw, 88px); align-items: center; }
+.intro > p { color: #e3b866; text-transform: uppercase; letter-spacing: .17em; font-size: 12px; }
+.intro h1 { max-width: 650px; margin: 18px 0 20px; font: 400 clamp(42px, 5vw, 78px)/.98 Georgia, serif; letter-spacing: -.04em; }
+.intro h1 em { color: #e4bd71; font-weight: 400; }
+.intro > span { display: block; max-width: 590px; color: #c7c2ca; line-height: 1.75; font-size: 16px; }
+.intro > small { display: block; margin-top: 25px; color: #8f8b99; line-height: 1.5; }
+.prompts { margin-top: 30px; display: grid; gap: 10px; }
+.prompts button { padding: 13px 16px; border: 1px solid rgba(228,189,113,.22); border-radius: 13px; background: rgba(17,20,43,.68); text-align: left; color: #ddd7d0; cursor: pointer; }
+.prompts button:hover { border-color: rgba(228,189,113,.62); background: rgba(37,35,62,.8); }
+.chat { min-height: 680px; height: min(780px, calc(100vh - 126px)); display: grid; grid-template-rows: auto 1fr auto auto; border: 1px solid rgba(239,204,139,.2); border-radius: 28px; background: rgba(10,12,29,.88); box-shadow: 0 34px 90px rgba(0,0,0,.42), inset 0 1px rgba(255,255,255,.05); overflow: hidden; backdrop-filter: blur(22px); }
+.chatHeader { display: flex; gap: 13px; align-items: center; padding: 20px 23px; border-bottom: 1px solid rgba(255,255,255,.08); }
+.chatHeader div { display: grid; gap: 3px; }
+.chatHeader small { color: #9693a2; }
+.orb { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; color: #2a1d09; background: radial-gradient(circle at 35% 30%, #fff1b8, #e2ac51 64%, #724314); box-shadow: 0 0 34px rgba(227,177,88,.42); }
+.transcript { overflow-y: auto; padding: 24px; display: flex; flex-direction: column; gap: 16px; scroll-behavior: smooth; }
+.assistantMessage, .userMessage { max-width: 84%; padding: 14px 17px; border-radius: 17px; line-height: 1.62; }
+.assistantMessage { align-self: flex-start; background: rgba(38,37,61,.78); border: 1px solid rgba(255,255,255,.06); border-bottom-left-radius: 5px; }
+.userMessage { align-self: flex-end; background: linear-gradient(135deg, #765322, #9c7131); border-bottom-right-radius: 5px; }
+.assistantMessage p, .userMessage p { margin: 0; }
+.evidence { margin-top: 12px; border-top: 1px solid rgba(255,255,255,.1); padding-top: 10px; }
+.evidence > summary { cursor: pointer; color: #ebc77e; font-size: 13px; }
+.evidence > p, .boundary { margin-top: 10px; color: #aaa6b0; font-size: 12px; }
+.citation { margin-top: 12px; display: grid; gap: 4px; padding: 11px; border-radius: 10px; background: rgba(0,0,0,.18); }
+.citation span, .citation small { color: #aaa6b0; font-size: 12px; }
+.citation blockquote { margin: 7px 0 0; padding-left: 11px; border-left: 2px solid #d7a953; color: #e7dfd1; }
+.guide { margin-top: 12px; display: grid; gap: 8px; }
+.guide details { padding: 8px 10px; border-radius: 9px; background: rgba(0,0,0,.16); }
+.guide summary { cursor: pointer; }
+.guide ol { padding-left: 20px; color: #d4ced1; }
+.guide li { margin: 8px 0; }
+.guide small { color: #aaa6b0; }
+.accountPrompt { margin: 0 22px 16px; padding: 15px 17px; border: 1px solid rgba(228,189,113,.35); border-radius: 14px; background: rgba(80,58,25,.24); }
+.accountPrompt p { margin: 5px 0 12px; color: #c8c1bb; font-size: 13px; }
+.accountPrompt a { display: inline-block; padding: 9px 13px; border-radius: 9px; background: #e5b961; color: #211707; font-weight: 700; font-size: 13px; }
+.composer { display: grid; grid-template-columns: 1fr auto; gap: 11px; padding: 16px 20px 20px; border-top: 1px solid rgba(255,255,255,.08); }
+.composer textarea { resize: none; min-height: 50px; max-height: 120px; padding: 13px 14px; border: 1px solid rgba(255,255,255,.13); border-radius: 14px; background: rgba(255,255,255,.055); color: #f6efe3; outline: none; }
+.composer textarea:focus { border-color: rgba(228,189,113,.64); }
+.composer button { align-self: stretch; padding: 0 22px; border: 0; border-radius: 13px; background: linear-gradient(135deg, #f0ca78, #bc812f); color: #231807; font-weight: 750; cursor: pointer; }
+.composer button:disabled { opacity: .45; cursor: default; }
+@media (max-width: 900px) {
+  .header nav a:nth-child(2), .header nav a:nth-child(3) { display: none; }
+  .stage { width: min(100% - 28px, 720px); padding: 28px 0; grid-template-columns: 1fr; align-items: start; }
+  .intro h1 { font-size: clamp(38px, 11vw, 60px); }
+  .intro > span { font-size: 15px; }
+  .prompts { grid-template-columns: 1fr; }
+  .chat { height: 72vh; min-height: 560px; border-radius: 22px; }
+}
+@media (max-width: 520px) {
+  .header { height: 68px; padding: 0 16px; }
+  .header nav { gap: 14px; }
+  .stage { width: calc(100% - 20px); min-height: calc(100vh - 68px); padding-top: 24px; gap: 28px; }
+  .intro h1 { margin-top: 12px; }
+  .chat { height: 76vh; min-height: 610px; border-radius: 18px; }
+  .transcript { padding: 16px; }
+  .assistantMessage, .userMessage { max-width: 92%; }
+  .composer { padding: 12px; }
+  .composer button { padding: 0 16px; }
+}

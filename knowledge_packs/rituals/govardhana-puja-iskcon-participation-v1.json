@@ -1,0 +1,88 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-govardhana-puja-iskcon-participation-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "govardhan-puja",
+  "scope": {
+    "region_codes": ["iskcon-india"],
+    "tradition_codes": ["vaishnava-iskcon"],
+    "language_codes": ["en", "hi"],
+    "iskcon_bangalore_2026_date_fixture_required": true,
+    "temple_or_household_authority_overrides_generic_sequence": true,
+    "baps_new_year_annakut_context_is_comparative_not_merged": true
+  },
+  "sources": [
+    {"source_id": "devam-govardhana-date-fixture", "title": "Devam Govardhana Puja ISKCON 2026 date evidence fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_calendar_crosswalk", "rights_lane": "derivative_allowed", "artifact_sha256": "dc150f253eb67a2c7caccba62e20b6c4a3a70cc91e8e48150e1a7d753274ab82"},
+    {"source_id": "iskcon-bangalore-govardhana-puja", "title": "Govardhana Puja - 10 Nov 2026", "publisher": "ISKCON Bangalore", "url": "https://www.iskconbangalore.org/govardhana-puja/", "source_class": "official_living_tradition_identity_story_and_participation_context", "rights_lane": "reference_only", "observed_fetch": {"status": 200, "final_url": "https://www.iskconbangalore.org/govardhana-puja/", "response_bytes": 114978, "response_sha256": "7b5cd69d388b08d0336bcff1bea5ebd1355befc7a23be7bb192aeb8fccebc1f2", "strict_utf8": true}, "observed_literals": {"govardhana_puja": true, "go_puja": true, "annakuta_festival": true, "food_hill_offering": true, "prasadam_distribution": true}},
+    {"source_id": "baps-annakut-comparative-context", "title": "Nutan Varsh / New Year Annakut", "publisher": "BAPS Swaminarayan Sanstha", "url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/NutanVarsh/NewYearAnnakut.aspx", "source_class": "official_distinct_sampradaya_comparative_annakut_context", "rights_lane": "reference_only", "observed_fetch": {"status": 200, "final_url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/NutanVarsh/NewYearAnnakut.aspx", "response_bytes": 101585, "response_sha256": "1228c584261b2287d90f2164a559600e5346bb8e7178efb71aed85d6b6b5ff56", "strict_utf8": true}, "observed_literals": {"mountain_of_food": true, "vegetarian_delicacies": true, "singing_thal": true, "first_aarti": true}},
+    {"source_id": "devam-govardhana-safety-boundary", "title": "Devam Govardhana participation and safety boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_boundary_not_ritual_authority", "rights_lane": "derivative_allowed"}
+  ],
+  "guides": [
+    {
+      "guide_id": "govardhana-puja-iskcon-participation-en-v1",
+      "language_code": "en",
+      "title": "Govardhana Puja and Annakut participation",
+      "summary": "On the separately resolved Govardhana Puja date, remember Krishna sheltering the people of Vraja, join prayer or kirtan, and offer a simple vegetarian preparation only through the household or temple practice you know. A large Annakut, formal Govardhana or Go Puja, fasting, and parikrama require their own setting and are not requirements here.",
+      "family_practice_note": "Tell Sarthi whether you are at home or an ISKCON temple, whether your family already offers food to Krishna, and who directs arati, prasadam, or Go Puja. Bali Pratipada, BAPS New Year Annakut, and Braj parikrama remain distinct lanes.",
+      "context_prompts": ["Are you observing at home or joining an ISKCON temple?", "Who directs the offering, kirtan, arati, and prasadam?", "Does your home already have an established food-offering practice?", "Do you want a short participation form or help assisting a temple programme?"],
+      "tiers": [
+        {"tier": "minimum", "label": "Simple gratitude and remembrance", "estimated_minutes": 10, "materials": [{"item": "A familiar Krishna image or clean prayer space", "substitutions": ["Pray without an image"], "optional": true}, {"item": "One simple vegetarian food already suitable for your household offering", "substitutions": ["Offer gratitude without food when the practice or suitability is unknown"], "optional": true}], "steps": [
+          {"ordinal": 1, "instruction": "Use the resolved Govardhana Puja date and keep Bali Pratipada or another regional New Year observance separate.", "why": "Coincident civil dates do not make distinct traditions one procedure.", "optional": false, "source_ids": ["devam-govardhana-date-fixture"]},
+          {"ordinal": 2, "instruction": "Remember Krishna lifting Govardhana to shelter the people and animals of Vraja; offer a familiar short prayer, reading, or kirtan.", "why": "This is the stable identity and devotional core in the official ISKCON account.", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja"]},
+          {"ordinal": 3, "instruction": "If your household already has a food-offering practice, prepare one manageable vegetarian item, offer it through that practice, and share it respectfully as prasadam; otherwise keep the prayer-only form.", "why": "Annakut centres a vegetarian offering and prasadam, but a mountain of dishes is not a household requirement.", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja", "baps-annakut-comparative-context", "devam-govardhana-safety-boundary"]}
+        ]},
+        {"tier": "standard", "label": "Family- or temple-led observance", "estimated_minutes": 30, "materials": [{"item": "The vegetarian offering, song, and arati materials already accepted by the home or temple", "substitutions": ["Use the minimum prayer-only form"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Confirm the local offering, allergy, kitchen, entry, photography, and prasadam rules before preparing or bringing anything.", "why": "Households and temples retain authority over food and worship practice.", "optional": false, "source_ids": ["devam-govardhana-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Join the recognised story remembrance, kirtan, food offering, arati, darshan, and prasadam sequence without adding an unapproved mantra or ritual.", "why": "The app supports participation rather than reconstructing a temple liturgy.", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja", "baps-annakut-comparative-context"]},
+          {"ordinal": 3, "instruction": "Help with safe preparation, service, cleanup, and food-waste reduction in the role the organiser gives you.", "why": "Gratitude and seva can remain practical without measuring devotion by offering size.", "optional": false, "source_ids": ["devam-govardhana-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "Recognised temple or family programme", "estimated_minutes": 90, "materials": [{"item": "Only the ingredients, altar materials, texts, and service plan specified by the recognised organiser", "substitutions": ["Join the minimum or standard form"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "Let the recognised temple or family guide determine the Govardhana representation, food array, Go Puja, mantra, kirtan, arati, timing, and distribution sequence.", "why": "These details vary materially across Vaishnava sampradayas and institutions.", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja", "devam-govardhana-safety-boundary"]},
+          {"ordinal": 2, "instruction": "Participate only in your assigned role; do not approach or feed cattle, begin a fast, or undertake a long or barefoot parikrama from this guide.", "why": "Animal contact, austerity, and pilgrimage need their own authority, health, access, and safety planning.", "optional": false, "source_ids": ["devam-govardhana-safety-boundary"]},
+          {"ordinal": 3, "instruction": "Complete arati, prasadam distribution, cleanup, and food storage or donation according to the organiser's safety rules.", "why": "A large Annakut creates real food and crowd responsibilities.", "optional": false, "source_ids": ["baps-annakut-comparative-context", "devam-govardhana-safety-boundary"]}
+        ]}
+      ]
+    },
+    {
+      "guide_id": "govardhana-puja-iskcon-participation-hi-v1",
+      "language_code": "hi",
+      "title": "गोवर्धन पूजा और अन्नकूट में सहभागिता",
+      "summary": "अलग से निर्धारित गोवर्धन पूजा तिथि पर कृष्ण द्वारा व्रजवासियों की रक्षा का स्मरण करें, प्रार्थना या कीर्तन में जुड़ें और केवल परिचित गृह या मंदिर परम्परा में सरल शाकाहारी भोग रखें। बड़ा अन्नकूट, औपचारिक गोवर्धन/गो-पूजा, व्रत और परिक्रमा यहाँ अनिवार्य नहीं हैं।",
+      "family_practice_note": "सार्थी को बताएँ कि आप घर या ISKCON मंदिर में हैं, घर में कृष्ण को भोग लगाने की परिचित रीति है या नहीं, और आरती, प्रसाद या गो-पूजा कौन निर्देशित करता है। बली प्रतिपदा, BAPS नववर्ष अन्नकूट और ब्रज परिक्रमा अलग मार्ग हैं।",
+      "context_prompts": ["आप घर में मना रहे हैं या ISKCON मंदिर जा रहे हैं?", "भोग, कीर्तन, आरती और प्रसाद कौन निर्देशित करता है?", "क्या घर में कृष्ण को भोजन अर्पित करने की स्थापित रीति है?", "आपको छोटा सहभागिता-रूप चाहिए या मंदिर कार्यक्रम में सहायता का मार्ग?"],
+      "tiers": [
+        {"tier": "minimum", "label": "सरल कृतज्ञता और स्मरण", "estimated_minutes": 10, "materials": [{"item": "परिचित कृष्ण-चित्र या स्वच्छ प्रार्थना-स्थान", "substitutions": ["चित्र के बिना प्रार्थना करें"], "optional": true}, {"item": "घर की भोग-रीति के योग्य एक सरल शाकाहारी पदार्थ", "substitutions": ["रीति या उपयुक्तता अज्ञात हो तो बिना भोजन के कृतज्ञता रखें"], "optional": true}], "steps": [
+          {"ordinal": 1, "instruction": "निर्धारित गोवर्धन पूजा तिथि लें और बली प्रतिपदा या अन्य क्षेत्रीय नववर्ष को अलग रखें।", "why": "एक नागरिक तिथि पर आने से अलग परम्पराएँ एक विधि नहीं बनतीं।", "optional": false, "source_ids": ["devam-govardhana-date-fixture"]},
+          {"ordinal": 2, "instruction": "कृष्ण द्वारा गोवर्धन उठाकर व्रज के लोगों और पशुओं की रक्षा का स्मरण करें; परिचित छोटी प्रार्थना, पाठ या कीर्तन रखें।", "why": "आधिकारिक ISKCON विवरण में यही स्थिर पहचान और भक्ति-केंद्र है।", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja"]},
+          {"ordinal": 3, "instruction": "घर में स्थापित भोग-रीति हो तो एक सरल शाकाहारी पदार्थ उसी रीति से अर्पित कर प्रसाद बाँटें; अन्यथा केवल प्रार्थना करें।", "why": "अन्नकूट का केंद्र शाकाहारी भोग और प्रसाद है, पर व्यंजनों का पहाड़ घर की अनिवार्यता नहीं।", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja", "baps-annakut-comparative-context", "devam-govardhana-safety-boundary"]}
+        ]},
+        {"tier": "standard", "label": "परिवार या मंदिर-निर्देशित उत्सव", "estimated_minutes": 30, "materials": [{"item": "घर या मंदिर में स्वीकार भोग, गीत और आरती सामग्री", "substitutions": ["सरल प्रार्थना-रूप लें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "कुछ बनाने या ले जाने से पहले भोग, एलर्जी, रसोई, प्रवेश, फोटो और प्रसाद के स्थानीय नियम पूछें।", "why": "भोजन और पूजा पर घर या मंदिर का अधिकार है।", "optional": false, "source_ids": ["devam-govardhana-safety-boundary"]},
+          {"ordinal": 2, "instruction": "मान्य कथा-स्मरण, कीर्तन, भोग, आरती, दर्शन और प्रसाद-क्रम में जुड़ें; अनधिकृत मंत्र या विधि न जोड़ें।", "why": "ऐप मंदिर-विधान गढ़ने के बजाय सहभागिता का समर्थन करता है।", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja", "baps-annakut-comparative-context"]},
+          {"ordinal": 3, "instruction": "आयोजक द्वारा दी भूमिका में सुरक्षित तैयारी, सेवा, सफाई और भोजन-बर्बादी घटाने में सहायता करें।", "why": "भोग की मात्रा से भक्ति न मापते हुए कृतज्ञता और सेवा व्यावहारिक रह सकती है।", "optional": false, "source_ids": ["devam-govardhana-safety-boundary"]}
+        ]},
+        {"tier": "elaborate", "label": "मान्य मंदिर या पारिवारिक कार्यक्रम", "estimated_minutes": 90, "materials": [{"item": "मान्य आयोजक द्वारा बताई सामग्री, वेदी, ग्रंथ और सेवा-योजना", "substitutions": ["सरल या मानक रूप में जुड़ें"], "optional": false}], "steps": [
+          {"ordinal": 1, "instruction": "गोवर्धन-रूप, भोग-सज्जा, गो-पूजा, मंत्र, कीर्तन, आरती, समय और वितरण का क्रम मान्य मंदिर या परिवार तय करे।", "why": "ये विवरण वैष्णव सम्प्रदाय और संस्था के अनुसार बदलते हैं।", "optional": false, "source_ids": ["iskcon-bangalore-govardhana-puja", "devam-govardhana-safety-boundary"]},
+          {"ordinal": 2, "instruction": "केवल दी गई भूमिका निभाएँ; इस मार्गदर्शिका से पशु के पास न जाएँ या उसे न खिलाएँ, व्रत शुरू न करें और लंबी या नंगे-पाँव परिक्रमा न लें।", "why": "पशु-संपर्क, तप और यात्रा को अलग अधिकार, स्वास्थ्य और सुरक्षा योजना चाहिए।", "optional": false, "source_ids": ["devam-govardhana-safety-boundary"]},
+          {"ordinal": 3, "instruction": "आयोजक के सुरक्षा-नियम से आरती, प्रसाद-वितरण, सफाई और भोजन-संग्रह या दान पूरा करें।", "why": "बड़ा अन्नकूट भोजन और भीड़ की वास्तविक जिम्मेदारियाँ लाता है।", "optional": false, "source_ids": ["baps-annakut-comparative-context", "devam-govardhana-safety-boundary"]}
+        ]}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "prayer_kirtan_simple_vegetarian_offering_supported": true,
+    "formal_mantras_included": false,
+    "go_puja_or_cow_contact_instruction_included": false,
+    "fasting_prescribed": false,
+    "long_or_barefoot_parikrama_instructed": false,
+    "large_food_array_required": false,
+    "bali_pratipada_merged": false,
+    "baps_new_year_sequence_merged": false,
+    "one_universal_govardhana_or_annakut_procedure_claimed": false,
+    "all_vaishnava_and_regional_variants_complete": false
+  }
+}

@@ -1,0 +1,854 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which North or West India family tradition do you follow?",
+      "Does your family focus on Dhanvantari, Lakshmi-Kubera, livelihood tools or accounts, or simple Diwali preparation?",
+      "Does your household separately keep Yama Deepam?",
+      "Do you need a short home prayer or the boundary for a family-text or priest-led puja?"
+    ],
+    "region_codes": [
+      "north-india",
+      "west-india"
+    ],
+    "settings": [
+      "household",
+      "individual",
+      "family_led"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-krishna-trayodashi-pradosha-delhi-v1",
+    "freshness_note": "The bounded New Delhi 2026 lane resolves Friday, 6 November. Use Devam's local pradosha decision; a provider Sthir-Lagna interval or formal family muhurta is a separate decision.",
+    "live_schedule_required": false,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-dhantrayodashi-date-fixture",
+      "drikpanchang-dhanteras-practice"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "dhantrayodashi-north-west-india-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "dhanteras-lakshmi-farmer-legend",
+          "source_ids": [
+            "drikpanchang-dhanteras-lakshmi-farmer-legend"
+          ],
+          "summary": "The current Drik Panchang account tells of Lakshmi visiting a farmer's home and presents cleaning the home to welcome her on Krishna Trayodashi as a circulating Dhanteras legend. Devam labels it as a story, not verified history, a universal origin, or a command to purchase.",
+          "title": "The Dhanteras story of Lakshmi and the farmer",
+          "tradition_scope": "Current practitioner Dhanteras legend retelling",
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "dhanvantari-jayanti-current-account",
+          "source_ids": [
+            "dd-news-on-air-dhanteras-identity-2026"
+          ],
+          "summary": "The current Akashvani account names the day both Dhantrayodashi and Dhanvantari Jayanti and notes worship of Dhanvantari, Kubera, and Lakshmi. This is a public current identity account, not medical treatment or proof of one universal deity sequence.",
+          "title": "The current Dhanvantari Jayanti association",
+          "tradition_scope": "Current official public-broadcaster account",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short North/West India household remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-dhantrayodashi-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Gratitude for health and livelihood",
+          "materials": [
+            {
+              "item": "A clean place and the Dhanvantari, Lakshmi, Kubera, or devotional focus your family already uses",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Use an existing image, home shrine, or simple mental prayer; do not purchase a new object for this guide"
+              ]
+            },
+            {
+              "item": "Clean water, one flower or leaf, and fruit or a simple sweet",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Offer one respectful locally available item"
+              ]
+            },
+            {
+              "item": "One supervised lamp",
+              "required": false,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Use a safe electric light or a flame-free prayer"
+              ]
+            }
+          ],
+          "procedure_id": "dhantrayodashi-north-west-india-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-dhantrayodashi-date-fixture",
+            "drikpanchang-dhanteras-practice",
+            "maharashtra-tourism-diwali-2026",
+            "dd-news-on-air-dhanteras-identity-2026",
+            "devam-dhantrayodashi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use Devam's resolved Dhantrayodashi evening for your supported context; obtain a precise formal muhurta separately rather than copying a generic clock time.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-dhantrayodashi-date-fixture",
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "The date rule is independently calculated from Trayodashi at pradosha, while the provider's narrower interval also requires Sthir Lagna."
+            },
+            {
+              "instruction": "Clean the place and settle for a brief prayer of gratitude for health, care, livelihood, and the resources entrusted to your household.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-2026",
+                "dd-news-on-air-dhanteras-identity-2026"
+              ],
+              "why": "Dhantrayodashi is associated with prosperity and Dhanvantari, but gratitude does not become a wealth or health guarantee."
+            },
+            {
+              "instruction": "Welcome Dhanvantari, Lakshmi-Kubera, or the focus your family knows; offer water, the flower or leaf, and fruit or sweet, then use a familiar prayer or divine name.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "The sources preserve multiple current associations, so the guide follows family identity instead of declaring one universal deity set."
+            },
+            {
+              "instruction": "Close by choosing one practical act: care for health responsibly, organise finances honestly, thank a caregiver or worker, or share food. Extinguish every flame before leaving.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "maharashtra-tourism-diwali-2026",
+                "dd-news-on-air-dhanteras-identity-2026"
+              ],
+              "why": "This makes the observance actionable without selling products, replacing healthcare, or promising prosperity."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family-familiar Dhantrayodashi household form",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-dhantrayodashi-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Family Dhantrayodashi puja",
+          "materials": [
+            {
+              "item": "The familiar deity focus, clean cloth, water, flowers or leaves, fruit or sweets, and safe light",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the minimum form when the household does not have an established setup"
+              ]
+            },
+            {
+              "item": "Tools, account books, coins, study materials, or health-service instruments",
+              "required": false,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Include only what the family already honours; no purchase is necessary"
+              ]
+            }
+          ],
+          "procedure_id": "dhantrayodashi-north-west-india-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-diwali-2026",
+            "dd-news-on-air-dhanteras-identity-2026",
+            "drikpanchang-dhanteras-practice",
+            "devam-dhantrayodashi-date-fixture",
+            "devam-dhantrayodashi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Prepare the home safely and place the family's existing Dhanvantari, Lakshmi-Kubera, or livelihood focus respectfully.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-diwali-2026",
+                "dd-news-on-air-dhanteras-identity-2026"
+              ],
+              "why": "The day has multiple living associations rather than one mandatory national setup."
+            },
+            {
+              "instruction": "At the bounded evening, begin with the family's usual opening prayer and offer water, flowers or leaves, food, and light if safe.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-dhanteras-practice",
+                "devam-dhantrayodashi-date-fixture"
+              ],
+              "why": "This is a recognisable household form without inventing formal mantras or upacharas."
+            },
+            {
+              "instruction": "If customary, honour the tools, accounts, or instruments through which the household serves and earns; name one commitment to honest livelihood, responsible spending, or care for health.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "maharashtra-tourism-diwali-2026"
+              ],
+              "why": "The prosperity and Dhanvantari associations become ethical action rather than shopping pressure or medical claims."
+            },
+            {
+              "instruction": "Use a familiar arati or prayer, share prasad, and keep any separate Yama Deepam practice under its own family guidance.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-dhantrayodashi-date-fixture"
+              ],
+              "why": "The close preserves Dhantrayodashi and Yama Deepam as related but separate ritual identities."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Expanded form led by a recognised family text or practitioner",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-dhantrayodashi-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family-text or practitioner-led puja",
+          "materials": [
+            {
+              "item": "The exact images, kalasha, offerings, text, accounts, tools, and other materials specified by the family's manual or practitioner",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the standard form instead of improvising a formal sequence"
+              ]
+            },
+            {
+              "item": "A safe plan for every lamp and incense source",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "Use a flame-free form where needed"
+              ]
+            }
+          ],
+          "procedure_id": "dhantrayodashi-north-west-india-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-dhantrayodashi-date-fixture",
+            "drikpanchang-dhanteras-practice",
+            "dd-news-on-air-dhanteras-identity-2026",
+            "maharashtra-tourism-diwali-2026",
+            "devam-dhantrayodashi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm the exact local muhurta and whether the family's formal sequence centres Dhanvantari, Lakshmi-Kubera, accounts, tools, or another established form.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-dhantrayodashi-date-fixture",
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "The fixed date does not establish one formal order or the provider's Sthir-Lagna interval everywhere."
+            },
+            {
+              "instruction": "Follow that known text and pronunciation through its own invocation, offerings, reading, arati, and closing; do not use this synthesis as a mantra manual.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "Formal practice belongs to the specific living lineage and source."
+            },
+            {
+              "instruction": "Close with prasad and a concrete act of responsible health care, generosity, or ethical stewardship, without claiming a guaranteed result.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "maharashtra-tourism-diwali-2026"
+              ],
+              "why": "The observance remains devotional rather than a medical, financial, or commercial promise."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Buying a new object, metal, jewellery, medicine, or vehicle is not required and is not financial advice.",
+        "Remembering Dhanvantari does not replace medical care or promise a health outcome.",
+        "Obtain a formal precise muhurta and mantra sequence from the family calendar, text, or practitioner.",
+        "Supervise every flame and extinguish it before leaving."
+      ],
+      "short_answer": "Use the resolved Dhantrayodashi evening for gratitude for health, livelihood, and resources, and for the Dhanvantari, Lakshmi, or Kubera focus your family actually keeps. Buying metal, jewellery, utensils, medicines, or any other item is a custom—not a devotional requirement or financial recommendation.",
+      "significance": {
+        "scope_note": "This is neither medical or financial advice nor the only Dhanteras form across India.",
+        "source_ids": [
+          "dd-news-on-air-dhanteras-identity-2026",
+          "maharashtra-tourism-diwali-2026"
+        ],
+        "text": "In this bounded North/West India household lane, Dhantrayodashi is a time for gratitude for health, livelihood, ethical stewardship of resources, and the beginning of Diwali preparation. Current sources preserve distinct Dhanvantari, Kubera, and Lakshmi family focuses; shopping is not a devotional requirement."
+      },
+      "title": "Dhantrayodashi at home",
+      "typical_practices": [
+        {
+          "description": "Families may prepare the home in the evening and choose their familiar focus—Dhanvantari, Lakshmi-Kubera, tools of livelihood, or simple Diwali preparation—then make familiar offerings and prayers. Purchasing is a common custom for some, not a requirement.",
+          "instructional": false,
+          "population_scope": "Relevant North/West India households",
+          "practice_id": "north-west-dhantrayodashi-household",
+          "source_ids": [
+            "dd-news-on-air-dhanteras-identity-2026",
+            "drikpanchang-dhanteras-practice"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Dhanvantari, Lakshmi-Kubera, account/tool, and preparation-centred forms differ; family practice selects the form.",
+          "scope": "Household devotional focus",
+          "separate_lane_required": false,
+          "source_ids": [
+            "dd-news-on-air-dhanteras-identity-2026",
+            "drikpanchang-dhanteras-practice"
+          ],
+          "variant_id": "dhanvantari-lakshmi-kubera-or-livelihood-focus"
+        },
+        {
+          "difference": "Yama Deepam has its own timing, meaning, and light offering and is not automatically merged into this Dhantrayodashi puja.",
+          "scope": "Adjacent Trayodashi observance",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-dhantrayodashi-date-fixture"
+          ],
+          "variant_id": "yama-deepam-separate"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "dhanteras-lakshmi-farmer-legend",
+          "source_ids": [
+            "drikpanchang-dhanteras-lakshmi-farmer-legend"
+          ],
+          "summary": "ड्रिक पंचांग की वर्तमान कथा में लक्ष्मी किसान के घर आती हैं और कृष्ण त्रयोदशी पर घर स्वच्छ कर उनका स्वागत करने की परम्परा का आख्यान दिया गया है। Devam इसे एक प्रचलित, स्रोत-चिह्नित कथा के रूप में रखता है—इतिहास, सार्वभौम उत्पत्ति या खरीदारी के आदेश के रूप में नहीं।",
+          "title": "लक्ष्मी और किसान की धनतेरस-कथा",
+          "tradition_scope": "वर्तमान धनतेरस व्रत-कथा पुनर्कथन",
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "dhanvantari-jayanti-current-account",
+          "source_ids": [
+            "dd-news-on-air-dhanteras-identity-2026"
+          ],
+          "summary": "आकाशवाणी का वर्तमान विवरण इस दिन को धनत्रयोदशी और धन्वन्तरी-जयंती दोनों कहता है तथा धन्वन्तरी, कुबेर और लक्ष्मी की पूजा का उल्लेख करता है। यह वर्तमान सार्वजनिक पहचान है, चिकित्सा उपचार या एक सार्वभौम देवता-क्रम का प्रमाण नहीं।",
+          "title": "धन्वन्तरी-जयंती का वर्तमान सम्बन्ध",
+          "tradition_scope": "वर्तमान सार्वजनिक-प्रसारण विवरण",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "उत्तर/पश्चिम भारतीय परिवार का संक्षिप्त गृह-स्मरण",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-dhantrayodashi-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "स्वास्थ्य और आजीविका के प्रति कृतज्ञता",
+          "materials": [
+            {
+              "item": "स्वच्छ स्थान और परिवार में प्रचलित धन्वन्तरी, लक्ष्मी, कुबेर या अन्य परिचित ध्यान",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "मौजूदा चित्र, गृह-मन्दिर या मानसिक प्रार्थना लें; इस मार्गदर्शिका के लिए नयी वस्तु न खरीदें"
+              ]
+            },
+            {
+              "item": "स्वच्छ जल, एक फूल या पत्ता, और फल या सरल मिठाई",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "एक श्रद्धापूर्ण स्थानीय अर्पण करें"
+              ]
+            },
+            {
+              "item": "एक सुरक्षित निगरानी वाला दीप",
+              "required": false,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "सुरक्षित विद्युत-प्रकाश या अग्नि-रहित प्रार्थना करें"
+              ]
+            }
+          ],
+          "procedure_id": "dhantrayodashi-north-west-india-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-dhantrayodashi-date-fixture",
+            "drikpanchang-dhanteras-practice",
+            "maharashtra-tourism-diwali-2026",
+            "dd-news-on-air-dhanteras-identity-2026",
+            "devam-dhantrayodashi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "समर्थित सन्दर्भ के लिए देवम द्वारा निर्धारित धनत्रयोदशी की संध्या लें; औपचारिक सटीक मुहूर्त अलग स्थानीय पंचांग से लें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-dhantrayodashi-date-fixture",
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "तिथि प्रदोष में त्रयोदशी से निश्चित है, जबकि प्रदाता का छोटा समय स्थिर लग्न भी माँगता है।"
+            },
+            {
+              "instruction": "स्थान स्वच्छ करें और स्वास्थ्य, सेवा, आजीविका तथा परिवार को मिले संसाधनों के प्रति कृतज्ञता की छोटी प्रार्थना करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-2026",
+                "dd-news-on-air-dhanteras-identity-2026"
+              ],
+              "why": "समृद्धि और धन्वन्तरी की पहचान कृतज्ञता का आधार है, निश्चित धन या स्वास्थ्य-फल की गारंटी नहीं।"
+            },
+            {
+              "instruction": "परिवार के परिचित धन्वन्तरी, लक्ष्मी-कुबेर या अन्य ध्यान का स्वागत करें; जल, फूल या पत्ता और फल या मिठाई अर्पित करके परिचित प्रार्थना या नाम लें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "विभिन्न वर्तमान सम्बन्ध सुरक्षित रहते हैं; एक देवता-समूह सब पर अनिवार्य नहीं किया जाता।"
+            },
+            {
+              "instruction": "एक व्यावहारिक कर्म चुनें—स्वास्थ्य की जिम्मेदार देखभाल, ईमानदार वित्त-व्यवस्था, किसी सेवक या उपचारक के प्रति धन्यवाद, या भोजन-साझेदारी—और हर लौ सुरक्षित बुझाएँ।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "maharashtra-tourism-diwali-2026",
+                "dd-news-on-air-dhanteras-identity-2026"
+              ],
+              "why": "यह खरीदारी, चिकित्सा-प्रतिस्थापन या समृद्धि की गारंटी के बिना पर्व को उपयोगी बनाता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "परिवार-परिचित धनत्रयोदशी गृह-रूप",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-dhantrayodashi-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "पारिवारिक धनत्रयोदशी-पूजा",
+          "materials": [
+            {
+              "item": "परिचित देव-ध्यान, स्वच्छ वस्त्र, जल, फूल या पत्ते, फल या मिठाई और सुरक्षित प्रकाश",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "स्थापित व्यवस्था न हो तो सरल विधि करें"
+              ]
+            },
+            {
+              "item": "औजार, बही-खाते, सिक्के, अध्ययन-सामग्री या स्वास्थ्य-सेवा के उपकरण",
+              "required": false,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "केवल वही रखें जिसका परिवार में सम्मान होता है; खरीद आवश्यक नहीं"
+              ]
+            }
+          ],
+          "procedure_id": "dhantrayodashi-north-west-india-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-diwali-2026",
+            "dd-news-on-air-dhanteras-identity-2026",
+            "drikpanchang-dhanteras-practice",
+            "devam-dhantrayodashi-date-fixture",
+            "devam-dhantrayodashi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "घर को सुरक्षित रूप से तैयार करें और परिवार का परिचित धन्वन्तरी, लक्ष्मी-कुबेर या आजीविका-ध्यान सम्मान से रखें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-diwali-2026",
+                "dd-news-on-air-dhanteras-identity-2026"
+              ],
+              "why": "इस दिन के अनेक जीवित सम्बन्ध हैं, एक राष्ट्रीय अनिवार्य व्यवस्था नहीं।"
+            },
+            {
+              "instruction": "निर्धारित संध्या में परिचित आरम्भिक प्रार्थना करें और जल, फूल या पत्ते, नैवेद्य और सुरक्षित प्रकाश अर्पित करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-dhanteras-practice",
+                "devam-dhantrayodashi-date-fixture"
+              ],
+              "why": "यह औपचारिक मन्त्र या उपचार गढ़े बिना पहचानने योग्य गृह-रूप है।"
+            },
+            {
+              "instruction": "यदि प्रचलित हो तो औजार, बही या सेवा-उपकरणों का सम्मान करें और ईमानदार आजीविका, जिम्मेदार खर्च या स्वास्थ्य-देखभाल का एक संकल्प लें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "maharashtra-tourism-diwali-2026"
+              ],
+              "why": "समृद्धि और धन्वन्तरी का सम्बन्ध खरीदारी-दबाव या चिकित्सा-दावे के बजाय धर्मसम्मत कर्म बनता है।"
+            },
+            {
+              "instruction": "परिचित आरती या प्रार्थना और प्रसाद से समाप्त करें; यम दीपम की अलग पारिवारिक विधि हो तो उसे अलग ही रखें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-dhantrayodashi-date-fixture"
+              ],
+              "why": "धनत्रयोदशी और यम दीपम सम्बन्धित पर अलग अनुष्ठान बने रहते हैं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "मान्य पारिवारिक ग्रन्थ या जानकार के नेतृत्व का विस्तृत रूप",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-dhantrayodashi-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "पारिवारिक ग्रन्थ या जानकार-निर्देशित पूजा",
+          "materials": [
+            {
+              "item": "पारिवारिक ग्रन्थ या जानकार द्वारा बताये ठीक चित्र, कलश, अर्पण, पाठ, बही और औजार",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "औपचारिक क्रम गढ़ने के बजाय मध्यम विधि करें"
+              ]
+            },
+            {
+              "item": "हर दीप और धूप के लिए सुरक्षित योजना",
+              "required": true,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "devam-dhantrayodashi-safety-boundary"
+              ],
+              "substitutions": [
+                "आवश्यक हो तो अग्नि-रहित रूप लें"
+              ]
+            }
+          ],
+          "procedure_id": "dhantrayodashi-north-west-india-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-dhantrayodashi-date-fixture",
+            "drikpanchang-dhanteras-practice",
+            "dd-news-on-air-dhanteras-identity-2026",
+            "maharashtra-tourism-diwali-2026",
+            "devam-dhantrayodashi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "सटीक स्थानीय मुहूर्त और परिवार के धन्वन्तरी, लक्ष्मी-कुबेर, बही, औजार या अन्य स्थापित क्रम को जानकार से निश्चित करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-dhantrayodashi-date-fixture",
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "निश्चित तिथि एक औपचारिक राष्ट्रीय क्रम या हर स्थान का स्थिर-लग्न समय सिद्ध नहीं करती।"
+            },
+            {
+              "instruction": "उसी ज्ञात ग्रन्थ और उच्चारण से आह्वान, अर्पण, पाठ, आरती और समापन करें; इस संश्लेषण को मन्त्र-पुस्तिका न बनाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-dhanteras-practice"
+              ],
+              "why": "औपचारिक विधि विशिष्ट जीवित परम्परा और स्रोत की है।"
+            },
+            {
+              "instruction": "प्रसाद और जिम्मेदार स्वास्थ्य-देखभाल, उदारता या धर्मसम्मत संसाधन-प्रबन्ध के एक कर्म से समापन करें; निश्चित फल का दावा न करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "dd-news-on-air-dhanteras-identity-2026",
+                "maharashtra-tourism-diwali-2026"
+              ],
+              "why": "पर्व चिकित्सा, वित्त या व्यापारिक वादा नहीं बनता।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "नई वस्तु, धातु, आभूषण, औषधि या वाहन खरीदना अनिवार्य नहीं और वित्तीय सलाह नहीं है।",
+        "धन्वन्तरी-स्मरण चिकित्सकीय उपचार का स्थान नहीं लेता और स्वास्थ्य-फल की गारंटी नहीं देता।",
+        "सटीक औपचारिक मुहूर्त और मन्त्र परिवार के पंचांग, ग्रन्थ या जानकार से लें।",
+        "हर लौ की देखरेख करें और जाते समय बुझाएँ।"
+      ],
+      "short_answer": "निर्धारित धनत्रयोदशी की संध्या को स्वास्थ्य, आजीविका और संसाधनों के प्रति कृतज्ञता तथा परिवार में प्रचलित धन्वन्तरी, लक्ष्मी या कुबेर-ध्यान के लिए रखें। धातु, आभूषण, बर्तन, दवा या कोई अन्य वस्तु खरीदना एक प्रथा हो सकती है—धार्मिक अनिवार्यता या वित्तीय सलाह नहीं।",
+      "significance": {
+        "scope_note": "यह चिकित्सा या वित्तीय सलाह नहीं और न ही पूरे भारत की एकमात्र धनतेरस-विधि है।",
+        "source_ids": [
+          "dd-news-on-air-dhanteras-identity-2026",
+          "maharashtra-tourism-diwali-2026"
+        ],
+        "text": "उत्तर और पश्चिम भारत की इस सीमित गृह-धारा में धनत्रयोदशी स्वास्थ्य, आजीविका, संसाधनों के नैतिक उपयोग और दीपावली की तैयारी के प्रति कृतज्ञता का अवसर है। वर्तमान स्रोत धन्वन्तरी, कुबेर और लक्ष्मी के अलग-अलग पारिवारिक केन्द्रों को सुरक्षित रखते हैं; खरीदारी भक्ति की अनिवार्यता नहीं है।"
+      },
+      "title": "घर में धनत्रयोदशी",
+      "typical_practices": [
+        {
+          "description": "परिवार सायंकाल घर को व्यवस्थित कर धन्वन्तरी, लक्ष्मी-कुबेर, आजीविका के साधन या केवल दीपावली-तैयारी में से अपनी परिचित धारा चुनते हैं; परिचित अर्पण और प्रार्थना करते हैं। खरीद एक प्रचलित रीति हो सकती है, आवश्यकता नहीं।",
+          "instructional": false,
+          "population_scope": "सम्बन्धित उत्तर/पश्चिम भारतीय परिवार",
+          "practice_id": "north-west-dhantrayodashi-household",
+          "source_ids": [
+            "dd-news-on-air-dhanteras-identity-2026",
+            "drikpanchang-dhanteras-practice"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "धन्वन्तरी, लक्ष्मी-कुबेर, बही/औजार या सरल तैयारी के केन्द्र अलग हो सकते हैं; परिवार की परम्परा चुनती है।",
+          "scope": "परिवार का उपासना-केन्द्र",
+          "separate_lane_required": false,
+          "source_ids": [
+            "dd-news-on-air-dhanteras-identity-2026",
+            "drikpanchang-dhanteras-practice"
+          ],
+          "variant_id": "dhanvantari-lakshmi-kubera-or-livelihood-focus"
+        },
+        {
+          "difference": "यम दीपम का समय, अर्थ और दीप-दान अपनी अलग धारा में है; यह धनत्रयोदशी पूजा में स्वतः नहीं मिलाया गया।",
+          "scope": "समीपवर्ती त्रयोदशी रीति",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-dhantrayodashi-date-fixture"
+          ],
+          "variant_id": "yama-deepam-separate"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "dhantrayodashi"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "c88547ab6e858c28ed6b60f209ff26ca1194d1e6820e3c5c6fce958b72d7347a",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/dhantrayodashi-delhi-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-dhantrayodashi-date-fixture",
+      "source_role": "Deterministic New Delhi 2026 date selection; not a complete puja muhurta or ritual authority",
+      "title": "Devam Dhantrayodashi New Delhi 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://maharashtratourism.gov.in/festivals/diwali/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 627474,
+        "response_sha256": "0628c7135a7c1177aa92392fd416476aa98ce8aa47d41c4cd0db766bb74e9d92",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "rights_lane": "citation_only",
+      "source_id": "maharashtra-tourism-diwali-2026",
+      "source_role": "Official current Maharashtra sequence and regional context; not a complete ritual manual",
+      "title": "Diwali: the festival of light, joy, and togetherness",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://newsonair.gov.in/dhanteras-auspicious-day-for-worship-and-new-purchases/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 77901,
+        "response_sha256": "59b9b2b48b98688967a78b9568cd24493f57bfc010caa4365180aa0ccde651e2",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Akashvani / News on AIR",
+      "rights_lane": "citation_only",
+      "source_id": "dd-news-on-air-dhanteras-identity-2026",
+      "source_role": "Official public-broadcaster evidence for Dhantrayodashi, Dhanvantari-Jayanti, and current Dhanvantari, Kubera, and Lakshmi associations",
+      "title": "Dhanteras: auspicious day for worship and new purchases",
+      "url": "https://newsonair.gov.in/dhanteras-auspicious-day-for-worship-and-new-purchases/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?geoname-id=1261481&year=2026",
+        "observed_at": "2026-08-07",
+        "response_bytes": 81810,
+        "response_sha256": "93b2fc7172ba3d5226e9b4b2e833e5339f51f3d5d6d73c3d5dd458304c5e5e41",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-dhanteras-practice",
+      "source_role": "Current practitioner date, pradosha, and deity-association reference; not universal family authority",
+      "title": "Dhanteras Puja and Dhantrayodashi context",
+      "url": "https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?geoname-id=1261481&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/festivals/dhanteras/legends/dhanteras-legends.html",
+        "observed_at": "2026-08-07",
+        "response_bytes": 62931,
+        "response_sha256": "316108d41d84bb5d6e9c4ab6b2cc32b8842e282c57715cd7c39f66d0a57ca57e",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-dhanteras-lakshmi-farmer-legend",
+      "source_role": "Current practitioner-retold Dhanteras legend; story evidence only, not universal history or ritual authority",
+      "title": "Dhanteras Story — Goddess Lakshmi and the Farmer",
+      "url": "https://www.drikpanchang.com/festivals/dhanteras/legends/dhanteras-legends.html"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-dhantrayodashi-safety-boundary",
+      "source_role": "Editorial product-safety boundary; not scripture, medicine, finance, or ritual authority",
+      "title": "Devam Dhantrayodashi health, finance, purchase, and flame boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-dhantrayodashi-north-west-india-v1"
+  ]
+}

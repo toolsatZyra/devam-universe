@@ -1,0 +1,195 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-diwali-lakshmi-puja-west-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "diwali-lakshmi-puja",
+  "scope": {
+    "region_codes": ["west-india"],
+    "tradition_codes": ["smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "family_custom_overrides_generic_sequence": true,
+    "precise_muhurta_requires_separate_local_calendar": true
+  },
+  "sources": [
+    {
+      "source_id": "maharashtra-tourism-diwali-2026",
+      "title": "Diwali: the festival of light, joy, and togetherness",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/",
+      "source_class": "official_current",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["Maharashtra five-day frame beginning after Vasubaras", "Dhantrayodashi, Naraka Chaturdashi, Lakshmi Pujan, Bali Pratipada and Bhau Beej identities", "family gathering, lamps, Lakshmi and Ganesha worship"]
+    },
+    {
+      "source_id": "drikpanchang-diwali-puja-vidhi-2026",
+      "title": "Detailed Deepavali Puja Vidhi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/diwali/info/diwali-puja-vidhi.html?lang=en",
+      "source_class": "current_practitioner_reference",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["Lakshmi-Ganesha household puja frame", "optional bahi-khata and regional business practice", "formal expanded sequence boundary"],
+      "limitations": ["its fasting and formal mantra prescriptions are not adopted by this internal-beta household synthesis"]
+    },
+    {
+      "source_id": "maharashtra-gazetteer-diwali-household",
+      "title": "Hindu Religious Practices: Dipavali",
+      "publisher": "Gazetteers Department, Government of Maharashtra",
+      "url": "https://www.gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/Poona/PART%20III/Chap%20%283%29/Hindu%20Religious%20Practices.htm",
+      "source_class": "state_historical_ethnography",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["historical Maharashtra household Diwali sequence", "Lakshmi Puja in the evening", "lamps, offerings, family and social context"],
+      "limitations": ["historical regional description, not a modern universal prescription"]
+    },
+    {
+      "source_id": "devam-nirnayasindhu-diwali-rule",
+      "title": "Nirnayasindhu — Marathi translation, Mumbai 1865",
+      "publisher": "Ganapat Krishnaji's Press; retained by Devam",
+      "url": "https://archive.org/details/in.ernet.dli.2015.365977",
+      "source_class": "historical_primary_ritual_source",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "private_evidence",
+      "supports": ["Amavasya at pradosha as the bounded Lakshmi Puja civil-evening rule", "separate Naraka Chaturdashi, Bali Pratipada, Govardhan and Yama Dvitiya boundaries"],
+      "citation": {"ingestion_plan": "ingestion/plans/nirnayasindhu-marathi-1865-v1.json", "pdf_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b", "pdf_pages": [214, 215, 216, 217, 218, 219, 220]}
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "diwali-lakshmi-puja-west-india-en-v1",
+      "language_code": "en",
+      "title": "Diwali Lakshmi Puja at home",
+      "summary": "Use the locally selected Diwali evening as a family practice of light, gratitude, ethical prosperity, and sharing. The simple form is complete in its own scope; a day-long fast, new idols, account-book worship, fireworks, or a formal mantra sequence are not required.",
+      "family_practice_note": "Tell Sarthi whether your home worships Lakshmi alone or Lakshmi with Ganesha, keeps Chopda/Bahi-Khata Pujan, follows a Maharashtrian Padwa sequence, or belongs to another regional tradition. Bengali Kali Puja, South Indian Deepavali, Jain Diwali, Bandi Chhor Divas, and Nepal Tihar remain distinct and are not folded into this guide.",
+      "context_prompts": ["Which region and family or sampradaya practice do you follow?", "Does your household worship Lakshmi alone or Lakshmi with Ganesha?", "Do you keep account-book or business worship as a family practice?", "Can every lamp and incense source remain attended and safely ventilated?"],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "Light, gratitude, and one offering",
+          "estimated_minutes": 12,
+          "materials": [
+            {"item": "A clean place and the Lakshmi or Lakshmi-Ganesha focus your family already uses", "substitutions": ["Use a familiar image, existing home shrine, or mental focus; do not buy a new idol for this guide"], "optional": false},
+            {"item": "Clean water, one flower or leaf, and fruit or a simple sweet", "substitutions": ["Offer one respectful locally available item"], "optional": false},
+            {"item": "One small lamp", "substitutions": ["Use a safe electric light or a flame-free prayer where fire is unsafe"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Use Devam's resolved civil evening for your location and tradition; for a precise muhurta, follow the separate local calendar or family practitioner rather than guessing from a generic clock time.", "why": "The current observance rule selects the evening by Amavasya at pradosha but does not calculate a complete muhurta.", "optional": false, "source_ids": ["devam-nirnayasindhu-diwali-rule", "drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 2, "instruction": "Clean the place and your hands, settle the household, and state gratitude for what sustains the family and an intention to use prosperity ethically.", "why": "The practice is framed around light, household wellbeing, and responsible abundance rather than fear or a guaranteed material result.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]},
+            {"ordinal": 3, "instruction": "Welcome Lakshmi in the form your family knows; include Ganesha only if that is your household practice. Offer water, the flower or leaf, and fruit or sweet.", "why": "The sources support Lakshmi and common Lakshmi-Ganesha practice while the guide preserves family variation.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 4, "instruction": "Use a familiar prayer, divine name, or family arati; sit quietly, share the offered food, and extinguish every flame before leaving it unattended.", "why": "A concise known prayer avoids invented mantra instruction and closes with safe family sharing.", "optional": false, "source_ids": ["maharashtra-gazetteer-diwali-household", "maharashtra-tourism-diwali-2026"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Household Lakshmi Pujan",
+          "estimated_minutes": 35,
+          "materials": [
+            {"item": "Clean stable platform, existing Lakshmi or Lakshmi-Ganesha focus, clean cloth, water, flowers or leaves, fruit or sweets", "substitutions": ["Use the minimum form when a full setup is not already familiar"], "optional": false},
+            {"item": "Rangoli, doorway decoration, and supervised lamps", "substitutions": ["Use reusable decoration and electric lights where flame, smoke, pets, or children create risk"], "optional": true},
+            {"item": "Account book, tools of livelihood, or study materials", "substitutions": ["Include only what your family normally honours; this is not required"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Prepare and illuminate the home safely, keeping exits clear and every flame supervised.", "why": "Light and household preparation are central current and historical themes, but spectacle and fire risk are not devotional requirements.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]},
+            {"ordinal": 2, "instruction": "At the bounded evening, place the familiar deity focus respectfully and begin with your family's usual opening prayer.", "why": "The guide uses the calendar decision but leaves exact invocation and lineage practice to the household.", "optional": false, "source_ids": ["devam-nirnayasindhu-diwali-rule", "drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 3, "instruction": "Offer water, flowers or leaves, fruit or sweets, light if safe, and a familiar Lakshmi prayer or arati. Include Ganesha, a kalasha, coins, or account books only where already customary.", "why": "This preserves a recognisable household form while marking expanded elements as contextual rather than universal.", "optional": false, "source_ids": ["drikpanchang-diwali-puja-vidhi-2026", "maharashtra-tourism-diwali-2026"]},
+            {"ordinal": 4, "instruction": "Name one concrete commitment for honest livelihood, careful use of resources, generosity, or debt responsibility; close and share prasad with family or neighbours.", "why": "The meaning of prosperity is made actionable without promising supernatural financial outcomes.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Family-text or priest-led Lakshmi Puja",
+          "estimated_minutes": 75,
+          "materials": [{"item": "The exact materials, images, text, and offerings specified by your family manual or practitioner", "substitutions": ["Use the standard form rather than improvising formal upacharas"], "optional": false}, {"item": "A safe, ventilated plan for lamps and incense", "substitutions": ["Keep the ceremony flame-free where needed"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the precise local muhurta and the household's Lakshmi, Lakshmi-Ganesha, Chopda, or other established sequence with the family practitioner.", "why": "Formal order, deity set, and business practice vary materially and are not safely derived from a generic national template.", "optional": false, "source_ids": ["drikpanchang-diwali-puja-vidhi-2026", "devam-nirnayasindhu-diwali-rule"]},
+            {"ordinal": 2, "instruction": "Follow that known text and pronunciation with its own purification, invocation, offerings, reading, arati, and closing; do not use this summary as a substitute for the formal manual.", "why": "The elaborate lane preserves living ritual authority and avoids fabricated mantra or priestly instruction.", "optional": false, "source_ids": ["drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 3, "instruction": "Close with prasad, family hospitality, safe extinguishing of flames, and a practical act of generosity or responsible stewardship.", "why": "Social sharing and responsible prosperity connect the ceremony to household life.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]}
+          ]
+        }
+      ],
+      "daily_sequence": [
+        {"ordinal": 1, "common_name": "Vasubaras / Govatsa Dwadashi", "reflection": "Honour care, nourishment, and interdependence; the exact Govatsa date is resolved, but its household procedure remains separate.", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "Govatsa Dwadashi is resolved for the bounded West India context; Vasubaras practice is not completed here."},
+        {"ordinal": 2, "common_name": "Dhantrayodashi / Yama Deepam", "reflection": "Keep prosperity, health traditions, and Yama Deepa as distinct family lanes rather than one generic shopping ritual.", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "Yama Deepam is resolved; complete Dhanteras and Dhanvantari practice is still open."},
+        {"ordinal": 3, "common_name": "Naraka Chaturdashi / Kali Chaudas", "reflection": "Practices differ sharply by region; use the household form you know rather than merging oil-bath, Kali, and other lanes.", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "Naraka Chaturdashi is resolved; Kali Chaudas and South Indian practice are separate and unresolved."},
+        {"ordinal": 4, "common_name": "Lakshmi Pujan / Diwali", "reflection": "Bring light, gratitude, ethical prosperity, prayer, and family sharing together in the supported household lane.", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "resolved_for_bounded_2026_context", "calendar_note": "The civil evening and this West India household guide are resolved; a precise formal muhurta is separate."},
+        {"ordinal": 5, "common_name": "Bali Pratipada / Padwa and Govardhan Puja", "reflection": "Keep Maharashtrian Padwa/Bali and Vaishnava Govardhan/Annakut practices distinct even when the civil date coincides.", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "The bounded dates are resolved, but their separate household and temple procedures remain open."},
+        {"ordinal": 6, "common_name": "Bhau Beej / Bhai Dooj", "reflection": "Celebrate the sibling relationship in the form your family knows, including chosen and non-traditional family structures where appropriate.", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "The bounded date is resolved; regional sibling rites remain separate."}
+      ]
+    },
+    {
+      "guide_id": "diwali-lakshmi-puja-west-india-hi-v1",
+      "language_code": "hi",
+      "title": "घर में दीपावली लक्ष्मी-पूजन",
+      "summary": "स्थानीय रूप से चुनी गयी दीपावली की संध्या को प्रकाश, कृतज्ञता, धर्मसम्मत समृद्धि और बाँटने की पारिवारिक साधना बनाएँ। सरल विधि अपने सीमित स्वरूप में पूर्ण है; पूरे दिन का उपवास, नयी मूर्तियाँ, बही-खाता पूजा, पटाखे या औपचारिक मन्त्र-क्रम आवश्यक नहीं हैं।",
+      "family_practice_note": "सार्थी को बताएँ कि आपके घर में केवल लक्ष्मी या लक्ष्मी-गणेश की पूजा होती है, चोपड़ा/बही-खाता पूजन होता है, महाराष्ट्रीय पाडवा-क्रम है या कोई अन्य क्षेत्रीय परम्परा। बंगाली काली पूजा, दक्षिण भारतीय दीपावली, जैन दीपावली, बन्दी छोड़ दिवस और नेपाल तिहार अलग परम्पराएँ हैं और इस मार्गदर्शिका में नहीं मिलायी गयीं।",
+      "context_prompts": ["आप किस क्षेत्र और पारिवारिक या सम्प्रदायिक परम्परा का पालन करते हैं?", "आपके घर में केवल लक्ष्मी या लक्ष्मी-गणेश की पूजा होती है?", "क्या आपके परिवार में बही-खाता या व्यापार-पूजन होता है?", "क्या हर दीप और धूप सुरक्षित निगरानी और हवादार स्थान में रहेंगे?"],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "प्रकाश, कृतज्ञता और एक अर्पण",
+          "estimated_minutes": 12,
+          "materials": [{"item": "स्वच्छ स्थान और परिवार में प्रचलित लक्ष्मी या लक्ष्मी-गणेश का ध्यान", "substitutions": ["परिचित चित्र, घर का मौजूदा पूजा-स्थान या मानसिक ध्यान रखें; इस मार्गदर्शिका के लिए नयी मूर्ति न खरीदें"], "optional": false}, {"item": "स्वच्छ जल, एक फूल या पत्ता, और फल या सरल मिठाई", "substitutions": ["एक श्रद्धापूर्ण स्थानीय अर्पण करें"], "optional": false}, {"item": "एक छोटा दीप", "substitutions": ["जहाँ अग्नि असुरक्षित हो वहाँ सुरक्षित विद्युत-प्रकाश या अग्नि-रहित प्रार्थना करें"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "अपने स्थान और परम्परा के लिए देवम द्वारा चुनी गयी संध्या लें; सटीक मुहूर्त के लिए अलग स्थानीय पंचांग या पारिवारिक जानकार का अनुसरण करें।", "why": "वर्तमान नियम प्रदोष में अमावस्या से संध्या चुनता है, पर पूर्ण मुहूर्त की गणना नहीं करता।", "optional": false, "source_ids": ["devam-nirnayasindhu-diwali-rule", "drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 2, "instruction": "स्थान और हाथ स्वच्छ करें, परिवार को साथ बैठाएँ और जीवन को सहारा देने वाली वस्तुओं के प्रति कृतज्ञता तथा समृद्धि के धर्मसम्मत उपयोग का संकल्प लें।", "why": "साधना भय या निश्चित धन-फल के बजाय प्रकाश, गृह-कल्याण और उत्तरदायी समृद्धि पर केन्द्रित रहती है।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]},
+            {"ordinal": 3, "instruction": "परिवार के परिचित स्वरूप में लक्ष्मी का स्वागत करें; गणेश को तभी सम्मिलित करें जब यह आपके घर की परम्परा हो। जल, फूल या पत्ता और फल या मिठाई अर्पित करें।", "why": "स्रोत लक्ष्मी तथा सामान्य लक्ष्मी-गणेश पूजा का समर्थन करते हैं, जबकि मार्गदर्शिका पारिवारिक भिन्नता सुरक्षित रखती है।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 4, "instruction": "परिचित प्रार्थना, देव-नाम या पारिवारिक आरती करें; कुछ देर शान्त बैठें, नैवेद्य बाँटें और जाने से पहले हर लौ सुरक्षित बुझाएँ।", "why": "छोटी परिचित प्रार्थना गढ़े हुए मन्त्र से बचाती है और सुरक्षित पारिवारिक साझेदारी के साथ समापन करती है।", "optional": false, "source_ids": ["maharashtra-gazetteer-diwali-household", "maharashtra-tourism-diwali-2026"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "गृह लक्ष्मी-पूजन",
+          "estimated_minutes": 35,
+          "materials": [{"item": "स्वच्छ स्थिर चौकी, परिचित लक्ष्मी या लक्ष्मी-गणेश ध्यान, स्वच्छ वस्त्र, जल, फूल या पत्ते, फल या मिठाई", "substitutions": ["पूरा क्रम परिचित न हो तो सरल विधि करें"], "optional": false}, {"item": "रंगोली, द्वार-सज्जा और निगरानी वाले दीप", "substitutions": ["अग्नि, धुएँ, बच्चों या पालतू पशुओं का जोखिम हो तो पुन:प्रयोग योग्य सजावट और विद्युत-प्रकाश लें"], "optional": true}, {"item": "बही-खाता, आजीविका के उपकरण या अध्ययन सामग्री", "substitutions": ["केवल परिवार में प्रचलित हो तो रखें; यह अनिवार्य नहीं है"], "optional": true}],
+          "steps": [
+            {"ordinal": 1, "instruction": "घर को स्वच्छ और सुरक्षित रूप से प्रकाशित करें; निकास खुले रखें और हर लौ की निगरानी करें।", "why": "प्रकाश और गृह-तैयारी मुख्य विषय हैं, पर प्रदर्शन और अग्नि-जोखिम भक्ति की आवश्यकता नहीं हैं।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]},
+            {"ordinal": 2, "instruction": "चुनी गयी संध्या पर परिचित देव-ध्यान को आदर से रखें और परिवार की सामान्य आरम्भिक प्रार्थना करें।", "why": "मार्गदर्शिका तिथि-निर्णय का उपयोग करती है, पर आह्वान और परम्परा का क्रम परिवार पर छोड़ती है।", "optional": false, "source_ids": ["devam-nirnayasindhu-diwali-rule", "drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 3, "instruction": "जल, फूल या पत्ता, फल या मिठाई और सुरक्षित हो तो दीप अर्पित करें; परिचित लक्ष्मी-प्रार्थना या आरती करें। गणेश, कलश, सिक्के या बही-खाता केवल परम्परा में हो तो जोड़ें।", "why": "यह विस्तृत तत्वों को सार्वभौम न बनाते हुए परिचित गृह-पूजा सुरक्षित रखता है।", "optional": false, "source_ids": ["drikpanchang-diwali-puja-vidhi-2026", "maharashtra-tourism-diwali-2026"]},
+            {"ordinal": 4, "instruction": "ईमानदार आजीविका, संसाधनों के सावधान उपयोग, उदारता या ऋण-उत्तरदायित्व का एक ठोस संकल्प लें; नैवेद्य परिवार या पड़ोसियों में बाँटकर समापन करें।", "why": "समृद्धि के अर्थ को निश्चित अलौकिक धन-फल का वादा किए बिना जीवन में उतारा जाता है।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "पारिवारिक ग्रन्थ या पुरोहित-निर्देशित लक्ष्मी-पूजा",
+          "estimated_minutes": 75,
+          "materials": [{"item": "पारिवारिक ग्रन्थ या जानकार द्वारा बतायी गयी ठीक सामग्री, देव-ध्यान, पाठ और अर्पण", "substitutions": ["औपचारिक उपचार गढ़ने के बजाय मध्यम विधि करें"], "optional": false}, {"item": "दीप और धूप के लिए सुरक्षित, हवादार योजना", "substitutions": ["आवश्यक हो तो अग्नि-रहित पूजा रखें"], "optional": false}],
+          "steps": [
+            {"ordinal": 1, "instruction": "सटीक स्थानीय मुहूर्त और परिवार का लक्ष्मी, लक्ष्मी-गणेश, चोपड़ा या अन्य स्थापित क्रम पारिवारिक जानकार से निश्चित करें।", "why": "औपचारिक क्रम, देवता और व्यापार-पूजा में पर्याप्त भिन्नता है; इन्हें सामान्य राष्ट्रीय टेम्पलेट से नहीं गढ़ना चाहिए।", "optional": false, "source_ids": ["drikpanchang-diwali-puja-vidhi-2026", "devam-nirnayasindhu-diwali-rule"]},
+            {"ordinal": 2, "instruction": "उसी ज्ञात ग्रन्थ और उच्चारण के अनुसार शुद्धि, आह्वान, अर्पण, पाठ, आरती और समापन करें; इस सारांश को औपचारिक विधान का विकल्प न बनाएँ।", "why": "विस्तृत विधि जीवित परम्परा के अधिकार को सुरक्षित रखती है और गढ़े हुए मन्त्र या पुरोहित-निर्देश से बचती है।", "optional": false, "source_ids": ["drikpanchang-diwali-puja-vidhi-2026"]},
+            {"ordinal": 3, "instruction": "नैवेद्य, पारिवारिक आतिथ्य, लौ की सुरक्षित समाप्ति और उदारता या उत्तरदायी संसाधन-प्रबन्ध के एक कर्म के साथ समापन करें।", "why": "साझेदारी और उत्तरदायी समृद्धि पूजा को गृह-जीवन से जोड़ते हैं।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household"]}
+          ]
+        }
+      ],
+      "daily_sequence": [
+        {"ordinal": 1, "common_name": "वसुबारस / गोवत्स द्वादशी", "reflection": "देखभाल, पोषण और परस्पर निर्भरता का सम्मान करें; गोवत्स की तिथि निश्चित है, पर गृह-विधि अलग है।", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "पश्चिम भारत के सीमित सन्दर्भ में गोवत्स द्वादशी निश्चित है; वसुबारस की पूरी विधि यहाँ पूर्ण नहीं है।"},
+        {"ordinal": 2, "common_name": "धनत्रयोदशी / यम दीपम", "reflection": "समृद्धि, स्वास्थ्य-परम्परा और यम-दीप को एक सामान्य खरीदारी-विधि में न मिलाएँ।", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "यम दीपम निश्चित है; सम्पूर्ण धनतेरस और धन्वन्तरी विधि अभी खुली है।"},
+        {"ordinal": 3, "common_name": "नरक चतुर्दशी / काली चौदस", "reflection": "क्षेत्रीय विधियाँ बहुत भिन्न हैं; तेल-स्नान, काली और अन्य परम्पराओं को मिलाने के बजाय परिचित गृह-विधि करें।", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "नरक चतुर्दशी निश्चित है; काली चौदस और दक्षिण भारतीय विधि अलग और अपूर्ण हैं।"},
+        {"ordinal": 4, "common_name": "लक्ष्मी-पूजन / दीपावली", "reflection": "समर्थित गृह-परम्परा में प्रकाश, कृतज्ञता, धर्मसम्मत समृद्धि, प्रार्थना और साझेदारी को एक साथ लाएँ।", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "maharashtra-gazetteer-diwali-household", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "resolved_for_bounded_2026_context", "calendar_note": "सन्ध्या और यह पश्चिम भारत गृह-विधि निश्चित हैं; सटीक औपचारिक मुहूर्त अलग है।"},
+        {"ordinal": 5, "common_name": "बली प्रतिपदा / पाडवा और गोवर्धन पूजा", "reflection": "तिथि एक हो तो भी महाराष्ट्रीय पाडवा/बली और वैष्णव गोवर्धन/अन्नकूट को अलग रखें।", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "सीमित तिथियाँ निश्चित हैं, पर अलग गृह और मन्दिर विधियाँ अभी खुली हैं।"},
+        {"ordinal": 6, "common_name": "भाऊबीज / भाई दूज", "reflection": "भाई-बहन के सम्बन्ध को अपने परिवार की परिचित विधि में मनाएँ और जहाँ उचित हो चुने हुए तथा गैर-पारम्परिक परिवार को भी स्थान दें।", "ritual_requirement": false, "source_ids": ["maharashtra-tourism-diwali-2026", "devam-nirnayasindhu-diwali-rule"], "calendar_status": "partially_resolved_distinct_lanes", "calendar_note": "सीमित तिथि निश्चित है; क्षेत्रीय भाई-बहन विधियाँ अलग हैं।"}
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "status_labelled_diwali_sequence_included": true,
+    "formal_priest_mantras_included": false,
+    "fasting_or_medical_regimen_prescribed": false,
+    "fireworks_required_or_recommended": false,
+    "precise_muhurta_calculated": false,
+    "guaranteed_wealth_outcome_claimed": false,
+    "historical_prescriptions_promoted_as_modern_norms": false,
+    "one_universal_procedure_claimed": false,
+    "all_regional_variants_complete": false,
+    "dhanteras_and_dhanvantari_lane_complete": false,
+    "bengali_kali_puja_included": false,
+    "south_indian_deepavali_included": false,
+    "jain_diwali_included": false,
+    "bandi_chhor_divas_included": false,
+    "nepal_tihar_included": false
+  }
+}

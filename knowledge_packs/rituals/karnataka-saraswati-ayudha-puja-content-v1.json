@@ -1,0 +1,832 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "karnataka-saraswati-ayudha-puja-content-v1",
+  "observance_slugs": [
+    "karnataka-saraswati-ayudha-puja"
+  ],
+  "applicability": {
+    "region_codes": [
+      "south-india"
+    ],
+    "tradition_codes": [
+      "smarta-south-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "community"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "south-india",
+        "tradition_code": "smarta-south-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Are you following a Bengaluru, Mysuru, coastal Karnataka, Sringeri-aligned, workplace, school, or another family form?",
+      "Is your need Saraswati learning practice, safe household Ayudha gratitude, Gombe Habba, or participation in an established institution?",
+      "Which books, instruments, tools, image, prayer, reading, flowers, food, or closing practice is already familiar to the family?",
+      "Do you need a material-free, flame-free, food-free, spend-free, child-safe, mobility-safe, or short form?"
+    ]
+  },
+  "calendar": {
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "live_schedule_required": true,
+    "decision_rule_id": "devam-karnataka-mahanavami-ayudha-puja-official-2026-v1",
+    "freshness_note": "The bounded Bengaluru/Karnataka 2026 lane resolves Tuesday, 20 October. Recheck the family, school, workplace, temple, or math for its exact procedure and live timing.",
+    "resolution_source_ids": [
+      "cgst-karnataka-holiday-list-2026-mahanavami",
+      "nic-karnataka-mahanavami-ayudhapooja",
+      "sringeri-sriyantra-navaratri-sarasvati",
+      "sringeri-2025-mahanavami-ayudha-vahana"
+    ]
+  },
+  "sources": [
+    {
+      "source_id": "cgst-karnataka-holiday-list-2026-mahanavami",
+      "title": "Bilingual Holiday List 2026",
+      "publisher": "CGST Karnataka",
+      "url": "https://gstkarnataka.gov.in/media/pdf/notifications/public-notices/2025-12-31_Holiday_List_for_the_year_2026_20251231_120602.pdf",
+      "source_role": "Official Karnataka-located 2026 Dussehra/Navami civil-date evidence; not ritual authority",
+      "rights_lane": "citation_only",
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null
+    },
+    {
+      "source_id": "nic-karnataka-mahanavami-ayudhapooja",
+      "title": "Mahanavami, Ayudhapooja",
+      "publisher": "NIC Karnataka",
+      "url": "https://karnataka.nic.in/en/holiday/mahanavami-ayudhapooja/",
+      "source_role": "Official Karnataka combined identity; not a date-complete or procedural source",
+      "rights_lane": "citation_only",
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "observed_at": "2026-08-07",
+        "status": 200,
+        "final_url": "https://karnataka.nic.in/en/holiday/mahanavami-ayudhapooja/",
+        "response_bytes": 88292,
+        "response_sha256": "3dd0a7054170465847edf5322f00d697a6f3bd0822f83cabb3a0c8668cbc6d11",
+        "strict_utf8": true
+      }
+    },
+    {
+      "source_id": "sringeri-sriyantra-navaratri-sarasvati",
+      "title": "Sriyantra — Navaratri",
+      "publisher": "Sringeri Sharada Peetham",
+      "url": "https://www.sringeri.info/sriyantra/",
+      "source_role": "Official tradition evidence for ninth-day Sarasvati Puja and learning; not household vidhi",
+      "rights_lane": "citation_only",
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "observed_at": "2026-08-07",
+        "status": 200,
+        "final_url": "https://www.sringeri.info/sriyantra/",
+        "response_bytes": 56235,
+        "response_sha256": "2302d71b9eb99cb4839fda94a8f439760b17d3f2fd2297d63ce0d68ccac71b16",
+        "strict_utf8": true
+      }
+    },
+    {
+      "source_id": "sringeri-2025-mahanavami-ayudha-vahana",
+      "title": "Vishwavasu Samvatsara Sharada Sharan Navaratri Celebrations",
+      "publisher": "Sringeri Sharada Peetham",
+      "url": "https://www.sringeri.net/events/vishwavasu-samvatsara-sharada-sharan-navaratri-celebrations",
+      "source_role": "Official institutional Mahanavami, Ayudha and Vahana context; not household or workplace instruction",
+      "rights_lane": "citation_only",
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "observed_at": "2026-08-07",
+        "status": 200,
+        "final_url": "https://www.sringeri.net/events/vishwavasu-samvatsara-sharada-sharan-navaratri-celebrations",
+        "response_bytes": 177565,
+        "response_sha256": "d18b1410fc333ec2cf028e3a430965db868c7beff84c18700b8b65457ede5fac",
+        "strict_utf8": true
+      }
+    },
+    {
+      "source_id": "karnataka-tourism-gombe-habba",
+      "title": "Gombe Habba",
+      "publisher": "Karnataka Tourism",
+      "url": "https://karnatakatourism.org/en/experiences/gombe-habba/",
+      "source_role": "Official regional household context and ninth-day Saraswati identity; not a universal requirement",
+      "rights_lane": "citation_only",
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "observed_at": "2026-08-07",
+        "status": 200,
+        "final_url": "https://karnatakatourism.org/en/experiences/gombe-habba/",
+        "response_bytes": 59467,
+        "response_sha256": "c1934e58ab6c1071a8345ea74e2876482abd90b3d609b221ca157887369d14ba",
+        "strict_utf8": true
+      }
+    },
+    {
+      "source_id": "devam-karnataka-saraswati-ayudha-safety-boundary",
+      "title": "Devam Karnataka Saraswati/Ayudha safety and scope boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_role": "Editorial safety and authority boundary; not scripture or ritual authority",
+      "rights_lane": "internal_only",
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "title": "Karnataka Saraswati and Ayudha Puja participation",
+      "short_answer": "For the bounded Bengaluru/Karnataka 2026 lane, observe Saraswati Puja and Ayudha Puja on Tuesday, 20 October. First ask what your family actually keeps. A safe minimum is to clean the space, place familiar books, instruments, or small non-hazardous tools respectfully, remember Saraswati as the Goddess of learning, offer a known prayer or quiet gratitude, and close before returning anything to use. Do not touch live machinery, improvise mantras, or treat vehicle, homa, temple, and workplace rites as app-led household steps.",
+      "significance": {
+        "text": "Sringeri identifies the ninth day of Navaratri with Sarasvati Puja and learning. Karnataka's official public identity joins Mahanavami with Ayudha Puja; current Sringeri evidence also places Ayudha and Vahana Puja on Mahanavami. The supported user action is gratitude toward learning and the instruments of responsible work, not a universal liturgy or promised outcome.",
+        "source_ids": [
+          "nic-karnataka-mahanavami-ayudhapooja",
+          "sringeri-sriyantra-navaratri-sarasvati",
+          "sringeri-2025-mahanavami-ayudha-vahana"
+        ],
+        "scope_note": "Institutional worship, household customs, Gombe Habba, workplace practice, and other South Indian forms remain attributable and distinct."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "sharada-sarasvati-learning-context",
+          "title": "Sarasvati on the ninth day",
+          "summary": "Sringeri describes the ninth day as especially devoted to Sarasvati, Goddess of learning. Devam preserves that attribution without claiming one universal theology or household sequence.",
+          "tradition_scope": "Sringeri Sharada tradition used for the bounded Karnataka lane",
+          "source_ids": [
+            "sringeri-sriyantra-navaratri-sarasvati"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "karnataka-mahanavami-ayudha-context",
+          "title": "Mahanavami and Ayudha context",
+          "summary": "Official Karnataka sources join Mahanavami and Ayudha Puja; current Sringeri evidence records Ayudha and Vahana Puja on Mahanavami. This is living context, not a complete household, vehicle, or workplace ritual.",
+          "tradition_scope": "Karnataka public identity and Sringeri institutional observation",
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-2025-mahanavami-ayudha-vahana"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "learning-and-tool-gratitude",
+          "population_scope": "Karnataka household or participant contexts represented by the sources",
+          "description": "The app supports respectful attention to learning materials and only safe, inactive, familiar tools; it does not reproduce formal worship or operational-equipment rites.",
+          "source_ids": [
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-gombe-household-context",
+          "population_scope": "Karnataka homes that already keep Gombe Habba",
+          "description": "Karnataka Tourism describes doll displays, home visits and sweets, Saraswati Puja on the ninth day, and packing the dolls on the tenth. Gombe Habba is optional.",
+          "source_ids": [
+            "karnataka-tourism-gombe-habba"
+          ],
+          "instructional": false
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "household-learning-lane",
+          "scope": "Household and individual",
+          "difference": "Books, music, study, a known prayer, and quiet gratitude can form a safe household lane; exact placement, offerings, and close follow family practice.",
+          "source_ids": [
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "workplace-vehicle-institution-lanes",
+          "scope": "Workplace, vehicle, temple, math, and institution",
+          "difference": "Machinery, vehicles, homa, temple worship, and institutional programmes require the responsible operator or living authority and are not reproduced as household steps.",
+          "source_ids": [
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gombe-habba-optional",
+          "scope": "Gombe/Bombe households",
+          "difference": "The doll display is a related Karnataka Navaratri practice, not a requirement for every Saraswati or Ayudha observance.",
+          "source_ids": [
+            "karnataka-tourism-gombe-habba"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-regions-remain-separate",
+          "scope": "Other South Indian regions and traditions",
+          "difference": "Shared festival names do not make dates, tools, offerings, liturgy, or household customs identical.",
+          "source_ids": [
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "Never clean, decorate, touch, energize, start, stop, isolate, or restart live machinery, vehicles, weapons, electrical equipment, or hazardous tools for devotional purposes; the responsible operator controls them.",
+        "Use only familiar, non-hazardous books, instruments, or small tools in a household arrangement. Do not block access to work, emergency, medical, accessibility, or school materials.",
+        "Formal mantras, consecration, homa, Vahana Puja, temple rites, workplace shutdowns, and live schedules remain with the responsible family, teacher, priest, institution, or operator.",
+        "No doll display, purchase, fast, food, flame, flower, vehicle, tool, book, special clothing, or promised learning or prosperity outcome is required."
+      ],
+      "procedures": [
+        {
+          "procedure_id": "karnataka-saraswati-ayudha-puja-content-v1-en-minimum-v1",
+          "tier": "minimum",
+          "label": "Quiet learning and gratitude",
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "setting": "individual",
+          "authority_scope": "Bounded Karnataka participant guidance; formal ritual remains with family or institution",
+          "materials": [
+            {
+              "item": "A quiet place and one familiar book, instrument, or safe inactive item",
+              "required": true,
+              "substitutions": [
+                "Use no object and reflect on learning or responsible work"
+              ],
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your family observes this Karnataka Mahanavami lane on 20 October 2026; do not import another region's date or procedure.",
+              "why": "The date and identity are region-bounded.",
+              "optional": false,
+              "source_ids": [
+                "cgst-karnataka-holiday-list-2026-mahanavami",
+                "nic-karnataka-mahanavami-ayudhapooja"
+              ]
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Place one familiar, non-hazardous book, instrument, or inactive item respectfully, or use no object.",
+              "why": "The action keeps the lane meaningful without creating an unsafe equipment ritual.",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use a prayer you already know, read briefly, or offer quiet gratitude for learning, skill, teachers, and responsible work.",
+              "why": "The source establishes Sarasvati and learning; the app does not invent a mantra.",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "closing": {
+            "text": "Close with gratitude, clear the space safely, and return books or tools to use only after the family or responsible operator says the observance is complete.",
+            "source_ids": [
+              "devam-karnataka-saraswati-ayudha-safety-boundary"
+            ],
+            "scope_note": "Family practice and equipment safety control the exact close."
+          },
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "karnataka-tourism-gombe-habba",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ]
+        },
+        {
+          "procedure_id": "karnataka-saraswati-ayudha-puja-content-v1-en-standard-v1",
+          "tier": "standard",
+          "label": "Family books, instruments, and safe tools",
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "setting": "household",
+          "authority_scope": "Bounded Karnataka participant guidance; formal ritual remains with family or institution",
+          "materials": [
+            {
+              "item": "Only familiar household books, instruments, or small safe inactive tools",
+              "required": true,
+              "substitutions": [
+                "Use the material-free minimum form"
+              ],
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "item": "Only family-known flowers, fruit, image, lamp, or reading",
+              "required": false,
+              "substitutions": [
+                "Omit any unfamiliar, unsuitable, costly, or unsafe material"
+              ],
+              "source_ids": [
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Ask an elder which Saraswati, Ayudha, or Gombe elements this household actually keeps and who leads them.",
+              "why": "The sources show related but distinct living forms.",
+              "optional": false,
+              "source_ids": [
+                "karnataka-tourism-gombe-habba",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Clean only the household space and safe inactive items. Arrange familiar books, music or study materials, and small tools without handling machinery or vehicles.",
+              "why": "Safety authority remains with the operator, not the app.",
+              "optional": false,
+              "source_ids": [
+                "nic-karnataka-mahanavami-ayudhapooja",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use the family's known prayer or reading and offer gratitude for learning, teachers, crafts, and responsible work. Add optional familiar materials only when safe.",
+              "why": "This connects the supported significance to a family-known practice.",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Keep any Gombe display as its own family-led practice and follow the household's tenth-day close.",
+              "why": "Karnataka Tourism describes Gombe context but does not make it universal.",
+              "optional": true,
+              "source_ids": [
+                "karnataka-tourism-gombe-habba"
+              ]
+            }
+          ],
+          "closing": {
+            "text": "Close with gratitude, clear the space safely, and return books or tools to use only after the family or responsible operator says the observance is complete.",
+            "source_ids": [
+              "devam-karnataka-saraswati-ayudha-safety-boundary"
+            ],
+            "scope_note": "Family practice and equipment safety control the exact close."
+          },
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "karnataka-tourism-gombe-habba",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ]
+        },
+        {
+          "procedure_id": "karnataka-saraswati-ayudha-puja-content-v1-en-elaborate-v1",
+          "tier": "elaborate",
+          "label": "Family-, teacher-, or institution-led participation",
+          "estimated_minutes": 60,
+          "form": "institutional_participation",
+          "setting": "family_led",
+          "authority_scope": "Bounded Karnataka participant guidance; formal ritual remains with family or institution",
+          "materials": [
+            {
+              "item": "Only materials, texts, and objects chosen by the responsible family, teacher, temple, school, or workplace lead",
+              "required": true,
+              "substitutions": [
+                "Use the standard household form instead of reconstructing unknown rites"
+              ],
+              "source_ids": [
+                "sringeri-2025-mahanavami-ayudha-vahana",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Let the responsible living authority define the exact Saraswati Puja, Ayudha Puja, Vahana Puja, homa, display, reading, or programme.",
+              "why": "The institutional sources are evidence of practice, not an app-reproducible liturgy.",
+              "optional": false,
+              "source_ids": [
+                "sringeri-2025-mahanavami-ayudha-vahana",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Follow organiser directions and all equipment, traffic, fire, food, accessibility, crowd, and child-safety rules; do not touch or restart equipment unless authorized and qualified.",
+              "why": "Devotional intent does not override operational safety.",
+              "optional": false,
+              "source_ids": [
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Participate through the established prayer, reading, music, darshan, gratitude, or service available to you, then close as directed.",
+              "why": "This supports participation while preserving authority and variation.",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "sringeri-2025-mahanavami-ayudha-vahana",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "closing": {
+            "text": "Close with gratitude, clear the space safely, and return books or tools to use only after the family or responsible operator says the observance is complete.",
+            "source_ids": [
+              "devam-karnataka-saraswati-ayudha-safety-boundary"
+            ],
+            "scope_note": "Family practice and equipment safety control the exact close."
+          },
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "karnataka-tourism-gombe-habba",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "title": "कर्नाटक सरस्वती और आयुध पूजा सहभागिता",
+      "short_answer": "सीमित बेंगलुरु/कर्नाटक 2026 संदर्भ में सरस्वती पूजा और आयुध पूजा मंगलवार, 20 अक्टूबर को रखें। पहले परिवार से पूछें कि आपकी परंपरा में क्या किया जाता है। सुरक्षित न्यूनतम रूप में स्थान साफ करें, परिचित पुस्तक, वाद्य या छोटा निष्क्रिय सुरक्षित औजार आदर से रखें, विद्या की देवी सरस्वती का स्मरण करें, परिचित प्रार्थना या मौन कृतज्ञता करें और समापन के बाद ही वस्तु को उपयोग में लौटाएँ। चालू मशीन को न छुएँ और ऐप से मंत्र, होम, वाहन, मंदिर या कार्यस्थल-विधि न गढ़ें।",
+      "significance": {
+        "text": "श्रृंगेरी नवमी को सरस्वती पूजा और विद्या से जोड़ता है। कर्नाटक की आधिकारिक पहचान महानवमी को आयुध पूजा के साथ रखती है; वर्तमान श्रृंगेरी विवरण में उसी दिन आयुध और वाहन पूजा भी है। उपयोगकर्ता के लिए समर्थित अर्थ विद्या, कौशल और जिम्मेदार कार्य के साधनों के प्रति कृतज्ञता है—एक सार्वभौमिक विधि या फल की गारंटी नहीं।",
+        "source_ids": [
+          "nic-karnataka-mahanavami-ayudhapooja",
+          "sringeri-sriyantra-navaratri-sarasvati",
+          "sringeri-2025-mahanavami-ayudha-vahana"
+        ],
+        "scope_note": "संस्थागत पूजा, घरेलू परंपरा, गोम्बे हब्बा, कार्यस्थल और अन्य दक्षिण भारतीय रूप अलग और स्रोत-सम्बद्ध रहते हैं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "sharada-sarasvati-learning-context",
+          "title": "नवमी और सरस्वती",
+          "summary": "श्रृंगेरी नवमी को विद्या की देवी सरस्वती के लिए विशेष मानता है। देवम इसे स्रोत-सम्बद्ध परंपरा के रूप में रखता है, सार्वभौमिक घरेलू क्रम के रूप में नहीं।",
+          "tradition_scope": "सीमित कर्नाटक मार्ग के लिए श्रृंगेरी शारदा परंपरा",
+          "source_ids": [
+            "sringeri-sriyantra-navaratri-sarasvati"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "karnataka-mahanavami-ayudha-context",
+          "title": "महानवमी और आयुध संदर्भ",
+          "summary": "आधिकारिक कर्नाटक स्रोत महानवमी और आयुध पूजा को साथ रखते हैं; श्रृंगेरी का वर्तमान विवरण महानवमी पर आयुध और वाहन पूजा दर्ज करता है। यह जीवित संदर्भ है, पूर्ण घरेलू, वाहन या कार्यस्थल-विधि नहीं।",
+          "tradition_scope": "कर्नाटक सार्वजनिक पहचान और श्रृंगेरी संस्थागत आयोजन",
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-2025-mahanavami-ayudha-vahana"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "learning-and-tool-gratitude",
+          "population_scope": "वर्तमान स्रोतों में दर्शाए कर्नाटक घरेलू या सहभागी संदर्भ",
+          "description": "ऐप विद्या-सामग्री और केवल सुरक्षित, बंद, परिचित औजारों के प्रति सम्मान में सहायता करता है; औपचारिक पूजा या संचालन-विधि नहीं देता।",
+          "source_ids": [
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-gombe-household-context",
+          "population_scope": "वे कर्नाटक परिवार जो पहले से गोम्बे हब्बा रखते हैं",
+          "description": "कर्नाटक पर्यटन गुड़िया-सज्जा, घरों में मिलना, मिठाई, नवमी पर सरस्वती पूजा और दशमी पर गुड़िया समेटना बताता है। यह वैकल्पिक है।",
+          "source_ids": [
+            "karnataka-tourism-gombe-habba"
+          ],
+          "instructional": false
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "household-learning-lane",
+          "scope": "घर और व्यक्ति",
+          "difference": "पुस्तक, संगीत, अध्ययन, परिचित प्रार्थना और मौन कृतज्ञता सुरक्षित घरेलू रूप हो सकते हैं; सटीक क्रम परिवार तय करता है।",
+          "source_ids": [
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "workplace-vehicle-institution-lanes",
+          "scope": "कार्यस्थल, वाहन, मंदिर, मठ और संस्था",
+          "difference": "मशीन, वाहन, होम, मंदिर और संस्थागत कार्यक्रम जिम्मेदार संचालक या जीवित प्राधिकारी के अधीन हैं; इन्हें घरेलू कदमों की तरह नहीं दिया जाता।",
+          "source_ids": [
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gombe-habba-optional",
+          "scope": "गोम्बे/बोम्बे परिवार",
+          "difference": "गुड़िया-सज्जा संबंधित कर्नाटक नवरात्रि परंपरा है, हर सरस्वती या आयुध पूजा की अनिवार्यता नहीं।",
+          "source_ids": [
+            "karnataka-tourism-gombe-habba"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-regions-remain-separate",
+          "scope": "अन्य दक्षिण भारतीय क्षेत्र और परंपराएँ",
+          "difference": "समान नाम से तिथि, औजार, सामग्री, विधि या घरेलू परंपरा समान नहीं हो जाती।",
+          "source_ids": [
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "भक्ति के लिए चालू मशीन, वाहन, हथियार, बिजली-उपकरण या खतरनाक औजार को साफ, सजाएँ, छुएँ, चालू-बंद या पुनः शुरू न करें; जिम्मेदार संचालक ही नियंत्रण करता है।",
+        "घर में केवल परिचित, सुरक्षित, निष्क्रिय पुस्तक, वाद्य या छोटा औजार रखें। काम, आपात, चिकित्सा, सुगमता या स्कूल सामग्री की पहुँच न रोकें।",
+        "औपचारिक मंत्र, प्रतिष्ठा, होम, वाहन पूजा, मंदिर-विधि, कार्यस्थल बंद करना और लाइव समय परिवार, शिक्षक, पुरोहित, संस्था या संचालक के अधीन हैं।",
+        "गुड़िया-सज्जा, खरीद, व्रत, भोजन, दीप, फूल, वाहन, औजार, पुस्तक, विशेष वस्त्र या विद्या/समृद्धि का फल अनिवार्य नहीं है।"
+      ],
+      "procedures": [
+        {
+          "procedure_id": "karnataka-saraswati-ayudha-puja-content-v1-hi-minimum-v1",
+          "tier": "minimum",
+          "label": "शांत विद्या-स्मरण और कृतज्ञता",
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "setting": "individual",
+          "authority_scope": "सीमित कर्नाटक सहभागी मार्गदर्शन; औपचारिक पूजा परिवार या संस्था के अनुसार",
+          "materials": [
+            {
+              "item": "शांत स्थान और एक परिचित पुस्तक, वाद्य या सुरक्षित निष्क्रिय वस्तु",
+              "required": true,
+              "substitutions": [
+                "बिना किसी वस्तु के विद्या या जिम्मेदार कार्य पर मनन करें"
+              ],
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "परिवार से पुष्टि करें कि 20 अक्टूबर 2026 का यह कर्नाटक महानवमी रूप आपकी परंपरा में है; दूसरे क्षेत्र की तिथि या विधि न मिलाएँ।",
+              "why": "तिथि और पहचान क्षेत्र-सीमित हैं।",
+              "optional": false,
+              "source_ids": [
+                "cgst-karnataka-holiday-list-2026-mahanavami",
+                "nic-karnataka-mahanavami-ayudhapooja"
+              ]
+            },
+            {
+              "ordinal": 2,
+              "instruction": "एक परिचित, सुरक्षित, निष्क्रिय पुस्तक, वाद्य या वस्तु आदर से रखें, या कोई वस्तु न रखें।",
+              "why": "इससे अर्थ बना रहता है और असुरक्षित उपकरण-विधि नहीं बनती।",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित प्रार्थना करें, थोड़ा पढ़ें, या विद्या, कौशल, गुरु और जिम्मेदार काम के लिए मौन कृतज्ञता दें।",
+              "why": "स्रोत सरस्वती और विद्या स्थापित करता है; ऐप मंत्र नहीं गढ़ता।",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "closing": {
+            "text": "कृतज्ञता के साथ समापन करें, स्थान सुरक्षित रूप से समेटें, और परिवार या जिम्मेदार संचालक के समापन कहने के बाद ही पुस्तकों या औजारों को उपयोग में लौटाएँ।",
+            "source_ids": [
+              "devam-karnataka-saraswati-ayudha-safety-boundary"
+            ],
+            "scope_note": "सटीक समापन परिवार की परंपरा और उपकरण-सुरक्षा के अनुसार होगा।"
+          },
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "karnataka-tourism-gombe-habba",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ]
+        },
+        {
+          "procedure_id": "karnataka-saraswati-ayudha-puja-content-v1-hi-standard-v1",
+          "tier": "standard",
+          "label": "परिवार की पुस्तकें, वाद्य और सुरक्षित औजार",
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "setting": "household",
+          "authority_scope": "सीमित कर्नाटक सहभागी मार्गदर्शन; औपचारिक पूजा परिवार या संस्था के अनुसार",
+          "materials": [
+            {
+              "item": "केवल परिचित घरेलू पुस्तक, वाद्य या छोटा सुरक्षित निष्क्रिय औजार",
+              "required": true,
+              "substitutions": [
+                "सामग्री-विहीन न्यूनतम रूप अपनाएँ"
+              ],
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "item": "केवल परिवार-परिचित फूल, फल, चित्र, दीप या पाठ",
+              "required": false,
+              "substitutions": [
+                "अनजान, अनुपयुक्त, महँगी या असुरक्षित सामग्री छोड़ दें"
+              ],
+              "source_ids": [
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "किसी बड़े से पूछें कि परिवार सरस्वती, आयुध या गोम्बे में क्या रखता है और कौन नेतृत्व करता है।",
+              "why": "स्रोत संबंधित पर अलग जीवित रूप दिखाते हैं।",
+              "optional": false,
+              "source_ids": [
+                "karnataka-tourism-gombe-habba",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 2,
+              "instruction": "केवल स्थान और सुरक्षित निष्क्रिय वस्तुएँ साफ करें। मशीन या वाहन छुए बिना परिचित पुस्तक, संगीत/अध्ययन सामग्री और छोटे औजार रखें।",
+              "why": "सुरक्षा-अधिकार संचालक के पास है, ऐप के पास नहीं।",
+              "optional": false,
+              "source_ids": [
+                "nic-karnataka-mahanavami-ayudhapooja",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिवार की परिचित प्रार्थना या पाठ करें और विद्या, गुरु, शिल्प और जिम्मेदार कार्य के लिए कृतज्ञता दें। सुरक्षित हो तो ही परिचित सामग्री जोड़ें।",
+              "why": "यह समर्थित अर्थ को परिवार की जीवित परंपरा से जोड़ता है।",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 4,
+              "instruction": "गोम्बे सज्जा हो तो उसे अलग परिवार-नेतृत्व वाली परंपरा रखें और दशमी का समापन परिवार के अनुसार करें।",
+              "why": "कर्नाटक पर्यटन इसे संदर्भ के रूप में बताता है, सार्वभौमिक नियम नहीं।",
+              "optional": true,
+              "source_ids": [
+                "karnataka-tourism-gombe-habba"
+              ]
+            }
+          ],
+          "closing": {
+            "text": "कृतज्ञता के साथ समापन करें, स्थान सुरक्षित रूप से समेटें, और परिवार या जिम्मेदार संचालक के समापन कहने के बाद ही पुस्तकों या औजारों को उपयोग में लौटाएँ।",
+            "source_ids": [
+              "devam-karnataka-saraswati-ayudha-safety-boundary"
+            ],
+            "scope_note": "सटीक समापन परिवार की परंपरा और उपकरण-सुरक्षा के अनुसार होगा।"
+          },
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "karnataka-tourism-gombe-habba",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ]
+        },
+        {
+          "procedure_id": "karnataka-saraswati-ayudha-puja-content-v1-hi-elaborate-v1",
+          "tier": "elaborate",
+          "label": "परिवार, शिक्षक या संस्था-नेतृत्व सहभागिता",
+          "estimated_minutes": 60,
+          "form": "institutional_participation",
+          "setting": "family_led",
+          "authority_scope": "सीमित कर्नाटक सहभागी मार्गदर्शन; औपचारिक पूजा परिवार या संस्था के अनुसार",
+          "materials": [
+            {
+              "item": "केवल जिम्मेदार परिवार, शिक्षक, मंदिर, स्कूल या कार्यस्थल-नेता द्वारा चुनी सामग्री, पाठ और वस्तुएँ",
+              "required": true,
+              "substitutions": [
+                "अनजान विधि बनाने के बजाय मानक घरेलू रूप अपनाएँ"
+              ],
+              "source_ids": [
+                "sringeri-2025-mahanavami-ayudha-vahana",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "सटीक सरस्वती पूजा, आयुध पूजा, वाहन पूजा, होम, सज्जा, पाठ या कार्यक्रम जिम्मेदार जीवित प्राधिकारी को तय करने दें।",
+              "why": "संस्थागत स्रोत अभ्यास का प्रमाण हैं, ऐप से दोहराने योग्य विधि नहीं।",
+              "optional": false,
+              "source_ids": [
+                "sringeri-2025-mahanavami-ayudha-vahana",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 2,
+              "instruction": "आयोजक के निर्देश और उपकरण, यातायात, अग्नि, भोजन, सुगमता, भीड़ और बाल-सुरक्षा नियम मानें; अनुमति और योग्यता के बिना उपकरण न छुएँ या शुरू करें।",
+              "why": "भक्ति संचालन-सुरक्षा को समाप्त नहीं करती।",
+              "optional": false,
+              "source_ids": [
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            },
+            {
+              "ordinal": 3,
+              "instruction": "उपलब्ध स्थापित प्रार्थना, पाठ, संगीत, दर्शन, कृतज्ञता या सेवा में भाग लें और निर्देशानुसार समापन करें।",
+              "why": "इससे प्रामाणिकता और विविधता बचाते हुए सहभागिता संभव होती है।",
+              "optional": false,
+              "source_ids": [
+                "sringeri-sriyantra-navaratri-sarasvati",
+                "sringeri-2025-mahanavami-ayudha-vahana",
+                "devam-karnataka-saraswati-ayudha-safety-boundary"
+              ]
+            }
+          ],
+          "closing": {
+            "text": "कृतज्ञता के साथ समापन करें, स्थान सुरक्षित रूप से समेटें, और परिवार या जिम्मेदार संचालक के समापन कहने के बाद ही पुस्तकों या औजारों को उपयोग में लौटाएँ।",
+            "source_ids": [
+              "devam-karnataka-saraswati-ayudha-safety-boundary"
+            ],
+            "scope_note": "सटीक समापन परिवार की परंपरा और उपकरण-सुरक्षा के अनुसार होगा।"
+          },
+          "source_ids": [
+            "cgst-karnataka-holiday-list-2026-mahanavami",
+            "nic-karnataka-mahanavami-ayudhapooja",
+            "sringeri-sriyantra-navaratri-sarasvati",
+            "sringeri-2025-mahanavami-ayudha-vahana",
+            "karnataka-tourism-gombe-habba",
+            "devam-karnataka-saraswati-ayudha-safety-boundary"
+          ]
+        }
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "timing": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

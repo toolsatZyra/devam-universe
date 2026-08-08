@@ -1,0 +1,53 @@
+{
+  "contract": "DEVAM_BOUNDED_HALA_SHASHTHI_IDENTITY_DATE_FIXTURE_V1",
+  "fixture_id": "devam-hala-shashthi-delhi-2026-v1",
+  "observance_slug": "hala-shashthi-hal-chhath",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "timezone": "Asia/Kolkata",
+    "supported_tradition_codes": ["smarta-north-india"],
+    "selected_civil_date": "2026-09-02",
+    "lunar_identity": "Bhadrapada Krishna Shashthi in the Purnimanta convention",
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "devam-unresolved-balarama-identity-evidence-v1",
+      "artifact_path": "knowledge_packs/panchang/balarama-observance-identity-delhi-2026-v1.json",
+      "artifact_sha256": "5537508cff93d25c5e54bd2a4edbb1ac649f3dee719b7db3240316496157b7c6",
+      "evidence_role": "retained three-candidate identity comparison"
+    },
+    {
+      "source_id": "drikpanchang-delhi-hala-shashthi-2026",
+      "url": "https://www.drikpanchang.com/dashavatara/lord-balarama/hala-shashthi-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 74656,
+      "response_sha256": "f00263cec69cbbbaca1a3ec9933bab506fc92437cefdba2c307ecbf1ad77a068",
+      "evidence_role": "bounded Delhi Hala Shashthi identity and date"
+    },
+    {
+      "source_id": "official-iskcon-balarama-purnima-2026",
+      "urls": ["https://www.iskcondelhi.com/balaram-purnima/", "https://www.iskconbangalore.org/vaishnava-calendar/"],
+      "evidence_role": "separate official ISKCON August 28 identity and conflict control"
+    }
+  ],
+  "decision": {
+    "selected_identity": "Hala Shashthi / Hal Chhath",
+    "selected_civil_date": "2026-09-02",
+    "september_16_balarama_jayanti_candidate_accepted": false,
+    "september_16_rejection_reason": "provider ISKCON attribution conflicts with official ISKCON Balarama Purnima on 2026-08-28 and lacks direct rule authority",
+    "official_iskcon_august_28_remains_separate": true,
+    "regional_equivalence_claimed": false
+  },
+  "denials": {
+    "september_16_observance_promoted": false,
+    "hala_shashthi_equated_with_iskcon_balarama_purnima": false,
+    "all_baladeva_chhath_or_balarama_jayanti_labels_equated": false,
+    "fasting_diet_moonrise_arghya_or_full_puja_prescribed": false,
+    "gender_or_sons_only_scope_promoted": false,
+    "health_longevity_protection_or_merit_guaranteed": false,
+    "universal_india_or_all_traditions_claimed": false,
+    "source_text_republished": false
+  }
+}

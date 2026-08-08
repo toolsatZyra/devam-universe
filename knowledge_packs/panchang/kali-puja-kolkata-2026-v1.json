@@ -1,0 +1,161 @@
+{
+  "contract": "DEVAM_BENGAL_KALI_PUJA_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-kali-puja-kolkata-2026-v1",
+  "scope": {
+    "reference_location": "Kolkata, West Bengal, India",
+    "geoname_id": 1275004,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": [
+      "2026-11-08",
+      "2026-11-09"
+    ],
+    "supported_tradition_codes": [
+      "shakta-bengal"
+    ],
+    "date_resolved_by_devam": true,
+    "nishita_window_recalculated_by_devam": true,
+    "provider_puja_muhurta_claimed_reproduced": false,
+    "ritual_guidance_included": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drikpanchang-kolkata-bengal-kali-puja-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/diwali/kali-puja/bengal-kalipuja-date-time.html?geoname-id=1275004&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_bengal_kali_puja_identity_nishita_rule_and_kolkata_date_fixture",
+      "raw_page_is_dynamic": true,
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T20:29:29.204Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/diwali/kali-puja/bengal-kalipuja-date-time.html?geoname-id=1275004&year=2026",
+          "response_bytes": 78534,
+          "response_sha256": "d03b7c7e596a4d33e1c7970ea1b03e44fc7618d78ff060658e7d5ec743d336cc",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T20:30:07.626Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/diwali/kali-puja/bengal-kalipuja-date-time.html?geoname-id=1275004&year=2026",
+          "response_bytes": 78534,
+          "response_sha256": "f1bc47ed5e1948244babe7f8d86e82f0acf4a6353c44dc3368564f758ff44775",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T20:30:07.769Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/diwali/kali-puja/bengal-kalipuja-date-time.html?geoname-id=1275004&year=2026",
+          "response_bytes": 78534,
+          "response_sha256": "f1bc47ed5e1948244babe7f8d86e82f0acf4a6353c44dc3368564f758ff44775",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "title": "2026 Bengal Kali Puja | Shyama Puja Date and Time for Kolkata, West Bengal, India",
+        "civil_date": "2026-11-08",
+        "weekday": "Sunday",
+        "published_nishita_begins_local": "22:55",
+        "published_nishita_ends_local": "23:46",
+        "amavasya_begins_local": "2026-11-08T11:27:00+05:30",
+        "amavasya_ends_local": "2026-11-09T12:31:00+05:30",
+        "bengal_kali_puja_identity_present": true,
+        "shyama_puja_alias_present": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "ramakrishna-advaita-ashrama-kali-puja-context",
+      "provider": "Ramakrishna Advaita Ashrama, Varanasi",
+      "url": "https://varanasimath.rkmm.org/festivals-celebrations",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_ramakrishna_math_kartik_amavasya_night_identity_context_not_kolkata_date_rule_authority",
+      "raw_page_is_dynamic": false,
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T20:30:50.462Z",
+          "status": 200,
+          "final_url": "https://varanasimath.rkmm.org/festivals-celebrations",
+          "response_bytes": 130731,
+          "response_sha256": "810240b3e69b1b769d5e9bac16651afff127411f355729398e24ecd49fc2bf54",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T20:30:50.544Z",
+          "status": 200,
+          "final_url": "https://varanasimath.rkmm.org/festivals-celebrations",
+          "response_bytes": 130731,
+          "response_sha256": "810240b3e69b1b769d5e9bac16651afff127411f355729398e24ecd49fc2bf54",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "kartik_amavasya_night_identity": true,
+        "deepavali_coincident_context": true,
+        "night_long_kali_puja_context": true,
+        "kolkata_date_rule_authority": false
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "official_calendar_observation": {
+    "source_id": "west-bengal-government-holiday-notification-4188-fp2",
+    "provider": "Government of West Bengal",
+    "url": "https://wb.gov.in/pdf/Holiday-2026.pdf",
+    "notification_number": "4188-F(P2)",
+    "notification_date": "2025-11-27",
+    "holiday_literal": "Kali Puja",
+    "civil_date": "2026-11-08",
+    "weekday": "Sunday",
+    "raw_fixity_frozen": false,
+    "raw_fixity_note": "The official PDF was read through the normal-TLS web source. A separate Node fetch timed out at connection establishment; TLS was not weakened and no raw carrier was acquired.",
+    "rights_lane": "reference_only",
+    "evidence_role": "official_west_bengal_civil_calendar_corroboration_not_nishita_rule_authority",
+    "source_text_returned_by_api": false
+  },
+  "fixed_adjacent_evidence": {
+    "source_id": "nirnayasindhu-marathi-1865-kartika-amavasya-diwali-context",
+    "provider": "Devam retained source vault",
+    "object_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+    "object_bytes": 93531683,
+    "media_type": "application/pdf",
+    "rights_lane": "private_evidence",
+    "visually_inspected_pdf_pages": [
+      216,
+      217
+    ],
+    "evidence_role": "historical_adjacent_kartika_amavasya_diwali_context_not_bengal_kali_puja_identity_or_nishita_authority",
+    "source_text_returned_by_api": false
+  },
+  "decision": {
+    "observance_slug": "bengal-kali-puja",
+    "canonical_name": "Kali Puja / Shyama Puja",
+    "target_tithi": "Amavasya",
+    "target_paksha": "krishna",
+    "decision_window": "nishita",
+    "selection": "select_only_when_exactly_one_candidate_civil_night_has_kartika_amavasya_overlap_with_local_nishita",
+    "selected_civil_date": "2026-11-08",
+    "both_candidates_overlap": "fail_closed",
+    "neither_candidate_overlaps": "fail_closed",
+    "bengal_kali_puja_and_lakshmi_puja_remain_separate_records": true,
+    "provider_published_nishita_is_validation_evidence_not_a_copied_product_muhurta": true
+  },
+  "denials": {
+    "provider_puja_muhurta_claimed_exactly_reproduced": false,
+    "household_kali_puja_procedure_resolved": false,
+    "temple_or_pandal_procedure_resolved": false,
+    "priest_led_or_tantric_procedure_resolved": false,
+    "mantra_or_bali_instruction_included": false,
+    "fasting_or_night_vigil_prescribed": false,
+    "guaranteed_outcome_claimed": false,
+    "all_bengal_shakta_practices_equivalent": false,
+    "universal_india_observance_claim": false,
+    "bengal_kali_puja_merged_with_lakshmi_puja": false,
+    "historical_diwali_pages_treated_as_kali_puja_identity_authority": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false,
+    "complete_diwali_ritual_coverage": false,
+    "complete_september_december_coverage": false
+  }
+}

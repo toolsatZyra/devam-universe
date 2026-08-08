@@ -1,0 +1,208 @@
+{
+  "contract": "DEVAM_SOURCE_BOUNDED_KNOWLEDGE_PACK_V1",
+  "pack_id": "ganesha-shriganapatimantraksharavali-v1",
+  "objective_alignment": {
+    "umbrella_scope": "Sanatana Dharma, Indian culture, and Indian wisdom",
+    "hero_universe": "ganesha",
+    "pack_boundary": "One source-bounded hymn interpretation and devotional-reading pilot",
+    "hero_universe_complete": false,
+    "uncovered_priority_targets": [
+      "Ganapati Atharvashirsha with Sanskrit, Hindi, and English",
+      "Ganesha Purana",
+      "Mudgala Purana",
+      "Ganesha narratives in major Puranas",
+      "Ganesh Chaturthi calendar rules and regional ritual procedures",
+      "Ashtavinayak temples and traditions",
+      "Public Ganeshotsav history",
+      "Regional forms, family practices, and living traditions"
+    ]
+  },
+  "source": {
+    "work_slug": "shriganapatimantraksharavali",
+    "canonical_tei_sha256": "21e5909392249ecca6677410c30d70323402d886975df807df2b865697fd9e6d",
+    "required_ingestion_packet_sha256": "11a92e0c6421adc8a73104d4e8c2c22b86e28b02f24e0dc5888e8df8f8f2e97c",
+    "rights_lane": "derivative_allowed",
+    "publication_state": "published",
+    "structure_status": "observed_32_units_structure_authority_unresolved"
+  },
+  "entities": [
+    {
+      "slug": "ganapati",
+      "entity_kind": "deity",
+      "canonical_name": "Gaṇapati",
+      "description": "The deity addressed in this source as Gaṇapati, Gaṇanāyaka, Gaṇanātha, Gaṇādhiśa, and Vighneśa.",
+      "names": [
+        {"name": "Gaṇapati", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "गणपति", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "गणपति", "language_code": "sa", "script_code": "Deva", "name_kind": "source_name", "is_preferred": true},
+        {"name": "विघ्नेश", "language_code": "sa", "script_code": "Deva", "name_kind": "source_epithet", "is_preferred": false},
+        {"name": "गणनायक", "language_code": "sa", "script_code": "Deva", "name_kind": "source_epithet", "is_preferred": false},
+        {"name": "गणनाथ", "language_code": "sa", "script_code": "Deva", "name_kind": "source_epithet", "is_preferred": false}
+      ]
+    },
+    {
+      "slug": "vighna",
+      "entity_kind": "concept",
+      "canonical_name": "Vighna (impediment)",
+      "description": "An obstacle or impediment; retained as a distinct concept so source-specific claims about overcoming obstacles remain traceable.",
+      "names": [
+        {"name": "Vighna", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "विघ्न", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "विघ्न", "language_code": "sa", "script_code": "Deva", "name_kind": "source_name", "is_preferred": true}
+      ]
+    },
+    {
+      "slug": "yajna",
+      "entity_kind": "concept",
+      "canonical_name": "Yajña",
+      "description": "Sacrifice or sacrificial worship; included because unit 29 explicitly presents Gaṇapati in sacrificial terms.",
+      "names": [
+        {"name": "Yajña", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "यज्ञ", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "यज्ञ", "language_code": "sa", "script_code": "Deva", "name_kind": "source_name", "is_preferred": true}
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "stable_key": "ganapati-hymn-opening-source-bounded-en",
+      "subject_slug": "ganapati",
+      "statement": "In this hymn's opening dialogue, the Goddess asks Maheshvara for an effortless way to please Vighneśa without austerity, meditation, fire-offering, or japa.",
+      "language_code": "en",
+      "claim_kind": "source_bounded_summary",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.98,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "This describes the literary framing of this hymn; it is not a universal rule that formal practice is unnecessary.",
+      "evidence": [{"marker": 1, "role": "supports", "required_text": "विना तपो विना ध्यानं विना होमं विना जपम्"}]
+    },
+    {
+      "stable_key": "ganapati-hymn-opening-source-bounded-hi",
+      "subject_slug": "ganapati",
+      "statement": "इस स्तोत्र के आरम्भिक संवाद में देवी महेश्वर से ऐसा सहज उपाय पूछती हैं जिससे तप, ध्यान, होम या जप के बिना विघ्नेश प्रसन्न हों।",
+      "language_code": "hi",
+      "claim_kind": "source_bounded_summary",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.98,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "यह केवल इस स्तोत्र की साहित्यिक भूमिका का सार है; इससे यह सार्वभौमिक नियम सिद्ध नहीं होता कि औपचारिक साधना अनावश्यक है।",
+      "evidence": [{"marker": 1, "role": "supports", "required_text": "विना तपो विना ध्यानं विना होमं विना जपम्"}]
+    },
+    {
+      "stable_key": "ganapati-removes-obstacles-source-bounded-en",
+      "subject_slug": "ganapati",
+      "statement": "This hymn praises Gaṇapati as one who destroys the array of impediments faced by devotees and as the remover of obstacles.",
+      "language_code": "en",
+      "claim_kind": "source_bounded_theological_description",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.99,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "This is a source-attributed devotional characterization, not a guaranteed prediction of outcomes.",
+      "evidence": [
+        {"marker": 12, "role": "supports", "required_text": "भक्तप्रत्यूहव्यूहनाशनम्"},
+        {"marker": 31, "role": "supports", "required_text": "विघ्नानां हर्तारं"}
+      ]
+    },
+    {
+      "stable_key": "ganapati-removes-obstacles-source-bounded-hi",
+      "subject_slug": "ganapati",
+      "statement": "यह स्तोत्र गणपति की स्तुति भक्तों के विघ्न-समूह का नाश करने वाले और विघ्नों को हरने वाले देव के रूप में करता है।",
+      "language_code": "hi",
+      "claim_kind": "source_bounded_theological_description",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.99,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "यह स्रोत-आधारित भक्तिपरक निरूपण है, किसी परिणाम की गारंटी नहीं।",
+      "evidence": [
+        {"marker": 12, "role": "supports", "required_text": "भक्तप्रत्यूहव्यूहनाशनम्"},
+        {"marker": 31, "role": "supports", "required_text": "विघ्नानां हर्तारं"}
+      ]
+    },
+    {
+      "stable_key": "ganapati-yajna-form-source-bounded-en",
+      "subject_slug": "ganapati",
+      "statement": "Unit 29 presents Gaṇapati as the embodiment of the sacrificer, the form of yajña, and the sacrificial person.",
+      "language_code": "en",
+      "claim_kind": "source_bounded_theological_description",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.97,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "The English wording is a close Devam summary of one Sanskrit unit, not a full commentary on its ritual theology.",
+      "evidence": [{"marker": 29, "role": "supports", "required_text": "यजमानतनुं यागरूपिणं यज्ञपूरुषम्"}]
+    },
+    {
+      "stable_key": "ganapati-yajna-form-source-bounded-hi",
+      "subject_slug": "ganapati",
+      "statement": "पद 29 में गणपति को यजमान-स्वरूप, याग-रूप और यज्ञ-पुरुष के रूप में प्रस्तुत किया गया है।",
+      "language_code": "hi",
+      "claim_kind": "source_bounded_theological_description",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.97,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "यह संस्कृत पद का निकट Devam-सार है, उसकी अनुष्ठानिक धर्ममीमांसा पर पूर्ण टीका नहीं।",
+      "evidence": [{"marker": 29, "role": "supports", "required_text": "यजमानतनुं यागरूपिणं यज्ञपूरुषम्"}]
+    },
+    {
+      "stable_key": "ganapati-hymn-closing-source-bounded-en",
+      "subject_slug": "ganapati",
+      "statement": "The final numbered unit identifies the composition as a mantrāvali hymn and closes with a prayer for the attainment of desired auspicious good.",
+      "language_code": "en",
+      "claim_kind": "source_bounded_summary",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.96,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "The retained transcription has note anchors in this unit and the work's wider structural authority remains unresolved.",
+      "evidence": [{"marker": 32, "role": "supports", "required_text": "मन्त्रावलिस्तोत्रं"}]
+    },
+    {
+      "stable_key": "ganapati-hymn-closing-source-bounded-hi",
+      "subject_slug": "ganapati",
+      "statement": "अन्तिम क्रमांकित पद रचना को मन्त्रावली-स्तोत्र कहता है और इच्छित मंगल की प्राप्ति की प्रार्थना के साथ समाप्त होता है।",
+      "language_code": "hi",
+      "claim_kind": "source_bounded_summary",
+      "evidence_class": "scripture_primary_source",
+      "confidence": 0.96,
+      "applicability": {"work_slug": "shriganapatimantraksharavali", "tradition": "ganesha", "scope": "this_source_only"},
+      "uncertainty_note": "इस पद के सुरक्षित प्रतिलेखन में टिप्पणी-संकेत हैं और कृति की व्यापक संरचनात्मक प्रामाणिकता अभी अनिर्णीत है।",
+      "evidence": [{"marker": 32, "role": "supports", "required_text": "मन्त्रावलिस्तोत्रं"}]
+    }
+  ],
+  "relationships": [
+    {"subject_slug": "ganapati", "predicate": "removes", "object_slug": "vighna", "claim_key": "ganapati-removes-obstacles-source-bounded-en"},
+    {"subject_slug": "ganapati", "predicate": "is_presented_as_embodying", "object_slug": "yajna", "claim_key": "ganapati-yajna-form-source-bounded-en"}
+  ],
+  "reading_practices": [
+    {
+      "observance_slug": "shriganapatimantraksharavali-devotional-reading",
+      "observance_name": "Śrīgaṇapatimantrākṣarāvaliḥ devotional reading",
+      "observance_summary": "A source-bounded way to read this hymn for private study or devotion; not a universal Ganesh Puja vidhi.",
+      "procedure_slug": "shriganapatimantraksharavali-source-reading-en",
+      "title": "Source-bounded Śrīgaṇapatimantrākṣarāvaliḥ reading",
+      "language_code": "en",
+      "evidence_status": "source_bounded_devam_synthesis_beta",
+      "family_practice_note": "Follow family or sampradaya practice when known. This reading guide does not replace a formal puja paddhati.",
+      "steps": [
+        {"ordinal": 1, "instruction": "Approach this as a reading of this particular hymn, not as a universal or complete Ganesh Puja procedure.", "rationale": "The retained source is one hymn and its wider structural authority is still under review.", "optional": false, "claim_key": null},
+        {"ordinal": 2, "instruction": "Read units 1-3 as the opening dialogue and the text's own framing of the hymn.", "rationale": "These units introduce the request and Maheshvara's reply.", "optional": false, "claim_key": "ganapati-hymn-opening-source-bounded-en"},
+        {"ordinal": 3, "instruction": "Continue through units 4-31 without silently correcting note anchors or uncertain readings in the retained transcription.", "rationale": "Exact source wording and uncertainty must remain visible.", "optional": false, "claim_key": "ganapati-removes-obstacles-source-bounded-en"},
+        {"ordinal": 4, "instruction": "Conclude with unit 32, retaining its source-attributed closing prayer rather than treating it as a guaranteed result.", "rationale": "The final numbered unit provides the source's closing frame.", "optional": false, "claim_key": "ganapati-hymn-closing-source-bounded-en"}
+      ]
+    },
+    {
+      "observance_slug": "shriganapatimantraksharavali-devotional-reading",
+      "observance_name": "Śrīgaṇapatimantrākṣarāvaliḥ devotional reading",
+      "observance_summary": "A source-bounded way to read this hymn for private study or devotion; not a universal Ganesh Puja vidhi.",
+      "procedure_slug": "shriganapatimantraksharavali-source-reading-hi",
+      "title": "श्रीगणपतिमन्त्राक्षरावलिः का स्रोत-सीमित पाठ",
+      "language_code": "hi",
+      "evidence_status": "source_bounded_devam_synthesis_beta",
+      "family_practice_note": "परिवार या सम्प्रदाय की ज्ञात परम्परा का पालन करें। यह पाठ-सहायिका औपचारिक पूजा-पद्धति का स्थान नहीं लेती।",
+      "steps": [
+        {"ordinal": 1, "instruction": "इसे इसी विशिष्ट स्तोत्र के पाठ के रूप में ग्रहण करें, सार्वभौमिक या सम्पूर्ण गणेश-पूजा विधि के रूप में नहीं।", "rationale": "सुरक्षित स्रोत एक स्तोत्र है और उसकी व्यापक संरचनात्मक प्रामाणिकता अभी समीक्षा में है।", "optional": false, "claim_key": null},
+        {"ordinal": 2, "instruction": "पद 1-3 को आरम्भिक संवाद और स्तोत्र की अपनी भूमिका के रूप में पढ़ें।", "rationale": "इन पदों में प्रश्न और महेश्वर का उत्तर आरम्भ होता है।", "optional": false, "claim_key": "ganapati-hymn-opening-source-bounded-hi"},
+        {"ordinal": 3, "instruction": "पद 4-31 पढ़ते समय सुरक्षित प्रतिलेखन के टिप्पणी-संकेतों या अनिश्चित पाठों को चुपचाप न सुधारें।", "rationale": "स्रोत का सटीक रूप और उसकी अनिश्चितता दोनों सुरक्षित रहने चाहिए।", "optional": false, "claim_key": "ganapati-removes-obstacles-source-bounded-hi"},
+        {"ordinal": 4, "instruction": "पद 32 से समापन करें और उसकी प्रार्थना को स्रोत-आधारित भाव के रूप में रखें, परिणाम की गारंटी के रूप में नहीं।", "rationale": "अन्तिम क्रमांकित पद स्रोत का समापन प्रस्तुत करता है।", "optional": false, "claim_key": "ganapati-hymn-closing-source-bounded-hi"}
+      ]
+    }
+  ]
+}

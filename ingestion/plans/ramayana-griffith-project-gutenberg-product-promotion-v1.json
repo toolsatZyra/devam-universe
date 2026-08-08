@@ -1,0 +1,125 @@
+{
+  "contract": "DEVAM_GRIFFITH_RAMAYANA_PRODUCT_PROMOTION_V1",
+  "promotion_id": "ramayana-griffith-project-gutenberg-product-promotion-v1",
+  "action": "metadata_and_passage_status_promotion_only_no_source_payload_copy",
+  "upstream": {
+    "plan_path": "ingestion/plans/ramayana-griffith-project-gutenberg-v1.json",
+    "plan_sha256": "c154f3ab85079c8b5e16c191a355ea5dc2bfcb4107a318a56b4f825f5fb3fac4",
+    "packet_sha256": "80a64ddf9897573f450783db885f3e434ef5d1e3f8672512c070aec512cfbf2f",
+    "passage_content_root_sha256": "e0c62543a911092244d9ec03d413cca178b968cd99de2b9fe8f10d261cebe5d4"
+  },
+  "database_identity": {
+    "work_slug": "valmiki-ramayana",
+    "expression_language_code": "en",
+    "expression_kind": "verse_translation",
+    "expression_attribution": "Translated into English verse by Ralph T. H. Griffith; Project Gutenberg electronic edition produced by Juliet Sutherland, John Bruno Hare, David King, and the Online Distributed Proofreading Team",
+    "edition_title": "The Rámáyan of Válmíki, translated into English verse — Project Gutenberg eBook 24869",
+    "promoted_source_sha256": "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
+    "expected_expression_count": 1,
+    "expected_edition_count": 1,
+    "expected_indexed_source_count": 6,
+    "expected_promoted_source_count": 1,
+    "expected_passage_count": 560,
+    "expected_min_source_ordinal": 1,
+    "expected_max_source_ordinal": 560
+  },
+  "rights_decision": {
+    "result": "product_allowed_for_exact_extracted_text_units_with_source_attribution_and_trademark_isolation",
+    "decision_date": "2026-08-08",
+    "target_product_geography": ["India", "United States"],
+    "underlying_translation": {
+      "translator": "Ralph T. H. Griffith",
+      "translator_death_date": "1906-11-07",
+      "publication_years": "1870-1874",
+      "india_term_rule": "Copyright Act 1957 section 22: published literary works subsist until sixty years from the beginning of the calendar year following the author's death.",
+      "india_term_conclusion": "The Griffith translation's Indian copyright term expired no later than the beginning of 1967.",
+      "us_term_rule": "As of 2026, works published in the United States before 1931 are in the public domain.",
+      "us_term_conclusion": "The 1870-1874 Griffith translation is in the United States public domain."
+    },
+    "electronic_text_and_trademark_boundary": {
+      "provider_rights_literal": "Public domain in the USA.",
+      "provider_permission_summary": "Project Gutenberg states that the underlying text may be reused when the Project Gutenberg license and trademark references are removed; bibliographic acknowledgements and source references are not treated as trademark use.",
+      "project_gutenberg_license_or_trademark_present_in_product_passages": false,
+      "product_passages_containing_project_gutenberg_reference": 0,
+      "empty_generated_pgheader_pgfooter_divs_excluded": true,
+      "project_gutenberg_name_use": "bibliographic_source_and_provenance_reference_only_not_product_branding",
+      "commercial_project_gutenberg_trademark_use": false
+    },
+    "lane": "product_allowed",
+    "publication_state": "published",
+    "legal_characterization": "documented_product_rights_determination_not_legal_advice"
+  },
+  "evidence_observations": [
+    {
+      "evidence_id": "india-copyright-act-section-22",
+      "url": "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html",
+      "observed_at": "2026-08-08",
+      "status": 200,
+      "final_url": "https://copyright.gov.in/Copyright_Act_1957/chapter_v.html",
+      "response_bytes": 12814,
+      "response_sha256": "87edb85c6014f6a6415051b982461a708dd901d65b6a6047fc5f5b8080960fe3",
+      "required_literals": ["22. Term of copyright in published", "sixty years", "year in which the author dies"]
+    },
+    {
+      "evidence_id": "project-gutenberg-license",
+      "url": "https://www.gutenberg.org/policy/license",
+      "observed_at": "2026-08-08",
+      "status": 200,
+      "final_url": "https://www.gutenberg.org/policy/license",
+      "response_bytes": 32318,
+      "response_sha256": "3df0bb72fa6820227533369d85ccdfbfae8290a402dc553c6a969f52d7fbf6c9",
+      "required_literals": ["strip the Project Gutenberg license", "all references to Project Gutenberg", "unrestricted by U.S. intellectual property law"]
+    },
+    {
+      "evidence_id": "griffith-dnb-biography",
+      "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1912_supplement/Griffith,_Ralph_Thomas_Hotchkin",
+      "observed_at": "2026-08-08",
+      "status": 200,
+      "final_url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1912_supplement/Griffith,_Ralph_Thomas_Hotchkin",
+      "response_bytes": 66274,
+      "response_sha256": "64f253103d788cd526313da15d5c2a0d0a7b05138b083abdeb7b69abbb7e8112",
+      "required_literals": ["7 Nov. 1906"]
+    },
+    {
+      "evidence_id": "worldcat-edition-record",
+      "url": "https://search.worldcat.org/title/506290517",
+      "observed_at": "2026-08-08",
+      "status": 200,
+      "final_url": "https://search.worldcat.org/title/506290517",
+      "response_bytes": 267841,
+      "response_sha256": "0fb1593cb89b30eb729e02f8d4bd9721f890c14a6ea848f1b15fa6aad5005be2",
+      "required_literals": ["Ralph T. H. Griffith", "datePublished\":\"1870-74", "E.J. Lazarus and Co."]
+    },
+    {
+      "evidence_id": "us-copyright-office-public-domain-cutoff",
+      "url": "https://copyright.gov/what-is-copyright/",
+      "observed_at": "2026-08-08",
+      "status": 200,
+      "semantic_observation": "The U.S. Copyright Office states that, as of 2026, all works published in the United States before January 1, 1931 are in the public domain."
+    }
+  ],
+  "product_boundary": {
+    "positive_claim": "Product-usable, source-addressed English text units from the exact six-main-book Project Gutenberg electronic edition of Griffith's 1870-1874 verse translation, preserving its declared and numbering-evident omissions.",
+    "text_status": "source_aligned_normalized_projection_from_exact_tei_leaf_span_product_usable_electronic_edition_with_explicit_omissions",
+    "full_reading_layout_complete": false,
+    "completion_denials": {
+      "complete_griffith_translation_without_omissions": false,
+      "uttarakanda_main_book_present": false,
+      "complete_valmiki_ramayana_sanskrit_source": false,
+      "complete_ramayana_tradition_or_all_recensions": false,
+      "page_layout_or_verse_lineation_preserved_in_normalized_passages": false,
+      "critical_or_authoritative_sanskrit_edition": false,
+      "hindi_translation_present": false,
+      "ramayana_hero_universe_complete": false,
+      "mvp_library_complete": false
+    }
+  },
+  "mutation_boundary": {
+    "copy_or_download_source_payload": false,
+    "create_reader_payload": false,
+    "promote_work_row": false,
+    "promote_sibling_expression_or_edition": false,
+    "promote_non_tei_source_objects": false,
+    "modify_passage_text_locator_or_span_hash": false
+  }
+}

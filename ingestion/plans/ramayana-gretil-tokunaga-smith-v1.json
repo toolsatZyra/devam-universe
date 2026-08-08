@@ -1,0 +1,104 @@
+{
+  "contract": "DEVAM_GRETIL_SANSKRIT_EPIC_INGESTION_V1",
+  "pilot_id": "ramayana-gretil-tokunaga-smith-v1",
+  "source_copy_policy": "reference_only_no_duplicate_payload",
+  "work": {
+    "slug": "valmiki-ramayana",
+    "canonical_title": "Vālmīki Rāmāyaṇa",
+    "work_kind": "itihasa",
+    "tradition_scope": ["ramayana", "vaishnava", "itihasa"],
+    "summary": "The foundational Sanskrit epic traditionally attributed to Vālmīki, preserved through multiple recensions, editions, translations, commentaries, and performance traditions; Devam tracks every expression separately and does not treat any single carrier as the complete tradition."
+  },
+  "identity": {
+    "tei_title": "Rāmāyaṇa",
+    "tei_author": "Vālmīki",
+    "tei_language": "sa-Latn",
+    "text_xml_id": "R",
+    "source_description_literal": "John Smith's Rāmāyaṇa-Page (last comparison: 2020-04-16)",
+    "underlying_print_edition_identified": false,
+    "data_entry": "Muneo Tokunaga",
+    "first_revision": "John Smith",
+    "gretil_contribution": "John Smith",
+    "gretil_normalization": "Reinhold Grünendahl; Maximilian Mehner",
+    "provider_item": "GRE-00081"
+  },
+  "expression": {
+    "language_code": "sa",
+    "script_code": "Latn",
+    "expression_kind": "electronic_transcription",
+    "attribution": "Data entry by Muneo Tokunaga; first revision and GRETIL contribution by John Smith; GRETIL normalization and TEI conversion",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "Rāmāyaṇa — Tokunaga/Smith GRETIL Sanskrit electronic transcription",
+    "publisher": "Göttingen Register of Electronic Texts in Indian Languages (GRETIL), SUB Göttingen",
+    "publication_place": "Göttingen",
+    "publication_year": 2020,
+    "edition_statement": "GRETIL TEI state compared with John Smith's Rāmāyaṇa Page on 2020-04-16; underlying print edition is not identified",
+    "identifiers": {"gretil":"sa_rAmAyaNa","legacy_provider_item":"GRE-00081"}
+  },
+  "provider": {"name":"GRETIL","acquired_at":"2026-07-12T09:53:11.079361+00:00"},
+  "rights": {
+    "lane": "private_evidence",
+    "license": "CC-BY-NC-SA-4.0",
+    "required_literal": "Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+    "status": "noncommercial_sharealike_internal_review_only"
+  },
+  "source_objects": [
+    {"role":"canonical_tei","sha256":"a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901","bytes":4244751,"media_type":"application/tei+xml","object_path":"objects/sha256/a5/a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901","source_url":"https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml"},
+    {"role":"access_text","sha256":"d32e1817f7a789a0d1bf370ea95ed463435e524de2366e4db73dac3c448b6091","bytes":2406915,"media_type":"text/plain; charset=utf-8","object_path":"objects/sha256/d3/d32e1817f7a789a0d1bf370ea95ed463435e524de2366e4db73dac3c448b6091","source_url":"https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt"},
+    {"role":"access_html","sha256":"d33e754d2e6e13b30e2f38e6a939e85fc783d233c2914e23f285d432d21155fe","bytes":4938140,"media_type":"text/html; charset=utf-8","object_path":"objects/sha256/d3/d33e754d2e6e13b30e2f38e6a939e85fc783d233c2914e23f285d432d21155fe","source_url":"https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_rAmAyaNa.htm"}
+  ],
+  "live_observations": [
+    {"role":"canonical_tei","status":200,"final_url":"https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml","bytes":4244751,"sha256":"a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901","strict_utf8":true},
+    {"role":"access_text","status":200,"final_url":"https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_rAmAyaNa.txt","bytes":2406915,"sha256":"d32e1817f7a789a0d1bf370ea95ed463435e524de2366e4db73dac3c448b6091","strict_utf8":true},
+    {"role":"access_html","status":200,"final_url":"https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_rAmAyaNa.htm","bytes":4938140,"sha256":"d33e754d2e6e13b30e2f38e6a939e85fc783d233c2914e23f285d432d21155fe","strict_utf8":true}
+  ],
+  "structure": {
+    "kanda_count": 7,
+    "sarga_count": 606,
+    "verse_group_count": 18761,
+    "line_count": 38043,
+    "book_profiles": [
+      {"book":1,"sarga_count":76,"verse_group_count":1941,"first_sarga":1,"last_sarga":76},
+      {"book":2,"sarga_count":111,"verse_group_count":3160,"first_sarga":1,"last_sarga":111},
+      {"book":3,"sarga_count":71,"verse_group_count":2060,"first_sarga":1,"last_sarga":71},
+      {"book":4,"sarga_count":66,"verse_group_count":1987,"first_sarga":1,"last_sarga":66},
+      {"book":5,"sarga_count":66,"verse_group_count":2487,"first_sarga":1,"last_sarga":66},
+      {"book":6,"sarga_count":116,"verse_group_count":4436,"first_sarga":1,"last_sarga":116},
+      {"book":7,"sarga_count":100,"verse_group_count":2690,"first_sarga":1,"last_sarga":100}
+    ],
+    "verse_id_root_sha256": "135a8930d81b00268521d30f0e419b7a9f592cd69917800b3e5241c16a5da0a3",
+    "all_sarga_verse_sequences_contiguous": true,
+    "first_verse_id": "R_1.001.001",
+    "last_verse_id": "R_7.100.026",
+    "terminal_verse_literal": "etāvad eva ākhyānaṃ sottaraṃ brahmapūjitam rāmāyaṇam iti khyātaṃ mukhyaṃ vālmīkinā kṛtam",
+    "indexed_scope_status": "complete_seven_kanda_606_sarga_structural_coverage_of_exact_gretil_carrier",
+    "edition_completeness_status": "terminal_seven_kanda_carrier_underlying_print_edition_unidentified_not_a_critical_or_tradition_complete_claim",
+    "publication_state": "review",
+    "text_status": "source_aligned_sarga_projection_from_exact_tei_spans_unreviewed"
+  },
+  "related_dcs_source": {
+    "relationship": "separate_current_ambuda_dcs_source_do_not_merge",
+    "readme_sha256": "134c11945415556d6e86f17f3579c6fb69b559a90a5d38ccd841168b145c3583",
+    "data_sha256": "f8d45c1289b15182867bd0c94d15886f8d8b1b10c4e7fc9a9b6a78fd5142e3b8",
+    "license": "CC-BY-4.0",
+    "dcs_verse_id_count": 18713,
+    "dcs_verse_id_root_sha256": "e029ab682e3edeac03c26ff29eb51b1dbdd20803ec55f9a599f17e18ff068e95",
+    "gretil_additional_verse_id_count": 48,
+    "dcs_source_order_anomaly_count": 3,
+    "identity_conclusion": "all_dcs_ids_exist_in_gretil_but_gretil_has_48_additional_ids_and_dcs_has_three_local_order_anomalies"
+  },
+  "completion_denials": {
+    "identified_print_or_manuscript_edition": false,
+    "critical_edition": false,
+    "complete_valmiki_ramayana_textual_tradition": false,
+    "all_recensions_and_variants": false,
+    "hindi_translation_present": false,
+    "english_translation_present_in_this_expression": false,
+    "ramayana_hero_universe_complete": false,
+    "mvp_library_complete": false,
+    "public_product_clearance": false
+  }
+}

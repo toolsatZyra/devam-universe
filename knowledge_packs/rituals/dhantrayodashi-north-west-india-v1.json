@@ -1,0 +1,185 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-dhantrayodashi-north-west-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "dhantrayodashi",
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "family_custom_overrides_generic_sequence": true,
+    "precise_muhurta_requires_separate_local_calendar": true
+  },
+  "sources": [
+    {
+      "source_id": "devam-dhantrayodashi-date-fixture",
+      "title": "Devam Dhantrayodashi New Delhi 2026 date evidence fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_crosswalk",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "c88547ab6e858c28ed6b60f209ff26ca1194d1e6820e3c5c6fce958b72d7347a"
+    },
+    {
+      "source_id": "maharashtra-tourism-diwali-2026",
+      "title": "Diwali: the festival of light, joy, and togetherness",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/",
+      "source_class": "official_current_regional_context",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "dd-news-on-air-dhanteras-identity-2026",
+      "title": "Dhanteras: auspicious day for worship and new purchases",
+      "publisher": "DD News On Air",
+      "url": "https://newsonair.gov.in/dhanteras-auspicious-day-for-worship-and-new-purchases/",
+      "source_class": "official_public_broadcaster_identity_context",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "drikpanchang-dhanteras-practice",
+      "title": "Dhanteras Puja and Dhantrayodashi context",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/dhanteras/festivals-dhanteras-puja-timings.html?geoname-id=1261481&year=2026",
+      "source_class": "current_practitioner_reference",
+      "rights_lane": "reference_only"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "dhantrayodashi-north-west-india-en-v1",
+      "language_code": "en",
+      "title": "Dhantrayodashi at home",
+      "summary": "Use the resolved Dhantrayodashi evening for gratitude for health, livelihood, and resources, and for the Dhanvantari, Lakshmi, or Kubera focus your family actually keeps. Buying metal, jewellery, utensils, medicines, or any other item is a custom—not a devotional requirement or financial recommendation.",
+      "family_practice_note": "Tell Sarthi whether your home honours Dhanvantari, Lakshmi-Kubera, tools or account books, or only begins Diwali preparations on this day. Yama Deepam is a separate Trayodashi observance and is not included in this guide. Follow a family practitioner for a formal puja or exact Sthir-Lagna muhurta.",
+      "context_prompts": [
+        "Which North or West India family tradition do you follow?",
+        "Does your family focus on Dhanvantari, Lakshmi-Kubera, livelihood tools or accounts, or simple Diwali preparation?",
+        "Does your household separately keep Yama Deepam?",
+        "Do you need a short home prayer or the boundary for a family-text or priest-led puja?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "Gratitude for health and livelihood",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "A clean place and the Dhanvantari, Lakshmi, Kubera, or devotional focus your family already uses", "substitutions": ["Use an existing image, home shrine, or simple mental prayer; do not purchase a new object for this guide"], "optional": false},
+            {"item": "Clean water, one flower or leaf, and fruit or a simple sweet", "substitutions": ["Offer one respectful locally available item"], "optional": false},
+            {"item": "One supervised lamp", "substitutions": ["Use a safe electric light or a flame-free prayer"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Use Devam's resolved Dhantrayodashi evening for your supported context; obtain a precise formal muhurta separately rather than copying a generic clock time.", "why": "The date rule is independently calculated from Trayodashi at pradosha, while the provider's narrower interval also requires Sthir Lagna.", "optional": false, "source_ids": ["devam-dhantrayodashi-date-fixture", "drikpanchang-dhanteras-practice"]},
+            {"ordinal": 2, "instruction": "Clean the place and settle for a brief prayer of gratitude for health, care, livelihood, and the resources entrusted to your household.", "why": "Dhantrayodashi is associated with prosperity and Dhanvantari, but gratitude does not become a wealth or health guarantee.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "dd-news-on-air-dhanteras-identity-2026"]},
+            {"ordinal": 3, "instruction": "Welcome Dhanvantari, Lakshmi-Kubera, or the focus your family knows; offer water, the flower or leaf, and fruit or sweet, then use a familiar prayer or divine name.", "why": "The sources preserve multiple current associations, so the guide follows family identity instead of declaring one universal deity set.", "optional": false, "source_ids": ["dd-news-on-air-dhanteras-identity-2026", "drikpanchang-dhanteras-practice"]},
+            {"ordinal": 4, "instruction": "Close by choosing one practical act: care for health responsibly, organise finances honestly, thank a caregiver or worker, or share food. Extinguish every flame before leaving.", "why": "This makes the observance actionable without selling products, replacing healthcare, or promising prosperity.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "dd-news-on-air-dhanteras-identity-2026"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Family Dhantrayodashi puja",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "The familiar deity focus, clean cloth, water, flowers or leaves, fruit or sweets, and safe light", "substitutions": ["Use the minimum form when the household does not have an established setup"], "optional": false},
+            {"item": "Tools, account books, coins, study materials, or health-service instruments", "substitutions": ["Include only what the family already honours; no purchase is necessary"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Prepare the home safely and place the family's existing Dhanvantari, Lakshmi-Kubera, or livelihood focus respectfully.", "why": "The day has multiple living associations rather than one mandatory national setup.", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "dd-news-on-air-dhanteras-identity-2026"]},
+            {"ordinal": 2, "instruction": "At the bounded evening, begin with the family's usual opening prayer and offer water, flowers or leaves, food, and light if safe.", "why": "This is a recognisable household form without inventing formal mantras or upacharas.", "optional": false, "source_ids": ["drikpanchang-dhanteras-practice", "devam-dhantrayodashi-date-fixture"]},
+            {"ordinal": 3, "instruction": "If customary, honour the tools, accounts, or instruments through which the household serves and earns; name one commitment to honest livelihood, responsible spending, or care for health.", "why": "The prosperity and Dhanvantari associations become ethical action rather than shopping pressure or medical claims.", "optional": false, "source_ids": ["dd-news-on-air-dhanteras-identity-2026", "maharashtra-tourism-diwali-2026"]},
+            {"ordinal": 4, "instruction": "Use a familiar arati or prayer, share prasad, and keep any separate Yama Deepam practice under its own family guidance.", "why": "The close preserves Dhantrayodashi and Yama Deepam as related but separate ritual identities.", "optional": false, "source_ids": ["devam-dhantrayodashi-date-fixture"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Family-text or practitioner-led puja",
+          "estimated_minutes": 60,
+          "materials": [
+            {"item": "The exact images, kalasha, offerings, text, accounts, tools, and other materials specified by the family's manual or practitioner", "substitutions": ["Use the standard form instead of improvising a formal sequence"], "optional": false},
+            {"item": "A safe plan for every lamp and incense source", "substitutions": ["Use a flame-free form where needed"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the exact local muhurta and whether the family's formal sequence centres Dhanvantari, Lakshmi-Kubera, accounts, tools, or another established form.", "why": "The fixed date does not establish one formal order or the provider's Sthir-Lagna interval everywhere.", "optional": false, "source_ids": ["devam-dhantrayodashi-date-fixture", "drikpanchang-dhanteras-practice"]},
+            {"ordinal": 2, "instruction": "Follow that known text and pronunciation through its own invocation, offerings, reading, arati, and closing; do not use this synthesis as a mantra manual.", "why": "Formal practice belongs to the specific living lineage and source.", "optional": false, "source_ids": ["drikpanchang-dhanteras-practice"]},
+            {"ordinal": 3, "instruction": "Close with prasad and a concrete act of responsible health care, generosity, or ethical stewardship, without claiming a guaranteed result.", "why": "The observance remains devotional rather than a medical, financial, or commercial promise.", "optional": false, "source_ids": ["dd-news-on-air-dhanteras-identity-2026", "maharashtra-tourism-diwali-2026"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "dhantrayodashi-north-west-india-hi-v1",
+      "language_code": "hi",
+      "title": "घर में धनत्रयोदशी",
+      "summary": "निर्धारित धनत्रयोदशी की संध्या को स्वास्थ्य, आजीविका और संसाधनों के प्रति कृतज्ञता तथा परिवार में प्रचलित धन्वन्तरी, लक्ष्मी या कुबेर-ध्यान के लिए रखें। धातु, आभूषण, बर्तन, दवा या कोई अन्य वस्तु खरीदना एक प्रथा हो सकती है—धार्मिक अनिवार्यता या वित्तीय सलाह नहीं।",
+      "family_practice_note": "सार्थी को बताएँ कि आपके घर में धन्वन्तरी, लक्ष्मी-कुबेर, औजार या बही-खाते का सम्मान होता है, या केवल दीपावली की तैयारी आरम्भ होती है। यम दीपम अलग त्रयोदशी-पालन है और इस विधि में शामिल नहीं है। औपचारिक पूजा या सटीक स्थिर-लग्न मुहूर्त के लिए पारिवारिक जानकार लें।",
+      "context_prompts": [
+        "आप किस उत्तर या पश्चिम भारतीय पारिवारिक परम्परा का पालन करते हैं?",
+        "आपके घर में धन्वन्तरी, लक्ष्मी-कुबेर, औजार-बही या सरल दीपावली-तैयारी में किस पर बल है?",
+        "क्या आपके घर में यम दीपम अलग से होता है?",
+        "आपको छोटी गृह-प्रार्थना चाहिए या पारिवारिक ग्रन्थ/पुरोहित-निर्देशित पूजा की सीमा?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "स्वास्थ्य और आजीविका के प्रति कृतज्ञता",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "स्वच्छ स्थान और परिवार में प्रचलित धन्वन्तरी, लक्ष्मी, कुबेर या अन्य परिचित ध्यान", "substitutions": ["मौजूदा चित्र, गृह-मन्दिर या मानसिक प्रार्थना लें; इस मार्गदर्शिका के लिए नयी वस्तु न खरीदें"], "optional": false},
+            {"item": "स्वच्छ जल, एक फूल या पत्ता, और फल या सरल मिठाई", "substitutions": ["एक श्रद्धापूर्ण स्थानीय अर्पण करें"], "optional": false},
+            {"item": "एक सुरक्षित निगरानी वाला दीप", "substitutions": ["सुरक्षित विद्युत-प्रकाश या अग्नि-रहित प्रार्थना करें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "समर्थित सन्दर्भ के लिए देवम द्वारा निर्धारित धनत्रयोदशी की संध्या लें; औपचारिक सटीक मुहूर्त अलग स्थानीय पंचांग से लें।", "why": "तिथि प्रदोष में त्रयोदशी से निश्चित है, जबकि प्रदाता का छोटा समय स्थिर लग्न भी माँगता है।", "optional": false, "source_ids": ["devam-dhantrayodashi-date-fixture", "drikpanchang-dhanteras-practice"]},
+            {"ordinal": 2, "instruction": "स्थान स्वच्छ करें और स्वास्थ्य, सेवा, आजीविका तथा परिवार को मिले संसाधनों के प्रति कृतज्ञता की छोटी प्रार्थना करें।", "why": "समृद्धि और धन्वन्तरी की पहचान कृतज्ञता का आधार है, निश्चित धन या स्वास्थ्य-फल की गारंटी नहीं।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "dd-news-on-air-dhanteras-identity-2026"]},
+            {"ordinal": 3, "instruction": "परिवार के परिचित धन्वन्तरी, लक्ष्मी-कुबेर या अन्य ध्यान का स्वागत करें; जल, फूल या पत्ता और फल या मिठाई अर्पित करके परिचित प्रार्थना या नाम लें।", "why": "विभिन्न वर्तमान सम्बन्ध सुरक्षित रहते हैं; एक देवता-समूह सब पर अनिवार्य नहीं किया जाता।", "optional": false, "source_ids": ["dd-news-on-air-dhanteras-identity-2026", "drikpanchang-dhanteras-practice"]},
+            {"ordinal": 4, "instruction": "एक व्यावहारिक कर्म चुनें—स्वास्थ्य की जिम्मेदार देखभाल, ईमानदार वित्त-व्यवस्था, किसी सेवक या उपचारक के प्रति धन्यवाद, या भोजन-साझेदारी—और हर लौ सुरक्षित बुझाएँ।", "why": "यह खरीदारी, चिकित्सा-प्रतिस्थापन या समृद्धि की गारंटी के बिना पर्व को उपयोगी बनाता है।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "dd-news-on-air-dhanteras-identity-2026"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "पारिवारिक धनत्रयोदशी-पूजा",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "परिचित देव-ध्यान, स्वच्छ वस्त्र, जल, फूल या पत्ते, फल या मिठाई और सुरक्षित प्रकाश", "substitutions": ["स्थापित व्यवस्था न हो तो सरल विधि करें"], "optional": false},
+            {"item": "औजार, बही-खाते, सिक्के, अध्ययन-सामग्री या स्वास्थ्य-सेवा के उपकरण", "substitutions": ["केवल वही रखें जिसका परिवार में सम्मान होता है; खरीद आवश्यक नहीं"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "घर को सुरक्षित रूप से तैयार करें और परिवार का परिचित धन्वन्तरी, लक्ष्मी-कुबेर या आजीविका-ध्यान सम्मान से रखें।", "why": "इस दिन के अनेक जीवित सम्बन्ध हैं, एक राष्ट्रीय अनिवार्य व्यवस्था नहीं।", "optional": false, "source_ids": ["maharashtra-tourism-diwali-2026", "dd-news-on-air-dhanteras-identity-2026"]},
+            {"ordinal": 2, "instruction": "निर्धारित संध्या में परिचित आरम्भिक प्रार्थना करें और जल, फूल या पत्ते, नैवेद्य और सुरक्षित प्रकाश अर्पित करें।", "why": "यह औपचारिक मन्त्र या उपचार गढ़े बिना पहचानने योग्य गृह-रूप है।", "optional": false, "source_ids": ["drikpanchang-dhanteras-practice", "devam-dhantrayodashi-date-fixture"]},
+            {"ordinal": 3, "instruction": "यदि प्रचलित हो तो औजार, बही या सेवा-उपकरणों का सम्मान करें और ईमानदार आजीविका, जिम्मेदार खर्च या स्वास्थ्य-देखभाल का एक संकल्प लें।", "why": "समृद्धि और धन्वन्तरी का सम्बन्ध खरीदारी-दबाव या चिकित्सा-दावे के बजाय धर्मसम्मत कर्म बनता है।", "optional": false, "source_ids": ["dd-news-on-air-dhanteras-identity-2026", "maharashtra-tourism-diwali-2026"]},
+            {"ordinal": 4, "instruction": "परिचित आरती या प्रार्थना और प्रसाद से समाप्त करें; यम दीपम की अलग पारिवारिक विधि हो तो उसे अलग ही रखें।", "why": "धनत्रयोदशी और यम दीपम सम्बन्धित पर अलग अनुष्ठान बने रहते हैं।", "optional": false, "source_ids": ["devam-dhantrayodashi-date-fixture"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "पारिवारिक ग्रन्थ या जानकार-निर्देशित पूजा",
+          "estimated_minutes": 60,
+          "materials": [
+            {"item": "पारिवारिक ग्रन्थ या जानकार द्वारा बताये ठीक चित्र, कलश, अर्पण, पाठ, बही और औजार", "substitutions": ["औपचारिक क्रम गढ़ने के बजाय मध्यम विधि करें"], "optional": false},
+            {"item": "हर दीप और धूप के लिए सुरक्षित योजना", "substitutions": ["आवश्यक हो तो अग्नि-रहित रूप लें"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "सटीक स्थानीय मुहूर्त और परिवार के धन्वन्तरी, लक्ष्मी-कुबेर, बही, औजार या अन्य स्थापित क्रम को जानकार से निश्चित करें।", "why": "निश्चित तिथि एक औपचारिक राष्ट्रीय क्रम या हर स्थान का स्थिर-लग्न समय सिद्ध नहीं करती।", "optional": false, "source_ids": ["devam-dhantrayodashi-date-fixture", "drikpanchang-dhanteras-practice"]},
+            {"ordinal": 2, "instruction": "उसी ज्ञात ग्रन्थ और उच्चारण से आह्वान, अर्पण, पाठ, आरती और समापन करें; इस संश्लेषण को मन्त्र-पुस्तिका न बनाएँ।", "why": "औपचारिक विधि विशिष्ट जीवित परम्परा और स्रोत की है।", "optional": false, "source_ids": ["drikpanchang-dhanteras-practice"]},
+            {"ordinal": 3, "instruction": "प्रसाद और जिम्मेदार स्वास्थ्य-देखभाल, उदारता या धर्मसम्मत संसाधन-प्रबन्ध के एक कर्म से समापन करें; निश्चित फल का दावा न करें।", "why": "पर्व चिकित्सा, वित्त या व्यापारिक वादा नहीं बनता।", "optional": false, "source_ids": ["dd-news-on-air-dhanteras-identity-2026", "maharashtra-tourism-diwali-2026"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "formal_priest_mantras_included": false,
+    "fasting_or_medical_regimen_prescribed": false,
+    "shopping_or_purchase_required": false,
+    "financial_advice_included": false,
+    "guaranteed_wealth_or_health_outcome_claimed": false,
+    "precise_muhurta_calculated": false,
+    "yama_deepam_merged_or_completed": false,
+    "one_universal_deity_set_or_procedure_claimed": false,
+    "all_regional_variants_complete": false
+  }
+}

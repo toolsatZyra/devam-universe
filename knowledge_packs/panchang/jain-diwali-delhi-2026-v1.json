@@ -1,0 +1,46 @@
+{
+  "contract": "DEVAM_JAIN_DIWALI_UMBRELLA_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-jain-diwali-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-08", "2026-11-09"],
+    "supported_tradition_codes": ["jain-umbrella"],
+    "selected_civil_date": "2026-11-08",
+    "date_resolved_by_devam_rule": true,
+    "rule_scope": "umbrella_jain_diwali_amavasya_evening_only",
+    "sect_or_sangh_nirvan_kalyanak_timing_resolved": false,
+    "provider_event_time_reproduced": false,
+    "universal_jain_procedure_claim": false
+  },
+  "live_sources": [
+    {"source_id": "jaina-diwali-mahavir-nirvana-2019", "provider": "JAINA", "url": "https://www.jaina.org/page/10_26_2019_ENewsletter", "rights_lane": "reference_only", "evidence_role": "official_jain_umbrella_identity_new_moon_inner_light_pavapuri_and_teaching_context_not_2026_date_authority", "observed_fetch": {"fetched_at_utc": "2026-08-06T23:59:51.0133808Z", "status": 200, "final_url": "https://www.jaina.org/page/10_26_2019_ENewsletter", "response_bytes": 72456, "response_sha256": "939777e6410007a5c4b04ced11575b3151854c17fb34c6ea5b90cc8ca85f7256", "strict_utf8": true}, "semantic_observation": {"diwali_commemorates_mahavira_moksha": true, "new_moon_day_of_kartik": true, "pavapuri_identity": true, "inner_vision_through_mahavira_path": true, "scripture_and_worship_practices_described_but_not_universalized": true}, "source_text_returned_by_api": false},
+    {"source_id": "jaina-mahavira-nirvana-2550", "provider": "JAINA", "url": "https://www.jaina.org/mpage/11242023_ENewsletter", "rights_lane": "reference_only", "evidence_role": "official_jain_umbrella_pavapuri_nirvana_ahimsa_anekantavada_self_effort_and_restraint_context", "observed_fetch": {"fetched_at_utc": "2026-08-06T23:59:51.0133808Z", "status": 200, "final_url": "https://www.jaina.org/mpage/11242023_ENewsletter", "response_bytes": 170183, "response_sha256": "c7fd1377145a0d5e43ba083a467380abcdb042967526e3757bb4696d688734e2", "strict_utf8": true}, "semantic_observation": {"mahavira_nirvana_at_pavapuri_on_diwali": true, "ahimsa": true, "anekantavada": true, "self_effort_and_restraint": true}, "source_text_returned_by_api": false},
+    {"source_id": "jain-center-nj-2026-diwali-variants", "provider": "Jain Center of New Jersey", "url": "https://jaincenternj.org/Events/MajorEvents", "rights_lane": "reference_only", "evidence_role": "official_jain_center_2026_calendar_proving_diwali_and_digambar_puja_date_separation", "observed_fetch": {"fetched_at_utc": "2026-08-06T23:59:51.0133808Z", "status": 200, "final_url": "https://jaincenternj.org/Events/MajorEvents", "response_bytes": 40278, "response_sha256": "e14f78cff1de994c6a619dae89532413bb3eea706eee0d942ca8bdfe8b068135", "strict_utf8": true}, "semantic_observation": {"diwali_8_november_2026": true, "digambar_diwali_puja_9_november_2026": true, "one_date_for_all_jain_lanes_false": true}, "source_text_returned_by_api": false},
+    {"source_id": "mahavir-foundation-2026-diwali-nirvan-calendar", "provider": "Mahavir Foundation", "url": "https://mahavirfoundation.com/our-events/", "rights_lane": "reference_only", "evidence_role": "official_shwetambar_community_calendar_proving_diwali_nirvan_and_new_year_date_separation", "observed_fetch": {"fetched_at_utc": "2026-08-06T23:59:51.0133808Z", "status": 200, "final_url": "https://mahavirfoundation.com/our-events/", "response_bytes": 129840, "response_sha256": "805cc28305d51a223db346529dc0ea24fe27f28775b8dad8e991606ac0b216f9", "strict_utf8": true}, "semantic_observation": {"diwali_8_november_2026": true, "mahavir_swami_nirvan_kalyanak_9_november_2026": true, "gautam_swami_kevaljnan_new_year_10_november_2026": true}, "source_text_returned_by_api": false},
+    {"source_id": "incredible-india-diwali-multifaith", "provider": "Incredible India", "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/diwali", "rights_lane": "reference_only", "evidence_role": "official_ministry_of_tourism_distinct_jain_mahavira_nirvana_identity_corroboration_not_jain_practice_authority", "observed_fetch": {"fetched_at_utc": "2026-08-06T23:59:51.0133808Z", "status": 200, "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/diwali", "response_bytes": 499002, "response_sha256": "7b0dcf5ed689927266a073465d1b5349055eacf488e8cb214559d83884ef8053", "strict_utf8": true}, "semantic_observation": {"jainism_commemorates_mahavira_nirvana": true, "sikh_bandi_chhor_separate": true, "hindu_lanes_not_jain_authority": true}, "source_text_returned_by_api": false}
+  ],
+  "decision": {
+    "observance_slug": "jain-diwali-umbrella",
+    "canonical_name": "Jain Diwali / Mahavira's Liberation",
+    "target_tithi": "Amavasya",
+    "devam_rule": "select_the_candidate_with_greater_amavasya_coverage_during_local_pradosha_for_the_umbrella_diwali_evening",
+    "selected_civil_date": "2026-11-08",
+    "mahavir_nirvan_kalyanak_9_november_variant_preserved": true,
+    "digambar_diwali_puja_9_november_variant_preserved": true,
+    "gautam_swami_new_year_10_november_separate": true
+  },
+  "denials": {
+    "sect_or_sangh_nirvan_kalyanak_timing_resolved": false,
+    "fasting_or_austerity_prescribed": false,
+    "formal_puja_mantra_stotra_or_scripture_recitation_included": false,
+    "real_lamps_or_firecrackers_required": false,
+    "sweets_clothes_donation_or_purchase_required": false,
+    "moksha_spiritual_merit_or_outcome_guaranteed": false,
+    "shwetambar_digambar_sthanakvasi_or_other_lanes_equated": false,
+    "hindu_lakshmi_puja_or_sikh_bandi_chhor_merged": false,
+    "provider_event_time_reproduced": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "contract": "DEVAM_FIXED_CARRIER_STRUCTURE_PROFILE_RESULT_V1",
+  "result": "PASS",
+  "profile_path": "ingestion/profiles/ramcharitmanas-belvedere-1925-fixed-carrier-profile-v1.json",
+  "profile_sha256": "b8c3cb71887a80603455a9432ebd26f5ad62635e6bfc64f6fccace0efb6278f9",
+  "source_sha256": "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2",
+  "acquisition_plan_sha256": "c752fad4615fe643247715a97c614ecdba76670e72ef1650b8cf82dcc08f8c42",
+  "checks": {
+    "source_sha256_matches": true,
+    "source_bytes_match": true,
+    "acquisition_plan_sha256_matches": true,
+    "pdf_page_count_matches": true,
+    "embedded_text_absent": true,
+    "all_pdf_pages_accounted_once": true,
+    "seven_sopanas_present": true,
+    "sopana_ordinals_contiguous": true,
+    "printed_ranges_contiguous": true,
+    "printed_range_is_1_through_1144": true,
+    "fixed_carrier_positive_boundary_exact": true,
+    "text_and_product_denials_fail_closed": true
+  },
+  "passed": 12,
+  "total": 12,
+  "mutation_boundary": {
+    "source_payload_copied": false,
+    "ocr_generated": false,
+    "reader_generated": false,
+    "database_mutated": false,
+    "external_service_mutated": false
+  }
+}

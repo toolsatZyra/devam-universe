@@ -1,0 +1,86 @@
+{
+  "contract": "DEVAM_KALI_CHAUDAS_AHMEDABAD_BAPS_PREFLIGHT_V1",
+  "fixture_id": "devam-kali-chaudas-ahmedabad-baps-2026-preflight-v1",
+  "status": "research_preflight_not_executable_not_product_promoted",
+  "scope": {
+    "reference_location": "Ahmedabad, Gujarat, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-07", "2026-11-08"],
+    "candidate_tradition_code": "swaminarayan-baps",
+    "observed_selected_civil_date": "2026-11-07",
+    "kali_chaudas_only": true,
+    "maharashtra_naraka_chaturdashi_separate": true,
+    "tamil_deepavali_separate": true,
+    "bengal_kali_puja_separate": true,
+    "ritual_guidance_included": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drik-gujarati-calendar-ahmedabad-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/gujarati/calendar/gujarati-calendar.html?geoname-id=1279233&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_ahmedabad_gujarati_calendar_date_and_separation_corroboration_not_baps_practice_authority",
+      "observed_fetch": {"status": 200, "final_url": "https://www.drikpanchang.com/gujarati/calendar/gujarati-calendar.html?geoname-id=1279233&year=2026", "response_bytes": 216717, "response_sha256": "42815ef0d33112bb57c30a4c0a4bb7c90165c7edab519f2f3bac756bd6f161c4", "strict_utf8": true},
+      "semantic_observation": {"kali_chaudas_saturday_7_november_2026": true, "aso_vad_chaudas": true, "hanuman_puja_same_civil_date": true, "roop_chaudas_and_naraka_chaturdashi_on_8_november_separate": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "baps-festival-list-2026-kali-chaudash",
+      "provider": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/Calendar/2026/FestivalList.aspx",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_sampradaya_identity_date_and_bounded_meaning",
+      "observed_fetch": {"status": 200, "final_url": "https://www.baps.org/Calendar/2026/FestivalList.aspx", "response_bytes": 115443, "response_sha256": "e97670f8781c7dbd8fc093c5b6db6d8e284045ba884dc089f81287990fd3d623", "strict_utf8": true},
+      "semantic_observation": {"kali_chaudash_7_november_2026": true, "aso_vad_teras_chaudas": true, "prayer_against_evil_forces_identity": true, "complete_household_or_temple_procedure_present": false},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "baps-nirnay-2026-kali-chaudash",
+      "provider": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/Calendar/2026/Nirnay.aspx",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_sampradaya_date_hanuman_puja_pradosh_and_nishith_fixture_not_product_muhurta",
+      "observed_fetch": {"status": 200, "final_url": "https://www.baps.org/Calendar/2026/Nirnay.aspx", "response_bytes": 213996, "response_sha256": "397baad532df38cd409fc9e3977d85442ffa1b5fcbeb8b6e4db24acc655ecb47", "strict_utf8": true},
+      "semantic_observation": {"kali_chaudash_and_hanuman_puja_7_november_2026": true, "published_pradosh_local": "17:58-19:34", "published_nishith_local": "23:49-24:38", "precise_intervals_not_republished_by_product": true},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "calculation_preflight": {
+    "latitude": 23.0225,
+    "longitude": 72.5714,
+    "engine_version": "astronomy-engine-2.1.19-lahiri-v3",
+    "candidate_days": [
+      {"civil_date": "2026-11-07", "nishita_start_utc": "2026-11-07T18:27:52.832Z", "nishita_end_utc": "2026-11-07T19:19:13.139Z", "tithi_throughout_nishita": "Chaturdashi", "qualifies": true},
+      {"civil_date": "2026-11-08", "nishita_start_utc": "2026-11-08T18:27:54.765Z", "nishita_end_utc": "2026-11-08T19:19:19.375Z", "tithi_throughout_nishita": "Amavasya", "qualifies": false}
+    ],
+    "engine_and_baps_nishith_start_difference_seconds": 532,
+    "engine_and_baps_nishith_end_difference_seconds": 673,
+    "candidate_validation_tolerance_seconds": 720
+  },
+  "adjudication": {
+    "candidate_observance_slug": "kali-chaudas-baps",
+    "candidate_canonical_name": "Kali Chaudash / Hanuman Puja",
+    "candidate_target_tithi": "Aso Vad Chaturdashi",
+    "candidate_decision_window": "local_nishita",
+    "candidate_selection": "select_only_when_exactly_one_candidate_nishita_is_fully_covered_by_krishna_chaturdashi",
+    "observed_selected_civil_date": "2026-11-07",
+    "new_swaminarayan_baps_context_required": true,
+    "current_smarta_west_lane_must_not_be_reused": true,
+    "next_required_step": "freeze_exact_baps_date_fixture_add_explicit_tradition_context_and_validate_before_any_practice_pack"
+  },
+  "denials": {
+    "executable_date_fixture_complete": false,
+    "ritual_procedure_pack_complete": false,
+    "precise_baps_pradosh_or_nishith_republished": false,
+    "formal_hanuman_puja_or_mantra_included": false,
+    "evil_spirit_removal_or_protection_guaranteed": false,
+    "tantric_or_occult_instruction_included": false,
+    "animal_or_self_harm_instruction_included": false,
+    "maharashtra_naraka_chaturdashi_merged": false,
+    "tamil_deepavali_merged": false,
+    "bengal_kali_puja_merged": false,
+    "one_universal_gujarat_or_indian_procedure_claimed": false,
+    "source_text_returned_by_api": false
+  }
+}

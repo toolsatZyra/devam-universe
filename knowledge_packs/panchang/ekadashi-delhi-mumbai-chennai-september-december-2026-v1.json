@@ -1,0 +1,295 @@
+{
+  "contract": "DEVAM_BOUNDED_EKADASHI_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-ekadashi-delhi-mumbai-chennai-september-december-2026-v1",
+  "scope": {
+    "civil_date_start": "2026-09-01",
+    "civil_date_end": "2026-12-31",
+    "timezone": "Asia/Kolkata",
+    "coordinate_tolerance_degrees": 0.0001,
+    "profiles": [
+      {
+        "profile_id": "delhi",
+        "reference_location": "Delhi, India",
+        "geoname_id": 1273294,
+        "latitude": 28.6139,
+        "longitude": 77.209,
+        "smarta_tradition_code": "smarta-north-india"
+      },
+      {
+        "profile_id": "mumbai",
+        "reference_location": "Mumbai, India",
+        "geoname_id": 1275339,
+        "latitude": 19.076,
+        "longitude": 72.8777,
+        "smarta_tradition_code": "smarta-west-india"
+      },
+      {
+        "profile_id": "chennai",
+        "reference_location": "Chennai, India",
+        "geoname_id": 1264527,
+        "latitude": 13.0827,
+        "longitude": 80.2707,
+        "smarta_tradition_code": "smarta-south-india"
+      }
+    ],
+    "vaishnava_tradition_code": "vaishnava-iskcon",
+    "exact_reference_profiles_only": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-ekadashi-decision-chapter",
+      "source_class": "historical_rule_context",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67],
+      "evidence_role": "historical_smarta_vaishnava_arunodaya_shuddha_viddha_mahadwadashi_and_parana_decision_context",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-smarta-ekadashi-2026",
+      "source_class": "current_practitioner_calendar",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T20:56:45.375Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1273294&year=2026",
+      "response_bytes": 122229,
+      "response_sha256": "6b3dba08e9073b8003fc2a431a9f45efbac714e190696bbff6de93eb4722e950",
+      "strict_utf8": true,
+      "evidence_role": "location_specific_smarta_date_and_two_date_preference_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-iskcon-ekadashi-2026",
+      "source_class": "current_practitioner_calendar",
+      "url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T20:56:45.612Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1273294&year=2026",
+      "response_bytes": 121177,
+      "response_sha256": "37fa24ec242f157797ded1d7da923e75f89c0328f7e9cfb2bd73ae267c22e2a4",
+      "strict_utf8": true,
+      "evidence_role": "location_specific_iskcon_date_classification_and_parana_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-mumbai-smarta-ekadashi-2026",
+      "source_class": "current_practitioner_calendar",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1275339&year=2026",
+      "fetched_at_utc": "2026-08-06T20:56:45.729Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1275339&year=2026",
+      "response_bytes": 121122,
+      "response_sha256": "f91ea6536a08b3833aad0b7b9391b043ce92265a673dea8ca45e3d8f610a5112",
+      "strict_utf8": true,
+      "evidence_role": "location_specific_smarta_date_and_two_date_preference_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-mumbai-iskcon-ekadashi-2026",
+      "source_class": "current_practitioner_calendar",
+      "url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1275339&year=2026",
+      "fetched_at_utc": "2026-08-06T20:56:45.849Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1275339&year=2026",
+      "response_bytes": 120648,
+      "response_sha256": "a69d746037c961723b177f317ef769f4efee5b9870130061ece1ed6fc52ead9c",
+      "strict_utf8": true,
+      "evidence_role": "location_specific_iskcon_date_classification_and_parana_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-chennai-smarta-ekadashi-2026",
+      "source_class": "current_practitioner_calendar",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1264527&year=2026",
+      "fetched_at_utc": "2026-08-06T20:56:45.963Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1264527&year=2026",
+      "response_bytes": 123456,
+      "response_sha256": "61601f1a565d6aea133a9da27288060cc2e973c084f11ff80c6e1ecbaa18a371",
+      "strict_utf8": true,
+      "evidence_role": "location_specific_smarta_date_and_two_date_preference_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-chennai-iskcon-ekadashi-2026",
+      "source_class": "current_practitioner_calendar",
+      "url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1264527&year=2026",
+      "fetched_at_utc": "2026-08-06T20:56:46.069Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1264527&year=2026",
+      "response_bytes": 122287,
+      "response_sha256": "88e9240a0524262894fe2eb63e855d2c2ed0382a9a02a1e26411fcdccbd82706",
+      "strict_utf8": true,
+      "evidence_role": "location_specific_iskcon_date_classification_and_parana_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "iskcon-bangalore-ekadashi-calendar-2026",
+      "source_class": "official_current_corroboration",
+      "url": "https://www.iskconbangalore.org/ekadashi-calendar/",
+      "fetched_at_utc": "2026-08-06T20:56:46.175Z",
+      "status": 200,
+      "final_url": "https://www.iskconbangalore.org/ekadashi-calendar/",
+      "response_bytes": 91433,
+      "response_sha256": "fe27d2817c8fc0cc65eb4d345e810a86aa1c29115d0fa8ca31332ef70a1ca3a0",
+      "strict_utf8": true,
+      "evidence_role": "official_iskcon_date_and_next_day_break_fast_corroboration_not_city_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "rule_contract": {
+    "smarta_selection": "use_only_the_current_practitioner_selected_date_for_the_exact_reference_city_and_matching_smarta_region_profile",
+    "smarta_two_date_boundary": "first_listed_date_is_the_householder_preference_when_two_dates_are_listed_but_this_fixture_does_not_generalize_that_statement_into_a_complete_textual_rule_engine",
+    "vaishnava_selection": "use_only_the_current_iskcon_calendar_selected_date_for_the_exact_reference_city_profile",
+    "astronomical_role": "preserve_local_sunrise_and_96_minute_arunodaya_tithi_states_as_diagnostics_without_overriding_the_frozen_practitioner_lane",
+    "iskcon_parana": "recalculate_from_next_local_sunrise_to_one_third_of_next_day_daylight_and_require_both_ends_within_180_seconds_of_the_provider_window",
+    "smarta_parana": "unresolved_until_each_named_smarta_date_has_its_own_location_specific_parana_and_hari_vasara_fixture",
+    "dvadashi_and_mahadwadashi_classification": "preserve_provider_labels_literally_without_claiming_complete_gcal_or_nirnayasindhu_classification_logic",
+    "fasting_food_medical_and_ritual_guidance_resolved": false,
+    "outside_exact_profile": "fail_closed"
+  },
+  "observances": [
+    {
+      "observance_slug": "aja-ekadashi",
+      "smarta_name": "Aja Ekadashi",
+      "iskcon_name": "Annada Ekadashi",
+      "target_tithi": { "index": 26, "name": "Ekadashi", "paksha": "krishna" },
+      "candidate_civil_dates": ["2026-09-06", "2026-09-07"],
+      "tithi_begins_local": "2026-09-06T19:29:00+05:30",
+      "tithi_ends_local": "2026-09-07T17:03:00+05:30",
+      "smarta_date": "2026-09-07",
+      "iskcon": {
+        "delhi": { "date": "2026-09-07", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-09-08T06:02:00+05:30", "parana_end_local": "2026-09-08T10:13:00+05:30" },
+        "mumbai": { "date": "2026-09-07", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-09-08T06:25:00+05:30", "parana_end_local": "2026-09-08T10:32:00+05:30" },
+        "chennai": { "date": "2026-09-07", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-09-08T05:58:00+05:30", "parana_end_local": "2026-09-08T10:04:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "parsva-ekadashi",
+      "smarta_name": "Parsva / Parivartini Ekadashi",
+      "iskcon_name": "Parshva Ekadashi",
+      "target_tithi": { "index": 11, "name": "Ekadashi", "paksha": "shukla" },
+      "candidate_civil_dates": ["2026-09-21", "2026-09-22"],
+      "tithi_begins_local": "2026-09-21T20:00:00+05:30",
+      "tithi_ends_local": "2026-09-22T21:43:00+05:30",
+      "smarta_date": "2026-09-22",
+      "iskcon": {
+        "delhi": { "date": "2026-09-22", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-09-23T06:10:00+05:30", "parana_end_local": "2026-09-23T10:12:00+05:30" },
+        "mumbai": { "date": "2026-09-22", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-09-23T06:27:00+05:30", "parana_end_local": "2026-09-23T10:30:00+05:30" },
+        "chennai": { "date": "2026-09-22", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-09-23T05:58:00+05:30", "parana_end_local": "2026-09-23T10:00:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "indira-ekadashi",
+      "smarta_name": "Indira Ekadashi",
+      "iskcon_name": "Indira Ekadashi",
+      "target_tithi": { "index": 26, "name": "Ekadashi", "paksha": "krishna" },
+      "candidate_civil_dates": ["2026-10-05", "2026-10-06"],
+      "tithi_begins_local": "2026-10-06T02:07:00+05:30",
+      "tithi_ends_local": "2026-10-07T00:34:00+05:30",
+      "smarta_date": "2026-10-06",
+      "iskcon": {
+        "delhi": { "date": "2026-10-06", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-10-07T06:17:00+05:30", "parana_end_local": "2026-10-07T10:11:00+05:30" },
+        "mumbai": { "date": "2026-10-06", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-10-07T06:30:00+05:30", "parana_end_local": "2026-10-07T10:28:00+05:30" },
+        "chennai": { "date": "2026-10-06", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-10-07T06:14:00+05:30", "parana_end_local": "2026-10-07T09:57:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "papankusha-ekadashi",
+      "smarta_name": "Papankusha Ekadashi",
+      "iskcon_name": "Pashankusha Ekadashi",
+      "target_tithi": { "index": 11, "name": "Ekadashi", "paksha": "shukla" },
+      "candidate_civil_dates": ["2026-10-21", "2026-10-22"],
+      "tithi_begins_local": "2026-10-21T14:11:00+05:30",
+      "tithi_ends_local": "2026-10-22T14:47:00+05:30",
+      "smarta_date": "2026-10-22",
+      "iskcon": {
+        "delhi": { "date": "2026-10-22", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-10-23T06:27:00+05:30", "parana_end_local": "2026-10-23T10:12:00+05:30" },
+        "mumbai": { "date": "2026-10-22", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-10-23T06:35:00+05:30", "parana_end_local": "2026-10-23T10:27:00+05:30" },
+        "chennai": { "date": "2026-10-22", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-10-23T06:00:00+05:30", "parana_end_local": "2026-10-23T09:56:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "rama-ekadashi",
+      "smarta_name": "Rama Ekadashi",
+      "iskcon_name": "Rama Ekadashi",
+      "target_tithi": { "index": 26, "name": "Ekadashi", "paksha": "krishna" },
+      "candidate_civil_dates": ["2026-11-04", "2026-11-05"],
+      "tithi_begins_local": "2026-11-04T11:03:00+05:30",
+      "tithi_ends_local": "2026-11-05T10:35:00+05:30",
+      "smarta_date": "2026-11-05",
+      "iskcon": {
+        "delhi": { "date": "2026-11-05", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-11-06T06:37:00+05:30", "parana_end_local": "2026-11-06T10:15:00+05:30" },
+        "mumbai": { "date": "2026-11-05", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-11-06T06:41:00+05:30", "parana_end_local": "2026-11-06T10:28:00+05:30" },
+        "chennai": { "date": "2026-11-05", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-11-06T06:04:00+05:30", "parana_end_local": "2026-11-06T09:56:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "devutthana-ekadashi",
+      "smarta_name": "Devutthana Ekadashi",
+      "iskcon_name": "Utthana Ekadashi",
+      "target_tithi": { "index": 11, "name": "Ekadashi", "paksha": "shukla" },
+      "candidate_civil_dates": ["2026-11-20", "2026-11-21"],
+      "tithi_begins_local": "2026-11-20T07:15:00+05:30",
+      "tithi_ends_local": "2026-11-21T06:31:00+05:30",
+      "smarta_date": "2026-11-20",
+      "iskcon": {
+        "delhi": { "date": "2026-11-21", "classification": "gauna_vaishnava_shift", "parana_start_local": "2026-11-22T06:49:00+05:30", "parana_end_local": "2026-11-22T10:21:00+05:30" },
+        "mumbai": { "date": "2026-11-21", "classification": "gauna_vaishnava_shift", "parana_start_local": "2026-11-22T06:50:00+05:30", "parana_end_local": "2026-11-22T10:33:00+05:30" },
+        "chennai": { "date": "2026-11-21", "classification": "trisparsha_mahadwadashi", "parana_start_local": "2026-11-22T06:11:00+05:30", "parana_end_local": "2026-11-22T10:00:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "utpanna-ekadashi",
+      "smarta_name": "Utpanna Ekadashi",
+      "iskcon_name": "Utpanna Ekadashi",
+      "target_tithi": { "index": 26, "name": "Ekadashi", "paksha": "krishna" },
+      "candidate_civil_dates": ["2026-12-03", "2026-12-04", "2026-12-05"],
+      "tithi_begins_local": "2026-12-03T23:03:00+05:30",
+      "tithi_ends_local": "2026-12-04T23:44:00+05:30",
+      "smarta_date": "2026-12-04",
+      "iskcon": {
+        "delhi": { "date": "2026-12-04", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-12-05T06:59:00+05:30", "parana_end_local": "2026-12-05T10:28:00+05:30" },
+        "mumbai": { "date": "2026-12-04", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-12-05T06:58:00+05:30", "parana_end_local": "2026-12-05T10:39:00+05:30" },
+        "chennai": { "date": "2026-12-05", "classification": "paksha_vardhini_mahadwadashi", "parana_start_local": "2026-12-06T06:18:00+05:30", "parana_end_local": "2026-12-06T10:06:00+05:30" }
+      }
+    },
+    {
+      "observance_slug": "mokshada-ekadashi",
+      "smarta_name": "Mokshada Ekadashi / Vaikuntha Ekadashi",
+      "iskcon_name": "Mokshada Ekadashi",
+      "target_tithi": { "index": 11, "name": "Ekadashi", "paksha": "shukla" },
+      "candidate_civil_dates": ["2026-12-19", "2026-12-20"],
+      "tithi_begins_local": "2026-12-19T22:09:00+05:30",
+      "tithi_ends_local": "2026-12-20T20:14:00+05:30",
+      "smarta_date": "2026-12-20",
+      "iskcon": {
+        "delhi": { "date": "2026-12-20", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-12-21T07:10:00+05:30", "parana_end_local": "2026-12-21T10:36:00+05:30" },
+        "mumbai": { "date": "2026-12-20", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-12-21T07:07:00+05:30", "parana_end_local": "2026-12-21T10:47:00+05:30" },
+        "chennai": { "date": "2026-12-20", "classification": "ordinary_iskcon_ekadashi", "parana_start_local": "2026-12-21T06:26:00+05:30", "parana_end_local": "2026-12-21T10:13:00+05:30" }
+      }
+    }
+  ],
+  "denials": {
+    "complete_nirnayasindhu_rule_engine": false,
+    "complete_gcal_rule_engine": false,
+    "all_smarta_traditions_equivalent": false,
+    "all_vaishnava_traditions_equivalent": false,
+    "all_india_location_coverage": false,
+    "smarta_parana_resolved": false,
+    "fasting_food_guidance_resolved": false,
+    "medical_guidance_included": false,
+    "ritual_procedure_included": false,
+    "universal_household_authority": false,
+    "source_text_returned_by_api": false,
+    "complete_september_december_observance_layer": false
+  }
+}

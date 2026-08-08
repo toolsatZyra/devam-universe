@@ -1,0 +1,83 @@
+{
+  "contract": "DEVAM_BOUNDED_RISHI_PANCHAMI_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-rishi-panchami-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "candidate_civil_dates": [
+      "2026-09-15",
+      "2026-09-16"
+    ],
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-rishi-panchami-decision",
+      "title": "Nirnayasindhu - Marathi translation, Mumbai 1865",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [
+        151
+      ],
+      "printed_page": "134",
+      "evidence_role": "historical_bhadrapada_shukla_panchami_madhyahna_rule_with_competing_two_day_precedence",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-rishi-panchami-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/rishi-panchami/rishi-panchami-date-time.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T18:47:27Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/festivals/rishi-panchami/rishi-panchami-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 62659,
+      "response_sha256": "20ecae009600fb8f4b58d03a1a510752db7bf18183205122460120d9399aa59a",
+      "strict_utf8": true,
+      "evidence_role": "current_practitioner_observance_identity_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "historical_observation": {
+    "source_heading": "Rishi-panchami",
+    "bhadrapada_shukla_panchami_context_present": true,
+    "madhyahna_presence_required": true,
+    "two_day_precedence_opinions_conflict": true,
+    "ritual_instructions_not_promoted": true
+  },
+  "modern_observation": {
+    "selected_civil_date": "2026-09-15",
+    "panchami_tithi_begins_local": "2026-09-15T07:44:00+05:30",
+    "panchami_tithi_ends_local": "2026-09-16T08:59:00+05:30",
+    "published_puja_interval_begins_local": "2026-09-15T11:02:00+05:30",
+    "published_puja_interval_ends_local": "2026-09-15T13:30:00+05:30"
+  },
+  "rule_contract": {
+    "target_tithi": "Panchami",
+    "target_paksha": "shukla",
+    "selection": "select_only_when_exactly_one_candidate_local_madhyahna_has_bhadrapada_shukla_panchami_overlap",
+    "both_candidates_overlap": "fail_closed_due_to_preserved_precedence_conflict",
+    "neither_candidate_overlaps": "fail_closed",
+    "puja_muhurta_calculated": false,
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "historical_purity_or_menstruation_claims_promoted": false
+  },
+  "denials": {
+    "complete_rishi_panchami_tradition_coverage": false,
+    "complete_regional_coverage": false,
+    "fasting_procedure_ready": false,
+    "puja_procedure_ready": false,
+    "published_puja_interval_recomputed_or_served": false,
+    "historical_purity_or_menstruation_rules_current_guidance": false,
+    "universal_india_date_claim": false,
+    "source_text_publication_ready": false,
+    "all_sampradaya_equivalence": false,
+    "complete_september_december_ritual_layer": false
+  }
+}

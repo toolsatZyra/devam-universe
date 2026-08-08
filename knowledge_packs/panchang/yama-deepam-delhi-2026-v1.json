@@ -1,0 +1,97 @@
+{
+  "contract": "DEVAM_YAMA_DEEPAM_DATE_AND_PRACTICE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-yama-deepam-delhi-2026-v1",
+  "scope": {
+    "reference_location": "New Delhi, NCT, India",
+    "geoname_id": 1261481,
+    "timezone": "Asia/Kolkata",
+    "supported_region_codes": ["north-india", "west-india"],
+    "supported_tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "selected_civil_date": "2026-11-06",
+    "practice_boundary": "one_safe_household_lamp_or_flame_free_light_outside_the_home_during_the_resolved_evening",
+    "precise_provider_muhurta_reproduced": false,
+    "universal_india_claim": false
+  },
+  "live_source": {
+    "source_id": "drikpanchang-new-delhi-yama-deepam-2026",
+    "provider": "Drik Panchang",
+    "url": "https://www.drikpanchang.com/diwali/yama-deepam/yama-deepam-date-time.html?geoname-id=1261481&year=2026&lang=en",
+    "rights_lane": "reference_only",
+    "evidence_role": "current_practitioner_identity_location_specific_date_trayodashi_outside_home_and_sandhya_practice",
+    "response_is_byte_dynamic": true,
+    "fetches": [
+      {
+        "fetched_at_utc": "2026-08-06T21:50:29.949Z",
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/diwali/yama-deepam/yama-deepam-date-time.html?geoname-id=1261481&year=2026&lang=en",
+        "response_bytes": 77850,
+        "response_sha256": "b38bceca4ab565a1f70de79442d22983b9650f0da51df37d03289862d14ca9d8",
+        "strict_utf8": true
+      },
+      {
+        "fetched_at_utc": "2026-08-06T21:50:40.411Z",
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/diwali/yama-deepam/yama-deepam-date-time.html?geoname-id=1261481&year=2026&lang=en",
+        "response_bytes": 77850,
+        "response_sha256": "21e98a09a6422104e34aad3f176ea36c8c938e7e0ad485cda32901281aa1f3ef",
+        "strict_utf8": true
+      },
+      {
+        "fetched_at_utc": "2026-08-06T21:50:40.524Z",
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/diwali/yama-deepam/yama-deepam-date-time.html?geoname-id=1261481&year=2026&lang=en",
+        "response_bytes": 77850,
+        "response_sha256": "7d6f0553c058d4225e5738b0ffdd390851c5fa7399ef0ba605190236e2120c90",
+        "strict_utf8": true
+      }
+    ],
+    "stable_semantic_observation": {
+      "civil_date": "2026-11-06",
+      "trayodashi_tithi_during_diwali": true,
+      "deepak_for_yamaraj": true,
+      "outside_home": true,
+      "sandhya_time": true,
+      "ritual_named_deepdan_for_yamaraj": true
+    },
+    "unstable_or_unaccepted_details": {
+      "precise_provider_time_interval_reproduced": false,
+      "provider_protection_outcome_promoted_as_guaranteed": false,
+      "page_html_treated_as_a_canonical_source_copy": false
+    }
+  },
+  "fixed_source": {
+    "source_id": "nirnayasindhu-marathi-1865-kartika-trayodashi-yama-deepa",
+    "provider": "Devam retained source vault",
+    "object_path": "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+    "object_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+    "object_bytes": 93531683,
+    "media_type": "application/pdf",
+    "rights_lane": "private_evidence",
+    "visually_inspected_pdf_pages": [213],
+    "evidence_role": "historical_trayodashi_and_yama_deepa_context_not_a_complete_modern_household_procedure"
+  },
+  "decision": {
+    "observance_slug": "yama-deepam",
+    "canonical_name": "Yama Deepam / Yama Deepa Dana",
+    "selected_civil_date": "2026-11-06",
+    "target_tithi": "Trayodashi",
+    "target_paksha": "krishna",
+    "decision_window": "pradosha",
+    "engine_rule": "select_the_candidate_evening_with_greater_trayodashi_coverage_during_pradosha_otherwise_first_day",
+    "practice_layer_uses_resolved_evening_without_reproducing_the_provider_interval": true,
+    "dhantrayodashi_remains_a_separate_practice_lane": true
+  },
+  "denials": {
+    "south_facing_direction_required": false,
+    "thirteen_or_other_fixed_lamp_count_required": false,
+    "specific_oil_wick_or_lamp_material_required": false,
+    "lamp_left_unattended_or_burning_overnight": false,
+    "formal_mantra_or_tarpana_procedure_included": false,
+    "guaranteed_protection_from_death_or_misfortune": false,
+    "dhantrayodashi_procedure_merged": false,
+    "all_regional_or_family_variants_complete": false,
+    "source_text_returned_by_api": false,
+    "live_page_copied_into_library": false,
+    "complete_diwali_ritual_coverage": false
+  }
+}

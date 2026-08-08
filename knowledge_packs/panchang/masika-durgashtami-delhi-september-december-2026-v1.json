@@ -1,0 +1,115 @@
+{
+  "contract": "DEVAM_BOUNDED_MASIKA_DURGASHTAMI_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-masika-durgashtami-delhi-september-december-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "civil_date_start": "2026-09-01",
+    "civil_date_end": "2026-12-31",
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "shakta-bengal"
+    ],
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-general-ashtami-decision",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [
+        51,
+        52
+      ],
+      "evidence_role": "historical_shukla_ashtami_later_day_and_shiva_shakti_festival_context",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-masika-durgashtami-2026",
+      "url": "https://www.drikpanchang.com/vrats/masik-durgashtami-dates.html?geoname-id=1273294&year=2026",
+      "fetched_at_utc": "2026-08-06T18:31:15Z",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/vrats/masik-durgashtami-dates.html?geoname-id=1273294&year=2026",
+      "response_bytes": 82080,
+      "response_sha256": "c4dd71aeb98c5bc76f76878428820ae41158f6d1f4a57096d6abd5982659b47d",
+      "strict_utf8": true,
+      "evidence_role": "current_practitioner_observance_identity_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "rule_contract": {
+    "target_tithi": "Ashtami",
+    "target_paksha": "shukla",
+    "selection": "select_the_later_candidate_day_with_shukla_ashtami_at_local_sunrise",
+    "both_candidate_sunrises_qualify": "prefer_later_day",
+    "neither_candidate_sunrise_qualifies": "fail_closed",
+    "fasting_procedure_resolved": false,
+    "worship_procedure_resolved": false,
+    "mahashtami_equivalence_universal": false
+  },
+  "observances": [
+    {
+      "observance_slug": "masika-durgashtami-2026-09",
+      "canonical_name": "Masika Durgashtami",
+      "lunar_month": "Bhadrapada",
+      "candidate_civil_dates": [
+        "2026-09-18",
+        "2026-09-19"
+      ],
+      "reference_selected_civil_date": "2026-09-19",
+      "reference_ashtami_begins_local": "2026-09-18T13:00:00+05:30",
+      "reference_ashtami_ends_local": "2026-09-19T15:26:00+05:30"
+    },
+    {
+      "observance_slug": "masika-durgashtami-2026-10",
+      "canonical_name": "Durga Ashtami / Masika Durgashtami",
+      "lunar_month": "Ashwina",
+      "candidate_civil_dates": [
+        "2026-10-18",
+        "2026-10-19"
+      ],
+      "reference_selected_civil_date": "2026-10-19",
+      "reference_ashtami_begins_local": "2026-10-18T08:27:00+05:30",
+      "reference_ashtami_ends_local": "2026-10-19T10:51:00+05:30"
+    },
+    {
+      "observance_slug": "masika-durgashtami-2026-11",
+      "canonical_name": "Masika Durgashtami",
+      "lunar_month": "Kartika",
+      "candidate_civil_dates": [
+        "2026-11-16",
+        "2026-11-17"
+      ],
+      "reference_selected_civil_date": "2026-11-17",
+      "reference_ashtami_begins_local": "2026-11-17T04:19:00+05:30",
+      "reference_ashtami_ends_local": "2026-11-18T06:04:00+05:30"
+    },
+    {
+      "observance_slug": "masika-durgashtami-2026-12",
+      "canonical_name": "Masika Durgashtami",
+      "lunar_month": "Margashirsha",
+      "candidate_civil_dates": [
+        "2026-12-16",
+        "2026-12-17"
+      ],
+      "reference_selected_civil_date": "2026-12-17",
+      "reference_ashtami_begins_local": "2026-12-16T22:45:00+05:30",
+      "reference_ashtami_ends_local": "2026-12-17T23:25:00+05:30"
+    }
+  ],
+  "denials": {
+    "complete_durga_ashtami_practice": false,
+    "complete_mahashtami_practice": false,
+    "complete_monthly_fasting_guidance": false,
+    "complete_monthly_worship_guidance": false,
+    "complete_regional_variants": false,
+    "universal_india_rule": false,
+    "public_source_text": false,
+    "shardiya_navaratri_equivalence": false,
+    "bengal_durga_puja_equivalence": false,
+    "complete_september_december_layer": false
+  }
+}

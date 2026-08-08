@@ -1,0 +1,117 @@
+{
+  "contract": "DEVAM_CHHATH_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-chhath-patna-delhi-2026-v1",
+  "accessed_on": "2026-08-07",
+  "scope": {
+    "timezone": "Asia/Kolkata",
+    "tradition_code": "surya-chhath-bihar-purvanchal",
+    "profiles": [
+      {
+        "profile_id": "patna-bihar",
+        "reference_location": "Patna, Bihar, India",
+        "geoname_id": 1260086,
+        "latitude": 25.5941,
+        "longitude": 85.1376
+      },
+      {
+        "profile_id": "delhi-purvanchal-diaspora",
+        "reference_location": "Delhi, NCT, India",
+        "geoname_id": 1273294,
+        "latitude": 28.6139,
+        "longitude": 77.209
+      }
+    ],
+    "coordinate_tolerance_degrees": 0.0001,
+    "outside_exact_profiles": "fail_closed",
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "bihar-tourism-chhath-en",
+      "publisher": "Department of Tourism, Government of Bihar",
+      "url": "https://tourism.bihar.gov.in/en/experiences/festivals-and-fairs/festivals/chhath-puja",
+      "status": 200,
+      "final_url": "https://tourism.bihar.gov.in/en/experiences/festivals-and-fairs/festivals/chhath-puja",
+      "response_bytes": 77773,
+      "response_sha256": "32f0c746ce7cef900c7584a8963e70aa580206e9e636b17869230587dc4189db",
+      "strict_utf8": true,
+      "rights_lane": "reference_only",
+      "evidence_role": "official_regional_identity_four_day_structure_and_practice_context"
+    },
+    {
+      "source_id": "bihar-tourism-chhath-hi",
+      "publisher": "Department of Tourism, Government of Bihar",
+      "url": "https://tourism.bihar.gov.in/hi/experiences/festivals-and-fairs/festivals/chhath-puja",
+      "status": 200,
+      "final_url": "https://tourism.bihar.gov.in/hi/experiences/festivals-and-fairs/festivals/chhath-puja",
+      "response_bytes": 84178,
+      "response_sha256": "f82cfba83400a3753aa62225cb67a5e669bcd7752688e8b11cce27b62be74044",
+      "strict_utf8": true,
+      "rights_lane": "reference_only",
+      "evidence_role": "official_hindi_regional_identity_and_four_day_structure"
+    },
+    {
+      "source_id": "president-of-india-chhath-2025",
+      "publisher": "Rashtrapati Bhavan",
+      "url": "https://www.presidentofindia.gov.in/press_releases/presidents-greetings-chhath-puja",
+      "status": 200,
+      "final_url": "https://www.presidentofindia.gov.in/press_releases/presidents-greetings-chhath-puja",
+      "response_bytes": 42811,
+      "response_sha256": "016e0c927c4faf37e9f15c7d46b7e8f6a0cd741e64c1af0ea9fd757249d5ce68",
+      "strict_utf8": true,
+      "rights_lane": "reference_only",
+      "evidence_role": "official_meaning_nature_cleanliness_and_collective_participation_context"
+    },
+    {
+      "source_id": "drikpanchang-chhath-patna-2026",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/chhath/chhath-puja-calendar.html?geoname-id=1260086&year=2026",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/chhath/chhath-puja-calendar.html?geoname-id=1260086&year=2026",
+      "response_bytes": 65658,
+      "response_sha256": "706395078393723c62c8f1f01a58677626d8da51dda86243f129e58055a40418",
+      "strict_utf8": true,
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_patna_four_day_date_fixture"
+    },
+    {
+      "source_id": "drikpanchang-chhath-delhi-2026",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/chhath/chhath-puja-calendar.html?geoname-id=1273294&year=2026",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/chhath/chhath-puja-calendar.html?geoname-id=1273294&year=2026",
+      "response_bytes": 65649,
+      "response_sha256": "b5a084e44a934d45ca7c750e48f66a7e578510f86843ed1558586ffe5d6c8bf7",
+      "strict_utf8": true,
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_delhi_four_day_date_fixture"
+    }
+  ],
+  "decision": {
+    "observance_slug": "chhath-puja-sandhya-arghya",
+    "canonical_name": "Chhath Puja / Surya Shashthi — Sandhya Arghya",
+    "target_tithi": { "index": 6, "name": "Shashthi", "paksha": "shukla" },
+    "candidate_civil_dates": ["2026-11-14", "2026-11-15"],
+    "selection": "select_only_when_exactly_one_candidate_sunset_has_kartika_shukla_shashthi",
+    "selected_civil_date": "2026-11-15",
+    "following_usha_arghya_civil_date": "2026-11-16",
+    "both_candidates_qualify": "fail_closed",
+    "neither_candidate_qualifies": "fail_closed"
+  },
+  "sequence": [
+    { "ordinal": 1, "civil_date": "2026-11-13", "name_en": "Nahay Khay", "name_hi": "नहाय-खाय", "provider_tithi_label": "Chaturthi" },
+    { "ordinal": 2, "civil_date": "2026-11-14", "name_en": "Lohanda and Kharna", "name_hi": "लोहंडा और खरना", "provider_tithi_label": "Panchami" },
+    { "ordinal": 3, "civil_date": "2026-11-15", "name_en": "Chhath Puja and Sandhya Arghya", "name_hi": "छठ पूजा और संध्या अर्घ्य", "provider_tithi_label": "Shashthi" },
+    { "ordinal": 4, "civil_date": "2026-11-16", "name_en": "Usha Arghya and Parana day", "name_hi": "उषा अर्घ्य और पारण का दिन", "provider_tithi_label": "Saptami" }
+  ],
+  "boundaries": {
+    "date_and_four_day_sequence_resolved_for_exact_profiles": true,
+    "official_regional_identity_bound": true,
+    "source_text_returned_by_api": false,
+    "fasting_or_nirjala_regimen_prescribed": false,
+    "complete_family_vrata_procedure_claimed": false,
+    "all_bihar_purvanchal_nepal_and_diaspora_variants_complete": false,
+    "generic_national_chhath_rule_claimed": false,
+    "medical_suitability_claimed": false
+  }
+}

@@ -1,0 +1,827 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "observance_slug": "krishna-janmashtami-smarta",
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      },
+      {
+        "observance_slug": "krishna-janmashtami-smarta",
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      },
+      {
+        "observance_slug": "krishna-janmashtami-iskcon",
+        "region_code": "iskcon-india",
+        "tradition_code": "vaishnava-iskcon"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and exact Smarta or ISKCON calendar lane applies?",
+      "Does your family celebrate at home, in a temple, or through an online community programme?",
+      "Which Krishna story, Gita passage, bhajan, or kirtan is already familiar?",
+      "Would a material-free, flame-free, food-free, and non-fasting form suit you?"
+    ],
+    "observance_context_notes": [
+      {
+        "language_code": "en",
+        "note": "This is the bounded Smarta North/West India household lane. Its date remains independently resolved even when it matches ISKCON in 2026. Use the family's established Krishna Janmashtami form; ISKCON temple procedure is not imported.",
+        "observance_slug": "krishna-janmashtami-smarta"
+      },
+      {
+        "language_code": "en",
+        "note": "This is the bounded ISKCON lane. The official Bangalore programme or another user's own ISKCON temple may guide participation; its abhisheka, arati, offering, fasting, and midnight programme are not converted into universal home instructions.",
+        "observance_slug": "krishna-janmashtami-iskcon"
+      },
+      {
+        "language_code": "hi",
+        "note": "यह सीमित उत्तर/पश्चिम भारत स्मार्त गृह-परम्परा है। 2026 में तिथि इस्कॉन से मिलने पर भी नियम समान नहीं माने जाते। परिवार की स्थापित जन्माष्टमी-विधि मानें; इस्कॉन मंदिर-विधि यहाँ नहीं मिलती।",
+        "observance_slug": "krishna-janmashtami-smarta"
+      },
+      {
+        "language_code": "hi",
+        "note": "यह सीमित इस्कॉन परम्परा है। आधिकारिक बेंगलुरु कार्यक्रम या उपयोगकर्ता का अपना इस्कॉन मंदिर भागीदारी बता सकता है; उसके अभिषेक, आरती, अर्पण, उपवास और मध्यरात्रि कार्यक्रम को सार्वभौमिक गृह-विधि नहीं बनाया जाता।",
+        "observance_slug": "krishna-janmashtami-iskcon"
+      }
+    ],
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "iskcon-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "teacher_led",
+      "temple",
+      "community"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "vaishnava-iskcon"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": null,
+    "decision_rule_id": "devam-bounded-smarta-or-iskcon-janmashtami-nishita-2026-v1",
+    "freshness_note": "Use only after Today resolves the exact Smarta or ISKCON lane. Verify fasting, parana, temple programmes, midnight schedules, access and crowd conditions with the responsible current authority.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-janmashtami-calendar-fixture",
+      "nirnayasindhu-1865-janmashtami-decision",
+      "iskcon-bangalore-janmashtami-2026"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "krishna-janmashtami-smarta-iskcon-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "krishna-birth-remembrance",
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "incredible-india-dwarka-janmashtami-2026",
+            "iskcon-bangalore-janmashtami-2026"
+          ],
+          "summary": "The reviewed national and living-sampradaya sources identify the festival with Krishna's birth and preserve devotional expressions such as prayer, bhajan, kirtan, stories and temple participation. A complete Bhagavata, Harivamsha or regional narrative is not reproduced or merged here.",
+          "title": "Krishna's birth remembrance",
+          "tradition_scope": "Shared festival identity with source-specific Smarta, ISKCON, Dwarka and regional expressions",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "self_guided_shared_devotional_core",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-janmashtami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Krishna remembrance and one joyful action",
+          "materials": [
+            {
+              "item": "A quiet or joyful place",
+              "required": true,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "A pause wherever you are",
+                "No materials"
+              ]
+            }
+          ],
+          "procedure_id": "krishna-janmashtami-smarta-iskcon-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-janmashtami-calendar-fixture",
+            "nirnayasindhu-1865-janmashtami-decision",
+            "incredible-india-janmashtami",
+            "devam-janmashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm the Janmashtami lane in Today rather than treating the shared 2026 civil date as proof that Smarta and ISKCON rules are identical.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-janmashtami-calendar-fixture",
+                "nirnayasindhu-1865-janmashtami-decision"
+              ],
+              "why": "The two traditions retain separate calendar authority."
+            },
+            {
+              "instruction": "Remember Krishna's birth through a family-known name, short prayer, or silence.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "A simple core remains devotional without inventing a mantra or midnight rite."
+            },
+            {
+              "instruction": "Choose one playful, kind, courageous, or truthful action to offer the day.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "It makes remembrance useful without guaranteeing a blessing or result."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "family_or_source_guided",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-janmashtami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Story, devotion, and applied teaching",
+          "materials": [
+            {
+              "item": "A source-identified Krishna story, Gita passage, bhajan, or kirtan",
+              "required": false,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "Trusted audio or video",
+                "A remembered family story",
+                "Quiet reflection"
+              ]
+            }
+          ],
+          "procedure_id": "krishna-janmashtami-smarta-iskcon-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "iskcon-bangalore-janmashtami-2026",
+            "incredible-india-dwarka-janmashtami-2026",
+            "devam-janmashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Begin with the lane-specific family or sampradaya form, or quiet remembrance if none is established.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "iskcon-bangalore-janmashtami-2026"
+              ],
+              "why": "Living practice takes precedence over a generic generated sequence."
+            },
+            {
+              "instruction": "Read, hear, or sing one short attributable Krishna story or teaching and identify its source or tradition.",
+              "optional": true,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "incredible-india-dwarka-janmashtami-2026",
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "Krishna narratives and interpretations are numerous and should remain attributable."
+            },
+            {
+              "instruction": "Share one joyful family moment or take one concrete action guided by the teaching.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "Celebration becomes relational and actionable without requiring food, purchases, or decoration."
+            },
+            {
+              "instruction": "Close according to the established lane; midnight participation is optional and must follow the family or temple, not this guide.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "incredible-india-dwarka-janmashtami-2026",
+                "iskcon-bangalore-janmashtami-2026",
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "Timing, fasting, and next-day close remain tradition- and health-sensitive."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "established_family_temple_or_iskcon_programme_guided",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-janmashtami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family-, temple-, or community-led celebration",
+          "materials": [
+            {
+              "item": "The established family, temple, or sampradaya programme",
+              "required": false,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "Official live stream",
+                "The standard home form"
+              ]
+            }
+          ],
+          "procedure_id": "krishna-janmashtami-smarta-iskcon-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "iskcon-bangalore-janmashtami-2026",
+            "incredible-india-dwarka-janmashtami-2026",
+            "incredible-india-janmashtami",
+            "devam-janmashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm the exact lane, venue or official stream, and current programme before joining.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "iskcon-bangalore-janmashtami-2026",
+                "incredible-india-dwarka-janmashtami-2026"
+              ],
+              "why": "Temple schedules and community programmes are current operational facts, not timeless ritual rules."
+            },
+            {
+              "instruction": "Join its known darshan, story, bhajan, kirtan, reading, or reflection without independently copying priestly rites.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "incredible-india-dwarka-janmashtami-2026",
+                "iskcon-bangalore-janmashtami-2026"
+              ],
+              "why": "Temple abhisheka and arati remain led, attributable procedures."
+            },
+            {
+              "instruction": "Make time for one coherent teaching and one concrete act of joy, care, truthfulness, or service.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "The longer form deepens celebration without requiring fasting, offerings, or a vigil."
+            },
+            {
+              "instruction": "Follow that established authority for any fast or close; Devam does not begin, extend, or break it.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "Dietary and parana decisions remain outside the shared devotional core."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Select the exact Smarta or ISKCON lane; a matching civil date does not prove rule equivalence.",
+        "Identify the source, edition, retelling, teacher, family or institution behind a Krishna story or teaching.",
+        "No fasting, food, medical, exact muhurta, midnight vigil or parana instruction is supplied.",
+        "No abhisheka, arati, offering, cradle, image dressing, footprints or priest-led rite is prescribed.",
+        "Dahi Handi and human-pyramid participation, live travel and crowd operations remain outside this guide.",
+        "No blessing, protection, merit, prosperity or other outcome is guaranteed."
+      ],
+      "short_answer": "A shared non-fasting devotional core for a separately resolved Smarta or ISKCON lane: remember Krishna's birth, engage one attributable story or teaching, express joy through known devotion, and carry one teaching into action.",
+      "significance": {
+        "scope_note": "Festival identity and living-practice contexts are attributable; the accessible home companion is bounded Devam synthesis, not a universal Janmashtami liturgy.",
+        "source_ids": [
+          "devam-janmashtami-calendar-fixture",
+          "incredible-india-janmashtami",
+          "iskcon-bangalore-janmashtami-2026"
+        ],
+        "text": "Krishna Janmashtami commemorates Krishna's birth through joy, remembrance, prayer, singing, story and teaching. This shared devotional core opens only inside a separately resolved Smarta North/West India or ISKCON lane and does not imply that their calendar rules or ritual authorities are identical."
+      },
+      "title": "Krishna Janmashtami devotional companion",
+      "typical_practices": [
+        {
+          "description": "Use a known Krishna name, prayer, song, story or teaching, preserve its source, and carry one teaching into a practical act of kindness, courage, friendship, duty or service.",
+          "instructional": false,
+          "population_scope": "Smarta household or ISKCON participant after exact lane selection",
+          "practice_id": "attributable-krishna-remembrance",
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "iskcon-bangalore-janmashtami-2026",
+            "devam-janmashtami-safety-boundary"
+          ]
+        },
+        {
+          "description": "Follow the responsible family or institution for its known programme. A temple's abhisheka, arati, offerings, midnight schedule or fast is not converted into universal home instructions.",
+          "instructional": false,
+          "population_scope": "Family, temple or official programme participant",
+          "practice_id": "established-family-temple-or-stream-participation",
+          "source_ids": [
+            "incredible-india-dwarka-janmashtami-2026",
+            "iskcon-bangalore-janmashtami-2026",
+            "devam-janmashtami-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Their 2026 civil date may match while their decision rules, authority, parana and programme remain separate.",
+          "scope": "North/West India Smarta household and ISKCON",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-janmashtami-calendar-fixture",
+            "nirnayasindhu-1865-janmashtami-decision",
+            "iskcon-bangalore-janmashtami-2026"
+          ],
+          "variant_id": "smarta-and-iskcon-lanes"
+        },
+        {
+          "difference": "Stories, timings, processions, music, images and community practice remain attributable to their own place and authority.",
+          "scope": "Dwarka, Mathura-Vrindavan, household, temple and other regional contexts",
+          "separate_lane_required": true,
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "incredible-india-dwarka-janmashtami-2026"
+          ],
+          "variant_id": "regional-and-temple-expressions"
+        },
+        {
+          "difference": "The shared devotional core imports no fast, food rule, midnight vigil, abhisheka, offering, cradle, footprints, Dahi Handi, parana or promised outcome.",
+          "scope": "Material-free, flame-free and non-fasting reflection versus established household or temple practice",
+          "separate_lane_required": false,
+          "source_ids": [
+            "devam-janmashtami-safety-boundary"
+          ],
+          "variant_id": "accessible-companion-and-formal-observance"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "krishna-birth-remembrance",
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "incredible-india-dwarka-janmashtami-2026",
+            "iskcon-bangalore-janmashtami-2026"
+          ],
+          "summary": "समीक्षित राष्ट्रीय और जीवित-सम्प्रदाय स्रोत उत्सव को कृष्ण-जन्म से जोड़ते हैं और प्रार्थना, भजन, कीर्तन, कथा तथा मंदिर-सहभागिता जैसे भक्ति-रूप सुरक्षित रखते हैं। पूर्ण भागवत, हरिवंश या क्षेत्रीय वृत्तान्त यहाँ न दोहराया जाता है, न मिलाया जाता है।",
+          "title": "कृष्ण-जन्म का स्मरण",
+          "tradition_scope": "स्रोत-विशिष्ट स्मार्त, इस्कॉन, द्वारका और क्षेत्रीय रूपों सहित साझा उत्सव-पहचान",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "self_guided_shared_devotional_core",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-janmashtami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "कृष्ण-स्मरण और आनन्द का एक काम",
+          "materials": [
+            {
+              "item": "शांत या आनन्दपूर्ण स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं विराम",
+                "कोई सामग्री नहीं"
+              ]
+            }
+          ],
+          "procedure_id": "krishna-janmashtami-smarta-iskcon-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-janmashtami-calendar-fixture",
+            "nirnayasindhu-1865-janmashtami-decision",
+            "incredible-india-janmashtami",
+            "devam-janmashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Today में जन्माष्टमी की परम्परा देखें; 2026 की समान तारीख को नियम-समानता न मानें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-janmashtami-calendar-fixture",
+                "nirnayasindhu-1865-janmashtami-decision"
+              ],
+              "why": "स्मार्त और इस्कॉन पंचांग प्राधिकार अलग रहते हैं।"
+            },
+            {
+              "instruction": "परिचित नाम, छोटी प्रार्थना या मौन से कृष्ण-जन्म का स्मरण करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "मंत्र या मध्यरात्रि-विधि गढ़े बिना भक्ति रहती है।"
+            },
+            {
+              "instruction": "आज के लिए खेलपूर्ण, दयालु, साहसी या सत्यनिष्ठ काम चुनें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "आशीर्वाद या फल की गारंटी बिना स्मरण व्यवहार में आता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "family_or_source_guided",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-janmashtami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "कथा, भक्ति और व्यवहार",
+          "materials": [
+            {
+              "item": "स्रोतयुक्त कृष्ण-कथा, गीता-पाठ, भजन या कीर्तन",
+              "required": false,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "विश्वसनीय श्रव्य/वीडियो",
+                "परिवार की कथा",
+                "मौन चिंतन"
+              ]
+            }
+          ],
+          "procedure_id": "krishna-janmashtami-smarta-iskcon-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "iskcon-bangalore-janmashtami-2026",
+            "incredible-india-dwarka-janmashtami-2026",
+            "devam-janmashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "परम्परा की परिचित विधि या मौन स्मरण से शुरू करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "iskcon-bangalore-janmashtami-2026"
+              ],
+              "why": "जीवित परम्परा सामान्य क्रम से पहले आती है।"
+            },
+            {
+              "instruction": "छोटी स्रोतयुक्त कृष्ण-कथा या शिक्षा पढ़ें, सुनें या गाएँ और उसका स्रोत पहचानें।",
+              "optional": true,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "incredible-india-dwarka-janmashtami-2026",
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "अनेक कथाएँ और अर्थ स्रोतयुक्त रहते हैं।"
+            },
+            {
+              "instruction": "परिवार में आनन्द का क्षण साझा करें या शिक्षा से जुड़ा ठोस काम करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "भोजन, खरीद या सजावट के बिना उत्सव उपयोगी बनता है।"
+            },
+            {
+              "instruction": "स्थापित परम्परा से समापन करें; मध्यरात्रि भागीदारी वैकल्पिक और परिवार/मंदिर-नेतृत्व में रहे।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "incredible-india-dwarka-janmashtami-2026",
+                "iskcon-bangalore-janmashtami-2026",
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "समय, उपवास और अगला समापन संदर्भ-संवेदी हैं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "established_family_temple_or_iskcon_programme_guided",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-janmashtami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "परिवार, मंदिर या समुदाय का उत्सव",
+          "materials": [
+            {
+              "item": "स्थापित कार्यक्रम",
+              "required": false,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "आधिकारिक लाइव स्ट्रीम",
+                "घर का मानक रूप"
+              ]
+            }
+          ],
+          "procedure_id": "krishna-janmashtami-smarta-iskcon-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "iskcon-bangalore-janmashtami-2026",
+            "incredible-india-dwarka-janmashtami-2026",
+            "incredible-india-janmashtami",
+            "devam-janmashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "जुड़ने से पहले सटीक परम्परा, स्थान/स्ट्रीम और वर्तमान कार्यक्रम पुष्ट करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "iskcon-bangalore-janmashtami-2026",
+                "incredible-india-dwarka-janmashtami-2026"
+              ],
+              "why": "कार्यक्रम वर्तमान तथ्य हैं, शाश्वत कर्मकांड नहीं।"
+            },
+            {
+              "instruction": "परिचित दर्शन, कथा, भजन, कीर्तन, पाठ या चिंतन में जुड़ें; पुरोहित-विधि स्वयं न दोहराएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-janmashtami",
+                "incredible-india-dwarka-janmashtami-2026",
+                "iskcon-bangalore-janmashtami-2026"
+              ],
+              "why": "अभिषेक और आरती नेतृत्व में स्रोतयुक्त रहते हैं।"
+            },
+            {
+              "instruction": "एक पूर्ण शिक्षा और आनन्द, देखभाल, सत्य या सेवा के काम को समय दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "उपवास, भोग या जागरण बिना उत्सव गहरा होता है।"
+            },
+            {
+              "instruction": "उपवास या समापन के लिए उसी प्राधिकारी को मानें; देवम उसे शुरू, बढ़ाता या खोलता नहीं।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-janmashtami-safety-boundary"
+              ],
+              "why": "आहार और पारण साझा भक्ति-रूप से बाहर हैं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "सटीक स्मार्त या इस्कॉन मार्ग चुनें; समान नागरिक दिन नियम-समानता सिद्ध नहीं करता।",
+        "कृष्ण-कथा या शिक्षा के स्रोत, संस्करण, पुनर्कथा, शिक्षक, परिवार या संस्था की पहचान रखें।",
+        "उपवास, भोजन, चिकित्सा, सटीक मुहूर्त, मध्यरात्रि-जागरण या पारण निर्देश नहीं दिया जाता।",
+        "अभिषेक, आरती, अर्पण, झूला, मूर्ति-वस्त्र, चरण-चिह्न या पुरोहित-विधि नहीं बताई जाती।",
+        "दही-हांडी, मानव-पिरामिड, यात्रा और भीड़-संचालन इस मार्ग से बाहर हैं।",
+        "आशीर्वाद, सुरक्षा, पुण्य, समृद्धि या अन्य फल की गारंटी नहीं दी जाती।"
+      ],
+      "short_answer": "अलग निर्धारित स्मार्त या इस्कॉन परम्परा के लिए बिना उपवास का साझा भक्ति-रूप: कृष्ण-जन्म स्मरण, स्रोतयुक्त कथा या शिक्षा, परिचित भक्ति में आनन्द और शिक्षा को व्यवहार में लाना।",
+      "significance": {
+        "scope_note": "उत्सव-पहचान और जीवित अभ्यास स्रोत-नामित हैं; सुलभ घरेलू सहचर सीमित Devam संश्लेषण है, सार्वभौमिक जन्माष्टमी-विधि नहीं।",
+        "source_ids": [
+          "devam-janmashtami-calendar-fixture",
+          "incredible-india-janmashtami",
+          "iskcon-bangalore-janmashtami-2026"
+        ],
+        "text": "कृष्ण जन्माष्टमी कृष्ण-जन्म का आनन्द, स्मरण, प्रार्थना, गायन, कथा और शिक्षा के माध्यम से उत्सव है। यह साझा भक्ति-मूल केवल अलग से निर्धारित उत्तर/पश्चिम भारत स्मार्त या इस्कॉन मार्ग में खुलता है; इससे उनके पंचांग-नियम या अनुष्ठानिक अधिकार समान नहीं हो जाते।"
+      },
+      "title": "कृष्ण जन्माष्टमी भक्ति-सहचर",
+      "typical_practices": [
+        {
+          "description": "परिचित कृष्ण-नाम, प्रार्थना, गीत, कथा या शिक्षा का स्रोत सुरक्षित रखें और दया, साहस, मित्रता, कर्तव्य या सेवा के एक व्यावहारिक काम में उसे उतारें।",
+          "instructional": false,
+          "population_scope": "सटीक मार्ग चुनने के बाद स्मार्त परिवार या इस्कॉन सहभागी",
+          "practice_id": "attributable-krishna-remembrance",
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "iskcon-bangalore-janmashtami-2026",
+            "devam-janmashtami-safety-boundary"
+          ]
+        },
+        {
+          "description": "परिचित कार्यक्रम के लिए उत्तरदायी परिवार या संस्था का मार्ग मानें। मंदिर का अभिषेक, आरती, अर्पण, मध्यरात्रि समय या उपवास सार्वभौमिक गृह-विधि नहीं बनता।",
+          "instructional": false,
+          "population_scope": "परिवार, मंदिर या आधिकारिक कार्यक्रम सहभागी",
+          "practice_id": "established-family-temple-or-stream-participation",
+          "source_ids": [
+            "incredible-india-dwarka-janmashtami-2026",
+            "iskcon-bangalore-janmashtami-2026",
+            "devam-janmashtami-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "2026 का नागरिक दिन समान हो सकता है, पर निर्णय-नियम, अधिकार, पारण और कार्यक्रम अलग रहते हैं।",
+          "scope": "उत्तर/पश्चिम भारत स्मार्त गृह और इस्कॉन",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-janmashtami-calendar-fixture",
+            "nirnayasindhu-1865-janmashtami-decision",
+            "iskcon-bangalore-janmashtami-2026"
+          ],
+          "variant_id": "smarta-and-iskcon-lanes"
+        },
+        {
+          "difference": "कथाएँ, समय, जुलूस, संगीत, छवियाँ और सामुदायिक अभ्यास अपने स्थान और अधिकार से जुड़े रहते हैं।",
+          "scope": "द्वारका, मथुरा-वृन्दावन, गृह, मंदिर और अन्य क्षेत्रीय संदर्भ",
+          "separate_lane_required": true,
+          "source_ids": [
+            "incredible-india-janmashtami",
+            "incredible-india-dwarka-janmashtami-2026"
+          ],
+          "variant_id": "regional-and-temple-expressions"
+        },
+        {
+          "difference": "साझा भक्ति-मूल उपवास, भोजन-नियम, मध्यरात्रि-जागरण, अभिषेक, अर्पण, झूला, चरण-चिह्न, दही-हांडी, पारण या फल का दावा आयात नहीं करता।",
+          "scope": "सामग्री-रहित, लौ-रहित, बिना उपवास चिंतन और स्थापित गृह या मंदिर अभ्यास",
+          "separate_lane_required": false,
+          "source_ids": [
+            "devam-janmashtami-safety-boundary"
+          ],
+          "variant_id": "accessible-companion-and-formal-observance"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "krishna-janmashtami-smarta",
+    "krishna-janmashtami-iskcon"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "a05f45a558061686e16fbe739b4d78dc5e86f9cf0c809c7f8eec28063123bdf1",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/krishna-janmashtami-delhi-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-janmashtami-calendar-fixture",
+      "source_role": "separate smarta and iskcon nishita date lanes only",
+      "title": "Bounded Delhi Krishna Janmashtami Smarta and ISKCON calendar fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "rights_lane": "citation_only",
+      "source_id": "nirnayasindhu-1865-janmashtami-decision",
+      "source_role": "historical ashtami rohini nishita and parana branching not modern household procedure",
+      "title": "Nirnayasindhu Janmashtami decision context",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/janmashtami",
+        "response_bytes": 535822,
+        "response_sha256": "1acd92558e9c3d632d8ebe68a10744f865e7526b7c1500f9a8f5c70fa1c10064",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Incredible India, Ministry of Tourism",
+      "rights_lane": "citation_only",
+      "source_id": "incredible-india-janmashtami",
+      "source_role": "krishna birth remembrance reading singing prayer and regional diversity context",
+      "title": "Janmashtami: Celebrate Lord Krishna's birth with joy and devotion",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/janmashtami"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/gujarat/janmashtami-at-dwarka-2026",
+        "response_bytes": 485639,
+        "response_sha256": "cdac9160bdec1c748b376e037c9e94d8e91e32f36813104e2cb043af49c75442",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Incredible India with Gujarat Tourism and Dwarkadhish Temple Trust",
+      "rights_lane": "citation_only",
+      "source_id": "incredible-india-dwarka-janmashtami-2026",
+      "source_role": "attributable dwarka midnight prayer bhajan kirtan and aarti context not universal home procedure",
+      "title": "Janmashtami at Dwarka 2026",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/gujarat/janmashtami-at-dwarka-2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.iskconbangalore.org/sri-krishna-janmashtami/",
+        "response_bytes": 121282,
+        "response_sha256": "39b2f4531c5627506d516af2563eee3159b9b5e7b69c0e3d5c2a9f1bc2c6e07f",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "ISKCON Bangalore",
+      "rights_lane": "citation_only",
+      "source_id": "iskcon-bangalore-janmashtami-2026",
+      "source_role": "iskcon 2026 two day darshan kirtan stream and midnight aarti context",
+      "title": "Sri Krishna Janmashtami - 3-4 Sep 2026",
+      "url": "https://www.iskconbangalore.org/sri-krishna-janmashtami/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-janmashtami-safety-boundary",
+      "source_role": "excludes fast food health muhurta midnight vigil abhisheka offering cradle dahi handi parana purchase and outcome prescriptions",
+      "title": "Devam Janmashtami internal-beta safety and attribution boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-krishna-janmashtami-smarta-iskcon-v1"
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "jain-india",
+        "tradition_code": "jain-umbrella"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Do you want a simple lay remembrance, or do you need your family's or sangh's formal practice?",
+      "Do you follow a Shvetambar, Digambar, Sthanakvasi, Terapanth, Shrimad Rajchandra, other Jain, or family-specific tradition?",
+      "Which sangh or calendar fixes your Diwali and Mahavira Nirvan dates?",
+      "Will you observe at home, at a derasar or upashraya, or with a community?",
+      "Do you need a short, flame-free, food-free, mobility-safe, or child-friendly reflection?"
+    ],
+    "region_codes": [
+      "jain-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "temple",
+      "community"
+    ],
+    "tradition_codes": [
+      "jain-umbrella"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-jain-diwali-delhi-2026-umbrella-v1",
+    "freshness_note": "The Delhi 2026 umbrella date is resolved; sect, sangh, temple, Nirvan Kalyanak, and New Year programmes require current local confirmation.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-jain-diwali-date-fixture"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "jain-diwali-lay-remembrance-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "mahavira-nirvana-pavapuri",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana"
+          ],
+          "summary": "JAINA relates Mahavira's final discourse and nirvana at Pavapuri, followed by lamps lit to remember the teacher and the light of knowledge.",
+          "title": "Mahavira's nirvana and the lamps",
+          "tradition_scope": "JAINA umbrella account; not a substitute for sect-specific textual adjudication",
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "gautam-swami-new-year-sequence",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-diwali-practice-context"
+          ],
+          "summary": "The JAINA account places Gautam Swami remembrance and New Year observance after the nirvana day; the exact calendar and liturgy remain community-specific.",
+          "title": "Gautam Swami and the following New Year",
+          "tradition_scope": "JAINA-described sequence",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Source-grounded non-initiatory Jain Diwali lay remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-jain-diwali-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Remember, reflect, and act with ahimsa",
+          "materials": [
+            {
+              "item": "A quiet place",
+              "required": true,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "substitutions": [
+                "Pause wherever you are; no lamp, image, text, food, or purchase is required"
+              ]
+            }
+          ],
+          "procedure_id": "jain-diwali-lay-remembrance-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-mahavira-nirvana-values",
+            "devam-jain-diwali-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Remember Mahavira's liberation at Pavapuri and sit quietly with the idea of inner light.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana"
+              ],
+              "why": "JAINA identifies Jain Diwali with Mahavira's moksha and the path of inner vision."
+            },
+            {
+              "instruction": "Reflect on one current choice through ahimsa, anekantavada, restraint, non-attachment, and self-effort.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values"
+              ],
+              "why": "These are source-grounded Jain values without inventing a universal liturgy."
+            },
+            {
+              "instruction": "Choose one specific act of non-harm, reconciliation, or simplicity and close without expecting guaranteed merit or liberation.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "why": "The reflection becomes actionable while spiritual outcomes remain unpromised."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "JAINA-described household remembrance without formal puja",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-jain-diwali-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Household remembrance and a familiar reading",
+          "materials": [
+            {
+              "item": "Only a familiar family or sangh prayer, reading, or safe light",
+              "required": true,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the material-free minimum reflection and a flame-free light"
+              ]
+            }
+          ],
+          "procedure_id": "jain-diwali-lay-remembrance-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-jain-diwali-date-fixture",
+            "jaina-diwali-mahavir-nirvana",
+            "devam-jain-diwali-safety-boundary",
+            "jaina-mahavira-nirvana-values"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm your family's date and tradition before beginning; keep the 8 November umbrella evening separate from 9 November Nirvan or Digambar variants and 10 November New Year.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-jain-diwali-date-fixture"
+              ],
+              "why": "Official Jain community calendars do not place every Jain lane on one date."
+            },
+            {
+              "instruction": "Use only the prayer, reading, silence, or flame-safe light already known in your family or sangh; otherwise use the minimum reflection.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "why": "The sources support remembrance and teachings but not one complete universal procedure."
+            },
+            {
+              "instruction": "Share one honest conversation or practical commitment involving non-harm, forgiveness, multiple viewpoints, restraint, or reduced consumption.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values"
+              ],
+              "why": "This connects the teachings to daily life without prescribing austerity or promising an outcome."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Preparation for established temple or sangh participation only",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-jain-diwali-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Prepare for community-led Nirvan Kalyanak observance",
+          "materials": [
+            {
+              "item": "Only materials and texts directed by the established family, sangh, derasar, or upashraya lead",
+              "required": true,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary",
+                "jaina-jcgp-community-puja-pattern"
+              ],
+              "substitutions": [
+                "Use the standard reflection rather than reconstructing an unknown fast, puja, mantra, scripture, or Nirvan Ladoo sequence"
+              ]
+            }
+          ],
+          "procedure_id": "jain-diwali-lay-remembrance-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-jain-diwali-date-fixture",
+            "devam-jain-diwali-safety-boundary",
+            "jaina-mahavira-nirvana-values",
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-jcgp-community-puja-pattern"
+          ],
+          "steps": [
+            {
+              "instruction": "Let your established Jain community lead define the date, fast or dietary discipline, pratikraman, puja, scripture, mantra, temple, Nirvan Ladoo, and New Year sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-jain-diwali-date-fixture",
+                "devam-jain-diwali-safety-boundary",
+                "jaina-jcgp-community-puja-pattern"
+              ],
+              "why": "JAINA documents one exact community sequence, while the umbrella evidence proves that formal details vary; the responsible community therefore leads every formal element."
+            },
+            {
+              "instruction": "Participate with consent, accessibility, food and flame safety, and respect for the community's living authority; do not add fireworks or improvised ritual claims.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "why": "A richer observance still needs safe handling and exact tradition boundaries."
+            },
+            {
+              "instruction": "Close with the community's established form and one sustained commitment to ahimsa, anekantavada, restraint, or non-attachment.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values"
+              ],
+              "why": "This preserves both living practice and an actionable ethical close."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not begin a fast or austerity from this umbrella companion; use family, sangh, and appropriate health guidance.",
+        "Use a flame-free light when needed and avoid fireworks.",
+        "No reflection or action guarantees merit, moksha, prosperity, or protection.",
+        "This lane is user-complete only for non-initiatory lay remembrance and respectful community participation; formal sect, sangh, temple, fasting, mantra, scripture-recitation, and puja lanes remain separate."
+      ],
+      "short_answer": "For a source-grounded lay observance, remember Bhagavan Mahavira's liberation at Pavapuri, read or hear a familiar Jain teaching, sit briefly with ahimsa and non-attachment, and choose one concrete act of non-harm or reconciliation. This is a complete non-initiatory remembrance lane, not a substitute for a Shvetambara, Digambara, Sthanakvasi, Terapanth, Shrimad Rajchandra, temple, sangh, or family puja.",
+      "significance": {
+        "source_ids": [
+          "jaina-diwali-mahavir-nirvana",
+          "jaina-mahavira-nirvana-values"
+        ],
+        "text": "Jain Diwali commemorates Bhagwan Mahavira's nirvana at Pavapuri and turns the festival of lights toward inner illumination, self-effort, ahimsa, restraint, and the preservation of his teaching."
+      },
+      "title": "Jain Diwali lay remembrance",
+      "typical_practices": [
+        {
+          "description": "Accounts describe temple visits, scripture or Uttaradhyayan reading, hymns or jaap, lamps as symbols of knowledge, restraint or fasting in some communities, greetings, and sweets; none is universalized here.",
+          "instructional": false,
+          "population_scope": "JAINA-described Jain households and communities",
+          "practice_id": "jaina-described-diwali-practice",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-diwali-practice-context"
+          ]
+        },
+        {
+          "description": "A JAINA-hosted account from the Jain Center of Greater Phoenix describes a community sequence of opening puja, Mahavir Nirvan Kalyanak Pujan, Nirvan Kand Bhasha, Arghavali, and a closing Nirvan Ladoo offering; this is an example to recognize when attending, not a universal script.",
+          "instructional": false,
+          "population_scope": "Jain Center of Greater Phoenix community account hosted by JAINA",
+          "practice_id": "jaina-jcgp-described-community-sequence",
+          "source_ids": [
+            "jaina-jcgp-community-puja-pattern"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Texts, timing, fasting, puja, jaap, Nirvan Ladoo, and the New Year sequence vary and require separate authoritative lanes.",
+          "scope": "Shvetambara, Digambara, Sthanakavasi, temple, sangh, and family",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-jain-diwali-safety-boundary",
+            "jaina-diwali-practice-context"
+          ],
+          "variant_id": "jain-sect-and-sangh-vidhi"
+        },
+        {
+          "difference": "The 8 November umbrella date remains separate from preserved 9 November Nirvan/Digambara variants and the 10 November New Year lane.",
+          "scope": "Bounded 2026 Jain calendar variants",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-jain-diwali-date-fixture"
+          ],
+          "variant_id": "nirvan-and-new-year-dates"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "mahavira-nirvana-pavapuri",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana"
+          ],
+          "summary": "JAINA का वर्णन महावीर के अंतिम उपदेश और पावापुरी में निर्वाण के बाद गुरु तथा ज्ञान-ज्योति की स्मृति में दीप जलाने को जोड़ता है।",
+          "title": "महावीर निर्वाण और दीप",
+          "tradition_scope": "JAINA का व्यापक वर्णन; सम्प्रदाय-विशिष्ट पाठ का विकल्प नहीं",
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "gautam-swami-new-year-sequence",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-diwali-practice-context"
+          ],
+          "summary": "JAINA निर्वाण-दिवस के बाद गौतम स्वामी स्मरण और नववर्ष रखता है; ठीक तिथि और विधि समुदाय-विशिष्ट रहती है।",
+          "title": "गौतम स्वामी और अगला नववर्ष",
+          "tradition_scope": "JAINA-वर्णित क्रम",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "स्रोत-आधारित गैर-दीक्षित जैन दीपावली गृहस्थ स्मरण",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-jain-diwali-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "स्मरण, मनन और अहिंसा का एक काम",
+          "materials": [
+            {
+              "item": "एक शांत स्थान",
+              "required": true,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हों वहीं रुकें; दीप, प्रतिमा, पाठ, भोजन या खरीद आवश्यक नहीं"
+              ]
+            }
+          ],
+          "procedure_id": "jain-diwali-lay-remembrance-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-mahavira-nirvana-values",
+            "devam-jain-diwali-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "पावापुरी में महावीर के निर्वाण का स्मरण करके अंतर-प्रकाश के भाव में कुछ क्षण शांत बैठें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana"
+              ],
+              "why": "JAINA जैन दीपावली को महावीर के मोक्ष और आंतरिक दृष्टि के मार्ग से जोड़ता है।"
+            },
+            {
+              "instruction": "अपने किसी वर्तमान निर्णय को अहिंसा, अनेकांतवाद, संयम, अपरिग्रह और पुरुषार्थ की दृष्टि से देखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values"
+              ],
+              "why": "यह किसी सार्वभौमिक पूजा-विधि को गढ़े बिना स्रोत-आधारित जैन मूल्यों पर चिंतन है।"
+            },
+            {
+              "instruction": "अहिंसा, मेल-मिलाप या सादगी का एक ठोस काम चुनें और पुण्य या मोक्ष की गारंटी माने बिना समापन करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "why": "इससे चिंतन जीवनोपयोगी बनता है और आध्यात्मिक परिणामों का झूठा वादा नहीं होता।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "औपचारिक पूजा के बिना JAINA-वर्णित पारिवारिक स्मरण",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-jain-diwali-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "पारिवारिक स्मरण और परिचित पाठ",
+          "materials": [
+            {
+              "item": "केवल परिवार या संघ की परिचित प्रार्थना, पाठ या सुरक्षित प्रकाश",
+              "required": true,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "substitutions": [
+                "बिना सामग्री वाला न्यूनतम चिंतन और लौ-रहित प्रकाश लें"
+              ]
+            }
+          ],
+          "procedure_id": "jain-diwali-lay-remembrance-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-jain-diwali-date-fixture",
+            "jaina-diwali-mahavir-nirvana",
+            "devam-jain-diwali-safety-boundary",
+            "jaina-mahavira-nirvana-values"
+          ],
+          "steps": [
+            {
+              "instruction": "आरम्भ से पहले परिवार की तिथि और परम्परा पूछें; 8 नवम्बर के सामान्य दीपावली-सन्दर्भ को 9 नवम्बर के निर्वाण/दिगम्बर रूप और 10 नवम्बर के नववर्ष से अलग रखें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-jain-diwali-date-fixture"
+              ],
+              "why": "आधिकारिक जैन सामुदायिक पंचांग सभी जैन रूपों को एक तिथि पर नहीं रखते।"
+            },
+            {
+              "instruction": "केवल परिवार या संघ में परिचित प्रार्थना, पाठ, मौन या सुरक्षित प्रकाश लें; कुछ परिचित न हो तो न्यूनतम चिंतन करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "why": "स्रोत स्मरण और शिक्षाओं का आधार देते हैं, एक सार्वभौमिक सम्पूर्ण विधि का नहीं।"
+            },
+            {
+              "instruction": "अहिंसा, क्षमा, अनेक दृष्टियों, संयम या कम उपभोग पर एक ईमानदार बातचीत और व्यावहारिक संकल्प रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values"
+              ],
+              "why": "यह तपस्या थोपे या फल का वादा किए बिना शिक्षा को दैनिक जीवन से जोड़ता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "केवल स्थापित मंदिर या संघ के पालन की तैयारी",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-jain-diwali-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "समुदाय-नेतृत्व वाले निर्वाण कल्याणक के लिए तैयारी",
+          "materials": [
+            {
+              "item": "केवल स्थापित परिवार, संघ, देरासर या उपाश्रय द्वारा बताई सामग्री और पाठ",
+              "required": true,
+              "source_ids": [
+                "jaina-diwali-mahavir-nirvana",
+                "devam-jain-diwali-safety-boundary",
+                "jaina-jcgp-community-puja-pattern"
+              ],
+              "substitutions": [
+                "अज्ञात उपवास, पूजा, मंत्र, पाठ या निर्वाण लाडू क्रम गढ़ने की जगह मानक चिंतन लें"
+              ]
+            }
+          ],
+          "procedure_id": "jain-diwali-lay-remembrance-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-jain-diwali-date-fixture",
+            "devam-jain-diwali-safety-boundary",
+            "jaina-mahavira-nirvana-values",
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-jcgp-community-puja-pattern"
+          ],
+          "steps": [
+            {
+              "instruction": "तिथि, उपवास, प्रतिक्रमण, पूजा, पाठ, मंत्र, मंदिर, निर्वाण लाडू और नववर्ष का क्रम अपने स्थापित जैन समुदाय को तय करने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-jain-diwali-date-fixture",
+                "devam-jain-diwali-safety-boundary",
+                "jaina-jcgp-community-puja-pattern"
+              ],
+              "why": "JAINA एक समुदाय का ठीक क्रम दर्ज करता है, जबकि व्यापक प्रमाण औपचारिक भेद सुरक्षित रखते हैं; इसलिए हर औपचारिक अंग का नेतृत्व उत्तरदायी समुदाय ही करता है।"
+            },
+            {
+              "instruction": "सहमति, सुलभता, भोजन और अग्नि-सुरक्षा तथा जीवित परम्परा के अधिकार का सम्मान करें; पटाखे या गढ़े हुए अनुष्ठान न जोड़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-jain-diwali-safety-boundary"
+              ],
+              "why": "विस्तृत पालन में भी सुरक्षा और परम्परा की स्पष्ट सीमा आवश्यक है।"
+            },
+            {
+              "instruction": "समुदाय के स्थापित समापन के साथ अहिंसा, अनेकांतवाद, संयम या अपरिग्रह का एक दीर्घकालिक संकल्प लें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "jaina-mahavira-nirvana-values"
+              ],
+              "why": "इससे जीवित परम्परा और जीवनोपयोगी नैतिक समापन दोनों सुरक्षित रहते हैं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "इस व्यापक सहायक से उपवास या तप आरम्भ न करें; परिवार, संघ और उचित स्वास्थ्य-मार्गदर्शन लें।",
+        "जहाँ आवश्यक हो लौ-रहित प्रकाश लें और पटाखों से बचें।",
+        "चिंतन या क्रिया से पुण्य, मोक्ष, समृद्धि या रक्षा की गारंटी नहीं।",
+        "यह मार्ग केवल गैर-दीक्षित गृहस्थ स्मरण और सम्मानपूर्ण सामुदायिक सहभागिता के लिए पूर्ण है; पंथ, संघ, मंदिर, उपवास, मंत्र, शास्त्र-पाठ और औपचारिक पूजा के मार्ग अलग हैं।"
+      ],
+      "short_answer": "स्रोत-आधारित गृहस्थ पालन के लिए पावापुरी में भगवान महावीर के निर्वाण का स्मरण करें, कोई परिचित जैन शिक्षा पढ़ें या सुनें, अहिंसा और अपरिग्रह पर कुछ समय मनन करें, और अहिंसा या मेल-मिलाप का एक ठोस काम चुनें। यह गैर-दीक्षित गृहस्थ स्मरण की पूर्ण मार्गदर्शिका है; यह श्वेताम्बर, दिगम्बर, स्थानकवासी, तेरापंथ, श्रीमद राजचन्द्र, मंदिर, संघ या परिवार की पूजा-विधि का विकल्प नहीं है।",
+      "significance": {
+        "source_ids": [
+          "jaina-diwali-mahavir-nirvana",
+          "jaina-mahavira-nirvana-values"
+        ],
+        "text": "जैन दीपावली भगवान महावीर के पावापुरी निर्वाण का स्मरण करती है और प्रकाश को आत्म-ज्योति, पुरुषार्थ, अहिंसा, संयम तथा उपदेश-संरक्षण से जोड़ती है।"
+      },
+      "title": "जैन दीपावली का गृहस्थ स्मरण",
+      "typical_practices": [
+        {
+          "description": "वर्णनों में मंदिर-दर्शन, उत्तराध्ययन या अन्य पाठ, स्तवन/जाप, ज्ञान के प्रतीक दीप, कुछ समुदायों में संयम/उपवास, शुभकामना और मिठाई आते हैं; यहाँ कोई रूप सार्वभौमिक नहीं कहा गया है।",
+          "instructional": false,
+          "population_scope": "JAINA-वर्णित जैन परिवार और समुदाय",
+          "practice_id": "jaina-described-diwali-practice",
+          "source_ids": [
+            "jaina-diwali-mahavir-nirvana",
+            "jaina-diwali-practice-context"
+          ]
+        },
+        {
+          "description": "JAINA पर प्रकाशित Jain Center of Greater Phoenix के वर्णन में आरम्भिक पूजा, महावीर निर्वाण कल्याणक पूजन, निर्वाण कांड भाषा, अर्घावली और अंत में निर्वाण लाडू अर्पण का सामुदायिक क्रम है; इसे उपस्थित व्यक्ति के परिचय के लिए रखें, सार्वभौमिक पाठ के रूप में नहीं।",
+          "instructional": false,
+          "population_scope": "JAINA पर प्रकाशित Jain Center of Greater Phoenix का सामुदायिक वर्णन",
+          "practice_id": "jaina-jcgp-described-community-sequence",
+          "source_ids": [
+            "jaina-jcgp-community-puja-pattern"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "पाठ, समय, उपवास, पूजा, जाप, निर्वाण लाडू और नववर्ष क्रम बदलते हैं; इनके अलग प्रामाणिक मार्ग चाहिए।",
+          "scope": "श्वेताम्बर, दिगम्बर, स्थानकवासी, मंदिर, संघ और परिवार",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-jain-diwali-safety-boundary",
+            "jaina-diwali-practice-context"
+          ],
+          "variant_id": "jain-sect-and-sangh-vidhi"
+        },
+        {
+          "difference": "8 नवम्बर की व्यापक तिथि 9 नवम्बर के निर्वाण/दिगम्बर रूपों और 10 नवम्बर नववर्ष से अलग रहती है।",
+          "scope": "सीमित 2026 जैन तिथि-रूप",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-jain-diwali-date-fixture"
+          ],
+          "variant_id": "nirvan-and-new-year-dates"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "jain-diwali-umbrella"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "1b72b1eb9710d35e90618e02e840e4cb6129e0aa726df667fa637e42e62f117d",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/jain-diwali-delhi-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-jain-diwali-date-fixture",
+      "source_role": "Bounded date and variant evidence; not ritual authority",
+      "title": "Devam Jain Diwali Delhi 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.jaina.org/page/10_26_2019_ENewsletter",
+        "observed_at": "2026-08-07",
+        "response_bytes": 72450,
+        "response_sha256": "b7eaf080e00b96ccc8aac932da39f7dca083806fb40cf4724a52da112e6a7503",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "JAINA",
+      "rights_lane": "citation_only",
+      "source_id": "jaina-diwali-mahavir-nirvana",
+      "source_role": "Jain umbrella identity, Pavapuri narrative, inner-light meaning, scripture and New Year context; not a universal vidhi",
+      "title": "Diwali and Mahavira Nirvana",
+      "url": "https://www.jaina.org/page/10_26_2019_ENewsletter"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.jaina.org/mpage/11242023_ENewsletter",
+        "observed_at": "2026-08-07",
+        "response_bytes": 170183,
+        "response_sha256": "c7fd1377145a0d5e43ba083a467380abcdb042967526e3757bb4696d688734e2",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "JAINA",
+      "rights_lane": "citation_only",
+      "source_id": "jaina-mahavira-nirvana-values",
+      "source_role": "Ahimsa, non-absolutism, self-effort, and restraint context",
+      "title": "Mahavira Nirvana 2550",
+      "url": "https://www.jaina.org/mpage/11242023_ENewsletter"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.jaina.org/page/10_19_2017_Newslette",
+        "observed_at": "2026-08-07",
+        "response_bytes": 60623,
+        "response_sha256": "57c937eb87b663361eecc9e98c285ba7f0954fb3a7af2881ed4fb40ac4c3a010",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "JAINA",
+      "rights_lane": "citation_only",
+      "source_id": "jaina-diwali-practice-context",
+      "source_role": "Descriptive temple, reading, hymn, austerity, lamp, and sequence evidence; not one cross-sect prescription",
+      "title": "JAINA Diwali special newsletter",
+      "url": "https://www.jaina.org/page/10_19_2017_Newslette"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.jaina.org/mpage/11132020_ENewsletter",
+        "observed_at": "2026-08-08",
+        "response_bytes": 92228,
+        "response_sha256": "60b315c230f86db7201796c5d3f816566acf76f02e00b94046f91a3b3b19f0a7",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "JAINA",
+      "rights_lane": "citation_only",
+      "source_id": "jaina-jcgp-community-puja-pattern",
+      "source_role": "JAINA-hosted Jain Center of Greater Phoenix description of an exact community puja sequence; used only to prepare a lay participant, never as a universal or self-led puja prescription",
+      "title": "Diwali Special: Mahavir Swami Nirvan and Gautam Swami Keval Gyan Kalyanak",
+      "url": "https://www.jaina.org/mpage/11132020_ENewsletter"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-jain-diwali-safety-boundary",
+      "source_role": "Editorial safety and scope boundary; not Jain authority",
+      "title": "Devam Jain Diwali scope, flame, austerity, and outcome boundary",
+      "url": null
+    }
+  ]
+}

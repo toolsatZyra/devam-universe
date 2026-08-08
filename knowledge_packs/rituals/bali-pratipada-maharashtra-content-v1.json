@@ -1,0 +1,628 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family call this Bali Pratipada, Balipratipada, Diwali Padwa, or Padava?",
+      "Does an elder, family text, temple, or sampradaya guide your observance?",
+      "Does your home already keep a spouse, business, gift, lamp, image, meal, or prayer custom?",
+      "Do you need a flame-free, gift-free, food-flexible, remote, or grief-sensitive form?"
+    ],
+    "region_codes": [
+      "west-india"
+    ],
+    "settings": [
+      "household",
+      "individual",
+      "family_led"
+    ],
+    "tradition_codes": [
+      "smarta-west-india"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-maharashtra-bali-pratipada-pratipada-sunrise-v1",
+    "freshness_note": "The bounded Mumbai 2026 lane resolves Tuesday, 10 November. Family prayer, spouse, business, meal, gift, and close remain household-specific.",
+    "live_schedule_required": false,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-bali-pratipada-date-fixture",
+      "maharashtra-tourism-diwali-balipratipada"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "bali-pratipada-maharashtra-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "maharashtra-king-bali-remembrance",
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada"
+          ],
+          "summary": "Maharashtra Tourism names the fourth day Balipratipada/Padwa and says it honours King Bali. Devam preserves that attributable remembrance without supplying an unsupported Vamana-Bali episode or treating one theological interpretation as universal.",
+          "title": "King Bali in Maharashtra's Diwali sequence",
+          "tradition_scope": "Current Maharashtra official festival account",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short Maharashtra King Bali remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-bali-pratipada-safety-and-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "King Bali remembrance and family gratitude",
+          "materials": [
+            {
+              "item": "A quiet place or a family photo, flower, or familiar symbol",
+              "required": false,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "substitutions": [
+                "Use no object and keep a spoken or silent remembrance"
+              ]
+            }
+          ],
+          "procedure_id": "bali-pratipada-maharashtra-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-bali-pratipada-date-fixture",
+            "devam-bali-pratipada-safety-and-boundary",
+            "maharashtra-tourism-diwali-balipratipada"
+          ],
+          "steps": [
+            {
+              "instruction": "Use the resolved Maharashtra Bali Pratipada date and keep Govardhana, Gujarati New Year, and South Indian Balipadyami outside this sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-bali-pratipada-date-fixture",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "The shared civil day does not make these attributable traditions one ritual."
+            },
+            {
+              "instruction": "Remember King Bali through one family-known sentence, story, prayer, or a moment of silence; if your family has no established form, simply reflect on generosity and good stewardship without claiming one theology is universal.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "Maharashtra's official festival account identifies honoring King Bali, while the exact narrative and worship form can differ."
+            },
+            {
+              "instruction": "Share one sincere expression of gratitude or joyful time with family, in person or remotely.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "Joyful family time is the other stable official core and does not require spending, touch, food, or a gendered role."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Maharashtra family-led Padwa form",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-bali-pratipada-safety-and-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 25,
+          "form": "traditional_household",
+          "label": "A family-led Padwa gathering",
+          "materials": [
+            {
+              "item": "Only the prayer, story, safe light, food, greeting, or symbol your family already recognises",
+              "required": true,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "substitutions": [
+                "Use the minimum form and omit unavailable, unsafe, unwanted, or unaffordable items"
+              ]
+            }
+          ],
+          "procedure_id": "bali-pratipada-maharashtra-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada",
+            "devam-bali-pratipada-safety-and-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Ask the family elder or usual lead for the household's name, story, order, participants, and close before beginning.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "The official modern source supports identity and family focus, not one complete ritual procedure."
+            },
+            {
+              "instruction": "Follow the family's established remembrance or prayer for King Bali; use a flame only when continuously supervised and use a flame-free light when safer.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "The family-known form is preserved without turning a lamp, image, mantra, or offering into a universal rule."
+            },
+            {
+              "instruction": "Spend unhurried time together and share suitable food or greetings if desired; exchange a gift only freely and within means.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "The supported core is joyful family time, not a compulsory transaction or promised material result."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established elder-, family-, temple-, or sampradaya-led Maharashtra form",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-bali-pratipada-safety-and-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Established household or community observance",
+          "materials": [
+            {
+              "item": "The exact materials named by your recognised family, temple, or sampradaya guide",
+              "required": true,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "substitutions": [
+                "Scale down to the standard or minimum family form"
+              ]
+            }
+          ],
+          "procedure_id": "bali-pratipada-maharashtra-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-bali-pratipada-safety-and-boundary",
+            "maharashtra-tourism-diwali-balipratipada"
+          ],
+          "steps": [
+            {
+              "instruction": "Have the recognised family, temple, or sampradaya guide set any formal image, mantra, offering, spouse, elder, business, or community roles.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "Those details are outside the evidence boundary of this modern Maharashtra participation guide."
+            },
+            {
+              "instruction": "Keep the King Bali remembrance and family gathering attributable to this Maharashtra lane without importing Govardhana, BAPS or Gujarati New Year, or South Indian Balipadyami procedure.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "Related festival names and dates do not erase regional and sampradaya boundaries."
+            },
+            {
+              "instruction": "Complete the family's recognised close, safe flame closure, shared time, cleanup, and any freely chosen hospitality or gifts.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "The established guide determines the close while safety and consent remain non-negotiable."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Use only a prayer, story, symbol, food, spouse custom, or family role already recognised by the household; the app does not invent formal liturgy.",
+        "No real flame, touch, travel, gift, spending, fasting, food, or gendered role is required.",
+        "No prosperity, marital, spiritual, or material outcome is guaranteed.",
+        "Govardhana/Annakut, Gujarati New Year, and Balipadyami remain separate lanes."
+      ],
+      "short_answer": "On the separately resolved Maharashtra date, remember King Bali and spend intentional, joyful time with family. A familiar family prayer, story, meal, greeting, light, or gift can be included when your household already keeps it, but none is manufactured here as a universal requirement.",
+      "significance": {
+        "scope_note": "The official Maharashtra page establishes the regional identity and family focus, not a complete liturgy.",
+        "source_ids": [
+          "maharashtra-tourism-diwali-balipratipada"
+        ],
+        "text": "In this bounded Maharashtra lane, Bali Pratipada or Diwali Padwa honours King Bali and centres joyful, intentional family time. It does not prescribe one universal Bali theology, spouse rite, business rite, gift, or offering."
+      },
+      "title": "Bali Pratipada / Padwa with family",
+      "typical_practices": [
+        {
+          "description": "The supported modern core is King Bali remembrance and joyful family time. A household may add its established prayer, story, meal, greeting, light, spouse custom, gift, or business custom, but those elements remain descriptive and family-specific.",
+          "instructional": false,
+          "population_scope": "Maharashtra families that keep Bali Pratipada/Padwa",
+          "practice_id": "maharashtra-bali-padwa-family-remembrance",
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada",
+            "devam-bali-pratipada-safety-and-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Names, stories, prayers, spouse or elder roles, meals, gifts, lights, and business customs vary by family; the app's minimum path does not replace them.",
+          "scope": "Maharashtra family practice",
+          "separate_lane_required": false,
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada",
+            "devam-bali-pratipada-safety-and-boundary"
+          ],
+          "variant_id": "maharashtra-family-form-varies"
+        },
+        {
+          "difference": "Govardhana/Annakut, BAPS or other Gujarati New Year, and South Indian Balipadyami require their own sources and procedures and are not completed here.",
+          "scope": "Adjacent Diwali traditions",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-bali-pratipada-safety-and-boundary"
+          ],
+          "variant_id": "coincident-pratipada-traditions-remain-separate"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "maharashtra-king-bali-remembrance",
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada"
+          ],
+          "summary": "महाराष्ट्र पर्यटन चौथे दिन को बलिप्रतिपदा/पाडवा कहता है और इसे राजा बलि के सम्मान से जोड़ता है। देवम इस स्रोत-सम्बद्ध स्मरण को सुरक्षित रखता है, पर अप्रमाणित वामन-बलि प्रसंग नहीं गढ़ता और किसी एक धार्मिक व्याख्या को सार्वभौमिक नहीं कहता।",
+          "title": "महाराष्ट्र की दिवाली-परम्परा में राजा बलि",
+          "tradition_scope": "वर्तमान महाराष्ट्र आधिकारिक पर्व-विवरण",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short Maharashtra King Bali remembrance",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-bali-pratipada-safety-and-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "राजा बलि का स्मरण और पारिवारिक कृतज्ञता",
+          "materials": [
+            {
+              "item": "शान्त स्थान या पारिवारिक चित्र, फूल या परिचित प्रतीक",
+              "required": false,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी वस्तु के बोलकर या मौन स्मरण करें"
+              ]
+            }
+          ],
+          "procedure_id": "bali-pratipada-maharashtra-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-bali-pratipada-date-fixture",
+            "devam-bali-pratipada-safety-and-boundary",
+            "maharashtra-tourism-diwali-balipratipada"
+          ],
+          "steps": [
+            {
+              "instruction": "महाराष्ट्र के लिए निर्धारित बलि प्रतिपदा तिथि लें और गोवर्धन, गुजराती नववर्ष तथा दक्षिण भारतीय बलिपाड्यमी को इस क्रम में न मिलाएँ।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-bali-pratipada-date-fixture",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "एक ही नागरिक दिन होने से अलग परम्पराएँ एक विधि नहीं बन जातीं।"
+            },
+            {
+              "instruction": "परिवार का परिचित एक वाक्य, कथा, प्रार्थना या मौन लेकर राजा बलि का स्मरण करें; स्थापित रूप न हो तो उदारता और अच्छे उत्तरदायित्व पर मनन करें, किसी एक धर्मकथा को सार्वभौमिक न कहें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "महाराष्ट्र का आधिकारिक विवरण राजा बलि के सम्मान की पहचान देता है, पर सटीक कथा और पूजा-रूप बदल सकते हैं।"
+            },
+            {
+              "instruction": "परिवार के साथ, सामने या दूर से, एक सच्चा धन्यवाद या प्रसन्न समय साझा करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "प्रसन्न पारिवारिक समय दूसरा स्थिर आधिकारिक केंद्र है; इसमें खर्च, स्पर्श, भोजन या लैंगिक भूमिका अनिवार्य नहीं।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Maharashtra family-led Padwa form",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-bali-pratipada-safety-and-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 25,
+          "form": "traditional_household",
+          "label": "परिवार-नेतृत्व वाला पाडवा मिलन",
+          "materials": [
+            {
+              "item": "केवल वही प्रार्थना, कथा, सुरक्षित प्रकाश, भोजन, शुभकामना या प्रतीक जिसे परिवार पहले से मानता है",
+              "required": true,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "substitutions": [
+                "सरल रूप लें और अनुपलब्ध, असुरक्षित, अनचाही या महँगी वस्तु छोड़ दें"
+              ]
+            }
+          ],
+          "procedure_id": "bali-pratipada-maharashtra-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada",
+            "devam-bali-pratipada-safety-and-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "आरम्भ से पहले परिवार के बुज़ुर्ग या सामान्य नेतृत्वकर्ता से नाम, कथा, क्रम, भूमिका और समापन पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "आधुनिक आधिकारिक स्रोत पहचान और परिवार-केंद्र का समर्थन करता है, पूरी विधि का नहीं।"
+            },
+            {
+              "instruction": "राजा बलि के लिए परिवार का स्थापित स्मरण या प्रार्थना रखें; दीप हो तो निरन्तर देखरेख में रखें और आवश्यकता पर बिना लौ का प्रकाश लें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "परिचित पारिवारिक रूप बचता है, पर दीप, प्रतिमा, मंत्र या भेंट सार्वभौमिक नियम नहीं बनते।"
+            },
+            {
+              "instruction": "साथ समय बिताएँ और इच्छा हो तो उपयुक्त भोजन या शुभकामना साझा करें; उपहार केवल स्वेच्छा और सामर्थ्य से दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "समर्थित केंद्र प्रसन्न पारिवारिक समय है, अनिवार्य लेन-देन या निश्चित भौतिक फल नहीं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established elder-, family-, temple-, or sampradaya-led Maharashtra form",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-bali-pratipada-safety-and-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "स्थापित गृह या सामुदायिक पालन",
+          "materials": [
+            {
+              "item": "मान्य परिवार, मंदिर या सम्प्रदाय मार्गदर्शक द्वारा बताई गई सटीक सामग्री",
+              "required": true,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "substitutions": [
+                "मानक या सरल पारिवारिक रूप लें"
+              ]
+            }
+          ],
+          "procedure_id": "bali-pratipada-maharashtra-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-bali-pratipada-safety-and-boundary",
+            "maharashtra-tourism-diwali-balipratipada"
+          ],
+          "steps": [
+            {
+              "instruction": "औपचारिक प्रतिमा, मंत्र, भेंट, दाम्पत्य, बुज़ुर्ग, व्यवसाय या सामुदायिक भूमिकाएँ मान्य परिवार, मंदिर या सम्प्रदाय मार्गदर्शक से तय कराएँ।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "ये विवरण इस आधुनिक महाराष्ट्र सहभागिता मार्ग की प्रमाण-सीमा से बाहर हैं।"
+            },
+            {
+              "instruction": "राजा बलि के स्मरण और पारिवारिक मिलन को महाराष्ट्र के इस मार्ग में रखें; गोवर्धन, BAPS या गुजराती नववर्ष तथा दक्षिण भारतीय बलिपाड्यमी की विधि न मिलाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-balipratipada",
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "सम्बन्धित नाम और तिथियाँ क्षेत्रीय तथा सम्प्रदायिक सीमाएँ नहीं मिटातीं।"
+            },
+            {
+              "instruction": "परिवार का मान्य समापन, सुरक्षित दीप-समापन, साथ का समय, सफाई और स्वेच्छिक आतिथ्य या उपहार पूरा करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-bali-pratipada-safety-and-boundary"
+              ],
+              "why": "स्थापित मार्गदर्शक समापन तय करता है और सुरक्षा तथा सहमति अनिवार्य रहती हैं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "केवल वही प्रार्थना, कथा, प्रतीक, भोजन, दाम्पत्य-रीति या भूमिका लें जिसे परिवार पहले से मानता है; ऐप औपचारिक विधि नहीं गढ़ता।",
+        "वास्तविक लौ, स्पर्श, यात्रा, उपहार, खर्च, उपवास, भोजन या लैंगिक भूमिका अनिवार्य नहीं है।",
+        "समृद्धि, दाम्पत्य, आध्यात्मिक या भौतिक फल की कोई गारंटी नहीं है।",
+        "गोवर्धन/अन्नकूट, गुजराती नववर्ष और बलिपाड्यमी अलग मार्ग हैं।"
+      ],
+      "short_answer": "महाराष्ट्र के लिए अलग से निर्धारित तिथि पर राजा बलि का स्मरण करें और परिवार के साथ प्रसन्न, सार्थक समय बिताएँ। परिवार में पहले से प्रचलित प्रार्थना, कथा, भोजन, शुभकामना, दीप या उपहार रखा जा सकता है, पर इनमें से किसी को यहाँ सार्वभौमिक अनिवार्यता नहीं बनाया गया है।",
+      "significance": {
+        "scope_note": "महाराष्ट्र का आधिकारिक पृष्ठ क्षेत्रीय पहचान और पारिवारिक केन्द्र बताता है, पूर्ण पूजा-विधान नहीं।",
+        "source_ids": [
+          "maharashtra-tourism-diwali-balipratipada"
+        ],
+        "text": "इस सीमित महाराष्ट्र परम्परा में बलि प्रतिपदा या दिवाली पाडवा राजा बलि के सम्मान और परिवार के साथ प्रसन्न, सार्थक समय का अवसर है। यह राजा बलि की एक ही सार्वभौमिक धर्मकथा, दाम्पत्य-विधि, व्यापार-विधि, उपहार या अर्पण को अनिवार्य नहीं बनाती।"
+      },
+      "title": "परिवार के साथ बलि प्रतिपदा / पाडवा",
+      "typical_practices": [
+        {
+          "description": "समर्थित आधुनिक केन्द्र राजा बलि का स्मरण और परिवार के साथ प्रसन्न समय है। घर अपनी स्थापित प्रार्थना, कथा, भोजन, शुभकामना, प्रकाश, दाम्पत्य-रीति, उपहार या व्यापार-रीति जोड़ सकता है, पर ये तत्व वर्णनात्मक और परिवार-विशिष्ट रहते हैं।",
+          "instructional": false,
+          "population_scope": "बलि प्रतिपदा/पाडवा मानने वाले महाराष्ट्र परिवार",
+          "practice_id": "maharashtra-bali-padwa-family-remembrance",
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada",
+            "devam-bali-pratipada-safety-and-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "नाम, कथा, प्रार्थना, दाम्पत्य या बुज़ुर्ग की भूमिका, भोजन, उपहार, प्रकाश और व्यापार-रीति परिवार के अनुसार बदलते हैं; ऐप का सरल मार्ग उनका स्थान नहीं लेता।",
+          "scope": "महाराष्ट्र पारिवारिक रीति",
+          "separate_lane_required": false,
+          "source_ids": [
+            "maharashtra-tourism-diwali-balipratipada",
+            "devam-bali-pratipada-safety-and-boundary"
+          ],
+          "variant_id": "maharashtra-family-form-varies"
+        },
+        {
+          "difference": "गोवर्धन/अन्नकूट, BAPS या अन्य गुजराती नववर्ष और दक्षिण भारतीय बलिपाड्यमी के अपने स्रोत और विधियाँ चाहिए; वे इस मार्ग से पूर्ण नहीं होते।",
+          "scope": "निकटवर्ती दिवाली परम्पराएँ",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-bali-pratipada-safety-and-boundary"
+          ],
+          "variant_id": "coincident-pratipada-traditions-remain-separate"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "bali-pratipada"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "c53a49bc816473be9f3d4ba1b942cdfe23658b67ca5cc1548fa347ed66360480",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/bali-pratipada-mumbai-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-bali-pratipada-date-fixture",
+      "source_role": "Deterministic Mumbai date decision; not ritual authority",
+      "title": "Devam Bali Pratipada Mumbai 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://maharashtratourism.gov.in/festivals/diwali/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 627481,
+        "response_sha256": "41feab01d441e23fed6a2febdb7b6fc407144c545702b2d4f55e6af3a3c20b2a",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "rights_lane": "citation_only",
+      "source_id": "maharashtra-tourism-diwali-balipratipada",
+      "source_role": "Official Maharashtra identity, King Bali remembrance, and family focus; not a complete household procedure",
+      "title": "Diwali — Balipratipada/Padwa",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-bali-pratipada-safety-and-boundary",
+      "source_role": "Editorial safety and scope boundary; not scripture, history, or ritual authority",
+      "title": "Devam Bali Pratipada family, flame, spending, gender, and cross-tradition boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-bali-pratipada-maharashtra-family-v1"
+  ]
+}

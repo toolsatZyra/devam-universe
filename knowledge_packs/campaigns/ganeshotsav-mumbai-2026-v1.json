@@ -1,0 +1,77 @@
+{
+  "contract": "DEVAM_HERO_CAMPAIGN_CALENDAR_V1",
+  "campaign_id": "ganeshotsav-2026-west-india-smarta",
+  "title": "Ganeshotsav",
+  "scope": {
+    "civil_date_start": "2026-09-14",
+    "civil_date_end": "2026-09-25",
+    "reference_location": "Mumbai, India",
+    "supported_tradition_codes": ["smarta-west-india"],
+    "calendar_span_days": 12,
+    "calendar_crosswalk_not_mandatory_stay_length": true
+  },
+  "evidence": {
+    "opening_rule_id": "nirnayasindhu-1865-bhadrapada-shukla-chaturthi-madhyahna-v1",
+    "closing_rule_id": "nirnayasindhu-1865-bhadrapada-shukla-chaturdashi-ananta-madhyahna-2026-v1",
+    "observance_ruleset_version": "devam-observance-rules-2026-v8",
+    "practice_pack_id": "devam-ganesh-chaturthi-west-india-practice-v1",
+    "practice_pack_sha256": "2c90bfba1e8eda5539186c96baca7027db3af7dd6ce6a293b3c86a9e7e47fa34",
+    "sources": [
+      {
+        "source_id": "maharashtra-tourism-ganesh-chaturthi-2026",
+        "url": "https://maharashtratourism.gov.in/festivals/ganesh-chaturthi/",
+        "http_status": 200,
+        "final_url": "https://maharashtratourism.gov.in/festivals/ganesh-chaturthi/",
+        "response_bytes": 626644,
+        "response_sha256": "956c6d6bdddb83f059d5f9fa5df5bbbea08f2fe2212b81905a1135f88726005f",
+        "strict_utf8": true,
+        "evidence_role": "official_current_variable_duration_and_anant_chaturdashi_culmination",
+        "rights_lane": "reference_only"
+      },
+      {
+        "source_id": "drikpanchang-mumbai-ganesh-chaturthi-2026",
+        "url": "https://www.drikpanchang.com/festivals/ganesh-chaturthi/ganesh-chaturthi-date-time.html?geoname-id=1275339&year=2026",
+        "http_status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/ganesh-chaturthi/ganesh-chaturthi-date-time.html?geoname-id=1275339&year=2026",
+        "response_bytes": 89245,
+        "response_sha256": "5fe119199ceb76f807683e251cfd9ec3de30e9ea799eb7ea142170851d65ad89",
+        "strict_utf8": true,
+        "evidence_role": "location_specific_opening_and_visarjan_date_fixture",
+        "rights_lane": "reference_only"
+      },
+      {
+        "source_id": "nirnayasindhu-1865-ananta-chaturdashi",
+        "internet_archive_identifier": "in.ernet.dli.2015.365977",
+        "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+        "pdf_pages": [159],
+        "evidence_role": "historical_ananta_vrata_chaturdashi_madhyahna_rule",
+        "rights_lane": "private_evidence"
+      }
+    ]
+  },
+  "days": [
+    {"civil_date": "2026-09-14", "ordinal": 1, "phase": "opening", "common_name": "Ganesh Chaturthi"},
+    {"civil_date": "2026-09-15", "ordinal": 2, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-16", "ordinal": 3, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-17", "ordinal": 4, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-18", "ordinal": 5, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-19", "ordinal": 6, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-20", "ordinal": 7, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-21", "ordinal": 8, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-22", "ordinal": 9, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-23", "ordinal": 10, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-24", "ordinal": 11, "phase": "family_duration", "common_name": "Family-chosen Ganeshotsav day"},
+    {"civil_date": "2026-09-25", "ordinal": 12, "phase": "anant_chaturdashi_closing", "common_name": "Anant Chaturdashi Visarjan lane"}
+  ],
+  "display_note": "The full opening-to-Anant-Chaturdashi lane spans 12 civil dates in 2026. This is a calendar crosswalk, not a required 12-day murti stay. If your family has already completed visarjan, treat interior days as calendar context rather than an instruction to continue daily care.",
+  "boundaries": {
+    "exact_west_india_smarta_2026_lane_only": true,
+    "mandatory_festival_duration_claim": false,
+    "all_family_visarjan_dates_resolved": false,
+    "one_and_half_day_visarjan_resolved": false,
+    "five_day_visarjan_resolved": false,
+    "seven_day_visarjan_resolved": false,
+    "ananta_vrata_and_ganesh_visarjan_same_ritual": false,
+    "all_ganeshotsav_traditions_complete": false
+  }
+}

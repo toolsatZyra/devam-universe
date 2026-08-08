@@ -1,0 +1,305 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devam.app/schemas/ritual-observance-content-v1.schema.json",
+  "title": "Devam user-complete ritual and observance lane",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "lane_id",
+    "observance_slugs",
+    "applicability",
+    "calendar",
+    "sources",
+    "localized_content",
+    "product_status"
+  ],
+  "properties": {
+    "contract": { "const": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1" },
+    "lane_id": { "type": "string", "minLength": 1 },
+    "supersedes_legacy_pack_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "observance_slugs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "applicability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "region_codes",
+        "tradition_codes",
+        "settings",
+        "family_practice_overrides_generic_guidance",
+        "material_context_questions"
+      ],
+      "properties": {
+        "region_codes": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "tradition_codes": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "institution_codes": { "$ref": "#/$defs/stringArray" },
+        "settings": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["household", "temple", "community", "individual", "family_led", "teacher_led"] }
+        },
+        "family_practice_overrides_generic_guidance": { "const": true },
+        "material_context_questions": { "$ref": "#/$defs/nonEmptyStringArray" }
+        ,"context_pairs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["region_code", "tradition_code"],
+            "properties": {
+              "region_code": { "type": "string", "minLength": 1 },
+              "tradition_code": { "type": "string", "minLength": 1 },
+              "observance_slug": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "observance_context_notes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["observance_slug", "language_code", "note"],
+            "properties": {
+              "observance_slug": { "type": "string", "minLength": 1 },
+              "language_code": { "enum": ["en", "hi"] },
+              "note": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "calendar": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["resolution_source_ids", "timing_kind", "location_aware", "tradition_aware", "live_schedule_required"],
+      "properties": {
+        "resolution_source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "timing_kind": { "enum": ["astronomical", "textual_rule", "institutional_schedule", "customary", "mixed"] },
+        "location_aware": { "type": "boolean" },
+        "tradition_aware": { "type": "boolean" },
+        "decision_rule_id": { "type": ["string", "null"] },
+        "closing_decision_rule_id": { "type": ["string", "null"] },
+        "live_schedule_required": { "type": "boolean" },
+        "freshness_note": { "type": ["string", "null"] }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "localized_content": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/localizedContent" }
+    },
+    "product_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["classification", "completed_dimensions", "open_gaps", "review_status"],
+      "properties": {
+        "classification": {
+          "enum": ["calendar_only", "story_only", "participation_companion", "bounded_vidhi", "user_complete_lane"]
+        },
+        "completed_dimensions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["applicability", "timing", "significance", "origin_narratives", "typical_practice", "actionable_vidhi", "materials_and_substitutions", "variants", "evidence"],
+          "properties": {
+            "applicability": { "type": "boolean" },
+            "timing": { "type": "boolean" },
+            "significance": { "type": "boolean" },
+            "origin_narratives": { "type": "boolean" },
+            "typical_practice": { "type": "boolean" },
+            "actionable_vidhi": { "type": "boolean" },
+            "materials_and_substitutions": { "type": "boolean" },
+            "variants": { "type": "boolean" },
+            "evidence": { "type": "boolean" }
+          }
+        },
+        "open_gaps": { "$ref": "#/$defs/stringArray" },
+        "review_status": { "enum": ["draft", "internal_beta_reviewed", "published"] }
+      }
+    }
+  },
+  "$defs": {
+    "stringArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "nonEmptyStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "title", "publisher", "source_role", "rights_lane"],
+      "properties": {
+        "source_id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "source_role": { "type": "string", "minLength": 1 },
+        "rights_lane": { "enum": ["product_cleared", "derivative_allowed", "citation_only", "internal_only", "catalogued_lead"] },
+        "url": { "type": ["string", "null"] },
+        "artifact_sha256": { "type": ["string", "null"], "pattern": "^[0-9a-f]{64}$" },
+        "citation_coordinates": { "type": ["object", "null"] },
+        "observed_fetch": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["status", "final_url", "response_bytes", "response_sha256", "strict_utf8"],
+              "properties": {
+                "status": { "const": 200 },
+                "final_url": { "type": "string", "minLength": 1 },
+                "response_bytes": { "type": "integer", "minimum": 1 },
+                "response_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+                "strict_utf8": { "const": true },
+                "observed_at": { "type": ["string", "null"] }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "sourcedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "source_ids"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "scope_note": { "type": ["string", "null"] }
+      }
+    },
+    "originNarrative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["narrative_id", "title", "summary", "tradition_scope", "source_ids", "universal_origin_claimed"],
+      "properties": {
+        "narrative_id": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "tradition_scope": { "type": "string", "minLength": 1 },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "universal_origin_claimed": { "const": false }
+      }
+    },
+    "typicalPractice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["practice_id", "population_scope", "description", "source_ids", "instructional"],
+      "properties": {
+        "practice_id": { "type": "string", "minLength": 1 },
+        "population_scope": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "instructional": { "const": false }
+      }
+    },
+    "material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item", "required", "substitutions", "source_ids"],
+      "properties": {
+        "item": { "type": "string", "minLength": 1 },
+        "required": { "type": "boolean" },
+        "substitutions": { "$ref": "#/$defs/stringArray" },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" }
+      }
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ordinal", "instruction", "why", "source_ids", "optional"],
+      "properties": {
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "instruction": { "type": "string", "minLength": 1 },
+        "why": { "type": "string", "minLength": 1 },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "optional": { "type": "boolean" }
+      }
+    },
+    "procedure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["procedure_id", "label", "tier", "setting", "authority_scope", "form", "estimated_minutes", "materials", "steps", "closing", "source_ids"],
+      "properties": {
+        "procedure_id": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "tier": { "enum": ["minimum", "standard", "elaborate"] },
+        "setting": { "enum": ["household", "temple_participation", "community_participation", "individual", "family_led", "teacher_led"] },
+        "authority_scope": { "type": "string", "minLength": 1 },
+        "form": { "enum": ["accessible_short", "traditional_household", "fuller_family_or_teacher_led", "institutional_participation"] },
+        "estimated_minutes": { "type": ["integer", "null"], "minimum": 1 },
+        "materials": { "type": "array", "items": { "$ref": "#/$defs/material" } },
+        "steps": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/step" } },
+        "closing": { "$ref": "#/$defs/sourcedText" },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" }
+      }
+    },
+    "variant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variant_id", "scope", "difference", "source_ids", "separate_lane_required"],
+      "properties": {
+        "variant_id": { "type": "string", "minLength": 1 },
+        "scope": { "type": "string", "minLength": 1 },
+        "difference": { "type": "string", "minLength": 1 },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "separate_lane_required": { "type": "boolean" }
+      }
+    },
+    "dailySequenceEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ordinal", "common_name", "reflection", "ritual_requirement", "source_ids"],
+      "properties": {
+        "ordinal": { "type": "integer", "minimum": 1 },
+        "common_name": { "type": "string", "minLength": 1 },
+        "reflection": { "type": "string", "minLength": 1 },
+        "ritual_requirement": { "const": false },
+        "source_ids": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "calendar_status": { "enum": ["resolved_for_bounded_2026_context", "partially_resolved_distinct_lanes", "editorial_sequence_only"] },
+        "calendar_note": { "type": "string", "minLength": 1 }
+      }
+    },
+    "localizedContent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["language_code", "title", "short_answer", "significance", "origin_narratives", "typical_practices", "procedures", "variants", "safety_and_boundaries"],
+      "properties": {
+        "language_code": { "enum": ["en", "hi"] },
+        "observance_slugs": { "$ref": "#/$defs/nonEmptyStringArray" },
+        "title": { "type": "string", "minLength": 1 },
+        "short_answer": { "type": "string", "minLength": 1 },
+        "significance": { "$ref": "#/$defs/sourcedText" },
+        "origin_narratives": { "type": "array", "items": { "$ref": "#/$defs/originNarrative" } },
+        "typical_practices": { "type": "array", "items": { "$ref": "#/$defs/typicalPractice" } },
+        "procedures": { "type": "array", "items": { "$ref": "#/$defs/procedure" } },
+        "variants": { "type": "array", "items": { "$ref": "#/$defs/variant" } },
+        "daily_sequence": { "type": "array", "items": { "$ref": "#/$defs/dailySequenceEntry" } },
+        "safety_and_boundaries": { "$ref": "#/$defs/nonEmptyStringArray" }
+      }
+    }
+  }
+}

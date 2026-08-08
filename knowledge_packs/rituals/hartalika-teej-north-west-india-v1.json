@@ -1,0 +1,229 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-hartalika-teej-north-west-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "hartalika-teej",
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "delhi_2026_calendar_fixture_required": true,
+    "family_and_regional_practice_overrides_generic_sequence": true,
+    "gowri_habba_and_other_teej_festivals_remain_separate": true,
+    "fasting_food_health_and_formal_puja_guidance_excluded": true
+  },
+  "sources": [
+    {
+      "source_id": "devam-hartalika-calendar-fixture",
+      "title": "Bounded Delhi Hartalika Teej calendar fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_evidence",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "bef1772cbb368da2fa712740598d1881b98ffc1b6d8c4a99cfc93e02fa3420a3",
+      "evidence_role": "delhi_2026_bhadrapada_shukla_tritiya_date_lane_only"
+    },
+    {
+      "source_id": "nirnayasindhu-1865-hartalika-decision",
+      "title": "Nirnayasindhu Hartalika-vrata decision context",
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "url": null,
+      "source_class": "historical_rule_context",
+      "rights_lane": "reference_only",
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "evidence_role": "historical_later_day_rule_not_modern_household_procedure"
+    },
+    {
+      "source_id": "drikpanchang-hartalika-delhi-2026",
+      "title": "Hartalika Teej date and time for Delhi, 2026",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/teej/hartalika-teej-date-time.html?geoname-id=1273294&year=2026",
+      "source_class": "current_practitioner_calendar_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/teej/hartalika-teej-date-time.html?geoname-id=1273294&year=2026",
+        "response_bytes": 66646,
+        "response_sha256": "90f7b062dcd887fb0eb0c2922bef3ae281e4cf378ec5f680c4f3bc0c69a915ae",
+        "strict_utf8": true
+      },
+      "evidence_role": "current_identity_date_and_practice_context_not_product_text"
+    },
+    {
+      "source_id": "utsav-hartalika-teej-rajasthan",
+      "title": "Hartalika Teej in Rajasthan - When Devotion Meets Celebration",
+      "publisher": "Utsav, Ministry of Tourism, Government of India",
+      "url": "https://utsav.gov.in/public/view-event/hartalika-teej-2025-1",
+      "source_class": "official_regional_living_practice_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://utsav.gov.in/public/view-event/hartalika-teej-2025-1",
+        "response_bytes": 34611,
+        "response_sha256": "add34db6cd0445fcf4538f929f19b6b33ea767b6a22022546b9159d88dff6b30",
+        "strict_utf8": true
+      },
+      "evidence_role": "rajasthan_parvati_shiva_story_prayer_song_katha_temple_and_gathering_context"
+    },
+    {
+      "source_id": "incredible-india-teej",
+      "title": "Teej: Celebrating love, devotion, and monsoons",
+      "publisher": "Incredible India, Ministry of Tourism",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/teej",
+      "source_class": "official_national_cultural_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/teej",
+        "response_bytes": 528363,
+        "response_sha256": "640d149c90f67f7d8ae29a9c935ed2025dc701572dc32434f1a1223865b486b4",
+        "strict_utf8": true
+      },
+      "evidence_role": "parvati_shiva_devotion_song_dance_and_regional_celebration_context"
+    },
+    {
+      "source_id": "haryana-art-culture-teej",
+      "title": "Teej Festival",
+      "publisher": "Art and Cultural Affairs Department, Haryana",
+      "url": "https://artandculturalaffairshry.gov.in/teej-festival/",
+      "source_class": "official_state_regional_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://artandculturalaffairshry.gov.in/teej-festival/",
+        "response_bytes": 94379,
+        "response_sha256": "5d77d98ef15cf2d0f37be6bc5855e9a8c10ec20085b18743db7a46494c51a5e0",
+        "strict_utf8": true
+      },
+      "evidence_role": "haryana_teej_song_swing_dance_family_and_regional_difference_context"
+    },
+    {
+      "source_id": "devam-hartalika-safety-boundary",
+      "title": "Devam Hartalika Teej internal-beta safety and attribution boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary",
+      "rights_lane": "derivative_allowed",
+      "evidence_role": "excludes_fast_health_formal_puja_gender_eligibility_material_requirements_and_outcome_promises"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "hartalika-teej-north-west-india-en-v1",
+      "language_code": "en",
+      "title": "Hartalika Teej at home or with community",
+      "summary": "A bounded North/West India companion for Parvati-Shiva remembrance, a family-known Teej story or song, prayer, mutual respect, and care without inventing a fast or formal puja.",
+      "family_practice_note": "Ask which Teej and regional family tradition applies. Keep any established fast, katha, sankalpa, puja, temple programme, adornment, food, or close under the family, elder, practitioner, or temple that actually follows it. Gowri Habba and other Teej festivals are separate.",
+      "context_prompts": [
+        "Which city, region, and family or sampradaya Hartalika tradition applies?",
+        "Does your family already use a Teej katha, song, prayer, image, temple, or community programme?",
+        "Are you seeking a simple non-fasting home form or help participating in an established observance?",
+        "Is any elder, practitioner, or temple directing fasting, formal puja, or the close?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "10-minute remembrance",
+          "estimated_minutes": 10,
+          "materials": [{ "item": "No material required", "substitutions": ["A family-known image or text", "A safe digital image", "Silent remembrance"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "Confirm that the North/West India Hartalika lane applies; do not substitute Hariyali Teej, Kajari Teej, or Gowri Habba.", "why": "Teej names, calendars, and practices differ by region.", "optional": false, "source_ids": ["devam-hartalika-calendar-fixture", "haryana-art-culture-teej", "devam-hartalika-safety-boundary"] },
+            { "ordinal": 2, "instruction": "Remember Parvati's steadfast resolve and the Shiva-Parvati relationship through a family-known story, brief prayer, or silence.", "why": "The living sources consistently connect Teej with Parvati, Shiva, devotion, and remembrance.", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej"] },
+            { "ordinal": 3, "instruction": "Name one act of mutual respect, agency, patience, or family care that you can practice today.", "why": "This makes the remembrance actionable without promising a marital or material outcome.", "optional": false, "source_ids": ["incredible-india-teej", "devam-hartalika-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "30-minute family form",
+          "estimated_minutes": 30,
+          "materials": [{ "item": "Family-known story, song, prayer, or image", "substitutions": ["An identified cultural account", "A family member's recollection", "A material-free spoken reflection"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "Settle together and identify which regional Hartalika practice your family is following.", "why": "The guide should strengthen attribution rather than flatten regional traditions.", "optional": false, "source_ids": ["devam-hartalika-calendar-fixture", "haryana-art-culture-teej"] },
+            { "ordinal": 2, "instruction": "Read or retell one family-known Parvati-Shiva account, clearly naming the source or person from whom it comes.", "why": "Attribution keeps a living story distinct from a universal scripture claim.", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej"] },
+            { "ordinal": 3, "instruction": "Sing or listen to one familiar Teej song, or use a short prayer or silence when song is not part of your practice.", "why": "Official cultural sources document song and prayer, while the substitution keeps the form accessible.", "optional": true, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej", "haryana-art-culture-teej"] },
+            { "ordinal": 4, "instruction": "Each participant may choose one concrete act of respect, support, reconciliation, or shared responsibility.", "why": "The observance becomes useful without restricting participation or guaranteeing marriage, prosperity, or family outcomes.", "optional": false, "source_ids": ["devam-hartalika-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "60-minute attributable participation",
+          "estimated_minutes": 60,
+          "materials": [{ "item": "Established family, temple, or community programme", "substitutions": ["Official cultural programme", "Family-led gathering", "The standard home form"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "Choose a family, temple, or community programme that explicitly identifies its regional Hartalika tradition and current practical directions.", "why": "Formal and public practices need a real local authority.", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "devam-hartalika-safety-boundary"] },
+            { "ordinal": 2, "instruction": "Participate in its story, song, prayer, or gathering while keeping unfamiliar fasting, formal puja, offerings, and timing under that programme's qualified direction.", "why": "This supports living participation without turning descriptive evidence into a universal vidhi.", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej", "haryana-art-culture-teej"] },
+            { "ordinal": 3, "instruction": "Record the name of the tradition, place, source, and any family variation you actually observed.", "why": "A compact provenance note helps Devam learn without erasing differences.", "optional": true, "source_ids": ["devam-hartalika-safety-boundary"] },
+            { "ordinal": 4, "instruction": "Close with one shared act of care or responsibility rather than a promised spiritual, marital, or material result.", "why": "The action remains meaningful and honest about the evidence boundary.", "optional": false, "source_ids": ["devam-hartalika-safety-boundary"] }
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "hartalika-teej-north-west-india-hi-v1",
+      "language_code": "hi",
+      "title": "घर या समुदाय में हरतालिका तीज",
+      "summary": "पार्वती-शिव स्मरण, परिवार-परिचित तीज कथा या गीत, प्रार्थना, परस्पर सम्मान और देखभाल का सीमित उत्तर/पश्चिम भारतीय रूप—बिना उपवास या औपचारिक पूजा गढ़े।",
+      "family_practice_note": "पहले पूछें कि कौन-सी तीज और क्षेत्रीय पारिवारिक परम्परा लागू है। परिवार में स्थापित उपवास, कथा, संकल्प, पूजा, मंदिर-कार्यक्रम, श्रृंगार, भोजन या समापन उसी परिवार, बुज़ुर्ग, साधक या मंदिर के निर्देशन में रखें। गौरी हब्बा और दूसरी तीज अलग हैं।",
+      "context_prompts": [
+        "कौन-सा शहर, क्षेत्र और पारिवारिक या सम्प्रदायिक हरतालिका क्रम लागू है?",
+        "क्या परिवार में तीज कथा, गीत, प्रार्थना, चित्र, मंदिर या सामुदायिक कार्यक्रम पहले से परिचित है?",
+        "आप सरल बिना-उपवास घरेलू रूप चाहते हैं या स्थापित अनुष्ठान में भाग लेने की सहायता?",
+        "क्या कोई बुज़ुर्ग, साधक या मंदिर उपवास, औपचारिक पूजा या समापन निर्देशित कर रहा है?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "10 मिनट का स्मरण",
+          "estimated_minutes": 10,
+          "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["परिवार-परिचित चित्र या ग्रन्थ", "सुरक्षित डिजिटल चित्र", "मौन स्मरण"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "पक्का करें कि उत्तर/पश्चिम भारत की हरतालिका परम्परा लागू है; हरियाली तीज, कजरी तीज या गौरी हब्बा को इसका विकल्प न मानें।", "why": "तीज के नाम, पंचांग और प्रथाएँ क्षेत्र के अनुसार बदलते हैं।", "optional": false, "source_ids": ["devam-hartalika-calendar-fixture", "haryana-art-culture-teej", "devam-hartalika-safety-boundary"] },
+            { "ordinal": 2, "instruction": "परिवार-परिचित कथा, छोटी प्रार्थना या मौन से पार्वती के दृढ़ संकल्प और शिव-पार्वती सम्बन्ध का स्मरण करें।", "why": "जीवित स्रोत तीज को पार्वती, शिव, भक्ति और स्मरण से जोड़ते हैं।", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej"] },
+            { "ordinal": 3, "instruction": "परस्पर सम्मान, स्वायत्तता, धैर्य या परिवार की देखभाल का एक काम चुनें।", "why": "इससे वैवाहिक या भौतिक फल का वादा किए बिना स्मरण आचरण बनता है।", "optional": false, "source_ids": ["incredible-india-teej", "devam-hartalika-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "30 मिनट का पारिवारिक रूप",
+          "estimated_minutes": 30,
+          "materials": [{ "item": "परिवार-परिचित कथा, गीत, प्रार्थना या चित्र", "substitutions": ["पहचाना हुआ सांस्कृतिक विवरण", "परिवार के सदस्य की स्मृति", "बिना सामग्री बोला गया चिंतन"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "साथ बैठकर स्पष्ट करें कि परिवार किस क्षेत्रीय हरतालिका परम्परा का पालन कर रहा है।", "why": "मार्गदर्शिका क्षेत्रीय परम्पराएँ मिटाने के बजाय उनका स्रोत स्पष्ट करे।", "optional": false, "source_ids": ["devam-hartalika-calendar-fixture", "haryana-art-culture-teej"] },
+            { "ordinal": 2, "instruction": "परिवार-परिचित पार्वती-शिव कथा पढ़ें या सुनाएँ और उसका ग्रन्थ या बताने वाले व्यक्ति का नाम लें।", "why": "स्रोत बताने से जीवित कथा सार्वभौमिक शास्त्रीय दावा नहीं बनती।", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej"] },
+            { "ordinal": 3, "instruction": "एक परिचित तीज गीत गाएँ या सुनें; गीत परम्परा में न हो तो छोटी प्रार्थना या मौन रखें।", "why": "आधिकारिक सांस्कृतिक स्रोत गीत और प्रार्थना दर्ज करते हैं, और विकल्प रूप को सुलभ रखता है।", "optional": true, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej", "haryana-art-culture-teej"] },
+            { "ordinal": 4, "instruction": "हर सहभागी सम्मान, सहयोग, मेल-मिलाप या साझा जिम्मेदारी का एक ठोस काम चुन सकता है।", "why": "इससे भागीदारी सीमित या विवाह, समृद्धि और परिवार का फल गारंटी नहीं होता।", "optional": false, "source_ids": ["devam-hartalika-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "60 मिनट की स्रोत-स्पष्ट भागीदारी",
+          "estimated_minutes": 60,
+          "materials": [{ "item": "स्थापित परिवार, मंदिर या सामुदायिक कार्यक्रम", "substitutions": ["आधिकारिक सांस्कृतिक कार्यक्रम", "परिवार-नेतृत्व सभा", "मानक घरेलू रूप"], "optional": true }],
+          "steps": [
+            { "ordinal": 1, "instruction": "ऐसा परिवार, मंदिर या सामुदायिक कार्यक्रम चुनें जो अपनी क्षेत्रीय हरतालिका परम्परा और वर्तमान निर्देश साफ बताए।", "why": "औपचारिक और सार्वजनिक प्रथाओं को वास्तविक स्थानीय अधिकारी चाहिए।", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "devam-hartalika-safety-boundary"] },
+            { "ordinal": 2, "instruction": "उसकी कथा, गीत, प्रार्थना या सभा में भाग लें और अपरिचित उपवास, औपचारिक पूजा, अर्पण व समय उसी कार्यक्रम के योग्य निर्देशन में रखें।", "why": "इससे वर्णनात्मक प्रमाण को सार्वभौमिक विधि बनाए बिना जीवित भागीदारी सम्भव है।", "optional": false, "source_ids": ["utsav-hartalika-teej-rajasthan", "incredible-india-teej", "haryana-art-culture-teej"] },
+            { "ordinal": 3, "instruction": "जिस परम्परा, स्थान, स्रोत और पारिवारिक भिन्नता को सच में देखा उसका नाम लिखें।", "why": "संक्षिप्त स्रोत-टिप्पणी भिन्नताएँ मिटाए बिना देवम को सीखने देती है।", "optional": true, "source_ids": ["devam-hartalika-safety-boundary"] },
+            { "ordinal": 4, "instruction": "आध्यात्मिक, वैवाहिक या भौतिक फल के वादे के बजाय देखभाल या जिम्मेदारी के एक साझा काम से समापन करें।", "why": "कर्म अर्थपूर्ण और प्रमाण-सीमा के प्रति ईमानदार रहता है।", "optional": false, "source_ids": ["devam-hartalika-safety-boundary"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "parvati_shiva_remembrance_story_song_prayer_and_service_supported": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "regional_and_family_attribution_preserved": true,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "food_dietary_or_medical_guidance_given": false,
+    "formal_sankalpa_katha_puja_mantra_offering_or_close_prescribed": false,
+    "women_only_or_married_household_only_participation_universalized": false,
+    "clothing_jewellery_mehendi_swing_gift_sweet_flower_or_purchase_required": false,
+    "marriage_spouse_longevity_progeny_family_prosperity_or_other_outcome_guaranteed": false,
+    "gowri_habba_or_other_teej_festivals_merged": false,
+    "all_north_west_nepal_and_diaspora_variants_complete": false
+  }
+}

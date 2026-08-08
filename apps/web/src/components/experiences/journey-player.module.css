@@ -1,0 +1,93 @@
+.shell { min-height: 100svh; position: relative; overflow: hidden; color: #eee5d6; background: #080b17; --accent: #d3ac64; --glow: rgba(196, 118, 49, .22); }
+.shell[data-tone="moon"] { --accent: #c7b277; --glow: rgba(91, 103, 160, .25); }
+.shell[data-tone="rose"] { --accent: #cf8b85; --glow: rgba(145, 55, 70, .26); }
+.shell[data-tone="gold"] { --accent: #e2b45d; --glow: rgba(190, 119, 26, .28); }
+.atmosphere { position: fixed; inset: 0; pointer-events: none; background: radial-gradient(circle at 77% 14%, var(--glow), transparent 31%), radial-gradient(circle at 18% 65%, rgba(63, 72, 132, .15), transparent 34%), radial-gradient(circle, rgba(255,255,255,.65) 0 1px, transparent 1.5px); background-size: auto, auto, 113px 113px; opacity: .85; }
+.header { position: relative; z-index: 2; height: 72px; padding: 0 clamp(20px, 5vw, 70px); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(236, 216, 179, .1); }
+.brand { display: flex; align-items: center; gap: 10px; color: #efe3cf; font-family: Georgia, serif; font-size: 20px; text-decoration: none; }
+.brand img { width: 35px; height: 35px; object-fit: contain; }
+.header nav { display: flex; gap: 18px; }
+.header nav a { color: #92939b; font-size: 10px; text-decoration: none; }
+.intro { position: relative; z-index: 1; width: min(1120px, calc(100% - 40px)); margin: clamp(42px, 7vh, 78px) auto 34px; display: flex; justify-content: space-between; align-items: end; gap: 24px; }
+.intro p, .eyebrow { margin: 0 0 10px; color: var(--accent); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
+.intro h1 { margin: 0; max-width: 760px; font-family: Georgia, serif; font-size: clamp(38px, 6vw, 68px); font-weight: 400; line-height: 1; letter-spacing: -.035em; }
+.devanagari { display: block; margin-top: 9px; color: #817d7d; font-family: Georgia, serif; font-size: 20px; }
+.progressCard { min-width: 150px; padding: 16px; border: 1px solid rgba(233, 211, 171, .12); border-radius: 14px; background: rgba(255,255,255,.035); }
+.progressCard strong, .progressCard span { display: block; }
+.progressCard strong { color: var(--accent); font-family: Georgia, serif; font-size: 25px; }
+.progressCard span { color: #777985; font-size: 9px; }
+.progressCard div, .challengeProgress { height: 3px; margin-top: 12px; overflow: hidden; border-radius: 10px; background: rgba(255,255,255,.08); }
+.progressCard i, .challengeProgress i { display: block; height: 100%; background: var(--accent); transition: width .25s ease; }
+.challengeProgress i { background: #cba765; }
+.player { position: relative; z-index: 1; width: min(1120px, calc(100% - 40px)); margin: 0 auto; display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.4fr); gap: 18px; }
+.path { display: grid; align-content: start; gap: 7px; }
+.path button { width: 100%; border: 1px solid transparent; border-radius: 13px; padding: 11px; display: flex; align-items: center; gap: 11px; text-align: left; color: #8d8e97; background: transparent; cursor: pointer; }
+.path button > span { width: 31px; height: 31px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid rgba(229, 207, 166, .14); border-radius: 50%; color: #777985; font-size: 8px; }
+.path button div { display: grid; gap: 2px; }
+.path button small { color: #676a76; font-size: 7px; text-transform: uppercase; letter-spacing: .1em; }
+.path button strong { font-family: Georgia, serif; font-size: 13px; font-weight: 400; }
+.path .activeStop { border-color: rgba(226, 200, 151, .18); color: #e6daca; background: rgba(255,255,255,.045); }
+.path .activeStop > span { color: #201a12; border-color: var(--accent); background: var(--accent); }
+.path .exploredStop > span { color: var(--accent); border-color: var(--accent); }
+.stopCard { min-height: 460px; position: relative; border: 1px solid rgba(231, 209, 169, .13); border-radius: 22px; padding: clamp(24px, 5vw, 48px); background: linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.025)); box-shadow: 0 30px 80px rgba(0,0,0,.23); }
+.stopOrdinal { position: absolute; top: 25px; right: 30px; color: rgba(255,255,255,.08); font-family: Georgia, serif; font-size: 70px; }
+.stopCard h2 { position: relative; margin: 0; font-family: Georgia, serif; font-size: clamp(34px, 5vw, 56px); font-weight: 400; }
+.summary { max-width: 640px; color: #c4beb5; font-family: Georgia, serif; font-size: 17px; line-height: 1.65; }
+.stopCard blockquote { margin: 24px 0; padding: 18px 20px; border-left: 2px solid var(--accent); color: #ddd2c2; background: rgba(0,0,0,.15); font-family: Georgia, serif; font-size: 16px; line-height: 1.75; white-space: pre-line; }
+.feature { margin-top: 24px; padding: 18px; border: 1px solid rgba(226, 200, 151, .16); border-radius: 16px; background: rgba(211, 172, 100, .055); }
+.feature > small { color: var(--accent); font-size: 8px; letter-spacing: .13em; text-transform: uppercase; }
+.feature h3 { margin: 7px 0; color: #e5d9c6; font-family: Georgia, serif; font-size: 22px; font-weight: 400; }
+.feature p, .feature strong { display: block; color: #a7a199; font-size: 10px; line-height: 1.6; }
+.feature strong { margin-top: 10px; color: #d6cab8; font-weight: 500; }
+.feature details { margin-top: 13px; }
+.feature details summary, .feature > a { color: var(--accent); cursor: pointer; font-size: 9px; }
+.feature details div { margin-top: 9px; display: grid; gap: 3px; }
+.feature details span { color: #898a92; font-size: 9px; }
+.feature details code { overflow-wrap: anywhere; color: #656875; font-size: 8px; }
+.feature > a { display: inline-block; margin-top: 13px; }
+.sourceDetails { margin-top: 24px; border-top: 1px solid rgba(230, 209, 171, .1); padding-top: 14px; }
+.sourceDetails summary { color: var(--accent); cursor: pointer; font-size: 9px; }
+.sourceDetails div { margin-top: 12px; display: grid; gap: 5px; }
+.sourceDetails strong { color: #d6cbb9; font-size: 10px; }
+.sourceDetails span, .sourceDetails small { color: #777985; font-size: 9px; }
+.sourceDetails code { overflow-wrap: anywhere; color: #656875; font-size: 8px; }
+.continueButton { margin-top: 24px; border: 0; border-radius: 999px; padding: 13px 18px; color: #201a13; background: var(--accent); cursor: pointer; font-size: 10px; font-weight: 600; }
+.completion, .boundary { position: relative; z-index: 1; width: min(1120px, calc(100% - 40px)); margin: 18px auto 0; border: 1px solid rgba(229, 206, 163, .12); border-radius: 17px; padding: 22px; background: rgba(255,255,255,.035); }
+.completion span, .boundary strong { color: var(--accent); font-size: 8px; letter-spacing: .13em; text-transform: uppercase; }
+.completion h2 { margin: 8px 0; font-family: Georgia, serif; font-weight: 400; }
+.completion p, .boundary p { margin: 0; color: #898a92; font-size: 10px; line-height: 1.6; }
+.completion a { display: inline-block; margin-top: 13px; color: var(--accent); font-size: 9px; }
+.boundary { margin-bottom: 60px; }
+.boundary p { margin-top: 7px; max-width: 900px; }
+.challengeGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.challengeGrid article { border: 1px solid rgba(231, 209, 169, .12); border-radius: 18px; padding: 22px; background: rgba(255,255,255,.035); }
+.challengeTop { display: flex; justify-content: space-between; color: #8f9099; font-size: 8px; text-transform: uppercase; letter-spacing: .1em; }
+.challengeTop strong { color: #cba765; }
+.challengeGrid h2 { min-height: 56px; margin: 14px 0 8px; font-family: Georgia, serif; font-size: 23px; font-weight: 400; }
+.challengeGrid p { min-height: 48px; margin: 0; color: #8f9098; font-size: 10px; line-height: 1.55; }
+.challengeGrid small { display: block; min-height: 25px; margin-top: 10px; color: #676a76; font-size: 8px; }
+.challengeGrid a { display: inline-block; margin-top: 14px; color: #cba765; font-size: 10px; }
+
+@media (max-width: 800px) {
+  .intro { align-items: start; flex-direction: column; }
+  .progressCard { width: 100%; box-sizing: border-box; }
+  .player { grid-template-columns: 1fr; }
+  .path { grid-template-columns: repeat(auto-fit, minmax(42px, 1fr)); }
+  .path button { justify-content: center; padding: 6px; }
+  .path button div { display: none; }
+  .stopCard { min-height: 0; }
+  .challengeGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .header { height: 64px; padding: 0 16px; }
+  .header nav { gap: 10px; }
+  .header nav a { font-size: 8px; }
+  .intro, .player, .completion, .boundary { width: calc(100% - 28px); }
+  .intro { margin-top: 38px; }
+  .intro h1 { font-size: 40px; }
+  .stopCard { border-radius: 18px; padding: 22px; }
+  .stopOrdinal { font-size: 48px; top: 18px; right: 20px; }
+  .summary { font-size: 15px; }
+  .stopCard blockquote { font-size: 14px; }
+}

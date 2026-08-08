@@ -1,0 +1,63 @@
+{
+  "base_pilot": {
+    "bytes": 42288,
+    "pair_id": "moral-04",
+    "path": "apps/web/evaluation/sarthi-answer-pilot-v0.1.json",
+    "sha256": "75c9b2cf69f7972fb2be890058cce026235e518243d91f4517994b774d86b74c"
+  },
+  "blinded_run": {
+    "human_blinded_review_required": true,
+    "paid_or_external_model_calls_made": false,
+    "promotion_claim_allowed": false,
+    "required_arms": [
+      "grounded_rag",
+      "prompt_only_guidance",
+      "material_context_and_typed_coverage",
+      "thin_governor"
+    ],
+    "same_evidence_bytes_required": true,
+    "same_model_required": true,
+    "status": "not_run"
+  },
+  "candidate_contract": {
+    "variant_a": {
+      "expected_citation_ordinals": [],
+      "expected_runtime_mode": "context_clarification",
+      "required_boundary": "Sarthi asks whether essential needs, dependents, near-term commitments and an emergency margin are secure, and never prescribes a fixed percentage.",
+      "scenario_id": "moral-04-a"
+    },
+    "variant_b": {
+      "expected_citation_ordinals": [
+        554,
+        555,
+        556,
+        620
+      ],
+      "expected_runtime_mode": "reviewed_personal_guidance",
+      "required_boundary": "With essentials secured and genuine surplus explicit, Sarthi offers proportional monetary, in-kind or service options while preserving purpose, recipient verification, sustainability and user choice.",
+      "scenario_id": "moral-04-b"
+    }
+  },
+  "claim_boundary": "This supplement proves source fixity, decision-changing essentials and surplus context, proportional options and deterministic mode separation. Essentials-first is Devam's affected-party product boundary, not a translation of the cited verses. The supplement does not provide financial advice, a fixed percentage, promised merit, or artificial-wisdom proof.",
+  "contract": "DEVAM_SARTHI_GIVING_GUIDANCE_PILOT_SUPPLEMENT_V0_1",
+  "evidence_bundle": {
+    "bytes": 10641,
+    "path": "knowledge_packs/wisdom/proportional-giving-household-v1.json",
+    "private_commentary_quotation_allowed": false,
+    "review_status": "internal_beta_reviewed",
+    "sha256": "3974435abeb3b03a6b434447ba07b19f1387603b19f4f4c2bb9ac949340e69f2",
+    "source_payload_duplicated": false
+  },
+  "purpose": "Bind the reviewed proportional-giving bundle and deterministic candidate behaviour to moral-04 in the frozen 64-scenario pilot without mutating that fixture or claiming completed answer-quality evaluation.",
+  "research_manifests": [
+    {
+      "path": "research/sarthi-artificial-wisdom/ARTIFACT_MANIFEST.sha256",
+      "sha256": "d04f232b09ae7a27f4ff7ee50ff36db1a3e2890b13f2b37876e87d96355e96e0"
+    },
+    {
+      "path": "research/sarthi-artificial-wisdom/independent-foundations/FOUNDATIONAL_ARTIFACT_MANIFEST.sha256",
+      "sha256": "e42f6b586cde314f531f91d46928a8a43896f7a65ee423e594749ef9cd9fb594"
+    }
+  ],
+  "status": "deterministic_candidate_ready_same_model_and_blinded_review_not_run"
+}

@@ -1,0 +1,138 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-bengal-durga-puja-participation-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "bengal-durga-puja-campaign",
+  "scope": {
+    "region_codes": ["bengal"],
+    "tradition_codes": ["shakta-bengal"],
+    "supported_pairs": [{ "region_code": "bengal", "tradition_code": "shakta-bengal" }],
+    "language_codes": ["en", "hi"],
+    "kolkata_2026_campaign_fixture_required": true,
+    "family_temple_pandal_and_sampradaya_practice_override_generic_form": true,
+    "belur_math_institutional_sequence_is_context_not_universal_household_procedure": true
+  },
+  "sources": [
+    {
+      "source_id": "devam-bengal-durga-puja-campaign-fixture",
+      "title": "Bounded Kolkata/Bengal Durga Puja 2026 campaign fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_campaign_calendar_evidence",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "c8bec184a2de4f245b1354e386daaa0fbdb9113dbc3b35e53fc335dd99b7204a"
+    },
+    {
+      "source_id": "incredible-india-durga-puja-2026",
+      "title": "Durga Puja: An incomparable celebration of devotion and art",
+      "publisher": "Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/durga-puja",
+      "source_class": "official_kolkata_peak_span_devotion_art_and_public_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/durga-puja", "response_bytes": 512560, "response_sha256": "bf370460363d541e1a6eaf98073a38555cdcfb398a930caeaae1a66072a06237", "strict_utf8": true }
+    },
+    {
+      "source_id": "west-bengal-aasan-durga-puja-context",
+      "title": "AASAN Puja Permission Portal 2026",
+      "publisher": "Government of West Bengal",
+      "url": "https://aasan.wb.gov.in/SiteController/",
+      "source_class": "official_state_community_artistry_unity_and_permission_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://aasan.wb.gov.in/SiteController/", "response_bytes": 33712, "response_sha256": "a4e79a8e61ba128d065de1a677c403329424416c87940ba9b198b334442f02d1", "strict_utf8": true }
+    },
+    {
+      "source_id": "belur-math-durga-puja-institutional-context",
+      "title": "Durga Puja at Belur Math",
+      "publisher": "Ramakrishna Math and Ramakrishna Mission, Belur Math",
+      "url": "https://belurmath.org/durga-puja-at-belur-math/",
+      "source_class": "official_sampradaya_history_meaning_and_institutional_sequence_not_universal_vidhi",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://belurmath.org/durga-puja-at-belur-math/", "response_bytes": 179835, "response_sha256": "2da792329adfb7ef4efdb06c2d14490a82c270c61314d297164090e9a4ee6ab8", "strict_utf8": true }
+    },
+    {
+      "source_id": "devam-bengal-durga-puja-safety-boundary",
+      "title": "Devam Bengal Durga Puja internal-beta participation and safety boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary",
+      "rights_lane": "derivative_allowed"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "bengal-durga-puja-participation-en-v1",
+      "language_code": "en",
+      "title": "Bengal Durga Puja remembrance and participation",
+      "summary": "Follow the bounded Kolkata/Bengal festival day, remember Durga through a source-labelled reading or familiar prayer, honour the people and arts that sustain the Puja, and participate safely under family, temple, or puja-committee direction. This is not a reconstructed priestly vidhi.",
+      "family_practice_note": "Tell Sarthi whether your context is a family puja, bonedi bari, community pandal, temple, Ramakrishna tradition, another Shakta lineage, or cultural visit. Use its known reading, prayer, anjali, bhog, fast, dress, music, and close. Belur Math's sequence is one institutional tradition, not a universal Bengali household procedure.",
+      "context_prompts": ["Is this a family puja, bonedi bari, community pandal, temple, Ramakrishna, other Shakta, or visitor context?", "Which family elder, priest, temple, puja committee, text, or calendar leads?", "Which campaign day are you observing: Panchami/Bilva Nimantran, Shashthi, Saptami, Ashtami, Navami, or Dashami?", "Do you need a material-free home reflection or safe participation in an established programme?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10-minute remembrance", "estimated_minutes": 10, "materials": [{ "item": "No material required", "substitutions": ["A familiar Devi prayer or song", "A short identified Devi or Durga passage", "A quiet reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm today's bounded Bengal campaign label and name the family, temple, pandal, or lineage context if known.", "why": "Calendar labels and procedures vary, and the Bengal lane must remain separate from generic Navaratri.", "optional": false, "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Remember Durga through one familiar prayer, song, or short source-labelled passage.", "why": "Source-labelled remembrance supports devotion without inventing liturgy.", "optional": false, "source_ids": ["belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Choose one act of courage, care, dignity, respect for women, community service, or support for the people whose work sustains the festival.", "why": "The official sources connect Durga Puja with community, artistry, unity, and respectful awareness without guaranteeing an outcome.", "optional": false, "source_ids": ["west-bengal-aasan-durga-puja-context", "belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30-minute sourced reflection", "estimated_minutes": 30, "materials": [{ "item": "One identified Devi, Durga, or Bengal Puja source", "substitutions": ["A family text", "A teacher-led explanation", "The material-free minimum form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Identify the exact text, family, temple, sampradaya, or public-puja source being used and today's campaign phase.", "why": "Attribution prevents one institution's account from becoming all Bengal practice.", "optional": false, "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read one coherent source-labelled passage or account, distinguishing scripture, institutional explanation, public heritage, and your own reflection.", "why": "Devam keeps evidence and synthesis separate.", "optional": false, "source_ids": ["incredible-india-durga-puja-2026", "belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Reflect on courage against harm, the dignity of women, shared responsibility, artistic labour, and community welcome without turning a symbolic theme into a promised spiritual result.", "why": "The reflection remains useful and attributable.", "optional": false, "source_ids": ["west-bengal-aasan-durga-puja-context", "belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Complete one safe act of care or service and close with a familiar family or temple prayer if available.", "why": "The close is actionable without reconstructing formal Puja.", "optional": false, "source_ids": ["devam-bengal-durga-puja-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "75-minute family, temple, or pandal-connected form", "estimated_minutes": 75, "materials": [{ "item": "Family, temple, puja-committee, or source-labelled programme", "substitutions": ["An official local notice", "A verified edition or teacher-led explanation", "The standard home form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm today's campaign label and the exact local authority, text, programme, accessibility needs, and family expectations.", "why": "A calendar fixture cannot supply live operations or personal ritual authority.", "optional": false, "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Learn one attributable part of the Puja's devotional, artistic, historical, or community meaning and credit the source and creators.", "why": "The festival is simultaneously devotional, artistic, and communal without every layer being a ritual instruction.", "optional": false, "source_ids": ["incredible-india-durga-puja-2026", "west-bengal-aasan-durga-puja-context", "belur-math-durga-puja-institutional-context"] },
+          { "ordinal": 3, "instruction": "If attending, follow the family's, temple's, or committee's current directions; verify access, transport, crowd, food, and safety conditions locally. Leave Bodhan, Navapatrika, Kumari Puja, Sandhi Puja, anjali, bhog, bali, homa, and visarjan to the responsible authority.", "why": "Belur Math's detailed institutional account proves these are led rites, not a generic app-generated home sequence.", "optional": false, "source_ids": ["belur-math-durga-puja-institutional-context", "west-bengal-aasan-durga-puja-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close with gratitude to the Divine Mother, family, artisans, organisers, workers, and community, plus one shared act of care; record the sources used.", "why": "The close is devotional and communal without promising merit, victory, protection, or another outcome.", "optional": false, "source_ids": ["incredible-india-durga-puja-2026", "west-bengal-aasan-durga-puja-context", "devam-bengal-durga-puja-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "bengal-durga-puja-participation-hi-v1",
+      "language_code": "hi",
+      "title": "बंगाल दुर्गा पूजा स्मरण और सहभागिता",
+      "summary": "कोलकाता/बंगाल के स्रोत-बद्ध पर्व-दिन के साथ दुर्गा का स्रोत-स्पष्ट पाठ या परिचित प्रार्थना से स्मरण, पूजा को सम्भव बनाने वाले लोगों और कलाओं का सम्मान, तथा परिवार, मंदिर या पूजा-समिति के अधीन सुरक्षित सहभागिता। यह पुनर्निर्मित पुरोहित-विधि नहीं है।",
+      "family_practice_note": "सार्थी को बताएं कि सन्दर्भ पारिवारिक पूजा, बोनेदी बाड़ी, सामुदायिक पंडाल, मंदिर, रामकृष्ण परम्परा, अन्य शाक्त परम्परा या सांस्कृतिक यात्रा है। उसी का परिचित पाठ, प्रार्थना, अंजलि, भोग, उपवास, वेश, संगीत और समापन रखें। बेलूर मठ का क्रम एक संस्थागत परम्परा है, सार्वभौमिक बंगाली घरेलू विधि नहीं।",
+      "context_prompts": ["यह पारिवारिक पूजा, बोनेदी बाड़ी, सामुदायिक पंडाल, मंदिर, रामकृष्ण, अन्य शाक्त या आगन्तुक सन्दर्भ है?", "कौन-सा बुज़ुर्ग, पुरोहित, मंदिर, पूजा-समिति, ग्रन्थ या पंचांग मार्गदर्शन करता है?", "आज पंचमी/बिल्व निमन्त्रण, षष्ठी, सप्तमी, अष्टमी, नवमी या दशमी में कौन-सा दिन है?", "आप सामग्री-रहित घरेलू चिंतन चाहते हैं या स्थापित कार्यक्रम में सुरक्षित सहभागिता?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10 मिनट का स्मरण", "estimated_minutes": 10, "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["परिचित देवी-प्रार्थना या गीत", "पहचाना छोटा देवी या दुर्गा-पाठ", "शांत चिंतन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "आज का स्रोत-बद्ध बंगाल पर्व-नाम और ज्ञात हो तो परिवार, मंदिर, पंडाल या परम्परा का सन्दर्भ पहचानें।", "why": "पंचांग-नाम और विधियाँ बदलती हैं; बंगाल की रेखा सामान्य नवरात्रि से अलग रहे।", "optional": false, "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 2, "instruction": "परिचित प्रार्थना, गीत या छोटे स्रोत-स्पष्ट पाठ से दुर्गा का स्मरण करें।", "why": "इससे पूजा-विधि गढ़े बिना भक्ति स्रोत-आधारित रहती है।", "optional": false, "source_ids": ["belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 3, "instruction": "साहस, देखभाल, गरिमा, स्त्रियों के सम्मान, समुदाय-सेवा या पर्व को सम्भव बनाने वाले लोगों के सहयोग का एक काम चुनें।", "why": "आधिकारिक स्रोत समुदाय, कला, एकता और सम्मान से जोड़ते हैं, फल की गारंटी से नहीं।", "optional": false, "source_ids": ["west-bengal-aasan-durga-puja-context", "belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "30 मिनट का स्रोत-स्पष्ट चिंतन", "estimated_minutes": 30, "materials": [{ "item": "एक पहचाना देवी, दुर्गा या बंगाल पूजा स्रोत", "substitutions": ["पारिवारिक ग्रन्थ", "गुरु-निर्देशित व्याख्या", "सामग्री-रहित न्यूनतम रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "लागू ग्रन्थ, परिवार, मंदिर, सम्प्रदाय या सार्वजनिक पूजा स्रोत और आज के पर्व-चरण का नाम लें।", "why": "स्रोत-स्पष्टता एक संस्था के विवरण को पूरे बंगाल की विधि बनने से रोकती है।", "optional": false, "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 2, "instruction": "एक पूरा स्रोत-स्पष्ट अंश पढ़ें और शास्त्र, संस्थागत व्याख्या, सार्वजनिक विरासत तथा अपना चिंतन अलग रखें।", "why": "देवम प्रमाण और संश्लेषण अलग रखता है।", "optional": false, "source_ids": ["incredible-india-durga-puja-2026", "belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 3, "instruction": "हानि के विरुद्ध साहस, स्त्रियों की गरिमा, साझा जिम्मेदारी, कलाकारों के श्रम और सामुदायिक स्वागत पर विचार करें; इसे गारंटीकृत आध्यात्मिक फल न बनाएं।", "why": "चिंतन उपयोगी और स्रोत-स्पष्ट रहता है।", "optional": false, "source_ids": ["west-bengal-aasan-durga-puja-context", "belur-math-durga-puja-institutional-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 4, "instruction": "देखभाल या सेवा का एक सुरक्षित काम करें और उपलब्ध हो तो परिचित पारिवारिक या मंदिर-प्रार्थना से समापन करें।", "why": "यह औपचारिक पूजा गढ़े बिना उपयोगी समापन है।", "optional": false, "source_ids": ["devam-bengal-durga-puja-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "75 मिनट का परिवार, मंदिर या पंडाल-संबद्ध रूप", "estimated_minutes": 75, "materials": [{ "item": "पारिवारिक, मंदिर, पूजा-समिति या स्रोत-स्पष्ट कार्यक्रम", "substitutions": ["आधिकारिक स्थानीय सूचना", "सत्यापित संस्करण या गुरु-व्याख्या", "मानक घरेलू रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "आज का पर्व-नाम, ठीक स्थानीय अधिकारी, ग्रन्थ, कार्यक्रम, सुगमता की जरूरत और परिवार की अपेक्षा जाँचें।", "why": "पंचांग-फिक्स्चर लाइव व्यवस्था या निजी अनुष्ठान-अधिकार नहीं देता।", "optional": false, "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 2, "instruction": "पूजा के भक्ति, कला, इतिहास या समुदाय में से एक स्रोत-स्पष्ट पक्ष को जानें और स्रोत तथा रचनाकारों को श्रेय दें।", "why": "हर सांस्कृतिक परत अनुष्ठानिक निर्देश नहीं होती।", "optional": false, "source_ids": ["incredible-india-durga-puja-2026", "west-bengal-aasan-durga-puja-context", "belur-math-durga-puja-institutional-context"] },
+          { "ordinal": 3, "instruction": "भाग लें तो परिवार, मंदिर या समिति के वर्तमान निर्देश मानें और प्रवेश, यात्रा, भीड़, भोजन तथा सुरक्षा स्थानीय रूप से जाँचें। बोधन, नवपत्रिका, कुमारी पूजा, सन्धि पूजा, अंजलि, भोग, बलि, होम और विसर्जन जिम्मेदार अधिकारी पर छोड़ें।", "why": "बेलूर मठ का विवरण सिद्ध करता है कि ये नेतृत्व वाली विधियाँ हैं, ऐप-निर्मित घरेलू क्रम नहीं।", "optional": false, "source_ids": ["belur-math-durga-puja-institutional-context", "west-bengal-aasan-durga-puja-context", "devam-bengal-durga-puja-safety-boundary"] },
+          { "ordinal": 4, "instruction": "दिव्य माता, परिवार, कलाकारों, आयोजकों, श्रमिकों और समुदाय के प्रति कृतज्ञता तथा देखभाल के एक साझा काम से समापन करें; स्रोत लिखें।", "why": "यह विजय, सुरक्षा, पुण्य या अन्य फल का वादा किए बिना भक्ति और समुदाय को जोड़ता है।", "optional": false, "source_ids": ["incredible-india-durga-puja-2026", "west-bengal-aasan-durga-puja-context", "devam-bengal-durga-puja-safety-boundary"] }
+        ] }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "six_day_campaign_participation_and_source_labelled_durga_remembrance_supported": true,
+    "community_artistry_workers_women_dignity_and_service_reflection_supported": true,
+    "material_free_and_non_fasting_home_form_supported": true,
+    "fast_food_dietary_or_medical_guidance_given": false,
+    "bodhan_adhivas_navapatrika_pranapratistha_shodashopachara_anjali_bhog_or_formal_puja_prescribed": false,
+    "kumari_puja_or_use_of_a_child_as_ritual_subject_prescribed": false,
+    "sandhi_puja_timing_or_priest_liturgy_prescribed": false,
+    "animal_or_symbolic_bali_homa_or_harm_instructed": false,
+    "sindoor_required_or_restricted_marital_status_practice_prescribed": false,
+    "immersion_procession_water_entry_or_environmental_operation_instructed": false,
+    "belur_math_sequence_universalized": false,
+    "live_event_access_transport_crowd_food_or_safety_claimed_current": false,
+    "victory_protection_merit_prosperity_or_other_outcome_guaranteed": false,
+    "north_west_navaratri_golu_garba_dashain_or_other_durga_traditions_merged": false,
+    "all_bengal_family_bonedi_bari_temple_pandal_and_shakta_variants_complete": false
+  }
+}

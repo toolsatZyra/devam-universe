@@ -1,0 +1,138 @@
+{
+  "contract": "DEVAM_SARTHI_REVIEWED_PERSONAL_GUIDANCE_V1",
+  "bundle_id": "personal-guidance-foundation-v1",
+  "review_status": "internal_beta_reviewed",
+  "languages": ["en", "hi"],
+  "scope": "A first bounded conversation route for consequential personal decisions, initially covering tension between family expectations and a user's career or life direction.",
+  "positive_boundary": "Sarthi may use these reviewed principles as reflective lenses after gathering material context. They do not determine the user's decision.",
+  "denials": {
+    "scripture_decides_personal_action": false,
+    "one_commentary_is_universal": false,
+    "family_obedience_is_assumed": false,
+    "individual_preference_is_automatically_decisive": false,
+    "financial_or_care_obligations_are_ignored": false,
+    "private_commentary_text_may_be_quoted": false,
+    "complete_bhagavadgita_tradition": false,
+    "professional_mental_health_legal_or_financial_advice": false
+  },
+  "sources": [
+    {
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "work_title": "Bhagavadgita with four named commentary layers",
+      "edition_title": "GRETIL TEI conversion dated 2020-07-31",
+      "source_object_id": "sha256:e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505",
+      "source_path": "source_vault/objects/sha256/e1/e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505",
+      "byte_count": 2056476,
+      "sha256": "e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505",
+      "rights_lane": "citation_only",
+      "rights_boundary": "CC BY-NC-SA 4.0 electronic carrier retained as private evidence; no exact commentary text is exposed by this bundle.",
+      "ingestion_plan": "ingestion/plans/bhagavadgita-gretil-four-commentaries-v1.json",
+      "ingestion_packet_sha256": "86eecb307effc8fb03c32888596f2b0c3538e325d41fa92c5281e9e9de3974f3"
+    },
+    {
+      "source_id": "gita-supersite-verse-identity",
+      "work_title": "Srimad Bhagavadgita",
+      "edition_title": "IIT Kanpur Gita Supersite verse pages",
+      "source_object_id": "external:gitasupersite",
+      "rights_lane": "citation_only",
+      "rights_boundary": "Used as an external verse-identity and comparison reference. Modern translations are not copied into this bundle.",
+      "urls": [
+        "https://www.gitasupersite.iitk.ac.in/srimad?etgb=1&field_chapter_value=18&field_nsutra_value=63&httyn=1&language=dv",
+        "https://www.gitasupersite.iitk.ac.in/srimad?etadi=1&etgb=1&etpurohit=1&etsiva=1&etssa=1&field_chapter_value=2&field_nsutra_value=47&language=dv",
+        "https://www.gitasupersite.iitk.ac.in/srimad?choose=1&etadi=1&etassa=1&etgb=1&etradi=1&etssa=1&field_chapter_value=17&field_nsutra_value=15&language=dv"
+      ]
+    },
+    {
+      "source_id": "project-gutenberg-song-celestial",
+      "work_title": "The Song Celestial",
+      "edition_title": "Sir Edwin Arnold's 1885 English poetic rendering",
+      "source_object_id": "sha256:85b22401a9d256179f9a2e407215eb516da9b8213f23c32e03d66709d839a9e0",
+      "source_path": "source_vault/objects/sha256/85/85b22401a9d256179f9a2e407215eb516da9b8213f23c32e03d66709d839a9e0",
+      "byte_count": 147501,
+      "sha256": "85b22401a9d256179f9a2e407215eb516da9b8213f23c32e03d66709d839a9e0",
+      "rights_lane": "citation_only",
+      "rights_boundary": "Project Gutenberg identifies the ebook as public domain in the USA. This bundle uses it only as a separately attributable historical English comparison, not as the governing interpretation.",
+      "url": "https://www.gutenberg.org/ebooks/2388"
+    }
+  ],
+  "principles": [
+    {
+      "principle_id": "deliberate-then-choose",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 620,
+      "literal_marker": "BhG 18.63",
+      "byte_start": 2021463,
+      "byte_end_exclusive": 2023820,
+      "line_start": 17475,
+      "line_end": 17491,
+      "span_sha256": "c4e9f638a76be55d5d04924f5407871866b8b88bed5ad494bdda8638ccff4042",
+      "en": "Reflect on the teaching and the whole situation before choosing; counsel should strengthen considered agency rather than replace it.",
+      "hi": "शिक्षा और पूरी परिस्थिति पर विचार करके चुनाव करें; मार्गदर्शन सोच-समझकर निर्णय लेने की क्षमता को मजबूत करे, उसकी जगह न ले।",
+      "application_boundary": "This is a lens for deliberation, not proof that every option is equally wise or harmless. Consequences and affected people still matter."
+    },
+    {
+      "principle_id": "responsible-action-without-outcome-control",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 76,
+      "literal_marker": "BhG 2.47",
+      "byte_start": 257535,
+      "byte_end_exclusive": 261861,
+      "line_start": 2567,
+      "line_end": 2590,
+      "span_sha256": "11f56b4dbf9faedf041458859e75b1c969491e10af01f7f2019a286128a9eb82",
+      "en": "Put attention on the responsible action available now without pretending to control every result; non-attachment is not an excuse for inaction.",
+      "hi": "अभी उपलब्ध जिम्मेदार कर्म पर ध्यान दें और हर परिणाम को नियंत्रित करने का भ्रम न रखें; अनासक्ति निष्क्रियता का बहाना नहीं है।",
+      "application_boundary": "This does not require indifference to outcomes. Planning, learning, dependants, and foreseeable harm remain relevant."
+    },
+    {
+      "principle_id": "steady-action",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 77,
+      "literal_marker": "BhG 2.48",
+      "byte_start": 261862,
+      "byte_end_exclusive": 264462,
+      "line_start": 2591,
+      "line_end": 2610,
+      "span_sha256": "9fb77eebb5c81a021d6dbdfea86cd6a9d2259c42faa8dc620cb8d355b135a318",
+      "en": "Try to act from steadiness rather than letting anticipated success or failure wholly govern the next step.",
+      "hi": "अगला कदम केवल सफलता या असफलता की आशंका से तय करने के बजाय यथासंभव स्थिर मन से कर्म करें।",
+      "application_boundary": "Steadiness does not mean suppressing emotion, tolerating abuse, or refusing to revise a bad plan."
+    },
+    {
+      "principle_id": "truthful-beneficial-non-harming-speech",
+      "source_id": "gretil-bhagavadgita-four-commentaries-tei",
+      "source_ordinal": 549,
+      "literal_marker": "BhG 17.15",
+      "byte_start": 1886257,
+      "byte_end_exclusive": 1887791,
+      "line_start": 15925,
+      "line_end": 15943,
+      "span_sha256": "344198b00aa33cf5651bc6bcc6fccceea06bcb72cefe3fdae8d3c9f6cad0bc24",
+      "en": "In a difficult conversation, aim for speech that is truthful, beneficial, and does not needlessly agitate or wound.",
+      "hi": "कठिन बातचीत में वाणी को सत्य, हितकारी और अनावश्यक रूप से व्याकुल या आहत न करने वाला रखने का प्रयास करें।",
+      "application_boundary": "Gentleness must not conceal material facts, danger, coercion, or abuse."
+    }
+  ],
+  "routes": [
+    {
+      "route_id": "career-family-tension",
+      "match_concepts": ["parent", "parents", "family", "career", "job", "work", "profession", "माता", "पिता", "परिवार", "करियर", "नौकरी", "काम"],
+      "required_context": ["the family's exact request", "the user's own leaning", "financial dependence or care obligations"],
+      "principle_ids": ["deliberate-then-choose", "responsible-action-without-outcome-control", "truthful-beneficial-non-harming-speech"],
+      "response_moves": {
+        "en": [
+          "Name the real constraint without treating it as the whole decision.",
+          "Separate what must be decided now from what can be tested reversibly.",
+          "Identify a responsible next action and a respectful conversation.",
+          "Return the final choice to the user after checking effects on dependants and safety."
+        ],
+        "hi": [
+          "वास्तविक बाधा को पहचानें, पर उसे पूरे निर्णय के बराबर न मानें।",
+          "जो अभी तय करना आवश्यक है उसे उस हिस्से से अलग करें जिसे छोटे और उलट सकने योग्य प्रयोग से परखा जा सकता है।",
+          "एक जिम्मेदार अगला कदम और सम्मानपूर्ण बातचीत तय करें।",
+          "आश्रित लोगों और सुरक्षा पर प्रभाव देखने के बाद अंतिम चुनाव उपयोगकर्ता के पास रहने दें।"
+        ]
+      }
+    }
+  ]
+}

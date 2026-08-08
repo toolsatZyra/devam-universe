@@ -1,0 +1,129 @@
+{
+  "contract": "DEVAM_GUJARATI_NEW_YEAR_BAPS_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-gujarati-new-year-ahmedabad-baps-2026-v1",
+  "scope": {
+    "reference_location": "Ahmedabad, Gujarat, India",
+    "geoname_id": 1279233,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-09", "2026-11-10"],
+    "supported_tradition_codes": ["swaminarayan-baps"],
+    "selected_civil_date": "2026-11-10",
+    "date_resolved_by_devam_rule": true,
+    "provider_published_muhurta_reproduced": false,
+    "universal_gujarat_or_hindu_new_year_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "baps-november-calendar-2026",
+      "provider": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/calendar/2026/November.aspx",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_sampradaya_date_tithi_annakut_and_bestu_varash_identity",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-06T23:37:20.8810265Z",
+        "status": 200,
+        "final_url": "https://www.baps.org/calendar/2026/November.aspx",
+        "response_bytes": 102837,
+        "response_sha256": "9b59012845c7557e162ced62b58643ddf6ce057cd6127d4650d550bf260b0649",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "november_10_2026": true,
+        "kartak_sud_padvo": true,
+        "annakut_and_bestu_varash": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "baps-festival-list-2026-new-year",
+      "provider": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/Calendar/2026/FestivalList.aspx",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_sampradaya_date_first_day_and_food_offering_identity",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-06T23:37:20.8810265Z",
+        "status": 200,
+        "final_url": "https://www.baps.org/Calendar/2026/FestivalList.aspx",
+        "response_bytes": 115443,
+        "response_sha256": "a592fc5405767c7ab3c6257f5c79b0c3a6d5ca635c21a996b714860facd0a3cb",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "november_10_kartak_sud_padvo": true,
+        "annakut_and_bestu_varash": true,
+        "food_varieties_offered_to_deities": true,
+        "first_day_of_hindu_new_year_literal": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "baps-nutan-varsh-new-year-annakut",
+      "provider": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/NutanVarsh/NewYearAnnakut.aspx",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_sampradaya_annakut_gratitude_vegetarian_offering_thal_and_aarti_context_not_household_vidhi",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-06T23:37:20.8810265Z",
+        "status": 200,
+        "final_url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/NutanVarsh/NewYearAnnakut.aspx",
+        "response_bytes": 101585,
+        "response_sha256": "8e6b01ad22afe6a8d5234b5b3ca3999183b30428027e7fe2998f564bffac5193",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "kartak_sud_one_new_year": true,
+        "annakut_mountain_of_food_identity": true,
+        "appreciation_and_gratitude": true,
+        "vegetarian_delicacies_offered": true,
+        "thal_and_aarti_present": true,
+        "complete_household_or_temple_procedure_present": false
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "akashvani-gujarati-new-year-context",
+      "provider": "Akashvani News",
+      "url": "https://newsonair.gov.in/gujarati-new-year-being-celebrated-today/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_public_broadcaster_general_gujarat_identity_and_living_practice_context_not_2026_date_authority",
+      "observed_fetch": {
+        "fetched_at_utc": "2026-08-06T23:37:20.8810265Z",
+        "status": 200,
+        "final_url": "https://newsonair.gov.in/gujarati-new-year-being-celebrated-today/",
+        "response_bytes": 70519,
+        "response_sha256": "99147e1312505f95158bc5a8869bd82d40484636e482de0b857776b31cfe50f4",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "bestu_varas_alias": true,
+        "first_day_of_kartik_vikram_samvat": true,
+        "temple_visits_and_blessings": true,
+        "home_cleaning_and_entrance_rangoli": true,
+        "greetings_and_sweets": true,
+        "business_puja_described_but_not_universalized": true
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "gujarati-new-year-baps",
+    "canonical_name": "Gujarati New Year / Bestu Varash / Annakut",
+    "target_tithi": "Kartika Shukla Pratipada",
+    "devam_rule": "select_the_candidate_on_which_kartika_shukla_pratipada_is_present_at_local_sunrise",
+    "selected_civil_date": "2026-11-10",
+    "official_baps_date_matches": true,
+    "bali_pratipada_govardhana_and_south_indian_balipadyami_remain_separate": true
+  },
+  "denials": {
+    "provider_published_muhurta_reproduced": false,
+    "formal_temple_annakut_or_aarti_procedure_included": false,
+    "large_food_array_required": false,
+    "business_account_book_puja_required": false,
+    "purchase_spending_or_new_clothes_required": false,
+    "wealth_or_success_guaranteed": false,
+    "all_gujarati_or_hindu_new_year_traditions_equivalent": false,
+    "bali_pratipada_govardhana_or_balipadyami_merged": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

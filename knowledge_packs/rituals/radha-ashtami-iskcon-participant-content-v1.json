@@ -1,0 +1,757 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "iskcon-india",
+        "tradition_code": "vaishnava-iskcon"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family follow ISKCON practice for Radha Ashtami?",
+      "Which ISKCON temple, teacher, song, reading, or programme is already familiar?",
+      "Do you want a simple home remembrance or help participating in the official temple programme?",
+      "Is your temple or family directing fasting, deity worship, offerings, or the close?"
+    ],
+    "region_codes": [
+      "iskcon-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "community",
+      "temple"
+    ],
+    "tradition_codes": [
+      "vaishnava-iskcon"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-radha-ashtami-iskcon-madhyahna-overlap-v1",
+    "freshness_note": "The Delhi 2026 date is bounded; every temple programme, fast close and public schedule must be confirmed with the current local ISKCON authority.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-radha-ashtami-iskcon-calendar-fixture",
+      "drikpanchang-radha-ashtami-delhi-iskcon-2026"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "radha-ashtami-iskcon-participant-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "iskcon-radharani-appearance-and-hladini",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026"
+          ],
+          "summary": "ISKCON Bangalore identifies the day as Srimati Radharani's appearance and describes her as Krishna's hladini-shakti or pleasure potency. Devam preserves this as the named institution's theological account, not a universal historical biography.",
+          "title": "Radharani's appearance and devotional identity",
+          "tradition_scope": "ISKCON Bangalore institutional teaching",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible ISKCON-aligned home remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-radha-ashtami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "10-minute remembrance",
+          "materials": [
+            {
+              "item": "No material required",
+              "required": false,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "An official ISKCON image or reading",
+                "A family-known song",
+                "Silent prayer"
+              ]
+            }
+          ],
+          "procedure_id": "radha-ashtami-iskcon-participant-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-radha-ashtami-iskcon-calendar-fixture",
+            "devam-radha-ashtami-safety-boundary",
+            "iskcon-bangalore-radhashtami-2026"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm that the ISKCON Radha Ashtami lane applies rather than assuming all Vaishnava or Smarta traditions are identical.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-radha-ashtami-iskcon-calendar-fixture",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "The calendar and practice evidence is explicitly ISKCON-bounded."
+            },
+            {
+              "instruction": "Remember Srimati Radharani's appearance day using a short prayer, identified ISKCON teaching, or family-known Vaishnava song.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "The official temple source identifies the day and documents teaching, prayer, kirtan, and songs."
+            },
+            {
+              "instruction": "Reflect on one way to make service less self-centred, then choose one practical act of care or seva.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "This makes the remembrance actionable without promising mercy, perfection, or another outcome."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Bounded family-known prayer, kirtan and service form",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-radha-ashtami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "30-minute attributable devotional form",
+          "materials": [
+            {
+              "item": "Official ISKCON reading, song, or programme",
+              "required": false,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "A family-known Vaishnava source",
+                "An official temple stream",
+                "The material-free minimum form"
+              ]
+            }
+          ],
+          "procedure_id": "radha-ashtami-iskcon-participant-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Name the ISKCON temple, teacher, text, or song guiding the observance.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "Attribution keeps sampradaya teaching distinct from universal theology."
+            },
+            {
+              "instruction": "Read or hear one short coherent teaching on Radharani, keeping the speaker, text, translation, and commentary visible.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "The meaning should remain connected to its source and interpretive lineage."
+            },
+            {
+              "instruction": "Use one familiar kirtan or song composed within the Vaishnava tradition, or substitute quiet prayer.",
+              "optional": true,
+              "ordinal": 3,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "The official source documents kirtan and acharya songs while allowing an accessible non-musical form."
+            },
+            {
+              "instruction": "Choose and complete one specific act of seva, kindness, or support without attaching a promised result.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "The devotional theme becomes lived conduct rather than an outcome claim."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Current local ISKCON temple programme participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-radha-ashtami-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "60-minute temple-connected participation",
+          "materials": [
+            {
+              "item": "Current official ISKCON temple programme or stream",
+              "required": false,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "Another user's own ISKCON temple programme",
+                "An official recording",
+                "The standard home form"
+              ]
+            }
+          ],
+          "procedure_id": "radha-ashtami-iskcon-participant-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "iskcon-bangalore-vaishnava-calendar-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Check the current programme of your own ISKCON temple; the Bangalore schedule is evidence, not a reusable local time.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "iskcon-bangalore-vaishnava-calendar-2026"
+              ],
+              "why": "Temple schedules and programmes are location-specific."
+            },
+            {
+              "instruction": "Join the temple's teaching, darshan, kirtan, song, or stream in the form it actually offers.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "This supports living participation under the institution that owns the programme."
+            },
+            {
+              "instruction": "Leave abhisheka, arati, homa, deity dressing, offerings, kalashas, flowers, and fasting to the temple or established family authority.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "iskcon-bangalore-vaishnava-calendar-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "Described temple rites are not converted into unsupervised home instructions."
+            },
+            {
+              "instruction": "Close with one concrete seva commitment and note the teacher, text, temple, or programme used.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "The practice remains actionable and attributable without a guaranteed devotional outcome."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "The official fast until noon is documented but never prescribed or treated as medical advice.",
+        "Abhisheka, arati, homa, deity dressing, kalasha, flower shower, bhoga and formal puja remain with the responsible temple or established family authority.",
+        "Do not copy Bangalore programme times to another temple or date; verify the current local institution.",
+        "Sponsorship, donations, purchases, new dress and chappan bhog are never required by this participant lane.",
+        "No action guarantees mercy, perfection, progress, protection, merit or another spiritual or worldly outcome."
+      ],
+      "short_answer": "A bounded ISKCON companion for Radharani's appearance day through attributable teaching, prayer or kirtan, reflection on selfless service, and official temple participation.",
+      "significance": {
+        "scope_note": "The meaning and practice are attributable to the named ISKCON institutional context.",
+        "source_ids": [
+          "iskcon-bangalore-radhashtami-2026",
+          "iskcon-bangalore-vaishnava-calendar-2026"
+        ],
+        "text": "In the ISKCON Bangalore tradition represented here, Radha Ashtami marks Srimati Radharani's appearance day and centres glorification, kirtan, prayer, teaching and devotional service. This participant lane does not universalize that theology or programme to every Gaudiya Vaishnava, Vaishnava, Smarta or family tradition."
+      },
+      "title": "ISKCON Radha Ashtami remembrance and participation",
+      "typical_practices": [
+        {
+          "description": "The official page describes fasting until noon, deity decoration, kirtan and songs, abhisheka, arati, flower shower, bhoga and a concluding temple procession. These are descriptive institutional practices, not unsupervised home instructions.",
+          "instructional": false,
+          "population_scope": "ISKCON Bangalore temple celebration",
+          "practice_id": "iskcon-bangalore-radhashtami-temple-programme",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "iskcon-bangalore-vaishnava-calendar-2026"
+          ]
+        },
+        {
+          "description": "A participant may use a familiar teaching, prayer, song, kirtan or service reflection at home, or join the current local ISKCON programme under that temple's direction.",
+          "instructional": false,
+          "population_scope": "ISKCON-aligned household or temple participant",
+          "practice_id": "iskcon-home-and-temple-participation",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Home prayer, song, reading and service reflection do not copy the temple's abhisheka, arati, homa, dressing, offering or programme schedule.",
+          "scope": "ISKCON-aligned home remembrance versus official temple programme",
+          "separate_lane_required": false,
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "variant_id": "home-remembrance-and-institutional-programme"
+        },
+        {
+          "difference": "Their calendars, theology, stories, fasts, songs, puja and closing forms require separately attributable evidence.",
+          "scope": "Other Gaudiya Vaishnava, Vaishnava, Smarta, regional and family traditions",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-radha-ashtami-iskcon-calendar-fixture",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "variant_id": "other-radha-ashtami-traditions"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "iskcon-radharani-appearance-and-hladini",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026"
+          ],
+          "summary": "ISKCON Bangalore इस दिन को श्रीमती राधारानी का प्राकट्य बताता है और उन्हें कृष्ण की ह्लादिनी-शक्ति कहता है। Devam इसे नामित संस्था की धर्म-दृष्टि रखता है, सार्वभौमिक ऐतिहासिक जीवनी नहीं।",
+          "title": "राधारानी का प्राकट्य और भक्ति-परिचय",
+          "tradition_scope": "ISKCON Bangalore संस्थागत शिक्षा",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible ISKCON-aligned home remembrance",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-radha-ashtami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "10 मिनट का स्मरण",
+          "materials": [
+            {
+              "item": "कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "आधिकारिक इस्कॉन चित्र या पाठ",
+                "परिवार-परिचित गीत",
+                "मौन प्रार्थना"
+              ]
+            }
+          ],
+          "procedure_id": "radha-ashtami-iskcon-participant-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-radha-ashtami-iskcon-calendar-fixture",
+            "devam-radha-ashtami-safety-boundary",
+            "iskcon-bangalore-radhashtami-2026"
+          ],
+          "steps": [
+            {
+              "instruction": "पक्का करें कि इस्कॉन राधाष्टमी लागू है; सभी वैष्णव या स्मार्त परम्पराएँ समान न मानें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-radha-ashtami-iskcon-calendar-fixture",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "पंचांग और प्रथा का प्रमाण स्पष्ट रूप से इस्कॉन तक सीमित है।"
+            },
+            {
+              "instruction": "छोटी प्रार्थना, पहचानी इस्कॉन शिक्षा या परिवार-परिचित वैष्णव गीत से श्रीमती राधारानी के प्राकट्य-दिवस का स्मरण करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "आधिकारिक मंदिर स्रोत दिवस, शिक्षा, प्रार्थना, कीर्तन और गीत दर्ज करता है।"
+            },
+            {
+              "instruction": "सेवा को कम स्वार्थ-केंद्रित बनाने का एक तरीका सोचें और देखभाल या सेवा का एक काम चुनें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "इससे कृपा, सिद्धि या दूसरे फल का वादा किए बिना स्मरण आचरण बनता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Bounded family-known prayer, kirtan and service form",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-radha-ashtami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "30 मिनट का स्रोत-स्पष्ट भक्ति रूप",
+          "materials": [
+            {
+              "item": "आधिकारिक इस्कॉन पाठ, गीत या कार्यक्रम",
+              "required": false,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "परिवार-परिचित वैष्णव स्रोत",
+                "आधिकारिक मंदिर प्रसारण",
+                "बिना सामग्री न्यूनतम रूप"
+              ]
+            }
+          ],
+          "procedure_id": "radha-ashtami-iskcon-participant-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "अनुष्ठान का मार्गदर्शन करने वाले इस्कॉन मंदिर, गुरु, ग्रन्थ या गीत का नाम लें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "स्रोत-स्पष्टता सम्प्रदायिक शिक्षा को सार्वभौमिक धर्मशास्त्र बनने से रोकती है।"
+            },
+            {
+              "instruction": "राधारानी पर एक छोटी पूरी शिक्षा पढ़ें या सुनें; वक्ता, ग्रन्थ, अनुवाद और टीका स्पष्ट रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "अर्थ अपने स्रोत और व्याख्या-परम्परा से जुड़ा रहे।"
+            },
+            {
+              "instruction": "वैष्णव परम्परा का एक परिचित कीर्तन या आचार्य-रचित गीत रखें, या मौन प्रार्थना करें।",
+              "optional": true,
+              "ordinal": 3,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "आधिकारिक स्रोत कीर्तन और आचार्य-गीत दर्ज करता है, और विकल्प सरल रूप देता है।"
+            },
+            {
+              "instruction": "फल की शर्त लगाए बिना सेवा, दया या सहयोग का एक निश्चित काम पूरा करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "भक्ति-विषय जीवन में आचरण बनता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Current local ISKCON temple programme participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-radha-ashtami-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "60 मिनट की मंदिर-संलग्न भागीदारी",
+          "materials": [
+            {
+              "item": "वर्तमान आधिकारिक इस्कॉन मंदिर कार्यक्रम या प्रसारण",
+              "required": false,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "substitutions": [
+                "उपयोगकर्ता के अपने इस्कॉन मंदिर का कार्यक्रम",
+                "आधिकारिक रिकॉर्डिंग",
+                "मानक घरेलू रूप"
+              ]
+            }
+          ],
+          "procedure_id": "radha-ashtami-iskcon-participant-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "iskcon-bangalore-vaishnava-calendar-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "अपने इस्कॉन मंदिर का वर्तमान कार्यक्रम देखें; बेंगलुरु समय प्रमाण है, स्थानीय समय नहीं।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "iskcon-bangalore-vaishnava-calendar-2026"
+              ],
+              "why": "मंदिर-समय और कार्यक्रम स्थान-विशिष्ट हैं।"
+            },
+            {
+              "instruction": "मंदिर द्वारा दिए रूप में शिक्षा, दर्शन, कीर्तन, गीत या प्रसारण से जुड़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026"
+              ],
+              "why": "जीवित भागीदारी कार्यक्रम चलाने वाली संस्था के अधीन रहती है।"
+            },
+            {
+              "instruction": "अभिषेक, आरती, होम, विग्रह-सज्जा, अर्पण, कलश, पुष्प और उपवास मंदिर या स्थापित परिवार-निर्देशन में रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "iskcon-bangalore-radhashtami-2026",
+                "iskcon-bangalore-vaishnava-calendar-2026",
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "वर्णित मंदिर-विधियाँ बिना निर्देशन घरेलू निर्देश नहीं बनतीं।"
+            },
+            {
+              "instruction": "एक ठोस सेवा-संकल्प और उपयोग किए गुरु, ग्रन्थ, मंदिर या कार्यक्रम का नाम लिखकर समापन करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-radha-ashtami-safety-boundary"
+              ],
+              "why": "अभ्यास फल की गारंटी के बिना उपयोगी और स्रोत-स्पष्ट रहता है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "आधिकारिक दोपहर तक उपवास का वर्णन है, पर वह निर्देश या चिकित्सा-सलाह नहीं है।",
+        "अभिषेक, आरती, होम, विग्रह-श्रृंगार, कलश, पुष्प-वृष्टि, भोग और औपचारिक पूजा जिम्मेदार मन्दिर या स्थापित पारिवारिक प्राधिकारी के पास हैं।",
+        "Bangalore का कार्यक्रम-समय दूसरे मन्दिर या तिथि पर न लगाएँ; वर्तमान स्थानीय संस्था से जाँचें।",
+        "प्रायोजन, दान, खरीद, नया वस्त्र और छप्पन भोग इस सहभागिता मार्ग में अनिवार्य नहीं।",
+        "कोई कर्म कृपा, सिद्धि, प्रगति, रक्षा, पुण्य या अन्य आध्यात्मिक अथवा सांसारिक फल की गारंटी नहीं देता।"
+      ],
+      "short_answer": "राधारानी के प्राकट्य-दिवस पर स्रोत-स्पष्ट शिक्षा, प्रार्थना या कीर्तन, निःस्वार्थ सेवा पर चिंतन और आधिकारिक मंदिर-भागीदारी का सीमित इस्कॉन रूप।",
+      "significance": {
+        "scope_note": "अर्थ और व्यवहार नामित ISKCON संस्थागत सन्दर्भ के हैं।",
+        "source_ids": [
+          "iskcon-bangalore-radhashtami-2026",
+          "iskcon-bangalore-vaishnava-calendar-2026"
+        ],
+        "text": "यहाँ दर्शाई गई ISKCON Bangalore परम्परा में राधाष्टमी श्रीमती राधारानी का प्राकट्य-दिवस है और स्तुति, कीर्तन, प्रार्थना, शिक्षा तथा भक्ति-सेवा पर केन्द्रित है। यह सहभागिता मार्ग उस धर्म-दृष्टि या कार्यक्रम को हर गौड़ीय वैष्णव, वैष्णव, स्मार्त या पारिवारिक परम्परा पर लागू नहीं करता।"
+      },
+      "title": "इस्कॉन राधाष्टमी स्मरण और भागीदारी",
+      "typical_practices": [
+        {
+          "description": "आधिकारिक पृष्ठ दोपहर तक उपवास, विग्रह-श्रृंगार, कीर्तन और गीत, अभिषेक, आरती, पुष्प-वृष्टि, भोग और समापन मन्दिर-यात्रा का वर्णन करता है। ये संस्थागत व्यवहार हैं, बिना मार्गदर्शन घर की विधि नहीं।",
+          "instructional": false,
+          "population_scope": "ISKCON Bangalore मन्दिर उत्सव",
+          "practice_id": "iskcon-bangalore-radhashtami-temple-programme",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "iskcon-bangalore-vaishnava-calendar-2026"
+          ]
+        },
+        {
+          "description": "सहभागी घर पर परिचित शिक्षा, प्रार्थना, गीत, कीर्तन या सेवा-चिन्तन कर सकता है, अथवा स्थानीय ISKCON मन्दिर के वर्तमान निर्देश में कार्यक्रम से जुड़ सकता है।",
+          "instructional": false,
+          "population_scope": "ISKCON-संबद्ध घर या मन्दिर सहभागी",
+          "practice_id": "iskcon-home-and-temple-participation",
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "घर की प्रार्थना, गीत, पाठ और सेवा-चिन्तन मन्दिर के अभिषेक, आरती, होम, श्रृंगार, अर्पण या समय-सारणी की नकल नहीं करते।",
+          "scope": "ISKCON-संबद्ध घरेलू स्मरण और आधिकारिक मन्दिर कार्यक्रम",
+          "separate_lane_required": false,
+          "source_ids": [
+            "iskcon-bangalore-radhashtami-2026",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "variant_id": "home-remembrance-and-institutional-programme"
+        },
+        {
+          "difference": "उनके पंचांग, धर्म-दृष्टि, कथा, उपवास, गीत, पूजा और समापन के लिए अलग स्रोत चाहिए।",
+          "scope": "अन्य गौड़ीय वैष्णव, वैष्णव, स्मार्त, क्षेत्रीय और पारिवारिक परम्पराएँ",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-radha-ashtami-iskcon-calendar-fixture",
+            "devam-radha-ashtami-safety-boundary"
+          ],
+          "variant_id": "other-radha-ashtami-traditions"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "radha-ashtami-iskcon"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "93f9fc2539ff87495012d31d9c87115c68b317eab679dbfc1725877ed9455867",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/radha-ashtami-delhi-iskcon-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-radha-ashtami-iskcon-calendar-fixture",
+      "source_role": "Deterministic Delhi 2026 ISKCON date and scope fixture; not ritual authority",
+      "title": "Bounded Delhi ISKCON Radha Ashtami calendar fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "citation_coordinates": {
+        "pdf_pages": [
+          51,
+          52
+        ],
+        "source_text_returned_by_api": false
+      },
+      "observed_fetch": null,
+      "publisher": "Mumbai, 1865 Marathi translation; retained by Devam",
+      "rights_lane": "citation_only",
+      "source_id": "nirnayasindhu-1865-general-shukla-ashtami-context",
+      "source_role": "Historical general Ashtami context; not Radha identity or ISKCON practice authority",
+      "title": "Nirnayasindhu general Shukla Ashtami context",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/festivals/radha-ashtami/radha-ashtami-date-time.html?geoname-id=1273294&year=2026",
+        "observed_at": "2026-08-07",
+        "response_bytes": 67117,
+        "response_sha256": "270dc023e97cc993593990dd0e63deaa0b8cafe4a962934411cc9d759e20dd2c",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-radha-ashtami-delhi-iskcon-2026",
+      "source_role": "Current practitioner identity, madhyahna and location-specific date context",
+      "title": "Radha Ashtami date and time for Delhi, ISKCON lane, 2026",
+      "url": "https://www.drikpanchang.com/festivals/radha-ashtami/radha-ashtami-date-time.html?geoname-id=1273294&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.iskconbangalore.org/sri-radhashtami/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 116081,
+        "response_sha256": "150133c782373d0ccb539e6662b61366215cb79f26934bf43d4bca2f399f6f61",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "ISKCON Bangalore",
+      "rights_lane": "citation_only",
+      "source_id": "iskcon-bangalore-radhashtami-2026",
+      "source_role": "Official ISKCON appearance-day teaching and temple-practice context",
+      "title": "Sri Radhashtami - 19 Sep 2026",
+      "url": "https://www.iskconbangalore.org/sri-radhashtami/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.iskconbangalore.org/vaishnava-calendar/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 100515,
+        "response_sha256": "a623a1e3fe41181c45a37efaecc6fe4f6c4af069dfd15e45255ed01276be9f6f",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "ISKCON Bangalore",
+      "rights_lane": "citation_only",
+      "source_id": "iskcon-bangalore-vaishnava-calendar-2026",
+      "source_role": "Official institutional date and descriptive fast context; not a health instruction",
+      "title": "ISKCON Bangalore Vaishnava Calendar 2026-2027",
+      "url": "https://www.iskconbangalore.org/vaishnava-calendar/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-radha-ashtami-safety-boundary",
+      "source_role": "Editorial safety and scope boundary; not ritual authority",
+      "title": "Devam Radha Ashtami institutional, fasting, purchase and outcome boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-radha-ashtami-iskcon-participation-v1"
+  ]
+}

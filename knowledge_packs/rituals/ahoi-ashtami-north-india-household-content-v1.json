@@ -1,0 +1,770 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family observe Ahoi Ashtami or Ahoi Aathe?",
+      "Is there a familiar Ahoi image, story, or family elder who leads?",
+      "Does your family close after stars, after the moon, or in another way?",
+      "Would a material-free, flame-free, or food-neutral form work better today?"
+    ],
+    "region_codes": [
+      "north-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led"
+    ],
+    "tradition_codes": [
+      "smarta-north-india"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": "family-star-or-moon-close-not-universalized",
+    "decision_rule_id": "devam-current-practitioner-ahoi-ashtami-unique-pradosha-ashtami-v1",
+    "freshness_note": "The Delhi 2026 date is resolved. Actual star visibility, moonrise, family close, and any temple programme remain local.",
+    "live_schedule_required": false,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-ahoi-ashtami-date-fixture"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "ahoi-ashtami-north-india-household-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "ahoi-mata-seven-sons-story",
+          "source_ids": [
+            "drikpanchang-ahoi-katha"
+          ],
+          "summary": "A common practitioner-retold katha tells of a woman who accidentally kills an animal's young while digging, suffers loss, and observes Ahoi Mata worship; versions and moral emphases vary by family.",
+          "title": "The accidental harm and Ahoi Mata story",
+          "tradition_scope": "Current North Indian practitioner-retold story; not universal history",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible child-wellbeing remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-ahoi-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Wellbeing and one act of care",
+          "materials": [
+            {
+              "item": "No material required",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "A quiet place",
+                "A brief family call"
+              ]
+            }
+          ],
+          "procedure_id": "ahoi-ashtami-north-india-household-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Remember Mata Ahoi in the way your family knows, or simply hold the wellbeing of all children in mind.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "This preserves the living observance's child-wellbeing centre without requiring one image or formula."
+            },
+            {
+              "instruction": "Name one thing you are grateful for in a child, caregiver, teacher, or family relationship.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "Gratitude makes the reflection concrete without claiming a ritual result."
+            },
+            {
+              "instruction": "Choose one practical act of patient care, listening, safety, learning support, or relief for a caregiver.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "The observance becomes actionable while health, longevity, merit, and protection remain unpromised."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Bounded North Indian household form; family image, story, fast, offerings, star-or-moon close, and words override it",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-ahoi-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 35,
+          "form": "traditional_household",
+          "label": "Family-known Ahoi remembrance",
+          "materials": [
+            {
+              "item": "Family's Ahoi Mata image or a simple respectful representation",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "Family-owned digital or printed image",
+                "Material-free remembrance"
+              ]
+            },
+            {
+              "item": "Water vessel and simple family-approved offering",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "Plain water only",
+                "No food offering"
+              ]
+            },
+            {
+              "item": "Optional supervised lamp",
+              "required": false,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "Electric lamp",
+                "No light"
+              ]
+            }
+          ],
+          "procedure_id": "ahoi-ashtami-north-india-household-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-ahoi-ashtami-date-fixture",
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary",
+            "drikpanchang-ahoi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm the local date and ask whether your family follows a star or moon close, a particular image or story, and a fast.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-ahoi-ashtami-date-fixture",
+                "drikpanchang-ahoi-practice-context"
+              ],
+              "why": "The deterministic date is bounded; the household controls the living form."
+            },
+            {
+              "instruction": "If a healthy adult freely follows the family fast, begin only with appropriate health judgment; everyone else may join the puja and care actions without fasting.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "The source describes fasting, while safety and inclusion prevent it becoming universal medical advice."
+            },
+            {
+              "instruction": "Before sunset, prepare a clean place with the family's Ahoi image or a simple substitute, water, and any familiar offering.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context"
+              ],
+              "why": "The source places preparation before the evening puja and records several material variants."
+            },
+            {
+              "instruction": "At the family evening time, remember Ahoi Mata, use the family's familiar prayer or silence, and narrate or read the family's katha without presenting one version as history.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "drikpanchang-ahoi-katha"
+              ],
+              "why": "Image worship and katha are ordinary practice, but wording and story versions vary."
+            },
+            {
+              "instruction": "Offer water to the visible stars or moon only according to family practice and from a safe place; if visibility fails, ask the family how it closes rather than inventing a rule.",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "The source explicitly preserves star and moon variants."
+            },
+            {
+              "instruction": "Complete the familiar close, share or distribute food only as the family safely does, and choose one concrete act supporting a child or caregiver.",
+              "optional": false,
+              "ordinal": 6,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "This connects the observance to wellbeing without promising an outcome."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or temple-led form only",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-ahoi-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Established family- or temple-led Ahoi programme",
+          "materials": [
+            {
+              "item": "Only materials named by the established family or temple lead",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "Use their approved alternatives",
+                "Join as an observer"
+              ]
+            }
+          ],
+          "procedure_id": "ahoi-ashtami-north-india-household-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Let the established family elder or temple define the image, story, sankalpa, offerings, arghya, star or moon observation, food, timing, and close.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "The evidence does not authorize Devam to manufacture a universal Ahoi vidhi."
+            },
+            {
+              "instruction": "Keep flame, rooftop, balcony, night-visibility, child, food, and accessibility safety under responsible adult and venue direction.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "Participation must remain physically safe and accessible."
+            },
+            {
+              "instruction": "Close through the established practice and continue one realistic act supporting a child or caregiver.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "This retains community authority and a useful everyday outcome without promising supernatural results."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Fasting is described, not mandatory medical advice; do not begin or continue it when pregnant, breastfeeding, unwell, medicated, very young, elderly, or otherwise at risk without appropriate guidance.",
+        "Never supervise children, use rooftops, or handle flames unsafely while waiting for stars or moonrise.",
+        "Use inclusive child-wellbeing language; the historical sons-only wording is not universalized.",
+        "No practice guarantees fertility, longevity, protection, merit, or success."
+      ],
+      "short_answer": "A bounded North India family form centred on Mata Ahoi, the wellbeing of all children, gratitude, and one practical act of care, without prescribing fasting or promising protection.",
+      "significance": {
+        "source_ids": [
+          "drikpanchang-ahoi-practice-context"
+        ],
+        "text": "Ahoi Ashtami is a North Indian family observance centred on Mata Ahoi and children's wellbeing. The ordinary practice may include a dawn-to-evening fast, evening image worship and story, and a family-specific close after seeing stars or the moon."
+      },
+      "title": "Ahoi Ashtami family reflection",
+      "typical_practices": [
+        {
+          "description": "Women commonly prepare before sunset, use a family Ahoi image, narrate the katha, offer simple food or water, perform aarti, and close after seeing stars or, in some families, the moon; fasting and materials vary.",
+          "instructional": false,
+          "population_scope": "North Indian families described by the current practitioner source",
+          "practice_id": "north-india-ahoi-household",
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Some families close after stars and others after moonrise; the family rule controls.",
+          "scope": "North Indian family practice",
+          "separate_lane_required": false,
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-ashtami-date-fixture"
+          ],
+          "variant_id": "star-or-moon-close"
+        },
+        {
+          "difference": "Wall drawing, printed image, silver Syau, grass or cotton, foods, arghya vessel, and story version differ.",
+          "scope": "Household and local practice",
+          "separate_lane_required": false,
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context"
+          ],
+          "variant_id": "family-image-and-offerings"
+        },
+        {
+          "difference": "The pre-dawn bath and Kushmanda offering are a distinct place- and need-specific lane and are not included here.",
+          "scope": "Radha Kunda fertility-associated observance",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary"
+          ],
+          "variant_id": "radha-kunda-krishnashtami"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "ahoi-mata-seven-sons-story",
+          "source_ids": [
+            "drikpanchang-ahoi-katha"
+          ],
+          "summary": "एक प्रचलित वर्तमान कथा में मिट्टी खोदते समय पशु-शिशुओं की अनजाने मृत्यु, पारिवारिक हानि और अहोई माता पालन आता है; परिवारों में रूप और अर्थ बदल सकते हैं।",
+          "title": "अनजाने अहित और अहोई माता की कथा",
+          "tradition_scope": "वर्तमान उत्तर भारतीय पुनर्कथन; सार्वभौमिक इतिहास नहीं",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible child-wellbeing remembrance",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-ahoi-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "कुशलता और देखभाल का एक काम",
+          "materials": [
+            {
+              "item": "कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "शांत स्थान",
+                "परिवार से छोटी बातचीत"
+              ]
+            }
+          ],
+          "procedure_id": "ahoi-ashtami-north-india-household-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार की परिचित रीति से अहोई माता का स्मरण करें, या सभी बच्चों की कुशलता को मन में रखें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "एक चित्र या सूत्र अनिवार्य किए बिना पालन का बाल-कुशलता केन्द्र सुरक्षित रहता है।"
+            },
+            {
+              "instruction": "किसी बच्चे, देखभालकर्ता, शिक्षक या पारिवारिक सम्बन्ध के लिए कृतज्ञता की एक बात कहें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "फल का दावा किए बिना चिंतन ठोस बनता है।"
+            },
+            {
+              "instruction": "धैर्यपूर्ण देखभाल, सुनने, सुरक्षा, पढ़ाई में सहायता या देखभालकर्ता को राहत का एक व्यावहारिक काम चुनें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "स्वास्थ्य, आयु, पुण्य या सुरक्षा का वादा किए बिना पालन उपयोगी बनता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "सीमित उत्तर भारतीय पारिवारिक रूप; परिवार का चित्र, कथा, उपवास, अर्पण, तारा/चन्द्र समापन और शब्द सर्वोपरि",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-ahoi-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 35,
+          "form": "traditional_household",
+          "label": "परिवार-परिचित अहोई स्मरण",
+          "materials": [
+            {
+              "item": "परिवार का अहोई माता चित्र या सरल सम्मानपूर्ण रूप",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "परिवार का डिजिटल/छपा चित्र",
+                "बिना सामग्री स्मरण"
+              ]
+            },
+            {
+              "item": "जल-पात्र और परिवार-स्वीकृत सरल अर्पण",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "केवल सादा जल",
+                "बिना भोजन-अर्पण"
+              ]
+            },
+            {
+              "item": "वैकल्पिक देखरेख वाला दीप",
+              "required": false,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "बिजली का दीप",
+                "बिना प्रकाश"
+              ]
+            }
+          ],
+          "procedure_id": "ahoi-ashtami-north-india-household-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-ahoi-ashtami-date-fixture",
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary",
+            "drikpanchang-ahoi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "स्थानीय तिथि की पुष्टि करके पूछें कि परिवार तारा या चन्द्र समापन, कौन-सा चित्र/कथा और उपवास मानता है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-ahoi-ashtami-date-fixture",
+                "drikpanchang-ahoi-practice-context"
+              ],
+              "why": "तिथि सीमित रूप में तय है; जीवित रूप परिवार तय करता है।"
+            },
+            {
+              "instruction": "स्वस्थ वयस्क अपनी इच्छा से पारिवारिक उपवास करे तो उचित स्वास्थ्य-विवेक से ही आरम्भ करे; अन्य सभी बिना उपवास पूजा और देखभाल के कार्य में जुड़ सकते हैं।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "स्रोत उपवास बताता है, पर सुरक्षा और समावेशन उसे सार्वभौमिक चिकित्सा-निर्देश नहीं बनने देते।"
+            },
+            {
+              "instruction": "सूर्यास्त से पहले साफ स्थान पर परिवार का अहोई चित्र या सरल विकल्प, जल और परिचित अर्पण तैयार करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context"
+              ],
+              "why": "स्रोत संध्या-पूजा से पहले तैयारी और सामग्री के अनेक रूप बताता है।"
+            },
+            {
+              "instruction": "पारिवारिक संध्या-समय अहोई माता का स्मरण, परिचित प्रार्थना या मौन, और परिवार की कथा का पाठ/वाचन करें; एक कथा को इतिहास न कहें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "drikpanchang-ahoi-katha"
+              ],
+              "why": "चित्र-पूजन और कथा सामान्य हैं, पर शब्द और कथा-रूप बदलते हैं।"
+            },
+            {
+              "instruction": "परिवार की रीति हो तो सुरक्षित स्थान से दिखाई देने वाले तारे या चन्द्रमा को जल दें; दृश्यता न हो तो परिवार से समापन पूछें, नया नियम न गढ़ें।",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "स्रोत तारा और चन्द्र दोनों रूप सुरक्षित रखता है।"
+            },
+            {
+              "instruction": "परिचित समापन करें, भोजन परिवार की सुरक्षित रीति से बाँटें और किसी बच्चे या देखभालकर्ता के लिए एक ठोस सहायता चुनें।",
+              "optional": false,
+              "ordinal": 6,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "यह फल की गारंटी के बिना पालन को कुशलता से जोड़ता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or temple-led form only",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-ahoi-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "स्थापित परिवार या मंदिर-नेतृत्व वाला अहोई कार्यक्रम",
+          "materials": [
+            {
+              "item": "केवल स्थापित परिवार या मंदिर द्वारा बताई सामग्री",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "substitutions": [
+                "उनके स्वीकृत विकल्प",
+                "दर्शक के रूप में जुड़ें"
+              ]
+            }
+          ],
+          "procedure_id": "ahoi-ashtami-north-india-household-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "चित्र, कथा, संकल्प, अर्पण, अर्घ्य, तारा/चन्द्र-दर्शन, भोजन, समय और समापन स्थापित बुजुर्ग या मंदिर को तय करने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "drikpanchang-ahoi-practice-context",
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "साक्ष्य Devam को सार्वभौमिक अहोई विधि बनाने का अधिकार नहीं देता।"
+            },
+            {
+              "instruction": "लौ, छत, बालकनी, रात्रि-दृश्यता, बच्चों, भोजन और सुगमता की सुरक्षा जिम्मेदार वयस्क और स्थल के निर्देश में रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "सहभागिता सुरक्षित और सुगम रहनी चाहिए।"
+            },
+            {
+              "instruction": "स्थापित रीति से समापन करके किसी बच्चे या देखभालकर्ता के समर्थन का एक यथार्थ काम जारी रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-ahoi-safety-boundary"
+              ],
+              "why": "समुदाय का अधिकार और रोजमर्रा की उपयोगिता दोनों बने रहते हैं, बिना अलौकिक फल के वादे के।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "उपवास का वर्णन है, चिकित्सा-निर्देश नहीं; गर्भावस्था, स्तनपान, बीमारी, दवा, कम/अधिक आयु या अन्य जोखिम में उचित मार्गदर्शन के बिना आरम्भ या जारी न करें।",
+        "तारे/चन्द्रमा देखते समय बच्चों, छत/बालकनी और लौ की सुरक्षा रखें।",
+        "सभी बच्चों की कुशलता की समावेशी भाषा लें; पुत्र-मात्र ऐतिहासिक भाषा सार्वभौमिक नहीं।",
+        "कोई पालन संतान, आयु, रक्षा, पुण्य या सफलता की गारंटी नहीं देता।"
+      ],
+      "short_answer": "उत्तर भारत का सीमित पारिवारिक रूप—अहोई माता, सभी बच्चों की कुशलता, कृतज्ञता और देखभाल के एक व्यावहारिक काम पर केन्द्रित; उपवास निर्धारित या सुरक्षा की गारंटी नहीं करता।",
+      "significance": {
+        "source_ids": [
+          "drikpanchang-ahoi-practice-context"
+        ],
+        "text": "अहोई अष्टमी उत्तर भारतीय पारिवारिक पालन है जिसका केन्द्र अहोई माता और बच्चों की कुशलता है। सामान्य रूप में प्रातः से संध्या उपवास, शाम को चित्र-पूजन और कथा, तथा परिवार के अनुसार तारा या चन्द्र-दर्शन के बाद समापन हो सकता है।"
+      },
+      "title": "अहोई अष्टमी पारिवारिक चिंतन",
+      "typical_practices": [
+        {
+          "description": "आमतौर पर महिलाएँ सूर्यास्त से पहले तैयारी करती हैं, परिचित अहोई चित्र रखती हैं, कथा सुनाती हैं, सरल अर्पण/जल देती हैं, आरती करती हैं और तारे या कुछ परिवारों में चन्द्रमा देखकर समापन करती हैं; उपवास और सामग्री बदलते हैं।",
+          "instructional": false,
+          "population_scope": "वर्तमान स्रोत में वर्णित उत्तर भारतीय परिवार",
+          "practice_id": "north-india-ahoi-household",
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "कुछ परिवार तारे और कुछ चन्द्र-दर्शन के बाद समापन करते हैं; परिवार की रीति मान्य है।",
+          "scope": "उत्तर भारतीय पारिवारिक रीति",
+          "separate_lane_required": false,
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-ashtami-date-fixture"
+          ],
+          "variant_id": "star-or-moon-close"
+        },
+        {
+          "difference": "दीवार-चित्र, छपा चित्र, चाँदी की स्याउ, घास/रुई, भोजन, अर्घ्य-पात्र और कथा बदल सकते हैं।",
+          "scope": "पारिवारिक और स्थानीय रीति",
+          "separate_lane_required": false,
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context"
+          ],
+          "variant_id": "family-image-and-offerings"
+        },
+        {
+          "difference": "अरुणोदय स्नान और कूष्माण्ड अर्पण अलग स्थान/आवश्यकता-विशिष्ट मार्ग हैं और यहाँ शामिल नहीं।",
+          "scope": "राधा कुण्ड का संतान-संबंधी पालन",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drikpanchang-ahoi-practice-context",
+            "devam-ahoi-safety-boundary"
+          ],
+          "variant_id": "radha-kunda-krishnashtami"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "ahoi-ashtami-north-india"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "f35053c40b788f82da8264ae8d7675e706ea5152b925f6ee86fd6c87d9a3831c",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/ahoi-ashtami-delhi-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-ahoi-ashtami-date-fixture",
+      "source_role": "Deterministic Delhi date and star-or-moon variant evidence; not household authority",
+      "title": "Devam Ahoi Ashtami Delhi 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/info/ahoi-ashtami-puja-vidhi.html",
+        "observed_at": "2026-08-07",
+        "response_bytes": 61590,
+        "response_sha256": "564c6ddb8a695b6e0bba772125bee6ae5111213346025801247ee80895543dd2",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-ahoi-practice-context",
+      "source_role": "Current practitioner evidence for timing, preparation, image, katha, aarti, offerings, fast, and star-or-moon variants",
+      "title": "Ahoi Ashtami Puja Vidhi",
+      "url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/info/ahoi-ashtami-puja-vidhi.html"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/legends/ahoi-ashtami-vrat-katha.html",
+        "observed_at": "2026-08-07",
+        "response_bytes": 57286,
+        "response_sha256": "99e75a7df2d38982ea86849db7b13fae6390bfda3d8450107333a55c40c7a432",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-ahoi-katha",
+      "source_role": "Current practitioner-retold story; not universal history",
+      "title": "Ahoi Ashtami Vrat Katha",
+      "url": "https://www.drikpanchang.com/festivals/ahoi-ashtami/legends/ahoi-ashtami-vrat-katha.html"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-ahoi-safety-boundary",
+      "source_role": "Editorial safety, inclusion, and authority boundary; not ritual authority",
+      "title": "Devam inclusive child-wellbeing, fasting, health, flame, and outcome boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-ahoi-ashtami-north-india-family-v1"
+  ]
+}

@@ -1,0 +1,704 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      },
+      {
+        "region_code": "kashi-varanasi",
+        "tradition_code": "regional-kashi-varanasi"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which region, family, temple, or sampradaya Bhairava tradition applies?",
+      "Do you know the exact Bhairava form, story, text, prayer, or teacher your family uses?",
+      "Do you want a home reflection or help preparing for an established temple visit?",
+      "Is an elder or priest directing a fast, mantra, offering, vigil, thread, oil, or other formal rite?"
+    ],
+    "observance_context_notes": [
+      {
+        "language_code": "en",
+        "note": "Use the Bhairava name, story, prayer, mantra, image, offering, fast, and close established in your family, sampradaya, or temple. Kashi's guardian identity is important regional context, not a universal home procedure. This guide supplies no occult, exorcistic, harmful, intoxicant, animal-offering, fear, or protection rite.",
+        "observance_slug": "kalabhairava-jayanti"
+      },
+      {
+        "language_code": "hi",
+        "note": "भैरव का नाम, कथा, प्रार्थना, मंत्र, प्रतिमा, अर्पण, उपवास और समापन अपने परिवार, सम्प्रदाय या मंदिर की स्थापित रीति से रखें। काशी का कोतवाल-रूप महत्वपूर्ण क्षेत्रीय सन्दर्भ है, सार्वभौमिक घरेलू विधि नहीं। यह मार्गदर्शिका तान्त्रिक, भूत-प्रेत, हानिकारक, नशीले पदार्थ, पशु-अर्पण, भय या सुरक्षा-फल की कोई विधि नहीं देती।",
+        "observance_slug": "kalabhairava-jayanti"
+      }
+    ],
+    "region_codes": [
+      "north-india",
+      "kashi-varanasi"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "regional-kashi-varanasi"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": null,
+    "decision_rule_id": "devam-kalabhairava-jayanti-night-ashtami-v1",
+    "freshness_note": "Resolve the named observance for the user's location and tradition. Family, temple, teacher, or sampradaya authority controls formal practice and close.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-kalabhairava-calendar-fixture",
+      "drikpanchang-delhi-masika-kalashtami-2026"
+    ],
+    "timing_kind": "textual_rule",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "kalabhairava-jayanti-north-kashi-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "kashi-regional-kaal-bhairav-identity",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple"
+          ],
+          "summary": "The official Kashi temple source preserves one regional Bhairava identity. It does not establish one origin story or home procedure for every Bhairava form or Kalashtami tradition.",
+          "title": "Kashi's regional Kaal Bhairav identity",
+          "tradition_scope": "Kashi regional temple context",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Self-guided reflection",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kalabhairava-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "10-minute remembrance",
+          "materials": [
+            {
+              "item": "No material required",
+              "required": false,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "substitutions": [
+                "A familiar Shiva prayer",
+                "An identified Bhairava teaching",
+                "A quiet reflection"
+              ]
+            }
+          ],
+          "procedure_id": "kalabhairava-jayanti-north-kashi-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Name the family, temple, or sampradaya context if known, and do not assume that Kashi practice is universal.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "Bhairava identities and procedures vary materially by place and lineage."
+            },
+            {
+              "instruction": "Remember Bhairava as a form of Shiva through a familiar prayer or one short source-labelled teaching.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "This preserves the official identity without inventing liturgy."
+            },
+            {
+              "instruction": "Name one fear you can face responsibly and one discipline or protective duty you can carry out without harming anyone.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "The reflection turns courage and guardianship into accountable action rather than a promised supernatural outcome."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Individual or household reflection",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kalabhairava-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "30-minute sourced reflection",
+          "materials": [
+            {
+              "item": "One identified Shiva or Bhairava source",
+              "required": false,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "substitutions": [
+                "A family text",
+                "A teacher-led explanation",
+                "The material-free minimum form"
+              ]
+            }
+          ],
+          "procedure_id": "kalabhairava-jayanti-north-kashi-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Identify the Bhairava form, text, temple, lineage, or teacher whose account you are using.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "Attribution prevents one regional account from becoming universal."
+            },
+            {
+              "instruction": "Read one short coherent account and distinguish source narrative, temple belief, and your present interpretation.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "The evidence layers remain visible rather than blended."
+            },
+            {
+              "instruction": "Reflect on courage, time, discipline, boundaries, or guardianship, keeping fear-based and outcome claims outside the guidance.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "Actionable wisdom does not require coercion or supernatural certainty."
+            },
+            {
+              "instruction": "Complete one safe duty: repair a neglected boundary, keep a promise, accompany someone, or make a responsible plan.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "A concrete duty expresses the reflection without prescribing a ritual result."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family-, teacher-, community-, or temple-led participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-kalabhairava-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "60-minute family or temple-connected form",
+          "materials": [
+            {
+              "item": "Family, temple, or sampradaya source",
+              "required": false,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "substitutions": [
+                "A verified edition",
+                "A teacher-guided explanation",
+                "The standard individual form"
+              ]
+            }
+          ],
+          "procedure_id": "kalabhairava-jayanti-north-kashi-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-kalabhairava-safety-boundary",
+            "kashi-official-shri-kaal-bhairav-temple"
+          ],
+          "steps": [
+            {
+              "instruction": "With family or a study group, identify the exact Bhairava form and the source or authority being followed.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "Shared remembrance must remain lineage-aware."
+            },
+            {
+              "instruction": "Read and discuss a short attributable account, preserving differences and uncertainty rather than merging forms.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "Variant preservation is part of Devam's exhaustive-library objective."
+            },
+            {
+              "instruction": "If joining a temple, confirm current hours, access, crowd and transport conditions locally; keep mantra, offerings, oil, thread, fast, vigil, and formal puja under that temple's authority.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "A research synthesis is neither live event operations nor a priestly manual."
+            },
+            {
+              "instruction": "Close with one shared commitment to courage, discipline, safety, or care and record the source used.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "The close remains attributable and useful without promising fear removal or protection."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "No fast, food, medicine, formal puja, mantra, tantra, oil, thread, offering, alcohol, meat, animal offering, harm, occult, exorcistic, or fear-based protection rite is supplied.",
+        "No night vigil or unsafe travel is required.",
+        "Use the responsible family, temple, or sampradaya authority for formal practice."
+      ],
+      "short_answer": "A bounded Shiva/Bhairava remembrance through an attributable reading, reflection on courage and disciplined responsibility, and safe participation under one's established family or temple authority.",
+      "significance": {
+        "scope_note": "Kashi's temple identity is regional context, not a universal home, tantric, protection, or exorcistic procedure.",
+        "source_ids": [
+          "devam-kalabhairava-calendar-fixture",
+          "drikpanchang-delhi-masika-kalashtami-2026",
+          "kashi-official-shri-kaal-bhairav-temple"
+        ],
+        "text": "This bounded North India Smarta and Kashi regional lane supports Shiva/Bhairava remembrance, courage, discipline, responsible guardianship, and safe temple participation."
+      },
+      "title": "Kalabhairava Jayanti remembrance",
+      "typical_practices": [
+        {
+          "description": "An attributable Shiva/Bhairava reading, reflection on courage and discipline, and one act of responsible guardianship form the accessible lane.",
+          "instructional": false,
+          "population_scope": "Supported home reflection or safe temple participation",
+          "practice_id": "bhairava-reading-discipline-service",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Kashi's guardian-temple identity remains regional and is not copied into every household.",
+          "scope": "North India Smarta and Kashi regional lanes",
+          "separate_lane_required": true,
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ],
+          "variant_id": "north-and-kashi-contexts"
+        },
+        {
+          "difference": "North Margashirsha and South Kartika month names are preserved without declaring their practices identical.",
+          "scope": "Lunar-month naming",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drikpanchang-delhi-masika-kalashtami-2026"
+          ],
+          "variant_id": "north-south-month-names"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "kashi-regional-kaal-bhairav-identity",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple"
+          ],
+          "summary": "काशी का आधिकारिक मंदिर-स्रोत भैरव की एक क्षेत्रीय पहचान सुरक्षित रखता है। यह हर भैरव रूप या कालाष्टमी परम्परा की एक उत्पत्ति-कथा या गृह-विधि सिद्ध नहीं करता।",
+          "title": "काशी की क्षेत्रीय काल भैरव पहचान",
+          "tradition_scope": "Kashi regional temple context",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Self-guided reflection",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kalabhairava-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "10 मिनट का स्मरण",
+          "materials": [
+            {
+              "item": "कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "substitutions": [
+                "परिचित शिव-प्रार्थना",
+                "पहचानी भैरव-शिक्षा",
+                "शान्त चिंतन"
+              ]
+            }
+          ],
+          "procedure_id": "kalabhairava-jayanti-north-kashi-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "ज्ञात हो तो परिवार, मंदिर या सम्प्रदाय का नाम लें और काशी की रीति को सार्वभौमिक न मानें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "भैरव की पहचान और विधियाँ स्थान तथा परम्परा से बदलती हैं।"
+            },
+            {
+              "instruction": "भैरव को शिव-रूप मानकर परिचित प्रार्थना या छोटे स्रोत-स्पष्ट पाठ से स्मरण करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "इससे पूजा-विधि गढ़े बिना आधिकारिक पहचान सुरक्षित रहती है।"
+            },
+            {
+              "instruction": "एक भय का नाम लें जिसका जिम्मेदारी से सामना करना है और एक अनुशासन या सुरक्षा-कर्तव्य चुनें जिसमें किसी को हानि न हो।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "यह साहस और संरक्षण को गारंटीकृत अलौकिक फल के बजाय जवाबदेह कर्म बनाता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Individual or household reflection",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kalabhairava-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "30 मिनट का स्रोत-स्पष्ट चिंतन",
+          "materials": [
+            {
+              "item": "एक पहचाना शिव या भैरव स्रोत",
+              "required": false,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "substitutions": [
+                "पारिवारिक ग्रन्थ",
+                "गुरु-निर्देशित व्याख्या",
+                "सामग्री-रहित न्यूनतम रूप"
+              ]
+            }
+          ],
+          "procedure_id": "kalabhairava-jayanti-north-kashi-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "जिस भैरव-रूप, ग्रन्थ, मंदिर, परम्परा या गुरु का विवरण ले रहे हैं उसका नाम बताएं।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "स्रोत-स्पष्टता एक क्षेत्रीय विवरण को सार्वभौमिक बनने से रोकती है।"
+            },
+            {
+              "instruction": "एक छोटा पूरा विवरण पढ़ें और मूल कथा, मंदिर-मान्यता तथा अपनी वर्तमान व्याख्या अलग रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "प्रमाण की परतें मिलाए बिना दिखाई देती हैं।"
+            },
+            {
+              "instruction": "साहस, समय, अनुशासन, सीमा या संरक्षण पर विचार करें और भय तथा फल-दावे बाहर रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "उपयोगी ज्ञान को दबाव या अलौकिक निश्चितता की जरूरत नहीं।"
+            },
+            {
+              "instruction": "एक सुरक्षित कर्तव्य पूरा करें—उपेक्षित सीमा सुधारें, वचन निभाएँ, किसी का साथ दें या जिम्मेदार योजना बनाएं।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "ठोस कर्तव्य अनुष्ठानिक फल निर्धारित किए बिना चिंतन व्यक्त करता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family-, teacher-, community-, or temple-led participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-kalabhairava-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "60 मिनट का परिवार या मंदिर-संबद्ध रूप",
+          "materials": [
+            {
+              "item": "पारिवारिक, मंदिर या सम्प्रदायिक स्रोत",
+              "required": false,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "substitutions": [
+                "सत्यापित संस्करण",
+                "गुरु-निर्देशित व्याख्या",
+                "मानक व्यक्तिगत रूप"
+              ]
+            }
+          ],
+          "procedure_id": "kalabhairava-jayanti-north-kashi-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-kalabhairava-safety-boundary",
+            "kashi-official-shri-kaal-bhairav-temple"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार या अध्ययन समूह के साथ ठीक भैरव-रूप और लागू स्रोत या अधिकारी पहचानें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "सामूहिक स्मरण भी परम्परा-सचेत रहे।"
+            },
+            {
+              "instruction": "एक छोटा स्रोत-स्पष्ट विवरण पढ़ें और भिन्न रूपों तथा अनिश्चितता को मिलाए बिना बचाएं।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "रूपान्तर-संरक्षण देवम के विशाल पुस्तकालय का उद्देश्य है।"
+            },
+            {
+              "instruction": "मंदिर जाएं तो वर्तमान समय, प्रवेश, भीड़ और यात्रा स्थानीय रूप से जाँचें; मंत्र, अर्पण, तेल, सूत्र, उपवास, जागरण और औपचारिक पूजा उसी मंदिर के अधीन रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "kashi-official-shri-kaal-bhairav-temple",
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "शोध-संश्लेषण न लाइव आयोजन-व्यवस्था है, न पुरोहित-पुस्तिका।"
+            },
+            {
+              "instruction": "साहस, अनुशासन, सुरक्षा या देखभाल का एक साझा संकल्प लेकर और स्रोत लिखकर समापन करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-kalabhairava-safety-boundary"
+              ],
+              "why": "समापन भय-मुक्ति या संरक्षण का वादा किए बिना स्रोत-स्पष्ट और उपयोगी रहता है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "No fast, food, medicine, formal puja, mantra, tantra, oil, thread, offering, alcohol, meat, animal offering, harm, occult, exorcistic, or fear-based protection rite is supplied.",
+        "No night vigil or unsafe travel is required.",
+        "Use the responsible family, temple, or sampradaya authority for formal practice."
+      ],
+      "short_answer": "स्रोत-स्पष्ट पाठ, साहस और अनुशासित जिम्मेदारी पर चिंतन तथा स्थापित पारिवारिक या मंदिर-अधिकार के अधीन सुरक्षित भागीदारी से शिव/भैरव स्मरण।",
+      "significance": {
+        "scope_note": "Kashi's temple identity is regional context, not a universal home, tantric, protection, or exorcistic procedure.",
+        "source_ids": [
+          "devam-kalabhairava-calendar-fixture",
+          "drikpanchang-delhi-masika-kalashtami-2026",
+          "kashi-official-shri-kaal-bhairav-temple"
+        ],
+        "text": "यह सीमित उत्तर भारत स्मार्त और काशी क्षेत्रीय मार्ग शिव/भैरव स्मरण, साहस, अनुशासन, जिम्मेदार संरक्षण और सुरक्षित मंदिर सहभागिता का समर्थन करता है।"
+      },
+      "title": "कालभैरव जयंती स्मरण",
+      "typical_practices": [
+        {
+          "description": "स्रोत-चिह्नित शिव/भैरव पाठ, साहस और अनुशासन पर चिंतन तथा जिम्मेदार संरक्षण का एक काम सरल मार्ग बनाते हैं।",
+          "instructional": false,
+          "population_scope": "Supported home reflection or safe temple participation",
+          "practice_id": "bhairava-reading-discipline-service",
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Kashi's guardian-temple identity remains regional and is not copied into every household.",
+          "scope": "North India Smarta and Kashi regional lanes",
+          "separate_lane_required": true,
+          "source_ids": [
+            "kashi-official-shri-kaal-bhairav-temple",
+            "devam-kalabhairava-safety-boundary"
+          ],
+          "variant_id": "north-and-kashi-contexts"
+        },
+        {
+          "difference": "North Margashirsha and South Kartika month names are preserved without declaring their practices identical.",
+          "scope": "Lunar-month naming",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drikpanchang-delhi-masika-kalashtami-2026"
+          ],
+          "variant_id": "north-south-month-names"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "kalabhairava-jayanti"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "df5444680f998850f9115ce71e65da251b9afd70f77031098c9dd7b06afff229",
+      "citation_coordinates": {
+        "legacy_pack": "knowledge_packs/rituals/kalabhairava-jayanti-north-kashi-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-kalabhairava-calendar-fixture",
+      "source_role": "bounded_2026_date_night_rule_and_north_south_month_identity_only",
+      "title": "Bounded Delhi Kalabhairava Jayanti calendar fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/vrats/masik-kalashtami-dates.html?geoname-id=1273294&year=2026",
+        "response_bytes": 87703,
+        "response_sha256": "e172a630891bc7c13b403a1c4c315ae8ffd154b82c953036adf925b5f8a2c037",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-delhi-masika-kalashtami-2026",
+      "source_role": "kalabhairav_jayanti_kalashtami_bhairava_ashtami_identity_and_night_rule_not_product_text",
+      "title": "2026 Kalashtami, Kala Ashtami dates for Delhi, NCT, India",
+      "url": "https://www.drikpanchang.com/vrats/masik-kalashtami-dates.html?geoname-id=1273294&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple",
+        "response_bytes": 100811,
+        "response_sha256": "f0fab6af66d8a42ade81f6ace680eda4c59e2bd885b64addd6c3c6fcfe039bb2",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Kashi Official Web Portal",
+      "rights_lane": "citation_only",
+      "source_id": "kashi-official-shri-kaal-bhairav-temple",
+      "source_role": "kaal_bhairav_as_shiva_manifestation_kashi_guardian_and_discipline_context_with_outcome_claims_isolated",
+      "title": "Shri Kaal Bhairav Temple",
+      "url": "https://kashi.gov.in/listing-details/shri-kaal-bhairav-temple"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-kalabhairava-safety-boundary",
+      "source_role": "supports_attributable_remembrance_courage_discipline_responsibility_and_safe_temple_participation_without_fear_occult_harm_or_outcome_rites",
+      "title": "Devam Kalabhairava Jayanti internal-beta safety and attribution boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-kalabhairava-jayanti-north-kashi-v1"
+  ]
+}

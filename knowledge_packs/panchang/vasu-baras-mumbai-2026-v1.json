@@ -1,0 +1,64 @@
+{
+  "contract": "DEVAM_VASU_BARAS_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-vasu-baras-mumbai-2026-v1",
+  "scope": {
+    "reference_location": "Mumbai, Maharashtra, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-04", "2026-11-05"],
+    "supported_tradition_codes": ["smarta-west-india"],
+    "selected_civil_date": "2026-11-05",
+    "date_resolved_by_devam_rule": true,
+    "provider_published_pradoshkala_republished": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drik-govatsa-dwadashi-mumbai-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/govatsa-dwadashi/govatsa-dwadashi-date-time.html?geoname-id=1275339&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "location_specific_date_and_identity_fixture_not_product_muhurta_or_rule_authority",
+      "observed_fetch": {"status": 200, "final_url": "https://www.drikpanchang.com/festivals/govatsa-dwadashi/govatsa-dwadashi-date-time.html?geoname-id=1275339&year=2026", "response_bytes": 70014, "response_sha256": "5200828fafc3fc3770a31fe333825118a57807c0a2d8677dc822c7180301751e", "strict_utf8": true},
+      "semantic_observation": {"mumbai_profile": true, "thursday_5_november_2026": true, "govatsa_dwadashi_name": true, "vasu_baras_name": true, "maharashtra_first_day_of_deepavali_identity": true, "cow_and_calf_worship_identity": true, "published_pradoshkala_present_but_not_republished": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "maharashtra-tourism-diwali-vasubaras",
+      "provider": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_maharashtra_vasubaras_pre_diwali_identity_and_regional_diversity",
+      "observed_fetch": {"status": 200, "final_url": "https://maharashtratourism.gov.in/festivals/diwali/", "response_bytes": 627482, "response_sha256": "60e1cf513e43ca1654427a6817aea16886d14445434a1ad02f9459e7dfd8af08", "strict_utf8": true},
+      "semantic_observation": {"pre_celebrations_start_from_vasubaras": true, "regional_diversity_explicit": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "ansi-rural-livestock-markets-vasubaras",
+      "provider": "Anthropological Survey of India, Central Regional Centre",
+      "url": "https://ansi.gov.in/wp-content/uploads/2025/03/Rural-Livestock-Markets-in-India-A-Report-on-Chandur-Bazar-Bail-Bazar-Amravati-Maharashtra.pdf",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_current_vidarbha_field_report_identity_gratitude_and_agrarian_practice_context",
+      "provider_document_observation": {"content_type": "application/pdf", "page_count": 184, "relevant_pdf_pages": [108, 109], "report_label": "Rural Livestock Markets 2023-2024", "vasubaras_maharashtra_and_diwali_opening": true, "gratitude_to_cows_and_agricultural_role": true, "farmer_interviews_and_practice_description": true},
+      "access_boundary": {"normal_tls_direct_fetch_status": 403, "raw_pdf_bytes_retained": false, "visual_render_completed": false, "search_provider_text_extraction_only": true},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "govatsa-dwadashi",
+    "canonical_name": "Govatsa Dwadashi / Vasu Baras",
+    "target_tithi": "Kartika Krishna Dvadashi",
+    "decision_window": "pradosha",
+    "selected_civil_date": "2026-11-05",
+    "fresh_mumbai_provider_date_matches": true,
+    "regional_forms_remain_separate": true
+  },
+  "denials": {
+    "provider_published_pradoshkala_republished": false,
+    "raw_anthropological_report_acquired_or_visually_reconciled": false,
+    "animal_contact_feeding_bathing_or_decoration_instructed": false,
+    "fast_or_dietary_abstention_prescribed": false,
+    "maharashtra_vasu_baras_merged_with_gujarat_wagh_baras_or_other_dwadashi_forms": false,
+    "source_text_returned_by_api": false,
+    "live_pages_or_pdf_copied_into_library": false
+  }
+}

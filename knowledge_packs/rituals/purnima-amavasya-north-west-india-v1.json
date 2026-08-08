@@ -1,0 +1,185 @@
+{
+  "contract": "DEVAM_RECURRING_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-purnima-amavasya-north-west-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slugs": ["bhadrapada-purnima", "ashwina-purnima", "kartika-purnima", "bhadrapada-amavasya", "ashwina-amavasya", "kartika-amavasya", "margashirsha-amavasya"],
+  "scope": {
+    "region_tradition_pairs": [{ "region_code": "north-india", "tradition_code": "smarta-north-india" }, { "region_code": "west-india", "tradition_code": "smarta-west-india" }],
+    "language_codes": ["en", "hi"],
+    "resolved_calendar_day_rules_required": true,
+    "family_practice_overrides_generic_sequence": true,
+    "purnima_and_amavasya_guides_remain_distinct": true,
+    "special_festival_vrata_shraddha_and_temple_lanes_excluded": true,
+    "margashirsha_purnima_unresolved_and_excluded": true
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-purnima-amavasya-calendar-rule",
+      "title": "Nirnayasindhu, Purnima and Amavasya calendar-day precedence",
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "url": null,
+      "source_class": "historical_rule_context",
+      "rights_lane": "reference_only",
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "evidence_role": "historical_named_calendar_day_context_not_modern_household_procedure"
+    },
+    {
+      "source_id": "drikpanchang-delhi-purnima-2026",
+      "title": "2026 Purnima dates for Delhi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=1261481&year=2026",
+      "source_class": "current_practitioner_calendar_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://www.drikpanchang.com/vrats/purnimasidates.html?geoname-id=1261481&year=2026", "response_bytes": 102831, "response_sha256": "dd7fdf64585ce00ec668bc0cd00fb3375204e79e8f8cc27e895f3a7dbe6ba8f3", "strict_utf8": true },
+      "evidence_role": "delhi_named_purnima_date_and_vrata_distinction_context"
+    },
+    {
+      "source_id": "drikpanchang-delhi-amavasya-2026",
+      "title": "2026 Amavasya dates for Delhi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=1261481&year=2026",
+      "source_class": "current_practitioner_calendar_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": { "status": 200, "final_url": "https://www.drikpanchang.com/vrats/amavasyadates.html?geoname-id=1261481&year=2026", "response_bytes": 90390, "response_sha256": "f1bcf96bcda4b56d8c923719f9240d5308d7b58aeafa7d3cb19e5dd2be11cdc1", "strict_utf8": true },
+      "evidence_role": "delhi_named_amavasya_date_and_separate_shraddha_darsha_context"
+    },
+    {
+      "source_id": "devam-purnima-amavasya-safety-boundary",
+      "title": "Devam generic lunar-day internal-beta safety and attribution boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary",
+      "rights_lane": "derivative_allowed",
+      "evidence_role": "keeps_special_festivals_fast_food_shraddha_tarpan_bathing_temple_mantra_and_outcome_claims_outside_generic_guides"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "purnima-calendar-day-en-v1",
+      "guide_kind": "purnima",
+      "language_code": "en",
+      "title": "Purnima calendar-day companion",
+      "summary": "A simple full-moon calendar-day reflection for a resolved North/West India Smarta date. Named festival, vrata, temple, and family practices remain separate.",
+      "family_practice_note": "If this Purnima carries an established family, temple, regional, or named-festival practice, follow that source. Devam does not prescribe fasting, moon worship, ritual bathing, offerings, or a universal Purnima vrata.",
+      "context_prompts": ["Which city and Panchang profile applies?", "Is this a generic Purnima day or a named family or regional festival?", "Does your family keep a familiar prayer, reading, or act of giving?", "Would a material-free and non-fasting reflection suit you?"],
+      "tiers": [
+        { "tier": "minimum", "label": "Full-moon pause", "estimated_minutes": 10, "materials": [{ "item": "A quiet place", "substitutions": ["A pause wherever you are", "No materials"], "optional": false }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm the named Purnima date in Today and notice any separately listed festival on the same civil day.", "why": "A sunrise calendar-day rule does not complete a vrata or named festival.", "optional": false, "source_ids": ["nirnayasindhu-1865-purnima-amavasya-calendar-rule", "drikpanchang-delhi-purnima-2026"] },
+          { "ordinal": 2, "instruction": "Pause with a family-known prayer or quiet gratitude; seeing the moon is optional.", "why": "This preserves a useful reflection without inventing universal moon worship.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Name one thing that has reached completion and one responsibility to carry forward.", "why": "The lunar marker becomes actionable without promising merit or an outcome.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "Gratitude, study, and giving", "estimated_minutes": 30, "materials": [{ "item": "A source-identified family-approved reading", "substitutions": ["Trusted audio", "Remembered teaching", "Quiet reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Begin with the family's known prayer or a quiet pause.", "why": "Family practice takes precedence over a generic generated sequence.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read or hear one short attributable teaching relevant to gratitude, completion, or responsibility.", "why": "Attribution keeps source, translation, commentary, and reflection distinct.", "optional": true, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Choose one proportionate act of generosity, repair, or service that does not require spending.", "why": "Giving remains voluntary and practical rather than a promised exchange for merit.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close according to family custom; do not import a named Purnima festival procedure into this generic day.", "why": "Kojagara, Kartika practices, Dev Deepawali, and other lanes remain separate.", "optional": false, "source_ids": ["drikpanchang-delhi-purnima-2026", "devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "Family- or community-led Purnima", "estimated_minutes": 60, "materials": [{ "item": "The established family or community programme", "substitutions": ["A trusted live or recorded programme", "The standard reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Identify the exact named Purnima and the authority leading its practice.", "why": "Different Purnimas have distinct stories, deities, vrata, and regional customs.", "optional": false, "source_ids": ["drikpanchang-delhi-purnima-2026", "devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Join only that known prayer, study, or service sequence; do not add rites from another Purnima.", "why": "It keeps living traditions attributable instead of flattening them.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Set aside unhurried time for gratitude, study, and one concrete act of care.", "why": "The longer form deepens attention without requiring a fast or ritual bath.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "amavasya-calendar-day-en-v1",
+      "guide_kind": "amavasya",
+      "language_code": "en",
+      "title": "Amavasya calendar-day companion",
+      "summary": "A quiet new-moon calendar-day reflection for a resolved North/West India Smarta date. Darsha, ancestor, shraddha, Diwali, temple, and family procedures remain separate.",
+      "family_practice_note": "Do not start shraddha, tarpan, fasting, ritual bathing, or an ancestor rite from this generic guide. Where such practice is established, follow the eligible family and qualified tradition authority.",
+      "context_prompts": ["Which city and Panchang profile applies?", "Does this Amavasya coincide with an established ancestor, Diwali, Darsha, temple, or regional practice?", "Who in the family guides any inherited observance?", "Would a private material-free remembrance suit you?"],
+      "tiers": [
+        { "tier": "minimum", "label": "Quiet new-moon reflection", "estimated_minutes": 10, "materials": [{ "item": "A quiet place", "substitutions": ["A pause wherever you are", "No materials"], "optional": false }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm the named Amavasya date in Today and keep any coincident festival or ancestor-practice card separate.", "why": "The generic calendar day does not decide Darsha, shraddha, or Diwali practice.", "optional": false, "source_ids": ["nirnayasindhu-1865-purnima-amavasya-calendar-rule", "drikpanchang-delhi-amavasya-2026"] },
+          { "ordinal": 2, "instruction": "Sit quietly and remember one source of care, inheritance, or support in your life without initiating a formal ancestor rite.", "why": "It allows gratitude while respecting eligibility and family-practice boundaries.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Choose one neglected responsibility to begin again with care.", "why": "The quiet day becomes useful without promising protection, purification, or merit.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "Remembrance, review, and repair", "estimated_minutes": 30, "materials": [{ "item": "A private note or remembered family story", "substitutions": ["Phone note", "Quiet recollection", "No record"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Begin with silence or a family-known prayer that requires no formal rite.", "why": "The guide does not manufacture a universal Amavasya mantra.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Recall a value, story, or responsibility received from family or teachers, while allowing grief or privacy without pressure.", "why": "Remembrance can be meaningful without impersonating shraddha or tarpan.", "optional": true, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Review one unfinished duty and take a small repair or service step.", "why": "It turns reflection into responsible action without an outcome claim.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close privately or by family custom; do not borrow a festival, ancestor, or temple procedure from another lane.", "why": "Special Amavasya practices remain separately sourced and applicable.", "optional": false, "source_ids": ["drikpanchang-delhi-amavasya-2026", "devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "Family-led Amavasya observance", "estimated_minutes": 60, "materials": [{ "item": "An established eligible family practice", "substitutions": ["A trusted community programme", "The standard private reflection"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Identify the exact Amavasya and whether an inherited family, ancestor, temple, or festival practice actually applies.", "why": "Names and eligibility cannot be inferred from the lunar day alone.", "optional": false, "source_ids": ["drikpanchang-delhi-amavasya-2026", "devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "If it applies, follow the established guide; otherwise use quiet remembrance, review, and service without formal ritual.", "why": "This preserves living authority and offers an inclusive fallback.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Give unhurried time to one responsibility, reconciliation, or act of care.", "why": "The longer form remains actionable without requiring fasting, water rites, or offerings.", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "purnima-calendar-day-hi-v1",
+      "guide_kind": "purnima",
+      "language_code": "hi",
+      "title": "पूर्णिमा पंचांग-दिवस सहचर",
+      "summary": "समर्थित उत्तर/पश्चिम भारत स्मार्त तिथि के लिए सरल पूर्णिमा-चिंतन। नामित पर्व, व्रत, मंदिर और पारिवारिक विधियाँ अलग रहती हैं।",
+      "family_practice_note": "परिवार या क्षेत्र में स्थापित पूर्णिमा-विधि हो तो उसी स्रोत को मानें। देवम उपवास, चन्द्र-पूजा, स्नान, अर्पण या सार्वभौमिक पूर्णिमा-व्रत नहीं बताता।",
+      "context_prompts": ["कौन-सा शहर और पंचांग-प्रोफाइल लागू है?", "यह सामान्य पूर्णिमा है या नामित पारिवारिक/क्षेत्रीय पर्व?", "क्या परिचित प्रार्थना, पाठ या दान-सेवा है?", "क्या सामग्री-रहित, बिना उपवास वाला चिंतन उपयुक्त है?"],
+      "tiers": [
+        { "tier": "minimum", "label": "पूर्णिमा विराम", "estimated_minutes": 10, "materials": [{ "item": "शांत स्थान", "substitutions": ["जहाँ हैं वहीं विराम", "कोई सामग्री नहीं"], "optional": false }], "steps": [
+          { "ordinal": 1, "instruction": "Today में नामित पूर्णिमा और उसी दिन दिख रहे अलग पर्व देखें।", "why": "पंचांग-दिवस नियम व्रत या पर्व पूरा नहीं करता।", "optional": false, "source_ids": ["nirnayasindhu-1865-purnima-amavasya-calendar-rule", "drikpanchang-delhi-purnima-2026"] },
+          { "ordinal": 2, "instruction": "परिचित प्रार्थना या कृतज्ञ मौन रखें; चन्द्र-दर्शन वैकल्पिक है।", "why": "इससे सार्वभौमिक चन्द्र-पूजा गढ़े बिना चिंतन होता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "एक पूर्ण हुई बात और आगे निभाने वाली एक जिम्मेदारी पहचानें।", "why": "फल की गारंटी बिना चन्द्र-दिवस व्यवहार में आता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "कृतज्ञता, अध्ययन और सेवा", "estimated_minutes": 30, "materials": [{ "item": "स्रोत-पहचान वाला मान्य पाठ", "substitutions": ["विश्वसनीय श्रव्य-पाठ", "याद की शिक्षा", "मौन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "परिवार की परिचित प्रार्थना या मौन से शुरू करें।", "why": "परिवार की विधि सामान्य क्रम से पहले आती है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "कृतज्ञता या जिम्मेदारी पर छोटा स्रोतयुक्त पाठ पढ़ें।", "why": "स्रोत, अनुवाद और निजी चिंतन अलग रहते हैं।", "optional": true, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "बिना खर्च की उदारता, सुधार या सेवा का एक काम चुनें।", "why": "सेवा स्वैच्छिक रहती है, पुण्य का सौदा नहीं।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 4, "instruction": "परिवार की रीति से समापन करें; किसी नामित पूर्णिमा की विधि यहाँ न मिलाएँ।", "why": "कोजागरा, कार्तिक और देव दीपावली अलग हैं।", "optional": false, "source_ids": ["drikpanchang-delhi-purnima-2026", "devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "परिवार या समुदाय की पूर्णिमा", "estimated_minutes": 60, "materials": [{ "item": "स्थापित पारिवारिक या सामुदायिक कार्यक्रम", "substitutions": ["विश्वसनीय कार्यक्रम", "मानक चिंतन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "सटीक नामित पूर्णिमा और नेतृत्व करने वाला प्राधिकारी पहचानें।", "why": "विभिन्न पूर्णिमाओं की कथा और रीति अलग हैं।", "optional": false, "source_ids": ["drikpanchang-delhi-purnima-2026", "devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "उसी परिचित प्रार्थना, अध्ययन या सेवा में जुड़ें।", "why": "जीवित परम्परा स्रोतयुक्त रहती है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "कृतज्ञता, अध्ययन और देखभाल के एक काम को समय दें।", "why": "उपवास या स्नान अनिवार्य किए बिना ध्यान गहरा होता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "amavasya-calendar-day-hi-v1",
+      "guide_kind": "amavasya",
+      "language_code": "hi",
+      "title": "अमावस्या पंचांग-दिवस सहचर",
+      "summary": "समर्थित उत्तर/पश्चिम भारत स्मार्त तिथि के लिए शांत अमावस्या-चिंतन। दर्श, श्राद्ध, दीपावली, मंदिर और पारिवारिक विधियाँ अलग रहती हैं।",
+      "family_practice_note": "इस सामान्य सहचर से श्राद्ध, तर्पण, उपवास, स्नान या पितृ-कर्म शुरू न करें। स्थापित विधि हो तो योग्य पारिवारिक और परम्परागत मार्गदर्शक को मानें।",
+      "context_prompts": ["कौन-सा शहर और पंचांग-प्रोफाइल लागू है?", "क्या यह अमावस्या पितृ, दीपावली, दर्श, मंदिर या क्षेत्रीय विधि से जुड़ी है?", "परिवार में विरासत की विधि कौन बताता है?", "क्या निजी सामग्री-रहित स्मरण उपयुक्त है?"],
+      "tiers": [
+        { "tier": "minimum", "label": "शांत अमावस्या चिंतन", "estimated_minutes": 10, "materials": [{ "item": "शांत स्थान", "substitutions": ["जहाँ हैं वहीं विराम", "कोई सामग्री नहीं"], "optional": false }], "steps": [
+          { "ordinal": 1, "instruction": "Today में नामित अमावस्या और साथ दिख रहे पर्व या पितृ-विधि को अलग रखें।", "why": "सामान्य दिन दर्श, श्राद्ध या दीपावली तय नहीं करता।", "optional": false, "source_ids": ["nirnayasindhu-1865-purnima-amavasya-calendar-rule", "drikpanchang-delhi-amavasya-2026"] },
+          { "ordinal": 2, "instruction": "औपचारिक पितृ-कर्म शुरू किए बिना जीवन में मिली देखभाल या विरासत को मौन में याद करें।", "why": "योग्यता और परिवार की सीमा रखते हुए कृतज्ञता सम्भव है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "एक उपेक्षित जिम्मेदारी को फिर से शुरू करने का छोटा कदम चुनें।", "why": "रक्षा, शुद्धि या पुण्य की गारंटी बिना दिन उपयोगी बनता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "standard", "label": "स्मरण, समीक्षा और सुधार", "estimated_minutes": 30, "materials": [{ "item": "निजी नोट या पारिवारिक स्मृति", "substitutions": ["फोन नोट", "मौन स्मरण", "कोई रिकॉर्ड नहीं"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "मौन या परिचित सरल प्रार्थना से शुरू करें।", "why": "सहचर सार्वभौमिक अमावस्या मंत्र नहीं बनाता।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "परिवार या गुरु से मिले मूल्य, कथा या जिम्मेदारी को निजी रूप से याद करें।", "why": "स्मरण श्राद्ध या तर्पण का अभिनय नहीं करता।", "optional": true, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "अधूरे कर्तव्य पर छोटा सुधार या सेवा करें।", "why": "फल-दावे बिना चिंतन जिम्मेदार काम बनता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 4, "instruction": "निजी या पारिवारिक रीति से समापन करें; दूसरी विधि न मिलाएँ।", "why": "विशेष अमावस्या-विधियाँ अलग स्रोतयुक्त हैं।", "optional": false, "source_ids": ["drikpanchang-delhi-amavasya-2026", "devam-purnima-amavasya-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "परिवार-नेतृत्व अमावस्या", "estimated_minutes": 60, "materials": [{ "item": "स्थापित योग्य पारिवारिक विधि", "substitutions": ["विश्वसनीय सामुदायिक कार्यक्रम", "निजी मानक चिंतन"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "सटीक अमावस्या और लागू पारिवारिक, पितृ, मंदिर या पर्व-विधि पहचानें।", "why": "नाम और योग्यता केवल चन्द्र-दिन से नहीं मिलते।", "optional": false, "source_ids": ["drikpanchang-delhi-amavasya-2026", "devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 2, "instruction": "लागू हो तो स्थापित मार्गदर्शक को मानें; अन्यथा मौन स्मरण, समीक्षा और सेवा रखें।", "why": "जीवित प्राधिकार सुरक्षित रहता है और सरल विकल्प मिलता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] },
+          { "ordinal": 3, "instruction": "जिम्मेदारी, मेल-मिलाप या देखभाल को समय दें।", "why": "उपवास, जल-विधि या अर्पण बिना रूप उपयोगी रहता है।", "optional": false, "source_ids": ["devam-purnima-amavasya-safety-boundary"] }
+        ] }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "seven_resolved_calendar_day_slugs_supported": true,
+    "purnima_and_amavasya_guides_distinct": true,
+    "material_free_and_non_fasting_forms_supported": true,
+    "coincident_special_observances_remain_separate": true,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "food_or_dietary_rules_given": false,
+    "medical_guidance_given": false,
+    "shraddha_tarpan_darsha_or_ancestor_rite_prescribed": false,
+    "ritual_bathing_moon_worship_offering_mantra_or_temple_procedure_prescribed": false,
+    "kojagara_dev_deepawali_diwali_or_other_special_festival_merged": false,
+    "margashirsha_purnima_promoted": false,
+    "purification_protection_merit_ancestor_benefit_prosperity_or_other_outcome_guaranteed": false,
+    "all_regional_family_temple_vrata_and_ancestor_variants_complete": false
+  }
+}

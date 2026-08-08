@@ -1,0 +1,88 @@
+{
+  "contract": "DEVAM_NARAKA_CHATURDASHI_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-naraka-chaturdashi-mumbai-2026-v1",
+  "scope": {
+    "reference_location": "Mumbai, Maharashtra, India",
+    "geoname_id": 1275339,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-07", "2026-11-08"],
+    "supported_tradition_codes": ["smarta-west-india"],
+    "date_resolved_by_devam": true,
+    "moonrise_to_sunrise_window_recalculated_by_devam": true,
+    "provider_published_muhurta_reproduced": false,
+    "ritual_guidance_included": false,
+    "universal_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drik-abhyang-snan-mumbai-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/abhyangsnan/festivals-abhyangsnan-timings.html?geoname-id=1275339&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_naraka_identity_moonrise_to_sunrise_rule_and_mumbai_date_fixture",
+      "raw_page_is_dynamic": true,
+      "observed_fetch": {"status": 200, "final_url": "https://www.drikpanchang.com/festivals/abhyangsnan/festivals-abhyangsnan-timings.html?geoname-id=1275339&year=2026", "response_bytes": 80461, "response_sha256": "a5be9abc5d3c7509c21c86246d6e1f4a17698f5f8cb870ae6c5155fe8289a7cb", "strict_utf8": true},
+      "semantic_observation": {"title": "2026 Abhyang Snan on Narak Chaturdashi during Diwali, Bath Date and Time for Mumbai, Maharashtra, India", "civil_date": "2026-11-08", "weekday": "Sunday", "published_abhyanga_begins_local": "05:45", "published_abhyanga_ends_local": "06:42", "published_moonrise_local": "05:45", "chaturdashi_begins_local": "2026-11-07T10:47:00+05:30", "chaturdashi_ends_local": "2026-11-08T11:27:00+05:30", "decision_window_between_moonrise_and_sunrise_while_chaturdashi_prevails": true, "naraka_chaturdashi_and_kali_chaudas_explicitly_distinguished": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "maharashtra-tourism-diwali-narak-chaturdashi",
+      "provider": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_maharashtra_diwali_sequence_and_narak_chaturdashi_identity_not_date_rule_or_complete_procedure",
+      "raw_page_is_dynamic": true,
+      "observed_fetch": {"status": 200, "final_url": "https://maharashtratourism.gov.in/festivals/diwali/", "response_bytes": 627476, "response_sha256": "8c70401997942baa16ff96e2f7361f29c66304a434894594679d4880c59aa979", "strict_utf8": true},
+      "semantic_observation": {"day_two_narak_chaturdashi_identity": true, "regional_diversity_context": true, "complete_abhyanga_procedure_observed": false},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "fixed_adjacent_evidence": {
+    "source_id": "nirnayasindhu-marathi-1865-kartika-krishna-chaturdashi-context",
+    "provider": "Devam retained source vault",
+    "object_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+    "object_bytes": 93531683,
+    "media_type": "application/pdf",
+    "rights_lane": "private_evidence",
+    "visually_inspected_pdf_pages": [214, 215],
+    "evidence_role": "historical_adjacent_naraka_chaturdashi_context_not_current_maharashtra_abhyanga_procedure_authority",
+    "source_text_returned_by_api": false
+  },
+  "calculation_fixture": {
+    "latitude": 19.076,
+    "longitude": 72.8777,
+    "engine_version": "astronomy-engine-2.1.19-lahiri-v3",
+    "candidate_days": [
+      {"civil_date": "2026-11-07", "moonrise_utc": "2026-11-06T23:17:50.420Z", "sunrise_utc": "2026-11-07T01:11:33.450Z", "tithi_at_moonrise": "Trayodashi", "tithi_at_sunrise": "Trayodashi", "qualifies": false},
+      {"civil_date": "2026-11-08", "moonrise_utc": "2026-11-08T00:11:01.455Z", "sunrise_utc": "2026-11-08T01:12:03.227Z", "tithi_at_moonrise": "Chaturdashi", "tithi_at_sunrise": "Chaturdashi", "qualifies": true}
+    ],
+    "provider_moonrise_difference_seconds": 239,
+    "provider_fixture_tolerance_seconds": 420
+  },
+  "decision": {
+    "observance_slug": "naraka-chaturdashi",
+    "canonical_name": "Naraka Chaturdashi / Abhyanga Snan",
+    "target_tithi": "Chaturdashi",
+    "target_paksha": "krishna",
+    "decision_window": "moonrise_to_sunrise",
+    "selection": "select_only_when_exactly_one_candidate_civil_day_has_kartika_krishna_chaturdashi_throughout_local_moonrise_to_sunrise_window",
+    "selected_civil_date": "2026-11-08",
+    "both_candidates_qualify": "fail_closed",
+    "neither_candidate_qualifies": "fail_closed",
+    "kali_chaudas_remains_separate": true,
+    "tamil_deepavali_remains_separate": true
+  },
+  "denials": {
+    "provider_published_muhurta_republished": false,
+    "ritual_procedure_included": false,
+    "sesame_oil_or_ubtan_required": false,
+    "karita_crushing_required": false,
+    "fireworks_required_or_recommended": false,
+    "medical_suitability_claimed": false,
+    "guaranteed_outcome_claimed": false,
+    "kali_chaudas_merged": false,
+    "tamil_deepavali_merged": false,
+    "one_universal_indian_procedure_claimed": false,
+    "source_text_returned_by_api": false
+  }
+}

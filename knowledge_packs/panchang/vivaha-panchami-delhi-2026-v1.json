@@ -1,0 +1,115 @@
+{
+  "contract": "DEVAM_BOUNDED_VIVAHA_PANCHAMI_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-vivaha-panchami-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-12-13", "2026-12-14"],
+    "selected_civil_date": "2026-12-14",
+    "supported_tradition_codes": ["smarta-north-india"],
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "drikpanchang-delhi-vivaha-panchami-2026",
+      "title": "2026 Vivah Panchami date and time for Delhi, NCT, India",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/vivah-panchami/vivah-panchami-date-time.html?geoname-id=1273294&year=2026",
+      "source_class": "current_practitioner_identity_tithi_and_location_specific_date_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/vivah-panchami/vivah-panchami-date-time.html?geoname-id=1273294&year=2026",
+        "response_bytes": 67949,
+        "response_sha256": "d2522e46a93afc6cf0945f504c7230c5656c49fb04050015d1af4d033ac59977",
+        "strict_utf8": true
+      },
+      "observed_literals": {
+        "selected_civil_date": "2026-12-14",
+        "weekday": "Monday",
+        "paksha_tithi_month": "Margashirsha Shukla Panchami",
+        "panchami_begins_local": "2026-12-13T16:47:00+05:30",
+        "panchami_ends_local": "2026-12-14T19:15:00+05:30",
+        "rama_sita_divine_wedding_identity": true,
+        "mithila_ayodhya_and_janakpur_context_present": true,
+        "provider_outcome_or_fast_claims_promoted_by_devam": false
+      },
+      "evidence_role": "current_identity_tithi_interval_and_delhi_date_fixture_not_complete_calendar_authority_or_vidhi"
+    },
+    {
+      "source_id": "incredible-india-orchha-vivaha-panchami-2026",
+      "title": "Vivah Panchami Mahotsav at Orchha",
+      "publisher": "Ministry of Tourism, Government of India; source credited to Madhya Pradesh Tourism",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/vivah-panchami-mahotsav",
+      "source_class": "official_orchha_public_festival_identity_and_date_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/vivah-panchami-mahotsav",
+        "response_bytes": 485310,
+        "response_sha256": "8ce92ad620778f22f40d4ad350480516025943055821e44ed74c77197fa841d7",
+        "strict_utf8": true
+      },
+      "observed_literals": {
+        "selected_civil_date": "2026-12-14",
+        "ram_janaki_wedding_identity": true,
+        "ram_raja_orchha_context": true,
+        "ayodhya_of_bundelkhand_label": true,
+        "public_procession_or_temple_procedure_exported_as_home_vidhi": false
+      },
+      "evidence_role": "official_orchha_identity_and_current_public_festival_context_not_universal_household_procedure"
+    },
+    {
+      "source_id": "pib-ayodhya-vivaha-panchami-context",
+      "title": "Prime Minister participates in Dhwajarohan Utsav at Shri Ram Janmabhoomi Mandir in Ayodhya",
+      "publisher": "Press Information Bureau, Government of India",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2194034",
+      "source_class": "official_ayodhya_margashirsha_shukla_panchami_identity_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2194034&reg=48&lang=2",
+        "response_bytes": 245935,
+        "response_sha256": "61f73318563249db6b9318af4f0f1918210d113abd672f037b2c73b50ac3b8d8",
+        "strict_utf8": true
+      },
+      "observed_literals": {
+        "margashirsha_shukla_panchami_identity": true,
+        "rama_sita_divine_union_identity": true,
+        "ayodhya_context": true
+      },
+      "evidence_role": "official_identity_and_ayodhya_context_not_calendar_computation_or_household_vidhi"
+    }
+  ],
+  "rule": {
+    "observance_slug": "vivaha-panchami",
+    "canonical_name": "Vivaha Panchami",
+    "target_tithi": "Panchami",
+    "target_paksha": "shukla",
+    "target_lunar_month": "Margashirsha",
+    "decision_window": "local_sunrise_presence",
+    "selection": "select_only_when_exactly_one_candidate_sunrise_bears_shukla_panchami",
+    "both_candidates_qualify": "fail_closed",
+    "neither_candidate_qualifies": "fail_closed",
+    "calendar_engine_recomputes_requested_location": true,
+    "fasting_procedure_resolved": false,
+    "formal_wedding_or_puja_procedure_resolved": false,
+    "temple_procession_or_event_operations_resolved": false
+  },
+  "denials": {
+    "universal_india_date_claim": false,
+    "complete_vivaha_panchami_tradition_claim": false,
+    "janakpur_ayodhya_and_orchha_practices_merged": false,
+    "public_festival_reenactment_exported_as_household_vidhi": false,
+    "fast_or_food_regimen_prescribed": false,
+    "formal_wedding_puja_mantra_offering_or_procession_prescribed": false,
+    "marriage_spouse_fertility_prosperity_or_other_outcome_guaranteed": false,
+    "ramayana_edition_or_episode_completeness_claimed": false,
+    "live_event_travel_access_or_crowd_advice_given": false,
+    "source_page_text_returned_by_api": false
+  }
+}

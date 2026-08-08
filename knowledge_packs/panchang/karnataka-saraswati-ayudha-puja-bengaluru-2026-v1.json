@@ -1,0 +1,87 @@
+{
+  "contract": "DEVAM_KARNATAKA_SARASWATI_AYUDHA_PUJA_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-karnataka-saraswati-ayudha-puja-bengaluru-2026-v1",
+  "scope": {
+    "reference_location": "Bengaluru, Karnataka, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-10-19", "2026-10-20"],
+    "supported_tradition_codes": ["smarta-south-india"],
+    "selected_civil_date": "2026-10-20",
+    "official_karnataka_date_matches": true,
+    "provider_event_time_reproduced": false,
+    "universal_karnataka_or_south_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "cgst-karnataka-holiday-list-2026-mahanavami",
+      "provider": "CGST Karnataka",
+      "url": "https://gstkarnataka.gov.in/media/pdf/notifications/public-notices/2025-12-31_Holiday_List_for_the_year_2026_20251231_120602.pdf",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_2026_karnataka_civil_date_and_dussehra_navami_label_not_ritual_authority",
+      "observed_fetch": {"fetched_at_utc": "2026-08-07", "status": 200, "final_url": "https://gstkarnataka.gov.in/media/pdf/notifications/public-notices/2025-12-31_Holiday_List_for_the_year_2026_20251231_120602.pdf", "response_bytes": 324154, "response_sha256": "1c97d1934109b0229d6c1585d51f7736423dd975dfa92027e779bab4a523834a", "strict_utf8": null},
+      "semantic_observation": {"dussehra_navami_literal": true, "tuesday_20_october_2026": true, "ritual_procedure_present": false},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "nic-karnataka-mahanavami-ayudhapooja",
+      "provider": "NIC Karnataka",
+      "url": "https://karnataka.nic.in/en/holiday/mahanavami-ayudhapooja/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_karnataka_combined_mahanavami_and_ayudhapooja_identity_not_procedure_or_time_authority",
+      "observed_fetch": {"fetched_at_utc": "2026-08-07", "status": 200, "final_url": "https://karnataka.nic.in/en/holiday/mahanavami-ayudhapooja/", "response_bytes": 88292, "response_sha256": "3dd0a7054170465847edf5322f00d697a6f3bd0822f83cabb3a0c8668cbc6d11", "strict_utf8": true},
+      "semantic_observation": {"mahanavami_literal": true, "ayudhapooja_literal": true, "ritual_procedure_present": false},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "sringeri-sriyantra-navaratri-sarasvati",
+      "provider": "Sringeri Sharada Peetham",
+      "url": "https://www.sringeri.info/sriyantra/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_tradition_source_for_ninth_day_sarasvati_puja_identity_not_household_vidhi",
+      "observed_fetch": {"fetched_at_utc": "2026-08-07", "status": 200, "final_url": "https://www.sringeri.info/sriyantra/", "response_bytes": 56235, "response_sha256": "2302d71b9eb99cb4839fda94a8f439760b17d3f2fd2297d63ce0d68ccac71b16", "strict_utf8": true},
+      "semantic_observation": {"ninth_day_devoted_to_sarasvati_puja": true, "sarasvati_goddess_of_learning": true, "complete_household_procedure_present": false},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "sringeri-2025-mahanavami-ayudha-vahana",
+      "provider": "Sringeri Sharada Peetham",
+      "url": "https://www.sringeri.net/events/vishwavasu-samvatsara-sharada-sharan-navaratri-celebrations",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_institutional_context_for_mahanavami_ayudha_and_vahana_puja_not_household_or_workplace_instruction",
+      "observed_fetch": {"fetched_at_utc": "2026-08-07", "status": 200, "final_url": "https://www.sringeri.net/events/vishwavasu-samvatsara-sharada-sharan-navaratri-celebrations", "response_bytes": 177565, "response_sha256": "d18b1410fc333ec2cf028e3a430965db868c7beff84c18700b8b65457ede5fac", "strict_utf8": true},
+      "semantic_observation": {"mahanavami_ashwayuja_shukla_navami": true, "ayudha_puja_same_day": true, "vahana_puja_same_day": true, "institutional_rites_not_household_vidhi": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "karnataka-tourism-gombe-habba",
+      "provider": "Karnataka Tourism",
+      "url": "https://karnatakatourism.org/en/experiences/gombe-habba/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_regional_household_gombe_context_and_ninth_day_saraswati_puja_identity_not_universal_requirement",
+      "observed_fetch": {"fetched_at_utc": "2026-08-07", "status": 200, "final_url": "https://karnatakatourism.org/en/experiences/gombe-habba/", "response_bytes": 59467, "response_sha256": "c1934e58ab6c1071a8345ea74e2876482abd90b3d609b221ca157887369d14ba", "strict_utf8": true},
+      "semantic_observation": {"gombe_habba_described": true, "saraswati_puja_ninth_day": true, "dolls_packed_tenth_day": true, "gombe_habba_universal_requirement": false},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "karnataka-saraswati-ayudha-puja",
+    "canonical_name": "Karnataka Saraswati Puja / Ayudha Puja",
+    "target_tithi": "Ashwayuja Shukla Navami",
+    "devam_rule": "for_the_bounded_bengaluru_2026_lane_use_the_official_karnataka_mahanavami_date_and_require_navami_overlap_at_local_sunrise",
+    "selected_civil_date": "2026-10-20",
+    "official_karnataka_date_matches": true,
+    "north_india_vijayadashami_bengal_navami_and_other_south_indian_forms_remain_separate": true
+  },
+  "denials": {
+    "provider_event_time_reproduced": false,
+    "formal_saraswati_puja_mantras_or_consecration_included": false,
+    "homa_temple_or_math_procedure_included": false,
+    "vehicle_or_operational_equipment_ritual_instructed": false,
+    "gombe_habba_required": false,
+    "books_tools_vehicle_flame_food_purchase_or_fast_required": false,
+    "learning_success_safety_prosperity_or_other_outcome_guaranteed": false,
+    "all_karnataka_or_south_indian_variants_equivalent": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

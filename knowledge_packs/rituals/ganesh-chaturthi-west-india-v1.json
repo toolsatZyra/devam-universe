@@ -1,0 +1,216 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-ganesh-chaturthi-west-india-practice-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "ganesh-chaturthi",
+  "scope": {
+    "region_codes": ["west-india"],
+    "tradition_codes": ["smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "temporary_and_permanent_murti_contexts_kept_separate": true,
+    "family_custom_overrides_generic_sequence": true
+  },
+  "sources": [
+    {
+      "source_id": "maharashtra-tourism-ganesh-chaturthi-2026",
+      "title": "Ganesh Chaturthi",
+      "publisher": "Directorate of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/ganesh-chaturthi/",
+      "source_class": "official_current",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["home and community installation", "daily prayer and arati", "modak as naivedya", "variable festival duration", "clay and lower-impact celebration"]
+    },
+    {
+      "source_id": "siddhivinayak-trust-pooja-details-2026",
+      "title": "Pooja Details",
+      "publisher": "Shree Siddhivinayak Ganapati Mandir Trust",
+      "url": "https://www.siddhivinayak.org/pooja-details-2/",
+      "source_class": "official_temple_current",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["Panchamrut and Shodashopchar as distinct service levels", "Atharvashirsha recitation", "fruit, coconut, ladoo and vastra offerings", "priest-led elaborate worship boundary"]
+    },
+    {
+      "source_id": "sanatan-sanstha-ganesh-pujavidhi-2026",
+      "title": "Complete Shri Ganesh Chaturthi pujavidhi",
+      "publisher": "Sanatan Sanstha",
+      "url": "https://www.sanatan.org/en/a/95683.html",
+      "source_class": "living_tradition_instruction",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "reference_only",
+      "supports": ["home preparation and installation sequence", "durva, flower and modak offerings", "expanded upachara sequence", "uttarapuja for a temporary festival murti"]
+    },
+    {
+      "source_id": "nirnayasindhu-marathi-1865-pages-50-51",
+      "title": "Nirnayasindhu — Marathi translation, Mumbai 1865",
+      "publisher": "Ganapati Krishnajii Press",
+      "url": "https://archive.org/details/in.ernet.dli.2015.365977",
+      "source_class": "historical_dharmashastra",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "private_evidence",
+      "supports": ["historical Ganesh-vrata context", "Bhadrapada Shukla Chaturthi timing rule"],
+      "citation": {"pdf_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b", "pdf_pages": [50, 51]}
+    },
+    {
+      "source_id": "devam-ganesha-hymn-pack-v1",
+      "title": "Shriganapatimantraksharavali exact-source knowledge pack",
+      "publisher": "Devam, from an Ambuda CC0 source object",
+      "url": null,
+      "source_class": "product_usable_primary_text",
+      "accessed_on": "2026-08-06",
+      "rights_lane": "derivative_allowed",
+      "supports": ["optional four-step Sanskrit devotional reading with exact source ordinals"],
+      "citation": {"source_sha256": "21e5909392249ecca6677410c30d70323402d886975df807df2b865697fd9e6d", "pack_id": "ganesha-shriganapatimantraksharavali-v1"}
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "ganesh-chaturthi-west-india-en-v1",
+      "language_code": "en",
+      "title": "Ganesh Chaturthi at home",
+      "summary": "Choose the form your household can perform attentively. A simple offering is complete in its own scope; a temporary festival murti adds installation, daily care, uttarpuja and responsible visarjan.",
+      "family_practice_note": "If your family, community or priest has an inherited sequence, follow it. Tell Sarthi whether this is a permanent home image, a temporary festival murti, or no murti, because installation and visarjan instructions do not apply to every home.",
+      "context_prompts": [
+        "Is this a permanent home image or a temporary festival murti?",
+        "Does your family follow a particular regional, sampradaya or priest-led sequence?",
+        "How much time do you have: about 10, 30 or 60+ minutes?",
+        "Would you like the optional Sanskrit reading, an arati, or a prayer in your own words?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "A quiet home offering",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "A clean place and a Ganesha image or the form you already worship", "substitutions": ["If no image is available, pray mentally or write the name Shri Ganesha"], "optional": false},
+            {"item": "Clean water", "substitutions": [], "optional": false},
+            {"item": "One flower, durva, leaf, or another respectful natural offering", "substitutions": ["Use what is locally and responsibly available"], "optional": false},
+            {"item": "Fruit, modak, ladoo, jaggery, or another vegetarian food your household can offer", "substitutions": ["A small piece of fruit is enough"], "optional": false},
+            {"item": "A lamp", "substitutions": ["Skip an open flame where it is unsafe"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Clean the place, wash your hands, sit calmly, and name the intention for the worship in your own words.", "why": "Preparation and a clear intention make the act attentive without requiring a long formal sankalpa.", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 2, "instruction": "Welcome Shri Ganesha respectfully. If this is your regular home image, do not perform a new installation; simply begin the worship.", "why": "A permanent home image and a temporary festival murti are different practice contexts.", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 3, "instruction": "Offer water, the flower or durva, and the food. Acknowledge each offering simply; exact Sanskrit is optional.", "why": "Flowers or durva and a sweet or fruit are widely attested offerings, while substitutions keep the practice accessible.", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026", "siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 4, "instruction": "Pray, chant Ganesha's name, sing your family arati, or use Devam's optional four-step source reading. Sit silently for a moment, bow, and share the offered food as prasad.", "why": "The close keeps the focus on prayer rather than on completing a checklist.", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "devam-ganesha-hymn-pack-v1"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "A fuller household puja",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "Everything in the minimum form", "substitutions": [], "optional": false},
+            {"item": "A clean cloth or seat, kumkum or sandal paste, incense, and a lamp", "substitutions": ["Use only the items your household normally uses; incense and flame can be omitted"], "optional": true},
+            {"item": "Durva and a red or locally available flower", "substitutions": ["Any respectful, responsibly sourced flower or leaf"], "optional": true},
+            {"item": "Modak or another household naivedya", "substitutions": ["Fruit, ladoo, jaggery, or a simple vegetarian preparation"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Prepare the place and offerings, light the lamp only if safe, and state the date, place, household, and purpose of the puja in simple language.", "why": "This is a usable household form of preparation and sankalpa.", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026", "nirnayasindhu-marathi-1865-pages-50-51"]},
+            {"ordinal": 2, "instruction": "Remember your family deity, teachers and Ganesha, then welcome Ganesha. For a temporary murti, use your family's installation practice; for a permanent image, skip installation.", "why": "It preserves the identity of the object and the family's inherited practice.", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 3, "instruction": "Offer a seat symbolically, then water, sandal or kumkum, akshata if used, flowers or durva, incense, lamp and naivedya in that order. Do not pour liquids on a painted, electrical, fragile or unsuitable image.", "why": "The sequence is a compact upachara form; the material warning prevents damage and unsafe imitation.", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026", "siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 4, "instruction": "Recite a Ganesha prayer, an already-familiar Atharvashirsha or stotra, or Devam's four-step source reading. Do not use unfamiliar initiation-bound mantras merely because they appear online.", "why": "Siddhivinayak Trust attests Atharvashirsha practice; Devam keeps the exact reading source-addressable.", "optional": false, "source_ids": ["siddhivinayak-trust-pooja-details-2026", "devam-ganesha-hymn-pack-v1"]},
+            {"ordinal": 5, "instruction": "Perform the arati your family knows, offer namaskara, ask forgiveness for mistakes, and distribute prasad. If a temporary murti will stay, record the chosen duration and continue a shorter morning/evening offering until uttarpuja.", "why": "Household durations vary, and daily prayer or arati during the stay is a current Maharashtra practice.", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "A priest- or family-text-led festival puja",
+          "estimated_minutes": 75,
+          "materials": [
+            {"item": "The complete standard set plus the items prescribed by your priest or family text", "substitutions": ["Agree substitutions with the person leading the puja"], "optional": false},
+            {"item": "A suitable temporary clay murti, only if your household is actually observing installation and visarjan", "substitutions": ["Use the permanent home image and omit installation and visarjan"], "optional": true},
+            {"item": "Panchamrit and bathing vessels", "substitutions": ["Use symbolic water only where the murti material or family practice does not permit bathing"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Have a competent family practitioner or priest establish the sankalpa, kalasha and temporary-murti installation sequence appropriate to your lineage and location.", "why": "The official Siddhivinayak schedule itself distinguishes priest-directed Panchamrut and Shodashopchar services; Devam should not improvise their mantras.", "optional": false, "source_ids": ["siddhivinayak-trust-pooja-details-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 2, "instruction": "Perform the agreed expanded upacharas: welcome and seat; water offerings; safe symbolic or prescribed bathing; cloth and sacred-thread offerings where customary; fragrance, akshata and flowers or durva; incense and lamp; naivedya and water.", "why": "This retains the recognizable expanded sequence without claiming one universal inventory.", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026", "siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 3, "instruction": "Use the mantra, Atharvashirsha, namavali, stotra or homa sequence authorized by the family text or priest. Treat fire ritual as trained, supervised practice rather than an app-only instruction.", "why": "The temple source distinguishes recitation, namavali and havan as substantial separate services.", "optional": false, "source_ids": ["siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 4, "instruction": "Conclude with arati, namaskara, forgiveness, blessing and prasad. Maintain the temporary murti for the family's chosen duration with daily care.", "why": "Current Maharashtra practice includes daily prayer and arati over several possible durations.", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026"]},
+            {"ordinal": 5, "instruction": "When the chosen stay ends, perform the family's uttarpuja before visarjan. Prefer a small natural-clay murti and the locally authorized, environmentally responsible immersion method; never immerse a permanent home image.", "why": "Uttarpuja applies to the temporary festival murti, and official current guidance emphasizes lower-impact materials.", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "ganesh-chaturthi-west-india-hi-v1",
+      "language_code": "hi",
+      "title": "घर पर गणेश चतुर्थी",
+      "summary": "जितना समय और सामग्री सहज रूप से उपलब्ध हो, उतनी ही श्रद्धापूर्वक पूजा चुनें। सामान्य घर के विग्रह और उत्सव के लिए लाए गए अस्थायी विग्रह की विधि अलग रखी गई है।",
+      "family_practice_note": "यदि आपके परिवार, समुदाय या पुरोहित की अपनी परंपरागत विधि है, तो उसी को प्राथमिकता दें। सार्थी को बताएं कि आपके पास स्थायी गृह-विग्रह है, अस्थायी उत्सव-विग्रह है, या कोई विग्रह नहीं है।",
+      "context_prompts": [
+        "क्या यह स्थायी गृह-विग्रह है या अस्थायी उत्सव-विग्रह?",
+        "क्या परिवार की कोई क्षेत्रीय, संप्रदायिक या पुरोहित-निर्देशित विधि है?",
+        "आपके पास लगभग 10, 30 या 60 से अधिक मिनट हैं?",
+        "क्या आप वैकल्पिक संस्कृत पाठ, आरती या अपनी भाषा में प्रार्थना चाहते हैं?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "सरल गृह-पूजा",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "स्वच्छ स्थान और घर में पूजित गणेशजी का चित्र या विग्रह", "substitutions": ["चित्र न हो तो मन में ध्यान करें या श्री गणेश नाम लिखें"], "optional": false},
+            {"item": "स्वच्छ जल", "substitutions": [], "optional": false},
+            {"item": "एक फूल, दूर्वा, पत्ता या उपलब्ध सम्मानपूर्ण प्राकृतिक अर्पण", "substitutions": ["स्थानीय और जिम्मेदारी से उपलब्ध वस्तु लें"], "optional": false},
+            {"item": "फल, मोदक, लड्डू, गुड़ या घर का कोई सात्त्विक शाकाहारी नैवेद्य", "substitutions": ["एक छोटा फल भी पर्याप्त है"], "optional": false},
+            {"item": "दीपक", "substitutions": ["जहां अग्नि सुरक्षित न हो वहां न जलाएं"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थान साफ करें, हाथ धोएं, शांत होकर बैठें और पूजा का संकल्प अपनी भाषा में कहें।", "why": "ध्यान और भाव के लिए सरल तैयारी पर्याप्त है; लंबा औपचारिक संकल्प अनिवार्य नहीं।", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 2, "instruction": "श्री गणेश का आदरपूर्वक स्वागत करें। यदि यह स्थायी गृह-विग्रह है तो नई स्थापना न करें; सीधे पूजा आरंभ करें।", "why": "स्थायी गृह-विग्रह और अस्थायी उत्सव-विग्रह की विधि अलग होती है।", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 3, "instruction": "जल, फूल या दूर्वा और नैवेद्य अर्पित करें। हर अर्पण को सरल शब्दों में समर्पित करें; संस्कृत मंत्र वैकल्पिक हैं।", "why": "फूल या दूर्वा और मिठाई या फल व्यापक रूप से प्रचलित अर्पण हैं; विकल्प पूजा को सहज बनाते हैं।", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026", "siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 4, "instruction": "प्रार्थना करें, गणेश नाम जपें, परिवार की आरती गाएं या Devam का वैकल्पिक चार-चरण स्रोत-पाठ करें। थोड़ी देर मौन बैठें, प्रणाम करें और नैवेद्य प्रसाद के रूप में बांटें।", "why": "पूजा का केंद्र भाव और प्रार्थना रहे, केवल सूची पूरी करना नहीं।", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "devam-ganesha-hymn-pack-v1"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "पूर्णतर गृह-पूजा",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "सरल पूजा की सभी वस्तुएं", "substitutions": [], "optional": false},
+            {"item": "स्वच्छ आसन या वस्त्र, कुमकुम या चंदन, धूप और दीप", "substitutions": ["परिवार में प्रचलित वस्तुएं ही लें; धूप और दीप छोड़े जा सकते हैं"], "optional": true},
+            {"item": "दूर्वा और लाल या स्थानीय उपलब्ध फूल", "substitutions": ["कोई भी सम्मानपूर्ण, जिम्मेदारी से प्राप्त फूल या पत्ता"], "optional": true},
+            {"item": "मोदक या घर का अन्य नैवेद्य", "substitutions": ["फल, लड्डू, गुड़ या सरल शाकाहारी पकवान"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थान और सामग्री तैयार करें, सुरक्षित हो तो दीप जलाएं, और तिथि, स्थान, परिवार तथा पूजा का उद्देश्य सरल भाषा में कहें।", "why": "यह तैयारी और संकल्प का उपयोगी गृह-रूप है।", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026", "nirnayasindhu-marathi-1865-pages-50-51"]},
+            {"ordinal": 2, "instruction": "कुलदेवता, गुरु और श्री गणेश का स्मरण कर स्वागत करें। अस्थायी विग्रह हो तो पारिवारिक स्थापना-विधि अपनाएं; स्थायी विग्रह हो तो स्थापना छोड़ दें।", "why": "इससे विग्रह का प्रकार और परिवार की परंपरा सुरक्षित रहती है।", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 3, "instruction": "प्रतीकात्मक आसन, जल, चंदन या कुमकुम, प्रचलित हो तो अक्षत, फूल या दूर्वा, धूप, दीप और नैवेद्य क्रम से अर्पित करें। रंगे हुए, विद्युत, नाजुक या अनुपयुक्त विग्रह पर द्रव न चढ़ाएं।", "why": "यह संक्षिप्त उपचार-क्रम है और सामग्री संबंधी सावधानी विग्रह तथा घर की सुरक्षा करती है।", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026", "siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 4, "instruction": "परिचित गणेश प्रार्थना, अथर्वशीर्ष या स्तोत्र करें, अथवा Devam का चार-चरण स्रोत-पाठ लें। केवल इंटरनेट पर दिखने के कारण अपरिचित दीक्षा-बद्ध मंत्र न अपनाएं।", "why": "सिद्धिविनायक ट्रस्ट अथर्वशीर्ष परंपरा की पुष्टि करता है; Devam का पाठ स्रोत-सम्बद्ध है।", "optional": false, "source_ids": ["siddhivinayak-trust-pooja-details-2026", "devam-ganesha-hymn-pack-v1"]},
+            {"ordinal": 5, "instruction": "परिवार की आरती, प्रणाम और क्षमा-प्रार्थना के बाद प्रसाद बांटें। अस्थायी विग्रह रहने वाला हो तो अवधि तय करें और उत्तरपूजा तक सुबह-शाम संक्षिप्त पूजा करें।", "why": "अवधि परिवारों में अलग होती है और विग्रह रहने तक दैनिक पूजा महाराष्ट्र की वर्तमान परंपरा में मिलती है।", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "पुरोहित या पारिवारिक ग्रंथ से विस्तृत पूजा",
+          "estimated_minutes": 75,
+          "materials": [
+            {"item": "मानक सामग्री के साथ पुरोहित या पारिवारिक ग्रंथ में निर्दिष्ट वस्तुएं", "substitutions": ["पूजा कराने वाले व्यक्ति से विकल्प तय करें"], "optional": false},
+            {"item": "उपयुक्त अस्थायी मिट्टी का विग्रह, केवल तब जब परिवार स्थापना और विसर्जन कर रहा हो", "substitutions": ["स्थायी गृह-विग्रह हो तो स्थापना और विसर्जन छोड़ें"], "optional": true},
+            {"item": "पंचामृत और अभिषेक के पात्र", "substitutions": ["विग्रह की सामग्री या परंपरा अनुमति न दे तो केवल प्रतीकात्मक जल अर्पित करें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "योग्य पारिवारिक आचार्य या पुरोहित से स्थान और परंपरा के अनुसार संकल्प, कलश और अस्थायी-विग्रह स्थापना कराएं।", "why": "सिद्धिविनायक की आधिकारिक सूची भी पंचामृत और षोडशोपचार को पुरोहित-निर्देशित अलग सेवाओं के रूप में रखती है; Devam उनके मंत्रों का अनुमान नहीं लगाएगा।", "optional": false, "source_ids": ["siddhivinayak-trust-pooja-details-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]},
+            {"ordinal": 2, "instruction": "निर्धारित विस्तृत उपचार करें: स्वागत और आसन; जल-अर्पण; सुरक्षित प्रतीकात्मक या निर्धारित स्नान; प्रचलित हो तो वस्त्र और यज्ञोपवीत; गंध, अक्षत, फूल या दूर्वा; धूप, दीप; नैवेद्य और जल।", "why": "यह किसी एक सूची को सार्वभौमिक बताए बिना विस्तृत पूजा की पहचानी जाने वाली संरचना रखता है।", "optional": false, "source_ids": ["sanatan-sanstha-ganesh-pujavidhi-2026", "siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 3, "instruction": "परिवार या पुरोहित द्वारा अनुमोदित मंत्र, अथर्वशीर्ष, नामावली, स्तोत्र या होम-क्रम अपनाएं। अग्निकर्म को प्रशिक्षित और पर्यवेक्षित अभ्यास मानें, केवल ऐप से करने की विधि नहीं।", "why": "मंदिर स्रोत पाठ, नामावली और हवन को अलग और विस्तृत सेवाएं मानता है।", "optional": false, "source_ids": ["siddhivinayak-trust-pooja-details-2026"]},
+            {"ordinal": 4, "instruction": "आरती, प्रणाम, क्षमा-प्रार्थना, आशीर्वाद और प्रसाद से समापन करें। चुनी अवधि तक अस्थायी विग्रह की दैनिक पूजा करें।", "why": "महाराष्ट्र की वर्तमान परंपरा में कई अवधियां और दैनिक पूजा-आरती दोनों मिलते हैं।", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026"]},
+            {"ordinal": 5, "instruction": "चुनी अवधि पूरी होने पर विसर्जन से पहले पारिवारिक उत्तरपूजा करें। छोटी प्राकृतिक मिट्टी की मूर्ति और स्थानीय रूप से स्वीकृत पर्यावरण-जिम्मेदार विसर्जन पद्धति चुनें; स्थायी गृह-विग्रह का विसर्जन कभी न करें।", "why": "उत्तरपूजा अस्थायी उत्सव-विग्रह के लिए है और आधिकारिक आधुनिक मार्गदर्शन कम-प्रभाव वाली सामग्री पर बल देता है।", "optional": false, "source_ids": ["maharashtra-tourism-ganesh-chaturthi-2026", "sanatan-sanstha-ganesh-pujavidhi-2026"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "formal_priest_mantras_included": false,
+    "historical_prescriptions_promoted_as_modern_norms": false,
+    "one_universal_procedure_claimed": false,
+    "all_regional_variants_complete": false,
+    "all_ganeshotsav_days_complete": false
+  }
+}

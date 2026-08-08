@@ -1,0 +1,428 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "bengal-mahashtami-community-participant-2026-v1",
+  "observance_slugs": ["bengal-mahashtami-community-participant-2026"],
+  "applicability": {
+    "region_codes": ["bengal"],
+    "tradition_codes": ["shakta-bengal"],
+    "institution_codes": [],
+    "settings": ["individual", "family_led", "temple", "community"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Are you following a family or bonedi-bari puja, a sarbojanin pandal, a temple or math, or attending as a visitor?",
+      "Which priest, family elder, institution, or puja committee publishes the programme you will follow?",
+      "Do you want ordinary Mahashtami participation, the Ashtami-Navami Sandhi window, or both?",
+      "Do fasting, food, accessibility, crowd, health, or family-practice considerations change how you can participate?"
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "devam-bengal-durga-puja-campaign-fixture",
+      "west-bengal-2026-holiday-calendar",
+      "devam-kolkata-mahashtami-sandhi-calculation"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "kolkata-shukla-ashtami-navami-sandhi-24-minutes-each-side-v1",
+    "live_schedule_required": true,
+    "freshness_note": "The Kolkata astronomical Sandhi window is calculated locally. Pushpanjali, bhog, arati, entry, livestream, and other programme times must be checked with the selected family, temple, math, or puja committee."
+  },
+  "sources": [
+    {
+      "source_id": "devam-bengal-durga-puja-campaign-fixture",
+      "title": "Bounded Kolkata/Bengal Durga Puja 2026 campaign fixture",
+      "publisher": "Devam",
+      "source_role": "deterministic six-day campaign identity and Maha Ashtami civil-date fixture",
+      "rights_lane": "derivative_allowed",
+      "url": null,
+      "artifact_sha256": "c8bec184a2de4f245b1354e386daaa0fbdb9113dbc3b35e53fc335dd99b7204a",
+      "citation_coordinates": { "civil_date": "2026-10-19", "phase": "ashtami", "common_name": "Maha Ashtami" }
+    },
+    {
+      "source_id": "west-bengal-2026-holiday-calendar",
+      "title": "West Bengal Government 2026 holiday calendar",
+      "publisher": "Government of West Bengal",
+      "source_role": "official civil-date corroboration for Durga Puja Maha Astami on 19 October 2026",
+      "rights_lane": "citation_only",
+      "url": "https://msme.wb.gov.in/cmsholiday",
+      "artifact_sha256": null,
+      "citation_coordinates": { "official_label": "Durga Puja, Maha Astami", "civil_date": "2026-10-19" }
+    },
+    {
+      "source_id": "devam-kolkata-mahashtami-sandhi-calculation",
+      "title": "Devam deterministic Kolkata Maha Ashtami tithi transition",
+      "publisher": "Devam",
+      "source_role": "location-aware Ashtami-to-Navami transition and 48-minute Sandhi window calculation",
+      "rights_lane": "product_cleared",
+      "url": null,
+      "artifact_sha256": "56db7e55cca2be892a2438455f04cb5aec92a0cea7c794169fd9f4c1c6be961a",
+      "citation_coordinates": {
+        "location": "Kolkata, India",
+        "latitude": 22.5726,
+        "longitude": 88.3639,
+        "timezone": "Asia/Kolkata",
+        "ashtami_ends_utc": "2026-10-19T05:22:53.313Z",
+        "ashtami_ends_local": "2026-10-19T10:52:53.313+05:30",
+        "sandhi_start_local": "2026-10-19T10:28:53.313+05:30",
+        "sandhi_end_local": "2026-10-19T11:16:53.313+05:30"
+      }
+    },
+    {
+      "source_id": "belur-math-durga-puja-context",
+      "title": "Durga Puja at Belur Math",
+      "publisher": "Ramakrishna Math and Ramakrishna Mission, Belur Math",
+      "source_role": "official Ramakrishna institutional explanation of Bengali Durga Puja, Ashtami, Kumari Puja, Sandhi Puja, stories, and participation context; not a universal household manual",
+      "rights_lane": "citation_only",
+      "url": "https://belurmath.org/durga-puja-at-belur-math/",
+      "artifact_sha256": null,
+      "citation_coordinates": { "web_sections": ["Navaratri and Durga Puja", "Commingling of Legends", "Durga in Chandi", "Ashtami Puja", "Sandhi Puja"] },
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://belurmath.org/durga-puja-at-belur-math/",
+        "response_bytes": 179835,
+        "response_sha256": "2da792329adfb7ef4efdb06c2d14490a82c270c61314d297164090e9a4ee6ab8",
+        "strict_utf8": true,
+        "observed_at": "2026-08-07"
+      }
+    },
+    {
+      "source_id": "belur-math-durga-puja-2023-programme-example",
+      "title": "Sri Sri Durga Puja 2023 programme details",
+      "publisher": "Belur Math Media Gallery",
+      "source_role": "past institutional example showing that Mahashtami, Kumari Puja, Sandhi Puja, pushpanjali, bhogarati, and arati have separately announced programme times; not a 2026 schedule",
+      "rights_lane": "citation_only",
+      "url": "https://media.belurmath.org/sri-sri-durga-puja-2023-programme-details-10249/",
+      "artifact_sha256": null,
+      "citation_coordinates": { "programme_year": 2023, "reuse_as_2026_schedule": false }
+    },
+    {
+      "source_id": "unesco-durga-puja-kolkata",
+      "title": "Durga Puja in Kolkata",
+      "publisher": "UNESCO Intangible Cultural Heritage",
+      "source_role": "authoritative living-heritage evidence for public worship, art, artisanship, community participation, homecoming, and immersion sequence",
+      "rights_lane": "citation_only",
+      "url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703?RL=00703",
+      "artifact_sha256": null,
+      "citation_coordinates": { "nomination_file": "00703", "inscribed": 2021 },
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703?RL=00703",
+        "response_bytes": 152084,
+        "response_sha256": "40139286444644c78629829f12d0e59d1e09261e34cb40e214312915db3ce4ca",
+        "strict_utf8": true,
+        "observed_at": "2026-08-07"
+      }
+    },
+    {
+      "source_id": "incredible-india-durga-puja-2026",
+      "title": "Durga Puja: An incomparable celebration of devotion and art",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "official current Kolkata festival span, public-pandal participation, homecoming, Mahishasura narrative, art, prayer, food, and cultural-programme context",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/durga-puja",
+      "artifact_sha256": null,
+      "citation_coordinates": { "published_2026_peak_span": ["2026-10-17", "2026-10-21"] },
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/durga-puja",
+        "response_bytes": 512560,
+        "response_sha256": "bf370460363d541e1a6eaf98073a38555cdcfb398a930caeaae1a66072a06237",
+        "strict_utf8": true,
+        "observed_at": "2026-08-07"
+      }
+    },
+    {
+      "source_id": "pargiter-markandeya-purana-devimahatmya",
+      "title": "The Mārkaṇḍeya Purāṇa, translated with notes by F. Eden Pargiter, Calcutta 1904",
+      "publisher": "The Asiatic Society",
+      "source_role": "historical English translation of the Devīmāhātmya for source-labelled Mahishasura and Chanda-Munda narratives; not a modern Bengali ritual manual",
+      "rights_lane": "derivative_allowed",
+      "url": "https://archive.org/details/in.ernet.dli.2015.47519",
+      "artifact_sha256": "f7023e3aa0127b9a093b88664c68374da72d469e4f790c4a7bd4606a392e7300",
+      "citation_coordinates": { "mahishasura_canto": 82, "mahishasura_pdf_start": 516, "chanda_munda_canto": 87, "chanda_munda_pdf_start": 542, "edition_scope": "Pargiter 1904 English translation" }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "title": "Maha Ashtami in Bengal — what to do",
+      "short_answer": "For the supported Bengal Shakta lane, Monday, 19 October 2026 is Maha Ashtami. First choose the family, temple, math, or community pandal whose practice you will follow. At Kolkata, Devam calculates the Ashtami-Navami Sandhi from 10:28:53 am to 11:16:53 am IST; this is an astronomical window, not the venue's programme time. Bathe or freshen up, wear clean available clothing, visit or join an established puja, offer prayer or flowers only as directed, join locally announced anjali, bhog, or arati if appropriate, hear one attributable Durga story, and close with gratitude or service. Priestly Ashtami Puja, Kumari Puja, Sandhi Puja, bali, and homa remain with the responsible tradition and venue.",
+      "significance": {
+        "text": "Maha Ashtami is a central day of Bengal Durga Puja. The festival joins worship of Durga and her victory over destructive forces with the Bengali homecoming of the Divine Mother, public art, artisanship, family and community gathering, prayer, food, music, and shared participation. Sandhi marks the final 24 minutes of Ashtami and first 24 minutes of Navami and is associated in the represented Ramakrishna account with Durga as Chamunda.",
+        "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026", "pargiter-markandeya-purana-devimahatmya"],
+        "scope_note": "The theological and homecoming meanings are source-labelled Bengali and Ramakrishna explanations, not the only meanings in every Shakta or Durga tradition."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "devimahatmya-mahishasura",
+          "title": "Durga and Mahishasura",
+          "summary": "In the Devīmāhātmya narrative preserved in Pargiter's 1904 translation, the defeated gods' powers combine in the Goddess, who receives their weapons and defeats Mahishasura and his forces. Bengal Durga Puja prominently represents Durga as Mahishasuramardini.",
+          "tradition_scope": "Devīmāhātmya textual narrative and Bengali Durga-Puja interpretation",
+          "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context", "incredible-india-durga-puja-2026"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "devimahatmya-chanda-munda-sandhi",
+          "title": "Chamunda at the Ashtami-Navami Sandhi",
+          "summary": "The Devīmāhātmya's Chanda-Munda episode gives Kali the name Chamunda. Belur Math's institutional explanation connects the 48-minute Ashtami-Navami juncture with worship of Durga as Chamunda. This explains the venue-led Sandhi observance without turning it into a self-directed app ritual.",
+          "tradition_scope": "Devīmāhātmya narrative and Belur Math Ramakrishna institutional observance",
+          "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "bengal-autumnal-bodhan-and-homecoming",
+          "title": "Autumnal awakening and the Mother's homecoming",
+          "summary": "One Bengali tradition remembers Rama's autumnal awakening and worship of Durga before the battle with Ravana. Another festival layer welcomes Uma home to her parents. These narratives coexist with the Devīmāhātmya and should remain attributable rather than being collapsed into one universal origin.",
+          "tradition_scope": "Bengali Krittivasi-linked and homecoming traditions as explained by Belur Math and Incredible India",
+          "source_ids": ["belur-math-durga-puja-context", "incredible-india-durga-puja-2026", "unesco-durga-puja-kolkata"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "bengal-community-pandal-participation",
+          "population_scope": "Kolkata and Bengal community-pandal participants and visitors",
+          "description": "People visit decorated pandals, pray before Durga, experience dhaak, art and lighting, join cultural and social gatherings, and may receive or purchase food according to the venue. The festival depends on artisans, designers, organisers, ritual specialists, workers, volunteers, and neighbourhood communities.",
+          "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"],
+          "instructional": false
+        },
+        {
+          "practice_id": "mahashtami-led-worship",
+          "population_scope": "Belur Math institutional example and comparable established puja venues",
+          "description": "Ashtami worship, Kumari Puja, bhog and arati, and the Ashtami-Navami Sandhi are separately led components. An institutional programme publishes its own starting times; a past Belur Math programme placed pushpanjali after bhogarati rather than at a universal clock time.",
+          "source_ids": ["belur-math-durga-puja-context", "belur-math-durga-puja-2023-programme-example"],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "mahashtami-accessible-home-or-remote-en",
+          "label": "10-minute accessible observance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Bengal Shakta participant unable to attend an established programme; not a formal household puja",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            { "item": "No personal material is required", "required": false, "substitutions": ["A familiar family prayer", "A source-labelled Durga reading", "An official venue stream"], "source_ids": ["belur-math-durga-puja-context"] }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "Confirm that the Bengal Maha Ashtami lane applies and identify the family, temple, math, or community authority you would normally follow.", "why": "A shared date does not make every Ashtami or every Bengali puja procedure identical.", "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "west-bengal-2026-holiday-calendar"], "optional": false },
+            { "ordinal": 2, "instruction": "Freshen up and use clean clothing already available; sit respectfully before a familiar image, source, prayer, or official stream if that is part of your practice.", "why": "The represented institutional explanation describes bathing, clean or new clothes, temple or pandal worship, while the accessible form creates no purchase requirement.", "source_ids": ["belur-math-durga-puja-context"], "optional": false },
+            { "ordinal": 3, "instruction": "Offer a familiar prayer or read one source-labelled account of Durga and Mahishasura, Chamunda, or the Mother's homecoming.", "why": "The stories remain attributable and are not blended into one invented origin.", "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 4, "instruction": "Close with gratitude to the Divine Mother and one concrete act of courage, care, welcome, or support for another person or festival worker.", "why": "This makes the observance useful without claiming that an editorial action produces a ritual result.", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false }
+          ],
+          "closing": { "text": "Close with your family's familiar words, or with a quiet expression of gratitude and care.", "source_ids": ["belur-math-durga-puja-context"], "scope_note": "Devam supplies no invented mantra or priestly close." },
+          "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "belur-math-durga-puja-context", "pargiter-markandeya-purana-devimahatmya", "unesco-durga-puja-kolkata"]
+        },
+        {
+          "procedure_id": "mahashtami-community-participation-en",
+          "label": "45-minute community or temple participation",
+          "tier": "standard",
+          "setting": "community_participation",
+          "authority_scope": "Participant at an established Bengal family puja, temple, math, or sarbojanin pandal",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "materials": [
+            { "item": "The venue's current programme or notice", "required": true, "substitutions": ["A family elder's instructions", "The temple or committee's official channel"], "source_ids": ["belur-math-durga-puja-2023-programme-example"] },
+            { "item": "Flowers or other offering only when the venue asks participants to bring them", "required": false, "substitutions": ["Use materials supplied by the venue", "Join without a personal offering"], "source_ids": ["belur-math-durga-puja-context"] }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "Check today's exact entry, anjali, bhog, arati, accessibility, and crowd instructions with the selected family, temple, math, or committee.", "why": "Programme times are live institutional facts; a past schedule or astronomical tithi boundary is not today's event timetable.", "source_ids": ["belur-math-durga-puja-2023-programme-example", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 2, "instruction": "Bathe or freshen up, wear clean available clothing, and arrive with enough time to follow the venue's directions without rushing or obstructing others.", "why": "This reflects the represented participation context while avoiding a clothing purchase mandate.", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "optional": false },
+            { "ordinal": 3, "instruction": "Join darshan and prayer respectfully. Offer flowers, join pushpanjali, or receive bhog only in the form and order announced by that authority.", "why": "These are led practices whose materials and sequence differ by venue.", "source_ids": ["belur-math-durga-puja-context", "belur-math-durga-puja-2023-programme-example", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 4, "instruction": "If joining Sandhi, use the Kolkata astronomical window only as context and follow the venue's assembly and worship schedule. Do not independently reproduce Kumari Puja, bali, homa, or priestly rites.", "why": "Sandhi is a 48-minute tithi juncture, but the liturgy and operational timing remain institution-led.", "source_ids": ["devam-kolkata-mahashtami-sandhi-calculation", "belur-math-durga-puja-context"], "optional": true },
+            { "ordinal": 5, "instruction": "Receive food only if suitable for you, thank the organisers and workers, leave space for others, and follow local crowd and transport directions.", "why": "The festival is a shared public and devotional environment, and live conditions outrank static app guidance.", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false }
+          ],
+          "closing": { "text": "Conclude as the venue directs; otherwise offer a quiet prayer and gratitude to Durga, the people present, and those whose work sustains the Puja.", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "scope_note": "This is participant guidance, not the officiant's closing ritual." },
+          "source_ids": ["belur-math-durga-puja-context", "belur-math-durga-puja-2023-programme-example", "unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026", "devam-kolkata-mahashtami-sandhi-calculation"]
+        },
+        {
+          "procedure_id": "mahashtami-fuller-exploration-and-participation-en",
+          "label": "Half-day family and cultural participation",
+          "tier": "elaborate",
+          "setting": "family_led",
+          "authority_scope": "Family-led exploration of established Bengal pujas with venue-led ritual participation",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 180,
+          "materials": [
+            { "item": "A family-selected route and current official venue information", "required": true, "substitutions": ["One nearby accessible puja", "One official livestream and a home discussion"], "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"] },
+            { "item": "One identified Durga source or explanation", "required": true, "substitutions": ["The Devīmāhātmya episode", "The family or institution's known explanation"], "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context"] }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "Choose one or a few pujas appropriate to the family's mobility, interests, and crowd tolerance; verify official access and programme information before leaving.", "why": "The goal is meaningful participation, not maximizing venues or relying on stale operations.", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 2, "instruction": "Learn one source-labelled Mahashtami story and distinguish Devīmāhātmya, Rama-bodhan, homecoming, and institutional interpretations.", "why": "The festival carries multiple narrative layers that should remain attributable.", "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 3, "instruction": "At each venue, notice the deity, artisanship, theme, music, community work, and devotional atmosphere; join only the prayer or offering form the responsible authority invites.", "why": "Durga Puja is simultaneously worship, living heritage, public art, and community labour.", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 4, "instruction": "If the family chooses Sandhi participation, plan around the locally calculated juncture and the chosen venue's separately published arrival and programme time.", "why": "Astronomical relevance and institutional operations are related but not interchangeable.", "source_ids": ["devam-kolkata-mahashtami-sandhi-calculation", "belur-math-durga-puja-context"], "optional": true },
+            { "ordinal": 5, "instruction": "End by discussing what courage, responsible strength, welcome, or care means in the stories and by supporting one person, artisan, worker, neighbour, or community need without attaching a promised spiritual result.", "why": "The longer experience connects learning, devotion, culture, and ethical action while keeping Devam synthesis separate from ritual authority.", "source_ids": ["pargiter-markandeya-purana-devimahatmya", "unesco-durga-puja-kolkata"], "optional": false }
+          ],
+          "closing": { "text": "Use the family's or venue's close, then record the story, puja, or artwork explored and one action the experience inspired.", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "scope_note": "Recording is optional product reflection, not a sacred requirement." },
+          "source_ids": ["devam-kolkata-mahashtami-sandhi-calculation", "belur-math-durga-puja-context", "unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026", "pargiter-markandeya-purana-devimahatmya"]
+        }
+      ],
+      "variants": [
+        { "variant_id": "family-bonedi-sarbojanin-temple", "scope": "Bengal family puja, bonedi bari, sarbojanin pandal, temple, and math", "difference": "Authority, access, materials, pushpanjali, bhog, Kumari Puja, Sandhi Puja, bali, homa, music, and closing can differ; use the selected venue or family's procedure.", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "separate_lane_required": true },
+        { "variant_id": "ramakrishna-belur-math", "scope": "Belur Math Ramakrishna institutional practice", "difference": "Belur Math's Kumari Puja and symbolic-bali decisions are institution-specific and are not exported as a universal Bengali household form.", "source_ids": ["belur-math-durga-puja-context"], "separate_lane_required": true },
+        { "variant_id": "north-west-navaratri", "scope": "North and West India Smarta Navaratri", "difference": "Its day names, calendar logic, household procedures, and Vijayadashami practice are not the Bengal Maha Ashtami lane.", "source_ids": ["devam-bengal-durga-puja-campaign-fixture"], "separate_lane_required": true },
+        { "variant_id": "monthly-durgashtami", "scope": "Masika Durgashtami", "difference": "A monthly Shukla Ashtami is not automatically the annual Bengal Durga Puja Maha Ashtami or its Sandhi observance.", "source_ids": ["devam-bengal-durga-puja-campaign-fixture"], "separate_lane_required": true }
+      ],
+      "safety_and_boundaries": [
+        "This lane guides a devotee or visitor participating in an established puja; it is not a priestly, tantric, household-consecration, Kumari-Puja, bali, homa, or immersion manual.",
+        "Fasting and food decisions follow the user's health needs, family practice, and qualified guidance; Devam prescribes no fast or medical regimen here.",
+        "Sandhi is calculated astronomically for Kolkata, but the venue's current programme, arrival, entry, and offering instructions must be verified locally.",
+        "Do not bring flames, weapons, animals, immersion materials, or offerings unless the responsible venue explicitly and safely manages them.",
+        "Crowd, transport, weather, accessibility, food, and emergency conditions are live facts and must not be inferred from this static pack.",
+        "No victory, protection, merit, prosperity, health, or other outcome is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "title": "बंगाल में महाअष्टमी — क्या करें",
+      "short_answer": "समर्थित बंगाल शाक्त परम्परा में सोमवार, 19 अक्टूबर 2026 महाअष्टमी है। पहले तय करें कि आप किस परिवार, मंदिर, मठ या सामुदायिक पंडाल की परम्परा मानेंगे। कोलकाता में देवम अष्टमी-नवमी संधि 10:28:53 पूर्वाह्न से 11:16:53 पूर्वाह्न IST निकालता है; यह खगोलीय अवधि है, कार्यक्रम का समय नहीं। स्नान या स्वच्छ होकर उपलब्ध साफ कपड़े पहनें, स्थापित पूजा में जाएँ या जुड़ें, प्रार्थना या फूल केवल स्थानीय निर्देश के अनुसार दें, उचित हो तो घोषित अंजलि, भोग या आरती में भाग लें, दुर्गा की एक स्रोत-स्पष्ट कथा सुनें और कृतज्ञता या सेवा से समापन करें। पुरोहित-नेतृत्व वाली अष्टमी पूजा, कुमारी पूजा, संधि पूजा, बलि और होम जिम्मेदार परम्परा और स्थल के अधीन रहें।",
+      "significance": {
+        "text": "महाअष्टमी बंगाल दुर्गा पूजा का केंद्रीय दिन है। यह दुर्गा की उपासना और विनाशकारी शक्तियों पर विजय की कथा को दिव्य माता के मायके-आगमन, सार्वजनिक कला, शिल्प, परिवार, समुदाय, प्रार्थना, भोजन और संगीत से जोड़ता है। संधि अष्टमी के अंतिम 24 मिनट और नवमी के पहले 24 मिनट हैं; प्रस्तुत रामकृष्ण विवरण इसे चामुण्डा-रूप की उपासना से जोड़ता है।",
+        "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026", "pargiter-markandeya-purana-devimahatmya"],
+        "scope_note": "धर्मवैचारिक और मायके-आगमन के अर्थ स्रोत-स्पष्ट बंगाली और रामकृष्ण व्याख्याएँ हैं; वे हर शाक्त या दुर्गा परम्परा के एकमात्र अर्थ नहीं हैं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "devimahatmya-mahishasura-hi",
+          "title": "दुर्गा और महिषासुर",
+          "summary": "पार्जिटर के 1904 अंग्रेज़ी अनुवाद में सुरक्षित देवीमाहात्म्य की कथा में पराजित देवताओं की शक्तियाँ देवी में एकत्र होती हैं, वे अपने आयुध उन्हें देते हैं और देवी महिषासुर तथा उसकी सेना का संहार करती हैं। बंगाल दुर्गा पूजा में दुर्गा का महिषासुरमर्दिनी रूप प्रमुख है।",
+          "tradition_scope": "देवीमाहात्म्य की पाठ-कथा और बंगाल दुर्गा-पूजा व्याख्या",
+          "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context", "incredible-india-durga-puja-2026"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "devimahatmya-chanda-munda-sandhi-hi",
+          "title": "अष्टमी-नवमी संधि में चामुण्डा",
+          "summary": "देवीमाहात्म्य के चण्ड-मुण्ड प्रसंग में काली को चामुण्डा नाम मिलता है। बेलूड़ मठ की संस्थागत व्याख्या 48 मिनट की अष्टमी-नवमी संधि को दुर्गा के चामुण्डा रूप की पूजा से जोड़ती है। यह कथा संधि का अर्थ बताती है, ऐप से स्वयं पुरोहित-विधि बनाने का आधार नहीं।",
+          "tradition_scope": "देवीमाहात्म्य की कथा और बेलूड़ मठ की रामकृष्ण संस्थागत परम्परा",
+          "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "bengal-autumnal-bodhan-and-homecoming-hi",
+          "title": "शारदीय बोधन और माता का मायके आना",
+          "summary": "एक बंगाली परम्परा रावण-वध से पहले राम द्वारा शरद ऋतु में दुर्गा को जगाकर पूजा करने का स्मरण करती है। दूसरी परत उमा का अपने माता-पिता के घर आना है। ये कथाएँ देवीमाहात्म्य के साथ रहती हैं; इन्हें एक सार्वभौमिक मूल-कथा में नहीं मिलाया जाता।",
+          "tradition_scope": "बेलूड़ मठ और इनक्रेडिबल इंडिया द्वारा समझाई गई बंगाली कृत्तिवासी-संबद्ध और मायके-आगमन परम्पराएँ",
+          "source_ids": ["belur-math-durga-puja-context", "incredible-india-durga-puja-2026", "unesco-durga-puja-kolkata"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "bengal-community-pandal-participation-hi",
+          "population_scope": "कोलकाता और बंगाल के सामुदायिक पंडालों के भक्त और आगंतुक",
+          "description": "लोग सजे हुए पंडाल देखते हैं, दुर्गा के सामने प्रार्थना करते हैं, ढाक, कला और प्रकाश का अनुभव करते हैं, सांस्कृतिक और सामाजिक कार्यक्रमों में जुड़ते हैं और स्थल के अनुसार भोजन लेते या खरीदते हैं। उत्सव शिल्पकारों, कलाकारों, आयोजकों, पुरोहितों, कामगारों, स्वयंसेवकों और पड़ोस के समुदायों के श्रम पर निर्भर है।",
+          "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"],
+          "instructional": false
+        },
+        {
+          "practice_id": "mahashtami-led-worship-hi",
+          "population_scope": "बेलूड़ मठ का संस्थागत उदाहरण और समान स्थापित पूजा-स्थल",
+          "description": "अष्टमी पूजा, कुमारी पूजा, भोग और आरती तथा अष्टमी-नवमी संधि अलग-अलग नेतृत्व वाले अंग हैं। संस्था अपना समय घोषित करती है; बेलूड़ मठ के एक पुराने कार्यक्रम में पुष्पांजलि भोगारती के बाद थी, किसी सार्वभौमिक घड़ी-समय पर नहीं।",
+          "source_ids": ["belur-math-durga-puja-context", "belur-math-durga-puja-2023-programme-example"],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "mahashtami-accessible-home-or-remote-hi",
+          "label": "10 मिनट का सुलभ रूप",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थापित कार्यक्रम में न जा सकने वाला बंगाल शाक्त सहभागी; औपचारिक गृह-पूजा नहीं",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            { "item": "कोई व्यक्तिगत सामग्री आवश्यक नहीं", "required": false, "substitutions": ["परिवार की परिचित प्रार्थना", "स्रोत-स्पष्ट दुर्गा पाठ", "आधिकारिक स्थल की स्ट्रीम"], "source_ids": ["belur-math-durga-puja-context"] }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "पुष्टि करें कि बंगाल महाअष्टमी की यह परम्परा आप पर लागू है और उस परिवार, मंदिर, मठ या समुदाय का नाम लें जिसे आप सामान्यतः मानते हैं।", "why": "समान तारीख हर अष्टमी या हर बंगाली पूजा की विधि को समान नहीं बनाती।", "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "west-bengal-2026-holiday-calendar"], "optional": false },
+            { "ordinal": 2, "instruction": "स्वच्छ होकर उपलब्ध साफ कपड़े पहनें और अपनी परम्परा में हो तो परिचित चित्र, ग्रन्थ, प्रार्थना या आधिकारिक स्ट्रीम के सामने आदर से बैठें।", "why": "संस्थागत विवरण स्नान, साफ या नए कपड़े और मंदिर/पंडाल की पूजा बताता है; सुलभ रूप खरीद आवश्यक नहीं बनाता।", "source_ids": ["belur-math-durga-puja-context"], "optional": false },
+            { "ordinal": 3, "instruction": "परिचित प्रार्थना करें या दुर्गा-महिषासुर, चामुण्डा अथवा माता के मायके-आगमन का एक स्रोत-स्पष्ट वर्णन पढ़ें।", "why": "कथाएँ स्रोत-स्पष्ट रहती हैं और एक गढ़ी हुई मूल-कथा में नहीं मिलतीं।", "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 4, "instruction": "दिव्य माता के प्रति कृतज्ञता और साहस, देखभाल, स्वागत या किसी व्यक्ति अथवा उत्सव-कर्मी की सहायता के एक ठोस काम से समापन करें।", "why": "यह संपादकीय कर्म को अनुष्ठानिक फल बताए बिना अनुभव को उपयोगी बनाता है।", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false }
+          ],
+          "closing": { "text": "परिवार के परिचित शब्दों से, या शांत कृतज्ञता और देखभाल के भाव से समापन करें।", "source_ids": ["belur-math-durga-puja-context"], "scope_note": "देवम कोई गढ़ा हुआ मंत्र या पुरोहित-समापन नहीं देता।" },
+          "source_ids": ["devam-bengal-durga-puja-campaign-fixture", "belur-math-durga-puja-context", "pargiter-markandeya-purana-devimahatmya", "unesco-durga-puja-kolkata"]
+        },
+        {
+          "procedure_id": "mahashtami-community-participation-hi",
+          "label": "45 मिनट की सामुदायिक या मंदिर भागीदारी",
+          "tier": "standard",
+          "setting": "community_participation",
+          "authority_scope": "स्थापित बंगाली पारिवारिक पूजा, मंदिर, मठ या सार्वजनिक पंडाल का सहभागी",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "materials": [
+            { "item": "स्थल का वर्तमान कार्यक्रम या सूचना", "required": true, "substitutions": ["परिवार के बुज़ुर्ग के निर्देश", "मंदिर या समिति का आधिकारिक माध्यम"], "source_ids": ["belur-math-durga-puja-2023-programme-example"] },
+            { "item": "फूल या अन्य अर्पण केवल जब स्थल स्वयं लाने को कहे", "required": false, "substitutions": ["स्थल की सामग्री लें", "व्यक्तिगत अर्पण बिना भाग लें"], "source_ids": ["belur-math-durga-puja-context"] }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "चुने हुए परिवार, मंदिर, मठ या समिति से आज का प्रवेश, अंजलि, भोग, आरती, सुगमता और भीड़-संबंधी निर्देश जाँचें।", "why": "कार्यक्रम के समय जीवित संस्थागत तथ्य हैं; पुराना कार्यक्रम या खगोलीय तिथि-सीमा आज की समय-सारणी नहीं।", "source_ids": ["belur-math-durga-puja-2023-programme-example", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 2, "instruction": "स्नान या स्वच्छ होकर उपलब्ध साफ कपड़े पहनें और बिना भाग-दौड़ या बाधा के निर्देश मानने के लिए समय से पहुँचें।", "why": "यह कपड़े खरीदना अनिवार्य किए बिना प्रस्तुत सहभागिता-सन्दर्भ को मानता है।", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "optional": false },
+            { "ordinal": 3, "instruction": "आदर से दर्शन और प्रार्थना में जुड़ें। फूल दें, पुष्पांजलि में भाग लें या भोग लें तो उसी रूप और क्रम में जिसे स्थानीय प्राधिकारी घोषित करे।", "why": "ये नेतृत्व वाले अभ्यास हैं जिनकी सामग्री और क्रम स्थल के अनुसार बदलते हैं।", "source_ids": ["belur-math-durga-puja-context", "belur-math-durga-puja-2023-programme-example", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 4, "instruction": "संधि में जुड़ना हो तो कोलकाता की खगोलीय अवधि को केवल सन्दर्भ मानें और स्थल के जुटने तथा पूजा-समय को मानें। कुमारी पूजा, बलि, होम या पुरोहित-विधि स्वयं न दोहराएँ।", "why": "संधि 48 मिनट की तिथि-सन्धि है, पर उपासना और संचालन संस्था के नेतृत्व में हैं।", "source_ids": ["devam-kolkata-mahashtami-sandhi-calculation", "belur-math-durga-puja-context"], "optional": true },
+            { "ordinal": 5, "instruction": "भोजन अपने लिए उपयुक्त हो तभी लें, आयोजकों और कामगारों को धन्यवाद दें, दूसरों के लिए स्थान छोड़ें और स्थानीय भीड़ व परिवहन निर्देश मानें।", "why": "उत्सव साझा सार्वजनिक और धार्मिक वातावरण है; जीवित परिस्थितियाँ स्थिर ऐप-निर्देश से ऊपर हैं।", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false }
+          ],
+          "closing": { "text": "स्थल के अनुसार समापन करें; अन्यथा दुर्गा, उपस्थित लोगों और पूजा को सम्भव बनाने वालों के प्रति शांत प्रार्थना और कृतज्ञता रखें।", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "scope_note": "यह सहभागी मार्गदर्शन है, पुरोहित की समापन-विधि नहीं।" },
+          "source_ids": ["belur-math-durga-puja-context", "belur-math-durga-puja-2023-programme-example", "unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026", "devam-kolkata-mahashtami-sandhi-calculation"]
+        },
+        {
+          "procedure_id": "mahashtami-fuller-exploration-and-participation-hi",
+          "label": "आधे दिन की पारिवारिक और सांस्कृतिक भागीदारी",
+          "tier": "elaborate",
+          "setting": "family_led",
+          "authority_scope": "स्थापित बंगाल पूजाओं की परिवार-नेतृत्व वाली खोज और स्थल-नेतृत्व वाली धार्मिक भागीदारी",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 180,
+          "materials": [
+            { "item": "परिवार द्वारा चुना मार्ग और वर्तमान आधिकारिक स्थल-सूचना", "required": true, "substitutions": ["पास की एक सुलभ पूजा", "एक आधिकारिक स्ट्रीम और घर पर चर्चा"], "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"] },
+            { "item": "एक पहचाना दुर्गा स्रोत या व्याख्या", "required": true, "substitutions": ["देवीमाहात्म्य का प्रसंग", "परिवार या संस्था की परिचित व्याख्या"], "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context"] }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "परिवार की गतिशीलता, रुचि और भीड़-सहनशीलता के अनुसार एक या कुछ पूजाएँ चुनें; निकलने से पहले आधिकारिक प्रवेश और कार्यक्रम सूचना जाँचें।", "why": "उद्देश्य सार्थक भागीदारी है, अधिकतम स्थल या पुरानी संचालन-सूचना नहीं।", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 2, "instruction": "महाअष्टमी की एक स्रोत-स्पष्ट कथा जानें और देवीमाहात्म्य, राम-बोधन, मायके-आगमन तथा संस्थागत व्याख्या को अलग रखें।", "why": "उत्सव की अनेक कथा-परतें हैं जिन्हें स्रोत-स्पष्ट रहना चाहिए।", "source_ids": ["pargiter-markandeya-purana-devimahatmya", "belur-math-durga-puja-context", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 3, "instruction": "हर स्थल पर देवी, शिल्प, विषय, संगीत, सामुदायिक श्रम और धार्मिक वातावरण को देखें; केवल वही प्रार्थना या अर्पण करें जिसके लिए जिम्मेदार प्राधिकारी आमंत्रित करे।", "why": "दुर्गा पूजा एक साथ उपासना, जीवित विरासत, सार्वजनिक कला और सामुदायिक श्रम है।", "source_ids": ["unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026"], "optional": false },
+            { "ordinal": 4, "instruction": "परिवार संधि में जुड़े तो स्थानीय गणित की संधि-अवधि और चुने हुए स्थल का अलग से प्रकाशित आगमन व कार्यक्रम-समय दोनों मानें।", "why": "खगोलीय प्रासंगिकता और संस्थागत संचालन जुड़े हैं, पर एक नहीं।", "source_ids": ["devam-kolkata-mahashtami-sandhi-calculation", "belur-math-durga-puja-context"], "optional": true },
+            { "ordinal": 5, "instruction": "कथाओं में साहस, जिम्मेदार शक्ति, स्वागत या देखभाल का अर्थ चर्चा कर समापन करें और बिना धार्मिक फल जोड़े किसी व्यक्ति, शिल्पकार, कामगार, पड़ोसी या सामुदायिक आवश्यकता की सहायता करें।", "why": "लंबा अनुभव सीखने, भक्ति, संस्कृति और नैतिक कर्म को जोड़ता है तथा देवम-संश्लेषण को पूजा-अधिकार से अलग रखता है।", "source_ids": ["pargiter-markandeya-purana-devimahatmya", "unesco-durga-puja-kolkata"], "optional": false }
+          ],
+          "closing": { "text": "परिवार या स्थल के समापन को मानें, फिर देखी गई कथा, पूजा या कला और उससे प्रेरित एक काम दर्ज करें।", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "scope_note": "दर्ज करना वैकल्पिक उत्पाद-चिन्तन है, धार्मिक आवश्यकता नहीं।" },
+          "source_ids": ["devam-kolkata-mahashtami-sandhi-calculation", "belur-math-durga-puja-context", "unesco-durga-puja-kolkata", "incredible-india-durga-puja-2026", "pargiter-markandeya-purana-devimahatmya"]
+        }
+      ],
+      "variants": [
+        { "variant_id": "family-bonedi-sarbojanin-temple-hi", "scope": "बंगाल की पारिवारिक पूजा, बोनेदी बाड़ी, सार्वजनिक पंडाल, मंदिर और मठ", "difference": "अधिकार, प्रवेश, सामग्री, पुष्पांजलि, भोग, कुमारी पूजा, संधि पूजा, बलि, होम, संगीत और समापन बदल सकते हैं; चुने हुए स्थल या परिवार की विधि मानें।", "source_ids": ["belur-math-durga-puja-context", "unesco-durga-puja-kolkata"], "separate_lane_required": true },
+        { "variant_id": "ramakrishna-belur-math-hi", "scope": "बेलूड़ मठ की रामकृष्ण संस्थागत परम्परा", "difference": "बेलूड़ मठ की कुमारी पूजा और प्रतीकात्मक बलि के निर्णय संस्था-विशेष हैं; उन्हें सार्वभौमिक बंगाली गृह-विधि नहीं बनाया जाता।", "source_ids": ["belur-math-durga-puja-context"], "separate_lane_required": true },
+        { "variant_id": "north-west-navaratri-hi", "scope": "उत्तर और पश्चिम भारत की स्मार्त नवरात्रि", "difference": "उसके दिन-नाम, पंचांग-तर्क, गृह-विधि और विजयादशमी अभ्यास बंगाल महाअष्टमी की परम्परा नहीं हैं।", "source_ids": ["devam-bengal-durga-puja-campaign-fixture"], "separate_lane_required": true },
+        { "variant_id": "monthly-durgashtami-hi", "scope": "मासिक दुर्गाष्टमी", "difference": "हर मास की शुक्ल अष्टमी अपने आप वार्षिक बंगाल दुर्गा पूजा महाअष्टमी या उसकी संधि नहीं होती।", "source_ids": ["devam-bengal-durga-puja-campaign-fixture"], "separate_lane_required": true }
+      ],
+      "safety_and_boundaries": [
+        "यह परम्परा स्थापित पूजा में भक्त या आगंतुक की भागीदारी बताती है; यह पुरोहित, तांत्रिक, गृह-प्रतिष्ठा, कुमारी पूजा, बलि, होम या विसर्जन की पुस्तिका नहीं है।",
+        "उपवास और भोजन उपयोगकर्ता के स्वास्थ्य, परिवार और योग्य मार्गदर्शन के अनुसार रहें; देवम यहाँ उपवास या चिकित्सा-विधान नहीं देता।",
+        "संधि कोलकाता के लिए खगोलीय रूप से निकाली गई है, पर स्थल का वर्तमान कार्यक्रम, आगमन, प्रवेश और अर्पण-निर्देश स्थानीय रूप से जाँचें।",
+        "जिम्मेदार स्थल स्पष्ट और सुरक्षित प्रबन्ध न करे तो अग्नि, आयुध, पशु, विसर्जन-सामग्री या अर्पण न ले जाएँ।",
+        "भीड़, परिवहन, मौसम, सुगमता, भोजन और आपातकालीन स्थिति जीवित तथ्य हैं; उन्हें इस स्थिर पैक से न मानें।",
+        "विजय, रक्षा, पुण्य, समृद्धि, स्वास्थ्य या किसी अन्य फल की गारंटी नहीं है।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "contract": "DEVAM_AMBUDA_DCS_SANSKRIT_EPIC_INGESTION_V1",
+  "pilot_id": "ramayana-ambuda-dcs-cc-by-v1",
+  "source_copy_policy": "reference_only_no_duplicate_payload",
+  "work": {
+    "slug": "valmiki-ramayana",
+    "canonical_title": "Vālmīki Rāmāyaṇa",
+    "work_kind": "itihasa",
+    "tradition_scope": ["ramayana", "itihasa"],
+    "summary": "The Sanskrit epic traditionally attributed to Vālmīki, preserved through multiple recensions, editions, translations, commentaries, and performance traditions; Devam keeps each expression distinct and does not treat this electronic corpus as the complete textual tradition."
+  },
+  "identity": {
+    "provider_corpus": "Ambuda DCS",
+    "source_literal": "Source: Oliver Hellwig: Digital Corpus of Sanskrit (DCS). 2010-2021.",
+    "license_literal": "License: CC-BY 4.0",
+    "correction_literal": "Parse data from the Digital Corpus of Sanskrit, with various small corrections applied after the fact.",
+    "underlying_print_or_manuscript_edition_identified": false,
+    "provider_title_inferred_from_filename": "ramayanam.txt"
+  },
+  "expression": {
+    "language_code": "sa",
+    "script_code": "Latn",
+    "expression_kind": "morphologically_annotated_electronic_corpus",
+    "attribution": "Oliver Hellwig, Digital Corpus of Sanskrit (2010-2021); distributed by Ambuda with small post-corpus corrections",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "Rāmāyaṇam — Ambuda/DCS morphologically annotated Sanskrit electronic corpus",
+    "publisher": "Ambuda / Digital Corpus of Sanskrit",
+    "publication_place": null,
+    "publication_year": 2021,
+    "edition_statement": "Exact Ambuda/DCS electronic corpus state acquired 2026-08-06; underlying print or manuscript edition is not identified; literal record gaps and source-order anomalies are preserved.",
+    "identifiers": {
+      "ambuda_repository": "https://github.com/ambuda-org/dcs",
+      "provider_file": "ramayanam.txt",
+      "dcs": "Digital Corpus of Sanskrit"
+    }
+  },
+  "provider": {
+    "name": "Ambuda DCS",
+    "acquired_at": "2026-08-06T00:00:00+05:30"
+  },
+  "rights": {
+    "lane": "product_allowed",
+    "license": "CC-BY-4.0",
+    "required_literals": [
+      "Source: Oliver Hellwig: Digital Corpus of Sanskrit (DCS). 2010-2021.",
+      "License: CC-BY 4.0"
+    ],
+    "status": "product_use_allowed_with_attribution",
+    "attribution_required": true,
+    "license_scope_boundary": "The CC BY 4.0 statement is provider evidence for this exact Ambuda/DCS corpus; it does not license unrelated Rāmāyaṇa editions, translations, scans, or traditions."
+  },
+  "source_objects": [
+    {
+      "role": "rights_and_source_readme",
+      "sha256": "134c11945415556d6e86f17f3579c6fb69b559a90a5d38ccd841168b145c3583",
+      "bytes": 215,
+      "media_type": "text/markdown; charset=utf-8",
+      "object_path": "objects/sha256/13/134c11945415556d6e86f17f3579c6fb69b559a90a5d38ccd841168b145c3583",
+      "source_url": "https://raw.githubusercontent.com/ambuda-org/dcs/main/README.md"
+    },
+    {
+      "role": "canonical_morphological_corpus",
+      "sha256": "f8d45c1289b15182867bd0c94d15886f8d8b1b10c4e7fc9a9b6a78fd5142e3b8",
+      "bytes": 7414730,
+      "media_type": "text/plain; charset=utf-8",
+      "object_path": "objects/sha256/f8/f8d45c1289b15182867bd0c94d15886f8d8b1b10c4e7fc9a9b6a78fd5142e3b8",
+      "source_url": "https://raw.githubusercontent.com/ambuda-org/dcs/main/ramayanam.txt"
+    }
+  ],
+  "structure": {
+    "kanda_count": 7,
+    "sarga_count": 606,
+    "verse_record_count": 18713,
+    "token_line_count": 250660,
+    "first_verse_id": "R.1.1.1",
+    "last_verse_id": "R.7.100.25",
+    "verse_id_root_sha256": "e029ab682e3edeac03c26ff29eb51b1dbdd20803ec55f9a599f17e18ff068e95",
+    "book_profiles": [
+      {"book": 1, "sarga_count": 76, "verse_record_count": 1935, "first_sarga": 1, "last_sarga": 76},
+      {"book": 2, "sarga_count": 111, "verse_record_count": 3149, "first_sarga": 1, "last_sarga": 111},
+      {"book": 3, "sarga_count": 71, "verse_record_count": 2055, "first_sarga": 1, "last_sarga": 71},
+      {"book": 4, "sarga_count": 66, "verse_record_count": 1981, "first_sarga": 1, "last_sarga": 66},
+      {"book": 5, "sarga_count": 66, "verse_record_count": 2481, "first_sarga": 1, "last_sarga": 66},
+      {"book": 6, "sarga_count": 116, "verse_record_count": 4425, "first_sarga": 1, "last_sarga": 116},
+      {"book": 7, "sarga_count": 100, "verse_record_count": 2687, "first_sarga": 1, "last_sarga": 100}
+    ],
+    "literal_missing_verse_ids": [
+      "R.1.20.2", "R.1.42.19", "R.1.47.13", "R.1.59.7", "R.1.71.4", "R.1.72.9",
+      "R.2.7.27", "R.2.12.15", "R.2.14.16", "R.2.17.18", "R.2.32.16", "R.2.51.20", "R.2.85.49", "R.2.93.2", "R.2.93.3", "R.2.96.10",
+      "R.3.1.18", "R.3.22.6", "R.3.28.27", "R.3.33.8", "R.3.50.19",
+      "R.4.21.8", "R.4.27.1", "R.4.34.14", "R.4.39.38", "R.4.41.16", "R.4.49.21",
+      "R.5.2.32", "R.5.9.12", "R.5.25.8", "R.5.32.6", "R.5.33.45", "R.5.66.27",
+      "R.6.4.47", "R.6.4.80", "R.6.12.6", "R.6.15.27", "R.6.18.37", "R.6.66.26", "R.6.66.32", "R.6.68.12", "R.6.84.31", "R.6.108.13", "R.6.114.24",
+      "R.7.25.13", "R.7.65.6"
+    ],
+    "literal_missing_verse_id_count": 46,
+    "source_order_anomalies": [
+      {"source_pair_ordinal": 8513, "left": "R.4.42.17", "right": "R.4.42.14"},
+      {"source_pair_ordinal": 8517, "left": "R.4.42.23", "right": "R.4.42.18"},
+      {"source_pair_ordinal": 15493, "left": "R.6.101.40", "right": "R.6.101.29"}
+    ],
+    "source_order_anomaly_count": 3,
+    "indexed_scope_status": "exact_seven_kanda_606_sarga_ambuda_dcs_corpus_with_literal_gaps_and_order_anomalies_preserved",
+    "edition_completeness_status": "exact_complete_ambuda_dcs_carrier_not_gap_free_underlying_print_or_manuscript_edition_unidentified_not_critical_recension_or_tradition_complete",
+    "publication_state": "published",
+    "text_status": "exact_provider_surface_token_projection_from_verified_record_spans"
+  },
+  "projection": {
+    "contract": "DEVAM_DCS_SARGA_SURFACE_PROJECTION_V1",
+    "rule": "For each source record in literal carrier order, emit the literal record ID, one ASCII space, and the first tab-delimited surface-token field from every token line joined by one ASCII space; join records with LF. Lemma and morphology remain in the immutable referenced source bytes and are not silently presented as verse text.",
+    "lossless_source_preservation": "The projection is not a replacement for the raw morphological corpus; every sarga locator binds exact raw byte spans and hashes back to the single content-addressed source object."
+  },
+  "completion_denials": {
+    "underlying_print_or_manuscript_edition_identified": false,
+    "critical_edition": false,
+    "gap_free_provider_record_sequence": false,
+    "source_order_monotonic_everywhere": false,
+    "complete_valmiki_ramayana_textual_tradition": false,
+    "all_recensions_and_variants": false,
+    "hindi_translation_present": false,
+    "english_translation_present": false,
+    "ramcharitmanas_present": false,
+    "ramayana_hero_universe_complete": false,
+    "mvp_library_complete": false
+  }
+}

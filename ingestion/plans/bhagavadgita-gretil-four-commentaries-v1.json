@@ -1,0 +1,160 @@
+{
+  "contract": "DEVAM_GRETIL_BHAGAVADGITA_FOUR_COMMENTARIES_INGESTION_V1",
+  "pilot_id": "MVP-GITA-GRETIL-FOUR-COMMENTARIES-2026-08-07",
+  "source_copy_policy": "reference_only_no_duplicate_payload",
+  "objective_boundary": "Connects one exact Bhagavadgita Sanskrit electronic carrier with four named commentary layers to Devam's private graph and exact-evidence index without treating its incomplete commentary layer, marker anomalies, underlying edition, translations, or wider Gita tradition as complete.",
+  "provider": {
+    "name": "GRETIL",
+    "provider_item_id": "GRE-00078",
+    "legacy_queue_id": "AQ-00702",
+    "catalogue_source_url": "https://gretil.sub.uni-goettingen.de/gretil.html",
+    "acquired_at": "2026-07-12T00:00:00Z"
+  },
+  "catalog_evidence": {
+    "provider_catalog_path": "source_vault/catalogs/providers/gretil-items-2026-07-12.csv",
+    "provider_catalog_sha256": "9bdce738aac68944f904d2e886fb71c9641dbad99b1332761881172375a005b8",
+    "provider_row_key": "GRE-00078",
+    "provider_row_sha256": "99df0bdf23dc20055aa706e15055a2ae95930fa54c6d8f6b1dbb0fc9c1d78a03",
+    "source_leads_path": "source_vault/catalogs/source-leads.csv",
+    "source_leads_sha256": "d678967886b5215700f672fe8e8505a065542d48fc042788f2f44173d8229b38",
+    "source_lead_key": "AQ-00702",
+    "source_lead_row_sha256": "6706a4228dad056752e9c013e7c559046ebfc72fa1396f99738016ad3b3828a6"
+  },
+  "identity": {
+    "tei_title": "Bhagavadgītā-4comm with the commentaries of Śrīdhara, Madhusūdana, Viśvanātha and Baladeva",
+    "tei_author_literal": "",
+    "tei_language": "sa-Latn",
+    "tei_xml_id": "sa_bhagavadgItA-4comm",
+    "source_description_literal": "",
+    "publication_date": "2020-07-31",
+    "data_entry": "Gaudiya Grantha Mandira",
+    "gretil_contribution": "Gaudiya Grantha Mandira",
+    "legacy_normalization": "Reinhold Grünendahl",
+    "tei_conversion": "Maximilian Mehner",
+    "named_commentators": ["Śrīdhara", "Madhusūdana", "Viśvanātha", "Baladeva"],
+    "parent_work": "Mahābhārata",
+    "parent_location_identified_in_carrier": false,
+    "underlying_source_edition_identified": false
+  },
+  "work": {
+    "slug": "bhagavad-gita",
+    "canonical_title": "Bhagavadgītā",
+    "work_kind": "scripture",
+    "tradition_scope": ["Sanatana Dharma", "Mahabharata", "Bhagavad Gita"],
+    "summary": "One Sanskrit Bhagavadgītā electronic transcription with named Śrīdhara, Madhusūdana, Viśvanātha, and Baladeva commentary material; editions, recensions, translations, other commentaries, and living reception remain separate library requirements."
+  },
+  "expression": {
+    "language_code": "sa",
+    "script_code": "Latn",
+    "expression_kind": "electronic_transcription_with_commentaries",
+    "attribution": "Gaudiya Grantha Mandira data entry and GRETIL contribution; Reinhold Grünendahl legacy normalization; Maximilian Mehner TEI conversion; commentary layers named in the carrier as Śrīdhara, Madhusūdana, Viśvanātha, and Baladeva.",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "GRETIL Bhagavadgītā electronic text with four named commentary layers",
+    "publisher": "GRETIL",
+    "publication_place": "Göttingen",
+    "publication_year": 2020,
+    "edition_statement": "GRETIL TEI conversion dated 2020-07-31 from a Gaudiya Grantha Mandira contribution; the underlying print or manuscript editions are not identified in sourceDesc, and the carrier explicitly reports that Viśvanātha's final five verse explanations were not recopied.",
+    "identifiers": {"gretil_item_id": "GRE-00078", "legacy_queue_id": "AQ-00702", "tei_xml_id": "sa_bhagavadgItA-4comm"}
+  },
+  "rights": {
+    "lane": "private_evidence",
+    "license": "CC-BY-NC-SA-4.0",
+    "required_literal": "Distributed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+    "status": "noncommercial_sharealike_internal_review_only",
+    "product_clearance": false,
+    "public_exact_text_search": false
+  },
+  "source_objects": [
+    {"role": "canonical_tei", "object_path": "objects/sha256/e1/e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505", "source_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhagavadgItA-4comm.xml", "bytes": 2056476, "sha256": "e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505", "media_type": "application/tei+xml"},
+    {"role": "access_text", "object_path": "objects/sha256/8c/8ca626a76a94782bdc7bc6d1d2f20359602e79c92c131b609bd4eab67c75acf4", "source_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhagavadgItA-4comm.txt", "bytes": 1978331, "sha256": "8ca626a76a94782bdc7bc6d1d2f20359602e79c92c131b609bd4eab67c75acf4", "media_type": "text/plain; charset=utf-8"},
+    {"role": "access_html", "object_path": "objects/sha256/d6/d62e170769d4de67de9dfdb2ebc7505d9b0f0070d89698e1d90b3e3b6d8feccc", "source_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_bhagavadgItA-4comm.htm", "bytes": 2439252, "sha256": "d62e170769d4de67de9dfdb2ebc7505d9b0f0070d89698e1d90b3e3b6d8feccc", "media_type": "text/html; charset=utf-8"}
+  ],
+  "live_observations": [
+    {"role": "canonical_tei", "observed_at": "2026-08-07T01:37:46.8753037Z", "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_bhagavadgItA-4comm.xml", "bytes": 2056476, "sha256": "e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505", "strict_utf8": true, "license_evidence_present": true},
+    {"role": "access_text", "observed_at": "2026-08-07T01:37:46.8753037Z", "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bhagavadgItA-4comm.txt", "bytes": 1978331, "sha256": "8ca626a76a94782bdc7bc6d1d2f20359602e79c92c131b609bd4eab67c75acf4", "strict_utf8": true, "license_evidence_present": true},
+    {"role": "access_html", "observed_at": "2026-08-07T01:37:46.8753037Z", "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_bhagavadgItA-4comm.htm", "bytes": 2439252, "sha256": "d62e170769d4de67de9dfdb2ebc7505d9b0f0070d89698e1d90b3e3b6d8feccc", "strict_utf8": true, "license_evidence_present": true}
+  ],
+  "vault": {
+    "object_count": 8432,
+    "object_bytes": 5598251626,
+    "objects_manifest_sha256": "41840547afa1d2c2f00d6da420b8fb76445d6dcbd68dfbd23a7bd34969f4e078",
+    "provenance_map_sha256": "01fcc70010ca4dd55b1dca690b8557269c969c1425ea1247f319376a76f7f373",
+    "summary_sha256": "f3f2a76c0988839a5676c7d21da17befca35b866d40ab33d7046fd09590f7e83"
+  },
+  "retained_evidence": [
+    {"role": "gita_jayanti_evidence_fixture", "path": "knowledge_packs/panchang/gita-jayanti-2026-v1.json", "bytes": 6664, "sha256": "20e6f9f473cbdf5a68282b36af4a08a6471a0f814665132743e22fca6bd44930"},
+    {"role": "gita_jayanti_reading_guide", "path": "knowledge_packs/rituals/gita-jayanti-reading-reflection-v1.json", "bytes": 21052, "sha256": "a3e96f43d276e60cf3d7782861da2a120f2d2ac53f78a50102a715a2c018afbb"}
+  ],
+  "structure": {
+    "status": "exact_636_div_carrier_covered_with_literal_marker_and_commentary_defects",
+    "edition_completeness_status": "evidence_only_commentary_completeness_unresolved_visvanatha_18_74_to_18_78_explicitly_absent",
+    "text_status": "exact_tei_div_text_projection_with_raw_byte_span",
+    "publication_state": "review",
+    "source_div_count": 636,
+    "passage_count": 636,
+    "verse_commentary_unit_count": 634,
+    "standard_bhg_marker_unit_count": 633,
+    "marker_anomaly_unit_count": 1,
+    "endnote_unit_count": 1,
+    "empty_terminal_div_count": 1,
+    "expanded_literal_marker_count": 684,
+    "commentary_label_unit_counts": {"sridhara": 633, "madhusudana": 528, "visvanatha": 630, "baladeva": 633},
+    "source_div_span_root_sha256": "e8d428bc1b3fe06ed3bc9512d40ce260cc07dbe06ac722aa5bc7f6f7b0370ddd",
+    "source_div_content_root_sha256": "cbb0dac17d429d30c48ebe494adb9e5df9542dfc197737202267a93e6e58b970",
+    "marker_root_sha256": "fd8424b9cff2996c18b30fd9eac0f96decf0d4114e77997868092dcfc7f18690",
+    "chapter_profiles_sha256": "ec86aa1a0613421c4be1b0a39d762cadc20432566f4f3ebe3a9425dacd3d23f0",
+    "special_units": [
+      {"source_ordinal": 438, "role": "verse_commentary_unit_marker_anomaly", "literal_marker": "Verses6-7", "contextual_chapter": 12, "verse_start": 6, "verse_end": 7, "status": "chapter_context_inferred_from_bounding_source_order"},
+      {"source_ordinal": 475, "role": "endnote_unit", "literal_marker": null, "status": "no_verse_marker"},
+      {"source_ordinal": 636, "role": "empty_terminal_div", "literal_marker": null, "status": "no_verse_marker"}
+    ],
+    "explicit_commentary_deficit": {
+      "commentator": "Viśvanātha",
+      "verse_range": "18.74-18.78",
+      "source_paragraph_sha256": "fa75512d3fcf000fbbb4ed8f206eff91f0b00c5da4c234451a727abe4e8c36de",
+      "source_says_final_five_verse_explanations_not_recopied": true
+    },
+    "chapter_profiles": [
+      {"chapter":1,"source_unit_count":32,"expanded_literal_marker_count":48,"expected_conventional_verse_count_reference_only":47,"missing_literal_marker_numbers":[38,47],"duplicate_literal_marker_numbers":[21,22,23],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":2,"source_unit_count":68,"expanded_literal_marker_count":71,"expected_conventional_verse_count_reference_only":72,"missing_literal_marker_numbers":[35],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":3,"source_unit_count":43,"expanded_literal_marker_count":43,"expected_conventional_verse_count_reference_only":43,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":4,"source_unit_count":42,"expanded_literal_marker_count":42,"expected_conventional_verse_count_reference_only":42,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":5,"source_unit_count":27,"expanded_literal_marker_count":28,"expected_conventional_verse_count_reference_only":29,"missing_literal_marker_numbers":[9],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":6,"source_unit_count":42,"expanded_literal_marker_count":47,"expected_conventional_verse_count_reference_only":47,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":7,"source_unit_count":30,"expanded_literal_marker_count":30,"expected_conventional_verse_count_reference_only":30,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":8,"source_unit_count":27,"expanded_literal_marker_count":28,"expected_conventional_verse_count_reference_only":28,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":9,"source_unit_count":31,"expanded_literal_marker_count":34,"expected_conventional_verse_count_reference_only":34,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":10,"source_unit_count":39,"expanded_literal_marker_count":41,"expected_conventional_verse_count_reference_only":42,"missing_literal_marker_numbers":[26],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":11,"source_unit_count":52,"expanded_literal_marker_count":55,"expected_conventional_verse_count_reference_only":55,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":12,"source_unit_count":16,"expanded_literal_marker_count":20,"expected_conventional_verse_count_reference_only":20,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":13,"source_unit_count":25,"expanded_literal_marker_count":30,"expected_conventional_verse_count_reference_only":35,"missing_literal_marker_numbers":[13,15,16,17,35],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":14,"source_unit_count":27,"expanded_literal_marker_count":27,"expected_conventional_verse_count_reference_only":27,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":15,"source_unit_count":15,"expanded_literal_marker_count":16,"expected_conventional_verse_count_reference_only":20,"missing_literal_marker_numbers":[6,9,13,16],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":16,"source_unit_count":20,"expanded_literal_marker_count":20,"expected_conventional_verse_count_reference_only":24,"missing_literal_marker_numbers":[2,3,9,13],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":17,"source_unit_count":23,"expanded_literal_marker_count":26,"expected_conventional_verse_count_reference_only":28,"missing_literal_marker_numbers":[4,14],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]},
+      {"chapter":18,"source_unit_count":75,"expanded_literal_marker_count":78,"expected_conventional_verse_count_reference_only":78,"missing_literal_marker_numbers":[],"duplicate_literal_marker_numbers":[],"out_of_range_literal_marker_numbers":[]}
+    ]
+  },
+  "held_separate_sources": [
+    "GRE-00077 Mahabharata Bhagavadgita electronic version without this four-commentary identity",
+    "sa_bhagavadgItA-comm.xml and its transformations",
+    "Bhaskara, Ramanuja, Samkara, Yamuna, Jnanadeva, other commentaries, translations, editions, recensions, and living teaching traditions",
+    "IIT Kanpur Gita Supersite pages used as reference context rather than acquired GRETIL carriers"
+  ],
+  "completion_denials": {
+    "underlying_source_editions_identified": false,
+    "all_four_commentaries_complete": false,
+    "literal_marker_sequence_proves_verse_completeness": false,
+    "complete_bhagavadgita_textual_tradition": false,
+    "complete_mahabharata": false,
+    "all_editions_recensions_translations_commentaries_and_living_traditions": false,
+    "product_or_public_use_cleared": false,
+    "public_exact_text_search_enabled": false,
+    "sarthi_may_quote_or_republish_private_source_text": false,
+    "gita_jayanti_reading_guide_is_source_text": false,
+    "mvp_library_complete": false
+  }
+}

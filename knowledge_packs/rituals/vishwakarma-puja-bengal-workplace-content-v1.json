@@ -1,0 +1,801 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "bengal",
+        "tradition_code": "regional-bengal"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Are you observing at home, in a workshop, an office, a factory, or a community pandal?",
+      "Is there an employer, workshop owner, operator, family elder, priest, or organiser whose procedure and safety rules apply?",
+      "Which tools or instruments are meaningful to your work, and can they be made completely safe before any decoration or offering?",
+      "Do you want a short personal prayer, a shared workplace observance, or participation in an established puja?"
+    ],
+    "region_codes": [
+      "bengal"
+    ],
+    "settings": [
+      "household",
+      "community",
+      "individual",
+      "family_led"
+    ],
+    "tradition_codes": [
+      "regional-bengal"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-kanya-sankranti-vishwakarma-bengal-2026-v1",
+    "freshness_note": "The bounded Kolkata/Bengal 2026 lane resolves Thursday, 17 September. It does not supply one universal puja muhurta; follow the responsible workplace, family, temple, or organiser for its live schedule.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-kanya-sankranti-vishwakarma-bengal-date-fixture",
+      "west-bengal-tourism-utsav-vishwakarma-puja"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "vishwakarma-puja-bengal-workplace-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "vishwakarma-divine-architect-and-craftsmanship",
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "government-cultural-handbook-west-bengal"
+          ],
+          "summary": "The Ministry of Tourism's West Bengal event account presents Vishwakarma as the divine engineer and architect of the universe, honoured by people whose work depends on craft, instruments and tools. Devam preserves that attributable festival account without asserting that it is the only scriptural genealogy or origin narrative.",
+          "title": "Honouring the divine architect and the dignity of skilled work",
+          "tradition_scope": "Current Bengal public-cultural account",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short personal Bengal Vishwakarma remembrance",
+          "closing": {
+            "scope_note": "Return tools or equipment to service only through the responsible operator's normal safety check.",
+            "source_ids": [
+              "devam-vishwakarma-workplace-safety-boundary"
+            ],
+            "text": "Offer thanks, share or set aside the sweet respectfully, remove every decoration and offering from the working area, and let the responsible person confirm that the equipment is safe before it is used again."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "A short prayer of gratitude for skill and tools",
+          "materials": [
+            {
+              "item": "One clean, safely isolated hand tool, drawing instrument, book, or symbol of your work",
+              "required": false,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "substitutions": [
+                "Keep machinery untouched and pray beside a photograph or written name of the tool",
+                "Offer gratitude without any physical object"
+              ]
+            },
+            {
+              "item": "A flower or sweet",
+              "required": false,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "substitutions": [
+                "Use a quiet prayer or an act of appreciation for a craftsperson"
+              ]
+            }
+          ],
+          "procedure_id": "vishwakarma-puja-bengal-workplace-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-kanya-sankranti-vishwakarma-bengal-date-fixture",
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "west-bengal-tourism-incredible-india-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use 17 September for this bounded 2026 Bengal lane, but ask the family, workplace or organiser for its actual gathering time.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kanya-sankranti-vishwakarma-bengal-date-fixture"
+              ],
+              "why": "The date is resolved for Bengal; a universal puja muhurta is not."
+            },
+            {
+              "instruction": "Choose a clean quiet place away from moving, energised, hot, sharp or load-bearing equipment. Do not place flowers, food, water, powder, thread, lamps or incense inside or on operating machinery.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "Devotion must not create an electrical, mechanical, fire, contamination or restart hazard."
+            },
+            {
+              "instruction": "Remember Vishwakarma as the divine architect, offer a flower or sweet if suitable, and say a familiar prayer of gratitude for skill, safe work, tools and the people whose labour supports the community.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja",
+                "government-cultural-handbook-west-bengal"
+              ],
+              "why": "These are the stable practices and meanings described by the official cultural sources."
+            },
+            {
+              "instruction": "Conclude with one practical act: thank a worker or teacher, clean and store a hand tool properly, or recommit to careful and honest workmanship.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "why": "The public account links the observance to gratitude, unity and appreciation for craftsmanship and labour."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or workplace-led Bengal observance",
+          "closing": {
+            "scope_note": "The responsible operator, owner or safety officer—not the app—controls reopening and restart.",
+            "source_ids": [
+              "devam-vishwakarma-workplace-safety-boundary"
+            ],
+            "text": "Share prasad if your setting does so, remove every temporary item from work areas, account for tools, and complete the site's normal inspection and restart procedure."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Shared home, office or workshop observance",
+          "materials": [
+            {
+              "item": "A clean prayer area or pandal safely separated from active work",
+              "required": true,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "substitutions": [
+                "Use a desk, shelf or community space that does not interfere with equipment"
+              ]
+            },
+            {
+              "item": "Flowers, sweets, an image already used by the family or workplace, and safe decorations",
+              "required": false,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "substitutions": [
+                "Use prayer, appreciation and careful cleaning without material offerings"
+              ]
+            }
+          ],
+          "procedure_id": "vishwakarma-puja-bengal-workplace-content-v1-en-standard-v1",
+          "setting": "community_participation",
+          "source_ids": [
+            "devam-kanya-sankranti-vishwakarma-bengal-date-fixture",
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "west-bengal-tourism-incredible-india-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Have the owner, responsible operator or organiser first identify what will be shut down, what must remain untouched, where people may gather and who controls restart.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "A shared workplace observance must begin with real operational authority."
+            },
+            {
+              "instruction": "Clean and decorate the approved prayer or work area without covering controls, vents, guards, labels, exits, sensors or moving parts.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "Cleaning and decoration are attested practices, but safety boundaries determine where they belong."
+            },
+            {
+              "instruction": "Gather at the approved time, honour Vishwakarma, and follow the familiar family or organiser-led prayer, flower, sweet and tool-remembrance form; do not invent a mantra, homa or consecration sequence.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "why": "The official sources establish the shared devotional core, not one complete liturgy."
+            },
+            {
+              "instruction": "Recognise the artisans, operators, cleaners, maintainers, teachers and colleagues whose skill makes the work possible, and share prasad only where food rules permit.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "why": "Gratitude for craftsmanship and labour is part of the official public meaning."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established workplace, guild, temple or public-puja participation",
+          "closing": {
+            "scope_note": "Formal closing and operational restart remain with the recognised ritual and workplace authorities.",
+            "source_ids": [
+              "devam-vishwakarma-workplace-safety-boundary"
+            ],
+            "text": "Complete the organiser's recognised close, distribute prasad under the site's food rules, clear the gathering, remove all temporary materials and obtain the responsible person's restart approval."
+          },
+          "estimated_minutes": 60,
+          "form": "institutional_participation",
+          "label": "Organiser- or priest-led full workplace puja",
+          "materials": [
+            {
+              "item": "The exact image, altar, offerings, text and sequence specified by the recognised organiser or priest",
+              "required": true,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja"
+              ],
+              "substitutions": [
+                "Join the minimum or standard form instead of reconstructing missing requirements"
+              ]
+            },
+            {
+              "item": "A documented shutdown, crowd, flame, food, access and restart plan",
+              "required": true,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "substitutions": [
+                "Move the observance to a safe non-operational community area"
+              ]
+            }
+          ],
+          "procedure_id": "vishwakarma-puja-bengal-workplace-content-v1-en-elaborate-v1",
+          "setting": "community_participation",
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Let the recognised priest, family, guild, workplace or puja committee determine the image, sankalpa, mantra, offerings, arati, prasad and closing sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja"
+              ],
+              "why": "A public festival description cannot establish one formal liturgy for every Bengal workplace."
+            },
+            {
+              "instruction": "Let the responsible workplace authority separately control shutdown, isolation, access, crowd and fire safety, food handling and restart; ritual authority does not replace technical authority.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "The observance often occurs around real tools and machinery, so the two kinds of authority must remain distinct."
+            },
+            {
+              "instruction": "Participate only in the role assigned to you, honour the craftspeople and workers present, and complete the established close without treating ritual complexity as spiritual rank.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "The lane supports devotion, gratitude and safe participation rather than ungrounded ceremonial escalation."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Never touch, decorate, clean or worship machinery while it is moving, energised, hot, pressurised, suspended or otherwise hazardous.",
+        "Do not put liquids, powders, food, flowers, threads, lamps or incense inside controls, guards, motors, vents, electrical panels or moving parts.",
+        "The employer, owner, trained operator and site safety procedure override generic app instructions; only they may authorise isolation and restart.",
+        "A family, workplace, guild, temple or organiser controls formal mantra, homa, consecration, offerings and closing; this pack does not invent them.",
+        "The Bengal Kanya Sankranti date is not asserted as the date or procedure for every regional Vishwakarma observance."
+      ],
+      "short_answer": "For the bounded Bengal lane, observe Vishwakarma Puja on 17 September 2026. Safely separate prayer from active equipment, clean an approved area, honour Vishwakarma and the dignity of skilled work, and offer a flower, sweet or familiar prayer if appropriate. Follow your family or organiser for the liturgy and the responsible operator for shutdown and restart; never place offerings on operating machinery.",
+      "significance": {
+        "scope_note": "This is a current Bengal public-cultural and participation account, not one universal scriptural theology or all-India procedure.",
+        "source_ids": [
+          "west-bengal-tourism-utsav-vishwakarma-puja",
+          "government-cultural-handbook-west-bengal",
+          "west-bengal-tourism-incredible-india-vishwakarma-puja"
+        ],
+        "text": "Vishwakarma Puja honours Vishwakarma as divine architect and honours the tools, instruments, craftsmanship and labour through which people build and sustain society. In Bengal it is closely associated with Kanya Sankranti and is especially visible in workshops, offices, factories and artisan communities."
+      },
+      "title": "Vishwakarma Puja at home or work",
+      "typical_practices": [
+        {
+          "description": "Official tourism sources describe offices, workshops and factories cleaning and decorating their approved spaces, placing images in decorated pandals, honouring tools and instruments, offering flowers, sweets and prayers, and appreciating artisans and workers. These are descriptive common practices; the exact puja belongs to the participating family, workplace or organiser.",
+          "instructional": false,
+          "population_scope": "Bengal artisans, craftspeople, engineers, workers, households and organised workplaces",
+          "practice_id": "bengal-vishwakarma-workplace-and-craft-participation",
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "government-cultural-handbook-west-bengal",
+            "west-bengal-tourism-incredible-india-vishwakarma-puja"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "A personal home remembrance, artisan workshop, office gathering, factory shutdown and community pandal have different leaders, tools, permissions, risks and closing procedures.",
+          "scope": "Setting and operational authority",
+          "separate_lane_required": false,
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "variant_id": "home-workshop-office-factory-community-settings"
+        },
+        {
+          "difference": "Other regions observe Vishwakarma-related festivals on different calendars or with different community identities; the Bengal Kanya Sankranti lane is not silently generalised.",
+          "scope": "Regional observance identity",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kanya-sankranti-vishwakarma-bengal-date-fixture"
+          ],
+          "variant_id": "other-regional-vishwakarma-calendars"
+        },
+        {
+          "difference": "Formal priest-led, guild, lineage, factory and temple forms may prescribe different mantras, offerings, homa, images and closes.",
+          "scope": "Ritual authority",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "variant_id": "formal-liturgies-remain-authority-led"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "vishwakarma-divine-architect-and-craftsmanship",
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "government-cultural-handbook-west-bengal"
+          ],
+          "summary": "पर्यटन मंत्रालय के पश्चिम बंगाल आयोजन-विवरण में विश्वकर्मा को दिव्य अभियंता और विश्व का शिल्पी बताया गया है, जिनका सम्मान शिल्प, औज़ार और यंत्रों पर निर्भर काम करने वाले लोग करते हैं। देवम इसे एक स्रोत-बद्ध पर्व-विवरण के रूप में रखता है, किसी एकमात्र शास्त्रीय वंशावली या उत्पत्ति-कथा के रूप में नहीं।",
+          "title": "दिव्य शिल्पी और कुशल श्रम की गरिमा का सम्मान",
+          "tradition_scope": "वर्तमान बंगाल सार्वजनिक-सांस्कृतिक विवरण",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "संक्षिप्त व्यक्तिगत बंगाल विश्वकर्मा स्मरण",
+          "closing": {
+            "scope_note": "औज़ार या उपकरण को दोबारा चलाने से पहले जिम्मेदार ऑपरेटर की सामान्य सुरक्षा-जाँच आवश्यक है।",
+            "source_ids": [
+              "devam-vishwakarma-workplace-safety-boundary"
+            ],
+            "text": "कृतज्ञता व्यक्त करें, मिठाई को सम्मानपूर्वक बाँटें या रखें, कार्य-क्षेत्र से हर सजावट और भेंट हटाएँ और जिम्मेदार व्यक्ति से उपकरण सुरक्षित होने की पुष्टि कराएँ।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "कौशल और औज़ारों के लिए छोटी कृतज्ञता-प्रार्थना",
+          "materials": [
+            {
+              "item": "साफ और पूरी तरह सुरक्षित किया हुआ एक हाथ का औज़ार, चित्रकारी/लेखन का साधन, पुस्तक या अपने काम का प्रतीक",
+              "required": false,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "substitutions": [
+                "मशीन को बिल्कुल न छुएँ और किसी फोटो या औज़ार के लिखे हुए नाम के पास प्रार्थना करें",
+                "बिना किसी वस्तु के केवल कृतज्ञता व्यक्त करें"
+              ]
+            },
+            {
+              "item": "एक फूल या मिठाई",
+              "required": false,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "substitutions": [
+                "शांत प्रार्थना करें या किसी शिल्पकार के प्रति सम्मान का कार्य करें"
+              ]
+            }
+          ],
+          "procedure_id": "vishwakarma-puja-bengal-workplace-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-kanya-sankranti-vishwakarma-bengal-date-fixture",
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "west-bengal-tourism-incredible-india-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "2026 के इस सीमित बंगाल संदर्भ में 17 सितंबर का दिन रखें, लेकिन वास्तविक सभा का समय परिवार, कार्यस्थल या आयोजक से पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kanya-sankranti-vishwakarma-bengal-date-fixture"
+              ],
+              "why": "बंगाल के लिए तिथि निश्चित है; कोई एक सार्वभौमिक पूजा-मुहूर्त निश्चित नहीं है।"
+            },
+            {
+              "instruction": "चलती, बिजली से जुड़ी, गर्म, धारदार, दबावयुक्त या भार सँभालती मशीन से दूर साफ और शांत स्थान चुनें। चलती मशीन के भीतर या ऊपर फूल, भोजन, पानी, रंग, धागा, दीपक या अगरबत्ती न रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "भक्ति से बिजली, मशीन, आग, प्रदूषण या पुनः चालू करने का खतरा नहीं बनना चाहिए।"
+            },
+            {
+              "instruction": "विश्वकर्मा को दिव्य शिल्पी के रूप में स्मरण करें, उचित हो तो फूल या मिठाई अर्पित करें और कौशल, सुरक्षित कार्य, औज़ारों तथा समाज को सँभालने वाले श्रमिकों के लिए परिचित प्रार्थना और कृतज्ञता व्यक्त करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja",
+                "government-cultural-handbook-west-bengal"
+              ],
+              "why": "आधिकारिक सांस्कृतिक स्रोत इन्हीं स्थिर प्रथाओं और अर्थों का वर्णन करते हैं।"
+            },
+            {
+              "instruction": "अंत में एक व्यावहारिक काम करें: किसी श्रमिक या गुरु को धन्यवाद दें, हाथ के औज़ार को साफ करके ठीक से रखें, या सावधानी और ईमानदारी से काम करने का संकल्प लें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "why": "सार्वजनिक विवरण इस दिन को शिल्प और श्रम के प्रति कृतज्ञता, एकता और सम्मान से जोड़ता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "परिवार या कार्यस्थल द्वारा संचालित बंगाल आयोजन",
+          "closing": {
+            "scope_note": "कार्यस्थल को दोबारा खोलना और मशीन चालू करना जिम्मेदार ऑपरेटर, मालिक या सुरक्षा अधिकारी के नियंत्रण में है, ऐप के नहीं।",
+            "source_ids": [
+              "devam-vishwakarma-workplace-safety-boundary"
+            ],
+            "text": "यदि आपकी परंपरा में हो तो प्रसाद बाँटें, कार्य-क्षेत्र से हर अस्थायी वस्तु हटाएँ, औज़ारों की गिनती करें और स्थल की सामान्य निरीक्षण तथा पुनः चालू करने की प्रक्रिया पूरी करें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "घर, कार्यालय या कार्यशाला का साझा आयोजन",
+          "materials": [
+            {
+              "item": "चलते काम से सुरक्षित दूरी पर साफ पूजा-स्थान या पंडाल",
+              "required": true,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "substitutions": [
+                "ऐसी मेज़, शेल्फ या सामुदायिक जगह लें जो उपकरणों के काम में बाधा न बने"
+              ]
+            },
+            {
+              "item": "फूल, मिठाई, परिवार या कार्यस्थल में पहले से प्रयुक्त चित्र और सुरक्षित सजावट",
+              "required": false,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "substitutions": [
+                "भौतिक भेंट के बिना प्रार्थना, कृतज्ञता और सावधानी से सफाई करें"
+              ]
+            }
+          ],
+          "procedure_id": "vishwakarma-puja-bengal-workplace-content-v1-hi-standard-v1",
+          "setting": "community_participation",
+          "source_ids": [
+            "devam-kanya-sankranti-vishwakarma-bengal-date-fixture",
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "west-bengal-tourism-incredible-india-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "मालिक, जिम्मेदार ऑपरेटर या आयोजक पहले तय करे कि क्या बंद होगा, किसे बिल्कुल नहीं छूना है, लोग कहाँ इकट्ठा होंगे और मशीन दोबारा कौन चालू करेगा।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "साझा कार्यस्थल आयोजन वास्तविक संचालन-अधिकार से शुरू होना चाहिए।"
+            },
+            {
+              "instruction": "स्वीकृत पूजा या कार्य-क्षेत्र को साफ और सजाएँ, पर कंट्रोल, वेंट, गार्ड, लेबल, निकास, सेंसर या चलने वाले हिस्से न ढकें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "सफाई और सजावट प्रचलित हैं, पर उनका स्थान सुरक्षा-सीमा तय करती है।"
+            },
+            {
+              "instruction": "स्वीकृत समय पर एकत्र हों, विश्वकर्मा का सम्मान करें और परिवार या आयोजक की परिचित प्रार्थना, फूल, मिठाई और औज़ार-स्मरण की विधि अपनाएँ; कोई मंत्र, होम या प्रतिष्ठा-विधि स्वयं न गढ़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja",
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "why": "आधिकारिक स्रोत साझा भक्ति-रूप बताते हैं, कोई एक संपूर्ण पूजा-पद्धति नहीं।"
+            },
+            {
+              "instruction": "उन शिल्पियों, ऑपरेटरों, सफाईकर्मियों, रखरखाव-कर्मियों, गुरुओं और सहकर्मियों का सम्मान करें जिनके कौशल से काम संभव होता है; प्रसाद केवल वहीं बाँटें जहाँ भोजन के नियम अनुमति दें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja"
+              ],
+              "why": "शिल्प और श्रम के प्रति कृतज्ञता आधिकारिक सार्वजनिक अर्थ का हिस्सा है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "स्थापित कार्यस्थल, संघ, मंदिर या सार्वजनिक पूजा में सहभागिता",
+          "closing": {
+            "scope_note": "औपचारिक समापन और काम दोबारा शुरू करना मान्य धार्मिक तथा कार्यस्थल अधिकारियों के अधीन है।",
+            "source_ids": [
+              "devam-vishwakarma-workplace-safety-boundary"
+            ],
+            "text": "आयोजक की मान्य समापन-विधि पूरी करें, स्थल के भोजन-नियमों के अनुसार प्रसाद बाँटें, सभा समाप्त करें, सभी अस्थायी सामग्री हटाएँ और जिम्मेदार व्यक्ति से काम दोबारा शुरू करने की अनुमति लें।"
+          },
+          "estimated_minutes": 60,
+          "form": "institutional_participation",
+          "label": "आयोजक या पुरोहित द्वारा संचालित पूर्ण कार्यस्थल पूजा",
+          "materials": [
+            {
+              "item": "मान्य आयोजक या पुरोहित द्वारा बताए गए सटीक चित्र, वेदी, भेंट, पाठ और क्रम",
+              "required": true,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja"
+              ],
+              "substitutions": [
+                "अज्ञात आवश्यकताओं को गढ़ने के बजाय संक्षिप्त या सामान्य रूप में सहभागी बनें"
+              ]
+            },
+            {
+              "item": "बंद करने, भीड़, आग, भोजन, प्रवेश और पुनः संचालन की लिखित सुरक्षा-योजना",
+              "required": true,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "substitutions": [
+                "आयोजन को सुरक्षित, गैर-संचालन सामुदायिक क्षेत्र में ले जाएँ"
+              ]
+            }
+          ],
+          "procedure_id": "vishwakarma-puja-bengal-workplace-content-v1-hi-elaborate-v1",
+          "setting": "community_participation",
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "मान्य पुरोहित, परिवार, संघ, कार्यस्थल या पूजा समिति को चित्र, संकल्प, मंत्र, भेंट, आरती, प्रसाद और समापन-क्रम तय करने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "west-bengal-tourism-utsav-vishwakarma-puja"
+              ],
+              "why": "सार्वजनिक पर्व-विवरण हर बंगाल कार्यस्थल की एक औपचारिक पूजा-पद्धति सिद्ध नहीं कर सकता।"
+            },
+            {
+              "instruction": "जिम्मेदार कार्यस्थल अधिकारी अलग से बंद करने, अलगाव, प्रवेश, भीड़ और अग्नि-सुरक्षा, भोजन तथा पुनः संचालन को नियंत्रित करे; धार्मिक अधिकार तकनीकी अधिकार की जगह नहीं लेता।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "यह आयोजन वास्तविक औज़ारों और मशीनों के आसपास होता है, इसलिए दोनों प्रकार के अधिकार अलग रहने चाहिए।"
+            },
+            {
+              "instruction": "केवल आपको दी गई भूमिका में सहभागी बनें, उपस्थित शिल्पियों और श्रमिकों का सम्मान करें और पूजा की जटिलता को आध्यात्मिक ऊँचाई का माप न मानते हुए स्थापित समापन पूरा करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "west-bengal-tourism-incredible-india-vishwakarma-puja",
+                "devam-vishwakarma-workplace-safety-boundary"
+              ],
+              "why": "यह मार्ग भक्ति, कृतज्ञता और सुरक्षित सहभागिता को सहारा देता है, अनाधारित कर्मकांड-विस्तार को नहीं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "चलती, बिजली से जुड़ी, गर्म, दबावयुक्त, लटकी हुई या अन्यथा खतरनाक मशीन को कभी न छुएँ, सजाएँ, साफ करें या उस पर पूजा-सामग्री न रखें।",
+        "कंट्रोल, गार्ड, मोटर, वेंट, विद्युत पैनल या चलने वाले हिस्सों के भीतर तरल, रंग, भोजन, फूल, धागा, दीपक या अगरबत्ती न रखें।",
+        "नियोक्ता, मालिक, प्रशिक्षित ऑपरेटर और स्थल की सुरक्षा-प्रक्रिया सामान्य ऐप-निर्देश से ऊपर हैं; अलगाव और पुनः संचालन की अनुमति केवल वे देंगे।",
+        "औपचारिक मंत्र, होम, प्रतिष्ठा, भेंट और समापन परिवार, कार्यस्थल, संघ, मंदिर या आयोजक तय करता है; यह पैक उन्हें गढ़ता नहीं है।",
+        "बंगाल की कन्या संक्रांति की तिथि को हर क्षेत्र के विश्वकर्मा पर्व की तिथि या विधि नहीं माना गया है।"
+      ],
+      "short_answer": "इस सीमित बंगाल संदर्भ में 17 सितंबर 2026 को विश्वकर्मा पूजा करें। प्रार्थना को सक्रिय उपकरणों से सुरक्षित दूरी पर रखें, स्वीकृत जगह साफ करें, विश्वकर्मा और कुशल श्रम की गरिमा का सम्मान करें, और उचित हो तो फूल, मिठाई या परिचित प्रार्थना अर्पित करें। पूजा-विधि के लिए परिवार या आयोजक और मशीन बंद/चालू करने के लिए जिम्मेदार ऑपरेटर का निर्देश मानें; चलती मशीन पर कभी भेंट न रखें।",
+      "significance": {
+        "scope_note": "यह वर्तमान बंगाल सार्वजनिक-सांस्कृतिक और सहभागिता-विवरण है, कोई एक सार्वभौमिक शास्त्रीय धर्ममीमांसा या अखिल-भारतीय विधि नहीं।",
+        "source_ids": [
+          "west-bengal-tourism-utsav-vishwakarma-puja",
+          "government-cultural-handbook-west-bengal",
+          "west-bengal-tourism-incredible-india-vishwakarma-puja"
+        ],
+        "text": "विश्वकर्मा पूजा में विश्वकर्मा को दिव्य शिल्पी के रूप में और उन औज़ारों, यंत्रों, शिल्प तथा श्रम को सम्मान दिया जाता है जिनसे लोग समाज का निर्माण और पालन करते हैं। बंगाल में इसका कन्या संक्रांति से निकट संबंध है और यह कार्यशालाओं, कार्यालयों, कारखानों तथा शिल्पकार समुदायों में विशेष रूप से दिखाई देता है।"
+      },
+      "title": "घर या कार्यस्थल पर विश्वकर्मा पूजा",
+      "typical_practices": [
+        {
+          "description": "आधिकारिक पर्यटन स्रोत कार्यालयों, कार्यशालाओं और कारखानों में स्वीकृत जगह की सफाई और सजावट, सजे पंडालों में चित्र, औज़ारों और यंत्रों का सम्मान, फूल, मिठाई और प्रार्थना तथा शिल्पियों और श्रमिकों की सराहना का वर्णन करते हैं। ये सामान्य वर्णनात्मक प्रथाएँ हैं; सटीक पूजा परिवार, कार्यस्थल या आयोजक की है।",
+          "instructional": false,
+          "population_scope": "बंगाल के शिल्पकार, कारीगर, अभियंता, श्रमिक, परिवार और संगठित कार्यस्थल",
+          "practice_id": "bengal-vishwakarma-workplace-and-craft-participation",
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "government-cultural-handbook-west-bengal",
+            "west-bengal-tourism-incredible-india-vishwakarma-puja"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "व्यक्तिगत गृह-स्मरण, कारीगर की कार्यशाला, कार्यालय सभा, कारखाना बंदी और सामुदायिक पंडाल के नेता, औज़ार, अनुमतियाँ, जोखिम और समापन अलग होते हैं।",
+          "scope": "स्थान और संचालन-अधिकार",
+          "separate_lane_required": false,
+          "source_ids": [
+            "west-bengal-tourism-utsav-vishwakarma-puja",
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "variant_id": "home-workshop-office-factory-community-settings"
+        },
+        {
+          "difference": "अन्य क्षेत्रों में विश्वकर्मा-संबंधित पर्व अलग पंचांग या सामुदायिक पहचान से मनाए जाते हैं; बंगाल की कन्या संक्रांति विधि को चुपचाप सब पर लागू नहीं किया जाता।",
+          "scope": "क्षेत्रीय पर्व-पहचान",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-kanya-sankranti-vishwakarma-bengal-date-fixture"
+          ],
+          "variant_id": "other-regional-vishwakarma-calendars"
+        },
+        {
+          "difference": "औपचारिक पुरोहित-संचालित, संघ, परंपरा, कारखाना और मंदिर रूपों में मंत्र, भेंट, होम, चित्र और समापन अलग हो सकते हैं।",
+          "scope": "धार्मिक अधिकार",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-vishwakarma-workplace-safety-boundary"
+          ],
+          "variant_id": "formal-liturgies-remain-authority-led"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "vishwakarma-puja-bengal"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "01efb771174a8053d36420de060d673013eb081b4cb149ee4c7299e0878e7fe1",
+      "citation_coordinates": {
+        "file": "knowledge_packs/panchang/kanya-sankranti-vishwakarma-bengal-2026-v1.json",
+        "json_pointers": [
+          "/scope/civil_date",
+          "/resolution_contract/vishwakarma_puja_bengal",
+          "/source_observations"
+        ]
+      },
+      "publisher": "Devam",
+      "rights_lane": "product_cleared",
+      "source_id": "devam-kanya-sankranti-vishwakarma-bengal-date-fixture",
+      "source_role": "Bounded Kolkata/Bengal 2026 date, identity and non-universality contract",
+      "title": "Kanya Sankranti and Bengal Vishwakarma Puja 2026 fixture",
+      "url": null
+    },
+    {
+      "citation_coordinates": {
+        "observed_fields": [
+          "Vishwakarma as divine engineer and architect",
+          "engineering community and professionals",
+          "workforce worships instruments and tools",
+          "Kanya Sankranti identity",
+          "offices, workshops and factories",
+          "decorated pandals"
+        ]
+      },
+      "observed_fetch": {
+        "final_url": "https://utsav.gov.in/public/view-event/vishwakarma-puja",
+        "observed_at": "2026-08-07",
+        "response_bytes": 30936,
+        "response_sha256": "15902c4780f9739dbf982c2e1a7c2e907861794cc4c705ab0296f47d637a3044",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Ministry of Tourism, Government of India / Department of Tourism, Government of West Bengal",
+      "rights_lane": "citation_only",
+      "source_id": "west-bengal-tourism-utsav-vishwakarma-puja",
+      "source_role": "Official Bengal festival identity, population, setting and common-practice account",
+      "title": "Vishwakarma Puja",
+      "url": "https://utsav.gov.in/public/view-event/vishwakarma-puja"
+    },
+    {
+      "citation_coordinates": {
+        "document_section": "September 2024 festival newsletter, Vishwakarma Puja entry",
+        "observed_fields": [
+          "workplaces cleaned and decorated",
+          "tools, machinery and instruments honoured",
+          "flowers, sweets and prayers",
+          "safety, success and prosperity",
+          "appreciation for craftsmanship and labour"
+        ],
+        "access_note": "The official URL was indexed with these literals but returned a 404 after a redirect during the 2026-08-07 recheck; it remains citation-only and is corroborated by the live Utsav page and official cultural handbook."
+      },
+      "publisher": "Ministry of Tourism, Government of India",
+      "rights_lane": "citation_only",
+      "source_id": "west-bengal-tourism-incredible-india-vishwakarma-puja",
+      "source_role": "Official public account of common offerings, workplace preparation and social meaning",
+      "title": "Incredible India September 2024 newsletter — Vishwakarma Puja",
+      "url": "https://tourism.gov.in/sites/default/files/2024-11/Newsletter_September2024.pdf"
+    },
+    {
+      "citation_coordinates": {
+        "page": 168,
+        "section": "India: Unity in Cultural Diversity — West Bengal festival table",
+        "observed_literal_scope": "Vishwakarma Puja: God of Creation celebrated to worship machines, tools or technical machinery in manufacturing units"
+      },
+      "publisher": "Government of India cultural education resource",
+      "rights_lane": "citation_only",
+      "source_id": "government-cultural-handbook-west-bengal",
+      "source_role": "Official corroboration of the Bengal tools, machinery and manufacturing-unit practice context",
+      "title": "India: Unity in Cultural Diversity",
+      "url": "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2023/09/2023092156.pdf"
+    },
+    {
+      "citation_coordinates": {
+        "basis": "Editorial safety constraint for devotional activity around tools, electricity, heat, pressure, moving machinery, food and workplace restart",
+        "not_a_ritual_source": true
+      },
+      "publisher": "Devam",
+      "rights_lane": "product_cleared",
+      "source_id": "devam-vishwakarma-workplace-safety-boundary",
+      "source_role": "Operational safety and authority boundary; not evidence for a ritual prescription",
+      "title": "Vishwakarma Puja workplace safety boundary",
+      "url": null
+    }
+  ]
+}

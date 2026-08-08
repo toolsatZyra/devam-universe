@@ -1,0 +1,813 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and Panchang profile applies?",
+      "Does your family keep a monthly Shiva practice or only annual Mahashivaratri?",
+      "Is there a family-known Shiva prayer, reading, temple, or closing custom?",
+      "Would a material-free, flame-free, and non-fasting form suit you?"
+    ],
+    "region_codes": [
+      "north-india",
+      "west-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": null,
+    "decision_rule_id": "devam-masika-shivaratri-pradosha-nishita-v1",
+    "freshness_note": "Resolve the night for the user's location and profile. Family or temple authority controls formal timing, fasting, offerings, vigil, and close.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "nirnayasindhu-1865-masika-shivaratri-rule",
+      "drikpanchang-delhi-masika-shivaratri-2026"
+    ],
+    "timing_kind": "textual_rule",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "masika-shivaratri-north-west-india-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "monthly-shivaratri-identity",
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "ministry-tourism-somnath-monthly-shivratri",
+            "mhada-masika-shivaratri-identity"
+          ],
+          "summary": "The historical rule, current practitioner calendar, Maharashtra calendar identity, and Somnath programme independently support a recurring monthly Shiva night. They do not establish one universal origin story or one household procedure.",
+          "title": "Monthly Shiva remembrance",
+          "tradition_scope": "Named historical, current practitioner, Maharashtra, and Somnath evidence",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Self-guided remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-masika-shivaratri-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "A quiet Shiva remembrance",
+          "materials": [
+            {
+              "item": "A quiet place",
+              "required": true,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "A seated pause wherever you are",
+                "No materials"
+              ]
+            }
+          ],
+          "procedure_id": "masika-shivaratri-north-west-india-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm that Today resolves Masika Shivaratri for your supported place and tradition.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "nirnayasindhu-1865-masika-shivaratri-rule",
+                "drikpanchang-delhi-masika-shivaratri-2026"
+              ],
+              "why": "The monthly night is selected through a pradosha-nishita rule rather than a generic civil date."
+            },
+            {
+              "instruction": "Remember Shiva through a family-known name or prayer; quiet attention is a valid substitute.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "It keeps the form devotional without inventing a universal mantra or count."
+            },
+            {
+              "instruction": "Reflect on one reaction to release and one patient or compassionate action to take.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "This makes the pause useful without promising purification, protection, or another result."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Individual or household reflection",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-masika-shivaratri-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "Prayer, study, and a deliberate action",
+          "materials": [
+            {
+              "item": "A family-approved Shiva text, image, or symbol",
+              "required": false,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "A trusted audio reading",
+                "A remembered teaching",
+                "No object"
+              ]
+            },
+            {
+              "item": "A safe note",
+              "required": false,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "Phone note",
+                "Paper",
+                "Remember it"
+              ]
+            }
+          ],
+          "procedure_id": "masika-shivaratri-north-west-india-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary",
+            "ministry-tourism-somnath-monthly-shivratri"
+          ],
+          "steps": [
+            {
+              "instruction": "Begin with the family's known Shiva remembrance, or with silence if no form is established.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "Known family practice takes precedence over a generated ritual."
+            },
+            {
+              "instruction": "Read or hear one short source-identified Shiva teaching or hymn without presenting one interpretation as universal.",
+              "optional": true,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "Attribution keeps scripture, translation, commentary, and personal reflection distinct."
+            },
+            {
+              "instruction": "Sit quietly, then choose one concrete act of restraint, repair, patience, or service.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "The practice becomes actionable without a guaranteed spiritual outcome."
+            },
+            {
+              "instruction": "Close with gratitude according to family custom; no material offering is required by this guide.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "ministry-tourism-somnath-monthly-shivratri",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "Temple and household offerings remain separate living-practice lanes."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or temple-led participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-masika-shivaratri-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family- or temple-led monthly observance",
+          "materials": [
+            {
+              "item": "The family's or temple's established programme",
+              "required": false,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "A trusted live or recorded programme",
+                "The standard home form"
+              ]
+            }
+          ],
+          "procedure_id": "masika-shivaratri-north-west-india-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "ministry-tourism-somnath-monthly-shivratri",
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use the resolved night and confirm any formal timing with the temple or family authority leading the observance.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "nirnayasindhu-1865-masika-shivaratri-rule",
+                "drikpanchang-delhi-masika-shivaratri-2026"
+              ],
+              "why": "Devam's date rule does not make it a formal puja-timing authority."
+            },
+            {
+              "instruction": "Join the known prayer, darshan, aarti, study, or meditation without independently copying temple abhisheka or priestly procedure.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "ministry-tourism-somnath-monthly-shivratri",
+                "maharashtra-tourism-mahashivaratri-context"
+              ],
+              "why": "Somnath's special monthly programme is attributable to that temple, not a universal home script."
+            },
+            {
+              "instruction": "Give unhurried attention to reflection and one concrete act of compassion or reconciliation.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "The longer form deepens practice without requiring a night vigil."
+            },
+            {
+              "instruction": "Close with that established authority; do not use Devam to begin, extend, or break a fast.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "Fasting, health suitability, food, and parana remain outside this companion."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not begin, extend, or break a fast from this companion.",
+        "No food, medical, vigil, parana, abhisheka ingredient, home-lingam, mantra-count, priestly, or promised-outcome instruction is supplied.",
+        "Use a material-free and flame-free form whenever it suits the user or setting.",
+        "A family, temple, or initiated authority controls any established formal practice."
+      ],
+      "short_answer": "A simple Shiva-remembrance companion for the resolved monthly night in a supported North or West India Smarta context. It does not replace a family, temple, or initiated Shaiva practice.",
+      "significance": {
+        "scope_note": "This completes only the named four-month remembrance and participant lane; it is not annual Mahashivaratri or a universal vrata, fast, vigil, abhisheka, mantra, offering, or parana.",
+        "source_ids": [
+          "nirnayasindhu-1865-masika-shivaratri-rule",
+          "drikpanchang-delhi-masika-shivaratri-2026",
+          "mhada-masika-shivaratri-identity"
+        ],
+        "text": "In this bounded North/West India Smarta lane, Masika Shivaratri is a recurring Krishna-paksha Chaturdashi night for Shiva remembrance. Devam resolves the night through the retained pradosha-nishita rule while family, temple, or initiated Shaiva practice controls any formal observance."
+      },
+      "title": "Masika Shivaratri devotional companion",
+      "typical_practices": [
+        {
+          "description": "Prayer, meditation, reflection, and family devotion are attributable Shiva contexts; this lane offers them without importing the annual festival's formal practices.",
+          "instructional": false,
+          "population_scope": "Official Maharashtra annual context used only for bounded devotional vocabulary",
+          "practice_id": "shiva-prayer-meditation-reflection",
+          "source_ids": [
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ]
+        },
+        {
+          "description": "The official Somnath listing supports temple-led monthly puja, aarti, and darshan as one attributable institutional lane, not a home script.",
+          "instructional": false,
+          "population_scope": "Somnath temple programme only",
+          "practice_id": "somnath-monthly-temple-programme",
+          "source_ids": [
+            "ministry-tourism-somnath-monthly-shivratri"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "North and West India Smarta pairs share this accessible companion, but local date, family practice, temple programme, and closing remain contextual.",
+          "scope": "Supported date/practice pairs",
+          "separate_lane_required": false,
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "variant_id": "north-west-smarta-pairs"
+        },
+        {
+          "difference": "Somnath's monthly puja, aarti, and darshan remain under that institution and are not copied into the household sequence.",
+          "scope": "Somnath temple",
+          "separate_lane_required": true,
+          "source_ids": [
+            "ministry-tourism-somnath-monthly-shivratri"
+          ],
+          "variant_id": "somnath-institutional-lane"
+        },
+        {
+          "difference": "Annual Mahashivaratri stories, fasting, vigil, abhisheka, liturgy, crowds, and regional forms are not monthly defaults.",
+          "scope": "Annual Mahashivaratri",
+          "separate_lane_required": true,
+          "source_ids": [
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "variant_id": "annual-mahashivaratri-separate"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "monthly-shivaratri-identity",
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "ministry-tourism-somnath-monthly-shivratri",
+            "mhada-masika-shivaratri-identity"
+          ],
+          "summary": "ऐतिहासिक नियम, वर्तमान पंचांग, महाराष्ट्र की मासिक पहचान और सोमनाथ कार्यक्रम मासिक शिव-रात्रि की पुष्टि करते हैं; वे एक सार्वभौमिक उत्पत्ति-कथा या गृह-विधि सिद्ध नहीं करते।",
+          "title": "मासिक शिव-स्मरण",
+          "tradition_scope": "Named historical, current practitioner, Maharashtra, and Somnath evidence",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Self-guided remembrance",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-masika-shivaratri-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "शांत शिव-स्मरण",
+          "materials": [
+            {
+              "item": "शांत स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं बैठकर विराम",
+                "कोई सामग्री नहीं"
+              ]
+            }
+          ],
+          "procedure_id": "masika-shivaratri-north-west-india-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "देखें कि Today आपके समर्थित स्थान और परम्परा के लिए मासिक शिवरात्रि निर्धारित करता है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "nirnayasindhu-1865-masika-shivaratri-rule",
+                "drikpanchang-delhi-masika-shivaratri-2026"
+              ],
+              "why": "मासिक रात्रि सामान्य तारीख से नहीं, प्रदोष-निशीथ नियम से चुनी जाती है।"
+            },
+            {
+              "instruction": "परिवार में परिचित नाम या प्रार्थना से शिव का स्मरण करें; शांत ध्यान भी पर्याप्त है।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "इससे सार्वभौमिक मंत्र या गिनती गढ़े बिना भक्ति बनी रहती है।"
+            },
+            {
+              "instruction": "एक प्रतिक्रिया पहचानें जिसे छोड़ना है और धैर्य या करुणा का एक काम चुनें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "यह शुद्धि, रक्षा या फल की गारंटी दिए बिना विराम को उपयोगी बनाता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Individual or household reflection",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-masika-shivaratri-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 30,
+          "form": "traditional_household",
+          "label": "प्रार्थना, अध्ययन और संकल्पित काम",
+          "materials": [
+            {
+              "item": "परिवार द्वारा मान्य शिव-पाठ, चित्र या प्रतीक",
+              "required": false,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "विश्वसनीय श्रव्य-पाठ",
+                "याद की हुई शिक्षा",
+                "कोई वस्तु नहीं"
+              ]
+            },
+            {
+              "item": "सुरक्षित नोट",
+              "required": false,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "फोन नोट",
+                "कागज",
+                "मन में याद रखें"
+              ]
+            }
+          ],
+          "procedure_id": "masika-shivaratri-north-west-india-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary",
+            "ministry-tourism-somnath-monthly-shivratri"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार के परिचित शिव-स्मरण से शुरू करें; स्थापित रूप न हो तो मौन रखें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "परिवार की जानी विधि किसी गढ़े कर्मकांड से पहले आती है।"
+            },
+            {
+              "instruction": "स्रोत की पहचान वाला छोटा शिव-पाठ या स्तुति पढ़ें या सुनें और एक अर्थ को सार्वभौमिक न कहें।",
+              "optional": true,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "स्रोत से मूल, अनुवाद, टीका और निजी चिंतन अलग रहते हैं।"
+            },
+            {
+              "instruction": "शांत बैठें और संयम, सुधार, धैर्य या सेवा का एक ठोस काम चुनें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "maharashtra-tourism-mahashivaratri-context",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "इससे निश्चित आध्यात्मिक फल के बिना अभ्यास व्यवहार में आता है।"
+            },
+            {
+              "instruction": "परिवार की रीति से कृतज्ञता सहित समापन करें; यह सहचर कोई सामग्री अनिवार्य नहीं करता।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "ministry-tourism-somnath-monthly-shivratri",
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "मंदिर और गृह-अर्पण अलग जीवित परम्पराएँ हैं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or temple-led participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-masika-shivaratri-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "परिवार या मंदिर के नेतृत्व में मासिक रूप",
+          "materials": [
+            {
+              "item": "परिवार या मंदिर का स्थापित कार्यक्रम",
+              "required": false,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "substitutions": [
+                "विश्वसनीय सीधा या रिकॉर्ड किया कार्यक्रम",
+                "घर का मानक रूप"
+              ]
+            }
+          ],
+          "procedure_id": "masika-shivaratri-north-west-india-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "ministry-tourism-somnath-monthly-shivratri",
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "निर्धारित रात्रि लें और औपचारिक समय को नेतृत्व करने वाले मंदिर या परिवार से पुष्ट करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "nirnayasindhu-1865-masika-shivaratri-rule",
+                "drikpanchang-delhi-masika-shivaratri-2026"
+              ],
+              "why": "देवम का तिथि-नियम औपचारिक पूजा-समय का प्राधिकारी नहीं बनता।"
+            },
+            {
+              "instruction": "परिचित प्रार्थना, दर्शन, आरती, अध्ययन या ध्यान में जुड़ें; मंदिर का अभिषेक या पुरोहित-विधि स्वयं न दोहराएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "ministry-tourism-somnath-monthly-shivratri",
+                "maharashtra-tourism-mahashivaratri-context"
+              ],
+              "why": "सोमनाथ का मासिक कार्यक्रम उसी मंदिर का है, सार्वभौमिक गृह-विधि नहीं।"
+            },
+            {
+              "instruction": "चिंतन और करुणा या मेल-मिलाप के एक काम के लिए पर्याप्त समय दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "लम्बा रूप रात्रि-जागरण अनिवार्य किए बिना अभ्यास गहरा करता है।"
+            },
+            {
+              "instruction": "उसी स्थापित मार्गदर्शक के अनुसार समापन करें; देवम से उपवास शुरू, बढ़ाएँ या खोलें नहीं।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-masika-shivaratri-safety-boundary"
+              ],
+              "why": "उपवास, स्वास्थ्य, आहार और पारण इस सहचर से बाहर हैं।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not begin, extend, or break a fast from this companion.",
+        "No food, medical, vigil, parana, abhisheka ingredient, home-lingam, mantra-count, priestly, or promised-outcome instruction is supplied.",
+        "Use a material-free and flame-free form whenever it suits the user or setting.",
+        "A family, temple, or initiated authority controls any established formal practice."
+      ],
+      "short_answer": "समर्थित उत्तर या पश्चिम भारत स्मार्त सन्दर्भ में निर्धारित मासिक रात्रि के लिए सरल शिव-स्मरण। यह परिवार, मंदिर या दीक्षित शैव साधना का स्थान नहीं लेता।",
+      "significance": {
+        "scope_note": "This completes only the named four-month remembrance and participant lane; it is not annual Mahashivaratri or a universal vrata, fast, vigil, abhisheka, mantra, offering, or parana.",
+        "source_ids": [
+          "nirnayasindhu-1865-masika-shivaratri-rule",
+          "drikpanchang-delhi-masika-shivaratri-2026",
+          "mhada-masika-shivaratri-identity"
+        ],
+        "text": "इस सीमित उत्तर/पश्चिम भारत स्मार्त मार्ग में मासिक शिवरात्रि कृष्ण-पक्ष चतुर्दशी की शिव-स्मरण रात्रि है। देवम संचित प्रदोष-निशीथ नियम से रात्रि तय करता है; औपचारिक आचरण परिवार, मंदिर या दीक्षित शैव परम्परा के अधीन रहता है।"
+      },
+      "title": "मासिक शिवरात्रि भक्ति-सहचर",
+      "typical_practices": [
+        {
+          "description": "प्रार्थना, ध्यान, चिंतन और पारिवारिक भक्ति शिव-सन्दर्भ हैं; यह मार्ग वार्षिक पर्व की औपचारिक विधियां मासिक रूप में नहीं लाता।",
+          "instructional": false,
+          "population_scope": "Official Maharashtra annual context used only for bounded devotional vocabulary",
+          "practice_id": "shiva-prayer-meditation-reflection",
+          "source_ids": [
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ]
+        },
+        {
+          "description": "आधिकारिक सोमनाथ विवरण मंदिर-नेतृत्व वाले मासिक पूजन, आरती और दर्शन का एक संस्थागत मार्ग बताता है, गृह-विधि नहीं।",
+          "instructional": false,
+          "population_scope": "Somnath temple programme only",
+          "practice_id": "somnath-monthly-temple-programme",
+          "source_ids": [
+            "ministry-tourism-somnath-monthly-shivratri"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "North and West India Smarta pairs share this accessible companion, but local date, family practice, temple programme, and closing remain contextual.",
+          "scope": "Supported date/practice pairs",
+          "separate_lane_required": false,
+          "source_ids": [
+            "nirnayasindhu-1865-masika-shivaratri-rule",
+            "drikpanchang-delhi-masika-shivaratri-2026",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "variant_id": "north-west-smarta-pairs"
+        },
+        {
+          "difference": "Somnath's monthly puja, aarti, and darshan remain under that institution and are not copied into the household sequence.",
+          "scope": "Somnath temple",
+          "separate_lane_required": true,
+          "source_ids": [
+            "ministry-tourism-somnath-monthly-shivratri"
+          ],
+          "variant_id": "somnath-institutional-lane"
+        },
+        {
+          "difference": "Annual Mahashivaratri stories, fasting, vigil, abhisheka, liturgy, crowds, and regional forms are not monthly defaults.",
+          "scope": "Annual Mahashivaratri",
+          "separate_lane_required": true,
+          "source_ids": [
+            "maharashtra-tourism-mahashivaratri-context",
+            "devam-masika-shivaratri-safety-boundary"
+          ],
+          "variant_id": "annual-mahashivaratri-separate"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "masika-shivaratri-2026-09",
+    "masika-shivaratri-2026-10",
+    "masika-shivaratri-2026-11",
+    "masika-shivaratri-2026-12"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "citation_coordinates": {
+        "legacy_pack": "knowledge_packs/rituals/masika-shivaratri-north-west-india-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "rights_lane": "citation_only",
+      "source_id": "nirnayasindhu-1865-masika-shivaratri-rule",
+      "source_role": "historical_date_precedence_context_not_a_modern_household_script",
+      "title": "Nirnayasindhu, Masika Shivaratri pradosha and nishita discussion",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/vrats/masik-shivaratri-dates.html?geoname-id=1261481&year=2026",
+        "response_bytes": 99395,
+        "response_sha256": "b6e370d4cb6a081ef21e5f8a55280f662e5516c78c51cb04a2c09488210a9376",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-delhi-masika-shivaratri-2026",
+      "source_role": "delhi_date_fixture_monthly_krishna_chaturdashi_and_shiva_worship_context",
+      "title": "2026 Masik Shivaratri dates for Delhi",
+      "url": "https://www.drikpanchang.com/vrats/masik-shivaratri-dates.html?geoname-id=1261481&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://utsav.gov.in/public/view-event/monthly-shivratri",
+        "response_bytes": 33003,
+        "response_sha256": "ed41c85c69511f974be9b93fa746a6862f0b961a8604842a32efff4c81bb16d9",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Utsav Portal, Ministry of Tourism, Government of India",
+      "rights_lane": "citation_only",
+      "source_id": "ministry-tourism-somnath-monthly-shivratri",
+      "source_role": "proof_of_monthly_temple_led_puja_aarti_and_darshan_as_one_attributable_somnath_lane",
+      "title": "Monthly Shivratri at Somnath",
+      "url": "https://utsav.gov.in/public/view-event/monthly-shivratri"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.mhada.gov.in/en/node/19422",
+        "response_bytes": 190587,
+        "response_sha256": "e3e225c1675aa671cd6a1aadd05f291e4a98f99aca24e2dcd085cd74ec24d345",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Maharashtra Housing and Area Development Authority",
+      "rights_lane": "citation_only",
+      "source_id": "mhada-masika-shivaratri-identity",
+      "source_role": "maharashtra_monthly_shivaratri_and_krishna_chaturdashi_identity_only",
+      "title": "Masik Shivaratri",
+      "url": "https://www.mhada.gov.in/en/node/19422"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://maharashtratourism.gov.in/festivals/mahashivratri/",
+        "response_bytes": 627506,
+        "response_sha256": "dbb1427970adac4e900a539b56d729d1504160b16832e1cf8e420da4d412cdd9",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "rights_lane": "citation_only",
+      "source_id": "maharashtra-tourism-mahashivaratri-context",
+      "source_role": "shiva_prayer_meditation_reflection_and_family_devotion_context_not_monthly_procedure_authority",
+      "title": "Mahashivratri: a sacred festival of spirituality and devotion",
+      "url": "https://maharashtratourism.gov.in/festivals/mahashivratri/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-masika-shivaratri-safety-boundary",
+      "source_role": "excludes_fast_food_health_abhisheka_mantra_vigil_parana_and_outcome_prescriptions",
+      "title": "Devam Masika Shivaratri internal-beta safety and attribution boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-masika-shivaratri-north-west-india-v1"
+  ]
+}

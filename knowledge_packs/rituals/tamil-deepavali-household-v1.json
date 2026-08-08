@@ -1,0 +1,178 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-tamil-deepavali-household-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "tamil-deepavali-naraka-chaturdashi",
+  "scope": {
+    "region_codes": ["south-india"],
+    "tradition_codes": ["smarta-south-india"],
+    "language_codes": ["en", "hi"],
+    "chennai_2026_date_fixture_required": true,
+    "family_custom_overrides_generic_sequence": true,
+    "provider_published_interval_reproduced": false
+  },
+  "sources": [
+    {
+      "source_id": "devam-tamil-deepavali-date-fixture",
+      "title": "Devam Tamil Deepavali Chennai 2026 date evidence fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_crosswalk",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "97319c8fc4f1e6bb157c7540f6bcfc3379c0bccabdabb22b57493e085feac7de"
+    },
+    {
+      "source_id": "dd-news-tamil-nadu-deepavali-2025",
+      "title": "Parikrama: Deepavali in Tamil Nadu",
+      "publisher": "DD News On Air",
+      "url": "https://www.newsonair.gov.in/bulletins-detail/parikrama-524/",
+      "source_class": "official_public_broadcaster_regional_practice",
+      "rights_lane": "reference_only",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T22:03:31.297Z", "status": 200, "final_url": "https://newsonair.gov.in/bulletins-detail/parikrama-524/", "response_bytes": 101995, "response_sha256": "7d8278338f95a4700037c1e5edd8ca8e17f7466b7c4106df43051f3e3c0fe1f2", "strict_utf8": true},
+      "observed_literals": {"tamil_nadu_unique_deepavali": true, "krishna_narakasura_identity": true, "early_morning_oil_bath_before_sunrise": true, "sesame_oil_and_elder_blessing_described": true, "sweets_and_new_clothes_described": true}
+    },
+    {
+      "source_id": "ministry-tourism-deepa-oli-tiruvannamalai",
+      "title": "Deepa Oli - Arulmigu Arunachaleswarar Temple, Tiruvannamalai",
+      "publisher": "Utsav, Ministry of Tourism, Government of India",
+      "url": "https://www.utsav.gov.in/public/view-event/deepa-oli-arulmigu-arunchalaeswarar-temple-tiruvannamalai-1",
+      "source_class": "official_tourism_regional_practice_corroboration",
+      "rights_lane": "reference_only",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T22:03:47.442Z", "status": 200, "final_url": "https://www.utsav.gov.in/public/view-event/deepa-oli-arulmigu-arunchalaeswarar-temple-tiruvannamalai-1", "response_bytes": 34782, "response_sha256": "de0fce8c0e2789f58bd9d8b0d2e0e972be3c9b37f09bc123335d70d2166b7bbe", "strict_utf8": true},
+      "observed_literals": {"narakasura_identity": true, "morning_oil_bath": true, "regional_foods_described": true}
+    },
+    {
+      "source_id": "devam-bath-and-flame-safety-boundary",
+      "title": "Devam household bath, food, and flame-safety boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary_not_ritual_authority",
+      "rights_lane": "derivative_allowed"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "tamil-deepavali-household-en-v1",
+      "language_code": "en",
+      "title": "Tamil Deepavali morning at home",
+      "summary": "For the resolved South India Smarta date, Tamil Deepavali centres on Naraka Chaturdashi and a family-led oil bath before sunrise. Use the oil, blessing, bathing method, prayer, clothing, and foods your household actually knows. A normal safe bath is the fallback when oil is unsuitable; fireworks and a North/West Lakshmi-Puja sequence are not part of this guide.",
+      "family_practice_note": "Ask whether an elder applies sesame oil, what your family calls Ganga snanam, which Narakasura/Krishna/Satyabhama remembrance it keeps, and what foods or new clothes are customary. Skip oil for allergy, skin, mobility, or slip concerns; use safe water and flooring. This guide does not prescribe medical treatment or one universal Tamil/Karnataka sequence.",
+      "context_prompts": [
+        "Does your Tamil or South Indian family observe the oil bath before sunrise, and who guides it?",
+        "Is sesame oil customary and suitable for everyone, or should someone take a normal safe bath?",
+        "Which prayer, Narakasura story, foods, blessings, clothes, or temple visit does your family keep?",
+        "Do you need the short home form or a family-led fuller sequence?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum", "label": "Safe pre-sunrise family bath", "estimated_minutes": 15,
+          "materials": [
+            {"item": "The family's usual bath setup and clean clothes", "substitutions": ["Use a normal safe bath when oil or an early bath is unsuitable"], "optional": false},
+            {"item": "A small amount of the family's usual oil", "substitutions": ["Skip oil for allergy, skin, mobility, slip, or other safety concerns"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Use the resolved Tamil Deepavali date and the local Brahma Muhurta shown by Today; do not copy a provider interval for another place.", "why": "The date rule is location-aware and separate from North/West Naraka Chaturdashi.", "optional": false, "source_ids": ["devam-tamil-deepavali-date-fixture"]},
+            {"ordinal": 2, "instruction": "Prepare a warm, well-lit, non-slip bathing space. If it is customary and suitable, let an elder bless and apply a small amount of the family's usual oil; otherwise skip oil.", "why": "Official regional evidence describes elder-blessed sesame oil, while personal safety and actual family practice govern its use.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "devam-bath-and-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Bathe safely before sunrise, put on clean clothes, and offer the family's familiar short prayer or quiet remembrance of good overcoming harm.", "why": "The pre-sunrise bath and Narakasura-victory meaning are the bounded regional core.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai"]},
+            {"ordinal": 4, "instruction": "Receive elders' blessings and share the household's prepared sweet or breakfast if customary and suitable.", "why": "Blessings and festive foods are described regional family practices, not universal requirements.", "optional": true, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai"]}
+          ]
+        },
+        {
+          "tier": "standard", "label": "Family-led Deepavali morning", "estimated_minutes": 30,
+          "materials": [
+            {"item": "Family oil and bath materials, clean or new clothes, and prepared food", "substitutions": ["Use only the items your household already keeps; none requires a new purchase"], "optional": false},
+            {"item": "A familiar image, lamp, or prayer focus", "substitutions": ["Use a quiet mental prayer and a flame-free light"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "The previous evening, confirm the family's wake-up, oil, bath, clothing, food, prayer, and elder-blessing sequence, and make the bathroom safe.", "why": "The sequence is a living household practice rather than one national template.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "devam-bath-and-flame-safety-boundary"]},
+            {"ordinal": 2, "instruction": "Before sunrise, follow the safe family oil-blessing and bath form, with a normal bath for anyone for whom oil is unsuitable.", "why": "This preserves the distinctive regional core without overriding health or safety context.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai"]},
+            {"ordinal": 3, "instruction": "Wear clean or customary new clothes, greet elders, and offer the family's known prayer or Narakasura-victory remembrance.", "why": "Clothes, blessings, and narrative remembrance are family practices supported by the regional account.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025"]},
+            {"ordinal": 4, "instruction": "Share the family's sweets or breakfast and continue with its temple, visiting, giving, or rest practice; do not infer a fireworks requirement.", "why": "Food and fellowship are supported, while fireworks are excluded from Devam's procedure.", "optional": false, "source_ids": ["ministry-tourism-deepa-oli-tiruvannamalai", "devam-bath-and-flame-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate", "label": "Elder- or family-text-led form", "estimated_minutes": 60,
+          "materials": [
+            {"item": "The exact oil, herbal materials, prayer text, foods, lamps, and clothing your family specifies", "substitutions": ["Return to the bounded minimum form rather than reconstructing unknown details"], "optional": false},
+            {"item": "A safe plan for bathing, hot water, food allergies, lamps, children, and elders", "substitutions": ["Scale down to a normal bath and flame-free observance where needed"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Have the household elder or recognised guide define the exact oil application, Ganga snanam language, prayer, story, food, clothing, giving, and temple sequence.", "why": "These details vary and are not all established by the bounded sources.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "devam-tamil-deepavali-date-fixture"]},
+            {"ordinal": 2, "instruction": "Follow that sequence safely around the resolved pre-sunrise boundary, keeping North/West Lakshmi Puja and other regional lanes separate.", "why": "Calendar and practice identities should not be flattened into one generic Diwali ritual.", "optional": false, "source_ids": ["devam-tamil-deepavali-date-fixture", "devam-bath-and-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Close with the family's blessings, food, prayer, visit, or giving practice, without presenting fireworks, purchases, or promised outcomes as devotional requirements.", "why": "The fuller family form remains meaningful without unsafe or commercial mandates.", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai", "devam-bath-and-flame-safety-boundary"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "tamil-deepavali-household-hi-v1",
+      "language_code": "hi",
+      "title": "घर में तमिल दीपावली की सुबह",
+      "summary": "निर्धारित दक्षिण भारतीय स्मार्त तिथि में तमिल दीपावली का केंद्र नरक चतुर्दशी और सूर्योदय से पहले परिवार-निर्देशित तेल-स्नान है। वही तेल, आशीर्वाद, स्नान, प्रार्थना, वस्त्र और भोजन लें जो आपके घर में प्रचलित हैं। तेल उपयुक्त न हो तो सामान्य सुरक्षित स्नान पर्याप्त है; पटाखे और उत्तर/पश्चिम की लक्ष्मी-पूजा इस मार्गदर्शिका का हिस्सा नहीं हैं।",
+      "family_practice_note": "पूछें कि क्या बुज़ुर्ग तिल का तेल लगाते हैं, परिवार गंगा स्नान किसे कहता है, नरकासुर-कृष्ण-सत्यभामा की कौन-सी स्मृति रखता है और कौन-से पकवान या नए वस्त्र प्रचलित हैं। एलर्जी, त्वचा, चलने-फिरने या फिसलने की चिंता हो तो तेल छोड़ें; सुरक्षित पानी और फर्श रखें। यह चिकित्सा-उपचार या एक सार्वभौमिक तमिल/कन्नड़ क्रम नहीं है।",
+      "context_prompts": [
+        "क्या आपके तमिल या दक्षिण भारतीय परिवार में सूर्योदय से पहले तेल-स्नान होता है, और उसे कौन निर्देशित करता है?",
+        "क्या तिल का तेल सबके लिए प्रचलित और उपयुक्त है, या किसी को सामान्य सुरक्षित स्नान चाहिए?",
+        "आपका परिवार कौन-सी प्रार्थना, नरकासुर-कथा, भोजन, आशीर्वाद, वस्त्र या मंदिर-दर्शन रखता है?",
+        "आपको छोटा घरेलू रूप चाहिए या परिवार-निर्देशित विस्तृत क्रम?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum", "label": "सुरक्षित सूर्योदय-पूर्व पारिवारिक स्नान", "estimated_minutes": 15,
+          "materials": [
+            {"item": "परिवार की सामान्य स्नान-सामग्री और स्वच्छ वस्त्र", "substitutions": ["तेल या बहुत सुबह का स्नान उपयुक्त न हो तो सामान्य सुरक्षित स्नान लें"], "optional": false},
+            {"item": "परिवार में प्रचलित तेल की थोड़ी मात्रा", "substitutions": ["एलर्जी, त्वचा, चलने-फिरने, फिसलने या अन्य सुरक्षा-चिंता में तेल छोड़ें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "निर्धारित तमिल दीपावली तिथि और Today में दिखाया स्थानीय ब्रह्ममुहूर्त लें; दूसरे स्थान का प्रदाता-समय न अपनाएँ।", "why": "तिथि-नियम स्थानानुसार है और उत्तर/पश्चिम नरक चतुर्दशी से अलग है।", "optional": false, "source_ids": ["devam-tamil-deepavali-date-fixture"]},
+            {"ordinal": 2, "instruction": "गर्म, रोशन और फिसलन-रहित स्नान-स्थान बनाएँ। प्रचलित और उपयुक्त हो तो बुज़ुर्ग परिवार का थोड़ा तेल आशीर्वाद के साथ लगाएँ; अन्यथा तेल छोड़ें।", "why": "क्षेत्रीय स्रोत बुज़ुर्ग द्वारा तिल-तेल लगाने का वर्णन करता है, पर उपयोग सुरक्षा और परिवार तय करते हैं।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "devam-bath-and-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "सूर्योदय से पहले सुरक्षित स्नान करें, स्वच्छ वस्त्र पहनें और परिचित छोटी प्रार्थना या बुराई पर अच्छाई की विजय का शांत स्मरण करें।", "why": "सूर्योदय-पूर्व स्नान और नरकासुर-विजय इसका सीमित क्षेत्रीय केंद्र हैं।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai"]},
+            {"ordinal": 4, "instruction": "बुज़ुर्गों का आशीर्वाद लें और प्रचलित व उपयुक्त हो तो घर का तैयार मीठा या नाश्ता साझा करें।", "why": "आशीर्वाद और उत्सवी भोजन क्षेत्रीय पारिवारिक रीति हैं, सार्वभौमिक अनिवार्यता नहीं।", "optional": true, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai"]}
+          ]
+        },
+        {
+          "tier": "standard", "label": "परिवार-निर्देशित दीपावली की सुबह", "estimated_minutes": 30,
+          "materials": [
+            {"item": "परिवार का तेल और स्नान-सामग्री, स्वच्छ या नए वस्त्र और तैयार भोजन", "substitutions": ["घर में उपलब्ध प्रचलित सामग्री लें; नई खरीद अनिवार्य नहीं"], "optional": false},
+            {"item": "परिचित चित्र, दीप या प्रार्थना-केंद्र", "substitutions": ["मौन प्रार्थना और बिना लौ का प्रकाश लें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "पिछली शाम परिवार का जागने, तेल, स्नान, वस्त्र, भोजन, प्रार्थना और आशीर्वाद का क्रम पूछें और स्नान-स्थान सुरक्षित करें।", "why": "यह जीवित घरेलू परम्परा है, एक राष्ट्रीय साँचा नहीं।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "devam-bath-and-flame-safety-boundary"]},
+            {"ordinal": 2, "instruction": "सूर्योदय से पहले सुरक्षित पारिवारिक तेल-आशीर्वाद और स्नान करें; जिसके लिए तेल उपयुक्त न हो वह सामान्य स्नान करे।", "why": "इससे स्वास्थ्य-संदर्भ के ऊपर परम्परा थोपे बिना क्षेत्रीय केंद्र बचता है।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai"]},
+            {"ordinal": 3, "instruction": "स्वच्छ या प्रचलित नए वस्त्र पहनें, बुज़ुर्गों का अभिवादन करें और परिचित प्रार्थना या नरकासुर-विजय का स्मरण करें।", "why": "वस्त्र, आशीर्वाद और कथा-स्मरण क्षेत्रीय वर्णन में आते हैं।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025"]},
+            {"ordinal": 4, "instruction": "घर के पकवान या नाश्ते बाँटें और परिवार की मंदिर, मिलने, दान या विश्राम की रीति रखें; पटाखे अनिवार्य न मानें।", "why": "भोजन और साथ समर्थित हैं, पर पटाखे देवम की विधि से बाहर हैं।", "optional": false, "source_ids": ["ministry-tourism-deepa-oli-tiruvannamalai", "devam-bath-and-flame-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate", "label": "बुज़ुर्ग या पारिवारिक ग्रंथ-निर्देशित रूप", "estimated_minutes": 60,
+          "materials": [
+            {"item": "परिवार द्वारा बताई सटीक तेल, उबटन, प्रार्थना, भोजन, दीप और वस्त्र सामग्री", "substitutions": ["अज्ञात विवरण गढ़ने के बजाय सीमित रूप लें"], "optional": false},
+            {"item": "स्नान, गर्म पानी, भोजन-एलर्जी, दीप, बच्चों और बुज़ुर्गों की सुरक्षा-योजना", "substitutions": ["जरूरत पर सामान्य स्नान और बिना लौ का रूप लें"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "घर के बुज़ुर्ग या मान्य जानकार से तेल, गंगा स्नान का शब्द, प्रार्थना, कथा, भोजन, वस्त्र, दान और मंदिर-क्रम तय कराएँ।", "why": "ये विवरण बदलते हैं और सीमित स्रोत सबको सिद्ध नहीं करते।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "devam-tamil-deepavali-date-fixture"]},
+            {"ordinal": 2, "instruction": "निर्धारित सूर्योदय-पूर्व सीमा में वही क्रम सुरक्षित ढंग से रखें और उत्तर/पश्चिम लक्ष्मी-पूजा को अलग रखें।", "why": "सभी क्षेत्रीय दीपावली रूपों को एक विधि में नहीं मिलाना चाहिए।", "optional": false, "source_ids": ["devam-tamil-deepavali-date-fixture", "devam-bath-and-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "आशीर्वाद, भोजन, प्रार्थना, दर्शन या दान से समापन करें; पटाखे, खरीद या निश्चित फल को धार्मिक आवश्यकता न बनाएँ।", "why": "विस्तृत पारिवारिक रूप असुरक्षित या वाणिज्यिक आदेश के बिना भी अर्थपूर्ण है।", "optional": false, "source_ids": ["dd-news-tamil-nadu-deepavali-2025", "ministry-tourism-deepa-oli-tiruvannamalai", "devam-bath-and-flame-safety-boundary"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "pre_sunrise_family_bath_core_supported": true,
+    "sesame_oil_required_for_everyone": false,
+    "medical_treatment_or_suitability_claimed": false,
+    "specific_hot_water_or_herbal_formula_prescribed": false,
+    "formal_mantras_included": false,
+    "fireworks_required_or_recommended": false,
+    "new_purchase_or_new_clothes_required": false,
+    "guaranteed_outcome_claimed": false,
+    "north_west_naraka_or_lakshmi_puja_merged": false,
+    "one_universal_tamil_or_karnataka_procedure_claimed": false,
+    "all_regional_and_family_variants_complete": false
+  }
+}

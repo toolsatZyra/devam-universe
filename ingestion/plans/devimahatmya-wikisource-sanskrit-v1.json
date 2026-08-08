@@ -1,0 +1,120 @@
+{
+  "contract": "DEVAM_DEVIMAHATMYA_WIKISOURCE_INGESTION_V1",
+  "profile_id": "devimahatmya-wikisource-sanskrit-v1",
+  "acquisition_plan_sha256": "58dec9d9d9b197e40a37ed90bc461dc5d2243399ab5662f9af6d61335ee87a3c",
+  "acquisition_report_sha256": "94f2a3ce1c9f66b0ccd3d57fcc3c4f2633277a2a4b821cf4d1eac2eabdd3950c",
+  "work": {
+    "slug": "markandeya-purana",
+    "canonical_title": "Mārkaṇḍeyapurāṇa",
+    "work_kind": "purana",
+    "tradition_scope": ["devi", "shakta", "purana"]
+  },
+  "expression": {
+    "language_code": "sa",
+    "script_code": "Deva",
+    "expression_kind": "digital_transcription",
+    "attribution": "Sanskrit Wikisource contributors at revisions 410281, 363171, and 363170",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "Sanskrit Wikisource Mārkaṇḍeyapurāṇa chapters 81-93 at revisions 410281, 363171, and 363170",
+    "publisher": "Sanskrit Wikisource",
+    "publication_place": null,
+    "publication_year": null,
+    "edition_statement": "Community-maintained Devanagari transcription of chapters 81-93; underlying print edition and textual recension unidentified.",
+    "identifiers": {
+      "provider": "Sanskrit Wikisource",
+      "provider_page_ids": [14680, 60991, 14681],
+      "provider_revision_ids": [410281, 363171, 363170]
+    }
+  },
+  "rights": {
+    "lane": "derivative_allowed",
+    "provider_license_literal": "Creative Commons Attribution-Share Alike 4.0",
+    "provider_license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.sa",
+    "license_family_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution_required": true,
+    "share_alike_required": true,
+    "underlying_print_edition_rights_inferred": false
+  },
+  "publication": {
+    "state": "published",
+    "text_status": "source_aligned_plain_text_projection_from_exact_pinned_wikisource_wikitext_span"
+  },
+  "source_objects": [
+    {
+      "name": "devimahatmya-wikisource-chapters-081-085-rev-410281.wikitext",
+      "source_path": "acquisitions/wikisource/2026-08-08/devimahatmya/devimahatmya-wikisource-chapters-081-085-rev-410281.wikitext",
+      "object_path": "objects/sha256/c7/c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
+      "bytes": 84828,
+      "sha256": "c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
+      "media_type": "text/x-wiki; charset=utf-8",
+      "page_id": 14680,
+      "revision_id": 410281,
+      "revision_timestamp": "2025-09-26T07:01:11Z",
+      "provider_sha1": "dad1caa4730947c516953300800c0fca2f631efe",
+      "chapter_start": 81,
+      "chapter_end": 85
+    },
+    {
+      "name": "devimahatmya-wikisource-chapters-086-090-rev-363171.wikitext",
+      "source_path": "acquisitions/wikisource/2026-08-08/devimahatmya/devimahatmya-wikisource-chapters-086-090-rev-363171.wikitext",
+      "object_path": "objects/sha256/44/4459b0ca01f9a4173f1a137bf7c64908afbf326565b0b3f2dd2d2f5f830850fe",
+      "bytes": 45604,
+      "sha256": "4459b0ca01f9a4173f1a137bf7c64908afbf326565b0b3f2dd2d2f5f830850fe",
+      "media_type": "text/x-wiki; charset=utf-8",
+      "page_id": 60991,
+      "revision_id": 363171,
+      "revision_timestamp": "2022-12-15T01:26:45Z",
+      "provider_sha1": "a58d87fa6bbeba61d2362699ffec7c97757473e1",
+      "chapter_start": 86,
+      "chapter_end": 90
+    },
+    {
+      "name": "devimahatmya-wikisource-chapters-091-093-rev-363170.wikitext",
+      "source_path": "acquisitions/wikisource/2026-08-08/devimahatmya/devimahatmya-wikisource-chapters-091-093-rev-363170.wikitext",
+      "object_path": "objects/sha256/44/446fb91efc40b94d7b59aa1d5b3116dd665b79ec68044985a8953483c8721814",
+      "bytes": 30643,
+      "sha256": "446fb91efc40b94d7b59aa1d5b3116dd665b79ec68044985a8953483c8721814",
+      "media_type": "text/x-wiki; charset=utf-8",
+      "page_id": 14681,
+      "revision_id": 363170,
+      "revision_timestamp": "2022-12-15T01:07:13Z",
+      "provider_sha1": "34bfde36a811b0b211d4fd0052e78bcf03838eb3",
+      "chapter_start": 91,
+      "chapter_end": 93
+    }
+  ],
+  "expected_verse_counts": {
+    "81": 78,
+    "82": 70,
+    "83": 44,
+    "84": 38,
+    "85": 79,
+    "86": 20,
+    "87": 26,
+    "88": 61,
+    "89": 39,
+    "90": 27,
+    "91": 51,
+    "92": 38,
+    "93": 17
+  },
+  "scope": {
+    "positive": "Exact pinned Sanskrit Wikisource carrier universe for Mārkaṇḍeyapurāṇa chapters 81-93, structurally segmented into 13 chapter spans and 588 source-relative verse passages.",
+    "boundary": "This proves the structure and exact provider text of the three pinned revisions, not an identified print edition, critical recension, every Devī Māhātmya witness, complete Mārkaṇḍeyapurāṇa, translation, commentary, or ritual authority."
+  },
+  "completion_denials": {
+    "underlying_print_edition_identified": false,
+    "textual_recension_identified": false,
+    "line_by_line_scan_reconciliation_complete": false,
+    "transcription_quality_fully_proved": false,
+    "complete_markandeya_purana": false,
+    "complete_devimahatmya_tradition": false,
+    "hindi_translation_included": false,
+    "english_translation_included": false,
+    "ritual_authority_claimed": false,
+    "source_payloads_copied_into_app": false
+  }
+}

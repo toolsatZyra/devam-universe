@@ -1,0 +1,744 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "baps-gujarat",
+        "tradition_code": "swaminarayan-baps"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "institution_codes": [
+      "baps"
+    ],
+    "material_context_questions": [
+      "Does your family follow the BAPS calendar or another Gujarati Kali Chaudas tradition?",
+      "Will you participate at home, through a BAPS mandir, or with a family elder?",
+      "Which prayer, reading, Hanuman remembrance, or seva is already known in your family or mandir?",
+      "Do you need a flame-free, food-free, spend-free, child-safe, mobility-safe, or very short form?"
+    ],
+    "region_codes": [
+      "baps-gujarat"
+    ],
+    "settings": [
+      "household",
+      "individual",
+      "family_led",
+      "temple"
+    ],
+    "tradition_codes": [
+      "swaminarayan-baps"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-baps-kali-chaudash-unique-full-nishita-chaturdashi-v1",
+    "freshness_note": "The bounded Ahmedabad BAPS 2026 lane resolves Saturday, 7 November. Recheck the user's BAPS mandir for a live programme; the app does not reproduce the published institutional intervals or formal Hanuman Puja.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-kali-chaudas-baps-date-fixture",
+      "baps-festival-list-2026-kali-chaudash",
+      "baps-nirnay-2026-kali-chaudash",
+      "drik-gujarati-calendar-ahmedabad-2026"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "kali-chaudas-baps-gujarat-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "baps-krishna-naraka-account",
+          "source_ids": [
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "summary": "The BAPS-authored festival article recounts Krishna defeating Naraka, recovering Aditi's earrings, and freeing his captives, while naming Hanuman worship as the day's BAPS practice. It points to the Bhagavata but is preserved as a later BAPS retelling, not an exact scriptural quotation or the only origin.",
+          "title": "The BAPS Krishna-Naraka account",
+          "tradition_scope": "BAPS Swaminarayan published festival account",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short BAPS family remembrance",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "baps-nirnay-2026-kali-chaudash",
+              "devam-kali-chaudas-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Short prayer and reflection",
+          "materials": [
+            {
+              "item": "A quiet place and the family's known prayer or reading",
+              "required": true,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash",
+                "baps-chaturmaas-kali-chaudasha-story",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "substitutions": [
+                "Use silent reflection when no particular prayer or reading is known"
+              ]
+            }
+          ],
+          "procedure_id": "kali-chaudas-baps-gujarat-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-kali-chaudas-baps-date-fixture",
+            "drik-gujarati-calendar-ahmedabad-2026",
+            "baps-nirnay-2026-kali-chaudash",
+            "devam-kali-chaudas-safety-boundary",
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm that you mean the BAPS Gujarat Kali Chaudash lane resolved for this date, rather than Maharashtra Naraka Chaturdashi, Tamil Deepavali, or Bengal Kali Puja.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kali-chaudas-baps-date-fixture",
+                "drik-gujarati-calendar-ahmedabad-2026"
+              ],
+              "why": "Adjacent Diwali practices have distinct identities and should not be merged."
+            },
+            {
+              "instruction": "Sit together and use a short family- or mandir-known prayer, reading, or Hanuman remembrance; if none is known, keep a minute of quiet reflection instead.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "baps-nirnay-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "BAPS identifies Hanuman Puja on the day, but the sources do not establish a complete household vidhi for the app to reconstruct."
+            },
+            {
+              "instruction": "Name one harmful habit or fear you want to meet with courage, devotion, honesty, or service, without claiming that the observance guarantees supernatural protection.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "This keeps the official bounded meaning while avoiding a promised outcome or occult instruction."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "BAPS family-led prayer and seva",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "baps-nirnay-2026-kali-chaudash",
+              "devam-kali-chaudas-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 25,
+          "form": "traditional_household",
+          "label": "Family prayer, remembrance, and seva",
+          "materials": [
+            {
+              "item": "The family's established devotional materials, if any",
+              "required": true,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash",
+                "baps-chaturmaas-kali-chaudasha-story",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the minimum form with no image, lamp, offering, food, or purchase"
+              ]
+            }
+          ],
+          "procedure_id": "kali-chaudas-baps-gujarat-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "baps-nirnay-2026-kali-chaudash",
+            "devam-kali-chaudas-safety-boundary",
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "steps": [
+            {
+              "instruction": "Ask the usual family or mandir guide which Kali Chaudash prayer, reading, or Hanuman remembrance is actually established, and omit anything uncertain.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "baps-nirnay-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "Attribution to living practice is safer and more accurate than inventing a generic Gujarati sequence."
+            },
+            {
+              "instruction": "Follow that familiar prayer or remembrance; use only a supervised safe light if the household already does so, with a flame-free light or no light as an equal fallback.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "A real flame is not a devotional requirement and must never be left unattended."
+            },
+            {
+              "instruction": "Choose one concrete act of seva or reconciliation that expresses courage and freedom from harmful conduct, then close with family greetings.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "The application makes the reflection actionable without claiming ritual efficacy."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established BAPS family- or mandir-led participation",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "baps-nirnay-2026-kali-chaudash",
+              "devam-kali-chaudas-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Established family- or mandir-led participation",
+          "materials": [
+            {
+              "item": "Only materials and readings directed by the established family or BAPS mandir lead",
+              "required": true,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash",
+                "baps-chaturmaas-kali-chaudasha-story",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "substitutions": [
+                "Use the standard form instead of reconstructing unavailable formal instructions"
+              ]
+            }
+          ],
+          "procedure_id": "kali-chaudas-baps-gujarat-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-nirnay-2026-kali-chaudash",
+            "devam-kali-chaudas-safety-boundary",
+            "drik-gujarati-calendar-ahmedabad-2026",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "steps": [
+            {
+              "instruction": "Let the established family elder or BAPS mandir programme define the longer sequence, participant roles, readings, and any materials.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash"
+              ],
+              "why": "The evidence establishes identity and date, not a complete formal ritual manual."
+            },
+            {
+              "instruction": "Participate respectfully without adding self-directed mantra, tantric, exorcistic, smoke, chilli, lemon, self-harm, animal-harm, fasting, or forced practices.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "Those practices are outside this source-bounded BAPS participation guide and may be unsafe."
+            },
+            {
+              "instruction": "Close with the programme's known prayer, a practical act of seva, and safe cleanup; keep the other Diwali lanes separate.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-kali-chaudas-safety-boundary",
+                "drik-gujarati-calendar-ahmedabad-2026"
+              ],
+              "why": "A bounded close preserves the attributable tradition without overclaiming universal Gujarat practice."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Use only a prayer, reading, Hanuman remembrance, or seva already known in the family or BAPS mandir; the app does not generate formal Hanuman Puja or mantras.",
+        "No tantric, occult, exorcistic, chilli-lemon, smoke, harm, animal, fear, or coercive practice is supplied.",
+        "No fast, fixed offering, purchase, firework, real flame, or protection guarantee is required.",
+        "Maharashtra Naraka Chaturdashi, Tamil Deepavali, Bengal Kali Puja, and non-BAPS Gujarati traditions remain separate."
+      ],
+      "short_answer": "For the resolved BAPS Gujarat lane, keep a short family- or mandir-known prayer and Hanuman remembrance, then reflect on courage, devotion, and overcoming harmful conduct. This guide does not create a formal Hanuman Puja, mantra, occult rite, fast, offering list, or promise of protection from evil forces.",
+      "significance": {
+        "scope_note": "BAPS protection language is preserved as belief and prayer, never as a supernatural guarantee or permission for self-directed occult practice.",
+        "source_ids": [
+          "baps-festival-list-2026-kali-chaudash",
+          "baps-nirnay-2026-kali-chaudash",
+          "baps-chaturmaas-kali-chaudasha-story"
+        ],
+        "text": "In this exact BAPS Gujarat lane, Kali Chaudash is a day of Hanuman remembrance, prayer, courage, devotion, and turning away from harmful influence or conduct."
+      },
+      "title": "BAPS Kali Chaudash family participation",
+      "typical_practices": [
+        {
+          "description": "BAPS sources identify Kali Chaudash with Hanuman Puja and prayer. Formal worship remains led by the established family or mandir; this app lane documents safe participation, remembrance, reflection, and seva rather than inventing liturgy.",
+          "instructional": false,
+          "population_scope": "BAPS families and mandirs represented by official BAPS sources",
+          "practice_id": "baps-kali-chaudash-hanuman-puja-participation",
+          "source_ids": [
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-nirnay-2026-kali-chaudash",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Official BAPS sources name Hanuman Puja, but the full liturgy, mantras, materials, and participant roles remain with the established family or BAPS mandir.",
+          "scope": "Family or mandir authority",
+          "separate_lane_required": false,
+          "source_ids": [
+            "baps-nirnay-2026-kali-chaudash"
+          ],
+          "variant_id": "formal-baps-hanuman-puja-authority"
+        },
+        {
+          "difference": "The current Ahmedabad calendar places Kali Chaudas and Hanuman Puja on 7 November but Roop Chaudas/Naraka Chaturdashi on 8 November; this lane does not merge them.",
+          "scope": "Ahmedabad adjacent calendar lane",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-gujarati-calendar-ahmedabad-2026"
+          ],
+          "variant_id": "roop-naraka-chaturdashi-separate-next-day"
+        },
+        {
+          "difference": "Non-BAPS Gujarati household, temple, folk, and regional Kali Chaudas traditions require their own evidence and are not completed by this sampradaya lane.",
+          "scope": "Other Gujarati traditions",
+          "separate_lane_required": true,
+          "source_ids": [
+            "baps-festival-list-2026-kali-chaudash"
+          ],
+          "variant_id": "non-baps-gujarati-kali-chaudas-separate"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "baps-krishna-naraka-account",
+          "source_ids": [
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "summary": "BAPS-लेख श्रीकृष्ण द्वारा नरक को पराजित करने, अदिति के कुण्डल लौटाने और बंदियों को मुक्त करने की कथा कहता है तथा हनुमान-पूजा को इस दिन की BAPS रीति बताता है। लेख भागवत की ओर संकेत करता है, पर इसे बाद का BAPS-वर्णन माना गया है, ठीक शास्त्रीय उद्धरण या एकमात्र उत्पत्ति नहीं।",
+          "title": "BAPS का श्रीकृष्ण-नरकासुर वर्णन",
+          "tradition_scope": "BAPS स्वामिनारायण का प्रकाशित पर्व-वर्णन",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short BAPS family remembrance",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "baps-nirnay-2026-kali-chaudash",
+              "devam-kali-chaudas-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "छोटी प्रार्थना और चिंतन",
+          "materials": [
+            {
+              "item": "शांत स्थान और परिवार की परिचित प्रार्थना या पाठ",
+              "required": true,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash",
+                "baps-chaturmaas-kali-chaudasha-story",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "substitutions": [
+                "कोई विशेष प्रार्थना न मालूम हो तो मौन चिंतन रखें"
+              ]
+            }
+          ],
+          "procedure_id": "kali-chaudas-baps-gujarat-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-kali-chaudas-baps-date-fixture",
+            "drik-gujarati-calendar-ahmedabad-2026",
+            "baps-nirnay-2026-kali-chaudash",
+            "devam-kali-chaudas-safety-boundary",
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "steps": [
+            {
+              "instruction": "पहले स्पष्ट करें कि यह BAPS गुजरात की काली चौदश है; महाराष्ट्र नरक चतुर्दशी, तमिल दीपावली या बंगाल काली पूजा नहीं।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-kali-chaudas-baps-date-fixture",
+                "drik-gujarati-calendar-ahmedabad-2026"
+              ],
+              "why": "दीवाली की पास-पास आने वाली परम्पराओं की अलग पहचान है।"
+            },
+            {
+              "instruction": "परिवार या मंदिर की परिचित छोटी प्रार्थना, पाठ या हनुमान-स्मरण रखें; कुछ परिचित न हो तो एक मिनट मौन रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "baps-nirnay-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "BAPS इस दिन हनुमान पूजा बताता है, पर स्रोत ऐप के लिए पूर्ण गृह-विधि नहीं देते।"
+            },
+            {
+              "instruction": "एक हानिकारक आदत या भय चुनें जिसका सामना साहस, भक्ति, ईमानदारी या सेवा से करना है; अलौकिक सुरक्षा का वादा न करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "इससे अर्थ बना रहता है, पर परिणाम या तांत्रिक दावा नहीं गढ़ा जाता।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "BAPS family-led prayer and seva",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "baps-nirnay-2026-kali-chaudash",
+              "devam-kali-chaudas-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 25,
+          "form": "traditional_household",
+          "label": "पारिवारिक प्रार्थना, स्मरण और सेवा",
+          "materials": [
+            {
+              "item": "परिवार की स्थापित भक्ति-सामग्री, यदि हो",
+              "required": true,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash",
+                "baps-chaturmaas-kali-chaudasha-story",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "substitutions": [
+                "बिना चित्र, दीप, भोग, भोजन या खरीद के न्यूनतम रूप लें"
+              ]
+            }
+          ],
+          "procedure_id": "kali-chaudas-baps-gujarat-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "baps-nirnay-2026-kali-chaudash",
+            "devam-kali-chaudas-safety-boundary",
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार या मंदिर के सामान्य मार्गदर्शक से पूछें कि कौन-सी काली चौदश प्रार्थना, पाठ या हनुमान-स्मरण वास्तव में स्थापित है; अनिश्चित भाग छोड़ दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "baps-nirnay-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "जीवित परम्परा का श्रेय देना एक सामान्य गुजराती क्रम गढ़ने से अधिक सही है।"
+            },
+            {
+              "instruction": "वही परिचित प्रार्थना या स्मरण करें; घर में पहले से दीप रखा जाता हो तो निगरानी में सुरक्षित लौ लें, अन्यथा लौ-रहित प्रकाश या कोई प्रकाश न रखना समान रूप से ठीक है।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "वास्तविक लौ अनिवार्य नहीं और कभी अकेली नहीं छोड़ी जानी चाहिए।"
+            },
+            {
+              "instruction": "साहस और हानिकारक आचरण से मुक्ति व्यक्त करने वाला सेवा या मेल-मिलाप का एक काम चुनें, फिर परिवार के साथ समापन करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "ऐप अनुष्ठानिक प्रभाव का दावा किए बिना चिंतन को उपयोगी बनाता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established BAPS family- or mandir-led participation",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "baps-nirnay-2026-kali-chaudash",
+              "devam-kali-chaudas-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "स्थापित परिवार या मंदिर के नेतृत्व में सहभागिता",
+          "materials": [
+            {
+              "item": "केवल स्थापित परिवार या BAPS मंदिर मार्गदर्शक द्वारा बताई सामग्री और पाठ",
+              "required": true,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash",
+                "baps-chaturmaas-kali-chaudasha-story",
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "substitutions": [
+                "अनुपलब्ध औपचारिक निर्देश गढ़ने की जगह मानक रूप लें"
+              ]
+            }
+          ],
+          "procedure_id": "kali-chaudas-baps-gujarat-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-nirnay-2026-kali-chaudash",
+            "devam-kali-chaudas-safety-boundary",
+            "drik-gujarati-calendar-ahmedabad-2026",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ],
+          "steps": [
+            {
+              "instruction": "लंबे क्रम, सहभागी भूमिकाओं, पाठ और सामग्री का निर्णय स्थापित बुज़ुर्ग या BAPS मंदिर कार्यक्रम को करने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "baps-festival-list-2026-kali-chaudash",
+                "baps-nirnay-2026-kali-chaudash"
+              ],
+              "why": "प्रमाण पहचान और तारीख तय करता है, पूर्ण औपचारिक अनुष्ठान-पुस्तिका नहीं।"
+            },
+            {
+              "instruction": "सम्मान से भाग लें; स्वयं से मंत्र, तांत्रिक, झाड़-फूँक, धुआँ, मिर्च-नींबू, स्वयं या पशु को हानि, व्रत या बाध्यकारी क्रिया न जोड़ें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-kali-chaudas-safety-boundary"
+              ],
+              "why": "ये इस प्रमाण-सीमित BAPS सहभागिता मार्गदर्शन से बाहर और असुरक्षित हो सकते हैं।"
+            },
+            {
+              "instruction": "परिचित प्रार्थना, सेवा और सुरक्षित सफाई से समापन करें; दीवाली की दूसरी परम्पराएँ अलग रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-kali-chaudas-safety-boundary",
+                "drik-gujarati-calendar-ahmedabad-2026"
+              ],
+              "why": "सीमित समापन पूरे गुजरात की एक विधि का दावा नहीं करता।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "केवल परिवार या BAPS मंदिर में परिचित प्रार्थना, पाठ, हनुमान-स्मरण या सेवा लें; ऐप औपचारिक हनुमान-पूजा या मंत्र नहीं बनाता।",
+        "कोई तांत्रिक, गुप्त, झाड़-फूँक, मिर्च-नींबू, धुआँ, हानि, पशु, भय या बाध्यकारी अभ्यास नहीं दिया जाता।",
+        "कोई व्रत, निश्चित अर्पण, खरीद, पटाखा, वास्तविक लौ या सुरक्षा-गारंटी अनिवार्य नहीं।",
+        "महाराष्ट्र नरक चतुर्दशी, तमिल दीपावली, बंगाल काली पूजा और गैर-BAPS गुजराती परम्पराएँ अलग रहें।"
+      ],
+      "short_answer": "निर्धारित BAPS गुजरात परम्परा में परिवार या मंदिर की परिचित प्रार्थना और हनुमान-स्मरण रखें, फिर साहस, भक्ति और हानिकारक आचरण पर विजय का चिंतन करें। यह मार्गदर्शन औपचारिक हनुमान पूजा, मंत्र, तांत्रिक क्रिया, व्रत, निश्चित सामग्री या दुष्ट शक्तियों से सुरक्षा का वादा नहीं बनाता।",
+      "significance": {
+        "scope_note": "BAPS का सुरक्षा-संबन्धी कथन आस्था और प्रार्थना के रूप में सुरक्षित है, अलौकिक गारंटी या स्वयं-निर्देशित तांत्रिक अभ्यास की अनुमति के रूप में नहीं।",
+        "source_ids": [
+          "baps-festival-list-2026-kali-chaudash",
+          "baps-nirnay-2026-kali-chaudash",
+          "baps-chaturmaas-kali-chaudasha-story"
+        ],
+        "text": "इस ठीक BAPS गुजरात-धारा में काली चौदश हनुमान-स्मरण, प्रार्थना, साहस, भक्ति और हानिकारक प्रभाव या आचरण से मुड़ने का दिन है।"
+      },
+      "title": "BAPS काली चौदश पारिवारिक सहभागिता",
+      "typical_practices": [
+        {
+          "description": "BAPS स्रोत काली चौदश को हनुमान-पूजा और प्रार्थना से जोड़ते हैं। औपचारिक पूजा स्थापित परिवार या मंदिर के नेतृत्व में रहती है; यह ऐप-धारा पूजा-विधान गढ़ने के बजाय सुरक्षित सहभागिता, स्मरण, चिंतन और सेवा बताती है।",
+          "instructional": false,
+          "population_scope": "आधिकारिक BAPS स्रोतों में दर्शाए BAPS परिवार और मंदिर",
+          "practice_id": "baps-kali-chaudash-hanuman-puja-participation",
+          "source_ids": [
+            "baps-festival-list-2026-kali-chaudash",
+            "baps-nirnay-2026-kali-chaudash",
+            "baps-chaturmaas-kali-chaudasha-story"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "आधिकारिक BAPS स्रोत हनुमान-पूजा का नाम लेते हैं, पर पूर्ण विधान, मंत्र, सामग्री और सहभागी भूमिकाएँ स्थापित परिवार या BAPS मंदिर के पास रहती हैं।",
+          "scope": "परिवार या मंदिर-प्रामाणिकता",
+          "separate_lane_required": false,
+          "source_ids": [
+            "baps-nirnay-2026-kali-chaudash"
+          ],
+          "variant_id": "formal-baps-hanuman-puja-authority"
+        },
+        {
+          "difference": "वर्तमान अहमदाबाद पंचांग काली चौदस और हनुमान-पूजा 7 नवम्बर को, पर रूप चौदस/नरक चतुर्दशी 8 नवम्बर को रखता है; यह धारा उन्हें नहीं मिलाती।",
+          "scope": "अहमदाबाद की निकटवर्ती पंचांग-धारा",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-gujarati-calendar-ahmedabad-2026"
+          ],
+          "variant_id": "roop-naraka-chaturdashi-separate-next-day"
+        },
+        {
+          "difference": "गैर-BAPS गुजराती गृह, मंदिर, लोक और क्षेत्रीय काली चौदस परम्पराओं को अपना प्रमाण चाहिए; यह सम्प्रदाय-धारा उन्हें पूर्ण नहीं करती।",
+          "scope": "अन्य गुजराती परम्पराएँ",
+          "separate_lane_required": true,
+          "source_ids": [
+            "baps-festival-list-2026-kali-chaudash"
+          ],
+          "variant_id": "non-baps-gujarati-kali-chaudas-separate"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "kali-chaudas-baps"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "31e02af522ad6de07346e27330c6a6709b3f20eb93f12f14885ac6b53c4ba769",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/kali-chaudas-ahmedabad-baps-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-kali-chaudas-baps-date-fixture",
+      "source_role": "Deterministic Ahmedabad BAPS date/Nishita decision; not a copied provider interval or ritual authority",
+      "title": "Devam Kali Chaudash Ahmedabad BAPS 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.baps.org/Calendar/2026/FestivalList.aspx",
+        "observed_at": "2026-08-07",
+        "response_bytes": 115443,
+        "response_sha256": "d7a128a20cf176416a33c744cc31735501760a4e6bf512309ba20f2635db2e2b",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "rights_lane": "citation_only",
+      "source_id": "baps-festival-list-2026-kali-chaudash",
+      "source_role": "Official sampradaya identity, date, and protection-prayer meaning; belief language is not a guaranteed outcome",
+      "title": "BAPS Festival List 2026: Kali Chaudash",
+      "url": "https://www.baps.org/Calendar/2026/FestivalList.aspx"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.baps.org/Calendar/2026/Nirnay.aspx",
+        "observed_at": "2026-08-07",
+        "response_bytes": 213996,
+        "response_sha256": "6d08b0f92a4615b3ca97ef701f1e591c72f4c141c7774881c9d54d8495dcd6ec",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "rights_lane": "citation_only",
+      "source_id": "baps-nirnay-2026-kali-chaudash",
+      "source_role": "Official sampradaya date, Hanuman Puja identity, and institutional intervals; not a complete home liturgy",
+      "title": "BAPS Nirnay 2026: Kali Chaudash and Hanuman Puja",
+      "url": "https://www.baps.org/Calendar/2026/Nirnay.aspx"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.baps.org/Article/2011/Chaturmaas-Part-III-2207.aspx",
+        "observed_at": "2026-08-07",
+        "response_bytes": 235863,
+        "response_sha256": "6d613ee36b5c50b94eef83d4a00c14f643fe98ae8fab2c36d844070fe94cd3c4",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "rights_lane": "citation_only",
+      "source_id": "baps-chaturmaas-kali-chaudasha-story",
+      "source_role": "BAPS-authored festival narrative and Hanuman-worship context; not an exact Bhagavata passage or universal history",
+      "title": "Chaturmaas Part III: Kaali Chaudasha",
+      "url": "https://www.baps.org/Article/2011/Chaturmaas-Part-III-2207.aspx"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/gujarati/calendar/gujarati-calendar.html?geoname-id=1279233&year=2026",
+        "observed_at": "2026-08-07",
+        "response_bytes": 216717,
+        "response_sha256": "1630a84fa2228f843512b6a1d7e352dfa9dbfe9faf2934f7fcf6d2975e3951cc",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drik-gujarati-calendar-ahmedabad-2026",
+      "source_role": "Current Ahmedabad corroboration separating 7 November Kali Chaudas/Hanuman Puja from 8 November Roop Chaudas/Naraka Chaturdashi",
+      "title": "2026 Gujarati Calendar for Ahmedabad",
+      "url": "https://www.drikpanchang.com/gujarati/calendar/gujarati-calendar.html?geoname-id=1279233&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-kali-chaudas-safety-boundary",
+      "source_role": "Editorial safety and scope boundary; not scripture, medicine, occult instruction, or ritual authority",
+      "title": "Devam Kali Chaudas household safety and non-occult boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-kali-chaudas-baps-gujarat-v1"
+  ]
+}

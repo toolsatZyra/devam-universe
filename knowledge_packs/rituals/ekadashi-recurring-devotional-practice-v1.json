@@ -1,0 +1,244 @@
+{
+  "contract": "DEVAM_RECURRING_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-ekadashi-recurring-devotional-practice-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slugs": [
+    "aja-ekadashi",
+    "parsva-ekadashi",
+    "indira-ekadashi",
+    "papankusha-ekadashi",
+    "rama-ekadashi",
+    "devutthana-ekadashi",
+    "utpanna-ekadashi"
+  ],
+  "scope": {
+    "region_tradition_pairs": [
+      { "region_code": "north-india", "tradition_code": "smarta-north-india" },
+      { "region_code": "west-india", "tradition_code": "smarta-west-india" },
+      { "region_code": "south-india", "tradition_code": "smarta-south-india" },
+      { "region_code": "iskcon-india", "tradition_code": "vaishnava-iskcon" }
+    ],
+    "language_codes": ["en", "hi"],
+    "september_december_2026_calendar_fixture_required": true,
+    "family_or_sampradaya_practice_overrides_generic_sequence": true,
+    "smarta_and_iskcon_dates_remain_separate": true,
+    "fasting_food_medical_and_parana_guidance_excluded": true,
+    "mokshada_gita_jayanti_guide_remains_separate": true
+  },
+  "sources": [
+    {
+      "source_id": "devam-ekadashi-calendar-fixture",
+      "title": "Bounded Ekadashi calendar fixture for Delhi, Mumbai, and Chennai, September-December 2026",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_evidence",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "6c860d6f2d778739c4a25b4b281b03a16975e8d43021baee24c55b1e1b72433d",
+      "evidence_role": "exact_profile_dates_and_iskcon_parana_boundaries_only"
+    },
+    {
+      "source_id": "nirnayasindhu-1865-ekadashi-decision-chapter",
+      "title": "Nirnayasindhu, Ekadashi decision chapter",
+      "publisher": "Mumbai, 1865 Marathi translation",
+      "url": null,
+      "source_class": "historical_rule_context",
+      "rights_lane": "reference_only",
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "evidence_role": "historical_smarta_vaishnava_and_parana_branching_context_not_a_modern_household_script"
+    },
+    {
+      "source_id": "iskcon-bangalore-ekadashi-practice",
+      "title": "Ekadashi - Dates, Rituals and Significance",
+      "publisher": "ISKCON Bangalore",
+      "url": "https://www.iskconbangalore.org/blog/ekadashi/",
+      "source_class": "official_living_sampradaya_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.iskconbangalore.org/blog/ekadashi/",
+        "response_bytes": 87582,
+        "response_sha256": "38596d3838fb5c66a35cfce3a695a4eecb53e826fd111a5df2f94f8f9c2496c8",
+        "strict_utf8": true
+      },
+      "evidence_role": "iskcon_specific_vishnu_krishna_remembrance_chanting_prayer_and_fast_context"
+    },
+    {
+      "source_id": "baps-prabodhini-ekadashi",
+      "title": "Prabodhini Ekadashi",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/PrabhodiniEkadashi.aspx",
+      "source_class": "official_distinct_sampradaya_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/PrabhodiniEkadashi.aspx",
+        "response_bytes": 100976,
+        "response_sha256": "11f7a1cde5fe7f6b28e1961ced8fcc7c4ec026347dac85845762a9fd267df3b0",
+        "strict_utf8": true
+      },
+      "evidence_role": "proof_that_named_ekadashi_meaning_and_practice_are_sampradaya_specific"
+    },
+    {
+      "source_id": "drikpanchang-ekadashi-vidhi",
+      "title": "Ekadashi Vrat Vidhi Vidhan",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/ekadashis/vidhi-vidhan/ekadashi-vrat-vidhi-vidhan.html",
+      "source_class": "current_practitioner_context",
+      "rights_lane": "reference_only",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/ekadashis/vidhi-vidhan/ekadashi-vrat-vidhi-vidhan.html",
+        "response_bytes": 62045,
+        "response_sha256": "82273194a07190ca815f4f5db3129612fd002999d90b79d845fcb6d6cb4198c1",
+        "strict_utf8": true
+      },
+      "evidence_role": "current_vishnu_devotion_prayer_study_and_service_context_without_adopting_its_formal_or_dietary_prescriptions"
+    },
+    {
+      "source_id": "devam-ekadashi-safety-boundary",
+      "title": "Devam Ekadashi internal-beta safety and attribution boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary",
+      "rights_lane": "derivative_allowed",
+      "evidence_role": "keeps_fast_food_health_parana_mantra_katha_and_outcome_claims_outside_the_generic_companion"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "ekadashi-recurring-devotional-en-v1",
+      "language_code": "en",
+      "title": "Ekadashi devotional companion",
+      "summary": "A non-fasting devotional companion for a date already resolved in your exact Smarta or ISKCON calendar lane. It supports remembrance, reflection, study, and service without replacing your family's or sampradaya's vrata.",
+      "family_practice_note": "If your family, temple, or sampradaya has an established Ekadashi vrata, follow that authority. Devam does not tell you to begin, continue, modify, or break a fast, and does not supply food rules or Smarta parana times.",
+      "context_prompts": [
+        "Which city or exact Panchang profile applies?",
+        "Do you follow a Smarta household calendar, ISKCON, or another Vaishnava sampradaya?",
+        "Does your family have a familiar Vishnu or Krishna prayer, reading, katha, or service practice?",
+        "Would a material-free and non-fasting form suit you today?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "A quiet Vishnu or Krishna remembrance",
+          "estimated_minutes": 10,
+          "materials": [
+            { "item": "A quiet place", "substitutions": ["A seated pause wherever you are", "No materials"], "optional": false }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "Check that Today shows the Ekadashi for your exact place and tradition rather than relying on a generic date.", "why": "Smarta and Vaishnava calendars can select different civil dates.", "optional": false, "source_ids": ["devam-ekadashi-calendar-fixture", "nirnayasindhu-1865-ekadashi-decision-chapter"] },
+            { "ordinal": 2, "instruction": "Remember Vishnu or Krishna with a family-known name or short prayer; silence is a valid substitute.", "why": "It keeps the form devotional without inventing a universal mantra.", "optional": false, "source_ids": ["iskcon-bangalore-ekadashi-practice", "drikpanchang-ekadashi-vidhi", "devam-ekadashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "Name one habit or reaction you can restrain today and one kinder action you can take instead.", "why": "A small ethical practice makes remembrance actionable without promising a spiritual result.", "optional": false, "source_ids": ["baps-prabodhini-ekadashi", "devam-ekadashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Prayer, short study, and service",
+          "estimated_minutes": 30,
+          "materials": [
+            { "item": "A family-approved Vishnu or Krishna text", "substitutions": ["A trusted audio reading", "A remembered teaching", "Quiet reflection"], "optional": true },
+            { "item": "A safe way to note one action", "substitutions": ["Phone note", "Paper", "Remember it"], "optional": true }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "Begin with your family-known Vishnu or Krishna remembrance.", "why": "The family's established form takes precedence over Devam's generic companion.", "optional": false, "source_ids": ["iskcon-bangalore-ekadashi-practice", "drikpanchang-ekadashi-vidhi"] },
+            { "ordinal": 2, "instruction": "Read or hear one short coherent passage from an edition you can identify; keep source, translation, and commentary distinct.", "why": "Attributable study is more reliable than an unattributed quotation or invented katha.", "optional": true, "source_ids": ["devam-ekadashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "Choose one practical act of restraint, repair, generosity, or service for today.", "why": "It turns reflection into a responsible action without claiming guaranteed merit.", "optional": false, "source_ids": ["baps-prabodhini-ekadashi", "devam-ekadashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "Close with gratitude; if your tradition observes a vrata or parana, use its established guidance rather than this companion.", "why": "Fasting and parana are tradition-, date-, location-, and health-sensitive.", "optional": false, "source_ids": ["devam-ekadashi-calendar-fixture", "nirnayasindhu-1865-ekadashi-decision-chapter", "devam-ekadashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Family or community-led Ekadashi observance",
+          "estimated_minutes": 60,
+          "materials": [
+            { "item": "Your family's or temple's established programme", "substitutions": ["A live or recorded community programme", "The standard home form"], "optional": true }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "Confirm the exact date and, if relevant, next-day parana with your established Smarta or Vaishnava authority.", "why": "Devam preserves the calendar split and does not serve unresolved Smarta parana.", "optional": false, "source_ids": ["devam-ekadashi-calendar-fixture", "nirnayasindhu-1865-ekadashi-decision-chapter"] },
+            { "ordinal": 2, "instruction": "Join the family's or community's known prayer, kirtan, study, or seva without adding unfamiliar rites from this guide.", "why": "Named stories, mantras, and sequences remain attributable to their own traditions.", "optional": false, "source_ids": ["iskcon-bangalore-ekadashi-practice", "baps-prabodhini-ekadashi", "drikpanchang-ekadashi-vidhi"] },
+            { "ordinal": 3, "instruction": "Set aside a longer period for attentive study and one concrete act of service or reconciliation.", "why": "The extended form deepens attention while avoiding a universal ritual prescription.", "optional": false, "source_ids": ["devam-ekadashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "Close according to that established community; do not use Devam to start, extend, or break a fast.", "why": "The devotional companion is not a dietary, medical, or parana authority.", "optional": false, "source_ids": ["devam-ekadashi-safety-boundary"] }
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "ekadashi-recurring-devotional-hi-v1",
+      "language_code": "hi",
+      "title": "एकादशी भक्ति-सहचर",
+      "summary": "आपके सटीक स्मार्त या इस्कॉन पंचांग में पहले से निर्धारित तिथि के लिए बिना उपवास बताए भक्ति-सहचर। यह स्मरण, चिंतन, अध्ययन और सेवा में सहायता करता है; परिवार या सम्प्रदाय के व्रत का स्थान नहीं लेता।",
+      "family_practice_note": "परिवार, मंदिर या सम्प्रदाय में स्थापित एकादशी-व्रत हो तो उसी प्रामाणिक मार्गदर्शन का पालन करें। देवम उपवास शुरू, जारी, बदलने या खोलने और आहार या स्मार्त पारण का निर्देश नहीं देता।",
+      "context_prompts": [
+        "कौन-सा शहर या सटीक पंचांग-प्रोफाइल लागू है?",
+        "आप स्मार्त गृह-पंचांग, इस्कॉन या किसी अन्य वैष्णव सम्प्रदाय का पालन करते हैं?",
+        "परिवार में विष्णु या कृष्ण की कौन-सी परिचित प्रार्थना, पाठ, कथा या सेवा है?",
+        "क्या आज सामग्री-रहित और बिना उपवास वाला रूप उपयुक्त है?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "शांत विष्णु या कृष्ण स्मरण",
+          "estimated_minutes": 10,
+          "materials": [
+            { "item": "शांत स्थान", "substitutions": ["जहाँ हैं वहीं बैठकर विराम", "कोई सामग्री नहीं"], "optional": false }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "सामान्य तिथि मानने के बजाय देखें कि Today आपके सटीक स्थान और परम्परा के लिए एकादशी दिखा रहा है।", "why": "स्मार्त और वैष्णव पंचांग अलग नागरिक दिन चुन सकते हैं।", "optional": false, "source_ids": ["devam-ekadashi-calendar-fixture", "nirnayasindhu-1865-ekadashi-decision-chapter"] },
+            { "ordinal": 2, "instruction": "परिवार में परिचित नाम या छोटी प्रार्थना से विष्णु या कृष्ण का स्मरण करें; मौन भी पर्याप्त है।", "why": "इससे कोई सार्वभौमिक मंत्र गढ़े बिना भक्ति बनी रहती है।", "optional": false, "source_ids": ["iskcon-bangalore-ekadashi-practice", "drikpanchang-ekadashi-vidhi", "devam-ekadashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "एक ऐसी आदत या प्रतिक्रिया पहचानें जिसे आज संयमित कर सकते हैं और उसके बदले एक दयालु काम चुनें।", "why": "छोटा नैतिक अभ्यास फल की गारंटी दिए बिना स्मरण को व्यवहार में लाता है।", "optional": false, "source_ids": ["baps-prabodhini-ekadashi", "devam-ekadashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "प्रार्थना, छोटा अध्ययन और सेवा",
+          "estimated_minutes": 30,
+          "materials": [
+            { "item": "परिवार द्वारा मान्य विष्णु या कृष्ण ग्रन्थ", "substitutions": ["विश्वसनीय श्रव्य-पाठ", "याद की हुई शिक्षा", "शांत चिंतन"], "optional": true },
+            { "item": "एक काम लिखने का सुरक्षित साधन", "substitutions": ["फोन नोट", "कागज", "मन में याद रखें"], "optional": true }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "परिवार के परिचित विष्णु या कृष्ण स्मरण से आरम्भ करें।", "why": "परिवार की स्थापित विधि देवम के सामान्य सहचर से पहले आती है।", "optional": false, "source_ids": ["iskcon-bangalore-ekadashi-practice", "drikpanchang-ekadashi-vidhi"] },
+            { "ordinal": 2, "instruction": "जिस संस्करण की पहचान जानते हैं उससे एक छोटा पूर्ण अंश पढ़ें या सुनें; मूल, अनुवाद और टीका अलग रखें।", "why": "स्रोतयुक्त अध्ययन बिना स्रोत के उद्धरण या गढ़ी कथा से अधिक विश्वसनीय है।", "optional": true, "source_ids": ["devam-ekadashi-safety-boundary"] },
+            { "ordinal": 3, "instruction": "आज के लिए संयम, सुधार, उदारता या सेवा का एक व्यावहारिक काम चुनें।", "why": "यह निश्चित पुण्य का दावा किए बिना चिंतन को जिम्मेदार काम बनाता है।", "optional": false, "source_ids": ["baps-prabodhini-ekadashi", "devam-ekadashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "कृतज्ञता से समापन करें; व्रत या पारण हो तो अपनी स्थापित परम्परा का मार्गदर्शन लें।", "why": "उपवास और पारण परम्परा, तिथि, स्थान और स्वास्थ्य से जुड़े हैं।", "optional": false, "source_ids": ["devam-ekadashi-calendar-fixture", "nirnayasindhu-1865-ekadashi-decision-chapter", "devam-ekadashi-safety-boundary"] }
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "परिवार या समुदाय के नेतृत्व में एकादशी",
+          "estimated_minutes": 60,
+          "materials": [
+            { "item": "परिवार या मंदिर का स्थापित कार्यक्रम", "substitutions": ["समुदाय का सीधा या रिकॉर्ड किया कार्यक्रम", "घर का मानक रूप"], "optional": true }
+          ],
+          "steps": [
+            { "ordinal": 1, "instruction": "सटीक तिथि और आवश्यक हो तो अगले दिन का पारण अपने स्थापित स्मार्त या वैष्णव प्रामाणिक मार्गदर्शक से पुष्ट करें।", "why": "देवम पंचांग-भेद सुरक्षित रखता है और अपुष्ट स्मार्त पारण नहीं देता।", "optional": false, "source_ids": ["devam-ekadashi-calendar-fixture", "nirnayasindhu-1865-ekadashi-decision-chapter"] },
+            { "ordinal": 2, "instruction": "परिवार या समुदाय की परिचित प्रार्थना, कीर्तन, अध्ययन या सेवा में जुड़ें; इस सहचर से अपरिचित विधि न जोड़ें।", "why": "विशिष्ट कथा, मंत्र और क्रम अपनी-अपनी परम्परा से ही जोड़े रहते हैं।", "optional": false, "source_ids": ["iskcon-bangalore-ekadashi-practice", "baps-prabodhini-ekadashi", "drikpanchang-ekadashi-vidhi"] },
+            { "ordinal": 3, "instruction": "ध्यानपूर्वक अध्ययन और सेवा या मेल-मिलाप के एक ठोस काम के लिए अधिक समय रखें।", "why": "लम्बा रूप सार्वभौमिक कर्मकांड बनाए बिना ध्यान गहरा करता है।", "optional": false, "source_ids": ["devam-ekadashi-safety-boundary"] },
+            { "ordinal": 4, "instruction": "उसी स्थापित समुदाय के अनुसार समापन करें; देवम से उपवास शुरू, बढ़ाने या खोलने का निर्णय न लें।", "why": "यह भक्ति-सहचर आहार, चिकित्सा या पारण का प्राधिकारी नहीं है।", "optional": false, "source_ids": ["devam-ekadashi-safety-boundary"] }
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "seven_uncovered_launch_interval_slugs_supported": true,
+    "three_smarta_and_one_iskcon_profile_pair_supported": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "smarta_and_iskcon_calendar_lanes_kept_separate": true,
+    "fast_or_nirjala_regimen_prescribed": false,
+    "food_or_dietary_rules_given": false,
+    "medical_guidance_given": false,
+    "smarta_parana_served": false,
+    "iskcon_parana_repeated_by_practice_guide": false,
+    "one_universal_mantra_katha_puja_or_vrata_sequence_claimed": false,
+    "smarta_and_vaishnava_practices_equated": false,
+    "named_ekadashi_meanings_stories_or_outcomes_universalized": false,
+    "sin_removal_merit_liberation_health_prosperity_or_other_outcome_guaranteed": false,
+    "mokshada_gita_jayanti_guide_merged_or_replaced": false,
+    "all_smarta_vaishnava_regional_family_and_temple_variants_complete": false
+  }
+}

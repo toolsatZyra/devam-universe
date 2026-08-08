@@ -1,0 +1,116 @@
+{
+  "contract": "DEVAM_READONLY_SOURCE_DISCOVERY_V1",
+  "discovery_id": "devimahatmya-sanskrit-wikisource-readonly-discovery-v1",
+  "observed_at": "2026-08-07T22:34:27.7948095+05:30",
+  "purpose": "Select the fastest lawful, structurally complete Sanskrit Devimahatmya transcription candidate without acquiring or accepting a new licence.",
+  "provider": {
+    "name": "Sanskrit Wikisource",
+    "site": "https://sa.wikisource.org/",
+    "normal_tls_only": true,
+    "rightsinfo_observation": {
+      "api_url": "https://sa.wikisource.org/w/api.php?action=query&format=json&formatversion=2&meta=siteinfo&siprop=rightsinfo",
+      "status": 200,
+      "response_bytes": 164,
+      "response_sha256": "01d8aec05025957650898443b3182bc271e84a490e2f41b526165260e26026b8",
+      "text": "Creative Commons Attribution-Share Alike 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.sa"
+    }
+  },
+  "index_observation": {
+    "title": "मार्कण्डेयपुराणम्",
+    "revision_id": 415411,
+    "timestamp": "2026-03-03T13:11:21Z",
+    "content_bytes": 8490,
+    "content_sha256": "685efec9ad72459b39248eb6dd472730fa0ad67b4338f60f3c38d3c605f8910d",
+    "boundary": "Revision 415411 is a table-of-contents/index page, not the complete Devimahatmya text carrier."
+  },
+  "candidate_content_pages": [
+    {
+      "title": "मार्कण्डेयपुराणम्/अध्यायः ०८१-०८५",
+      "page_id": 14680,
+      "revision_id": 410281,
+      "timestamp": "2025-09-26T07:01:11Z",
+      "provider_sha1": "dad1caa4730947c516953300800c0fca2f631efe",
+      "content_bytes": 84828,
+      "content_sha256": "c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
+      "chapters": [81, 85]
+    },
+    {
+      "title": "मार्कण्डेयपुराणम्/अध्यायः ०८६-०९०",
+      "page_id": 60991,
+      "revision_id": 363171,
+      "timestamp": "2022-12-15T01:26:45Z",
+      "provider_sha1": "a58d87fa6bbeba61d2362699ffec7c97757473e1",
+      "content_bytes": 45604,
+      "content_sha256": "4459b0ca01f9a4173f1a137bf7c64908afbf326565b0b3f2dd2d2f5f830850fe",
+      "chapters": [86, 90]
+    },
+    {
+      "title": "मार्कण्डेयपुराणम्/अध्यायः ९१-९३",
+      "page_id": 14681,
+      "revision_id": 363170,
+      "timestamp": "2022-12-15T01:07:13Z",
+      "provider_sha1": "34bfde36a811b0b211d4fd0052e78bcf03838eb3",
+      "content_bytes": 30643,
+      "content_sha256": "446fb91efc40b94d7b59aa1d5b3116dd665b79ec68044985a8953483c8721814",
+      "chapters": [91, 93]
+    }
+  ],
+  "structure": {
+    "chapter_range": [81, 93],
+    "chapter_count": 13,
+    "verse_marker_counts": {
+      "81": 78,
+      "82": 70,
+      "83": 44,
+      "84": 38,
+      "85": 79,
+      "86": 20,
+      "87": 26,
+      "88": 61,
+      "89": 39,
+      "90": 27,
+      "91": 51,
+      "92": 38,
+      "93": 17
+    },
+    "all_markers_start_at_one_and_end_at_observed_chapter_terminal": true,
+    "missing_marker_numbers": [],
+    "duplicate_marker_numbers": [],
+    "chapter_86_marker_six_literal": "॥८६. ६॥",
+    "chapter_86_note": "A parser that disallows whitespace after the full stop falsely reports marker 6 as absent. The fixed Wikisource text contains the stanza and literal marker with one space.",
+    "terminal_chapter": 93,
+    "terminal_colophon_observed": true,
+    "structural_crosswalk": "The thirteen chapter terminal counts match the retained private GRETIL 81-93 witness after recognizing the chapter-86 spaced marker. This proves a structural crosswalk, not line-by-line textual identity or an identified common print source."
+  },
+  "identity_and_quality_boundaries": {
+    "language": "Sanskrit",
+    "script": "Devanagari",
+    "expression_kind": "community-maintained electronic transcription",
+    "underlying_print_edition_identified": false,
+    "textual_recension_identified": false,
+    "provider_header_author_literal_is_not_modern_transcription_provenance": true,
+    "line_by_line_scan_reconciliation_complete": false,
+    "transcription_quality_fully_proved": false,
+    "complete_devimahatmya_tradition_or_all_recensions": false,
+    "complete_markandeya_purana": false
+  },
+  "decision": {
+    "selected_as_fastest_product_text_candidate": true,
+    "reason": "It is a compact Devanagari transcription with a complete 81-93 chapter/marker sequence and an explicit open-license lane, while the acquired alternatives are noncommercial, partial, scope-mismatched, image-only, or unsuitable as product text.",
+    "acquired": false,
+    "source_vault_mutated": false,
+    "licence_accepted": false,
+    "explicit_user_authorization_required_before_acquisition": true,
+    "product_use_allowed": false,
+    "search_sarthi_api_use_allowed": false,
+    "next_if_authorized": "Acquire the three exact revision payloads plus revision metadata into the content-addressed vault, preserve CC BY-SA attribution/share-alike obligations, segment all 13 chapters and verses, compare against the GRETIL witness and fixed scans, then produce separately attributable Hindi and English Devam translations."
+  },
+  "held_alternatives": [
+    "GRETIL Markandeyapurana 81-93: structurally complete but CC BY-NC-SA 4.0 private evidence only",
+    "Poley 1831 Sanskrit/Latin edition: complete but fixed scan restricts use to personal noncommercial purposes",
+    "Bhuti 1901 Bengali translation: explicitly volume 1 and incomplete as a standalone lane",
+    "Durgasaptashatipradipa 1919: ritual-commentary/manual scope mismatch, not the complete main text",
+    "Commons Malayalam-script palm-leaf manuscript: valuable public-domain manuscript witness, not the fastest searchable Devanagari product text"
+  ]
+}

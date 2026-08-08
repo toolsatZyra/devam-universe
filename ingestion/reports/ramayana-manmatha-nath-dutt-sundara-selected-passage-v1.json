@@ -1,0 +1,56 @@
+{
+  "contract": "DEVAM_DUTT_SUNDARA_SELECTED_PASSAGE_REVIEW_V1",
+  "reviewed_at": "2026-08-07T19:14:36+05:30",
+  "scope": "One visually reviewed passage sequence in Manmatha Nath Dutt's 1892 Sundara Kandam scan: Section XXX, its transition into Section XXXI, and the opening of Section XXXII. This is bounded MVP evidence, not a proofread transcription of the volume.",
+  "source_plan": {
+    "path": "ingestion/plans/ramayana-manmatha-nath-dutt-commons-source-acquisition-v1.json",
+    "sha256": "7fea488d9084f19bc8507291875c1512b7801fa4de776aebb7b21301a0b3cb58"
+  },
+  "structure_profile": {
+    "path": "ingestion/reports/ramayana-manmatha-nath-dutt-commons-structure-v1.json",
+    "sha256": "4bac0c1f139980cff5e3c58640e37db0d2f154d1a22011ccb9c0d0330afe9b32"
+  },
+  "visual_identity_review": {
+    "path": "ingestion/reports/ramayana-manmatha-nath-dutt-commons-visual-review-v1.json",
+    "sha256": "d31629e32303704a89d62e4b03f0d8821b59fe3f5fa65ad18e425db16c85254e"
+  },
+  "source": {
+    "source_id": "commons-dutt-ramayana-sundara-djvu",
+    "work_title": "The Ramayana",
+    "edition_title": "Sundara Kandam, translated into English prose from the original Sanskrit of Valmiki; edited and published by Manmatha Nath Dutt, Calcutta, 1892",
+    "source_path": "source_vault/objects/sha256/6f/6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062",
+    "bytes": 9184804,
+    "sha256": "6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062",
+    "provider_sha1": "d5c3777fec978b83eb2200d79f2541a7892586f7",
+    "commons_file_title": "File:The Ramayana (Manmatha Nath Dutt) Canto 5.djvu",
+    "rights_evidence": "Commons currently reports LicenseShortName=Public domain, UsageTerms=Public domain, Copyrighted=False. The 1892 title leaf's historical 'All rights reserved' notice remains edition-history evidence; this report makes no universal legal conclusion."
+  },
+  "pages": [
+    {"carrier_page_1_based": 110, "page_index_0_based": 109, "printed_page": "975", "text_chars": 1842, "provider_ocr_sha256": "00fffb22fbf26789a1f3f6594070e749f00a4aeb5a64ce0e00c5cd7e79d07364", "visual_observation": "Section XXX begins; Hanuman enters sustained deliberation."},
+    {"carrier_page_1_based": 111, "page_index_0_based": 110, "printed_page": "976", "text_chars": 2142, "provider_ocr_sha256": "80c31eda5087110e17194837b78bedaa2d059b4bd8b569cc8c8ad0c89390aa6d", "visual_observation": "Hanuman considers Sita's distress, his duty to console her, the mission, language, appearance, and fear."},
+    {"carrier_page_1_based": 112, "page_index_0_based": 111, "printed_page": "977", "text_chars": 2117, "provider_ocr_sha256": "5922533d604268088e05a0c46dab56282dc63f8ea08aaae023ab9270aa65a712", "visual_observation": "Hanuman considers alarm, intervention by guards, capture or death, and failure of the wider mission."},
+    {"carrier_page_1_based": 113, "page_index_0_based": 112, "printed_page": "978", "text_chars": 1719, "provider_ocr_sha256": "b16c24ad6e2bcc2251aa738efeba9e386bd4812ff3c62ab56c5d38bfd15d876d", "visual_observation": "Section XXX closes with Hanuman choosing a gentle opening centred on Rama; Section XXXI begins on the same page."},
+    {"carrier_page_1_based": 114, "page_index_0_based": 113, "printed_page": "979", "text_chars": 2019, "provider_ocr_sha256": "0ea475c756e92df5574156fff68f46455cd4b18c2bd0fcee1803d82453b27cef", "visual_observation": "Section XXXI continues the Rama-centred opening and Sita's response."},
+    {"carrier_page_1_based": 115, "page_index_0_based": 114, "printed_page": "980", "text_chars": 1808, "provider_ocr_sha256": "0e30a5364e2f956e81c3e6628b1054582ece920a5fa30c8822337353d1e40380", "visual_observation": "Section XXXII begins with Sita seeing Hanuman and reacting with fear and uncertainty."}
+  ],
+  "crosswalk": {
+    "primary": "Dutt Section XXX aligns by ordered episode content with GRETIL Book 5 sarga 28 and Griffith Canto XXX.",
+    "adjacent": [
+      {"dutt": "Section XXX", "gretil": "5.28", "griffith": "XXX"},
+      {"dutt": "Section XXXI", "gretil": "5.29", "griffith": "XXXI"},
+      {"dutt": "Section XXXII", "gretil": "5.30", "griffith": "XXXII"}
+    ],
+    "boundary": "The three-source ordered correspondence supports this episode citation crosswalk; it does not establish identical recensions, line-by-line translation identity, or completeness of the Ramayana tradition."
+  },
+  "claims": {
+    "selected_pages_visually_readable": true,
+    "section_30_deliberation_boundary_visually_confirmed": true,
+    "adjacent_section_sequence_visually_confirmed": true,
+    "provider_ocr_verified_or_servable_as_exact_text": false,
+    "complete_proofread_dutt_transcription_available": false,
+    "whole_volume_page_omission_excluded_by_this_review": false,
+    "ramayana_tradition_complete": false
+  },
+  "allowed_use": "Source-grounded original summary and page-addressed citation for the internal/beta MVP. Do not expose the provider OCR as an exact quotation.",
+  "next_step": "Curate additional high-value Ramayana episodes with the same bounded page or byte-addressed evidence pattern; do not block the MVP on full-volume OCR correction."
+}

@@ -1,0 +1,187 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-yama-deepam-north-west-india-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "yama-deepam",
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "family_custom_overrides_generic_sequence": true,
+    "resolved_evening_required": true,
+    "precise_provider_muhurta_reproduced": false
+  },
+  "sources": [
+    {
+      "source_id": "devam-yama-deepam-date-practice-fixture",
+      "title": "Devam Yama Deepam Delhi 2026 date and practice evidence fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_and_bounded_practice_crosswalk",
+      "rights_lane": "derivative_allowed",
+      "artifact_sha256": "3264642732a7415def579db19fb62144ca1a262e523077b90eed5f4bd865af96"
+    },
+    {
+      "source_id": "drikpanchang-yama-deepam-practice",
+      "title": "2026 Yama Deepam date during Diwali for New Delhi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/diwali/yama-deepam/yama-deepam-date-time.html?geoname-id=1261481&year=2026&lang=en",
+      "source_class": "current_practitioner_identity_and_minimum_household_practice",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "nirnayasindhu-yama-deepa-context",
+      "title": "Nirnayasindhu Marathi edition, Kartika Trayodashi page 213",
+      "publisher": "Devam retained source vault",
+      "url": null,
+      "source_class": "historical_private_evidence_for_trayodashi_context",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "devam-flame-safety-boundary",
+      "title": "Devam household flame-safety and family-context boundary",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "editorial_safety_boundary_not_ritual_authority",
+      "rights_lane": "derivative_allowed"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "yama-deepam-north-west-india-en-v1",
+      "language_code": "en",
+      "title": "Yama Deepam at home",
+      "summary": "On the separately resolved Trayodashi evening, a household may offer one safely supervised lamp or a flame-free light for Yama outside the home. This is a bounded minimum form: it does not promise protection, require a south-facing lamp or fixed lamp count, reproduce a precise muhurta, or complete the separate Dhantrayodashi practice.",
+      "family_practice_note": "Ask where and how your household normally keeps Yama Deepam. Direction, lamp count, oil, wick, prayer, tarpan, and closing customs vary; Devam does not infer them from the minimum current source. Never leave a flame unattended or burning overnight. Use the family's recognised guide for a fuller form.",
+      "context_prompts": [
+        "Does your North or West India household separately keep Yama Deepam on Dhantrayodashi evening?",
+        "Where does your family safely place the lamp, and does it keep a particular direction, count, oil, wick, or prayer?",
+        "Do you need a simple bounded form, or do you have a family text or practitioner for the fuller custom?",
+        "Would a supervised lamp be safe at your entrance, or should you use a flame-free light?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "One safe evening light",
+          "estimated_minutes": 8,
+          "materials": [
+            {"item": "One stable supervised lamp", "substitutions": ["Use a flame-free electric light where an open flame is unsafe or prohibited"], "optional": false},
+            {"item": "A clean safe place outside the home", "substitutions": ["Use the safest family-recognised threshold or exterior location without blocking a path"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Use the Yama Deepam evening already resolved for your supported calendar context; do not substitute the separate Dhantrayodashi puja interval.", "why": "The observances share Trayodashi but remain separate calendar and practice records.", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture"]},
+            {"ordinal": 2, "instruction": "Prepare one stable lamp or flame-free light at a safe exterior place where it cannot be knocked over, ignite material, or obstruct anyone.", "why": "The current practitioner source supports an outside-home light; placement and fire safety still depend on the household setting.", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "devam-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "During the resolved evening, offer the light to Yama with a brief familiar prayer or a quiet reflection on dharma, mortality, and completing responsibilities honestly.", "why": "This preserves the Yama Deepa identity without inventing a formal mantra or guaranteed result.", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "nirnayasindhu-yama-deepa-context"]},
+            {"ordinal": 4, "instruction": "Remain present and extinguish the flame safely when the short observance is complete; never leave it unattended or burning overnight.", "why": "A household guide must not turn symbolic light into a fire hazard.", "optional": false, "source_ids": ["devam-flame-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Family-led Yama Deepa offering",
+          "estimated_minutes": 15,
+          "materials": [
+            {"item": "The lamp, safe holder, and exterior place your family already uses", "substitutions": ["Use one supervised lamp or a flame-free light when the fuller setup is unknown or unsafe"], "optional": false},
+            {"item": "The family's familiar short prayer or silent reflection", "substitutions": ["Offer respectful silence instead of inventing a mantra"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the family's placement, direction, count, lamp material, and prayer before preparing anything; treat every unconfirmed detail as optional and unresolved.", "why": "Those details are not proved as universal by the bounded evidence.", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture"]},
+            {"ordinal": 2, "instruction": "At the resolved evening, place and light the family's safe Yama Deepa outside the home, or use the minimum flame-free form.", "why": "Outside-home evening Deepdan is the stable current-practice core.", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "devam-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Offer the family's known prayer, or reflect briefly on righteous conduct, unfinished duties, and care for others; do not state that the lamp guarantees safety or longevity.", "why": "The product can support meaningful reflection while preserving devotional outcome claims as beliefs, not guarantees.", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "nirnayasindhu-yama-deepa-context"]},
+            {"ordinal": 4, "instruction": "Close according to family custom while supervising the flame continuously, then extinguish it safely.", "why": "Family continuity and physical safety both matter.", "optional": false, "source_ids": ["devam-flame-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Family-text or practitioner-led form",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "The exact materials and text specified by the family's recognised guide", "substitutions": ["Return to the bounded minimum form rather than reconstructing unknown details"], "optional": false},
+            {"item": "A responsible adult dedicated to flame supervision", "substitutions": ["Use a flame-free light if continuous supervision is unavailable"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Have the family practitioner or text determine any direction, number of lamps, oil, wick, mantra, tarpan, or placement beyond the bounded outside-home evening light.", "why": "The retained evidence does not establish one universal fuller procedure.", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture", "nirnayasindhu-yama-deepa-context"]},
+            {"ordinal": 2, "instruction": "Follow that recognised sequence only where it is safe and actually belongs to the household; keep Dhantrayodashi worship as a separate procedure.", "why": "A fuller form should preserve lineage and observance identity rather than merge adjacent customs.", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture", "devam-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "Supervise every flame through the family close and extinguish it safely; do not follow an instruction to leave a lamp unattended or burning overnight.", "why": "The safety boundary is non-negotiable even when a family uses a more detailed form.", "optional": false, "source_ids": ["devam-flame-safety-boundary"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "yama-deepam-north-west-india-hi-v1",
+      "language_code": "hi",
+      "title": "घर में यम दीपम",
+      "summary": "अलग से निर्धारित त्रयोदशी-संध्या में घर के बाहर यम के लिए एक सुरक्षित, निरंतर देखरेख वाला दीप या बिना लौ का प्रकाश अर्पित किया जा सकता है। यह सीमित सरल रूप है—यह सुरक्षा की गारंटी नहीं देता, दक्षिणमुखी दीप या निश्चित दीप-संख्या अनिवार्य नहीं बताता, सटीक मुहूर्त नहीं बनाता और अलग धनत्रयोदशी-विधि को पूरा नहीं मानता।",
+      "family_practice_note": "पहले जानें कि आपके घर में यम दीप कहाँ और कैसे रखा जाता है। दिशा, दीपों की संख्या, तेल, बाती, प्रार्थना, तर्पण और समापन की रीति अलग हो सकती है; देवम उन्हें न्यूनतम वर्तमान स्रोत से नहीं गढ़ता। लौ को कभी अकेला या रातभर जलता न छोड़ें। विस्तृत रूप के लिए पारिवारिक जानकार का मार्गदर्शन लें।",
+      "context_prompts": [
+        "क्या आपके उत्तर या पश्चिम भारतीय परिवार में धनत्रयोदशी-संध्या पर यम दीपम अलग से होता है?",
+        "आपके घर में दीप कहाँ रखा जाता है और क्या कोई विशेष दिशा, संख्या, तेल, बाती या प्रार्थना है?",
+        "आपको सरल सीमित रूप चाहिए या विस्तृत रीति के लिए पारिवारिक ग्रंथ या जानकार उपलब्ध हैं?",
+        "क्या प्रवेश-द्वार पर निरंतर देखरेख वाला दीप सुरक्षित है, या बिना लौ का प्रकाश उपयोग करना चाहिए?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "एक सुरक्षित संध्या-दीप",
+          "estimated_minutes": 8,
+          "materials": [
+            {"item": "एक स्थिर और निरंतर देखरेख वाला दीप", "substitutions": ["खुली लौ असुरक्षित या निषिद्ध हो तो बिना लौ का विद्युत प्रकाश लें"], "optional": false},
+            {"item": "घर के बाहर स्वच्छ और सुरक्षित स्थान", "substitutions": ["परिवार में मान्य ऐसा सुरक्षित स्थान लें जहाँ मार्ग न रुके"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "अपने समर्थित पंचांग-संदर्भ में पहले से निर्धारित यम दीपम संध्या लें; अलग धनत्रयोदशी-पूजा समय को इसका स्थान न दें।", "why": "दोनों त्रयोदशी से जुड़े हैं, पर अलग पंचांग और विधि-रिकॉर्ड हैं।", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture"]},
+            {"ordinal": 2, "instruction": "बाहर ऐसी सुरक्षित जगह पर एक स्थिर दीप या बिना लौ का प्रकाश रखें जहाँ वह गिरे नहीं, आग न लगाए और रास्ता न रोके।", "why": "वर्तमान स्रोत घर के बाहर दीप का समर्थन करता है; स्थान और अग्नि-सुरक्षा घर के अनुसार तय होती है।", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "devam-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "निर्धारित संध्या में यम के लिए प्रकाश अर्पित कर परिचित छोटी प्रार्थना करें, या धर्म, मृत्यु-स्मरण और अपने दायित्व ईमानदारी से पूरे करने पर शांत चिंतन करें।", "why": "इससे औपचारिक मंत्र या निश्चित फल गढ़े बिना यम दीप की पहचान बनी रहती है।", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "nirnayasindhu-yama-deepa-context"]},
+            {"ordinal": 4, "instruction": "पूरे समय पास रहें और संक्षिप्त विधि पूरी होने पर लौ सुरक्षित बुझाएँ; उसे अकेला या रातभर जलता न छोड़ें।", "why": "प्रतीकात्मक प्रकाश अग्नि-जोखिम नहीं बनना चाहिए।", "optional": false, "source_ids": ["devam-flame-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "परिवार-निर्देशित यम दीप अर्पण",
+          "estimated_minutes": 15,
+          "materials": [
+            {"item": "परिवार में प्रचलित दीप, सुरक्षित आधार और बाहरी स्थान", "substitutions": ["रीति अज्ञात या असुरक्षित हो तो एक देखरेख वाला दीप या बिना लौ का प्रकाश लें"], "optional": false},
+            {"item": "परिवार की परिचित छोटी प्रार्थना या मौन चिंतन", "substitutions": ["मंत्र गढ़ने के बजाय सम्मानपूर्वक मौन रखें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "तैयारी से पहले परिवार में मान्य स्थान, दिशा, संख्या, दीप-सामग्री और प्रार्थना पूछ लें; जो पुष्टि न हो उसे वैकल्पिक और अनिर्णीत रखें।", "why": "सीमित प्रमाण इन बातों को सार्वभौमिक नहीं सिद्ध करता।", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture"]},
+            {"ordinal": 2, "instruction": "निर्धारित संध्या में घर के बाहर परिवार का सुरक्षित यम दीप जलाएँ, या न्यूनतम बिना-लौ वाला रूप लें।", "why": "घर के बाहर संध्या-दीपदान स्थिर वर्तमान-विधि का केंद्र है।", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "devam-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "परिचित प्रार्थना करें, या सदाचार, अधूरे दायित्व और दूसरों की देखभाल पर थोड़ी देर चिंतन करें; दीप से सुरक्षा या आयु की गारंटी न कहें।", "why": "अर्थपूर्ण चिंतन दिया जा सकता है, पर धार्मिक फल को गारंटी नहीं बनाया जा सकता।", "optional": false, "source_ids": ["drikpanchang-yama-deepam-practice", "nirnayasindhu-yama-deepa-context"]},
+            {"ordinal": 4, "instruction": "परिवार की रीति से समापन करें, पूरे समय लौ की देखरेख रखें और फिर सुरक्षित बुझाएँ।", "why": "पारिवारिक निरंतरता और शारीरिक सुरक्षा दोनों जरूरी हैं।", "optional": false, "source_ids": ["devam-flame-safety-boundary"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "पारिवारिक ग्रंथ या जानकार-निर्देशित रूप",
+          "estimated_minutes": 30,
+          "materials": [
+            {"item": "मान्य पारिवारिक जानकार या ग्रंथ में बताई गई सटीक सामग्री", "substitutions": ["अज्ञात विवरण गढ़ने के बजाय सीमित सरल रूप लें"], "optional": false},
+            {"item": "लौ की निरंतर देखरेख के लिए एक जिम्मेदार वयस्क", "substitutions": ["देखरेख संभव न हो तो बिना लौ का प्रकाश लें"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "सीमित बाहरी संध्या-दीप से आगे की दिशा, दीप-संख्या, तेल, बाती, मंत्र, तर्पण या स्थान पारिवारिक ग्रंथ या जानकार से ही तय कराएँ।", "why": "संग्रहीत प्रमाण एक सार्वभौमिक विस्तृत विधि सिद्ध नहीं करता।", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture", "nirnayasindhu-yama-deepa-context"]},
+            {"ordinal": 2, "instruction": "उसी मान्य क्रम का पालन करें जहाँ वह सुरक्षित और वास्तव में आपके घर का हो; धनत्रयोदशी-पूजा को अलग रखें।", "why": "विस्तृत रूप में परम्परा और अलग अनुष्ठान की पहचान दोनों बचनी चाहिए।", "optional": false, "source_ids": ["devam-yama-deepam-date-practice-fixture", "devam-flame-safety-boundary"]},
+            {"ordinal": 3, "instruction": "पारिवारिक समापन तक हर लौ की देखरेख करें और सुरक्षित बुझाएँ; दीप को अकेला या रातभर जलता छोड़ने का निर्देश न मानें।", "why": "विस्तृत पारिवारिक रूप में भी सुरक्षा-सीमा अनिवार्य है।", "optional": false, "source_ids": ["devam-flame-safety-boundary"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "outside_home_evening_light_supported": true,
+    "formal_priest_mantras_included": false,
+    "tarpana_procedure_included": false,
+    "south_facing_direction_required": false,
+    "fixed_lamp_count_required": false,
+    "specific_oil_wick_or_lamp_material_required": false,
+    "lamp_left_unattended_or_burning_overnight": false,
+    "guaranteed_protection_or_longevity_outcome_claimed": false,
+    "precise_provider_muhurta_reproduced": false,
+    "dhantrayodashi_merged_or_completed": false,
+    "one_universal_procedure_claimed": false,
+    "all_regional_and_family_variants_complete": false
+  }
+}

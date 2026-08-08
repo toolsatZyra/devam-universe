@@ -1,0 +1,2856 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "general-india",
+        "tradition_code": "family-specific-hindu"
+      },
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      },
+      {
+        "region_code": "south-india",
+        "tradition_code": "smarta-south-india"
+      },
+      {
+        "region_code": "bengal",
+        "tradition_code": "regional-bengal"
+      },
+      {
+        "region_code": "kashi-varanasi",
+        "tradition_code": "regional-kashi-varanasi"
+      },
+      {
+        "region_code": "bihar-purvanchal",
+        "tradition_code": "surya-chhath-bihar-purvanchal"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and timezone apply?",
+      "Does your family treat this Sankranti as a personal remembrance, a household observance, or part of a named regional festival?",
+      "Do you have a family priest, temple or Panchang that supplies the local punya kala and fuller procedure?"
+    ],
+    "region_codes": [
+      "general-india",
+      "north-india",
+      "west-india",
+      "south-india",
+      "bengal",
+      "kashi-varanasi",
+      "bihar-purvanchal"
+    ],
+    "settings": [
+      "household",
+      "individual",
+      "family_led",
+      "temple"
+    ],
+    "tradition_codes": [
+      "family-specific-hindu",
+      "smarta-north-india",
+      "smarta-west-india",
+      "smarta-south-india",
+      "regional-bengal",
+      "regional-kashi-varanasi",
+      "surya-chhath-bihar-purvanchal"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": null,
+    "decision_rule_id": "devam-india-sankranti-september-december-2026-v1",
+    "freshness_note": "The four civil dates are fixed for the Delhi/India 2026 reference. Punya kala and any fuller regional or temple practice must be resolved for the user's location and authority.",
+    "live_schedule_required": true,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-sankranti-sep-dec-date-fixture",
+      "drikpanchang-sankranti-calendar-delhi-2026"
+    ],
+    "timing_kind": "astronomical",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "sankranti-september-december-general-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "kanya-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "kanya-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "Kanya Sankranti is named for the Sun's sidereal transition from Simha to Kanya. This is a calendrical identity; different regions may attach distinct deity, river, temple, donation and festival traditions to it.",
+          "title": "A solar transition, not one universal origin story",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "Five-minute Sankranti remembrance",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-kanya-sankranti-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use 17 September 2026 for this Delhi/India 2026 reference; ask a location-specific Panchang for punya kala or a local procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The civil date is resolved, but one universal ritual window is not."
+            },
+            {
+              "instruction": "Remember the Sun and the transition of time with a familiar prayer or a quiet moment of gratitude.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This is an accessible remembrance without inventing a mantra."
+            },
+            {
+              "instruction": "Offer food, clothing, money, time or useful help within your means.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The general Sankranti reference identifies charity as a central activity."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "Simple household Sankranti sequence",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-kanya-sankranti-en-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm 17 September 2026 and the relevant time with the family tradition and a Panchang for your location.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Timing and practice can change with place and authority."
+            },
+            {
+              "instruction": "After an ordinary bath or wash, prepare a quiet place; do not enter unsafe water, use unsafe flame or join an unmanaged crowd.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This preserves cleanliness in a safe household form."
+            },
+            {
+              "instruction": "Say a family-known Surya prayer; keep water or a lamp only if that is familiar and safe, otherwise remember without materials.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The lane does not invent formal mantra or arghya rules."
+            },
+            {
+              "instruction": "Make a donation or perform one useful act of service, then follow the family's familiar close.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This joins the day's charitable emphasis to practical action."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family-, teacher- or temple-directed fuller form",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-kanya-sankranti-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "First identify the family, temple, teacher or regional Panchang that has authority for the fuller procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "A solar ingress alone does not establish a complete ritual."
+            },
+            {
+              "instruction": "Ask that authority for the actual punya kala, sankalpa, mantra, arghya, offering, donation and closing sequence.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Detailed practice remains with a responsible living tradition."
+            },
+            {
+              "instruction": "Use only materials and steps you understand and can perform safely; omit the rest.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Participation remains possible without guessing missing ritual instructions."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not enter unsafe or polluted water.",
+        "Do not leave a lamp unattended or place water, flame or offerings near electrical equipment.",
+        "No universal fasting, food, medical, mantra or promised-outcome advice is supplied.",
+        "Family, temple and location-specific Panchang practice overrides this general lane."
+      ],
+      "short_answer": "Kanya Sankranti falls on 17 September 2026 in this Delhi/India reference. Obtain the exact punya kala for your location; a safe short form is Surya remembrance, gratitude, and charity or service within your means.",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "The day marks the Sun's sidereal transition from Simha to Kanya. Sankranti identifies a solar-month transition; it does not establish one national origin story or one universal household procedure."
+      },
+      "title": "Kanya Sankranti",
+      "typical_practices": [
+        {
+          "description": "The general Sankranti reference treats charity as appropriate. Surya remembrance, bathing, arghya, foods and temple participation vary by family and region and are not made mandatory in this lane.",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "kanya-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "In Bengal, the same date is associated with Vishwakarma Puja. That workplace and artisan lane is separate and should be used only when the user's region and practice match it.",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-vishwakarma-bengal-lane"
+          ],
+          "variant_id": "kanya-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "kanya-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "kanya-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "कन्या संक्रांति का नाम सूर्य का निरयन सिंह से कन्या राशि में प्रवेश से आता है। यह कैलेंडर-आधारित पहचान है; अलग क्षेत्रों में इसके साथ अलग देवता, नदी, मंदिर, दान और उत्सव-परंपराएँ जुड़ सकती हैं।",
+          "title": "एक सौर संक्रमण, कोई एक सार्वभौम उत्पत्ति-कथा नहीं",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "पाँच मिनट का संक्रांति स्मरण",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-kanya-sankranti-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "इस दिल्ली/भारत 2026 संदर्भ में 17 सितंबर 2026 को इस संक्रांति का दिन मानें; पुण्यकाल या स्थानीय विधि के लिए अपने स्थान का पंचांग पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "तिथि तय है, पर एक सार्वभौम पुण्यकाल तय नहीं है।"
+            },
+            {
+              "instruction": "सूर्य और समय के परिवर्तन को याद करते हुए परिचित प्रार्थना कहें या कुछ क्षण कृतज्ञता में मौन रहें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "यह बिना गढ़े हुए मंत्र के एक सुलभ स्मरण है।"
+            },
+            {
+              "instruction": "अपनी सामर्थ्य के अनुसार भोजन, वस्त्र, धन, समय या उपयोगी सहायता दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सामान्य संक्रांति संदर्भ में दान को प्रमुख आचरण बताया गया है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "घर का सरल संक्रांति क्रम",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-kanya-sankranti-hi-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार की परंपरा और स्थानीय पंचांग से 17 सितंबर 2026 तथा उपयुक्त समय की पुष्टि करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "क्षेत्र और स्थान के अनुसार समय तथा विधि बदल सकती है।"
+            },
+            {
+              "instruction": "स्नान या सामान्य स्वच्छता के बाद शांत स्थान तैयार करें; असुरक्षित नदी, आग या भीड़ में न जाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "स्वच्छता को सुरक्षित घरेलू रूप में रखा गया है।"
+            },
+            {
+              "instruction": "परिवार-परिचित सूर्य प्रार्थना करें; सुरक्षित और परिचित हो तो जल या दीप रखें, अन्यथा बिना सामग्री के स्मरण करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "औपचारिक मंत्र या अर्घ्य-विधि का आविष्कार नहीं किया जाता।"
+            },
+            {
+              "instruction": "दान या सेवा करके परिवार के परिचित समापन का पालन करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "कर्म और कृतज्ञता को दिन के अर्थ से जोड़ता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "परिवार, गुरु या मंदिर-निर्देशित पूर्ण रूप",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-kanya-sankranti-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "पहले यह तय करें कि कौन-सा परिवार, मंदिर, गुरु या क्षेत्रीय पंचांग इस विधि का अधिकारी है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सौर प्रवेश अकेले पूर्ण अनुष्ठान सिद्ध नहीं करता।"
+            },
+            {
+              "instruction": "उसी अधिकारी से पुण्यकाल, संकल्प, मंत्र, अर्घ्य, नैवेद्य, दान और समापन की वास्तविक सूची लें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "विस्तृत विधि को जिम्मेदार जीवित परंपरा के पास रखा जाता है।"
+            },
+            {
+              "instruction": "केवल वही सामग्री और क्रम अपनाएँ जिन्हें आप समझते हैं और सुरक्षित रूप से कर सकते हैं; शेष को छोड़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "अनुमानित विधि से बचते हुए सहभागिता संभव रहती है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "असुरक्षित या प्रदूषित जल में प्रवेश न करें।",
+        "दीप को बिना देखरेख न छोड़ें और जल, आग या अर्पण को विद्युत उपकरणों के पास न रखें।",
+        "व्रत, आहार, औषधि, मंत्र या फल की कोई सार्वभौम सलाह नहीं दी जाती।",
+        "परिवार, मंदिर या स्थानीय पंचांग की विधि इस सामान्य पथ पर प्राथमिकता रखती है।"
+      ],
+      "short_answer": "कन्या संक्रांति इस दिल्ली/भारत संदर्भ में 17 सितंबर 2026 को है। सटीक पुण्यकाल स्थान के अनुसार लें; छोटा सुरक्षित रूप सूर्य-स्मरण, कृतज्ञता और सामर्थ्य के अनुसार दान या सेवा है।",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "यह दिन सूर्य का निरयन सिंह से कन्या राशि में प्रवेश को चिह्नित करता है। संक्रांति सौर मास-परिवर्तन की पहचान है; इससे एक ही राष्ट्रीय कथा या एक ही घरेलू विधि सिद्ध नहीं होती।"
+      },
+      "title": "कन्या संक्रांति",
+      "typical_practices": [
+        {
+          "description": "सामान्य संक्रांति संदर्भ दान को उपयुक्त मानता है। सूर्य-स्मरण, स्नान, अर्घ्य, भोजन और मंदिर-भागीदारी परिवार तथा क्षेत्र के अनुसार बदलते हैं और इस पथ में अनिवार्य नहीं हैं।",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "kanya-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "बंगाल में यही दिन विश्वकर्मा पूजा से जुड़ता है। कार्यस्थल और शिल्पकारों की वह विधि अलग है और केवल उपयुक्त क्षेत्र तथा परंपरा में ही लागू होती है।",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-vishwakarma-bengal-lane"
+          ],
+          "variant_id": "kanya-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "tula-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "tula-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "Tula Sankranti is named for the Sun's sidereal transition from Kanya to Tula. This is a calendrical identity; different regions may attach distinct deity, river, temple, donation and festival traditions to it.",
+          "title": "A solar transition, not one universal origin story",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "Five-minute Sankranti remembrance",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-tula-sankranti-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use 17 October 2026 for this Delhi/India 2026 reference; ask a location-specific Panchang for punya kala or a local procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The civil date is resolved, but one universal ritual window is not."
+            },
+            {
+              "instruction": "Remember the Sun and the transition of time with a familiar prayer or a quiet moment of gratitude.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This is an accessible remembrance without inventing a mantra."
+            },
+            {
+              "instruction": "Offer food, clothing, money, time or useful help within your means.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The general Sankranti reference identifies charity as a central activity."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "Simple household Sankranti sequence",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-tula-sankranti-en-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm 17 October 2026 and the relevant time with the family tradition and a Panchang for your location.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Timing and practice can change with place and authority."
+            },
+            {
+              "instruction": "After an ordinary bath or wash, prepare a quiet place; do not enter unsafe water, use unsafe flame or join an unmanaged crowd.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This preserves cleanliness in a safe household form."
+            },
+            {
+              "instruction": "Say a family-known Surya prayer; keep water or a lamp only if that is familiar and safe, otherwise remember without materials.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The lane does not invent formal mantra or arghya rules."
+            },
+            {
+              "instruction": "Make a donation or perform one useful act of service, then follow the family's familiar close.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This joins the day's charitable emphasis to practical action."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family-, teacher- or temple-directed fuller form",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-tula-sankranti-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "First identify the family, temple, teacher or regional Panchang that has authority for the fuller procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "A solar ingress alone does not establish a complete ritual."
+            },
+            {
+              "instruction": "Ask that authority for the actual punya kala, sankalpa, mantra, arghya, offering, donation and closing sequence.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Detailed practice remains with a responsible living tradition."
+            },
+            {
+              "instruction": "Use only materials and steps you understand and can perform safely; omit the rest.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Participation remains possible without guessing missing ritual instructions."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not enter unsafe or polluted water.",
+        "Do not leave a lamp unattended or place water, flame or offerings near electrical equipment.",
+        "No universal fasting, food, medical, mantra or promised-outcome advice is supplied.",
+        "Family, temple and location-specific Panchang practice overrides this general lane."
+      ],
+      "short_answer": "Tula Sankranti falls on 17 October 2026 in this Delhi/India reference. Obtain the exact punya kala for your location; a safe short form is Surya remembrance, gratitude, and charity or service within your means.",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "The day marks the Sun's sidereal transition from Kanya to Tula. Sankranti identifies a solar-month transition; it does not establish one national origin story or one universal household procedure."
+      },
+      "title": "Tula Sankranti",
+      "typical_practices": [
+        {
+          "description": "The general Sankranti reference treats charity as appropriate. Surya remembrance, bathing, arghya, foods and temple participation vary by family and region and are not made mandatory in this lane.",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "tula-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "At Talakaveri in Kodagu, Karnataka, Tula Sankramana is observed as Kaveri Sankramana and centres on the temple's Theerthodbhava. Temple travel, bathing and live schedules belong to that separate regional participant lane.",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "utsav-tula-kaveri-sankramana"
+          ],
+          "variant_id": "tula-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "tula-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "tula-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "तुला संक्रांति का नाम सूर्य का निरयन कन्या से तुला राशि में प्रवेश से आता है। यह कैलेंडर-आधारित पहचान है; अलग क्षेत्रों में इसके साथ अलग देवता, नदी, मंदिर, दान और उत्सव-परंपराएँ जुड़ सकती हैं।",
+          "title": "एक सौर संक्रमण, कोई एक सार्वभौम उत्पत्ति-कथा नहीं",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "पाँच मिनट का संक्रांति स्मरण",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-tula-sankranti-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "इस दिल्ली/भारत 2026 संदर्भ में 17 अक्टूबर 2026 को इस संक्रांति का दिन मानें; पुण्यकाल या स्थानीय विधि के लिए अपने स्थान का पंचांग पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "तिथि तय है, पर एक सार्वभौम पुण्यकाल तय नहीं है।"
+            },
+            {
+              "instruction": "सूर्य और समय के परिवर्तन को याद करते हुए परिचित प्रार्थना कहें या कुछ क्षण कृतज्ञता में मौन रहें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "यह बिना गढ़े हुए मंत्र के एक सुलभ स्मरण है।"
+            },
+            {
+              "instruction": "अपनी सामर्थ्य के अनुसार भोजन, वस्त्र, धन, समय या उपयोगी सहायता दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सामान्य संक्रांति संदर्भ में दान को प्रमुख आचरण बताया गया है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "घर का सरल संक्रांति क्रम",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-tula-sankranti-hi-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार की परंपरा और स्थानीय पंचांग से 17 अक्टूबर 2026 तथा उपयुक्त समय की पुष्टि करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "क्षेत्र और स्थान के अनुसार समय तथा विधि बदल सकती है।"
+            },
+            {
+              "instruction": "स्नान या सामान्य स्वच्छता के बाद शांत स्थान तैयार करें; असुरक्षित नदी, आग या भीड़ में न जाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "स्वच्छता को सुरक्षित घरेलू रूप में रखा गया है।"
+            },
+            {
+              "instruction": "परिवार-परिचित सूर्य प्रार्थना करें; सुरक्षित और परिचित हो तो जल या दीप रखें, अन्यथा बिना सामग्री के स्मरण करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "औपचारिक मंत्र या अर्घ्य-विधि का आविष्कार नहीं किया जाता।"
+            },
+            {
+              "instruction": "दान या सेवा करके परिवार के परिचित समापन का पालन करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "कर्म और कृतज्ञता को दिन के अर्थ से जोड़ता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "परिवार, गुरु या मंदिर-निर्देशित पूर्ण रूप",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-tula-sankranti-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "पहले यह तय करें कि कौन-सा परिवार, मंदिर, गुरु या क्षेत्रीय पंचांग इस विधि का अधिकारी है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सौर प्रवेश अकेले पूर्ण अनुष्ठान सिद्ध नहीं करता।"
+            },
+            {
+              "instruction": "उसी अधिकारी से पुण्यकाल, संकल्प, मंत्र, अर्घ्य, नैवेद्य, दान और समापन की वास्तविक सूची लें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "विस्तृत विधि को जिम्मेदार जीवित परंपरा के पास रखा जाता है।"
+            },
+            {
+              "instruction": "केवल वही सामग्री और क्रम अपनाएँ जिन्हें आप समझते हैं और सुरक्षित रूप से कर सकते हैं; शेष को छोड़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "अनुमानित विधि से बचते हुए सहभागिता संभव रहती है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "असुरक्षित या प्रदूषित जल में प्रवेश न करें।",
+        "दीप को बिना देखरेख न छोड़ें और जल, आग या अर्पण को विद्युत उपकरणों के पास न रखें।",
+        "व्रत, आहार, औषधि, मंत्र या फल की कोई सार्वभौम सलाह नहीं दी जाती।",
+        "परिवार, मंदिर या स्थानीय पंचांग की विधि इस सामान्य पथ पर प्राथमिकता रखती है।"
+      ],
+      "short_answer": "तुला संक्रांति इस दिल्ली/भारत संदर्भ में 17 अक्टूबर 2026 को है। सटीक पुण्यकाल स्थान के अनुसार लें; छोटा सुरक्षित रूप सूर्य-स्मरण, कृतज्ञता और सामर्थ्य के अनुसार दान या सेवा है।",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "यह दिन सूर्य का निरयन कन्या से तुला राशि में प्रवेश को चिह्नित करता है। संक्रांति सौर मास-परिवर्तन की पहचान है; इससे एक ही राष्ट्रीय कथा या एक ही घरेलू विधि सिद्ध नहीं होती।"
+      },
+      "title": "तुला संक्रांति",
+      "typical_practices": [
+        {
+          "description": "सामान्य संक्रांति संदर्भ दान को उपयुक्त मानता है। सूर्य-स्मरण, स्नान, अर्घ्य, भोजन और मंदिर-भागीदारी परिवार तथा क्षेत्र के अनुसार बदलते हैं और इस पथ में अनिवार्य नहीं हैं।",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "tula-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "कर्नाटक के कोडगु स्थित तलकावेरी में तुला संक्रमण को कावेरी संक्रमण के रूप में मनाया जाता है और मंदिर का तीर्थोद्भव इसका केंद्र है। मंदिर-यात्रा, स्नान और जीवंत समय-सारिणी उस अलग क्षेत्रीय सहभागिता-पथ के विषय हैं।",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "utsav-tula-kaveri-sankramana"
+          ],
+          "variant_id": "tula-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "vrishchika-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "vrishchika-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "Vrishchika Sankranti is named for the Sun's sidereal transition from Tula to Vrishchika. This is a calendrical identity; different regions may attach distinct deity, river, temple, donation and festival traditions to it.",
+          "title": "A solar transition, not one universal origin story",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "Five-minute Sankranti remembrance",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-vrishchika-sankranti-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use 16 November 2026 for this Delhi/India 2026 reference; ask a location-specific Panchang for punya kala or a local procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The civil date is resolved, but one universal ritual window is not."
+            },
+            {
+              "instruction": "Remember the Sun and the transition of time with a familiar prayer or a quiet moment of gratitude.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This is an accessible remembrance without inventing a mantra."
+            },
+            {
+              "instruction": "Offer food, clothing, money, time or useful help within your means.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The general Sankranti reference identifies charity as a central activity."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "Simple household Sankranti sequence",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-vrishchika-sankranti-en-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm 16 November 2026 and the relevant time with the family tradition and a Panchang for your location.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Timing and practice can change with place and authority."
+            },
+            {
+              "instruction": "After an ordinary bath or wash, prepare a quiet place; do not enter unsafe water, use unsafe flame or join an unmanaged crowd.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This preserves cleanliness in a safe household form."
+            },
+            {
+              "instruction": "Say a family-known Surya prayer; keep water or a lamp only if that is familiar and safe, otherwise remember without materials.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The lane does not invent formal mantra or arghya rules."
+            },
+            {
+              "instruction": "Make a donation or perform one useful act of service, then follow the family's familiar close.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This joins the day's charitable emphasis to practical action."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family-, teacher- or temple-directed fuller form",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-vrishchika-sankranti-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "First identify the family, temple, teacher or regional Panchang that has authority for the fuller procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "A solar ingress alone does not establish a complete ritual."
+            },
+            {
+              "instruction": "Ask that authority for the actual punya kala, sankalpa, mantra, arghya, offering, donation and closing sequence.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Detailed practice remains with a responsible living tradition."
+            },
+            {
+              "instruction": "Use only materials and steps you understand and can perform safely; omit the rest.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Participation remains possible without guessing missing ritual instructions."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not enter unsafe or polluted water.",
+        "Do not leave a lamp unattended or place water, flame or offerings near electrical equipment.",
+        "No universal fasting, food, medical, mantra or promised-outcome advice is supplied.",
+        "Family, temple and location-specific Panchang practice overrides this general lane."
+      ],
+      "short_answer": "Vrishchika Sankranti falls on 16 November 2026 in this Delhi/India reference. Obtain the exact punya kala for your location; a safe short form is Surya remembrance, gratitude, and charity or service within your means.",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "The day marks the Sun's sidereal transition from Tula to Vrishchika. Sankranti identifies a solar-month transition; it does not establish one national origin story or one universal household procedure."
+      },
+      "title": "Vrishchika Sankranti",
+      "typical_practices": [
+        {
+          "description": "The general Sankranti reference treats charity as appropriate. Surya remembrance, bathing, arghya, foods and temple participation vary by family and region and are not made mandatory in this lane.",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "vrishchika-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "This lane offers only a general personal remembrance. A family, temple or regional Vrishchika Sankranti procedure is not inferred from the solar ingress alone.",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-sankranti-editorial-boundary"
+          ],
+          "variant_id": "vrishchika-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "vrishchika-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "vrishchika-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "वृश्चिक संक्रांति का नाम सूर्य का निरयन तुला से वृश्चिक राशि में प्रवेश से आता है। यह कैलेंडर-आधारित पहचान है; अलग क्षेत्रों में इसके साथ अलग देवता, नदी, मंदिर, दान और उत्सव-परंपराएँ जुड़ सकती हैं।",
+          "title": "एक सौर संक्रमण, कोई एक सार्वभौम उत्पत्ति-कथा नहीं",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "पाँच मिनट का संक्रांति स्मरण",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-vrishchika-sankranti-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "इस दिल्ली/भारत 2026 संदर्भ में 16 नवंबर 2026 को इस संक्रांति का दिन मानें; पुण्यकाल या स्थानीय विधि के लिए अपने स्थान का पंचांग पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "तिथि तय है, पर एक सार्वभौम पुण्यकाल तय नहीं है।"
+            },
+            {
+              "instruction": "सूर्य और समय के परिवर्तन को याद करते हुए परिचित प्रार्थना कहें या कुछ क्षण कृतज्ञता में मौन रहें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "यह बिना गढ़े हुए मंत्र के एक सुलभ स्मरण है।"
+            },
+            {
+              "instruction": "अपनी सामर्थ्य के अनुसार भोजन, वस्त्र, धन, समय या उपयोगी सहायता दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सामान्य संक्रांति संदर्भ में दान को प्रमुख आचरण बताया गया है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "घर का सरल संक्रांति क्रम",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-vrishchika-sankranti-hi-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार की परंपरा और स्थानीय पंचांग से 16 नवंबर 2026 तथा उपयुक्त समय की पुष्टि करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "क्षेत्र और स्थान के अनुसार समय तथा विधि बदल सकती है।"
+            },
+            {
+              "instruction": "स्नान या सामान्य स्वच्छता के बाद शांत स्थान तैयार करें; असुरक्षित नदी, आग या भीड़ में न जाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "स्वच्छता को सुरक्षित घरेलू रूप में रखा गया है।"
+            },
+            {
+              "instruction": "परिवार-परिचित सूर्य प्रार्थना करें; सुरक्षित और परिचित हो तो जल या दीप रखें, अन्यथा बिना सामग्री के स्मरण करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "औपचारिक मंत्र या अर्घ्य-विधि का आविष्कार नहीं किया जाता।"
+            },
+            {
+              "instruction": "दान या सेवा करके परिवार के परिचित समापन का पालन करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "कर्म और कृतज्ञता को दिन के अर्थ से जोड़ता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "परिवार, गुरु या मंदिर-निर्देशित पूर्ण रूप",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-vrishchika-sankranti-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "पहले यह तय करें कि कौन-सा परिवार, मंदिर, गुरु या क्षेत्रीय पंचांग इस विधि का अधिकारी है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सौर प्रवेश अकेले पूर्ण अनुष्ठान सिद्ध नहीं करता।"
+            },
+            {
+              "instruction": "उसी अधिकारी से पुण्यकाल, संकल्प, मंत्र, अर्घ्य, नैवेद्य, दान और समापन की वास्तविक सूची लें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "विस्तृत विधि को जिम्मेदार जीवित परंपरा के पास रखा जाता है।"
+            },
+            {
+              "instruction": "केवल वही सामग्री और क्रम अपनाएँ जिन्हें आप समझते हैं और सुरक्षित रूप से कर सकते हैं; शेष को छोड़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "अनुमानित विधि से बचते हुए सहभागिता संभव रहती है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "असुरक्षित या प्रदूषित जल में प्रवेश न करें।",
+        "दीप को बिना देखरेख न छोड़ें और जल, आग या अर्पण को विद्युत उपकरणों के पास न रखें।",
+        "व्रत, आहार, औषधि, मंत्र या फल की कोई सार्वभौम सलाह नहीं दी जाती।",
+        "परिवार, मंदिर या स्थानीय पंचांग की विधि इस सामान्य पथ पर प्राथमिकता रखती है।"
+      ],
+      "short_answer": "वृश्चिक संक्रांति इस दिल्ली/भारत संदर्भ में 16 नवंबर 2026 को है। सटीक पुण्यकाल स्थान के अनुसार लें; छोटा सुरक्षित रूप सूर्य-स्मरण, कृतज्ञता और सामर्थ्य के अनुसार दान या सेवा है।",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "यह दिन सूर्य का निरयन तुला से वृश्चिक राशि में प्रवेश को चिह्नित करता है। संक्रांति सौर मास-परिवर्तन की पहचान है; इससे एक ही राष्ट्रीय कथा या एक ही घरेलू विधि सिद्ध नहीं होती।"
+      },
+      "title": "वृश्चिक संक्रांति",
+      "typical_practices": [
+        {
+          "description": "सामान्य संक्रांति संदर्भ दान को उपयुक्त मानता है। सूर्य-स्मरण, स्नान, अर्घ्य, भोजन और मंदिर-भागीदारी परिवार तथा क्षेत्र के अनुसार बदलते हैं और इस पथ में अनिवार्य नहीं हैं।",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "vrishchika-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "यह पथ केवल सामान्य व्यक्तिगत स्मरण देता है। केवल सौर प्रवेश के आधार पर किसी परिवार, मंदिर या क्षेत्र की वृश्चिक संक्रांति विधि नहीं मानी जाती।",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-sankranti-editorial-boundary"
+          ],
+          "variant_id": "vrishchika-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "dhanu-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "dhanu-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "Dhanu Sankranti is named for the Sun's sidereal transition from Vrishchika to Dhanu. This is a calendrical identity; different regions may attach distinct deity, river, temple, donation and festival traditions to it.",
+          "title": "A solar transition, not one universal origin story",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "Five-minute Sankranti remembrance",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-dhanu-sankranti-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Use 16 December 2026 for this Delhi/India 2026 reference; ask a location-specific Panchang for punya kala or a local procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The civil date is resolved, but one universal ritual window is not."
+            },
+            {
+              "instruction": "Remember the Sun and the transition of time with a familiar prayer or a quiet moment of gratitude.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This is an accessible remembrance without inventing a mantra."
+            },
+            {
+              "instruction": "Offer food, clothing, money, time or useful help within your means.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The general Sankranti reference identifies charity as a central activity."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "Simple household Sankranti sequence",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-dhanu-sankranti-en-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm 16 December 2026 and the relevant time with the family tradition and a Panchang for your location.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Timing and practice can change with place and authority."
+            },
+            {
+              "instruction": "After an ordinary bath or wash, prepare a quiet place; do not enter unsafe water, use unsafe flame or join an unmanaged crowd.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This preserves cleanliness in a safe household form."
+            },
+            {
+              "instruction": "Say a family-known Surya prayer; keep water or a lamp only if that is familiar and safe, otherwise remember without materials.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "The lane does not invent formal mantra or arghya rules."
+            },
+            {
+              "instruction": "Make a donation or perform one useful act of service, then follow the family's familiar close.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "This joins the day's charitable emphasis to practical action."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "Family practice takes priority.",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "Close with gratitude and one responsible action."
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Family-, teacher- or temple-directed fuller form",
+          "materials": [
+            {
+              "item": "A quiet, clean place",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pause where you are without arranging an altar"
+              ]
+            },
+            {
+              "item": "A small vessel of clean water or a lamp, only when safe and already familiar",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "Pray without materials"
+              ]
+            },
+            {
+              "item": "A donation or act of service within your means",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "Offer practical help or time instead of money or goods"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-dhanu-sankranti-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "First identify the family, temple, teacher or regional Panchang that has authority for the fuller procedure.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "A solar ingress alone does not establish a complete ritual."
+            },
+            {
+              "instruction": "Ask that authority for the actual punya kala, sankalpa, mantra, arghya, offering, donation and closing sequence.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Detailed practice remains with a responsible living tradition."
+            },
+            {
+              "instruction": "Use only materials and steps you understand and can perform safely; omit the rest.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "Participation remains possible without guessing missing ritual instructions."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not enter unsafe or polluted water.",
+        "Do not leave a lamp unattended or place water, flame or offerings near electrical equipment.",
+        "No universal fasting, food, medical, mantra or promised-outcome advice is supplied.",
+        "Family, temple and location-specific Panchang practice overrides this general lane."
+      ],
+      "short_answer": "Dhanu Sankranti falls on 16 December 2026 in this Delhi/India reference. Obtain the exact punya kala for your location; a safe short form is Surya remembrance, gratitude, and charity or service within your means.",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "The day marks the Sun's sidereal transition from Vrishchika to Dhanu. Sankranti identifies a solar-month transition; it does not establish one national origin story or one universal household procedure."
+      },
+      "title": "Dhanu Sankranti",
+      "typical_practices": [
+        {
+          "description": "The general Sankranti reference treats charity as appropriate. Surya remembrance, bathing, arghya, foods and temple participation vary by family and region and are not made mandatory in this lane.",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "dhanu-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Dhanu-named month, temple and regional observances are not automatically the same as this ingress-day personal lane; use the user's family or local authority for any fuller form.",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-sankranti-editorial-boundary"
+          ],
+          "variant_id": "dhanu-sankranti-regional-boundary"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "dhanu-sankranti"
+      ],
+      "origin_narratives": [
+        {
+          "narrative_id": "dhanu-sankranti-solar-transition",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026"
+          ],
+          "summary": "धनु संक्रांति का नाम सूर्य का निरयन वृश्चिक से धनु राशि में प्रवेश से आता है। यह कैलेंडर-आधारित पहचान है; अलग क्षेत्रों में इसके साथ अलग देवता, नदी, मंदिर, दान और उत्सव-परंपराएँ जुड़ सकती हैं।",
+          "title": "एक सौर संक्रमण, कोई एक सार्वभौम उत्पत्ति-कथा नहीं",
+          "tradition_scope": "General calendrical explanation",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible personal remembrance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 5,
+          "form": "accessible_short",
+          "label": "पाँच मिनट का संक्रांति स्मरण",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-dhanu-sankranti-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "इस दिल्ली/भारत 2026 संदर्भ में 16 दिसंबर 2026 को इस संक्रांति का दिन मानें; पुण्यकाल या स्थानीय विधि के लिए अपने स्थान का पंचांग पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "तिथि तय है, पर एक सार्वभौम पुण्यकाल तय नहीं है।"
+            },
+            {
+              "instruction": "सूर्य और समय के परिवर्तन को याद करते हुए परिचित प्रार्थना कहें या कुछ क्षण कृतज्ञता में मौन रहें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "यह बिना गढ़े हुए मंत्र के एक सुलभ स्मरण है।"
+            },
+            {
+              "instruction": "अपनी सामर्थ्य के अनुसार भोजन, वस्त्र, धन, समय या उपयोगी सहायता दें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सामान्य संक्रांति संदर्भ में दान को प्रमुख आचरण बताया गया है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 15,
+          "form": "traditional_household",
+          "label": "घर का सरल संक्रांति क्रम",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-dhanu-sankranti-hi-standard-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार की परंपरा और स्थानीय पंचांग से 16 दिसंबर 2026 तथा उपयुक्त समय की पुष्टि करें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "क्षेत्र और स्थान के अनुसार समय तथा विधि बदल सकती है।"
+            },
+            {
+              "instruction": "स्नान या सामान्य स्वच्छता के बाद शांत स्थान तैयार करें; असुरक्षित नदी, आग या भीड़ में न जाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "स्वच्छता को सुरक्षित घरेलू रूप में रखा गया है।"
+            },
+            {
+              "instruction": "परिवार-परिचित सूर्य प्रार्थना करें; सुरक्षित और परिचित हो तो जल या दीप रखें, अन्यथा बिना सामग्री के स्मरण करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "औपचारिक मंत्र या अर्घ्य-विधि का आविष्कार नहीं किया जाता।"
+            },
+            {
+              "instruction": "दान या सेवा करके परिवार के परिचित समापन का पालन करें।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "कर्म और कृतज्ञता को दिन के अर्थ से जोड़ता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Family- or living-authority-led observance",
+          "closing": {
+            "scope_note": "परिवार की विधि को प्राथमिकता दें।",
+            "source_ids": [
+              "devam-sankranti-editorial-boundary"
+            ],
+            "text": "अपनी प्रार्थना को कृतज्ञता और एक जिम्मेदार कार्य के साथ समाप्त करें।"
+          },
+          "estimated_minutes": 30,
+          "form": "fuller_family_or_teacher_led",
+          "label": "परिवार, गुरु या मंदिर-निर्देशित पूर्ण रूप",
+          "materials": [
+            {
+              "item": "एक शांत, साफ स्थान",
+              "required": true,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "जहाँ हैं वहीं कुछ क्षण शांत बैठें"
+              ]
+            },
+            {
+              "item": "सुरक्षित हो तो जल का छोटा पात्र या दीप",
+              "required": false,
+              "source_ids": [
+                "devam-sankranti-editorial-boundary"
+              ],
+              "substitutions": [
+                "बिना किसी सामग्री के प्रार्थना करें"
+              ]
+            },
+            {
+              "item": "अपनी सामर्थ्य के अनुसार दान या सेवा",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-sankranti-calendar-delhi-2026"
+              ],
+              "substitutions": [
+                "किसी व्यक्ति की व्यावहारिक सहायता या समय दें"
+              ]
+            }
+          ],
+          "procedure_id": "sankranti-september-december-general-content-v1-dhanu-sankranti-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-sankranti-sep-dec-date-fixture",
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "पहले यह तय करें कि कौन-सा परिवार, मंदिर, गुरु या क्षेत्रीय पंचांग इस विधि का अधिकारी है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "सौर प्रवेश अकेले पूर्ण अनुष्ठान सिद्ध नहीं करता।"
+            },
+            {
+              "instruction": "उसी अधिकारी से पुण्यकाल, संकल्प, मंत्र, अर्घ्य, नैवेद्य, दान और समापन की वास्तविक सूची लें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "विस्तृत विधि को जिम्मेदार जीवित परंपरा के पास रखा जाता है।"
+            },
+            {
+              "instruction": "केवल वही सामग्री और क्रम अपनाएँ जिन्हें आप समझते हैं और सुरक्षित रूप से कर सकते हैं; शेष को छोड़ें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-sankranti-sep-dec-date-fixture",
+                "drikpanchang-sankranti-calendar-delhi-2026",
+                "devam-sankranti-editorial-boundary"
+              ],
+              "why": "अनुमानित विधि से बचते हुए सहभागिता संभव रहती है।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "असुरक्षित या प्रदूषित जल में प्रवेश न करें।",
+        "दीप को बिना देखरेख न छोड़ें और जल, आग या अर्पण को विद्युत उपकरणों के पास न रखें।",
+        "व्रत, आहार, औषधि, मंत्र या फल की कोई सार्वभौम सलाह नहीं दी जाती।",
+        "परिवार, मंदिर या स्थानीय पंचांग की विधि इस सामान्य पथ पर प्राथमिकता रखती है।"
+      ],
+      "short_answer": "धनु संक्रांति इस दिल्ली/भारत संदर्भ में 16 दिसंबर 2026 को है। सटीक पुण्यकाल स्थान के अनुसार लें; छोटा सुरक्षित रूप सूर्य-स्मरण, कृतज्ञता और सामर्थ्य के अनुसार दान या सेवा है।",
+      "significance": {
+        "scope_note": "Bounded general India personal lane; regional forms remain separate.",
+        "source_ids": [
+          "devam-sankranti-sep-dec-date-fixture",
+          "drikpanchang-sankranti-calendar-delhi-2026"
+        ],
+        "text": "यह दिन सूर्य का निरयन वृश्चिक से धनु राशि में प्रवेश को चिह्नित करता है। संक्रांति सौर मास-परिवर्तन की पहचान है; इससे एक ही राष्ट्रीय कथा या एक ही घरेलू विधि सिद्ध नहीं होती।"
+      },
+      "title": "धनु संक्रांति",
+      "typical_practices": [
+        {
+          "description": "सामान्य संक्रांति संदर्भ दान को उपयुक्त मानता है। सूर्य-स्मरण, स्नान, अर्घ्य, भोजन और मंदिर-भागीदारी परिवार तथा क्षेत्र के अनुसार बदलते हैं और इस पथ में अनिवार्य नहीं हैं।",
+          "instructional": false,
+          "population_scope": "General personal observance where Sankranti is already recognised",
+          "practice_id": "dhanu-sankranti-charity-and-remembrance",
+          "source_ids": [
+            "drikpanchang-sankranti-calendar-delhi-2026",
+            "devam-sankranti-editorial-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "धनु नाम वाले मासिक, मंदिर और क्षेत्रीय उत्सव अपने-आप इस प्रवेश-दिवस के व्यक्तिगत पथ के समान नहीं हैं; विस्तृत विधि के लिए परिवार या स्थानीय अधिकारी का अनुसरण करें।",
+          "scope": "Regional and family variation",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-sankranti-editorial-boundary"
+          ],
+          "variant_id": "dhanu-sankranti-regional-boundary"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "kanya-sankranti",
+    "tula-sankranti",
+    "vrishchika-sankranti",
+    "dhanu-sankranti"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "61f14143db751cafc99375871d2304994d7661c433f37bb8e847ae8cef01ca0f",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/sankranti-india-september-december-2026-v1.json",
+        "pointers": [
+          "/ingresses/0",
+          "/ingresses/1",
+          "/ingresses/2",
+          "/ingresses/3"
+        ]
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-sankranti-sep-dec-date-fixture",
+      "source_role": "Deterministic Delhi/India civil-date and sidereal ingress identity; no ritual timing or procedure",
+      "title": "Devam September-December 2026 Sankranti date fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/sankranti/sankranti.html?geoname-id=1273294&year=2026",
+        "observed_at": "2026-08-06T21:09:37.697Z",
+        "response_bytes": 90449,
+        "response_sha256": "084c211dc85fbe2a5f0333ed6c07d5ba54b5e25b3fd5ace5aeb168e0e306c97e",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-sankranti-calendar-delhi-2026",
+      "source_role": "Current practitioner date/ingress comparison and general charity context; not universal ritual authority",
+      "title": "2026 Sankranti Calendar for New Delhi",
+      "url": "https://www.drikpanchang.com/sankranti/sankranti.html?geoname-id=1273294&year=2026"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://utsav.gov.in/view-event/tula-sankramana-kaveri-sankramana",
+        "observed_at": "2026-08-07",
+        "response_bytes": 33405,
+        "response_sha256": "dbf800f0b4ec66770292cdd51299edfd41bd6052d71255bca7758f8076bc57d7",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Utsav, Ministry of Tourism, Government of India",
+      "rights_lane": "citation_only",
+      "source_id": "utsav-tula-kaveri-sankramana",
+      "source_role": "Official Karnataka regional context for Talakaveri and Theerthodbhava; not the generic household procedure",
+      "title": "Tula Sankramana / Kaveri Sankramana",
+      "url": "https://utsav.gov.in/view-event/tula-sankramana-kaveri-sankramana"
+    },
+    {
+      "artifact_sha256": "1d57c055654685481e90f4e8dc190385adfa06486313f8a844bfcfd6840b4b39",
+      "citation_coordinates": {
+        "path": "knowledge_packs/rituals/vishwakarma-puja-bengal-workplace-content-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-vishwakarma-bengal-lane",
+      "source_role": "Separate, source-grounded Bengal Kanya Sankranti association and actionability lane",
+      "title": "Bengal Vishwakarma Puja workplace content lane",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "product_cleared",
+      "source_id": "devam-sankranti-editorial-boundary",
+      "source_role": "Editorial constraint preventing unsafe bathing/flame, invented liturgy, universal timing and regional conflation",
+      "title": "Devam Sankranti safety and authority boundary",
+      "url": null
+    }
+  ]
+}

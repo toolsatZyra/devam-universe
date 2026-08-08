@@ -1,0 +1,126 @@
+-- Public exact-passage retrieval for the Devam product.
+--
+-- This is intentionally narrower than internal evidence retrieval: exact source
+-- text may leave the server only when the passage and its complete source
+-- hierarchy are published and product-compatible. Citation-only text is never
+-- returned by this function.
+
+grant select (text_status)
+  on public.passages to devam_public_search_executor;
+
+create or replace function public.search_public_passages(
+  search_query text,
+  language_filter text default null,
+  result_limit integer default 12
+)
+returns jsonb
+language sql
+stable
+security definer
+set search_path = ''
+as $$
+  with matched as (
+    select
+      p.id,
+      p.source_object_id,
+      p.source_ordinal,
+      p.locator,
+      p.exact_text,
+      p.text_status,
+      p.language_code,
+      p.span_sha256,
+      p.rights_lane,
+      p.publication_state,
+      s.sha256 as source_sha256,
+      w.slug as work_slug,
+      w.canonical_title as work_title,
+      ed.edition_title,
+      ts_rank_cd(p.search_document, websearch_to_tsquery('simple', trim(search_query))) as rank
+    from public.passages p
+    join public.source_objects s on s.id = p.source_object_id
+    join public.editions ed on ed.id = s.edition_id
+    join public.expressions ex on ex.id = ed.expression_id
+    join public.works w on w.id = ex.work_id
+    where length(trim(search_query)) between 2 and 512
+      and p.exact_text is not null
+      and p.publication_state = 'published'
+      and p.rights_lane in ('product_allowed', 'derivative_allowed')
+      and s.rights_lane in ('product_allowed', 'derivative_allowed')
+      and ed.publication_state = 'published'
+      and ed.rights_lane in ('product_allowed', 'derivative_allowed')
+      and ex.publication_state = 'published'
+      and ex.rights_lane in ('product_allowed', 'derivative_allowed')
+      and w.publication_state = 'published'
+      and w.rights_lane in ('product_allowed', 'derivative_allowed')
+      and (language_filter is null or p.language_code = lower(trim(language_filter)))
+      and p.search_document @@ websearch_to_tsquery('simple', trim(search_query))
+    order by rank desc, w.slug, ed.edition_title, p.source_ordinal
+    limit greatest(1, least(coalesce(result_limit, 12), 20))
+  )
+  select coalesce(
+    jsonb_agg(
+      jsonb_build_object(
+        'id', m.id,
+        'sourceObjectId', m.source_object_id,
+        'sourceOrdinal', m.source_ordinal,
+        'locator', m.locator,
+        'text', m.exact_text,
+        'textStatus', m.text_status,
+        'languageCode', m.language_code,
+        'spanSha256', m.span_sha256,
+        'sourceSha256', m.source_sha256,
+        'workSlug', m.work_slug,
+        'workTitle', m.work_title,
+        'editionTitle', m.edition_title,
+        'rightsLane', m.rights_lane,
+        'publicationState', m.publication_state
+      )
+      order by m.rank desc, m.work_slug, m.edition_title, m.source_ordinal
+    ),
+    '[]'::jsonb
+  )
+  from matched m;
+$$;
+
+grant devam_public_search_executor to postgres;
+grant create on schema public to devam_public_search_executor;
+alter function public.search_public_passages(text, text, integer)
+  owner to devam_public_search_executor;
+revoke create on schema public from devam_public_search_executor;
+revoke all on function public.search_public_passages(text, text, integer) from public;
+revoke execute on function public.search_public_passages(text, text, integer)
+  from authenticated;
+grant execute on function public.search_public_passages(text, text, integer)
+  to anon, service_role;
+
+comment on function public.search_public_passages(text, text, integer) is
+  'Static exact-text projection over published product-compatible passages and their complete source hierarchy. Citation-only and review material are excluded. Owned by a no-login, no-bypass-RLS role.';
+
+revoke devam_public_search_executor from postgres;
+
+do $$
+declare
+  function_owner text;
+begin
+  select pg_get_userbyid(p.proowner)
+    into function_owner
+  from pg_proc p
+  join pg_namespace n on n.oid = p.pronamespace
+  where n.nspname = 'public'
+    and p.proname = 'search_public_passages'
+    and pg_get_function_identity_arguments(p.oid) = 'search_query text, language_filter text, result_limit integer';
+
+  if function_owner is distinct from 'devam_public_search_executor' then
+    raise exception 'search_public_passages has unsafe owner %', function_owner;
+  end if;
+  if has_function_privilege('authenticated', 'public.search_public_passages(text,text,integer)', 'EXECUTE') then
+    raise exception 'authenticated must not execute search_public_passages directly';
+  end if;
+  if not has_function_privilege('anon', 'public.search_public_passages(text,text,integer)', 'EXECUTE') then
+    raise exception 'anon must execute search_public_passages for the server-side public product route';
+  end if;
+  if not has_function_privilege('service_role', 'public.search_public_passages(text,text,integer)', 'EXECUTE') then
+    raise exception 'service_role must execute search_public_passages';
+  end if;
+end
+$$;

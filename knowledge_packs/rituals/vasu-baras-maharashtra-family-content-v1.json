@@ -1,0 +1,640 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Does your family call the day Vasu Baras or Govatsa Dwadashi?",
+      "Do you observe at home, with your own cattle, at a known farm or gaushala, or not around animals?",
+      "Who owns or cares for any animal involved, and what interaction do they permit?",
+      "Do you need a no-contact, flame-free, food-free, spend-free, child-safe, or remote form?"
+    ],
+    "region_codes": [
+      "west-india"
+    ],
+    "settings": [
+      "household",
+      "individual",
+      "family_led",
+      "community"
+    ],
+    "tradition_codes": [
+      "smarta-west-india"
+    ]
+  },
+  "calendar": {
+    "decision_rule_id": "devam-kartika-krishna-dwadashi-pradosha-mumbai-v1",
+    "freshness_note": "The bounded Mumbai/Maharashtra 2026 lane resolves Thursday, 5 November. Other Govatsa Dwadashi and regional cattle observances remain separate.",
+    "live_schedule_required": false,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-vasu-baras-date-fixture"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "vasu-baras-maharashtra-family-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "govatsa-dwadashi-nandini-account",
+          "source_ids": [
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "summary": "The current Drik Panchang vrat-katha presents an extended Krishna–Yudhishthira account involving a cow with her calf and the worship of Nandini. Devam keeps it as one source-labelled circulating narrative, not verified history or a belief mandatory for every Maharashtra family.",
+          "title": "The Govatsa Dwadashi account of Nandini and the cow with her calf",
+          "tradition_scope": "Current practitioner vrat-katha retelling",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Short no-contact remembrance for a Maharashtra family",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-vasu-baras-animal-welfare-and-scope-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "No-contact gratitude for care and nourishment",
+          "materials": [
+            {
+              "item": "A quiet place, or an optional family image of cattle or farming",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-govatsa-dwadashi-katha",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "substitutions": [
+                "Use no object and keep the reflection spoken or silent"
+              ]
+            }
+          ],
+          "procedure_id": "vasu-baras-maharashtra-family-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-vasu-baras-date-fixture",
+            "maharashtra-tourism-diwali-vasubaras",
+            "devam-vasu-baras-animal-welfare-and-scope-boundary",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "Use the resolved Maharashtra Vasu Baras date and keep other Dwadashi, Wagh Baras, and regional cattle traditions outside this sequence.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vasu-baras-date-fixture",
+                "maharashtra-tourism-diwali-vasubaras",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "A shared name or tithi does not make every regional observance identical."
+            },
+            {
+              "instruction": "Offer a short family-known prayer, thanks, or quiet reflection for cows, calves, farmers, animal caregivers, nourishment, and responsible care.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-vasubaras",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "The Maharashtra sources identify Vasu Baras with Diwali's opening and gratitude toward cattle and agricultural life."
+            },
+            {
+              "instruction": "Name one practical act of care—such as reducing food waste, thanking a farmer or caregiver, or learning the rules of a trusted animal-welfare organisation—without buying, feeding, touching, or approaching an animal for the ritual.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "The reflection becomes actionable while the no-contact default protects both people and animals."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Family-led familiar Vasu Baras remembrance; not animal-handling instruction",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-vasu-baras-animal-welfare-and-scope-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 25,
+          "form": "traditional_household",
+          "label": "A family Vasu Baras reflection",
+          "materials": [
+            {
+              "item": "Only a family-recognised story, prayer, image, and safe light",
+              "required": true,
+              "source_ids": [
+                "drikpanchang-govatsa-dwadashi-katha",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "substitutions": [
+                "Use the minimum form; a flower, flame-free light, or no object is sufficient"
+              ]
+            }
+          ],
+          "procedure_id": "vasu-baras-maharashtra-family-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-vasu-baras-animal-welfare-and-scope-boundary",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "Ask the family elder or usual lead how the household understands Vasu Baras and whether it has an established prayer or story.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "The official field report describes a bounded agrarian community context, not one universal household procedure."
+            },
+            {
+              "instruction": "Keep the family's familiar remembrance and discuss how cattle, farmers, soil care, food, and livelihoods are connected; use a supervised light away from animals only if desired.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "This preserves the gratitude theme without copying livestock-handling details into an urban or unfamiliar setting."
+            },
+            {
+              "instruction": "Choose one non-transactional act of gratitude or responsible consumption, and close without claiming that a diet, fast, purchase, or ritual guarantees prosperity.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "Care and gratitude do not require spending, food restriction, or a promised result."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established event led by the animal owner or trained keeper only",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-vasu-baras-animal-welfare-and-scope-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Established keeper-led family or community observance",
+          "materials": [
+            {
+              "item": "Only materials approved by the animal owner, trained keeper, and recognised family or community guide",
+              "required": true,
+              "source_ids": [
+                "drikpanchang-govatsa-dwadashi-katha",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "substitutions": [
+                "Observe from a safe distance or use the standard no-contact form"
+              ]
+            }
+          ],
+          "procedure_id": "vasu-baras-maharashtra-family-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-vasu-baras-animal-welfare-and-scope-boundary",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "If joining an established farm, gaushala, temple, or household event, let the owner or trained keeper control access, distance, touch, food, animal movement, and the decision to stop.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "Live-animal welfare and keeper authority take priority over reproducing a ritual checklist."
+            },
+            {
+              "instruction": "Do not independently feed, wash, restrain, paint, decorate, light a flame near, photograph closely, buy, sell, or gift cattle; participate only in the safe family or community role assigned to you.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "The field report records local practices but does not make an app user competent or authorised to handle an animal."
+            },
+            {
+              "instruction": "Complete the recognised prayer or gratitude, leave the animal undisturbed, close any supervised light, clean the human gathering area, and follow the keeper's exit instructions.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "A safe close respects the living participant rather than treating the animal as a ritual prop."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not use app guidance to touch, feed, wash, restrain, decorate, or bring flame near a live animal.",
+        "No fast, special diet, purchase, donation, or promised outcome is required.",
+        "Family practice and the responsible animal keeper override generic guidance."
+      ],
+      "short_answer": "Mark Maharashtra's Vasu Baras as a prelude to Diwali by remembering cows, calves, agricultural livelihoods, nourishment, and responsible care. The default form requires no live animal. Any visit, touch, feeding, washing, decoration, or ritual around cattle belongs to the animal's owner or trained keeper and the family's established practice.",
+      "significance": {
+        "scope_note": "This is one Maharashtra household lane, not a universal rule for every Govatsa, Wagh Baras, or regional cattle tradition.",
+        "source_ids": [
+          "maharashtra-tourism-diwali-vasubaras",
+          "drikpanchang-govatsa-dwadashi-katha"
+        ],
+        "text": "In this bounded Maharashtra family lane, Vasu Baras opens the pre-Diwali sequence and offers a moment of gratitude for cows and calves, nourishment, agrarian life, and responsible care. Contact with a live animal is not required."
+      },
+      "title": "Vasu Baras: gratitude without unsafe animal contact",
+      "typical_practices": [
+        {
+          "description": "Families may remember cows, calves, nourishment, and agrarian life; an urban or animal-free home can use an image, silence, or gratitude. Any live-animal activity remains under the animal owner's or trained keeper's authority.",
+          "instructional": false,
+          "population_scope": "Maharashtra families that keep Vasu Baras",
+          "practice_id": "maharashtra-vasubaras-family-remembrance",
+          "source_ids": [
+            "maharashtra-tourism-diwali-vasubaras",
+            "devam-vasu-baras-animal-welfare-and-scope-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "A no-contact household remembrance and a keeper-led event at a known farm or gaushala are different participation roles.",
+          "scope": "Setting and animal contact",
+          "separate_lane_required": false,
+          "source_ids": [
+            "devam-vasu-baras-animal-welfare-and-scope-boundary"
+          ],
+          "variant_id": "home-or-keeper-led-setting"
+        },
+        {
+          "difference": "Gujarat Wagh Baras, Bachha Baras, Guru Dwadashi, Nandini Vrat, and other forms are not completed by this Maharashtra lane.",
+          "scope": "Regional identity",
+          "separate_lane_required": true,
+          "source_ids": [
+            "maharashtra-tourism-diwali-vasubaras",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "variant_id": "other-cattle-dwadashi-traditions"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "govatsa-dwadashi-nandini-account",
+          "source_ids": [
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "summary": "ड्रिक पंचांग की वर्तमान व्रत-कथा कृष्ण और युधिष्ठिर के संवाद के रूप में सवत्सा गौ तथा नन्दिनी-पूजन का विस्तृत आख्यान देती है। Devam इसे एक स्रोत-चिह्नित प्रचलित कथा के रूप में रखता है, इतिहास या प्रत्येक महाराष्ट्र परिवार की अनिवार्य मान्यता के रूप में नहीं।",
+          "title": "नन्दिनी और सवत्सा गौ का गोवत्स-द्वादशी आख्यान",
+          "tradition_scope": "वर्तमान व्रत-कथा पुनर्कथन",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "महाराष्ट्र परिवार का बिना पशु-सम्पर्क वाला संक्षिप्त स्मरण",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-vasu-baras-animal-welfare-and-scope-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "देखभाल और पोषण के लिए बिना सम्पर्क कृतज्ञता",
+          "materials": [
+            {
+              "item": "शान्त स्थान या पशु और खेती का वैकल्पिक पारिवारिक चित्र",
+              "required": false,
+              "source_ids": [
+                "drikpanchang-govatsa-dwadashi-katha",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "substitutions": [
+                "बिना वस्तु के बोलकर या मौन मनन करें"
+              ]
+            }
+          ],
+          "procedure_id": "vasu-baras-maharashtra-family-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "devam-vasu-baras-date-fixture",
+            "maharashtra-tourism-diwali-vasubaras",
+            "devam-vasu-baras-animal-welfare-and-scope-boundary",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "महाराष्ट्र के लिए निर्धारित वसुबारस तिथि लें और अन्य द्वादशी, वाघ बारस तथा क्षेत्रीय पशु-परम्पराओं को इस क्रम में न मिलाएँ।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vasu-baras-date-fixture",
+                "maharashtra-tourism-diwali-vasubaras",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "साझा नाम या तिथि से हर क्षेत्रीय पालन एक नहीं हो जाता।"
+            },
+            {
+              "instruction": "गायों, बछड़ों, किसानों, पशु-देखभालकर्ताओं, पोषण और उत्तरदायी देखभाल के लिए छोटी परिचित प्रार्थना, धन्यवाद या मौन रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "maharashtra-tourism-diwali-vasubaras",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "महाराष्ट्र स्रोत वसुबारस को दीपावली के आरम्भ और पशु-कृषि जीवन के प्रति कृतज्ञता से जोड़ते हैं।"
+            },
+            {
+              "instruction": "देखभाल का एक व्यावहारिक काम चुनें—जैसे भोजन की बर्बादी घटाना, किसान या देखभालकर्ता को धन्यवाद देना, या विश्वसनीय पशु-कल्याण संस्था के नियम जानना—पर अनुष्ठान के लिए पशु को खरीदें, खिलाएँ, छुएँ या उसके पास न जाएँ।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "कृतज्ञता उपयोगी बनती है और बिना सम्पर्क का रूप मनुष्य तथा पशु दोनों को सुरक्षित रखता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "परिवार द्वारा परिचित वसुबारस स्मरण; पशु-संभाल का निर्देश नहीं",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-vasu-baras-animal-welfare-and-scope-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 25,
+          "form": "traditional_household",
+          "label": "पारिवारिक वसुबारस मनन",
+          "materials": [
+            {
+              "item": "केवल परिवार की परिचित कथा, प्रार्थना, चित्र और सुरक्षित प्रकाश",
+              "required": true,
+              "source_ids": [
+                "drikpanchang-govatsa-dwadashi-katha",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "substitutions": [
+                "सरल रूप लें; फूल, बिना लौ का प्रकाश या कोई वस्तु न होना पर्याप्त है"
+              ]
+            }
+          ],
+          "procedure_id": "vasu-baras-maharashtra-family-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-vasu-baras-animal-welfare-and-scope-boundary",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "परिवार के बुज़ुर्ग या सामान्य नेतृत्वकर्ता से पूछें कि घर वसुबारस को कैसे समझता है और क्या कोई स्थापित प्रार्थना या कथा है।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "आधिकारिक क्षेत्र-अध्ययन सीमित कृषि-समुदाय का सन्दर्भ देता है, एक सार्वभौमिक गृह-विधि नहीं।"
+            },
+            {
+              "instruction": "परिचित स्मरण रखें और चर्चा करें कि पशु, किसान, मिट्टी की देखभाल, भोजन और जीविका कैसे जुड़े हैं; इच्छा हो तो पशुओं से दूर निरन्तर देखरेख वाला प्रकाश रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "कृतज्ञता बचती है, पर स्थानीय पशु-सम्भाल को अपरिचित या शहरी स्थान में नहीं दोहराया जाता।"
+            },
+            {
+              "instruction": "बिना लेन-देन का कृतज्ञता या उत्तरदायी उपभोग का एक काम चुनें और आहार, व्रत, खरीद या समृद्धि की गारंटी जोड़े बिना समापन करें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "देखभाल और कृतज्ञता के लिए खर्च, भोजन-प्रतिबन्ध या निश्चित फल आवश्यक नहीं।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "केवल पशु-मालिक या प्रशिक्षित देखभालकर्ता के नेतृत्व में स्थापित आयोजन",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-vasu-baras-animal-welfare-and-scope-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "स्थापित देखभालकर्ता-नेतृत्व वाला पारिवारिक या सामुदायिक पालन",
+          "materials": [
+            {
+              "item": "केवल पशु-मालिक, प्रशिक्षित देखभालकर्ता और मान्य परिवार या समुदाय मार्गदर्शक द्वारा स्वीकृत सामग्री",
+              "required": true,
+              "source_ids": [
+                "drikpanchang-govatsa-dwadashi-katha",
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "substitutions": [
+                "सुरक्षित दूरी से देखें या बिना सम्पर्क का मानक रूप लें"
+              ]
+            }
+          ],
+          "procedure_id": "vasu-baras-maharashtra-family-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "devam-vasu-baras-animal-welfare-and-scope-boundary",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "steps": [
+            {
+              "instruction": "स्थापित खेत, गोशाला, मंदिर या गृह कार्यक्रम में पशु-मालिक या प्रशिक्षित देखभालकर्ता को प्रवेश, दूरी, स्पर्श, भोजन, पशु की चाल और रुकने का निर्णय लेने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "जीवित पशु का कल्याण और देखभालकर्ता का अधिकार अनुष्ठान-सूची से पहले हैं।"
+            },
+            {
+              "instruction": "स्वयं से पशु को न खिलाएँ, न नहलाएँ, न बाँधें, न रंगें, न सजाएँ, उसके पास लौ न जलाएँ, निकट से चित्र न लें और न खरीदें, बेचें या उपहार दें; केवल दी गई सुरक्षित भूमिका निभाएँ।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "क्षेत्र-अध्ययन स्थानीय रीति दर्ज करता है, ऐप उपयोगकर्ता को पशु-सम्भाल का अधिकार या कौशल नहीं देता।"
+            },
+            {
+              "instruction": "मान्य प्रार्थना या धन्यवाद पूरा करें, पशु को शान्त छोड़ें, देखरेख वाले प्रकाश का समापन करें, मानव-समागम क्षेत्र साफ करें और देखभालकर्ता के निकास-निर्देश मानें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-vasu-baras-animal-welfare-and-scope-boundary"
+              ],
+              "why": "सुरक्षित समापन जीवित सहभागी का सम्मान करता है, उसे अनुष्ठान की वस्तु नहीं बनाता।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "जीवित पशु को ऐप के निर्देश से न छुएँ, खिलाएँ, धोएँ, बाँधें, सजाएँ या उसके पास लौ न ले जाएँ।",
+        "उपवास, विशेष आहार, खरीद, दान या फल-गारंटी आवश्यक नहीं है।",
+        "परिवार की परम्परा और पशु के जिम्मेदार देखभालकर्ता का निर्णय सामान्य मार्गदर्शन से ऊपर है।"
+      ],
+      "short_answer": "महाराष्ट्र की वसुबारस को दीपावली की पूर्वपीठिका के रूप में गायों, बछड़ों, कृषि-जीविका, पोषण और उत्तरदायी देखभाल के स्मरण से मानें। सरल रूप में जीवित पशु की आवश्यकता नहीं है। पशु के पास जाना, छूना, खिलाना, नहलाना, सजाना या उसके निकट पूजा करना केवल मालिक या प्रशिक्षित देखभालकर्ता और स्थापित पारिवारिक रीति के अधीन है।",
+      "significance": {
+        "scope_note": "यह महाराष्ट्र की एक गृह-धारा है; सभी गोवत्स, वाघ बारस या क्षेत्रीय परम्पराओं का सार्वभौम विधान नहीं।",
+        "source_ids": [
+          "maharashtra-tourism-diwali-vasubaras",
+          "drikpanchang-govatsa-dwadashi-katha"
+        ],
+        "text": "महाराष्ट्र की इस सीमित पारिवारिक धारा में वसुबारस दीपावली-पूर्व आरम्भ है और गाय-बछड़े, पोषण, कृषि-जीवन तथा उत्तरदायी देखभाल के प्रति कृतज्ञता का अवसर है। जीवित पशु से सम्पर्क इसकी अनिवार्यता नहीं है।"
+      },
+      "title": "वसुबारस: पशु-सुरक्षित कृतज्ञता",
+      "typical_practices": [
+        {
+          "description": "परिवार गाय-बछड़े और उनसे जुड़े पोषण तथा कृषि-जीवन को स्मरण कर सकते हैं; शहर या बिना पशु वाले घर में चित्र, मौन या कृतज्ञता पर्याप्त है। जीवित पशु के पास कोई भी गतिविधि उसके मालिक या प्रशिक्षित देखभालकर्ता के अधिकार में रहती है।",
+          "instructional": false,
+          "population_scope": "वसुबारस मानने वाले महाराष्ट्र परिवार",
+          "practice_id": "maharashtra-vasubaras-family-remembrance",
+          "source_ids": [
+            "maharashtra-tourism-diwali-vasubaras",
+            "devam-vasu-baras-animal-welfare-and-scope-boundary"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "घर का बिना सम्पर्क स्मरण और परिचित खेत/गोशाला का देखभालकर्ता-नेतृत्व वाला आयोजन अलग भूमिकाएँ हैं।",
+          "scope": "स्थान और पशु-सम्पर्क",
+          "separate_lane_required": false,
+          "source_ids": [
+            "devam-vasu-baras-animal-welfare-and-scope-boundary"
+          ],
+          "variant_id": "home-or-keeper-led-setting"
+        },
+        {
+          "difference": "गुजरात की वाघ बारस, बछ बारस, गुरु द्वादशी, नन्दिनी-व्रत और अन्य रूप इस महाराष्ट्र धारा में पूर्ण नहीं माने गए हैं।",
+          "scope": "क्षेत्रीय पहचान",
+          "separate_lane_required": true,
+          "source_ids": [
+            "maharashtra-tourism-diwali-vasubaras",
+            "drikpanchang-govatsa-dwadashi-katha"
+          ],
+          "variant_id": "other-cattle-dwadashi-traditions"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "govatsa-dwadashi"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "901142c4c16503ac46125420b8788fa7585600d60a9c1ec07a18c6e3a15d9ea6",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/vasu-baras-mumbai-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-vasu-baras-date-fixture",
+      "source_role": "Deterministic Mumbai 2026 date selection; not ritual authority",
+      "title": "Devam Vasu Baras Mumbai 2026 date evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://maharashtratourism.gov.in/festivals/diwali/",
+        "observed_at": "2026-08-07",
+        "response_bytes": 627474,
+        "response_sha256": "0628c7135a7c1177aa92392fd416476aa98ce8aa47d41c4cd0db766bb74e9d92",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "rights_lane": "citation_only",
+      "source_id": "maharashtra-tourism-diwali-vasubaras",
+      "source_role": "Current official Maharashtra sequence and regional-diversity context; not a complete ritual manual",
+      "title": "Diwali — pre-celebrations start from Vasubaras",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.drikpanchang.com/vrat-katha/dwadashi/govatsa/govatsa-dwadashi-vrat-katha.html?lang=en",
+        "observed_at": "2026-08-07",
+        "response_bytes": 94770,
+        "response_sha256": "b365d1a72cd7029c2a490bd33526ca50c22c9cfaeef529a085d1f5fb22f6d4da",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Drik Panchang",
+      "rights_lane": "citation_only",
+      "source_id": "drikpanchang-govatsa-dwadashi-katha",
+      "source_role": "Current practitioner-retold Govatsa narrative; source-labelled story evidence only, not universal history or household authority",
+      "title": "Govatsa Dwadashi Vrat Katha",
+      "url": "https://www.drikpanchang.com/vrat-katha/dwadashi/govatsa/govatsa-dwadashi-vrat-katha.html?lang=en"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-vasu-baras-animal-welfare-and-scope-boundary",
+      "source_role": "Editorial safety and authority boundary; not scripture, history, or ritual authority",
+      "title": "Devam Vasu Baras animal-welfare and scope boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-vasu-baras-maharashtra-family-v1"
+  ]
+}

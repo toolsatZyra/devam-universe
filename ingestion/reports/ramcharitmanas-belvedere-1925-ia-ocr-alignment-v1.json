@@ -1,0 +1,30 @@
+{
+  "contract": "DEVAM_OCR_ALIGNMENT_PROFILE_RESULT_V1",
+  "result": "PASS",
+  "profile_path": "ingestion/profiles/ramcharitmanas-belvedere-1925-ia-ocr-alignment-profile-v1.json",
+  "profile_sha256": "2876993199c7e7cf7ddcaadee9c6b9d2ef55a2d5b927d626d3f76352879cfd9a",
+  "checks": {
+    "plan_sha256_matches": true,
+    "fixed_profile_sha256_matches": true,
+    "all_source_fixities_match": true,
+    "all_sources_strict_utf8": true,
+    "coordinate_pages_match_fixed_pdf": true,
+    "coordinate_usemaps_contiguous": true,
+    "coordinate_word_and_line_counts_nonzero": true,
+    "scandata_leaves_match_fixed_pdf": true,
+    "page_number_omission_is_exactly_leaf_zero": true,
+    "page_number_confidence_is_zero": true,
+    "landmark_sample_covers_all_seven_starts_and_closes": true,
+    "ocr_quality_and_product_claims_fail_closed": true
+  },
+  "passed": 12,
+  "total": 12,
+  "mutation_boundary": {
+    "source_payload_copied": false,
+    "ocr_generated": false,
+    "ocr_corrected": false,
+    "passages_published": false,
+    "database_mutated": false,
+    "external_service_mutated": false
+  }
+}

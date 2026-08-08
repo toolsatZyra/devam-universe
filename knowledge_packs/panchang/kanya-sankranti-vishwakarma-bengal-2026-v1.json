@@ -1,0 +1,129 @@
+{
+  "contract": "DEVAM_BOUNDED_KANYA_SANKRANTI_VISHWAKARMA_BENGAL_FIXTURE_V1",
+  "fixture_id": "devam-kanya-sankranti-vishwakarma-bengal-2026-v1",
+  "scope": {
+    "reference_location": "Kolkata, West Bengal, India",
+    "geoname_id": 1275004,
+    "latitude": 22.5726,
+    "longitude": 88.3639,
+    "timezone": "Asia/Kolkata",
+    "civil_date": "2026-09-17",
+    "bengal_tradition_code": "regional-bengal",
+    "location_specific_current_fixture": true,
+    "universal_india_observance_claim": false,
+    "all_regional_variants_resolved": false,
+    "ritual_guidance_included": false
+  },
+  "astronomical_fixture": {
+    "engine_id": "devam-panchang",
+    "engine_version": "astronomy-engine-2.1.19-lahiri-v3",
+    "ayanamsha": "lahiri_mean_linear_v1",
+    "from_solar_rashi": "Simha",
+    "to_solar_rashi": "Kanya",
+    "expected_ingress_utc": "2026-09-17T02:28:00.000Z",
+    "expected_ingress_local": "2026-09-17T07:58:00+05:30",
+    "validation_tolerance_seconds": 600,
+    "astronomical_ingress_is_not_ritual_procedure": true
+  },
+  "source_observations": [
+    {
+      "source_id": "drikpanchang-kolkata-vishwakarma-puja-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/sankranti/vishwakarma-puja-date-time.html?geoname-id=1275004&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_practitioner_kolkata_identity_kanya_sankranti_link_and_date_fixture",
+      "raw_page_is_dynamic": true,
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T19:24:36.994Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/sankranti/vishwakarma-puja-date-time.html?geoname-id=1275004&year=2026",
+          "response_bytes": 72184,
+          "response_sha256": "5ac783c69df3ce8bfa83099b79681ff70dd9e588db79b3c7ee13b864ee333364",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T19:24:37.602Z",
+          "status": 200,
+          "final_url": "https://www.drikpanchang.com/sankranti/vishwakarma-puja-date-time.html?geoname-id=1275004&year=2026",
+          "response_bytes": 72184,
+          "response_sha256": "f49fbd2fc8af2600d54b7a8450e564df61c7265ea8dc4b6e6909344c397b6be8",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "title": "2026 Vishwakarma Puja Date and Time for Kolkata, West Bengal, India",
+        "civil_date": "2026-09-17",
+        "weekday": "Thursday",
+        "sankranti_moment_local": "07:58",
+        "states_last_day_of_bengali_bhadra": true,
+        "states_bhadra_sankranti_or_kanya_sankranti": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "west-bengal-msme-holiday-list-2026",
+      "provider": "Directorate of Micro, Small & Medium Enterprises, Government of West Bengal",
+      "url": "https://msme.wb.gov.in/cmsholiday",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_current_west_bengal_calendar_date_corroboration",
+      "raw_page_is_dynamic": true,
+      "fetches": [
+        {
+          "fetched_at_utc": "2026-08-06T19:24:37.709Z",
+          "status": 200,
+          "final_url": "https://msme.wb.gov.in/cmsholiday",
+          "response_bytes": 72738,
+          "response_sha256": "89119432e0e35ae0ab095aad8d58a2992d7fcc13a8160b6542c317b5a511f499",
+          "strict_utf8": true
+        },
+        {
+          "fetched_at_utc": "2026-08-06T19:24:38.589Z",
+          "status": 200,
+          "final_url": "https://msme.wb.gov.in/cmsholiday",
+          "response_bytes": 72738,
+          "response_sha256": "b5f0a409bfe4bccb97fbc784192b37108ba87572c701e71d089beeb8cf320f19",
+          "strict_utf8": true
+        }
+      ],
+      "semantic_observation": {
+        "owner_literal": "Micro ,Small & Medium Enterprises, Government of West Bengal",
+        "holiday_literal": "Viswakarma Puja",
+        "civil_date_literal": "17-09-2026"
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "resolution_contract": {
+    "kanya_sankranti": {
+      "identity": "solar ingress from Simha to Kanya",
+      "selection": "select the requested local civil date only when the deterministic ingress occurs within that date",
+      "date_resolved": true,
+      "punya_kala_resolved": false,
+      "ritual_guidance_included": false
+    },
+    "vishwakarma_puja_bengal": {
+      "identity": "Bengal regional Vishwakarma Puja on Kanya Sankranti / the last day of Bengali Bhadra",
+      "selection": "for regional-bengal only, attach the observance to the already validated Kanya ingress civil date corroborated by the official West Bengal calendar",
+      "date_resolved": true,
+      "puja_time_resolved": false,
+      "procedure_resolved": false,
+      "ritual_guidance_included": false
+    }
+  },
+  "denials": {
+    "nirnayasindhu_authority_claimed": false,
+    "historical_text_authority_claimed": false,
+    "universal_india_observance_claim": false,
+    "all_regional_names_equivalent": false,
+    "all_regional_dates_resolved": false,
+    "punya_kala_resolved": false,
+    "puja_muhurta_resolved": false,
+    "puja_procedure_resolved": false,
+    "fasting_procedure_resolved": false,
+    "tools_or_machinery_safety_instruction_included": false,
+    "guaranteed_outcome_claimed": false,
+    "source_text_product_cleared": false,
+    "complete_september_december_coverage": false
+  }
+}

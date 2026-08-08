@@ -1,0 +1,91 @@
+{
+  "contract": "DEVAM_WIKISOURCE_WIKITEXT_INGESTION_V1",
+  "pilot_id": "ganapatyatharvashirsha-wikisource-revision-415703-v1",
+  "provider": {
+    "name": "Sanskrit Wikisource",
+    "page_id": 137,
+    "revision_id": 415703,
+    "revision_timestamp": "2026-04-22T15:38:40Z",
+    "revision_sha1": "7d36e9c60973e332cdcf7cd0417144200d4767f0",
+    "page_url": "https://sa.wikisource.org/wiki/%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%A5%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%B6%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%AE%E0%A5%8D",
+    "acquired_at": "2026-08-06T23:45:00+05:30"
+  },
+  "work": {
+    "slug": "ganapatyatharvashirsha",
+    "canonical_title": "Gaṇapatyatharvaśīrṣa",
+    "work_kind": "upanishadic_devotional_text",
+    "tradition_scope": ["ganapatya", "hindu"]
+  },
+  "expression": {
+    "language_code": "sa",
+    "script_code": "Deva",
+    "expression_kind": "community_digital_transcription",
+    "attribution": "Sanskrit Wikisource contributors, revision 415703",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "Sanskrit Wikisource digital transcription, revision 415703",
+    "publisher": "Wikimedia Foundation / Sanskrit Wikisource community",
+    "publication_place": "online",
+    "publication_year": 2026,
+    "edition_statement": "Exact Wikisource revision; underlying print edition and recension unidentified",
+    "identifiers": {
+      "wikisource_page_id": 137,
+      "wikisource_revision_id": 415703
+    }
+  },
+  "rights": {
+    "lane": "derivative_allowed",
+    "license_literal": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution_required": true,
+    "share_alike_required_for_adaptations": true,
+    "underlying_print_edition_rights_inferred": false
+  },
+  "source_objects": [
+    {
+      "role": "canonical_wikitext",
+      "object_path": "objects/sha256/43/43d5f6ca8a2ee7d7a62480a85cdbd526cee04b816db46ac7c3fd8d90757a5178",
+      "bytes": 10478,
+      "sha256": "43d5f6ca8a2ee7d7a62480a85cdbd526cee04b816db46ac7c3fd8d90757a5178",
+      "media_type": "text/x-wiki; charset=utf-8",
+      "source_url": "https://sa.wikisource.org/w/index.php?title=%E0%A4%97%E0%A4%A3%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%AF%E0%A4%A5%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%B6%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%AE%E0%A5%8D&action=raw"
+    },
+    {
+      "role": "revision_metadata",
+      "object_path": "objects/sha256/45/45b20dfff72694583ad1a5a4358f894ac4a5e3d8e57d3b2a0219c7a1e7371541",
+      "bytes": 11778,
+      "sha256": "45b20dfff72694583ad1a5a4358f894ac4a5e3d8e57d3b2a0219c7a1e7371541",
+      "media_type": "application/json; charset=utf-8",
+      "source_url": "https://sa.wikisource.org/w/api.php?action=query&format=json&formatversion=2&prop=revisions%7Cinfo&rvprop=ids%7Ctimestamp%7Csha1%7Ccontentmodel%7Ccontent&rvslots=main&inprop=url&revids=415703"
+    }
+  ],
+  "structure": {
+    "opening_tag": "<poem>\n",
+    "closing_tag": "</poem>",
+    "expected_numbered_units": 14,
+    "expected_passages": 16,
+    "first_numbered_heading": "॥ उपनिषत् ॥",
+    "terminal_formula": "॥ इति श्रीगणपत्यथर्वशीर्षं समाप्तम् ॥",
+    "text_status": "exact_provider_transcription_revision_underlying_edition_unidentified",
+    "completeness_status": "complete_provider_page_revision_not_complete_textual_tradition"
+  },
+  "publication": {
+    "state": "published",
+    "exact_sanskrit_text_product_allowed": true,
+    "source_aligned_hindi_translation_present": false,
+    "source_aligned_english_translation_present": false,
+    "pronunciation_layer_present": false
+  },
+  "completion_denials": {
+    "underlying_print_edition_identified": false,
+    "ganapatyatharvashirsha_recension_complete": false,
+    "all_textual_variants_complete": false,
+    "ganesha_hero_universe_complete": false,
+    "formal_puja_vidhi_established": false,
+    "pronunciation_guidance_established": false,
+    "hindi_translation_established": false,
+    "english_translation_established": false
+  }
+}

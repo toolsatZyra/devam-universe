@@ -1,0 +1,99 @@
+{
+  "contract": "DEVAM_BOUNDED_KRISHNA_JANMASHTAMI_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-krishna-janmashtami-delhi-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "candidate_civil_dates": [
+      "2026-09-03",
+      "2026-09-04"
+    ],
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "vaishnava-iskcon"
+    ],
+    "location_specific": true,
+    "universal_india_claim": false,
+    "smarta_and_iskcon_rules_equivalent_claim": false,
+    "all_vaishnava_traditions_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-janmashtami-decision",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [140, 141, 142, 143, 144, 145, 146, 147, 148, 149],
+      "printed_pages": "123-132",
+      "evidence_role": "historical_janmashtami_jayanti_ashtami_rohini_nishita_and_parana_decision_context",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-janmashtami-smarta-2026",
+      "provider": "Drik Panchang - Smarta Janmashtami lane",
+      "url": "https://www.drikpanchang.com/dashavatara/lord-krishna/krishna-janmashtami-date-time.html?geoname-id=1273294&year=2026",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/dashavatara/lord-krishna/krishna-janmashtami-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 88987,
+      "response_sha256": "9f4e450ca60b167289584cdc200a5d2599572756d48dba4bc49819cfe2119b3c",
+      "strict_utf8": true,
+      "evidence_role": "current_smarta_practitioner_identity_nishita_rule_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-janmashtami-iskcon-2026",
+      "provider": "Drik Panchang - ISKCON Janmashtami lane",
+      "url": "https://www.drikpanchang.com/iskcon/lord/krishna-janmashtami-date-time.html?geoname-id=1273294&year=2026",
+      "status": 200,
+      "final_url": "https://www.drikpanchang.com/iskcon/lord/krishna-janmashtami-date-time.html?geoname-id=1273294&year=2026",
+      "response_bytes": 83943,
+      "response_sha256": "d683b0823e1bdcc708910485f4d04ba8211452d06d35163fb9797fd7f33e62fd",
+      "strict_utf8": true,
+      "evidence_role": "current_iskcon_practitioner_identity_nishita_rule_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "modern_observation": {
+    "smarta_selected_civil_date": "2026-09-04",
+    "iskcon_selected_civil_date": "2026-09-04",
+    "published_nishita_begins_local": "2026-09-04T23:57:00+05:30",
+    "published_nishita_ends_local": "2026-09-05T00:43:00+05:30",
+    "ashtami_tithi_begins_local": "2026-09-04T02:25:00+05:30",
+    "ashtami_tithi_ends_local": "2026-09-05T00:13:00+05:30",
+    "rohini_nakshatra_begins_local": "2026-09-04T00:29:00+05:30",
+    "rohini_nakshatra_ends_local": "2026-09-04T23:04:00+05:30",
+    "smarta_and_iskcon_lanes_present_separately": true,
+    "same_2026_civil_date_does_not_prove_rule_equivalence": true
+  },
+  "rule_contract": {
+    "target_tithi": "Ashtami",
+    "target_paksha": "krishna",
+    "diagnostic_nakshatra": "Rohini",
+    "selection": "for_each_bounded_tradition_lane_select_only_when_exactly_one_candidate_civil_night_has_krishna_ashtami_overlap_with_local_nishita",
+    "rohini_role": "preserve_exact_nishita_overlap_diagnostic_without_requiring_or_silently_correcting_it",
+    "both_candidates_overlap": "fail_closed",
+    "neither_candidate_overlaps": "fail_closed",
+    "smarta_and_iskcon_lanes_remain_separate": true,
+    "puja_muhurta_served": false,
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "parana_resolved": false,
+    "dahi_handi_procedure_resolved": false
+  },
+  "denials": {
+    "complete_september_december_observance_coverage": false,
+    "universal_india_date": false,
+    "all_vaishnava_traditions_equivalent": false,
+    "smarta_and_iskcon_rules_equivalent": false,
+    "modern_practice_complete": false,
+    "fasting_guidance_complete": false,
+    "puja_guidance_complete": false,
+    "parana_guidance_complete": false,
+    "dahi_handi_guidance_complete": false,
+    "historical_prescriptions_promoted": false,
+    "source_text_product_cleared": false,
+    "ritual_guidance_included": false
+  }
+}

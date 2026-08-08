@@ -1,0 +1,110 @@
+{
+  "contract": "DEVAM_NARAKA_CHATURDASHI_MUMBAI_PREFLIGHT_V1",
+  "fixture_id": "devam-naraka-chaturdashi-mumbai-2026-preflight-v1",
+  "status": "research_preflight_not_executable_not_product_promoted",
+  "scope": {
+    "reference_location": "Mumbai, Maharashtra, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-07", "2026-11-08"],
+    "supported_tradition_candidate": "smarta-west-india",
+    "observed_selected_civil_date": "2026-11-08",
+    "naraka_chaturdashi_only": true,
+    "kali_chaudas_separate": true,
+    "tamil_deepavali_separate": true,
+    "ritual_guidance_included": false
+  },
+  "live_sources": [
+    {
+      "source_id": "drik-abhyang-snan-mumbai-2026",
+      "provider": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/abhyangsnan/festivals-abhyangsnan-timings.html?geoname-id=1275339&year=2026",
+      "rights_lane": "reference_only",
+      "evidence_role": "current_location_specific_identity_date_and_candidate_decision_window_not_product_muhurta_or_universal_procedure",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://www.drikpanchang.com/festivals/abhyangsnan/festivals-abhyangsnan-timings.html?geoname-id=1275339&year=2026",
+        "response_bytes": 80461,
+        "response_sha256": "a5be9abc5d3c7509c21c86246d6e1f4a17698f5f8cb870ae6c5155fe8289a7cb",
+        "strict_utf8": true
+      },
+      "semantic_observation": {
+        "title_mumbai_maharashtra_india": true,
+        "naraka_chaturdashi_sunday_8_november_2026": true,
+        "abhyang_snan_identity": true,
+        "provider_decision_window_between_moonrise_and_sunrise_while_chaturdashi_prevails": true,
+        "naraka_chaturdashi_and_kali_chaudas_explicitly_distinguished": true,
+        "provider_published_precise_interval_present_but_not_republished": true
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "maharashtra-tourism-diwali-narak-chaturdashi",
+      "provider": "Department of Tourism, Government of Maharashtra",
+      "url": "https://maharashtratourism.gov.in/festivals/diwali/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_maharashtra_diwali_sequence_and_narak_chaturdashi_identity_not_date_rule_or_complete_procedure",
+      "observed_fetch": {
+        "status": 200,
+        "final_url": "https://maharashtratourism.gov.in/festivals/diwali/",
+        "response_bytes": 627476,
+        "response_sha256": "8c70401997942baa16ff96e2f7361f29c66304a434894594679d4880c59aa979",
+        "strict_utf8": true,
+        "page_bytes_observed_dynamic_across_fetches": true
+      },
+      "semantic_observation": {
+        "day_two_narak_chaturdashi_identity": true,
+        "regional_diversity_context": true,
+        "complete_abhyanga_procedure_observed": false
+      },
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "maharashtra-gazetteers-bombay-poona-naraka-context",
+      "provider": "Maharashtra State Gazetteers",
+      "urls": [
+        "https://gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/greater_bombay/people.html",
+        "https://www.gazetteers.maharashtra.gov.in/cultural.maharashtra.gov.in/english/gazetteer/Poona/PART%20III/Chap%20%283%29/Hindu%20Religious%20Practices.htm"
+      ],
+      "rights_lane": "reference_only",
+      "evidence_role": "official_historical_maharashtra_context_not_current_universal_or_product_procedure",
+      "access_boundary": {
+        "normal_tls_fetch_failed_closed": true,
+        "failure": "CERT_HAS_EXPIRED",
+        "tls_validation_weakened": false,
+        "raw_bytes_retained": false,
+        "search_provider_text_extraction_only": true
+      },
+      "search_extracted_observation": {
+        "early_morning_oil_or_abhyanga_bath_described": true,
+        "narakasura_story_context_described": true,
+        "historical_karita_and_household_details_not_promoted_as_modern_requirements": true
+      },
+      "source_text_returned_by_api": false
+    }
+  ],
+  "adjudication": {
+    "candidate_observance_slug": "naraka-chaturdashi",
+    "candidate_canonical_name": "Naraka Chaturdashi / Abhyanga Snan",
+    "candidate_target_tithi": "Kartika Krishna Chaturdashi",
+    "candidate_decision_window": "local_moonrise_to_sunrise_while_chaturdashi_prevails",
+    "observed_selected_civil_date": "2026-11-08",
+    "existing_generic_sunrise_rule_requires_hardening_before_practice_promotion": true,
+    "maharashtra_abhyanga_and_tamil_deepavali_are_separately_attributed_lanes": true,
+    "kali_chaudas_requires_its_own_date_identity_and_practice_evidence": true,
+    "next_required_step": "deterministically_recompute_the_mumbai_candidate_window_and_independently_validate_before_building_a_maharashtra_practice_pack"
+  },
+  "denials": {
+    "executable_date_fixture_complete": false,
+    "ritual_procedure_pack_complete": false,
+    "precise_provider_muhurta_republished": false,
+    "sesame_oil_or_ubtan_required_for_everyone": false,
+    "karita_crushing_required": false,
+    "fireworks_recommended_or_required": false,
+    "medical_or_dermatological_suitability_claimed": false,
+    "guaranteed_avoidance_of_naraka_or_other_outcome_claimed": false,
+    "naraka_chaturdashi_merged_with_kali_chaudas": false,
+    "naraka_chaturdashi_merged_with_tamil_deepavali": false,
+    "one_universal_indian_procedure_claimed": false,
+    "source_text_or_live_page_returned_by_api": false
+  }
+}

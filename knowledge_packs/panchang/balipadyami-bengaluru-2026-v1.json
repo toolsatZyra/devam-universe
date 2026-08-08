@@ -1,0 +1,67 @@
+{
+  "contract": "DEVAM_KARNATAKA_BALIPADYAMI_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-balipadyami-bengaluru-2026-v1",
+  "scope": {
+    "reference_location": "Bengaluru, Karnataka, India",
+    "timezone": "Asia/Kolkata",
+    "candidate_civil_dates": ["2026-11-09", "2026-11-10"],
+    "supported_tradition_codes": ["smarta-south-india"],
+    "selected_civil_date": "2026-11-10",
+    "date_resolved_by_devam_rule": true,
+    "provider_event_time_reproduced": false,
+    "universal_karnataka_or_south_india_claim": false
+  },
+  "live_sources": [
+    {
+      "source_id": "iskcon-bangalore-public-calendar-2026-balipadyami",
+      "provider": "ISKCON Bangalore",
+      "url": "https://www.iskconbangalore.org/public-holidays-calendar/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_bengaluru_2026_civil_date_corroboration_not_karnataka_household_practice_authority",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T23:49:41.7696509Z", "status": 200, "final_url": "https://www.iskconbangalore.org/public-holidays-calendar/", "response_bytes": 90675, "response_sha256": "354d0b622c785743016363fbcf4f4fbb9552cbc1a789f3c3a929a794d09d010a", "strict_utf8": true},
+      "semantic_observation": {"balipadyami_literal": true, "govardhan_puja_same_listing_but_separate_lane": true, "tuesday_10_november_2026": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "karnataka-tourism-deepavali-balipratipada",
+      "provider": "Karnataka Tourism",
+      "url": "https://karnatakatourism.org/en/blogs/deepavali-celebrations-in-karnataka-a-festival-of-lights-and-joy",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_regional_deepavali_sequence_king_bali_generosity_and_coastal_variation_context_not_2026_date_authority",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T23:49:41.7696509Z", "status": 200, "final_url": "https://karnatakatourism.org/en/blogs/deepavali-celebrations-in-karnataka-a-festival-of-lights-and-joy", "response_bytes": 57274, "response_sha256": "8a470ac6314eca411f3afbc8626d97f2c3071f2df0f66243c0a06d6bc5b3c96f", "strict_utf8": true},
+      "semantic_observation": {"karnataka_five_day_sequence": true, "bali_pratipada_concluding_day": true, "king_bali_generosity_and_righteousness": true, "coastal_karnataka_special_rituals_vary": true},
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "akashvani-karnataka-bali-padyami",
+      "provider": "Akashvani News",
+      "url": "https://www.newsonair.gov.in/karnataka-celebrates-bali-padyami-festival/",
+      "rights_lane": "reference_only",
+      "evidence_role": "official_public_broadcaster_karnataka_identity_story_and_descriptive_living_practice_not_complete_vidhi_or_2026_date_authority",
+      "observed_fetch": {"fetched_at_utc": "2026-08-06T23:49:41.7696509Z", "status": 200, "final_url": "https://www.newsonair.gov.in/karnataka-celebrates-bali-padyami-festival/", "response_bytes": 70303, "response_sha256": "52662384f2025653e27e42dd29b2473f4dfa406d6b5338c8cc7becde0aa4527e", "strict_utf8": true},
+      "semantic_observation": {"fourth_day_of_deepavali": true, "bali_chakravarty_visits_bhuloka_vamana_boon_story": true, "temple_rangoli_lamps_and_abhisheka_described": true, "household_clay_or_cow_dung_bali_representation_described": true, "prosperity_and_welfare_symbolism_described_not_guaranteed": true, "complete_household_or_temple_procedure_present": false},
+      "source_text_returned_by_api": false
+    }
+  ],
+  "decision": {
+    "observance_slug": "karnataka-balipadyami",
+    "canonical_name": "Bali Padyami / Balipadyami",
+    "target_tithi": "Kartika Shukla Pratipada",
+    "devam_rule": "select_the_candidate_on_which_kartika_shukla_pratipada_is_present_at_local_sunrise",
+    "selected_civil_date": "2026-11-10",
+    "official_bengaluru_date_matches": true,
+    "maharashtra_bali_pratipada_baps_new_year_and_govardhana_remain_separate": true
+  },
+  "denials": {
+    "provider_event_time_reproduced": false,
+    "formal_temple_abhisheka_or_mantras_included": false,
+    "clay_or_cow_dung_image_required": false,
+    "real_lamps_or_thousands_of_lights_required": false,
+    "fast_food_purchase_or_gift_prescribed": false,
+    "prosperity_or_welfare_guaranteed": false,
+    "all_karnataka_coastal_or_south_indian_variants_equivalent": false,
+    "maharashtra_bali_pratipada_baps_new_year_or_govardhana_merged": false,
+    "source_text_returned_by_api": false,
+    "live_pages_copied_into_library": false
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "contract": "DEVAM_BOUNDED_PRADOSHA_CALENDAR_FIXTURE_V1",
+  "fixture_id": "devam-pradosha-delhi-september-december-2026-v1",
+  "scope": {
+    "reference_location": "Delhi, India",
+    "geoname_id": 1273294,
+    "civil_date_start": "2026-09-01",
+    "civil_date_end": "2026-12-31",
+    "supported_tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "calendar_system": "amanta_lunar_month_names_as_displayed_by_reference",
+    "location_specific": true,
+    "universal_india_claim": false
+  },
+  "sources": [
+    {
+      "source_id": "nirnayasindhu-1865-general-naktavrata-context",
+      "title": "Nirnayasindhu, Marathi translation",
+      "edition": "Mumbai, 1865",
+      "internet_archive_identifier": "in.ernet.dli.2015.365977",
+      "fixed_carrier_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "pdf_pages": [37, 38, 48],
+      "evidence_role": "general_naktavrata_pradosha_interval_and_conflict_context_only",
+      "rights_lane": "private_evidence",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-pradosha-2026",
+      "title": "2026 Pradosh Dates for Delhi",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/vrats/pradoshdates.html?geoname-id=1273294&year=2026",
+      "fetched_at": "2026-08-06",
+      "http_status": 200,
+      "final_url": "https://www.drikpanchang.com/vrats/pradoshdates.html?geoname-id=1273294&year=2026",
+      "response_bytes": 126821,
+      "response_sha256": "94ab318ba1acfb84daa160fb161062420985fc07919c7a76de61b7ad439a9ac1",
+      "strict_utf8": true,
+      "evidence_role": "current_practitioner_rule_and_location_specific_date_fixture",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "rule_contract": {
+    "target_tithi": "Trayodashi",
+    "target_pakshas": [
+      "krishna",
+      "shukla"
+    ],
+    "selection": "select_only_when_exactly_one_candidate_civil_evening_has_target_trayodashi_overlap_with_the_bounded_pradosha_window",
+    "bounded_pradosha_window": "sunset_through_144_minutes_after_sunset",
+    "window_basis": "the fixed historical source describes three muhurtas or six ghatis after sunset; this is used only as the deterministic decision window",
+    "practitioner_rule": "the observance is location-specific and selected where Trayodashi overlaps Pradosha after sunset",
+    "both_candidates_overlap": "fail_closed",
+    "neither_candidate_overlaps": "fail_closed",
+    "puja_muhurta_calculated": false,
+    "fasting_procedure_resolved": false,
+    "puja_procedure_resolved": false,
+    "parana_resolved": false
+  },
+  "observances": [
+    {
+      "observance_slug": "pradosha-2026-09-krishna",
+      "canonical_name": "Bhauma Pradosha Vrat",
+      "lunar_month": "Bhadrapada",
+      "paksha": "krishna",
+      "candidate_civil_dates": ["2026-09-08", "2026-09-09"],
+      "reference_selected_civil_date": "2026-09-08",
+      "reference_trayodashi_begins_local": "2026-09-08T14:42:00+05:30",
+      "reference_trayodashi_ends_local": "2026-09-09T12:30:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-09-shukla",
+      "canonical_name": "Guru Pradosha Vrat",
+      "lunar_month": "Bhadrapada",
+      "paksha": "shukla",
+      "candidate_civil_dates": ["2026-09-23", "2026-09-24"],
+      "reference_selected_civil_date": "2026-09-24",
+      "reference_trayodashi_begins_local": "2026-09-23T22:50:00+05:30",
+      "reference_trayodashi_ends_local": "2026-09-24T23:18:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-10-krishna",
+      "canonical_name": "Guru Pradosha Vrat",
+      "lunar_month": "Ashwina",
+      "paksha": "krishna",
+      "candidate_civil_dates": ["2026-10-07", "2026-10-08"],
+      "reference_selected_civil_date": "2026-10-08",
+      "reference_trayodashi_begins_local": "2026-10-07T23:16:00+05:30",
+      "reference_trayodashi_ends_local": "2026-10-08T22:15:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-10-shukla",
+      "canonical_name": "Shukra Pradosha Vrat",
+      "lunar_month": "Ashwina",
+      "paksha": "shukla",
+      "candidate_civil_dates": ["2026-10-23", "2026-10-24"],
+      "reference_selected_civil_date": "2026-10-23",
+      "reference_trayodashi_begins_local": "2026-10-23T14:35:00+05:30",
+      "reference_trayodashi_ends_local": "2026-10-24T13:36:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-11-krishna",
+      "canonical_name": "Shukra Pradosha Vrat",
+      "lunar_month": "Kartika",
+      "paksha": "krishna",
+      "candidate_civil_dates": ["2026-11-06", "2026-11-07"],
+      "reference_selected_civil_date": "2026-11-06",
+      "reference_trayodashi_begins_local": "2026-11-06T10:30:00+05:30",
+      "reference_trayodashi_ends_local": "2026-11-07T10:47:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-11-shukla",
+      "canonical_name": "Ravi Pradosha Vrat",
+      "lunar_month": "Kartika",
+      "paksha": "shukla",
+      "candidate_civil_dates": ["2026-11-22", "2026-11-23"],
+      "reference_selected_civil_date": "2026-11-22",
+      "reference_trayodashi_begins_local": "2026-11-22T04:56:00+05:30",
+      "reference_trayodashi_ends_local": "2026-11-23T02:36:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-12-krishna",
+      "canonical_name": "Ravi Pradosha Vrat",
+      "lunar_month": "Margashirsha",
+      "paksha": "krishna",
+      "candidate_civil_dates": ["2026-12-06", "2026-12-07"],
+      "reference_selected_civil_date": "2026-12-06",
+      "reference_trayodashi_begins_local": "2026-12-06T00:51:00+05:30",
+      "reference_trayodashi_ends_local": "2026-12-07T02:22:00+05:30"
+    },
+    {
+      "observance_slug": "pradosha-2026-12-shukla",
+      "canonical_name": "Soma Pradosha Vrat",
+      "lunar_month": "Margashirsha",
+      "paksha": "shukla",
+      "candidate_civil_dates": ["2026-12-21", "2026-12-22"],
+      "reference_selected_civil_date": "2026-12-21",
+      "reference_trayodashi_begins_local": "2026-12-21T17:36:00+05:30",
+      "reference_trayodashi_ends_local": "2026-12-22T14:23:00+05:30"
+    }
+  ],
+  "denials": {
+    "historical_source_proves_observance_specific_rule": false,
+    "modern_reference_is_a_primary_scriptural_source": false,
+    "complete_pradosha_tradition_coverage": false,
+    "all_india_date_equivalence": false,
+    "all_sampradaya_equivalence": false,
+    "ritual_procedure_included": false,
+    "fasting_suitable_for_every_user": false,
+    "medical_advice_included": false,
+    "public_source_text_rights_cleared": false
+  }
+}

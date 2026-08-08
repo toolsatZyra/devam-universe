@@ -1,0 +1,112 @@
+{
+  "contract": "DEVAM_TULASI_VIVAH_2026_DATE_EVIDENCE_FIXTURE_V1",
+  "fixture_id": "devam-tulasi-vivah-2026-v1",
+  "fetched_at_utc": "2026-08-07T00:41:44.656Z",
+  "lanes": [
+    {
+      "observance_slug": "tulasi-vivah-dwadashi",
+      "canonical_name": "Tulasi Vivah",
+      "reference_location": "Delhi, India",
+      "geoname_id": 1273294,
+      "timezone": "Asia/Kolkata",
+      "candidate_civil_dates": ["2026-11-20", "2026-11-21"],
+      "selected_civil_date": "2026-11-21",
+      "supported_tradition_codes": ["smarta-north-india", "smarta-west-india"],
+      "target_tithi": "Dwadashi",
+      "target_paksha": "shukla",
+      "decision_window": "pradosha",
+      "selection": "select_only_when_exactly_one_candidate_civil_evening_has_shukla_dwadashi_overlap_with_local_pradosha",
+      "official_mumbai_date_corroboration": "2026-11-21",
+      "universal_india_claim": false
+    },
+    {
+      "observance_slug": "tulsi-vivah-baps-begins",
+      "canonical_name": "Tulsi Vivah Prarambh",
+      "reference_location": "Ahmedabad, Gujarat, India",
+      "timezone": "Asia/Kolkata",
+      "candidate_civil_dates": ["2026-11-21", "2026-11-22"],
+      "selected_civil_date": "2026-11-21",
+      "supported_tradition_codes": ["swaminarayan-baps"],
+      "official_calendar_label": "Kartak Sud Ekadashi/Baras; Prabodhini Ekadashi; Tulsivivah Prarambh",
+      "sequence_end_civil_date": "2026-11-24",
+      "sequence_end_label": "Kartak Sud Punam; Dev Diwali; Tulsivivah Samapt",
+      "selection": "official_baps_calendar_first_candidate",
+      "universal_hindu_claim": false
+    },
+    {
+      "observance_slug": "tulsi-vivah-baps-samapt",
+      "canonical_name": "Tulsi Vivah Samapt",
+      "reference_location": "Ahmedabad, Gujarat, India",
+      "timezone": "Asia/Kolkata",
+      "candidate_civil_dates": ["2026-11-24", "2026-11-25"],
+      "selected_civil_date": "2026-11-24",
+      "supported_tradition_codes": ["swaminarayan-baps"],
+      "official_calendar_label": "Kartak Sud Punam; Dev Diwali; Tulsivivah Samapt",
+      "sequence_start_civil_date": "2026-11-21",
+      "selection": "official_baps_calendar_first_candidate",
+      "universal_hindu_claim": false
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "incredible-india-tulsi-vivah-2026",
+      "title": "Tulsi Vivah",
+      "publisher": "Ministry of Tourism, Government of India",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/tulsi-vivah",
+      "observed_fetch": {"status": 200, "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/tulsi-vivah", "response_bytes": 530603, "response_sha256": "07186207d6ddc17a74878fa78b2096d72eaf326710b5481dcb2d1487517766e9", "strict_utf8": true},
+      "evidence_role": "official_national_tourism_identity_and_mumbai_2026_date_corroboration_not_universal_vidhi",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "drikpanchang-delhi-tulasi-vivah-2026",
+      "title": "2026 Tulasi Vivah",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/festivals/tulasi-vivah/tulasi-vivah-date-time.html?geoname-id=1273294&year=2026",
+      "observed_fetch": {"status": 200, "final_url": "https://www.drikpanchang.com/festivals/tulasi-vivah/tulasi-vivah-date-time.html?geoname-id=1273294&year=2026", "response_bytes": 70677, "response_sha256": "398fc3737c26e4bcb407e50b876cda973ac1e1f788c56ba1094a650f40b80cb9", "strict_utf8": true},
+      "observed_literals": {"selected_civil_date": "2026-11-21", "dwadashi_begins_local": "2026-11-21T06:31:00+05:30", "dwadashi_ends_local": "2026-11-22T04:56:00+05:30", "tulasi_vishnu_krishna_union_identity": true},
+      "evidence_role": "current_practitioner_identity_rule_and_delhi_date_fixture_not_universal_vidhi",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "baps-calendar-november-2026-tulsi-vivah",
+      "title": "BAPS 2026 November calendar",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/calendar/2026/November.aspx",
+      "observed_fetch": {"status": 200, "final_url": "https://www.baps.org/calendar/2026/November.aspx", "response_bytes": 102837, "response_sha256": "a7a77333444d23f4e9e5f93bf897277c1e7663030cca05d21ba2cd545d3e1120", "strict_utf8": true},
+      "observed_literals": {"november_21_prarambh": true, "november_24_samapt": true, "prabodhini_ekadashi": true, "dev_diwali": true},
+      "evidence_role": "official_baps_sequence_date_authority",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    },
+    {
+      "source_id": "baps-tulsi-vivah-2012-context",
+      "title": "Prabodhini Ekadashi and Tulsi Vivah",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "url": "https://www.baps.org/Vicharan/2012/24-November-2012-4311.aspx",
+      "observed_fetch": {"status": 200, "final_url": "https://www.baps.org/Vicharan/2012/24-November-2012-4311.aspx", "response_bytes": 314499, "response_sha256": "9cbac8c0ce08e18be1757f9a6256aec5e45f7303704fd540ef635ad12c6811c7", "strict_utf8": true},
+      "evidence_role": "historical_baps_institutional_context_not_2026_date_or_universal_procedure_authority",
+      "rights_lane": "reference_only",
+      "source_text_returned_by_api": false
+    }
+  ],
+  "identity": {
+    "general_lane": "A ceremonial divine-marriage observance connecting the Tulasi plant with Vishnu or Krishna, bounded here to one current Dwadashi lane.",
+    "baps_lane": "An institution-specific sequence beginning on November 21 and closing on November 24; it is not collapsed into the one-day general lane.",
+    "terminal_or_internal_completeness_claim": false
+  },
+  "denials": {
+    "one_universal_tulasi_vivah_date": false,
+    "one_universal_hindu_procedure": false,
+    "baps_sequence_merged_into_general_dwadashi_lane": false,
+    "fast_or_dietary_regimen_prescribed": false,
+    "formal_mantra_sankalpa_kanyadan_or_priest_sequence_included": false,
+    "plant_plucking_pruning_ingestion_or_decoration_required": false,
+    "medical_herbal_fertility_marriage_or_prosperity_outcome_claimed": false,
+    "purchase_gift_dowry_or_new_image_required": false,
+    "real_world_marriage_or_gender_role_prescribed": false,
+    "all_vaishnava_smarta_baps_regional_family_and_temple_variants_complete": false,
+    "source_text_returned_or_republished": false
+  }
+}

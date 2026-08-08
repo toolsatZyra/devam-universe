@@ -1,0 +1,779 @@
+{
+  "applicability": {
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india"
+      }
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city, state, and family or sampradaya practice do you follow?",
+      "Who wishes to participate, and does your household keep a reciprocal spouse or wider family form?",
+      "Which Sargi, Bayaa, thali, karwa, katha, moonrise, or closing customs does an elder actually recognise?",
+      "Would a material-free, flame-free, food-neutral, or non-fasting form work better today?"
+    ],
+    "region_codes": [
+      "north-india"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "community"
+    ],
+    "tradition_codes": [
+      "smarta-north-india"
+    ]
+  },
+  "calendar": {
+    "closing_decision_rule_id": "family-moonrise-close-not-universalized",
+    "decision_rule_id": "devam-current-practitioner-karwa-chauth-chaturthi-at-moonrise-v1",
+    "freshness_note": "The Delhi 2026 date and moonrise relevance are resolved; visibility, family sequence, and community programme remain local.",
+    "live_schedule_required": false,
+    "location_aware": true,
+    "resolution_source_ids": [
+      "devam-karwa-chauth-date-and-practice-fixture"
+    ],
+    "timing_kind": "mixed",
+    "tradition_aware": true
+  },
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "karwa-chauth-north-india-household-content-v1",
+  "localized_content": [
+    {
+      "language_code": "en",
+      "origin_narratives": [
+        {
+          "narrative_id": "savitri-satyavan-karwa-context",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ],
+          "summary": "The tourism source presents Savitri's steadfast action for Satyavan as one Karwa Chauth story; it is a festival retelling, not the only textual origin.",
+          "title": "Savitri and Satyavan",
+          "tradition_scope": "Current official tourism retelling",
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "veervati-karwa-context",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ],
+          "summary": "A second account tells of Veervati's brothers creating a false moonrise and her later devotion; families may narrate different versions.",
+          "title": "Veervati and the false moonrise",
+          "tradition_scope": "Current official tourism retelling",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible mutual-care reflection",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-karwa-chauth-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "Mutual care and gratitude",
+          "materials": [
+            {
+              "item": "No material required",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "A quiet place",
+                "A short call or message"
+              ]
+            }
+          ],
+          "procedure_id": "karwa-chauth-north-india-household-content-v1-en-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Pause with the person or relationship you wish to honour, or hold them in mind if they are elsewhere.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The official living-practice source centres love and care, while Devam does not require one marital, gender, or material form."
+            },
+            {
+              "instruction": "Offer a family-known prayer, a few quiet words for mutual wellbeing, or a sincere expression of gratitude.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "This keeps the observance meaningful without manufacturing a mantra or promising an outcome."
+            },
+            {
+              "instruction": "Choose one practical act of listening, care, repair, rest, or shared responsibility to carry into the relationship.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The companion makes the reflection actionable without treating ritual as a guarantee."
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "Bounded North Indian household form; family and health context override it",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-karwa-chauth-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 40,
+          "form": "traditional_household",
+          "label": "Family-known Karwa Chauth remembrance",
+          "materials": [
+            {
+              "item": "Family's familiar thali, karwa, or image",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "A simple water vessel",
+                "Material-free remembrance"
+              ]
+            },
+            {
+              "item": "Family katha or prayer",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context"
+              ],
+              "substitutions": [
+                "Quiet gratitude",
+                "Familiar family words"
+              ]
+            },
+            {
+              "item": "Optional sieve and safe light",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "View the moon without a sieve",
+                "Electric light",
+                "No flame"
+              ]
+            }
+          ],
+          "procedure_id": "karwa-chauth-north-india-household-content-v1-en-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-karwa-chauth-date-and-practice-fixture",
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Confirm the local date and ask which Punjab, Uttar Pradesh, or other family sequence, Sargi, Bayaa, story, moon-viewing, and close apply.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-karwa-chauth-date-and-practice-fixture",
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The date can be resolved while the living household form remains distinct."
+            },
+            {
+              "instruction": "If Sargi is family practice and a healthy adult freely chooses the fast, use appropriate health judgment; everyone else may participate without fasting.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The source describes the ordinary fast without turning it into universal health advice."
+            },
+            {
+              "instruction": "During the day, share care, rest, and practical work; prepare any familiar thali, karwa, or story for the evening.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "Mutual care connects the observance to everyday life."
+            },
+            {
+              "instruction": "At the family evening time, use the familiar prayer or katha; do not merge the Punjab thali sequence with Uttar Pradesh moon representations.",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The source preserves both regional forms separately."
+            },
+            {
+              "instruction": "At moonrise, use a safe place and follow the family's water, sieve, or other close; if visibility fails, ask the family rather than inventing a substitute as tradition.",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "devam-karwa-chauth-date-and-practice-fixture",
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "Moonrise is common, but materials and order vary."
+            },
+            {
+              "instruction": "Complete the familiar food or water close, do not police another person's fast, and name one concrete mutual-care commitment.",
+              "optional": false,
+              "ordinal": 6,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The relationship-centred meaning remains without a promised outcome."
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or community-led form only",
+          "closing": {
+            "scope_note": "The family or responsible living authority controls the exact close.",
+            "source_ids": [
+              "devam-karwa-chauth-safety-boundary"
+            ],
+            "text": "Close the familiar family form safely, clear the space, and leave every flame extinguished or continuously supervised."
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "Established family- or community-led programme",
+          "materials": [
+            {
+              "item": "Only materials named by the established family or community lead",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "Use their approved alternatives",
+                "Join as an observer"
+              ]
+            }
+          ],
+          "procedure_id": "karwa-chauth-north-india-household-content-v1-en-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "Let the established elder or community lead define Sargi, Bayaa, thali or karwa, katha, prayer, offerings, moon observation, food, timing, and close.",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "The evidence preserves regional diversity and does not authorize Devam to manufacture a universal Karwa Chauth procedure."
+            },
+            {
+              "instruction": "Keep flame, rooftop or balcony access, night visibility, food, mobility, and crowd safety under a responsible adult and venue direction.",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "Participation must remain physically safe and accessible."
+            },
+            {
+              "instruction": "Close through the established practice, then name one mutual commitment that continues after the festival.",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "This preserves community authority and everyday usefulness without a guaranteed spiritual, health, or relationship result."
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "The ordinary fast is documented but never made compulsory or treated as medical advice; pregnancy, breastfeeding, illness, medication, age, eating disorders, and other risks require appropriate care.",
+        "Use safe moon-viewing access; do not climb or crowd rooftops, stare at bright lights, or leave a flame unattended.",
+        "Sargi, Bayaa, clothing, jewellery, gifts, sieve, karwa, seven rotations, and spouse-fed close are family-specific rather than purchase requirements.",
+        "No act guarantees a spouse's health, longevity, marriage outcome, protection, merit, or success."
+      ],
+      "short_answer": "A bounded North India family form centred on mutual care, gratitude, a family-known prayer or story, and an optional safe moonrise close—without prescribing fasting or promising health, longevity, marriage, or another result.",
+      "significance": {
+        "source_ids": [
+          "incredible-india-karva-chauth-context"
+        ],
+        "text": "Karwa Chauth is a North Indian household observance of marital and family bonds. The official living-practice account describes a dawn-to-moonrise fast, Sargi, group prayer and katha, and a moonrise close, while also recording newer reciprocal participation."
+      },
+      "title": "Karwa Chauth family reflection and participation",
+      "typical_practices": [
+        {
+          "description": "The account describes pre-dawn Sargi, Bayaa, an afternoon gathering with thalis and Gaura Maa, elder-led katha and thali rotation, and a moonrise close with a sieve, water, food, and spouse participation.",
+          "instructional": false,
+          "population_scope": "Punjab households described by Incredible India",
+          "practice_id": "punjab-karwa-chauth",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ]
+        },
+        {
+          "description": "The account describes Sargi, adornment and evening prayers; in some places a moon image is made with rice paste and water is offered with a karwa. This is not merged with the Punjab sequence.",
+          "instructional": false,
+          "population_scope": "Uttar Pradesh households described by Incredible India",
+          "practice_id": "uttar-pradesh-karwa-chauth",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "Food, Bayaa, Gaura Maa, thali rotation, moon representation, offerings, and close differ.",
+          "scope": "Punjab and Uttar Pradesh",
+          "separate_lane_required": true,
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ],
+          "variant_id": "punjab-and-uttar-pradesh"
+        },
+        {
+          "difference": "Some spouses participate reciprocally; a women-only or married-only eligibility rule is not imposed by this lane.",
+          "scope": "Contemporary couples and families",
+          "separate_lane_required": false,
+          "source_ids": [
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "variant_id": "reciprocal-participation"
+        }
+      ]
+    },
+    {
+      "language_code": "hi",
+      "origin_narratives": [
+        {
+          "narrative_id": "savitri-satyavan-karwa-context",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ],
+          "summary": "पर्यटन स्रोत सावित्री के सत्यवान के लिए दृढ़ प्रयास को एक करवा चौथ कथा के रूप में देता है; यह एक पुनर्कथन है, अकेला मूल नहीं।",
+          "title": "सावित्री और सत्यवान",
+          "tradition_scope": "वर्तमान सरकारी पर्यटन पुनर्कथन",
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "veervati-karwa-context",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ],
+          "summary": "दूसरी कथा में वीरवती के भाइयों का कृत्रिम चन्द्रोदय और उसकी बाद की साधना आती है; परिवारों में रूप बदलते हैं।",
+          "title": "वीरवती और झूठा चन्द्रोदय",
+          "tradition_scope": "वर्तमान सरकारी पर्यटन पुनर्कथन",
+          "universal_origin_claimed": false
+        }
+      ],
+      "procedures": [
+        {
+          "authority_scope": "Accessible mutual-care reflection",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-karwa-chauth-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 10,
+          "form": "accessible_short",
+          "label": "परस्पर देखभाल और कृतज्ञता",
+          "materials": [
+            {
+              "item": "कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "शान्त स्थान",
+                "छोटी बातचीत या सन्देश"
+              ]
+            }
+          ],
+          "procedure_id": "karwa-chauth-north-india-household-content-v1-hi-minimum-v1",
+          "setting": "individual",
+          "source_ids": [
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "जिस व्यक्ति या सम्बन्ध का सम्मान करना है उसके साथ कुछ क्षण रुकें, या दूर होने पर उसे मन में रखें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "सरकारी जीवन्त-परम्परा स्रोत प्रेम और देखभाल को केन्द्र में रखता है; Devam एक वैवाहिक, लैंगिक या भौतिक रूप अनिवार्य नहीं करता।"
+            },
+            {
+              "instruction": "परिवार की परिचित प्रार्थना करें, परस्पर कुशलता के लिए कुछ सरल शब्द कहें, या सच्ची कृतज्ञता व्यक्त करें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "इससे बिना मन्त्र गढ़े या फल का वादा किए पालन सार्थक रहता है।"
+            },
+            {
+              "instruction": "सुनने, देखभाल, सुधार, विश्राम या साझा जिम्मेदारी का एक व्यावहारिक काम चुनें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "अनुष्ठान को गारंटी माने बिना चिंतन दैनिक जीवन में उपयोगी बनता है।"
+            }
+          ],
+          "tier": "minimum"
+        },
+        {
+          "authority_scope": "सीमित उत्तर भारतीय पारिवारिक रूप; परिवार और स्वास्थ्य-सन्दर्भ सर्वोपरि",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-karwa-chauth-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 40,
+          "form": "traditional_household",
+          "label": "परिवार-परिचित करवा चौथ स्मरण",
+          "materials": [
+            {
+              "item": "परिवार की परिचित थाली/करवा/चित्र",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "सरल जल-पात्र",
+                "बिना सामग्री स्मरण"
+              ]
+            },
+            {
+              "item": "परिवार की कथा या प्रार्थना",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context"
+              ],
+              "substitutions": [
+                "मौन कृतज्ञता",
+                "परिचित पारिवारिक शब्द"
+              ]
+            },
+            {
+              "item": "वैकल्पिक छलनी और सुरक्षित दीप",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "बिना छलनी चन्द्र-दर्शन",
+                "बिजली का दीप",
+                "बिना लौ"
+              ]
+            }
+          ],
+          "procedure_id": "karwa-chauth-north-india-household-content-v1-hi-standard-v1",
+          "setting": "household",
+          "source_ids": [
+            "devam-karwa-chauth-date-and-practice-fixture",
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "स्थानीय तिथि की पुष्टि करके परिवार से पंजाब/उत्तर प्रदेश या अन्य लागू क्रम, सरगी, बाया, कथा, चन्द्र-दर्शन और समापन पूछें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "devam-karwa-chauth-date-and-practice-fixture",
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "तिथि तय हो सकती है, पर जीवित पारिवारिक रूप अलग हैं।"
+            },
+            {
+              "instruction": "परिवार में सरगी हो और कोई स्वस्थ वयस्क स्वेच्छा से उपवास करे तो स्वास्थ्य-विवेक से करे; अन्य सहभागी बिना उपवास के जुड़ सकते हैं।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "स्रोत सामान्य उपवास बताता है, उसे सार्वभौमिक स्वास्थ्य-निर्देश नहीं बनाता।"
+            },
+            {
+              "instruction": "दिन में एक-दूसरे की देखभाल, आराम और काम बाँटें; परिचित थाली, करवा या कथा हो तो संध्या के लिए तैयार रखें।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "पारस्परिक देखभाल पालन को दैनिक जीवन से जोड़ती है।"
+            },
+            {
+              "instruction": "संध्या में परिवार या समुदाय की परिचित प्रार्थना/कथा करें; पंजाब की थाली-रीति या उत्तर प्रदेश के चन्द्र-रूप को परस्पर न मिलाएँ।",
+              "optional": false,
+              "ordinal": 4,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "स्रोत दोनों क्षेत्रीय रूपों का भेद रखता है।"
+            },
+            {
+              "instruction": "चन्द्रोदय पर सुरक्षित जगह से परिवार का जल, छलनी या अन्य परिचित समापन करें; दृश्यता न हो तो परिवार से विकल्प पूछें।",
+              "optional": false,
+              "ordinal": 5,
+              "source_ids": [
+                "devam-karwa-chauth-date-and-practice-fixture",
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "चन्द्र-समापन सामान्य है, पर सामग्री और क्रम बदलते हैं।"
+            },
+            {
+              "instruction": "परिचित भोजन/जल-समापन करें, किसी के उपवास को नियंत्रित न करें और परस्पर देखभाल का एक ठोस संकल्प रखें।",
+              "optional": false,
+              "ordinal": 6,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "फल का वादा किए बिना सम्बन्ध-केंद्रित अर्थ बना रहता है।"
+            }
+          ],
+          "tier": "standard"
+        },
+        {
+          "authority_scope": "Established family- or community-led form only",
+          "closing": {
+            "scope_note": "समापन का ठीक रूप परिवार या उत्तरदायी जीवित परम्परा के अनुसार होगा।",
+            "source_ids": [
+              "devam-karwa-chauth-safety-boundary"
+            ],
+            "text": "परिवार का परिचित रूप सुरक्षित ढंग से पूरा करें, स्थान समेटें और हर लौ बुझा दें या निरन्तर देखरेख में रखें।"
+          },
+          "estimated_minutes": 60,
+          "form": "fuller_family_or_teacher_led",
+          "label": "स्थापित परिवार या समुदाय-नेतृत्व वाला कार्यक्रम",
+          "materials": [
+            {
+              "item": "केवल स्थापित परिवार या समुदाय-नेता द्वारा बताई सामग्री",
+              "required": false,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "substitutions": [
+                "उनके स्वीकृत विकल्प",
+                "दर्शक के रूप में जुड़ें"
+              ]
+            }
+          ],
+          "procedure_id": "karwa-chauth-north-india-household-content-v1-hi-elaborate-v1",
+          "setting": "family_led",
+          "source_ids": [
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "steps": [
+            {
+              "instruction": "सरगी, बाया, थाली या करवा, कथा, प्रार्थना, अर्पण, चन्द्र-दर्शन, भोजन, समय और समापन स्थापित बुज़ुर्ग या समुदाय-नेता को तय करने दें।",
+              "optional": false,
+              "ordinal": 1,
+              "source_ids": [
+                "incredible-india-karva-chauth-context",
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "साक्ष्य क्षेत्रीय विविधता सुरक्षित रखता है और Devam को सार्वभौमिक करवा चौथ विधि गढ़ने का अधिकार नहीं देता।"
+            },
+            {
+              "instruction": "लौ, छत या बालकनी, रात की दृश्यता, भोजन, चलने-फिरने और भीड़ की सुरक्षा जिम्मेदार वयस्क और स्थल के निर्देशन में रखें।",
+              "optional": false,
+              "ordinal": 2,
+              "source_ids": [
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "सहभागिता सुरक्षित और सुगम रहनी चाहिए।"
+            },
+            {
+              "instruction": "स्थापित रीति से समापन करके एक ऐसा परस्पर संकल्प कहें जो त्योहार के बाद भी जारी रहे।",
+              "optional": false,
+              "ordinal": 3,
+              "source_ids": [
+                "devam-karwa-chauth-safety-boundary"
+              ],
+              "why": "इससे समुदाय का अधिकार और रोज़मर्रा की उपयोगिता रहती है, बिना आध्यात्मिक, स्वास्थ्य या सम्बन्ध-फल की गारंटी के।"
+            }
+          ],
+          "tier": "elaborate"
+        }
+      ],
+      "safety_and_boundaries": [
+        "सामान्य उपवास का वर्णन है, पर वह अनिवार्य या चिकित्सा-निर्देश नहीं; गर्भावस्था, स्तनपान, बीमारी, दवा, आयु, भोजन-विकार और अन्य जोखिम में उचित देखभाल लें।",
+        "चन्द्र-दर्शन सुरक्षित स्थान से करें; असुरक्षित छत/भीड़ में न जाएँ और लौ बिना निगरानी न छोड़ें।",
+        "सरगी, बाया, वस्त्र, आभूषण, उपहार, छलनी, करवा, सात फेरे और पति से समापन परिवार-विशिष्ट हैं, खरीद की शर्त नहीं।",
+        "किसी कर्म से जीवनसाथी की आयु/स्वास्थ्य, विवाह, रक्षा, पुण्य या सफलता की गारंटी नहीं।"
+      ],
+      "short_answer": "उत्तर भारत का सीमित पारिवारिक रूप—परस्पर देखभाल, कृतज्ञता, परिवार की परिचित प्रार्थना या कथा और वैकल्पिक सुरक्षित चन्द्रोदय-समापन पर केन्द्रित; उपवास निर्धारित किए बिना और स्वास्थ्य, दीर्घायु, विवाह या किसी अन्य फल की गारंटी दिए बिना।",
+      "significance": {
+        "source_ids": [
+          "incredible-india-karva-chauth-context"
+        ],
+        "text": "करवा चौथ उत्तर भारतीय पारिवारिक पालन है जो वैवाहिक और पारिवारिक सम्बन्धों पर केन्द्रित है। आधिकारिक जीवन्त-वर्णन में प्रातः से चन्द्रोदय उपवास, सरगी, सामूहिक प्रार्थना/कथा और चन्द्र-समापन आते हैं, साथ ही नए पारस्परिक रूप भी दर्ज हैं।"
+      },
+      "title": "करवा चौथ पारिवारिक चिंतन और सहभागिता",
+      "typical_practices": [
+        {
+          "description": "वर्णन में प्रातः सरगी, बाया, दोपहर थाली/गौरा माँ के साथ सभा, बुज़ुर्ग की कथा और थाली फेरना, तथा छलनी, जल, भोजन और पति की सहभागिता वाला चन्द्र-समापन आता है।",
+          "instructional": false,
+          "population_scope": "Incredible India में वर्णित पंजाब परिवार",
+          "practice_id": "punjab-karwa-chauth",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ]
+        },
+        {
+          "description": "वर्णन में सरगी, श्रृंगार और संध्या-प्रार्थना; कुछ स्थानों पर चावल के लेप का चन्द्र-चित्र और करवे से जल आता है। इसे पंजाब क्रम में नहीं मिलाया गया है।",
+          "instructional": false,
+          "population_scope": "Incredible India में वर्णित उत्तर प्रदेश परिवार",
+          "practice_id": "uttar-pradesh-karwa-chauth",
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "difference": "भोजन, बाया, गौरा माँ, थाली फेरना, चन्द्र-रूप, अर्पण और समापन बदलते हैं।",
+          "scope": "पंजाब और उत्तर प्रदेश",
+          "separate_lane_required": true,
+          "source_ids": [
+            "incredible-india-karva-chauth-context"
+          ],
+          "variant_id": "punjab-and-uttar-pradesh"
+        },
+        {
+          "difference": "कुछ पति-पत्नी पारस्परिक रूप से जुड़ते हैं; यह मार्ग केवल महिलाओं या विवाहितों की सार्वभौमिक पात्रता नहीं बनाता।",
+          "scope": "वर्तमान दम्पती और परिवार",
+          "separate_lane_required": false,
+          "source_ids": [
+            "incredible-india-karva-chauth-context",
+            "devam-karwa-chauth-safety-boundary"
+          ],
+          "variant_id": "reciprocal-participation"
+        }
+      ]
+    }
+  ],
+  "observance_slugs": [
+    "karwa-chauth"
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "actionable_vidhi": true,
+      "applicability": true,
+      "evidence": true,
+      "materials_and_substitutions": true,
+      "origin_narratives": true,
+      "significance": true,
+      "timing": true,
+      "typical_practice": true,
+      "variants": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  },
+  "sources": [
+    {
+      "artifact_sha256": "c04a1d84ce766c312bb7e40c60025ceb01eb5cb5da7a3f6ccdb03e293ab53591",
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/karwa-chauth-delhi-north-india-2026-v1.json"
+      },
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "derivative_allowed",
+      "source_id": "devam-karwa-chauth-date-and-practice-fixture",
+      "source_role": "Deterministic date and current-practice semantic fixture; not ritual authority",
+      "title": "Devam Karwa Chauth Delhi and North India 2026 evidence fixture",
+      "url": null
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": {
+        "final_url": "https://www.incredibleindia.gov.in/en/festivals-and-events/karva-chauth",
+        "observed_at": "2026-08-07",
+        "response_bytes": 469344,
+        "response_sha256": "e6cbfcb9df0a6dc75cbe7972a8597514122c921670e76ed5bd06a26d7693f493",
+        "status": 200,
+        "strict_utf8": true
+      },
+      "publisher": "Incredible India, Ministry of Tourism, Government of India",
+      "rights_lane": "citation_only",
+      "source_id": "incredible-india-karva-chauth-context",
+      "source_role": "Official current North India identity, stories, ordinary fast, Punjab and Uttar Pradesh practice, and reciprocal-participation evidence",
+      "title": "Karva Chauth: A celebration of love and matrimony",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/karva-chauth"
+    },
+    {
+      "artifact_sha256": null,
+      "citation_coordinates": null,
+      "observed_fetch": null,
+      "publisher": "Devam",
+      "rights_lane": "internal_only",
+      "source_id": "devam-karwa-chauth-safety-boundary",
+      "source_role": "Editorial safety and scope boundary; not ritual authority",
+      "title": "Devam fasting, health, flame, rooftop, inclusion, and outcome boundary",
+      "url": null
+    }
+  ],
+  "supersedes_legacy_pack_ids": [
+    "devam-karwa-chauth-north-india-family-v1"
+  ]
+}

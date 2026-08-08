@@ -1,0 +1,97 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-rishi-panchami-saptarishi-reflection-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "rishi-panchami",
+  "scope": {
+    "region_codes": ["north-india", "west-india"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "language_codes": ["en", "hi"],
+    "delhi_2026_calendar_fixture_required": true,
+    "family_and_sampradaya_rishi_list_and_practice_override_generic_form": true,
+    "historical_purity_menstruation_and_atonement_claims_not_promoted": true,
+    "bhai_panchami_remains_separate": true
+  },
+  "sources": [
+    { "source_id": "devam-rishi-panchami-calendar-fixture", "title": "Bounded Delhi Rishi Panchami calendar fixture", "publisher": "Devam", "url": null, "source_class": "deterministic_calendar_evidence", "rights_lane": "derivative_allowed", "artifact_sha256": "ddc41a55a00b9755949f4a175a0edb05fc546b6a624acdd0992ffbf8e9b731e1", "evidence_role": "delhi_2026_bhadrapada_shukla_panchami_date_lane_only" },
+    { "source_id": "nirnayasindhu-1865-rishi-panchami-decision", "title": "Nirnayasindhu Rishi Panchami decision context", "publisher": "Mumbai, 1865 Marathi translation", "url": null, "source_class": "historical_rule_context", "rights_lane": "reference_only", "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b", "evidence_role": "historical_madhyahna_rule_and_precedence_conflict_not_modern_practice" },
+    { "source_id": "drikpanchang-rishi-panchami-delhi-2026", "title": "Rishi Panchami date and time for Delhi, 2026", "publisher": "Drik Panchang", "url": "https://www.drikpanchang.com/festivals/rishi-panchami/rishi-panchami-date-time.html?geoname-id=1273294&year=2026", "source_class": "current_practitioner_calendar_context", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://www.drikpanchang.com/festivals/rishi-panchami/rishi-panchami-date-time.html?geoname-id=1273294&year=2026", "response_bytes": 62659, "response_sha256": "20ecae009600fb8f4b58d03a1a510752db7bf18183205122460120d9399aa59a", "strict_utf8": true }, "evidence_role": "current_identity_date_and_descriptive_practice_context_not_product_text" },
+    { "source_id": "utsav-rishi-panchami-jaipur", "title": "Rishi Panchami (Bhai Panchami): A Day of Purity, Gratitude and Bonding", "publisher": "Utsav, Ministry of Tourism, Government of India", "url": "https://www.utsav.gov.in/view-event/rishi-panchami-bhai-panchami-1", "source_class": "official_regional_living_practice_context", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://www.utsav.gov.in/view-event/rishi-panchami-bhai-panchami-1", "response_bytes": 34260, "response_sha256": "12cba98957641160c489c92290c9a8691e2e9283f8b32190536be19ad490b6a3", "strict_utf8": true }, "evidence_role": "saptarishi_names_gratitude_wisdom_and_distinct_bhai_panchami_context_with_purity_claims_isolated" },
+    { "source_id": "pib-rishi-panchami-sages-knowledge", "title": "Prime Minister's address mentioning Rishi Panchami and the legacy of sages", "publisher": "Press Information Bureau, Government of India", "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1754095&lang=2&reg=48", "source_class": "official_national_knowledge_context", "rights_lane": "reference_only", "observed_fetch": { "status": 200, "final_url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1754095&lang=2&reg=48", "response_bytes": 153585, "response_sha256": "35833fd01213c93f0b9e9f28d174240c955b210cf2094778dcee119f5be01081", "strict_utf8": true }, "evidence_role": "knowledge_science_philosophy_sages_and_carry_forward_legacy_context" },
+    { "source_id": "devam-rishi-panchami-safety-boundary", "title": "Devam Rishi Panchami internal-beta dignity, safety, and attribution boundary", "publisher": "Devam", "url": null, "source_class": "editorial_safety_boundary", "rights_lane": "derivative_allowed", "evidence_role": "excludes_fast_health_purity_menstruation_dosha_atonement_formal_puja_gender_and_outcome_prescriptions" }
+  ],
+  "guides": [
+    {
+      "guide_id": "rishi-panchami-saptarishi-reflection-en-v1",
+      "language_code": "en",
+      "title": "Rishi Panchami learning and gratitude",
+      "summary": "A bounded Saptarishi remembrance through attributable learning, gratitude to teachers, inquiry, and service without promoting impurity or atonement claims.",
+      "family_practice_note": "Use the Saptarishi list, prayer, puja, fast, and close followed by your family or sampradaya. Lists of seven sages vary across textual and calendrical contexts. Devam does not describe menstruation or a person as impure, prescribe atonement, or merge Bhai Panchami into this guide.",
+      "context_prompts": ["Which region, family, or sampradaya Rishi Panchami practice applies?", "Which Saptarishi list, story, text, teacher lineage, or prayer does your family use?", "Do you want a simple reflection, a study circle, or help joining an established temple practice?", "Is any elder, teacher, practitioner, or temple directing a fast or formal puja?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10-minute remembrance", "estimated_minutes": 10, "materials": [{ "item": "No material required", "substitutions": ["An identified text", "A teacher's name", "A safe digital reference"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Confirm that the North/West India Rishi Panchami lane applies and keep Bhai Panchami separate.", "why": "The names may coincide in one current source but identify different community practices.", "optional": false, "source_ids": ["devam-rishi-panchami-calendar-fixture", "utsav-rishi-panchami-jaipur"] },
+          { "ordinal": 2, "instruction": "Remember the Saptarishis through the list your tradition uses, or simply honour the many sages and teachers who carried knowledge forward.", "why": "The sources support sage remembrance while lists and identities vary across traditions.", "optional": false, "source_ids": ["utsav-rishi-panchami-jaipur", "pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Choose one small act of learning, careful inquiry, teaching, or gratitude to a teacher.", "why": "This carries the legacy of knowledge, science, and philosophy into an honest action.", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge"] }
+        ] },
+        { "tier": "standard", "label": "30-minute sourced study", "estimated_minutes": 30, "materials": [{ "item": "One identified source about a rishi, teaching, or lineage", "substitutions": ["A family text", "A library source", "A teacher-led explanation"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Name the Saptarishi list or teaching lineage you are using and its source.", "why": "Attribution prevents one list from being presented as timeless and universal.", "optional": false, "source_ids": ["utsav-rishi-panchami-jaipur", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Study one short, coherent, attributable account or teaching and distinguish its text, commentary, story, and modern interpretation.", "why": "Source layers matter when translating ancient wisdom into present understanding.", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "Thank one teacher, caregiver, researcher, or knowledge-preserver in words or through a quiet note.", "why": "Gratitude makes the remembrance relational and inclusive.", "optional": true, "source_ids": ["utsav-rishi-panchami-jaipur", "pib-rishi-panchami-sages-knowledge"] },
+          { "ordinal": 4, "instruction": "Apply the learning through one act such as careful study, sharing a verified source, mentoring, or supporting a library.", "why": "A concrete act carries knowledge forward without promising purification or merit.", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60-minute family or study-circle form", "estimated_minutes": 60, "materials": [{ "item": "Family, teacher, temple, or study-circle source", "substitutions": ["A public library source", "A verified digital edition", "The standard individual form"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "Invite a family member, teacher, or study circle to identify one rishi or knowledge lineage and the sources being used.", "why": "Collective learning should remain source-aware.", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "Read, discuss, and compare one short teaching, preserving disagreement or uncertainty instead of forcing one account.", "why": "Inquiry and plural evidence better honour a knowledge tradition than false certainty.", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "If joining a temple or established family rite, keep its mantra, puja, offering, fasting, and timing under that authority rather than this guide.", "why": "A reflection pack is not a formal ritual manual.", "optional": false, "source_ids": ["drikpanchang-rishi-panchami-delhi-2026", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "Close by choosing one shared learning or knowledge-preservation commitment and recording the source you used.", "why": "This creates an attributable, repeatable contribution without a purity or outcome claim.", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] }
+        ] }
+      ]
+    },
+    {
+      "guide_id": "rishi-panchami-saptarishi-reflection-hi-v1",
+      "language_code": "hi",
+      "title": "ऋषि पंचमी अध्ययन और कृतज्ञता",
+      "summary": "अशुद्धि या प्रायश्चित्त के दावे बढ़ाए बिना स्रोत-स्पष्ट अध्ययन, गुरु-कृतज्ञता, जिज्ञासा और सेवा से सप्तर्षि स्मरण।",
+      "family_practice_note": "अपने परिवार या सम्प्रदाय की सप्तर्षि-सूची, प्रार्थना, पूजा, उपवास और समापन मानें। अलग ग्रन्थ और काल-सन्दर्भों में सप्तर्षि-सूचियाँ बदलती हैं। देवम मासिक धर्म या किसी व्यक्ति को अशुद्ध नहीं कहता, प्रायश्चित्त निर्धारित नहीं करता और भाई पंचमी को इस क्रम में नहीं मिलाता।",
+      "context_prompts": ["कौन-सा क्षेत्रीय, पारिवारिक या सम्प्रदायिक ऋषि पंचमी क्रम लागू है?", "परिवार कौन-सी सप्तर्षि-सूची, कथा, ग्रन्थ, गुरु-परम्परा या प्रार्थना मानता है?", "आप सरल चिंतन, अध्ययन-सभा या स्थापित मंदिर-क्रम में भागीदारी चाहते हैं?", "क्या कोई बुज़ुर्ग, गुरु, साधक या मंदिर उपवास अथवा औपचारिक पूजा निर्देशित कर रहा है?"],
+      "tiers": [
+        { "tier": "minimum", "label": "10 मिनट का स्मरण", "estimated_minutes": 10, "materials": [{ "item": "कोई सामग्री आवश्यक नहीं", "substitutions": ["पहचाना हुआ ग्रन्थ", "किसी गुरु का नाम", "सुरक्षित डिजिटल सन्दर्भ"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "पक्का करें कि उत्तर/पश्चिम भारत की ऋषि पंचमी लागू है और भाई पंचमी को अलग रखें।", "why": "एक वर्तमान स्रोत में नाम साथ आते हैं, पर सामुदायिक प्रथाएँ अलग हैं।", "optional": false, "source_ids": ["devam-rishi-panchami-calendar-fixture", "utsav-rishi-panchami-jaipur"] },
+          { "ordinal": 2, "instruction": "अपनी परम्परा की सप्तर्षि-सूची से स्मरण करें, या ज्ञान आगे लाने वाले अनेक ऋषियों और गुरुओं का सम्मान करें।", "why": "स्रोत ऋषि-स्मरण का समर्थन करते हैं, पर अलग परम्पराओं में सूचियाँ बदलती हैं।", "optional": false, "source_ids": ["utsav-rishi-panchami-jaipur", "pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "अध्ययन, सावधान जिज्ञासा, शिक्षण या गुरु-कृतज्ञता का एक छोटा काम चुनें।", "why": "इससे ज्ञान, विज्ञान और दर्शन की विरासत ईमानदार कर्म बनती है।", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge"] }
+        ] },
+        { "tier": "standard", "label": "30 मिनट का स्रोत-स्पष्ट अध्ययन", "estimated_minutes": 30, "materials": [{ "item": "किसी ऋषि, शिक्षा या परम्परा पर एक पहचाना स्रोत", "substitutions": ["पारिवारिक ग्रन्थ", "पुस्तकालय स्रोत", "गुरु-निर्देशित व्याख्या"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "जिस सप्तर्षि-सूची या ज्ञान-परम्परा का उपयोग हो उसका नाम और स्रोत बताएँ।", "why": "स्रोत-स्पष्टता एक सूची को शाश्वत और सार्वभौमिक बनाने से रोकती है।", "optional": false, "source_ids": ["utsav-rishi-panchami-jaipur", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "एक छोटा पूरा और स्रोत-स्पष्ट विवरण या शिक्षा पढ़ें; मूल ग्रन्थ, टीका, कथा और आधुनिक व्याख्या अलग रखें।", "why": "प्राचीन ज्ञान को आज समझते समय स्रोत की परतें महत्त्वपूर्ण हैं।", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "किसी गुरु, देखभालकर्ता, शोधकर्ता या ज्ञान-संरक्षक को शब्दों या छोटी टिप्पणी से धन्यवाद दें।", "why": "कृतज्ञता स्मरण को सम्बन्धपूर्ण और समावेशी बनाती है।", "optional": true, "source_ids": ["utsav-rishi-panchami-jaipur", "pib-rishi-panchami-sages-knowledge"] },
+          { "ordinal": 4, "instruction": "सावधान अध्ययन, सत्यापित स्रोत साझा करने, मार्गदर्शन या पुस्तकालय-सहयोग का एक काम करें।", "why": "ठोस कर्म शुद्धि या पुण्य का वादा किए बिना ज्ञान आगे बढ़ाता है।", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] }
+        ] },
+        { "tier": "elaborate", "label": "60 मिनट का परिवार या अध्ययन-सभा रूप", "estimated_minutes": 60, "materials": [{ "item": "परिवार, गुरु, मंदिर या अध्ययन-सभा का स्रोत", "substitutions": ["सार्वजनिक पुस्तकालय स्रोत", "सत्यापित डिजिटल संस्करण", "मानक व्यक्तिगत रूप"], "optional": true }], "steps": [
+          { "ordinal": 1, "instruction": "परिवार, गुरु या अध्ययन-सभा के साथ एक ऋषि या ज्ञान-परम्परा और उपयोग किए स्रोत पहचानें।", "why": "सामूहिक अध्ययन भी स्रोत-सचेत रहे।", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 2, "instruction": "एक छोटी शिक्षा पढ़ें, चर्चा करें और तुलना में मतभेद या अनिश्चितता बचाएँ।", "why": "झूठी निश्चितता से बेहतर जिज्ञासा और बहुल प्रमाण ज्ञान-परम्परा का सम्मान करते हैं।", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 3, "instruction": "मंदिर या स्थापित पारिवारिक रीति में जुड़ें तो मंत्र, पूजा, अर्पण, उपवास और समय उसी अधिकारी के अधीन रखें।", "why": "चिंतन-पैक औपचारिक अनुष्ठान-पुस्तिका नहीं है।", "optional": false, "source_ids": ["drikpanchang-rishi-panchami-delhi-2026", "devam-rishi-panchami-safety-boundary"] },
+          { "ordinal": 4, "instruction": "ज्ञान-संरक्षण या साझा अध्ययन की एक प्रतिज्ञा और उपयोग किया स्रोत लिखकर समापन करें।", "why": "यह अशुद्धि या फल-दावे के बिना स्रोत-स्पष्ट योगदान बनाता है।", "optional": false, "source_ids": ["pib-rishi-panchami-sages-knowledge", "devam-rishi-panchami-safety-boundary"] }
+        ] }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "saptarishi_remembrance_attributable_study_teacher_gratitude_and_service_supported": true,
+    "multiple_saptarishi_lists_and_source_layers_acknowledged": true,
+    "material_free_and_non_fasting_form_supported": true,
+    "fast_food_dietary_or_medical_guidance_given": false,
+    "formal_puja_mantra_offering_bath_ingestion_or_close_prescribed": false,
+    "menstruation_or_person_described_as_impure": false,
+    "rajaswala_dosha_atonement_or_guilt_promoted": false,
+    "women_only_participation_universalized": false,
+    "bhai_panchami_merged": false,
+    "purification_forgiveness_merit_health_protection_or_other_outcome_guaranteed": false,
+    "one_saptarishi_list_or_interpretation_claimed_universal": false,
+    "all_regional_sampradaya_and_nepal_variants_complete": false
+  }
+}

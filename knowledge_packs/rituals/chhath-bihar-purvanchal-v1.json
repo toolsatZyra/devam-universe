@@ -1,0 +1,182 @@
+{
+  "contract": "DEVAM_RITUAL_PROCEDURE_PACK_V1",
+  "pack_id": "devam-chhath-bihar-purvanchal-v1",
+  "editorial_status": "internal_beta_research_synthesis",
+  "observance_slug": "chhath-puja-sandhya-arghya",
+  "scope": {
+    "region_codes": ["bihar-purvanchal"],
+    "tradition_codes": ["surya-chhath-bihar-purvanchal"],
+    "language_codes": ["en", "hi"],
+    "family_and_parvaitin_guidance_overrides_generic_sequence": true,
+    "exact_patna_or_delhi_reference_profile_required_for_calendar_date": true
+  },
+  "sources": [
+    {
+      "source_id": "bihar-tourism-chhath-en",
+      "title": "Chhath Puja",
+      "publisher": "Department of Tourism, Government of Bihar",
+      "url": "https://tourism.bihar.gov.in/en/experiences/festivals-and-fairs/festivals/chhath-puja",
+      "source_class": "official_regional_current",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "bihar-tourism-chhath-hi",
+      "title": "छठ पूजा",
+      "publisher": "Department of Tourism, Government of Bihar",
+      "url": "https://tourism.bihar.gov.in/hi/experiences/festivals-and-fairs/festivals/chhath-puja",
+      "source_class": "official_regional_current_hindi",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "president-of-india-chhath-2025",
+      "title": "President's greetings on Chhath Puja",
+      "publisher": "Rashtrapati Bhavan",
+      "url": "https://www.presidentofindia.gov.in/press_releases/presidents-greetings-chhath-puja",
+      "source_class": "official_current_meaning_context",
+      "rights_lane": "reference_only"
+    },
+    {
+      "source_id": "devam-chhath-date-fixture",
+      "title": "Devam Chhath Patna–Delhi 2026 date evidence fixture",
+      "publisher": "Devam",
+      "url": null,
+      "source_class": "deterministic_calendar_crosswalk",
+      "rights_lane": "derivative_allowed"
+    }
+  ],
+  "guides": [
+    {
+      "guide_id": "chhath-bihar-purvanchal-en-v1",
+      "language_code": "en",
+      "title": "Chhath with your family",
+      "summary": "Chhath is a demanding four-day Bihar and Purvanchal observance centred on gratitude to Surya, Sandhya Arghya at sunset, and Usha Arghya at the following sunrise. Use this guide to participate or support an established family practice; do not begin a strict or nirjala fast merely because an app listed it.",
+      "family_practice_note": "Ask who the parvaitin is and follow that person's family sequence, songs, prasad rules, and community arrangements. Bihar, eastern Uttar Pradesh, Nepal, and diaspora practices are related but not identical. Devam's current calendar lane is exact only for the Patna and Delhi reference profiles.",
+      "context_prompts": [
+        "Are you the established parvaitin, a family helper, or joining for the first time?",
+        "Does your family observe a four-day sequence, and who guides its food, fasting, prasad, and purity rules?",
+        "Will Sandhya and Usha Arghya take place at a safely managed ghat, waterbody, courtyard, or home setting?",
+        "Are there health, pregnancy, medication, heat, mobility, water-safety, smoke, or flame concerns that require a safer family plan?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "First-time or supporting participation",
+          "estimated_minutes": 20,
+          "materials": [
+            {"item": "A clean, safe place to join the family prayer", "substitutions": ["Use a home or community setting instead of entering crowded or unsafe water"], "optional": false},
+            {"item": "The water vessel, fruit, flowers, or prasad already selected by the family", "substitutions": ["Assist without inventing a new offering list"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Ask the parvaitin or family elder what role would genuinely help. Do not independently begin a fast, nirjala regimen, or exact food restriction from this summary.", "why": "The official regional source describes a strict multi-day observance; eligibility, health, and family rules cannot be reduced to a generic app instruction.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "bihar-tourism-chhath-hi"]},
+            {"ordinal": 2, "instruction": "Help clean and prepare the worship and approach area, keep waste out of the water, and arrange safe lighting, crowd movement, and supervision for children or elders.", "why": "Cleanliness, nature, cooperation, and collective participation are explicit official meanings of Chhath.", "optional": false, "source_ids": ["president-of-india-chhath-2025", "bihar-tourism-chhath-en"]},
+            {"ordinal": 3, "instruction": "On the resolved Sandhya Arghya evening, join the family's prayer to Surya and offer arghya only in the manner the family or ghat organiser directs; do not look directly at the Sun or enter unsafe water.", "why": "The setting-Sun arghya is the third-day centre of the official four-day account, while physical safety remains contextual.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "devam-chhath-date-fixture"]},
+            {"ordinal": 4, "instruction": "Return for Usha Arghya at the following sunrise if practical, then receive and share prasad respectfully according to the household's closing practice.", "why": "The official sequence closes with arghya to the rising Sun, completion of the fast by observers, and sharing prasad.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "devam-chhath-date-fixture"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "Family-led four-day observance",
+          "estimated_minutes": 45,
+          "materials": [
+            {"item": "The household's established cleaning, cooking, prasad, basket, lamp, and arghya materials", "substitutions": ["Use the family's actual list; Devam does not declare one universal mandatory set"], "optional": false},
+            {"item": "A safe transport, ghat, water, crowd, and weather plan for evening and pre-dawn gatherings", "substitutions": ["Use an organised home or community setting where a waterbody is unsafe or inaccessible"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Day 1 — Nahay Khay: prepare the household and food in the family's known form, with bathing or water observance only where safe and customary.", "why": "The first day begins the official four-day purity and preparation sequence.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "devam-chhath-date-fixture"]},
+            {"ordinal": 2, "instruction": "Day 2 — Kharna: let the established parvaitin and family tradition govern the worship, meal, and any subsequent fast; helpers should protect rest, hydration decisions, medication schedules, and food safety rather than impose rules.", "why": "Kharna is a defined second-day boundary, but fasting suitability and exact food practice are personal and family-led.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "bihar-tourism-chhath-hi", "devam-chhath-date-fixture"]},
+            {"ordinal": 3, "instruction": "Day 3 — Sandhya Arghya: prepare the family's prasad and basket, travel safely, and join the setting-Sun arghya, songs, and prayer in the known community form.", "why": "The official source identifies prasad preparation and Sanjhiya/Sandhya Arghya as the third-day centre.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "devam-chhath-date-fixture"]},
+            {"ordinal": 4, "instruction": "Day 4 — Usha Arghya: gather before sunrise with adequate light and safe footing, offer arghya in the family form, then close and share prasad.", "why": "The rising-Sun arghya and communal sharing close the official sequence.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "president-of-india-chhath-2025", "devam-chhath-date-fixture"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "Parvaitin- and community-led full family practice",
+          "estimated_minutes": 90,
+          "materials": [
+            {"item": "The exact family or community materials, prasad recipes, songs, baskets, sugarcane canopy or Kosi setup, and closing rules", "substitutions": ["Follow the recognised family/community lead rather than reconstructing formal details from this synthesis"], "optional": false},
+            {"item": "An explicit plan for food hygiene, flame safety, first aid, crowd flow, water barriers, transport, and rest", "substitutions": ["Scale down or use a controlled home setting when safe community arrangements are unavailable"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the complete four-day order, songs, prasad preparation, Kosi practice if kept, fasting decisions, arghya method, and parana with the actual parvaitin and family or community guide.", "why": "These details vary and a full strict observance depends on living authority and participant context.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "bihar-tourism-chhath-hi"]},
+            {"ordinal": 2, "instruction": "Follow that known sequence while helpers take responsibility for logistics and safety; preserve the setting-Sun and rising-Sun arghya as distinct boundaries.", "why": "The two arghyas and collective participation are central, while exact implementation belongs to the living practice.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "president-of-india-chhath-2025"]},
+            {"ordinal": 3, "instruction": "Close only according to the family's Usha Arghya and parana practice, then distribute prasad and leave the worship and water area cleaner than it was found.", "why": "The official account closes with morning arghya, parana, sharing, cleanliness, and care for nature.", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "president-of-india-chhath-2025"]}
+          ]
+        }
+      ]
+    },
+    {
+      "guide_id": "chhath-bihar-purvanchal-hi-v1",
+      "language_code": "hi",
+      "title": "परिवार के साथ छठ",
+      "summary": "छठ बिहार और पूर्वांचल का चार-दिवसीय कठिन व्रत-पर्व है, जिसमें सूर्य के प्रति कृतज्ञता, अस्त होते सूर्य को संध्या अर्घ्य और अगली सुबह उगते सूर्य को उषा अर्घ्य मुख्य हैं। इस मार्गदर्शिका से स्थापित पारिवारिक परम्परा में भाग लें या सहयोग करें; केवल ऐप देखकर कठिन या निर्जला व्रत आरम्भ न करें।",
+      "family_practice_note": "पहले जानें कि परवैतिन कौन हैं और उन्हीं के पारिवारिक क्रम, गीत, प्रसाद और सामुदायिक व्यवस्था का अनुसरण करें। बिहार, पूर्वी उत्तर प्रदेश, नेपाल और प्रवासी परम्पराएँ सम्बन्धित हैं, पर एक जैसी नहीं। वर्तमान पंचांग-लेन केवल पटना और दिल्ली के सटीक सन्दर्भों के लिए है।",
+      "context_prompts": [
+        "क्या आप स्थापित परवैतिन हैं, परिवार के सहयोगी हैं या पहली बार जुड़ रहे हैं?",
+        "आपके परिवार में चार-दिवसीय क्रम किस प्रकार होता है और भोजन, व्रत, प्रसाद व शुद्धता के नियम कौन बताते हैं?",
+        "संध्या और उषा अर्घ्य सुरक्षित घाट, जलाशय, आँगन या गृह-व्यवस्था में होंगे?",
+        "क्या स्वास्थ्य, गर्भावस्था, दवा, गर्मी, चलने-फिरने, जल, धुएँ या अग्नि से जुड़ी कोई सावधानी आवश्यक है?"
+      ],
+      "tiers": [
+        {
+          "tier": "minimum",
+          "label": "पहली बार या सहयोगी रूप में सहभागिता",
+          "estimated_minutes": 20,
+          "materials": [
+            {"item": "परिवार की प्रार्थना में जुड़ने के लिए स्वच्छ और सुरक्षित स्थान", "substitutions": ["भीड़ या असुरक्षित जल में उतरने के बजाय घर या सुरक्षित सामुदायिक स्थान लें"], "optional": false},
+            {"item": "परिवार द्वारा चुना गया अर्घ्य-पात्र, फल, फूल या प्रसाद", "substitutions": ["नई अनिवार्य सामग्री-सूची गढ़ने के बजाय सहयोग करें"], "optional": true}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "परवैतिन या परिवार के बड़े से पूछें कि आपका कौन-सा सहयोग उपयोगी होगा। इस सारांश से अपने-आप व्रत, निर्जला नियम या भोजन-निषेध आरम्भ न करें।", "why": "आधिकारिक क्षेत्रीय स्रोत इसे कठिन बहु-दिवसीय व्रत बताता है; स्वास्थ्य और पारिवारिक नियम सामान्य ऐप-निर्देश नहीं हो सकते।", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "bihar-tourism-chhath-hi"]},
+            {"ordinal": 2, "instruction": "पूजा-स्थान और आने-जाने का मार्ग स्वच्छ रखें, जल में कचरा न जाने दें और दीप, भीड़, बच्चों व बुज़ुर्गों की सुरक्षित व्यवस्था करें।", "why": "स्वच्छता, प्रकृति, सहयोग और सामूहिक सहभागिता छठ के आधिकारिक अर्थों में स्पष्ट हैं।", "optional": false, "source_ids": ["president-of-india-chhath-2025", "bihar-tourism-chhath-hi"]},
+            {"ordinal": 3, "instruction": "निर्धारित संध्या अर्घ्य पर परिवार के साथ सूर्य और छठी मैया की प्रार्थना में जुड़ें; अर्घ्य परिवार या घाट-व्यवस्थापक के निर्देश और सुरक्षित परिस्थिति में ही दें।", "why": "अस्त होते सूर्य का अर्घ्य आधिकारिक चार-दिवसीय क्रम के तीसरे दिन का केन्द्र है।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "devam-chhath-date-fixture"]},
+            {"ordinal": 4, "instruction": "सम्भव हो तो अगली सुबह उषा अर्घ्य में जुड़ें और परिवार की समापन-विधि के अनुसार प्रसाद ग्रहण व साझा करें।", "why": "उगते सूर्य को अर्घ्य और प्रसाद-वितरण से आधिकारिक क्रम पूर्ण होता है।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "devam-chhath-date-fixture"]}
+          ]
+        },
+        {
+          "tier": "standard",
+          "label": "परिवार-निर्देशित चार-दिवसीय पालन",
+          "estimated_minutes": 45,
+          "materials": [
+            {"item": "परिवार में प्रचलित सफाई, भोजन, प्रसाद, सूप, दीप और अर्घ्य की सामग्री", "substitutions": ["परिवार की वास्तविक सूची लें; देवम एक राष्ट्रीय अनिवार्य सूची घोषित नहीं करता"], "optional": false},
+            {"item": "संध्या और प्रातः के लिए सुरक्षित यात्रा, घाट, जल, भीड़ और मौसम की योजना", "substitutions": ["जलाशय असुरक्षित हो तो संगठित गृह या सामुदायिक व्यवस्था लें"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "दिन 1 — नहाय-खाय: घर और भोजन को पारिवारिक रीति से तैयार करें; स्नान या जल-विधि वहीं करें जहाँ वह सुरक्षित और प्रचलित हो।", "why": "पहला दिन आधिकारिक चार-दिवसीय शुद्धता और तैयारी-क्रम आरम्भ करता है।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "devam-chhath-date-fixture"]},
+            {"ordinal": 2, "instruction": "दिन 2 — खरना: पूजा, भोजन और आगे के व्रत का निर्णय परवैतिन और पारिवारिक परम्परा करें; सहयोगी विश्राम, दवा, खाद्य-सुरक्षा और स्वास्थ्य-सावधानी में सहायता दें।", "why": "खरना निश्चित दूसरा दिन है, पर व्रत की उपयुक्तता और भोजन-विधि व्यक्ति व परिवार पर निर्भर है।", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "bihar-tourism-chhath-hi", "devam-chhath-date-fixture"]},
+            {"ordinal": 3, "instruction": "दिन 3 — संध्या अर्घ्य: पारिवारिक प्रसाद और सूप तैयार करें, सुरक्षित रूप से जाएँ और अस्त होते सूर्य के अर्घ्य, गीत व प्रार्थना में जुड़ें।", "why": "आधिकारिक स्रोत तीसरे दिन प्रसाद-तैयारी और संझिया/संध्या अर्घ्य को केन्द्र में रखता है।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "devam-chhath-date-fixture"]},
+            {"ordinal": 4, "instruction": "दिन 4 — उषा अर्घ्य: पर्याप्त प्रकाश और सुरक्षित पाँव-मार्ग के साथ सूर्योदय से पहले पहुँचें, पारिवारिक रीति से अर्घ्य दें और प्रसाद बाँटकर समापन करें।", "why": "उगते सूर्य का अर्घ्य और सामुदायिक प्रसाद आधिकारिक क्रम पूर्ण करते हैं।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "president-of-india-chhath-2025", "devam-chhath-date-fixture"]}
+          ]
+        },
+        {
+          "tier": "elaborate",
+          "label": "परवैतिन और समुदाय-निर्देशित पूर्ण पारिवारिक परम्परा",
+          "estimated_minutes": 90,
+          "materials": [
+            {"item": "परिवार या समुदाय की ठीक सामग्री, प्रसाद-विधि, गीत, सूप, गन्ने का कोसी-मण्डप और समापन-नियम", "substitutions": ["इस संश्लेषण से औपचारिक विवरण बनाने के बजाय मान्य पारिवारिक या सामुदायिक मार्गदर्शक लें"], "optional": false},
+            {"item": "खाद्य-स्वच्छता, दीप-सुरक्षा, प्राथमिक उपचार, भीड़, जल-सीमा, यात्रा और विश्राम की स्पष्ट योजना", "substitutions": ["सुरक्षित व्यवस्था न हो तो नियंत्रित गृह-विधि अपनाएँ"], "optional": false}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "पूरा चार-दिवसीय क्रम, गीत, प्रसाद, कोसी यदि रखा जाता हो, व्रत-निर्णय, अर्घ्य और पारण वास्तविक परवैतिन तथा पारिवारिक या सामुदायिक जानकार से निश्चित करें।", "why": "इन विवरणों में भिन्नता है और कठिन पूर्ण व्रत जीवित परम्परा व साधक-सन्दर्भ पर निर्भर है।", "optional": false, "source_ids": ["bihar-tourism-chhath-en", "bihar-tourism-chhath-hi"]},
+            {"ordinal": 2, "instruction": "उसी ज्ञात क्रम का अनुसरण करें और सहयोगी व्यवस्था व सुरक्षा सँभालें; अस्त और उदय होते सूर्य के अर्घ्य को अलग सीमाओं के रूप में सुरक्षित रखें।", "why": "दोनों अर्घ्य और सामूहिक सहभागिता केन्द्र में हैं; पूर्ण क्रियान्वयन जीवित परम्परा का है।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "president-of-india-chhath-2025"]},
+            {"ordinal": 3, "instruction": "परिवार की उषा अर्घ्य और पारण-विधि से ही समापन करें, प्रसाद बाँटें और पूजा व जल-क्षेत्र को पहले से अधिक स्वच्छ छोड़ें।", "why": "आधिकारिक वर्णन प्रातः अर्घ्य, पारण, साझा प्रसाद, स्वच्छता और प्रकृति-सम्मान से पूर्ण होता है।", "optional": false, "source_ids": ["bihar-tourism-chhath-hi", "president-of-india-chhath-2025"]}
+          ]
+        }
+      ]
+    }
+  ],
+  "boundaries": {
+    "minimum_standard_elaborate_forms_included": true,
+    "hindi_and_english_included": true,
+    "substitutions_included": true,
+    "family_context_prompts_included": true,
+    "four_day_sequence_included": true,
+    "formal_priest_mantras_included": false,
+    "fasting_or_nirjala_regimen_prescribed": false,
+    "medical_suitability_claimed": false,
+    "direct_sun_gazing_instructed": false,
+    "unsafe_water_entry_instructed": false,
+    "one_universal_procedure_claimed": false,
+    "all_regional_and_family_variants_complete": false,
+    "newcomer_minimum_form_claimed_equivalent_to_full_vrata": false
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "contract": "DEVAM_GRETIL_RAMCHARITMANAS_INGESTION_V1",
+  "pilot_id": "MVP-RAMAYANA-RAMCHARITMANAS-GRETIL-2026-08-06",
+  "source_copy_policy": "reference_only_no_duplicate_payload",
+  "objective_boundary": "Adds one exact seven-carrier Awadhi Ramcharitmanas transliteration expression for source-grounded MVP retrieval while preserving edition, rights, and tradition limits.",
+  "provider": {
+    "name": "GRETIL",
+    "provider_item_id": "GRE-00883",
+    "legacy_queue_id": "AQ-01507",
+    "catalogue_source_url": "https://gretil.sub.uni-goettingen.de/gretil.html",
+    "acquired_at": "2026-07-12T00:00:00Z"
+  },
+  "catalog_evidence": {
+    "provider_catalog_path": "source_vault/catalogs/providers/gretil-items-2026-07-12.csv",
+    "provider_catalog_sha256": "9bdce738aac68944f904d2e886fb71c9641dbad99b1332761881172375a005b8",
+    "provider_row_key": "GRE-00883",
+    "provider_row_sha256": "20d0175450262f4d9f788e139f6e2cc7eda0aa7986396f445527d63a3462c03f",
+    "source_leads_path": "source_vault/catalogs/source-leads.csv",
+    "source_leads_sha256": "d678967886b5215700f672fe8e8505a065542d48fc042788f2f44173d8229b38",
+    "source_lead_key": "AQ-01507",
+    "source_lead_row_sha256": "ba9bdcd24ee81ca6d5e8ca2a40e1b68072a094966070781e07f034cc64b88696"
+  },
+  "identity": {
+    "header_title_literal": "Tulasidasa [Tulsidas]: Ramacaritamanasa [Ram Carit Manas]",
+    "input_literal": "Input \"by a group of volunteers at Ratlam\"",
+    "author": "Tulsidas",
+    "work": "Ramcharitmanas",
+    "source_language": "Awadhi",
+    "carrier_script": "Latin transliteration",
+    "underlying_source_edition_identified": false,
+    "electronic_input_role": "A group of volunteers at Ratlam",
+    "provider_transformation_role": "GRETIL conversion to Unicode UTF-8 HTML"
+  },
+  "work": {
+    "slug": "tulsidas-ramcharitmanas",
+    "canonical_title": "Ramcharitmanas",
+    "work_kind": "devotional_epic",
+    "tradition_scope": ["Ramayana", "Vaishnava", "Rama-bhakti"],
+    "summary": "Tulsidas's Awadhi devotional retelling of the Rama narrative, preserved in many editions, scripts, translations, commentaries, performance traditions, and regional reception histories."
+  },
+  "expression": {
+    "language_code": "awa",
+    "script_code": "Latn",
+    "expression_kind": "electronic_transliteration",
+    "attribution": "Tulsidas; electronic input by a group of volunteers at Ratlam; Unicode conversion by GRETIL.",
+    "is_source_original": false,
+    "ai_generated": false
+  },
+  "edition": {
+    "edition_title": "GRETIL Ratlam-input Roman transliteration (seven-sopana carrier set)",
+    "publisher": "GRETIL",
+    "publication_place": "Göttingen",
+    "publication_year": null,
+    "edition_statement": "Seven legacy GRETIL UTF-8 HTML carriers sourced from a Ratlam volunteer input; the underlying source edition is not identified.",
+    "identifiers": {
+      "gretil_item_id": "GRE-00883",
+      "legacy_queue_id": "AQ-01507"
+    }
+  },
+  "rights": {
+    "lane": "private_evidence",
+    "license": null,
+    "required_literals": [
+      "THIS GRETIL TEXT FILE IS FOR REFERENCE PURPOSES ONLY!",
+      "COPYRIGHT AND TERMS OF USAGE AS FOR SOURCE FILE."
+    ],
+    "status": "source_file_terms_unidentified_internal_review_only",
+    "product_clearance": false
+  },
+  "source_objects": [
+    {
+      "part": 1,
+      "role": "sopana_1_balakanda",
+      "title": "Sopana 1: Balakanda",
+      "object_path": "objects/sha256/07/070d32fdfbc30a1180857126a047f05be39f4d9bb5856effb2955e7c7e268019",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm1u.htm",
+      "bytes": 323713,
+      "sha256": "070d32fdfbc30a1180857126a047f05be39f4d9bb5856effb2955e7c7e268019",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "part": 2,
+      "role": "sopana_2_ayodhyakanda",
+      "title": "Sopana 2: Ayodhyakanda",
+      "object_path": "objects/sha256/39/39531b3869e24c7b70ba6a89a720ec5ff2aab30389056dce76a239f623c5724a",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm2u.htm",
+      "bytes": 268981,
+      "sha256": "39531b3869e24c7b70ba6a89a720ec5ff2aab30389056dce76a239f623c5724a",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "part": 3,
+      "role": "sopana_3_aranyakanda",
+      "title": "Sopana 3: Aranyakanda",
+      "object_path": "objects/sha256/94/9484b6ccfa6593f4ba6acd1a508cbc0390226ce075312eb83b3206692c61d194",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm3u.htm",
+      "bytes": 69482,
+      "sha256": "9484b6ccfa6593f4ba6acd1a508cbc0390226ce075312eb83b3206692c61d194",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "part": 4,
+      "role": "sopana_4_kiskindhakanda",
+      "title": "Sopana 4: Kiskindhakanda",
+      "object_path": "objects/sha256/48/48e685579ddb473ffa4b06763691696a939ca80f4771ff4129abca13bfd61a23",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm4u.htm",
+      "bytes": 36584,
+      "sha256": "48e685579ddb473ffa4b06763691696a939ca80f4771ff4129abca13bfd61a23",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "part": 5,
+      "role": "sopana_5_sundarakanda",
+      "title": "Sopana 5: Sundarakanda",
+      "object_path": "objects/sha256/ca/caf4db4bce8249e600ee1a39e2b6df65457f14fee2f79624a951a017f77a54e5",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm5u.htm",
+      "bytes": 60294,
+      "sha256": "caf4db4bce8249e600ee1a39e2b6df65457f14fee2f79624a951a017f77a54e5",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "part": 6,
+      "role": "sopana_6_lankakanda",
+      "title": "Sopana 6: Lankakanda",
+      "object_path": "objects/sha256/0e/0e466561ef750caea4c4d795b8a8dd3bcdda88d0d38fd2898c68e601b2f7ed2b",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm6u.htm",
+      "bytes": 138995,
+      "sha256": "0e466561ef750caea4c4d795b8a8dd3bcdda88d0d38fd2898c68e601b2f7ed2b",
+      "media_type": "text/html; charset=utf-8"
+    },
+    {
+      "part": 7,
+      "role": "sopana_7_uttarakanda",
+      "title": "Sopana 7: Uttarakanda",
+      "object_path": "objects/sha256/39/392d3d52649280b8ba2369d12a05d454d57ef06884623dc4b913aeea053e45ff",
+      "source_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm7u.htm",
+      "bytes": 148584,
+      "sha256": "392d3d52649280b8ba2369d12a05d454d57ef06884623dc4b913aeea053e45ff",
+      "media_type": "text/html; charset=utf-8"
+    }
+  ],
+  "live_observations": [
+    {"part": 1, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm1u.htm", "bytes": 323713, "sha256": "070d32fdfbc30a1180857126a047f05be39f4d9bb5856effb2955e7c7e268019", "strict_utf8": true},
+    {"part": 2, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm2u.htm", "bytes": 268981, "sha256": "39531b3869e24c7b70ba6a89a720ec5ff2aab30389056dce76a239f623c5724a", "strict_utf8": true},
+    {"part": 3, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm3u.htm", "bytes": 69482, "sha256": "9484b6ccfa6593f4ba6acd1a508cbc0390226ce075312eb83b3206692c61d194", "strict_utf8": true},
+    {"part": 4, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm4u.htm", "bytes": 36584, "sha256": "48e685579ddb473ffa4b06763691696a939ca80f4771ff4129abca13bfd61a23", "strict_utf8": true},
+    {"part": 5, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm5u.htm", "bytes": 60294, "sha256": "caf4db4bce8249e600ee1a39e2b6df65457f14fee2f79624a951a017f77a54e5", "strict_utf8": true},
+    {"part": 6, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm6u.htm", "bytes": 138995, "sha256": "0e466561ef750caea4c4d795b8a8dd3bcdda88d0d38fd2898c68e601b2f7ed2b", "strict_utf8": true},
+    {"part": 7, "status": 200, "final_url": "https://gretil.sub.uni-goettingen.de/gretil/3_nia/hindi/tulrcm7u.htm", "bytes": 148584, "sha256": "392d3d52649280b8ba2369d12a05d454d57ef06884623dc4b913aeea053e45ff", "strict_utf8": true}
+  ],
+  "structure": {
+    "status": "exact_seven_carrier_set_structurally_covered_with_terminal_closures",
+    "edition_completeness_status": "complete_exact_seven_carrier_set_underlying_edition_unknown",
+    "text_status": "exact_utf8_html_text_projection",
+    "publication_state": "review",
+    "sopana_count": 7,
+    "passage_count": 2540,
+    "literal_number_marker_count": 1343,
+    "global_literal_marker_root_sha256": "b7577006d01e50221ca2ae70458f174fdebf21ca310aa3526ba355a213cbccb9",
+    "marker_identity_rule": "Literal printed markers are retained as non-unique labels; citation identity is source SHA plus part plus source-relative ordinal plus byte span.",
+    "part_profiles": [
+      {"part": 1, "title": "Balakanda", "line_count": 5007, "body_start": 5325, "body_end_exclusive": 323679, "body_span_sha256": "266d24ea29a30fd066e2c33645cbbc28e5a8f4ef23fcd81a91ebbdeef9ca9211", "passage_count": 824, "literal_marker_count": 410, "literal_marker_root_sha256": "ce08a1a611bb944cb4052618d04c3734d006547f19f9ca2d5469a53fa076a744", "passage_root_sha256": "05cce4328fa0b565f0fee234d555c5ad1f68d6a8bf340acd1c1bfa3626e9fa84", "closure_passage_ordinal": 824, "terminal_literal": "prathamaḥ sopānaḥ samāptaḥ /", "trailing_aarti_start_ordinal": null},
+      {"part": 2, "title": "Ayodhyakanda", "line_count": 4112, "body_start": 5332, "body_end_exclusive": 268947, "body_span_sha256": "9ae41e733198eed0ddf417c3f3cda5ccf72bff93cd35bf444a86a460eb8c17dc", "passage_count": 665, "literal_marker_count": 325, "literal_marker_root_sha256": "d237b236eb9a9dacfcf9eac20c3e22aca176ce096ec65781f21bed1525696ba5", "passage_root_sha256": "1e4823120414d9481724fd1a2105e69e21081167fc49ceacbfa7f5a265e4be78", "closure_passage_ordinal": 665, "terminal_literal": "dvitīyaḥ sopānaḥ samāptaḥ /", "trailing_aarti_start_ordinal": null},
+      {"part": 3, "title": "Aranyakanda", "line_count": 1066, "body_start": 5331, "body_end_exclusive": 69442, "body_span_sha256": "faa70a9891f350180a97a0360a712b6f2259454b855e9691b0028cc4a415cd0b", "passage_count": 125, "literal_marker_count": 66, "literal_marker_root_sha256": "d6a16aa89bf6c75c84b1233523877304159ab207904250d5faf87d1af3cb3064", "passage_root_sha256": "13d99973c846fdd539279b81ee3b64e46fa0fa5a322a42ac8686504526671cbb", "closure_passage_ordinal": 125, "terminal_literal": "tr̥tīyaḥ sopānaḥ samāptaḥ /", "trailing_aarti_start_ordinal": null},
+      {"part": 4, "title": "Kiskindhakanda", "line_count": 576, "body_start": 5330, "body_end_exclusive": 36550, "body_span_sha256": "2ce9ff8dae44ab039fa327e692f9926095fca0e7259e721f39593acd120dba3a", "passage_count": 67, "literal_marker_count": 36, "literal_marker_root_sha256": "5e738ab5aec4938234d8d8719a2cb2aa4cf3c2da477b172555008d0cb542dfbe", "passage_root_sha256": "c262aa161a70e21c6010b43a286785541301287308e79e6047edd9dfc26a0676", "closure_passage_ordinal": 67, "terminal_literal": "caturtha sopānaḥ samāptaḥ /", "trailing_aarti_start_ordinal": null},
+      {"part": 5, "title": "Sundarakanda", "line_count": 937, "body_start": 5328, "body_end_exclusive": 60260, "body_span_sha256": "3ba087dc1ebd3b84ff0d3d90f7ecdfee18d458c7f0537eded070076ff656290d", "passage_count": 133, "literal_marker_count": 71, "literal_marker_root_sha256": "27b9bdef1f701cec472a16bd63d125a0e99e168ab4a841ad798b8e889a883d08", "passage_root_sha256": "33b5aafe0e1374ed958da6686023b5af22a6d158ab40cec3d4c023323b5cf589", "closure_passage_ordinal": 133, "terminal_literal": "paṅcamaḥ sopānaḥ samāptaḥ  /", "trailing_aarti_start_ordinal": null},
+      {"part": 6, "title": "Lankakanda", "line_count": 2132, "body_start": 5328, "body_end_exclusive": 138961, "body_span_sha256": "433c4a94474afcabf614d25012dcc38f4dfea6206cf29d94a3699ff1b393ef42", "passage_count": 333, "literal_marker_count": 179, "literal_marker_root_sha256": "43cde4bd8d4dfae13b443d60f0270cb0cd61b0891757800375635a112bc26cec", "passage_root_sha256": "39b0f3df54345401453413a6a9e48b5cee8fe2c568c8173dfcfd4deda39044e1", "closure_passage_ordinal": 333, "terminal_literal": "ṣaṣṭhaḥ sopānaḥ samāptaḥ /", "trailing_aarti_start_ordinal": null},
+      {"part": 7, "title": "Uttarakanda", "line_count": 2322, "body_start": 5329, "body_end_exclusive": 148544, "body_span_sha256": "c0e432376258c615f7cb8e9c5f7a2c6c991ac248986fa72e4d3fc41870f96b1c", "passage_count": 393, "literal_marker_count": 256, "literal_marker_root_sha256": "7d92eca677c41b2bbff53cd7fd5176d22b881ffb6e60da7a48e0229d438cbafa", "passage_root_sha256": "d6840653f219493bf1e228a744869a4b72a8cd34f97402eff647ce79acc02b6e", "closure_passage_ordinal": 389, "terminal_literal": "saptamaḥ sopānaḥ samāptaḥ /", "trailing_aarti_start_ordinal": 390}
+    ]
+  },
+  "completion_denials": {
+    "underlying_source_edition_identified": false,
+    "source_file_rights_resolved": false,
+    "product_or_public_use_cleared": false,
+    "complete_ramcharitmanas_textual_tradition": false,
+    "all_editions_commentaries_scripts_and_translations": false,
+    "complete_valmiki_ramayana_or_other_ramayana_works": false,
+    "complete_ramayana_hero_universe": false,
+    "mvp_library_complete": false
+  }
+}
