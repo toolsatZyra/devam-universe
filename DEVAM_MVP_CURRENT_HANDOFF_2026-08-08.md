@@ -13,12 +13,16 @@ later in this handoff while preserving them as history.
 - Production `main` is currently `4478313ab3a2ad840dd2c5988205bca72412d9fc`
   after the deployed cosmic Atlas and midnight `/today` hydration hotfix.
 - Current work is on `codex/cinematic-journey-worlds`, created from that commit.
+- Exact candidate commit: `c8f4e9f4ed393024a306c909456b24cdcd940449`;
+  draft PR: `https://github.com/toolsatZyra/devam-universe/pull/7`.
 - Local changes repair camera pan/zoom dead-ends, allow drag-start directly on
   nodes, reveal cross-world paths, and add the evidence-bounded route Ramayana
   → Diwali → Kali Puja → Durga → Durga Puja.
 - The reviewed local seed is 4 gateways, 50 world nodes and 62 navigation edges.
-  `supabase/migrations/20260809020500_sync_current_living_atlas.sql` is prepared
-  and not yet applied to hosted Supabase.
+  The corresponding hosted projection is 54 total app nodes including gateways
+  and 62 edges. Supabase migrations `20260808212130
+  add_devimahatmya_semantic_graph` and `20260808212142
+  sync_connected_cinematic_living_atlas` are applied and verified.
 - Four original cinematic journey assets are under `apps/web/public/journeys/`.
   Every current journey stop now has a labelled English/Hindi Devam retelling
   while exact source/edition boundaries remain separate.
@@ -27,10 +31,14 @@ later in this handoff while preserving them as history.
   example, not an ontology or completeness boundary.
 - Local acceptance currently passes: 772 portable product tests with 17 named
   vault-only skips, TypeScript, lint, and desktop/mobile Playwright 12/12.
+- GitHub Actions run `31278793918` passed both jobs. Vercel preview
+  `https://devam-universe-kltwsdsbu-zyras-projects-c775ae8c.vercel.app` is READY
+  for the exact candidate and passed the deployed desktop/mobile suite 12/12
+  after the hosted Atlas synchronization.
 - The change set passed its local optimized build and final diff check. Reverify
   its exact commit, PR, preview and hosted-migration status from Git/GitHub at
-  startup; synchronize the hosted Atlas migration with the accepted deployment
-  and run deployed 12/12 before any production promotion.
+  startup; require a merge-commit tree, fresh main CI, production Vercel identity
+  and stable-origin 12/12 before calling the candidate promoted.
 
 The two untracked research directories named later remain concurrent work and
 must not be staged, edited or deleted.

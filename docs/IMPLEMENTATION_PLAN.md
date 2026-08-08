@@ -2737,8 +2737,11 @@ This checkpoint does not claim deployment or civilizational completeness.
   Rama homecoming association, the distinct Bengal Kali Puja lane, and the
   non-equivalence of Kali and Durga forms and traditions.
 - The reviewed seed is now 4 gateways, 50 world nodes and 62 navigation edges.
-  Migration `20260809020500_sync_current_living_atlas.sql` is generated but has
-  not been applied to hosted Supabase in this checkpoint.
+  Migration `20260809020500_sync_current_living_atlas.sql` is generated. Its
+  semantic prerequisite and final projection are applied to hosted Supabase as
+  migration versions `20260808212130` and `20260808212142`; read-only
+  verification returned 54 app nodes including gateways, 62 edges, 4 semantic
+  entities, 4 semantic relationships and 5 evidence-bounded bridge edges.
 - Four original cinematic WebP world assets now fill the Ramayana, Ganesha,
   Durga and Diwali journeys. Scene travel moves the background with parallax;
   all current stops have everyday English and Hindi Devam retellings, visibly
@@ -2754,10 +2757,13 @@ Local validation after the changes:
 - TypeScript and lint: pass; and
 - desktop/mobile Playwright: 12/12 pass, including direct-node dragging,
   extreme camera recovery, the complete bridge route and Hindi story switching.
+- GitHub Actions run `31278793918`: both jobs pass; and
+- exact Vercel preview `devam-universe-kltwsdsbu-zyras-projects-c775ae8c.vercel.app`:
+  deployed desktop/mobile Playwright 12/12 pass after hosted synchronization.
 
-Still open: hosted migration, preview deployment, deployed 12/12 browser
-acceptance, production promotion, broad character/place/story/polity/temple
-expansion, richer scene-specific art and the actual civilizational denominator.
+Still open: merge and fresh-main CI, production promotion and stable-origin
+12/12, broad character/place/story/polity/temple expansion, richer
+scene-specific art and the actual civilizational denominator.
 
 ## Phase 3 — September-December layer
 
