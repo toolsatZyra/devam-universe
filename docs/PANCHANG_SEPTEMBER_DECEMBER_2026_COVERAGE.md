@@ -817,12 +817,19 @@ rights or masters.
   tradition. The matrix covers the four hero worlds and the named Bengal,
   Tamil, Karnataka, BAPS, Sikh, Jain, ISKCON, and Chhath launch lanes; it is not
   an all-city, all-region, or all-tradition completeness claim.
-- [ ] Every launch observance has Hindi and English explanation.
-- [ ] Every actionable procedure has minimum/standard/elaborate variants,
-  substitutions, family-practice prompts, and source evidence.
-- [ ] Every product-complete ritual lane answers what applies to the user, why
-  it matters and which stories explain it, what is typically done and when, and
-  what the user can do step by step.
+- [x] All 79 uniquely resolved launch-calendar slugs map by exact slug to a
+  current user-complete lane with both English and Hindi content. The audit
+  does not count a title match, legacy pack, preflight, or unresolved fixture
+  as bilingual product coverage.
+- [x] All current user-complete ritual records pass a machine audit for exact
+  minimum/standard/elaborate procedure tiers, material substitution fields,
+  family/context prompts, contiguous steps, and source references. This proves
+  the current bounded product records, not every procedure in living practice.
+- [x] All current user-complete ritual records also pass the remaining scoped
+  product contract: applicability, significance, source-labelled narratives,
+  typical practice and timing, actionable steps, variants, safety boundaries,
+  completion dimensions, and zero declared open gaps. “Complete” remains
+  limited to each record's named region, tradition, role, language, and setting.
 - [ ] Ganesha, Navaratri/Durga Puja, Ramayana, and Diwali/Deepavali campaign content is connected
   to the daily layer, Atlas nodes, journeys, challenges, and Sarthi.
 - [ ] Contradictions and alternatives are retained in evidence and surfaced only

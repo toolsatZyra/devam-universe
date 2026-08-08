@@ -215,16 +215,128 @@ def load_current_ritual_lanes() -> list[dict[str, Any]]:
         if not isinstance(slugs, list) or not slugs or not all(isinstance(s, str) and s for s in slugs):
             raise ValueError(f"{relative(path)} has invalid observance_slugs")
         for slug in slugs:
+            applicable_content = [
+                content
+                for content in document.get("localized_content", [])
+                if not content.get("observance_slugs")
+                or slug in content.get("observance_slugs", [])
+            ]
+            language_codes = sorted(
+                {
+                    content.get("language_code")
+                    for content in applicable_content
+                    if isinstance(content.get("language_code"), str)
+                }
+            )
+            contract_issues = assess_user_complete_contract(
+                document, slug, applicable_content
+            )
             lanes.append(
                 {
                     "classification": classification,
+                    "contract_issues": contract_issues,
                     "file": relative(path),
                     "lane_id": document.get("lane_id"),
+                    "language_codes": language_codes,
                     "sha256": sha256_file(path),
                     "slug": slug,
                 }
             )
     return lanes
+
+
+def assess_user_complete_contract(
+    document: dict[str, Any],
+    slug: str,
+    applicable_content: list[dict[str, Any]],
+) -> list[str]:
+    """Return explicit structural gaps for one current-contract slug lane."""
+    status = document.get("product_status", {})
+    if status.get("classification") != "user_complete_lane":
+        return ["classification_is_not_user_complete_lane"]
+
+    issues: list[str] = []
+    completed = status.get("completed_dimensions")
+    if not isinstance(completed, dict) or not completed or not all(completed.values()):
+        issues.append("product_completion_dimensions_are_not_all_true")
+    if status.get("open_gaps") != []:
+        issues.append("product_status_has_open_gaps")
+
+    applicability = document.get("applicability", {})
+    for field in ("region_codes", "tradition_codes", "settings", "material_context_questions"):
+        if not isinstance(applicability.get(field), list) or not applicability[field]:
+            issues.append(f"applicability.{field}_is_empty")
+
+    sources = document.get("sources")
+    if not isinstance(sources, list) or not sources:
+        issues.append("sources_are_empty")
+        known_sources: set[str] = set()
+    else:
+        known_sources = {
+            source.get("source_id")
+            for source in sources
+            if isinstance(source.get("source_id"), str)
+        }
+        if len(known_sources) != len(sources):
+            issues.append("source_ids_are_missing_or_duplicated")
+
+    language_codes = sorted(
+        {
+            content.get("language_code")
+            for content in applicable_content
+            if isinstance(content.get("language_code"), str)
+        }
+    )
+    if language_codes != ["en", "hi"]:
+        issues.append("exact_english_hindi_coverage_is_missing")
+
+    def references_known_sources(refs: Any) -> bool:
+        return (
+            isinstance(refs, list)
+            and bool(refs)
+            and all(isinstance(item, str) and item in known_sources for item in refs)
+        )
+
+    for content in applicable_content:
+        language = str(content.get("language_code", "unknown"))
+        significance = content.get("significance", {})
+        if not isinstance(significance.get("text"), str) or not significance.get("text") or not references_known_sources(significance.get("source_ids")):
+            issues.append(f"{language}.significance_is_incomplete")
+        for field in ("origin_narratives", "typical_practices", "variants"):
+            rows = content.get(field)
+            if not isinstance(rows, list) or not rows:
+                issues.append(f"{language}.{field}_is_empty")
+            elif any(not references_known_sources(row.get("source_ids")) for row in rows):
+                issues.append(f"{language}.{field}_has_invalid_evidence")
+        if not isinstance(content.get("safety_and_boundaries"), list) or not content["safety_and_boundaries"]:
+            issues.append(f"{language}.safety_and_boundaries_is_empty")
+
+        procedures = content.get("procedures")
+        if not isinstance(procedures, list) or [row.get("tier") for row in procedures] != ["minimum", "standard", "elaborate"]:
+            issues.append(f"{language}.procedure_tiers_are_incomplete")
+            continue
+        for procedure in procedures:
+            tier = str(procedure.get("tier", "unknown"))
+            materials = procedure.get("materials")
+            steps = procedure.get("steps")
+            if not isinstance(materials, list) or not materials:
+                issues.append(f"{language}.{tier}.materials_are_empty")
+            elif any(
+                not isinstance(material.get("substitutions"), list)
+                or not references_known_sources(material.get("source_ids"))
+                for material in materials
+            ):
+                issues.append(f"{language}.{tier}.materials_or_substitutions_lack_evidence")
+            if not isinstance(steps, list) or not steps:
+                issues.append(f"{language}.{tier}.steps_are_empty")
+            elif any(
+                step.get("ordinal") != index + 1
+                or not references_known_sources(step.get("source_ids"))
+                for index, step in enumerate(steps)
+            ):
+                issues.append(f"{language}.{tier}.steps_or_evidence_are_invalid")
+
+    return sorted(set(issues))
 
 
 def build_audit() -> dict[str, Any]:
@@ -258,6 +370,12 @@ def build_audit() -> dict[str, Any]:
                 if any(item["classification"] == "user_complete_lane" for item in ritual_records)
                 else "bounded_companion_only"
             )
+            record["bilingual_user_complete_lane"] = any(
+                item["classification"] == "user_complete_lane"
+                and item["language_codes"] == ["en", "hi"]
+                and item["contract_issues"] == []
+                for item in ritual_records
+            )
             covered.append(record)
         else:
             record["coverage_state"] = "no_current_ritual_lane"
@@ -289,8 +407,16 @@ def build_audit() -> dict[str, Any]:
             "resolved_calendar_unique_slugs": len(panchang_by_slug),
             "current_ritual_slug_records": len(lanes),
             "current_ritual_unique_slugs": len(ritual_by_slug),
+            "current_user_complete_slug_records_with_contract_issues": sum(
+                item["classification"] == "user_complete_lane"
+                and bool(item["contract_issues"])
+                for item in lanes
+            ),
             "calendar_slugs_with_current_lane": len(covered),
             "calendar_slugs_without_current_lane": len(panchang_only),
+            "calendar_slugs_without_bilingual_user_complete_lane": sum(
+                not row["bilingual_user_complete_lane"] for row in covered
+            ),
             "ritual_slugs_without_calendar_record": len(ritual_only),
             "unresolved_or_preflight_calendar_files": len(unresolved),
             "superseded_preflight_calendar_files": len(superseded_preflights),
