@@ -299,6 +299,47 @@ page-by-page reconciliation to every print scan, corrected printed numbering,
 an edition-identified Sanskrit base, Hindi, every translation/commentary,
 every recension/tradition, the Ramayana hero universe, or the MVP library.
 
+### Edition-matched Hindi Wikisource page acquisition (2026-08-08)
+
+Hindi Wikisource exposes an exact 1,240-title Page-namespace universe for the
+same retained Belvedere Press scan, with no missing, duplicate, or nonnumeric
+scan-page identity. Devam froze all current revision IDs and acquired all 1,240
+revision records in 25 bounded JSON carriers plus one site-rights record. The
+26 new content-addressed objects total 7,683,751 bytes. The 78,560,265-byte
+scan was not copied again, and no source text was copied into the app.
+
+The acquisition improves page-addressed evidence but does not close the
+searchable-text gate. Across the 1,172 seven-sopana narrative pages (scan pages
+52-1223), Wikisource currently marks 5 validated and 808 proofread pages, for
+813 product candidates. It marks 345 pages not proofread and 14 pages without
+text, so 359 narrative pages remain an explicit correction queue. Across all
+1,240 pages the exact quality distribution is 20 without text, 350 not
+proofread, 864 proofread, and 6 validated. No page was silently promoted from
+raw OCR merely because its title exists.
+
+Hindi Wikisource's site-rights API reports Creative Commons Attribution-Share
+Alike 4.0. That licence applies to the acquired contributor transcriptions and
+is preserved separately from the public-domain underlying scan. Product use
+will require attribution and share-alike compliance. Proofread and validated
+pages are product candidates, not yet published passages; unproofread and empty
+pages remain internal correction evidence.
+
+Deterministic checkpoint:
+
+- profile ID `RAMCHARITMANAS-WIKISOURCE-PAGES-0F02AEF6AB74619FED5E31B0`;
+- plan SHA-256 `fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab`;
+- acquisition report SHA-256 `8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c`;
+- acquisition tool SHA-256 `4562f23ad403787e8636b1e73977c51fa27e1d974732fff2fcf9bc8ddc29a8d6`;
+- test SHA-256 `560ccc673c82c4800f916f89e9d96d481313277943ac76184531d650f0569907`;
+- source-vault closure: 8,491 unique objects / 6,167,702,553 bytes /
+  12,507 provenance records; and
+- 4/4 focused semantic tests plus full local vault verification pass.
+
+This is a complete acquisition of the current Page-namespace carrier universe,
+not a complete product-searchable Ramcharitmanas text. The next product boundary
+is a page-addressed packet for the 813 proofread/validated pages followed by
+correction of the 359 held narrative pages against the fixed scan.
+
 ### Wikisource status and selected Sundara passage (2026-08-07)
 
 A fresh normal-TLS observation of the seven English Wikisource Index records

@@ -15,13 +15,13 @@ describe("honest library coverage snapshot", () => {
       object_bytes: number;
       catalogs: { source_leads: number };
     };
-    expect(createHash("sha256").update(bytes).digest("hex")).toBe("6993f72caa6c4412d8d9962ad3274dedbafc2f3ad0d8a0bd29fe491163d12e31");
+    expect(createHash("sha256").update(bytes).digest("hex")).toBe("f5093b53c64a0c23110c1360392eeb33a969ff987f39546f8dafd138c62cac3e");
     expect(LIBRARY_COVERAGE_SNAPSHOT.sourceLibrary).toMatchObject({
       uniqueObjects: summary.object_count,
       objectBytes: summary.object_bytes,
       discoveryLeads: summary.catalogs.source_leads,
     });
-    expect(formatLibraryBytes(summary.object_bytes)).toBe("5.97 GB");
+    expect(formatLibraryBytes(summary.object_bytes)).toBe("6.17 GB");
   });
 
   it("reconstructs the current ritual classifications rather than counting legacy inputs", () => {
