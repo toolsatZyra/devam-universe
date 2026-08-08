@@ -340,6 +340,35 @@ not a complete product-searchable Ramcharitmanas text. The next product boundary
 is a page-addressed packet for the 813 proofread/validated pages followed by
 correction of the 359 held narrative pages against the fixed scan.
 
+#### Fail-closed product projection
+
+A deterministic compiler then evaluated all 813 quality-qualified narrative
+pages. Eleven still contain malformed or unbalanced Wikisource layout markup
+(scan pages 312, 349, 474, 691-695, 859, 1109, and 1173), so they are not
+silently rendered or indexed. The resulting beta packet contains 802 readable,
+source-addressed page projections: 797 at proofread level 3 and 5 at validated
+level 4, with representation in all seven sopanas.
+
+Each passage retains the exact provider page/revision identity, raw revision
+content SHA-256, scan page, fixed scan SHA-256, sopana boundary, source JSON
+carrier, and deterministic projection hash. The projection removes only known
+layout/control markup. It never corrects provider spelling, OCR, wording, or
+numbering, and a level-3 page may still retain single-proofreader errors.
+
+The 359 low-quality pages plus 11 projection anomalies leave exactly 370 of the
+1,172 narrative pages outside the product index. The compiler emits 21 bounded
+SQL batches but does not apply them to the database; Search and Sarthi therefore
+remain unchanged until a separately authorized database application and hosted
+verification.
+
+- packet SHA-256 `b046e1c6aa87373ec760a656478c47eac4d6e1d21058a1e0e10abec844028678`;
+- passage root SHA-256 `92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26`;
+- product report SHA-256 `6c57daf0fcfbcc42717e862eb251c90433ba6b6c6776c3c45111cc4662c2e153`;
+- compiler SHA-256 `36e4a5f13fc6ede6209a28ab7a58b1ff2130e3a11d42c349886e747d467b30da`;
+- test SHA-256 `d4664459f76735ae5a8732925d61e03a547123766c25e668623debc2ba9f5821`;
+- 5/5 focused product-projection tests pass; and
+- `database_applied_by_this_compiler=false`.
+
 ### Wikisource status and selected Sundara passage (2026-08-07)
 
 A fresh normal-TLS observation of the seven English Wikisource Index records
