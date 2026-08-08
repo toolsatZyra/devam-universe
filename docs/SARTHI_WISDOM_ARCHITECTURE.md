@@ -413,6 +413,11 @@ eight non-averagable hard failures and two-reviewer minimum. It excludes model,
 provider, response, cost, token, latency and scenario identities while retaining
 the question, language, answer, caveat and reviewed evidence. No review packet
 or rating has been produced because no live run exists.
+The review analyzer is also preflighted. It rejects incomplete coverage or
+invalid rationales, reports per-dimension and overall agreement separately for
+English and Hindi, and blocks promotion below 0.80 within-one-point agreement or
+on any hard failure. Its positive result would permit only a human phase
+decision, never a production-readiness claim.
 
 ## Accepted, pilot, deferred and rejected
 

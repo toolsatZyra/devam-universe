@@ -17,6 +17,8 @@
     "run:sarthi-phase1-baseline": "node scripts/run-sarthi-phase1-baseline.mjs",
     "preflight:sarthi-phase1-review": "node scripts/prepare-sarthi-phase1-review.mjs --preflight",
     "prepare:sarthi-phase1-review": "node scripts/prepare-sarthi-phase1-review.mjs",
+    "preflight:sarthi-phase1-analysis": "node scripts/analyze-sarthi-phase1-review.mjs --preflight",
+    "analyze:sarthi-phase1-review": "node scripts/analyze-sarthi-phase1-review.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --exclude e2e/**",
     "test:product": "node scripts/run-product-tests.mjs",

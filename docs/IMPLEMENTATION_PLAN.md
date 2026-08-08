@@ -2436,7 +2436,10 @@ call or write; the live run remains unexecuted. The blinded-review generator is
 also preflighted: it freezes the ten Phase 0 dimensions and eight hard failures,
 requires two independent reviewers, hides runtime/provider/cost identities,
 preserves reviewed evidence for source checking and refuses to overwrite review
-work. No ratings exist yet.
+work. The analyzer is preflighted and requires complete two-reviewer coverage,
+valid rationales, exact packet fixity, separate English/Hindi agreement, at
+least 0.80 within-one-point agreement and zero hard failures before it can mark
+the baseline eligible for a human phase decision. No ratings exist yet.
 
 - **Inputs and rights prerequisites:** frozen product-cleared evidence packets,
   current retrieval stack and the same admissible source universe planned for

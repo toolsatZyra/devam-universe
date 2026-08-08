@@ -41,3 +41,13 @@ outputs exist. After a completed run, `pnpm prepare:sarthi-phase1-review --
 model, provider, response, cost, latency and token identities while retaining
 the question, language, answer, caveat and reviewed evidence. It also creates an
 unrated template. Existing review files are never overwritten.
+
+`pnpm preflight:sarthi-phase1-analysis` validates the analyzer without ratings
+or writes. After two or more pseudonymous reviewers complete every item,
+`pnpm analyze:sarthi-phase1-review -- --run-id=<id>` verifies exact dimension
+and hard-failure keys, rating ranges, rationales, packet fixity and complete
+coverage. It reports per-dimension and overall mean absolute difference and
+within-one-point agreement separately for English and Hindi. Agreement below
+0.80 or any hard failure blocks promotion. Existing analysis is never
+overwritten, and eligibility remains a human phase-decision input rather than a
+production-readiness claim.
