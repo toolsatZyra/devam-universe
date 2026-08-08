@@ -394,8 +394,8 @@ context/coverage routing and the thin Governor. Warmth, fluency and answer lengt
 are controlled so charisma cannot counterfeit wisdom.
 
 The 2026-08-08 Phase 0 held-out set now freezes sixty independently rated
-English/Hindi scenarios. Phase 1 evidence admission is partial: twelve of thirty
-bilingual pairs have exact, rights-bounded, hash-bound packets; eighteen
+English/Hindi scenarios. Phase 1 evidence admission is partial: thirteen of
+thirty bilingual pairs have exact, rights-bounded, hash-bound packets; seventeen
 remain explicitly unadmitted. This is packet readiness only. The runtime,
 answer baseline, blinded review and quality comparison remain unrun.
 

@@ -17,7 +17,7 @@
     ["uhp_02_devi_mahatmya_chapter", "admitted"],
     ["uhp_03_ganesha_hymn_source", "candidate_not_packeted"],
     ["uhp_04_diwali_distinct_sources", "admitted"],
-    ["uhp_05_panchang_exactness", "candidate_not_packeted"],
+    ["uhp_05_panchang_exactness", "admitted"],
     ["uhp_06_ayodhya_text_place", "candidate_not_packeted"],
     ["uhp_07_devi_translation_boundary", "admitted"],
     ["uhp_08_ganesha_symbolism", "blocked_partial_evidence"],
@@ -545,6 +545,61 @@
         "complete_devimahatmya_tradition": false
       },
       "admission_note": "Admitted to explain one exact provider-revision universe and its labelled beta translation; commentary, recension, complete tradition and ritual authority remain outside scope."
+    },
+    {
+      "packet_id": "phase1-uhp-05-panchang-exactness-v1",
+      "scenario_id": "uhp_05_panchang_exactness",
+      "languages": ["en", "hi"],
+      "required_roles": ["deterministic_computation", "living_practice_observation"],
+      "present_roles": ["deterministic_computation", "living_practice_observation"],
+      "scope": {
+        "civil_date": "2026-09-14",
+        "location": "Mumbai, India at latitude 19.076 and longitude 72.8777",
+        "timezone": "Asia/Kolkata",
+        "tradition": "smarta-west-india Ganesh Chaturthi opening lane",
+        "rule_version": "astronomy-engine-2.1.19-lahiri-v3 with panchanga-five-limbs-sunrise-v1 and devam-observance-rules-2026-v8; opening rule nirnayasindhu-1865-bhadrapada-shukla-chaturthi-madhyahna-v1"
+      },
+      "artifacts": [
+        {
+          "path": "apps/web/src/lib/panchang/contracts.ts",
+          "sha256": "2ec3dda12bc056e9fec2fe07f582d71de126738bcc83091fe7fa4dcc9bb0da93",
+          "contract": "DEVAM_PANCHANG_REQUEST_CONTEXT",
+          "admitted_use": "required_date_coordinates_timezone_and_tradition_input_contract",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "apps/web/src/lib/panchang/engine.ts",
+          "sha256": "56db7e55cca2be892a2438455f04cb5aec92a0cea7c794169fd9f4c1c6be961a",
+          "contract": "DEVAM_DETERMINISTIC_PANCHANG_ENGINE",
+          "admitted_use": "versioned_location_aware_astronomical_calculation_only",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "apps/web/src/lib/panchang/engine.test.ts",
+          "sha256": "1e8f70f536815c3c9898b8b62b1420026cc4b68c79c8deaa8684bedbf3e6db09",
+          "contract": "DEVAM_PANCHANG_ENGINE_REGRESSION",
+          "admitted_use": "mumbai_ganesh_chaturthi_boundary_and_launch_window_calculation_verification",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/campaigns/ganeshotsav-mumbai-2026-v1.json",
+          "sha256": "bcf8ae5898adadec8ab3d0544f46945fb666567e7b95bd6e3fa374764b25a504",
+          "contract": "DEVAM_HERO_CAMPAIGN_CALENDAR_V1",
+          "admitted_use": "named_observance_rule_living_context_and_location_specific_crosswalk",
+          "source_rights_lanes": ["reference_only", "private_evidence", "derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "calculation_only_engine": true,
+        "observance_rule_separately_versioned": true,
+        "ritual_guidance_separately_versioned": true,
+        "universal_india_date_claim": false
+      },
+      "admission_note": "Admitted only as a Mumbai West India Smarta September example; exactness comes from explicit context and versioned rules, not from treating one displayed date as universal India truth."
     }
   ]
 }
