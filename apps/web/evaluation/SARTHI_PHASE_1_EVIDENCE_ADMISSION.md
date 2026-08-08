@@ -9,8 +9,8 @@ role and scope field is present, the exact product artifact is hash-bound, and
 its use stays within its rights and quotation boundary.
 
 Fifteen of the thirty bilingual held-out pairs are admitted. Fifteen remain
-unadmitted: three ready candidates still need packet compilation, seven are
-blocked by partial evidence, and five require research. English and Hindi share
+unadmitted: three Phase 0-ready candidates have verified scope mismatches,
+seven are blocked by partial evidence, and five require research. English and Hindi share
 the same packet and scope boundary; admission does not certify answer quality in
 either language.
 
@@ -24,3 +24,9 @@ No model has been called, no answer has been generated or scored, and no
 quality, learning, understanding, production-readiness, or comparative claim is
 made. A Phase 1 baseline may begin only after its selected scenarios have frozen
 packets, runtime authorization, and reviewer calibration.
+
+The three scope mismatches are intentional blockers: the displayed Ganesha
+journey hymn has no matching source-aligned translation role; the Ayodhya pair
+lacks evidence that can responsibly connect textual region, living place and
+historical boundary; and the current consent bundle is adult-only while the
+held-out question names an unspecified teenager.

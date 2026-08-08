@@ -2415,8 +2415,9 @@ deliberation episode, bounded ritual and cross-observance lanes, and one
 household-giving guidance lane, plus the exact-revision Devi Mahatmya source and
 beta-translation boundary, and one exact Mumbai Ganesh Chaturthi Panchang
 example, one Delhi-to-Bengaluru recomputation/clarification contract, and a
-user-owned work-versus-care deliberation lane. Three ready candidates are not
-yet packeted,
+user-owned work-versus-care deliberation lane. Three Phase 0-ready candidates
+are now explicitly blocked by verified source-role, place/history, or age/scope
+mismatches,
 seven partial-evidence pairs remain blocked, and five pairs still require
 research. The validator enforces
 exact Phase 0 roles and scope, repository-local artifact fixity, rights and

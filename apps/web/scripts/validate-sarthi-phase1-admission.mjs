@@ -37,7 +37,7 @@ for (const entry of registry.admission_index ?? []) {
   const [id, status] = entry;
   check(fixtureById.has(id), `index contains unknown scenario ${id}`);
   check(!indexById.has(id), `duplicate admission index scenario ${id}`);
-  check(["admitted", "candidate_not_packeted", "blocked_partial_evidence", "blocked_research_required"].includes(status), `${id} has invalid admission status`);
+  check(["admitted", "candidate_not_packeted", "blocked_scope_mismatch", "blocked_partial_evidence", "blocked_research_required"].includes(status), `${id} has invalid admission status`);
   indexById.set(id, status);
 }
 check(indexById.size === fixture.pair_count, "admission index must contain every held-out pair exactly once");
@@ -46,7 +46,7 @@ for (const pair of fixture.pairs) {
   const status = indexById.get(pair.id);
   if (pair.evidence_readiness === "partial") check(status === "blocked_partial_evidence", `${pair.id} partial evidence must remain blocked`);
   if (pair.evidence_readiness === "research_required") check(status === "blocked_research_required", `${pair.id} research-required evidence must remain blocked`);
-  if (pair.evidence_readiness === "ready") check(["admitted", "candidate_not_packeted"].includes(status), `${pair.id} ready evidence must be admitted or explicitly unpacketized`);
+  if (pair.evidence_readiness === "ready") check(["admitted", "candidate_not_packeted", "blocked_scope_mismatch"].includes(status), `${pair.id} ready candidate must be admitted, explicitly unpacketized or blocked by a verified scope mismatch`);
 }
 
 const packetScenarioIds = new Set();

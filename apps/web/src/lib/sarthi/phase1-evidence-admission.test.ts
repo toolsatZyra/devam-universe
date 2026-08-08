@@ -35,7 +35,7 @@ describe("Sarthi Understanding Phase 1 evidence admission", () => {
     expect(admission.status).toBe("partial_admission_no_baseline_run");
     expect(statusCounts).toEqual(new Map([
       ["admitted", 15],
-      ["candidate_not_packeted", 3],
+      ["blocked_scope_mismatch", 3],
       ["blocked_partial_evidence", 7],
       ["blocked_research_required", 5],
     ]));
