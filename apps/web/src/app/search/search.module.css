@@ -62,6 +62,15 @@
 .coverageMetrics span { margin-top: 3px; color: #d4c7b1; font-family: Georgia, serif; font-size: 14px; }
 .coverageMetrics small { margin-top: 12px; color: #747783; font-size: 9px; }
 .coverageBoundary { margin: -2px 2px 0; color: #686b78; font-size: 9px; line-height: 1.6; }
+.coveragePipeline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.coveragePipeline article { min-height: 160px; border: 1px solid rgba(230, 208, 169, .1); border-radius: 17px; padding: 18px; background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.015)); }
+.coveragePipeline span, .coveragePipeline strong, .coveragePipeline p, .coveragePipeline small { display: block; }
+.coveragePipeline span { color: #a98a58; font-size: 8px; letter-spacing: .1em; text-transform: uppercase; }
+.coveragePipeline strong { margin-top: 16px; color: #dfbd78; font: 400 clamp(28px, 4vw, 42px)/1 Georgia, serif; letter-spacing: -.03em; }
+.coveragePipeline p { margin: 5px 0 12px; color: #d0c3af; font: 400 13px Georgia, serif; }
+.coveragePipeline small { color: #747783; font-size: 8px; line-height: 1.5; }
+.coveragePipeline .completenessStage { border-color: rgba(204, 119, 100, .22); background: linear-gradient(145deg, rgba(123, 58, 53, .11), rgba(255,255,255,.015)); }
+.coveragePipeline .completenessStage strong { color: #d99478; }
 .heroCoverage { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
 .heroCoverage article { border: 1px solid rgba(230, 208, 169, .1); border-radius: 17px; padding: 20px; background: rgba(255,255,255,.025); }
 .heroCoverage header { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid rgba(230, 208, 169, .08); padding-bottom: 12px; }
@@ -85,7 +94,7 @@
   .results { margin-top: 32px; }
   .coverageHeading { align-items: start; flex-direction: column; gap: 10px; }
   .coverageHeading > span { text-align: left; }
-  .coverageMetrics, .heroCoverage, .libraryPromise, .catalogGrid { grid-template-columns: 1fr; }
+  .coverageMetrics, .coveragePipeline, .heroCoverage, .libraryPromise, .catalogGrid { grid-template-columns: 1fr; }
   .resultHeader { align-items: start; flex-direction: column; gap: 7px; }
   .catalogHeader { align-items: start; flex-direction: column; gap: 7px; }
 }

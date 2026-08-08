@@ -195,9 +195,10 @@ productization sequence below is now the active critical path.
    exists, but it is not complete historical or civilizational coverage.
 4. Run the frozen blinded Sarthi answer pilot. Enable bounded generation only
    if it beats the grounded baseline without source/applicability regressions.
-5. Publish an honest investor coverage dashboard separating preserved,
-   structurally understood, indexed, product-usable, translated, reviewed and
-   complete.
+5. The Search landing surface now publishes an honest investor coverage
+   dashboard separating preserved, structurally understood, indexed,
+   product-usable, translated, reviewed and complete. Keep its live counters
+   and denominator boundaries current as the library expands.
 6. Move new ritual selection away from per-observance TypeScript branching to
    the generic database-driven applicability/content contract. Do not perform
    another destructive cleanup.

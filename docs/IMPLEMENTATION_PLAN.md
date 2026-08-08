@@ -2327,8 +2327,12 @@ completion must not be inferred from passing tests:
   does not satisfy every regional, household, institutional, or priest-led
   procedure in the ritual product contract.
 - Library search exposes reviewed claims, published product-compatible exact
-  passages, and all preserved-object metadata, but most of the 8,455 retained
-  objects are not yet passage-indexed product text.
+  passages, and all preserved-object metadata, but most of the 8,491 retained
+  objects are not yet passage-indexed product text. Its landing surface now
+  exposes the investor coverage maturity ladder: preserved, structured,
+  indexed, product-usable, translated, reviewed, and civilizationally complete.
+  The final stage is explicitly 0/4 hero universes, and every upstream count
+  names its selected-scope boundary.
 - The hosted subscription entitlement boundary has no checkout provider or
   paid-access enforcement. Public account email still needs a deployed fixed
   origin and custom SMTP.

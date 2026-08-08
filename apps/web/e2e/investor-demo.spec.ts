@@ -120,6 +120,11 @@ test("exact Search keeps all four hero lanes source-bounded", async ({ page }) =
   ] as const;
 
   await page.goto("/search");
+  await expect(page.getByRole("heading", { name: "One roof. Three honest layers." })).toBeVisible();
+  await expect(page.getByText("01 · Preserved")).toBeVisible();
+  await expect(page.getByText("04 · Product-usable")).toBeVisible();
+  await expect(page.getByText("07 · Civilizationally complete")).toBeVisible();
+  await expect(page.getByText("0/4", { exact: true })).toBeVisible();
   const input = page.getByLabel("Search Devam");
   for (const [query, resultId] of cases) {
     await input.fill(query);

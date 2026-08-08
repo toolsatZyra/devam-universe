@@ -42,5 +42,18 @@ describe("honest library coverage snapshot", () => {
     expect(LIBRARY_COVERAGE_SNAPSHOT.heroes.every((hero) => hero.connected.length > 100 && hero.open.length > 90)).toBe(true);
     expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.deterministicDates).toBe(122);
     expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.deterministicDateTotal).toBe(122);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer).toMatchObject({
+      sourceReferences: 102,
+      passages: 9_091,
+      publishedPassages: 3_298,
+      reviewOrPrivatePassages: 5_793,
+      sourceAlignedBetaTranslations: 1_176,
+      civilizationallyCompleteHeroWorlds: 0,
+      heroWorldTotal: 4,
+    });
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.publishedPassages + LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.reviewOrPrivatePassages).toBe(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.passages);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.heroes.find((hero) => hero.slug === "durga")?.connected).toContain("588 English and 588 Hindi");
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.sourceAlignedBetaTranslations).toBe(588 + 588);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.boundary).toContain("not percentages");
   });
 });
