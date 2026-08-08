@@ -2428,7 +2428,11 @@ thirty blinded English/Hindi envelopes from the fifteen admitted pairs, pin the
 existing grounded-generation contract, require cost/latency/token records and
 human review, materialize rights-safe reviewed evidence rather than metadata
 alone, reject raw/private/provider/quotation fields, and keep external calls
-disabled pending explicit authorization.
+disabled pending explicit authorization. A fail-closed live runner now verifies
+an official dated pricing snapshot, exact thirty-call authorization, immutable
+run identity, `store: false`, no automatic retries and per-call recoverable
+checkpoints with token, latency and cost records. Its preflight makes no network
+call or write; the live run remains unexecuted.
 
 - **Inputs and rights prerequisites:** frozen product-cleared evidence packets,
   current retrieval stack and the same admissible source universe planned for

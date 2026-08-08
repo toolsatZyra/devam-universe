@@ -404,6 +404,10 @@ from the admitted pairs with identical English/Hindi reviewed-evidence bytes and
 no raw, private, provider or quotation fields, while keeping external calls
 disabled. It is execution preparation only, not evidence of runtime or answer
 quality.
+A fail-closed runner now adds exact call authorization, official pricing
+provenance, immutable resume identity, no automatic retries and per-response
+usage/cost/latency checkpoints. Preflight passes without credentials or network;
+the live run and human review remain unexecuted.
 
 ## Accepted, pilot, deferred and rejected
 
