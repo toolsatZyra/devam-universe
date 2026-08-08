@@ -9,6 +9,7 @@ import type { PracticeGuidanceResult } from "@/lib/domain/practice";
 import { resolveHeroCampaignDay } from "@/lib/campaigns/hero-calendar";
 import { resolveRitualSeasonDay } from "@/lib/campaigns/ritual-season";
 import { weekdayPracticeSlug } from "@/lib/practice/weekday-key";
+import { trackProductEvent } from "@/lib/analytics/client";
 import styles from "./today-experience.module.css";
 
 type LocationChoice = {
@@ -175,6 +176,7 @@ export function TodayExperience() {
       setPracticeGuidances(festivalGuides.filter((guide): guide is PracticeGuidanceResult => guide !== null));
       setWeekdayGuidance(weekdayGuide);
       setStatus("ready");
+      trackProductEvent("today_resolved", practiceObservances.length > 0 ? "observance" : "calendar_only");
     } catch (error) {
       setFact(null);
       setObservances(null);

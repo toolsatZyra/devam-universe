@@ -689,6 +689,39 @@ export type Database = {
           },
         ]
       }
+      product_events: {
+        Row: {
+          account_state: string
+          event_name: string
+          id: string
+          occurred_at: string
+          retain_until: string
+          session_id: string
+          surface: string
+          target: string | null
+        }
+        Insert: {
+          account_state: string
+          event_name: string
+          id: string
+          occurred_at?: string
+          retain_until?: string
+          session_id: string
+          surface: string
+          target?: string | null
+        }
+        Update: {
+          account_state?: string
+          event_name?: string
+          id?: string
+          occurred_at?: string
+          retain_until?: string
+          session_id?: string
+          surface?: string
+          target?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -1111,7 +1144,18 @@ export type Database = {
       }
     }
     Views: {
-      [_ in never]: never
+      product_funnel_daily: {
+        Row: {
+          account_state: string | null
+          event_count: number | null
+          event_day: string | null
+          event_name: string | null
+          surface: string | null
+          target: string | null
+          unique_sessions: number | null
+        }
+        Relationships: []
+      }
     }
     Functions: {
       search_public_passages: {

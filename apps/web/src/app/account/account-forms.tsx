@@ -1,7 +1,8 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
 import type { ReactNode } from "react";
+import { trackProductEvent } from "@/lib/analytics/client";
 import {
   requestMagicLink,
   saveProfile,
@@ -16,6 +17,9 @@ function Status({ state }: { state: typeof initialAccountActionState }) {
 
 export function SignInForm() {
   const [state, action, pending] = useActionState(requestMagicLink, initialAccountActionState);
+  useEffect(() => {
+    if (state.status === "success") trackProductEvent("account_sign_in_requested", undefined, { oncePerSession: true });
+  }, [state.status]);
   return (
     <form className={styles.form} action={action}>
       <label htmlFor="email">Email address</label>

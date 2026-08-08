@@ -22,6 +22,10 @@ export type WorldNode = {
   revealAt: number;
   size: "major" | "connected";
   position: { x: number; y: number };
+  geography?: {
+    position: { x: number; y: number };
+    region: string;
+  };
 };
 
 export type WorldEdge = {
@@ -31,9 +35,18 @@ export type WorldEdge = {
   relation: string;
 };
 
+export type PlaceThread = {
+  gatewayId: Gateway["id"];
+  title: string;
+  invitation: string;
+  evidenceBoundary: string;
+  nodeIds: string[];
+};
+
 export type AtlasWorld = {
   eras: readonly string[];
   gateways: Gateway[];
+  placeThreads: PlaceThread[];
   worldNodes: WorldNode[];
   worldEdges: WorldEdge[];
 };

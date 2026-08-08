@@ -6,7 +6,13 @@ const ROOT = path.resolve(__dirname, "..");
 const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
 const OUTPUT = process.argv[2]
   ? path.resolve(ROOT, process.argv[2])
-  : path.join(ROOT, "supabase/migrations/20260808070531_sync_current_living_atlas.sql");
+  : path.join(ROOT, "supabase/migrations/20260808190000_sync_current_living_atlas.sql");
+
+const DEVIMAHATMYA_SEMANTIC_NODE_SLUGS = ["madhu-kaitabha", "mahishasura", "shumbha", "nishumbha"];
+const ENTITY_BOUND_NODE_SLUGS = [...DEVIMAHATMYA_SEMANTIC_NODE_SLUGS, "ganesha-purana"];
+const DEVIMAHATMYA_SEMANTIC_EDGE_IDS = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug) => `devi-mahatmya-${slug}`);
+const DISTINCT_DIWALI_NODE_SLUGS = ["kali-chaudas-baps", "gujarati-new-year-baps", "balipadyami-karnataka", "jain-diwali", "bandi-chhor-divas"];
+const DISTINCT_DIWALI_EDGE_IDS = ["naraka-to-kali-chaudas-baps", "bali-to-gujarati-new-year-baps", "bali-to-balipadyami-karnataka", "diwali-to-jain-diwali", "diwali-to-bandi-chhor-divas"];
 
 function loadAtlas() {
   const source = fs.readFileSync(ATLAS_SOURCE, "utf8");
@@ -65,18 +71,47 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 37 || worldEdges.length !== 45) {
+  if (gateways.length !== 4 || worldNodes.length !== 49 || worldEdges.length !== 57) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 41) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 45) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 53) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 57) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 45) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 57) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
       throw new Error(`Invalid Atlas edge ${edge.id}`);
+    }
+  }
+  for (const slug of DEVIMAHATMYA_SEMANTIC_NODE_SLUGS) {
+    const node = worldNodes.find((candidate) => candidate.id === slug);
+    const edge = worldEdges.find((candidate) => candidate.id === `devi-mahatmya-${slug}`);
+    if (!node || node.gatewayId !== "durga" || edge?.from !== "devi-mahatmya" || edge.to !== slug || edge.relation !== "contains narrative of") {
+      throw new Error(`Source-bounded Devimahatmya Atlas route is missing or invalid for ${slug}`);
+    }
+  }
+  const ganeshaPuranaNode = worldNodes.find((candidate) => candidate.id === "ganesha-purana");
+  const ganeshaPuranaEdge = worldEdges.find((candidate) => candidate.id === "ganesha-ganesha-purana");
+  if (!ganeshaPuranaNode || ganeshaPuranaNode.gatewayId !== "ganesha" || ganeshaPuranaEdge?.from !== "ganesha" || ganeshaPuranaEdge.to !== "ganesha-purana") {
+    throw new Error("Source-bounded Ganesha Purana Atlas route is missing or invalid");
+  }
+  const atharvashirshaNode = worldNodes.find((candidate) => candidate.id === "ganapatyatharvashirsha");
+  const atharvashirshaEdge = worldEdges.find((candidate) => candidate.id === "ganesha-ganapatyatharvashirsha");
+  if (!atharvashirshaNode || atharvashirshaNode.gatewayId !== "ganesha" || atharvashirshaEdge?.from !== "ganesha" || atharvashirshaEdge.to !== "ganapatyatharvashirsha") {
+    throw new Error("Exact-revision Ganapati Atharvashirsha Atlas route is missing or invalid");
+  }
+  const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
+  const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
+  if (!duttNode || duttNode.gatewayId !== "ramayana" || duttEdge?.from !== "ramayana" || duttEdge.to !== "dutt-ramayana") {
+    throw new Error("Source-bounded Dutt Ramayana Atlas route is missing or invalid");
+  }
+  for (let index = 0; index < DISTINCT_DIWALI_NODE_SLUGS.length; index += 1) {
+    const node = worldNodes.find((candidate) => candidate.id === DISTINCT_DIWALI_NODE_SLUGS[index]);
+    const edge = worldEdges.find((candidate) => candidate.id === DISTINCT_DIWALI_EDGE_IDS[index]);
+    if (!node || node.gatewayId !== "diwali" || !edge || edge.to !== node.id) {
+      throw new Error(`Distinct Diwali Atlas lane is missing or invalid for ${DISTINCT_DIWALI_NODE_SLUGS[index]}`);
     }
   }
 }
@@ -95,6 +130,8 @@ function buildMigration() {
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
+  const semanticNodeRows = ENTITY_BOUND_NODE_SLUGS.map((slug) => `(${sqlText(slug)}, ${sqlText(slug)})`).join(",\n  ");
+  const semanticEdgeRows = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug, index) => `(${sqlText(DEVIMAHATMYA_SEMANTIC_EDGE_IDS[index])}, ${sqlText(slug)})`).join(",\n  ");
 
   return `-- Generated from apps/web/src/data/atlas.ts by
 -- tools/compile_current_living_atlas_seed.cjs.
@@ -137,6 +174,37 @@ on conflict (source_node_id, target_node_id, label) do update set
   rights_lane = excluded.rights_lane,
   publication_state = excluded.publication_state;
 
+with mapping(atlas_slug, entity_slug) as (values
+  ${semanticNodeRows}
+)
+update public.atlas_nodes atlas
+set entity_id = entity.id,
+    updated_at = now()
+from mapping
+join public.entities entity on entity.slug = mapping.entity_slug
+  and entity.publication_state = 'published'
+where atlas.slug = mapping.atlas_slug;
+
+with mapping(edge_source_id, object_slug) as (values
+  ${semanticEdgeRows}
+)
+update public.atlas_edges atlas_edge
+set relationship_id = relationship.id
+from mapping
+join public.atlas_nodes source_node on source_node.slug = 'devi-mahatmya'
+join public.atlas_nodes target_node on target_node.slug = mapping.object_slug
+join public.entities subject_entity on subject_entity.slug = 'devi-mahatmya'
+join public.entities object_entity on object_entity.slug = mapping.object_slug
+join public.relationships relationship
+  on relationship.subject_entity_id = subject_entity.id
+  and relationship.object_entity_id = object_entity.id
+  and relationship.predicate = 'contains_narrative_of'
+  and relationship.publication_state = 'published'
+where atlas_edge.source_node_id = source_node.id
+  and atlas_edge.target_node_id = target_node.id
+  and atlas_edge.label = 'contains narrative of'
+  and atlas_edge.visual->>'sourceId' = mapping.edge_source_id;
+
 do $$
 declare
   app_node_count integer;
@@ -155,11 +223,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 41 then
-    raise exception 'Expected 41 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> 53 then
+    raise exception 'Expected 53 app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 45 then
-    raise exception 'Expected 45 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> 57 then
+    raise exception 'Expected 57 app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1
@@ -184,6 +252,80 @@ begin
       and edge.label = 'Awadhi devotional telling'
   ) then
     raise exception 'Ramcharitmanas Atlas relationship is missing or misrouted';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    join public.entities entity on entity.id = atlas.entity_id and entity.slug = atlas.slug
+    where atlas.slug = any (array[${DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'durga'
+      and atlas.visual->>'evidenceBoundary' like '%revision 410281%'
+  ) <> 4 then
+    raise exception 'Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    join public.relationships relationship on relationship.id = edge.relationship_id
+    join public.entities subject on subject.id = relationship.subject_entity_id
+    join public.entities object on object.id = relationship.object_entity_id
+    where edge.visual->>'sourceId' = any (array[${DEVIMAHATMYA_SEMANTIC_EDGE_IDS.map(sqlText).join(", ")}])
+      and subject.slug = 'devi-mahatmya'
+      and object.slug = any (array[${DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
+      and relationship.predicate = 'contains_narrative_of'
+  ) <> 4 then
+    raise exception 'Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships';
+  end if;
+  if not exists (
+    select 1
+    from public.atlas_nodes atlas
+    join public.entities entity on entity.id = atlas.entity_id
+    where atlas.slug = 'ganesha-purana'
+      and entity.slug = 'ganesha-purana'
+      and atlas.visual->>'gatewayId' = 'ganesha'
+      and atlas.visual->>'searchQuery' = 'Ganesha Purana two khandas 247 chapters'
+      and atlas.visual->>'evidenceBoundary' like '%65 pinned Wikisource revisions%'
+  ) then
+    raise exception 'Ganesha Purana Atlas node is not bound to its exact source entity and boundary';
+  end if;
+  if not exists (
+    select 1
+    from public.atlas_nodes atlas
+    where atlas.slug = 'ganapatyatharvashirsha'
+      and atlas.entity_id is null
+      and atlas.visual->>'gatewayId' = 'ganesha'
+      and atlas.visual->>'searchQuery' = 'Ganapati Atharvashirsha exact revision 415703'
+      and atlas.visual->>'evidenceBoundary' like '%revision 415703%'
+      and atlas.visual->>'evidenceBoundary' like '%pronunciation%'
+      and atlas.visual->>'evidenceBoundary' like '%formal ritual authority%'
+  ) then
+    raise exception 'Ganapati Atharvashirsha Atlas node is missing its exact revision or authority boundary';
+  end if;
+  if not exists (
+    select 1
+    from public.atlas_nodes atlas
+    where atlas.slug = 'dutt-ramayana'
+      and atlas.entity_id is null
+      and atlas.visual->>'gatewayId' = 'ramayana'
+      and atlas.visual->>'searchQuery' = 'Manmatha Nath Dutt Ramayana seven kandas'
+      and atlas.visual->>'evidenceBoundary' like '%literal SECTION defects remain%'
+      and atlas.visual->>'evidenceBoundary' like '%print-scan reconciliation is incomplete%'
+  ) then
+    raise exception 'Dutt Ramayana Atlas node is missing its selected-edition boundary';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${DISTINCT_DIWALI_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.entity_id is null
+      and atlas.visual->>'gatewayId' = 'diwali'
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> 5 or (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${DISTINCT_DIWALI_EDGE_IDS.map(sqlText).join(", ")}])
+  ) <> 5 then
+    raise exception 'Distinct Diwali Atlas lanes are missing or misrouted';
   end if;
 end
 $$;

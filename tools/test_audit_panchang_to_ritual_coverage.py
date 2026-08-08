@@ -46,6 +46,34 @@ class PanchangToRitualCoverageTest(unittest.TestCase):
     def test_all_resolved_calendar_slugs_have_a_current_lane(self) -> None:
         self.assertEqual(self.missing, {})
 
+    def test_all_resolved_calendar_slugs_have_bilingual_user_complete_contracts(self) -> None:
+        self.assertEqual(
+            self.audit["counts"]["calendar_slugs_without_bilingual_user_complete_lane"],
+            0,
+        )
+        for slug, record in self.covered.items():
+            self.assertTrue(record["bilingual_user_complete_lane"], slug)
+            complete_lanes = [
+                lane
+                for lane in record["ritual_lanes"]
+                if lane["classification"] == "user_complete_lane"
+            ]
+            self.assertTrue(complete_lanes, slug)
+            self.assertTrue(
+                any(
+                    lane["language_codes"] == ["en", "hi"]
+                    and lane["contract_issues"] == []
+                    for lane in complete_lanes
+                ),
+                slug,
+            )
+
+    def test_every_current_user_complete_record_satisfies_the_full_contract(self) -> None:
+        self.assertEqual(
+            self.audit["counts"]["current_user_complete_slug_records_with_contract_issues"],
+            0,
+        )
+
     def test_no_active_unresolved_fixture_remains(self) -> None:
         unresolved_files = {
             Path(record["file"]).name

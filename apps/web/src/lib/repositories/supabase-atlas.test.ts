@@ -62,7 +62,7 @@ describe("Supabase Atlas mapping", () => {
       reveal_at: 1,
     } as NodeRow;
     const world = mapAtlasRows([...gatewayRows, explorableNode], [{ id: "e1", source_node_id: "1", target_node_id: "5", label: "begins in", visual: { sourceId: "ramayana-ayodhya" } }] as EdgeRow[]);
-    expect(world.worldNodes).toEqual([expect.objectContaining({ id: "ayodhya", eras: ["Origins", "Epics", "Living"], gatewayId: "ramayana", searchQuery: "Ayodhya Ramayana" })]);
+    expect(world.worldNodes).toEqual([expect.objectContaining({ id: "ayodhya", eras: ["Origins", "Epics", "Living"], gatewayId: "ramayana", searchQuery: "Ayodhya Ramayana", geography: { position: { x: 54, y: 35 }, region: "Uttar Pradesh" } })]);
     expect(world.worldEdges).toEqual([{ id: "e1", from: "ramayana", to: "ayodhya", relation: "begins in" }]);
     const fallbackWorld = mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { sourceId: "ayodhya", size: "major" } }], []);
     expect(fallbackWorld.worldNodes[0]).toMatchObject({ id: "ayodhya", gatewayId: "ramayana", eras: ["Origins", "Epics", "Living"] });

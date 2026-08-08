@@ -27,23 +27,39 @@ async function expectNoHorizontalOverflow(page: Page) {
   expect(dimensions.document).toBeLessThanOrEqual(dimensions.viewport + 1);
 }
 
-test("the Living Atlas exposes all four launch worlds and working map controls", async ({ page }) => {
+test("the Living Atlas is a full-screen cosmic world with spatial travel", async ({ page }) => {
+  const health = await page.request.get("/api/health");
+  expect(health.status()).toBe(200);
+  expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "Where will your curiosity take you?" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Choose a star. Enter a world." })).toBeVisible();
+  const atlas = page.getByRole("region", { name: /Interactive Atlas cosmic universe/ });
+  const initialBox = await atlas.boundingBox();
+  expect(initialBox).not.toBeNull();
+  expect(initialBox?.width ?? 0).toBeGreaterThan(page.viewportSize()!.width * .98);
+  expect(initialBox?.height ?? 0).toBeGreaterThan(page.viewportSize()!.height * .98);
+  await expect(page.getByText("Set your location for Panchang")).toHaveCount(0);
+  await expect(page.getByRole("navigation")).toHaveCount(0);
   for (const hero of ["Ganesha", "Durga", "Ramayana", "Diwali"]) {
-    await expect(page.getByRole("button", { name: `Explore ${hero}` })).toBeVisible();
+    const gateway = page.getByRole("button", { name: `Explore ${hero}` });
+    await expect(gateway).toBeVisible();
+    const gatewayBox = await gateway.boundingBox();
+    expect(gatewayBox, `${hero} gateway is inside the playable viewport`).not.toBeNull();
+    expect((gatewayBox?.x ?? -1) + (gatewayBox?.width ?? 0)).toBeGreaterThan(0);
+    expect(gatewayBox?.x ?? page.viewportSize()!.width).toBeLessThan(page.viewportSize()!.width);
+    expect((gatewayBox?.y ?? -1) + (gatewayBox?.height ?? 0)).toBeGreaterThan(0);
+    expect(gatewayBox?.y ?? page.viewportSize()!.height).toBeLessThan(page.viewportSize()!.height);
   }
 
   const scene = page.getByTestId("atlas-scene");
   await expect(scene).toHaveAttribute("data-view-scale", "1");
-  await page.getByRole("button", { name: "Zoom in" }).click();
-  await expect(page.getByRole("group", { name: "Atlas zoom controls, 122%" })).toBeVisible();
-  await expect(scene).toHaveAttribute("data-view-scale", "1.22");
-  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Zoom in" }).evaluate((button: HTMLButtonElement) => button.click());
+  await expect(page.getByRole("group", { name: "Atlas zoom controls, 120%" })).toBeVisible();
+  await expect(scene).toHaveAttribute("data-view-scale", "1.2");
+  await page.getByRole("button", { name: "Reset map view" }).evaluate((button: HTMLButtonElement) => button.click());
   await expect(scene).toHaveAttribute("data-view-scale", "1");
   await expect(scene).toHaveAttribute("data-view-x", "0");
 
-  const atlas = page.getByRole("region", { name: /Interactive Atlas/ });
   const box = await atlas.boundingBox();
   expect(box).not.toBeNull();
   if (box) {
@@ -64,11 +80,14 @@ test("the Living Atlas exposes all four launch worlds and working map controls",
     await page.mouse.up();
   }
   await expect(scene).not.toHaveAttribute("data-view-x", "0");
-  await page.getByRole("button", { name: "Epics", exact: true }).click();
-  await expect(page.getByRole("button", { name: "Epics", exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("button", { name: "Explore Ramayana" })).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByRole("link", { name: "Begin at Ayodhya" })).toBeVisible();
+  await page.getByRole("link", { name: "Begin at Ayodhya" }).click();
+  await expect(page.getByRole("region", { name: "Ramayana story world" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Bālakāṇḍa" })).toBeVisible();
+  await expect(page.getByRole("listitem", { name: /2\. Ayodhyākāṇḍa/ })).toBeVisible();
+  await expect(page.getByText("Story source", { exact: true })).toBeVisible();
   await expectNoHorizontalOverflow(page);
 });
 
@@ -98,6 +117,11 @@ test("exact Search keeps all four hero lanes source-bounded", async ({ page }) =
   ] as const;
 
   await page.goto("/search");
+  await expect(page.getByRole("heading", { name: "One roof. Three honest layers." })).toBeVisible();
+  await expect(page.getByText("01 · Preserved")).toBeVisible();
+  await expect(page.getByText("04 · Product-usable")).toBeVisible();
+  await expect(page.getByText("07 · Civilizationally complete")).toBeVisible();
+  await expect(page.getByText("0/4", { exact: true })).toBeVisible();
   const input = page.getByLabel("Search Devam");
   for (const [query, resultId] of cases) {
     await input.fill(query);

@@ -7,6 +7,20 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 ## Data plane
 
 - Supabase/Postgres: users, profiles, entities, relationships, claims, claim evidence, source metadata, passages, ritual procedures, Panchang facts, journeys, challenges, subscriptions, and analytics events.
+- Product analytics is first-party and content-free: a 90-day pseudonymous session
+  funnel records only allow-listed surface events and bounded categorical targets.
+  Search text, Sarthi messages, location and ritual selections, email, user ids,
+  IP addresses, user agents, source content, and arbitrary properties are excluded.
+  Browser roles may insert RLS-checked rows but cannot read them; only the service
+  role may read the security-invoker daily aggregate. Telemetry is best-effort:
+  a missing/unavailable analytics table returns an accepted no-op and cannot
+  degrade any Atlas, Search, Sarthi, Today, or account experience.
+- `/api/health` is a no-store configuration-readiness surface. In production it
+  fails closed unless the exact HTTPS site origin, publishable-only Supabase
+  configuration, disabled subscription/generation flags, absent forbidden
+  secrets, and Vercel Git commit identity are present. It returns no environment
+  values or credentials and explicitly does not claim database connectivity,
+  SMTP delivery, deployed browser acceptance, or source-vault access.
 - PostGIS: sacred geography, historical places, routes, and map queries.
 - pgvector + Postgres full-text: multilingual hybrid retrieval.
 - Object storage: immutable source objects, images, and derived media. One object per hash.
@@ -38,6 +52,45 @@ ecology, terminology, applicability model, authority boundary, and evaluation
 population. Devam retains the lean Postgres architecture below unless a
 same-model, same-evidence experiment proves that another component materially
 improves a named task family.
+
+The approved understanding and intellectual-apprenticeship design calls the
+target capability **disciplined synthesis under provenance**. It operationally
+separates exact retrieval, source-grounded explanation, cross-source synthesis,
+scoped interpretation, and practical or existential reflection. It also keeps
+four epistemic layers distinct: primary evidence, attributable interpretation,
+explicit Devam synthesis, and contested or non-consensus reception. This is a
+testable capability contract, not a claim that an LLM literally understands in
+an unqualified philosophical sense.
+
+For higher-level questions, the experimental planner may select among six
+reasoning lenses: textual discipline; narrative-moral close reading; place,
+practice and embodiment; scoped theological reasoning; staged pedagogy; and
+institutions, power and margins. Each lens carries a required countercheck, and
+only question-relevant lenses run. They are inspectable operations studied
+through attributable intellectual lineages, not six services, six answer
+sections, six personas, or a consensus engine. Material disagreement remains
+visible.
+
+An `attributed_interpretive_viewpoint` is therefore a proposed compact research
+projection over existing source, claim, evidence, relationship and
+applicability records, not a new database requirement. It preserves who argued
+what, in which scope, through which evidence and inference bridge, with which
+counterpositions, exclusions, rights and review state. It is distinct from a
+cross-case `reviewed_pattern_hypothesis` and subordinate to primary evidence.
+
+The normal answer contract remains natural: crystallized answer, decisive
+distinction, two or three supporting connections, a material limit or
+alternative, and an agency-preserving implication where supported. Evidence is
+expandable, while materially contested, lineage-specific, historical or
+consequential claims remain visibly attributed. No hidden chain-of-thought is
+stored or required.
+
+No runtime or schema change follows from this design alone. Production adoption
+requires a strong grounded-RAG baseline and a held-out, blinded, same-model,
+same-evidence ablation. Public-intellectual corpora, recognizable styles,
+signature analogies and copyrighted long-form material are prohibited learning
+targets; only rights-cleared evidence, attributable research notes, abstract
+operations and fresh neutral Devam examples are eligible.
 
 The model never invents Panchang calculations. A deterministic calendar service produces location/tradition-aware facts; Sarthi explains them.
 
@@ -123,7 +176,28 @@ inputs but are not promoted to full ritual completion unless they satisfy
 
 ## Experience plane
 
-A responsive web/PWA renders the 2.5D Atlas, Sarthi, Search, journeys, and challenges. Scenes are data-driven so content teams can publish places, stories, rituals, and missions without bespoke code for every node. Multi-resolution assets, prefetching, caching, and graceful bandwidth adaptation preserve a premium experience.
+A responsive web/PWA renders the Living Atlas as the full viewport rather than
+inside a dashboard shell. Its procedural/vector cosmic field, layered star
+planes, perspective camera rig, graph edges, master-star gateways, and
+progressively revealed discovery nodes remain resolution-independent under
+zoom. Pointer, wheel, keyboard, pinch, double-tap, and reduced-motion paths share
+one bounded camera state. The initial scene exposes all four hero universes;
+selecting one flies the camera into its local constellation without a hard cut.
+
+Hero journeys reuse the same spatial language: scene nodes, a moving 2.5D path,
+atmosphere, and short story beats replace article-first pages. Hindi and English
+story copy are the primary presentation contract. Citation, edition, variant,
+rights, and uncertainty data remain attached to the same scene records and open
+only through progressive disclosure. Sarthi is an overlay conversation bound to
+the active node. Search, account, Today/Panchang, ritual procedures, and deeper
+library views are destinations, not permanent Atlas rails or bars.
+
+Scenes are data-driven so content teams can publish places, stories, rituals,
+missions, and future visual layers without bespoke navigation code for every
+node. Multi-resolution assets, prefetching, caching, and graceful bandwidth
+adaptation preserve a premium experience. The MVP may simulate depth with CSS
+3D, transforms, vector geometry, and layered motion; a native 3D engine is added
+only when measured interaction or rendering needs justify its cost.
 
 ## Security and privacy
 

@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { LAUNCH_REGIONAL_ACCEPTANCE_PROFILES } from "./launch-regional-acceptance";
 import { LIBRARY_COVERAGE_SNAPSHOT, formatLibraryBytes } from "./library-coverage";
 
 const root = resolve(process.cwd(), "../..");
@@ -42,5 +43,20 @@ describe("honest library coverage snapshot", () => {
     expect(LIBRARY_COVERAGE_SNAPSHOT.heroes.every((hero) => hero.connected.length > 100 && hero.open.length > 90)).toBe(true);
     expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.deterministicDates).toBe(122);
     expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.deterministicDateTotal).toBe(122);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.regionalAcceptanceProfiles).toBe(LAUNCH_REGIONAL_ACCEPTANCE_PROFILES.length);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.launchLayer.regionalAcceptanceCities).toBe(new Set(LAUNCH_REGIONAL_ACCEPTANCE_PROFILES.map((profile) => profile.city)).size);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer).toMatchObject({
+      sourceReferences: 102,
+      passages: 9_091,
+      publishedPassages: 3_298,
+      reviewOrPrivatePassages: 5_793,
+      sourceAlignedBetaTranslations: 1_176,
+      civilizationallyCompleteHeroWorlds: 0,
+      heroWorldTotal: 4,
+    });
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.publishedPassages + LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.reviewOrPrivatePassages).toBe(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.passages);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.heroes.find((hero) => hero.slug === "durga")?.connected).toContain("588 English and 588 Hindi");
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.sourceAlignedBetaTranslations).toBe(588 + 588);
+    expect(LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.boundary).toContain("not percentages");
   });
 });

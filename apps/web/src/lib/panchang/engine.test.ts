@@ -50,6 +50,39 @@ describe("deterministic Panchang engine", () => {
     });
   });
 
+  it("recomputes location-derived fields when a family moves from Delhi to Bengaluru", () => {
+    const shared = {
+      civilDate: "2026-09-14",
+      timezone: "Asia/Kolkata",
+      traditionCode: "family-tradition-to-confirm",
+    } as const;
+    const delhi = calculatePanchang({ ...shared, latitude: 28.6139, longitude: 77.209 });
+    const bengaluru = calculatePanchang({ ...shared, latitude: 12.9716, longitude: 77.5946 });
+
+    expect(delhi?.engine).toMatchObject({
+      id: "devam-panchang",
+      version: "astronomy-engine-2.1.19-lahiri-v3",
+      rulesetVersion: "panchanga-five-limbs-sunrise-v1",
+    });
+    expect(bengaluru?.engine).toMatchObject({
+      id: "devam-panchang",
+      version: "astronomy-engine-2.1.19-lahiri-v3",
+      rulesetVersion: "panchanga-five-limbs-sunrise-v1",
+    });
+    expect(delhi?.engine.ayanamshaDegreesAtSunrise).not.toBe(bengaluru?.engine.ayanamshaDegreesAtSunrise);
+    expect(delhi?.request.timezone).toBe(bengaluru?.request.timezone);
+    expect(delhi?.sunriseUtc).not.toBe(bengaluru?.sunriseUtc);
+    expect(delhi?.sunsetUtc).not.toBe(bengaluru?.sunsetUtc);
+    expect(delhi?.moonriseUtc).not.toBe(bengaluru?.moonriseUtc);
+    expect(delhi?.windows.brahmaMuhurta).not.toEqual(bengaluru?.windows.brahmaMuhurta);
+    expect(delhi?.boundaries).toEqual({
+      calculationOnly: true,
+      observanceRulesResolved: false,
+      ritualGuidanceIncluded: false,
+      note: "Astronomical Panchanga facts only. Festival assignment and ritual guidance require separately versioned tradition, region, and evidence rules.",
+    });
+  });
+
   it("keeps the versioned Lahiri approximation stable", () => {
     expect(lahiriAyanamshaDegrees(new Date("2000-01-01T12:00:00.000Z"))).toBe(23.85675);
     expect(lahiriAyanamshaDegrees(new Date("2026-09-14T00:55:54.450Z"))).toBeCloseTo(24.229763, 5);

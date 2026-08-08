@@ -299,6 +299,15 @@ page-by-page reconciliation to every print scan, corrected printed numbering,
 an edition-identified Sanskrit base, Hindi, every translation/commentary,
 every recension/tradition, the Ramayana hero universe, or the MVP library.
 
+The selected edition is now also available through a payload-free local
+product doorway. Its compact structure pack exposes all seven kāṇḍas and 652
+source-ordered sections to Search, Sarthi, and the Living Atlas using exact
+opening and terminal citation coordinates. No narrative text or vault path is
+copied into the application or Atlas migration. This improves deterministic
+discovery when hosted passage retrieval is unavailable; it does not replace
+exact passage retrieval, complete print-scan reconciliation, or the remaining
+Sanskrit, Hindi, commentary, and variant requirements below.
+
 ### Edition-matched Hindi Wikisource page acquisition (2026-08-08)
 
 Hindi Wikisource exposes an exact 1,240-title Page-namespace universe for the

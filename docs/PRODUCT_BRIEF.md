@@ -10,13 +10,29 @@ The source library is the underlying data layer. A claim-centered intelligence l
 
 ### Living Atlas
 
-A browser-first, responsive 2.5D world with richly illustrated Indian epic/storybook art, parallax, atmosphere, controlled animation, maps across centuries, and mature cinematic direction. It supports:
+A browser-first, responsive 2.5D open world with the immediacy of a premium
+exploration game: a full-viewport cosmic knowledge universe, master entities as
+luminous stars, connected discoveries at different apparent depths, spatial
+camera movement, parallax, atmosphere, and continuous cinematic transitions.
+The graph is felt as a place before it is presented as an interface. It supports:
 
 - free exploration;
 - curated narrative or practice journeys; and
 - challenges/missions, including optional privacy-conscious real-world challenges.
 
-It is not a children’s game and does not award “spiritual merit.” Sacred figures use consistent approved iconography. Native apps, full 3D/AAA scope, and optional generated 3D portals come later.
+The primary consumer path is story-first in Hindi or English. A user entering
+Ramayana, Ganesha, Durga, or Diwali continues travelling through a spatial story
+world; the product must not collapse into a conventional article page. Source
+identity, editions, variants, Sanskrit originals, and uncertainty remain
+available as a progressive-disclosure trust layer rather than dominating the
+first encounter. Panchang and ritual utilities are contextual destinations, not
+persistent Atlas chrome. Sarthi is a floating companion control that opens a
+chat over the current world; it does not displace exploration.
+
+It is not a children’s game and does not award “spiritual merit.” Game feel means
+movement, discovery, wonder, continuity, and optional missions—not gamifying
+sacred authority. Sacred figures use consistent approved iconography. Native
+apps, full 3D/AAA scope, and optional generated 3D portals come later.
 
 ### Sarthi
 

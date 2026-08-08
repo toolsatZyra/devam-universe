@@ -105,11 +105,15 @@ describe("GET /api/search", () => {
     expect(result.sourceCatalogBoundary).toContain("not a verified passage");
   });
 
-  it("lists the seven Dutt scans and four electronic text carriers separately from exact passages", async () => {
+  it("returns the Dutt edition structure while listing its seven scans and four text carriers separately", async () => {
     const response = await GET(new Request("http://localhost/api/search?query=Ramayana%20Manmatha%20Nath%20Dutt"));
     const result = await response.json();
-    expect(result.total).toBe(0);
-    expect(result.results).toEqual([]);
+    expect(result.total).toBe(1);
+    expect(result.results[0]).toMatchObject({
+      id: "dutt-ramayana-seven-kanda-structure-en",
+      claimKind: "source_bounded_edition_structure",
+    });
+    expect(result.results[0].citations).toHaveLength(14);
     expect(result.sourceCatalogTotal).toBe(11);
     expect(result.sourceCatalogMatches).toHaveLength(11);
     expect(result.sourceCatalogMatches.reduce((total: number, item: { bytes: number }) => total + item.bytes, 0)).toBe(76_343_678);

@@ -808,19 +808,46 @@ rights or masters.
   vrata, temple, Diwali, Kojagara, Kartika, Dev Deepawali, shraddha, tarpan,
   Darsha, and ancestor-practice lanes remain separate; unresolved Margashirsha
   Purnima is not promoted.
-- [ ] Every named and recurring observance has a machine-executable rule with
-  a source citation, applicability, precedence logic, and test fixtures.
-- [ ] City/region comparison fixtures cover all launch-critical regional lanes.
-- [ ] Every launch observance has Hindi and English explanation.
-- [ ] Every actionable procedure has minimum/standard/elaborate variants,
-  substitutions, family-practice prompts, and source evidence.
-- [ ] Every product-complete ritual lane answers what applies to the user, why
-  it matters and which stories explain it, what is typically done and when, and
-  what the user can do step by step.
-- [ ] Ganesha, Navaratri/Durga Puja, Ramayana, and Diwali/Deepavali campaign content is connected
-  to the daily layer, Atlas nodes, journeys, challenges, and Sarthi.
-- [ ] Contradictions and alternatives are retained in evidence and surfaced only
-  when relevant or requested.
+- [x] All 75 named and recurring observance slugs exposed by the runtime are
+  reconstructed by executing all 122 launch dates across 13 bounded
+  location/tradition profiles. Every lane must return a selected 2026 civil
+  date, source/hash evidence, explicit precedence, and an applicability result;
+  an unsupported tradition fails closed except for the four explicitly
+  tradition-independent astronomical Sankranti identities. This runtime set is
+  distinct from the 79-slug evidence-pack/actionability audit denominator.
+- [x] A bounded launch comparison matrix exercises 18 exact profiles across
+  Ahmedabad, Amritsar, Bengaluru, Chennai, Delhi, Kolkata, Mumbai, and Patna.
+  It binds the selected civil date and tradition-aware calendar lane to both
+  English and Hindi user-complete guidance, and fails closed for an unsupported
+  tradition. The matrix covers the four hero worlds and the named Bengal,
+  Tamil, Karnataka, BAPS, Sikh, Jain, ISKCON, and Chhath launch lanes; it is not
+  an all-city, all-region, or all-tradition completeness claim.
+- [x] All 79 uniquely resolved launch-calendar slugs map by exact slug to a
+  current user-complete lane with both English and Hindi content. The audit
+  does not count a title match, legacy pack, preflight, or unresolved fixture
+  as bilingual product coverage.
+- [x] All current user-complete ritual records pass a machine audit for exact
+  minimum/standard/elaborate procedure tiers, material substitution fields,
+  family/context prompts, contiguous steps, and source references. This proves
+  the current bounded product records, not every procedure in living practice.
+- [x] All current user-complete ritual records also pass the remaining scoped
+  product contract: applicability, significance, source-labelled narratives,
+  typical practice and timing, actionable steps, variants, safety boundaries,
+  completion dimensions, and zero declared open gaps. “Complete” remains
+  limited to each record's named region, tradition, role, language, and setting.
+- [x] A cross-surface acceptance test binds Ganesha, Navaratri/Durga Puja,
+  Ramayana, and Diwali/Deepavali to at least one bounded Today/date context, an
+  Atlas gateway and world node, a source-addressed Journey, its non-spiritual-
+  score Challenge, and a source-bounded Sarthi route. This proves navigable MVP
+  connectivity, not completeness of any hero universe.
+- [x] Every current user-complete ritual record retains scoped variants, safety
+  boundaries, and guide-source identities. Default Sarthi answers remain
+  concise; explicit alternative requests receive a bounded variant digest,
+  while Today, Atlas, and standalone Sarthi expose the complete structured
+  record behind collapsed disclosure. This proves relevance-sensitive handling
+  for the current launch records, not exhaustion of all living alternatives or
+  contradictions.
 
-Until all unchecked items close, the September-December ritual layer is in
-progress rather than complete.
+The bounded September-December 2026 launch ritual layer meets this checklist.
+Its exact location, tradition, language, role, and source limits remain part of
+the product contract; this is not a claim of civilizational completeness.

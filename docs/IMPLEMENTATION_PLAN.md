@@ -2064,6 +2064,35 @@ complete civilizational visual coverage. Current closure passes 89 web test
 files / 678 tests, type-check, lint, the production mojibake scan, and the
 production build.
 
+Checkpoint 2026-08-08 (consumer cosmic open-world correction): the Atlas no
+longer renders the cosmic bitmap as its zooming scene plane. That earlier asset
+is retained as an unused art source, while the playable surface now uses a
+resolution-independent procedural star field, nebula layers, SVG relationship
+paths, CSS perspective, and a bounded camera transform. The complete viewport is
+the experience: the permanent left rail, Atlas Panchang control, era strip,
+geography switcher, and bottom navigation bar are removed. Search and account
+remain small HUD destinations; Sārthi is a floating button opening an in-world
+conversation panel.
+
+All four hero gateways are visible as master stars on the first desktop and
+phone viewports. Unopened graph nodes remain as low-contrast constellation
+points; entering a hero world flies the camera to it, raises the local graph and
+relationship paths, and reveals short consumer story hooks. Ramayana, Ganesha,
+Durga, and Diwali journey routes now continue as spatial 2.5D story paths instead
+of returning to article cards. Story identity and one short English narrative
+beat lead; edition, locator, source boundary, variants, and ritual evidence stay
+collapsed as the trust layer. A Hindi story-copy switch and richer scene-specific
+art/audio remain explicit next experience work; this checkpoint does not claim
+final art, native 3D, every narrative scene, or complete bilingual presentation.
+
+Validation after this correction passes 115 portable web test files / 767 tests
+with 17 named vault-only skips, lint, TypeScript, a warning-free production
+build, and the complete local desktop/mobile Playwright matrix (12/12). The
+browser acceptance now proves a full-viewport Atlas, all four master stars inside
+the playable bounds, resolution-independent zoom/reset and pan, absence of the
+old Panchang/navigation chrome, continuous Ramayana story-world entry, no
+horizontal overflow, and no browser console or page errors.
+
 Checkpoint 2026-08-08 (hosted MVP data backbone): the dedicated
 `devam-universe` project now has all sixteen repository migrations applied. The
 hosted Atlas is synchronized to the reviewed composition—four gateways, 36
@@ -2089,6 +2118,62 @@ edition or tradition completeness. The security advisor has two documented inten
 `SECURITY DEFINER` warnings; unused-index notices are retained until traffic
 supplies real usage evidence. Current closure passes 89 web test files / 676
 tests, type-check, lint, and the production build.
+
+Checkpoint 2026-08-08 (source-bounded Devī Māhātmya semantic increment,
+local and unapplied): a compact product pack now models four narrative
+identities—Madhu and Kaiṭabha, Mahiṣāsura, Śumbha, and Niśumbha—with twelve
+preferred multilingual names, eight English/Hindi Devam claims, eight exact
+claim-evidence links, and four `contains_narrative_of` relationships. Every
+claim is pinned to one of three verified passages in the exact Sanskrit
+Wikisource source universe and explicitly denies source-original translation,
+universal theology, history, festival origin, ritual authority, and use of
+antagonist names as labels for people or groups. Exact Search can retrieve the
+four identities without hosted connectivity, and the Living Atlas now exposes
+four progressively revealed doorways whose edges bind to those evidence-linked
+semantic relationships. The current app composition is therefore four
+gateways, 41 world nodes, and 49 navigation edges; navigation counts remain
+distinct from semantic graph counts. Two forward-only migrations are prepared
+but have not been applied to hosted Supabase, and no source payload is copied
+into either the app or database migration.
+
+The same four identities now have a deterministic Sarthi route over the exact
+semantic pack. Named questions and their four Atlas-node continuations return
+only the evidence-linked bilingual narrative statements and citations; broad
+Durga, festival-origin, theology and ritual requests remain outside this route
+and continue through their separately governed paths.
+
+Checkpoint 2026-08-08 (app-owned Ganesha Purana source doorway, local and
+unapplied): the previously ingested exact Sanskrit Wikisource universe is now
+reachable even when hosted retrieval is unavailable. A compact structure pack
+reconstructs against ingestion packet
+`668f6c5c46d9897447cfcdbcf969b474fe24bf504d316098ad194b0dbeace27d`
+and binds the opening and terminal passage of Upāsanākhaṇḍa chapters 1–92 and
+Krīḍākhaṇḍa chapters 1–155. Exact Search returns bilingual Devam structure
+summaries with four source-object, passage-ordinal, span, provider-page, and
+provider-revision citations. The pack contains no Sanskrit payload and retains
+all edition, recension, translation, Mudgala Purana, ritual-authority, and
+wider-tradition denials. The Living Atlas now treats `ganesha-purana` as a
+reviewed app-owned doorway instead of ignoring the earlier independently
+managed hosted node; a new forward-only migration binds that Atlas node to the
+published semantic entity. Its navigation edge remains deliberately distinct
+from the oppositely directed `sacred_text_of` semantic relationship. The local
+app composition is now four gateways, 42 world nodes, and 50 navigation edges;
+the migration has not been applied to hosted Supabase.
+
+Checkpoint 2026-08-08 (exact-revision Ganapati Atharvashirsha product doorway,
+local and unapplied): Devam now exposes all 16 passages—opening, numbered units
+1–14, and closing—from exact Sanskrit Wikisource page 137 revision 415703
+through complete source-aligned English and Hindi beta translations. Search
+returns exact passage, span, source-object, page, and revision citations;
+Sarthi routes this named work ahead of the unrelated broad Ganesha hymn
+fallback. Pronunciation, Vedic accent, recitation cadence, initiation, formal
+ritual authority, empirical benefit guarantees, the unidentified print
+edition and recension, and independent Sanskrit review all remain explicitly
+unsupported. The Living Atlas adds one app-owned source doorway and one
+navigation edge without inventing a semantic entity. The local composition is
+therefore four gateways, 43 world nodes, and 51 navigation edges. The new
+forward-only Atlas migration is prepared but has not been applied to hosted
+Supabase, and no source payload is copied into the app or migration.
 
 Checkpoint 2026-08-08 (Griffith English Ramayana product lane): the exact
 Project Gutenberg eBook 24869 structural TEI remains referenced in the
@@ -2185,6 +2270,12 @@ commentaries, variants, and wider Ganesha coverage remain open. The retained
 vault now verifies at 8,446 unique objects / 5,780,836,280 bytes, summary
 SHA-256
 `2504f0d14f374e11d264397ae629f1c7e697a3ed0ec430eee6d4db4da81fffe9`.
+
+The deterministic Sarthi route now closes the named-source and Atlas-continuation
+doorway against the same fixity-checked two-khanda structure pack used by exact
+Search. It returns four opening/closing citations for the overview or two for a
+named khanda, and it preserves the edition, recension, translation, Mudgala and
+wider-tradition denials instead of falling through to generic Ganesha guidance.
 
 Checkpoint 2026-08-08 (Mudgala Purana internal fixed carrier): one original
 63,438,893-byte Internet Archive PDF is retained once at SHA-256
@@ -2285,6 +2376,32 @@ reconciliation, corrected literal numbering, an edition-identified Sanskrit
 base, Hindi, every Ramayana expression or tradition, the hero universe, or the
 MVP library. Nine deterministic tests pass.
 
+Checkpoint 2026-08-08 (Dutt edition product doorway, local and unapplied): a
+payload-free compact structure pack now reconstructs from the same fixed
+product plan, four immutable electronic carriers, 652 published passage spans,
+and deterministic report. Search exposes either the complete seven-kāṇḍa
+edition structure or a named kāṇḍa with its exact opening and terminal source
+coordinates. Sarthi routes the named Dutt edition ahead of the broad Ramayana
+fallback, and the Living Atlas adds one edition-specific doorway and one
+navigation edge. The pack contains no exact source text, vault path, or copied
+source body. Literal SECTION defects, incomplete page-by-page print-scan
+reconciliation, absence of Sanskrit and Hindi in this expression, and wider
+Ramayana incompleteness remain visible. At that checkpoint the local Atlas
+composition was four gateways, 44 world nodes, and 52 navigation edges. Its forward-only
+migration is prepared but has not been applied to hosted Supabase.
+
+Checkpoint 2026-08-08 (distinct Diwali Atlas lane parity, local and unapplied):
+five already implemented, separately governed lanes now have direct world
+doorways rather than only indirect place or sequence references: BAPS Gujarat
+Kali Chaudas, BAPS Gujarati New Year, Karnataka Bali Padyami, Jain Diwali, and
+Bandi Chhor Divas. Each doorway resolves through the existing cited Search
+contract and continues in Sarthi with its exact region/tradition boundary. The
+new edges preserve Gujarat, Karnataka, Jain, and Sikh identities instead of
+merging them into Maharashtra Naraka Chaturdashi, Bali Pratipada, Hindu Diwali,
+or one universal procedure. The current local Atlas is four gateways, 49 world
+nodes, and 57 navigation edges; the generated forward-only sync migration
+alters no evidence, RLS, function, grant, or independently managed row.
+
 Live hosted census after these checkpoints: 21 works, 27 expressions, 27
 editions, 102 source-object references, 9,091 passages, 1,228 published claims,
 1,233 claim-evidence links, 6 entities, 4 semantic relationships, 42 Atlas
@@ -2309,9 +2426,16 @@ completion must not be inferred from passing tests:
   Ramcharitmanas product editions, broader Ganesha and Durga source families,
   variant dossiers, complete civilizational Atlas coverage, and final
   gateway-specific scene art remain incomplete. The current Atlas has an
-  original shared cinematic environment, 37 connected, progressively revealed
-  world nodes, and four gateways; density beyond the four hero launch worlds
-  remains open.
+  original shared cinematic environment, 49 connected, progressively revealed
+  world nodes, 57 navigation edges, and four gateways; density beyond the four
+  hero launch worlds remains open.
+- The Living Atlas now separates its conceptual Knowledge universe from a
+  Sacred geography layer. The latter plots the 11 place nodes already used by
+  the four reviewed hero-world place threads on an illustrative India base,
+  retains era filtering and evidence-bounded discovery cards, and labels the
+  display as approximate and non-navigational. This closes the first credible
+  map-experience gap; it does not establish political boundaries, literal epic
+  routes, historical chronology, complete sacred geography, or final hero art.
 - All 79 currently resolved September-December observance slugs have a current
   actionability lane. The exact Jain Diwali default now includes a separately
   named, user-complete non-initiatory lay-remembrance lane while the broader
@@ -2319,14 +2443,46 @@ completion must not be inferred from passing tests:
   temple, fasting, mantra, scripture-recitation, and puja practice. This still
   does not satisfy every regional, household, institutional, or priest-led
   procedure in the ritual product contract.
+- Practice-guidance routing now resolves the 47 current ritual records through
+  the generic `DEVAM_RITUAL_OBSERVANCE_CONTENT_V1` applicability/content
+  registry first. Older resolver modules remain in one ordered compatibility
+  registry, not a per-observance branch chain, and an architectural test rejects
+  restoration of that control flow. New ritual lanes must enter through the
+  generic contract; this is the database-ready migration boundary, not a claim
+  that every old compatibility module has been deleted.
 - Library search exposes reviewed claims, published product-compatible exact
-  passages, and all preserved-object metadata, but most of the 8,455 retained
-  objects are not yet passage-indexed product text.
+  passages, and all preserved-object metadata, but most of the 8,491 retained
+  objects are not yet passage-indexed product text. Its landing surface now
+  exposes the investor coverage maturity ladder: preserved, structured,
+  indexed, product-usable, translated, reviewed, and civilizationally complete.
+  The final stage is explicitly 0/4 hero universes, and every upstream count
+  names its selected-scope boundary.
 - The hosted subscription entitlement boundary has no checkout provider or
   paid-access enforcement. Public account email still needs a deployed fixed
   origin and custom SMTP.
 - No production deployment, production-domain acceptance pass, analytics
   funnel, or public launch gate has been completed.
+
+Checkpoint 2026-08-08 (privacy-minimal product funnel, local and unapplied): the
+three product doors, deterministic Today resolution, and passwordless account
+conversion now emit only allow-listed categorical events through a server route.
+The 90-day Supabase table stores a random per-tab session UUID, event, surface,
+bounded target, coarse guest/signed-in state, and server time. It explicitly
+stores no query text, Sarthi message, location or ritual selection, email, user
+id, IP, user agent, source content, or arbitrary properties. Browser roles have
+insert-only RLS access; a `security_invoker` daily aggregate is service-role-only.
+The migration remains unapplied, so this closes the code and schema gap but not
+the production analytics or public-launch gate.
+
+Checkpoint 2026-08-08 (runtime readiness, local and undeployed): a no-store
+`/api/health` contract now fails closed in production unless the exact HTTPS
+site origin, publishable-only Supabase pair, explicitly disabled subscription
+and Sarthi-generation flags, absence of forbidden server secrets, and Vercel Git
+commit identity are present. It returns no environment values or credentials
+and keeps database connectivity, SMTP delivery, deployed browser acceptance and
+source-vault access explicitly unproven. The unchanged 12-case browser suite
+checks this endpoint before opening the Atlas. Production monitoring remains
+unproven until the endpoint is exercised on the deployed origin.
 
 Checkpoint 2026-08-08 (complete fixed 1927 Hindi Vālmīki Rāmāyaṇa carrier set):
 ten separately preserved Dwaraka Prasad Sharma volume PDFs now add 191,180,148
@@ -2340,6 +2496,229 @@ The provider labels the upload CC BY-NC 3.0, while the translator's India
 copyright term remains unresolved; the edition is therefore internal-only and
 absent from Search, Sarthi, API, vector, training, Atlas, and public-product
 lanes. The product-usable Hindi Vālmīki Rāmāyaṇa gap remains open.
+
+### Sarthi understanding and intellectual-apprenticeship sequence
+
+Checkpoint 2026-08-08 (design integration only): the approved understanding-layer
+pilot and six-thinker intellectual-apprenticeship research have been reconciled
+into `SARTHI_WISDOM_ARCHITECTURE.md` and `ARCHITECTURE.md`. The adopted direction
+is **disciplined synthesis under provenance**: operationally distinguish exact
+retrieval, source-grounded explanation, cross-source synthesis, scoped
+interpretation and practical or existential reflection; preserve primary fact,
+attributable interpretation, explicit Devam synthesis and contested reception;
+select only relevant lenses with explicit counterchecks; preserve material
+disagreement; and render a concise crystallized answer with expandable evidence
+and user agency.
+
+The six lenses are textual discipline, narrative-moral close reading, place and
+embodiment, scoped theological reasoning, staged pedagogy, and institutions,
+power and margins. They were studied through Bibek Debroy, Arshia Sattar, Diana
+L. Eck, Anantanand Rambachan, Swami Sarvapriyananda and Uma Chakravarti. Their
+names preserve research lineage; Sarthi must not imitate their voices, signature
+analogies, prose, personas or conclusions. Both research validators pass, but
+that proves package consistency only. No runtime, migration, database,
+knowledge-pack or source-vault implementation has run, and no quality gain is
+claimed.
+
+The implementation sequence below is incremental and reversible. Every phase
+must retain deterministic Panchang ownership, ritual safety, library expansion,
+rights lanes, source and edition identity, variants and uncertainty.
+
+#### Understanding Phase 0 — contracts and evaluation fixtures
+
+Checkpoint 2026-08-08: Phase 0 is implemented and frozen, but unrun. The
+answer-free held-out fixture at
+`apps/web/evaluation/sarthi-understanding-heldout-v1.json` contains 30 matched
+English/Hindi pairs (60 independently rated scenarios) across all five answer
+capabilities. Every pair declares evidence roles, scope fields, selected
+lenses, evidence readiness and non-averagable critical failures. The evaluator
+contract and SHA-256 manifest sit beside it, and
+`pnpm verify:sarthi-understanding-phase0` validates counts, hero coverage,
+Devanagari presence, answer-field absence and byte identity. The fixture remains
+`frozen_unrun`; incomplete evidence packets are explicitly `partial` or
+`research_required`. No baseline answers, model run or quality gain is claimed.
+
+- **Inputs and rights prerequisites:** approved research packages; existing
+  product and wisdom contracts; metadata and lawful links only for
+  public-intellectual research; product-cleared evidence required before answer
+  evaluation.
+- **Implementation boundary:** documentation, question taxonomy, evidence roles,
+  lens-selection rules, answer contract, hard failures and held-out fixture only;
+  no production code, schema or corpus ingestion.
+- **Deliverables:** operational definitions for the five answer capabilities;
+  four-layer epistemic contract; six lens/countercheck contracts; disagreement
+  register; concise answer contract; frozen English/Hindi held-out set and
+  evaluator instructions.
+- **Acceptance:** fixtures are frozen before tuning; every question declares
+  required evidence roles, scope and critical failures; reviewers can distinguish
+  fact, attribution, synthesis and contestation.
+- **Evaluation and rollback:** structural validators pass; any item derived from
+  test answers is removed; a fixture that leaks answers or unlicensed material is
+  replaced before a run.
+- **Dependencies and risks:** representative reviewer recruitment, evidence
+  readiness and rights review; risks are English-accessible cohort bias, scope
+  leakage and rubric ambiguity.
+- **Not yet claimed:** no model learning, understanding performance, user benefit
+  or production readiness.
+
+#### Understanding Phase 1 — strong grounded-RAG baseline
+
+Checkpoint 2026-08-08: evidence admission is partially implemented and the
+baseline remains unrun. The hash-bound registry at
+`apps/web/evaluation/sarthi-phase1-evidence-admission-v1.json` admits fifteen of the
+thirty bilingual pairs: Ramcharitmanas edition coverage, Hanuman's reviewed
+deliberation episode, bounded ritual and cross-observance lanes, and one
+household-giving guidance lane, plus the exact-revision Devi Mahatmya source and
+beta-translation boundary, and one exact Mumbai Ganesh Chaturthi Panchang
+example, one Delhi-to-Bengaluru recomputation/clarification contract, and a
+user-owned work-versus-care deliberation lane. Three Phase 0-ready candidates
+are now explicitly blocked by verified source-role, place/history, or age/scope
+mismatches,
+seven partial-evidence pairs remain blocked, and five pairs still require
+research. The validator enforces
+exact Phase 0 roles and scope, repository-local artifact fixity, rights and
+quotation boundaries, and complete indexing. Candidate readiness is not
+admission. No answer, model call, scoring run or quality claim exists, so Phase 1
+is not complete. The answer-free baseline specification and preparer now produce
+thirty blinded English/Hindi envelopes from the fifteen admitted pairs, pin the
+existing grounded-generation contract, require cost/latency/token records and
+human review, materialize rights-safe reviewed evidence rather than metadata
+alone, reject raw/private/provider/quotation fields, and keep external calls
+disabled pending explicit authorization. A fail-closed live runner now verifies
+an official dated pricing snapshot, exact thirty-call authorization, immutable
+run identity, `store: false`, no automatic retries and per-call recoverable
+checkpoints with token, latency and cost records. Its preflight makes no network
+call or write; the live run remains unexecuted. The blinded-review generator is
+also preflighted: it freezes the ten Phase 0 dimensions and eight hard failures,
+requires two independent reviewers, hides runtime/provider/cost identities,
+preserves reviewed evidence for source checking and refuses to overwrite review
+work. The analyzer is preflighted and requires complete two-reviewer coverage,
+valid rationales, exact packet fixity, separate English/Hindi agreement, at
+least 0.80 within-one-point agreement and zero hard failures before it can mark
+the baseline eligible for a human phase decision. No ratings exist yet.
+
+- **Inputs and rights prerequisites:** frozen product-cleared evidence packets,
+  current retrieval stack and the same admissible source universe planned for
+  later arms.
+- **Implementation boundary:** measure the strongest practical retrieval and
+  ordinary grounded synthesis before adding dossiers, lenses or thesis machinery.
+- **Deliverables:** versioned baseline outputs, evidence manifests, latency,
+  token/cost records and blinded per-dimension ratings in English and Hindi.
+- **Acceptance:** baseline answers are source-faithful, scoped, natural and
+  correction-capable; hard failures are reported separately rather than hidden
+  in an aggregate.
+- **Evaluation and rollback:** freeze baseline and reviewer calibration; if
+  evidence is incomplete or reviewer agreement is inadequate, repair the packet
+  or anchors and rerun without advancing.
+- **Dependencies and risks:** model/runtime authorization, reviewer panel and
+  frozen source packets; risks are a deliberately weak straw baseline, citation
+  volume bias and style/length confounding.
+- **Not yet claimed:** no complex reasoning structure is necessary and no
+  treatment is better than grounded RAG.
+
+#### Understanding Phase 2 — offline six-lens prototype
+
+- **Inputs and rights prerequisites:** Phase 1 packets plus abstract operations,
+  counterchecks and fresh neutral Devam examples created only from
+  product-cleared evidence.
+- **Implementation boundary:** offline, reversible explicit prompts or structured
+  intermediate records; no public-intellectual corpus fine-tuning, voice
+  imitation, production integration, migration or user data.
+- **Deliverables:** question classifier, relevant-lens selector, evidence-role
+  coverage record, disagreement record, candidate decisive distinction and
+  concise renderer; optional `attributed_interpretive_viewpoint` represented as a
+  research projection before any schema decision.
+- **Acceptance:** each selected lens emits its countercheck; unused lenses remain
+  absent; no six-section answer laundry list; no hidden chain-of-thought; every
+  material clause maps to an admissible evidence role.
+- **Evaluation and rollback:** deterministic contract checks and unscored dry
+  runs only; delete unused fields or any operation that introduces flattening,
+  unsupported certainty, rights leakage or imitation.
+- **Dependencies and risks:** Phase 0 contracts, Phase 1 baseline and rights-safe
+  authoring; risks are orchestration complexity, latency and false confidence
+  from structured output.
+- **Not yet claimed:** prototype coherence does not establish answer quality or
+  production fitness.
+
+#### Understanding Phase 3 — blinded same-model ablation
+
+- **Inputs and rights prerequisites:** frozen held-out questions, identical model,
+  retrieval stack, evidence packet, prompt budget and rendering conditions across
+  baseline and treatment arms.
+- **Implementation boundary:** compare grounded RAG with individual lenses,
+  combinations, dossier support and thesis/verification only where registered;
+  thinker similarity is never a metric.
+- **Deliverables:** paired blinded ratings, per-operation ablations, written
+  rationales, critical-failure counts, reviewer disagreement and separate
+  English/Hindi results.
+- **Acceptance:** a candidate materially improves source/scope fidelity, evidence
+  integration, decisive distinction, counterposition handling, historical/social
+  calibration, usefulness or correction without increasing any critical failure;
+  zero tolerance applies to fabrication, coercive authority, rights breach and
+  recognizable imitation.
+- **Evaluation and rollback:** retain only operations that beat the strong
+  baseline under preregistered thresholds; simplify to the lower-complexity arm
+  when gains do not survive ablation; preserve retirement tombstones.
+- **Dependencies and risks:** qualified blinded reviewers and adequate
+  inter-rater calibration; risks are evaluator ideology, low power, contamination
+  and charisma masquerading as insight.
+- **Not yet claimed:** a statistically improved research arm is not broad Sarthi
+  wisdom, cultural legitimacy or production acceptance.
+
+#### Understanding Phase 4 — limited product integration
+
+- **Inputs and rights prerequisites:** only operations accepted in Phase 3,
+  product-cleared evidence and capability-specific approval.
+- **Implementation boundary:** feature-flagged, observable and reversible routes
+  for named low- or bounded-impact question families; deterministic, exact and
+  ritual routes retain precedence.
+- **Deliverables:** versioned capability registry, independent flags for dossier,
+  lens/operator and thesis-verification components, structured audit summaries,
+  correction path and rollback procedure.
+- **Acceptance:** the released route reproduces the accepted evidence and quality
+  boundary, preserves attribution and disagreement, meets latency/cost limits and
+  adds no hard failure in monitored acceptance.
+- **Evaluation and rollback:** disable the affected layer without disabling
+  ordinary grounded retrieval; retire the capability if evidence, rights,
+  reviewer scope or measured benefit degrades.
+- **Dependencies and risks:** explicit implementation authorization, security and
+  privacy review, production evaluation and monitoring; risks are scope creep,
+  model drift, stale viewpoints and users mistaking companionship for authority.
+- **Not yet claimed:** no general understanding, guru authority or coverage beyond
+  the named evaluated task family.
+
+#### Understanding Phase 5 — curriculum and perspective expansion
+
+- **Inputs and rights prerequisites:** consent- and rights-safe, attributable
+  research across non-Advaita sampradayas, ritual practitioners, vernacular and
+  regional scholarship, Dalit/Bahujan/Adivasi voices, women
+  practitioner-theologians, material and art historians, oral/performance
+  traditions, and Jain/Buddhist/Sikh/interreligious perspectives.
+- **Implementation boundary:** expand viewpoints and evaluations one bounded
+  lineage, language, region or method at a time; discovery leads remain separate
+  from cleared learning assets.
+- **Deliverables:** gap register, attributable viewpoint records, new neutral
+  Devam-authored units, affected-community review and held-out transfer sets.
+- **Acceptance:** no individual is treated as representing a whole caste, gender,
+  region, language or sampradaya; insider theology is paired with relevant
+  historical and marginalized evidence, and external critique with practitioner
+  agency and regional evidence.
+- **Evaluation and rollback:** rerun the strong-baseline ablation for every added
+  operation or population; retire material whose rights, provenance, scope or
+  transfer benefit fails.
+- **Dependencies and risks:** lawful access, multilingual expertise, consent and
+  reviewer availability; risks are token representation, translation loss,
+  popularity bias and extraction from living communities.
+- **Not yet claimed:** cohort expansion is not civilizational representativeness,
+  exhaustive coverage or quality proof.
+
+Status after this documentation checkpoint:
+
+- `DESIGN INTEGRATED`;
+- `PHASE 0 HELD-OUT CONTRACT FROZEN, UNRUN`;
+- `RUNTIME AND BASELINE IMPLEMENTATION NOT YET RUN`;
+- `QUALITY IMPROVEMENT NOT YET ESTABLISHED`; and
+- `RIGHTS CLEARANCE REMAINS MATERIAL-SPECIFIC`.
 
 ## Phase 3 — September-December layer
 

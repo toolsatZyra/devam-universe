@@ -99,4 +99,21 @@ describe("initial Devam schema", () => {
     expect(allSql).toContain("grant select (completeness_status)\n  on public.source_objects to devam_public_search_executor");
     expect(allSql).not.toMatch(/search_public_passages[\s\S]*?p\.rights_lane in \([^)]*citation_only/i);
   });
+
+  it("keeps the product funnel content-free, insert-only in browsers, and service-readable as an aggregate", () => {
+    expect(allSql).toContain("create table public.product_events");
+    expect(allSql).toContain("alter table public.product_events enable row level security");
+    expect(allSql).toContain("grant insert on public.product_events to anon, authenticated, service_role");
+    expect(allSql).not.toMatch(/grant select[^;]*public\.product_events[^;]*to (?:anon|authenticated)/i);
+    expect(allSql).toContain("create policy product_events_anon_insert_only");
+    expect(allSql).toContain("to anon\n  with check (\n    account_state = 'guest'");
+    expect(allSql).toContain("create policy product_events_authenticated_insert_only");
+    expect(allSql).toContain("to authenticated\n  with check (\n    account_state = 'signed_in'\n    and (select auth.uid()) is not null");
+    expect(allSql).toContain("create view public.product_funnel_daily\nwith (security_invoker = true)");
+    expect(allSql).toContain("revoke all on public.product_funnel_daily from public, anon, authenticated");
+    expect(allSql).toContain("grant select on public.product_funnel_daily to service_role");
+    for (const forbiddenColumn of ["query_text", "message", "email", "user_id", "ip_address", "user_agent", "properties"]) {
+      expect(allSql.match(/create table public\.product_events \([\s\S]*?\n\);/)?.[0]).not.toMatch(new RegExp(`\\b${forbiddenColumn}\\b`));
+    }
+  });
 });

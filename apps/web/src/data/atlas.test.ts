@@ -4,10 +4,12 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { searchLibrary } from "../lib/search/library-search";
-import { eras, gateways, worldEdges, worldNodes } from "./atlas";
+import { answerSarthi } from "../lib/sarthi/answer";
+import { eras, gateways, placeThreads, worldEdges, worldNodes } from "./atlas";
 
 const reviewedDetailNodeIds = [
   "ramcharitmanas",
+  "dutt-ramayana",
   "bala-kanda",
   "ayodhya-kanda",
   "aranya-kanda",
@@ -19,7 +21,13 @@ const reviewedDetailNodeIds = [
   "ganesh-chaturthi",
   "sankashti-chaturthi",
   "ananta-chaturdashi",
+  "ganesha-purana",
+  "ganapatyatharvashirsha",
   "devi-mahatmya",
+  "madhu-kaitabha",
+  "mahishasura",
+  "shumbha",
+  "nishumbha",
   "shardiya-navaratri",
   "maha-ashtami",
   "saraswati-ayudha-puja",
@@ -33,6 +41,11 @@ const reviewedDetailNodeIds = [
   "govardhana-puja",
   "bhai-dooj",
   "tamil-deepavali",
+  "kali-chaudas-baps",
+  "gujarati-new-year-baps",
+  "balipadyami-karnataka",
+  "jain-diwali",
+  "bandi-chhor-divas",
 ] as const;
 
 function reachableFrom(gatewayId: string): Set<string> {
@@ -51,7 +64,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(37);
+    expect(worldNodes).toHaveLength(49);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -79,6 +92,31 @@ describe("Living Atlas exploration data", () => {
     for (const era of eras) expect(worldNodes.some((node) => node.eras.includes(era))).toBe(true);
   });
 
+  it("offers one evidence-bounded place thread for every hero world", () => {
+    expect(placeThreads.map((thread) => thread.gatewayId).sort()).toEqual(["diwali", "durga", "ganesha", "ramayana"]);
+    for (const thread of placeThreads) {
+      expect(thread.invitation.length).toBeGreaterThan(40);
+      expect(thread.evidenceBoundary.length).toBeGreaterThan(90);
+      expect(thread.nodeIds.length).toBeGreaterThanOrEqual(2);
+      expect(new Set(thread.nodeIds).size).toBe(thread.nodeIds.length);
+      for (const nodeId of thread.nodeIds) {
+        const node = worldNodes.find((candidate) => candidate.id === nodeId);
+        expect(node, `${thread.gatewayId} place thread references ${nodeId}`).toBeDefined();
+        expect(node?.gatewayId).toBe(thread.gatewayId);
+        expect(node?.eras).toContain("Living");
+        expect(node?.geography?.region.length).toBeGreaterThan(2);
+        expect(node?.geography?.position.x).toBeGreaterThanOrEqual(0);
+        expect(node?.geography?.position.x).toBeLessThanOrEqual(100);
+        expect(node?.geography?.position.y).toBeGreaterThanOrEqual(0);
+        expect(node?.geography?.position.y).toBeLessThanOrEqual(100);
+      }
+    }
+    expect(new Set(placeThreads.flatMap((thread) => thread.nodeIds.map((nodeId) => {
+      const node = worldNodes.find((candidate) => candidate.id === nodeId)!;
+      return `${node.geography!.position.x},${node.geography!.position.y}`;
+    }))).size).toBe(placeThreads.flatMap((thread) => thread.nodeIds).length);
+  });
+
   it("opens every new detail doorway into reviewed retrieval rather than an empty search", async () => {
     for (const nodeId of reviewedDetailNodeIds) {
       const node = worldNodes.find((candidate) => candidate.id === nodeId);
@@ -89,10 +127,39 @@ describe("Living Atlas exploration data", () => {
     }
   });
 
+  it("continues every newly explicit Diwali lane through its exact Sarthi context", () => {
+    const cases = [
+      ["kali-chaudas-baps", "kali-chaudas-baps"],
+      ["gujarati-new-year-baps", "gujarati-new-year-baps"],
+      ["balipadyami-karnataka", "karnataka-balipadyami"],
+      ["jain-diwali", "jain-diwali-umbrella"],
+      ["bandi-chhor-divas", "bandi-chhor-divas-sgpc"],
+    ] as const;
+    for (const [atlasNodeSlug, companionToObservanceSlug] of cases) {
+      const result = answerSarthi({ message: "Tell me about this", context: { atlasNodeSlug } });
+      expect(result, atlasNodeSlug).toMatchObject({
+        ok: true,
+        mode: "contextual_ritual_guidance",
+        practiceGuide: { companionToObservanceSlug },
+      });
+    }
+  });
+
+  it("does not let an Atlas doorway silently override an incompatible saved tradition", () => {
+    const result = answerSarthi({
+      message: "Tell me about this",
+      context: { atlasNodeSlug: "jain-diwali", regionCode: "west-india", traditionCode: "smarta-west-india" },
+    });
+    expect(result).toMatchObject({ ok: true, mode: "context_clarification" });
+  });
+
   it("keeps the hosted Atlas migration byte-derived from the reviewed app graph", () => {
     const root = resolve(process.cwd(), "..", "..");
     const migrations = resolve(root, "supabase", "migrations");
-    const migrationName = readdirSync(migrations).find((name) => name.endsWith("_sync_current_living_atlas.sql"));
+    const migrationName = readdirSync(migrations)
+      .filter((name) => name.endsWith("_sync_current_living_atlas.sql"))
+      .sort()
+      .at(-1);
     expect(migrationName).toBeDefined();
 
     const directory = mkdtempSync(join(tmpdir(), "devam-atlas-migration-"));
@@ -104,8 +171,13 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 41 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 45 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 53 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 57 app-owned Living Atlas edges");
+      expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
+      expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
+      expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
+      expect(sql).toContain("Dutt Ramayana Atlas node is missing its selected-edition boundary");
+      expect(sql).toContain("Distinct Diwali Atlas lanes are missing or misrouted");
       expect(sql).not.toContain("alter function");
       expect(sql).not.toContain("grant execute");
     } finally {

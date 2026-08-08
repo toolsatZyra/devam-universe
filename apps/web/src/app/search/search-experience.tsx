@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { LIBRARY_COVERAGE_SNAPSHOT, formatLibraryBytes } from "@/data/library-coverage";
+import { trackProductEvent } from "@/lib/analytics/client";
 import styles from "./search.module.css";
 
 type Citation = {
@@ -42,6 +43,13 @@ function isEvidenceBoundedSynthesis(result: SearchResult) {
   return result.claimKind === "evidence_bounded_synthesis";
 }
 
+function trackSearchResult(response: SearchResponse) {
+  if (!response.ok) return trackProductEvent("search_results_rendered", "unavailable");
+  const grounded = (response.results?.length ?? 0) > 0;
+  const catalog = (response.sourceCatalogMatches?.length ?? 0) > 0;
+  trackProductEvent("search_results_rendered", grounded && catalog ? "mixed" : grounded ? "grounded" : catalog ? "catalog" : "empty");
+}
+
 export function SearchExperience({ initialQuery = "" }: { initialQuery?: string }) {
   const normalizedInitialQuery = initialQuery.trim();
   const [query, setQuery] = useState(normalizedInitialQuery);
@@ -52,10 +60,11 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
   useEffect(() => {
     if (normalizedInitialQuery.length < 2) return;
     let active = true;
+    trackProductEvent("search_submitted");
     fetch(`/api/search?query=${encodeURIComponent(normalizedInitialQuery)}`)
       .then((result) => result.json() as Promise<SearchResponse>)
-      .then((result) => { if (active) setResponse(result); })
-      .catch(() => { if (active) setResponse({ ok: false, message: "The library search could not be reached. Please try again." }); })
+      .then((result) => { if (active) { setResponse(result); trackSearchResult(result); } })
+      .catch(() => { if (active) { setResponse({ ok: false, message: "The library search could not be reached. Please try again." }); trackProductEvent("search_results_rendered", "unavailable"); } })
       .finally(() => { if (active) setBusy(false); });
     return () => { active = false; };
   }, [normalizedInitialQuery]);
@@ -65,11 +74,15 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
     if (normalized.length < 2 || busy) return;
     setBusy(true);
     setSubmittedQuery(normalized);
+    trackProductEvent("search_submitted");
     try {
       const result = await fetch(`/api/search?query=${encodeURIComponent(normalized)}`);
-      setResponse(await result.json() as SearchResponse);
+      const nextResponse = await result.json() as SearchResponse;
+      setResponse(nextResponse);
+      trackSearchResult(nextResponse);
     } catch {
       setResponse({ ok: false, message: "The library search could not be reached. Please try again." });
+      trackProductEvent("search_results_rendered", "unavailable");
     } finally {
       setBusy(false);
     }
@@ -88,7 +101,7 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
           <Image src="/brand/devam-mark.png" alt="" width={42} height={42} priority />
           <span>Devam</span>
         </Link>
-        <div className={styles.headerActions}><Link className={styles.atlasLink} href="/sarthi">Ask Sarthi</Link><Link className={styles.atlasLink} href="/">Back to the Atlas</Link></div>
+        <div className={styles.headerActions}><Link className={styles.atlasLink} href="/search#coverage">Coverage</Link><Link className={styles.atlasLink} href="/sarthi">Ask Sarthi</Link><Link className={styles.atlasLink} href="/">Back to the Atlas</Link></div>
       </header>
 
       <section className={styles.hero}>
@@ -176,7 +189,7 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
         ) : response ? (
           <div className={styles.emptyState}><h2>Search paused</h2><p>{response.message}</p></div>
         ) : (
-          <div className={styles.coverageDashboard}>
+          <div className={styles.coverageDashboard} id="coverage">
             <div className={styles.coverageHeading}>
               <div><p>Library coverage · {LIBRARY_COVERAGE_SNAPSHOT.asOf}</p><h2>One roof. Three honest layers.</h2></div>
               <span>Preserved sources, reviewed knowledge, and product-ready guidance remain distinct.</span>
@@ -187,6 +200,16 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
               <article><strong>{LIBRARY_COVERAGE_SNAPSHOT.launchLayer.userCompleteScopedLanes}</strong><span>reviewed ritual lanes</span><small>Hindi + English · each scope named</small></article>
             </div>
             <p className={styles.coverageBoundary}>{LIBRARY_COVERAGE_SNAPSHOT.sourceLibrary.boundary} {LIBRARY_COVERAGE_SNAPSHOT.launchLayer.boundary}</p>
+            <div className={styles.coveragePipeline} aria-label="Library maturity stages">
+              <article><span>01 · Preserved</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.sourceLibrary.uniqueObjects.toLocaleString("en-IN")}</strong><p>unique source objects</p><small>Fixity and provenance retained; product readiness not implied.</small></article>
+              <article><span>02 · Structured</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.sourceReferences}</strong><p>hosted source references</p><small>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.works} works · {LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.expressions} expressions · {LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.editions} editions</small></article>
+              <article><span>03 · Indexed</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.passages.toLocaleString("en-IN")}</strong><p>addressable passages</p><small>Published, review, and private lanes remain distinct.</small></article>
+              <article><span>04 · Product-usable</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.publishedPassages.toLocaleString("en-IN")}</strong><p>published exact passages</p><small>Rights and complete hierarchy permit public retrieval.</small></article>
+              <article><span>05 · Translated</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.sourceAlignedBetaTranslations.toLocaleString("en-IN")}</strong><p>beta translation passages</p><small>Devimahatmya English + Hindi; AI-assisted and not independently Sanskrit-reviewed.</small></article>
+              <article><span>06 · Reviewed</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.launchLayer.userCompleteScopedLanes}</strong><p>scoped ritual lanes</p><small>Complete only for each named role, region, tradition, and practice boundary.</small></article>
+              <article className={styles.completenessStage}><span>07 · Civilizationally complete</span><strong>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.civilizationallyCompleteHeroWorlds}/{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.heroWorldTotal}</strong><p>hero universes</p><small>No hero world is claimed complete across sources, editions, languages, regions, traditions, and media.</small></article>
+            </div>
+            <p className={styles.coverageBoundary}>{LIBRARY_COVERAGE_SNAPSHOT.knowledgeLayer.boundary}</p>
             <div className={styles.heroCoverage}>
               {LIBRARY_COVERAGE_SNAPSHOT.heroes.map((hero) => (
                 <article key={hero.slug}>

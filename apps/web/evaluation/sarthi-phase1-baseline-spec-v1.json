@@ -1,0 +1,79 @@
+{
+  "contract": "DEVAM_SARTHI_PHASE1_BASELINE_RUN_SPEC_V1",
+  "status": "prepared_unrun",
+  "created_at": "2026-08-08",
+  "claim_ceiling": "answer_free_run_preparation_only_no_quality_or_production_claim",
+  "inputs": {
+    "heldout_fixture_sha256": "1692482a6e36e422c47af353f69936288ddc401208b442fef89a1098ff6632fb",
+    "admission_registry_sha256": "d1b7dd39254dbd125da157025b867683819310498921892ca5f40bd5651731cb",
+    "generation_contract_path": "apps/web/src/lib/sarthi/openai-grounded-generation.ts",
+    "generation_contract_sha256": "2239d65368df23cdc79c8247fa6da000c3891459b266296c6849116663f0c2d3"
+  },
+  "selection": {
+    "admission_status": "admitted",
+    "pair_count": 15,
+    "scenario_count": 30,
+    "languages": ["en", "hi"],
+    "excluded_scope_mismatch": 3,
+    "excluded_partial_evidence": 7,
+    "excluded_research_required": 5
+  },
+  "runtime": {
+    "external_calls_allowed": false,
+    "authorization_required_before_run": true,
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "medium",
+    "store": false,
+    "max_output_tokens": 600,
+    "timeout_ms": 20000,
+    "same_model_and_settings_for_en_hi": true,
+    "same_packet_for_language_pair": true,
+    "answer_length_max_chars": 1200,
+    "hidden_chain_of_thought_retained": false
+  },
+  "prepared_envelope": {
+    "required_fields": [
+      "blind_id",
+      "scenario_id",
+      "language",
+      "question",
+      "packet_id",
+      "packet_sha256",
+      "artifact_sha256",
+      "required_roles",
+      "scope",
+      "evidence_material"
+    ],
+    "source_payloads_embedded": false,
+    "answer_fields_embedded": false,
+    "materialization": "reviewed_product_fields_only_v1",
+    "restricted_source_text_embedded": false,
+    "maximum_material_bytes_per_pair": 120000
+  },
+  "run_record": {
+    "required_fields_after_authorized_run": [
+      "blind_id",
+      "model",
+      "reasoning_effort",
+      "started_at",
+      "completed_at",
+      "latency_ms",
+      "input_tokens",
+      "output_tokens",
+      "estimated_cost",
+      "answer",
+      "material_caveat",
+      "error"
+    ],
+    "answers_must_not_modify_frozen_fixture": true,
+    "provider_storage_disabled": true,
+    "raw_hidden_reasoning_retained": false
+  },
+  "review": {
+    "blind_before_rating": true,
+    "english_and_hindi_rated_independently": true,
+    "hard_failures_reported_separately": true,
+    "human_review_required": true,
+    "llm_judge_may_not_be_sole_promotion_authority": true
+  }
+}

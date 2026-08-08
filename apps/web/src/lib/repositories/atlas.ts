@@ -1,5 +1,5 @@
 import type { AtlasWorld } from "@/lib/domain/atlas";
-import { eras, gateways, worldEdges, worldNodes } from "@/data/atlas";
+import { eras, gateways, placeThreads, worldEdges, worldNodes } from "@/data/atlas";
 import { SupabaseAtlasRepository } from "@/lib/repositories/supabase-atlas";
 import { hasSupabaseConfiguration } from "@/lib/supabase/server";
 
@@ -9,7 +9,7 @@ export interface AtlasRepository {
 
 class FixtureAtlasRepository implements AtlasRepository {
   async getWorld(): Promise<AtlasWorld> {
-    return { eras, gateways, worldEdges, worldNodes };
+    return { eras, gateways, placeThreads, worldEdges, worldNodes };
   }
 }
 

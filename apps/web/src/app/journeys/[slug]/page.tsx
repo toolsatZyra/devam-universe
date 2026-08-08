@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getHeroJourney, heroJourneys } from "@/data/hero-experiences";
 import { JourneyPlayer } from "@/components/experiences/journey-player";
+import { getCurrentAccount } from "@/lib/supabase/auth-session";
 
 export function generateStaticParams() {
   return heroJourneys.map((journey) => ({ slug: journey.slug }));
@@ -15,5 +16,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function JourneyPage({ params }: { params: Promise<{ slug: string }> }) {
   const journey = getHeroJourney((await params).slug);
   if (!journey) notFound();
-  return <JourneyPlayer journey={journey} />;
+  const account = await getCurrentAccount();
+  return <JourneyPlayer journey={journey} account={{ signedIn: Boolean(account), label: account?.email?.slice(0, 2).toUpperCase() ?? "ME" }} />;
 }

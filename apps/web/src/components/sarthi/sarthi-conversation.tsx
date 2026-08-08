@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { canGuestAskSarthi } from "@/lib/account/guest-preview";
+import { trackProductEvent } from "@/lib/analytics/client";
 import type { EvidenceCitation, GroundedSarthiAnswer, SarthiUnavailable } from "@/lib/sarthi/contracts";
 import styles from "./sarthi-conversation.module.css";
 
@@ -45,6 +46,25 @@ function Evidence({ reply }: { reply: GroundedSarthiAnswer }) {
               <ol>{tier.steps.map((step) => <li key={step.ordinal}>{step.instruction}</li>)}</ol>
             </details>
           ))}
+          {reply.practiceGuide.userCompleteContext ? (
+            <details>
+              <summary>Variants and boundaries</summary>
+              <ul>
+                {reply.practiceGuide.userCompleteContext.variants.map((variant) => (
+                  <li key={variant.variantId}><strong>{variant.dimension}</strong><br />{variant.description}</li>
+                ))}
+                {reply.practiceGuide.userCompleteContext.safetyAndBoundaries.map((boundary) => (
+                  <li key={boundary}>{boundary}</li>
+                ))}
+              </ul>
+            </details>
+          ) : null}
+          <details>
+            <summary>Guide sources</summary>
+            {reply.practiceGuide.evidence.sources.map((source) => (
+              <p key={source.sourceId}><strong>{source.title}</strong><br /><small>{source.publisher} · {source.sourceClass}</small></p>
+            ))}
+          </details>
           <small>{reply.practiceGuide.familyPracticeNote}</small>
         </div>
       ) : null}
@@ -105,6 +125,7 @@ export function SarthiConversation({
     setMessages((current) => [...current, userMessage]);
     setInput("");
     setBusy(true);
+    trackProductEvent("sarthi_question_submitted", "standalone");
     try {
       const response = await fetch("/api/sarthi", {
         method: "POST",
@@ -119,6 +140,7 @@ export function SarthiConversation({
       });
       const reply = await response.json() as ApiReply;
       const text = reply.ok ? reply.answer : reply.message;
+      trackProductEvent("sarthi_answer_rendered", reply.ok ? (reply.followUpQuestion ? "clarification" : "answer") : "unavailable");
       setMessages((current) => [...current, { id: crypto.randomUUID(), role: "assistant", text, reply }]);
       if (reply.conversation?.status === "saved" && reply.conversation.conversationId) {
         setConversationId(reply.conversation.conversationId);
@@ -129,6 +151,7 @@ export function SarthiConversation({
         try { window.localStorage.setItem("devam-guest-sarthi-exchanges", String(next)); } catch { /* Session state still gates this view. */ }
       }
     } catch {
+      trackProductEvent("sarthi_answer_rendered", "unavailable");
       setMessages((current) => [...current, {
         id: crypto.randomUUID(),
         role: "assistant",
