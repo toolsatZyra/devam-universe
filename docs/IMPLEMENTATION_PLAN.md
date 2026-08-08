@@ -2432,7 +2432,11 @@ disabled pending explicit authorization. A fail-closed live runner now verifies
 an official dated pricing snapshot, exact thirty-call authorization, immutable
 run identity, `store: false`, no automatic retries and per-call recoverable
 checkpoints with token, latency and cost records. Its preflight makes no network
-call or write; the live run remains unexecuted.
+call or write; the live run remains unexecuted. The blinded-review generator is
+also preflighted: it freezes the ten Phase 0 dimensions and eight hard failures,
+requires two independent reviewers, hides runtime/provider/cost identities,
+preserves reviewed evidence for source checking and refuses to overwrite review
+work. No ratings exist yet.
 
 - **Inputs and rights prerequisites:** frozen product-cleared evidence packets,
   current retrieval stack and the same admissible source universe planned for

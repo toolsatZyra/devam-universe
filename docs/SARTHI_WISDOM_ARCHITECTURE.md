@@ -408,6 +408,11 @@ A fail-closed runner now adds exact call authorization, official pricing
 provenance, immutable resume identity, no automatic retries and per-response
 usage/cost/latency checkpoints. Preflight passes without credentials or network;
 the live run and human review remain unexecuted.
+A deterministic blinded-review generator now freezes the ten rating dimensions,
+eight non-averagable hard failures and two-reviewer minimum. It excludes model,
+provider, response, cost, token, latency and scenario identities while retaining
+the question, language, answer, caveat and reviewed evidence. No review packet
+or rating has been produced because no live run exists.
 
 ## Accepted, pilot, deferred and rejected
 

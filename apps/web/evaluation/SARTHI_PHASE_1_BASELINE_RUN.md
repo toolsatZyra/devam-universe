@@ -34,3 +34,10 @@ and evidence hashes, provider response ID, latency, cached/uncached/output token
 counts, estimated cost, answer, material caveat and any error. Hidden reasoning
 is neither requested nor retained. Completing the run is not a quality claim;
 blinded bilingual human review and hard-failure analysis remain mandatory.
+
+`pnpm preflight:sarthi-phase1-review` verifies the frozen review contract before
+outputs exist. After a completed run, `pnpm prepare:sarthi-phase1-review --
+--run-id=<id>` writes a deterministically ordered packet that hides scenario,
+model, provider, response, cost, latency and token identities while retaining
+the question, language, answer, caveat and reviewed evidence. It also creates an
+unrated template. Existing review files are never overwritten.
