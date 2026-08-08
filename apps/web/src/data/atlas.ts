@@ -115,6 +115,7 @@ export const worldNodes: WorldNode[] = [
   { id: "shardiya-navaratri", label: "Shardiya Navaratri", kind: "Festival sequence", eras: ["Living"], gatewayId: "durga", summary: "Open a nine-night North and West India household lane with deterministic 2026 boundaries and daily context.", searchQuery: "What should I do for Shardiya Navaratri?", evidenceBoundary: "Bengal Durga Puja, South Indian Golu and Saraswati forms, family kuladevi practice, and priest-led rites stay separate.", revealAt: 1.55, size: "major", position: { x: 90, y: 14 } },
   { id: "maha-ashtami", label: "Maha Ashtami", kind: "Festival day", eras: ["Living"], gatewayId: "durga", summary: "Enter the Kolkata participant lane for Maha Ashtami while keeping community and priestly roles distinct.", searchQuery: "Maha Ashtami in Kolkata", evidenceBoundary: "This is a Bengal Shakta community-participant scope, not household consecration or universal Ashtami liturgy.", revealAt: 1.72, size: "connected", position: { x: 95, y: 32 } },
   { id: "saraswati-ayudha-puja", label: "Saraswati and Ayudha Puja", kind: "Regional Navami", eras: ["Living"], gatewayId: "durga", summary: "Explore the Bengaluru Karnataka Navami lane for books, instruments, tools, Gombe Habba context, and safe participation.", searchQuery: "Karnataka Saraswati Puja", evidenceBoundary: "Formal mantra, homa, consecration, machinery operation, temple procedure, and other regional Navami forms remain separate.", revealAt: 1.88, size: "connected", position: { x: 88, y: 62 } },
+  { id: "durga-puja", label: "Durga Puja", kind: "Living festival world", eras: ["Medieval", "Living"], gatewayId: "durga", summary: "Enter Kolkata's living Durga Puja world through the arrival, public art, community participation, Maha Ashtami, Dashami, and immersion sequence without reducing the festival to a single ritual card.", searchQuery: "Durga Puja Kolkata Maha Ashtami", evidenceBoundary: "This doorway joins a reviewed Bengal community-participant lane and public cultural context; it is not priest-led paddhati, every household form, every regional Durga festival, or authority for a visitor to perform restricted rites.", revealAt: 1.45, size: "major", position: { x: 63, y: 29 } },
 
   // Diwali expands as a sequence of distinct applicable observances, not one generic day.
   { id: "vasu-baras", label: "Vasu Baras", kind: "Festival opening", eras: ["Living"], gatewayId: "diwali", summary: "Begin a Maharashtra Diwali path with the separate Govatsa Dwadashi family lane where it applies.", searchQuery: "Vasu Baras", evidenceBoundary: "This Maharashtra family form is not a universal opening day, cattle rite, or substitute for local household practice.", revealAt: 1.55, size: "connected", position: { x: 69, y: 91 } },
@@ -135,6 +136,7 @@ export const worldNodes: WorldNode[] = [
 ];
 
 export const worldEdges: WorldEdge[] = [
+  { id: "ramayana-to-diwali", from: "ramayana", to: "diwali", relation: "Rama homecoming tradition", evidenceBoundary: "The Rama-Sita-Lakshmana return to Ayodhya is a major North Indian Diwali story connection, not the origin account or theological meaning of every Diwali, Deepavali, Jain, Sikh, Shakta, Vaishnava, or regional tradition." },
   { id: "ramayana-ayodhya", from: "ramayana", to: "ayodhya", relation: "begins in" },
   { id: "ramayana-chitrakoot", from: "ramayana", to: "chitrakoot", relation: "journey through" },
   { id: "ganesha-ashtavinayak", from: "ganesha", to: "ashtavinayak", relation: "pilgrimage tradition" },
@@ -143,6 +145,7 @@ export const worldEdges: WorldEdge[] = [
   { id: "durga-kolkata", from: "durga", to: "kolkata", relation: "Durga Puja" },
   { id: "durga-kanchipuram", from: "durga", to: "kanchipuram", relation: "Shakti tradition" },
   { id: "diwali-kolkata", from: "diwali", to: "kolkata", relation: "Kali Puja" },
+  { id: "diwali-to-kali-puja", from: "diwali", to: "kali-puja", relation: "same new-moon night, distinct Bengal festival", evidenceBoundary: "Kali Puja often coincides with the Diwali new-moon night in Bengal and neighbouring regions, but it remains a distinct Shakta festival and is not relabelled as Lakshmi Puja or a universal Diwali practice." },
   { id: "diwali-pavapuri", from: "diwali", to: "pavapuri", relation: "Jain Diwali" },
   { id: "diwali-amritsar", from: "diwali", to: "amritsar", relation: "Bandi Chhor Divas" },
   { id: "diwali-nathdwara", from: "diwali", to: "nathdwara", relation: "Annakut tradition" },
@@ -174,6 +177,8 @@ export const worldEdges: WorldEdge[] = [
   { id: "devi-mahatmya-shumbha", from: "devi-mahatmya", to: "shumbha", relation: "contains narrative of" },
   { id: "devi-mahatmya-nishumbha", from: "devi-mahatmya", to: "nishumbha", relation: "contains narrative of" },
   { id: "durga-navaratri", from: "durga", to: "shardiya-navaratri", relation: "nine-night sequence" },
+  { id: "durga-to-durga-puja", from: "durga", to: "durga-puja", relation: "living festival world", evidenceBoundary: "Durga Puja is a major living Durga festival, especially prominent in Bengal, while its community, household, regional, and ritual forms remain separately attributable." },
+  { id: "durga-puja-to-kolkata", from: "durga-puja", to: "kolkata", relation: "Kolkata public art and worship", evidenceBoundary: "Kolkata is a major living centre of Durga Puja and public festival art; the place connection is not a claim that the city contains every Durga Puja tradition or that all pandals and households follow one practice." },
   { id: "navaratri-to-maha-ashtami", from: "shardiya-navaratri", to: "maha-ashtami", relation: "regional day path" },
   { id: "navaratri-to-saraswati-ayudha", from: "shardiya-navaratri", to: "saraswati-ayudha-puja", relation: "Karnataka Navami path" },
   { id: "maha-ashtami-to-kolkata", from: "maha-ashtami", to: "kolkata", relation: "Bengal participant context" },
@@ -187,6 +192,7 @@ export const worldEdges: WorldEdge[] = [
   { id: "naraka-to-tamil", from: "naraka-chaturdashi", to: "tamil-deepavali", relation: "distinct regional world" },
   { id: "lakshmi-to-kali", from: "lakshmi-puja", to: "kali-puja", relation: "same night, distinct practice" },
   { id: "kali-to-kolkata", from: "kali-puja", to: "kolkata", relation: "Bengal context" },
+  { id: "kali-puja-to-durga", from: "kali-puja", to: "durga", relation: "connected Shakta goddess traditions", evidenceBoundary: "Kali and Durga are connected within multiple Shakta textual and devotional frameworks, including the Devi Mahatmya, but Devam does not flatten their forms, theologies, temples, festivals, or living lineages into equivalence." },
   { id: "lakshmi-to-bali", from: "lakshmi-puja", to: "bali-pratipada", relation: "Maharashtra sequence" },
   { id: "lakshmi-to-govardhana", from: "lakshmi-puja", to: "govardhana-puja", relation: "Vaishnava sequence" },
   { id: "govardhana-to-nathdwara", from: "govardhana-puja", to: "nathdwara", relation: "Annakut exploration" },

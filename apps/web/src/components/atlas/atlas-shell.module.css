@@ -43,6 +43,7 @@
 .connections { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; transform: translateZ(8px); }
 .connection { fill: none; stroke: rgba(148,169,202,.18); stroke-width: .09; vector-effect: non-scaling-stroke; opacity: .38; transition: opacity .6s ease, stroke .6s ease, stroke-width .6s ease; }
 .connectionNearby { opacity: .44; stroke: rgba(132,177,199,.2); }
+.connectionBridge { opacity: .62; stroke: rgba(238,184,102,.34); stroke-width: .14; stroke-dasharray: .8 1.4; animation: pathFlow 13s linear infinite; }
 .connectionActive { opacity: .95; stroke: rgba(239,198,116,.54); stroke-width: .18; stroke-dasharray: 1.4 1.8; animation: pathFlow 8s linear infinite; }
 
 .masterNode, .discoveryNode { position: absolute; z-index: 4; border: 0; background: transparent; cursor: pointer; transform-style: preserve-3d; }
@@ -83,7 +84,7 @@
 .arrival h1 { margin: 0; font: 400 clamp(40px, 4.4vw, 63px)/.94 Georgia, serif; letter-spacing: -.055em; text-shadow: 0 12px 45px rgba(0,0,0,.7); }
 .arrival span { display: block; margin-top: 20px; color: #747b8e; font-size: 9px; letter-spacing: .08em; }
 
-.discoveryCard { position: fixed; z-index: 25; left: 50%; bottom: clamp(24px, 5vh, 56px); width: min(620px, calc(100vw - 150px)); transform: translateX(-50%); border: 1px solid rgba(237,211,163,.16); border-radius: 22px; padding: 20px 56px 19px 22px; background: linear-gradient(130deg, rgba(10,13,29,.76), rgba(5,8,19,.58)); backdrop-filter: blur(24px) saturate(130%); box-shadow: 0 25px 70px rgba(0,0,0,.34); animation: cardRise .55s cubic-bezier(.2,.8,.2,1); }
+.discoveryCard { position: fixed; z-index: 25; left: 50%; bottom: clamp(24px, 5vh, 56px); width: min(760px, calc(100vw - 150px)); max-height: min(48vh, 430px); overflow: auto; transform: translateX(-50%); border: 1px solid rgba(237,211,163,.16); border-radius: 22px; padding: 20px 56px 19px 22px; background: linear-gradient(130deg, rgba(10,13,29,.8), rgba(5,8,19,.64)); backdrop-filter: blur(24px) saturate(130%); box-shadow: 0 25px 70px rgba(0,0,0,.34); animation: cardRise .55s cubic-bezier(.2,.8,.2,1); }
 .discoveryCard > p { margin: 0 0 5px; color: #c69b5d; font-size: 7px; letter-spacing: .17em; text-transform: uppercase; }
 .discoveryCard h2 { margin: 0; font: 400 clamp(26px, 3vw, 39px)/1.05 Georgia, serif; }
 .discoveryCard > span { display: block; max-width: 520px; margin-top: 8px; color: #a5a5ad; font: 14px/1.5 Georgia, serif; }
@@ -94,6 +95,16 @@
 .discoveryCard details { margin-top: 10px; }
 .discoveryCard summary { color: #81745f; cursor: pointer; font-size: 8px; }
 .discoveryCard details small { display: block; margin-top: 7px; color: #676c79; font-size: 8px; line-height: 1.45; }
+.connectedPaths { margin-top: 15px; padding-top: 12px; border-top: 1px solid rgba(235,209,160,.1); }
+.connectedPaths > p { margin: 0 0 8px; color: #80745f; font-size: 7px; letter-spacing: .16em; text-transform: uppercase; }
+.connectedPaths > div { display: flex; gap: 8px; overflow-x: auto; padding: 1px 1px 7px; scrollbar-width: thin; scrollbar-color: rgba(232,190,108,.25) transparent; }
+.connectedPaths button { flex: 0 0 154px; min-height: 70px; border: 1px solid rgba(232,205,155,.13); border-radius: 14px; padding: 9px 11px; display: grid; align-content: center; gap: 3px; text-align: left; color: #aaa7a1; background: rgba(255,255,255,.025); cursor: pointer; }
+.connectedPaths button:hover, .connectedPaths button:focus-visible { border-color: rgba(239,199,119,.34); color: #eee5d7; background: rgba(236,185,96,.07); outline: none; }
+.connectedPaths button span { color: #c69b5d; font-size: 6px; letter-spacing: .12em; text-transform: uppercase; }
+.connectedPaths button strong { color: #e0d9cd; font: 400 13px Georgia, serif; }
+.connectedPaths button small { color: #717786; font-size: 7px; line-height: 1.3; }
+.connectedPaths details { margin-top: 2px; }
+.connectedPaths details small strong { color: #8f806a; }
 
 .flightControls { position: fixed; z-index: 30; left: clamp(18px, 2.7vw, 42px); bottom: max(20px, env(safe-area-inset-bottom)); display: flex; border: 1px solid rgba(231,210,174,.12); border-radius: 999px; padding: 4px; background: rgba(5,8,19,.48); backdrop-filter: blur(18px); }
 .flightControls button { width: 34px; height: 34px; border: 0; border-radius: 50%; display: grid; place-items: center; color: #858b9b; background: transparent; cursor: pointer; }
@@ -165,6 +176,7 @@
   .discoveryCard h2 { font-size: 27px; }
   .discoveryCard > span { font-size: 12px; line-height: 1.45; }
   .cardActions { margin-top: 12px; }
+  .connectedPaths button { flex-basis: 142px; }
   .flightControls { left: 13px; bottom: max(18px, env(safe-area-inset-bottom)); }
   .flightControls button { width: 32px; height: 32px; }
   .sarthiOrb { right: 13px; bottom: max(18px, env(safe-area-inset-bottom)); min-width: 48px; width: 48px; padding: 0; }

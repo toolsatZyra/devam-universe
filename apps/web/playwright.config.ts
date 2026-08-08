@@ -39,6 +39,7 @@ export default defineConfig({
         timeout: 120_000,
         stdout: "pipe",
         stderr: "pipe",
+        env: { DEVAM_ATLAS_FIXTURE: "1" },
       },
   projects: [
     {

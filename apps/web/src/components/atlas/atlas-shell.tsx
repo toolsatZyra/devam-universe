@@ -18,6 +18,14 @@ import { canGuestAskSarthi, canGuestOpenGateway } from "@/lib/account/guest-prev
 import { trackProductEvent } from "@/lib/analytics/client";
 import type { Gateway, PlaceThread, WorldEdge, WorldNode } from "@/lib/domain/atlas";
 import type { RitualProcedureGuide } from "@/lib/domain/practice";
+import {
+  ATLAS_MAX_SCALE,
+  ATLAS_MIN_SCALE,
+  constrainAtlasView,
+  focusAtlasPosition,
+  type AtlasPoint as Point,
+  type AtlasView as ViewTransform,
+} from "./atlas-camera";
 import styles from "./atlas-shell.module.css";
 
 type AtlasShellProps = {
@@ -29,8 +37,6 @@ type AtlasShellProps = {
   account: { signedIn: boolean; label: string };
 };
 
-type Point = { x: number; y: number };
-type ViewTransform = { x: number; y: number; scale: number };
 type MotionMode = "cinematic" | "still";
 type IconName = "arrow" | "close" | "minus" | "plus" | "reset" | "search" | "spark" | "user";
 type SarthiCitation = { passageId: string; workTitle: string; editionTitle: string; quotation?: string };
@@ -44,11 +50,6 @@ type SarthiReply = {
   practiceGuide?: RitualProcedureGuide;
   conversation?: { status: "guest_ephemeral" | "consent_required" | "saved" | "save_failed"; conversationId: string | null };
 };
-
-const MIN_SCALE = 0.72;
-const MAX_SCALE = 3.8;
-const SCENE_WIDTH = 1.22;
-const SCENE_HEIGHT = 1.2;
 
 function clamp(value: number, minimum: number, maximum: number) {
   return Math.min(maximum, Math.max(minimum, value));
@@ -111,10 +112,12 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   const [introVisible, setIntroVisible] = useState(true);
   const viewRef = useRef(view);
   const viewportRef = useRef<HTMLDivElement>(null);
+  const sceneCanvasRef = useRef<HTMLDivElement>(null);
   const pointersRef = useRef(new Map<number, Point>());
   const panStartRef = useRef<{ pointer: Point; view: ViewTransform } | null>(null);
   const pinchStartRef = useRef<{ distance: number; midpoint: Point; view: ViewTransform } | null>(null);
   const lastTapRef = useRef(0);
+  const wasDraggedRef = useRef(false);
   const visitedGatewaysRef = useRef(new Set<string>(["ramayana"]));
   const guestSarthiExchangesRef = useRef(0);
 
@@ -159,18 +162,76 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     return result;
   }, [gateways, worldNodes]);
 
+  const connectedPaths = useMemo(() => {
+    const anchorId = focusedId ?? selectedId;
+    if (!anchorId) return [];
+    const gatewayById = new Map<string, (typeof gateways)[number]>(
+      gateways.map((gateway) => [gateway.id, gateway]),
+    );
+    const nodeById = new Map<string, (typeof worldNodes)[number]>(
+      worldNodes.map((node) => [node.id, node]),
+    );
+    const anchorGateway = gatewayById.get(anchorId)?.id ?? nodeById.get(anchorId)?.gatewayId;
+    const unique = new Map<string, {
+      edge: WorldEdge;
+      destinationId: string;
+      label: string;
+      kind: string;
+      crossWorld: boolean;
+    }>();
+    for (const edge of worldEdges) {
+      const destinationId = edge.from === anchorId ? edge.to : edge.to === anchorId ? edge.from : null;
+      if (!destinationId || unique.has(destinationId)) continue;
+      const gateway = gatewayById.get(destinationId);
+      const node = nodeById.get(destinationId);
+      if (!gateway && !node) continue;
+      const destinationGateway = gateway?.id ?? node?.gatewayId;
+      unique.set(destinationId, {
+        edge,
+        destinationId,
+        label: gateway?.title ?? node!.label,
+        kind: gateway ? "World" : node!.kind,
+        crossWorld: Boolean(anchorGateway && destinationGateway && anchorGateway !== destinationGateway),
+      });
+    }
+    return [...unique.values()].sort((left, right) => Number(right.crossWorld) - Number(left.crossWorld));
+  }, [focusedId, gateways, selectedId, worldEdges, worldNodes]);
+
+  const connectedNodeIds = useMemo(
+    () => new Set(connectedPaths.filter((path) => worldNodes.some((node) => node.id === path.destinationId)).map((path) => path.destinationId)),
+    [connectedPaths, worldNodes],
+  );
+
+  const readViewport = useCallback(() => {
+    const viewport = viewportRef.current;
+    const scene = sceneCanvasRef.current;
+    if (!viewport || !scene) return undefined;
+    return {
+      width: viewport.clientWidth,
+      height: viewport.clientHeight,
+      sceneWidth: scene.clientWidth,
+      sceneHeight: scene.clientHeight,
+    };
+  }, []);
+
   const commitView = useCallback((next: ViewTransform) => {
-    const bounded = { ...next, scale: clamp(next.scale, MIN_SCALE, MAX_SCALE) };
+    const bounded = constrainAtlasView(next, readViewport());
     viewRef.current = bounded;
     setView(bounded);
-  }, []);
+  }, [readViewport]);
+
+  useEffect(() => {
+    const reframe = () => commitView(viewRef.current);
+    window.addEventListener("resize", reframe);
+    return () => window.removeEventListener("resize", reframe);
+  }, [commitView]);
 
   const zoomAt = useCallback((clientX: number, clientY: number, factor: number) => {
     const viewport = viewportRef.current;
     if (!viewport) return;
     const rect = viewport.getBoundingClientRect();
     const current = viewRef.current;
-    const nextScale = clamp(current.scale * factor, MIN_SCALE, MAX_SCALE);
+    const nextScale = clamp(current.scale * factor, ATLAS_MIN_SCALE, ATLAS_MAX_SCALE);
     const ratio = nextScale / current.scale;
     const localX = clientX - rect.left;
     const localY = clientY - rect.top;
@@ -187,23 +248,25 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   }, [zoomAt]);
 
   const resetView = useCallback(() => {
+    pointersRef.current.clear();
+    panStartRef.current = null;
+    pinchStartRef.current = null;
+    wasDraggedRef.current = false;
     commitView({ x: 0, y: 0, scale: 1 });
     setTilt({ x: 0, y: 0 });
+    setDragging(false);
     setSelectedId(null);
     setFocusedId(null);
   }, [commitView]);
 
   const focusAt = useCallback((position: Point, scale: number) => {
-    const viewport = viewportRef.current;
+    const viewport = readViewport();
     if (!viewport) return;
-    commitView({
-      x: viewport.clientWidth / 2 - viewport.clientWidth * SCENE_WIDTH * (position.x / 100) * scale,
-      y: viewport.clientHeight / 2 - viewport.clientHeight * SCENE_HEIGHT * (position.y / 100) * scale,
-      scale,
-    });
-  }, [commitView]);
+    commitView(focusAtlasPosition(position, scale, viewport));
+  }, [commitView, readViewport]);
 
   const selectGateway = useCallback((gateway: Gateway) => {
+    if (wasDraggedRef.current) return;
     const gatewayId = gateway.id;
     const visited = visitedGatewaysRef.current;
     if (!canGuestOpenGateway(visited, gatewayId, account.signedIn)) {
@@ -222,11 +285,22 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   }, [account.signedIn, focusAt]);
 
   const selectWorldNode = useCallback((node: WorldNode) => {
+    if (wasDraggedRef.current) return;
     setIntroVisible(false);
     setSelectedId(node.gatewayId);
     setFocusedId(node.id);
     focusAt(node.position, Math.max(1.72, node.revealAt + .3));
   }, [focusAt]);
+
+  const followConnection = useCallback((destinationId: string) => {
+    const gateway = gateways.find((candidate) => candidate.id === destinationId);
+    if (gateway) {
+      selectGateway(gateway);
+      return;
+    }
+    const node = worldNodes.find((candidate) => candidate.id === destinationId);
+    if (node) selectWorldNode(node);
+  }, [gateways, selectGateway, selectWorldNode, worldNodes]);
 
   const handleWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -234,8 +308,9 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   };
 
   const handlePointerDown = (event: ReactPointerEvent<HTMLDivElement>) => {
-    if ((event.target as HTMLElement).closest("button, a, textarea, summary")) return;
-    event.currentTarget.setPointerCapture(event.pointerId);
+    const captureTarget = event.target as Element & { setPointerCapture?: (pointerId: number) => void };
+    captureTarget.setPointerCapture?.(event.pointerId);
+    wasDraggedRef.current = false;
     pointersRef.current.set(event.pointerId, { x: event.clientX, y: event.clientY });
     if (pointersRef.current.size === 1) {
       panStartRef.current = { pointer: { x: event.clientX, y: event.clientY }, view: { ...viewRef.current } };
@@ -267,7 +342,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
       const [a, b] = [...pointersRef.current.values()];
       const start = pinchStartRef.current;
       const distance = Math.max(1, Math.hypot(b.x - a.x, b.y - a.y));
-      const nextScale = clamp(start.view.scale * distance / start.distance, MIN_SCALE, MAX_SCALE);
+      const nextScale = clamp(start.view.scale * distance / start.distance, ATLAS_MIN_SCALE, ATLAS_MAX_SCALE);
       const ratio = nextScale / start.view.scale;
       const rect = viewport.getBoundingClientRect();
       const localX = start.midpoint.x - rect.left;
@@ -275,14 +350,17 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
       commitView({ x: localX - (localX - start.view.x) * ratio, y: localY - (localY - start.view.y) * ratio, scale: nextScale });
     } else if (pointersRef.current.size === 1 && panStartRef.current) {
       const start = panStartRef.current;
-      commitView({ ...start.view, x: start.view.x + event.clientX - start.pointer.x, y: start.view.y + event.clientY - start.pointer.y });
+      const deltaX = event.clientX - start.pointer.x;
+      const deltaY = event.clientY - start.pointer.y;
+      if (Math.hypot(deltaX, deltaY) > 5) wasDraggedRef.current = true;
+      commitView({ ...start.view, x: start.view.x + deltaX, y: start.view.y + deltaY });
     }
   };
 
   const handlePointerEnd = (event: ReactPointerEvent<HTMLDivElement>) => {
     const wasSingleTouch = event.pointerType === "touch" && pointersRef.current.size === 1;
     pointersRef.current.delete(event.pointerId);
-    if (wasSingleTouch) {
+    if (wasSingleTouch && !wasDraggedRef.current) {
       const now = Date.now();
       if (now - lastTapRef.current < 320) {
         zoomAt(event.clientX, event.clientY, 1.42);
@@ -294,6 +372,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
       panStartRef.current = null;
       setDragging(false);
     }
+    window.setTimeout(() => { wasDraggedRef.current = false; }, 0);
   };
 
   const handleKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
@@ -399,8 +478,10 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
         <div className={styles.cameraRig}>
           <div
             className={styles.sceneCanvas}
+            ref={sceneCanvasRef}
             data-testid="atlas-scene"
             data-atlas-layer="universe"
+            data-camera-bounded="true"
             data-view-x={Math.round(view.x)}
             data-view-y={Math.round(view.y)}
             data-view-scale={Number(view.scale.toFixed(2))}
@@ -413,14 +494,16 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
                 if (!from || !to) return null;
                 const local = focusedId === edge.from || focusedId === edge.to || selectedId === edge.from || selectedId === edge.to;
                 const inWorld = [edge.from, edge.to].some((id) => worldNodes.find((node) => node.id === id)?.gatewayId === selectedId);
+                const bridge = Boolean(edge.evidenceBoundary);
                 const bend = index % 2 === 0 ? -5 : 5;
-                return <path key={edge.id} className={`${styles.connection} ${local ? styles.connectionActive : ""} ${inWorld ? styles.connectionNearby : ""}`} d={`M${from.x} ${from.y} Q${(from.x + to.x) / 2} ${(from.y + to.y) / 2 + bend} ${to.x} ${to.y}`} />;
+                return <path key={edge.id} className={`${styles.connection} ${local ? styles.connectionActive : ""} ${inWorld ? styles.connectionNearby : ""} ${bridge ? styles.connectionBridge : ""}`} d={`M${from.x} ${from.y} Q${(from.x + to.x) / 2} ${(from.y + to.y) / 2 + bend} ${to.x} ${to.y}`} />;
               })}
             </svg>
 
             {worldNodes.map((node, index) => {
               const active = node.id === focusedId;
-              const visible = node.gatewayId === selectedId && (view.scale >= node.revealAt - .18 || active);
+              const connected = connectedNodeIds.has(node.id);
+              const visible = Boolean(selectedId) && (node.gatewayId === selectedId || connected) && (connected || view.scale >= node.revealAt - .18 || active);
               const depth = node.size === "major" ? 58 : 22 + index % 5 * 13;
               return (
                 <button
@@ -480,6 +563,31 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
             {selected && <Link className={styles.enterWorld} href={`/journeys/${selected.id}`}>{selectedStory?.action}<Icon name="arrow" size={17} /></Link>}
             {focusedNode && <Link href={`/search?q=${encodeURIComponent(focusedNode.searchQuery)}`}>Find this story</Link>}
           </div>
+          {connectedPaths.length ? (
+            <div className={styles.connectedPaths}>
+              <p>Paths from here</p>
+              <div>
+                {connectedPaths.map((path) => (
+                  <button
+                    type="button"
+                    onClick={() => followConnection(path.destinationId)}
+                    key={path.edge.id}
+                    aria-label={`Follow ${path.edge.relation} to ${path.label}${path.crossWorld ? " in another world" : ""}`}
+                  >
+                    <span>{path.crossWorld ? "Cross-world path" : path.edge.relation}</span>
+                    <strong>{path.label}</strong>
+                    <small>{path.kind} · {path.edge.relation}</small>
+                  </button>
+                ))}
+              </div>
+              {connectedPaths.find((path) => path.edge.evidenceBoundary) ? (
+                <details>
+                  <summary>Connection boundaries</summary>
+                  {connectedPaths.filter((path) => path.edge.evidenceBoundary).map((path) => <small key={path.edge.id}><strong>{path.label}:</strong> {path.edge.evidenceBoundary}</small>)}
+                </details>
+              ) : null}
+            </div>
+          ) : null}
           {focusedNode && <details><summary>Why this is here</summary><small>{focusedNode.evidenceBoundary}</small></details>}
         </section>
       )}

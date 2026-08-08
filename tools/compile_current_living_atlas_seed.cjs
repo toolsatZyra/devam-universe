@@ -71,14 +71,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 49 || worldEdges.length !== 57) {
+  if (gateways.length !== 4 || worldNodes.length !== 50 || worldEdges.length !== 62) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 53) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 57) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 54) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 62) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 57) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 62) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
@@ -114,6 +114,13 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
       throw new Error(`Distinct Diwali Atlas lane is missing or invalid for ${DISTINCT_DIWALI_NODE_SLUGS[index]}`);
     }
   }
+  const requiredBridgeIds = ["ramayana-to-diwali", "diwali-to-kali-puja", "kali-puja-to-durga", "durga-to-durga-puja", "durga-puja-to-kolkata"];
+  for (const edgeId of requiredBridgeIds) {
+    const edge = worldEdges.find((candidate) => candidate.id === edgeId);
+    if (!edge || typeof edge.evidenceBoundary !== "string" || edge.evidenceBoundary.length < 80) {
+      throw new Error(`Evidence-bounded cross-world Atlas route is missing or invalid for ${edgeId}`);
+    }
+  }
 }
 
 function buildMigration() {
@@ -126,7 +133,7 @@ function buildMigration() {
     ...worldNodes.map((node) => nodeRow(node, false)),
   ].join(",\n  ");
   const edgeRows = worldEdges
-    .map((edge) => `(${sqlText(edge.id)}, ${sqlText(edge.from)}, ${sqlText(edge.to)}, ${sqlText(edge.relation)})`)
+    .map((edge) => `(${sqlText(edge.id)}, ${sqlText(edge.from)}, ${sqlText(edge.to)}, ${sqlText(edge.relation)}, ${sqlNullable(edge.evidenceBoundary)})`)
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
@@ -162,11 +169,11 @@ insert into public.atlas_edges (
   source_node_id, target_node_id, label, visual, rights_lane, publication_state
 )
 select source.id, target.id, edge.label,
-  jsonb_build_object('sourceId', edge.source_id),
+  jsonb_strip_nulls(jsonb_build_object('sourceId', edge.source_id, 'evidenceBoundary', edge.evidence_boundary)),
   'product_allowed', 'published'
 from (values
   ${edgeRows}
-) as edge(source_id, source_slug, target_slug, label)
+) as edge(source_id, source_slug, target_slug, label, evidence_boundary)
 join public.atlas_nodes source on source.slug = edge.source_slug
 join public.atlas_nodes target on target.slug = edge.target_slug
 on conflict (source_node_id, target_node_id, label) do update set
@@ -223,11 +230,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 53 then
-    raise exception 'Expected 53 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> 54 then
+    raise exception 'Expected 54 app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 57 then
-    raise exception 'Expected 57 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> 62 then
+    raise exception 'Expected 62 app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1

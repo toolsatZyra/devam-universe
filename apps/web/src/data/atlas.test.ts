@@ -31,6 +31,7 @@ const reviewedDetailNodeIds = [
   "shardiya-navaratri",
   "maha-ashtami",
   "saraswati-ayudha-puja",
+  "durga-puja",
   "vasu-baras",
   "dhantrayodashi",
   "yama-deepam",
@@ -64,7 +65,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(49);
+    expect(worldNodes).toHaveLength(50);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -86,6 +87,30 @@ describe("Living Atlas exploration data", () => {
       expect(node.evidenceBoundary.length).toBeGreaterThan(50);
       expect(reachable.get(node.gatewayId)?.has(node.id), `${node.id} is disconnected from ${node.gatewayId}`).toBe(true);
     }
+  });
+
+  it("supports an evidence-bounded cross-world path from Ramayana to Durga Puja", () => {
+    const requiredPath = [
+      ["ramayana", "diwali"],
+      ["diwali", "kali-puja"],
+      ["kali-puja", "durga"],
+      ["durga", "durga-puja"],
+    ] as const;
+    for (const [from, to] of requiredPath) {
+      const edge = worldEdges.find((candidate) => candidate.from === from && candidate.to === to);
+      expect(edge, `${from} must connect to ${to}`).toBeDefined();
+      if (edge?.id !== "diwali-kolkata" && edge?.id !== "lakshmi-to-kali") {
+        expect(edge?.evidenceBoundary?.length ?? 0, `${edge?.id} needs a visible scope boundary`).toBeGreaterThan(80);
+      }
+    }
+    const bridgeEdges = worldEdges.filter((edge) => edge.evidenceBoundary);
+    expect(bridgeEdges.map((edge) => edge.id)).toEqual(expect.arrayContaining([
+      "ramayana-to-diwali",
+      "diwali-to-kali-puja",
+      "kali-puja-to-durga",
+      "durga-to-durga-puja",
+      "durga-puja-to-kolkata",
+    ]));
   });
 
   it("gives every era a visible exploration path", () => {
@@ -171,8 +196,10 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 53 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 57 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 54 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 62 app-owned Living Atlas edges");
+      expect(sql).toContain("Rama homecoming tradition");
+      expect(sql).toContain("connected Shakta goddess traditions");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
       expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
       expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
