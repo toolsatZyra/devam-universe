@@ -46,6 +46,22 @@ const reviewedDetailNodeIds = [
   "mahishasura",
   "shumbha",
   "nishumbha",
+  "king-suratha",
+  "merchant-samadhi",
+  "sage-medhas",
+  "medhas-hermitage-story-world",
+  "mahamaya",
+  "suratha-samadhi-seek-counsel",
+  "madhu-kaitabha-awakening",
+  "mahishasura-battle",
+  "kaushiki",
+  "kalika",
+  "dhumralochana",
+  "chanda-munda",
+  "chamunda",
+  "raktabija",
+  "shumbha-nishumbha-battle",
+  "granting-of-boons",
   "shardiya-navaratri",
   "maha-ashtami",
   "saraswati-ayudha-puja",
@@ -83,7 +99,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(68);
+    expect(worldNodes).toHaveLength(84);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -158,6 +174,42 @@ describe("Living Atlas exploration data", () => {
       expect(edge?.evidenceBoundary?.length ?? 0).toBeGreaterThan(100);
       expect(edge?.sourceRef?.length ?? 0).toBeGreaterThan(100);
     }
+  });
+
+  it("turns the Devimahatmya into a source-addressed frame, manifestation, figure, and episode constellation", () => {
+    const constellationIds = [
+      "king-suratha", "merchant-samadhi", "sage-medhas", "medhas-hermitage-story-world", "mahamaya",
+      "suratha-samadhi-seek-counsel", "madhu-kaitabha-awakening", "mahishasura-battle", "kaushiki", "kalika",
+      "dhumralochana", "chanda-munda", "chamunda", "raktabija", "shumbha-nishumbha-battle", "granting-of-boons",
+    ];
+    expect(worldNodes.filter((node) => constellationIds.includes(node.id))).toHaveLength(constellationIds.length);
+
+    const constellationEdges = worldEdges
+      .filter((edge) => constellationIds.includes(edge.from) || constellationIds.includes(edge.to))
+      .filter((edge) => edge.id !== "kali-puja-to-kalika");
+    expect(constellationEdges).toHaveLength(37);
+    expect(constellationEdges.every((edge) => edge.sourceRef?.includes("sha256:"))).toBe(true);
+
+    const storyLoop = [
+      ["king-suratha", "suratha-samadhi-seek-counsel"],
+      ["merchant-samadhi", "suratha-samadhi-seek-counsel"],
+      ["suratha-samadhi-seek-counsel", "mahamaya"],
+      ["mahamaya", "madhu-kaitabha-awakening"],
+      ["chanda-munda", "chamunda"],
+      ["chamunda", "raktabija"],
+      ["raktabija", "shumbha-nishumbha-battle"],
+      ["shumbha-nishumbha-battle", "granting-of-boons"],
+      ["granting-of-boons", "king-suratha"],
+      ["granting-of-boons", "merchant-samadhi"],
+    ];
+    for (const [from, to] of storyLoop) {
+      const edge = worldEdges.find((candidate) => candidate.from === from && candidate.to === to);
+      expect(edge, `${from} must connect to ${to}`).toBeDefined();
+      expect(edge?.sourceRef).toContain("sha256:");
+    }
+
+    const kaliBridge = worldEdges.find((edge) => edge.id === "kali-puja-to-kalika");
+    expect(kaliBridge?.evidenceBoundary).toContain("does not claim festival origin");
   });
 
   it("gives every era a visible exploration path", () => {
@@ -243,8 +295,8 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 72 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 101 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 88 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 139 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming tradition");
       expect(sql).toContain("connected Shakta goddess traditions");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
@@ -252,7 +304,7 @@ describe("Living Atlas exploration data", () => {
       expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
       expect(sql).toContain("Dutt Ramayana Atlas node is missing its selected-edition boundary");
       expect(sql).toContain("Dutt Ramayana narrative constellation nodes are missing or outside their selected-edition boundaries");
-      expect(sql).toContain("Dutt Ramayana narrative constellation edges are missing exact source addresses");
+      expect(sql).toContain("Source-addressed Living Atlas edges are missing exact source addresses");
       expect(sql).toContain("Distinct Diwali Atlas lanes are missing or misrouted");
       expect(sql).not.toContain("alter function");
       expect(sql).not.toContain("grant execute");

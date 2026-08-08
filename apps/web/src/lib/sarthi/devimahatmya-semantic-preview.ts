@@ -6,6 +6,22 @@ const ATLAS_QUERIES: Record<string, string> = {
   mahishasura: "Mahishasura",
   shumbha: "Shumbha",
   nishumbha: "Nishumbha",
+  "king-suratha": "King Suratha",
+  "merchant-samadhi": "Merchant Samadhi",
+  "sage-medhas": "Sage Medhas",
+  "medhas-hermitage-story-world": "Medhas's hermitage",
+  mahamaya: "Mahamaya",
+  "suratha-samadhi-seek-counsel": "Suratha and Samadhi seek counsel",
+  "madhu-kaitabha-awakening": "madhu-kaitabha-awakening",
+  "mahishasura-battle": "mahishasura-battle",
+  kaushiki: "Kaushiki",
+  kalika: "Kalika",
+  dhumralochana: "Dhumralochana",
+  "chanda-munda": "chanda-munda",
+  chamunda: "Chamunda",
+  raktabija: "Raktabija",
+  "shumbha-nishumbha-battle": "shumbha-nishumbha-battle",
+  "granting-of-boons": "granting of boons",
 };
 
 export function answerDevimahatmyaSemanticPreview(request: SarthiRequest): GroundedSarthiAnswer | null {
