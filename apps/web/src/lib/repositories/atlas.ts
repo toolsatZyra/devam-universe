@@ -1,6 +1,7 @@
 import type { AtlasWorld } from "@/lib/domain/atlas";
 import { eras, gateways, placeThreads, worldEdges, worldNodes } from "@/data/atlas";
 import { SupabaseAtlasRepository } from "@/lib/repositories/supabase-atlas";
+import { ResilientAtlasRepository } from "@/lib/repositories/atlas-resilience";
 import { hasSupabaseConfiguration } from "@/lib/supabase/server";
 
 export interface AtlasRepository {
@@ -14,14 +15,18 @@ class FixtureAtlasRepository implements AtlasRepository {
 }
 
 // This is the only composition point the page knows about. The Supabase-backed
-// implementation owns published node topology when configured; reviewed local
-// exploration copy remains a fail-safe for legacy rows until its migration is applied.
+// implementation owns published node topology when configured. Its rows must
+// pass the strict mapper; a stale or invalid projection falls back as a whole
+// to the reviewed local universe instead of mixing database and local rows.
 export function getAtlasRepository(): AtlasRepository {
   if (process.env.DEVAM_ATLAS_FIXTURE === "1") {
     return new FixtureAtlasRepository();
   }
   if (hasSupabaseConfiguration()) {
-    return new SupabaseAtlasRepository();
+    return new ResilientAtlasRepository(
+      new SupabaseAtlasRepository(),
+      new FixtureAtlasRepository(),
+    );
   }
   return new FixtureAtlasRepository();
 }
