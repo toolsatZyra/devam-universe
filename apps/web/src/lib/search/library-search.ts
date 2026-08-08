@@ -6,6 +6,7 @@ import type {
 } from "../evidence/contracts";
 import type { EvidenceCitation } from "../sarthi/contracts";
 import { searchGaneshaPreview } from "../sarthi/ganesha-preview";
+import { searchRamcharitmanasPreview } from "../sarthi/ramcharitmanas-preview";
 import { searchHeroStructures } from "./hero-search";
 import { searchUserCompleteRitualContent } from "./ritual-content-search";
 import { searchReviewedRamayanaReflection } from "../sarthi/ramayana-reflection";
@@ -113,6 +114,7 @@ export async function searchLibrary(
     ? ritualResults
     : [
         ...searchGaneshaPreview(query, languageCode),
+        ...searchRamcharitmanasPreview(query, languageCode),
         ...(ramayanaReflectionResults.length > 0 ? ramayanaReflectionResults : searchHeroStructures(query, languageCode)),
       ];
   if (!repository) {

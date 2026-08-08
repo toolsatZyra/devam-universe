@@ -1089,6 +1089,20 @@ low-value work. Devam will correct the already aligned IA OCR or acquire an
 edition-compatible transcription instead; no generated local OCR is retained
 or promoted.
 
+Checkpoint 2026-08-08 (Ramcharitmanas product doorway): the 802
+proofread/validated, source-addressed Hindi Wikisource page projections are now
+reachable from the Ramayana Living Atlas gateway, exact Search, and Sarthi.
+The doorway gives one citation anchor for each of the seven sopanas and retains
+the fixed Belvedere Press edition and hosted passage roots. The hosted graph
+now contains 41 app-owned nodes and 45 app-owned edges; the separately managed
+Ganesha Purana node and edge remain intact, for 42/46 total. The seed altered no
+schema, RLS, function owner, or execute grant, and anonymous normal-TLS REST
+readback found the exact published node. This is navigation into 802 pages,
+not correction of the held 359 low-quality and 11 malformed-markup pages, a
+complete searchable Ramcharitmanas text, every edition or living tradition, or
+the complete Ramayana universe. See
+`ingestion/reports/ramcharitmanas-living-atlas-integration-v1.json`.
+
 Checkpoint 2026-08-06 (Devigita): the GRETIL Honegger transcription of
 *Devībhāgavata Purāṇa* 7.31–40 is registered as three local-vault references
 and 559 exact TEI source-element citations, including 510 contiguous paired
@@ -2271,10 +2285,10 @@ reconciliation, corrected literal numbering, an edition-identified Sanskrit
 base, Hindi, every Ramayana expression or tradition, the hero universe, or the
 MVP library. Nine deterministic tests pass.
 
-Live hosted census after these checkpoints: 21 works, 26 expressions, 26
-editions, 76 source-object references, 8,289 passages, 1,228 published claims,
-1,233 claim-evidence links, 6 entities, 4 semantic relationships, 41 Atlas
-nodes and 45 Atlas edges. Of the hosted passages, 2,496 are published and 5,793
+Live hosted census after these checkpoints: 21 works, 27 expressions, 27
+editions, 102 source-object references, 9,091 passages, 1,228 published claims,
+1,233 claim-evidence links, 6 entities, 4 semantic relationships, 42 Atlas
+nodes and 46 Atlas edges. Of the hosted passages, 3,298 are published and 5,793
 remain in review/private lanes. These are implementation counts, not
 percentages of the full civilizational library.
 
@@ -2295,7 +2309,7 @@ completion must not be inferred from passing tests:
   Ramcharitmanas product editions, broader Ganesha and Durga source families,
   variant dossiers, complete civilizational Atlas coverage, and final
   gateway-specific scene art remain incomplete. The current Atlas has an
-  original shared cinematic environment, 36 connected, progressively revealed
+  original shared cinematic environment, 37 connected, progressively revealed
   world nodes, and four gateways; density beyond the four hero launch worlds
   remains open.
 - All 79 currently resolved September-December observance slugs have a current

@@ -1,6 +1,7 @@
 import type { GroundedSarthiAnswer, SarthiRequest, SarthiUnavailable } from "./contracts";
 import { answerGaneshaPreview } from "./ganesha-preview";
 import { answerHeroPreview } from "./hero-preview";
+import { answerRamcharitmanasPreview } from "./ramcharitmanas-preview";
 import { answerReviewedRamayanaReflection } from "./ramayana-reflection";
 import { resolvePracticeGuidance } from "../practice/practice-guidance";
 
@@ -1239,6 +1240,9 @@ export function answerSarthi(request: SarthiRequest): GroundedSarthiAnswer | Sar
   }
 
   if (durgaContext) return answerHeroPreview("durga", request);
+
+  const ramcharitmanasPreview = answerRamcharitmanasPreview(request);
+  if (ramcharitmanasPreview) return ramcharitmanasPreview;
 
   const ramayanaContext = explicitlyRamayana || usesAtlasContext("ramayana");
   if (ramayanaContext) return answerReviewedRamayanaReflection(request) ?? answerHeroPreview("ramayana", request);

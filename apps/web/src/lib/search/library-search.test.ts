@@ -175,6 +175,18 @@ describe("library search orchestration", () => {
     expect(result).toMatchObject({ retrievalStatus: "not_configured", results: [] });
   });
 
+  it("opens Ramcharitmanas through all seven source-addressed sopana anchors", async () => {
+    const result = await searchLibrary("Ramcharitmanas seven sopanas Belvedere Press", "en");
+    expect(result.results[0]).toMatchObject({
+      id: "ramcharitmanas-belvedere-seven-sopana-en",
+      claimKind: "source_bounded_structure",
+      statement: expect.stringContaining("802 source-addressed beta pages"),
+    });
+    expect(result.results[0].citations).toHaveLength(7);
+    expect(result.results[0].sourceBoundary).toContain("359 low-quality pages");
+    expect(result.results[0].sourceBoundary).toContain("11 malformed-markup pages");
+  });
+
   it("finds the exact user-complete Maha Ashtami participant lane before broader hero results", async () => {
     const result = await searchLibrary("What should I do on Maha Ashtami in Kolkata?", "en");
     expect(result.results[0]).toMatchObject({

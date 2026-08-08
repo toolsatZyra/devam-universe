@@ -1,0 +1,99 @@
+{
+  "contract": "DEVAM_RAMCHARITMANAS_LIVING_ATLAS_INTEGRATION_V1",
+  "generated_at_utc": "2026-08-08T07:08:33.9399184Z",
+  "result": "PASS",
+  "supabase_project_ref": "bucgdaunsuzithfigtmr",
+  "migration": {
+    "name": "sync_current_living_atlas",
+    "path": "supabase/migrations/20260808070531_sync_current_living_atlas.sql",
+    "sha256": "12d4d3bd987be252d033ed19e2785bda8133a9233fe62a18644db5846161be7e",
+    "present_in_hosted_history": true,
+    "alters_schema_or_privileges": false,
+    "deletes_independently_managed_nodes_or_edges": false
+  },
+  "inputs": {
+    "atlas_source_sha256": "cd5ea76fc2cdfc44d5ad8fc83d4b8c716035b35e02a586c4b958a78dc21ec081",
+    "preview_source_sha256": "cec341c709b6660d35eb316fe0b6e927d9ea00864bb39fc14b249746bf5c6252",
+    "seed_compiler_sha256": "9026ad19d4c8c405896d02461904aef88218c9d327e02a1f7ca8ecb150e2f16a",
+    "passage_root_sha256": "92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26",
+    "hosted_passage_verification_sha256": "29746a552a55bf176fb798f6fb39b88a821a48aa808316fc43031d2bd3c90e17"
+  },
+  "hosted_graph": {
+    "before": {
+      "nodes": 41,
+      "edges": 45,
+      "ramcharitmanas_nodes": 0,
+      "independently_managed_ganesha_purana_nodes": 1
+    },
+    "after": {
+      "nodes": 42,
+      "edges": 46,
+      "app_owned_nodes": 41,
+      "app_owned_edges": 45,
+      "independently_managed_ganesha_purana_nodes": 1
+    },
+    "ramcharitmanas_node": {
+      "slug": "ramcharitmanas",
+      "gateway_id": "ramayana",
+      "node_kind": "Devotional epic",
+      "search_query": "Ramcharitmanas seven sopanas Belvedere Press",
+      "rights_lane": "product_allowed",
+      "publication_state": "published"
+    },
+    "ramcharitmanas_edge": {
+      "source_slug": "ramayana",
+      "target_slug": "ramcharitmanas",
+      "source_id": "ramayana-ramcharitmanas",
+      "label": "Awadhi devotional telling",
+      "rights_lane": "product_allowed",
+      "publication_state": "published"
+    }
+  },
+  "public_probe": {
+    "transport": "normal TLS with the local publishable key; no secret or service-role key",
+    "method": "GET",
+    "resource": "rest/v1/atlas_nodes filtered to slug=ramcharitmanas",
+    "http_status": 200,
+    "record_count": 1,
+    "exact_boundary_present": true
+  },
+  "security_regression": {
+    "search_public_knowledge": {
+      "owner": "devam_public_search_executor",
+      "anon_execute": true,
+      "authenticated_execute": false,
+      "service_role_execute": true
+    },
+    "search_public_passages": {
+      "owner": "devam_public_search_executor",
+      "anon_execute": true,
+      "authenticated_execute": false,
+      "service_role_execute": true
+    },
+    "unchanged_from_pre_migration": true
+  },
+  "product_boundary": {
+    "published_page_count": 802,
+    "sopana_count": 7,
+    "low_quality_pages_excluded": 359,
+    "markup_anomaly_pages_excluded": 11,
+    "complete_ramcharitmanas_text": false,
+    "complete_ramcharitmanas_tradition": false,
+    "complete_ramayana_universe": false,
+    "mvp_library_complete": false
+  },
+  "validation": {
+    "targeted_test_files": 4,
+    "targeted_tests_passed": 171,
+    "targeted_tests_failed": 0,
+    "generated_migration_byte_matches_compiler": true,
+    "unexpected_privilege_sql_matches": 0,
+    "full_web_test_files_passed": 91,
+    "full_web_tests_passed": 693,
+    "full_python_tests_passed": 210,
+    "lint_passed": true,
+    "typecheck_passed": true,
+    "production_build_passed": true
+  },
+  "source_payload_copied_into_app_or_atlas_seed": false
+}

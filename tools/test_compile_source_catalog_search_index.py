@@ -1,4 +1,6 @@
+import json
 import unittest
+from pathlib import Path
 
 from tools.compile_source_catalog_search_index import compile_index
 
@@ -9,14 +11,31 @@ class SourceCatalogSearchIndexTest(unittest.TestCase):
         cls.index = compile_index()
 
     def test_exact_source_vault_census(self) -> None:
-        self.assertEqual(self.index["sourceObjectCount"], 8465)
-        self.assertEqual(self.index["sourceObjectBytes"], 6160018802)
+        self.assertEqual(self.index["sourceObjectCount"], 8491)
+        self.assertEqual(self.index["sourceObjectBytes"], 6167702553)
         self.assertEqual(
             self.index["sourceSummarySha256"],
-            "0df6acdff2ef6f705cc30590b0042baff6e4c4af88d9e728acabd4b3e24997f8",
+            "f5093b53c64a0c23110c1360392eeb33a969ff987f39546f8dafd138c62cac3e",
         )
-        self.assertEqual(len(self.index["records"]), 8465)
-        self.assertEqual(len({row["sha256"] for row in self.index["records"]}), 8465)
+        self.assertEqual(len(self.index["records"]), 8491)
+        self.assertEqual(len({row["sha256"] for row in self.index["records"]}), 8491)
+
+    def test_ramcharitmanas_revision_carriers_are_discoverable_without_text_promotion(self) -> None:
+        report_path = Path("ingestion/reports/ramcharitmanas-wikisource-belvedere-pages-v1.json")
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        records = {row["sha256"]: row for row in self.index["records"]}
+        self.assertEqual(len(report["stored_objects"]), 26)
+        self.assertEqual(
+            {row["sha256"] for row in report["stored_objects"]},
+            {row["sha256"] for row in report["stored_objects"] if row["sha256"] in records},
+        )
+        for stored in report["stored_objects"]:
+            record = records[stored["sha256"]]
+            self.assertEqual(record["bytes"], stored["bytes"])
+            self.assertEqual(record["roles"], ["canonical_acquisition"])
+            self.assertIn("ramcharitmanas", record["searchText"])
+        self.assertIn("not a verified passage", self.index["boundary"])
+        self.assertIn("rights clearance", self.index["boundary"])
 
     def test_index_contains_exact_devimahatmya_wikisource_sources(self) -> None:
         records = {row["sha256"]: row for row in self.index["records"]}

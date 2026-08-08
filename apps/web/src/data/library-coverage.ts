@@ -9,8 +9,8 @@ export type HeroCoverage = {
 export const LIBRARY_COVERAGE_SNAPSHOT = {
   asOf: "2026-08-08",
   sourceLibrary: {
-    uniqueObjects: 8_455,
-    objectBytes: 5_968_838_654,
+    uniqueObjects: 8_491,
+    objectBytes: 6_167_702_553,
     discoveryLeads: 6_545,
     boundary: "Preserved source objects are not automatically reviewed, rights-cleared, translated, or published in the product. Discovery leads are a research queue, not holdings.",
   },
@@ -41,8 +41,8 @@ export const LIBRARY_COVERAGE_SNAPSHOT = {
       slug: "ramayana",
       name: "Ramayana",
       devanagari: "रामायण",
-      connected: "A published product-usable seven-kanda, 606-sarga Ambuda/DCS Sanskrit electronic corpus with 46 literal record gaps and three source-order anomalies exposed; a published source-addressed Griffith English layer with six books and explicit omissions; complete narrative-body coverage of the four-volume Dutt English electronic edition across all seven kandas and 652 byte-addressed sections, with literal numbering defects preserved; all seven edition-matched Dutt scans; and one structurally complete public-domain seven-sopana Belvedere Ramcharitmanas scan; journey, challenge, Search, and Sarthi orientation.",
-      open: "An edition-identified gap-free Sanskrit base, page-by-page reconciliation of the Dutt electronic text to all seven print scans, a complete source-aligned transcription or validated OCR for the Belvedere Ramcharitmanas scan, a strong Hindi layer, commentary, and major Indian and Asian variants.",
+      connected: "A published product-usable seven-kanda, 606-sarga Ambuda/DCS Sanskrit electronic corpus with 46 literal record gaps and three source-order anomalies exposed; a published source-addressed Griffith English layer with six books and explicit omissions; complete narrative-body coverage of the four-volume Dutt English electronic edition across all seven kandas and 652 byte-addressed sections, with literal numbering defects preserved; all seven edition-matched Dutt scans; one structurally complete public-domain seven-sopana Belvedere Ramcharitmanas scan; and all 1,240 edition-matched Hindi Wikisource page revisions, including 802 source-addressed beta passages now published to Search and Sarthi, 11 held markup anomalies, and an explicit 359-page correction queue; journey, challenge, Search, and Sarthi orientation.",
+      open: "An edition-identified gap-free Sanskrit base, page-by-page reconciliation of the Dutt electronic text to all seven print scans, correction of the remaining 359 Belvedere Ramcharitmanas narrative pages before a complete searchable-text claim, a strong modern-Hindi aid layer, commentary, and major Indian and Asian variants.",
     },
     {
       slug: "diwali",

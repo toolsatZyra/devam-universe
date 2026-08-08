@@ -299,6 +299,119 @@ page-by-page reconciliation to every print scan, corrected printed numbering,
 an edition-identified Sanskrit base, Hindi, every translation/commentary,
 every recension/tradition, the Ramayana hero universe, or the MVP library.
 
+### Edition-matched Hindi Wikisource page acquisition (2026-08-08)
+
+Hindi Wikisource exposes an exact 1,240-title Page-namespace universe for the
+same retained Belvedere Press scan, with no missing, duplicate, or nonnumeric
+scan-page identity. Devam froze all current revision IDs and acquired all 1,240
+revision records in 25 bounded JSON carriers plus one site-rights record. The
+26 new content-addressed objects total 7,683,751 bytes. The 78,560,265-byte
+scan was not copied again, and no source text was copied into the app.
+
+The acquisition improves page-addressed evidence but does not close the
+searchable-text gate. Across the 1,172 seven-sopana narrative pages (scan pages
+52-1223), Wikisource currently marks 5 validated and 808 proofread pages, for
+813 product candidates. It marks 345 pages not proofread and 14 pages without
+text, so 359 narrative pages remain an explicit correction queue. Across all
+1,240 pages the exact quality distribution is 20 without text, 350 not
+proofread, 864 proofread, and 6 validated. No page was silently promoted from
+raw OCR merely because its title exists.
+
+Hindi Wikisource's site-rights API reports Creative Commons Attribution-Share
+Alike 4.0. That licence applies to the acquired contributor transcriptions and
+is preserved separately from the public-domain underlying scan. Product use
+will require attribution and share-alike compliance. Proofread and validated
+pages are product candidates, not yet published passages; unproofread and empty
+pages remain internal correction evidence.
+
+Deterministic checkpoint:
+
+- profile ID `RAMCHARITMANAS-WIKISOURCE-PAGES-0F02AEF6AB74619FED5E31B0`;
+- plan SHA-256 `fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab`;
+- acquisition report SHA-256 `8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c`;
+- acquisition tool SHA-256 `4562f23ad403787e8636b1e73977c51fa27e1d974732fff2fcf9bc8ddc29a8d6`;
+- test SHA-256 `560ccc673c82c4800f916f89e9d96d481313277943ac76184531d650f0569907`;
+- source-vault closure: 8,491 unique objects / 6,167,702,553 bytes /
+  12,507 provenance records; and
+- 4/4 focused semantic tests plus full local vault verification pass.
+
+This is a complete acquisition of the current Page-namespace carrier universe,
+not a complete product-searchable Ramcharitmanas text. The next product boundary
+is a page-addressed packet for the 813 proofread/validated pages followed by
+correction of the 359 held narrative pages against the fixed scan.
+
+#### Fail-closed product projection
+
+A deterministic compiler then evaluated all 813 quality-qualified narrative
+pages. Eleven still contain malformed or unbalanced Wikisource layout markup
+(scan pages 312, 349, 474, 691-695, 859, 1109, and 1173), so they are not
+silently rendered or indexed. The resulting beta packet contains 802 readable,
+source-addressed page projections: 797 at proofread level 3 and 5 at validated
+level 4, with representation in all seven sopanas.
+
+Each passage retains the exact provider page/revision identity, raw revision
+content SHA-256, scan page, fixed scan SHA-256, sopana boundary, source JSON
+carrier, and deterministic projection hash. The projection removes only known
+layout/control markup. It never corrects provider spelling, OCR, wording, or
+numbering, and a level-3 page may still retain single-proofreader errors.
+
+The 359 low-quality pages plus 11 projection anomalies leave exactly 370 of the
+1,172 narrative pages outside the product index. The compiler emits 21 bounded
+SQL batches but does not apply them to the database; Search and Sarthi therefore
+remain unchanged until a separately authorized database application and hosted
+verification.
+
+- packet SHA-256 `b046e1c6aa87373ec760a656478c47eac4d6e1d21058a1e0e10abec844028678`;
+- passage root SHA-256 `92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26`;
+- product report SHA-256 `6c57daf0fcfbcc42717e862eb251c90433ba6b6c6776c3c45111cc4662c2e153`;
+- compiler SHA-256 `36e4a5f13fc6ede6209a28ab7a58b1ff2130e3a11d42c349886e747d467b30da`;
+- test SHA-256 `d4664459f76735ae5a8732925d61e03a547123766c25e668623debc2ba9f5821`;
+- 5/5 focused product-projection tests pass; and
+- `database_applied_by_this_compiler=false`.
+
+#### Hosted product application
+
+The 21 bounded, idempotent SQL batches were applied to the isolated
+`devam-universe` Supabase project on 2026-08-08. A hosted reconstruction found
+exactly 26 source identities and 802 published beta passages. Their source,
+ordinal, scan-page, raw-span, and projection inventory recomputes to the local
+passage root
+`92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26`.
+The seven sopana and quality counts also match the frozen compiler report.
+
+An anonymous normal-TLS call through the same `search_public_passages` RPC used
+by Search and Sarthi returned the derivative-allowed Wikisource passages with
+the explicit `802_of_1172_narrative_pages_370_not_indexed` source-completeness
+status. The anonymous role cannot directly select the passages table, and a
+probe for the separate private GRETIL expression returned no results. No source
+payload was copied into Supabase or the web application.
+
+The hosted verification record is
+`ingestion/reports/ramcharitmanas-wikisource-hosted-application-v1.json`.
+Publishing these 802 passages does not correct the 359 low-quality pages, admit
+the 11 malformed-markup pages, complete searchable Ramcharitmanas text, or
+complete the Ramayana universe or MVP library.
+
+#### Living Atlas, Search, and Sarthi doorway
+
+The reviewed product slice is now visible as a major Ramcharitmanas node under
+the Ramayana Living Atlas gateway, with an `Awadhi devotional telling`
+relationship. Opening that node yields a compact source-bounded answer and
+seven stable citations, one anchored to the first published passage in each
+sopana. Search uses the same boundary and Sarthi can answer in English or Hindi
+without treating a printed page number as the source identity.
+
+The hosted seed is additive: it manages 41 current app nodes and 45 app edges
+without deleting the independently managed Ganesha Purana node/edge, changing
+RLS, or changing either public-search function's owner or execute grants. The
+normal-TLS publishable-key REST probe returned the exact Ramcharitmanas node.
+The compact integration report is
+`ingestion/reports/ramcharitmanas-living-atlas-integration-v1.json`.
+
+This doorway does not improve or silently admit the held 370 pages and does not
+complete Ramcharitmanas or the Ramayana tradition. It makes the product-usable
+portion explorable while preserving its exact edition and quality boundary.
+
 ### Wikisource status and selected Sundara passage (2026-08-07)
 
 A fresh normal-TLS observation of the seven English Wikisource Index records
