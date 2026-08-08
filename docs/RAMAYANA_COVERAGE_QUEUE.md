@@ -369,6 +369,29 @@ verification.
 - 5/5 focused product-projection tests pass; and
 - `database_applied_by_this_compiler=false`.
 
+#### Hosted product application
+
+The 21 bounded, idempotent SQL batches were applied to the isolated
+`devam-universe` Supabase project on 2026-08-08. A hosted reconstruction found
+exactly 26 source identities and 802 published beta passages. Their source,
+ordinal, scan-page, raw-span, and projection inventory recomputes to the local
+passage root
+`92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26`.
+The seven sopana and quality counts also match the frozen compiler report.
+
+An anonymous normal-TLS call through the same `search_public_passages` RPC used
+by Search and Sarthi returned the derivative-allowed Wikisource passages with
+the explicit `802_of_1172_narrative_pages_370_not_indexed` source-completeness
+status. The anonymous role cannot directly select the passages table, and a
+probe for the separate private GRETIL expression returned no results. No source
+payload was copied into Supabase or the web application.
+
+The hosted verification record is
+`ingestion/reports/ramcharitmanas-wikisource-hosted-application-v1.json`.
+Publishing these 802 passages does not correct the 359 low-quality pages, admit
+the 11 malformed-markup pages, complete searchable Ramcharitmanas text, or
+complete the Ramayana universe or MVP library.
+
 ### Wikisource status and selected Sundara passage (2026-08-07)
 
 A fresh normal-TLS observation of the seven English Wikisource Index records

@@ -1,0 +1,61 @@
+{
+  "contract": "DEVAM_RAMCHARITMANAS_WIKISOURCE_HOSTED_APPLICATION_VERIFICATION_V1",
+  "result": "PASS",
+  "verified_at": "2026-08-08",
+  "supabase_project": {
+    "name": "devam-universe",
+    "project_ref": "bucgdaunsuzithfigtmr",
+    "region": "ap-south-1"
+  },
+  "inputs": {
+    "profile_id": "RAMCHARITMANAS-WIKISOURCE-PAGES-0F02AEF6AB74619FED5E31B0",
+    "packet_sha256": "b046e1c6aa87373ec760a656478c47eac4d6e1d21058a1e0e10abec844028678",
+    "product_report_sha256": "6c57daf0fcfbcc42717e862eb251c90433ba6b6c6776c3c45111cc4662c2e153",
+    "sql_batch_count": 21
+  },
+  "hosted_inventory": {
+    "target_edition_count": 1,
+    "source_object_count": 26,
+    "source_object_bytes": 7683751,
+    "passage_count": 802,
+    "distinct_passage_count": 802,
+    "quality_counts": {"3": 797, "4": 5},
+    "sopana_passage_counts": {"1": 305, "2": 173, "3": 18, "4": 3, "5": 68, "6": 87, "7": 148},
+    "min_scan_page": 52,
+    "max_scan_page": 1223,
+    "passage_root_sha256": "92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26",
+    "text_status": "deterministic_plaintext_projection_of_proofread_wikisource_revision_beta",
+    "rights_lane": "derivative_allowed",
+    "publication_state": "published",
+    "projection_anomaly_rows_present": 0
+  },
+  "anonymous_product_probe": {
+    "transport": "normal TLS Supabase REST with the configured publishable key",
+    "http_status": 200,
+    "query": "श्रीगणेशाय",
+    "language_filter": "awa",
+    "result_count": 2,
+    "result_scan_pages": [52, 425],
+    "boundary_mismatches": 0,
+    "source_completeness_status": "partial_beta_product_text_802_of_1172_narrative_pages_370_not_indexed",
+    "private_gretil_probe_result_count": 0,
+    "anonymous_direct_passages_select": false
+  },
+  "security_advisor": {
+    "reviewed": true,
+    "warning_count": 2,
+    "warnings": ["search_public_knowledge is an anon-executable SECURITY DEFINER function", "search_public_passages is an anon-executable SECURITY DEFINER function"],
+    "disposition": "Intentional bounded public product RPCs. Each function is owned by the restricted devam_public_search_executor role, applies publication and rights filters at every source layer, and does not grant anonymous direct table access."
+  },
+  "positive_boundary": "The hosted Search/Sarthi retrieval layer now exposes 802 source-addressed proofread or validated narrative-page plaintext projections for one fixed Belvedere Press Ramcharitmanas edition.",
+  "completion_denials": {
+    "all_narrative_pages_product_searchable": false,
+    "remaining_359_pages_corrected": false,
+    "complete_product_searchable_ramcharitmanas_text": false,
+    "all_ramcharitmanas_editions_recensions_commentaries_translations_and_traditions": false,
+    "complete_ramayana_universe": false,
+    "mvp_library_complete": false
+  },
+  "source_payloads_copied_into_database_or_app": false,
+  "database_application_completed": true
+}
