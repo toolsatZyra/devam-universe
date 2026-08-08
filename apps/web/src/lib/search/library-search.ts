@@ -12,6 +12,7 @@ import { searchUserCompleteRitualContent } from "./ritual-content-search";
 import { searchReviewedRamayanaReflection } from "../sarthi/ramayana-reflection";
 import { searchDevimahatmyaSemanticGraph } from "./devimahatmya-semantic-search";
 import { searchGaneshaPuranaStructure } from "./ganesha-purana-structure-search";
+import { searchGanapatiAtharvashirsha } from "./ganapatyatharvashirsha-search";
 
 export type LibrarySearchResult = {
   id: string;
@@ -114,12 +115,13 @@ export async function searchLibrary(
   const ramayanaReflectionResults = searchReviewedRamayanaReflection(query, languageCode);
   const semanticGraphResults = searchDevimahatmyaSemanticGraph(query, languageCode);
   const ganeshaPuranaResults = searchGaneshaPuranaStructure(query, languageCode);
+  const atharvashirshaResults = searchGanapatiAtharvashirsha(query, languageCode);
   const compactResults = ritualResults.length > 0
     ? ritualResults
     : [
         ...semanticGraphResults,
         ...ganeshaPuranaResults,
-        ...searchGaneshaPreview(query, languageCode),
+        ...(atharvashirshaResults.length > 0 ? atharvashirshaResults : searchGaneshaPreview(query, languageCode)),
         ...searchRamcharitmanasPreview(query, languageCode),
         ...(ramayanaReflectionResults.length > 0 ? ramayanaReflectionResults : searchHeroStructures(query, languageCode)),
       ];
