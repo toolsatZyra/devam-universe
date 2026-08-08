@@ -14,6 +14,7 @@ import {
 import type { Gateway, PlaceThread, WorldEdge, WorldNode } from "@/lib/domain/atlas";
 import type { RitualProcedureGuide } from "@/lib/domain/practice";
 import { canGuestAskSarthi, canGuestOpenGateway } from "@/lib/account/guest-preview";
+import { trackProductEvent } from "@/lib/analytics/client";
 import styles from "./atlas-shell.module.css";
 
 type AtlasShellProps = {
@@ -127,6 +128,10 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
   const guestSarthiExchangesRef = useRef(0);
 
   useEffect(() => {
+    trackProductEvent("atlas_opened", undefined, { oncePerSession: true });
+  }, []);
+
+  useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
     const readSavedMode = (): MotionMode | null => {
       try {
@@ -182,6 +187,7 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
     }
     setSelectedId(gatewayId);
     setFocusedId(gatewayId);
+    trackProductEvent("atlas_gateway_opened", gatewayId);
   };
 
   const selected = useMemo(
@@ -214,6 +220,7 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
     setAskedQuestion(normalized);
     setSarthiReply(null);
     setSarthiBusy(true);
+    trackProductEvent("sarthi_question_submitted", "atlas");
     try {
       const response = await fetch("/api/sarthi", {
         method: "POST",
@@ -222,6 +229,7 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
       });
       const reply = await response.json() as SarthiReply;
       setSarthiReply(reply);
+      trackProductEvent("sarthi_answer_rendered", reply.ok ? (reply.followUpQuestion ? "clarification" : "answer") : "unavailable");
       if (reply.conversation?.status === "saved" && reply.conversation.conversationId) setConversationId(reply.conversation.conversationId);
       if (response.ok) {
         setQuery("");
@@ -231,6 +239,7 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
         }
       }
     } catch {
+      trackProductEvent("sarthi_answer_rendered", "unavailable");
       setSarthiReply({ ok: false, message: "I couldn’t reach the evidence service. Please try again." });
     } finally {
       setSarthiBusy(false);

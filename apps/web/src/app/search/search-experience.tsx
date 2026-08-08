@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
 import { LIBRARY_COVERAGE_SNAPSHOT, formatLibraryBytes } from "@/data/library-coverage";
+import { trackProductEvent } from "@/lib/analytics/client";
 import styles from "./search.module.css";
 
 type Citation = {
@@ -42,6 +43,13 @@ function isEvidenceBoundedSynthesis(result: SearchResult) {
   return result.claimKind === "evidence_bounded_synthesis";
 }
 
+function trackSearchResult(response: SearchResponse) {
+  if (!response.ok) return trackProductEvent("search_results_rendered", "unavailable");
+  const grounded = (response.results?.length ?? 0) > 0;
+  const catalog = (response.sourceCatalogMatches?.length ?? 0) > 0;
+  trackProductEvent("search_results_rendered", grounded && catalog ? "mixed" : grounded ? "grounded" : catalog ? "catalog" : "empty");
+}
+
 export function SearchExperience({ initialQuery = "" }: { initialQuery?: string }) {
   const normalizedInitialQuery = initialQuery.trim();
   const [query, setQuery] = useState(normalizedInitialQuery);
@@ -52,10 +60,11 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
   useEffect(() => {
     if (normalizedInitialQuery.length < 2) return;
     let active = true;
+    trackProductEvent("search_submitted");
     fetch(`/api/search?query=${encodeURIComponent(normalizedInitialQuery)}`)
       .then((result) => result.json() as Promise<SearchResponse>)
-      .then((result) => { if (active) setResponse(result); })
-      .catch(() => { if (active) setResponse({ ok: false, message: "The library search could not be reached. Please try again." }); })
+      .then((result) => { if (active) { setResponse(result); trackSearchResult(result); } })
+      .catch(() => { if (active) { setResponse({ ok: false, message: "The library search could not be reached. Please try again." }); trackProductEvent("search_results_rendered", "unavailable"); } })
       .finally(() => { if (active) setBusy(false); });
     return () => { active = false; };
   }, [normalizedInitialQuery]);
@@ -65,11 +74,15 @@ export function SearchExperience({ initialQuery = "" }: { initialQuery?: string 
     if (normalized.length < 2 || busy) return;
     setBusy(true);
     setSubmittedQuery(normalized);
+    trackProductEvent("search_submitted");
     try {
       const result = await fetch(`/api/search?query=${encodeURIComponent(normalized)}`);
-      setResponse(await result.json() as SearchResponse);
+      const nextResponse = await result.json() as SearchResponse;
+      setResponse(nextResponse);
+      trackSearchResult(nextResponse);
     } catch {
       setResponse({ ok: false, message: "The library search could not be reached. Please try again." });
+      trackProductEvent("search_results_rendered", "unavailable");
     } finally {
       setBusy(false);
     }

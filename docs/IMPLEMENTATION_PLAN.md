@@ -2434,6 +2434,17 @@ completion must not be inferred from passing tests:
 - No production deployment, production-domain acceptance pass, analytics
   funnel, or public launch gate has been completed.
 
+Checkpoint 2026-08-08 (privacy-minimal product funnel, local and unapplied): the
+three product doors, deterministic Today resolution, and passwordless account
+conversion now emit only allow-listed categorical events through a server route.
+The 90-day Supabase table stores a random per-tab session UUID, event, surface,
+bounded target, coarse guest/signed-in state, and server time. It explicitly
+stores no query text, Sarthi message, location or ritual selection, email, user
+id, IP, user agent, source content, or arbitrary properties. Browser roles have
+insert-only RLS access; a `security_invoker` daily aggregate is service-role-only.
+The migration remains unapplied, so this closes the code and schema gap but not
+the production analytics or public-launch gate.
+
 Checkpoint 2026-08-08 (complete fixed 1927 Hindi Vālmīki Rāmāyaṇa carrier set):
 ten separately preserved Dwaraka Prasad Sharma volume PDFs now add 191,180,148
 unique bytes and 6,195 visually reviewed PDF pages to the source vault. Title

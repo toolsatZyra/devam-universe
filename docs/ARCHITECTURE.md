@@ -7,6 +7,14 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 ## Data plane
 
 - Supabase/Postgres: users, profiles, entities, relationships, claims, claim evidence, source metadata, passages, ritual procedures, Panchang facts, journeys, challenges, subscriptions, and analytics events.
+- Product analytics is first-party and content-free: a 90-day pseudonymous session
+  funnel records only allow-listed surface events and bounded categorical targets.
+  Search text, Sarthi messages, location and ritual selections, email, user ids,
+  IP addresses, user agents, source content, and arbitrary properties are excluded.
+  Browser roles may insert RLS-checked rows but cannot read them; only the service
+  role may read the security-invoker daily aggregate. Telemetry is best-effort:
+  a missing/unavailable analytics table returns an accepted no-op and cannot
+  degrade any Atlas, Search, Sarthi, Today, or account experience.
 - PostGIS: sacred geography, historical places, routes, and map queries.
 - pgvector + Postgres full-text: multilingual hybrid retrieval.
 - Object storage: immutable source objects, images, and derived media. One object per hash.

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { SignInForm, ProfileForm } from "./account-forms";
+import { SignedInAccountAnalytics } from "./account-analytics";
 import { deleteAllMemories, signOut } from "./actions";
 import { createServerAuthClient } from "@/lib/supabase/auth-server";
 import { getCurrentAccount } from "@/lib/supabase/auth-session";
@@ -61,6 +62,7 @@ export default async function AccountPage({
 
   return (
     <main className={styles.shell}>
+      <SignedInAccountAnalytics />
       <div className={styles.cosmos} aria-hidden="true" />
       <header className={styles.header}><Link href="/"><Image src="/brand/devam-mark.png" alt="" width={42} height={42} priority /><span>Devam</span></Link><nav><Link href="/">Atlas</Link><Link href="/today">Today</Link><Link href="/search">Library</Link></nav></header>
       <section className={styles.accountHero}>
