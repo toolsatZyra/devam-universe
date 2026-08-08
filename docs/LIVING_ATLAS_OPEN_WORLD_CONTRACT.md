@@ -129,10 +129,20 @@ priority, not a completeness claim.
 
 ## Current denominator
 
-The current reviewed Atlas seed contains 4 gateways, 50 world nodes and 62
-navigation edges after the first evidence-bounded bridge path. These counts
-describe selected MVP product scope only. They do not measure the size or
-completeness of Indian mythology, history, culture, wisdom or living practice.
+The current reviewed Atlas candidate contains 4 gateways, 68 world nodes and 101
+navigation edges. Its first edition-scoped narrative constellation adds 18
+Ramayana character, king, kingdom, place and turning-point nodes, with 38 edges
+carrying exact retained-source addresses. These counts describe selected MVP
+product scope only. They do not measure the size or completeness of Indian
+mythology, history, culture, wisdom or living practice.
+
+The Ramayana constellation is the repeatable expansion pattern, not a privileged
+final ontology: choose a cleared edition or evidence bundle, expose people,
+places, polities and events as progressive-detail destinations, bind precise
+relationships to source addresses, and create evidence-bounded bridges into
+living festivals or other worlds. Durga, Ganesha, Diwali, temple, historical,
+ritual, art, wisdom and regional clusters must use the same method while keeping
+their own evidence classes and authority limits.
 
 ## External modeling references
 

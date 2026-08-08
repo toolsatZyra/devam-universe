@@ -13,6 +13,11 @@ const ENTITY_BOUND_NODE_SLUGS = [...DEVIMAHATMYA_SEMANTIC_NODE_SLUGS, "ganesha-p
 const DEVIMAHATMYA_SEMANTIC_EDGE_IDS = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug) => `devi-mahatmya-${slug}`);
 const DISTINCT_DIWALI_NODE_SLUGS = ["kali-chaudas-baps", "gujarati-new-year-baps", "balipadyami-karnataka", "jain-diwali", "bandi-chhor-divas"];
 const DISTINCT_DIWALI_EDGE_IDS = ["naraka-to-kali-chaudas-baps", "bali-to-gujarati-new-year-baps", "bali-to-balipadyami-karnataka", "diwali-to-jain-diwali", "diwali-to-bandi-chhor-divas"];
+const DUTT_NARRATIVE_CONSTELLATION_NODE_SLUGS = [
+  "rama", "sita", "lakshmana", "hanuman", "ravana", "sugriva", "king-janaka", "king-dasharatha",
+  "mithila-story-world", "panchavati-story-world", "kishkindha-story-world", "lanka-story-world",
+  "forest-exile", "sita-abduction", "rama-sugriva-alliance", "hanuman-ocean-crossing", "bridge-to-lanka", "return-to-ayodhya",
+];
 
 function loadAtlas() {
   const source = fs.readFileSync(ATLAS_SOURCE, "utf8");
@@ -71,14 +76,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 50 || worldEdges.length !== 62) {
+  if (gateways.length !== 4 || worldNodes.length !== 68 || worldEdges.length !== 101) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 54) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 62) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 72) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 101) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 62) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 101) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
@@ -107,6 +112,13 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
   if (!duttNode || duttNode.gatewayId !== "ramayana" || duttEdge?.from !== "ramayana" || duttEdge.to !== "dutt-ramayana") {
     throw new Error("Source-bounded Dutt Ramayana Atlas route is missing or invalid");
   }
+  if (DUTT_NARRATIVE_CONSTELLATION_NODE_SLUGS.some((slug) => !worldNodes.some((node) => node.id === slug && node.gatewayId === "ramayana"))) {
+    throw new Error("Dutt Ramayana narrative constellation is incomplete");
+  }
+  const sourceAddressedRamayanaEdges = worldEdges.filter((edge) => edge.id.startsWith("dutt-ramayana-to-") || edge.sourceRef?.includes("sha256:"));
+  if (sourceAddressedRamayanaEdges.length < 35 || sourceAddressedRamayanaEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
+    throw new Error("Dutt Ramayana narrative constellation has missing source addresses");
+  }
   for (let index = 0; index < DISTINCT_DIWALI_NODE_SLUGS.length; index += 1) {
     const node = worldNodes.find((candidate) => candidate.id === DISTINCT_DIWALI_NODE_SLUGS[index]);
     const edge = worldEdges.find((candidate) => candidate.id === DISTINCT_DIWALI_EDGE_IDS[index]);
@@ -133,12 +145,13 @@ function buildMigration() {
     ...worldNodes.map((node) => nodeRow(node, false)),
   ].join(",\n  ");
   const edgeRows = worldEdges
-    .map((edge) => `(${sqlText(edge.id)}, ${sqlText(edge.from)}, ${sqlText(edge.to)}, ${sqlText(edge.relation)}, ${sqlNullable(edge.evidenceBoundary)})`)
+    .map((edge) => `(${sqlText(edge.id)}, ${sqlText(edge.from)}, ${sqlText(edge.to)}, ${sqlText(edge.relation)}, ${sqlNullable(edge.evidenceBoundary)}, ${sqlNullable(edge.sourceRef)})`)
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
   const semanticNodeRows = ENTITY_BOUND_NODE_SLUGS.map((slug) => `(${sqlText(slug)}, ${sqlText(slug)})`).join(",\n  ");
   const semanticEdgeRows = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug, index) => `(${sqlText(DEVIMAHATMYA_SEMANTIC_EDGE_IDS[index])}, ${sqlText(slug)})`).join(",\n  ");
+  const sourceAddressedRamayanaEdgeIds = worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:")).map((edge) => edge.id);
 
   return `-- Generated from apps/web/src/data/atlas.ts by
 -- tools/compile_current_living_atlas_seed.cjs.
@@ -169,11 +182,11 @@ insert into public.atlas_edges (
   source_node_id, target_node_id, label, visual, rights_lane, publication_state
 )
 select source.id, target.id, edge.label,
-  jsonb_strip_nulls(jsonb_build_object('sourceId', edge.source_id, 'evidenceBoundary', edge.evidence_boundary)),
+  jsonb_strip_nulls(jsonb_build_object('sourceId', edge.source_id, 'evidenceBoundary', edge.evidence_boundary, 'sourceRef', edge.source_ref)),
   'product_allowed', 'published'
 from (values
   ${edgeRows}
-) as edge(source_id, source_slug, target_slug, label, evidence_boundary)
+) as edge(source_id, source_slug, target_slug, label, evidence_boundary, source_ref)
 join public.atlas_nodes source on source.slug = edge.source_slug
 join public.atlas_nodes target on target.slug = edge.target_slug
 on conflict (source_node_id, target_node_id, label) do update set
@@ -230,11 +243,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 54 then
-    raise exception 'Expected 54 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> 72 then
+    raise exception 'Expected 72 app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 62 then
-    raise exception 'Expected 62 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> 101 then
+    raise exception 'Expected 101 app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1
@@ -319,6 +332,23 @@ begin
       and atlas.visual->>'evidenceBoundary' like '%print-scan reconciliation is incomplete%'
   ) then
     raise exception 'Dutt Ramayana Atlas node is missing its selected-edition boundary';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${DUTT_NARRATIVE_CONSTELLATION_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'ramayana'
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${DUTT_NARRATIVE_CONSTELLATION_NODE_SLUGS.length} then
+    raise exception 'Dutt Ramayana narrative constellation nodes are missing or outside their selected-edition boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${sourceAddressedRamayanaEdgeIds.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' like '%sha256:%'
+  ) <> ${sourceAddressedRamayanaEdgeIds.length} then
+    raise exception 'Dutt Ramayana narrative constellation edges are missing exact source addresses';
   end if;
   if (
     select count(*)

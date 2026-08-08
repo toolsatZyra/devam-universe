@@ -93,6 +93,21 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("button", { name: "Explore Ramayana" })).toHaveAttribute("aria-pressed", "true");
 
+  const duttEdition = page.getByRole("button", { name: "Dutt's English Ramayana, Complete electronic edition" });
+  await expect(duttEdition).toBeVisible();
+  await duttEdition.click();
+  await expect(page.getByRole("heading", { name: "Dutt's English Ramayana" })).toBeVisible();
+  for (const node of ["Rama, Narrative character", "Sita, Narrative character", "Hanuman, Narrative character", "Ravana, Narrative character"]) {
+    await expect(page.getByRole("button", { name: node })).toBeVisible();
+  }
+  await page.getByRole("button", { name: "Follow follows in this edition to Rama" }).click();
+  await expect(page.getByRole("heading", { name: "Rama" })).toBeVisible();
+  await expect(page.getByText("Sources and connection boundaries")).toBeVisible();
+  await page.getByRole("button", { name: "Follow journeys with to Sita" }).click();
+  await expect(page.getByRole("heading", { name: "Sita" })).toBeVisible();
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
+
   const ayodhya = page.getByRole("button", { name: "Ayodhya, Place" });
   await expect(ayodhya).toBeVisible();
   const nodeBox = await ayodhya.boundingBox();

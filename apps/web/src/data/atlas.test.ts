@@ -10,6 +10,24 @@ import { eras, gateways, placeThreads, worldEdges, worldNodes } from "./atlas";
 const reviewedDetailNodeIds = [
   "ramcharitmanas",
   "dutt-ramayana",
+  "rama",
+  "sita",
+  "lakshmana",
+  "hanuman",
+  "ravana",
+  "sugriva",
+  "king-janaka",
+  "king-dasharatha",
+  "mithila-story-world",
+  "panchavati-story-world",
+  "kishkindha-story-world",
+  "lanka-story-world",
+  "forest-exile",
+  "sita-abduction",
+  "rama-sugriva-alliance",
+  "hanuman-ocean-crossing",
+  "bridge-to-lanka",
+  "return-to-ayodhya",
   "bala-kanda",
   "ayodhya-kanda",
   "aranya-kanda",
@@ -65,7 +83,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(50);
+    expect(worldNodes).toHaveLength(68);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -111,6 +129,35 @@ describe("Living Atlas exploration data", () => {
       "durga-to-durga-puja",
       "durga-puja-to-kolkata",
     ]));
+  });
+
+  it("turns the Dutt edition into a source-addressed character, place, and event constellation", () => {
+    const constellationIds = [
+      "rama", "sita", "lakshmana", "hanuman", "ravana", "sugriva", "king-janaka", "king-dasharatha",
+      "mithila-story-world", "panchavati-story-world", "kishkindha-story-world", "lanka-story-world",
+      "forest-exile", "sita-abduction", "rama-sugriva-alliance", "hanuman-ocean-crossing", "bridge-to-lanka", "return-to-ayodhya",
+    ];
+    expect(worldNodes.filter((node) => constellationIds.includes(node.id))).toHaveLength(constellationIds.length);
+
+    const sourceAddressedEdges = worldEdges.filter((edge) => edge.id.startsWith("dutt-ramayana-to-") || edge.sourceRef?.includes("sha256:"));
+    expect(sourceAddressedEdges.length).toBeGreaterThanOrEqual(35);
+    expect(sourceAddressedEdges.every((edge) => edge.sourceRef?.includes("sha256:"))).toBe(true);
+
+    const eventPath = [
+      ["ayodhya-kanda", "forest-exile"],
+      ["panchavati-story-world", "sita-abduction"],
+      ["kishkindha-kanda", "rama-sugriva-alliance"],
+      ["sundara-kanda", "hanuman-ocean-crossing"],
+      ["yuddha-kanda", "bridge-to-lanka"],
+      ["yuddha-kanda", "return-to-ayodhya"],
+      ["return-to-ayodhya", "diwali"],
+    ];
+    for (const [from, to] of eventPath) {
+      const edge = worldEdges.find((candidate) => candidate.from === from && candidate.to === to);
+      expect(edge, `${from} must connect to ${to}`).toBeDefined();
+      expect(edge?.evidenceBoundary?.length ?? 0).toBeGreaterThan(100);
+      expect(edge?.sourceRef?.length ?? 0).toBeGreaterThan(100);
+    }
   });
 
   it("gives every era a visible exploration path", () => {
@@ -196,14 +243,16 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 54 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 62 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 72 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 101 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming tradition");
       expect(sql).toContain("connected Shakta goddess traditions");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
       expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
       expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
       expect(sql).toContain("Dutt Ramayana Atlas node is missing its selected-edition boundary");
+      expect(sql).toContain("Dutt Ramayana narrative constellation nodes are missing or outside their selected-edition boundaries");
+      expect(sql).toContain("Dutt Ramayana narrative constellation edges are missing exact source addresses");
       expect(sql).toContain("Distinct Diwali Atlas lanes are missing or misrouted");
       expect(sql).not.toContain("alter function");
       expect(sql).not.toContain("grant execute");

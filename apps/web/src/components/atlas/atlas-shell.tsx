@@ -580,10 +580,15 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
                   </button>
                 ))}
               </div>
-              {connectedPaths.find((path) => path.edge.evidenceBoundary) ? (
+              {connectedPaths.find((path) => path.edge.evidenceBoundary || path.edge.sourceRef) ? (
                 <details>
-                  <summary>Connection boundaries</summary>
-                  {connectedPaths.filter((path) => path.edge.evidenceBoundary).map((path) => <small key={path.edge.id}><strong>{path.label}:</strong> {path.edge.evidenceBoundary}</small>)}
+                  <summary>Sources and connection boundaries</summary>
+                  {connectedPaths.filter((path) => path.edge.evidenceBoundary || path.edge.sourceRef).map((path) => (
+                    <small key={path.edge.id}>
+                      <strong>{path.label}:</strong> {path.edge.evidenceBoundary ?? "This connection is scoped to the cited edition passage."}
+                      {path.edge.sourceRef ? <em>Source: {path.edge.sourceRef}</em> : null}
+                    </small>
+                  ))}
                 </details>
               ) : null}
             </div>

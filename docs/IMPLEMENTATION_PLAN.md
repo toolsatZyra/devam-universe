@@ -2765,6 +2765,46 @@ Still open: merge and fresh-main CI, production promotion and stable-origin
 12/12, broad character/place/story/polity/temple expansion, richer
 scene-specific art and the actual civilizational denominator.
 
+## 2026-08-09 Ramayana narrative-constellation candidate
+
+The first repeatable source-bounded expansion under the open-world contract is
+implemented on `codex/ramayana-narrative-constellation`. It expands one cleared
+edition deeply instead of adding another decorative master-node bridge.
+
+- The selected Manmatha Nath Dutt four-volume English electronic edition now
+  opens into 18 progressively revealed destinations: Rama, Sita, Lakshmana,
+  Hanuman, Ravana, Sugriva, Janaka, Dasharatha, narrative Mithila, Panchavati,
+  Kishkindha and Lanka, plus exile, abduction, alliance, ocean crossing, bridge
+  and return turning points.
+- The Atlas candidate is 4 gateways, 68 world nodes and 101 traversable edges.
+  Thirty-eight new edges retain exact source-object, source-ordinal and span
+  addresses in their navigation metadata; key transitions expose a short denial
+  against universal recension, historical, archaeological, geographic or
+  festival claims.
+- The return route crosses into Diwali as a major North Indian story
+  association while retaining the existing distinct Jain, Sikh, Shakta,
+  Vaishnava and regional festival lanes.
+- The edge contract and hosted row mapper now carry `sourceRef`; the focused-node
+  panel reveals sources and scope without making evidence prose the primary
+  play surface.
+- The reviewed app graph deterministically compiles to forward-only migration
+  `20260809024000_sync_current_living_atlas.sql`. The migration is prepared but
+  remains unapplied at this candidate checkpoint.
+
+Candidate validation:
+
+- product tests: 773 passed, 17 named source-vault-only tests skipped;
+- lint, TypeScript and production build: pass; and
+- desktop/mobile Playwright: 12/12 pass, including Dutt edition to Rama to Sita
+  travel, character visibility at depth, source-boundary disclosure, camera
+  recovery and the existing Ramayana-to-Durga-Puja bridge.
+
+This closes one representative character/place/event expansion, not the broad
+civilizational denominator. Next expansions should reuse this contract for
+Ganesha narrative and temple clusters, Bengal Shakta story/festival/place/art
+clusters, Diwali regional worlds, historically evidenced kings and polities,
+and the September-December ritual layer.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.

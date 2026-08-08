@@ -100,7 +100,15 @@ export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[]): Atla
     if (!from || !to) throw new Error(`Atlas edge ${edge.id} references a missing node.`);
     const visual = record(edge.visual, `${edge.id} visual`);
     const evidenceBoundary = typeof visual.evidenceBoundary === "string" ? visual.evidenceBoundary : undefined;
-    return { id: edge.id, from, to, relation: edge.label, ...(evidenceBoundary ? { evidenceBoundary } : {}) };
+    const sourceRef = typeof visual.sourceRef === "string" ? visual.sourceRef : undefined;
+    return {
+      id: edge.id,
+      from,
+      to,
+      relation: edge.label,
+      ...(evidenceBoundary ? { evidenceBoundary } : {}),
+      ...(sourceRef ? { sourceRef } : {}),
+    };
   });
   if (gateways.length !== 4 || new Set(gateways.map((item) => item.id)).size !== 4) throw new Error(`Expected four unique MVP gateways, received ${gateways.length}.`);
   return { eras: ERAS, gateways, placeThreads, worldNodes, worldEdges };
