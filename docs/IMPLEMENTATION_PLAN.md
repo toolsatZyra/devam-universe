@@ -2236,6 +2236,12 @@ vault now verifies at 8,446 unique objects / 5,780,836,280 bytes, summary
 SHA-256
 `2504f0d14f374e11d264397ae629f1c7e697a3ed0ec430eee6d4db4da81fffe9`.
 
+The deterministic Sarthi route now closes the named-source and Atlas-continuation
+doorway against the same fixity-checked two-khanda structure pack used by exact
+Search. It returns four opening/closing citations for the overview or two for a
+named khanda, and it preserves the edition, recension, translation, Mudgala and
+wider-tradition denials instead of falling through to generic Ganesha guidance.
+
 Checkpoint 2026-08-08 (Mudgala Purana internal fixed carrier): one original
 63,438,893-byte Internet Archive PDF is retained once at SHA-256
 `678edb439abdc43fa3db1148296d4b4f984cfd30cf750982465d16fdf97af8cc`.

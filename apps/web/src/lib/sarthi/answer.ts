@@ -1,6 +1,7 @@
 import type { GroundedSarthiAnswer, SarthiRequest, SarthiUnavailable } from "./contracts";
 import { answerGaneshaPreview } from "./ganesha-preview";
 import { answerGanapatiAtharvashirsha } from "./ganapatyatharvashirsha-preview";
+import { answerGaneshaPuranaPreview } from "./ganesha-purana-preview";
 import { answerDuttRamayanaPreview } from "./dutt-ramayana-preview";
 import { answerHeroPreview } from "./hero-preview";
 import { answerRamcharitmanasPreview } from "./ramcharitmanas-preview";
@@ -1246,6 +1247,9 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
 
   const ganapatiAtharvashirshaPreview = answerGanapatiAtharvashirsha(request);
   if (ganapatiAtharvashirshaPreview) return ganapatiAtharvashirshaPreview;
+
+  const ganeshaPuranaPreview = answerGaneshaPuranaPreview(request);
+  if (ganeshaPuranaPreview) return ganeshaPuranaPreview;
 
   const duttRamayanaPreview = answerDuttRamayanaPreview(request);
   if (duttRamayanaPreview) return duttRamayanaPreview;
