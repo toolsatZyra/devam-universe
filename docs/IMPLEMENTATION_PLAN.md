@@ -2341,6 +2341,182 @@ copyright term remains unresolved; the edition is therefore internal-only and
 absent from Search, Sarthi, API, vector, training, Atlas, and public-product
 lanes. The product-usable Hindi Vālmīki Rāmāyaṇa gap remains open.
 
+### Sarthi understanding and intellectual-apprenticeship sequence
+
+Checkpoint 2026-08-08 (design integration only): the approved understanding-layer
+pilot and six-thinker intellectual-apprenticeship research have been reconciled
+into `SARTHI_WISDOM_ARCHITECTURE.md` and `ARCHITECTURE.md`. The adopted direction
+is **disciplined synthesis under provenance**: operationally distinguish exact
+retrieval, source-grounded explanation, cross-source synthesis, scoped
+interpretation and practical or existential reflection; preserve primary fact,
+attributable interpretation, explicit Devam synthesis and contested reception;
+select only relevant lenses with explicit counterchecks; preserve material
+disagreement; and render a concise crystallized answer with expandable evidence
+and user agency.
+
+The six lenses are textual discipline, narrative-moral close reading, place and
+embodiment, scoped theological reasoning, staged pedagogy, and institutions,
+power and margins. They were studied through Bibek Debroy, Arshia Sattar, Diana
+L. Eck, Anantanand Rambachan, Swami Sarvapriyananda and Uma Chakravarti. Their
+names preserve research lineage; Sarthi must not imitate their voices, signature
+analogies, prose, personas or conclusions. Both research validators pass, but
+that proves package consistency only. No runtime, migration, database,
+knowledge-pack or source-vault implementation has run, and no quality gain is
+claimed.
+
+The implementation sequence below is incremental and reversible. Every phase
+must retain deterministic Panchang ownership, ritual safety, library expansion,
+rights lanes, source and edition identity, variants and uncertainty.
+
+#### Understanding Phase 0 — contracts and evaluation fixtures
+
+- **Inputs and rights prerequisites:** approved research packages; existing
+  product and wisdom contracts; metadata and lawful links only for
+  public-intellectual research; product-cleared evidence required before answer
+  evaluation.
+- **Implementation boundary:** documentation, question taxonomy, evidence roles,
+  lens-selection rules, answer contract, hard failures and held-out fixture only;
+  no production code, schema or corpus ingestion.
+- **Deliverables:** operational definitions for the five answer capabilities;
+  four-layer epistemic contract; six lens/countercheck contracts; disagreement
+  register; concise answer contract; frozen English/Hindi held-out set and
+  evaluator instructions.
+- **Acceptance:** fixtures are frozen before tuning; every question declares
+  required evidence roles, scope and critical failures; reviewers can distinguish
+  fact, attribution, synthesis and contestation.
+- **Evaluation and rollback:** structural validators pass; any item derived from
+  test answers is removed; a fixture that leaks answers or unlicensed material is
+  replaced before a run.
+- **Dependencies and risks:** representative reviewer recruitment, evidence
+  readiness and rights review; risks are English-accessible cohort bias, scope
+  leakage and rubric ambiguity.
+- **Not yet claimed:** no model learning, understanding performance, user benefit
+  or production readiness.
+
+#### Understanding Phase 1 — strong grounded-RAG baseline
+
+- **Inputs and rights prerequisites:** frozen product-cleared evidence packets,
+  current retrieval stack and the same admissible source universe planned for
+  later arms.
+- **Implementation boundary:** measure the strongest practical retrieval and
+  ordinary grounded synthesis before adding dossiers, lenses or thesis machinery.
+- **Deliverables:** versioned baseline outputs, evidence manifests, latency,
+  token/cost records and blinded per-dimension ratings in English and Hindi.
+- **Acceptance:** baseline answers are source-faithful, scoped, natural and
+  correction-capable; hard failures are reported separately rather than hidden
+  in an aggregate.
+- **Evaluation and rollback:** freeze baseline and reviewer calibration; if
+  evidence is incomplete or reviewer agreement is inadequate, repair the packet
+  or anchors and rerun without advancing.
+- **Dependencies and risks:** model/runtime authorization, reviewer panel and
+  frozen source packets; risks are a deliberately weak straw baseline, citation
+  volume bias and style/length confounding.
+- **Not yet claimed:** no complex reasoning structure is necessary and no
+  treatment is better than grounded RAG.
+
+#### Understanding Phase 2 — offline six-lens prototype
+
+- **Inputs and rights prerequisites:** Phase 1 packets plus abstract operations,
+  counterchecks and fresh neutral Devam examples created only from
+  product-cleared evidence.
+- **Implementation boundary:** offline, reversible explicit prompts or structured
+  intermediate records; no public-intellectual corpus fine-tuning, voice
+  imitation, production integration, migration or user data.
+- **Deliverables:** question classifier, relevant-lens selector, evidence-role
+  coverage record, disagreement record, candidate decisive distinction and
+  concise renderer; optional `attributed_interpretive_viewpoint` represented as a
+  research projection before any schema decision.
+- **Acceptance:** each selected lens emits its countercheck; unused lenses remain
+  absent; no six-section answer laundry list; no hidden chain-of-thought; every
+  material clause maps to an admissible evidence role.
+- **Evaluation and rollback:** deterministic contract checks and unscored dry
+  runs only; delete unused fields or any operation that introduces flattening,
+  unsupported certainty, rights leakage or imitation.
+- **Dependencies and risks:** Phase 0 contracts, Phase 1 baseline and rights-safe
+  authoring; risks are orchestration complexity, latency and false confidence
+  from structured output.
+- **Not yet claimed:** prototype coherence does not establish answer quality or
+  production fitness.
+
+#### Understanding Phase 3 — blinded same-model ablation
+
+- **Inputs and rights prerequisites:** frozen held-out questions, identical model,
+  retrieval stack, evidence packet, prompt budget and rendering conditions across
+  baseline and treatment arms.
+- **Implementation boundary:** compare grounded RAG with individual lenses,
+  combinations, dossier support and thesis/verification only where registered;
+  thinker similarity is never a metric.
+- **Deliverables:** paired blinded ratings, per-operation ablations, written
+  rationales, critical-failure counts, reviewer disagreement and separate
+  English/Hindi results.
+- **Acceptance:** a candidate materially improves source/scope fidelity, evidence
+  integration, decisive distinction, counterposition handling, historical/social
+  calibration, usefulness or correction without increasing any critical failure;
+  zero tolerance applies to fabrication, coercive authority, rights breach and
+  recognizable imitation.
+- **Evaluation and rollback:** retain only operations that beat the strong
+  baseline under preregistered thresholds; simplify to the lower-complexity arm
+  when gains do not survive ablation; preserve retirement tombstones.
+- **Dependencies and risks:** qualified blinded reviewers and adequate
+  inter-rater calibration; risks are evaluator ideology, low power, contamination
+  and charisma masquerading as insight.
+- **Not yet claimed:** a statistically improved research arm is not broad Sarthi
+  wisdom, cultural legitimacy or production acceptance.
+
+#### Understanding Phase 4 — limited product integration
+
+- **Inputs and rights prerequisites:** only operations accepted in Phase 3,
+  product-cleared evidence and capability-specific approval.
+- **Implementation boundary:** feature-flagged, observable and reversible routes
+  for named low- or bounded-impact question families; deterministic, exact and
+  ritual routes retain precedence.
+- **Deliverables:** versioned capability registry, independent flags for dossier,
+  lens/operator and thesis-verification components, structured audit summaries,
+  correction path and rollback procedure.
+- **Acceptance:** the released route reproduces the accepted evidence and quality
+  boundary, preserves attribution and disagreement, meets latency/cost limits and
+  adds no hard failure in monitored acceptance.
+- **Evaluation and rollback:** disable the affected layer without disabling
+  ordinary grounded retrieval; retire the capability if evidence, rights,
+  reviewer scope or measured benefit degrades.
+- **Dependencies and risks:** explicit implementation authorization, security and
+  privacy review, production evaluation and monitoring; risks are scope creep,
+  model drift, stale viewpoints and users mistaking companionship for authority.
+- **Not yet claimed:** no general understanding, guru authority or coverage beyond
+  the named evaluated task family.
+
+#### Understanding Phase 5 — curriculum and perspective expansion
+
+- **Inputs and rights prerequisites:** consent- and rights-safe, attributable
+  research across non-Advaita sampradayas, ritual practitioners, vernacular and
+  regional scholarship, Dalit/Bahujan/Adivasi voices, women
+  practitioner-theologians, material and art historians, oral/performance
+  traditions, and Jain/Buddhist/Sikh/interreligious perspectives.
+- **Implementation boundary:** expand viewpoints and evaluations one bounded
+  lineage, language, region or method at a time; discovery leads remain separate
+  from cleared learning assets.
+- **Deliverables:** gap register, attributable viewpoint records, new neutral
+  Devam-authored units, affected-community review and held-out transfer sets.
+- **Acceptance:** no individual is treated as representing a whole caste, gender,
+  region, language or sampradaya; insider theology is paired with relevant
+  historical and marginalized evidence, and external critique with practitioner
+  agency and regional evidence.
+- **Evaluation and rollback:** rerun the strong-baseline ablation for every added
+  operation or population; retire material whose rights, provenance, scope or
+  transfer benefit fails.
+- **Dependencies and risks:** lawful access, multilingual expertise, consent and
+  reviewer availability; risks are token representation, translation loss,
+  popularity bias and extraction from living communities.
+- **Not yet claimed:** cohort expansion is not civilizational representativeness,
+  exhaustive coverage or quality proof.
+
+Status after this documentation checkpoint:
+
+- `DESIGN INTEGRATED`;
+- `IMPLEMENTATION NOT YET RUN`;
+- `QUALITY IMPROVEMENT NOT YET ESTABLISHED`; and
+- `RIGHTS CLEARANCE REMAINS MATERIAL-SPECIFIC`.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.

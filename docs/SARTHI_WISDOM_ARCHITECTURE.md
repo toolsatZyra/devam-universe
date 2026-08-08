@@ -49,6 +49,137 @@ of truth. A source can be uncertain; a reviewed synthesis can be useful while
 remaining Devam-derived; and a generated response never becomes knowledge merely
 because it sounds insightful.
 
+## Operational understanding capability
+
+Sarthi's target is **bounded understanding performance**, not an unqualified
+philosophical claim that an LLM literally understands. The capability is
+operational and must be evaluated separately for a named question family,
+evidence snapshot, language, model configuration and reviewer population.
+
+The product distinguishes five answer capabilities:
+
+| Capability | Required operation | Claim boundary |
+|---|---|---|
+| exact retrieval | identify and return the applicable source, edition, passage or reviewed claim | says what a bounded record supports; does not interpret beyond it |
+| source-grounded explanation | place evidence in its textual, narrative, doctrinal, historical or practice context | explains a source without presenting one reading as every reading |
+| cross-source synthesis | relate complementary evidence roles and identify a defensible governing proposition | produces an explicitly Devam-authored synthesis, not a new source fact |
+| scoped interpretation | compare attributable readings within declared text, tradition, time, place and practice boundaries | retains attribution, counterpositions and non-consensus status |
+| practical or existential reflection | offer a bounded implication or option after applicability, affected-party and authority checks | preserves user agency and never becomes guru, ritual, clinical or professional authority |
+
+For questions above exact retrieval, Sarthi must classify the literal request,
+treat any deeper question as a corrigible hypothesis, declare the evidence roles
+needed, select only relevant analytic lenses, compare levels of analysis, find
+the decisive distinction, test material counterexamples and disanalogies, and
+compress the result into a natural answer. A citation list without this work is
+not understanding performance; a fluent thesis without evidence and scope is
+also a failure.
+
+## Four epistemic layers
+
+Every high-level answer must preserve four layers without silently promoting
+one into another:
+
+1. **Source-text or primary-evidence fact**: what a named source, edition,
+   passage, practice observation, inscription or deterministic result supports.
+2. **Attributable interpretation**: what a named translator, commentator,
+   scholar, practitioner, lineage or public intellectual argues within a
+   declared scope.
+3. **Devam synthesis**: a fresh, explicitly labelled, versioned inference made
+   by comparing admissible evidence and reviewed counterpositions.
+4. **Contested or non-consensus reception**: a material objection, alternate
+   reading, disciplinary criticism, excluded experience or tradition-specific
+   disagreement.
+
+Public intellectuals remain subordinate interpretive evidence. Popularity,
+fluency, charisma or broad public access cannot turn an interpretation into
+scripture, historical fact, tradition-wide consensus or Sarthi's unqualified
+voice.
+
+## Six-lens intellectual apprenticeship
+
+The approved intellectual-apprenticeship research supplies six selectable
+reasoning operations. The named people identify the studied method and its
+provenance; they are not personas, answer authorities or mandatory sections.
+
+| Lens | Operation | Required countercheck |
+|---|---|---|
+| textual discipline, studied through Bibek Debroy | establish source, edition, passage context, translation status, abridgment and material variants before synthesis | source proximity does not erase translation choices or supply historical and social context |
+| narrative-moral close reading, studied through Arshia Sattar | examine character, plot, voice, silence, difficult episodes, alternate tellings and unresolved moral tension | literary insight is not automatically philology, history, ritual authority or consensus |
+| place, practice and embodiment, studied through Diana L. Eck | connect text and symbol to geography, pilgrimage, image, body, calendar, ritual, community and plural encounter | sacred geography is not exclusive political, archaeological or historicity proof; access and excluded geographies remain visible |
+| scoped theological reasoning, studied through Anantanand Rambachan | declare sampradaya and source hierarchy; make doctrine-to-ethics inference bridges explicit and contestable | constructive theology is not a discovered source fact or pan-Hindu conclusion; rival lineages, history and affected communities must be heard |
+| staged pedagogy, studied through Swami Sarvapriyananda | diagnose the confusion, define terms, compare rival positions fairly, use a bounded analogy, answer the strongest objection and return to the thesis | clarity and analogy do not validate metaphysics or science; the analogy's break point and independent evidence must be stated |
+| institutions, power and margins, studied through Uma Chakravarti | separate normative prescription from historical practice and trace caste, gender, class, labour, kinship, institution, access and excluded testimony | power analysis must remain period-, region- and evidence-scoped and must not erase devotion, agency, theology or archive limits |
+
+Lens selection is question-driven. Exact retrieval may require none; a textual
+variant question may require only textual and narrative lenses; a festival,
+social-history or consequential reflection may require several. A six-part
+laundry list that does not resolve the user's question fails the contract.
+
+Productive disagreement is a feature, not noise to average away. The system
+must preserve textual fidelity versus inevitable interpretation; unity versus
+plurality; metaphysics versus historical or empirical evidence; internal
+theological reform versus external social-historical critique; pedagogical
+clarity versus false closure; sacred geography versus political,
+archaeological or exclusionary overreach; and devotional meaning versus power
+reductionism. When disagreement changes the answer, render attributed
+alternatives or reduce scope rather than manufacture consensus.
+
+## Natural answer contract
+
+The default high-level answer is concise and may draw from this repertoire:
+
+1. a crystallized answer;
+2. the decisive distinction;
+3. two or three supporting connections;
+4. one material alternative, uncertainty or limit; and
+5. a practical implication or reflective option that preserves user agency.
+
+This is not a rigid five-section template. Citations remain expandable rather
+than appended to every sentence, but attribution and evidence become visible
+when a claim is materially contested, lineage-specific, historically
+contentious, consequential or explicitly requested. A short "why Sarthi says
+this" view may expose evidence roles, assumptions, variants and boundaries,
+never hidden chain-of-thought.
+
+## Attributable interpretive viewpoint lane
+
+The design admits a compact `attributed_interpretive_viewpoint` research record
+without requiring a migration yet. It records interpreter identity and role;
+tradition, text, edition, time, place and practice scope; typed claim units;
+quotation, paraphrase or Devam-synthesis status; evidence references and
+explicit inference bridges; counterpositions and exclusions; certainty,
+applicability and rights lane; transferable operations; non-transferable
+stylistic or personal features; and review, version and retirement metadata.
+
+This record is subordinate to primary evidence and should reuse the existing
+source, claim, evidence, relationship and applicability abstractions wherever
+they are sufficient. It differs from a `reviewed_pattern_hypothesis`: a
+viewpoint preserves one attributable interpretive position and learning
+lineage, while a pattern hypothesis proposes a cross-case recurrence with
+counterexamples and a retirement rule. Neither becomes scripture, source text,
+tradition-wide consensus or automatically generated product knowledge.
+
+## Rights-safe apprenticeship and non-imitation
+
+Intellectual apprenticeship means extracting and evaluating abstract reasoning
+operations, then creating fresh, neutrally written Devam examples from
+product-cleared primary evidence. It does not mean corpus training or persona
+transfer.
+
+The design prohibits scraping or ingesting complete copyrighted books,
+articles, podcasts, lectures, subtitles or transcripts merely because they are
+publicly accessible; treating a public URL or purchased copy as training
+permission; fine-tuning or distilling a recognizable voice; prompting Sarthi to
+"answer like" a named person; reproducing signature phrases, analogies or
+cadence; representing inferred internal reasoning as the person's reasoning;
+and storing or requiring hidden chain-of-thought.
+
+Permitted inputs remain bibliographic metadata, lawful links, appropriately
+licensed or product-cleared excerpts, attributable research notes, abstract
+reasoning operations, fresh Devam-authored examples, and concise operational
+summaries with structured provenance. Rights clearance is material- and
+use-specific.
+
 ## Lean runtime architecture
 
 ```text
@@ -234,6 +365,21 @@ Evaluate separately:
 - actionability and proportion; and
 - concise companion quality, latency and cost.
 
+For high-level understanding, the evaluation additionally reports source and
+scope fidelity; separation of fact, attribution, synthesis and contestation;
+relevant breadth without irrelevant display; quality of the decisive
+distinction; variants and counterpositions; historical and social calibration;
+practical usefulness and user agency; concision and naturalness; correction and
+abstention quality; and rights and provenance compliance.
+
+Critical failures include fabricated or misrepresented sources;
+interpretations presented as scripture or consensus; silent universalization
+of school, edition, period, region, caste or practice; unsafe guru, ritual,
+medical, legal or psychological authority; erasure of caste or gender harm;
+dismissal of devotional agency without evidence; copyright or content-policy
+violations; and recognizable imitation of a person. Hard failures are reported
+separately and cannot be averaged away by fluency or aggregate preference.
+
 Hard failures are never hidden by an aggregate score. LLM judges can help triage
 but cannot be the sole promotion authority. Cases and scenarios must control for
 verbosity, warmth and confident rhetoric.
@@ -304,3 +450,14 @@ The research artifacts and this integration decision are reviewed in
 status does not promote cases, patterns, outcome learning, argument graphs,
 causal models, multi-agent debate or a native graph database. Each remains an
 optional experiment with a deletion rule.
+
+The approved understanding-layer and intellectual-apprenticeship packages at
+`research/sarthi-artificial-wisdom/understanding-layer-pilot/` and
+`research/sarthi-artificial-wisdom/intellectual-apprenticeship-round-1/` refine
+this design. Their validators establish package consistency only. The current
+status is:
+
+- **DESIGN INTEGRATED**;
+- **IMPLEMENTATION NOT YET RUN**;
+- **QUALITY IMPROVEMENT NOT YET ESTABLISHED**; and
+- **RIGHTS CLEARANCE REMAINS MATERIAL-SPECIFIC**.

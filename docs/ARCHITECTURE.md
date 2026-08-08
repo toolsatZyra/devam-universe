@@ -39,6 +39,45 @@ population. Devam retains the lean Postgres architecture below unless a
 same-model, same-evidence experiment proves that another component materially
 improves a named task family.
 
+The approved understanding and intellectual-apprenticeship design calls the
+target capability **disciplined synthesis under provenance**. It operationally
+separates exact retrieval, source-grounded explanation, cross-source synthesis,
+scoped interpretation, and practical or existential reflection. It also keeps
+four epistemic layers distinct: primary evidence, attributable interpretation,
+explicit Devam synthesis, and contested or non-consensus reception. This is a
+testable capability contract, not a claim that an LLM literally understands in
+an unqualified philosophical sense.
+
+For higher-level questions, the experimental planner may select among six
+reasoning lenses: textual discipline; narrative-moral close reading; place,
+practice and embodiment; scoped theological reasoning; staged pedagogy; and
+institutions, power and margins. Each lens carries a required countercheck, and
+only question-relevant lenses run. They are inspectable operations studied
+through attributable intellectual lineages, not six services, six answer
+sections, six personas, or a consensus engine. Material disagreement remains
+visible.
+
+An `attributed_interpretive_viewpoint` is therefore a proposed compact research
+projection over existing source, claim, evidence, relationship and
+applicability records, not a new database requirement. It preserves who argued
+what, in which scope, through which evidence and inference bridge, with which
+counterpositions, exclusions, rights and review state. It is distinct from a
+cross-case `reviewed_pattern_hypothesis` and subordinate to primary evidence.
+
+The normal answer contract remains natural: crystallized answer, decisive
+distinction, two or three supporting connections, a material limit or
+alternative, and an agency-preserving implication where supported. Evidence is
+expandable, while materially contested, lineage-specific, historical or
+consequential claims remain visibly attributed. No hidden chain-of-thought is
+stored or required.
+
+No runtime or schema change follows from this design alone. Production adoption
+requires a strong grounded-RAG baseline and a held-out, blinded, same-model,
+same-evidence ablation. Public-intellectual corpora, recognizable styles,
+signature analogies and copyrighted long-form material are prohibited learning
+targets; only rights-cleared evidence, attributable research notes, abstract
+operations and fresh neutral Devam examples are eligible.
+
 The model never invents Panchang calculations. A deterministic calendar service produces location/tradition-aware facts; Sarthi explains them.
 
 Sarthi uses a thin, inspectable request planner ahead of the existing exact,
