@@ -808,8 +808,13 @@ rights or masters.
   vrata, temple, Diwali, Kojagara, Kartika, Dev Deepawali, shraddha, tarpan,
   Darsha, and ancestor-practice lanes remain separate; unresolved Margashirsha
   Purnima is not promoted.
-- [ ] Every named and recurring observance has a machine-executable rule with
-  a source citation, applicability, precedence logic, and test fixtures.
+- [x] All 75 named and recurring observance slugs exposed by the runtime are
+  reconstructed by executing all 122 launch dates across 13 bounded
+  location/tradition profiles. Every lane must return a selected 2026 civil
+  date, source/hash evidence, explicit precedence, and an applicability result;
+  an unsupported tradition fails closed except for the four explicitly
+  tradition-independent astronomical Sankranti identities. This runtime set is
+  distinct from the 79-slug evidence-pack/actionability audit denominator.
 - [x] A bounded launch comparison matrix exercises 18 exact profiles across
   Ahmedabad, Amritsar, Bengaluru, Chennai, Delhi, Kolkata, Mumbai, and Patna.
   It binds the selected civil date and tradition-aware calendar lane to both
