@@ -10,6 +10,7 @@ import { searchRamcharitmanasPreview } from "../sarthi/ramcharitmanas-preview";
 import { searchHeroStructures } from "./hero-search";
 import { searchUserCompleteRitualContent } from "./ritual-content-search";
 import { searchReviewedRamayanaReflection } from "../sarthi/ramayana-reflection";
+import { searchDevimahatmyaSemanticGraph } from "./devimahatmya-semantic-search";
 
 export type LibrarySearchResult = {
   id: string;
@@ -110,9 +111,11 @@ export async function searchLibrary(
 ): Promise<LibrarySearchResponse> {
   const ritualResults = searchUserCompleteRitualContent(query, languageCode);
   const ramayanaReflectionResults = searchReviewedRamayanaReflection(query, languageCode);
+  const semanticGraphResults = searchDevimahatmyaSemanticGraph(query, languageCode);
   const compactResults = ritualResults.length > 0
     ? ritualResults
     : [
+        ...semanticGraphResults,
         ...searchGaneshaPreview(query, languageCode),
         ...searchRamcharitmanasPreview(query, languageCode),
         ...(ramayanaReflectionResults.length > 0 ? ramayanaReflectionResults : searchHeroStructures(query, languageCode)),

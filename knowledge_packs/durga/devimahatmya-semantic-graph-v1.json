@@ -1,0 +1,116 @@
+{
+  "contract": "DEVAM_SOURCE_BOUNDED_SEMANTIC_GRAPH_V1",
+  "pack_id": "durga-devimahatmya-semantic-graph-v1",
+  "source_boundary": {
+    "work_slug": "markandeya-purana",
+    "bounded_text": "devimahatmya_chapters_81_93",
+    "source_profile_id": "devimahatmya-wikisource-sanskrit-v1",
+    "provider": "Sanskrit Wikisource",
+    "source_sha256": "c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
+    "rights_lane": "derivative_allowed",
+    "publication_state": "published",
+    "scope": "this_exact_three_revision_source_universe_only",
+    "claim_ceiling": "source_bounded_narrative_index_not_universal_theology_history_or_ritual_authority"
+  },
+  "existing_subject": {
+    "slug": "devi-mahatmya",
+    "canonical_name": "Devī Māhātmya",
+    "required_publication_state": "published"
+  },
+  "entities": [
+    {
+      "slug": "madhu-kaitabha",
+      "entity_kind": "narrative_pair",
+      "canonical_name": "Madhu and Kaiṭabha",
+      "description": "A paired narrative identity indexed only within the exact pinned Devī Māhātmya source universe.",
+      "names": [
+        {"name": "Madhu and Kaiṭabha", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "मधु और कैटभ", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "मधुकैटभ", "language_code": "sa", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true}
+      ]
+    },
+    {
+      "slug": "mahishasura",
+      "entity_kind": "narrative_figure",
+      "canonical_name": "Mahiṣāsura",
+      "description": "A narrative figure indexed only within the exact pinned Devī Māhātmya source universe.",
+      "names": [
+        {"name": "Mahiṣāsura", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "महिषासुर", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "महिषासुर", "language_code": "sa", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true}
+      ]
+    },
+    {
+      "slug": "shumbha",
+      "entity_kind": "narrative_figure",
+      "canonical_name": "Śumbha",
+      "description": "A narrative figure indexed only within the exact pinned Devī Māhātmya source universe.",
+      "names": [
+        {"name": "Śumbha", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "शुम्भ", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "शुम्भ", "language_code": "sa", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true}
+      ]
+    },
+    {
+      "slug": "nishumbha",
+      "entity_kind": "narrative_figure",
+      "canonical_name": "Niśumbha",
+      "description": "A narrative figure indexed only within the exact pinned Devī Māhātmya source universe.",
+      "names": [
+        {"name": "Niśumbha", "language_code": "en", "script_code": "Latn", "name_kind": "preferred", "is_preferred": true},
+        {"name": "निशुम्भ", "language_code": "hi", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true},
+        {"name": "निशुम्भ", "language_code": "sa", "script_code": "Deva", "name_kind": "preferred", "is_preferred": true}
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_slug": "madhu-kaitabha-episode",
+      "object_slug": "madhu-kaitabha",
+      "predicate": "contains_narrative_of",
+      "evidence": {"citation_ordinal": 68, "chapter": 81, "verse": 68, "source_ordinal": 68, "source_span_sha256": "9674ccdc9085abf16771972b1a0baf50062d4fb67a85864a5a1330d105d9ce3e"},
+      "statements": {
+        "en": "Within this exact provider-revision boundary, Devī Māhātmya chapter 81 presents the narrative of the Goddess acting so that Madhu and Kaiṭabha might be slain.",
+        "hi": "इस सटीक प्रदाता-संशोधन सीमा में देवीमाहात्म्य का अध्याय 81 देवी द्वारा मधु और कैटभ के वध की दिशा में किए गए कार्य का आख्यान प्रस्तुत करता है।"
+      }
+    },
+    {
+      "claim_slug": "mahishasura-episode",
+      "object_slug": "mahishasura",
+      "predicate": "contains_narrative_of",
+      "evidence": {"citation_ordinal": 189, "chapter": 83, "verse": 41, "source_ordinal": 189, "source_span_sha256": "0acdefb9b761bf80c8c2d9a31f26859889e3c67dcf77646e312284e4215acda3"},
+      "statements": {
+        "en": "Within this exact provider-revision boundary, Devī Māhātmya chapter 83 presents the Goddess's destruction of Mahiṣa together with his army and allies.",
+        "hi": "इस सटीक प्रदाता-संशोधन सीमा में देवीमाहात्म्य का अध्याय 83 देवी द्वारा महिष, उसकी सेना और उसके सहयोगियों के विनाश का आख्यान प्रस्तुत करता है।"
+      }
+    },
+    {
+      "claim_slug": "shumbha-episode",
+      "object_slug": "shumbha",
+      "predicate": "contains_narrative_of",
+      "evidence": {"citation_ordinal": 229, "chapter": 84, "verse": 37, "source_ordinal": 229, "source_span_sha256": "6942ec592593a86e4d6b94c5fddd009b9a90f79f720f42c473b2194f3269fbd4"},
+      "statements": {
+        "en": "Within this exact provider-revision boundary, Devī Māhātmya chapter 84 introduces the Goddess's renewed manifestation for the slaying of Śumbha.",
+        "hi": "इस सटीक प्रदाता-संशोधन सीमा में देवीमाहात्म्य का अध्याय 84 शुम्भ के वध के लिए देवी के पुनः प्रकट होने का आख्यान आरम्भ करता है।"
+      }
+    },
+    {
+      "claim_slug": "nishumbha-episode",
+      "object_slug": "nishumbha",
+      "predicate": "contains_narrative_of",
+      "evidence": {"citation_ordinal": 229, "chapter": 84, "verse": 37, "source_ordinal": 229, "source_span_sha256": "6942ec592593a86e4d6b94c5fddd009b9a90f79f720f42c473b2194f3269fbd4"},
+      "statements": {
+        "en": "Within this exact provider-revision boundary, Devī Māhātmya chapter 84 introduces the Goddess's renewed manifestation for the slaying of Niśumbha.",
+        "hi": "इस सटीक प्रदाता-संशोधन सीमा में देवीमाहात्म्य का अध्याय 84 निशुम्भ के वध के लिए देवी के पुनः प्रकट होने का आख्यान आरम्भ करता है।"
+      }
+    }
+  ],
+  "denials": {
+    "source_original_translation": false,
+    "identified_print_edition_or_critical_recension": false,
+    "all_devimahatmya_witnesses_or_shakta_traditions": false,
+    "festival_origin_or_ritual_authority": false,
+    "historical_or_empirical_claim": false,
+    "antagonist_names_used_as_labels_for_people_or_groups": false
+  }
+}

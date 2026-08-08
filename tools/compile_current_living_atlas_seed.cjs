@@ -6,7 +6,10 @@ const ROOT = path.resolve(__dirname, "..");
 const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
 const OUTPUT = process.argv[2]
   ? path.resolve(ROOT, process.argv[2])
-  : path.join(ROOT, "supabase/migrations/20260808070531_sync_current_living_atlas.sql");
+  : path.join(ROOT, "supabase/migrations/20260808174500_sync_current_living_atlas.sql");
+
+const SEMANTIC_NODE_SLUGS = ["madhu-kaitabha", "mahishasura", "shumbha", "nishumbha"];
+const SEMANTIC_EDGE_IDS = SEMANTIC_NODE_SLUGS.map((slug) => `devi-mahatmya-${slug}`);
 
 function loadAtlas() {
   const source = fs.readFileSync(ATLAS_SOURCE, "utf8");
@@ -65,18 +68,25 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 37 || worldEdges.length !== 45) {
+  if (gateways.length !== 4 || worldNodes.length !== 41 || worldEdges.length !== 49) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 41) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 45) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 45) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 49) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 45) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 49) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
       throw new Error(`Invalid Atlas edge ${edge.id}`);
+    }
+  }
+  for (const slug of SEMANTIC_NODE_SLUGS) {
+    const node = worldNodes.find((candidate) => candidate.id === slug);
+    const edge = worldEdges.find((candidate) => candidate.id === `devi-mahatmya-${slug}`);
+    if (!node || node.gatewayId !== "durga" || edge?.from !== "devi-mahatmya" || edge.to !== slug || edge.relation !== "contains narrative of") {
+      throw new Error(`Source-bounded Devimahatmya Atlas route is missing or invalid for ${slug}`);
     }
   }
 }
@@ -95,6 +105,8 @@ function buildMigration() {
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
+  const semanticNodeRows = SEMANTIC_NODE_SLUGS.map((slug) => `(${sqlText(slug)}, ${sqlText(slug)})`).join(",\n  ");
+  const semanticEdgeRows = SEMANTIC_NODE_SLUGS.map((slug, index) => `(${sqlText(SEMANTIC_EDGE_IDS[index])}, ${sqlText(slug)})`).join(",\n  ");
 
   return `-- Generated from apps/web/src/data/atlas.ts by
 -- tools/compile_current_living_atlas_seed.cjs.
@@ -137,6 +149,37 @@ on conflict (source_node_id, target_node_id, label) do update set
   rights_lane = excluded.rights_lane,
   publication_state = excluded.publication_state;
 
+with mapping(atlas_slug, entity_slug) as (values
+  ${semanticNodeRows}
+)
+update public.atlas_nodes atlas
+set entity_id = entity.id,
+    updated_at = now()
+from mapping
+join public.entities entity on entity.slug = mapping.entity_slug
+  and entity.publication_state = 'published'
+where atlas.slug = mapping.atlas_slug;
+
+with mapping(edge_source_id, object_slug) as (values
+  ${semanticEdgeRows}
+)
+update public.atlas_edges atlas_edge
+set relationship_id = relationship.id
+from mapping
+join public.atlas_nodes source_node on source_node.slug = 'devi-mahatmya'
+join public.atlas_nodes target_node on target_node.slug = mapping.object_slug
+join public.entities subject_entity on subject_entity.slug = 'devi-mahatmya'
+join public.entities object_entity on object_entity.slug = mapping.object_slug
+join public.relationships relationship
+  on relationship.subject_entity_id = subject_entity.id
+  and relationship.object_entity_id = object_entity.id
+  and relationship.predicate = 'contains_narrative_of'
+  and relationship.publication_state = 'published'
+where atlas_edge.source_node_id = source_node.id
+  and atlas_edge.target_node_id = target_node.id
+  and atlas_edge.label = 'contains narrative of'
+  and atlas_edge.visual->>'sourceId' = mapping.edge_source_id;
+
 do $$
 declare
   app_node_count integer;
@@ -155,11 +198,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 41 then
-    raise exception 'Expected 41 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> 45 then
+    raise exception 'Expected 45 app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 45 then
-    raise exception 'Expected 45 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> 49 then
+    raise exception 'Expected 49 app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1
@@ -184,6 +227,29 @@ begin
       and edge.label = 'Awadhi devotional telling'
   ) then
     raise exception 'Ramcharitmanas Atlas relationship is missing or misrouted';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    join public.entities entity on entity.id = atlas.entity_id and entity.slug = atlas.slug
+    where atlas.slug = any (array[${SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'durga'
+      and atlas.visual->>'evidenceBoundary' like '%revision 410281%'
+  ) <> 4 then
+    raise exception 'Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    join public.relationships relationship on relationship.id = edge.relationship_id
+    join public.entities subject on subject.id = relationship.subject_entity_id
+    join public.entities object on object.id = relationship.object_entity_id
+    where edge.visual->>'sourceId' = any (array[${SEMANTIC_EDGE_IDS.map(sqlText).join(", ")}])
+      and subject.slug = 'devi-mahatmya'
+      and object.slug = any (array[${SEMANTIC_NODE_SLUGS.map(sqlText).join(", ")}])
+      and relationship.predicate = 'contains_narrative_of'
+  ) <> 4 then
+    raise exception 'Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships';
   end if;
 end
 $$;

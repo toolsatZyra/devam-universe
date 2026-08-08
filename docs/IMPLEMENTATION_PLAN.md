@@ -2090,6 +2090,23 @@ edition or tradition completeness. The security advisor has two documented inten
 supplies real usage evidence. Current closure passes 89 web test files / 676
 tests, type-check, lint, and the production build.
 
+Checkpoint 2026-08-08 (source-bounded Devī Māhātmya semantic increment,
+local and unapplied): a compact product pack now models four narrative
+identities—Madhu and Kaiṭabha, Mahiṣāsura, Śumbha, and Niśumbha—with twelve
+preferred multilingual names, eight English/Hindi Devam claims, eight exact
+claim-evidence links, and four `contains_narrative_of` relationships. Every
+claim is pinned to one of three verified passages in the exact Sanskrit
+Wikisource source universe and explicitly denies source-original translation,
+universal theology, history, festival origin, ritual authority, and use of
+antagonist names as labels for people or groups. Exact Search can retrieve the
+four identities without hosted connectivity, and the Living Atlas now exposes
+four progressively revealed doorways whose edges bind to those evidence-linked
+semantic relationships. The current app composition is therefore four
+gateways, 41 world nodes, and 49 navigation edges; navigation counts remain
+distinct from semantic graph counts. Two forward-only migrations are prepared
+but have not been applied to hosted Supabase, and no source payload is copied
+into either the app or database migration.
+
 Checkpoint 2026-08-08 (Griffith English Ramayana product lane): the exact
 Project Gutenberg eBook 24869 structural TEI remains referenced in the
 content-addressed vault rather than copied into the app or Supabase. A bounded

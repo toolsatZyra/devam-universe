@@ -20,6 +20,10 @@ const reviewedDetailNodeIds = [
   "sankashti-chaturthi",
   "ananta-chaturdashi",
   "devi-mahatmya",
+  "madhu-kaitabha",
+  "mahishasura",
+  "shumbha",
+  "nishumbha",
   "shardiya-navaratri",
   "maha-ashtami",
   "saraswati-ayudha-puja",
@@ -51,7 +55,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(37);
+    expect(worldNodes).toHaveLength(41);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -117,7 +121,10 @@ describe("Living Atlas exploration data", () => {
   it("keeps the hosted Atlas migration byte-derived from the reviewed app graph", () => {
     const root = resolve(process.cwd(), "..", "..");
     const migrations = resolve(root, "supabase", "migrations");
-    const migrationName = readdirSync(migrations).find((name) => name.endsWith("_sync_current_living_atlas.sql"));
+    const migrationName = readdirSync(migrations)
+      .filter((name) => name.endsWith("_sync_current_living_atlas.sql"))
+      .sort()
+      .at(-1);
     expect(migrationName).toBeDefined();
 
     const directory = mkdtempSync(join(tmpdir(), "devam-atlas-migration-"));
@@ -129,8 +136,10 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 41 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 45 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 45 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 49 app-owned Living Atlas edges");
+      expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
+      expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
       expect(sql).not.toContain("alter function");
       expect(sql).not.toContain("grant execute");
     } finally {
