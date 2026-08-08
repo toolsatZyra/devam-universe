@@ -43,6 +43,16 @@ test("the Living Atlas exposes all four launch worlds and working map controls",
   await expect(scene).toHaveAttribute("data-view-scale", "1");
   await expect(scene).toHaveAttribute("data-view-x", "0");
 
+  await page.getByRole("button", { name: "Place thread" }).click();
+  const placeThread = page.getByRole("dialog", { name: "Ramayana place thread" });
+  await expect(placeThread.getByRole("heading", { name: "Ayodhya to Chitrakoot" })).toBeVisible();
+  await expect(placeThread).toContainText("not a literal route");
+  await placeThread.getByRole("button", { name: /Chitrakoot/ }).click();
+  await expect(scene).toHaveAttribute("data-view-scale", "1.45");
+  await expect(page.getByRole("heading", { name: "Chitrakoot", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Place thread" }).click();
+  await page.getByRole("button", { name: "Reset map view" }).click();
+
   const atlas = page.getByRole("region", { name: /Interactive Atlas/ });
   const box = await atlas.boundingBox();
   expect(box).not.toBeNull();

@@ -1,4 +1,4 @@
-import type { Gateway, WorldEdge, WorldNode } from "@/lib/domain/atlas";
+import type { Gateway, PlaceThread, WorldEdge, WorldNode } from "@/lib/domain/atlas";
 
 export const eras = ["Origins", "Epics", "Classical", "Medieval", "Living"] as const;
 
@@ -38,6 +38,37 @@ export const gateways: Gateway[] = [
     tone: "gold",
     position: { x: 76, y: 66 },
     threads: ["Lakshmi Puja", "Regional Deepavali", "Jain and Sikh traditions"],
+  },
+];
+
+export const placeThreads: PlaceThread[] = [
+  {
+    gatewayId: "ramayana",
+    title: "Ayodhya to Chitrakoot",
+    invitation: "Follow two living place traditions into the epic journey.",
+    evidenceBoundary: "This is an exploratory place thread, not a literal route, archaeological chronology, or claim that one geography settles every Ramayana telling.",
+    nodeIds: ["ayodhya", "chitrakoot"],
+  },
+  {
+    gatewayId: "ganesha",
+    title: "Maharashtra to Ujjain",
+    invitation: "Move between a pilgrimage constellation and a living city thread.",
+    evidenceBoundary: "Screen positions are not map coordinates, and this preview is not a complete route, temple guide, history, or ritual authority.",
+    nodeIds: ["ashtavinayak", "ujjain"],
+  },
+  {
+    gatewayId: "durga",
+    title: "Three Shakti place worlds",
+    invitation: "Compare Kamakhya, Kolkata, and Kanchipuram without flattening them.",
+    evidenceBoundary: "The three doorways preserve distinct regional, textual, historical, temple, and lineage contexts; proximity on screen implies no equivalence.",
+    nodeIds: ["kamakhya", "kolkata", "kanchipuram"],
+  },
+  {
+    gatewayId: "diwali",
+    title: "Many lights, distinct places",
+    invitation: "Cross Jain, Sikh, sacred-city, and Vaishnava place threads.",
+    evidenceBoundary: "Seasonal connection does not merge Pavapuri, Amritsar, Kashi, or Nathdwara into one festival, theology, calendar, or ritual practice.",
+    nodeIds: ["pavapuri", "amritsar", "kashi", "nathdwara"],
   },
 ];
 

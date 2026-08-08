@@ -1,6 +1,6 @@
 import type { AtlasWorld, Gateway, GatewayTone, WorldEdge, WorldNode } from "@/lib/domain/atlas";
 import type { Tables } from "@/lib/supabase/database.types";
-import { gateways as fallbackGateways, worldEdges as fallbackWorldEdges, worldNodes as fallbackWorldNodes } from "../../data/atlas";
+import { gateways as fallbackGateways, placeThreads, worldEdges as fallbackWorldEdges, worldNodes as fallbackWorldNodes } from "../../data/atlas";
 
 export type AtlasNodeRow = Pick<Tables<"atlas_nodes">, "id" | "slug" | "title" | "subtitle" | "node_kind" | "is_gateway" | "position" | "visual" | "reveal_at">;
 export type AtlasEdgeRow = Pick<Tables<"atlas_edges">, "id" | "source_node_id" | "target_node_id" | "label" | "visual">;
@@ -100,5 +100,5 @@ export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[]): Atla
     return { id: edge.id, from, to, relation: edge.label };
   });
   if (gateways.length !== 4 || new Set(gateways.map((item) => item.id)).size !== 4) throw new Error(`Expected four unique MVP gateways, received ${gateways.length}.`);
-  return { eras: ERAS, gateways, worldNodes, worldEdges };
+  return { eras: ERAS, gateways, placeThreads, worldNodes, worldEdges };
 }

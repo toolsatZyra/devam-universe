@@ -11,7 +11,7 @@ import {
   type PointerEvent as ReactPointerEvent,
   type WheelEvent as ReactWheelEvent,
 } from "react";
-import type { Gateway, WorldEdge, WorldNode } from "@/lib/domain/atlas";
+import type { Gateway, PlaceThread, WorldEdge, WorldNode } from "@/lib/domain/atlas";
 import type { RitualProcedureGuide } from "@/lib/domain/practice";
 import { canGuestAskSarthi, canGuestOpenGateway } from "@/lib/account/guest-preview";
 import styles from "./atlas-shell.module.css";
@@ -19,6 +19,7 @@ import styles from "./atlas-shell.module.css";
 type AtlasShellProps = {
   eras: readonly string[];
   gateways: Gateway[];
+  placeThreads: PlaceThread[];
   worldEdges: WorldEdge[];
   worldNodes: WorldNode[];
   account: { signedIn: boolean; label: string };
@@ -37,6 +38,7 @@ type IconName =
   | "minus"
   | "reset"
   | "motion"
+  | "place"
   | "user";
 
 type ViewTransform = { x: number; y: number; scale: number };
@@ -82,6 +84,7 @@ function Icon({ name, size = 20 }: { name: IconName; size?: number }) {
     minus: <path d="M5 12h14"/>,
     reset: <><path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6"/><path d="M4 4v4.6h4.6"/></>,
     motion: <><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 10 10M2 12A10 10 0 0 1 12 2M12 22A10 10 0 0 1 2 12M22 12a10 10 0 0 1-10 10"/></>,
+    place: <><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></>,
     user: <><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></>,
   };
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
@@ -95,7 +98,7 @@ const navigation: { label: string; icon: IconName; href: string }[] = [
   { label: "Library", icon: "library", href: "/search" },
 ];
 
-export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: AtlasShellProps) {
+export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNodes, account }: AtlasShellProps) {
   const [selectedId, setSelectedId] = useState<Gateway["id"]>("ramayana");
   const [focusedId, setFocusedId] = useState<string>("ramayana");
   const [activeEra, setActiveEra] = useState("Living");
@@ -107,6 +110,7 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [motionMode, setMotionMode] = useState<MotionMode>("gentle");
   const [motionMenuOpen, setMotionMenuOpen] = useState(false);
+  const [placeThreadOpen, setPlaceThreadOpen] = useState(false);
   const [signInPrompt, setSignInPrompt] = useState<"gateway" | "sarthi" | null>(null);
   const [view, setView] = useState<ViewTransform>({ x: 0, y: 0, scale: 1 });
   const [dragging, setDragging] = useState(false);
@@ -191,6 +195,10 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
       .filter((edge) => edge.from === focusedId || edge.to === focusedId)
       .map((edge) => edge.relation),
     [focusedId, worldEdges],
+  );
+  const selectedPlaceThread = useMemo(
+    () => placeThreads.find((thread) => thread.gatewayId === selected.id) ?? placeThreads[0],
+    [placeThreads, selected.id],
   );
   const conversationSubject = focusedNode?.label ?? selected.title;
 
@@ -335,6 +343,20 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
   };
 
   const resetView = () => commitView({ x: 0, y: 0, scale: 1 });
+  const focusPlaceNode = (nodeId: string) => {
+    const node = worldNodes.find((candidate) => candidate.id === nodeId);
+    const viewport = viewportRef.current;
+    if (!node || !viewport) return;
+    const scale = Math.max(1.45, node.revealAt);
+    commitView({
+      x: viewport.clientWidth / 2 - viewport.clientWidth * (node.position.x / 100) * scale,
+      y: viewport.clientHeight / 2 - viewport.clientHeight * (node.position.y / 100) * scale,
+      scale,
+    });
+    setActiveEra("Living");
+    setFocusedId(node.id);
+    setSelectedId(node.gatewayId);
+  };
   const chooseMotion = (mode: MotionMode) => {
     setMotionMode(mode);
     setMotionMenuOpen(false);
@@ -502,6 +524,17 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
               <Icon name="motion" size={15} />
               <span>{motionMode}</span>
             </button>
+            <button
+              className={styles.placeThreadToggle}
+              type="button"
+              aria-label="Place thread"
+              aria-expanded={placeThreadOpen}
+              aria-haspopup="dialog"
+              onClick={() => setPlaceThreadOpen((open) => !open)}
+            >
+              <Icon name="place" size={15} />
+              <span>Place thread</span>
+            </button>
             {motionMenuOpen && (
               <div className={styles.motionMenu} role="menu" aria-label="Motion preference">
                 {(["cinematic", "gentle", "still"] as const).map((mode) => (
@@ -516,6 +549,29 @@ export function AtlasShell({ eras, gateways, worldEdges, worldNodes, account }: 
                     <small>{mode === "cinematic" ? "Full atmosphere" : mode === "gentle" ? "Fades and direct motion" : "Ambient motion paused"}</small>
                   </button>
                 ))}
+              </div>
+            )}
+            {placeThreadOpen && selectedPlaceThread && (
+              <div className={styles.placeThreadPanel} role="dialog" aria-label={`${selected.title} place thread`}>
+                <p>Guided place thread</p>
+                <h2>{selectedPlaceThread.title}</h2>
+                <span>{selectedPlaceThread.invitation}</span>
+                <ol>
+                  {selectedPlaceThread.nodeIds.map((nodeId, index) => {
+                    const node = worldNodes.find((candidate) => candidate.id === nodeId);
+                    if (!node) return null;
+                    return (
+                      <li key={nodeId}>
+                        <button type="button" onClick={() => focusPlaceNode(nodeId)}>
+                          <small>{String(index + 1).padStart(2, "0")}</small>
+                          <strong>{node.label}</strong>
+                          <span>{node.kind}</span>
+                        </button>
+                      </li>
+                    );
+                  })}
+                </ol>
+                <small>{selectedPlaceThread.evidenceBoundary}</small>
               </div>
             )}
           </div>

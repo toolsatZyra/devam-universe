@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { searchLibrary } from "../lib/search/library-search";
-import { eras, gateways, worldEdges, worldNodes } from "./atlas";
+import { eras, gateways, placeThreads, worldEdges, worldNodes } from "./atlas";
 
 const reviewedDetailNodeIds = [
   "ramcharitmanas",
@@ -77,6 +77,22 @@ describe("Living Atlas exploration data", () => {
 
   it("gives every era a visible exploration path", () => {
     for (const era of eras) expect(worldNodes.some((node) => node.eras.includes(era))).toBe(true);
+  });
+
+  it("offers one evidence-bounded place thread for every hero world", () => {
+    expect(placeThreads.map((thread) => thread.gatewayId).sort()).toEqual(["diwali", "durga", "ganesha", "ramayana"]);
+    for (const thread of placeThreads) {
+      expect(thread.invitation.length).toBeGreaterThan(40);
+      expect(thread.evidenceBoundary.length).toBeGreaterThan(90);
+      expect(thread.nodeIds.length).toBeGreaterThanOrEqual(2);
+      expect(new Set(thread.nodeIds).size).toBe(thread.nodeIds.length);
+      for (const nodeId of thread.nodeIds) {
+        const node = worldNodes.find((candidate) => candidate.id === nodeId);
+        expect(node, `${thread.gatewayId} place thread references ${nodeId}`).toBeDefined();
+        expect(node?.gatewayId).toBe(thread.gatewayId);
+        expect(node?.eras).toContain("Living");
+      }
+    }
   });
 
   it("opens every new detail doorway into reviewed retrieval rather than an empty search", async () => {

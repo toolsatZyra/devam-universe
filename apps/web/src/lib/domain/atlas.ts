@@ -31,9 +31,18 @@ export type WorldEdge = {
   relation: string;
 };
 
+export type PlaceThread = {
+  gatewayId: Gateway["id"];
+  title: string;
+  invitation: string;
+  evidenceBoundary: string;
+  nodeIds: string[];
+};
+
 export type AtlasWorld = {
   eras: readonly string[];
   gateways: Gateway[];
+  placeThreads: PlaceThread[];
   worldNodes: WorldNode[];
   worldEdges: WorldEdge[];
 };
