@@ -7,7 +7,7 @@ describe("Sarthi Understanding Phase 1 baseline preparation", () => {
     const output = execFileSync(
       process.execPath,
       [resolve(process.cwd(), "scripts", "prepare-sarthi-phase1-baseline.mjs"), "--json"],
-      { cwd: process.cwd(), encoding: "utf8" },
+      { cwd: process.cwd(), encoding: "utf8", maxBuffer: 10 * 1024 * 1024 },
     );
     const prepared = JSON.parse(output) as {
       status: string;
@@ -23,6 +23,12 @@ describe("Sarthi Understanding Phase 1 baseline preparation", () => {
       expect(envelope).not.toHaveProperty("output_text");
       expect(envelope).toHaveProperty("packet_sha256");
       expect(envelope).toHaveProperty("artifact_sha256");
+      expect(envelope).toHaveProperty("evidence_material");
+      expect(envelope).toHaveProperty("evidence_material_sha256");
+    }
+    for (let index = 0; index < prepared.envelopes.length; index += 2) {
+      expect(prepared.envelopes[index].scenario_id).toBe(prepared.envelopes[index + 1].scenario_id);
+      expect(prepared.envelopes[index].evidence_material_sha256).toBe(prepared.envelopes[index + 1].evidence_material_sha256);
     }
   });
 });

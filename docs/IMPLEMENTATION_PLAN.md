@@ -2426,7 +2426,9 @@ admission. No answer, model call, scoring run or quality claim exists, so Phase 
 is not complete. The answer-free baseline specification and preparer now produce
 thirty blinded English/Hindi envelopes from the fifteen admitted pairs, pin the
 existing grounded-generation contract, require cost/latency/token records and
-human review, and keep external calls disabled pending explicit authorization.
+human review, materialize rights-safe reviewed evidence rather than metadata
+alone, reject raw/private/provider/quotation fields, and keep external calls
+disabled pending explicit authorization.
 
 - **Inputs and rights prerequisites:** frozen product-cleared evidence packets,
   current retrieval stack and the same admissible source universe planned for

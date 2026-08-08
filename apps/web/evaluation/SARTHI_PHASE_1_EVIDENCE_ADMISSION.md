@@ -28,7 +28,9 @@ packets, runtime authorization, and reviewer calibration.
 The answer-free run specification at `sarthi-phase1-baseline-spec-v1.json` now
 prepares thirty blinded English/Hindi envelopes from the fifteen admitted pairs.
 It pins the fixture, admission registry and existing generation contract, and it
-keeps external calls disabled. This preparation is not a baseline run.
+materializes identical bilingual evidence bytes from reviewed product fields
+only. Raw, provider, private and quotation fields are rejected. External calls
+remain disabled. This preparation is not a baseline run.
 
 The three scope mismatches are intentional blockers: the displayed Ganesha
 journey hymn has no matching source-aligned translation role; the Ayodhya pair

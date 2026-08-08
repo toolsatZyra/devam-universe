@@ -400,8 +400,10 @@ remain explicitly unadmitted, including three verified scope mismatches that
 cannot be fixed by relabelling candidate material. This is packet readiness only. The runtime,
 answer baseline, blinded review and quality comparison remain unrun.
 An answer-free Phase 1 run specification now prepares thirty blinded envelopes
-from the admitted pairs while keeping external calls disabled. It is execution
-preparation only, not evidence of runtime or answer quality.
+from the admitted pairs with identical English/Hindi reviewed-evidence bytes and
+no raw, private, provider or quotation fields, while keeping external calls
+disabled. It is execution preparation only, not evidence of runtime or answer
+quality.
 
 ## Accepted, pilot, deferred and rejected
 
