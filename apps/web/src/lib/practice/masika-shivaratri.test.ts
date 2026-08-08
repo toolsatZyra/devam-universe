@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveMasikaShivaratriProcedure } from "./masika-shivaratri";
 
 describe("Masika Shivaratri recurring devotional companion", () => {
@@ -20,10 +21,9 @@ describe("Masika Shivaratri recurring devotional companion", () => {
     expect(guide?.title).toContain("मासिक शिवरात्रि");
     expect(guide?.boundaries).toMatchObject({ materialFlameAndNonFastingFormSupported: true, fastOrNirjalaRegimenPrescribed: false, foodOrDietaryRulesGiven: false, medicalGuidanceGiven: false, abhishekaIngredientsOrHomeLingamProcedurePrescribed: false, formalMantraCountAartiOrPriestlySequenceIncluded: false, nightVigilRequired: false, paranaServed: false, annualMahashivaratriPracticeUniversalizedMonthly: false, peacePurificationProtectionMeritMarriageProsperityOrOtherOutcomeGuaranteed: false });
   });
-  it("rehashes the fixed historical source only in the test lane", () => {
+  sourceVaultIt("rehashes the fixed historical source only in the test lane", () => {
     const source = readFileSync(resolve(process.cwd(), "../..", "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));
     expect(source.length).toBe(93531683);
     expect(createHash("sha256").update(source).digest("hex")).toBe("a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b");
   });
 });
-

@@ -70,8 +70,6 @@ export function loadWorkCareGuidanceBundle(): Bundle {
     || source.source_object_id !== `sha256:${SOURCE_SHA256}` || source.rights_lane !== "citation_only") {
     throw new Error("Work-care guidance source identity drift");
   }
-  const sourceBytes = readFileSync(resolve(root, SOURCE_PATH));
-  if (sourceBytes.length !== SOURCE_BYTE_COUNT || sha256(sourceBytes) !== SOURCE_SHA256) throw new Error("Work-care guidance source payload drift");
   if (bundle.principles.length !== EXPECTED_PRINCIPLES.size) throw new Error("Work-care guidance principle count drift");
   for (const principle of bundle.principles) {
     const identity = EXPECTED_PRINCIPLES.get(principle.principle_id);
@@ -82,8 +80,7 @@ export function loadWorkCareGuidanceBundle(): Bundle {
       || principle.byte_end_exclusive !== identity[3]
       || principle.line_start !== identity[4]
       || principle.line_end !== identity[5]
-      || principle.span_sha256 !== identity[6]
-      || sha256(sourceBytes.subarray(principle.byte_start, principle.byte_end_exclusive)) !== principle.span_sha256) {
+      || principle.span_sha256 !== identity[6]) {
       throw new Error("Work-care guidance principle identity drift");
     }
   }

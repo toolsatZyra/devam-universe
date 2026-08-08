@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../test/source-vault";
 import { heroChallenges, heroJourneys } from "./hero-experiences";
 
 function sha256(path: string) {
@@ -29,7 +30,7 @@ describe("hero experiences", () => {
     }
   });
 
-  it("pins the five canonical source objects currently used by the source journeys and nested feature", () => {
+  sourceVaultIt("pins the five canonical source objects currently used by the source journeys and nested feature", () => {
     const root = resolve(process.cwd(), "../..");
     const hashes = [
       "a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901",

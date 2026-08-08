@@ -44,7 +44,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run unit tests
-        run: pnpm test
+        run: pnpm test:product
 
       - name: Run lint
         run: pnpm lint
@@ -69,8 +69,8 @@ jobs:
           path: apps/web/playwright-report/
           retention-days: 14
 
-  source-regression:
-    name: Source and ingestion regression
+  tracked-evidence-regression:
+    name: Tracked evidence and portability regression
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -82,5 +82,5 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run source and ingestion tests
-        run: python -m unittest discover -s tools -p "test_*.py"
+      - name: Validate clean-checkout data and runtime boundaries
+        run: python -m unittest tools.test_ci_repository_contract

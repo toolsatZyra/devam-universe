@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveHartalikaTeejProcedure } from "./hartalika-teej";
 
 describe("Hartalika Teej practice pack", () => {
@@ -19,7 +20,7 @@ describe("Hartalika Teej practice pack", () => {
     expect(guide?.boundaries).toMatchObject({ materialFreeAndNonFastingFormSupported: true, fastOrNirjalaRegimenPrescribed: false, foodDietaryOrMedicalGuidanceGiven: false, formalSankalpaKathaPujaMantraOfferingOrClosePrescribed: false, womenOnlyOrMarriedHouseholdOnlyParticipationUniversalized: false, clothingJewelleryMehendiSwingGiftSweetFlowerOrPurchaseRequired: false, marriageSpouseLongevityProgenyFamilyProsperityOrOtherOutcomeGuaranteed: false, gowriHabbaOrOtherTeejFestivalsMerged: false });
   });
 
-  it("rehashes the retained historical carrier without copying it", () => {
+  sourceVaultIt("rehashes the retained historical carrier without copying it", () => {
     const source = readFileSync(resolve(process.cwd(), "../..", "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));
     expect(source).toHaveLength(93531683);
     expect(createHash("sha256").update(source).digest("hex")).toBe("a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b");

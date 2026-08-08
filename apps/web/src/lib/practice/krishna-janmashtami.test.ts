@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveKrishnaJanmashtamiProcedure } from "./krishna-janmashtami";
 
 describe("Krishna Janmashtami Smarta and ISKCON practice pack", () => {
@@ -22,7 +23,7 @@ describe("Krishna Janmashtami Smarta and ISKCON practice pack", () => {
     expect(guide?.boundaries).toMatchObject({ smartaAndIskconLaneNotesSeparate: true, sharedDevotionalCoreWithoutRuleEquivalence: true, fastOrNirjalaRegimenPrescribed: false, foodOrDietaryRulesGiven: false, medicalGuidanceGiven: false, midnightVigilOrExactMuhurtaRequired: false, abhishekaAartiOfferingCradleMurtiDressingOrFootprintsRequired: false, dahiHandiParticipationOrHumanPyramidInstructed: false, paranaOrNextDayCloseServed: false, purchaseDonationDecorationNewClothesOrSpecialFoodRequired: false, smartaAndIskconRulesEquated: false, blessingProtectionMeritProsperityOrOtherOutcomeGuaranteed: false });
   });
 
-  it("rehashes the retained historical carrier without copying it into the app", () => {
+  sourceVaultIt("rehashes the retained historical carrier without copying it into the app", () => {
     const root = resolve(process.cwd(), "../..");
     const source = readFileSync(resolve(root, "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));
     expect(source).toHaveLength(93531683);

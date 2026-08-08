@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 import { resolveRadhaAshtamiProcedure } from "./radha-ashtami";
 
 describe("ISKCON Radha Ashtami participation", () => {
@@ -17,7 +18,7 @@ describe("ISKCON Radha Ashtami participation", () => {
     expect(guide?.familyPracticeNote).toContain("इस्कॉन");
     expect(guide?.boundaries).toMatchObject({ radharaniAppearanceAttributableTeachingSongPrayerKirtanAndSevaSupported: true, officialIskconTempleProgrammeParticipationSupported: true, materialFreeAndNonFastingHomeFormSupported: true, fastFoodDietaryOrMedicalGuidanceGiven: false, abhishekaAratiHomaDeityDressingOfferingKalashaFlowerOrFormalPujaPrescribed: false, bangaloreProgrammeTimeReusedForAnotherLocation: false, sponsorshipDonationPurchaseNewDressOrChappanBhogRequired: false, mercyPerfectionProgressProtectionMeritOrOtherOutcomeGuaranteed: false, allGaudiyaVaishnavaVaishnavaSmartaAndRegionalTraditionsEquated: false, allRadhaAshtamiTraditionsComplete: false });
   });
-  it("rehashes the retained historical carrier", () => {
+  sourceVaultIt("rehashes the retained historical carrier", () => {
     const source = readFileSync(resolve(process.cwd(), "../..", "source_vault/objects/sha256/a6/a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b"));
     expect(source).toHaveLength(93531683);
     expect(createHash("sha256").update(source).digest("hex")).toBe("a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b");

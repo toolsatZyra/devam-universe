@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 
 import {
   answerReviewedRamayanaReflection,
@@ -15,7 +16,7 @@ function sha256(value: Buffer) {
 }
 
 describe("reviewed Ramayana reflection", () => {
-  it("pins the bundle, complete three-source universe, exact source objects, byte spans and Dutt page evidence", () => {
+  sourceVaultIt("pins the bundle, complete three-source universe, exact source objects, byte spans and Dutt page evidence", () => {
     const root = resolve(process.cwd(), "../..");
     const pack = readFileSync(resolve(root, "knowledge_packs/ramayana/sundarakanda-hanuman-deliberation-v1.json"));
     expect(sha256(pack)).toBe(RAMAYANA_REFLECTION_PACK_SHA256);

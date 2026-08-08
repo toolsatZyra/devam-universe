@@ -2,12 +2,13 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { sourceVaultIt } from "../../test/source-vault";
 
 import { answerSarthiWithKnowledge } from "./grounded-answer";
 import { ANGER_CONFLICT_PACK_SHA256, loadAngerConflictBundle } from "./anger-conflict-guidance";
 
 describe("reviewed anger-conflict guidance", () => {
-  it("binds the exact reviewed bundle and all three fixed source spans", () => {
+  sourceVaultIt("binds the exact reviewed bundle and all three fixed source spans", () => {
     const bundle = loadAngerConflictBundle();
     expect(ANGER_CONFLICT_PACK_SHA256).toBe("54271cfe77f35d0c82ccb8912b9858149fe92fef79aac5f2db38ebd9f0bbd05d");
     expect(bundle.principles.map((principle) => [principle.literal_marker, principle.source_ordinal])).toEqual([

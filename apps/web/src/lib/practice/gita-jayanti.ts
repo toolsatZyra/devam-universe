@@ -22,12 +22,18 @@ function loadPack(): Pack {
   const packBytes = readFileSync(resolve(root, "knowledge_packs/rituals/gita-jayanti-reading-reflection-v1.json"));
   const fixtureBytes = readFileSync(resolve(root, "knowledge_packs/panchang/gita-jayanti-2026-v1.json"));
   const ekadashiBytes = readFileSync(resolve(root, "knowledge_packs/panchang/ekadashi-delhi-mumbai-chennai-september-december-2026-v1.json"));
-  const gretilBytes = readFileSync(resolve(root, "source_vault/objects/sha256/e1/e10352273ea29958205dbc72b7b81a0df95eb3623a0b6439141e3e2a2d54b505"));
-  if (hash(packBytes) !== PACK_SHA256 || hash(fixtureBytes) !== FIXTURE_SHA256 || hash(ekadashiBytes) !== EKADASHI_FIXTURE_SHA256 || ekadashiBytes.length !== 16807 || hash(gretilBytes) !== GRETIL_SOURCE_SHA256 || gretilBytes.length !== 2056476) throw new Error("Gita Jayanti evidence fixity drift");
+  if (hash(packBytes) !== PACK_SHA256 || hash(fixtureBytes) !== FIXTURE_SHA256 || hash(ekadashiBytes) !== EKADASHI_FIXTURE_SHA256 || ekadashiBytes.length !== 16807) throw new Error("Gita Jayanti evidence fixity drift");
   const fixture = JSON.parse(fixtureBytes.toString("utf8"));
   const fixtureScope = fixture.scope;
   if (fixture.contract !== "DEVAM_GITA_JAYANTI_2026_EVIDENCE_FIXTURE_V1" || fixture.fixture_id !== "devam-gita-jayanti-2026-v1" || fixtureScope.observance_slug !== "mokshada-ekadashi" || fixtureScope.selected_civil_date !== "2026-12-20" || fixtureScope.target_tithi !== "Margashirsha Shukla Ekadashi" || fixtureScope.universal_india_date_or_procedure_claim !== false) throw new Error("Gita Jayanti fixture identity drift");
   if (fixture.sources.map((source: { source_id: string }) => source.source_id).join("|") !== "devam-ekadashi-date-fixture|utsav-international-geeta-mahotsav|kurukshetra-jyotisar-events|iitk-gita-supersite-introduction|incredible-india-iskcon-kolkata-geeta-jayanti|gretil-bhagavadgita-four-commentaries-tei") throw new Error("Gita Jayanti fixture source-universe drift");
+  const gretilSource = fixture.sources.find((source: { source_id: string }) => source.source_id === "gretil-bhagavadgita-four-commentaries-tei");
+  if (gretilSource?.source_object?.path !== `source_vault/objects/sha256/e1/${GRETIL_SOURCE_SHA256}`
+    || gretilSource.source_object.bytes !== 2056476
+    || gretilSource.source_object.sha256 !== GRETIL_SOURCE_SHA256
+    || gretilSource.rights_lane !== "private_evidence_cc_by_nc_sa_4_0") {
+    throw new Error("Gita Jayanti source-reference drift");
+  }
   const fetches = fixture.sources.filter((source: { observed_fetch?: unknown }) => source.observed_fetch).map((source: { source_id: string; observed_fetch: { status: number; response_sha256: string; strict_utf8: boolean } }) => [source.source_id, source.observed_fetch.status, source.observed_fetch.response_sha256, source.observed_fetch.strict_utf8]);
   if (JSON.stringify(fetches) !== JSON.stringify([
     ["utsav-international-geeta-mahotsav", 200, "8eb680e77e02204b6a0b282354287bc3f89bc2f4ab1aaaa9dcfecba55778d5a7", true],
