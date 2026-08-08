@@ -2314,6 +2314,19 @@ completion must not be inferred from passing tests:
 - No production deployment, production-domain acceptance pass, analytics
   funnel, or public launch gate has been completed.
 
+Checkpoint 2026-08-08 (complete fixed 1927 Hindi Vālmīki Rāmāyaṇa carrier set):
+ten separately preserved Dwaraka Prasad Sharma volume PDFs now add 191,180,148
+unique bytes and 6,195 visually reviewed PDF pages to the source vault. Title
+and terminal inspection evidences the ordered seven-kāṇḍa structure across
+Bāla; split Ayodhyā; Araṇya; Kiṣkindhā; Sundara; split Yuddha; and split
+Uttara, with the final narrative close in volume 10 before separate parāyaṇa
+and māhātmya matter. This is structural coverage for the exact 1927 edition,
+not every recension, translation, commentary, witness, or Rāmāyaṇa tradition.
+The provider labels the upload CC BY-NC 3.0, while the translator's India
+copyright term remains unresolved; the edition is therefore internal-only and
+absent from Search, Sarthi, API, vector, training, Atlas, and public-product
+lanes. The product-usable Hindi Vālmīki Rāmāyaṇa gap remains open.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.
