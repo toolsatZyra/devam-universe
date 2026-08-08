@@ -6,7 +6,7 @@ const ROOT = path.resolve(__dirname, "..");
 const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
 const OUTPUT = process.argv[2]
   ? path.resolve(ROOT, process.argv[2])
-  : path.join(ROOT, "supabase/migrations/20260809133000_sync_current_living_atlas.sql");
+  : path.join(ROOT, "supabase/migrations/20260809150000_sync_current_living_atlas.sql");
 
 const DEVIMAHATMYA_NARRATIVE_CONSTELLATION_NODE_SLUGS = [
   "king-suratha", "merchant-samadhi", "sage-medhas", "medhas-hermitage-story-world", "mahamaya",
@@ -25,6 +25,17 @@ const DUTT_NARRATIVE_CONSTELLATION_NODE_SLUGS = [
   "rama", "sita", "lakshmana", "hanuman", "ravana", "sugriva", "king-janaka", "king-dasharatha",
   "mithila-story-world", "panchavati-story-world", "kishkindha-story-world", "lanka-story-world",
   "forest-exile", "sita-abduction", "rama-sugriva-alliance", "hanuman-ocean-crossing", "bridge-to-lanka", "return-to-ayodhya",
+];
+const SACRED_TIME_NODE_SLUGS = [
+  "krishna-janmashtami", "radha-ashtami", "vishwakarma-puja", "pitru-paksha", "karwa-chauth", "ahoi-ashtami",
+  "chhath-puja", "tulasi-vivah", "dev-deepawali", "kalabhairava-jayanti", "vivaha-panchami", "gita-jayanti",
+];
+const SACRED_TIME_EDGE_IDS = [
+  "sacred-time-to-janmashtami", "janmashtami-to-radha-ashtami", "sacred-time-to-vishwakarma", "vishwakarma-to-kolkata",
+  "sacred-time-to-pitru-paksha", "pitru-paksha-to-navaratri", "sacred-time-to-karwa-chauth", "karwa-chauth-to-ahoi",
+  "ahoi-to-diwali", "diwali-to-chhath", "diwali-to-tulasi-vivah", "sacred-time-to-dev-deepawali", "dev-deepawali-to-kashi",
+  "kashi-to-kalabhairava-jayanti", "sacred-time-to-vivaha-panchami", "vivaha-panchami-to-sita", "vivaha-panchami-to-rama",
+  "vivaha-panchami-to-mithila", "sacred-time-to-gita-jayanti",
 ];
 
 function loadAtlas() {
@@ -84,14 +95,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 84 || worldEdges.length !== 139) {
+  if (gateways.length !== 5 || worldNodes.length !== 96 || worldEdges.length !== 158) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 88) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 139) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 101) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 158) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 139) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 158) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
@@ -149,6 +160,21 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     const edge = worldEdges.find((candidate) => candidate.id === edgeId);
     if (!edge || typeof edge.evidenceBoundary !== "string" || edge.evidenceBoundary.length < 80) {
       throw new Error(`Evidence-bounded cross-world Atlas route is missing or invalid for ${edgeId}`);
+    }
+  }
+  if (!gateways.some((gateway) => gateway.id === "sacred-time" && gateway.tone === "violet")) {
+    throw new Error("Sacred Time gateway is missing or invalid");
+  }
+  for (const slug of SACRED_TIME_NODE_SLUGS) {
+    const node = worldNodes.find((candidate) => candidate.id === slug);
+    if (!node || node.gatewayId !== "sacred-time" || node.evidenceBoundary.length < 80) {
+      throw new Error(`Sacred Time node is missing or insufficiently bounded for ${slug}`);
+    }
+  }
+  for (const edgeId of SACRED_TIME_EDGE_IDS) {
+    const edge = worldEdges.find((candidate) => candidate.id === edgeId);
+    if (!edge?.sourceRef?.match(/^sha256:[0-9a-f]{64}#ritual-pack$/)) {
+      throw new Error(`Sacred Time edge is missing its immutable ritual-pack coordinate for ${edgeId}`);
     }
   }
 }
@@ -261,11 +287,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 88 then
-    raise exception 'Expected 88 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> ${allNodes.length} then
+    raise exception 'Expected ${allNodes.length} app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 139 then
-    raise exception 'Expected 139 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> ${worldEdges.length} then
+    raise exception 'Expected ${worldEdges.length} app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1
@@ -381,6 +407,20 @@ begin
     where edge.visual->>'sourceId' = any (array[${DISTINCT_DIWALI_EDGE_IDS.map(sqlText).join(", ")}])
   ) <> 5 then
     raise exception 'Distinct Diwali Atlas lanes are missing or misrouted';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${SACRED_TIME_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'sacred-time'
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${SACRED_TIME_NODE_SLUGS.length} or (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${SACRED_TIME_EDGE_IDS.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' ~ '^sha256:[0-9a-f]{64}#ritual-pack$'
+  ) <> ${SACRED_TIME_EDGE_IDS.length} then
+    raise exception 'Sacred Time Atlas lanes are missing, unbounded, or not source-addressed';
   end if;
 end
 $$;

@@ -1,7 +1,7 @@
-export type GatewayTone = "saffron" | "rose" | "moon" | "gold";
+export type GatewayTone = "saffron" | "rose" | "moon" | "gold" | "violet";
 
 export type Gateway = {
-  id: "ramayana" | "ganesha" | "durga" | "diwali";
+  id: "ramayana" | "ganesha" | "durga" | "diwali" | "sacred-time";
   title: string;
   devanagari: string;
   invitation: string;

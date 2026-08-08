@@ -10,6 +10,7 @@ const gatewayRows: NodeRow[] = [
   ["2", "ganesha", "Ganesha", "गणेश", "gateway", "moon"],
   ["3", "durga", "Durga", "दुर्गा", "gateway", "rose"],
   ["4", "diwali", "Diwali", "दीपावली", "gateway", "gold"],
+  ["5", "sacred-time", "Sacred Time", "कालचक्र", "gateway", "violet"],
 ].map(([id, slug, title, subtitle, kind, tone], index) => ({
   id,
   slug,
@@ -23,14 +24,15 @@ const gatewayRows: NodeRow[] = [
 })) as NodeRow[];
 
 describe("Supabase Atlas mapping", () => {
-  it("requires the exact four launch gateways including Diwali", () => {
+  it("requires the five reviewed gateways including Sacred Time", () => {
     const world = mapAtlasRows(gatewayRows, [] as EdgeRow[]);
-    expect(world.gateways.map((item) => item.id).sort()).toEqual(["diwali", "durga", "ganesha", "ramayana"]);
+    expect(world.gateways.map((item) => item.id).sort()).toEqual(["diwali", "durga", "ganesha", "ramayana", "sacred-time"]);
     expect(world.gateways.find((item) => item.id === "diwali")).toMatchObject({ tone: "gold", devanagari: "दीपावली" });
+    expect(world.gateways.find((item) => item.id === "sacred-time")).toMatchObject({ tone: "violet", devanagari: "कालचक्र" });
   });
 
-  it("fails closed when the database has not received the Diwali gateway", () => {
-    expect(() => mapAtlasRows(gatewayRows.slice(0, 3), [] as EdgeRow[])).toThrow("Expected four unique MVP gateways");
+  it("fails closed when the database has not received the Sacred Time gateway", () => {
+    expect(() => mapAtlasRows(gatewayRows.slice(0, 4), [] as EdgeRow[])).toThrow("Expected five unique MVP gateways");
   });
 
   it("uses the reviewed Unicode presentation when a restored database subtitle is corrupted", () => {

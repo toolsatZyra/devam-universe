@@ -91,6 +91,11 @@ function gatewayStory(id: Gateway["id"]) {
       story: "Travel through stories of return, courage, abundance, kinship, and many living traditions of light.",
       action: "Follow the lights",
     },
+    "sacred-time": {
+      eyebrow: "The living festival year",
+      story: "Move through the September-to-December sky by date, region, story, place, and living practice without flattening distinct traditions.",
+      action: "Enter sacred time",
+    },
   };
   return copy[id];
 }

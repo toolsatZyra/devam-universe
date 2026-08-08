@@ -29,13 +29,13 @@ function position(value: unknown): { x: number; y: number } {
 }
 
 function gateway(row: AtlasNodeRow): Gateway {
-  if (row.slug !== "ramayana" && row.slug !== "ganesha" && row.slug !== "durga" && row.slug !== "diwali") throw new Error(`Unexpected gateway slug: ${row.slug}`);
+  if (row.slug !== "ramayana" && row.slug !== "ganesha" && row.slug !== "durga" && row.slug !== "diwali" && row.slug !== "sacred-time") throw new Error(`Unexpected gateway slug: ${row.slug}`);
   const fallback = FALLBACK_GATEWAY_BY_ID.get(row.slug);
   if (!fallback) throw new Error(`${row.slug} has no reviewed gateway presentation.`);
   const visual = record(row.visual, `${row.slug} visual`);
   const tone = visual.tone;
   const threads = visual.threads;
-  if (tone !== "saffron" && tone !== "rose" && tone !== "moon" && tone !== "gold") throw new Error(`${row.slug} has an invalid tone.`);
+  if (tone !== "saffron" && tone !== "rose" && tone !== "moon" && tone !== "gold" && tone !== "violet") throw new Error(`${row.slug} has an invalid tone.`);
   if (typeof visual.invitation !== "string" || !Array.isArray(threads) || !threads.every((item) => typeof item === "string")) throw new Error(`${row.slug} has an invalid gateway presentation.`);
   return {
     id: row.slug,
@@ -63,7 +63,7 @@ function worldNode(row: AtlasNodeRow): WorldNode {
   const searchQuery = providedFieldCount === 0 ? fallback.searchQuery : visual.searchQuery;
   const evidenceBoundary = providedFieldCount === 0 ? fallback.evidenceBoundary : visual.evidenceBoundary;
   if (!Array.isArray(eras) || eras.length === 0 || !eras.every((item) => typeof item === "string" && ERAS.includes(item as typeof ERAS[number]))) throw new Error(`${row.slug} has invalid eras.`);
-  if (gatewayId !== "ramayana" && gatewayId !== "ganesha" && gatewayId !== "durga" && gatewayId !== "diwali") throw new Error(`${row.slug} has an invalid gateway.`);
+  if (gatewayId !== "ramayana" && gatewayId !== "ganesha" && gatewayId !== "durga" && gatewayId !== "diwali" && gatewayId !== "sacred-time") throw new Error(`${row.slug} has an invalid gateway.`);
   if (typeof summary !== "string" || typeof searchQuery !== "string" || typeof evidenceBoundary !== "string") throw new Error(`${row.slug} has incomplete exploration copy.`);
   return {
     id: row.slug,
@@ -110,6 +110,6 @@ export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[]): Atla
       ...(sourceRef ? { sourceRef } : {}),
     };
   });
-  if (gateways.length !== 4 || new Set(gateways.map((item) => item.id)).size !== 4) throw new Error(`Expected four unique MVP gateways, received ${gateways.length}.`);
+  if (gateways.length !== 5 || new Set(gateways.map((item) => item.id)).size !== 5) throw new Error(`Expected five unique MVP gateways, received ${gateways.length}.`);
   return { eras: ERAS, gateways, placeThreads, worldNodes, worldEdges };
 }

@@ -65,6 +65,12 @@ The MVP is a broad civilizational library and Atlas with four deep hero universe
 
 It also includes the complete September-December Panchang and ritual layer, covering every relevant tithi, festival, weekday observance, timing, regional variation, procedure, materials, substitutions, minimum/standard/elaborate forms, and source basis.
 
+The Living Atlas exposes that cross-cutting calendar layer as **Sacred Time**, a
+fifth master constellation rather than a Panchang widget. It lets a user travel
+between the four hero universes and separately scoped observances by date,
+region, story and place. Calendar adjacency is navigation, never proof of a
+shared origin, theology, ritual authority or universal Indian sequence.
+
 For each completed festival or ritual lane, the user must be able to learn what
 applies to them, why it matters and which source-labelled stories explain it,
 what people in that context typically do and when, and what they can do step by

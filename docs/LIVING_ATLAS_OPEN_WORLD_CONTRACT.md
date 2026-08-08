@@ -129,8 +129,8 @@ priority, not a completeness claim.
 
 ## Current denominator
 
-The current reviewed Atlas candidate contains 4 gateways, 84 world nodes and 139
-navigation edges. Seventy-five edges carry exact retained-source addresses. The
+The current reviewed Atlas candidate contains 5 gateways, 96 world nodes and 158
+navigation edges. Ninety-four edges carry exact retained-source addresses. The
 first edition-scoped narrative constellation adds 18 Ramayana character, king,
 kingdom, place and turning-point nodes. The second adds 16 Devī Māhātmya
 frame-story, character, divine-name, narrative-place and episode nodes across
@@ -148,7 +148,7 @@ their own evidence classes and authority limits.
 
 ## Civilizational expansion lattice
 
-The four current gateways are camera entry points, not top-level folders. The
+The five current gateways are camera entry points, not top-level folders. The
 long-term universe grows as overlapping, evidence-specific constellations:
 
 - **text and story worlds:** Veda, Itihāsa, Purāṇa, Āgama, Tantra, classical and
@@ -171,6 +171,13 @@ communities, music, river immersion, Devī story worlds and the city itself. Eac
 edge retains its own evidence class; the living festival is not reduced to a
 textual episode, and a textual episode is not presented as the origin of every
 living practice.
+
+The fifth gateway, **Sacred Time / कालचक्र**, is the first cross-cutting
+constellation. Its initial twelve September–December destinations reuse reviewed
+current-contract ritual packs. Nineteen new routes retain the exact pack SHA-256
+and make calendar, region, tradition, participant role and authority visible at
+the interaction boundary. It is not persistent Panchang chrome, a universal
+festival calendar, or a claim that adjacent observances share an origin or rite.
 
 Authoritative discovery sources already demonstrate the breadth that the model
 must accommodate. UNESCO describes Kolkata Durga Puja across worship, public art,
