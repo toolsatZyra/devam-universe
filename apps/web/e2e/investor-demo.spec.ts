@@ -32,12 +32,12 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   const health = await page.request.get("/api/health");
   expect(health.status()).toBe(200);
   expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
-  // Mount the Atlas as a returning explorer so the complete four-world navigation
+  // Mount the Atlas as a returning explorer so the complete five-world navigation
   // can be exercised without changing the product's separate guest-preview limit.
   await page.goto("/search");
   await page.evaluate(() => window.localStorage.setItem(
     "devam-guest-gateways",
-    JSON.stringify(["ramayana", "ganesha", "durga", "diwali"]),
+    JSON.stringify(["ramayana", "ganesha", "durga", "diwali", "sacred-time"]),
   ));
   await page.getByRole("link", { name: "Back to the Atlas" }).click();
   await expect(page.getByRole("heading", { name: "Choose a star. Enter a world." })).toBeVisible();
@@ -48,7 +48,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   expect(initialBox?.height ?? 0).toBeGreaterThan(page.viewportSize()!.height * .98);
   await expect(page.getByText("Set your location for Panchang")).toHaveCount(0);
   await expect(page.getByRole("navigation")).toHaveCount(0);
-  for (const hero of ["Ganesha", "Durga", "Ramayana", "Diwali"]) {
+  for (const hero of ["Ganesha", "Durga", "Ramayana", "Diwali", "Sacred Time"]) {
     const gateway = page.getByRole("button", { name: `Explore ${hero}` });
     await expect(gateway).toBeVisible();
     const gatewayBox = await gateway.boundingBox();
@@ -174,6 +174,21 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("button", { name: "Explore Durga" })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Follow living festival world to Durga Puja" }).click();
   await expect(page.getByRole("heading", { name: "Durga Puja" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Sacred Time" }).click();
+  await page.getByRole("button", { name: "Follow December Rama-Sita remembrance to Vivaha Panchami" }).click();
+  await expect(page.getByRole("heading", { name: "Vivaha Panchami" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow source-labelled Rama-Sita remembrance to Sita in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Sita" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Sacred Time" }).click();
+  await page.getByRole("button", { name: "Follow Varanasi Kartika Purnima world to Dev Deepawali" }).click();
+  await page.getByRole("button", { name: "Follow living Varanasi context to Kashi in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Kashi" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow distinct Kashi Bhairava lane to Kalabhairava Jayanti in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Kalabhairava Jayanti" })).toBeVisible();
 
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();

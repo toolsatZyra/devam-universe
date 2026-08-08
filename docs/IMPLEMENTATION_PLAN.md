@@ -2845,6 +2845,35 @@ This checkpoint is local and unapplied. Hosted Supabase, GitHub and Vercel state
 must not be described as updated until the reviewed migrations, CI and deployed
 browser acceptance complete.
 
+## 2026-08-09 Sacred Time constellation candidate
+
+The first broad, cross-cutting expansion of the connected universe is being
+implemented on `codex/sacred-time-constellation`, based on production merge
+`f289b88`. It turns the September–December layer into exploration rather than
+restoring a Panchang control to the Atlas.
+
+- Sacred Time / कालचक्र is a fifth master constellation alongside the four deep
+  hero universes. It is a navigable world, not persistent calendar chrome.
+- Twelve first-wave destinations project already-reviewed current-contract
+  ritual lanes: Krishna Janmashtami, Radha Ashtami, Vishwakarma Puja, Pitru
+  Paksha, Karwa Chauth, Ahoi Ashtami, Chhath Puja, Tulasi Vivah, Dev Deepawali,
+  Kalabhairava Jayanti, Vivaha Panchami and Gita Jayanti.
+- Nineteen new routes connect calendar neighbours, Bengal, Bihar/Purvanchal,
+  Kashi, Rama, Sita and narrative Mithila. Every new route carries the immutable
+  SHA-256 of its reviewed ritual content pack.
+- Calendar adjacency remains explicitly non-equivalent: it does not establish a
+  common origin, theology, fast, story, material sequence, participant role or
+  ritual authority. Cross-world story edges also keep the ritual companion and
+  the selected narrative edition separately sourced.
+- The Atlas candidate denominator is 5 gateways, 96 world nodes, 158 edges and
+  94 source-addressed routes. Generated migration
+  `20260809150000_sync_current_living_atlas.sql` is prepared but remains
+  unapplied at this checkpoint.
+
+This is a high-value breadth slice over the retained evidence base, not complete
+September–December coverage, every Indian festival, every region, or the final
+civilizational denominator.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.
