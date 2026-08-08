@@ -2107,6 +2107,12 @@ distinct from semantic graph counts. Two forward-only migrations are prepared
 but have not been applied to hosted Supabase, and no source payload is copied
 into either the app or database migration.
 
+The same four identities now have a deterministic Sarthi route over the exact
+semantic pack. Named questions and their four Atlas-node continuations return
+only the evidence-linked bilingual narrative statements and citations; broad
+Durga, festival-origin, theology and ritual requests remain outside this route
+and continue through their separately governed paths.
+
 Checkpoint 2026-08-08 (app-owned Ganesha Purana source doorway, local and
 unapplied): the previously ingested exact Sanskrit Wikisource universe is now
 reachable even when hosted retrieval is unavailable. A compact structure pack

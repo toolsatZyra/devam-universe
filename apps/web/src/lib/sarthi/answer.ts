@@ -2,6 +2,7 @@ import type { GroundedSarthiAnswer, SarthiRequest, SarthiUnavailable } from "./c
 import { answerGaneshaPreview } from "./ganesha-preview";
 import { answerGanapatiAtharvashirsha } from "./ganapatyatharvashirsha-preview";
 import { answerGaneshaPuranaPreview } from "./ganesha-purana-preview";
+import { answerDevimahatmyaSemanticPreview } from "./devimahatmya-semantic-preview";
 import { answerDuttRamayanaPreview } from "./dutt-ramayana-preview";
 import { answerHeroPreview } from "./hero-preview";
 import { answerRamcharitmanasPreview } from "./ramcharitmanas-preview";
@@ -1163,6 +1164,9 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
       return { ok: true, mode: "contextual_ritual_guidance", answer: `${answer} ${followUpQuestion}`, citations: [], alternativesAvailable: true, sourceBoundary: MASIKA_DURGASHTAMI_RITUAL_BOUNDARY, followUpQuestion, practiceGuide: result.guide };
     }
   }
+  const devimahatmyaSemanticPreview = answerDevimahatmyaSemanticPreview(request);
+  if (devimahatmyaSemanticPreview) return devimahatmyaSemanticPreview;
+
   const durgaContext = explicitlyDurga || usesAtlasContext("durga");
   const bengalDurgaPujaContext = includesAny(query, ["durga puja", "durgapuja", "दुर्गा पूजा"]);
   if (bengalDurgaPujaContext && ritualIntent) {
