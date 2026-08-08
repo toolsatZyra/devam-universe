@@ -42,7 +42,7 @@
     ["uhp_27_grief_without_bypass", "blocked_partial_evidence"],
     ["uhp_28_family_ritual_consent", "candidate_not_packeted"],
     ["uhp_29_giving_household_duty", "admitted"],
-    ["uhp_30_work_care_choice", "candidate_not_packeted"]
+    ["uhp_30_work_care_choice", "admitted"]
   ],
   "packets": [
     {
@@ -655,6 +655,45 @@
         "destination_city_assigns_family_tradition": false
       },
       "admission_note": "Admitted for recomputation and clarification only: location-derived facts and rule decisions may change, while family tradition and observance identity must be asked rather than assigned by city."
+    },
+    {
+      "packet_id": "phase1-uhp-30-work-care-v1",
+      "scenario_id": "uhp_30_work_care_choice",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "present_roles": ["source_assertion", "current_user_statement", "ordinary_practical_inference"],
+      "scope": {
+        "dependents": "identify every affected dependent and whose need is time-sensitive",
+        "constraints": "ask which care and work obligations are fixed, negotiable, delegable or safely deferrable",
+        "options": "compare bounded work, care, delegation, schedule, support and staged-choice options",
+        "consequences": "surface near-term safety, livelihood, relationship and opportunity effects without professional advice",
+        "user_values": "the user names priorities and trade-offs; Devam sources remain optional lenses rather than decision authority"
+      },
+      "artifacts": [
+        {
+          "path": "knowledge_packs/wisdom/work-care-prioritization-v1.json",
+          "sha256": "1898680e1b3ad37c37219969f5eb5d9fae9445981a648c1b3777a557087f02d6",
+          "contract": "DEVAM_SARTHI_REVIEWED_PERSONAL_GUIDANCE_V1",
+          "admitted_use": "reviewed_bilingual_work_care_clarification_and_affected_party_boundary",
+          "source_rights_lanes": ["citation_only"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "apps/web/evaluation/sarthi-work-care-pilot-supplement-v0.1.json",
+          "sha256": "397a131fb3aefe3f59fe24889c43c2503de5c4f646b18187e857830bfb002b00",
+          "contract": "DEVAM_SARTHI_WORK_CARE_PILOT_SUPPLEMENT_V0_1",
+          "admitted_use": "frozen_context_clarification_non_gender_assignment_and_non_authority_boundary",
+          "source_rights_lanes": ["internal_only"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "current_user_statement_source": "held_out_scenario_input",
+        "sacred_story_decides_choice": false,
+        "care_assigned_by_gender": false,
+        "professional_employment_or_care_advice": false
+      },
+      "admission_note": "Admitted for clarification and user-owned deliberation only; dharma may frame attention and responsibility, but no story, source or Sarthi output decides the user's choice."
     }
   ]
 }
