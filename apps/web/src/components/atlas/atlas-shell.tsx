@@ -737,6 +737,23 @@ export function AtlasShell({ eras, gateways, placeThreads, worldEdges, worldNode
                       </ol>
                     </details>
                   ) : null}
+                  {sarthiReply.practiceGuide.userCompleteContext ? (
+                    <details>
+                      <summary>Variants and boundaries</summary>
+                      {sarthiReply.practiceGuide.userCompleteContext.variants.map((variant) => (
+                        <p key={variant.variantId}><strong>{variant.dimension}</strong><br />{variant.description}</p>
+                      ))}
+                      {sarthiReply.practiceGuide.userCompleteContext.safetyAndBoundaries.map((boundary) => (
+                        <p key={boundary}>{boundary}</p>
+                      ))}
+                    </details>
+                  ) : null}
+                  <details>
+                    <summary>Guide sources</summary>
+                    {sarthiReply.practiceGuide.evidence.sources.map((source) => (
+                      <p key={source.sourceId}><strong>{source.title}</strong><br /><small>{source.publisher} · {source.sourceClass}</small></p>
+                    ))}
+                  </details>
                   <small>{sarthiReply.practiceGuide.familyPracticeNote}</small>
                 </details>
               ) : null}

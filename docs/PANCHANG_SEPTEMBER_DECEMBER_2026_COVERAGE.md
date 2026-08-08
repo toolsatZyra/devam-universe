@@ -840,8 +840,14 @@ rights or masters.
   Atlas gateway and world node, a source-addressed Journey, its non-spiritual-
   score Challenge, and a source-bounded Sarthi route. This proves navigable MVP
   connectivity, not completeness of any hero universe.
-- [ ] Contradictions and alternatives are retained in evidence and surfaced only
-  when relevant or requested.
+- [x] Every current user-complete ritual record retains scoped variants, safety
+  boundaries, and guide-source identities. Default Sarthi answers remain
+  concise; explicit alternative requests receive a bounded variant digest,
+  while Today, Atlas, and standalone Sarthi expose the complete structured
+  record behind collapsed disclosure. This proves relevance-sensitive handling
+  for the current launch records, not exhaustion of all living alternatives or
+  contradictions.
 
-Until all unchecked items close, the September-December ritual layer is in
-progress rather than complete.
+The bounded September-December 2026 launch ritual layer meets this checklist.
+Its exact location, tradition, language, role, and source limits remain part of
+the product contract; this is not a claim of civilizational completeness.

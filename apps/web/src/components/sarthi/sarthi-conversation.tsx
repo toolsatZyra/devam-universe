@@ -45,6 +45,25 @@ function Evidence({ reply }: { reply: GroundedSarthiAnswer }) {
               <ol>{tier.steps.map((step) => <li key={step.ordinal}>{step.instruction}</li>)}</ol>
             </details>
           ))}
+          {reply.practiceGuide.userCompleteContext ? (
+            <details>
+              <summary>Variants and boundaries</summary>
+              <ul>
+                {reply.practiceGuide.userCompleteContext.variants.map((variant) => (
+                  <li key={variant.variantId}><strong>{variant.dimension}</strong><br />{variant.description}</li>
+                ))}
+                {reply.practiceGuide.userCompleteContext.safetyAndBoundaries.map((boundary) => (
+                  <li key={boundary}>{boundary}</li>
+                ))}
+              </ul>
+            </details>
+          ) : null}
+          <details>
+            <summary>Guide sources</summary>
+            {reply.practiceGuide.evidence.sources.map((source) => (
+              <p key={source.sourceId}><strong>{source.title}</strong><br /><small>{source.publisher} · {source.sourceClass}</small></p>
+            ))}
+          </details>
           <small>{reply.practiceGuide.familyPracticeNote}</small>
         </div>
       ) : null}

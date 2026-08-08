@@ -68,11 +68,12 @@ function isHindi(request: SarthiRequest) {
   return request.context?.languageCode?.toLowerCase().startsWith("hi") === true || /[\u0900-\u097f]/.test(request.message);
 }
 
-export function answerSarthi(request: SarthiRequest): GroundedSarthiAnswer | SarthiUnavailable {
+function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | SarthiUnavailable {
   const query = request.message.toLocaleLowerCase("en");
   const hindi = isHindi(request);
   const ritualIntent = includesAny(query, [
     "practise", "practice", "worship", "ritual", "puja", "pooja", "what should i do", "what do i do", "fast", "fasting", "vrat", "vrata", "parana",
+    "variant", "variants", "alternative", "alternatives", "different tradition", "different traditions", "regional form", "regional forms",
     "पूजा", "विधि", "क्या करूँ", "क्या करें", "कैसे करें", "उपवास", "व्रत", "पारण",
   ]);
   const contextualReference = ritualIntent || includesAny(query, [
@@ -1306,5 +1307,28 @@ export function answerSarthi(request: SarthiRequest): GroundedSarthiAnswer | Sar
     sourceBoundary: GANESHA_RITUAL_BOUNDARY,
     followUpQuestion,
     practiceGuide: result.guide,
+  };
+}
+
+const ALTERNATIVE_REQUEST_TERMS = [
+  "variant", "variants", "alternative", "alternatives", "different tradition", "different traditions", "regional form", "regional forms",
+  "भेद", "विकल्प", "अलग परम्परा", "अलग परंपरा",
+] as const;
+
+export function answerSarthi(request: SarthiRequest): GroundedSarthiAnswer | SarthiUnavailable {
+  const result = answerSarthiBase(request);
+  if (!result.ok || !result.practiceGuide?.userCompleteContext) return result;
+  if (!includesAny(request.message.toLocaleLowerCase("en"), ALTERNATIVE_REQUEST_TERMS)) return result;
+
+  const variants = result.practiceGuide.userCompleteContext.variants;
+  if (!variants.length) return result;
+  const hindi = isHindi(request);
+  const digest = variants.slice(0, 3).map((variant) => `${variant.dimension}: ${variant.description}`).join(" ");
+  const remainder = variants.length > 3
+    ? (hindi ? ` ${variants.length - 3} और सीमित भेद विस्तृत मार्गदर्शिका में सुरक्षित हैं।` : ` ${variants.length - 3} more scoped variant${variants.length - 3 === 1 ? " is" : "s are"} preserved in the detailed guide.`)
+    : "";
+  return {
+    ...result,
+    answer: `${result.answer} ${hindi ? "इस सीमित मार्गदर्शिका में ये भेद सुरक्षित हैं:" : "This bounded guide preserves these variants:"} ${digest}${remainder}`,
   };
 }
