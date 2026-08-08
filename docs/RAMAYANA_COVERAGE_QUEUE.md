@@ -392,6 +392,26 @@ Publishing these 802 passages does not correct the 359 low-quality pages, admit
 the 11 malformed-markup pages, complete searchable Ramcharitmanas text, or
 complete the Ramayana universe or MVP library.
 
+#### Living Atlas, Search, and Sarthi doorway
+
+The reviewed product slice is now visible as a major Ramcharitmanas node under
+the Ramayana Living Atlas gateway, with an `Awadhi devotional telling`
+relationship. Opening that node yields a compact source-bounded answer and
+seven stable citations, one anchored to the first published passage in each
+sopana. Search uses the same boundary and Sarthi can answer in English or Hindi
+without treating a printed page number as the source identity.
+
+The hosted seed is additive: it manages 41 current app nodes and 45 app edges
+without deleting the independently managed Ganesha Purana node/edge, changing
+RLS, or changing either public-search function's owner or execute grants. The
+normal-TLS publishable-key REST probe returned the exact Ramcharitmanas node.
+The compact integration report is
+`ingestion/reports/ramcharitmanas-living-atlas-integration-v1.json`.
+
+This doorway does not improve or silently admit the held 370 pages and does not
+complete Ramcharitmanas or the Ramayana tradition. It makes the product-usable
+portion explorable while preserving its exact edition and quality boundary.
+
 ### Wikisource status and selected Sundara passage (2026-08-07)
 
 A fresh normal-TLS observation of the seven English Wikisource Index records

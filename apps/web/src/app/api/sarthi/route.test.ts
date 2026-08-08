@@ -12,6 +12,23 @@ function request(body: unknown) {
 }
 
 describe("POST /api/sarthi", () => {
+  it("answers from the bounded Ramcharitmanas edition when its Atlas doorway is open", async () => {
+    const response = await POST(request({
+      message: "Tell me about Ramcharitmanas",
+      context: { languageCode: "en", atlasNodeSlug: "ramcharitmanas" },
+    }));
+    const result = await response.json();
+    expect(response.status).toBe(200);
+    expect(result).toMatchObject({
+      ok: true,
+      mode: "deterministic_source_bounded_preview",
+      alternativesAvailable: true,
+    });
+    expect(result.answer).toContain("802 source-addressed beta pages");
+    expect(result.answer).toContain("not the complete Ramcharitmanas tradition");
+    expect(result.citations).toHaveLength(7);
+  });
+
   it("returns concise Bengal Vishwakarma workplace guidance when the regional context is known", async () => {
     const response = await POST(request({
       message: "What should I do for Vishwakarma Puja at work in Kolkata?",

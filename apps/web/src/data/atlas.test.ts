@@ -7,6 +7,7 @@ import { searchLibrary } from "../lib/search/library-search";
 import { eras, gateways, worldEdges, worldNodes } from "./atlas";
 
 const reviewedDetailNodeIds = [
+  "ramcharitmanas",
   "bala-kanda",
   "ayodhya-kanda",
   "aranya-kanda",
@@ -50,7 +51,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(36);
+    expect(worldNodes).toHaveLength(37);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -91,22 +92,22 @@ describe("Living Atlas exploration data", () => {
   it("keeps the hosted Atlas migration byte-derived from the reviewed app graph", () => {
     const root = resolve(process.cwd(), "..", "..");
     const migrations = resolve(root, "supabase", "migrations");
-    const migrationName = readdirSync(migrations).find((name) => name.endsWith("_sync_mvp_atlas_and_harden_public_search_owner.sql"));
+    const migrationName = readdirSync(migrations).find((name) => name.endsWith("_sync_current_living_atlas.sql"));
     expect(migrationName).toBeDefined();
 
     const directory = mkdtempSync(join(tmpdir(), "devam-atlas-migration-"));
     const generated = resolve(directory, "migration.sql");
     try {
-      execFileSync(process.execPath, [resolve(root, "tools", "compile_living_atlas_supabase_migration.cjs"), generated], {
+      execFileSync(process.execPath, [resolve(root, "tools", "compile_current_living_atlas_seed.cjs"), generated], {
         cwd: root,
         stdio: "pipe",
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 40 current Living Atlas nodes");
-      expect(sql).toContain("Expected 44 current Living Atlas edges");
-      expect(sql).toContain("owner to devam_public_search_executor");
-      expect(sql).toContain("nobypassrls");
+      expect(sql).toContain("Expected 41 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 45 app-owned Living Atlas edges");
+      expect(sql).not.toContain("alter function");
+      expect(sql).not.toContain("grant execute");
     } finally {
       rmSync(directory, { recursive: true, force: true });
     }
