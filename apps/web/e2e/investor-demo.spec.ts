@@ -148,6 +148,28 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("button", { name: "Explore Diwali" })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Follow same new-moon night, distinct Bengal festival to Kali Puja" }).click();
   await expect(page.getByRole("heading", { name: "Kali Puja" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow explore a distinct textual Kālikā world to Kālikā in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Kālikā" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow adjacent manifestation passage to Kauśikī" }).click();
+  await expect(page.getByRole("heading", { name: "Kauśikī" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow story continues toward to Dhūmralocana" }).click();
+  await expect(page.getByRole("heading", { name: "Dhūmralocana" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow defeat triggers next command to Caṇḍa and Muṇḍa" }).click();
+  await expect(page.getByRole("heading", { name: "Caṇḍa and Muṇḍa" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow defeat gives rise to name to Cāmuṇḍā" }).click();
+  await expect(page.getByRole("heading", { name: "Cāmuṇḍā" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow acts in next battle to Raktabīja" }).click();
+  await expect(page.getByRole("heading", { name: "Raktabīja" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow fall leads into to The Śumbha–Niśumbha battle" }).click();
+  await expect(page.getByRole("heading", { name: "The Śumbha–Niśumbha battle" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow nested story returns to frame to The granting of boons" }).click();
+  await expect(page.getByRole("heading", { name: "The granting of boons" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow resolves quest of to King Suratha" }).click();
+  await expect(page.getByRole("heading", { name: "King Suratha" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Diwali" }).click();
+  await page.getByRole("button", { name: "Follow same new-moon night, distinct Bengal festival to Kali Puja" }).click();
   await page.getByRole("button", { name: "Follow connected Shakta goddess traditions to Durga in another world" }).click();
   await expect(page.getByRole("button", { name: "Explore Durga" })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Follow living festival world to Durga Puja" }).click();

@@ -2805,6 +2805,46 @@ Ganesha narrative and temple clusters, Bengal Shakta story/festival/place/art
 clusters, Diwali regional worlds, historically evidenced kings and polities,
 and the September-December ritual layer.
 
+## 2026-08-09 Devī Māhātmya narrative-constellation candidate
+
+The second repeatable source-bounded expansion is implemented on
+`codex/durga-narrative-constellation`. It converts the published thirteen-chapter
+Devī Māhātmya sequence into a close-zoom story world rather than adding another
+decorative label cluster.
+
+- Sixteen new destinations expose King Suratha, merchant Samādhi, sage Medhas,
+  Medhas's hermitage, Mahāmāyā, the counsel turn, the Madhu-Kaiṭabha awakening,
+  the Mahiṣāsura battle, Kauśikī, Kālikā, Dhūmralocana, Caṇḍa-Muṇḍa, Cāmuṇḍā,
+  Raktabīja, the Śumbha-Niśumbha battle and the closing boon sequence.
+- The expanded semantic pack contains 20 entities, 40 bilingual narrative-index
+  claims and 20 evidence-linked relationships. Fifteen distinct evidence
+  passages preserve their actual carrier across Sanskrit Wikisource revisions
+  410281, 363171 and 363170; source payloads are not copied into the application.
+- The Atlas candidate is now 4 gateways, 84 world nodes and 139 traversable
+  edges. Seventy-five edges carry exact source-object, source-ordinal and span
+  addresses. A bounded Kali Puja-to-Kālikā bridge invites comparison without
+  claiming festival origin, identity or ritual authority.
+- The existing 12-case browser contract now traverses Kali Puja → Kālikā →
+  Kauśikī → Dhūmralocana → Caṇḍa-Muṇḍa → Cāmuṇḍā → Raktabīja →
+  Śumbha-Niśumbha battle → boon sequence → Suratha on both viewport classes.
+- Internet discovery was used only to extend the civilizational expansion map.
+  UNESCO, IGNCA and ASI lanes remain catalog and modeling leads until material-
+  specific identity, rights, fixity and product clearance are established.
+
+Candidate validation:
+
+- product tests: 776 passed, 17 named source-vault-only tests skipped;
+- full web tests: 793 passed;
+- lint, TypeScript and production build: pass;
+- semantic compiler tests: 2/2 pass and both generated migrations reconstruct
+  byte-for-byte; and
+- strengthened desktop/mobile Atlas traversal: 2/2 pass within the existing
+  twelve-case browser suite.
+
+This checkpoint is local and unapplied. Hosted Supabase, GitHub and Vercel state
+must not be described as updated until the reviewed migrations, CI and deployed
+browser acceptance complete.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.

@@ -129,12 +129,14 @@ priority, not a completeness claim.
 
 ## Current denominator
 
-The current reviewed Atlas candidate contains 4 gateways, 68 world nodes and 101
-navigation edges. Its first edition-scoped narrative constellation adds 18
-Ramayana character, king, kingdom, place and turning-point nodes, with 38 edges
-carrying exact retained-source addresses. These counts describe selected MVP
-product scope only. They do not measure the size or completeness of Indian
-mythology, history, culture, wisdom or living practice.
+The current reviewed Atlas candidate contains 4 gateways, 84 world nodes and 139
+navigation edges. Seventy-five edges carry exact retained-source addresses. The
+first edition-scoped narrative constellation adds 18 Ramayana character, king,
+kingdom, place and turning-point nodes. The second adds 16 Devī Māhātmya
+frame-story, character, divine-name, narrative-place and episode nodes across
+three exact provider revisions. These counts describe selected MVP product scope
+only. They do not measure the size or completeness of Indian mythology, history,
+culture, wisdom or living practice.
 
 The Ramayana constellation is the repeatable expansion pattern, not a privileged
 final ontology: choose a cleared edition or evidence bundle, expose people,
@@ -143,6 +145,42 @@ relationships to source addresses, and create evidence-bounded bridges into
 living festivals or other worlds. Durga, Ganesha, Diwali, temple, historical,
 ritual, art, wisdom and regional clusters must use the same method while keeping
 their own evidence classes and authority limits.
+
+## Civilizational expansion lattice
+
+The four current gateways are camera entry points, not top-level folders. The
+long-term universe grows as overlapping, evidence-specific constellations:
+
+- **text and story worlds:** Veda, Itihāsa, Purāṇa, Āgama, Tantra, classical and
+  vernacular works, commentaries, oral tellings, theatre and performance;
+- **divine and philosophical worlds:** named forms, attributes, relationships,
+  concepts, schools, teachers, debates, practices and counterpositions;
+- **living festival worlds:** calendars, regional cycles, household and public
+  forms, arts, food, music, processions, participant roles and ritual authority;
+- **place and material worlds:** rivers, landscapes, temples, pilgrimage routes,
+  archaeological sites, architecture, sculpture, inscriptions and museum works;
+- **historical worlds:** attested people, kings, dynasties, courts, patrons,
+  institutions, trade, conflict and change over time; and
+- **wisdom worlds:** source-bounded dilemmas, interpretations, applications and
+  counterexamples, with Sārthi remaining a companion rather than an authority.
+
+A single destination may participate in several constellations without being
+duplicated. For example, a Kolkata Durga Puja world may connect to a living
+festival calendar, clay-image workshops, public art and design, neighbourhood
+communities, music, river immersion, Devī story worlds and the city itself. Each
+edge retains its own evidence class; the living festival is not reduced to a
+textual episode, and a textual episode is not presented as the origin of every
+living practice.
+
+Authoritative discovery sources already demonstrate the breadth that the model
+must accommodate. UNESCO describes Kolkata Durga Puja across worship, public art,
+artisans, installations, music, community participation and immersion. IGNCA's
+cultural-heritage guidance spans myths, legends, archaeology, history, festival
+cycles, rites of passage, literature, architecture and natural heritage. Its
+National Databank also exposes large rare-book, monument and multimedia discovery
+lanes. ASI publishes a state- and circle-wise protected-monument inventory. These
+are discovery and modeling leads only: every source, media object and dataset
+still needs identity, rights, fixity and product-clearance review before use.
 
 ## External modeling references
 
@@ -157,3 +195,11 @@ their own evidence classes and authority limits.
   <https://www.metmuseum.org/perspectives/household-gods-kali-lithography>.
 - Regional and religious plurality around Diwali is reflected in the Asian Art
   Museum overview: <https://asianart.org/cultural-celebrations/celebrate-diwali/>.
+- IGNCA's cultural-heritage digital-library guidance supplies a broad domain map
+  covering myths, history, festivals, rites, literature and places:
+  <https://ignca.gov.in/coilnet/guideln.htm>.
+- IGNCA's National Databank is a discovery lead for rare books, monuments and
+  cultural media, not blanket product clearance:
+  <https://ignca.gov.in/divisionss/cultural-informatics/national-databank-on-indian-art-and-culture/>.
+- ASI's protected-monument inventory is a discovery and historical-place lead:
+  <https://asi.nic.in/admin/whatsnew/download/719>.

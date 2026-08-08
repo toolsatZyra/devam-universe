@@ -34,6 +34,19 @@ describe("source-bounded Devimahatmya semantic graph search", () => {
     expect(searchDevimahatmyaSemanticGraph("complete Shakta theology")).toEqual([]);
   });
 
+  it("preserves the exact later provider revision when retrieving the close-zoom constellation", () => {
+    const result = searchDevimahatmyaSemanticGraph("Chamunda")[0];
+    expect(result).toMatchObject({
+      id: "durga-devimahatmya-semantic-chamunda-naming-en",
+      title: "Cāmuṇḍā",
+      citations: [{
+        sourceObjectId: "4459b0ca01f9a4173f1a137bf7c64908afbf326565b0b3f2dd2d2f5f830850fe",
+        sourceOrdinal: 46,
+        locator: { chapter: 87, verse: 26, provider_revision_id: 363171 },
+      }],
+    });
+  });
+
   it("places the semantic result into exact Search without requiring hosted connectivity", async () => {
     const response = await searchLibrary("Madhu and Kaitabha", "en");
     expect(response.retrievalStatus).toBe("not_configured");
@@ -67,11 +80,16 @@ describe("source-bounded Devimahatmya semantic graph search", () => {
 
   it("freezes the bounded graph denominator without copying source payloads", () => {
     expect(DEVIMAHATMYA_SEMANTIC_SEARCH_FIXITY).toEqual({
-      packFileSha256: "07eb59e3ed3d4ab8e586385d6b6dfcbfc9f870ab98d3981291ef6a54d5890b9b",
+      packFileSha256: "7786f6fea39311c6d4544e72cc8fe72742a8c8fac1172d02a3666de6dc9e0891",
       sourceSha256: "c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
-      entityCount: 4,
-      bilingualClaimCount: 8,
-      relationshipCount: 4,
+      sourceSha256s: [
+        "c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
+        "4459b0ca01f9a4173f1a137bf7c64908afbf326565b0b3f2dd2d2f5f830850fe",
+        "446fb91efc40b94d7b59aa1d5b3116dd665b79ec68044985a8953483c8721814",
+      ],
+      entityCount: 20,
+      bilingualClaimCount: 40,
+      relationshipCount: 20,
       sourcePayloadsCopied: false,
     });
   });
