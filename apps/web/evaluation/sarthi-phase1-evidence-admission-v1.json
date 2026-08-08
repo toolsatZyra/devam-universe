@@ -14,12 +14,12 @@
   },
   "admission_index": [
     ["uhp_01_ramcharitmanas_edition", "admitted"],
-    ["uhp_02_devi_mahatmya_chapter", "candidate_not_packeted"],
+    ["uhp_02_devi_mahatmya_chapter", "admitted"],
     ["uhp_03_ganesha_hymn_source", "candidate_not_packeted"],
     ["uhp_04_diwali_distinct_sources", "admitted"],
     ["uhp_05_panchang_exactness", "candidate_not_packeted"],
     ["uhp_06_ayodhya_text_place", "candidate_not_packeted"],
-    ["uhp_07_devi_translation_boundary", "candidate_not_packeted"],
+    ["uhp_07_devi_translation_boundary", "admitted"],
     ["uhp_08_ganesha_symbolism", "blocked_partial_evidence"],
     ["uhp_09_diwali_many_observances", "admitted"],
     ["uhp_10_navaratri_durga_puja", "admitted"],
@@ -453,6 +453,98 @@
         "fixed_percentage_prescribed": false
       },
       "admission_note": "Admitted for essentials-first clarification and proportional options only; cited passages are optional lenses and do not convert prudence into a scriptural command."
+    },
+    {
+      "packet_id": "phase1-uhp-02-devimahatmya-chapter-82-v1",
+      "scenario_id": "uhp_02_devi_mahatmya_chapter",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "source_aligned_translation"],
+      "present_roles": ["source_assertion", "source_aligned_translation"],
+      "scope": {
+        "work": "Devimahatmya within Markandeya Purana chapters 81-93",
+        "chapter": "provider chapter 82 within the first pinned chapters 81-85 carrier",
+        "provider_revision": "Sanskrit Wikisource revision 410281",
+        "translation_status": "published AI-assisted Devam beta translation; not independently Sanskrit-reviewed"
+      },
+      "artifacts": [
+        {
+          "path": "ingestion/reports/devimahatmya-wikisource-sanskrit-source-acquisition-v1.json",
+          "sha256": "94f2a3ce1c9f66b0ccd3d57fcc3c4f2633277a2a4b821cf4d1eac2eabdd3950c",
+          "contract": "DEVAM_LEAN_SOURCE_VAULT_ACQUISITION_V1",
+          "admitted_use": "exact_provider_revision_source_identity_without_payload_duplication",
+          "source_rights_lanes": ["product_allowed_with_attribution_and_share_alike_compliance"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "ingestion/reports/devimahatmya-devam-translations-v1.json",
+          "sha256": "c14744ad5f89b4b3d8ad8395e8585a6ab7e349b1a53ae76d4a0dc9be0765087e",
+          "contract": "DEVAM_DEVIMAHATMYA_SOURCE_ALIGNED_TRANSLATION_PACK_V1",
+          "admitted_use": "translation_identity_review_status_and_completion_boundary",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/durga/devimahatmya-devam-translations-v1.jsonl",
+          "sha256": "c2250ef4e7254f77600ea3e3751ff69f5c72c64ba36765c4152db8973ac46396",
+          "contract": "DEVAM_DEVIMAHATMYA_SOURCE_ALIGNED_TRANSLATION_CLAIMS_V1",
+          "admitted_use": "chapter_82_source_aligned_english_and_hindi_beta_translation_claims",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "source_sha256": "c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae",
+        "carrier_chapter_range": "81-85",
+        "underlying_print_edition_identified": false,
+        "textual_recension_identified": false
+      },
+      "admission_note": "Admitted for exact chapter-82 source and beta-translation boundaries only; it cannot establish an unidentified print edition, recension, commentary or critical translation."
+    },
+    {
+      "packet_id": "phase1-uhp-07-devi-translation-boundary-v1",
+      "scenario_id": "uhp_07_devi_translation_boundary",
+      "languages": ["en", "hi"],
+      "required_roles": ["source_assertion", "source_aligned_translation", "devam_reviewed_synthesis"],
+      "present_roles": ["source_assertion", "source_aligned_translation", "devam_reviewed_synthesis"],
+      "scope": {
+        "text": "588 source-aligned passages in the pinned Devimahatmya provider universe",
+        "edition_or_revision": "three Sanskrit Wikisource revisions 410281, 363171 and 363170; print edition and recension unidentified",
+        "translation": "1,176 English/Hindi Devam beta claims, AI-assisted and not independently Sanskrit-reviewed",
+        "commentary_exclusion": "no commentary, sampradaya interpretation, ritual authority or universal theological conclusion is admitted"
+      },
+      "artifacts": [
+        {
+          "path": "ingestion/reports/devimahatmya-wikisource-sanskrit-source-acquisition-v1.json",
+          "sha256": "94f2a3ce1c9f66b0ccd3d57fcc3c4f2633277a2a4b821cf4d1eac2eabdd3950c",
+          "contract": "DEVAM_LEAN_SOURCE_VAULT_ACQUISITION_V1",
+          "admitted_use": "exact_provider_revision_source_identity_without_payload_duplication",
+          "source_rights_lanes": ["product_allowed_with_attribution_and_share_alike_compliance"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "ingestion/reports/devimahatmya-devam-translations-v1.json",
+          "sha256": "c14744ad5f89b4b3d8ad8395e8585a6ab7e349b1a53ae76d4a0dc9be0765087e",
+          "contract": "DEVAM_DEVIMAHATMYA_SOURCE_ALIGNED_TRANSLATION_PACK_V1",
+          "admitted_use": "reviewed_translation_completion_and_explicit_exclusion_synthesis",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        },
+        {
+          "path": "knowledge_packs/durga/devimahatmya-devam-translations-v1.jsonl",
+          "sha256": "c2250ef4e7254f77600ea3e3751ff69f5c72c64ba36765c4152db8973ac46396",
+          "contract": "DEVAM_DEVIMAHATMYA_SOURCE_ALIGNED_TRANSLATION_CLAIMS_V1",
+          "admitted_use": "source_aligned_english_and_hindi_beta_translation_claims",
+          "source_rights_lanes": ["derivative_allowed"],
+          "quotation_allowed": false
+        }
+      ],
+      "source_identity": {
+        "source_object_count": 3,
+        "source_passage_count": 588,
+        "translation_claim_count": 1176,
+        "complete_devimahatmya_tradition": false
+      },
+      "admission_note": "Admitted to explain one exact provider-revision universe and its labelled beta translation; commentary, recension, complete tradition and ritual authority remain outside scope."
     }
   ]
 }
