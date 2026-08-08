@@ -34,21 +34,44 @@ critical path is now productization rather than another isolated acquisition.
 ## Git and hosted state
 
 - Remote: `https://github.com/toolsatZyra/devam-universe.git`
-- Current branch: `codex/acquire-ramcharitmanas-wikisource`
-- Last functional commit: `1468754 Connect Ramcharitmanas to the Living Atlas`
+- Current branch: `codex/investor-demo-acceptance`
+- Last functional commit: `fce12a5 Add executable investor demo acceptance`
 - Supabase project: `devam-universe`, ref `bucgdaunsuzithfigtmr`
 - Vercel: no project or production deployment yet.
 - Open draft PR stack, which must be reviewed/merged in order:
   1. PR #1, `codex/complete-dutt-ramayana-english` → `main`
   2. PR #2, `codex/acquire-dp-sharma-hindi-ramayana` → PR #1 branch
   3. PR #3, `codex/acquire-ramcharitmanas-wikisource` → PR #2 branch
+  4. PR #4, `codex/investor-demo-acceptance` → PR #3 branch
 - PR #3: `https://github.com/toolsatZyra/devam-universe/pull/3`
+- PR #4: `https://github.com/toolsatZyra/devam-universe/pull/4`, stacked on PR #3
 
 Do not point Vercel at `main` and call it current until this stack is reviewed
 and merged. A branch preview is acceptable for review, but production should be
 Git-connected to the consolidated branch.
 
 ## Latest completed checkpoint
+
+The finite investor-demo contract is now frozen in
+`docs/INVESTOR_DEMO_ACCEPTANCE_MATRIX.md`, and a checked-in Playwright suite
+passes 12/12 journeys across desktop Chrome and a Pixel 7 viewport. It covers
+Atlas pan/zoom/reset/era controls, all four hero gateways, four curated
+journeys, challenges, four hero Search lanes, bounded Ramcharitmanas Sarthi
+answers with expandable sources, deterministic Diwali Today guidance, and the
+guest-to-account boundary.
+
+The first browser run caught a real hosted-data integration defect: the Atlas
+mapper attempted to render an independently managed `ganesha-purana` row that
+has no reviewed Devam exploration metadata. The fix filters nodes and edges by
+the exact reviewed Devam `visual.sourceId` universe. The external row and edge
+remain untouched in Supabase, while the app renders only its owned Atlas
+records. A regression test freezes that boundary.
+
+This checkpoint is `LOCAL_ACCEPTANCE_PASSED`, not `INVESTOR_DEMO_READY`.
+Deployment, fixed-origin SMTP/account acceptance, and browser acceptance on the
+deployed preview remain open.
+
+## Previous source/product checkpoint
 
 Ramcharitmanas is now reachable from the Ramayana Living Atlas gateway, exact
 Search, and Sarthi through seven stable sopana citations. The bounded product
@@ -76,7 +99,8 @@ Hosted verification after application:
 
 Full local closure at this checkpoint:
 
-- 91 web test files / 693 tests pass;
+- 91 web test files / 694 tests pass;
+- 12/12 Playwright desktop/mobile acceptance cases pass;
 - 210 Python tests pass;
 - ESLint passes;
 - TypeScript passes;
@@ -100,7 +124,7 @@ slice, much closer to an investor demo than to a paid public beta.
 | Living Atlas | Four gateways, 37 app world nodes, pan/zoom/pinch/double-tap, era filters, four journeys and four challenges | It is still a cosmic constellation prototype, not yet the promised historical/geographic India world; final hero art and depth remain. |
 | Account | Guest preview, passwordless-auth plumbing, profile context, consented memory, export/delete | Needs deployed fixed origin, real SMTP and production acceptance. |
 | Commercial | Provider-neutral `devam_one` entitlement boundary | No checkout, billing lifecycle or paid enforcement. |
-| Operations | Dedicated Supabase project and comprehensive deterministic tests | No Vercel deployment, production domain, checked-in browser E2E suite, analytics funnel, monitoring or public launch gate. |
+| Operations | Dedicated Supabase project, comprehensive deterministic tests, and checked-in desktop/mobile Playwright acceptance | No Vercel deployment, production domain, deployed-origin browser result, analytics funnel, monitoring or public launch gate. |
 
 Calibrated progress ranges, not promises:
 
@@ -113,27 +137,25 @@ Calibrated progress ranges, not promises:
 
 The misleading counters to avoid are: 8,491 objects is not 8,491 complete
 works; 79/79 is only the selected observance inventory; 46 lane records are not
-independent cultural review; 693 tests are not user desirability; 42 nodes are
+independent cultural review; 694 tests are not user desirability; 42 nodes are
 not a mature knowledge graph; and a frozen pilot is not an evaluated pilot.
 
 ## Critical path and effort range
 
 Fastest honest path:
 
-1. Freeze a one-page acceptance matrix for exact investor-demo personas,
-   journeys, queries, ritual requests, mobile/desktop states and pass/fail.
-2. Review and merge PRs #1 → #2 → #3. Create a Vercel project linked to the
-   consolidated GitHub branch; configure fixed Supabase Auth origin and SMTP.
-3. Add checked-in Playwright desktop/mobile acceptance for Atlas → Search →
-   Sarthi → Today → account and run a real-device/browser pass.
-4. Polish one golden path for each of the four hero worlds, including final
+1. Review and merge PRs #1 → #2 → #3 → #4. Create a Vercel project linked to
+   the consolidated GitHub branch; configure fixed Supabase Auth origin and SMTP.
+2. Run the checked-in Playwright suite on the deployed preview and complete
+   real SMTP/account continuity, export, deletion, and fixed-origin acceptance.
+3. Polish one golden path for each of the four hero worlds, including final
    quality scene art and at least one convincing time/geography map experience.
-5. Run the frozen blinded Sarthi answer pilot. Enable bounded generation only
+4. Run the frozen blinded Sarthi answer pilot. Enable bounded generation only
    if it beats the grounded baseline without source/applicability regressions.
-6. Publish an honest investor coverage dashboard separating preserved,
+5. Publish an honest investor coverage dashboard separating preserved,
    structurally understood, indexed, product-usable, translated, reviewed and
    complete.
-7. Move new ritual selection away from per-observance TypeScript branching to
+6. Move new ritual selection away from per-observance TypeScript branching to
    the generic database-driven applicability/content contract. Do not perform
    another destructive cleanup.
 
@@ -147,10 +169,11 @@ Rough focused effort with content work parallelized where possible:
 
 ## Immediate next action
 
-Do not resume with another acquisition on the main MVP thread. Start by freezing
-the one-page acceptance matrix and resolving the PR stack/deployment path. Ask
-the user to create the Vercel project once the consolidated deploy branch is
-ready, or use a feature-branch preview explicitly labelled as such.
+Do not resume with another acquisition on the main MVP thread. Review and merge
+the stacked PRs in order, then ask the user to create the Vercel project from
+the consolidated branch. Configure the fixed Supabase Auth origin and SMTP,
+and run the checked-in acceptance suite against that deployed preview. Do not
+call the local result a deployed or investor-ready result.
 
 Parallel library-acquisition tasks may continue under the one-copy source-vault
 contract, but they must not block deployment and acceptance of the product
@@ -162,9 +185,11 @@ vertical slice.
 > exact current Git state. Read `AGENTS.md` and
 > `DEVAM_MVP_CURRENT_HANDOFF_2026-08-08.md` completely, then follow its startup
 > sequence. Reverify branch, PR stack, hosted Supabase counts/security boundary,
-> and the latest full test closure. The immediate objective is to freeze the
-> one-page investor-demo acceptance matrix and produce a safe PR-merge/deployment
-> plan, not to acquire another source on the critical path. Preserve the
+> and the latest full test closure. The acceptance matrix and local browser
+> suite are complete on PR #4. The immediate objective is to review and merge
+> PRs #1 through #4 in order, create the Vercel project from the consolidated
+> branch with explicit user authorization, configure fixed-origin Supabase Auth
+> and SMTP, and rerun the suite on the deployed preview. Preserve the
 > one-copy source vault, explicit rights/edition/uncertainty boundaries, and the
 > separation between selected-scope counters and civilizational completeness.
 > Recommend the cheapest sufficient model before substantive work. Proceed
