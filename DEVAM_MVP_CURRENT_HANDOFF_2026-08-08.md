@@ -35,7 +35,7 @@ critical path is now productization rather than another isolated acquisition.
 
 - Remote: `https://github.com/toolsatZyra/devam-universe.git`
 - Current branch: `codex/investor-demo-acceptance`
-- Current branch head: `5e360ad Add Devam MVP continuous integration`
+- Latest verified functional/CI commit: `d2b20fc Make Devam product tests clean-checkout safe`
 - Last product checkpoint: `fce12a5 Add executable investor demo acceptance`
 - Supabase project: `devam-universe`, ref `bucgdaunsuzithfigtmr`
 - Vercel: no project or production deployment yet.
@@ -72,14 +72,14 @@ This checkpoint is `LOCAL_ACCEPTANCE_PASSED`, not `INVESTOR_DEMO_READY`.
 Deployment, fixed-origin SMTP/account acceptance, and browser acceptance on the
 deployed preview remain open.
 
-## Pause checkpoint - clean-checkout portability blocker
+## Pause checkpoint - clean-checkout portability resolved
 
 Feature work was deliberately paused for this handoff and an independent
 adversarial MVP stocktake. No product, Supabase, source-vault, alias, deployment,
 or external-service state was changed during the stocktake.
 
 Commit `5e360ad` added the first GitHub Actions workflow. Its first clean-runner
-execution, run `31247154848`, failed in both jobs. This is not a flaky test:
+execution exposed a real portability defect:
 
 - `source_vault/objects` is intentionally untracked under the one-copy source
   policy;
@@ -87,21 +87,28 @@ execution, run `31247154848`, failed in both jobs. This is not a flaky test:
   object paths directly;
 - the Python source/ingestion suite also assumes the local vault and lacks a
   declared clean-runner `jsonschema` dependency; and
-- therefore the clean runner fails before lint, type-check, production build,
-  Playwright, or deployability can be proved.
+- therefore the clean runner initially failed before lint, type-check,
+  production build, Playwright, or deployability could be proved.
 
-The local 694-web-test, 210-Python-test, build, and 12/12 Playwright result is
-still valid for the full restored workspace because the workflow commit changed
-only CI configuration. It must not be represented as clean-clone or Vercel
-readiness.
+Commit `d2b20fc` resolves that defect without copying source bytes. Five Sarthi
+loaders and the Gita Jayanti loader now validate compact, tracked source
+identity, coordinates and span hashes without opening the canonical payload at
+runtime. Seventeen exact carrier/span rehash tests are explicitly gated behind
+the local-vault test lane. `pnpm test:vault` still runs all 694 tests when the
+vault is mounted; `pnpm test:product` runs 677 product tests and reports the 17
+offline checks as skipped. The complete Python discovery reported 213/213 OK,
+including the three new clean-checkout repository-contract tests; the shell
+wrapper reached its timeout immediately after unittest printed the successful
+179.679-second closure, so the independent GitHub result below is the clean
+exit-status authority.
 
-The correct repair is architectural, not a source-copy exception: product
-runtime must consume tracked compact product packs/manifests and preserve source
-hash/path provenance by reference. Canonical source-byte rehashing remains an
-offline/local ingestion and vault-integrity test. CI must separately run the
-complete clean-clone product suite and an honest tracked-manifest regression
-suite; vault-dependent tests remain a named local/offline suite. Do not copy the
-6.17 GB vault or any source carrier into Git, the web bundle, tests, or a release.
+GitHub Actions run `31247815169` independently passed on `d2b20fc`: the
+source-vault-free web job completed portable unit tests, lint, type-check,
+production build and all 12 desktop/mobile Playwright journeys; the separate
+tracked-evidence and portability job passed 3/3. PR #4 is now draft,
+`MERGEABLE`, and `CLEAN`. Compact knowledge packs and required ingestion
+plans/reports are explicitly included in Next.js output tracing. The 6.17 GB
+vault and source carriers remain absent from Git and the web bundle.
 
 ## Previous source/product checkpoint
 
@@ -176,10 +183,8 @@ not a mature knowledge graph; and a frozen pilot is not an evaluated pilot.
 
 Fastest honest path:
 
-Before the numbered productization sequence below, remove deployable-runtime
-dependence on local-only `source_vault/objects`, define honest clean-clone versus
-local-vault test suites, and obtain a green GitHub workflow on PR #4. Do not
-merge or deploy the current unstable head.
+The clean-checkout prerequisite is complete on `d2b20fc`; the numbered
+productization sequence below is now the active critical path.
 
 1. Review and merge PRs #1 → #2 → #3 → #4. Create a Vercel project linked to
    the consolidated GitHub branch; configure fixed Supabase Auth origin and SMTP.
@@ -206,13 +211,12 @@ Rough focused effort with content work parallelized where possible:
 
 ## Immediate next action
 
-Do not resume with another acquisition on the main MVP thread. First make the
-deployable product independent of local-only source-vault bytes and get PR #4's
-clean GitHub runner green. Then review and merge the stacked PRs in order and
-ask the user to create the Vercel project from the consolidated branch.
+Do not resume with another acquisition on the main MVP thread. Review and merge
+the stacked PRs in order and ask the user to create the Vercel project from the
+consolidated branch.
 Configure the fixed Supabase Auth origin and SMTP, and run the checked-in
-acceptance suite against that deployed preview. Do not call the local result a
-clean-clone, deployed, or investor-ready result.
+acceptance suite against that deployed preview. Do not call the green
+clean-checkout result a deployed or investor-ready result.
 
 Parallel library-acquisition tasks may continue under the one-copy source-vault
 contract, but they must not block deployment and acceptance of the product
@@ -224,13 +228,12 @@ vertical slice.
 > exact current Git state. Read `AGENTS.md` and
 > `DEVAM_MVP_CURRENT_HANDOFF_2026-08-08.md` completely, then follow its startup
 > sequence. Reverify branch, PR stack, hosted Supabase counts/security boundary,
-> and the latest local test closure. The acceptance matrix and local browser
-> suite are complete on PR #4, but GitHub Actions run `31247154848` exposed a
-> clean-checkout blocker: deployable runtime and tests still read local-only
-> `source_vault/objects`. The immediate objective is to remove that runtime
-> coupling without copying source bytes, split clean-clone product checks from
-> named local-vault checks, and obtain a green PR #4 workflow. Only then review
-> and merge PRs #1 through #4 in order, create the Vercel project from the
+> and the latest test closure. Commit `d2b20fc` removes deployable runtime
+> coupling to local-only source bytes while preserving 17 exact rehash checks in
+> the named local-vault lane. GitHub Actions run `31247815169` passes both clean
+> jobs, including production build and 12 desktop/mobile Playwright cases; PR #4
+> is draft, mergeable and clean. The immediate objective is to review and merge
+> PRs #1 through #4 in order, create the Vercel project from the
 > consolidated branch with explicit user authorization, configure fixed-origin
 > Supabase Auth and SMTP, and rerun the suite on the deployed preview. Preserve the
 > one-copy source vault, explicit rights/edition/uncertainty boundaries, and the
