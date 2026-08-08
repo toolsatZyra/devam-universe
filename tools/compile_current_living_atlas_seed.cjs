@@ -6,7 +6,7 @@ const ROOT = path.resolve(__dirname, "..");
 const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
 const OUTPUT = process.argv[2]
   ? path.resolve(ROOT, process.argv[2])
-  : path.join(ROOT, "supabase/migrations/20260808181500_sync_current_living_atlas.sql");
+  : path.join(ROOT, "supabase/migrations/20260808183000_sync_current_living_atlas.sql");
 
 const DEVIMAHATMYA_SEMANTIC_NODE_SLUGS = ["madhu-kaitabha", "mahishasura", "shumbha", "nishumbha"];
 const ENTITY_BOUND_NODE_SLUGS = [...DEVIMAHATMYA_SEMANTIC_NODE_SLUGS, "ganesha-purana"];
@@ -69,14 +69,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 4 || worldNodes.length !== 43 || worldEdges.length !== 51) {
+  if (gateways.length !== 4 || worldNodes.length !== 44 || worldEdges.length !== 52) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 47) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 51) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 48) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 52) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 51) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 52) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
@@ -99,6 +99,11 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
   const atharvashirshaEdge = worldEdges.find((candidate) => candidate.id === "ganesha-ganapatyatharvashirsha");
   if (!atharvashirshaNode || atharvashirshaNode.gatewayId !== "ganesha" || atharvashirshaEdge?.from !== "ganesha" || atharvashirshaEdge.to !== "ganapatyatharvashirsha") {
     throw new Error("Exact-revision Ganapati Atharvashirsha Atlas route is missing or invalid");
+  }
+  const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
+  const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
+  if (!duttNode || duttNode.gatewayId !== "ramayana" || duttEdge?.from !== "ramayana" || duttEdge.to !== "dutt-ramayana") {
+    throw new Error("Source-bounded Dutt Ramayana Atlas route is missing or invalid");
   }
 }
 
@@ -209,11 +214,11 @@ begin
     and publication_state = 'published'
     and rights_lane = 'product_allowed';
 
-  if app_node_count <> 47 then
-    raise exception 'Expected 47 app-owned Living Atlas nodes, found %', app_node_count;
+  if app_node_count <> 48 then
+    raise exception 'Expected 48 app-owned Living Atlas nodes, found %', app_node_count;
   end if;
-  if app_edge_count <> 51 then
-    raise exception 'Expected 51 app-owned Living Atlas edges, found %', app_edge_count;
+  if app_edge_count <> 52 then
+    raise exception 'Expected 52 app-owned Living Atlas edges, found %', app_edge_count;
   end if;
   if not exists (
     select 1
@@ -286,6 +291,18 @@ begin
       and atlas.visual->>'evidenceBoundary' like '%formal ritual authority%'
   ) then
     raise exception 'Ganapati Atharvashirsha Atlas node is missing its exact revision or authority boundary';
+  end if;
+  if not exists (
+    select 1
+    from public.atlas_nodes atlas
+    where atlas.slug = 'dutt-ramayana'
+      and atlas.entity_id is null
+      and atlas.visual->>'gatewayId' = 'ramayana'
+      and atlas.visual->>'searchQuery' = 'Manmatha Nath Dutt Ramayana seven kandas'
+      and atlas.visual->>'evidenceBoundary' like '%literal SECTION defects remain%'
+      and atlas.visual->>'evidenceBoundary' like '%print-scan reconciliation is incomplete%'
+  ) then
+    raise exception 'Dutt Ramayana Atlas node is missing its selected-edition boundary';
   end if;
 end
 $$;

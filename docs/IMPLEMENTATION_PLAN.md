@@ -2335,6 +2335,20 @@ reconciliation, corrected literal numbering, an edition-identified Sanskrit
 base, Hindi, every Ramayana expression or tradition, the hero universe, or the
 MVP library. Nine deterministic tests pass.
 
+Checkpoint 2026-08-08 (Dutt edition product doorway, local and unapplied): a
+payload-free compact structure pack now reconstructs from the same fixed
+product plan, four immutable electronic carriers, 652 published passage spans,
+and deterministic report. Search exposes either the complete seven-kāṇḍa
+edition structure or a named kāṇḍa with its exact opening and terminal source
+coordinates. Sarthi routes the named Dutt edition ahead of the broad Ramayana
+fallback, and the Living Atlas adds one edition-specific doorway and one
+navigation edge. The pack contains no exact source text, vault path, or copied
+source body. Literal SECTION defects, incomplete page-by-page print-scan
+reconciliation, absence of Sanskrit and Hindi in this expression, and wider
+Ramayana incompleteness remain visible. The local Atlas composition is now
+four gateways, 44 world nodes, and 52 navigation edges. Its forward-only
+migration is prepared but has not been applied to hosted Supabase.
+
 Live hosted census after these checkpoints: 21 works, 27 expressions, 27
 editions, 102 source-object references, 9,091 passages, 1,228 published claims,
 1,233 claim-evidence links, 6 entities, 4 semantic relationships, 42 Atlas
@@ -2359,8 +2373,8 @@ completion must not be inferred from passing tests:
   Ramcharitmanas product editions, broader Ganesha and Durga source families,
   variant dossiers, complete civilizational Atlas coverage, and final
   gateway-specific scene art remain incomplete. The current Atlas has an
-  original shared cinematic environment, 43 connected, progressively revealed
-  world nodes, 51 navigation edges, and four gateways; density beyond the four
+  original shared cinematic environment, 44 connected, progressively revealed
+  world nodes, 52 navigation edges, and four gateways; density beyond the four
   hero launch worlds remains open.
 - The Living Atlas now separates its conceptual Knowledge universe from a
   Sacred geography layer. The latter plots the 11 place nodes already used by
