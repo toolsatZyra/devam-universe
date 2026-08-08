@@ -2445,6 +2445,16 @@ insert-only RLS access; a `security_invoker` daily aggregate is service-role-onl
 The migration remains unapplied, so this closes the code and schema gap but not
 the production analytics or public-launch gate.
 
+Checkpoint 2026-08-08 (runtime readiness, local and undeployed): a no-store
+`/api/health` contract now fails closed in production unless the exact HTTPS
+site origin, publishable-only Supabase pair, explicitly disabled subscription
+and Sarthi-generation flags, absence of forbidden server secrets, and Vercel Git
+commit identity are present. It returns no environment values or credentials
+and keeps database connectivity, SMTP delivery, deployed browser acceptance and
+source-vault access explicitly unproven. The unchanged 12-case browser suite
+checks this endpoint before opening the Atlas. Production monitoring remains
+unproven until the endpoint is exercised on the deployed origin.
+
 Checkpoint 2026-08-08 (complete fixed 1927 Hindi Vālmīki Rāmāyaṇa carrier set):
 ten separately preserved Dwaraka Prasad Sharma volume PDFs now add 191,180,148
 unique bytes and 6,195 visually reviewed PDF pages to the source vault. Title

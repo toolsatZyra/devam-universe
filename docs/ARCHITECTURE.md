@@ -15,6 +15,12 @@ Use the smallest architecture that supports a real vertical slice and preserves 
   role may read the security-invoker daily aggregate. Telemetry is best-effort:
   a missing/unavailable analytics table returns an accepted no-op and cannot
   degrade any Atlas, Search, Sarthi, Today, or account experience.
+- `/api/health` is a no-store configuration-readiness surface. In production it
+  fails closed unless the exact HTTPS site origin, publishable-only Supabase
+  configuration, disabled subscription/generation flags, absent forbidden
+  secrets, and Vercel Git commit identity are present. It returns no environment
+  values or credentials and explicitly does not claim database connectivity,
+  SMTP delivery, deployed browser acceptance, or source-vault access.
 - PostGIS: sacred geography, historical places, routes, and map queries.
 - pgvector + Postgres full-text: multilingual hybrid retrieval.
 - Object storage: immutable source objects, images, and derived media. One object per hash.

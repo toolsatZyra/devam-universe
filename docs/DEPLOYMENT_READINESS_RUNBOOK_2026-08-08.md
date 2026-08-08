@@ -65,6 +65,8 @@ consolidated `main` tree and CI are verified, create one project with:
 - root directory: `apps/web`;
 - install command: `pnpm install --frozen-lockfile`;
 - build command: `pnpm build`;
+- keep **Automatically expose System Environment Variables** enabled so runtime
+  readiness can bind the deployment to `VERCEL_GIT_COMMIT_SHA`;
 - no source-vault upload and no include rule for `source_vault/objects`.
 
 Configure these production variables:
@@ -117,6 +119,13 @@ Official references:
 
 After the deployment is `READY`, run the existing browser suite against the
 fixed origin instead of localhost:
+
+First require `GET <DEVAM_SITE_URL>/api/health` to return HTTP 200 with
+`DEVAM_RUNTIME_READINESS_V1`, `ok: true`, the deployed Git commit SHA, and no
+failed configuration checks. This proves only runtime configuration readiness;
+the response deliberately does not claim database connectivity, SMTP delivery,
+browser acceptance, or source-vault access. The browser suite repeats this
+check before the first of its unchanged 12 cases.
 
 ```powershell
 $env:DEVAM_PREVIEW_URL='https://the-exact-deployed-origin.example'

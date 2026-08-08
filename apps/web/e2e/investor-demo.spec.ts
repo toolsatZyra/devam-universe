@@ -28,6 +28,9 @@ async function expectNoHorizontalOverflow(page: Page) {
 }
 
 test("the Living Atlas exposes all four launch worlds and working map controls", async ({ page }) => {
+  const health = await page.request.get("/api/health");
+  expect(health.status()).toBe(200);
+  expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
   await page.goto("/");
   await expect(page.getByRole("heading", { name: "Where will your curiosity take you?" })).toBeVisible();
   for (const hero of ["Ganesha", "Durga", "Ramayana", "Diwali"]) {
