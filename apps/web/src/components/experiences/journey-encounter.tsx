@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { StoryWorldNode } from "@/lib/domain/story-world";
+import { JourneyLivingPortal } from "./journey-living-portal";
 import { journeyEncounterHref, type JourneyEncounterRoute } from "./ramayana-world-encounters";
 import styles from "./journey-player.module.css";
 
@@ -10,6 +11,7 @@ export function JourneyEncounter({
   storyMoments,
   trailDepth,
   language,
+  livingPortalNodeId,
   onBack,
   onOpenMoment,
   onTravel,
@@ -19,6 +21,7 @@ export function JourneyEncounter({
   storyMoments: { id: string; ordinal: number; title: string; decisiveChange: string; asset?: string; active: boolean }[];
   trailDepth: number;
   language: "en" | "hi";
+  livingPortalNodeId?: string;
   onBack: () => void;
   onOpenMoment: (momentId: string) => void;
   onTravel: (nodeId: string) => void;
@@ -27,6 +30,11 @@ export function JourneyEncounter({
     <button className={styles.encounterBack} type="button" onClick={onBack}>← {trailDepth > 1 ? (language === "hi" ? "पिछली खोज" : "Previous discovery") : (language === "hi" ? "दृश्य पर लौटें" : "Back to the scene")}</button>
     <div className={styles.encounterIdentity} data-family={node.family}><span aria-hidden="true"/><p><small>{node.kind}</small><strong>{node.label}</strong></p></div>
     <p className={styles.encounterSummary}>{node.summary}</p>
+    {livingPortalNodeId && <JourneyLivingPortal
+      language={language}
+      nodeId={livingPortalNodeId}
+      onTravel={onTravel}
+    />}
     {storyMoments.length > 0 && <div className={styles.encounterMoments} aria-label={`Story moments involving ${node.label}`}>
       <small>{language === "hi" ? `कथा में ${node.label} से मिलें` : `Meet ${node.label} in the story`}</small>
       <div className={styles.encounterMomentRail}>{storyMoments.map((moment) => <button type="button" aria-current={moment.active ? "step" : undefined} onClick={() => onOpenMoment(moment.id)} key={moment.id}>

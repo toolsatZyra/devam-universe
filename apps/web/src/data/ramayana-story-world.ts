@@ -1,5 +1,6 @@
 import { gateways, worldEdges, worldNodes } from "./atlas";
 import { buildRamayanaCompass } from "./ramayana-compass";
+import { RAMAYANA_LIVING_PORTAL_NODE_IDS, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE, RAMAYANA_LIVING_ROUTE_ROOT_IDS } from "./ramayana-living-portal-contract";
 import type { WorldNodeFamily } from "@/lib/domain/atlas";
 import type { StoryMoment, StoryWorldNode, StoryWorldPack, StoryWorldRoute } from "@/lib/domain/story-world";
 
@@ -107,7 +108,7 @@ const routeRootIds = ["return-to-ayodhya"];
 
 function resolveNode(id: string): StoryWorldNode | null {
   const node = worldNodes.find((candidate) => candidate.id === id);
-  if (node) return { ...node, gateway: false };
+  if (node) return node;
   const gateway = gateways.find((candidate) => candidate.id === id);
   if (!gateway) return null;
   return {
@@ -122,10 +123,11 @@ function resolveNode(id: string): StoryWorldNode | null {
   };
 }
 
-function compileRoutes(nodeId: string): StoryWorldRoute[] {
+function compileRoutes(nodeId: string, allowedEdgeIds?: string[]): StoryWorldRoute[] {
   const seen = new Set<string>();
   const routes: StoryWorldRoute[] = [];
   for (const edge of worldEdges) {
+    if (allowedEdgeIds && !allowedEdgeIds.includes(edge.id)) continue;
     if (edge.from !== nodeId && edge.to !== nodeId) continue;
     const destinationId = edge.from === nodeId ? edge.to : edge.from;
     if (seen.has(destinationId)) continue;
@@ -151,6 +153,7 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
   const routeRoots = new Set([
     ...Object.values(sceneNodeIds).flat(),
     ...Object.values(castNodeIds),
+    ...RAMAYANA_LIVING_ROUTE_ROOT_IDS,
     ...routeRootIds,
   ]);
 
@@ -158,7 +161,7 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
     const node = resolveNode(nodeId);
     if (!node) continue;
     nodes[nodeId] = node;
-    const nodeRoutes = compileRoutes(nodeId);
+    const nodeRoutes = compileRoutes(nodeId, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE[nodeId]);
     routes[nodeId] = nodeRoutes;
     for (const route of nodeRoutes) {
       const destination = resolveNode(route.destinationId);
@@ -179,6 +182,7 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
     nodeMomentIds,
     castNodeIds,
     moments,
+    livingPortalNodeIds: [...RAMAYANA_LIVING_PORTAL_NODE_IDS],
     nodes,
     routes,
   };

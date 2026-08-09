@@ -3058,6 +3058,46 @@ Ramayana, map a historical route, universalize Diwali, or establish engagement.
 The revised expansion strategy and selected-expression completeness model are
 in `docs/RAMAYANA_STORY_WORLD_STRATEGY.md`.
 
+## 2026-08-10 Ramayana-to-living-Diwali bridge candidate
+
+The first living-world continuation now extends scene seven without embedding
+the ritual corpus in the story payload.
+
+- Rama, Sita and Lakshmana's return is presented as one major North Indian
+  Diwali story association, never as the universal origin of every Diwali or
+  Deepavali.
+- The Diwali encounter lazy-loads one selected language and three separately
+  hash-bound current lanes: West India household Lakshmi Puja, Bengal Kali
+  Puja participation, and Tamil family-dawn Deepavali. Existing ritual content
+  remains the single source of product truth; the endpoint returns no source
+  text.
+- The authored onward trail keeps the player-oriented graph small: Lakshmi Puja
+  can reveal the distinct same-night Kali Puja world; Kali Puja opens Kalighat;
+  Tamil Deepavali returns to its separate Naraka Chaturdashi context; and
+  Kalighat opens a distinct Durga Puja context without equating either festival.
+- One original 2.5D triptych, `diwali-living-worlds-v1.webp` (212,118 bytes,
+  SHA-256 `ec9646dbe901da70da4dd1291bd9edfcb95e7f9e4b41da61ed3789026d02d4af`),
+  supplies separately cropped West India, Bengal and Tamil arrival art and is
+  requested only after the Diwali encounter opens.
+- The story compiler carries only the portal node and four narrow onward route
+  roots. Its established limits remain unchanged at less than 145 KB raw and
+  35 KB gzip; the global Atlas and bilingual ritual payloads are not copied into
+  the browser pack.
+- Every mapped orientation card now derives a direct illustrated-world launch
+  from the compass's one playable turn. This makes the current product boundary
+  explicit and removes the need to guess that War and return → The road home is
+  the only finished visual district.
+- Local acceptance is complete: 850 portable product tests pass with the same
+  17 named source-vault-only skips; lint, TypeScript and the optimized build
+  pass; and all 20 desktop/mobile browser cases pass. The browser suite includes
+  the direct illustrated-world launch and the full scene-seven → Diwali → Bengal
+  Kali Puja → Kalighat → Durga Puja → exact scene return. Preview, fresh remote
+  CI and production verification remain pending for this candidate.
+
+This closes one epic-to-living-India mechanic, not Ramayana story completeness,
+all Diwali traditions, current temple visitor operations, all related places,
+or the civilizational graph denominator.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.

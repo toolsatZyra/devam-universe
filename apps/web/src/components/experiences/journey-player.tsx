@@ -313,6 +313,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   }
 
   function backFromEncounter() {
+    if (encounterTrail.length <= 1) setWorldLens("story");
     setEncounterTrail((trail) => trail.slice(0, -1));
   }
 
@@ -681,6 +682,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
 
       {focusedEncounter && <JourneyEncounter
         language={language}
+        livingPortalNodeId={storyWorld?.livingPortalNodeIds.includes(focusedEncounter.id) ? focusedEncounter.id : undefined}
         node={focusedEncounter}
         routes={focusedEncounterRoutes}
         storyMoments={focusedStoryMoments}

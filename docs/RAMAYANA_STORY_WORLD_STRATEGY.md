@@ -228,6 +228,17 @@ character path as an explicit return portal; returning restores the same path
 and marks the scene the visitor just entered. The portals are compiled from the
 existing character-to-moment index and journey art, so this adds no parallel
 character graph or duplicated story data.
+The coronation scene now also proves one story-to-living-India crossing. Its
+Diwali encounter states that Rama's return is one major North Indian story
+association rather than a universal origin, then opens three separately
+scoped current lanes: West India household Lakshmi Puja, Bengal Kali Puja
+participation, and Tamil family-dawn Deepavali. The selected lane can continue
+through a deliberately authored relationship trail and unwind to the exact
+coronation scene. Living practice loads only when the encounter is opened and
+only in the selected language; it is not copied into the eager story pack.
+Every mapped orientation turn now derives a direct “illustrated world ready”
+door to this playable district, so a visitor does not need to infer that the
+seventh whole-story world contains the one currently visual slice.
 Beat-specific tableaux, sound,
 richer foreground animation, longer optional retellings, and observed user
 comprehension remain open; Gate 2 is therefore not yet complete.
@@ -276,6 +287,16 @@ keeping English/Hindi coverage visible separately.
 Connect the completed spine to Ramlila, festivals, rituals, temples, arts, and
 modern places through current, attributable information. Add separately named
 Ramayana traditions where source and rights boundaries support them.
+
+Current checkpoint: the first bounded route is playable from the road-home
+story into Diwali and three distinct living-practice lanes. Bengal continues
+from Kali Puja to Kalighat Kali Temple and then to a distinct Durga Puja
+context; the shared place does not equate the festivals. Each lane is compiled
+from its existing user-complete ritual pack and exposes only product guidance,
+pack identity, source count, and pack hash—not source text. This proves the
+reusable lazy portal and reversible history mechanics for one crossing. It does
+not complete Diwali, Ramayana's living legacy, temple visitor information,
+Ramlila, or Gate 5.
 
 ## Acceptance and adversarial review
 
