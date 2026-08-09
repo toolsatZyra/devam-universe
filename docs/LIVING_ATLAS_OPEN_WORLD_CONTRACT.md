@@ -129,8 +129,8 @@ priority, not a completeness claim.
 
 ## Current denominator
 
-The current reviewed Atlas candidate contains 5 gateways, 96 world nodes and 158
-navigation edges. Ninety-four edges carry exact retained-source addresses. The
+The current reviewed Atlas candidate contains 5 gateways, 118 world nodes and 198
+navigation edges. One hundred fifty-six edges carry exact retained-source addresses. The
 first edition-scoped narrative constellation adds 18 Ramayana character, king,
 kingdom, place and turning-point nodes. The second adds 16 Devī Māhātmya
 frame-story, character, divine-name, narrative-place and episode nodes across
@@ -173,11 +173,14 @@ textual episode, and a textual episode is not presented as the origin of every
 living practice.
 
 The fifth gateway, **Sacred Time / कालचक्र**, is the first cross-cutting
-constellation. Its initial twelve September–December destinations reuse reviewed
-current-contract ritual packs. Nineteen new routes retain the exact pack SHA-256
-and make calendar, region, tradition, participant role and authority visible at
-the interaction boundary. It is not persistent Panchang chrome, a universal
-festival calendar, or a claim that adjacent observances share an origin or rite.
+constellation. Its initial twelve September–December destinations now extend into
+practice cycles, deity and sage connectors, and every one of the 47 current ritual
+contract records: 46 user-complete lanes and one explicitly limited participation
+companion. The explicit coverage registry hashes the actual pack bytes and binds
+each record to a node and source-addressed route. Cycles such as Ekadashi,
+Sankranti, Pradosha, monthly Durgashtami and Purnima/Amavasya are playable paths,
+not calendar widgets. This is not a universal festival calendar or a claim that
+adjacent observances share an origin, theology, authority or rite.
 
 Authoritative discovery sources already demonstrate the breadth that the model
 must accommodate. UNESCO describes Kolkata Durga Puja across worship, public art,

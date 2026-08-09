@@ -6,7 +6,7 @@ const ROOT = path.resolve(__dirname, "..");
 const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
 const OUTPUT = process.argv[2]
   ? path.resolve(ROOT, process.argv[2])
-  : path.join(ROOT, "supabase/migrations/20260809150000_sync_current_living_atlas.sql");
+  : path.join(ROOT, "supabase/migrations/20260809170000_sync_current_living_atlas.sql");
 
 const DEVIMAHATMYA_NARRATIVE_CONSTELLATION_NODE_SLUGS = [
   "king-suratha", "merchant-samadhi", "sage-medhas", "medhas-hermitage-story-world", "mahamaya",
@@ -36,6 +36,26 @@ const SACRED_TIME_EDGE_IDS = [
   "ahoi-to-diwali", "diwali-to-chhath", "diwali-to-tulasi-vivah", "sacred-time-to-dev-deepawali", "dev-deepawali-to-kashi",
   "kashi-to-kalabhairava-jayanti", "sacred-time-to-vivaha-panchami", "vivaha-panchami-to-sita", "vivaha-panchami-to-rama",
   "vivaha-panchami-to-mithila", "sacred-time-to-gita-jayanti",
+];
+const PRACTICE_CYCLE_NODE_SLUGS = [
+  "agastya-arghya", "sage-agastya", "hala-shashthi", "balarama", "hartalika-teej", "parvati", "shiva",
+  "ekadashi-cycle", "vishnu", "krishna", "kojagara-sharad-purnima", "lakshmi", "masika-durgashtami",
+  "masika-shivaratri", "pradosha-cycle", "purnima-amavasya-cycle", "rishi-panchami", "saptarishi",
+  "sankranti-cycle", "surya", "weekday-rhythm", "jain-diwali-lay-remembrance",
+];
+const PRACTICE_CYCLE_EDGE_IDS = [
+  "sacred-time-to-agastya-arghya", "agastya-arghya-to-sage-agastya", "sacred-time-to-hala-shashthi",
+  "hala-shashthi-to-balarama", "sacred-time-to-hartalika-teej", "hartalika-teej-to-parvati", "parvati-to-shiva",
+  "durga-to-parvati-hartalika", "lakshmi-puja-to-lakshmi",
+  "sacred-time-to-ekadashi-cycle", "ekadashi-cycle-to-vishnu", "ekadashi-cycle-to-krishna", "sacred-time-to-kojagara",
+  "kojagara-to-lakshmi", "kojagara-to-krishna", "sacred-time-to-masika-durgashtami", "masika-durgashtami-to-durga",
+  "sacred-time-to-masika-shivaratri", "masika-shivaratri-to-shiva", "sacred-time-to-pradosha-cycle",
+  "pradosha-cycle-to-shiva", "pradosha-to-masika-shivaratri", "sacred-time-to-purnima-amavasya-cycle",
+  "purnima-amavasya-to-pitru-paksha", "purnima-amavasya-to-kojagara", "sacred-time-to-rishi-panchami",
+  "rishi-panchami-to-saptarishi", "sacred-time-to-sankranti-cycle", "sankranti-cycle-to-surya",
+  "sankranti-to-vishwakarma", "sacred-time-to-weekday-rhythm", "weekday-rhythm-to-surya", "weekday-rhythm-to-shiva",
+  "weekday-rhythm-to-ganesha", "weekday-rhythm-to-durga", "jain-diwali-to-lay-remembrance", "gita-jayanti-to-krishna",
+  "janmashtami-to-krishna", "govardhana-to-krishna", "chhath-to-surya",
 ];
 
 function loadAtlas() {
@@ -95,14 +115,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 96 || worldEdges.length !== 158) {
+  if (gateways.length !== 5 || worldNodes.length !== 118 || worldEdges.length !== 198) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 101) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 158) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 123) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 198) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 158) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 198) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
@@ -145,7 +165,7 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     throw new Error("Dutt Ramayana narrative constellation is incomplete");
   }
   const sourceAddressedAtlasEdges = worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"));
-  if (sourceAddressedAtlasEdges.length < 75 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
+  if (sourceAddressedAtlasEdges.length !== 156 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
     throw new Error("Living Atlas source-addressed routes are incomplete");
   }
   for (let index = 0; index < DISTINCT_DIWALI_NODE_SLUGS.length; index += 1) {
@@ -177,6 +197,18 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
       throw new Error(`Sacred Time edge is missing its immutable ritual-pack coordinate for ${edgeId}`);
     }
   }
+  for (const slug of PRACTICE_CYCLE_NODE_SLUGS) {
+    const node = worldNodes.find((candidate) => candidate.id === slug);
+    if (!node || node.evidenceBoundary.length < 80) {
+      throw new Error(`Practice-cycle node is missing or insufficiently bounded for ${slug}`);
+    }
+  }
+  for (const edgeId of PRACTICE_CYCLE_EDGE_IDS) {
+    const edge = worldEdges.find((candidate) => candidate.id === edgeId);
+    if (!edge?.sourceRef?.match(/^sha256:[0-9a-f]{64}#ritual-pack$/)) {
+      throw new Error(`Practice-cycle edge is missing its immutable ritual-pack coordinate for ${edgeId}`);
+    }
+  }
 }
 
 function buildMigration() {
@@ -199,7 +231,7 @@ function buildMigration() {
 
   return `-- Generated from apps/web/src/data/atlas.ts by
 -- tools/compile_current_living_atlas_seed.cjs.
--- This migration upserts app-owned navigation metadata only. It does not alter
+-- This migration upserts app-owned nodes and replaces app-owned edge metadata only. It does not alter
 -- RLS, functions, grants, source evidence, or independently managed Atlas rows.
 
 begin;
@@ -221,6 +253,13 @@ on conflict (slug) do update set
   rights_lane = excluded.rights_lane,
   publication_state = excluded.publication_state,
   updated_at = now();
+
+-- Edge identity in Postgres is the endpoint-and-label triple. Remove only the
+-- exact reviewed app-owned source IDs before reinserting so a formerly
+-- misrouted or relabelled app edge cannot survive beside its current version.
+-- Independently managed edges have no reviewed source ID and remain untouched.
+delete from public.atlas_edges
+where visual->>'sourceId' = any (array[${edgeIdArray}]);
 
 insert into public.atlas_edges (
   source_node_id, target_node_id, label, visual, rights_lane, publication_state
@@ -421,6 +460,22 @@ begin
       and edge.visual->>'sourceRef' ~ '^sha256:[0-9a-f]{64}#ritual-pack$'
   ) <> ${SACRED_TIME_EDGE_IDS.length} then
     raise exception 'Sacred Time Atlas lanes are missing, unbounded, or not source-addressed';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${PRACTICE_CYCLE_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${PRACTICE_CYCLE_NODE_SLUGS.length} then
+    raise exception 'Sacred Time practice-cycle nodes are missing or outside their evidence boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${PRACTICE_CYCLE_EDGE_IDS.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' ~ '^sha256:[0-9a-f]{64}#ritual-pack$'
+  ) <> ${PRACTICE_CYCLE_EDGE_IDS.length} then
+    raise exception 'Sacred Time practice-cycle routes are missing or not source-addressed';
   end if;
 end
 $$;
