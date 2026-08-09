@@ -203,11 +203,15 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
 
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
-  await page.getByRole("button", { name: "Follow Rama homecoming tradition to Diwali in another world" }).click();
+  await page.getByRole("button", { name: "Follow Rama homecoming story tradition to Diwali in another world" }).click();
   await expect(page.getByRole("button", { name: "Explore Diwali" })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Follow same new-moon night, distinct Bengal festival to Kali Puja" }).click();
   await expect(page.getByRole("heading", { name: "Kali Puja" })).toBeVisible();
-  await page.getByRole("button", { name: "Follow explore a distinct textual Kālikā world to Kālikā in another world" }).click();
+  await page.getByRole("button", { name: "Follow opens a living Kalighat temple world to Kalighat Kali Temple in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Kalighat Kali Temple" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow centres a living Kali form to The Kali form at Kalighat" }).click();
+  await expect(page.getByRole("heading", { name: "The Kali form at Kalighat" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow invites a living-form and textual-form comparison to Kālikā" }).click();
   await expect(page.getByRole("heading", { name: "Kālikā" })).toBeVisible();
   await page.getByRole("button", { name: "Follow adjacent manifestation passage to Kauśikī" }).click();
   await expect(page.getByRole("heading", { name: "Kauśikī" })).toBeVisible();
@@ -229,9 +233,8 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Diwali" }).click();
   await page.getByRole("button", { name: "Follow same new-moon night, distinct Bengal festival to Kali Puja" }).click();
-  await page.getByRole("button", { name: "Follow connected Shakta goddess traditions to Durga in another world" }).click();
-  await expect(page.getByRole("button", { name: "Explore Durga" })).toHaveAttribute("aria-pressed", "true");
-  await page.getByRole("button", { name: "Follow living festival world to Durga Puja" }).click();
+  await page.getByRole("button", { name: "Follow opens a living Kalighat temple world to Kalighat Kali Temple in another world" }).click();
+  await page.getByRole("button", { name: "Follow also opens a distinct Kalighat festival context to Durga Puja" }).click();
   await expect(page.getByRole("heading", { name: "Durga Puja" })).toBeVisible();
   await page.getByRole("button", { name: "Follow public performance of worship and art to Worship becomes public art" }).click();
   await expect(page.getByRole("heading", { name: "Worship becomes public art" })).toBeVisible();
@@ -239,6 +242,19 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("heading", { name: "A city of temporary installations" })).toBeVisible();
   await page.getByRole("button", { name: "Follow spreads through the living city to Kolkata" }).click();
   await expect(page.getByRole("heading", { name: "Kolkata" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Diwali" }).click();
+  await page.getByRole("button", { name: "Follow same new-moon night, distinct Bengal festival to Kali Puja" }).click();
+  await page.getByRole("button", { name: "Follow opens Dakshineswar's Shyama Puja to Shyama Puja at Dakshineswar" }).click();
+  await page.getByRole("button", { name: "Follow takes place in a living temple world to Dakshineswar Kali Temple in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Dakshineswar Kali Temple" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow opens its patronage history to Rani Rashmoni" }).click();
+  await expect(page.getByRole("heading", { name: "Rani Rashmoni" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow opens its patronage history to Dakshineswar Kali Temple" }).click();
+  await page.getByRole("button", { name: "Follow includes a row of Shiva temples to Dakshineswar's Shiva temples" }).click();
+  await page.getByRole("button", { name: "Follow opens the wider Shiva universe to Shiva in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Shiva" })).toBeVisible();
 
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Sacred Time" }).click();

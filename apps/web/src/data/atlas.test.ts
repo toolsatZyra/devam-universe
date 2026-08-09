@@ -122,7 +122,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(154);
+    expect(worldNodes).toHaveLength(166);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -176,28 +176,58 @@ describe("Living Atlas exploration data", () => {
     expect(worldNodes.find((node) => node.id === "vijayanagara-empire")?.evidenceBoundary).toContain("historically attested polity");
   });
 
-  it("supports an evidence-bounded cross-world path from Ramayana to Durga Puja", () => {
+  it("supports an evidence-bounded cross-world path from Ramayana to Kolkata's Shakta festival worlds", () => {
     const requiredPath = [
       ["ramayana", "diwali"],
       ["diwali", "kali-puja"],
-      ["kali-puja", "durga"],
-      ["durga", "durga-puja"],
+      ["kali-puja", "kalighat-kali-temple"],
+      ["durga-puja", "kalighat-kali-temple"],
     ] as const;
     for (const [from, to] of requiredPath) {
       const edge = worldEdges.find((candidate) => candidate.from === from && candidate.to === to);
       expect(edge, `${from} must connect to ${to}`).toBeDefined();
-      if (edge?.id !== "diwali-kolkata" && edge?.id !== "lakshmi-to-kali") {
-        expect(edge?.evidenceBoundary?.length ?? 0, `${edge?.id} needs a visible scope boundary`).toBeGreaterThan(80);
-      }
+      expect(edge?.evidenceBoundary?.length ?? 0, `${edge?.id} needs a visible scope boundary`).toBeGreaterThan(80);
     }
     const bridgeEdges = worldEdges.filter((edge) => edge.evidenceBoundary);
     expect(bridgeEdges.map((edge) => edge.id)).toEqual(expect.arrayContaining([
       "ramayana-to-diwali",
       "diwali-to-kali-puja",
-      "kali-puja-to-durga",
+      "kali-puja-to-kalighat-temple",
+      "kalighat-temple-to-durga-puja",
       "durga-to-durga-puja",
       "durga-puja-to-kolkata",
     ]));
+  });
+
+  it("turns Kolkata, Kalighat, and Dakshineswar into a sourced temple, art, maker, patronage, and cross-world constellation", () => {
+    const constellationIds = [
+      "kalighat-kali-temple", "kalighat-kali-form", "kalighat-art-transition", "kalighat-pat",
+      "kalighat-patua-community", "dakshineswar-kali-temple", "bhavatarini-dakshineswar",
+      "rani-rashmoni", "ramakrishna-dakshineswar", "dakshineswar-shiva-temples",
+      "dakshineswar-radha-krishna-temple", "dakshineswar-shyama-puja",
+    ];
+    const nodes = worldNodes.filter((node) => constellationIds.includes(node.id));
+    expect(nodes).toHaveLength(12);
+    expect(new Set(nodes.map((node) => node.family))).toEqual(new Set([
+      "art_culture", "being_person", "historical_process", "institution_community", "place_polity", "time_observance",
+    ]));
+
+    const routes = [
+      ["kali-puja", "kalighat-kali-temple", "kalighat-kali-form", "kalika"],
+      ["durga-puja", "kalighat-kali-temple", "kalighat-art-transition", "kalighat-pat", "kalighat-patua-community"],
+      ["kalighat-kali-temple", "dakshineswar-kali-temple", "rani-rashmoni", "ramakrishna-dakshineswar"],
+      ["dakshineswar-kali-temple", "dakshineswar-shiva-temples", "shiva"],
+      ["dakshineswar-kali-temple", "dakshineswar-radha-krishna-temple", "krishna"],
+    ];
+    for (const route of routes) {
+      for (let index = 0; index < route.length - 1; index += 1) {
+        const edge = worldEdges.find((candidate) => candidate.from === route[index] && candidate.to === route[index + 1]);
+        expect(edge, `${route[index]} must connect to ${route[index + 1]}`).toBeDefined();
+        expect(edge?.sourceRef).toMatch(/^citation:https:\/\//);
+        expect(edge?.evidenceBoundary?.length ?? 0).toBeGreaterThan(100);
+      }
+    }
+    expect(worldEdges.some((edge) => ["diwali-kolkata", "kali-puja-to-kalika", "kali-puja-to-durga"].includes(edge.id))).toBe(false);
   });
 
   it("turns the Dutt edition into a source-addressed character, place, and event constellation", () => {
@@ -293,7 +323,7 @@ describe("Living Atlas exploration data", () => {
 
     const constellationEdges = worldEdges
       .filter((edge) => constellationIds.includes(edge.from) || constellationIds.includes(edge.to))
-      .filter((edge) => edge.id !== "kali-puja-to-kalika");
+      .filter((edge) => edge.id !== "kalighat-form-to-kalika-comparison");
     expect(constellationEdges).toHaveLength(37);
     expect(constellationEdges.every((edge) => edge.sourceRef?.includes("sha256:"))).toBe(true);
 
@@ -315,8 +345,8 @@ describe("Living Atlas exploration data", () => {
       expect(edge?.sourceRef).toContain("sha256:");
     }
 
-    const kaliBridge = worldEdges.find((edge) => edge.id === "kali-puja-to-kalika");
-    expect(kaliBridge?.evidenceBoundary).toContain("does not claim festival origin");
+    const kaliBridge = worldEdges.find((edge) => edge.id === "kalighat-form-to-kalika-comparison");
+    expect(kaliBridge?.evidenceBoundary).toContain("invites comparison");
   });
 
   it("turns every current ritual contract into a traversable practice-cycle doorway", () => {
@@ -336,7 +366,7 @@ describe("Living Atlas exploration data", () => {
       }
     }
 
-    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(175);
+    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(177);
   });
 
   it("gives every era a visible exploration path", () => {
@@ -422,10 +452,10 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 159 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 251 app-owned Living Atlas edges");
-      expect(sql).toContain("Rama homecoming tradition");
-      expect(sql).toContain("connected Shakta goddess traditions");
+      expect(sql).toContain("Expected 171 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 268 app-owned Living Atlas edges");
+      expect(sql).toContain("Rama homecoming story tradition");
+      expect(sql).toContain("Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
       expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
       expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");

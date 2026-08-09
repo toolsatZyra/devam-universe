@@ -17,8 +17,8 @@ navigation disguised as a map. Pan, wheel, pinch, keyboard movement, path
 travel, bounded trail backtracking, progressive reveal, and zoom-compensated
 landmarks operate at every depth. A node focus opens a compact encounter over
 the continuing universe; evidence, exact Search, and optional Sarthi remain
-connected doors. The current reviewed projection has 159 nodes including five
-gateways and 251 typed edges. Those are projection integrity counters, never a
+connected doors. The current reviewed projection has 171 nodes including five
+gateways and 268 typed edges. Those are projection integrity counters, never a
 claim of cultural or civilizational completeness.
 
 ## Principle
@@ -49,6 +49,11 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 - Narrative geography, living place-belief, physical geography, archaeology,
   attested polity/history, living worship, and current visitor information use
   separate claim scopes even when the Atlas connects them into one journey.
+- Living-temple identity, institutional history, festival context, patronage,
+  art history, maker-community history, and source-text comparison also remain
+  separate claim scopes. The Kolkata Shakta projection demonstrates this by
+  connecting Kalighat and Dakshineswar without equating their forms, temples,
+  rituals, histories, communities, or authority.
 - The Living Atlas projection and its evidence-scoped relationship vocabulary
   follow `docs/LIVING_ATLAS_OPEN_WORLD_CONTRACT.md`. Progressive visual levels
   of detail never weaken the underlying claim, applicability, rights or
