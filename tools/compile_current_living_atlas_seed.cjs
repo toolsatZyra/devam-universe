@@ -98,6 +98,22 @@ const HAMPI_KISHKINDHA_EDGE_IDS = [
   "vijayanagara-to-architecture", "architecture-to-vitthala", "capital-to-talikota-1565",
   "talikota-to-hampi-horizon", "hampi-to-vijayanagara-architecture",
 ];
+const KOLKATA_SHAKTA_NODE_SLUGS = [
+  "kalighat-kali-temple", "kalighat-kali-form", "kalighat-art-transition", "kalighat-pat",
+  "kalighat-patua-community", "dakshineswar-kali-temple", "bhavatarini-dakshineswar",
+  "rani-rashmoni", "ramakrishna-dakshineswar", "dakshineswar-shiva-temples",
+  "dakshineswar-radha-krishna-temple", "dakshineswar-shyama-puja",
+];
+const KOLKATA_SHAKTA_EDGE_IDS = [
+  "kali-puja-to-kalighat-temple", "kalighat-temple-to-kali-form", "kalighat-temple-to-durga-puja",
+  "kalighat-temple-to-kolkata", "kalighat-temple-to-art-transition", "art-transition-to-kalighat-pat",
+  "kalighat-pat-to-patua-community", "kali-puja-to-dakshineswar-shyama-puja",
+  "dakshineswar-shyama-puja-to-temple", "dakshineswar-to-bhavatarini", "dakshineswar-to-rani-rashmoni",
+  "dakshineswar-to-ramakrishna", "rani-rashmoni-to-ramakrishna", "dakshineswar-to-shiva-temples",
+  "shiva-temples-to-shiva", "dakshineswar-to-radha-krishna-temple", "radha-krishna-temple-to-krishna",
+  "dakshineswar-to-kolkata", "kalighat-form-to-kalika-comparison", "kalighat-temple-to-dakshineswar",
+];
+const RETIRED_EDGE_IDS = ["diwali-kolkata", "kali-puja-to-kalika", "kali-puja-to-durga"];
 const WORLD_NODE_FAMILIES = new Set([
   "being_person", "event_story", "place_polity", "time_observance", "practice_material",
   "source_expression", "institution_community", "idea_wisdom", "art_culture", "historical_process",
@@ -176,14 +192,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 154 || worldEdges.length !== 251) {
+  if (gateways.length !== 5 || worldNodes.length !== 166 || worldEdges.length !== 268) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 159) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 251) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 171) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 268) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 251) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 268) throw new Error("Atlas edge endpoint and label triples must be unique");
   if (worldNodes.some((node) => !WORLD_NODE_FAMILIES.has(node.family))) throw new Error("Atlas nodes must declare a normalized family");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
@@ -204,7 +220,7 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
   const sourceAddressedDevimahatmyaEdges = worldEdges.filter((edge) =>
     DEVIMAHATMYA_NARRATIVE_CONSTELLATION_NODE_SLUGS.includes(edge.from)
     || DEVIMAHATMYA_NARRATIVE_CONSTELLATION_NODE_SLUGS.includes(edge.to)
-  ).filter((edge) => edge.id !== "kali-puja-to-kalika");
+  ).filter((edge) => edge.id !== "kalighat-form-to-kalika-comparison");
   if (sourceAddressedDevimahatmyaEdges.length !== 37 || sourceAddressedDevimahatmyaEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
     throw new Error("Devimahatmya narrative constellation has missing source addresses");
   }
@@ -238,6 +254,17 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     && edge.evidenceBoundary?.length >= 100))) {
     throw new Error("Hampi-Kishkindha-Vijayanagara routes are missing official citation-only sources or evidence boundaries");
   }
+  if (KOLKATA_SHAKTA_NODE_SLUGS.some((slug) => !worldNodes.some((node) => node.id === slug
+    && node.gatewayId === (slug === "dakshineswar-shyama-puja" ? "diwali" : "durga")
+    && node.evidenceBoundary.length >= 100))) {
+    throw new Error("Kolkata-Kalighat-Dakshineswar constellation is incomplete");
+  }
+  if (KOLKATA_SHAKTA_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId
+    && /^citation:https:\/\/(?:www\.(?:incredibleindia\.gov\.in|wbtourism\.gov\.in|prod\.incredibleindia\.gov\.in|kmcgov\.in)|dakshineswarkalitemple\.org|dakshineshwar\.rkmm\.org)\//.test(edge.sourceRef ?? "")
+    && edge.evidenceBoundary?.length >= 100
+    && WORLD_RELATION_KINDS.has(edge.relationKind)))) {
+    throw new Error("Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources or evidence boundaries");
+  }
   const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
   const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
   if (!duttNode || duttNode.gatewayId !== "ramayana" || duttEdge?.from !== "ramayana" || duttEdge.to !== "dutt-ramayana") {
@@ -247,7 +274,7 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     throw new Error("Dutt Ramayana narrative constellation is incomplete");
   }
   const sourceAddressedAtlasEdges = worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"));
-  if (sourceAddressedAtlasEdges.length !== 175 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
+  if (sourceAddressedAtlasEdges.length !== 177 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
     throw new Error("Living Atlas source-addressed routes are incomplete");
   }
   for (let index = 0; index < DISTINCT_DIWALI_NODE_SLUGS.length; index += 1) {
@@ -257,7 +284,7 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
       throw new Error(`Distinct Diwali Atlas lane is missing or invalid for ${DISTINCT_DIWALI_NODE_SLUGS[index]}`);
     }
   }
-  const requiredBridgeIds = ["ramayana-to-diwali", "diwali-to-kali-puja", "kali-puja-to-durga", "durga-to-durga-puja", "durga-puja-to-kolkata"];
+  const requiredBridgeIds = ["ramayana-to-diwali", "diwali-to-kali-puja", "kali-puja-to-kalighat-temple", "kalighat-temple-to-durga-puja", "durga-to-durga-puja", "durga-puja-to-kolkata"];
   for (const edgeId of requiredBridgeIds) {
     const edge = worldEdges.find((candidate) => candidate.id === edgeId);
     if (!edge || typeof edge.evidenceBoundary !== "string" || edge.evidenceBoundary.length < 80) {
@@ -307,6 +334,7 @@ function buildMigration() {
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
+  const edgeDeleteIdArray = [...worldEdges.map((edge) => edge.id), ...RETIRED_EDGE_IDS].map(sqlText).join(", ");
   const semanticNodeRows = ENTITY_BOUND_NODE_SLUGS.map((slug) => `(${sqlText(slug)}, ${sqlText(slug)})`).join(",\n  ");
   const semanticEdgeRows = DEVIMAHATMYA_SEMANTIC_NODE_SLUGS.map((slug, index) => `(${sqlText(DEVIMAHATMYA_SEMANTIC_EDGE_IDS[index])}, ${sqlText(slug)})`).join(",\n  ");
   const sourceAddressedAtlasEdgeIds = worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:")).map((edge) => edge.id);
@@ -341,7 +369,7 @@ on conflict (slug) do update set
 -- misrouted or relabelled app edge cannot survive beside its current version.
 -- Independently managed edges have no reviewed source ID and remain untouched.
 delete from public.atlas_edges
-where visual->>'sourceId' = any (array[${edgeIdArray}]);
+where visual->>'sourceId' = any (array[${edgeDeleteIdArray}]);
 
 insert into public.atlas_edges (
   source_node_id, target_node_id, label, visual, rights_lane, publication_state
@@ -552,6 +580,32 @@ begin
       and edge.visual->>'evidenceBoundary' is not null
   ) <> ${HAMPI_KISHKINDHA_EDGE_IDS.length} then
     raise exception 'Hampi-Kishkindha-Vijayanagara routes are missing official citation-only sources';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${KOLKATA_SHAKTA_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = case when atlas.slug = 'dakshineswar-shyama-puja' then 'diwali' else 'durga' end
+      and atlas.visual->>'family' is not null
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${KOLKATA_SHAKTA_NODE_SLUGS.length} then
+    raise exception 'Kolkata-Kalighat-Dakshineswar nodes are missing or outside their evidence boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${KOLKATA_SHAKTA_EDGE_IDS.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' like 'citation:https://%'
+      and edge.visual->>'relationKind' is not null
+      and edge.visual->>'evidenceBoundary' is not null
+  ) <> ${KOLKATA_SHAKTA_EDGE_IDS.length} then
+    raise exception 'Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources';
+  end if;
+  if exists (
+    select 1 from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${RETIRED_EDGE_IDS.map(sqlText).join(", ")}])
+  ) then
+    raise exception 'Retired unsourced Kolkata bridge edges survived synchronization';
   end if;
   if not exists (
     select 1

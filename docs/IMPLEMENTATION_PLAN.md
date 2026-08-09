@@ -1,5 +1,16 @@
 # Implementation plan
 
+Checkpoint 2026-08-09 (Kolkata Shakta living-place and art constellation): the
+Living Atlas adds twelve citation-only destinations and twenty typed routes
+across Kali Puja, Kalighat, its living Kali form, Kalighat painting and patua
+maker history, Dakshineswar, Bhavatarini, Rani Rashmoni, Ramakrishna, Shiva
+temples, a Radha-Krishna temple, and Shyama Puja. Three unsourced shortcut edges
+were retired in favor of explorable, evidence-bounded paths. Exact Search and
+Sarthi serve concise English/Hindi orientation without copying source prose or
+hijacking generic ritual questions. The generated reversible hosted projection
+target is 171 reviewed nodes including five gateways and 268 app-owned edges;
+these are selected product counters, not civilizational completeness.
+
 Checkpoint 2026-08-10 (reversible game navigation and the first place-history
 world): the Living Atlas now keeps a bounded discovery trail with one-action
 backtracking, names the current depth as cosmos, world, constellation, or
@@ -12,8 +23,8 @@ capital and empire, Krishna Deva Raya, Virupaksha, Vitthala, the stone chariot,
 architecture, and the 1565 rupture. Exact Search and Sarthi support this world
 in English and Hindi. Epic narrative, living belief, geography, archaeology,
 documented history, living temple authority, and visitor information remain
-separate evidence lanes. The next hosted projection target is 159 reviewed
-nodes and 251 app-owned edges; these are selected product counters, not
+separate evidence lanes. That hosted projection target was 159 reviewed nodes
+and 251 app-owned edges; these are selected product counters, not
 civilizational completeness.
 
 Checkpoint 2026-08-09 (living-culture travel and scalable node semantics): the

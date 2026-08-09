@@ -236,6 +236,39 @@ silhouettes, zoom-compensated landmarks, and a brief warp cue. These are the
 minimum reusable game systems for later worlds; the constellation is a proof of
 the scalable pattern, not the intended breadth ceiling.
 
+## Kolkata-Kalighat-Dakshineswar Shakta constellation
+
+This tranche replaces three unsourced shortcut relationships with a playable
+network of twelve destinations and twenty official-source routes. It proves
+that a festival connection can open many kinds of cultural world instead of
+ending at another deity label:
+
+- **Kali Puja -> living places:** the festival opens Kalighat and
+  Dakshineswar/Shyama Puja as distinct temple worlds, not interchangeable
+  examples of one universal practice.
+- **Temple -> form -> text comparison:** Kalighat's living temple form can be
+  compared with the pinned Devimahatmya Kalika passage without asserting
+  identity, origin, hierarchy, ritual authority, or equivalence.
+- **Shared place -> distinct festival:** Kalighat connects Kali Puja and Durga
+  Puja because an official place account names both contexts; their calendars,
+  stories, forms, procedures, and participant authorities remain separate.
+- **Temple edge -> art -> makers:** the Kalighat route continues into painting,
+  urban visual culture, and patua maker history rather than treating art as
+  decorative background or anonymous content.
+- **Temple -> patron -> religious figure:** Dakshineswar opens Rani Rashmoni's
+  documented patronage and Ramakrishna's institutionally documented temple
+  association as historical routes whose larger biographies and devotional
+  claims still need their own evidence.
+- **One complex -> other worlds:** Dakshineswar's Shiva temples and
+  Radha-Krishna temple create cross-world routes to Shiva and Krishna without
+  making a local dedication stand for complete Shaiva or Vaishnava traditions.
+
+Search and Sarthi return bilingual Devam paraphrases with citation-only links
+to official tourism, temple, and Ramakrishna Math pages. Source prose is not
+retained or quoted. Temple authority, institutional belief, art attribution,
+community testimony, ritual guidance, current schedules, access, and visitor
+safety stay outside what these overview citations prove.
+
 ## Expansion order
 
 Expansion is demand-driven by enjoyable journeys, not raw node counts:
