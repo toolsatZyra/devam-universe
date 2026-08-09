@@ -217,7 +217,12 @@ that depicts another event. Each beat applies a lightweight focal crop, depth,
 palette, and motion motif over its scene, and the player preloads only immediate
 neighbour art to preserve continuity without eagerly loading the district. A
 compiler-derived character/place index can return an encounter directly to
-every playable moment in which it appears. Beat-specific tableaux, sound,
+every playable moment in which it appears. The whole-story map now uses that
+same graph to reveal all seven detailed scenes across five connected narrative
+places, retaining whether each scene occurs at, arrives in, departs from,
+remembers, or merely asks about the place. A visitor can enter an exact scene
+from Nandigrama, Ayodhya, or another lit place and return to the same map context.
+Beat-specific tableaux, sound,
 richer foreground animation, longer optional retellings, and observed user
 comprehension remain open; Gate 2 is therefore not yet complete.
 
@@ -244,7 +249,11 @@ began. The Map lens now compiles thirty-one narrative places and the routes
 between them from the same turns. It treats a repeated place as one temporal
 nexus, reveals its ordered moments, supports bounded two-way pan and progressive
 zoom, opens a chosen moment in the whole-story view, and restores the precise map
-context on return. Its layout is explicitly schematic story geography—not
+context on return. The road-home district's detailed scene cards are also
+compiler-derived from existing journey moments and event-to-place graph
+relationships rather than a parallel hand-authored map. Their relationship
+wording remains visible to prevent a referenced place from being presented as
+a scene setting. Its layout is explicitly schematic story geography—not
 modern coordinates, archaeology, a travel route, or historical GIS. Richer
 illustrated terrain, a separately sourced modern-place layer, reviewed living
 connections, deeper scenes, and observed user comprehension remain open, so

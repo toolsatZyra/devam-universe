@@ -443,6 +443,26 @@ test("the Ramayana narrative map pans, zooms, and returns to exact story context
   await expect(page.getByRole("heading", { name: "Sita and the impossible bow" })).toBeVisible();
   await page.getByRole("button", { name: "Map", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Mithila", exact: true })).toBeVisible();
+
+  await page.getByRole("button", { name: "Nandigrama, 1 story moment" }).click();
+  const nandigramaScenes = page.getByLabel("Nandigrama playable story connections");
+  await expect(nandigramaScenes.getByRole("button")).toHaveCount(2);
+  await expect(nandigramaScenes.getByText("arrives in", { exact: false })).toBeVisible();
+  await expect(nandigramaScenes.getByText("unfolds at", { exact: false })).toBeVisible();
+  await nandigramaScenes.getByRole("button", { name: /Bharata hears the news.*Enter playable scene/ }).click();
+  await expect(page.getByRole("heading", { name: "Bharata hears the news" })).toBeVisible();
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Nandigrama", exact: true })).toBeVisible();
+  await expect(page.getByLabel("Nandigrama playable story connections").getByRole("button")).toHaveCount(2);
+
+  await page.getByRole("button", { name: /Ayodhya, \d+ story moments/ }).click();
+  const ayodhyaScenes = page.getByLabel("Ayodhya playable story connections");
+  await expect(ayodhyaScenes.getByRole("button")).toHaveCount(3);
+  await expect(ayodhyaScenes.getByText("asks for news of", { exact: false })).toBeVisible();
+  await ayodhyaScenes.getByRole("button", { name: /The kingdom is returned.*Enter playable scene/ }).click();
+  await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Ayodhya", exact: true })).toBeVisible();
   expect(await ramayanaWorld.evaluate((element) => ({ left: element.scrollLeft, top: element.scrollTop }))).toEqual({ left: 0, top: 0 });
   await expectNoHorizontalOverflow(page);
 });

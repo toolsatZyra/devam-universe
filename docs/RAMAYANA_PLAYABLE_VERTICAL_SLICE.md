@@ -111,10 +111,17 @@ roughly 45 words per beat in English and Hindi.
 
 ### Route
 
-A stylized narrative map shows only four landmarks needed for this slice:
-Lanka, Bharadvaja's hermitage, Nandigrama, and Ayodhya. It is explicitly a story
-route, not a historical GIS assertion. Selecting a landmark returns to the
-corresponding scene without losing progress.
+The whole-story map shows thirty-one canonical narrative places without
+pretending they are modern coordinates. Inside it, the playable road-home
+district currently lights five connected places: Lanka, Kishkindha,
+Bharadvaja's hermitage, Nandigrama, and Ayodhya. The scene cards are compiled
+from the existing event-to-place graph and retain the exact relationship label
+(`departs from`, `remembers`, `takes place at`, `asks for news of`, `arrives in`,
+`unfolds at`, or the equivalent stored relationship), so a place mentioned in a
+scene is not silently recast as its physical setting. Selecting a card enters
+that exact scene; returning to Map restores the selected place and its local
+trail without losing story progress. The layout remains explicitly a schematic
+story world, not a historical GIS assertion.
 
 ### Connections
 
