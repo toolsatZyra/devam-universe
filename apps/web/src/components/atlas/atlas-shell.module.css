@@ -86,6 +86,17 @@
 .discoveryGlow { position: absolute; inset: 8px; border-radius: 50%; background: rgba(111,179,195,.16); filter: blur(7px); animation: breathe 5s ease-in-out infinite; animation-delay: var(--delay); }
 .discoveryCore { position: absolute; inset: 24px; border-radius: 50%; background: #d9edf0; box-shadow: 0 0 8px #d8f2f2, 0 0 26px rgba(102,188,199,.55); }
 .discoveryMajor .discoveryCore { inset: 21px; background: #f3d79b; box-shadow: 0 0 9px #f7daa2, 0 0 32px rgba(224,168,85,.55); }
+.discovery_being_person .discoveryCore { background: #f1b4cb; box-shadow: 0 0 8px #f5cada, 0 0 27px rgba(222,109,157,.55); }
+.discovery_event_story .discoveryCore { background: #f1bd7d; box-shadow: 0 0 8px #f5d4a1, 0 0 27px rgba(225,151,73,.55); }
+.discovery_place_polity .discoveryCore { background: #91d9ea; box-shadow: 0 0 8px #c0edf5, 0 0 27px rgba(76,176,205,.55); }
+.discovery_time_observance .discoveryCore { background: #a9bff2; box-shadow: 0 0 8px #ccd8f8, 0 0 27px rgba(103,139,222,.55); }
+.discovery_practice_material .discoveryCore { background: #9eddb8; box-shadow: 0 0 8px #c7edd6, 0 0 27px rgba(83,181,125,.55); }
+.discovery_source_expression .discoveryCore { background: #c6acef; box-shadow: 0 0 8px #ddcff5, 0 0 27px rgba(145,106,211,.55); }
+.discovery_institution_community .discoveryCore { background: #e3c583; box-shadow: 0 0 8px #efdda9, 0 0 27px rgba(201,158,68,.55); }
+.discovery_idea_wisdom .discoveryCore { background: #abc8ef; box-shadow: 0 0 8px #ccdcf5, 0 0 27px rgba(100,145,207,.55); }
+.discovery_art_culture .discoveryCore { background: #e7a8df; box-shadow: 0 0 8px #f0c6eb, 0 0 29px rgba(203,97,190,.6); }
+.discovery_historical_process .discoveryCore { background: #dfaa79; box-shadow: 0 0 8px #efd0b1, 0 0 27px rgba(194,119,65,.55); }
+.discoveryMajor .discoveryCore { inset: 21px; }
 .discoveryLabel { position: absolute; left: 50%; top: 54px; width: 170px; transform: translateX(-50%); display: grid; justify-items: center; text-align: center; text-shadow: 0 2px 14px #02040a; opacity: 0; transition: opacity .4s ease; }
 .discoveryVisible .discoveryLabel { opacity: 1; }
 .discoveryLabel strong { font: 400 12px Georgia, serif; }

@@ -1,5 +1,16 @@
 # Implementation plan
 
+Checkpoint 2026-08-09 (living-culture travel and scalable node semantics): the
+reviewed Atlas now assigns every destination to one of ten normalized node
+families in addition to its specific human-facing kind. The first reuse of that
+model adds ten citation-only living-cultural-heritage destinations and sixteen
+explicit routes across Ramlila performance, community making, Ramnagar/Benares,
+the Dussehra season, Kolkata Durga Puja public art, Kumartuli workshops, clay
+images, installations, drumming, and seasonal return. Exact Search and Sarthi
+share the same official UNESCO citation boundary and return no copied source
+text. The next hosted projection target is 146 reviewed nodes and 233 app-owned
+edges; these are selected product counters, not civilizational completeness.
+
 Checkpoint 2026-08-09 (typed Living Atlas world model and Ganesha connected
 world): the client now normalizes every Atlas edge into eleven relationship
 families and exposes that path meaning through line colour and connection cards.
@@ -7,7 +18,7 @@ The Ganesha world adds thirteen source-bounded nodes and nineteen
 source-addressed routes spanning the exact Atharvashirsha's cosmic, form, name,
 symbol, and Shiva-kinship doors plus the reviewed Ganesh Chaturthi public
 history, community-pandal, material, offering, and farewell worlds. The hosted
-projection target is 136 reviewed nodes and 217 app-owned edges. The Ganesha
+previous projection target was 136 reviewed nodes and 217 app-owned edges. The Ganesha
 Purana remains structural-only and the internal-only Mudgala carrier remains
 unserved; no unsupported narrative was inferred from either.
 

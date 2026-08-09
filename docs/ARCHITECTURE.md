@@ -5,6 +5,12 @@ The Living Atlas semantic and interaction contract is defined in
 projection of source → passage → claim → relationship evidence, with typed
 story, festival, practice, text, place, kinship, identity, time, history,
 teaching, and association routes rather than a generic `related_to` graph.
+Every visible destination is also normalized into one of ten orthogonal node
+families: being/person, event/story, place/polity, time/observance,
+practice/material, source/expression, institution/community, idea/wisdom,
+art/culture, or historical process. Human-facing kinds remain specific; the
+normalized family drives visual grammar, validation, traversal diversity, and
+future graph retrieval without flattening the underlying identity.
 
 ## Principle
 

@@ -94,6 +94,16 @@ const reviewedDetailNodeIds = [
   "balipadyami-karnataka",
   "jain-diwali",
   "bandi-chhor-divas",
+  "ramlila-performance",
+  "ramlila-community-stage",
+  "ramnagar-ramlila",
+  "dussehra-performance-season",
+  "durga-puja-public-art",
+  "kumartuli-artisan-workshops",
+  "durga-puja-clay-image",
+  "durga-puja-installations",
+  "durga-puja-dhak",
+  "durga-puja-immersion-return",
 ] as const;
 
 function reachableFrom(gatewayId: string): Set<string> {
@@ -112,7 +122,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(131);
+    expect(worldNodes).toHaveLength(141);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -133,6 +143,7 @@ describe("Living Atlas exploration data", () => {
       expect(node.summary.length).toBeGreaterThan(50);
       expect(node.searchQuery.length).toBeGreaterThan(3);
       expect(node.evidenceBoundary.length).toBeGreaterThan(50);
+      expect(node.family.length).toBeGreaterThan(5);
       expect(reachable.get(node.gatewayId)?.has(node.id), `${node.id} is disconnected from ${node.gatewayId}`).toBe(true);
     }
   });
@@ -214,6 +225,32 @@ describe("Living Atlas exploration data", () => {
     for (const route of routes) {
       for (let index = 0; index < route.length - 1; index += 1) {
         expect(worldEdges.some((edge) => edge.from === route[index] && edge.to === route[index + 1]), `${route[index]} must connect to ${route[index + 1]}`).toBe(true);
+      }
+    }
+  });
+
+  it("turns living cultural heritage into playable performance, maker, material, place, and festival routes", () => {
+    const constellationIds = [
+      "ramlila-performance", "ramlila-community-stage", "ramnagar-ramlila", "dussehra-performance-season",
+      "durga-puja-public-art", "kumartuli-artisan-workshops", "durga-puja-clay-image",
+      "durga-puja-installations", "durga-puja-dhak", "durga-puja-immersion-return",
+    ];
+    expect(worldNodes.filter((node) => constellationIds.includes(node.id))).toHaveLength(constellationIds.length);
+    expect(new Set(worldNodes.filter((node) => constellationIds.includes(node.id)).map((node) => node.family)))
+      .toEqual(new Set(["art_culture", "institution_community", "place_polity", "practice_material", "time_observance"]));
+
+    const routes = [
+      ["ramayana", "ramlila-performance", "dussehra-performance-season", "shardiya-navaratri"],
+      ["ramcharitmanas", "ramlila-performance", "ramnagar-ramlila", "kashi"],
+      ["durga-puja", "durga-puja-public-art", "durga-puja-installations", "kolkata"],
+      ["durga-puja", "kumartuli-artisan-workshops", "durga-puja-clay-image", "durga-puja-immersion-return", "kolkata"],
+    ];
+    for (const route of routes) {
+      for (let index = 0; index < route.length - 1; index += 1) {
+        const edge = worldEdges.find((candidate) => candidate.from === route[index] && candidate.to === route[index + 1]);
+        expect(edge, `${route[index]} must connect to ${route[index + 1]}`).toBeDefined();
+        expect(edge?.sourceRef).toMatch(/^citation:https:\/\/ich\.unesco\.org\//);
+        expect(edge?.evidenceBoundary?.length ?? 0).toBeGreaterThan(100);
       }
     }
   });
@@ -357,8 +394,8 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 136 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 217 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 146 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 233 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming tradition");
       expect(sql).toContain("connected Shakta goddess traditions");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
@@ -366,6 +403,9 @@ describe("Living Atlas exploration data", () => {
       expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
       expect(sql).toContain("Ganesha connected-world nodes are missing or outside their evidence boundaries");
       expect(sql).toContain("Ganesha connected-world routes are missing or not source-addressed");
+      expect(sql).toContain("Living Atlas nodes are missing normalized semantic families");
+      expect(sql).toContain("Living-culture travel nodes are missing or outside their evidence boundaries");
+      expect(sql).toContain("Living-culture travel routes are missing official citation-only sources");
       expect(sql).toContain("Dutt Ramayana Atlas node is missing its selected-edition boundary");
       expect(sql).toContain("Dutt Ramayana narrative constellation nodes are missing or outside their selected-edition boundaries");
       expect(sql).toContain("Source-addressed Living Atlas edges are missing exact source addresses");

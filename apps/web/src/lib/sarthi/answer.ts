@@ -9,6 +9,7 @@ import { answerHeroPreview } from "./hero-preview";
 import { answerRamcharitmanasPreview } from "./ramcharitmanas-preview";
 import { answerReviewedRamayanaReflection } from "./ramayana-reflection";
 import { resolvePracticeGuidance } from "../practice/practice-guidance";
+import { answerLivingCultureWorld } from "../search/living-culture-world";
 
 const GANESHA_RITUAL_BOUNDARY = "Internal-beta West India Smarta household synthesis; not a universal Ganesh Puja vidhi, all-regions coverage, or a substitute for an established family practice.";
 const NAVARATRI_RITUAL_BOUNDARY = "Internal-beta North/West India Smarta household synthesis; not Bengali Durga Puja, South Indian Golu, Gujarati Garba, Nepal Dashain, a fasting regimen, or a universal Navaratri procedure.";
@@ -91,6 +92,8 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
   const explicitlyNamesHeroSubject = explicitlyDurga || explicitlyRamayana || explicitlyGanesha;
   const usesAtlasContext = (slug: "durga" | "ramayana" | "ganesha") =>
     request.context?.atlasNodeSlug === slug && contextualReference && !explicitlyNamesHeroSubject;
+  const livingCultureWorld = answerLivingCultureWorld(request);
+  if (livingCultureWorld) return livingCultureWorld;
   const vishwakarmaContext = includesAny(query, ["vishwakarma", "viswakarma", "bishwakarma", "biswakarma", "विश्वकर्मा", "বিশ্বকর্মা"]);
   if (vishwakarmaContext && ritualIntent) {
     const queryBengal = includesAny(query, ["bengal", "west bengal", "kolkata", "calcutta", "बंगाल", "कोलकाता", "বাংলা", "কলকাতা"]);

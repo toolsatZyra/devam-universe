@@ -72,6 +72,22 @@ const GANESHA_CONNECTED_WORLD_EDGE_IDS = [
   "ganesh-chaturthi-to-modak", "clay-murti-to-visarjan", "ganesh-chaturthi-to-visarjan",
   "ganeshotsav-visarjan-to-ananta",
 ];
+const LIVING_CULTURE_NODE_SLUGS = [
+  "ramlila-performance", "ramlila-community-stage", "ramnagar-ramlila", "dussehra-performance-season",
+  "durga-puja-public-art", "kumartuli-artisan-workshops", "durga-puja-clay-image",
+  "durga-puja-installations", "durga-puja-dhak", "durga-puja-immersion-return",
+];
+const LIVING_CULTURE_EDGE_IDS = [
+  "ramayana-to-ramlila", "ramcharitmanas-to-ramlila", "ramlila-to-community-stage", "ramlila-to-ramnagar",
+  "ramlila-to-dussehra-season", "dussehra-season-to-navaratri", "ramnagar-ramlila-to-kashi",
+  "durga-puja-to-public-art", "public-art-to-kolkata", "durga-puja-to-kumartuli", "kumartuli-to-clay-image",
+  "public-art-to-installations", "public-art-to-dhak", "clay-image-to-seasonal-return", "installations-to-kolkata",
+  "seasonal-return-to-kolkata",
+];
+const WORLD_NODE_FAMILIES = new Set([
+  "being_person", "event_story", "place_polity", "time_observance", "practice_material",
+  "source_expression", "institution_community", "idea_wisdom", "art_culture", "historical_process",
+]);
 const WORLD_RELATION_KINDS = new Set(["story", "festival", "practice", "text", "place", "kinship", "identity", "time", "history", "teaching", "association"]);
 
 const moduleCache = new Map();
@@ -126,6 +142,7 @@ function nodeRow(node, gateway) {
         size: node.size,
         eras: node.eras,
         gatewayId: node.gatewayId,
+        family: node.family,
         summary: node.summary,
         searchQuery: node.searchQuery,
         evidenceBoundary: node.evidenceBoundary,
@@ -145,14 +162,15 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 131 || worldEdges.length !== 217) {
+  if (gateways.length !== 5 || worldNodes.length !== 141 || worldEdges.length !== 233) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 136) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 217) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 146) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 233) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 217) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 233) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (worldNodes.some((node) => !WORLD_NODE_FAMILIES.has(node.family))) throw new Error("Atlas nodes must declare a normalized family");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
     if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3 || !WORLD_RELATION_KINDS.has(edge.relationKind)) {
@@ -191,6 +209,12 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
   }
   if (GANESHA_CONNECTED_WORLD_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId && edge.sourceRef?.includes("sha256:")))) {
     throw new Error("Ganesha connected-world constellation has missing source addresses");
+  }
+  if (LIVING_CULTURE_NODE_SLUGS.some((slug) => !worldNodes.some((node) => node.id === slug && node.evidenceBoundary.length >= 100))) {
+    throw new Error("Living-culture travel constellation is incomplete");
+  }
+  if (LIVING_CULTURE_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId && edge.sourceRef?.startsWith("citation:https://ich.unesco.org/")))) {
+    throw new Error("Living-culture travel routes are missing official citation-only sources");
   }
   const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
   const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
@@ -368,6 +392,14 @@ begin
   if app_edge_count <> ${worldEdges.length} then
     raise exception 'Expected ${worldEdges.length} app-owned Living Atlas edges, found %', app_edge_count;
   end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${worldNodes.map((node) => sqlText(node.id)).join(", ")}])
+      and atlas.visual->>'family' = any (array[${[...WORLD_NODE_FAMILIES].map(sqlText).join(", ")}])
+  ) <> ${worldNodes.length} then
+    raise exception 'Living Atlas nodes are missing normalized semantic families';
+  end if;
   if not exists (
     select 1
     from public.atlas_nodes
@@ -457,6 +489,24 @@ begin
       and edge.visual->>'relationKind' is not null
   ) <> ${GANESHA_CONNECTED_WORLD_EDGE_IDS.length} then
     raise exception 'Ganesha connected-world routes are missing or not source-addressed';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${LIVING_CULTURE_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'family' is not null
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${LIVING_CULTURE_NODE_SLUGS.length} then
+    raise exception 'Living-culture travel nodes are missing or outside their evidence boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${LIVING_CULTURE_EDGE_IDS.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' like 'citation:https://ich.unesco.org/%'
+      and edge.visual->>'relationKind' is not null
+  ) <> ${LIVING_CULTURE_EDGE_IDS.length} then
+    raise exception 'Living-culture travel routes are missing official citation-only sources';
   end if;
   if not exists (
     select 1

@@ -171,6 +171,32 @@ The untranslated Ganesha Purana remains an exact structural source door. The
 internal-only Mudgala Purana carrier remains unserved. Neither is used to create
 unsupported consumer story nodes.
 
+## First living-culture travel constellations
+
+The next implementation proves that the same model can move beyond a deity or
+epic character graph into living performance, makers, materials, sound, public
+art, community, place, and festival time. It adds ten destinations and sixteen
+explicit routes supported by citation-only official UNESCO heritage pages:
+
+- **Epic → performance → community:** Ramayana opens Ramlila, then audience
+  participation, roles, narration, masks, costumes, effigies, and lights.
+- **Text → performance:** Ramcharitmanas opens a major Ramlila text tradition
+  without becoming the only script, edition, or performance source.
+- **Performance → place → city:** Ramlila opens Ramnagar and the wider
+  Benares/Kashi cultural geography without collapsing their identities.
+- **Performance → festival time:** Ramlila opens the Dussehra season and a
+  carefully bounded cross-world route toward Shardiya Navaratri.
+- **Worship → public art:** Kolkata Durga Puja opens collaborative artists,
+  designers, installations, pavilions, drumming, and city-scale participation.
+- **Maker → material → return:** Kumartuli workshops open the unfired-clay
+  image lifecycle, temporary public presence, and seasonal return without
+  supplying image-making, ritual, crowd, river, or immersion instructions.
+
+These sources are not copied into the vault. Search and Sarthi return Devam
+paraphrases with citation-only metadata and no quotation. The pattern is a
+template for future routes through theatre, dance, music, architecture, craft,
+pilgrimage, dynasties, teachers, communities, and historical transmission.
+
 ## Expansion order
 
 Expansion is demand-driven by enjoyable journeys, not raw node counts:

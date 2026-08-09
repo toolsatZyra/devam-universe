@@ -28,7 +28,7 @@ async function expectNoHorizontalOverflow(page: Page) {
 }
 
 test("the Living Atlas is a full-screen cosmic world with spatial travel", async ({ page }) => {
-  test.setTimeout(90_000);
+  test.setTimeout(120_000);
   const health = await page.request.get("/api/health");
   expect(health.status()).toBe(200);
   expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
@@ -113,6 +113,20 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("button", { name: "Explore Ramayana" })).toHaveAttribute("aria-pressed", "true");
 
+  await page.getByRole("button", { name: "Follow becomes a living performance world to Ramlila" }).click();
+  await expect(page.getByRole("heading", { name: "Ramlila" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow made through community participation to The community becomes the stage" }).click();
+  await expect(page.getByRole("heading", { name: "The community becomes the stage" })).toBeVisible();
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
+  await page.getByRole("button", { name: "Follow becomes a living performance world to Ramlila" }).click();
+  await page.getByRole("button", { name: "Follow representative place tradition to Ramnagar Ramlila" }).click();
+  await expect(page.getByRole("heading", { name: "Ramnagar Ramlila" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow opens the wider Benares cultural geography to Kashi in another world" }).click();
+  await expect(page.getByRole("heading", { name: "Kashi" })).toBeVisible();
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
+
   const duttEdition = page.getByRole("button", { name: "Dutt's English Ramayana, Complete electronic edition" });
   await expect(duttEdition).toBeVisible();
   await duttEdition.click();
@@ -194,6 +208,12 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("button", { name: "Explore Durga" })).toHaveAttribute("aria-pressed", "true");
   await page.getByRole("button", { name: "Follow living festival world to Durga Puja" }).click();
   await expect(page.getByRole("heading", { name: "Durga Puja" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow public performance of worship and art to Worship becomes public art" }).click();
+  await expect(page.getByRole("heading", { name: "Worship becomes public art" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow unfolds through temporary installations to A city of temporary installations" }).click();
+  await expect(page.getByRole("heading", { name: "A city of temporary installations" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow spreads through the living city to Kolkata" }).click();
+  await expect(page.getByRole("heading", { name: "Kolkata" })).toBeVisible();
 
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Sacred Time" }).click();
