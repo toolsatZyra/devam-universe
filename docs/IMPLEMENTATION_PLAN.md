@@ -1,5 +1,20 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (Ramayana return-world encounters): the seven-scene road
+home now opens nearby characters, narrative places, and events inside the
+playable world instead of discarding the reviewed graph into Search. The
+Connections lens is a spatial constellation; zooming the Story lens reveals
+scene-local discoveries; selecting one opens a short, reversible encounter
+with typed relationship routes and an optional evidence door while the scene
+remains visible. A bounded discovery trail supports one-action backtracking on
+desktop and mobile. Fifteen new return-arc destinations and forty exact Dutt
+CXXIV-CXXX source-addressed relationships connect Lanka, Pushpaka, Rama, Sita,
+Vibhishana, Bharadvaja and his hermitage, Hanuman, Guha, Bharata, Nandigrama,
+Shatrughna, Vasishta, Ayodhya, and the coronation. The deterministic hosted
+projection target is now 207 reviewed nodes including five gateways and 341
+app-owned edges, of which 217 are source-addressed. These are selected product
+counters, not Ramayana or civilizational completeness.
+
 Checkpoint 2026-08-09 (Ramayana scene-camera navigation): the playable
 return-to-Ayodhya slice now behaves as a recoverable 2.5D world rather than a
 button-only sequence. Mouse/touch drag pans a deliberately bounded backdrop,

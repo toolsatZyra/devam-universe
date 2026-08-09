@@ -37,7 +37,7 @@ describe("Supabase Atlas mapping", () => {
 
   it("rejects a structurally valid but stale hosted projection as a whole", () => {
     expect(() => mapAtlasRows(gatewayRows, [] as EdgeRow[], { requireCompleteReviewedProjection: true }))
-      .toThrow("Expected 192 reviewed Atlas nodes, received 5");
+      .toThrow("Expected 207 reviewed Atlas nodes, received 5");
   });
 
   it("uses the reviewed Unicode presentation when a restored database subtitle is corrupted", () => {

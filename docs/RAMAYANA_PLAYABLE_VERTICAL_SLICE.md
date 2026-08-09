@@ -1,6 +1,6 @@
 # Ramayana playable vertical slice
 
-Status: **implementation candidate — 2026-08-09**
+Status: **playable encounter candidate — 2026-08-10**
 
 ## Decision
 
@@ -164,6 +164,18 @@ after completion. Camera bounds are symmetric and unit-tested so travelling too
 far in one direction cannot create a trapped state. This is interaction-contract
 evidence, not evidence that the experience is already engaging; that still
 requires observed play.
+
+Implementation checkpoint 2026-08-10: all seven scenes now resolve to a small
+in-world encounter constellation. The Connections lens exposes family-shaped
+event, person, and place portals; closer Story-lens depth reveals scene-local
+discoveries without turning the journey into a menu. An encounter contains only
+a short orientation, typed nearby routes, a progressive source boundary, and a
+reversible discovery trail. The return arc adds fifteen reviewed destinations
+and forty exact Dutt CXXIV-CXXX source-addressed edges. Desktop and mobile
+browser acceptance cover entry, relationship traversal, evidence access,
+backtracking, zoom discovery, reset, and zero trapped camera state. This proves
+the implemented interaction contract; it does not prove engagement or complete
+Ramayana coverage.
 
 This follows the useful design lesson from *Journey*: an emotional arc must be
 designed and iterated as a whole, not inferred from visual polish. It also uses

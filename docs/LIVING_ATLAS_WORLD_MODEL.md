@@ -309,6 +309,30 @@ official district, national tourism, Intellectual Property India, and UNESCO
 pages. No source prose is retained or quoted, and no route supplies live temple,
 ritual, performance, visitor, crowd, river, or safety authority.
 
+## Ramayana return-world encounter grammar
+
+The road-home vertical slice is the first journey to consume the same reviewed
+graph that powers the wider Atlas. Each of its seven scenes has a deliberately
+small local constellation rather than a prose destination page:
+
+- the Story lens reveals nearby discoveries only after the player moves closer;
+- the Connections lens lays out the current event, people, and place as a
+  spatial constellation with node-family silhouettes;
+- selecting a node keeps the world visible and opens a short encounter rather
+  than navigating to a disconnected reader;
+- typed, source-addressed routes move directly to the next encounter;
+- Back reverses the discovery trail one step at a time and then returns to the
+  scene; and
+- Search or another curated journey is optional depth, never the only way to
+  understand a connection.
+
+The first implementation adds fifteen return-arc destinations and forty exact
+Dutt Yuddha Kanda CXXIV-CXXX relationships. The selected reviewed projection is
+therefore 207 nodes including five gateways and 341 edges, with 217
+source-addressed edges. These counters measure the current product projection,
+not completeness of the Ramayana, Indian mythology, culture, history, or
+wisdom.
+
 ## Expansion order
 
 Expansion is demand-driven by enjoyable journeys, not raw node counts:

@@ -26,6 +26,13 @@ import {
   zoomJourneyCamera,
   type JourneyCameraView,
 } from "./journey-camera";
+import {
+  RAMAYANA_CAST_NODE_IDS,
+  getJourneyEncounterNode,
+  getJourneyEncounterRoutes,
+  getRamayanaSceneEncounterNodes,
+  journeyEncounterHref,
+} from "./ramayana-world-encounters";
 import styles from "./journey-player.module.css";
 
 type JourneySarthiReply = {
@@ -52,6 +59,15 @@ function readProgress(slug: string): string[] {
 type SceneCopy = { title?: string; kicker: string; story: string; invitation: string };
 
 type PointerPoint = { x: number; y: number };
+const encounterPositions = [
+  { x: 13, y: 61, z: 18 },
+  { x: 32, y: 27, z: 70 },
+  { x: 52, y: 66, z: 34 },
+  { x: 72, y: 25, z: 82 },
+  { x: 88, y: 57, z: 48 },
+  { x: 61, y: 43, z: 98 },
+  { x: 25, y: 46, z: 56 },
+] as const;
 type CameraGesture = {
   pointers: Map<number, PointerPoint>;
   startView: JourneyCameraView;
@@ -164,6 +180,7 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
   const [camera, setCamera] = useState<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
   const [cameraDragging, setCameraDragging] = useState(false);
   const [showCompletion, setShowCompletion] = useState(false);
+  const [encounterTrail, setEncounterTrail] = useState<string[]>([]);
   const guestExchanges = useRef(0);
   const viewportRef = useRef<HTMLElement | null>(null);
   const cameraRef = useRef<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
@@ -203,6 +220,12 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
   const activeTitle = copy.title ?? active.title;
   const exploredSet = useMemo(() => new Set(explored), [explored]);
   const isRamayanaWorld = journey.slug === "ramayana";
+  const sceneEncounterNodes = useMemo(
+    () => isRamayanaWorld ? getRamayanaSceneEncounterNodes(active.id) : [],
+    [active.id, isRamayanaWorld],
+  );
+  const focusedEncounter = encounterTrail.length ? getJourneyEncounterNode(encounterTrail.at(-1)!) : null;
+  const focusedEncounterRoutes = focusedEncounter ? getJourneyEncounterRoutes(focusedEncounter.id) : [];
   const routeLandmarks = [
     { label: "Lanka", index: 0, x: 12, y: 76 },
     { label: "Bharadvaja", index: 2, x: 47, y: 47 },
@@ -238,7 +261,18 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
     setActiveIndex(index);
     setShowGuide(false);
     setShowCompletion(false);
+    setEncounterTrail([]);
     resetCamera();
+  }
+
+  function openEncounter(nodeId: string) {
+    if (!getJourneyEncounterNode(nodeId)) return;
+    setEncounterTrail((trail) => trail.at(-1) === nodeId ? trail : [...trail, nodeId]);
+    setShowGuide(false);
+  }
+
+  function backFromEncounter() {
+    setEncounterTrail((trail) => trail.slice(0, -1));
   }
 
   function continueJourney() {
@@ -450,6 +484,20 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
             );
           })}
         </div>}
+        {isRamayanaWorld && worldLens === "story" && camera.scale >= 1.08 && <div className={styles.sceneDiscoveries} aria-label={`Nearby discoveries in ${activeTitle}`}>
+          {sceneEncounterNodes.map((node, index) => {
+            const position = encounterPositions[index % encounterPositions.length];
+            return <button
+              type="button"
+              className={styles.sceneDiscovery}
+              data-family={node.family}
+              style={{ "--portal-x": `${position.x}%`, "--portal-y": `${position.y}%`, "--portal-z": `${position.z}px`, "--portal-delay": `${index * 70}ms` } as CSSProperties}
+              onClick={() => openEncounter(node.id)}
+              aria-label={`Discover ${node.label}, ${node.kind}`}
+              key={node.id}
+            ><span/><small>{node.kind}</small><strong>{node.label}</strong></button>;
+          })}
+        </div>}
         {isRamayanaWorld && worldLens === "route" && <div className={styles.routeWorld} aria-label="Narrative route from Lanka to Ayodhya">
           <div className={styles.routeLine} aria-hidden="true" />
           {routeLandmarks.map((landmark) => <button
@@ -463,12 +511,28 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
         </div>}
         {isRamayanaWorld && worldLens === "connections" && <div className={styles.connectionWorld} aria-label={`Connections from ${activeTitle}`}>
           <p><small>Connections discovered here</small><strong>{activeTitle}</strong></p>
-          <div>
-            {active.visual?.connections.map((connection, index) => <Link href={connection.href} className={styles.connectionPortal} style={{ "--portal-index": index } as CSSProperties} key={`${active.id}-${connection.label}`}>
-              <span>{connection.kind}</span><strong>{connection.label}</strong><small>Open this world →</small>
-            </Link>)}
+          <div className={styles.connectionConstellation}>
+            <svg aria-hidden="true" viewBox="0 0 100 100" preserveAspectRatio="none">
+              {sceneEncounterNodes.slice(1).map((node, index) => {
+                const origin = encounterPositions[0];
+                const destination = encounterPositions[(index + 1) % encounterPositions.length];
+                return <line x1={origin.x} y1={origin.y} x2={destination.x} y2={destination.y} key={node.id} />;
+              })}
+            </svg>
+            {sceneEncounterNodes.map((node, index) => {
+              const position = encounterPositions[index % encounterPositions.length];
+              return <button
+                type="button"
+                className={`${styles.connectionPortal} ${index === 0 ? styles.connectionPortalHub : ""}`}
+                data-family={node.family}
+                style={{ "--portal-x": `${position.x}%`, "--portal-y": `${position.y}%`, "--portal-z": `${position.z}px`, "--portal-delay": `${index * 80}ms` } as CSSProperties}
+                onClick={() => openEncounter(node.id)}
+                aria-label={`Explore ${node.label}, ${node.kind}`}
+                key={`${active.id}-${node.id}`}
+              ><span aria-hidden="true"/><small>{node.kind}</small><strong>{node.label}</strong></button>;
+            })}
           </div>
-          <small className={styles.connectionBoundary}>Each portal keeps its own source, place, tradition, and uncertainty boundary.</small>
+          <small className={styles.connectionBoundary}>Travel through a light. Every route keeps its own source, place, tradition, and uncertainty boundary.</small>
         </div>}
       </section>
 
@@ -478,12 +542,17 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
         <button type="button" aria-label="Zoom scene in" disabled={camera.scale >= JOURNEY_CAMERA_MAX_SCALE} onClick={() => commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale + .1, cameraViewport()))}>+</button>
       </div>}
 
-      <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
+      {!focusedEncounter && (!isRamayanaWorld || worldLens !== "connections") && <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
         {active.visual && <div className={styles.sceneContext}><span>{active.visual.location}</span><small>Artistic visualization</small></div>}
         <p>{copy.kicker}</p>
         <h1>{activeTitle}</h1>
         <span>{copy.story}</span>
-        {active.visual && <div className={styles.cast} aria-label="Characters in this scene">{active.visual.cast.map((character) => <Link href={`/search?q=${encodeURIComponent(`${character} Ramayana`)}`} key={character}>{character}</Link>)}</div>}
+        {active.visual && <div className={styles.cast} aria-label="Characters in this scene">{active.visual.cast.map((character) => {
+          const nodeId = RAMAYANA_CAST_NODE_IDS[character];
+          return isRamayanaWorld && nodeId
+            ? <button type="button" onClick={() => openEncounter(nodeId)} key={character}>{character}</button>
+            : <Link href={`/search?q=${encodeURIComponent(`${character} Ramayana`)}`} key={character}>{character}</Link>;
+        })}</div>}
         <small className={styles.retellingLabel}>{language === "hi" ? "देवम की स्रोत-आधारित सरल कथा" : "Devam source-grounded story retelling"}</small>
         <div className={styles.actions}>
           <button type="button" onClick={continueJourney}>{activeIndex === journey.stops.length - 1 ? (language === "hi" ? "यह यात्रा पूरी करें" : "Complete this path") : copy.invitation}<span>→</span></button>
@@ -495,7 +564,24 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
           <span>{active.citation.editionTitle} · {locatorLabel(active.citation.locator)}</span>
           <small>{journey.sourceBoundary}</small>
         </details>
-      </section>
+      </section>}
+
+      {focusedEncounter && <aside className={styles.encounter} aria-live="polite" aria-label={`${focusedEncounter.label} encounter`}>
+        <button className={styles.encounterBack} type="button" onClick={backFromEncounter}>← {encounterTrail.length > 1 ? "Previous discovery" : "Back to the scene"}</button>
+        <div className={styles.encounterIdentity} data-family={focusedEncounter.family}><span aria-hidden="true"/><p><small>{focusedEncounter.kind}</small><strong>{focusedEncounter.label}</strong></p></div>
+        <p className={styles.encounterSummary}>{focusedEncounter.summary}</p>
+        {focusedEncounterRoutes.length > 0 && <div className={styles.encounterRoutes} aria-label={`Paths from ${focusedEncounter.label}`}>
+          <small>Travel along a relationship</small>
+          {focusedEncounterRoutes.map((route) => <button type="button" onClick={() => openEncounter(route.destination.id)} key={route.id}>
+            <span>{route.relation}</span><strong>{route.destination.label}</strong><small>{route.relationKind}{route.sourceRef ? " · source-linked" : ""}</small>
+          </button>)}
+        </div>}
+        <details className={styles.encounterBoundary}>
+          <summary>Why this connection is here</summary>
+          <p>{focusedEncounter.evidenceBoundary}</p>
+        </details>
+        <Link className={styles.encounterLibrary} href={journeyEncounterHref(focusedEncounter)}>{focusedEncounter.gateway ? `Enter the ${focusedEncounter.label} world` : "Open its exact library trail"} →</Link>
+      </aside>}
 
       <div className={styles.progress} aria-label={`${explored.length} of ${journey.stops.length} scenes explored`}>
         {journey.stops.map((stop, index) => <button type="button" aria-label={`Go to scene ${index + 1}`} onClick={() => travelTo(index)} className={index === activeIndex ? styles.progressActive : exploredSet.has(stop.id) ? styles.progressVisited : ""} key={stop.id} />)}
