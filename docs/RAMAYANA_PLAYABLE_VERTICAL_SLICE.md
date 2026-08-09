@@ -133,7 +133,7 @@ move reversible.
 ## Art direction
 
 The cosmic universe is the wrapper; each story is its own biome. This slice
-moves through four visual states:
+moves through seven scene-specific tableaux within four larger visual states:
 
 1. saffron and indigo dawn above Lanka;
 2. jade and gold river-and-hermitage country;
@@ -144,6 +144,21 @@ Foreground, middle ground, and horizon move at different rates to create depth
 without requiring WebGL. Scene changes use slow camera drift and cross-fades;
 `prefers-reduced-motion` removes scale and parallax. Characters remain readable
 at smartphone size. UI occupies the edges, not a permanent third of the world.
+
+Four additional original tableaux replace the earlier reused-art mismatches:
+
+| Product asset | Story event | SHA-256 |
+| --- | --- | --- |
+| `ramayana-return-sky-road-v1.webp` | the remembered aerial route | `4569b35f39518233764b722a9777a6ee615d18402196db3a50075d4153ff9d79` |
+| `ramayana-return-hanuman-ahead-v1.webp` | Hanuman carries the message north | `615654afc2d1bc388680fead6be6233a2025c5fc91c42817a8ff256ad063fb8f` |
+| `ramayana-return-bharata-hears-v1.webp` | Bharata receives the news beside the sandals | `ced6687489238307d945b0b4951e4abd9143148941e3465f4064cc46d844c097` |
+| `ramayana-return-coronation-v1.webp` | coronation and gratitude to the alliance | `e8b56ffa6f48dcafcf0b27ad04456f472d6a3c9e85499051eed99095d38ef912` |
+
+They were generated for Devam with the built-in image model on 2026-08-09,
+using the earlier Devam-authored biome paintings only as style references, then
+encoded as WebP. They contain no third-party source image. The visual boundary
+above applies to every tableau; narrative claims continue to come from the
+source-addressed story data rather than from generated imagery.
 
 ## Interaction and accessibility acceptance
 
