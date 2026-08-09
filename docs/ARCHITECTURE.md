@@ -230,6 +230,24 @@ only through progressive disclosure. Sarthi is an overlay conversation bound to
 the active node. Search, account, Today/Panchang, ritual procedures, and deeper
 library views are destinations, not permanent Atlas rails or bars.
 
+Long-form epic worlds use the versioned story-world contract in
+`RAMAYANA_STORY_WORLD_STRATEGY.md`. A server compiler projects a bounded arc
+from the reviewed Atlas into one serializable pack of story moments, bilingual
+beats, scene/cast indexes, relevant encounter nodes, and source-addressed
+routes. Journey clients never import the global Atlas dataset. The current
+road-home compiler deliberately limits traversal roots and keeps its complete
+serialized pack below 100 KB; distant arcs, long retellings, evidence prose,
+and high-resolution media are separate lazy-load boundaries. Exact route source
+references remain in the pack while repeated evidence explanations are attached
+once to their destination nodes.
+
+The story moment, not a source chapter or generic graph node, is the consumer
+unit. Multiple lenses derive from the same moments so sequence, place, character,
+thread, and living-world traversal cannot drift into separately authored
+stories. Source sections remain the editorial denominator underneath those
+moments. Completeness is reported per selected expression and independently as
+catalogued, story-ready, playable, and living-connected.
+
 Scenes are data-driven so content teams can publish places, stories, rituals,
 missions, and future visual layers without bespoke navigation code for every
 node. Multi-resolution assets, prefetching, caching, and graceful bandwidth

@@ -1,5 +1,23 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (Ramayana story-world contract and first dense arc): the
+released seven-scene road-home slice is now represented as a bounded,
+server-compiled `ramayana-road-home-v1` pack rather than importing the 247 KB
+global Atlas into the journey client. The pack keeps scene and cast indexes,
+reviewed encounter nodes, source-addressed routes, and twenty-nine bilingual
+story beats across the seven consecutive Dutt Yuddha Kanda CXXIV-CXXX scenes;
+its serialized regression budget remains below 100 KB. Each scene now unfolds
+through four or five short action, motivation, and consequence beats that can
+be traversed or skipped, while exact edition coordinates remain behind the
+source control. The encounter panel is separated from the journey player, and
+tests require three-to-seven beats per scene, complete English/Hindi copy,
+resolvable characters, visual direction, the exact source chain, a bounded
+client pack, and no global Atlas import in client modules. This makes one arc
+denser and the architecture scalable; it does not establish whole-epic,
+all-tradition, visual-art, or observed-engagement completeness. The revised
+product, completeness, traversal, and anti-bloat contract is
+`RAMAYANA_STORY_WORLD_STRATEGY.md`.
+
 Checkpoint 2026-08-10 (Ramayana return-world encounters): the seven-scene road
 home now opens nearby characters, narrative places, and events inside the
 playable world instead of discarding the reviewed graph into Search. The
@@ -3007,8 +3025,9 @@ exact Search, Sarthi's source overview and the wider Atlas.
   The route is explicitly narrative rather than historical GIS; each scene
   exposes visible cast and three bounded character, place, festival,
   performance or source portals.
-- English and Hindi retellings remain short. Exact edition coordinates and the
-  wider completion denial are optional evidence, not the primary play surface.
+- English and Hindi retellings now unfold as twenty-nine short visual beats
+  across the seven scenes. Exact edition coordinates and the wider completion
+  denial remain optional evidence, not the primary play surface.
 - The existing Ramayana-to-Diwali edge had the correct CXXVII span hash but an
   incorrect volume-4 source-object hash. The app data now correctly names the
   Dutt Yuddha volume-3 object `8d1b890...`, and forward-only generated migration
@@ -3020,6 +3039,8 @@ The full product and interaction contract is
 portable tests, desktop/mobile browser acceptance, preview deployment and user
 playtesting before its grammar is replicated. It does not complete the
 Ramayana, map a historical route, universalize Diwali, or establish engagement.
+The revised expansion strategy and selected-expression completeness model are
+in `docs/RAMAYANA_STORY_WORLD_STRATEGY.md`.
 
 ## Phase 3 — September-December layer
 
