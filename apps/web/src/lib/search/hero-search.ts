@@ -1,4 +1,4 @@
-import { getHeroJourney } from "../../data/hero-experiences";
+import { getHeroLibraryJourney } from "../../data/hero-experiences";
 import type { EvidenceCitation } from "../sarthi/contracts";
 import type { ExperienceCitation, HeroSlug } from "../domain/experience";
 
@@ -60,7 +60,7 @@ function citation(value: ExperienceCitation): EvidenceCitation {
     workTitle: value.workTitle,
     editionTitle: value.editionTitle,
     locator: { ...value.locator, span_sha256: value.spanSha256 },
-    rightsLane: value.rightsLane === "derivative_allowed" ? "derivative_allowed" : "citation_only",
+    rightsLane: value.rightsLane === "product_allowed" ? "product_allowed" : value.rightsLane === "derivative_allowed" ? "derivative_allowed" : "citation_only",
   };
 }
 
@@ -83,7 +83,7 @@ export function searchHeroStructures(query: string, languageCode?: string): Hero
     "manmatha", "dutt", "griffith", "tulsidas", "ramcharitmanas", "kamba",
     "kampan", "krittivasi", "adhyatma ramayana", "jain ramayana", "buddhist ramayana",
   ])) return [];
-  const journey = getHeroJourney(hero);
+  const journey = getHeroLibraryJourney(hero);
   if (!journey) return [];
   const specific = journey.stops.filter((stop) => includesAny(normalized, keywords[stop.id] ?? []));
   const stops = specific.length ? specific : journey.stops;

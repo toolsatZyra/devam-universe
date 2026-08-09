@@ -1,5 +1,5 @@
 export type HeroSlug = "ramayana" | "ganesha" | "durga" | "diwali";
-export type ExperienceRightsLane = "private_evidence" | "derivative_allowed";
+export type ExperienceRightsLane = "private_evidence" | "product_allowed" | "derivative_allowed";
 
 export type ExperienceCitation = {
   sourceSha256: string;
@@ -20,6 +20,12 @@ export type JourneyStop = {
   eyebrow: string;
   summary: string;
   citation: ExperienceCitation;
+  visual?: {
+    asset: string;
+    location: string;
+    cast: string[];
+    connections: { label: string; kind: "character" | "place" | "festival" | "performance" | "source"; href: string }[];
+  };
   feature?: {
     id: string;
     eyebrow: string;

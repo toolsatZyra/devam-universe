@@ -1,11 +1,23 @@
 import type { ExperienceCitation, HeroChallenge, HeroJourney } from "@/lib/domain/experience";
 
+const DUTT_YUDDHA_SOURCE = "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b";
 const RAMAYANA_SOURCE = "a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901";
-const GRIFFITH_RAMAYANA_SOURCE = "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9";
-const DUTT_SUNDARA_SOURCE = "6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062";
 const DURGA_SOURCE = "7f2db461e724c675317130c653258a4b277e647e938b946b40687decd535111e";
 const GANESHA_SOURCE = "21e5909392249ecca6677410c30d70323402d886975df807df2b865697fd9e6d";
 const DIWALI_RESEARCH_PACK = "c73343da9b873400ed7bcc307b30aedb7de751c38c6e672ac41f98de05b389c1";
+
+function duttYuddhaCitation(sourceOrdinal: number, marker: string, literalSection: number, byteStart: number, byteEnd: number, lineStart: number, lineEnd: number, spanSha256: string): ExperienceCitation {
+  return {
+    sourceSha256: DUTT_YUDDHA_SOURCE,
+    sourceOrdinal,
+    spanSha256,
+    workTitle: "The Rāmāyana",
+    editionTitle: "Manmatha Nath Dutt English prose translation, Project Gutenberg volume 3",
+    languageCode: "en",
+    rightsLane: "product_allowed",
+    locator: { contract: "DEVAM_DUTT_PG_SECTION_BYTE_SPAN_V1", provider: "Project Gutenberg", ebook_id: 60188, volume: 3, kanda_ordinal: 6, kanda_slug: "yuddha", kanda_title: "Yuddhakāṇḍa", literal_marker: marker, literal_section_number: literalSection, source_relative_ordinal: sourceOrdinal, byte_start: byteStart, byte_end_exclusive: byteEnd, line_start: lineStart, line_end: lineEnd, printed_number_not_unique_key: true },
+  };
+}
 
 function ramayanaCitation(sourceOrdinal: number, book: number, byteStart: number, byteEnd: number, lineStart: number, lineEnd: number, lastVerseId: string, verseCount: number, spanSha256: string): ExperienceCitation {
   return {
@@ -20,40 +32,26 @@ function ramayanaCitation(sourceOrdinal: number, book: number, byteStart: number
   };
 }
 
-function hanumanDeliberationCitations(): ExperienceCitation[] {
-  return [
-    {
-      sourceSha256: RAMAYANA_SOURCE,
-      sourceOrdinal: 352,
-      spanSha256: "31ef2670759fedf4116087f22f53cb344324543f02aefd276964a7560b4e7e81",
-      workTitle: "Vālmīki Rāmāyaṇa",
-      editionTitle: "Tokunaga/Smith GRETIL Sanskrit electronic transcription",
-      languageCode: "sa-Latn",
-      rightsLane: "private_evidence",
-      locator: { contract: "DEVAM_GRETIL_TEI_SARGA_BYTE_SPAN_V1", book: 5, sarga: 28, literal_locator: "5.28", first_verse_id: "R_5.028.001", last_verse_id: "R_5.028.044", verse_group_count: 44, byte_start: 2322824, byte_end_exclusive: 2332488, line_start: 41812, line_end: 41987 },
-    },
-    {
-      sourceSha256: GRIFFITH_RAMAYANA_SOURCE,
-      sourceOrdinal: 367,
-      spanSha256: "8621ebca63d13f6ed596b750503938fb826b0cd80c213d5d12ea31e0dbb3d78f",
-      workTitle: "The Ramayan of Valmiki, translated into English verse",
-      editionTitle: "Ralph T. H. Griffith translation, Project Gutenberg eBook 24869",
-      languageCode: "en",
-      rightsLane: "private_evidence",
-      locator: { contract: "DEVAM_PG_TEI_LEAF_DIV_BYTE_SPAN_V1", book: 5, literal_canto_marker: "XXX", literal_canto_number: 30, literal_heading: "Canto XXX. Hanuman's Deliberation", byte_start: 2226224, byte_end_exclusive: 2229923, line_start: 53344, line_end: 53425 },
-    },
-    {
-      sourceSha256: DUTT_SUNDARA_SOURCE,
-      sourceOrdinal: 30,
-      spanSha256: "f506d39d6c9e3cd90c5f6629ecd64c050b59e51dfeb372fbaa8c717d902c268b",
-      workTitle: "The Ramayana",
-      editionTitle: "Manmatha Nath Dutt English prose translation, Sundara Kandam, 1892",
-      languageCode: "en",
-      rightsLane: "private_evidence",
-      locator: { contract: "DEVAM_DUTT_SUNDARA_SELECTED_PASSAGE_REVIEW_V1", section: 30, literal_section_marker: "XXX", printed_page_start: 975, printed_page_end: 978, carrier_page_start: 110, carrier_page_end: 113, selected_passage_review_sha256: "f506d39d6c9e3cd90c5f6629ecd64c050b59e51dfeb372fbaa8c717d902c268b", provider_ocr_servable: false },
-    },
-  ];
-}
+const ramayanaLibraryJourney: HeroJourney = {
+  slug: "ramayana",
+  hero: "Ramayana",
+  devanagari: "रामायण",
+  title: "Across the seven kāṇḍas",
+  invitation: "Trace one exact Sanskrit carrier from its opening book to its terminal seventh book.",
+  durationMinutes: 18,
+  tone: "saffron",
+  sourceBoundary: "This library structure follows the seven-book boundary of one GRETIL Sanskrit electronic transcription. It is not a critical edition, every recension, every Ramayana tradition, or a product-rights clearance.",
+  completeHeroUniverse: false,
+  stops: [
+    { id: "bala-kanda", ordinal: 1, title: "Bālakāṇḍa", eyebrow: "Book one", summary: "Enter the epic through its first book and the carrier's opening sarga.", citation: ramayanaCitation(1, 1, 10776, 28298, 329, 648, "R_1.001.079", 79, "9ea76e943c2c75d1297ea6fafad77cc4e00694d2b933553c2a6bf5049923930d") },
+    { id: "ayodhya-kanda", ordinal: 2, title: "Ayodhyākāṇḍa", eyebrow: "Book two", summary: "Move into the Ayodhya book through its first source-addressed sarga.", citation: ramayanaCitation(77, 2, 435464, 443637, 8158, 8306, "R_2.001.037", 37, "428f6d6455bf4003d8b2c56737a9aa65191462b7ee4b5781b0f5769cdb419f45") },
+    { id: "aranya-kanda", ordinal: 3, title: "Araṇyakāṇḍa", eyebrow: "Book three", summary: "Continue into the forest book while preserving its separate book and sarga identity.", citation: ramayanaCitation(188, 3, 1148091, 1152962, 20890, 20977, "R_3.001.022", 22, "6c3f0d7de015dfd4f6035dcafd58f26afaf30d5bb94fa7053727c1cfbe28cf65") },
+    { id: "kishkindha-kanda", ordinal: 4, title: "Kiṣkindhākāṇḍa", eyebrow: "Book four", summary: "Open the fourth book as its own textual region rather than flattening the epic into one story blob.", citation: ramayanaCitation(259, 4, 1612894, 1623904, 29221, 29417, "R_4.001.049", 49, "c214ef02f9aa9da085b0d73314aee0dde3235c74bf583b03ed81e6d3d69f8483") },
+    { id: "sundara-kanda", ordinal: 5, title: "Sundarakāṇḍa", eyebrow: "Book five", summary: "Reach the fifth book through its unusually long opening sarga of 190 verse groups.", citation: ramayanaCitation(325, 5, 2058023, 2099523, 37214, 37978, "R_5.001.190", 190, "8b61504a3b00cd8991410789af8a8d4b6b34828252b664eddcc100ce4abc81bd") },
+    { id: "yuddha-kanda", ordinal: 6, title: "Yuddhakāṇḍa", eyebrow: "Book six", summary: "Enter the sixth book with its source boundary intact.", citation: ramayanaCitation(391, 6, 2637433, 2640955, 47232, 47296, "R_6.001.016", 16, "3fbb01e48ed1d787e6388f9eb4d4dbf8fbea3368208af53cc410885ff9a4d824") },
+    { id: "uttara-kanda", ordinal: 7, title: "Uttarakāṇḍa", eyebrow: "Book seven", summary: "Complete this carrier-level route at the seventh book without claiming completion of the wider tradition.", citation: ramayanaCitation(507, 7, 3653378, 3659387, 65085, 65193, "R_7.001.027", 27, "9b6df97e6dd5e2090e27188d2b9e79f0291bbcdbdd4eee1a1f5786439e78d173") },
+  ],
+};
 
 function durgaCitation(sourceOrdinal: number, chapter: number, byteStart: number, byteEnd: number, lineStart: number, lineEnd: number, spanSha256: string): ExperienceCitation {
   return {
@@ -100,37 +98,48 @@ export const heroJourneys: HeroJourney[] = [
     slug: "ramayana",
     hero: "Ramayana",
     devanagari: "रामायण",
-    title: "Across the seven kāṇḍas",
-    invitation: "Trace one exact Sanskrit carrier from its opening book to its terminal seventh book.",
-    durationMinutes: 18,
+    title: "The road home to Ayodhya",
+    invitation: "Travel with the returning party from Lanka to Ayodhya, then discover how the story opens into living festival worlds.",
+    durationMinutes: 14,
     tone: "saffron",
-    sourceBoundary: "This journey follows the seven-book structure of one GRETIL Sanskrit electronic transcription. It is not a critical edition, every recension, every Ramayana tradition, or a product-rights clearance.",
+    sourceBoundary: "This playable retelling follows Yuddha Kāṇḍa sections CXXIV–CXXX in the product-allowed Project Gutenberg electronic text of Manmatha Nath Dutt's English prose translation. It is not every Ramayana, a historical route, a universal Diwali origin, or a complete account of any character, place, festival, or theology.",
     completeHeroUniverse: false,
     stops: [
-      { id: "bala-kanda", ordinal: 1, title: "Bālakāṇḍa", eyebrow: "Book one", summary: "Enter the epic through its first book and the carrier’s opening sarga.", citation: ramayanaCitation(1, 1, 10776, 28298, 329, 648, "R_1.001.079", 79, "9ea76e943c2c75d1297ea6fafad77cc4e00694d2b933553c2a6bf5049923930d") },
-      { id: "ayodhya-kanda", ordinal: 2, title: "Ayodhyākāṇḍa", eyebrow: "Book two", summary: "Move into the Ayodhya book through its first source-addressed sarga.", citation: ramayanaCitation(77, 2, 435464, 443637, 8158, 8306, "R_2.001.037", 37, "428f6d6455bf4003d8b2c56737a9aa65191462b7ee4b5781b0f5769cdb419f45") },
-      { id: "aranya-kanda", ordinal: 3, title: "Araṇyakāṇḍa", eyebrow: "Book three", summary: "Continue into the forest book while preserving its separate book and sarga identity.", citation: ramayanaCitation(188, 3, 1148091, 1152962, 20890, 20977, "R_3.001.022", 22, "6c3f0d7de015dfd4f6035dcafd58f26afaf30d5bb94fa7053727c1cfbe28cf65") },
-      { id: "kishkindha-kanda", ordinal: 4, title: "Kiṣkindhākāṇḍa", eyebrow: "Book four", summary: "Open the fourth book as its own textual region rather than flattening the epic into one story blob.", citation: ramayanaCitation(259, 4, 1612894, 1623904, 29221, 29417, "R_4.001.049", 49, "c214ef02f9aa9da085b0d73314aee0dde3235c74bf583b03ed81e6d3d69f8483") },
       {
-        id: "sundara-kanda",
-        ordinal: 5,
-        title: "Sundarakāṇḍa",
-        eyebrow: "Book five",
-        summary: "Reach the fifth book through its unusually long opening sarga of 190 verse groups.",
-        citation: ramayanaCitation(325, 5, 2058023, 2099523, 37214, 37978, "R_5.001.190", 190, "8b61504a3b00cd8991410789af8a8d4b6b34828252b664eddcc100ce4abc81bd"),
-        feature: {
-          id: "hanuman-deliberation",
-          eyebrow: "Reviewed episode",
-          title: "Before Hanuman speaks to Sita",
-          summary: "Hidden in the grove, Hanuman considers Sita's distress, language, likely fear, the guards, and the wider mission before choosing a truthful opening connected with Rama.",
-          reflection: "Pause, name the real purpose, consider how words may be received, test second-order consequences, and begin with the smallest truthful step that can build trust.",
-          citations: hanumanDeliberationCitations(),
-          sourceBoundary: "GRETIL Book 5 sarga 28 aligns by ordered episode content with Griffith Canto XXX and visually reviewed Dutt Section XXX. Literal edition coordinates are preserved; no carrier is treated as every Ramayana tradition, and no source text or uncorrected OCR is exposed.",
-          searchQuery: "Hanuman's deliberation before speaking to Sita",
-        },
+        id: "leave-lanka", ordinal: 1, title: "Leave Lanka", eyebrow: "Yuddha Kāṇḍa · CXXIV", summary: "With the war behind them, the companions gather and the Pushpaka rises. Home is no longer an idea; it becomes a direction.",
+        citation: duttYuddhaCitation(122, "CXXIV", 124, 810878, 814570, 12968, 13025, "07276778cf5e60d8a52e33c18477bdf3537636243f4b7bc620250c38ff72af96"),
+        visual: { asset: "/journeys/ramayana-return-lanka-v1.webp", location: "Lanka · narrative world", cast: ["Rama", "Sita", "Lakshmana", "Hanuman", "Sugriva", "Vibhishana"], connections: [{ label: "Lanka", kind: "place", href: "/search?q=Lanka%20Ramayana" }, { label: "Vibhishana", kind: "character", href: "/search?q=Vibhishana%20Ramayana" }, { label: "The selected Dutt edition", kind: "source", href: "/search?q=Manmatha%20Nath%20Dutt%20Ramayana" }] },
       },
-      { id: "yuddha-kanda", ordinal: 6, title: "Yuddhakāṇḍa", eyebrow: "Book six", summary: "Enter the sixth book with its source boundary intact.", citation: ramayanaCitation(391, 6, 2637433, 2640955, 47232, 47296, "R_6.001.016", 16, "3fbb01e48ed1d787e6388f9eb4d4dbf8fbea3368208af53cc410885ff9a4d824") },
-      { id: "uttara-kanda", ordinal: 7, title: "Uttarakāṇḍa", eyebrow: "Book seven", summary: "Complete this carrier-level route at the seventh book without claiming completion of the wider tradition.", citation: ramayanaCitation(507, 7, 3653378, 3659387, 65085, 65193, "R_7.001.027", 27, "9b6df97e6dd5e2090e27188d2b9e79f0291bbcdbdd4eee1a1f5786439e78d173") },
+      {
+        id: "sky-road", ordinal: 2, title: "The sky road remembers", eyebrow: "Yuddha Kāṇḍa · CXXV", summary: "As the journey turns north, places from loss, alliance, and battle pass below. The route becomes a memory of everyone who made return possible.",
+        citation: duttYuddhaCitation(123, "CXXV", 125, 814570, 821805, 13026, 13135, "ac4a5d9e558ad6f19bb7e8558f899971321a5f810116030fcd0843f5a0872010"),
+        visual: { asset: "/journeys/ramayana-return-lanka-v1.webp", location: "The homeward sky · narrative route", cast: ["Rama", "Sita", "Lakshmana", "Hanuman"], connections: [{ label: "Sita", kind: "character", href: "/search?q=Sita%20Ramayana" }, { label: "Kishkindha", kind: "place", href: "/search?q=Kishkindha%20Ramayana" }, { label: "The wider seven-kāṇḍa library", kind: "source", href: "/search?q=seven%20books%20Ramayana" }] },
+      },
+      {
+        id: "bharadvaja-hermitage", ordinal: 3, title: "Home is near", eyebrow: "Yuddha Kāṇḍa · CXXVI", summary: "At Bharadvaja's hermitage, Rama's first questions are about Ayodhya, Bharata, and the mothers he has not seen through fourteen years of exile.",
+        citation: duttYuddhaCitation(124, "CXXVI", 126, 821805, 825278, 13136, 13193, "2b5f780068a77fe5465ff61956b5355b78afdfeb1c872c4e4dff768cb20dabe4"),
+        visual: { asset: "/journeys/ramayana-return-hermitage-v1.webp", location: "Bharadvaja's hermitage · narrative world", cast: ["Rama", "Sita", "Lakshmana", "Bharadvaja", "Hanuman"], connections: [{ label: "Bharadvaja", kind: "character", href: "/search?q=Bharadvaja%20Ramayana" }, { label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya%20Ramayana" }, { label: "Shringverpur living place context", kind: "place", href: "/search?q=Shringverpur%20Ramayana" }] },
+      },
+      {
+        id: "hanuman-goes-ahead", ordinal: 4, title: "Hanuman goes ahead", eyebrow: "Yuddha Kāṇḍa · CXXVII", summary: "Before the returning party arrives, Hanuman carries the news to Guha and Bharata. The last distance home is crossed first by trust and a message.",
+        citation: duttYuddhaCitation(125, "CXXVII", 127, 825278, 832093, 13194, 13299, "4d3da830889d7d0c551c2cabb152f6dcb0695b7a5a2d50dc8854713699f14fb6"),
+        visual: { asset: "/journeys/ramayana-return-nandigrama-v1.webp", location: "Nandigrama · narrative world", cast: ["Hanuman", "Bharata", "Guha"], connections: [{ label: "Hanuman", kind: "character", href: "/search?q=Hanuman%20Ramayana" }, { label: "Bharata", kind: "character", href: "/search?q=Bharata%20Ramayana" }, { label: "Ramlila", kind: "performance", href: "/search?q=Ramlila%20UNESCO" }] },
+      },
+      {
+        id: "bharata-hears", ordinal: 5, title: "Bharata hears the news", eyebrow: "Yuddha Kāṇḍa · CXXVIII", summary: "Bharata asks how the exile became alliance and victory. Hanuman tells the road behind them, turning a distant return into something real.",
+        citation: duttYuddhaCitation(126, "CXXVIII", 128, 832093, 839471, 13300, 13413, "2db463f691012175d4ba4583da53837c3576158a88b2d78d4606e51117b37c31"),
+        visual: { asset: "/journeys/ramayana-return-nandigrama-v1.webp", location: "Nandigrama · narrative world", cast: ["Hanuman", "Bharata", "Shatrughna"], connections: [{ label: "Bharata", kind: "character", href: "/search?q=Bharata%20Ramayana" }, { label: "The forest exile", kind: "place", href: "/search?q=Ramayana%20forest%20exile" }, { label: "Hanuman in Lanka", kind: "source", href: "/search?q=Hanuman%20Lanka%20Sundara%20Kanda" }] },
+      },
+      {
+        id: "ayodhya-prepares", ordinal: 6, title: "Ayodhya prepares", eyebrow: "Yuddha Kāṇḍa · CXXIX", summary: "The city moves as one: roads, music, standards, families, and companions all turn toward the approaching reunion.",
+        citation: duttYuddhaCitation(127, "CXXIX", 129, 839471, 847239, 13414, 13530, "097c1dc22e4d379c367cf61a656856ea2f26face1092709ada5a1d75345c1837"),
+        visual: { asset: "/journeys/ramayana-return-ayodhya-v1.webp", location: "Ayodhya · narrative world", cast: ["Rama", "Sita", "Lakshmana", "Bharata", "Shatrughna", "Hanuman"], connections: [{ label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya" }, { label: "Rama's homecoming and Diwali", kind: "festival", href: "/search?q=Ramayana%20Diwali%20homecoming" }, { label: "Ramlila performance worlds", kind: "performance", href: "/search?q=Ramlila" }] },
+      },
+      {
+        id: "kingdom-returned", ordinal: 7, title: "The kingdom is returned", eyebrow: "Yuddha Kāṇḍa · CXXX", summary: "Bharata returns the kingdom he held in trust. The road closes not at a palace gate, but in responsibility accepted again before the people.",
+        citation: duttYuddhaCitation(128, "CXXX", 130, 847239, 863655, 13531, 13777, "0eab6905146d65e1f905b5e974d473712234c86fa12bf1902fcf9f1f435e9405"),
+        visual: { asset: "/journeys/ramayana-return-ayodhya-v1.webp", location: "Ayodhya · coronation world", cast: ["Rama", "Sita", "Lakshmana", "Bharata", "Shatrughna", "Vasishta", "Hanuman", "Sugriva", "Vibhishana"], connections: [{ label: "North Indian Diwali homecoming tradition", kind: "festival", href: "/search?q=Diwali%20Rama%20Ayodhya" }, { label: "Ramlila", kind: "performance", href: "/search?q=Ramlila%20traditional%20performance" }, { label: "Continue through the Ramayana universe", kind: "source", href: "/search?q=Ramayana" }] },
+      },
     ],
   },
   {
@@ -200,4 +209,8 @@ export const heroChallenges: HeroChallenge[] = heroJourneys.map((journey) => ({
 
 export function getHeroJourney(slug: string): HeroJourney | undefined {
   return heroJourneys.find((journey) => journey.slug === slug);
+}
+
+export function getHeroLibraryJourney(slug: string): HeroJourney | undefined {
+  return slug === "ramayana" ? ramayanaLibraryJourney : getHeroJourney(slug);
 }

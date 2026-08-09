@@ -27,6 +27,7 @@ describe("hero experiences", () => {
       expect(statSync(resolve(publicRoot, `${journey.slug}-world-v1.webp`)).size).toBeGreaterThan(150_000);
       for (const stop of journey.stops) {
         expect(playerSource, `${stop.id} has no Hindi story retelling`).toContain(`"${stop.id}": { title:`);
+        if (stop.visual) expect(statSync(resolve(process.cwd(), "public", stop.visual.asset.slice(1))).size).toBeGreaterThan(150_000);
       }
     }
   });
@@ -41,29 +42,23 @@ describe("hero experiences", () => {
     }
   });
 
-  sourceVaultIt("pins the five canonical source objects currently used by the source journeys and nested feature", () => {
+  sourceVaultIt("pins the canonical source objects currently used by the source journeys", () => {
     const root = resolve(process.cwd(), "../..");
     const hashes = [
-      "a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901",
-      "1fa8d3e9da23d83abd334661db3a95574bfd6290943441c374d9bce4ef142ed9",
-      "6f9e92eeb176b097b5e36a68676748c49152c07fea365da450bc54052d2f7062",
+      "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b",
       "21e5909392249ecca6677410c30d70323402d886975df807df2b865697fd9e6d",
       "7f2db461e724c675317130c653258a4b277e647e938b946b40687decd535111e",
     ];
     for (const hash of hashes) expect(sha256(resolve(root, `source_vault/objects/sha256/${hash.slice(0, 2)}/${hash}`))).toBe(hash);
   });
 
-  it("keeps the reviewed Hanuman deliberation episode nested inside Sundarakanda and preserves all three edition coordinates", () => {
+  it("keeps the playable Ramayana return route on seven exact consecutive Yuddha Kanda passages", () => {
     const ramayana = heroJourneys.find((journey) => journey.slug === "ramayana");
-    const feature = ramayana?.stops.find((stop) => stop.id === "sundara-kanda")?.feature;
-    expect(feature).toMatchObject({ id: "hanuman-deliberation", title: "Before Hanuman speaks to Sita" });
-    expect(feature?.citations.map((citation) => [citation.sourceOrdinal, citation.locator.sarga, citation.locator.literal_canto_number])).toEqual([
-      [352, 28, undefined],
-      [367, undefined, 30],
-      [30, undefined, undefined],
-    ]);
-    expect(feature?.citations.every((citation) => citation.rightsLane === "private_evidence" && citation.quotation === undefined)).toBe(true);
-    expect(feature?.sourceBoundary).toContain("visually reviewed Dutt Section XXX");
+    expect(ramayana?.title).toBe("The road home to Ayodhya");
+    expect(ramayana?.stops.map((stop) => stop.citation.sourceOrdinal)).toEqual([122, 123, 124, 125, 126, 127, 128]);
+    expect(ramayana?.stops.map((stop) => stop.citation.locator.literal_section_number)).toEqual([124, 125, 126, 127, 128, 129, 130]);
+    expect(ramayana?.stops.every((stop) => stop.citation.sourceSha256 === "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b" && stop.citation.rightsLane === "product_allowed")).toBe(true);
+    expect(ramayana?.stops.every((stop) => stop.visual && stop.visual.connections.length === 3)).toBe(true);
   });
 
   it("reconstructs every Diwali stop from the exact derived evidence-pack byte span", () => {

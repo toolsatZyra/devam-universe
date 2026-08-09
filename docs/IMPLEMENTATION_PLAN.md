@@ -2964,6 +2964,37 @@ not an exhaustive census of festivals, rituals, deities, places, stories,
 historical people or traditions. Future expansion repeats the same
 source-addressed constellation method instead of adding decorative graph dots.
 
+## 2026-08-09 Ramayana playable vertical-slice candidate
+
+The first story-world-quality candidate narrows the Ramayana playable journey
+to **The road home to Ayodhya** while preserving the seven-kanda carrier map in
+exact Search, Sarthi's source overview and the wider Atlas.
+
+- Seven exact consecutive Manmatha Nath Dutt Yuddha Kanda passages, sections
+  CXXIV-CXXX and source ordinals 122-128, form one complete return arc: departure
+  from Lanka, remembered route, Bharadvaja's hermitage, Hanuman's message,
+  Bharata's reception, Ayodhya's preparation and return of the kingdom.
+- Four original full-screen scene assets create distinct Lanka, hermitage,
+  Nandigrama and Ayodhya biomes. They are labelled artistic visualizations and
+  are not source images, historical reconstructions or geographic evidence.
+- Story, Route and Connections lenses remain inside the same full-screen world.
+  The route is explicitly narrative rather than historical GIS; each scene
+  exposes visible cast and three bounded character, place, festival,
+  performance or source portals.
+- English and Hindi retellings remain short. Exact edition coordinates and the
+  wider completion denial are optional evidence, not the primary play surface.
+- The existing Ramayana-to-Diwali edge had the correct CXXVII span hash but an
+  incorrect volume-4 source-object hash. The app data now correctly names the
+  Dutt Yuddha volume-3 object `8d1b890...`, and forward-only generated migration
+  `20260810063000_sync_current_living_atlas.sql` carries that repair and the new
+  gateway invitation without rewriting earlier migrations.
+
+The full product and interaction contract is
+`docs/RAMAYANA_PLAYABLE_VERTICAL_SLICE.md`. This candidate must still pass full
+portable tests, desktop/mobile browser acceptance, preview deployment and user
+playtesting before its grammar is replicated. It does not complete the
+Ramayana, map a historical route, universalize Diwali, or establish engagement.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.
