@@ -269,6 +269,46 @@ retained or quoted. Temple authority, institutional belief, art attribution,
 community testimony, ritual guidance, current schedules, access, and visitor
 safety stay outside what these overview citations prove.
 
+## Kashi cross-civilizational sacred-city constellation
+
+Kashi is implemented as a hub whose interest comes from moving between many
+different cultural systems, not from treating the city as one giant religious
+claim. Twenty-one destinations and thirty-four official-source routes establish
+the first playable city world with this breadth:
+
+- **Festival time -> riverfront:** Diwali opens the separately dated Dev
+  Deepawali lane, which opens the ghats and Ganga without merging the two
+  festivals or supplying a lamp, bathing, crowd, boat, or ritual instruction.
+- **City -> temple -> form:** Kashi opens Kashi Vishwanath, the institution-named
+  Vishvanatha form, and the larger Shiva universe while temple authority and
+  every other Shaiva form remain distinct.
+- **River -> ghats -> patronage:** Ganga opens the varied riverfront and one
+  Dashashwamedh encounter, then a broad post-1700 Maratha patronage layer rather
+  than an invented building-by-building chronology.
+- **Temple city -> text and performance:** Tulsi Manas and Sankat Mochan open
+  attributed Tulsidas, Ramcharitmanas, Rama, Hanuman, and Ramnagar Ramlila
+  routes; local memory, fixed editions, biography, and performance are never
+  made interchangeable.
+- **Kashi -> Sarnath -> Buddhist world:** geographic proximity opens Sarnath,
+  the Buddha, the first-teaching event, and early Sangha memory as a distinct
+  Buddhist and archaeological constellation, not a subdivision of one Kashi
+  theology.
+- **City -> music -> transmission and history:** UNESCO's Creative City record
+  opens living music, guru-shishya transmission, Ramlila sound, and ruler
+  patronage while each performer, lineage, repertoire, institution, and right
+  remains separately attributable.
+- **City -> textile -> makers:** the registered Banaras brocades and sarees
+  craft opens plural weaver communities without flattening caste, religion,
+  family, labour, consent, authorship, authenticity, or GI governance.
+- **Festival -> music and craft:** Ganga Mahotsav creates a bounded encounter
+  with the city's wider music and craft systems rather than representing them
+  completely.
+
+Search and Sarthi return English and Hindi citation-only Devam paraphrases from
+official district, national tourism, Intellectual Property India, and UNESCO
+pages. No source prose is retained or quoted, and no route supplies live temple,
+ritual, performance, visitor, crowd, river, or safety authority.
+
 ## Expansion order
 
 Expansion is demand-driven by enjoyable journeys, not raw node counts:

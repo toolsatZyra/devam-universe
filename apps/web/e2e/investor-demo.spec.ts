@@ -268,6 +268,17 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Follow Varanasi Kartika Purnima world to Dev Deepawali" }).click();
   await page.getByRole("button", { name: "Follow living Varanasi context to Kashi in another world" }).click();
   await expect(page.getByRole("heading", { name: "Kashi" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow opens a nearby Buddhist sacred world to Sarnath" }).click();
+  await expect(page.getByRole("heading", { name: "Sarnath" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow remembers the Buddha's first teaching to The Buddha at Sarnath" }).click();
+  await page.getByRole("button", { name: "Follow teaches Dhamma here to The first teaching at Sarnath" }).click();
+  await page.getByRole("button", { name: "Follow opens the remembered early Sangha to The early Sangha at Sarnath" }).click();
+  await expect(page.getByRole("heading", { name: "The early Sangha at Sarnath" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Sacred Time" }).click();
+  await page.getByRole("button", { name: "Follow Varanasi Kartika Purnima world to Dev Deepawali" }).click();
+  await page.getByRole("button", { name: "Follow living Varanasi context to Kashi in another world" }).click();
   await page.getByRole("button", { name: "Follow distinct Kashi Bhairava lane to Kalabhairava Jayanti in another world" }).click();
   await expect(page.getByRole("heading", { name: "Kalabhairava Jayanti" })).toBeVisible();
 

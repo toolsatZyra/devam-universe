@@ -113,7 +113,29 @@ const KOLKATA_SHAKTA_EDGE_IDS = [
   "shiva-temples-to-shiva", "dakshineswar-to-radha-krishna-temple", "radha-krishna-temple-to-krishna",
   "dakshineswar-to-kolkata", "kalighat-form-to-kalika-comparison", "kalighat-temple-to-dakshineswar",
 ];
-const RETIRED_EDGE_IDS = ["diwali-kolkata", "kali-puja-to-kalika", "kali-puja-to-durga"];
+const KASHI_SACRED_CITY_NODE_SLUGS = [
+  "kashi-vishwanath-temple", "vishvanatha-kashi", "ganga-varanasi", "varanasi-ghats",
+  "dashashwamedh-ghat", "kalabhairava-kashi-temple", "annapurna-kashi-temple",
+  "tulsi-manas-temple", "tulsidas-varanasi", "sankat-mochan-varanasi", "sarnath",
+  "buddha-sarnath", "first-sermon-sarnath", "buddhist-sangha-sarnath",
+  "varanasi-city-of-music", "varanasi-guru-shishya-music", "banaras-brocades-sarees",
+  "banaras-weaver-community", "maratha-ghat-patronage", "kashi-rulers-music-patronage",
+  "ganga-mahotsav-varanasi",
+];
+const KASHI_SACRED_CITY_EDGE_IDS = [
+  "diwali-to-dev-deepawali", "kashi-to-vishwanath-temple", "vishwanath-temple-to-vishvanatha",
+  "vishvanatha-to-shiva", "vishwanath-temple-to-ganga", "kashi-to-ganga", "ganga-to-varanasi-ghats",
+  "varanasi-ghats-to-dashashwamedh", "dev-deepawali-to-varanasi-ghats", "varanasi-ghats-to-maratha-patronage",
+  "kashi-to-kalabhairava-temple", "kalabhairava-temple-to-jayanti", "kashi-to-annapurna-temple",
+  "kashi-to-tulsi-manas-temple", "tulsi-manas-temple-to-tulsidas", "tulsidas-to-ramcharitmanas",
+  "tulsi-manas-temple-to-rama", "kashi-to-sankat-mochan", "sankat-mochan-to-hanuman",
+  "tulsidas-to-sankat-mochan", "kashi-to-ramnagar-ramlila", "kashi-to-sarnath", "sarnath-to-buddha",
+  "buddha-to-first-sermon", "first-sermon-to-sangha", "kashi-to-city-of-music",
+  "city-of-music-to-guru-shishya", "city-of-music-to-kashi-patronage", "city-of-music-to-ramlila",
+  "kashi-to-banaras-brocades", "brocades-to-weaver-community", "kashi-to-ganga-mahotsav",
+  "ganga-mahotsav-to-music", "ganga-mahotsav-to-brocades",
+];
+const RETIRED_EDGE_IDS = ["diwali-kolkata", "kali-puja-to-kalika", "kali-puja-to-durga", "diwali-kashi"];
 const WORLD_NODE_FAMILIES = new Set([
   "being_person", "event_story", "place_polity", "time_observance", "practice_material",
   "source_expression", "institution_community", "idea_wisdom", "art_culture", "historical_process",
@@ -192,14 +214,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 166 || worldEdges.length !== 268) {
+  if (gateways.length !== 5 || worldNodes.length !== 187 || worldEdges.length !== 301) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 171) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 268) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 192) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 301) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 268) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 301) throw new Error("Atlas edge endpoint and label triples must be unique");
   if (worldNodes.some((node) => !WORLD_NODE_FAMILIES.has(node.family))) throw new Error("Atlas nodes must declare a normalized family");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
@@ -264,6 +286,17 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     && edge.evidenceBoundary?.length >= 100
     && WORLD_RELATION_KINDS.has(edge.relationKind)))) {
     throw new Error("Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources or evidence boundaries");
+  }
+  if (KASHI_SACRED_CITY_NODE_SLUGS.some((slug) => !worldNodes.some((node) => node.id === slug
+    && node.gatewayId === "diwali"
+    && node.evidenceBoundary.length >= 100))) {
+    throw new Error("Kashi sacred-city constellation is incomplete");
+  }
+  if (KASHI_SACRED_CITY_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId
+    && /^citation:https:\/\/(?:varanasi\.nic\.in|www\.(?:incredibleindia\.gov\.in|unesco\.org)|ich\.unesco\.org|search\.ipindia\.gov\.in)\//.test(edge.sourceRef ?? "")
+    && edge.evidenceBoundary?.length >= 100
+    && WORLD_RELATION_KINDS.has(edge.relationKind)))) {
+    throw new Error("Kashi sacred-city routes are missing official citation-only sources or evidence boundaries");
   }
   const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
   const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
@@ -601,11 +634,31 @@ begin
   ) <> ${KOLKATA_SHAKTA_EDGE_IDS.length} then
     raise exception 'Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources';
   end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${KASHI_SACRED_CITY_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'diwali'
+      and atlas.visual->>'family' is not null
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${KASHI_SACRED_CITY_NODE_SLUGS.length} then
+    raise exception 'Kashi sacred-city nodes are missing or outside their evidence boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${KASHI_SACRED_CITY_EDGE_IDS.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' like 'citation:https://%'
+      and edge.visual->>'relationKind' is not null
+      and edge.visual->>'evidenceBoundary' is not null
+  ) <> ${KASHI_SACRED_CITY_EDGE_IDS.length} then
+    raise exception 'Kashi sacred-city routes are missing official citation-only sources';
+  end if;
   if exists (
     select 1 from public.atlas_edges edge
     where edge.visual->>'sourceId' = any (array[${RETIRED_EDGE_IDS.map(sqlText).join(", ")}])
   ) then
-    raise exception 'Retired unsourced Kolkata bridge edges survived synchronization';
+    raise exception 'Retired unsourced bridge edges survived synchronization';
   end if;
   if not exists (
     select 1

@@ -1,5 +1,19 @@
 # Implementation plan
 
+Checkpoint 2026-08-09 (Kashi cross-civilizational sacred-city constellation):
+the Living Atlas adds twenty-one citation-only destinations and thirty-four
+typed routes spanning Kashi Vishwanath and Vishvanatha, Ganga and the ghats,
+Kalabhairava and Annapurna place traditions, Tulsidas, Ramcharitmanas, Rama,
+Hanuman and Ramnagar Ramlila, Sarnath, the Buddha, the first teaching and early
+Sangha, UNESCO's music city and guru-shishya transmission, Banaras brocades and
+weaver communities, historical patronage, Ganga Mahotsav, and the separately
+dated Dev Deepawali bridge. The old unsourced Diwali-to-Kashi shortcut is
+retired. Exact Search and Sarthi serve concise English/Hindi orientation from
+official citation-only sources without copying prose. The generated reversible
+hosted projection target is 192 reviewed nodes including five gateways and 301
+app-owned edges; these are selected product counters, not civilizational
+completeness.
+
 Checkpoint 2026-08-09 (Kolkata Shakta living-place and art constellation): the
 Living Atlas adds twelve citation-only destinations and twenty typed routes
 across Kali Puja, Kalighat, its living Kali form, Kalighat painting and patua
@@ -8,7 +22,7 @@ temples, a Radha-Krishna temple, and Shyama Puja. Three unsourced shortcut edges
 were retired in favor of explorable, evidence-bounded paths. Exact Search and
 Sarthi serve concise English/Hindi orientation without copying source prose or
 hijacking generic ritual questions. The generated reversible hosted projection
-target is 171 reviewed nodes including five gateways and 268 app-owned edges;
+target was 171 reviewed nodes including five gateways and 268 app-owned edges;
 these are selected product counters, not civilizational completeness.
 
 Checkpoint 2026-08-10 (reversible game navigation and the first place-history
