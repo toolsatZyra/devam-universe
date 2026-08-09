@@ -2,22 +2,29 @@
 
 Status: **revised product and game-direction contract — 2026-08-10**
 
-Current implementation checkpoint: the story world now has two explicit
+Current implementation checkpoint: the story world now has three explicit
 illustrated districts rather than one hidden late-epic doorway. **The night the
 road changed** covers Ayodhyā Kāṇḍa source units I–XL exactly once across eight
-scene-specific tableaux and thirty-six bilingual beats. **The road home**
-retains seven tableaux and twenty-nine bilingual beats across Yuddha Kāṇḍa
-CXXIV–CXXX. Each district has its own sequence, progress, completion, replay,
-and return to the common compass; the player never auto-jumps across the
-unfinished middle of the epic.
+scene-specific tableaux and thirty-six bilingual beats. **Across the first
+rivers** continues contiguously through XLI–LVI with eight new tableaux and
+forty bilingual beats: Ayodhya follows the car, the citizens wake at the
+Tamasa, Guha and Lakshmana keep watch, Sumantra turns back, the three cross the
+Ganga and Yamuna, and a home is built at Chitrakoot. **The road home** retains
+seven tableaux and twenty-nine bilingual beats across Yuddha Kāṇḍa CXXIV–CXXX.
+Each district has its own sequence, progress, completion, replay, and return to
+the common compass; the player never auto-jumps across the unfinished middle
+of the epic.
 
 The initial world pack carries only bilingual previews, nodes, routes, and the
-district index and remains below 145 KB raw / 35 KB gzip. Complete beat scripts
+district index and remains below 180 KB raw / 35 KB gzip. Complete beat scripts
 load only for the district entered, each below 75 KB raw / 18 KB gzip, while
-media preloads only immediate neighbours. Four compass turns are now playable
-entrances and forty-five remain honestly labelled orientation. Any older
-checkpoint language below that calls the road home the only playable district
-or describes forty-eight orientation turns is superseded by this checkpoint.
+media preloads only immediate neighbours. Five compass turns are now playable
+entrances and forty-four remain honestly labelled orientation. The visual-world
+selector is presented before the thinner forty-nine-turn atlas, so the finished
+worlds are visible without knowing which story arc hides them. Any older
+checkpoint language below that calls the road home the only playable district,
+describes two districts, or describes forty-eight orientation turns is
+superseded by this checkpoint.
 
 ## North star
 
@@ -89,7 +96,7 @@ and exact source doors. It does not yet satisfy the product vision.
 
 - The Atlas import has now moved behind a server compiler, and the compass is a
   separate client component. The combined bilingual story payload is bounded
-  below 145 KB uncompressed and 35 KB gzip; adding complete scene copy or media
+  below 180 KB uncompressed and 35 KB gzip; adding complete scene copy or media
   to that eager payload would still be a regression, so later detail must load
   by arc and scene.
 - `JourneyPlayer` still owns camera input, graph traversal, Sārthi, completion,
@@ -228,15 +235,15 @@ scenes, each with three to seven visual beats, character viewpoints, place
 memories, consequences, and outward/return paths. This tests narrative depth
 without pretending the entire epic is finished.
 
-Current checkpoint: the seven scenes contain twenty-nine bilingual beats. Each
-scene now owns a distinct cinematic tableau; changing scene no longer reuses art
+Current checkpoint: three districts contain twenty-three scenes and 105
+bilingual beats. Each scene now owns a distinct cinematic tableau; changing scene no longer reuses art
 that depicts another event. Each beat applies a lightweight focal crop, depth,
 palette, and motion motif over its scene, and the player preloads only immediate
 neighbour art to preserve continuity without eagerly loading the district. A
 compiler-derived character/place index can return an encounter directly to
 every playable moment in which it appears. The whole-story map now uses that
-same graph to reveal all seven detailed scenes across five connected narrative
-places, retaining whether each scene occurs at, arrives in, departs from,
+same graph to reveal all twenty-three detailed scenes across twelve connected
+narrative places, retaining whether each scene occurs at, arrives in, departs from,
 remembers, or merely asks about the place. A visitor can enter an exact scene
 from Nandigrama, Ayodhya, or another lit place and return to the same map context.
 Character encounters now expose illustrated portals to every detailed scene in
@@ -253,9 +260,10 @@ participation, and Tamil family-dawn Deepavali. The selected lane can continue
 through a deliberately authored relationship trail and unwind to the exact
 coronation scene. Living practice loads only when the encounter is opened and
 only in the selected language; it is not copied into the eager story pack.
-Every mapped orientation turn now derives a direct “illustrated world ready”
-door to this playable district, so a visitor does not need to infer that the
-seventh whole-story world contains the one currently visual slice.
+Every mapped orientation turn retains a direct “illustrated world ready” door,
+while the three finished districts are also the first controls shown in the
+compass. A visitor no longer needs to infer which of seven story arcs hides the
+playable worlds.
 Beat-specific tableaux, sound,
 richer foreground animation, longer optional retellings, and observed user
 comprehension remain open; Gate 2 is therefore not yet complete.
@@ -272,18 +280,18 @@ ordinary-language story worlds. The interface reveals seven worlds first and
 only the selected world's six to eight turns, avoiding a forty-nine-node wall.
 Visitors can enter at any turn and move sequentially in either direction. Each
 turn exposes place, character, and story-thread cues; source coordinates and
-expression limits remain behind disclosure. Only the seven-scene road-home
-turn is labelled playable. The other forty-eight are explicitly labelled
-mapped orientation until their detailed scenes, visuals, and return paths are
-reviewed. Character, narrative-place, and story-thread paths are now compiled
+expression limits remain behind disclosure. Five turns now open the three
+detailed districts. The other forty-four are explicitly labelled mapped
+orientation until their detailed scenes, visuals, and return paths are reviewed.
+Character, narrative-place, and story-thread paths are now compiled
 from those same forty-nine turns rather than maintained as a second graph. A
 visitor can follow any repeated cue across story worlds, move within that path,
 open another path, and unwind to the exact story point at which each detour
-began. The Map lens now compiles thirty-one narrative places and the routes
+began. The Map lens now compiles thirty-eight narrative places and the routes
 between them from the same turns. It treats a repeated place as one temporal
 nexus, reveals its ordered moments, supports bounded two-way pan and progressive
 zoom, opens a chosen moment in the whole-story view, and restores the precise map
-context on return. The road-home district's detailed scene cards are also
+context on return. The three districts' detailed scene cards are also
 compiler-derived from existing journey moments and event-to-place graph
 relationships rather than a parallel hand-authored map. Their relationship
 wording remains visible to prevent a referenced place from being presented as

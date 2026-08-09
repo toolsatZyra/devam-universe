@@ -11,13 +11,20 @@ describe("playable story district compiler", () => {
   const district = buildPlayableStoryDistrictIndex(pack, journey.stops, map);
   const linksFor = (label: string) => district.byMapPlaceId[map.places.find((place) => place.label === label)!.id];
 
-  it("projects both detailed districts from existing graph relationships", () => {
-    expect(district).toMatchObject({ sceneCount: 15, placeCount: 5 });
+  it("projects all three detailed districts from existing graph relationships", () => {
+    expect(district).toMatchObject({ sceneCount: 23, placeCount: 12 });
     expect(linksFor("Lanka").map((link) => link.id)).toEqual(["leave-lanka"]);
     expect(linksFor("Kishkindha").map((link) => link.id)).toEqual(["sky-road"]);
     expect(linksFor("Bharadvaja's hermitage").map((link) => link.id)).toEqual(["bharadvaja-hermitage"]);
     expect(linksFor("Nandigrama").map((link) => link.id)).toEqual(["hanuman-goes-ahead", "bharata-hears"]);
-    expect(linksFor("Ayodhya").map((link) => link.id)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
+    expect(linksFor("The Tamasa riverbank").map((link) => link.id)).toEqual(["tamasa-night"]);
+    expect(linksFor("The road beyond Kosala").map((link) => link.id)).toEqual(["roads-beyond-kosala"]);
+    expect(linksFor("Shringaverapura").map((link) => link.id)).toEqual(["guha-night-watch"]);
+    expect(linksFor("The Ganga crossing").map((link) => link.id)).toEqual(["ganga-crossing"]);
+    expect(linksFor("The first forest night").map((link) => link.id)).toEqual(["first-forest-night"]);
+    expect(linksFor("The confluence at Prayaga").map((link) => link.id)).toEqual(["prayaga-to-yamuna"]);
+    expect(linksFor("The cottage at Chitrakoot").map((link) => link.id)).toEqual(["chitrakoot-home"]);
+    expect(linksFor("Ayodhya").map((link) => link.id)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
   });
 
   it("retains relationship meaning instead of inventing geographic settings", () => {

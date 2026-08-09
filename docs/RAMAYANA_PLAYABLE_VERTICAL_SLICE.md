@@ -1,21 +1,27 @@
 # Ramayana playable districts
 
-Status: **two-district playable candidate — 2026-08-10**
+Status: **three-district playable candidate — 2026-08-10**
 
 Current implementation checkpoint: the first repeatable slice, **The road home
-to Ayodhya**, is now joined by **The night the road changed**. The new district
-follows Manmatha Nath Dutt's Ayodhyā Kāṇḍa source units I–XL from coronation
-preparation through Rama, Sita, and Lakshmana preparing to depart. It ends
-before section XLI, so the selected-expression boundary is exact.
+to Ayodhya**, is joined by two contiguous early-epic districts. **The night the
+road changed** follows Manmatha Nath Dutt's Ayodhyā Kāṇḍa source units I–XL from
+coronation preparation through Rama, Sita, and Lakshmana preparing to depart.
+**Across the first rivers** continues without a source gap through XLI–LVI,
+ending when the three enter the cottage they have built at Chitrakoot. Bharata's
+return and the sandals arc begin later and are not smuggled into this boundary.
 
-The eight scenes preserve the sequence's human reversals rather than replacing
+The first eight scenes preserve the sequence's human reversals rather than replacing
 them with a one-line exile summary: Kaikeyi first rejoices; Manthara reframes
 the future; Dasharatha is trapped by the promise he renewed; Rama crosses a
 city still celebrating; Kausalya grieves; Lakshmana argues for resistance;
 Sita chooses the forest road; and three travellers turn toward the gate. The
 district contains thirty-six bilingual visual beats and eight original
-Devam-authored artistic visualizations. Every compass screen exposes both
-illustrated districts, and completing either returns to that selector.
+Devam-authored artistic visualizations. The next eight scenes add forty beats:
+public grief and pursuit, the Tamasa departure, the roads beyond Kosala, Guha's
+welcome and night watch, the Ganga crossing and Sumantra's return, the first
+forest night, Bharadvaja and the Yamuna road, and the making of a Chitrakoot
+home. Every compass screen exposes all three illustrated districts before the
+thin atlas, and completing any district returns to that selector.
 
 ## Decision
 
@@ -120,16 +126,19 @@ The player never leaves the full-screen world merely to understand it.
 
 ### Story
 
-The default lens is a cinematic sequence of seven visual scenes. It prioritizes
-emotion, characters, and one clear next action. Short retelling copy is capped at
+The default lens is a cinematic sequence inside the selected district: eight,
+eight, or seven visual scenes. Across the three districts there are twenty-three
+scenes and 105 bilingual beats. It prioritizes emotion, characters, and one clear next action. Short retelling copy is capped at
 roughly 45 words per beat in English and Hindi.
 
 ### Route
 
-The whole-story map shows thirty-one canonical narrative places without
-pretending they are modern coordinates. Inside it, the playable road-home
-district currently lights five connected places: Lanka, Kishkindha,
-Bharadvaja's hermitage, Nandigrama, and Ayodhya. The scene cards are compiled
+The whole-story map shows thirty-eight canonical narrative places without
+pretending they are modern coordinates. Inside it, the playable road-home and
+early-exile districts currently light twelve connected places, including
+Ayodhya, the Tamasa, Shringaverapura, the Ganga crossing, the first forest
+night, Prayaga, the Yamuna crossing, Chitrakoot, Lanka, Kishkindha,
+Bharadvaja's hermitage, and Nandigrama. The scene cards are compiled
 from the existing event-to-place graph and retain the exact relationship label
 (`departs from`, `remembers`, `takes place at`, `asks for news of`, `arrives in`,
 `unfolds at`, or the equivalent stored relationship), so a place mentioned in a
@@ -138,11 +147,11 @@ that exact scene; returning to Map restores the selected place and its local
 trail without losing story progress. The layout remains explicitly a schematic
 story world, not a historical GIS assertion.
 
-Because the remaining whole-story turns are mapped orientation rather than
-visual scenes, every one of their cards derives a direct **Illustrated world
-ready · The road home** entrance from the single playable turn in the compass.
-The ordinary visitor no longer has to guess which of seven story worlds hides
-the playable district.
+Because most whole-story turns remain mapped orientation rather than visual
+scenes, their cards retain a direct illustrated-world entrance. More
+importantly, the three finished worlds now appear before the forty-nine-turn
+atlas. The ordinary visitor no longer has to guess which story arc hides the
+playable work.
 
 ### Connections
 
@@ -178,8 +187,8 @@ festival, calendar, practice, or authority identities.
 
 ## Art direction
 
-The cosmic universe is the wrapper; each story is its own biome. This slice
-moves through seven scene-specific tableaux within four larger visual states:
+The cosmic universe is the wrapper; each story is its own biome. The road-home
+district moves through seven scene-specific tableaux within four larger visual states:
 
 1. saffron and indigo dawn above Lanka;
 2. jade and gold river-and-hermitage country;
@@ -206,6 +215,34 @@ using the earlier Devam-authored biome paintings only as style references, then
 encoded as WebP. They contain no third-party source image. The visual boundary
 above applies to every tableau; narrative claims continue to come from the
 source-addressed story data rather than from generated imagery.
+
+The first-rivers district adds eight distinct 1672×941 tableaux rather than
+stretching one location image across the whole departure:
+
+| Product asset | Story event | SHA-256 |
+| --- | --- | --- |
+| `ramayana-rivers-city-follows-v1.webp` | the city and royal household follow the departing car | `1009d74918be13397d03f1cba230fa981e4c364d9ac7d4898c84c0f932221f71` |
+| `ramayana-rivers-tamasa-night-v1.webp` | sleeping citizens and the forked predawn trail | `f74aeb9c97f44dcf074025af4ea63e6ae5a288cefe3c4223ec9fd395331104dd` |
+| `ramayana-rivers-kosala-road-v1.webp` | cultivated country opening toward the Ganga | `a6f8853ed02338ed76f133c721ca6d1044494b15be4b487748d383ec6324de96` |
+| `ramayana-rivers-guha-watch-v1.webp` | Guha and Lakshmana keep watch beside the river camp | `5e6b721ca098a331c5fbb589cc64b692e3a6e954a7f6d02a84e4734d018cb403` |
+| `ramayana-rivers-ganga-crossing-v1.webp` | Sita, Rama, and Lakshmana cross while Sumantra remains ashore | `b7597a79c2eb975047eb09f2088ad0c68baa09d03a5489ed5fa56c38b3f1d150` |
+| `ramayana-rivers-forest-night-v1.webp` | practical care during the first night beyond the chariot road | `bf181677fc59c539915a2097680f42d35329f896be631e829a0e66db95fd6037` |
+| `ramayana-rivers-yamuna-road-v1.webp` | Bharadvaja's confluence and the raft toward Chitrakoot | `afe333cea09677a7a891e0b58a76cd1f20ad6d82019a19dd5f67baff57a4c864` |
+| `ramayana-rivers-chitrakoot-home-v1.webp` | the cottage rises through the three travellers' work | `b96d417ed89e1bc5ce4f73b8912e0bf7089ceca56c8e9304e3bc26fb21a8f97d` |
+
+They were generated for Devam from project-bound text prompts with the built-in
+image model on 2026-08-10 and encoded as WebP. They contain no third-party
+source image, no visible text, and make no archaeological or modern-location
+claim. The selected Dutt passages—not the images—remain the narrative evidence.
+
+Local acceptance on 2026-08-10 passes all 24 serialized desktop and Pixel 7
+browser cases. The matrix enters and completes all three illustrated districts,
+decodes every scene image, traverses character and living-world paths, pans and
+zooms the narrative map in both directions, restores exact context, and checks
+horizontal overflow. TypeScript, lint, 853 portable tests with 17 named
+vault-only skips, and the optimized production build also pass. This is local
+mechanical and visual acceptance, not observed-user evidence that the district
+is yet enjoyable or sufficiently deep.
 
 ## Interaction and accessibility acceptance
 
@@ -242,7 +279,7 @@ Ramayana coverage.
 Implementation checkpoint 2026-08-10: the scene-seven Diwali encounter lazy-
 loads one selected-language living portal instead of adding three bilingual
 ritual packs to the initial story payload. The original story-pack limits remain
-below 145 KB raw and 35 KB gzip. Focused desktop/mobile acceptance traverses
+below 180 KB raw and 35 KB gzip. Focused desktop/mobile acceptance traverses
 Ramayana → Diwali → Bengal Kali Puja → Kalighat → Durga Puja and returns to the
 exact coronation scene. Visual review additionally verifies the three regional
 image crops and resets the mobile encounter scroll before a selected lane
@@ -267,10 +304,12 @@ reading documentation:
 5. How do I go back?
 6. How is this connected to another story, festival, place, or source?
 
-Only then should the grammar be replicated. The next candidates are Hanuman in
-Lanka, the Ayodhya-to-exile turn, and Sita in Mithila. Different stories may use
-different mechanics, but they retain the same navigation, evidence, rights,
-language, and uncertainty contracts.
+Only then should the grammar be replicated. The next coherent early-epic
+candidate is Dasharatha's death and Bharata's return, followed by the sandals
+journey and reunion at Chitrakoot. Hanuman in Lanka and Sita in Mithila remain
+strong later biome tests. Different stories may use different mechanics, but
+they retain the same navigation, evidence, rights, language, and uncertainty
+contracts.
 
 ## What this slice does not prove
 

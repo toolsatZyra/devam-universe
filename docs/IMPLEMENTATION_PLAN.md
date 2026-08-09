@@ -1,18 +1,30 @@
 # Implementation plan
 
-Checkpoint 2026-08-10 (second Ramayana illustrated district): the Ramayana
-story world now exposes two explicit visual entrances instead of one hidden
-road-home shortcut. **The night the road changed** maps Ayodhyā Kāṇḍa source
+Checkpoint 2026-08-10 (third Ramayana illustrated district): the Ramayana
+story world now exposes three explicit visual entrances before the thinner
+forty-nine-turn atlas. **The night the road changed** maps Ayodhyā Kāṇḍa source
 units I–XL exactly once into eight scene-specific tableaux and thirty-six
-bilingual beats, ending before section XLI. It preserves Kaikeyi's initial joy,
-Sita's active choice, Kausalya's grief, and Lakshmana's resistance. The existing
-road-home district remains seven scenes and twenty-nine beats. Each district
-has local sequence, progress, replay, and completion; completion returns to the
-two-district selector rather than jumping across the epic's unfinished middle.
-The eager preview/graph pack remains below 145 KB raw and 35 KB gzip; complete
-beats load only for the entered district and each district payload stays below
-75 KB raw and 18 KB gzip. This is fifteen playable selected-expression scenes,
-not complete Ramayana coverage or observed engagement.
+bilingual beats. **Across the first rivers** continues contiguously through
+XLI–LVI with eight new tableaux and forty beats: the citizens follow, the
+Tamasa tracks turn, the road crosses Kosala, Guha and Lakshmana keep watch,
+Sumantra returns from the Ganga, and the three cross the Yamuna and make a home
+at Chitrakoot. The existing road-home district remains seven scenes and
+twenty-nine beats. Each district has local sequence, progress, replay, and
+completion; completion returns to the three-district selector rather than
+jumping across the epic's unfinished middle. The eager preview/graph pack
+remains below 180 KB raw and 35 KB gzip; complete beats load only for the
+entered district and each district payload stays below 75 KB raw and 18 KB
+gzip. This is twenty-three playable selected-expression scenes and 105
+bilingual beats, not complete Ramayana coverage or observed engagement.
+
+Local acceptance for this checkpoint is complete: TypeScript and lint pass;
+853 portable product tests pass with the same 17 named vault-only skips; the
+optimized Next.js build passes; and all 24 serialized desktop/Pixel 7 browser
+cases pass. Browser acceptance includes the Atlas-to-Ramayana state chain, the
+new playable default, all eight first-rivers images, district completion and
+return, reversible character paths, and two-way map pan/zoom recovery. These
+results establish implementation and regression safety, not observed-user
+enjoyment or whole-epic completeness.
 
 Checkpoint 2026-08-10 (Ramayana cinematic beat staging and reversible story
 paths): all twenty-nine road-home beats now change the visible world rather
@@ -3094,13 +3106,13 @@ the ritual corpus in the story payload.
   supplies separately cropped West India, Bengal and Tamil arrival art and is
   requested only after the Diwali encounter opens.
 - The story compiler carries only the portal node and four narrow onward route
-  roots. Its established limits remain unchanged at less than 145 KB raw and
+  roots. Its current limits remain less than 180 KB raw and
   35 KB gzip; the global Atlas and bilingual ritual payloads are not copied into
   the browser pack.
-- Every mapped orientation card now derives a direct illustrated-world launch
-  from the compass's one playable turn. This makes the current product boundary
-  explicit and removes the need to guess that War and return → The road home is
-  the only finished visual district.
+- Every mapped orientation card retains a direct illustrated-world launch, and
+  the three finished districts now appear before the forty-nine-turn atlas.
+  This makes the current product boundary explicit without asking visitors to
+  discover which story arc happens to contain a visual district.
 - Local acceptance is complete: 850 portable product tests pass with the same
   17 named source-vault-only skips; lint, TypeScript and the optimized build
   pass; and all 20 desktop/mobile browser cases pass. The browser suite includes

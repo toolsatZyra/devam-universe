@@ -179,6 +179,24 @@ export function JourneyCompass({ compass, districts, language, onEnterMoment, on
       </div>
 
       <article className={styles.turnCard} aria-live="polite">
+        <div className={styles.playableFirst}>
+          <small>{language === "hi" ? "यहाँ से शुरू करें · चित्रित संसार" : "START HERE · ILLUSTRATED WORLDS"}</small>
+          <strong>{language === "hi" ? "कथा को दृश्य संसार में खेलें" : "Play the story inside a visual world"}</strong>
+          <span>{language === "hi" ? `${districts.length} विस्तृत संसार अभी तैयार हैं` : `${districts.length} detailed visual worlds are ready now`}</span>
+        </div>
+        <div className={styles.districtShortcuts} aria-label={language === "hi" ? "तैयार चित्रित कथा-संसार" : "Illustrated story worlds ready to enter"}>
+          {districts.map((district) => <button
+            type="button"
+            className={styles.playableShortcut}
+            aria-label={language === "hi" ? `चित्रित संसार खोलें: ${district.title.hi}` : `Enter illustrated world: ${district.title.en}`}
+            onClick={() => onEnterMoment(district.entryMomentId)}
+            key={district.id}
+          >
+            <span><small>{language === "hi" ? "चित्रित संसार तैयार" : "ILLUSTRATED WORLD READY"}</small><strong>{district.title[language]}</strong><em>{district.invitation[language]}</em></span>
+            <i>{language === "hi" ? "प्रवेश करें" : "Enter"} →</i>
+          </button>)}
+        </div>
+        <div className={styles.compassDivider}><span>{language === "hi" ? "या पूरे 49-मोड़ कथा-मानचित्र को देखें" : "OR BROWSE THE 49-TURN STORY ATLAS"}</span></div>
         <div className={styles.turnStatus} data-coverage={selectedTurn.coverage}>
           <span />
           {selectedTurn.coverage === "playable"
@@ -197,18 +215,6 @@ export function JourneyCompass({ compass, districts, language, onEnterMoment, on
           {selectedTurn.playableMomentId && <button type="button" className={styles.enter} onClick={() => onEnterMoment(selectedTurn.playableMomentId!)}>{language === "hi" ? "इस संसार में प्रवेश करें" : "Enter this story world"}<span>→</span></button>}
           <button type="button" disabled={navigationIndex === 0} onClick={() => step(-1)} aria-label={language === "hi" ? "पिछला कथा-मोड़" : "Previous story turn"}>←</button>
           <button type="button" disabled={navigationIndex === navigationTurnIds.length - 1} onClick={() => step(1)} aria-label={language === "hi" ? "अगला कथा-मोड़" : "Next story turn"}>→</button>
-        </div>
-        <div className={styles.districtShortcuts} aria-label={language === "hi" ? "तैयार चित्रित कथा-संसार" : "Illustrated story worlds ready to enter"}>
-          {districts.map((district) => <button
-            type="button"
-            className={styles.playableShortcut}
-            aria-label={language === "hi" ? `चित्रित संसार खोलें: ${district.title.hi}` : `Enter illustrated world: ${district.title.en}`}
-            onClick={() => onEnterMoment(district.entryMomentId)}
-            key={district.id}
-          >
-            <span><small>{language === "hi" ? "चित्रित संसार तैयार" : "ILLUSTRATED WORLD READY"}</small><strong>{district.title[language]}</strong><em>{district.invitation[language]}</em></span>
-            <i>{language === "hi" ? "प्रवेश करें" : "Enter"} →</i>
-          </button>)}
         </div>
         {selectedTurn.coverage === "orientation" && <p className={styles.coverageNote}>{language === "hi" ? "यह कथा-मोड़ पूरी यात्रा में जुड़ा है; इसका विस्तृत दृश्य-अनुभव अभी निर्माण में है।" : "This story turn belongs to the complete journey; its detailed visual scene is still being built."}</p>}
         <details>
