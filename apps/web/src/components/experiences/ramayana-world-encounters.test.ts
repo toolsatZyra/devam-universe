@@ -23,7 +23,8 @@ describe("Ramayana return-world encounters", () => {
 
   it("keeps every visible cast doorway attached to a reviewed Atlas node", () => {
     for (const [label, nodeId] of Object.entries(pack.castNodeIds)) {
-      expect(getJourneyEncounterNode(pack, nodeId), label).toMatchObject({ id: nodeId, gateway: false });
+      expect(getJourneyEncounterNode(pack, nodeId), label).toMatchObject({ id: nodeId });
+      expect(getJourneyEncounterNode(pack, nodeId)?.gateway, label).toBeFalsy();
     }
   });
 
@@ -86,6 +87,15 @@ describe("Ramayana return-world encounters", () => {
       "rama-coronation-return",
     ]));
     expect(getJourneyEncounterRoutes(pack, "return-to-ayodhya", 20).map((route) => route.destination.id)).toContain("diwali");
+  });
+
+  it("keeps one lazy Diwali doorway and the distinct living graph routes inside the story world", () => {
+    expect(pack.livingPortalNodeIds).toEqual(["diwali"]);
+    expect(pack.sceneNodeIds["kingdom-returned"]).toContain("diwali");
+    expect(pack.routes["lakshmi-puja"]?.length).toBeGreaterThan(0);
+    expect(pack.routes["kali-puja"]?.map((route) => route.destinationId)).toContain("kalighat-kali-temple");
+    expect(pack.routes["tamil-deepavali"]?.length).toBeGreaterThan(0);
+    expect(pack.routes["kalighat-kali-temple"]?.map((route) => route.destinationId)).toContain("durga-puja");
   });
 
   it("indexes character and place encounters back into every playable story moment", () => {

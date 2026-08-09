@@ -32,6 +32,9 @@ export function JourneyCompass({ compass, language, onEnterMoment, onSelectTurn,
   const indexes = useMemo(() => buildStoryCompassIndexes(compass), [compass]);
   const allTurnIds = useMemo(() => compass.arcs.flatMap((arc) => arc.turnIds), [compass.arcs]);
   const selectedTurn = compass.turns[selectedTurnId] ?? compass.turns[allTurnIds[0]];
+  const playableTurn = allTurnIds
+    .map((turnId) => compass.turns[turnId])
+    .find((turn) => turn.coverage === "playable" && turn.playableMomentId);
   const selectedArc = compass.arcs.find((arc) => arc.id === selectedTurn.arcId) ?? compass.arcs[0];
   const candidatePath = useMemo(() => getStoryCompassPathById(indexes, activePathId), [activePathId, indexes]);
   const activePath = candidatePath?.turnIds.includes(selectedTurn.id) ? candidatePath : undefined;
@@ -197,6 +200,15 @@ export function JourneyCompass({ compass, language, onEnterMoment, onSelectTurn,
           <button type="button" disabled={navigationIndex === 0} onClick={() => step(-1)} aria-label={language === "hi" ? "पिछला कथा-मोड़" : "Previous story turn"}>←</button>
           <button type="button" disabled={navigationIndex === navigationTurnIds.length - 1} onClick={() => step(1)} aria-label={language === "hi" ? "अगला कथा-मोड़" : "Next story turn"}>→</button>
         </div>
+        {selectedTurn.coverage === "orientation" && playableTurn?.playableMomentId && <button
+          type="button"
+          className={styles.playableShortcut}
+          aria-label={language === "hi" ? `चित्रित संसार खोलें: ${playableTurn.title.hi}` : `Enter illustrated world: ${playableTurn.title.en}`}
+          onClick={() => onEnterMoment(playableTurn.playableMomentId!)}
+        >
+          <span><small>{language === "hi" ? "चित्रित संसार तैयार" : "ILLUSTRATED WORLD READY"}</small><strong>{playableTurn.title[language]}</strong></span>
+          <i>{language === "hi" ? "प्रवेश करें" : "Enter"} →</i>
+        </button>}
         {selectedTurn.coverage === "orientation" && <p className={styles.coverageNote}>{language === "hi" ? "यह कथा-मोड़ पूरी यात्रा में जुड़ा है; इसका विस्तृत दृश्य-अनुभव अभी निर्माण में है।" : "This story turn belongs to the complete journey; its detailed visual scene is still being built."}</p>}
         <details>
           <summary>{language === "hi" ? "कवरेज और स्रोत सीमा" : "Coverage and source boundary"}</summary>

@@ -123,6 +123,12 @@ that exact scene; returning to Map restores the selected place and its local
 trail without losing story progress. The layout remains explicitly a schematic
 story world, not a historical GIS assertion.
 
+Because the remaining whole-story turns are mapped orientation rather than
+visual scenes, every one of their cards derives a direct **Illustrated world
+ready · The road home** entrance from the single playable turn in the compass.
+The ordinary visitor no longer has to guess which of seven story worlds hides
+the playable district.
+
 ### Connections
 
 The player can see the nearby universe without returning to a flat menu:
@@ -143,6 +149,17 @@ separate navigation model.
 Connections are rewards for attention, not an encyclopaedic dump. A visible
 trail, Back control, direct scene selection, and saved checkpoint make every
 move reversible.
+
+The first living reward now opens from the coronation scene's Diwali light. It
+leads with the story association, names its North Indian boundary, and offers
+three visually distinct present-day paths rather than a generic festival card:
+West India household Lakshmi Puja, Bengal Kali Puja participation, and Tamil
+family-dawn Deepavali. Choosing a path reveals why it matters, one
+source-labelled story, typical current practice, an optional minimum form, and
+its hash-bound evidence identity. The Bengal path can continue to Kalighat and
+then to the separately named Durga Puja context before unwinding through the
+same discovery trail to scene seven. None of these routes merge their regional,
+festival, calendar, practice, or authority identities.
 
 ## Art direction
 
@@ -167,6 +184,7 @@ Four additional original tableaux replace the earlier reused-art mismatches:
 | `ramayana-return-hanuman-ahead-v1.webp` | Hanuman carries the message north | `615654afc2d1bc388680fead6be6233a2025c5fc91c42817a8ff256ad063fb8f` |
 | `ramayana-return-bharata-hears-v1.webp` | Bharata receives the news beside the sandals | `ced6687489238307d945b0b4951e4abd9143148941e3465f4064cc46d844c097` |
 | `ramayana-return-coronation-v1.webp` | coronation and gratitude to the alliance | `e8b56ffa6f48dcafcf0b27ad04456f472d6a3c9e85499051eed99095d38ef912` |
+| `diwali-living-worlds-v1.webp` | West India household, Bengal public-night, and Tamil dawn living lanes | `ec9646dbe901da70da4dd1291bd9edfcb95e7f9e4b41da61ed3789026d02d4af` |
 
 They were generated for Devam with the built-in image model on 2026-08-09,
 using the earlier Devam-authored biome paintings only as style references, then
@@ -205,6 +223,17 @@ browser acceptance cover entry, relationship traversal, evidence access,
 backtracking, zoom discovery, reset, and zero trapped camera state. This proves
 the implemented interaction contract; it does not prove engagement or complete
 Ramayana coverage.
+
+Implementation checkpoint 2026-08-10: the scene-seven Diwali encounter lazy-
+loads one selected-language living portal instead of adding three bilingual
+ritual packs to the initial story payload. The original story-pack limits remain
+below 145 KB raw and 35 KB gzip. Focused desktop/mobile acceptance traverses
+Ramayana → Diwali → Bengal Kali Puja → Kalighat → Durga Puja and returns to the
+exact coronation scene. Visual review additionally verifies the three regional
+image crops and resets the mobile encounter scroll before a selected lane
+appears. The 212,118-byte original triptych is loaded only when this portal is
+opened. This is one working living-world crossing, not proof of the complete
+festival, temple, ritual, or epic graph.
 
 This follows the useful design lesson from *Journey*: an emotional arc must be
 designed and iterated as a whole, not inferred from visual polish. It also uses

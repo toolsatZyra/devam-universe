@@ -320,8 +320,8 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("heading", { name: "Travel through the story by place" })).toBeVisible();
   await page.getByRole("button", { name: "Whole story", exact: true }).click();
   await page.getByRole("button", { name: /War and return/ }).click();
-  await expect(page.getByRole("button", { name: /The road home/ })).toBeVisible();
-  await page.getByRole("button", { name: /The road home/ }).click();
+  await expect(page.getByRole("button", { name: "7. The road home", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "7. The road home", exact: true }).click();
   await expect(page.getByText("PLAYABLE NOW", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Enter this story world" }).click();
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
@@ -470,7 +470,7 @@ test("the Ramayana narrative map pans, zooms, and returns to exact story context
 test("a Ramayana character path opens illustrated scenes and returns without losing context", async ({ page }) => {
   await page.goto("/journeys/ramayana");
   await page.getByRole("button", { name: /War and return/ }).click();
-  await page.getByRole("button", { name: /The road home/ }).click();
+  await page.getByRole("button", { name: "7. The road home", exact: true }).click();
   await page.getByRole("button", { name: "Enter this story world" }).click();
 
   await page.getByRole("button", { name: "Rama", exact: true }).click();
@@ -491,10 +491,45 @@ test("a Ramayana character path opens illustrated scenes and returns without los
   await expectNoHorizontalOverflow(page);
 });
 
+test("the Ramayana homecoming opens distinct living Diwali lanes and returns through the graph", async ({ page }) => {
+  await page.goto("/journeys/ramayana");
+  await page.getByRole("button", { name: "Enter illustrated world: The road home" }).click();
+  await page.getByRole("button", { name: "Go to scene 7" }).click();
+  await page.getByRole("button", { name: "Connections", exact: true }).click();
+  await page.getByRole("button", { name: "Explore Diwali, Master world" }).click();
+
+  const livingBridge = page.getByRole("region", { name: "Ramayana to living Diwali" });
+  await expect(livingBridge).toBeVisible();
+  await expect(livingBridge.getByText("The story connection", { exact: true })).toBeVisible();
+  const livingPaths = livingBridge.getByLabel("Three distinct living Diwali paths").getByRole("button");
+  await expect(livingPaths).toHaveCount(3);
+  await expect.poll(() => livingBridge.locator("img").evaluateAll((images) => images.every((image) => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
+
+  await livingBridge.getByRole("button", { name: /Bengal.*Enter this living path/ }).click();
+  const kaliLane = page.getByRole("region", { name: /living-practice lane/ });
+  await expect(kaliLane.getByText("What people may do today", { exact: true })).toBeVisible();
+  await expect(kaliLane.getByText("Why this lane matters", { exact: true })).toBeVisible();
+  await kaliLane.getByRole("button", { name: /Travel onward from/ }).click();
+
+  await expect(page.getByRole("complementary", { name: "Kali Puja encounter" })).toBeVisible();
+  await page.getByRole("button", { name: /opens a living Kalighat temple world/ }).click();
+  await expect(page.getByRole("complementary", { name: "Kalighat Kali Temple encounter" })).toBeVisible();
+  await page.getByRole("button", { name: /also opens a distinct Kalighat festival context/ }).click();
+  await expect(page.getByRole("complementary", { name: "Durga Puja encounter" })).toBeVisible();
+
+  await page.getByRole("button", { name: /Previous discovery/ }).click();
+  await page.getByRole("button", { name: /Previous discovery/ }).click();
+  await page.getByRole("button", { name: /Previous discovery/ }).click();
+  await expect(page.getByRole("region", { name: "Ramayana to living Diwali" })).toBeVisible();
+  await page.getByRole("button", { name: /Back to the scene/ }).click();
+  await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
+  await expectNoHorizontalOverflow(page);
+});
+
 test("the Ramayana road home loads a distinct tableau for every scene", async ({ page }) => {
   await page.goto("/journeys/ramayana");
   await page.getByRole("button", { name: /War and return/ }).click();
-  await page.getByRole("button", { name: /The road home/ }).click();
+  await page.getByRole("button", { name: "7. The road home", exact: true }).click();
   await page.getByRole("button", { name: "Enter this story world" }).click();
 
   const sceneAssets = [
