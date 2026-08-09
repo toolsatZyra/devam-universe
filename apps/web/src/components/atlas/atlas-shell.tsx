@@ -16,7 +16,7 @@ import {
 } from "react";
 import { canGuestAskSarthi, canGuestOpenGateway } from "@/lib/account/guest-preview";
 import { trackProductEvent } from "@/lib/analytics/client";
-import { worldRelationLabels, type Gateway, type PlaceThread, type WorldEdge, type WorldNode } from "../../lib/domain/atlas";
+import { worldNodeFamilyLabels, worldRelationLabels, type Gateway, type PlaceThread, type WorldEdge, type WorldNode } from "../../lib/domain/atlas";
 import type { RitualProcedureGuide } from "@/lib/domain/practice";
 import {
   ATLAS_MAX_SCALE,
@@ -520,7 +520,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
               const depth = node.size === "major" ? 58 : 22 + index % 5 * 13;
               return (
                 <button
-                  className={`${styles.discoveryNode} ${node.size === "major" ? styles.discoveryMajor : ""} ${active ? styles.discoveryActive : ""} ${visible ? styles.discoveryVisible : ""}`}
+                  className={`${styles.discoveryNode} ${styles[`discovery_${node.family}`]} ${node.size === "major" ? styles.discoveryMajor : ""} ${active ? styles.discoveryActive : ""} ${visible ? styles.discoveryVisible : ""}`}
                   key={node.id}
                   style={{ left: `${node.position.x}%`, top: `${node.position.y}%`, "--node-depth": `${depth}px`, "--delay": `${index * -1.7}s` } as CSSProperties}
                   type="button"
@@ -569,7 +569,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
       {(selected || focusedNode) && (
         <section className={styles.discoveryCard} aria-live="polite">
           <button className={styles.cardClose} type="button" onClick={resetView} aria-label="Close discovery"><Icon name="close" size={17} /></button>
-          <p>{focusedNode ? `${focusedNode.kind} · ${selected?.title} world` : selectedStory?.eyebrow}</p>
+          <p>{focusedNode ? `${worldNodeFamilyLabels[focusedNode.family]} · ${focusedNode.kind} · ${selected?.title} world` : selectedStory?.eyebrow}</p>
           <h2>{focusedNode?.label ?? selected?.title}</h2>
           <span>{focusedNode?.summary ?? selectedStory?.story}</span>
           <div className={styles.cardActions}>

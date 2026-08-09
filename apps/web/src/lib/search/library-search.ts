@@ -14,6 +14,7 @@ import { searchDevimahatmyaSemanticGraph } from "./devimahatmya-semantic-search"
 import { searchGaneshaPuranaStructure } from "./ganesha-purana-structure-search";
 import { searchGanapatiAtharvashirsha } from "./ganapatyatharvashirsha-search";
 import { searchDuttRamayanaStructure } from "./dutt-ramayana-structure-search";
+import { searchLivingCultureWorld } from "./living-culture-world";
 
 export type LibrarySearchResult = {
   id: string;
@@ -118,7 +119,10 @@ export async function searchLibrary(
   const ganeshaPuranaResults = searchGaneshaPuranaStructure(query, languageCode);
   const atharvashirshaResults = searchGanapatiAtharvashirsha(query, languageCode);
   const duttRamayanaResults = searchDuttRamayanaStructure(query, languageCode);
-  const compactResults = ritualResults.length > 0
+  const livingCultureResults = searchLivingCultureWorld(query, languageCode);
+  const compactResults = livingCultureResults.length > 0
+    ? livingCultureResults
+    : ritualResults.length > 0
     ? ritualResults
     : [
         ...semanticGraphResults,

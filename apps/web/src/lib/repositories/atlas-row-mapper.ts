@@ -1,4 +1,4 @@
-import { inferWorldRelationKind, isWorldRelationKind, type AtlasWorld, type Gateway, type GatewayTone, type WorldEdge, type WorldNode } from "../domain/atlas";
+import { inferWorldRelationKind, isWorldNodeFamily, isWorldRelationKind, type AtlasWorld, type Gateway, type GatewayTone, type WorldEdge, type WorldNode } from "../domain/atlas";
 import type { Tables } from "@/lib/supabase/database.types";
 import { gateways as fallbackGateways, placeThreads, worldEdges as fallbackWorldEdges, worldNodes as fallbackWorldNodes } from "../../data/atlas";
 
@@ -66,13 +66,16 @@ function worldNode(row: AtlasNodeRow): WorldNode {
   const summary = providedFieldCount === 0 ? fallback.summary : visual.summary;
   const searchQuery = providedFieldCount === 0 ? fallback.searchQuery : visual.searchQuery;
   const evidenceBoundary = providedFieldCount === 0 ? fallback.evidenceBoundary : visual.evidenceBoundary;
+  const family = visual.family === undefined ? fallback.family : visual.family;
   if (!Array.isArray(eras) || eras.length === 0 || !eras.every((item) => typeof item === "string" && ERAS.includes(item as typeof ERAS[number]))) throw new Error(`${row.slug} has invalid eras.`);
   if (gatewayId !== "ramayana" && gatewayId !== "ganesha" && gatewayId !== "durga" && gatewayId !== "diwali" && gatewayId !== "sacred-time") throw new Error(`${row.slug} has an invalid gateway.`);
   if (typeof summary !== "string" || typeof searchQuery !== "string" || typeof evidenceBoundary !== "string") throw new Error(`${row.slug} has incomplete exploration copy.`);
+  if (!isWorldNodeFamily(family)) throw new Error(`${row.slug} has an invalid node family.`);
   return {
     id: row.slug,
     label: row.title,
     kind: row.node_kind,
+    family,
     eras: eras as string[],
     gatewayId,
     summary,

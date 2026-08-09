@@ -14,6 +14,7 @@ export type WorldNode = {
   id: string;
   label: string;
   kind: string;
+  family: WorldNodeFamily;
   eras: string[];
   gatewayId: Gateway["id"];
   summary: string;
@@ -27,6 +28,52 @@ export type WorldNode = {
     region: string;
   };
 };
+
+export const worldNodeFamilies = [
+  "being_person",
+  "event_story",
+  "place_polity",
+  "time_observance",
+  "practice_material",
+  "source_expression",
+  "institution_community",
+  "idea_wisdom",
+  "art_culture",
+  "historical_process",
+] as const;
+
+export type WorldNodeFamily = typeof worldNodeFamilies[number];
+
+export const worldNodeFamilyLabels: Record<WorldNodeFamily, string> = {
+  being_person: "Being & person",
+  event_story: "Event & story",
+  place_polity: "Place & polity",
+  time_observance: "Time & observance",
+  practice_material: "Practice & material",
+  source_expression: "Source & expression",
+  institution_community: "Community & institution",
+  idea_wisdom: "Idea & wisdom",
+  art_culture: "Art & culture",
+  historical_process: "History in motion",
+};
+
+export function isWorldNodeFamily(value: unknown): value is WorldNodeFamily {
+  return typeof value === "string" && worldNodeFamilies.includes(value as WorldNodeFamily);
+}
+
+export function inferWorldNodeFamily(kind: string): WorldNodeFamily {
+  const value = kind.toLocaleLowerCase("en-IN");
+  if (/historical|movement|transmission|reform|campaign/.test(value)) return "historical_process";
+  if (/place|city|kingdom|polity|pilgrimage|peetha|hermitage|workshop/.test(value)) return "place_polity";
+  if (/practice|material|food|image|symbol|offering|ritual|transition/.test(value)) return "practice_material";
+  if (/community|institution|tradition|lineage|dynasty|pandal|sangh|guild/.test(value)) return "institution_community";
+  if (/performance|theatre|art|music|dance|drumming|installation|architecture|craft/.test(value)) return "art_culture";
+  if (/text|source|epic|edition|scriptur|purana|upanishad|book|work|reading/.test(value)) return "source_expression";
+  if (/character|king|queen|figure|deity|goddess|sage|seeker|guide|name|form|pair|connector/.test(value)) return "being_person";
+  if (/festival|observance|puja|day|sequence|cycle|rhythm|jayanti|chaturthi|navami|ashtami|purnima|amavasya|season/.test(value)) return "time_observance";
+  if (/story|episode|battle|return|turning point|narrative/.test(value)) return "event_story";
+  return "idea_wisdom";
+}
 
 export type WorldEdge = {
   id: string;
