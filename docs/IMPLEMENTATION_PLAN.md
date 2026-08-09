@@ -2874,6 +2874,33 @@ This is a high-value breadth slice over the retained evidence base, not complete
 September–December coverage, every Indian festival, every region, or the final
 civilizational denominator.
 
+## 2026-08-09 Sacred Time practice-cycle candidate
+
+The next local candidate on `codex/sacred-time-practice-cycles` projects the
+entire current ritual-product denominator into the connected Atlas without
+claiming that the denominator is complete Indian culture.
+
+- `ritual-atlas-coverage.ts` explicitly maps all 47 current-contract records to
+  their exact content-pack path, byte-derived SHA-256, Atlas node and
+  source-addressed relationship. The split remains 46 user-complete lanes and
+  one limited participation companion; 39 retired legacy files remain excluded.
+- Twenty-two new destinations expose recurring Ekadashi, Sankranti, Pradosha,
+  Purnima/Amavasya, monthly Durgashtami, monthly Shivaratri and weekday rhythms,
+  plus scoped festival, deity and sage connectors.
+- Forty new relationships make those cycles traversable and add bounded bridges
+  from Durga to the Hartalika Parvati doorway and from Diwali Lakshmi Puja to the
+  separately scoped Lakshmi connector. Every new relationship carries an exact
+  ritual-pack SHA-256.
+- The local candidate denominator is 5 gateways, 118 world nodes, 198 edges and
+  156 source-addressed routes. Generated migration
+  `20260809170000_sync_current_living_atlas.sql` remains local and unapplied until
+  local browser acceptance, preview deployment and hosted migration gates pass.
+
+These mappings establish product coverage of the retained current ritual packs,
+not an exhaustive census of festivals, rituals, deities, places, stories,
+historical people or traditions. Future expansion repeats the same
+source-addressed constellation method instead of adding decorative graph dots.
+
 ## Phase 3 — September-December layer
 
 Complete the deterministic location-aware calendar data and all festival/ritual procedures for September through December. Connect each observance to stories, deities, places, sources, regional variants, Atlas nodes, and Sarthi actions.

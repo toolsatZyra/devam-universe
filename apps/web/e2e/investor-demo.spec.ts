@@ -191,6 +191,20 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("heading", { name: "Kalabhairava Jayanti" })).toBeVisible();
 
   await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Sacred Time" }).click();
+  await page.getByRole("button", { name: "Follow seven named devotional dates to Ekadashi Cycle" }).click();
+  await expect(page.getByRole("heading", { name: "Ekadashi Cycle" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow bounded Vishnu remembrance to Vishnu" }).click();
+  await expect(page.getByRole("heading", { name: "Vishnu" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Durga" }).click();
+  await page.getByRole("button", { name: "Follow Hartalika goddess bridge to Parvati" }).click();
+  await expect(page.getByRole("heading", { name: "Parvati" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow reunion remembered in Hartalika to Shiva" }).click();
+  await expect(page.getByRole("heading", { name: "Shiva" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("link", { name: "Begin at Ayodhya" })).toBeVisible();
   await page.getByRole("link", { name: "Begin at Ayodhya" }).click();

@@ -71,6 +71,12 @@ between the four hero universes and separately scoped observances by date,
 region, story and place. Calendar adjacency is navigation, never proof of a
 shared origin, theology, ritual authority or universal Indian sequence.
 
+Every current ritual-contract record must also be an evidence-addressed Atlas
+doorway. Repeating observances appear as explorable practice cycles connected to
+their separately scoped stories, deities, sages, places and neighbouring worlds;
+they are never reduced to a flat date list or used as a civilizational
+completeness claim.
+
 For each completed festival or ritual lane, the user must be able to learn what
 applies to them, why it matters and which source-labelled stories explain it,
 what people in that context typically do and when, and what they can do step by
