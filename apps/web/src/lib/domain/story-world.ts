@@ -33,6 +33,43 @@ export type StoryMoment = {
   beats: StoryBeat[];
 };
 
+export type StoryCompassRange = {
+  kandaSlug: string;
+  startOrdinal: number;
+  endOrdinal: number;
+  sourceSha256: string;
+};
+
+export type StoryCompassTurn = {
+  id: string;
+  arcId: string;
+  ordinal: number;
+  title: { en: string; hi: string };
+  hook: { en: string; hi: string };
+  place: string;
+  characters: string[];
+  threads: string[];
+  coverage: "orientation" | "playable";
+  playableMomentId?: string;
+  sourceRange: StoryCompassRange;
+};
+
+export type StoryCompassArc = {
+  id: string;
+  ordinal: number;
+  title: { en: string; hi: string };
+  invitation: { en: string; hi: string };
+  turnIds: string[];
+};
+
+export type StoryCompass = {
+  expressionLabel: string;
+  sourceBoundary: string;
+  totalSourceUnits: number;
+  arcs: StoryCompassArc[];
+  turns: Record<string, StoryCompassTurn>;
+};
+
 /**
  * A small, serializable slice of the knowledge universe compiled for one
  * playable story world. The browser must never need the global Atlas dataset
@@ -40,6 +77,7 @@ export type StoryMoment = {
  */
 export type StoryWorldPack = {
   id: string;
+  compass: StoryCompass;
   sceneNodeIds: Record<string, string[]>;
   nodeMomentIds: Record<string, string[]>;
   castNodeIds: Record<string, string>;

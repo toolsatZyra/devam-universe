@@ -302,6 +302,14 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("link", { name: "Begin the return journey" }).click();
   const ramayanaWorld = page.getByRole("region", { name: "Ramayana story world" });
   await expect(ramayanaWorld).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Enter the story from anywhere" })).toBeVisible();
+  await expect(page.getByRole("navigation", { name: "Seven Ramayana story worlds" }).getByRole("button")).toHaveCount(7);
+  await expect(page.getByRole("button", { name: /A story finds its voice/ })).toBeVisible();
+  await page.getByRole("button", { name: /War and return/ }).click();
+  await expect(page.getByRole("button", { name: /The road home/ })).toBeVisible();
+  await page.getByRole("button", { name: /The road home/ }).click();
+  await expect(page.getByText("PLAYABLE NOW", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Enter this story world" }).click();
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
   await expect(page.getByTestId("journey-beat-stage")).toHaveAttribute("data-motif", "gather");
   await expect(page.getByRole("listitem", { name: /2\. The sky road remembers/ })).toBeVisible();
@@ -346,7 +354,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.keyboard.press("ArrowLeft");
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
 
-  await page.getByRole("button", { name: "Route" }).click();
+  await page.getByRole("button", { name: "Map" }).click();
   await expect(page.getByRole("button", { name: /Nandigrama/ })).toBeVisible();
   await page.getByRole("button", { name: "Connections" }).click();
   await expect(page.getByRole("button", { name: "Explore Departure from Lanka, Story event" })).toBeVisible();
@@ -359,7 +367,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("link", { name: "Open its exact library trail" })).toBeVisible();
   await page.getByRole("button", { name: "← Previous discovery" }).click();
   await page.getByRole("button", { name: "← Back to the scene" }).click();
-  await page.getByRole("button", { name: "Story", exact: true }).click();
+  await page.getByRole("button", { name: "Play", exact: true }).click();
   await page.getByRole("button", { name: "Rama", exact: true }).click();
   await expect(page.getByText("Meet Rama in the story", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: /The sky road remembers Enter this moment/ }).click();
