@@ -41,6 +41,19 @@ const reviewedDetailNodeIds = [
   "ananta-chaturdashi",
   "ganesha-purana",
   "ganapatyatharvashirsha",
+  "ganesha-cosmic-world",
+  "ganesha-five-elements",
+  "ganesha-one-tusked-form",
+  "ganesha-mouse-emblem",
+  "ganesha-eight-names",
+  "ganesha-ekadanta",
+  "ganesha-lambodara",
+  "ganesha-vighnanashin",
+  "public-ganeshotsav-1893",
+  "ganeshotsav-community-pandal",
+  "ganeshotsav-clay-murti",
+  "ganeshotsav-modak",
+  "ganeshotsav-visarjan",
   "devi-mahatmya",
   "madhu-kaitabha",
   "mahishasura",
@@ -99,7 +112,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(118);
+    expect(worldNodes).toHaveLength(131);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -109,6 +122,7 @@ describe("Living Atlas exploration data", () => {
       expect(allIds.has(edge.to), `${edge.id} has an unknown destination`).toBe(true);
       expect(edge.from).not.toBe(edge.to);
       expect(edge.relation.length).toBeGreaterThan(2);
+      expect(edge.relationKind.length).toBeGreaterThan(2);
     }
 
     const reachable = new Map(gateways.map((gateway) => [gateway.id, reachableFrom(gateway.id)]));
@@ -176,6 +190,34 @@ describe("Living Atlas exploration data", () => {
     }
   });
 
+  it("turns the Ganesha doorway into source, form, symbol, festival, and history routes", () => {
+    const constellationIds = [
+      "ganesha-cosmic-world", "ganesha-five-elements", "ganesha-one-tusked-form", "ganesha-mouse-emblem",
+      "ganesha-eight-names", "ganesha-ekadanta", "ganesha-lambodara", "ganesha-vighnanashin",
+      "public-ganeshotsav-1893", "ganeshotsav-community-pandal", "ganeshotsav-clay-murti",
+      "ganeshotsav-modak", "ganeshotsav-visarjan",
+    ];
+    expect(worldNodes.filter((node) => constellationIds.includes(node.id))).toHaveLength(constellationIds.length);
+
+    const constellationEdges = worldEdges.filter((edge) => constellationIds.includes(edge.from) || constellationIds.includes(edge.to) || edge.id === "ganesha-to-shiva-source-kinship");
+    expect(constellationEdges).toHaveLength(19);
+    expect(constellationEdges.every((edge) => edge.sourceRef?.includes("sha256:"))).toBe(true);
+    expect(new Set(constellationEdges.map((edge) => edge.relationKind))).toEqual(new Set(["festival", "history", "identity", "kinship", "practice", "teaching", "text", "time"]));
+
+    const routes = [
+      ["ganesha", "ganesha-cosmic-world", "ganesha-five-elements"],
+      ["ganapatyatharvashirsha", "ganesha-one-tusked-form", "ganesha-mouse-emblem"],
+      ["ganapatyatharvashirsha", "ganesha-eight-names", "ganesha-ekadanta", "ganesha-one-tusked-form"],
+      ["ganesh-chaturthi", "public-ganeshotsav-1893", "ganeshotsav-community-pandal"],
+      ["ganesh-chaturthi", "ganeshotsav-clay-murti", "ganeshotsav-visarjan", "ananta-chaturdashi"],
+    ];
+    for (const route of routes) {
+      for (let index = 0; index < route.length - 1; index += 1) {
+        expect(worldEdges.some((edge) => edge.from === route[index] && edge.to === route[index + 1]), `${route[index]} must connect to ${route[index + 1]}`).toBe(true);
+      }
+    }
+  });
+
   it("turns the Devimahatmya into a source-addressed frame, manifestation, figure, and episode constellation", () => {
     const constellationIds = [
       "king-suratha", "merchant-samadhi", "sage-medhas", "medhas-hermitage-story-world", "mahamaya",
@@ -229,7 +271,7 @@ describe("Living Atlas exploration data", () => {
       }
     }
 
-    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(156);
+    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(175);
   });
 
   it("gives every era a visible exploration path", () => {
@@ -315,13 +357,15 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 123 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 198 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 136 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 217 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming tradition");
       expect(sql).toContain("connected Shakta goddess traditions");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");
       expect(sql).toContain("Devimahatmya semantic Atlas edges are not bound to their evidence-linked relationships");
       expect(sql).toContain("Ganesha Purana Atlas node is not bound to its exact source entity and boundary");
+      expect(sql).toContain("Ganesha connected-world nodes are missing or outside their evidence boundaries");
+      expect(sql).toContain("Ganesha connected-world routes are missing or not source-addressed");
       expect(sql).toContain("Dutt Ramayana Atlas node is missing its selected-edition boundary");
       expect(sql).toContain("Dutt Ramayana narrative constellation nodes are missing or outside their selected-edition boundaries");
       expect(sql).toContain("Source-addressed Living Atlas edges are missing exact source addresses");

@@ -16,7 +16,7 @@ import {
 } from "react";
 import { canGuestAskSarthi, canGuestOpenGateway } from "@/lib/account/guest-preview";
 import { trackProductEvent } from "@/lib/analytics/client";
-import type { Gateway, PlaceThread, WorldEdge, WorldNode } from "@/lib/domain/atlas";
+import { worldRelationLabels, type Gateway, type PlaceThread, type WorldEdge, type WorldNode } from "../../lib/domain/atlas";
 import type { RitualProcedureGuide } from "@/lib/domain/practice";
 import {
   ATLAS_MAX_SCALE,
@@ -501,7 +501,15 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
                 const inWorld = [edge.from, edge.to].some((id) => worldNodes.find((node) => node.id === id)?.gatewayId === selectedId);
                 const bridge = Boolean(edge.evidenceBoundary);
                 const bend = index % 2 === 0 ? -5 : 5;
-                return <path key={edge.id} className={`${styles.connection} ${local ? styles.connectionActive : ""} ${inWorld ? styles.connectionNearby : ""} ${bridge ? styles.connectionBridge : ""}`} d={`M${from.x} ${from.y} Q${(from.x + to.x) / 2} ${(from.y + to.y) / 2 + bend} ${to.x} ${to.y}`} />;
+                return (
+                  <path
+                    key={edge.id}
+                    className={`${styles.connection} ${styles[`connection_${edge.relationKind}`]} ${local ? styles.connectionActive : ""} ${inWorld ? styles.connectionNearby : ""} ${bridge ? styles.connectionBridge : ""}`}
+                    d={`M${from.x} ${from.y} Q${(from.x + to.x) / 2} ${(from.y + to.y) / 2 + bend} ${to.x} ${to.y}`}
+                  >
+                    <title>{`${worldRelationLabels[edge.relationKind]}: ${edge.relation}`}</title>
+                  </path>
+                );
               })}
             </svg>
 
@@ -577,9 +585,10 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
                     type="button"
                     onClick={() => followConnection(path.destinationId)}
                     key={path.edge.id}
+                    data-relation-kind={path.edge.relationKind}
                     aria-label={`Follow ${path.edge.relation} to ${path.label}${path.crossWorld ? " in another world" : ""}`}
                   >
-                    <span>{path.crossWorld ? "Cross-world path" : path.edge.relation}</span>
+                    <span>{path.crossWorld ? "Cross-world · " : ""}{worldRelationLabels[path.edge.relationKind]}</span>
                     <strong>{path.label}</strong>
                     <small>{path.kind} · {path.edge.relation}</small>
                   </button>

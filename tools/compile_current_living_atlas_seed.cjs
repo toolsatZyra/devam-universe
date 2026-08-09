@@ -57,9 +57,29 @@ const PRACTICE_CYCLE_EDGE_IDS = [
   "weekday-rhythm-to-ganesha", "weekday-rhythm-to-durga", "jain-diwali-to-lay-remembrance", "gita-jayanti-to-krishna",
   "janmashtami-to-krishna", "govardhana-to-krishna", "chhath-to-surya",
 ];
+const GANESHA_CONNECTED_WORLD_NODE_SLUGS = [
+  "ganesha-cosmic-world", "ganesha-five-elements", "ganesha-one-tusked-form", "ganesha-mouse-emblem",
+  "ganesha-eight-names", "ganesha-ekadanta", "ganesha-lambodara", "ganesha-vighnanashin",
+  "public-ganeshotsav-1893", "ganeshotsav-community-pandal", "ganeshotsav-clay-murti",
+  "ganeshotsav-modak", "ganeshotsav-visarjan",
+];
+const GANESHA_CONNECTED_WORLD_EDGE_IDS = [
+  "ganesha-to-cosmic-world", "atharvashirsha-to-cosmic-world", "cosmic-world-to-five-elements",
+  "atharvashirsha-to-one-tusked-form", "one-tusked-form-to-mouse-emblem", "atharvashirsha-to-eight-names",
+  "eight-names-to-ekadanta", "ekadanta-to-one-tusked-form", "eight-names-to-lambodara",
+  "eight-names-to-vighnanashin", "ganesha-to-shiva-source-kinship", "ganesh-chaturthi-to-public-ganeshotsav",
+  "public-ganeshotsav-to-community-pandal", "ganesh-chaturthi-to-community-pandal", "ganesh-chaturthi-to-clay-murti",
+  "ganesh-chaturthi-to-modak", "clay-murti-to-visarjan", "ganesh-chaturthi-to-visarjan",
+  "ganeshotsav-visarjan-to-ananta",
+];
+const WORLD_RELATION_KINDS = new Set(["story", "festival", "practice", "text", "place", "kinship", "identity", "time", "history", "teaching", "association"]);
 
-function loadAtlas() {
-  const source = fs.readFileSync(ATLAS_SOURCE, "utf8");
+const moduleCache = new Map();
+
+function loadTypescriptModule(filename) {
+  const resolved = path.resolve(filename);
+  if (moduleCache.has(resolved)) return moduleCache.get(resolved).exports;
+  const source = fs.readFileSync(resolved, "utf8");
   const javascript = ts.transpileModule(source, {
     compilerOptions: {
       module: ts.ModuleKind.CommonJS,
@@ -67,8 +87,18 @@ function loadAtlas() {
     },
   }).outputText;
   const loaded = { exports: {} };
-  new Function("exports", "module", "require", javascript)(loaded.exports, loaded, require);
+  moduleCache.set(resolved, loaded);
+  const localRequire = (specifier) => {
+    if (specifier.startsWith("@/")) return loadTypescriptModule(path.join(ROOT, "apps/web/src", `${specifier.slice(2)}.ts`));
+    if (specifier.startsWith(".")) return loadTypescriptModule(path.join(path.dirname(resolved), `${specifier}.ts`));
+    return require(specifier);
+  };
+  new Function("exports", "module", "require", javascript)(loaded.exports, loaded, localRequire);
   return loaded.exports;
+}
+
+function loadAtlas() {
+  return loadTypescriptModule(ATLAS_SOURCE);
 }
 
 function sqlText(value) {
@@ -115,17 +145,17 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 118 || worldEdges.length !== 198) {
+  if (gateways.length !== 5 || worldNodes.length !== 131 || worldEdges.length !== 217) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 123) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 198) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 136) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 217) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 198) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 217) throw new Error("Atlas edge endpoint and label triples must be unique");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
-    if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3) {
+    if (!ids.has(edge.from) || !ids.has(edge.to) || edge.from === edge.to || edge.relation.length < 3 || !WORLD_RELATION_KINDS.has(edge.relationKind)) {
       throw new Error(`Invalid Atlas edge ${edge.id}`);
     }
   }
@@ -156,6 +186,12 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
   if (!atharvashirshaNode || atharvashirshaNode.gatewayId !== "ganesha" || atharvashirshaEdge?.from !== "ganesha" || atharvashirshaEdge.to !== "ganapatyatharvashirsha") {
     throw new Error("Exact-revision Ganapati Atharvashirsha Atlas route is missing or invalid");
   }
+  if (GANESHA_CONNECTED_WORLD_NODE_SLUGS.some((slug) => !worldNodes.some((node) => node.id === slug && node.gatewayId === "ganesha" && node.evidenceBoundary.length >= 80))) {
+    throw new Error("Ganesha connected-world constellation is incomplete");
+  }
+  if (GANESHA_CONNECTED_WORLD_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId && edge.sourceRef?.includes("sha256:")))) {
+    throw new Error("Ganesha connected-world constellation has missing source addresses");
+  }
   const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
   const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
   if (!duttNode || duttNode.gatewayId !== "ramayana" || duttEdge?.from !== "ramayana" || duttEdge.to !== "dutt-ramayana") {
@@ -165,7 +201,7 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     throw new Error("Dutt Ramayana narrative constellation is incomplete");
   }
   const sourceAddressedAtlasEdges = worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"));
-  if (sourceAddressedAtlasEdges.length !== 156 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
+  if (sourceAddressedAtlasEdges.length !== 175 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
     throw new Error("Living Atlas source-addressed routes are incomplete");
   }
   for (let index = 0; index < DISTINCT_DIWALI_NODE_SLUGS.length; index += 1) {
@@ -221,7 +257,7 @@ function buildMigration() {
     ...worldNodes.map((node) => nodeRow(node, false)),
   ].join(",\n  ");
   const edgeRows = worldEdges
-    .map((edge) => `(${sqlText(edge.id)}, ${sqlText(edge.from)}, ${sqlText(edge.to)}, ${sqlText(edge.relation)}, ${sqlNullable(edge.evidenceBoundary)}, ${sqlNullable(edge.sourceRef)})`)
+    .map((edge) => `(${sqlText(edge.id)}, ${sqlText(edge.from)}, ${sqlText(edge.to)}, ${sqlText(edge.relation)}, ${sqlText(edge.relationKind)}, ${sqlNullable(edge.evidenceBoundary)}, ${sqlNullable(edge.sourceRef)})`)
     .join(",\n  ");
   const nodeSlugArray = allNodes.map((node) => sqlText(node.id)).join(", ");
   const edgeIdArray = worldEdges.map((edge) => sqlText(edge.id)).join(", ");
@@ -265,11 +301,11 @@ insert into public.atlas_edges (
   source_node_id, target_node_id, label, visual, rights_lane, publication_state
 )
 select source.id, target.id, edge.label,
-  jsonb_strip_nulls(jsonb_build_object('sourceId', edge.source_id, 'evidenceBoundary', edge.evidence_boundary, 'sourceRef', edge.source_ref)),
+  jsonb_strip_nulls(jsonb_build_object('sourceId', edge.source_id, 'relationKind', edge.relation_kind, 'evidenceBoundary', edge.evidence_boundary, 'sourceRef', edge.source_ref)),
   'product_allowed', 'published'
 from (values
   ${edgeRows}
-) as edge(source_id, source_slug, target_slug, label, evidence_boundary, source_ref)
+) as edge(source_id, source_slug, target_slug, label, relation_kind, evidence_boundary, source_ref)
 join public.atlas_nodes source on source.slug = edge.source_slug
 join public.atlas_nodes target on target.slug = edge.target_slug
 on conflict (source_node_id, target_node_id, label) do update set
@@ -403,6 +439,24 @@ begin
       and atlas.visual->>'evidenceBoundary' like '%formal ritual authority%'
   ) then
     raise exception 'Ganapati Atharvashirsha Atlas node is missing its exact revision or authority boundary';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${GANESHA_CONNECTED_WORLD_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'ganesha'
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${GANESHA_CONNECTED_WORLD_NODE_SLUGS.length} then
+    raise exception 'Ganesha connected-world nodes are missing or outside their evidence boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${GANESHA_CONNECTED_WORLD_EDGE_IDS.map(sqlText).join(", ")}])
+      and edge.visual->>'sourceRef' like '%sha256:%'
+      and edge.visual->>'relationKind' is not null
+  ) <> ${GANESHA_CONNECTED_WORLD_EDGE_IDS.length} then
+    raise exception 'Ganesha connected-world routes are missing or not source-addressed';
   end if;
   if not exists (
     select 1

@@ -37,7 +37,7 @@ describe("Supabase Atlas mapping", () => {
 
   it("rejects a structurally valid but stale hosted projection as a whole", () => {
     expect(() => mapAtlasRows(gatewayRows, [] as EdgeRow[], { requireCompleteReviewedProjection: true }))
-      .toThrow("Expected 123 reviewed Atlas nodes, received 5");
+      .toThrow("Expected 136 reviewed Atlas nodes, received 5");
   });
 
   it("uses the reviewed Unicode presentation when a restored database subtitle is corrupted", () => {
@@ -70,7 +70,7 @@ describe("Supabase Atlas mapping", () => {
     } as NodeRow;
     const world = mapAtlasRows([...gatewayRows, explorableNode], [{ id: "e1", source_node_id: "1", target_node_id: "5", label: "begins in", visual: { sourceId: "ramayana-ayodhya" } }] as EdgeRow[]);
     expect(world.worldNodes).toEqual([expect.objectContaining({ id: "ayodhya", eras: ["Origins", "Epics", "Living"], gatewayId: "ramayana", searchQuery: "Ayodhya Ramayana", geography: { position: { x: 54, y: 35 }, region: "Uttar Pradesh" } })]);
-    expect(world.worldEdges).toEqual([{ id: "e1", from: "ramayana", to: "ayodhya", relation: "begins in" }]);
+    expect(world.worldEdges).toEqual([{ id: "e1", from: "ramayana", to: "ayodhya", relation: "begins in", relationKind: "association" }]);
     const fallbackWorld = mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { sourceId: "ayodhya", size: "major" } }], []);
     expect(fallbackWorld.worldNodes[0]).toMatchObject({ id: "ayodhya", gatewayId: "ramayana", eras: ["Origins", "Epics", "Living"] });
     expect(() => mapAtlasRows([...gatewayRows, { ...explorableNode, visual: { sourceId: "ayodhya", size: "major", eras: ["Epics"] } }], [])).toThrow("partially migrated exploration metadata");

@@ -74,6 +74,7 @@ describe("source-bounded Devimahatmya semantic graph search", () => {
         from: "devi-mahatmya",
         to: slug,
         relation: "contains narrative of",
+        relationKind: "story",
       });
     }
   });

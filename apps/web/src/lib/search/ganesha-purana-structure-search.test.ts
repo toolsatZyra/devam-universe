@@ -42,7 +42,13 @@ describe("source-bounded Ganesha Purana structure search", () => {
     expect(node).toMatchObject({ gatewayId: "ganesha", searchQuery: "Ganesha Purana two khandas 247 chapters" });
     expect(node?.evidenceBoundary).toContain("65 pinned Wikisource revisions");
     expect(searchGaneshaPuranaStructure(node!.searchQuery)).toHaveLength(1);
-    expect(worldEdges).toContainEqual({ id: "ganesha-ganesha-purana", from: "ganesha", to: "ganesha-purana", relation: "source text" });
+    expect(worldEdges).toContainEqual({
+      id: "ganesha-ganesha-purana",
+      from: "ganesha",
+      to: "ganesha-purana",
+      relation: "source text",
+      relationKind: "text",
+    });
   });
 
   it("freezes the compact denominator without copying source payloads", () => {
