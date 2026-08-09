@@ -308,7 +308,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: /The princes enter the wider world/ }).click();
   await page.getByRole("button", { name: "Follow Rama's character path" }).click();
   await expect(page.getByText("FOLLOWING A CHARACTER", { exact: true })).toBeVisible();
-  await expect(page.getByText(/moments across .* worlds/)).toBeVisible();
+  await expect(page.getByRole("region", { name: "Whole Ramayana story compass" }).getByText(/moments across .* worlds/)).toBeVisible();
   await page.getByRole("button", { name: "Next story turn" }).click();
   await expect(page.getByRole("heading", { name: "The road to Mithila" })).toBeVisible();
   await page.getByRole("button", { name: "Back to The princes enter the wider world" }).click();
@@ -316,6 +316,9 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Follow Ayodhya's place path" }).click();
   await expect(page.getByText("FOLLOWING A PLACE", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Back to The princes enter the wider world" }).click();
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Travel through the story by place" })).toBeVisible();
+  await page.getByRole("button", { name: "Whole story", exact: true }).click();
   await page.getByRole("button", { name: /War and return/ }).click();
   await expect(page.getByRole("button", { name: /The road home/ })).toBeVisible();
   await page.getByRole("button", { name: /The road home/ }).click();
@@ -366,7 +369,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
 
   await page.getByRole("button", { name: "Map" }).click();
-  await expect(page.getByRole("button", { name: /Nandigrama/ })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Nandigrama, 1 story moment" })).toBeVisible();
   await page.getByRole("button", { name: "Connections" }).click();
   await expect(page.getByRole("button", { name: "Explore Departure from Lanka, Story event" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Explore Vibhishana, Narrative character" })).toBeVisible();
@@ -392,6 +395,52 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByText("देवम की स्रोत-आधारित सरल कथा")).toBeVisible();
   await page.getByRole("button", { name: "EN", exact: true }).click();
   await expect(page.getByText("Story source", { exact: true })).toBeVisible();
+  await expectNoHorizontalOverflow(page);
+});
+
+test("the Ramayana narrative map pans, zooms, and returns to exact story context", async ({ page }) => {
+  await page.goto("/search");
+  await page.evaluate(() => window.localStorage.setItem("devam-guest-gateways", JSON.stringify(["ramayana"])));
+  await page.goto("/");
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
+  await page.getByRole("link", { name: "Begin the return journey" }).click();
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+
+  const narrativeMap = page.getByLabel("Pannable Ramayana story map");
+  const ramayanaWorld = page.getByRole("region", { name: "Ramayana story world" });
+  await expect(narrativeMap).toBeVisible();
+  expect(await ramayanaWorld.evaluate((element) => ({ left: element.scrollLeft, top: element.scrollTop }))).toEqual({ left: 0, top: 0 });
+  await page.getByRole("button", { name: "Mithila, 3 story moments" }).click();
+  await expect(page.getByRole("heading", { name: "Mithila", exact: true })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Mithila story moments" }).getByRole("button")).toHaveCount(3);
+
+  const mapBox = await narrativeMap.boundingBox();
+  expect(mapBox).not.toBeNull();
+  await page.waitForTimeout(450);
+  const panStart = await narrativeMap.evaluate((element) => element.scrollLeft);
+  await page.mouse.move(mapBox!.x + mapBox!.width * .76, mapBox!.y + mapBox!.height * .77);
+  await page.mouse.down();
+  await page.mouse.move(mapBox!.x + mapBox!.width * .32, mapBox!.y + mapBox!.height * .77, { steps: 5 });
+  await page.mouse.up();
+  const panForward = await narrativeMap.evaluate((element) => element.scrollLeft);
+  expect(panForward).toBeGreaterThan(panStart + 30);
+  await page.mouse.move(mapBox!.x + mapBox!.width * .32, mapBox!.y + mapBox!.height * .77);
+  await page.mouse.down();
+  await page.mouse.move(mapBox!.x + mapBox!.width * .7, mapBox!.y + mapBox!.height * .77, { steps: 5 });
+  await page.mouse.up();
+  expect(await narrativeMap.evaluate((element) => element.scrollLeft)).toBeLessThan(panForward - 20);
+
+  await expect(page.getByRole("button", { name: "Ahalya's hermitage, 1 story moment" })).toHaveCSS("opacity", "0");
+  await page.getByRole("button", { name: "Zoom narrative map in" }).click();
+  await expect(page.getByRole("button", { name: "Ahalya's hermitage, 1 story moment" })).toHaveCSS("opacity", "1");
+  await page.getByRole("button", { name: /Ayodhya, \d+ story moments/ }).click();
+  await page.getByRole("button", { name: "Back to Mithila" }).click();
+  await page.getByRole("button", { name: /Sita and the impossible bow/ }).click();
+  await page.getByRole("button", { name: "Open in the whole story" }).click();
+  await expect(page.getByRole("heading", { name: "Sita and the impossible bow" })).toBeVisible();
+  await page.getByRole("button", { name: "Map", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Mithila", exact: true })).toBeVisible();
+  expect(await ramayanaWorld.evaluate((element) => ({ left: element.scrollLeft, top: element.scrollTop }))).toEqual({ left: 0, top: 0 });
   await expectNoHorizontalOverflow(page);
 });
 

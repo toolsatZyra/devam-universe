@@ -66,6 +66,32 @@ export type StoryCompassPath = {
 
 export type StoryCompassIndexes = Record<StoryCompassPathKind, Record<string, StoryCompassPath>>;
 
+export type StoryMapPlace = {
+  id: string;
+  label: string;
+  turnIds: string[];
+  arcIds: string[];
+  firstStoryOrdinal: number;
+  x: number;
+  y: number;
+  depth: number;
+  tier: "nexus" | "landmark" | "waypoint";
+};
+
+export type StoryMapRoute = {
+  id: string;
+  fromPlaceId: string;
+  toPlaceId: string;
+  turnIds: string[];
+};
+
+export type StoryNarrativeMap = {
+  places: StoryMapPlace[];
+  routes: StoryMapRoute[];
+  totalStoryTurns: number;
+  boundary: string;
+};
+
 export type StoryCompassArc = {
   id: string;
   ordinal: number;
