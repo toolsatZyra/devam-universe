@@ -12,6 +12,15 @@ art/culture, or historical process. Human-facing kinds remain specific; the
 normalized family drives visual grammar, validation, traversal diversity, and
 future graph retrieval without flattening the underlying identity.
 
+The interaction layer is a reversible spatial camera rather than page
+navigation disguised as a map. Pan, wheel, pinch, keyboard movement, path
+travel, bounded trail backtracking, progressive reveal, and zoom-compensated
+landmarks operate at every depth. A node focus opens a compact encounter over
+the continuing universe; evidence, exact Search, and optional Sarthi remain
+connected doors. The current reviewed projection has 159 nodes including five
+gateways and 251 typed edges. Those are projection integrity counters, never a
+claim of cultural or civilizational completeness.
+
 ## Principle
 
 Use the smallest architecture that supports a real vertical slice and preserves an upgrade path. The knowledge graph is a model, not necessarily a separate database product.
@@ -37,6 +46,9 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 - pgvector + Postgres full-text: multilingual hybrid retrieval.
 - Object storage: immutable source objects, images, and derived media. One object per hash.
 - Relational graph tables plus recursive SQL for MVP. Benchmark before adding a native graph engine.
+- Narrative geography, living place-belief, physical geography, archaeology,
+  attested polity/history, living worship, and current visitor information use
+  separate claim scopes even when the Atlas connects them into one journey.
 - The Living Atlas projection and its evidence-scoped relationship vocabulary
   follow `docs/LIVING_ATLAS_OPEN_WORLD_CONTRACT.md`. Progressive visual levels
   of detail never weaken the underlying claim, applicability, rights or

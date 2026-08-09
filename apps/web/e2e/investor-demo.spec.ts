@@ -47,7 +47,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   expect(initialBox?.width ?? 0).toBeGreaterThan(page.viewportSize()!.width * .98);
   expect(initialBox?.height ?? 0).toBeGreaterThan(page.viewportSize()!.height * .98);
   await expect(page.getByText("Set your location for Panchang")).toHaveCount(0);
-  await expect(page.getByRole("navigation")).toHaveCount(0);
+  await expect(page.getByRole("navigation", { name: "Atlas travel trail" })).toBeVisible();
   for (const hero of ["Ganesha", "Durga", "Ramayana", "Diwali", "Sacred Time"]) {
     const gateway = page.getByRole("button", { name: `Explore ${hero}` });
     await expect(gateway).toBeVisible();
@@ -124,6 +124,29 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("heading", { name: "Ramnagar Ramlila" })).toBeVisible();
   await page.getByRole("button", { name: "Follow opens the wider Benares cultural geography to Kashi in another world" }).click();
   await expect(page.getByRole("heading", { name: "Kashi" })).toBeVisible();
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ramayana" }).click();
+
+  await page.getByRole("button", { name: "Follow opens with to Balakanda" }).click();
+  await page.getByRole("button", { name: "Follow continues into to Ayodhyakanda" }).click();
+  await page.getByRole("button", { name: "Follow text and place thread to Ayodhya" }).click();
+  await page.getByRole("button", { name: "Follow journey toward to Chitrakoot" }).click();
+  await page.getByRole("button", { name: "Follow forest journey to Aranyakanda" }).click();
+  await page.getByRole("button", { name: "Follow continues into to Kishkindhakanda" }).click();
+  await page.getByRole("button", { name: "Follow opens narrative kingdom to Kishkindha" }).click();
+  await page.getByRole("button", { name: "Follow opens into a living place-belief to Living Kishkindha landscape" }).click();
+  await page.getByRole("button", { name: "Follow inhabits a present settlement landscape to Anegundi" }).click();
+  await page.getByRole("button", { name: "Follow sits within the river landscape to Tungabhadra landscape" }).click();
+  await page.getByRole("button", { name: "Follow holds the monumental site to Hampi's monumental world" }).click();
+  await page.getByRole("button", { name: "Follow preserves the former capital to Vijayanagara capital" }).click();
+  await page.getByRole("button", { name: "Follow centres a wider historical polity to Vijayanagara Empire" }).click();
+  await page.getByRole("button", { name: "Follow reaches an attested imperial ruler to Krishna Deva Raya" }).click();
+  await expect(page.getByRole("heading", { name: "Krishna Deva Raya" })).toBeVisible();
+  await expect(page.getByText(/^\d+ found$/)).toBeVisible();
+  await expect(page.getByText("Encounter")).toBeVisible();
+  await page.getByRole("button", { name: "Return to the previous discovery" }).click();
+  await expect(page.getByRole("heading", { name: "Vijayanagara Empire" })).toBeVisible();
+
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
 

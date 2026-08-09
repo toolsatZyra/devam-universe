@@ -1,5 +1,21 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (reversible game navigation and the first place-history
+world): the Living Atlas now keeps a bounded discovery trail with one-action
+backtracking, names the current depth as cosmos, world, constellation, or
+encounter, compensates landmark scale during zoom, gives node families distinct
+silhouettes, and leaves the universe visible behind a compact encounter panel.
+The reviewed graph adds thirteen citation-only destinations and eighteen typed
+routes from narrative Kishkindha through living Anegundi and Anjanadri beliefs,
+the Tungabhadra landscape, archaeological Hampi, the historical Vijayanagara
+capital and empire, Krishna Deva Raya, Virupaksha, Vitthala, the stone chariot,
+architecture, and the 1565 rupture. Exact Search and Sarthi support this world
+in English and Hindi. Epic narrative, living belief, geography, archaeology,
+documented history, living temple authority, and visitor information remain
+separate evidence lanes. The next hosted projection target is 159 reviewed
+nodes and 251 app-owned edges; these are selected product counters, not
+civilizational completeness.
+
 Checkpoint 2026-08-09 (living-culture travel and scalable node semantics): the
 reviewed Atlas now assigns every destination to one of ten normalized node
 families in addition to its specific human-facing kind. The first reuse of that
@@ -8,8 +24,8 @@ explicit routes across Ramlila performance, community making, Ramnagar/Benares,
 the Dussehra season, Kolkata Durga Puja public art, Kumartuli workshops, clay
 images, installations, drumming, and seasonal return. Exact Search and Sarthi
 share the same official UNESCO citation boundary and return no copied source
-text. The next hosted projection target is 146 reviewed nodes and 233 app-owned
-edges; these are selected product counters, not civilizational completeness.
+text. That hosted projection target was 146 reviewed nodes and 233 app-owned
+edges; these were selected product counters, not civilizational completeness.
 
 Checkpoint 2026-08-09 (typed Living Atlas world model and Ganesha connected
 world): the client now normalizes every Atlas edge into eleven relationship
