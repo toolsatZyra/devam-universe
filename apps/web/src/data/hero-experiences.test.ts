@@ -53,15 +53,20 @@ describe("hero experiences", () => {
     for (const hash of hashes) expect(sha256(resolve(root, `source_vault/objects/sha256/${hash.slice(0, 2)}/${hash}`))).toBe(hash);
   });
 
-  it("keeps both Ramayana districts on exact gap-free Ayodhya and Yuddha source ranges", () => {
+  it("keeps all three Ramayana districts on exact gap-free Ayodhya and Yuddha source ranges", () => {
     const ramayana = heroJourneys.find((journey) => journey.slug === "ramayana");
     expect(ramayana?.title).toBe("The promise and the return");
     const ayodhya = ramayana!.stops.slice(0, 8);
-    const roadHome = ramayana!.stops.slice(8);
+    const firstRivers = ramayana!.stops.slice(8, 16);
+    const roadHome = ramayana!.stops.slice(16);
     expect(ayodhya.map((stop) => stop.citation.sourceOrdinal)).toEqual([76, 82, 83, 87, 90, 94, 101, 106]);
     expect(ayodhya.map((stop) => [stop.citation.locator.kanda_relative_ordinal_start, stop.citation.locator.kanda_relative_ordinal_end])).toEqual([[1, 6], [7, 7], [8, 11], [12, 14], [15, 18], [19, 25], [26, 30], [31, 40]]);
     expect(ayodhya.flatMap((stop) => Array.from({ length: Number(stop.citation.locator.section_count) }, (_, index) => Number(stop.citation.locator.kanda_relative_ordinal_start) + index))).toEqual(Array.from({ length: 40 }, (_, index) => index + 1));
     expect(ayodhya.every((stop) => stop.citation.sourceSha256 === "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034" && stop.citation.rightsLane === "product_allowed")).toBe(true);
+    expect(firstRivers.map((stop) => stop.citation.sourceOrdinal)).toEqual([116, 121, 124, 126, 127, 128, 129, 131]);
+    expect(firstRivers.map((stop) => [stop.citation.locator.kanda_relative_ordinal_start, stop.citation.locator.kanda_relative_ordinal_end])).toEqual([[41, 45], [46, 48], [49, 50], [51, 51], [52, 52], [53, 53], [54, 55], [56, 56]]);
+    expect([...ayodhya, ...firstRivers].flatMap((stop) => Array.from({ length: Number(stop.citation.locator.section_count) }, (_, index) => Number(stop.citation.locator.kanda_relative_ordinal_start) + index))).toEqual(Array.from({ length: 56 }, (_, index) => index + 1));
+    expect(firstRivers.every((stop) => stop.citation.sourceSha256 === "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034" && stop.citation.rightsLane === "product_allowed")).toBe(true);
     expect(roadHome.map((stop) => stop.citation.sourceOrdinal)).toEqual([122, 123, 124, 125, 126, 127, 128]);
     expect(roadHome.map((stop) => stop.citation.locator.literal_section_number)).toEqual([124, 125, 126, 127, 128, 129, 130]);
     expect(roadHome.every((stop) => stop.citation.sourceSha256 === "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b" && stop.citation.rightsLane === "product_allowed")).toBe(true);

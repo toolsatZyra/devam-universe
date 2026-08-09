@@ -35,6 +35,7 @@ import {
 import { JourneyEncounter } from "./journey-encounter";
 import { JourneyBeatStage } from "./journey-beat-stage";
 import { JourneyCompass } from "./journey-compass";
+import { journeyProgressKey, shouldApplyRestoredJourneyPosition } from "./journey-progress";
 import { RamayanaNarrativeMap } from "./ramayana-narrative-map";
 import { getRamayanaBeatStage } from "./ramayana-beat-stage";
 import styles from "./journey-player.module.css";
@@ -46,10 +47,6 @@ type JourneySarthiReply = {
   sourceBoundary?: string;
   citations?: { passageId: string; workTitle: string; editionTitle: string }[];
 };
-
-export function journeyProgressKey(slug: string) {
-  return `devam-journey-progress:${slug}`;
-}
 
 function readProgress(slug: string): string[] {
   try {
@@ -104,6 +101,14 @@ const storyCopy: Record<string, SceneCopy> = {
   "rama-accepts-exile": { kicker: "Departure replaces resistance", story: "Rama accepts the road, carries the news to Kausalya, and redirects Lakshmana's anger into preparation.", invitation: "Enter Sita's decision" },
   "sita-chooses-road": { kicker: "Sita chooses rather than follows", story: "She hears every warning about the forest and insists that sharing the road is her own decision.", invitation: "Gather the travelling family" },
   "lakshmana-joins": { kicker: "Three travellers face the gate", story: "Lakshmana joins; gifts, travel gear, forest clothing, blessings, and farewell replace coronation.", invitation: "Complete the departure district" },
+  "city-follows-car": { kicker: "A private rupture fills the road", story: "Dasharatha watches the dust vanish, the mothers confront the empty palace, and Ayodhya's citizens refuse to let the departing family disappear alone.", invitation: "Follow the city to the Tamasa" },
+  "tamasa-night": { kicker: "The first night ends before dawn", story: "Citizens sleep beneath the trees while Rama chooses to leave quietly rather than let their devotion become further harm.", invitation: "Wake to the road beyond Kosala" },
+  "roads-beyond-kosala": { kicker: "Ayodhya becomes a promise behind them", story: "Fields, villages, and rivers carry the car beyond the kingdom until the Ganga opens ahead and Guha arrives as a friend.", invitation: "Stay for Guha's night watch" },
+  "guha-night-watch": { kicker: "Hospitality becomes shared vigilance", story: "Guha offers every comfort, but Lakshmana cannot sleep while Rama and Sita rest on the ground; two friends keep watch together.", invitation: "Walk to the Ganga at dawn" },
+  "ganga-crossing": { kicker: "The chariot road ends at the river", story: "Sumantra must return with the empty car while Sita, Rama, and Lakshmana cross into a life that now continues on foot.", invitation: "Enter the first forest night" },
+  "first-forest-night": { kicker: "Grief speaks without ceremony", story: "Beyond the inhabited road, Rama voices fear and anger for the family behind them; Lakshmana answers by making companionship present.", invitation: "Follow the smoke to the confluence" },
+  "prayaga-to-yamuna": { kicker: "An unknown forest becomes a chosen road", story: "Bharadvaja points toward Chitrakoot; the travellers build a raft, cross the Yamuna, and enter a flowering landscape.", invitation: "Climb toward the mountain home" },
+  "chitrakoot-home": { kicker: "The travellers make a place their own", story: "Birdsong and mountain water lead to a chosen clearing where Lakshmana builds a cottage and the three enter their first forest home.", invitation: "Complete the first-rivers district" },
   "leave-lanka": { kicker: "The direction changes", story: "The war is behind them. Rama asks that every ally who carried the struggle be honoured, and the returning company rises from Lanka toward home.", invitation: "Rise into the homeward sky" },
   "sky-road": { kicker: "The world below becomes memory", story: "Rama points out the places that shaped the journey. Sita does not receive a list of names, but a moving map of loss, friendship, courage, and return.", invitation: "Follow the remembered road" },
   "bharadvaja-hermitage": { kicker: "Fourteen years narrow to one question", story: "At Bharadvaja's hermitage, Rama asks first about Ayodhya, Bharata, and his mothers. The city is still distant, but home is suddenly close enough to fear and hope for.", invitation: "Send word ahead" },
@@ -143,6 +148,14 @@ const hindiStoryCopy: Record<string, SceneCopy> = {
   "rama-accepts-exile": { title: "राम वनवास स्वीकार करते हैं", kicker: "प्रतिरोध की जगह प्रस्थान", story: "राम वन की राह स्वीकार करते हैं, कौसल्या को समाचार देते हैं और लक्ष्मण के क्रोध को यात्रा-तैयारी में बदलते हैं।", invitation: "सीता के निर्णय में प्रवेश करें" },
   "sita-chooses-road": { title: "सीता राह चुनती हैं", kicker: "सीता केवल साथ नहीं चलतीं, स्वयं चुनती हैं", story: "वे वन के हर संकट को सुनती हैं और स्पष्ट करती हैं कि साझा राह उनका अपना निर्णय है।", invitation: "यात्रा करने वाले परिवार को जुटते देखें" },
   "lakshmana-joins": { title: "तीनों द्वार की ओर मुड़ते हैं", kicker: "तीन यात्री द्वार के सामने", story: "लक्ष्मण साथ आते हैं; राज्याभिषेक की जगह दान, यात्रा-सामग्री, वन-वस्त्र, आशीर्वाद और विदाई लेते हैं।", invitation: "प्रस्थान-संसार पूरा करें" },
+  "city-follows-car": { title: "नगर पीछे चलता है", kicker: "निजी टूटन पूरी राह भर देती है", story: "दशरथ ओझल होती धूल देखते हैं, माताएँ खाली महल का सामना करती हैं और अयोध्या के लोग जाते परिवार को अकेले गायब नहीं होने देते।", invitation: "नगर के साथ तमसा तक चलें" },
+  "tamasa-night": { title: "तमसा की पहली रात", kicker: "पहली रात भोर से पहले बदल जाती है", story: "नगरवासी वृक्षों के नीचे सोते हैं और राम चुपचाप निकलना चुनते हैं, ताकि उनका स्नेह उनके लिए और कष्ट न बने।", invitation: "कोसल के बाहर की राह पर जागें" },
+  "roads-beyond-kosala": { title: "कोसल के पार", kicker: "अयोध्या पीछे छूटा वचन बनती है", story: "खेत, गाँव और नदियाँ रथ को राज्य से बाहर ले जाते हैं, फिर सामने गंगा खुलती है और गुह मित्र बनकर आते हैं।", invitation: "गुह की रात की चौकसी में ठहरें" },
+  "guha-night-watch": { title: "गुह रात भर पहरा देते हैं", kicker: "आतिथ्य साझा चौकसी बनता है", story: "गुह हर सुख प्रस्तुत करते हैं, पर राम और सीता को धरती पर देखकर लक्ष्मण सो नहीं सकते; दो मित्र साथ रात काटते हैं।", invitation: "भोर में गंगा तक चलें" },
+  "ganga-crossing": { title: "गंगा दो जीवनों को बाँटती है", kicker: "रथ की राह नदी पर समाप्त होती है", story: "सुमंत्र को खाली रथ लेकर लौटना है, जबकि सीता, राम और लक्ष्मण ऐसे जीवन में पार जाते हैं जो अब पैदल चलेगा।", invitation: "पहली वन-रात में प्रवेश करें" },
+  "first-forest-night": { title: "पहली वन-रात", kicker: "शोक बिना औपचारिकता बोलता है", story: "बस्ती की राह से बाहर राम पीछे छूटे परिवार के लिए भय और क्रोध कहते हैं; लक्ष्मण साथ होने का उत्तर देते हैं।", invitation: "संगम के धुएँ का अनुसरण करें" },
+  "prayaga-to-yamuna": { title: "संगम से यमुना तक", kicker: "अनजान वन चुनी हुई राह बनता है", story: "भरद्वाज चित्रकूट की दिशा बताते हैं; यात्री बेड़ा बनाकर यमुना पार करते और फूलों से भरे भू-दृश्य में प्रवेश करते हैं।", invitation: "पर्वत के घर की ओर चढ़ें" },
+  "chitrakoot-home": { title: "चित्रकूट में घर", kicker: "यात्री एक जगह को अपना बनाते हैं", story: "पक्षियों के स्वर और पर्वतीय जल उन्हें चुने हुए स्थान तक ले जाते हैं, जहाँ लक्ष्मण कुटिया बनाते और तीनों पहले वन-घर में प्रवेश करते हैं।", invitation: "पहली नदियों का संसार पूरा करें" },
   "leave-lanka": { title: "लंका से प्रस्थान", kicker: "दिशा बदलती है", story: "युद्ध पीछे छूट चुका है। राम कहते हैं कि संघर्ष में साथ देने वाले हर सहयोगी का सम्मान हो, और सब लंका से घर की ओर उठते हैं।", invitation: "घर लौटते आकाश में बढ़ें" },
   "sky-road": { title: "आकाश की स्मृति-राह", kicker: "नीचे का संसार स्मृति बनता है", story: "राम यात्रा को बदलने वाले स्थान दिखाते हैं। सीता के सामने नामों की सूची नहीं, बल्कि वियोग, मित्रता, साहस और वापसी का चलता हुआ मानचित्र खुलता है।", invitation: "स्मृति की राह पर चलें" },
   "bharadvaja-hermitage": { title: "घर अब निकट है", kicker: "चौदह वर्ष एक प्रश्न में सिमटते हैं", story: "भरद्वाज के आश्रम में राम सबसे पहले अयोध्या, भरत और अपनी माताओं का समाचार पूछते हैं। नगर अभी दूर है, पर घर अब आशा और भय दोनों जितना निकट है।", invitation: "आगे समाचार भेजें" },
@@ -199,7 +212,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [accountPrompt, setAccountPrompt] = useState(false);
   const [language, setLanguage] = useState<"en" | "hi">("en");
   const [worldLens, setWorldLens] = useState<"compass" | "story" | "route" | "connections">("compass");
-  const [storyFocusTurnId, setStoryFocusTurnId] = useState(() => storyWorld?.compass.arcs[0]?.turnIds[0] ?? "");
+  const [storyFocusTurnId, setStoryFocusTurnId] = useState(() => storyWorld?.districts[0]?.compassTurnIds[0] ?? storyWorld?.compass.arcs[0]?.turnIds[0] ?? "");
   const [camera, setCamera] = useState<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
   const [cameraDragging, setCameraDragging] = useState(false);
   const [showCompletion, setShowCompletion] = useState(false);
@@ -208,6 +221,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [loadedMoments, setLoadedMoments] = useState<Record<string, StoryMoment>>(() => storyWorld?.moments ?? {});
   const [districtLoadErrorId, setDistrictLoadErrorId] = useState<string>();
   const guestExchanges = useRef(0);
+  const userHasNavigated = useRef(false);
   const viewportRef = useRef<HTMLElement | null>(null);
   const cameraRef = useRef<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
   const lastTapRef = useRef<{ at: number; x: number; y: number } | null>(null);
@@ -225,7 +239,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     const sync = window.setTimeout(() => {
       setExplored(saved);
       const next = journey.stops.findIndex((stop) => !saved.includes(stop.id));
-      if (next >= 0) setActiveIndex(next);
+      if (shouldApplyRestoredJourneyPosition(userHasNavigated.current, next)) setActiveIndex(next);
     }, 0);
     const guide = window.setTimeout(() => setShowGuide(false), 4500);
     return () => { window.clearTimeout(sync); window.clearTimeout(guide); };
@@ -343,6 +357,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   }
 
   function travelTo(index: number) {
+    userHasNavigated.current = true;
     setActiveIndex(index);
     setActiveBeatIndex(0);
     setShowGuide(false);

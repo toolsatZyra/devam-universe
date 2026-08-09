@@ -12,6 +12,25 @@ describe("Ramayana district payload", () => {
     expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(36);
   });
 
+  it("serves the contiguous first-rivers district without pulling another district into the payload", async () => {
+    const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=first-rivers-v1"));
+    const payload = await response.json() as { ok: boolean; districtId: string; moments: Record<string, { beats: unknown[] }> };
+    expect(response.status).toBe(200);
+    expect(response.headers.get("cache-control")).toContain("immutable");
+    expect(payload).toMatchObject({ ok: true, districtId: "first-rivers-v1" });
+    expect(Object.keys(payload.moments)).toEqual([
+      "city-follows-car",
+      "tamasa-night",
+      "roads-beyond-kosala",
+      "guha-night-watch",
+      "ganga-crossing",
+      "first-forest-night",
+      "prayaga-to-yamuna",
+      "chitrakoot-home",
+    ]);
+    expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(40);
+  });
+
   it("fails closed for an unknown district", async () => {
     const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=whole-epic"));
     expect(response.status).toBe(404);
