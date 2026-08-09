@@ -57,6 +57,8 @@ describe("Ramayana whole-epic story compass", () => {
       expect(turn.hook.en.length, turn.id).toBeGreaterThan(55);
       expect(turn.hook.hi.length, turn.id).toBeGreaterThan(35);
       expect(turn.place.length, turn.id).toBeGreaterThan(3);
+      expect(turn.places.length, turn.id).toBeGreaterThanOrEqual(1);
+      expect(new Set(turn.places).size, turn.id).toBe(turn.places.length);
       expect(turn.characters.length, turn.id).toBeGreaterThanOrEqual(3);
       expect(turn.threads.length, turn.id).toBeGreaterThanOrEqual(2);
     }

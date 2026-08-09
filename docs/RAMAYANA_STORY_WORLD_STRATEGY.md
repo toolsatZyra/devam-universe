@@ -233,8 +233,12 @@ turn exposes place, character, and story-thread cues; source coordinates and
 expression limits remain behind disclosure. Only the seven-scene road-home
 turn is labelled playable. The other forty-eight are explicitly labelled
 mapped orientation until their detailed scenes, visuals, and return paths are
-reviewed. Map-, character-, and thread-wide indexes across all forty-nine turns
-remain open, so Gate 3 is advanced but not complete.
+reviewed. Character, narrative-place, and story-thread paths are now compiled
+from those same forty-nine turns rather than maintained as a second graph. A
+visitor can follow any repeated cue across story worlds, move within that path,
+open another path, and unwind to the exact story point at which each detour
+began. A spatial map, reviewed living connections, deeper scenes, and observed
+user comprehension remain open, so Gate 3 is advanced but not complete.
 
 ### Gate 4 — selected-expression completion
 
