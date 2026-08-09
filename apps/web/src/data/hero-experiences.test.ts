@@ -59,6 +59,15 @@ describe("hero experiences", () => {
     expect(ramayana?.stops.map((stop) => stop.citation.locator.literal_section_number)).toEqual([124, 125, 126, 127, 128, 129, 130]);
     expect(ramayana?.stops.every((stop) => stop.citation.sourceSha256 === "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b" && stop.citation.rightsLane === "product_allowed")).toBe(true);
     expect(ramayana?.stops.every((stop) => stop.visual && stop.visual.connections.length === 3)).toBe(true);
+    expect(ramayana?.stops.map((stop) => stop.visual?.asset)).toEqual([
+      "/journeys/ramayana-return-lanka-v1.webp",
+      "/journeys/ramayana-return-sky-road-v1.webp",
+      "/journeys/ramayana-return-hermitage-v1.webp",
+      "/journeys/ramayana-return-hanuman-ahead-v1.webp",
+      "/journeys/ramayana-return-bharata-hears-v1.webp",
+      "/journeys/ramayana-return-ayodhya-v1.webp",
+      "/journeys/ramayana-return-coronation-v1.webp",
+    ]);
   });
 
   it("reconstructs every Diwali stop from the exact derived evidence-pack byte span", () => {

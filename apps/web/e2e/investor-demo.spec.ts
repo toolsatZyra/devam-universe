@@ -364,6 +364,9 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
   await expect(page.getByRole("heading", { name: "The sky road remembers" })).toBeVisible();
+  const skyRoadBackdrop = page.locator('[data-scene-asset="/journeys/ramayana-return-sky-road-v1.webp"]');
+  await expect(skyRoadBackdrop).toBeVisible();
+  await expect(skyRoadBackdrop.locator("img")).toHaveJSProperty("complete", true);
   await expect(page.getByTestId("journey-beat-stage")).toHaveAttribute("data-motif", "memory");
   await page.keyboard.press("ArrowLeft");
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
@@ -441,6 +444,35 @@ test("the Ramayana narrative map pans, zooms, and returns to exact story context
   await page.getByRole("button", { name: "Map", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Mithila", exact: true })).toBeVisible();
   expect(await ramayanaWorld.evaluate((element) => ({ left: element.scrollLeft, top: element.scrollTop }))).toEqual({ left: 0, top: 0 });
+  await expectNoHorizontalOverflow(page);
+});
+
+test("the Ramayana road home loads a distinct tableau for every scene", async ({ page }) => {
+  await page.goto("/journeys/ramayana");
+  await page.getByRole("button", { name: /War and return/ }).click();
+  await page.getByRole("button", { name: /The road home/ }).click();
+  await page.getByRole("button", { name: "Enter this story world" }).click();
+
+  const sceneAssets = [
+    "/journeys/ramayana-return-lanka-v1.webp",
+    "/journeys/ramayana-return-sky-road-v1.webp",
+    "/journeys/ramayana-return-hermitage-v1.webp",
+    "/journeys/ramayana-return-hanuman-ahead-v1.webp",
+    "/journeys/ramayana-return-bharata-hears-v1.webp",
+    "/journeys/ramayana-return-ayodhya-v1.webp",
+    "/journeys/ramayana-return-coronation-v1.webp",
+  ];
+
+  for (const [index, asset] of sceneAssets.entries()) {
+    await page.getByRole("button", { name: `Go to scene ${index + 1}` }).click();
+    const backdrop = page.locator(`[data-scene-asset="${asset}"]`);
+    await expect(backdrop).toBeVisible();
+    await expect.poll(() => backdrop.locator("img").evaluate((element) => {
+      const image = element as HTMLImageElement;
+      return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+    })).toBe(true);
+  }
+
   await expectNoHorizontalOverflow(page);
 });
 

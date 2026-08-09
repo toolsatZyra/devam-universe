@@ -248,6 +248,17 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     ? "/journeys/ramayana-world-v1.webp"
     : active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`;
 
+  useEffect(() => {
+    if (!isRamayanaWorld) return;
+    for (const index of [activeIndex - 1, activeIndex + 1]) {
+      const asset = journey.stops[index]?.visual?.asset;
+      if (!asset) continue;
+      const preload = new window.Image();
+      preload.decoding = "async";
+      preload.src = asset;
+    }
+  }, [activeIndex, isRamayanaWorld, journey.stops]);
+
   function cameraViewport() {
     const viewport = viewportRef.current;
     return viewport ? { width: viewport.clientWidth, height: viewport.clientHeight } : undefined;
@@ -476,7 +487,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   return (
     <main className={styles.shell} data-tone={journey.tone} style={sceneStyle}>
       <div className={styles.space} aria-hidden="true"><span/><span/><span/></div>
-      <div className={`${styles.worldBackdrop} ${cameraDragging ? styles.worldBackdropDragging : ""}`} aria-hidden="true">
+      <div className={`${styles.worldBackdrop} ${cameraDragging ? styles.worldBackdropDragging : ""}`} aria-hidden="true" data-scene-asset={backdropAsset}>
         <Image key={backdropAsset} src={backdropAsset} alt="" fill priority sizes="100vw" />
       </div>
       <header className={styles.hud}>

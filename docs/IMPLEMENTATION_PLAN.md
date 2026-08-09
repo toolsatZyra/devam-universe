@@ -3032,9 +3032,11 @@ exact Search, Sarthi's source overview and the wider Atlas.
   CXXIV-CXXX and source ordinals 122-128, form one complete return arc: departure
   from Lanka, remembered route, Bharadvaja's hermitage, Hanuman's message,
   Bharata's reception, Ayodhya's preparation and return of the kingdom.
-- Four original full-screen scene assets create distinct Lanka, hermitage,
-  Nandigrama and Ayodhya biomes. They are labelled artistic visualizations and
-  are not source images, historical reconstructions or geographic evidence.
+- Seven original full-screen scene assets give every playable scene its own
+  event-specific tableau within the Lanka, sky-road, hermitage, Nandigrama and
+  Ayodhya biomes. They are labelled artistic visualizations and are not source
+  images, historical reconstructions or geographic evidence. Immediate-neighbour
+  preloading preserves scene continuity without eagerly loading the district.
 - Story, Route and Connections lenses remain inside the same full-screen world.
   The route is explicitly narrative rather than historical GIS; each scene
   exposes visible cast and three bounded character, place, festival,
