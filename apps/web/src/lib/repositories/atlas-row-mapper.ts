@@ -11,6 +11,10 @@ const FALLBACK_GATEWAY_BY_ID = new Map(fallbackGateways.map((item) => [item.id, 
 const REVIEWED_NODE_SLUGS = new Set([...FALLBACK_GATEWAY_BY_ID.keys(), ...FALLBACK_WORLD_NODE_BY_ID.keys()]);
 const REVIEWED_EDGE_SOURCE_IDS = new Set(fallbackWorldEdges.map((edge) => edge.id));
 
+interface MapAtlasRowsOptions {
+  requireCompleteReviewedProjection?: boolean;
+}
+
 function record(value: unknown, label: string): Record<string, unknown> {
   if (!value || typeof value !== "object" || Array.isArray(value)) throw new Error(`${label} must be a JSON object.`);
   return value as Record<string, unknown>;
@@ -81,7 +85,7 @@ function worldNode(row: AtlasNodeRow): WorldNode {
   };
 }
 
-export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[]): AtlasWorld {
+export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[], options: MapAtlasRowsOptions = {}): AtlasWorld {
   const reviewedNodes = nodes.filter((node) => REVIEWED_NODE_SLUGS.has(node.slug) && sourceId(node.visual) === node.slug);
   const reviewedNodeIds = new Set(reviewedNodes.map((node) => node.id));
   const reviewedEdges = edges.filter((edge) => {
@@ -91,6 +95,16 @@ export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[]): Atla
       && reviewedNodeIds.has(edge.source_node_id)
       && reviewedNodeIds.has(edge.target_node_id);
   });
+  if (options.requireCompleteReviewedProjection) {
+    const reviewedNodeSlugs = new Set(reviewedNodes.map((node) => node.slug));
+    const reviewedEdgeSourceIds = new Set(reviewedEdges.map((edge) => sourceId(edge.visual)));
+    if (reviewedNodes.length !== REVIEWED_NODE_SLUGS.size || reviewedNodeSlugs.size !== REVIEWED_NODE_SLUGS.size) {
+      throw new Error(`Expected ${REVIEWED_NODE_SLUGS.size} reviewed Atlas nodes, received ${reviewedNodeSlugs.size}.`);
+    }
+    if (reviewedEdges.length !== REVIEWED_EDGE_SOURCE_IDS.size || reviewedEdgeSourceIds.size !== REVIEWED_EDGE_SOURCE_IDS.size) {
+      throw new Error(`Expected ${REVIEWED_EDGE_SOURCE_IDS.size} reviewed Atlas edges, received ${reviewedEdgeSourceIds.size}.`);
+    }
+  }
   const slugById = new Map(reviewedNodes.map((node) => [node.id, node.slug]));
   const gateways = reviewedNodes.filter((node) => node.is_gateway).map(gateway);
   const worldNodes = reviewedNodes.filter((node) => !node.is_gateway).map(worldNode);

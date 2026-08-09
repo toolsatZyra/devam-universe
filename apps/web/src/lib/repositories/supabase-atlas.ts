@@ -13,6 +13,6 @@ export class SupabaseAtlasRepository implements AtlasRepository {
     ]);
     if (nodesResult.error) throw new Error(`Could not load Atlas nodes: ${nodesResult.error.message}`);
     if (edgesResult.error) throw new Error(`Could not load Atlas edges: ${edgesResult.error.message}`);
-    return mapAtlasRows(nodesResult.data, edgesResult.data);
+    return mapAtlasRows(nodesResult.data, edgesResult.data, { requireCompleteReviewedProjection: true });
   }
 }

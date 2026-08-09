@@ -35,6 +35,11 @@ describe("Supabase Atlas mapping", () => {
     expect(() => mapAtlasRows(gatewayRows.slice(0, 4), [] as EdgeRow[])).toThrow("Expected five unique MVP gateways");
   });
 
+  it("rejects a structurally valid but stale hosted projection as a whole", () => {
+    expect(() => mapAtlasRows(gatewayRows, [] as EdgeRow[], { requireCompleteReviewedProjection: true }))
+      .toThrow("Expected 123 reviewed Atlas nodes, received 5");
+  });
+
   it("uses the reviewed Unicode presentation when a restored database subtitle is corrupted", () => {
     const restored = mapAtlasRows(
       gatewayRows.map((row) => row.slug === "ramayana" ? { ...row, subtitle: "à¤°à¤¾à¤®à¤¾à¤¯à¤£" } : row),
