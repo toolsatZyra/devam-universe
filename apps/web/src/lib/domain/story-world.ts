@@ -92,6 +92,22 @@ export type StoryNarrativeMap = {
   boundary: string;
 };
 
+export type PlayableStorySceneLink = {
+  id: string;
+  ordinal: number;
+  title: string;
+  decisiveChange: { en: string; hi: string };
+  asset?: string;
+  placeNodeId: string;
+  relation: string;
+};
+
+export type PlayableStoryDistrictIndex = {
+  byMapPlaceId: Record<string, PlayableStorySceneLink[]>;
+  placeCount: number;
+  sceneCount: number;
+};
+
 export type StoryCompassArc = {
   id: string;
   ordinal: number;

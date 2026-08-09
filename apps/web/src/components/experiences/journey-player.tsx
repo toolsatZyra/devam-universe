@@ -535,7 +535,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         <div className={styles.horizon} aria-hidden="true" />
         <JourneyBeatStage stage={sceneBeatStage} />
         {isRamayanaWorld && <div hidden={worldLens !== "compass"}><JourneyCompass compass={storyWorld.compass} language={language} onEnterMoment={openStoryMoment} onSelectTurn={setStoryFocusTurnId} selectedTurnId={storyFocusTurnId} /></div>}
-        {isRamayanaWorld && <div hidden={worldLens !== "route"}><RamayanaNarrativeMap active={worldLens === "route"} compass={storyWorld.compass} focusTurnId={storyFocusTurnId} language={language} onEnterMoment={openStoryMoment} onOpenWholeStory={openWholeStoryTurn} /></div>}
+        {isRamayanaWorld && <div hidden={worldLens !== "route"}><RamayanaNarrativeMap active={worldLens === "route"} focusTurnId={storyFocusTurnId} language={language} onEnterMoment={openStoryMoment} onOpenWholeStory={openWholeStoryTurn} stops={journey.stops} storyWorld={storyWorld} /></div>}
         {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
           {journey.stops.map((stop, index) => {
             const selected = index === activeIndex;

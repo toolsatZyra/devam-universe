@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   useEffect,
   useMemo,
@@ -8,17 +9,20 @@ import {
   type CSSProperties,
   type PointerEvent as ReactPointerEvent,
 } from "react";
+import type { JourneyStop } from "@/lib/domain/experience";
+import { buildPlayableStoryDistrictIndex } from "@/lib/domain/playable-story-district";
 import { buildStoryNarrativeMap, storyMapPlaceForTurn } from "@/lib/domain/story-narrative-map";
-import type { StoryCompass, StoryMapPlace } from "@/lib/domain/story-world";
+import type { StoryMapPlace, StoryWorldPack } from "@/lib/domain/story-world";
 import styles from "./ramayana-narrative-map.module.css";
 
 type Props = {
   active: boolean;
-  compass: StoryCompass;
   focusTurnId: string;
   language: "en" | "hi";
   onEnterMoment: (momentId: string) => void;
   onOpenWholeStory: (turnId: string) => void;
+  stops: readonly JourneyStop[];
+  storyWorld: StoryWorldPack;
 };
 
 type MapTrailFrame = { placeId: string; turnId: string };
@@ -44,13 +48,19 @@ function closestTurn(place: StoryMapPlace, requestedTurnId: string, order: Map<s
 
 export function RamayanaNarrativeMap({
   active,
-  compass,
   focusTurnId,
   language,
   onEnterMoment,
   onOpenWholeStory,
+  stops,
+  storyWorld,
 }: Props) {
+  const compass = storyWorld.compass;
   const map = useMemo(() => buildStoryNarrativeMap(compass), [compass]);
+  const playableDistrict = useMemo(
+    () => buildPlayableStoryDistrictIndex(storyWorld, stops, map),
+    [map, stops, storyWorld],
+  );
   const allTurnIds = useMemo(() => compass.arcs.flatMap((arc) => arc.turnIds), [compass.arcs]);
   const order = useMemo(() => new Map(allTurnIds.map((turnId, index) => [turnId, index])), [allTurnIds]);
   const placeById = useMemo(() => new Map(map.places.map((place) => [place.id, place])), [map.places]);
@@ -69,6 +79,7 @@ export function RamayanaNarrativeMap({
   const selectedTurn = compass.turns[selectedTurnId] ?? compass.turns[selectedPlace.turnIds[0]];
   const selectedArc = compass.arcs.find((arc) => arc.id === selectedTurn.arcId) ?? compass.arcs[0];
   const selectedStoryOrdinal = (order.get(selectedTurn.id) ?? 0) + 1;
+  const playableScenes = playableDistrict.byMapPlaceId[selectedPlace.id] ?? [];
   const zoom = ZOOM_LEVELS[zoomIndex];
 
   useEffect(() => {
@@ -203,6 +214,7 @@ export function RamayanaNarrativeMap({
             </svg>
             {map.places.map((place) => {
               const selected = place.id === selectedPlace.id;
+              const playableCount = playableDistrict.byMapPlaceId[place.id]?.length ?? 0;
               return <button
                 type="button"
                 className={styles.placeNode}
@@ -214,7 +226,7 @@ export function RamayanaNarrativeMap({
                 onClick={() => { if (!suppressPlaceClick.current) travelToPlace(place); }}
                 ref={selected ? selectedNodeRef : undefined}
                 key={place.id}
-              ><i aria-hidden="true"/><strong>{place.label}</strong><small>{place.turnIds.length} {language === "hi" ? "प्रसंग" : place.turnIds.length === 1 ? "moment" : "moments"}</small></button>;
+              ><i aria-hidden="true"/><strong>{place.label}</strong><small>{place.turnIds.length} {language === "hi" ? "प्रसंग" : place.turnIds.length === 1 ? "moment" : "moments"}</small>{playableCount > 0 && <em>{language === "hi" ? `${playableCount} दृश्य` : `${playableCount} playable`}</em>}</button>;
             })}
           </div>
         </div>
@@ -228,6 +240,15 @@ export function RamayanaNarrativeMap({
           <span>{language === "hi" ? `${selectedPlace.turnIds.length} प्रसंग · ${selectedPlace.arcIds.length} कथा-संसार` : `${selectedPlace.turnIds.length} moments across ${selectedPlace.arcIds.length} story worlds`}</span>
         </div>
         {trail.length > 0 && <button type="button" className={styles.back} onClick={back}>← {language === "hi" ? "पिछले स्थान पर लौटें" : `Back to ${placeById.get(trail.at(-1)!.placeId)?.label}`}</button>}
+        {playableScenes.length > 0 && <section className={styles.playableScenes} aria-label={`${selectedPlace.label} playable story connections`}>
+          <header><small>{language === "hi" ? "यहाँ से दृश्य कथा" : "PLAY FROM THIS PLACE"}</small><span>{language === "hi" ? `${playableScenes.length} विस्तृत दृश्य` : `${playableScenes.length} detailed ${playableScenes.length === 1 ? "scene" : "scenes"}`}</span></header>
+          <div>
+            {playableScenes.map((scene) => <button type="button" aria-label={`${scene.title}. ${scene.relation}. Enter playable scene`} onClick={() => onEnterMoment(scene.id)} key={`${scene.id}-${scene.placeNodeId}`}>
+              {scene.asset && <span className={styles.playableArt}><Image alt="" fill sizes="(max-width: 720px) 132px, 150px" src={scene.asset} /></span>}
+              <span className={styles.playableCopy}><small>{language === "hi" ? `दृश्य ${String(scene.ordinal).padStart(2, "0")} · ${scene.relation}` : `Scene ${String(scene.ordinal).padStart(2, "0")} · ${scene.relation}`}</small><strong>{scene.title}</strong><span>{scene.decisiveChange[language]}</span><i>{language === "hi" ? "दृश्य में जाएँ →" : "Enter scene →"}</i></span>
+            </button>)}
+          </div>
+        </section>}
         <ol className={styles.momentRail} aria-label={`${selectedPlace.label} story moments`}>
           {selectedPlace.turnIds.map((turnId) => {
             const turn = compass.turns[turnId];
