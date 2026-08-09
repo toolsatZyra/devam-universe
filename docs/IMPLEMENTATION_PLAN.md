@@ -1,5 +1,19 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (Ramayana cinematic beat staging and reversible story
+paths): all twenty-nine road-home beats now change the visible world rather
+than only replacing copy. A small client composition table supplies bounded
+focal crop, depth, palette, and one of nine CSS motion motifs while reusing the
+four existing biome paintings; no new bitmap copies, canvas renderer, or game
+engine were added. The story compiler now derives a reverse node-to-moment
+index, so Rama, Bharata, Ayodhya, Lanka, and every other indexed character or
+place can expose the exact playable moments in which it appears and return to
+one in a single action. Regression tests cover all twenty-nine stage records,
+the reverse index, the sub-100-KB story pack, and the prohibition on importing
+the global Atlas into client modules. This establishes responsive cinematic
+grammar and bidirectional traversal for the selected arc, not unique art for
+every beat, whole-epic coverage, or observed engagement quality.
+
 Checkpoint 2026-08-10 (Ramayana story-world contract and first dense arc): the
 released seven-scene road-home slice is now represented as a bounded,
 server-compiled `ramayana-road-home-v1` pack rather than importing the 247 KB

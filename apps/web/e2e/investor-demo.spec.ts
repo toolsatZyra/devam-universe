@@ -303,6 +303,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   const ramayanaWorld = page.getByRole("region", { name: "Ramayana story world" });
   await expect(ramayanaWorld).toBeVisible();
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
+  await expect(page.getByTestId("journey-beat-stage")).toHaveAttribute("data-motif", "gather");
   await expect(page.getByRole("listitem", { name: /2\. The sky road remembers/ })).toBeVisible();
   await expect(page.getByRole("group", { name: "Scene camera controls, 100%" })).toBeVisible();
   await page.getByRole("button", { name: "Zoom scene in" }).click();
@@ -341,6 +342,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.keyboard.press("ArrowRight");
   await page.keyboard.press("ArrowRight");
   await expect(page.getByRole("heading", { name: "The sky road remembers" })).toBeVisible();
+  await expect(page.getByTestId("journey-beat-stage")).toHaveAttribute("data-motif", "memory");
   await page.keyboard.press("ArrowLeft");
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
 
@@ -358,6 +360,11 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "← Previous discovery" }).click();
   await page.getByRole("button", { name: "← Back to the scene" }).click();
   await page.getByRole("button", { name: "Story", exact: true }).click();
+  await page.getByRole("button", { name: "Rama", exact: true }).click();
+  await expect(page.getByText("Meet Rama in the story", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: /The sky road remembers Enter this moment/ }).click();
+  await expect(page.getByRole("heading", { name: "The sky road remembers" })).toBeVisible();
+  await page.getByRole("button", { name: "Go to scene 1" }).click();
   await page.getByRole("button", { name: "Zoom scene in" }).click();
   await expect(page.getByRole("button", { name: "Discover Vibhishana, Narrative character" })).toBeVisible();
   await page.getByRole("button", { name: "Reset scene view" }).click();

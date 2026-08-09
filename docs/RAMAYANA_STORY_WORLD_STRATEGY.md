@@ -208,6 +208,13 @@ scenes, each with three to seven visual beats, character viewpoints, place
 memories, consequences, and outward/return paths. This tests narrative depth
 without pretending the entire epic is finished.
 
+Current checkpoint: the seven scenes contain twenty-nine bilingual beats. Each
+beat now applies a lightweight focal crop, depth, palette, and motion motif over
+four reusable biome paintings, and a compiler-derived character/place index can
+return an encounter directly to every playable moment in which it appears.
+Unique key art, sound, richer foreground animation, longer retellings, and
+observed user comprehension remain open; Gate 2 is therefore not yet complete.
+
 ### Gate 3 — whole-epic story compass
 
 Publish a reviewed high-level route from the beginning through return, with
