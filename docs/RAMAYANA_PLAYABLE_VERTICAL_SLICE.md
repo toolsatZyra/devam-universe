@@ -157,6 +157,14 @@ at smartphone size. UI occupies the edges, not a permanent third of the world.
 - desktop and mobile have no horizontal overflow or trapped camera state; and
 - a failed image load retains readable story, location, and navigation.
 
+Implementation checkpoint 2026-08-09: the scene world now supplies bounded
+mouse/touch drag, wheel/pinch depth, double-tap depth, keyboard travel and pan,
+visible zoom/reset controls, camera reset on scene travel, and a replay path
+after completion. Camera bounds are symmetric and unit-tested so travelling too
+far in one direction cannot create a trapped state. This is interaction-contract
+evidence, not evidence that the experience is already engaging; that still
+requires observed play.
+
 This follows the useful design lesson from *Journey*: an emotional arc must be
 designed and iterated as a whole, not inferred from visual polish. It also uses
 the Xbox accessibility guidance that complex worlds need persistent objective

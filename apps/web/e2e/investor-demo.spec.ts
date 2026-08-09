@@ -300,9 +300,45 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("link", { name: "Begin the return journey" })).toBeVisible();
   await page.getByRole("link", { name: "Begin the return journey" }).click();
-  await expect(page.getByRole("region", { name: "Ramayana story world" })).toBeVisible();
+  const ramayanaWorld = page.getByRole("region", { name: "Ramayana story world" });
+  await expect(ramayanaWorld).toBeVisible();
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
   await expect(page.getByRole("listitem", { name: /2\. The sky road remembers/ })).toBeVisible();
+  await expect(page.getByRole("group", { name: "Scene camera controls, 100%" })).toBeVisible();
+  await page.getByRole("button", { name: "Zoom scene in" }).click();
+  await expect(ramayanaWorld).toHaveAttribute("data-camera-scale", "1.10");
+  await page.getByRole("button", { name: "Reset scene view" }).click();
+  await expect(ramayanaWorld).toHaveAttribute("data-camera-scale", "1.00");
+
+  const lookPoint = await ramayanaWorld.evaluate((element) => {
+    const rect = element.getBoundingClientRect();
+    for (const yRatio of [.2, .45, .7]) {
+      for (const xRatio of [.82, .65, .5]) {
+        const x = rect.left + rect.width * xRatio;
+        const y = rect.top + rect.height * yRatio;
+        const target = document.elementFromPoint(x, y);
+        if (target?.closest('[aria-label="Ramayana story world"]') === element && !target.closest("a,button")) return { x, y };
+      }
+    }
+    return { x: rect.left + rect.width * .82, y: rect.top + rect.height * .7 };
+  });
+  await page.mouse.move(lookPoint.x, lookPoint.y);
+  await page.mouse.down();
+  await page.mouse.move(lookPoint.x - 38, lookPoint.y + 24, { steps: 4 });
+  await page.mouse.up();
+  await expect(ramayanaWorld).not.toHaveAttribute("data-camera-x", "0");
+  await page.getByRole("button", { name: "Reset scene view" }).click();
+
+  await ramayanaWorld.focus();
+  await page.keyboard.press("Shift+ArrowRight");
+  await expect(ramayanaWorld).not.toHaveAttribute("data-camera-x", "0");
+  await page.keyboard.press("Home");
+  await expect(ramayanaWorld).toHaveAttribute("data-camera-x", "0");
+  await page.keyboard.press("ArrowRight");
+  await expect(page.getByRole("heading", { name: "The sky road remembers" })).toBeVisible();
+  await page.keyboard.press("ArrowLeft");
+  await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
+
   await page.getByRole("button", { name: "Route" }).click();
   await expect(page.getByRole("button", { name: /Nandigrama/ })).toBeVisible();
   await page.getByRole("button", { name: "Connections" }).click();
