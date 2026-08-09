@@ -25,6 +25,10 @@ const DUTT_NARRATIVE_CONSTELLATION_NODE_SLUGS = [
   "rama", "sita", "lakshmana", "hanuman", "ravana", "sugriva", "king-janaka", "king-dasharatha",
   "mithila-story-world", "panchavati-story-world", "kishkindha-story-world", "lanka-story-world",
   "forest-exile", "sita-abduction", "rama-sugriva-alliance", "hanuman-ocean-crossing", "bridge-to-lanka", "return-to-ayodhya",
+  "pushpaka-departure-lanka", "remembered-homeward-route", "bharadvaja-homecoming-counsel",
+  "hanuman-carries-homecoming-message", "bharata-hears-return", "ayodhya-prepares-homecoming",
+  "rama-coronation-return", "vibhishana", "bharadvaja", "bharadvaja-hermitage-story-world",
+  "guha", "bharata", "nandigrama-story-world", "shatrughna", "vasishta",
 ];
 const SACRED_TIME_NODE_SLUGS = [
   "krishna-janmashtami", "radha-ashtami", "vishwakarma-puja", "pitru-paksha", "karwa-chauth", "ahoi-ashtami",
@@ -214,14 +218,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 187 || worldEdges.length !== 301) {
+  if (gateways.length !== 5 || worldNodes.length !== 202 || worldEdges.length !== 341) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 192) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 301) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 207) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 341) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 301) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 341) throw new Error("Atlas edge endpoint and label triples must be unique");
   if (worldNodes.some((node) => !WORLD_NODE_FAMILIES.has(node.family))) throw new Error("Atlas nodes must declare a normalized family");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
@@ -307,7 +311,7 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
     throw new Error("Dutt Ramayana narrative constellation is incomplete");
   }
   const sourceAddressedAtlasEdges = worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"));
-  if (sourceAddressedAtlasEdges.length !== 177 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
+  if (sourceAddressedAtlasEdges.length !== 217 || sourceAddressedAtlasEdges.some((edge) => !edge.sourceRef?.includes("sha256:"))) {
     throw new Error("Living Atlas source-addressed routes are incomplete");
   }
   for (let index = 0; index < DISTINCT_DIWALI_NODE_SLUGS.length; index += 1) {

@@ -36,6 +36,21 @@ const reviewedDetailNodeIds = [
   "hanuman-deliberation",
   "yuddha-kanda",
   "uttara-kanda",
+  "pushpaka-departure-lanka",
+  "remembered-homeward-route",
+  "bharadvaja-homecoming-counsel",
+  "hanuman-carries-homecoming-message",
+  "bharata-hears-return",
+  "ayodhya-prepares-homecoming",
+  "rama-coronation-return",
+  "vibhishana",
+  "bharadvaja",
+  "bharadvaja-hermitage-story-world",
+  "guha",
+  "bharata",
+  "nandigrama-story-world",
+  "shatrughna",
+  "vasishta",
   "ganesh-chaturthi",
   "sankashti-chaturthi",
   "ananta-chaturdashi",
@@ -143,7 +158,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(187);
+    expect(worldNodes).toHaveLength(202);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -318,6 +333,32 @@ describe("Living Atlas exploration data", () => {
     }
   });
 
+  it("makes the complete selected return arc traversable through people, places, and events", () => {
+    const returnNodeIds = [
+      "pushpaka-departure-lanka", "remembered-homeward-route", "bharadvaja-homecoming-counsel",
+      "hanuman-carries-homecoming-message", "bharata-hears-return", "ayodhya-prepares-homecoming",
+      "rama-coronation-return", "vibhishana", "bharadvaja", "bharadvaja-hermitage-story-world",
+      "guha", "bharata", "nandigrama-story-world", "shatrughna", "vasishta",
+    ];
+    expect(worldNodes.filter((node) => returnNodeIds.includes(node.id))).toHaveLength(returnNodeIds.length);
+    expect(new Set(worldNodes.filter((node) => returnNodeIds.includes(node.id)).map((node) => node.family)))
+      .toEqual(new Set(["being_person", "event_story", "place_polity"]));
+
+    const storyChain = [
+      "pushpaka-departure-lanka", "remembered-homeward-route", "bharadvaja-homecoming-counsel",
+      "hanuman-carries-homecoming-message", "bharata-hears-return", "ayodhya-prepares-homecoming",
+      "rama-coronation-return",
+    ];
+    for (let index = 0; index < storyChain.length - 1; index += 1) {
+      const edge = worldEdges.find((candidate) => candidate.from === storyChain[index] && candidate.to === storyChain[index + 1]);
+      expect(edge, `${storyChain[index]} must open ${storyChain[index + 1]}`).toBeDefined();
+      expect(edge?.sourceRef).toMatch(/^sha256:[a-f0-9]{64}\/ordinal\/\d+#span=[a-f0-9]{64}$/);
+      expect(edge?.evidenceBoundary?.length ?? 0).toBeGreaterThan(120);
+    }
+    expect(worldEdges.filter((edge) => returnNodeIds.includes(edge.from) || returnNodeIds.includes(edge.to)))
+      .toHaveLength(40);
+  });
+
   it("turns the Ganesha doorway into source, form, symbol, festival, and history routes", () => {
     const constellationIds = [
       "ganesha-cosmic-world", "ganesha-five-elements", "ganesha-one-tusked-form", "ganesha-mouse-emblem",
@@ -425,7 +466,7 @@ describe("Living Atlas exploration data", () => {
       }
     }
 
-    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(177);
+    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(217);
   });
 
   it("gives every era a visible exploration path", () => {
@@ -511,8 +552,8 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 192 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 301 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 207 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 341 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming story tradition");
       expect(sql).toContain("Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources");
       expect(sql).toContain("Kashi sacred-city nodes are missing or outside their evidence boundaries");
