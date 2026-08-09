@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { PanchangFact } from "@/lib/panchang/contracts";
 import type { ObservanceResolutionResult } from "@/lib/panchang/observance-rules";
 import type { PracticeGuidanceResult } from "@/lib/domain/practice";
@@ -108,6 +108,7 @@ async function loadPracticeGuidance(input: {
 
 export function TodayExperience({ initialDate }: { initialDate: string }) {
   const [date, setDate] = useState(initialDate);
+  const dateWasEditedRef = useRef(false);
   const [location, setLocation] = useState<LocationChoice>(LOCATIONS[0]);
   const [traditionCode, setTraditionCode] = useState(TRADITIONS[0].code);
   const [fact, setFact] = useState<PanchangFact | null>(null);
@@ -122,7 +123,9 @@ export function TodayExperience({ initialDate }: { initialDate: string }) {
   useEffect(() => {
     const localDate = localDateNow();
     if (localDate === initialDate) return;
-    const sync = window.setTimeout(() => setDate(localDate), 0);
+    const sync = window.setTimeout(() => {
+      if (!dateWasEditedRef.current) setDate(localDate);
+    }, 0);
     return () => window.clearTimeout(sync);
   }, [initialDate]);
 
@@ -251,7 +254,14 @@ export function TodayExperience({ initialDate }: { initialDate: string }) {
       <section className={styles.controls} aria-label="Panchang context">
         <label>
           <span>Date</span>
-          <input type="date" value={date} onChange={(event) => setDate(event.target.value)} />
+          <input
+            type="date"
+            value={date}
+            onChange={(event) => {
+              dateWasEditedRef.current = true;
+              setDate(event.target.value);
+            }}
+          />
         </label>
         <label>
           <span>Place</span>
