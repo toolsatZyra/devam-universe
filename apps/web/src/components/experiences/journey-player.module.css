@@ -96,6 +96,13 @@
 .sceneContext small { border-left: 1px solid rgba(var(--accent-rgb),.25); padding-left: 8px; color: #727987; font-size: 7px; text-transform: uppercase; }
 .storyBeat h1 { margin: 0; font: 400 clamp(38px, 5.2vw, 68px)/.98 Georgia, serif; letter-spacing: -.045em; text-shadow: 0 10px 35px #000; }
 .storyBeat > span { display: block; max-width: 520px; margin-top: 12px; color: #b7b3ae; font: 16px/1.55 Georgia, serif; text-shadow: 0 3px 18px #000; }
+.beatNarrative { max-width: 520px; min-height: 104px; margin-top: 12px; display: grid; align-content: start; gap: 5px; text-shadow: 0 3px 18px #000; }
+.beatNarrative > small { color: #7f8591; font-size: 7px; letter-spacing: .12em; text-transform: uppercase; }
+.beatNarrative > strong { color: #eee5d8; font: 400 18px/1.25 Georgia, serif; }
+.beatNarrative > span { color: #b7b3ae; font: 15px/1.5 Georgia, serif; }
+.beatRail { width: min(260px,70vw); margin-top: 10px; display: flex; gap: 6px; }
+.beatRail button { height: 3px; flex: 1; border: 0; border-radius: 99px; padding: 0; background: rgba(255,255,255,.17); cursor: pointer; transition: background .2s ease, transform .2s ease; }
+.beatRail button[aria-pressed="true"] { background: var(--accent); box-shadow: 0 0 12px rgba(var(--accent-rgb),.42); transform: scaleY(1.5); }
 .retellingLabel { display: block; width: fit-content; margin-top: 10px; color: #858b98; font-size: 7px; letter-spacing: .08em; text-transform: uppercase; }
 .cast { margin-top: 11px; display: flex; flex-wrap: wrap; gap: 5px; }
 .cast a, .cast button { border: 1px solid rgba(var(--accent-rgb),.13); border-radius: 999px; padding: 5px 8px; color: #999ca4; background: rgba(3,6,14,.42); backdrop-filter: blur(9px); cursor: pointer; font: 7px/1 ui-sans-serif, system-ui; letter-spacing: .04em; }
@@ -191,6 +198,8 @@
   .storyBeat { left: 17px; right: 17px; bottom: 62px; width: auto; }
   .storyBeat h1 { font-size: clamp(36px, 11vw, 52px); }
   .storyBeat > span { font-size: 14px; line-height: 1.48; }
+  .beatNarrative { min-height: 112px; }
+  .beatNarrative > span { font-size: 14px; line-height: 1.46; }
   .sourceDetails > small { max-height: 44px; overflow: auto; }
   .progress { bottom: 20px; }
   .cameraControls { top: 108px; right: 9px; }

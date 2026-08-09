@@ -335,6 +335,11 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.keyboard.press("Home");
   await expect(ramayanaWorld).toHaveAttribute("data-camera-x", "0");
   await page.keyboard.press("ArrowRight");
+  await expect(page.getByText("One more request", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowRight");
   await expect(page.getByRole("heading", { name: "The sky road remembers" })).toBeVisible();
   await page.keyboard.press("ArrowLeft");
   await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
