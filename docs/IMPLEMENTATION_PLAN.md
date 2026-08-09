@@ -18,13 +18,20 @@ gzip. This is twenty-three playable selected-expression scenes and 105
 bilingual beats, not complete Ramayana coverage or observed engagement.
 
 Local acceptance for this checkpoint is complete: TypeScript and lint pass;
-853 portable product tests pass with the same 17 named vault-only skips; the
+855 portable product tests pass with the same 17 named vault-only skips; the
 optimized Next.js build passes; and all 24 serialized desktop/Pixel 7 browser
 cases pass. Browser acceptance includes the Atlas-to-Ramayana state chain, the
 new playable default, all eight first-rivers images, district completion and
 return, reversible character paths, and two-way map pan/zoom recovery. These
 results establish implementation and regression safety, not observed-user
 enjoyment or whole-epic completeness.
+
+The first hosted matrix exposed one ordering race hidden by local speed:
+pending saved-progress restoration could replace a visual district the visitor
+had already entered. Journey navigation now records explicit travel before the
+deferred restoration callback runs and refuses that stale replacement. A pure
+regression contract and the full two-device matrix cover the rule; district
+payloads and story scope are unchanged.
 
 Checkpoint 2026-08-10 (Ramayana cinematic beat staging and reversible story
 paths): all twenty-nine road-home beats now change the visible world rather

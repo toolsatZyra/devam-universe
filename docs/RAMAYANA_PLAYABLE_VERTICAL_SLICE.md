@@ -239,7 +239,7 @@ Local acceptance on 2026-08-10 passes all 24 serialized desktop and Pixel 7
 browser cases. The matrix enters and completes all three illustrated districts,
 decodes every scene image, traverses character and living-world paths, pans and
 zooms the narrative map in both directions, restores exact context, and checks
-horizontal overflow. TypeScript, lint, 853 portable tests with 17 named
+horizontal overflow. TypeScript, lint, 855 portable tests with 17 named
 vault-only skips, and the optimized production build also pass. This is local
 mechanical and visual acceptance, not observed-user evidence that the district
 is yet enjoyable or sufficiently deep.

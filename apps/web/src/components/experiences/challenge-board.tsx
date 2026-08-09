@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { heroChallenges, heroJourneys } from "@/data/hero-experiences";
-import { journeyProgressKey } from "./journey-player";
+import { journeyProgressKey } from "./journey-progress";
 import styles from "./journey-player.module.css";
 
 export function ChallengeBoard() {

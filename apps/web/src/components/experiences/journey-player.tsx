@@ -35,6 +35,7 @@ import {
 import { JourneyEncounter } from "./journey-encounter";
 import { JourneyBeatStage } from "./journey-beat-stage";
 import { JourneyCompass } from "./journey-compass";
+import { journeyProgressKey, shouldApplyRestoredJourneyPosition } from "./journey-progress";
 import { RamayanaNarrativeMap } from "./ramayana-narrative-map";
 import { getRamayanaBeatStage } from "./ramayana-beat-stage";
 import styles from "./journey-player.module.css";
@@ -46,10 +47,6 @@ type JourneySarthiReply = {
   sourceBoundary?: string;
   citations?: { passageId: string; workTitle: string; editionTitle: string }[];
 };
-
-export function journeyProgressKey(slug: string) {
-  return `devam-journey-progress:${slug}`;
-}
 
 function readProgress(slug: string): string[] {
   try {
@@ -224,6 +221,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [loadedMoments, setLoadedMoments] = useState<Record<string, StoryMoment>>(() => storyWorld?.moments ?? {});
   const [districtLoadErrorId, setDistrictLoadErrorId] = useState<string>();
   const guestExchanges = useRef(0);
+  const userHasNavigated = useRef(false);
   const viewportRef = useRef<HTMLElement | null>(null);
   const cameraRef = useRef<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
   const lastTapRef = useRef<{ at: number; x: number; y: number } | null>(null);
@@ -241,7 +239,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     const sync = window.setTimeout(() => {
       setExplored(saved);
       const next = journey.stops.findIndex((stop) => !saved.includes(stop.id));
-      if (next >= 0) setActiveIndex(next);
+      if (shouldApplyRestoredJourneyPosition(userHasNavigated.current, next)) setActiveIndex(next);
     }, 0);
     const guide = window.setTimeout(() => setShowGuide(false), 4500);
     return () => { window.clearTimeout(sync); window.clearTimeout(guide); };
@@ -359,6 +357,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   }
 
   function travelTo(index: number) {
+    userHasNavigated.current = true;
     setActiveIndex(index);
     setActiveBeatIndex(0);
     setShowGuide(false);
