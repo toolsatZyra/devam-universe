@@ -26,7 +26,7 @@ import {
   type AtlasPoint as Point,
   type AtlasView as ViewTransform,
 } from "./atlas-camera";
-import { advanceAtlasTrail, atlasDepthLabels, atlasNodeZoomCompensation, resolveAtlasDepth } from "./atlas-navigation";
+import { advanceAtlasTrail, atlasDepthLabels, atlasNodeZoomCompensation, preferAtlasEdgeForAnchor, resolveAtlasDepth } from "./atlas-navigation";
 import styles from "./atlas-shell.module.css";
 
 type AtlasShellProps = {
@@ -196,7 +196,9 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     }>();
     for (const edge of worldEdges) {
       const destinationId = edge.from === anchorId ? edge.to : edge.to === anchorId ? edge.from : null;
-      if (!destinationId || unique.has(destinationId)) continue;
+      if (!destinationId) continue;
+      const current = unique.get(destinationId);
+      if (current && !preferAtlasEdgeForAnchor(current.edge, edge, anchorId)) continue;
       const gateway = gatewayById.get(destinationId);
       const node = nodeById.get(destinationId);
       if (!gateway && !node) continue;

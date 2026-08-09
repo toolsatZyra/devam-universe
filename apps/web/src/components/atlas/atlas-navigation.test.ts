@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advanceAtlasTrail, atlasNodeZoomCompensation, resolveAtlasDepth } from "./atlas-navigation";
+import { advanceAtlasTrail, atlasNodeZoomCompensation, preferAtlasEdgeForAnchor, resolveAtlasDepth } from "./atlas-navigation";
 
 describe("Living Atlas game navigation", () => {
   it("exposes progressive depth without calling an unselected view an encounter", () => {
@@ -23,5 +23,13 @@ describe("Living Atlas game navigation", () => {
     }
     expect(trail).toEqual(["kishkindha-story-world", "kishkindha-living-landscape", "anegundi", "hampi-world-heritage"]);
     expect(advanceAtlasTrail(trail, "anegundi", 4)).toEqual(["kishkindha-story-world", "kishkindha-living-landscape", "anegundi"]);
+  });
+
+  it("prefers the relation that originates at the current node when both directions exist", () => {
+    const incoming = { from: "kashi", to: "ramnagar-ramlila" };
+    const outgoing = { from: "ramnagar-ramlila", to: "kashi" };
+
+    expect(preferAtlasEdgeForAnchor(incoming, outgoing, "ramnagar-ramlila")).toBe(true);
+    expect(preferAtlasEdgeForAnchor(outgoing, incoming, "ramnagar-ramlila")).toBe(false);
   });
 });
