@@ -300,7 +300,8 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   const focusAt = useCallback((position: Point, scale: number) => {
     const viewport = readViewport();
     if (!viewport) return;
-    commitView(focusAtlasPosition(position, scale, viewport));
+    const focus = viewport.width <= 760 ? { x: 0.5, y: 0.32 } : { x: 0.5, y: 0.46 };
+    commitView(focusAtlasPosition(position, scale, viewport, focus));
   }, [commitView, readViewport]);
 
   const selectGateway = useCallback((gateway: Gateway) => {

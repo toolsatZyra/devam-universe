@@ -238,11 +238,14 @@
   .masterLabel { width: 155px; }
   .masterLabel strong { font-size: 21px; }
   .masterLabel small { display: none; }
-  .discoveryCard { left: 14px; right: 14px; bottom: 76px; width: auto; max-height: min(44svh, 410px); padding: 17px 48px 16px 17px; border-radius: 19px; }
+  .discoveryCard { left: 14px; right: 14px; bottom: 76px; width: auto; max-height: min(29svh, 284px); padding: 15px 48px 14px 17px; border-radius: 19px; }
   .discoveryCard h2 { font-size: 27px; }
-  .discoveryCard > span { font-size: 12px; line-height: 1.45; }
-  .cardActions { margin-top: 12px; }
+  .discoveryCard > span { font-size: 12px; line-height: 1.4; -webkit-line-clamp: 2; }
+  .cardActions { margin-top: 10px; }
+  .connectedPaths { margin-top: 11px; padding-top: 9px; }
+  .connectedPaths > div { grid-template-rows: minmax(58px, auto); }
   .connectedPaths > div { grid-auto-columns: 142px; }
+  .connectedPaths button { min-height: 58px; }
   .flightControls { left: 13px; bottom: max(18px, env(safe-area-inset-bottom)); }
   .flightControls button { width: 32px; height: 32px; }
   .sarthiOrb { right: 13px; bottom: max(18px, env(safe-area-inset-bottom)); min-width: 48px; width: 48px; padding: 0; }

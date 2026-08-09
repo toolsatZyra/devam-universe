@@ -11,6 +11,11 @@ export type AtlasViewport = {
   sceneHeight: number;
 };
 
+export type AtlasFocus = {
+  x: number;
+  y: number;
+};
+
 export function clampAtlasScale(scale: number) {
   return Math.min(ATLAS_MAX_SCALE, Math.max(ATLAS_MIN_SCALE, scale));
 }
@@ -37,11 +42,16 @@ export function constrainAtlasView(next: AtlasView, viewport?: AtlasViewport): A
   };
 }
 
-export function focusAtlasPosition(position: AtlasPoint, scale: number, viewport: AtlasViewport): AtlasView {
+export function focusAtlasPosition(
+  position: AtlasPoint,
+  scale: number,
+  viewport: AtlasViewport,
+  focus: AtlasFocus = { x: 0.5, y: 0.5 },
+): AtlasView {
   const boundedScale = clampAtlasScale(scale);
   return constrainAtlasView({
-    x: viewport.width / 2 - viewport.sceneWidth * (position.x / 100) * boundedScale,
-    y: viewport.height / 2 - viewport.sceneHeight * (position.y / 100) * boundedScale,
+    x: viewport.width * focus.x - viewport.sceneWidth * (position.x / 100) * boundedScale,
+    y: viewport.height * focus.y - viewport.sceneHeight * (position.y / 100) * boundedScale,
     scale: boundedScale,
   }, viewport);
 }

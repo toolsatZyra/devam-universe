@@ -23,4 +23,11 @@ describe("Atlas camera bounds", () => {
       expect(focused.scale).toBe(2.2);
     }
   });
+
+  it("can stage a focused node in the upper third to preserve mobile encounter space", () => {
+    const mobile = { width: 390, height: 844, sceneWidth: 780, sceneHeight: 1_688 };
+    const focused = focusAtlasPosition({ x: 50, y: 50 }, 1.34, mobile, { x: 0.5, y: 0.32 });
+    expect(focused).toEqual(constrainAtlasView(focused, mobile));
+    expect(focused.y).toBeLessThan(844 / 2 - 1_688 * 0.5 * 1.34);
+  });
 });
