@@ -1,6 +1,7 @@
 import type { ExperienceCitation, HeroChallenge, HeroJourney } from "@/lib/domain/experience";
 
 const DUTT_YUDDHA_SOURCE = "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b";
+const DUTT_AYODHYA_SOURCE = "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034";
 const RAMAYANA_SOURCE = "a569551e8a972935d540bc53e57effa919868367234ab3b5334d07a1e7f84901";
 const DURGA_SOURCE = "7f2db461e724c675317130c653258a4b277e647e938b946b40687decd535111e";
 const GANESHA_SOURCE = "21e5909392249ecca6677410c30d70323402d886975df807df2b865697fd9e6d";
@@ -16,6 +17,51 @@ function duttYuddhaCitation(sourceOrdinal: number, marker: string, literalSectio
     languageCode: "en",
     rightsLane: "product_allowed",
     locator: { contract: "DEVAM_DUTT_PG_SECTION_BYTE_SPAN_V1", provider: "Project Gutenberg", ebook_id: 60188, volume: 3, kanda_ordinal: 6, kanda_slug: "yuddha", kanda_title: "Yuddhakāṇḍa", literal_marker: marker, literal_section_number: literalSection, source_relative_ordinal: sourceOrdinal, byte_start: byteStart, byte_end_exclusive: byteEnd, line_start: lineStart, line_end: lineEnd, printed_number_not_unique_key: true },
+  };
+}
+
+function duttAyodhyaRangeCitation(
+  sourceOrdinalStart: number,
+  sourceOrdinalEnd: number,
+  kandaOrdinalStart: number,
+  kandaOrdinalEnd: number,
+  markerStart: string,
+  markerEnd: string,
+  byteStart: number,
+  byteEnd: number,
+  lineStart: number,
+  lineEnd: number,
+  spanSha256: string,
+): ExperienceCitation {
+  return {
+    sourceSha256: DUTT_AYODHYA_SOURCE,
+    sourceOrdinal: sourceOrdinalStart,
+    spanSha256,
+    workTitle: "The Rāmāyana",
+    editionTitle: "Manmatha Nath Dutt English prose translation, Project Gutenberg volume 1",
+    languageCode: "en",
+    rightsLane: "product_allowed",
+    locator: {
+      contract: "DEVAM_DUTT_PG_SECTION_RANGE_V1",
+      provider: "Project Gutenberg",
+      ebook_id: 57265,
+      volume: 1,
+      kanda_ordinal: 2,
+      kanda_slug: "ayodhya",
+      kanda_title: "Ayodhyākāṇḍa",
+      literal_marker_start: markerStart,
+      literal_marker_end: markerEnd,
+      source_relative_ordinal_start: sourceOrdinalStart,
+      source_relative_ordinal_end: sourceOrdinalEnd,
+      kanda_relative_ordinal_start: kandaOrdinalStart,
+      kanda_relative_ordinal_end: kandaOrdinalEnd,
+      section_count: kandaOrdinalEnd - kandaOrdinalStart + 1,
+      byte_start: byteStart,
+      byte_end_exclusive: byteEnd,
+      line_start: lineStart,
+      line_end: lineEnd,
+      printed_number_not_unique_key: true,
+    },
   };
 }
 
@@ -98,45 +144,85 @@ export const heroJourneys: HeroJourney[] = [
     slug: "ramayana",
     hero: "Ramayana",
     devanagari: "रामायण",
-    title: "The road home to Ayodhya",
-    invitation: "Travel with the returning party from Lanka to Ayodhya, then discover how the story opens into living festival worlds.",
-    durationMinutes: 14,
+    title: "The promise and the return",
+    invitation: "Choose an illustrated district: watch coronation night become exile, or travel with the returning party from Lanka to Ayodhya.",
+    durationMinutes: 32,
     tone: "saffron",
-    sourceBoundary: "This playable retelling follows Yuddha Kāṇḍa sections CXXIV–CXXX in the product-allowed Project Gutenberg electronic text of Manmatha Nath Dutt's English prose translation. It is not every Ramayana, a historical route, a universal Diwali origin, or a complete account of any character, place, festival, or theology.",
+    sourceBoundary: "These two playable districts follow Ayodhyā Kāṇḍa source units I–XL in Project Gutenberg volume 1 and Yuddha Kāṇḍa source units CXXIV–CXXX in volume 3 of Manmatha Nath Dutt's product-allowed English prose translation. They are selected-expression retellings, not every Ramayana, a historical route, a universal ethical judgment or Diwali origin, or a complete account of any character, place, festival, or theology.",
     completeHeroUniverse: false,
     stops: [
       {
-        id: "leave-lanka", ordinal: 1, title: "Leave Lanka", eyebrow: "Yuddha Kāṇḍa · CXXIV", summary: "With the war behind them, the companions gather and the Pushpaka rises. Home is no longer an idea; it becomes a direction.",
+        id: "coronation-dawn", ordinal: 1, title: "A coronation dawns", eyebrow: "Ayodhyā Kāṇḍa · I–VI", summary: "Dasharatha names Rama as heir; Ayodhya prepares through the night while Rama and Sita keep a quiet vigil inside the celebration.",
+        citation: duttAyodhyaRangeCitation(76, 81, 1, 6, "I", "VI", 367897, 409010, 5936, 6588, "d9eeda282af4a60ad4b0a3ef71de3a7f428b2a33b8985b0766b113b3694dc5da"),
+        visual: { asset: "/journeys/ramayana-exile-coronation-dawn-v1.webp", location: "Ayodhya · coronation night", cast: ["Dasharatha", "Rama", "Sita", "Vasishta"], connections: [{ label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya%20Ramayana" }, { label: "Dasharatha", kind: "character", href: "/search?q=Dasharatha%20Ramayana" }, { label: "The selected Dutt edition", kind: "source", href: "/search?q=Manmatha%20Nath%20Dutt%20Ramayana" }] },
+      },
+      {
+        id: "manthara-sees-city", ordinal: 2, title: "Manthara sees the city", eyebrow: "Ayodhyā Kāṇḍa · VII", summary: "The celebration reaches Manthara as alarming news. Kaikeyi first rejoices—before an argument begins to reshape what the coronation means.",
+        citation: duttAyodhyaRangeCitation(82, 82, 7, 7, "VII", "VII", 409010, 414268, 6589, 6670, "0cf2b8d1615c1fed76c0643ee9c7ac8ccba6b2128f07f6212376885f3b445b8c"),
+        visual: { asset: "/journeys/ramayana-exile-manthara-v1.webp", location: "Ayodhya palace · high terrace", cast: ["Manthara", "Kaikeyi"], connections: [{ label: "Manthara", kind: "character", href: "/search?q=Manthara%20Ramayana" }, { label: "Kaikeyi", kind: "character", href: "/search?q=Kaikeyi%20Ramayana" }, { label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya" }] },
+      },
+      {
+        id: "fear-becomes-demands", ordinal: 3, title: "Fear becomes two demands", eyebrow: "Ayodhyā Kāṇḍa · VIII–XI", summary: "Manthara turns affection into fear. Kaikeyi enters the chamber of anger and calls in two promises: Bharata's installation and Rama's exile.",
+        citation: duttAyodhyaRangeCitation(83, 86, 8, 11, "VIII", "XI", 414268, 440065, 6671, 7071, "1acee52458af87783396f897bed370249cfcf1bdb8e39331e6bfa3b0a537ab6f"),
+        visual: { asset: "/journeys/ramayana-exile-two-demands-v1.webp", location: "Kaikeyi's chamber · narrative world", cast: ["Manthara", "Kaikeyi", "Dasharatha"], connections: [{ label: "Kaikeyi's chamber", kind: "place", href: "/search?q=Kaikeyi%20two%20boons" }, { label: "Bharata", kind: "character", href: "/search?q=Bharata%20Ramayana" }, { label: "The forest exile", kind: "source", href: "/search?q=Ramayana%20forest%20exile" }] },
+      },
+      {
+        id: "king-trapped-by-word", ordinal: 4, title: "The king is trapped by his word", eyebrow: "Ayodhyā Kāṇḍa · XII–XIV", summary: "Dasharatha pleads through the night, but the promise he freely renewed becomes the lock on the room while morning waits outside.",
+        citation: duttAyodhyaRangeCitation(87, 89, 12, 14, "XII", "XIV", 440065, 471582, 7072, 7552, "0f99781e88e5d4348b253a9b851f150f8db1544768743ccf7977df03e4926280"),
+        visual: { asset: "/journeys/ramayana-exile-dasharatha-v1.webp", location: "Kaikeyi's chamber · the long night", cast: ["Dasharatha", "Kaikeyi"], connections: [{ label: "Dasharatha", kind: "character", href: "/search?q=Dasharatha%20Ramayana" }, { label: "Kaikeyi", kind: "character", href: "/search?q=Kaikeyi%20Ramayana" }, { label: "Promise and consequence", kind: "source", href: "/search?q=Ramayana%20two%20boons" }] },
+      },
+      {
+        id: "rama-crosses-celebration", ordinal: 5, title: "Rama crosses the celebration", eyebrow: "Ayodhyā Kāṇḍa · XV–XVIII", summary: "Summoned through streets still prepared for his coronation, Rama reaches a silent father and hears the changed future from Kaikeyi.",
+        citation: duttAyodhyaRangeCitation(90, 93, 15, 18, "XV", "XVIII", 471582, 494066, 7553, 7902, "999301eabc9cbb10df9d794539ac49a8c97f9de64859e77aa9a8298e4a5127c9"),
+        visual: { asset: "/journeys/ramayana-exile-summons-v1.webp", location: "Ayodhya · decorated streets", cast: ["Rama", "Dasharatha", "Kaikeyi", "Vasishta"], connections: [{ label: "Rama", kind: "character", href: "/search?q=Rama%20Ramayana" }, { label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya" }, { label: "Ayodhyā Kāṇḍa", kind: "source", href: "/search?q=Dutt%20Ayodhya%20Kanda" }] },
+      },
+      {
+        id: "rama-accepts-exile", ordinal: 6, title: "Rama accepts the exile", eyebrow: "Ayodhyā Kāṇḍa · XIX–XXV", summary: "Rama chooses immediate departure, tells Kausalya, and redirects Lakshmana's furious resistance toward dismantling the ceremony and preparing the road.",
+        citation: duttAyodhyaRangeCitation(94, 100, 19, 25, "XIX", "XXV", 494066, 545838, 7903, 8697, "dd4163555b80007f83f9bbe8a8cf906ac1c9110bae1766e8b47e6076ee457e8b"),
+        visual: { asset: "/journeys/ramayana-exile-accepted-v1.webp", location: "Kausalya's apartments · narrative world", cast: ["Rama", "Kausalya", "Lakshmana"], connections: [{ label: "Kausalya", kind: "character", href: "/search?q=Kausalya%20Ramayana" }, { label: "Lakshmana", kind: "character", href: "/search?q=Lakshmana%20Ramayana" }, { label: "The forest exile", kind: "source", href: "/search?q=Ramayana%20forest%20exile" }] },
+      },
+      {
+        id: "sita-chooses-road", ordinal: 7, title: "Sita chooses the road", eyebrow: "Ayodhyā Kāṇḍa · XXVI–XXX", summary: "Rama asks Sita to remain in Ayodhya. She names the forest dangers with him and insists that sharing the road is her own decision.",
+        citation: duttAyodhyaRangeCitation(101, 105, 26, 30, "XXVI", "XXX", 545838, 569387, 8698, 9072, "2dcc14dee5b5d763cd5682d81f2446b8074e44c5e9222153abad4627a3eb3a8a"),
+        visual: { asset: "/journeys/ramayana-exile-sita-chooses-v1.webp", location: "Ayodhya palace · threshold to the road", cast: ["Sita", "Rama"], connections: [{ label: "Sita", kind: "character", href: "/search?q=Sita%20Ramayana" }, { label: "Rama", kind: "character", href: "/search?q=Rama%20Ramayana" }, { label: "The forest road", kind: "place", href: "/search?q=Ramayana%20forest%20journey" }] },
+      },
+      {
+        id: "lakshmana-joins", ordinal: 8, title: "Three turn toward the gate", eyebrow: "Ayodhyā Kāṇḍa · XXXI–XL", summary: "Lakshmana joins the journey. Gifts, travel gear, bark garments, blessings, and farewells replace the coronation as the three prepare to leave together.",
+        citation: duttAyodhyaRangeCitation(106, 115, 31, 40, "XXXI", "XL", 569387, 625489, 9073, 9947, "599b54a25c1c46d5351b5adbf067140329b70bf0c4fdf834350d87b62ee9f762"),
+        visual: { asset: "/journeys/ramayana-exile-three-depart-v1.webp", location: "Ayodhya palace gate · departure", cast: ["Rama", "Sita", "Lakshmana", "Kausalya", "Dasharatha"], connections: [{ label: "Rama, Sita, and Lakshmana", kind: "character", href: "/search?q=Rama%20Sita%20Lakshmana%20exile" }, { label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya" }, { label: "Continue into the forest", kind: "source", href: "/search?q=Ramayana%20forest%20exile" }] },
+      },
+      {
+        id: "leave-lanka", ordinal: 9, title: "Leave Lanka", eyebrow: "Yuddha Kāṇḍa · CXXIV", summary: "With the war behind them, the companions gather and the Pushpaka rises. Home is no longer an idea; it becomes a direction.",
         citation: duttYuddhaCitation(122, "CXXIV", 124, 810878, 814570, 12968, 13025, "07276778cf5e60d8a52e33c18477bdf3537636243f4b7bc620250c38ff72af96"),
         visual: { asset: "/journeys/ramayana-return-lanka-v1.webp", location: "Lanka · narrative world", cast: ["Rama", "Sita", "Lakshmana", "Hanuman", "Sugriva", "Vibhishana"], connections: [{ label: "Lanka", kind: "place", href: "/search?q=Lanka%20Ramayana" }, { label: "Vibhishana", kind: "character", href: "/search?q=Vibhishana%20Ramayana" }, { label: "The selected Dutt edition", kind: "source", href: "/search?q=Manmatha%20Nath%20Dutt%20Ramayana" }] },
       },
       {
-        id: "sky-road", ordinal: 2, title: "The sky road remembers", eyebrow: "Yuddha Kāṇḍa · CXXV", summary: "As the journey turns north, places from loss, alliance, and battle pass below. The route becomes a memory of everyone who made return possible.",
+        id: "sky-road", ordinal: 10, title: "The sky road remembers", eyebrow: "Yuddha Kāṇḍa · CXXV", summary: "As the journey turns north, places from loss, alliance, and battle pass below. The route becomes a memory of everyone who made return possible.",
         citation: duttYuddhaCitation(123, "CXXV", 125, 814570, 821805, 13026, 13135, "ac4a5d9e558ad6f19bb7e8558f899971321a5f810116030fcd0843f5a0872010"),
         visual: { asset: "/journeys/ramayana-return-sky-road-v1.webp", location: "The homeward sky · narrative route", cast: ["Rama", "Sita", "Lakshmana", "Hanuman"], connections: [{ label: "Sita", kind: "character", href: "/search?q=Sita%20Ramayana" }, { label: "Kishkindha", kind: "place", href: "/search?q=Kishkindha%20Ramayana" }, { label: "The wider seven-kāṇḍa library", kind: "source", href: "/search?q=seven%20books%20Ramayana" }] },
       },
       {
-        id: "bharadvaja-hermitage", ordinal: 3, title: "Home is near", eyebrow: "Yuddha Kāṇḍa · CXXVI", summary: "At Bharadvaja's hermitage, Rama's first questions are about Ayodhya, Bharata, and the mothers he has not seen through fourteen years of exile.",
+        id: "bharadvaja-hermitage", ordinal: 11, title: "Home is near", eyebrow: "Yuddha Kāṇḍa · CXXVI", summary: "At Bharadvaja's hermitage, Rama's first questions are about Ayodhya, Bharata, and the mothers he has not seen through fourteen years of exile.",
         citation: duttYuddhaCitation(124, "CXXVI", 126, 821805, 825278, 13136, 13193, "2b5f780068a77fe5465ff61956b5355b78afdfeb1c872c4e4dff768cb20dabe4"),
         visual: { asset: "/journeys/ramayana-return-hermitage-v1.webp", location: "Bharadvaja's hermitage · narrative world", cast: ["Rama", "Sita", "Lakshmana", "Bharadvaja", "Hanuman"], connections: [{ label: "Bharadvaja", kind: "character", href: "/search?q=Bharadvaja%20Ramayana" }, { label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya%20Ramayana" }, { label: "Shringverpur living place context", kind: "place", href: "/search?q=Shringverpur%20Ramayana" }] },
       },
       {
-        id: "hanuman-goes-ahead", ordinal: 4, title: "Hanuman goes ahead", eyebrow: "Yuddha Kāṇḍa · CXXVII", summary: "Before the returning party arrives, Hanuman carries the news to Guha and Bharata. The last distance home is crossed first by trust and a message.",
+        id: "hanuman-goes-ahead", ordinal: 12, title: "Hanuman goes ahead", eyebrow: "Yuddha Kāṇḍa · CXXVII", summary: "Before the returning party arrives, Hanuman carries the news to Guha and Bharata. The last distance home is crossed first by trust and a message.",
         citation: duttYuddhaCitation(125, "CXXVII", 127, 825278, 832093, 13194, 13299, "4d3da830889d7d0c551c2cabb152f6dcb0695b7a5a2d50dc8854713699f14fb6"),
         visual: { asset: "/journeys/ramayana-return-hanuman-ahead-v1.webp", location: "The road to Nandigrama · narrative world", cast: ["Hanuman", "Bharata", "Guha"], connections: [{ label: "Hanuman", kind: "character", href: "/search?q=Hanuman%20Ramayana" }, { label: "Bharata", kind: "character", href: "/search?q=Bharata%20Ramayana" }, { label: "Ramlila", kind: "performance", href: "/search?q=Ramlila%20UNESCO" }] },
       },
       {
-        id: "bharata-hears", ordinal: 5, title: "Bharata hears the news", eyebrow: "Yuddha Kāṇḍa · CXXVIII", summary: "Bharata asks how the exile became alliance and victory. Hanuman tells the road behind them, turning a distant return into something real.",
+        id: "bharata-hears", ordinal: 13, title: "Bharata hears the news", eyebrow: "Yuddha Kāṇḍa · CXXVIII", summary: "Bharata asks how the exile became alliance and victory. Hanuman tells the road behind them, turning a distant return into something real.",
         citation: duttYuddhaCitation(126, "CXXVIII", 128, 832093, 839471, 13300, 13413, "2db463f691012175d4ba4583da53837c3576158a88b2d78d4606e51117b37c31"),
         visual: { asset: "/journeys/ramayana-return-bharata-hears-v1.webp", location: "Nandigrama · narrative world", cast: ["Hanuman", "Bharata", "Shatrughna"], connections: [{ label: "Bharata", kind: "character", href: "/search?q=Bharata%20Ramayana" }, { label: "The forest exile", kind: "place", href: "/search?q=Ramayana%20forest%20exile" }, { label: "Hanuman in Lanka", kind: "source", href: "/search?q=Hanuman%20Lanka%20Sundara%20Kanda" }] },
       },
       {
-        id: "ayodhya-prepares", ordinal: 6, title: "Ayodhya prepares", eyebrow: "Yuddha Kāṇḍa · CXXIX", summary: "The city moves as one: roads, music, standards, families, and companions all turn toward the approaching reunion.",
+        id: "ayodhya-prepares", ordinal: 14, title: "Ayodhya prepares", eyebrow: "Yuddha Kāṇḍa · CXXIX", summary: "The city moves as one: roads, music, standards, families, and companions all turn toward the approaching reunion.",
         citation: duttYuddhaCitation(127, "CXXIX", 129, 839471, 847239, 13414, 13530, "097c1dc22e4d379c367cf61a656856ea2f26face1092709ada5a1d75345c1837"),
         visual: { asset: "/journeys/ramayana-return-ayodhya-v1.webp", location: "Ayodhya · narrative world", cast: ["Rama", "Sita", "Lakshmana", "Bharata", "Shatrughna", "Hanuman"], connections: [{ label: "Ayodhya", kind: "place", href: "/search?q=Ayodhya" }, { label: "Rama's homecoming and Diwali", kind: "festival", href: "/search?q=Ramayana%20Diwali%20homecoming" }, { label: "Ramlila performance worlds", kind: "performance", href: "/search?q=Ramlila" }] },
       },
       {
-        id: "kingdom-returned", ordinal: 7, title: "The kingdom is returned", eyebrow: "Yuddha Kāṇḍa · CXXX", summary: "Bharata returns the kingdom he held in trust. The road closes not at a palace gate, but in responsibility accepted again before the people.",
+        id: "kingdom-returned", ordinal: 15, title: "The kingdom is returned", eyebrow: "Yuddha Kāṇḍa · CXXX", summary: "Bharata returns the kingdom he held in trust. The road closes not at a palace gate, but in responsibility accepted again before the people.",
         citation: duttYuddhaCitation(128, "CXXX", 130, 847239, 863655, 13531, 13777, "0eab6905146d65e1f905b5e974d473712234c86fa12bf1902fcf9f1f435e9405"),
         visual: { asset: "/journeys/ramayana-return-coronation-v1.webp", location: "Ayodhya · coronation world", cast: ["Rama", "Sita", "Lakshmana", "Bharata", "Shatrughna", "Vasishta", "Hanuman", "Sugriva", "Vibhishana"], connections: [{ label: "North Indian Diwali homecoming tradition", kind: "festival", href: "/search?q=Diwali%20Rama%20Ayodhya" }, { label: "Ramlila", kind: "performance", href: "/search?q=Ramlila%20traditional%20performance" }, { label: "Continue through the Ramayana universe", kind: "source", href: "/search?q=Ramayana" }] },
       },

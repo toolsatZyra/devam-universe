@@ -6,11 +6,12 @@ import {
   getStoryCompassPath,
   getStoryCompassPathById,
 } from "@/lib/domain/story-compass-index";
-import type { StoryCompass, StoryCompassPathKind } from "@/lib/domain/story-world";
+import type { StoryCompass, StoryCompassPathKind, StoryDistrict } from "@/lib/domain/story-world";
 import styles from "./journey-compass.module.css";
 
 type Props = {
   compass: StoryCompass;
+  districts: StoryDistrict[];
   language: "en" | "hi";
   onEnterMoment: (momentId: string) => void;
   onSelectTurn: (turnId: string) => void;
@@ -24,7 +25,7 @@ function sourceRangeLabel(kandaSlug: string, start: number, end: number) {
   return `${name} · source units ${start}–${end}`;
 }
 
-export function JourneyCompass({ compass, language, onEnterMoment, onSelectTurn, selectedTurnId }: Props) {
+export function JourneyCompass({ compass, districts, language, onEnterMoment, onSelectTurn, selectedTurnId }: Props) {
   const [activePathId, setActivePathId] = useState<string>();
   const [trail, setTrail] = useState<TrailFrame[]>([]);
   const selectedNodeRef = useRef<HTMLButtonElement | null>(null);
@@ -32,9 +33,6 @@ export function JourneyCompass({ compass, language, onEnterMoment, onSelectTurn,
   const indexes = useMemo(() => buildStoryCompassIndexes(compass), [compass]);
   const allTurnIds = useMemo(() => compass.arcs.flatMap((arc) => arc.turnIds), [compass.arcs]);
   const selectedTurn = compass.turns[selectedTurnId] ?? compass.turns[allTurnIds[0]];
-  const playableTurn = allTurnIds
-    .map((turnId) => compass.turns[turnId])
-    .find((turn) => turn.coverage === "playable" && turn.playableMomentId);
   const selectedArc = compass.arcs.find((arc) => arc.id === selectedTurn.arcId) ?? compass.arcs[0];
   const candidatePath = useMemo(() => getStoryCompassPathById(indexes, activePathId), [activePathId, indexes]);
   const activePath = candidatePath?.turnIds.includes(selectedTurn.id) ? candidatePath : undefined;
@@ -200,15 +198,18 @@ export function JourneyCompass({ compass, language, onEnterMoment, onSelectTurn,
           <button type="button" disabled={navigationIndex === 0} onClick={() => step(-1)} aria-label={language === "hi" ? "पिछला कथा-मोड़" : "Previous story turn"}>←</button>
           <button type="button" disabled={navigationIndex === navigationTurnIds.length - 1} onClick={() => step(1)} aria-label={language === "hi" ? "अगला कथा-मोड़" : "Next story turn"}>→</button>
         </div>
-        {selectedTurn.coverage === "orientation" && playableTurn?.playableMomentId && <button
-          type="button"
-          className={styles.playableShortcut}
-          aria-label={language === "hi" ? `चित्रित संसार खोलें: ${playableTurn.title.hi}` : `Enter illustrated world: ${playableTurn.title.en}`}
-          onClick={() => onEnterMoment(playableTurn.playableMomentId!)}
-        >
-          <span><small>{language === "hi" ? "चित्रित संसार तैयार" : "ILLUSTRATED WORLD READY"}</small><strong>{playableTurn.title[language]}</strong></span>
-          <i>{language === "hi" ? "प्रवेश करें" : "Enter"} →</i>
-        </button>}
+        <div className={styles.districtShortcuts} aria-label={language === "hi" ? "तैयार चित्रित कथा-संसार" : "Illustrated story worlds ready to enter"}>
+          {districts.map((district) => <button
+            type="button"
+            className={styles.playableShortcut}
+            aria-label={language === "hi" ? `चित्रित संसार खोलें: ${district.title.hi}` : `Enter illustrated world: ${district.title.en}`}
+            onClick={() => onEnterMoment(district.entryMomentId)}
+            key={district.id}
+          >
+            <span><small>{language === "hi" ? "चित्रित संसार तैयार" : "ILLUSTRATED WORLD READY"}</small><strong>{district.title[language]}</strong><em>{district.invitation[language]}</em></span>
+            <i>{language === "hi" ? "प्रवेश करें" : "Enter"} →</i>
+          </button>)}
+        </div>
         {selectedTurn.coverage === "orientation" && <p className={styles.coverageNote}>{language === "hi" ? "यह कथा-मोड़ पूरी यात्रा में जुड़ा है; इसका विस्तृत दृश्य-अनुभव अभी निर्माण में है।" : "This story turn belongs to the complete journey; its detailed visual scene is still being built."}</p>}
         <details>
           <summary>{language === "hi" ? "कवरेज और स्रोत सीमा" : "Coverage and source boundary"}</summary>

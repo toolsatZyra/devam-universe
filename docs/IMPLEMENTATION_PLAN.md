@@ -1,5 +1,19 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (second Ramayana illustrated district): the Ramayana
+story world now exposes two explicit visual entrances instead of one hidden
+road-home shortcut. **The night the road changed** maps Ayodhyā Kāṇḍa source
+units I–XL exactly once into eight scene-specific tableaux and thirty-six
+bilingual beats, ending before section XLI. It preserves Kaikeyi's initial joy,
+Sita's active choice, Kausalya's grief, and Lakshmana's resistance. The existing
+road-home district remains seven scenes and twenty-nine beats. Each district
+has local sequence, progress, replay, and completion; completion returns to the
+two-district selector rather than jumping across the epic's unfinished middle.
+The eager preview/graph pack remains below 145 KB raw and 35 KB gzip; complete
+beats load only for the entered district and each district payload stays below
+75 KB raw and 18 KB gzip. This is fifteen playable selected-expression scenes,
+not complete Ramayana coverage or observed engagement.
+
 Checkpoint 2026-08-10 (Ramayana cinematic beat staging and reversible story
 paths): all twenty-nine road-home beats now change the visible world rather
 than only replacing copy. A small client composition table supplies bounded

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
-import { buildRamayanaStoryWorldPack } from "../../data/ramayana-story-world";
+import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import { getRamayanaBeatStage, RAMAYANA_BEAT_STAGE_COUNT } from "./ramayana-beat-stage";
 import {
   getJourneyEncounterNode,
@@ -11,9 +11,12 @@ import {
 
 describe("Ramayana return-world encounters", () => {
   const pack = buildRamayanaStoryWorldPack();
+  const moments = Object.fromEntries(pack.districts.flatMap((district) => Object.entries(getRamayanaDistrictMoments(district.id)!)));
 
-  it("turns all seven scenes into resolvable in-world constellations", () => {
-    expect(Object.keys(pack.sceneNodeIds)).toHaveLength(7);
+  it("turns all fifteen scenes in two districts into resolvable in-world constellations", () => {
+    expect(pack.districts.map((district) => district.momentIds.length)).toEqual([8, 7]);
+    expect(new Set(pack.districts.flatMap((district) => district.momentIds)).size).toBe(15);
+    expect(Object.keys(pack.sceneNodeIds)).toHaveLength(15);
     for (const [sceneId, nodeIds] of Object.entries(pack.sceneNodeIds)) {
       expect(getStorySceneEncounterNodes(pack, sceneId), sceneId).toHaveLength(nodeIds.length);
       expect(nodeIds.length, sceneId).toBeGreaterThanOrEqual(4);
@@ -29,8 +32,10 @@ describe("Ramayana return-world encounters", () => {
   });
 
   it("gives every playable scene a complete bilingual beat sequence", () => {
-    expect(Object.keys(pack.moments).sort()).toEqual(Object.keys(pack.sceneNodeIds).sort());
-    for (const moment of Object.values(pack.moments)) {
+    expect(Object.keys(moments).sort()).toEqual(Object.keys(pack.sceneNodeIds).sort());
+    expect(Object.keys(pack.momentPreviews).sort()).toEqual(Object.keys(pack.sceneNodeIds).sort());
+    expect(pack.moments).toEqual({});
+    for (const moment of Object.values(moments)) {
       expect(moment.beats.length, moment.id).toBeGreaterThanOrEqual(3);
       expect(moment.beats.length, moment.id).toBeLessThanOrEqual(7);
       expect(new Set(moment.beats.map((beat) => beat.id)).size, moment.id).toBe(moment.beats.length);
@@ -46,7 +51,7 @@ describe("Ramayana return-world encounters", () => {
   });
 
   it("gives every story beat a bounded cinematic camera and motion composition", () => {
-    const beats = Object.values(pack.moments).flatMap((moment) => moment.beats);
+    const beats = Object.values(moments).flatMap((moment) => moment.beats);
     expect(RAMAYANA_BEAT_STAGE_COUNT).toBe(beats.length);
     for (const beat of beats) {
       const stage = getRamayanaBeatStage(beat.id);
@@ -99,12 +104,12 @@ describe("Ramayana return-world encounters", () => {
   });
 
   it("indexes character and place encounters back into every playable story moment", () => {
-    expect(pack.nodeMomentIds.rama).toEqual(["leave-lanka", "sky-road", "bharadvaja-hermitage", "kingdom-returned"]);
+    expect(pack.nodeMomentIds.rama).toEqual(["coronation-dawn", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "leave-lanka", "sky-road", "bharadvaja-hermitage", "kingdom-returned"]);
     expect(pack.nodeMomentIds.bharata).toEqual(["hanuman-goes-ahead", "bharata-hears", "ayodhya-prepares", "kingdom-returned"]);
-    expect(pack.nodeMomentIds.ayodhya).toEqual(["bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
+    expect(pack.nodeMomentIds.ayodhya).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
     for (const [nodeId, momentIds] of Object.entries(pack.nodeMomentIds)) {
       expect(pack.nodes[nodeId], nodeId).toBeDefined();
-      expect(momentIds.every((momentId) => Boolean(pack.moments[momentId])), nodeId).toBe(true);
+      expect(momentIds.every((momentId) => Boolean(pack.momentPreviews[momentId] && moments[momentId])), nodeId).toBe(true);
     }
   });
 
@@ -112,6 +117,11 @@ describe("Ramayana return-world encounters", () => {
     const serialized = JSON.stringify(pack);
     expect(Buffer.byteLength(serialized)).toBeLessThan(145_000);
     expect(gzipSync(serialized).byteLength).toBeLessThan(35_000);
+    for (const district of pack.districts) {
+      const payload = JSON.stringify(getRamayanaDistrictMoments(district.id));
+      expect(Buffer.byteLength(payload), district.id).toBeLessThan(75_000);
+      expect(gzipSync(payload).byteLength, district.id).toBeLessThan(18_000);
+    }
     const helper = readFileSync(new URL("./ramayana-world-encounters.ts", import.meta.url), "utf8");
     const player = readFileSync(new URL("./journey-player.tsx", import.meta.url), "utf8");
     expect(helper).not.toContain("data/atlas");

@@ -75,7 +75,7 @@ function gatewayStory(id: Gateway["id"]) {
     ramayana: {
       eyebrow: "Epic world · seven realms",
       story: "Walk from Ayodhya into exile, across forests and oceans, and toward the battle for Lanka.",
-      action: "Begin the return journey",
+      action: "Choose an illustrated story world",
     },
     ganesha: {
       eyebrow: "World of beginnings",
