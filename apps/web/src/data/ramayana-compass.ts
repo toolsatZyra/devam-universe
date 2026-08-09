@@ -1,6 +1,6 @@
 import type { StoryCompass, StoryCompassArc, StoryCompassTurn } from "@/lib/domain/story-world";
 
-type TurnSeed = Omit<StoryCompassTurn, "arcId" | "ordinal" | "coverage" | "sourceRange"> & {
+type TurnSeed = Omit<StoryCompassTurn, "arcId" | "ordinal" | "places" | "coverage" | "sourceRange"> & {
   range: [number, number];
 };
 
@@ -80,6 +80,58 @@ const seeds: Record<string, TurnSeed[]> = {
   ],
 };
 
+const placesByTurn: Record<string, string[]> = {
+  "story-finds-a-voice": ["Valmiki's hermitage"],
+  "ayodhya-awaits-heirs": ["Ayodhya"],
+  "princes-enter-world": ["Ayodhya", "Siddhashrama"],
+  "road-to-mithila": ["Ganga", "Ahalya's hermitage", "Mithila"],
+  "sita-and-the-bow": ["Mithila"],
+  "weddings-and-challenge": ["Mithila", "Ayodhya"],
+  "coronation-dawn": ["Ayodhya"],
+  "two-boons": ["Ayodhya"],
+  "exile-accepted": ["Ayodhya"],
+  "road-out-of-ayodhya": ["Ayodhya", "Ganga", "Shringaverapura", "Chitrakuta"],
+  "king-dies-bharata-returns": ["Ayodhya"],
+  "bharata-follows": ["Ayodhya", "Shringaverapura", "Chitrakuta"],
+  "sandals-and-promise": ["Chitrakuta"],
+  "deeper-into-forest": ["Chitrakuta", "Dandaka"],
+  "dandaka-vows": ["Dandaka"],
+  "panchavati-surpanakha": ["Panchavati"],
+  "war-at-janasthana": ["Janasthana"],
+  "golden-deer-plot": ["Lanka", "Panchavati"],
+  "sita-is-taken": ["Panchavati"],
+  "broken-trail": ["Panchavati"],
+  "toward-pampa": ["Dandaka", "Savari's hermitage", "Pampa"],
+  "hanuman-meets-rama": ["Pampa", "Rishyamuka"],
+  "two-losses-one-alliance": ["Rishyamuka"],
+  "vali-falls": ["Kishkindha"],
+  "rains-and-delay": ["Prasravana", "Kishkindha"],
+  "search-every-horizon": ["Kishkindha"],
+  "sampati-reveals-lanka": ["Vindhya cave", "Southern ocean"],
+  "hanuman-remembers": ["Southern ocean"],
+  "leap-across-ocean": ["Southern ocean", "Lanka"],
+  "searching-lanka": ["Lanka"],
+  "sita-in-ashoka-grove": ["Lanka", "Ashoka grove"],
+  "messenger-and-token": ["Ashoka grove"],
+  "lanka-burns": ["Lanka"],
+  "return-over-ocean": ["Lanka", "Southern ocean", "Mahendra"],
+  "news-reaches-rama": ["Madhuvana", "Prasravana"],
+  "ocean-and-bridge": ["Southern ocean", "Lanka"],
+  "lanka-surrounded": ["Suvela", "Lanka"],
+  "kumbhakarna-rises": ["Lanka battlefield"],
+  "indrajits-last-war": ["Lanka", "Nikumbhila"],
+  "ravanas-final-battle": ["Lanka battlefield"],
+  "sita-and-aftermath": ["Lanka"],
+  "road-home": ["Lanka", "Kishkindha", "Pampa", "Chitrakuta", "Bharadvaja's hermitage", "Nandigrama", "Ayodhya"],
+  "origins-behind-war": ["Ayodhya", "Lanka"],
+  "companions-depart": ["Ayodhya"],
+  "sita-sent-away": ["Ayodhya", "Valmiki's hermitage"],
+  "kingdom-tales-and-twins": ["Ayodhya", "Madhura", "Valmiki's hermitage"],
+  "later-reign": ["Ayodhya", "Kosala"],
+  "twins-sing-sita-returns": ["Horse-sacrifice ground"],
+  "last-departures": ["Ayodhya", "Sarayu"],
+};
+
 const arcCopy: Array<Omit<StoryCompassArc, "turnIds">> = [
   { id: "beginnings", ordinal: 1, title: { en: "Beginnings", hi: "आरंभ" }, invitation: { en: "From the first question to Sita's wedding", hi: "पहले प्रश्न से सीता-विवाह तक" } },
   { id: "exile", ordinal: 2, title: { en: "The exile", hi: "वनवास" }, invitation: { en: "A crown lost and a promise carried", hi: "छूटा राज्य और निभाया वचन" } },
@@ -97,8 +149,11 @@ export function buildRamayanaCompass(): StoryCompass {
     const source = sourceByArc[arc.id];
     const turnIds = arcSeeds.map((seed, index) => {
       const { range, playableMomentId, ...copy } = seed;
+      const places = placesByTurn[seed.id];
+      if (!places?.length) throw new Error(`Ramayana compass turn has no canonical place: ${seed.id}`);
       turns[seed.id] = {
         ...copy,
+        places,
         arcId: arc.id,
         ordinal: index + 1,
         coverage: playableMomentId ? "playable" : "orientation",

@@ -305,6 +305,17 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await expect(page.getByRole("heading", { name: "Enter the story from anywhere" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Seven Ramayana story worlds" }).getByRole("button")).toHaveCount(7);
   await expect(page.getByRole("button", { name: /A story finds its voice/ })).toBeVisible();
+  await page.getByRole("button", { name: /The princes enter the wider world/ }).click();
+  await page.getByRole("button", { name: "Follow Rama's character path" }).click();
+  await expect(page.getByText("FOLLOWING A CHARACTER", { exact: true })).toBeVisible();
+  await expect(page.getByText(/moments across .* worlds/)).toBeVisible();
+  await page.getByRole("button", { name: "Next story turn" }).click();
+  await expect(page.getByRole("heading", { name: "The road to Mithila" })).toBeVisible();
+  await page.getByRole("button", { name: "Back to The princes enter the wider world" }).click();
+  await expect(page.getByRole("heading", { name: "The princes enter the wider world" })).toBeVisible();
+  await page.getByRole("button", { name: "Follow Ayodhya's place path" }).click();
+  await expect(page.getByText("FOLLOWING A PLACE", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Back to The princes enter the wider world" }).click();
   await page.getByRole("button", { name: /War and return/ }).click();
   await expect(page.getByRole("button", { name: /The road home/ })).toBeVisible();
   await page.getByRole("button", { name: /The road home/ }).click();

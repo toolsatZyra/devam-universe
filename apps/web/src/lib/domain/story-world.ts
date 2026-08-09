@@ -47,12 +47,24 @@ export type StoryCompassTurn = {
   title: { en: string; hi: string };
   hook: { en: string; hi: string };
   place: string;
+  places: string[];
   characters: string[];
   threads: string[];
   coverage: "orientation" | "playable";
   playableMomentId?: string;
   sourceRange: StoryCompassRange;
 };
+
+export type StoryCompassPathKind = "place" | "character" | "thread";
+
+export type StoryCompassPath = {
+  id: string;
+  kind: StoryCompassPathKind;
+  label: string;
+  turnIds: string[];
+};
+
+export type StoryCompassIndexes = Record<StoryCompassPathKind, Record<string, StoryCompassPath>>;
 
 export type StoryCompassArc = {
   id: string;
