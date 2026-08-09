@@ -7,7 +7,7 @@ export const gateways: Gateway[] = [
     id: "ramayana",
     title: "Ramayana",
     devanagari: "रामायण",
-    invitation: "Begin the return journey",
+    invitation: "Choose an illustrated story world",
     tone: "saffron",
     position: { x: 27, y: 34 },
     threads: ["Ayodhya", "Chitrakoot", "Dharma in action"],

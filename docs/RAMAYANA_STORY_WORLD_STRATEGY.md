@@ -2,6 +2,23 @@
 
 Status: **revised product and game-direction contract — 2026-08-10**
 
+Current implementation checkpoint: the story world now has two explicit
+illustrated districts rather than one hidden late-epic doorway. **The night the
+road changed** covers Ayodhyā Kāṇḍa source units I–XL exactly once across eight
+scene-specific tableaux and thirty-six bilingual beats. **The road home**
+retains seven tableaux and twenty-nine bilingual beats across Yuddha Kāṇḍa
+CXXIV–CXXX. Each district has its own sequence, progress, completion, replay,
+and return to the common compass; the player never auto-jumps across the
+unfinished middle of the epic.
+
+The initial world pack carries only bilingual previews, nodes, routes, and the
+district index and remains below 145 KB raw / 35 KB gzip. Complete beat scripts
+load only for the district entered, each below 75 KB raw / 18 KB gzip, while
+media preloads only immediate neighbours. Four compass turns are now playable
+entrances and forty-five remain honestly labelled orientation. Any older
+checkpoint language below that calls the road home the only playable district
+or describes forty-eight orientation turns is superseded by this checkpoint.
+
 ## North star
 
 The Ramayana world is not a graph viewer, a chapter browser, or a short summary

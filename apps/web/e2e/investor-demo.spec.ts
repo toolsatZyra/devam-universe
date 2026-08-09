@@ -298,8 +298,8 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
 
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
-  await expect(page.getByRole("link", { name: "Begin the return journey" })).toBeVisible();
-  await page.getByRole("link", { name: "Begin the return journey" }).click();
+  await expect(page.getByRole("link", { name: "Choose an illustrated story world" })).toBeVisible();
+  await page.getByRole("link", { name: "Choose an illustrated story world" }).click();
   const ramayanaWorld = page.getByRole("region", { name: "Ramayana story world" });
   await expect(ramayanaWorld).toBeVisible();
   await expect(page.getByRole("heading", { name: "Enter the story from anywhere" })).toBeVisible();
@@ -406,7 +406,7 @@ test("the Ramayana narrative map pans, zooms, and returns to exact story context
   await page.evaluate(() => window.localStorage.setItem("devam-guest-gateways", JSON.stringify(["ramayana"])));
   await page.goto("/");
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
-  await page.getByRole("link", { name: "Begin the return journey" }).click();
+  await page.getByRole("link", { name: "Choose an illustrated story world" }).click();
   await page.getByRole("button", { name: "Map", exact: true }).click();
 
   const narrativeMap = page.getByLabel("Pannable Ramayana story map");
@@ -457,7 +457,7 @@ test("the Ramayana narrative map pans, zooms, and returns to exact story context
 
   await page.getByRole("button", { name: /Ayodhya, \d+ story moments/ }).click();
   const ayodhyaScenes = page.getByLabel("Ayodhya playable story connections");
-  await expect(ayodhyaScenes.getByRole("button")).toHaveCount(3);
+  await expect(ayodhyaScenes.getByRole("button")).toHaveCount(11);
   await expect(ayodhyaScenes.getByText("asks for news of", { exact: false })).toBeVisible();
   await ayodhyaScenes.getByRole("button", { name: /The kingdom is returned.*Enter playable scene/ }).click();
   await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
@@ -476,16 +476,23 @@ test("a Ramayana character path opens illustrated scenes and returns without los
   await page.getByRole("button", { name: "Rama", exact: true }).click();
   const ramaPath = page.getByRole("complementary", { name: "Rama encounter" });
   const moments = ramaPath.getByLabel("Story moments involving Rama").getByRole("button");
-  await expect(moments).toHaveCount(4);
-  await expect.poll(() => moments.locator("img").evaluateAll((images) => images.every((image) => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
-  await ramaPath.getByRole("button", { name: /Scene 07.*The kingdom is returned.*Enter this scene/ }).click();
+  await expect(moments).toHaveCount(9);
+  for (let index = 0; index < 9; index += 1) {
+    const moment = moments.nth(index);
+    await moment.scrollIntoViewIfNeeded();
+    await expect.poll(() => moment.locator("img").evaluate((element) => {
+      const image = element as HTMLImageElement;
+      return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+    })).toBe(true);
+  }
+  await ramaPath.getByRole("button", { name: /Scene 15.*The kingdom is returned.*Enter this scene/ }).click();
 
   await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
   const returnPortal = page.getByRole("button", { name: "Back to Rama's story path" });
   await expect(returnPortal).toBeVisible();
   await returnPortal.click();
   await expect(page.getByRole("complementary", { name: "Rama encounter" })).toBeVisible();
-  await expect(page.getByLabel("Story moments involving Rama").getByRole("button", { name: /Scene 07.*You are here/ })).toHaveAttribute("aria-current", "step");
+  await expect(page.getByLabel("Story moments involving Rama").getByRole("button", { name: /Scene 15.*You are here/ })).toHaveAttribute("aria-current", "step");
   await page.getByRole("button", { name: /Back to the scene/ }).click();
   await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
   await expectNoHorizontalOverflow(page);
@@ -555,11 +562,51 @@ test("the Ramayana road home loads a distinct tableau for every scene", async ({
   await expectNoHorizontalOverflow(page);
 });
 
+test("the Ayodhya exile district unfolds across eight illustrated scenes and returns to the district selector", async ({ page }) => {
+  await page.goto("/journeys/ramayana");
+  const illustratedWorlds = page.getByLabel("Illustrated story worlds ready to enter").getByRole("button");
+  await expect(illustratedWorlds).toHaveCount(2);
+  await page.getByRole("button", { name: "Enter illustrated world: The night the road changed" }).click();
+  await expect(page.getByRole("heading", { name: "A coronation dawns" })).toBeVisible();
+  await expect(page.getByText("Dasharatha names the future", { exact: true })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Story scenes" }).getByRole("listitem")).toHaveCount(8);
+
+  const sceneAssets = [
+    "/journeys/ramayana-exile-coronation-dawn-v1.webp",
+    "/journeys/ramayana-exile-manthara-v1.webp",
+    "/journeys/ramayana-exile-two-demands-v1.webp",
+    "/journeys/ramayana-exile-dasharatha-v1.webp",
+    "/journeys/ramayana-exile-summons-v1.webp",
+    "/journeys/ramayana-exile-accepted-v1.webp",
+    "/journeys/ramayana-exile-sita-chooses-v1.webp",
+    "/journeys/ramayana-exile-three-depart-v1.webp",
+  ];
+  for (const [index, asset] of sceneAssets.entries()) {
+    await page.getByRole("button", { name: `Go to scene ${index + 1}` }).click();
+    const backdrop = page.locator(`[data-scene-asset="${asset}"]`);
+    await expect(backdrop).toBeVisible();
+    await expect.poll(() => backdrop.locator("img").evaluate((element) => {
+      const image = element as HTMLImageElement;
+      return image.complete && image.naturalWidth > 0 && image.naturalHeight > 0;
+    })).toBe(true);
+  }
+
+  await expect(page.getByRole("heading", { name: "Three turn toward the gate" })).toBeVisible();
+  await expect(page.getByText("Lakshmana asks for the road", { exact: true })).toBeVisible();
+  for (let beat = 0; beat < 4; beat += 1) await page.getByRole("button", { name: "Next story beat" }).click();
+  await page.getByRole("button", { name: "Complete this path" }).click();
+  await expect(page.getByText("Illustrated district discovered", { exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Explore another visual district" }).click();
+  await expect(page.getByRole("heading", { name: "Enter the story from anywhere" })).toBeVisible();
+  await expect(page.getByLabel("Illustrated story worlds ready to enter").getByRole("button")).toHaveCount(2);
+  await expectNoHorizontalOverflow(page);
+});
+
 test("the four curated journeys and mission board are reachable", async ({ page }) => {
   await page.goto("/journeys");
   await expect(page.getByRole("heading", { name: /Choose a thread/ })).toBeVisible();
   for (const title of [
-    "The road home to Ayodhya",
+    "The promise and the return",
     "Inside one hymn to Gaṇapati",
     "The Devīmāhātmya boundary",
     "Six lights, many traditions",

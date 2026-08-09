@@ -14,7 +14,7 @@ import {
   type WheelEvent as ReactWheelEvent,
 } from "react";
 import type { HeroJourney, JourneyStop } from "@/lib/domain/experience";
-import type { StoryWorldPack } from "@/lib/domain/story-world";
+import type { StoryMoment, StoryWorldPack } from "@/lib/domain/story-world";
 import { canGuestAskSarthi } from "@/lib/account/guest-preview";
 import {
   JOURNEY_CAMERA_DEFAULT,
@@ -96,6 +96,14 @@ function isInteractiveTarget(target: EventTarget | null) {
 }
 
 const storyCopy: Record<string, SceneCopy> = {
+  "coronation-dawn": { kicker: "A future gathers before dawn", story: "Ayodhya prepares to install Rama while he and Sita keep a quiet vigil inside the celebration.", invitation: "See what reaches Kaikeyi's chamber" },
+  "manthara-sees-city": { kicker: "Celebration becomes a warning", story: "Manthara sees the decorated city; Kaikeyi first rejoices before the news is reframed as danger.", invitation: "Follow the argument" },
+  "fear-becomes-demands": { kicker: "Fear acquires a plan", story: "An old promise becomes two demands: Bharata's installation and Rama's fourteen-year exile.", invitation: "Stay through the long night" },
+  "king-trapped-by-word": { kicker: "The promise closes around the king", story: "Dasharatha pleads while the coronation morning gathers outside a chamber that cannot resolve its future.", invitation: "Follow the summons" },
+  "rama-crosses-celebration": { kicker: "A city celebrates what has already vanished", story: "Rama crosses streets prepared for his coronation and reaches a father unable to speak.", invitation: "Hear Rama's answer" },
+  "rama-accepts-exile": { kicker: "Departure replaces resistance", story: "Rama accepts the road, carries the news to Kausalya, and redirects Lakshmana's anger into preparation.", invitation: "Enter Sita's decision" },
+  "sita-chooses-road": { kicker: "Sita chooses rather than follows", story: "She hears every warning about the forest and insists that sharing the road is her own decision.", invitation: "Gather the travelling family" },
+  "lakshmana-joins": { kicker: "Three travellers face the gate", story: "Lakshmana joins; gifts, travel gear, forest clothing, blessings, and farewell replace coronation.", invitation: "Complete the departure district" },
   "leave-lanka": { kicker: "The direction changes", story: "The war is behind them. Rama asks that every ally who carried the struggle be honoured, and the returning company rises from Lanka toward home.", invitation: "Rise into the homeward sky" },
   "sky-road": { kicker: "The world below becomes memory", story: "Rama points out the places that shaped the journey. Sita does not receive a list of names, but a moving map of loss, friendship, courage, and return.", invitation: "Follow the remembered road" },
   "bharadvaja-hermitage": { kicker: "Fourteen years narrow to one question", story: "At Bharadvaja's hermitage, Rama asks first about Ayodhya, Bharata, and his mothers. The city is still distant, but home is suddenly close enough to fear and hope for.", invitation: "Send word ahead" },
@@ -127,6 +135,14 @@ const storyCopy: Record<string, SceneCopy> = {
 };
 
 const hindiStoryCopy: Record<string, SceneCopy> = {
+  "coronation-dawn": { title: "राज्याभिषेक की भोर", kicker: "भोर से पहले भविष्य आकार लेता है", story: "अयोध्या राम के राज्याभिषेक की तैयारी करती है, जबकि राम और सीता उत्सव के बीच शांत रात्रि-व्रत रखते हैं।", invitation: "देखें समाचार कैकेयी तक कैसे पहुँचता है" },
+  "manthara-sees-city": { title: "मंथरा नगर देखती है", kicker: "उत्सव चेतावनी बनता है", story: "मंथरा सजा हुआ नगर देखती है; कैकेयी पहले प्रसन्न होती हैं, फिर समाचार को संकट की तरह समझाया जाता है।", invitation: "तर्क के साथ आगे बढ़ें" },
+  "fear-becomes-demands": { title: "भय दो माँगें बनता है", kicker: "भय को योजना मिलती है", story: "पुराना वचन दो माँगों में बदलता है—भरत का राज्याभिषेक और राम का चौदह वर्ष का वनवास।", invitation: "लंबी रात में ठहरें" },
+  "king-trapped-by-word": { title: "राजा अपने वचन में बँधते हैं", kicker: "वचन राजा को घेर लेता है", story: "दशरथ विनती करते हैं, जबकि बाहर राज्याभिषेक की सुबह उस कक्ष की प्रतीक्षा करती है जहाँ भविष्य टूट चुका है।", invitation: "बुलावे के साथ चलें" },
+  "rama-crosses-celebration": { title: "राम उत्सव के बीच से गुजरते हैं", kicker: "नगर उस भविष्य का उत्सव मना रहा है जो मिट चुका है", story: "राम अपने राज्याभिषेक के लिए सजी गलियों से चलकर ऐसे पिता तक पहुँचते हैं जो बोल नहीं पा रहे।", invitation: "राम का उत्तर सुनें" },
+  "rama-accepts-exile": { title: "राम वनवास स्वीकार करते हैं", kicker: "प्रतिरोध की जगह प्रस्थान", story: "राम वन की राह स्वीकार करते हैं, कौसल्या को समाचार देते हैं और लक्ष्मण के क्रोध को यात्रा-तैयारी में बदलते हैं।", invitation: "सीता के निर्णय में प्रवेश करें" },
+  "sita-chooses-road": { title: "सीता राह चुनती हैं", kicker: "सीता केवल साथ नहीं चलतीं, स्वयं चुनती हैं", story: "वे वन के हर संकट को सुनती हैं और स्पष्ट करती हैं कि साझा राह उनका अपना निर्णय है।", invitation: "यात्रा करने वाले परिवार को जुटते देखें" },
+  "lakshmana-joins": { title: "तीनों द्वार की ओर मुड़ते हैं", kicker: "तीन यात्री द्वार के सामने", story: "लक्ष्मण साथ आते हैं; राज्याभिषेक की जगह दान, यात्रा-सामग्री, वन-वस्त्र, आशीर्वाद और विदाई लेते हैं।", invitation: "प्रस्थान-संसार पूरा करें" },
   "leave-lanka": { title: "लंका से प्रस्थान", kicker: "दिशा बदलती है", story: "युद्ध पीछे छूट चुका है। राम कहते हैं कि संघर्ष में साथ देने वाले हर सहयोगी का सम्मान हो, और सब लंका से घर की ओर उठते हैं।", invitation: "घर लौटते आकाश में बढ़ें" },
   "sky-road": { title: "आकाश की स्मृति-राह", kicker: "नीचे का संसार स्मृति बनता है", story: "राम यात्रा को बदलने वाले स्थान दिखाते हैं। सीता के सामने नामों की सूची नहीं, बल्कि वियोग, मित्रता, साहस और वापसी का चलता हुआ मानचित्र खुलता है।", invitation: "स्मृति की राह पर चलें" },
   "bharadvaja-hermitage": { title: "घर अब निकट है", kicker: "चौदह वर्ष एक प्रश्न में सिमटते हैं", story: "भरद्वाज के आश्रम में राम सबसे पहले अयोध्या, भरत और अपनी माताओं का समाचार पूछते हैं। नगर अभी दूर है, पर घर अब आशा और भय दोनों जितना निकट है।", invitation: "आगे समाचार भेजें" },
@@ -165,6 +181,7 @@ function sceneCopy(stop: JourneyStop, language: "en" | "hi") {
 function locatorLabel(locator: Record<string, unknown>) {
   if (typeof locator.book === "number" && typeof locator.sarga === "number") return `Book ${locator.book} · Sarga ${locator.sarga}`;
   if (typeof locator.source_chapter === "number") return `Chapter ${locator.source_chapter}`;
+  if (typeof locator.literal_marker_start === "string" && typeof locator.literal_marker_end === "string") return `Source units ${locator.literal_marker_start}–${locator.literal_marker_end}`;
   if (typeof locator.literal_marker === "string") return `Source unit ${locator.literal_marker}`;
   return "Exact source span";
 }
@@ -188,6 +205,8 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [showCompletion, setShowCompletion] = useState(false);
   const [encounterTrail, setEncounterTrail] = useState<string[]>([]);
   const [encounterReturnTrail, setEncounterReturnTrail] = useState<string[] | null>(null);
+  const [loadedMoments, setLoadedMoments] = useState<Record<string, StoryMoment>>(() => storyWorld?.moments ?? {});
+  const [districtLoadErrorId, setDistrictLoadErrorId] = useState<string>();
   const guestExchanges = useRef(0);
   const viewportRef = useRef<HTMLElement | null>(null);
   const cameraRef = useRef<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
@@ -225,12 +244,23 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const active = journey.stops[activeIndex];
   const copy = sceneCopy(active, language);
   const activeTitle = copy.title ?? active.title;
-  const activeMoment = storyWorld?.moments[active.id];
+  const activeMoment = loadedMoments[active.id];
   const activeBeat = activeMoment?.beats[activeBeatIndex];
   const activeBeatStage = getRamayanaBeatStage(activeBeat?.id);
   const sceneBeatStage = worldLens === "story" ? activeBeatStage : undefined;
   const exploredSet = useMemo(() => new Set(explored), [explored]);
-  const isRamayanaWorld = storyWorld?.id === "ramayana-road-home-v1";
+  const isRamayanaWorld = Boolean(storyWorld?.districts.length);
+  const activeDistrict = storyWorld?.districts.find((district) => district.momentIds.includes(active.id));
+  const activeDistrictStops = useMemo(
+    () => (activeDistrict?.momentIds ?? journey.stops.map((stop) => stop.id)).flatMap((momentId) => {
+      const stop = journey.stops.find((candidate) => candidate.id === momentId);
+      return stop ? [stop] : [];
+    }),
+    [activeDistrict, journey.stops],
+  );
+  const activeDistrictPosition = Math.max(0, activeDistrictStops.findIndex((stop) => stop.id === active.id));
+  const activeDistrictExploredCount = activeDistrictStops.filter((stop) => exploredSet.has(stop.id)).length;
+  const activeDistrictLoading = worldLens === "story" && Boolean(activeDistrict) && !activeMoment && districtLoadErrorId !== activeDistrict?.id;
   const cameraEnabled = isRamayanaWorld && worldLens === "story";
   const sceneEncounterNodes = useMemo(
     () => storyWorld ? getStorySceneEncounterNodes(storyWorld, active.id) : [],
@@ -242,12 +272,12 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     ? (storyWorld.nodeMomentIds[focusedEncounter.id] ?? []).flatMap((momentId) => {
       const moment = journey.stops.find((stop) => stop.id === momentId);
       if (!moment) return [];
-      const detailedMoment = storyWorld.moments[moment.id];
+      const detailedMoment = loadedMoments[moment.id];
       return [{
         id: moment.id,
         ordinal: moment.ordinal,
         title: sceneCopy(moment, language).title ?? moment.title,
-        decisiveChange: detailedMoment?.decisiveChange[language] ?? moment.summary,
+        decisiveChange: detailedMoment?.decisiveChange[language] ?? storyWorld.momentPreviews[moment.id]?.[language] ?? moment.summary,
         asset: moment.visual?.asset,
         active: moment.id === active.id,
       }];
@@ -261,15 +291,32 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     : active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`;
 
   useEffect(() => {
+    if (!isRamayanaWorld || worldLens !== "story" || !activeDistrict) return;
+    if (activeDistrict.momentIds.every((momentId) => loadedMoments[momentId])) return;
+    const controller = new AbortController();
+    void fetch(`/api/journeys/ramayana/district?district=${encodeURIComponent(activeDistrict.id)}`, { signal: controller.signal })
+      .then(async (response) => {
+        const payload = await response.json() as { ok: boolean; moments?: Record<string, StoryMoment> };
+        if (!response.ok || !payload.ok || !payload.moments) throw new Error("Ramayana district payload unavailable");
+        setLoadedMoments((current) => ({ ...current, ...payload.moments }));
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+        setDistrictLoadErrorId(activeDistrict.id);
+      });
+    return () => controller.abort();
+  }, [activeDistrict, isRamayanaWorld, loadedMoments, worldLens]);
+
+  useEffect(() => {
     if (!isRamayanaWorld) return;
-    for (const index of [activeIndex - 1, activeIndex + 1]) {
-      const asset = journey.stops[index]?.visual?.asset;
+    for (const districtPosition of [activeDistrictPosition - 1, activeDistrictPosition + 1]) {
+      const asset = activeDistrictStops[districtPosition]?.visual?.asset;
       if (!asset) continue;
       const preload = new window.Image();
       preload.decoding = "async";
       preload.src = asset;
     }
-  }, [activeIndex, isRamayanaWorld, journey.stops]);
+  }, [activeDistrictPosition, activeDistrictStops, isRamayanaWorld]);
 
   function cameraViewport() {
     const viewport = viewportRef.current;
@@ -349,6 +396,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   function selectWorldLens(lens: "compass" | "story" | "route" | "connections") {
     setEncounterTrail([]);
     setEncounterReturnTrail(null);
+    setShowCompletion(false);
     setWorldLens(lens);
   }
 
@@ -356,7 +404,8 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     const nextExplored = exploredSet.has(active.id) ? explored : [...explored, active.id];
     setExplored(nextExplored);
     window.localStorage.setItem(journeyProgressKey(journey.slug), JSON.stringify(nextExplored));
-    if (activeIndex < journey.stops.length - 1) travelTo(activeIndex + 1);
+    const nextStop = activeDistrictStops[activeDistrictPosition + 1];
+    if (nextStop) travelTo(journey.stops.findIndex((stop) => stop.id === nextStop.id));
     else setShowCompletion(true);
   }
 
@@ -375,7 +424,8 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       setShowGuide(false);
       return;
     }
-    if (activeIndex > 0) travelTo(activeIndex - 1);
+    const previousStop = activeDistrictStops[activeDistrictPosition - 1];
+    if (previousStop) travelTo(journey.stops.findIndex((stop) => stop.id === previousStop.id));
   }
 
   function handleCameraPointerDown(event: ReactPointerEvent<HTMLElement>) {
@@ -454,7 +504,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       commitCamera(panJourneyCamera(cameraRef.current, delta, cameraViewport()));
       return;
     }
-    if (event.key === "ArrowLeft" && (activeIndex > 0 || activeBeatIndex > 0)) {
+    if (event.key === "ArrowLeft" && (activeDistrictPosition > 0 || activeBeatIndex > 0)) {
       event.preventDefault();
       rewindStory();
     } else if (event.key === "ArrowRight") {
@@ -504,9 +554,9 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   }
 
   const sceneStyle = {
-    "--path-offset": `${activeIndex * -230 - 115}px`,
-    "--path-width": `${journey.stops.length * 230}px`,
-    "--backdrop-shift": `${journey.stops.length > 1 ? 4 - (activeIndex / (journey.stops.length - 1)) * 8 : 0}%`,
+    "--path-offset": `${activeDistrictPosition * -230 - 115}px`,
+    "--path-width": `${activeDistrictStops.length * 230}px`,
+    "--backdrop-shift": `${activeDistrictStops.length > 1 ? 4 - (activeDistrictPosition / (activeDistrictStops.length - 1)) * 8 : 0}%`,
     "--camera-x": `${camera.x}px`,
     "--camera-y": `${camera.y}px`,
     "--camera-scale": camera.scale,
@@ -526,7 +576,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
           <Image src="/brand/devam-mark.png" alt="" width={38} height={38} priority />
           <span><strong>Devam</strong><small>Return to the universe</small></span>
         </Link>
-        <div className={styles.worldName}><small>{journey.hero} world</small><strong>{isRamayanaWorld && (worldLens === "compass" || worldLens === "route") ? "The Ramayana story universe" : journey.title}</strong></div>
+        <div className={styles.worldName}><small>{journey.hero} world</small><strong>{isRamayanaWorld && (worldLens === "compass" || worldLens === "route") ? "The Ramayana story universe" : activeDistrict?.title[language] ?? journey.title}</strong></div>
         <div className={styles.hudActions}>
           <div className={styles.language} role="group" aria-label="Story language">
             <button type="button" aria-pressed={language === "en"} onClick={() => setLanguage("en")}>EN</button>
@@ -565,11 +615,12 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       >
         <div className={styles.horizon} aria-hidden="true" />
         <JourneyBeatStage stage={sceneBeatStage} />
-        {isRamayanaWorld && <div hidden={worldLens !== "compass"}><JourneyCompass compass={storyWorld.compass} language={language} onEnterMoment={openStoryMoment} onSelectTurn={setStoryFocusTurnId} selectedTurnId={storyFocusTurnId} /></div>}
-        {isRamayanaWorld && <div hidden={worldLens !== "route"}><RamayanaNarrativeMap active={worldLens === "route"} focusTurnId={storyFocusTurnId} language={language} onEnterMoment={openStoryMoment} onOpenWholeStory={openWholeStoryTurn} stops={journey.stops} storyWorld={storyWorld} /></div>}
+        {isRamayanaWorld && storyWorld && <div hidden={worldLens !== "compass"}><JourneyCompass compass={storyWorld.compass} districts={storyWorld.districts} language={language} onEnterMoment={openStoryMoment} onSelectTurn={setStoryFocusTurnId} selectedTurnId={storyFocusTurnId} /></div>}
+        {isRamayanaWorld && storyWorld && <div hidden={worldLens !== "route"}><RamayanaNarrativeMap active={worldLens === "route"} focusTurnId={storyFocusTurnId} language={language} onEnterMoment={openStoryMoment} onOpenWholeStory={openWholeStoryTurn} stops={journey.stops} storyWorld={storyWorld} /></div>}
         {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
-          {journey.stops.map((stop, index) => {
-            const selected = index === activeIndex;
+          {activeDistrictStops.map((stop, districtIndex) => {
+            const journeyIndex = journey.stops.findIndex((candidate) => candidate.id === stop.id);
+            const selected = journeyIndex === activeIndex;
             const visited = exploredSet.has(stop.id);
             const localizedStop = sceneCopy(stop, language);
             const stopTitle = localizedStop.title ?? stop.title;
@@ -578,14 +629,14 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
                 type="button"
                 role="listitem"
                 className={`${styles.storyNode} ${selected ? styles.storyNodeActive : ""} ${visited ? styles.storyNodeVisited : ""}`}
-                style={{ "--node-x": `${index * 230}px`, "--node-y": `${95 + (index % 2) * 62}px`, "--z": `${(index % 3) * 34}px` } as CSSProperties}
-                onClick={() => travelTo(index)}
+                style={{ "--node-x": `${districtIndex * 230}px`, "--node-y": `${95 + (districtIndex % 2) * 62}px`, "--z": `${(districtIndex % 3) * 34}px` } as CSSProperties}
+                onClick={() => travelTo(journeyIndex)}
                 aria-current={selected ? "step" : undefined}
-                aria-label={`${stop.ordinal}. ${stopTitle}`}
+                aria-label={`${districtIndex + 1}. ${stopTitle}`}
                 key={stop.id}
               >
                 <span className={styles.nodeOrbit}/><span className={styles.nodeGlow}/><span className={styles.nodeCore}/>
-                <span className={styles.nodeCopy}><small>{String(stop.ordinal).padStart(2, "0")}</small><strong>{stopTitle}</strong></span>
+                <span className={styles.nodeCopy}><small>{String(districtIndex + 1).padStart(2, "0")}</small><strong>{stopTitle}</strong></span>
               </button>
             );
           })}
@@ -643,7 +694,9 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         {active.visual && <div className={styles.sceneContext}><span>{active.visual.location}</span><small>Artistic visualization</small></div>}
         <p>{activeMoment ? activeMoment.decisiveChange[language] : copy.kicker}</p>
         <h1>{activeTitle}</h1>
-        {activeBeat
+         {activeDistrictLoading && <small className={styles.retellingLabel}>{language === "hi" ? "पूरा चित्रित दृश्य खुल रहा है…" : "Opening the complete illustrated scene…"}</small>}
+         {districtLoadErrorId === activeDistrict?.id && !activeMoment && <small className={styles.retellingLabel}>{language === "hi" ? "विस्तृत कथा अभी नहीं खुल सकी; दृश्य-सार उपलब्ध है।" : "The detailed script could not open; the scene summary remains available."}</small>}
+         {activeBeat
           ? <div className={styles.beatNarrative}>
             <small>{language === "hi" ? `दृश्य ${activeBeatIndex + 1} / ${activeMoment.beats.length}` : `Beat ${activeBeatIndex + 1} of ${activeMoment.beats.length}`}</small>
             <strong>{activeBeat.title[language]}</strong>
@@ -669,8 +722,8 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         <div className={styles.actions}>
           <button type="button" onClick={advanceStory}>{activeMoment && activeBeatIndex < activeMoment.beats.length - 1
             ? (language === "hi" ? "अगला कथा-बिंदु" : "Next story beat")
-            : activeIndex === journey.stops.length - 1 ? (language === "hi" ? "यह यात्रा पूरी करें" : "Complete this path") : copy.invitation}<span>→</span></button>
-          {(activeIndex > 0 || activeBeatIndex > 0) && <button type="button" onClick={rewindStory}>{language === "hi" ? "पीछे" : "Back"}</button>}
+            : activeDistrictPosition === activeDistrictStops.length - 1 ? (language === "hi" ? "यह यात्रा पूरी करें" : "Complete this path") : copy.invitation}<span>→</span></button>
+          {(activeDistrictPosition > 0 || activeBeatIndex > 0) && <button type="button" onClick={rewindStory}>{language === "hi" ? "पीछे" : "Back"}</button>}
         </div>
         <details className={styles.sourceDetails}>
           <summary>{language === "hi" ? "कथा का स्रोत" : "Story source"}</summary>
@@ -692,12 +745,19 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         onTravel={openEncounter}
       />}
 
-      {(!isRamayanaWorld || worldLens === "story") && <div className={styles.progress} aria-label={`${explored.length} of ${journey.stops.length} scenes explored`}>
-        {journey.stops.map((stop, index) => <button type="button" aria-label={`Go to scene ${index + 1}`} onClick={() => travelTo(index)} className={index === activeIndex ? styles.progressActive : exploredSet.has(stop.id) ? styles.progressVisited : ""} key={stop.id} />)}
+      {(!isRamayanaWorld || worldLens === "story") && <div className={styles.progress} aria-label={`${activeDistrictExploredCount} of ${activeDistrictStops.length} scenes explored`}>
+        {activeDistrictStops.map((stop, districtIndex) => {
+          const journeyIndex = journey.stops.findIndex((candidate) => candidate.id === stop.id);
+          return <button type="button" aria-label={`Go to scene ${districtIndex + 1}`} onClick={() => travelTo(journeyIndex)} className={journeyIndex === activeIndex ? styles.progressActive : exploredSet.has(stop.id) ? styles.progressVisited : ""} key={stop.id} />;
+        })}
       </div>}
 
       {showGuide && (!isRamayanaWorld || worldLens === "story") && <p className={styles.guide}>{isRamayanaWorld ? "Drag to look · wheel or pinch for depth · → continues" : "Choose a light to move through the story"}</p>}
-      {showCompletion && <div className={styles.complete}><span>Path discovered</span><strong>The universe continues beyond this route.</strong><div><button type="button" onClick={() => { setShowCompletion(false); travelTo(0); }}>Replay from Lanka</button><Link href="/">Return to the stars</Link></div></div>}
+      {showCompletion && <div className={styles.complete}><span>Illustrated district discovered</span><strong>The story universe continues beyond this route.</strong><div><button type="button" onClick={() => {
+        const firstMomentId = activeDistrict?.entryMomentId ?? activeDistrictStops[0]?.id;
+        const firstIndex = journey.stops.findIndex((stop) => stop.id === firstMomentId);
+        if (firstIndex >= 0) travelTo(firstIndex);
+      }}>Replay this district</button>{isRamayanaWorld && <button type="button" onClick={() => selectWorldLens("compass")}>Explore another visual district</button>}<Link href="/">Return to the stars</Link></div></div>}
       {sarthiOpen && <button className={styles.scrim} type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi" />}
       <aside className={`${styles.sarthiPanel} ${sarthiOpen ? styles.sarthiPanelOpen : ""}`} aria-hidden={!sarthiOpen} aria-label="Sarthi conversation">
         <header><div><span>✦</span><p><strong>Sārthi</strong><small>Companion inside this story</small></p></div><button type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi">×</button></header>

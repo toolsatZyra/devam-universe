@@ -30,8 +30,8 @@ export function buildPlayableStoryDistrictIndex(
     if (seenStopIds.has(stop.id)) throw new Error(`Duplicate playable story scene: ${stop.id}`);
     seenStopIds.add(stop.id);
 
-    const moment = pack.moments[stop.id];
-    if (!moment) throw new Error(`Playable story scene is missing its detailed moment: ${stop.id}`);
+    const decisiveChange = pack.moments[stop.id]?.decisiveChange ?? pack.momentPreviews[stop.id];
+    if (!decisiveChange) throw new Error(`Playable story scene is missing its preview: ${stop.id}`);
     const sceneNodeIds = pack.sceneNodeIds[stop.id];
     if (!sceneNodeIds?.length) throw new Error(`Playable story scene is missing its world nodes: ${stop.id}`);
     const sceneNodeIdSet = new Set(sceneNodeIds);
@@ -54,7 +54,7 @@ export function buildPlayableStoryDistrictIndex(
           id: stop.id,
           ordinal: stop.ordinal,
           title: stop.title,
-          decisiveChange: moment.decisiveChange,
+          decisiveChange,
           asset: stop.visual?.asset,
           placeNodeId: placeNode.id,
           relation: route.relation,

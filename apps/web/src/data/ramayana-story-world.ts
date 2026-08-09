@@ -1,10 +1,19 @@
 import { gateways, worldEdges, worldNodes } from "./atlas";
+import {
+  RAMAYANA_AYODHYA_CAST_NODE_IDS,
+  RAMAYANA_AYODHYA_LOCAL_NODES,
+  RAMAYANA_AYODHYA_LOCAL_ROUTES,
+  RAMAYANA_AYODHYA_MOMENTS,
+  RAMAYANA_AYODHYA_SCENE_NODE_IDS,
+  RAMAYANA_STORY_DISTRICTS,
+} from "./ramayana-ayodhya-exile";
 import { buildRamayanaCompass } from "./ramayana-compass";
 import { RAMAYANA_LIVING_PORTAL_NODE_IDS, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE, RAMAYANA_LIVING_ROUTE_ROOT_IDS } from "./ramayana-living-portal-contract";
 import type { WorldNodeFamily } from "@/lib/domain/atlas";
 import type { StoryMoment, StoryWorldNode, StoryWorldPack, StoryWorldRoute } from "@/lib/domain/story-world";
 
 const sceneNodeIds: StoryWorldPack["sceneNodeIds"] = {
+  ...RAMAYANA_AYODHYA_SCENE_NODE_IDS,
   "leave-lanka": ["pushpaka-departure-lanka", "lanka-story-world", "vibhishana", "rama", "sita"],
   "sky-road": ["remembered-homeward-route", "rama", "sita", "kishkindha-story-world", "bridge-to-lanka"],
   "bharadvaja-hermitage": ["bharadvaja-homecoming-counsel", "bharadvaja", "bharadvaja-hermitage-story-world", "rama", "ayodhya"],
@@ -15,6 +24,7 @@ const sceneNodeIds: StoryWorldPack["sceneNodeIds"] = {
 };
 
 const castNodeIds: StoryWorldPack["castNodeIds"] = {
+  ...RAMAYANA_AYODHYA_CAST_NODE_IDS,
   Rama: "rama",
   Sita: "sita",
   Lakshmana: "lakshmana",
@@ -29,6 +39,7 @@ const castNodeIds: StoryWorldPack["castNodeIds"] = {
 };
 
 const moments: Record<string, StoryMoment> = {
+  ...RAMAYANA_AYODHYA_MOMENTS,
   "leave-lanka": {
     id: "leave-lanka",
     decisiveChange: { en: "Victory becomes a shared journey home.", hi: "विजय अब सबकी साझा घर-वापसी बनती है।" },
@@ -107,6 +118,8 @@ const routeLimit = 8;
 const routeRootIds = ["return-to-ayodhya"];
 
 function resolveNode(id: string): StoryWorldNode | null {
+  const localNode = RAMAYANA_AYODHYA_LOCAL_NODES[id];
+  if (localNode) return localNode;
   const node = worldNodes.find((candidate) => candidate.id === id);
   if (node) return node;
   const gateway = gateways.find((candidate) => candidate.id === id);
@@ -161,7 +174,10 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
     const node = resolveNode(nodeId);
     if (!node) continue;
     nodes[nodeId] = node;
-    const nodeRoutes = compileRoutes(nodeId, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE[nodeId]);
+    const nodeRoutes = [
+      ...(RAMAYANA_AYODHYA_LOCAL_ROUTES[nodeId] ?? []),
+      ...compileRoutes(nodeId, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE[nodeId]),
+    ].slice(0, routeLimit);
     routes[nodeId] = nodeRoutes;
     for (const route of nodeRoutes) {
       const destination = resolveNode(route.destinationId);
@@ -176,14 +192,22 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
   }
 
   return {
-    id: "ramayana-road-home-v1",
+    id: "ramayana-story-world-v2",
     compass: buildRamayanaCompass(),
+    districts: RAMAYANA_STORY_DISTRICTS,
     sceneNodeIds,
     nodeMomentIds,
     castNodeIds,
-    moments,
+    momentPreviews: Object.fromEntries(Object.entries(moments).map(([momentId, moment]) => [momentId, moment.decisiveChange])),
+    moments: {},
     livingPortalNodeIds: [...RAMAYANA_LIVING_PORTAL_NODE_IDS],
     nodes,
     routes,
   };
+}
+
+export function getRamayanaDistrictMoments(districtId: string): Record<string, StoryMoment> | null {
+  const district = RAMAYANA_STORY_DISTRICTS.find((candidate) => candidate.id === districtId);
+  if (!district) return null;
+  return Object.fromEntries(district.momentIds.map((momentId) => [momentId, moments[momentId]]));
 }

@@ -42,10 +42,16 @@ describe("Ramayana whole-epic story compass", () => {
     expect([...covered.values()].reduce((sum, ordinals) => sum + ordinals.length, 0)).toBe(compass.totalSourceUnits);
   });
 
-  it("distinguishes mapped orientation from a genuinely playable story slice", () => {
+  it("distinguishes mapped orientation from the four playable district entrances", () => {
     const playable = Object.values(compass.turns).filter((turn) => turn.coverage === "playable");
-    expect(playable).toEqual([expect.objectContaining({ id: "road-home", playableMomentId: "leave-lanka", sourceRange: expect.objectContaining({ kandaSlug: "yuddha", startOrdinal: 122, endOrdinal: 128 }) })]);
-    expect(Object.values(compass.turns).filter((turn) => turn.coverage === "orientation")).toHaveLength(48);
+    expect(playable.map((turn) => [turn.id, turn.playableMomentId])).toEqual([
+      ["coronation-dawn", "coronation-dawn"],
+      ["two-boons", "manthara-sees-city"],
+      ["exile-accepted", "rama-accepts-exile"],
+      ["road-home", "leave-lanka"],
+    ]);
+    expect(playable.at(-1)?.sourceRange).toMatchObject({ kandaSlug: "yuddha", startOrdinal: 122, endOrdinal: 128 });
+    expect(Object.values(compass.turns).filter((turn) => turn.coverage === "orientation")).toHaveLength(45);
     expect(compass.sourceBoundary).toContain("not Sanskrit");
     expect(compass.sourceBoundary).toContain("not a finished playable scene");
   });

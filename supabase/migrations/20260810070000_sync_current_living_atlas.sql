@@ -10,7 +10,7 @@ insert into public.atlas_nodes (
   rights_lane, publication_state
 )
 values
-  ('ramayana', 'Ramayana', 'रामायण', 'gateway', true, '{"x":27,"y":34}'::jsonb, '{"sourceId":"ramayana","tone":"saffron","threads":["Ayodhya","Chitrakoot","Dharma in action"],"invitation":"Begin the return journey"}'::jsonb, 1.00, 'product_allowed', 'published'),
+  ('ramayana', 'Ramayana', 'रामायण', 'gateway', true, '{"x":27,"y":34}'::jsonb, '{"sourceId":"ramayana","tone":"saffron","threads":["Ayodhya","Chitrakoot","Dharma in action"],"invitation":"Choose an illustrated story world"}'::jsonb, 1.00, 'product_allowed', 'published'),
   ('ganesha', 'Ganesha', 'गणेश', 'gateway', true, '{"x":48,"y":63}'::jsonb, '{"sourceId":"ganesha","tone":"moon","threads":["Ganesh Chaturthi","Ashtavinayak","Meaning & symbolism"],"invitation":"Enter the Ganesha world"}'::jsonb, 1.00, 'product_allowed', 'published'),
   ('durga', 'Durga', 'दुर्गा', 'gateway', true, '{"x":72,"y":31}'::jsonb, '{"sourceId":"durga","tone":"rose","threads":["Navaratri","Devi Mahatmya","Durga Puja"],"invitation":"Follow the path of Shakti"}'::jsonb, 1.00, 'product_allowed', 'published'),
   ('diwali', 'Diwali', 'दीपावली', 'gateway', true, '{"x":76,"y":66}'::jsonb, '{"sourceId":"diwali","tone":"gold","threads":["Lakshmi Puja","Regional Deepavali","Jain and Sikh traditions"],"invitation":"Follow the festival of many lights"}'::jsonb, 1.00, 'product_allowed', 'published'),

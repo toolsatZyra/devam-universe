@@ -1,6 +1,21 @@
-# Ramayana playable vertical slice
+# Ramayana playable districts
 
-Status: **playable encounter candidate — 2026-08-10**
+Status: **two-district playable candidate — 2026-08-10**
+
+Current implementation checkpoint: the first repeatable slice, **The road home
+to Ayodhya**, is now joined by **The night the road changed**. The new district
+follows Manmatha Nath Dutt's Ayodhyā Kāṇḍa source units I–XL from coronation
+preparation through Rama, Sita, and Lakshmana preparing to depart. It ends
+before section XLI, so the selected-expression boundary is exact.
+
+The eight scenes preserve the sequence's human reversals rather than replacing
+them with a one-line exile summary: Kaikeyi first rejoices; Manthara reframes
+the future; Dasharatha is trapped by the promise he renewed; Rama crosses a
+city still celebrating; Kausalya grieves; Lakshmana argues for resistance;
+Sita chooses the forest road; and three travellers turn toward the gate. The
+district contains thirty-six bilingual visual beats and eight original
+Devam-authored artistic visualizations. Every compass screen exposes both
+illustrated districts, and completing either returns to that selector.
 
 ## Decision
 

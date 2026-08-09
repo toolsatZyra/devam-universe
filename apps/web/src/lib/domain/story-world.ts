@@ -160,6 +160,15 @@ export type StoryCompass = {
   turns: Record<string, StoryCompassTurn>;
 };
 
+export type StoryDistrict = {
+  id: string;
+  title: { en: string; hi: string };
+  invitation: { en: string; hi: string };
+  entryMomentId: string;
+  momentIds: string[];
+  compassTurnIds: string[];
+};
+
 /**
  * A small, serializable slice of the knowledge universe compiled for one
  * playable story world. The browser must never need the global Atlas dataset
@@ -168,9 +177,11 @@ export type StoryCompass = {
 export type StoryWorldPack = {
   id: string;
   compass: StoryCompass;
+  districts: StoryDistrict[];
   sceneNodeIds: Record<string, string[]>;
   nodeMomentIds: Record<string, string[]>;
   castNodeIds: Record<string, string>;
+  momentPreviews: Record<string, { en: string; hi: string }>;
   moments: Record<string, StoryMoment>;
   livingPortalNodeIds: string[];
   nodes: Record<string, StoryWorldNode>;
