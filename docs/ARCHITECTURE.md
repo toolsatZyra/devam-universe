@@ -248,6 +248,18 @@ stories. Source sections remain the editorial denominator underneath those
 moments. Completeness is reported per selected expression and independently as
 catalogued, story-ready, playable, and living-connected.
 
+Every playable beat may also carry a lightweight cinematic composition: focal
+position, crop depth, palette, and a restrained motion motif. The browser reuses
+full-resolution biome art and CSS layers rather than duplicating bitmaps or
+introducing a canvas/game engine before measured need; reduced-motion mode
+collapses the animation. Composition stays client-only while narrative,
+relationships, and evidence remain in the bounded server-compiled story pack.
+
+The compiler derives a reverse node-to-moment index from the same scene data.
+Character and place encounters can therefore list their playable story moments
+and return directly to one without maintaining a second story list or inferring
+relationships beyond the reviewed graph.
+
 Scenes are data-driven so content teams can publish places, stories, rituals,
 missions, and future visual layers without bespoke navigation code for every
 node. Multi-resolution assets, prefetching, caching, and graceful bandwidth

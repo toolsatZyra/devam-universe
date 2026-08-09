@@ -33,6 +33,8 @@ import {
   getStorySceneEncounterNodes,
 } from "./ramayana-world-encounters";
 import { JourneyEncounter } from "./journey-encounter";
+import { JourneyBeatStage } from "./journey-beat-stage";
+import { getRamayanaBeatStage } from "./ramayana-beat-stage";
 import styles from "./journey-player.module.css";
 
 type JourneySarthiReply = {
@@ -221,6 +223,8 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const activeTitle = copy.title ?? active.title;
   const activeMoment = storyWorld?.moments[active.id];
   const activeBeat = activeMoment?.beats[activeBeatIndex];
+  const activeBeatStage = getRamayanaBeatStage(activeBeat?.id);
+  const sceneBeatStage = worldLens === "story" ? activeBeatStage : undefined;
   const exploredSet = useMemo(() => new Set(explored), [explored]);
   const isRamayanaWorld = storyWorld?.id === "ramayana-road-home-v1";
   const sceneEncounterNodes = useMemo(
@@ -229,6 +233,13 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   );
   const focusedEncounter = storyWorld && encounterTrail.length ? getJourneyEncounterNode(storyWorld, encounterTrail.at(-1)!) : null;
   const focusedEncounterRoutes = storyWorld && focusedEncounter ? getJourneyEncounterRoutes(storyWorld, focusedEncounter.id) : [];
+  const focusedStoryMoments = storyWorld && focusedEncounter
+    ? (storyWorld.nodeMomentIds[focusedEncounter.id] ?? []).flatMap((momentId) => {
+      const moment = journey.stops.find((stop) => stop.id === momentId);
+      if (!moment) return [];
+      return [{ id: moment.id, title: sceneCopy(moment, language).title ?? moment.title, active: moment.id === active.id }];
+    })
+    : [];
   const routeLandmarks = [
     { label: "Lanka", index: 0, x: 12, y: 76 },
     { label: "Bharadvaja", index: 2, x: 47, y: 47 },
@@ -277,6 +288,13 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
 
   function backFromEncounter() {
     setEncounterTrail((trail) => trail.slice(0, -1));
+  }
+
+  function openStoryMoment(momentId: string) {
+    const index = journey.stops.findIndex((stop) => stop.id === momentId);
+    if (index < 0) return;
+    setWorldLens("story");
+    travelTo(index);
   }
 
   function continueJourney() {
@@ -437,6 +455,9 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     "--camera-x": `${camera.x}px`,
     "--camera-y": `${camera.y}px`,
     "--camera-scale": camera.scale,
+    "--beat-image-x": `${sceneBeatStage?.focusX ?? 50}%`,
+    "--beat-image-y": `${sceneBeatStage?.focusY ?? 50}%`,
+    "--beat-image-zoom": sceneBeatStage?.zoom ?? 1.13,
   } as CSSProperties;
 
   return (
@@ -483,6 +504,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         tabIndex={isRamayanaWorld ? 0 : undefined}
       >
         <div className={styles.horizon} aria-hidden="true" />
+        <JourneyBeatStage stage={sceneBeatStage} />
         {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
           {journey.stops.map((stop, index) => {
             const selected = index === activeIndex;
@@ -608,8 +630,10 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       {focusedEncounter && <JourneyEncounter
         node={focusedEncounter}
         routes={focusedEncounterRoutes}
+        storyMoments={focusedStoryMoments}
         trailDepth={encounterTrail.length}
         onBack={backFromEncounter}
+        onOpenMoment={openStoryMoment}
         onTravel={openEncounter}
       />}
 

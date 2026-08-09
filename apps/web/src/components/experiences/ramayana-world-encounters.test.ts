@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { buildRamayanaStoryWorldPack } from "../../data/ramayana-story-world";
+import { getRamayanaBeatStage, RAMAYANA_BEAT_STAGE_COUNT } from "./ramayana-beat-stage";
 import {
   getJourneyEncounterNode,
   getJourneyEncounterRoutes,
@@ -42,6 +43,21 @@ describe("Ramayana return-world encounters", () => {
     }
   });
 
+  it("gives every story beat a bounded cinematic camera and motion composition", () => {
+    const beats = Object.values(pack.moments).flatMap((moment) => moment.beats);
+    expect(RAMAYANA_BEAT_STAGE_COUNT).toBe(beats.length);
+    for (const beat of beats) {
+      const stage = getRamayanaBeatStage(beat.id);
+      expect(stage, beat.id).toBeDefined();
+      expect(stage?.focusX, beat.id).toBeGreaterThanOrEqual(35);
+      expect(stage?.focusX, beat.id).toBeLessThanOrEqual(80);
+      expect(stage?.focusY, beat.id).toBeGreaterThanOrEqual(28);
+      expect(stage?.focusY, beat.id).toBeLessThanOrEqual(65);
+      expect(stage?.zoom, beat.id).toBeGreaterThanOrEqual(1.1);
+      expect(stage?.zoom, beat.id).toBeLessThanOrEqual(1.25);
+    }
+  });
+
   it("preserves the exact source-addressed story chain from Lanka to coronation", () => {
     const chain = [
       "pushpaka-departure-lanka",
@@ -69,6 +85,16 @@ describe("Ramayana return-world encounters", () => {
       "rama-coronation-return",
     ]));
     expect(getJourneyEncounterRoutes(pack, "return-to-ayodhya", 20).map((route) => route.destination.id)).toContain("diwali");
+  });
+
+  it("indexes character and place encounters back into every playable story moment", () => {
+    expect(pack.nodeMomentIds.rama).toEqual(["leave-lanka", "sky-road", "bharadvaja-hermitage", "kingdom-returned"]);
+    expect(pack.nodeMomentIds.bharata).toEqual(["hanuman-goes-ahead", "bharata-hears", "ayodhya-prepares", "kingdom-returned"]);
+    expect(pack.nodeMomentIds.ayodhya).toEqual(["bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
+    for (const [nodeId, momentIds] of Object.entries(pack.nodeMomentIds)) {
+      expect(pack.nodes[nodeId], nodeId).toBeDefined();
+      expect(momentIds.every((momentId) => Boolean(pack.moments[momentId])), nodeId).toBe(true);
+    }
   });
 
   it("ships a bounded story pack instead of the global Atlas to the client", () => {

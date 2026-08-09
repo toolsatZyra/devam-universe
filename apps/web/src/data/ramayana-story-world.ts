@@ -146,6 +146,7 @@ function compileRoutes(nodeId: string): StoryWorldRoute[] {
 export function buildRamayanaStoryWorldPack(): StoryWorldPack {
   const nodes: StoryWorldPack["nodes"] = {};
   const routes: StoryWorldPack["routes"] = {};
+  const nodeMomentIds: StoryWorldPack["nodeMomentIds"] = {};
   const routeRoots = new Set([
     ...Object.values(sceneNodeIds).flat(),
     ...Object.values(castNodeIds),
@@ -164,9 +165,16 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
     }
   }
 
+  for (const [momentId, nodeIds] of Object.entries(sceneNodeIds)) {
+    for (const nodeId of nodeIds) {
+      nodeMomentIds[nodeId] = [...(nodeMomentIds[nodeId] ?? []), momentId];
+    }
+  }
+
   return {
     id: "ramayana-road-home-v1",
     sceneNodeIds,
+    nodeMomentIds,
     castNodeIds,
     moments,
     nodes,

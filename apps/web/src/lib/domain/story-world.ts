@@ -41,6 +41,7 @@ export type StoryMoment = {
 export type StoryWorldPack = {
   id: string;
   sceneNodeIds: Record<string, string[]>;
+  nodeMomentIds: Record<string, string[]>;
   castNodeIds: Record<string, string>;
   moments: Record<string, StoryMoment>;
   nodes: Record<string, StoryWorldNode>;
