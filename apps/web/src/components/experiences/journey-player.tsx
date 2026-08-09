@@ -187,6 +187,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [cameraDragging, setCameraDragging] = useState(false);
   const [showCompletion, setShowCompletion] = useState(false);
   const [encounterTrail, setEncounterTrail] = useState<string[]>([]);
+  const [encounterReturnTrail, setEncounterReturnTrail] = useState<string[] | null>(null);
   const guestExchanges = useRef(0);
   const viewportRef = useRef<HTMLElement | null>(null);
   const cameraRef = useRef<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
@@ -241,9 +242,20 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     ? (storyWorld.nodeMomentIds[focusedEncounter.id] ?? []).flatMap((momentId) => {
       const moment = journey.stops.find((stop) => stop.id === momentId);
       if (!moment) return [];
-      return [{ id: moment.id, title: sceneCopy(moment, language).title ?? moment.title, active: moment.id === active.id }];
+      const detailedMoment = storyWorld.moments[moment.id];
+      return [{
+        id: moment.id,
+        ordinal: moment.ordinal,
+        title: sceneCopy(moment, language).title ?? moment.title,
+        decisiveChange: detailedMoment?.decisiveChange[language] ?? moment.summary,
+        asset: moment.visual?.asset,
+        active: moment.id === active.id,
+      }];
     })
     : [];
+  const returnEncounter = storyWorld && encounterReturnTrail?.length
+    ? getJourneyEncounterNode(storyWorld, encounterReturnTrail.at(-1)!)
+    : null;
   const backdropAsset = isRamayanaWorld && (worldLens === "compass" || worldLens === "route")
     ? "/journeys/ramayana-world-v1.webp"
     : active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`;
@@ -289,11 +301,13 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     setShowGuide(false);
     setShowCompletion(false);
     setEncounterTrail([]);
+    setEncounterReturnTrail(null);
     resetCamera();
   }
 
   function openEncounter(nodeId: string) {
     if (!storyWorld || !getJourneyEncounterNode(storyWorld, nodeId)) return;
+    setEncounterReturnTrail(null);
     setEncounterTrail((trail) => trail.at(-1) === nodeId ? trail : [...trail, nodeId]);
     setShowGuide(false);
   }
@@ -309,6 +323,21 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     travelTo(index);
   }
 
+  function openStoryMomentFromEncounter(momentId: string) {
+    const returnTrail = [...encounterTrail];
+    const index = journey.stops.findIndex((stop) => stop.id === momentId);
+    if (index < 0 || returnTrail.length === 0) return;
+    setWorldLens("story");
+    travelTo(index);
+    setEncounterReturnTrail(returnTrail);
+  }
+
+  function returnToEncounterPath() {
+    if (!encounterReturnTrail?.length) return;
+    setEncounterTrail(encounterReturnTrail);
+    setEncounterReturnTrail(null);
+  }
+
   function openWholeStoryTurn(turnId: string) {
     if (!storyWorld?.compass.turns[turnId]) return;
     setStoryFocusTurnId(turnId);
@@ -318,6 +347,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
 
   function selectWorldLens(lens: "compass" | "story" | "route" | "connections") {
     setEncounterTrail([]);
+    setEncounterReturnTrail(null);
     setWorldLens(lens);
   }
 
@@ -606,6 +636,8 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         <button type="button" aria-label="Zoom scene in" disabled={camera.scale >= JOURNEY_CAMERA_MAX_SCALE} onClick={() => commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale + .1, cameraViewport()))}>+</button>
       </div>}
 
+      {!focusedEncounter && returnEncounter && worldLens === "story" && <button type="button" className={styles.encounterReturn} onClick={returnToEncounterPath}>← {language === "hi" ? `${returnEncounter.label} की कथा-राह पर लौटें` : `Back to ${returnEncounter.label}'s story path`}</button>}
+
       {!focusedEncounter && (!isRamayanaWorld || worldLens === "story") && <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
         {active.visual && <div className={styles.sceneContext}><span>{active.visual.location}</span><small>Artistic visualization</small></div>}
         <p>{activeMoment ? activeMoment.decisiveChange[language] : copy.kicker}</p>
@@ -648,12 +680,13 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       </section>}
 
       {focusedEncounter && <JourneyEncounter
+        language={language}
         node={focusedEncounter}
         routes={focusedEncounterRoutes}
         storyMoments={focusedStoryMoments}
         trailDepth={encounterTrail.length}
         onBack={backFromEncounter}
-        onOpenMoment={openStoryMoment}
+        onOpenMoment={openStoryMomentFromEncounter}
         onTravel={openEncounter}
       />}
 

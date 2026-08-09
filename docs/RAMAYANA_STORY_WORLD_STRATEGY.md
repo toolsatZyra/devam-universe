@@ -222,6 +222,12 @@ same graph to reveal all seven detailed scenes across five connected narrative
 places, retaining whether each scene occurs at, arrives in, departs from,
 remembers, or merely asks about the place. A visitor can enter an exact scene
 from Nandigrama, Ayodhya, or another lit place and return to the same map context.
+Character encounters now expose illustrated portals to every detailed scene in
+which that character appears. Entering one of those scenes preserves the
+character path as an explicit return portal; returning restores the same path
+and marks the scene the visitor just entered. The portals are compiled from the
+existing character-to-moment index and journey art, so this adds no parallel
+character graph or duplicated story data.
 Beat-specific tableaux, sound,
 richer foreground animation, longer optional retellings, and observed user
 comprehension remain open; Gate 2 is therefore not yet complete.

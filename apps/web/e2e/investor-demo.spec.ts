@@ -387,7 +387,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   await page.getByRole("button", { name: "Play", exact: true }).click();
   await page.getByRole("button", { name: "Rama", exact: true }).click();
   await expect(page.getByText("Meet Rama in the story", { exact: true })).toBeVisible();
-  await page.getByRole("button", { name: /The sky road remembers Enter this moment/ }).click();
+  await page.getByRole("button", { name: /The sky road remembers.*Enter this scene/ }).click();
   await expect(page.getByRole("heading", { name: "The sky road remembers" })).toBeVisible();
   await page.getByRole("button", { name: "Go to scene 1" }).click();
   await page.getByRole("button", { name: "Zoom scene in" }).click();
@@ -464,6 +464,30 @@ test("the Ramayana narrative map pans, zooms, and returns to exact story context
   await page.getByRole("button", { name: "Map", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Ayodhya", exact: true })).toBeVisible();
   expect(await ramayanaWorld.evaluate((element) => ({ left: element.scrollLeft, top: element.scrollTop }))).toEqual({ left: 0, top: 0 });
+  await expectNoHorizontalOverflow(page);
+});
+
+test("a Ramayana character path opens illustrated scenes and returns without losing context", async ({ page }) => {
+  await page.goto("/journeys/ramayana");
+  await page.getByRole("button", { name: /War and return/ }).click();
+  await page.getByRole("button", { name: /The road home/ }).click();
+  await page.getByRole("button", { name: "Enter this story world" }).click();
+
+  await page.getByRole("button", { name: "Rama", exact: true }).click();
+  const ramaPath = page.getByRole("complementary", { name: "Rama encounter" });
+  const moments = ramaPath.getByLabel("Story moments involving Rama").getByRole("button");
+  await expect(moments).toHaveCount(4);
+  await expect.poll(() => moments.locator("img").evaluateAll((images) => images.every((image) => (image as HTMLImageElement).complete && (image as HTMLImageElement).naturalWidth > 0))).toBe(true);
+  await ramaPath.getByRole("button", { name: /Scene 07.*The kingdom is returned.*Enter this scene/ }).click();
+
+  await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
+  const returnPortal = page.getByRole("button", { name: "Back to Rama's story path" });
+  await expect(returnPortal).toBeVisible();
+  await returnPortal.click();
+  await expect(page.getByRole("complementary", { name: "Rama encounter" })).toBeVisible();
+  await expect(page.getByLabel("Story moments involving Rama").getByRole("button", { name: /Scene 07.*You are here/ })).toHaveAttribute("aria-current", "step");
+  await page.getByRole("button", { name: /Back to the scene/ }).click();
+  await expect(page.getByRole("heading", { name: "The kingdom is returned" })).toBeVisible();
   await expectNoHorizontalOverflow(page);
 });
 
