@@ -31,7 +31,7 @@
 .lensSwitcher { position: fixed; z-index: 31; top: max(78px, calc(env(safe-area-inset-top) + 66px)); left: 50%; transform: translateX(-50%); display: flex; gap: 3px; border: 1px solid rgba(var(--accent-rgb),.14); border-radius: 999px; padding: 3px; background: rgba(4,7,16,.58); backdrop-filter: blur(18px); }
 .lensSwitcher button { min-height: 30px; border: 0; border-radius: 999px; padding: 0 13px; color: #7f8796; background: transparent; cursor: pointer; font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
 .lensSwitcher button[aria-pressed="true"] { color: #211a18; background: var(--accent); font-weight: 800; }
-.viewport { position: absolute; z-index: 2; inset: 0; perspective: 1000px; overflow: hidden; outline: none; }
+.viewport { position: absolute; z-index: 2; inset: 0; perspective: 1000px; overflow: clip; outline: none; }
 .viewport[data-navigable="true"] { cursor: grab; touch-action: none; }
 .viewport[data-navigable="true"]:active { cursor: grabbing; }
 .viewport[data-navigable="true"]:focus-visible { box-shadow: inset 0 0 0 2px rgba(var(--accent-rgb),.68); }
@@ -72,15 +72,6 @@
 .nodeCopy small { color: var(--accent); font-size: 7px; letter-spacing: .14em; }
 .nodeCopy strong { color: #c9c5c1; font: 400 13px Georgia, serif; text-shadow: 0 2px 13px #000; }
 .storyNodeActive .nodeCopy strong { color: #fff6e8; font-size: 17px; }
-.routeWorld { position: absolute; inset: 15% 5% 13% 42%; border: 1px solid rgba(var(--accent-rgb),.18); border-radius: 36px; overflow: hidden; background: radial-gradient(ellipse at 70% 30%, rgba(var(--accent-rgb),.15), transparent 42%), linear-gradient(145deg, rgba(4,7,15,.78), rgba(3,6,14,.55)); backdrop-filter: blur(7px); animation: reveal .45s ease; }
-.routeWorld::before { content: ""; position: absolute; inset: 0; opacity: .2; background-image: radial-gradient(circle, rgba(255,255,255,.48) 0 .7px, transparent 1px); background-size: 43px 39px; }
-.routeLine { position: absolute; left: 12%; top: 72%; width: 79%; height: 4px; border-radius: 99px; transform: rotate(-35deg); transform-origin: left center; background: linear-gradient(90deg, rgba(var(--accent-rgb),.2), var(--accent)); box-shadow: 0 0 24px rgba(var(--accent-rgb),.44); }
-.routeLandmark { position: absolute; left: var(--map-x); top: var(--map-y); transform: translate(-50%,-50%); width: 116px; min-height: 80px; border: 0; color: #8b919d; background: transparent; cursor: pointer; display: grid; place-items: center; gap: 2px; }
-.routeLandmark > span { width: 15px; height: 15px; border: 1px solid rgba(var(--accent-rgb),.5); border-radius: 50%; background: #07101a; box-shadow: 0 0 0 7px rgba(var(--accent-rgb),.04); }
-.routeLandmark strong { color: #c5c4c1; font: 400 15px Georgia, serif; text-shadow: 0 2px 12px #000; }
-.routeLandmark small { color: #6f7785; font-size: 7px; letter-spacing: .12em; text-transform: uppercase; }
-.routeLandmarkReached > span { background: var(--accent); box-shadow: 0 0 18px rgba(var(--accent-rgb),.75), 0 0 0 7px rgba(var(--accent-rgb),.08); }
-.routeBoundary { position: absolute; right: 20px; bottom: 15px; margin: 0; color: #6b7280; font-size: 7px; letter-spacing: .08em; text-transform: uppercase; }
 .sceneDiscoveries { position: absolute; inset: 8% 4% 12%; pointer-events: none; perspective: 900px; }
 .sceneDiscovery { --family-color: var(--accent-rgb); position: absolute; left: var(--portal-x); top: var(--portal-y); z-index: 7; width: 126px; min-height: 80px; transform: translate3d(-50%,-50%,var(--portal-z)); border: 0; padding: 0; display: grid; place-items: center; color: #e8e0d5; background: transparent; cursor: pointer; pointer-events: auto; transition: transform .28s ease; }
 .sceneDiscovery > span { width: 13px; height: 13px; border: 1px solid rgba(var(--family-color),.75); border-radius: 50%; background: rgba(5,8,17,.88); box-shadow: 0 0 0 7px rgba(var(--family-color),.05), 0 0 24px rgba(var(--family-color),.62); }
@@ -241,10 +232,6 @@
   .cameraControls { top: 108px; right: 9px; }
   .cameraControls button { width: 29px; height: 29px; }
   .guide { display: none; }
-  .routeWorld { inset: 14% 9px 43%; border-radius: 22px; }
-  .routeLandmark { width: 78px; min-height: 62px; }
-  .routeLandmark strong { font-size: 11px; }
-  .routeLandmark small, .routeBoundary { display: none; }
   .sceneDiscoveries { inset: 10% 0 40%; }
   .sceneDiscovery { width: 102px; min-height: 64px; }
   .sceneDiscovery strong { max-width: 96px; font-size: 11px; }

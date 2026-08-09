@@ -13,6 +13,8 @@ type Props = {
   compass: StoryCompass;
   language: "en" | "hi";
   onEnterMoment: (momentId: string) => void;
+  onSelectTurn: (turnId: string) => void;
+  selectedTurnId: string;
 };
 
 type TrailFrame = { turnId: string; pathId?: string };
@@ -22,17 +24,17 @@ function sourceRangeLabel(kandaSlug: string, start: number, end: number) {
   return `${name} · source units ${start}–${end}`;
 }
 
-export function JourneyCompass({ compass, language, onEnterMoment }: Props) {
-  const [selectedArcId, setSelectedArcId] = useState(compass.arcs[0].id);
-  const [selectedTurnId, setSelectedTurnId] = useState(compass.arcs[0].turnIds[0]);
+export function JourneyCompass({ compass, language, onEnterMoment, onSelectTurn, selectedTurnId }: Props) {
   const [activePathId, setActivePathId] = useState<string>();
   const [trail, setTrail] = useState<TrailFrame[]>([]);
   const selectedNodeRef = useRef<HTMLButtonElement | null>(null);
+  const turnPathRef = useRef<HTMLDivElement | null>(null);
   const indexes = useMemo(() => buildStoryCompassIndexes(compass), [compass]);
-  const activePath = useMemo(() => getStoryCompassPathById(indexes, activePathId), [activePathId, indexes]);
-  const selectedArc = compass.arcs.find((arc) => arc.id === selectedArcId) ?? compass.arcs[0];
-  const selectedTurn = compass.turns[selectedTurnId] ?? compass.turns[selectedArc.turnIds[0]];
   const allTurnIds = useMemo(() => compass.arcs.flatMap((arc) => arc.turnIds), [compass.arcs]);
+  const selectedTurn = compass.turns[selectedTurnId] ?? compass.turns[allTurnIds[0]];
+  const selectedArc = compass.arcs.find((arc) => arc.id === selectedTurn.arcId) ?? compass.arcs[0];
+  const candidatePath = useMemo(() => getStoryCompassPathById(indexes, activePathId), [activePathId, indexes]);
+  const activePath = candidatePath?.turnIds.includes(selectedTurn.id) ? candidatePath : undefined;
   const visibleTurnIds = activePath?.turnIds ?? selectedArc.turnIds;
   const navigationTurnIds = activePath?.turnIds ?? allTurnIds;
   const navigationIndex = navigationTurnIds.indexOf(selectedTurn.id);
@@ -41,14 +43,19 @@ export function JourneyCompass({ compass, language, onEnterMoment }: Props) {
     : 0;
 
   useEffect(() => {
-    selectedNodeRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    const path = turnPathRef.current;
+    const node = selectedNodeRef.current;
+    if (!path || !node) return;
+    path.scrollTo({
+      left: node.offsetLeft + node.offsetWidth / 2 - path.clientWidth / 2,
+      behavior: "smooth",
+    });
   }, [activePathId, selectedTurn.id]);
 
   function selectArc(arcId: string) {
     const arc = compass.arcs.find((candidate) => candidate.id === arcId);
     if (!arc) return;
-    setSelectedArcId(arc.id);
-    setSelectedTurnId(arc.turnIds[0]);
+    onSelectTurn(arc.turnIds[0]);
     setActivePathId(undefined);
     setTrail([]);
   }
@@ -56,8 +63,7 @@ export function JourneyCompass({ compass, language, onEnterMoment }: Props) {
   function selectTurn(turnId: string) {
     const turn = compass.turns[turnId];
     if (!turn) return;
-    setSelectedArcId(turn.arcId);
-    setSelectedTurnId(turn.id);
+    onSelectTurn(turn.id);
   }
 
   function step(direction: -1 | 1) {
@@ -79,8 +85,7 @@ export function JourneyCompass({ compass, language, onEnterMoment }: Props) {
     if (!turn) return;
     setTrail((current) => current.slice(0, -1));
     setActivePathId(frame.pathId);
-    setSelectedArcId(turn.arcId);
-    setSelectedTurnId(turn.id);
+    onSelectTurn(turn.id);
   }
 
   function pathKindLabel(kind: StoryCompassPathKind) {
@@ -142,7 +147,7 @@ export function JourneyCompass({ compass, language, onEnterMoment }: Props) {
             <span>{selectedArc.invitation[language]}</span>
           </>}
         </div>
-        <div className={styles.turnPath} data-path={Boolean(activePath)}>
+        <div className={styles.turnPath} data-path={Boolean(activePath)} ref={turnPathRef}>
           <div className={styles.turnCanvas} style={{ "--turn-canvas-width": `${Math.max(560, visibleTurnIds.length * (activePath ? 118 : 94))}px` } as CSSProperties}>
             <span className={styles.turnLine} aria-hidden="true" />
             {visibleTurnIds.map((turnId, index) => {

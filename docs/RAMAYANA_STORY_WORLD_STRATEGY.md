@@ -237,8 +237,15 @@ reviewed. Character, narrative-place, and story-thread paths are now compiled
 from those same forty-nine turns rather than maintained as a second graph. A
 visitor can follow any repeated cue across story worlds, move within that path,
 open another path, and unwind to the exact story point at which each detour
-began. A spatial map, reviewed living connections, deeper scenes, and observed
-user comprehension remain open, so Gate 3 is advanced but not complete.
+began. The Map lens now compiles thirty-one narrative places and the routes
+between them from the same turns. It treats a repeated place as one temporal
+nexus, reveals its ordered moments, supports bounded two-way pan and progressive
+zoom, opens a chosen moment in the whole-story view, and restores the precise map
+context on return. Its layout is explicitly schematic story geography—not
+modern coordinates, archaeology, a travel route, or historical GIS. Richer
+illustrated terrain, a separately sourced modern-place layer, reviewed living
+connections, deeper scenes, and observed user comprehension remain open, so
+Gate 3 is advanced but not complete.
 
 ### Gate 4 — selected-expression completion
 
