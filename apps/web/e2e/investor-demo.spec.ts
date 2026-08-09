@@ -90,6 +90,26 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   }
   await expect(scene).not.toHaveAttribute("data-view-x", "0");
   await page.getByRole("button", { name: "Reset map view" }).click();
+
+  await page.getByRole("button", { name: "Explore Ganesha" }).click();
+  await page.getByRole("button", { name: "Follow cosmic identity in one exact source to The world in Ganesha" }).click();
+  await expect(page.getByRole("heading", { name: "The world in Ganesha" })).toBeVisible();
+  await page.getByRole("button", { name: /Follow names five elements to Earth.*water.*fire.*air.*space/ }).click();
+  await expect(page.getByRole("heading", { name: /Earth.*water.*fire.*air.*space/ })).toBeVisible();
+  await page.getByRole("button", { name: "Ask Sarthi" }).click();
+  await page.getByRole("button", { name: "Tell me the story" }).click();
+  await expect(page.getByRole("complementary", { name: "Sarthi conversation" }).getByText(/You are earth, water, fire, air and space/i)).toBeVisible();
+  await page.getByRole("button", { name: "Close Sarthi" }).click();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
+  await page.getByRole("button", { name: "Explore Ganesha" }).click();
+  await page.getByRole("button", { name: "Follow annual festival to Ganesh Chaturthi" }).click();
+  await page.getByRole("button", { name: /Follow public-festival turn in 1893 to Public Ganeshotsav.*1893/ }).click();
+  await expect(page.getByRole("heading", { name: /Public Ganeshotsav.*1893/ })).toBeVisible();
+  await page.getByRole("button", { name: "Follow grows into shared public celebration to The community pandal" }).click();
+  await expect(page.getByRole("heading", { name: "The community pandal" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
   await expect(page.getByRole("button", { name: "Explore Ramayana" })).toHaveAttribute("aria-pressed", "true");
 

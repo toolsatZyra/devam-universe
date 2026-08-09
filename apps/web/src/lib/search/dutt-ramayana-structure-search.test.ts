@@ -65,6 +65,7 @@ describe("Manmatha Nath Dutt Ramayana structure search", () => {
       from: "ramayana",
       to: "dutt-ramayana",
       relation: "English prose edition",
+      relationKind: "text",
     });
   });
 });

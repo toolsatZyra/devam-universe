@@ -1,5 +1,11 @@
 # Lean MVP architecture
 
+The Living Atlas semantic and interaction contract is defined in
+`docs/LIVING_ATLAS_WORLD_MODEL.md`. It treats the visible universe as a reviewed
+projection of source → passage → claim → relationship evidence, with typed
+story, festival, practice, text, place, kinship, identity, time, history,
+teaching, and association routes rather than a generic `related_to` graph.
+
 ## Principle
 
 Use the smallest architecture that supports a real vertical slice and preserves an upgrade path. The knowledge graph is a model, not necessarily a separate database product.

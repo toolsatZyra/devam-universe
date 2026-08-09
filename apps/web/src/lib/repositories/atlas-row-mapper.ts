@@ -1,4 +1,4 @@
-import type { AtlasWorld, Gateway, GatewayTone, WorldEdge, WorldNode } from "@/lib/domain/atlas";
+import { inferWorldRelationKind, isWorldRelationKind, type AtlasWorld, type Gateway, type GatewayTone, type WorldEdge, type WorldNode } from "../domain/atlas";
 import type { Tables } from "@/lib/supabase/database.types";
 import { gateways as fallbackGateways, placeThreads, worldEdges as fallbackWorldEdges, worldNodes as fallbackWorldNodes } from "../../data/atlas";
 
@@ -115,11 +115,13 @@ export function mapAtlasRows(nodes: AtlasNodeRow[], edges: AtlasEdgeRow[], optio
     const visual = record(edge.visual, `${edge.id} visual`);
     const evidenceBoundary = typeof visual.evidenceBoundary === "string" ? visual.evidenceBoundary : undefined;
     const sourceRef = typeof visual.sourceRef === "string" ? visual.sourceRef : undefined;
+    const relationKind = isWorldRelationKind(visual.relationKind) ? visual.relationKind : inferWorldRelationKind(edge.label);
     return {
       id: edge.id,
       from,
       to,
       relation: edge.label,
+      relationKind,
       ...(evidenceBoundary ? { evidenceBoundary } : {}),
       ...(sourceRef ? { sourceRef } : {}),
     };

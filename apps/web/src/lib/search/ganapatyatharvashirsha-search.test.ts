@@ -64,6 +64,7 @@ describe("exact-revision Ganapati Atharvashirsha search", () => {
       from: "ganesha",
       to: "ganapatyatharvashirsha",
       relation: "source text",
+      relationKind: "text",
     });
   });
 });

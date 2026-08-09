@@ -1,5 +1,16 @@
 # Implementation plan
 
+Checkpoint 2026-08-09 (typed Living Atlas world model and Ganesha connected
+world): the client now normalizes every Atlas edge into eleven relationship
+families and exposes that path meaning through line colour and connection cards.
+The Ganesha world adds thirteen source-bounded nodes and nineteen
+source-addressed routes spanning the exact Atharvashirsha's cosmic, form, name,
+symbol, and Shiva-kinship doors plus the reviewed Ganesh Chaturthi public
+history, community-pandal, material, offering, and farewell worlds. The hosted
+projection target is 136 reviewed nodes and 217 app-owned edges. The Ganesha
+Purana remains structural-only and the internal-only Mudgala carrier remains
+unserved; no unsupported narrative was inferred from either.
+
 ## Phase 0 — cleanup and reset
 
 Complete. The legacy proof/release system was removed after unique source and provenance bytes were deduplicated into `source_vault`. See `CLEANUP_REPORT.md`.
