@@ -34,6 +34,7 @@ import {
 } from "./ramayana-world-encounters";
 import { JourneyEncounter } from "./journey-encounter";
 import { JourneyBeatStage } from "./journey-beat-stage";
+import { JourneyCompass } from "./journey-compass";
 import { getRamayanaBeatStage } from "./ramayana-beat-stage";
 import styles from "./journey-player.module.css";
 
@@ -179,7 +180,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [sarthiBusy, setSarthiBusy] = useState(false);
   const [accountPrompt, setAccountPrompt] = useState(false);
   const [language, setLanguage] = useState<"en" | "hi">("en");
-  const [worldLens, setWorldLens] = useState<"story" | "route" | "connections">("story");
+  const [worldLens, setWorldLens] = useState<"compass" | "story" | "route" | "connections">("compass");
   const [camera, setCamera] = useState<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
   const [cameraDragging, setCameraDragging] = useState(false);
   const [showCompletion, setShowCompletion] = useState(false);
@@ -227,6 +228,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const sceneBeatStage = worldLens === "story" ? activeBeatStage : undefined;
   const exploredSet = useMemo(() => new Set(explored), [explored]);
   const isRamayanaWorld = storyWorld?.id === "ramayana-road-home-v1";
+  const cameraEnabled = isRamayanaWorld && worldLens !== "compass";
   const sceneEncounterNodes = useMemo(
     () => storyWorld ? getStorySceneEncounterNodes(storyWorld, active.id) : [],
     [active.id, storyWorld],
@@ -246,6 +248,9 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     { label: "Nandigrama", index: 3, x: 69, y: 35 },
     { label: "Ayodhya", index: 5, x: 88, y: 17 },
   ];
+  const backdropAsset = isRamayanaWorld && worldLens === "compass"
+    ? "/journeys/ramayana-world-v1.webp"
+    : active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`;
 
   function cameraViewport() {
     const viewport = viewportRef.current;
@@ -324,7 +329,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   }
 
   function handleCameraPointerDown(event: ReactPointerEvent<HTMLElement>) {
-    if (!isRamayanaWorld || isInteractiveTarget(event.target)) return;
+    if (!cameraEnabled || isInteractiveTarget(event.target)) return;
     event.currentTarget.setPointerCapture(event.pointerId);
     if (cameraGesture.current.pointers.size === 0) cameraGesture.current.hadMultiple = false;
     cameraGesture.current.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
@@ -382,14 +387,14 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   }
 
   function handleCameraWheel(event: ReactWheelEvent<HTMLElement>) {
-    if (!isRamayanaWorld) return;
+    if (!cameraEnabled) return;
     event.preventDefault();
     const scale = cameraRef.current.scale * Math.exp(-event.deltaY * .0012);
     commitCamera(zoomJourneyCamera(cameraRef.current, scale, cameraViewport()));
   }
 
   function handleCameraKeyboard(event: ReactKeyboardEvent<HTMLElement>) {
-    if (!isRamayanaWorld || event.target !== event.currentTarget) return;
+    if (!cameraEnabled || event.target !== event.currentTarget) return;
     if (event.shiftKey && ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) {
       event.preventDefault();
       const delta = event.key === "ArrowLeft" ? { x: -48, y: 0 }
@@ -464,36 +469,41 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     <main className={styles.shell} data-tone={journey.tone} style={sceneStyle}>
       <div className={styles.space} aria-hidden="true"><span/><span/><span/></div>
       <div className={`${styles.worldBackdrop} ${cameraDragging ? styles.worldBackdropDragging : ""}`} aria-hidden="true">
-        <Image key={active.visual?.asset ?? journey.slug} src={active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`} alt="" fill priority sizes="100vw" />
+        <Image key={backdropAsset} src={backdropAsset} alt="" fill priority sizes="100vw" />
       </div>
       <header className={styles.hud}>
         <Link className={styles.brand} href="/">
           <Image src="/brand/devam-mark.png" alt="" width={38} height={38} priority />
           <span><strong>Devam</strong><small>Return to the universe</small></span>
         </Link>
-        <div className={styles.worldName}><small>{journey.hero} world</small><strong>{journey.title}</strong></div>
+        <div className={styles.worldName}><small>{journey.hero} world</small><strong>{isRamayanaWorld && worldLens === "compass" ? "The Ramayana story universe" : journey.title}</strong></div>
         <div className={styles.hudActions}>
           <div className={styles.language} role="group" aria-label="Story language">
             <button type="button" aria-pressed={language === "en"} onClick={() => setLanguage("en")}>EN</button>
             <button type="button" aria-pressed={language === "hi"} onClick={() => setLanguage("hi")}>हिं</button>
           </div>
-          <button className={styles.sarthi} type="button" onClick={() => { setSarthiOpen(true); setSarthiInput(language === "hi" ? `${activeTitle} की कहानी सरल भाषा में बताइए` : `Tell me the story of ${active.title}`); }}>✦ <span>Ask Sārthi</span></button>
+          <button className={styles.sarthi} type="button" onClick={() => {
+            setSarthiOpen(true);
+            setSarthiInput(isRamayanaWorld && worldLens === "compass"
+              ? (language === "hi" ? "रामायण की कथा में आगे कहाँ जाऊँ?" : "Where should I explore next in the Ramayana?")
+              : (language === "hi" ? `${activeTitle} की कहानी सरल भाषा में बताइए` : `Tell me the story of ${active.title}`));
+          }}>✦ <span>Ask Sārthi</span></button>
         </div>
       </header>
 
       {isRamayanaWorld && <nav className={styles.lensSwitcher} aria-label="World lens">
-        {(["story", "route", "connections"] as const).map((lens) => <button key={lens} type="button" aria-pressed={worldLens === lens} onClick={() => setWorldLens(lens)}>{lens === "story" ? "Story" : lens === "route" ? "Route" : "Connections"}</button>)}
+        {(["compass", "story", "route", "connections"] as const).map((lens) => <button key={lens} type="button" aria-pressed={worldLens === lens} onClick={() => setWorldLens(lens)}>{lens === "compass" ? "Whole story" : lens === "story" ? "Play" : lens === "route" ? "Map" : "Connections"}</button>)}
       </nav>}
 
       <section
         className={styles.viewport}
         aria-label={`${journey.hero} story world`}
-        aria-keyshortcuts={isRamayanaWorld ? "ArrowLeft ArrowRight ArrowUp ArrowDown Shift+ArrowLeft Shift+ArrowRight Shift+ArrowUp Shift+ArrowDown Home 0" : undefined}
+        aria-keyshortcuts={cameraEnabled ? "ArrowLeft ArrowRight ArrowUp ArrowDown Shift+ArrowLeft Shift+ArrowRight Shift+ArrowUp Shift+ArrowDown Home 0" : undefined}
         data-camera-scale={camera.scale.toFixed(2)}
         data-camera-x={Math.round(camera.x)}
         data-camera-y={Math.round(camera.y)}
-        data-navigable={isRamayanaWorld ? "true" : undefined}
-        onDoubleClick={() => isRamayanaWorld && commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale > 1.08 ? 1 : 1.22, cameraViewport()))}
+        data-navigable={cameraEnabled ? "true" : undefined}
+        onDoubleClick={() => cameraEnabled && commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale > 1.08 ? 1 : 1.22, cameraViewport()))}
         onKeyDown={handleCameraKeyboard}
         onPointerCancel={handleCameraPointerEnd}
         onPointerDown={handleCameraPointerDown}
@@ -501,10 +511,11 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         onPointerUp={handleCameraPointerEnd}
         onWheel={handleCameraWheel}
         ref={viewportRef}
-        tabIndex={isRamayanaWorld ? 0 : undefined}
+        tabIndex={cameraEnabled ? 0 : undefined}
       >
         <div className={styles.horizon} aria-hidden="true" />
         <JourneyBeatStage stage={sceneBeatStage} />
+        {isRamayanaWorld && worldLens === "compass" && <JourneyCompass compass={storyWorld.compass} language={language} onEnterMoment={openStoryMoment} />}
         {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
           {journey.stops.map((stop, index) => {
             const selected = index === activeIndex;
@@ -580,13 +591,13 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         </div>}
       </section>
 
-      {isRamayanaWorld && <div className={styles.cameraControls} role="group" aria-label={`Scene camera controls, ${journeyCameraPercent(camera.scale)}%`}>
+      {cameraEnabled && <div className={styles.cameraControls} role="group" aria-label={`Scene camera controls, ${journeyCameraPercent(camera.scale)}%`}>
         <button type="button" aria-label="Zoom scene out" disabled={camera.scale <= JOURNEY_CAMERA_MIN_SCALE} onClick={() => commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale - .1, cameraViewport()))}>−</button>
         <button type="button" aria-label="Reset scene view" disabled={camera.scale === 1 && camera.x === 0 && camera.y === 0} onClick={resetCamera}>◎</button>
         <button type="button" aria-label="Zoom scene in" disabled={camera.scale >= JOURNEY_CAMERA_MAX_SCALE} onClick={() => commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale + .1, cameraViewport()))}>+</button>
       </div>}
 
-      {!focusedEncounter && (!isRamayanaWorld || worldLens !== "connections") && <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
+      {!focusedEncounter && (!isRamayanaWorld || worldLens === "story" || worldLens === "route") && <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
         {active.visual && <div className={styles.sceneContext}><span>{active.visual.location}</span><small>Artistic visualization</small></div>}
         <p>{activeMoment ? activeMoment.decisiveChange[language] : copy.kicker}</p>
         <h1>{activeTitle}</h1>
@@ -637,11 +648,11 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         onTravel={openEncounter}
       />}
 
-      <div className={styles.progress} aria-label={`${explored.length} of ${journey.stops.length} scenes explored`}>
+      {(!isRamayanaWorld || worldLens === "story") && <div className={styles.progress} aria-label={`${explored.length} of ${journey.stops.length} scenes explored`}>
         {journey.stops.map((stop, index) => <button type="button" aria-label={`Go to scene ${index + 1}`} onClick={() => travelTo(index)} className={index === activeIndex ? styles.progressActive : exploredSet.has(stop.id) ? styles.progressVisited : ""} key={stop.id} />)}
-      </div>
+      </div>}
 
-      {showGuide && <p className={styles.guide}>{isRamayanaWorld ? "Drag to look · wheel or pinch for depth · → continues" : "Choose a light to move through the story"}</p>}
+      {showGuide && worldLens !== "compass" && <p className={styles.guide}>{isRamayanaWorld ? "Drag to look · wheel or pinch for depth · → continues" : "Choose a light to move through the story"}</p>}
       {showCompletion && <div className={styles.complete}><span>Path discovered</span><strong>The universe continues beyond this route.</strong><div><button type="button" onClick={() => { setShowCompletion(false); travelTo(0); }}>Replay from Lanka</button><Link href="/">Return to the stars</Link></div></div>}
       {sarthiOpen && <button className={styles.scrim} type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi" />}
       <aside className={`${styles.sarthiPanel} ${sarthiOpen ? styles.sarthiPanelOpen : ""}`} aria-hidden={!sarthiOpen} aria-label="Sarthi conversation">

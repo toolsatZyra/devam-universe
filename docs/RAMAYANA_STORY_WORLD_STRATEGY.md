@@ -68,17 +68,20 @@ and exact source doors. It does not yet satisfy the product vision.
   current authorities. Narrative geography must not be presented as historical
   GIS.
 
-### Engineering and performance failure
+### Engineering and performance risk
 
-- The client journey currently imports the entire Atlas node and edge dataset
-  to render one small constellation. That will not scale to hundreds or
-  thousands of story moments.
-- `JourneyPlayer` mixes camera input, story copy, graph traversal, Sārthi,
-  completion, persistence, language, and encounter rendering. Extending the
-  epic inside that component would create a brittle monolith.
+- The Atlas import has now moved behind a server compiler, and the compass is a
+  separate client component. The combined bilingual story payload is bounded
+  below 145 KB uncompressed and 35 KB gzip; adding complete scene copy or media
+  to that eager payload would still be a regression, so later detail must load
+  by arc and scene.
+- `JourneyPlayer` still owns camera input, graph traversal, Sārthi, completion,
+  persistence, and language. The compass must remain isolated, and the next
+  large story feature should extract another stable responsibility rather than
+  extending the player monolith.
 - Story copy, journey stop metadata, scene connections, encounter mappings, and
-  Atlas relationships overlap. A larger corpus would multiply drift and bundle
-  size unless one compiled story-world contract becomes authoritative.
+  Atlas relationships still overlap in places. A larger corpus would multiply
+  drift unless one compiled story-world contract becomes authoritative.
 
 ## Product model: one story moment, many ways in
 
@@ -220,6 +223,18 @@ observed user comprehension remain open; Gate 2 is therefore not yet complete.
 Publish a reviewed high-level route from the beginning through return, with
 map, character, and thread traversal. Every high-level moment links to its
 coverage state, so thin areas are visible rather than disguised.
+
+Current checkpoint: the selected 652-section Dutt expression is partitioned
+exactly once into forty-nine source-addressed story turns across seven
+ordinary-language story worlds. The interface reveals seven worlds first and
+only the selected world's six to eight turns, avoiding a forty-nine-node wall.
+Visitors can enter at any turn and move sequentially in either direction. Each
+turn exposes place, character, and story-thread cues; source coordinates and
+expression limits remain behind disclosure. Only the seven-scene road-home
+turn is labelled playable. The other forty-eight are explicitly labelled
+mapped orientation until their detailed scenes, visuals, and return paths are
+reviewed. Map-, character-, and thread-wide indexes across all forty-nine turns
+remain open, so Gate 3 is advanced but not complete.
 
 ### Gate 4 — selected-expression completion
 

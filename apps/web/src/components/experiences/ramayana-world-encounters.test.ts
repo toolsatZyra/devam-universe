@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
+import { gzipSync } from "node:zlib";
 import { buildRamayanaStoryWorldPack } from "../../data/ramayana-story-world";
 import { getRamayanaBeatStage, RAMAYANA_BEAT_STAGE_COUNT } from "./ramayana-beat-stage";
 import {
@@ -98,7 +99,9 @@ describe("Ramayana return-world encounters", () => {
   });
 
   it("ships a bounded story pack instead of the global Atlas to the client", () => {
-    expect(Buffer.byteLength(JSON.stringify(pack))).toBeLessThan(100_000);
+    const serialized = JSON.stringify(pack);
+    expect(Buffer.byteLength(serialized)).toBeLessThan(145_000);
+    expect(gzipSync(serialized).byteLength).toBeLessThan(35_000);
     const helper = readFileSync(new URL("./ramayana-world-encounters.ts", import.meta.url), "utf8");
     const player = readFileSync(new URL("./journey-player.tsx", import.meta.url), "utf8");
     expect(helper).not.toContain("data/atlas");

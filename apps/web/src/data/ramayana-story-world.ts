@@ -1,4 +1,5 @@
 import { gateways, worldEdges, worldNodes } from "./atlas";
+import { buildRamayanaCompass } from "./ramayana-compass";
 import type { WorldNodeFamily } from "@/lib/domain/atlas";
 import type { StoryMoment, StoryWorldNode, StoryWorldPack, StoryWorldRoute } from "@/lib/domain/story-world";
 
@@ -173,6 +174,7 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
 
   return {
     id: "ramayana-road-home-v1",
+    compass: buildRamayanaCompass(),
     sceneNodeIds,
     nodeMomentIds,
     castNodeIds,
