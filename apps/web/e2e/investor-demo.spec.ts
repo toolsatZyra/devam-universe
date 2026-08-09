@@ -298,13 +298,18 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
 
   await page.getByRole("button", { name: "Reset map view" }).click();
   await page.getByRole("button", { name: "Explore Ramayana" }).click();
-  await expect(page.getByRole("link", { name: "Begin at Ayodhya" })).toBeVisible();
-  await page.getByRole("link", { name: "Begin at Ayodhya" }).click();
+  await expect(page.getByRole("link", { name: "Begin the return journey" })).toBeVisible();
+  await page.getByRole("link", { name: "Begin the return journey" }).click();
   await expect(page.getByRole("region", { name: "Ramayana story world" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Bālakāṇḍa" })).toBeVisible();
-  await expect(page.getByRole("listitem", { name: /2\. Ayodhyākāṇḍa/ })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Leave Lanka" })).toBeVisible();
+  await expect(page.getByRole("listitem", { name: /2\. The sky road remembers/ })).toBeVisible();
+  await page.getByRole("button", { name: "Route" }).click();
+  await expect(page.getByRole("button", { name: /Nandigrama/ })).toBeVisible();
+  await page.getByRole("button", { name: "Connections" }).click();
+  await expect(page.getByRole("link", { name: /The selected Dutt edition/ })).toBeVisible();
+  await page.getByRole("button", { name: "Story" }).click();
   await page.getByRole("button", { name: "हिं" }).click();
-  await expect(page.getByRole("heading", { name: "बालकाण्ड" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "लंका से प्रस्थान" })).toBeVisible();
   await expect(page.getByText("देवम की स्रोत-आधारित सरल कथा")).toBeVisible();
   await page.getByRole("button", { name: "EN", exact: true }).click();
   await expect(page.getByText("Story source", { exact: true })).toBeVisible();
@@ -315,7 +320,7 @@ test("the four curated journeys and mission board are reachable", async ({ page 
   await page.goto("/journeys");
   await expect(page.getByRole("heading", { name: /Choose a thread/ })).toBeVisible();
   for (const title of [
-    "Across the seven kāṇḍas",
+    "The road home to Ayodhya",
     "Inside one hymn to Gaṇapati",
     "The Devīmāhātmya boundary",
     "Six lights, many traditions",

@@ -31,6 +31,13 @@ function readProgress(slug: string): string[] {
 type SceneCopy = { title?: string; kicker: string; story: string; invitation: string };
 
 const storyCopy: Record<string, SceneCopy> = {
+  "leave-lanka": { kicker: "The direction changes", story: "The war is behind them. Rama asks that every ally who carried the struggle be honoured, and the returning company rises from Lanka toward home.", invitation: "Rise into the homeward sky" },
+  "sky-road": { kicker: "The world below becomes memory", story: "Rama points out the places that shaped the journey. Sita does not receive a list of names, but a moving map of loss, friendship, courage, and return.", invitation: "Follow the remembered road" },
+  "bharadvaja-hermitage": { kicker: "Fourteen years narrow to one question", story: "At Bharadvaja's hermitage, Rama asks first about Ayodhya, Bharata, and his mothers. The city is still distant, but home is suddenly close enough to fear and hope for.", invitation: "Send word ahead" },
+  "hanuman-goes-ahead": { kicker: "A message crosses the final distance", story: "Hanuman is asked to learn how Bharata and the city have fared, and to announce that Rama, Sita, and Lakshmana are almost home.", invitation: "Carry the news to Nandigrama" },
+  "bharata-hears": { kicker: "The waiting ends", story: "Bharata asks Hanuman to tell the whole road: the exile, the search, the allies, and the victory. A story carried faithfully becomes the first form of reunion.", invitation: "Prepare the road" },
+  "ayodhya-prepares": { kicker: "A city turns toward homecoming", story: "People, musicians, families, standards, and companions move out to meet the returning party. The world fills with faces because this victory was never Rama's alone.", invitation: "Enter the returning light" },
+  "kingdom-returned": { kicker: "The road ends in responsibility", story: "Bharata returns the kingdom he guarded. Rama accepts the work of kingship again, and the homecoming becomes a public promise rather than a private reward.", invitation: "Complete the homeward path" },
   "bala-kanda": { kicker: "A prince, a bow, a beginning", story: "A young Rama leaves the palace with the sage Vishvamitra, protects a sacred rite, and meets Sita at the bow that no ordinary prince can lift.", invitation: "Follow the first light" },
   "ayodhya-kanda": { kicker: "The night the kingdom changed", story: "On the eve of Rama's coronation, an old promise sends him into exile. Sita and Lakshmana choose the forest over life without him.", invitation: "Leave Ayodhya" },
   "aranya-kanda": { kicker: "Deeper into the forest", story: "The forest becomes a place of wonder, danger, and loss. A golden deer draws Rama away—and Ravana carries Sita toward Lanka.", invitation: "Trace the broken trail" },
@@ -55,6 +62,13 @@ const storyCopy: Record<string, SceneCopy> = {
 };
 
 const hindiStoryCopy: Record<string, SceneCopy> = {
+  "leave-lanka": { title: "लंका से प्रस्थान", kicker: "दिशा बदलती है", story: "युद्ध पीछे छूट चुका है। राम कहते हैं कि संघर्ष में साथ देने वाले हर सहयोगी का सम्मान हो, और सब लंका से घर की ओर उठते हैं।", invitation: "घर लौटते आकाश में बढ़ें" },
+  "sky-road": { title: "आकाश की स्मृति-राह", kicker: "नीचे का संसार स्मृति बनता है", story: "राम यात्रा को बदलने वाले स्थान दिखाते हैं। सीता के सामने नामों की सूची नहीं, बल्कि वियोग, मित्रता, साहस और वापसी का चलता हुआ मानचित्र खुलता है।", invitation: "स्मृति की राह पर चलें" },
+  "bharadvaja-hermitage": { title: "घर अब निकट है", kicker: "चौदह वर्ष एक प्रश्न में सिमटते हैं", story: "भरद्वाज के आश्रम में राम सबसे पहले अयोध्या, भरत और अपनी माताओं का समाचार पूछते हैं। नगर अभी दूर है, पर घर अब आशा और भय दोनों जितना निकट है।", invitation: "आगे समाचार भेजें" },
+  "hanuman-goes-ahead": { title: "हनुमान आगे जाते हैं", kicker: "संदेश अंतिम दूरी पार करता है", story: "हनुमान से कहा जाता है कि वे भरत और नगर का हाल जानें और बताएं कि राम, सीता और लक्ष्मण अब घर के बहुत पास हैं।", invitation: "समाचार नंदिग्राम ले जाएँ" },
+  "bharata-hears": { title: "भरत समाचार सुनते हैं", kicker: "प्रतीक्षा समाप्त होती है", story: "भरत हनुमान से वनवास, खोज, मित्रों और विजय की पूरी राह सुनना चाहते हैं। ईमानदारी से सुनाई गई कथा मिलन का पहला रूप बनती है।", invitation: "वापसी की राह सजाएँ" },
+  "ayodhya-prepares": { title: "अयोध्या तैयार होती है", kicker: "नगर घर लौटने वालों की ओर बढ़ता है", story: "लोग, संगीतकार, परिवार, ध्वज और साथी लौटते हुए दल से मिलने निकलते हैं। संसार चेहरों से भर जाता है, क्योंकि यह विजय कभी अकेले राम की नहीं थी।", invitation: "लौटती रोशनी में प्रवेश करें" },
+  "kingdom-returned": { title: "राज्य लौटाया जाता है", kicker: "राह उत्तरदायित्व पर समाप्त होती है", story: "भरत वह राज्य वापस करते हैं जिसे उन्होंने धरोहर की तरह संभाला। राम फिर राजकार्य स्वीकार करते हैं और घर वापसी निजी पुरस्कार के बजाय सार्वजनिक वचन बन जाती है।", invitation: "घर वापसी की यात्रा पूरी करें" },
   "bala-kanda": { title: "बालकाण्ड", kicker: "एक राजकुमार, एक धनुष, एक आरंभ", story: "युवा राम ऋषि विश्वामित्र के साथ महल से निकलते हैं, उनके यज्ञ की रक्षा करते हैं और उस धनुष के सामने सीता से मिलते हैं जिसे साधारण राजकुमार उठा नहीं सकता।", invitation: "पहली रोशनी के साथ चलें" },
   "ayodhya-kanda": { title: "अयोध्याकाण्ड", kicker: "वह रात जब राज्य बदल गया", story: "राम के राज्याभिषेक से ठीक पहले एक पुराना वचन उन्हें वनवास भेज देता है। सीता और लक्ष्मण उनके बिना महल में रहने के बजाय वन का मार्ग चुनते हैं।", invitation: "अयोध्या से आगे बढ़ें" },
   "aranya-kanda": { title: "अरण्यकाण्ड", kicker: "वन के भीतर और गहरे", story: "वन आश्चर्य, संकट और वियोग का संसार बन जाता है। स्वर्ण मृग राम को दूर ले जाता है और रावण सीता को लंका की ओर ले जाता है।", invitation: "टूटी हुई राह खोजें" },
@@ -101,6 +115,7 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
   const [sarthiBusy, setSarthiBusy] = useState(false);
   const [accountPrompt, setAccountPrompt] = useState(false);
   const [language, setLanguage] = useState<"en" | "hi">("en");
+  const [worldLens, setWorldLens] = useState<"story" | "route" | "connections">("story");
   const guestExchanges = useRef(0);
 
   useEffect(() => {
@@ -129,6 +144,13 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
   const activeTitle = copy.title ?? active.title;
   const exploredSet = useMemo(() => new Set(explored), [explored]);
   const complete = explored.length === journey.stops.length;
+  const isRamayanaWorld = journey.slug === "ramayana";
+  const routeLandmarks = [
+    { label: "Lanka", index: 0, x: 12, y: 76 },
+    { label: "Bharadvaja", index: 2, x: 47, y: 47 },
+    { label: "Nandigrama", index: 3, x: 69, y: 35 },
+    { label: "Ayodhya", index: 5, x: 88, y: 17 },
+  ];
 
   function travelTo(index: number) {
     setActiveIndex(index);
@@ -183,7 +205,7 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
     <main className={styles.shell} data-tone={journey.tone} style={sceneStyle}>
       <div className={styles.space} aria-hidden="true"><span/><span/><span/></div>
       <div className={styles.worldBackdrop} aria-hidden="true">
-        <Image src={`/journeys/${journey.slug}-world-v1.webp`} alt="" fill priority sizes="100vw" />
+        <Image key={active.visual?.asset ?? journey.slug} src={active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`} alt="" fill priority sizes="100vw" />
       </div>
       <header className={styles.hud}>
         <Link className={styles.brand} href="/">
@@ -200,9 +222,13 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
         </div>
       </header>
 
+      {isRamayanaWorld && <nav className={styles.lensSwitcher} aria-label="World lens">
+        {(["story", "route", "connections"] as const).map((lens) => <button key={lens} type="button" aria-pressed={worldLens === lens} onClick={() => setWorldLens(lens)}>{lens === "story" ? "Story" : lens === "route" ? "Route" : "Connections"}</button>)}
+      </nav>}
+
       <section className={styles.viewport} aria-label={`${journey.hero} story world`}>
         <div className={styles.horizon} aria-hidden="true" />
-        <div className={styles.storyPath} role="list" aria-label="Story scenes">
+        {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
           {journey.stops.map((stop, index) => {
             const selected = index === activeIndex;
             const visited = exploredSet.has(stop.id);
@@ -224,13 +250,35 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
               </button>
             );
           })}
-        </div>
+        </div>}
+        {isRamayanaWorld && worldLens === "route" && <div className={styles.routeWorld} aria-label="Narrative route from Lanka to Ayodhya">
+          <div className={styles.routeLine} aria-hidden="true" />
+          {routeLandmarks.map((landmark) => <button
+            type="button"
+            className={`${styles.routeLandmark} ${activeIndex >= landmark.index ? styles.routeLandmarkReached : ""}`}
+            style={{ "--map-x": `${landmark.x}%`, "--map-y": `${landmark.y}%` } as CSSProperties}
+            onClick={() => travelTo(landmark.index)}
+            key={landmark.label}
+          ><span/><strong>{landmark.label}</strong><small>{landmark.index === 0 ? "departure" : landmark.index === 5 ? "homecoming" : "story place"}</small></button>)}
+          <p className={styles.routeBoundary}>Narrative route · not a historical or archaeological map</p>
+        </div>}
+        {isRamayanaWorld && worldLens === "connections" && <div className={styles.connectionWorld} aria-label={`Connections from ${activeTitle}`}>
+          <p><small>Connections discovered here</small><strong>{activeTitle}</strong></p>
+          <div>
+            {active.visual?.connections.map((connection, index) => <Link href={connection.href} className={styles.connectionPortal} style={{ "--portal-index": index } as CSSProperties} key={`${active.id}-${connection.label}`}>
+              <span>{connection.kind}</span><strong>{connection.label}</strong><small>Open this world →</small>
+            </Link>)}
+          </div>
+          <small className={styles.connectionBoundary}>Each portal keeps its own source, place, tradition, and uncertainty boundary.</small>
+        </div>}
       </section>
 
       <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
+        {active.visual && <div className={styles.sceneContext}><span>{active.visual.location}</span><small>Artistic visualization</small></div>}
         <p>{copy.kicker}</p>
         <h1>{activeTitle}</h1>
         <span>{copy.story}</span>
+        {active.visual && <div className={styles.cast} aria-label="Characters in this scene">{active.visual.cast.map((character) => <Link href={`/search?q=${encodeURIComponent(`${character} Ramayana`)}`} key={character}>{character}</Link>)}</div>}
         <small className={styles.retellingLabel}>{language === "hi" ? "देवम की स्रोत-आधारित सरल कथा" : "Devam source-grounded story retelling"}</small>
         <div className={styles.actions}>
           <button type="button" onClick={continueJourney}>{activeIndex === journey.stops.length - 1 ? (language === "hi" ? "यह यात्रा पूरी करें" : "Complete this path") : copy.invitation}<span>→</span></button>

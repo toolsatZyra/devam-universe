@@ -1,4 +1,4 @@
-import { getHeroJourney } from "../../data/hero-experiences";
+import { getHeroLibraryJourney } from "../../data/hero-experiences";
 import type { EvidenceCitation, GroundedSarthiAnswer, SarthiRequest, SarthiUnavailable } from "./contracts";
 import type { HeroSlug } from "../domain/experience";
 
@@ -7,7 +7,7 @@ function isHindi(request: SarthiRequest) {
 }
 
 function journeyCitations(slug: HeroSlug): EvidenceCitation[] {
-  const journey = getHeroJourney(slug);
+  const journey = getHeroLibraryJourney(slug);
   if (!journey) return [];
   return journey.stops.map((stop) => ({
     passageId: `sha256:${stop.citation.sourceSha256}:span:${stop.citation.spanSha256}`,
@@ -16,12 +16,16 @@ function journeyCitations(slug: HeroSlug): EvidenceCitation[] {
     workTitle: stop.citation.workTitle,
     editionTitle: stop.citation.editionTitle,
     locator: { ...stop.citation.locator, span_sha256: stop.citation.spanSha256 },
-    rightsLane: stop.citation.rightsLane === "derivative_allowed" ? "derivative_allowed" : "citation_only",
+    rightsLane: stop.citation.rightsLane === "product_allowed"
+      ? "product_allowed"
+      : stop.citation.rightsLane === "derivative_allowed"
+        ? "derivative_allowed"
+        : "citation_only",
   }));
 }
 
 export function answerHeroPreview(slug: "ramayana" | "durga", request: SarthiRequest): GroundedSarthiAnswer | SarthiUnavailable {
-  const journey = getHeroJourney(slug);
+  const journey = getHeroLibraryJourney(slug);
   if (!journey) return { ok: false, code: "GROUNDING_NOT_CONFIGURED", message: "This hero source path is not connected yet." };
   const hindi = isHindi(request);
 
