@@ -231,7 +231,7 @@ function buildMigration() {
 
   return `-- Generated from apps/web/src/data/atlas.ts by
 -- tools/compile_current_living_atlas_seed.cjs.
--- This migration upserts app-owned navigation metadata only. It does not alter
+-- This migration upserts app-owned nodes and replaces app-owned edge metadata only. It does not alter
 -- RLS, functions, grants, source evidence, or independently managed Atlas rows.
 
 begin;
@@ -253,6 +253,13 @@ on conflict (slug) do update set
   rights_lane = excluded.rights_lane,
   publication_state = excluded.publication_state,
   updated_at = now();
+
+-- Edge identity in Postgres is the endpoint-and-label triple. Remove only the
+-- exact reviewed app-owned source IDs before reinserting so a formerly
+-- misrouted or relabelled app edge cannot survive beside its current version.
+-- Independently managed edges have no reviewed source ID and remain untouched.
+delete from public.atlas_edges
+where visual->>'sourceId' = any (array[${edgeIdArray}]);
 
 insert into public.atlas_edges (
   source_node_id, target_node_id, label, visual, rights_lane, publication_state

@@ -329,6 +329,8 @@ describe("Living Atlas exploration data", () => {
       expect(sql).toContain("Sacred Time Atlas lanes are missing, unbounded, or not source-addressed");
       expect(sql).toContain("Sacred Time practice-cycle nodes are missing or outside their evidence boundaries");
       expect(sql).toContain("Sacred Time practice-cycle routes are missing or not source-addressed");
+      expect(sql).toContain("delete from public.atlas_edges");
+      expect(sql).toContain("where visual->>'sourceId' = any");
       expect(sql).not.toContain("alter function");
       expect(sql).not.toContain("grant execute");
     } finally {
