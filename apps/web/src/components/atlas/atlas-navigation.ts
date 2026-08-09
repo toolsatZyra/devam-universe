@@ -25,3 +25,13 @@ export function advanceAtlasTrail(trail: string[], destinationId: string, maximu
   if (previousIndex >= 0) return trail.slice(0, previousIndex + 1);
   return [...trail, destinationId].slice(-maximum);
 }
+
+type DirectionalAtlasEdge = { from: string; to: string };
+
+export function preferAtlasEdgeForAnchor(
+  current: DirectionalAtlasEdge,
+  candidate: DirectionalAtlasEdge,
+  anchorId: string,
+) {
+  return current.from !== anchorId && candidate.from === anchorId;
+}
