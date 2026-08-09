@@ -84,6 +84,20 @@ const LIVING_CULTURE_EDGE_IDS = [
   "public-art-to-installations", "public-art-to-dhak", "clay-image-to-seasonal-return", "installations-to-kolkata",
   "seasonal-return-to-kolkata",
 ];
+const HAMPI_KISHKINDHA_NODE_SLUGS = [
+  "kishkindha-living-landscape", "anegundi", "anjanadri-hill-tradition", "tungabhadra-landscape",
+  "hampi-world-heritage", "vijayanagara-capital", "vijayanagara-empire", "krishna-deva-raya",
+  "virupaksha-temple-hampi", "vitthala-temple-complex", "stone-chariot-hampi",
+  "vijayanagara-architecture", "talikota-1565",
+];
+const HAMPI_KISHKINDHA_EDGE_IDS = [
+  "kishkindha-story-to-living-landscape", "living-kishkindha-to-anegundi", "anegundi-to-anjanadri",
+  "anjanadri-to-hanuman", "anegundi-to-tungabhadra", "tungabhadra-to-hampi",
+  "hampi-to-vijayanagara-capital", "capital-to-vijayanagara-empire", "vijayanagara-empire-to-krishnadevaraya",
+  "hampi-to-virupaksha", "virupaksha-to-shiva", "hampi-to-vitthala", "vitthala-to-stone-chariot",
+  "vijayanagara-to-architecture", "architecture-to-vitthala", "capital-to-talikota-1565",
+  "talikota-to-hampi-horizon", "hampi-to-vijayanagara-architecture",
+];
 const WORLD_NODE_FAMILIES = new Set([
   "being_person", "event_story", "place_polity", "time_observance", "practice_material",
   "source_expression", "institution_community", "idea_wisdom", "art_culture", "historical_process",
@@ -162,14 +176,14 @@ function nodeRow(node, gateway) {
 }
 
 function validateAtlas(gateways, worldNodes, worldEdges) {
-  if (gateways.length !== 5 || worldNodes.length !== 141 || worldEdges.length !== 233) {
+  if (gateways.length !== 5 || worldNodes.length !== 154 || worldEdges.length !== 251) {
     throw new Error(`Unexpected Atlas shape: ${gateways.length} gateways, ${worldNodes.length} world nodes, ${worldEdges.length} edges`);
   }
   const nodeIds = [...gateways, ...worldNodes].map((node) => node.id);
-  if (new Set(nodeIds).size !== 146) throw new Error("Atlas node IDs must be unique");
-  if (new Set(worldEdges.map((edge) => edge.id)).size !== 233) throw new Error("Atlas edge IDs must be unique");
+  if (new Set(nodeIds).size !== 159) throw new Error("Atlas node IDs must be unique");
+  if (new Set(worldEdges.map((edge) => edge.id)).size !== 251) throw new Error("Atlas edge IDs must be unique");
   const edgeKeys = worldEdges.map((edge) => `${edge.from}\u0000${edge.to}\u0000${edge.relation}`);
-  if (new Set(edgeKeys).size !== 233) throw new Error("Atlas edge endpoint and label triples must be unique");
+  if (new Set(edgeKeys).size !== 251) throw new Error("Atlas edge endpoint and label triples must be unique");
   if (worldNodes.some((node) => !WORLD_NODE_FAMILIES.has(node.family))) throw new Error("Atlas nodes must declare a normalized family");
   const ids = new Set(nodeIds);
   for (const edge of worldEdges) {
@@ -215,6 +229,14 @@ function validateAtlas(gateways, worldNodes, worldEdges) {
   }
   if (LIVING_CULTURE_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId && edge.sourceRef?.startsWith("citation:https://ich.unesco.org/")))) {
     throw new Error("Living-culture travel routes are missing official citation-only sources");
+  }
+  if (HAMPI_KISHKINDHA_NODE_SLUGS.some((slug) => !worldNodes.some((node) => node.id === slug && node.gatewayId === "ramayana" && node.evidenceBoundary.length >= 100))) {
+    throw new Error("Hampi-Kishkindha-Vijayanagara place-history constellation is incomplete");
+  }
+  if (HAMPI_KISHKINDHA_EDGE_IDS.some((edgeId) => !worldEdges.some((edge) => edge.id === edgeId
+    && /^citation:https:\/\/(?:whc\.unesco\.org|karnatakatourism\.org)\//.test(edge.sourceRef ?? "")
+    && edge.evidenceBoundary?.length >= 100))) {
+    throw new Error("Hampi-Kishkindha-Vijayanagara routes are missing official citation-only sources or evidence boundaries");
   }
   const duttNode = worldNodes.find((candidate) => candidate.id === "dutt-ramayana");
   const duttEdge = worldEdges.find((candidate) => candidate.id === "ramayana-dutt-ramayana");
@@ -507,6 +529,29 @@ begin
       and edge.visual->>'relationKind' is not null
   ) <> ${LIVING_CULTURE_EDGE_IDS.length} then
     raise exception 'Living-culture travel routes are missing official citation-only sources';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_nodes atlas
+    where atlas.slug = any (array[${HAMPI_KISHKINDHA_NODE_SLUGS.map(sqlText).join(", ")}])
+      and atlas.visual->>'gatewayId' = 'ramayana'
+      and atlas.visual->>'family' is not null
+      and atlas.visual->>'evidenceBoundary' is not null
+  ) <> ${HAMPI_KISHKINDHA_NODE_SLUGS.length} then
+    raise exception 'Hampi-Kishkindha-Vijayanagara nodes are missing or outside their evidence boundaries';
+  end if;
+  if (
+    select count(*)
+    from public.atlas_edges edge
+    where edge.visual->>'sourceId' = any (array[${HAMPI_KISHKINDHA_EDGE_IDS.map(sqlText).join(", ")}])
+      and (
+        edge.visual->>'sourceRef' like 'citation:https://whc.unesco.org/%'
+        or edge.visual->>'sourceRef' like 'citation:https://karnatakatourism.org/%'
+      )
+      and edge.visual->>'relationKind' is not null
+      and edge.visual->>'evidenceBoundary' is not null
+  ) <> ${HAMPI_KISHKINDHA_EDGE_IDS.length} then
+    raise exception 'Hampi-Kishkindha-Vijayanagara routes are missing official citation-only sources';
   end if;
   if not exists (
     select 1

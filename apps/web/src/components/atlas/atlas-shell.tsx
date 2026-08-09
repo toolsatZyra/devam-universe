@@ -26,6 +26,7 @@ import {
   type AtlasPoint as Point,
   type AtlasView as ViewTransform,
 } from "./atlas-camera";
+import { advanceAtlasTrail, atlasDepthLabels, atlasNodeZoomCompensation, resolveAtlasDepth } from "./atlas-navigation";
 import styles from "./atlas-shell.module.css";
 
 type AtlasShellProps = {
@@ -115,6 +116,9 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false);
   const [introVisible, setIntroVisible] = useState(true);
+  const [traveling, setTraveling] = useState(false);
+  const [travelTrail, setTravelTrail] = useState<string[]>([]);
+  const [discoveredIds, setDiscoveredIds] = useState<Set<string>>(() => new Set());
   const viewRef = useRef(view);
   const viewportRef = useRef<HTMLDivElement>(null);
   const sceneCanvasRef = useRef<HTMLDivElement>(null);
@@ -125,6 +129,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   const wasDraggedRef = useRef(false);
   const visitedGatewaysRef = useRef(new Set<string>(["ramayana"]));
   const guestSarthiExchangesRef = useRef(0);
+  const travelTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     trackProductEvent("atlas_opened", undefined, { oncePerSession: true });
@@ -135,6 +140,10 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     return () => {
       window.clearTimeout(motionSync);
     };
+  }, []);
+
+  useEffect(() => () => {
+    if (travelTimeoutRef.current !== null) window.clearTimeout(travelTimeoutRef.current);
   }, []);
 
   useEffect(() => {
@@ -160,6 +169,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
   );
   const selectedStory = selected ? gatewayStory(selected.id) : null;
   const conversationSubject = focusedNode?.label ?? selected?.title ?? "the Devam universe";
+  const atlasDepth = resolveAtlasDepth(Boolean(selectedId), view.scale);
   const points = useMemo(() => {
     const result: Record<string, Point> = {};
     gateways.forEach((gateway) => { result[gateway.id] = gateway.position; });
@@ -206,6 +216,28 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     () => new Set(connectedPaths.filter((path) => worldNodes.some((node) => node.id === path.destinationId)).map((path) => path.destinationId)),
     [connectedPaths, worldNodes],
   );
+
+  const trailItems = useMemo(() => {
+    const labels = new Map<string, string>([
+      ...gateways.map((gateway) => [gateway.id, gateway.title] as const),
+      ...worldNodes.map((node) => [node.id, node.label] as const),
+    ]);
+    return travelTrail.map((id) => ({ id, label: labels.get(id) ?? id }));
+  }, [gateways, travelTrail, worldNodes]);
+
+  const registerTravel = useCallback((destinationId: string) => {
+    setTravelTrail((current) => advanceAtlasTrail(current, destinationId));
+    setDiscoveredIds((current) => {
+      if (current.has(destinationId)) return current;
+      const next = new Set(current);
+      next.add(destinationId);
+      return next;
+    });
+    setTraveling(false);
+    window.requestAnimationFrame(() => setTraveling(true));
+    if (travelTimeoutRef.current !== null) window.clearTimeout(travelTimeoutRef.current);
+    travelTimeoutRef.current = window.setTimeout(() => setTraveling(false), 720);
+  }, []);
 
   const readViewport = useCallback(() => {
     const viewport = viewportRef.current;
@@ -262,12 +294,14 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     setDragging(false);
     setSelectedId(null);
     setFocusedId(null);
+    setTravelTrail([]);
   }, [commitView]);
 
   const focusAt = useCallback((position: Point, scale: number) => {
     const viewport = readViewport();
     if (!viewport) return;
-    commitView(focusAtlasPosition(position, scale, viewport));
+    const focus = viewport.width <= 760 ? { x: 0.5, y: 0.32 } : { x: 0.5, y: 0.46 };
+    commitView(focusAtlasPosition(position, scale, viewport, focus));
   }, [commitView, readViewport]);
 
   const selectGateway = useCallback((gateway: Gateway) => {
@@ -285,17 +319,19 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     setIntroVisible(false);
     setSelectedId(gatewayId);
     setFocusedId(gatewayId);
+    registerTravel(gatewayId);
     focusAt(gateway.position, 1.34);
     trackProductEvent("atlas_gateway_opened", gatewayId);
-  }, [account.signedIn, focusAt]);
+  }, [account.signedIn, focusAt, registerTravel]);
 
   const selectWorldNode = useCallback((node: WorldNode) => {
     if (wasDraggedRef.current) return;
     setIntroVisible(false);
     setSelectedId(node.gatewayId);
     setFocusedId(node.id);
+    registerTravel(node.id);
     focusAt(node.position, Math.max(1.72, node.revealAt + .3));
-  }, [focusAt]);
+  }, [focusAt, registerTravel]);
 
   const followConnection = useCallback((destinationId: string) => {
     const gateway = gateways.find((candidate) => candidate.id === destinationId);
@@ -306,6 +342,11 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     const node = worldNodes.find((candidate) => candidate.id === destinationId);
     if (node) selectWorldNode(node);
   }, [gateways, selectGateway, selectWorldNode, worldNodes]);
+
+  const followPreviousDiscovery = useCallback(() => {
+    const previousId = travelTrail.at(-2);
+    if (previousId) followConnection(previousId);
+  }, [followConnection, travelTrail]);
 
   const handleWheel = (event: ReactWheelEvent<HTMLDivElement>) => {
     event.preventDefault();
@@ -442,10 +483,11 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
     "--star-y-dust": `${view.y * .0595}px`,
     "--star-x-near": `${view.x * .0805}px`,
     "--star-y-near": `${view.y * .0805}px`,
+    "--node-compensation": atlasNodeZoomCompensation(view.scale),
   } as CSSProperties;
 
   return (
-    <main className={styles.shell} data-motion={motionMode} style={sceneStyle}>
+    <main className={`${styles.shell} ${traveling ? styles.traveling : ""}`} data-motion={motionMode} data-depth={atlasDepth} style={sceneStyle}>
       <div className={styles.deepSpace} aria-hidden="true">
         <span className={styles.nebulaA} />
         <span className={styles.nebulaB} />
@@ -453,6 +495,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
         <span className={styles.starsFar} />
         <span className={styles.starsMid} />
         <span className={styles.starsNear} />
+        <span className={styles.warpField} />
       </div>
 
       <header className={styles.hud}>
@@ -465,6 +508,31 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
           <Link href="/account" aria-label={account.signedIn ? "Open your account" : "Sign in"}>{account.signedIn ? account.label : <Icon name="user" />}</Link>
         </div>
       </header>
+
+      <nav className={styles.wayfinder} aria-label="Atlas travel trail">
+        <button type="button" onClick={followPreviousDiscovery} disabled={travelTrail.length < 2} aria-label="Return to the previous discovery">
+          <span aria-hidden="true">&larr;</span>
+        </button>
+        <div className={styles.depthReadout}>
+          <small>Depth</small>
+          <strong>{atlasDepthLabels[atlasDepth]}</strong>
+        </div>
+        <div className={styles.travelTrail} aria-label="Recent discoveries">
+          {trailItems.map((item, index) => (
+            <button
+              type="button"
+              key={item.id}
+              onClick={() => followConnection(item.id)}
+              aria-current={index === trailItems.length - 1 ? "location" : undefined}
+              aria-label={`Travel back to ${item.label}`}
+              title={item.label}
+            >
+              <span />
+            </button>
+          ))}
+        </div>
+        <small className={styles.discoveryCount}>{discoveredIds.size} found</small>
+      </nav>
 
       <section
         className={`${styles.viewport} ${dragging ? styles.dragging : ""}`}
@@ -526,6 +594,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
                   type="button"
                   onClick={() => selectWorldNode(node)}
                   aria-label={`${node.label}, ${node.kind}`}
+                  data-family={node.family}
                   aria-hidden={!visible}
                   tabIndex={visible ? 0 : -1}
                 >
@@ -574,7 +643,7 @@ export function AtlasShell({ gateways, worldEdges, worldNodes, account }: AtlasS
           <span>{focusedNode?.summary ?? selectedStory?.story}</span>
           <div className={styles.cardActions}>
             {selected && <Link className={styles.enterWorld} href={`/journeys/${selected.id}`}>{selectedStory?.action}<Icon name="arrow" size={17} /></Link>}
-            {focusedNode && <Link href={`/search?q=${encodeURIComponent(focusedNode.searchQuery)}`}>Find this story</Link>}
+            {focusedNode && <Link href={`/search?q=${encodeURIComponent(focusedNode.searchQuery)}`}>Open evidence</Link>}
           </div>
           {connectedPaths.length ? (
             <div className={styles.connectedPaths}>

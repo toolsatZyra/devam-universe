@@ -197,6 +197,45 @@ paraphrases with citation-only metadata and no quotation. The pattern is a
 template for future routes through theatre, dance, music, architecture, craft,
 pilgrimage, dynasties, teachers, communities, and historical transmission.
 
+## Hampi-Kishkindha-Vijayanagara place-history constellation
+
+The first place-history implementation proves that one continuous game route
+can cross different kinds of truth without flattening them. It adds thirteen
+destinations and eighteen official-source, citation-only routes:
+
+- **Narrative place -> living belief:** the selected Ramayana Kishkindha
+  story-world opens a present Anegundi-Anjanadri association, explicitly
+  labelled as living belief rather than historical proof.
+- **Living settlement -> physical landscape:** Anegundi and Anjanadri open the
+  Tungabhadra river-and-boulder basin without turning a modern place tradition
+  into literal epic cartography.
+- **Landscape -> archaeology -> capital:** the basin opens UNESCO Hampi and the
+  material systems of the Vijayanagara capital, while narrative Kishkindha and
+  the attested medieval city remain distinct entities.
+- **Capital -> empire -> ruler:** the capital opens the wider Vijayanagara
+  polity and Krishna Deva Raya as a historically attested ruler, not an epic
+  kingdom or mythic king.
+- **Heritage -> living temple:** Hampi opens Virupaksha as both a monumental
+  site and a continuing Shiva pilgrimage centre whose religious authority is
+  not replaced by heritage documentation.
+- **Architecture -> object:** the Vitthala complex and stone chariot are
+  encounters inside a broader built, sacred, civic, hydraulic, and landscape
+  system rather than isolated tourist icons.
+- **Capital -> rupture -> archaeological horizon:** the 1565 Talikota rupture
+  opens conquest, pillage, abandonment, survival, memory, and archaeology
+  without becoming a single-cause history of imperial decline.
+
+Search and Sarthi serve concise English and Hindi Devam syntheses with links to
+the official UNESCO and Karnataka Tourism pages. Their source prose is neither
+copied nor represented as a retained source original. No node supplies live
+travel, access, safety, conservation, temple, or ritual authority.
+
+The associated interaction tranche adds a compact wayfinder, a seven-stop
+travel trail, one-action backtracking, named depth levels, distinct node-family
+silhouettes, zoom-compensated landmarks, and a brief warp cue. These are the
+minimum reusable game systems for later worlds; the constellation is a proof of
+the scalable pattern, not the intended breadth ceiling.
+
 ## Expansion order
 
 Expansion is demand-driven by enjoyable journeys, not raw node counts:

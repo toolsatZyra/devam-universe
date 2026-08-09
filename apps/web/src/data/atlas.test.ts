@@ -122,7 +122,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(141);
+    expect(worldNodes).toHaveLength(154);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -146,6 +146,34 @@ describe("Living Atlas exploration data", () => {
       expect(node.family.length).toBeGreaterThan(5);
       expect(reachable.get(node.gatewayId)?.has(node.id), `${node.id} is disconnected from ${node.gatewayId}`).toBe(true);
     }
+  });
+
+  it("makes Kishkindha, Hampi, and Vijayanagara a traversable but evidence-separated world", () => {
+    const nodeIds = [
+      "kishkindha-living-landscape", "anegundi", "anjanadri-hill-tradition", "tungabhadra-landscape",
+      "hampi-world-heritage", "vijayanagara-capital", "vijayanagara-empire", "krishna-deva-raya",
+      "virupaksha-temple-hampi", "vitthala-temple-complex", "stone-chariot-hampi",
+      "vijayanagara-architecture", "talikota-1565",
+    ];
+    expect(worldNodes.filter((node) => nodeIds.includes(node.id))).toHaveLength(nodeIds.length);
+    const route = [
+      ["kishkindha-story-world", "kishkindha-living-landscape"],
+      ["kishkindha-living-landscape", "anegundi"],
+      ["anegundi", "tungabhadra-landscape"],
+      ["tungabhadra-landscape", "hampi-world-heritage"],
+      ["hampi-world-heritage", "vijayanagara-capital"],
+      ["vijayanagara-capital", "vijayanagara-empire"],
+      ["vijayanagara-empire", "krishna-deva-raya"],
+    ];
+    for (const [from, to] of route) {
+      const edge = worldEdges.find((candidate) => candidate.from === from && candidate.to === to);
+      expect(edge, `${from} must connect to ${to}`).toBeDefined();
+      expect(edge?.sourceRef).toMatch(/^citation:https:\/\/(?:whc\.unesco\.org|karnatakatourism\.org)\//);
+      expect(edge?.evidenceBoundary?.length ?? 0).toBeGreaterThan(100);
+    }
+    expect(worldNodes.find((node) => node.id === "kishkindha-living-landscape")?.evidenceBoundary).toContain("living place-belief");
+    expect(worldNodes.find((node) => node.id === "hampi-world-heritage")?.evidenceBoundary).toContain("historical and archaeological");
+    expect(worldNodes.find((node) => node.id === "vijayanagara-empire")?.evidenceBoundary).toContain("historically attested polity");
   });
 
   it("supports an evidence-bounded cross-world path from Ramayana to Durga Puja", () => {
@@ -394,8 +422,8 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 146 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 233 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 159 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 251 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming tradition");
       expect(sql).toContain("connected Shakta goddess traditions");
       expect(sql).toContain("Devimahatmya semantic Atlas nodes are not bound to their entities and source boundary");

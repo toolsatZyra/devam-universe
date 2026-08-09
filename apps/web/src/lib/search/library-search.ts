@@ -15,6 +15,7 @@ import { searchGaneshaPuranaStructure } from "./ganesha-purana-structure-search"
 import { searchGanapatiAtharvashirsha } from "./ganapatyatharvashirsha-search";
 import { searchDuttRamayanaStructure } from "./dutt-ramayana-structure-search";
 import { searchLivingCultureWorld } from "./living-culture-world";
+import { searchHampiKishkindhaWorld } from "./hampi-kishkindha-world";
 
 export type LibrarySearchResult = {
   id: string;
@@ -120,7 +121,10 @@ export async function searchLibrary(
   const atharvashirshaResults = searchGanapatiAtharvashirsha(query, languageCode);
   const duttRamayanaResults = searchDuttRamayanaStructure(query, languageCode);
   const livingCultureResults = searchLivingCultureWorld(query, languageCode);
-  const compactResults = livingCultureResults.length > 0
+  const connectedWorldResults = searchHampiKishkindhaWorld(query, languageCode);
+  const compactResults = connectedWorldResults.length > 0
+    ? connectedWorldResults
+    : livingCultureResults.length > 0
     ? livingCultureResults
     : ritualResults.length > 0
     ? ritualResults
