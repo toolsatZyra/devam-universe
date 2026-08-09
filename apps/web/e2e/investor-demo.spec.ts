@@ -438,7 +438,10 @@ test("Sarthi answers from the bounded Ramcharitmanas edition and enforces the gu
 
 test("Today resolves a location-aware Diwali practice without flattening traditions", async ({ page }) => {
   await page.goto("/today");
-  await page.getByLabel("Date").fill("2026-11-08");
+  await page.waitForLoadState("networkidle");
+  const dateInput = page.getByLabel("Date");
+  await dateInput.fill("2026-11-08");
+  await expect(dateInput).toHaveValue("2026-11-08");
   await page.getByLabel("Place").selectOption("mumbai");
   await page.getByLabel("Practice context").selectOption("smarta-west-india");
   await page.getByRole("button", { name: "Show my day" }).click();
