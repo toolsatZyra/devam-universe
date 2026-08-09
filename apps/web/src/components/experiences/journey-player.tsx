@@ -2,9 +2,30 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useMemo, useRef, useState, type CSSProperties, type FormEvent } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+  type FormEvent,
+  type KeyboardEvent as ReactKeyboardEvent,
+  type PointerEvent as ReactPointerEvent,
+  type WheelEvent as ReactWheelEvent,
+} from "react";
 import type { HeroJourney, JourneyStop } from "@/lib/domain/experience";
 import { canGuestAskSarthi } from "@/lib/account/guest-preview";
+import {
+  JOURNEY_CAMERA_DEFAULT,
+  JOURNEY_CAMERA_MAX_SCALE,
+  JOURNEY_CAMERA_MIN_SCALE,
+  constrainJourneyCamera,
+  journeyCameraPercent,
+  panJourneyCamera,
+  pinchJourneyCamera,
+  zoomJourneyCamera,
+  type JourneyCameraView,
+} from "./journey-camera";
 import styles from "./journey-player.module.css";
 
 type JourneySarthiReply = {
@@ -29,6 +50,30 @@ function readProgress(slug: string): string[] {
 }
 
 type SceneCopy = { title?: string; kicker: string; story: string; invitation: string };
+
+type PointerPoint = { x: number; y: number };
+type CameraGesture = {
+  pointers: Map<number, PointerPoint>;
+  startView: JourneyCameraView;
+  startCenter: PointerPoint;
+  startDistance: number;
+  moved: boolean;
+  hadMultiple: boolean;
+};
+
+function pointerCenter(points: PointerPoint[]) {
+  const total = points.reduce((sum, point) => ({ x: sum.x + point.x, y: sum.y + point.y }), { x: 0, y: 0 });
+  return { x: total.x / points.length, y: total.y / points.length };
+}
+
+function pointerDistance(points: PointerPoint[]) {
+  if (points.length < 2) return 0;
+  return Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y);
+}
+
+function isInteractiveTarget(target: EventTarget | null) {
+  return target instanceof Element && Boolean(target.closest("a,button,input,textarea,summary,details"));
+}
 
 const storyCopy: Record<string, SceneCopy> = {
   "leave-lanka": { kicker: "The direction changes", story: "The war is behind them. Rama asks that every ally who carried the struggle be honoured, and the returning company rises from Lanka toward home.", invitation: "Rise into the homeward sky" },
@@ -116,7 +161,21 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
   const [accountPrompt, setAccountPrompt] = useState(false);
   const [language, setLanguage] = useState<"en" | "hi">("en");
   const [worldLens, setWorldLens] = useState<"story" | "route" | "connections">("story");
+  const [camera, setCamera] = useState<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
+  const [cameraDragging, setCameraDragging] = useState(false);
+  const [showCompletion, setShowCompletion] = useState(false);
   const guestExchanges = useRef(0);
+  const viewportRef = useRef<HTMLElement | null>(null);
+  const cameraRef = useRef<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
+  const lastTapRef = useRef<{ at: number; x: number; y: number } | null>(null);
+  const cameraGesture = useRef<CameraGesture>({
+    pointers: new Map(),
+    startView: { ...JOURNEY_CAMERA_DEFAULT },
+    startCenter: { x: 0, y: 0 },
+    startDistance: 0,
+    moved: false,
+    hadMultiple: false,
+  });
 
   useEffect(() => {
     const saved = readProgress(journey.slug);
@@ -143,7 +202,6 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
   const copy = sceneCopy(active, language);
   const activeTitle = copy.title ?? active.title;
   const exploredSet = useMemo(() => new Set(explored), [explored]);
-  const complete = explored.length === journey.stops.length;
   const isRamayanaWorld = journey.slug === "ramayana";
   const routeLandmarks = [
     { label: "Lanka", index: 0, x: 12, y: 76 },
@@ -152,9 +210,35 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
     { label: "Ayodhya", index: 5, x: 88, y: 17 },
   ];
 
+  function cameraViewport() {
+    const viewport = viewportRef.current;
+    return viewport ? { width: viewport.clientWidth, height: viewport.clientHeight } : undefined;
+  }
+
+  function commitCamera(next: JourneyCameraView) {
+    const constrained = constrainJourneyCamera(next, cameraViewport());
+    cameraRef.current = constrained;
+    setCamera(constrained);
+  }
+
+  function resetCamera() {
+    commitCamera({ ...JOURNEY_CAMERA_DEFAULT });
+  }
+
+  function rebaseGesture() {
+    const gesture = cameraGesture.current;
+    const points = [...gesture.pointers.values()];
+    gesture.startView = { ...cameraRef.current };
+    gesture.startCenter = points.length ? pointerCenter(points) : { x: 0, y: 0 };
+    gesture.startDistance = pointerDistance(points);
+    gesture.moved = false;
+  }
+
   function travelTo(index: number) {
     setActiveIndex(index);
     setShowGuide(false);
+    setShowCompletion(false);
+    resetCamera();
   }
 
   function continueJourney() {
@@ -162,6 +246,101 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
     setExplored(nextExplored);
     window.localStorage.setItem(journeyProgressKey(journey.slug), JSON.stringify(nextExplored));
     if (activeIndex < journey.stops.length - 1) travelTo(activeIndex + 1);
+    else setShowCompletion(true);
+  }
+
+  function handleCameraPointerDown(event: ReactPointerEvent<HTMLElement>) {
+    if (!isRamayanaWorld || isInteractiveTarget(event.target)) return;
+    event.currentTarget.setPointerCapture(event.pointerId);
+    if (cameraGesture.current.pointers.size === 0) cameraGesture.current.hadMultiple = false;
+    cameraGesture.current.pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+    if (cameraGesture.current.pointers.size > 1) cameraGesture.current.hadMultiple = true;
+    rebaseGesture();
+    setCameraDragging(true);
+  }
+
+  function handleCameraPointerMove(event: ReactPointerEvent<HTMLElement>) {
+    const gesture = cameraGesture.current;
+    const previous = gesture.pointers.get(event.pointerId);
+    if (!previous) return;
+    const nextPoint = { x: event.clientX, y: event.clientY };
+    if (Math.hypot(nextPoint.x - previous.x, nextPoint.y - previous.y) > 2) gesture.moved = true;
+    gesture.pointers.set(event.pointerId, nextPoint);
+    const points = [...gesture.pointers.values()];
+    const center = pointerCenter(points);
+    const delta = { x: center.x - gesture.startCenter.x, y: center.y - gesture.startCenter.y };
+    if (points.length > 1 && gesture.startDistance > 0) {
+      commitCamera(pinchJourneyCamera(
+        gesture.startView,
+        gesture.startDistance,
+        pointerDistance(points),
+        delta,
+        cameraViewport(),
+      ));
+      return;
+    }
+    commitCamera(panJourneyCamera(gesture.startView, delta, cameraViewport()));
+  }
+
+  function handleCameraPointerEnd(event: ReactPointerEvent<HTMLElement>) {
+    const gesture = cameraGesture.current;
+    const wasSinglePointer = gesture.pointers.size === 1;
+    const wasTap = event.type === "pointerup" && wasSinglePointer && !gesture.moved && !gesture.hadMultiple;
+    gesture.pointers.delete(event.pointerId);
+    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+
+    if (event.pointerType === "touch" && wasTap) {
+      const now = event.timeStamp;
+      const previousTap = lastTapRef.current;
+      if (previousTap && now - previousTap.at < 360 && Math.hypot(event.clientX - previousTap.x, event.clientY - previousTap.y) < 48) {
+        commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale > 1.08 ? 1 : 1.22, cameraViewport()));
+        lastTapRef.current = null;
+      } else {
+        lastTapRef.current = { at: now, x: event.clientX, y: event.clientY };
+      }
+    }
+
+    if (gesture.pointers.size) rebaseGesture();
+    else {
+      gesture.hadMultiple = false;
+      setCameraDragging(false);
+    }
+  }
+
+  function handleCameraWheel(event: ReactWheelEvent<HTMLElement>) {
+    if (!isRamayanaWorld) return;
+    event.preventDefault();
+    const scale = cameraRef.current.scale * Math.exp(-event.deltaY * .0012);
+    commitCamera(zoomJourneyCamera(cameraRef.current, scale, cameraViewport()));
+  }
+
+  function handleCameraKeyboard(event: ReactKeyboardEvent<HTMLElement>) {
+    if (!isRamayanaWorld || event.target !== event.currentTarget) return;
+    if (event.shiftKey && ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) {
+      event.preventDefault();
+      const delta = event.key === "ArrowLeft" ? { x: -48, y: 0 }
+        : event.key === "ArrowRight" ? { x: 48, y: 0 }
+          : event.key === "ArrowUp" ? { x: 0, y: -48 }
+            : { x: 0, y: 48 };
+      commitCamera(panJourneyCamera(cameraRef.current, delta, cameraViewport()));
+      return;
+    }
+    if (event.key === "ArrowLeft" && activeIndex > 0) {
+      event.preventDefault();
+      travelTo(activeIndex - 1);
+    } else if (event.key === "ArrowRight") {
+      event.preventDefault();
+      continueJourney();
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale + .08, cameraViewport()));
+    } else if (event.key === "ArrowDown") {
+      event.preventDefault();
+      commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale - .08, cameraViewport()));
+    } else if (event.key === "Home" || event.key === "0") {
+      event.preventDefault();
+      resetCamera();
+    }
   }
 
   async function askSarthi(event: FormEvent<HTMLFormElement>) {
@@ -199,12 +378,15 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
     "--path-offset": `${activeIndex * -230 - 115}px`,
     "--path-width": `${journey.stops.length * 230}px`,
     "--backdrop-shift": `${journey.stops.length > 1 ? 4 - (activeIndex / (journey.stops.length - 1)) * 8 : 0}%`,
+    "--camera-x": `${camera.x}px`,
+    "--camera-y": `${camera.y}px`,
+    "--camera-scale": camera.scale,
   } as CSSProperties;
 
   return (
     <main className={styles.shell} data-tone={journey.tone} style={sceneStyle}>
       <div className={styles.space} aria-hidden="true"><span/><span/><span/></div>
-      <div className={styles.worldBackdrop} aria-hidden="true">
+      <div className={`${styles.worldBackdrop} ${cameraDragging ? styles.worldBackdropDragging : ""}`} aria-hidden="true">
         <Image key={active.visual?.asset ?? journey.slug} src={active.visual?.asset ?? `/journeys/${journey.slug}-world-v1.webp`} alt="" fill priority sizes="100vw" />
       </div>
       <header className={styles.hud}>
@@ -226,7 +408,24 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
         {(["story", "route", "connections"] as const).map((lens) => <button key={lens} type="button" aria-pressed={worldLens === lens} onClick={() => setWorldLens(lens)}>{lens === "story" ? "Story" : lens === "route" ? "Route" : "Connections"}</button>)}
       </nav>}
 
-      <section className={styles.viewport} aria-label={`${journey.hero} story world`}>
+      <section
+        className={styles.viewport}
+        aria-label={`${journey.hero} story world`}
+        aria-keyshortcuts={isRamayanaWorld ? "ArrowLeft ArrowRight ArrowUp ArrowDown Shift+ArrowLeft Shift+ArrowRight Shift+ArrowUp Shift+ArrowDown Home 0" : undefined}
+        data-camera-scale={camera.scale.toFixed(2)}
+        data-camera-x={Math.round(camera.x)}
+        data-camera-y={Math.round(camera.y)}
+        data-navigable={isRamayanaWorld ? "true" : undefined}
+        onDoubleClick={() => isRamayanaWorld && commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale > 1.08 ? 1 : 1.22, cameraViewport()))}
+        onKeyDown={handleCameraKeyboard}
+        onPointerCancel={handleCameraPointerEnd}
+        onPointerDown={handleCameraPointerDown}
+        onPointerMove={handleCameraPointerMove}
+        onPointerUp={handleCameraPointerEnd}
+        onWheel={handleCameraWheel}
+        ref={viewportRef}
+        tabIndex={isRamayanaWorld ? 0 : undefined}
+      >
         <div className={styles.horizon} aria-hidden="true" />
         {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
           {journey.stops.map((stop, index) => {
@@ -273,6 +472,12 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
         </div>}
       </section>
 
+      {isRamayanaWorld && <div className={styles.cameraControls} role="group" aria-label={`Scene camera controls, ${journeyCameraPercent(camera.scale)}%`}>
+        <button type="button" aria-label="Zoom scene out" disabled={camera.scale <= JOURNEY_CAMERA_MIN_SCALE} onClick={() => commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale - .1, cameraViewport()))}>−</button>
+        <button type="button" aria-label="Reset scene view" disabled={camera.scale === 1 && camera.x === 0 && camera.y === 0} onClick={resetCamera}>◎</button>
+        <button type="button" aria-label="Zoom scene in" disabled={camera.scale >= JOURNEY_CAMERA_MAX_SCALE} onClick={() => commitCamera(zoomJourneyCamera(cameraRef.current, cameraRef.current.scale + .1, cameraViewport()))}>+</button>
+      </div>}
+
       <section className={styles.storyBeat} aria-live="polite" lang={language === "hi" ? "hi" : "en"}>
         {active.visual && <div className={styles.sceneContext}><span>{active.visual.location}</span><small>Artistic visualization</small></div>}
         <p>{copy.kicker}</p>
@@ -296,8 +501,8 @@ export function JourneyPlayer({ journey, account }: { journey: HeroJourney; acco
         {journey.stops.map((stop, index) => <button type="button" aria-label={`Go to scene ${index + 1}`} onClick={() => travelTo(index)} className={index === activeIndex ? styles.progressActive : exploredSet.has(stop.id) ? styles.progressVisited : ""} key={stop.id} />)}
       </div>
 
-      {showGuide && <p className={styles.guide}>Choose a light to move through the story</p>}
-      {complete && <div className={styles.complete}><span>Path discovered</span><strong>The universe continues beyond this route.</strong><Link href="/">Return to the stars</Link></div>}
+      {showGuide && <p className={styles.guide}>{isRamayanaWorld ? "Drag to look · wheel or pinch for depth · → continues" : "Choose a light to move through the story"}</p>}
+      {showCompletion && <div className={styles.complete}><span>Path discovered</span><strong>The universe continues beyond this route.</strong><div><button type="button" onClick={() => { setShowCompletion(false); travelTo(0); }}>Replay from Lanka</button><Link href="/">Return to the stars</Link></div></div>}
       {sarthiOpen && <button className={styles.scrim} type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi" />}
       <aside className={`${styles.sarthiPanel} ${sarthiOpen ? styles.sarthiPanelOpen : ""}`} aria-hidden={!sarthiOpen} aria-label="Sarthi conversation">
         <header><div><span>✦</span><p><strong>Sārthi</strong><small>Companion inside this story</small></p></div><button type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi">×</button></header>

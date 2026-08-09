@@ -1,5 +1,16 @@
 # Implementation plan
 
+Checkpoint 2026-08-09 (Ramayana scene-camera navigation): the playable
+return-to-Ayodhya slice now behaves as a recoverable 2.5D world rather than a
+button-only sequence. Mouse/touch drag pans a deliberately bounded backdrop,
+wheel and two-pointer pinch change depth, double tap toggles a closer view,
+Shift+Arrow keys pan, unmodified arrows travel or change depth, and visible
+zoom/reset controls provide an equivalent path on every device. Every boundary
+is symmetric, scene travel resets the camera, reduced-motion mode removes
+camera transitions, and a completed journey can be replayed instead of trapping
+returning explorers behind its completion overlay. This closes a navigation
+contract gap only; it does not claim observed engagement or Ramayana coverage.
+
 Checkpoint 2026-08-09 (Kashi cross-civilizational sacred-city constellation):
 the Living Atlas adds twenty-one citation-only destinations and thirty-four
 typed routes spanning Kashi Vishwanath and Vishvanatha, Ganga and the ghats,
