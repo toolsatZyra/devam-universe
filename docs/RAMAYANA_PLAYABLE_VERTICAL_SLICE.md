@@ -133,6 +133,13 @@ The player can see the nearby universe without returning to a flat menu:
 - living portals: North Indian Diwali homecoming tradition and Ramlila; and
 - evidence doors: the selected Dutt edition and the wider seven-kanda library.
 
+Selecting a character reveals the illustrated detailed scenes in which that
+character participates. A visitor can enter any of those scenes, then use the
+persistent character-path portal to return without losing the selected scene or
+the character context. This path is derived from the same story moments and
+character relationships used by Story and Route rather than maintained as a
+separate navigation model.
+
 Connections are rewards for attention, not an encyclopaedic dump. A visible
 trail, Back control, direct scene selection, and saved checkpoint make every
 move reversible.

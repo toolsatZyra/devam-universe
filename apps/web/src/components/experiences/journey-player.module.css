@@ -136,14 +136,22 @@
 .encounterIdentity small { color: rgba(var(--family-color),.9); font-size: 7px; letter-spacing: .13em; text-transform: uppercase; }
 .encounterIdentity strong { font: 400 clamp(28px,3vw,39px)/1 Georgia, serif; }
 .encounterSummary { margin: 18px 0; color: #b9b4ad; font: 15px/1.55 Georgia, serif; }
-.encounterMoments { margin: 0 0 15px; display: grid; gap: 6px; }
-.encounterMoments > small { margin-bottom: 2px; color: var(--accent); font-size: 7px; letter-spacing: .12em; text-transform: uppercase; }
-.encounterMoments button { min-height: 48px; border: 1px solid rgba(var(--accent-rgb),.13); border-radius: 13px; padding: 9px 10px; display: grid; grid-template-columns: 9px 1fr auto; align-items: center; gap: 8px; text-align: left; color: #d9d4cc; background: rgba(var(--accent-rgb),.035); cursor: pointer; }
+.encounterMoments { margin: 0 0 15px; display: grid; gap: 7px; }
+.encounterMoments > small { color: var(--accent); font-size: 7px; letter-spacing: .12em; text-transform: uppercase; }
+.encounterMomentRail { display: flex; gap: 7px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; scrollbar-color: rgba(var(--accent-rgb),.24) transparent; }
+.encounterMoments button { flex: 0 0 min(88%,300px); min-height: 112px; border: 1px solid rgba(var(--accent-rgb),.13); border-radius: 14px; overflow: hidden; padding: 0; display: grid; grid-template-columns: 96px 1fr; text-align: left; color: #d9d4cc; background: rgba(2,5,13,.72); cursor: pointer; }
 .encounterMoments button:hover, .encounterMoments button:focus-visible { border-color: rgba(var(--accent-rgb),.4); background: rgba(var(--accent-rgb),.08); }
 .encounterMoments button[aria-current="step"] { border-color: rgba(var(--accent-rgb),.3); background: rgba(var(--accent-rgb),.065); }
-.encounterMoments button > span { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 11px rgba(var(--accent-rgb),.65); }
-.encounterMoments strong { font: 400 12px/1.2 Georgia, serif; }
-.encounterMoments button small { color: #7e8490; font-size: 6px; letter-spacing: .08em; text-transform: uppercase; }
+.encounterMomentArt { position: relative; min-height: 100%; overflow: hidden; background: #060911; }
+.encounterMomentArt::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg,transparent 45%,rgba(2,5,13,.76)); }
+.encounterMomentArt img { object-fit: cover; }
+.encounterMomentCopy { min-width: 0; padding: 11px 10px 10px 4px; display: grid; align-content: center; gap: 4px; }
+.encounterMomentCopy > small { color: var(--accent); font-size: 6px; letter-spacing: .08em; text-transform: uppercase; }
+.encounterMomentCopy strong { font: 400 14px/1.12 Georgia, serif; }
+.encounterMomentCopy > span { display: -webkit-box; overflow: hidden; color: #99989b; font: 9px/1.35 Georgia,serif; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.encounterMomentCopy i { color: #d9cab4; font: normal 700 6px/1 sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+.encounterReturn { position: fixed; z-index: 27; right: clamp(18px,4vw,58px); top: 102px; min-height: 38px; border: 1px solid rgba(var(--accent-rgb),.34); border-radius: 999px; padding: 0 14px; color: #f3e8da; background: rgba(4,7,16,.78); box-shadow: 0 10px 36px rgba(0,0,0,.28),0 0 24px rgba(var(--accent-rgb),.12); backdrop-filter: blur(14px); font-size: 8px; cursor: pointer; }
+.encounterReturn:hover,.encounterReturn:focus-visible { border-color: rgba(var(--accent-rgb),.68); background: rgba(var(--accent-rgb),.12); }
 .encounterRoutes { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 7px; }
 .encounterRoutes > small { grid-column: 1/-1; margin-bottom: 2px; color: #747b89; font-size: 7px; letter-spacing: .12em; text-transform: uppercase; }
 .encounterRoutes button { min-height: 82px; border: 1px solid rgba(var(--accent-rgb),.13); border-radius: 14px; padding: 11px; display: grid; align-content: end; gap: 3px; text-align: left; color: #d8d2c9; background: rgba(255,255,255,.035); cursor: pointer; }
@@ -247,10 +255,8 @@
   .encounterIdentity { margin-top: 14px; }
   .encounterIdentity strong { font-size: 29px; }
   .encounterSummary { margin: 13px 0; font-size: 14px; }
-  .encounterMoments { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .encounterMoments > small { grid-column: 1/-1; }
-  .encounterMoments button { min-height: 58px; grid-template-columns: 7px 1fr; }
-  .encounterMoments button small { grid-column: 2; }
+  .encounterMoments button { flex-basis: min(86%,280px); min-height: 102px; grid-template-columns: 88px 1fr; }
+  .encounterReturn { left: 50%; right: auto; top: 106px; max-width: calc(100vw - 32px); transform: translateX(-50%); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .encounterRoutes button { min-height: 70px; padding: 9px; }
   .sceneContext { margin-bottom: 6px; }
   .cast { max-height: 36px; overflow: auto; }
