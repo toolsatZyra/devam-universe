@@ -55,24 +55,34 @@ function validateSnapshot(snapshot) {
   if (snapshot.counters.arcs !== 7 || snapshot.counters.backboneTurns !== 49) {
     throw new Error("Unexpected Ramayana backbone shape");
   }
-  if (snapshot.counters.playableTurns !== 14 || snapshot.counters.orientationOnlyTurns !== 35) {
+  if (snapshot.counters.playableTurns !== 14
+    || snapshot.counters.outlinedTurns !== 6
+    || snapshot.counters.orientationOnlyTurns !== 29) {
     throw new Error("Unexpected Ramayana playable-turn boundary");
   }
-  if (snapshot.counters.playableScenes !== 55 || snapshot.counters.bilingualBeats !== 285) {
+  if (snapshot.counters.playableScenes !== 55
+    || snapshot.counters.draftSceneOutlines !== 42
+    || snapshot.counters.bilingualBeats !== 285) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
     ...snapshot.turns.map((turn) => turnSlug(turn.id)),
     ...snapshot.turns.flatMap((turn) => turn.scenes.map((scene) => sceneSlug(scene.id))),
   ];
-  if (new Set(momentSlugs).size !== 104) throw new Error("Narrative moment slugs must be unique");
+  if (new Set(momentSlugs).size !== 146) throw new Error("Narrative moment slugs must be unique");
   for (const turn of snapshot.turns) {
-    if ((turn.coverage === "playable") !== (turn.scenes.length > 0)) {
+    const expectedReadiness = turn.coverage === "playable"
+      ? "playable"
+      : turn.coverage === "outlined"
+        ? "outlined"
+        : undefined;
+    if ((expectedReadiness === undefined) !== (turn.scenes.length === 0)
+      || (expectedReadiness && turn.scenes.some((scene) => scene.readiness !== expectedReadiness))) {
       throw new Error(`Turn coverage is inconsistent: ${turn.id}`);
     }
     for (const scene of turn.scenes) {
       if (!/^[0-9a-f]{64}$/.test(scene.source.sourceSha256)
-        || !/^[0-9a-f]{64}$/.test(scene.source.spanSha256)) {
+        || (scene.readiness === "playable" && !/^[0-9a-f]{64}$/.test(scene.source.spanSha256))) {
         throw new Error(`Scene source address is invalid: ${scene.id}`);
       }
       if (!scene.narrative.en.trim() || !scene.narrative.hi.trim()) {
@@ -119,7 +129,8 @@ function buildMigration() {
     turn.turnOrdinalInArc,
     scene.detailOrdinal,
     sqlJson({ snapshotContract: CONTRACT, ...scene.source }),
-    sqlJson({ nodeIds: scene.nodeIds }),
+    sqlJson({ readiness: scene.readiness, nodeIds: scene.nodeIds, characters: scene.characters, places: scene.places }),
+    sqlText(scene.readiness === "playable" ? "published" : "draft"),
   ].join(", ")})`)).join(",\n  ");
 
   const momentTextRows = snapshot.turns.flatMap((turn) => {
@@ -134,15 +145,19 @@ function buildMigration() {
       sqlText(status),
       sqlText(publication),
     ].join(", ")})`);
-    const sceneTexts = turn.scenes.flatMap((scene) => ["en", "hi"].map((language) => `(${[
+    const sceneTexts = turn.scenes.flatMap((scene) => {
+      const scenePublication = scene.readiness === "playable" ? "published" : "draft";
+      const sceneStatus = scene.readiness === "playable" ? "source_aligned" : "draft";
+      return ["en", "hi"].map((language) => `(${[
       sqlText(sceneSlug(scene.id)),
       sqlText(language),
       sqlText(scene.title[language]),
       sqlText(scene.synopsis[language]),
       sqlText(scene.narrative[language]),
-      sqlText("source_aligned"),
-      sqlText("published"),
-    ].join(", ")})`));
+      sqlText(sceneStatus),
+      sqlText(scenePublication),
+    ].join(", ")})`);
+    });
     return [...turnTexts, ...sceneTexts];
   }).join(",\n  ");
 
@@ -184,6 +199,8 @@ function buildMigration() {
 -- tools/compile_ramayana_consumer_narrative_seed.cjs.
 -- This migration stores compact bilingual consumer narrative data. It does not
 -- copy source-vault bytes or claim that the remaining 35 turns are complete.
+-- Forty-two draft scene outlines partition six of those unfinished turns, but
+-- remain hidden from the public read path until complete bilingual beats exist.
 
 begin;
 
@@ -289,10 +306,10 @@ insert into public.narrative_moments (
 )
 select series.id, arc.id, parent.id, scene.slug, 'playable_scene', scene.backbone_ordinal,
   scene.turn_ordinal_in_arc, scene.detail_ordinal, scene.source_range,
-  scene.visual_direction, 'derivative_allowed', 'published'
+  scene.visual_direction, 'derivative_allowed', scene.publication_state::public.publication_state
 from (values
   ${sceneRows}
-) as scene(slug, parent_slug, arc_slug, backbone_ordinal, turn_ordinal_in_arc, detail_ordinal, source_range, visual_direction)
+) as scene(slug, parent_slug, arc_slug, backbone_ordinal, turn_ordinal_in_arc, detail_ordinal, source_range, visual_direction, publication_state)
 join public.narrative_series series on series.slug = ${sqlText(snapshot.series.id)}
 join public.narrative_arcs arc on arc.series_id = series.id and arc.slug = scene.arc_slug
 join public.narrative_moments parent on parent.series_id = series.id and parent.slug = scene.parent_slug
@@ -421,23 +438,32 @@ begin
     raise exception 'Expected 14 playable Ramayana turns';
   end if;
   if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and publication_state = 'draft') <> 35 then
-    raise exception 'Expected 35 orientation-only Ramayana turns';
+    raise exception 'Expected 35 unfinished Ramayana turns';
   end if;
-  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene') <> 55 then
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and visual_direction->>'coverage' = 'outlined') <> 6 then
+    raise exception 'Expected 6 outlined Ramayana turns';
+  end if;
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and visual_direction->>'coverage' = 'orientation') <> 29 then
+    raise exception 'Expected 29 orientation-only Ramayana turns';
+  end if;
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'published') <> 55 then
     raise exception 'Expected 55 Ramayana playable scenes';
+  end if;
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'draft') <> 42 then
+    raise exception 'Expected 42 draft Ramayana scene outlines';
   end if;
   if (select count(*) from public.narrative_beats beat join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> 285 then
     raise exception 'Expected 285 Ramayana narrative beats';
   end if;
-  if (select count(*) from public.narrative_moment_texts copy join public.narrative_moments moment on moment.id = copy.moment_id where moment.series_id = series_uuid) <> 208 then
-    raise exception 'Expected 208 bilingual Ramayana moment texts';
+  if (select count(*) from public.narrative_moment_texts copy join public.narrative_moments moment on moment.id = copy.moment_id where moment.series_id = series_uuid) <> 292 then
+    raise exception 'Expected 292 bilingual Ramayana moment texts';
   end if;
   if (select count(*) from public.narrative_beat_texts copy join public.narrative_beats beat on beat.id = copy.beat_id join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> 570 then
     raise exception 'Expected 570 bilingual Ramayana beat texts';
   end if;
   if exists (
     select 1 from public.narrative_moments
-    where series_id = series_uuid and moment_kind = 'playable_scene'
+    where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'published'
       and (source_range->>'sourceSha256' !~ '^[0-9a-f]{64}$' or source_range->>'spanSha256' !~ '^[0-9a-f]{64}$')
   ) then raise exception 'A playable Ramayana scene lacks an exact source address'; end if;
 end

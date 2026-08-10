@@ -1,4 +1,5 @@
 import { getHeroJourney } from "../../data/hero-experiences";
+import { RAMAYANA_BEGINNINGS_SCENE_OUTLINES } from "../../data/ramayana-beginnings-outline";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import type { StoryBeat, StoryCompassTurn, StoryMoment } from "../domain/story-world";
 import type { ExperienceCitation } from "../domain/experience";
@@ -10,17 +11,20 @@ export type RamayanaNarrativeBeatSnapshot = StoryBeat & {
 export type RamayanaNarrativeSceneSnapshot = {
   id: string;
   detailOrdinal: number;
+  readiness: "outlined" | "playable";
   title: { en: string; hi: string };
   synopsis: { en: string; hi: string };
   narrative: { en: string; hi: string };
   source: {
     sourceSha256: string;
-    sourceGlobalOrdinal: number;
+    sourceGlobalOrdinal?: number;
     sourceOrdinal: number;
     sourceEndOrdinal: number;
-    spanSha256: string;
+    spanSha256?: string;
   };
   nodeIds: string[];
+  characters: string[];
+  places: string[];
   beats: RamayanaNarrativeBeatSnapshot[];
 };
 
@@ -32,7 +36,7 @@ export type RamayanaNarrativeTurnSnapshot = {
   title: { en: string; hi: string };
   synopsis: { en: string; hi: string };
   sourceRange: StoryCompassTurn["sourceRange"];
-  coverage: "orientation" | "playable";
+  coverage: "orientation" | "outlined" | "playable";
   scenes: RamayanaNarrativeSceneSnapshot[];
 };
 
@@ -56,8 +60,10 @@ export type RamayanaNarrativeSnapshot = {
     arcs: number;
     backboneTurns: number;
     playableTurns: number;
+    outlinedTurns: number;
     orientationOnlyTurns: number;
     playableScenes: number;
+    draftSceneOutlines: number;
     bilingualBeats: number;
   };
   boundary: string;
@@ -128,6 +134,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       siblings.push({
         id: sceneId,
         detailOrdinal: siblings.length + 1,
+        readiness: "playable",
         title: {
           en: stop.title,
           hi: moment.beats[0]?.title.hi ?? moment.decisiveChange.hi,
@@ -145,10 +152,39 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
           spanSha256: stop.citation.spanSha256,
         },
         nodeIds: [...pack.sceneNodeIds[sceneId]],
+        characters: [...new Set(moment.beats.flatMap((beat) => beat.characterIds))],
+        places: [],
         beats: moment.beats.map((beat, index) => ({ ...beat, ordinal: index + 1 })),
       });
       scenesByTurnId.set(turnId, siblings);
     }
+  }
+
+  for (const outline of RAMAYANA_BEGINNINGS_SCENE_OUTLINES) {
+    const turn = pack.compass.turns[outline.turnId];
+    if (!turn) throw new Error(`Ramayana outline has no backbone turn: ${outline.id}`);
+    if (outline.sourceStart < turn.sourceRange.startOrdinal || outline.sourceEnd > turn.sourceRange.endOrdinal) {
+      throw new Error(`Ramayana outline exceeds its source-bounded turn: ${outline.id}`);
+    }
+    const siblings = scenesByTurnId.get(outline.turnId) ?? [];
+    siblings.push({
+      id: outline.id,
+      detailOrdinal: outline.ordinal,
+      readiness: "outlined",
+      title: outline.title,
+      synopsis: outline.synopsis,
+      narrative: outline.synopsis,
+      source: {
+        sourceSha256: turn.sourceRange.sourceSha256,
+        sourceOrdinal: outline.sourceStart,
+        sourceEndOrdinal: outline.sourceEnd,
+      },
+      nodeIds: [],
+      characters: outline.characters,
+      places: outline.places,
+      beats: [],
+    });
+    scenesByTurnId.set(outline.turnId, siblings);
   }
 
   let backboneOrdinal = 0;
@@ -165,13 +201,25 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       title: turn.title,
       synopsis: turn.hook,
       sourceRange: turn.sourceRange,
-      coverage: scenes.length > 0 ? "playable" as const : "orientation" as const,
+      coverage: scenes.some((scene) => scene.readiness === "playable")
+        ? "playable" as const
+        : scenes.length > 0
+          ? "outlined" as const
+          : "orientation" as const,
       scenes,
     };
   }));
 
-  const playableTurns = turns.filter((turn) => turn.scenes.length > 0).length;
-  const playableScenes = turns.reduce((count, turn) => count + turn.scenes.length, 0);
+  const outlinedTurns = turns.filter((turn) => turn.coverage === "outlined").length;
+  const orientationOnlyTurns = turns.filter((turn) => turn.coverage === "orientation").length;
+  const playableScenes = turns.reduce(
+    (count, turn) => count + turn.scenes.filter((scene) => scene.readiness === "playable").length,
+    0,
+  );
+  const draftSceneOutlines = turns.reduce(
+    (count, turn) => count + turn.scenes.filter((scene) => scene.readiness === "outlined").length,
+    0,
+  );
   const bilingualBeats = turns.reduce(
     (count, turn) => count + turn.scenes.reduce((sceneCount, scene) => sceneCount + scene.beats.length, 0),
     0,
@@ -190,11 +238,13 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     counters: {
       arcs: pack.compass.arcs.length,
       backboneTurns: turns.length,
-      playableTurns,
-      orientationOnlyTurns: turns.length - playableTurns,
+      playableTurns: turns.filter((turn) => turn.coverage === "playable").length,
+      outlinedTurns,
+      orientationOnlyTurns,
       playableScenes,
+      draftSceneOutlines,
       bilingualBeats,
     },
-    boundary: "All 49 turns map the selected 652-section expression, but only turns with detailed scenes and beats are playable. This snapshot does not claim a complete consumer Ramayana until every turn reaches the required narrative depth.",
+    boundary: "All 49 turns map the selected 652-section expression. Draft scene outlines are editorial denominators, not playable story copy; only published scenes with detailed bilingual beats are playable. This snapshot does not claim a complete consumer Ramayana until every turn reaches the required narrative depth.",
   };
 }

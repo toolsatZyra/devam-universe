@@ -94,7 +94,7 @@ current practice into a universal rule.
 
 | Lane | Present | Missing for this contract |
 |---|---|---|
-| Ramayana | Complete 652-section Dutt English source projection; 49-turn bilingual compass; 55 playable scenes and 285 bilingual beats across 14 turns; deterministic first-class database migration prepared but not hosted | Detailed consumer story for the remaining 35 turns; executed database verification; full shared Search/Sarthi/Atlas consumption |
+| Ramayana | Complete 652-section Dutt English source projection; 49-turn bilingual compass; 55 playable scenes and 285 bilingual beats across 14 turns; 42 source-partitioned draft scene outlines across the six opening turns; deterministic first-class database migration and public read RPC prepared but not hosted | Complete bilingual playable copy for the 42 opening outlines; define and complete the remaining 29 orientation-only turns; execute database verification; publish shared Search/Sarthi/Atlas consumption |
 | Mahabharata | Preserved English and Sanskrit candidates, including four Ganguli Project Gutenberg volumes | Current structural/rights qualification; product projection; complete English/Hindi narrative; characters, places and kingdoms |
 | Ramcharitmanas | Complete fixed scan; 802 published narrative-page projections | Correct/project the remaining 370 narrative pages; daily-reading sequence; approachable meaning layer |
 | Hanuman Chalisa | Preserved-library audit still required | Identified lawful expression, complete product text, English/Hindi meaning and daily/devotional presentation |
