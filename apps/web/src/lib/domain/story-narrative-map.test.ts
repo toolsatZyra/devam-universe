@@ -9,7 +9,7 @@ describe("story-first narrative map compiler", () => {
 
   it("maps every canonical place and every story turn from one source of truth", () => {
     const expectedPlaces = new Set(Object.values(compass.turns).flatMap((turn) => turn.places));
-    expect(map.places).toHaveLength(53);
+    expect(map.places).toHaveLength(61);
     expect(new Set(map.places.map((place) => place.label))).toEqual(expectedPlaces);
     expect(new Set(map.places.flatMap((place) => place.turnIds))).toEqual(new Set(allTurnIds));
     expect(map.totalStoryTurns).toBe(49);

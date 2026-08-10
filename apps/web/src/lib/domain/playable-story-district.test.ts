@@ -11,8 +11,8 @@ describe("playable story district compiler", () => {
   const district = buildPlayableStoryDistrictIndex(pack, journey.stops, map);
   const linksFor = (label: string) => district.byMapPlaceId[map.places.find((place) => place.label === label)!.id];
 
-  it("projects all five detailed districts from existing graph relationships", () => {
-    expect(district).toMatchObject({ sceneCount: 39, placeCount: 27 });
+  it("projects all six detailed districts from existing graph relationships", () => {
+    expect(district).toMatchObject({ sceneCount: 47, placeCount: 35 });
     expect(linksFor("Lanka").map((link) => link.id)).toEqual(["leave-lanka"]);
     expect(linksFor("Kishkindha").map((link) => link.id)).toEqual(["sky-road"]);
     expect(linksFor("Bharadvaja's hermitage").map((link) => link.id)).toEqual(["bharadvaja-hermitage"]);
@@ -39,6 +39,14 @@ describe("playable story district compiler", () => {
     expect(linksFor("The cottage of reunion").map((link) => link.id)).toEqual(["brothers-meet-death-news"]);
     expect(linksFor("The family council by the Mandakini").map((link) => link.id)).toEqual(["family-asks-rama-home"]);
     expect(linksFor("The council of the sandals").map((link) => link.id)).toEqual(["sandals-hold-kingdom"]);
+    expect(linksFor("The hermitages leave Chitrakoot").map((link) => link.id)).toEqual(["chitrakoot-grows-unsafe"]);
+    expect(linksFor("Atri and Anasuya's hermitage").map((link) => link.id)).toEqual(["sita-tells-her-beginning"]);
+    expect(linksFor("The hermitage constellation of Dandaka").map((link) => link.id)).toEqual(["dandaka-receives-them"]);
+    expect(linksFor("Viradha's broken road").map((link) => link.id)).toEqual(["viradha-breaks-the-road"]);
+    expect(linksFor("The road from Sarabhanga to Sutikshna").map((link) => link.id)).toEqual(["forest-asks-protection"]);
+    expect(linksFor("The dialogue on the forest road").map((link) => link.id)).toEqual(["sita-questions-the-bow"]);
+    expect(linksFor("Panchapsara and the ten-year forest").map((link) => link.id)).toEqual(["ten-years-become-map"]);
+    expect(linksFor("Agastya's southern hermitage").map((link) => link.id)).toEqual(["agastya-points-south"]);
     expect(linksFor("Ayodhya").map((link) => link.id)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
   });
 

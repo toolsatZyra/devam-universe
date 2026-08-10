@@ -42,7 +42,7 @@ describe("Ramayana whole-epic story compass", () => {
     expect([...covered.values()].reduce((sum, ordinals) => sum + ordinals.length, 0)).toBe(compass.totalSourceUnits);
   });
 
-  it("distinguishes mapped orientation from the seven playable compass entrances", () => {
+  it("distinguishes mapped orientation from the nine playable compass entrances", () => {
     const playable = Object.values(compass.turns).filter((turn) => turn.coverage === "playable");
     expect(playable.map((turn) => [turn.id, turn.playableMomentId])).toEqual([
       ["coronation-dawn", "coronation-dawn"],
@@ -51,10 +51,12 @@ describe("Ramayana whole-epic story compass", () => {
       ["road-out-of-ayodhya", "city-follows-car"],
       ["bharata-follows", "expedition-reaches-ganga"],
       ["sandals-and-promise", "brothers-meet-death-news"],
+      ["deeper-into-forest", "chitrakoot-grows-unsafe"],
+      ["dandaka-vows", "dandaka-receives-them"],
       ["road-home", "leave-lanka"],
     ]);
     expect(playable.at(-1)?.sourceRange).toMatchObject({ kandaSlug: "yuddha", startOrdinal: 122, endOrdinal: 128 });
-    expect(Object.values(compass.turns).filter((turn) => turn.coverage === "orientation")).toHaveLength(42);
+    expect(Object.values(compass.turns).filter((turn) => turn.coverage === "orientation")).toHaveLength(40);
     expect(compass.sourceBoundary).toContain("not Sanskrit");
     expect(compass.sourceBoundary).toContain("not a finished playable scene");
   });
