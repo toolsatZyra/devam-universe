@@ -1,5 +1,23 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (seventh Ramayana illustrated district candidate):
+**Panchavati breaks open** continues the selected Manmatha Nath Dutt Aranya
+sequence from source-ordered passages 13 through 53. Eight original full-screen
+worlds and 43 bilingual beats move from Jatayu and a guarded Panchavati home
+through Surpanakha, the Janasthana escalation, Ravana and Maricha's deception,
+the golden deer, the emptied cottage, Sita's active witness-making during the
+abduction, and Jatayu's resistance and evidence trail. Four formerly
+orientation-only whole-story turns now enter playable scenes. Character,
+place, event, compass, linear, and reverse encounter paths remain mutually
+navigable. Exact byte and line spans reconstruct from the one retained
+product-allowed source object. The current story slice totals 55 scenes across
+seven districts; the initial graph/preview pack remains below 335 KB raw and
+55 KB gzip, while complete beats remain lazy and below 75 KB raw and 18 KB
+gzip per district. `RAMAYANA_PANCHAVATI_ABDUCTION_DISTRICT.md` records the
+source, art, interaction, performance, and next-district boundaries. These are
+selected-scope counters, not claims of a complete Ramayana or civilizational
+completeness.
+
 Checkpoint 2026-08-10 (fifth Ramayana illustrated district candidate): **The
 road that asks Rama home** continues the contiguous Ayodhya story boundary from
 LXXXIII through CXV. Eight full-screen tableaux and forty-eight bilingual beats

@@ -89,6 +89,25 @@ describe("Ramayana district payload", () => {
     expect(JSON.stringify(payload)).not.toContain("jatayu");
   });
 
+  it("serves the contiguous Panchavati-abduction district as its own illustrated payload", async () => {
+    const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=panchavati-abduction-v1"));
+    const payload = await response.json() as { ok: boolean; districtId: string; moments: Record<string, { beats: unknown[] }> };
+    expect(response.status).toBe(200);
+    expect(response.headers.get("cache-control")).toContain("immutable");
+    expect(payload).toMatchObject({ ok: true, districtId: "panchavati-abduction-v1" });
+    expect(Object.keys(payload.moments)).toEqual([
+      "jatayu-welcomes-panchavati",
+      "surpanakha-breaks-quiet",
+      "janasthana-falls",
+      "ravana-chooses-deception",
+      "golden-deer-separates-house",
+      "mendicant-at-empty-cottage",
+      "sita-carried-south",
+      "jatayu-rises-sky-road",
+    ]);
+    expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(43);
+  });
+
   it("fails closed for an unknown district", async () => {
     const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=whole-epic"));
     expect(response.status).toBe(404);

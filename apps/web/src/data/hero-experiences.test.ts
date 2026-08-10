@@ -54,7 +54,7 @@ describe("hero experiences", () => {
     for (const hash of hashes) expect(sha256(resolve(root, `source_vault/objects/sha256/${hash.slice(0, 2)}/${hash}`))).toBe(hash);
   });
 
-  it("keeps all six Ramayana districts on exact Ayodhya, Aranya, and Yuddha source ranges", () => {
+  it("keeps all seven Ramayana districts on exact Ayodhya, Aranya, and Yuddha source ranges", () => {
     const ramayana = heroJourneys.find((journey) => journey.slug === "ramayana");
     expect(ramayana?.title).toBe("The promise, the forest, the sandals, and the return");
     const ayodhya = ramayana!.stops.slice(0, 8);
@@ -62,7 +62,8 @@ describe("hero experiences", () => {
     const emptyThrone = ramayana!.stops.slice(16, 24);
     const roadAsksHome = ramayana!.stops.slice(24, 32);
     const deeperDandaka = ramayana!.stops.slice(32, 40);
-    const roadHome = ramayana!.stops.slice(40);
+    const panchavatiAbduction = ramayana!.stops.slice(40, 48);
+    const roadHome = ramayana!.stops.slice(48);
     expect(ayodhya.map((stop) => stop.citation.sourceOrdinal)).toEqual([76, 82, 83, 87, 90, 94, 101, 106]);
     expect(ayodhya.map((stop) => [stop.citation.locator.kanda_relative_ordinal_start, stop.citation.locator.kanda_relative_ordinal_end])).toEqual([[1, 6], [7, 7], [8, 11], [12, 14], [15, 18], [19, 25], [26, 30], [31, 40]]);
     expect(ayodhya.flatMap((stop) => Array.from({ length: Number(stop.citation.locator.section_count) }, (_, index) => Number(stop.citation.locator.kanda_relative_ordinal_start) + index))).toEqual(Array.from({ length: 40 }, (_, index) => index + 1));
@@ -86,6 +87,10 @@ describe("hero experiences", () => {
     expect(deeperDandaka.slice(2).flatMap((stop) => Array.from({ length: Number(stop.citation.locator.source_ordered_count) }, (_, index) => Number(stop.citation.locator.source_relative_ordinal_start) + index))).toEqual(Array.from({ length: 12 }, (_, index) => index + 1));
     expect(deeperDandaka.slice(0, 2).every((stop) => stop.citation.sourceSha256 === "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034" && stop.citation.rightsLane === "product_allowed")).toBe(true);
     expect(deeperDandaka.slice(2).every((stop) => stop.citation.sourceSha256 === "c3ef74a07ef0cf016eb0428deb76d6036d13be343c65225946471113a2da475b" && stop.citation.rightsLane === "product_allowed")).toBe(true);
+    expect(panchavatiAbduction.map((stop) => stop.citation.sourceOrdinal)).toEqual([13, 16, 18, 31, 38, 43, 46, 49]);
+    expect(panchavatiAbduction.map((stop) => [stop.citation.locator.source_relative_ordinal_start, stop.citation.locator.source_relative_ordinal_end])).toEqual([[13, 15], [16, 17], [18, 30], [31, 37], [38, 42], [43, 45], [46, 48], [49, 53]]);
+    expect([...deeperDandaka.slice(2), ...panchavatiAbduction].flatMap((stop) => Array.from({ length: Number(stop.citation.locator.source_ordered_count) }, (_, index) => Number(stop.citation.locator.source_relative_ordinal_start) + index))).toEqual(Array.from({ length: 53 }, (_, index) => index + 1));
+    expect(panchavatiAbduction.every((stop) => stop.citation.sourceSha256 === "c3ef74a07ef0cf016eb0428deb76d6036d13be343c65225946471113a2da475b" && stop.citation.rightsLane === "product_allowed")).toBe(true);
     expect(roadHome.map((stop) => stop.citation.sourceOrdinal)).toEqual([122, 123, 124, 125, 126, 127, 128]);
     expect(roadHome.map((stop) => stop.citation.locator.literal_section_number)).toEqual([124, 125, 126, 127, 128, 129, 130]);
     expect(roadHome.every((stop) => stop.citation.sourceSha256 === "8d1b8901823f5b5bd8b3207370991ddf95e5c76cb30ad5271aef835c9708464b" && stop.citation.rightsLane === "product_allowed")).toBe(true);
@@ -120,6 +125,16 @@ describe("hero experiences", () => {
       "/journeys/ramayana-dandaka-panchapsara-v1.webp",
       "/journeys/ramayana-dandaka-agastya-v1.webp",
     ]);
+    expect(panchavatiAbduction.map((stop) => stop.visual?.asset)).toEqual([
+      "/journeys/ramayana-panchavati-jatayu-home-v1.webp",
+      "/journeys/ramayana-panchavati-surpanakha-v1.webp",
+      "/journeys/ramayana-panchavati-janasthana-v1.webp",
+      "/journeys/ramayana-panchavati-ravana-maricha-v1.webp",
+      "/journeys/ramayana-panchavati-golden-deer-v1.webp",
+      "/journeys/ramayana-panchavati-empty-cottage-v1.webp",
+      "/journeys/ramayana-panchavati-abduction-sky-v1.webp",
+      "/journeys/ramayana-panchavati-jatayu-resistance-v1.webp",
+    ]);
     expect(roadHome.map((stop) => stop.visual?.asset)).toEqual([
       "/journeys/ramayana-return-lanka-v1.webp",
       "/journeys/ramayana-return-sky-road-v1.webp",
@@ -129,6 +144,20 @@ describe("hero experiences", () => {
       "/journeys/ramayana-return-ayodhya-v1.webp",
       "/journeys/ramayana-return-coronation-v1.webp",
     ]);
+  });
+
+  sourceVaultIt("reconstructs every Panchavati-abduction stop from its exact Aranya source span", () => {
+    const root = resolve(process.cwd(), "../..");
+    const sourcePath = resolve(root, "source_vault/objects/sha256/c3/c3ef74a07ef0cf016eb0428deb76d6036d13be343c65225946471113a2da475b");
+    const bytes = readFileSync(sourcePath);
+    const panchavatiAbduction = heroJourneys.find((journey) => journey.slug === "ramayana")!.stops.slice(40, 48);
+    for (const stop of panchavatiAbduction) {
+      const start = stop.citation.locator.byte_start;
+      const end = stop.citation.locator.byte_end_exclusive;
+      expect(typeof start).toBe("number");
+      expect(typeof end).toBe("number");
+      expect(createHash("sha256").update(bytes.subarray(start as number, end as number)).digest("hex"), stop.id).toBe(stop.citation.spanSha256);
+    }
   });
 
   it("reconstructs every Diwali stop from the exact derived evidence-pack byte span", () => {
