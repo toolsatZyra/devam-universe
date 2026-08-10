@@ -3,6 +3,7 @@ import { RAMAYANA_BEGINNINGS_SCENE_OUTLINES } from "../../data/ramayana-beginnin
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
 import { getDuttBalaSpanSha256s } from "../../data/ramayana-bala-source-spans";
 import { RAMAYANA_HEIRS_PLAYABLE_SCENES } from "../../data/ramayana-heirs-playable";
+import { RAMAYANA_PRINCES_PLAYABLE_SCENES } from "../../data/ramayana-princes-playable";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import type { StoryBeat, StoryCompassTurn, StoryMoment } from "../domain/story-world";
 import type { ExperienceCitation } from "../domain/experience";
@@ -166,7 +167,11 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   }
 
   const beginningOutlineById = new Map(RAMAYANA_BEGINNINGS_SCENE_OUTLINES.map((outline) => [outline.id, outline]));
-  for (const playable of [...RAMAYANA_BEGINNINGS_PLAYABLE_SCENES, ...RAMAYANA_HEIRS_PLAYABLE_SCENES]) {
+  for (const playable of [
+    ...RAMAYANA_BEGINNINGS_PLAYABLE_SCENES,
+    ...RAMAYANA_HEIRS_PLAYABLE_SCENES,
+    ...RAMAYANA_PRINCES_PLAYABLE_SCENES,
+  ]) {
     const outline = beginningOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
     const turn = pack.compass.turns[outline.turnId];
