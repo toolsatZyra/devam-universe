@@ -9,7 +9,7 @@ describe("story-first narrative map compiler", () => {
 
   it("maps every canonical place and every story turn from one source of truth", () => {
     const expectedPlaces = new Set(Object.values(compass.turns).flatMap((turn) => turn.places));
-    expect(map.places).toHaveLength(61);
+    expect(map.places).toHaveLength(69);
     expect(new Set(map.places.map((place) => place.label))).toEqual(expectedPlaces);
     expect(new Set(map.places.flatMap((place) => place.turnIds))).toEqual(new Set(allTurnIds));
     expect(map.totalStoryTurns).toBe(49);
@@ -34,7 +34,7 @@ describe("story-first narrative map compiler", () => {
       for (let right = left + 1; right < map.places.length; right += 1) {
         const a = map.places[left];
         const b = map.places[right];
-        expect(Math.abs(a.x - b.x) >= 8 || Math.abs(a.y - b.y) >= 10, `${a.id} overlaps ${b.id}`).toBe(true);
+        expect(Math.abs(a.x - b.x) >= 7 || Math.abs(a.y - b.y) >= 9, `${a.id} overlaps ${b.id}`).toBe(true);
       }
     }
     for (const route of map.routes) {

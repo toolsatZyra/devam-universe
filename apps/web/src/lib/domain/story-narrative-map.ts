@@ -7,6 +7,8 @@ import type {
 import { buildStoryCompassIndexes } from "./story-compass-index";
 
 const ARC_LANES = [24, 31, 54, 68, 61, 48, 25];
+const MINIMUM_X_SEPARATION = 7;
+const MINIMUM_Y_SEPARATION = 9;
 const COLLISION_OFFSETS = [
   [0, 0], [0, 12], [0, -12], [6, 7], [-6, 7], [6, -7], [-6, -7],
   [10, 0], [-10, 0], [10, 13], [-10, 13], [10, -13], [-10, -13],
@@ -28,14 +30,14 @@ function openMapPosition(naturalX: number, naturalY: number, occupied: Array<{ x
     y: clamp(naturalY + offsetY, 13, 79),
   }));
   const grid: Array<{ x: number; y: number }> = [];
-  for (let x = 5; x <= 95; x += 8.5) {
-    for (let y = 13; y <= 79; y += 10.5) grid.push({ x, y });
+  for (let x = 5; x <= 95; x += 7.5) {
+    for (let y = 13; y <= 79; y += 9.5) grid.push({ x, y });
   }
   grid.sort((left, right) =>
     ((left.x - naturalX) ** 2 + (left.y - naturalY) ** 2)
     - ((right.x - naturalX) ** 2 + (right.y - naturalY) ** 2));
   return [...nearby, ...grid].find((candidate) =>
-    occupied.every((placed) => Math.abs(candidate.x - placed.x) >= 8 || Math.abs(candidate.y - placed.y) >= 10));
+    occupied.every((placed) => Math.abs(candidate.x - placed.x) >= MINIMUM_X_SEPARATION || Math.abs(candidate.y - placed.y) >= MINIMUM_Y_SEPARATION));
 }
 
 /**

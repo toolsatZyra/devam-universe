@@ -11,8 +11,8 @@ describe("playable story district compiler", () => {
   const district = buildPlayableStoryDistrictIndex(pack, journey.stops, map);
   const linksFor = (label: string) => district.byMapPlaceId[map.places.find((place) => place.label === label)!.id];
 
-  it("projects all six detailed districts from existing graph relationships", () => {
-    expect(district).toMatchObject({ sceneCount: 47, placeCount: 35 });
+  it("projects all seven detailed districts from existing graph relationships", () => {
+    expect(district).toMatchObject({ sceneCount: 55, placeCount: 43 });
     expect(linksFor("Lanka").map((link) => link.id)).toEqual(["leave-lanka"]);
     expect(linksFor("Kishkindha").map((link) => link.id)).toEqual(["sky-road"]);
     expect(linksFor("Bharadvaja's hermitage").map((link) => link.id)).toEqual(["bharadvaja-hermitage"]);
@@ -47,6 +47,14 @@ describe("playable story district compiler", () => {
     expect(linksFor("The dialogue on the forest road").map((link) => link.id)).toEqual(["sita-questions-the-bow"]);
     expect(linksFor("Panchapsara and the ten-year forest").map((link) => link.id)).toEqual(["ten-years-become-map"]);
     expect(linksFor("Agastya's southern hermitage").map((link) => link.id)).toEqual(["agastya-points-south"]);
+    expect(linksFor("Jatayu's Panchavati threshold").map((link) => link.id)).toEqual(["jatayu-welcomes-panchavati"]);
+    expect(linksFor("The cottage at Panchavati").map((link) => link.id)).toEqual(["surpanakha-breaks-quiet"]);
+    expect(linksFor("The Janasthana battlefield").map((link) => link.id)).toEqual(["janasthana-falls"]);
+    expect(linksFor("Ravana's road to Maricha").map((link) => link.id)).toEqual(["ravana-chooses-deception"]);
+    expect(linksFor("The golden deer path").map((link) => link.id)).toEqual(["golden-deer-separates-house"]);
+    expect(linksFor("The emptied Panchavati cottage").map((link) => link.id)).toEqual(["mendicant-at-empty-cottage"]);
+    expect(linksFor("The southward sky-road").map((link) => link.id)).toEqual(["sita-carried-south"]);
+    expect(linksFor("Jatayu's last resistance").map((link) => link.id)).toEqual(["jatayu-rises-sky-road"]);
     expect(linksFor("Ayodhya").map((link) => link.id)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
   });
 

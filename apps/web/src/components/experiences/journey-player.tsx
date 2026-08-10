@@ -133,6 +133,14 @@ const storyCopy: Record<string, SceneCopy> = {
   "sita-questions-the-bow": { kicker: "The journey pauses for an unresolved argument", story: "Sita asks whether weapons can change intention. Rama answers from his promise to protect the forest; the scene preserves the disagreement instead of flattening it.", invitation: "Walk through the years that follow" },
   "ten-years-become-map": { kicker: "Time becomes explorable geography", story: "Panchapsara's unseen music opens one story, then years flow across many hermitages until the wish to meet Agastya gives wandering a new direction.", invitation: "Take the southern road" },
   "agastya-points-south": { kicker: "The next home appears beyond the hill", story: "Hospitality, storied weapons, and concern for Sita converge as Agastya gives the travellers a route toward river-fed Panchavati.", invitation: "Complete the road into Dandaka" },
+  "jatayu-welcomes-panchavati": { kicker: "A destination becomes a guarded home", story: "Jatayu's old friendship, the Godavari landscape, and Lakshmana's careful building give Panchavati a household and a guardian.", invitation: "Meet who enters the clearing" },
+  "surpanakha-breaks-quiet": { kicker: "Quiet becomes a conflict with a long road", story: "Surpanakha's arrival moves through desire, jest, rivalry, and violent humiliation before carrying danger toward Janasthana.", invitation: "Follow the escalation to Khara" },
+  "janasthana-falls": { kicker: "A cottage conflict becomes war", story: "Successive forces answer Surpanakha's injury until Khara falls and Akampana carries the surviving report toward Ravana.", invitation: "Enter the plan forming beyond the forest" },
+  "ravana-chooses-deception": { kicker: "Warning is bent into coercion", story: "Surpanakha brings Janasthana into court; Maricha remembers Rama and warns Ravana, but is forced into a plan built on separation.", invitation: "Follow the impossible deer" },
+  "golden-deer-separates-house": { kicker: "Wonder creates distance", story: "Maricha's luminous form draws Rama away, then sends a borrowed cry back through the forest toward Sita and Lakshmana.", invitation: "Return to the cottage" },
+  "mendicant-at-empty-cottage": { kicker: "Hospitality meets a weaponized disguise", story: "Fear draws Lakshmana away; Ravana reaches the cottage as a mendicant while Sita waits for the brothers to return.", invitation: "Stay as the disguise falls" },
+  "sita-carried-south": { kicker: "The forest becomes a witness network", story: "Sita refuses Ravana, names Rama, and calls to rivers, trees, mountains, birds, and animals as Panchavati falls away below.", invitation: "Hear Jatayu answer" },
+  "jatayu-rises-sky-road": { kicker: "Resistance leaves a trail", story: "Jatayu interrupts the abduction and falls; Sita keeps speaking and drops cloth and ornaments toward witnesses below.", invitation: "Complete the breaking world of Panchavati" },
   "leave-lanka": { kicker: "The direction changes", story: "The war is behind them. Rama asks that every ally who carried the struggle be honoured, and the returning company rises from Lanka toward home.", invitation: "Rise into the homeward sky" },
   "sky-road": { kicker: "The world below becomes memory", story: "Rama points out the places that shaped the journey. Sita does not receive a list of names, but a moving map of loss, friendship, courage, and return.", invitation: "Follow the remembered road" },
   "bharadvaja-hermitage": { kicker: "Fourteen years narrow to one question", story: "At Bharadvaja's hermitage, Rama asks first about Ayodhya, Bharata, and his mothers. The city is still distant, but home is suddenly close enough to fear and hope for.", invitation: "Send word ahead" },
@@ -204,6 +212,14 @@ const hindiStoryCopy: Record<string, SceneCopy> = {
   "sita-questions-the-bow": { title: "सीता धनुष पर प्रश्न करती हैं", kicker: "यात्रा एक अधूरे तर्क के लिए रुकती है", story: "सीता पूछती हैं कि क्या शस्त्र मन का उद्देश्य बदल सकते हैं। राम वन-रक्षा के वचन से उत्तर देते हैं; दृश्य मतभेद को मिटाता नहीं है।", invitation: "आगे बीतते वर्षों में चलें" },
   "ten-years-become-map": { title: "दस वर्ष जीवित मानचित्र बनते हैं", kicker: "समय खोजी जा सकने वाली भूगोल बनता है", story: "पंचाप्सरा का अनदेखा संगीत एक कथा खोलता है, फिर अनेक आश्रमों में वर्ष बहते हैं और अगस्त्य से मिलने की इच्छा भटकती राह को दिशा देती है।", invitation: "दक्षिण की राह लें" },
   "agastya-points-south": { title: "अगस्त्य पंचवटी की दिशा बताते हैं", kicker: "पहाड़ी के पार अगला घर दिखाई देता है", story: "आतिथ्य, कथा-सम्पन्न शस्त्र और सीता की थकान की चिंता मिलकर यात्रियों को जल-भरी पंचवटी की ओर भेजते हैं।", invitation: "दंडक के भीतर की राह पूरी करें" },
+  "jatayu-welcomes-panchavati": { title: "जटायु पंचवटी में स्वागत करते हैं", kicker: "पड़ाव सुरक्षित घर बनता है", story: "जटायु की पुरानी मित्रता, गोदावरी का भू-दृश्य और लक्ष्मण का श्रम पंचवटी को परिवार और रक्षक देते हैं।", invitation: "खुले स्थान में आने वाले से मिलें" },
+  "surpanakha-breaks-quiet": { title: "शूर्पणखा पंचवटी की शांति तोड़ती हैं", kicker: "शांति लंबी राह वाला संघर्ष बनती है", story: "शूर्पणखा का आगमन इच्छा, परिहास, प्रतिस्पर्धा और हिंसक अपमान से होकर संकट को जनस्थान तक ले जाता है।", invitation: "खर तक बढ़ता संघर्ष देखें" },
+  "janasthana-falls": { title: "जनस्थान गिरता है", kicker: "कुटिया का संघर्ष युद्ध बनता है", story: "शूर्पणखा की चोट के उत्तर में एक के बाद एक दल आते हैं, खर गिरता है और अकम्पन बचा समाचार रावण तक ले जाता है।", invitation: "वन के पार बनती योजना में प्रवेश करें" },
+  "ravana-chooses-deception": { title: "रावण छल चुनता है", kicker: "चेतावनी दबाव में मोड़ी जाती है", story: "शूर्पणखा जनस्थान को सभा तक लाती हैं; मारीच राम को याद कर चेताते हैं, पर अलगाव पर बनी योजना में विवश किए जाते हैं।", invitation: "असंभव मृग का पीछा करें" },
+  "golden-deer-separates-house": { title: "स्वर्ण-मृग परिवार को अलग करता है", kicker: "आश्चर्य दूरी बनाता है", story: "मारीच का चमकता रूप राम को दूर खींचता है और फिर उधार ली आवाज़ वन के पार सीता व लक्ष्मण तक भेजता है।", invitation: "कुटिया की ओर लौटें" },
+  "mendicant-at-empty-cottage": { title: "भिक्षु खाली कुटिया तक पहुँचता है", kicker: "आतिथ्य हथियार बने वेश से मिलता है", story: "भय लक्ष्मण को दूर खींचता है; राम-लक्ष्मण की प्रतीक्षा में बैठी सीता के पास रावण भिक्षु बनकर पहुँचता है।", invitation: "वेश उतरने तक ठहरें" },
+  "sita-carried-south": { title: "सीता वन को साक्षी पुकारती हैं", kicker: "वन साक्षियों का जाल बनता है", story: "पंचवटी नीचे छूटते समय सीता रावण को अस्वीकार करती, राम का नाम लेती और नदी, वृक्ष, पर्वत, पक्षियों तथा पशुओं को पुकारती हैं।", invitation: "जटायु का उत्तर सुनें" },
+  "jatayu-rises-sky-road": { title: "जटायु आकाश-राह में उठते हैं", kicker: "प्रतिरोध खोज-राह छोड़ता है", story: "जटायु हरण की गति तोड़कर गिरते हैं; सीता बोलती रहती और नीचे के साक्षियों की ओर वस्त्र व आभूषण गिराती हैं।", invitation: "पंचवटी का टूटता संसार पूरा करें" },
   "leave-lanka": { title: "लंका से प्रस्थान", kicker: "दिशा बदलती है", story: "युद्ध पीछे छूट चुका है। राम कहते हैं कि संघर्ष में साथ देने वाले हर सहयोगी का सम्मान हो, और सब लंका से घर की ओर उठते हैं।", invitation: "घर लौटते आकाश में बढ़ें" },
   "sky-road": { title: "आकाश की स्मृति-राह", kicker: "नीचे का संसार स्मृति बनता है", story: "राम यात्रा को बदलने वाले स्थान दिखाते हैं। सीता के सामने नामों की सूची नहीं, बल्कि वियोग, मित्रता, साहस और वापसी का चलता हुआ मानचित्र खुलता है।", invitation: "स्मृति की राह पर चलें" },
   "bharadvaja-hermitage": { title: "घर अब निकट है", kicker: "चौदह वर्ष एक प्रश्न में सिमटते हैं", story: "भरद्वाज के आश्रम में राम सबसे पहले अयोध्या, भरत और अपनी माताओं का समाचार पूछते हैं। नगर अभी दूर है, पर घर अब आशा और भय दोनों जितना निकट है।", invitation: "आगे समाचार भेजें" },
@@ -466,7 +482,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     setEncounterTrail([]);
     setEncounterReturnTrail(null);
     setShowCompletion(false);
-    if (lens === "compass") setCompassViewRequest((request) => ({ mode: "atlas", serial: request.serial + 1 }));
+    if (lens === "compass") setCompassViewRequest((request) => ({ mode: "selector", serial: request.serial + 1 }));
     setWorldLens(lens);
   }
 
@@ -670,7 +686,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       </header>
 
       {isRamayanaWorld && <nav className={styles.lensSwitcher} aria-label="World lens">
-        {(["compass", "story", "route", "connections"] as const).map((lens) => <button key={lens} type="button" aria-pressed={worldLens === lens} onClick={() => selectWorldLens(lens)}>{lens === "compass" ? "Whole story" : lens === "story" ? "Play" : lens === "route" ? "Map" : "Connections"}</button>)}
+        {(["compass", "story", "route", "connections"] as const).map((lens) => <button key={lens} type="button" aria-pressed={worldLens === lens} onClick={() => selectWorldLens(lens)}>{lens === "compass" ? "Visual worlds" : lens === "story" ? "Play" : lens === "route" ? "Map" : "Connections"}</button>)}
       </nav>}
 
       <section
