@@ -23,6 +23,14 @@ import {
   RAMAYANA_EMPTY_THRONE_MOMENTS,
   RAMAYANA_EMPTY_THRONE_SCENE_NODE_IDS,
 } from "./ramayana-empty-throne";
+import {
+  RAMAYANA_ROAD_ASKS_HOME_CAST_NODE_IDS,
+  RAMAYANA_ROAD_ASKS_HOME_DISTRICT,
+  RAMAYANA_ROAD_ASKS_HOME_LOCAL_NODES,
+  RAMAYANA_ROAD_ASKS_HOME_LOCAL_ROUTES,
+  RAMAYANA_ROAD_ASKS_HOME_MOMENTS,
+  RAMAYANA_ROAD_ASKS_HOME_SCENE_NODE_IDS,
+} from "./ramayana-road-asks-home";
 import { buildRamayanaCompass } from "./ramayana-compass";
 import { RAMAYANA_LIVING_PORTAL_NODE_IDS, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE, RAMAYANA_LIVING_ROUTE_ROOT_IDS } from "./ramayana-living-portal-contract";
 import type { WorldNodeFamily } from "@/lib/domain/atlas";
@@ -32,6 +40,7 @@ const sceneNodeIds: StoryWorldPack["sceneNodeIds"] = {
   ...RAMAYANA_AYODHYA_SCENE_NODE_IDS,
   ...RAMAYANA_FIRST_RIVERS_SCENE_NODE_IDS,
   ...RAMAYANA_EMPTY_THRONE_SCENE_NODE_IDS,
+  ...RAMAYANA_ROAD_ASKS_HOME_SCENE_NODE_IDS,
   "leave-lanka": ["pushpaka-departure-lanka", "lanka-story-world", "vibhishana", "rama", "sita"],
   "sky-road": ["remembered-homeward-route", "rama", "sita", "kishkindha-story-world", "bridge-to-lanka"],
   "bharadvaja-hermitage": ["bharadvaja-homecoming-counsel", "bharadvaja", "bharadvaja-hermitage-story-world", "rama", "ayodhya"],
@@ -45,6 +54,7 @@ const castNodeIds: StoryWorldPack["castNodeIds"] = {
   ...RAMAYANA_AYODHYA_CAST_NODE_IDS,
   ...RAMAYANA_FIRST_RIVERS_CAST_NODE_IDS,
   ...RAMAYANA_EMPTY_THRONE_CAST_NODE_IDS,
+  ...RAMAYANA_ROAD_ASKS_HOME_CAST_NODE_IDS,
   Rama: "rama",
   Sita: "sita",
   Lakshmana: "lakshmana",
@@ -62,6 +72,7 @@ const moments: Record<string, StoryMoment> = {
   ...RAMAYANA_AYODHYA_MOMENTS,
   ...RAMAYANA_FIRST_RIVERS_MOMENTS,
   ...RAMAYANA_EMPTY_THRONE_MOMENTS,
+  ...RAMAYANA_ROAD_ASKS_HOME_MOMENTS,
   "leave-lanka": {
     id: "leave-lanka",
     decisiveChange: { en: "Victory becomes a shared journey home.", hi: "विजय अब सबकी साझा घर-वापसी बनती है।" },
@@ -135,7 +146,7 @@ const moments: Record<string, StoryMoment> = {
   },
 };
 
-const storyDistricts = [RAMAYANA_STORY_DISTRICTS[0], RAMAYANA_FIRST_RIVERS_DISTRICT, RAMAYANA_EMPTY_THRONE_DISTRICT, RAMAYANA_STORY_DISTRICTS[1]];
+const storyDistricts = [RAMAYANA_STORY_DISTRICTS[0], RAMAYANA_FIRST_RIVERS_DISTRICT, RAMAYANA_EMPTY_THRONE_DISTRICT, RAMAYANA_ROAD_ASKS_HOME_DISTRICT, RAMAYANA_STORY_DISTRICTS[1]];
 
 const gatewayFamily: WorldNodeFamily = "event_story";
 const routeLimit = 8;
@@ -144,7 +155,8 @@ const routeRootIds = ["return-to-ayodhya"];
 function resolveNode(id: string): StoryWorldNode | null {
   const localNode = RAMAYANA_AYODHYA_LOCAL_NODES[id]
     ?? RAMAYANA_FIRST_RIVERS_LOCAL_NODES[id]
-    ?? RAMAYANA_EMPTY_THRONE_LOCAL_NODES[id];
+    ?? RAMAYANA_EMPTY_THRONE_LOCAL_NODES[id]
+    ?? RAMAYANA_ROAD_ASKS_HOME_LOCAL_NODES[id];
   if (localNode) return localNode;
   const node = worldNodes.find((candidate) => candidate.id === id);
   if (node) return node;
@@ -204,6 +216,7 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
       ...(RAMAYANA_AYODHYA_LOCAL_ROUTES[nodeId] ?? []),
       ...(RAMAYANA_FIRST_RIVERS_LOCAL_ROUTES[nodeId] ?? []),
       ...(RAMAYANA_EMPTY_THRONE_LOCAL_ROUTES[nodeId] ?? []),
+      ...(RAMAYANA_ROAD_ASKS_HOME_LOCAL_ROUTES[nodeId] ?? []),
       ...compileRoutes(nodeId, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE[nodeId]),
     ].slice(0, routeLimit);
     routes[nodeId] = nodeRoutes;

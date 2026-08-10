@@ -1,5 +1,25 @@
 # Implementation plan
 
+Checkpoint 2026-08-10 (fifth Ramayana illustrated district candidate): **The
+road that asks Rama home** continues the contiguous Ayodhya story boundary from
+LXXXIII through CXV. Eight full-screen tableaux and forty-eight bilingual beats
+carry Bharata's expedition through the Ganga, Guha's remembered first night,
+Bharadvaja's test and welcome, Chitrakoot's alarm, the brothers' reunion and
+Dasharatha's death, the family council, the sandals agreement, and the waiting
+trust at Nandigrama. All eight selected spans have exact byte, line, ordinal,
+and SHA-256 coordinates in the retained product-allowed Dutt volume. Every
+beat has bounded cinematic staging, every scene resolves its cast and local
+place routes, and both affected whole-story turns now enter the playable work.
+The five districts total thirty-nine scenes and 196 bilingual beats. The eager
+story pack remains below 240 KB raw and 42 KB gzip, while district payloads
+remain below 75 KB raw and 18 KB gzip. Local candidate validation passes lint,
+TypeScript, the optimized production build, 857 portable product tests with the
+same 17 named source-vault-only skips, and all 28 serialized desktop/Pixel 7
+browser cases. CI and hosted acceptance remain release checks. Exact
+boundaries and visual hashes are recorded in
+`RAMAYANA_ROAD_ASKS_HOME_DISTRICT.md`. These counters describe selected
+playable scope, not whole-Ramayana or civilizational completeness.
+
 Checkpoint 2026-08-10 (fourth Ramayana illustrated district): the Ramayana
 story world now opens on four explicit visual entrances before the thinner
 forty-nine-turn atlas. **The night the road changed** maps Ayodhyā Kāṇḍa source

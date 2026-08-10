@@ -1,6 +1,6 @@
 # Ramayana playable districts
 
-Status: **four-district playable candidate — 2026-08-10**
+Status: **five-district playable candidate — 2026-08-10**
 
 Current implementation checkpoint: the first repeatable slice, **The road home
 to Ayodhya**, is joined by three contiguous early-epic districts. **The night the
@@ -10,8 +10,10 @@ coronation preparation through Rama, Sita, and Lakshmana preparing to depart.
 ending when the three enter the cottage they have built at Chitrakoot. **The
 empty throne** continues through LVII–LXXXII: the empty chariot, Dasharatha's
 last night, the kingless city, Bharata's return, the rejected boons, mourning,
-and the decision to bring Rama home. Bharata's expedition and the sandals arc
-begin later and are not smuggled into this boundary.
+and the decision to bring Rama home. **The road that asks Rama home** now
+continues contiguously through LXXXIII–CXV: Bharata's expedition, Guha's
+remembered first night, Bharadvaja's test and welcome, Chitrakoot's alarm, the
+brothers' reunion, the family debate, the sandals trust, and Nandigrama.
 
 The first eight scenes preserve the sequence's human reversals rather than replacing
 them with a one-line exile summary: Kaikeyi first rejoices; Manthara reframes
@@ -24,7 +26,8 @@ public grief and pursuit, the Tamasa departure, the roads beyond Kosala, Guha's
 welcome and night watch, the Ganga crossing and Sumantra's return, the first
 forest night, Bharadvaja and the Yamuna road, and the making of a Chitrakoot
 home. The third early-epic district adds forty-three beats and eight new
-tableaux. The product now opens on a dedicated four-world selector; the thin
+tableaux. The fourth adds forty-eight beats and eight new tableaux. The product
+now opens on a dedicated five-world selector; the thin
 atlas is an explicit secondary choice, and completing any district returns to
 the selector.
 
@@ -132,16 +135,16 @@ The player never leaves the full-screen world merely to understand it.
 ### Story
 
 The default lens is a cinematic sequence inside the selected district: eight,
-eight, eight, or seven visual scenes. Across the four districts there are
-thirty-one scenes and 148 bilingual beats. It prioritizes emotion, characters,
+eight, eight, eight, or seven visual scenes. Across the five districts there
+are thirty-nine scenes and 196 bilingual beats. It prioritizes emotion, characters,
 and one clear next action. Short retelling copy is capped at
 roughly 45 words per beat in English and Hindi.
 
 ### Route
 
-The whole-story map shows forty-six canonical narrative places without
+The whole-story map shows fifty-three canonical narrative places without
 pretending they are modern coordinates. Inside it, the playable road-home and
-early-exile districts currently light twenty connected places, including
+early-exile districts currently light twenty-seven connected places, including
 Ayodhya, the Tamasa, Shringaverapura, the Ganga crossing, the first forest
 night, Prayaga, the Yamuna crossing, Chitrakoot, Lanka, Kishkindha,
 Bharadvaja's hermitage, and Nandigrama. The scene cards are compiled
@@ -155,7 +158,7 @@ story world, not a historical GIS assertion.
 
 Because most whole-story turns remain mapped orientation rather than visual
 scenes, their cards retain a direct illustrated-world entrance. More
-importantly, the four finished worlds now occupy a dedicated first screen. The
+importantly, the five finished worlds now occupy a dedicated first screen. The
 forty-nine-turn atlas opens only through a clearly labelled secondary action,
 and it retains a direct return to the illustrated selector. The ordinary
 visitor no longer has to guess which story arc hides the playable work.
