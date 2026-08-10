@@ -11,8 +11,8 @@ describe("playable story district compiler", () => {
   const district = buildPlayableStoryDistrictIndex(pack, journey.stops, map);
   const linksFor = (label: string) => district.byMapPlaceId[map.places.find((place) => place.label === label)!.id];
 
-  it("projects all three detailed districts from existing graph relationships", () => {
-    expect(district).toMatchObject({ sceneCount: 23, placeCount: 12 });
+  it("projects all four detailed districts from existing graph relationships", () => {
+    expect(district).toMatchObject({ sceneCount: 31, placeCount: 20 });
     expect(linksFor("Lanka").map((link) => link.id)).toEqual(["leave-lanka"]);
     expect(linksFor("Kishkindha").map((link) => link.id)).toEqual(["sky-road"]);
     expect(linksFor("Bharadvaja's hermitage").map((link) => link.id)).toEqual(["bharadvaja-hermitage"]);
@@ -24,6 +24,14 @@ describe("playable story district compiler", () => {
     expect(linksFor("The first forest night").map((link) => link.id)).toEqual(["first-forest-night"]);
     expect(linksFor("The confluence at Prayaga").map((link) => link.id)).toEqual(["prayaga-to-yamuna"]);
     expect(linksFor("The cottage at Chitrakoot").map((link) => link.id)).toEqual(["chitrakoot-home"]);
+    expect(linksFor("The silent city").map((link) => link.id)).toEqual(["empty-chariot-return"]);
+    expect(linksFor("The darkened royal chamber").map((link) => link.id)).toEqual(["palace-grief-dialogue"]);
+    expect(linksFor("The Sarayu of an old memory").map((link) => link.id)).toEqual(["river-sound-confession"]);
+    expect(linksFor("The palace between death and succession").map((link) => link.id)).toEqual(["city-without-king"]);
+    expect(linksFor("The urgent road from Kekaya").map((link) => link.id)).toEqual(["bharata-urgent-return"]);
+    expect(linksFor("Kaikeyi's room after the boons").map((link) => link.id)).toEqual(["bharata-rejects-boons"]);
+    expect(linksFor("The funeral bank of the Sarayu").map((link) => link.id)).toEqual(["funeral-and-trust"]);
+    expect(linksFor("The road prepared for Rama").map((link) => link.id)).toEqual(["crown-refused-road"]);
     expect(linksFor("Ayodhya").map((link) => link.id)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
   });
 

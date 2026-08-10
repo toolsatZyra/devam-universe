@@ -1,25 +1,29 @@
 # Implementation plan
 
-Checkpoint 2026-08-10 (third Ramayana illustrated district): the Ramayana
-story world now exposes three explicit visual entrances before the thinner
+Checkpoint 2026-08-10 (fourth Ramayana illustrated district): the Ramayana
+story world now opens on four explicit visual entrances before the thinner
 forty-nine-turn atlas. **The night the road changed** maps Ayodhyā Kāṇḍa source
 units I–XL exactly once into eight scene-specific tableaux and thirty-six
 bilingual beats. **Across the first rivers** continues contiguously through
 XLI–LVI with eight new tableaux and forty beats: the citizens follow, the
 Tamasa tracks turn, the road crosses Kosala, Guha and Lakshmana keep watch,
 Sumantra returns from the Ganga, and the three cross the Yamuna and make a home
-at Chitrakoot. The existing road-home district remains seven scenes and
-twenty-nine beats. Each district has local sequence, progress, replay, and
-completion; completion returns to the three-district selector rather than
-jumping across the epic's unfinished middle. The eager preview/graph pack
-remains below 180 KB raw and 35 KB gzip; complete beats load only for the
-entered district and each district payload stays below 75 KB raw and 18 KB
-gzip. This is twenty-three playable selected-expression scenes and 105
-bilingual beats, not complete Ramayana coverage or observed engagement.
+at Chitrakoot. **The empty throne** continues through Ayodhya units LVII–LXXXII
+with eight new tableaux and forty-three beats: the empty chariot, Dasharatha's
+last night, the kingless city, Bharata's urgent return, refusal of the boons,
+mourning, and the crown redirected into a road toward Rama. The existing
+road-home district remains seven scenes and twenty-nine beats. Each district
+has local sequence, progress, replay, and completion; completion returns to the
+four-district selector rather than jumping across the epic's unfinished
+middle. The eager preview/graph pack remains below 210 KB raw and 36 KB gzip;
+complete beats load only for the entered district and each district payload
+stays below 75 KB raw and 18 KB gzip. This is thirty-one playable
+selected-expression scenes and 148 bilingual beats, not complete Ramayana
+coverage or observed engagement.
 
 Local acceptance for this checkpoint is complete: TypeScript and lint pass;
-855 portable product tests pass with the same 17 named vault-only skips; the
-optimized Next.js build passes; and all 24 serialized desktop/Pixel 7 browser
+856 portable product tests pass with the same 17 named vault-only skips; the
+optimized Next.js build passes; and all 26 serialized desktop/Pixel 7 browser
 cases pass. Browser acceptance includes the Atlas-to-Ramayana state chain, the
 new playable default, all eight first-rivers images, district completion and
 return, reversible character paths, and two-way map pan/zoom recovery. These

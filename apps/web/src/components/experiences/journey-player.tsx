@@ -109,6 +109,14 @@ const storyCopy: Record<string, SceneCopy> = {
   "first-forest-night": { kicker: "Grief speaks without ceremony", story: "Beyond the inhabited road, Rama voices fear and anger for the family behind them; Lakshmana answers by making companionship present.", invitation: "Follow the smoke to the confluence" },
   "prayaga-to-yamuna": { kicker: "An unknown forest becomes a chosen road", story: "Bharadvaja points toward Chitrakoot; the travellers build a raft, cross the Yamuna, and enter a flowering landscape.", invitation: "Climb toward the mountain home" },
   "chitrakoot-home": { kicker: "The travellers make a place their own", story: "Birdsong and mountain water lead to a chosen clearing where Lakshmana builds a cottage and the three enter their first forest home.", invitation: "Complete the first-rivers district" },
+  "empty-chariot-return": { kicker: "The witness returns without the travellers", story: "Sumantra enters a silent Ayodhya with the empty car and carries three distinct voices into Dasharatha's darkened chamber.", invitation: "Stay inside the grieving palace" },
+  "palace-grief-dialogue": { kicker: "The command's cost fills the room", story: "Kausalya asks to follow the road, Sumantra offers what reassurance he can, and the royal couple confronts what exile has done to their family.", invitation: "Enter Dasharatha's oldest memory" },
+  "river-sound-confession": { kicker: "One unseen sound returns across a lifetime", story: "Dasharatha recounts the arrow released at the Sarayu, the family it destroyed, and the curse he now recognizes in his own last night.", invitation: "Wake with the city" },
+  "city-without-king": { kicker: "Morning finds an empty centre", story: "Ceremony becomes discovery, farewell is suspended, and Vasishta sends guarded messengers while the council faces a kingdom without its king.", invitation: "Ride toward Bharata" },
+  "bharata-urgent-return": { kicker: "The road knows before the traveller does", story: "A dark dream and careful messengers send Bharata across seven nights into an Ayodhya whose silence tells him the first truth.", invitation: "Enter Kaikeyi's room" },
+  "bharata-rejects-boons": { kicker: "The intended beneficiary refuses the result", story: "Kaikeyi presents the death, exile, and throne as success; Bharata rejects the kingdom and promises to bring Rama home.", invitation: "Mourn with the family" },
+  "funeral-and-trust": { kicker: "Suspicion gives way to shared mourning", story: "Kausalya tests Bharata's innocence, embraces another grieving son, and the long-delayed farewell finally moves toward the Sarayu.", invitation: "Return to the empty throne" },
+  "crown-refused-road": { kicker: "The crown becomes a direction of travel", story: "Bharata stops vengeance, refuses installation, and turns the institutions of the kingdom toward finding Rama and asking him to return.", invitation: "Complete the empty-throne district" },
   "leave-lanka": { kicker: "The direction changes", story: "The war is behind them. Rama asks that every ally who carried the struggle be honoured, and the returning company rises from Lanka toward home.", invitation: "Rise into the homeward sky" },
   "sky-road": { kicker: "The world below becomes memory", story: "Rama points out the places that shaped the journey. Sita does not receive a list of names, but a moving map of loss, friendship, courage, and return.", invitation: "Follow the remembered road" },
   "bharadvaja-hermitage": { kicker: "Fourteen years narrow to one question", story: "At Bharadvaja's hermitage, Rama asks first about Ayodhya, Bharata, and his mothers. The city is still distant, but home is suddenly close enough to fear and hope for.", invitation: "Send word ahead" },
@@ -156,6 +164,14 @@ const hindiStoryCopy: Record<string, SceneCopy> = {
   "first-forest-night": { title: "पहली वन-रात", kicker: "शोक बिना औपचारिकता बोलता है", story: "बस्ती की राह से बाहर राम पीछे छूटे परिवार के लिए भय और क्रोध कहते हैं; लक्ष्मण साथ होने का उत्तर देते हैं।", invitation: "संगम के धुएँ का अनुसरण करें" },
   "prayaga-to-yamuna": { title: "संगम से यमुना तक", kicker: "अनजान वन चुनी हुई राह बनता है", story: "भरद्वाज चित्रकूट की दिशा बताते हैं; यात्री बेड़ा बनाकर यमुना पार करते और फूलों से भरे भू-दृश्य में प्रवेश करते हैं।", invitation: "पर्वत के घर की ओर चढ़ें" },
   "chitrakoot-home": { title: "चित्रकूट में घर", kicker: "यात्री एक जगह को अपना बनाते हैं", story: "पक्षियों के स्वर और पर्वतीय जल उन्हें चुने हुए स्थान तक ले जाते हैं, जहाँ लक्ष्मण कुटिया बनाते और तीनों पहले वन-घर में प्रवेश करते हैं।", invitation: "पहली नदियों का संसार पूरा करें" },
+  "empty-chariot-return": { title: "खाली रथ लौटता है", kicker: "साक्षी लौटता है, यात्री नहीं", story: "सुमंत्र खाली रथ के साथ मौन अयोध्या में प्रवेश करते और वन की तीन अलग आवाज़ें दशरथ के अँधेरे कक्ष तक पहुँचाते हैं।", invitation: "शोकाकुल महल में ठहरें" },
+  "palace-grief-dialogue": { title: "महल में शोक बोलता है", kicker: "आदेश की कीमत कमरे को भर देती है", story: "कौसल्या वन की राह पर जाने की बात करती हैं, सुमंत्र जितना संभव है उतना आश्वासन देते हैं और राजपरिवार वनवास की मानवीय कीमत का सामना करता है।", invitation: "दशरथ की पुरानी स्मृति में प्रवेश करें" },
+  "river-sound-confession": { title: "नदी की वह ध्वनि लौटती है", kicker: "एक अनदेखी ध्वनि जीवन भर लौटती रही", story: "दशरथ सरयू किनारे छोड़े गए बाण, उससे उजड़े परिवार और उस शाप को याद करते हैं जिसे वे अब अपनी अंतिम रात में पहचानते हैं।", invitation: "राजाविहीन नगर के साथ जागें" },
+  "city-without-king": { title: "राजाविहीन अयोध्या", kicker: "सुबह एक खाली केंद्र पाती है", story: "प्रभात का समारोह मृत्यु की खोज बनता है, विदाई रोकनी पड़ती है और वसिष्ठ सुरक्षित संदेश भेजते हुए खाली सिंहासन के सामने सभा बुलाते हैं।", invitation: "भरत की ओर जाने वाली राह पकड़ें" },
+  "bharata-urgent-return": { title: "भरत की तत्काल वापसी", kicker: "यात्री से पहले राह सत्य जानती है", story: "अशुभ स्वप्न और सावधान दूत भरत को सात रातों की यात्रा से उस अयोध्या तक लाते हैं जिसका मौन पहली सच्चाई बता देता है।", invitation: "कैकेयी के कक्ष में प्रवेश करें" },
+  "bharata-rejects-boons": { title: "भरत वरों का फल अस्वीकार करते हैं", kicker: "जिसके लिए सब हुआ वही परिणाम ठुकराता है", story: "कैकेयी मृत्यु, वनवास और सिंहासन को सफलता की तरह रखती हैं; भरत राज्य अस्वीकार कर राम को लौटाने का संकल्प लेते हैं।", invitation: "परिवार के साथ शोक करें" },
+  "funeral-and-trust": { title: "शोक से विश्वास", kicker: "संदेह साझा शोक में बदलता है", story: "कौसल्या भरत की निर्दोषता परखकर उन्हें एक और शोकाकुल पुत्र की तरह गले लगाती हैं और रुकी हुई राजकीय विदाई सरयू की ओर बढ़ती है।", invitation: "खाली सिंहासन की ओर लौटें" },
+  "crown-refused-road": { title: "मुकुट अस्वीकार, राह तैयार", kicker: "मुकुट यात्रा की दिशा बन जाता है", story: "भरत प्रतिशोध रोकते, राज्याभिषेक अस्वीकार करते और राज्य की पूरी व्यवस्था को राम को खोजने तथा वापस बुलाने की यात्रा में बदल देते हैं।", invitation: "खाली सिंहासन का संसार पूरा करें" },
   "leave-lanka": { title: "लंका से प्रस्थान", kicker: "दिशा बदलती है", story: "युद्ध पीछे छूट चुका है। राम कहते हैं कि संघर्ष में साथ देने वाले हर सहयोगी का सम्मान हो, और सब लंका से घर की ओर उठते हैं।", invitation: "घर लौटते आकाश में बढ़ें" },
   "sky-road": { title: "आकाश की स्मृति-राह", kicker: "नीचे का संसार स्मृति बनता है", story: "राम यात्रा को बदलने वाले स्थान दिखाते हैं। सीता के सामने नामों की सूची नहीं, बल्कि वियोग, मित्रता, साहस और वापसी का चलता हुआ मानचित्र खुलता है।", invitation: "स्मृति की राह पर चलें" },
   "bharadvaja-hermitage": { title: "घर अब निकट है", kicker: "चौदह वर्ष एक प्रश्न में सिमटते हैं", story: "भरद्वाज के आश्रम में राम सबसे पहले अयोध्या, भरत और अपनी माताओं का समाचार पूछते हैं। नगर अभी दूर है, पर घर अब आशा और भय दोनों जितना निकट है।", invitation: "आगे समाचार भेजें" },
@@ -212,6 +228,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
   const [accountPrompt, setAccountPrompt] = useState(false);
   const [language, setLanguage] = useState<"en" | "hi">("en");
   const [worldLens, setWorldLens] = useState<"compass" | "story" | "route" | "connections">("compass");
+  const [compassViewRequest, setCompassViewRequest] = useState<{ mode: "selector" | "atlas"; serial: number }>({ mode: "selector", serial: 0 });
   const [storyFocusTurnId, setStoryFocusTurnId] = useState(() => storyWorld?.districts[0]?.compassTurnIds[0] ?? storyWorld?.compass.arcs[0]?.turnIds[0] ?? "");
   const [camera, setCamera] = useState<JourneyCameraView>({ ...JOURNEY_CAMERA_DEFAULT });
   const [cameraDragging, setCameraDragging] = useState(false);
@@ -405,14 +422,28 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
     if (!storyWorld?.compass.turns[turnId]) return;
     setStoryFocusTurnId(turnId);
     setEncounterTrail([]);
+    setCompassViewRequest((request) => ({ mode: "atlas", serial: request.serial + 1 }));
     setWorldLens("compass");
+  }
+
+  function requestCompassView(mode: "selector" | "atlas") {
+    setCompassViewRequest((request) => ({ mode, serial: request.serial + 1 }));
   }
 
   function selectWorldLens(lens: "compass" | "story" | "route" | "connections") {
     setEncounterTrail([]);
     setEncounterReturnTrail(null);
     setShowCompletion(false);
+    if (lens === "compass") setCompassViewRequest((request) => ({ mode: "atlas", serial: request.serial + 1 }));
     setWorldLens(lens);
+  }
+
+  function openVisualWorldSelector() {
+    setEncounterTrail([]);
+    setEncounterReturnTrail(null);
+    setShowCompletion(false);
+    setCompassViewRequest((request) => ({ mode: "selector", serial: request.serial + 1 }));
+    setWorldLens("compass");
   }
 
   function continueJourney() {
@@ -630,7 +661,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
       >
         <div className={styles.horizon} aria-hidden="true" />
         <JourneyBeatStage stage={sceneBeatStage} />
-        {isRamayanaWorld && storyWorld && <div hidden={worldLens !== "compass"}><JourneyCompass compass={storyWorld.compass} districts={storyWorld.districts} language={language} onEnterMoment={openStoryMoment} onSelectTurn={setStoryFocusTurnId} selectedTurnId={storyFocusTurnId} /></div>}
+        {isRamayanaWorld && storyWorld && <div hidden={worldLens !== "compass"}><JourneyCompass compass={storyWorld.compass} districts={storyWorld.districts} language={language} onEnterMoment={openStoryMoment} onRequestView={requestCompassView} onSelectTurn={setStoryFocusTurnId} selectedTurnId={storyFocusTurnId} viewRequest={compassViewRequest} /></div>}
         {isRamayanaWorld && storyWorld && <div hidden={worldLens !== "route"}><RamayanaNarrativeMap active={worldLens === "route"} focusTurnId={storyFocusTurnId} language={language} onEnterMoment={openStoryMoment} onOpenWholeStory={openWholeStoryTurn} stops={journey.stops} storyWorld={storyWorld} /></div>}
         {(!isRamayanaWorld || worldLens === "story") && <div className={styles.storyPath} role="list" aria-label="Story scenes">
           {activeDistrictStops.map((stop, districtIndex) => {
@@ -772,7 +803,7 @@ export function JourneyPlayer({ journey, storyWorld, account }: { journey: HeroJ
         const firstMomentId = activeDistrict?.entryMomentId ?? activeDistrictStops[0]?.id;
         const firstIndex = journey.stops.findIndex((stop) => stop.id === firstMomentId);
         if (firstIndex >= 0) travelTo(firstIndex);
-      }}>Replay this district</button>{isRamayanaWorld && <button type="button" onClick={() => selectWorldLens("compass")}>Explore another visual district</button>}<Link href="/">Return to the stars</Link></div></div>}
+      }}>Replay this district</button>{isRamayanaWorld && <button type="button" onClick={openVisualWorldSelector}>Explore another visual district</button>}<Link href="/">Return to the stars</Link></div></div>}
       {sarthiOpen && <button className={styles.scrim} type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi" />}
       <aside className={`${styles.sarthiPanel} ${sarthiOpen ? styles.sarthiPanelOpen : ""}`} aria-hidden={!sarthiOpen} aria-label="Sarthi conversation">
         <header><div><span>✦</span><p><strong>Sārthi</strong><small>Companion inside this story</small></p></div><button type="button" onClick={() => setSarthiOpen(false)} aria-label="Close Sarthi">×</button></header>
