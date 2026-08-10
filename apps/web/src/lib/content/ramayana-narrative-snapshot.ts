@@ -1,5 +1,6 @@
 import { getHeroJourney } from "../../data/hero-experiences";
 import { RAMAYANA_BEGINNINGS_SCENE_OUTLINES } from "../../data/ramayana-beginnings-outline";
+import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import type { StoryBeat, StoryCompassTurn, StoryMoment } from "../domain/story-world";
 import type { ExperienceCitation } from "../domain/experience";
@@ -160,6 +161,41 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     }
   }
 
+  const beginningOutlineById = new Map(RAMAYANA_BEGINNINGS_SCENE_OUTLINES.map((outline) => [outline.id, outline]));
+  for (const playable of RAMAYANA_BEGINNINGS_PLAYABLE_SCENES) {
+    const outline = beginningOutlineById.get(playable.id);
+    if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
+    if (outline.sourceStart !== outline.sourceEnd) {
+      throw new Error(`Ramayana playable beginning requires one exact source span: ${playable.id}`);
+    }
+    const turn = pack.compass.turns[outline.turnId];
+    if (!turn) throw new Error(`Ramayana playable beginning has no backbone turn: ${playable.id}`);
+    const siblings = scenesByTurnId.get(outline.turnId) ?? [];
+    siblings.push({
+      id: playable.id,
+      detailOrdinal: outline.ordinal,
+      readiness: "playable",
+      title: outline.title,
+      synopsis: playable.moment.decisiveChange,
+      narrative: {
+        en: sceneNarrative(playable.moment, "en"),
+        hi: sceneNarrative(playable.moment, "hi"),
+      },
+      source: {
+        sourceSha256: turn.sourceRange.sourceSha256,
+        sourceGlobalOrdinal: playable.sourceGlobalOrdinal,
+        sourceOrdinal: outline.sourceStart,
+        sourceEndOrdinal: outline.sourceEnd,
+        spanSha256: playable.spanSha256,
+      },
+      nodeIds: playable.nodeIds,
+      characters: [...new Set(playable.moment.beats.flatMap((beat) => beat.characterIds))],
+      places: outline.places,
+      beats: playable.moment.beats.map((beat, index) => ({ ...beat, ordinal: index + 1 })),
+    });
+    scenesByTurnId.set(outline.turnId, siblings);
+  }
+
   for (const outline of RAMAYANA_BEGINNINGS_SCENE_OUTLINES) {
     const turn = pack.compass.turns[outline.turnId];
     if (!turn) throw new Error(`Ramayana outline has no backbone turn: ${outline.id}`);
@@ -167,6 +203,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       throw new Error(`Ramayana outline exceeds its source-bounded turn: ${outline.id}`);
     }
     const siblings = scenesByTurnId.get(outline.turnId) ?? [];
+    if (siblings.some((scene) => scene.id === outline.id)) continue;
     siblings.push({
       id: outline.id,
       detailOrdinal: outline.ordinal,

@@ -55,14 +55,14 @@ function validateSnapshot(snapshot) {
   if (snapshot.counters.arcs !== 7 || snapshot.counters.backboneTurns !== 49) {
     throw new Error("Unexpected Ramayana backbone shape");
   }
-  if (snapshot.counters.playableTurns !== 14
-    || snapshot.counters.outlinedTurns !== 6
+  if (snapshot.counters.playableTurns !== 15
+    || snapshot.counters.outlinedTurns !== 5
     || snapshot.counters.orientationOnlyTurns !== 29) {
     throw new Error("Unexpected Ramayana playable-turn boundary");
   }
-  if (snapshot.counters.playableScenes !== 55
-    || snapshot.counters.draftSceneOutlines !== 42
-    || snapshot.counters.bilingualBeats !== 285) {
+  if (snapshot.counters.playableScenes !== 59
+    || snapshot.counters.draftSceneOutlines !== 38
+    || snapshot.counters.bilingualBeats !== 303) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
@@ -198,8 +198,8 @@ function buildMigration() {
   return `-- Generated from the app-owned Ramayana story world by
 -- tools/compile_ramayana_consumer_narrative_seed.cjs.
 -- This migration stores compact bilingual consumer narrative data. It does not
--- copy source-vault bytes or claim that the remaining 35 turns are complete.
--- Forty-two draft scene outlines partition six of those unfinished turns, but
+-- copy source-vault bytes or claim that the remaining 34 turns are complete.
+-- Thirty-eight draft scene outlines partition five of those unfinished turns, but
 -- remain hidden from the public read path until complete bilingual beats exist.
 
 begin;
@@ -434,32 +434,32 @@ begin
   if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn') <> 49 then
     raise exception 'Expected 49 Ramayana backbone turns';
   end if;
-  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and publication_state = 'published') <> 14 then
-    raise exception 'Expected 14 playable Ramayana turns';
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and publication_state = 'published') <> 15 then
+    raise exception 'Expected 15 playable Ramayana turns';
   end if;
-  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and publication_state = 'draft') <> 35 then
-    raise exception 'Expected 35 unfinished Ramayana turns';
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and publication_state = 'draft') <> 34 then
+    raise exception 'Expected 34 unfinished Ramayana turns';
   end if;
-  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and visual_direction->>'coverage' = 'outlined') <> 6 then
-    raise exception 'Expected 6 outlined Ramayana turns';
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and visual_direction->>'coverage' = 'outlined') <> 5 then
+    raise exception 'Expected 5 outlined Ramayana turns';
   end if;
   if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'backbone_turn' and visual_direction->>'coverage' = 'orientation') <> 29 then
     raise exception 'Expected 29 orientation-only Ramayana turns';
   end if;
-  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'published') <> 55 then
-    raise exception 'Expected 55 Ramayana playable scenes';
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'published') <> 59 then
+    raise exception 'Expected 59 Ramayana playable scenes';
   end if;
-  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'draft') <> 42 then
-    raise exception 'Expected 42 draft Ramayana scene outlines';
+  if (select count(*) from public.narrative_moments where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'draft') <> 38 then
+    raise exception 'Expected 38 draft Ramayana scene outlines';
   end if;
-  if (select count(*) from public.narrative_beats beat join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> 285 then
-    raise exception 'Expected 285 Ramayana narrative beats';
+  if (select count(*) from public.narrative_beats beat join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> 303 then
+    raise exception 'Expected 303 Ramayana narrative beats';
   end if;
   if (select count(*) from public.narrative_moment_texts copy join public.narrative_moments moment on moment.id = copy.moment_id where moment.series_id = series_uuid) <> 292 then
     raise exception 'Expected 292 bilingual Ramayana moment texts';
   end if;
-  if (select count(*) from public.narrative_beat_texts copy join public.narrative_beats beat on beat.id = copy.beat_id join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> 570 then
-    raise exception 'Expected 570 bilingual Ramayana beat texts';
+  if (select count(*) from public.narrative_beat_texts copy join public.narrative_beats beat on beat.id = copy.beat_id join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> 606 then
+    raise exception 'Expected 606 bilingual Ramayana beat texts';
   end if;
   if exists (
     select 1 from public.narrative_moments
