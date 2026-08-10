@@ -69,6 +69,26 @@ describe("Ramayana district payload", () => {
     expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(48);
   });
 
+  it("serves the bounded Chitrakoot-to-Dandaka district without pulling in the next Jatayu passage", async () => {
+    const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=deeper-dandaka-v1"));
+    const payload = await response.json() as { ok: boolean; districtId: string; moments: Record<string, { beats: unknown[] }> };
+    expect(response.status).toBe(200);
+    expect(response.headers.get("cache-control")).toContain("immutable");
+    expect(payload).toMatchObject({ ok: true, districtId: "deeper-dandaka-v1" });
+    expect(Object.keys(payload.moments)).toEqual([
+      "chitrakoot-grows-unsafe",
+      "sita-tells-her-beginning",
+      "dandaka-receives-them",
+      "viradha-breaks-the-road",
+      "forest-asks-protection",
+      "sita-questions-the-bow",
+      "ten-years-become-map",
+      "agastya-points-south",
+    ]);
+    expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(46);
+    expect(JSON.stringify(payload)).not.toContain("jatayu");
+  });
+
   it("fails closed for an unknown district", async () => {
     const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=whole-epic"));
     expect(response.status).toBe(404);

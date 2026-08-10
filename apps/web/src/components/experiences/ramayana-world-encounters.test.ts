@@ -13,10 +13,10 @@ describe("Ramayana return-world encounters", () => {
   const pack = buildRamayanaStoryWorldPack();
   const moments = Object.fromEntries(pack.districts.flatMap((district) => Object.entries(getRamayanaDistrictMoments(district.id)!)));
 
-  it("turns all thirty-nine scenes in five districts into resolvable in-world constellations", () => {
-    expect(pack.districts.map((district) => district.momentIds.length)).toEqual([8, 8, 8, 8, 7]);
-    expect(new Set(pack.districts.flatMap((district) => district.momentIds)).size).toBe(39);
-    expect(Object.keys(pack.sceneNodeIds)).toHaveLength(39);
+  it("turns all forty-seven scenes in six districts into resolvable in-world constellations", () => {
+    expect(pack.districts.map((district) => district.momentIds.length)).toEqual([8, 8, 8, 8, 8, 7]);
+    expect(new Set(pack.districts.flatMap((district) => district.momentIds)).size).toBe(47);
+    expect(Object.keys(pack.sceneNodeIds)).toHaveLength(47);
     for (const [sceneId, nodeIds] of Object.entries(pack.sceneNodeIds)) {
       expect(getStorySceneEncounterNodes(pack, sceneId), sceneId).toHaveLength(nodeIds.length);
       expect(nodeIds.length, sceneId).toBeGreaterThanOrEqual(4);
@@ -104,7 +104,7 @@ describe("Ramayana return-world encounters", () => {
   });
 
   it("indexes character and place encounters back into every playable story moment", () => {
-    expect(pack.nodeMomentIds.rama).toEqual(["coronation-dawn", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "tamasa-night", "roads-beyond-kosala", "guha-night-watch", "ganga-crossing", "first-forest-night", "prayaga-to-yamuna", "chitrakoot-home", "empty-chariot-return", "bharata-rejects-boons", "guha-shows-first-night", "chitrakoot-hears-army", "brothers-meet-death-news", "family-asks-rama-home", "sandals-hold-kingdom", "nandigrama-trust", "leave-lanka", "sky-road", "bharadvaja-hermitage", "kingdom-returned"]);
+    expect(pack.nodeMomentIds.rama).toEqual(["coronation-dawn", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "tamasa-night", "roads-beyond-kosala", "guha-night-watch", "ganga-crossing", "first-forest-night", "prayaga-to-yamuna", "chitrakoot-home", "empty-chariot-return", "bharata-rejects-boons", "guha-shows-first-night", "chitrakoot-hears-army", "brothers-meet-death-news", "family-asks-rama-home", "sandals-hold-kingdom", "nandigrama-trust", "chitrakoot-grows-unsafe", "sita-tells-her-beginning", "dandaka-receives-them", "viradha-breaks-the-road", "forest-asks-protection", "sita-questions-the-bow", "ten-years-become-map", "agastya-points-south", "leave-lanka", "sky-road", "bharadvaja-hermitage", "kingdom-returned"]);
     expect(pack.nodeMomentIds.bharata).toEqual(["bharata-urgent-return", "bharata-rejects-boons", "funeral-and-trust", "crown-refused-road", "expedition-reaches-ganga", "guha-shows-first-night", "bharadvaja-tests-hosts", "chitrakoot-hears-army", "brothers-meet-death-news", "family-asks-rama-home", "sandals-hold-kingdom", "nandigrama-trust", "hanuman-goes-ahead", "bharata-hears", "ayodhya-prepares", "kingdom-returned"]);
     expect(pack.nodeMomentIds.ayodhya).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "nandigrama-trust", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
     for (const [nodeId, momentIds] of Object.entries(pack.nodeMomentIds)) {
@@ -115,8 +115,8 @@ describe("Ramayana return-world encounters", () => {
 
   it("ships a bounded story pack instead of the global Atlas to the client", () => {
     const serialized = JSON.stringify(pack);
-    expect(Buffer.byteLength(serialized)).toBeLessThan(240_000);
-    expect(gzipSync(serialized).byteLength).toBeLessThan(42_000);
+    expect(Buffer.byteLength(serialized)).toBeLessThan(300_000);
+    expect(gzipSync(serialized).byteLength).toBeLessThan(48_000);
     for (const district of pack.districts) {
       const payload = JSON.stringify(getRamayanaDistrictMoments(district.id));
       expect(Buffer.byteLength(payload), district.id).toBeLessThan(75_000);
