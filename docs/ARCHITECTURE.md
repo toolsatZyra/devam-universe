@@ -68,6 +68,21 @@ Core evidence classes: scripture/primary source; commentary/translation; academi
 
 Every claim can carry source, passage, edition, language, geography, time, tradition, confidence, conflict, and rights lane. Generated translations and syntheses remain explicitly attributable.
 
+Consumer narrative is a first-class database projection rather than an
+application-only collection of cards. The lean narrative model consists of:
+
+- a `narrative_series` record for the selected story universe and expression boundary;
+- ordered `narrative_arcs`, bilingual `narrative_arc_texts`, and backbone `narrative_moments` that cover the story from beginning to end, with playable scene moments nested beneath the same backbone turn;
+- localized `narrative_moment_texts` and ordered `narrative_beats` in English and Hindi;
+- source-span links from moments or beats to existing passages;
+- typed character, place, polity, festival, ritual and teaching participation; and
+- reversible moment-to-moment and moment-to-living-world links.
+
+Source apparatus remains attached to these records for editorial integrity and
+retrieval, but public story queries project consumer copy first. A source passage,
+claim or graph node is not counted as story coverage until it participates in a
+reviewed beginning-to-end narrative sequence.
+
 Public exact retrieval uses two narrow Postgres RPCs rather than a browser or
 app secret. One projects published product-compatible claims and suppresses
 exact text for citation-only evidence. The other projects exact source passages

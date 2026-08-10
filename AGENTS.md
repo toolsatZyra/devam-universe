@@ -13,9 +13,10 @@ The former Track A/Track B release system, G0-G9 gates, immutable rejected linea
 
 1. Devam is the umbrella product: an exhaustive library and knowledge universe for Sanatana Dharma, Indian culture, and Indian wisdom.
 2. Sarthi is the conversational guide. The Living Atlas is the explorable 2.5D world. Search/exact retrieval is the third door.
-3. Build a useful end-to-end MVP quickly while library expansion continues independently.
-4. MVP hero experiences: Ganesha, Durga/Navaratri/Durga Puja, Ramayana, and Diwali/Deepavali, plus the complete September-December Panchang and ritual layer.
-5. Preserve source identity, provenance, rights, variants, and uncertainty. Do not confuse AI synthesis or translation with a source original.
+3. The primary user is an ordinary Hindi- or English-speaking Indian consumer, not a scholar. Complete, engaging stories and useful living-practice guidance are the default product and acquisition priority.
+4. The consumer MVP requires a beginning-to-end Ramayana and Mahabharata narrative backbone; Ramcharitmanas daily reading; Hanuman Chalisa; the Ganesha, Durga/Navaratri/Durga Puja, and Diwali/Deepavali hero worlds; and the complete September-December Panchang and ritual layer.
+5. Sanskrit originals, editions, verse counts, citations, textual variants, rights, provenance, and uncertainty remain essential internal grounding. They do not dominate the normal interface and appear only when deliberately requested or materially necessary.
+6. Build a useful end-to-end MVP quickly while wider story, scripture, place, history, yoga, meditation, temple, festival, and ritual expansion continues under one explicit coverage inventory.
 
 ## Lean engineering rules
 
@@ -26,6 +27,8 @@ The former Track A/Track B release system, G0-G9 gates, immutable rejected linea
 - Use Supabase/Postgres first: relational entities, relationships, claims, evidence, PostGIS, pgvector, and full-text. Add a native graph database only after benchmarks prove the need.
 - Panchang outputs must be deterministic, location-aware, and tradition-aware; never guessed by an LLM.
 - Sarthi is concise and natural by default, grounded in Devam evidence, and reveals citations/alternatives on demand or when materially necessary.
+- A retained or indexed source is not a consumer story. Story completion requires a beginning-to-end sequence of meaningful story moments in approachable English and Hindi, with enough narrative detail to preserve action, motivation, consequence, character and place continuity.
+- Acquire one lawful, suitable language expression when both English and Hindi are unavailable; create and label the missing Devam translation later rather than blocking acquisition or pretending the translation is a source original.
 - A date card or remembrance-only companion is not a completed ritual lane. Use
   `docs/RITUAL_AND_OBSERVANCE_PRODUCT_CONTRACT.md`: applicability, meaning and
   source-labelled stories, typical practice and timing, actionable vidhi,

@@ -1,5 +1,50 @@
 # Implementation plan
 
+Checkpoint 2026-08-11 (consumer story-first goal correction): the controlling
+MVP priority is now the ordinary Hindi- or English-speaking Indian consumer.
+Complete stories and useful living practice outrank Sanskrit presentation,
+edition comparison, verse counts, citations and scholarly dispute in the normal
+experience. Provenance, rights, source identity, uncertainty and materially
+important variants remain mandatory internal grounding, not primary UI.
+
+The current audit establishes the real starting point. One complete Dutt English
+Ramayana expression has 652 source-indexed sections and a 49-turn bilingual
+whole-story compass, but only 14 turns currently open into seven playable
+districts: 55 scenes and 285 bilingual beats. Mahabharata source candidates are
+preserved, including the four Ganguli Project Gutenberg volumes, but no complete
+consumer narrative has been compiled or published. Ramcharitmanas exposes 802
+of 1,172 narrative pages, while 370 remain outside the product projection; it
+has no daily-reading product. Hanuman Chalisa and Panchatantra require a fresh
+identity, rights and product-lane audit. The database has source, passage, claim,
+entity, relationship and ritual records but no first-class narrative series,
+arc, moment or beat tables. Passing Atlas tests and source counts therefore do
+not establish the requested knowledge base.
+
+The first local implementation checkpoint now adds that missing normalized
+narrative layer and a deterministic Ramayana seed compiler. The generated,
+transactional migration contains seven bilingual arcs, all 49 backbone turns,
+55 detailed scenes, 285 beats, 208 English/Hindi moment texts and 570
+English/Hindi beat texts. It publishes only the 14 turns that actually contain
+detailed scenes; the remaining 35 stay draft. Exact source and span hashes are
+retained in compact source-range metadata, while source-vault bytes remain in
+their one-copy store. The migration has passed deterministic/static tests but
+has not been applied to hosted Supabase; a local PostgreSQL execution check is
+also pending because Docker or Podman is not installed in this environment.
+
+The revised critical path is:
+
+1. freeze the consumer-content contract and one lean, machine-readable coverage inventory;
+2. add the first-class narrative database projection without duplicating source bytes;
+3. finish all 49 Ramayana story turns in substantial English/Hindi consumer form and publish them through the shared data layer;
+4. convert Ramcharitmanas into a complete searchable and daily-reading lane, then add Hanuman Chalisa;
+5. structurally qualify the retained Ganguli Mahabharata set and build its complete English/Hindi narrative backbone;
+6. deepen Ganesha, Durga and Diwali stories while retaining the existing practical ritual contracts;
+7. expand prioritized Puranic, Panchatantra, place, temple, kingdom, yoga, meditation and living-culture lanes from the same contract; and
+8. verify that Search, Sarthi and the Living Atlas all consume the shared story/practice records while the normal UI keeps source apparatus out of the way.
+
+This is a product backlog and completion boundary, not a revival of the retired
+Track A/Track B proof system. See `CONSUMER_CONTENT_MVP_CONTRACT.md`.
+
 Checkpoint 2026-08-10 (seventh Ramayana illustrated district candidate):
 **Panchavati breaks open** continues the selected Manmatha Nath Dutt Aranya
 sequence from source-ordered passages 13 through 53. Eight original full-screen

@@ -6,6 +6,12 @@ Devam brings the significant knowledge of Sanatana Dharma, Hindu traditions, Ind
 
 The source library is the underlying data layer. A claim-centered intelligence layer connects sources, entities, relationships, places, times, traditions, variants, and evidence. Users consume it through the Living Atlas, Sarthi, and exact search/retrieval.
 
+For the primary consumer, the knowledge base begins with complete stories and
+useful living practice. A normal user should meet the Ramayana as a coherent
+English or Hindi story world, not as a catalogue of Sanskrit units, editions,
+citations or scholarly disputes. Those trust layers remain attached internally
+and are available deliberately, but they are not the default product grammar.
+
 ## Core experiences
 
 ### Living Atlas
@@ -52,7 +58,11 @@ Devam syntheses—not scripture, settled wisdom, or uninspectable model intuitio
 
 ### Search and APIs
 
-Exact retrieval returns relevant passages/articles plus provenance. Ask mode synthesizes a grounded, natural multilingual answer. Internal exact-retrieval and ask-Sarthi endpoints exist from the start; a public developer API comes later.
+Consumer search returns the relevant story, character, place, festival or
+practice answer first in Hindi or English. Exact source retrieval and provenance
+remain a deliberate secondary mode. Ask mode synthesizes a grounded, natural
+multilingual answer. Internal exact-retrieval and ask-Sarthi endpoints exist
+from the start; a public developer API comes later.
 
 ## MVP
 
@@ -62,6 +72,17 @@ The MVP is a broad civilizational library and Atlas with four deep hero universe
 2. Durga, Navaratri, and Durga Puja;
 3. Ramayana; and
 4. Diwali/Deepavali as a multi-day, multi-tradition festival universe.
+
+The consumer-content MVP also includes:
+
+- a beginning-to-end Ramayana narrative in English and Hindi, with story,
+  character, place and living-festival traversal;
+- a beginning-to-end Mahabharata narrative in English and Hindi;
+- a daily-reading Ramcharitmanas lane and an approachable Hanuman Chalisa lane;
+- a prioritized story layer for the Puranas and other devotional, ethical and
+  cultural story collections, including Panchatantra; and
+- connected kingdoms, places, temples, history, yoga, meditation and living
+  culture needed to make those stories explorable and relevant today.
 
 It also includes the complete September-December Panchang and ritual layer, covering every relevant tithi, festival, weekday observance, timing, regional variation, procedure, materials, substitutions, minimum/standard/elaborate forms, and source basis.
 
@@ -84,7 +105,17 @@ step. A deterministic date card or a remembrance-only companion is valuable but
 does not complete a vidhi. `RITUAL_AND_OBSERVANCE_PRODUCT_CONTRACT.md` is the
 completion boundary.
 
-Ramayana coverage is grounded chiefly in Valmiki while making major variants visible. Product-usable Valmiki Ramayana and Ramcharitmanas, strong Hindi/English translations, selected commentary, and comparison dossiers for Kamba, Krittivasi, Adhyatma, Jain/Buddhist, and Southeast Asian tellings are required.
+Ramayana coverage first delivers the complete story in approachable English and
+Hindi. One lawful, structurally complete expression may anchor the first
+consumer backbone. Ramcharitmanas receives its own complete daily-reading lane.
+Additional tellings, textual comparison and commentary follow only when they
+materially improve a consumer story, living practice or explicitly requested
+source view; they do not block the first complete narrative experience.
+
+Mahabharata coverage follows the same rule: first acquire and structurally
+reconcile one suitable complete expression, then build a complete English/Hindi
+consumer narrative with characters, kingdoms, places, teachings and living
+connections. Edition comparison is secondary.
 
 Durga coverage includes the complete Devi Mahatmya/Chandi/Saptashati identity, Sanskrit plus Hindi/English, relevant Devi Bhagavata and Kalika Purana material, regional ritual sources, and Shakti Peethas.
 
