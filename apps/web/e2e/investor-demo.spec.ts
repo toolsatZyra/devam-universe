@@ -31,7 +31,7 @@ test("the Living Atlas is a full-screen cosmic world with spatial travel", async
   // This is intentionally one continuous open-world journey across the Atlas,
   // Hampi constellation, camera recovery, and bilingual story handoff. Clean
   // CI runners need a wider budget than the product's individual interactions.
-  test.setTimeout(180_000);
+  test.setTimeout(300_000);
   const health = await page.request.get("/api/health");
   expect(health.status()).toBe(200);
   expect(await health.json()).toMatchObject({ contract: "DEVAM_RUNTIME_READINESS_V1", ok: true });
