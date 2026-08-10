@@ -50,6 +50,25 @@ describe("Ramayana district payload", () => {
     expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(43);
   });
 
+  it("serves the contiguous road-that-asks district without pulling another district into the payload", async () => {
+    const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=road-asks-home-v1"));
+    const payload = await response.json() as { ok: boolean; districtId: string; moments: Record<string, { beats: unknown[] }> };
+    expect(response.status).toBe(200);
+    expect(response.headers.get("cache-control")).toContain("immutable");
+    expect(payload).toMatchObject({ ok: true, districtId: "road-asks-home-v1" });
+    expect(Object.keys(payload.moments)).toEqual([
+      "expedition-reaches-ganga",
+      "guha-shows-first-night",
+      "bharadvaja-tests-hosts",
+      "chitrakoot-hears-army",
+      "brothers-meet-death-news",
+      "family-asks-rama-home",
+      "sandals-hold-kingdom",
+      "nandigrama-trust",
+    ]);
+    expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(48);
+  });
+
   it("fails closed for an unknown district", async () => {
     const response = await GET(new Request("http://localhost/api/journeys/ramayana/district?district=whole-epic"));
     expect(response.status).toBe(404);

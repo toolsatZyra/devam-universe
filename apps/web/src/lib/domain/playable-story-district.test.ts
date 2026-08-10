@@ -11,12 +11,12 @@ describe("playable story district compiler", () => {
   const district = buildPlayableStoryDistrictIndex(pack, journey.stops, map);
   const linksFor = (label: string) => district.byMapPlaceId[map.places.find((place) => place.label === label)!.id];
 
-  it("projects all four detailed districts from existing graph relationships", () => {
-    expect(district).toMatchObject({ sceneCount: 31, placeCount: 20 });
+  it("projects all five detailed districts from existing graph relationships", () => {
+    expect(district).toMatchObject({ sceneCount: 39, placeCount: 27 });
     expect(linksFor("Lanka").map((link) => link.id)).toEqual(["leave-lanka"]);
     expect(linksFor("Kishkindha").map((link) => link.id)).toEqual(["sky-road"]);
     expect(linksFor("Bharadvaja's hermitage").map((link) => link.id)).toEqual(["bharadvaja-hermitage"]);
-    expect(linksFor("Nandigrama").map((link) => link.id)).toEqual(["hanuman-goes-ahead", "bharata-hears"]);
+    expect(linksFor("Nandigrama").map((link) => link.id)).toEqual(["nandigrama-trust", "hanuman-goes-ahead", "bharata-hears"]);
     expect(linksFor("The Tamasa riverbank").map((link) => link.id)).toEqual(["tamasa-night"]);
     expect(linksFor("The road beyond Kosala").map((link) => link.id)).toEqual(["roads-beyond-kosala"]);
     expect(linksFor("Shringaverapura").map((link) => link.id)).toEqual(["guha-night-watch"]);
@@ -32,13 +32,20 @@ describe("playable story district compiler", () => {
     expect(linksFor("Kaikeyi's room after the boons").map((link) => link.id)).toEqual(["bharata-rejects-boons"]);
     expect(linksFor("The funeral bank of the Sarayu").map((link) => link.id)).toEqual(["funeral-and-trust"]);
     expect(linksFor("The road prepared for Rama").map((link) => link.id)).toEqual(["crown-refused-road"]);
+    expect(linksFor("The expedition at the Ganga").map((link) => link.id)).toEqual(["expedition-reaches-ganga"]);
+    expect(linksFor("The grass beneath the Ingudi tree").map((link) => link.id)).toEqual(["guha-shows-first-night"]);
+    expect(linksFor("Bharadvaja's impossible welcome").map((link) => link.id)).toEqual(["bharadvaja-tests-hosts"]);
+    expect(linksFor("The smoke above Chitrakoot").map((link) => link.id)).toEqual(["chitrakoot-hears-army"]);
+    expect(linksFor("The cottage of reunion").map((link) => link.id)).toEqual(["brothers-meet-death-news"]);
+    expect(linksFor("The family council by the Mandakini").map((link) => link.id)).toEqual(["family-asks-rama-home"]);
+    expect(linksFor("The council of the sandals").map((link) => link.id)).toEqual(["sandals-hold-kingdom"]);
     expect(linksFor("Ayodhya").map((link) => link.id)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins", "city-follows-car", "bharadvaja-hermitage", "ayodhya-prepares", "kingdom-returned"]);
   });
 
   it("retains relationship meaning instead of inventing geographic settings", () => {
     expect(linksFor("Bharadvaja's hermitage")[0]).toMatchObject({ relation: "takes place at", placeNodeId: "bharadvaja-hermitage-story-world" });
     expect(linksFor("Ayodhya").find((link) => link.id === "bharadvaja-hermitage")).toMatchObject({ relation: "asks for news of" });
-    expect(linksFor("Nandigrama").map((link) => link.relation)).toEqual(["arrives in", "unfolds at"]);
+    expect(linksFor("Nandigrama").map((link) => link.relation)).toEqual(["unfolds at", "arrives in", "unfolds at"]);
   });
 
   it("fails closed when playable content loses its preview or mapped place", () => {
