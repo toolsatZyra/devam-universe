@@ -2,8 +2,6 @@ import type { StoryMoment } from "@/lib/domain/story-world";
 
 export type RamayanaBeginningPlayableScene = {
   id: string;
-  sourceGlobalOrdinal: number;
-  spanSha256: string;
   nodeIds: string[];
   moment: StoryMoment;
 };
@@ -16,8 +14,6 @@ export type RamayanaBeginningPlayableScene = {
 export const RAMAYANA_BEGINNINGS_PLAYABLE_SCENES: RamayanaBeginningPlayableScene[] = [
   {
     id: "valmiki-asks-for-complete-human",
-    sourceGlobalOrdinal: 1,
-    spanSha256: "8826f86d98ee489289a4e21fe3ebd254109e779a7b16be9381190312ce013ec9",
     nodeIds: ["valmiki", "narada", "rama", "ayodhya", "sita", "hanuman", "lanka"],
     moment: {
       id: "valmiki-asks-for-complete-human",
@@ -81,8 +77,6 @@ export const RAMAYANA_BEGINNINGS_PLAYABLE_SCENES: RamayanaBeginningPlayableScene
   },
   {
     id: "grief-becomes-first-verse",
-    sourceGlobalOrdinal: 2,
-    spanSha256: "ee2828e55681664701fb796de8ebee34f94598275a443a83298f447bb7567128",
     nodeIds: ["valmiki", "bharadwaja", "tamasa", "krauncha-pair", "hunter", "brahma"],
     moment: {
       id: "grief-becomes-first-verse",
@@ -146,8 +140,6 @@ export const RAMAYANA_BEGINNINGS_PLAYABLE_SCENES: RamayanaBeginningPlayableScene
   },
   {
     id: "valmiki-sees-the-whole-life",
-    sourceGlobalOrdinal: 3,
-    spanSha256: "e8bd0091e41e7a58584f6acd530b83c7cbd617abf1150623e3f669bbafdcf0fd",
     nodeIds: ["valmiki", "rama", "sita", "lakshmana", "ayodhya", "forest-exile", "lanka"],
     moment: {
       id: "valmiki-sees-the-whole-life",
@@ -201,8 +193,6 @@ export const RAMAYANA_BEGINNINGS_PLAYABLE_SCENES: RamayanaBeginningPlayableScene
   },
   {
     id: "lava-kusha-carry-the-story",
-    sourceGlobalOrdinal: 4,
-    spanSha256: "1baec1804b062857bc9c1beb02cde5e347f7a55e4087bf6f5ebbca99836377a3",
     nodeIds: ["valmiki", "lava", "kusha", "rama", "ayodhya"],
     moment: {
       id: "lava-kusha-carry-the-story",

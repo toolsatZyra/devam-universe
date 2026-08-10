@@ -1,6 +1,8 @@
 import { getHeroJourney } from "../../data/hero-experiences";
 import { RAMAYANA_BEGINNINGS_SCENE_OUTLINES } from "../../data/ramayana-beginnings-outline";
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
+import { getDuttBalaSpanSha256s } from "../../data/ramayana-bala-source-spans";
+import { RAMAYANA_HEIRS_PLAYABLE_SCENES } from "../../data/ramayana-heirs-playable";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import type { StoryBeat, StoryCompassTurn, StoryMoment } from "../domain/story-world";
 import type { ExperienceCitation } from "../domain/experience";
@@ -21,7 +23,9 @@ export type RamayanaNarrativeSceneSnapshot = {
     sourceGlobalOrdinal?: number;
     sourceOrdinal: number;
     sourceEndOrdinal: number;
+    sourceAddressKind?: "section_span_set";
     spanSha256?: string;
+    spanSha256s?: string[];
   };
   nodeIds: string[];
   characters: string[];
@@ -162,15 +166,13 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   }
 
   const beginningOutlineById = new Map(RAMAYANA_BEGINNINGS_SCENE_OUTLINES.map((outline) => [outline.id, outline]));
-  for (const playable of RAMAYANA_BEGINNINGS_PLAYABLE_SCENES) {
+  for (const playable of [...RAMAYANA_BEGINNINGS_PLAYABLE_SCENES, ...RAMAYANA_HEIRS_PLAYABLE_SCENES]) {
     const outline = beginningOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
-    if (outline.sourceStart !== outline.sourceEnd) {
-      throw new Error(`Ramayana playable beginning requires one exact source span: ${playable.id}`);
-    }
     const turn = pack.compass.turns[outline.turnId];
     if (!turn) throw new Error(`Ramayana playable beginning has no backbone turn: ${playable.id}`);
     const siblings = scenesByTurnId.get(outline.turnId) ?? [];
+    const spanSha256s = getDuttBalaSpanSha256s(outline.sourceStart, outline.sourceEnd);
     siblings.push({
       id: playable.id,
       detailOrdinal: outline.ordinal,
@@ -183,10 +185,12 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       },
       source: {
         sourceSha256: turn.sourceRange.sourceSha256,
-        sourceGlobalOrdinal: playable.sourceGlobalOrdinal,
+        sourceGlobalOrdinal: outline.sourceStart,
         sourceOrdinal: outline.sourceStart,
         sourceEndOrdinal: outline.sourceEnd,
-        spanSha256: playable.spanSha256,
+        sourceAddressKind: "section_span_set",
+        spanSha256: spanSha256s.length === 1 ? spanSha256s[0] : undefined,
+        spanSha256s,
       },
       nodeIds: playable.nodeIds,
       characters: [...new Set(playable.moment.beats.flatMap((beat) => beat.characterIds))],

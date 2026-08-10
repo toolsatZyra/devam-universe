@@ -22,16 +22,18 @@ class RamayanaConsumerNarrativeSeedTest(unittest.TestCase):
 
     def test_migration_keeps_outlines_draft_and_playable_scenes_source_addressed(self) -> None:
         sql = MIGRATION.read_text(encoding="utf-8")
-        self.assertIn("Expected 15 playable Ramayana turns", sql)
-        self.assertIn("Expected 34 unfinished Ramayana turns", sql)
-        self.assertIn("Expected 5 outlined Ramayana turns", sql)
+        self.assertIn("Expected 16 playable Ramayana turns", sql)
+        self.assertIn("Expected 33 unfinished Ramayana turns", sql)
+        self.assertIn("Expected 4 outlined Ramayana turns", sql)
         self.assertIn("Expected 29 orientation-only Ramayana turns", sql)
-        self.assertIn("Expected 59 Ramayana playable scenes", sql)
-        self.assertIn("Expected 38 draft Ramayana scene outlines", sql)
-        self.assertIn("Expected 303 Ramayana narrative beats", sql)
+        self.assertIn("Expected 67 Ramayana playable scenes", sql)
+        self.assertIn("Expected 30 draft Ramayana scene outlines", sql)
+        self.assertIn("Expected 335 Ramayana narrative beats", sql)
         self.assertIn("Expected 292 bilingual Ramayana moment texts", sql)
-        self.assertIn("Expected 606 bilingual Ramayana beat texts", sql)
+        self.assertIn("Expected 670 bilingual Ramayana beat texts", sql)
         self.assertIn("source_range->>'spanSha256'", sql)
+        self.assertIn("source_range->'spanSha256s'", sql)
+        self.assertIn("sourceAddressKind", sql)
         self.assertNotIn("source_vault/objects", sql)
 
 

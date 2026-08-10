@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { RAMAYANA_BEGINNINGS_SCENE_OUTLINES } from "./ramayana-beginnings-outline";
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "./ramayana-beginnings-playable";
+import { getDuttBalaSpanSha256s } from "./ramayana-bala-source-spans";
 
 describe("Ramayana opening-frame playable stories", () => {
   it("promotes exactly the four source-unit opening scenes", () => {
@@ -9,17 +10,18 @@ describe("Ramayana opening-frame playable stories", () => {
       (count, scene) => count + scene.moment.beats.length,
       0,
     )).toBe(18);
-    expect(RAMAYANA_BEGINNINGS_PLAYABLE_SCENES.map((scene) => scene.sourceGlobalOrdinal)).toEqual([1, 2, 3, 4]);
-    expect(new Set(RAMAYANA_BEGINNINGS_PLAYABLE_SCENES.map((scene) => scene.spanSha256)).size).toBe(4);
+    expect(new Set(RAMAYANA_BEGINNINGS_PLAYABLE_SCENES.map((scene) => {
+      const outline = RAMAYANA_BEGINNINGS_SCENE_OUTLINES.find((candidate) => candidate.id === scene.id)!;
+      return getDuttBalaSpanSha256s(outline.sourceStart, outline.sourceEnd)[0];
+    })).size).toBe(4);
   });
 
   it("keeps every playable scene anchored to its exact single-section outline", () => {
     const outlineById = new Map(RAMAYANA_BEGINNINGS_SCENE_OUTLINES.map((outline) => [outline.id, outline]));
     for (const scene of RAMAYANA_BEGINNINGS_PLAYABLE_SCENES) {
       const outline = outlineById.get(scene.id);
-      expect(outline?.sourceStart, scene.id).toBe(scene.sourceGlobalOrdinal);
-      expect(outline?.sourceEnd, scene.id).toBe(scene.sourceGlobalOrdinal);
-      expect(scene.spanSha256, scene.id).toMatch(/^[0-9a-f]{64}$/);
+      expect(outline?.sourceStart, scene.id).toBe(outline?.sourceEnd);
+      expect(getDuttBalaSpanSha256s(outline!.sourceStart, outline!.sourceEnd)[0], scene.id).toMatch(/^[0-9a-f]{64}$/);
     }
   });
 
