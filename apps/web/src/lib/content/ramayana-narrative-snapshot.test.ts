@@ -9,12 +9,12 @@ describe("Ramayana consumer narrative snapshot", () => {
     expect(snapshot.counters).toEqual({
       arcs: 7,
       backboneTurns: 49,
-      playableTurns: 17,
-      outlinedTurns: 3,
+      playableTurns: 18,
+      outlinedTurns: 2,
       orientationOnlyTurns: 29,
-      playableScenes: 77,
-      draftSceneOutlines: 20,
-      bilingualBeats: 375,
+      playableScenes: 84,
+      draftSceneOutlines: 13,
+      bilingualBeats: 405,
     });
     expect(snapshot.boundary).toContain("does not claim a complete consumer Ramayana");
   });
@@ -23,7 +23,7 @@ describe("Ramayana consumer narrative snapshot", () => {
     const scenes = snapshot.turns.flatMap((turn) => turn.scenes
       .filter((scene) => scene.readiness === "playable")
       .map((scene) => ({ turn, scene })));
-    expect(new Set(scenes.map(({ scene }) => scene.id)).size).toBe(77);
+    expect(new Set(scenes.map(({ scene }) => scene.id)).size).toBe(84);
     for (const { turn, scene } of scenes) {
       expect(scene.source.sourceSha256).toBe(turn.sourceRange.sourceSha256);
       expect(scene.source.sourceOrdinal).toBeGreaterThanOrEqual(turn.sourceRange.startOrdinal);
@@ -57,8 +57,8 @@ describe("Ramayana consumer narrative snapshot", () => {
     const outlined = snapshot.turns.filter((turn) => turn.coverage === "outlined");
     expect(orientationOnly).toHaveLength(29);
     expect(orientationOnly.every((turn) => turn.scenes.length === 0)).toBe(true);
-    expect(outlined).toHaveLength(3);
-    expect(outlined.flatMap((turn) => turn.scenes)).toHaveLength(20);
+    expect(outlined).toHaveLength(2);
+    expect(outlined.flatMap((turn) => turn.scenes)).toHaveLength(13);
     expect(outlined.every((turn) => turn.scenes.every((scene) =>
       scene.readiness === "outlined" && scene.beats.length === 0 && !scene.source.spanSha256
     ))).toBe(true);
