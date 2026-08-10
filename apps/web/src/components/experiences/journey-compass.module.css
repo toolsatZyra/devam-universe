@@ -1,4 +1,21 @@
 .compass { position: absolute; z-index: 8; inset: 13% 2.5% 5%; animation: arrive .6s cubic-bezier(.16,.8,.18,1); }
+.atlas { position: absolute; inset: 0; }
+.atlas[hidden],.worldSelector[hidden] { display: none; }
+.worldSelector { position: absolute; inset: 0; overflow: auto; border: 1px solid rgba(141,232,204,.17); border-radius: 36px; padding: clamp(24px,3.2vw,52px); color: #e8e0d5; background: radial-gradient(circle at 78% 13%,rgba(141,232,204,.13),transparent 31%),linear-gradient(145deg,rgba(6,12,24,.94),rgba(2,5,13,.82)); box-shadow: 0 25px 100px rgba(0,0,0,.36),inset 0 1px rgba(255,255,255,.035); backdrop-filter: blur(16px); }
+.worldSelectorHeading { max-width: 760px; }
+.worldSelectorHeading p { margin: 0 0 8px; color: #8de8cc; font-size: 8px; letter-spacing: .2em; }
+.worldSelectorHeading h1 { max-width: 700px; margin: 0; font: 400 clamp(34px,4.4vw,66px)/.96 Georgia,serif; letter-spacing: -.045em; text-shadow: 0 10px 38px #000; }
+.worldSelectorHeading span { display: block; max-width: 66ch; margin-top: 13px; color: #929b9d; font-size: 10px; line-height: 1.55; }
+.worldSelector .playableFirst { margin-top: clamp(21px,3vh,34px); }
+.worldSelector .districtShortcuts { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.worldSelector .playableShortcut { min-height: 112px; padding: 16px 18px; }
+.worldSelector .playableShortcut strong { font-size: clamp(20px,1.8vw,28px); }
+.worldSelector .playableShortcut em { max-width: 48ch; font-size: 9px; }
+.browseAtlas,.atlasBack { border: 1px solid rgba(var(--accent-rgb),.2); border-radius: 999px; color: #a8adae; background: rgba(3,7,16,.54); cursor: pointer; }
+.browseAtlas { margin-top: 18px; padding: 10px 15px; font-size: 8px; letter-spacing: .04em; }
+.browseAtlas span { margin-left: 8px; color: var(--accent); }
+.browseAtlas:hover,.browseAtlas:focus-visible,.atlasBack:hover,.atlasBack:focus-visible { border-color: rgba(var(--accent-rgb),.5); color: #fff2df; }
+.atlasBack { position: absolute; z-index: 12; left: 1%; top: 108px; padding: 7px 10px; font-size: 7px; }
 .heading { position: absolute; left: 1%; top: 0; width: 34%; pointer-events: none; }
 .heading p { margin: 0 0 7px; color: var(--accent); font-size: 8px; letter-spacing: .19em; }
 .heading h1 { max-width: 460px; margin: 0; font: 400 clamp(30px,3.6vw,54px)/.98 Georgia,serif; letter-spacing: -.04em; text-shadow: 0 8px 30px #000; }
@@ -98,6 +115,17 @@
 
 @media (max-width: 720px) {
   .compass { inset: 13% 8px max(8px,env(safe-area-inset-bottom)); overflow: hidden; }
+  .worldSelector { border-radius: 24px; padding: 18px 14px 22px; }
+  .worldSelectorHeading p { font-size: 6px; }
+  .worldSelectorHeading h1 { font-size: 31px; }
+  .worldSelectorHeading span { margin-top: 8px; font-size: 8px; }
+  .worldSelector .playableFirst { margin-top: 16px; }
+  .worldSelector .playableFirst strong { font-size: 20px; }
+  .worldSelector .districtShortcuts { grid-template-columns: 1fr; gap: 8px; }
+  .worldSelector .playableShortcut { min-height: 86px; padding: 12px 13px; }
+  .worldSelector .playableShortcut strong { font-size: 19px; }
+  .worldSelector .playableShortcut em { max-width: 36ch; font-size: 7px; }
+  .atlasBack { left: 10px; top: 123px; }
   .heading { left: 10px; top: 0; width: calc(100% - 20px); }
   .heading p { margin-bottom: 4px; font-size: 6px; }
   .heading h1 { font-size: 28px; }

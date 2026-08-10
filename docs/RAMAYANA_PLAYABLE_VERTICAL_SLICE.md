@@ -1,14 +1,17 @@
 # Ramayana playable districts
 
-Status: **three-district playable candidate — 2026-08-10**
+Status: **four-district playable candidate — 2026-08-10**
 
 Current implementation checkpoint: the first repeatable slice, **The road home
-to Ayodhya**, is joined by two contiguous early-epic districts. **The night the
+to Ayodhya**, is joined by three contiguous early-epic districts. **The night the
 road changed** follows Manmatha Nath Dutt's Ayodhyā Kāṇḍa source units I–XL from
 coronation preparation through Rama, Sita, and Lakshmana preparing to depart.
 **Across the first rivers** continues without a source gap through XLI–LVI,
-ending when the three enter the cottage they have built at Chitrakoot. Bharata's
-return and the sandals arc begin later and are not smuggled into this boundary.
+ending when the three enter the cottage they have built at Chitrakoot. **The
+empty throne** continues through LVII–LXXXII: the empty chariot, Dasharatha's
+last night, the kingless city, Bharata's return, the rejected boons, mourning,
+and the decision to bring Rama home. Bharata's expedition and the sandals arc
+begin later and are not smuggled into this boundary.
 
 The first eight scenes preserve the sequence's human reversals rather than replacing
 them with a one-line exile summary: Kaikeyi first rejoices; Manthara reframes
@@ -20,8 +23,10 @@ Devam-authored artistic visualizations. The next eight scenes add forty beats:
 public grief and pursuit, the Tamasa departure, the roads beyond Kosala, Guha's
 welcome and night watch, the Ganga crossing and Sumantra's return, the first
 forest night, Bharadvaja and the Yamuna road, and the making of a Chitrakoot
-home. Every compass screen exposes all three illustrated districts before the
-thin atlas, and completing any district returns to that selector.
+home. The third early-epic district adds forty-three beats and eight new
+tableaux. The product now opens on a dedicated four-world selector; the thin
+atlas is an explicit secondary choice, and completing any district returns to
+the selector.
 
 ## Decision
 
@@ -127,15 +132,16 @@ The player never leaves the full-screen world merely to understand it.
 ### Story
 
 The default lens is a cinematic sequence inside the selected district: eight,
-eight, or seven visual scenes. Across the three districts there are twenty-three
-scenes and 105 bilingual beats. It prioritizes emotion, characters, and one clear next action. Short retelling copy is capped at
+eight, eight, or seven visual scenes. Across the four districts there are
+thirty-one scenes and 148 bilingual beats. It prioritizes emotion, characters,
+and one clear next action. Short retelling copy is capped at
 roughly 45 words per beat in English and Hindi.
 
 ### Route
 
-The whole-story map shows thirty-eight canonical narrative places without
+The whole-story map shows forty-six canonical narrative places without
 pretending they are modern coordinates. Inside it, the playable road-home and
-early-exile districts currently light twelve connected places, including
+early-exile districts currently light twenty connected places, including
 Ayodhya, the Tamasa, Shringaverapura, the Ganga crossing, the first forest
 night, Prayaga, the Yamuna crossing, Chitrakoot, Lanka, Kishkindha,
 Bharadvaja's hermitage, and Nandigrama. The scene cards are compiled
@@ -149,9 +155,10 @@ story world, not a historical GIS assertion.
 
 Because most whole-story turns remain mapped orientation rather than visual
 scenes, their cards retain a direct illustrated-world entrance. More
-importantly, the three finished worlds now appear before the forty-nine-turn
-atlas. The ordinary visitor no longer has to guess which story arc hides the
-playable work.
+importantly, the four finished worlds now occupy a dedicated first screen. The
+forty-nine-turn atlas opens only through a clearly labelled secondary action,
+and it retains a direct return to the illustrated selector. The ordinary
+visitor no longer has to guess which story arc hides the playable work.
 
 ### Connections
 
@@ -235,8 +242,8 @@ image model on 2026-08-10 and encoded as WebP. They contain no third-party
 source image, no visible text, and make no archaeological or modern-location
 claim. The selected Dutt passages—not the images—remain the narrative evidence.
 
-Local acceptance on 2026-08-10 passes all 24 serialized desktop and Pixel 7
-browser cases. The matrix enters and completes all three illustrated districts,
+Local acceptance on 2026-08-10 passes all 26 serialized desktop and Pixel 7
+browser cases. The matrix enters and completes all four illustrated districts,
 decodes every scene image, traverses character and living-world paths, pans and
 zooms the narrative map in both directions, restores exact context, and checks
 horizontal overflow. TypeScript, lint, 855 portable tests with 17 named
@@ -304,9 +311,10 @@ reading documentation:
 5. How do I go back?
 6. How is this connected to another story, festival, place, or source?
 
-Only then should the grammar be replicated. The next coherent early-epic
-candidate is Dasharatha's death and Bharata's return, followed by the sandals
-journey and reunion at Chitrakoot. Hanuman in Lanka and Sita in Mithila remain
+Only then should the grammar be replicated. Dasharatha's death and Bharata's
+return are now implemented. The next coherent early-epic candidate is the road
+that asks Rama home: the expedition, Guha, Bharadvaja, the Chitrakoot reunion,
+the sandals, and Nandigrama. Hanuman in Lanka and Sita in Mithila remain
 strong later biome tests. Different stories may use different mechanics, but
 they retain the same navigation, evidence, rights, language, and uncertainty
 contracts.
