@@ -378,6 +378,39 @@ verification.
 - 5/5 focused product-projection tests pass; and
 - `database_applied_by_this_compiler=false`.
 
+#### Exact-revision layout recovery (2026-08-12)
+
+The 11 held quality-qualified pages were re-audited against their pinned raw
+Wikisource revisions. Their failures were provider layout-brace defects, not
+missing narrative text. The compiler now recovers those braces only when the
+raw revision content matches one of 11 explicit SHA-256 allowlist entries; the
+same malformed content with any byte changed still fails closed. Unknown
+templates remain rejected, and no source spelling, OCR, wording, or numbering
+is corrected.
+
+The prepared packet therefore contains all 813 proofread or validated pages:
+808 at quality level 3 and 5 at level 4. The remaining exclusion is exactly
+359 pages: 345 substantial but unproofread Wikisource transcriptions and 14
+empty placeholders. A live read-only Wikisource API check on 2026-08-12 found
+no revision or quality-state changes across those 359 pages. They remain
+correction inputs, not consumer publication truth.
+
+- prepared packet SHA-256
+  `8414805e9b8bab77f63ecc83539601cd3505d03569af1a94a6d128ba3ff78e53`;
+- prepared passage root SHA-256
+  `7f65790c6a6b2a0ff52c63d9664ab0ae4aa6e94a1c476c10ee297acf33787f93`;
+- compiler SHA-256
+  `756f794afef574789892bba9f6ee1155a733d7904ce9070888b2349c6ee01b56`;
+- product report SHA-256
+  `4e79be5be405e1a932e9692fdc58d00b7bfa3f91e44b5be298e28e7af4aa43d1`;
+- focused compiler-test SHA-256
+  `74ccee3de276bbb2976f4e9b1be3fd5d3a27469e1b617b68f9a923e4d1391f14`;
+- 813 prepared passages across all seven sopanas;
+- 0 remaining projection anomalies;
+- `database_applied_by_this_compiler=false`; and
+- the older 802-passage hosted application below remains historical evidence,
+  not evidence that the expanded 813-passage projection is hosted.
+
 #### Hosted product application
 
 The 21 bounded, idempotent SQL batches were applied to the isolated

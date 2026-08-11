@@ -872,12 +872,12 @@ test("Sarthi answers from the bounded Ramcharitmanas edition and enforces the gu
   await page.goto("/sarthi");
   await page.getByLabel("Message Sarthi").fill("Tell me about Ramcharitmanas");
   await page.getByRole("button", { name: "Send" }).click();
-  await expect(page.getByText(/802 source-addressed beta pages/)).toBeVisible();
+  await expect(page.getByText(/all 813 proofread or validated beta pages/)).toBeVisible();
   await expect(page.getByText(/not the complete Ramcharitmanas tradition/)).toBeVisible();
   const sources = page.getByText("Open 7 sources", { exact: true });
   await expect(sources).toBeVisible();
   await sources.click();
-  await expect(page.getByText(/Another 359 low-quality pages and 11 markup anomalies remain outside retrieval/)).toBeVisible();
+  await expect(page.getByText(/Another 359 unproofread or empty pages remain outside retrieval/).last()).toBeVisible();
 
   await page.getByLabel("Message Sarthi").fill("What else should I explore?");
   await page.getByRole("button", { name: "Send" }).click();

@@ -33,9 +33,27 @@ LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/deed.hi"
 LICENSE_FAMILY_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 SCAN_SHA256 = "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2"
 EXPECTED_QUALIFIED_PAGES = 813
-EXPECTED_PRODUCT_PAGES = 802
+EXPECTED_PRODUCT_PAGES = 813
 EXPECTED_CORRECTION_PAGES = 359
-EXPECTED_PROJECTION_ANOMALIES = 11
+EXPECTED_PROJECTION_ANOMALIES = 0
+
+# These fixed, source-addressed revisions contain malformed provider layout
+# braces around otherwise qualified text. Recovery is deliberately limited to
+# the exact revision-content hashes so malformed markup from a different
+# revision still fails closed.
+KNOWN_MALFORMED_LAYOUT_SHA256S = {
+    "0aca6fd569a3f009905b0b19ffe73fd83af619bd5ac4912ba619f9efc250a938",
+    "1963b541a27d695660ff09ba2e4a26448f2cca653d9f83d67284ae7135720057",
+    "29f063fd851582274bf1efce3dbdad0d9477677d9893f42cd9308a195742112b",
+    "4d17a4c0960875127123b6dd30d34cd46de640dba093530a27ed0c75e9091717",
+    "5783c8630f3cfb43b2c3e66cb65addbe272216c08068a35ec76aa1fe5d656153",
+    "72ee424e119d002839ab8bafb89fe2d1f4900dbaa88374bff9f598b03de5a7eb",
+    "96953b2d2fefaf0f17d53d69295d8e1880ea054290f8d3e427c2f8b448aa5413",
+    "bf1b726b8b52d73abbec96662cac7517f5530723316572b2580ddbeb9b7856f8",
+    "e41158c1a5b942e8d8a1d8c2e06deb16d3824f18752de2c56763555681ef54e4",
+    "ef9306f2dff4aab4e3fd655e32f4129eda5f36fb72dea9427a915fea67c9e064",
+    "f3e999e7259b1594c98acac7590a992ff9a496d29230b934beaf561dfdcfb398",
+}
 
 NOINCLUDE_RE = re.compile(r"<noinclude\b[^>]*>.*?</noinclude\s*>", re.IGNORECASE | re.DOTALL)
 COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
@@ -133,6 +151,7 @@ def plaintext_projection(wikitext: str) -> str:
     Unknown templates fail closed instead of silently dropping content.
     """
 
+    recover_fixed_layout = sha256_bytes(wikitext.encode("utf-8")) in KNOWN_MALFORMED_LAYOUT_SHA256S
     text = COMMENT_RE.sub("", wikitext)
     text = NOINCLUDE_RE.sub("", text)
     text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
@@ -140,9 +159,31 @@ def plaintext_projection(wikitext: str) -> str:
     for _ in range(32):
         if "{{" not in text and "}}" not in text:
             break
-        updated, replacements = TEMPLATE_RE.subn(lambda match: render_template(match.group(1)), text)
+        def render(match: re.Match[str]) -> str:
+            inner = match.group(1)
+            name, parameters = split_template(inner)
+            if recover_fixed_layout and not name:
+                return "\n".join(value for value in parameters if value)
+            return render_template(inner)
+
+        updated, replacements = TEMPLATE_RE.subn(render, text)
         if replacements == 0:
-            raise ValueError("unbalanced or nested Wikisource template survived projection")
+            if not recover_fixed_layout:
+                raise ValueError("unbalanced or nested Wikisource template survived projection")
+            opening_names = {
+                match.casefold().strip()
+                for match in re.findall(r"\{\{\s*([^|{}\n]+)\s*\|", text)
+            }
+            if not opening_names.issubset(KNOWN_TEMPLATE_NAMES):
+                raise ValueError("unknown Wikisource template survived fixed-revision layout recovery")
+            text = re.sub(
+                r"\{\{\s*(?:block center|block centre)\s*\|",
+                "",
+                text,
+                flags=re.IGNORECASE,
+            )
+            text = text.replace("{{", "").replace("}}", "")
+            break
         text = updated
     else:
         raise ValueError("Wikisource template projection exceeded bounded recursion")
@@ -381,7 +422,7 @@ def compile_packet() -> dict[str, Any]:
             "canonical_title": "रामचरितमानस (Ramcharitmanas)",
             "work_kind": "devotional_epic",
             "tradition_scope": ["Ramayana", "Vaishnava", "Rama-bhakti"],
-            "summary": "Tulsidas's Awadhi devotional retelling of the Rama narrative. This beta product lane covers 802 pages of one fixed Belvedere Press edition; 359 low-quality pages and 11 malformed-markup pages remain outside the product index pending correction.",
+            "summary": "Tulsidas's Awadhi devotional retelling of the Rama narrative. This beta product lane covers all 813 proofread or validated pages of one fixed Belvedere Press edition; 359 unproofread or empty pages remain outside the product index pending correction.",
         },
         "expression": {
             "language_code": "awa",
@@ -394,7 +435,7 @@ def compile_packet() -> dict[str, Any]:
             "publisher": "Belvedere Press",
             "publication_place": "Prayag",
             "publication_year": 1925,
-            "edition_statement": "Second-edition scan with printed Vikram Samvat 1982; provider year discrepancy 1925/1926 retained. Product text currently includes 802 seven-sopana narrative-page projections after excluding 359 low-quality and 11 malformed-markup pages.",
+            "edition_statement": "Second-edition scan with printed Vikram Samvat 1982; provider year discrepancy 1925/1926 retained. Product text currently includes all 813 proofread or validated seven-sopana narrative-page projections after excluding 359 unproofread or empty pages.",
             "identifiers": {
                 "profile_id": PROFILE_ID,
                 "scan_sha256": SCAN_SHA256,
@@ -414,13 +455,13 @@ def compile_packet() -> dict[str, Any]:
         "source_objects": sources,
         "passages": passages,
         "scope": {
-            "positive": "802 source-addressed proofread or validated narrative-page plaintext projections for one structurally complete fixed Belvedere Press Ramcharitmanas edition.",
+            "positive": "813 source-addressed proofread or validated narrative-page plaintext projections for one structurally complete fixed Belvedere Press Ramcharitmanas edition.",
             "correction_required_pages": plan["wikisource"]["correction_required_scan_pages"],
             "correction_required_page_count": EXPECTED_CORRECTION_PAGES,
             "projection_anomalies": projection_anomalies,
             "projection_anomaly_count": EXPECTED_PROJECTION_ANOMALIES,
             "total_narrative_pages_not_product_indexed": EXPECTED_CORRECTION_PAGES + EXPECTED_PROJECTION_ANOMALIES,
-            "projection_boundary": "Layout markup is removed deterministically; no source spelling, OCR, wording, or numbering is corrected.",
+            "projection_boundary": "Layout markup is removed deterministically; malformed provider braces are recovered only for 11 exact revision-content hashes; no source spelling, OCR, wording, or numbering is corrected.",
         },
         "completion_denials": completion_denials,
         "source_payloads_copied_into_app": False,
@@ -449,7 +490,7 @@ def compile_sql(packet: dict[str, Any]) -> list[str]:
         }
         provider_id = f"wikisource:hi:ramcharitmanas:{source['name']}"
         statements.append(
-            f"""insert into public.source_objects (edition_id, sha256, byte_count, media_type, storage_backend, storage_bucket, storage_key, provider, provider_identifier, source_url, acquired_at, provenance, completeness_status, rights_lane, rights_basis) select d.id, {sql_quote(source['sha256'])}, {source['bytes']}, {sql_quote(source['media_type'])}, 'local_vault', null, {sql_quote(source['object_path'])}, 'Hindi Wikisource', {sql_quote(provider_id)}, {sql_quote(source['source_url'])}, {sql_quote(source['retrieved_at'])}::timestamptz, {json_sql(provenance)}, 'partial_beta_product_text_802_of_1172_narrative_pages_370_not_indexed', {sql_quote(lane)}, {json_sql(rights)} from public.editions d join public.expressions e on e.id=d.expression_id join public.works w on w.id=e.work_id where w.slug={sql_quote(work['slug'])} and d.edition_title={utf8_sql(edition['edition_title'])} on conflict (sha256) do update set edition_id=excluded.edition_id, byte_count=excluded.byte_count, media_type=excluded.media_type, storage_backend=excluded.storage_backend, storage_bucket=excluded.storage_bucket, storage_key=excluded.storage_key, provider=excluded.provider, provider_identifier=excluded.provider_identifier, source_url=excluded.source_url, acquired_at=excluded.acquired_at, provenance=excluded.provenance, completeness_status=excluded.completeness_status, rights_lane=excluded.rights_lane, rights_basis=excluded.rights_basis;"""
+            f"""insert into public.source_objects (edition_id, sha256, byte_count, media_type, storage_backend, storage_bucket, storage_key, provider, provider_identifier, source_url, acquired_at, provenance, completeness_status, rights_lane, rights_basis) select d.id, {sql_quote(source['sha256'])}, {source['bytes']}, {sql_quote(source['media_type'])}, 'local_vault', null, {sql_quote(source['object_path'])}, 'Hindi Wikisource', {sql_quote(provider_id)}, {sql_quote(source['retrieved_at'])}::timestamptz, {json_sql(provenance)}, 'partial_beta_product_text_813_of_1172_narrative_pages_359_not_indexed', {sql_quote(lane)}, {json_sql(rights)} from public.editions d join public.expressions e on e.id=d.expression_id join public.works w on w.id=e.work_id where w.slug={sql_quote(work['slug'])} and d.edition_title={utf8_sql(edition['edition_title'])} on conflict (sha256) do update set edition_id=excluded.edition_id, byte_count=excluded.byte_count, media_type=excluded.media_type, storage_backend=excluded.storage_backend, storage_bucket=excluded.storage_bucket, storage_key=excluded.storage_key, provider=excluded.provider, provider_identifier=excluded.provider_identifier, source_url=excluded.source_url, acquired_at=excluded.acquired_at, provenance=excluded.provenance, completeness_status=excluded.completeness_status, rights_lane=excluded.rights_lane, rights_basis=excluded.rights_basis;"""
         )
     for passage in packet["passages"]:
         statements.append(

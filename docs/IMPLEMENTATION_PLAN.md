@@ -49,8 +49,9 @@ choice, renunciation and death; the succession of Kusha, Lava and the brothers'
 sons; the differentiated futures of Hanuman, Vibhishana and the old alliance;
 Ayodhya's departure; the Sarayu crossing; and civic renewal after the
 devotional epilogue across Uttara 111–123. No turn remains orientation-only.
-Ramcharitmanas still exposes 802 of
-1,172 narrative pages;
+Ramcharitmanas now compiles all 813 proofread or validated pages of its
+1,172-page fixed expression after exact-revision recovery of 11 malformed
+provider-layout projections; 345 unproofread and 14 empty pages remain held;
 Mahabharata, Hanuman Chalisa, and Panchatantra retain the gaps recorded in the
 consumer-content inventory.
 

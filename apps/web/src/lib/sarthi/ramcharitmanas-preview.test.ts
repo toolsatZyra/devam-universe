@@ -5,9 +5,9 @@ describe("Ramcharitmanas source-bounded preview", () => {
   it("exposes all seven sopana anchors without claiming the held pages", () => {
     const [result] = searchRamcharitmanasPreview("Ramcharitmanas seven sopanas Belvedere Press", "en");
     expect(result.citations).toHaveLength(7);
-    expect(result.statement).toContain("802");
-    expect(result.sourceBoundary).toContain("359 low-quality pages");
-    expect(result.sourceBoundary).toContain("11 malformed-markup pages");
+    expect(result.statement).toContain("813");
+    expect(result.sourceBoundary).toContain("359 unproofread or empty pages");
+    expect(result.sourceBoundary).toContain("not applied to the hosted database");
     expect(new Set(result.citations.map((citation) => citation.locator.sopana_ordinal))).toEqual(new Set([1, 2, 3, 4, 5, 6, 7]));
     expect(RAMCHARITMANAS_PREVIEW_FIXITY.completeRamcharitmanasTradition).toBe(false);
   });
@@ -17,7 +17,7 @@ describe("Ramcharitmanas source-bounded preview", () => {
     const hindi = answerRamcharitmanasPreview({ message: "रामचरितमानस क्या है?", context: { languageCode: "hi" } });
     expect(english).toMatchObject({ ok: true, mode: "deterministic_source_bounded_preview", alternativesAvailable: true });
     expect(english?.citations).toHaveLength(7);
-    expect(english?.answer).toContain("802");
+    expect(english?.answer).toContain("813");
     expect(hindi?.answer).toContain("सातों सोपानों");
     expect(answerRamcharitmanasPreview({ message: "Tell me about astronomy" })).toBeNull();
   });

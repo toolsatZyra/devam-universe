@@ -42,8 +42,8 @@ describe("consumer-content MVP inventory", () => {
     const manas = inventory.lanes.find((lane) => lane.lane_id === "ramcharitmanas-daily-reading")!;
     expect(manas.current).toMatchObject({
       fixed_narrative_pages: 1172,
-      published_narrative_pages: 802,
-      unpublished_narrative_pages: 370,
+      published_narrative_pages: 813,
+      unpublished_narrative_pages: 359,
       daily_reading_available: false,
     });
   });

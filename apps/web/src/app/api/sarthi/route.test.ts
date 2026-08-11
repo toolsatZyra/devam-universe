@@ -24,7 +24,7 @@ describe("POST /api/sarthi", () => {
       mode: "deterministic_source_bounded_preview",
       alternativesAvailable: true,
     });
-    expect(result.answer).toContain("802 source-addressed beta pages");
+    expect(result.answer).toContain("all 813 proofread or validated beta pages");
     expect(result.answer).toContain("not the complete Ramcharitmanas tradition");
     expect(result.citations).toHaveLength(7);
   });
