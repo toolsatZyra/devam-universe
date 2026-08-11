@@ -111,9 +111,9 @@ bilingual scenes and beats, visual direction, canonical graph entities, shared
 database projection and product integration are the next boundary. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
 
-Detailed Mahabharata authoring has begun beneath that map. The first three turns
-now contain 16 exact-span scenes and 69 substantial Hindi/English beats across
-Adi source ordinals 1–58. The opening batch covers Sauti and the layered act of
+Detailed Mahabharata authoring has begun beneath that map. The first four turns
+now contain 22 exact-span scenes and 96 substantial Hindi/English beats across
+Adi source ordinals 1–74. The opening batch covers Sauti and the layered act of
 carrying memory; Samantapanchaka as narrative geography; Uttanka's transfer of
 a private grievance into royal policy; Puloma, Chyavana and the dispute over a
 witness's responsibility; Ruru's half-life bargain for Pramadvara; and
@@ -125,6 +125,15 @@ policy, the operating sacrifice, Astika's guarded entry and the final command
 to stop. Every scene includes characters, places and visual staging. They
 remain `authored_not_projected`, so this is real story-corpus progress but not
 yet a playable consumer surface.
+
+The fourth turn adds the nested demand for a detailed family history;
+Satyavati's river upbringing, negotiation with Parashara and relationship to
+Vyasa; the epic's explicitly mythic descent-and-lineage frame; and Shakuntala's
+complete path from Kanva's protected household through her negotiated condition
+with Dushmanta, years of raising Sarvadamana, the king's public denial, her
+argument about truth and parenthood, and Bharata's recognition. It keeps
+caregiving kin primary, unequal power visible and divine confirmation from
+retroactively making the public denial harmless.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi

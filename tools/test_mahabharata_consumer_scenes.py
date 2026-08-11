@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PACK_PATHS = [
     ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-opening-v1.json",
     ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-astika-v1.json",
+    ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-shakuntala-v1.json",
 ]
 PLAN_PATH = ROOT / "ingestion" / "plans" / "mahabharata-kisari-mohan-ganguli-project-gutenberg-source-qualification-v1.json"
 BACKBONE_PATH = ROOT / "knowledge_packs" / "inventories" / "mahabharata-consumer-backbone-v1.json"
@@ -34,10 +35,10 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
     def test_batch_contract_and_honest_status(self) -> None:
         self.assertTrue(all(pack["contract"] == "DEVAM_MAHABHARATA_CONSUMER_SCENES_V1" for pack in self.packs))
         self.assertTrue(all(pack["status"] == "authored_not_projected" for pack in self.packs))
-        self.assertEqual(16, len(self.scenes))
-        self.assertEqual(69, sum(len(scene["beats"]) for scene in self.scenes))
-        self.assertEqual(16, sum(pack["coverage"]["scene_count"] for pack in self.packs))
-        self.assertEqual(69, sum(pack["coverage"]["beat_count"] for pack in self.packs))
+        self.assertEqual(22, len(self.scenes))
+        self.assertEqual(96, sum(len(scene["beats"]) for scene in self.scenes))
+        self.assertEqual(22, sum(pack["coverage"]["scene_count"] for pack in self.packs))
+        self.assertEqual(96, sum(pack["coverage"]["beat_count"] for pack in self.packs))
         self.assertTrue(all(scene["status"] == "authored_not_projected" for scene in self.scenes))
 
     def test_scenes_partition_the_first_two_backbone_turns_exactly(self) -> None:
@@ -48,7 +49,12 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
             by_turn.setdefault(scene["turn_id"], []).extend(
                 range(source_range["start_ordinal"], source_range["end_ordinal"] + 1)
             )
-        for turn_id in ["story-enters-sacrifice", "vows-curses-ruru", "astika-stops-destruction"]:
+        for turn_id in [
+            "story-enters-sacrifice",
+            "vows-curses-ruru",
+            "astika-stops-destruction",
+            "gods-shakuntala-bharata",
+        ]:
             source_range = turns[turn_id]["source_range"]
             self.assertEqual(
                 list(range(source_range["start_ordinal"], source_range["end_ordinal"] + 1)),
