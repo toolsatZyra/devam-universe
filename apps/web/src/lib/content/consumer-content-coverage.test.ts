@@ -30,12 +30,12 @@ describe("consumer-content MVP inventory", () => {
     expect(ramayana.current).toMatchObject({
       selected_expression_source_units: 652,
       whole_story_turns: 49,
-      playable_turns: 39,
+      playable_turns: 40,
       outlined_turns: 0,
-      orientation_only_turns: 10,
-      playable_scenes: 285,
+      orientation_only_turns: 9,
+      playable_scenes: 299,
       draft_scene_outlines: 0,
-      bilingual_beats: 1348,
+      bilingual_beats: 1404,
       database_projection_migration_prepared: true,
       hosted_database_projection_applied: false,
     });

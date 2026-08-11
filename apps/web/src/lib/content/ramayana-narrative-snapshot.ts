@@ -38,6 +38,8 @@ import { RAMAYANA_LANKA_SURROUNDED_SCENE_OUTLINES } from "../../data/ramayana-la
 import { RAMAYANA_LANKA_SURROUNDED_PLAYABLE_SCENES } from "../../data/ramayana-lanka-surrounded-playable";
 import { RAMAYANA_KUMBHAKARNA_RISES_SCENE_OUTLINES } from "../../data/ramayana-kumbhakarna-rises-outline";
 import { RAMAYANA_KUMBHAKARNA_RISES_PLAYABLE_SCENES } from "../../data/ramayana-kumbhakarna-rises-playable";
+import { RAMAYANA_INDRAJIT_LAST_WAR_SCENE_OUTLINES } from "../../data/ramayana-indrajit-last-war-outline";
+import { RAMAYANA_INDRAJIT_LAST_WAR_PLAYABLE_SCENES } from "../../data/ramayana-indrajit-last-war-playable";
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
 import { getDuttKandaSpanSha256s } from "../../data/ramayana-dutt-source-spans";
 import { RAMAYANA_HEIRS_PLAYABLE_SCENES } from "../../data/ramayana-heirs-playable";
@@ -228,6 +230,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_OCEAN_BRIDGE_SCENE_OUTLINES,
     ...RAMAYANA_LANKA_SURROUNDED_SCENE_OUTLINES,
     ...RAMAYANA_KUMBHAKARNA_RISES_SCENE_OUTLINES,
+    ...RAMAYANA_INDRAJIT_LAST_WAR_SCENE_OUTLINES,
   ];
   const sourcePartitionedOutlineById = new Map(sourcePartitionedOutlines.map((outline) => [outline.id, outline]));
   for (const playable of [
@@ -256,6 +259,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_OCEAN_BRIDGE_PLAYABLE_SCENES,
     ...RAMAYANA_LANKA_SURROUNDED_PLAYABLE_SCENES,
     ...RAMAYANA_KUMBHAKARNA_RISES_PLAYABLE_SCENES,
+    ...RAMAYANA_INDRAJIT_LAST_WAR_PLAYABLE_SCENES,
   ]) {
     const outline = sourcePartitionedOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
