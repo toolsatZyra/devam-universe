@@ -7,29 +7,24 @@ edition comparison, verse counts, citations and scholarly dispute in the normal
 experience. Provenance, rights, source identity, uncertainty and materially
 important variants remain mandatory internal grounding, not primary UI.
 
-The current audit establishes the real starting point. One complete Dutt English
-Ramayana expression has 652 source-indexed sections and a 49-turn bilingual
-whole-story compass, but only 14 turns currently open into seven playable
-districts: 55 scenes and 285 bilingual beats. Mahabharata source candidates are
-preserved, including the four Ganguli Project Gutenberg volumes, but no complete
-consumer narrative has been compiled or published. Ramcharitmanas exposes 802
-of 1,172 narrative pages, while 370 remain outside the product projection; it
-has no daily-reading product. Hanuman Chalisa and Panchatantra require a fresh
-identity, rights and product-lane audit. The database has source, passage, claim,
-entity, relationship and ritual records but no first-class narrative series,
-arc, moment or beat tables. Passing Atlas tests and source counts therefore do
-not establish the requested knowledge base.
+The current Ramayana implementation now carries one complete Dutt English
+expression with 652 source-indexed sections, a 49-turn bilingual whole-epic
+compass, and 38 playable turns containing 270 substantial scenes and 1,288
+bilingual beats. The exact playable span reaches through Yuddha 44: Lanka's
+encirclement, Sita's recovery from coercive disinformation, the final counsel
+and embassy, the opening assault, and the night in which Rama and Lakshmana are
+bound. Eleven turns remain orientation-only, beginning with Yuddha 45–69 and
+Kumbhakarna's entry. Ramcharitmanas still exposes 802 of 1,172 narrative pages;
+Mahabharata, Hanuman Chalisa, and Panchatantra retain the gaps recorded in the
+consumer-content inventory.
 
-The first local implementation checkpoint now adds that missing normalized
-narrative layer and a deterministic Ramayana seed compiler. The generated,
-transactional migration contains seven bilingual arcs, all 49 backbone turns,
-55 detailed scenes, 285 beats, 208 English/Hindi moment texts and 570
-English/Hindi beat texts. It publishes only the 14 turns that actually contain
-detailed scenes; the remaining 35 stay draft. Exact source and span hashes are
-retained in compact source-range metadata, while source-vault bytes remain in
-their one-copy store. The migration has passed deterministic/static tests but
-has not been applied to hosted Supabase; a local PostgreSQL execution check is
-also pending because Docker or Podman is not installed in this environment.
+The normalized narrative layer and deterministic Ramayana seed compiler keep
+all seven bilingual arcs and 49 backbone turns while publishing only scenes
+that contain complete bilingual beats. Exact source and span hashes remain in
+compact source-range metadata, and source-vault bytes remain in their one-copy
+store. The generated migration is prepared for local validation but is not
+authority to apply it to hosted Supabase; external database mutation still
+requires explicit release authorization.
 
 The revised critical path is:
 
