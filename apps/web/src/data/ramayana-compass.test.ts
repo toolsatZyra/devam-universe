@@ -49,7 +49,7 @@ describe("Ramayana whole-epic story compass", () => {
       ["two-boons", "manthara-sees-city"],
       ["exile-accepted", "rama-accepts-exile"],
       ["road-out-of-ayodhya", "city-follows-car"],
-      ["king-dies-bharata-returns", "palace-grief-dialogue"],
+      ["king-dies-bharata-returns", "empty-chariot-return"],
       ["bharata-follows", "expedition-reaches-ganga"],
       ["sandals-and-promise", "brothers-meet-death-news"],
       ["deeper-into-forest", "chitrakoot-grows-unsafe"],
@@ -63,6 +63,7 @@ describe("Ramayana whole-epic story compass", () => {
     expect(playable.at(-1)?.sourceRange).toMatchObject({ kandaSlug: "yuddha", startOrdinal: 122, endOrdinal: 128 });
     expect(Object.values(compass.turns).filter((turn) => turn.coverage === "orientation")).toHaveLength(35);
     expect(compass.sourceBoundary).toContain("not Sanskrit");
+    expect(compass.sourceBoundary).toContain("heading-number transcription anomalies");
     expect(compass.sourceBoundary).toContain("not a finished playable scene");
   });
 

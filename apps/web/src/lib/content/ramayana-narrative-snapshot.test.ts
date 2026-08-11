@@ -9,12 +9,12 @@ describe("Ramayana consumer narrative snapshot", () => {
     expect(snapshot.counters).toEqual({
       arcs: 7,
       backboneTurns: 49,
-      playableTurns: 48,
+      playableTurns: 49,
       outlinedTurns: 0,
-      orientationOnlyTurns: 1,
-      playableScenes: 389,
+      orientationOnlyTurns: 0,
+      playableScenes: 402,
       draftSceneOutlines: 0,
-      bilingualBeats: 1707,
+      bilingualBeats: 1746,
     });
     expect(snapshot.boundary).toContain("does not claim a complete consumer Ramayana");
   });
@@ -23,7 +23,7 @@ describe("Ramayana consumer narrative snapshot", () => {
     const scenes = snapshot.turns.flatMap((turn) => turn.scenes
       .filter((scene) => scene.readiness === "playable")
       .map((scene) => ({ turn, scene })));
-    expect(new Set(scenes.map(({ scene }) => scene.id)).size).toBe(389);
+    expect(new Set(scenes.map(({ scene }) => scene.id)).size).toBe(402);
     const beatIds = scenes.flatMap(({ scene }) => scene.beats.map((beat) => beat.id));
     expect(new Set(beatIds).size).toBe(beatIds.length);
     for (const { turn, scene } of scenes) {
@@ -39,6 +39,24 @@ describe("Ramayana consumer narrative snapshot", () => {
         [...turn.scenes.map((scene) => scene.detailOrdinal)].sort((left, right) => left - right),
       );
     }
+  });
+
+  it("covers every selected-source unit exactly once inside its backbone turn", () => {
+    const mismatches: Array<{ turnId: string; expected: number[]; covered: number[] }> = [];
+    for (const turn of snapshot.turns) {
+      const covered = turn.scenes.flatMap((scene) => Array.from(
+        { length: scene.source.sourceEndOrdinal - scene.source.sourceOrdinal + 1 },
+        (_, index) => scene.source.sourceOrdinal + index,
+      )).sort((left, right) => left - right);
+      const expected = Array.from(
+        { length: turn.sourceRange.endOrdinal - turn.sourceRange.startOrdinal + 1 },
+        (_, index) => turn.sourceRange.startOrdinal + index,
+      );
+      if (JSON.stringify(covered) !== JSON.stringify(expected)) {
+        mismatches.push({ turnId: turn.id, expected, covered });
+      }
+    }
+    expect(mismatches).toEqual([]);
   });
 
   it("retains complete bilingual narrative copy and visual staging inputs", () => {
@@ -62,7 +80,7 @@ describe("Ramayana consumer narrative snapshot", () => {
   it("leaves unfinished turns visibly orientation-only", () => {
     const orientationOnly = snapshot.turns.filter((turn) => turn.coverage === "orientation");
     const outlined = snapshot.turns.filter((turn) => turn.coverage === "outlined");
-    expect(orientationOnly).toHaveLength(1);
+    expect(orientationOnly).toHaveLength(0);
     expect(orientationOnly.every((turn) => turn.scenes.length === 0)).toBe(true);
     expect(outlined).toHaveLength(0);
     expect(outlined.flatMap((turn) => turn.scenes)).toHaveLength(0);
