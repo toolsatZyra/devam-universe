@@ -164,6 +164,23 @@ cost of infant death, coercive dynastic pressure, unequal status, or constrained
 choice. The first six turns now total 45 exact-span scenes and 195 substantial
 Hindi/English beats; 71 turns remain authored only at backbone-plan depth.
 
+The seventh turn is now fully scene-authored as twelve scenes and 57 bilingual
+beats across Adi 115–129. The journey preserves Gandhari's two-year pregnancy,
+the one hundred and one guarded portions, Duhsala and Yuyutsu; retains the
+hundred brothers as named identities without forcing a consumer through an
+unreadable roll call; follows Kindama's death and curse; and shows how Pandu's
+fear of childlessness becomes unequal dynastic pressure on Kunti. It carries
+Yudhishthira, Bhima, Arjuna, Nakula and Sahadeva through their distinct births,
+Kunti's boundaries and Madri's request for motherhood. It then treats Pandu's
+final encounter as forced despite Madri's resistance, keeps Madri's
+self-immolation period-bound rather than prescriptive, and follows Kunti and
+the five bereaved children back to Hastinapura. The closing movement connects
+the city's mourning, Satyavati's withdrawal, Bhima's harmful childhood play,
+Duryodhana's premeditated poisoning and drowning attempt, Bhima's explicitly
+mythic Naga-world recovery, Yuyutsu's warning, and the cousins' move into
+weapons training. The first seven turns now total 57 exact-span scenes and 252
+substantial Hindi/English beats; 70 turns remain at backbone-plan depth.
+
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
