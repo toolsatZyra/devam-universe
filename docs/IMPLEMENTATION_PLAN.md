@@ -111,15 +111,20 @@ bilingual scenes and beats, visual direction, canonical graph entities, shared
 database projection and product integration are the next boundary. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
 
-Detailed Mahabharata authoring has begun beneath that map. The first two turns
-now contain six exact-span scenes and 26 substantial Hindi/English beats across
-Adi source ordinals 1–12: Sauti and the layered act of carrying memory;
-Samantapanchaka as narrative geography; Uttanka's journey and transfer of a
-private grievance into royal policy; Puloma, Chyavana and the dispute over a
+Detailed Mahabharata authoring has begun beneath that map. The first three turns
+now contain 16 exact-span scenes and 69 substantial Hindi/English beats across
+Adi source ordinals 1–58. The opening batch covers Sauti and the layered act of
+carrying memory; Samantapanchaka as narrative geography; Uttanka's transfer of
+a private grievance into royal policy; Puloma, Chyavana and the dispute over a
 witness's responsibility; Ruru's half-life bargain for Pramadvara; and
-Dundubha's interruption of indiscriminate revenge. Each scene includes
-characters, places and visual staging. They remain `authored_not_projected`, so
-this is real story-corpus progress but not yet a playable consumer surface.
+Dundubha's interruption of indiscriminate revenge. The complete Astika cycle
+then connects Kadru and Vinata, Garuda's recovery of amrita without consuming
+it, the serpent community's survival debate, Parikshit's misconduct and death,
+the two Jaratkarus and Astika's birth, Janamejaya's conversion of grief into
+policy, the operating sacrifice, Astika's guarded entry and the final command
+to stop. Every scene includes characters, places and visual staging. They
+remain `authored_not_projected`, so this is real story-corpus progress but not
+yet a playable consumer surface.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi

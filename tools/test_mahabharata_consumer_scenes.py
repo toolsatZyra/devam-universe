@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -9,7 +10,10 @@ from tools.qualify_ganguli_mahabharata_sources import compile_qualification
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACK_PATH = ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-opening-v1.json"
+PACK_PATHS = [
+    ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-opening-v1.json",
+    ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-astika-v1.json",
+]
 PLAN_PATH = ROOT / "ingestion" / "plans" / "mahabharata-kisari-mohan-ganguli-project-gutenberg-source-qualification-v1.json"
 BACKBONE_PATH = ROOT / "knowledge_packs" / "inventories" / "mahabharata-consumer-backbone-v1.json"
 
@@ -17,7 +21,8 @@ BACKBONE_PATH = ROOT / "knowledge_packs" / "inventories" / "mahabharata-consumer
 class MahabharataConsumerScenesTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.pack = json.loads(PACK_PATH.read_text(encoding="utf-8"))
+        cls.packs = [json.loads(path.read_text(encoding="utf-8")) for path in PACK_PATHS]
+        cls.scenes = [scene for pack in cls.packs for scene in pack["scenes"]]
         cls.plan = json.loads(PLAN_PATH.read_text(encoding="utf-8"))
         cls.backbone = json.loads(BACKBONE_PATH.read_text(encoding="utf-8"))
         _report, cls.units = compile_qualification()
@@ -27,23 +32,23 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
         }
 
     def test_batch_contract_and_honest_status(self) -> None:
-        self.assertEqual("DEVAM_MAHABHARATA_CONSUMER_SCENES_V1", self.pack["contract"])
-        self.assertEqual("authored_not_projected", self.pack["status"])
-        self.assertEqual(6, len(self.pack["scenes"]))
-        self.assertEqual(26, sum(len(scene["beats"]) for scene in self.pack["scenes"]))
-        self.assertEqual(6, self.pack["coverage"]["scene_count"])
-        self.assertEqual(26, self.pack["coverage"]["beat_count"])
-        self.assertTrue(all(scene["status"] == "authored_not_projected" for scene in self.pack["scenes"]))
+        self.assertTrue(all(pack["contract"] == "DEVAM_MAHABHARATA_CONSUMER_SCENES_V1" for pack in self.packs))
+        self.assertTrue(all(pack["status"] == "authored_not_projected" for pack in self.packs))
+        self.assertEqual(16, len(self.scenes))
+        self.assertEqual(69, sum(len(scene["beats"]) for scene in self.scenes))
+        self.assertEqual(16, sum(pack["coverage"]["scene_count"] for pack in self.packs))
+        self.assertEqual(69, sum(pack["coverage"]["beat_count"] for pack in self.packs))
+        self.assertTrue(all(scene["status"] == "authored_not_projected" for scene in self.scenes))
 
     def test_scenes_partition_the_first_two_backbone_turns_exactly(self) -> None:
         turns = {turn["id"]: turn for turn in self.backbone["turns"]}
         by_turn: dict[str, list[int]] = {}
-        for scene in self.pack["scenes"]:
+        for scene in self.scenes:
             source_range = scene["source_range"]
             by_turn.setdefault(scene["turn_id"], []).extend(
                 range(source_range["start_ordinal"], source_range["end_ordinal"] + 1)
             )
-        for turn_id in self.pack["coverage"]["turn_ids"]:
+        for turn_id in ["story-enters-sacrifice", "vows-curses-ruru", "astika-stops-destruction"]:
             source_range = turns[turn_id]["source_range"]
             self.assertEqual(
                 list(range(source_range["start_ordinal"], source_range["end_ordinal"] + 1)),
@@ -57,7 +62,7 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
             (unit["parva_slug"], unit["parva_source_ordinal"]): unit
             for unit in self.units
         }
-        for scene in self.pack["scenes"]:
+        for scene in self.scenes:
             source_range = scene["source_range"]
             selected = [
                 units[(source_range["parva_slug"], ordinal)]
@@ -71,7 +76,7 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
     def test_scenes_are_bilingual_visual_and_substantial(self) -> None:
         scene_ids: set[str] = set()
         beat_ids: set[str] = set()
-        for scene in self.pack["scenes"]:
+        for scene in self.scenes:
             self.assertNotIn(scene["id"], scene_ids)
             scene_ids.add(scene["id"])
             self.assertGreaterEqual(len(scene["beats"]), 4, scene["id"])
@@ -93,14 +98,17 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
 
     def test_consumer_copy_does_not_lead_with_source_apparatus(self) -> None:
         forbidden = ("sha256", "section ", "project gutenberg", "citation", "footnote")
-        for scene in self.pack["scenes"]:
+        for scene in self.scenes:
             public_copy = " ".join(
                 [scene["title"]["en"], scene["decisive_change"]["en"]]
                 + [beat["title"]["en"] for beat in scene["beats"]]
                 + [beat["narration"]["en"] for beat in scene["beats"]]
             ).casefold()
             for term in forbidden:
-                self.assertNotIn(term, public_copy, f"{scene['id']} exposes {term!r}")
+                self.assertIsNone(
+                    re.search(rf"(?<![a-z]){re.escape(term.strip())}(?![a-z])", public_copy),
+                    f"{scene['id']} exposes {term!r}",
+                )
 
 
 if __name__ == "__main__":

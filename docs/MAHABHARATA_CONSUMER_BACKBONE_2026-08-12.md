@@ -92,13 +92,14 @@ followed by graph compilation and an adversarial whole-journey review.
 
 ## First detailed authoring batch
 
-`knowledge_packs/mahabharata/consumer-scenes-opening-v1.json` begins that next
-checkpoint with six scenes and 26 substantial English/Hindi beats. It covers
-Adi source ordinals 1â€“12 exactly once beneath the first two backbone turns.
-The batch preserves exact span hashes, characters, places and visual direction
-while keeping source apparatus out of normal story copy.
+`knowledge_packs/mahabharata/consumer-scenes-opening-v1.json` and
+`consumer-scenes-astika-v1.json` begin that next checkpoint with 16 scenes and
+69 substantial English/Hindi beats. Together they cover Adi source ordinals
+1–58 exactly once beneath the first three backbone turns. The batches preserve
+exact span hashes, characters, places and visual direction while keeping source
+apparatus out of normal story copy.
 
 The scenes are authored but not projected. They do not change the honest
 `consumer_story_available: false` or `product_projection_available: false`
-state. The remaining 75 turns still require the same depth before the selected
+state. The remaining 74 turns still require the same depth before the selected
 expression can be called consumer-complete.
