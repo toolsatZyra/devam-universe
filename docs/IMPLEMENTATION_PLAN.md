@@ -9,7 +9,7 @@ important variants remain mandatory internal grounding, not primary UI.
 
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-indexed sections, a 49-turn bilingual whole-epic
-compass, and 44 playable turns containing 349 substantial scenes and 1,581
+compass, and 45 playable turns containing 357 substantial scenes and 1,605
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -24,9 +24,12 @@ campaigns, the harms named by Vedavati and Rambha, the limits set by Kartavirya
 and Vali, Hanuman's remembered strength, and the divine frame that does not
 erase Ravana's choices or Sita's suffering; the allies' departures; the return
 of Pushpaka by consent; Sita's pregnancy and freely chosen hermitage visit; and
-the public prejudice that converts her forced captivity into suspicion. Five
-turns remain orientation-only, all in Uttara Kāṇḍa, beginning with Sita being
-sent away (Uttara 54–61).
+the public prejudice that converts her forced captivity into suspicion; the
+deceptive journey across the Ganga; Sita choosing survival and sending her own
+message; Valmiki's community offering refuge without another ordeal; and the
+prophecy frame that does not excuse abandonment. Four turns remain
+orientation-only, all in Uttara Kāṇḍa, beginning with kingdom tales and the
+birth of the twins (Uttara 62–84).
 Ramcharitmanas still exposes 802 of
 1,172 narrative pages;
 Mahabharata, Hanuman Chalisa, and Panchatantra retain the gaps recorded in the
@@ -36,10 +39,10 @@ The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
 source addresses, and world routes; user-visible journey copy no longer exposes
-editorial or citation apparatus. Exact Uttara 1–45 section-span hashes were
-independently re-derived from the retained Dutt bytes and now ground 23
-substantial bilingual playable scenes containing 69 beats across Uttara 1–53.
-The next unfinished turn begins at Uttara 54.
+editorial or citation apparatus. Exact Uttara 1–61 section-span hashes were
+independently re-derived from the retained Dutt bytes and now ground 31
+substantial bilingual playable scenes containing 93 beats across Uttara 1–61.
+The next unfinished turn begins at Uttara 62.
 
 The normalized narrative layer and deterministic Ramayana seed compiler keep
 all seven bilingual arcs and 49 backbone turns while publishing only scenes

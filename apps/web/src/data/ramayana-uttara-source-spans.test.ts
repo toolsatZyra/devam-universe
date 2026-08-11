@@ -26,11 +26,21 @@ describe("selected Dutt Uttara source-span manifest", () => {
       "76fad8bfe054565027454dac476f0472c5ea68c0291c85ba2c5c369f76203356",
       "158cd495584204dd9e4970e2c953457d5f994d005f7c1d55724aff0f81b74f79",
     ]);
+    expect(getDuttKandaSpanSha256s("uttara", 54, 61)).toEqual([
+      "fad310fd7914d26b668001ed09ae360a9b3b21adc94b50334039dd1ed7d9d093",
+      "01ada302a35f973e501ce2f511dc58d6800c3fac9712b976560821cfde7a48ac",
+      "fd7f6ea99990d8b604c95a814f5136af6174c96cd5a6497232de1841964956ed",
+      "ca365d69b2bd4fce3aed56084677197b0c1618272edf803b83b5435191cc090c",
+      "9216502985368b591b7fee2c0854c62bf96310a48e91187a68672ad185ebfaa4",
+      "d4917dc5baf1f84d4db3ce90b66e0bcbf3fa57ed2287ab3b75966544d1aeb243",
+      "a1fb3f17be99ce62b4b805d97bf5b417956474a428e1323e8a869da0193e3682",
+      "ec1262922e35d5ff4637127b51dd769023c9a55f9ef0fc3f2cc6d7f3195ca742",
+    ]);
   });
 
   it("rejects incomplete or reversed requests beyond the mapped checkpoint", () => {
     expect(() => getDuttKandaSpanSha256s("uttara", 0, 1)).toThrow("Invalid");
     expect(() => getDuttKandaSpanSha256s("uttara", 6, 5)).toThrow("Invalid");
-    expect(() => getDuttKandaSpanSha256s("uttara", 53, 54)).toThrow("Missing");
+    expect(() => getDuttKandaSpanSha256s("uttara", 61, 62)).toThrow("Missing");
   });
 });
