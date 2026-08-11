@@ -20,6 +20,8 @@ import { RAMAYANA_HANUMAN_REMEMBERS_SCENE_OUTLINES } from "../../data/ramayana-h
 import { RAMAYANA_HANUMAN_REMEMBERS_PLAYABLE_SCENES } from "../../data/ramayana-hanuman-remembers-playable";
 import { RAMAYANA_LEAP_ACROSS_OCEAN_SCENE_OUTLINES } from "../../data/ramayana-leap-across-ocean-outline";
 import { RAMAYANA_LEAP_ACROSS_OCEAN_PLAYABLE_SCENES } from "../../data/ramayana-leap-across-ocean-playable";
+import { RAMAYANA_SEARCHING_LANKA_SCENE_OUTLINES } from "../../data/ramayana-searching-lanka-outline";
+import { RAMAYANA_SEARCHING_LANKA_PLAYABLE_SCENES } from "../../data/ramayana-searching-lanka-playable";
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
 import { getDuttKandaSpanSha256s } from "../../data/ramayana-dutt-source-spans";
 import { RAMAYANA_HEIRS_PLAYABLE_SCENES } from "../../data/ramayana-heirs-playable";
@@ -201,6 +203,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_SAMPATI_REVEALS_LANKA_SCENE_OUTLINES,
     ...RAMAYANA_HANUMAN_REMEMBERS_SCENE_OUTLINES,
     ...RAMAYANA_LEAP_ACROSS_OCEAN_SCENE_OUTLINES,
+    ...RAMAYANA_SEARCHING_LANKA_SCENE_OUTLINES,
   ];
   const sourcePartitionedOutlineById = new Map(sourcePartitionedOutlines.map((outline) => [outline.id, outline]));
   for (const playable of [
@@ -220,6 +223,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_SAMPATI_REVEALS_LANKA_PLAYABLE_SCENES,
     ...RAMAYANA_HANUMAN_REMEMBERS_PLAYABLE_SCENES,
     ...RAMAYANA_LEAP_ACROSS_OCEAN_PLAYABLE_SCENES,
+    ...RAMAYANA_SEARCHING_LANKA_PLAYABLE_SCENES,
   ]) {
     const outline = sourcePartitionedOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
@@ -287,7 +291,8 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     const turn = pack.compass.turns[turnId];
     if (!turn) throw new Error(`Ramayana compass turn is missing: ${turnId}`);
     backboneOrdinal += 1;
-    const scenes = scenesByTurnId.get(turnId) ?? [];
+    const scenes = [...(scenesByTurnId.get(turnId) ?? [])]
+      .sort((left, right) => left.detailOrdinal - right.detailOrdinal);
     return {
       id: turn.id,
       arcId: turn.arcId,
