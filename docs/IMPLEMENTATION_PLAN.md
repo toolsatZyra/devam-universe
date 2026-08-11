@@ -98,6 +98,19 @@ application remain false. The fixed source-unit root is
 rights, structure, carrier and completion boundaries. Panchatantra retains the
 gap recorded in the consumer-content inventory.
 
+The complete fixed Mahabharata denominator is now partitioned exactly once into
+a consumer-facing bilingual backbone plan: 12 broad arcs and 77 ordered turns
+cover all 2,107 source-relative units. Every turn has an English and Hindi title
+and story promise plus initial character, place, kingdom and thematic traversal
+facets. The plan explicitly names consequential harms such as Draupadi's public
+humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
+survivors and the grief of bereaved women. Historically situated social and
+prescriptive material remains contextualized rather than presented as timeless
+consumer instruction. All 77 turns remain `planned_not_playable`: substantial
+bilingual scenes and beats, visual direction, canonical graph entities, shared
+database projection and product integration are the next boundary. See
+`MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
+
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
