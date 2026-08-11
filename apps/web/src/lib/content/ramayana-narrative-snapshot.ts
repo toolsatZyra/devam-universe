@@ -14,6 +14,8 @@ import { RAMAYANA_RAINS_AND_DELAY_SCENE_OUTLINES } from "../../data/ramayana-rai
 import { RAMAYANA_RAINS_AND_DELAY_PLAYABLE_SCENES } from "../../data/ramayana-rains-and-delay-playable";
 import { RAMAYANA_SEARCH_EVERY_HORIZON_SCENE_OUTLINES } from "../../data/ramayana-search-every-horizon-outline";
 import { RAMAYANA_SEARCH_EVERY_HORIZON_PLAYABLE_SCENES } from "../../data/ramayana-search-every-horizon-playable";
+import { RAMAYANA_SAMPATI_REVEALS_LANKA_SCENE_OUTLINES } from "../../data/ramayana-sampati-reveals-lanka-outline";
+import { RAMAYANA_SAMPATI_REVEALS_LANKA_PLAYABLE_SCENES } from "../../data/ramayana-sampati-reveals-lanka-playable";
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
 import { getDuttKandaSpanSha256s } from "../../data/ramayana-dutt-source-spans";
 import { RAMAYANA_HEIRS_PLAYABLE_SCENES } from "../../data/ramayana-heirs-playable";
@@ -192,6 +194,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_VALI_FALLS_SCENE_OUTLINES,
     ...RAMAYANA_RAINS_AND_DELAY_SCENE_OUTLINES,
     ...RAMAYANA_SEARCH_EVERY_HORIZON_SCENE_OUTLINES,
+    ...RAMAYANA_SAMPATI_REVEALS_LANKA_SCENE_OUTLINES,
   ];
   const sourcePartitionedOutlineById = new Map(sourcePartitionedOutlines.map((outline) => [outline.id, outline]));
   for (const playable of [
@@ -208,6 +211,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_VALI_FALLS_PLAYABLE_SCENES,
     ...RAMAYANA_RAINS_AND_DELAY_PLAYABLE_SCENES,
     ...RAMAYANA_SEARCH_EVERY_HORIZON_PLAYABLE_SCENES,
+    ...RAMAYANA_SAMPATI_REVEALS_LANKA_PLAYABLE_SCENES,
   ]) {
     const outline = sourcePartitionedOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
