@@ -1,9 +1,16 @@
 {
   "contract": "DEVAM_CONSUMER_CONTENT_MVP_V1",
-  "snapshot_date": "2026-08-11",
+  "snapshot_date": "2026-08-12",
   "audience": "Ordinary Hindi- or English-speaking Indian adults accustomed to mobile content and game-like exploration.",
   "default_experience": "Complete approachable stories and practical living-culture guidance. Source and scholarly apparatus is deliberate progressive disclosure.",
   "boundary": "This inventory is the selected consumer MVP backlog, not a census or completeness percentage for Sanatana Dharma, Indian culture, or Indian wisdom.",
+  "consumer_record_contract": {
+    "languages": ["hi", "en"],
+    "story_fields": ["title", "synopsis", "narrative", "action", "motivation", "consequence"],
+    "navigation_fields": ["characters", "places", "precedes", "follows", "living_connections"],
+    "default_hidden_internal_fields": ["source_hashes", "edition_comparison", "verse_counts", "citations", "scholarly_disputes"],
+    "disclosure_boundary": "Internal grounding remains available to deliberate source and why actions, but it is not default story chrome. Material safety, applicability, uncertainty, or disagreement is surfaced when hiding it would mislead the user."
+  },
   "lanes": [
     {
       "priority": 1,
@@ -27,12 +34,15 @@
     {
       "priority": 2,
       "lane_id": "ramcharitmanas-daily-reading",
-      "status": "partial_product_text",
+      "status": "reconciled_text_denominator_consumer_reading_pending",
       "required_outcome": "A complete searchable Ramcharitmanas expression with approachable daily reading in Hindi and English.",
       "current": {
         "fixed_narrative_pages": 1172,
-        "published_narrative_pages": 813,
-        "unpublished_narrative_pages": 359,
+        "prepared_narrative_pages": 813,
+        "held_text_bearing_pages": 345,
+        "structural_blank_scan_pages": 14,
+        "q1_pages_dual_witness_screened": 345,
+        "q1_pages_promoted": 0,
         "daily_reading_available": false
       },
       "next_boundary": "Qualify or correct the remaining 345 unproofread text-bearing pages; the 14 q0 scan coordinates are verified structural blanks rather than missing story text. Then define one canonical approachable daily-reading sequence."
