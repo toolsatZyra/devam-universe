@@ -9,12 +9,12 @@ important variants remain mandatory internal grounding, not primary UI.
 
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-indexed sections, a 49-turn bilingual whole-epic
-compass, and 38 playable turns containing 270 substantial scenes and 1,288
-bilingual beats. The exact playable span reaches through Yuddha 44: Lanka's
-encirclement, Sita's recovery from coercive disinformation, the final counsel
-and embassy, the opening assault, and the night in which Rama and Lakshmana are
-bound. Eleven turns remain orientation-only, beginning with Yuddha 45–69 and
-Kumbhakarna's entry. Ramcharitmanas still exposes 802 of 1,172 narrative pages;
+compass, and 39 playable turns containing 285 substantial scenes and 1,348
+bilingual beats. The exact playable span reaches through Yuddha 69: recovery
+from Indrajit's hidden assault, Sita and Trijata's coerced battlefield journey,
+the successive sorties, Ravana's own entry, and Kumbhakarna's counsel, choice,
+battle, and death. Ten turns remain orientation-only, beginning with Yuddha
+70–90 and Indrajit's last war. Ramcharitmanas still exposes 802 of 1,172 narrative pages;
 Mahabharata, Hanuman Chalisa, and Panchatantra retain the gaps recorded in the
 consumer-content inventory.
 
