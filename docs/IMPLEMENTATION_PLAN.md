@@ -150,6 +150,20 @@ and freely offered help from his descendants; and the Puru-line bridge toward
 the central Kuru household. No Yayati source interval remains hidden behind the
 turn title.
 
+The sixth turn is now fully scene-authored as thirteen scenes and 56 bilingual
+beats across Adi 95–114. It does more than introduce Bhishma: the journey
+connects the Kuru ancestry to Mahabhisha, Ganga and the Vasus; Shantanu's
+conditional marriage and seven infant deaths; Devavrata's return and terrible
+succession vow; Satyavati's sons; Amba's lost agency; Vichitravirya's death;
+Satyavati's intervention with Vyasa; the births and unequal court positions of
+Dhritarashtra, Pandu and Vidura; Mandavya's challenge to disproportionate
+punishment; Gandhari's marriage; Kunti's Durvasa mantra, encounter with Surya
+and separation from Karna; Kunti and Madri's marriages to Pandu; and Pandu's
+campaigns and forest retirement. Sacred explanation never erases the human
+cost of infant death, coercive dynastic pressure, unequal status, or constrained
+choice. The first six turns now total 45 exact-span scenes and 195 substantial
+Hindi/English beats; 71 turns remain authored only at backbone-plan depth.
+
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
