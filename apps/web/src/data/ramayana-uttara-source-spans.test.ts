@@ -36,11 +36,14 @@ describe("selected Dutt Uttara source-span manifest", () => {
       "a1fb3f17be99ce62b4b805d97bf5b417956474a428e1323e8a869da0193e3682",
       "ec1262922e35d5ff4637127b51dd769023c9a55f9ef0fc3f2cc6d7f3195ca742",
     ]);
+    expect(getDuttKandaSpanSha256s("uttara", 62, 84)).toHaveLength(23);
+    expect(getDuttKandaSpanSha256s("uttara", 62, 62)[0]).toBe("fe19cdcdca384cd583d1106bbcd36b442c3abe77c727fb00a5ba4750ec4426f4");
+    expect(getDuttKandaSpanSha256s("uttara", 84, 84)[0]).toBe("7c61c71e68fd08f8b201cc22948d238fc0208ba70d12b72225fd145b7a34c715");
   });
 
   it("rejects incomplete or reversed requests beyond the mapped checkpoint", () => {
     expect(() => getDuttKandaSpanSha256s("uttara", 0, 1)).toThrow("Invalid");
     expect(() => getDuttKandaSpanSha256s("uttara", 6, 5)).toThrow("Invalid");
-    expect(() => getDuttKandaSpanSha256s("uttara", 61, 62)).toThrow("Missing");
+    expect(() => getDuttKandaSpanSha256s("uttara", 84, 85)).toThrow("Missing");
   });
 });

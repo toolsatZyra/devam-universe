@@ -55,21 +55,21 @@ function validateSnapshot(snapshot) {
   if (snapshot.counters.arcs !== 7 || snapshot.counters.backboneTurns !== 49) {
     throw new Error("Unexpected Ramayana backbone shape");
   }
-  if (snapshot.counters.playableTurns !== 45
+  if (snapshot.counters.playableTurns !== 46
     || snapshot.counters.outlinedTurns !== 0
-    || snapshot.counters.orientationOnlyTurns !== 4) {
+    || snapshot.counters.orientationOnlyTurns !== 3) {
     throw new Error("Unexpected Ramayana playable-turn boundary");
   }
-  if (snapshot.counters.playableScenes !== 357
+  if (snapshot.counters.playableScenes !== 369
     || snapshot.counters.draftSceneOutlines !== 0
-    || snapshot.counters.bilingualBeats !== 1605) {
+    || snapshot.counters.bilingualBeats !== 1641) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
     ...snapshot.turns.map((turn) => turnSlug(turn.id)),
     ...snapshot.turns.flatMap((turn) => turn.scenes.map((scene) => sceneSlug(scene.id))),
   ];
-  if (new Set(momentSlugs).size !== 406) throw new Error("Narrative moment slugs must be unique");
+  if (new Set(momentSlugs).size !== 418) throw new Error("Narrative moment slugs must be unique");
   for (const turn of snapshot.turns) {
     const expectedReadiness = turn.coverage === "playable"
       ? "playable"
