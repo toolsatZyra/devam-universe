@@ -1,0 +1,124 @@
+{
+  "contract": "DEVAM_GANGULI_MAHABHARATA_SOURCE_QUALIFICATION_V1",
+  "qualification_id": "mahabharata-kisari-mohan-ganguli-project-gutenberg-source-qualification-v1",
+  "snapshot_date": "2026-08-12",
+  "action": "qualify_existing_source_references_without_copying_or_publishing_source_payloads",
+  "expression": {
+    "work_slug": "mahabharata",
+    "language_code": "en",
+    "script_code": "Latn",
+    "translator_credit": "Kisari Mohan Ganguli",
+    "provider": "Project Gutenberg",
+    "electronic_volume_count": 4,
+    "major_parva_count": 18,
+    "source_relative_section_count": 2107,
+    "harivamsha_included": false,
+    "identity_boundary": "One historical English prose translation as arranged in four Project Gutenberg electronic volumes covering Mahabharata books 1 through 18. Harivamsha is not included. This is not a critical edition, every recension, every translation, every regional retelling, or the complete Mahabharata tradition."
+  },
+  "source_objects": [
+    {
+      "volume": 1,
+      "ebook_id": 15474,
+      "provider_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 1",
+      "provider_book_boundary": "Books 1, 2 and 3",
+      "source_url": "https://www.gutenberg.org/ebooks/15474",
+      "source_path": "outputs/project-gutenberg-ganguli-mahabharata-acquisition-v0.1/tuples/TUPLE-049FEF5D026B621481967D55/carriers/pg15474/text/pg15474.txt",
+      "object_path": "objects/sha256/24/246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826",
+      "bytes": 3752901,
+      "sha256": "246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826",
+      "header_release_date": "2005-03-26",
+      "header_last_update": "2020-12-14"
+    },
+    {
+      "volume": 2,
+      "ebook_id": 15475,
+      "provider_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 2",
+      "provider_book_boundary": "Books 4, 5, 6 and 7",
+      "source_url": "https://www.gutenberg.org/ebooks/15475",
+      "source_path": "outputs/project-gutenberg-ganguli-mahabharata-acquisition-v0.1/tuples/TUPLE-049FEF5D026B621481967D55/carriers/pg15475/text/pg15475.txt",
+      "object_path": "objects/sha256/00/009689aec55696f0d40201138c867db4c306671e6a5ba0091d783f812f395b5b",
+      "bytes": 4023497,
+      "sha256": "009689aec55696f0d40201138c867db4c306671e6a5ba0091d783f812f395b5b",
+      "header_release_date": "2005-03-26",
+      "header_last_update": "2020-12-14"
+    },
+    {
+      "volume": 3,
+      "ebook_id": 15476,
+      "provider_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 3",
+      "provider_book_boundary": "Books 8, 9, 10, 11 and 12",
+      "source_url": "https://www.gutenberg.org/ebooks/15476",
+      "source_path": "outputs/project-gutenberg-ganguli-mahabharata-acquisition-v0.1/tuples/TUPLE-049FEF5D026B621481967D55/carriers/pg15476/text/pg15476.txt",
+      "object_path": "objects/sha256/2d/2d4d53b9c4892ebdc5a4bfa59458d0e0acf9742d3ce0f3b7b1b428ab838f402d",
+      "bytes": 4864546,
+      "sha256": "2d4d53b9c4892ebdc5a4bfa59458d0e0acf9742d3ce0f3b7b1b428ab838f402d",
+      "header_release_date": "2005-03-26",
+      "header_last_update": "2020-12-14"
+    },
+    {
+      "volume": 4,
+      "ebook_id": 15477,
+      "provider_title": "The Mahabharata of Krishna-Dwaipayana Vyasa, Volume 4",
+      "provider_book_boundary": "Books 13, 14, 15, 16, 17 and 18",
+      "source_url": "https://www.gutenberg.org/ebooks/15477",
+      "source_path": "outputs/project-gutenberg-ganguli-mahabharata-acquisition-v0.1/tuples/TUPLE-049FEF5D026B621481967D55/carriers/pg15477/text/pg15477.txt",
+      "object_path": "objects/sha256/60/60de2a2f82f22247fdb72096c7ebbb01b63ad42770506c10f6d7c7a82868e437",
+      "bytes": 2621948,
+      "sha256": "60de2a2f82f22247fdb72096c7ebbb01b63ad42770506c10f6d7c7a82868e437",
+      "header_release_date": "2005-03-26",
+      "header_last_update": "2020-12-14"
+    }
+  ],
+  "parva_profiles": [
+    {"parva_ordinal": 1, "parva_slug": "adi", "title": "Adi Parva", "volume": 1, "header_literal": "ADI PARVA", "header_occurrence": "last", "marker_style": "roman_section", "section_count": 236, "first_literal_number": 1, "last_literal_number": 236, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [{"source_ordinal": 177, "from": 177, "to": 176}], "terminal_literal": "END OF ADI PARVA"},
+    {"parva_ordinal": 2, "parva_slug": "sabha", "title": "Sabha Parva", "volume": 1, "header_literal": "SABHA PARVA", "header_occurrence": "first", "marker_style": "roman_section", "section_count": 79, "first_literal_number": 1, "last_literal_number": 80, "missing_literal_numbers": [67], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The End of Sabha Parva"},
+    {"parva_ordinal": 3, "parva_slug": "vana", "title": "Vana Parva", "volume": 1, "header_literal": "VANA PARVA", "header_occurrence": "first", "marker_style": "roman_section", "section_count": 313, "first_literal_number": 1, "last_literal_number": 313, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The End of Vana Parva"},
+    {"parva_ordinal": 4, "parva_slug": "virata", "title": "Virata Parva", "volume": 2, "header_literal": "VIRATA PARVA", "header_occurrence": "first", "marker_style": "roman_section", "section_count": 72, "first_literal_number": 1, "last_literal_number": 72, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Virata Parva"},
+    {"parva_ordinal": 5, "parva_slug": "udyoga", "title": "Udyoga Parva", "volume": 2, "header_literal": "UDYOGA PARVA", "header_occurrence": "last", "marker_style": "roman_section", "section_count": 199, "first_literal_number": 1, "last_literal_number": 199, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The End of Udyoga Parva"},
+    {"parva_ordinal": 6, "parva_slug": "bhishma", "title": "Bhishma Parva", "volume": 2, "header_literal": "BHISHMA PARVA", "header_occurrence": "last", "marker_style": "roman_section", "section_count": 124, "first_literal_number": 1, "last_literal_number": 124, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The End of Bhishma Parva"},
+    {"parva_ordinal": 7, "parva_slug": "drona", "title": "Drona Parva", "volume": 2, "header_literal": "DRONA PARVA", "header_occurrence": "first", "marker_style": "roman_section", "section_count": 200, "first_literal_number": 1, "last_literal_number": 203, "missing_literal_numbers": [54, 55, 189], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Drona Parva."},
+    {"parva_ordinal": 8, "parva_slug": "karna", "title": "Karna Parva", "volume": 3, "header_literal": "Karna-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 96, "first_literal_number": 1, "last_literal_number": 96, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Karna Parva."},
+    {"parva_ordinal": 9, "parva_slug": "shalya", "title": "Shalya Parva", "volume": 3, "header_literal": "Shalya-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 65, "first_literal_number": 1, "last_literal_number": 65, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The End of Shalya-parva."},
+    {"parva_ordinal": 10, "parva_slug": "sauptika", "title": "Sauptika Parva", "volume": 3, "header_literal": "Sauptika-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 18, "first_literal_number": 1, "last_literal_number": 18, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Sauptika-parva."},
+    {"parva_ordinal": 11, "parva_slug": "stri", "title": "Stri Parva", "volume": 3, "header_literal": "Stri-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 27, "first_literal_number": 1, "last_literal_number": 27, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Stri-parva."},
+    {"parva_ordinal": 12, "parva_slug": "santi", "title": "Santi Parva", "volume": 3, "header_literal": "SANTI PARVA", "header_occurrence": "last", "marker_style": "roman_section", "section_count": 362, "first_literal_number": 1, "last_literal_number": 365, "missing_literal_numbers": [34, 35, 364], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Santi Parva."},
+    {"parva_ordinal": 13, "parva_slug": "anusasana", "title": "Anusasana Parva", "volume": 4, "header_literal": "ANUSASANA PARVA", "header_occurrence": "last", "marker_style": "roman_section", "section_count": 168, "first_literal_number": 1, "last_literal_number": 168, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Anusasana Parva."},
+    {"parva_ordinal": 14, "parva_slug": "aswamedha", "title": "Aswamedha Parva", "volume": 4, "header_literal": "ASWAMEDHA PARVA", "header_occurrence": "last", "marker_style": "roman_section", "section_count": 92, "first_literal_number": 1, "last_literal_number": 92, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Aswamedha Parva"},
+    {"parva_ordinal": 15, "parva_slug": "asramavasika", "title": "Asramavasika Parva", "volume": 4, "header_literal": "ASRAMAVASIKA PARVA", "header_occurrence": "first", "marker_style": "roman_section", "section_count": 39, "first_literal_number": 1, "last_literal_number": 39, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Asramavasika Parvan."},
+    {"parva_ordinal": 16, "parva_slug": "mausala", "title": "Mausala Parva", "volume": 4, "header_literal": "Mausala-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 8, "first_literal_number": 1, "last_literal_number": 8, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Mausala-parva."},
+    {"parva_ordinal": 17, "parva_slug": "mahaprasthanika", "title": "Mahaprasthanika Parva", "volume": 4, "header_literal": "Mahaprasthanika-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 3, "first_literal_number": 1, "last_literal_number": 3, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The end of Mahaprasthanika-parva."},
+    {"parva_ordinal": 18, "parva_slug": "svargarohanika", "title": "Svargarohanika Parva", "volume": 4, "header_literal": "Svargarohanika-parva", "header_occurrence": "first", "marker_style": "decimal_line", "section_count": 6, "first_literal_number": 1, "last_literal_number": 6, "missing_literal_numbers": [], "duplicate_literal_numbers": [], "nonincreasing_transitions": [], "terminal_literal": "The End of the Svargarohanika-parva"}
+  ],
+  "rights_decision": {
+    "lane": "product_allowed_for_devam_synthesis_with_provider_framing_excluded",
+    "publication_state": "qualified_source_not_yet_projected",
+    "legal_characterization": "documented_india_and_united_states_product_determination_not_legal_advice",
+    "evidence": [
+      "Each current official Project Gutenberg record maps its electronic volume to books 1-18 and states Public domain in the USA.",
+      "The retained exact text headers identify the translator, ebook number, release date, update date, and Project Gutenberg license/trademark framing.",
+      "The translation was published in the nineteenth century; a secondary authority-linked biographical record dates Kisari Mohan Ganguli to 1848-1908.",
+      "India Copyright Act section 22 states a life-plus-60-years term for published literary works."
+    ],
+    "provider_boundary": "Do not publish Project Gutenberg header, footer, license, URL, or trademark framing as Devam story content. Preserve the provider only in internal provenance and deliberate source disclosure.",
+    "jurisdiction_boundary": "The documented determination covers the intended India product lane and the United States provider record. Recheck before materially different jurisdictions or redistribution models."
+  },
+  "completion_denials": {
+    "harivamsha_included": false,
+    "critical_edition_or_recension_identity_established": false,
+    "all_mahabharata_editions_translations_and_regional_retellings_complete": false,
+    "print_page_reconciliation_complete": false,
+    "literal_section_numbering_gap_free_or_corrected": false,
+    "hindi_expression_present": false,
+    "consumer_story_authored": false,
+    "hosted_database_projected": false,
+    "mvp_library_complete": false
+  },
+  "mutation_boundary": {
+    "copy_or_download_source_payload": false,
+    "modify_existing_source_bytes": false,
+    "publish_source_text": false,
+    "mutate_hosted_supabase": false,
+    "deploy_or_promote_vercel": false,
+    "silently_correct_source_labels": false
+  }
+}

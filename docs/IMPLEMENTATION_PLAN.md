@@ -81,8 +81,22 @@ closing doha, each with beta-reviewed normalized Devanagari text and simple
 Hindi and English meaning. Its deterministic reading doorway is integrated
 through the Living Atlas, Search and Sārthi, while persistent saved progress,
 the shared database projection, hosted application and independent cultural
-and linguistic review remain explicit gaps. Mahabharata and Panchatantra
-retain the gaps recorded in the consumer-content inventory.
+and linguistic review remain explicit gaps.
+
+The retained Ganguli Mahabharata source is now structurally qualified as one
+complete fixed English expression: four Project Gutenberg text objects,
+15,262,892 bytes, all 18 major parvas across books 1–18, and 2,107
+source-relative section units. Every source unit reconstructs by hash and byte
+span and losslessly covers its selected narrative-body interval; provider
+header, footer, licence and trademark framing remain outside the denominator.
+Literal electronic-text anomalies remain explicit, including a reordered Adi
+marker and gaps in Sabha, Drona and Santi. Harivamsha, Hindi, consumer story,
+characters, kingdoms, places, teachings, shared database projection and hosted
+application remain false. The fixed source-unit root is
+`e476857f386c8faf48be9463d0cba9523f68652bdb8e14fc6951727f04d1040c`.
+`MAHABHARATA_GANGULI_SOURCE_QUALIFICATION_2026-08-12.md` records the exact
+rights, structure, carrier and completion boundaries. Panchatantra retains the
+gap recorded in the consumer-content inventory.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
