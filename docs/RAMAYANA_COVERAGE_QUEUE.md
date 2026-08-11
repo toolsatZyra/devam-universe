@@ -441,6 +441,42 @@ unproofread. No page text was corrected or promoted by this classification.
 - remaining text-correction pages: 345; and
 - prepared product passage count remains 813.
 
+#### Q1 dual-witness screen (2026-08-12)
+
+Every one of the 345 unproofread text-bearing pages was compared with the
+edition-matched IA coordinate OCR after both witnesses were reduced to their
+Devanagari character streams. The 813 proofread/validated pages supplied the
+control distribution. At the control's fifth-percentile similarity and length
+thresholds, 340 q1 pages fall inside the descriptive envelope and five fall
+outside it: 381, 415, 847, 994, and 1024.
+
+This is a correction screen, not a promotion gate. Visual adjudication of the
+five outliers found OCR truncation, dense/noisy print, and visible q1
+transcription defects. Samples inside the envelope also retain consumer-facing
+errors. Therefore all 345 pages remain held: witness agreement does not prove
+exactness and unverified text is not used as translation input. IIT Kanpur's
+complete Devanagari reader is catalogued as a rights-unresolved correction lead;
+Sanskrit Documents' seven-kanda electronic collection is catalogued but not
+acquired because its stated reuse terms restrict reposting and commercial use.
+
+A bounded local trial then tested PaddleOCR 3.7.0's dedicated Devanagari
+PP-OCRv5 mobile recognizer on fixed difficult page 381. PaddlePaddle 3.0.0 and
+3.3.1, first with the default v6 detector and then the matching v5 mobile
+detector, both failed in the Windows oneDNN execution path before emitting any
+recognized text. The candidate is therefore rejected for scale on this
+workstation. No generated OCR or model payload is retained in the repository or
+source vault, and this negative result does not change the 345-page hold.
+
+- dual-witness report SHA-256
+  `9fea0c9d47b8ff33b3b45dd7416856a1784a69ba8defa4a64e4f15a909ff27bd`;
+- profiler SHA-256
+  `dfb1fc87c428df7b3c2181f5be43359f257496d871bd24ed747d212a416af652`;
+- focused test SHA-256
+  `cf7b2598825a636109e8334bbf98a6696787f9c983b27cf4420afc1973e4ff1d`;
+- 340 in-envelope / 5 manually adjudicated outliers / 0 promoted; and
+- 11/11 screen checks pass, with no source, database, or external-service
+  mutation.
+
 #### Hosted product application
 
 The 21 bounded, idempotent SQL batches were applied to the isolated

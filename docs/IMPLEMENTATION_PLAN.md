@@ -54,6 +54,15 @@ Ramcharitmanas now compiles all 813 proofread or validated pages of its
 provider-layout projections; 345 unproofread text-bearing pages remain held, while
 all 14 q0 coordinates are verified structural blank scan pages rather than
 missing story text.
+All 345 q1 pages have also been dual-witness screened against edition-matched IA
+OCR. Although 340 fall inside the accepted-page control envelope, visible
+transcription defects prevent bulk promotion; all 345 remain correction or
+source-addressed consumer-synthesis inputs, not verified translation input.
+A bounded PaddleOCR Devanagari trial on a fixed difficult page failed in the
+Windows oneDNN detector runtime before emitting text under both the default v6
+and matching v5 mobile detectors. It is not approved for scale; no model or OCR
+payload enters the repository or source vault, and consumer synthesis remains
+source-addressed rather than dependent on unverified machine transcription.
 Hanuman Chalisa now has one fixed, attributed CC BY-SA 4.0 carrier and a
 complete 43-unit consumer sequence: two opening dohas, forty chaupais and one
 closing doha, each with beta-reviewed normalized Devanagari text and simple
