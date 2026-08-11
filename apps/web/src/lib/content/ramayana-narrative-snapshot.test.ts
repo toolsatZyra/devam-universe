@@ -61,12 +61,17 @@ describe("Ramayana consumer narrative snapshot", () => {
 
   it("retains complete bilingual narrative copy and visual staging inputs", () => {
     for (const turn of snapshot.turns.filter((candidate) => candidate.coverage === "playable")) {
+      expect(turn.characters.length).toBeGreaterThanOrEqual(1);
+      expect(turn.places.length).toBeGreaterThanOrEqual(1);
+      expect(turn.threads.length).toBeGreaterThanOrEqual(1);
       for (const scene of turn.scenes) {
         expect(scene.title.en.length).toBeGreaterThan(4);
         expect(scene.title.hi.length).toBeGreaterThan(4);
         expect(scene.narrative.en.length).toBeGreaterThan(250);
         expect(scene.narrative.hi.length).toBeGreaterThan(200);
         expect(scene.nodeIds.length).toBeGreaterThanOrEqual(4);
+        expect(scene.characters.length).toBeGreaterThanOrEqual(2);
+        expect(scene.places.length).toBeGreaterThanOrEqual(1);
         expect(scene.beats.length).toBeGreaterThanOrEqual(3);
         for (const beat of scene.beats) {
           expect(beat.narration.en.length).toBeGreaterThan(80);

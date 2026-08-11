@@ -49,6 +49,11 @@ choice, renunciation and death; the succession of Kusha, Lava and the brothers'
 sons; the differentiated futures of Hanuman, Vibhishana and the old alliance;
 Ayodhya's departure; the Sarayu crossing; and civic renewal after the
 devotional epilogue across Uttara 111–123. No turn remains orientation-only.
+The shared Ramayana projection now retains at least one narrative place for all
+402 scenes and compiles 401 story-order, 94 character-path, 50 place-echo and
+22 parallel-thread links. Its public RPC returns reversible story connections,
+characters, places and threads while continuing to omit source apparatus. This
+projection remains prepared locally and has not been applied to hosted Supabase.
 Ramcharitmanas now compiles all 813 proofread or validated pages of its
 1,172-page fixed expression after exact-revision recovery of 11 malformed
 provider-layout projections; 345 unproofread text-bearing pages remain held, while

@@ -66,6 +66,8 @@ import { RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES } from "../../data/ramayana-mithi
 import { RAMAYANA_SITA_BOW_PLAYABLE_SCENES } from "../../data/ramayana-sita-bow-playable";
 import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana-weddings-challenge-playable";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
+import { buildPlayableStoryDistrictIndex } from "../domain/playable-story-district";
+import { buildStoryNarrativeMap } from "../domain/story-narrative-map";
 import type { StoryBeat, StoryCompassTurn, StoryMoment } from "../domain/story-world";
 import type { ExperienceCitation } from "../domain/experience";
 
@@ -103,6 +105,9 @@ export type RamayanaNarrativeTurnSnapshot = {
   title: { en: string; hi: string };
   synopsis: { en: string; hi: string };
   sourceRange: StoryCompassTurn["sourceRange"];
+  characters: string[];
+  places: string[];
+  threads: string[];
   coverage: "orientation" | "outlined" | "playable";
   scenes: RamayanaNarrativeSceneSnapshot[];
 };
@@ -175,6 +180,19 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
 
   const stopById = new Map(journey.stops.map((stop) => [stop.id, stop]));
   const scenesByTurnId = new Map<string, RamayanaNarrativeSceneSnapshot[]>();
+  const narrativeMap = buildStoryNarrativeMap(pack.compass);
+  const mapPlaceById = new Map(narrativeMap.places.map((place) => [place.id, place]));
+  const playableDistrict = buildPlayableStoryDistrictIndex(pack, journey.stops, narrativeMap);
+  const districtPlacesBySceneId = new Map<string, string[]>();
+  for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
+    const place = mapPlaceById.get(placeId);
+    if (!place) throw new Error(`Ramayana playable district references an unknown map place: ${placeId}`);
+    for (const link of links) {
+      const labels = districtPlacesBySceneId.get(link.id) ?? [];
+      if (!labels.includes(place.label)) labels.push(place.label);
+      districtPlacesBySceneId.set(link.id, labels);
+    }
+  }
 
   for (const district of pack.districts) {
     const districtMoments = getRamayanaDistrictMoments(district.id);
@@ -220,7 +238,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
         },
         nodeIds: [...pack.sceneNodeIds[sceneId]],
         characters: [...new Set(moment.beats.flatMap((beat) => beat.characterIds))],
-        places: [],
+        places: [...(districtPlacesBySceneId.get(sceneId) ?? [])],
         beats: moment.beats.map((beat, index) => ({ ...beat, ordinal: index + 1 })),
       });
       scenesByTurnId.set(turnId, siblings);
@@ -373,6 +391,9 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       title: turn.title,
       synopsis: turn.hook,
       sourceRange: turn.sourceRange,
+      characters: [...turn.characters],
+      places: [...turn.places],
+      threads: [...turn.threads],
       coverage: scenes.some((scene) => scene.readiness === "playable")
         ? "playable" as const
         : scenes.length > 0

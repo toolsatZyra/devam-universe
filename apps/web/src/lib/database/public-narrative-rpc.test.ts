@@ -18,6 +18,11 @@ describe("public narrative read RPC", () => {
   it("returns consumer narrative without evidence apparatus", () => {
     expect(sql).toContain("'narrative', moment_copy.narrative");
     expect(sql).toContain("'visualDirection', beat.visual_direction");
+    expect(sql).toContain("'characters', coalesce(moment.visual_direction->'characters'");
+    expect(sql).toContain("'places', coalesce(moment.visual_direction->'places'");
+    expect(sql).toContain("'threads', coalesce(moment.visual_direction->'threads'");
+    expect(sql).toContain("'connections', coalesce");
+    expect(sql).toContain("link.link_kind in ('precedes', 'character_path', 'place_echo', 'parallel_thread')");
     expect(sql).not.toMatch(/'sourceRange'|'spanSha256'|'passageId'/);
   });
 

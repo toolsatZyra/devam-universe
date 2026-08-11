@@ -66,6 +66,12 @@ describe("consumer-content MVP inventory", () => {
       playable_scenes: 402,
       draft_scene_outlines: 0,
       bilingual_beats: 1746,
+      scenes_with_place_paths: 402,
+      story_order_links: 401,
+      character_path_links: 94,
+      place_echo_links: 50,
+      parallel_thread_links: 22,
+      public_rpc_returns_multidimensional_connections: true,
       database_projection_migration_prepared: true,
       hosted_database_projection_applied: false,
     });

@@ -50,6 +50,33 @@ function sceneSlug(id) {
   return `scene-${id}`;
 }
 
+function facetPathLinks(turns, field, kind) {
+  const turnsByFacet = new Map();
+  for (const turn of turns) {
+    for (const facet of new Set(turn[field])) {
+      const path = turnsByFacet.get(facet) ?? [];
+      path.push(turnSlug(turn.id));
+      turnsByFacet.set(facet, path);
+    }
+  }
+  const grouped = new Map();
+  for (const [facet, path] of [...turnsByFacet].sort(([left], [right]) => left.localeCompare(right))) {
+    for (let index = 0; index < path.length - 1; index += 1) {
+      const source = path[index];
+      const target = path[index + 1];
+      if (source === target) continue;
+      const key = `${source}\u0000${target}\u0000${kind}`;
+      const row = grouped.get(key) ?? { source, target, kind, labels: [] };
+      row.labels.push(facet);
+      grouped.set(key, row);
+    }
+  }
+  return [...grouped.values()].map((row) => ({
+    ...row,
+    label: `generated:${[...new Set(row.labels)].sort().join(" | ")}`,
+  }));
+}
+
 function validateSnapshot(snapshot) {
   if (snapshot.contract !== CONTRACT) throw new Error("Unexpected Ramayana snapshot contract");
   if (snapshot.counters.arcs !== 7 || snapshot.counters.backboneTurns !== 49) {
@@ -123,7 +150,13 @@ function buildMigration() {
     turn.backboneOrdinal,
     turn.turnOrdinalInArc,
     sqlJson({ snapshotContract: CONTRACT, ...turn.sourceRange }),
-    sqlJson({ coverage: turn.coverage, sceneCount: turn.scenes.length }),
+    sqlJson({
+      coverage: turn.coverage,
+      sceneCount: turn.scenes.length,
+      characters: turn.characters,
+      places: turn.places,
+      threads: turn.threads,
+    }),
     sqlText(turn.coverage === "playable" ? "published" : "draft"),
   ].join(", ")})`).join(",\n  ");
 
@@ -188,14 +221,35 @@ function buildMigration() {
 
   const orderLinks = [];
   for (let index = 0; index < snapshot.turns.length - 1; index += 1) {
-    orderLinks.push([turnSlug(snapshot.turns[index].id), turnSlug(snapshot.turns[index + 1].id)]);
+    orderLinks.push({
+      source: turnSlug(snapshot.turns[index].id),
+      target: turnSlug(snapshot.turns[index + 1].id),
+      kind: "precedes",
+      label: "generated:story-order",
+    });
   }
   for (const turn of snapshot.turns) {
     for (let index = 0; index < turn.scenes.length - 1; index += 1) {
-      orderLinks.push([sceneSlug(turn.scenes[index].id), sceneSlug(turn.scenes[index + 1].id)]);
+      orderLinks.push({
+        source: sceneSlug(turn.scenes[index].id),
+        target: sceneSlug(turn.scenes[index + 1].id),
+        kind: "precedes",
+        label: "generated:story-order",
+      });
     }
   }
-  const linkRows = orderLinks.map(([source, target]) => `(${sqlText(source)}, ${sqlText(target)})`).join(",\n  ");
+  const multidimensionalLinks = [
+    ...facetPathLinks(snapshot.turns, "characters", "character_path"),
+    ...facetPathLinks(snapshot.turns, "places", "place_echo"),
+    ...facetPathLinks(snapshot.turns, "threads", "parallel_thread"),
+  ];
+  const generatedLinks = [...orderLinks, ...multidimensionalLinks];
+  const linkRows = generatedLinks.map((row) => `(${[
+    sqlText(row.source),
+    sqlText(row.target),
+    sqlText(row.kind),
+    sqlText(row.label),
+  ].join(", ")})`).join(",\n  ");
   const momentSlugArray = snapshot.turns.flatMap((turn) => [
     turnSlug(turn.id),
     ...turn.scenes.map((scene) => sceneSlug(scene.id)),
@@ -410,15 +464,15 @@ using public.narrative_moments source, public.narrative_series series
 where link.source_moment_id = source.id
   and source.series_id = series.id
   and series.slug = ${sqlText(snapshot.series.id)}
-  and link.label = 'generated narrative order';
+  and (link.label = 'generated narrative order' or link.label like 'generated:%');
 
 insert into public.narrative_moment_links (
   source_moment_id, target_moment_id, link_kind, label
 )
-select source.id, target.id, 'precedes', 'generated narrative order'
+select source.id, target.id, link.link_kind, link.label
 from (values
   ${linkRows}
-) as link(source_slug, target_slug)
+) as link(source_slug, target_slug, link_kind, label)
 join public.narrative_series series on series.slug = ${sqlText(snapshot.series.id)}
 join public.narrative_moments source on source.series_id = series.id and source.slug = link.source_slug
 join public.narrative_moments target on target.series_id = series.id and target.slug = link.target_slug
@@ -467,6 +521,9 @@ begin
   if (select count(*) from public.narrative_beat_texts copy join public.narrative_beats beat on beat.id = copy.beat_id join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> ${snapshot.counters.bilingualBeats * 2} then
     raise exception 'Expected ${snapshot.counters.bilingualBeats * 2} bilingual Ramayana beat texts';
   end if;
+  if (select count(*) from public.narrative_moment_links link join public.narrative_moments source on source.id = link.source_moment_id where source.series_id = series_uuid and link.label like 'generated:%') <> ${generatedLinks.length} then
+    raise exception 'Expected ${generatedLinks.length} Ramayana narrative traversal links';
+  end if;
   if exists (
     select 1 from public.narrative_moments
     where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'published'
@@ -494,13 +551,31 @@ commit;
 `;
 }
 
-const generated = buildMigration();
-if (process.argv.includes("--check")) {
+if (process.argv.includes("--stats")) {
+  const { buildRamayanaNarrativeSnapshot } = loadTypescriptModule(SNAPSHOT_SOURCE);
+  const snapshot = buildRamayanaNarrativeSnapshot();
+  const scenes = snapshot.turns.flatMap((turn) => turn.scenes);
+  console.log(JSON.stringify({
+    counters: snapshot.counters,
+    traversalLinks: {
+      storyOrder: snapshot.turns.length - 1
+        + snapshot.turns.reduce((count, turn) => count + Math.max(0, turn.scenes.length - 1), 0),
+      characterPaths: facetPathLinks(snapshot.turns, "characters", "character_path").length,
+      placePaths: facetPathLinks(snapshot.turns, "places", "place_echo").length,
+      parallelThreads: facetPathLinks(snapshot.turns, "threads", "parallel_thread").length,
+    },
+    scenesWithoutPlaces: scenes.filter((scene) => scene.places.length === 0).map((scene) => scene.id),
+    places: [...new Set(scenes.flatMap((scene) => scene.places))].sort(),
+    characters: [...new Set(scenes.flatMap((scene) => scene.characters))].sort(),
+  }, null, 2));
+} else if (process.argv.includes("--check")) {
+  const generated = buildMigration();
   if (!fs.existsSync(OUTPUT) || fs.readFileSync(OUTPUT, "utf8") !== generated) {
     throw new Error("Ramayana consumer narrative seed migration is stale or missing");
   }
   console.log("PASS: Ramayana consumer narrative seed migration is current");
 } else {
+  const generated = buildMigration();
   fs.writeFileSync(OUTPUT, generated, { encoding: "utf8", flag: "w" });
   console.log(path.relative(ROOT, OUTPUT).replaceAll("\\", "/"));
 }

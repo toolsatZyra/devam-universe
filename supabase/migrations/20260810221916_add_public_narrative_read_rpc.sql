@@ -41,6 +41,38 @@ as $$
                 'synopsis', moment_copy.synopsis,
                 'narrative', moment_copy.narrative,
                 'visualDirection', moment.visual_direction,
+                'characters', coalesce(moment.visual_direction->'characters', '[]'::jsonb),
+                'places', coalesce(moment.visual_direction->'places', '[]'::jsonb),
+                'threads', coalesce(moment.visual_direction->'threads', '[]'::jsonb),
+                'connections', coalesce((
+                  select jsonb_agg(
+                    jsonb_build_object(
+                      'kind', link.link_kind,
+                      'labels', to_jsonb(string_to_array(regexp_replace(link.label, '^generated:', ''), ' | ')),
+                      'direction', case when link.source_moment_id = moment.id then 'forward' else 'backward' end,
+                      'momentSlug', destination.slug,
+                      'momentKind', destination.moment_kind,
+                      'backboneOrdinal', destination.backbone_ordinal,
+                      'detailOrdinal', destination.detail_ordinal,
+                      'title', destination_copy.title
+                    ) order by destination.backbone_ordinal, destination.detail_ordinal, link.link_kind
+                  )
+                  from public.narrative_moment_links link
+                  join public.narrative_moments destination
+                    on destination.id = case
+                      when link.source_moment_id = moment.id then link.target_moment_id
+                      else link.source_moment_id
+                    end
+                  join public.narrative_moment_texts destination_copy
+                    on destination_copy.moment_id = destination.id
+                   and destination_copy.language_code = language_filter
+                   and destination_copy.publication_state = 'published'
+                   and destination_copy.rights_lane in ('product_allowed', 'derivative_allowed')
+                  where (link.source_moment_id = moment.id or link.target_moment_id = moment.id)
+                    and link.link_kind in ('precedes', 'character_path', 'place_echo', 'parallel_thread')
+                    and destination.publication_state = 'published'
+                    and destination.rights_lane in ('product_allowed', 'derivative_allowed')
+                ), '[]'::jsonb),
                 'beats', coalesce((
                   select jsonb_agg(
                     jsonb_build_object(
