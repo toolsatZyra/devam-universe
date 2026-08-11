@@ -22,10 +22,12 @@ PROJECTION_CONTRACT = "DEVAM_CONSERVATIVE_WIKITEXT_PLAINTEXT_PROJECTION_V1"
 ACQUISITION_PLAN = ROOT / "ingestion/plans/ramcharitmanas-wikisource-belvedere-pages-v1.json"
 ACQUISITION_REPORT = ROOT / "ingestion/reports/ramcharitmanas-wikisource-belvedere-pages-v1.json"
 STRUCTURE_PROFILE = ROOT / "ingestion/profiles/ramcharitmanas-belvedere-1925-fixed-carrier-profile-v1.json"
+HELD_PAGE_RECOVERY_REPORT = ROOT / "ingestion/reports/ramcharitmanas-held-page-recovery-v1.json"
 INGESTION_REPORT = ROOT / "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json"
 ACQUISITION_PLAN_SHA256 = "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab"
 ACQUISITION_REPORT_SHA256 = "8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c"
 STRUCTURE_PROFILE_SHA256 = "b8c3cb71887a80603455a9432ebd26f5ad62635e6bfc64f6fccace0efb6278f9"
+HELD_PAGE_RECOVERY_REPORT_SHA256 = "e044460d5c172bc130afdf3a594f9d751a833e49ad737b4fcb7013f24eb8d5b9"
 PROFILE_ID = "RAMCHARITMANAS-WIKISOURCE-PAGES-0F02AEF6AB74619FED5E31B0"
 SITE_RIGHTS_SHA256 = "dcc8fe7d780f59d948ac1a00a45d7db912bcaef25d07208c2dd1b9471d3b464c"
 LICENSE_LITERAL = "Creative Commons Attribution-Share Alike 4.0"
@@ -35,6 +37,8 @@ SCAN_SHA256 = "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2"
 EXPECTED_QUALIFIED_PAGES = 813
 EXPECTED_PRODUCT_PAGES = 813
 EXPECTED_CORRECTION_PAGES = 359
+EXPECTED_TEXT_CORRECTION_PAGES = 345
+EXPECTED_STRUCTURAL_BLANK_PAGES = 14
 EXPECTED_PROJECTION_ANOMALIES = 0
 
 # These fixed, source-addressed revisions contain malformed provider layout
@@ -237,6 +241,24 @@ def load_inputs() -> tuple[dict[str, Any], dict[str, Any], dict[str, Any]]:
     return plan, report, structure
 
 
+def load_held_page_recovery() -> dict[str, Any]:
+    if sha256_path(HELD_PAGE_RECOVERY_REPORT) != HELD_PAGE_RECOVERY_REPORT_SHA256:
+        raise ValueError("Ramcharitmanas held-page recovery report drift")
+    recovery = json.loads(HELD_PAGE_RECOVERY_REPORT.read_text(encoding="utf-8", errors="strict"))
+    denominator = recovery.get("reconciled_denominator", {})
+    if recovery.get("result") != "PASS" or not all(recovery.get("checks", {}).values()):
+        raise ValueError("Ramcharitmanas held-page recovery report is not passing")
+    if denominator.get("remaining_text_correction_page_count") != EXPECTED_TEXT_CORRECTION_PAGES:
+        raise ValueError("Ramcharitmanas text-correction denominator drift")
+    if denominator.get("structural_blank_page_count") != EXPECTED_STRUCTURAL_BLANK_PAGES:
+        raise ValueError("Ramcharitmanas structural-blank denominator drift")
+    if denominator.get("missing_transcription_text_bearing_page_count") != 0:
+        raise ValueError("Ramcharitmanas q0 missing-transcription boundary drift")
+    if denominator.get("text_bearing_page_denominator") != 1158:
+        raise ValueError("Ramcharitmanas text-bearing page denominator drift")
+    return recovery
+
+
 def sopana_for_page(structure: dict[str, Any], scan_page: int) -> dict[str, Any]:
     matches = [
         row
@@ -401,11 +423,12 @@ def build_passages(
 
 def compile_packet() -> dict[str, Any]:
     plan, report, structure = load_inputs()
+    recovery = load_held_page_recovery()
     pages, sources = load_revisions(plan, report)
     passages, projection_anomalies = build_passages(plan, structure, pages)
     completion_denials = {
         "all_narrative_pages_product_searchable": False,
-        "remaining_359_pages_corrected": False,
+        "remaining_345_text_pages_corrected": False,
         "complete_product_searchable_ramcharitmanas_text": False,
         "all_ramcharitmanas_editions_recensions_commentaries_translations_and_traditions": False,
         "complete_ramayana_universe": False,
@@ -422,7 +445,7 @@ def compile_packet() -> dict[str, Any]:
             "canonical_title": "रामचरितमानस (Ramcharitmanas)",
             "work_kind": "devotional_epic",
             "tradition_scope": ["Ramayana", "Vaishnava", "Rama-bhakti"],
-            "summary": "Tulsidas's Awadhi devotional retelling of the Rama narrative. This beta product lane covers all 813 proofread or validated pages of one fixed Belvedere Press edition; 359 unproofread or empty pages remain outside the product index pending correction.",
+            "summary": "Tulsidas's Awadhi devotional retelling of the Rama narrative. This beta product lane covers all 813 proofread or validated pages of one fixed Belvedere Press edition; 345 unproofread text-bearing pages remain outside the product index, while 14 held q0 coordinates are verified structural blanks rather than missing story text.",
         },
         "expression": {
             "language_code": "awa",
@@ -435,7 +458,7 @@ def compile_packet() -> dict[str, Any]:
             "publisher": "Belvedere Press",
             "publication_place": "Prayag",
             "publication_year": 1925,
-            "edition_statement": "Second-edition scan with printed Vikram Samvat 1982; provider year discrepancy 1925/1926 retained. Product text currently includes all 813 proofread or validated seven-sopana narrative-page projections after excluding 359 unproofread or empty pages.",
+            "edition_statement": "Second-edition scan with printed Vikram Samvat 1982; provider year discrepancy 1925/1926 retained. Product text currently includes all 813 proofread or validated seven-sopana narrative-page projections; 345 unproofread text-bearing pages remain held, and 14 q0 coordinates are fixed-scan structural blanks.",
             "identifiers": {
                 "profile_id": PROFILE_ID,
                 "scan_sha256": SCAN_SHA256,
@@ -450,7 +473,8 @@ def compile_packet() -> dict[str, Any]:
             "attribution_required": True,
             "share_alike_required": True,
             "underlying_scan_public_domain": True,
-            "unproofread_or_empty_pages_product_served": False,
+            "unproofread_pages_product_served": False,
+            "structural_blank_pages_served_as_text": False,
         },
         "source_objects": sources,
         "passages": passages,
@@ -458,6 +482,15 @@ def compile_packet() -> dict[str, Any]:
             "positive": "813 source-addressed proofread or validated narrative-page plaintext projections for one structurally complete fixed Belvedere Press Ramcharitmanas edition.",
             "correction_required_pages": plan["wikisource"]["correction_required_scan_pages"],
             "correction_required_page_count": EXPECTED_CORRECTION_PAGES,
+            "held_page_recovery_report_sha256": HELD_PAGE_RECOVERY_REPORT_SHA256,
+            "structural_blank_pages": recovery["reconciled_denominator"]["structural_blank_pages"],
+            "structural_blank_page_count": EXPECTED_STRUCTURAL_BLANK_PAGES,
+            "remaining_text_correction_pages": sorted(
+                set(plan["wikisource"]["correction_required_scan_pages"])
+                - set(recovery["reconciled_denominator"]["structural_blank_pages"])
+            ),
+            "remaining_text_correction_page_count": EXPECTED_TEXT_CORRECTION_PAGES,
+            "text_bearing_page_denominator": 1158,
             "projection_anomalies": projection_anomalies,
             "projection_anomaly_count": EXPECTED_PROJECTION_ANOMALIES,
             "total_narrative_pages_not_product_indexed": EXPECTED_CORRECTION_PAGES + EXPECTED_PROJECTION_ANOMALIES,
@@ -537,6 +570,9 @@ def build_report(packet: dict[str, Any], batches: list[str]) -> dict[str, Any]:
         "positive_boundary": packet["scope"]["positive"],
         "projection_boundary": packet["scope"]["projection_boundary"],
         "correction_required_page_count": packet["scope"]["correction_required_page_count"],
+        "structural_blank_page_count": packet["scope"]["structural_blank_page_count"],
+        "remaining_text_correction_page_count": packet["scope"]["remaining_text_correction_page_count"],
+        "text_bearing_page_denominator": packet["scope"]["text_bearing_page_denominator"],
         "projection_anomaly_count": packet["scope"]["projection_anomaly_count"],
         "projection_anomalies": packet["scope"]["projection_anomalies"],
         "total_narrative_pages_not_product_indexed": packet["scope"]["total_narrative_pages_not_product_indexed"],

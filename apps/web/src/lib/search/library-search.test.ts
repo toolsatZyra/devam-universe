@@ -183,7 +183,7 @@ describe("library search orchestration", () => {
       statement: expect.stringContaining("all 813 proofread or validated beta pages"),
     });
     expect(result.results[0].citations).toHaveLength(7);
-    expect(result.results[0].sourceBoundary).toContain("359 unproofread or empty pages");
+    expect(result.results[0].sourceBoundary).toContain("345 unproofread text-bearing pages");
     expect(result.results[0].sourceBoundary).toContain("not applied to the hosted database");
   });
 

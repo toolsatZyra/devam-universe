@@ -6,7 +6,8 @@ describe("Ramcharitmanas source-bounded preview", () => {
     const [result] = searchRamcharitmanasPreview("Ramcharitmanas seven sopanas Belvedere Press", "en");
     expect(result.citations).toHaveLength(7);
     expect(result.statement).toContain("813");
-    expect(result.sourceBoundary).toContain("359 unproofread or empty pages");
+    expect(result.sourceBoundary).toContain("345 unproofread text-bearing pages");
+    expect(result.sourceBoundary).toContain("14 q0 scan coordinates are verified structural blanks");
     expect(result.sourceBoundary).toContain("not applied to the hosted database");
     expect(new Set(result.citations.map((citation) => citation.locator.sopana_ordinal))).toEqual(new Set([1, 2, 3, 4, 5, 6, 7]));
     expect(RAMCHARITMANAS_PREVIEW_FIXITY.completeRamcharitmanasTradition).toBe(false);

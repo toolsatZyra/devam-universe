@@ -7,6 +7,8 @@ from tools.compile_ramcharitmanas_wikisource_product import (
     EXPECTED_CORRECTION_PAGES,
     EXPECTED_PRODUCT_PAGES,
     EXPECTED_PROJECTION_ANOMALIES,
+    EXPECTED_STRUCTURAL_BLANK_PAGES,
+    EXPECTED_TEXT_CORRECTION_PAGES,
     INGESTION_REPORT,
     KNOWN_MALFORMED_LAYOUT_SHA256S,
     PROJECTION_CONTRACT,
@@ -66,7 +68,8 @@ class RamcharitmanasWikisourceProductTests(unittest.TestCase):
         self.assertTrue(all(value is False for value in self.packet["completion_denials"].values()))
         self.assertFalse(self.packet["source_payloads_copied_into_app"])
         self.assertIn("813", self.packet["work"]["summary"])
-        self.assertIn("359", self.packet["work"]["summary"])
+        self.assertIn("345", self.packet["work"]["summary"])
+        self.assertIn("14", self.packet["work"]["summary"])
 
     def test_sql_is_bounded_and_does_not_claim_database_application(self) -> None:
         self.assertGreater(len(self.batches), 1)
@@ -78,6 +81,9 @@ class RamcharitmanasWikisourceProductTests(unittest.TestCase):
         self.assertEqual(report["published_passage_count"], EXPECTED_PRODUCT_PAGES)
         self.assertEqual(report["quality_counts"], {"3": 808, "4": 5})
         self.assertEqual(report["total_narrative_pages_not_product_indexed"], 359)
+        self.assertEqual(report["structural_blank_page_count"], EXPECTED_STRUCTURAL_BLANK_PAGES)
+        self.assertEqual(report["remaining_text_correction_page_count"], EXPECTED_TEXT_CORRECTION_PAGES)
+        self.assertEqual(report["text_bearing_page_denominator"], 1158)
 
     def test_frozen_report_matches_recompiled_report(self) -> None:
         frozen = json.loads(INGESTION_REPORT.read_text(encoding="utf-8"))

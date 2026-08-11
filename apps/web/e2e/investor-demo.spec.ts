@@ -878,7 +878,7 @@ test("Sarthi answers from the bounded Ramcharitmanas edition and enforces the gu
   const sources = page.getByText("Open 7 sources", { exact: true });
   await expect(sources).toBeVisible();
   await sources.click();
-  await expect(page.getByText(/Another 359 unproofread or empty pages remain outside retrieval/).last()).toBeVisible();
+  await expect(page.getByText(/Another 345 unproofread text-bearing pages remain outside retrieval/).last()).toBeVisible();
 
   await page.getByLabel("Message Sarthi").fill("What else should I explore?");
   await page.getByRole("button", { name: "Send" }).click();

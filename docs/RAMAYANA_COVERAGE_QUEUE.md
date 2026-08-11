@@ -389,11 +389,12 @@ templates remain rejected, and no source spelling, OCR, wording, or numbering
 is corrected.
 
 The prepared packet therefore contains all 813 proofread or validated pages:
-808 at quality level 3 and 5 at level 4. The remaining exclusion is exactly
-359 pages: 345 substantial but unproofread Wikisource transcriptions and 14
-empty placeholders. A live read-only Wikisource API check on 2026-08-12 found
-no revision or quality-state changes across those 359 pages. They remain
-correction inputs, not consumer publication truth.
+808 at quality level 3 and 5 at level 4. A subsequent fixed-scan reconciliation
+showed that the remaining 359 held coordinates consist of 345 substantial but
+unproofread Wikisource transcriptions and 14 structural blank scan pages, not
+14 missing story-text pages. A live read-only Wikisource API check on
+2026-08-12 found no revision or quality-state changes across those coordinates.
+Only the 345 text-bearing pages remain correction inputs.
 
 - prepared packet SHA-256
   `8414805e9b8bab77f63ecc83539601cd3505d03569af1a94a6d128ba3ff78e53`;
@@ -410,6 +411,35 @@ correction inputs, not consumer publication truth.
 - `database_applied_by_this_compiler=false`; and
 - the older 802-passage hosted application below remains historical evidence,
   not evidence that the expanded 813-passage projection is hosted.
+
+#### Held-page denominator reconciliation (2026-08-12)
+
+The 14 q0 coordinates were rendered directly from the fixed 1,240-page scan at
+a pinned scale and grayscale threshold, cross-checked against the empty
+edition-matched IA coordinate OCR, and sampled visually. All 14 are structural
+blank pages. None contains missing printed story text. This closes the selected
+edition's text-bearing denominator at 1,158 pages: 813 prepared and 345 still
+unproofread. No page text was corrected or promoted by this classification.
+
+- held-page recovery report SHA-256
+  `e044460d5c172bc130afdf3a594f9d751a833e49ad737b4fcb7013f24eb8d5b9`;
+- reconciled prepared packet SHA-256
+  `939c0fdef4274fe047dfc2c0535c5ebdc47e0c0086df6f62a9e74926c9000ddf`;
+- unchanged prepared passage root SHA-256
+  `7f65790c6a6b2a0ff52c63d9664ab0ae4aa6e94a1c476c10ee297acf33787f93`;
+- reconciled product report SHA-256
+  `992fb1bda6aedd3888a1ceda0ec6435d302cc1501ecbce9bfa2a2cbd711a41be`;
+- held-page profiler/test SHA-256
+  `2faa7ecb72b4c06a4b10bb626f066a14495ea682fa95648b6e184c0174a9ebcc` /
+  `fc93ce60e6ee2c8eb666f767101081e8d59b3b431ddd77550df18d46ff14c43a`;
+- product compiler/test SHA-256
+  `31b0ed19b2e42d791c7219b576ce262825eca399f389f94104fc1b5706a0b7ec` /
+  `ad403caece6e31c3d18722fad30d55f7f85eb44eb52f6819968193a40ca6d446`;
+- exact structural blank pages: 150, 185, 266, 330, 529, 792, 820, 829, 840,
+  853, 866, 941, 1075, and 1088;
+- missing q0 transcription pages: 0;
+- remaining text-correction pages: 345; and
+- prepared product passage count remains 813.
 
 #### Hosted product application
 

@@ -1,0 +1,256 @@
+{
+  "contract": "DEVAM_RAMCHARITMANAS_HELD_PAGE_RECOVERY_V1",
+  "result": "PASS",
+  "decision": "FOURTEEN_STRUCTURAL_BLANKS_NO_MISSING_Q0_TRANSCRIPTIONS",
+  "inputs": {
+    "wikisource_plan": {
+      "path": "ingestion/plans/ramcharitmanas-wikisource-belvedere-pages-v1.json",
+      "sha256": "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab"
+    },
+    "ia_ocr_profile": {
+      "path": "ingestion/profiles/ramcharitmanas-belvedere-1925-ia-ocr-alignment-profile-v1.json",
+      "sha256": "2876993199c7e7cf7ddcaadee9c6b9d2ef55a2d5b927d626d3f76352879cfd9a"
+    },
+    "fixed_pdf": {
+      "path": "source_vault/objects/sha256/6d/6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2",
+      "bytes": 78560265,
+      "sha256": "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2",
+      "pages": 1240
+    },
+    "ia_coordinate_ocr": {
+      "path": "source_vault/objects/sha256/4d/4dba066cfbe3677601fa07c81c08de4fe1f99051c201cee3d45d097af93686b6",
+      "bytes": 39359478,
+      "sha256": "4dba066cfbe3677601fa07c81c08de4fe1f99051c201cee3d45d097af93686b6"
+    }
+  },
+  "method": {
+    "renderer": "pypdfium2",
+    "renderer_version": "5.12.1",
+    "scale": 0.5,
+    "grayscale": true,
+    "dark_pixel_definition": "pixel value < 245",
+    "structural_blank_max_dark_pixel_ratio": 0.001,
+    "text_bearing_min_dark_pixel_ratio": 0.05,
+    "manual_visual_confirmation_pages": [
+      150,
+      1075,
+      1088
+    ],
+    "boundary": "Pixel density classifies whether a fixed scan leaf contains print. It does not validate or correct the wording of any transcription."
+  },
+  "rows": [
+    {
+      "pdf_page": 150,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "4c4b490e7ca3f5b9f26f4d209047db38e38adb7365c3b5832e19043e079070cf",
+      "dark_pixel_count": 0,
+      "dark_pixel_ratio": 0.0,
+      "nonwhite_pixel_count": 0,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 185,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "cc3897981e19d1ee5fa13f086f6a89cdf0a6bb135d5f945a9ba7a8894cf1b8a6",
+      "dark_pixel_count": 7,
+      "dark_pixel_ratio": 6.974e-05,
+      "nonwhite_pixel_count": 11,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 266,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "827a7c2263bbc143fbd07d409ef7f5483782d47300bce8fc1c1ed14e21ccd423",
+      "dark_pixel_count": 1,
+      "dark_pixel_ratio": 9.96e-06,
+      "nonwhite_pixel_count": 1,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 330,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "4764a191e7a85b73f1b5030618dc7ffacfb87f98d4e1d897bcd9fa901cafa541",
+      "dark_pixel_count": 3,
+      "dark_pixel_ratio": 2.989e-05,
+      "nonwhite_pixel_count": 6,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 529,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "bf2b0eb2a6b37003c8edf0efb8215b953319ca1fb3076df9ec43b6d57f1354bc",
+      "dark_pixel_count": 7,
+      "dark_pixel_ratio": 6.974e-05,
+      "nonwhite_pixel_count": 8,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 792,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "754c7bb52c374ae55b5fbba1831ccb4c3e559b8b732a25e10a91941809953d71",
+      "dark_pixel_count": 2,
+      "dark_pixel_ratio": 1.993e-05,
+      "nonwhite_pixel_count": 4,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 820,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "4c4b490e7ca3f5b9f26f4d209047db38e38adb7365c3b5832e19043e079070cf",
+      "dark_pixel_count": 0,
+      "dark_pixel_ratio": 0.0,
+      "nonwhite_pixel_count": 0,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 829,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "4c4b490e7ca3f5b9f26f4d209047db38e38adb7365c3b5832e19043e079070cf",
+      "dark_pixel_count": 0,
+      "dark_pixel_ratio": 0.0,
+      "nonwhite_pixel_count": 0,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 840,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "0fa71c6476e4ca765e40d5a776c8a04164e0ede8a13cc3eba7dc0d4b0c85332c",
+      "dark_pixel_count": 2,
+      "dark_pixel_ratio": 1.993e-05,
+      "nonwhite_pixel_count": 2,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 853,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "ca82f0e5bb1ecd553107da8484d739a16a4a7d156571f076b50e5bb08506ea90",
+      "dark_pixel_count": 8,
+      "dark_pixel_ratio": 7.971e-05,
+      "nonwhite_pixel_count": 14,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 866,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "f353dfdd142abd62d3758b7ffc8cabaa460fd10b738f7d5fc63ae6b8b6babecb",
+      "dark_pixel_count": 6,
+      "dark_pixel_ratio": 5.978e-05,
+      "nonwhite_pixel_count": 9,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 941,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "630072d8f8ca325280ff020b251a7aed373d73107fefd56b945795e71dcb90d6",
+      "dark_pixel_count": 2,
+      "dark_pixel_ratio": 1.993e-05,
+      "nonwhite_pixel_count": 2,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 1075,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "e3f3ea2cc3893d525ee1697fd55d05304a78146e0a8cf28e9735592c33a0f1b0",
+      "dark_pixel_count": 2,
+      "dark_pixel_ratio": 1.993e-05,
+      "nonwhite_pixel_count": 4,
+      "ia_coordinate_ocr_word_count": 0
+    },
+    {
+      "pdf_page": 1088,
+      "classification": "structural_blank_scan_page",
+      "render_width": 272,
+      "render_height": 369,
+      "grayscale_pixel_sha256": "4c4b490e7ca3f5b9f26f4d209047db38e38adb7365c3b5832e19043e079070cf",
+      "dark_pixel_count": 0,
+      "dark_pixel_ratio": 0.0,
+      "nonwhite_pixel_count": 0,
+      "ia_coordinate_ocr_word_count": 0
+    }
+  ],
+  "reconciled_denominator": {
+    "carrier_narrative_coordinate_pages": 1172,
+    "prepared_text_pages": 813,
+    "unproofread_text_bearing_pages": 345,
+    "structural_blank_pages": [
+      150,
+      185,
+      266,
+      330,
+      529,
+      792,
+      820,
+      829,
+      840,
+      853,
+      866,
+      941,
+      1075,
+      1088
+    ],
+    "structural_blank_page_count": 14,
+    "missing_transcription_text_bearing_pages": [],
+    "missing_transcription_text_bearing_page_count": 0,
+    "remaining_text_correction_page_count": 345,
+    "text_bearing_page_denominator": 1158,
+    "ambiguous_pages": []
+  },
+  "product_boundary": {
+    "prepared_product_page_count_changed": false,
+    "prepared_product_page_count": 813,
+    "structural_blanks_are_missing_story_text": false,
+    "remaining_text_pages_corrected": false,
+    "complete_product_searchable_ramcharitmanas_text": false,
+    "public_search_sarthi_or_atlas_mutated": false,
+    "next_required_step": "Qualify or correct the 345 unproofread text-bearing pages against the fixed scan before claiming the selected expression complete."
+  },
+  "mutation_boundary": {
+    "source_payload_copied": false,
+    "source_text_corrected": false,
+    "passages_published": false,
+    "database_mutated": false,
+    "external_service_mutated": false
+  },
+  "checks": {
+    "tracked_plan_fixity_matches": true,
+    "tracked_ia_profile_fixity_matches": true,
+    "fixed_pdf_fixity_matches": true,
+    "ia_coordinate_ocr_fixity_matches": true,
+    "q0_queue_is_exact": true,
+    "all_q0_pages_have_empty_ia_ocr": true,
+    "structural_blank_set_is_exact": true,
+    "text_bearing_missing_transcription_set_is_exact": true,
+    "no_ambiguous_q0_pages": true,
+    "reconciled_text_denominator_closes": true,
+    "product_boundary_fails_closed": true,
+    "upstream_ocr_stays_quarantined": true
+  },
+  "passed": 12,
+  "total": 12
+}

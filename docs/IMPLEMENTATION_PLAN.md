@@ -51,7 +51,9 @@ Ayodhya's departure; the Sarayu crossing; and civic renewal after the
 devotional epilogue across Uttara 111–123. No turn remains orientation-only.
 Ramcharitmanas now compiles all 813 proofread or validated pages of its
 1,172-page fixed expression after exact-revision recovery of 11 malformed
-provider-layout projections; 345 unproofread and 14 empty pages remain held.
+provider-layout projections; 345 unproofread text-bearing pages remain held, while
+all 14 q0 coordinates are verified structural blank scan pages rather than
+missing story text.
 Hanuman Chalisa now has one fixed, attributed CC BY-SA 4.0 carrier and a
 complete 43-unit consumer sequence: two opening dohas, forty chaupais and one
 closing doha, each with beta-reviewed normalized Devanagari text and simple
