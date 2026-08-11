@@ -32,9 +32,9 @@ describe("consumer-content MVP inventory", () => {
       playable_turns: 18,
       outlined_turns: 2,
       orientation_only_turns: 29,
-      playable_scenes: 91,
-      draft_scene_outlines: 6,
-      bilingual_beats: 438,
+      playable_scenes: 97,
+      draft_scene_outlines: 0,
+      bilingual_beats: 466,
       database_projection_migration_prepared: true,
       hosted_database_projection_applied: false,
     });

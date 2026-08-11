@@ -55,14 +55,14 @@ function validateSnapshot(snapshot) {
   if (snapshot.counters.arcs !== 7 || snapshot.counters.backboneTurns !== 49) {
     throw new Error("Unexpected Ramayana backbone shape");
   }
-  if (snapshot.counters.playableTurns !== 19
-    || snapshot.counters.outlinedTurns !== 1
+  if (snapshot.counters.playableTurns !== 20
+    || snapshot.counters.outlinedTurns !== 0
     || snapshot.counters.orientationOnlyTurns !== 29) {
     throw new Error("Unexpected Ramayana playable-turn boundary");
   }
-  if (snapshot.counters.playableScenes !== 91
-    || snapshot.counters.draftSceneOutlines !== 6
-    || snapshot.counters.bilingualBeats !== 438) {
+  if (snapshot.counters.playableScenes !== 97
+    || snapshot.counters.draftSceneOutlines !== 0
+    || snapshot.counters.bilingualBeats !== 466) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
