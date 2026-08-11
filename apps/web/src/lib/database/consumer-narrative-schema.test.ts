@@ -22,6 +22,7 @@ describe("consumer narrative schema", () => {
       "narrative_beat_texts",
       "narrative_moment_entities",
       "narrative_moment_places",
+      "narrative_moment_atlas_links",
       "narrative_moment_links",
       "narrative_evidence",
     ]);
@@ -44,6 +45,7 @@ describe("consumer narrative schema", () => {
   it("publishes consumer rows only through product-compatible parents", () => {
     expect(sql).toContain("create policy narrative_series_product_read");
     expect(sql).toContain("create policy narrative_moments_product_read");
+    expect(sql).toContain("create policy narrative_moment_atlas_links_product_read");
     expect(sql).toContain("create policy narrative_beat_texts_product_read");
     expect(sql.match(/rights_lane in \('product_allowed', 'derivative_allowed'\)/g)?.length ?? 0).toBeGreaterThanOrEqual(12);
   });

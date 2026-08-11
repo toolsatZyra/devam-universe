@@ -22,6 +22,9 @@ describe("public narrative read RPC", () => {
     expect(sql).toContain("'places', coalesce(moment.visual_direction->'places'");
     expect(sql).toContain("'threads', coalesce(moment.visual_direction->'threads'");
     expect(sql).toContain("'connections', coalesce");
+    expect(sql).toContain("'livingConnections', coalesce");
+    expect(sql).toContain("from public.narrative_moment_atlas_links bridge");
+    expect(sql).toContain("'nodeSlug', atlas.slug");
     expect(sql).toContain("link.link_kind in ('precedes', 'character_path', 'place_echo', 'parallel_thread')");
     expect(sql).not.toMatch(/'sourceRange'|'spanSha256'|'passageId'/);
   });

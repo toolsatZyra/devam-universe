@@ -4,8 +4,11 @@ const ts = require(path.resolve(__dirname, "../apps/web/node_modules/typescript"
 
 const ROOT = path.resolve(__dirname, "..");
 const SNAPSHOT_SOURCE = path.join(ROOT, "apps/web/src/lib/content/ramayana-narrative-snapshot.ts");
+const ATLAS_SOURCE = path.join(ROOT, "apps/web/src/data/atlas.ts");
+const LIVING_CONNECTIONS_SOURCE = path.join(ROOT, "knowledge_packs/inventories/ramayana-living-connections-v1.json");
 const OUTPUT = path.join(ROOT, "supabase/migrations/20260810220000_seed_ramayana_consumer_narrative.sql");
 const CONTRACT = "DEVAM_RAMAYANA_CONSUMER_NARRATIVE_SNAPSHOT_V1";
+const LIVING_CONNECTIONS_CONTRACT = "DEVAM_RAMAYANA_LIVING_CONNECTIONS_V1";
 
 const moduleCache = new Map();
 
@@ -125,10 +128,69 @@ function validateSnapshot(snapshot) {
   }
 }
 
+function validateLivingConnections(snapshot, pack, atlasNodeIds) {
+  if (pack.contract !== LIVING_CONNECTIONS_CONTRACT || pack.series_slug !== snapshot.series.id) {
+    throw new Error("Unexpected Ramayana living-connections contract");
+  }
+  if (!Array.isArray(pack.connections) || pack.connections.length < 5) {
+    throw new Error("Ramayana living-connections pack is too small");
+  }
+  const narrativeMomentSlugs = new Set(snapshot.turns.flatMap((turn) => [
+    turnSlug(turn.id),
+    ...turn.scenes.map((scene) => sceneSlug(scene.id)),
+  ]));
+  const allowedKinds = new Set(["festival", "performance", "devotional_text", "practice", "place", "history"]);
+  const keys = new Set();
+  for (const connection of pack.connections) {
+    const key = `${connection.moment_slug}\u0000${connection.atlas_node_slug}\u0000${connection.relation_kind}`;
+    if (keys.has(key)) throw new Error(`Duplicate Ramayana living connection: ${key}`);
+    keys.add(key);
+    if (!narrativeMomentSlugs.has(connection.moment_slug)) {
+      throw new Error(`Unknown Ramayana living-connection moment: ${connection.moment_slug}`);
+    }
+    if (!atlasNodeIds.has(connection.atlas_node_slug)) {
+      throw new Error(`Unknown Ramayana living-connection Atlas node: ${connection.atlas_node_slug}`);
+    }
+    if (!allowedKinds.has(connection.relation_kind)) {
+      throw new Error(`Unknown Ramayana living-connection kind: ${connection.relation_kind}`);
+    }
+    for (const language of ["en", "hi"]) {
+      const label = connection.label?.[language];
+      if (typeof label !== "string" || label.trim().length < 20 || label.length > 240) {
+        throw new Error(`Invalid ${language} Ramayana living-connection label: ${key}`);
+      }
+    }
+  }
+}
+
+function exactDuplicateGroups(items, valueOf) {
+  const groups = new Map();
+  for (const item of items) {
+    const value = valueOf(item);
+    const ids = groups.get(value) ?? [];
+    ids.push(item.id);
+    groups.set(value, ids);
+  }
+  return [...groups.values()].filter((ids) => ids.length > 1);
+}
+
+function lengthSummary(values) {
+  const sorted = [...values].sort((left, right) => left - right);
+  const percentile = (fraction) => sorted[Math.min(sorted.length - 1, Math.floor((sorted.length - 1) * fraction))];
+  return { minimum: sorted[0], p10: percentile(0.1), median: percentile(0.5), maximum: sorted.at(-1) };
+}
+
 function buildMigration() {
   const { buildRamayanaNarrativeSnapshot } = loadTypescriptModule(SNAPSHOT_SOURCE);
+  const { worldNodes, gateways } = loadTypescriptModule(ATLAS_SOURCE);
   const snapshot = buildRamayanaNarrativeSnapshot();
+  const livingConnections = JSON.parse(fs.readFileSync(LIVING_CONNECTIONS_SOURCE, "utf8"));
   validateSnapshot(snapshot);
+  validateLivingConnections(
+    snapshot,
+    livingConnections,
+    new Set([...worldNodes, ...gateways].map((node) => node.id)),
+  );
 
   const arcRows = snapshot.arcs.map((arc) => `(${[
     sqlText(arc.id),
@@ -254,6 +316,19 @@ function buildMigration() {
     turnSlug(turn.id),
     ...turn.scenes.map((scene) => sceneSlug(scene.id)),
   ]).map(sqlText).join(", ");
+  const displayOrdinalByMoment = new Map();
+  const livingConnectionRows = livingConnections.connections.map((connection) => {
+    const displayOrdinal = (displayOrdinalByMoment.get(connection.moment_slug) ?? 0) + 1;
+    displayOrdinalByMoment.set(connection.moment_slug, displayOrdinal);
+    return `(${[
+      sqlText(connection.moment_slug),
+      sqlText(connection.atlas_node_slug),
+      sqlText(connection.relation_kind),
+      sqlText(connection.label.en),
+      sqlText(connection.label.hi),
+      displayOrdinal,
+    ].join(", ")})`;
+  }).join(",\n  ");
 
   return `-- Generated from the app-owned Ramayana story world by
 -- tools/compile_ramayana_consumer_narrative_seed.cjs.
@@ -479,6 +554,32 @@ join public.narrative_moments target on target.series_id = series.id and target.
 on conflict (source_moment_id, target_moment_id, link_kind) do update set
   label = excluded.label;
 
+delete from public.narrative_moment_atlas_links bridge
+using public.narrative_moments moment, public.narrative_series series
+where bridge.moment_id = moment.id
+  and moment.series_id = series.id
+  and series.slug = ${sqlText(snapshot.series.id)}
+  and bridge.source_key = ${sqlText(LIVING_CONNECTIONS_CONTRACT)};
+
+insert into public.narrative_moment_atlas_links (
+  moment_id, atlas_node_id, relation_kind, relation_label_en,
+  relation_label_hi, display_ordinal, source_key
+)
+select moment.id, atlas.id, bridge.relation_kind, bridge.relation_label_en,
+  bridge.relation_label_hi, bridge.display_ordinal, ${sqlText(LIVING_CONNECTIONS_CONTRACT)}
+from (values
+  ${livingConnectionRows}
+) as bridge(moment_slug, atlas_node_slug, relation_kind, relation_label_en, relation_label_hi, display_ordinal)
+join public.narrative_series series on series.slug = ${sqlText(snapshot.series.id)}
+join public.narrative_moments moment on moment.series_id = series.id and moment.slug = bridge.moment_slug
+join public.atlas_nodes atlas on atlas.slug = bridge.atlas_node_slug
+on conflict (moment_id, atlas_node_id, relation_kind) do update set
+  relation_label_en = excluded.relation_label_en,
+  relation_label_hi = excluded.relation_label_hi,
+  display_ordinal = excluded.display_ordinal,
+  source_key = excluded.source_key,
+  updated_at = now();
+
 do $$
 declare
   series_uuid uuid;
@@ -524,6 +625,9 @@ begin
   if (select count(*) from public.narrative_moment_links link join public.narrative_moments source on source.id = link.source_moment_id where source.series_id = series_uuid and link.label like 'generated:%') <> ${generatedLinks.length} then
     raise exception 'Expected ${generatedLinks.length} Ramayana narrative traversal links';
   end if;
+  if (select count(*) from public.narrative_moment_atlas_links bridge join public.narrative_moments moment on moment.id = bridge.moment_id where moment.series_id = series_uuid and bridge.source_key = ${sqlText(LIVING_CONNECTIONS_CONTRACT)}) <> ${livingConnections.connections.length} then
+    raise exception 'Expected ${livingConnections.connections.length} Ramayana living Atlas connections';
+  end if;
   if exists (
     select 1 from public.narrative_moments
     where series_id = series_uuid and moment_kind = 'playable_scene' and publication_state = 'published'
@@ -554,7 +658,9 @@ commit;
 if (process.argv.includes("--stats")) {
   const { buildRamayanaNarrativeSnapshot } = loadTypescriptModule(SNAPSHOT_SOURCE);
   const snapshot = buildRamayanaNarrativeSnapshot();
+  const livingConnections = JSON.parse(fs.readFileSync(LIVING_CONNECTIONS_SOURCE, "utf8"));
   const scenes = snapshot.turns.flatMap((turn) => turn.scenes);
+  const beats = scenes.flatMap((scene) => scene.beats);
   console.log(JSON.stringify({
     counters: snapshot.counters,
     traversalLinks: {
@@ -563,6 +669,18 @@ if (process.argv.includes("--stats")) {
       characterPaths: facetPathLinks(snapshot.turns, "characters", "character_path").length,
       placePaths: facetPathLinks(snapshot.turns, "places", "place_echo").length,
       parallelThreads: facetPathLinks(snapshot.turns, "threads", "parallel_thread").length,
+      livingAtlas: livingConnections.connections.length,
+    },
+    narrativeQuality: {
+      exactDuplicateEnglishTitles: exactDuplicateGroups(scenes, (scene) => scene.title.en),
+      exactDuplicateHindiTitles: exactDuplicateGroups(scenes, (scene) => scene.title.hi),
+      exactDuplicateEnglishNarratives: exactDuplicateGroups(scenes, (scene) => scene.narrative.en),
+      exactDuplicateHindiNarratives: exactDuplicateGroups(scenes, (scene) => scene.narrative.hi),
+      englishNarrativeCharacters: lengthSummary(scenes.map((scene) => scene.narrative.en.length)),
+      hindiNarrativeCharacters: lengthSummary(scenes.map((scene) => scene.narrative.hi.length)),
+      beatsPerScene: lengthSummary(scenes.map((scene) => scene.beats.length)),
+      englishBeatCharacters: lengthSummary(beats.map((beat) => beat.narration.en.length)),
+      hindiBeatCharacters: lengthSummary(beats.map((beat) => beat.narration.hi.length)),
     },
     scenesWithoutPlaces: scenes.filter((scene) => scene.places.length === 0).map((scene) => scene.id),
     places: [...new Set(scenes.flatMap((scene) => scene.places))].sort(),

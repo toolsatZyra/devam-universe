@@ -73,6 +73,30 @@ as $$
                     and destination.publication_state = 'published'
                     and destination.rights_lane in ('product_allowed', 'derivative_allowed')
                 ), '[]'::jsonb),
+                'livingConnections', coalesce((
+                  select jsonb_agg(
+                    jsonb_build_object(
+                      'kind', bridge.relation_kind,
+                      'label', case
+                        when language_filter = 'hi' then bridge.relation_label_hi
+                        else bridge.relation_label_en
+                      end,
+                      'nodeSlug', atlas.slug,
+                      'title', atlas.title,
+                      'nodeKind', atlas.node_kind,
+                      'summary', coalesce(atlas.visual->>'summary', atlas.visual->>'invitation', atlas.subtitle, atlas.title),
+                      'gatewayId', case
+                        when atlas.is_gateway then atlas.slug
+                        else atlas.visual->>'gatewayId'
+                      end
+                    ) order by bridge.display_ordinal, atlas.title
+                  )
+                  from public.narrative_moment_atlas_links bridge
+                  join public.atlas_nodes atlas on atlas.id = bridge.atlas_node_id
+                  where bridge.moment_id = moment.id
+                    and atlas.publication_state = 'published'
+                    and atlas.rights_lane in ('product_allowed', 'derivative_allowed')
+                ), '[]'::jsonb),
                 'beats', coalesce((
                   select jsonb_agg(
                     jsonb_build_object(

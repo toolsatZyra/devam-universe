@@ -54,6 +54,13 @@ The shared Ramayana projection now retains at least one narrative place for all
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
+Six curated, bilingual turn-to-Atlas links now carry the same shared projection
+into living Diwali, Vivaha Panchami, Ramlila, Kishkindha/Anegundi, Hanuman
+Chalisa, and Anjanadri worlds. The RPC preserves these as first-class
+`livingConnections` with consumer labels and Atlas destinations, while each
+destination keeps its own source, regional, historical, practice, and
+uncertainty boundary. This closes the missing story-to-living-world data
+mechanic; it does not make those living worlds part of the selected Dutt text.
 Ramcharitmanas now compiles all 813 proofread or validated pages of its
 1,172-page fixed expression after exact-revision recovery of 11 malformed
 provider-layout projections; 345 unproofread text-bearing pages remain held, while

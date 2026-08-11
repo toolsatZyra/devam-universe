@@ -6,6 +6,27 @@ export type PublicNarrativeBeat = {
   visualDirection: Record<string, unknown>;
 };
 
+export type PublicNarrativeConnection = {
+  kind: "precedes" | "character_path" | "place_echo" | "parallel_thread";
+  labels: string[];
+  direction: "forward" | "backward";
+  momentSlug: string;
+  momentKind: "backbone_turn" | "playable_scene";
+  backboneOrdinal: number;
+  detailOrdinal: number;
+  title: string;
+};
+
+export type PublicNarrativeLivingConnection = {
+  kind: "festival" | "performance" | "devotional_text" | "practice" | "place" | "history";
+  label: string;
+  nodeSlug: string;
+  title: string;
+  nodeKind: string;
+  summary: string;
+  gatewayId: string;
+};
+
 export type PublicNarrativeMoment = {
   slug: string;
   kind: "backbone_turn" | "playable_scene";
@@ -17,6 +38,11 @@ export type PublicNarrativeMoment = {
   synopsis: string;
   narrative: string;
   visualDirection: Record<string, unknown>;
+  characters: string[];
+  places: string[];
+  threads: string[];
+  connections: PublicNarrativeConnection[];
+  livingConnections: PublicNarrativeLivingConnection[];
   beats: PublicNarrativeBeat[];
 };
 
@@ -72,6 +98,49 @@ function array(value: unknown, label: string, maximum: number): unknown[] {
   return value;
 }
 
+function textArray(value: unknown, label: string, maximum: number): string[] {
+  return array(value, label, maximum).map((entry) => text(entry, `${label} entry`, 200));
+}
+
+function narrativeConnection(value: unknown): PublicNarrativeConnection {
+  const item = record(value, "narrative connection");
+  if (!"precedes character_path place_echo parallel_thread".split(" ").some((kind) => kind === item.kind)) {
+    throw new Error("Narrative connection kind is invalid.");
+  }
+  if (item.direction !== "forward" && item.direction !== "backward") {
+    throw new Error("Narrative connection direction is invalid.");
+  }
+  if (item.momentKind !== "backbone_turn" && item.momentKind !== "playable_scene") {
+    throw new Error("Narrative connection moment kind is invalid.");
+  }
+  return {
+    kind: item.kind as PublicNarrativeConnection["kind"],
+    labels: textArray(item.labels, "narrative connection labels", 12),
+    direction: item.direction,
+    momentSlug: slug(item.momentSlug, "narrative connection moment slug"),
+    momentKind: item.momentKind,
+    backboneOrdinal: positiveInteger(item.backboneOrdinal, "narrative connection backbone ordinal"),
+    detailOrdinal: nonnegativeInteger(item.detailOrdinal, "narrative connection detail ordinal"),
+    title: text(item.title, "narrative connection title", 300),
+  };
+}
+
+function livingConnection(value: unknown): PublicNarrativeLivingConnection {
+  const item = record(value, "living Atlas connection");
+  if (!"festival performance devotional_text practice place history".split(" ").some((kind) => kind === item.kind)) {
+    throw new Error("Living Atlas connection kind is invalid.");
+  }
+  return {
+    kind: item.kind as PublicNarrativeLivingConnection["kind"],
+    label: text(item.label, "living Atlas connection label", 300),
+    nodeSlug: slug(item.nodeSlug, "living Atlas connection node slug"),
+    title: text(item.title, "living Atlas connection title", 300),
+    nodeKind: text(item.nodeKind, "living Atlas connection node kind", 120),
+    summary: text(item.summary, "living Atlas connection summary", 2_000),
+    gatewayId: slug(item.gatewayId, "living Atlas connection gateway"),
+  };
+}
+
 function beat(value: unknown): PublicNarrativeBeat {
   const item = record(value, "narrative beat");
   return {
@@ -97,6 +166,8 @@ function moment(value: unknown): PublicNarrativeMoment {
     throw new Error("Narrative moment hierarchy is inconsistent.");
   }
   const beats = array(item.beats, "narrative beats", 24).map(beat);
+  const connections = array(item.connections, "narrative connections", 80).map(narrativeConnection);
+  const livingConnections = array(item.livingConnections, "living Atlas connections", 12).map(livingConnection);
   if (item.kind === "playable_scene" && beats.length < 3) throw new Error("Playable narrative scene has too few beats.");
   if (item.kind === "backbone_turn" && beats.length !== 0) throw new Error("Backbone narrative turn unexpectedly contains beats.");
   return {
@@ -110,6 +181,11 @@ function moment(value: unknown): PublicNarrativeMoment {
     synopsis: text(item.synopsis, "narrative moment synopsis", 2_000),
     narrative: text(item.narrative, "narrative moment copy"),
     visualDirection: record(item.visualDirection, "narrative moment visual direction"),
+    characters: textArray(item.characters, "narrative characters", 80),
+    places: textArray(item.places, "narrative places", 80),
+    threads: textArray(item.threads, "narrative threads", 40),
+    connections,
+    livingConnections,
     beats,
   };
 }

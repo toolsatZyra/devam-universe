@@ -150,6 +150,25 @@ create table public.narrative_moment_places (
   primary key (moment_id, atlas_node_id, relation_kind)
 );
 
+-- A narrative moment may open a separately governed Atlas world without
+-- pretending that the living festival, performance, text, place tradition, or
+-- practice is part of the selected source expression. Bilingual labels are
+-- consumer navigation copy; evidence remains behind the Atlas node/edge.
+create table public.narrative_moment_atlas_links (
+  moment_id uuid not null references public.narrative_moments(id) on delete cascade,
+  atlas_node_id uuid not null references public.atlas_nodes(id) on delete restrict,
+  relation_kind text not null check (relation_kind in (
+    'festival', 'performance', 'devotional_text', 'practice', 'place', 'history'
+  )),
+  relation_label_en text not null,
+  relation_label_hi text not null,
+  display_ordinal integer not null default 1 check (display_ordinal > 0),
+  source_key text not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  primary key (moment_id, atlas_node_id, relation_kind)
+);
+
 create table public.narrative_moment_links (
   source_moment_id uuid not null references public.narrative_moments(id) on delete cascade,
   target_moment_id uuid not null references public.narrative_moments(id) on delete cascade,
@@ -186,6 +205,7 @@ create index narrative_moment_texts_search_idx on public.narrative_moment_texts 
 create index narrative_beats_moment_order_idx on public.narrative_beats(moment_id, beat_ordinal);
 create index narrative_moment_entities_entity_idx on public.narrative_moment_entities(entity_id, moment_id);
 create index narrative_moment_places_atlas_idx on public.narrative_moment_places(atlas_node_id, moment_id);
+create index narrative_moment_atlas_links_atlas_idx on public.narrative_moment_atlas_links(atlas_node_id, moment_id);
 create index narrative_moment_links_target_idx on public.narrative_moment_links(target_moment_id, link_kind);
 create index narrative_evidence_passage_idx on public.narrative_evidence(passage_id);
 
@@ -198,6 +218,7 @@ alter table public.narrative_beats enable row level security;
 alter table public.narrative_beat_texts enable row level security;
 alter table public.narrative_moment_entities enable row level security;
 alter table public.narrative_moment_places enable row level security;
+alter table public.narrative_moment_atlas_links enable row level security;
 alter table public.narrative_moment_links enable row level security;
 alter table public.narrative_evidence enable row level security;
 
@@ -206,6 +227,7 @@ revoke all on public.narrative_series, public.narrative_arcs,
   public.narrative_moments, public.narrative_moment_texts,
   public.narrative_beats, public.narrative_beat_texts,
   public.narrative_moment_entities, public.narrative_moment_places,
+  public.narrative_moment_atlas_links,
   public.narrative_moment_links, public.narrative_evidence
 from anon, authenticated;
 
@@ -214,6 +236,7 @@ grant select on public.narrative_series, public.narrative_arcs,
   public.narrative_moments, public.narrative_moment_texts,
   public.narrative_beats, public.narrative_beat_texts,
   public.narrative_moment_entities, public.narrative_moment_places,
+  public.narrative_moment_atlas_links,
   public.narrative_moment_links
 to anon, authenticated;
 
@@ -334,6 +357,23 @@ create policy narrative_moment_places_product_read on public.narrative_moment_pl
     and exists (
       select 1 from public.atlas_nodes node
       where node.id = narrative_moment_places.atlas_node_id
+        and node.publication_state = 'published'
+        and node.rights_lane in ('product_allowed', 'derivative_allowed')
+    )
+  );
+
+create policy narrative_moment_atlas_links_product_read on public.narrative_moment_atlas_links
+  for select to anon, authenticated
+  using (
+    exists (
+      select 1 from public.narrative_moments moment
+      where moment.id = narrative_moment_atlas_links.moment_id
+        and moment.publication_state = 'published'
+        and moment.rights_lane in ('product_allowed', 'derivative_allowed')
+    )
+    and exists (
+      select 1 from public.atlas_nodes node
+      where node.id = narrative_moment_atlas_links.atlas_node_id
         and node.publication_state = 'published'
         and node.rights_lane in ('product_allowed', 'derivative_allowed')
     )

@@ -20,6 +20,28 @@ const valid = {
         synopsis: "Ayodhya prepares for Rama.",
         narrative: "Ayodhya prepares for Rama.",
         visualDirection: { coverage: "playable" },
+        characters: ["Rama"],
+        places: ["Ayodhya"],
+        threads: ["succession"],
+        connections: [{
+          kind: "precedes",
+          labels: ["story-order"],
+          direction: "forward",
+          momentSlug: "scene-coronation-dawn",
+          momentKind: "playable_scene",
+          backboneOrdinal: 7,
+          detailOrdinal: 1,
+          title: "A coronation dawns",
+        }],
+        livingConnections: [{
+          kind: "festival",
+          label: "Continue from the homecoming into the many living worlds of Diwali",
+          nodeSlug: "diwali",
+          title: "Diwali",
+          nodeKind: "gateway",
+          summary: "Follow the festival of many lights through distinct living traditions.",
+          gatewayId: "diwali",
+        }],
         beats: [],
       },
       {
@@ -33,6 +55,11 @@ const valid = {
         synopsis: "A city prepares for a future that will not arrive.",
         narrative: "A substantial consumer narrative unfolds across the city and palace.",
         visualDirection: { nodeIds: ["ayodhya", "rama"] },
+        characters: ["Rama"],
+        places: ["Ayodhya"],
+        threads: [],
+        connections: [],
+        livingConnections: [],
         beats: [1, 2, 3].map((ordinal) => ({
           slug: `beat-${ordinal}`,
           ordinal,
@@ -47,7 +74,10 @@ const valid = {
 
 describe("public narrative contract", () => {
   it("accepts the bounded consumer hierarchy", () => {
-    expect(parsePublicNarrativeSeries(valid)?.series.totalSourceUnits).toBe(652);
+    const parsed = parsePublicNarrativeSeries(valid);
+    expect(parsed?.series.totalSourceUnits).toBe(652);
+    expect(parsed?.arcs[0].moments[0].livingConnections[0].nodeSlug).toBe("diwali");
+    expect(parsed?.arcs[0].moments[0].connections[0].momentSlug).toBe("scene-coronation-dawn");
   });
 
   it("rejects evidence/source apparatus in place of consumer structure", () => {

@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
 import { buildRamayanaNarrativeSnapshot } from "./ramayana-narrative-snapshot";
+import { gateways, worldNodes } from "../../data/atlas";
 
 type Lane = {
   priority: number;
@@ -29,6 +30,21 @@ const inventory = JSON.parse(readFileSync(
     disclosure_boundary: string;
   };
   lanes: Lane[];
+};
+
+const livingConnections = JSON.parse(readFileSync(
+  resolve(process.cwd(), "..", "..", "knowledge_packs", "inventories", "ramayana-living-connections-v1.json"),
+  "utf8",
+)) as {
+  contract: string;
+  series_slug: string;
+  boundary: string;
+  connections: Array<{
+    moment_slug: string;
+    atlas_node_slug: string;
+    relation_kind: string;
+    label: { en: string; hi: string };
+  }>;
 };
 
 describe("consumer-content MVP inventory", () => {
@@ -71,6 +87,7 @@ describe("consumer-content MVP inventory", () => {
       character_path_links: 94,
       place_echo_links: 50,
       parallel_thread_links: 22,
+      living_atlas_connections: 6,
       public_rpc_returns_multidimensional_connections: true,
       database_projection_migration_prepared: true,
       hosted_database_projection_applied: false,
@@ -85,6 +102,28 @@ describe("consumer-content MVP inventory", () => {
       q1_pages_promoted: 0,
       daily_reading_available: false,
     });
+  });
+
+  it("connects selected Ramayana turns to real, separately governed living Atlas worlds", () => {
+    expect(livingConnections.contract).toBe("DEVAM_RAMAYANA_LIVING_CONNECTIONS_V1");
+    expect(livingConnections.series_slug).toBe("ramayana-dutt-consumer-v1");
+    expect(livingConnections.boundary).toContain("do not make");
+    expect(livingConnections.connections).toHaveLength(6);
+    const snapshotMomentSlugs = new Set(buildRamayanaNarrativeSnapshot().turns.flatMap((turn) => [
+      `turn-${turn.id}`,
+      ...turn.scenes.map((scene) => `scene-${scene.id}`),
+    ]));
+    const atlasNodeSlugs = new Set([...gateways, ...worldNodes].map((node) => node.id));
+    expect(new Set(livingConnections.connections.map((connection) => `${connection.moment_slug}:${connection.atlas_node_slug}:${connection.relation_kind}`)).size).toBe(6);
+    for (const connection of livingConnections.connections) {
+      expect(snapshotMomentSlugs.has(connection.moment_slug), connection.moment_slug).toBe(true);
+      expect(atlasNodeSlugs.has(connection.atlas_node_slug), connection.atlas_node_slug).toBe(true);
+      expect(connection.label.en.length).toBeGreaterThan(20);
+      expect(connection.label.hi.length).toBeGreaterThan(20);
+    }
+    expect(livingConnections.connections.map((connection) => connection.atlas_node_slug)).toEqual(expect.arrayContaining([
+      "diwali", "vivaha-panchami", "ramlila-performance", "kishkindha-living-landscape", "hanuman-chalisa", "anjanadri-hill-tradition",
+    ]));
   });
 
   it("keeps the Ramayana inventory counters synchronized with the compiled narrative", () => {
