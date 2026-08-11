@@ -1,7 +1,9 @@
 import { getHeroJourney } from "../../data/hero-experiences";
 import { RAMAYANA_BEGINNINGS_SCENE_OUTLINES } from "../../data/ramayana-beginnings-outline";
+import { RAMAYANA_BROKEN_TRAIL_SCENE_OUTLINES } from "../../data/ramayana-broken-trail-outline";
+import { RAMAYANA_BROKEN_TRAIL_PLAYABLE_SCENES } from "../../data/ramayana-broken-trail-playable";
 import { RAMAYANA_BEGINNINGS_PLAYABLE_SCENES } from "../../data/ramayana-beginnings-playable";
-import { getDuttBalaSpanSha256s } from "../../data/ramayana-bala-source-spans";
+import { getDuttKandaSpanSha256s } from "../../data/ramayana-dutt-source-spans";
 import { RAMAYANA_HEIRS_PLAYABLE_SCENES } from "../../data/ramayana-heirs-playable";
 import { RAMAYANA_PRINCES_PLAYABLE_SCENES } from "../../data/ramayana-princes-playable";
 import { RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES } from "../../data/ramayana-mithila-road-playable";
@@ -169,7 +171,11 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     }
   }
 
-  const beginningOutlineById = new Map(RAMAYANA_BEGINNINGS_SCENE_OUTLINES.map((outline) => [outline.id, outline]));
+  const sourcePartitionedOutlines = [
+    ...RAMAYANA_BEGINNINGS_SCENE_OUTLINES,
+    ...RAMAYANA_BROKEN_TRAIL_SCENE_OUTLINES,
+  ];
+  const sourcePartitionedOutlineById = new Map(sourcePartitionedOutlines.map((outline) => [outline.id, outline]));
   for (const playable of [
     ...RAMAYANA_BEGINNINGS_PLAYABLE_SCENES,
     ...RAMAYANA_HEIRS_PLAYABLE_SCENES,
@@ -177,13 +183,14 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES,
     ...RAMAYANA_SITA_BOW_PLAYABLE_SCENES,
     ...RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES,
+    ...RAMAYANA_BROKEN_TRAIL_PLAYABLE_SCENES,
   ]) {
-    const outline = beginningOutlineById.get(playable.id);
+    const outline = sourcePartitionedOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
     const turn = pack.compass.turns[outline.turnId];
     if (!turn) throw new Error(`Ramayana playable beginning has no backbone turn: ${playable.id}`);
     const siblings = scenesByTurnId.get(outline.turnId) ?? [];
-    const spanSha256s = getDuttBalaSpanSha256s(outline.sourceStart, outline.sourceEnd);
+    const spanSha256s = getDuttKandaSpanSha256s(turn.sourceRange.kandaSlug, outline.sourceStart, outline.sourceEnd);
     siblings.push({
       id: playable.id,
       detailOrdinal: outline.ordinal,
@@ -211,7 +218,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     scenesByTurnId.set(outline.turnId, siblings);
   }
 
-  for (const outline of RAMAYANA_BEGINNINGS_SCENE_OUTLINES) {
+  for (const outline of sourcePartitionedOutlines) {
     const turn = pack.compass.turns[outline.turnId];
     if (!turn) throw new Error(`Ramayana outline has no backbone turn: ${outline.id}`);
     if (outline.sourceStart < turn.sourceRange.startOrdinal || outline.sourceEnd > turn.sourceRange.endOrdinal) {

@@ -55,21 +55,21 @@ function validateSnapshot(snapshot) {
   if (snapshot.counters.arcs !== 7 || snapshot.counters.backboneTurns !== 49) {
     throw new Error("Unexpected Ramayana backbone shape");
   }
-  if (snapshot.counters.playableTurns !== 20
+  if (snapshot.counters.playableTurns !== 21
     || snapshot.counters.outlinedTurns !== 0
-    || snapshot.counters.orientationOnlyTurns !== 29) {
+    || snapshot.counters.orientationOnlyTurns !== 28) {
     throw new Error("Unexpected Ramayana playable-turn boundary");
   }
-  if (snapshot.counters.playableScenes !== 97
+  if (snapshot.counters.playableScenes !== 103
     || snapshot.counters.draftSceneOutlines !== 0
-    || snapshot.counters.bilingualBeats !== 466) {
+    || snapshot.counters.bilingualBeats !== 490) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
     ...snapshot.turns.map((turn) => turnSlug(turn.id)),
     ...snapshot.turns.flatMap((turn) => turn.scenes.map((scene) => sceneSlug(scene.id))),
   ];
-  if (new Set(momentSlugs).size !== 146) throw new Error("Narrative moment slugs must be unique");
+  if (new Set(momentSlugs).size !== 152) throw new Error("Narrative moment slugs must be unique");
   for (const turn of snapshot.turns) {
     const expectedReadiness = turn.coverage === "playable"
       ? "playable"
@@ -461,8 +461,8 @@ begin
   if (select count(*) from public.narrative_beats beat join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> ${snapshot.counters.bilingualBeats} then
     raise exception 'Expected ${snapshot.counters.bilingualBeats} Ramayana narrative beats';
   end if;
-  if (select count(*) from public.narrative_moment_texts copy join public.narrative_moments moment on moment.id = copy.moment_id where moment.series_id = series_uuid) <> 292 then
-    raise exception 'Expected 292 bilingual Ramayana moment texts';
+  if (select count(*) from public.narrative_moment_texts copy join public.narrative_moments moment on moment.id = copy.moment_id where moment.series_id = series_uuid) <> ${(snapshot.counters.backboneTurns + snapshot.counters.playableScenes + snapshot.counters.draftSceneOutlines) * 2} then
+    raise exception 'Expected ${(snapshot.counters.backboneTurns + snapshot.counters.playableScenes + snapshot.counters.draftSceneOutlines) * 2} bilingual Ramayana moment texts';
   end if;
   if (select count(*) from public.narrative_beat_texts copy join public.narrative_beats beat on beat.id = copy.beat_id join public.narrative_moments moment on moment.id = beat.moment_id where moment.series_id = series_uuid) <> ${snapshot.counters.bilingualBeats * 2} then
     raise exception 'Expected ${snapshot.counters.bilingualBeats * 2} bilingual Ramayana beat texts';
