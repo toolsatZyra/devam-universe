@@ -90,6 +90,9 @@ const DUTT_KISHKINDHA_SECTION_SPAN_SHA256: Record<number, string> = {
   62: "55bd2217f38f018206955f0e2bd1cff2204fc0bf27abe304cfbf38b3c3cbae25",
   63: "9d72f53d070258fbd9ce483496912304b01a0e1151c71a1de73b37720e87763f",
   64: "b5aa61f99e1c8d7877704ec3951a569d744877b7ee30b19b74be4cc59fa6e6b2",
+  65: "60b35b21eeb34a7d68a61edf2c93b5cb2cd01107eed0d37155887a928f1cee62",
+  66: "17f0648b22891914f523bfc06a52c6dc6bb1b22677ec10dde57987d43015b2c2",
+  67: "4010500b8c57f7fcfd779f814366a47a40733128a47d4c7ce573e56e695cbe9e",
 };
 
 const maps: Record<string, Record<number, string>> = {
