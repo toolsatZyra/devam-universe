@@ -111,6 +111,16 @@ bilingual scenes and beats, visual direction, canonical graph entities, shared
 database projection and product integration are the next boundary. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
 
+Detailed Mahabharata authoring has begun beneath that map. The first two turns
+now contain six exact-span scenes and 26 substantial Hindi/English beats across
+Adi source ordinals 1–12: Sauti and the layered act of carrying memory;
+Samantapanchaka as narrative geography; Uttanka's journey and transfer of a
+private grievance into royal policy; Puloma, Chyavana and the dispute over a
+witness's responsibility; Ruru's half-life bargain for Pramadvara; and
+Dundubha's interruption of indiscriminate revenge. Each scene includes
+characters, places and visual staging. They remain `authored_not_projected`, so
+this is real story-corpus progress but not yet a playable consumer surface.
+
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,

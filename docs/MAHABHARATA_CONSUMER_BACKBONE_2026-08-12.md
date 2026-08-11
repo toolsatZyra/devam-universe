@@ -1,6 +1,6 @@
 # Mahabharata consumer backbone checkpoint
 
-Date: 2026-08-12  
+Date: 2026-08-12
 Contract: `DEVAM_MAHABHARATA_CONSUMER_BACKBONE_V1`
 
 ## Outcome
@@ -89,3 +89,16 @@ civilizational story universe.
 
 The next checkpoint is detailed bilingual scene authoring beneath the 77 turns,
 followed by graph compilation and an adversarial whole-journey review.
+
+## First detailed authoring batch
+
+`knowledge_packs/mahabharata/consumer-scenes-opening-v1.json` begins that next
+checkpoint with six scenes and 26 substantial English/Hindi beats. It covers
+Adi source ordinals 1â€“12 exactly once beneath the first two backbone turns.
+The batch preserves exact span hashes, characters, places and visual direction
+while keeping source apparatus out of normal story copy.
+
+The scenes are authored but not projected. They do not change the honest
+`consumer_story_available: false` or `product_projection_available: false`
+state. The remaining 75 turns still require the same depth before the selected
+expression can be called consumer-complete.
