@@ -92,10 +92,11 @@ followed by graph compilation and an adversarial whole-journey review.
 
 ## First detailed authoring batch
 
-The first three packs under `knowledge_packs/mahabharata/` begin that next
-checkpoint with 22 scenes and 96 substantial English/Hindi beats. Together they
-cover Adi source ordinals 1–74 exactly once beneath the first four backbone
-turns, including the complete first Shakuntala/Bharata journey. The batches
+The first four packs under `knowledge_packs/mahabharata/` begin that next
+checkpoint with 25 scenes and 110 substantial English/Hindi beats. They cover
+Adi source ordinals 1–80 exactly once: the first four backbone turns are fully
+scene-authored, including the complete first Shakuntala/Bharata journey, and the
+Yayati turn is explicitly partial with ordinals 81–94 pending. The batches
 preserve exact span hashes, characters, places and visual direction while
 keeping source apparatus out of normal story copy.
 

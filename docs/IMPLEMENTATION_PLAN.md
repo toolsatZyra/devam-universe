@@ -135,6 +135,14 @@ argument about truth and parenthood, and Bharata's recognition. It keeps
 caregiving kin primary, unequal power visible and divine confirmation from
 retroactively making the public denial harmless.
 
+The fifth turn has begun without falsely claiming completion. Its first three
+scenes add 14 bilingual beats across Adi 75–80: the ancestry route into Yayati;
+Kacha's repeated murders, Devayani's repeated interventions, Shukra's embodied
+transfer of restoration knowledge and the failed marriage proposal; and the
+Devayani–Sharmishtha conflict from mixed garments through the well, Yayati's
+rescue and Sharmishtha's coerced service for the safety of her people. Adi
+81–94 remains explicitly pending for this turn.
+
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
