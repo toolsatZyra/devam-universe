@@ -158,7 +158,7 @@ function reachableFrom(gatewayId: string): Set<string> {
 
 describe("Living Atlas exploration data", () => {
   it("forms one valid, explorable graph rather than a collection of decorative labels", () => {
-    expect(worldNodes).toHaveLength(202);
+    expect(worldNodes).toHaveLength(203);
     expect(new Set(worldNodes.map((node) => node.id)).size).toBe(worldNodes.length);
     expect(new Set(worldEdges.map((edge) => edge.id)).size).toBe(worldEdges.length);
 
@@ -466,7 +466,7 @@ describe("Living Atlas exploration data", () => {
       }
     }
 
-    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(217);
+    expect(worldEdges.filter((edge) => edge.sourceRef?.includes("sha256:"))).toHaveLength(219);
   });
 
   it("gives every era a visible exploration path", () => {
@@ -552,8 +552,8 @@ describe("Living Atlas exploration data", () => {
       });
       expect(readFileSync(generated)).toEqual(readFileSync(resolve(migrations, migrationName!)));
       const sql = readFileSync(generated, "utf8");
-      expect(sql).toContain("Expected 207 app-owned Living Atlas nodes");
-      expect(sql).toContain("Expected 341 app-owned Living Atlas edges");
+      expect(sql).toContain("Expected 208 app-owned Living Atlas nodes");
+      expect(sql).toContain("Expected 343 app-owned Living Atlas edges");
       expect(sql).toContain("Rama homecoming story tradition");
       expect(sql).toContain("Kolkata-Kalighat-Dakshineswar routes are missing official citation-only sources");
       expect(sql).toContain("Kashi sacred-city nodes are missing or outside their evidence boundaries");

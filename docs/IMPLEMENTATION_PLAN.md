@@ -51,9 +51,15 @@ Ayodhya's departure; the Sarayu crossing; and civic renewal after the
 devotional epilogue across Uttara 111–123. No turn remains orientation-only.
 Ramcharitmanas now compiles all 813 proofread or validated pages of its
 1,172-page fixed expression after exact-revision recovery of 11 malformed
-provider-layout projections; 345 unproofread and 14 empty pages remain held;
-Mahabharata, Hanuman Chalisa, and Panchatantra retain the gaps recorded in the
-consumer-content inventory.
+provider-layout projections; 345 unproofread and 14 empty pages remain held.
+Hanuman Chalisa now has one fixed, attributed CC BY-SA 4.0 carrier and a
+complete 43-unit consumer sequence: two opening dohas, forty chaupais and one
+closing doha, each with beta-reviewed normalized Devanagari text and simple
+Hindi and English meaning. Its deterministic reading doorway is integrated
+through the Living Atlas, Search and Sārthi, while persistent saved progress,
+the shared database projection, hosted application and independent cultural
+and linguistic review remain explicit gaps. Mahabharata and Panchatantra
+retain the gaps recorded in the consumer-content inventory.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi

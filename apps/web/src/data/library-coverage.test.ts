@@ -16,7 +16,7 @@ describe("honest library coverage snapshot", () => {
       object_bytes: number;
       catalogs: { source_leads: number };
     };
-    expect(createHash("sha256").update(bytes).digest("hex")).toBe("f5093b53c64a0c23110c1360392eeb33a969ff987f39546f8dafd138c62cac3e");
+    expect(createHash("sha256").update(bytes).digest("hex")).toBe("bec4dee70e83360e51f569c411c6e690df371338068acef7209e40fea41339c1");
     expect(LIBRARY_COVERAGE_SNAPSHOT.sourceLibrary).toMatchObject({
       uniqueObjects: summary.object_count,
       objectBytes: summary.object_bytes,

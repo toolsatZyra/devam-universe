@@ -848,6 +848,7 @@ test("exact Search keeps all four hero lanes source-bounded", async ({ page }) =
     ["What should I do for Ganesh Chaturthi?", "ganesh-chaturthi-west-india-content-v1-en-exact-guidance"],
     ["What should I do for Shardiya Navaratri?", "shardiya-navaratri-north-west-india-content-v1-en-exact-guidance"],
     ["Ramcharitmanas seven sopanas Belvedere Press", "ramcharitmanas-belvedere-seven-sopana-en"],
+    ["Hanuman Chalisa chaupai 40", "hanuman-chalisa-reading-42-en"],
     ["How should I do Lakshmi Puja at home?", "diwali-lakshmi-puja-west-india-content-v1-en-exact-guidance"],
   ] as const;
 
