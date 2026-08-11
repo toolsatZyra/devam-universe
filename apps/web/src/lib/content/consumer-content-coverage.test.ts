@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { buildRamayanaNarrativeSnapshot } from "./ramayana-narrative-snapshot";
 
 type Lane = {
   priority: number;
@@ -29,12 +30,12 @@ describe("consumer-content MVP inventory", () => {
     expect(ramayana.current).toMatchObject({
       selected_expression_source_units: 652,
       whole_story_turns: 49,
-      playable_turns: 18,
-      outlined_turns: 2,
-      orientation_only_turns: 29,
-      playable_scenes: 109,
+      playable_turns: 23,
+      outlined_turns: 0,
+      orientation_only_turns: 26,
+      playable_scenes: 114,
       draft_scene_outlines: 0,
-      bilingual_beats: 514,
+      bilingual_beats: 534,
       database_projection_migration_prepared: true,
       hosted_database_projection_applied: false,
     });
@@ -44,6 +45,20 @@ describe("consumer-content MVP inventory", () => {
       published_narrative_pages: 802,
       unpublished_narrative_pages: 370,
       daily_reading_available: false,
+    });
+  });
+
+  it("keeps the Ramayana inventory counters synchronized with the compiled narrative", () => {
+    const current = inventory.lanes.find((lane) => lane.lane_id === "ramayana-consumer-story")!.current;
+    const counters = buildRamayanaNarrativeSnapshot().counters;
+    expect(current).toMatchObject({
+      whole_story_turns: counters.backboneTurns,
+      playable_turns: counters.playableTurns,
+      outlined_turns: counters.outlinedTurns,
+      orientation_only_turns: counters.orientationOnlyTurns,
+      playable_scenes: counters.playableScenes,
+      draft_scene_outlines: counters.draftSceneOutlines,
+      bilingual_beats: counters.bilingualBeats,
     });
   });
 

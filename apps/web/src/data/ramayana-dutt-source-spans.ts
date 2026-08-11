@@ -25,9 +25,18 @@ const DUTT_ARANYA_SECTION_SPAN_SHA256: Record<number, string> = {
   75: "635d58b041c6db2afa07a478de28748ab617d4388061c35fc086242c70107009",
 };
 
+const DUTT_KISHKINDHA_SECTION_SPAN_SHA256: Record<number, string> = {
+  1: "79ef56e71e4e7149dce35c0403ff2da524ac571297abf77e13997a5e72dd02cb",
+  2: "47b51e76dd29d1ae369c98fa2edba86713e38984a09234d5c688a881dd863b4a",
+  3: "62a631e14ca8eb1a82ac2f70c9f2be77fd989109cb638fc8795d0d4110b683df",
+  4: "6fcbfc4b861a63c4c47b06b5030ca3b133855c05cf616be5416aefaf5699cd0e",
+  5: "4a44eb06489a8ee774addf53bfe759e9894764ab575eb480d36ceee181926ed8",
+};
+
 const maps: Record<string, Record<number, string>> = {
   bala: DUTT_BALA_SECTION_SPAN_SHA256,
   aranya: DUTT_ARANYA_SECTION_SPAN_SHA256,
+  kishkindha: DUTT_KISHKINDHA_SECTION_SPAN_SHA256,
 };
 
 export function getDuttKandaSpanSha256s(kandaSlug: string, startOrdinal: number, endOrdinal: number) {
