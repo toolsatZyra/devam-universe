@@ -106,9 +106,10 @@ facets. The plan explicitly names consequential harms such as Draupadi's public
 humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
 survivors and the grief of bereaved women. Historically situated social and
 prescriptive material remains contextualized rather than presented as timeless
-consumer instruction. All 77 turns remain `planned_not_playable`: substantial
-bilingual scenes and beats, visual direction, canonical graph entities, shared
-database projection and product integration are the next boundary. See
+consumer instruction. All 77 backbone records remain `planned_not_playable`;
+the first eight now have companion `authored_not_projected` scene packs.
+Canonical graph entities, shared database projection and product integration
+remain later boundaries. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
 
 Detailed Mahabharata authoring has begun beneath that map. The first four turns
@@ -180,6 +181,22 @@ Duryodhana's premeditated poisoning and drowning attempt, Bhima's explicitly
 mythic Naga-world recovery, Yuyutsu's warning, and the cousins' move into
 weapons training. The first seven turns now total 57 exact-span scenes and 252
 substantial Hindi/English beats; 70 turns remain at backbone-plan depth.
+
+The eighth turn is now fully scene-authored as twelve scenes and 60 bilingual
+beats across Adi 130–142. It follows Kripa and Kripi's adoption; Drona's
+training, poverty and class-shaped conflict with Drupada; Arjuna's discipline;
+and Ekalavya's exclusion, self-education and coerced thumb payment without
+softening either structural harm or the injured dog. The tournament preserves
+Karna's demonstrated equality, Kunti's constrained silence, Adhiratha's real
+parenthood, Bhima's status humiliation and Duryodhana's defence as both
+socially meaningful and politically binding. Drona then turns a concealed
+student promise into war against Drupada, while the scenes retain casualties,
+coercion and territorial partition instead of treating them as consequence-free
+heroics. Yudhishthira's appointment and the brothers' growing power lead into
+Kanika's ruthless counsel, which remains dangerous character content rather
+than consumer instruction. The first eight turns now total 69 exact-span
+scenes and 312 substantial Hindi/English beats through Adi 142; 69 turns remain
+at backbone-plan depth.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
