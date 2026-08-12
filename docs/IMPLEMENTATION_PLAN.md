@@ -107,7 +107,7 @@ humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
 survivors and the grief of bereaved women. Historically situated social and
 prescriptive material remains contextualized rather than presented as timeless
 consumer instruction. All 77 backbone records remain `planned_not_playable`;
-the first eight now have companion `authored_not_projected` scene packs.
+the first nine now have companion `authored_not_projected` scene packs.
 Canonical graph entities, shared database projection and product integration
 remain later boundaries. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
@@ -197,6 +197,23 @@ Kanika's ruthless counsel, which remains dangerous character content rather
 than consumer instruction. The first eight turns now total 69 exact-span
 scenes and 312 substantial Hindi/English beats through Adi 142; 69 turns remain
 at backbone-plan depth.
+
+The ninth turn is now fully scene-authored as twelve scenes and 55 bilingual
+beats across Adi 143–166. The conspiracy retains Dhritarashtra's consent,
+Varanavata's genuine public welcome and Purochana's weaponised architecture;
+Vidura's code, miner and boat form a distributed rescue rather than a lone
+hero's insight. The lac-house escape names the Nishada mother and five sons as
+innocent casualties whose misidentified bodies protect the fugitives. Forest
+exile then centres Hidimbi's refusal of her brother's killing order, her own
+petition and the bounded agreement with Bhima before Ghatotkacha enters the
+family as son and autonomous ally. In Ekachakra, Baka is a coercive protection
+system imposed through rotating food, animal and human tribute. The host
+father, wife, daughter and young son each receive a full voice without turning
+period-bound gender or caste duties into modern instruction. Bhima's
+intervention ends both Baka and the continuing human-killing demand while the
+family's hidden identity remains protected. The first nine turns now total 81
+exact-span scenes and 367 substantial Hindi/English beats through Adi 166; 68
+turns remain at backbone-plan depth.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
