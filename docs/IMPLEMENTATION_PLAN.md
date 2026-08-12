@@ -107,7 +107,7 @@ humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
 survivors and the grief of bereaved women. Historically situated social and
 prescriptive material remains contextualized rather than presented as timeless
 consumer instruction. All 77 backbone records remain `planned_not_playable`;
-the first ten now have companion `authored_not_projected` scene packs.
+the first eleven now have companion `authored_not_projected` scene packs.
 Canonical graph entities, shared database projection and product integration
 remain later boundaries. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
@@ -234,6 +234,27 @@ limited consent evidence visible. Dhaumya freely accepts the guiding role
 before the expanded party approaches Panchala. The first ten turns now total
 93 exact-span scenes and 424 substantial Hindi/English beats through Adi 185;
 67 turns remain at backbone-plan depth.
+
+The eleventh turn is now fully scene-authored as eight scenes and 41 bilingual
+beats across Adi 186–209. It treats the svayamvara as a navigable political
+world rather than a single target shot: the disguised family enters crowded
+Kampilya; Drupada's private hope shapes the public test; Draupadi's recorded
+refusal stops Karna without turning its status reasoning into a modern rule;
+Arjuna wins; and defeated rulers attack the declared result. At the potter's
+house, Kunti's unseeing statement, Arjuna's objection, Yudhishthira's
+shared-marriage declaration and the selected expression's missing direct
+answer from Draupadi remain separate facts. Dhrishtadyumna's surveillance,
+Drupada's status prejudice, Panchala's identity tests and the family's reveal
+lead into explicit objections from Drupada and Dhrishtadyumna. Vyasa's private
+celestial and prior-life explanations are framed as internal epic claims that
+persuade Drupada, not supplied consent or a current marital prescription. The
+successive ceremonies retain period-bound household ideals, bodily claims and
+gift language behind context boundaries. The final scenes expose Duryodhana's
+manipulation and murder proposals, Karna's escalation to open war, and the
+counter-counsel of Bhishma, Drona and Vidura before the return to Hastinapura
+and the labour-filled transformation of Khandavaprastha into Indraprastha.
+The first eleven turns now total 101 exact-span scenes and 465 substantial
+Hindi/English beats through Adi 209; 66 turns remain at backbone-plan depth.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
