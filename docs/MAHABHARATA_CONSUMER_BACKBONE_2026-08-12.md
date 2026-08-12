@@ -81,7 +81,7 @@ civilizational story universe.
 | Source-unit denominator | 2,107 |
 | Exact source partition | Complete |
 | Bilingual arc and turn plan | 12 arcs / 77 turns |
-| Substantial bilingual scenes and beats | 81 scenes / 367 beats across Adi 1-166 |
+| Substantial bilingual scenes and beats | 93 scenes / 424 beats across Adi 1-185 |
 | Consumer story available | No |
 | Shared graph/database projection | No |
 | Playable Atlas journey | No |
@@ -92,16 +92,16 @@ followed by graph compilation and an adversarial whole-journey review.
 
 ## First detailed authoring batch
 
-The first thirteen packs under `knowledge_packs/mahabharata/` begin that next
-checkpoint with 81 scenes and 367 substantial English/Hindi beats. They cover
-Adi source ordinals 1–166 exactly once: the first nine backbone turns are fully
+The first fifteen packs under `knowledge_packs/mahabharata/` begin that next
+checkpoint with 93 scenes and 424 substantial English/Hindi beats. They cover
+Adi source ordinals 1–185 exactly once: the first ten backbone turns are fully
 scene-authored, including the complete first Shakuntala/Bharata, Yayati,
 Ganga-Bhishma-to-Pandu, Kuru-children, education-to-rivalry, and
-fire-to-hidden-life journeys. The batches
+fire-to-hidden-life, and road-to-Panchala journeys. The batches
 preserve exact span hashes, characters, places and visual direction while
 keeping source apparatus out of normal story copy.
 
 The scenes are authored but not projected. They do not change the honest
 `consumer_story_available: false` or `product_projection_available: false`
-state. The remaining 68 turns still require the same depth before the selected
+state. The remaining 67 turns still require the same depth before the selected
 expression can be called consumer-complete.

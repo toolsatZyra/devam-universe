@@ -107,7 +107,7 @@ humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
 survivors and the grief of bereaved women. Historically situated social and
 prescriptive material remains contextualized rather than presented as timeless
 consumer instruction. All 77 backbone records remain `planned_not_playable`;
-the first nine now have companion `authored_not_projected` scene packs.
+the first ten now have companion `authored_not_projected` scene packs.
 Canonical graph entities, shared database projection and product integration
 remain later boundaries. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
@@ -214,6 +214,26 @@ intervention ends both Baka and the continuing human-killing demand while the
 family's hidden identity remains protected. The first nine turns now total 81
 exact-span scenes and 367 substantial Hindi/English beats through Adi 166; 68
 turns remain at backbone-plan depth.
+
+The tenth turn is now fully scene-authored as twelve scenes and 57 bilingual
+beats across Adi 167–185. A travelling guest carries news of Draupadi's
+svayamvara into the Ekachakra household; the nested account follows Drupada's
+revenge search, the queen's excluded timing, and the separate fire-births of
+Dhrishtadyumna and Draupadi without reducing either child to prophecy.
+Kunti's practical migration proposal receives the assent of every son, while
+Vyasa's prior-life explanation remains an internal epic claim rather than
+Draupadi's supplied consent. At the Ganga, Arjuna and Angaraparna move from an
+access dispute through Kumbhinasi's life-saving intervention into reciprocal
+friendship and the Tapati–Samvarana–Kuru ancestry journey. The fixed carrier's
+printed CLXXVII/CLXXVI disorder and corrupted transition remain explicit
+source metadata, not consumer copy or silent editorial repair. The later
+nested histories keep Nandini's agency, Vasishtha's suicidal grief,
+Adrisyanti's accompaniment, Aurva's redirected survivor rage, Pulastya's
+rejection of collective punishment, and Madayanti's decisive refusal and
+limited consent evidence visible. Dhaumya freely accepts the guiding role
+before the expanded party approaches Panchala. The first ten turns now total
+93 exact-span scenes and 424 substantial Hindi/English beats through Adi 185;
+67 turns remain at backbone-plan depth.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi
