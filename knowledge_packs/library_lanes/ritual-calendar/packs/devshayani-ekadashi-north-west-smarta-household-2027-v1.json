@@ -1,0 +1,1030 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "devshayani-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "devshayani-ekadashi",
+    "harishayan-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Ashadha Shukla Devshayani for you?",
+      "Does your calendar surface the reviewed Harishayan alias or a materially different date, fast, parana or Chaturmas authority?",
+      "Would Vamana-Bali deception, conquest, caste language, diet, sleep, celibacy or salvation claims be distressing or coercive?",
+      "Does anyone need normal food variety, infant feeding, pregnancy or lactation nutrition, medicine, bed, sleep or consensual relationships?",
+      "Are you asking about ordinary home remembrance or the materially separate Maharashtra Varkari/Ashadhi Wari?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "devshayani-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "devshayani-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "devshayani-ekadashi",
+        "language_code": "en",
+        "note": "Ordinary North/West Smarta home lane. Harishayan is a reviewed alias. Formal Chaturmas and Maharashtra Varkari/Ashadhi Wari are materially separate; chapter 53's Kamika naming tension is retained."
+      },
+      {
+        "observance_slug": "devshayani-ekadashi",
+        "language_code": "hi",
+        "note": "सामान्य उत्तर/पश्चिम स्मार्त गृह-मार्ग। हरिशयन समीक्षित नामांतर है। औपचारिक चातुर्मास और महाराष्ट्र वारकरी/आषाढ़ी वारी मुख्यतः अलग हैं; अध्याय 53 का कामिका नाम-तनाव रखा गया है।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-devshayani-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "devshayani-shukla-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "devshayani-fed-rested-reviewable-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Andhra Pradesh, West Bengal, Chhattisgarh, Gujarati and Indian ISKCON fixtures place ordinary Devshayani Ekadashi on Wednesday 14 July 2027, Ashadha Shukla Ekadashi. Harishayan is a frozen alias. Resolve city and authority live; do not derive timing from chapter 53's two Kamika labels or copy parana, temple or Wari schedules."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-devshayani-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 53: Devashayani Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Shyani and Vamana-Bali account, Vishnu-sleep theology, Kamika naming tension, formal Chaturmas practices, caste language and attributed results as source facts",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365630.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 53",
+        "reviewed_lines": "54-73",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-devshayani-2027",
+      "title": "2027 Devshayani and Harishayan Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "ordinary, regional and Indian ISKCON date and alias discovery for 14 July 2027; no portable parana, Chaturmas, Wari or temple authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/devshayani/devshayani-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-07-14",
+        "identity": "Ashadha Shukla Devshayani Ekadashi",
+        "alias": "Harishayan Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-nin-dietary-guidelines-2024",
+      "title": "Dietary Guidelines for Indians 2024",
+      "publisher": "ICMR-National Institute of Nutrition",
+      "source_role": "official dietary variety and individual age, physiological-status and activity-needs boundary; no product source payload copied",
+      "rights_lane": "citation_only",
+      "url": "https://www.nin.res.in/dietaryguidelines/pdfjs/locale/DGI24thJune2024fin.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "balanced diet and food-group diversity",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen Devshayani identity, Harishayan alias and material timing/authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-devshayani-research",
+      "title": "Devshayani Ekadashi material applicability split and ordinary-lane research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of alias, naming tension, Vamana-Bali, diet, sleep, celibacy, Chaturmas, Wari split and closing boundaries",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/devshayani-ekadashi-material-applicability-split-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "devshayani-ekadashi",
+        "harishayan-ekadashi"
+      ],
+      "title": "Devshayani Ekadashi: begin a modest, reviewable season of steadiness",
+      "short_answer": "Confirm Devshayani from your city and accepted ordinary Smarta Panchang. A complete home form is non-fasting: keep food variety, water, medicine, bed, sleep and consensual relationships normal; remember Vishnu; hear chapter 53's Shyani and Vamana-Bali account with its Kamika naming tension and formal Chaturmas rules explicitly source-labelled; optionally choose one small reversible non-dietary intention; and close without vigil, floor sleeping, celibacy, flame, Wari travel or guaranteed results.",
+      "significance": {
+        "text": "Padma Purana chapter 53 names Shyani, asks how Vishnu sleeps, narrates Vamana's encounter with devoted and truthful Bali, and says Vishnu rests on Shesha until Kartika. It also prescribes vigil, ground sleeping, lights, celibacy and month-specific food avoidance, and twice calls the bright-half Ashadha day Kamika. Devam preserves the theology, power tension and textual naming tension while offering only a modest, reviewable intention in the ordinary household lane.",
+        "source_ids": [
+          "padma-purana-devshayani-deshpande",
+          "icmr-nin-dietary-guidelines-2024",
+          "devam-devshayani-research"
+        ],
+        "scope_note": "Source-labelled reflection; not fasting, nutrition, sleep, sexual, marriage, property, pilgrimage or institutional advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "devshayani-vamana-bali-en",
+          "title": "Shyani, Vishnu's rest and the Vamana-Bali account",
+          "summary": "Yudhishthira asks Krishna about Ashadha's bright-half Ekadashi and how Vishnu sleeps in the ocean. Krishna names Shyani and tells of Bali, a devoted ruler firm in truth. Krishna says he deliberates with Indra, Brihaspati and other deities, takes Vamana form, uses what the translation calls prevarication, requests three and a half steps of land, expands through the worlds, seizes Bali, places half a step on his head and sends him below. One Vishnu form remains with Bali and another rests on Shesha until Kartika. The chapter prescribes formal four-month practices and promises salvation and merit. Devam preserves Bali's devotion, truthfulness, deception and subordination as source events, not permission for coercion or guarantees. The chapter's two uses of Kamika are not silently harmonised with its Shyani title.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 53",
+          "source_ids": [
+            "padma-purana-devshayani-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "devshayani-en-safe-household",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Fed and rested Vishnu remembrance, bounded source account, optional reversible non-dietary intention and normal close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "devshayani-en-formal-chaturmas-context",
+          "population_scope": "Families or institutions with separately inherited and clinically reviewed formal authority",
+          "description": "Chapter 53 gives vigil, ground sleeping, lights, leaf use, celibacy and food avoidance; this ordinary guide does not reconstruct or prescribe them.",
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "devshayani-en-minimum-v1",
+          "label": "Private seasonal steadiness",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Ordinary household remembrance only; formal Chaturmas, Wari and temple authority remain separate.",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "drik-devshayani-2027",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional private reminder",
+              "required": false,
+              "substitutions": [
+                "No writing",
+                "A mental review point"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            },
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Devshayani Ekadashi. Retain Harishayan only as a reviewed alias and do not infer parana from this card.",
+              "why": "Timing is local and tradition-aware.",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food variety, water, prescribed medicine, insulin, infant and child feeding, pregnancy or lactation nutrition, hygiene, bed and sleep. Do not begin fasting or Chaturmas restrictions.",
+              "why": "The fed, hydrated, rested and bed-using route is complete.",
+              "source_ids": [
+                "icmr-nin-dietary-guidelines-2024",
+                "icmr-type1-diabetes-fasting",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, family prayer or silence. No image, mantra, lotus, palasha leaf, flame, offering or purchase is required.",
+              "why": "Devotion remains accessible without an invented universal formula.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the bounded chapter-53 account: Shyani, Vishnu resting on Shesha, Vamana and truthful Bali, the translation's prevarication and conquest, and formal four-month practices. Note that the chapter twice says Kamika while its title and question identify Shyani.",
+              "why": "Source detail and internal tension are preserved without silently harmonising them.",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "If useful, choose one small reversible intention within your own conduct, such as a weekly check-in, a brief quiet period or reducing one avoidable waste. Do not alter diet, sleep, sexuality, care or another person's conduct.",
+              "why": "A bounded seasonal intention is optional and reviewable.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Set a safe review point and allow the intention to change or stop. Do not call it a four-month vow, compare merit or use it to delay work, care or emergency action.",
+              "why": "Review prevents an optional reflection becoming coercive obligation.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and normal care. Claim no salvation, purity, sacrificial merit, guaranteed success, marriage prohibition or divine unavailability.",
+              "why": "Theological promises are not guarantees or civic rules.",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal food, water, medicine, bed and sleep. No fast, Chaturmas vow, parana or Wari travel begins here.",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "Ordinary household remembrance only; formal Chaturmas, Wari and temple authority remain separate."
+          }
+        },
+        {
+          "procedure_id": "devshayani-en-standard-v1",
+          "label": "Consent-led family seasonal reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Family-led ordinary remembrance; no diet, celibacy, vigil, pilgrimage or institutional authority.",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "drik-devshayani-2027",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "Optional private review reminder",
+              "required": false,
+              "substitutions": [
+                "No writing",
+                "No intention"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Resolve the local date and invite only willing participants; anyone may use the short form, decline the story or leave.",
+              "why": "Consent precedes a family form.",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep meals, vegetables, curd, milk, pulses or legumes, water, medicine, beds, sleep and consensual relationships normal; use no vigil, floor sleeping, flame or leaf eating.",
+              "why": "Formal source restrictions are not generic household instructions.",
+              "source_ids": [
+                "icmr-nin-dietary-guidelines-2024",
+                "icmr-type1-diabetes-fasting",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use familiar Vishnu remembrance and tell the bounded Vamana-Bali account without caste slurs or calling Bali evil. Name devotion, truthfulness, deception, conquest and subordination as source events.",
+              "why": "The story retains moral complexity and equal dignity.",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person may choose or decline one private reversible intention. Do not impose diet, celibacy, silence, touch, prayer, spending or four-month duration.",
+              "why": "No one owes a household vow.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close with normal food, medicine, bed and sleep. Keep Onam/Mahabali, formal Chaturmas, Wari and named-temple programmes separate.",
+              "why": "Materially different story and practice owners remain distinct.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal food variety, medicine, bed, sleep and consensual care. No one owes a vow.",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "Family-led ordinary remembrance; no diet, celibacy, vigil, pilgrimage or institutional authority."
+          }
+        },
+        {
+          "procedure_id": "devshayani-en-elaborate-v1",
+          "label": "Current named temple participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Live named-temple participation only; no copied liturgy or schedule.",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "drik-devshayani-2027",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified current temple programme and safe access plan",
+              "required": false,
+              "substitutions": [
+                "Do not attend",
+                "Use the complete home form"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify a current named temple programme, local date, access, fees and safeguarding. A calendar card is not a live schedule.",
+              "why": "Institutional details change.",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Attend only if safe; keep normal food, water, medicine, mobility support and sleep, and decline fasting, touch, disclosure or private access.",
+              "why": "Temple participation does not suspend care or consent.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Observe only the verified public programme. Do not copy its mantra, vigil, diet, celibacy, offerings or parana into household instructions.",
+              "why": "Institutional liturgy has separate authority.",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Leave at any time and close at home with normal care. Do not infer a Wari route, Onam story or guaranteed result.",
+              "why": "A safe exit preserves the pack's scope.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Return safely and close with normal care; claim no guaranteed result.",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "Live named-temple participation only; no copied liturgy or schedule."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-writing-and-household-form",
+          "scope": "ordinary household",
+          "difference": "Language, image/no-image, prayer/silence, private reminder/no writing and individual/family form are minor and stay in this lane.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "maharashtra-varkari-ashadhi-participation-en",
+          "scope": "Maharashtra Varkari participation",
+          "difference": "Pandharpur Wari, Vitthal, dindi, palkhi, travel, crowd, river and temple participation require the separate material companion.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-chaturmas-authority-en",
+          "scope": "formal Chaturmas",
+          "difference": "Vigil, floor sleeping, diet, celibacy, flame, leaf use, duration and closing require separate inherited and clinical authority.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-en",
+          "scope": "material timing authority",
+          "difference": "A different date, fasting, food, mantra or parana is a separate authority lane.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "onam-or-other-vamana-reception-en",
+          "scope": "separate story owner",
+          "difference": "Kerala Onam/Mahabali, other Vamana expressions and a Mandhata story absent from chapter 53 require separate review.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-or-other-observance-en",
+          "scope": "institution or observance",
+          "difference": "A named temple, Vasudeva Dwadashi, Gauri Vrat, Kamika or another observance remains separate.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A complete ordinary form is non-fasting, fed, hydrated, rested, bed-using, non-celibacy-prescribing, no-touch, no-flame, no-purchase, no-flower, no-leaf, image-free, writing-free and material-free.",
+        "Do not remove vegetables, curd, milk, pulses, legumes or another food group; do not change infant or child feeding, pregnancy or lactation nutrition, allergy-safe food, diabetes care, prescribed diet or medicine.",
+        "Do not stay awake, sleep on the ground, stop using a bed, impose celibacy, light a flame, collect lotus or palasha, or eat from an unverified leaf.",
+        "Do not use Vamana-Bali to justify deceit, pressured consent, land or property taking, caste hierarchy, humiliation, restraint or force; do not call Bali simply evil.",
+        "Vishnu's sleep is source theology, not divine unavailability and never a reason to delay care, work, safeguarding or emergency action.",
+        "Do not merge this chapter with Onam/Mahabali or import a Mandhata-drought story absent from chapter 53.",
+        "No heaven, salvation, sin removal, purity, sacrificial merit, success, marriage restriction, health benefit or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "devshayani-ekadashi",
+        "harishayan-ekadashi"
+      ],
+      "title": "देवशयनी एकादशी: स्थिरता का छोटा और समीक्ष्य मौसम शुरू करें",
+      "short_answer": "अपने शहर और मान्य सामान्य स्मार्त पंचांग से देवशयनी की पुष्टि करें। पूर्ण गृह-रूप गैर-उपवास है: विविध भोजन, जल, दवा, बिस्तर, नींद और सहमति वाले संबंध सामान्य रखें; विष्णु-स्मरण करें; अध्याय 53 की शयनी और वामन-बलि कथा, कामिका नाम-तनाव और औपचारिक चातुर्मास नियम स्रोत-नामित रूप में सुनें; चाहें तो एक छोटा पलट सकने वाला गैर-आहार संकल्प चुनें; और जागरण, जमीन पर सोना, ब्रह्मचर्य, अग्नि, वारी यात्रा या निश्चित फल बिना समापन करें।",
+      "significance": {
+        "text": "पद्मपुराण अध्याय 53 शयनी नाम देता, विष्णु की निद्रा पूछता, भक्त और सत्यनिष्ठ बलि के साथ वामन का प्रसंग कहता और विष्णु के कार्तिक तक शेष पर विश्राम की बात करता है। यह जागरण, जमीन पर सोना, दीप, ब्रह्मचर्य और मासिक आहार-त्याग भी बताता तथा आषाढ़ शुक्ल दिन को दो बार कामिका कहता है। देवम धर्मविचार, शक्ति-तनाव और पाठ-नाम तनाव सुरक्षित रखता, पर सामान्य घर में केवल छोटा समीक्ष्य संकल्प देता है।",
+        "source_ids": [
+          "padma-purana-devshayani-deshpande",
+          "icmr-nin-dietary-guidelines-2024",
+          "devam-devshayani-research"
+        ],
+        "scope_note": "स्रोत-नामित चिंतन; उपवास, पोषण, नींद, यौन, विवाह, संपत्ति, तीर्थ या संस्था की सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "devshayani-vamana-bali-hi",
+          "title": "शयनी, विष्णु का विश्राम और वामन-बलि प्रसंग",
+          "summary": "युधिष्ठिर कृष्ण से आषाढ़ शुक्ल एकादशी और समुद्र में विष्णु की निद्रा पूछते हैं। कृष्ण शयनी नाम देकर भक्त और सत्य पर स्थिर राजा बलि की कथा कहते हैं। वे इन्द्र, बृहस्पति और देवताओं से विचार कर वामन रूप लेते, अनुवाद में कहे छल से साढ़े तीन पग भूमि माँगते, लोकों में फैलते, बलि को पकड़ते, आधा पग सिर पर रखते और नीचे भेजते हैं। एक विष्णु रूप बलि के साथ और दूसरा कार्तिक तक शेष पर विश्राम करता है। अध्याय औपचारिक चार-मास अभ्यास और मुक्ति-पुण्य बताता है। देवम बलि की भक्ति, सत्य, छल और अधीनता को स्रोत-घटना रखता है, दबाव या गारंटी की अनुमति नहीं। अध्याय के कामिका नाम को शयनी शीर्षक से चुपचाप नहीं मिलाया जाता।",
+          "tradition_scope": "पद्मपुराण उत्तरखंड अध्याय 53 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति",
+          "source_ids": [
+            "padma-purana-devshayani-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "devshayani-hi-safe-household",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त गृह या व्यक्ति",
+          "description": "भोजन और विश्राम सहित विष्णु-स्मरण, सीमित स्रोत-कथा, वैकल्पिक पलट सकने वाला गैर-आहार संकल्प और सामान्य समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "devshayani-hi-formal-chaturmas-context",
+          "population_scope": "अलग परंपरागत और चिकित्सकीय रूप से समीक्षित औपचारिक अधिकार वाले परिवार या संस्था",
+          "description": "अध्याय 53 जागरण, जमीन पर सोना, दीप, पत्ता, ब्रह्मचर्य और आहार-त्याग बताता है; यह सामान्य मार्ग उन्हें पुनर्निर्मित या निर्धारित नहीं करता।",
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "devshayani-hi-minimum-v1",
+          "label": "निजी मौसमी स्थिरता",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "केवल सामान्य गृह-स्मरण; औपचारिक चातुर्मास, वारी और मंदिर-अधिकार अलग।",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "drik-devshayani-2027",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक निजी स्मरण",
+              "required": false,
+              "substitutions": [
+                "बिना लेखन",
+                "मन में समीक्षा-बिंदु"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने शहर और मान्य सामान्य स्मार्त पंचांग से पुष्टि करें कि आज देवशयनी एकादशी है। हरिशयन को केवल समीक्षित नामांतर रखें और इस कार्ड से पारण न निकालें।",
+              "why": "तिथि स्थानीय और परंपरा-सापेक्ष है।",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य विविध भोजन, जल, लिखी दवा, इंसुलिन, शिशु/बाल आहार, गर्भावस्था/स्तनपान पोषण, स्वच्छता, बिस्तर और नींद रखें। उपवास या चातुर्मास प्रतिबंध शुरू न करें।",
+              "why": "भोजन, जल, विश्राम और बिस्तर वाला रूप पूर्ण है।",
+              "source_ids": [
+                "icmr-nin-dietary-guidelines-2024",
+                "icmr-type1-diabetes-fasting",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का स्मरण परिचित नाम, पारिवारिक प्रार्थना या मौन से करें। चित्र, मंत्र, कमल, पलाश-पत्ता, अग्नि, चढ़ावा या खरीद जरूरी नहीं।",
+              "why": "बिना सार्वभौम मंत्र गढ़े भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "अध्याय 53 का सीमित प्रसंग सुनें: शयनी, शेष पर विष्णु का विश्राम, वामन और सत्यनिष्ठ बलि, अनुवाद का छल व विजय, और औपचारिक चार-मास अभ्यास। बताएँ कि अध्याय दो बार कामिका कहता है जबकि शीर्षक और प्रश्न शयनी कहते हैं।",
+              "why": "स्रोत और उसका आंतरिक तनाव बिना चुपचाप मिलाए सुरक्षित रहता है।",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "उपयोगी हो तो अपने आचरण में एक छोटा पलट सकने वाला संकल्प चुनें—साप्ताहिक जाँच, थोड़ी शांति या एक अनावश्यक बर्बादी घटाना। भोजन, नींद, यौन जीवन, देखभाल या दूसरे का आचरण न बदलें।",
+              "why": "मौसमी संकल्प वैकल्पिक और समीक्ष्य है।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सुरक्षित समीक्षा-बिंदु रखें और संकल्प बदलने या रोकने दें। इसे चार-मास व्रत न कहें, पुण्य न तुलना करें और काम, देखभाल या आपात कार्रवाई न टालें।",
+              "why": "समीक्षा वैकल्पिक चिंतन को दबावपूर्ण दायित्व बनने से रोकती है।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता और सामान्य देखभाल से समापन करें। मुक्ति, शुद्धि, यज्ञ-फल, निश्चित सफलता, विवाह-निषेध या ईश्वर की अनुपलब्धता का दावा न करें।",
+              "why": "धार्मिक फल गारंटी या नागरिक नियम नहीं।",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा, बिस्तर और नींद से समापन करें। यहाँ उपवास, चातुर्मास व्रत, पारण या वारी यात्रा शुरू नहीं होती।",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "केवल सामान्य गृह-स्मरण; औपचारिक चातुर्मास, वारी और मंदिर-अधिकार अलग।"
+          }
+        },
+        {
+          "procedure_id": "devshayani-hi-standard-v1",
+          "label": "सहमति वाला पारिवारिक मौसमी चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "परिवार-नेतृत्व वाला सामान्य स्मरण; आहार, ब्रह्मचर्य, जागरण, तीर्थ या संस्था का अधिकार नहीं।",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "drik-devshayani-2027",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "वैकल्पिक निजी समीक्षा-स्मरण",
+              "required": false,
+              "substitutions": [
+                "बिना लेखन",
+                "बिना संकल्प"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय तिथि तय कर केवल इच्छुक लोगों को बुलाएँ; कोई भी छोटा रूप चुन, कथा छोड़ या जा सकता है।",
+              "why": "सहमति परिवार-रूप से पहले है।",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, सब्जी, दही, दूध, दालें, जल, दवा, बिस्तर, नींद और सहमति वाले संबंध सामान्य रखें; जागरण, जमीन पर सोना, अग्नि या पत्ते पर भोजन न करें।",
+              "why": "औपचारिक स्रोत-प्रतिबंध सामान्य गृह-निर्देश नहीं।",
+              "source_ids": [
+                "icmr-nin-dietary-guidelines-2024",
+                "icmr-type1-diabetes-fasting",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित विष्णु-स्मरण और सीमित वामन-बलि कथा बिना जातिसूचक शब्द या बलि को दुष्ट कहे सुनाएँ। भक्ति, सत्य, छल, विजय और अधीनता को स्रोत-घटना कहें।",
+              "why": "कथा जटिलता और समान गरिमा रखती है।",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति निजी पलट सकने वाला संकल्प चुन या छोड़ सकता है। भोजन, ब्रह्मचर्य, मौन, स्पर्श, प्रार्थना, खर्च या चार-मास अवधि न थोपें।",
+              "why": "किसी पर गृह-व्रत का दायित्व नहीं।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "सामान्य भोजन, दवा, बिस्तर और नींद से समापन करें। ओणम/महाबलि, औपचारिक चातुर्मास, वारी और नामित मंदिर कार्यक्रम अलग रखें।",
+              "why": "मुख्यतः अलग कथा और अभ्यास-अधिकार अलग रहते हैं।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य विविध भोजन, दवा, बिस्तर, नींद और सहमति वाली देखभाल से समापन करें। किसी पर व्रत का दायित्व नहीं।",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "परिवार-नेतृत्व वाला सामान्य स्मरण; आहार, ब्रह्मचर्य, जागरण, तीर्थ या संस्था का अधिकार नहीं।"
+          }
+        },
+        {
+          "procedure_id": "devshayani-hi-elaborate-v1",
+          "label": "वर्तमान नामित मंदिर-भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल जीवित नामित मंदिर-भागीदारी; नकल की विधि या कार्यक्रम नहीं।",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-devshayani-deshpande",
+            "drik-devshayani-2027",
+            "icmr-nin-dietary-guidelines-2024",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित वर्तमान मंदिर कार्यक्रम और सुरक्षित प्रवेश योजना",
+              "required": false,
+              "substitutions": [
+                "न जाएँ",
+                "पूर्ण गृह-रूप अपनाएँ"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "वर्तमान नामित मंदिर कार्यक्रम, स्थानीय तिथि, प्रवेश, शुल्क और सुरक्षा जाँचें। पंचांग-कार्ड जीवित कार्यक्रम नहीं।",
+              "why": "संस्थागत विवरण बदलते हैं।",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सुरक्षित हो तभी जाएँ; सामान्य भोजन, जल, दवा, गतिशीलता-सहायता और नींद रखें तथा उपवास, स्पर्श, खुलासा या निजी पहुँच मना करें।",
+              "why": "मंदिर-भागीदारी देखभाल या सहमति नहीं रोकती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल सत्यापित सार्वजनिक कार्यक्रम देखें। उसके मंत्र, जागरण, आहार, ब्रह्मचर्य, चढ़ावे या पारण को घर का निर्देश न बनाएँ।",
+              "why": "संस्थागत विधि का अलग अधिकार है।",
+              "source_ids": [
+                "padma-purana-devshayani-deshpande",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "कभी भी लौटें और सामान्य देखभाल से घर पर समापन करें। वारी मार्ग, ओणम कथा या निश्चित फल न निकालें।",
+              "why": "सुरक्षित निकास सीमा रखता है।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित लौटकर सामान्य देखभाल से समापन करें; निश्चित फल का दावा न करें।",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "केवल जीवित नामित मंदिर-भागीदारी; नकल की विधि या कार्यक्रम नहीं।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-writing-and-household-form-hi",
+          "scope": "सामान्य गृह-अभ्यास",
+          "difference": "भाषा, चित्र/बिना चित्र, प्रार्थना/मौन, निजी स्मरण/बिना लेखन और निजी/पारिवारिक रूप छोटे अंतर हैं।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "maharashtra-varkari-ashadhi-participation-hi",
+          "scope": "महाराष्ट्र वारकरी भागीदारी",
+          "difference": "पंढरपुर वारी, विठ्ठल, दिंडी, पालखी, यात्रा, भीड़, नदी और मंदिर के लिए अलग मुख्य भागीदारी पैक चाहिए।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-chaturmas-authority-hi",
+          "scope": "औपचारिक चातुर्मास",
+          "difference": "जागरण, जमीन पर सोना, आहार, ब्रह्मचर्य, अग्नि, पत्ता, अवधि और समापन के लिए अलग परंपरागत व चिकित्सकीय अधिकार चाहिए।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-hi",
+          "scope": "मुख्य तिथि-अधिकार",
+          "difference": "अलग तिथि, उपवास, भोजन, मंत्र या पारण अलग अधिकार है।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "onam-or-other-vamana-reception-hi",
+          "scope": "अलग कथा-स्वामी",
+          "difference": "केरल ओणम/महाबलि, अन्य वामन अभिव्यक्ति और अध्याय 53 में अनुपस्थित मान्धाता कथा अलग समीक्षा माँगते हैं।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-or-other-observance-hi",
+          "scope": "संस्था या पर्व",
+          "difference": "नामित मंदिर, वासुदेव द्वादशी, गौरी व्रत, कामिका या अन्य पर्व अलग रहते हैं।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन और जल सहित, विश्रामपूर्ण, बिस्तर वाला, ब्रह्मचर्य न थोपने वाला, बिना स्पर्श, बिना अग्नि, बिना खरीद, बिना फूल, बिना पत्ता, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "सब्जी, दही, दूध, दालें या अन्य खाद्य समूह न हटाएँ; शिशु/बाल आहार, गर्भावस्था/स्तनपान पोषण, एलर्जी-सुरक्षित भोजन, मधुमेह देखभाल, लिखी खुराक या दवा न बदलें।",
+        "जागरण, जमीन पर सोना, बिस्तर छोड़ना, ब्रह्मचर्य थोपना, अग्नि जलाना, कमल/पलाश लेना या अप्रमाणित पत्ते पर खाना न करें।",
+        "वामन-बलि से छल, दबाव वाली सहमति, भूमि/संपत्ति लेना, जाति-क्रम, अपमान, रोक या बल उचित न ठहराएँ; बलि को केवल दुष्ट न कहें।",
+        "विष्णु की निद्रा स्रोत-धर्मविचार है, ईश्वर की अनुपलब्धता नहीं और देखभाल, काम, सुरक्षा या आपात कार्रवाई टालने का कारण नहीं।",
+        "अध्याय को ओणम/महाबलि से न मिलाएँ और अध्याय 53 में अनुपस्थित मान्धाता-अकाल कथा न जोड़ें।",
+        "स्वर्ग, मुक्ति, पाप-मुक्ति, शुद्धि, यज्ञ-फल, सफलता, विवाह-निषेध, स्वास्थ्य-लाभ या किसी फल की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

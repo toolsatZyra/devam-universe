@@ -1,0 +1,1093 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "ashadhi-ekadashi-maharashtra-varkari-participant-2027-v1",
+  "observance_slugs": [
+    "ashadhi-ekadashi",
+    "devshayani-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "west-india",
+      "IN-MH"
+    ],
+    "tradition_codes": [
+      "varkari-maharashtra",
+      "vitthal-devotion-maharashtra"
+    ],
+    "institution_codes": [
+      "pandharpur-vitthal-rukmini-temple"
+    ],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "community",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Are you seeking complete remote remembrance, safe local viewing, or actual organised 2027 Wari/Pandharpur participation?",
+      "Which current Maharashtra government, police, municipal, organiser and temple notices apply to your exact date and route?",
+      "What food, hydration, medicine, footwear, mobility, communication, child/dependent-care, weather and exit needs apply?",
+      "Would crowd, river, long walking, separation, touch, photography, fasting or temple access be unsafe or unwanted?",
+      "Do you understand that the reviewed 2025 route is not a 2027 itinerary and that remote participation is complete?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-MH",
+        "tradition_code": "varkari-maharashtra",
+        "observance_slug": "ashadhi-ekadashi"
+      },
+      {
+        "region_code": "IN-MH",
+        "tradition_code": "vitthal-devotion-maharashtra",
+        "observance_slug": "devshayani-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "ashadhi-ekadashi",
+        "language_code": "en",
+        "note": "Maharashtra Varkari/Ashadhi participation companion. It provides a complete remote form and requires live 2027 official evidence for any route, crowd, river or temple activity. It is not a static itinerary or copied liturgy."
+      },
+      {
+        "observance_slug": "ashadhi-ekadashi",
+        "language_code": "hi",
+        "note": "महाराष्ट्र वारकरी/आषाढ़ी भागीदारी-सहायक। यह पूर्ण दूरस्थ रूप देता और किसी मार्ग, भीड़, नदी या मंदिर कार्य के लिए जीवित 2027 सरकारी प्रमाण माँगता है। यह स्थिर यात्रा-सूची या नकल की विधि नहीं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-devshayani-2027",
+      "maharashtra-dma-pandharichi-wari",
+      "vitthal-rukmini-temple-ashadhi-yatra"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "ashadhi-devshayani-local-date-plus-live-wari-authority-v1",
+    "closing_decision_rule_id": "ashadhi-remote-or-live-safe-exit-v1",
+    "live_schedule_required": true,
+    "freshness_note": "The reviewed Panchang fixtures place Ashadhi/Devshayani Ekadashi on Wednesday 14 July 2027. No reviewed source supplies a complete 2027 Wari route or temple operating programme. The reviewed 2025 route is not a 2027 itinerary and must never be copied forward. Actual participation requires current government, organiser, weather, crowd, river, transport, medical, accessibility and temple checks; the remote form is complete."
+  },
+  "sources": [
+    {
+      "source_id": "drik-devshayani-2027",
+      "title": "2027 Devshayani and Harishayan Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "ordinary, regional and Indian ISKCON date and alias discovery for 14 July 2027; no portable parana, Chaturmas, Wari or temple authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/devshayani/devshayani-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-07-14",
+        "identity": "Ashadha Shukla Devshayani Ekadashi",
+        "alias": "Harishayan Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "maharashtra-tourism-ashadhi",
+      "title": "Ashadhi Ekadashi",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "source_role": "official identity of Ashadhi with Devshayani and broad Vitthal/Wari discovery; unsourced household instructions and guarantees excluded",
+      "rights_lane": "citation_only",
+      "url": "https://maharashtratourism.gov.in/festivals/ashadhi-ekadashi/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Ashadhi identity and Wari",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "maharashtra-dma-pandharichi-wari",
+      "title": "Pandharichi Wari",
+      "publisher": "Directorate of Municipal Administration, Government of Maharashtra",
+      "source_role": "official account of Dehu and Alandi palkhis, Warkari walking, abhang and kirtan, and year-specific 2025 route; not a 2027 schedule",
+      "rights_lane": "citation_only",
+      "url": "https://mahadma.maharashtra.gov.in/en/pandharichi-wari/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "programme_year": "2025",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "vitthal-rukmini-temple-ashadhi-yatra",
+      "title": "Sacred Yatras of Pandharpur: Ashadhi Yatra",
+      "publisher": "Shri Vitthal Rukmini Temple Committee, Pandharpur",
+      "source_role": "institutional Ashadhi, Varkari, dindi, temple and Chaturmas context; live 2027 access and programme unresolved",
+      "rights_lane": "citation_only",
+      "url": "https://vitthalrukminimandir.org/yatra.php",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Ashadhi Yatra",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "maharashtra-sdma-wari-rescue",
+      "title": "Wari Rescue Operations at Pandharpur Yatra",
+      "publisher": "Maharashtra State Disaster Management Authority",
+      "source_role": "official mass-gathering, river and drowning-risk evidence; not a bathing instruction",
+      "rights_lane": "citation_only",
+      "url": "https://sdma.maharashtra.gov.in/en/realtime-response-rescue-activity/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Wari Rescue Operations at Pandharpur Yatra",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "ncdc-heat-community-manual",
+      "title": "Training Manual for Community Members: Recognising and Preventing Heat-Related Illnesses",
+      "publisher": "National Centre for Disease Control, Ministry of Health and Family Welfare",
+      "source_role": "official hydration, exertion, medication and heat-illness safety boundary for travel and outdoor participation",
+      "rights_lane": "citation_only",
+      "url": "https://ncdc.mohfw.gov.in/uploads/pdf/heat14.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "community heat prevention and response",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-devshayani-research",
+      "title": "Devshayani Ekadashi material applicability split and ordinary-lane research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of alias, naming tension, Vamana-Bali, diet, sleep, celibacy, Chaturmas, Wari split and closing boundaries",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/devshayani-ekadashi-material-applicability-split-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "ashadhi-ekadashi",
+        "devshayani-ekadashi"
+      ],
+      "title": "Ashadhi Ekadashi: honour the Varkari Wari with live safety and a complete no-travel form",
+      "short_answer": "Confirm Ashadhi/Devshayani locally, then choose the complete remote form unless you have current official 2027 route, organiser, weather, crowd, river, health and access information. Eat, hydrate, take medicine, use footwear and rest normally; remember Vitthal with a familiar abhang, name or silence; hear how the Dnyaneshwar and Tukaram palkhis, dindis and Warkaris converge toward Pandharpur; and close without fasting, long walking, river entry, crowd entry, temple access or guaranteed darshan. Never copy a 2025 route into 2027.",
+      "significance": {
+        "text": "Maharashtra government and the Pandharpur temple committee describe Ashadhi Ekadashi as a major Vitthal-centred Varkari gathering: palkhis associated with Sant Dnyaneshwar and Sant Tukaram travel from Alandi and Dehu, dindis and Warkaris sing abhang and kirtan, and participants converge toward Pandharpur. This is a living community and institutional practice, not a generic national ritual. A remote remembrance is complete; actual participation depends on current authorities and individual safety.",
+        "source_ids": [
+          "maharashtra-tourism-ashadhi",
+          "maharashtra-dma-pandharichi-wari",
+          "vitthal-rukmini-temple-ashadhi-yatra",
+          "maharashtra-sdma-wari-rescue",
+          "devam-devshayani-research"
+        ],
+        "scope_note": "Living-tradition participation companion; not a route, temple liturgy, river, medical, crowd or pilgrimage instruction."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "ashadhi-wari-living-tradition-en",
+          "title": "The Dnyaneshwar and Tukaram palkhis converge toward Pandharpur",
+          "summary": "Government and temple sources describe the Maharashtra Ashadhi Wari as a living Vitthal devotion in which palkhis associated with Sant Dnyaneshwar depart from Alandi and Sant Tukaram from Dehu. Warkaris and dindis walk, sing abhang and kirtan, gather along changing routes and converge toward Pandharpur for the Ashadhi observance and Vitthal-Rukmini darshan. The reviewed municipal route is specifically for 2025 and is not a 2027 itinerary. This account does not claim one founder, one universal rite, guaranteed darshan or that every participant walks, fasts, bathes or enters the temple.",
+          "tradition_scope": "Contemporary Maharashtra Varkari and Pandharpur institutional context from reviewed government and temple sources",
+          "source_ids": [
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ashadhi-en-living-wari-context",
+          "population_scope": "Maharashtra Varkari devotees, dindis, local hosts and willing visitors under current organiser and public-authority guidance",
+          "description": "Vitthal remembrance, abhang and kirtan, palkhi/dindi movement, hospitality and Pandharpur convergence; descriptive only, with routes and access live.",
+          "source_ids": [
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "ashadhi-en-remote-participation",
+          "population_scope": "Anyone for whom travel, walking, crowd or temple access is unavailable or unsafe",
+          "description": "Fed and rested no-travel Vitthal remembrance, bounded Wari account, optional official broadcast and normal close.",
+          "source_ids": [
+            "maharashtra-sdma-wari-rescue",
+            "devam-devshayani-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "ashadhi-en-minimum-v1",
+          "label": "Complete remote Wari remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Remote Maharashtra Varkari participation companion; no route or institutional authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "drik-devshayani-2027",
+            "icmr-type1-diabetes-fasting",
+            "maharashtra-tourism-ashadhi",
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra",
+            "maharashtra-sdma-wari-rescue",
+            "ncdc-heat-community-manual",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional official live page or lawful broadcast",
+              "required": false,
+              "substitutions": [
+                "No screen",
+                "A remembered Vitthal name or silence"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            },
+            {
+              "item": "Optional existing water, medicine or mobility aid for normal care",
+              "required": false,
+              "substitutions": [
+                "Use ordinary personal care",
+                "No ritual object"
+              ],
+              "source_ids": [
+                "ncdc-heat-community-manual"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm Ashadhi/Devshayani from your Maharashtra city and accepted authority. Treat every Wari route, halt, procession and temple schedule as live information; the reviewed 2025 route is not a 2027 itinerary.",
+              "why": "The Ekadashi date and institutional programme are separate dependencies.",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "maharashtra-dma-pandharichi-wari",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Choose the complete remote/no-travel form. Eat, hydrate, take medicine, use footwear and mobility support, and sleep normally; no fast, walk, crowd, river or temple entry is required.",
+              "why": "Participation is complete without physical pilgrimage.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vitthal with a familiar abhang, name, prayer or silence. Do not reproduce restricted lyrics; no image, instrument, offering or purchase is needed.",
+              "why": "Varkari devotion can be honoured without travel or invented liturgy.",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear a bounded living-tradition account: Dnyaneshwar and Tukaram palkhis from Alandi and Dehu, dindis and Warkaris converging toward Pandharpur, singing abhang and kirtan, and Vitthal-Rukmini darshan. Label routes and programmes by year and institution.",
+              "why": "The major Maharashtra practice is represented without turning description into instruction.",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Choose one no-travel participation: listen to a lawfully available familiar recording, offer silent remembrance, or check an official live update without forwarding an unverified route.",
+              "why": "A bounded remote form avoids crowd and travel risk.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Do not enter a crowd or river, bathe, walk barefoot, begin a long route, follow a vehicle procession or approach the temple from this pack. Current officials and personal medical/access needs govern any real participation.",
+              "why": "Mass gathering and river risks require live authority.",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude, normal care and no claim that remote or physical participation guarantees darshan, merit, health, success or liberation.",
+              "why": "Devotion is not a guaranteed outcome or attendance ranking.",
+              "source_ids": [
+                "maharashtra-tourism-ashadhi",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close at home with normal food, water, medicine, footwear, bed and rest. No route, fast, river or temple action begins here.",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "Remote Maharashtra Varkari participation companion; no route or institutional authority."
+          }
+        },
+        {
+          "procedure_id": "ashadhi-en-standard-v1",
+          "label": "Verified local welcome or viewing",
+          "tier": "standard",
+          "setting": "community_participation",
+          "authority_scope": "Current lawful local participation only; no dindi membership, river or temple authority.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-devshayani-2027",
+            "icmr-type1-diabetes-fasting",
+            "maharashtra-tourism-ashadhi",
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra",
+            "maharashtra-sdma-wari-rescue",
+            "ncdc-heat-community-manual",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "Current official municipal, police or organiser notice",
+              "required": false,
+              "substitutions": [
+                "Use the remote form",
+                "Do not participate without live information"
+              ],
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "maharashtra-sdma-wari-rescue"
+              ]
+            },
+            {
+              "item": "Personal food, water, medicine, footwear, access and return plan",
+              "required": false,
+              "substitutions": [
+                "Shorten or cancel participation",
+                "Use qualified support"
+              ],
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "maharashtra-sdma-wari-rescue"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "For a local welcome or viewing, verify today's official municipal/police/temple notice, route diversions, access, weather and crowd advice. If any item is unavailable, use the remote form.",
+              "why": "A current plan is essential for public participation.",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "maharashtra-sdma-wari-rescue",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, medicine, footwear, mobility support, phone power, identification and a return plan appropriate to each person. Children and dependent adults stay with a consenting responsible carer.",
+              "why": "Ordinary safety and care continue in devotional settings.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "maharashtra-sdma-wari-rescue"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Observe from a lawful safe place or use an official broadcast. Sing or listen only by choice; do not block routes, press into a dindi, touch a palkhi, photograph people closely or claim affiliation.",
+              "why": "Consent and crowd flow protect participants and the living tradition.",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Leave early for crowding, weather, fatigue, distress, access failure or official direction. Never enter the Chandrabhaga/Bhima river from this guide.",
+              "why": "Exit and river boundaries respond to documented risk.",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Return safely, hydrate and rest normally. Do not copy a route, temple rite, fasting rule or crowd practice into home guidance.",
+              "why": "The companion does not become a static pilgrimage manual.",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Return safely, hydrate, eat, take medicine and rest. Do not convert observation into a route or rite.",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "Current lawful local participation only; no dindi membership, river or temple authority."
+          }
+        },
+        {
+          "procedure_id": "ashadhi-en-elaborate-v1",
+          "label": "Live-authority Wari or Pandharpur participation gate",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Gate for live organised participation; this pack is not an operational itinerary.",
+          "form": "institutional_participation",
+          "estimated_minutes": 60,
+          "source_ids": [
+            "drik-devshayani-2027",
+            "icmr-type1-diabetes-fasting",
+            "maharashtra-tourism-ashadhi",
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra",
+            "maharashtra-sdma-wari-rescue",
+            "ncdc-heat-community-manual",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "Complete current 2027 official and personal safety plan",
+              "required": false,
+              "substitutions": [
+                "Cancel travel",
+                "Use the complete remote form"
+              ],
+              "source_ids": [
+                "drik-devshayani-2027",
+                "icmr-type1-diabetes-fasting",
+                "maharashtra-tourism-ashadhi",
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra",
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "For actual Wari or Pandharpur travel, obtain the current official 2027 route, registration/permission if any, transport, accommodation, temple, crowd, river, weather, health and accessibility instructions. Do not substitute this pack.",
+              "why": "The reviewed sources do not establish a 2027 operational programme.",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "icmr-type1-diabetes-fasting",
+                "maharashtra-tourism-ashadhi",
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra",
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Make an individual medical, mobility, hydration, food, footwear, communication, separation and exit plan with qualified help where needed; participation may be shortened, adapted or cancelled.",
+              "why": "Long walking and mass gatherings create individual risks.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "maharashtra-sdma-wari-rescue",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Follow current officials and the named organiser only. Do not enter water, cross barriers, improvise a route, join an unknown group, abandon dependents or copy temple liturgy.",
+              "why": "Live authority and safeguarding govern the event.",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "vitthal-rukmini-temple-ashadhi-yatra"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Exit for any safety, health, consent or access concern and use emergency services when required. Completion does not depend on distance, barefoot walking, bathing, crowd entry or darshan.",
+              "why": "Human safety is not a failure of devotion.",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Exit safely when needed; distance, bathing, crowd entry and darshan are never completion requirements.",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "Gate for live organised participation; this pack is not an operational itinerary."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-remote-and-local-welcome-form",
+          "scope": "participation form",
+          "difference": "Language, familiar abhang/silence, broadcast/no screen and remote/safe local welcome are minor and stay in this lane.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "live-2027-wari-route-en",
+          "scope": "live pilgrimage",
+          "difference": "Actual 2027 routes, halts, dindis, transport, accommodation, weather and official notices require live verification.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pandharpur-temple-programme-en",
+          "scope": "named institution",
+          "difference": "Temple entry, darshan, rites, fees, timing and access remain under current temple authority.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "river-or-mass-gathering-safety-en",
+          "scope": "professional safety",
+          "difference": "River, drowning, crowd, emergency, medical and rescue decisions require current official guidance.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "ordinary-devshayani-household-en",
+          "scope": "separate household component",
+          "difference": "The ordinary North/West Smarta household route is the separate material component.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-varkari-or-saint-tradition-en",
+          "scope": "other tradition owner",
+          "difference": "Full saint stories, abhang texts, initiation, dindi membership and other Varkari authority require separate owners.",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A complete remote form is fed, hydrated, rested, footwear-using, no-fast, no-walk, no-crowd, no-river, no-bathing, no-temple-entry, no-purchase and material-free.",
+        "Never copy the reviewed 2025 route into 2027; verify current official route, weather, crowd, transport, accommodation, medical and accessibility information.",
+        "Do not enter the Chandrabhaga or Bhima river, bathe, approach an edge, cross barriers or treat ritual bathing as required; official evidence records drowning risk.",
+        "Do not begin long-distance or barefoot walking from this guide. Keep food, water, medicine, footwear, mobility support, communication and an exit plan.",
+        "Do not press into a dindi, touch a palkhi, block a route, follow unknown groups, abandon dependents, photograph people closely or claim community affiliation.",
+        "Attendance, distance, fasting, bathing, crowd entry and darshan do not rank devotion; a remote or cancelled form is complete.",
+        "No darshan, merit, health, success, safety, liberation or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "ashadhi-ekadashi",
+        "devshayani-ekadashi"
+      ],
+      "title": "आषाढ़ी एकादशी: जीवित सुरक्षा और पूर्ण बिना-यात्रा रूप से वारकरी वारी का सम्मान",
+      "short_answer": "आषाढ़ी/देवशयनी की स्थानीय पुष्टि करें, फिर जब तक वर्तमान सरकारी 2027 मार्ग, आयोजक, मौसम, भीड़, नदी, स्वास्थ्य और प्रवेश सूचना न हो, पूर्ण दूरस्थ रूप चुनें। सामान्य भोजन, जल, दवा, जूते और आराम रखें; परिचित अभंग, विठ्ठल-नाम या मौन से स्मरण करें; ज्ञानेश्वर व तुकाराम पालखी, दिंडी और वारकरियों के पंढरपुर की ओर संगम का वर्णन सुनें; और उपवास, लंबी पैदल यात्रा, नदी, भीड़, मंदिर-प्रवेश या निश्चित दर्शन बिना समापन करें। 2025 मार्ग को 2027 में कभी न नकल करें।",
+      "significance": {
+        "text": "महाराष्ट्र सरकार और पंढरपुर मंदिर समिति आषाढ़ी एकादशी को विठ्ठल-केंद्रित बड़ा वारकरी संगम बताते हैं: संत ज्ञानेश्वर और संत तुकाराम से जुड़ी पालखी आलंदी और देहू से चलती हैं, दिंडी व वारकरी अभंग-कीर्तन करते और पंढरपुर की ओर मिलते हैं। यह जीवित समुदाय और संस्थागत अभ्यास है, सार्वभौम राष्ट्रीय अनुष्ठान नहीं। दूरस्थ स्मरण पूर्ण है; वास्तविक भागीदारी वर्तमान अधिकारी और निजी सुरक्षा पर निर्भर है।",
+        "source_ids": [
+          "maharashtra-tourism-ashadhi",
+          "maharashtra-dma-pandharichi-wari",
+          "vitthal-rukmini-temple-ashadhi-yatra",
+          "maharashtra-sdma-wari-rescue",
+          "devam-devshayani-research"
+        ],
+        "scope_note": "जीवित परंपरा भागीदारी-सहायक; मार्ग, मंदिर-विधि, नदी, चिकित्सा, भीड़ या तीर्थ निर्देश नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "ashadhi-wari-living-tradition-hi",
+          "title": "ज्ञानेश्वर और तुकाराम पालखी पंढरपुर की ओर मिलती हैं",
+          "summary": "सरकारी और मंदिर स्रोत महाराष्ट्र आषाढ़ी वारी को जीवित विठ्ठल भक्ति बताते हैं जिसमें संत ज्ञानेश्वर से जुड़ी पालखी आलंदी और संत तुकाराम से जुड़ी पालखी देहू से चलती हैं। वारकरी और दिंडी पैदल चलते, अभंग-कीर्तन गाते, बदलते मार्गों पर मिलते और आषाढ़ी पर्व तथा विठ्ठल-रुक्मिणी दर्शन के लिए पंढरपुर की ओर आते हैं। समीक्षित नगर मार्ग केवल 2025 का है, 2027 यात्रा-सूची नहीं। यह वर्णन एक संस्थापक, एक सार्वभौम विधि, निश्चित दर्शन या हर व्यक्ति के चलने, उपवास, स्नान या मंदिर-प्रवेश का दावा नहीं करता।",
+          "tradition_scope": "समीक्षित सरकारी और मंदिर स्रोतों से समकालीन महाराष्ट्र वारकरी और पंढरपुर संस्थागत संदर्भ",
+          "source_ids": [
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ashadhi-hi-living-wari-context",
+          "population_scope": "वर्तमान आयोजक और सरकारी मार्गदर्शन में महाराष्ट्र वारकरी भक्त, दिंडी, स्थानीय स्वागतकर्ता और इच्छुक आगंतुक",
+          "description": "विठ्ठल-स्मरण, अभंग-कीर्तन, पालखी/दिंडी गति, आतिथ्य और पंढरपुर संगम; केवल वर्णन, मार्ग और प्रवेश जीवित।",
+          "source_ids": [
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "ashadhi-hi-remote-participation",
+          "population_scope": "जिसके लिए यात्रा, पैदल चलना, भीड़ या मंदिर-प्रवेश अनुपलब्ध या असुरक्षित हो",
+          "description": "भोजन और विश्राम सहित बिना-यात्रा विठ्ठल-स्मरण, सीमित वारी-वर्णन, वैकल्पिक सरकारी प्रसारण और सामान्य समापन।",
+          "source_ids": [
+            "maharashtra-sdma-wari-rescue",
+            "devam-devshayani-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "ashadhi-hi-minimum-v1",
+          "label": "पूर्ण दूरस्थ वारी-स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "दूरस्थ महाराष्ट्र वारकरी भागीदारी-सहायक; मार्ग या संस्थागत अधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "drik-devshayani-2027",
+            "icmr-type1-diabetes-fasting",
+            "maharashtra-tourism-ashadhi",
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra",
+            "maharashtra-sdma-wari-rescue",
+            "ncdc-heat-community-manual",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक सरकारी जीवित पृष्ठ या वैध प्रसारण",
+              "required": false,
+              "substitutions": [
+                "बिना स्क्रीन",
+                "स्मृत विठ्ठल-नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-devshayani-research"
+              ]
+            },
+            {
+              "item": "सामान्य देखभाल के लिए वैकल्पिक मौजूदा जल, दवा या गतिशीलता-सहायता",
+              "required": false,
+              "substitutions": [
+                "सामान्य निजी देखभाल",
+                "कोई अनुष्ठान वस्तु नहीं"
+              ],
+              "source_ids": [
+                "ncdc-heat-community-manual"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने महाराष्ट्र शहर और मान्य पंचांग से आषाढ़ी/देवशयनी की पुष्टि करें। हर वारी मार्ग, पड़ाव, जुलूस और मंदिर कार्यक्रम को जीवित सूचना मानें; समीक्षित 2025 मार्ग 2027 यात्रा-सूची नहीं।",
+              "why": "एकादशी तिथि और संस्थागत कार्यक्रम अलग निर्भरताएँ हैं।",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "maharashtra-dma-pandharichi-wari",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "पूर्ण दूरस्थ/बिना यात्रा रूप चुनें। सामान्य भोजन, जल, दवा, जूते, गतिशीलता-सहायता और नींद रखें; उपवास, पैदल यात्रा, भीड़, नदी या मंदिर प्रवेश जरूरी नहीं।",
+              "why": "शारीरिक तीर्थ बिना भागीदारी पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विठ्ठल का स्मरण परिचित अभंग, नाम, प्रार्थना या मौन से करें। प्रतिबंधित गीत न दोहराएँ; चित्र, वाद्य, चढ़ावा या खरीद जरूरी नहीं।",
+              "why": "वारी भक्ति यात्रा या गढ़ी विधि बिना सम्मानित हो सकती है।",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "जीवित परंपरा का सीमित वर्णन सुनें: आलंदी और देहू से ज्ञानेश्वर व तुकाराम पालखी, दिंडी और वारकरी पंढरपुर की ओर, अभंग-कीर्तन और विठ्ठल-रुक्मिणी दर्शन। मार्ग व कार्यक्रम को वर्ष और संस्था सहित नाम दें।",
+              "why": "महाराष्ट्र का मुख्य अभ्यास वर्णन से आदेश बनाए बिना आता है।",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "बिना यात्रा एक भागीदारी चुनें: वैध परिचित रिकॉर्डिंग सुनें, मौन स्मरण करें या आधिकारिक जीवित अपडेट देखें; अपुष्ट मार्ग आगे न भेजें।",
+              "why": "सीमित दूरस्थ रूप भीड़ और यात्रा जोखिम घटाता है।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "इस पैक से भीड़ या नदी में न जाएँ, स्नान, नंगे पैर चलना, लंबा मार्ग, वाहन-जुलूस या मंदिर-प्रवेश शुरू न करें। वास्तविक भागीदारी वर्तमान अधिकारी और निजी चिकित्सा/प्रवेश जरूरत तय करें।",
+              "why": "जनसमूह और नदी जोखिम को जीवित अधिकार चाहिए।",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता और सामान्य देखभाल से समापन करें; दूरस्थ या शारीरिक भागीदारी से दर्शन, पुण्य, स्वास्थ्य, सफलता या मुक्ति की गारंटी न मानें।",
+              "why": "भक्ति उपस्थिति-क्रम या निश्चित फल नहीं।",
+              "source_ids": [
+                "maharashtra-tourism-ashadhi",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "घर पर सामान्य भोजन, जल, दवा, जूते, बिस्तर और आराम से समापन करें। यहाँ मार्ग, उपवास, नदी या मंदिर-कार्य शुरू नहीं होता।",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "दूरस्थ महाराष्ट्र वारकरी भागीदारी-सहायक; मार्ग या संस्थागत अधिकार नहीं।"
+          }
+        },
+        {
+          "procedure_id": "ashadhi-hi-standard-v1",
+          "label": "सत्यापित स्थानीय स्वागत या दर्शन",
+          "tier": "standard",
+          "setting": "community_participation",
+          "authority_scope": "केवल वर्तमान कानूनी स्थानीय भागीदारी; दिंडी सदस्यता, नदी या मंदिर-अधिकार नहीं।",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-devshayani-2027",
+            "icmr-type1-diabetes-fasting",
+            "maharashtra-tourism-ashadhi",
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra",
+            "maharashtra-sdma-wari-rescue",
+            "ncdc-heat-community-manual",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "वर्तमान सरकारी नगर, पुलिस या आयोजक सूचना",
+              "required": false,
+              "substitutions": [
+                "दूरस्थ रूप लें",
+                "जीवित सूचना बिना भाग न लें"
+              ],
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "maharashtra-sdma-wari-rescue"
+              ]
+            },
+            {
+              "item": "निजी भोजन, जल, दवा, जूते, प्रवेश और वापसी योजना",
+              "required": false,
+              "substitutions": [
+                "भागीदारी छोटी या रद्द करें",
+                "योग्य सहायता लें"
+              ],
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "maharashtra-sdma-wari-rescue"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय स्वागत या दर्शन के लिए आज की सरकारी नगर/पुलिस/मंदिर सूचना, मार्ग-बदलाव, प्रवेश, मौसम और भीड़-सलाह जाँचें। कोई सूचना न मिले तो दूरस्थ रूप लें।",
+              "why": "सार्वजनिक भागीदारी के लिए वर्तमान योजना जरूरी है।",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "maharashtra-sdma-wari-rescue",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "हर व्यक्ति के अनुसार भोजन, जल, दवा, जूते, गतिशीलता-सहायता, फोन ऊर्जा, पहचान और वापसी योजना रखें। बच्चे व निर्भर वयस्क सहमत जिम्मेदार देखभालकर्ता के साथ रहें।",
+              "why": "भक्ति-स्थान में सामान्य सुरक्षा और देखभाल जारी रहती है।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "maharashtra-sdma-wari-rescue"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "कानूनी सुरक्षित स्थान या आधिकारिक प्रसारण से देखें। गाना/सुनना स्वैच्छिक हो; मार्ग न रोकें, दिंडी में न धकेलें, पालखी न छुएँ, लोगों के निकट फोटो न लें या संबद्धता का दावा न करें।",
+              "why": "सहमति और भीड़-प्रवाह परंपरा और लोगों की रक्षा करते हैं।",
+              "source_ids": [
+                "maharashtra-dma-pandharichi-wari",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "भीड़, मौसम, थकान, परेशानी, प्रवेश-विफलता या अधिकारी के निर्देश पर जल्दी लौटें। इस मार्ग से चंद्रभागा/भीमा नदी में कभी प्रवेश न करें।",
+              "why": "निकास और नदी-सीमा दर्ज जोखिम के अनुसार हैं।",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "सुरक्षित लौटकर सामान्य जल और आराम लें। मार्ग, मंदिर-विधि, उपवास या भीड़-अभ्यास को घर का निर्देश न बनाएँ।",
+              "why": "साथी स्थिर तीर्थ-पुस्तिका नहीं बनता।",
+              "source_ids": [
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित लौटकर जल, भोजन, दवा और आराम लें। दर्शन को मार्ग या विधि न बनाएँ।",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "केवल वर्तमान कानूनी स्थानीय भागीदारी; दिंडी सदस्यता, नदी या मंदिर-अधिकार नहीं।"
+          }
+        },
+        {
+          "procedure_id": "ashadhi-hi-elaborate-v1",
+          "label": "जीवित-अधिकार वारी या पंढरपुर भागीदारी द्वार",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "जीवित संगठित भागीदारी का द्वार; यह पैक संचालन यात्रा-सूची नहीं।",
+          "form": "institutional_participation",
+          "estimated_minutes": 60,
+          "source_ids": [
+            "drik-devshayani-2027",
+            "icmr-type1-diabetes-fasting",
+            "maharashtra-tourism-ashadhi",
+            "maharashtra-dma-pandharichi-wari",
+            "vitthal-rukmini-temple-ashadhi-yatra",
+            "maharashtra-sdma-wari-rescue",
+            "ncdc-heat-community-manual",
+            "devam-devshayani-research"
+          ],
+          "materials": [
+            {
+              "item": "पूर्ण वर्तमान 2027 सरकारी और निजी सुरक्षा योजना",
+              "required": false,
+              "substitutions": [
+                "यात्रा रद्द करें",
+                "पूर्ण दूरस्थ रूप लें"
+              ],
+              "source_ids": [
+                "drik-devshayani-2027",
+                "icmr-type1-diabetes-fasting",
+                "maharashtra-tourism-ashadhi",
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra",
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "वास्तविक वारी या पंढरपुर यात्रा के लिए वर्तमान सरकारी 2027 मार्ग, संभव पंजीकरण/अनुमति, परिवहन, ठहराव, मंदिर, भीड़, नदी, मौसम, स्वास्थ्य और सुगम्यता निर्देश लें। इस पैक को विकल्प न बनाएँ।",
+              "why": "समीक्षित स्रोत 2027 संचालन कार्यक्रम सिद्ध नहीं करते।",
+              "source_ids": [
+                "drik-devshayani-2027",
+                "icmr-type1-diabetes-fasting",
+                "maharashtra-tourism-ashadhi",
+                "maharashtra-dma-pandharichi-wari",
+                "vitthal-rukmini-temple-ashadhi-yatra",
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "जरूरत पर योग्य सहायता से निजी चिकित्सा, गतिशीलता, जल, भोजन, जूते, संचार, बिछुड़ने और निकास योजना बनाएँ; भागीदारी छोटी, अनुकूलित या रद्द हो सकती है।",
+              "why": "लंबी पैदल यात्रा और जनसमूह निजी जोखिम लाते हैं।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "maharashtra-sdma-wari-rescue",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल वर्तमान अधिकारी और नामित आयोजक मानें। पानी में न जाएँ, अवरोध न पार करें, मार्ग न गढ़ें, अनजान समूह न जुड़ें, निर्भर व्यक्ति न छोड़ें या मंदिर-विधि न नकल करें।",
+              "why": "जीवित अधिकार और सुरक्षा कार्यक्रम चलाते हैं।",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "vitthal-rukmini-temple-ashadhi-yatra"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सुरक्षा, स्वास्थ्य, सहमति या प्रवेश चिंता में निकलें और जरूरत पर आपात सेवा लें। पूर्णता दूरी, नंगे पैर चलने, स्नान, भीड़-प्रवेश या दर्शन पर निर्भर नहीं।",
+              "why": "मानव सुरक्षा भक्ति की विफलता नहीं।",
+              "source_ids": [
+                "maharashtra-sdma-wari-rescue",
+                "ncdc-heat-community-manual",
+                "devam-devshayani-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "जरूरत पर सुरक्षित निकलें; दूरी, स्नान, भीड़ और दर्शन कभी पूर्णता की शर्त नहीं।",
+            "source_ids": [
+              "devam-devshayani-research"
+            ],
+            "scope_note": "जीवित संगठित भागीदारी का द्वार; यह पैक संचालन यात्रा-सूची नहीं।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-remote-and-local-welcome-form-hi",
+          "scope": "भागीदारी रूप",
+          "difference": "भाषा, अभंग/मौन, प्रसारण/बिना स्क्रीन और दूरस्थ/सुरक्षित स्थानीय स्वागत छोटे अंतर हैं।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "live-2027-wari-route-hi",
+          "scope": "जीवित यात्रा",
+          "difference": "वास्तविक 2027 मार्ग, पड़ाव, दिंडी, परिवहन, ठहराव, मौसम और अधिकारी सूचना की जीवित पुष्टि चाहिए।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pandharpur-temple-programme-hi",
+          "scope": "नामित संस्था",
+          "difference": "मंदिर प्रवेश, दर्शन, पूजा, शुल्क, समय और पहुँच मंदिर समिति के वर्तमान अधिकार में हैं।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "river-or-mass-gathering-safety-hi",
+          "scope": "पेशेवर सुरक्षा",
+          "difference": "नदी, डूबना, भीड़, आपात, चिकित्सा और बचाव के लिए वर्तमान सरकारी निर्देश चाहिए।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "ordinary-devshayani-household-hi",
+          "scope": "अलग गृह-घटक",
+          "difference": "सामान्य उत्तर/पश्चिम स्मार्त गृह-विधि अलग मुख्य घटक है।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-varkari-or-saint-tradition-hi",
+          "scope": "अन्य परंपरा",
+          "difference": "संत-कथा, अभंग का पूरा पाठ, दीक्षा, दिंडी सदस्यता और अन्य वारकरी अधिकार अलग स्वामित्व माँगते हैं।",
+          "source_ids": [
+            "devam-devshayani-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण दूरस्थ रूप भोजन और जल सहित, विश्रामपूर्ण, जूते वाला, बिना उपवास, बिना पैदल यात्रा, बिना भीड़, बिना नदी, बिना स्नान, बिना मंदिर-प्रवेश, बिना खरीद और बिना सामग्री का है।",
+        "समीक्षित 2025 मार्ग को 2027 में कभी न नकल करें; वर्तमान सरकारी मार्ग, मौसम, भीड़, परिवहन, ठहराव, चिकित्सा और सुगम्यता सूचना जाँचें।",
+        "चंद्रभागा या भीमा नदी में न जाएँ, स्नान, किनारे जाना या अवरोध पार न करें और अनुष्ठानिक स्नान जरूरी न मानें; सरकारी प्रमाण डूबने का जोखिम दर्ज करता है।",
+        "इस मार्ग से लंबी या नंगे पैर पैदल यात्रा शुरू न करें। भोजन, जल, दवा, जूते, गतिशीलता-सहायता, संचार और निकास योजना रखें।",
+        "दिंडी में न धकेलें, पालखी न छुएँ, मार्ग न रोकें, अनजान समूह न पकड़ें, निर्भर व्यक्ति न छोड़ें, निकट फोटो न लें या समुदाय-संबंध का दावा न करें।",
+        "उपस्थिति, दूरी, उपवास, स्नान, भीड़-प्रवेश और दर्शन भक्ति का क्रम नहीं; दूरस्थ या रद्द रूप पूर्ण है।",
+        "दर्शन, पुण्य, स्वास्थ्य, सफलता, सुरक्षा, मुक्ति या किसी फल की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

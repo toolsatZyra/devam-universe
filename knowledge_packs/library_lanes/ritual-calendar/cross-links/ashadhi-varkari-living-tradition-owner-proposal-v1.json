@@ -1,0 +1,57 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-ashadhi-varkari-living-tradition-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "ashadhi-to-varkari-living-tradition-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadhi-ekadashi-maharashtra-varkari-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "living-tradition/maharashtra-varkari-ashadhi-wari-source-context"
+      },
+      "relationship_family": "practice",
+      "predicate": "requests_community_reviewed_varkari_ashadhi_wari_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Explore the source-labelled Maharashtra Varkari Wari context",
+        "hi": "महाराष्ट्र वारकरी वारी का स्रोत-नामित संदर्भ देखें"
+      },
+      "scope": {
+        "statement": "The participant pack uses current government and temple descriptions of Ashadhi identity, Dnyaneshwar and Tukaram palkhis, dindis, Warkari walking, abhang, kirtan and Pandharpur convergence. A future living-tradition owner should obtain community review, rights-cleared abhang expressions, saint-story ownership and current institutional context without converting year-specific routes, temple liturgy, river bathing, barefoot walking, fasting or affiliation into universal instructions.",
+        "geography_codes": [
+          "IN-MH"
+        ],
+        "tradition_codes": [
+          "varkari-maharashtra",
+          "vitthal-devotion-maharashtra"
+        ],
+        "time_scope": "Ashadhi/Devshayani with live year-specific Wari and Pandharpur schedules; reviewed Panchang date 14 July 2027, operational programme unresolved",
+        "source_expression_scope": "Government of Maharashtra, Shri Vitthal Rukmini Temple Committee and Maharashtra SDMA discovery context; community review and 2027 live programme unresolved"
+      },
+      "evidence_refs": [
+        {
+        "evidence_kind": "official_current",
+          "ref": "https://mahadma.maharashtra.gov.in/en/pandharichi-wari/",
+          "claim_scope": "Government account of the 2025 Dehu/Alandi palkhis and Wari context; explicitly not reused as a 2027 route."
+        },
+        {
+        "evidence_kind": "official_current",
+          "ref": "https://vitthalrukminimandir.org/yatra.php",
+          "claim_scope": "Temple committee account of Ashadhi Yatra, Varkari gathering and Pandharpur context."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/ashadhi-ekadashi-maharashtra-varkari-participant-2027-v1.json",
+          "claim_scope": "Bilingual complete remote form, live participation gates, crowd/river/travel safety, closing and material-variant boundaries."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
