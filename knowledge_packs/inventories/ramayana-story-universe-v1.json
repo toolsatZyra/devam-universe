@@ -51979,7 +51979,20 @@
       "draftSceneOutlines": 0,
       "bilingualBeats": 2340
     },
-    "completion_state": "continuity_review_pending"
+    "completion_state": "continuity_review_pending",
+    "source_term_reconciliation": {
+      "inventory": "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json",
+      "completion_state": "supplementary_nonblocking_diagnostic",
+      "counters": {
+        "candidate_occurrences": 37505,
+        "candidate_terms": 4323,
+        "curated_alias_matched": 29,
+        "exact_authored_lexeme_matched": 337,
+        "resolved_terms_covered_in_all_mentioned_source_units": 60,
+        "resolved_terms_missing_from_some_covering_episodes": 306,
+        "source_term_review_needed": 3957
+      }
+    }
   },
   "living_world": {
     "places": [
@@ -53160,7 +53173,12 @@
   "next_authoring_queue": {
     "selected_narrative_compression_candidates": [],
     "living_items_needing_bilingual_content": [],
-    "entity_reconciliation": "Compare the authored entity index against all 652 retained source units so minor named figures are not lost merely because they are absent from current beat metadata.",
-    "place_reconciliation": "Compare narrative-place labels against all 652 source units, then map only independently researched living-place traditions."
+    "entity_and_place_reconciliation": {
+      "inventory": "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json",
+      "state": "supplementary_nonblocking_diagnostic",
+      "boundary": "The lexical queue is not a consumer-story completion denominator. Use its resolved high-signal gaps during continuity review; do not classify every capitalized token before authoring stories.",
+      "source_terms_needing_classification": 3957,
+      "resolved_terms_missing_from_some_covering_episodes": 306
+    }
   }
 }

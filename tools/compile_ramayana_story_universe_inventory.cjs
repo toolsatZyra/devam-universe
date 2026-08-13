@@ -9,6 +9,7 @@ const LIVING_CONNECTIONS_SOURCE = path.join(ROOT, "knowledge_packs/inventories/r
 const FESTIVAL_CONTENT_SOURCE = path.join(ROOT, "knowledge_packs/library_lanes/ramayana/festivals-and-performances-v1.json");
 const PLACE_CONTENT_SOURCE = path.join(ROOT, "knowledge_packs/library_lanes/ramayana/living-places-v1.json");
 const TEMPLE_CONTENT_SOURCE = path.join(ROOT, "knowledge_packs/library_lanes/ramayana/temples-v1.json");
+const SOURCE_TERM_RECONCILIATION_SOURCE = path.join(ROOT, "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json");
 const moduleCache = new Map();
 
 function loadTypescriptModule(filename) {
@@ -122,6 +123,8 @@ function buildInventory() {
   const festivalContent = JSON.parse(fs.readFileSync(FESTIVAL_CONTENT_SOURCE, "utf8"));
   const placeContent = JSON.parse(fs.readFileSync(PLACE_CONTENT_SOURCE, "utf8"));
   const templeContent = JSON.parse(fs.readFileSync(TEMPLE_CONTENT_SOURCE, "utf8"));
+  const sourceTermReconciliation = JSON.parse(fs.readFileSync(SOURCE_TERM_RECONCILIATION_SOURCE, "utf8"));
+  if (sourceTermReconciliation.source_expression.source_unit_count !== 652) throw new Error("Ramayana source-term denominator drift");
   const festivalContentById = new Map(festivalContent.records.map((item) => [item.item_id, item]));
   const registeredFestivalIds = new Set(festivalsAndPerformances.map((item) => item.item_id));
   if (festivalContentById.size !== festivalsAndPerformances.length
@@ -225,6 +228,11 @@ function buildInventory() {
       compression_candidates: compressionCandidates,
       counters: snapshot.counters,
       completion_state: compressionCandidates.length === 0 ? "continuity_review_pending" : "depth_repair",
+      source_term_reconciliation: {
+        inventory: "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json",
+        completion_state: sourceTermReconciliation.completion_state,
+        counters: sourceTermReconciliation.counters,
+      },
     },
     living_world: {
       places: placesWithContent,
@@ -252,8 +260,13 @@ function buildInventory() {
     next_authoring_queue: {
       selected_narrative_compression_candidates: compressionCandidates,
       living_items_needing_bilingual_content: [...placesWithContent.filter((item) => item.content_state !== "consumer_complete_en_hi").map((item) => item.place_id), ...templesWithContent.filter((item) => item.content_state !== "consumer_complete_en_hi").map((item) => item.temple_id), ...festivalsWithContent.filter((item) => item.content_state !== "consumer_complete_en_hi").map((item) => item.item_id)],
-      entity_reconciliation: "Compare the authored entity index against all 652 retained source units so minor named figures are not lost merely because they are absent from current beat metadata.",
-      place_reconciliation: "Compare narrative-place labels against all 652 source units, then map only independently researched living-place traditions.",
+      entity_and_place_reconciliation: {
+        inventory: "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json",
+        state: "supplementary_nonblocking_diagnostic",
+        boundary: "The lexical queue is not a consumer-story completion denominator. Use its resolved high-signal gaps during continuity review; do not classify every capitalized token before authoring stories.",
+        source_terms_needing_classification: sourceTermReconciliation.counters.source_term_review_needed,
+        resolved_terms_missing_from_some_covering_episodes: sourceTermReconciliation.counters.resolved_terms_missing_from_some_covering_episodes,
+      },
     },
   };
 }

@@ -1,132 +1,90 @@
 # Ramayana whole-journey adversarial review
 
-Status: **first full-corpus review checkpoint — 2026-08-13**
+Status: **current selected-expression review checkpoint — 2026-08-13**
 
-Priority update: on the user's later 2026-08-13 direction, this lane is
-library-first. Image generation and UI-world projection are paused until the
-user explicitly reauthorizes them. The data-only repair sequence now replaces
-eight compressed blocks with twenty-nine exact, non-overlapping scenes. The
-current corpus is 423 scenes and 1,842 bilingual
-beats; no turn remains below the provisional depth threshold.
+This is a library-first checkpoint. It reviews consumer-story coverage and
+continuity; it does not authorize image generation, UI work, deployment, or a
+hosted database mutation.
 
-## Decision
+## Current decision
 
-Devam has a complete beginning-to-end consumer retelling of one selected
-Manmatha Nath Dutt English expression: 652 source-ordered units are represented
-exactly once by 49 turns, 423 substantial English/Hindi scenes, and 1,842
-bilingual beats. This is not yet a complete illustrated Ramayana world and must
-not be described that way.
+The selected Manmatha Nath Dutt expression now has a beginning-to-end English
+and Hindi consumer projection: all 652 source units are partitioned exactly
+once across 49 ordered story cycles, 517 scenes, and 2,340 bilingual beats.
+Every scene has narrative places and character metadata. The compiled graph
+contains 516 story-order, 94 character-path, 50 place-echo, and 22
+parallel-thread links.
 
-The production-shaped journey currently exposes 55 dedicated illustrated
-scenes in seven detailed districts. Fourteen compass turns open one of those
-visual worlds directly. The remaining 35 turns have complete authored scenes in
-the narrative snapshot and prepared database projection, but the journey UI
-still presents them as orientation because equivalent art, district loading,
-and reversible world navigation have not been projected. The next product
-priority is to close this experience gap, not to write a second summary layer.
+This proves coverage of one selected expression. It does not prove that Devam
+contains every Ramayana tradition or every story a general Indian audience may
+expect. That wider claim remains out of scope until separately enumerated and
+authored.
 
-## Evidence reviewed at the first checkpoint
+## What currently passes
 
-- complete narrative snapshot: 7 arcs, 49 turns, 402 scenes, 1,746 beats;
-- exact selected-source partition: all 652 units represented once;
-- compiled traversal: 401 story-order, 94 character-path, 50 place-echo, and 22
-  parallel-thread links, plus six separately governed living-world bridges;
-- live illustrated journey: 55 scene stops, seven districts, 14 direct compass
-  entrances, and 35 orientation entrances;
-- local product regression: 1,005 tests passed with 18 named vault-only skips;
-- desktop/mobile Playwright: 32/32 passed, including pan, zoom, exact context
-  restoration, character paths, living-world return, and seven districts; and
-- exact-head CI for the preceding epic checkpoint passed both tracked-evidence
-  and full web/browser jobs; it does not certify changes made during this
-  review.
+- Exact source partition: 652 of 652 units represented once, without gaps or
+  overlaps.
+- Consumer language: 517 English and 517 Hindi scene narratives with 2,340
+  bilingual beats.
+- Provisional depth floor: every story cycle has at least three scenes and
+  twelve beats; the automated compression-candidate queue is empty.
+- Living-world denominator: 18 places, 18 temples, and 12 festivals or
+  performance traditions have substantial English/Hindi context and explicit
+  epic-belief, history, institution, and current-practice boundaries.
+- Traversal continuity: the prepared projection supplies ordered, character,
+  place, and parallel-thread routes without exposing source apparatus in
+  normal consumer copy.
 
-## Findings
+## Open adversarial work
 
-### What is sound
+### Expected-story and continuity review
 
-- Every selected-source unit belongs to exactly one scene under exactly one
-  turn; the corpus does not hide skipped intervals behind famous moments.
-- All 423 English narratives, all 423 Hindi narratives, and all 1,842 visual
-  directions are unique. The review found no repeated filler blocks.
-- Hindi and English consumer fields contain clean Unicode, not rendered
-  mojibake or replacement characters.
-- Every scene contains at least three beats, substantial bilingual narration,
-  characters, narrative places, and visual staging.
-- Difficult episodes already preserve important distinctions: Sita's agency
-  and repeated public testing, Surpanakha's injury, Vali's ethical challenge,
-  captivity and self-harm crises without actionable method, casualties and
-  grief, and the difference between narrator praise and present guidance.
+Numerical source partition is not enough. The remaining critical review is to
+walk the full consumer sequence and test whether an ordinary reader can follow
+setup, action, motivation, relationship changes, consequences, place movement,
+and transitions without relying on prior knowledge. It must also compare the
+selected expression against a separately labelled expected-story checklist so
+that popular material from Ramcharitmanas, regional tellings, and performance
+traditions is not silently omitted or merged into the Dutt/Valmiki lane.
 
-### Repaired in this checkpoint
+### Long interaction units
 
-Five normal-story beats exposed editorial vocabulary such as “selected
-edition,” “translation,” or “this section.” They were rewritten as story-first
-English/Hindi narration while their edition and uncertainty boundaries remain
-available in evidence metadata. The audit now fails if those terms return to
-consumer scene copy.
+Seven scenes exceed the preferred seven-beat interaction unit:
 
-### Explicit repair queue
+| Scene | Beats |
+|---|---:|
+| `bhagiratha-brings-ganga-from-sky-to-ashes` | 8 |
+| `king-trapped-by-word` | 8 |
+| `mahendra-launches-the-messenger` | 12 |
+| `despair-yields-to-ashoka-grove` | 8 |
+| `trijatas-dream-breaks-the-circle` | 9 |
+| `the-search-chain-becomes-proof` | 8 |
+| `sitas-voice-crosses-through-hanuman` | 10 |
 
-Five scenes exceed the preferred three-to-seven-beat interaction unit:
+These are not thin summaries. When the experience lane resumes, they need
+internal chaptering or deliberate scene splits that preserve source identity.
+They do not block library authorship.
 
-| Scene | Beats | Required treatment |
-|---|---:|---|
-| `mahendra-launches-the-messenger` | 12 | Divide its interaction into bounded phases without duplicating or losing its source span. |
-| `despair-yields-to-ashoka-grove` | 8 | Separate search exhaustion from the grove transition if the source address can remain exact. |
-| `trijatas-dream-breaks-the-circle` | 9 | Preserve one dream sequence but add an internal chapter break. |
-| `the-search-chain-becomes-proof` | 8 | Separate route reconstruction from proof delivery. |
-| `sitas-voice-crosses-through-hanuman` | 10 | Separate Sita's message from Hanuman's carrying of it without weakening her voice. |
+### Source-term diagnostic
 
-These scenes are not thin summaries. Their risk is interaction fatigue. They
-must not be split mechanically when one source unit supplies the whole event;
-an internal phase/chapter control is safer than duplicating a source range.
+The payload-free lexical inventory contains 4,323 capitalized term candidates:
+366 resolve through exact authored lexemes or conservative aliases, 306 of
+those are absent from at least one covering episode's metadata, and 3,957 need
+classification. Most unresolved items are ordinary capitalized words,
+epithets, collectives, or transliteration variants. Classifying every token is
+not a completion gate. The review should use only high-signal resolved gaps to
+repair character and place paths.
 
-At the time of the first review, five turns fell below the provisional depth target of at least three scenes and
-twelve beats:
+## Next checkpoint boundary
 
-| Turn | Scenes | Beats | Repair priority |
-|---|---:|---:|---|
-| `coronation-dawn` | 1 | 4 | Highest: six source units are compressed into one opening scene. |
-| `deeper-into-forest` | 2 | 11 | Add one consequential transition rather than padding. |
-| `panchavati-surpanakha` | 2 | 11 | Preserve domestic Panchavati and Surpanakha's full arrival/injury sequence as distinguishable movement. |
-| `war-at-janasthana` | 1 | 6 | Highest: thirteen source units are compressed into one scene. |
-| `golden-deer-plot` | 2 | 10 | Separate coercion of Maricha, deception, and household separation where source boundaries permit. |
+1. Produce one expected-story checklist for the whole Ramayana, with each item
+   labelled by expression or living tradition rather than blended.
+2. Review the 49-cycle consumer journey in Kanda-sized batches against that
+   checklist and the continuity criteria above.
+3. Repair missing or compressed material in large source-bounded batches, then
+   run one consolidated bilingual, duplication, source, and continuity check
+   per major arc.
+4. Keep broader expressions, modern places, festivals, and temples linked but
+   evidence-separated.
 
-The automated review freezes these exceptions by identity and count. A new
-exception fails the suite; removing an exception also requires updating the
-test, making progress explicit. `coronation-dawn` and `war-at-janasthana` are
-now removed from the thin-turn queue after source-partitioned library repair;
-`deeper-into-forest`, `panchavati-surpanakha`, and `golden-deer-plot` now also
-clear the threshold through exact source partitions. The automated queue is
-empty; a future regression below the threshold will fail the suite.
-
-## Experience and art-direction judgment
-
-The 423-scene corpus is the correct data layer, but most of it is not yet the
-experience the user described. Visual cues are not visual worlds. Database
-links are not traversal rewards. The journey must project the same authored
-scene into four reversible lenses—main story, narrative place, character path,
-and story thread—while loading art and copy by district rather than shipping the
-whole corpus to the browser.
-
-The next library tranche should continue replacing large source-span summaries,
-across the remaining six-section summaries, and deepen
-character, place, event, and cross-tradition relationships. Each change
-must preserve exact source partitioning, substantial English and Hindi action,
-motivation and consequence, character/place continuity, and reversible graph
-links. Visual production is deliberately deferred.
-
-## Next gates
-
-1. Continue the source-span compression audit across the remaining six-section
-   summaries without duplicating source identity.
-2. Deepen character, place, event, and cross-tradition relationships from the
-   same story records without creating duplicate story bodies.
-3. Resume long-scene interaction phasing, illustrated-district, and browser work only after explicit user
-   authorization.
-4. Conduct observed ordinary-user comprehension and enjoyment testing when the
-   experience lane resumes. Passing
-   automated mechanics is not evidence that the experience is engaging.
-
-No hosted database, production deployment, or external service was mutated by
-this review.
+No hosted service or production environment was changed by this review.

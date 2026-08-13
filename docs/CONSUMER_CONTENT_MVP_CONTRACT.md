@@ -109,8 +109,11 @@ The versioned Ramayana enumerator now additionally fixes 18 living places, 18
 temples, and 12 festivals or performance traditions. All 48 have substantial
 English and Hindi consumer context with story links and evidence boundaries.
 This completes the registered living-world authoring denominator only; the
-652-unit entity/place reconciliation and whole-journey continuity review remain
-open, and broader Ramayana expressions remain separate future denominators.
+whole-journey continuity and expected-story review remains open, and broader
+Ramayana expressions remain separate future denominators. The payload-free
+source-term inventory is a supplementary way to find high-signal metadata gaps;
+its ordinary capitalized words, epithets, and spelling variants are not a
+consumer-story completion queue.
 
 ## Default disclosure rule
 

@@ -15,10 +15,14 @@ festivals or performance traditions. All 48 registered living-world items now
 have substantial approachable English and Hindi story/context records,
 exploration links, evidence references, and explicit epic-belief/history/current
 practice boundaries. The living-item authoring queue is empty; completion of
-the selected Ramayana collection still requires the named-character and
-narrative-place reconciliation across all 652 source units plus adversarial
-continuity review. These counters are a versioned selected scope, not every
-Ramayana expression, place claim, temple, or living tradition.
+the selected Ramayana collection still requires an adversarial whole-journey
+continuity and expected-story review. A payload-free lexical diagnostic
+enumerates 4,323 capitalized source terms, including 3,957 unresolved ordinary
+words, epithets, collectives, and spelling variants. It is supplementary rather
+than a blocking story queue: only high-signal character or place gaps found
+during the journey review should be repaired. These counters are a versioned
+selected scope, not every Ramayana expression, place claim, temple, or living
+tradition.
 
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,

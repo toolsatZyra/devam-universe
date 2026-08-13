@@ -72,6 +72,15 @@ class RamayanaStoryUniverseInventoryTest(unittest.TestCase):
         queue = set(self.data["next_authoring_queue"]["living_items_needing_bilingual_content"])
         self.assertFalse(temple_ids & queue)
 
+    def test_source_term_reconciliation_is_explicit_and_nonblocking(self):
+        reconciliation = self.data["selected_narrative"]["source_term_reconciliation"]
+        self.assertEqual(reconciliation["completion_state"], "supplementary_nonblocking_diagnostic")
+        self.assertEqual(reconciliation["counters"]["candidate_terms"], 4323)
+        queue = self.data["next_authoring_queue"]["entity_and_place_reconciliation"]
+        self.assertEqual(queue["state"], "supplementary_nonblocking_diagnostic")
+        self.assertEqual(queue["source_terms_needing_classification"], reconciliation["counters"]["source_term_review_needed"])
+        self.assertGreater(queue["resolved_terms_missing_from_some_covering_episodes"], 0)
+
     def test_festival_content_is_substantial_bilingual_and_evidence_linked(self):
         records = self.festival_pack["records"]
         evidence_ids = {item["source_id"] for item in self.data["evidence_sources"]}
