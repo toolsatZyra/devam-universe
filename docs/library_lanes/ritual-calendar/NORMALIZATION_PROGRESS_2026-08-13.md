@@ -186,3 +186,20 @@ Exact accepted-authoring coverage is now **13 completed after freeze / 195
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The fourteenth post-freeze item is complete at the bilingual authored-library
+layer: `varalakshmi-vratam-south-india-household-participant-2027-v1`. It gives
+an ordinary household and temple-participant answer for the Karnataka, Andhra
+Pradesh, Telangana, Tamil Nadu and Maharashtra practice corridor while keeping
+formal kalasha installation, dorak/vayana, katha/mantra, priest-led sankalpa
+and every named temple programme with their authorities. Language, sari,
+flower, food, decoration, marital/gender context and fast/non-fast choices do
+not create state copies. The Charumathi association is labelled as TTD's
+current temple retelling, not primary-text proof or a promised result. A typed
+proposal routes Lakshmi identity, Ashtalakshmi theology and the full story to
+devi-consumer without modifying its records.
+
+Exact accepted-authoring coverage is now **14 completed after freeze / 194
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

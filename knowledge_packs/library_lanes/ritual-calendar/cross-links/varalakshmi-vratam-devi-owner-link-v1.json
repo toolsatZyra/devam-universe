@@ -1,0 +1,33 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-varalakshmi-vratam-devi-owner-link-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "varalakshmi-participant-pack-to-devi-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/varalakshmi-vratam-south-india-household-participant-2027-v1"},
+      "to_ref": {"lane_local_id": "devi-consumer/varalakshmi-vratam"},
+      "relationship_family": "festival",
+      "predicate": "requests_owned_identity_story_and_theology_context",
+      "directionality": "directed",
+      "consumer_label": {"en": "Explore Varalakshmi identity and the full source-labelled story", "hi": "वरलक्ष्मी की पहचान और पूर्ण स्रोत-लेबल कथा समझें"},
+      "scope": {
+        "statement": "The ritual-calendar pack supplies only bounded ordinary household and temple-participant guidance. Devi-consumer retains Varalakshmi and Lakshmi identity, Ashtalakshmi theology, the full Charumathi narrative and any hero-world story treatment.",
+        "geography_codes": ["IN-KA", "IN-AP", "IN-TS", "IN-TN", "IN-MH"],
+        "tradition_codes": ["varalakshmi-ordinary-household-participant"],
+        "time_scope": "Friday before local Shravana Purnima; 2027 discovery fixture 13 August",
+        "source_expression_scope": "TTD current Charumathi retelling only; primary narrative source unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "official_current", "ref": "https://news.tirumala.org/varalakshmi-vratam-observed-with-grandeur-at-sri-padmavathi-ammavari-temple-_-%E0%B0%B6%E0%B1%8D%E0%B0%B0%E0%B1%80-%E0%B0%AA%E0%B0%A6%E0%B1%8D%E0%B0%AE%E0%B0%BE%E0%B0%B5%E0%B0%A4%E0%B0%BF-%E0%B0%85/", "claim_scope": "TTD's 2025 report provides a named temple retelling and authority-scoped institutional practice, not fixed primary-text proof."},
+        {"evidence_kind": "devam_synthesis", "ref": "knowledge_packs/library_lanes/ritual-calendar/cross-links/devi-owner-candidates-v1.json", "claim_scope": "Existing ownership proposal routes the normalized Varalakshmi candidate to devi-consumer."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/varalakshmi-vratam-south-india-household-participant-2027-v1.json", "claim_scope": "Bilingual applicability, timing, bounded participation, materials, substitutions, safety, closing and major-variant routing."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

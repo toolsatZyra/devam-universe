@@ -1,0 +1,170 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "varalakshmi-vratam-south-india-household-participant-2027-v1",
+  "observance_slugs": ["varalakshmi-vratam"],
+  "applicability": {
+    "region_codes": ["south-india", "west-india", "IN-KA", "IN-AP", "IN-TS", "IN-TN", "IN-MH", "IN-KL"],
+    "tradition_codes": ["varalakshmi-ordinary-household-participant", "varalakshmi-ordinary-temple-participant"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and accepted Panchang resolve the Friday before Shravana Purnima and any chosen puja window?",
+      "Does your family or host include this participant regardless of marital status or gender, and which actions may an ordinary participant perform?",
+      "Is this a bounded household participation request, or a full kalasha, dorak, vayana, katha, mantra or priest-led vrata requiring family or ritual authority?",
+      "If attending a temple, what current booking, attendee, dress, material, accessibility, photography and prasada rules apply?",
+      "Would fasting, flame, food, money, travel, crowding, pregnancy, illness or family pressure be unsafe?"
+    ],
+    "context_pairs": [
+      {"region_code": "IN-KA", "tradition_code": "varalakshmi-ordinary-household-participant", "observance_slug": "varalakshmi-vratam"},
+      {"region_code": "IN-AP", "tradition_code": "varalakshmi-ordinary-household-participant", "observance_slug": "varalakshmi-vratam"},
+      {"region_code": "IN-TS", "tradition_code": "varalakshmi-ordinary-household-participant", "observance_slug": "varalakshmi-vratam"},
+      {"region_code": "IN-TN", "tradition_code": "varalakshmi-ordinary-household-participant", "observance_slug": "varalakshmi-vratam"},
+      {"region_code": "IN-MH", "tradition_code": "varalakshmi-ordinary-household-participant", "observance_slug": "varalakshmi-vratam"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "varalakshmi-vratam", "language_code": "en", "note": "Bounded South-India ordinary participant route. Devi-consumer retains Lakshmi identity, theology and full story; family, priest and temple authorities retain formal liturgy."},
+      {"observance_slug": "varalakshmi-vratam", "language_code": "hi", "note": "यह दक्षिण भारत का सीमित सामान्य सहभागी मार्ग है। लक्ष्मी की पहचान, धर्ममीमांसा और पूर्ण कथा देवी-स्वामी के पास; औपचारिक विधि परिवार, पुरोहित और मंदिर के अधिकार में है।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-varalakshmi-2027"],
+    "timing_kind": "textual_rule", "location_aware": true, "tradition_aware": true,
+    "decision_rule_id": "varalakshmi-friday-before-local-shravana-purnima-v1",
+    "closing_decision_rule_id": "varalakshmi-participant-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "2027 discovery fixture: Friday 13 August. The cited page displayed Bangkok clock times; do not copy them to India. Recompute for the user's city and accepted Panchang. Every named temple programme must be confirmed live."
+  },
+  "sources": [
+    {"source_id": "drik-varalakshmi-2027", "title": "2027 Varalakshmi Vratam", "publisher": "DrikPanchang", "source_role": "practitioner evidence for the Friday-before-Shravana-Purnima rule, geography, varied participation and formal dorak/vayana boundary; result claims are not guarantees", "rights_lane": "citation_only", "url": "https://www.drikpanchang.com/festivals/varalakshmi-vratam/varalakshmi-vratam-date-time.html?year=2027", "artifact_sha256": null, "citation_coordinates": {"civil_date": "2027-08-13", "displayed_location": "Bangkok, Thailand", "warning": "foreign clocks are not Indian fixtures"}},
+    {"source_id": "ttd-varalakshmi-2025", "title": "Varalakshmi Vratam observed at Sri Padmavathi Ammavari Temple", "publisher": "Tirumala Tirupati Devasthanams", "source_role": "named temple evidence for Agama-led actions, flowers, threads and the TTD Charumathi retelling; not universal household instruction or fixed primary-text proof", "rights_lane": "citation_only", "url": "https://news.tirumala.org/varalakshmi-vratam-observed-with-grandeur-at-sri-padmavathi-ammavari-temple-_-%E0%B0%B6%E0%B1%8D%E0%B0%B0%E0%B1%80-%E0%B0%AA%E0%B0%A6%E0%B1%8D%E0%B0%AE%E0%B0%BE%E0%B0%B5%E0%B0%A4%E0%B0%BF-%E0%B0%85/", "artifact_sha256": null, "citation_coordinates": {"published": "2025-08-08"}},
+    {"source_id": "ttd-varalakshmi-tickets-2025", "title": "Varalakshmi Vratham to be observed at Tiruchanoor", "publisher": "Tirumala Tirupati Devasthanams", "source_role": "evidence that temple time, tickets, participant limits, processions and seva cancellations are live institutional facts", "rights_lane": "citation_only", "url": "https://news.tirumala.org/%E0%B0%B5%E0%B0%B0%E0%B0%B2%E0%B0%95%E0%B1%8D%E0%B0%B7%E0%B1%8D%E0%B0%AE%E0%B1%80-%E0%B0%B5%E0%B1%8D%E0%B0%B0%E0%B0%A4%E0%B0%BE%E0%B0%A8%E0%B0%BF%E0%B0%95%E0%B0%BF/", "artifact_sha256": null, "citation_coordinates": {"published": "2025-07-29"}},
+    {"source_id": "dghs-fasting", "title": "Diabetes Mellitus: Frequently Asked Questions", "publisher": "Directorate General of Health Services", "source_role": "official clinical boundary for fasting and medication", "rights_lane": "citation_only", "url": "https://dghs.mohfw.gov.in/uploads/assets/FTQHV3zrwD8qHFnFiXRXIrjAo6BFUdILJFfyAcqk.pdf", "artifact_sha256": null, "citation_coordinates": {"question": 43}},
+    {"source_id": "fssai-home", "title": "Food Safety at Home", "publisher": "Food Safety and Standards Authority of India", "source_role": "household food hygiene and storage", "rights_lane": "citation_only", "url": "https://www.fssai.gov.in/flipbook.php?bookid=31", "artifact_sha256": null, "citation_coordinates": {"rules": [1,2,3,4,8]}},
+    {"source_id": "fssai-allergens", "title": "Declared food allergens", "publisher": "Food Safety and Standards Authority of India", "source_role": "allergen checks for shared food", "rights_lane": "citation_only", "url": "https://fssai.gov.in/faqs/?cat=13", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "cybercrime-portal", "title": "National Cyber Crime Reporting Portal FAQ", "publisher": "Indian Cyber Crime Coordination Centre", "source_role": "payment and impersonation safeguards", "rights_lane": "citation_only", "url": "https://www.cybercrime.gov.in/webform/FAQ.aspx", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "ndma-sachet", "title": "SACHET National Disaster Alert Portal", "publisher": "National Disaster Management Authority", "source_role": "live monsoon travel and crowd hazard alerts", "rights_lane": "citation_only", "url": "https://sachet.ndma.gov.in/", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}}
+  ],
+  "localized_content": [
+    {
+      "language_code": "en", "observance_slugs": ["varalakshmi-vratam"],
+      "title": "Varalakshmi Vratam: ordinary household and temple participant guide",
+      "short_answer": "For 2027, confirm Friday 13 August for your city. If this is your family practice, clean a small space, use a familiar owned Lakshmi image or a flower/light, hear the TTD-labelled Charumathi association, offer gratitude for one form of household well-being, and do one concrete care action. Follow family authority for any kalasha, thread, katha or mantra. Fasting, marriage, wealth, a husband, children, Sanskrit and temple attendance are not required for this participant route.",
+      "significance": {"text": "Varalakshmi Vratam is especially visible in Karnataka, Andhra Pradesh, Telangana, Tamil Nadu and Maharashtra as a Friday observance associated with Lakshmi, household well-being and gratitude. Married women are prominent observers in many communities, but current practitioner evidence also permits wider participation. Devam therefore describes who commonly observes without declaring a universal gender or marital eligibility rule.", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"], "scope_note": "Ordinary participant lane only; identity/story ownership and full liturgy remain elsewhere."},
+      "origin_narratives": [
+        {"narrative_id": "ttd-charumathi-retelling", "title": "The Charumathi association in TTD's temple account", "summary": "TTD's 2025 report says its Agama adviser recalled Shiva explaining the vrata to Parvati and Charumathi observing it and receiving blessings. Devam labels this as TTD's current temple retelling, not a verified primary-text passage, universal origin or promised result.", "tradition_scope": "Current Tiruchanoor temple retelling", "source_ids": ["ttd-varalakshmi-2025"], "universal_origin_claimed": false},
+        {"narrative_id": "ttd-temple-practice", "title": "A named temple's 2025 observance", "summary": "At Tiruchanoor, temple authorities conducted purification, kalasha installation, anga puja and Lakshmi-name recitation under Agama authority. This shows a living institutional observance and why an ordinary visitor should participate rather than copy its liturgy at home.", "tradition_scope": "Named TTD institution, 2025; not a national household sequence", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "household-puja-and-fast", "population_scope": "Many South Indian households, especially married women in several communities", "description": "Families may clean and decorate a place, establish a familiar Lakshmi or kalasha form, offer flowers and food, hear katha or names, tie a thread and fast. Exact eligibility, words, knots, recipients and closing belong to that family or ritual authority.", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"], "instructional": false},
+        {"practice_id": "temple-participation", "population_scope": "Devotees attending a named temple", "description": "A temple may conduct a formal vrata, distribute sacred materials or prasada, require tickets and alter other sevas. Check every detail live.", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"], "instructional": false}
+      ],
+      "procedures": [
+        {"procedure_id": "varalakshmi-en-home-v1", "label": "20-minute bounded household participation", "tier": "minimum", "setting": "household", "authority_scope": "No kalasha invocation, dorak/vayana, formal katha, mantra or priest role is invented.", "form": "accessible_short", "estimated_minutes": 20,
+          "materials": [
+            {"item": "Familiar owned Lakshmi image, book, flower or LED light", "required": false, "substitutions": ["Clean cloth", "Quiet reflection", "No object"], "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"]},
+            {"item": "Water, flower, fruit or safe food", "required": false, "substitutions": ["Allergen-safe food", "No offering"], "source_ids": ["fssai-home", "fssai-allergens"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the Friday before local Shravana Purnima; use 13 August 2027 only as a discovery date.", "why": "Timing is city- and Panchang-dependent.", "source_ids": ["drik-varalakshmi-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Confirm that this household observes and what you may lead. Do not assume gender, marriage or fasting eligibility.", "why": "Living eligibility varies.", "source_ids": ["drik-varalakshmi-2027"], "optional": false},
+            {"ordinal": 3, "instruction": "Clean a small place; set only a familiar image, book, flower or LED. Use an existing family kalasha only under the family's established instructions.", "why": "This keeps participant action separate from formal installation.", "source_ids": ["ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 4, "instruction": "Hear the labelled Charumathi summary and say a familiar prayer or quiet gratitude for one form of well-being. Do not promise wealth, fertility, health or longevity.", "why": "A source-labelled association is not an outcome guarantee.", "source_ids": ["ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 5, "instruction": "Offer a flower, water or safe food if wanted, then do one household-care action: share work, settle a bill responsibly, check on an elder, reduce waste or plan mutual support.", "why": "Ethical care makes the observance actionable without inventing liturgy.", "source_ids": ["fssai-home", "ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 6, "instruction": "Follow the family leader for any familiar closing. Otherwise thank, remove perishables, put out any light and share safe food without requiring a fast.", "why": "Closing and health remain explicit.", "source_ids": ["dghs-fasting", "fssai-home"], "optional": false}
+          ],
+          "closing": {"text": "A non-fasting, no-thread, no-kalasha, no-gift form is complete in this participant lane. Formal removal or visarjana follows the authority that established the object.", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"]},
+          "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025", "dghs-fasting", "fssai-home"]
+        },
+        {"procedure_id": "varalakshmi-en-temple-v1", "label": "Named temple ordinary participation", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "Visitor actions only; no Agama procedure is reproduced.", "form": "institutional_participation", "estimated_minutes": null,
+          "materials": [{"item": "Current official booking and visitor information", "required": true, "substitutions": ["Official livestream", "Home participant form"], "source_ids": ["ttd-varalakshmi-tickets-2025"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the current official date, ticket, permitted attendees, materials, dress, accessibility, queue and photography rules.", "why": "Named programmes change annually.", "source_ids": ["ttd-varalakshmi-tickets-2025"], "optional": false},
+            {"ordinal": 2, "instruction": "Check live monsoon alerts and choose home or livestream if travel or crowding is unsafe.", "why": "Attendance is not required.", "source_ids": ["ndma-sachet"], "optional": false},
+            {"ordinal": 3, "instruction": "Join only visitor actions directed by staff; do not copy kalasha, anga puja, names or threads from observation.", "why": "Those actions were conducted under temple authority.", "source_ids": ["ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 4, "instruction": "Accept prasada only if suitable, leave without pressure to donate, and use only official payment channels.", "why": "Food, budget and scam safety remain ordinary duties.", "source_ids": ["fssai-allergens", "cybercrime-portal"], "optional": false}
+          ],
+          "closing": {"text": "Follow staff exit directions and carry no temple-specific liturgy into a DIY household sequence.", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"]},
+          "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025", "ndma-sachet"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "state-language-material-style", "scope": "Karnataka, Andhra Pradesh, Telangana, Tamil Nadu and Maharashtra households", "difference": "Language, sari, flower, food, face or kalasha decoration remains inside the lane.", "source_ids": ["drik-varalakshmi-2027"], "separate_lane_required": false},
+        {"variant_id": "gender-marital-and-fast", "scope": "Participants under varied family custom", "difference": "Gender, marital status and fast/non-fast require a context check, not a cloned state pack.", "source_ids": ["drik-varalakshmi-2027", "dghs-fasting"], "separate_lane_required": false},
+        {"variant_id": "formal-household-vrata", "scope": "Kalasha, dorak, vayana, formal katha/mantra or priest-led sankalpa", "difference": "Eligibility, words, knots, recipients, installation and closing require an authority-led lane.", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme", "scope": "TTD or any named temple", "difference": "Agama, booking, schedule, cancellations and crowd rules require live institution guidance.", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"], "separate_lane_required": true},
+        {"variant_id": "devi-identity-and-full-story", "scope": "Varalakshmi/Lakshmi identity, Ashtalakshmi teaching and full Charumathi narrative", "difference": "Owned by devi-consumer and linked by typed proposal.", "source_ids": ["ttd-varalakshmi-2025"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "Fasting is optional; medicine, hydration, pregnancy, diabetes, illness, age and clinical advice override custom.",
+        "Marriage, fertility, a child's sex, wealth, health, longevity, employment, exams and harmony are never guaranteed.",
+        "A woman is not responsible for a husband's lifespan; unmarried, widowed, divorced, queer, childless and non-participating people are not deficient or inauspicious.",
+        "Use LED/no flame when fire is unsafe. Stabilize any family kalasha away from children and animals; its water is not automatically drinkable.",
+        "Never borrow, buy gold, transfer property, share OTP or pay an unofficial link for blessing, ticket or result."
+      ]
+    },
+    {
+      "language_code": "hi", "observance_slugs": ["varalakshmi-vratam"],
+      "title": "वरलक्ष्मी व्रतम: सामान्य घरेलू और मंदिर सहभागी मार्ग",
+      "short_answer": "2027 के लिए अपने शहर में शुक्रवार 13 अगस्त की पुष्टि करें। परिवार में यह परंपरा हो तो छोटा स्थान साफ करें, परिचित लक्ष्मी-चित्र/फूल/प्रकाश रखें, टीटीडी-लेबल वाली चारुमति कथा-संगति सुनें, गृह-कल्याण के एक पक्ष के लिए कृतज्ञता और देखभाल का एक काम करें। कलश, धागा, कथा या मंत्र परिवार-अधिकार से ही करें। उपवास, विवाह, पति, संतान, धन, संस्कृत और मंदिर अनिवार्य नहीं।",
+      "significance": {"text": "वरलक्ष्मी व्रतम कर्नाटक, आंध्र प्रदेश, तेलंगाना, तमिलनाडु और महाराष्ट्र में लक्ष्मी, गृह-कल्याण और कृतज्ञता से जुड़ा शुक्रवार का पालन है। अनेक समुदायों में विवाहित महिलाएँ मुख्य पालक हैं, पर वर्तमान स्रोत व्यापक भागीदारी भी बताते हैं। इसलिए देवम सार्वभौम लिंग या वैवाहिक पात्रता नहीं बनाता।", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"], "scope_note": "केवल सामान्य सहभागी मार्ग; पूर्ण विधि और देवी-कथा अन्य स्वामियों के पास।"},
+      "origin_narratives": [
+        {"narrative_id": "ttd-charumathi-retelling-hi", "title": "टीटीडी विवरण में चारुमति-संगति", "summary": "टीटीडी की 2025 रिपोर्ट कहती है कि उसके आगम सलाहकार ने शिव द्वारा पार्वती को व्रत बताने और चारुमति के पालन की कथा स्मरण की। देवम इसे वर्तमान मंदिर पुनर्कथा कहता है, प्राथमिक-पाठ प्रमाण, सार्वभौम उत्पत्ति या फल की गारंटी नहीं।", "tradition_scope": "वर्तमान तिरुचानूर मंदिर पुनर्कथा", "source_ids": ["ttd-varalakshmi-2025"], "universal_origin_claimed": false},
+        {"narrative_id": "ttd-temple-practice-hi", "title": "नामित मंदिर का 2025 पालन", "summary": "तिरुचानूर में शुद्धि, कलश स्थापना, अंग पूजा और लक्ष्मी-नाम आगम अधिकार में हुए। यह जीवित संस्थागत पालन दिखाता है और बताता है कि सामान्य दर्शक इसे देखकर घर की विधि न बनाए।", "tradition_scope": "नामित टीटीडी संस्था; राष्ट्रीय घरेलू क्रम नहीं", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "household-puja-and-fast-hi", "population_scope": "दक्षिण भारत के अनेक परिवार; कई समुदायों में विशेषतः विवाहित महिलाएँ", "description": "परिवार स्थान सजाते, परिचित लक्ष्मी/कलश रखते, फूल-भोजन चढ़ाते, कथा/नाम सुनते, धागा बाँधते या उपवास करते हैं। पात्रता, शब्द, गाँठ, प्राप्तकर्ता और समापन परिवार/कर्म-अधिकार तय करता है।", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"], "instructional": false},
+        {"practice_id": "temple-participation-hi", "population_scope": "नामित मंदिर के दर्शनार्थी", "description": "मंदिर औपचारिक व्रत, सामग्री/प्रसाद, टिकट और सेवा-बदलाव रख सकता है। हर बात जीवित जाँचें।", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"], "instructional": false}
+      ],
+      "procedures": [
+        {"procedure_id": "varalakshmi-hi-home-v1", "label": "20 मिनट का सीमित घरेलू सहभाग", "tier": "minimum", "setting": "household", "authority_scope": "कलश आवाहन, दोरक/वायन, औपचारिक कथा, मंत्र या पुरोहित-भूमिका नहीं गढ़ी जाती।", "form": "accessible_short", "estimated_minutes": 20,
+          "materials": [
+            {"item": "परिचित स्वामित्व वाला लक्ष्मी-चित्र, पुस्तक, फूल या एलईडी प्रकाश", "required": false, "substitutions": ["स्वच्छ कपड़ा", "मौन चिंतन", "कोई वस्तु नहीं"], "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"]},
+            {"item": "जल, फूल, फल या सुरक्षित भोजन", "required": false, "substitutions": ["एलर्जी-सुरक्षित भोजन", "अर्पण नहीं"], "source_ids": ["fssai-home", "fssai-allergens"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय श्रावण पूर्णिमा से पहले शुक्रवार की पुष्टि करें; 13 अगस्त 2027 केवल तारीख-संकेत है।", "why": "समय शहर और पंचांग पर निर्भर है।", "source_ids": ["drik-varalakshmi-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "परिवार यह पालन करता है और आप क्या करा सकते हैं, पूछें। लिंग, विवाह या उपवास की पात्रता न मान लें।", "why": "जीवित पात्रता अलग होती है।", "source_ids": ["drik-varalakshmi-2027"], "optional": false},
+            {"ordinal": 3, "instruction": "छोटा स्थान साफ कर परिचित चित्र, पुस्तक, फूल या एलईडी रखें। पारिवारिक कलश केवल स्थापित पारिवारिक निर्देश में लें।", "why": "सामान्य सहभाग और औपचारिक स्थापना अलग रहते हैं।", "source_ids": ["ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 4, "instruction": "लेबल वाली चारुमति-संगति सुनें और कल्याण के एक पक्ष के लिए परिचित प्रार्थना या मौन कृतज्ञता करें; फल की गारंटी न दें।", "why": "कथा-संगति परिणाम का वादा नहीं।", "source_ids": ["ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 5, "instruction": "इच्छा हो तो फूल, जल या सुरक्षित भोजन दें; फिर काम बाँटना, बिल जिम्मेदारी से देखना, बुज़ुर्ग का हाल या सहायता-योजना जैसा एक गृह-देखभाल काम करें।", "why": "बिना विधि गढ़े पालन उपयोगी बनता है।", "source_ids": ["fssai-home", "ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 6, "instruction": "परिचित समापन में परिवार-नेता का अनुसरण करें; अन्यथा धन्यवाद, नाशवान सामग्री हटाएँ, प्रकाश बंद करें और बिना उपवास-बाध्यता सुरक्षित भोजन बाँटें।", "why": "समापन और स्वास्थ्य स्पष्ट रहते हैं।", "source_ids": ["dghs-fasting", "fssai-home"], "optional": false}
+          ],
+          "closing": {"text": "बिना उपवास, धागा, कलश और उपहार का रूप इस सहभागी मार्ग में पूर्ण है। औपचारिक वस्तु का विसर्जन उसी अधिकार के अनुसार हो जिसने उसे स्थापित किया।", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"]},
+          "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025", "dghs-fasting", "fssai-home"]
+        },
+        {"procedure_id": "varalakshmi-hi-temple-v1", "label": "नामित मंदिर सामान्य सहभाग", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "केवल दर्शक-कर्म; आगम विधि पुनरुत्पादित नहीं।", "form": "institutional_participation", "estimated_minutes": null,
+          "materials": [{"item": "वर्तमान आधिकारिक बुकिंग और दर्शक सूचना", "required": true, "substitutions": ["आधिकारिक सीधा प्रसारण", "घरेलू सहभागी रूप"], "source_ids": ["ttd-varalakshmi-tickets-2025"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "आधिकारिक तारीख, टिकट, पात्र सहभागी, सामग्री, वस्त्र, पहुँच, कतार और फोटो नियम जाँचें।", "why": "कार्यक्रम हर वर्ष बदलते हैं।", "source_ids": ["ttd-varalakshmi-tickets-2025"], "optional": false},
+            {"ordinal": 2, "instruction": "मानसून चेतावनी देखें; यात्रा/भीड़ असुरक्षित हो तो घर या सीधा प्रसारण चुनें।", "why": "उपस्थिति अनिवार्य नहीं।", "source_ids": ["ndma-sachet"], "optional": false},
+            {"ordinal": 3, "instruction": "केवल कर्मचारी-निर्देशित दर्शक-कर्म करें; देखकर कलश, अंग पूजा, नाम या धागे न दोहराएँ।", "why": "वे मंदिर-अधिकार में हुए।", "source_ids": ["ttd-varalakshmi-2025"], "optional": false},
+            {"ordinal": 4, "instruction": "उपयुक्त हो तभी प्रसाद लें, दान-दबाव बिना निकलें और केवल आधिकारिक भुगतान करें।", "why": "भोजन, बजट और धोखा-सुरक्षा लागू हैं।", "source_ids": ["fssai-allergens", "cybercrime-portal"], "optional": false}
+          ],
+          "closing": {"text": "कर्मचारी-निर्देश में बाहर आएँ और मंदिर की विधि को घरेलू DIY क्रम न बनाएँ।", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"]},
+          "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025", "ndma-sachet"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "state-language-material-style-hi", "scope": "कर्नाटक, आंध्र प्रदेश, तेलंगाना, तमिलनाडु और महाराष्ट्र", "difference": "भाषा, साड़ी, फूल, भोजन, मुख या कलश सज्जा इसी मार्ग में।", "source_ids": ["drik-varalakshmi-2027"], "separate_lane_required": false},
+        {"variant_id": "gender-marital-and-fast-hi", "scope": "अलग पारिवारिक प्रथाओं के सहभागी", "difference": "लिंग, वैवाहिक स्थिति और उपवास संदर्भ-जाँच हैं, अलग राज्य-पैक नहीं।", "source_ids": ["drik-varalakshmi-2027", "dghs-fasting"], "separate_lane_required": false},
+        {"variant_id": "formal-household-vrata-hi", "scope": "कलश, दोरक, वायन, औपचारिक कथा/मंत्र या पुरोहित संकल्प", "difference": "पात्रता, शब्द, गाँठ, प्राप्तकर्ता, स्थापना और समापन हेतु अधिकार-मार्ग चाहिए।", "source_ids": ["drik-varalakshmi-2027", "ttd-varalakshmi-2025"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme-hi", "scope": "टीटीडी या नामित मंदिर", "difference": "आगम, बुकिंग, समय, रद्द सेवा और भीड़ नियम हेतु जीवित संस्था-मार्ग चाहिए।", "source_ids": ["ttd-varalakshmi-2025", "ttd-varalakshmi-tickets-2025"], "separate_lane_required": true},
+        {"variant_id": "devi-identity-and-full-story-hi", "scope": "वरलक्ष्मी/लक्ष्मी पहचान, अष्टलक्ष्मी शिक्षा और पूर्ण चारुमति कथा", "difference": "देवी-स्वामी के अधिकार में; टाइप्ड प्रस्ताव से लिंक।", "source_ids": ["ttd-varalakshmi-2025"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "उपवास वैकल्पिक है; दवा, जल, गर्भावस्था, मधुमेह, बीमारी, आयु और चिकित्सा सलाह सर्वोपरि हैं।",
+        "विवाह, संतान, बच्चे का लिंग, धन, स्वास्थ्य, आयु, नौकरी, परीक्षा या सौहार्द की गारंटी नहीं।",
+        "महिला पति की आयु की जिम्मेदार नहीं; अविवाहित, विधवा, तलाकशुदा, क्वियर, निःसंतान या गैर-सहभागी व्यक्ति अशुभ या अधूरा नहीं।",
+        "अग्नि असुरक्षित हो तो एलईडी लें। कलश बच्चों/पशुओं से दूर स्थिर रखें; उसका जल स्वतः पीने योग्य नहीं।",
+        "आशीष, टिकट या फल के लिए उधार, सोना, संपत्ति, ओटीपी या अनधिकृत भुगतान न करें।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": ["Full Devi identity/story remains with devi-consumer.", "Formal household liturgy and every named temple programme require their authority lanes.", "No deterministic day-cell projection exists."],
+    "review_status": "internal_beta_reviewed"
+  }
+}

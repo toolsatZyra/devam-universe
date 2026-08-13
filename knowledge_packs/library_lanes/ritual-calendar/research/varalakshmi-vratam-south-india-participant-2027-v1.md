@@ -111,3 +111,20 @@ staff directions and do not reproduce Agama procedures from observation.
 Current web sources checked 2026-08-13. Drik discovery displayed Bangkok
 clocks; only Friday 13 August 2027 and the location-aware rule are carried into
 the pack until an Indian city is explicitly resolved.
+
+## Completed pack and adversarial review
+
+Completed `varalakshmi-vratam-south-india-household-participant-2027-v1` with
+matched English/Hindi meaning, two source-labelled narratives, typical
+practice, household and temple-participant procedures, materials,
+substitutions, closing, safety and five major-variant decisions. The typed link
+routes Devi identity/story/theology without writing the owner record.
+
+Adversarial review verifies that the pack does not invent kalasha avahana,
+dorak knots, vayana, formal katha/mantra, priest role, temple Agama or
+visarjana; does not make marriage, womanhood, fasting, husband, children,
+wealth, Sanskrit or temple attendance mandatory; does not copy Bangkok clocks
+to India; and does not promise fertility, a child's sex, wealth, health,
+longevity, employment, exams or harmony. Minor state, language, food, clothing
+and decoration differences remain within the lane. Authored status is not a
+day-cell projection, hosted release or publication.
