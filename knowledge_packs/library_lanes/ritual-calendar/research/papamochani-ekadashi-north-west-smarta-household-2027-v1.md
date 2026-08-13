@@ -1,6 +1,7 @@
 # Papamochani Ekadashi ordinary North/West Smarta household research (2027)
 
-Status: reviewed research checkpoint; named item not yet counted.
+Status: reviewed source and completion record; named ordinary Papamochani item
+counted once after bilingual pack validation.
 
 ## Selected applicability lane
 
@@ -160,11 +161,21 @@ confession where it exposes a participant or another person.
 - Devam Ekadashi rule audit, candidate disposition, recurring packs and this
   lane's consent/safeguarding synthesis.
 
-## Remaining completion gate
+## Completion and adversarial-review gate
 
-This item remains uncounted until a bilingual pack passes schema/source closure,
-English/Hindi shape parity, 2-April timing, non-fasting completeness,
-non-objectifying and non-misogynistic retelling, ongoing-consent and power
-analysis, no supernatural diagnosis/exorcism, private reflection, lawful repair,
-no erasure of accountability, safe closing and major-variant review. Research is
-not authored, projected, hosted, independently released or published.
+The bilingual pack passed the shared schema, source closure, strict UTF-8,
+English/Hindi procedure-shape parity and 2-April timing checks. Its complete
+ordinary route is private, non-fasting, well-rested, no-touch, no-flame,
+no-purchase, image-free, writing-free and material-free. The story preserves
+initial influence, mutual attraction, later fear, unequal curse power and
+Cyavana's counter-rebuke without the objectifying body inventory.
+
+Adversarial review must continue to reject misogyny, sexuality-as-pollution,
+permanent-consent assumptions, coerced confession/contact, supernatural
+diagnosis, restraint/exorcism, fasting pressure, unsafe disclosure, forced
+forgiveness, and ritual erasure of serious harm or law. Minor household
+expression remains inside the lane; materially different timing, expiation,
+institution, professional route or named Ekadashi stays separate. The ordinary
+Papamochani item is counted once at the authored-library layer. It remains
+unprojected across all 19,480 day cells, unhosted, not independently released
+and unpublished.

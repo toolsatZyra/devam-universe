@@ -1,0 +1,298 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "papamochani-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["papamochani-ekadashi"],
+  "applicability": {
+    "region_codes": ["north-india", "west-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve the Krishna-paksha Papamochani Ekadashi for you?",
+      "Does your family follow ordinary Smarta Papamochani, or a materially different Gauna/Vaishnava date or parana rule?",
+      "Would discussion of sexuality, coercion, curse, dehumanising language, regret, abuse or accountability be distressing or unsafe today?",
+      "Would private reflection with no writing, disclosure, apology or contact be safer?",
+      "Does anyone need a non-fasting, well-rested, no-touch, no-flame and material-free form?"
+    ],
+    "context_pairs": [
+      {"region_code": "north-india", "tradition_code": "smarta-north-india", "observance_slug": "papamochani-ekadashi"},
+      {"region_code": "west-india", "tradition_code": "smarta-west-india", "observance_slug": "papamochani-ekadashi"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "papamochani-ekadashi", "language_code": "en", "note": "This is the ordinary North/West Smarta Papamochani household lane. The source's attraction, sexual relationship, fear of curse, dehumanising curse, goblin form, expiation and results are story claims—not blame of women or sexuality, diagnoses, universal instructions or erasure of accountability."},
+      {"observance_slug": "papamochani-ekadashi", "language_code": "hi", "note": "यह सामान्य उत्तर/पश्चिम स्मार्त पापमोचनी गृह-मार्ग है। स्रोत का आकर्षण, यौन संबंध, शाप का भय, अमानवीय शाप, पिशाची रूप, प्रायश्चित्त और फल कथा-दावे हैं—स्त्री/यौनिकता का दोष, निदान, सार्वभौम निर्देश या जवाबदेही मिटाना नहीं।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-papamochani-2027", "devam-ekadashi-rule-audit"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "papamochani-krishna-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "papamochani-private-nonfast-accountability-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Andhra Pradesh, Telugu, Gujarati and ISKCON fixtures place ordinary Papamochani Ekadashi on Friday 2 April 2027. Month labels may differ under purnimanta and amanta conventions; resolve identity from the user's Indian city and accepted authority rather than the English month name. Never copy displayed tithi/parana times, this date or a named temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-papamochani-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 46: Papamocani Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Manjughosha-Medhavin account, consent/power tensions, curse/expiation and attributed results; source facts rather than consumer blame, diagnosis or absolution",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365623.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Uttara Khanda chapter 46", "reviewed_lines": "54-101", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "drik-papamochani-2027",
+      "title": "2027 Papamochani Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian regional and ISKCON calendar discovery evidence for ordinary Papamochani on 2 April 2027; no portable parana or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/papamochani/papamochani-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-04-02", "identity": "Papamochani Krishna Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "nhm-mental-health-social-worker",
+      "title": "Manual of Mental Health for Social Workers",
+      "publisher": "National Health Mission, Ministry of Health and Family Welfare",
+      "source_role": "official boundary rejecting possession, curse and evil-spirit explanations for mental disorders",
+      "rights_lane": "citation_only",
+      "url": "https://nhm.gov.in/images/pdf/programmes/NMHP/Training_Manuals/Manual_of_Mental_Health_for_Social_Worker.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "myths about possession, curses and mental disorders", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "Fasting and Feasting in T1DM", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"}
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"paths": ["knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json", "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"]}
+    },
+    {
+      "source_id": "devam-papamochani-research",
+      "title": "Papamochani Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of non-objectifying retelling, ongoing consent, unequal power, non-diagnostic safety, private accountability, lawful repair and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/papamochani-ekadashi-north-west-smarta-household-2027-v1.md"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["papamochani-ekadashi"],
+      "title": "Papamochani Ekadashi: accountability without dehumanisation",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Papamochani Ekadashi today. A complete home form is private and non-fasting: remember Vishnu, hear the Padma-Purana-labelled Manjughosha-Medhavin account without its objectifying body inventory, name one harmful action in your own responsibility, choose one consent-safe lawful repair or prevention step, and close without demanding contact, forgiveness or absolution. No confession, curse-removal, exorcism, fast, vigil, touch or material is required.",
+      "significance": {
+        "text": "The reviewed chapter depicts attraction and a long relationship, Manjughosha's fear of Medhavin's curse when she seeks to leave, his dehumanising retaliation, and Cyavana holding him responsible too. Devam does not treat women, attraction or sexuality as pollution and does not diagnose a curse. A bounded meaning is accountability without dehumanisation: own conduct, respect ongoing consent and unequal power, prevent recurrence and make proportionate repair without claiming ritual erases harm.",
+        "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"],
+        "scope_note": "Source-labelled ethical reflection; not sexual, legal, clinical, supernatural or absolution advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "papamochani-manjughosha-medhavin-en",
+          "title": "Manjughosha and Medhavin in Padma Purana chapter 46",
+          "summary": "Krishna tells Yudhishthira an account Lomasa told Mandhatri. In Chaitraratha forest, celestial musician Manjughosha seeks to attract the celibate sage Medhavin. The reviewed expression objectifies her body through a sexualised battle metaphor; Devam omits that inventory. It describes mutual passion and many years passing unnoticed. When Manjughosha asks to leave, she fears Medhavin's curse and continues for years, showing that her freedom is constrained by his power. After learning the elapsed time, Medhavin blames and curses her into a form translated as a female goblin. She asks him to soften the curse; he names Papamochani. Medhavin's father Cyavana then rebukes him and prescribes the same observance. The chapter says both observe it, her form and his merit are restored, and even serious wrongs can be removed. Devam preserves initial influence, mutual attraction, later fear, unequal curse power, both people's agency and Cyavana's counter-rebuke. It does not treat sexuality as sin, simplify either person into a modern victim/villain, diagnose supernatural states, or claim ritual cancels serious harm, restitution, reporting, professional care or law.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 46",
+          "source_ids": ["padma-purana-papamochani-deshpande"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {"practice_id": "papamochani-en-private-accountability", "population_scope": "Ordinary North/West Smarta household or individual after local date resolution", "description": "Vishnu remembrance, bounded source account, private self-accountability, one consent-safe lawful repair/prevention step and a non-fasting close.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "instructional": false},
+        {"practice_id": "papamochani-en-formal-expiation-context", "population_scope": "Families or institutions with a separately inherited or authorised formal practice", "description": "A formal authority may prescribe vrata, parana, confession, mantra or restitution rules. This ordinary guide does not reconstruct them or promise absolution.", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "papamochani-en-minimum-v1", "label": "Private accountability and safe repair", "tier": "minimum", "setting": "individual", "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution", "form": "accessible_short", "estimated_minutes": 12, "source_ids": ["padma-purana-papamochani-deshpande", "drik-papamochani-2027", "nhm-mental-health-social-worker", "icmr-type1-diabetes-fasting", "devam-ekadashi-recurring-scaffold", "devam-papamochani-research"],
+          "materials": [
+            {"item": "A private, safe place", "required": true, "substitutions": ["Use only a brief mental form", "Postpone reflection until privacy is safe"], "source_ids": ["devam-papamochani-research"]},
+            {"item": "A secure way to remember one action", "required": false, "substitutions": ["Do not write", "Complete the action directly"], "source_ids": ["devam-papamochani-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Papamochani Ekadashi. Do not derive the date or parana from the story.", "why": "The timing and authority are deterministic and local.", "source_ids": ["drik-papamochani-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose normal food, water, medicine and sleep. Do not begin fasting, deprivation or vigil from this guide.", "why": "The non-fasting and rested route is complete.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Remember Vishnu with a familiar name, short family prayer or silence. No image or material is needed.", "why": "Devotion remains accessible without an invented universal mantra.", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 46. Omit the sexualised body inventory and label curse, goblin form, expiation and results as source claims.", "why": "The source is preserved without objectification or diagnosis.", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Privately name one harmful action or pattern in your own responsibility. Do not diagnose, label or publicly identify another person; distinguish responsibility from self-hatred.", "why": "Reflection starts with one's controllable conduct.", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 6, "instruction": "Choose one consent-safe lawful step: stop the behaviour, seek qualified help, document it, replace a loss, apologise without excuses or reply demand, use a grievance route, or respect permanent no-contact.", "why": "Repair does not purchase access or forgiveness.", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 7, "instruction": "Close with gratitude and complete only the safe action. Preserve evidence, boundaries, restitution, reporting, professional care and law; claim no absolution.", "why": "Ritual cannot erase serious harm or accountability.", "source_ids": ["devam-papamochani-research"], "optional": false}
+          ],
+          "closing": {"text": "Close privately with gratitude, eat, hydrate, take medicine and rest normally, and complete only the lawful step within your control. This route starts no fast, contact, confession, curse-removal, exorcism or parana.", "source_ids": ["devam-papamochani-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "Qualified legal, health, safeguarding or survivor support remains separate and may be necessary."}
+        },
+        {
+          "procedure_id": "papamochani-en-standard-v1", "label": "Consent-led family reflection", "tier": "standard", "setting": "family_led", "authority_scope": "family-led ordinary remembrance; no public confession or formal expiation", "form": "traditional_household", "estimated_minutes": 25, "source_ids": ["padma-purana-papamochani-deshpande", "drik-papamochani-2027", "nhm-mental-health-social-worker", "icmr-type1-diabetes-fasting", "devam-ekadashi-recurring-scaffold", "devam-papamochani-research"],
+          "materials": [
+            {"item": "Optional existing Vishnu image or text", "required": false, "substitutions": ["No image", "A familiar prayer", "Silence"], "source_ids": ["devam-ekadashi-recurring-scaffold"]},
+            {"item": "Optional private paper or secure device", "required": false, "substitutions": ["No writing", "Individual mental actions"], "source_ids": ["devam-papamochani-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the date and ask who wishes to join. Obtain consent before discussing sexuality, coercion, abuse, curse, mental health, regret or accountability; use a non-sexual age-appropriate summary for children.", "why": "Sensitive participation is voluntary.", "source_ids": ["drik-papamochani-2027", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Begin with familiar Vishnu remembrance or silence. No one must touch, dance, sing, disclose, write, fast or apologise.", "why": "Story elements and austerity are not household requirements.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Hear the bounded source account and discuss ongoing consent, fear of punishment, unequal power, self-responsibility and the wrong of dehumanising retaliation. Do not blame a gender or sexuality.", "why": "The source tensions support careful accountability, not misogyny.", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Each willing person chooses a private prevention or repair step. Do not request names, confession, contact, forgiveness, secrecy or return to an unsafe relationship or authority.", "why": "Repair preserves privacy and safeguarding.", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Close before fatigue. Secure or destroy sensitive notes, confirm safe transport and normal food/water/medicine, and direct distress or danger to qualified support.", "why": "The close prevents exposure and delayed care.", "source_ids": ["nhm-mental-health-social-worker", "icmr-type1-diabetes-fasting", "devam-papamochani-research"], "optional": false}
+          ],
+          "closing": {"text": "Offer gratitude in the family's familiar way and move only to consent-safe action. No one owes disclosure, touch, apology, contact, forgiveness, reconciliation, fasting or absolution.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "scope_note": "Do not use this guide to investigate an allegation, settle a grievance or calculate parana."}
+        },
+        {
+          "procedure_id": "papamochani-en-elaborate-v1", "label": "Ordinary verified temple visit", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "ordinary visitor conduct at a named institution with current verified programme", "form": "institutional_participation", "estimated_minutes": 45, "source_ids": ["drik-papamochani-2027", "nhm-mental-health-social-worker", "devam-papamochani-research"],
+          "materials": [{"item": "Verified current temple information and safe travel plan", "required": true, "substitutions": ["Stay home and use the complete minimum route"], "source_ids": ["devam-papamochani-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the named temple's current programme, access, safeguarding, offerings and return transport directly. Do not infer a schedule from a calendar card.", "why": "Live institutions control their own programme.", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Attend only as an ordinary visitor. Do not imitate priest-led expiation, confession, fast, vigil, curse-removal, supernatural diagnosis, exorcism or parana from this guide.", "why": "Those actions and claims require separate authority and may cause harm.", "source_ids": ["nhm-mental-health-social-worker", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Refuse coercive disclosure, private access, restraint, beating, isolation, medication advice, unwanted touch, payment pressure or contact with an unsafe person. Leave if conditions are unsafe.", "why": "Devotion cannot override consent, health, safeguarding or law.", "source_ids": ["nhm-mental-health-social-worker", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Return safely, rest and complete one private lawful step without claiming purity, curse release, acquittal, forgiveness or another guaranteed result.", "why": "The ordinary meaning remains bounded and non-diagnostic.", "source_ids": ["devam-papamochani-research"], "optional": false}
+          ],
+          "closing": {"text": "Follow the institution's ordinary visitor exit. If current information or safe conditions cannot be verified, stay home; the private non-fasting route is complete.", "source_ids": ["devam-papamochani-research"], "scope_note": "Only the institution controls its liturgy; no institution can waive health, consent, safeguarding or law."}
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-image-writing-and-household-form", "scope": "Minor household expression", "difference": "Language, image/no image, water/fruit/no offering, private writing/no writing, familiar prayer/silence and individual/family form do not change the core action.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "separate_lane_required": false},
+        {"variant_id": "formal-expiation-confession-or-restitution-rite", "scope": "Formal inherited, priest-led or legal/accountability process", "difference": "Confession, vrata, mantra, restitution, recipient, evidence and authority materially change action and consequences.", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "separate_lane_required": true},
+        {"variant_id": "gauna-or-vaishnava-authority", "scope": "Different date or parana authority", "difference": "A materially different date, food rule or parana is not merged with ordinary Smarta timing.", "source_ids": ["drik-papamochani-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "curse-possession-or-exorcism", "scope": "Supernatural diagnosis or removal claim", "difference": "Diagnosis, restraint, touch, isolation, medication and health risks materially differ; Devam does not provide or validate this route.", "source_ids": ["padma-purana-papamochani-deshpande", "nhm-mental-health-social-worker"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme", "scope": "Institution-specific liturgy", "difference": "Live schedule, priest-led acts, access, safeguarding, fees and offerings require the named institution.", "source_ids": ["devam-papamochani-research"], "separate_lane_required": true},
+        {"variant_id": "qualified-professional-support", "scope": "Legal, clinical, safeguarding, workplace or survivor route", "difference": "Serious harm and distress require qualified evidence, duties and support that ritual cannot replace.", "source_ids": ["nhm-mental-health-social-worker", "devam-papamochani-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi", "scope": "Another Ekadashi identity", "difference": "Kamada, Varuthini and other named Ekadashis have different timing, story or practice evidence.", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "A private, non-fasting, well-rested, no-touch, no-flame, no-purchase, image-free, writing-free and material-free form is complete.",
+        "Attraction, consensual affection, sexuality, music and a woman's body are not sin or pollution in this guidance. The objectifying body-as-weapon inventory is omitted.",
+        "Consent is ongoing. Fear of curse, punishment, authority, exposure or retaliation undermines free choice; prior intimacy is not permanent consent.",
+        "Do not call a woman, sexual person, survivor, accused person or anyone with illness or disability a goblin, temptress, impure, fallen or sin-bearing.",
+        "A story cannot diagnose possession, curse, mental illness, disability, trauma or unusual behaviour. Do not restrain, beat, isolate, force fasting, stop medication or perform exorcism.",
+        "No public confession, names, sexual details or allegation investigation is required. Secure or destroy private notes and do not expose another person.",
+        "An apology is not owed access, reply, secrecy, forgiveness or reconciliation. Respect no-contact, safety plans, workplace rules and legal orders.",
+        "Serious harm, abuse, coercion, assault, exploitation, theft or misconduct is not erased by fasting, prayer or regret. Safety, evidence, reporting, restitution, qualified care and law remain.",
+        "Do not begin or intensify fasting here. Never change insulin, medicines, meals or hydration; use qualified clinical advice for an inherited fast.",
+        "No sin removal, curse release, restored merit, heaven, purity, acquittal, forgiveness, relationship repair or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["papamochani-ekadashi"],
+      "title": "पापमोचनी एकादशी: अमानवीकरण बिना जवाबदेही",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज पापमोचनी एकादशी है। घर का पूर्ण रूप निजी और बिना उपवास है—विष्णु स्मरण, शरीर का वस्तुकरण छोड़ी हुई पद्म-पुराण नाम वाली मंजुघोषा-मेधाविन कथा, अपनी जिम्मेदारी का एक हानिकारक काम, एक सहमति-सुरक्षित वैध सुधार/रोकथाम और संपर्क, क्षमा या पाप-मुक्ति माँगे बिना समापन। स्वीकारोक्ति, शाप-निवारण, झाड़-फूँक, उपवास, जागरण, स्पर्श या सामग्री अनिवार्य नहीं।",
+      "significance": {"text": "समीक्षित अध्याय आकर्षण और लंबे संबंध, जाने की इच्छा पर मंजुघोषा का मेधाविन के शाप से भय, उसका अमानवीय प्रतिशोध और च्यवन द्वारा मेधाविन को भी जिम्मेदार ठहराना दिखाता है। देवम स्त्री, आकर्षण या यौनिकता को अशुद्ध नहीं और शाप का निदान नहीं मानता। सीमित अर्थ है अमानवीकरण बिना जवाबदेही—अपना आचरण, लगातार सहमति/सत्ता-अंतर, पुनरावृत्ति रोकना और अनुष्ठान से हानि मिटाने का दावा बिना अनुपातपूर्ण सुधार।", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "scope_note": "स्रोत-नाम वाला नैतिक चिंतन; यौन, कानूनी, चिकित्सकीय, अलौकिक या पाप-मुक्ति सलाह नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "papamochani-manjughosha-medhavin-hi", "title": "पद्म पुराण अध्याय 46 में मंजुघोषा और मेधाविन", "summary": "कृष्ण युधिष्ठिर को लोमश-मांधाता संवाद बताते हैं। चैत्ररथ वन में दिव्य संगीतकार मंजुघोषा ब्रह्मचारी ऋषि मेधाविन को आकर्षित करना चाहती है। समीक्षित अभिव्यक्ति उसके शरीर को यौन युद्ध-रूपक में वस्तु बनाती है; देवम वह सूची छोड़ता है। कथा आपसी आकर्षण और अनजाने बीते कई वर्ष कहती है। जब मंजुघोषा जाने की अनुमति माँगती है तो वह मेधाविन के शाप से डरकर वर्षों रुकती है—उसकी स्वतंत्रता उसकी सत्ता से सीमित है। समय जानकर मेधाविन उसे दोष देकर ऐसे रूप का शाप देता है जिसे अनुवाद ‘female goblin’ कहता है। वह शाप नरम करने को कहती है; वह पापमोचनी बताता है। मेधाविन के पिता च्यवन उसे भी डाँटकर वही पालन बताते हैं। अध्याय दोनों के पालन, उसका रूप/उसका पुण्य लौटने और गंभीर पाप मिटने का दावा करता है। देवम आरंभिक प्रभाव, आपसी आकर्षण, बाद का भय, असमान शाप-सत्ता, दोनों की भूमिका और च्यवन का प्रतिवाद बचाता है। वह यौनिकता को पाप, किसी को सरल आधुनिक पीड़ित/खलनायक, अलौकिक निदान या अनुष्ठान से गंभीर हानि, प्रतिपूर्ति, रिपोर्ट, उपचार या कानून मिटना नहीं कहता।", "tradition_scope": "पद्म पुराण उत्तर खंड अध्याय 46 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति", "source_ids": ["padma-purana-papamochani-deshpande"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "papamochani-hi-private-accountability", "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त गृह या व्यक्ति", "description": "विष्णु स्मरण, सीमित स्रोत-कथा, निजी आत्म-जवाबदेही, एक सहमति-सुरक्षित वैध सुधार/रोकथाम और बिना उपवास समापन।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "instructional": false},
+        {"practice_id": "papamochani-hi-formal-expiation-context", "population_scope": "अलग विरासत या अधिकृत औपचारिक अभ्यास वाले परिवार/संस्थान", "description": "औपचारिक प्राधिकार व्रत, पारण, स्वीकारोक्ति, मंत्र या प्रतिपूर्ति नियम दे सकता है। यह सामान्य मार्ग उनका पुनर्निर्माण या पाप-मुक्ति वादा नहीं करता।", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "papamochani-hi-minimum-v1", "label": "निजी जवाबदेही और सुरक्षित सुधार", "tier": "minimum", "setting": "individual", "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण", "form": "accessible_short", "estimated_minutes": 12, "source_ids": ["padma-purana-papamochani-deshpande", "drik-papamochani-2027", "nhm-mental-health-social-worker", "icmr-type1-diabetes-fasting", "devam-ekadashi-recurring-scaffold", "devam-papamochani-research"],
+          "materials": [
+            {"item": "निजी सुरक्षित स्थान", "required": true, "substitutions": ["केवल छोटा मानसिक रूप", "निजता सुरक्षित होने तक टालें"], "source_ids": ["devam-papamochani-research"]},
+            {"item": "एक काम याद रखने का सुरक्षित साधन", "required": false, "substitutions": ["न लिखें", "काम सीधे पूरा करें"], "source_ids": ["devam-papamochani-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "पुष्टि करें कि शहर और मान्य सामान्य स्मार्त प्राधिकार आज पापमोचनी एकादशी बताते हैं। कथा से तिथि या पारण न निकालें।", "why": "समय और प्राधिकार स्थानीय व नियत हैं।", "source_ids": ["drik-papamochani-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "सामान्य भोजन, जल, दवा और नींद लें। इस मार्ग से उपवास, अभाव या जागरण शुरू न करें।", "why": "बिना उपवास और विश्राम का रूप पूर्ण है।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 3, "instruction": "परिचित नाम, छोटी पारिवारिक प्रार्थना या मौन से विष्णु स्मरण करें। चित्र या सामग्री जरूरी नहीं।", "why": "गढ़े सार्वभौम मंत्र बिना भक्ति सुलभ है।", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "छोटी कथा को पद्म पुराण अध्याय 46 कहकर सुनें। यौन शरीर-सूची छोड़ें और शाप, पिशाची रूप, प्रायश्चित्त व फल को स्रोत-दावा कहें।", "why": "वस्तुकरण या निदान बिना स्रोत बचता है।", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 5, "instruction": "अपनी जिम्मेदारी का एक हानिकारक काम/ढर्रा निजी रूप से नामित करें। दूसरे का निदान, नाम या सार्वजनिक पहचान न करें; जिम्मेदारी को आत्म-घृणा से अलग रखें।", "why": "चिंतन अपने नियंत्रित आचरण से शुरू होता है।", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 6, "instruction": "एक सहमति-सुरक्षित वैध कदम चुनें—व्यवहार रोकना, योग्य मदद, दस्तावेज, नुकसान भरना, जवाब माँगे बिना माफी, शिकायत मार्ग या स्थायी संपर्क-विराम मानना।", "why": "सुधार प्रवेश या क्षमा नहीं खरीदता।", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 7, "instruction": "कृतज्ञता से समापन कर केवल सुरक्षित काम करें। प्रमाण, सीमा, प्रतिपूर्ति, रिपोर्ट, योग्य देखभाल और कानून बचाएँ; पाप-मुक्ति न कहें।", "why": "अनुष्ठान गंभीर हानि या जवाबदेही नहीं मिटाता।", "source_ids": ["devam-papamochani-research"], "optional": false}
+          ],
+          "closing": {"text": "निजी कृतज्ञता से समापन कर सामान्य भोजन/जल/दवा/विश्राम लें और केवल अपने नियंत्रण का वैध कदम करें। यह मार्ग उपवास, संपर्क, स्वीकारोक्ति, शाप-निवारण, झाड़-फूँक या पारण शुरू नहीं करता।", "source_ids": ["devam-papamochani-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "योग्य कानूनी, स्वास्थ्य, सुरक्षा या पीड़ित सहायता अलग रहती और जरूरी हो सकती है।"}
+        },
+        {
+          "procedure_id": "papamochani-hi-standard-v1", "label": "सहमति-आधारित पारिवारिक चिंतन", "tier": "standard", "setting": "family_led", "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; सार्वजनिक स्वीकारोक्ति या औपचारिक प्रायश्चित्त नहीं", "form": "traditional_household", "estimated_minutes": 25, "source_ids": ["padma-purana-papamochani-deshpande", "drik-papamochani-2027", "nhm-mental-health-social-worker", "icmr-type1-diabetes-fasting", "devam-ekadashi-recurring-scaffold", "devam-papamochani-research"],
+          "materials": [
+            {"item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ", "required": false, "substitutions": ["चित्र नहीं", "परिचित प्रार्थना", "मौन"], "source_ids": ["devam-ekadashi-recurring-scaffold"]},
+            {"item": "वैकल्पिक निजी कागज या सुरक्षित उपकरण", "required": false, "substitutions": ["न लिखें", "निजी मानसिक काम"], "source_ids": ["devam-papamochani-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "तिथि तय कर पूछें कौन जुड़ना चाहता है। यौनिकता, दबाव, दुर्व्यवहार, शाप, मानसिक स्वास्थ्य, पछतावा या जवाबदेही से पहले सहमति लें; बच्चों को गैर-यौन आयु-अनुकूल सार दें।", "why": "संवेदनशील सहभागिता स्वैच्छिक है।", "source_ids": ["drik-papamochani-2027", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 2, "instruction": "परिचित विष्णु स्मरण या मौन से शुरू करें। स्पर्श, नृत्य, गीत, खुलासा, लेखन, उपवास या माफी अनिवार्य न करें।", "why": "कथा-तत्व और तपस्या गृह-आवश्यकता नहीं।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 3, "instruction": "सीमित स्रोत-कथा सुनकर लगातार सहमति, दंड का भय, सत्ता-अंतर, अपनी जिम्मेदारी और अमानवीय प्रतिशोध की गलती चर्चा करें। किसी लिंग/यौनिकता को दोष न दें।", "why": "स्रोत तनाव सावधान जवाबदेही देते हैं, स्त्री-द्वेष नहीं।", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 4, "instruction": "इच्छुक व्यक्ति निजी रोकथाम/सुधार चुनें। नाम, स्वीकारोक्ति, संपर्क, क्षमा, गोपनीयता या असुरक्षित संबंध/सत्ता में वापसी न माँगें।", "why": "सुधार निजता और सुरक्षा बचाता है।", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 5, "instruction": "थकान से पहले बंद करें। संवेदनशील नोट सुरक्षित/नष्ट करें, यात्रा और सामान्य भोजन/जल/दवा सुनिश्चित करें और संकट/खतरे को योग्य सहायता दें।", "why": "समापन खुलासा और उपचार-विलंब रोकता है।", "source_ids": ["nhm-mental-health-social-worker", "icmr-type1-diabetes-fasting", "devam-papamochani-research"], "optional": false}
+          ],
+          "closing": {"text": "परिवार के परिचित ढंग से कृतज्ञता देकर केवल सहमति-सुरक्षित काम करें। कोई खुलासा, स्पर्श, माफी, संपर्क, क्षमा, मेल-मिलाप, उपवास या पाप-मुक्ति नहीं देता।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "scope_note": "इस मार्ग से आरोप-जाँच, शिकायत-समापन या पारण न निकालें।"}
+        },
+        {
+          "procedure_id": "papamochani-hi-elaborate-v1", "label": "सत्यापित सामान्य मंदिर-यात्रा", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित संस्थान में सामान्य आगंतुक", "form": "institutional_participation", "estimated_minutes": 45, "source_ids": ["drik-papamochani-2027", "nhm-mental-health-social-worker", "devam-papamochani-research"],
+          "materials": [{"item": "सत्यापित मंदिर-सूचना और सुरक्षित यात्रा", "required": true, "substitutions": ["घर रहकर पूर्ण न्यूनतम रूप करें"], "source_ids": ["devam-papamochani-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "नामित मंदिर से वर्तमान कार्यक्रम, प्रवेश, सुरक्षा, चढ़ावे और लौटने का साधन सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।", "why": "जीवित संस्थान अपना कार्यक्रम नियंत्रित करता है।", "source_ids": ["devam-papamochani-research"], "optional": false},
+            {"ordinal": 2, "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित प्रायश्चित्त, स्वीकारोक्ति, उपवास, जागरण, शाप-निवारण, अलौकिक निदान, झाड़-फूँक या पारण की नकल न करें।", "why": "ये काम/दावे अलग प्राधिकार और हानि-जोखिम रखते हैं।", "source_ids": ["nhm-mental-health-social-worker", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 3, "instruction": "जबरन खुलासा, निजी पहुँच, बंधन, मारपीट, एकांत, दवा-सलाह, अनचाहा स्पर्श, भुगतान-दबाव या असुरक्षित व्यक्ति से संपर्क मना करें। असुरक्षित हो तो निकलें।", "why": "भक्ति सहमति, स्वास्थ्य, सुरक्षा या कानून नहीं हटाती।", "source_ids": ["nhm-mental-health-social-worker", "devam-papamochani-research"], "optional": false},
+            {"ordinal": 4, "instruction": "सुरक्षित लौटकर आराम करें और शुद्धि, शाप-मुक्ति, बरी होना, क्षमा या निश्चित फल कहे बिना निजी वैध कदम करें।", "why": "सामान्य अर्थ सीमित और गैर-निदानात्मक है।", "source_ids": ["devam-papamochani-research"], "optional": false}
+          ],
+          "closing": {"text": "संस्था का सामान्य आगंतुक-निकास मानें। वर्तमान सूचना या सुरक्षित स्थिति सत्यापित न हो तो घर रहें; निजी बिना-उपवास रूप पूर्ण है।", "source_ids": ["devam-papamochani-research"], "scope_note": "संस्था अपनी विधि नियंत्रित करती है; कोई स्वास्थ्य, सहमति, सुरक्षा या कानून नहीं हटाता।"}
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-image-writing-and-household-form-hi", "scope": "छोटा गृह-अंतर", "difference": "भाषा, चित्र/नहीं, जल/फल/नहीं, निजी लेखन/नहीं, परिचित प्रार्थना/मौन और व्यक्ति/परिवार मूल काम नहीं बदलते।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-papamochani-research"], "separate_lane_required": false},
+        {"variant_id": "formal-expiation-confession-or-restitution-rite-hi", "scope": "औपचारिक विरासत, पुरोहित या कानूनी/जवाबदेही प्रक्रिया", "difference": "स्वीकारोक्ति, व्रत, मंत्र, प्रतिपूर्ति, प्राप्तकर्ता, प्रमाण और प्राधिकार काम/परिणाम बदलते हैं।", "source_ids": ["padma-purana-papamochani-deshpande", "devam-papamochani-research"], "separate_lane_required": true},
+        {"variant_id": "gauna-or-vaishnava-authority-hi", "scope": "अलग तिथि या पारण प्राधिकार", "difference": "भिन्न तिथि, भोजन-नियम या पारण सामान्य स्मार्त समय में नहीं मिलते।", "source_ids": ["drik-papamochani-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "curse-possession-or-exorcism-hi", "scope": "अलौकिक निदान या निवारण-दावा", "difference": "निदान, बंधन, स्पर्श, एकांत, दवा और स्वास्थ्य-जोखिम अलग हैं; देवम यह मार्ग नहीं देता/मानता।", "source_ids": ["padma-purana-papamochani-deshpande", "nhm-mental-health-social-worker"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme-hi", "scope": "संस्थान-विशिष्ट विधि", "difference": "जीवित समय, पुरोहित-कर्म, प्रवेश, सुरक्षा, शुल्क और चढ़ावे नामित संस्थान चाहते हैं।", "source_ids": ["devam-papamochani-research"], "separate_lane_required": true},
+        {"variant_id": "qualified-professional-support-hi", "scope": "कानूनी, चिकित्सकीय, सुरक्षा, कार्यस्थल या पीड़ित मार्ग", "difference": "गंभीर हानि/संकट योग्य प्रमाण, कर्तव्य और सहायता चाहते हैं जिन्हें अनुष्ठान नहीं बदलता।", "source_ids": ["nhm-mental-health-social-worker", "devam-papamochani-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi-hi", "scope": "अन्य एकादशी पहचान", "difference": "कामदा, वरुथिनी और अन्य एकादशियों की तिथि, कथा या अभ्यास अलग है।", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "निजी, बिना उपवास, विश्रामयुक्त, बिना स्पर्श, लौ, खरीद, चित्र, लेखन और सामग्री का रूप पूर्ण है।",
+        "आकर्षण, सहमति-युक्त स्नेह, यौनिकता, संगीत और स्त्री का शरीर पाप या अशुद्धि नहीं। शरीर को हथियार बनाने वाला विवरण छोड़ा गया है।",
+        "सहमति लगातार चाहिए। शाप, दंड, सत्ता, खुलासा या प्रतिशोध का भय स्वतंत्र चुनाव घटाता है; पहले की निकटता स्थायी सहमति नहीं।",
+        "स्त्री, यौन व्यक्ति, पीड़ित, आरोपी या बीमारी/विकलांगता वाले को पिशाच, प्रलोभिका, अशुद्ध, पतित या पाप-वाहक न कहें।",
+        "कथा possession, शाप, मानसिक बीमारी, विकलांगता, आघात या व्यवहार का निदान नहीं करती। बंधन, मारपीट, एकांत, जबरन उपवास, दवा रोकना या झाड़-फूँक न करें।",
+        "सार्वजनिक स्वीकारोक्ति, नाम, यौन विवरण या आरोप-जाँच जरूरी नहीं। निजी नोट सुरक्षित/नष्ट करें और दूसरे को उजागर न करें।",
+        "माफी से प्रवेश, जवाब, गोपनीयता, क्षमा या मेल-मिलाप नहीं मिलता। संपर्क-विराम, सुरक्षा योजना, कार्यस्थल नियम और कानूनी आदेश मानें।",
+        "गंभीर हानि, दुर्व्यवहार, दबाव, हमला, शोषण, चोरी या दुराचार उपवास, प्रार्थना या पछतावे से नहीं मिटता। सुरक्षा, प्रमाण, रिपोर्ट, प्रतिपूर्ति, उपचार और कानून रहते हैं।",
+        "यहाँ उपवास शुरू या कड़ा न करें। इंसुलिन, दवा, भोजन या जल न बदलें; विरासत उपवास में योग्य चिकित्सकीय सलाह लें।",
+        "पाप-नाश, शाप-मुक्ति, पुण्य-वापसी, स्वर्ग, शुद्धि, बरी होना, क्षमा, संबंध-सुधार या कोई फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

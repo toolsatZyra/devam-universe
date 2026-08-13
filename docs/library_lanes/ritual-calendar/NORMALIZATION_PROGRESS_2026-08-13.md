@@ -350,3 +350,27 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published. The evidence-confirmed Pankoddhar denominator correction remains
 open and uncounted pending a reviewed successor freeze.
+
+The twenty-third post-freeze item is complete at the bilingual authored-library
+layer: `papamochani-ekadashi-north-west-smarta-household-2027-v1`. It preserves
+the reviewed 2 April 2027 ordinary fixture and gives a private, non-fasting,
+well-rested, no-touch, no-flame, writing-free and material-free route: Vishnu
+remembrance, a chapter-46-labelled Manjughosha-Medhavin account, one action in
+the participant's own responsibility, one consent-safe lawful repair/prevention
+step and a close that preserves evidence, boundaries, qualified care and law.
+
+The source's initial influence, mutual attraction, later fear of curse, unequal
+power, Medhavin's dehumanising retaliation, Cyavana's counter-rebuke,
+supernatural form, expiation and promised results remain source facts. The
+sexualised body inventory is omitted; women and sexuality are not blamed;
+possession/curse is not diagnosed; and ritual does not erase serious harm,
+reporting, restitution or law. Language, image/no image, private writing/no
+writing and familiar prayer/silence remain inside the lane. Formal expiation,
+different timing authority, supernatural-removal claims, named institutions,
+qualified professional routes and other named Ekadashis remain separate.
+
+Exact accepted-authoring coverage is now **23 completed after freeze / 185
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published. The evidence-confirmed Pankoddhar denominator correction remains
+open and uncounted pending a reviewed successor freeze.
