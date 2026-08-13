@@ -688,3 +688,22 @@ Exact accepted-authoring coverage is now **174 completed after freeze / 34
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first eclipse-observance checkpoint
+
+Three accepted answers are complete as bilingual, location-and-authority-routed
+lanes: penumbral lunar eclipse, total solar eclipse and annular solar eclipse.
+
+The batch separates NASA's astronomical account from the source-labelled Rahu,
+Surya and Soma narrative in Mahabharata Adi Parva section XIX. It routes from
+the observer's computed local phase rather than the global eclipse name. Thus
+the 6 February 2027 annular eclipse generates no Indian visible-event route;
+the 2 August globally total eclipse is only partial where visible in India; and
+the reviewed Delhi calendar does not apply Sutak to the 20/21 February
+penumbral event. Family, Panchang, sampradaya and temple practices remain named
+owner routes. Solar-viewing safety is mandatory; viewing itself is optional.
+
+Exact accepted-authoring coverage is now **177 completed after freeze / 31
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
