@@ -509,3 +509,27 @@ Exact accepted-authoring coverage is now **76 completed after freeze / 132
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed still does not mean projected, hosted,
 independently released or published.
+
+## Evidence-first solar-ingress batch checkpoint
+
+The 29 remaining accepted solar labels are complete as separate bilingual
+applicability lanes: 10 North/shared Sankrantis, 11 Malayalam Sankramams and 8
+Odia Sankrantis. They reuse one reviewed deterministic-ingress, Aditya Hridaya
+story and safety spine without turning a zodiac transition into a national
+puja. Each pack still resolves its own city, year, accepted calendar and
+regional civil-day rule.
+
+Malayalam labels preserve solar-month identity but infer no Kerala-wide
+household rite. Generic Odia labels likewise remain safe calendar routes.
+Mahabisuba Pana adds only the officially evidenced optional drink-sharing route
+with potable-water, allergen and dairy-hygiene boundaries; Raja adds the
+officially evidenced multi-day seasonal/community route with menstrual dignity,
+consent and swing safety. Vishu, Onam, Makaravilakku, Basumati Puja, named
+temples, formal punya-kala and other regional observances remain separate
+owners. Cosmetic state, language, dress, food and image differences remain
+unified.
+
+Exact accepted-authoring coverage is now **105 completed after freeze / 103
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+These packs are authored and internally reviewed only; they are not projected,
+hosted, independently culturally reviewed, released or published.

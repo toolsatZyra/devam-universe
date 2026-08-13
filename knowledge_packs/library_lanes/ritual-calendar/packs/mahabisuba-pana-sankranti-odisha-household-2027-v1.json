@@ -1,0 +1,1310 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "mahabisuba-pana-sankranti-odisha-household-2027-v1",
+  "observance_slugs": [
+    "mahabisuba-pana-sankranti"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN-OD"
+    ],
+    "tradition_codes": [
+      "odia-solar",
+      "family-specific-hindu"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city, civil date and accepted Panchang resolve the local Simha-to-Mesha ingress?",
+      "Do you want a material-free Mesha remembrance or a named family/temple punya-kala and formal Surya rite?",
+      "Are you asking instead about Kerala the corresponding Malayalam solar-month transition, a named same-day regional observance or a same-day Shraddha?",
+      "Would battle, enemy-destruction, exhaustion, mantra-result or grief language be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, shade, child care, accessibility and no sun, roof, water or flame exposure?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-OD",
+        "tradition_code": "odia-solar",
+        "observance_slug": "mahabisuba-pana-sankranti"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "mahabisuba-pana-sankranti",
+        "language_code": "en",
+        "note": "This is the Odisha and shared Mesha solar-ingress route. the corresponding Malayalam solar-month transition, a named same-day regional observance and Shraddha retain separate authority and procedure."
+      },
+      {
+        "observance_slug": "mahabisuba-pana-sankranti",
+        "language_code": "hi",
+        "note": "यह उत्तर/पश्चिम और साझा मेष सौर-प्रवेश मार्ग है। कन्नि संक्रामम, बंगाल विश्वकर्मा पूजा और श्राद्ध का प्राधिकार व क्रम अलग है।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-mesha-india-reference-2027",
+      "devam-solar-rule-audit",
+      "devam-solar-ingress-batch-research"
+    ],
+    "timing_kind": "astronomical",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "kanya-simha-to-kanya-local-ingress-north-shared-v1",
+    "closing_decision_rule_id": "mesha-fed-shaded-material-free-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed New Delhi and Indian 2027 fixtures place Mahabisuba Pana Sankranti on Wednesday 14 April 2027. Recompute the local sidereal Simha-to-Mesha ingress and accepted Panchang; punya-kala remains unresolved here. Never copy the date, ingress time, punya-kala, mantra, arghya, donation period or temple schedule to another city, year or tradition."
+  },
+  "sources": [
+    {
+      "source_id": "drik-mesha-india-reference-2027",
+      "title": "2027 Sankranti calendar: Mesha ingress reference fixture",
+      "publisher": "DrikPanchang",
+      "source_role": "location-pinned 14 April Mesha date and Simha-to-Mesha identity; practitioner discovery evidence, not universal punya-kala or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/sankranti/sankranti.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "locator": "14 April 2027; Meena to Mesha; location-sensitive display",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-kanya-2026-fixture",
+      "title": "Mahabisuba Pana Sankranti and Bengal named same-day 2026 deterministic fixture",
+      "publisher": "Devam",
+      "source_role": "compact prior ingress identity and unresolved-punya-kala boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/panchang/mahabisuba-pana-sankranti-vishwakarma-bengal-2026-v1.json",
+        "pointers": [
+          "/resolution_contract/kanya_sankranti"
+        ]
+      }
+    },
+    {
+      "source_id": "iitk-valmiki-aditya-hridaya",
+      "title": "Valmiki Ramayana, Yuddha Kanda 6.107: Aditya Hridaya",
+      "publisher": "IIT Kanpur Valmiki Ramayan portal",
+      "source_role": "fixed Sanskrit, word order, translation and full Agastya-Rama Surya story; not Mesha origin or generic recitation instruction",
+      "rights_lane": "citation_only",
+      "url": "https://www.valmiki.iitk.ac.in/sloka?field_kanda_tid=6&field_sarga_value=107&language=dv",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "kanda": 6,
+        "sarga": 107,
+        "verses": "1-31",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-sankranti-general-scaffold",
+      "title": "September-December general Sankranti content",
+      "publisher": "Devam",
+      "source_role": "reused bilingual material-free Surya-remembrance scaffold; partial 2026 material, not counted Mesha coverage",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/rituals/sankranti-september-december-general-content-v1.json",
+        "observance_slug": "mahabisuba-pana-sankranti"
+      }
+    },
+    {
+      "source_id": "devam-solar-rule-audit",
+      "title": "Solar-ingress rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen North/shared, Malayalam and Odisha applicability split",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/solar-ingress-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-vishwakarma-bengal-lane",
+      "title": "a named same-day regional observance workplace content lane",
+      "publisher": "Devam",
+      "source_role": "separate same-date workplace, machinery and organiser owner lane; linked, not copied",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/rituals/vishwakarma-puja-bengal-workplace-content-v1.json"
+      }
+    },
+    {
+      "source_id": "pib-direct-sun-eye-safety",
+      "title": "Solar viewing eye-safety guidance",
+      "publisher": "Press Information Bureau, Ministry of Earth Sciences, Government of India",
+      "source_role": "official boundary against naked-eye solar viewing and improvised filters",
+      "rights_lane": "citation_only",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1868856&lang=2&reg=3",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "gidm-holy-dip-safety-2025",
+      "title": "Safety during holy dips concept note",
+      "publisher": "Gujarat Institute of Disaster Management",
+      "source_role": "government water, crowd and ghat safety boundary; not a ritual instruction",
+      "rights_lane": "citation_only",
+      "url": "https://gidm.gujarat.gov.in/sites/default/files/concept_note/2025-04-08-Concept%20Note.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "mohfw-diabetes-prolonged-fasting-faq43",
+      "title": "Diabetes Mellitus FAQ: prolonged fasting",
+      "publisher": "Directorate General of Health Services, Ministry of Health and Family Welfare",
+      "source_role": "official fasting-risk boundary; not individual medical advice",
+      "rights_lane": "citation_only",
+      "url": "https://dghs.mohfw.gov.in/uploads/assets/FTQHV3zrwD8qHFnFiXRXIrjAo6BFUdILJFfyAcqk.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "question": 43,
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-emergency-112",
+      "title": "Emergency Response Support System 112",
+      "publisher": "Ministry of Home Affairs, Government of India",
+      "source_role": "official emergency route for imminent danger",
+      "rights_lane": "citation_only",
+      "url": "https://112.gov.in/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-solar-ingress-batch-research",
+      "title": "Mahabisuba Pana Sankranti Odisha and shared household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local denominator, timing, two-story, actionability, safety, closing and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/mahabisuba-pana-sankranti-odisha-household-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "otdc-pana-sankranti",
+      "title": "Pana Sankranti public programme",
+      "publisher": "Odisha Tourism Development Corporation",
+      "source_role": "official living-practice evidence for optional Pana mixing and sharing with fruit and dairy ingredients",
+      "rights_lane": "citation_only",
+      "url": "https://otdc.odisha.gov.in/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "locator": "Pana Sankranti programme description",
+        "checked": "2026-08-13"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "mahabisuba-pana-sankranti"
+      ],
+      "title": "Mahabisuba Pana Sankranti: safe household remembrance",
+      "short_answer": "For an Odisha household, first resolve the local Mesha/Pana date. A complete home form can be prayer, the labelled Surya story and an optional safely prepared familiar drink; the public Pana-mixing practice is optional, ingredient-disclosed and organiser-owned. No hanging pot, purchase, fast or distribution is required.",
+      "significance": {
+        "text": "Mahabisuba Pana Sankranti names the Sun's sidereal transition from Simha to Mesha. A bounded Devam meaning is to notice transition, light and time while protecting ordinary care and free choice. The Ramayana's Aditya Hridaya scene is an optional Surya story, not the day's universal origin or one national puja.",
+        "source_ids": [
+          "drik-mesha-india-reference-2027",
+          "devam-kanya-2026-fixture",
+          "devam-solar-rule-audit",
+          "devam-solar-ingress-batch-research",
+          "iitk-valmiki-aditya-hridaya"
+        ],
+        "scope_note": "Odisha and shared household synthesis; not the corresponding Malayalam solar-month transition, a named same-day regional observance, Shraddha, punya-kala or formal mantra."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "kanya-solar-transition-en",
+          "title": "A solar transition, not one national origin story",
+          "summary": "The reviewed practitioner calendar names Mahabisuba Pana Sankranti from the Sun's sidereal transition from Simha to Mesha. This is a calendrical account of change, timekeeping and a solar-month boundary. Different regions may attach different deity, temple, workplace, donation or ancestor observances. The ingress alone does not create a universal birth myth, national household ritual or promised result.",
+          "tradition_scope": "Current location-aware practitioner-calendar identity",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-kanya-2026-fixture"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "aditya-hridaya-agastya-rama-en",
+          "title": "Agastya gives Rama the Aditya Hridaya in battle",
+          "summary": "Rama stands exhausted by battle and deep in thought while Ravana prepares to fight again. The gods gather to witness the encounter, and Agastya approaches. He teaches the Aditya Hridaya, praising Surya and attributing auspiciousness, victory, removal of enemies and sorrow, sin release and long life to the hymn. The chapter identifies the Sun with many deities and cosmic functions and describes rays, heat, light, darkness, seasons, time, rain, creation, destruction, sacrifice, Veda and witness. Agastya tells Rama to repeat the hymn three times in great difficulty and predicts victory, then departs. The source says Rama's sorrow leaves; he purifies himself, turns toward the Sun, recites three times, regains joy and resolve, takes up his bow and returns to battle. Surya is depicted among the gods urging Ravana's defeat. This is a battle-context source story, not Mahabisuba Pana Sankranti's origin, a real-person enemy metaphor, permission for violence or sun-gazing, a generic mantra instruction, or a victory, cure, longevity or grief-relief guarantee.",
+          "tradition_scope": "Valmiki Ramayana, Yuddha Kanda 6.107, IIT Kanpur Sanskrit and translation portal",
+          "source_ids": [
+            "iitk-valmiki-aditya-hridaya",
+            "devam-solar-ingress-batch-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "general-kanya-remembrance-en",
+          "population_scope": "Some households using a Odisha or shared Mesha calendar",
+          "description": "Current practitioner material may associate Sankranti with Surya remembrance, bathing, arghya and charity. This pack keeps only a material-free remembrance and optional affordable care act as generic; formal actions require named safe authority.",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-sankranti-general-scaffold",
+            "devam-solar-ingress-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "separate-bengal-vishwakarma-en",
+          "population_scope": "Bengal workplaces and participating households under their organiser",
+          "description": "named same-day Puja may share the Mesha date but has tools, machinery, workplace, organiser and shutdown/restart safety. It remains a separate linked lane, not a Mesha variant copied here.",
+          "source_ids": [
+            "devam-vishwakarma-bengal-lane",
+            "devam-solar-ingress-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-safe-pana-en",
+          "population_scope": "Some Odisha public programmes and consenting households; not universal",
+          "description": "Official Odisha tourism practice evidence supports fruit/milk/curd drink mixing and sharing in a public programme. At home use potable water, clean utensils, explicit ingredient/allergen disclosure, safe dairy handling and a no-consumption option. A sealed drink, ordinary water or no drink is complete; do not infer a hanging-pot or Tulsi procedure.",
+          "source_ids": [
+            "otdc-pana-sankranti"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "kanya-private-en",
+          "label": "Private, shaded and material-free Mesha remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Odisha and shared household synthesis; not formal mantra, the Malayalam counterpart, named same-day or Shraddha authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 14,
+          "materials": [
+            {
+              "item": "A safe indoor or shaded pause",
+              "required": false,
+              "substitutions": [
+                "An existing seat",
+                "Resting",
+                "No dedicated posture"
+              ],
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ]
+            },
+            {
+              "item": "Optional familiar Surya image or text",
+              "required": false,
+              "substitutions": [
+                "A plain-language name",
+                "A familiar prayer",
+                "No image and silence"
+              ],
+              "source_ids": [
+                "devam-sankranti-general-scaffold",
+                "devam-solar-ingress-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm city, civil date, the local Simha-to-Mesha ingress and accepted Mesha Panchang. If unresolved, do not declare today Mahabisuba Pana Sankranti.",
+              "why": "An India fixture is not a portable date or punya-kala.",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, medicine, insulin, hygiene, child care and sleep; begin no fast, outdoor exposure, bath, flame, arghya or mantra.",
+              "why": "The complete form protects ordinary care.",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Sit safely indoors or in shade and remember Surya with a familiar name, plain-language thanks or silence; do not look directly at the Sun.",
+              "why": "Surya remembrance does not require eye exposure or formal liturgy.",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "devam-sankranti-general-scaffold",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear both labelled stories: the Simha-to-Mesha transition and the complete Agastya-Rama Aditya Hridaya battle scene with its attributed claims.",
+              "why": "The epic story is context, not a fabricated festival origin.",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research",
+                "iitk-valmiki-aditya-hridaya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "State privately: no real person is an enemy or demon; no victory, cure, longevity or sorrow-removal result is guaranteed; no formal recitation is required.",
+              "why": "This prevents harm, dehumanisation and false outcome claims.",
+              "source_ids": [
+                "iitk-valmiki-aditya-hridaya",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Optionally notice one transition and choose one small safe, affordable act of care, gratitude or service already within your role; no purchase, donation, disclosure, contact or action is required.",
+              "why": "Reflection remains proportionate and consent-led.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with ordinary food, water, medicine, shade and rest; do not read later events as Sankranti-phala, omen, blessing, punishment or ritual score.",
+              "why": "The material-free route is complete.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Remain fed, hydrated, shaded and rested. Later events are not Sankranti-phala or a ritual score.",
+            "source_ids": [
+              "devam-solar-ingress-batch-research"
+            ],
+            "scope_note": "Odisha and shared household synthesis; not formal mantra, the Malayalam counterpart, named same-day or Shraddha authority."
+          },
+          "source_ids": [
+            "devam-kanya-2026-fixture",
+            "devam-solar-ingress-batch-research",
+            "devam-sankranti-general-scaffold",
+            "devam-solar-rule-audit",
+            "drik-mesha-india-reference-2027",
+            "gidm-holy-dip-safety-2025",
+            "iitk-valmiki-aditya-hridaya",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "pib-direct-sun-eye-safety"
+          ]
+        },
+        {
+          "procedure_id": "kanya-family-en",
+          "label": "Consent-led family transition reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Consent-led family synthesis; not priest, guru, counsellor, predictor or workplace authority.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 22,
+          "materials": [
+            {
+              "item": "A private shared pause",
+              "required": false,
+              "substitutions": [
+                "Separate private pauses",
+                "No gathering"
+              ],
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ]
+            },
+            {
+              "item": "Optional familiar Surya support",
+              "required": false,
+              "substitutions": [
+                "A known name",
+                "Silence",
+                "No image"
+              ],
+              "source_ids": [
+                "devam-sankranti-general-scaffold",
+                "devam-solar-ingress-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm date and that the group wants generic Mesha remembrance, not the Malayalam counterpart, named same-day Puja, Shraddha or a formal Surya rite.",
+              "why": "Same-date and same-ingress identities can have different authority and procedure.",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research",
+                "devam-vishwakarma-bengal-lane"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Offer an easy no and private exit before battle, enemy, exhaustion, mantra-result or grief content.",
+              "why": "Sensitive source material never removes consent.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep everyone fed, hydrated, medicated, shaded and rested; use no sun-gazing, roof, water entry, flame or forced bathing.",
+              "why": "The family form must remain physically safe.",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Tell both stories and label every battle victory, enemy-removal, longevity and sorrow-relief statement as a source attribution.",
+              "why": "Attribution prevents a story promise from becoming Devam's guarantee.",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research",
+                "iitk-valmiki-aditya-hridaya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Say that no participant must recite Sanskrit, name an enemy, disclose a problem, promise change, donate or perform service.",
+              "why": "Belief, language, privacy and action remain voluntary.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Each willing person may privately name one support or transition they want to meet gently; do not assess the answer or predict an outcome.",
+              "why": "No family member becomes a seer, judge or counsellor.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close without hierarchy, forced gratitude, shared obligation, omen reading or copied temple practice.",
+              "why": "The consent-led family form is complete.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank willing participants, protect privacy and return to ordinary care without prediction or obligation.",
+            "source_ids": [
+              "devam-solar-ingress-batch-research"
+            ],
+            "scope_note": "Consent-led family synthesis; not priest, guru, counsellor, predictor or workplace authority."
+          },
+          "source_ids": [
+            "devam-kanya-2026-fixture",
+            "devam-solar-ingress-batch-research",
+            "devam-solar-rule-audit",
+            "devam-vishwakarma-bengal-lane",
+            "drik-mesha-india-reference-2027",
+            "gidm-holy-dip-safety-2025",
+            "iitk-valmiki-aditya-hridaya",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "pib-direct-sun-eye-safety"
+          ]
+        },
+        {
+          "procedure_id": "kanya-temple-en",
+          "label": "Named temple or formal-family participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor-only guidance; the named current institution owns its punya-kala and formal practice.",
+          "form": "institutional_participation",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "Current named-authority information",
+              "required": false,
+              "substitutions": [
+                "Official notice",
+                "Direct desk confirmation",
+                "Do not attend if unverified"
+              ],
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named authority's current local date, punya-kala, visitor eligibility and responsibility for the programme.",
+              "why": "The generic pack leaves formal timing unresolved.",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Check fasting and food rules, mantra limits, bathing or arghya, heat and sun exposure, flame, accessibility, child safeguards, crowd control, photography, donation, emergency plan and exit.",
+              "why": "These materially affect health, consent and safety.",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remain in authorised visitor areas, keep ordinary care and never stare at the Sun, enter unsafe water or climb an unprotected roof.",
+              "why": "Attendance creates no exposure or ritual duty.",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Do not enact battle, label a person an enemy, handle tools or machinery, or copy named same-day workplace practice into this route.",
+              "why": "Epic and workplace contexts have separate authority.",
+              "source_ids": [
+                "iitk-valmiki-aditya-hridaya",
+                "devam-solar-ingress-batch-research",
+                "devam-vishwakarma-bengal-lane"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Leave and seek appropriate help if conditions are unsafe; a home, remote, silent or cancelled form is complete.",
+              "why": "Imminent danger in India can use 112.",
+              "source_ids": [
+                "india-emergency-112",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Close without copying the public rite, displayed time, mantra count or promised result home.",
+              "why": "The named authority owns its formal close.",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Exit safely and meet ordinary food, water, medicine, shade and rest needs; attendance guarantees no result.",
+            "source_ids": [
+              "devam-solar-ingress-batch-research"
+            ],
+            "scope_note": "Visitor-only guidance; the named current institution owns its punya-kala and formal practice."
+          },
+          "source_ids": [
+            "devam-kanya-2026-fixture",
+            "devam-solar-ingress-batch-research",
+            "devam-solar-rule-audit",
+            "devam-vishwakarma-bengal-lane",
+            "drik-mesha-india-reference-2027",
+            "gidm-holy-dip-safety-2025",
+            "iitk-valmiki-aditya-hridaya",
+            "india-emergency-112",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "pib-direct-sun-eye-safety"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-en",
+          "scope": "Selected Odisha and shared Indian contexts",
+          "difference": "Language, spelling, dress, food preference, familiar Surya name, image/no-image and silence are minor differences and do not create state rituals.",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-kanya-2026-fixture",
+            "devam-solar-rule-audit",
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "kanni-sankramam-en",
+          "scope": "Kerala the corresponding Malayalam solar-month transition",
+          "difference": "Malayalam solar-month identity and date rule have a separate accepted denominator; this pack infers no distinct Kerala home puja.",
+          "source_ids": [
+            "devam-solar-rule-audit",
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bengal-vishwakarma-en",
+          "scope": "a named same-day regional observance",
+          "difference": "Tools, machinery, workplace, organiser and shutdown/restart safety make this a separate linked owner lane even when the civil date is shared.",
+          "source_ids": [
+            "devam-vishwakarma-bengal-lane",
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-formal-authority-en",
+          "scope": "Named temple, guru or family formal rite",
+          "difference": "Punya-kala, sankalpa, mantra, arghya, bathing, fire, fasting, donation and closing require current named authority.",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-kanya-2026-fixture",
+            "devam-solar-rule-audit",
+            "devam-solar-ingress-batch-research",
+            "pib-direct-sun-eye-safety",
+            "gidm-holy-dip-safety-2025",
+            "mohfw-diabetes-prolonged-fasting-faq43"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "same-day-shraddha-en",
+          "scope": "a same-day ancestor observance or another ancestor observance",
+          "difference": "Ancestor eligibility, story, materials, priest/family authority and closing differ and cannot be inferred from solar ingress.",
+          "source_ids": [
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "safety-needs-en",
+          "scope": "Medical, fasting, heat, sun, water, fall, fire, child, disability, finance or crisis needs",
+          "difference": "Ordinary care and qualified safety authority override ritual custom; a material-free form is complete.",
+          "source_ids": [
+            "pib-direct-sun-eye-safety",
+            "gidm-holy-dip-safety-2025",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "devam-solar-ingress-batch-research",
+            "india-emergency-112"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "The complete form is fed, hydrated, shaded, rested, no-fast, no-sun-gazing, no-roof, no-water-entry, no-flame, no-mantra, no-purchase, no-donation, no-contact, no-disclosure, image-free, writing-free and material-free.",
+        "Never look directly at the Sun or use binoculars, telescopes, cameras, magnifiers, smoked glass, film, water reflection or improvised filters.",
+        "Do not climb roofs, ledges, tanks, terraces or unstable furniture; avoid heat exposure and supervise children normally.",
+        "Do not enter a river, pond, sea, ghat or crowded water area, and do not force bathing, cold exposure, immersion or water pouring.",
+        "Keep normal food, water, medicine, insulin, hygiene and sleep. Prayer does not replace medical or emergency care.",
+        "No real person or group is Ravana, an enemy, demon, darkness or obstacle; do not threaten, target, shame, watch, harass or destroy anyone.",
+        "Aditya Hridaya is a battle-context source story, not a required generic mantra or a guarantee of victory, cure, longevity, grief relief or any life outcome.",
+        "Use no flame or incense in the complete form. Formal fire practice requires responsible local authority and fire safety.",
+        "No one owes belief, mantra, gratitude, disclosure, touch, eye contact, donation, service, forgiveness, reconciliation or contact.",
+        "Do not infer personality, fate, health, danger, worth or future events from Sankranti-phala, omens, birth status or later events.",
+        "Caste, birth, gender, marital status, disability, age, work, wealth or ritual fluency does not rank dignity, access, food, water or safety.",
+        "Authored means only this reviewed Mesha household lane; the Malayalam counterpart, named same-day and Shraddha remain separate, and nothing is projected, hosted, independently released or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "mahabisuba-pana-sankranti"
+      ],
+      "title": "मेष संक्रांति: सुरक्षित घरेलू स्मरण",
+      "short_answer": "ओडिशा परिवार पहले स्थानीय मेष/पणा तिथि निश्चित करे। घर का पूर्ण रूप प्रार्थना, स्रोत-चिह्नित सूर्य कथा और चाहें तो सुरक्षित परिचित पेय है; सार्वजनिक पणा-मिश्रण वैकल्पिक और आयोजक-अधीन है। लटकता घड़ा, खरीद, उपवास या वितरण आवश्यक नहीं।",
+      "significance": {
+        "text": "मेष संक्रांति सूर्य के निरयन सिंह से मेष प्रवेश का नाम है। सीमित Devam अर्थ है कि सामान्य देखभाल और स्वतंत्र चुनाव बचाते हुए परिवर्तन, प्रकाश और समय को पहचाना जाए। रामायण का आदित्य हृदय प्रसंग वैकल्पिक सूर्य-कथा है, दिन की सार्वभौमिक उत्पत्ति या राष्ट्रीय पूजा नहीं।",
+        "source_ids": [
+          "drik-mesha-india-reference-2027",
+          "devam-kanya-2026-fixture",
+          "devam-solar-rule-audit",
+          "devam-solar-ingress-batch-research",
+          "iitk-valmiki-aditya-hridaya"
+        ],
+        "scope_note": "उत्तर/पश्चिम और साझा घरेलू रूप; कन्नि संक्रामम, बंगाल विश्वकर्मा पूजा, श्राद्ध, पुण्यकाल या औपचारिक मंत्र नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "kanya-solar-transition-hi",
+          "title": "एक सौर परिवर्तन, एक राष्ट्रीय उत्पत्ति-कथा नहीं",
+          "summary": "समीक्षित पंचांग मेष संक्रांति का नाम सूर्य के निरयन सिंह से मेष प्रवेश से देता है। यह परिवर्तन, समय-गणना और सौर-मास सीमा की पंचांगीय कथा है। अलग क्षेत्रों में देवता, मंदिर, कार्यस्थल, दान या पूर्वज-संबंधी अलग observance जुड़ सकते हैं। केवल प्रवेश सार्वभौमिक जन्म-कथा, राष्ट्रीय घरेलू अनुष्ठान या निश्चित फल नहीं बनाता।",
+          "tradition_scope": "वर्तमान स्थान-सचेत practitioner-calendar पहचान",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-kanya-2026-fixture"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "aditya-hridaya-agastya-rama-hi",
+          "title": "युद्ध में अगस्त्य राम को आदित्य हृदय देते हैं",
+          "summary": "युद्ध से थके और विचार में डूबे राम खड़े हैं, जबकि रावण फिर लड़ने को तैयार है। देवता युद्ध देखने आए हैं और अगस्त्य राम के पास पहुँचते हैं। वे आदित्य हृदय सिखाते हैं, सूर्य की स्तुति करते हैं और स्रोत में इस पाठ से मंगल, विजय, शत्रु-विनाश, शोक व पाप से मुक्ति और दीर्घायु के फल जोड़े जाते हैं। अध्याय सूर्य को अनेक देवताओं और ब्रह्मांडीय कार्यों से जोड़ता है तथा किरण, ताप, प्रकाश, अंधकार, ऋतु, समय, वर्षा, सृष्टि, विनाश, यज्ञ, वेद और साक्षी का वर्णन करता है। अगस्त्य कठिन घड़ी में तीन बार पाठ कहकर युद्ध-विजय की भविष्यवाणी करते हैं और चले जाते हैं। स्रोत कहता है कि राम का शोक दूर होता है; वे शुद्धि करते हैं, सूर्य की ओर होते हैं, तीन बार पाठ करके प्रसन्नता और संकल्प पाते हैं, धनुष उठाते हैं और युद्ध में लौटते हैं। देवताओं के बीच सूर्य रावण की हार शीघ्र करने को कहते दिखाए गए हैं। यह युद्ध-संदर्भ की स्रोत-कथा है—मेष संक्रांति की उत्पत्ति, किसी वास्तविक व्यक्ति को शत्रु मानने का रूपक, हिंसा या सूर्य-दर्शन की अनुमति, सामान्य मंत्र-निर्देश अथवा विजय, उपचार, दीर्घायु या शोक-मुक्ति की गारंटी नहीं।",
+          "tradition_scope": "वाल्मीकि रामायण, युद्ध काण्ड 6.107, IIT कानपुर संस्कृत और अनुवाद portal",
+          "source_ids": [
+            "iitk-valmiki-aditya-hridaya",
+            "devam-solar-ingress-batch-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "general-kanya-remembrance-hi",
+          "population_scope": "उत्तर/पश्चिम या साझा मेष पंचांग वाले कुछ घर",
+          "description": "वर्तमान practitioner material संक्रांति से सूर्य-स्मरण, स्नान, अर्घ्य और दान जोड़ सकता है। यह पैक केवल सामग्री-मुक्त स्मरण और वैकल्पिक सस्ता देखभाल-कार्य सामान्य रखता है; औपचारिक काम को नामित सुरक्षित प्राधिकार चाहिए।",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-sankranti-general-scaffold",
+            "devam-solar-ingress-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "separate-bengal-vishwakarma-hi",
+          "population_scope": "आयोजक के अधीन बंगाल कार्यस्थल और सहभागी घर",
+          "description": "विश्वकर्मा पूजा मेष तारीख साझा कर सकती है, पर औजार, मशीन, कार्यस्थल, आयोजक और shutdown/restart सुरक्षा अलग हैं। वह जुड़ा अलग lane है, यहाँ नकल किया मेष variant नहीं।",
+          "source_ids": [
+            "devam-vishwakarma-bengal-lane",
+            "devam-solar-ingress-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-safe-pana-hi",
+          "population_scope": "कुछ ओडिशा सार्वजनिक कार्यक्रम और सहमत परिवार; सार्वभौमिक नहीं",
+          "description": "आधिकारिक ओडिशा पर्यटन सामग्री फल, दूध और दही वाले पेय के सार्वजनिक मिश्रण-वितरण का प्रमाण देती है। घर में पीने योग्य पानी, साफ बर्तन, सामग्री/एलर्जी की स्पष्ट जानकारी, सुरक्षित दुग्ध-भंडारण और न पीने का विकल्प रखें। बंद पेय, साधारण पानी या कुछ न लेना पूर्ण है; लटकते घड़े या तुलसी-विधि का अनुमान न लगाएँ।",
+          "source_ids": [
+            "otdc-pana-sankranti"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "kanya-private-hi",
+          "label": "निजी, छाया और सामग्री-मुक्त मेष स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "उत्तर/पश्चिम और साझा घरेलू Devam रूप; औपचारिक मंत्र, कन्नि, विश्वकर्मा या श्राद्ध प्राधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 14,
+          "materials": [
+            {
+              "item": "सुरक्षित घर या छाया में विराम",
+              "required": false,
+              "substitutions": [
+                "मौजूदा आसन",
+                "विश्राम",
+                "कोई तय मुद्रा नहीं"
+              ],
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित सूर्य चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "साधारण भाषा में नाम",
+                "परिचित प्रार्थना",
+                "बिना चित्र मौन"
+              ],
+              "source_ids": [
+                "devam-sankranti-general-scaffold",
+                "devam-solar-ingress-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नगर, नागरिक तारीख, स्थानीय सिंह-से-मेष प्रवेश और स्वीकृत मेष पंचांग जाँचें। अनिर्णीत हो तो आज को मेष संक्रांति घोषित न करें।",
+              "why": "भारतीय fixture दूसरे स्थान का दिन या पुण्यकाल नहीं।",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, इंसुलिन, स्वच्छता, बाल-देखभाल और नींद जारी रखें; उपवास, बाहर धूप, स्नान, अग्नि, अर्घ्य या मंत्र शुरू न करें।",
+              "why": "पूर्ण रूप सामान्य देखभाल बचाता है।",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "घर या छाया में सुरक्षित बैठकर परिचित नाम, सरल धन्यवाद या मौन से सूर्य को याद करें; सूर्य को सीधे न देखें।",
+              "why": "सूर्य-स्मरण को आँख का exposure या औपचारिक विधि नहीं चाहिए।",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "devam-sankranti-general-scaffold",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "दोनों नामित कथाएँ सुनें: सिंह-से-मेष परिवर्तन और अगस्त्य-राम का पूरा आदित्य हृदय युद्ध-प्रसंग व स्रोत-कथित फल।",
+              "why": "महाकाव्य-कथा संदर्भ है, गढ़ी हुई उत्सव-उत्पत्ति नहीं।",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research",
+                "iitk-valmiki-aditya-hridaya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "निजी रूप से कहें: कोई वास्तविक व्यक्ति शत्रु या राक्षस नहीं; विजय, उपचार, दीर्घायु या शोक-मुक्ति की गारंटी नहीं; औपचारिक पाठ जरूरी नहीं।",
+              "why": "यह हानि, अमानवीकरण और झूठे फल रोकता है।",
+              "source_ids": [
+                "iitk-valmiki-aditya-hridaya",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो एक परिवर्तन पहचानकर अपनी भूमिका में एक छोटा सुरक्षित और सस्ता देखभाल, कृतज्ञता या सेवा काम चुनें; खरीद, दान, खुलासा, संपर्क या काम जरूरी नहीं।",
+              "why": "चिंतन अनुपातिक और सहमति-आधारित रहता है।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "सामान्य भोजन, पानी, दवा, छाया और विश्राम के साथ समापन करें; बाद की घटना को संक्रांति-फल, शकुन, आशीर्वाद, दंड या अनुष्ठान-अंक न मानें।",
+              "why": "सामग्री-मुक्त मार्ग पूरा है।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "भोजन-पानी, छाया और विश्राम जारी रखें। बाद की घटना संक्रांति-फल या अनुष्ठान-अंक नहीं।",
+            "source_ids": [
+              "devam-solar-ingress-batch-research"
+            ],
+            "scope_note": "उत्तर/पश्चिम और साझा घरेलू Devam रूप; औपचारिक मंत्र, कन्नि, विश्वकर्मा या श्राद्ध प्राधिकार नहीं।"
+          },
+          "source_ids": [
+            "devam-kanya-2026-fixture",
+            "devam-solar-ingress-batch-research",
+            "devam-sankranti-general-scaffold",
+            "devam-solar-rule-audit",
+            "drik-mesha-india-reference-2027",
+            "gidm-holy-dip-safety-2025",
+            "iitk-valmiki-aditya-hridaya",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "pib-direct-sun-eye-safety"
+          ]
+        },
+        {
+          "procedure_id": "kanya-family-hi",
+          "label": "सहमति-आधारित पारिवारिक परिवर्तन चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सहमति-आधारित परिवार रूप; पुरोहित, गुरु, counsellor, predictor या कार्यस्थल प्राधिकार नहीं।",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 22,
+          "materials": [
+            {
+              "item": "निजी साझा विराम",
+              "required": false,
+              "substitutions": [
+                "अलग निजी विराम",
+                "कोई सभा नहीं"
+              ],
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित सूर्य सहारा",
+              "required": false,
+              "substitutions": [
+                "परिचित नाम",
+                "मौन",
+                "बिना चित्र"
+              ],
+              "source_ids": [
+                "devam-sankranti-general-scaffold",
+                "devam-solar-ingress-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "तारीख और यह जाँचें कि समूह सामान्य मेष स्मरण चाहता है, कन्नि, विश्वकर्मा पूजा, श्राद्ध या औपचारिक सूर्य-विधि नहीं।",
+              "why": "एक तारीख और प्रवेश वाली पहचान के प्राधिकार व क्रम अलग हो सकते हैं।",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research",
+                "devam-vishwakarma-bengal-lane"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "युद्ध, शत्रु, थकान, मंत्र-फल या शोक सामग्री से पहले आसान ‘नहीं’ और निजी निकास दें।",
+              "why": "संवेदनशील स्रोत सामग्री सहमति नहीं हटाती।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सबका सामान्य भोजन-पानी, दवा, छाया और विश्राम रखें; सूर्य-दर्शन, छत, जल-प्रवेश, अग्नि या जबरन स्नान न हो।",
+              "why": "पारिवारिक रूप शारीरिक रूप से सुरक्षित रहे।",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "दोनों कथाएँ कहें और हर युद्ध-विजय, शत्रु-विनाश, दीर्घायु व शोक-मुक्ति कथन को स्रोत-दावा कहें।",
+              "why": "स्रोत-नामांकन कथा-वचन को Devam की गारंटी बनने से रोकता है।",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research",
+                "iitk-valmiki-aditya-hridaya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "कहें कि कोई संस्कृत पाठ, शत्रु का नाम, समस्या का खुलासा, बदलाव-वादा, दान या सेवा करने को बाध्य नहीं।",
+              "why": "विश्वास, भाषा, निजता और काम स्वैच्छिक हैं।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "हर इच्छुक व्यक्ति निजी रूप से एक सहारा या परिवर्तन बता सकता है जिसे वह धीरे संभालना चाहता है; उत्तर न जाँचें और फल न बताएँ।",
+              "why": "कोई परिवारजन भविष्यवक्ता, न्यायाधीश या counsellor नहीं बनता।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "पदानुक्रम, जबरन कृतज्ञता, साझा दायित्व, शकुन-पाठ या मंदिर-विधि की नकल बिना समापन करें।",
+              "why": "सहमति-आधारित पारिवारिक रूप पूरा है।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "इच्छुक लोगों को धन्यवाद दें, निजता बचाएँ और बिना भविष्यवाणी या दायित्व सामान्य देखभाल पर लौटें।",
+            "source_ids": [
+              "devam-solar-ingress-batch-research"
+            ],
+            "scope_note": "सहमति-आधारित परिवार रूप; पुरोहित, गुरु, counsellor, predictor या कार्यस्थल प्राधिकार नहीं।"
+          },
+          "source_ids": [
+            "devam-kanya-2026-fixture",
+            "devam-solar-ingress-batch-research",
+            "devam-solar-rule-audit",
+            "devam-vishwakarma-bengal-lane",
+            "drik-mesha-india-reference-2027",
+            "gidm-holy-dip-safety-2025",
+            "iitk-valmiki-aditya-hridaya",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "pib-direct-sun-eye-safety"
+          ]
+        },
+        {
+          "procedure_id": "kanya-temple-hi",
+          "label": "नामित मंदिर या औपचारिक परिवार सहभागिता",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल आगंतुक मार्गदर्शन; नामित वर्तमान संस्था अपने पुण्यकाल और औपचारिक प्रथा की स्वामी है।",
+          "form": "institutional_participation",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "वर्तमान नामित-प्राधिकार सूचना",
+              "required": false,
+              "substitutions": [
+                "आधिकारिक सूचना",
+                "सीधी desk पुष्टि",
+                "अनिर्णीत हो तो न जाएँ"
+              ],
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित प्राधिकार की वर्तमान स्थानीय तारीख, पुण्यकाल, आगंतुक पात्रता और कार्यक्रम-जिम्मेदारी जाँचें।",
+              "why": "सामान्य पैक औपचारिक समय अनिर्णीत रखता है।",
+              "source_ids": [
+                "drik-mesha-india-reference-2027",
+                "devam-kanya-2026-fixture",
+                "devam-solar-rule-audit",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "उपवास-भोजन नियम, मंत्र-सीमा, स्नान या अर्घ्य, गर्मी और धूप, अग्नि, सुगमता, बाल-सुरक्षा, भीड़, फोटो, दान, आपात योजना और निकास जाँचें।",
+              "why": "ये स्वास्थ्य, सहमति और सुरक्षा को वास्तव में बदलते हैं।",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "आगंतुक-अधिकृत क्षेत्र में रहें, सामान्य देखभाल रखें और सूर्य न घूरें, असुरक्षित जल में न जाएँ या खुली छत पर न चढ़ें।",
+              "why": "उपस्थिति exposure या अनुष्ठानिक कर्तव्य नहीं बनाती।",
+              "source_ids": [
+                "pib-direct-sun-eye-safety",
+                "gidm-holy-dip-safety-2025",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "युद्ध न निभाएँ, किसी व्यक्ति को शत्रु न कहें, औजार या मशीन न संभालें और विश्वकर्मा कार्यस्थल प्रथा यहाँ न उतारें।",
+              "why": "महाकाव्य और कार्यस्थल संदर्भ का प्राधिकार अलग है।",
+              "source_ids": [
+                "iitk-valmiki-aditya-hridaya",
+                "devam-solar-ingress-batch-research",
+                "devam-vishwakarma-bengal-lane"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "स्थिति असुरक्षित हो तो निकलें और उचित सहायता लें; घर, दूरस्थ, मौन या रद्द रूप पूरा है।",
+              "why": "भारत में तत्काल खतरे पर 112 उपयोग हो सकता है।",
+              "source_ids": [
+                "india-emergency-112",
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सार्वजनिक विधि, दिखाया समय, मंत्र-गिनती या फल-वादा घर में न उतारें।",
+              "why": "नामित प्राधिकार अपने औपचारिक समापन का स्वामी है।",
+              "source_ids": [
+                "devam-solar-ingress-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित निकलें और सामान्य भोजन, पानी, दवा, छाया व विश्राम लें; उपस्थिति फल की गारंटी नहीं।",
+            "source_ids": [
+              "devam-solar-ingress-batch-research"
+            ],
+            "scope_note": "केवल आगंतुक मार्गदर्शन; नामित वर्तमान संस्था अपने पुण्यकाल और औपचारिक प्रथा की स्वामी है।"
+          },
+          "source_ids": [
+            "devam-kanya-2026-fixture",
+            "devam-solar-ingress-batch-research",
+            "devam-solar-rule-audit",
+            "devam-vishwakarma-bengal-lane",
+            "drik-mesha-india-reference-2027",
+            "gidm-holy-dip-safety-2025",
+            "iitk-valmiki-aditya-hridaya",
+            "india-emergency-112",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "pib-direct-sun-eye-safety"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-hi",
+          "scope": "चुने उत्तर/पश्चिम और साझा भारतीय संदर्भ",
+          "difference": "भाषा, वर्तनी, वस्त्र, भोजन पसंद, परिचित सूर्य नाम, चित्र/बिना चित्र और मौन छोटे अंतर हैं; अलग राज्य-अनुष्ठान नहीं।",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-kanya-2026-fixture",
+            "devam-solar-rule-audit",
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "kanni-sankramam-hi",
+          "scope": "केरल कन्नि संक्रामम",
+          "difference": "मलयालम सौर-मास पहचान और तारीख-नियम का अलग स्वीकृत denominator है; यह पैक अलग केरल घरेलू पूजा नहीं गढ़ता।",
+          "source_ids": [
+            "devam-solar-rule-audit",
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bengal-vishwakarma-hi",
+          "scope": "बंगाल विश्वकर्मा पूजा",
+          "difference": "औजार, मशीन, कार्यस्थल, आयोजक और shutdown/restart सुरक्षा इसे अलग जुड़े owner lane बनाते हैं, भले नागरिक तारीख समान हो।",
+          "source_ids": [
+            "devam-vishwakarma-bengal-lane",
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-formal-authority-hi",
+          "scope": "नामित मंदिर, गुरु या परिवार की औपचारिक विधि",
+          "difference": "पुण्यकाल, संकल्प, मंत्र, अर्घ्य, स्नान, अग्नि, उपवास, दान और समापन को वर्तमान नामित प्राधिकार चाहिए।",
+          "source_ids": [
+            "drik-mesha-india-reference-2027",
+            "devam-kanya-2026-fixture",
+            "devam-solar-rule-audit",
+            "devam-solar-ingress-batch-research",
+            "pib-direct-sun-eye-safety",
+            "gidm-holy-dip-safety-2025",
+            "mohfw-diabetes-prolonged-fasting-faq43"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "same-day-shraddha-hi",
+          "scope": "द्वितीया श्राद्ध या अन्य पूर्वज observance",
+          "difference": "पूर्वज-पात्रता, कथा, सामग्री, पुरोहित/परिवार प्राधिकार और समापन अलग हैं; सौर प्रवेश से नहीं निकाले जा सकते।",
+          "source_ids": [
+            "devam-solar-ingress-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "safety-needs-hi",
+          "scope": "चिकित्सा, उपवास, गर्मी, सूर्य, जल, गिरना, अग्नि, बाल, विकलांगता, वित्त या संकट जरूरत",
+          "difference": "सामान्य देखभाल और योग्य सुरक्षा प्राधिकार प्रथा पर लागू हैं; सामग्री-मुक्त रूप पूरा है।",
+          "source_ids": [
+            "pib-direct-sun-eye-safety",
+            "gidm-holy-dip-safety-2025",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "devam-solar-ingress-batch-research",
+            "india-emergency-112"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण रूप भोजन-पानी सहित, छाया और विश्रामपूर्ण, बिना उपवास, सूर्य-दर्शन, छत, जल-प्रवेश, अग्नि, मंत्र, खरीद, दान, संपर्क, खुलासा, चित्र, लेखन और सामग्री का है।",
+        "सूर्य को सीधे कभी न देखें और binocular, telescope, camera, magnifier, धुआँ काँच, film, जल-प्रतिबिंब या जुगाड़ filter उपयोग न करें।",
+        "छत, किनारा, टंकी, terrace या अस्थिर furniture पर न चढ़ें; गर्मी से बचें और बच्चों की सामान्य निगरानी रखें।",
+        "इस मार्ग से नदी, तालाब, समुद्र, घाट या भीड़ वाले जल-स्थान में न जाएँ; स्नान, ठंड, डुबकी या जल डालना न थोपें।",
+        "सामान्य भोजन, पानी, दवा, इंसुलिन, स्वच्छता और नींद रखें। प्रार्थना चिकित्सा या आपात देखभाल नहीं बदलती।",
+        "कोई वास्तविक व्यक्ति या समूह रावण, शत्रु, राक्षस, अंधकार या बाधा नहीं; किसी को धमकाएँ, निशाना बनाएँ, शर्मिंदा, निगरानी, परेशान या नष्ट न करें।",
+        "आदित्य हृदय युद्ध-संदर्भ की स्रोत-कथा है, जरूरी सामान्य मंत्र या विजय, उपचार, दीर्घायु, शोक-मुक्ति अथवा जीवन-फल की गारंटी नहीं।",
+        "पूर्ण रूप में अग्नि या धूपबत्ती नहीं। औपचारिक अग्नि को जिम्मेदार स्थानीय प्राधिकार और fire safety चाहिए।",
+        "कोई विश्वास, मंत्र, कृतज्ञता, खुलासा, स्पर्श, eye contact, दान, सेवा, क्षमा, मेल या संपर्क नहीं देता।",
+        "संक्रांति-फल, शकुन, जन्म-स्थिति या बाद की घटना से व्यक्तित्व, भाग्य, स्वास्थ्य, खतरा, मूल्य या भविष्य न निकालें।",
+        "जाति, जन्म, लिंग, वैवाहिक स्थिति, विकलांगता, आयु, काम, धन या अनुष्ठान-ज्ञान से गरिमा, पहुँच, भोजन, पानी या सुरक्षा न तौलें।",
+        "रचित का अर्थ केवल यह समीक्षित मेष घरेलू lane है; कन्नि, विश्वकर्मा और श्राद्ध अलग हैं और कुछ भी projected, hosted, स्वतंत्र release-reviewed या published नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
