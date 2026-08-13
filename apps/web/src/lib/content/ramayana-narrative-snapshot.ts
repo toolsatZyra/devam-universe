@@ -71,6 +71,7 @@ import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
 import { RAMAYANA_LANKA_HOUSEHOLD_LIBRARY_SCENES } from "../../data/ramayana-lanka-household-library-scenes";
+import { RAMAYANA_KUBERA_KAILASA_LIBRARY_SCENES } from "../../data/ramayana-kubera-kailasa-library-scenes";
 import { RAMAYANA_VEDAVATI_KINGS_LIBRARY_SCENES } from "../../data/ramayana-vedavati-kings-library-scenes";
 import { RAMAYANA_YAMA_INVASION_LIBRARY_SCENES } from "../../data/ramayana-yama-invasion-library-scenes";
 import { RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES } from "../../data/ramayana-cosmic-conquests-library-scenes";
@@ -213,6 +214,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "grief-searches-everywhere",
     "brothers-return-to-empty-cottage",
     "ravana-takes-lanka-and-builds-a-house",
+    "kubera-falls-kailasa-refuses",
     "vedavati-and-kings-name-consequence",
     "ravana-challenges-death",
   ]);
@@ -290,6 +292,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES,
     ...RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_HOUSEHOLD_LIBRARY_SCENES,
+    ...RAMAYANA_KUBERA_KAILASA_LIBRARY_SCENES,
     ...RAMAYANA_VEDAVATI_KINGS_LIBRARY_SCENES,
     ...RAMAYANA_YAMA_INVASION_LIBRARY_SCENES,
   ]) {
