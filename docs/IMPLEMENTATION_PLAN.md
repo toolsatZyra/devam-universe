@@ -131,6 +131,25 @@ and Balakanda groups 1-292 remain absent. The existing reusable reading schema
 still covers the batch, so no payload SQL or hosted mutation was required. See
 `docs/RAMCHARITMANAS_AYODHYAKANDA_12_22_READING_AUDIT_2026-08-14.md`.
 
+Checkpoint 2026-08-14 (Ayodhyakanda 23-39 Ramcharitmanas reading batch):
+The corrected forward reading tail now continues through one larger dramatic
+arc: Kaikeyi enters the anger chamber; Dasharatha arrives without knowing her
+terms; the two old boons are elicited under an oath; Kaikeyi demands Bharata's
+coronation and Rama's fourteen-year exile; Dasharatha pleads, collapses, and
+endures the night; and Sumantra brings Rama before the stricken king at doha
+39. The batch contains 17 natural passages, 87 ordered source units, and fresh
+Hindi and English meaning for every passage on fixed scan pages 447-465.
+Consumer context preserves absent consent, coercive oath and death threats,
+period misogyny and hierarchy, harmful widow-death imagery, bodily distress,
+and attributed fate or supernatural causation without turning them into advice
+or verified history. The reviewed cumulative tail is now 109 passages and 578
+source units. No kanda or work is complete: Rama has not yet heard the demands,
+Ayodhyakanda group 40 onward remains open, and Balakanda groups 1-292 remain
+absent. The existing reusable reading schema still covers the batch, so no
+payload SQL or hosted mutation was required. Future authoring should use whole
+works, whole kandas, or large coherent arcs and one shared validation pass,
+rather than repeated tiny release-style batches.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic

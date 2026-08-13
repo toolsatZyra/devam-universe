@@ -141,8 +141,8 @@ class RamcharitmanasBalakanda293To361Test(unittest.TestCase):
 
     def test_reading_contract_counts_reviewed_batches_without_counting_old_commentary(self):
         progress = self.contract["canonical_reading_progress"]
-        self.assertEqual(progress["completed_passages"], 92)
-        self.assertEqual(progress["completed_source_units"], 491)
+        self.assertEqual(progress["completed_passages"], 109)
+        self.assertEqual(progress["completed_source_units"], 578)
         self.assertEqual(progress["completed_contiguous_batches"][0]["passages"], 69)
         self.assertEqual(progress["completed_contiguous_batches"][0]["source_units"], 377)
         self.assertIn("not the remaining consumer source-text denominator", progress["boundary"])

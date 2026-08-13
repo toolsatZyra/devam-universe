@@ -8,7 +8,7 @@
     "attribution": "Traditionally attributed to Goswami Tulsidas",
     "primary_language_note": "The work is principally Awadhi in Devanagari; approachable Hindi and English meaning are separate consumer layers."
   },
-  "purpose": "Let a reader complete the source work in canonical order at their own pace, including one fixed-edition page, one meaningful passage, one natural source unit, or one kanda at a time, instead of encountering disconnected summaries or compulsory historical commentary.",
+  "purpose": "Let a reader complete the source work in canonical order at their own pace, with optional one-fixed-edition-page, one-meaningful-passage, one-natural-source-unit, or one-kanda pacing, instead of encountering disconnected summaries or compulsory historical commentary.",
   "authoritative_source_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
   "source_denominator": {
     "scan_coordinates": 1172,
@@ -61,13 +61,27 @@
         "reaches_division_end": false,
         "complete_division": false,
         "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-23-39-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 23,
+        "canonical_group_end": 39,
+        "passages": 17,
+        "source_units": 87,
+        "bilingual_meanings": 17,
+        "fixed_scan_pages": [447, 465],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
       }
     ],
-    "completed_passages": 92,
-    "completed_source_units": 491,
+    "completed_passages": 109,
+    "completed_source_units": 578,
     "completed_full_divisions": 0,
     "work_wide_natural_passage_denominator": "discovery_and_reconciliation_in_progress",
-    "boundary": "The corrected forward tail now runs continuously from Balakanda group 293 through its closing soratha and into Ayodhyakanda's invocation and groups 1-22. It stops after Manthara instructs Kaikeyi to enter the anger chamber; Kaikeyi acts on that instruction in group 23. It completes no kanda because Balakanda groups 1-292 and the rest of Ayodhyakanda are absent, and it does not complete the work. The 345-page q1 count remains a raw page/commentary transcription-quality counter, not the remaining consumer source-text denominator."
+    "boundary": "The corrected forward tail now runs continuously from Balakanda group 293 through its closing soratha and into Ayodhyakanda's invocation and groups 1-39. It stops when Sumantra brings Rama before the stricken king; Rama has not yet been told the two demands. It completes no kanda because Balakanda groups 1-292 and the rest of Ayodhyakanda are absent, and it does not complete the work. The 345-page q1 count remains a raw page/commentary transcription-quality counter, not the remaining consumer source-text denominator."
   },
   "reading_modes": [
     {
