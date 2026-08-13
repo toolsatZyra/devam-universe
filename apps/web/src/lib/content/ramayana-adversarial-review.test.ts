@@ -149,4 +149,31 @@ describe("Ramayana selected-expression adversarial review", () => {
       ])];
     })).toEqual(repairedTurns);
   });
+
+  it("keeps the Ayodhya departure repair source-exact and in story order", () => {
+    const repairedScenes = [
+      ["lakshmana-chooses-exile", 31, 31],
+      ["wealth-and-weapons-leave-the-palace", 32, 33],
+      ["rama-faces-dasharatha-again", 34, 35],
+      ["retinue-is-refused-bark-is-demanded", 36, 38],
+      ["three-take-the-last-blessings", 39, 40],
+    ] as const;
+    const turn = snapshot.turns.find((candidate) => candidate.id === "exile-accepted");
+    expect(turn).toBeDefined();
+    expect(turn!.scenes
+      .filter((scene) => repairedScenes.some(([id]) => id === scene.id))
+      .map((scene) => [
+        scene.id,
+        scene.source.sourceOrdinal,
+        scene.source.sourceEndOrdinal,
+        scene.source.spanSha256s?.length,
+        scene.source.sourceAddressKind,
+      ])).toEqual(repairedScenes.map(([id, start, end]) => [
+      id,
+      start,
+      end,
+      end - start + 1,
+      "section_span_set",
+    ]));
+  });
 });

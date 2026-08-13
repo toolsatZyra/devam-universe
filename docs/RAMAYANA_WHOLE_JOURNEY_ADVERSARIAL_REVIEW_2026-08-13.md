@@ -5,15 +5,15 @@ Status: **first full-corpus review checkpoint — 2026-08-13**
 Priority update: on the user's later 2026-08-13 direction, this lane is
 library-first. Image generation and UI-world projection are paused until the
 user explicitly reauthorizes them. The data-only repair sequence now replaces
-six compressed blocks across all five thin turns with seventeen exact,
-non-overlapping scenes. The current corpus is 413 scenes and 1,794 bilingual
+seven compressed blocks with twenty-two exact, non-overlapping scenes. The
+current corpus is 417 scenes and 1,813 bilingual
 beats; no turn remains below the provisional depth threshold.
 
 ## Decision
 
 Devam has a complete beginning-to-end consumer retelling of one selected
 Manmatha Nath Dutt English expression: 652 source-ordered units are represented
-exactly once by 49 turns, 413 substantial English/Hindi scenes, and 1,794
+exactly once by 49 turns, 417 substantial English/Hindi scenes, and 1,813
 bilingual beats. This is not yet a complete illustrated Ramayana world and must
 not be described that way.
 
@@ -46,7 +46,7 @@ priority is to close this experience gap, not to write a second summary layer.
 
 - Every selected-source unit belongs to exactly one scene under exactly one
   turn; the corpus does not hide skipped intervals behind famous moments.
-- All 413 English narratives, all 413 Hindi narratives, and all 1,794 visual
+- All 417 English narratives, all 417 Hindi narratives, and all 1,813 visual
   directions are unique. The review found no repeated filler blocks.
 - Hindi and English consumer fields contain clean Unicode, not rendered
   mojibake or replacement characters.
@@ -102,26 +102,27 @@ empty; a future regression below the threshold will fail the suite.
 
 ## Experience and art-direction judgment
 
-The 413-scene corpus is the correct data layer, but most of it is not yet the
+The 417-scene corpus is the correct data layer, but most of it is not yet the
 experience the user described. Visual cues are not visual worlds. Database
 links are not traversal rewards. The journey must project the same authored
 scene into four reversible lenses—main story, narrative place, character path,
 and story thread—while loading art and copy by district rather than shipping the
 whole corpus to the browser.
 
-The next library tranche should phase the five overlong interaction scenes and
-deepen character, place, event, and cross-tradition relationships. Each change
+The next library tranche should continue replacing large source-span summaries,
+beginning with the seven-section `rama-accepts-exile` block, and deepen
+character, place, event, and cross-tradition relationships. Each change
 must preserve exact source partitioning, substantial English and Hindi action,
 motivation and consequence, character/place continuity, and reversible graph
 links. Visual production is deliberately deferred.
 
 ## Next gates
 
-1. Add phase navigation for the five long scenes without duplicating source
-   identity.
+1. Continue the source-span compression audit and deepen `rama-accepts-exile`
+   without duplicating source identity.
 2. Deepen character, place, event, and cross-tradition relationships from the
    same story records without creating duplicate story bodies.
-3. Resume illustrated-district and browser work only after explicit user
+3. Resume long-scene interaction phasing, illustrated-district, and browser work only after explicit user
    authorization.
 4. Conduct observed ordinary-user comprehension and enjoyment testing when the
    experience lane resumes. Passing
