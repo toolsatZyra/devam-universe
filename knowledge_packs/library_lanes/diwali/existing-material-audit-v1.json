@@ -1,0 +1,50 @@
+{
+  "contract": "DEVAM_DIWALI_EXISTING_MATERIAL_AUDIT_V1",
+  "lane_id": "diwali-consumer",
+  "audited_on": "2026-08-13",
+  "classification_rule": "Existing shared records may be referenced but are never copied or edited by this lane. A reviewed ritual pack is practice coverage only; a short origin summary, graph node, date record, or journey stop is not a complete consumer story.",
+  "reusable_current_contract_practice_packs": [
+    {"world_id":"maharashtra-vasu-baras","path":"knowledge_packs/rituals/vasu-baras-maharashtra-family-content-v1.json","sha256":"fc71846211e23905cf4d2a3449b393e999d55638a91d27ba44f88063dc1e46dc"},
+    {"world_id":"north-west-dhantrayodashi","path":"knowledge_packs/rituals/dhantrayodashi-north-west-india-content-v1.json","sha256":"ccf9a0f6b2c754e0ae41f6e3e0efb54bbee8c29101f3b00ae4e1bc1fab4a0bb6"},
+    {"world_id":"north-west-yama-deepam","path":"knowledge_packs/rituals/yama-deepam-north-west-india-content-v1.json","sha256":"6464a3ffb480ed52806f7e5b2dd612edc8050a5280e19b0846875a526dc4c6e3"},
+    {"world_id":"maharashtra-naraka-chaturdashi","path":"knowledge_packs/rituals/naraka-chaturdashi-maharashtra-content-v1.json","sha256":"b91fc42a80de654e23608db3d6ca3c03dab4726ca317ea3c678a1946baaffd33"},
+    {"world_id":"tamil-dawn-deepavali","path":"knowledge_packs/rituals/tamil-deepavali-household-content-v1.json","sha256":"ec0df3a2f4ae3817d1db145618e3500f202011303534bd3cc3a7a928a4476323"},
+    {"world_id":"baps-gujarat-kali-chaudash","path":"knowledge_packs/rituals/kali-chaudas-baps-gujarat-content-v1.json","sha256":"3664aca83a774c9a1c5cde8fa23a0a8404de10512a3db46c7a9c83276999fd67"},
+    {"world_id":"west-india-lakshmi-puja","path":"knowledge_packs/rituals/diwali-lakshmi-puja-west-india-content-v1.json","sha256":"f084c0355b1706831058e54586b8b2c782b0c24ae3f724de9494ff3c0f5d6f4f"},
+    {"world_id":"bengal-kali-puja","path":"knowledge_packs/rituals/bengal-kali-puja-participant-content-v1.json","sha256":"11cc811ae40c803ac8b3816b156fdc957f87fafcd59fc428119a8f1a7e02ac67"},
+    {"world_id":"maharashtra-bali-pratipada","path":"knowledge_packs/rituals/bali-pratipada-maharashtra-content-v1.json","sha256":"b88f9a4ff1405af249214168ac6a42f05a0bb2d16df3f8651bf4769f94eb69c6"},
+    {"world_id":"karnataka-balipadyami","path":"knowledge_packs/rituals/balipadyami-karnataka-content-v1.json","sha256":"2233bac7e6580f1fdb637d5a15a1f61ac371455aa11de27945853a830eb84b91"},
+    {"world_id":"baps-gujarati-new-year","path":"knowledge_packs/rituals/gujarati-new-year-baps-content-v1.json","sha256":"55b4c95d6b615984edc1afe19c166661b07115a5093d81b53ea3cf10dc0e7240"},
+    {"world_id":"iskcon-bangalore-govardhana-annakut","path":"knowledge_packs/rituals/govardhana-puja-iskcon-content-v1.json","sha256":"68277ffa142a607e50218670e942efdaea87264d550b0490b0dc583b2177a950"},
+    {"world_id":"north-india-bhai-dooj","path":"knowledge_packs/rituals/bhai-dooj-north-india-content-v1.json","sha256":"330951e8a98bd38c3eb04dac43d2e232b18891f8bfc54e4536b6fb7bd849bff2"},
+    {"world_id":"jain-diwali-lay-remembrance","path":"knowledge_packs/rituals/jain-diwali-lay-remembrance-content-v1.json","sha256":"1b7224350413e7a7cf5938dfeabe7d2a7f246ec2043a726bf1ea24404a4b14a9"},
+    {"world_id":"sgpc-bandi-chhor-divas","path":"knowledge_packs/rituals/bandi-chhor-sgpc-participant-content-v1.json","sha256":"2b8781a980a7e8aceb57a1e25a8ec2b6cf08a3d9a06cb6a2963d6d693c98e085"}
+  ],
+  "missing_lane_local_practice_or_participation_records": [
+    "north-india-rama-homecoming-association",
+    "gujarati-new-year-household",
+    "nathdwara-shrinathji-annakut",
+    "maharashtra-bhau-beej",
+    "bengal-bhai-phota"
+  ],
+  "partial_story_material": {
+    "counted_complete": false,
+    "reason": "Existing ritual origin_narratives are short scoped summaries. They do not form substantial beginning-to-end bilingual moments preserving action, motivation, consequence, character, and place continuity.",
+    "selected_story_families_requiring_authoring": 13
+  },
+  "existing_material_not_counted_as_completion": [
+    {"kind":"date_records","classification":"useful_not_story_or_vidhi","examples":["knowledge_packs/panchang/dhantrayodashi-delhi-2026-v1.json","knowledge_packs/panchang/tamil-deepavali-chennai-2026-v1.json","knowledge_packs/panchang/bandi-chhor-amritsar-2026-v1.json"]},
+    {"kind":"legacy_ritual_packs","classification":"duplicate_or_superseded","reason":"Current-contract successors explicitly supersede them; counting both would duplicate practice coverage."},
+    {"kind":"six-stop_diwali_journey","classification":"useful_bounded_orientation_not_denominator","reason":"Its six source-span cards neither cover twenty worlds nor provide full stories."},
+    {"kind":"atlas_nodes_and_edges","classification":"useful_navigation_not_content_completion","reason":"Graph presence does not prove story depth, practice actionability, or cultural review."},
+    {"kind":"generic_diwali_pages","classification":"misleading_if_universalized","reason":"A five-day national sequence or one origin account cannot stand for all selected regional, Jain, and Sikh worlds."}
+  ],
+  "audit_counts": {
+    "selected_worlds": 20,
+    "reusable_shared_practice_packs": 15,
+    "missing_lane_local_practice_or_participation_records": 5,
+    "selected_story_families": 13,
+    "complete_substantial_bilingual_story_families_at_audit": 0,
+    "unclassified_selected_worlds": 0
+  }
+}

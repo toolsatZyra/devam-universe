@@ -1,0 +1,129 @@
+{
+  "contract":"DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id":"diwali-cross-lane-link-proposals-v1",
+  "lane_id":"diwali-consumer",
+  "anchor_registry_version":1,
+  "status":"proposed_for_integration",
+  "proposals":[
+    {
+      "proposal_id":"rama-return-dutt-expression",
+      "from_ref":{"lane_local_id":"story/rama-return-ayodhya"},
+      "to_ref":{"canonical_id":"devam:source-expression:ramayana-dutt-consumer-v1"},
+      "relationship_family":"text","predicate":"narrated_in_selected_expression","directionality":"directed",
+      "consumer_label":{"en":"Read this homecoming in the selected Ramayana expression","hi":"इस घर-वापसी को चयनित रामायण अभिव्यक्ति में पढ़ें"},
+      "scope":{"statement":"The link covers Yuddhakanda source ordinals 122-128 and does not assert a universal Diwali origin.","geography_codes":["IN-NORTH"],"tradition_codes":["north-india-rama-homecoming-association"],"time_scope":null,"source_expression_scope":"Manmatha Nath Dutt English prose expression"},
+      "evidence_refs":[{"evidence_kind":"source_passage","ref":"ramayana-dutt-yuddha-122-128","claim_scope":"post-war return, Ayodhya arrival and restoration sequence"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"rama-return-diwali-association",
+      "from_ref":{"lane_local_id":"story/rama-return-ayodhya"},
+      "to_ref":{"canonical_id":"devam:observance:diwali"},
+      "relationship_family":"association","predicate":"remembered_in_scoped_observance_lane","directionality":"directed",
+      "consumer_label":{"en":"A North Indian Diwali homecoming association","hi":"उत्तर भारतीय दीपावली की घर-वापसी सम्बन्धी परम्परा"},
+      "scope":{"statement":"This is one explicitly scoped North Indian association and is not every community's explanation of Diwali.","geography_codes":["IN-NORTH"],"tradition_codes":["north-india-rama-homecoming-association"],"time_scope":"local Diwali decision window","source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"official_current","ref":"ministry-tourism-diwali-current","claim_scope":"current public association of Diwali with Rama's return"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"dhanvantari-dhantrayodashi-association",
+      "from_ref":{"lane_local_id":"story/ocean-churning-dhanvantari"},
+      "to_ref":{"canonical_id":"devam:observance:dhantrayodashi"},
+      "relationship_family":"association","predicate":"remembered_in_dhantrayodashi_lane","directionality":"directed",
+      "consumer_label":{"en":"Dhanvantari remembrance within a Dhantrayodashi lane","hi":"धनत्रयोदशी धारा में धन्वन्तरि-स्मरण"},
+      "scope":{"statement":"The fixed narrative supports Dhanvantari's emergence; current practice decides whether this association applies.","geography_codes":["IN-NORTH","IN-WEST"],"tradition_codes":["dhanvantari-remembrance"],"time_scope":"Dhantrayodashi when locally applicable","source_expression_scope":"Wilson Vishnu Purana Book I chapter IX"},
+      "evidence_refs":[{"evidence_kind":"source_passage","ref":"vishnu-purana-wilson-1864-1-9","claim_scope":"Dhanvantari emerges holding the nectar vessel"},{"evidence_kind":"ritual_lane","ref":"practice-dhantrayodashi","claim_scope":"scoped contemporary Dhantrayodashi participation"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"lakshmi-emergence-lakshmi-puja",
+      "from_ref":{"lane_local_id":"story/ocean-churning-lakshmi"},
+      "to_ref":{"canonical_id":"devam:observance:diwali-lakshmi-puja"},
+      "relationship_family":"association","predicate":"available_story_for_scoped_puja_lane","directionality":"directed",
+      "consumer_label":{"en":"A source-grounded Lakshmi story for the scoped puja lane","hi":"सीमित पूजा-धारा के लिए स्रोत-आधारित लक्ष्मी कथा"},
+      "scope":{"statement":"The ocean emergence is an associated story, not proof that every Lakshmi Puja follows one origin or procedure.","geography_codes":["IN-WEST"],"tradition_codes":["diwali-lakshmi-puja"],"time_scope":"household's resolved Lakshmi Puja window","source_expression_scope":"Wilson Vishnu Purana Book I chapter IX"},
+      "evidence_refs":[{"evidence_kind":"source_passage","ref":"vishnu-purana-wilson-1864-1-9","claim_scope":"Sri emerges and chooses Vishnu"},{"evidence_kind":"ritual_lane","ref":"practice-west-lakshmi-puja","claim_scope":"scoped West India household practice"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"bengal-kali-puja-kali-anchor",
+      "from_ref":{"canonical_id":"devam:observance:bengal-kali-puja"},
+      "to_ref":{"canonical_id":"devam:being:kali"},
+      "relationship_family":"practice","predicate":"centres_worship_on","directionality":"directed",
+      "consumer_label":{"en":"Bengal Kali Puja centres worship on Kali or Shyama","hi":"बंगाल काली पूजा काली या श्यामा की उपासना पर केन्द्रित है"},
+      "scope":{"statement":"The proposal concerns the living Bengal observance and does not collapse every Kalika or goddess identity.","geography_codes":["IN-WB"],"tradition_codes":["bengal-kali-puja"],"time_scope":"Dipanwita or Shyama Puja window under local authority","source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"official_current","ref":"dakshineswar-official-dipanwita-kali-puja","claim_scope":"living Dipanwita Kali Puja at a named temple"},{"evidence_kind":"academic_historical","ref":"mcdermott-bengal-goddess-festivals-2011","claim_scope":"historical plurality and development of Bengal goddess festivals"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"lakshmi-puja-ganesha-presence",
+      "from_ref":{"canonical_id":"devam:observance:diwali-lakshmi-puja"},
+      "to_ref":{"canonical_id":"devam:being:ganesha"},
+      "relationship_family":"association","predicate":"includes_in_some_household_forms","directionality":"directed",
+      "consumer_label":{"en":"Some household forms include Ganesha","hi":"कुछ गृह-रूपों में गणेश सम्मिलित हैं"},
+      "scope":{"statement":"Presence depends on the household's established West India Lakshmi Puja form and is not universal.","geography_codes":["IN-WEST"],"tradition_codes":["household-lakshmi-puja"],"time_scope":"resolved household puja window","source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"ritual_lane","ref":"practice-west-lakshmi-puja","claim_scope":"household-specific Ganesha presence and procedural boundary"}],
+      "confidence":"medium","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"naraka-story-diwali-lanes",
+      "from_ref":{"lane_local_id":"story/narakasura-krishna-satyabhama"},
+      "to_ref":{"canonical_id":"devam:observance:diwali"},
+      "relationship_family":"association","predicate":"remembered_in_regional_naraka_lanes","directionality":"directed",
+      "consumer_label":{"en":"Narakasura remembrance in distinct regional lanes","hi":"अलग क्षेत्रीय धाराओं में नरकासुर-स्मरण"},
+      "scope":{"statement":"The association covers selected Maharashtra and Tamil worlds while preserving differences in retelling and practice.","geography_codes":["IN-MH","IN-TN"],"tradition_codes":["naraka-chaturdashi","tamil-deepavali"],"time_scope":"locally resolved Naraka or dawn Deepavali window","source_expression_scope":"Sanyal Bhagavata Canto 10 chapter 59"},
+      "evidence_refs":[{"evidence_kind":"source_passage","ref":"bhagavata-sanyal-public-domain-10-59","claim_scope":"Krishna, Satyabhama, Naraka and captives narrative core"},{"evidence_kind":"official_current","ref":"akashvani-naraka-current-account","claim_scope":"current Naraka Chaturdashi association"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"govardhana-annakut-diwali-cycle",
+      "from_ref":{"lane_local_id":"story/krishna-govardhana-shelter"},
+      "to_ref":{"canonical_id":"devam:observance:diwali"},
+      "relationship_family":"festival","predicate":"participates_in_selected_annakut_worlds","directionality":"directed",
+      "consumer_label":{"en":"Govardhana story in selected Annakut worlds","hi":"चयनित अन्नकूट संसारों में गोवर्धन कथा"},
+      "scope":{"statement":"The link applies to named ISKCON Bangalore and Nathdwara worlds, not to every Diwali household.","geography_codes":["IN-KA","IN-RJ"],"tradition_codes":["iskcon","pushtimarg"],"time_scope":"institutionally resolved Govardhana or Annakut window","source_expression_scope":"Sanyal Bhagavata Canto 10 chapters 24-27"},
+      "evidence_refs":[{"evidence_kind":"source_passage","ref":"bhagavata-sanyal-public-domain-10-24-27","claim_scope":"Govardhana shelter narrative"},{"evidence_kind":"official_current","ref":"iskcon-bangalore-govardhana","claim_scope":"named institution's current Govardhana Puja identity"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"jain-diwali-distinct-lane",
+      "from_ref":{"lane_local_id":"story/mahavira-nirvana-pavapuri"},
+      "to_ref":{"canonical_id":"devam:observance:diwali"},
+      "relationship_family":"association","predicate":"remembered_in_distinct_jain_lane","directionality":"directed",
+      "consumer_label":{"en":"A distinct Jain Diwali remembrance","hi":"विशिष्ट जैन दीपावली स्मरण"},
+      "scope":{"statement":"The Jain lane remembers Mahavira's nirvana and must not be subordinated to a Hindu universal-origin account.","geography_codes":["IN"],"tradition_codes":["jain-lay-remembrance"],"time_scope":"Jain Diwali under community authority","source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"living_practice","ref":"jaina-diwali-mahavira-nirvana","claim_scope":"JAINA account of Mahavira nirvana remembrance"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"bandi-chhor-distinct-sikh-lane",
+      "from_ref":{"lane_local_id":"story/guru-hargobind-gwalior-release"},
+      "to_ref":{"canonical_id":"devam:observance:diwali"},
+      "relationship_family":"history","predicate":"commemorated_alongside_in_distinct_sikh_lane","directionality":"directed",
+      "consumer_label":{"en":"Bandi Chhor Divas is a distinct Sikh commemoration","hi":"बन्दी छोड़ दिवस एक विशिष्ट सिख स्मरण है"},
+      "scope":{"statement":"Calendar adjacency does not turn Guru Hargobind's release into a universal Diwali-origin claim.","geography_codes":["IN-PB","IN-MP"],"tradition_codes":["sikh-bandi-chhor-divas"],"time_scope":"Bandi Chhor Divas under Sikh institutional authority","source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"official_current","ref":"sgpc-bandi-chhor-identity","claim_scope":"SGPC assertion of distinct Bandi Chhor identity"},{"evidence_kind":"living_practice","ref":"kalgidhar-trust-bandi-chhor-history","claim_scope":"received Guru Hargobind and rulers release account"}],
+      "confidence":"high","target_resolution":"existing_anchor","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"nathdwara-place-owner-resolution",
+      "from_ref":{"lane_local_id":"place/shrinathji-temple-nathdwara"},
+      "to_ref":{"lane_local_id":"place/shrinathji-canonical-owner-pending"},
+      "relationship_family":"place","predicate":"requests_canonical_place_resolution","directionality":"directed",
+      "consumer_label":{"en":"Resolve the canonical Shrinathji Temple place","hi":"श्रीनाथजी मंदिर के प्रामाणिक स्थान का समाधान करें"},
+      "scope":{"statement":"The Diwali lane supplies only institution-bounded orientation and does not create a shared global place record.","geography_codes":["IN-RJ"],"tradition_codes":["pushtimarg"],"time_scope":null,"source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"official_current","ref":"nathdwara-shrinathji-official-current","claim_scope":"current temple identity and authority boundary"}],
+      "confidence":"high","target_resolution":"unresolved_owner_lane","integration_status":"proposed"
+    },
+    {
+      "proposal_id":"pavapuri-place-owner-resolution",
+      "from_ref":{"lane_local_id":"place/jal-mandir-pavapuri"},
+      "to_ref":{"lane_local_id":"place/pavapuri-canonical-owner-pending"},
+      "relationship_family":"place","predicate":"requests_canonical_place_resolution","directionality":"directed",
+      "consumer_label":{"en":"Resolve Pavapuri and Jal Mandir shared place identities","hi":"पावापुरी और जल मंदिर की साझा स्थान-पहचान तय करें"},
+      "scope":{"statement":"The lane preserves Jain pilgrimage identity while deferring shared place ownership and deduplication.","geography_codes":["IN-BR"],"tradition_codes":["jain"],"time_scope":null,"source_expression_scope":null},
+      "evidence_refs":[{"evidence_kind":"official_current","ref":"bihar-tourism-jal-mandir-current","claim_scope":"current official place and pilgrimage description"}],
+      "confidence":"high","target_resolution":"unresolved_owner_lane","integration_status":"proposed"
+    }
+  ]
+}
