@@ -11,7 +11,7 @@ The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-448 substantial scenes and 1,957
+450 substantial scenes and 1,969
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -55,7 +55,7 @@ still illustrates 55 scenes across seven districts and gives only 14 turns a
 direct visual entrance; 35 turns still stop at orientation before their
 authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
-448 scenes and compiles 447 story-order, 94 character-path, 50 place-echo and
+450 scenes and compiles 449 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
@@ -291,8 +291,8 @@ selected Uttara range. The first whole-journey adversarial review is complete.
 It found five thin turns that needed additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
 leaks in consumer copy; the copy leaks are repaired. All five thin turns now
-clear the provisional depth floor through sixty exact data-only scenes
-replacing fourteen compressed story blocks. The same source-partitioned repair now
+clear the provisional depth floor through sixty-three exact data-only scenes
+replacing fifteen compressed story blocks. The same source-partitioned repair now
 expands the ten-section `lakshmana-joins` departure summary into five scenes
 covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
 farewells, and expands the seven-section `rama-accepts-exile` summary into
@@ -306,7 +306,7 @@ the Sagara-to-Ganga summary with six source-unit scenes for Sagara's family, the
 Kapila, Anshuman's recovery, Bhagiratha's descent of Ganga, and the completed
 water rites, while removing the prior unsupported claim that the selected
 source described Ganga consenting to the descent. It also confirms the
-larger experience gap between the complete 448-scene authored projection and
+larger experience gap between the complete 450-scene authored projection and
 the 55 scenes currently illustrated in the live journey. On the user's
 2026-08-13 direction, image generation and UI-world projection are paused; the
 final six-section summary identified by the first audit has also been split into
@@ -331,7 +331,12 @@ Rama's alarmed return, fear and blame racing toward the empty Panchavati
 cottage, and Lakshmana's account of the pressured conflict that drew him away.
 Omens remain interpreted signs, catastrophic projections remain fears, and
 Sita's and Lakshmana's conflict speech is not promoted into verified character
-fact. The next library boundary is
+fact. Uttara 17–19 is now separated into Vedavati's refusal, escape, death and
+the selected retelling's Sita connection; Marutta's interrupted sacrifice,
+protected restraint, killed noncombatants and animal-origin tale; and
+Anaranya's lost battle and future warning about Rama. Death in fire is not
+instruction, submission under threat is not consent, and prophecy does not
+erase later choices. The next library boundary is
 continuing the compression audit across other high-compression blocks
 while deepening characters, places,
 events, and relationships without pretending corpus coverage is visual-world
