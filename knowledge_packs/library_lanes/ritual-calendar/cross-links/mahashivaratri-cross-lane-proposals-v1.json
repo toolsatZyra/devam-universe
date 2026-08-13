@@ -1,0 +1,48 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-mahashivaratri-cross-links-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "mahashivaratri-north-west-lane-instantiates-canonical-observance",
+      "from_ref": {"lane_local_id": "ritual-calendar/mahashivaratri-north-west-smarta-household-2027-v1"},
+      "to_ref": {"canonical_id": "devam:observance:mahashivaratri"},
+      "relationship_family": "practice",
+      "predicate": "is_scoped_practice_lane_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "A North/West Indian household and temple-participation path for Mahashivaratri",
+        "hi": "महाशिवरात्रि के लिए उत्तर/पश्चिम भारतीय गृह और मंदिर-भागीदारी मार्ग"
+      },
+      "scope": {
+        "statement": "Delhi-reference 2027 North and West India Smarta household remembrance and ordinary temple participation only.",
+        "geography_codes": ["IN-DL", "north-india", "west-india"],
+        "tradition_codes": ["smarta-household", "general-shiva-devotional"],
+        "time_scope": "Annual Mahashivaratri; Delhi fixture 2027-03-06 with local timing dependency elsewhere.",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/mahashivaratri-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual applicability, timing, stories, practices, procedures, materials, safety and variants for the named lane."
+        },
+        {
+          "evidence_kind": "source_passage",
+          "ref": "Garuda Purana Dutt chapter CXXIV",
+          "claim_scope": "Fixed textual evidence for the named night, fowler story, four night quarters and closing."
+        },
+        {
+          "evidence_kind": "official_current",
+          "ref": "Sringeri Mahashivaratri 2026 event record",
+          "claim_scope": "Institution-specific living evidence for abhisheka, recitation and four-yama worship, not universal household authority."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    }
+  ]
+}

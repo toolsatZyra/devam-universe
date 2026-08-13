@@ -1,0 +1,362 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "mahashivaratri-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["mahashivaratri"],
+  "applicability": {
+    "region_codes": ["IN-DL", "north-india", "west-india"],
+    "tradition_codes": ["smarta-household", "general-shiva-devotional"],
+    "institution_codes": [],
+    "settings": ["household", "individual", "family_led", "temple", "community"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and family or temple Panchang should determine the night for you?",
+      "Does your family follow a known Smarta, Shaiva, regional, or temple procedure that should replace this bounded guide?",
+      "Do you want a non-fasting home remembrance or participation in a temple programme?",
+      "Could fasting, sleep loss, flame, crowds, milk or food handling, pregnancy, diabetes, medication, disability, age, or illness make a usual form unsafe?"
+    ],
+    "context_pairs": [
+      {"region_code": "IN-DL", "tradition_code": "smarta-household", "observance_slug": "mahashivaratri"},
+      {"region_code": "north-india", "tradition_code": "general-shiva-devotional", "observance_slug": "mahashivaratri"},
+      {"region_code": "west-india", "tradition_code": "general-shiva-devotional", "observance_slug": "mahashivaratri"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "mahashivaratri", "language_code": "en", "note": "This lane supports a Delhi-reference North/West Indian lay remembrance and ordinary temple participation; initiated, priest-led and region-specific forms require their own authority."},
+      {"observance_slug": "mahashivaratri", "language_code": "hi", "note": "यह मार्ग दिल्ली-संदर्भित उत्तर/पश्चिम भारतीय सामान्य गृह-स्मरण और मंदिर-भागीदारी के लिए है; दीक्षित, पुरोहित-नेतृत्व और क्षेत्र-विशेष विधियों के लिए अलग प्रामाणिक मार्ग चाहिए।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drikpanchang-delhi-mahashivaratri-2027", "stanford-observance-calendar-2026-27"],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "annual-mahashivaratri-krishna-chaturdashi-nishita-local-v1",
+    "closing_decision_rule_id": "family-or-panchang-parana-only-if-fasting-v1",
+    "live_schedule_required": true,
+    "freshness_note": "For Delhi the selected civil date is 6 March 2027 and the cited practitioner-calendar Nishita window is 00:07-00:57 on 7 March. Recalculate for another location and recheck every temple programme; this pack does not prescribe fasting or parana."
+  },
+  "sources": [
+    {
+      "source_id": "shiva-purana-vidyesvara-9",
+      "title": "Shiva Purana, Vidyesvara-samhita, chapter 9, Proclamation of Shiva as Maheshvara",
+      "publisher": "J. L. Shastri translation, citation via Wisdomlib",
+      "source_role": "textual narrative distinguishing the Shivaratri proclamation from the separately dated fire-column manifestation",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc225554.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Vidyesvara-samhita", "chapter": 9, "verses": "10-15"}
+    },
+    {
+      "source_id": "garuda-purana-dutt-cxxiv",
+      "title": "Garuda Purana, Manmatha Nath Dutt translation, chapter CXXIV, The Siva Ratra Vratam",
+      "publisher": "1908 public-domain English expression, accessed through Wisdomlib",
+      "source_role": "fixed textual evidence for the fowler narrative, waning-fourteenth night, water and bilva, four night divisions, vigil and closing",
+      "rights_lane": "derivative_allowed",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-garuda-purana-dutt/d/doc122604.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"chapter": "CXXIV", "web_lines": "51-68"}
+    },
+    {
+      "source_id": "drikpanchang-delhi-mahashivaratri-2027",
+      "title": "2027 Maha Shivaratri date and time for Delhi",
+      "publisher": "DrikPanchang",
+      "source_role": "current practitioner-calendar date, Nishita, four-prahar and optional parana fixture for Delhi",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/maha-shivaratri/maha-shivaratri-date-time.html?geoname-id=1273294",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-03-06", "timezone": "Asia/Kolkata", "nishita_local": "2027-03-07T00:07/00:57", "chaturdashi_ends_local": "2027-03-07T13:46"}
+    },
+    {
+      "source_id": "stanford-observance-calendar-2026-27",
+      "title": "Hindu religious services and observances, 2026-2027",
+      "publisher": "Stanford University Office for Religious and Spiritual Life",
+      "source_role": "independent civil-date corroboration only",
+      "rights_lane": "citation_only",
+      "url": "https://orsl.stanford.edu/upcoming-observances/hindu-religious-services",
+      "artifact_sha256": null,
+      "citation_coordinates": {"observance": "Maha Shivaratri", "civil_date": "2027-03-06"}
+    },
+    {
+      "source_id": "incredible-india-mahashivratri-2026",
+      "title": "Maha Shivratri: Celebrate the great night of Lord Shiva",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "official descriptive evidence for widespread temple, abhisheka, offering, vigil and plural popular-story contexts; not household ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/maha-shivratri",
+      "artifact_sha256": null,
+      "citation_coordinates": {"sections": ["Witness the beauty of devotion", "The legends behind the festival"], "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "sringeri-mahashivaratri-2026",
+      "title": "Mahashivaratri 2026 at Sringeri",
+      "publisher": "Sringeri Sharada Peetham",
+      "source_role": "official institution-specific example of abhisheka, scripture recitation and four-yama overnight worship",
+      "rights_lane": "citation_only",
+      "url": "https://www.sringeri.net/events/mahashivaratri-2026",
+      "artifact_sha256": null,
+      "citation_coordinates": {"event_date": "2026-02-15", "event_lines": "37-46", "reuse_as_2027_schedule": false}
+    },
+    {
+      "source_id": "mohfw-diabetes-prolonged-fasting-faq43",
+      "title": "Diabetes Mellitus FAQ, question 43: prolonged fasting",
+      "publisher": "Directorate General of Health Services, Ministry of Health and Family Welfare, Government of India",
+      "source_role": "medical safety boundary for diabetes, insulin, medication timing and prolonged fasting",
+      "rights_lane": "citation_only",
+      "url": "https://dghs.mohfw.gov.in/uploads/assets/FTQHV3zrwD8qHFnFiXRXIrjAo6BFUdILJFfyAcqk.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"question": 43, "topic": "prolonged fasting during Navratri or Ramadan"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["mahashivaratri"],
+      "title": "Mahashivaratri: a bounded household remembrance and temple-participation guide",
+      "short_answer": "For this Delhi-reference lane, Mahashivaratri falls on Saturday 6 March 2027. Keep your family or temple practice if you have one. Otherwise choose the non-fasting home remembrance below; exact night times and temple programmes are local.",
+      "significance": {
+        "text": "Mahashivaratri is the annual 'great night of Shiva', observed through remembrance, worship, restraint, prayer, study, temple participation and, in some families, fasting or night vigil. The selected lane treats wakefulness as attentive devotion rather than a health test and does not promise a result.",
+        "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"],
+        "scope_note": "North/West Indian lay context; practices and meanings vary by family, Shaiva lineage, region and institution."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "shiva-proclaims-shivaratri",
+          "title": "The day Shiva names as Shivaratri",
+          "summary": "In Vidyesvara-samhita chapter 9, after Brahma and Vishnu worship Shiva, Shiva declares the holy day pleasing to him and names it Shivaratri. The same passage separately says that the fiery-column manifestation occurred under Ardra in Margashirsha; Devam does not collapse those two textual statements into a single universal date-story.",
+          "tradition_scope": "Shiva Purana, Vidyesvara-samhita textual narrative",
+          "source_ids": ["shiva-purana-vidyesvara-9"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "sundarasena-unintended-vigil",
+          "title": "Sundarasena's unintended night of attention",
+          "summary": "The Dutt Garuda Purana tells of Sundarasena, a hunter who spends the waning-fourteenth night awake near a Shiva emblem. Water and bilva leaves fall upon it through his ordinary movements. The story frames even unplanned watchfulness and contact as received by Shiva; its promised rewards and period-specific formal vrata rules remain claims of that textual expression, not Devam guarantees.",
+          "tradition_scope": "Garuda Purana, Dutt chapter CXXIV expression",
+          "source_ids": ["garuda-purana-dutt-cxxiv"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "plural-popular-associations",
+          "title": "Marriage, poison and cosmic dance: plural living associations",
+          "summary": "Government tourism material records several widely told associations: Shiva and Parvati's union, Shiva receiving the halahala poison during the churning of the ocean, and Shiva's tandava. They express union, protection and cosmic rhythm in living festival explanation, but the page does not establish one of them as the sole origin for every tradition.",
+          "tradition_scope": "contemporary plural festival explanation documented by the Ministry of Tourism",
+          "source_ids": ["incredible-india-mahashivratri-2026"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "north-west-household-remembrance",
+          "population_scope": "Some North and West Indian Smarta or broadly Shiva-devotional households",
+          "description": "Households may clean a worship space, remember Shiva, offer water and bilva or flowers where that is established, recite a family-known name or hymn, hear a story, sit quietly and close with prayer. Fasting and vigil vary and are not defaults in this guide.",
+          "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"],
+          "instructional": false
+        },
+        {
+          "practice_id": "ordinary-temple-participation",
+          "population_scope": "Visitors to Shiva temples and community programmes",
+          "description": "Many devotees seek darshan, observe or join abhisheka, prayer, chanting, music or night programmes. Entry, offerings, queueing, accessibility and exact times belong to the selected institution.",
+          "source_ids": ["incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"],
+          "instructional": false
+        },
+        {
+          "practice_id": "four-yama-observance",
+          "population_scope": "Formal textual vrata and institutions such as Sringeri",
+          "description": "The night may be divided into four quarters for repeated worship. Sringeri's 2026 record documents an institution-led four-yama sequence; it is evidence of that living form, not a universal home requirement.",
+          "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "mahashivaratri-north-west-en-minimum-v1",
+          "label": "15-minute non-fasting, material-free remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Accessible Devam lay remembrance; not a formal vrata, puja, fast, vigil or initiated practice.",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {"item": "A safe quiet place", "required": true, "substitutions": ["A seated pause wherever you can safely be"], "source_ids": ["garuda-purana-dutt-cxxiv"]},
+            {"item": "A source-labelled Shiva story or family-known prayer", "required": false, "substitutions": ["Silent remembrance", "A trusted audio reading"], "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the locally resolved night; use 6 March 2027 only for the Delhi reference.", "why": "The observance depends on local tithi and night windows, not a reusable civil date or clock time.", "source_ids": ["drikpanchang-delhi-mahashivaratri-2027", "stanford-observance-calendar-2026-27"], "optional": false},
+            {"ordinal": 2, "instruction": "Sit safely, set aside distractions, and name the intention simply: to remember Shiva with attention and restraint.", "why": "Wakefulness is made accessible without requiring sleep deprivation or a claimed spiritual result.", "source_ids": ["garuda-purana-dutt-cxxiv"], "optional": false},
+            {"ordinal": 3, "instruction": "Read or hear one source-labelled narrative above, or use a family-known Shiva prayer without inventing a mantra or count.", "why": "This preserves textual attribution and family authority.", "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv"], "optional": false},
+            {"ordinal": 4, "instruction": "Keep a short silence and choose one concrete act of patience, repair or care for the following day.", "why": "The remembrance ends in an agency-preserving action rather than a promised outcome.", "source_ids": ["garuda-purana-dutt-cxxiv"], "optional": false}
+          ],
+          "closing": {"text": "Close with gratitude to Shiva in your own words or family form, then rest normally.", "source_ids": ["garuda-purana-dutt-cxxiv"], "scope_note": "A simplified lay close, not the formal dismissal prayer of the textual vrata."},
+          "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv", "drikpanchang-delhi-mahashivaratri-2027"]
+        },
+        {
+          "procedure_id": "mahashivaratri-north-west-en-standard-v1",
+          "label": "45-minute bounded household worship",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Bounded lay household form from cited textual and descriptive practice evidence; an established family practice replaces it.",
+          "form": "traditional_household",
+          "estimated_minutes": 45,
+          "materials": [
+            {"item": "Clean water in a small vessel", "required": false, "substitutions": ["A symbolic cup kept beside the image", "No material offering"], "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"]},
+            {"item": "Established Shiva linga or image", "required": false, "substitutions": ["Family prayer space", "Mental remembrance"], "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"]},
+            {"item": "Bilva leaf or ordinary flower", "required": false, "substitutions": ["One locally available unsprayed flower", "No plant material"], "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"]},
+            {"item": "Lamp", "required": false, "substitutions": ["Electric lamp", "No flame"], "source_ids": ["incredible-india-mahashivratri-2026"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the local date and choose a safe period in the evening or cited local night; do not copy Delhi's clock times elsewhere.", "why": "Calendar resolution and household convenience are separate decisions.", "source_ids": ["drikpanchang-delhi-mahashivaratri-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Clean the small worship area and wash hands; place only the family's established Shiva representation, if any.", "why": "This prepares respectfully without creating or consecrating a new ritual object.", "source_ids": ["incredible-india-mahashivratri-2026"], "optional": false},
+            {"ordinal": 3, "instruction": "State a modest intention for remembrance. Do not make a fast or vigil vow through this guide.", "why": "Formal vrata, fasting and parana require health-aware family or teacher guidance.", "source_ids": ["garuda-purana-dutt-cxxiv", "mohfw-diabetes-prolonged-fasting-faq43"], "optional": false},
+            {"ordinal": 4, "instruction": "If established in your home, offer a small amount of clean water and a bilva leaf or flower; otherwise offer attention without materials.", "why": "Water and bilva are source-attested while substitutions prevent waste and false necessity.", "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "optional": true},
+            {"ordinal": 5, "instruction": "Use a family-known Shiva name, prayer, hymn or reading; silence is valid when no form is known.", "why": "The pack does not fabricate Sanskrit, initiation, pronunciation or repetition counts.", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "optional": false},
+            {"ordinal": 6, "instruction": "Tell one source-labelled story and explicitly name whether it comes from the Shiva Purana, the Garuda Purana expression, or a modern popular-festival account.", "why": "Different narrative layers remain attributable rather than becoming one universal origin.", "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "optional": false},
+            {"ordinal": 7, "instruction": "Sit quietly, then identify one act of restraint, reconciliation or care for the next day.", "why": "The close connects remembrance to conduct without guaranteeing merit or purification.", "source_ids": ["garuda-purana-dutt-cxxiv"], "optional": false}
+          ],
+          "closing": {"text": "Offer thanks, ask pardon for mistakes in the family's customary words, remove unsafe flame, keep edible offerings hygienic, and share or compost usable materials respectfully.", "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "scope_note": "The source's formal dismissal is adapted into plain lay language; it is not quoted as a mandatory mantra."},
+          "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026", "mohfw-diabetes-prolonged-fasting-faq43"]
+        },
+        {
+          "procedure_id": "mahashivaratri-north-west-en-elaborate-v1",
+          "label": "Longer temple or family-authority participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Participation under the selected temple, teacher or established family authority; no independent homa, consecration, priestly abhisheka or initiated mantra.",
+          "form": "institutional_participation",
+          "estimated_minutes": 180,
+          "materials": [
+            {"item": "Current official programme and access instructions", "required": true, "substitutions": ["Official livestream", "Standard household tier"], "source_ids": ["sringeri-mahashivaratri-2026"]},
+            {"item": "Weather-, crowd- and accessibility-appropriate personal supplies", "required": true, "substitutions": ["Attend for a shorter safe interval", "Participate from home"], "source_ids": ["incredible-india-mahashivratri-2026"]},
+            {"item": "Temple-accepted offering", "required": false, "substitutions": ["No offering", "Donation or service only through official channels"], "source_ids": ["incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Check the selected institution's current date, entry, accessibility, offering and programme rules before leaving.", "why": "A past programme proves a living form but is never a future schedule.", "source_ids": ["sringeri-mahashivaratri-2026", "drikpanchang-delhi-mahashivaratri-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose a safe duration; do not drive while sleep-deprived or treat an all-night vigil as required.", "why": "Four-yama worship exists, but participation must remain compatible with health and safety.", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "optional": false},
+            {"ordinal": 3, "instruction": "Join darshan, chanting, reading or the publicly directed part of abhisheka only as the institution permits.", "why": "Temple liturgy and material handling remain under temple authority.", "source_ids": ["incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"], "optional": false},
+            {"ordinal": 4, "instruction": "If the programme spans four yamas, treat them as the institution's sequence; do not reconstruct missing rites from this summary.", "why": "The textual and Sringeri records support the structure but not a universal lay script.", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "optional": true},
+            {"ordinal": 5, "instruction": "Leave or switch to home participation if crowds, fatigue, dehydration, glucose symptoms or medication needs make continuation unsafe.", "why": "Health and ordinary duty take precedence over completing a duration.", "source_ids": ["mohfw-diabetes-prolonged-fasting-faq43", "incredible-india-mahashivratri-2026"], "optional": false}
+          ],
+          "closing": {"text": "Follow the institution's closing and exit directions; return home safely and do not infer a fasting break time unless you actually undertook a medically and traditionally appropriate fast under separate guidance.", "source_ids": ["sringeri-mahashivaratri-2026", "drikpanchang-delhi-mahashivaratri-2027", "mohfw-diabetes-prolonged-fasting-faq43"], "scope_note": "Temple-participation close only."},
+          "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026", "incredible-india-mahashivratri-2026", "mohfw-diabetes-prolonged-fasting-faq43"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "amanta-purnimanta-month-name", "scope": "South Indian Amanta Magha and North Indian Purnimanta Phalguna naming", "difference": "The lunar month name differs while the cited 2027 civil observance is the same; local Panchang authority still controls timing.", "source_ids": ["drikpanchang-delhi-mahashivaratri-2027"], "separate_lane_required": false},
+        {"variant_id": "sringeri-four-yama-institutional", "scope": "Sringeri Sharada Peetham", "difference": "The documented four-yama, abhisheka, Vedic/Puranic recitation and festival sequence is institution-led and not a generic North/West household vidhi.", "source_ids": ["sringeri-mahashivaratri-2026"], "separate_lane_required": true},
+        {"variant_id": "regional-shaiva-and-herath", "scope": "Kashmir Shaiva Herath, South Indian temple/Agamic, Nepal and other regional forms", "difference": "Dates, stories, household sequences, materials and authority can differ materially and require separately researched lanes.", "source_ids": ["incredible-india-mahashivratri-2026"], "separate_lane_required": true},
+        {"variant_id": "formal-vrata-and-fasting", "scope": "Family-, teacher- or text-led vrata", "difference": "Fasting, vigil, four-quarter puja, homa and parana appear in textual or living practice but are not prescribed by this accessible guide.", "source_ids": ["garuda-purana-dutt-cxxiv", "drikpanchang-delhi-mahashivaratri-2027", "mohfw-diabetes-prolonged-fasting-faq43"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "Do not start, extend or break a fast from this guide. People with diabetes, insulin or other treatment must follow medical advice; the cited Government of India guidance says insulin users should not fast and treated type-2 patients should consult their physician about medicines.",
+        "Do not change medication, fluids, pregnancy care or medically required food for an observance without a qualified clinician's advice.",
+        "Night vigil and sleep loss are optional, never requirements. Avoid driving, heights, flame, water edges or crowded travel when tired; use a shorter home form when needed.",
+        "Use only a small safe flame under adult supervision, or an electric light. Do not pour milk, honey, oil or large quantities of water where a temple or household cannot handle them hygienically and without waste.",
+        "Do not create or consecrate a linga, perform homa, copy priestly abhisheka, use intoxicants, or begin initiated/mantra practice from this pack.",
+        "Temple schedules, queues, livestreams, donations, dress, access and permitted offerings must be freshly checked with the institution."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["mahashivaratri"],
+      "title": "महाशिवरात्रि: सीमित गृह-स्मरण और मंदिर-भागीदारी मार्गदर्शिका",
+      "short_answer": "दिल्ली-संदर्भित इस मार्ग में महाशिवरात्रि शनिवार, 6 मार्च 2027 को है। परिवार या मंदिर की स्थापित रीति हो तो वही अपनाएँ। अन्यथा नीचे दिया गैर-उपवास गृह-स्मरण चुनें; रात्रि का सही समय और मंदिर कार्यक्रम स्थानानुसार बदलते हैं।",
+      "significance": {
+        "text": "महाशिवरात्रि शिव की वार्षिक 'महान रात्रि' है। अलग परिवारों में स्मरण, पूजा, संयम, प्रार्थना, पाठ, मंदिर-भागीदारी और कहीं-कहीं उपवास या जागरण होता है। इस मार्ग में जागरण को सजग भक्ति माना गया है, स्वास्थ्य-परीक्षा नहीं; किसी फल की गारंटी नहीं दी जाती।",
+        "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"],
+        "scope_note": "उत्तर/पश्चिम भारतीय सामान्य गृह-संदर्भ; परिवार, शैव परम्परा, क्षेत्र और संस्था के अनुसार अर्थ और विधि बदलते हैं।"
+      },
+      "origin_narratives": [
+        {"narrative_id": "shiva-proclaims-shivaratri", "title": "जिस दिन शिव 'शिवरात्रि' नाम देते हैं", "summary": "विद्येश्वर-संहिता अध्याय 9 में ब्रह्मा और विष्णु की पूजा के बाद शिव उस पवित्र दिन को अपने लिए प्रिय बताकर शिवरात्रि नाम देते हैं। उसी अंश में अग्नि-स्तम्भ के प्राकट्य को मार्गशीर्ष के आर्द्रा नक्षत्र में अलग से रखा गया है; देवम इन दोनों कथनों को एक ही सार्वभौमिक तिथि-कथा नहीं बनाता।", "tradition_scope": "शिव पुराण, विद्येश्वर-संहिता की पाठ-कथा", "source_ids": ["shiva-purana-vidyesvara-9"], "universal_origin_claimed": false},
+        {"narrative_id": "sundarasena-unintended-vigil", "title": "सुन्दरसेन का अनजाना रात्रि-स्मरण", "summary": "दत्त गरुड़ पुराण में शिकारी सुन्दरसेन कृष्ण चतुर्दशी की रात शिव-चिह्न के पास जागता है। उसके सामान्य हिलने से जल और बिल्व-पत्र उस पर गिरते हैं। कथा अनजानी सजगता को भी शिव द्वारा स्वीकार किया जाना दिखाती है; उसके फल-वचन और काल-विशेष व्रत-विधान उसी पाठ के दावे हैं, देवम की गारंटी नहीं।", "tradition_scope": "गरुड़ पुराण, दत्त अध्याय 124 की अभिव्यक्ति", "source_ids": ["garuda-purana-dutt-cxxiv"], "universal_origin_claimed": false},
+        {"narrative_id": "plural-popular-associations", "title": "विवाह, विष और ताण्डव: अनेक प्रचलित सम्बन्ध", "summary": "भारत सरकार के पर्यटन-विवरण में शिव-पार्वती मिलन, समुद्र-मंथन का हलाहल ग्रहण और शिव-ताण्डव जैसी कई प्रचलित कथाएँ साथ दर्ज हैं। जीवित उत्सव-व्याख्या में ये मिलन, रक्षा और ब्रह्माण्डीय लय के अर्थ देती हैं, पर कोई एक कथा हर परम्परा का एकमात्र मूल सिद्ध नहीं होती।", "tradition_scope": "पर्यटन मंत्रालय द्वारा दर्ज समकालीन बहुविध उत्सव-व्याख्या", "source_ids": ["incredible-india-mahashivratri-2026"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "north-west-household-remembrance", "population_scope": "कुछ उत्तर और पश्चिम भारतीय स्मार्त या सामान्य शिव-भक्त गृह", "description": "परिवार पूजा-स्थान साफ कर शिव-स्मरण, जहाँ स्थापित हो वहाँ जल और बिल्व/फूल अर्पण, परिचित नाम या स्तुति, कथा, मौन और प्रार्थना से समापन कर सकते हैं। उपवास और जागरण अलग रीति हैं, इस मार्ग के सामान्य नियम नहीं।", "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "instructional": false},
+        {"practice_id": "ordinary-temple-participation", "population_scope": "शिव-मंदिर और सामुदायिक कार्यक्रम में आने वाले श्रद्धालु", "description": "बहुत से लोग दर्शन करते, अभिषेक देखते या अनुमति से जुड़ते, प्रार्थना, जप, संगीत या रात्रि-कार्यक्रम में भाग लेते हैं। प्रवेश, सामग्री, कतार, सुगम्यता और समय चुनी संस्था तय करती है।", "source_ids": ["incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"], "instructional": false},
+        {"practice_id": "four-yama-observance", "population_scope": "औपचारिक पाठ-व्रत और शृंगेरी जैसी संस्थाएँ", "description": "रात्रि को चार याम में बाँटकर बार-बार पूजा की जा सकती है। शृंगेरी का 2026 विवरण संस्था-नेतृत्व वाला चार-याम क्रम दिखाता है; वह हर घर के लिए अनिवार्य विधि नहीं।", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "mahashivaratri-north-west-hi-minimum-v1", "label": "15 मिनट का गैर-उपवास, सामग्री-रहित स्मरण", "tier": "minimum", "setting": "individual", "authority_scope": "सुलभ देवम गृह-स्मरण; औपचारिक व्रत, पूजा, उपवास, जागरण या दीक्षित साधना नहीं।", "form": "accessible_short", "estimated_minutes": 15,
+          "materials": [
+            {"item": "सुरक्षित शांत स्थान", "required": true, "substitutions": ["जहाँ सुरक्षित हों वहीं बैठकर छोटा विराम"], "source_ids": ["garuda-purana-dutt-cxxiv"]},
+            {"item": "स्रोत-नाम वाली शिव-कथा या परिवार की परिचित प्रार्थना", "required": false, "substitutions": ["मौन स्मरण", "विश्वसनीय श्रव्य पाठ"], "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय रूप से निर्धारित रात्रि की पुष्टि करें; 6 मार्च 2027 केवल दिल्ली-संदर्भ है।", "why": "उत्सव स्थानीय तिथि और रात्रि-खण्ड पर निर्भर है, स्थायी तारीख या घड़ी पर नहीं।", "source_ids": ["drikpanchang-delhi-mahashivaratri-2027", "stanford-observance-calendar-2026-27"], "optional": false},
+            {"ordinal": 2, "instruction": "सुरक्षित बैठें, ध्यान भटकाने वाली चीजें हटाएँ और सरल संकल्प रखें—शिव का सजग और संयमित स्मरण।", "why": "इससे नींद रोकना या फल पाना अनिवार्य किए बिना जागरूकता रहती है।", "source_ids": ["garuda-purana-dutt-cxxiv"], "optional": false},
+            {"ordinal": 3, "instruction": "ऊपर की कोई स्रोत-नाम वाली कथा पढ़ें/सुनें या परिवार की परिचित शिव-प्रार्थना करें; नया मंत्र या गिनती न गढ़ें।", "why": "पाठ-स्रोत और परिवार की प्रामाणिकता सुरक्षित रहती है।", "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv"], "optional": false},
+            {"ordinal": 4, "instruction": "कुछ क्षण मौन रहें और अगले दिन धैर्य, सुधार या देखभाल का एक ठोस काम चुनें।", "why": "स्मरण किसी फल-वचन के बजाय अपने हाथ के काम पर समाप्त होता है।", "source_ids": ["garuda-purana-dutt-cxxiv"], "optional": false}
+          ],
+          "closing": {"text": "अपने शब्दों या परिवार की रीति से शिव को धन्यवाद दें और सामान्य रूप से विश्राम करें।", "source_ids": ["garuda-purana-dutt-cxxiv"], "scope_note": "सरल गृह-समापन; पाठ-व्रत का औपचारिक विसर्जन-मंत्र नहीं।"},
+          "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv", "drikpanchang-delhi-mahashivaratri-2027"]
+        },
+        {
+          "procedure_id": "mahashivaratri-north-west-hi-standard-v1", "label": "45 मिनट की सीमित गृह-पूजा", "tier": "standard", "setting": "family_led", "authority_scope": "उद्धृत पाठ और वर्णनात्मक जीवित-प्रथा से बनी सीमित सामान्य गृह-विधि; स्थापित पारिवारिक रीति इसे बदल देती है।", "form": "traditional_household", "estimated_minutes": 45,
+          "materials": [
+            {"item": "छोटे पात्र में स्वच्छ जल", "required": false, "substitutions": ["पास रखा प्रतीकात्मक जल-पात्र", "बिना सामग्री स्मरण"], "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"]},
+            {"item": "घर में पहले से स्थापित शिवलिंग या चित्र", "required": false, "substitutions": ["परिवार का पूजा-स्थान", "मानसिक स्मरण"], "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"]},
+            {"item": "बिल्व-पत्र या सामान्य फूल", "required": false, "substitutions": ["स्थानीय बिना रसायन का एक फूल", "कोई वनस्पति सामग्री नहीं"], "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"]},
+            {"item": "दीप", "required": false, "substitutions": ["बिजली का दीप", "बिना लौ"], "source_ids": ["incredible-india-mahashivratri-2026"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय तिथि पक्की करें और शाम या स्थानीय रात्रि में सुरक्षित समय चुनें; दिल्ली की घड़ी दूसरे स्थान पर न उतारें।", "why": "पंचांग-निर्णय और घर की सुविधा अलग निर्णय हैं।", "source_ids": ["drikpanchang-delhi-mahashivaratri-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "छोटा पूजा-स्थान साफ करें, हाथ धोएँ और केवल घर में स्थापित शिव-रूप रखें।", "why": "इससे नया कर्मकाण्ड या नई प्रतिष्ठा किए बिना सम्मानपूर्वक तैयारी होती है।", "source_ids": ["incredible-india-mahashivratri-2026"], "optional": false},
+            {"ordinal": 3, "instruction": "स्मरण का सरल संकल्प बोलें; इस मार्ग से उपवास या जागरण का व्रत न लें।", "why": "औपचारिक व्रत, उपवास और पारण के लिए स्वास्थ्य-सचेत परिवार या गुरु-मार्ग चाहिए।", "source_ids": ["garuda-purana-dutt-cxxiv", "mohfw-diabetes-prolonged-fasting-faq43"], "optional": false},
+            {"ordinal": 4, "instruction": "घर में प्रचलित हो तो थोड़ा स्वच्छ जल और बिल्व-पत्र या फूल अर्पित करें; अन्यथा बिना सामग्री ध्यान अर्पित करें।", "why": "जल और बिल्व पाठ-समर्थित हैं, पर विकल्प अपव्यय और झूठी अनिवार्यता रोकते हैं।", "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "optional": true},
+            {"ordinal": 5, "instruction": "परिवार का परिचित शिव-नाम, प्रार्थना, स्तुति या पाठ लें; कुछ न मालूम हो तो मौन रखें।", "why": "यह मार्ग संस्कृत, दीक्षा, उच्चारण या जप-संख्या नहीं गढ़ता।", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "optional": false},
+            {"ordinal": 6, "instruction": "एक कथा सुनाएँ और साफ कहें कि वह शिव पुराण, दत्त गरुड़ पुराण या आधुनिक प्रचलित उत्सव-विवरण में से कहाँ से है।", "why": "अलग कथा-परतें एक सार्वभौमिक मूल-कथा नहीं बनतीं।", "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "optional": false},
+            {"ordinal": 7, "instruction": "शांत बैठें और अगले दिन संयम, मेल-मिलाप या सेवा का एक काम चुनें।", "why": "समापन आचरण से जुड़ता है, पुण्य या शुद्धि की गारंटी से नहीं।", "source_ids": ["garuda-purana-dutt-cxxiv"], "optional": false}
+          ],
+          "closing": {"text": "धन्यवाद दें, परिवार के परिचित शब्दों में भूल के लिए क्षमा माँगें, असुरक्षित लौ बुझाएँ और उपयोगी सामग्री को स्वच्छता से बाँटें या सम्मानपूर्वक कम्पोस्ट करें।", "source_ids": ["garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026"], "scope_note": "पाठ के औपचारिक समापन को सरल सामान्य भाषा में सीमित किया गया है; यह अनिवार्य मंत्र नहीं।"},
+          "source_ids": ["shiva-purana-vidyesvara-9", "garuda-purana-dutt-cxxiv", "incredible-india-mahashivratri-2026", "mohfw-diabetes-prolonged-fasting-faq43"]
+        },
+        {
+          "procedure_id": "mahashivaratri-north-west-hi-elaborate-v1", "label": "लम्बी मंदिर या परिवार-प्राधिकारी भागीदारी", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "चुने मंदिर, गुरु या स्थापित परिवार के निर्देशन में भागीदारी; स्वतंत्र होम, प्रतिष्ठा, पुरोहित-अभिषेक या दीक्षित मंत्र नहीं।", "form": "institutional_participation", "estimated_minutes": 180,
+          "materials": [
+            {"item": "वर्तमान आधिकारिक कार्यक्रम और प्रवेश-निर्देश", "required": true, "substitutions": ["आधिकारिक सीधा प्रसारण", "मानक गृह-विधि"], "source_ids": ["sringeri-mahashivaratri-2026"]},
+            {"item": "मौसम, भीड़ और सुगम्यता के अनुसार निजी सामान", "required": true, "substitutions": ["कम समय के लिए जाएँ", "घर से भाग लें"], "source_ids": ["incredible-india-mahashivratri-2026"]},
+            {"item": "मंदिर द्वारा स्वीकृत अर्पण", "required": false, "substitutions": ["कोई अर्पण नहीं", "केवल आधिकारिक माध्यम से दान या सेवा"], "source_ids": ["incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "जाने से पहले चुनी संस्था की वर्तमान तिथि, प्रवेश, सुगम्यता, सामग्री और कार्यक्रम नियम जाँचें।", "why": "पुराना कार्यक्रम जीवित रूप का प्रमाण है, भविष्य का समय नहीं।", "source_ids": ["sringeri-mahashivaratri-2026", "drikpanchang-delhi-mahashivaratri-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "सुरक्षित अवधि चुनें; नींद की कमी में गाड़ी न चलाएँ और पूरी रात जागना अनिवार्य न मानें।", "why": "चार-याम पूजा मिलती है, पर भागीदारी स्वास्थ्य और सुरक्षा के अनुकूल रहनी चाहिए।", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "optional": false},
+            {"ordinal": 3, "instruction": "दर्शन, जप, पाठ या अभिषेक के केवल सार्वजनिक और संस्था-निर्देशित भाग में जुड़ें।", "why": "मंदिर की पूजा और सामग्री-संचालन मंदिर के अधिकार में हैं।", "source_ids": ["incredible-india-mahashivratri-2026", "sringeri-mahashivaratri-2026"], "optional": false},
+            {"ordinal": 4, "instruction": "कार्यक्रम चार याम का हो तो उसे संस्था का क्रम मानें; इस सारांश से छूटी विधि न बनाएँ।", "why": "पाठ और शृंगेरी विवरण संरचना बताते हैं, सार्वभौमिक गृह-पटकथा नहीं।", "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026"], "optional": true},
+            {"ordinal": 5, "instruction": "भीड़, थकान, निर्जलीकरण, ग्लूकोज़ लक्षण या दवा की जरूरत असुरक्षित लगे तो लौटें या घर से भाग लें।", "why": "स्वास्थ्य और सामान्य कर्तव्य अवधि पूरी करने से पहले आते हैं।", "source_ids": ["mohfw-diabetes-prolonged-fasting-faq43", "incredible-india-mahashivratri-2026"], "optional": false}
+          ],
+          "closing": {"text": "संस्था के समापन और निकास-निर्देश मानें, सुरक्षित घर लौटें और अलग चिकित्सा तथा परम्परा-संगत मार्गदर्शन में वास्तव में उपवास लिया हो तभी पारण-समय देखें।", "source_ids": ["sringeri-mahashivaratri-2026", "drikpanchang-delhi-mahashivaratri-2027", "mohfw-diabetes-prolonged-fasting-faq43"], "scope_note": "केवल मंदिर-भागीदारी का समापन।"},
+          "source_ids": ["garuda-purana-dutt-cxxiv", "sringeri-mahashivaratri-2026", "incredible-india-mahashivratri-2026", "mohfw-diabetes-prolonged-fasting-faq43"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "amanta-purnimanta-month-name", "scope": "दक्षिण भारतीय अमान्त माघ और उत्तर भारतीय पूर्णिमान्त फाल्गुन नाम", "difference": "चन्द्र-मास का नाम बदलता है, जबकि उद्धृत 2027 नागरिक दिन एक है; स्थानीय पंचांग ही समय तय करेगा।", "source_ids": ["drikpanchang-delhi-mahashivaratri-2027"], "separate_lane_required": false},
+        {"variant_id": "sringeri-four-yama-institutional", "scope": "शृंगेरी शारदा पीठ", "difference": "दर्ज चार-याम, अभिषेक, वैदिक/पौराणिक पाठ और उत्सव संस्था-नेतृत्व वाले हैं, सामान्य उत्तर/पश्चिम गृह-विधि नहीं।", "source_ids": ["sringeri-mahashivaratri-2026"], "separate_lane_required": true},
+        {"variant_id": "regional-shaiva-and-herath", "scope": "कश्मीर शैव हेरथ, दक्षिण भारतीय मंदिर/आगमिक, नेपाल और अन्य क्षेत्रीय रूप", "difference": "तिथि, कथा, गृह-क्रम, सामग्री और प्राधिकारी में ठोस भेद हो सकते हैं; अलग शोधित मार्ग चाहिए।", "source_ids": ["incredible-india-mahashivratri-2026"], "separate_lane_required": true},
+        {"variant_id": "formal-vrata-and-fasting", "scope": "परिवार, गुरु या पाठ-नेतृत्व वाला व्रत", "difference": "उपवास, जागरण, चार-प्रहर पूजा, होम और पारण पाठ या जीवित प्रथा में मिलते हैं, पर यह सुलभ मार्ग उन्हें निर्धारित नहीं करता।", "source_ids": ["garuda-purana-dutt-cxxiv", "drikpanchang-delhi-mahashivaratri-2027", "mohfw-diabetes-prolonged-fasting-faq43"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "इस मार्ग से उपवास शुरू, बढ़ाएँ या खोलें नहीं। मधुमेह, इंसुलिन या अन्य उपचार वाले लोग चिकित्सा सलाह लें; उद्धृत भारत सरकार मार्गदर्शन में इंसुलिन लेने वालों को उपवास न करने और उपचाररत टाइप-2 रोगियों को दवा-समय/मात्रा पर डॉक्टर से पूछने को कहा गया है।",
+        "डॉक्टर की सलाह के बिना दवा, पानी, गर्भावस्था देखभाल या चिकित्सकीय जरूरी भोजन न बदलें।",
+        "रात्रि-जागरण और नींद की कमी वैकल्पिक हैं, अनिवार्य नहीं। थकान में वाहन, ऊँचाई, लौ, जल-किनारे या भीड़ से बचें; जरूरत हो तो छोटा गृह-रूप लें।",
+        "लौ हो तो बहुत छोटी और वयस्क निगरानी में रखें, या बिजली का दीप लें। जहाँ स्वच्छ और अपव्यय-रहित व्यवस्था न हो वहाँ दूध, शहद, तेल या बहुत जल न बहाएँ।",
+        "इस पैक से शिवलिंग बनाना/प्रतिष्ठित करना, होम, पुरोहित-अभिषेक, नशीले पदार्थ या दीक्षित मंत्र-साधना शुरू न करें।",
+        "मंदिर का समय, कतार, सीधा प्रसारण, दान, वस्त्र, प्रवेश और स्वीकृत सामग्री संस्था से ताज़ा जाँचें।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

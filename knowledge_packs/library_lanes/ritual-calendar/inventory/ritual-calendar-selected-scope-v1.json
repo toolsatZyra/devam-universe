@@ -1,0 +1,54 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_SELECTED_SCOPE_V1",
+  "version": 1,
+  "frozen_at": "2026-08-13",
+  "coordination_commit": "cf0e9406ea2120a77d9b2c4cd5552148e0a9aaaf",
+  "lane_id": "ritual-calendar",
+  "boundary": "A selected product denominator, not all Hindu, Indian, regional, temple, sampradaya, or family observances.",
+  "completion_rule": "Every selected item is either backed by a bilingual current-contract applicability lane, explicitly hero-owned, or completed in this lane; no legacy pack or date-only record is counted by itself.",
+  "baseline_audit": {
+    "command": "python tools/audit_panchang_to_ritual_coverage.py",
+    "audit_sha256": "544c69218f3baf74a8858e21e34cc4928ed0d4d367da4ddd9067f66624d365dc",
+    "current_contract_record_count": 47,
+    "resolved_calendar_unique_slug_count": 79,
+    "ritual_only_unique_slug_count": 25,
+    "selected_baseline_slug_count": 104,
+    "calendar_slugs_without_current_lane": 0,
+    "baseline_state": "reused_not_copied"
+  },
+  "resolved_calendar_slugs": [
+    "agastya-arghya-delhi", "ahoi-ashtami-north-india", "aja-ekadashi", "ashtami-shraddha", "bali-pratipada", "bandi-chhor-divas-sgpc", "bengal-kali-puja", "bhai-dooj", "chaturdashi-shraddha", "chaturthi-shraddha", "chhath-puja-sandhya-arghya", "dashami-shraddha", "dev-deepawali-varanasi", "devutthana-ekadashi", "dhantrayodashi", "dhanu-sankranti", "dwadashi-shraddha", "dwitiya-shraddha", "ekadashi-shraddha", "govardhan-puja", "govatsa-dwadashi", "gujarati-new-year-baps", "hala-shashthi-hal-chhath", "hartalika-teej", "indira-ekadashi", "jain-diwali-umbrella", "kalabhairava-jayanti", "kali-chaudas-baps", "kanya-sankranti", "karnataka-balipadyami", "karnataka-saraswati-ayudha-puja", "karwa-chauth", "kojagara-puja-sharad-purnima", "krishna-janmashtami-iskcon", "krishna-janmashtami-smarta", "magha-shraddha", "maha-bharani", "masika-durgashtami-2026-09", "masika-durgashtami-2026-10", "masika-durgashtami-2026-11", "masika-durgashtami-2026-12", "mokshada-ekadashi", "naraka-chaturdashi", "navami-shraddha", "panchami-shraddha", "papankusha-ekadashi", "parsva-ekadashi", "pradosha-2026-09-krishna", "pradosha-2026-09-shukla", "pradosha-2026-10-krishna", "pradosha-2026-10-shukla", "pradosha-2026-11-krishna", "pradosha-2026-11-shukla", "pradosha-2026-12-krishna", "pradosha-2026-12-shukla", "pratipada-shraddha", "purnima-shraddha", "radha-ashtami-iskcon", "rama-ekadashi", "rishi-panchami", "sankashti-chaturthi-2026-09", "sankashti-chaturthi-2026-10", "sankashti-chaturthi-2026-11", "sankashti-chaturthi-2026-12", "saptami-shraddha", "sarva-pitru-amavasya", "shashthi-shraddha", "tamil-deepavali-naraka-chaturdashi", "trayodashi-shraddha", "tritiya-shraddha", "tula-sankranti", "tulasi-vivah-dwadashi", "tulsi-vivah-baps-begins", "tulsi-vivah-baps-samapt", "utpanna-ekadashi", "vishwakarma-puja-bengal", "vivaha-panchami", "vrishchika-sankranti", "yama-deepam"
+  ],
+  "ritual_only_slugs": [
+    "ananta-chaturdashi", "ashwina-amavasya", "ashwina-purnima", "bengal-durga-puja-campaign", "bengal-mahashtami-community-participant-2026", "bhadrapada-amavasya", "bhadrapada-purnima", "diwali-lakshmi-puja", "ganesh-chaturthi", "kartika-amavasya", "kartika-purnima", "margashirsha-amavasya", "masika-shivaratri-2026-09", "masika-shivaratri-2026-10", "masika-shivaratri-2026-11", "masika-shivaratri-2026-12", "pitru-paksha-general", "shardiya-navaratri-begins", "weekday-budhavara", "weekday-guruvara", "weekday-mangalavara", "weekday-ravivara", "weekday-shanivara", "weekday-shukravara", "weekday-somavara"
+  ],
+  "hero_owned_reuse_only": {
+    "ganesha-consumer": ["ganesh-chaturthi", "sankashti-chaturthi-2026-09", "sankashti-chaturthi-2026-10", "sankashti-chaturthi-2026-11", "sankashti-chaturthi-2026-12"],
+    "devi-consumer": ["bengal-durga-puja-campaign", "bengal-kali-puja", "bengal-mahashtami-community-participant-2026", "masika-durgashtami-2026-09", "masika-durgashtami-2026-10", "masika-durgashtami-2026-11", "masika-durgashtami-2026-12", "shardiya-navaratri-begins"],
+    "diwali-consumer": ["bali-pratipada", "bandi-chhor-divas-sgpc", "bhai-dooj", "dhantrayodashi", "diwali-lakshmi-puja", "govardhan-puja", "govatsa-dwadashi", "gujarati-new-year-baps", "jain-diwali-umbrella", "kali-chaudas-baps", "karnataka-balipadyami", "naraka-chaturdashi", "tamil-deepavali-naraka-chaturdashi", "yama-deepam"]
+  },
+  "misleading_or_partial_material": [
+    {
+      "kind": "legacy_procedure_packs",
+      "count": 39,
+      "classification": "retained_superseded_not_counted",
+      "reason": "They remain useful provenance inputs but are superseded by current-contract records."
+    },
+    {
+      "kind": "jain_diwali_umbrella_companion",
+      "classification": "partial_companion_not_counted_as_formal_jain_vidhi",
+      "reason": "The same slug is actionably covered only by the narrower lay-remembrance lane; sect, sangh, temple, fasting, recitation, puja, and New Year lanes remain with the Diwali owner."
+    }
+  ],
+  "expansion_items": [
+    {
+      "item_id": "mahashivaratri-north-west-smarta-household-2027-v1",
+      "observance_slug": "mahashivaratri",
+      "owner_lane": "ritual-calendar",
+      "applicability_scope": "Delhi-reference North and West India Smarta household remembrance plus ordinary temple participation; English and Hindi; 2027 date fixture with reusable deterministic dependency.",
+      "state": "selected_for_completion",
+      "required_dimensions": ["applicability", "deterministic_timing", "meaning", "source_labelled_stories", "typical_practice", "ordered_steps", "materials", "substitutions", "safety", "closing", "variants", "evidence"]
+    }
+  ],
+  "selected_item_count": 105
+}
