@@ -1,0 +1,51 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-shakambhari-purnima-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "shakambhari-purnima-candidate-to-devi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shakambhari-purnima-census"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/shakambhari-purnima"
+      },
+      "relationship_family": "festival",
+      "predicate": "requests_owner_scoped_observance_lane",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Shakambhari Purnima candidate for Devi-owner review",
+        "hi": "शाकंभरी पूर्णिमा अभ्यर्थी: देवी-स्वामी लेन की समीक्षा हेतु"
+      },
+      "scope": {
+        "statement": "Marathi-calendar Shakambhari Purnima candidate only; Devi identity, narrative and materially scoped practice remain with the Devi owner.",
+        "geography_codes": [
+          "IN-MH"
+        ],
+        "tradition_codes": [
+          "devi-devotional-unresolved"
+        ],
+        "time_scope": "Pausha Shukla Purnima; exact local decision rule remains unresolved.",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "purnima-amavasya-disposition-v1",
+          "claim_scope": "Preserves Shakambhari Purnima as a named owner-routed candidate without authoring a duplicate ritual lane."
+        },
+        {
+          "evidence_kind": "claim",
+          "ref": "parallel-library-work-v1 devi-consumer ownership",
+          "claim_scope": "Devi consumer lane owns selected Devi stories, identities and materially scoped observance practice."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

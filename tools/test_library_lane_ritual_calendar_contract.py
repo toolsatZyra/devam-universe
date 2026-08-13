@@ -21,9 +21,17 @@ RECURRING_DISPOSITION = (
 SOLAR_DISPOSITION = (
     LANE / "inventory" / "ritual-calendar-candidate-disposition-solar-v1.json"
 )
+LUNAR_PHASE_DISPOSITION = (
+    LANE
+    / "inventory"
+    / "ritual-calendar-candidate-disposition-lunar-phase-v1.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
 SANKASHTI_LINKS = (
     LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
+)
+SHAKAMBHARI_LINKS = (
+    LANE / "cross-links" / "shakambhari-purnima-owner-proposal-v1.json"
 )
 
 
@@ -187,6 +195,56 @@ def test_solar_disposition_preserves_material_regional_timing_contexts():
         "required_applicability_context"
     ] == "malayalam_solar"
     assert len(candidate_labels - recurring_labels - set(labels)) == 350
+
+
+def test_lunar_phase_disposition_preserves_overlays_scope_and_explicit_block():
+    census = load(COMPREHENSIVE_CENSUS)
+    prior_batches = [load(RECURRING_DISPOSITION), load(SOLAR_DISPOSITION)]
+    prior_labels = {
+        entry["source_label"]
+        for batch in prior_batches
+        for entry in batch["entries"]
+    }
+    lunar = load(LUNAR_PHASE_DISPOSITION)
+    entries = lunar["entries"]
+    labels = [entry["source_label"] for entry in entries]
+    candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
+    assert len(labels) == len(set(labels)) == 33
+    assert set(labels) <= candidate_labels
+    assert set(labels).isdisjoint(prior_labels)
+    assert lunar["counts"] == {
+        "source_labels_dispositioned": 33,
+        "accepted_distinct_lane": 29,
+        "alias_of_accepted_lane": 1,
+        "outside_selected_sanatana_scope": 1,
+        "hero_owned_cross_link_only": 1,
+        "blocked_requires_authority_or_source": 1,
+    }
+    by_label = {entry["source_label"]: entry for entry in entries}
+    assert by_label["Guru Poornima"]["canonical_candidate_id"] == "guru-purnima"
+    assert by_label["Buddha Purnima"]["disposition"] == (
+        "outside_selected_sanatana_scope"
+    )
+    assert by_label["Shakambhari Purnima"]["disposition"] == (
+        "hero_owned_cross_link_only"
+    )
+    assert by_label["Jandhyala Purnima"]["disposition"] == (
+        "blocked_requires_authority_or_source"
+    )
+    assert len(candidate_labels - prior_labels - set(labels)) == 317
+
+
+def test_shakambhari_proposal_preserves_devi_ownership():
+    schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    pack = load(SHAKAMBHARI_LINKS)
+    Draft202012Validator(schema).validate(pack)
+    assert len(pack["proposals"]) == 1
+    proposal = pack["proposals"][0]
+    assert proposal["to_ref"]["lane_local_id"] == (
+        "devi-consumer/shakambhari-purnima"
+    )
+    assert proposal["target_resolution"] == "unresolved_owner_lane"
+    assert proposal["predicate"] == "requests_owner_scoped_observance_lane"
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():
