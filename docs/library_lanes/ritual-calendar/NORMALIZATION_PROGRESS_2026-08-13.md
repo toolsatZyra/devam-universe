@@ -592,3 +592,21 @@ Exact accepted-authoring coverage is now **141 completed after freeze / 67
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first South devotional-calendar batch checkpoint
+
+Eight accepted named answers are complete as bilingual applicability lanes:
+Thaipusam, Panguni Uthiram, Ramanuja Jayanthi, Vaikasi Visakam, Andal
+Jayanthi, Soora Samharam, Subrahmanya Sashti and Karthigai Deepam.
+
+The batch preserves Tamil month/nakshatra rules, the November Soora-Samharam
+versus December Subrahmanya-Sashti distinction, Sri Vaishnava source/lineage
+ownership, and the difference between a safe household remembrance and temple
+kavadi, milk abhisheka, procession, combat drama or Maha Deepam. Masi Magam and
+Thrissur Pooram remain accepted incomplete work because their current evidence
+was not sufficiently reconciled for this batch.
+
+Exact accepted-authoring coverage is now **149 completed after freeze / 59
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
