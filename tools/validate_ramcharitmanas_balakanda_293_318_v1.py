@@ -11,16 +11,16 @@ from tools.compile_source_vault_tei_ingestion import canonical_json
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACK_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-balakanda-293-305-v1.json"
+PACK_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-balakanda-293-318-v1.json"
 PLAN_PATH = ROOT / "ingestion/plans/ramcharitmanas-wikisource-belvedere-pages-v1.json"
 REPORT_PATH = ROOT / "ingestion/reports/ramcharitmanas-wikisource-belvedere-pages-v1.json"
 
-CONTRACT = "DEVAM_RAMCHARITMANAS_BALAKANDA_READING_BATCH_V1"
+CONTRACT = "DEVAM_RAMCHARITMANAS_BALAKANDA_READING_SEQUENCE_V1"
 SEQUENCE_KEY = "ramcharitmanas-belvedere-normalized-reading-v1"
 SCAN_SHA256 = "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2"
 PLAN_SHA256 = "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab"
 REPORT_SHA256 = "8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c"
-EXPECTED_PACK_SHA256 = "87eb8bfdb9b7a3fce1c0fa2f4d3fc7ba99cef0d91bc16b09d51e53571ae5bf4c"
+EXPECTED_PACK_SHA256 = "8d711f0fa39027cac4adca48f7c731ffe4c9564f0821c766094afa1e5cc08584"
 
 
 def sha256_bytes(value: bytes) -> str:
@@ -66,7 +66,7 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
     product_pages = {row["scan_page"]: row for row in report["pages"]}
 
     passages = pack.get("passages", [])
-    expected_groups = list(range(293, 306))
+    expected_groups = list(range(293, 319))
     if [int(row["canonical_group_label"]) for row in passages] != expected_groups:
         raise ValueError("passages must be the contiguous groups 293..305")
     if pack.get("selected_scope", {}).get("complete_work") is not False:
@@ -91,10 +91,13 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
             raise ValueError(f"bilingual meaning is too compressed at group {group}")
 
         units = passage.get("source_units", [])
-        expected_final_kind = "soratha" if group == 295 else "doha"
-        if [row["unit_kind"] for row in units] != ["chaupai"] * 4 + [expected_final_kind]:
+        expected_kinds = ["chaupai"] * 4
+        if group in {311, 316, 317, 318}:
+            expected_kinds.append("chhand")
+        expected_kinds.append("soratha" if group in {295, 311} else "doha")
+        if [row["unit_kind"] for row in units] != expected_kinds:
             raise ValueError(f"natural unit grammar drift at group {group}")
-        if passage.get("source_unit_count") != 5:
+        if passage.get("source_unit_count") != len(expected_kinds):
             raise ValueError(f"source-unit count drift at group {group}")
         for ordinal, unit in enumerate(units, 1):
             if unit["ordinal_in_passage"] != ordinal:
@@ -129,12 +132,12 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
             if evidence != expected:
                 raise ValueError(f"pinned page evidence drift at scan page {page}")
 
-    if len(all_units) != 65 or [row["batch_unit_ordinal"] for row in all_units] != list(range(1, 66)):
-        raise ValueError("batch must contain exactly 65 consecutively numbered units")
-    if len({row["unit_id"] for row in all_units}) != 65 or len({row["source_order_key"] for row in all_units}) != 65:
+    if len(all_units) != 134 or [row["batch_unit_ordinal"] for row in all_units] != list(range(1, 135)):
+        raise ValueError("interval must contain exactly 134 consecutively numbered units")
+    if len({row["unit_id"] for row in all_units}) != 134 or len({row["source_order_key"] for row in all_units}) != 134:
         raise ValueError("source units must have unique stable identities and order keys")
-    if all_pages != set(range(354, 366)):
-        raise ValueError("batch must be evidenced by fixed scan pages 354..365")
+    if all_pages != set(range(354, 380)):
+        raise ValueError("interval must be evidenced by fixed scan pages 354..379")
 
     text = PACK_PATH.read_text(encoding="utf-8", errors="strict")
     if "तदपि प्रीति कै रीति सुहाई" not in text or "तदपि प्रीति कै प्रीति सुहाई" in text:

@@ -1,13 +1,13 @@
-# Ramcharitmanas Balakanda 293-305 reading audit — 2026-08-14
+# Ramcharitmanas Balakanda 293-318 reading audit — 2026-08-14
 
 ## Decision
 
-`knowledge_packs/devotional/ramcharitmanas-balakanda-293-305-v1.json` is fit
-as the first bounded beta reading batch. It is not Balakanda completion and is
+`knowledge_packs/devotional/ramcharitmanas-balakanda-293-318-v1.json` is fit
+as the first bounded beta reading interval. It is not Balakanda completion and is
 not Ramcharitmanas completion.
 
-The selected batch contains exactly 13 consecutive doha/soratha groups
-(293-305), 65 ordered source units, and 13 Hindi plus 13 English passage
+The selected interval contains exactly 26 consecutive groups (293-318), 134
+ordered source units, and 26 Hindi plus 26 English passage
 meanings. Readers may move continuously or pause after a page, natural passage,
 doha, chaupai, or kanda. A one-unit pace retains the containing natural passage
 and its bilingual meaning so that the selected line is not detached from
@@ -19,7 +19,7 @@ hosted database.
 - The product source witness is the retained Belvedere Press Prayag fixed scan,
   SHA-256
   `6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2`,
-  pages 354-365. The underlying work and selected scan are treated as public
+  pages 354-379. The underlying work and selected scan are treated as public
   domain.
 - Pinned Hindi Wikisource page revisions are retained as CC BY-SA 4.0
   transcription evidence with page IDs, revision IDs, timestamps, revision
@@ -36,10 +36,11 @@ hosted database.
 
 ## Text audit
 
-All fixed-scan pages 354-365 were rendered and visually checked. The 65 units
+All fixed-scan pages 354-379 were rendered and visually checked. The 134 units
 rehash deterministically and form one strict source-order interval. Every
-passage has four chaupai units followed by its natural doha or soratha closing
-unit.
+passage preserves four chaupai units followed by its natural closing doha or
+soratha; groups 311, 316, 317, and 318 additionally preserve their intervening
+chhand rather than forcing every group into a five-unit template.
 
 The audit rejected a reference-stream transcription `प्रीति कै प्रीति` and
 retained the fixed-scan reading `प्रीति कै रीति` in group 296. The doubled
@@ -47,9 +48,16 @@ consonant spelling `घुर्म्मरहिं` was normalized to `घु
 the lexical reading. Spacing and punctuation normalization is labelled; no
 claim of exhaustive textual criticism is made.
 
+Groups 306-318 were independently checked against rendered scan pages 366-379.
+The review preserved the chhand and soratha boundaries, the transition from the
+procession's lodging to the family reunion, the city conversations, the
+traditional wedding-time frame, the divine-spectator passage, Rama's horse and
+wedding form, and Sunayana's welcome. The clean reference stream accelerated
+unit discovery but supplied no product meaning or retained source carrier.
+
 ## Meaning and claim audit
 
-Each Hindi and English meaning was checked against all five source units in its
+Each Hindi and English meaning was checked against every source unit in its
 group for setup, action, transition, and closing image. Three omissions found
 during adversarial review were repaired:
 
@@ -60,8 +68,9 @@ during adversarial review were repaired:
    elephants as royal gifts while explicitly refusing to present that period
    story-world detail as a present-day model.
 
-Poetic horse speed, divine flower showers, incarnation language, and omen
-interpretation remain attributed to the poem or devotional narrative. Omens are
+Poetic horse speed, divine flower showers, incarnation language, divine
+visitors, name-remembrance fruits, astrology, and omen interpretation remain
+attributed to the poem or devotional narrative. Omens are
 not presented as science, guaranteed prediction, or mandatory contemporary
 practice. Animal gifts are not normalized as consumer guidance.
 
@@ -73,7 +82,7 @@ Public reads require both `published` state and `product_allowed` rights. User
 progress is protected by owner-only row-level policies. Narrative story packs
 cannot substitute for omitted source-text intervals.
 
-The JSON pack is the sole tracked copy of the 65 source units and their
+The JSON pack is the sole tracked copy of the 134 source units and their
 meanings. The validator reads that pack, rehashes every unit, checks all counts,
 links, source coordinates, pinned revision evidence, rights boundaries, UTF-8,
 and reviewed corrections. It does not embed a second corpus copy. The repository
@@ -84,12 +93,12 @@ an explicitly authorized application step. No hosted Supabase state was changed.
 Deterministic output fixities after review:
 
 - reading pack SHA-256:
-  `87eb8bfdb9b7a3fce1c0fa2f4d3fc7ba99cef0d91bc16b09d51e53571ae5bf4c`.
+  `8d711f0fa39027cac4adca48f7c731ffe4c9564f0821c766094afa1e5cc08584`.
 
 Validation completed on 2026-08-14:
 
-- 93 related reading, inventory, acquisition, and generation tests passed;
-- the complete Python suite passed 351 tests with one optional local render
+- 20 focused reading, inventory, source, rights, and generation tests passed;
+- the complete Python suite passed 352 tests with one optional local render
   dependency skip;
 - the portable web product suite passed 1,128 tests in 213 files, with 18 named
   skips;

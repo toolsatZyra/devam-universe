@@ -3,17 +3,17 @@ import json
 import unittest
 from pathlib import Path
 
-from tools.validate_ramcharitmanas_balakanda_293_305_v1 import load_pack, validate_pack
+from tools.validate_ramcharitmanas_balakanda_293_318_v1 import load_pack, validate_pack
 from tools.compile_source_vault_tei_ingestion import canonical_json
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACK_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-balakanda-293-305-v1.json"
+PACK_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-balakanda-293-318-v1.json"
 CONTRACT_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-reading-contract-v1.json"
 MODEL_MIGRATION = ROOT / "supabase/migrations/20260814040000_add_devotional_reading_model.sql"
 
 
-class RamcharitmanasBalakanda293To305Test(unittest.TestCase):
+class RamcharitmanasBalakanda293To318Test(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.pack = json.loads(PACK_PATH.read_text(encoding="utf-8", errors="strict"))
@@ -32,24 +32,28 @@ class RamcharitmanasBalakanda293To305Test(unittest.TestCase):
             "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2",
         )
 
-    def test_batch_is_exactly_thirteen_contiguous_passages_and_sixty_five_units(self):
+    def test_interval_is_exactly_twenty_six_contiguous_passages_and_134_units(self):
         passages = self.pack["passages"]
-        self.assertEqual([int(row["canonical_group_label"]) for row in passages], list(range(293, 306)))
-        self.assertEqual(len(passages), 13)
-        self.assertEqual(sum(row["source_unit_count"] for row in passages), 65)
+        self.assertEqual([int(row["canonical_group_label"]) for row in passages], list(range(293, 319)))
+        self.assertEqual(len(passages), 26)
+        self.assertEqual(sum(row["source_unit_count"] for row in passages), 134)
         units = [unit for passage in passages for unit in passage["source_units"]]
-        self.assertEqual([unit["batch_unit_ordinal"] for unit in units], list(range(1, 66)))
+        self.assertEqual([unit["batch_unit_ordinal"] for unit in units], list(range(1, 135)))
         self.assertEqual([unit["source_order_key"] for unit in units], sorted(unit["source_order_key"] for unit in units))
-        self.assertEqual(len({unit["unit_id"] for unit in units}), 65)
+        self.assertEqual(len({unit["unit_id"] for unit in units}), 134)
         self.assertTrue(all(unit["exact_text"].strip() for unit in units))
 
-    def test_each_passage_has_four_chaupais_and_one_natural_closing_unit(self):
+    def test_each_passage_preserves_its_natural_chaupai_chhand_and_closing_units(self):
         for passage in self.pack["passages"]:
             kinds = [unit["unit_kind"] for unit in passage["source_units"]]
             self.assertEqual(kinds[:4], ["chaupai"] * 4)
-            expected_final = "soratha" if passage["canonical_group_label"] == "295" else "doha"
-            self.assertEqual(kinds[4], expected_final)
-            self.assertEqual(passage["source_unit_count"], 5)
+            group = int(passage["canonical_group_label"])
+            expected = ["chaupai"] * 4
+            if group in {311, 316, 317, 318}:
+                expected.append("chhand")
+            expected.append("soratha" if group in {295, 311} else "doha")
+            self.assertEqual(kinds, expected)
+            self.assertEqual(passage["source_unit_count"], len(expected))
 
     def test_every_passage_has_fresh_approachable_hindi_and_english_meaning(self):
         for passage in self.pack["passages"]:
@@ -57,13 +61,25 @@ class RamcharitmanasBalakanda293To305Test(unittest.TestCase):
             self.assertGreaterEqual(len(passage["meaning"]["en"]), 180)
             self.assertTrue(passage["title"]["hi"].strip())
             self.assertTrue(passage["title"]["en"].strip())
-        self.assertEqual(self.pack["completion_state"], "consumer_complete_en_hi_for_selected_contiguous_batch")
+        self.assertEqual(self.pack["completion_state"], "consumer_complete_en_hi_for_selected_contiguous_interval")
         self.assertFalse(self.pack["selected_scope"]["complete_work"])
         self.assertIn("remains incomplete", self.pack["complete_work_denial"])
 
+    def test_new_interval_keeps_devotional_poetic_and_social_claims_bounded(self):
+        meanings = {int(row["canonical_group_label"]): row["meaning"] for row in self.pack["passages"]}
+        self.assertIn("not to modern event reporting", meanings[306]["en"])
+        self.assertIn("hierarchy is descriptive", meanings[308]["en"])
+        self.assertIn("not presented as a mandatory rule", meanings[310]["en"])
+        self.assertIn("not scientific certainty", meanings[312]["en"])
+        self.assertIn("not as a claim of historically recorded aerial travel", meanings[314]["en"])
+        self.assertIn("not a consumer guarantee", meanings[315]["en"])
+        self.assertIn("not zoology", meanings[316]["en"])
+        self.assertIn("not approval of punishment or deception", meanings[317]["en"])
+        self.assertIn("intentionally miraculous devotional scene", meanings[318]["en"])
+
     def test_scan_coordinates_and_reference_only_boundary_are_explicit(self):
         pages = {page for passage in self.pack["passages"] for page in passage["source_locator"]["scan_pages"]}
-        self.assertEqual(pages, set(range(354, 366)))
+        self.assertEqual(pages, set(range(354, 380)))
         for passage in self.pack["passages"]:
             evidence = passage["source_locator"]["page_evidence"]
             self.assertEqual([row["scan_page"] for row in evidence], passage["source_locator"]["scan_pages"])
@@ -75,8 +91,8 @@ class RamcharitmanasBalakanda293To305Test(unittest.TestCase):
 
     def test_reading_contract_counts_the_batch_without_counting_old_commentary(self):
         progress = self.contract["canonical_reading_progress"]
-        self.assertEqual(progress["completed_passages"], 13)
-        self.assertEqual(progress["completed_source_units"], 65)
+        self.assertEqual(progress["completed_passages"], 26)
+        self.assertEqual(progress["completed_source_units"], 134)
         self.assertIn("not the remaining consumer source-text denominator", progress["boundary"])
         self.assertIn("Old-edition commentary is optional", self.contract["completion_rule"])
         self.assertIn("Story summaries", self.contract["completion_rule"])
@@ -98,7 +114,7 @@ class RamcharitmanasBalakanda293To305Test(unittest.TestCase):
 
     def test_corpus_payload_is_not_duplicated_into_a_seed_migration_or_validator(self):
         seed = ROOT / "supabase/migrations/20260814041000_seed_ramcharitmanas_balakanda_293_305.sql"
-        validator = ROOT / "tools/validate_ramcharitmanas_balakanda_293_305_v1.py"
+        validator = ROOT / "tools/validate_ramcharitmanas_balakanda_293_318_v1.py"
         self.assertFalse(seed.exists())
         validator_text = validator.read_text(encoding="utf-8", errors="strict")
         self.assertNotIn(self.pack["passages"][0]["source_units"][0]["exact_text"], validator_text)
