@@ -95,6 +95,8 @@ class StoryUniverseCoverageInventoryTest(unittest.TestCase):
         self.assertEqual(ramayana_current["bilingual_beats"], ramayana["completion"]["substantial_bilingual_beats"])
         self.assertEqual(self.ramayana_expected["counters"]["total_expected_story_rows"], ramayana["denominator"]["consumer_expected_story_rows"])
         self.assertEqual(self.ramayana_expected["counters"]["supplemental_expected_stories"], ramayana["denominator"]["supplemental_expected_story_rows"])
+        self.assertEqual(self.ramayana_expected["counters"]["supplemental_rows_complete_en_hi"], ramayana["completion"]["supplemental_expected_story_rows_complete_en_hi"])
+        self.assertEqual(ramayana_current["supplemental_expected_story_rows_complete_en_hi"], ramayana["completion"]["supplemental_expected_story_rows_complete_en_hi"])
         self.assertEqual(ramayana_current["supplemental_expected_story_rows_open"], ramayana["completion"]["supplemental_expected_story_rows_open"])
 
         mahabharata = collections["mahabharata-selected-ganguli-expression"]

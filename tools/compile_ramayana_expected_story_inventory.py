@@ -42,6 +42,8 @@ def compile_inventory() -> dict:
             "nearest_selected_cycle_ids": row["nearest_selected_cycle_ids"],
             "coverage_state": row["coverage_state"],
             "source_alignment_state": row["source_alignment_state"],
+            **({"consumer_story_id": row["consumer_story_id"]} if row.get("consumer_story_id") else {}),
+            **({"consumer_story_pack_id": row["consumer_story_pack_id"]} if row.get("consumer_story_pack_id") else {}),
         }
         for row in supplement_rows
     ]
@@ -56,6 +58,7 @@ def compile_inventory() -> dict:
         "authoritative_inputs": {
             "selected_expression_inventory": str(SELECTED.relative_to(ROOT)).replace("\\", "/"),
             "expected_story_supplements": str(SUPPLEMENTS.relative_to(ROOT)).replace("\\", "/"),
+            "consumer_story_packs": [row["path"] for row in supplements.get("consumer_story_packs", [])],
         },
         "counters": {
             "selected_expression_story_cycles": len(selected_rows),

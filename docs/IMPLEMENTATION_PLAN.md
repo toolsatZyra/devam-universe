@@ -29,9 +29,14 @@ denominator that source-unit coverage could not provide. It combines the 49
 selected-expression cycles with 22 explicitly separate expectations drawn from
 Ramcharitmanas, Ramlila and audience-familiar adaptations, regional tellings,
 devotional afterlives, Rameswaram tradition, and the Diwali homecoming
-connection. All 22 remain open or under review; none is silently credited to
-the Dutt expression. The next Ramayana work is major-arc authoring against this
-71-row checklist, with one consolidated validation checkpoint per batch.
+connection. The first major batch completes seven source-aligned
+Ramcharitmanas expectations through 69 substantial bilingual episodes: the
+Shiva-Sati-Parvati frame, Narada's delusion, Manu-Shatarupa's boon,
+Pratapbhanu's fall, Rama's childhood, Pushpavatika/Gauri, and Kevat's crossing.
+The canonical pack and its draft database projection keep those stories
+separate from the Dutt expression and leave hosted data unchanged. Fifteen
+supplements remain open. The next work is the forest/war batch, followed by one
+consolidated whole-Ramayana continuity review.
 
 Checkpoint 2026-08-13 (end-to-end devotional reading correction):
 Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered

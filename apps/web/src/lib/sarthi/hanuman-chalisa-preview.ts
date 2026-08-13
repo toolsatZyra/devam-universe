@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 import type { EvidenceCitation, GroundedSarthiAnswer, SarthiRequest } from "./contracts";
 
 const PACK_PATH = "knowledge_packs/devotional/hanuman-chalisa-consumer-v1.json";
-const PACK_SHA256 = "db3b5d0049e7c1edcf8ba7fbaf795e59f1abd00cbf75e306f719911abcbba51a";
+const PACK_SHA256 = "62dde87e6b39b7079b8a9e6a42f5253e1f2f6be707848734f369f645ec9def83";
 const CARRIER_SHA256 = "b39721a0a96f21d659b6b74f32ff5e0469220b5fa2813cc93733702d43ac02d5";
 const RIGHTS_REVISION_SHA256 = "ca3a6f1ee697889245befa79e3311278452eb9daf29d5241c60ae936744750cb";
 const SOURCE_BOUNDARY = "Complete for the 2 opening dohas, 40 chaupais, and closing doha visible in one fixed CC BY-SA 4.0 Wikimedia Commons graphic. The Devanagari text is Devam's beta-reviewed normalized transcription and the Hindi/English meanings are Devam-authored consumer explanations; this is not a critical edition, Gita Press text, Sanskrit original, mandatory ritual, prescribed repetition count, medical advice, or guaranteed outcome.";

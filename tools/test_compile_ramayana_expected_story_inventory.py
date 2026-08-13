@@ -31,7 +31,7 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
         self.assertEqual(len({row["selected_story_cycle_id"] for row in rows}), 49)
         self.assertTrue(all(row["coverage_state"] == "consumer_complete_en_hi_selected_expression" for row in rows))
 
-    def test_supplements_are_unique_bilingual_bounded_and_open(self):
+    def test_supplements_are_unique_bilingual_and_bounded(self):
         rows = self.supplements["supplements"]
         selected_cycle_ids = {row["selected_story_cycle_id"] for row in self.data["selected_expression_rows"]}
         source_ids = {row["source_id"] for row in self.supplements["source_registry"]}
@@ -65,9 +65,19 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
         counters = self.data["counters"]
         self.assertEqual(counters["selected_expression_story_cycles"], 49)
         self.assertEqual(counters["supplemental_expected_stories"], len(self.data["supplemental_rows"]))
-        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 0)
-        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]))
+        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 7)
+        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 7)
         self.assertEqual(self.data["completion_state"], "supplemental_expected_story_authoring_required")
+
+    def test_first_major_batch_projects_exactly_seven_canonical_story_ids(self):
+        completed = [row for row in self.data["supplemental_rows"] if row["coverage_state"] == "consumer_complete_en_hi"]
+        self.assertEqual(len(completed), 7)
+        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 7)
+        self.assertEqual({row["consumer_story_pack_id"] for row in completed}, {"ramayana-expected-stories-beginnings-exile-v1"})
+        self.assertEqual(
+            self.data["authoritative_inputs"]["consumer_story_packs"],
+            ["knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json"],
+        )
 
     def test_compiled_checklist_does_not_duplicate_authored_titles_boundaries_or_sources(self):
         self.assertEqual(

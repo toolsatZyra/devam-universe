@@ -5,6 +5,17 @@
   "audience": "Ordinary Hindi- or English-speaking Indian adults who expect the familiar Ramayana story world as well as an explicitly labelled selected source expression.",
   "purpose": "Name high-salience Ramayana stories and living connections that a Dutt/Valmiki-derived backbone alone must not silently claim to contain.",
   "boundary": "This is a versioned consumer-expectation denominator, not a declaration that every item occurs in Valmiki, Dutt, Ramcharitmanas, every Ramlila, or every regional telling. Each item remains separately scoped until its source lineage and consumer narrative are reviewed.",
+  "consumer_story_packs": [
+    {
+      "pack_id": "ramayana-expected-stories-beginnings-exile-v1",
+      "path": "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json",
+      "story_count": 7,
+      "episode_count": 69,
+      "coverage_state": "consumer_complete_en_hi_source_aligned",
+      "database_projection": "supabase/migrations/20260813130000_seed_ramayana_expected_stories_beginnings_exile.sql",
+      "hosted_database_applied": false
+    }
+  ],
   "source_registry": [
     {
       "source_id": "ramayana-dutt-selected-inventory",
@@ -75,8 +86,10 @@
       "expression_scopes": ["ramcharitmanas"],
       "relationship_to_selected_expression": "separate_frame_or_antecedent",
       "nearest_selected_cycle_ids": ["story-finds-a-voice"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-shiva-sati-parvati-frame-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
       "boundary": "Author as the Ramcharitmanas framing world, not as the opening frame of every Ramayana."
     },
@@ -87,8 +100,10 @@
       "expression_scopes": ["ramcharitmanas"],
       "relationship_to_selected_expression": "separate_frame_or_antecedent",
       "nearest_selected_cycle_ids": ["story-finds-a-voice"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-narada-delusion-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
       "boundary": "Keep Tulsidas's devotional causation separate from the selected Dutt chronology."
     },
@@ -99,8 +114,10 @@
       "expression_scopes": ["ramcharitmanas"],
       "relationship_to_selected_expression": "separate_frame_or_antecedent",
       "nearest_selected_cycle_ids": ["ayodhya-awaits-heirs"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-manu-shatarupa-boon-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
       "boundary": "Present as a Ramcharitmanas antecedent to Rama's birth, not a verified historical genealogy."
     },
@@ -111,8 +128,10 @@
       "expression_scopes": ["ramcharitmanas"],
       "relationship_to_selected_expression": "separate_frame_or_antecedent",
       "nearest_selected_cycle_ids": ["origins-behind-war"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-pratapbhanu-curse-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
       "boundary": "Do not merge this Manas causal account with other Ravana-origin traditions."
     },
@@ -123,8 +142,10 @@
       "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
       "relationship_to_selected_expression": "additional_scene_within_covered_arc",
       "nearest_selected_cycle_ids": ["princes-enter-world", "road-to-mithila"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "cross_expression_episode_review_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "bounded_ramcharitmanas_childhood_sequence_aligned",
+      "consumer_story_id": "ramayana-manas-rama-childhood-education-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramayana-dutt-selected-inventory", "ramcharitmanas-wikisource-ingestion", "sagar-ramayan-series"],
       "boundary": "Use source-backed childhood incidents only; adaptation granularity is a coverage cue, not source evidence."
     },
@@ -135,8 +156,10 @@
       "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
       "relationship_to_selected_expression": "additional_scene_within_covered_arc",
       "nearest_selected_cycle_ids": ["sita-and-the-bow"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-pushpavatika-gauri-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
       "boundary": "Keep this beloved Manas and performance scene distinct from what the Dutt source actually narrates."
     },
@@ -147,8 +170,10 @@
       "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
       "relationship_to_selected_expression": "additional_scene_within_covered_arc",
       "nearest_selected_cycle_ids": ["road-out-of-ayodhya"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-kevat-crossing-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
       "boundary": "Author the devotional exchange from its expression; do not back-project it into every recension."
     },

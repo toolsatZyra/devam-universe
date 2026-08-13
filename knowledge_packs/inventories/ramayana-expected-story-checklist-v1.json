@@ -7,18 +7,22 @@
   "completion_rule": "A selected-expression row is complete only inside that expression. Every supplemental expectation must become consumer_complete_en_hi in its labelled expression, or be explicitly excluded with a reviewed scope reason.",
   "authoritative_inputs": {
     "selected_expression_inventory": "knowledge_packs/inventories/ramayana-story-universe-v1.json",
-    "expected_story_supplements": "knowledge_packs/inventories/ramayana-expected-story-supplements-v1.json"
+    "expected_story_supplements": "knowledge_packs/inventories/ramayana-expected-story-supplements-v1.json",
+    "consumer_story_packs": [
+      "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json"
+    ]
   },
   "counters": {
     "selected_expression_story_cycles": 49,
     "supplemental_expected_stories": 22,
     "total_expected_story_rows": 71,
     "selected_expression_rows_complete_en_hi": 49,
-    "supplemental_rows_complete_en_hi": 0,
-    "supplemental_rows_open": 22,
+    "supplemental_rows_complete_en_hi": 7,
+    "supplemental_rows_open": 15,
     "supplemental_coverage_states": {
-      "candidate_not_authored": 21,
-      "connected_content_exists_needs_denominator_review": 1
+      "candidate_not_authored": 14,
+      "connected_content_exists_needs_denominator_review": 1,
+      "consumer_complete_en_hi": 7
     }
   },
   "selected_expression_rows": [
@@ -425,8 +429,10 @@
       "nearest_selected_cycle_ids": [
         "story-finds-a-voice"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-shiva-sati-parvati-frame-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "manas-narada-delusion",
@@ -437,8 +443,10 @@
       "nearest_selected_cycle_ids": [
         "story-finds-a-voice"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-narada-delusion-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "manas-manu-shatarupa-boon",
@@ -449,8 +457,10 @@
       "nearest_selected_cycle_ids": [
         "ayodhya-awaits-heirs"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-manu-shatarupa-boon-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "manas-pratapbhanu-curse",
@@ -461,8 +471,10 @@
       "nearest_selected_cycle_ids": [
         "origins-behind-war"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-pratapbhanu-curse-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "popular-rama-childhood-and-education",
@@ -476,8 +488,10 @@
         "princes-enter-world",
         "road-to-mithila"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "cross_expression_episode_review_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "bounded_ramcharitmanas_childhood_sequence_aligned",
+      "consumer_story_id": "ramayana-manas-rama-childhood-education-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "manas-pushpavatika-gauri-prayer",
@@ -490,8 +504,10 @@
       "nearest_selected_cycle_ids": [
         "sita-and-the-bow"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-pushpavatika-gauri-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "manas-kevat-crossing",
@@ -504,8 +520,10 @@
       "nearest_selected_cycle_ids": [
         "road-out-of-ayodhya"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_scan_range_aligned",
+      "consumer_story_id": "ramayana-manas-kevat-crossing-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-beginnings-exile-v1"
     },
     {
       "expectation_id": "popular-lakshman-rekha",
