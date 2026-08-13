@@ -8,7 +8,7 @@
     "attribution": "Traditionally attributed to Goswami Tulsidas",
     "primary_language_note": "The work is principally Awadhi in Devanagari; approachable Hindi and English meaning are separate consumer layers."
   },
-  "purpose": "Let a reader complete the work in source order at their own pace, including one page or one source-bounded passage at a time, instead of encountering disconnected summaries or scholarly records.",
+  "purpose": "Let a reader complete the source work in canonical order at their own pace, including one fixed-edition page, one meaningful passage, one doha/chaupai unit, or one kanda at a time, instead of encountering disconnected summaries or compulsory historical commentary.",
   "authoritative_source_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
   "source_denominator": {
     "scan_coordinates": 1172,
@@ -17,16 +17,35 @@
     "prepared_product_passages": 813,
     "held_text_bearing_pages": 345,
     "sopanas_or_kandas": 7,
-    "partition_invariant": "Every one of the 1,158 text-bearing pages must appear once in source order; the 14 verified blank scan coordinates remain preserved but are not reading units."
+    "partition_invariant": "Every source-text interval in the selected expression must appear once in canonical order. The 1,158 text-bearing fixed-scan pages and 14 structural blanks preserve pagination and evidence coordinates; the edition's old commentary is an optional historical layer, not part of the consumer source-work completion denominator."
+  },
+  "canonical_reading_progress": {
+    "completed_contiguous_batches": [
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-balakanda-293-305-v1.json",
+        "division": "Balakanda",
+        "canonical_group_start": 293,
+        "canonical_group_end": 305,
+        "passages": 13,
+        "source_units": 65,
+        "bilingual_meanings": 13,
+        "fixed_scan_pages": [354, 365],
+        "state": "consumer_complete_en_hi_for_selected_contiguous_batch"
+      }
+    ],
+    "completed_passages": 13,
+    "completed_source_units": 65,
+    "work_wide_natural_passage_denominator": "discovery_and_reconciliation_in_progress",
+    "boundary": "The first batch proves the reading grammar and removes eight held page transcriptions from the source-text critical path, but it does not complete Balakanda or the work. The 345-page q1 count remains a raw page/commentary transcription-quality counter, not the remaining consumer source-text denominator."
   },
   "reading_modes": [
     {
       "mode_id": "complete_work_continuous",
       "label": { "en": "Read from beginning to end", "hi": "आरंभ से अंत तक पढ़ें" },
-      "unit": "source_ordered_text_bearing_page",
-      "progression": "1_to_1158_without_gaps",
+      "unit": "canonical_source_text_sequence_with_page_and_passage_views",
+      "progression": "first_source_unit_to_last_without_gaps",
       "availability": "pending_complete_text_correction",
-      "boundary": "The mode cannot be called complete while 345 text-bearing pages remain held."
+      "boundary": "The mode cannot be called complete until every source-text interval in all seven kandas is corrected and ordered. Historical commentary transcription is optional."
     },
     {
       "mode_id": "one_page_daily",
@@ -34,7 +53,7 @@
       "unit": "source_ordered_text_bearing_page",
       "progression": "next_unread_page",
       "availability": "pending_complete_text_correction",
-      "boundary": "A page is tied to this fixed source carrier; another edition may paginate the work differently."
+      "boundary": "A page is tied to this fixed source carrier; another edition may paginate the work differently. Page mode presents the source text on that page and does not force readers through the edition's old commentary."
     },
     {
       "mode_id": "short_passage_daily",
@@ -43,6 +62,14 @@
       "progression": "source_order_after_segmentation",
       "availability": "segmentation_pending",
       "boundary": "Doha, chaupai and surrounding context must not be split in a way that breaks meaning merely to fit a fixed length."
+    },
+    {
+      "mode_id": "one_source_unit_daily",
+      "label": { "en": "One doha or chaupai a day", "hi": "प्रतिदिन एक दोहा या चौपाई" },
+      "unit": "canonically_ordered_source_unit_with_containing_passage_context",
+      "progression": "next_unread_source_unit",
+      "availability": "selected_batch_available_work_completion_pending",
+      "boundary": "A reader may stop after one source unit, but the product keeps the surrounding natural passage and its Hindi and English meaning available so that a line is not stripped of context."
     },
     {
       "mode_id": "kanda_progression",
@@ -67,6 +94,6 @@
     "optional_on_demand": ["source_identity", "variant_note", "provenance", "uncertainty"],
     "default_hidden": ["source_hash", "ocr_diagnostics", "edition_comparison", "verse_count_audit"]
   },
-  "completion_state": "source_reconciliation_before_end_to_end_reading",
-  "completion_rule": "Complete only when all 1,158 text-bearing pages can be read from beginning to end in exact order, every consumer unit has usable Hindi and English meaning, page-daily and passage-daily pacing never breaks the canonical sequence, all five modes preserve the same position, and resume behavior is verified. Story summaries and story-world episode packs never satisfy this reading denominator."
+  "completion_state": "canonical_source_sequence_and_bilingual_meaning_authoring",
+  "completion_rule": "Complete only when the entire selected Ramcharitmanas source text can be read from beginning to end in exact canonical order, every meaningful passage has usable Hindi and English meaning, page, passage, source-unit and kanda pacing never breaks the sequence, and all modes preserve the same exact resume position. Old-edition commentary is optional reference material; Story summaries and story-world episode packs never satisfy this reading denominator."
 }

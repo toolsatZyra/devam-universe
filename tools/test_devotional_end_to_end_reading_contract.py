@@ -7,6 +7,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MANAS_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-reading-contract-v1.json"
 MANAS_REPORT_PATH = ROOT / "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json"
 CHALISA_PATH = ROOT / "knowledge_packs/devotional/hanuman-chalisa-consumer-v1.json"
+CONSUMER_INVENTORY_PATH = ROOT / "knowledge_packs/inventories/consumer-content-mvp-v1.json"
+COVERAGE_INVENTORY_PATH = ROOT / "knowledge_packs/inventories/story-universe-coverage-v1.json"
 
 
 class DevotionalEndToEndReadingContractTest(unittest.TestCase):
@@ -15,6 +17,8 @@ class DevotionalEndToEndReadingContractTest(unittest.TestCase):
         cls.manas = json.loads(MANAS_PATH.read_text(encoding="utf-8"))
         cls.manas_report = json.loads(MANAS_REPORT_PATH.read_text(encoding="utf-8"))
         cls.chalisa = json.loads(CHALISA_PATH.read_text(encoding="utf-8"))
+        cls.consumer_inventory = json.loads(CONSUMER_INVENTORY_PATH.read_text(encoding="utf-8"))
+        cls.coverage_inventory = json.loads(COVERAGE_INVENTORY_PATH.read_text(encoding="utf-8"))
 
     def test_ramcharitmanas_denominator_matches_the_fixed_source_report(self):
         denominator = self.manas["source_denominator"]
@@ -27,15 +31,24 @@ class DevotionalEndToEndReadingContractTest(unittest.TestCase):
     def test_ramcharitmanas_modes_cover_whole_page_passage_kanda_and_resume_reading(self):
         modes = {row["mode_id"]: row for row in self.manas["reading_modes"]}
         self.assertEqual(
-            {"complete_work_continuous", "one_page_daily", "short_passage_daily", "kanda_progression", "resume_exact_position"},
+            {"complete_work_continuous", "one_page_daily", "short_passage_daily", "one_source_unit_daily", "kanda_progression", "resume_exact_position"},
             set(modes),
         )
-        self.assertEqual(modes["complete_work_continuous"]["progression"], "1_to_1158_without_gaps")
+        self.assertEqual(modes["complete_work_continuous"]["progression"], "first_source_unit_to_last_without_gaps")
+        self.assertEqual(modes["one_source_unit_daily"]["progression"], "next_unread_source_unit")
+        self.assertIn("surrounding natural passage", modes["one_source_unit_daily"]["boundary"])
         self.assertEqual(modes["kanda_progression"]["progression"], "1_to_7")
         self.assertTrue(all(row["label"]["en"] and row["label"]["hi"] for row in modes.values()))
         self.assertTrue(all(row["availability"] != "consumer_complete" for row in modes.values()))
         self.assertIn("beginning to end", self.manas["completion_rule"])
         self.assertIn("Story summaries", self.manas["completion_rule"])
+        self.assertEqual(self.manas["canonical_reading_progress"]["completed_passages"], 13)
+        self.assertEqual(self.manas["canonical_reading_progress"]["completed_source_units"], 65)
+        self.assertIn("commentary", self.manas["canonical_reading_progress"]["boundary"])
+        consumer_lane = next(row for row in self.consumer_inventory["lanes"] if row["lane_id"] == "ramcharitmanas-daily-reading")
+        coverage_lane = next(row for row in self.coverage_inventory["collections"] if row["collection_id"] == "ramcharitmanas-daily-reading")
+        self.assertEqual(consumer_lane["current"]["defined_reading_modes"], len(modes))
+        self.assertEqual(coverage_lane["denominator"]["reading_modes"], len(modes))
 
     def test_hanuman_chalisa_is_complete_in_source_order_with_bilingual_meaning(self):
         readings = self.chalisa["readings"]

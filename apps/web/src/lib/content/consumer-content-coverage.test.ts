@@ -109,7 +109,7 @@ describe("consumer-content MVP inventory", () => {
       structural_blank_scan_pages: 14,
       q1_pages_dual_witness_screened: 345,
       q1_pages_promoted: 0,
-      defined_reading_modes: 5,
+      defined_reading_modes: 6,
       complete_end_to_end_reading_available: false,
       daily_reading_available: false,
       resume_persistence_available: false,

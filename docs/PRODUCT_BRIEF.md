@@ -78,7 +78,10 @@ The consumer-content MVP also includes:
 - a beginning-to-end Ramayana narrative in English and Hindi, with story,
   character, place and living-festival traversal;
 - a beginning-to-end Mahabharata narrative in English and Hindi;
-- a daily-reading Ramcharitmanas lane and an approachable Hanuman Chalisa lane;
+- complete, canonically ordered Ramcharitmanas and Hanuman Chalisa reading
+  lanes: users can finish each work end to end, pause after a page or natural
+  source unit, and resume exactly; daily reading is an optional pace over the
+  complete sequence, never a feed of selected excerpts;
 - a prioritized story layer for the Puranas and other devotional, ethical and
   cultural story collections, including Panchatantra; and
 - connected kingdoms, places, temples, history, yoga, meditation and living
@@ -107,7 +110,8 @@ completion boundary.
 
 Ramayana coverage first delivers the complete story in approachable English and
 Hindi. One lawful, structurally complete expression may anchor the first
-consumer backbone. Ramcharitmanas receives its own complete daily-reading lane.
+consumer backbone. Ramcharitmanas receives its own complete ordered-reading lane;
+daily use is one optional pace through that full work, not an excerpt product.
 Additional tellings, textual comparison and commentary follow only when they
 materially improve a consumer story, living practice or explicitly requested
 source view; they do not block the first complete narrative experience.

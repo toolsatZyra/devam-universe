@@ -71,6 +71,24 @@ increment either continuous-reading denominator. The reading experience must
 support the ordinary behavior of finishing the work end to end, pausing after a
 page or source-bounded passage, and returning to the exact next position.
 
+Checkpoint 2026-08-14 (first natural Ramcharitmanas reading batch):
+The consumer denominator is now the complete canonical source work, not every
+line of a historical edition's commentary. Balakanda doha groups 293-305 form
+a continuous 65-unit source sequence. A one-doha-or-chaupai pace advances through
+those same units and retains the containing natural passage plus its bilingual
+meaning, so a daily-sized selection is never detached from context. This is
+the first contiguous corrected batch: 13 natural passages, 65 ordered source
+units, and fresh approachable Hindi and English meaning for every passage,
+fixed to scan pages 354-365. The clean web stream accelerated mismatch
+discovery but is reference-only; product text was reconciled against the
+retained public-domain scan, including correction of a reference-stream error
+from `preeti kai preeti` to the scanned `preeti kai reeti`. A first-class local
+reading schema now separates ordered source units, bilingual passage aids, and
+user-controlled exact progress from narrative adaptations. The complete work
+remains open beyond this batch, and no hosted migration was applied. The
+bounded source, meaning, rights, claim, and schema review is recorded in
+`docs/RAMCHARITMANAS_BALAKANDA_293_305_READING_AUDIT_2026-08-14.md`.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
@@ -652,7 +670,7 @@ The revised critical path is:
 1. freeze the consumer-content contract and one lean, machine-readable coverage inventory;
 2. add the first-class narrative database projection without duplicating source bytes;
 3. finish all 49 Ramayana story turns in substantial English/Hindi consumer form and publish them through the shared data layer;
-4. convert Ramcharitmanas into a complete searchable and daily-reading lane, then add Hanuman Chalisa;
+4. convert Ramcharitmanas into a complete searchable, beginning-to-end reading lane with optional daily pacing, then add Hanuman Chalisa under the same complete-work rule;
 5. structurally qualify the retained Ganguli Mahabharata set and build its complete English/Hindi narrative backbone;
 6. deepen Ganesha, Durga and Diwali stories while retaining the existing practical ritual contracts;
 7. expand prioritized Puranic, Panchatantra, place, temple, kingdom, yoga, meditation and living-culture lanes from the same contract; and

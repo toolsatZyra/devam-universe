@@ -14,6 +14,7 @@
     "denominator_missing",
     "denominator_fixed",
     "source_reconciliation",
+    "canonical_sequence_authoring",
     "authoring",
     "depth_repair",
     "review_pending",
@@ -91,10 +92,14 @@
         "prepared_narrative_pages": 813,
         "held_text_bearing_pages": 345,
         "structural_blank_scan_pages": 14,
-        "reading_modes": 5
+        "reading_modes": 6,
+        "completed_contiguous_passages": 13,
+        "completed_source_units": 65,
+        "completed_bilingual_meanings": 13,
+        "first_completed_batch": "knowledge_packs/devotional/ramcharitmanas-balakanda-293-305-v1.json"
       },
-      "completion": {"state": "source_reconciliation"},
-      "remaining_boundary": "Correct or source-address the 345 held text-bearing pages, create approachable Hindi and English meaning for every canonical unit, then verify one gapless beginning-to-end work with full-work, one-page, short-passage, kanda, and exact-resume modes. Story summaries and supplements never reduce this denominator."
+      "completion": {"state": "canonical_sequence_authoring", "consumer_complete_contiguous_passages": 13, "consumer_complete_source_units": 65},
+      "remaining_boundary": "Continue extracting and scan-reconciling every remaining source-text interval, create approachable Hindi and English meaning for each natural passage, then verify one gapless beginning-to-end work with full-work, page, passage, source-unit, kanda, and exact-resume modes. The 345 q1 pages remain a raw page/commentary quality counter, not a requirement to reproduce old commentary. Story summaries and supplements never reduce the source-work denominator."
     },
     {
       "collection_id": "hanuman-chalisa-reading-and-meaning",

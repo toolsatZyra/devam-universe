@@ -28,6 +28,13 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 ## Data plane
 
 - Supabase/Postgres: users, profiles, entities, relationships, claims, claim evidence, source metadata, passages, ritual procedures, Panchang facts, journeys, challenges, subscriptions, and analytics events.
+- Complete devotional works use a separate ordered-reading projection:
+  `reading_sequences`, natural `reading_passages`, smallest resumable
+  `reading_units`, bilingual passage meanings, and user-owned exact progress.
+  Page, passage, source-unit and kanda modes are views over one sequence; a
+  narrative adaptation or daily excerpt can never satisfy a missing interval.
+  Historical edition commentary remains attached as optional evidence rather
+  than being copied into the consumer completion denominator.
 - Product analytics is first-party and content-free: a 90-day pseudonymous session
   funnel records only allow-listed surface events and bounded categorical targets.
   Search text, Sarthi messages, location and ritual selections, email, user ids,
