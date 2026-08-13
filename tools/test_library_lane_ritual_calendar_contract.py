@@ -34,6 +34,11 @@ HERO_OWNER_DISPOSITION = (
     / "inventory"
     / "ritual-calendar-candidate-disposition-hero-owners-v1.json"
 )
+HERO_OWNER_SUPPLEMENTAL_DISPOSITION = (
+    LANE
+    / "inventory"
+    / "ritual-calendar-candidate-disposition-hero-owners-supplemental-v1.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
 SANKASHTI_LINKS = (
     LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
@@ -45,6 +50,11 @@ HERO_OWNER_LINKS = [
     LANE / "cross-links" / "ganesha-owner-candidates-v1.json",
     LANE / "cross-links" / "devi-owner-candidates-v1.json",
     LANE / "cross-links" / "diwali-owner-candidates-v1.json",
+]
+HERO_OWNER_SUPPLEMENTAL_LINKS = [
+    LANE / "cross-links" / "ganesha-owner-supplemental-v1.json",
+    LANE / "cross-links" / "devi-owner-supplemental-v1.json",
+    LANE / "cross-links" / "diwali-owner-supplemental-v1.json",
 ]
 
 
@@ -310,6 +320,7 @@ def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint()
         load(LUNAR_PHASE_DISPOSITION),
         load(EKADASHI_DISPOSITION),
         load(HERO_OWNER_DISPOSITION),
+        load(HERO_OWNER_SUPPLEMENTAL_DISPOSITION),
     ]
     all_labels = [
         entry["source_label"]
@@ -317,9 +328,9 @@ def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint()
         for entry in batch["entries"]
     ]
     candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
-    assert len(all_labels) == len(set(all_labels)) == 203
+    assert len(all_labels) == len(set(all_labels)) == 235
     assert set(all_labels) <= candidate_labels
-    assert len(candidate_labels - set(all_labels)) == 222
+    assert len(candidate_labels - set(all_labels)) == 190
 
     owner = load(HERO_OWNER_DISPOSITION)
     assert owner["counts"] == {
@@ -363,6 +374,37 @@ def test_clear_hero_owner_proposals_are_schema_valid_and_target_only_owner_lanes
             for proposal in proposals
         )
     assert total == 45
+
+
+def test_supplemental_owner_routes_regional_names_without_claiming_vasant_panchami():
+    census = load(COMPREHENSIVE_CENSUS)
+    batch = load(HERO_OWNER_SUPPLEMENTAL_DISPOSITION)
+    entries = batch["entries"]
+    assert batch["counts"] == {
+        "source_labels_dispositioned": 32,
+        "ganesha_consumer": 2,
+        "devi_consumer": 22,
+        "diwali_consumer": 8,
+        "normalized_owner_targets": 26,
+    }
+    labels = {entry["source_label"] for entry in entries}
+    assert "Vasant Panchami" not in labels
+    assert "Sri Panchami" in labels
+    assert "Ayutha Poojai" in labels
+    assert "Maha Sangada Hara Chathurti" in labels
+    candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
+    assert labels <= candidate_labels
+
+    schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    expected = {"ganesha": 2, "devi": 17, "diwali": 6}
+    total = 0
+    for path in HERO_OWNER_SUPPLEMENTAL_LINKS:
+        pack = load(path)
+        Draft202012Validator(schema).validate(pack)
+        owner_key = next(key for key in expected if path.name.startswith(key))
+        assert len(pack["proposals"]) == expected[owner_key]
+        total += len(pack["proposals"])
+    assert total == 25
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():

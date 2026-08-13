@@ -5,8 +5,8 @@ Active denominator: `ritual-calendar-comprehensive-census-v3.json`.
 ## Reviewed dispositions
 
 - Raw source-label denominator: **425**
-- Dispositioned in reviewed batch files: **203**
-- Remaining undispositioned: **222**
+- Dispositioned in reviewed batch files: **235**
+- Remaining undispositioned: **190**
 
 The recurring batch covers 43 labels:
 
@@ -32,17 +32,23 @@ The owner batch routes 54 clear labels to 45 normalized targets: twelve
 Ganesha, seventeen Devi/Navaratri and sixteen Diwali-family proposals. Suffix-
 only ambiguous Chaturthi labels were not routed by guesswork.
 
+The supplemental owner batch routes 32 regional-language labels to 26 targets,
+including South-Indian Navarathri/Ayutha/Vidyarambham, Bengali Akal Bodhon and
+Kalparambha, regional Diwali names, and two additional Ganesha observances.
+Vasant Panchami remains ritual-calendar work for actionable Saraswati guidance.
+
 ## Cross-lane state
 
-Fifty-eight typed proposals (twelve Sankashti, one Shakambhari, and forty-five
-clear owner candidates) are `proposed_for_integration` with unresolved
+Eighty-three typed proposals (twelve Sankashti, one Shakambhari, forty-five
+clear owner candidates and twenty-five supplemental owner targets) are
+`proposed_for_integration` with unresolved
 Ganesha/Devi/Diwali targets. No canonical anchor, shared graph or owner record
 was created or modified.
 
 ## What these counts do not mean
 
 Dispositioned does not mean authored, bilingual, user-complete, projected,
-hosted, release-reviewed or published. The 222 remaining labels still include
+hosted, release-reviewed or published. The 190 remaining labels still include
 annual regional observances,
 hero-owned worlds, descriptive calendar events and possible out-of-scope
 labels. Each must be decided explicitly.

@@ -1,0 +1,93 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-ganesha-owner-supplemental-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "maha-sankatahara-chaturthi-supplemental-candidate-to-ganesha-consumer",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/maha-sankatahara-chaturthi-supplemental-census"
+      },
+      "to_ref": {
+        "lane_local_id": "ganesha-consumer/maha-sankatahara-chaturthi"
+      },
+      "relationship_family": "festival",
+      "predicate": "requests_owner_scoped_observance_lane",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "maha sankatahara chaturthi regional candidate for owner review",
+        "hi": "maha sankatahara chaturthi क्षेत्रीय अभ्यर्थी: स्वामी लेन समीक्षा हेतु"
+      },
+      "scope": {
+        "statement": "Regional-language calendar candidate routed to ganesha-consumer; owner review must preserve material calendar, state and sequence differences.",
+        "geography_codes": [
+          "selected-priority-state-routes"
+        ],
+        "tradition_codes": [
+          "owner-scope-unresolved"
+        ],
+        "time_scope": "2027 discovery occurrence; local deterministic rule required.",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "ritual-calendar-candidate-disposition-hero-owners-supplemental-v1",
+          "claim_scope": "Routes clear regional-language owner identities without authoring duplicate ritual content."
+        },
+        {
+          "evidence_kind": "claim",
+          "ref": "parallel-library-work-v1 ganesha-consumer ownership",
+          "claim_scope": "Parallel contract assigns the relevant identity and regional observance world to the named owner."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "sakat-chauth-supplemental-candidate-to-ganesha-consumer",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/sakat-chauth-supplemental-census"
+      },
+      "to_ref": {
+        "lane_local_id": "ganesha-consumer/sakat-chauth"
+      },
+      "relationship_family": "festival",
+      "predicate": "requests_owner_scoped_observance_lane",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "sakat chauth regional candidate for owner review",
+        "hi": "sakat chauth क्षेत्रीय अभ्यर्थी: स्वामी लेन समीक्षा हेतु"
+      },
+      "scope": {
+        "statement": "Regional-language calendar candidate routed to ganesha-consumer; owner review must preserve material calendar, state and sequence differences.",
+        "geography_codes": [
+          "selected-priority-state-routes"
+        ],
+        "tradition_codes": [
+          "owner-scope-unresolved"
+        ],
+        "time_scope": "2027 discovery occurrence; local deterministic rule required.",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "ritual-calendar-candidate-disposition-hero-owners-supplemental-v1",
+          "claim_scope": "Routes clear regional-language owner identities without authoring duplicate ritual content."
+        },
+        {
+          "evidence_kind": "claim",
+          "ref": "parallel-library-work-v1 ganesha-consumer ownership",
+          "claim_scope": "Parallel contract assigns the relevant identity and regional observance world to the named owner."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
