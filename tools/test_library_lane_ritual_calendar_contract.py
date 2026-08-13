@@ -26,6 +26,9 @@ LUNAR_PHASE_DISPOSITION = (
     / "inventory"
     / "ritual-calendar-candidate-disposition-lunar-phase-v1.json"
 )
+EKADASHI_DISPOSITION = (
+    LANE / "inventory" / "ritual-calendar-candidate-disposition-ekadashi-v1.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
 SANKASHTI_LINKS = (
     LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
@@ -245,6 +248,48 @@ def test_shakambhari_proposal_preserves_devi_ownership():
     )
     assert proposal["target_resolution"] == "unresolved_owner_lane"
     assert proposal["predicate"] == "requests_owner_scoped_observance_lane"
+
+
+def test_ekadashi_disposition_preserves_regional_aliases_and_date_variants():
+    census = load(COMPREHENSIVE_CENSUS)
+    prior_batches = [
+        load(RECURRING_DISPOSITION),
+        load(SOLAR_DISPOSITION),
+        load(LUNAR_PHASE_DISPOSITION),
+    ]
+    prior_labels = {
+        entry["source_label"]
+        for batch in prior_batches
+        for entry in batch["entries"]
+    }
+    ekadashi = load(EKADASHI_DISPOSITION)
+    entries = ekadashi["entries"]
+    labels = [entry["source_label"] for entry in entries]
+    candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
+    assert len(labels) == len(set(labels)) == 41
+    assert set(labels) <= candidate_labels
+    assert set(labels).isdisjoint(prior_labels)
+    assert ekadashi["counts"] == {
+        "source_labels_dispositioned": 41,
+        "accepted_distinct_lane": 30,
+        "alias_of_accepted_lane": 11,
+        "ordinary_monthly_instances": 24,
+        "gauna_or_vaishnava_variants": 6,
+    }
+    by_label = {entry["source_label"]: entry for entry in entries}
+    assert by_label["Pankoddhar Ekadashi"]["canonical_candidate_id"] == (
+        "ekadashi-vijaya"
+    )
+    assert by_label["Gomati Ekadashi"]["canonical_candidate_id"] == (
+        "ekadashi-mokshada"
+    )
+    assert by_label["Vaishnava Rama Ekadashi"]["disposition"] == (
+        "accepted_distinct_lane"
+    )
+    assert by_label["Gauna Kamika Ekadashi"][
+        "required_applicability_context"
+    ] == "gauna-date-variant"
+    assert len(candidate_labels - prior_labels - set(labels)) == 276
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():

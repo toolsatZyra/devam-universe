@@ -1,0 +1,313 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_CANDIDATE_DISPOSITION_V1",
+  "batch_id": "ekadashi-disposition-v1",
+  "census_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-comprehensive-census-v3.json",
+  "reviewed_at": "2026-08-13",
+  "scope": "All 41 Ekadashi source labels normalized into ordinary monthly instances, regional aliases and Gauna/Vaishnava applicability variants using observed 2027 date and paksha/tithi evidence.",
+  "evidence_refs": [
+    {
+      "ref": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md",
+      "role": "Documents exact comparison method and alias/variant boundary."
+    },
+    {
+      "ref": "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+      "role": "Existing recurring content family for reuse; does not by itself complete every named instance or sampradaya variant."
+    }
+  ],
+  "counts": {
+    "source_labels_dispositioned": 41,
+    "accepted_distinct_lane": 30,
+    "alias_of_accepted_lane": 11,
+    "ordinary_monthly_instances": 24,
+    "gauna_or_vaishnava_variants": 6
+  },
+  "entries": [
+    {
+      "source_label": "Aja Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-aja",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Amalaki Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-amalaki",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Apara Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-apara",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Baruthini Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-varuthini",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Deva Utthapan Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-devutthana",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Devshayani Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-devshayani",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Devutthana Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-devutthana",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Gauna Kamika Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-kamika-gauna",
+      "required_applicability_context": "gauna-date-variant",
+      "rationale": "Explicit Gauna/Vaishnava qualifier and/or distinct civil date materially changes applicability; do not collapse into the ordinary instance."
+    },
+    {
+      "source_label": "Gauna Pausha Putrada Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-pausha-putrada-gauna",
+      "required_applicability_context": "gauna-date-variant",
+      "rationale": "Explicit Gauna/Vaishnava qualifier and/or distinct civil date materially changes applicability; do not collapse into the ordinary instance."
+    },
+    {
+      "source_label": "Gomati Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-mokshada",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Harishayan Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-devshayani",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Indira Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-indira",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Jala Krida Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-apara",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Jaya Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-jaya",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Kaliyadalan Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-aja",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Kamada Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-kamada",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Kamika Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-kamika",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Mohini Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-mohini",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Mokshada Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-mokshada",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Nirjala Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-nirjala",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Pankoddhar Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-vijaya",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Papamochani Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-papamochani",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Papankusha Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-papankusha",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Parivartani Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-parivartani-parsva",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Parsva Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-parivartani-parsva",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Base Bhadrapada Shukla Ekadashi identity; regional Parivartani/Parswa Paribartan labels route here unless material practice evidence requires a split."
+    },
+    {
+      "source_label": "Parswa Paribartan Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-parivartani-parsva",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Pausha Putrada Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-pausha-putrada",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Pavitra Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-shravana-putrada",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Rama Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-rama",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Saphala Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-saphala",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Sattila Ekadashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ekadashi-shattila",
+      "required_applicability_context": "regional-calendar-alias",
+      "rationale": "The 2027 regional calendar places this label on the same civil date and paksha/tithi as the mapped base instance; retain the regional name and reopen if practice/story evidence proves a material difference."
+    },
+    {
+      "source_label": "Shattila Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-shattila",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Shravana Putrada Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-shravana-putrada",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Utpanna Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-utpanna",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Vaishnava Kamika Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-kamika-vaishnava",
+      "required_applicability_context": "vaishnava-tradition-date-variant",
+      "rationale": "Explicit Gauna/Vaishnava qualifier and/or distinct civil date materially changes applicability; do not collapse into the ordinary instance."
+    },
+    {
+      "source_label": "Vaishnava Papanasini Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-papanasini-vaishnava",
+      "required_applicability_context": "vaishnava-tradition-date-variant",
+      "rationale": "Explicit Gauna/Vaishnava qualifier and/or distinct civil date materially changes applicability; do not collapse into the ordinary instance."
+    },
+    {
+      "source_label": "Vaishnava Pausha Putrada Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-pausha-putrada-vaishnava",
+      "required_applicability_context": "vaishnava-tradition-date-variant",
+      "rationale": "Explicit Gauna/Vaishnava qualifier and/or distinct civil date materially changes applicability; do not collapse into the ordinary instance."
+    },
+    {
+      "source_label": "Vaishnava Rama Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-rama-vaishnava",
+      "required_applicability_context": "vaishnava-tradition-date-variant",
+      "rationale": "Explicit Gauna/Vaishnava qualifier and/or distinct civil date materially changes applicability; do not collapse into the ordinary instance."
+    },
+    {
+      "source_label": "Varuthini Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-varuthini",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Vijaya Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-vijaya",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    },
+    {
+      "source_label": "Yogini Ekadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ekadashi-yogini",
+      "required_applicability_context": "ordinary-monthly-ekadashi",
+      "rationale": "Named recurring Ekadashi instance retained; exact local date, sampradaya, fasting and parana decisions remain deterministic and separately evidenced."
+    }
+  ]
+}

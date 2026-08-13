@@ -5,8 +5,8 @@ Active denominator: `ritual-calendar-comprehensive-census-v3.json`.
 ## Reviewed dispositions
 
 - Raw source-label denominator: **425**
-- Dispositioned in reviewed batch files: **108**
-- Remaining undispositioned: **317**
+- Dispositioned in reviewed batch files: **149**
+- Remaining undispositioned: **276**
 
 The recurring batch covers 43 labels:
 
@@ -24,6 +24,10 @@ The lunar-phase batch covers 33 Purnima/Amavasya labels: twelve generic monthly
 Purnimas, material regional overlays, one spelling alias, one Devi-owner item,
 one outside-selected-Sanatana route, and one explicit Jandhyala/Upakarma block.
 
+The Ekadashi batch covers all 41 raw labels: twenty-four ordinary monthly
+instances, eleven date-and-tithi-matched regional aliases, and six distinct
+Gauna/Vaishnava applicability variants.
+
 ## Cross-lane state
 
 Twelve typed Sankashti proposals and one Shakambhari Purnima proposal are
@@ -33,7 +37,7 @@ canonical anchor, shared graph or owner record was created or modified.
 ## What these counts do not mean
 
 Dispositioned does not mean authored, bilingual, user-complete, projected,
-hosted, release-reviewed or published. The 317 remaining labels still include
-monthly Ekadashi, Purnima/Amavasya overlays, annual regional observances,
+hosted, release-reviewed or published. The 276 remaining labels still include
+annual regional observances,
 hero-owned worlds, descriptive calendar events and possible out-of-scope
 labels. Each must be decided explicitly.
