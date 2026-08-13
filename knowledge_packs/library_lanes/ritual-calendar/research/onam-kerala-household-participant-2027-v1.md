@@ -120,3 +120,20 @@ Current sources checked 2026-08-13. The Kerala Tourism event page's displayed
 2026 date is not used for 2027. Drik's Thiruvananthapuram 2027 local fixture is
 carried with its location label, while every temple/public schedule remains
 live-confirmation only.
+
+## Completed pack and adversarial review
+
+Completed `onam-kerala-household-participant-2027-v1` with matched English and
+Hindi meaning, four labelled story moments, three typical-practice descriptions,
+main-day/ten-day/visitor procedures, materials, substitutions, closing, safety
+and six major-variant decisions. The unresolved typed proposal requests a
+future lawful fixed-source story owner without creating canonical data.
+
+Adversarial review verifies that the pack does not treat the state retelling as
+history or primary scripture; reduce Mahabali to evil or Vamana to a simple
+villain; turn Mahabali's bodily surrender into obedience advice; require every
+Malayali to be Hindu or worship; prescribe Thrikkakara Appan identity, clay
+forms or liturgy; require ten days, flowers, sadya, banana leaf, new clothes,
+gift, spending or public happiness; assign cooking/cleaning to women or workers;
+or make boat, performance, temple and animal practices generic. Authored status
+does not mean projected, hosted, published or released.

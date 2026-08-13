@@ -1,0 +1,210 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "onam-kerala-household-participant-2027-v1",
+  "observance_slugs": ["onam", "thiruvonam"],
+  "applicability": {
+    "region_codes": ["IN-KL", "south-india", "malayali-diaspora"],
+    "tradition_codes": ["onam-ordinary-household", "onam-ordinary-visitor"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "community", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Kerala or diaspora location and accepted Malayalam calendar resolve Atham and Thiruvonam?",
+      "Does the household frame Onam religiously, culturally, or both, and which prayer, image, clay form or offering actions belong to its own practice?",
+      "Do you want the complete main-day household route, the optional Atham-to-Thiruvonam approach, or ordinary visitor guidance?",
+      "Would flowers, a large sadya, banana leaves, new clothes, gifts, photography or family contact create allergy, disability, waste, budget, labour, grief or safety concerns?",
+      "Is the request actually for Thrikkakara Appan worship, a named temple, Onathaar, Vallam Kali, Pulikali, Athachamayam or another live public programme?"
+    ],
+    "context_pairs": [
+      {"region_code": "IN-KL", "tradition_code": "onam-ordinary-household", "observance_slug": "onam"},
+      {"region_code": "malayali-diaspora", "tradition_code": "onam-ordinary-household", "observance_slug": "onam"},
+      {"region_code": "IN-KL", "tradition_code": "onam-ordinary-visitor", "observance_slug": "thiruvonam"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "onam", "language_code": "en", "note": "Kerala and Malayali household/ordinary visitor lane. Religious and cultural framings are both possible; no household is required to worship or reproduce a temple, performance or animal practice."},
+      {"observance_slug": "onam", "language_code": "hi", "note": "यह केरल और मलयाली परिवार/सामान्य अतिथि मार्ग है। धार्मिक और सांस्कृतिक दोनों रूप संभव हैं; किसी परिवार पर पूजा, मंदिर-विधि, प्रदर्शन या पशु-रीति अनिवार्य नहीं।"},
+      {"observance_slug": "thiruvonam", "language_code": "en", "note": "Main-day answer under the local Malayalam solar calendar; the optional ten-day approach does not make every listed activity mandatory."},
+      {"observance_slug": "thiruvonam", "language_code": "hi", "note": "स्थानीय मलयालम सौर पंचांग का मुख्य-दिवस उत्तर; दस-दिवसीय वैकल्पिक क्रम हर गतिविधि को अनिवार्य नहीं बनाता।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-thiruvonam"],
+    "timing_kind": "astronomical",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "onam-local-chingam-thiruvonam-nakshatra-v1",
+    "closing_decision_rule_id": "onam-household-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Thiruvananthapuram 2027 fixture: Sunday 12 September; Thiruvonam nakshatra 02:58 on 12 September to 06:04 on 13 September. Recompute for the user's location and accepted Malayalam calendar. Kerala Tourism warns that place-of-worship dates/customs can change; every named temple or public event requires live confirmation."
+  },
+  "sources": [
+    {"source_id": "drik-thiruvananthapuram-onam-2027", "title": "2027 Onam and Thiruvonam for Thiruvananthapuram", "publisher": "DrikPanchang", "source_role": "location-labelled practitioner evidence for the Chingam/Thiruvonam rule, Atham-to-Thiruvonam approach and 2027 fixture", "rights_lane": "citation_only", "url": "https://www.drikpanchang.com/festivals/onam/onam-thiruvonam-date.html?geoname-id=1254163&year=2027", "artifact_sha256": null, "citation_coordinates": {"civil_date": "2027-09-12", "location": "Thiruvananthapuram, Kerala", "nakshatra_begins": "2027-09-12T02:58+05:30", "nakshatra_ends": "2027-09-13T06:04+05:30"}},
+    {"source_id": "kerala-tourism-highlights", "title": "Highlights of Kerala's Onam celebrations", "publisher": "Kerala Tourism", "source_role": "current state cultural evidence for Mahabali association, pookalam, sadya, Vallam Kali and arts; public events are descriptive, not DIY instructions", "rights_lane": "citation_only", "url": "https://www.keralatourism.org/faq/what-are-the-highlights-of-onam-celebration", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "kerala-tourism-thiruvonam", "title": "Thiruvonam", "publisher": "Kerala Tourism", "source_role": "current state retelling of Mahabali and Vamana, ten-day outline, household practices and explicit local-date disclaimer", "rights_lane": "citation_only", "url": "https://www.keralatourism.org/event/thiruvonam-onam-festival/41/", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13", "warning": "displayed 2026 date is not a 2027 fixture"}},
+    {"source_id": "kerala-tourism-pookalam", "title": "Pookkalam", "publisher": "Kerala Tourism", "source_role": "descriptive evidence for the evolving floral welcome and regional materials/forms; cow dung, clay figures and worship details are not made universal", "rights_lane": "citation_only", "url": "https://www.keralatourism.org/onam/onam-rituals/ona-pookkalam", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "kerala-tourism-thrikkakara-appan", "title": "Thrikkakara Appan and Mathevar", "publisher": "Kerala Tourism", "source_role": "evidence for materially regional worship forms and disagreement over represented identity; grounds separate-lane routing", "rights_lane": "citation_only", "url": "https://www.keralatourism.org/onam/onam-rituals/thrikkakkara-appan-rituals", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "kerala-tourism-thrikkakara-sadya", "title": "Thrikkakara Sadya", "publisher": "Kerala Tourism", "source_role": "named temple evidence for flag, arattu, Vamana form, elephants, crowds and institutional sadya; not generic household instruction", "rights_lane": "citation_only", "url": "https://www.keralatourism.org/onam/ona-sadya/thrikkakkara-sadya", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "kerala-tourism-onathaar", "title": "Onathaar", "publisher": "Kerala Tourism", "source_role": "regional community-performance evidence for Kannur/Kasaragod and represented-identity variation", "rights_lane": "citation_only", "url": "https://www.keralatourism.org/onam/onam-rituals/onathaar", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "fssai-home", "title": "Food Safety at Home", "publisher": "Food Safety and Standards Authority of India", "source_role": "household preparation, serving and storage safety", "rights_lane": "citation_only", "url": "https://www.fssai.gov.in/flipbook.php?bookid=31", "artifact_sha256": null, "citation_coordinates": {"rules": [1,2,3,4,8]}},
+    {"source_id": "fssai-allergens", "title": "Declared food allergens", "publisher": "Food Safety and Standards Authority of India", "source_role": "allergen disclosure/checking for shared sadya or simpler meals", "rights_lane": "citation_only", "url": "https://fssai.gov.in/faqs/?cat=13", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "ndma-sachet", "title": "SACHET National Disaster Alert Portal", "publisher": "National Disaster Management Authority", "source_role": "live monsoon, water, travel and crowd hazard alerts", "rights_lane": "citation_only", "url": "https://sachet.ndma.gov.in/", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}}
+  ],
+  "localized_content": [
+    {
+      "language_code": "en", "observance_slugs": ["onam", "thiruvonam"],
+      "title": "Onam: Kerala household and ordinary visitor guide",
+      "short_answer": "For Thiruvananthapuram in 2027, Thiruvonam is Sunday 12 September; recompute locally. A complete main-day form is to clean a shared place, hear the Kerala Tourism-labelled Mahabali–Vamana story, make a small floral/reusable welcome pattern or none, name one value of fairness and togetherness, share a safe meal or fruit, help someone participate, and sort waste. A full sadya, banana leaf, flowers, new clothes, gift, worship, clay figure, temple or ten-day programme is not required.",
+      "significance": {"text": "Onam is Kerala's widely shared harvest, homecoming and cultural festival, especially meaningful to Malayalis in Kerala and diaspora. Current Kerala Tourism accounts remember Mahabali's reign through prosperity, fairness and togetherness, and his annual return; households may express this religiously, culturally or both. Pookalam, sadya, family gathering, clothing, games and arts are common but not universal obligations.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam"], "scope_note": "Ordinary household and visitor lane; no universal Hindu worship sequence or named event programme."},
+      "origin_narratives": [
+        {"narrative_id": "mahabali-remembered-reign", "title": "Mahabali's remembered reign", "summary": "Kerala Tourism's current legend remembers Mahabali as a generous ruler associated with prosperity, happiness and equality. Devam treats this as a living Onam memory, not proof of a historical golden age and not a claim that present inequality disappears during a festival.", "tradition_scope": "Current Kerala state cultural retelling", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam"], "universal_origin_claimed": false},
+        {"narrative_id": "vamana-three-steps", "title": "Vamana asks for three steps", "summary": "In the Kerala Tourism retelling, Vishnu appears as Vamana and asks Mahabali for three feet of land. Mahabali grants the request; Vamana then expands and covers heaven and earth in two steps. This pack labels the source and does not present either figure as a simple modern moral stereotype.", "tradition_scope": "Current Kerala Tourism Mahabali–Vamana legend", "source_ids": ["kerala-tourism-thiruvonam"], "universal_origin_claimed": false},
+        {"narrative_id": "mahabali-offers-head", "title": "Mahabali offers the third step", "summary": "With no land left, the retelling says Mahabali offers his own head for Vamana's third step. The moment is remembered through generosity and humility, but Devam does not turn bodily surrender or obedience to power into a consumer instruction.", "tradition_scope": "Current Kerala Tourism retelling; not behavioural command", "source_ids": ["kerala-tourism-thiruvonam"], "universal_origin_claimed": false},
+        {"narrative_id": "annual-return", "title": "The annual return to his people", "summary": "Kerala Tourism says Mahabali receives permission to visit his people once each year, and Onam households welcome that remembered return. A pookalam or meal can express welcome, but no object, feast or worship is required and prosperity is not guaranteed.", "tradition_scope": "Living Onam homecoming association", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam", "kerala-tourism-pookalam"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "pookalam-and-home-welcome", "population_scope": "Many Malayali households, schools and associations", "description": "People may clean and decorate homes and make pookalam from Atham or on selected days. Pattern, size, flowers and duration vary; a small, drawn or reusable welcome design is complete.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-pookalam"], "instructional": false},
+        {"practice_id": "sadya-family-and-onakkodi", "population_scope": "Many households and community gatherings", "description": "Families may prepare or attend a vegetarian sadya, gather, wear or gift onakkodi and share games. Menu, leaf/plate, gifting and scale vary; safe simple food and no gift are valid.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam", "fssai-home"], "instructional": false},
+        {"practice_id": "public-arts-and-events", "population_scope": "Spectators and participants at named Kerala events", "description": "Boat races, Pulikali, Kathakali, dances and processions are visible festival forms. They require a named live schedule and venue/performer safety; they are not household completion requirements.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam", "ndma-sachet"], "instructional": false}
+      ],
+      "procedures": [
+        {"procedure_id": "onam-en-main-day-v1", "label": "45-minute accessible Thiruvonam household form", "tier": "minimum", "setting": "household", "authority_scope": "Cultural/religious household welcome without inventing deity installation, Thrikkakara Appan worship or temple liturgy.", "form": "accessible_short", "estimated_minutes": 45,
+          "materials": [
+            {"item": "A small clean welcome space", "required": true, "substitutions": ["Tabletop", "Door-side card", "Digital shared design"], "source_ids": ["kerala-tourism-pookalam"]},
+            {"item": "Local flowers or reusable/drawn petals", "required": false, "substitutions": ["Leaves already fallen", "Paper or cloth shapes", "Chalk design", "No design"], "source_ids": ["kerala-tourism-pookalam"]},
+            {"item": "Safe shared food, fruit or drink", "required": false, "substitutions": ["Allergen-safe simple meal", "Individually suitable food", "No shared food"], "source_ids": ["fssai-home", "fssai-allergens"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm local Thiruvonam. Use the 12 September 2027 Thiruvananthapuram fixture only for that location.", "why": "The Malayalam solar-calendar/nakshatra decision is location-aware.", "source_ids": ["drik-thiruvananthapuram-onam-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Ask how the household frames Onam and what prayer, image or offering actions belong to it. A cultural welcome without worship is complete.", "why": "Malayali households are not religiously uniform.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam"], "optional": false},
+            {"ordinal": 3, "instruction": "Clean one shared area together. Make a small pookalam or reusable/drawn welcome pattern only if materials and access are safe; keep exits clear.", "why": "Welcome need not create waste, allergy or a trip hazard.", "source_ids": ["kerala-tourism-pookalam"], "optional": false},
+            {"ordinal": 4, "instruction": "Hear the four source-labelled Mahabali–Vamana moments. Name one value—fairness, generosity, dignity, inclusion or shared well-being—and one present gap that celebration does not erase.", "why": "The story can guide reflection without becoming history or self-surrender instruction.", "source_ids": ["kerala-tourism-thiruvonam", "kerala-tourism-highlights"], "optional": false},
+            {"ordinal": 5, "instruction": "Do one agreed inclusion action: share preparation, invite without pressure, provide an accessible seat/food, contact a welcome relative, pay a worker fairly or donate within budget.", "why": "Togetherness becomes concrete without forced reconciliation or spending.", "source_ids": ["kerala-tourism-highlights"], "optional": false},
+            {"ordinal": 6, "instruction": "Share sadya, a simpler meal, fruit or separate suitable foods after checking allergens and restrictions. No one must overeat, fast, cook or serve.", "why": "Food should express hospitality without harm or unequal labour.", "source_ids": ["fssai-home", "fssai-allergens", "kerala-tourism-highlights"], "optional": false},
+            {"ordinal": 7, "instruction": "Thank hosts and helpers; refrigerate/store food safely, segregate flowers/food/packaging, and clear the design when the household chooses.", "why": "Safe closing is part of the observance.", "source_ids": ["fssai-home"], "optional": false}
+          ],
+          "closing": {"text": "Close with an Onam greeting, thanks or quiet hope for shared well-being. No display, meal size, gift or public happiness proves belonging.", "source_ids": ["kerala-tourism-highlights"]},
+          "source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-highlights", "kerala-tourism-thiruvonam", "kerala-tourism-pookalam", "fssai-home"]
+        },
+        {"procedure_id": "onam-en-ten-day-v1", "label": "Optional Atham-to-Thiruvonam household approach", "tier": "standard", "setting": "family_led", "authority_scope": "Optional household intensity; not a universal ten-day ritual calendar and not Thrikkakara Appan worship.", "form": "fuller_family_or_teacher_led", "estimated_minutes": null,
+          "materials": [{"item": "Reusable base and small daily materials", "required": false, "substitutions": ["One design only on Thiruvonam", "Shared digital pattern", "No pookalam"], "source_ids": ["kerala-tourism-pookalam"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve local Atham and Thiruvonam, then choose in advance which days the household has time and materials for.", "why": "Ten days are a festival frame, not ten compulsory performances.", "source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-thiruvonam"], "optional": false},
+            {"ordinal": 2, "instruction": "On chosen days, add or remake a small safe welcome design and let different willing people contribute. Do not claim one colour, flower, shape or size is universally required.", "why": "Kerala Tourism records changing and regional forms.", "source_ids": ["kerala-tourism-pookalam"], "optional": false},
+            {"ordinal": 3, "instruction": "Distribute shopping, cleaning, cooking and invitations fairly; set a budget and accessibility/food plan before Uthradam.", "why": "Preparation should not transfer all labour or cost to one person.", "source_ids": ["fssai-home", "kerala-tourism-thiruvonam"], "optional": false},
+            {"ordinal": 4, "instruction": "On Thiruvonam use the complete main-day procedure. Add only the family's established prayer or clay-form practice under its own authority.", "why": "A descriptive source cannot supply missing liturgy.", "source_ids": ["kerala-tourism-thrikkakara-appan", "kerala-tourism-thiruvonam"], "optional": false}
+          ],
+          "closing": {"text": "End the chosen household sequence when the family custom says; formal figures, offerings and worship close only under the practice that established them.", "source_ids": ["kerala-tourism-thrikkakara-appan"]},
+          "source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-pookalam", "kerala-tourism-thiruvonam"]
+        },
+        {"procedure_id": "onam-en-visitor-v1", "label": "Ordinary household or public-event visitor", "tier": "elaborate", "setting": "community_participation", "authority_scope": "Guest/spectator actions only; no temple, performance, boat or household authority is assumed.", "form": "institutional_participation", "estimated_minutes": null,
+          "materials": [{"item": "Current host or event information", "required": true, "substitutions": ["Official stream", "Main-day home form"], "source_ids": ["kerala-tourism-highlights", "ndma-sachet"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Ask the host whether and how to join pookalam, food, prayer, clothing, gifts and photographs. Share dietary/access needs early.", "why": "Invitation does not imply consent for every activity.", "source_ids": ["kerala-tourism-highlights", "fssai-allergens"], "optional": false},
+            {"ordinal": 2, "instruction": "Help with agreed work, use the household's serving order and waste practice, and avoid judging authenticity by menu size or display.", "why": "Respect includes labour and local variation.", "source_ids": ["kerala-tourism-highlights", "fssai-home"], "optional": false},
+            {"ordinal": 3, "instruction": "For any boat race, Pulikali, parade, temple or association programme, verify the named official schedule, venue, access, ticket and safety advice. Check live weather/water alerts.", "why": "Public forms have materially different hazards and authority.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thrikkakara-sadya", "ndma-sachet"], "optional": false},
+            {"ordinal": 4, "instruction": "Leave or watch remotely if crowds, water, animals, body paint, noise, travel or family contact are unsafe. Do not touch performers, boats, animals or ritual objects without permission.", "why": "Participation is optional and bounded.", "source_ids": ["ndma-sachet", "kerala-tourism-highlights"], "optional": false}
+          ],
+          "closing": {"text": "Thank the host or organizers, follow exit/waste directions and share images only with consent and event rules.", "source_ids": ["kerala-tourism-highlights"]},
+          "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thrikkakara-sadya", "ndma-sachet"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "household-language-framing-and-intensity", "scope": "Kerala and Malayali diaspora households", "difference": "Language, cultural/religious framing, one-day/selected-day approach, pookalam design, menu, plate, clothing and gifts remain within the lane.", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-pookalam"], "separate_lane_required": false},
+        {"variant_id": "thrikkakara-appan-mathevar-household-worship", "scope": "Regional clay-form household practice", "difference": "Represented identity is disputed and installation, forms, offering and closing materially change.", "source_ids": ["kerala-tourism-thrikkakara-appan"], "separate_lane_required": true},
+        {"variant_id": "thrikkakara-temple-mahotsavam", "scope": "Thrikkakara Vamana temple", "difference": "Flag, deity forms, arattu, elephant programme, temple sadya and crowds require live institutional guidance.", "source_ids": ["kerala-tourism-thrikkakara-sadya"], "separate_lane_required": true},
+        {"variant_id": "named-public-arts-water-or-parade-event", "scope": "Vallam Kali, Pulikali, Athachamayam, Kathakali or association programme", "difference": "Named schedule, performers, water/body-paint/crowd safety and venue authority differ materially.", "source_ids": ["kerala-tourism-highlights", "ndma-sachet"], "separate_lane_required": true},
+        {"variant_id": "onathaar", "scope": "Kannur/Kasaragod household-visiting performance", "difference": "Performer community, costume, songs, household visit and represented identity require a dedicated community lane.", "source_ids": ["kerala-tourism-onathaar"], "separate_lane_required": true},
+        {"variant_id": "animal-or-insect-offering", "scope": "Regional cattle, ant or other living-being practices", "difference": "Species, food, chemicals, consent/welfare and local ecology require dedicated evidence.", "source_ids": ["kerala-tourism-thiruvonam"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "Do not pluck protected plants, trespass, block exits or create a wet/slippery pookalam. Reusable, drawn or no-flower forms are complete.",
+        "A full sadya and banana leaf are optional. Check allergens, diet, swallowing needs, hygiene, hot food and storage; no one must overeat, fast, cook or serve.",
+        "Share and recognize preparation/cleanup. Women, elders, domestic workers and hosts are not obligated to labour while others celebrate; pay workers and respect leave.",
+        "Do not dump food, flowers, clay or packaging into water. Segregate under local rules.",
+        "Do not require spending, onakkodi, gifts, photographs, alcohol, public happiness, forgiveness or contact with unsafe relatives.",
+        "Named boat, parade, performance, temple and animal events require live authority and hazard guidance. Staying home or watching remotely is complete."
+      ]
+    },
+    {
+      "language_code": "hi", "observance_slugs": ["onam", "thiruvonam"],
+      "title": "ओणम: केरल परिवार और सामान्य अतिथि मार्ग",
+      "short_answer": "तिरुवनंतपुरम में 2027 का थिरुवोणम रविवार 12 सितंबर है; अपने स्थान के लिए पुनः गणना करें। मुख्य-दिवस का पूर्ण रूप है—साझा स्थान साफ करना, केरल पर्यटन-लेबल वाली महाबली-वामन कथा सुनना, छोटा फूल/पुन:प्रयोग स्वागत-चित्र या कुछ नहीं, न्याय-सहभागिता का एक मूल्य, सुरक्षित भोजन/फल, किसी को शामिल करने का काम और कचरा अलग करना। पूरी सद्या, केले का पत्ता, फूल, नए कपड़े, उपहार, पूजा, मिट्टी की मूर्ति, मंदिर और दस दिन अनिवार्य नहीं।",
+      "significance": {"text": "ओणम केरल का व्यापक फसल, घर-वापसी और सांस्कृतिक उत्सव है, जो केरल और प्रवास में मलयालियों के लिए विशेष है। केरल पर्यटन के वर्तमान विवरण महाबली के राज्य को समृद्धि, न्याय और साथ तथा उनकी वार्षिक वापसी से जोड़ते हैं। परिवार इसे धार्मिक, सांस्कृतिक या दोनों रूप में जी सकते हैं। पूक्कलम, सद्या, परिवार, वस्त्र, खेल और कला सामान्य हैं, सार्वभौम बाध्यता नहीं।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam"], "scope_note": "सामान्य परिवार/अतिथि मार्ग; सार्वभौम हिंदू पूजा या नामित कार्यक्रम नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "mahabali-remembered-reign-hi", "title": "महाबली का स्मरण किया गया राज्य", "summary": "केरल पर्यटन की वर्तमान कथा महाबली को समृद्धि, सुख और समानता से जुड़े उदार शासक के रूप में स्मरण करती है। देवम इसे जीवित ओणम-स्मृति कहता है, ऐतिहासिक स्वर्णयुग का प्रमाण या वर्तमान असमानता मिटने का दावा नहीं।", "tradition_scope": "केरल राज्य की वर्तमान सांस्कृतिक पुनर्कथा", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam"], "universal_origin_claimed": false},
+        {"narrative_id": "vamana-three-steps-hi", "title": "वामन तीन पग माँगते हैं", "summary": "केरल पर्यटन की कथा में विष्णु वामन बनकर महाबली से तीन पग भूमि माँगते हैं। अनुमति पाकर वामन विराट होकर दो पग में स्वर्ग और पृथ्वी नापते हैं। यह स्रोत-लेबल कथा है; किसी पात्र को सरल आधुनिक नैतिक रूढ़ि नहीं बनाया गया।", "tradition_scope": "केरल पर्यटन की वर्तमान महाबली-वामन कथा", "source_ids": ["kerala-tourism-thiruvonam"], "universal_origin_claimed": false},
+        {"narrative_id": "mahabali-offers-head-hi", "title": "महाबली तीसरे पग के लिए सिर देते हैं", "summary": "भूमि न बचने पर कथा में महाबली अपना सिर देते हैं। इसे उदारता और विनम्रता से याद किया जाता है, पर देवम शारीरिक समर्पण या सत्ता-आज्ञाकारिता को उपभोक्ता निर्देश नहीं बनाता।", "tradition_scope": "वर्तमान पुनर्कथा; व्यवहार आदेश नहीं", "source_ids": ["kerala-tourism-thiruvonam"], "universal_origin_claimed": false},
+        {"narrative_id": "annual-return-hi", "title": "प्रजा के पास वार्षिक वापसी", "summary": "केरल पर्यटन कहता है कि महाबली को हर वर्ष लोगों से मिलने की अनुमति मिलती है और ओणम परिवार उस वापसी का स्वागत करते हैं। पूक्कलम या भोजन संकेत हो सकते हैं, पर वस्तु, भोज या पूजा अनिवार्य नहीं और समृद्धि की गारंटी नहीं।", "tradition_scope": "जीवित ओणम घर-वापसी संगति", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam", "kerala-tourism-pookalam"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "pookalam-and-home-welcome-hi", "population_scope": "अनेक मलयाली परिवार, विद्यालय और संघ", "description": "लोग घर साफ-सजाकर अथम से या चुने दिनों में पूक्कलम बना सकते हैं। नमूना, आकार, फूल और अवधि बदलते हैं; छोटा, बनाया हुआ या पुन:प्रयोग डिजाइन पूर्ण है।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-pookalam"], "instructional": false},
+        {"practice_id": "sadya-family-and-onakkodi-hi", "population_scope": "अनेक परिवार और सामुदायिक आयोजन", "description": "परिवार शाकाहारी सद्या, मिलना, ओणक्कोडि या खेल रख सकते हैं। व्यंजन, पत्ता/प्लेट, उपहार और पैमाना बदलते हैं; साधारण सुरक्षित भोजन और बिना उपहार मान्य हैं।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam", "fssai-home"], "instructional": false},
+        {"practice_id": "public-arts-and-events-hi", "population_scope": "नामित केरल आयोजनों के दर्शक/सहभागी", "description": "नौका-दौड़, पुलिकली, कथकली, नृत्य और जुलूस दृश्य रूप हैं। इन्हें जीवित समय/स्थान/सुरक्षा चाहिए; घरेलू पूर्णता के लिए ये आवश्यक नहीं।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam", "ndma-sachet"], "instructional": false}
+      ],
+      "procedures": [
+        {"procedure_id": "onam-hi-main-day-v1", "label": "45 मिनट का सुलभ थिरुवोणम घरेलू रूप", "tier": "minimum", "setting": "household", "authority_scope": "देव-स्थापना, त्रिक्काकरा अप्पन पूजा या मंदिर-विधि गढ़े बिना स्वागत।", "form": "accessible_short", "estimated_minutes": 45,
+          "materials": [
+            {"item": "छोटा स्वच्छ स्वागत स्थान", "required": true, "substitutions": ["मेज", "द्वार-पास कार्ड", "साझा डिजिटल डिजाइन"], "source_ids": ["kerala-tourism-pookalam"]},
+            {"item": "स्थानीय फूल या पुन:प्रयोग/बनाई पंखुड़ियाँ", "required": false, "substitutions": ["गिरे पत्ते", "कागज़/कपड़ा", "चॉक", "कोई डिजाइन नहीं"], "source_ids": ["kerala-tourism-pookalam"]},
+            {"item": "सुरक्षित भोजन, फल या पेय", "required": false, "substitutions": ["एलर्जी-सुरक्षित सरल भोजन", "अलग उपयुक्त भोजन", "साझा भोजन नहीं"], "source_ids": ["fssai-home", "fssai-allergens"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय थिरुवोणम तय करें। 12 सितंबर 2027 का तिरुवनंतपुरम समय केवल उसी स्थान का संकेत है।", "why": "मलयालम सौर पंचांग/नक्षत्र स्थान-निर्भर है।", "source_ids": ["drik-thiruvananthapuram-onam-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "पूछें कि परिवार ओणम को कैसे देखता और कौन-सी प्रार्थना/चित्र/अर्पण उसका अपना है। बिना पूजा सांस्कृतिक स्वागत पूर्ण है।", "why": "मलयाली परिवार धार्मिक रूप से एक जैसे नहीं।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thiruvonam"], "optional": false},
+            {"ordinal": 3, "instruction": "मिलकर एक स्थान साफ करें। सामग्री सुरक्षित हो तो छोटा पूक्कलम या पुन:प्रयोग/चित्रित स्वागत बनाएं; निकास खुला रखें।", "why": "स्वागत से कचरा, एलर्जी या फिसलन न हो।", "source_ids": ["kerala-tourism-pookalam"], "optional": false},
+            {"ordinal": 4, "instruction": "चार स्रोत-लेबल महाबली-वामन क्षण सुनें। न्याय, उदारता, गरिमा, समावेश या साझा कल्याण में एक मूल्य और एक वर्तमान कमी बताएँ जिसे उत्सव नहीं मिटाता।", "why": "कथा इतिहास या आत्म-समर्पण निर्देश बने बिना चिंतन देती है।", "source_ids": ["kerala-tourism-thiruvonam", "kerala-tourism-highlights"], "optional": false},
+            {"ordinal": 5, "instruction": "तैयारी बाँटना, बिना दबाव बुलाना, सुलभ सीट/भोजन, स्वागतयोग्य संबंधी से संपर्क, उचित मजदूरी या बजट दान जैसा एक समावेश काम करें।", "why": "साथ दबाव, मेल-मिलाप या खर्च बिना ठोस बनता है।", "source_ids": ["kerala-tourism-highlights"], "optional": false},
+            {"ordinal": 6, "instruction": "एलर्जी/आहार पूछकर सद्या, सरल भोजन, फल या अलग उपयुक्त भोजन दें। किसी को अधिक खाना, उपवास, पकाना या परोसना आवश्यक नहीं।", "why": "आतिथ्य हानि या असमान श्रम न बनाए।", "source_ids": ["fssai-home", "fssai-allergens", "kerala-tourism-highlights"], "optional": false},
+            {"ordinal": 7, "instruction": "मेजबान/सहायक को धन्यवाद दें; भोजन सुरक्षित रखें, फूल/भोजन/पैकिंग अलग करें और परिवार जब चाहे डिजाइन हटाए।", "why": "सुरक्षित समापन पालन का भाग है।", "source_ids": ["fssai-home"], "optional": false}
+          ],
+          "closing": {"text": "ओणम शुभकामना, धन्यवाद या साझा कल्याण की मौन आशा से बंद करें। प्रदर्शन, भोज, उपहार या सार्वजनिक खुशी अपनापन सिद्ध नहीं करते।", "source_ids": ["kerala-tourism-highlights"]},
+          "source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-highlights", "kerala-tourism-thiruvonam", "kerala-tourism-pookalam", "fssai-home"]
+        },
+        {"procedure_id": "onam-hi-ten-day-v1", "label": "वैकल्पिक अथम से थिरुवोणम घरेलू क्रम", "tier": "standard", "setting": "family_led", "authority_scope": "वैकल्पिक तीव्रता; सार्वभौम दस-दिवसीय विधि या त्रिक्काकरा अप्पन पूजा नहीं।", "form": "fuller_family_or_teacher_led", "estimated_minutes": null,
+          "materials": [{"item": "पुन:प्रयोग आधार और छोटी दैनिक सामग्री", "required": false, "substitutions": ["केवल थिरुवोणम डिजाइन", "डिजिटल पैटर्न", "पूक्कलम नहीं"], "source_ids": ["kerala-tourism-pookalam"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय अथम/थिरुवोणम तय कर पहले चुनें कि किन दिनों समय और सामग्री है।", "why": "दस दिन उत्सव-ढाँचा हैं, दस अनिवार्य प्रदर्शन नहीं।", "source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-thiruvonam"], "optional": false},
+            {"ordinal": 2, "instruction": "चुने दिनों में छोटा सुरक्षित स्वागत डिजाइन जोड़ें; इच्छुक लोग योगदान दें। एक रंग, फूल, आकार को सार्वभौम न कहें।", "why": "स्रोत क्षेत्रीय बदलते रूप बताता है।", "source_ids": ["kerala-tourism-pookalam"], "optional": false},
+            {"ordinal": 3, "instruction": "खरीद, सफाई, पकाना और निमंत्रण न्याय से बाँटें; उत्राडम से पहले बजट, पहुँच और भोजन योजना करें।", "why": "तैयारी का पूरा श्रम/खर्च एक व्यक्ति पर न जाए।", "source_ids": ["fssai-home", "kerala-tourism-thiruvonam"], "optional": false},
+            {"ordinal": 4, "instruction": "थिरुवोणम पर मुख्य-दिवस क्रम करें। परिवार की स्थापित प्रार्थना या मिट्टी-रूप केवल उसके अधिकार में जोड़ें।", "why": "वर्णनात्मक स्रोत अनुपस्थित विधि नहीं देता।", "source_ids": ["kerala-tourism-thrikkakara-appan", "kerala-tourism-thiruvonam"], "optional": false}
+          ],
+          "closing": {"text": "परिवार की प्रथा के अनुसार चुना क्रम समाप्त करें; औपचारिक आकृति/अर्पण/पूजा उसी अधिकार में बंद हो जिसने स्थापित किया।", "source_ids": ["kerala-tourism-thrikkakara-appan"]},
+          "source_ids": ["drik-thiruvananthapuram-onam-2027", "kerala-tourism-pookalam", "kerala-tourism-thiruvonam"]
+        },
+        {"procedure_id": "onam-hi-visitor-v1", "label": "सामान्य परिवार या सार्वजनिक कार्यक्रम अतिथि", "tier": "elaborate", "setting": "community_participation", "authority_scope": "केवल अतिथि/दर्शक कर्म; मंदिर, प्रदर्शन, नौका या परिवार अधिकार नहीं।", "form": "institutional_participation", "estimated_minutes": null,
+          "materials": [{"item": "वर्तमान मेजबान या कार्यक्रम सूचना", "required": true, "substitutions": ["आधिकारिक प्रसारण", "घरेलू मुख्य-दिवस रूप"], "source_ids": ["kerala-tourism-highlights", "ndma-sachet"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "मेजबान से पूक्कलम, भोजन, प्रार्थना, वस्त्र, उपहार और फोटो पूछें; आहार/पहुँच जरूरत पहले बताएँ।", "why": "निमंत्रण हर गतिविधि की सहमति नहीं।", "source_ids": ["kerala-tourism-highlights", "fssai-allergens"], "optional": false},
+            {"ordinal": 2, "instruction": "सहमत काम में मदद, घर का परोसने/कचरा क्रम और मेनू/सजावट को प्रामाणिकता का माप न बनाएँ।", "why": "सम्मान में श्रम और स्थानीय विविधता आते हैं।", "source_ids": ["kerala-tourism-highlights", "fssai-home"], "optional": false},
+            {"ordinal": 3, "instruction": "नौका-दौड़, पुलिकली, जुलूस, मंदिर या संघ कार्यक्रम का आधिकारिक समय, स्थान, पहुँच, टिकट और सुरक्षा जाँचें; मौसम/जल चेतावनी देखें।", "why": "सार्वजनिक रूपों में अलग जोखिम और अधिकार हैं।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thrikkakara-sadya", "ndma-sachet"], "optional": false},
+            {"ordinal": 4, "instruction": "भीड़, जल, पशु, रंग, शोर, यात्रा या परिवार संपर्क असुरक्षित हो तो निकलें/दूर से देखें। बिना अनुमति कलाकार, नौका, पशु या कर्म-वस्तु न छुएँ।", "why": "भागीदारी वैकल्पिक और सीमित है।", "source_ids": ["ndma-sachet", "kerala-tourism-highlights"], "optional": false}
+          ],
+          "closing": {"text": "मेजबान/आयोजक को धन्यवाद, निकास/कचरा निर्देश और सहमति/कार्यक्रम नियम से ही फोटो साझा करें।", "source_ids": ["kerala-tourism-highlights"]},
+          "source_ids": ["kerala-tourism-highlights", "kerala-tourism-thrikkakara-sadya", "ndma-sachet"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "household-language-framing-and-intensity-hi", "scope": "केरल और मलयाली प्रवासी परिवार", "difference": "भाषा, धार्मिक/सांस्कृतिक रूप, एक/चुने दिन, पूक्कलम, मेनू, प्लेट, वस्त्र और उपहार इसी मार्ग में।", "source_ids": ["kerala-tourism-highlights", "kerala-tourism-pookalam"], "separate_lane_required": false},
+        {"variant_id": "thrikkakara-appan-mathevar-household-worship-hi", "scope": "क्षेत्रीय मिट्टी-रूप घरेलू पूजा", "difference": "प्रतिनिधित पहचान विवादित; स्थापना, आकृति, अर्पण और समापन बदलते हैं।", "source_ids": ["kerala-tourism-thrikkakara-appan"], "separate_lane_required": true},
+        {"variant_id": "thrikkakara-temple-mahotsavam-hi", "scope": "त्रिक्काकरा वामन मंदिर", "difference": "ध्वज, देव-रूप, आराट्टु, हाथी, मंदिर सद्या और भीड़ हेतु जीवित संस्था मार्ग।", "source_ids": ["kerala-tourism-thrikkakara-sadya"], "separate_lane_required": true},
+        {"variant_id": "named-public-arts-water-or-parade-event-hi", "scope": "वल्लम कली, पुलिकली, अथचमयम, कथकली या संघ", "difference": "नामित समय, कलाकार, जल/रंग/भीड़ सुरक्षा और स्थान अधिकार अलग।", "source_ids": ["kerala-tourism-highlights", "ndma-sachet"], "separate_lane_required": true},
+        {"variant_id": "onathaar-hi", "scope": "कन्नूर/कासरगोड घर-भ्रमण प्रदर्शन", "difference": "कलाकार समुदाय, वेश, गीत, घर-भ्रमण और प्रतिनिधित पहचान हेतु अलग समुदाय मार्ग।", "source_ids": ["kerala-tourism-onathaar"], "separate_lane_required": true},
+        {"variant_id": "animal-or-insect-offering-hi", "scope": "क्षेत्रीय पशु/चींटी/जीव प्रथा", "difference": "प्रजाति, भोजन, रसायन, कल्याण और पारिस्थितिकी हेतु समर्पित प्रमाण।", "source_ids": ["kerala-tourism-thiruvonam"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "संरक्षित पौधे न तोड़ें, अतिक्रमण न करें, निकास न रोकें और गीला/फिसलन पूक्कलम न बनाएं। पुन:प्रयोग, चित्रित या बिना फूल पूर्ण है।",
+        "पूरी सद्या और केले का पत्ता वैकल्पिक हैं। एलर्जी, आहार, निगलना, स्वच्छता, गर्म भोजन और भंडारण जाँचें; अधिक खाना, उपवास, पकाना या परोसना अनिवार्य नहीं।",
+        "तैयारी/सफाई साझा और मान्य करें। महिलाएँ, बुज़ुर्ग, घरेलू कर्मी और मेजबान दूसरों के उत्सव के लिए बाध्य श्रमिक नहीं; उचित भुगतान और छुट्टी दें।",
+        "भोजन, फूल, मिट्टी या पैकिंग जल में न डालें; स्थानीय नियम से अलग करें।",
+        "खर्च, ओणक्कोडि, उपहार, फोटो, शराब, सार्वजनिक खुशी, क्षमा या असुरक्षित संबंधी से संपर्क अनिवार्य नहीं।",
+        "नौका, जुलूस, प्रदर्शन, मंदिर और पशु कार्यक्रम हेतु जीवित अधिकार/जोखिम मार्ग चाहिए। घर रहना या दूर से देखना पूर्ण है।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": ["A fixed lawful primary expression and canonical owner for full Vamana-Mahabali scriptural context remain unresolved.", "Regional deity/clay-form worship and all named temple, performance, water and animal programmes remain separate authority lanes.", "No deterministic day-cell projection exists."],
+    "review_status": "internal_beta_reviewed"
+  }
+}

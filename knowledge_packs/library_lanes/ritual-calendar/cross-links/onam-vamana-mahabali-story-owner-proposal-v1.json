@@ -1,0 +1,32 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-onam-vamana-mahabali-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "onam-to-vamana-mahabali-full-source-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/onam-kerala-household-participant-2027-v1"},
+      "to_ref": {"lane_local_id": "story/vamana-mahabali-source-context"},
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_vamana_mahabali_context",
+      "directionality": "directed",
+      "consumer_label": {"en": "Explore the full source-labelled Vamana and Mahabali story", "hi": "वामन और महाबली की पूर्ण स्रोत-लेबल कथा समझें"},
+      "scope": {
+        "statement": "The ritual pack uses only Kerala Tourism's current Onam retelling. A future story owner should locate a lawful fixed expression, preserve textual and reception differences, and provide full Vamana-Mahabali context without overwriting Kerala's living Mahabali homecoming memory.",
+        "geography_codes": ["IN-KL", "malayali-diaspora"],
+        "tradition_codes": ["onam-ordinary-household"],
+        "time_scope": "Local Chingam Thiruvonam; 2027 Thiruvananthapuram fixture 12 September",
+        "source_expression_scope": "Kerala Tourism current retelling only; fixed primary expression unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "official_current", "ref": "https://www.keralatourism.org/event/thiruvonam-onam-festival/41/", "claim_scope": "Current Kerala state retelling of Mahabali's remembered reign, Vamana's three steps and the annual return."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/onam-kerala-household-participant-2027-v1.json", "claim_scope": "Bilingual timing, four labelled story moments, household/visitor action, safety, closing and major-variant routing."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

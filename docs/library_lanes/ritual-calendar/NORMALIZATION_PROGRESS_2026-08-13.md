@@ -203,3 +203,20 @@ Exact accepted-authoring coverage is now **14 completed after freeze / 194
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The fifteenth post-freeze item is complete at the bilingual authored-library
+layer: `onam-kerala-household-participant-2027-v1`. It gives a complete
+Thiruvonam household answer, an optional Atham-to-Thiruvonam approach and an
+ordinary visitor route for Kerala and Malayali diaspora contexts. Language,
+religious/cultural framing, pookalam materials, sadya menu, plate, clothing,
+gift and one-day/selected-day intensity remain within one lane. Thrikkakara
+Appan/Mathevar worship, Thrikkakara temple Mahotsavam, named arts/water/parade
+events, Onathaar and animal/insect offerings remain separate because identity,
+authority, performers, setting or safety changes materially. The Mahabali-
+Vamana account is labelled as Kerala Tourism's current retelling; an unresolved
+typed proposal requests a future fixed-source story owner.
+
+Exact accepted-authoring coverage is now **15 completed after freeze / 193
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.
