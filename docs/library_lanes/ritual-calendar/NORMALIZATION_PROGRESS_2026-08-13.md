@@ -236,3 +236,21 @@ Exact accepted-authoring coverage is now **16 completed after freeze / 192
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The seventeenth post-freeze item is complete at the bilingual authored-library
+layer: `saphala-ekadashi-north-west-smarta-household-2027-v1`. It resolves one
+named lane across both the 3 January and 23 December 2027 North-reference
+fixtures without counting the repeated civil-year occurrence twice. The safe
+household core is Vishnu/Krishna remembrance, a clearly Padma-Purana-labelled
+Lumpaka account, one restraint and one concrete repair or service. Language,
+ordinary fruit/flower, dress, image/no-image, family-known prayer and voluntary
+fast/non-fast choice remain within the lane. A different Gauna/Vaishnava date,
+named temple liturgy and another named Ekadashi remain separate because timing,
+authority, story or ordered action changes materially. Lumpaka's hunger, cold,
+weakness and wakefulness are story events, never consumer instructions; a
+non-fasting and no-vigil form is complete.
+
+Exact accepted-authoring coverage is now **17 completed after freeze / 191
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.
