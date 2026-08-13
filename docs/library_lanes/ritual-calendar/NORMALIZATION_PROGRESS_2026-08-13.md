@@ -371,6 +371,30 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published. The Pankoddhar denominator correction remains open and uncounted.
 
+The twenty-sixth post-freeze item is complete at the bilingual authored-library
+layer: `mohini-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
+reviewed 16 May 2027 ordinary fixture while explicitly recording chapter 49's
+bright-half/dark-half inconsistency and relying on local deterministic authority.
+Its complete route is private, non-fasting, fed, hydrated, rested, no-touch,
+no-hunting and material-free: Vishnu remembrance, a bounded Dhrishtabuddhi
+account, one harmful pattern within the participant's control, one lawful
+proportionate interruption and a non-absolving close.
+
+Rama's separation grief, Dhrishtabuddhi's wrongdoing, family abandonment,
+binding and whipping, deprivation, animal killing, Kaundinya's garment contact,
+fast, divine body and attributed ascent remain source events. Sex-worker and
+addiction stigma, torture as correction, wildlife imitation, forced confession,
+magical-touch absolution, survivor reunion pressure and ritual erasure of harm
+are rejected. Mohini-avatar, amrita, Bhasmasura and Shiva-Mohini stories remain
+with separate story owners. Minor household expression stays inside this lane;
+material timing/fast authority, professional/wildlife routes, named institutions
+and other Ekadashis remain separate.
+
+Exact accepted-authoring coverage is now **26 completed after freeze / 182
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published. The Pankoddhar denominator correction remains open and uncounted.
+
 The twenty-fourth post-freeze item is complete at the bilingual authored-library
 layer: `kamada-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
 reviewed 17 April 2027 ordinary fixture and gives a private, non-fasting,

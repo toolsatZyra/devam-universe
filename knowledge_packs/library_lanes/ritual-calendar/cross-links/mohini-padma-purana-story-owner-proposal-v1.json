@@ -1,0 +1,53 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-mohini-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "mohini-to-padma-purana-dhrishtabuddhi-story-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mohini-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-mohini-dhrishtabuddhi-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_mohini_dhrishtabuddhi_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Mohini Ekadashi account",
+        "hi": "मोहिनी एकादशी की पूरी स्रोत-नाम वाली कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "The ritual pack uses a bounded retelling from the reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 49. A future story/scripture owner should provide the lawful full expression, Sanskrit and edition coordinates, textual review of the bright/dark-half inconsistency, and reception context while preserving Rama's separation grief, Dhrishtabuddhi's wrongdoing, sex-worker stigma in the translation, family abandonment, repeated binding and whipping, deprivation, animal killing, garment contact, fasting, divine body and attributed ascent as source facts rather than survivor pressure, stigma, punishment norms, hunting instructions, magical absolution or guarantees. Mohini-avatar, amrita, Bhasmasura and Shiva-Mohini accounts are separate story worlds and must not be silently merged.",
+        "geography_codes": [
+          "north-india",
+          "west-india"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Mohini Ekadashi; reviewed ordinary 2027 fixture 16 May",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 49; Sanskrit, edition, bright/dark reading and reception owner review unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365626.html",
+          "claim_scope": "Reviewed lines 54-82 containing Rama-Vasistha framing, Dhanapala and Dhrishtabuddhi, punishment, wildlife killing, Kaundinya, garment contact, fast, attributed transformation and timing inconsistency."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/mohini-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual timing, non-stigmatising source account, proportionate harm interruption, no-touch/non-fasting route, professional and wildlife routing, closing and major-variant boundaries."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

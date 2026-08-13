@@ -1,0 +1,1064 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "mohini-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "mohini-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Shukla-paksha Mohini Ekadashi for you?",
+      "Does your family follow ordinary Smarta Mohini, or a materially different Gauna/Vaishnava date, fast or parana rule?",
+      "Would discussion of separation, sex-work stigma, substance use, gambling, theft, punishment, homelessness or animal killing be distressing or unsafe?",
+      "Would private reflection with no disclosure, writing, touch, contact or reconciliation be safer?",
+      "Does anyone need a non-fasting, fed, hydrated, rested, no-touch and material-free form?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "mohini-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "mohini-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "mohini-ekadashi",
+        "language_code": "en",
+        "note": "This is the ordinary North/West Smarta Mohini household lane. The source's expulsion, binding, whipping, animal killing, garment contact, fast, absolution, divine body and heaven are story claims—not correction methods, diagnoses, universal instructions or guarantees. Mohini-avatar stories belong to another owner."
+      },
+      {
+        "observance_slug": "mohini-ekadashi",
+        "language_code": "hi",
+        "note": "यह सामान्य उत्तर/पश्चिम स्मार्त मोहिनी गृह-मार्ग है। स्रोत का निष्कासन, बंधन, कोड़े, पशु-वध, वस्त्र-स्पर्श, उपवास, पाप-मुक्ति, दिव्य शरीर और विष्णुलोक कथा-दावे हैं—सुधार की विधि, निदान, सार्वभौम निर्देश या गारंटी नहीं। मोहिनी-अवतार कथाएँ अलग स्वामी की हैं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-mohini-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "mohini-shukla-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "mohini-private-nonfast-harm-interruption-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed ordinary Hindu, Telugu and Indian ISKCON fixtures place Mohini Ekadashi on Sunday 16 May 2027 as Vaishakha Shukla/Gaura Ekadashi. The reviewed chapter first says bright half but later contains a dark-half reading; resolve identity from the user's Indian city and accepted authority, never by silently harmonising narrative prose. Never copy displayed tithi/parana times, this date or a named temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-mohini-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 49: Mohini Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Rama-Vasistha framing and Dhrishtabuddhi account, including textual timing inconsistency, punishment, garment contact, fast and attributed results; source facts rather than consumer instructions or guarantees",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365626.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 49",
+        "reviewed_lines": "54-82",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-mohini-2027",
+      "title": "2027 Mohini Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "ordinary Hindu, Telugu and Indian ISKCON date discovery for Mohini on 16 May 2027; no portable parana or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/mohini/mohini-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-05-16",
+        "identity": "Mohini Shukla Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-wildlife-protection-act",
+      "title": "The Wild Life (Protection) Act, 1972",
+      "publisher": "India Code, Government of India",
+      "source_role": "official current statutory structure including section 9 prohibition of hunting; not situation-specific legal or wildlife advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1726?view_type=browse",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "act": "53 of 1972",
+        "section": "9",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "nhm-mental-health-social-worker",
+      "title": "Manual of Mental Health for Social Workers",
+      "publisher": "National Health Mission, Ministry of Health and Family Welfare",
+      "source_role": "official non-diagnostic boundary rejecting supernatural causation and supporting qualified mental-health routes",
+      "rights_lane": "citation_only",
+      "url": "https://nhm.gov.in/images/pdf/programmes/NMHP/Training_Manuals/Manual_of_Mental_Health_for_Social_Worker.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "mental-health myths and qualified support",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and material Gauna/Vaishnava authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-mohini-research",
+      "title": "Mohini Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of source inconsistency, non-stigmatising account, proportionate accountability, harm interruption, wildlife/legal routing, safety and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/mohini-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "mohini-ekadashi"
+      ],
+      "title": "Mohini Ekadashi: interrupt harm without abandoning dignity",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Mohini Ekadashi today. A complete home form is private and non-fasting: remember Vishnu, hear the chapter-49-labelled Dhrishtabuddhi account without sex-worker slurs or graphic animal inventory, privately identify one harmful pattern within your control, choose one lawful proportionate interruption, and close without punishment, forced contact or claims of absolution. Mohini-avatar stories, garment touch, hunting, fast and vigil are not required.",
+      "significance": {
+        "text": "The reviewed chapter moves from Rama's grief over separation from Sita to Dhrishtabuddhi's harmful actions, abandonment, punishment, wildlife killing, encounter with Kaundinya, fast and attributed transformation. Devam neither excuses theft and cruelty nor endorses torture, stigma or magical absolution. A bounded meaning is to interrupt harm without abandoning human dignity: own conduct, reduce immediate risk, seek qualified help, preserve accountability and refuse dehumanisation.",
+        "source_ids": [
+          "padma-purana-mohini-deshpande",
+          "devam-mohini-research"
+        ],
+        "scope_note": "Source-labelled ethical reflection; not survivor, addiction, gambling, criminal, wildlife, mental-health, medical, supernatural or absolution advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "mohini-dhrishtabuddhi-en",
+          "title": "Dhrishtabuddhi in Padma Purana chapter 49",
+          "summary": "Krishna tells Yudhishthira that Rama, distressed by separation from Sita, asked Vasistha about a vow. Vasistha names Mohini and recounts Dhrishtabuddhi, son of the public-spirited Vishnu devotee Dhanapala. The chapter moralises about Dhrishtabuddhi's sexual conduct, gambling, alcohol, theft and spending; his family expels him, others abandon him, royal officers repeatedly bind and whip him, and he is banished. Hungry in a forest, he kills animals. At Kaundinya's hermitage, slight contact with the sage's wet garment is said to remove sin; the sage prescribes Mohini fasting, after which the text says Dhrishtabuddhi gains a divine body and reaches Vishnu's world. Devam preserves wrongdoing, punishment, deprivation, wildlife killing, garment contact and attributed results as source events. It omits sex-worker slurs and graphic inventory; rejects torture, stigma, diagnosis and magical absolution; and does not merge the separate Mohini-avatar, amrita, Bhasmasura or Shiva-Mohini narratives. The chapter's later dark-half reading conflicts with its opening bright-half identity and is not silently harmonised.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 49",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-mohini-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "mohini-en-private-harm-interruption",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Vishnu remembrance, bounded source account, private identification of one controllable harmful pattern, one lawful interruption and a non-fasting close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "mohini-en-formal-fast-context",
+          "population_scope": "Families or institutions with a separately inherited or authorised formal practice",
+          "description": "A formal authority may prescribe fasting, vigil, mantra, food and parana rules. This ordinary guide does not reconstruct them or promise absolution.",
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "devam-mohini-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "mohini-en-minimum-v1",
+          "label": "Private harm-interruption step",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "drik-mohini-2027",
+            "india-code-wildlife-protection-act",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "materials": [
+            {
+              "item": "A private, safe place",
+              "required": false,
+              "substitutions": [
+                "Use a brief mental form",
+                "Postpone until privacy is safe"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            },
+            {
+              "item": "An optional secure reminder or verified support resource",
+              "required": false,
+              "substitutions": [
+                "Do not write",
+                "Act directly without recording another person"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Mohini Ekadashi. Note the chapter's bright/dark-half inconsistency; do not derive the date from it.",
+              "why": "Timing must come from deterministic local authority.",
+              "source_ids": [
+                "drik-mohini-2027",
+                "devam-ekadashi-rule-audit",
+                "padma-purana-mohini-deshpande"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, medicine, hygiene and sleep normal. Do not begin fasting, deprivation, vigil, bathing or garment-touch practice from this guide.",
+              "why": "The fed, hydrated and rested route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, family prayer or silence. No image, touch, confession or material is needed.",
+              "why": "Devotion remains accessible without an invented universal mantra.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the chapter-49-labelled Rama-Vasistha and Dhrishtabuddhi account without sex-worker slurs or graphic animal inventory. Label punishment, garment contact, absolution and divine ascent as source events; keep Mohini-avatar stories separate.",
+              "why": "The source remains recognisable without stigma, conflation or magical instruction.",
+              "source_ids": [
+                "padma-purana-mohini-deshpande",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Privately name one harmful pattern within your own control. Do not diagnose or select a fault for someone else, and do not disclose names, allegations, sexuality, substance use or trauma.",
+              "why": "Accountability begins with one's own controllable conduct and privacy.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Choose one proportionate interruption: block an unsafe transaction, remove weapon access, seek qualified help, return property through a safe lawful route, respect no-contact, or notify the proper wildlife authority rather than approaching an animal.",
+              "why": "A bounded action reduces harm without punishment or forced contact.",
+              "source_ids": [
+                "india-code-wildlife-protection-act",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and complete only the safe action. Preserve evidence, restitution, reporting, treatment, boundaries and law; claim no absolution, recovery or reunion.",
+              "why": "Ritual cannot erase serious harm or guarantee change.",
+              "source_ids": [
+                "devam-mohini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately, eat, hydrate, take medicine and rest normally. This route starts no fast, touch, confession, punishment, wildlife contact, reconciliation or parana.",
+            "source_ids": [
+              "devam-mohini-research"
+            ],
+            "scope_note": "Qualified health, substance-use, gambling, legal, wildlife, safeguarding or survivor support remains separate and may be necessary."
+          }
+        },
+        {
+          "procedure_id": "mohini-en-standard-v1",
+          "label": "Consent-led family harm-interruption reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "family-led ordinary remembrance; no forced confession, punishment, diagnosis or formal fast",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "drik-mohini-2027",
+            "india-code-wildlife-protection-act",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            },
+            {
+              "item": "Optional water or ordinary safe food for the household",
+              "required": false,
+              "substitutions": [
+                "No offering",
+                "Use normal household food later"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the local Mohini date and choose the fed, rested family form. Ask whether everyone wants the story and reflection; anyone may use silence or leave.",
+              "why": "Date, health and consent come first.",
+              "source_ids": [
+                "drik-mohini-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Remember Vishnu with the family's familiar prayer, name or silence. Keep food, water, medicine, hygiene and sleep normal.",
+              "why": "No universal mantra or fast is invented.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Tell the bounded account: Rama's separation grief, Dhrishtabuddhi's harmful actions, abandonment and punitive treatment, forest killing, Kaundinya's garment contact, prescribed fast and attributed ascent. Omit slurs and keep Mohini-avatar stories separate.",
+              "why": "The story preserves action and consequence without stigma or imitation.",
+              "source_ids": [
+                "padma-purana-mohini-deshpande",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person privately chooses one interruption within their own control. Do not make a child, survivor, sex worker, unhoused person or person with substance-use needs confess, reconcile or become the lesson.",
+              "why": "Reflection must not transfer responsibility or expose vulnerable people.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close without predictions. Use qualified routes for danger, theft, violence, wildlife, substance use, gambling, mental health, homelessness or law.",
+              "why": "A devotional close accompanies but does not replace real support.",
+              "source_ids": [
+                "india-code-wildlife-protection-act",
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "End without extracting a disclosure, apology, promise or contact. Share normal food if safe and let each person's action remain private; no one owes forgiveness or reunion.",
+            "source_ids": [
+              "devam-mohini-research"
+            ],
+            "scope_note": "Minor family expression stays inside this lane; formal fast/parana or professional intervention requires its own authority."
+          }
+        },
+        {
+          "procedure_id": "mohini-en-elaborate-v1",
+          "label": "Verified ordinary temple visit",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "ordinary visitor at a named institution with a currently verified programme",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-mohini-2027",
+            "nhm-mental-health-social-worker",
+            "devam-mohini-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified temple notice and safe travel",
+              "required": true,
+              "substitutions": [
+                "Stay home and use the complete minimum form"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named temple's current programme, entry, safety, offerings and return travel. Do not infer a time from a calendar card.",
+              "why": "A living institution controls its current schedule.",
+              "source_ids": [
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Participate only as an ordinary visitor. Do not copy priest-led fasts, touch, bathing, confession, absolution, addiction treatment, wildlife action or parana from this guide.",
+              "why": "Those practices and claims require separate authority or qualified support.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Refuse forced disclosure, private access, binding, beating, isolation, food or medication restriction, unwanted touch, payment pressure or contact with an unsafe person. Leave if unsafe.",
+              "why": "Devotion does not remove consent, health, safeguarding or law.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Return safely, eat and rest normally, and complete only one voluntary lawful step without claiming absolution, recovery, reunion, heaven or a result.",
+              "why": "The ordinary meaning remains bounded and non-guaranteeing.",
+              "source_ids": [
+                "devam-mohini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Treat the institution's ordinary visitor exit as the close. Stay home if current information or safe travel cannot be verified; the private non-fasting form is complete.",
+            "source_ids": [
+              "devam-mohini-research"
+            ],
+            "scope_note": "The institution controls its rite; no programme overrides health, consent, safety or law."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-reminder-and-household-form",
+          "scope": "Minor household expression",
+          "difference": "Language, image/no image, water/food/no offering, private reminder/no writing, familiar prayer/silence and individual/family expression do not change the core work.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-fast-parana-authority",
+          "scope": "Material timing or sampradaya authority",
+          "difference": "A different civil date, food rule, fast, vigil, mantra or parana does not inherit ordinary Smarta guidance.",
+          "source_ids": [
+            "drik-mohini-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "mohini-avatar-story-owner",
+          "scope": "Different narrative world",
+          "difference": "Amrita distribution, Samudra-manthana, Bhasmasura and Shiva-Mohini accounts require their own source and owner; shared naming is insufficient.",
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-harm-reduction-or-accountability-route",
+          "scope": "Professional or legal need",
+          "difference": "Substance use, gambling, theft, violence, homelessness, survivor needs, mental health or law require qualified support and duties ritual cannot replace.",
+          "source_ids": [
+            "nhm-mental-health-social-worker",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "wildlife-or-hunting-situation",
+          "scope": "Wildlife safety and legal authority",
+          "difference": "An actual wildlife encounter, injured animal, forest entry or hunting issue requires current lawful authorities, not story imitation.",
+          "source_ids": [
+            "india-code-wildlife-protection-act",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme",
+          "scope": "Institution-specific rite",
+          "difference": "Live timing, priest action, access, safeguarding, fees and offerings require the named institution.",
+          "source_ids": [
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi",
+          "scope": "Another Ekadashi identity",
+          "difference": "Varuthini, Apara and other Ekadashis have different timing, stories or practices.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A private, non-fasting, fed, hydrated, rested, no-touch, no-flame, no-purchase, no-hunting, image-free, writing-free and material-free form is complete.",
+        "Adult consensual sexuality and sex workers are not impurity or causes of another person's conduct. Do not repeat the source translation's slur or expose anyone.",
+        "Do not diagnose addiction, possession, curse, mental illness or criminality from the story. Gambling, alcohol and other harm require appropriate qualified routes.",
+        "Never bind, beat, whip, starve, strip, isolate, expel, shame, threaten or make someone homeless as correction.",
+        "Garment contact is a source event, not absolution or treatment. No touch, bath, wet cloth, priestly access, fast or payment removes wrongdoing or illness.",
+        "Serious theft, violence, exploitation, wildlife harm or abuse is not erased by prayer. Preserve safety, evidence, restitution, reporting and legal duties without demanding victim contact.",
+        "Do not approach wildlife, enter forests, carry weapons or reproduce hunting. Use current lawful wildlife/emergency guidance.",
+        "Do not begin fasting or vigil here. Never change insulin, medicine, meals, hydration, hygiene or sleep.",
+        "Rama's separation grief does not reduce Sita's experience or require a survivor to return, forgive, reconcile or contact anyone.",
+        "No sin removal, absolution, purity, divine body, recovery, restored relationship, relief from grief, heaven, salvation or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "mohini-ekadashi"
+      ],
+      "title": "मोहिनी एकादशी: गरिमा छोड़े बिना हानि रोकें",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज मोहिनी एकादशी है। घर का पूर्ण रूप निजी और बिना उपवास है: विष्णु-स्मरण करें, अध्याय 49 नाम वाली धृष्टबुद्धि कथा यौनकर्मी के अपमान और विस्तृत पशु-सूची के बिना सुनें, अपनी जिम्मेदारी का एक हानिकारक ढर्रा पहचानें, एक वैध अनुपातपूर्ण रोक चुनें और दंड, जबरन संपर्क या पाप-मुक्ति के दावे के बिना बंद करें। मोहिनी-अवतार कथा, वस्त्र-स्पर्श, शिकार, उपवास और जागरण जरूरी नहीं।",
+      "significance": {
+        "text": "समीक्षित अध्याय राम के सीता-वियोग दुःख से धृष्टबुद्धि के हानिकारक काम, त्याग, दंड, वन्यजीव-वध, कौण्डिन्य से मिलन, उपवास और स्रोत-दावे वाली बदलाहट तक जाता है। देवम चोरी/क्रूरता को नहीं छिपाता और यातना, कलंक या जादुई पाप-मुक्ति को नहीं मानता। सीमित अर्थ है—मानव गरिमा छोड़े बिना हानि रोकना: अपना आचरण मानें, तत्काल जोखिम घटाएं, योग्य सहायता लें, जवाबदेही रखें और अमानवीकरण अस्वीकार करें।",
+        "source_ids": [
+          "padma-purana-mohini-deshpande",
+          "devam-mohini-research"
+        ],
+        "scope_note": "स्रोत-नाम वाला नैतिक चिंतन; पीड़ित, नशा, जुआ, अपराध, वन्यजीव, मानसिक स्वास्थ्य, चिकित्सा, अलौकिक या पाप-मुक्ति सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "mohini-dhrishtabuddhi-hi",
+          "title": "पद्मपुराण अध्याय 49 में धृष्टबुद्धि",
+          "summary": "कृष्ण युधिष्ठिर को बताते हैं कि सीता-वियोग से दुखी राम ने वसिष्ठ से व्रत पूछा था। वसिष्ठ मोहिनी नाम बताते और जन-सेवा करने वाले विष्णु-भक्त धनपाल के पुत्र धृष्टबुद्धि की कथा कहते हैं। अध्याय उसके यौन आचरण, जुआ, मदिरा, चोरी और खर्च पर नैतिक भाषा लगाता है; परिवार निकालता, दूसरे छोड़ते, राजकर्मी बार-बार बाँधकर कोड़े मारते और राज्य से निकालते हैं। भूखा वह वन में पशु मारता है। कौण्डिन्य के आश्रम में ऋषि के गीले वस्त्र का हल्का स्पर्श पाप हटाता बताया गया; ऋषि मोहिनी उपवास कहते हैं और पाठ दिव्य शरीर तथा विष्णुलोक-गमन का दावा करता है। देवम गलत काम, दंड, वंचना, वन्यजीव-वध, वस्त्र-स्पर्श और फल को स्रोत-घटना रखता है; यौनकर्मी का अपमान और विस्तृत पशु-सूची छोड़ता; यातना, कलंक, निदान और जादुई पाप-मुक्ति अस्वीकार करता; और मोहिनी-अवतार, अमृत, भस्मासुर या शिव-मोहिनी कथाएँ नहीं मिलाता। अध्याय का बाद का कृष्ण-पक्ष पाठ आरम्भ के शुक्ल-पक्ष से टकराता है और चुपचाप नहीं सुधारा गया।",
+          "tradition_scope": "पद्मपुराण उत्तरखण्ड अध्याय 49 का समीक्षित देशपाण्डे अंग्रेजी रूप",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-mohini-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "mohini-hi-private-harm-interruption",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त व्यक्ति या गृह",
+          "description": "विष्णु-स्मरण, सीमित स्रोत-कथा, अपनी जिम्मेदारी का एक हानिकारक ढर्रा, एक वैध रोक और बिना उपवास समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "mohini-hi-formal-fast-context",
+          "population_scope": "अलग विरासत या अधिकृत औपचारिक विधि वाले परिवार/संस्थान",
+          "description": "औपचारिक प्राधिकारी उपवास, जागरण, मंत्र, भोजन और पारण-नियम दे सकता है। यह सामान्य मार्ग उन्हें नहीं गढ़ता या पाप-मुक्ति नहीं सुनिश्चित करता।",
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "devam-mohini-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "mohini-hi-minimum-v1",
+          "label": "निजी हानि-रोक कदम",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "drik-mohini-2027",
+            "india-code-wildlife-protection-act",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "materials": [
+            {
+              "item": "निजी और सुरक्षित स्थान",
+              "required": false,
+              "substitutions": [
+                "संक्षिप्त मानसिक रूप करें",
+                "निजता सुरक्षित होने तक टालें"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक सुरक्षित स्मरण या सत्यापित सहायता-साधन",
+              "required": false,
+              "substitutions": [
+                "कुछ न लिखें",
+                "दूसरे को दर्ज किए बिना सीधे काम करें"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त प्राधिकारी में आज मोहिनी एकादशी है। अध्याय के शुक्ल/कृष्ण-पक्ष विरोध को नोट करें; उससे तिथि न निकालें।",
+              "why": "समय निर्धार्य स्थानीय प्राधिकार से आए।",
+              "source_ids": [
+                "drik-mohini-2027",
+                "devam-ekadashi-rule-audit",
+                "padma-purana-mohini-deshpande"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, जल, दवा, स्वच्छता और नींद सामान्य रखें। इस मार्ग से उपवास, वंचना, जागरण, स्नान या वस्त्र-स्पर्श विधि शुरू न करें।",
+              "why": "भोजन-जल और विश्राम वाला रूप पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का परिचित नाम, पारिवारिक प्रार्थना या मौन रखें। चित्र, स्पर्श, स्वीकारोक्ति या सामग्री जरूरी नहीं।",
+              "why": "सार्वभौम मंत्र गढ़े बिना भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "अध्याय 49 नाम वाली राम-वसिष्ठ और धृष्टबुद्धि कथा सुनें; यौनकर्मी के लिए अपमानजनक शब्द और पशु-सूची छोड़ें। दंड, वस्त्र-स्पर्श, पाप-मुक्ति और दिव्य गमन को स्रोत-घटना कहें; मोहिनी-अवतार कथाएँ अलग रखें।",
+              "why": "स्रोत कलंक, मिश्रण या जादुई निर्देश के बिना पहचाना जाता है।",
+              "source_ids": [
+                "padma-purana-mohini-deshpande",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अपनी जिम्मेदारी का एक हानिकारक ढर्रा निजी रूप से पहचानें। दूसरे का दोष या निदान न चुनें; नाम, आरोप, यौनिकता, नशा या आघात न खोलें।",
+              "why": "जवाबदेही अपने नियंत्रित आचरण और निजता से शुरू होती है।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "एक अनुपातपूर्ण रोक चुनें: असुरक्षित लेन-देन रोकें, हथियार की पहुँच हटाएं, योग्य सहायता लें, वस्तु सुरक्षित वैध मार्ग से लौटाएं, संपर्क-विराम मानें, या पशु के पास जाने के बजाय उचित वन्यजीव प्राधिकारी को बताएं।",
+              "why": "सीमित काम दंड या जबरन संपर्क के बिना हानि घटाता है।",
+              "source_ids": [
+                "india-code-wildlife-protection-act",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता से बंद करें और केवल सुरक्षित काम करें। प्रमाण, प्रतिपूर्ति, रिपोर्ट, उपचार, सीमा और कानून रखें; पाप-मुक्ति, सुधार या मेल-मिलाप का दावा न करें।",
+              "why": "अनुष्ठान गंभीर हानि नहीं मिटाता और परिवर्तन सुनिश्चित नहीं करता।",
+              "source_ids": [
+                "devam-mohini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "निजी कृतज्ञता से बंद करें; सामान्य भोजन, जल, दवा और विश्राम रखें। यह मार्ग उपवास, स्पर्श, स्वीकारोक्ति, दंड, वन्यजीव-संपर्क, मेल-मिलाप या पारण शुरू नहीं करता।",
+            "source_ids": [
+              "devam-mohini-research"
+            ],
+            "scope_note": "योग्य स्वास्थ्य, नशा, जुआ, कानून, वन्यजीव, सुरक्षा या पीड़ित-सहायता अलग रह सकती है।"
+          }
+        },
+        {
+          "procedure_id": "mohini-hi-standard-v1",
+          "label": "सहमति-आधारित पारिवारिक हानि-रोक चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; जबरन स्वीकारोक्ति, दंड, निदान या औपचारिक उपवास नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "drik-mohini-2027",
+            "india-code-wildlife-protection-act",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु-चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "चित्र नहीं",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            },
+            {
+              "item": "घर के लिए वैकल्पिक जल या सामान्य सुरक्षित भोजन",
+              "required": false,
+              "substitutions": [
+                "कोई चढ़ावा नहीं",
+                "बाद में सामान्य भोजन लें"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय मोहिनी तिथि और भोजन-जल, विश्रामयुक्त पारिवारिक रूप की पुष्टि करें। पूछें कि सभी कथा/चिंतन चाहते हैं या नहीं; कोई मौन रख या बाहर जा सकता है।",
+              "why": "तिथि, स्वास्थ्य और सहमति पहले हैं।",
+              "source_ids": [
+                "drik-mohini-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "परिवार की परिचित प्रार्थना, विष्णु-नाम या मौन रखें। भोजन, जल, दवा, स्वच्छता और नींद सामान्य रहें।",
+              "why": "सार्वभौम मंत्र या उपवास नहीं गढ़ा जाता।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सीमित कथा कहें: राम का वियोग-दुःख, धृष्टबुद्धि के हानिकारक काम, त्याग और दंड, वन्यजीव-वध, कौण्डिन्य का वस्त्र-स्पर्श, उपवास और स्रोत-दावे वाला गमन। अपमानजनक शब्द छोड़ें और मोहिनी-अवतार कथाएँ अलग रखें।",
+              "why": "कथा कलंक या अनुकरण के बिना काम और परिणाम बचाती है।",
+              "source_ids": [
+                "padma-purana-mohini-deshpande",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति अपनी जिम्मेदारी की एक रोक निजी रूप से चुने। बच्चे, पीड़ित, यौनकर्मी, बेघर व्यक्ति या नशा-समस्या वाले को स्वीकारोक्ति, मेल-मिलाप या उदाहरण बनने को मजबूर न करें।",
+              "why": "चिंतन जिम्मेदारी स्थानांतरित या असुरक्षित व्यक्ति को उजागर न करे।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "फल बताए बिना बंद करें। संकट, चोरी, हिंसा, वन्यजीव, नशा, जुआ, मानसिक स्वास्थ्य, बेघरी या कानून के लिए योग्य मार्ग लें।",
+              "why": "भक्ति-समापन वास्तविक सहायता के साथ हो सकता है, उसका विकल्प नहीं।",
+              "source_ids": [
+                "india-code-wildlife-protection-act",
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "खुलासा, माफी, वादा या संपर्क निकलवाए बिना बंद करें। सुरक्षित हो तो सामान्य भोजन लें और हर व्यक्ति का काम निजी रहने दें; कोई क्षमा या मेल-मिलाप नहीं देता।",
+            "source_ids": [
+              "devam-mohini-research"
+            ],
+            "scope_note": "छोटा पारिवारिक अंतर इसी मार्ग में रहता है; औपचारिक उपवास/पारण या पेशेवर हस्तक्षेप अलग प्राधिकार चाहता है।"
+          }
+        },
+        {
+          "procedure_id": "mohini-hi-elaborate-v1",
+          "label": "सत्यापित सामान्य मंदिर-यात्रा",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित संस्थान में सामान्य आगंतुक",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-mohini-2027",
+            "nhm-mental-health-social-worker",
+            "devam-mohini-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित मंदिर-सूचना और सुरक्षित यात्रा",
+              "required": true,
+              "substitutions": [
+                "घर रहकर पूर्ण न्यूनतम रूप करें"
+              ],
+              "source_ids": [
+                "devam-mohini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित मंदिर से वर्तमान कार्यक्रम, प्रवेश, सुरक्षा, चढ़ावे और वापसी सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।",
+              "why": "जीवित संस्थान अपना कार्यक्रम नियंत्रित करता है।",
+              "source_ids": [
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित उपवास, स्पर्श, स्नान, स्वीकारोक्ति, पाप-मुक्ति, नशा-उपचार, वन्यजीव-कर्म या पारण की नकल न करें।",
+              "why": "ये काम अलग प्राधिकार या योग्य सहायता चाहते हैं।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "जबरन खुलासा, निजी पहुँच, बंधन, मारपीट, एकांत, भोजन/दवा रोकना, अनचाहा स्पर्श, भुगतान-दबाव या असुरक्षित व्यक्ति से संपर्क मना करें। असुरक्षित हो तो निकलें।",
+              "why": "भक्ति सहमति, स्वास्थ्य, सुरक्षा या कानून नहीं हटाती।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-mohini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सुरक्षित लौटकर सामान्य भोजन और विश्राम करें; पाप-मुक्ति, सुधार, मेल-मिलाप, स्वर्ग या फल कहे बिना केवल एक स्वैच्छिक वैध कदम करें।",
+              "why": "सामान्य अर्थ सीमित और गैर-गारंटी है।",
+              "source_ids": [
+                "devam-mohini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "संस्थान का सामान्य आगंतुक-निकास समापन है। वर्तमान सूचना या सुरक्षित यात्रा सत्यापित न हो तो घर रहें; निजी बिना-उपवास रूप पूर्ण है।",
+            "source_ids": [
+              "devam-mohini-research"
+            ],
+            "scope_note": "संस्थान अपनी विधि नियंत्रित करता है; कोई कार्यक्रम स्वास्थ्य, सहमति, सुरक्षा या कानून नहीं हटाता।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-reminder-and-household-form-hi",
+          "scope": "छोटा गृह-अंतर",
+          "difference": "भाषा, चित्र/नहीं, जल/भोजन/नहीं, निजी स्मरण/लेखन नहीं, परिचित प्रार्थना/मौन और व्यक्ति/परिवार मूल काम नहीं बदलते।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-fast-parana-authority-hi",
+          "scope": "भिन्न समय या सम्प्रदाय प्राधिकार",
+          "difference": "अलग दिन, भोजन-नियम, उपवास, जागरण, मंत्र या पारण सामान्य स्मार्त मार्ग नहीं अपनाते।",
+          "source_ids": [
+            "drik-mohini-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "mohini-avatar-story-owner-hi",
+          "scope": "अलग कथा-जगत",
+          "difference": "अमृत-वितरण, समुद्र-मन्थन, भस्मासुर और शिव-मोहिनी कथाएँ अपना स्रोत और स्वामी चाहती हैं; समान नाम पर्याप्त नहीं।",
+          "source_ids": [
+            "padma-purana-mohini-deshpande",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-harm-reduction-or-accountability-route-hi",
+          "scope": "पेशेवर या कानूनी आवश्यकता",
+          "difference": "नशा, जुआ, चोरी, हिंसा, बेघरी, पीड़ित-जरूरत, मानसिक स्वास्थ्य या कानून योग्य सहायता और कर्तव्य चाहते हैं।",
+          "source_ids": [
+            "nhm-mental-health-social-worker",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "wildlife-or-hunting-situation-hi",
+          "scope": "वन्यजीव सुरक्षा और कानूनी प्राधिकार",
+          "difference": "वास्तविक वन्यजीव-मुठभेड़, घायल पशु, वन-प्रवेश या शिकार की समस्या वर्तमान वैध प्राधिकारी चाहती है, कथा-अनुकरण नहीं।",
+          "source_ids": [
+            "india-code-wildlife-protection-act",
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-hi",
+          "scope": "संस्थान-विशिष्ट विधि",
+          "difference": "जीवित समय, पुरोहित-कर्म, प्रवेश, सुरक्षा, शुल्क और चढ़ावे नामित संस्थान चाहते हैं।",
+          "source_ids": [
+            "devam-mohini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi-hi",
+          "scope": "अन्य एकादशी पहचान",
+          "difference": "वरूथिनी, अपरा और अन्य एकादशियों की तिथि, कथा या अभ्यास अलग हैं।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "निजी, बिना उपवास, भोजन-जल, विश्राम, बिना स्पर्श, लौ, खरीद, शिकार, चित्र, लेखन और सामग्री का रूप पूर्ण है।",
+        "वयस्क सहमति-युक्त यौनिकता और यौनकर्मी अशुद्धि या दूसरे के काम का कारण नहीं। स्रोत-अनुवाद का अपमानजनक शब्द न दोहराएं और किसी को उजागर न करें।",
+        "कथा से नशा, possession, शाप, मानसिक बीमारी या अपराध का निदान न करें। जुआ, मदिरा और दूसरी हानि योग्य मार्ग चाहती है।",
+        "सुधार के लिए बाँधना, मारना, कोड़े, भूखा/निर्वस्त्र करना, एकांत, निष्कासन, अपमान, धमकी या बेघर करना कभी नहीं।",
+        "वस्त्र-स्पर्श स्रोत-घटना है, पाप-मुक्ति या उपचार नहीं। स्पर्श, स्नान, गीला कपड़ा, पुरोहित-पहुँच, उपवास या भुगतान गलती/बीमारी नहीं हटाते।",
+        "गंभीर चोरी, हिंसा, शोषण, वन्यजीव-हानि या दुर्व्यवहार प्रार्थना से नहीं मिटते। पीड़ित-संपर्क मांगे बिना सुरक्षा, प्रमाण, प्रतिपूर्ति, रिपोर्ट और कानून रखें।",
+        "वन्यजीव के पास न जाएं, वन में प्रवेश, हथियार या शिकार की नकल न करें। वर्तमान वैध वन्यजीव/आपात मार्ग लें।",
+        "यहाँ उपवास या जागरण शुरू न करें। इंसुलिन, दवा, भोजन, जल, स्वच्छता या नींद न बदलें।",
+        "राम का वियोग-दुःख सीता के अनुभव को छोटा नहीं करता और पीड़ित से लौटना, माफी, मेल-मिलाप या संपर्क नहीं मांगता।",
+        "पाप-मुक्ति, शुद्धि, दिव्य शरीर, नशा-सुधार, संबंध-वापसी, दुःख-मुक्ति, स्वर्ग, मोक्ष या कोई फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
