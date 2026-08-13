@@ -84,11 +84,7 @@ describe("Ramayana selected-expression adversarial review", () => {
         scenes: turn.scenes.length,
         beats: turn.scenes.reduce((sum, scene) => sum + scene.beats.length, 0),
       }))
-      .filter((turn) => turn.scenes < 3 || turn.beats < 12)).toEqual([
-        { id: "deeper-into-forest", scenes: 2, beats: 11 },
-        { id: "panchavati-surpanakha", scenes: 2, beats: 11 },
-        { id: "golden-deer-plot", scenes: 2, beats: 10 },
-      ]);
+      .filter((turn) => turn.scenes < 3 || turn.beats < 12)).toEqual([]);
   });
 
   it("keeps the coronation and Janasthana depth repairs on exact non-overlapping source ranges", () => {
@@ -119,5 +115,38 @@ describe("Ramayana selected-expression adversarial review", () => {
       spanCount,
       "section_span_set",
     ]));
+  });
+
+  it("keeps the remaining thin-turn repairs in story order on exact source ranges", () => {
+    const repairedTurns = [
+      ["deeper-into-forest", [
+        ["chitrakoot-grows-unsafe", 116, 116],
+        ["anasuya-receives-sita", 117, 117],
+        ["sita-tells-her-own-beginning", 118, 118],
+      ]],
+      ["panchavati-surpanakha", [
+        ["jatayu-promises-protection", 13, 13],
+        ["lakshmana-builds-panchavati-home", 14, 14],
+        ["winter-at-panchavati-remembers-bharata", 15, 15],
+        ["surpanakha-breaks-quiet", 16, 17],
+      ]],
+      ["golden-deer-plot", [
+        ["surpanakha-carries-janasthana-to-lanka", 31, 33],
+        ["ravana-seeks-marichas-help", 34, 35],
+        ["maricha-warns-ravana-twice", 36, 38],
+        ["ravana-coerces-maricha", 39, 41],
+        ["golden-deer-reaches-panchavati", 42, 42],
+      ]],
+    ] as const;
+
+    expect(repairedTurns.map(([turnId]) => {
+      const turn = snapshot.turns.find((candidate) => candidate.id === turnId);
+      expect(turn, turnId).toBeDefined();
+      return [turnId, turn!.scenes.map((scene) => [
+        scene.id,
+        scene.source.sourceOrdinal,
+        scene.source.sourceEndOrdinal,
+      ])];
+    })).toEqual(repairedTurns);
   });
 });

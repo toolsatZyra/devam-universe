@@ -65,6 +65,7 @@ import { RAMAYANA_PRINCES_PLAYABLE_SCENES } from "../../data/ramayana-princes-pl
 import { RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES } from "../../data/ramayana-mithila-road-playable";
 import { RAMAYANA_SITA_BOW_PLAYABLE_SCENES } from "../../data/ramayana-sita-bow-playable";
 import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana-weddings-challenge-playable";
+import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
 import { RAMAYANA_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-thin-turn-library-scenes";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import { buildPlayableStoryDistrictIndex } from "../domain/playable-story-district";
@@ -185,7 +186,14 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   const mapPlaceById = new Map(narrativeMap.places.map((place) => [place.id, place]));
   const playableDistrict = buildPlayableStoryDistrictIndex(pack, journey.stops, narrativeMap);
   const districtPlacesBySceneId = new Map<string, string[]>();
-  const libraryReplacementSceneIds = new Set(["coronation-dawn", "janasthana-falls"]);
+  const libraryReplacementSceneIds = new Set([
+    "coronation-dawn",
+    "janasthana-falls",
+    "sita-tells-her-beginning",
+    "jatayu-welcomes-panchavati",
+    "ravana-chooses-deception",
+    "golden-deer-separates-house",
+  ]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
     if (!place) throw new Error(`Ramayana playable district references an unknown map place: ${placeId}`);
@@ -248,7 +256,10 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     }
   }
 
-  for (const scene of RAMAYANA_THIN_TURN_LIBRARY_SCENES) {
+  for (const scene of [
+    ...RAMAYANA_THIN_TURN_LIBRARY_SCENES,
+    ...RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES,
+  ]) {
     const turn = pack.compass.turns[scene.turnId];
     if (!turn) throw new Error(`Ramayana library scene has no backbone turn: ${scene.id}`);
     if (scene.sourceStart < turn.sourceRange.startOrdinal || scene.sourceEnd > turn.sourceRange.endOrdinal) {
@@ -422,7 +433,11 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     if (!turn) throw new Error(`Ramayana compass turn is missing: ${turnId}`);
     backboneOrdinal += 1;
     const scenes = [...(scenesByTurnId.get(turnId) ?? [])]
-      .sort((left, right) => left.detailOrdinal - right.detailOrdinal);
+      .sort((left, right) => (
+        left.source.sourceOrdinal - right.source.sourceOrdinal
+        || left.detailOrdinal - right.detailOrdinal
+      ))
+      .map((scene, index) => ({ ...scene, detailOrdinal: index + 1 }));
     return {
       id: turn.id,
       arcId: turn.arcId,
