@@ -114,6 +114,23 @@ existing reusable reading migration can represent the batch, but no payload SQL
 was added and no hosted database was changed. The review is recorded in
 `docs/RAMCHARITMANAS_AYODHYAKANDA_OPENING_11_READING_AUDIT_2026-08-14.md`.
 
+Checkpoint 2026-08-14 (Ayodhyakanda 12-22 Ramcharitmanas reading batch):
+The forward reading tail now carries the complete Saraswati-Manthara-Kaikeyi
+persuasion episode through doha 22: 11 natural passages, 55 source units, and
+fresh Hindi and English meaning for each passage on fixed scan pages 436-447.
+It preserves Saraswati's reluctance, the poem's criticism of the gods,
+Manthara's staged distress and escalating conspiracy, Kaikeyi's initial love
+for Rama, the conversion of uncertainty into fear, the two-boon strategy, and
+the final instruction to enter the anger chamber. Consumer aids explicitly
+attribute divine causation, fate, omens, astrology, ableist and misogynistic
+slurs, servitude language, self-harm statements, and coercive oath tactics
+rather than presenting them as fact or advice. The reviewed cumulative tail is
+now 92 passages and 491 units from Balakanda group 293 through Ayodhyakanda
+doha 22. No kanda or work is complete; group 23, where Kaikeyi acts, is next,
+and Balakanda groups 1-292 remain absent. The existing reusable reading schema
+still covers the batch, so no payload SQL or hosted mutation was required. See
+`docs/RAMCHARITMANAS_AYODHYAKANDA_12_22_READING_AUDIT_2026-08-14.md`.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
