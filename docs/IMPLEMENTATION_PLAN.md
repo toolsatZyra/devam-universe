@@ -73,13 +73,13 @@ page or source-bounded passage, and returning to the exact next position.
 
 Checkpoint 2026-08-14 (first natural Ramcharitmanas reading batch):
 The consumer denominator is now the complete canonical source work, not every
-line of a historical edition's commentary. Balakanda groups 293-318 form
-a continuous 134-unit source sequence. A one-doha-or-chaupai pace advances through
+line of a historical edition's commentary. Balakanda groups 293-323 form
+a continuous 165-unit source sequence. A one-doha-or-chaupai pace advances through
 those same units and retains the containing natural passage plus its bilingual
 meaning, so a daily-sized selection is never detached from context. This is
-the first contiguous corrected interval: 26 natural passages, 134 ordered source
+the first contiguous corrected interval: 31 natural passages, 165 ordered source
 units, and fresh approachable Hindi and English meaning for every passage,
-fixed to scan pages 354-379. The clean web stream accelerated mismatch
+fixed to scan pages 354-384. The clean web stream accelerated mismatch
 discovery but is reference-only; product text was reconciled against the
 retained public-domain scan, including correction of a reference-stream error
 from `preeti kai preeti` to the scanned `preeti kai reeti`. A first-class local
@@ -87,7 +87,7 @@ reading schema now separates ordered source units, bilingual passage aids, and
 user-controlled exact progress from narrative adaptations. The complete work
 remains open beyond this batch, and no hosted migration was applied. The
 bounded source, meaning, rights, claim, and schema review is recorded in
-`docs/RAMCHARITMANAS_BALAKANDA_293_318_READING_AUDIT_2026-08-14.md`.
+`docs/RAMCHARITMANAS_BALAKANDA_293_323_READING_AUDIT_2026-08-14.md`.
 
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
