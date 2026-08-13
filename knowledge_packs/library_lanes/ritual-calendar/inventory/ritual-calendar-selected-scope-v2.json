@@ -1,0 +1,230 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_SELECTED_SCOPE_V2",
+  "version": 2,
+  "frozen_at": "2026-08-13",
+  "coordination_commit": "cf0e9406ea2120a77d9b2c4cd5552148e0a9aaaf",
+  "prior_checkpoint_commit": "3ef0b4fed96c7856b0e803869947f891bb346597",
+  "lane_id": "ritual-calendar",
+  "boundary": "A demand-prioritized consumer denominator: the complete existing September-December baseline, selected all-year recurring cycles, and selected high-demand January-August observances. It is not all Hindu, Indian, temple, regional, sampradaya, or family ritual.",
+  "selection_evidence": [
+    {
+      "source_id": "devam-product-brief",
+      "role": "Requires September-December first, followed by wider explicit inventory; hero ownership remains separate."
+    },
+    {
+      "source_id": "government-of-india-2026-holiday-and-restricted-holiday-calendars",
+      "role": "Independent demand/recognition signal for Makar Sankranti, Basant Panchami, Holi, Ram Navami, Raksha Bandhan, Janmashtami and related observances; not ritual authority."
+    },
+    {
+      "source_id": "incredible-india-festival-index-2026",
+      "role": "Official current discovery evidence for Holi, Makar Sankranti, Guru Purnima, Raksha Bandhan and regional festivals; practices still require scoped sources."
+    },
+    {
+      "source_id": "existing-devam-recurring-contracts",
+      "role": "Shows weekday, Ekadashi, Pradosha, Sankashti, monthly Shivaratri, monthly Durgashtami, Purnima/Amavasya families, currently bounded to September-December."
+    }
+  ],
+  "baseline": {
+    "inventory_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-selected-scope-v1.json",
+    "selected_item_count": 105,
+    "complete_at_authored_library_layer": 105,
+    "note": "Includes 104 audited September-December slugs and the completed named Mahashivaratri lane. Hero-owned baseline records remain reuse-only."
+  },
+  "all_year_recurring_cycle_expansions": [
+    {
+      "item_id": "ekadashi-north-west-smarta-all-year-v1",
+      "family": "ekadashi",
+      "months_to_add": ["January", "February", "March", "April", "May", "June", "July", "August"],
+      "state": "incomplete_research_and_calendar_expansion_required"
+    },
+    {
+      "item_id": "pradosha-north-west-smarta-all-year-v1",
+      "family": "pradosha",
+      "months_to_add": ["January", "February", "March", "April", "May", "June", "July", "August"],
+      "state": "incomplete_research_and_calendar_expansion_required"
+    },
+    {
+      "item_id": "sankashti-chaturthi-west-india-all-year-v1",
+      "family": "sankashti-chaturthi",
+      "months_to_add": ["January", "February", "March", "April", "May", "June", "July", "August"],
+      "owner_boundary": "Ganesha consumer owner retains deity/festival narratives; ritual-calendar may extend the recurring calendar/practice lane through typed proposals.",
+      "state": "incomplete_owner_coordination_and_calendar_expansion_required"
+    },
+    {
+      "item_id": "masika-shivaratri-north-west-smarta-all-year-v1",
+      "family": "masika-shivaratri",
+      "months_to_add": ["January", "February", "March", "April", "May", "June", "July", "August"],
+      "state": "incomplete_research_and_calendar_expansion_required"
+    },
+    {
+      "item_id": "masika-durgashtami-north-west-smarta-all-year-v1",
+      "family": "masika-durgashtami",
+      "months_to_add": ["January", "February", "March", "April", "May", "June", "July", "August"],
+      "owner_boundary": "Devi owner retains goddess narratives and hero festival records; ritual-calendar may extend the recurring cycle through proposals.",
+      "state": "incomplete_owner_coordination_and_calendar_expansion_required"
+    },
+    {
+      "item_id": "purnima-amavasya-north-west-smarta-all-year-v1",
+      "family": "purnima-amavasya",
+      "months_to_add": ["January", "February", "March", "April", "May", "June", "July", "August"],
+      "state": "incomplete_research_and_calendar_expansion_required"
+    },
+    {
+      "item_id": "weekday-practice-west-india-all-year-v1",
+      "family": "weekday-practice",
+      "months_to_add": [],
+      "state": "complete_reusable_all_year_rule",
+      "evidence_ref": "knowledge_packs/rituals/weekday-practice-west-india-content-v1.json"
+    }
+  ],
+  "high_demand_non_hero_annual_lanes": [
+    {
+      "item_id": "makar-sankranti-north-west-household-v1",
+      "observance": "Makar Sankranti",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "pongal-tamil-household-participant-v1",
+      "observance": "Thai Pongal",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "magh-bihu-assam-community-participant-v1",
+      "observance": "Magh Bihu / Bhogali Bihu",
+      "priority": 2,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "basant-panchami-north-india-household-v1",
+      "observance": "Basant Panchami / Saraswati Puja",
+      "priority": 1,
+      "owner_boundary": "Devi owner retains goddess identity/story anchors; ritual-calendar owns this separately scoped calendar/practice lane unless integration reassigns it.",
+      "state": "incomplete"
+    },
+    {
+      "item_id": "ratha-saptami-smarta-household-v1",
+      "observance": "Ratha Saptami",
+      "priority": 2,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "holika-dahan-north-india-participant-v1",
+      "observance": "Holika Dahan",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "holi-north-india-consent-led-household-v1",
+      "observance": "Holi / Dhulandi",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "chaitra-navaratri-north-india-household-v1",
+      "observance": "Chaitra Navaratri",
+      "priority": 1,
+      "owner_boundary": "Devi owner retains Navaratri hero narratives; this lane submits a gap/proposal and does not duplicate without accepted ownership.",
+      "state": "hero_owned_proposal_required"
+    },
+    {
+      "item_id": "gudi-padwa-maharashtra-household-v1",
+      "observance": "Gudi Padwa",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "ugadi-karnataka-andhra-telangana-household-v1",
+      "observance": "Ugadi / Yugadi",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "ram-navami-north-india-participant-v1",
+      "observance": "Ram Navami",
+      "priority": 1,
+      "owner_boundary": "Epics/integration owns Rama story anchors; ritual-calendar authors only a scoped practice lane with typed cross-links.",
+      "state": "incomplete"
+    },
+    {
+      "item_id": "hanuman-jayanti-north-india-participant-v1",
+      "observance": "Hanuman Jayanti",
+      "priority": 1,
+      "owner_boundary": "Epics/integration owns Hanuman story and Hanuman Chalisa anchors; ritual-calendar authors only a scoped practice lane with typed cross-links.",
+      "state": "incomplete"
+    },
+    {
+      "item_id": "akshaya-tritiya-north-west-household-v1",
+      "observance": "Akshaya Tritiya",
+      "priority": 2,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "vat-savitri-north-west-participant-v1",
+      "observance": "Vat Savitri",
+      "priority": 2,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "guru-purnima-general-gratitude-v1",
+      "observance": "Guru Purnima",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "raksha-bandhan-consent-led-sibling-v1",
+      "observance": "Raksha Bandhan",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "varalakshmi-vratam-south-india-participant-v1",
+      "observance": "Varalakshmi Vratam",
+      "priority": 2,
+      "owner_boundary": "Devi owner retains Lakshmi identity/story anchors; this must be scoped through a proposal before authoring any practice lane.",
+      "state": "hero_owned_proposal_required"
+    },
+    {
+      "item_id": "onam-kerala-household-participant-v1",
+      "observance": "Onam",
+      "priority": 1,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "narali-purnima-maharashtra-coastal-participant-v1",
+      "observance": "Narali Purnima",
+      "priority": 2,
+      "state": "incomplete"
+    },
+    {
+      "item_id": "janai-purnima-general-participant-v1",
+      "observance": "Upakarma / Avani Avittam / Janai Purnima",
+      "priority": 2,
+      "state": "blocked_requires_separate_sampradaya_and_eligibility_lanes"
+    }
+  ],
+  "hero_owned_high_demand_proposals_only": [
+    {
+      "item_id": "chaitra-navaratri-north-india-household-v1",
+      "owner_lane": "devi-consumer"
+    },
+    {
+      "item_id": "varalakshmi-vratam-south-india-participant-v1",
+      "owner_lane": "devi-consumer"
+    },
+    {
+      "item_id": "sankashti-chaturthi-west-india-all-year-v1",
+      "owner_lane": "ganesha-consumer"
+    },
+    {
+      "item_id": "masika-durgashtami-north-west-smarta-all-year-v1",
+      "owner_lane": "devi-consumer"
+    }
+  ],
+  "selected_item_count": 132,
+  "completed_item_count_at_freeze": 106,
+  "incomplete_item_count_at_freeze": 25,
+  "blocked_item_count_at_freeze": 1,
+  "completion_rule": "Every one of the 132 items must be complete in its named lane, explicitly hero-owned with a typed proposal, or explicitly blocked with a concrete evidence/authority gap. Completed counts require English and Hindi parity, deterministic timing dependency, scoped stories, typical practice, ordered guidance, materials/substitutions, safety, closing, variants, and evidence."
+}

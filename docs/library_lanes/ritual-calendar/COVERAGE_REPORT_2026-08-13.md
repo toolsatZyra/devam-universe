@@ -1,4 +1,9 @@
-# Ritual-calendar selected-scope coverage report
+# Ritual-calendar first-checkpoint coverage report
+
+This report proves only the original 105-item checkpoint. It is retained for
+audit history and does not claim completion of the later comprehensive
+day-guidance scope. The active completion boundary is
+`ritual-calendar-comprehensive-census-v3.json`.
 
 ## Outcome
 

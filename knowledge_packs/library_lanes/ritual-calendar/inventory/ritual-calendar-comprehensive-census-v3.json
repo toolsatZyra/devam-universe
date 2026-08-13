@@ -1,0 +1,3666 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_COMPREHENSIVE_CENSUS_V3",
+  "version": 3,
+  "frozen_at": "2026-08-13",
+  "coordination_commit": "cf0e9406ea2120a77d9b2c4cd5552148e0a9aaaf",
+  "prior_checkpoint_commit": "3ef0b4fed96c7856b0e803869947f891bb346597",
+  "supersedes_as_completion_boundary": [
+    "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-selected-scope-v2.json"
+  ],
+  "scope_statement": "A first deep-completeness census for public Sanatana household guidance and ordinary temple participation in selected high-user states. State is a routing signal, not ritual authority. Private family customs, initiated practice, priest-only temple operations and live institution schedules are never inferred.",
+  "selected_date_window": {
+    "start": "2026-09-01",
+    "end": "2027-12-31",
+    "civil_days": 487,
+    "note": "Retains the completed September-December 2026 starting layer and adds a full 2027 discovery/audit year."
+  },
+  "selected_state_routes": [
+    {
+      "code": "IN-DL",
+      "name": "Delhi",
+      "cluster": "north_purnimanta"
+    },
+    {
+      "code": "IN-UP",
+      "name": "Uttar Pradesh",
+      "cluster": "north_purnimanta"
+    },
+    {
+      "code": "IN-UK",
+      "name": "Uttarakhand",
+      "cluster": "north_purnimanta"
+    },
+    {
+      "code": "IN-HR",
+      "name": "Haryana",
+      "cluster": "north_purnimanta"
+    },
+    {
+      "code": "IN-PB",
+      "name": "Punjab",
+      "cluster": "north_purnimanta"
+    },
+    {
+      "code": "IN-HP",
+      "name": "Himachal Pradesh",
+      "cluster": "north_purnimanta"
+    },
+    {
+      "code": "IN-RJ",
+      "name": "Rajasthan",
+      "cluster": "north_west_purnimanta"
+    },
+    {
+      "code": "IN-MP",
+      "name": "Madhya Pradesh",
+      "cluster": "central"
+    },
+    {
+      "code": "IN-GJ",
+      "name": "Gujarat",
+      "cluster": "gujarati"
+    },
+    {
+      "code": "IN-MH",
+      "name": "Maharashtra",
+      "cluster": "marathi_amanta"
+    },
+    {
+      "code": "IN-WB",
+      "name": "West Bengal",
+      "cluster": "bengali"
+    },
+    {
+      "code": "IN-BR",
+      "name": "Bihar",
+      "cluster": "bihar_purvanchal"
+    },
+    {
+      "code": "IN-CT",
+      "name": "Chhattisgarh",
+      "cluster": "chhattisgarh_central"
+    },
+    {
+      "code": "IN-KA",
+      "name": "Karnataka",
+      "cluster": "kannada_amanta"
+    },
+    {
+      "code": "IN-TN",
+      "name": "Tamil Nadu",
+      "cluster": "tamil_solar"
+    },
+    {
+      "code": "IN-KL",
+      "name": "Kerala",
+      "cluster": "malayalam_solar"
+    },
+    {
+      "code": "IN-OD",
+      "name": "Odisha",
+      "cluster": "odia"
+    },
+    {
+      "code": "IN-AP",
+      "name": "Andhra Pradesh",
+      "cluster": "telugu_amanta"
+    },
+    {
+      "code": "IN-TG",
+      "name": "Telangana",
+      "cluster": "telugu_amanta"
+    },
+    {
+      "code": "IN-AS",
+      "name": "Assam",
+      "cluster": "assamese",
+      "priority_note": "Retained because Magh Bihu and Assamese calendar candidates were already selected."
+    }
+  ],
+  "selected_settings": [
+    "household",
+    "temple_participation"
+  ],
+  "day_answer_denominator": {
+    "cells": 19480,
+    "formula": "487 civil days x 20 state routes x 2 settings",
+    "completion_rule": "Every cell resolves deterministically to all applicable accepted lanes or to a sourced ordinary-day answer; live temple programmes remain institution-specific and freshness-gated."
+  },
+  "material_variant_rule": {
+    "separate_lane_when": [
+      "date, precedence or calendar decision rule changes",
+      "deity focus or source-labelled narrative changes the guidance materially",
+      "eligibility, life-stage, gendered custom or family-practice condition changes",
+      "required materials or fasting and health boundaries change",
+      "household, temple-participant, priest-led or initiated authority changes",
+      "the ordered actionable sequence or closing changes materially"
+    ],
+    "note_within_lane_when": [
+      "name, spelling or pronunciation differs",
+      "an optional food, flower, colour, decoration or song differs",
+      "the same action has a local emphasis but no changed eligibility, timing, safety or sequence"
+    ],
+    "prohibition": "Never create a state copy solely because the state name differs, and never merge variants whose differences change what the user should do."
+  },
+  "settings_boundary": {
+    "household": "Actionable home guidance only where evidence supports it.",
+    "temple_participation": "What an ordinary visitor may prepare for, bring when permitted, do, avoid and how to close participation.",
+    "excluded_from_diy": [
+      "priest-led temple liturgy",
+      "Agamic or Tantric technical procedure",
+      "initiation-restricted practice",
+      "temple consecration",
+      "institution schedule not currently verified"
+    ]
+  },
+  "discovery_sources_role": "Calendar discovery and timing candidate evidence only; never sufficient evidence for a vidhi.",
+  "source_calendars": [
+    {
+      "calendar_system_id": "north_reference",
+      "url": "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?year=2027&geoname-id=1261481",
+      "event_occurrences": 143,
+      "unique_source_labels": 139
+    },
+    {
+      "calendar_system_id": "assamese",
+      "url": "https://www.drikpanchang.com/assamese/calendar/assamese-calendar.html?year=2027&geoname-id=1271476",
+      "event_occurrences": 50,
+      "unique_source_labels": 49
+    },
+    {
+      "calendar_system_id": "bengali",
+      "url": "https://www.drikpanchang.com/bengali/calendar/bengali-calendar.html?year=2027&geoname-id=1275004",
+      "event_occurrences": 50,
+      "unique_source_labels": 49
+    },
+    {
+      "calendar_system_id": "gujarati",
+      "url": "https://www.drikpanchang.com/gujarati/calendar/gujarati-calendar.html?year=2027&geoname-id=1279233",
+      "event_occurrences": 191,
+      "unique_source_labels": 142
+    },
+    {
+      "calendar_system_id": "kannada",
+      "url": "https://www.drikpanchang.com/kannada/calendar/kannada-calendar.html?year=2027&geoname-id=1277333",
+      "event_occurrences": 128,
+      "unique_source_labels": 126
+    },
+    {
+      "calendar_system_id": "malayalam",
+      "url": "https://www.drikpanchang.com/malayalam/calendar/malayalam-calendar.html?year=2027&geoname-id=1254163",
+      "event_occurrences": 57,
+      "unique_source_labels": 55
+    },
+    {
+      "calendar_system_id": "marathi",
+      "url": "https://www.drikpanchang.com/marathi/calendar/marathi-calendar.html?year=2027&geoname-id=1275339",
+      "event_occurrences": 132,
+      "unique_source_labels": 126
+    },
+    {
+      "calendar_system_id": "odia",
+      "url": "https://www.drikpanchang.com/oriya/oriya-calendar.html?year=2027&geoname-id=1275817",
+      "event_occurrences": 57,
+      "unique_source_labels": 57
+    },
+    {
+      "calendar_system_id": "tamil",
+      "url": "https://www.drikpanchang.com/tamil/tamil-calendar.html?year=2027&geoname-id=1264527",
+      "event_occurrences": 52,
+      "unique_source_labels": 51
+    },
+    {
+      "calendar_system_id": "telugu",
+      "url": "https://www.drikpanchang.com/telugu/calendar/telugu-calendar.html?year=2027&geoname-id=1269843",
+      "event_occurrences": 111,
+      "unique_source_labels": 88
+    }
+  ],
+  "source_label_occurrences": 971,
+  "unique_source_label_count": 425,
+  "candidate_disposition_states": [
+    "undispositioned",
+    "accepted_distinct_lane",
+    "alias_of_accepted_lane",
+    "descriptive_calendar_event_not_puja_or_observance",
+    "outside_selected_sanatana_scope",
+    "hero_owned_cross_link_only",
+    "blocked_requires_authority_or_source"
+  ],
+  "completion_rule": "All 425 source-label candidates must be explicitly dispositioned. Every accepted distinct lane must satisfy the bilingual ritual product contract for each materially different applicability context, and all 19,480 day-answer cells must resolve without invented dates, universalized regional practice or DIY priestly instruction.",
+  "candidates": [
+    {
+      "source_label": "Aadi Amavasai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Aadi Perukku",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Agastya Arghya",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi",
+        "odia",
+        "tamil",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Agni Nakshatram Begins",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Agni Nakshatram Ends",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ahoi Ashtami",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Aja Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akal Bodhon",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akha Trij",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akhuratha Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akhuratha Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akhuratha Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akshaya Navami",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akshaya Thiruthiyai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akshaya Trithiya",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akshaya Tritiya",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Akshaya Trutiya",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Amalaki Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Anant Chaturdashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Andal Jayanthi",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Andolana Trutiya",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Aniruddha Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Annakut",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Apara Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ashadha Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ashtami Rohini",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ashwina Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Astami Rohini",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Atla Tadde",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Attukal Pongal",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Avani Avittam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Avani Avittam *Rigveda",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Avani Avittam *Samaveda",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Avani Avittam *Yajurveda",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ayutha Poojai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bachha Baras Dwadashi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Balarama Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bali Pratipada",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Banada Ashtami",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Baruthini Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Basoda",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bestu Varsh",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhadrapada Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhai Beej",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhai Phonta",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhaiya Dooj",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhalachandra Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhalachandra Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhalachandra Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhanu Saptami",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhau Beej",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhauma Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhishma Ashtami",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhishma Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bhogi Pandigai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bichha Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Bol Choth",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Brusha Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Buddha Purnima",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Budha Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chaitra Navratri",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chaitra Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chaitragaur",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Champa Shashthi",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chandra Darshana",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chandra Grahan *Upachchaya",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chhath Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chhoti Holi",
+      "calendar_system_ids": [
+        "north_reference",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chingam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chitra Pournami",
+      "calendar_system_ids": [
+        "malayalam",
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Chopda Puja",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dakhinaya Karkata Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Damodara Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dasahara",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dasara",
+      "calendar_system_ids": [
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dattatreya Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Deepavali",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Deepawali",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dev Diwali",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Deva Utthapan Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Devshayani Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Devutthana Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhanteras",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhantrayodashi",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhanu Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhanu Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dharo Atham",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhuleti",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhulivandan",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dhundhiraja Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dipabali",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dipavali",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Diwali",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "malayalam",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dol Purnima",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dola Gowri Vratam",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Durga Ashtami",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Durga Saptami",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Durgashtami",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Durva Ganapati Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dussehra",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dwijapriya Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dwijapriya Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Dwijapriya Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ekadanta Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ekadanta Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ekadanta Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gajanana Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gajanana Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gajanana Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gamha Purnima",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganadhipa Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganadhipa Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganadhipa Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganesh Chaturthi",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganesh Visarjan",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganesha Jayanti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganga Dussehra",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganga Puja",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganga Pujan",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ganga Saptami",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gangaur",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Garbhana Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Garuda Panjami",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauna Kamika Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauna Pausha Putrada Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauri Avahana",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauri Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauri Tritiya",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauri Visarjan",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauri Vrat Begins",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauri Vrat Ends",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gauriganesha Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gayathri Japam",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gayatri Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Geeta Dinam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ghatasthapana",
+      "calendar_system_ids": [
+        "gujarati",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gita Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gokulastami",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gomati Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gopalakala",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Govardhan Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Govatsa Dwadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gowri Habba",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Gudi Padwa",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Guru Poornima",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Guru Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Guru Purnima",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Guruvayur Ekadasi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanuman Janmotsava",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanuman Jayanthi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanuman Jayanthi *Tamil",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanuman Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanuman Puja",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanumana Jayanti",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hanumath Jayanthi",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Harishayan Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hariyali Teej",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Hartalika Teej",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Heramba Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Heramba Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Heramba Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Holi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Holi Hunnime",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Holika Dahan",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Indira Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Itavam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jagaddhatri Puja",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jagannath Rathyatra",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jala Krida Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jalaram Bapa Jayanti",
+      "calendar_system_ids": [
+        "gujarati",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jamai Shashti",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jandhyala Purnima",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jaya Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jayaparvati Vrat Begins",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jayaparvati Vrat Ends",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Jyeshtha Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kajari Teej",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kalabhairav Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kalashtami",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kali Chaudas",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kali Puja",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kaliyadalan Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kalki Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kalki Jayanti",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kalparambha",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kamada Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kamanahabba",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kamika Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kanni Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kansa Vadh",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kanya Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kapardisha Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Karadaiyan Nombu",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Karka Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Karkatakam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Karthigai Deepam",
+      "calendar_system_ids": [
+        "malayalam",
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kartika Purnima",
+      "calendar_system_ids": [
+        "north_reference",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Karwa Chauth",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kedara Gowri Vratham",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kerala Vinayaka Chathurthi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kevda Trij",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kojagara Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kojagari Paurnima",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kojagari Puja",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kokila Vrat",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Krichchhra Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Krishna Janmashtami",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Krishnapingala Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Krishnapingala Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Krishnapingala Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kumbha Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kumbham Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kurma Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kurma Jayanti",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Kurmavathara Dinam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Labh Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Labh Pancham",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Lakshmi Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "tamil",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Lambodara Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Lambodara Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Lambodara Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Madana Pournami",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Magh Bihu",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Magha Purnima",
+      "calendar_system_ids": [
+        "north_reference",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Magha Shraddha",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Maha Bharani",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Maha Navami",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Maha Sangada Hara Chathurti",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Maha Shivaratri",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mahabisuba Pana Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mahalaya",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mahalaya Amabasya",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mahalaya Amavasai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mahastami",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Makara Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Makaram Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Makaravilakku",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Malayalam New Year",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mandalakala Begins",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mandalakala Pooja",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Margashirsha Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Masi Magam",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Masik Durgashtami",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Masik Krishna Janmashtami",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Matsya Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Matsyavathara Dinam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mattu Pongal",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mauni Amavas",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Meena Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Meenam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mesha Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Metam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mithuna Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mithunam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mohini Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Mokshada Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nag Pancham",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nag Panchami",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Naga Panchami",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nagara Panchami",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nagula Chavithi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Narada Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Narak Chaturdashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Narali Purnima",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Narasimha Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Narasimha Jayanthi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Narasimha Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Navarathiri",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Navarathri",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Navratri Begins",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nirjala Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nrisinha Jayanti",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Nutan Varsh Prarambha",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Onam",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "malayalam",
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Padmanabha Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Painkuni Uthram",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Panguni Uthiram",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pankoddhar Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Papamochani Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Papankusha Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Parashurama Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Parashurama Jayanthi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Parashurama Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Parivartani Ekadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Parsva Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Parswa Paribartan Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pausha Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pausha Putrada Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pavitra Ekadashi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Phalguna Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pithori Amavasya",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pitrupaksha Begins",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pohela Boishakha",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pola",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pongal",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "malayalam",
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Pradyumna Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Puthandu",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rabindranath Tagore Jayanti",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Radha Ashtami",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Raja Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rakhi",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rakhi Bandhan",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Raksha Bandhan",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rama Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rama Navami",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "marathi",
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ramalakshmana Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ramanuja Jayanthi",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Randhan Chhath",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ranga Panchami",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rath Yatra",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ratha Jatra",
+      "calendar_system_ids": [
+        "assamese",
+        "bengali"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ratha Saptami",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ratha Sapthami",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ravi Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Rishi Panchami",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Roop Chaudas",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sakat Chauth",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sankara Jayanthi",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sankarshana Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Saphala Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Saraswati Avahan",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Saraswati Balidan",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Saraswati Poojai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Saraswati Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Saraswati Visarjan",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sarva Pitru Amavasya",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sattila Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Savitri Amabasya",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shakambhari Purnima",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shani Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shani Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shani Trayodashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sharad Purnima",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sharda Puja",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shattila Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sheetala Ashtami",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shitala Satam",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shivarathri",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shivaratri",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shravana Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shravana Putrada Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shree Rama Navami",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shree Ramanavami",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shree Shankara Jayanthi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shri Rama Navami",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Shukra Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Siddhivinayaka Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Simha Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Simhasta Kumbha @Nashik",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Simhasta Kumbha ends @Nashik",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Singha Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sita Navami",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Solar New Year",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "malayalam",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Soma Pradosh Vrat",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Somavati Amavasya",
+      "calendar_system_ids": [
+        "north_reference",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Somvati Amas",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Soora Samharam",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Soubhagya Gauri Vrat",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Sri Panchami",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Subrahmanya Sashti",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Surya Grahan *Purna",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Surya Grahan *Valayakara",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi",
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Swaminarayan Jayanti",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Thai Amavasai",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Thai Pooyam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Thai Pusam",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Thrissur Pooram",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Thulam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Tula Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Tulasi Vivah",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ugadi",
+      "calendar_system_ids": [
+        "north_reference",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Ugadi - Telugu New Year",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Utpanna Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Uttarayana",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Uttarayana Makar Sankranti",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vagh Baras",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vaikasi Visakam",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vaishakha Purnima",
+      "calendar_system_ids": [
+        "north_reference"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vaishnava Kamika Ekadashi",
+      "calendar_system_ids": [
+        "gujarati",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vaishnava Papanasini Ekadashi",
+      "calendar_system_ids": [
+        "odia"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vaishnava Pausha Putrada Ekadashi",
+      "calendar_system_ids": [
+        "gujarati",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vaishnava Rama Ekadashi",
+      "calendar_system_ids": [
+        "gujarati",
+        "marathi",
+        "odia",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vakratunda Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vakratunda Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vakratunda Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vamana Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vamana Jayanthi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vamana Jayanti",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Varad Lakshmi Vrat",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Varaha Jayanthi",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Varaha Jayanti",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Varalakshmi Vrat",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Varalakshmi Vratam",
+      "calendar_system_ids": [
+        "tamil",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Varuthini Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vasant Panchami",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vasu Baras",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vasudeva Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vasudeva Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vat Purnima Vrat",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vat Savitri Vrat",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vidyarambham",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vidyarambham Day",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vighnaraja Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vighnaraja Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vighnaraja Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vighneshvara Chaturthi",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vijaya Dashami",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vijaya Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vijayadashami",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "gujarati",
+        "kannada",
+        "malayalam",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vikata Sankashta",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vikata Sankashtahara",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vikata Sankashti",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vinayagar Chathurthi",
+      "calendar_system_ids": [
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vishu",
+      "calendar_system_ids": [
+        "malayalam",
+        "tamil"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vishwakarma Puja",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vivah Panchami",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vrischikam Sankramam",
+      "calendar_system_ids": [
+        "malayalam"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vrishabha Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vrishabhotsava",
+      "calendar_system_ids": [
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Vrishchika Sankranti",
+      "calendar_system_ids": [
+        "north_reference",
+        "assamese",
+        "bengali",
+        "kannada",
+        "marathi"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Yama Dwitiya",
+      "calendar_system_ids": [
+        "gujarati"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Yamuna Chhath",
+      "calendar_system_ids": [
+        "north_reference",
+        "kannada"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Yogeshwara Dwadashi",
+      "calendar_system_ids": [
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Yogini Ekadashi",
+      "calendar_system_ids": [
+        "north_reference",
+        "gujarati",
+        "kannada",
+        "marathi",
+        "telugu"
+      ],
+      "state": "undispositioned"
+    },
+    {
+      "source_label": "Yugadi",
+      "calendar_system_ids": [
+        "kannada"
+      ],
+      "state": "undispositioned"
+    }
+  ]
+}
+
