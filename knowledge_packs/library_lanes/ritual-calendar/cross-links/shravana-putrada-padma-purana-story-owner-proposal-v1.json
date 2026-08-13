@@ -1,0 +1,53 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-shravana-putrada-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "shravana-putrada-to-padma-purana-mahijit-lomasha-pavitraka-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-putrada-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-shravana-putrada-mahijit-lomasha-pavitraka-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_mahijit_lomasha_and_pavitraka_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Mahijit and Lomasha account",
+        "hi": "महिजित और लोमश की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "The ritual pack uses Padma Purana Uttara Khanda chapter 55. A future owner should preserve the full Mahijit-Lomasha sequence, denied-water former-birth attribution, collective merit transfer, unnamed queen and son-birth claim, and the distinct pavitraka passage with its materials, caste/community roles, hymns, annual obligation and promised results. These remain source facts, not fertility, caste, animal-contact or universal household instructions.",
+        "geography_codes": [
+          "north-india",
+          "west-india"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Putrada/Pavitra; reviewed 2027 fixture 12 August",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 55; Sanskrit verse 6.55.32 located, full edition and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365632.html",
+          "claim_scope": "Reviewed verses 1-44 with story, denied water, attributed conception and formal pavitraka passage."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/shravana-putrada-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, alias, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

@@ -1,0 +1,1065 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "shravana-putrada-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "shravana-putrada-ekadashi",
+    "pavitra-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted ordinary Smarta Panchang resolve Shravana Shukla Putrada for you?",
+      "Does your calendar say Shravana Putrada or the same-day Pavitra alias, and does any named Vaishnava, family or institution authority differ?",
+      "Would son preference, infertility blame, pregnancy, loss, caste, animal-water or absent-consent language be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, sleep, reproductive privacy, no animal contact and no formal pavitraka?",
+      "Would a private image-free, writing-free and material-free form be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "shravana-putrada-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "shravana-putrada-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "pavitra-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "shravana-putrada-ekadashi",
+        "language_code": "en",
+        "note": "Ordinary North/West Smarta household lane for locally resolved Shravana Shukla Putrada. Formal pavitraka, reproductive rites, different Vaishnava/family authority and named institution programmes remain separate."
+      },
+      {
+        "observance_slug": "pavitra-ekadashi",
+        "language_code": "en",
+        "note": "Pavitra is retained as a same-date Gujarat/West searchable alias while story, ordinary safe practice and close remain unchanged; no state duplicate is created."
+      },
+      {
+        "observance_slug": "shravana-putrada-ekadashi",
+        "language_code": "hi",
+        "note": "स्थानीय रूप से हल श्रावण शुक्ल पुत्रदा का सामान्य उत्तर/पश्चिम स्मार्त गृह-मार्ग। औपचारिक पवित्रक, प्रजनन-विधि, अलग वैष्णव/परिवार प्राधिकार और नामित संस्था कार्यक्रम अलग हैं।"
+      },
+      {
+        "observance_slug": "pavitra-ekadashi",
+        "language_code": "hi",
+        "note": "कथा, सामान्य सुरक्षित अभ्यास और समापन समान रहने पर पवित्रा गुजरात/पश्चिम का उसी तिथि का खोज योग्य नाम है; राज्य-प्रतिलिपि नहीं बनाई गई।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-shravana-putrada-pavitra-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "shravana-shukla-putrada-local-ordinary-smarta-v1",
+    "closing_decision_rule_id": "shravana-putrada-fed-material-free-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed 2027 Indian discovery fixtures place ordinary Shravana Putrada Ekadashi on Thursday 12 August 2027 and the Gujarati Pavitra alias on the same civil date and paksha/tithi. Resolve city and accepted ordinary authority live. Do not copy a tithi clock time, parana, formal pavitraka or another authority's date into this lane."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-shravana-putrada-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 55: Putrada Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Mahijit-Lomasha story, denied-water episode, collective merit transfer, attributed son-birth and formal pavitraka passage; sensitive claims remain source facts",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365632.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 55",
+        "verses": "1-44",
+        "reviewed_lines": "54-83",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "padma-purana-shravana-putrada-sanskrit",
+      "title": "Padma Purana 6.55.32 Sanskrit text",
+      "publisher": "Wisdomlib Sanskrit text",
+      "source_role": "Sanskrit coordinate confirming the Shravana bright-fortnight Putrada name; not a portable procedure or calendar rule",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/padma-purana-sanskrit/d/doc470301.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verse": "6.55.32",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-shravana-putrada-pavitra-2027",
+      "title": "2027 Shravana Putrada and Pavitra discovery fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "reviewed 12 August 2027 identity and ordinary Shravana Putrada/Pavitra alias evidence; no portable parana, fasting or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1253184&time-format=12hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "ordinary_fixture": "2027-08-12",
+        "lunar_identity": "Shravana Shukla Ekadashi",
+        "surat_alias": "Pavitra Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen Pavitra alias, ordinary named-lane identity and separate-authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu/Vasudeva remembrance scaffold and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-mtp-act",
+      "title": "The Medical Termination of Pregnancy Act, 1971",
+      "publisher": "India Code, Government of India",
+      "source_role": "official reproductive-care and confidentiality boundary; not case-specific legal advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1593",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": "3-5A",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-shravana-putrada-research",
+      "title": "Shravana Putrada Ekadashi North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local story sequence, Pavitra alias, equal-dignity, reproductive privacy, animal-safety, pavitraka split, substitutions and closing synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/shravana-putrada-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "shravana-putrada-ekadashi",
+        "pavitra-ekadashi"
+      ],
+      "title": "Shravana Putrada / Pavitra Ekadashi: hope, water and equal dignity without reproductive pressure",
+      "short_answer": "Confirm ordinary Shravana Putrada for your city; the reviewed fixture is Thursday 12 August 2027, and Pavitra is a same-day alias rather than a separate Gujarat ritual. A complete home form is fed, rested and material-free: remember Vishnu/Vasudeva, hear Padma Purana chapter 55's Mahijit-Lomasha story with its denied-water episode, infertility blame, collective merit transfer, unnamed queen, son-birth claim and formal pavitraka passage clearly labelled, choose an optional equal-care action, and close without fasting, reproductive disclosure, animal contact, thread, ring, vigil, parana or promised child.",
+      "significance": {
+        "text": "Padma Purana chapter 55 places Shravana Shukla Putrada in a male-heir world and attributes Mahijit's childlessness to denying a cow and calf water in a former life. It says subjects transfer vrata merit and the unnamed queen bears a son, then gives a formal pavitraka sequence. Devam preserves that source world while rejecting infertility blame, son preference, absent consent, caste hierarchy and miracle guarantees. A bounded present meaning is to hold hope without demanding another person's body or a child's sex, protect fair access to ordinary care and answer denied water with safe, qualified compassion.",
+        "source_ids": [
+          "padma-purana-shravana-putrada-deshpande",
+          "devam-shravana-putrada-research"
+        ],
+        "scope_note": "Source-labelled story and ethical reflection; not fertility, pregnancy, animal-rescue, caste, fasting or pavitraka advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "shravana-putrada-mahijit-lomasha-en",
+          "title": "Mahijit, Lomasha, the denied water and the pavitraka passage",
+          "summary": "In Padma Purana Uttara Khanda chapter 55, Yudhishthira asks Krishna about Shravana Shukla Ekadashi. Krishna tells of King Mahijit of Mahishmati, distressed because he has no son and convinced his rule has been just. Brahmanas, subjects and the family priest seek the ancient sage Lomasha. After meditation, Lomasha says Mahijit was formerly a poor Vaishya trader who drove a thirsty cow and calf from a pond and drank first; the source attributes childlessness to that act and kingship to other merit. Lomasha directs the people to observe Putrada and stay awake. They transfer the vow's merit to the king; the text says the unnamed queen conceives and bears a bright son. It then prescribes a Dvadashi pavitraka for Vasudeva using metals, silk/thread or named plants, with preceptor, Brahmana, caste/community and hymn roles, annual obligation and promised results. These are source claims. Devam does not blame infertility, treat the queen's absent agency as consent, prefer sons, compel merit transfer or animal contact, reconstruct pavitraka, or promise conception, birth, heaven or salvation.",
+          "tradition_scope": "Padma Purana, Uttara Khanda chapter 55 in the reviewed Deshpande English expression",
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "shravana-putrada-en-safe-household",
+          "population_scope": "Ordinary North/West Smarta households after local date resolution, including Pavitra alias users where the same authority applies",
+          "description": "Vishnu/Vasudeva remembrance, source-labelled story, private hope or equal-care action and a normal fed close; formal inherited practice may differ.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-shravana-putrada-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "shravana-putrada-en-formal-context",
+          "population_scope": "Family, preceptor or institution with separately verified pavitraka, fast or parana authority",
+          "description": "Chapter 55 contains a material-rich, role-specific pavitraka sequence; this ordinary pack names but does not reconstruct or prescribe it.",
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "devam-shravana-putrada-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "shravana-putrada-en-minimum-v1",
+          "label": "Private equal-dignity remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "ordinary North/West Smarta remembrance after local date resolution; no fertility, pavitraka, fast or parana authority",
+          "form": "accessible_short",
+          "estimated_minutes": 18,
+          "materials": [
+            {
+              "item": "Optional familiar Vishnu/Vasudeva image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name",
+                "Silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "Optional private equal-care reminder",
+              "required": false,
+              "substitutions": [
+                "A mental note",
+                "No stated hope or written note"
+              ],
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta Panchang identify Shravana Putrada Ekadashi today; the reviewed fixture is Thursday 12 August 2027. Pavitra is a same-day alias, not a second Gujarat ritual. Stop if a named Vaishnava, family or institution authority differs.",
+              "why": "Date, alias and authority must be resolved before practice.",
+              "source_ids": [
+                "drik-shravana-putrada-pavitra-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, prescribed medicine, insulin, child feeding, hygiene and sleep. Begin no fast, vigil or parana.",
+              "why": "The fed, hydrated and rested route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Choose privacy and remember Vishnu or Vasudeva with a familiar name, family prayer or silence. No image, mantra, thread, ring, plant, animal contact, flame, offering or purchase is required.",
+              "why": "Devotion cannot create reproductive disclosure or a universal material rite.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the Padma-Purana-55-labelled Mahijit-Lomasha account in sequence: the king's distress, the denied water, former-birth attribution, collective vow and vigil, unnamed queen's attributed conception and son-birth, and the separate pavitraka passage.",
+              "why": "A coherent retelling preserves action, motivation and consequence without hiding sensitive facts.",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Say explicitly: childlessness is not punishment; no child or child's sex is owed; the queen's absent agency is not consent; fasting or merit transfer does not cause or guarantee conception.",
+              "why": "The source's male-heir, blame and miracle claims must not become Devam guidance.",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "india-code-mtp-act",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "If useful, choose one private equal-care action already within your responsibility: preserve someone's ordinary drinking-water access with consent, keep a care appointment, support an existing person without gender preference, or contact a qualified animal carer about an actual concern. Do not approach an unfamiliar animal.",
+              "why": "Care can answer the denied-water theme without coercion or unsafe rescue.",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with normal food, medicine, sleep, privacy and accountability. Claim no son, conception, pregnancy, healthy birth, cure, sin removal, heaven, salvation or family approval.",
+              "why": "A bounded close preserves dignity and qualified care.",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal food, water, medicine and sleep. No fast, parana, merit transfer, pavitraka or fertility rite begins here.",
+            "source_ids": [
+              "devam-shravana-putrada-research"
+            ],
+            "scope_note": "Formal family, medical, reproductive, animal-welfare and institutional routes remain separate."
+          },
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "padma-purana-shravana-putrada-sanskrit",
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-mtp-act",
+            "devam-shravana-putrada-research"
+          ]
+        },
+        {
+          "procedure_id": "shravana-putrada-en-family-v1",
+          "label": "Consent-led family story and equal-care reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "ordinary consent-led family form; inherited formal rites remain separate",
+          "form": "traditional_household",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "Source-labelled chapter summary",
+              "required": true,
+              "substitutions": [
+                "Listen to the labelled summary",
+                "Use the private minimum route"
+              ],
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande"
+              ]
+            },
+            {
+              "item": "Optional private care reminder",
+              "required": false,
+              "substitutions": [
+                "A mental note",
+                "No care action"
+              ],
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Resolve ordinary Shravana Putrada/Pavitra for the city and ask who wishes to join. Anyone may decline the story, remain silent or leave without explanation.",
+              "why": "Timing and consent precede a family form.",
+              "source_ids": [
+                "drik-shravana-putrada-pavitra-2027",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, medicine, sleep and normal care unchanged. Use no fast, vigil, parana, animal contact, ring, thread, metal, silk, cotton, lotus, kusha, kasha, flame or purchase.",
+              "why": "The material-free family route is complete; formal pavitraka is separate.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use familiar Vishnu/Vasudeva remembrance and tell the full bounded account. Name the denied water, son preference, infertility blame, unnamed queen's missing agency, collective merit transfer, caste-ranked pavitraka instructions and promised results as source facts.",
+              "why": "The source remains recognisable without becoming a coercive family script.",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Affirm equal dignity of daughters, sons, nonbinary and adopted children, foster relationships, people without children and people who do not want children. Each willing person may choose or decline a private equal-care action.",
+              "why": "Hope and care must not demand another person's body, labour or child's sex.",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close before fatigue with normal care. Ask no reproductive question, transfer no compulsory merit, compare no caste or gender, and announce no parana or guaranteed result.",
+              "why": "Privacy, rest and accountability govern the close.",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close normally, protect privacy and complete only freely chosen care. Do not announce parana, merit transfer or a reproductive result.",
+            "source_ids": [
+              "devam-shravana-putrada-research"
+            ],
+            "scope_note": "Formal pavitraka, fertility and inherited fasting routes remain separately owned."
+          },
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "padma-purana-shravana-putrada-sanskrit",
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-mtp-act",
+            "devam-shravana-putrada-research"
+          ]
+        },
+        {
+          "procedure_id": "shravana-putrada-en-temple-v1",
+          "label": "Verified named-institution participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "visitor participation only; institution controls calendar, liturgy, eligibility, materials and close",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "materials": [
+            {
+              "item": "Verified official live programme and safe access plan",
+              "required": true,
+              "substitutions": [
+                "Official remote programme",
+                "Stay home and use the minimum route"
+              ],
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named institution's official current date and public programme, including access, food, thread, metal, plant, flame, photography, donation, crowd and safeguarding rules.",
+              "why": "A generic calendar or chapter does not prove a live institutional programme.",
+              "source_ids": [
+                "drik-shravana-putrada-pavitra-2027",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Attend only as a voluntary public participant. Keep normal food, water, medicine and sleep; decline fertility claims, intimate disclosure, touch, private access, unverified payment or animal interaction.",
+              "why": "Institutional participation does not waive health, privacy or consent.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-mtp-act",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Do not copy the institution's pavitraka, mantra, caste role, fast, vigil, gift, food rule or parana into household instructions.",
+              "why": "Formal material and liturgical authority is not portable.",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Leave at any time and close at home with normal care. A remote or cancelled form is complete; claim no birth, fertility, merit, cure or salvation result.",
+              "why": "A safe exit and complete fallback preserve consumer choice.",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Follow the verified visitor exit and close. If the programme or safe setting is not confirmed, stay home; the private route is complete.",
+            "source_ids": [
+              "devam-shravana-putrada-research"
+            ],
+            "scope_note": "Only the named institution controls its liturgy, pavitraka, food and parana."
+          },
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "padma-purana-shravana-putrada-sanskrit",
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-mtp-act",
+            "devam-shravana-putrada-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "pavitra-alias-and-minor-expression-en",
+          "scope": "Ordinary Shravana Putrada/Pavitra household",
+          "difference": "Pavitra name, language, familiar Vishnu/Vasudeva expression, image/no-image, silence, dress and optional private reminder remain inside this lane while date, story, action and close match.",
+          "source_ids": [
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "pausha-putrada-en",
+          "scope": "Pausha Shukla Putrada",
+          "difference": "Pausha Putrada has a different month, Suketumat-Campaka story and date authority and remains separate.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-pavitraka-en",
+          "scope": "Preceptor or institution-owned pavitraka",
+          "difference": "Metals, silk/thread, plants, preparation, caste/community roles, hymns, annual obligation and close materially change the answer.",
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "fertility-or-vaishnava-authority-en",
+          "scope": "Reproductive rite or different calendar authority",
+          "difference": "Fertility claims, intimate data, fasting, parana, mantra, eligibility or a different civil date require their own named authority and safety review.",
+          "source_ids": [
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-or-temple-en",
+          "scope": "Professional care, animal welfare or named institution",
+          "difference": "Clinical care, animal intervention and live institutional programmes remain separate routes.",
+          "source_ids": [
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A complete ordinary form is non-fasting, fed, hydrated, rested, no-vigil, no-flame, no-animal-contact, no-purchase, no-pavitraka, no-thread, no-ring, no-disclosure, image-free, writing-free and material-free.",
+        "Never ask about pregnancy, abortion, miscarriage, fertility, sexual history, medical records, adoption plans or desired child sex; do not shame or obstruct lawful confidential care.",
+        "Do not tell anyone that infertility, pregnancy loss, disability, illness or a child's sex is punishment, karma, impurity or moral failure.",
+        "Do not promise a son, conception, pregnancy, healthy birth, fertility cure, treatment success, sin removal, heaven, salvation or family approval.",
+        "Do not approach, touch, feed, water, restrain or rescue an unfamiliar animal from this guide; use qualified local help for an actual welfare concern.",
+        "Do not rank dignity by caste, tribe, birth, family, gender, child status, sampradaya, occupation, wealth, observance, disability, health or reproductive history.",
+        "No one owes fasting, vigil, merit transfer, prayer, money, sex, pregnancy, childbirth, reproductive labour or a child of any sex for another person's hope.",
+        "The unnamed queen's absent agency is not consent, and collective devotion does not authorize family or community control over another person's body.",
+        "Gold, silver, copper, silk, cotton, lotus, kusha, kasha, thread, rings, preceptor and caste-labelled hymn roles belong to the source's formal pavitraka passage, not this ordinary procedure.",
+        "Serious harm is not erased by fasting, merit transfer, pavitraka, hearing or regret; preserve accountability, qualified care and law.",
+        "Authored means this named library lane only; it is not projected to day cards, hosted, independently release-reviewed or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "shravana-putrada-ekadashi",
+        "pavitra-ekadashi"
+      ],
+      "title": "श्रावण पुत्रदा / पवित्रा एकादशी: प्रजनन दबाव बिना आशा, जल और समान गरिमा",
+      "short_answer": "अपने शहर के लिए सामान्य श्रावण पुत्रदा की पुष्टि करें; समीक्षित तिथि गुरुवार 12 अगस्त 2027 है और पवित्रा उसी दिन का नाम है, अलग गुजरात अनुष्ठान नहीं। पूर्ण गृह-रूप भोजन, जल, दवा और नींद सहित सामग्री-मुक्त है: विष्णु/वासुदेव स्मरण करें, पद्मपुराण अध्याय 55 की महिजित-लोमश कथा में पानी रोकना, निस्संतानता-दोष, सामूहिक पुण्य, अनाम रानी, पुत्र-जन्म दावा और औपचारिक पवित्रक अनुच्छेद स्पष्ट नाम सहित सुनें, चाहें तो समान-देखभाल काम चुनें, और उपवास, प्रजनन खुलासा, पशु-स्पर्श, धागा, अंगूठी, जागरण, पारण या बच्चे के वचन बिना समापन करें।",
+      "significance": {
+        "text": "पद्मपुराण अध्याय 55 श्रावण शुक्ल पुत्रदा को पुत्र-प्रधान संसार में रखता और महिजित की निस्संतानता को पूर्वजन्म में गाय-बछड़े का पानी रोकने से जोड़ता है। वह प्रजा का व्रत-पुण्य देने और अनाम रानी से पुत्र-जन्म का दावा करता, फिर औपचारिक पवित्रक क्रम देता है। देवम स्रोत-जगत रखता है, पर निस्संतानता-दोष, पुत्र-पक्ष, अनुपस्थित सहमति, जाति-क्रम और चमत्कार गारंटी अस्वीकार करता है। सीमित वर्तमान अर्थ है—दूसरे के शरीर या बच्चे के लिंग की माँग बिना आशा, सामान्य देखभाल की निष्पक्ष उपलब्धता और पानी रोकने के उत्तर में सुरक्षित योग्य करुणा।",
+        "source_ids": [
+          "padma-purana-shravana-putrada-deshpande",
+          "devam-shravana-putrada-research"
+        ],
+        "scope_note": "स्रोत-नामित कथा और नैतिक चिंतन; प्रजनन, गर्भ, पशु-बचाव, जाति, उपवास या पवित्रक सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "shravana-putrada-mahijit-lomasha-hi",
+          "title": "महिजित, लोमश, रोका गया पानी और पवित्रक अनुच्छेद",
+          "summary": "पद्मपुराण उत्तरखंड अध्याय 55 में युधिष्ठिर कृष्ण से श्रावण शुक्ल एकादशी पूछते हैं। कृष्ण महिष्मती के राजा महिजित की कथा कहते हैं, जो पुत्र न होने से दुःखी और अपने न्यायपूर्ण शासन के प्रति आश्वस्त है। ब्राह्मण, प्रजा और कुलपुरोहित प्राचीन लोमश ऋषि के पास जाते हैं। ध्यान के बाद लोमश कहते हैं कि महिजित पूर्वजन्म में गरीब वैश्य व्यापारी था जिसने प्यासी गाय और बछड़े को तालाब से हटाकर पहले पानी पिया; स्रोत निस्संतानता को उस काम और राज्य को दूसरे पुण्य से जोड़ता है। लोमश लोगों को पुत्रदा व्रत और जागरण बताते हैं। वे पुण्य राजा को देते हैं; ग्रंथ कहता है कि अनाम रानी गर्भ धारण कर तेजस्वी पुत्र जन्मती है। फिर वह वासुदेव के लिए द्वादशी पवित्रक का धातु, रेशम/धागा या नामित पौधों, गुरु-ब्राह्मण, जाति/समुदाय और मंत्र भूमिकाओं, वार्षिक बाध्यता और फल-दावों वाला क्रम देता है। ये स्रोत-दावे हैं। देवम निस्संतानता को दोष नहीं देता, रानी की अनुपस्थित इच्छा को सहमति नहीं मानता, पुत्र-पक्ष या पुण्य दबाव नहीं बनाता, पवित्रक पुनर्निर्मित नहीं करता और गर्भ, जन्म, स्वर्ग या मुक्ति नहीं देता।",
+          "tradition_scope": "समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति में पद्मपुराण उत्तरखंड अध्याय 55",
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "shravana-putrada-hi-safe-household",
+          "population_scope": "स्थानीय तिथि के बाद सामान्य उत्तर/पश्चिम स्मार्त घर, जहाँ समान प्राधिकार में पवित्रा नाम चलता है",
+          "description": "विष्णु/वासुदेव स्मरण, स्रोत-नामित कथा, निजी आशा या समान-देखभाल काम और भोजन सहित सामान्य समापन; औपचारिक विरासत अभ्यास अलग हो सकता है।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-shravana-putrada-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "shravana-putrada-hi-formal-context",
+          "population_scope": "अलग सत्यापित पवित्रक, उपवास या पारण प्राधिकार वाला परिवार, गुरु या संस्था",
+          "description": "अध्याय 55 सामग्री और भूमिका-विशिष्ट पवित्रक क्रम देता है; यह सामान्य पैक उसे नाम देता पर पुनर्निर्मित या निर्धारित नहीं करता।",
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "devam-shravana-putrada-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "shravana-putrada-hi-minimum-v1",
+          "label": "निजी समान-गरिमा स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य उत्तर/पश्चिम स्मार्त स्मरण; प्रजनन, पवित्रक, उपवास या पारण प्राधिकार नहीं",
+          "form": "accessible_short",
+          "estimated_minutes": 18,
+          "materials": [
+            {
+              "item": "वैकल्पिक परिचित विष्णु/वासुदेव चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम",
+                "मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "वैकल्पिक निजी समान-देखभाल स्मरण",
+              "required": false,
+              "substitutions": [
+                "मानसिक स्मरण",
+                "बिना लिखे आशा या काम"
+              ],
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "पुष्टि करें कि आपका शहर और मान्य सामान्य स्मार्त पंचांग आज श्रावण पुत्रदा एकादशी बताते हैं; समीक्षित तिथि गुरुवार 12 अगस्त 2027 है। पवित्रा उसी दिन का नाम है, गुजरात का दूसरा अनुष्ठान नहीं। नामित वैष्णव, परिवार या संस्था प्राधिकार अलग हो तो रुकें।",
+              "why": "तिथि, नाम और प्राधिकार अभ्यास से पहले हल होने चाहिए।",
+              "source_ids": [
+                "drik-shravana-putrada-pavitra-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, जल, निर्धारित दवा, इंसुलिन, बच्चों का भोजन, स्वच्छता और नींद रखें। उपवास, जागरण या पारण शुरू न करें।",
+              "why": "भोजन, जल और विश्राम सहित मार्ग पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "गोपनीयता चुनें और परिचित विष्णु या वासुदेव नाम, पारिवारिक प्रार्थना या मौन से स्मरण करें। चित्र, मंत्र, धागा, अंगूठी, पौधा, पशु-स्पर्श, अग्नि, अर्पण या खरीद आवश्यक नहीं।",
+              "why": "भक्ति प्रजनन-खुलासा या सार्वभौमिक सामग्री-विधि नहीं बनाती।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पद्मपुराण अध्याय 55 नाम सहित महिजित-लोमश कथा क्रम में सुनें: राजा का दुःख, पानी रोकना, पूर्वजन्म-दावा, सामूहिक व्रत-जागरण, अनाम रानी का बताया गर्भ और पुत्र-जन्म, तथा अलग पवित्रक अनुच्छेद।",
+              "why": "पूर्ण क्रम संवेदनशील तथ्य छिपाए बिना क्रिया, प्रेरणा और परिणाम रखता है।",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "स्पष्ट कहें: निस्संतानता दंड नहीं; कोई बच्चा या उसका लिंग किसी पर बकाया नहीं; रानी की अनुपस्थित इच्छा सहमति नहीं; उपवास या पुण्य-हस्तांतरण गर्भधारण कराता या सुनिश्चित नहीं करता।",
+              "why": "स्रोत का पुत्र-पक्ष, दोष और चमत्कार-दावा देवम निर्देश नहीं बनना चाहिए।",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "india-code-mtp-act",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो अपनी जिम्मेदारी में एक निजी समान-देखभाल काम चुनें: सहमति से सामान्य पेयजल उपलब्ध रखें, देखभाल अपॉइंटमेंट निभाएँ, लिंग-पक्ष बिना किसी मौजूदा व्यक्ति की सहायता करें, या वास्तविक पशु-चिंता पर योग्य पशु-सेवक से संपर्क करें। अपरिचित पशु के पास न जाएँ।",
+              "why": "देखभाल पानी रोकने की कथा का उत्तर बिना दबाव या असुरक्षित बचाव के देती है।",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "सामान्य भोजन, दवा, नींद, गोपनीयता और जवाबदेही से समापन करें। पुत्र, गर्भधारण, गर्भ, स्वस्थ जन्म, इलाज, पाप-मुक्ति, स्वर्ग, मुक्ति या परिवार-स्वीकृति न कहें।",
+              "why": "सीमित समापन गरिमा और योग्य देखभाल रखता है।",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा और नींद से समापन करें। यहाँ उपवास, पारण, पुण्य-हस्तांतरण, पवित्रक या प्रजनन-विधि शुरू नहीं होती।",
+            "source_ids": [
+              "devam-shravana-putrada-research"
+            ],
+            "scope_note": "औपचारिक परिवार, चिकित्सा, प्रजनन, पशु-कल्याण और संस्था मार्ग अलग हैं।"
+          },
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "padma-purana-shravana-putrada-sanskrit",
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-mtp-act",
+            "devam-shravana-putrada-research"
+          ]
+        },
+        {
+          "procedure_id": "shravana-putrada-hi-family-v1",
+          "label": "सहमति वाली पारिवारिक कथा और समान-देखभाल चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सहमति वाला सामान्य परिवार रूप; विरासत औपचारिक विधियाँ अलग",
+          "form": "traditional_household",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "स्रोत-नामित अध्याय सार",
+              "required": true,
+              "substitutions": [
+                "नामित सार सुनें",
+                "निजी न्यूनतम रूप लें"
+              ],
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande"
+              ]
+            },
+            {
+              "item": "वैकल्पिक निजी देखभाल स्मरण",
+              "required": false,
+              "substitutions": [
+                "मानसिक स्मरण",
+                "बिना देखभाल काम"
+              ],
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "शहर के लिए सामान्य श्रावण पुत्रदा/पवित्रा हल करें और केवल इच्छुक लोगों को बुलाएँ। कोई कथा छोड़, मौन रह या बिना कारण बताए जा सकता है।",
+              "why": "समय और सहमति पारिवारिक रूप से पहले हैं।",
+              "source_ids": [
+                "drik-shravana-putrada-pavitra-2027",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, जल, दवा, नींद और सामान्य देखभाल अपरिवर्तित रखें। उपवास, जागरण, पारण, पशु-स्पर्श, अंगूठी, धागा, धातु, रेशम, कपास, कमल, कुश, काश, अग्नि या खरीद न करें।",
+              "why": "सामग्री-मुक्त पारिवारिक रूप पूर्ण है; औपचारिक पवित्रक अलग है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित विष्णु/वासुदेव स्मरण और पूर्ण सीमित कथा रखें। पानी रोकना, पुत्र-पक्ष, निस्संतानता-दोष, अनाम रानी की अनुपस्थित इच्छा, सामूहिक पुण्य-हस्तांतरण, जाति-आधारित पवित्रक निर्देश और फल-दावे स्रोत तथ्य कहें।",
+              "why": "स्रोत दबावपूर्ण परिवार-पटकथा बने बिना पहचाना रहता है।",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "बेटियों, बेटों, गैर-द्विआधारी और गोद लिए बच्चों, पालक संबंधों, बिना बच्चों वाले और बच्चे न चाहने वाले लोगों की समान गरिमा मानें। हर इच्छुक व्यक्ति निजी समान-देखभाल काम चुन या छोड़ सकता है।",
+              "why": "आशा किसी दूसरे के शरीर, श्रम या बच्चे के लिंग की माँग नहीं बन सकती।",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "थकान से पहले सामान्य देखभाल से समापन करें। प्रजनन प्रश्न न पूछें, अनिवार्य पुण्य न हस्तांतरित करें, जाति या लिंग न तुलना करें और पारण या निश्चित फल न घोषित करें।",
+              "why": "गोपनीयता, विश्राम और जवाबदेही समापन चलाते हैं।",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य समापन, गोपनीयता और केवल स्वतंत्र चुनी देखभाल रखें। पारण, पुण्य-हस्तांतरण या प्रजनन फल न घोषित करें।",
+            "source_ids": [
+              "devam-shravana-putrada-research"
+            ],
+            "scope_note": "औपचारिक पवित्रक, प्रजनन और विरासत उपवास मार्ग अलग स्वामित्व में हैं।"
+          },
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "padma-purana-shravana-putrada-sanskrit",
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-mtp-act",
+            "devam-shravana-putrada-research"
+          ]
+        },
+        {
+          "procedure_id": "shravana-putrada-hi-temple-v1",
+          "label": "सत्यापित नामित संस्था-भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल आगंतुक भागीदारी; संस्था पंचांग, पूजा, पात्रता, सामग्री और समापन चलाती है",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "materials": [
+            {
+              "item": "सत्यापित आधिकारिक जीवित कार्यक्रम और सुरक्षित प्रवेश योजना",
+              "required": true,
+              "substitutions": [
+                "आधिकारिक दूरस्थ कार्यक्रम",
+                "घर रहें और न्यूनतम रूप लें"
+              ],
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित संस्था की आधिकारिक वर्तमान तिथि और सार्वजनिक कार्यक्रम, प्रवेश, भोजन, धागा, धातु, पौधा, अग्नि, फोटो, दान, भीड़ और सुरक्षा नियम सत्यापित करें।",
+              "why": "सामान्य पंचांग या अध्याय जीवित संस्था-कार्यक्रम सिद्ध नहीं करता।",
+              "source_ids": [
+                "drik-shravana-putrada-pavitra-2027",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "केवल स्वैच्छिक सार्वजनिक सहभागी बनें। सामान्य भोजन, जल, दवा और नींद रखें; प्रजनन-दावे, निजी खुलासा, स्पर्श, निजी प्रवेश, असत्यापित भुगतान या पशु-संपर्क छोड़ें।",
+              "why": "संस्था-भागीदारी स्वास्थ्य, गोपनीयता या सहमति नहीं हटाती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-mtp-act",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "संस्था का पवित्रक, मंत्र, जाति-भूमिका, उपवास, जागरण, उपहार, भोजन-नियम या पारण घर के निर्देश में न नकल करें।",
+              "why": "औपचारिक सामग्री और पूजा-प्राधिकार पोर्टेबल नहीं।",
+              "source_ids": [
+                "padma-purana-shravana-putrada-deshpande",
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "कभी भी लौटें और घर पर सामान्य देखभाल से समापन करें। दूरस्थ या रद्द रूप पूर्ण है; जन्म, प्रजनन, पुण्य, इलाज या मुक्ति फल न कहें।",
+              "why": "सुरक्षित निकास और पूर्ण विकल्प उपभोक्ता चुनाव रखते हैं।",
+              "source_ids": [
+                "devam-shravana-putrada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सत्यापित आगंतुक निकास मानकर समापन करें। कार्यक्रम या सुरक्षित स्थान पुष्ट न हो तो घर रहें; निजी मार्ग पूर्ण है।",
+            "source_ids": [
+              "devam-shravana-putrada-research"
+            ],
+            "scope_note": "केवल नामित संस्था अपनी पूजा, पवित्रक, भोजन और पारण चलाती है।"
+          },
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "padma-purana-shravana-putrada-sanskrit",
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-mtp-act",
+            "devam-shravana-putrada-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "pavitra-alias-and-minor-expression-hi",
+          "scope": "सामान्य श्रावण पुत्रदा/पवित्रा गृह",
+          "difference": "तिथि, कथा, काम और समापन समान हों तो पवित्रा नाम, भाषा, परिचित विष्णु/वासुदेव अभिव्यक्ति, चित्र/बिना चित्र, मौन, वेश और निजी स्मरण इसी मार्ग में रहते हैं।",
+          "source_ids": [
+            "drik-shravana-putrada-pavitra-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "pausha-putrada-hi",
+          "scope": "पौष शुक्ल पुत्रदा",
+          "difference": "पौष पुत्रदा का अलग महीना, सुकेतुमत-चम्पका कथा और तिथि-प्राधिकार है।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-pavitraka-hi",
+          "scope": "गुरु या संस्था-स्वामित्व पवित्रक",
+          "difference": "धातु, रेशम/धागा, पौधे, तैयारी, जाति/समुदाय भूमिका, मंत्र, वार्षिक बाध्यता और समापन उत्तर को भौतिक रूप से बदलते हैं।",
+          "source_ids": [
+            "padma-purana-shravana-putrada-deshpande",
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "fertility-or-vaishnava-authority-hi",
+          "scope": "प्रजनन-विधि या अलग पंचांग प्राधिकार",
+          "difference": "प्रजनन-दावे, निजी डेटा, उपवास, पारण, मंत्र, पात्रता या अलग नागरिक तिथि को अपना नामित प्राधिकार और सुरक्षा समीक्षा चाहिए।",
+          "source_ids": [
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-or-temple-hi",
+          "scope": "पेशेवर देखभाल, पशु-कल्याण या नामित संस्था",
+          "difference": "चिकित्सकीय देखभाल, पशु हस्तक्षेप और जीवित संस्था कार्यक्रम अलग मार्ग हैं।",
+          "source_ids": [
+            "devam-shravana-putrada-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन और जल सहित, विश्रामपूर्ण, बिना जागरण, बिना अग्नि, बिना पशु-स्पर्श, बिना खरीद, बिना पवित्रक, बिना धागा, बिना अंगूठी, बिना खुलासा, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "गर्भावस्था, गर्भ-समापन, गर्भपात, प्रजनन, यौन इतिहास, चिकित्सा रिकॉर्ड, गोद योजना या इच्छित बच्चे का लिंग कभी न पूछें; गोपनीय कानूनी देखभाल को न शर्मिंदा या बाधित करें।",
+        "किसी से न कहें कि निस्संतानता, गर्भ-हानि, विकलांगता, बीमारी या बच्चे का लिंग दंड, कर्म, अशुद्धि या नैतिक विफलता है।",
+        "पुत्र, गर्भधारण, गर्भ, स्वस्थ जन्म, प्रजनन इलाज, उपचार सफलता, पाप-मुक्ति, स्वर्ग, मुक्ति या परिवार-स्वीकृति का वचन न दें।",
+        "इस मार्ग से अपरिचित पशु के पास न जाएँ, छुएँ, खिलाएँ, पानी दें, रोकें या बचाएँ; वास्तविक कल्याण चिंता पर योग्य स्थानीय सहायता लें।",
+        "जाति, जनजाति, जन्म, परिवार, लिंग, बच्चा-स्थिति, संप्रदाय, पेशा, धन, पालन, विकलांगता, स्वास्थ्य या प्रजनन इतिहास से गरिमा न तौलें।",
+        "किसी दूसरे की आशा के लिए कोई उपवास, जागरण, पुण्य-हस्तांतरण, प्रार्थना, पैसा, यौन संबंध, गर्भ, प्रसव, प्रजनन श्रम या किसी लिंग का बच्चा बकाया नहीं।",
+        "अनाम रानी की अनुपस्थित इच्छा सहमति नहीं और सामूहिक भक्ति दूसरे के शरीर पर परिवार या समुदाय नियंत्रण नहीं देती।",
+        "सोना, चाँदी, ताँबा, रेशम, कपास, कमल, कुश, काश, धागा, अंगूठी, गुरु और जाति-नामित मंत्र भूमिकाएँ स्रोत के औपचारिक पवित्रक अनुच्छेद की हैं, इस सामान्य प्रक्रिया की नहीं।",
+        "गंभीर हानि उपवास, पुण्य-हस्तांतरण, पवित्रक, श्रवण या पछतावे से नहीं मिटती; जवाबदेही, योग्य देखभाल और कानून रखें।",
+        "रचित का अर्थ केवल यह नामित पुस्तकालय मार्ग है; यह दिन-कार्ड पर प्रक्षेपित, होस्ट, स्वतंत्र रिलीज-समीक्षित या प्रकाशित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
