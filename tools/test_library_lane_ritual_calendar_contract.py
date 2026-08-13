@@ -23,6 +23,9 @@ BASANT_OWNER_LINK = (
 HOLIKA_PACK = (
     LANE / "packs" / "holika-dahan-north-india-household-participant-2027-v1.json"
 )
+HOLI_PACK = (
+    LANE / "packs" / "holi-dhulandi-north-india-consent-led-household-2027-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -729,14 +732,15 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 4
-    assert progress["remaining_authoring_items"] == 204
+    assert progress["completed_after_freeze"] == 5
+    assert progress["remaining_authoring_items"] == 203
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
         "thai-pongal-tamil-household-participant-2027-v1",
         "basant-panchami-north-and-east-household-participant-2027-v1",
         "holika-dahan-north-india-household-participant-2027-v1",
+        "holi-dhulandi-north-india-consent-led-household-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -1087,3 +1091,118 @@ def test_holika_major_difference_timing_and_adversarial_safety_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "होलिका दहन".encode("utf-8") in raw
     assert HOLIKA_PACK.stat().st_size < 100_000
+
+
+def test_holi_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(HOLI_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["observance_slugs"] == ["holi-colour-day"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 11
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_holi_is_bilingual_actionable_with_complete_no_colour_form():
+    pack = load(HOLI_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 3
+        assert len(entry["typical_practices"]) == 4
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["minimum"]["form"] == "accessible_short"
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    assert "greeting-only holi" in localized["en"]["procedures"][0]["label"].lower()
+    assert "केवल-अभिवादन होली" in localized["hi"]["procedures"][0]["label"]
+
+
+def test_holi_consent_safety_timing_and_major_difference_boundaries():
+    pack = load(HOLI_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "22 March" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {
+            variant["variant_id"].removesuffix("-hi"): variant
+            for variant in entry["variants"]
+        }
+        for variant_id in (
+            "greeting-dry-or-limited-water",
+            "natural-colour-food-music-choice",
+            "north-colour-day-aliases",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "rang-panchami-later-day",
+            "dol-hola-shigmo-yaoshang-lathmar",
+            "temple-deity-colour-service",
+            "intoxicant-preparation-or-service",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "consent is not implied",
+        "reversible",
+        "separate choices",
+        "no balloons",
+        "does not mean hypoallergenic",
+        "do not rub",
+        "children",
+        "never colour pets",
+        "disclose allergens",
+        "never hide bhang",
+        "does not guarantee",
+        "112",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "सहमति निहित नहीं",
+        "वापस ली जा सकती",
+        "अलग चुनाव",
+        "गुब्बारा",
+        "एलर्जी-मुक्त नहीं",
+        "आंख न रगड़ें",
+        "बच्चे",
+        "पालतू",
+        "एलर्जेन",
+        "भांग/शराब/नशा न छिपाएं",
+        "गारंटी नहीं",
+        "112",
+    ):
+        assert term in localized["hi"]
+
+    raw = HOLI_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "होली / धुलंडी".encode("utf-8") in raw
+    assert HOLI_PACK.stat().st_size < 100_000
