@@ -1,0 +1,250 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "mahalaya-pitru-devi-regional-and-broadcast-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "mahalaya-to-existing-pitru-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-bengal-transition-listening-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_safety_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Mahalaya reuses only the safe private remembrance boundary",
+        "hi": "Mahalaya केवल safe private remembrance boundary reuse करती है"
+      },
+      "scope": {
+        "statement": "The existing Delhi 2026 content supplies privacy and no-result boundaries but does not own Bengal 2027 listening or formal Shraddha.",
+        "geography_codes": [
+          "IN-WB",
+          "IN-DL"
+        ],
+        "tradition_codes": [
+          "bengali-mahalaya-transition"
+        ],
+        "time_scope": "Locally resolved Mahalaya Amabasya",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "ritual/pitru-paksha-delhi-remembrance-content-v1",
+          "claim_scope": "Partial private remembrance and applicability boundary."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-mahalaya-research",
+          "claim_scope": "Reuse is limited and not silently counted."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "mahalaya-to-sarva-pitru-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-bengal-transition-listening-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya"
+      },
+      "relationship_family": "practice",
+      "predicate": "must_route_formal_ancestor_practice_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Sarva Pitru ancestor practice is a separate route",
+        "hi": "Sarva Pitru ancestor practice अलग route है"
+      },
+      "scope": {
+        "statement": "Ancestor applicability, performer, Shraddha, tarpan, materials and closing are not part of the Bengal listening lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "sarva-pitru-amavasya"
+        ],
+        "time_scope": "Locally resolved Mahalaya Amabasya",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-lunar-phase-disposition",
+          "claim_scope": "Sarva Pitru is a separately frozen denominator item."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "mahalaya-to-tamil-amavasai-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-bengal-transition-listening-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-amavasai-tamil"
+      },
+      "relationship_family": "practice",
+      "predicate": "must_route_tamil_water_practice_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Tamil Mahalaya Amavasai is a separate route",
+        "hi": "Tamil Mahalaya Amavasai अलग route है"
+      },
+      "scope": {
+        "statement": "Tamil timing, water/tharpanam, priest and safety authority are materially distinct and remain unresolved owner work.",
+        "geography_codes": [
+          "IN-TN"
+        ],
+        "tradition_codes": [
+          "tamil-mahalaya-amavasai"
+        ],
+        "time_scope": "Locally resolved Mahalaya Amabasya",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-lunar-phase-disposition",
+          "claim_scope": "Tamil Mahalaya is a separately frozen denominator item."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "mahalaya-to-odia-amabasya-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-bengal-transition-listening-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-amabasya-odia"
+      },
+      "relationship_family": "practice",
+      "predicate": "must_route_odia_practice_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Odia Mahalaya Amabasya is a separate route",
+        "hi": "Odia Mahalaya Amabasya अलग route है"
+      },
+      "scope": {
+        "statement": "Odia timing, temple, local story and ordered practice are materially distinct and remain unresolved owner work.",
+        "geography_codes": [
+          "IN-OD"
+        ],
+        "tradition_codes": [
+          "odia-mahalaya-amabasya"
+        ],
+        "time_scope": "Locally resolved Mahalaya Amabasya",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-lunar-phase-disposition",
+          "claim_scope": "Odia Mahalaya is a separately frozen denominator item."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "mahalaya-to-devi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-bengal-transition-listening-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/devi-mahatmya-mahishasura-and-durga-puja-owner"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_devi_story_and_puja_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The full Devi story and Durga Puja belong to the Devi owner",
+        "hi": "Full Devi story और Durga Puja Devi owner के हैं"
+      },
+      "scope": {
+        "statement": "The pack uses only the official compact victory association; full Devi Mahatmya narrative, Chandi Path, theology and puja are not reconstructed.",
+        "geography_codes": [
+          "IN-WB",
+          "IN"
+        ],
+        "tradition_codes": [
+          "devi-mahatmya",
+          "durga-puja"
+        ],
+        "time_scope": null,
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "official_current",
+          "ref": "wb-aasan-puja-portal-2026",
+          "claim_scope": "Compact current West Bengal Durga-Mahishasura and season association."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-mahalaya-research",
+          "claim_scope": "Full story and ritual remain owner work."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "mahalaya-to-current-broadcast-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mahalaya-bengal-transition-listening-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/prasar-bharati-mahalaya-current-programme"
+      },
+      "relationship_family": "association",
+      "predicate": "requires_current_authorised_schedule_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Use a current authorised Mahalaya programme schedule",
+        "hi": "Current authorised Mahalaya programme schedule लें"
+      },
+      "scope": {
+        "statement": "Historical Prasar Bharati records establish a recurring broadcast practice but not the current station, time, language, access, replay or recording rights.",
+        "geography_codes": [
+          "IN-WB",
+          "IN"
+        ],
+        "tradition_codes": [
+          "public-service-listening"
+        ],
+        "time_scope": null,
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "official_current",
+          "ref": "prasar-annual-2023-24",
+          "claim_scope": "Official historical live Mahalaya programme evidence."
+        },
+        {
+          "evidence_kind": "official_current",
+          "ref": "prasar-navratri-2021",
+          "claim_scope": "Official historical dawn programme evidence."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
