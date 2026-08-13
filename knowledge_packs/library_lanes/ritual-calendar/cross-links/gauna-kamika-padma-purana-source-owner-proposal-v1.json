@@ -1,0 +1,51 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-gauna-kamika-padma-purana-source-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "gauna-kamika-to-padma-purana-mahatmya-source-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/gauna-kamika-ekadashi-india-calendar-authority-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-kamika-mahatmya-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_kamika_mahatmya_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Kamika mahatmya",
+        "hi": "कामिका का पूरा स्रोत-नामित माहात्म्य पढ़ें"
+      },
+      "scope": {
+        "statement": "The Gauna pack reuses the bounded chapter-54 Kamika mahatmya but finds no Gauna calculation rule or separate Gauna story in it. A future owner should preserve the nested dialogue, absence of developed origin story, sensitive source language and distinction between fixed source context and current calendar authority.",
+        "geography_codes": [
+          "india"
+        ],
+        "tradition_codes": [
+          "gauna-ekadashi-calendar-authority"
+        ],
+        "time_scope": "Explicit locally resolved Gauna Kamika; reviewed 2027 fixture 30 July, separate from ordinary 29 July and same-date Vaishnava authority",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 54; Sanskrit, edition and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365631.html",
+          "claim_scope": "Reviewed chapter-54 mahatmya and absence of a Gauna rule."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/gauna-kamika-ekadashi-india-calendar-authority-2027-v1.json",
+          "claim_scope": "Bilingual Gauna applicability, deterministic dependency, safe procedures, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
