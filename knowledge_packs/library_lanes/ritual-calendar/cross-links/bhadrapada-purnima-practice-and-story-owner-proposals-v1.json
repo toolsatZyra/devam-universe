@@ -1,0 +1,137 @@
+{
+    "contract":  "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+    "proposals":  [
+                      {
+                          "proposal_id":  "bhadrapada-to-satyanarayana-owner",
+                          "from_ref":  {
+                                           "lane_local_id":  "ritual-calendar/bhadrapada-purnima-recurring-household-2027-v1"
+                                       },
+                          "to_ref":  {
+                                         "lane_local_id":  "ritual-calendar/satyanarayana-vrata-household-source-owner"
+                                     },
+                          "relationship_family":  "practice",
+                          "predicate":  "shares_date_with_distinct_named_practice",
+                          "directionality":  "directed",
+                          "consumer_label":  {
+                                                 "en":  "A family Satyanarayana Puja is a separate named route",
+                                                 "hi":  "पारिवारिक सत्यनारायण पूजा अलग नामित मार्ग है"
+                                             },
+                          "scope":  {
+                                        "statement":  "Current practitioner evidence links Bhadrapada Purnima with Satyanarayana Puja, but its katha, sankalpa, offerings, prasada and officiation are not generic Purnima practice. The identified Gita Press lead is permission-pending and no text is copied.",
+                                        "geography_codes":  [
+                                                                "IN"
+                                                            ],
+                                        "tradition_codes":  [
+                                                                "monthly-purnima-recurring",
+                                                                "family-specific-hindu"
+                                                            ],
+                                        "time_scope":  "Locally resolved Bhadrapada Shukla Purnima",
+                                        "source_expression_scope":  "Owner must use a lawful fixed narrative/procedure source"
+                                    },
+                          "evidence_refs":  [
+                                                {
+                                                    "evidence_kind":  "living_practice",
+                                                    "ref":  "astrosage-bhadrapada-new-delhi-2027",
+                                                    "claim_scope":  "Living same-day association, not universal procedure."
+                                                },
+                                                {
+                                                    "evidence_kind":  "devam_synthesis",
+                                                    "ref":  "gita-press-satyanarayana-lead:AQ-04688",
+                                                    "claim_scope":  "Restricted owner-source lead; permission and corpus reuse unresolved."
+                                                }
+                                            ],
+                          "confidence":  "high",
+                          "target_resolution":  "unresolved_owner_lane",
+                          "integration_status":  "proposed"
+                      },
+                      {
+                          "proposal_id":  "bhadrapada-to-existing-pitru-paksha-partial",
+                          "from_ref":  {
+                                           "lane_local_id":  "ritual-calendar/bhadrapada-purnima-recurring-household-2027-v1"
+                                       },
+                          "to_ref":  {
+                                         "lane_local_id":  "ritual/pitru-paksha-delhi-remembrance-content-v1"
+                                     },
+                          "relationship_family":  "practice",
+                          "predicate":  "precedes_or_shares_boundary_with_distinct_ancestor_route",
+                          "directionality":  "directed",
+                          "consumer_label":  {
+                                                 "en":  "Purnima Shraddha and Pitru Paksha need separate applicability",
+                                                 "hi":  "पूर्णिमा श्राद्ध और पितृ पक्ष की applicability अलग है"
+                                             },
+                          "scope":  {
+                                        "statement":  "The existing lane supplies partial death-tithi, performer and family-authority boundaries. It is not a complete 2027 national Shraddha route, does not authorise ancestor contact, and must not be merged into generic Purnima remembrance.",
+                                        "geography_codes":  [
+                                                                "IN-DL"
+                                                            ],
+                                        "tradition_codes":  [
+                                                                "smarta-north-india",
+                                                                "family-specific-hindu"
+                                                            ],
+                                        "time_scope":  "Locally resolved Purnima/Pitru Paksha boundary",
+                                        "source_expression_scope":  null
+                                    },
+                          "evidence_refs":  [
+                                                {
+                                                    "evidence_kind":  "ritual_lane",
+                                                    "ref":  "ritual/pitru-paksha-delhi-remembrance-content-v1",
+                                                    "claim_scope":  "Existing partial applicability and non-universality boundary."
+                                                },
+                                                {
+                                                    "evidence_kind":  "devam_synthesis",
+                                                    "ref":  "devam-bhadrapada-research",
+                                                    "claim_scope":  "Shared boundary does not merge procedure or authority."
+                                                }
+                                            ],
+                          "confidence":  "high",
+                          "target_resolution":  "lane_local",
+                          "integration_status":  "proposed"
+                      },
+                      {
+                          "proposal_id":  "bhadrapada-to-soma-prabhasa-story-owner",
+                          "from_ref":  {
+                                           "lane_local_id":  "ritual-calendar/bhadrapada-purnima-recurring-household-2027-v1"
+                                       },
+                          "to_ref":  {
+                                         "lane_local_id":  "story/mahabharata-shalya-soma-rohini-prabhasa-source-context"
+                                     },
+                          "relationship_family":  "story",
+                          "predicate":  "uses_lunar_change_story_context",
+                          "directionality":  "directed",
+                          "consumer_label":  {
+                                                 "en":  "The Mahabharata tells how Soma\u0027s radiance changes",
+                                                 "hi":  "महाभारत सोम की बदलती प्रभा की कथा कहता है"
+                                             },
+                          "scope":  {
+                                        "statement":  "The pack uses Shalya Parva section 35 as a complete optional lunar-change and Prabhasa story, not as Bhadrapada Purnima\u0027s origin, a bathing instruction, illness explanation, marriage rule or cure/result guarantee.",
+                                        "geography_codes":  [
+                                                                "IN"
+                                                            ],
+                                        "tradition_codes":  [
+                                                                "monthly-purnima-recurring"
+                                                            ],
+                                        "time_scope":  null,
+                                        "source_expression_scope":  "Ganguli public-domain English with Kumbhaghonam Sanskrit witness"
+                                    },
+                          "evidence_refs":  [
+                                                {
+                                                    "evidence_kind":  "source_passage",
+                                                    "ref":  "ganguli-mahabharata-soma-prabhasa:Shalya-35",
+                                                    "claim_scope":  "Complete Soma-Rohini-Daksha-Prabhasa account."
+                                                },
+                                                {
+                                                    "evidence_kind":  "source_passage",
+                                                    "ref":  "kumbhaghonam-shalya-soma-sanskrit:9.36",
+                                                    "claim_scope":  "Sanskrit witness for core complaint and equality sequence."
+                                                }
+                                            ],
+                          "confidence":  "high",
+                          "target_resolution":  "unresolved_owner_lane",
+                          "integration_status":  "proposed"
+                      }
+                  ],
+    "proposal_pack_id":  "bhadrapada-purnima-practice-and-story-owner-proposals-v1",
+    "lane_id":  "ritual-calendar",
+    "anchor_registry_version":  1,
+    "status":  "proposed_for_integration"
+}
