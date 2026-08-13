@@ -1,5 +1,13 @@
 import { DUTT_BALA_SECTION_SPAN_SHA256 } from "./ramayana-bala-source-spans";
 
+const DUTT_AYODHYA_SECTION_SPAN_SHA256: Record<number, string> = {
+  26: "eaf038b216d55a4b9ae07c60f988cdbfaf56a37b4f74ac30772deeb4072f0b02",
+  27: "d000cf4b739d7136d80c58353687e3a5cefdc90749d6bcc16ecc9587ab798f5e",
+  28: "5828869aa26e84baa69dac9f4b2827f43dc2f100a33a05fb078d53286c92ebd4",
+  29: "ebd6babf7a1f9b56d3c521e97076a4226ada19c28d6c6cfbe331a71624c6caf7",
+  30: "367c8be53b451548b55611a09d1c54287edaefe87ef2d26d6b19e1a86072f396",
+};
+
 const DUTT_ARANYA_SECTION_SPAN_SHA256: Record<number, string> = {
   54: "cefe140ee3545b0cf1cbe59c173145782c866f261365f948ee4c7211af4b3efa",
   55: "19816adc65a8d2c1691bd29ab19ac2bdfd296cf3150df8b06e96c25122276012",
@@ -416,6 +424,7 @@ const DUTT_UTTARA_SECTION_SPAN_SHA256: Record<number, string> = {
 
 const maps: Record<string, Record<number, string>> = {
   bala: DUTT_BALA_SECTION_SPAN_SHA256,
+  ayodhya: DUTT_AYODHYA_SECTION_SPAN_SHA256,
   aranya: DUTT_ARANYA_SECTION_SPAN_SHA256,
   kishkindha: DUTT_KISHKINDHA_SECTION_SPAN_SHA256,
   sundara: DUTT_SUNDARA_SECTION_SPAN_SHA256,
