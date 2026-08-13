@@ -1,0 +1,94 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "kanya-sankranti-vishwakarma-and-ramayana-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "kanya-to-existing-bengal-vishwakarma-workplace-lane",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kanya-sankranti-north-west-shared-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/vishwakarma-puja-bengal-workplace-content-v1"
+      },
+      "relationship_family": "time",
+      "predicate": "shares_date_with_distinct_practice",
+      "directionality": "bidirectional",
+      "consumer_label": {
+        "en": "Bengal Vishwakarma Puja may share this date",
+        "hi": "बंगाल विश्वकर्मा पूजा यह तारीख साझा कर सकती है"
+      },
+      "scope": {
+        "statement": "The reviewed Bengal lane associates Vishwakarma Puja with Kanya Sankranti, but its workplace, tools, machinery, organiser and shutdown/restart procedure remain distinct and must not be copied into generic Kanya remembrance.",
+        "geography_codes": [
+          "IN-WB"
+        ],
+        "tradition_codes": [
+          "north-or-shared-solar-household",
+          "regional-bengal-workplace"
+        ],
+        "time_scope": "Locally resolved Kanya Sankranti civil date",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "ritual/vishwakarma-puja-bengal-workplace-content-v1",
+          "claim_scope": "Existing lane-local owner for Bengal workplace and machinery practice."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-kanya-research",
+          "claim_scope": "Shared date association does not merge applicability, materials, safety or closing."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kanya-to-aditya-hridaya-ramayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kanya-sankranti-north-west-shared-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/valmiki-ramayana-aditya-hridaya-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_surya_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Agastya teaches Rama the Aditya Hridaya",
+        "hi": "अगस्त्य राम को आदित्य हृदय सिखाते हैं"
+      },
+      "scope": {
+        "statement": "The Kanya pack uses Yuddha Kanda 6.107 as an optional complete Surya story, not as Kanya Sankranti's origin, a generic mantra instruction, real-person enemy metaphor or result guarantee.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "north-or-shared-solar-household"
+        ],
+        "time_scope": null,
+        "source_expression_scope": "IIT Kanpur Valmiki Ramayan Sanskrit, word order and translation for Yuddha Kanda 6.107"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "iitk-valmiki-aditya-hridaya:6.107.1-31",
+          "claim_scope": "Complete Agastya-Rama battlefield teaching and attributed Surya-hymn results."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-kanya-research",
+          "claim_scope": "Ritual pack summarises but does not own the epic chapter or prescribe recitation."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
