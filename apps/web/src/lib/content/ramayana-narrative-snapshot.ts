@@ -76,6 +76,7 @@ import { RAMAYANA_VEDAVATI_KINGS_LIBRARY_SCENES } from "../../data/ramayana-veda
 import { RAMAYANA_YAMA_INVASION_LIBRARY_SCENES } from "../../data/ramayana-yama-invasion-library-scenes";
 import { RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES } from "../../data/ramayana-cosmic-conquests-library-scenes";
 import { RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES } from "../../data/ramayana-captives-family-war-library-scenes";
+import { RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES } from "../../data/ramayana-lanka-before-ravana-library-scenes";
 import { RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES } from "../../data/ramayana-chitrakoot-approach-library-scenes";
 import { RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES } from "../../data/ramayana-sagara-ganga-library-scenes";
 import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
@@ -210,6 +211,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "rama-accepts-exile",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
+    "two-lineages-reach-lanka",
     "sagara-line-brings-ganga-down",
     "chitrakoot-hears-army",
     "rambha-curse-and-indras-capture",
@@ -289,6 +291,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
+    ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
     ...RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES,
     ...RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES,
     ...RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES,
