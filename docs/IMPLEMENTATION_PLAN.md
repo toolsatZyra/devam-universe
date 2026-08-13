@@ -10,7 +10,8 @@ important variants remain mandatory internal grounding, not primary UI.
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
-compass, and all 49 turns playable through 402 substantial scenes and 1,746
+compass, and all 49 turns corpus-playable in the prepared projection through
+402 substantial scenes and 1,746
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -48,7 +49,11 @@ violence beneath new cities; Kala's sealed audience; Lakshmana's impossible
 choice, renunciation and death; the succession of Kusha, Lava and the brothers'
 sons; the differentiated futures of Hanuman, Vibhishana and the old alliance;
 Ayodhya's departure; the Sarayu crossing; and civic renewal after the
-devotional epilogue across Uttara 111–123. No turn remains orientation-only.
+devotional epilogue across Uttara 111–123. No turn remains orientation-only in
+the authored corpus or prepared database projection. The current live journey
+still illustrates 55 scenes across seven districts and gives only 14 turns a
+direct visual entrance; 35 turns still stop at orientation before their
+authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
 402 scenes and compiles 401 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
@@ -282,8 +287,15 @@ source addresses, and world routes; user-visible journey copy no longer exposes
 editorial or citation apparatus. Exact Uttara 1–123 section-span hashes were
 independently re-derived from the retained Dutt bytes and now ground 76
 substantial bilingual playable scenes containing 234 beats across the complete
-selected Uttara range. The next boundary is whole-journey adversarial review,
-not another missing compass turn.
+selected Uttara range. The first whole-journey adversarial review is complete.
+It found five thin turns that need additional narrative staging, five long
+scenes that need internal phase navigation, and five genuine source-apparatus
+leaks in consumer copy; the copy leaks are repaired. It also confirms the
+larger experience gap between the complete 402-scene authored projection and
+the 55 scenes currently illustrated in the live journey. The next boundary is
+closing that experience projection gap with lazy, reversible districts, not
+adding another compass summary or pretending corpus coverage is visual-world
+completion.
 
 The normalized narrative layer and deterministic Ramayana seed compiler keep
 all seven bilingual arcs and 49 backbone turns while publishing only scenes
