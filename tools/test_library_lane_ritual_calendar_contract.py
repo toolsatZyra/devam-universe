@@ -48,6 +48,12 @@ HANUMAN_JAYANTI_PACK = (
 HANUMAN_JAYANTI_LINKS = (
     LANE / "cross-links" / "hanuman-jayanti-epic-owner-links-v1.json"
 )
+AKSHAYA_TRITIYA_PACK = (
+    LANE / "packs" / "akshaya-tritiya-north-west-household-participant-2027-v1.json"
+)
+AKSHAYA_TRITIYA_LINK = (
+    LANE / "cross-links" / "akshaya-tritiya-mahabharata-owner-link-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -754,8 +760,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 9
-    assert progress["remaining_authoring_items"] == 199
+    assert progress["completed_after_freeze"] == 10
+    assert progress["remaining_authoring_items"] == 198
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -767,6 +773,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ugadi-yugadi-karnataka-andhra-telangana-household-2027-v1",
         "ram-navami-north-india-household-participant-2027-v1",
         "hanuman-jayanti-north-india-household-participant-2027-v1",
+        "akshaya-tritiya-north-west-household-participant-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -1564,7 +1571,7 @@ def test_rama_navami_major_difference_timing_fasting_and_temple_boundaries():
     assert calendar["live_schedule_required"] is True
     assert "15 April" in calendar["freshness_note"]
     assert "11:04–13:38" in calendar["freshness_note"]
-    assert "never copy" in calendar["freshness_note"]
+    assert "never copy" in calendar["freshness_note"].lower()
 
     for entry in pack["localized_content"]:
         variants = {
@@ -1765,3 +1772,115 @@ def test_hanuman_jayanti_major_date_material_and_safety_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "हनुमान जयंती".encode("utf-8") in raw
     assert HANUMAN_JAYANTI_PACK.stat().st_size < 100_000
+
+
+def test_akshaya_tritiya_pack_and_mahabharata_link_are_schema_valid():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(AKSHAYA_TRITIYA_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["observance_slugs"] == ["akshaya-tritiya"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 15
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    links = load(AKSHAYA_TRITIYA_LINK)
+    Draft202012Validator(link_schema).validate(links)
+    assert len(links["proposals"]) == 1
+    proposal = links["proposals"][0]
+    assert proposal["to_ref"]["canonical_id"] == "devam:source-expression:mahabharata-ganguli-consumer-v1"
+    assert proposal["target_resolution"] == "existing_anchor"
+
+
+def test_akshaya_tritiya_is_bilingual_actionable_and_keeps_evidence_layers_separate():
+    pack = load(AKSHAYA_TRITIYA_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["minimum"]["form"] == "accessible_short"
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    dutt = next(source for source in pack["sources"] if source["source_id"] == "ganguli-mahabharata-vana-3-vessel")
+    assert dutt["artifact_sha256"] == "246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826"
+    english = " ".join(story["summary"] for story in localized["en"]["origin_narratives"]).lower()
+    assert "text does not name akshaya tritiya" in english
+    assert "does not turn it into advice" in english
+    assert "current festival association" in english
+
+
+def test_akshaya_tritiya_major_difference_financial_legal_and_authority_boundaries():
+    pack = load(AKSHAYA_TRITIYA_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "9 May" in calendar["freshness_note"]
+    assert "never copy" in calendar["freshness_note"].lower()
+    assert "not the ritual completion rule" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {variant["variant_id"].removesuffix("-hi"): variant for variant in entry["variants"]}
+        for variant_id in (
+            "no-purchase-or-adult-gold-purchase",
+            "non-fasting-or-family-fast",
+            "prayer-food-charity-or-material-light",
+            "akha-teej-regional-name",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "adult-wedding-and-child-protection",
+            "odisha-jagannath-akshaya-trutiya",
+            "char-dham-portal-opening",
+            "parashurama-jayanti",
+            "jain-akshaya-tritiya",
+            "tarpan-havan-or-priest-led-service",
+            "full-mahabharata-story",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    boundaries = {entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower() for entry in pack["localized_content"]}
+    for term in (
+        "not a universal national ritual", "does not date", "not a household rule",
+        "no purchase is required", "six-character huid", "do not promise prosperity",
+        "recipient privacy", "fasting is optional", "eating-disorder history",
+        "allergens", "child marriage is prohibited", "1098", "free consent",
+        "not legal or financial advice", "local/live", "not a national clock interval",
+    ):
+        assert term in boundaries["en"]
+    for term in (
+        "सार्वभौम राष्ट्रीय अनुष्ठान", "तिथि नहीं देता", "गृह-नियम नहीं",
+        "कोई खरीद आवश्यक नहीं", "छह-अक्षरी huid", "गारंटी न दें",
+        "फोटो या प्रचार", "उपवास वैकल्पिक", "भोजन-विकार का इतिहास",
+        "एलर्जेन", "बाल विवाह प्रतिबंधित", "1098", "स्वतंत्र सहमति",
+        "कानूनी/वित्तीय सलाह नहीं", "स्थानीय/जीवित", "राष्ट्रीय घड़ी नहीं",
+    ):
+        assert term in boundaries["hi"]
+
+    raw = AKSHAYA_TRITIYA_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "अक्षय तृतीया".encode("utf-8") in raw
+    assert AKSHAYA_TRITIYA_PACK.stat().st_size < 100_000

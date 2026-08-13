@@ -124,3 +124,17 @@ anchors without copying owner content.
 Exact accepted-authoring coverage is now **9 completed after freeze / 199
 remaining / 208 total**. Verified day-answer cells remain **0 / 19,480**;
 authored is not projected, hosted, released or published.
+
+The tenth post-freeze item is complete at the bilingual authored-library layer:
+`akshaya-tritiya-north-west-household-participant-2027-v1`. Its no-purchase,
+non-fasting core combines source-labelled story with one affordable act of
+food-sharing, charity, repair or service. Gold/no gold, fast/non-fast and minor
+Akha Teej naming stay within the lane. Adult marriage and child-protection,
+Odisha Jagannath operations, Char Dham openings, Jain practice, Parashurama
+Jayanti and formal tarpan/havan remain separate because authority, eligibility,
+law, timing or ordered action changes materially. A typed proposal points to
+the existing Ganguli Mahabharata anchor without copying the full epic story.
+
+Exact accepted-authoring coverage is now **10 completed after freeze / 198
+remaining / 208 total**. Verified day-answer cells remain **0 / 19,480**;
+authored is not projected, hosted, released or published.
