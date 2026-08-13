@@ -271,3 +271,20 @@ Exact accepted-authoring coverage is now **18 completed after freeze / 190
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The nineteenth post-freeze item is complete at the bilingual authored-library
+layer: `shattila-ekadashi-north-west-smarta-household-2027-v1`. It preserves
+the reviewed 2 February 2027 fixture and keeps Sattila/Shat Tila as searchable
+aliases rather than state copies. Its complete ordinary core is sesame-free and
+non-fasting: Vishnu/Krishna remembrance, a Padma-Purana-labelled account, the
+difference between self-denial and useful care, and one requested item or
+service. The chapter's six sesame uses remain a textual list, not six consumer
+steps. Language, sesame colour, food style, image/no-image and safe sesame/no-
+sesame context stay within the lane; the full body/fire rite, formal gift and
+recipient hierarchy, named temple programme and other named Ekadashis remain
+separate because authority, safety or ordered action changes materially.
+
+Exact accepted-authoring coverage is now **19 completed after freeze / 189
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

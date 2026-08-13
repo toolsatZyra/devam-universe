@@ -1,0 +1,32 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-shattila-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "shattila-to-padma-purana-unnamed-woman-story-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/shattila-ekadashi-north-west-smarta-household-2027-v1"},
+      "to_ref": {"lane_local_id": "story/padma-purana-shattila-unnamed-woman-source-context"},
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_shattila_unnamed_woman_context",
+      "directionality": "directed",
+      "consumer_label": {"en": "Read the full source-labelled Shattila account", "hi": "षटतिला की पूरी स्रोत-नाम वाली कथा पढ़ें"},
+      "scope": {
+        "statement": "The ritual pack uses a bounded retelling from the reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 42. A future story/scripture owner should provide the lawful full expression, Sanskrit/edition coordinates and reception context while preserving the six sesame uses, bodily mortification, failure to give useful food, clay gift, empty house and attributed abundance as textual facts rather than universal instructions or guarantees.",
+        "geography_codes": ["north-india", "west-india"],
+        "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+        "time_scope": "Locally resolved Magha Krishna Ekadashi; reviewed 2027 fixture 2 February",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 42; Sanskrit, edition and reception owner review unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "source_passage", "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365619.html", "claim_scope": "Reviewed chapter 42 expression naming Shattila, listing six sesame uses and narrating the unnamed woman's fasting, clay gift, empty house and attributed abundance."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/shattila-ekadashi-north-west-smarta-household-2027-v1.json", "claim_scope": "Bilingual timing, source-labelled story, sesame-free household action, allergen/fire safety, useful giving, closing and major-variant routing."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

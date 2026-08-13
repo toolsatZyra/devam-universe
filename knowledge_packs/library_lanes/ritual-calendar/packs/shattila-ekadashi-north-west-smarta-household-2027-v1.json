@@ -1,0 +1,292 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "shattila-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["shattila-ekadashi"],
+  "applicability": {
+    "region_codes": ["north-india", "west-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Magha Krishna Ekadashi for you?",
+      "Does your family or sampradaya use the spelling Shattila, Sattila or Shat Tila, and does that authority prescribe a materially different action or close?",
+      "Does anyone who may touch, eat or receive food have a sesame allergy, sensitivity, uncertain allergy status or cross-contact concern?",
+      "Does your family already have an Ekadashi fast, sesame practice, donation recipient, prayer, reading or parana rule?",
+      "Would a sesame-free, non-fasting, no-flame, image-free and material-free route be safer today?"
+    ],
+    "context_pairs": [
+      {"region_code": "north-india", "tradition_code": "smarta-north-india", "observance_slug": "shattila-ekadashi"},
+      {"region_code": "west-india", "tradition_code": "smarta-west-india", "observance_slug": "shattila-ekadashi"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "shattila-ekadashi", "language_code": "en", "note": "This ordinary North/West Smarta household lane keeps Sattila/Shat Tila as searchable names when date, authority and action are unchanged. It does not turn the Padma Purana's six sesame uses, fire sacrifice, body rubbing, formal gifts or fast into universal household instructions."},
+      {"observance_slug": "shattila-ekadashi", "language_code": "hi", "note": "यह सामान्य उत्तर/पश्चिम स्मार्त गृह-मार्ग है। तिथि, प्राधिकार और क्रम समान हों तो सततिला/षट तिला खोज-नाम हैं। पद्म पुराण के तिल के छह उपयोग, अग्नि-यज्ञ, शरीर पर तिल, औपचारिक दान या उपवास को सार्वभौम गृह-निर्देश नहीं बनाया गया है।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-shattila-2027", "devam-ekadashi-rule-audit"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "shattila-magha-krishna-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "shattila-nonfast-useful-care-or-established-authority-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North-reference, Gujarati, Maharashtra, Haryana, Malayalam and ISKCON discovery fixtures place Shattila Ekadashi on Tuesday 2 February 2027. Sattila and Shat Tila are searchable aliases unless evidence changes timing, authority or action. Recompute for the user's Indian city and accepted Panchang; do not copy a displayed tithi, parana clock time or this date into another year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-shattila-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 42: The Vow of Shattila Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed source-labelled account of the six sesame uses and the unnamed woman's fasting, clay gift, empty house and later attributed abundance; detailed vrata and results are not universal consumer instructions",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365619.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Uttara Khanda chapter 42", "reviewed_lines": "56-90", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "drik-shattila-2027",
+      "title": "2027 Shattila Ekadashi Indian calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "calendar discovery evidence for Tuesday 2 February 2027 across reviewed Indian regional profiles; no portable parana authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?time-format=24hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-02-02", "lunar_identity": "Magha Krishna Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen Shattila identity, Sattila alias and applicability boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"}
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu/Krishna remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"paths": ["knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json", "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"]}
+    },
+    {
+      "source_id": "fssai-sesame-allergen",
+      "title": "Handling Allergen Guests and allergen-control guidance",
+      "publisher": "Food Safety and Standards Authority of India",
+      "source_role": "official food-safety evidence identifying sesame and sesame products as allergens and requiring cross-contact controls",
+      "rights_lane": "citation_only",
+      "url": "https://hygiene.fssai.gov.in/files/reports/quiz15152547_sop%20-handling%20allergen%20guest-%2008.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "sesame seeds and products; separate preparation and cleaned utensils", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "Fasting and Feasting in T1DM", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-shattila-research",
+      "title": "Shattila Ekadashi North/West Smarta household research dossier",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of sesame-free applicability, allergen and fire boundaries, useful charity, substitutions and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/shattila-ekadashi-north-west-smarta-household-2027-v1.md"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["shattila-ekadashi"],
+      "title": "Shattila Ekadashi: restraint joined to useful care",
+      "short_answer": "First confirm that your city and accepted Smarta Panchang identify Shattila Ekadashi today. A complete home form is sesame-free and non-fasting: remember Vishnu or Krishna, hear the Padma-Purana-labelled account, reflect that self-denial does not replace useful care, ask or verify what one recipient actually needs, and give or schedule one safe item or service. Sesame, a bath, body rubbing, havan, flame, special gift, fast and temple visit are not required.",
+      "significance": {
+        "text": "Shattila is associated in Padma Purana chapter 42 with six uses of sesame, but the chapter's narrative also contrasts intense fasting with failure to give useful food. Devam preserves both textual elements without making sesame or bodily mortification mandatory. The bounded meaning is that restraint and worship should not replace practical, recipient-led care.",
+        "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"],
+        "scope_note": "Source-labelled reflection; not a guaranteed karmic mechanism, medical advice or a universal six-sesame ritual."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "shattila-unnamed-woman-en",
+          "title": "The Padma Purana's account of the fasting woman and the empty house",
+          "summary": "In Uttara Khanda chapter 42, Krishna identifies Magha Krishna Ekadashi as Shattila and presents Pulastya's teaching to Dalabhya. The chapter reports an elaborate vrata and six uses of sesame: bathing, rubbing the body, sacrifice, water offering, giving and eating. It then tells of an unnamed Brahmana woman devoted to vows who repeatedly fasted and, in the chapter's words, tormented her body, yet did not give food to people who begged. Krishna approaches in a begging form; in anger she throws a lump of clay into his vessel. The text says she later receives a beautiful but empty house corresponding to that gift, learns the Shattila account, and gains abundance. Devam treats this as a textual teaching about useful giving, not history or a promise. It does not praise self-starvation, test recipients, reproduce caste hierarchy, or promise absolution, heaven, beauty, grain, clothing, wealth or health.",
+          "tradition_scope": "Padma Purana, Uttara Khanda chapter 42 in the reviewed Deshpande English expression",
+          "source_ids": ["padma-purana-shattila-deshpande"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {"practice_id": "ordinary-shattila-household-en", "population_scope": "North/West ordinary Smarta households after local date resolution", "description": "Households may remember Vishnu/Krishna, read a Shattila account, use or donate sesame, give food or another useful item, and follow an inherited Ekadashi vrata. Sesame forms, recipient rules, fasting and close vary and are not universal.", "source_ids": ["padma-purana-shattila-deshpande", "devam-ekadashi-recurring-scaffold"], "instructional": false},
+        {"practice_id": "ordinary-shattila-temple-en", "population_scope": "Invited ordinary participant at a named Vishnu/Krishna temple", "description": "A temple may publish sesame, fire, worship, donation, food and parana practices. Its live schedule, allergy controls, eligibility and staff instructions govern; the visitor does not imitate priest-led actions from this guide.", "source_ids": ["devam-shattila-research", "devam-ekadashi-recurring-scaffold"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "shattila-en-minimum-v1", "label": "Sesame-free remembrance and useful care", "tier": "minimum", "setting": "individual", "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution", "form": "accessible_short", "estimated_minutes": 12,
+          "materials": [
+            {"item": "A quiet safe place", "required": true, "substitutions": ["Sit safely where you are"], "source_ids": ["devam-ekadashi-recurring-scaffold"]},
+            {"item": "A safe way to note one requested item or service", "required": false, "substitutions": ["A mental note", "Directly complete a small service"], "source_ids": ["devam-shattila-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm that Today or your accepted local Smarta Panchang identifies Shattila Ekadashi for your exact city. Sattila/Shat Tila spelling alone does not change the route; a different authority or close does.", "why": "Date and authority must be resolved before guidance is applied.", "source_ids": ["drik-shattila-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "Keep the space sesame-free unless every affected person and intended recipient has confirmed that sesame is safe. No sesame is required.", "why": "Sesame is a food allergen and cross-contact can harm people who do not eat it directly.", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Sit safely and remember Vishnu or Krishna with a family-known name or prayer; silence is complete.", "why": "This preserves devotion without inventing a universal mantra.", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 42. Name the six sesame uses as the chapter's list, not six mandatory actions.", "why": "The source can be preserved without universalising body, fire, food or donation instructions.", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Reflect on the difference between self-denial and useful care. Ask a known person or verified organisation what small item or service is actually wanted and safe.", "why": "Recipient-led help avoids the story's empty token gift and reduces waste.", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 6, "instruction": "Give or schedule one affordable requested item or service. A sesame-free food, hygiene item, clothing item, time, repair or direct service is complete; do not borrow or expect access, gratitude or publicity.", "why": "Care should be useful and within means, not transactional.", "source_ids": ["devam-shattila-research"], "optional": false},
+            {"ordinal": 7, "instruction": "Close with gratitude, preserve the recipient's privacy and complete the action. Eat, drink, rest and take medicines normally unless your clinician and established authority have supplied a safe plan.", "why": "The non-fasting close is complete and health takes priority.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-shattila-research"], "optional": false}
+          ],
+          "closing": {"text": "Close with gratitude and the useful-care action. This sesame-free route starts no fast, fire, bath or body application and therefore needs no parana instruction.", "source_ids": ["devam-shattila-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "An inherited vrata or parana remains with the responsible family, temple or sampradaya authority and the person's clinician where needed."},
+          "source_ids": ["padma-purana-shattila-deshpande", "drik-shattila-2027", "devam-ekadashi-recurring-scaffold", "fssai-sesame-allergen", "icmr-type1-diabetes-fasting", "devam-shattila-research"]
+        },
+        {
+          "procedure_id": "shattila-en-family-v1", "label": "Family reading, allergy check and requested giving", "tier": "standard", "setting": "family_led", "authority_scope": "family-guided non-fasting or already-established safe household form", "form": "traditional_household", "estimated_minutes": 30,
+          "materials": [
+            {"item": "Source-labelled chapter summary or identifiable edition", "required": true, "substitutions": ["Listen to the labelled summary", "Use the minimum route"], "source_ids": ["padma-purana-shattila-deshpande"]},
+            {"item": "One requested item or service; sesame only after explicit safety confirmation", "required": false, "substitutions": ["Sesame-free food", "Hygiene or clothing item", "Time or direct service", "No material; schedule a safe action"], "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the date and ask who wishes to participate. Before sesame enters the space, check every participant and recipient for allergy or cross-contact concerns; uncertainty means use no sesame.", "why": "Consent and allergen safety precede symbolism.", "source_ids": ["drik-shattila-2027", "fssai-sesame-allergen"], "optional": false},
+            {"ordinal": 2, "instruction": "Begin with familiar Vishnu/Krishna remembrance or silence. Do not add an unfamiliar mantra, body rub, sesame bath, fire offering or priestly sankalpa.", "why": "Those actions materially change authority and safety.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-shattila-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Read the coherent source-labelled account and discuss why severe fasting without useful care is not the consumer model.", "why": "The chapter itself contrasts bodily mortification with failure to feed or help.", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Verify one recipient and what is wanted. Give directly within means or use an official payment route; disclose every food allergen and obtain consent before photographs or public mention.", "why": "Useful, safe and private giving is more responsible than a symbolic token or unverified transfer.", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Close before fatigue. Store food securely, clean any sesame contact area and utensils, extinguish every flame, and record only the action—not the recipient's private details.", "why": "The close prevents cross-contact, pest, fire and privacy harm.", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false}
+          ],
+          "closing": {"text": "Offer gratitude in the family's familiar way, complete the agreed useful gift or service, and leave the space food-safe and flame-free. Do not calculate parana from this guide.", "source_ids": ["devam-ekadashi-recurring-scaffold", "fssai-sesame-allergen", "devam-shattila-research"], "scope_note": "An established family fast remains optional, health-sensitive and under its own authority."},
+          "source_ids": ["padma-purana-shattila-deshpande", "drik-shattila-2027", "devam-ekadashi-recurring-scaffold", "fssai-sesame-allergen", "devam-shattila-research"]
+        },
+        {
+          "procedure_id": "shattila-en-temple-v1", "label": "Ordinary participant at a named temple", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "visitor participation only; institution controls liturgy, allergens, fire, gifts and close", "form": "institutional_participation", "estimated_minutes": 45,
+          "materials": [{"item": "Verified official live schedule, allergen information and safe travel plan", "required": true, "substitutions": ["Official remote programme", "Stay home and use the minimum route"], "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the temple's official date, hours, entry, accessibility, crowd, sesame/allergen, fire, donation, food, photography and safeguarding rules.", "why": "A calendar label does not prove a live or safe institutional programme.", "source_ids": ["drik-shattila-2027", "fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Attend only as an ordinary participant. Do not imitate havan, sesame sacrifice, body rubbing, bath, formal gift, mantra, fast or parana from this guide.", "why": "These acts require separate authority, eligibility and safety controls.", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Disclose allergy needs, decline unsafe food, touch, payment or photography, keep children with their guardian, and leave if smoke, crowd or cross-contact makes participation unsafe.", "why": "Devotion does not waive health, consent or safeguarding.", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Return safely and complete one verified useful sesame-free gift or service without claiming absolution, prosperity, health or another result.", "why": "The consumer close remains practical and non-transactional.", "source_ids": ["devam-shattila-research"], "optional": false}
+          ],
+          "closing": {"text": "Follow the institution's visitor exit and close. If reliable allergen, fire or schedule information is absent, stay home; the sesame-free household route is complete.", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "scope_note": "Only the institution controls its worship, formal giving, food and parana."},
+          "source_ids": ["drik-shattila-2027", "fssai-sesame-allergen", "devam-shattila-research"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "name-language-sesame-and-household-form", "scope": "Ordinary North/West household", "difference": "Shattila/Sattila/Shat Tila spelling, language, sesame colour, ordinary food style, image/no-image, familiar prayer, sesame/no-sesame and safe non-fast/established-fast context do not create state copies.", "source_ids": ["devam-ekadashi-rule-audit", "devam-shattila-research"], "separate_lane_required": false},
+        {"variant_id": "formal-six-sesame-body-fire-rite", "scope": "Full textual or priest-led vrata", "difference": "Bathing, body rubbing, sacrifice, water offering, formal sesame giving and eating change safety, authority, materials and ordered action and require a separate authorised route.", "source_ids": ["padma-purana-shattila-deshpande", "fssai-sesame-allergen", "devam-shattila-research"], "separate_lane_required": true},
+        {"variant_id": "formal-recipient-and-gift-hierarchy", "scope": "Priest-led or inherited gift rite", "difference": "Recipient eligibility, cow or formal goods, mantra, payment and closing cannot be inferred or replaced by this ordinary useful-care route.", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme", "scope": "Named Vishnu/Krishna institution", "difference": "Live timing, fire, allergens, liturgy, eligibility, donation, food and close belong to the institution.", "source_ids": ["devam-shattila-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi", "scope": "Another monthly Ekadashi", "difference": "Another named Ekadashi has its own lunar identity and source-labelled account even when the safe devotional scaffold is reusable.", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "A sesame-free, non-fasting, no-flame, no-purchase, image-free and material-free form is complete.",
+        "Sesame and sesame products are food allergens. Ask before serving or donating, disclose sesame clearly, prevent cross-contact and use no sesame when safety is uncertain.",
+        "Do not ingest, taste, touch, bathe with or rub sesame on the body when allergy or sensitivity is known or uncertain. Skin application is not an allergy test.",
+        "Keep loose seeds and oil contained and away from small children and animals. Never pour oil or seed mixtures into drains, rivers, soil or public places.",
+        "Sesame havan or any fire offering is outside this route. No flame is required; smoke, burns, ventilation, fuel and authority materially change the action.",
+        "The chapter's six sesame uses are a textual list, not six mandatory consumer steps. Do not copy 108 cow-dung/cotton balls, vigil, formal mantra, cow gift or recipient hierarchy.",
+        "The unnamed woman's bodily mortification is not a model. Children, pregnant/breastfeeding people, older adults, people with diabetes or another condition, anyone taking medicine with food, people with eating-disorder history, or people doing heat/heavy labour must not start or intensify fasting from Devam.",
+        "Do not change insulin, medicine, meals or hydration. Type 1 diabetes is a high-risk fasting context.",
+        "Give only what a recipient wants and can safely use. Charity must not cause debt, buy access, gratitude, conversion, labour, touch, data or publicity; never share OTP, bank credentials or identity documents with an unverified claimant.",
+        "No absolution, heaven, beauty, grain, clothing, wealth, health, freedom from poverty, merit or other result is guaranteed.",
+        "Authored means this named library lane only; it is not projected to day cards, hosted, independently release-reviewed or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["shattila-ekadashi"],
+      "title": "षटतिला एकादशी: संयम के साथ उपयोगी देखभाल",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य स्मार्त पंचांग में आज षटतिला एकादशी है। घर का पूर्ण रूप तिल-रहित और बिना-उपवास है—विष्णु या कृष्ण का स्मरण करें, पद्म-पुराण नाम वाली कथा सुनें, समझें कि आत्म-कष्ट उपयोगी देखभाल का विकल्प नहीं, किसी एक प्राप्तकर्ता की वास्तविक जरूरत पूछें/जाँचें और सुरक्षित वस्तु या सेवा दें/तय करें। तिल, स्नान, शरीर पर तिल, हवन, लौ, विशेष दान, उपवास और मंदिर जाना अनिवार्य नहीं है।",
+      "significance": {"text": "पद्म पुराण अध्याय 42 षटतिला को तिल के छह उपयोगों से जोड़ता है, पर उसकी कथा कठोर उपवास और उपयोगी भोजन न देने का अंतर भी दिखाती है। देवम दोनों ग्रंथ-तत्व सुरक्षित रखता है, तिल या शरीर-कष्ट को अनिवार्य नहीं बनाता। सीमित अर्थ है—संयम और पूजा वास्तविक, प्राप्तकर्ता-निर्देशित देखभाल का स्थान न लें।", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "scope_note": "स्रोत-नाम वाला चिंतन; निश्चित कर्मफल, चिकित्सा-सलाह या सार्वभौम छह-तिल अनुष्ठान नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "shattila-unnamed-woman-hi", "title": "पद्म पुराण में उपवास करने वाली स्त्री और खाली घर", "summary": "उत्तर खंड अध्याय 42 में कृष्ण माघ कृष्ण एकादशी को षटतिला कहते और पुलस्त्य का दालभ्य को उपदेश देते हैं। अध्याय विस्तृत व्रत और तिल के छह उपयोग—स्नान, शरीर पर रगड़ना, यज्ञ, जल-अर्पण, दान और भोजन—बताता है। फिर एक अनाम ब्राह्मण स्त्री आती है जो व्रत करती और ग्रंथ के शब्दों में उपवास से शरीर को कष्ट देती है, पर भिक्षा माँगने वालों को भोजन नहीं देती। कृष्ण भिक्षुक-रूप में आते हैं; क्रोध में वह मिट्टी का ढेला पात्र में डालती है। ग्रंथ कहता है कि बाद में उसे उस दान के अनुरूप सुंदर पर खाली घर मिलता है, वह षटतिला कथा सीखती और समृद्धि पाती है। देवम इसे उपयोगी दान की ग्रंथ-कथा मानता है, इतिहास या वादा नहीं। यह आत्म-भूख की प्रशंसा, प्राप्तकर्ता की परीक्षा, जाति-क्रम या पाप-मुक्ति, स्वर्ग, सौंदर्य, अन्न, वस्त्र, धन अथवा स्वास्थ्य का वादा नहीं करता।", "tradition_scope": "समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति में पद्म पुराण, उत्तर खंड अध्याय 42", "source_ids": ["padma-purana-shattila-deshpande"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "ordinary-shattila-household-hi", "population_scope": "स्थानीय तिथि-पुष्टि वाले उत्तर/पश्चिम के सामान्य स्मार्त गृह", "description": "परिवार विष्णु/कृष्ण स्मरण, षटतिला कथा, तिल का उपयोग/दान, भोजन या उपयोगी वस्तु और स्थापित एकादशी-व्रत कर सकते हैं। तिल-रूप, प्राप्तकर्ता-नियम, उपवास और समापन बदलते हैं और सार्वभौम नहीं हैं।", "source_ids": ["padma-purana-shattila-deshpande", "devam-ekadashi-recurring-scaffold"], "instructional": false},
+        {"practice_id": "ordinary-shattila-temple-hi", "population_scope": "नामित विष्णु/कृष्ण मंदिर का आमंत्रित सामान्य सहभागी", "description": "मंदिर तिल, अग्नि, पूजा, दान, भोजन और पारण कार्यक्रम दे सकता है। उसकी जीवित सूचना, एलर्जी नियंत्रण, पात्रता और कर्मचारी-निर्देश लागू होंगे; आगंतुक इस मार्ग से पुरोहित-कर्म की नकल नहीं करता।", "source_ids": ["devam-shattila-research", "devam-ekadashi-recurring-scaffold"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "shattila-hi-minimum-v1", "label": "तिल-रहित स्मरण और उपयोगी देखभाल", "tier": "minimum", "setting": "individual", "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण", "form": "accessible_short", "estimated_minutes": 12,
+          "materials": [
+            {"item": "शांत सुरक्षित स्थान", "required": true, "substitutions": ["जहाँ हैं वहीं सुरक्षित बैठें"], "source_ids": ["devam-ekadashi-recurring-scaffold"]},
+            {"item": "एक माँगी गई वस्तु या सेवा लिखने का सुरक्षित साधन", "required": false, "substitutions": ["मन में रखें", "छोटी सेवा सीधे पूरी करें"], "source_ids": ["devam-shattila-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "देखें कि Today या आपका मान्य स्थानीय स्मार्त पंचांग आपके शहर में षटतिला एकादशी बता रहा है। सततिला/षट तिला की वर्तनी अकेले मार्ग नहीं बदलती; अलग प्राधिकार या समापन बदलता है।", "why": "मार्ग लगाने से पहले तिथि और प्राधिकार तय होना चाहिए।", "source_ids": ["drik-shattila-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "जब तक हर प्रभावित व्यक्ति और प्राप्तकर्ता तिल सुरक्षित होने की पुष्टि न करे, स्थान तिल-रहित रखें। तिल अनिवार्य नहीं है।", "why": "तिल खाद्य एलर्जेन है और परोक्ष संपर्क भी हानि कर सकता है।", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 3, "instruction": "सुरक्षित बैठकर परिचित नाम या प्रार्थना से विष्णु या कृष्ण का स्मरण करें; मौन पूर्ण है।", "why": "सार्वभौम मंत्र गढ़े बिना भक्ति रहती है।", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "छोटी कथा को स्पष्ट रूप से पद्म पुराण अध्याय 42 कहकर पढ़ें/सुनें। तिल के छह उपयोगों को अध्याय की सूची कहें, छह अनिवार्य काम नहीं।", "why": "शरीर, अग्नि, भोजन या दान निर्देश सार्वभौम किए बिना स्रोत बचता है।", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 5, "instruction": "आत्म-कष्ट और उपयोगी देखभाल का अंतर सोचें। परिचित व्यक्ति या सत्यापित संस्था से पूछें कि कौन-सी छोटी वस्तु या सेवा वास्तव में चाहिए और सुरक्षित है।", "why": "प्राप्तकर्ता-निर्देशित मदद कथा के खाली प्रतीक-दान और अपव्यय से बचती है।", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 6, "instruction": "सामर्थ्य में माँगी गई वस्तु/सेवा दें या तय करें। तिल-रहित भोजन, स्वच्छता/वस्त्र, समय, मरम्मत या सीधी सेवा पूर्ण है; उधार न लें और पहुँच, कृतज्ञता या प्रचार की अपेक्षा न करें।", "why": "देखभाल उपयोगी और गैर-लेनदेनकारी हो।", "source_ids": ["devam-shattila-research"], "optional": false},
+            {"ordinal": 7, "instruction": "कृतज्ञता से समापन करें, प्राप्तकर्ता की निजता रखें और काम पूरा करें। चिकित्सक व स्थापित प्राधिकार की सुरक्षित योजना न हो तो सामान्य भोजन, जल, आराम और दवा लें।", "why": "बिना-उपवास समापन पूर्ण है और स्वास्थ्य पहले है।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-shattila-research"], "optional": false}
+          ],
+          "closing": {"text": "कृतज्ञता और उपयोगी देखभाल के काम से समापन करें। यह तिल-रहित मार्ग उपवास, अग्नि, स्नान या शरीर-लेप शुरू नहीं करता, इसलिए पारण नहीं देता।", "source_ids": ["devam-shattila-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "स्थापित व्रत या पारण जिम्मेदार परिवार, मंदिर या सम्प्रदाय और जरूरत पर चिकित्सक के अधीन है।"},
+          "source_ids": ["padma-purana-shattila-deshpande", "drik-shattila-2027", "devam-ekadashi-recurring-scaffold", "fssai-sesame-allergen", "icmr-type1-diabetes-fasting", "devam-shattila-research"]
+        },
+        {
+          "procedure_id": "shattila-hi-family-v1", "label": "परिवार का पाठ, एलर्जी-जाँच और माँगा गया दान", "tier": "standard", "setting": "family_led", "authority_scope": "परिवार-निर्देशित बिना-उपवास या पहले से स्थापित सुरक्षित गृह-रूप", "form": "traditional_household", "estimated_minutes": 30,
+          "materials": [
+            {"item": "स्रोत-नाम वाली अध्याय-संक्षेप या पहचान योग्य संस्करण", "required": true, "substitutions": ["नामित संक्षेप सुनें", "न्यूनतम मार्ग"], "source_ids": ["padma-purana-shattila-deshpande"]},
+            {"item": "माँगी गई वस्तु/सेवा; स्पष्ट सुरक्षा-पुष्टि के बाद ही तिल", "required": false, "substitutions": ["तिल-रहित भोजन", "स्वच्छता या वस्त्र", "समय या सीधी सेवा", "सामग्री नहीं; सुरक्षित काम तय करें"], "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "तिथि तय करें और पूछें कौन जुड़ना चाहता है। तिल लाने से पहले हर सहभागी/प्राप्तकर्ता से एलर्जी या परोक्ष-संपर्क चिंता पूछें; अनिश्चितता में तिल न रखें।", "why": "सहमति और एलर्जी-सुरक्षा प्रतीक से पहले हैं।", "source_ids": ["drik-shattila-2027", "fssai-sesame-allergen"], "optional": false},
+            {"ordinal": 2, "instruction": "परिचित विष्णु/कृष्ण स्मरण या मौन से शुरू करें। अपरिचित मंत्र, शरीर पर तिल, तिल-स्नान, अग्नि-अर्पण या पुरोहित-संकल्प न जोड़ें।", "why": "ये काम प्राधिकार और सुरक्षा बदलते हैं।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-shattila-research"], "optional": false},
+            {"ordinal": 3, "instruction": "स्रोत-नाम सहित पूरी संक्षिप्त कथा पढ़ें और चर्चा करें कि उपयोगी देखभाल के बिना कठोर उपवास उपभोक्ता आदर्श क्यों नहीं है।", "why": "अध्याय स्वयं शरीर-कष्ट और भोजन/मदद न देने का अंतर दिखाता है।", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 4, "instruction": "प्राप्तकर्ता और माँगी गई जरूरत सत्यापित करें। सामर्थ्य में सीधे दें या आधिकारिक भुगतान करें; हर खाद्य एलर्जेन बताएँ और चित्र/सार्वजनिक उल्लेख से पहले सहमति लें।", "why": "उपयोगी, सुरक्षित और निजी दान प्रतीक या असत्यापित भुगतान से अधिक जिम्मेदार है।", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 5, "instruction": "थकान से पहले समापन करें। भोजन सुरक्षित रखें, तिल-संपर्क सतह/बर्तन साफ करें, हर लौ बुझाएँ और प्राप्तकर्ता का निजी विवरण न लिखें।", "why": "समापन परोक्ष संपर्क, कीट, आग और निजता-हानि रोकता है।", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false}
+          ],
+          "closing": {"text": "परिवार के परिचित ढंग से कृतज्ञता दें, उपयोगी वस्तु/सेवा पूरी करें और स्थान को खाद्य-सुरक्षित व लौ-रहित छोड़ें। इस मार्ग से पारण न निकालें।", "source_ids": ["devam-ekadashi-recurring-scaffold", "fssai-sesame-allergen", "devam-shattila-research"], "scope_note": "स्थापित पारिवारिक उपवास वैकल्पिक, स्वास्थ्य-संवेदनशील और अपने प्राधिकार के अधीन है।"},
+          "source_ids": ["padma-purana-shattila-deshpande", "drik-shattila-2027", "devam-ekadashi-recurring-scaffold", "fssai-sesame-allergen", "devam-shattila-research"]
+        },
+        {
+          "procedure_id": "shattila-hi-temple-v1", "label": "नामित मंदिर में सामान्य सहभागिता", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "केवल आगंतुक सहभागिता; संस्था विधि, एलर्जेन, अग्नि, दान और समापन नियंत्रित करती है", "form": "institutional_participation", "estimated_minutes": 45,
+          "materials": [{"item": "सत्यापित आधिकारिक जीवित सूचना, एलर्जेन जानकारी और सुरक्षित यात्रा योजना", "required": true, "substitutions": ["आधिकारिक दूरस्थ कार्यक्रम", "घर रहकर न्यूनतम मार्ग"], "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "मंदिर की आधिकारिक तिथि, समय, प्रवेश, सुगमता, भीड़, तिल/एलर्जेन, अग्नि, दान, भोजन, चित्र और सुरक्षा नियम जाँचें।", "why": "कैलेंडर-नाम जीवित या सुरक्षित संस्था-कार्यक्रम सिद्ध नहीं करता।", "source_ids": ["drik-shattila-2027", "fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 2, "instruction": "केवल सामान्य सहभागी बनें। इस मार्ग से हवन, तिल-यज्ञ, शरीर-लेप, स्नान, औपचारिक दान, मंत्र, उपवास या पारण की नकल न करें।", "why": "इनमें अलग प्राधिकार, पात्रता और सुरक्षा चाहिए।", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "optional": false},
+            {"ordinal": 3, "instruction": "एलर्जी जरूरत बताएँ; असुरक्षित भोजन, स्पर्श, भुगतान या चित्र मना करें; बच्चे अभिभावक के साथ रहें और धुआँ, भीड़ या परोक्ष संपर्क असुरक्षित हो तो निकलें।", "why": "भक्ति स्वास्थ्य, सहमति या सुरक्षा नहीं हटाती।", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "optional": false},
+            {"ordinal": 4, "instruction": "सुरक्षित लौटकर सत्यापित उपयोगी तिल-रहित वस्तु/सेवा करें और पाप-मुक्ति, समृद्धि, स्वास्थ्य या अन्य फल न कहें।", "why": "उपभोक्ता समापन व्यावहारिक और गैर-लेनदेनकारी रहता है।", "source_ids": ["devam-shattila-research"], "optional": false}
+          ],
+          "closing": {"text": "संस्था का आगंतुक-निकास और समापन मानें। विश्वसनीय एलर्जेन, अग्नि या समय-सूचना न हो तो घर रहें; तिल-रहित गृह-मार्ग पूर्ण है।", "source_ids": ["fssai-sesame-allergen", "devam-shattila-research"], "scope_note": "केवल संस्था अपनी पूजा, औपचारिक दान, भोजन और पारण नियंत्रित करती है।"},
+          "source_ids": ["drik-shattila-2027", "fssai-sesame-allergen", "devam-shattila-research"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "name-language-sesame-and-household-form-hi", "scope": "सामान्य उत्तर/पश्चिम गृह", "difference": "षटतिला/सततिला/षट तिला वर्तनी, भाषा, तिल का रंग, भोजन-शैली, चित्र/बिना-चित्र, परिचित प्रार्थना, तिल/बिना तिल और सुरक्षित बिना-उपवास/स्थापित व्रत राज्य की प्रतियाँ नहीं बनाते।", "source_ids": ["devam-ekadashi-rule-audit", "devam-shattila-research"], "separate_lane_required": false},
+        {"variant_id": "formal-six-sesame-body-fire-rite-hi", "scope": "पूर्ण ग्रंथीय या पुरोहित-व्रत", "difference": "स्नान, शरीर-लेप, यज्ञ, जल-अर्पण, औपचारिक तिल-दान और भोजन सुरक्षा, प्राधिकार, सामग्री और क्रम बदलते हैं और अलग अधिकृत मार्ग चाहते हैं।", "source_ids": ["padma-purana-shattila-deshpande", "fssai-sesame-allergen", "devam-shattila-research"], "separate_lane_required": true},
+        {"variant_id": "formal-recipient-and-gift-hierarchy-hi", "scope": "पुरोहित-निर्देशित या स्थापित दान-कर्म", "difference": "प्राप्तकर्ता-पात्रता, गाय या औपचारिक वस्तु, मंत्र, भुगतान और समापन इस सामान्य उपयोगी-देखभाल मार्ग से अनुमानित नहीं हो सकते।", "source_ids": ["padma-purana-shattila-deshpande", "devam-shattila-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme-hi", "scope": "नामित विष्णु/कृष्ण संस्था", "difference": "जीवित समय, अग्नि, एलर्जेन, विधि, पात्रता, दान, भोजन और समापन संस्था के हैं।", "source_ids": ["devam-shattila-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi-hi", "scope": "दूसरी नामित मासिक एकादशी", "difference": "सुरक्षित भक्ति-ढाँचा पुनः उपयोग हो सकता है, पर दूसरी एकादशी की चंद्र-पहचान और स्रोत-नाम वाली कथा अलग है।", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "तिल-रहित, बिना उपवास, लौ, खरीद, चित्र और सामग्री का रूप पूर्ण है।",
+        "तिल और तिल-उत्पाद खाद्य एलर्जेन हैं। परोसने/दान से पहले पूछें, तिल स्पष्ट बताएँ, परोक्ष संपर्क रोकें और अनिश्चितता में तिल न रखें।",
+        "एलर्जी या संवेदनशीलता ज्ञात/अनिश्चित हो तो तिल न खाएँ, चखें, छुएँ, स्नान या शरीर पर न रगड़ें। त्वचा-लेप एलर्जी-परीक्षण नहीं है।",
+        "ढीले बीज और तेल सुरक्षित बंद रखें और छोटे बच्चों/पशुओं से दूर रखें। तेल या बीज-मिश्रण नाली, नदी, मिट्टी या सार्वजनिक स्थान में न डालें।",
+        "तिल-हवन या अग्नि-अर्पण इस मार्ग से बाहर है। लौ आवश्यक नहीं; धुआँ, जलना, वेंटिलेशन, ईंधन और प्राधिकार कार्रवाई बदलते हैं।",
+        "अध्याय के तिल के छह उपयोग ग्रंथ-सूची हैं, छह अनिवार्य उपभोक्ता कदम नहीं। 108 गोबर/रुई गोलियाँ, जागरण, औपचारिक मंत्र, गाय-दान या प्राप्तकर्ता-क्रम की नकल न करें।",
+        "अनाम स्त्री का शरीर-कष्ट आदर्श नहीं। बच्चे, गर्भवती/स्तनपान कराने वाले, बुजुर्ग, मधुमेह/बीमारी वाले, भोजन के साथ दवा लेने वाले, भोजन-विकार इतिहास वाले या गर्मी/भारी श्रम करने वाले देवम से उपवास शुरू या कठोर न करें।",
+        "इंसुलिन, दवा, भोजन या जल न बदलें। टाइप-1 मधुमेह उच्च-जोखिम उपवास स्थिति है।",
+        "केवल वही दें जो प्राप्तकर्ता चाहता और सुरक्षित उपयोग कर सकता है। दान से कर्ज न हो और पहुँच, कृतज्ञता, धर्म-परिवर्तन, श्रम, स्पर्श, डेटा या प्रचार न खरीदा जाए; असत्यापित व्यक्ति को OTP, बैंक या पहचान विवरण न दें।",
+        "पाप-मुक्ति, स्वर्ग, सौंदर्य, अन्न, वस्त्र, धन, स्वास्थ्य, गरीबी से मुक्ति, पुण्य या अन्य फल की कोई गारंटी नहीं है।",
+        "Authored का अर्थ केवल यह नामित library lane है; day cards पर projected, hosted, स्वतंत्र release-reviewed या published नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
