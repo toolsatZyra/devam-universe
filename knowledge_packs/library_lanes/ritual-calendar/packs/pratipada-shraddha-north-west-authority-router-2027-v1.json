@@ -1,0 +1,1139 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "pratipada-shraddha-north-west-authority-router-2027-v1",
+  "observance_slugs": [
+    "pratipada-shraddha"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-WB",
+      "IN-BR",
+      "IN-CG",
+      "IN-KA",
+      "IN-TN",
+      "IN-KL",
+      "IN-OD",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "pratipada-shraddha",
+      "north-west-pitru-paksha",
+      "family-specific-hindu",
+      "authority-routed-shraddha"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city, accepted Pitru Paksha calendar, local Pratipada interval and aparaahna overlaps apply?",
+      "Which ancestor and matching death tithi are voluntarily established by family knowledge?",
+      "Does a named family authority accept the maternal-grandparent exception, without inferring duty or absence?",
+      "Who may lead, participate or abstain, and what grief, health, privacy, child/dependent, water, fire, crowd, accessibility, legal or cost limits apply?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-WB",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-BR",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-CG",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-KA",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-TN",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-KL",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-MH",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-OD",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      },
+      {
+        "region_code": "IN-AP",
+        "tradition_code": "pratipada-shraddha",
+        "observance_slug": "pratipada-shraddha"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "pratipada-shraddha",
+        "language_code": "en",
+        "note": "Selected-state safe authority router. The source gives the ordinary Pratipada death-tithi rule and additionally claims suitability for maternal grandparents when no one performs at the maternal home or their death date is unknown."
+      },
+      {
+        "observance_slug": "pratipada-shraddha",
+        "language_code": "hi",
+        "note": "Selected-state safe authority router। स्रोत सामान्य प्रतिपदा death-tithi rule के साथ नाना-नानी के लिए एक अतिरिक्त applicability claim देता है, जब maternal home में कोई अनुष्ठान न करे या मृत्यु-तिथि अज्ञात हो।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-pitru-paksha-2027",
+      "drik-pratipada-shraddha-2027",
+      "nirnayasindhu-1865-mahalaya",
+      "devam-pitru-tithi-batch-research"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "pitru-paksha-pratipada-greater-aparaahna-overlap-named-authority-v1",
+    "closing_decision_rule_id": "named-owner-close-or-private-no-result-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "16 September 2027 is a reviewed 2027 North-India fixture only. Recompute tithi-aparaahna for city/year and verify current formal schedules."
+  },
+  "sources": [
+    {
+      "source_id": "drik-pitru-paksha-2027",
+      "title": "2027 Pitru Paksha Shraddha dates",
+      "publisher": "Drik Panchang",
+      "source_role": "Current practitioner calendar fixture and tithi sequence",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/shraddha/pitru-paksha-shraddha-dates.html?lang=en&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "drik-pratipada-shraddha-2027",
+      "title": "2027 Pratipada Shraddha page",
+      "publisher": "Drik Panchang",
+      "source_role": "Current timing, identity, aliases and attributed applicability",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/shraddha/tithi/pratipada-shraddha-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "utsav-pitra-paksha",
+      "title": "Pitra Paksha",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "Current living-observance context, not formal vidhi",
+      "rights_lane": "citation_only",
+      "url": "https://utsav.gov.in/public/view-event/pitra-paksha-1",
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "nirnayasindhu-1865-mahalaya",
+      "title": "Nirnayasindhu (1865), Mahalaya section",
+      "publisher": "Retained Devam source carrier",
+      "source_role": "Fixed historical textual context; not universal modern instructions",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": "a632f570153cb77802b85fdc22e54e00f217960b1d848ee640dd9e610327f02b",
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "max-muller-katha-upanishad",
+      "title": "Katha Upanishad, Sacred Books of the East volume 15 (1884)",
+      "publisher": "Wikisource transcription of public-domain Max Muller translation",
+      "source_role": "Fixed lawful Nachiketa-Yama narrative expression",
+      "rights_lane": "product_cleared",
+      "url": "https://en.wikisource.org/wiki/Sacred_Books_of_the_East/Volume_15/Katha-upanishad",
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "devam-pitru-remembrance",
+      "title": "Pitru Paksha Delhi remembrance content",
+      "publisher": "Devam",
+      "source_role": "Existing privacy, grief and no-result boundaries",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "devam-selected-scope",
+      "title": "Ritual-calendar selected scope",
+      "publisher": "Devam",
+      "source_role": "Frozen denominator evidence",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "devam-pitru-tithi-batch-research",
+      "title": "Pitru Paksha tithi batch evidence matrix",
+      "publisher": "Devam",
+      "source_role": "Batch synthesis, contradiction register and major-variant threshold",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "devam-sarva-pitru-lane",
+      "title": "Sarva Pitru Amavasya authority router",
+      "publisher": "Devam",
+      "source_role": "Unknown-date and fallback owner boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    },
+    {
+      "source_id": "india-emergency-112",
+      "title": "Emergency Response Support System",
+      "publisher": "Government of India",
+      "source_role": "Immediate danger and emergency boundary",
+      "rights_lane": "citation_only",
+      "url": "https://112.gov.in/about",
+      "artifact_sha256": null,
+      "citation_coordinates": null
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "pratipada-shraddha"
+      ],
+      "title": "Pratipada Shraddha",
+      "short_answer": "First confirm city, accepted Panchang, local Pratipada-aparaahna and ancestor applicability; 16 September 2027 is only a 2027 fixture. If formal authority is unresolved, normal care, the two labelled stories, private memory/silence and no invented rite are a complete answer.",
+      "significance": {
+        "text": "Pratipada Shraddha is a source-attributed tithi remembrance route, not one national procedure. The source gives the ordinary Pratipada death-tithi rule and additionally claims suitability for maternal grandparents when no one performs at the maternal home or their death date is unknown.",
+        "source_ids": [
+          "drik-pitru-paksha-2027",
+          "drik-pratipada-shraddha-2027",
+          "utsav-pitra-paksha",
+          "nirnayasindhu-1865-mahalaya",
+          "max-muller-katha-upanishad",
+          "devam-pitru-remembrance",
+          "devam-selected-scope",
+          "devam-pitru-tithi-batch-research",
+          "devam-sarva-pitru-lane",
+          "india-emergency-112"
+        ],
+        "scope_note": "Safe authority router; formal vidhi remains owner-scoped."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "pratipada-tithi-identity-en",
+          "title": "Pratipada Shraddha: tithi identity",
+          "summary": "Current practitioner material identifies Pratipada Shraddha (Padwa Shraddha) through Ashwina Krishna Pratipada. The source gives the ordinary Pratipada death-tithi rule and additionally claims suitability for maternal grandparents when no one performs at the maternal home or their death date is unknown. The reviewed 16 September 2027 result is a 2027 North-India fixture, not a portable date, universal performer rule or promised benefit.",
+          "tradition_scope": "Current location-aware practitioner identity",
+          "source_ids": [
+            "drik-pratipada-shraddha-2027",
+            "drik-pitru-paksha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "nachiketa-yama-en",
+          "title": "Nachiketa asks Yama about death",
+          "summary": "In Max Muller's 1884 Katha Upanishad, Vajasravasa gives worn-out cows. His son Nachiketa questions the gift and is angrily given ‘to Death.’ At Yama's abode he waits three nights and receives three boons: calm recognition by his father, a fire teaching, and the question of what follows death. Yama offers long life, descendants, wealth, power, music and pleasure instead; Nachiketa refuses what is temporary. Yama distinguishes the good from the merely pleasant and teaches about Self, knowledge and death. This is not Pratipada Shraddha's origin or vidhi and proves no afterlife fact. No child copies danger, deprivation, unsafe obedience, fire or forced reconciliation.",
+          "tradition_scope": "Katha Upanishad, Max Muller 1884 public-domain expression",
+          "source_ids": [
+            "max-muller-katha-upanishad",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "pratipada-private-en",
+          "population_scope": "Private or opt-in family remembrance",
+          "description": "Many users need only private or opt-in family remembrance: a name, safe memory, silence, familiar prayer or ordinary care, with no required object, fast, priest, donation or result claim.",
+          "source_ids": [
+            "utsav-pitra-paksha",
+            "devam-pitru-remembrance",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "pratipada-formal-attributed-en",
+          "population_scope": "Families with a named current authority",
+          "description": "Living formal practice can include Shraddha, tarpan, pinda, formal timing, meals or donations, but exact eligibility, performer, materials, sequence and closing belong to a named current authority.",
+          "source_ids": [
+            "drik-pratipada-shraddha-2027",
+            "nirnayasindhu-1865-mahalaya",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "pratipada-private-en",
+          "label": "Private, material-free Pratipada Shraddha remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Generic remembrance only; not formal Shraddha, death classification, performer, mantra, materials or result authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {
+              "item": "Optional labelled story, name or consented photograph",
+              "required": false,
+              "substitutions": [
+                "Safe memory",
+                "Silence",
+                "Nothing"
+              ],
+              "source_ids": [
+                "max-muller-katha-upanishad",
+                "devam-pitru-tithi-batch-research"
+              ]
+            },
+            {
+              "item": "Optional flower, ordinary drinking water or electric light",
+              "required": false,
+              "substitutions": [
+                "Spoken name",
+                "Ordinary care",
+                "Nothing"
+              ],
+              "source_ids": [
+                "devam-pitru-tithi-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that the question is Pratipada Shraddha, record city and accepted Panchang, and resolve the local Pratipada-aparaahna overlap. Treat 16 September 2027 only as a 2027 fixture.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Does a named family authority accept the maternal-grandparent exception, without inferring duty or absence?",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep normal food, water, medicine, sleep and care; begin no fast, bath, river entry, flame, animal feeding, recitation, donation or payment.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the source-labelled tithi identity and complete bounded Nachiketa-Yama story; do not treat either as a guaranteed origin or afterlife account.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Remember through a name, value, safe memory, familiar prayer or silence; any option may be declined and no positive memory or forgiveness is owed.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Optionally choose one affordable living-care act, then close with normal care and no ancestor-contact, peace, liberation, prosperity or merit claim.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Return to ordinary care without prediction, coercion or copied formal procedure.",
+            "source_ids": [
+              "devam-pitru-tithi-batch-research"
+            ],
+            "scope_note": "Generic remembrance only; not formal Shraddha, death classification, performer, mantra, materials or result authority."
+          },
+          "source_ids": [
+            "drik-pitru-paksha-2027",
+            "drik-pratipada-shraddha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "max-muller-katha-upanishad",
+            "devam-pitru-remembrance",
+            "devam-selected-scope",
+            "devam-pitru-tithi-batch-research",
+            "devam-sarva-pitru-lane",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "pratipada-family-en",
+          "label": "Opt-in family remembrance without invented formal Shraddha",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Consent-led family remembrance; not lineage, eligibility, grief or afterlife authority.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "Optional private shared pause",
+              "required": false,
+              "substitutions": [
+                "Separate pauses",
+                "Remote opt-in",
+                "No gathering"
+              ],
+              "source_ids": [
+                "devam-pitru-tithi-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Resolve Pratipada Shraddha and any special applicability separately from same-date or same-name observances; call the gathering remembrance, not an invented rite.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Invite with an easy no, no-photo option, late arrival and early exit; protect grief, abuse, estrangement, adoption, lineage, minors and dependents.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Agree a short duration, privacy/no-recording boundary and stop signal while preserving food, water, medicine, sleep and accessibility.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Tell both source-labelled stories and allow different, difficult or absent memories without forced disclosure, belief, prayer or forgiveness.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Use only safe familiar words or objects; do not label ordinary food/water as pinda or tarpan and do not infer dreams, birds, flame or coincidence as messages.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Thank participants and close without ranking relatives, assigning future duty, diagnosing Pitru Dosha or promising a result.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Return to ordinary care without prediction, coercion or copied formal procedure.",
+            "source_ids": [
+              "devam-pitru-tithi-batch-research"
+            ],
+            "scope_note": "Consent-led family remembrance; not lineage, eligibility, grief or afterlife authority."
+          },
+          "source_ids": [
+            "drik-pitru-paksha-2027",
+            "drik-pratipada-shraddha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "max-muller-katha-upanishad",
+            "devam-pitru-remembrance",
+            "devam-selected-scope",
+            "devam-pitru-tithi-batch-research",
+            "devam-sarva-pitru-lane",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "pratipada-formal-en",
+          "label": "Named formal Pratipada Shraddha: participant-only route",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Participant guidance only; the named family, priest, text, sampradaya, temple, ghat or institution owns formal applicability, timing, sequence, materials and closing.",
+          "form": "institutional_participation",
+          "estimated_minutes": 35,
+          "materials": [
+            {
+              "item": "Only items explicitly requested by the named authority",
+              "required": false,
+              "substitutions": [
+                "Ask for a safe affordable substitute",
+                "Attend without leading",
+                "Decline"
+              ],
+              "source_ids": [
+                "devam-pitru-tithi-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Identify the current named authority and verify Pratipada Shraddha applicability, city, tithi-aparaahna selection, performer/participant role, venue and schedule.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Obtain that owner's exact sequence, materials, quantities, food/allergen rules, recipients, donation policy and disposal plan; infer none from this pack.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Do not assemble pinda, sesame, kusa, ritual water, fire, lamps, recitation texts, formal meals, animal feed or dakshina unless that owner requests them.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Check medicine, hydration, fire, water, crowd, travel, child/dependent, accessibility, privacy, legal and cost limits before attending.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Remain participant-only, use the owner's safe closing, take no omen or guarantee from the outcome, and copy no formal sequence home.",
+              "why": "This preserves evidence, consent, safety and the named-owner boundary.",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Return to ordinary care without prediction, coercion or copied formal procedure.",
+            "source_ids": [
+              "devam-pitru-tithi-batch-research"
+            ],
+            "scope_note": "Participant guidance only; the named family, priest, text, sampradaya, temple, ghat or institution owns formal applicability, timing, sequence, materials and closing."
+          },
+          "source_ids": [
+            "drik-pitru-paksha-2027",
+            "drik-pratipada-shraddha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "max-muller-katha-upanishad",
+            "devam-pitru-remembrance",
+            "devam-selected-scope",
+            "devam-pitru-tithi-batch-research",
+            "devam-sarva-pitru-lane",
+            "india-emergency-112"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "pratipada-ordinary-death-tithi-en",
+          "scope": "Matching death-tithi applicability",
+          "difference": "The source gives the ordinary Pratipada death-tithi rule and additionally claims suitability for maternal grandparents when no one performs at the maternal home or their death date is unknown.",
+          "source_ids": [
+            "drik-pratipada-shraddha-2027",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pratipada-unknown-or-disputed-en",
+          "scope": "Unknown, disputed or unverified applicability",
+          "difference": "Route formal questions to Sarva Pitru or a named authority; private remembrance remains available without pretending certainty.",
+          "source_ids": [
+            "devam-sarva-pitru-lane",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pratipada-named-owner-en",
+          "scope": "Named family, sampradaya, temple, ghat or institution",
+          "difference": "A separate route is required only when timing, eligibility, performer, actions, materials, safety or closing materially changes.",
+          "source_ids": [
+            "nirnayasindhu-1865-mahalaya",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pratipada-no-cosmetic-state-split-en",
+          "scope": "Selected states and languages",
+          "difference": "Language, spelling, dress, ordinary food, image/no-image, familiar prayer/silence and popularity do not create a variant.",
+          "source_ids": [
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": false
+        }
+      ],
+      "safety_and_boundaries": [
+        "No fast, dehydration, meal delay, medicine change, ritual bath, water entry, fire, smoke, animal feeding, travel, donation or payment is required.",
+        "No one owes a positive memory, forgiveness, family disclosure, belief, photograph, touch, gotra or unsafe-relative contact.",
+        "Do not assign duty by gender, kinship, marriage, fertility, adoption, lineage, sect or participation status.",
+        "Do not diagnose Pitru Dosha or treat dreams, birds, animals, water, flame, coincidence or feelings as ancestor messages.",
+        "Do not promise satisfaction, peace, liberation, reunion, merit, health, wealth, progeny or prosperity.",
+        "Children and dependents do not copy Nachiketa's danger, deprivation, unsafe obedience, fire or forced reconciliation.",
+        "Medical, legal, safeguarding, venue, water, fire and crowd rules override ritual completion; immediate danger uses 112."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "pratipada-shraddha"
+      ],
+      "title": "प्रतिपदा श्राद्ध",
+      "short_answer": "पहले city, accepted Panchang, local Pratipada-aparaahna और ancestor applicability जाँचें; 16 September 2027 केवल 2027 fixture है। Formal authority unresolved हो तो normal care, दो labelled stories, private memory/मौन और कोई invented rite न करना complete answer है।",
+      "significance": {
+        "text": "प्रतिपदा श्राद्ध एक source-attributed tithi remembrance route है, national procedure नहीं। स्रोत सामान्य प्रतिपदा death-tithi rule के साथ नाना-नानी के लिए एक अतिरिक्त applicability claim देता है, जब maternal home में कोई अनुष्ठान न करे या मृत्यु-तिथि अज्ञात हो।",
+        "source_ids": [
+          "drik-pitru-paksha-2027",
+          "drik-pratipada-shraddha-2027",
+          "utsav-pitra-paksha",
+          "nirnayasindhu-1865-mahalaya",
+          "max-muller-katha-upanishad",
+          "devam-pitru-remembrance",
+          "devam-selected-scope",
+          "devam-pitru-tithi-batch-research",
+          "devam-sarva-pitru-lane",
+          "india-emergency-112"
+        ],
+        "scope_note": "Safe authority router; formal vidhi owner-scoped रहती है।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "pratipada-tithi-identity-hi",
+          "title": "प्रतिपदा श्राद्ध: tithi identity",
+          "summary": "वर्तमान practitioner material प्रतिपदा श्राद्ध (Padwa Shraddha) को Ashwina Krishna Pratipada से पहचानता है। स्रोत सामान्य प्रतिपदा death-tithi rule के साथ नाना-नानी के लिए एक अतिरिक्त applicability claim देता है, जब maternal home में कोई अनुष्ठान न करे या मृत्यु-तिथि अज्ञात हो। Reviewed 16 September 2027 result केवल 2027 North-India fixture है; portable date, universal performer rule या promised benefit नहीं।",
+          "tradition_scope": "Current location-aware practitioner identity",
+          "source_ids": [
+            "drik-pratipada-shraddha-2027",
+            "drik-pitru-paksha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "nachiketa-yama-hi",
+          "title": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं",
+          "summary": "Max Muller की 1884 Katha Upanishad में Vajasravasa बूढ़ी गायें दान करते हैं। पुत्र Nachiketa प्रश्न करते हैं और क्रोध में उन्हें ‘Death को’ दिया जाता है। Yama के घर तीन रात प्रतीक्षा के बाद उन्हें तीन वर मिलते हैं: पिता की शांत पहचान, अग्नि-विद्या और मृत्यु के बाद क्या होता है इसका प्रश्न। Yama दीर्घायु, संतान, धन, शक्ति, संगीत और सुख देते हैं; Nachiketa अस्थायी वस्तुएँ ठुकराते हैं। Yama good और merely pleasant का भेद तथा Self, knowledge और death की शिक्षा देते हैं। यह प्रतिपदा श्राद्ध की origin या vidhi नहीं और afterlife fact सिद्ध नहीं करती। कोई बच्चा danger, deprivation, unsafe obedience, fire या forced reconciliation copy न करे।",
+          "tradition_scope": "Katha Upanishad, Max Muller 1884 public-domain expression",
+          "source_ids": [
+            "max-muller-katha-upanishad",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "pratipada-private-hi",
+          "population_scope": "Private या opt-in family remembrance",
+          "description": "कई users के लिए private या opt-in family remembrance पर्याप्त है: नाम, सुरक्षित स्मृति, मौन, परिचित प्रार्थना या ordinary care; कोई object, fast, priest, donation या result claim required नहीं।",
+          "source_ids": [
+            "utsav-pitra-paksha",
+            "devam-pitru-remembrance",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "pratipada-formal-attributed-hi",
+          "population_scope": "Named current authority वाली families",
+          "description": "Living formal practice में Shraddha, tarpan, pinda, formal timing, meals या donations हो सकते हैं, पर exact eligibility, performer, materials, sequence और closing named current authority के हैं।",
+          "source_ids": [
+            "drik-pratipada-shraddha-2027",
+            "nirnayasindhu-1865-mahalaya",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "pratipada-private-hi",
+          "label": "Private, material-free प्रतिपदा श्राद्ध remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "केवल generic remembrance; formal Shraddha, death classification, performer, mantra, materials या result authority नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {
+              "item": "Optional labelled story, नाम या consented photograph",
+              "required": false,
+              "substitutions": [
+                "सुरक्षित स्मृति",
+                "मौन",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "max-muller-katha-upanishad",
+                "devam-pitru-tithi-batch-research"
+              ]
+            },
+            {
+              "item": "Optional फूल, सामान्य पीने का पानी या electric light",
+              "required": false,
+              "substitutions": [
+                "नाम बोलना",
+                "सामान्य care",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "devam-pitru-tithi-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "पहले पुष्टि करें कि प्रश्न प्रतिपदा श्राद्ध का है; city और accepted Panchang लेकर local Pratipada-aparaahna overlap resolve करें। 16 September 2027 को केवल 2027 fixture मानें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "स्रोत सामान्य प्रतिपदा death-tithi rule के साथ नाना-नानी के लिए एक अतिरिक्त applicability claim देता है, जब maternal home में कोई अनुष्ठान न करे या मृत्यु-तिथि अज्ञात हो।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सामान्य भोजन, पानी, दवा, नींद और care जारी रखें; fast, स्नान, नदी प्रवेश, flame, animal feeding, recitation, donation या payment शुरू न करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Source-labelled tithi identity और complete bounded Nachiketa-Yama story सुनें; इन्हें guaranteed origin या afterlife account न मानें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "नाम, value, सुरक्षित स्मृति, परिचित प्रार्थना या मौन चुनें; हर option decline हो सकता है और positive memory या forgiveness अनिवार्य नहीं।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो एक affordable living-care act करें; फिर normal care के साथ close करें और ancestor-contact, peace, liberation, prosperity या merit claim न करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Prediction, coercion या copied formal procedure के बिना सामान्य care में लौटें।",
+            "source_ids": [
+              "devam-pitru-tithi-batch-research"
+            ],
+            "scope_note": "केवल generic remembrance; formal Shraddha, death classification, performer, mantra, materials या result authority नहीं।"
+          },
+          "source_ids": [
+            "drik-pitru-paksha-2027",
+            "drik-pratipada-shraddha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "max-muller-katha-upanishad",
+            "devam-pitru-remembrance",
+            "devam-selected-scope",
+            "devam-pitru-tithi-batch-research",
+            "devam-sarva-pitru-lane",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "pratipada-family-hi",
+          "label": "Invented formal Shraddha के बिना opt-in family remembrance",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Consent-led family remembrance; lineage, eligibility, grief या afterlife authority नहीं।",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "Optional private shared pause",
+              "required": false,
+              "substitutions": [
+                "अलग pauses",
+                "remote opt-in",
+                "कोई gathering नहीं"
+              ],
+              "source_ids": [
+                "devam-pitru-tithi-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "प्रतिपदा श्राद्ध और किसी special applicability को same-date या same-name observance से अलग resolve करें; gathering को remembrance कहें, invented rite नहीं।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Easy no, no-photo option, late arrival और early exit के साथ invite करें; grief, abuse, estrangement, adoption, lineage, minors और dependents की रक्षा करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Short duration, privacy/no-recording boundary और stop signal तय करें; भोजन, पानी, दवा, नींद और accessibility बनाए रखें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "दोनों source-labelled stories सुनाएँ और difficult, अलग या absent memories को forced disclosure, belief, prayer या forgiveness के बिना रहने दें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "केवल safe familiar words या objects लें; ordinary food/water को pinda या tarpan न कहें और dreams, birds, flame या coincidence को message न मानें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Participants को धन्यवाद देकर close करें; relatives rank, future duty assign, Pitru Dosha diagnose या result promise न करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Prediction, coercion या copied formal procedure के बिना सामान्य care में लौटें।",
+            "source_ids": [
+              "devam-pitru-tithi-batch-research"
+            ],
+            "scope_note": "Consent-led family remembrance; lineage, eligibility, grief या afterlife authority नहीं।"
+          },
+          "source_ids": [
+            "drik-pitru-paksha-2027",
+            "drik-pratipada-shraddha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "max-muller-katha-upanishad",
+            "devam-pitru-remembrance",
+            "devam-selected-scope",
+            "devam-pitru-tithi-batch-research",
+            "devam-sarva-pitru-lane",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "pratipada-formal-hi",
+          "label": "Named formal प्रतिपदा श्राद्ध: participant-only route",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल participant guidance; named family, priest, text, sampradaya, temple, ghat या institution formal applicability, timing, sequence, materials और closing own करते हैं।",
+          "form": "institutional_participation",
+          "estimated_minutes": 35,
+          "materials": [
+            {
+              "item": "केवल named authority द्वारा माँगी वस्तुएँ",
+              "required": false,
+              "substitutions": [
+                "safe affordable substitute पूछें",
+                "lead किए बिना attend करें",
+                "decline करें"
+              ],
+              "source_ids": [
+                "devam-pitru-tithi-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Current named authority पहचानें और प्रतिपदा श्राद्ध applicability, city, tithi-aparaahna selection, performer/participant role, venue और schedule verify करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "उस owner से exact sequence, materials, quantities, food/allergen rules, recipients, donation policy और disposal plan लें; इस pack से कुछ infer न करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Owner के कहे बिना pinda, til, kusa, ritual water, fire, lamps, recitation texts, formal meals, animal feed या dakshina assemble न करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Attend करने से पहले medicine, hydration, fire, water, crowd, travel, child/dependent, accessibility, privacy, legal और cost limits जाँचें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "drik-pratipada-shraddha-2027",
+                "devam-pitru-tithi-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Participant-only रहें, owner का safe closing लें, outcome से omen/guarantee न बनाएँ और formal sequence घर copy न करें।",
+              "why": "यह evidence, consent, safety और named-owner boundary सुरक्षित रखता है।",
+              "source_ids": [
+                "devam-pitru-tithi-batch-research",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Prediction, coercion या copied formal procedure के बिना सामान्य care में लौटें।",
+            "source_ids": [
+              "devam-pitru-tithi-batch-research"
+            ],
+            "scope_note": "केवल participant guidance; named family, priest, text, sampradaya, temple, ghat या institution formal applicability, timing, sequence, materials और closing own करते हैं।"
+          },
+          "source_ids": [
+            "drik-pitru-paksha-2027",
+            "drik-pratipada-shraddha-2027",
+            "utsav-pitra-paksha",
+            "nirnayasindhu-1865-mahalaya",
+            "max-muller-katha-upanishad",
+            "devam-pitru-remembrance",
+            "devam-selected-scope",
+            "devam-pitru-tithi-batch-research",
+            "devam-sarva-pitru-lane",
+            "india-emergency-112"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "pratipada-ordinary-death-tithi-hi",
+          "scope": "Matching death-tithi applicability",
+          "difference": "स्रोत सामान्य प्रतिपदा death-tithi rule के साथ नाना-नानी के लिए एक अतिरिक्त applicability claim देता है, जब maternal home में कोई अनुष्ठान न करे या मृत्यु-तिथि अज्ञात हो।",
+          "source_ids": [
+            "drik-pratipada-shraddha-2027",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pratipada-unknown-or-disputed-hi",
+          "scope": "Unknown, disputed or unverified applicability",
+          "difference": "Formal questions Sarva Pitru या named authority को route करें; certainty pretend किए बिना private remembrance उपलब्ध है।",
+          "source_ids": [
+            "devam-sarva-pitru-lane",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pratipada-named-owner-hi",
+          "scope": "Named family, sampradaya, temple, ghat or institution",
+          "difference": "अलग route केवल timing, eligibility, performer, actions, materials, safety या closing materially बदलने पर चाहिए।",
+          "source_ids": [
+            "nirnayasindhu-1865-mahalaya",
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "pratipada-no-cosmetic-state-split-hi",
+          "scope": "Selected states and languages",
+          "difference": "Language, spelling, dress, ordinary food, image/no-image, familiar prayer/मौन और popularity variant नहीं बनाते।",
+          "source_ids": [
+            "devam-pitru-tithi-batch-research"
+          ],
+          "separate_lane_required": false
+        }
+      ],
+      "safety_and_boundaries": [
+        "Fast, dehydration, meal delay, medicine change, ritual bath, water entry, fire, smoke, animal feeding, travel, donation या payment required नहीं।",
+        "Positive memory, forgiveness, family disclosure, belief, photograph, touch, gotra या unsafe-relative contact कोई नहीं owes करता।",
+        "Gender, kinship, marriage, fertility, adoption, lineage, sect या participation status से duty assign न करें।",
+        "Pitru Dosha diagnose न करें; dreams, birds, animals, water, flame, coincidence या feelings को ancestor message न मानें।",
+        "Satisfaction, peace, liberation, reunion, merit, health, wealth, progeny या prosperity promise न करें।",
+        "बच्चे/dependents Nachiketa का danger, deprivation, unsafe obedience, fire या forced reconciliation copy न करें।",
+        "Medical, legal, safeguarding, venue, water, fire और crowd rules ritual completion से ऊपर हैं; immediate danger में 112 लें।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "Formal institution-specific vidhi remains with unresolved named owners; this does not reduce the complete private/family/participant router."
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}

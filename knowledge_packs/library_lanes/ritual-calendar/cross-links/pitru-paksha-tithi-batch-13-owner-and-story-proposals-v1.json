@@ -1,0 +1,2377 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "pitru-paksha-tithi-batch-13-owner-and-story-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "purnima-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/purnima-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "purnima-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/purnima-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "purnima-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/purnima-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-purnima-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Purnima Shraddha needs a named current owner",
+        "hi": "Formal पूर्णिमा श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "purnima-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/purnima-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "purnima-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/purnima-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-purnima-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "The current source distinguishes this opening Purnima observance from a deceased person's Purnima death-tithi route, which it directs to Amavasya Shraddha.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The current source distinguishes this opening Purnima observance from a deceased person's Purnima death-tithi route, which it directs to Amavasya Shraddha."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pratipada-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pratipada-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pratipada-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pratipada-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pratipada-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pratipada-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-pratipada-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Pratipada Shraddha needs a named current owner",
+        "hi": "Formal प्रतिपदा श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pratipada-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pratipada-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pratipada-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pratipada-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-pratipada-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "The source gives the ordinary Pratipada death-tithi rule and additionally claims suitability for maternal grandparents when no one performs at the maternal home or their death date is unknown.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The source gives the ordinary Pratipada death-tithi rule and additionally claims suitability for maternal grandparents when no one performs at the maternal home or their death date is unknown."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dwitiya-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dwitiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dwitiya-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dwitiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dwitiya-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dwitiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-dwitiya-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Dwitiya Shraddha needs a named current owner",
+        "hi": "Formal द्वितीया श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dwitiya-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dwitiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "tritiya-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/tritiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "tritiya-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/tritiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "tritiya-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/tritiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-tritiya-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Tritiya Shraddha needs a named current owner",
+        "hi": "Formal तृतीया श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "tritiya-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/tritiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "tritiya-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/tritiya-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-tritiya-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "“Teej” is a tithi alias here; it does not merge this lane with a separate women's Teej vrata.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "“Teej” is a tithi alias here; it does not merge this lane with a separate women's Teej vrata."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturthi-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturthi-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturthi-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-chaturthi-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Chaturthi Shraddha needs a named current owner",
+        "hi": "Formal चतुर्थी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturthi-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturthi-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-chaturthi-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "A same-tithi Ganesha or Sankashti observance does not determine Shraddha applicability or procedure.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "A same-tithi Ganesha or Sankashti observance does not determine Shraddha applicability or procedure."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "panchami-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/panchami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "panchami-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/panchami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "panchami-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/panchami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-panchami-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Panchami Shraddha needs a named current owner",
+        "hi": "Formal पंचमी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "panchami-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/panchami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "panchami-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/panchami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-panchami-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "The source gives the Panchami death-tithi rule and adds significance for a deceased unmarried family member. Devam does not infer marital history or limit the claim by gender.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The source gives the Panchami death-tithi rule and adds significance for a deceased unmarried family member. Devam does not infer marital history or limit the claim by gender."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shashthi-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shashthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shashthi-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shashthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shashthi-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shashthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-shashthi-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Shashthi Shraddha needs a named current owner",
+        "hi": "Formal षष्ठी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shashthi-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shashthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shashthi-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shashthi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-shashthi-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "“Chhath” is an alias here and does not merge this lane with Surya-oriented Chhath Puja.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "“Chhath” is an alias here and does not merge this lane with Surya-oriented Chhath Puja."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "saptami-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/saptami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "saptami-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/saptami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "saptami-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/saptami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-saptami-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Saptami Shraddha needs a named current owner",
+        "hi": "Formal सप्तमी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "saptami-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/saptami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashtami-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashtami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashtami-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashtami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashtami-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashtami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-ashtami-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Ashtami Shraddha needs a named current owner",
+        "hi": "Formal अष्टमी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashtami-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashtami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashtami-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashtami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-ashtami-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "This lane remains separate from Jivitputrika, Mahalakshmi, Radha Ashtami and Durga Ashtami.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "This lane remains separate from Jivitputrika, Mahalakshmi, Radha Ashtami and Durga Ashtami."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "navami-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/navami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "navami-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/navami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "navami-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/navami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-navami-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Navami Shraddha needs a named current owner",
+        "hi": "Formal नवमी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "navami-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/navami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "navami-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/navami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-navami-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "The source gives the Navami death-tithi rule and additionally calls the day suitable for a mother's Shraddha and deceased women in the family. These gendered living claims do not automatically classify an ancestor or performer.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The source gives the Navami death-tithi rule and additionally calls the day suitable for a mother's Shraddha and deceased women in the family. These gendered living claims do not automatically classify an ancestor or performer."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dashami-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dashami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dashami-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dashami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dashami-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dashami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-dashami-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Dashami Shraddha needs a named current owner",
+        "hi": "Formal दशमी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dashami-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dashami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "dashami-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/dashami-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-dashami-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "The current page's title and timings say Dashami but one English sentence mistakenly says Navami. The contradiction is preserved and a second accepted authority must confirm formal identity.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The current page's title and timings say Dashami but one English sentence mistakenly says Navami. The contradiction is preserved and a second accepted authority must confirm formal identity."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ekadashi-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ekadashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ekadashi-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ekadashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ekadashi-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ekadashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-ekadashi-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Ekadashi Shraddha needs a named current owner",
+        "hi": "Formal एकादशी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ekadashi-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ekadashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ekadashi-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ekadashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-ekadashi-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "This is a Shraddha death-tithi route, not Indira Ekadashi fasting, parana or a Vaishnava vrata.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "This is a Shraddha death-tithi route, not Indira Ekadashi fasting, parana or a Vaishnava vrata."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturdashi-to-existing-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturdashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the safe private-remembrance boundary",
+        "hi": "Safe private-remembrance boundary reuse करें"
+      },
+      "scope": {
+        "statement": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Existing content supplies privacy, grief and no-result boundaries but not formal tithi vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturdashi-to-sarva-pitru",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturdashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/sarva-pitru-amavasya-north-west-authority-router-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_unknown_or_unresolved_applicability_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Unknown or unresolved applicability routes to Sarva Pitru",
+        "hi": "Unknown या unresolved applicability Sarva Pitru को route होती है"
+      },
+      "scope": {
+        "statement": "Unknown or disputed death tithi is not automatically assigned to this lane.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Unknown or disputed death tithi is not automatically assigned to this lane."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturdashi-to-formal-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturdashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-chaturdashi-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Chaturdashi Shraddha needs a named current owner",
+        "hi": "Formal चतुर्दशी श्राद्ध को named current owner चाहिए"
+      },
+      "scope": {
+        "statement": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Performer, sequence, pinda, tarpan, materials, recipients, donation and closing remain owner-specific."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturdashi-to-nachiketa-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturdashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death",
+        "hi": "Nachiketa Yama से मृत्यु का प्रश्न करते हैं"
+      },
+      "scope": {
+        "statement": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The public-domain Katha story is reflection, not tithi origin, vidhi or afterlife proof."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturdashi-to-special-applicability-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturdashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-chaturdashi-special-applicability-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_special_applicability_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Special applicability needs a named authority",
+        "hi": "Special applicability को named authority चाहिए"
+      },
+      "scope": {
+        "statement": "The source restricts this route to weapon death, accident, suicide or murder and otherwise points to Amavasya. Devam never classifies cause, intent or culpability. A separate death-date instruction creates an unresolved timing tension.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "The source restricts this route to weapon death, accident, suicide or murder and otherwise points to Amavasya. Devam never classifies cause, intent or culpability. A separate death-date instruction creates an unresolved timing tension."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaturdashi-to-current-crisis-support",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaturdashi-shraddha-north-west-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "support/india-current-mental-health-and-emergency-router"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_crisis_support_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Current crisis overrides ritual completion",
+        "hi": "Current crisis ritual completion से ऊपर है"
+      },
+      "scope": {
+        "statement": "Immediate danger uses 112; current self-harm risk uses qualified care and Tele-MANAS 14416 / 1800-89-14416.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha"
+        ],
+        "time_scope": "Locally resolved tithi-aparaahna and named formal authority",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-pitru-tithi-batch-research",
+          "claim_scope": "Immediate danger uses 112; current self-harm risk uses qualified care and Tele-MANAS 14416 / 1800-89-14416."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

@@ -467,3 +467,25 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published. The evidence-confirmed Pankoddhar denominator correction remains
 open and uncounted pending a reviewed successor freeze.
+
+## Evidence-first Pitru Paksha tithi batch checkpoint
+
+The reviewed 13-lane batch completes Purnima, Pratipada, Dwitiya, Tritiya,
+Chaturthi, Panchami, Shashthi, Saptami, Ashtami, Navami, Dashami, Ekadashi and
+Chaturdashi Shraddha as separate bilingual authority routers. One shared
+evidence matrix replaces thirteen repetitive research dossiers while every
+pack remains independently usable.
+
+The ordinary rule is a locally resolved death-tithi/aparaahna route. Only
+material differences branch: Purnima's opening-day versus Amavasya distinction,
+Pratipada's attributed maternal-grandparent claim, Panchami's attributed
+unmarried-deceased claim, Navami's attributed mother/deceased-women claim,
+Dashami's source contradiction, and Chaturdashi's trauma-informed restricted
+applicability and crisis boundary. Same-name deity vratas remain separate.
+Language, spelling, dress, ordinary food, image/no-image, prayer/silence and
+state popularity do not create variants.
+
+Exact accepted-authoring coverage is now **65 completed after freeze / 143
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+These packs are authored and internally reviewed only; they are not projected,
+hosted, independently released or published.
