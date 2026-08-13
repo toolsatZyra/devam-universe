@@ -351,6 +351,26 @@ authored library content has not been projected, hosted, independently released
 or published. The evidence-confirmed Pankoddhar denominator correction remains
 open and uncounted pending a reviewed successor freeze.
 
+The twenty-fifth post-freeze item is complete at the bilingual authored-library
+layer: `varuthini-ekadashi-north-west-smarta-household-2027-v1`. It preserves
+the reviewed 2 May 2027 ordinary fixture and gives a non-fasting, normally fed,
+hydrated, rested, no-donation and material-free route centred on Vishnu
+remembrance and one wanted dignity-protecting action that creates no debt.
+
+Padma Purana chapter 48's attributed results, gift hierarchy, daughter-as-gift
+language, rejection of taking marriage money, detailed three-day restrictions
+and vigil remain source facts. Devam does not treat a person as property,
+facilitate dowry, impose those restrictions universally, or promise protection.
+The popular Mandhata bear/lost-leg/restoration story is absent from the reviewed
+chapter and is not imported. Minor household expression stays inside the lane;
+formal restriction regimes, the additional story expression, legal/safety
+routes, named institutions and other Ekadashis remain separate.
+
+Exact accepted-authoring coverage is now **25 completed after freeze / 183
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published. The Pankoddhar denominator correction remains open and uncounted.
+
 The twenty-fourth post-freeze item is complete at the bilingual authored-library
 layer: `kamada-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
 reviewed 17 April 2027 ordinary fixture and gives a private, non-fasting,

@@ -1,0 +1,1043 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "varuthini-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "varuthini-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve the Krishna-paksha Varuthini Ekadashi for you?",
+      "Does your family follow ordinary Smarta Varuthini, or a materially different date, three-day food/vigil or parana rule?",
+      "Would discussion of daughter-as-gift language, dowry, forced marriage or coercion be distressing or unsafe today?",
+      "Would a private dignity-protecting action with no marriage discussion, donation, disclosure or contact be safer?",
+      "Does anyone need a non-fasting, normally fed, hydrated, rested and material-free form?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "varuthini-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "varuthini-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "varuthini-ekadashi",
+        "language_code": "en",
+        "note": "This is the ordinary North/West Smarta Varuthini household lane. The source's promised results, donation hierarchy, daughter-as-gift language, anti-marriage-payment warning and three-day restrictions are textual claims, not permission to treat a person as property, facilitate dowry, impose universal restrictions or guarantee protection."
+      },
+      {
+        "observance_slug": "varuthini-ekadashi",
+        "language_code": "hi",
+        "note": "यह सामान्य उत्तर/पश्चिम स्मार्त वरूथिनी गृह-मार्ग है। स्रोत के फल-दावे, दान-क्रम, पुत्री को दान कहने वाली भाषा, विवाह-धन की निन्दा और तीन-दिन के नियम पाठ के दावे हैं—व्यक्ति को संपत्ति मानना, दहेज चलाना, सार्वभौम नियम थोपना या सुरक्षा का वादा नहीं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-varuthini-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "varuthini-krishna-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "varuthini-private-nonfast-dignity-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Odisha, Andhra Pradesh, Tamil, Kannada, Telugu and ISKCON fixtures place ordinary Varuthini Ekadashi on Sunday 2 May 2027. North purnimanta pages may label it Vaishakha and South amanta pages Chaitra; resolve identity from the user's Indian city and accepted authority rather than the month name. Never copy displayed tithi/parana times, this date or a named temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-varuthini-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 48: Varuthini Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed attributed benefits, gift hierarchy, daughter-as-gift and anti-marriage-payment language, three-day restrictions and vigil; source facts rather than dignity norms, universal instructions or guarantees",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365625.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 48",
+        "reviewed_lines": "54-66",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-varuthini-2027",
+      "title": "2027 Varuthini Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian regional and ISKCON calendar discovery evidence for ordinary Varuthini on 2 May 2027 and nominal purnimanta/amanta month difference; no portable parana or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/varuthini/varuthini-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-05-02",
+        "identity": "Varuthini Krishna Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-dowry-prohibition-act",
+      "title": "The Dowry Prohibition Act, 1961",
+      "publisher": "India Code, Government of India",
+      "source_role": "official current statutory boundary prohibiting giving or taking dowry and penalising demands; not case-specific legal advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/indiacode/handle/123456789/1679?view_type=browse",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "act": "28 of 1961",
+        "sections": "2-4",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-varuthini-research",
+      "title": "Varuthini Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of source absence, equal dignity, anti-transaction care, food/information safety, non-fasting route, legal routing and non-guarantee",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/varuthini-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "varuthini-ekadashi"
+      ],
+      "title": "Varuthini Ekadashi: protect dignity without creating debt",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Varuthini Ekadashi today. A complete home form is non-fasting: remember Vishnu, hear the chapter-48-labelled account with its promised results and daughter-as-gift language explicitly bounded, then choose one wanted action that protects dignity without creating a debt. No donation, marriage discussion, three-day restriction list, vigil, fast or promised protection is required.",
+      "significance": {
+        "text": "The reviewed chapter praises Varuthini, ranks forms of giving, calls knowledge the best gift, condemns taking money in connection with giving a daughter in marriage, and prescribes detailed restrictions. It also treats a daughter as a gift, which Devam does not adopt. A bounded meaning is to protect dignity without making care transactional: people are not property; food, information or help is offered only with consent and creates no spiritual, social, marital or financial debt.",
+        "source_ids": [
+          "padma-purana-varuthini-deshpande",
+          "india-code-dowry-prohibition-act",
+          "devam-varuthini-research"
+        ],
+        "scope_note": "Source-labelled ethical reflection; not marriage, dowry, legal, diet, medical, supernatural or wish-fulfilment advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "varuthini-claims-gifts-and-restrictions-en",
+          "title": "Claims, gifts and restrictions in Padma Purana chapter 48",
+          "summary": "Yudhishthira asks Krishna about the dark-half Ekadashi of Vaishakha. Krishna names Varuthini and attributes happiness, good fortune, desired objects, freedom from sin, heaven and salvation to it, briefly naming Mandhatri, Dhundhumara and Shiva without narrating their episodes. The chapter ranks gifts from horses and elephants through land, sesame, gold and food, compares a daughter and a cow to food, calls knowledge the best gift, condemns taking money for giving a daughter in marriage, and then lists Dashami, Ekadashi and Dwadashi restrictions plus fasting and vigil. Devam preserves these as source facts while rejecting daughter-as-property language, dowry, coercion, social exclusion, universal restriction lists and guaranteed results. The reviewed chapter contains no bear attack, lost leg or bodily restoration story about Mandhata; that popular account is not imported.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 48",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-varuthini-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "varuthini-en-dignity-protection",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Vishnu remembrance, bounded source account, one consent-safe dignity-protecting action with no created debt, and a non-fasting close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "varuthini-en-formal-three-day-vow-context",
+          "population_scope": "Families or institutions with a separately inherited or authorised formal practice",
+          "description": "A formal authority may prescribe Dashami-Ekadashi-Dwadashi food, hygiene, movement, sex, vigil and parana rules. This ordinary guide does not reconstruct them.",
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "devam-varuthini-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "varuthini-en-minimum-v1",
+          "label": "Private dignity-protecting action",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "drik-varuthini-2027",
+            "india-code-dowry-prohibition-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "materials": [
+            {
+              "item": "A private, safe place",
+              "required": true,
+              "substitutions": [
+                "Use a brief mental form",
+                "Postpone until privacy is safe"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            },
+            {
+              "item": "An optional verified public resource or safe household reminder",
+              "required": false,
+              "substitutions": [
+                "Use no material",
+                "Choose a direct no-cost action"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Varuthini Ekadashi. Do not derive the date or parana from the chapter.",
+              "why": "Timing and authority are deterministic and local.",
+              "source_ids": [
+                "drik-varuthini-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, medicine, hygiene, safe movement and sleep normal. Do not begin the chapter?s restriction list, fast or vigil here.",
+              "why": "The normally fed, hydrated and rested route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, short family prayer or silence. No image, donation or material is needed.",
+              "why": "Devotion remains accessible without an invented universal mantra.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Read the chapter-48-labelled account. Name its promised results, gift hierarchy, daughter-as-gift language, anti-marriage-payment warning and restriction lists as source facts; say it contains no bear or lost-leg story.",
+              "why": "The source is preserved without importing a popular story or adopting patriarchal language.",
+              "source_ids": [
+                "padma-purana-varuthini-deshpande",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Choose one action that protects dignity without controlling anyone: remove a small hazard, correct unsafe information, offer suitable food after asking, share a verified public resource, or respect a boundary.",
+              "why": "The practice converts reflection into bounded care.",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Ask before helping and accept no, silence or changed consent. Create no debt of gratitude, access, labour, secrecy, religion, marriage or relationship.",
+              "why": "Care is not a transaction.",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and complete only the safe action. Use qualified legal or safety help for dowry, coercion, forced marriage, threat or violence; promise no protection or result.",
+              "why": "Ritual cannot replace safety, law or evidence.",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately with gratitude; eat, hydrate, use normal hygiene, take medicine and rest. Complete only the wanted action, with no donation, marriage negotiation, fast, vigil, restriction list or protection claim.",
+            "source_ids": [
+              "devam-varuthini-research",
+              "devam-ekadashi-recurring-scaffold"
+            ],
+            "scope_note": "Qualified legal, safety, health or safeguarding help remains separate and may be necessary."
+          }
+        },
+        {
+          "procedure_id": "varuthini-en-standard-v1",
+          "label": "Consent-led family dignity reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "family-led ordinary remembrance; no marriage negotiation, donation pressure or formal three-day vow",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "drik-varuthini-2027",
+            "india-code-dowry-prohibition-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "Optional verified resource or safe food for one?s own household",
+              "required": false,
+              "substitutions": [
+                "No material",
+                "A no-cost protective action"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the local Varuthini date and choose the normal-food, rested family form. Ask whether everyone wants the story and discussion; anyone may use silence or leave.",
+              "why": "Date, health and consent come first.",
+              "source_ids": [
+                "drik-varuthini-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Remember Vishnu with the family?s familiar prayer, name or silence. Keep food, water, medicine, hygiene and sleep normal.",
+              "why": "No universal mantra or three-day restriction is invented.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Tell the bounded chapter account, including its daughter-as-gift tension and anti-payment warning. State that people are not gifts and that the reviewed source has no bear/lost-leg episode.",
+              "why": "The account remains honest without patriarchal endorsement or story import.",
+              "source_ids": [
+                "padma-purana-varuthini-deshpande",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person chooses one consent-safe protective action. Do not discuss someone?s marriage, dowry, abuse or private situation without their invitation and a safe setting.",
+              "why": "Privacy and agency prevent devotional pressure.",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close without predictions or debts. Use qualified routes for demands, coercion, threats, violence, health or law.",
+              "why": "A devotional close does not guarantee or replace real-world support.",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "End without extracting promises, gifts or disclosure. Share ordinary household food only if safe, and let each person keep their action private. No one owes money, gratitude, access, marriage or a result.",
+            "source_ids": [
+              "devam-varuthini-research"
+            ],
+            "scope_note": "Minor family expression stays within this lane; the formal three-day vow requires its own authority."
+          }
+        },
+        {
+          "procedure_id": "varuthini-en-elaborate-v1",
+          "label": "Verified ordinary temple visit",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "ordinary visitor conduct at a named institution with current verified programme",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-varuthini-2027",
+            "india-code-dowry-prohibition-act",
+            "devam-varuthini-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified current temple information and safe travel plan",
+              "required": true,
+              "substitutions": [
+                "Stay home and use the complete minimum route"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named temple?s current programme, entry, safety, offerings and return travel. Do not infer a time from a calendar card.",
+              "why": "A living institution controls its current schedule.",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Participate only as an ordinary visitor. Do not copy priest-led restrictions, fasting, vigil, donation, marriage-benefit or parana rules from this guide.",
+              "why": "Those practices require separate live authority.",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Refuse payment pressure, dowry or marriage negotiation, forced disclosure, private access, isolation, unwanted touch or contact with an unsafe person. Leave if unsafe.",
+              "why": "Devotion does not remove dignity, consent, safety or law.",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Return safely, eat and rest normally, and complete only one voluntary action without claiming protection, prosperity or desired objects.",
+              "why": "The ordinary meaning is bounded and non-guaranteeing.",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Treat the institution?s ordinary visitor exit as the close. Stay home if current information or safe travel cannot be verified; the private non-fasting form is complete.",
+            "source_ids": [
+              "devam-varuthini-research"
+            ],
+            "scope_note": "The institution controls its rite; no programme overrides dignity, health, consent, safety or law."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-resource-and-household-form",
+          "scope": "Minor household expression",
+          "difference": "Language, image/no image, safe food/no offering, verified resource/no resource, familiar prayer/silence and individual/family expression do not change the core work.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "formal-three-day-restriction-vow",
+          "scope": "Inherited or priest-led formal authority",
+          "difference": "Dashami-Ekadashi-Dwadashi food, hygiene, sleep, movement, sex, vigil, mantra and parana rules materially change the action.",
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bear-lost-leg-restoration-story",
+          "scope": "Additional source expression",
+          "difference": "The reviewed chapter contains no such episode; its source, edition and reception require separate owner review.",
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "dowry-forced-marriage-or-violence-route",
+          "scope": "Legal and safeguarding need",
+          "difference": "Demands, coercion, child/forced marriage, threats or violence require qualified evidence, duties and support.",
+          "source_ids": [
+            "india-code-dowry-prohibition-act",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority",
+          "scope": "Different date or parana authority",
+          "difference": "A materially different date, food rule or parana does not inherit ordinary Smarta timing.",
+          "source_ids": [
+            "drik-varuthini-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme",
+          "scope": "Institution-specific rite",
+          "difference": "Live timing, priest action, access, safety, fees and offerings require the named institution.",
+          "source_ids": [
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi",
+          "scope": "Another Ekadashi identity",
+          "difference": "Kamada, Mohini and other Ekadashis have different timing, stories or practices.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A private, non-fasting, normally fed, hydrated, rested, no-touch, no-flame, no-purchase, no-donation, image-free, writing-free and material-free form is complete.",
+        "A woman, daughter, spouse or any person is not property, a gift, a transfer of guardianship or a source of family merit.",
+        "Do not give, demand, negotiate, hide or facilitate dowry. Ritual guidance is not case-specific legal advice; use qualified help for coercion, threat or violence.",
+        "Do not arrange, pressure or investigate a marriage through this route. Adult consent must be free; a child or vulnerable person requires safeguarding.",
+        "Ask before sharing food or information. Check allergies, diet, hygiene, expiry and preference; give no medical diet, supplement, cure claim or misinformation.",
+        "A gift creates no debt of access, labour, gratitude, secrecy, religious participation, marriage or relationship.",
+        "Do not exclude, insult or deny ordinary care based on source-era social or purity labels.",
+        "Do not begin the chapter?s fast, vigil, sexual, hygiene, exercise, travel or food restrictions here; never change insulin, medicine, meals or hydration.",
+        "The reviewed chapter contains no bear attack, lost leg or bodily restoration story about Mandhata; do not import or promise it.",
+        "No protection, good fortune, desired object, sin removal, heaven, salvation, fertility, marriage, cure, restored body, wealth or legal result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "varuthini-ekadashi"
+      ],
+      "title": "वरूथिनी एकादशी: ऋण बनाए बिना गरिमा की रक्षा",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज वरूथिनी एकादशी है। घर का पूर्ण रूप बिना उपवास है: विष्णु-स्मरण करें, अध्याय 48 की कथा में फल-दावों और पुत्री को दान कहने वाली भाषा की सीमा साफ रखें, फिर ऐसा एक चाहा गया काम चुनें जो कोई ऋण बनाए बिना गरिमा की रक्षा करे। दान, विवाह-चर्चा, तीन-दिन की नियम-सूची, जागरण, उपवास या सुरक्षा का वादा जरूरी नहीं।",
+      "significance": {
+        "text": "समीक्षित अध्याय वरूथिनी की प्रशंसा करता, दानों को क्रम देता, ज्ञान-दान को श्रेष्ठ कहता और पुत्री के विवाह के बदले धन लेने की निन्दा करता है; वह पुत्री को दान भी कहता है, जिसे देवम नहीं अपनाता। सीमित अर्थ है—देखभाल को लेन-देन बनाए बिना गरिमा की रक्षा: व्यक्ति संपत्ति नहीं; भोजन, जानकारी या सहायता केवल सहमति से दी जाए और कोई आध्यात्मिक, सामाजिक, वैवाहिक या आर्थिक ऋण न बनाए।",
+        "source_ids": [
+          "padma-purana-varuthini-deshpande",
+          "india-code-dowry-prohibition-act",
+          "devam-varuthini-research"
+        ],
+        "scope_note": "स्रोत-नाम वाला नैतिक चिंतन; विवाह, दहेज, कानून, आहार, चिकित्सा, अलौकिक या इच्छा-फल की सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "varuthini-claims-gifts-and-restrictions-hi",
+          "title": "पद्मपुराण अध्याय 48 में दावे, दान और नियम",
+          "summary": "युधिष्ठिर कृष्ण से वैशाख कृष्ण-पक्ष की एकादशी पूछते हैं। कृष्ण उसका नाम वरूथिनी बताकर सुख, सौभाग्य, इच्छित वस्तु, पाप-मुक्ति, स्वर्ग और मोक्ष के फल कहते हैं तथा मान्धाता, धुन्धुमार और शिव का केवल संक्षिप्त उल्लेख करते हैं। अध्याय घोड़े, हाथी, भूमि, तिल, सोना और भोजन जैसे दानों को क्रम देता, पुत्री और गाय की तुलना भोजन-दान से करता, ज्ञान-दान को श्रेष्ठ कहता और पुत्री के विवाह के बदले धन लेने की निन्दा करता है। फिर दशमी, एकादशी और द्वादशी के नियम, उपवास और जागरण गिनाता है। देवम इन्हें स्रोत-तथ्य रखते हुए पुत्री को संपत्ति मानना, दहेज, दबाव, सामाजिक बहिष्कार, सार्वभौम नियम और निश्चित फल अस्वीकार करता है। समीक्षित अध्याय में मान्धाता पर भालू का हमला, पैर खोना या शरीर वापस मिलने की कथा नहीं है; वह लोकप्रिय कथा यहाँ नहीं जोड़ी गई।",
+          "tradition_scope": "पद्मपुराण उत्तरखण्ड अध्याय 48 का समीक्षित देशपाण्डे अंग्रेजी रूप",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-varuthini-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "varuthini-hi-dignity-protection",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त व्यक्ति या गृह",
+          "description": "विष्णु-स्मरण, सीमित स्रोत-विवरण, ऋण बनाए बिना एक सहमति-सुरक्षित गरिमा-रक्षक काम, और बिना उपवास समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "varuthini-hi-formal-three-day-vow-context",
+          "population_scope": "अलग विरासत या अधिकृत औपचारिक विधि वाले परिवार/संस्थान",
+          "description": "औपचारिक प्राधिकारी दशमी-एकादशी-द्वादशी के भोजन, स्वच्छता, गति, यौन, जागरण और पारण-नियम दे सकता है। यह सामान्य मार्ग उन्हें नहीं गढ़ता।",
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "devam-varuthini-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "varuthini-hi-minimum-v1",
+          "label": "निजी गरिमा-रक्षक काम",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "drik-varuthini-2027",
+            "india-code-dowry-prohibition-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "materials": [
+            {
+              "item": "निजी और सुरक्षित स्थान",
+              "required": true,
+              "substitutions": [
+                "संक्षिप्त मानसिक रूप करें",
+                "निजता सुरक्षित होने तक टालें"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक सत्यापित सार्वजनिक साधन या सुरक्षित गृह-स्मरण",
+              "required": false,
+              "substitutions": [
+                "कोई सामग्री नहीं",
+                "सीधा बिना-खर्च काम चुनें"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त प्राधिकारी में आज वरूथिनी एकादशी है। अध्याय से तिथि या पारण न निकालें।",
+              "why": "समय और प्राधिकार स्थानीय तथा निर्धार्य हैं।",
+              "source_ids": [
+                "drik-varuthini-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, जल, दवा, स्वच्छता, सुरक्षित गति और नींद सामान्य रखें। यहाँ अध्याय की नियम-सूची, उपवास या जागरण शुरू न करें।",
+              "why": "सामान्य भोजन, जल और विश्राम वाला रूप पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का परिचित नाम, छोटा पारिवारिक प्रार्थना-वाक्य या मौन रखें। चित्र, दान या सामग्री जरूरी नहीं।",
+              "why": "सार्वभौम मंत्र गढ़े बिना भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "अध्याय 48 नाम वाला विवरण पढ़ें। फल-दावे, दान-क्रम, पुत्री-दान भाषा, विवाह-धन की निन्दा और नियम-सूची को स्रोत-तथ्य कहें; साफ कहें कि भालू/पैर वाली कथा इसमें नहीं।",
+              "why": "स्रोत पितृसत्तात्मक भाषा अपनाए या लोकप्रिय कथा जोड़े बिना सुरक्षित रहता है।",
+              "source_ids": [
+                "padma-purana-varuthini-deshpande",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "एक गरिमा-रक्षक काम चुनें: छोटा खतरा हटाएं, असुरक्षित सूचना सुधारें, पूछकर उपयुक्त भोजन दें, सत्यापित सार्वजनिक साधन साझा करें या सीमा का सम्मान करें।",
+              "why": "चिंतन सीमित देखभाल में बदलता है।",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सहायता से पहले पूछें और ना, मौन या बदली सहमति मानें। कृतज्ञता, पहुँच, श्रम, गोपनीयता, धर्म, विवाह या संबंध का ऋण न बनाएं।",
+              "why": "देखभाल लेन-देन नहीं है।",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता से बंद करें और केवल सुरक्षित काम करें। दहेज, दबाव, जबरन विवाह, धमकी या हिंसा में योग्य कानून/सुरक्षा सहायता लें; सुरक्षा या फल का वादा न करें।",
+              "why": "अनुष्ठान सुरक्षा, कानून या प्रमाण नहीं बदलता।",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "निजी कृतज्ञता से बंद करें; सामान्य भोजन, जल, स्वच्छता, दवा और विश्राम रखें। केवल चाहा गया काम करें; दान, विवाह-वार्ता, उपवास, जागरण, नियम-सूची या सुरक्षा-दावा नहीं।",
+            "source_ids": [
+              "devam-varuthini-research",
+              "devam-ekadashi-recurring-scaffold"
+            ],
+            "scope_note": "योग्य कानून, सुरक्षा, स्वास्थ्य या संरक्षण सहायता अलग रह सकती है।"
+          }
+        },
+        {
+          "procedure_id": "varuthini-hi-standard-v1",
+          "label": "सहमति-आधारित पारिवारिक गरिमा-चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; विवाह-वार्ता, दान-दबाव या औपचारिक तीन-दिन व्रत नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "drik-varuthini-2027",
+            "india-code-dowry-prohibition-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु-चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "चित्र नहीं",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "वैकल्पिक सत्यापित साधन या अपने घर का सुरक्षित भोजन",
+              "required": false,
+              "substitutions": [
+                "कोई सामग्री नहीं",
+                "बिना-खर्च रक्षक काम"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय वरूथिनी तिथि और सामान्य-भोजन, विश्रामयुक्त पारिवारिक रूप की पुष्टि करें। पूछें कि सभी कथा/चर्चा चाहते हैं या नहीं; कोई मौन रख या बाहर जा सकता है।",
+              "why": "तिथि, स्वास्थ्य और सहमति पहले हैं।",
+              "source_ids": [
+                "drik-varuthini-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "परिवार की परिचित प्रार्थना, विष्णु-नाम या मौन रखें। भोजन, जल, दवा, स्वच्छता और नींद सामान्य रहें।",
+              "why": "सार्वभौम मंत्र या तीन-दिन नियम नहीं गढ़े जाते।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सीमित अध्याय-विवरण कहें, जिसमें पुत्री-दान की समस्या और विवाह-धन की निन्दा दोनों हों। व्यक्ति दान नहीं और समीक्षित स्रोत में भालू/पैर प्रसंग नहीं—यह साफ कहें।",
+              "why": "विवरण पितृसत्ता माने या कथा जोड़े बिना ईमानदार रहता है।",
+              "source_ids": [
+                "padma-purana-varuthini-deshpande",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति एक सहमति-सुरक्षित रक्षक काम चुने। किसी के विवाह, दहेज, दुर्व्यवहार या निजी स्थिति पर उसके निमंत्रण और सुरक्षित माहौल के बिना चर्चा न करें।",
+              "why": "निजता और स्वायत्तता भक्ति-दबाव रोकती हैं।",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "फल या ऋण बताए बिना बंद करें। मांग, दबाव, धमकी, हिंसा, स्वास्थ्य या कानून के लिए योग्य मार्ग लें।",
+              "why": "भक्ति-समापन वास्तविक सहायता का विकल्प नहीं।",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "वादा, दान या खुलासा निकलवाए बिना बंद करें। सुरक्षित हो तो घर का सामान्य भोजन लें और हर व्यक्ति का काम निजी रहने दें। कोई पैसा, कृतज्ञता, पहुँच, विवाह या फल नहीं देता।",
+            "source_ids": [
+              "devam-varuthini-research"
+            ],
+            "scope_note": "छोटा पारिवारिक अंतर इसी मार्ग में रहता है; औपचारिक तीन-दिन व्रत अलग प्राधिकार चाहता है।"
+          }
+        },
+        {
+          "procedure_id": "varuthini-hi-elaborate-v1",
+          "label": "सत्यापित सामान्य मंदिर-यात्रा",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित संस्थान में सामान्य आगंतुक",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-varuthini-2027",
+            "india-code-dowry-prohibition-act",
+            "devam-varuthini-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित मंदिर-सूचना और सुरक्षित यात्रा",
+              "required": true,
+              "substitutions": [
+                "घर रहकर पूर्ण न्यूनतम रूप करें"
+              ],
+              "source_ids": [
+                "devam-varuthini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित मंदिर से वर्तमान कार्यक्रम, प्रवेश, सुरक्षा, चढ़ावे और वापसी सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।",
+              "why": "जीवित संस्थान अपना कार्यक्रम नियंत्रित करता है।",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित नियम, उपवास, जागरण, दान, विवाह-फल या पारण की नकल न करें।",
+              "why": "ये काम अलग जीवित प्राधिकार चाहते हैं।",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "भुगतान-दबाव, दहेज/विवाह-वार्ता, जबरन खुलासा, निजी पहुँच, एकांत, अनचाहा स्पर्श या असुरक्षित व्यक्ति से संपर्क मना करें। असुरक्षित हो तो निकलें।",
+              "why": "भक्ति गरिमा, सहमति, सुरक्षा या कानून नहीं हटाती।",
+              "source_ids": [
+                "india-code-dowry-prohibition-act",
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सुरक्षित लौटकर सामान्य भोजन और विश्राम करें; सुरक्षा, समृद्धि या इच्छित वस्तु कहे बिना केवल एक स्वैच्छिक काम करें।",
+              "why": "सामान्य अर्थ सीमित और गैर-गारंटी है।",
+              "source_ids": [
+                "devam-varuthini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "संस्थान का सामान्य आगंतुक-निकास समापन है। वर्तमान सूचना या सुरक्षित यात्रा सत्यापित न हो तो घर रहें; निजी बिना-उपवास रूप पूर्ण है।",
+            "source_ids": [
+              "devam-varuthini-research"
+            ],
+            "scope_note": "संस्थान अपनी विधि नियंत्रित करता है; कोई कार्यक्रम गरिमा, स्वास्थ्य, सहमति, सुरक्षा या कानून नहीं हटाता।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-resource-and-household-form-hi",
+          "scope": "छोटा गृह-अंतर",
+          "difference": "भाषा, चित्र/नहीं, सुरक्षित भोजन/नहीं, सत्यापित साधन/नहीं, परिचित प्रार्थना/मौन और व्यक्ति/परिवार मूल काम नहीं बदलते।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "formal-three-day-restriction-vow-hi",
+          "scope": "विरासत या पुरोहित-नेतृत्व औपचारिक प्राधिकार",
+          "difference": "दशमी-एकादशी-द्वादशी के भोजन, स्वच्छता, नींद, गति, यौन, जागरण, मंत्र और पारण-नियम काम बदलते हैं।",
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bear-lost-leg-restoration-story-hi",
+          "scope": "अतिरिक्त स्रोत-रूप",
+          "difference": "समीक्षित अध्याय में यह प्रसंग नहीं; उसका स्रोत, संस्करण और ग्रहण अलग समीक्षा चाहता है।",
+          "source_ids": [
+            "padma-purana-varuthini-deshpande",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "dowry-forced-marriage-or-violence-route-hi",
+          "scope": "कानूनी और सुरक्षा आवश्यकता",
+          "difference": "मांग, दबाव, बाल/जबरन विवाह, धमकी या हिंसा योग्य प्रमाण, कर्तव्य और सहायता चाहते हैं।",
+          "source_ids": [
+            "india-code-dowry-prohibition-act",
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-hi",
+          "scope": "अलग तिथि या पारण प्राधिकार",
+          "difference": "भिन्न तिथि, भोजन-नियम या पारण सामान्य स्मार्त समय को नहीं अपनाते।",
+          "source_ids": [
+            "drik-varuthini-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-hi",
+          "scope": "संस्थान-विशिष्ट विधि",
+          "difference": "जीवित समय, पुरोहित-कर्म, प्रवेश, सुरक्षा, शुल्क और चढ़ावे नामित संस्थान चाहते हैं।",
+          "source_ids": [
+            "devam-varuthini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi-hi",
+          "scope": "अन्य एकादशी पहचान",
+          "difference": "कामदा, मोहिनी और अन्य एकादशियों की तिथि, कथा या अभ्यास अलग हैं।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "निजी, बिना उपवास, सामान्य भोजन-जल, विश्राम, बिना स्पर्श, लौ, खरीद, दान, चित्र, लेखन और सामग्री का रूप पूर्ण है।",
+        "स्त्री, पुत्री, जीवनसाथी या कोई व्यक्ति संपत्ति, दान, संरक्षण-हस्तांतरण या परिवार के पुण्य का साधन नहीं।",
+        "दहेज देना, मांगना, तय करना, छिपाना या चलाना नहीं। अनुष्ठान-मार्ग मामला-विशिष्ट कानूनी सलाह नहीं; दबाव, धमकी या हिंसा में योग्य सहायता लें।",
+        "इस मार्ग से विवाह तय, दबाव या जाँच न करें। वयस्क सहमति स्वतंत्र हो; बच्चे या असुरक्षित व्यक्ति को संरक्षण चाहिए।",
+        "भोजन/जानकारी से पहले पूछें। एलर्जी, आहार, स्वच्छता, समाप्ति और पसंद जाँचें; चिकित्सकीय आहार, पूरक, इलाज-दावा या गलत सूचना न दें।",
+        "दान से पहुँच, श्रम, कृतज्ञता, गोपनीयता, धार्मिक भागीदारी, विवाह या संबंध का ऋण नहीं बनता।",
+        "स्रोत-कालीन सामाजिक/शुद्धि लेबल पर किसी का बहिष्कार, अपमान या देखभाल से वंचन न करें।",
+        "यहाँ अध्याय का उपवास, जागरण, यौन, स्वच्छता, व्यायाम, यात्रा या भोजन-नियम शुरू न करें; इंसुलिन, दवा, भोजन या जल न बदलें।",
+        "समीक्षित अध्याय में मान्धाता पर भालू का हमला, पैर खोना या शरीर वापस मिलना नहीं; इसे जोड़ें या इसका वादा न करें।",
+        "सुरक्षा, सौभाग्य, इच्छित वस्तु, पाप-मुक्ति, स्वर्ग, मोक्ष, संतान, विवाह, इलाज, शरीर-वापसी, धन या कानूनी फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

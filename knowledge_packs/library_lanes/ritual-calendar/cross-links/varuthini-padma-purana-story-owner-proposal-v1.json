@@ -1,0 +1,32 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-varuthini-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "varuthini-to-padma-purana-claims-gifts-restrictions-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/varuthini-ekadashi-north-west-smarta-household-2027-v1"},
+      "to_ref": {"lane_local_id": "story/padma-purana-varuthini-claims-gifts-restrictions-source-context"},
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_varuthini_claims_gifts_restrictions_context",
+      "directionality": "directed",
+      "consumer_label": {"en": "Read the full source-labelled Varuthini account", "hi": "वरूथिनी का पूरा स्रोत-नाम वाला विवरण पढ़ें"},
+      "scope": {
+        "statement": "The ritual pack uses a bounded account from the reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 48. A future story/scripture owner should provide the lawful full expression, Sanskrit and edition coordinates, and reception context while preserving attributed results, named figures without episodes, the gift hierarchy, daughter-as-gift and anti-marriage-payment language, three-day restrictions and vigil as source facts rather than dignity norms, dowry permission, universal ritual instructions or guarantees. The popular Mandhata bear/lost-leg/restoration episode is absent and must not be silently merged.",
+        "geography_codes": ["north-india", "west-india"],
+        "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+        "time_scope": "Locally resolved Krishna-paksha Varuthini Ekadashi; reviewed 2027 fixture 2 May",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 48; Sanskrit, edition, reception and popular-story source review unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "source_passage", "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365625.html", "claim_scope": "Reviewed lines 54-66 containing attributed benefits, named figures, gift hierarchy, marriage-payment language, formal restrictions and vigil."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/varuthini-ekadashi-north-west-smarta-household-2027-v1.json", "claim_scope": "Bilingual timing, source absence, equal-dignity and anti-transaction framing, anti-dowry boundary, complete household action, closing and major-variant routing."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
