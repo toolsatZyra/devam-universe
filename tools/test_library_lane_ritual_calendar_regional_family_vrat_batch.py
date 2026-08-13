@@ -38,7 +38,7 @@ def test_rejects_gender_coercion_and_promises():
 def test_links_progress_matrix_and_unprojected_boundary():
  links=load(LANE/"cross-links"/"regional-womens-family-vrat-batch-8-owner-proposals-v1.json");Draft202012Validator(load(ROOT/"schemas"/"cross-lane-link-proposal-v1.schema.json")).validate(links)
  assert len(links["proposals"])==8 and all(x["target_resolution"]=="unresolved_owner_lane" for x in links["proposals"])
- p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json");assert p["completed_after_freeze"]==183 and p["remaining_authoring_items"]==25
+ p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json");assert p["completed_after_freeze"]==186 and p["remaining_authoring_items"]==22
  for lane in IDS:assert p["completed_lane_ids"].count(lane)==1 and p["completed_pack_refs"].count(f"knowledge_packs/library_lanes/ritual-calendar/packs/{lane}.json")==1
  matrix=(LANE/"research"/"regional-womens-family-vrat-batch-8-evidence-matrix-2027-v1.md").read_text(encoding="utf-8")
  for term in ("eight accepted named answers","Major variants only","No woman, girl, wife","0 of 19,480"):assert term in matrix

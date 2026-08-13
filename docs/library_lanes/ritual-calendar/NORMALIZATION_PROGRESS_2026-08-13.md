@@ -746,3 +746,22 @@ Exact accepted-authoring coverage is now **183 completed after freeze / 25
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first cattle-honour observance checkpoint
+
+Three accepted answers are complete as bilingual applicability lanes: Gujarati
+Bol Choth, Maharashtra/Chhattisgarh Pola, and owner-routed Vrishabhotsava.
+
+The batch keeps Gujarati Shravana Krishna Chaturthi separate from Pola's
+Amanta Shravana Amavasya. It records the Maharashtra Tourism Polasur account as
+an attributed story rather than a universal origin. When a selected calendar
+co-lists Pola and Vrishabhotsava, the consumer performs one route rather than
+duplicating it. Every generic route is symbol-first: no acquisition, transport,
+restraint, paint, piercing, horn change, heavy decoration, forced bath/feed,
+race or forced procession. Live-animal care remains with an existing lawful
+caregiver, veterinarian and current local owner.
+
+Exact accepted-authoring coverage is now **186 completed after freeze / 22
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
