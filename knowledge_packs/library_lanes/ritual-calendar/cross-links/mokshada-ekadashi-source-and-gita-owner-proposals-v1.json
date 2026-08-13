@@ -1,0 +1,131 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-mokshada-ekadashi-source-and-gita-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "mokshada-to-padma-vaikhanasa-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mokshada-gomati-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-mokshada-vaikhanasa-ancestors-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_complete_source_labelled_vaikhanasa_ancestors_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the complete source-labelled Vaikhanasa and ancestors account",
+        "hi": "वैखानस और पूर्वजों की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "Preserve Padma Purana 6.39's dream, ancestor rescue demand, son-duty rhetoric, Brahmana and Parvata authority, sexual/reproductive premise, collective vow and merit transfer, flower shower, sky voice and attributed salvation without making sex, conception, descendant rescue, dream obedience, dead contact, caste hierarchy, merit transfer, absolution or afterlife outcomes Devam instructions.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-DL",
+          "IN-HR",
+          "IN-RJ",
+          "IN-UP",
+          "IN-UK",
+          "IN-PB",
+          "IN-MH",
+          "IN-GJ",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved ordinary Margashirsha Shukla Mokshada/Gomati; reviewed 2027 fixture 9 December",
+        "source_expression_scope": "N. A. Deshpande English expression and displayed Sanskrit of Padma Purana 6.39; other recensions and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365616.html",
+          "claim_scope": "Reviewed complete chapter, verses 1-47."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/mokshada-gomati-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, full story, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "mokshada-to-existing-gita-jayanti-reading-lane",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/mokshada-gomati-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/gita-jayanti-reading-reflection-content-v1"
+      },
+      "relationship_family": "text",
+      "predicate": "routes_same_day_attributable_gita_jayanti_reading",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Open the separate attributable Gita Jayanti reading route",
+        "hi": "अलग attributable गीता जयंती reading मार्ग खोलें"
+      },
+      "scope": {
+        "statement": "Route users requesting Bhagavad Gita reading, commentary or Gita Jayanti reflection to the existing bilingual attributable lane; do not duplicate it, merge it with Padma Purana Mokshada vrata, require all eighteen chapters or universalise one edition/commentary.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-DL",
+          "IN-HR",
+          "IN-RJ",
+          "IN-UP",
+          "IN-UK",
+          "IN-PB",
+          "IN-MH",
+          "IN-GJ",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Same locally resolved Margashirsha Shukla date when Gita Jayanti applies; current organiser required",
+        "source_expression_scope": "Existing Devam Gita Jayanti reading/reflection packs and their attributed sources; no new canonical content"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/rituals/gita-jayanti-reading-reflection-content-v1.json",
+          "claim_scope": "Existing bilingual reading/reflection lane with Mokshada separation."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/mokshada-gomati-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Ordinary Mokshada pack routes same-day reading outward."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    }
+  ]
+}
