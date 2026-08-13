@@ -3465,12 +3465,36 @@ def test_vijaya_pack_links_and_progress_are_valid():
     ]
     corrections = load(DENOMINATOR_CORRECTIONS)
     assert corrections["frozen_accepted_authoring_denominator"] == 208
-    assert len(corrections["correction_candidates"]) == 1
-    correction = corrections["correction_candidates"][0]
+    assert len(corrections["correction_candidates"]) == 3
+    by_correction_id = {
+        item["correction_id"]: item for item in corrections["correction_candidates"]
+    }
+    correction = by_correction_id[
+        "pankoddhar-sri-lokanath-puri-material-institution-lane-v1"
+    ]
     assert correction["evidence_result"] == "prior_alias_assumption_contradicted"
     assert correction["proposed_count_effect_if_accepted"] == 1
     assert correction["current_count_effect"] == 0
     assert pack["lane_id"] in correction["not_completed_by_lane_ids"]
+    mahalakshmi = by_correction_id["mahalakshmi-sixteen-day-vrat-cycle-v1"]
+    assert mahalakshmi["prior_disposition"] == "absent_from_v3_census_and_v4_denominator"
+    assert mahalakshmi["evidence_result"] == "material_september_observance_omitted"
+    assert mahalakshmi["proposed_count_effect_if_accepted"] == 1
+    assert mahalakshmi["current_count_effect"] == 0
+    assert "fifteen or seventeen" in mahalakshmi["material_difference"]
+    assert "sixteen-days-mahalakshmi-vrat.html?year=2027" in mahalakshmi["official_evidence"]["url"]
+    jivitputrika = by_correction_id[
+        "jivitputrika-jitiya-bihar-eastern-up-regional-v1"
+    ]
+    assert jivitputrika["prior_disposition"] == "absent_from_v3_census_and_v4_denominator"
+    assert jivitputrika["evidence_result"] == "material_september_observance_omitted"
+    assert jivitputrika["proposed_count_effect_if_accepted"] == 1
+    assert jivitputrika["current_count_effect"] == 0
+    assert "three-day" in jivitputrika["material_difference"]
+    assert "nirjala" in jivitputrika["safety_boundary"]
+    assert jivitputrika["official_evidence"]["publisher"].endswith(
+        "Government of Bihar"
+    )
 
 
 def test_vijaya_is_bilingual_water_safe_and_only_major_variants_split():
