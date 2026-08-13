@@ -1,0 +1,106 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-parsva-parivartini-source-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "parsva-to-padma-mandhatri-angiras-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/parsva-parivartini-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-parsva-mandhatri-angiras-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_mandhatri_angiras_drought_refusal_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Mandhatri and Angiras account",
+        "hi": "मांधाता और अंगिरा की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "Preserve Padma Purana 6.57's drought, caste blame, proposed killing, Mandhatri's explicit refusal, collective observance, attributed rain and formal gifts without making caste, weather or ritual claims Devam's voice.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-OD"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved Bhadrapada Shukla Parsva/Parivartini; reviewed 2027 fixture 11 September",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 57; other recensions unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365634.html",
+          "claim_scope": "Reviewed verses 1-41 with the complete Mandhatri-Angiras drought and refusal sequence."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/parsva-parivartini-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "parsva-to-turning-vamana-bali-source-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/parsva-parivartini-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/parsva-parivartini-turning-vamana-bali-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_resolved_turning_vamana_bali_text_and_reception_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Compare the source-labelled turning and Vamana-Bali traditions",
+        "hi": "स्रोत-नामित करवट और वामन-बली परंपराएँ तुलना करें"
+      },
+      "scope": {
+        "statement": "Resolve Narada Purana's formal left-side image passage, current BAPS Jal Jhilani expression and the popularly cited Brahmavaivarta Vamana-Bali account without blending them, universalising an institution or collapsing Vamana Dwadashi.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-GJ",
+          "IN-OD"
+        ],
+        "tradition_codes": [
+          "ordinary-ekadashi-household",
+          "baps-swaminarayan"
+        ],
+        "time_scope": "Bhadrapada Shukla Ekadashi and separately resolved Dwadashi",
+        "source_expression_scope": "Narada Purana 4.120 fixed; BAPS current institutional expression fixed; claimed Brahmavaivarta full passage and wider reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/narada-purana-english/d/doc1857985.html",
+          "claim_scope": "Reviewed verses 36b-41a and note for installed image, reservoir, left-side rest and Vamana Dwadashi."
+        },
+        {
+          "evidence_kind": "living_practice",
+          "ref": "https://www.swaminarayan.org/festivals/jalzilani/index.htm",
+          "claim_scope": "Current BAPS/Swaminarayan Jal Jhilani story and institutional water route."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/parsva-parivartini-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual source distinctions and major-variant routing."
+        }
+      ],
+      "confidence": "contested",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

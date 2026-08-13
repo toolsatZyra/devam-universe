@@ -1,0 +1,1308 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "parsva-parivartini-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "parsva-ekadashi",
+    "parivartani-ekadashi",
+    "parswa-paribartan-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-OD",
+      "IN-KA",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "ordinary-ekadashi-household"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted ordinary Panchang resolve Bhadrapada Shukla Parsva/Parivartani for you?",
+      "Are you asking about ordinary Ekadashi, next-day Vamana/Shravana Yoga Dwadashi, a formal Narada image rite, or named BAPS Jal Jhilani?",
+      "Would caste blame, proposed killing, drought or hunger content be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, sleep, no image movement and no water/boat access?",
+      "Would a material-free form with no action, contact, disclosure, donation or weather claim be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "parsva-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "parivartani-ekadashi"
+      },
+      {
+        "region_code": "IN-OD",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "parswa-paribartan-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "parsva-ekadashi",
+        "language_code": "en",
+        "note": "Base ordinary Bhadrapada Shukla Ekadashi for the reviewed 11 September fixture; formal image/water, Jal Jhilani and Dwadashi routes are separate."
+      },
+      {
+        "observance_slug": "parsva-ekadashi",
+        "language_code": "hi",
+        "note": "समीक्षित 11 सितंबर तिथि की सामान्य भाद्रपद शुक्ल एकादशी; औपचारिक चित्र/जल, जल झिलनी और द्वादशी मार्ग अलग हैं।"
+      },
+      {
+        "observance_slug": "parivartani-ekadashi",
+        "language_code": "en",
+        "note": "Parivartani is a same-date ordinary alias whose turning association is source-labelled; it does not authorise moving a household image."
+      },
+      {
+        "observance_slug": "parivartani-ekadashi",
+        "language_code": "hi",
+        "note": "परिवर्तिनी समान तिथि का सामान्य नाम है; स्रोत-नामित करवट संबंध गृह-चित्र हिलाने का अधिकार नहीं देता।"
+      },
+      {
+        "observance_slug": "parswa-paribartan-ekadashi",
+        "language_code": "en",
+        "note": "Odisha Parswa Paribartan is retained as an alias, not a second state ritual, unless material practice evidence changes the safe answer."
+      },
+      {
+        "observance_slug": "parswa-paribartan-ekadashi",
+        "language_code": "hi",
+        "note": "ओडिशा पार्श्व परिवर्तन नाम-रूप है, दूसरा राज्य अनुष्ठान नहीं; बड़ा आचरण-अंतर मिले तभी उत्तर बदलेगा।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "padma-purana-parsva-deshpande",
+      "narada-purana-padma-parivartini",
+      "drik-parsva-aliases-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "parsva-bhadrapada-shukla-ekadashi-local-ordinary-smarta-v1",
+    "closing_decision_rule_id": "parsva-nonviolent-equal-water-care-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed ordinary Indian fixtures place Parsva/Parivartani/Parswa Paribartan on Saturday 11 September 2027. Some authorities show Shravana Yoga Dwadashi or Vijaya Mahadwadashi on Sunday 12 September; Vamana Dwadashi is a separate annual item. Recompute city, sunrise, tithi/day-boundary and authority; never copy displayed times, parana, water programme or temple schedule."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-parsva-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 57: Padma Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Mandhatri drought account, caste blame and proposed killing, explicit refusal, collective vow, attributed rain and formal gift passage",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365634.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-41",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "narada-purana-padma-parivartini",
+      "title": "Narada Purana, Purva-bhaga, Chapter 120: Ekadashi vratas",
+      "publisher": "English translation surfaced by Wisdomlib",
+      "source_role": "Padma/Parivartini formal installed-image, reservoir, left-side rest, Vamana-on-Dwadashi, gift and fasting context; not ordinary household instruction",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/narada-purana-english/d/doc1857985.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "36b-41a and note 8; general context 1-4 and 84-92",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-parsva-aliases-2027",
+      "title": "2027 Parsva, Parivartani and Parswa Paribartan calendar fixtures",
+      "publisher": "DrikPanchang and Devam calendar census",
+      "source_role": "11 September identity, alias and adjacent Dwadashi discovery only; no portable parana or universal practice authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?time-format=24hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "ordinary_civil_date": "2027-09-11",
+        "adjacent_dwadashi": "2027-09-12",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "baps-jal-jhilani",
+      "title": "Parivartini - Jal Zilani Ekadashi",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "source_role": "current sampradaya evidence for turning, Krishna-Gopi boat/yoghurt account, waterless fast, murti-to-water and boat route; separate institutional practice only",
+      "rights_lane": "citation_only",
+      "url": "https://www.swaminarayan.org/festivals/jalzilani/index.htm",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "baps-kishore-pravesh",
+      "title": "Kishore Satsang Pravesh",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "source_role": "current institutional teaching source separating Jal Jhilani Ekadashi on Bhadarva Sud 11 from Vamana Jayanti on Sud 12",
+      "rights_lane": "citation_only",
+      "url": "https://download.baps.org/Data/Sites/1/Media/DownloadableFile/ExamBooks/2025-08-29-Kishore%20Satsang%20Pravesh.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Jal Jhilani Ekadashi and Vaman Jayanti",
+        "page": "62",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen Parsva base and Parivartani/Parswa Paribartan alias boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu-remembrance scaffold and family-authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-parsva-research",
+      "title": "Parsva / Parivartini Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local timing, story, caste/violence, water/image, safety, closing and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/parsva-parivartini-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "parsva-ekadashi",
+        "parivartani-ekadashi",
+        "parswa-paribartan-ekadashi"
+      ],
+      "title": "Parsva / Parivartini Ekadashi: a safe ordinary household guide",
+      "short_answer": "Confirm ordinary Parsva/Parivartini/Parswa Paribartan for your city and accepted Panchang, separate it from next-day Dwadashi and named Jal Jhilani. A complete form is to remain fed, hydrated and rested; remember Vishnu or Govinda; hear the Padma Purana Mandhatri story including Angiras's caste blame, killing proposal and the king's refusal; distinguish the Narada formal image-turning source; reject scapegoating and weather guarantees; optionally turn one private neglect pattern toward safe care; and close with normal food, water, equal dignity and official guidance. No material, fast, image movement, water entry, donation or result is required.",
+      "significance": {
+        "text": "Padma Purana 6.57 calls the day Padma and tells how Mandhatri refuses to kill an innocent ascetic whom Angiras blames for drought. Narada Purana supplies the formal left-side image rite behind the Parivartini association. Devam's bounded meaning is to turn away from scapegoating and protect nonviolence, equal dignity, truthful public help and fair access to ordinary water and food; ritual does not control weather.",
+        "source_ids": [
+          "padma-purana-parsva-deshpande",
+          "narada-purana-padma-parivartini",
+          "devam-parsva-research"
+        ],
+        "scope_note": "Ordinary household meaning only; not a universal national ritual, hydrology claim, Jal Jhilani route or Vamana Dwadashi."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-6-57-mandhatri-drought-and-refusal",
+          "title": "Mandhatri refuses to kill the innocent ascetic",
+          "summary": "After three rainless years, Mandhatri seeks help for hungry subjects. Angiras attributes the drought to a Chandala ascetic and tells the king to kill him. Mandhatri explicitly refuses to kill an innocent person and asks for a righteous alternative. Angiras directs Padma Ekadashi; the source attributes collective observance, rain and grain recovery to it and then prescribes caste-prioritised gifts. The caste and weather claims remain source speech, not Devam's facts or instructions.",
+          "tradition_scope": "N. A. Deshpande expression of Padma Purana Uttara Khanda 6.57, verses 1-41",
+          "source_ids": [
+            "padma-purana-parsva-deshpande"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "narada-padma-parivartini-left-side",
+          "title": "The formal image-turning source expression",
+          "summary": "Narada Purana 4.120 names Bhadrapada Shukla Padma, directs an installed image to a reservoir, water-touch and rest on its left side, followed by Vamana worship on Dwadashi and formal gifts. The translator links this with Vishnu turning during sleep and the Parivartini name. This grounds a source-labelled association, not a household permission to move an image, enter water or merge Ekadashi with Dwadashi.",
+          "tradition_scope": "Narada Purana Purva-bhaga 4.120, verses 36b-41a and translator note",
+          "source_ids": [
+            "narada-purana-padma-parivartini"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ordinary-vishnu-remembrance",
+          "population_scope": "Some ordinary Smarta Ekadashi households and individuals",
+          "description": "People may remember Vishnu/Govinda, hear a named account, pray or stay silent; wording, image, food and intensity remain family and authority choices.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "source-fast-gifts-and-turning",
+          "population_scope": "Padma and Narada Purana formal vrata expressions",
+          "description": "Sources describe fasting, collective observance, gifts and a reservoir/left-side image rite. This ordinary pack reports but does not prescribe them.",
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "baps-jal-jhilani-separate",
+          "population_scope": "BAPS/Swaminarayan institutions and devotees",
+          "description": "BAPS sources describe waterless fasting, murti, boat/water, yoghurt and arti with separate Vamana Jayanti next day. This is a named major institutional route, not an all-India household custom.",
+          "source_ids": [
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-nonviolent-turn",
+          "population_scope": "Ordinary participants wanting a no-purchase reflection",
+          "description": "A user may privately turn from blame or neglect toward one safe responsibility already theirs. No contact, disclosure, water rationing, repair, donation or action is required.",
+          "source_ids": [
+            "devam-parsva-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "parsva-minimum-private-en",
+          "label": "Minimum private, fed and material-free form",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Ordinary locally resolved Parsva/Parivartini/Parswa Paribartan only; no formal image, water, fast, parana, Jal Jhilani or Dwadashi authority",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "materials": [
+            {
+              "item": "No ritual material",
+              "required": false,
+              "substitutions": [
+                "Silence",
+                "A familiar Vishnu or Govinda name",
+                "No image, writing, purchase or action"
+              ],
+              "source_ids": [
+                "devam-parsva-research"
+              ]
+            },
+            {
+              "item": "Optional existing text or image",
+              "required": false,
+              "substitutions": [
+                "Trusted audio",
+                "Private memory",
+                "Nothing"
+              ],
+              "source_ids": [
+                "devam-parsva-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm ordinary Parsva/Parivartini/Parswa Paribartan for your Indian city and accepted ordinary Panchang; distinguish Saturday 11 September 2027 from any next-day Dwadashi or named authority.",
+              "why": "Ekadashi, Dwadashi, parana and institutional decisions are location- and authority-dependent.",
+              "source_ids": [
+                "drik-parsva-aliases-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Eat, drink, take prescribed medicine and insulin, feed children normally, keep hygiene and plan normal sleep. Begin no fast, waterless fast, vigil or parana.",
+              "why": "The complete ordinary form is fed, hydrated and rested.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu or Govinda with a familiar name, family prayer or silence. Do not move an image, invent a mantra or require an offering.",
+              "why": "Ordinary remembrance does not grant formal image or ritual authority.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the complete Padma Purana 6.57 sequence: drought, subjects' appeal, Mandhatri's search, Angiras's caste blame and proposed killing, Mandhatri's refusal, collective vow, attributed rain and formal gift passage.",
+              "why": "The refusal and harmful source speech must remain visible and source-labelled.",
+              "source_ids": [
+                "padma-purana-parsva-deshpande"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Hear the source distinction: Narada Purana gives an installed-image reservoir and left-side rite plus Vamana worship on Dwadashi; it grounds the turning association but is not this ordinary procedure.",
+              "why": "Separate textual expressions must not be blended into an invented national ritual.",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "State privately: no caste or person causes drought; violence is not a remedy; ritual guarantees no rain or harvest; nobody owes fasting, prayer, gifts or participation.",
+              "why": "This prevents scapegoating, coercion and weather misinformation.",
+              "source_ids": [
+                "padma-purana-parsva-deshpande",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "If useful, turn one private blame or neglect pattern toward a safe responsibility already yours: close your own running tap, keep normal household drinking water accessible, or verify an official advisory. Doing nothing beyond remembrance is complete.",
+              "why": "The optional action must avoid confrontation, repair, rationing, public infrastructure and water entry.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "Close with normal hydration, food, medicine, sleep, equal dignity and verified public guidance. Claim no rain, prosperity, purity, sin removal or release.",
+              "why": "A bounded close preserves health, public responsibility and uncertainty.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with gratitude for nonviolent, truthful care and return to ordinary food, water, sleep and responsibilities.",
+            "source_ids": [
+              "devam-parsva-research"
+            ],
+            "scope_note": "No material, result, donation, image movement or contact is required."
+          },
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "drik-parsva-aliases-2027",
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ]
+        },
+        {
+          "procedure_id": "parsva-consent-family-en",
+          "label": "Consent-led family story and turning reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Voluntary ordinary household participation; no caste roles, crisis blame, staging, image movement, fast, water entry, gift or compelled action",
+          "form": "traditional_household",
+          "estimated_minutes": 24,
+          "materials": [
+            {
+              "item": "One source-labelled Mandhatri account",
+              "required": true,
+              "substitutions": [
+                "Trusted audio",
+                "Adult summary retaining the refusal and source harm",
+                "Quiet private reflection"
+              ],
+              "source_ids": [
+                "padma-purana-parsva-deshpande"
+              ]
+            },
+            {
+              "item": "Optional private reminder",
+              "required": false,
+              "substitutions": [
+                "No writing",
+                "Silence",
+                "Nothing"
+              ],
+              "source_ids": [
+                "devam-parsva-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Offer each person an easy no, a private form and a distress-free exit before discussing caste blame, killing, drought or hunger.",
+              "why": "Participation and difficult story content require consent.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Confirm ordinary local Parsva aliases and keep normal food, drinking water, medicine, child feeding and sleep for everyone.",
+              "why": "A family guide cannot assign a waterless fast or vigil.",
+              "source_ids": [
+                "drik-parsva-aliases-2027",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use a family-known Vishnu/Govinda prayer or silence; do not assign caste, king, sage, victim or saviour roles.",
+              "why": "Role assignment can reproduce hierarchy and distress.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Read the Mandhatri story in sequence and explicitly identify Angiras's caste explanation and killing proposal as source speech that the king refuses.",
+              "why": "The story's ethical centre cannot be preserved by hiding its harmful claim.",
+              "source_ids": [
+                "padma-purana-parsva-deshpande"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Briefly distinguish the Narada formal image-turning rite and BAPS Jal Jhilani route without imitating either or importing their materials.",
+              "why": "They are major authority and safety variants, not family decorations.",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "baps-jal-jhilani",
+                "baps-kishore-pravesh"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Discuss only the safe meaning: refuse scapegoating and protect fair access to water, food, safety and truthful help. Ask no one's caste and blame no person for weather or crisis.",
+              "why": "Equal dignity and public facts override ritual blame.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Invite at most one private no-contact action; do not compare answers, reduce anyone's water or food, demand an apology, confession, donation or environmental performance.",
+              "why": "No action or disclosure is owed.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "Close together or separately and return to normal food, water, medicine, sleep and current official guidance.",
+              "why": "Family completion needs no parana, gift, result or public act.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank participants, respect silence and leave caste, health, household and crisis information private.",
+            "source_ids": [
+              "devam-parsva-research"
+            ],
+            "scope_note": "No collective fast, role, promise or action completes the observance."
+          },
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "drik-parsva-aliases-2027",
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ]
+        },
+        {
+          "procedure_id": "parsva-named-institution-en",
+          "label": "Named temple, Vaishnava or Jal Jhilani participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor-only after live verification; the named institution owns its image, water/boat, food, fast, parana, offering and safety rules",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "Verified current institutional notice",
+              "required": true,
+              "substitutions": [
+                "Official current phone/web notice",
+                "Do not travel",
+                "Complete home form"
+              ],
+              "source_ids": [
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the institution's current date, tradition, public story, entry, accessibility, food, fasting, parana, donation, photography, crowd and exit rules.",
+              "why": "An annual name or calendar does not prove a live programme.",
+              "source_ids": [
+                "drik-parsva-aliases-2027",
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "If there is murti movement, a bank, reservoir, lake, river or boat, verify owner authority, trained operators, permitted access, life jackets, barriers, child supervision and cancellation conditions before deciding whether to attend.",
+              "why": "Water and boat participation carries materially different safety and authority.",
+              "source_ids": [
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Attend only voluntarily with an independent safe way home; keep normal medicine, water, mobility and child needs. Do not undertake a waterless fast from this guide.",
+              "why": "Institutional devotion does not override health or exit rights.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Stay in authorised visitor areas. Do not carry, bathe, turn, immerse or transport a murti; do not enter water or board a boat unless the named authorised programme independently meets your safety needs.",
+              "why": "The ordinary pack grants no object, water or vessel authority.",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Donate nothing unless independently chosen, affordable and verified; leave if pressured to fast, surrender water, disclose caste/health, handle an image or accept a rain, prosperity or salvation guarantee.",
+              "why": "Consent and protection from exploitation remain active in institutions.",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Do not copy Jal Jhilani, the formal Narada rite or Vamana Dwadashi home. Leave at the verified time or earlier for safety; a cancelled, remote or home form is complete.",
+              "why": "Major routes remain owned by their named authority and date.",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "baps-kishore-pravesh",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Leave safely, hydrate, eat, take medicine and rest according to your needs; claim no special result from attendance.",
+            "source_ids": [
+              "devam-parsva-research"
+            ],
+            "scope_note": "Only the named institution defines its participant close."
+          },
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "drik-parsva-aliases-2027",
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "aliases-and-minor-expression-en",
+          "scope": "Ordinary Parsva/Parivartani/Parswa Paribartan households",
+          "difference": "Parivartani and Odisha Parswa Paribartan are same-date aliases, not separate state rituals. Spelling, language, dress, food preference, familiar Vishnu name, image/no-image and silence stay in this lane.",
+          "source_ids": [
+            "drik-parsva-aliases-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-parsva-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "baps-jal-jhilani-en",
+          "scope": "BAPS/Swaminarayan named authority",
+          "difference": "Waterless fasting, murti handling, boat/water access, yoghurt, repeated arti, institutional story and close materially change health, safety, materials and authority.",
+          "source_ids": [
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-narada-image-rite-en",
+          "scope": "Installed-image Padma/Parivartini vrata",
+          "difference": "Reservoir touch, left-side image rest, crore gift, Brahmana feeding/dakshina and Dwadashi Vamana worship require separate owner and formal authority.",
+          "source_ids": [
+            "narada-purana-padma-parivartini",
+            "devam-parsva-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "vamana-dwadashi-or-vaishnava-authority-en",
+          "scope": "Next-day Vamana Jayanti/Dwadashi or another Vaishnava calendar",
+          "difference": "Vamana Dwadashi is a separate annual item. Its different tithi/day, deity focus, story, fast/parana and institution authority materially change the answer.",
+          "source_ids": [
+            "drik-parsva-aliases-2027",
+            "baps-kishore-pravesh",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-water-weather-or-crisis-en",
+          "scope": "Drought, flood, water quality, agriculture, food security, emergency, discrimination or violence",
+          "difference": "Current expert and civil processes govern these needs; no ritual action, weather promise or confrontation is supplied.",
+          "source_ids": [
+            "devam-parsva-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "vamana-bali-source-owner-en",
+          "scope": "Brahmavaivarta/Vaishnava Vamana-Bali account",
+          "difference": "A lawful fixed source expression, complete sequence and reception must be separately resolved; it is not silently merged into Padma's Mandhatri story.",
+          "source_ids": [
+            "devam-parsva-research",
+            "baps-jal-jhilani"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "The complete ordinary form is non-fasting, fed, hydrated, rested, no-vigil, no-flame, no-image-moving, no-water-entry, no-reservoir, no-boat, no-purchase, no-donation, no-contact, no-disclosure, image-free, writing-free and material-free.",
+        "Never blame, exclude, threaten or harm a person because of caste, tribe, birth, occupation, religion, migration, poverty, disability, health, observance or a weather or public crisis.",
+        "Do not rank dignity, eligibility, prayer, education, water, food or safety by caste or birth; Angiras's caste blame and killing proposal are source speech that Mandhatri refuses.",
+        "Do not enter water, reservoir, river, pond, lake, bank, boat or restricted infrastructure; do not move, bathe, turn, immerse or transport an image from this guide.",
+        "Keep drinking water, food, medicine, insulin, child feeding, hygiene and sleep normal; do not fast, keep vigil, copy parana or restrict another person's water or food.",
+        "Follow current official weather, drought, flood, water-quality, public-health and civil instructions; this ritual pack is not emergency guidance.",
+        "Do not promise rain, water security, harvest, food, health, prosperity, calamity removal, sin removal, salvation or release.",
+        "Serious violence, discrimination, negligence or public harm is not erased by fasting, collective prayer, gifts, image turning, hearing or regret.",
+        "No one owes a fast, waterless fast, vigil, prayer, donation, caste role, participation, apology, confession or action for another person's hope.",
+        "Authored means only this reviewed lane pack; it is not projected to day cards, hosted, independently released or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "parsva-ekadashi",
+        "parivartani-ekadashi",
+        "parswa-paribartan-ekadashi"
+      ],
+      "title": "पार्श्व / परिवर्तिनी एकादशी: सुरक्षित सामान्य गृह-मार्ग",
+      "short_answer": "अपने शहर और स्वीकृत पंचांग से सामान्य पार्श्व/परिवर्तिनी/पार्श्व परिवर्तन निश्चित करें और अगले दिन की द्वादशी व नामित जल झिलनी से अलग रखें। पूर्ण रूप है: भोजन-पानी और विश्राम सामान्य रखें; विष्णु/गोविंद स्मरण करें; पद्म पुराण की मांधाता कथा में अंगिरा का जाति-दोष, हत्या प्रस्ताव और राजा का इनकार पूरा सुनें; नारद की औपचारिक चित्र-परिवर्तन विधि अलग बताएँ; दोषारोपण और मौसम-गारंटी अस्वीकार करें; चाहें तो एक निजी उपेक्षा से सुरक्षित देखभाल की ओर मुड़ें; सामान्य पानी, भोजन, समान गरिमा और आधिकारिक निर्देश से समाप्त करें। सामग्री, उपवास, चित्र-चालन, जल-प्रवेश, दान या फल आवश्यक नहीं।",
+      "significance": {
+        "text": "पद्म पुराण 6.57 दिन को पद्मा कहता और मांधाता को उस निर्दोष तपस्वी की हत्या से इनकार करते दिखाता है जिसे अंगिरा सूखे का कारण बताते हैं। नारद पुराण परिवर्तिनी संबंध की औपचारिक बाईं करवट चित्र-विधि देता है। देवम का सीमित अर्थ है दोषारोपण से मुड़कर अहिंसा, समान गरिमा, सत्य सार्वजनिक सहायता और सामान्य पानी-भोजन की निष्पक्ष पहुँच बचाना; अनुष्ठान मौसम नियंत्रित नहीं करता।",
+        "source_ids": [
+          "padma-purana-parsva-deshpande",
+          "narada-purana-padma-parivartini",
+          "devam-parsva-research"
+        ],
+        "scope_note": "केवल सामान्य गृह-अर्थ; सार्वभौम राष्ट्रीय विधि, जल-विज्ञान दावा, जल झिलनी या वामन द्वादशी नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-6-57-mandhatri-drought-and-refusal-hi",
+          "title": "मांधाता निर्दोष तपस्वी की हत्या से इनकार करते हैं",
+          "summary": "तीन वर्ष वर्षा न होने पर मांधाता भूखी प्रजा के लिए सहायता खोजते हैं। अंगिरा सूखे को चांडाल तपस्वी से जोड़कर हत्या कहते हैं। मांधाता निर्दोष की हत्या से साफ इनकार और धर्मसम्मत विकल्प माँगते हैं। अंगिरा पद्मा एकादशी बताते हैं; स्रोत सामूहिक व्रत से वर्षा और अन्न लौटना कहकर जाति-प्राथमिक दान देता है। जाति और मौसम दावे स्रोत-वचन हैं, देवम के तथ्य या निर्देश नहीं।",
+          "tradition_scope": "पद्म पुराण उत्तर खंड 6.57, श्लोक 1-41 का एन. ए. देशपांडे रूप",
+          "source_ids": [
+            "padma-purana-parsva-deshpande"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "narada-padma-parivartini-left-side-hi",
+          "title": "औपचारिक चित्र-परिवर्तन स्रोत",
+          "summary": "नारद पुराण 4.120 भाद्रपद शुक्ल पद्मा में स्थापित चित्र को जलाशय, जल-स्पर्श और बाईं करवट रखकर द्वादशी पर वामन-पूजा व औपचारिक दान बताता है। अनुवादक इसे विष्णु की निद्रा-करवट और परिवर्तिनी नाम से जोड़ते हैं। यह स्रोत-नामित संबंध है, गृह-चित्र हिलाने, जल में जाने या एकादशी-द्वादशी मिलाने की अनुमति नहीं।",
+          "tradition_scope": "नारद पुराण पूर्वभाग 4.120, श्लोक 36b-41a और अनुवादक टिप्पणी",
+          "source_ids": [
+            "narada-purana-padma-parivartini"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ordinary-vishnu-remembrance-hi",
+          "population_scope": "कुछ सामान्य स्मार्त एकादशी गृह और व्यक्ति",
+          "description": "लोग विष्णु/गोविंद स्मरण, नामित कथा, प्रार्थना या मौन रख सकते हैं; शब्द, चित्र, भोजन और तीव्रता परिवार व प्राधिकरण चुनते हैं।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "source-fast-gifts-and-turning-hi",
+          "population_scope": "पद्म और नारद पुराण औपचारिक व्रत रूप",
+          "description": "स्रोत उपवास, सामूहिक पालन, दान और जलाशय/बाईं करवट चित्र-विधि बताते हैं। सामान्य पैक उन्हें दर्ज करता, निर्देश नहीं देता।",
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "baps-jal-jhilani-separate-hi",
+          "population_scope": "BAPS/स्वामीनारायण संस्थाएँ और भक्त",
+          "description": "BAPS स्रोत निर्जल उपवास, मूर्ति, नाव/जल, दही और आरती तथा अगले दिन अलग वामन जयंती बताते हैं। यह नामित बड़ा संस्थागत मार्ग है, अखिल-भारतीय गृह रिवाज नहीं।",
+          "source_ids": [
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-nonviolent-turn-hi",
+          "population_scope": "बिना खरीद चिंतन चाहने वाले सामान्य भागीदार",
+          "description": "व्यक्ति निजी रूप में दोष या उपेक्षा से अपनी एक सुरक्षित जिम्मेदारी की ओर मुड़ सकता है। संपर्क, खुलासा, पानी घटाना, मरम्मत, दान या काम आवश्यक नहीं।",
+          "source_ids": [
+            "devam-parsva-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "parsva-minimum-private-hi",
+          "label": "न्यूनतम निजी, भोजन-जल और सामग्री-रहित रूप",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "केवल स्थानीय सामान्य पार्श्व/परिवर्तिनी/पार्श्व परिवर्तन; औपचारिक चित्र, जल, उपवास, पारण, जल झिलनी या द्वादशी अधिकार नहीं",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "materials": [
+            {
+              "item": "कोई अनुष्ठान-सामग्री नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन",
+                "विष्णु या गोविंद का परिचित नाम",
+                "बिना चित्र, लेखन, खरीद या काम"
+              ],
+              "source_ids": [
+                "devam-parsva-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा पाठ या चित्र",
+              "required": false,
+              "substitutions": [
+                "विश्वसनीय श्रव्य पाठ",
+                "निजी स्मरण",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "devam-parsva-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने भारतीय शहर और स्वीकृत सामान्य पंचांग से पार्श्व/परिवर्तिनी/पार्श्व परिवर्तन निश्चित करें; शनिवार 11 सितंबर 2027 को अगले दिन की द्वादशी या अन्य प्राधिकरण से अलग रखें।",
+              "why": "एकादशी, द्वादशी, पारण और संस्था-निर्णय स्थान व अधिकार पर निर्भर हैं।",
+              "source_ids": [
+                "drik-parsva-aliases-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन-पानी, निर्धारित दवा और इंसुलिन, बच्चों का भोजन, स्वच्छता और नींद रखें। उपवास, निर्जल उपवास, जागरण या पारण शुरू न करें।",
+              "why": "पूर्ण सामान्य रूप भोजन, जल और विश्राम सहित है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु या गोविंद का परिचित नाम, पारिवारिक प्रार्थना या मौन रखें। चित्र न हिलाएँ, मंत्र न गढ़ें और चढ़ावा आवश्यक न करें।",
+              "why": "सामान्य स्मरण औपचारिक चित्र या अनुष्ठान अधिकार नहीं देता।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पद्म पुराण 6.57 का पूरा क्रम सुनें: सूखा, प्रजा की विनती, मांधाता की खोज, अंगिरा का जाति-दोष और हत्या प्रस्ताव, मांधाता का इनकार, सामूहिक व्रत, स्रोत में वर्षा और औपचारिक दान।",
+              "why": "इनकार और हानिकारक स्रोत-वचन स्पष्ट व स्रोत-नामित रहें।",
+              "source_ids": [
+                "padma-purana-parsva-deshpande"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "स्रोत-अंतर सुनें: नारद पुराण स्थापित चित्र को जलाशय ले जाकर बाईं करवट रखने और द्वादशी पर वामन-पूजा की विधि देता है; यही परिवर्तन संबंध का प्रमाण है, यह सामान्य प्रक्रिया नहीं।",
+              "why": "अलग पाठों को मिलाकर राष्ट्रीय विधि न गढ़ें।",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "निजी रूप से कहें: कोई जाति या व्यक्ति सूखा नहीं कराता; हिंसा उपाय नहीं; अनुष्ठान वर्षा या फसल की गारंटी नहीं; किसी पर उपवास, प्रार्थना, दान या भागीदारी देय नहीं।",
+              "why": "यह बलि का बकरा, दबाव और मौसम-भ्रम रोकता है।",
+              "source_ids": [
+                "padma-purana-parsva-deshpande",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "उपयोगी हो तो निजी दोष/उपेक्षा से अपनी सुरक्षित जिम्मेदारी की ओर मुड़ें: अपने नियंत्रण का खुला नल बंद करें, सामान्य घरेलू पेयजल सुलभ रखें या आधिकारिक सूचना जाँचें। केवल स्मरण भी पूर्ण है।",
+              "why": "काम में सामना, मरम्मत, राशन घटाना, सार्वजनिक ढाँचा या जल-प्रवेश नहीं।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "सामान्य पानी, भोजन, दवा, नींद, समान गरिमा और सत्यापित सार्वजनिक निर्देश के साथ समाप्त करें। वर्षा, समृद्धि, शुद्धि, पाप-मुक्ति या मोक्ष न मानें।",
+              "why": "सीमित समापन स्वास्थ्य, सार्वजनिक कर्तव्य और अनिश्चितता बचाता है।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "अहिंसक और सत्य देखभाल के लिए कृतज्ञता के साथ सामान्य भोजन, पानी, नींद और जिम्मेदारियों पर लौटें।",
+            "source_ids": [
+              "devam-parsva-research"
+            ],
+            "scope_note": "सामग्री, फल, दान, चित्र-चालन या संपर्क आवश्यक नहीं।"
+          },
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "drik-parsva-aliases-2027",
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ]
+        },
+        {
+          "procedure_id": "parsva-consent-family-hi",
+          "label": "सहमति-आधारित पारिवारिक कथा और परिवर्तन चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "स्वैच्छिक सामान्य गृह भागीदारी; जाति-भूमिका, संकट-दोष, अभिनय, चित्र-चालन, उपवास, जल-प्रवेश, दान या बाध्य काम नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 24,
+          "materials": [
+            {
+              "item": "एक स्रोत-नामित मांधाता कथा",
+              "required": true,
+              "substitutions": [
+                "विश्वसनीय श्रव्य पाठ",
+                "इनकार और स्रोत-हानि सहित वयस्क सार",
+                "शांत निजी चिंतन"
+              ],
+              "source_ids": [
+                "padma-purana-parsva-deshpande"
+              ]
+            },
+            {
+              "item": "वैकल्पिक निजी संकेत",
+              "required": false,
+              "substitutions": [
+                "बिना लेखन",
+                "मौन",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "devam-parsva-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "जाति-दोष, हत्या, सूखा या भूख पर बात से पहले हर व्यक्ति को आसान मना, निजी रूप और बिना तनाव निकास दें।",
+              "why": "भागीदारी और कठिन कथा के लिए सहमति चाहिए।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "स्थानीय सामान्य पार्श्व नाम निश्चित करें और सबका सामान्य भोजन, पेयजल, दवा, बाल-भोजन और नींद रखें।",
+              "why": "पारिवारिक मार्ग निर्जल उपवास या जागरण नहीं सौंप सकता।",
+              "source_ids": [
+                "drik-parsva-aliases-2027",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "पारिवारिक परिचित विष्णु/गोविंद प्रार्थना या मौन रखें; जाति, राजा, ऋषि, पीड़ित या रक्षक भूमिकाएँ न बाँटें।",
+              "why": "भूमिका-वितरण पदानुक्रम और तनाव दोहरा सकता है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "मांधाता कथा क्रम में पढ़ें और अंगिरा की जाति-व्याख्या व हत्या प्रस्ताव को स्पष्ट स्रोत-वचन कहें जिसे राजा अस्वीकार करता है।",
+              "why": "हानिकारक दावा छिपाकर कथा का नैतिक केंद्र नहीं बचता।",
+              "source_ids": [
+                "padma-purana-parsva-deshpande"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "नारद की औपचारिक चित्र-परिवर्तन विधि और BAPS जल झिलनी मार्ग को बिना नकल या सामग्री आयात के संक्षेप में अलग बताएँ।",
+              "why": "ये बड़े अधिकार और सुरक्षा-रूप हैं, पारिवारिक सजावट नहीं।",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "baps-jal-jhilani",
+                "baps-kishore-pravesh"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "केवल सुरक्षित अर्थ पर बात करें: दोषारोपण रोकें और पानी, भोजन, सुरक्षा व सत्य सहायता की निष्पक्ष पहुँच बचाएँ। जाति न पूछें, मौसम या संकट के लिए किसी को दोष न दें।",
+              "why": "समान गरिमा और सार्वजनिक तथ्य अनुष्ठान-दोष से ऊपर हैं।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "अधिकतम एक निजी बिना-संपर्क काम आमंत्रित करें; उत्तर न तुलना करें, किसी का पानी/भोजन न घटाएँ, माफी, कबूलनामा, दान या पर्यावरण प्रदर्शन न माँगें।",
+              "why": "कोई काम या खुलासा देय नहीं।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "साथ या अलग समाप्त कर सामान्य भोजन, पानी, दवा, नींद और वर्तमान आधिकारिक निर्देश पर लौटें।",
+              "why": "परिवार-समापन को पारण, दान, फल या सार्वजनिक काम नहीं चाहिए।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "भागीदारों को धन्यवाद दें, मौन का सम्मान करें और जाति, स्वास्थ्य, गृह व संकट सूचना निजी रखें।",
+            "source_ids": [
+              "devam-parsva-research"
+            ],
+            "scope_note": "सामूहिक उपवास, भूमिका, वादा या काम पूर्णता नहीं बनाता।"
+          },
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "drik-parsva-aliases-2027",
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ]
+        },
+        {
+          "procedure_id": "parsva-named-institution-hi",
+          "label": "नामित मंदिर, वैष्णव या जल झिलनी भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "जीवित सत्यापन के बाद केवल आगंतुक; चित्र, जल/नाव, भोजन, उपवास, पारण, चढ़ावा और सुरक्षा नामित संस्था के अधिकार में",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "सत्यापित वर्तमान संस्थागत सूचना",
+              "required": true,
+              "substitutions": [
+                "आधिकारिक वर्तमान फोन/वेब सूचना",
+                "यात्रा न करें",
+                "पूर्ण गृह रूप"
+              ],
+              "source_ids": [
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "संस्था की वर्तमान तिथि, परंपरा, सार्वजनिक कथा, प्रवेश, सुलभता, भोजन, उपवास, पारण, दान, फोटो, भीड़ और निकास नियम जाँचें।",
+              "why": "वार्षिक नाम या कैलेंडर जीवित कार्यक्रम सिद्ध नहीं करता।",
+              "source_ids": [
+                "drik-parsva-aliases-2027",
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "मूर्ति-चालन, तट, जलाशय, झील, नदी या नाव हो तो जाने से पहले स्वामी-अधिकार, प्रशिक्षित संचालक, अनुमति, जीवन-जैकेट, अवरोध, बाल-निगरानी और रद्द शर्त जाँचें।",
+              "why": "जल और नाव भागीदारी बड़ा अलग सुरक्षा और अधिकार है।",
+              "source_ids": [
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "स्वतंत्र सुरक्षित वापसी के साथ स्वेच्छा से जाएँ; सामान्य दवा, पानी, चलने और बाल जरूरत रखें। इस मार्ग से निर्जल उपवास न करें।",
+              "why": "संस्थागत भक्ति स्वास्थ्य या निकास-अधिकार से ऊपर नहीं।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "केवल अधिकृत आगंतुक क्षेत्र में रहें। मूर्ति न उठाएँ, स्नान, करवट, विसर्जन या परिवहन न करें; नामित कार्यक्रम आपकी सुरक्षा स्वतंत्र रूप से पूरा न करे तो जल में न जाएँ या नाव न चढ़ें।",
+              "why": "सामान्य पैक वस्तु, जल या नाव अधिकार नहीं देता।",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "baps-jal-jhilani",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "दान तभी जब स्वतंत्र, वहनीय और सत्यापित हो; उपवास, पानी छोड़ने, जाति/स्वास्थ्य खुलासे, चित्र संभालने या वर्षा, समृद्धि, मोक्ष गारंटी का दबाव हो तो निकलें।",
+              "why": "संस्थाओं में भी सहमति और शोषण से सुरक्षा सक्रिय हैं।",
+              "source_ids": [
+                "devam-parsva-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "जल झिलनी, नारद औपचारिक विधि या वामन द्वादशी घर न उतारें। सत्यापित समय या सुरक्षा हेतु पहले निकलें; रद्द, दूरस्थ या गृह रूप पूर्ण है।",
+              "why": "बड़े मार्ग अपने नामित अधिकार और तिथि के हैं।",
+              "source_ids": [
+                "narada-purana-padma-parivartini",
+                "baps-kishore-pravesh",
+                "devam-parsva-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित निकलें, अपनी जरूरत से पानी, भोजन, दवा और विश्राम लें; उपस्थिति से विशेष फल न मानें।",
+            "source_ids": [
+              "devam-parsva-research"
+            ],
+            "scope_note": "केवल नामित संस्था अपना आगंतुक-समापन तय करती है।"
+          },
+          "source_ids": [
+            "padma-purana-parsva-deshpande",
+            "narada-purana-padma-parivartini",
+            "drik-parsva-aliases-2027",
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-parsva-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "aliases-and-minor-expression-hi",
+          "scope": "सामान्य पार्श्व/परिवर्तिनी/पार्श्व परिवर्तन गृह",
+          "difference": "परिवर्तिनी और ओडिशा पार्श्व परिवर्तन समान तिथि के नाम हैं, अलग राज्य अनुष्ठान नहीं। वर्तनी, भाषा, वेश, भोजन पसंद, परिचित विष्णु नाम, चित्र/बिना चित्र और मौन इसी लेन में हैं।",
+          "source_ids": [
+            "drik-parsva-aliases-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-parsva-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "baps-jal-jhilani-hi",
+          "scope": "BAPS/स्वामीनारायण नामित प्राधिकरण",
+          "difference": "निर्जल उपवास, मूर्ति, नाव/जल, दही, बार-बार आरती, संस्थागत कथा और समापन स्वास्थ्य, सुरक्षा, सामग्री और अधिकार बड़ा बदलते हैं।",
+          "source_ids": [
+            "baps-jal-jhilani",
+            "baps-kishore-pravesh",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-narada-image-rite-hi",
+          "scope": "स्थापित-चित्र पद्मा/परिवर्तिनी व्रत",
+          "difference": "जलाशय-स्पर्श, बाईं करवट चित्र, कोटिदान, ब्राह्मण भोजन/दक्षिणा और द्वादशी वामन-पूजा को अलग स्वामी और औपचारिक अधिकार चाहिए।",
+          "source_ids": [
+            "narada-purana-padma-parivartini",
+            "devam-parsva-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "vamana-dwadashi-or-vaishnava-authority-hi",
+          "scope": "अगले दिन वामन जयंती/द्वादशी या अन्य वैष्णव कैलेंडर",
+          "difference": "अलग तिथि/दिन, देवता-केंद्र, कथा, उपवास/पारण और संस्था-अधिकार उत्तर बड़ा बदलते हैं।",
+          "source_ids": [
+            "drik-parsva-aliases-2027",
+            "baps-kishore-pravesh",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-water-weather-or-crisis-hi",
+          "scope": "सूखा, बाढ़, जल-गुणवत्ता, कृषि, खाद्य-सुरक्षा, आपात, भेदभाव या हिंसा",
+          "difference": "वर्तमान विशेषज्ञ और नागरिक प्रक्रिया इन जरूरतों को चलाती है; अनुष्ठान काम, मौसम-वादा या सामना नहीं दिया जाता।",
+          "source_ids": [
+            "devam-parsva-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "vamana-bali-source-owner-hi",
+          "scope": "ब्रह्मवैवर्त/वैष्णव वामन-बली कथा",
+          "difference": "वैध स्थिर स्रोत, पूरा क्रम और ग्रहण अलग सुलझाना होगा; पद्म की मांधाता कथा में चुपचाप नहीं मिलाया जाता।",
+          "source_ids": [
+            "devam-parsva-research",
+            "baps-jal-jhilani"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन और जल सहित, विश्रामपूर्ण, बिना जागरण, बिना अग्नि, बिना चित्र-चालन, बिना जल-प्रवेश, बिना जलाशय, बिना नाव, बिना खरीद, बिना दान, बिना संपर्क, बिना खुलासा, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "जाति, जनजाति, जन्म, पेशा, धर्म, प्रवास, गरीबी, विकलांगता, स्वास्थ्य, पालन या मौसम/सार्वजनिक संकट के कारण किसी को दोष, बहिष्कार, धमकी या हानि न दें।",
+        "जाति या जन्म से गरिमा, पात्रता, प्रार्थना, शिक्षा, पानी, भोजन या सुरक्षा न तौलें; अंगिरा का जाति-दोष और हत्या प्रस्ताव स्रोत-वचन है जिसे मांधाता अस्वीकार करते हैं।",
+        "जल, जलाशय, नदी, तालाब, झील, तट, नाव या प्रतिबंधित ढाँचे में प्रवेश न करें; इस मार्ग से चित्र न हिलाएँ, स्नान, करवट, विसर्जन या परिवहन न करें।",
+        "पेयजल, भोजन, दवा, इंसुलिन, बाल-भोजन, स्वच्छता और नींद सामान्य रखें; उपवास, जागरण, पारण की नकल या दूसरे का पानी/भोजन सीमित न करें।",
+        "वर्तमान आधिकारिक मौसम, सूखा, बाढ़, जल-गुणवत्ता, सार्वजनिक स्वास्थ्य और नागरिक निर्देश मानें; यह अनुष्ठान पैक आपात मार्गदर्शन नहीं।",
+        "वर्षा, जल-सुरक्षा, फसल, भोजन, स्वास्थ्य, समृद्धि, संकट-नाश, पाप-मुक्ति, मोक्ष या मुक्ति का वादा न दें।",
+        "गंभीर हिंसा, भेदभाव, लापरवाही या सार्वजनिक हानि उपवास, सामूहिक प्रार्थना, दान, चित्र-परिवर्तन, श्रवण या पछतावे से नहीं मिटती।",
+        "किसी दूसरे की आशा के लिए कोई उपवास, निर्जल उपवास, जागरण, प्रार्थना, दान, जाति-भूमिका, भागीदारी, माफी, कबूलनामा या काम देय नहीं।",
+        "रचित का अर्थ केवल यह समीक्षित लेन पैक है; यह दिन-कार्ड पर प्रक्षेपित, होस्ट, स्वतंत्र रिलीज-समीक्षित या प्रकाशित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
