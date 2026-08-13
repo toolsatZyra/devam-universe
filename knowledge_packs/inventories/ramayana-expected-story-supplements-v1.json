@@ -1,0 +1,336 @@
+{
+  "contract": "DEVAM_RAMAYANA_EXPECTED_STORY_SUPPLEMENTS_V1",
+  "version": 1,
+  "authored_at": "2026-08-13",
+  "audience": "Ordinary Hindi- or English-speaking Indian adults who expect the familiar Ramayana story world as well as an explicitly labelled selected source expression.",
+  "purpose": "Name high-salience Ramayana stories and living connections that a Dutt/Valmiki-derived backbone alone must not silently claim to contain.",
+  "boundary": "This is a versioned consumer-expectation denominator, not a declaration that every item occurs in Valmiki, Dutt, Ramcharitmanas, every Ramlila, or every regional telling. Each item remains separately scoped until its source lineage and consumer narrative are reviewed.",
+  "source_registry": [
+    {
+      "source_id": "ramayana-dutt-selected-inventory",
+      "kind": "internal_selected_expression_inventory",
+      "locator": "knowledge_packs/inventories/ramayana-story-universe-v1.json",
+      "evidence_role": "Exact selected-expression cycle and episode coverage; absence here proves only absence from the current authored Dutt projection."
+    },
+    {
+      "source_id": "ramcharitmanas-wikisource-ingestion",
+      "kind": "internal_source_carrier",
+      "locator": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
+      "evidence_role": "Fixed seven-sopana source carrier for later exact passage reconciliation; the report contains no copied consumer story."
+    },
+    {
+      "source_id": "iitk-ramcharitmanas",
+      "kind": "university_reference",
+      "url": "https://www.ramcharitmanas.iitk.ac.in/",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Searchable Ramcharitmanas text and seven-kanda navigation for expression-specific verification."
+    },
+    {
+      "source_id": "unesco-ramlila",
+      "kind": "official_living_tradition_reference",
+      "url": "https://ich.unesco.org/en/RL/ramlila-the-traditional-performance-of-the-ramayana-00110",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Ramlila as successive performed scenes, usually based on Ramcharitmanas; not evidence that every production contains the same episodes."
+    },
+    {
+      "source_id": "sagar-ramayan-series",
+      "kind": "copyrighted_adaptation_coverage_cue",
+      "url": "https://production.sagarworld.com/ramayan",
+      "observed_at": "2026-08-13",
+      "rights_lane": "coverage_cue_only_no_copying",
+      "evidence_role": "Audience-familiar adaptation used only to detect expected episode granularity; no script, dialogue, or protected expression may be copied."
+    },
+    {
+      "source_id": "ucpress-many-ramayanas-squirrel",
+      "kind": "scholarly_regional_comparison",
+      "url": "https://publishing.cdlib.org/ucpressebooks/view?anchor.id=0&brand=eschol&chunk.id=d0e4590&doc.view=content&docId=ft6870073m&toc.depth=1",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Scholarly evidence that the bridge-squirrel motif occurs in regional tellings and popular visual culture; not part of the selected Dutt expression."
+    },
+    {
+      "source_id": "incredible-india-rameswaram",
+      "kind": "official_living_place_reference",
+      "url": "https://www.incredibleindia.gov.in/en/tamil-nadu/rameswaram/rameswaram-tracing-the-footsteps-of-lord-ram",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Current Rama-associated Rameswaram pilgrimage context; not proof of epic historicity or one universal temple-origin story."
+    },
+    {
+      "source_id": "incredible-india-diwali",
+      "kind": "official_living_festival_reference",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/diwali",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Contemporary multi-day and multi-regional Diwali context including the Ayodhya homecoming association."
+    }
+  ],
+  "supplements": [
+    {
+      "expectation_id": "manas-shiva-sati-parvati-frame",
+      "sequence_group": "beginnings",
+      "title": { "en": "Shiva, Sati and Parvati frame the telling of Rama's story", "hi": "शिव, सती और पार्वती के संवाद में रामकथा का आरंभ" },
+      "expression_scopes": ["ramcharitmanas"],
+      "relationship_to_selected_expression": "separate_frame_or_antecedent",
+      "nearest_selected_cycle_ids": ["story-finds-a-voice"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
+      "boundary": "Author as the Ramcharitmanas framing world, not as the opening frame of every Ramayana."
+    },
+    {
+      "expectation_id": "manas-narada-delusion",
+      "sequence_group": "beginnings",
+      "title": { "en": "Narada's pride, delusion and curse", "hi": "नारद का अभिमान, मोह और श्राप" },
+      "expression_scopes": ["ramcharitmanas"],
+      "relationship_to_selected_expression": "separate_frame_or_antecedent",
+      "nearest_selected_cycle_ids": ["story-finds-a-voice"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
+      "boundary": "Keep Tulsidas's devotional causation separate from the selected Dutt chronology."
+    },
+    {
+      "expectation_id": "manas-manu-shatarupa-boon",
+      "sequence_group": "beginnings",
+      "title": { "en": "Manu and Shatarupa ask for the divine child", "hi": "मनु और शतरूपा का दिव्य पुत्र का वरदान" },
+      "expression_scopes": ["ramcharitmanas"],
+      "relationship_to_selected_expression": "separate_frame_or_antecedent",
+      "nearest_selected_cycle_ids": ["ayodhya-awaits-heirs"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
+      "boundary": "Present as a Ramcharitmanas antecedent to Rama's birth, not a verified historical genealogy."
+    },
+    {
+      "expectation_id": "manas-pratapbhanu-curse",
+      "sequence_group": "beginnings",
+      "title": { "en": "Pratapbhanu's fall and the curse behind Ravana's birth", "hi": "प्रतापभानु का पतन और रावण-जन्म से जुड़ा श्राप" },
+      "expression_scopes": ["ramcharitmanas"],
+      "relationship_to_selected_expression": "separate_frame_or_antecedent",
+      "nearest_selected_cycle_ids": ["origins-behind-war"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
+      "boundary": "Do not merge this Manas causal account with other Ravana-origin traditions."
+    },
+    {
+      "expectation_id": "popular-rama-childhood-and-education",
+      "sequence_group": "beginnings",
+      "title": { "en": "Rama and his brothers grow up and learn together", "hi": "राम और उनके भाइयों का बाल्यकाल और शिक्षा" },
+      "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
+      "relationship_to_selected_expression": "additional_scene_within_covered_arc",
+      "nearest_selected_cycle_ids": ["princes-enter-world", "road-to-mithila"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "cross_expression_episode_review_required",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "ramcharitmanas-wikisource-ingestion", "sagar-ramayan-series"],
+      "boundary": "Use source-backed childhood incidents only; adaptation granularity is a coverage cue, not source evidence."
+    },
+    {
+      "expectation_id": "manas-pushpavatika-gauri-prayer",
+      "sequence_group": "beginnings",
+      "title": { "en": "Sita sees Rama in the flower garden and prays to Gauri", "hi": "पुष्पवाटिका में सीता का राम-दर्शन और गौरी-पूजन" },
+      "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
+      "relationship_to_selected_expression": "additional_scene_within_covered_arc",
+      "nearest_selected_cycle_ids": ["sita-and-the-bow"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
+      "boundary": "Keep this beloved Manas and performance scene distinct from what the Dutt source actually narrates."
+    },
+    {
+      "expectation_id": "manas-kevat-crossing",
+      "sequence_group": "exile",
+      "title": { "en": "Kevat ferries Rama, Sita and Lakshmana", "hi": "केवट राम, सीता और लक्ष्मण को गंगा पार कराते हैं" },
+      "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
+      "relationship_to_selected_expression": "additional_scene_within_covered_arc",
+      "nearest_selected_cycle_ids": ["road-out-of-ayodhya"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
+      "boundary": "Author the devotional exchange from its expression; do not back-project it into every recension."
+    },
+    {
+      "expectation_id": "popular-lakshman-rekha",
+      "sequence_group": "forest",
+      "title": { "en": "The protective line remembered as Lakshman Rekha", "hi": "लक्ष्मण रेखा की लोकप्रिय कथा" },
+      "expression_scopes": ["popular_performance", "popular_adaptation", "later_telling"],
+      "relationship_to_selected_expression": "distinct_motif_inside_covered_event",
+      "nearest_selected_cycle_ids": ["golden-deer-plot", "sita-is-taken"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "source_lineage_research_needed",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+      "boundary": "Do not attribute the drawn-line episode to Valmiki, Dutt, or Ramcharitmanas until exact textual lineage is verified."
+    },
+    {
+      "expectation_id": "popular-shabari-tasted-berries",
+      "sequence_group": "forest",
+      "title": { "en": "Shabari's lovingly selected berries", "hi": "शबरी के प्रेम से चुने हुए बेर" },
+      "expression_scopes": ["popular_devotional", "later_telling", "popular_adaptation"],
+      "relationship_to_selected_expression": "distinct_motif_inside_covered_event",
+      "nearest_selected_cycle_ids": ["toward-pampa"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "source_lineage_research_needed",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+      "boundary": "The selected Dutt story contains Shabari's welcome and gathered food, but not necessarily the popular tasted-berries motif."
+    },
+    {
+      "expectation_id": "manas-angada-immovable-foot",
+      "sequence_group": "war",
+      "title": { "en": "Angada's embassy and immovable foot in Ravana's court", "hi": "रावण की सभा में अंगद का दूतत्व और अडिग पाँव" },
+      "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
+      "relationship_to_selected_expression": "additional_scene_within_covered_arc",
+      "nearest_selected_cycle_ids": ["lanka-surrounded"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
+      "boundary": "Separate the familiar Manas/performance challenge from Angada material already present in the selected expression."
+    },
+    {
+      "expectation_id": "regional-bridge-squirrel",
+      "sequence_group": "war",
+      "title": { "en": "The squirrel helps build Rama's bridge", "hi": "रामसेतु निर्माण में गिलहरी का योगदान" },
+      "expression_scopes": ["regional_telling", "popular_devotional"],
+      "relationship_to_selected_expression": "distinct_motif_inside_covered_event",
+      "nearest_selected_cycle_ids": ["ocean-and-bridge"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "regional_lineage_identified_deeper_reconciliation_needed",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "ucpress-many-ramayanas-squirrel"],
+      "boundary": "Label as a widely loved regional/popular motif; do not claim that it appears in the selected Dutt/Valmiki expression."
+    },
+    {
+      "expectation_id": "living-rameswaram-linga-tradition",
+      "sequence_group": "war",
+      "title": { "en": "Rama, Shiva and the living Rameswaram temple tradition", "hi": "राम, शिव और रामेश्वरम की जीवित मंदिर-परंपरा" },
+      "expression_scopes": ["living_temple", "later_telling"],
+      "relationship_to_selected_expression": "living_connection_not_epic_event",
+      "nearest_selected_cycle_ids": ["ocean-and-bridge", "ravanas-final-battle"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "temple_tradition_and_textual_story_must_be_separated",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "incredible-india-rameswaram"],
+      "boundary": "Keep temple tradition, later textual accounts, pilgrimage fact and epic narrative as separately evidenced layers."
+    },
+    {
+      "expectation_id": "manas-kalnemi-deception",
+      "sequence_group": "war",
+      "title": { "en": "Kalnemi tries to delay Hanuman", "hi": "कालनेमि हनुमान को रोकने का प्रयास करता है" },
+      "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
+      "relationship_to_selected_expression": "additional_scene_within_covered_arc",
+      "nearest_selected_cycle_ids": ["indrajits-last-war"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
+      "boundary": "Place within the Manas/popular medicine-mountain journey, not automatically within the selected Dutt account."
+    },
+    {
+      "expectation_id": "manas-bharata-shoots-hanuman",
+      "sequence_group": "war",
+      "title": { "en": "Bharata stops the mountain-bearing Hanuman and sends him onward", "hi": "भरत पर्वत ले जाते हनुमान को रोककर आगे भेजते हैं" },
+      "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
+      "relationship_to_selected_expression": "additional_scene_within_covered_arc",
+      "nearest_selected_cycle_ids": ["indrajits-last-war"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
+      "boundary": "Retain its devotional and dramatic logic without conflating it with other Sanjeevani narratives."
+    },
+    {
+      "expectation_id": "popular-sulochana-meghnad",
+      "sequence_group": "war",
+      "title": { "en": "Sulochana learns of Meghnad's death", "hi": "सुलोचना को मेघनाद की मृत्यु का समाचार मिलता है" },
+      "expression_scopes": ["popular_performance", "popular_adaptation", "later_telling"],
+      "relationship_to_selected_expression": "later_or_regional_extension",
+      "nearest_selected_cycle_ids": ["indrajits-last-war"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "source_lineage_research_needed",
+      "evidence_source_ids": ["sagar-ramayan-series"],
+      "boundary": "Do not invent Sulochana's dialogue, agency, or sati outcome; source and reception require explicit review."
+    },
+    {
+      "expectation_id": "regional-ahiravana-mahiravana-rescue",
+      "sequence_group": "war",
+      "title": { "en": "Hanuman rescues Rama and Lakshmana from Ahiravana or Mahiravana", "hi": "अहिरावण या महिरावण से राम-लक्ष्मण की हनुमान द्वारा रक्षा" },
+      "expression_scopes": ["regional_telling", "later_telling", "popular_adaptation"],
+      "relationship_to_selected_expression": "later_or_regional_extension",
+      "nearest_selected_cycle_ids": ["indrajits-last-war", "ravanas-final-battle"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "variant_families_and_names_need_reconciliation",
+      "evidence_source_ids": ["sagar-ramayan-series"],
+      "boundary": "Ahiravana and Mahiravana versions must remain separately attributable when their plots materially differ."
+    },
+    {
+      "expectation_id": "popular-luv-kush-ashvamedha-confrontation",
+      "sequence_group": "aftermath",
+      "title": { "en": "Lava and Kusha stop the sacrificial horse and face Ayodhya's warriors", "hi": "लव-कुश यज्ञ का अश्व रोककर अयोध्या के योद्धाओं का सामना करते हैं" },
+      "expression_scopes": ["later_telling", "regional_telling", "popular_adaptation"],
+      "relationship_to_selected_expression": "later_or_regional_extension",
+      "nearest_selected_cycle_ids": ["kingdom-tales-and-twins", "twins-sing-sita-returns"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "source_lineage_and_variant_outcomes_needed",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+      "boundary": "Do not let the popular battle cycle overwrite the selected expression's account of the twins and sacrifice."
+    },
+    {
+      "expectation_id": "manas-kakabhushundi-garuda-dialogue",
+      "sequence_group": "aftermath",
+      "title": { "en": "Kakabhushundi tells Garuda the story and meaning of Rama", "hi": "काकभुशुण्डि गरुड़ को रामकथा और उसका अर्थ सुनाते हैं" },
+      "expression_scopes": ["ramcharitmanas"],
+      "relationship_to_selected_expression": "separate_frame_or_antecedent",
+      "nearest_selected_cycle_ids": ["later-reign", "last-departures"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
+      "boundary": "Treat as a Ramcharitmanas theological narration frame, not an event in Rama's court chronology."
+    },
+    {
+      "expectation_id": "manas-uttar-kanda-bhakti-teachings",
+      "sequence_group": "aftermath",
+      "title": { "en": "Ram Rajya and the devotional teachings of the closing book", "hi": "रामराज्य और उत्तरकाण्ड की भक्ति-शिक्षाएँ" },
+      "expression_scopes": ["ramcharitmanas"],
+      "relationship_to_selected_expression": "separate_teaching_cycle",
+      "nearest_selected_cycle_ids": ["later-reign", "last-departures"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "teaching_units_need_separate_daily_reading_design",
+      "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas"],
+      "boundary": "Do not flatten devotional teachings into historical events or replace the separate daily-reading lane."
+    },
+    {
+      "expectation_id": "popular-hanuman-opens-chest",
+      "sequence_group": "devotional_afterlife",
+      "title": { "en": "Hanuman reveals Rama and Sita in his heart", "hi": "हनुमान अपने हृदय में राम और सीता का दर्शन कराते हैं" },
+      "expression_scopes": ["popular_devotional", "visual_tradition", "popular_adaptation"],
+      "relationship_to_selected_expression": "devotional_afterlife",
+      "nearest_selected_cycle_ids": ["companions-depart"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "source_lineage_research_needed",
+      "evidence_source_ids": ["sagar-ramayan-series"],
+      "boundary": "Present as a devotional story only after locating its textual and reception history; do not attribute it to Valmiki by familiarity."
+    },
+    {
+      "expectation_id": "popular-hanuman-sindoor",
+      "sequence_group": "devotional_afterlife",
+      "title": { "en": "Hanuman covers himself in sindoor for Rama", "hi": "राम के लिए हनुमान का सिंदूर धारण करना" },
+      "expression_scopes": ["popular_devotional", "living_practice"],
+      "relationship_to_selected_expression": "devotional_afterlife",
+      "nearest_selected_cycle_ids": ["companions-depart"],
+      "coverage_state": "candidate_not_authored",
+      "source_alignment_state": "story_lineage_and_living_offering_research_needed",
+      "evidence_source_ids": [],
+      "boundary": "Research the devotional story and regional offering practices separately; never universalize temple procedure."
+    },
+    {
+      "expectation_id": "living-diwali-rama-homecoming",
+      "sequence_group": "living_connections",
+      "title": { "en": "Rama's return as one major Diwali homecoming story", "hi": "दीवाली की एक प्रमुख परंपरा में राम की अयोध्या-वापसी" },
+      "expression_scopes": ["north_indian_living_festival", "ayodhya_deepotsav"],
+      "relationship_to_selected_expression": "living_connection_not_epic_event",
+      "nearest_selected_cycle_ids": ["road-home"],
+      "coverage_state": "connected_content_exists_needs_denominator_review",
+      "source_alignment_state": "living_lane_already_separately_evidenced",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "incredible-india-diwali"],
+      "boundary": "This is a major North Indian and Ayodhya association, not the universal origin of every Diwali or Deepavali tradition."
+    }
+  ]
+}

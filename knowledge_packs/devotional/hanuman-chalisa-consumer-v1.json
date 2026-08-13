@@ -57,6 +57,31 @@
     "selection_rule": "A user may continue from their saved place or start at unit 1; calendar date and Panchang do not control the reading.",
     "completion_state": "All 43 units contain the reading text and approachable Hindi and English meaning."
   },
+  "reading_modes": [
+    {
+      "mode_id": "complete_recitation",
+      "label": { "en": "Read the complete Hanuman Chalisa", "hi": "पूरी हनुमान चालीसा पढ़ें" },
+      "ordinals": { "start": 1, "end": 43 },
+      "availability": "consumer_content_available",
+      "boundary": "The sequence is complete for this fixed carrier; Devam does not prescribe a repetition count or promise an outcome."
+    },
+    {
+      "mode_id": "one_reading_unit_daily",
+      "label": { "en": "One doha or chaupai a day", "hi": "प्रतिदिन एक दोहा या चौपाई" },
+      "ordinals": { "start": 1, "end": 43 },
+      "selection_rule": "Read the next source-ordered unit; calendar date and Panchang do not choose it.",
+      "availability": "consumer_content_available",
+      "boundary": "This is an optional reading pace, not a traditional mandate."
+    },
+    {
+      "mode_id": "resume_exact_position",
+      "label": { "en": "Continue where I stopped", "hi": "जहाँ रुके थे वहीं से आगे पढ़ें" },
+      "ordinals": { "start": 1, "end": 43 },
+      "selection_rule": "Continue at the saved last-completed ordinal plus one, or restart at ordinal 1.",
+      "availability": "product_persistence_pending",
+      "boundary": "Saved progress is user-controlled and must remain separate from devotional claims."
+    }
+  ],
   "readings": [
     {
       "ordinal": 1,

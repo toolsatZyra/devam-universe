@@ -1,0 +1,72 @@
+{
+  "contract": "DEVAM_RAMCHARITMANAS_END_TO_END_READING_V1",
+  "version": 1,
+  "authored_at": "2026-08-13",
+  "work": {
+    "slug": "ramcharitmanas",
+    "title": { "en": "Ramcharitmanas", "hi": "रामचरितमानस" },
+    "attribution": "Traditionally attributed to Goswami Tulsidas",
+    "primary_language_note": "The work is principally Awadhi in Devanagari; approachable Hindi and English meaning are separate consumer layers."
+  },
+  "purpose": "Let a reader complete the work in source order at their own pace instead of encountering disconnected summaries or scholarly records.",
+  "authoritative_source_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
+  "source_denominator": {
+    "scan_coordinates": 1172,
+    "text_bearing_pages": 1158,
+    "structural_blank_pages": 14,
+    "prepared_product_passages": 813,
+    "held_text_bearing_pages": 345,
+    "sopanas_or_kandas": 7,
+    "partition_invariant": "Every one of the 1,158 text-bearing pages must appear once in source order; the 14 verified blank scan coordinates remain preserved but are not reading units."
+  },
+  "reading_modes": [
+    {
+      "mode_id": "complete_work_continuous",
+      "label": { "en": "Read from beginning to end", "hi": "आरंभ से अंत तक पढ़ें" },
+      "unit": "source_ordered_text_bearing_page",
+      "progression": "1_to_1158_without_gaps",
+      "availability": "pending_complete_text_correction",
+      "boundary": "The mode cannot be called complete while 345 text-bearing pages remain held."
+    },
+    {
+      "mode_id": "one_page_daily",
+      "label": { "en": "One page a day", "hi": "प्रतिदिन एक पृष्ठ" },
+      "unit": "source_ordered_text_bearing_page",
+      "progression": "next_unread_page",
+      "availability": "pending_complete_text_correction",
+      "boundary": "A page is tied to this fixed source carrier; another edition may paginate the work differently."
+    },
+    {
+      "mode_id": "short_passage_daily",
+      "label": { "en": "One short passage a day", "hi": "प्रतिदिन एक छोटा पाठ" },
+      "unit": "meaningful_source_bounded_passage",
+      "progression": "source_order_after_segmentation",
+      "availability": "segmentation_pending",
+      "boundary": "Doha, chaupai and surrounding context must not be split in a way that breaks meaning merely to fit a fixed length."
+    },
+    {
+      "mode_id": "kanda_progression",
+      "label": { "en": "Read kanda by kanda", "hi": "काण्ड-दर-काण्ड पढ़ें" },
+      "unit": "one_of_seven_source_divisions",
+      "progression": "1_to_7",
+      "availability": "pending_complete_text_correction",
+      "boundary": "The seven divisions vary greatly in length; the product does not imply that each must be completed in one day."
+    },
+    {
+      "mode_id": "resume_exact_position",
+      "label": { "en": "Continue where I stopped", "hi": "जहाँ रुके थे वहीं से आगे पढ़ें" },
+      "unit": "source_position",
+      "progression": "saved_last_completed_unit_plus_one",
+      "availability": "product_persistence_pending",
+      "boundary": "Saved progress is user-controlled product state and must not be inferred from ritual obligation or calendar date."
+    }
+  ],
+  "consumer_layers": {
+    "primary_reading": "source text in source order",
+    "required_companions": ["approachable_hindi_meaning", "approachable_english_meaning"],
+    "optional_on_demand": ["source_identity", "variant_note", "provenance", "uncertainty"],
+    "default_hidden": ["source_hash", "ocr_diagnostics", "edition_comparison", "verse_count_audit"]
+  },
+  "completion_state": "source_reconciliation_before_end_to_end_reading",
+  "completion_rule": "Complete only when all 1,158 text-bearing pages can be read in exact order, every consumer unit has usable Hindi and English meaning, all five modes preserve the same canonical position, and resume behavior is verified."
+}

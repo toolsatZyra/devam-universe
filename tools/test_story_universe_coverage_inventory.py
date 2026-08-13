@@ -10,6 +10,7 @@ INVENTORY_PATH = ROOT / "knowledge_packs" / "inventories" / "story-universe-cove
 MVP_PATH = ROOT / "knowledge_packs" / "inventories" / "consumer-content-mvp-v1.json"
 ANCHOR_PATH = ROOT / "knowledge_packs" / "inventories" / "canonical-consumer-anchors-v1.json"
 MAHABHARATA_PATH = ROOT / "knowledge_packs" / "inventories" / "mahabharata-consumer-backbone-v1.json"
+RAMAYANA_EXPECTED_PATH = ROOT / "knowledge_packs" / "inventories" / "ramayana-expected-story-checklist-v1.json"
 
 
 class StoryUniverseCoverageInventoryTest(unittest.TestCase):
@@ -19,6 +20,7 @@ class StoryUniverseCoverageInventoryTest(unittest.TestCase):
         cls.mvp = json.loads(MVP_PATH.read_text(encoding="utf-8"))
         cls.anchors = json.loads(ANCHOR_PATH.read_text(encoding="utf-8"))
         cls.mahabharata = json.loads(MAHABHARATA_PATH.read_text(encoding="utf-8"))
+        cls.ramayana_expected = json.loads(RAMAYANA_EXPECTED_PATH.read_text(encoding="utf-8"))
 
     def test_contract_has_one_ordered_selected_scope_denominator(self) -> None:
         self.assertEqual("DEVAM_STORY_UNIVERSE_COVERAGE_V1", self.inventory["contract"])
@@ -91,6 +93,9 @@ class StoryUniverseCoverageInventoryTest(unittest.TestCase):
         self.assertEqual(ramayana_current["whole_story_turns"], ramayana["denominator"]["story_cycles"])
         self.assertEqual(ramayana_current["playable_scenes"], ramayana["denominator"]["current_episodes"])
         self.assertEqual(ramayana_current["bilingual_beats"], ramayana["completion"]["substantial_bilingual_beats"])
+        self.assertEqual(self.ramayana_expected["counters"]["total_expected_story_rows"], ramayana["denominator"]["consumer_expected_story_rows"])
+        self.assertEqual(self.ramayana_expected["counters"]["supplemental_expected_stories"], ramayana["denominator"]["supplemental_expected_story_rows"])
+        self.assertEqual(ramayana_current["supplemental_expected_story_rows_open"], ramayana["completion"]["supplemental_expected_story_rows_open"])
 
         mahabharata = collections["mahabharata-selected-ganguli-expression"]
         mahabharata_current = lanes["mahabharata-consumer-story"]["current"]

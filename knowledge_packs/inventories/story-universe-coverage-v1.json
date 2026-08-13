@@ -45,15 +45,18 @@
       "denominator": {
         "state": "fixed",
         "authoritative_enumerator": "knowledge_packs/inventories/ramayana-story-universe-v1.json",
+        "consumer_expected_story_enumerator": "knowledge_packs/inventories/ramayana-expected-story-checklist-v1.json",
         "source_units": 652,
         "story_cycles": 49,
         "current_episodes": 517,
+        "consumer_expected_story_rows": 71,
+        "supplemental_expected_story_rows": 22,
         "living_places": 18,
         "temples": 18,
         "festivals_and_performances": 12
       },
-      "completion": {"state": "source_reconciliation", "substantial_bilingual_beats": 2340, "registered_living_items_complete_en_hi": 48, "source_term_reconciliation_inventory": "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json", "source_term_candidates": 4323, "source_terms_needing_classification": 3957, "resolved_terms_missing_from_some_covering_episodes": 306},
-      "remaining_boundary": "Complete the adversarial whole-journey continuity and expected-story review, repair only high-signal character/place metadata gaps found there, and keep broader Ramayana expressions outside this selected-expression completion claim. The 4,323-term lexical inventory is a supplementary diagnostic, not a requirement to classify ordinary capitalized words before story completion. The registered 18-place, 18-temple, and 12-festival/performance living denominator is consumer complete in English and Hindi."
+      "completion": {"state": "authoring", "selected_expression_rows_complete_en_hi": 49, "supplemental_expected_story_rows_complete_en_hi": 0, "supplemental_expected_story_rows_open": 22, "substantial_bilingual_beats": 2340, "registered_living_items_complete_en_hi": 48, "source_term_reconciliation_inventory": "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json", "source_term_candidates": 4323, "source_terms_needing_classification": 3957, "resolved_terms_missing_from_some_covering_episodes": 306},
+      "remaining_boundary": "Author or explicitly exclude the 22 separately scoped consumer-expected supplements in major-arc batches, then complete one consolidated continuity review. Keep Ramcharitmanas, performance, regional, devotional, temple, and living-festival claims separately labelled; the selected Dutt expression covers only its 49 rows. The 4,323-term lexical inventory remains a supplementary diagnostic rather than a blocking story queue."
     },
     {
       "collection_id": "mahabharata-selected-ganguli-expression",
@@ -81,14 +84,16 @@
       "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "living_practice_connection"],
       "denominator": {
         "state": "fixed",
-        "authoritative_enumerator": "knowledge_packs/inventories/consumer-content-mvp-v1.json#/lanes/ramcharitmanas-daily-reading",
-        "fixed_narrative_pages": 1172,
+        "authoritative_enumerator": "knowledge_packs/devotional/ramcharitmanas-reading-contract-v1.json",
+        "scan_coordinates": 1172,
+        "text_bearing_pages": 1158,
         "prepared_narrative_pages": 813,
         "held_text_bearing_pages": 345,
-        "structural_blank_scan_pages": 14
+        "structural_blank_scan_pages": 14,
+        "reading_modes": 5
       },
       "completion": {"state": "source_reconciliation"},
-      "remaining_boundary": "Correct or source-address the 345 held text-bearing pages, then create the canonical approachable Hindi and English daily-reading sequence."
+      "remaining_boundary": "Correct or source-address the 345 held text-bearing pages, create approachable Hindi and English meaning for every canonical unit, then verify gapless full-work, one-page, short-passage, kanda, and exact-resume modes."
     },
     {
       "collection_id": "hanuman-chalisa-reading-and-meaning",
@@ -99,11 +104,12 @@
       "required_dimensions": ["work", "episode", "character", "living_practice_connection"],
       "denominator": {
         "state": "fixed",
-        "authoritative_enumerator": "knowledge_packs/inventories/consumer-content-mvp-v1.json#/lanes/hanuman-chalisa",
-        "reading_units": 43
+        "authoritative_enumerator": "knowledge_packs/devotional/hanuman-chalisa-consumer-v1.json",
+        "reading_units": 43,
+        "reading_modes": 3
       },
-      "completion": {"state": "review_pending"},
-      "remaining_boundary": "Complete independent cultural and linguistic review; saved progress and hosted projection are separate product states rather than library-completion evidence."
+      "completion": {"state": "review_pending", "complete_recitation_content_available": true, "one_unit_daily_content_available": true, "resume_persistence_available": false},
+      "remaining_boundary": "Complete independent cultural and linguistic review and implement user-controlled resume persistence. The 43-unit complete recitation and optional one-unit-daily content paths already exist; hosted projection remains separate product state."
     },
     {
       "collection_id": "ganesha-story-world",
@@ -178,9 +184,9 @@
       "owner_lane_id": "epics-integration",
       "canonical_anchor_ids": ["devam:being:rama", "devam:being:hanuman"],
       "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
-      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/rama-hanuman-beyond-selected-expression"},
-      "completion": {"state": "denominator_missing"},
-      "remaining_boundary": "Inventory the selected wider Rama and Hanuman traditions, festivals, devotional stories, places, temples, and practices without treating the Dutt expression as the whole tradition."
+      "denominator": {"state": "fixed_v1_consumer_expectation_slice", "authoritative_enumerator": "knowledge_packs/inventories/ramayana-expected-story-checklist-v1.json", "supplemental_expected_story_rows": 22},
+      "completion": {"state": "authoring", "consumer_complete_en_hi": 0, "open": 22},
+      "remaining_boundary": "Source-reconcile and author the 22 version-one Ramcharitmanas, performance, regional, devotional, temple, and living-festival expectations in major-arc batches. Adversarially review that version before expansion; do not describe it as every Rama or Hanuman tradition."
     },
     {
       "collection_id": "krishna-story-world",

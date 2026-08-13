@@ -24,6 +24,25 @@ during the journey review should be repaired. These counters are a versioned
 selected scope, not every Ramayana expression, place claim, temple, or living
 tradition.
 
+The separate consumer-expectation checklist now adds the missing product
+denominator that source-unit coverage could not provide. It combines the 49
+selected-expression cycles with 22 explicitly separate expectations drawn from
+Ramcharitmanas, Ramlila and audience-familiar adaptations, regional tellings,
+devotional afterlives, Rameswaram tradition, and the Diwali homecoming
+connection. All 22 remain open or under review; none is silently credited to
+the Dutt expression. The next Ramayana work is major-arc authoring against this
+71-row checklist, with one consolidated validation checkpoint per batch.
+
+Checkpoint 2026-08-13 (end-to-end devotional reading correction):
+Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered
+reading works, not collections of summaries. The Ramcharitmanas contract
+defines full-work, one-page-daily, short-passage-daily, kanda-progression, and
+exact-resume modes over 1,158 text-bearing pages; all remain incomplete until
+the 345 held pages and bilingual meaning layer are resolved. The Hanuman
+Chalisa pack exposes complete 43-unit recitation and an optional source-ordered
+one-unit-daily path now, while persistent resume remains product work. Reading
+pace is user choice, not a Panchang rule or ritual prescription.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic

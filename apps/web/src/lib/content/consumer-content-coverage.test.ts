@@ -9,7 +9,7 @@ type Lane = {
   lane_id: string;
   status: string;
   required_outcome: string;
-  current: Record<string, boolean | number>;
+  current: Record<string, boolean | number | string>;
   next_boundary: string;
 };
 
@@ -75,6 +75,10 @@ describe("consumer-content MVP inventory", () => {
     const ramayana = inventory.lanes.find((lane) => lane.lane_id === "ramayana-consumer-story")!;
     expect(ramayana.current).toMatchObject({
       selected_expression_source_units: 652,
+      expected_story_checklist: "knowledge_packs/inventories/ramayana-expected-story-checklist-v1.json",
+      expected_story_rows: 71,
+      selected_expression_rows_complete_en_hi: 49,
+      supplemental_expected_story_rows_open: 22,
       whole_story_turns: 49,
       playable_turns: 49,
       outlined_turns: 0,
@@ -94,13 +98,27 @@ describe("consumer-content MVP inventory", () => {
     });
     const manas = inventory.lanes.find((lane) => lane.lane_id === "ramcharitmanas-daily-reading")!;
     expect(manas.current).toMatchObject({
+      reading_contract: "knowledge_packs/devotional/ramcharitmanas-reading-contract-v1.json",
       fixed_narrative_pages: 1172,
+      text_bearing_pages: 1158,
       prepared_narrative_pages: 813,
       held_text_bearing_pages: 345,
       structural_blank_scan_pages: 14,
       q1_pages_dual_witness_screened: 345,
       q1_pages_promoted: 0,
+      defined_reading_modes: 5,
+      complete_end_to_end_reading_available: false,
       daily_reading_available: false,
+      resume_persistence_available: false,
+    });
+    const chalisa = inventory.lanes.find((lane) => lane.lane_id === "hanuman-chalisa")!;
+    expect(chalisa.current).toMatchObject({
+      reading_contract: "knowledge_packs/devotional/hanuman-chalisa-consumer-v1.json",
+      reading_units: 43,
+      complete_recitation_mode_available: true,
+      one_reading_unit_daily_mode_available: true,
+      defined_reading_modes: 3,
+      persistent_saved_progress_available: false,
     });
   });
 
