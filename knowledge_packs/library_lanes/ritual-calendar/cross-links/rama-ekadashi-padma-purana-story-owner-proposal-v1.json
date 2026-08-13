@@ -1,0 +1,63 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-rama-ekadashi-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "rama-to-padma-mucukunda-candrabhaga-shobhana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/rama-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-rama-mucukunda-candrabhaga-shobhana-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_mucukunda_candrabhaga_shobhana_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the complete source-labelled Candrabhaga and Shobhana account",
+        "hi": "चंद्रभागा और शोभन की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "Preserve Padma Purana 6.60's royal decree, person and animal deprivation, Shobhana's known weakness, coerced fast, distress and death, Candrabhaga's explicit survival, funeral, unstable divine city, Somasharman's report, Vamadeva's sprinkling, childhood observance, merit stabilisation and attributed reunion without making coercion, death, child fasting, animal deprivation, funeral handling, dead-person contact, wife-rescue duty or miracles Devam's instructions.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-MH",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved ordinary Kartika Krishna Rama; reviewed 2027 fixture 25 October",
+        "source_expression_scope": "N. A. Deshpande English expression and displayed Sanskrit of Padma Purana Uttara Khanda chapter 60; other recensions and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365637.html",
+          "claim_scope": "Reviewed verses 1-54 with the complete Mucukunda-Candrabhaga-Shobhana sequence."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/rama-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
