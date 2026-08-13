@@ -598,6 +598,7 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
 
+
 ## Evidence-first seasonal, new-year and harvest batch checkpoint
 
 Twelve accepted named answers are complete as bilingual applicability lanes:
@@ -791,3 +792,24 @@ Exact accepted-authoring coverage is now **186 completed after freeze / 22
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Final accepted-denominator completion checkpoint (2026-08-14)
+
+The earlier incremental totals above are historical batch snapshots. A later
+exact reconciliation found that nineteen Pitru packs implement five accepted
+items, not nineteen: thirteen death-tithi routers collectively implement one
+Pitrupaksha umbrella and two additional routers are useful non-denominator
+utilities. The sound pre-final total was therefore **176 / 208**, not 190.
+
+The exact remaining 32 accepted IDs are now mapped one-to-one in
+`ritual-calendar-final-32-completion-map-v1.json` and implemented as bilingual
+consumer packs. They include the remaining Krishna and Hanuman state lanes,
+Telugu Dwadashis, the Vaishnava Papanasini authority router, recurring Chandra
+Darshana and Kalashtami, and the final regional/institutional observances from
+Jamai Shashti through Thrissur Pooram. Major regional or sampradaya differences
+are separate; minor household differences remain variants.
+
+Exact accepted-authoring coverage is now **208 completed / 0 remaining / 208
+total**. The completion boundary is authoring and internal structural/adversarial
+review. Verified complete day cells remain **0 / 19,480**; content is not yet
+projected, hosted, independently culturally reviewed, released or published.

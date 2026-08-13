@@ -1,0 +1,652 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "jalaram-bapa-jayanti-gujarat-service-household-participant-2027-v1",
+  "observance_slugs": [
+    "jalaram-bapa-jayanti"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "jalaram-bapa-jayanti"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "household",
+      "temple",
+      "community"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which state, city and Panchang or temple calendar do you follow?",
+      "Is this a home remembrance, formal family practice, temple visit or live public event?",
+      "Are there health, consent, mobility, child-care, crowd or sensory needs?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-GJ",
+        "tradition_code": "jalaram-bapa-jayanti",
+        "observance_slug": "jalaram-bapa-jayanti"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "jalaram-bapa-jayanti",
+        "language_code": "en",
+        "note": "Gujarat and Jalaram devotional communities. Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory."
+      },
+      {
+        "observance_slug": "jalaram-bapa-jayanti",
+        "language_code": "hi",
+        "note": "यह मार्ग केवल बताई गई क्षेत्रीय/परंपरागत प्रयोज्यता के लिए है; परिवार और वर्तमान संस्था की विधि ऊपर रहेगी।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "jalaram-trust-activities",
+      "jalaram-bapa-institution"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "Kartika Shukla Saptami according to the local Gujarati calendar and temple owner",
+    "closing_decision_rule_id": "Close after the chosen household remembrance; formal parana, visarjana, temple closure or event exit follows the named current owner.",
+    "live_schedule_required": true,
+    "freshness_note": "2027 fixture: 5 November. Recompute from the user's location, tradition and current owner before display."
+  },
+  "sources": [
+    {
+      "source_id": "jalaram-trust-activities",
+      "title": "Activities at Jalaram Mandir",
+      "publisher": "Jalaram Trust",
+      "source_role": "living service, satsang and prasad context",
+      "rights_lane": "citation_only",
+      "url": "https://www.jalaramtrust.com/about/activities-at-jalaram-mandir",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "claim_scope": "living service, satsang and prasad context"
+      }
+    },
+    {
+      "source_id": "jalaram-bapa-institution",
+      "title": "Jalaram Bapa institutional site",
+      "publisher": "Jalaram Bapa organisation",
+      "source_role": "living devotional context",
+      "rights_lane": "citation_only",
+      "url": "https://jalarambapa.info/home",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "claim_scope": "living devotional context"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "jalaram-bapa-jayanti"
+      ],
+      "title": "Jalaram Bapa Jayanti",
+      "short_answer": "What to do: first confirm Kartika Shukla Saptami according to the local Gujarati calendar and temple owner. If this is your family or temple tradition, use the simple household route below; otherwise a respectful reading or greeting is complete. 2027 fixture: 5 November.",
+      "significance": {
+        "text": "Jalaram Bapa is remembered through devotion, hospitality, feeding and service within his living tradition.",
+        "source_ids": [
+          "jalaram-trust-activities",
+          "jalaram-bapa-institution"
+        ],
+        "scope_note": "Gujarat and Jalaram devotional communities"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "meaning-tradition",
+          "title": "Source-labelled story and devotional meaning",
+          "summary": "Jalaram's living memory emphasises Rama devotion, welcome, food service and care for people who arrive in need.",
+          "tradition_scope": "Gujarat and Jalaram devotional communities",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "evidence-boundary",
+          "title": "What is not being universalised",
+          "summary": "Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+          "tradition_scope": "Evidence and applicability boundary",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "home-remembrance",
+          "population_scope": "Gujarat and Jalaram devotional communities",
+          "description": "Read a short institutional biography, sing or hear a Rama bhajan and choose one food-safe, consent-led act of service.",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "owner-led-route",
+          "population_scope": "Families, temples, sampradayas or event participants with an inherited or published route",
+          "description": "Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "minimum-en",
+          "label": "Minimum remembrance",
+          "tier": "minimum",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "accessible_short",
+          "estimated_minutes": 3,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "jalaram-trust-activities",
+              "jalaram-bapa-institution"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ]
+        },
+        {
+          "procedure_id": "standard-en",
+          "label": "Simple household observance",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "traditional_household",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            },
+            {
+              "item": "One flower, leaf or digital image",
+              "required": false,
+              "substitutions": [
+                "an uncluttered clean space"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Pause for Jalaram Bapa Jayanti, read the significance and choose one source-labelled story or reflection.",
+              "why": "This connects the day to meaning without turning narrative into mandatory ritual or historical proof.",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "jalaram-trust-activities",
+              "jalaram-bapa-institution"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ]
+        },
+        {
+          "procedure_id": "elaborate-en",
+          "label": "Fuller family or institution-owned route",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "institutional_participation",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            },
+            {
+              "item": "One flower, leaf or digital image",
+              "required": false,
+              "substitutions": [
+                "an uncluttered clean space"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Pause for Jalaram Bapa Jayanti, read the significance and choose one source-labelled story or reflection.",
+              "why": "This connects the day to meaning without turning narrative into mandatory ritual or historical proof.",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Offer gratitude, a short prayer or one proportionate act of care.",
+              "why": "This gives an actionable observance without requiring fasting, purchase, flame, travel or a promised result.",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "jalaram-trust-activities",
+              "jalaram-bapa-institution"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "major-applicability-boundary",
+          "scope": "Gujarat and Jalaram devotional communities",
+          "difference": "Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+        "Fasting is optional and may be unsafe. Continue normal water, food, sleep, child care, pregnancy or breastfeeding needs, disability access and prescribed medicine.",
+        "No purchase, donation, flame, smoke, oil, travel, crowd entry, animal contact, water entry or midnight vigil is required. Follow current public and institutional safety rules; in India call 112 for an emergency.",
+        "Treat claims about sin, merit, health, wealth, protection, marriage, fertility or luck as source-labelled beliefs, never guaranteed outcomes."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "jalaram-bapa-jayanti"
+      ],
+      "title": "जलाराम बापा जयंती",
+      "short_answer": "क्या करें: पहले स्थानीय तिथि-नियम जाँचें—Kartika Shukla Saptami according to the local Gujarati calendar and temple owner। यदि यह आपके परिवार या मंदिर की परंपरा है तो नीचे की सरल घरेलू विधि अपनाएँ; अन्यथा सम्मानपूर्वक पाठ या शुभकामना पर्याप्त है। 2027 fixture: 5 November।",
+      "significance": {
+        "text": "इस दिन का उपभोक्ता-अर्थ: Jalaram Bapa is remembered through devotion, hospitality, feeding and service within his living tradition. यह वर्णन स्रोत-चिह्नित और क्षेत्र/परंपरा तक सीमित है।",
+        "source_ids": [
+          "jalaram-trust-activities",
+          "jalaram-bapa-institution"
+        ],
+        "scope_note": "Gujarat and Jalaram devotional communities"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "meaning-tradition-hi",
+          "title": "स्रोत-चिह्नित कथा और भक्तिपरक अर्थ",
+          "summary": "जलाराम की जीवित स्मृति राम-भक्ति, स्वागत, भोजन-सेवा और जरूरतमंद आगंतुकों की देखभाल पर जोर देती है।",
+          "tradition_scope": "Gujarat and Jalaram devotional communities",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "evidence-boundary-hi",
+          "title": "किस बात को सार्वभौमिक नहीं माना गया",
+          "summary": "सीमा: Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+          "tradition_scope": "साक्ष्य और प्रयोज्यता सीमा",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "home-remembrance-hi",
+          "population_scope": "Gujarat and Jalaram devotional communities",
+          "description": "संस्था का छोटा जीवन-वृत्त पढ़ें, राम-भजन गाएँ या सुनें और भोजन-सुरक्षित, सहमति-आधारित सेवा चुनें।",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "owner-led-route-hi",
+          "population_scope": "परिवार, मंदिर, सम्प्रदाय या कार्यक्रम जिनकी अपनी प्रकाशित या विरासत-विधि है",
+          "description": "यह मालिक-निर्देशित मार्ग है: Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "minimum-hi",
+          "label": "न्यूनतम स्मरण",
+          "tier": "minimum",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "accessible_short",
+          "estimated_minutes": 3,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "jalaram-trust-activities",
+              "jalaram-bapa-institution"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ]
+        },
+        {
+          "procedure_id": "standard-hi",
+          "label": "सरल घरेलू विधि",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "traditional_household",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            },
+            {
+              "item": "एक फूल, पत्ती या डिजिटल चित्र",
+              "required": false,
+              "substitutions": [
+                "खाली स्वच्छ स्थान"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "जलाराम बापा जयंती का शांत स्मरण करें और ऊपर दी गई महत्ता पढ़ें",
+              "why": "कथा को कर्मकांड या ऐतिहासिक प्रमाण बनाए बिना अर्थ से जोड़ें।",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "jalaram-trust-activities",
+              "jalaram-bapa-institution"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ]
+        },
+        {
+          "procedure_id": "elaborate-hi",
+          "label": "परिवार या संस्था के साथ विस्तृत मार्ग",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "institutional_participation",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            },
+            {
+              "item": "एक फूल, पत्ती या डिजिटल चित्र",
+              "required": false,
+              "substitutions": [
+                "खाली स्वच्छ स्थान"
+              ],
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "जलाराम बापा जयंती का शांत स्मरण करें और ऊपर दी गई महत्ता पढ़ें",
+              "why": "कथा को कर्मकांड या ऐतिहासिक प्रमाण बनाए बिना अर्थ से जोड़ें।",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 3,
+              "instruction": "अपनी क्षमता के अनुसार कृतज्ञता, प्रार्थना या एक दयालु कार्य चुनें",
+              "why": "उपयोगी सहभागिता को उपवास, खर्च या जोखिम से अलग रखें।",
+              "source_ids": [
+                "jalaram-trust-activities",
+                "jalaram-bapa-institution"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "jalaram-trust-activities",
+              "jalaram-bapa-institution"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "major-applicability-boundary-hi",
+          "scope": "Gujarat and Jalaram devotional communities",
+          "difference": "मुख्य अंतर: Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+          "source_ids": [
+            "jalaram-trust-activities",
+            "jalaram-bapa-institution"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "मुख्य सीमा: Service must respect consent, food safety, allergies and means; no donation, menu or temple visit is compulsory.",
+        "उपवास वैकल्पिक है और असुरक्षित हो सकता है। सामान्य पानी, भोजन, नींद, बाल-देखभाल, गर्भावस्था/स्तनपान की जरूरतें, दिव्यांग-सुगमता और लिखी हुई दवा जारी रखें।",
+        "खरीद, दान, आग, धुआँ, तेल, यात्रा, भीड़, पशु-संपर्क, जल-प्रवेश या मध्यरात्रि जागरण आवश्यक नहीं है। वर्तमान सार्वजनिक और संस्थागत सुरक्षा नियम मानें; भारत में आपातस्थिति पर 112 करें।",
+        "पाप, पुण्य, स्वास्थ्य, धन, रक्षा, विवाह, संतान या भाग्य के दावों को स्रोत-चिह्नित मान्यता मानें, गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "Authored and internally reviewed only; not projected, hosted, released or a substitute for current family, temple, sampradaya, civic or event authority."
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}

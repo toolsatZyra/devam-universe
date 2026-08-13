@@ -50,7 +50,7 @@ def test_links_progress_matrix_and_unprojected_boundary():
  links=load(LANE/"cross-links"/"sheetala-regional-observance-batch-3-owner-proposals-v1.json")
  Draft202012Validator(load(ROOT/"schemas"/"cross-lane-link-proposal-v1.schema.json")).validate(links)
  assert len(links["proposals"])==3 and all(x["target_resolution"]=="unresolved_owner_lane" for x in links["proposals"])
- p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json");assert p["completed_after_freeze"]==176 and p["remaining_authoring_items"]==32
+ p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json");assert p["completed_after_freeze"]==208 and p["remaining_authoring_items"]==0
  for lane in EVENTS.values():
   assert p["completed_lane_ids"].count(lane)==1
   assert p["completed_pack_refs"].count(f"knowledge_packs/library_lanes/ritual-calendar/packs/{lane}.json")==1

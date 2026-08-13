@@ -1,0 +1,652 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "kamanahabba-karnataka-fire-safe-owner-routed-2027-v1",
+  "observance_slugs": [
+    "kamanahabba"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN",
+      "IN-KA"
+    ],
+    "tradition_codes": [
+      "kamanahabba"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "household",
+      "temple",
+      "community"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which state, city and Panchang or temple calendar do you follow?",
+      "Is this a home remembrance, formal family practice, temple visit or live public event?",
+      "Are there health, consent, mobility, child-care, crowd or sensory needs?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-KA",
+        "tradition_code": "kamanahabba",
+        "observance_slug": "kamanahabba"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "kamanahabba",
+        "language_code": "en",
+        "note": "Karnataka communities that retain this Holi-season name. No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped."
+      },
+      {
+        "observance_slug": "kamanahabba",
+        "language_code": "hi",
+        "note": "यह मार्ग केवल बताई गई क्षेत्रीय/परंपरागत प्रयोज्यता के लिए है; परिवार और वर्तमान संस्था की विधि ऊपर रहेगी।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-kannada-holi-calendar-2027",
+      "devam-final32-synthesis"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "resolve the local Phalguna-Purnima/Holi-season assignment and community programme; do not assume a pan-Indian date or bonfire",
+    "closing_decision_rule_id": "Close after the chosen household remembrance; formal parana, visarjana, temple closure or event exit follows the named current owner.",
+    "live_schedule_required": false,
+    "freshness_note": "Use the 2027 local Kannada calendar and civic notice. Recompute from the user's location, tradition and current owner before display."
+  },
+  "sources": [
+    {
+      "source_id": "drik-kannada-holi-calendar-2027",
+      "title": "Kannada festival calendar 2027",
+      "publisher": "Drik Panchang",
+      "source_role": "regional Holi-season calendar context",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/kannada/calendar/kannada-calendar.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "claim_scope": "regional Holi-season calendar context"
+      }
+    },
+    {
+      "source_id": "devam-final32-synthesis",
+      "title": "Final accepted 32 evidence synthesis",
+      "publisher": "Devam",
+      "source_role": "scoping, non-universalisation and safety synthesis",
+      "rights_lane": "derivative_allowed",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "claim_scope": "scoping, non-universalisation and safety synthesis"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "kamanahabba"
+      ],
+      "title": "Kamanahabba / Kama Dahana",
+      "short_answer": "What to do: first confirm resolve the local Phalguna-Purnima/Holi-season assignment and community programme; do not assume a pan-Indian date or bonfire. If this is your family or temple tradition, use the simple household route below; otherwise a respectful reading or greeting is complete. Use the 2027 local Kannada calendar and civic notice.",
+      "significance": {
+        "text": "The observance is locally associated with the Shiva-Kama narrative and the transition into the Holi season.",
+        "source_ids": [
+          "drik-kannada-holi-calendar-2027",
+          "devam-final32-synthesis"
+        ],
+        "scope_note": "Karnataka communities that retain this Holi-season name"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "meaning-tradition",
+          "title": "Source-labelled story and devotional meaning",
+          "summary": "The Karnataka Holi-season lane recalls Shiva's burning of Kama and later restoration traditions, interpreted through desire, loss and renewal.",
+          "tradition_scope": "Karnataka communities that retain this Holi-season name",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "evidence-boundary",
+          "title": "What is not being universalised",
+          "summary": "No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+          "tradition_scope": "Evidence and applicability boundary",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "home-remembrance",
+          "population_scope": "Karnataka communities that retain this Holi-season name",
+          "description": "Read the Shiva-Kama episode, name one desire to handle responsibly, and use a paper drawing or lamp-free reflection instead of burning anything.",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "owner-led-route",
+          "population_scope": "Families, temples, sampradayas or event participants with an inherited or published route",
+          "description": "No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "minimum-en",
+          "label": "Minimum remembrance",
+          "tier": "minimum",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "accessible_short",
+          "estimated_minutes": 3,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "drik-kannada-holi-calendar-2027",
+              "devam-final32-synthesis"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ]
+        },
+        {
+          "procedure_id": "standard-en",
+          "label": "Simple household observance",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "traditional_household",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            },
+            {
+              "item": "One flower, leaf or digital image",
+              "required": false,
+              "substitutions": [
+                "an uncluttered clean space"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Pause for Kamanahabba / Kama Dahana, read the significance and choose one source-labelled story or reflection.",
+              "why": "This connects the day to meaning without turning narrative into mandatory ritual or historical proof.",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "drik-kannada-holi-calendar-2027",
+              "devam-final32-synthesis"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ]
+        },
+        {
+          "procedure_id": "elaborate-en",
+          "label": "Fuller family or institution-owned route",
+          "tier": "elaborate",
+          "setting": "family_led",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            },
+            {
+              "item": "One flower, leaf or digital image",
+              "required": false,
+              "substitutions": [
+                "an uncluttered clean space"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Pause for Kamanahabba / Kama Dahana, read the significance and choose one source-labelled story or reflection.",
+              "why": "This connects the day to meaning without turning narrative into mandatory ritual or historical proof.",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Offer gratitude, a short prayer or one proportionate act of care.",
+              "why": "This gives an actionable observance without requiring fasting, purchase, flame, travel or a promised result.",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "drik-kannada-holi-calendar-2027",
+              "devam-final32-synthesis"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "major-applicability-boundary",
+          "scope": "Karnataka communities that retain this Holi-season name",
+          "difference": "No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+        "Fasting is optional and may be unsafe. Continue normal water, food, sleep, child care, pregnancy or breastfeeding needs, disability access and prescribed medicine.",
+        "No purchase, donation, flame, smoke, oil, travel, crowd entry, animal contact, water entry or midnight vigil is required. Follow current public and institutional safety rules; in India call 112 for an emergency.",
+        "Treat claims about sin, merit, health, wealth, protection, marriage, fertility or luck as source-labelled beliefs, never guaranteed outcomes."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "kamanahabba"
+      ],
+      "title": "कामनहब्ब / काम दहन",
+      "short_answer": "क्या करें: पहले स्थानीय तिथि-नियम जाँचें—resolve the local Phalguna-Purnima/Holi-season assignment and community programme; do not assume a pan-Indian date or bonfire। यदि यह आपके परिवार या मंदिर की परंपरा है तो नीचे की सरल घरेलू विधि अपनाएँ; अन्यथा सम्मानपूर्वक पाठ या शुभकामना पर्याप्त है। Use the 2027 local Kannada calendar and civic notice।",
+      "significance": {
+        "text": "इस दिन का उपभोक्ता-अर्थ: The observance is locally associated with the Shiva-Kama narrative and the transition into the Holi season. यह वर्णन स्रोत-चिह्नित और क्षेत्र/परंपरा तक सीमित है।",
+        "source_ids": [
+          "drik-kannada-holi-calendar-2027",
+          "devam-final32-synthesis"
+        ],
+        "scope_note": "Karnataka communities that retain this Holi-season name"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "meaning-tradition-hi",
+          "title": "स्रोत-चिह्नित कथा और भक्तिपरक अर्थ",
+          "summary": "कर्नाटक के होली-कालीन मार्ग में शिव द्वारा काम-दहन और बाद की पुनर्स्थापना की कथाएँ इच्छा, हानि और नवीकरण से जुड़ती हैं।",
+          "tradition_scope": "Karnataka communities that retain this Holi-season name",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "evidence-boundary-hi",
+          "title": "किस बात को सार्वभौमिक नहीं माना गया",
+          "summary": "सीमा: No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+          "tradition_scope": "साक्ष्य और प्रयोज्यता सीमा",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "home-remembrance-hi",
+          "population_scope": "Karnataka communities that retain this Holi-season name",
+          "description": "शिव-काम कथा पढ़ें, जिम्मेदारी से सँभालने योग्य एक इच्छा पहचानें और कुछ जलाने के बजाय चित्र या बिना दीप चिंतन करें।",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "owner-led-route-hi",
+          "population_scope": "परिवार, मंदिर, सम्प्रदाय या कार्यक्रम जिनकी अपनी प्रकाशित या विरासत-विधि है",
+          "description": "यह मालिक-निर्देशित मार्ग है: No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "minimum-hi",
+          "label": "न्यूनतम स्मरण",
+          "tier": "minimum",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "accessible_short",
+          "estimated_minutes": 3,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "drik-kannada-holi-calendar-2027",
+              "devam-final32-synthesis"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ]
+        },
+        {
+          "procedure_id": "standard-hi",
+          "label": "सरल घरेलू विधि",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "traditional_household",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            },
+            {
+              "item": "एक फूल, पत्ती या डिजिटल चित्र",
+              "required": false,
+              "substitutions": [
+                "खाली स्वच्छ स्थान"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "कामनहब्ब / काम दहन का शांत स्मरण करें और ऊपर दी गई महत्ता पढ़ें",
+              "why": "कथा को कर्मकांड या ऐतिहासिक प्रमाण बनाए बिना अर्थ से जोड़ें।",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "drik-kannada-holi-calendar-2027",
+              "devam-final32-synthesis"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ]
+        },
+        {
+          "procedure_id": "elaborate-hi",
+          "label": "परिवार या संस्था के साथ विस्तृत मार्ग",
+          "tier": "elaborate",
+          "setting": "family_led",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            },
+            {
+              "item": "एक फूल, पत्ती या डिजिटल चित्र",
+              "required": false,
+              "substitutions": [
+                "खाली स्वच्छ स्थान"
+              ],
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "कामनहब्ब / काम दहन का शांत स्मरण करें और ऊपर दी गई महत्ता पढ़ें",
+              "why": "कथा को कर्मकांड या ऐतिहासिक प्रमाण बनाए बिना अर्थ से जोड़ें।",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 3,
+              "instruction": "अपनी क्षमता के अनुसार कृतज्ञता, प्रार्थना या एक दयालु कार्य चुनें",
+              "why": "उपयोगी सहभागिता को उपवास, खर्च या जोखिम से अलग रखें।",
+              "source_ids": [
+                "drik-kannada-holi-calendar-2027",
+                "devam-final32-synthesis"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "drik-kannada-holi-calendar-2027",
+              "devam-final32-synthesis"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "major-applicability-boundary-hi",
+          "scope": "Karnataka communities that retain this Holi-season name",
+          "difference": "मुख्य अंतर: No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+          "source_ids": [
+            "drik-kannada-holi-calendar-2027",
+            "devam-final32-synthesis"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "मुख्य सीमा: No bonfire, burning, smoke exposure or public gathering is required. The story and exact practice remain Karnataka/community scoped.",
+        "उपवास वैकल्पिक है और असुरक्षित हो सकता है। सामान्य पानी, भोजन, नींद, बाल-देखभाल, गर्भावस्था/स्तनपान की जरूरतें, दिव्यांग-सुगमता और लिखी हुई दवा जारी रखें।",
+        "खरीद, दान, आग, धुआँ, तेल, यात्रा, भीड़, पशु-संपर्क, जल-प्रवेश या मध्यरात्रि जागरण आवश्यक नहीं है। वर्तमान सार्वजनिक और संस्थागत सुरक्षा नियम मानें; भारत में आपातस्थिति पर 112 करें।",
+        "पाप, पुण्य, स्वास्थ्य, धन, रक्षा, विवाह, संतान या भाग्य के दावों को स्रोत-चिह्नित मान्यता मानें, गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "Authored and internally reviewed only; not projected, hosted, released or a substitute for current family, temple, sampradaya, civic or event authority."
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}

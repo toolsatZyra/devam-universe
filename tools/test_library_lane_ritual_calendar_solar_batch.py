@@ -128,8 +128,8 @@ def test_links_progress_research_and_unprojected_status_reconcile():
 
     progress = load(PROGRESS)
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 176
-    assert progress["remaining_authoring_items"] == 32
+    assert progress["completed_after_freeze"] == 208
+    assert progress["remaining_authoring_items"] == 0
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     for lane_id in LANE_IDS:
         assert progress["completed_lane_ids"].count(lane_id) == 1

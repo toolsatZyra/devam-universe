@@ -39,7 +39,7 @@ def test_source_label_safety_and_no_result_guarantees():
 def test_links_progress_matrix_and_unprojected_boundary():
  links=load(L/"cross-links"/"surya-shani-observance-batch-4-owner-proposals-v1.json");Draft202012Validator(load(ROOT/"schemas"/"cross-lane-link-proposal-v1.schema.json")).validate(links)
  assert len(links["proposals"])==4 and all(x["target_resolution"]=="unresolved_owner_lane" for x in links["proposals"])
- p=load(L/"inventory"/"ritual-calendar-authoring-progress-v1.json");assert p["completed_after_freeze"]==176 and p["remaining_authoring_items"]==32
+ p=load(L/"inventory"/"ritual-calendar-authoring-progress-v1.json");assert p["completed_after_freeze"]==208 and p["remaining_authoring_items"]==0
  for lane in E.values():assert p["completed_lane_ids"].count(lane)==1 and p["completed_pack_refs"].count(f"knowledge_packs/library_lanes/ritual-calendar/packs/{lane}.json")==1
  matrix=(L/"research"/"surya-shani-observance-batch-4-evidence-matrix-2027-v1.md").read_text(encoding="utf-8")
  for x in ("exactly four accepted","No single fixed origin","act once","No source payload is copied"):assert x in matrix

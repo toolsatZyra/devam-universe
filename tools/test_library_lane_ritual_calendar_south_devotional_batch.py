@@ -46,7 +46,7 @@ def test_no_universal_or_harmful_instruction():
 def test_links_progress_and_matrix():
  links=load(LANE/"cross-links"/"south-devotional-calendar-batch-8-owner-proposals-v1.json"); schema=load(ROOT/"schemas"/"cross-lane-link-proposal-v1.schema.json"); Draft202012Validator(schema).validate(links)
  assert len(links["proposals"])==8 and all(x["target_resolution"]=="unresolved_owner_lane" for x in links["proposals"])
- p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json"); assert p["completed_after_freeze"]==176 and p["remaining_authoring_items"]==32
+ p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json"); assert p["completed_after_freeze"]==208 and p["remaining_authoring_items"]==0
  for lane in IDS:
   assert p["completed_lane_ids"].count(lane)==1 and p["completed_pack_refs"].count(f"knowledge_packs/library_lanes/ritual-calendar/packs/{lane}.json")==1
  matrix=(LANE/"research"/"south-devotional-calendar-batch-8-evidence-matrix-2027-v1.md").read_text(encoding="utf-8")

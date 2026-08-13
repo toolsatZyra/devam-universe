@@ -1,0 +1,652 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "guruvayur-ekadasi-kerala-temple-participant-2027-v1",
+  "observance_slugs": [
+    "guruvayur-ekadasi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN",
+      "IN-KL"
+    ],
+    "tradition_codes": [
+      "guruvayur-ekadasi"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "household",
+      "temple",
+      "community"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which state, city and Panchang or temple calendar do you follow?",
+      "Is this a home remembrance, formal family practice, temple visit or live public event?",
+      "Are there health, consent, mobility, child-care, crowd or sensory needs?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-KL",
+        "tradition_code": "guruvayur-ekadasi",
+        "observance_slug": "guruvayur-ekadasi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "guruvayur-ekadasi",
+        "language_code": "en",
+        "note": "Guruvayur temple tradition and Kerala devotees. Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional."
+      },
+      {
+        "observance_slug": "guruvayur-ekadasi",
+        "language_code": "hi",
+        "note": "यह मार्ग केवल बताई गई क्षेत्रीय/परंपरागत प्रयोज्यता के लिए है; परिवार और वर्तमान संस्था की विधि ऊपर रहेगी।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "guruvayur-temple-current",
+      "drik-ekadashi-2027"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "Vrischikam Shukla Ekadasi under the Guruvayur/selected Kerala calendar; darshan and programmes require current Devaswom notices",
+    "closing_decision_rule_id": "Close after the chosen household remembrance; formal parana, visarjana, temple closure or event exit follows the named current owner.",
+    "live_schedule_required": true,
+    "freshness_note": "2027 fixture: 9 December; verify the temple schedule. Recompute from the user's location, tradition and current owner before display."
+  },
+  "sources": [
+    {
+      "source_id": "guruvayur-temple-current",
+      "title": "Guruvayur Temple current information",
+      "publisher": "Guruvayur Devaswom",
+      "source_role": "living temple schedule and participation owner",
+      "rights_lane": "citation_only",
+      "url": "https://guruvayurtemple.org/guruvayur-temple-darshan-timings/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "claim_scope": "living temple schedule and participation owner"
+      }
+    },
+    {
+      "source_id": "drik-ekadashi-2027",
+      "title": "Ekadashi calendar 2027",
+      "publisher": "Drik Panchang",
+      "source_role": "current tithi fixture",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "claim_scope": "current tithi fixture"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "guruvayur-ekadasi"
+      ],
+      "title": "Guruvayur Ekadasi",
+      "short_answer": "What to do: first confirm Vrischikam Shukla Ekadasi under the Guruvayur/selected Kerala calendar; darshan and programmes require current Devaswom notices. If this is your family or temple tradition, use the simple household route below; otherwise a respectful reading or greeting is complete. 2027 fixture: 9 December; verify the temple schedule.",
+      "significance": {
+        "text": "This temple-centred Ekadasi honours Guruvayurappan through remembrance and institution-led worship.",
+        "source_ids": [
+          "guruvayur-temple-current",
+          "drik-ekadashi-2027"
+        ],
+        "scope_note": "Guruvayur temple tradition and Kerala devotees"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "meaning-tradition",
+          "title": "Source-labelled story and devotional meaning",
+          "summary": "The Ekadasi is centred on Guruvayurappan and the temple's own annual worship cycle rather than a portable nationwide programme.",
+          "tradition_scope": "Guruvayur temple tradition and Kerala devotees",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "evidence-boundary",
+          "title": "What is not being universalised",
+          "summary": "Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+          "tradition_scope": "Evidence and applicability boundary",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "home-remembrance",
+          "population_scope": "Guruvayur temple tradition and Kerala devotees",
+          "description": "At home, remember Guruvayurappan with song or reading; for darshan, check same-day Devaswom hours, access and queue notices.",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "owner-led-route",
+          "population_scope": "Families, temples, sampradayas or event participants with an inherited or published route",
+          "description": "Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "minimum-en",
+          "label": "Minimum remembrance",
+          "tier": "minimum",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "accessible_short",
+          "estimated_minutes": 3,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "guruvayur-temple-current",
+              "drik-ekadashi-2027"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ]
+        },
+        {
+          "procedure_id": "standard-en",
+          "label": "Simple household observance",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "traditional_household",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            },
+            {
+              "item": "One flower, leaf or digital image",
+              "required": false,
+              "substitutions": [
+                "an uncluttered clean space"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Pause for Guruvayur Ekadasi, read the significance and choose one source-labelled story or reflection.",
+              "why": "This connects the day to meaning without turning narrative into mandatory ritual or historical proof.",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "guruvayur-temple-current",
+              "drik-ekadashi-2027"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ]
+        },
+        {
+          "procedure_id": "elaborate-en",
+          "label": "Fuller family or institution-owned route",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "institutional_participation",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "No material is required; water may be kept for comfort",
+              "required": false,
+              "substitutions": [
+                "silent remembrance"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            },
+            {
+              "item": "One flower, leaf or digital image",
+              "required": false,
+              "substitutions": [
+                "an uncluttered clean space"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the observance name and local date rule shown above.",
+              "why": "This prevents accidental merging of a regional or sampradaya calendar lane.",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Pause for Guruvayur Ekadasi, read the significance and choose one source-labelled story or reflection.",
+              "why": "This connects the day to meaning without turning narrative into mandatory ritual or historical proof.",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Offer gratitude, a short prayer or one proportionate act of care.",
+              "why": "This gives an actionable observance without requiring fasting, purchase, flame, travel or a promised result.",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Drink water, continue normal food and prescribed medicine, tidy the space and close without claiming a guaranteed spiritual or material result.",
+            "source_ids": [
+              "guruvayur-temple-current",
+              "drik-ekadashi-2027"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "major-applicability-boundary",
+          "scope": "Guruvayur temple tradition and Kerala devotees",
+          "difference": "Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+        "Fasting is optional and may be unsafe. Continue normal water, food, sleep, child care, pregnancy or breastfeeding needs, disability access and prescribed medicine.",
+        "No purchase, donation, flame, smoke, oil, travel, crowd entry, animal contact, water entry or midnight vigil is required. Follow current public and institutional safety rules; in India call 112 for an emergency.",
+        "Treat claims about sin, merit, health, wealth, protection, marriage, fertility or luck as source-labelled beliefs, never guaranteed outcomes."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "guruvayur-ekadasi"
+      ],
+      "title": "गुरुवायूर एकादशी",
+      "short_answer": "क्या करें: पहले स्थानीय तिथि-नियम जाँचें—Vrischikam Shukla Ekadasi under the Guruvayur/selected Kerala calendar; darshan and programmes require current Devaswom notices। यदि यह आपके परिवार या मंदिर की परंपरा है तो नीचे की सरल घरेलू विधि अपनाएँ; अन्यथा सम्मानपूर्वक पाठ या शुभकामना पर्याप्त है। 2027 fixture: 9 December; verify the temple schedule।",
+      "significance": {
+        "text": "इस दिन का उपभोक्ता-अर्थ: This temple-centred Ekadasi honours Guruvayurappan through remembrance and institution-led worship. यह वर्णन स्रोत-चिह्नित और क्षेत्र/परंपरा तक सीमित है।",
+        "source_ids": [
+          "guruvayur-temple-current",
+          "drik-ekadashi-2027"
+        ],
+        "scope_note": "Guruvayur temple tradition and Kerala devotees"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "meaning-tradition-hi",
+          "title": "स्रोत-चिह्नित कथा और भक्तिपरक अर्थ",
+          "summary": "यह एकादशी गुरुवायूरप्पन और मंदिर के अपने वार्षिक पूजा-क्रम पर केंद्रित है, किसी सार्वदेशिक कार्यक्रम पर नहीं।",
+          "tradition_scope": "Guruvayur temple tradition and Kerala devotees",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "evidence-boundary-hi",
+          "title": "किस बात को सार्वभौमिक नहीं माना गया",
+          "summary": "सीमा: Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+          "tradition_scope": "साक्ष्य और प्रयोज्यता सीमा",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "home-remembrance-hi",
+          "population_scope": "Guruvayur temple tradition and Kerala devotees",
+          "description": "घर में गीत या पाठ से गुरुवायूरप्पन का स्मरण करें; दर्शन के लिए उसी दिन देवस्वम के समय, प्रवेश और कतार सूचना जाँचें।",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "owner-led-route-hi",
+          "population_scope": "परिवार, मंदिर, सम्प्रदाय या कार्यक्रम जिनकी अपनी प्रकाशित या विरासत-विधि है",
+          "description": "यह मालिक-निर्देशित मार्ग है: Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "minimum-hi",
+          "label": "न्यूनतम स्मरण",
+          "tier": "minimum",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "accessible_short",
+          "estimated_minutes": 3,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "guruvayur-temple-current",
+              "drik-ekadashi-2027"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ]
+        },
+        {
+          "procedure_id": "standard-hi",
+          "label": "सरल घरेलू विधि",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "traditional_household",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            },
+            {
+              "item": "एक फूल, पत्ती या डिजिटल चित्र",
+              "required": false,
+              "substitutions": [
+                "खाली स्वच्छ स्थान"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "गुरुवायूर एकादशी का शांत स्मरण करें और ऊपर दी गई महत्ता पढ़ें",
+              "why": "कथा को कर्मकांड या ऐतिहासिक प्रमाण बनाए बिना अर्थ से जोड़ें।",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "guruvayur-temple-current",
+              "drik-ekadashi-2027"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ]
+        },
+        {
+          "procedure_id": "elaborate-hi",
+          "label": "परिवार या संस्था के साथ विस्तृत मार्ग",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Consumer-safe household synthesis; formal fast, mantra, temple, priest, teacher, procession and live-event details remain with the named current owner.",
+          "form": "institutional_participation",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "पानी या कोई सामग्री आवश्यक नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन स्मरण"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            },
+            {
+              "item": "एक फूल, पत्ती या डिजिटल चित्र",
+              "required": false,
+              "substitutions": [
+                "खाली स्वच्छ स्थान"
+              ],
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नाम और तिथि की जाँच करें",
+              "why": "गलत क्षेत्रीय या सम्प्रदाय तिथि मिलाने से बचें।",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "गुरुवायूर एकादशी का शांत स्मरण करें और ऊपर दी गई महत्ता पढ़ें",
+              "why": "कथा को कर्मकांड या ऐतिहासिक प्रमाण बनाए बिना अर्थ से जोड़ें।",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 3,
+              "instruction": "अपनी क्षमता के अनुसार कृतज्ञता, प्रार्थना या एक दयालु कार्य चुनें",
+              "why": "उपयोगी सहभागिता को उपवास, खर्च या जोखिम से अलग रखें।",
+              "source_ids": [
+                "guruvayur-temple-current",
+                "drik-ekadashi-2027"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "पानी पिएँ, सामान्य भोजन और दवा जारी रखें, स्थान समेटें और किसी फल की गारंटी किए बिना दिन समाप्त करें।",
+            "source_ids": [
+              "guruvayur-temple-current",
+              "drik-ekadashi-2027"
+            ],
+            "scope_note": "No promised result; health, consent and current authority instructions control."
+          },
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "major-applicability-boundary-hi",
+          "scope": "Guruvayur temple tradition and Kerala devotees",
+          "difference": "मुख्य अंतर: Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+          "source_ids": [
+            "guruvayur-temple-current",
+            "drik-ekadashi-2027"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "मुख्य सीमा: Temple opening, queues, dress, offerings and programmes are live-owner facts. A home prayer is a complete alternative; fasting is optional.",
+        "उपवास वैकल्पिक है और असुरक्षित हो सकता है। सामान्य पानी, भोजन, नींद, बाल-देखभाल, गर्भावस्था/स्तनपान की जरूरतें, दिव्यांग-सुगमता और लिखी हुई दवा जारी रखें।",
+        "खरीद, दान, आग, धुआँ, तेल, यात्रा, भीड़, पशु-संपर्क, जल-प्रवेश या मध्यरात्रि जागरण आवश्यक नहीं है। वर्तमान सार्वजनिक और संस्थागत सुरक्षा नियम मानें; भारत में आपातस्थिति पर 112 करें।",
+        "पाप, पुण्य, स्वास्थ्य, धन, रक्षा, विवाह, संतान या भाग्य के दावों को स्रोत-चिह्नित मान्यता मानें, गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "Authored and internally reviewed only; not projected, hosted, released or a substitute for current family, temple, sampradaya, civic or event authority."
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}
