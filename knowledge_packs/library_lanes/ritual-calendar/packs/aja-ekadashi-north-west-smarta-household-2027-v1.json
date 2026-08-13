@@ -1,0 +1,1243 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "aja-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "aja-ekadashi",
+    "kaliyadalan-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-OD",
+      "IN-KA",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "ordinary-ekadashi-household"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted ordinary Panchang resolve Bhadrapada Krishna Aja/Kaliyadalan for you?",
+      "Are you following ordinary Aja/Kaliyadalan or a materially separate Annada/ISKCON or other Vaishnava fasting and parana authority?",
+      "Would sale, enslavement, child separation, caste or death-work story content be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, sleep, no body/funeral contact and an easy private exit?",
+      "Would a material-free form with no contact, disclosure, payment, reconciliation or action be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "aja-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "aja-ekadashi"
+      },
+      {
+        "region_code": "IN-OD",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "kaliyadalan-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "aja-ekadashi",
+        "language_code": "en",
+        "note": "Ordinary Aja household lane for the reviewed 28 August fixture; Annada/ISKCON authority, inherited fast/vigil/parana, funeral work and professional safeguarding remain separate."
+      },
+      {
+        "observance_slug": "aja-ekadashi",
+        "language_code": "hi",
+        "note": "समीक्षित 28 अगस्त तिथि का सामान्य अजा गृह-मार्ग; अन्नदा/इस्कॉन अधिकार, पारिवारिक उपवास-जागरण-पारण, अंतिम-संस्कार काम और पेशेवर सुरक्षा अलग हैं।"
+      },
+      {
+        "observance_slug": "kaliyadalan-ekadashi",
+        "language_code": "en",
+        "note": "Odisha Kaliyadalan is retained as a same-date, same-paksha/tithi alias; no Odisha-specific vidhi is invented without a material practice difference."
+      },
+      {
+        "observance_slug": "kaliyadalan-ekadashi",
+        "language_code": "hi",
+        "note": "ओडिशा कालियादलन समान तिथि और पक्ष/तिथि का नाम-रूप है; बड़े आचरण-अंतर के प्रमाण बिना ओडिशा-विशेष विधि नहीं गढ़ी गई।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "padma-purana-aja-deshpande",
+      "padma-purana-aja-sanskrit",
+      "drik-aja-annada-kaliyadalan-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "aja-bhadrapada-krishna-ekadashi-local-ordinary-smarta-v1",
+    "closing_decision_rule_id": "aja-material-free-truth-consent-accountability-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed ordinary Indian fixtures place Aja/Kaliyadalan on Saturday 28 August 2027; ISKCON calls the occurrence Annada. Recompute city, sunrise, tithi/day-boundary and accepted authority; never copy this date, displayed times, parana or a temple schedule."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-aja-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 56: Aja Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Aja-Harishchandra-Gautama mahatmya: sale and enslavement, death-work, fast/vigil instruction and attributed reunion, restoration, heaven and merit claims",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365633.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 56",
+        "verses": "1-23",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "padma-purana-aja-sanskrit",
+      "title": "Padma Purana Sanskrit, Book 6, Chapter 56",
+      "publisher": "Sanskrit text surfaced by Wisdomlib",
+      "source_role": "fixed Sanskrit witness for Bhadrapada Krishna Aja, Harishchandra sequence and source fast/vigil instruction",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/padma-purana-sanskrit/d/doc428111.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-23",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-aja-annada-kaliyadalan-2027",
+      "title": "2027 Aja, Annada and Kaliyadalan calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "28 August identity, ordinary regional-label and ISKCON-name discovery only; no portable parana or universal practice authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?time-format=24plushour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "ordinary_civil_date": "2027-08-28",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-bonded-labour",
+      "title": "The Bonded Labour System (Abolition) Act, 1976",
+      "publisher": "India Code, Government of India",
+      "source_role": "current official abolition and anti-exploitation boundary; not case-specific legal advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1491",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": "4-6 and 16-20",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-bns-trafficking",
+      "title": "Bharatiya Nyaya Sanhita, 2023",
+      "publisher": "India Code, Government of India",
+      "source_role": "current trafficking, exploitation, slavery-like dealing and forced-labour boundary; not case-specific legal advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/20062",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": "143-146",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen Aja/Kaliyadalan alias and Annada authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu-remembrance scaffold and family-authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-aja-research",
+      "title": "Aja Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local story, timing, alias, consent, anti-trafficking, equal-dignity, funeral-safety, closing and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/aja-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "aja-ekadashi",
+        "kaliyadalan-ekadashi"
+      ],
+      "title": "Aja Ekadashi: a safe ordinary household guide",
+      "short_answer": "First confirm ordinary Aja/Kaliyadalan for your city and accepted Panchang; Annada/ISKCON rules belong to that current named authority. A complete form is to remain fed, hydrated and rested, remember Vishnu by a familiar name or silence, hear the source-labelled Padma Purana 6.56 account without normalising sale, enslavement, caste stigma or death-work, affirm consent and equal dignity, choose at most one private lawful truth-and-care action, and close with normal care. No material, fast, vigil, funeral contact, payment, confession, reconciliation or promised result is required.",
+      "significance": {
+        "text": "Aja is the dark-half Ekadashi named in Padma Purana 6.56. Its Harishchandra account places truth amid severe loss and coercion. Devam's bounded living meaning is that truthful help must protect freedom, consent, equal dignity, safety and accountability. Suffering is not proof of sin, and ritual cannot own a person, erase harm or guarantee restoration.",
+        "source_ids": [
+          "padma-purana-aja-deshpande",
+          "padma-purana-aja-sanskrit",
+          "devam-aja-research"
+        ],
+        "scope_note": "Ordinary Aja/Kaliyadalan household meaning only; not a universal national ritual or complete Harishchandra biography."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-6-56-question-and-fall",
+          "title": "Aja and Harishchandra's distress",
+          "summary": "Yudhishthira asks Krishna about Bhadrapada Krishna Ekadashi. Krishna names Aja and introduces truthful emperor Harishchandra, who through an unspecified act loses his kingdom, sells wife, son and himself, becomes enslaved to a Chandala/Pulkasa and removes clothes from the dead for years. The chapter centres the king; his wife and son's voices and consent are absent.",
+          "tradition_scope": "N. A. Deshpande expression of Padma Purana Uttara Khanda 6.56, verses 1-12",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "padma-6-56-gautama-vow-and-results",
+          "title": "Gautama's instruction and attributed restoration",
+          "summary": "Gautama hears Harishchandra's grief and directs the approaching Aja fast and night vigil. The source attributes the end of sin and misery, reunion with wife and living son, restored kingdom, heavenly signs and heaven to the vow, and compares hearing it with a horse sacrifice. These are source claims, not consumer guarantees, health advice or permission to erase coercion.",
+          "tradition_scope": "N. A. Deshpande expression of Padma Purana Uttara Khanda 6.56, verses 13-23",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ordinary-vishnu-remembrance",
+          "population_scope": "Some ordinary Smarta Ekadashi households and individuals",
+          "description": "People may remember Vishnu, hear an Ekadashi account, pray or stay silent. Exact wording, image, food and intensity remain family and authority choices.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "source-fast-and-vigil",
+          "population_scope": "The Padma Purana 6.56 mahatmya and some inherited vrata authorities",
+          "description": "The chapter directs Harishchandra to fast and remain awake. This ordinary pack reports but does not prescribe those practices; the fed and rested form is complete.",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "annada-vaishnava-routing",
+          "population_scope": "ISKCON/Gaurabda and other named Vaishnava users",
+          "description": "Annada is the current ISKCON name for the occurrence; its calendar, food, fast and parana rules require that current named authority and are not copied into the ordinary lane.",
+          "source_ids": [
+            "drik-aja-annada-kaliyadalan-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-truth-and-care-reflection",
+          "population_scope": "Ordinary participants who want a non-ritual action",
+          "description": "A user may privately correct a small fact, seek qualified help, keep a consented commitment or stop enabling exploitation. No contact, disclosure, money, reconciliation or action is required.",
+          "source_ids": [
+            "devam-aja-research",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "aja-minimum-private-material-free-en",
+          "label": "Minimum private, fed and rested form",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Ordinary locally resolved Aja/Kaliyadalan only; no Annada/ISKCON, inherited fast, vigil or parana authority",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "No ritual material",
+              "required": false,
+              "substitutions": [
+                "Silence",
+                "A familiar Vishnu name",
+                "No image, writing, purchase or action"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            },
+            {
+              "item": "Optional existing text or image",
+              "required": false,
+              "substitutions": [
+                "Trusted audio",
+                "Private memory",
+                "Nothing"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm ordinary Aja/Kaliyadalan for your Indian city and accepted ordinary Panchang; if your authority says Annada/ISKCON or gives another rule, stop and use that named authority.",
+              "why": "Date and fasting/parana authority are location- and tradition-dependent.",
+              "source_ids": [
+                "drik-aja-annada-kaliyadalan-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Eat, drink, take prescribed medicine and insulin, feed children normally, keep hygiene and plan normal sleep. Begin no fast, vigil or parana.",
+              "why": "The safe ordinary form is complete without food restriction or sleep loss.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use a familiar Vishnu or Janardana remembrance, family prayer or silence. An image, Sanskrit phrase, count and offering are unnecessary.",
+              "why": "This stays within ordinary devotional competence and avoids invented ritual authority.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the bounded Padma Purana 6.56 account: Harishchandra loses his kingdom, sells wife, son and self, performs coerced death-work, meets Gautama, observes the source fast/vigil, and is attributed reunion, restoration and heaven.",
+              "why": "The difficult facts and attributed results must remain source-labelled rather than softened or universalised.",
+              "source_ids": [
+                "padma-purana-aja-deshpande",
+                "padma-purana-aja-sanskrit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "State aloud or privately: absent consent is not consent; no person can be sold or owned; suffering is not proof of sin; caste and work do not rank dignity; ritual does not erase harm or guarantee restoration.",
+              "why": "The source story cannot become consumer permission for exploitation or stigma.",
+              "source_ids": [
+                "india-code-bonded-labour",
+                "india-code-bns-trafficking",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "If useful, choose one lawful private action already yours: correct a small factual error, ask qualified help, keep a consented commitment or stop enabling exploitation. Taking no action beyond remembrance is complete.",
+              "why": "Truth includes safety, consent and accountability; the guide must not trigger contact, disclosure or a dispute.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with normal food, water, medicine, sleep, privacy and safety. Make no claim of absolution, reunion, resurrection, property, wealth or heaven.",
+              "why": "A bounded close prevents miracle promises and ritual erasure of real-world duties.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with gratitude for safe, truthful help and return to ordinary care. No result is promised.",
+            "source_ids": [
+              "devam-aja-research"
+            ],
+            "scope_note": "Material-free, non-fasting, no-contact completion is sufficient."
+          },
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit",
+            "drik-aja-annada-kaliyadalan-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ]
+        },
+        {
+          "procedure_id": "aja-consent-led-family-en",
+          "label": "Consent-led family story and reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Voluntary ordinary household participation; no role-play, confession, reconciliation, funeral action, fast or vigil",
+          "form": "traditional_household",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "One source-labelled account",
+              "required": true,
+              "substitutions": [
+                "Trusted audio",
+                "Adult summary with safeguarding",
+                "Quiet individual reflection"
+              ],
+              "source_ids": [
+                "padma-purana-aja-deshpande"
+              ]
+            },
+            {
+              "item": "Optional familiar Vishnu support",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "Silence",
+                "Existing family text"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Ask privately whether each person wants to join; offer an easy no, a separate room and the complete private form.",
+              "why": "Participation and hearing difficult material require free consent.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Confirm ordinary local Aja/Kaliyadalan and keep normal meals, water, medicine, child feeding and sleep for everyone.",
+              "why": "A family guide cannot assign fasting or vigil.",
+              "source_ids": [
+                "drik-aja-annada-kaliyadalan-2027",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a family-known prayer, name or silence; do not invent a mantra, vow, food rule or promise.",
+              "why": "Family practice overrides generic wording.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Read the complete bounded chapter sequence without staging sale, slavery, death-work, child loss or reunion and without assigning anyone the wife, son, worker or caste role.",
+              "why": "Role-play can normalize coercion and distress participants.",
+              "source_ids": [
+                "padma-purana-aja-deshpande",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Discuss only the safe meaning: truthful help must protect freedom, consent, equal dignity and accountability. Do not question anyone about debt, caste, abuse, custody, grief, work or private history.",
+              "why": "Reflection must not become interrogation or forced disclosure.",
+              "source_ids": [
+                "india-code-bonded-labour",
+                "india-code-bns-trafficking",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Invite an optional private next step that needs no contact, money or disclosure; do not compare answers or demand confession, apology, reconciliation or forgiveness.",
+              "why": "No one owes an emotional or legal outcome to complete the observance.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close together or separately and return to ordinary food, water, medicine, rest and responsibilities.",
+              "why": "The family form ends without parana, gift, purity claim or result guarantee.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank participants, respect silence and leave every private matter private. Normal care is the close.",
+            "source_ids": [
+              "devam-aja-research"
+            ],
+            "scope_note": "No confession, contact, payment, reconciliation or forgiveness is required."
+          },
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit",
+            "drik-aja-annada-kaliyadalan-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ]
+        },
+        {
+          "procedure_id": "aja-named-institution-en",
+          "label": "Named temple or institution participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor-only route after live verification; the institution alone owns its current programme, food, fast, vigil and parana rules",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "Verified current programme information",
+              "required": true,
+              "substitutions": [
+                "Official current phone/web notice",
+                "Do not travel",
+                "Complete home form"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named institution's current date, public programme, entry, accessibility, food, fasting, parana, donation, crowd, photography and safeguarding rules.",
+              "why": "A named live programme is not inferable from an annual calendar or this pack.",
+              "source_ids": [
+                "drik-aja-annada-kaliyadalan-2027",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "If it follows Annada/ISKCON or another Vaishnava authority, accept its own current calendar and participant rules; do not blend them with this ordinary Smarta route.",
+              "why": "The authority difference is material even when the civil date matches.",
+              "source_ids": [
+                "devam-ekadashi-rule-audit",
+                "drik-aja-annada-kaliyadalan-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Attend only voluntarily with an independent safe way home; keep medicine, water, mobility, child and crowd needs available.",
+              "why": "Participation never overrides health, access or safeguarding.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Follow visitor directions only. Do not enter restricted funeral, service or ritual areas; do not photograph workers, grieving people or bodies; do not copy a mantra, fast, vigil or parana home.",
+              "why": "Institutional access and death-work require explicit authority and dignity.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Donate nothing unless independently chosen, affordable and verified; leave if pressured to fast, disclose, reconcile, pay, surrender property or accept a guarantee.",
+              "why": "Consent and protection from exploitation remain active in devotional settings.",
+              "source_ids": [
+                "india-code-bonded-labour",
+                "india-code-bns-trafficking",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Leave at the verified time or earlier for safety. A cancelled, remote or home form is complete.",
+              "why": "Temple attendance is optional and no institutional schedule is portable.",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Leave safely, eat, hydrate, take medicine and rest according to your needs; claim no special result from attendance.",
+            "source_ids": [
+              "devam-aja-research"
+            ],
+            "scope_note": "Only the named institution can define its current participant close."
+          },
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit",
+            "drik-aja-annada-kaliyadalan-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "kaliyadalan-alias-and-minor-expression-en",
+          "scope": "Ordinary Aja/Kaliyadalan households",
+          "difference": "Odisha Kaliyadalan is retained as a same-date, same-paksha/tithi alias, not a second state ritual. Language, dress, familiar Vishnu name, image/no-image, silence and food preference remain in this lane while story, safe sequence and close are materially the same.",
+          "source_ids": [
+            "drik-aja-annada-kaliyadalan-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "annada-or-other-vaishnava-authority-en",
+          "scope": "ISKCON/Gaurabda or another named Vaishnava authority",
+          "difference": "Authority-specific calendar, eligibility, grain/food rules, fasting intensity and parana materially change the answer and require a separate current authority route.",
+          "source_ids": [
+            "drik-aja-annada-kaliyadalan-2027",
+            "devam-ekadashi-rule-audit",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-fast-vigil-and-parana-en",
+          "scope": "Inherited family, guru or formal vrata",
+          "difference": "A prescribed fast, vigil, mantra, offering and parana change health, timing, materials and authority; do not reconstruct them here.",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "icmr-type1-diabetes-fasting",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-funeral-safeguarding-or-legal-en",
+          "scope": "Mortuary, funeral, medical, police, trafficking, bonded-labour, abuse, debt or custody concern",
+          "difference": "These require authorised professional processes and immediate safety, not a household ritual step.",
+          "source_ids": [
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-or-different-harishchandra-source-en",
+          "scope": "Current institution or another textual recension",
+          "difference": "Live schedules and a different Harishchandra narrative have separate ownership, evidence, details and safeguarding; this pack does not merge them.",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "The complete ordinary form is non-fasting, fed, hydrated, rested, no-vigil, no-flame, no-body-contact, no-funeral-work, no-purchase, no-donation, no-transfer, no-contact, no-disclosure, image-free, writing-free and material-free.",
+        "Never sell, buy, pledge, traffic, confine, threaten or claim ownership over a person; religion, debt, marriage, caste, employment or family duty cannot demand labour, sex, custody, obedience or surrender.",
+        "A spouse's, child's, worker's or distressed person's absent agency is not consent; do not pressure reunion, reconciliation, forgiveness or contact.",
+        "Do not approach, touch, move, undress, wash, photograph or handle a dead body or enter a cremation or funeral workspace from this guide; follow authorised directions.",
+        "Do not rank dignity by caste, tribe, birth, surname, family, occupation, wealth, observance, disability, health, employment or contact with death.",
+        "Keep medicine, insulin, meals, hydration, child feeding, hygiene and sleep; do not fast, keep vigil, copy parana or do safety-critical work while sleep-deprived.",
+        "Poverty, debt, bereavement, exploitation, illness, job loss, distress or abuse is not punishment, karma, impurity or moral failure.",
+        "Serious harm is not erased by fasting, vigil, hearing, truth claims or regret; preserve safety, evidence, accountability, restitution, reporting, qualified support and law.",
+        "Do not promise reunion, resurrection, custody, restored work or property, debt relief, wealth, sin removal, absolution, heaven or any result.",
+        "Authored means only this reviewed lane pack; it is not projected to day cards, hosted, independently released or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "aja-ekadashi",
+        "kaliyadalan-ekadashi"
+      ],
+      "title": "अजा एकादशी: सुरक्षित सामान्य गृह-मार्ग",
+      "short_answer": "पहले अपने शहर और स्वीकृत पंचांग से सामान्य अजा/कालियादलन निश्चित करें; अन्नदा/इस्कॉन नियम उसी वर्तमान नामित प्राधिकरण के हैं। पूर्ण रूप है: भोजन-पानी और नींद सामान्य रखें, विष्णु का परिचित नाम या मौन रखें, पद्म पुराण 6.56 की स्रोत-नामित कथा सुनें पर मनुष्य-बिक्री, दासता, जाति-कलंक या मृत्यु-कार्य को सामान्य न बनाएँ, सहमति और समान गरिमा पुष्ट करें, अधिकतम एक निजी वैधानिक सत्य-देखभाल काम चुनें और सामान्य देखभाल से समाप्त करें। सामग्री, उपवास, जागरण, शव/अंतिम-संस्कार संपर्क, भुगतान, कबूलनामा, मेल या फल-वादा आवश्यक नहीं।",
+      "significance": {
+        "text": "अजा पद्म पुराण 6.56 में नामित कृष्ण-पक्ष एकादशी है। हरिश्चंद्र कथा सत्य को गहरी हानि और बाध्यता के बीच रखती है। देवम का सीमित जीवित अर्थ है कि सत्य सहायता स्वतंत्रता, सहमति, समान गरिमा, सुरक्षा और जवाबदेही बचाए। दुःख पाप का प्रमाण नहीं और अनुष्ठान मनुष्य पर स्वामित्व, हानि मिटाने या वापसी की गारंटी नहीं दे सकता।",
+        "source_ids": [
+          "padma-purana-aja-deshpande",
+          "padma-purana-aja-sanskrit",
+          "devam-aja-research"
+        ],
+        "scope_note": "केवल सामान्य अजा/कालियादलन गृह-अर्थ; सार्वभौम राष्ट्रीय विधि या पूरी हरिश्चंद्र जीवनी नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-6-56-question-and-fall-hi",
+          "title": "अजा और हरिश्चंद्र का संकट",
+          "summary": "युधिष्ठिर कृष्ण से भाद्रपद कृष्ण एकादशी पूछते हैं। कृष्ण इसे अजा कहते और सत्यनिष्ठ सम्राट हरिश्चंद्र की कथा आरंभ करते हैं। किसी अनिर्दिष्ट कर्म के फल से वे राज्य खोते, पत्नी-पुत्र और स्वयं को बेचते, चांडाल/पुल्कस के दास बनते और वर्षों मृतकों के वस्त्र हटाते हैं। अध्याय राजा पर केंद्रित है; पत्नी-पुत्र की आवाज और सहमति अनुपस्थित है।",
+          "tradition_scope": "पद्म पुराण उत्तर खंड 6.56, श्लोक 1-12 का एन. ए. देशपांडे रूप",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "padma-6-56-gautama-vow-and-results-hi",
+          "title": "गौतम का निर्देश और स्रोत में फल",
+          "summary": "गौतम हरिश्चंद्र का दुःख सुनकर निकट अजा उपवास और रात्रि-जागरण बताते हैं। स्रोत व्रत से पाप-दुःख का अंत, पत्नी और जीवित पुत्र से मिलन, राज्य-वापसी, दिव्य संकेत और स्वर्ग बताता तथा श्रवण को अश्वमेध-फल से तुलना करता है। ये स्रोत-दावे हैं, उपभोक्ता गारंटी, स्वास्थ्य सलाह या बाध्यता मिटाने की अनुमति नहीं।",
+          "tradition_scope": "पद्म पुराण उत्तर खंड 6.56, श्लोक 13-23 का एन. ए. देशपांडे रूप",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ordinary-vishnu-remembrance-hi",
+          "population_scope": "कुछ सामान्य स्मार्त एकादशी गृह और व्यक्ति",
+          "description": "लोग विष्णु-स्मरण, एकादशी कथा, प्रार्थना या मौन रख सकते हैं। शब्द, चित्र, भोजन और तीव्रता परिवार व प्राधिकरण के चुनाव हैं।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "source-fast-and-vigil-hi",
+          "population_scope": "पद्म पुराण 6.56 माहात्म्य और कुछ पारिवारिक व्रत प्राधिकरण",
+          "description": "अध्याय हरिश्चंद्र को उपवास और जागरण बताता है। यह सामान्य पैक उन्हें दर्ज करता, निर्देश नहीं देता; भोजन-जल और विश्राम वाला रूप पूर्ण है।",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "annada-vaishnava-routing-hi",
+          "population_scope": "इस्कॉन/गौराब्द और अन्य नामित वैष्णव उपयोगकर्ता",
+          "description": "अन्नदा इस घटना का वर्तमान इस्कॉन नाम है; कैलेंडर, भोजन, उपवास और पारण उसी वर्तमान नामित प्राधिकरण से लें, सामान्य लेन में न उतारें।",
+          "source_ids": [
+            "drik-aja-annada-kaliyadalan-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "optional-truth-and-care-reflection-hi",
+          "population_scope": "गैर-अनुष्ठान काम चाहने वाले सामान्य भागीदार",
+          "description": "उपयोगकर्ता निजी रूप में छोटी तथ्य-भूल सुधार, योग्य मदद, सहमति वाला वचन या शोषण में सहयोग रोकना चुन सकता है। संपर्क, खुलासा, पैसा, मेल या काम आवश्यक नहीं।",
+          "source_ids": [
+            "devam-aja-research",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "aja-minimum-private-material-free-hi",
+          "label": "न्यूनतम निजी, भोजन-जल और विश्राम सहित रूप",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "केवल स्थानीय रूप से निश्चित सामान्य अजा/कालियादलन; अन्नदा/इस्कॉन, पारिवारिक उपवास, जागरण या पारण का अधिकार नहीं",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "कोई अनुष्ठान-सामग्री नहीं",
+              "required": false,
+              "substitutions": [
+                "मौन",
+                "विष्णु का परिचित नाम",
+                "बिना चित्र, लेखन, खरीद या काम"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा पाठ या चित्र",
+              "required": false,
+              "substitutions": [
+                "विश्वसनीय श्रव्य पाठ",
+                "निजी स्मरण",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने भारतीय शहर और स्वीकृत सामान्य पंचांग से अजा/कालियादलन निश्चित करें; प्राधिकरण अन्नदा/इस्कॉन या अलग नियम बताए तो रुकें और उसी नामित प्राधिकरण को मानें।",
+              "why": "तिथि, उपवास और पारण स्थान व परंपरा पर निर्भर हैं।",
+              "source_ids": [
+                "drik-aja-annada-kaliyadalan-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन-पानी, निर्धारित दवा और इंसुलिन, बच्चों का भोजन, स्वच्छता और नींद रखें। उपवास, जागरण या पारण शुरू न करें।",
+              "why": "सुरक्षित सामान्य रूप भोजन-निषेध या नींद खोए बिना पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु/जनार्दन का परिचित स्मरण, पारिवारिक प्रार्थना या मौन रखें। चित्र, संस्कृत वाक्य, गिनती और चढ़ावा आवश्यक नहीं।",
+              "why": "यह सामान्य भक्ति-क्षमता में रहता और गढ़े अधिकार से बचता है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पद्म पुराण 6.56 की सीमित कथा सुनें: हरिश्चंद्र राज्य खोते, पत्नी-पुत्र और स्वयं को बेचते, बाध्य मृत्यु-कार्य करते, गौतम से मिलते, स्रोत का उपवास-जागरण करते और कथा में पुनर्मिलन, राज्य व स्वर्ग पाते हैं।",
+              "why": "कठिन तथ्य और फल स्रोत-नामित रहें, नरम या सार्वभौम न बनाए जाएँ।",
+              "source_ids": [
+                "padma-purana-aja-deshpande",
+                "padma-purana-aja-sanskrit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "कहें या मन में रखें: अनुपस्थित सहमति सहमति नहीं; मनुष्य बेचा या स्वामित्व में नहीं लिया जा सकता; दुःख पाप का प्रमाण नहीं; जाति या काम गरिमा नहीं तौलते; अनुष्ठान हानि नहीं मिटाता और वापसी की गारंटी नहीं देता।",
+              "why": "स्रोत-कथा शोषण या कलंक की उपभोक्ता अनुमति नहीं बन सकती।",
+              "source_ids": [
+                "india-code-bonded-labour",
+                "india-code-bns-trafficking",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "उपयोगी हो तो केवल अपना एक वैधानिक निजी काम चुनें: छोटी तथ्यात्मक भूल सुधारें, योग्य मदद माँगें, सहमति वाला वचन निभाएँ या शोषण में सहयोग रोकें। केवल स्मरण भी पूर्ण है।",
+              "why": "सत्य में सुरक्षा, सहमति और जवाबदेही हैं; मार्ग संपर्क या विवाद शुरू न करे।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "सामान्य भोजन, पानी, दवा, नींद, गोपनीयता और सुरक्षा के साथ समाप्त करें। पाप-मुक्ति, पुनर्मिलन, पुनर्जीवन, संपत्ति, धन या स्वर्ग का दावा न करें।",
+              "why": "सीमित समापन चमत्कार-वादा और वास्तविक कर्तव्य मिटाने से रोकता है।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित और सत्य सहायता के लिए कृतज्ञता के साथ सामान्य देखभाल पर लौटें। कोई फल वादा नहीं है।",
+            "source_ids": [
+              "devam-aja-research"
+            ],
+            "scope_note": "सामग्री-रहित, गैर-उपवास, बिना-संपर्क समापन पर्याप्त है।"
+          },
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit",
+            "drik-aja-annada-kaliyadalan-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ]
+        },
+        {
+          "procedure_id": "aja-consent-led-family-hi",
+          "label": "सहमति-आधारित पारिवारिक कथा और चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "स्वैच्छिक सामान्य गृह भागीदारी; अभिनय, कबूलनामा, मेल-मिलाप, अंतिम-संस्कार काम, उपवास या जागरण नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "एक स्रोत-नामित कथा",
+              "required": true,
+              "substitutions": [
+                "विश्वसनीय श्रव्य पाठ",
+                "सुरक्षा सहित वयस्क सार",
+                "शांत निजी चिंतन"
+              ],
+              "source_ids": [
+                "padma-purana-aja-deshpande"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित विष्णु सहारा",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "मौन",
+                "मौजूदा पारिवारिक पाठ"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "हर व्यक्ति से निजी रूप में भाग लेने की इच्छा पूछें; आसान मना, अलग स्थान और पूर्ण निजी रूप दें।",
+              "why": "कठिन सामग्री सुनने और भागीदारी के लिए स्वतंत्र सहमति चाहिए।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "स्थानीय सामान्य अजा/कालियादलन निश्चित करें और सबका सामान्य भोजन, पानी, दवा, बाल-भोजन और नींद रखें।",
+              "why": "पारिवारिक मार्ग उपवास या जागरण नहीं सौंप सकता।",
+              "source_ids": [
+                "drik-aja-annada-kaliyadalan-2027",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "पारिवारिक परिचित प्रार्थना, नाम या मौन से विष्णु-स्मरण करें; मंत्र, व्रत, भोजन-नियम या वादा न गढ़ें।",
+              "why": "पारिवारिक परंपरा सामान्य शब्दों पर प्राथमिक है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "बिक्री, दासता, मृत्यु-कार्य, बाल-हानि या पुनर्मिलन का अभिनय और पत्नी, पुत्र, कामगार या जाति की भूमिका दिए बिना पूरी सीमित कथा पढ़ें।",
+              "why": "अभिनय दबाव को सामान्य बना और भागीदारों को दुखी कर सकता है।",
+              "source_ids": [
+                "padma-purana-aja-deshpande",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "केवल सुरक्षित अर्थ पर बात करें: सत्य सहायता स्वतंत्रता, सहमति, समान गरिमा और जवाबदेही बचाती है। कर्ज, जाति, हिंसा, अभिरक्षा, शोक, काम या निजी इतिहास न पूछें।",
+              "why": "चिंतन पूछताछ या जबरन खुलासा न बने।",
+              "source_ids": [
+                "india-code-bonded-labour",
+                "india-code-bns-trafficking",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "बिना संपर्क, पैसे या खुलासे का वैकल्पिक निजी अगला कदम दें; उत्तर न तुलना करें, न कबूलनामा, माफी, मेल या क्षमा माँगें।",
+              "why": "पूर्णता के लिए कोई भावनात्मक या कानूनी परिणाम देय नहीं।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "साथ या अलग समाप्त कर सामान्य भोजन, पानी, दवा, विश्राम और जिम्मेदारियों पर लौटें।",
+              "why": "पारिवारिक रूप पारण, दान, शुद्धि-दावा या फल-गारंटी बिना समाप्त होता है।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "भागीदारों को धन्यवाद दें, मौन का सम्मान करें और निजी बात निजी रखें। सामान्य देखभाल ही समापन है।",
+            "source_ids": [
+              "devam-aja-research"
+            ],
+            "scope_note": "कबूलनामा, संपर्क, भुगतान, मेल-मिलाप या क्षमा आवश्यक नहीं।"
+          },
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit",
+            "drik-aja-annada-kaliyadalan-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ]
+        },
+        {
+          "procedure_id": "aja-named-institution-hi",
+          "label": "नामित मंदिर या संस्था में भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "जीवित सत्यापन के बाद केवल आगंतुक मार्ग; वर्तमान कार्यक्रम, भोजन, उपवास, जागरण और पारण संस्था के अधिकार में",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "सत्यापित वर्तमान कार्यक्रम सूचना",
+              "required": true,
+              "substitutions": [
+                "आधिकारिक वर्तमान फोन/वेब सूचना",
+                "यात्रा न करें",
+                "पूर्ण गृह रूप"
+              ],
+              "source_ids": [
+                "devam-aja-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित संस्था की वर्तमान तिथि, सार्वजनिक कार्यक्रम, प्रवेश, सुलभता, भोजन, उपवास, पारण, दान, भीड़, फोटो और सुरक्षा नियम जाँचें।",
+              "why": "जीवित कार्यक्रम वार्षिक कैलेंडर या इस पैक से अनुमानित नहीं।",
+              "source_ids": [
+                "drik-aja-annada-kaliyadalan-2027",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "संस्था अन्नदा/इस्कॉन या अन्य वैष्णव प्राधिकरण माने तो उसका वर्तमान कैलेंडर और आगंतुक नियम मानें; सामान्य स्मार्त मार्ग से न मिलाएँ।",
+              "why": "नागरिक तिथि समान होने पर भी अधिकार-अंतर बड़ा है।",
+              "source_ids": [
+                "devam-ekadashi-rule-audit",
+                "drik-aja-annada-kaliyadalan-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "स्वतंत्र सुरक्षित वापसी के साथ स्वेच्छा से जाएँ; दवा, पानी, चलने-फिरने, बच्चे और भीड़ की जरूरत उपलब्ध रखें।",
+              "why": "भागीदारी स्वास्थ्य, पहुँच या सुरक्षा से ऊपर नहीं।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "केवल आगंतुक निर्देश मानें। प्रतिबंधित अंतिम-संस्कार, सेवा या अनुष्ठान क्षेत्र में न जाएँ; कामगार, शोकाकुल व्यक्ति या शव की फोटो न लें; मंत्र, उपवास, जागरण या पारण घर न उतारें।",
+              "why": "संस्था और मृत्यु-कार्य में स्पष्ट अधिकार व गरिमा चाहिए।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "दान तभी जब स्वतंत्र, वहनीय और सत्यापित हो; उपवास, खुलासा, मेल, भुगतान, संपत्ति छोड़ने या फल-गारंटी का दबाव हो तो निकलें।",
+              "why": "भक्ति स्थान में भी सहमति और शोषण से सुरक्षा सक्रिय हैं।",
+              "source_ids": [
+                "india-code-bonded-labour",
+                "india-code-bns-trafficking",
+                "devam-aja-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सत्यापित समय या सुरक्षा हेतु पहले निकलें। रद्द, दूरस्थ या गृह रूप पूर्ण है।",
+              "why": "मंदिर जाना वैकल्पिक और समय पोर्टेबल नहीं।",
+              "source_ids": [
+                "devam-aja-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित निकलें और अपनी जरूरत के अनुसार भोजन, पानी, दवा और विश्राम लें; उपस्थिति से विशेष फल न मानें।",
+            "source_ids": [
+              "devam-aja-research"
+            ],
+            "scope_note": "केवल नामित संस्था अपना वर्तमान आगंतुक-समापन तय कर सकती है।"
+          },
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "padma-purana-aja-sanskrit",
+            "drik-aja-annada-kaliyadalan-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-aja-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "kaliyadalan-alias-and-minor-expression-hi",
+          "scope": "सामान्य अजा/कालियादलन गृह",
+          "difference": "तिथि, कथा, सुरक्षित क्रम और समापन समान हों तो ओडिशा कालियादलन नाम, भाषा, वेश, परिचित विष्णु नाम, चित्र/बिना चित्र, मौन और भोजन पसंद इसी लेन में हैं।",
+          "source_ids": [
+            "drik-aja-annada-kaliyadalan-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "annada-or-other-vaishnava-authority-hi",
+          "scope": "इस्कॉन/गौराब्द या अन्य नामित वैष्णव प्राधिकरण",
+          "difference": "प्राधिकरण-विशेष कैलेंडर, पात्रता, अन्न/भोजन नियम, उपवास-तीव्रता और पारण उत्तर को बड़ा बदलते हैं और अलग वर्तमान प्राधिकरण मार्ग चाहिए।",
+          "source_ids": [
+            "drik-aja-annada-kaliyadalan-2027",
+            "devam-ekadashi-rule-audit",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-fast-vigil-and-parana-hi",
+          "scope": "पारिवारिक, गुरु या औपचारिक व्रत",
+          "difference": "निर्धारित उपवास, जागरण, मंत्र, चढ़ावा और पारण स्वास्थ्य, समय, सामग्री और अधिकार बदलते हैं; यहाँ पुनर्निर्माण नहीं।",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "icmr-type1-diabetes-fasting",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-funeral-safeguarding-or-legal-hi",
+          "scope": "शवगृह, अंतिम-संस्कार, चिकित्सा, पुलिस, तस्करी, बंधुआ श्रम, हिंसा, कर्ज या अभिरक्षा",
+          "difference": "इनमें अधिकृत पेशेवर प्रक्रिया और तत्काल सुरक्षा चाहिए, गृह-अनुष्ठान कदम नहीं।",
+          "source_ids": [
+            "india-code-bonded-labour",
+            "india-code-bns-trafficking",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-or-different-harishchandra-source-hi",
+          "scope": "वर्तमान संस्था या अलग पाठ-परंपरा",
+          "difference": "जीवित समय-सारिणी और अलग हरिश्चंद्र कथा का अलग स्वामित्व, प्रमाण, विवरण और सुरक्षा है; यह पैक उन्हें नहीं मिलाता।",
+          "source_ids": [
+            "padma-purana-aja-deshpande",
+            "devam-aja-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन और जल सहित, विश्रामपूर्ण, बिना जागरण, बिना अग्नि, बिना शव-स्पर्श, बिना अंतिम-संस्कार काम, बिना खरीद, बिना दान, बिना हस्तांतरण, बिना संपर्क, बिना खुलासा, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "किसी मनुष्य को न बेचें, खरीदें, गिरवी रखें, तस्करी करें, बंद करें, धमकाएँ या स्वामित्व जताएँ; धर्म, कर्ज, विवाह, जाति, रोजगार या परिवार-कर्तव्य श्रम, यौन संबंध, अभिरक्षा, आज्ञा या समर्पण नहीं माँग सकते।",
+        "पति/पत्नी, बच्चे, कामगार या संकटग्रस्त व्यक्ति की अनुपस्थित इच्छा सहमति नहीं; पुनर्मिलन, मेल, क्षमा या संपर्क का दबाव न दें।",
+        "इस मार्ग से शव के पास न जाएँ, छुएँ, हिलाएँ, वस्त्र हटाएँ, धोएँ, फोटो लें या श्मशान/अंतिम-संस्कार कार्यक्षेत्र में प्रवेश करें; अधिकृत निर्देश मानें।",
+        "जाति, जनजाति, जन्म, उपनाम, परिवार, पेशा, धन, पालन, विकलांगता, स्वास्थ्य, रोजगार या मृत्यु-संपर्क से गरिमा न तौलें।",
+        "दवा, इंसुलिन, भोजन, पानी, बाल-भोजन, स्वच्छता और नींद रखें; उपवास, जागरण, पारण की नकल या नींद की कमी में जोखिमपूर्ण काम न करें।",
+        "गरीबी, कर्ज, शोक, शोषण, बीमारी, नौकरी जाना, संकट या हिंसा दंड, कर्म, अशुद्धि या नैतिक विफलता नहीं।",
+        "गंभीर हानि उपवास, जागरण, कथा-श्रवण, सत्य-दावे या पछतावे से नहीं मिटती; सुरक्षा, साक्ष्य, जवाबदेही, प्रतिपूर्ति, रिपोर्टिंग, योग्य सहायता और कानून रखें।",
+        "पुनर्मिलन, पुनर्जीवन, अभिरक्षा, नौकरी/संपत्ति वापसी, कर्ज-मुक्ति, धन, पाप-मुक्ति, मोक्ष, स्वर्ग या किसी फल का वादा न दें।",
+        "रचित का अर्थ केवल यह समीक्षित लेन पैक है; यह दिन-कार्ड पर प्रक्षेपित, होस्ट, स्वतंत्र रिलीज-समीक्षित या प्रकाशित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

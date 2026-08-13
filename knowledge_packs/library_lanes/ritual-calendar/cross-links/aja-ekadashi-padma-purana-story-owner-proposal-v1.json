@@ -1,0 +1,55 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-aja-ekadashi-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "aja-ekadashi-to-padma-purana-harishchandra-gautama-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/aja-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-aja-harishchandra-gautama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_aja_harishchandra_gautama_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Aja, Harishchandra and Gautama account",
+        "hi": "अजा, हरिश्चंद्र और गौतम की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "The ritual pack uses Padma Purana Uttara Khanda chapter 56. A future story owner should preserve the sale of wife, son and self, enslavement, death-work, caste-status language, Gautama's fast/vigil instruction, absent family agency and attributed reunion, restoration, heaven and horse-sacrifice result without converting them into permission, stigma, universal ritual or guarantees.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-OD"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved Bhadrapada Krishna Aja/Kaliyadalan; reviewed 2027 fixture 28 August",
+        "source_expression_scope": "N. A. Deshpande English translation and Sanskrit witness, Padma Purana Uttara Khanda chapter 56; other Harishchandra recensions and full reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365633.html",
+          "claim_scope": "Reviewed verses 1-23 with the complete bounded Aja-Harishchandra-Gautama sequence and attributed results."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/aja-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
