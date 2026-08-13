@@ -1,0 +1,1062 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "nirjala-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "nirjala-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Jyeshtha Shukla Nirjala Ekadashi for you?",
+      "Does your family follow ordinary Smarta remembrance or a materially different Gauna/Vaishnava date, waterless fast, vigil or parana authority?",
+      "Would Bhima's hunger, family pressure, hell threats, caste language, promised sons or family salvation be distressing or coercive?",
+      "Does anyone need normal food, water, medicine, infant feeding, rest or clinician-directed fluid care?",
+      "Would a private, material-free form with no donation, contact, surveillance or temple travel be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "nirjala-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "nirjala-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "nirjala-ekadashi",
+        "language_code": "en",
+        "note": "Ordinary North/West Smarta household lane. Chapter 51 defines a waterless fast, but this guide's complete form is fed and hydrated. Strict fasting, vigil and parana require separate inherited, local and clinical authority."
+      },
+      {
+        "observance_slug": "nirjala-ekadashi",
+        "language_code": "hi",
+        "note": "सामान्य उत्तर/पश्चिम स्मार्त गृह-मार्ग। अध्याय 51 निर्जल उपवास बताता है, पर इस मार्ग का पूर्ण रूप भोजन और जल सहित है। कठोर उपवास, जागरण और पारण के लिए अलग परंपरागत, स्थानीय और चिकित्सकीय अधिकार चाहिए।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-nirjala-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "nirjala-shukla-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "nirjala-fed-hydrated-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Andhra Pradesh and Indian ISKCON fixtures place ordinary Nirjala Ekadashi on Monday 14 June 2027, Jyeshtha Shukla Ekadashi. Resolve the user's Indian city, sunrise and accepted family/sampradaya rule live; never copy displayed tithi/parana times, this date or a temple schedule elsewhere. Check current heat advice separately."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-nirjala-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 51: Nirjala Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Bhima-Vyasa account, source-defined waterless fast, gifts, threats, caste language and attributed results; source facts, not ordinary instructions",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365628.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 51",
+        "reviewed_lines": "54-97",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-nirjala-2027",
+      "title": "2027 Nirjala Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "ordinary, regional and Indian ISKCON date discovery for 14 June 2027; no portable parana, fast or temple authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/nirjala/nirjala-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-06-14",
+        "identity": "Jyeshtha Shukla Nirjala Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "ncdc-heat-community-manual",
+      "title": "Training Manual for Community Members: Recognising and Preventing Heat-Related Illnesses",
+      "publisher": "National Centre for Disease Control, Ministry of Health and Family Welfare, Government of India",
+      "source_role": "official hydration, electrolyte, older-adult thirst, medication, exertion, symptom and urgent-response safety boundaries",
+      "rights_lane": "citation_only",
+      "url": "https://ncdc.mohfw.gov.in/uploads/pdf/heat14.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "prevention and response for community members",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen named-Ekadashi identity and material timing/authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-nirjala-research",
+      "title": "Nirjala Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of source account, non-fasting route, hydration, heat, consent, anti-coercion, alias and major-variant boundaries",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/nirjala-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "nirjala-ekadashi"
+      ],
+      "title": "Nirjala Ekadashi: honour bodily limits and water care",
+      "short_answer": "Confirm Nirjala Ekadashi from your city and accepted ordinary Smarta Panchang, then use the complete non-fasting form: eat and drink normally, keep medicine and infant feeding unchanged, remember Vishnu, hear Bhima's honest limit and Vyasa's source-defined waterless rule as a labelled story, make one consent-based water or heat-safety action if useful, and close without fasting proof or promised results. Do not undertake a waterless fast from this guide.",
+      "significance": {
+        "text": "Padma Purana chapter 51 tells how Bhima, pressured alongside his fasting family, admits that he cannot bear hunger and asks Vyasa for one observance. Vyasa prescribes an exacting waterless fast and the chapter promises the fruit of all Ekadashis. Devam preserves that account but treats its waterless rule, threats, caste language and results as source claims. A bounded household meaning is to honour bodily limits and make safe water care easier without comparison.",
+        "source_ids": [
+          "padma-purana-nirjala-deshpande",
+          "ncdc-heat-community-manual",
+          "devam-nirjala-research"
+        ],
+        "scope_note": "Source-labelled devotional reflection; not fasting, medical, heat-emergency, fertility or guaranteed-result advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "nirjala-bhima-vyasa-en",
+          "title": "Bhima states his limit and asks Vyasa",
+          "summary": "Yudhishthira asks Krishna about Jyeshtha Shukla Ekadashi, and Krishna directs him to Vyasa. Bhima says Yudhishthira, Kunti, Draupadi, Arjuna, Nakula and Sahadeva fast and urge him to fast, but the belly-fire Vrka means he cannot bear hunger. He asks for one observance. Vyasa gives a sunrise-to-sunrise rule without food or even water, followed by Dwadashi actions. The chapter promises the fruit of all yearly Ekadashis, health, wealth, sons, family rescue and Vishnu's city, and uses hell threats and caste-denigrating language. These are source events and claims, not Devam's universal instructions or guarantees. The following Dwadashi is called Pandava Dwadashi in the source.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 51",
+          "source_ids": [
+            "padma-purana-nirjala-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "nirjala-en-safe-remembrance",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Fed and hydrated Vishnu remembrance, bounded Bhima-Vyasa story, optional consent-based water care and normal close.",
+          "source_ids": [
+            "ncdc-heat-community-manual",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "nirjala-en-formal-waterless-context",
+          "population_scope": "Families or institutions with separately inherited and clinically reviewed authority",
+          "description": "The source defines a waterless fast, vigil, gifts and Dwadashi close; this ordinary guide does not reconstruct or prescribe them.",
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "icmr-type1-diabetes-fasting",
+            "devam-nirjala-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "nirjala-en-minimum-v1",
+          "label": "Private hydrated remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "ordinary self/family guidance after local date resolution; no waterless fast authority",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "drik-nirjala-2027",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing drinking water or bottle",
+              "required": false,
+              "substitutions": [
+                "No object; keep normal care",
+                "Use clinician-directed fluid plan"
+              ],
+              "source_ids": [
+                "devam-nirjala-research"
+              ]
+            },
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Nirjala Ekadashi. Check current heat conditions; do not copy a parana time.",
+              "why": "Timing and heat safety are location-aware.",
+              "source_ids": [
+                "drik-nirjala-2027",
+                "devam-ekadashi-rule-audit",
+                "ncdc-heat-community-manual"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Eat, drink water, take prescribed medicine and insulin, feed infants, rest and sleep normally. Do not begin, intensify or prove a waterless fast.",
+              "why": "The fed, hydrated non-fasting route is complete.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, family prayer or silence. No image, mantra, offering or purchase is required.",
+              "why": "Devotion remains accessible without an invented universal formula.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the bounded Bhima-Vyasa account: Bhima admits he cannot bear hunger; Vyasa gives a strict waterless rule. Label the rule, threats, caste words, gifts and promised results as source content, not this guide's instructions.",
+              "why": "The story is preserved without coercion or universalisation.",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Choose one consent-based water or heat-safety action within your means, such as filling your existing bottle or making normal drinking water accessible. No action beyond normal care is required.",
+              "why": "Care should be practical, voluntary and pressure-free.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Do not monitor another person's drinking, food, medicine, urine, weight or fasting. Do not compare merit or use Bhima's strength, appetite or family to pressure anyone.",
+              "why": "Bodily privacy and consent are part of safe observance.",
+              "source_ids": [
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and continue normal food, water, medicine and rest. Claim no yearly-Ekadashi equivalence, health, sons, wealth, family salvation or heaven.",
+              "why": "Source promises are not guarantees.",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal water, food, medicine and rest. No fast, vigil, gift or parana begins here.",
+            "source_ids": [
+              "ncdc-heat-community-manual",
+              "devam-nirjala-research"
+            ],
+            "scope_note": "Qualified medical and institutional authority remains separate."
+          }
+        },
+        {
+          "procedure_id": "nirjala-en-standard-v1",
+          "label": "Consent-led family water care",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "ordinary self/family guidance after local date resolution; no waterless fast authority",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "drik-nirjala-2027",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional current official heat advisory",
+              "required": false,
+              "substitutions": [
+                "No screen or printout",
+                "A verbal safety check"
+              ],
+              "source_ids": [
+                "ncdc-heat-community-manual"
+              ]
+            },
+            {
+              "item": "Optional existing household water arrangement",
+              "required": false,
+              "substitutions": [
+                "No change",
+                "Each person manages their own normal care"
+              ],
+              "source_ids": [
+                "devam-nirjala-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Resolve Nirjala locally, check current heat advice and invite only willing participants; anyone may choose the short private form or leave.",
+              "why": "Calendar authority and consent precede the family form.",
+              "source_ids": [
+                "drik-nirjala-2027",
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep ordinary meals, water, medicines, infant feeding, hygiene and sleep available without comment or surveillance.",
+              "why": "No family practice may withhold care.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use a familiar Vishnu remembrance, then tell the Bhima-Vyasa account without hell threats or caste slurs. Say that Bhima's stated limit deserves respect and the source waterless fast is not being prescribed.",
+              "why": "This preserves narrative meaning and human dignity.",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-ekadashi-recurring-scaffold",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "By consent, make one existing water or cooling arrangement easier; if a clinician has restricted fluids, follow that individual plan.",
+              "why": "Generic hydration advice cannot replace individual care.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close without donation, fasting proof, vigil or parana. Continue normal care and seek qualified help for heat symptoms or medical uncertainty.",
+              "why": "Ritual remains optional accompaniment, not treatment.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal water, food, medicine and rest. No fast, vigil, gift or parana begins here.",
+            "source_ids": [
+              "ncdc-heat-community-manual",
+              "devam-nirjala-research"
+            ],
+            "scope_note": "Qualified medical and institutional authority remains separate."
+          }
+        },
+        {
+          "procedure_id": "nirjala-en-elaborate-v1",
+          "label": "Current named temple participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "ordinary self/family guidance after local date resolution; no waterless fast authority",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "drik-nirjala-2027",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified current temple programme and safe travel plan",
+              "required": false,
+              "substitutions": [
+                "Do not attend",
+                "Use the complete home form"
+              ],
+              "source_ids": [
+                "devam-nirjala-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify a current named temple programme, local date, access conditions, fees and heat arrangements before travel. A calendar card is not a temple schedule.",
+              "why": "Institutional details change.",
+              "source_ids": [
+                "drik-nirjala-2027",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Attend only if travel and heat exposure are safe; carry and use normal medically appropriate water, food and medicine. Leave at any time.",
+              "why": "Temple participation does not suspend care or consent.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Observe only the verified public programme. Do not copy its fast, vigil, mantra, gifts, feeding or parana into household instructions.",
+              "why": "Institutional liturgy has its own authority.",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Return safely and close with normal hydration, food, medicine and rest; claim no guaranteed result.",
+              "why": "The safe exit is part of the ritual boundary.",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal water, food, medicine and rest. No fast, vigil, gift or parana begins here.",
+            "source_ids": [
+              "ncdc-heat-community-manual",
+              "devam-nirjala-research"
+            ],
+            "scope_note": "Qualified medical and institutional authority remains separate."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-object-and-household-form",
+          "scope": "ordinary household",
+          "difference": "Language, image/no-image, existing bottle/no object, prayer/silence and individual/family expression are minor and stay in this lane.",
+          "source_ids": [
+            "devam-nirjala-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "source-defined-waterless-fast-en",
+          "scope": "inherited formal vow",
+          "difference": "Waterless fasting, vigil, food rules and parana require separate inherited, local and clinical authority.",
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-en",
+          "scope": "material timing authority",
+          "difference": "A different civil date or parana is a separate authority lane.",
+          "source_ids": [
+            "drik-nirjala-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-en",
+          "scope": "institution",
+          "difference": "Current schedule, access, rite, fee and offering rules require live institutional verification.",
+          "source_ids": [
+            "devam-nirjala-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-medical-or-heat-support-en",
+          "scope": "professional care",
+          "difference": "Heat illness, dehydration, diabetes, pregnancy, lactation, kidney/heart disease, eating disorder, medicine and emergency care are professional routes.",
+          "source_ids": [
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-observance-en",
+          "scope": "observance identity",
+          "difference": "Gayatri Jayanti, Yogini Ekadashi and other observances keep separate stories and procedures even on the same date.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-nirjala-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A complete ordinary form is non-fasting, fed, hydrated, rested, no-touch, no-flame, no-purchase, no-donation, image-free, writing-free and material-free.",
+        "Never withhold water, food, breastmilk or infant feeding, prescribed medicine, insulin, ORS or medically needed intake; do not change a clinician-directed fluid restriction.",
+        "Do not begin, intensify, supervise or promote a waterless fast, and do not demand fasting proof or monitor another person's intake, urine, weight or medicine.",
+        "Children, older adults, pregnant or breastfeeding people, outdoor workers and people with illness must not be pressured; this is not an eligibility checklist.",
+        "Dizziness, headache, nausea, vomiting, marked weakness, confusion, fainting or seizure are not spiritual tests; use current medical or emergency guidance.",
+        "Bhima's strength, appetite and family do not create a devotion, masculinity, willpower or merit test.",
+        "Do not use caste slurs, hell threats, promised sons, ancestor fear, family pressure or temple pressure.",
+        "Pandava Dwadashi is source context here, not a duplicated observance lane or household procedure.",
+        "No yearly-Ekadashi equivalence, health, fertility, sons, wealth, grain, salvation, heaven, purity or family rescue is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "nirjala-ekadashi"
+      ],
+      "title": "निर्जला एकादशी: शरीर की सीमा और जल-सुरक्षा का सम्मान",
+      "short_answer": "अपने शहर और मान्य सामान्य स्मार्त पंचांग से निर्जला एकादशी की पुष्टि करें, फिर पूर्ण गैर-उपवास रूप अपनाएँ: सामान्य भोजन और जल लें, दवा व शिशु-आहार न बदलें, विष्णु-स्मरण करें, भीम की ईमानदार सीमा और व्यास के स्रोत-निर्धारित निर्जल नियम को नामित कथा की तरह सुनें, उपयोगी हो तो सहमति वाला जल या गर्मी-सुरक्षा काम करें, और उपवास-प्रमाण या फल के दावे बिना समापन करें। इस मार्ग से निर्जल उपवास न करें।",
+      "significance": {
+        "text": "पद्मपुराण अध्याय 51 में भीम अपने उपवास करने वाले परिवार के दबाव के बीच कहते हैं कि वे भूख नहीं सह सकते और व्यास से एक ही साध्य व्रत पूछते हैं। व्यास कठोर निर्जल उपवास बताते हैं और अध्याय उसे सभी एकादशियों का फल देता है। देवम कथा सुरक्षित रखता है, पर निर्जल नियम, धमकी, जातिसूचक भाषा और फल को स्रोत-वचन मानता है। सीमित गृह-अर्थ है शरीर की सीमा का सम्मान और बिना तुलना सुरक्षित जल-देखभाल।",
+        "source_ids": [
+          "padma-purana-nirjala-deshpande",
+          "ncdc-heat-community-manual",
+          "devam-nirjala-research"
+        ],
+        "scope_note": "स्रोत-नामित भक्ति-चिंतन; उपवास, चिकित्सा, गर्मी-आपात, प्रजनन या निश्चित फल की सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "nirjala-bhima-vyasa-hi",
+          "title": "भीम अपनी सीमा बताते हैं और व्यास से पूछते हैं",
+          "summary": "युधिष्ठिर ज्येष्ठ शुक्ल एकादशी के बारे में कृष्ण से पूछते हैं और कृष्ण उन्हें व्यास के पास भेजते हैं। भीम कहते हैं कि युधिष्ठिर, कुंती, द्रौपदी, अर्जुन, नकुल और सहदेव उपवास करते और उनसे भी कहते हैं, पर वृक नामक जठराग्नि के कारण वे भूख नहीं सह सकते। वे एक साध्य व्रत पूछते हैं। व्यास सूर्योदय से अगले सूर्योदय तक भोजन और जल के बिना नियम तथा द्वादशी के कर्म बताते हैं। अध्याय सभी वार्षिक एकादशियों का फल, स्वास्थ्य, धन, पुत्र, परिवार-उद्धार और विष्णुलोक का वादा करता तथा नरक-धमकी और जातिसूचक भाषा देता है। ये स्रोत की घटनाएँ और दावे हैं, देवम के सार्वभौम निर्देश या गारंटी नहीं। स्रोत अगली द्वादशी को पांडव द्वादशी कहता है।",
+          "tradition_scope": "पद्मपुराण उत्तरखंड अध्याय 51 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति",
+          "source_ids": [
+            "padma-purana-nirjala-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "nirjala-hi-safe-remembrance",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त गृह या व्यक्ति",
+          "description": "भोजन और जल सहित विष्णु-स्मरण, सीमित भीम-व्यास कथा, वैकल्पिक सहमति वाला जल-कार्य और सामान्य समापन।",
+          "source_ids": [
+            "ncdc-heat-community-manual",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "nirjala-hi-formal-waterless-context",
+          "population_scope": "अलग परंपरागत और चिकित्सकीय रूप से समीक्षित अधिकार वाले परिवार या संस्था",
+          "description": "स्रोत निर्जल उपवास, जागरण, दान और द्वादशी-समापन बताता है; यह सामान्य मार्ग उन्हें पुनर्निर्मित या निर्धारित नहीं करता।",
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "icmr-type1-diabetes-fasting",
+            "devam-nirjala-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "nirjala-hi-minimum-v1",
+          "label": "निजी जलयुक्त स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य निजी/पारिवारिक मार्ग; निर्जल उपवास का अधिकार नहीं",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "drik-nirjala-2027",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा पेयजल या बोतल",
+              "required": false,
+              "substitutions": [
+                "बिना वस्तु; सामान्य देखभाल रखें",
+                "चिकित्सक की द्रव-योजना मानें"
+              ],
+              "source_ids": [
+                "devam-nirjala-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने शहर और मान्य सामान्य स्मार्त पंचांग से पुष्टि करें कि आज निर्जला एकादशी है। वर्तमान गर्मी की स्थिति देखें; पारण का समय नकल न करें।",
+              "why": "तिथि और गर्मी-सुरक्षा स्थान के अनुसार बदलती है।",
+              "source_ids": [
+                "drik-nirjala-2027",
+                "devam-ekadashi-rule-audit",
+                "ncdc-heat-community-manual"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन और जल लें, लिखी हुई दवा व इंसुलिन लें, शिशु को सामान्य आहार दें, आराम और नींद रखें। निर्जल उपवास शुरू, कठोर या सिद्ध न करें।",
+              "why": "भोजन और जल वाला गैर-उपवास मार्ग पूर्ण है।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का स्मरण परिचित नाम, पारिवारिक प्रार्थना या मौन से करें। चित्र, मंत्र, चढ़ावा या खरीद आवश्यक नहीं।",
+              "why": "बिना सार्वभौम मंत्र गढ़े भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "भीम-व्यास की सीमित कथा सुनें: भीम कहते हैं कि वे भूख नहीं सह सकते; व्यास कठोर निर्जल नियम बताते हैं। नियम, धमकी, जातिसूचक भाषा, दान और फल को स्रोत-वचन कहें, इस मार्ग का निर्देश नहीं।",
+              "why": "कथा दबाव या सार्वभौमीकरण के बिना सुरक्षित रहती है।",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अपनी क्षमता में सहमति वाला एक जल या गर्मी-सुरक्षा काम चुनें, जैसे अपनी मौजूदा बोतल भरना या सामान्य पेयजल सुलभ रखना। सामान्य देखभाल से अधिक कुछ जरूरी नहीं।",
+              "why": "देखभाल व्यावहारिक और स्वैच्छिक रहे।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "किसी और के जल, भोजन, दवा, मूत्र, वजन या उपवास पर निगरानी न रखें। पुण्य की तुलना न करें और भीम की शक्ति, भूख या परिवार से दबाव न डालें।",
+              "why": "शारीरिक निजता और सहमति सुरक्षा का भाग हैं।",
+              "source_ids": [
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता से समाप्त करें और सामान्य भोजन, जल, दवा व आराम जारी रखें। सभी एकादशियों के समान फल, स्वास्थ्य, पुत्र, धन, परिवार-मुक्ति या स्वर्ग का दावा न करें।",
+              "why": "स्रोत के फल निश्चित गारंटी नहीं हैं।",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य जल, भोजन, दवा और आराम से समापन करें। यहाँ उपवास, जागरण, दान या पारण शुरू नहीं होता।",
+            "source_ids": [
+              "ncdc-heat-community-manual",
+              "devam-nirjala-research"
+            ],
+            "scope_note": "योग्य चिकित्सा और संस्थागत अधिकार अलग रहते हैं।"
+          }
+        },
+        {
+          "procedure_id": "nirjala-hi-standard-v1",
+          "label": "सहमति वाला पारिवारिक जल-ध्यान",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य निजी/पारिवारिक मार्ग; निर्जल उपवास का अधिकार नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "drik-nirjala-2027",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक वर्तमान सरकारी गर्मी-सलाह",
+              "required": false,
+              "substitutions": [
+                "बिना स्क्रीन या कागज",
+                "मौखिक सुरक्षा-जाँच"
+              ],
+              "source_ids": [
+                "ncdc-heat-community-manual"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा गृह-जल व्यवस्था",
+              "required": false,
+              "substitutions": [
+                "कोई बदलाव नहीं",
+                "हर व्यक्ति अपनी सामान्य देखभाल रखे"
+              ],
+              "source_ids": [
+                "devam-nirjala-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "निर्जला की स्थानीय तिथि और वर्तमान गर्मी-सलाह जाँचें; केवल इच्छुक लोगों को बुलाएँ। कोई भी छोटा निजी रूप चुन सकता है या जा सकता है।",
+              "why": "पंचांग-अधिकार और सहमति पहले आते हैं।",
+              "source_ids": [
+                "drik-nirjala-2027",
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, जल, दवा, शिशु-आहार, स्वच्छता और नींद बिना टिप्पणी या निगरानी उपलब्ध रखें।",
+              "why": "परिवार का अभ्यास देखभाल नहीं रोक सकता।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित विष्णु-स्मरण के बाद भीम-व्यास कथा बिना नरक-धमकी और जातिसूचक शब्दों के कहें। स्पष्ट करें कि भीम की सीमा सम्मान योग्य है और स्रोत का निर्जल व्रत यहाँ नहीं बताया जा रहा।",
+              "why": "कथा और गरिमा दोनों सुरक्षित रहते हैं।",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-ekadashi-recurring-scaffold",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सहमति से मौजूदा जल या ठंडक व्यवस्था आसान करें; चिकित्सक ने द्रव सीमित किया हो तो वही व्यक्तिगत योजना मानें।",
+              "why": "सामान्य सलाह व्यक्तिगत उपचार नहीं बदलती।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "दान, उपवास-प्रमाण, जागरण या पारण के बिना समापन करें। सामान्य देखभाल जारी रखें और गर्मी के लक्षण या चिकित्सा-संदेह में योग्य सहायता लें।",
+              "why": "अनुष्ठान उपचार नहीं, वैकल्पिक साथ है।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य जल, भोजन, दवा और आराम से समापन करें। यहाँ उपवास, जागरण, दान या पारण शुरू नहीं होता।",
+            "source_ids": [
+              "ncdc-heat-community-manual",
+              "devam-nirjala-research"
+            ],
+            "scope_note": "योग्य चिकित्सा और संस्थागत अधिकार अलग रहते हैं।"
+          }
+        },
+        {
+          "procedure_id": "nirjala-hi-elaborate-v1",
+          "label": "वर्तमान नामित मंदिर-भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य निजी/पारिवारिक मार्ग; निर्जल उपवास का अधिकार नहीं",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "drik-nirjala-2027",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-nirjala-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित वर्तमान मंदिर कार्यक्रम और सुरक्षित यात्रा योजना",
+              "required": false,
+              "substitutions": [
+                "न जाएँ",
+                "पूर्ण गृह-रूप अपनाएँ"
+              ],
+              "source_ids": [
+                "devam-nirjala-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "यात्रा से पहले वर्तमान नामित मंदिर कार्यक्रम, स्थानीय तिथि, प्रवेश, शुल्क और गर्मी-व्यवस्था जाँचें। पंचांग-कार्ड मंदिर का कार्यक्रम नहीं।",
+              "why": "संस्थागत विवरण बदलते हैं।",
+              "source_ids": [
+                "drik-nirjala-2027",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "यात्रा और गर्मी सुरक्षित हों तभी जाएँ; चिकित्सकीय रूप से उचित सामान्य जल, भोजन और दवा रखें व लें। कभी भी लौट सकते हैं।",
+              "why": "मंदिर-भागीदारी देखभाल या सहमति स्थगित नहीं करती।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल सत्यापित सार्वजनिक कार्यक्रम देखें। उसके उपवास, जागरण, मंत्र, दान, भोजन या पारण को घर का निर्देश न बनाएँ।",
+              "why": "संस्थागत विधि का अलग अधिकार है।",
+              "source_ids": [
+                "padma-purana-nirjala-deshpande",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सुरक्षित लौटें और सामान्य जल, भोजन, दवा व आराम से समापन करें; किसी निश्चित फल का दावा न करें।",
+              "why": "सुरक्षित वापसी सीमा का भाग है।",
+              "source_ids": [
+                "ncdc-heat-community-manual",
+                "devam-nirjala-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य जल, भोजन, दवा और आराम से समापन करें। यहाँ उपवास, जागरण, दान या पारण शुरू नहीं होता।",
+            "source_ids": [
+              "ncdc-heat-community-manual",
+              "devam-nirjala-research"
+            ],
+            "scope_note": "योग्य चिकित्सा और संस्थागत अधिकार अलग रहते हैं।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-object-and-household-form-hi",
+          "scope": "सामान्य गृह-अभ्यास",
+          "difference": "भाषा, चित्र/बिना चित्र, मौजूदा बोतल/बिना वस्तु, प्रार्थना/मौन और निजी/पारिवारिक रूप छोटे अंतर हैं और इसी मार्ग में रहते हैं।",
+          "source_ids": [
+            "devam-nirjala-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "source-defined-waterless-fast-hi",
+          "scope": "परंपरागत औपचारिक व्रत",
+          "difference": "निर्जल उपवास, जागरण, आहार और पारण के लिए अलग परंपरागत, स्थानीय और चिकित्सकीय अधिकार चाहिए।",
+          "source_ids": [
+            "padma-purana-nirjala-deshpande",
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-hi",
+          "scope": "मुख्य तिथि-अधिकार",
+          "difference": "अलग नागरिक तिथि या पारण अलग अधिकार-मार्ग है।",
+          "source_ids": [
+            "drik-nirjala-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-hi",
+          "scope": "संस्था",
+          "difference": "वर्तमान कार्यक्रम, प्रवेश, विधि, शुल्क और चढ़ावे की जीवित संस्थागत पुष्टि चाहिए।",
+          "source_ids": [
+            "devam-nirjala-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-medical-or-heat-support-hi",
+          "scope": "पेशेवर देखभाल",
+          "difference": "गर्मी की बीमारी, निर्जलीकरण, मधुमेह, गर्भावस्था, स्तनपान, गुर्दा/हृदय रोग, आहार-विकार, दवा और आपात देखभाल अलग पेशेवर मार्ग हैं।",
+          "source_ids": [
+            "ncdc-heat-community-manual",
+            "icmr-type1-diabetes-fasting"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-observance-hi",
+          "scope": "पर्व-पहचान",
+          "difference": "गायत्री जयंती, योगिनी एकादशी और अन्य पर्व एक ही तिथि पर भी अलग कथा और विधि रखते हैं।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-nirjala-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन और जल सहित, विश्रामपूर्ण, बिना स्पर्श, बिना अग्नि, बिना खरीद, बिना दान, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "जल, भोजन, स्तनदूध या शिशु-आहार, लिखी दवा, इंसुलिन, ओआरएस या चिकित्सकीय आवश्यकता कभी न रोकें; चिकित्सक की द्रव-सीमा स्वयं न बदलें।",
+        "निर्जल उपवास शुरू, कठोर, संचालित या प्रचारित न करें; उपवास का प्रमाण न माँगें और किसी के सेवन, मूत्र, वजन या दवा पर निगरानी न रखें।",
+        "बच्चे, वृद्ध, गर्भवती या स्तनपान कराने वाले, बाहर काम करने वाले और बीमार व्यक्ति दबाव से मुक्त रहें; यह पात्रता-सूची नहीं।",
+        "चक्कर, सिरदर्द, मितली, उल्टी, बहुत कमजोरी, भ्रम, बेहोशी या दौरा आध्यात्मिक परीक्षा नहीं; वर्तमान चिकित्सा या आपात मार्ग लें।",
+        "भीम की शक्ति, भूख और परिवार भक्ति, पुरुषत्व, इच्छाशक्ति या पुण्य की परीक्षा नहीं बनते।",
+        "जातिसूचक शब्द, नरक-धमकी, पुत्र का वादा, पूर्वजों का भय, परिवार या मंदिर का दबाव न दें।",
+        "पांडव द्वादशी यहाँ स्रोत-संदर्भ है, अलग दोहराया पर्व या गृह-विधि नहीं।",
+        "सभी एकादशियों के समान फल, स्वास्थ्य, प्रजनन, पुत्र, धन, अन्न, मुक्ति, स्वर्ग, शुद्धि या परिवार-उद्धार की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
