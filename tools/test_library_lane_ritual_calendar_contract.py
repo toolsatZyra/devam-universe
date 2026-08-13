@@ -20,6 +20,9 @@ BASANT_PACK = (
 BASANT_OWNER_LINK = (
     LANE / "cross-links" / "basant-panchami-saraswati-owner-link-v1.json"
 )
+HOLIKA_PACK = (
+    LANE / "packs" / "holika-dahan-north-india-household-participant-2027-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -726,13 +729,14 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 3
-    assert progress["remaining_authoring_items"] == 205
+    assert progress["completed_after_freeze"] == 4
+    assert progress["remaining_authoring_items"] == 204
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
         "thai-pongal-tamil-household-participant-2027-v1",
         "basant-panchami-north-and-east-household-participant-2027-v1",
+        "holika-dahan-north-india-household-participant-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -965,3 +969,121 @@ def test_basant_major_difference_and_adversarial_safety_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "बसंत पंचमी".encode("utf-8") in raw
     assert BASANT_PACK.stat().st_size < 100_000
+
+
+def test_holika_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(HOLIKA_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["observance_slugs"] == ["holika-dahan"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 9
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_holika_is_bilingual_actionable_and_keeps_story_sources_separate():
+    pack = load(HOLIKA_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 3
+        assert all(
+            not story["universal_origin_claimed"]
+            for story in entry["origin_narratives"]
+        )
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    english_stories = " ".join(
+        story["summary"] for story in localized["en"]["origin_narratives"]
+    ).lower()
+    assert "does not contain holika's fire episode" in english_stories
+    assert "living festival story" in english_stories
+
+
+def test_holika_major_difference_timing_and_adversarial_safety_boundaries():
+    pack = load(HOLIKA_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "21 March" in calendar["freshness_note"]
+    assert "Banaras" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {
+            variant["variant_id"].removesuffix("-hi"): variant
+            for variant in entry["variants"]
+        }
+        for variant_id in (
+            "fire-free-home-versus-public-attendance",
+            "family-material-or-prayer-choice",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "banaras-after-midnight-timing",
+            "priest-or-organiser-fire-rite",
+            "holi-dhulandi-colour-day",
+            "dol-hola-lathmar",
+            "other-regional-fire-tradition",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "roof or balcony",
+        "plastic",
+        "children",
+        "blocked",
+        "aqi",
+        "asthma",
+        "breathlessness",
+        "throw offerings",
+        "does not guarantee",
+        "does not contain",
+        "local/live",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "छत, बालकनी",
+        "प्लास्टिक",
+        "बच्चों",
+        "बंद",
+        "aqi",
+        "अस्थमा",
+        "सांस फूलना",
+        "सामग्री न फेंकें",
+        "गारंटी नहीं",
+        "घटना नहीं है",
+        "स्थानीय/जीवित",
+    ):
+        assert term in localized["hi"]
+
+    raw = HOLIKA_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "होलिका दहन".encode("utf-8") in raw
+    assert HOLIKA_PACK.stat().st_size < 100_000

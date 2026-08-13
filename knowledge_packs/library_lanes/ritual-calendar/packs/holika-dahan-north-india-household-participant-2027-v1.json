@@ -1,0 +1,468 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "holika-dahan-north-india-household-participant-2027-v1",
+  "observance_slugs": ["holika-dahan"],
+  "applicability": {
+    "region_codes": ["IN-DL", "north-india"],
+    "tradition_codes": ["north-india-holika-dahan-household", "ordinary-community-participant"],
+    "institution_codes": [],
+    "settings": ["household", "individual", "family_led", "temple", "community"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and accepted family or temple Panchang should resolve Purnima, Pradosh and Bhadra?",
+      "Does your family, temple or community follow a materially different timing convention, including an after-midnight Banaras convention?",
+      "Do you want a fire-free home remembrance or ordinary participation at an organiser-controlled public fire?",
+      "Could smoke, poor AQI, respiratory or heart illness, pregnancy, young children, older age, flame, crowds, blocked exits or temporary wiring make attendance unsafe?"
+    ],
+    "context_pairs": [
+      {"region_code": "IN-DL", "tradition_code": "north-india-holika-dahan-household", "observance_slug": "holika-dahan"},
+      {"region_code": "north-india", "tradition_code": "ordinary-community-participant", "observance_slug": "holika-dahan"}
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "holika-dahan",
+        "language_code": "en",
+        "note": "This Delhi-reference North India lane covers fire-free household remembrance and ordinary attendance at an organiser-controlled fire. It does not teach bonfire operation or priest-led puja, and next-day Holi/Dhulandi is separate."
+      },
+      {
+        "observance_slug": "holika-dahan",
+        "language_code": "hi",
+        "note": "यह दिल्ली-संदर्भित उत्तर भारत मार्ग अग्नि-रहित गृह-स्मरण और आयोजक-नियंत्रित सार्वजनिक अग्नि में सामान्य सहभागिता के लिए है। यह होलिका बनाना/जलाना या पुरोहितीय पूजा नहीं सिखाता; अगले दिन की होली/धुलंडी अलग है।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-delhi-holika-dahan-2027"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "holika-dahan-purnima-pradosh-bhadra-local-v1",
+    "closing_decision_rule_id": "fire-free-home-close-or-organiser-declared-public-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Delhi 2027 fixture: Sunday 21 March; cited Pradosh interval after Bhadra 18:33-20:55; Purnima 18:21 on 21 March to 16:13 on 22 March. The cited Banaras convention instead gives 05:14-06:23 on 22 March. Recompute by location and accepted Panchang, and verify the organiser's live time."
+  },
+  "sources": [
+    {
+      "source_id": "drik-delhi-holika-dahan-2027",
+      "title": "2027 Holika Dahan timings for Delhi",
+      "publisher": "DrikPanchang",
+      "source_role": "bounded Delhi practitioner-calendar fixture, Purnima/Pradosh/Bhadra rule and documented Banaras timing alternative",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/holi/festivals-holika-dahan-timings.html?geoname-id=1273294&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-03-21", "delhi_interval": "18:33/20:55", "purnima": "2027-03-21T18:21/2027-03-22T16:13", "banaras_interval": "2027-03-22T05:14/06:23"}
+    },
+    {
+      "source_id": "drik-holika-dahan-description",
+      "title": "Holika Dahan",
+      "publisher": "DrikPanchang",
+      "source_role": "practitioner description of Chhoti Holi, public bonfire, Prahlada/Holika living account and grain-roasting custom; not sole instruction authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/hindu-festivals/holi/holika-dahan.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"checked": "2026-08-13"}
+    },
+    {
+      "source_id": "incredible-india-holi",
+      "title": "Holi: Celebrate the festival of colours",
+      "publisher": "Incredible India, Ministry of Tourism, Government of India",
+      "source_role": "current official living-festival account for symbolic bonfire, family gathering, stories, prayer, Holika/Prahlada legend and good-over-evil interpretation",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/holi",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "A celebration of tradition", "web_lines": "701-705"}
+    },
+    {
+      "source_id": "vishnu-purana-wilson-1-17",
+      "title": "Vishnu Purana, Book I, Chapter XVII, H. H. Wilson translation",
+      "publisher": "Public-domain text hosted by Internet Sacred Text Archive",
+      "source_role": "fixed public-domain narrative evidence for Prahlada's devotion, persecution, attempted killings and deliverance; the selected chapter does not narrate Holika's fire episode",
+      "rights_lane": "product_cleared",
+      "url": "https://archive.sacred-texts.com/hin/vp/vp052.htm",
+      "artifact_sha256": null,
+      "citation_coordinates": {"book": 1, "chapter": 17, "translation": "H. H. Wilson"}
+    },
+    {
+      "source_id": "up-police-fire-services",
+      "title": "Fire Services: fire precautions and escape plan",
+      "publisher": "Uttar Pradesh Police",
+      "source_role": "official fire-safety evidence for children, open fire, matches, loose clothing, clear escape routes and leaving before calling for help",
+      "rights_lane": "citation_only",
+      "url": "https://uppolice.gov.in/article/en/fire-services",
+      "artifact_sha256": null,
+      "citation_coordinates": {"sections": ["Fire Precautions for Children", "Escape Plan", "Home Safety"], "web_lines": "1466-1479,1558-1565"}
+    },
+    {
+      "source_id": "delhi-fire-temporary-structures",
+      "title": "Fire safety for temporary structures and pandals",
+      "publisher": "Delhi Fire Service",
+      "source_role": "official organiser safety for exits, electrical clearance, extinguishers, combustible storage and segregated cooking",
+      "rights_lane": "citation_only",
+      "url": "https://dfs.delhi.gov.in/dfs/temporary-structures",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Instruction for Fire Safety in Respect of Temporary Structures/Pandals"}
+    },
+    {
+      "source_id": "ncdc-air-pollution-public-advisory-2021",
+      "title": "Public Health Advisory on Air Pollution and Health, revised 2021",
+      "publisher": "National Centre for Disease Control, Ministry of Health and Family Welfare",
+      "source_role": "official health evidence for AQI-linked action and higher-risk groups including young children, older adults, pregnant people and respiratory/cardiovascular illness",
+      "rights_lane": "citation_only",
+      "url": "https://ncdc.mohfw.gov.in/wp-content/uploads/2024/05/2-Public-Health-Advisory-on-Air-Pollution-and-Health-2021-Revised.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"pages": [1, 2], "web_lines": "56-108"}
+    },
+    {
+      "source_id": "ncdc-air-pollution-health-advisory-2022",
+      "title": "Health Advisory on Air Pollution under NPCCHH, September 2022",
+      "publisher": "National Centre for Disease Control, Ministry of Health and Family Welfare",
+      "source_role": "official advice to avoid open wood/leaves/residue/waste burning, check AQI, reduce exposure and seek care for respiratory symptoms",
+      "rights_lane": "citation_only",
+      "url": "https://ncdc.mohfw.gov.in/wp-content/uploads/2024/05/3-Health-Advisory-on-Air-Pollution-under-NPCCHH-September-2022.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"pages": [14, 15, 16, 17], "web_lines": "464-489,506-555"}
+    },
+    {
+      "source_id": "delhi-environment-ambient-air",
+      "title": "Ambient Air Quality",
+      "publisher": "Department of Environment, Government of NCT of Delhi",
+      "source_role": "current local-policy evidence that biomass, plastic and garbage burning are air-pollution concerns; local restrictions remain live facts",
+      "rights_lane": "citation_only",
+      "url": "https://environment.delhi.gov.in/environment/ambient-air-quality",
+      "artifact_sha256": null,
+      "citation_coordinates": {"checked": "2026-08-13"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["holika-dahan"],
+      "title": "Holika Dahan: North India fire-free home and public-participant guide",
+      "short_answer": "For Delhi in 2027, the cited date is Sunday 21 March and interval 18:33-20:55; recalculate elsewhere and follow your accepted Panchang. At home, do not build a fire: read the source-labelled Prahlada and living Holika accounts, pray or sit quietly, choose one harmful habit or conflict to repair, and close with a concrete action. At a public event, confirm the organiser and time, check AQI, remain behind the safety boundary, supervise children, add nothing to the fire, and leave if smoke, crowding, wiring or exits are unsafe.",
+      "significance": {
+        "text": "Holika Dahan, also called Chhoti Holi in living practice, is observed on the eve of colour-day Holi. Current public accounts interpret the bonfire through Prahlada's survival, Holika's defeat and good overcoming evil. Devam offers remembrance and safe participation without claiming one national puja, guaranteed purification, or authority to light a fire.",
+        "source_ids": ["incredible-india-holi", "drik-holika-dahan-description"],
+        "scope_note": "North India household remembrance and ordinary public participation only; colour-day Holi and materially different regional observances are separate."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "prahlada-steadfast-under-persecution",
+          "title": "Prahlada remains steadfast",
+          "summary": "In the selected Vishnu Purana chapter, Hiranyakashipu is enraged by his son Prahlada's devotion to Vishnu. Teachers and repeated threats do not change the child; attempts are made to kill him, yet he survives and continues teaching devotion. This fixed-source account supports courage under coercion and deliverance, but this chapter does not contain Holika's fire episode.",
+          "tradition_scope": "Vishnu Purana, Book I, chapter XVII, H. H. Wilson public-domain translation",
+          "source_ids": ["vishnu-purana-wilson-1-17"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "living-holika-fire-account",
+          "title": "The familiar Holika fire account",
+          "summary": "Incredible India's current festival account says Hiranyakashipu sought Prahlada's death with Holika's help; Holika burned in the fire while Prahlada survived. Devam presents this as a familiar living festival story, not as content found in the selected Vishnu Purana chapter and not as the only origin account.",
+          "tradition_scope": "Contemporary Government of India festival account",
+          "source_ids": ["incredible-india-holi"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "symbolic-leaving-harm",
+          "title": "A symbolic turn away from harm",
+          "summary": "Current festival descriptions treat the public fire as a symbol of good overcoming evil and negativity being left behind. A household can express that meaning without flame by naming one harmful habit or unresolved conflict and taking a safe, concrete repair action; no spiritual result is guaranteed.",
+          "tradition_scope": "Contemporary living interpretation adapted into a non-ritual fire-free reflection",
+          "source_ids": ["incredible-india-holi", "ncdc-air-pollution-health-advisory-2022"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "community-symbolic-bonfire",
+          "population_scope": "Many North Indian neighbourhood, temple and community contexts",
+          "description": "A responsible organiser lights a symbolic bonfire; families may gather, hear stories and pray. Fire design, fuel, offerings, distance and closing are organiser decisions governed by local safety and environmental rules.",
+          "source_ids": ["incredible-india-holi", "drik-holika-dahan-description", "delhi-fire-temporary-structures"],
+          "instructional": false
+        },
+        {
+          "practice_id": "prahlada-holika-story-and-prayer",
+          "population_scope": "Families and public gatherings using the Prahlada-Holika living account",
+          "description": "Stories and prayers around the event may focus on Prahlada's steadfastness and the symbolic defeat of harm. Exact words and theology belong to the family, temple or organiser.",
+          "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"],
+          "instructional": false
+        },
+        {
+          "practice_id": "local-grain-custom",
+          "population_scope": "Some North Indian local and family contexts",
+          "description": "Some descriptions mention roasting green cereals or adding dry natural material. This is descriptive, not permission for a participant to approach or throw anything into a public fire; follow the organiser or omit it.",
+          "source_ids": ["drik-holika-dahan-description", "incredible-india-holi"],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "holika-dahan-en-minimum-v1",
+          "label": "10-minute fire-free remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Accessible Devam reflection; not formal Holika puja, fasting, mantra, homa or a substitute for family authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "One source-labelled account from this pack", "required": true, "substitutions": ["Trusted audio reading", "A quiet summary read by a family member"], "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"]},
+            {"item": "Paper or a private note for one repair action", "required": false, "substitutions": ["Remember the action mentally", "Tell a trusted family member"], "source_ids": ["incredible-india-holi"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the day for your city and accepted Panchang. Use 21 March 2027 and 18:33-20:55 only for the Delhi fixture.", "why": "Purnima, Pradosh and Bhadra make the result location- and convention-dependent.", "source_ids": ["drik-delhi-holika-dahan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose a clean, ventilated place away from flame; no bonfire, incense or diya is needed.", "why": "The meaning can be remembered without adding household fire or smoke exposure.", "source_ids": ["ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 3, "instruction": "Read the Prahlada account and the separately labelled living Holika account; do not merge their source labels.", "why": "The fixed Purana chapter and contemporary festival legend support different claims.", "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"], "optional": false},
+            {"ordinal": 4, "instruction": "Offer a family-known prayer, your own words, or one minute of silence for courage and freedom from harm.", "why": "Current accounts document prayer, while exact words remain personal or family-governed.", "source_ids": ["incredible-india-holi"], "optional": false},
+            {"ordinal": 5, "instruction": "Name one harmful habit or conflict you can address without blaming or confronting anyone unsafely, and choose one concrete repair step.", "why": "This makes the living symbolism actionable without claiming ritual erasure of wrongdoing.", "source_ids": ["incredible-india-holi"], "optional": false}
+          ],
+          "closing": {"text": "Close with thanks, put the note away privately, and schedule the repair step. Nothing needs to be burned or discarded.", "source_ids": ["incredible-india-holi", "ncdc-air-pollution-health-advisory-2022"], "scope_note": "A reflective close, not a promise that negativity or consequences disappear."},
+          "source_ids": ["drik-delhi-holika-dahan-2027", "vishnu-purana-wilson-1-17", "incredible-india-holi", "ncdc-air-pollution-health-advisory-2022"]
+        },
+        {
+          "procedure_id": "holika-dahan-en-standard-v1",
+          "label": "Fire-free household story, prayer and repair",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Bounded family remembrance. A family-established practice overrides it; this does not construct a universal Holika puja.",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "materials": [
+            {"item": "Source-labelled Prahlada and Holika accounts", "required": true, "substitutions": ["Read only one account while preserving its label", "Use accessible audio"], "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"]},
+            {"item": "Optional electric light", "required": false, "substitutions": ["Room lighting", "No symbolic light"], "source_ids": ["ncdc-air-pollution-health-advisory-2022"]},
+            {"item": "One safe family service or repair plan", "required": true, "substitutions": ["A private apology plan", "A household task", "A donation chosen later"], "source_ids": ["incredible-india-holi"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the locally resolved date and whether your family follows the Delhi-style evening rule or another accepted convention.", "why": "The cited Banaras convention materially changes the time.", "source_ids": ["drik-delhi-holika-dahan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Ask whether anyone prefers not to participate and whether smoke, flame or food must be avoided; keep this home form fire-free.", "why": "Participation is voluntary and the home procedure needs no smoke exposure.", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 3, "instruction": "Gather in a clean place and switch on an electric light only if useful; do not improvise a bonfire on a roof, balcony, road or inside the home.", "why": "Open burning and uncontrolled fire create avoidable air and fire risk.", "source_ids": ["up-police-fire-services", "ncdc-air-pollution-health-advisory-2022", "delhi-environment-ambient-air"], "optional": false},
+            {"ordinal": 4, "instruction": "Read Prahlada's fixed-source story first, then introduce the Holika fire episode explicitly as a current living festival account.", "why": "This preserves provenance and prevents a later account being falsely attributed to the cited Purana chapter.", "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"], "optional": false},
+            {"ordinal": 5, "instruction": "Invite a family-known prayer or silence. Do not invent a compulsory mantra, count, fast or prosperity promise.", "why": "Public evidence supports prayer, not one universal household liturgy.", "source_ids": ["incredible-india-holi"], "optional": false},
+            {"ordinal": 6, "instruction": "Each willing person may choose one safe act that reduces harm: repair a quarrel, stop a wasteful habit, help someone, or correct a mistake.", "why": "A concrete act respects the symbolic interpretation without pretending fire removes consequences.", "source_ids": ["incredible-india-holi"], "optional": true},
+            {"ordinal": 7, "instruction": "If attending a public event later, check its organiser, route, AQI and accessibility before leaving home.", "why": "Public schedules and safety conditions are live facts.", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "delhi-fire-temporary-structures"], "optional": true}
+          ],
+          "closing": {"text": "Close with thanks and commit the chosen repair action to a realistic time. Switch off the electric light and leave no ritual waste.", "source_ids": ["incredible-india-holi", "delhi-environment-ambient-air"], "scope_note": "The family may instead use its established closing."},
+          "source_ids": ["drik-delhi-holika-dahan-2027", "vishnu-purana-wilson-1-17", "incredible-india-holi", "up-police-fire-services", "ncdc-air-pollution-health-advisory-2022"]
+        },
+        {
+          "procedure_id": "holika-dahan-en-elaborate-v1",
+          "label": "Ordinary participation at an organiser-controlled Holika Dahan",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Participant-only guidance. The organiser, fire service/local authority and ritual authority retain all responsibility for siting, fuel, ignition, offerings, priest-led actions and extinguishing.",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "materials": [
+            {"item": "Verified organiser, time, route and emergency contact", "required": true, "substitutions": ["Do the fire-free home procedure instead"], "source_ids": ["drik-delhi-holika-dahan-2027", "delhi-fire-temporary-structures"]},
+            {"item": "Weather-appropriate close-fitting clothing and secure footwear", "required": true, "substitutions": ["Do not attend if safe clothing or access is unavailable"], "source_ids": ["up-police-fire-services"]},
+            {"item": "Any offering explicitly accepted by the organiser", "required": false, "substitutions": ["Attend empty-handed", "Offer prayer from behind the barrier"], "source_ids": ["incredible-india-holi"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the organiser's live start time and do not copy the Delhi fixture to another city.", "why": "Calendar resolution and event schedules are both local.", "source_ids": ["drik-delhi-holika-dahan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Check local AQI and your health risk. Young children, older adults, pregnant people and people with respiratory or cardiovascular illness should avoid exposure when conditions are poor or their clinician advises it.", "why": "Government health guidance identifies these groups as more vulnerable to air pollution.", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 3, "instruction": "On arrival, locate clear exits, the safety boundary and responsible stewards. Leave if exits are blocked, the crowd presses toward flame, temporary wiring is unsafe or children cannot be supervised.", "why": "Clear escape routes and safe temporary structures are basic fire precautions.", "source_ids": ["up-police-fire-services", "delhi-fire-temporary-structures"], "optional": false},
+            {"ordinal": 4, "instruction": "Stay behind the organiser's barrier, keep children beside a responsible adult, secure loose scarves and hair, and never carry matches, lighters, fuel, aerosols or fireworks toward the fire.", "why": "Children and loose clothing are vulnerable around open flame; ignition remains an organiser duty.", "source_ids": ["up-police-fire-services"], "optional": false},
+            {"ordinal": 5, "instruction": "Join only the public story, prayer or distant movement directed by the organiser. Do not touch the structure, step through smoke, approach embers or improvise close circumambulation.", "why": "The cited sources describe gathering and prayer but do not authorise unsafe proximity.", "source_ids": ["incredible-india-holi", "up-police-fire-services"], "optional": false},
+            {"ordinal": 6, "instruction": "Add nothing to the fire. If the event accepts a familiar offering, hand it to an authorised organiser outside the barrier; never throw plastic, rubber, painted wood, garbage, batteries, aerosols, liquid fuel or fireworks.", "why": "Participants should not create fire or air-pollution hazards.", "source_ids": ["ncdc-air-pollution-health-advisory-2022", "delhi-environment-ambient-air", "delhi-fire-temporary-structures"], "optional": false},
+            {"ordinal": 7, "instruction": "Move away promptly if smoke causes eye irritation, cough, wheeze, chest discomfort, breathlessness or dizziness; seek medical help for significant or worsening symptoms.", "why": "These are symptoms named in Government of India air-pollution guidance.", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 8, "instruction": "Leave by the clear route when the public programme closes. Do not return for embers, ash or belongings inside a hazard area.", "why": "Fire guidance prioritises getting out and not re-entering danger.", "source_ids": ["up-police-fire-services"], "optional": false}
+          ],
+          "closing": {"text": "Follow the organiser's closing announcement, account for everyone in your group, wash exposed hands/face if needed, and carry personal waste away. The organiser—not the participant—handles embers and site closure.", "source_ids": ["up-police-fire-services", "delhi-fire-temporary-structures", "delhi-environment-ambient-air"], "scope_note": "Do not collect ash unless an established family practice and organiser both permit a safe handover."},
+          "source_ids": ["drik-delhi-holika-dahan-2027", "incredible-india-holi", "up-police-fire-services", "delhi-fire-temporary-structures", "ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022", "delhi-environment-ambient-air"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "fire-free-home-versus-public-attendance", "scope": "North India household and ordinary participant", "difference": "These are two safe procedures inside one lane; attendance does not turn the user into a fire organiser.", "source_ids": ["incredible-india-holi", "up-police-fire-services"], "separate_lane_required": false},
+        {"variant_id": "family-material-or-prayer-choice", "scope": "Family practice", "difference": "Exact prayer, flower, grain, dress or absence of an image is a minor family choice and does not justify a state lane.", "source_ids": ["incredible-india-holi", "drik-holika-dahan-description"], "separate_lane_required": false},
+        {"variant_id": "banaras-after-midnight-timing", "scope": "Banaras/North Indian timing convention", "difference": "The cited convention moves the permitted interval after midnight; it is a material calendar override requiring the local accepted Panchang.", "source_ids": ["drik-delhi-holika-dahan-2027"], "separate_lane_required": true},
+        {"variant_id": "priest-or-organiser-fire-rite", "scope": "Temple, priest, committee or licensed organiser", "difference": "Bonfire construction, ignition, fuel, close ritual movement, formal offerings and extinguishing require separate ritual and safety authority.", "source_ids": ["delhi-fire-temporary-structures", "up-police-fire-services"], "separate_lane_required": true},
+        {"variant_id": "holi-dhulandi-colour-day", "scope": "Next-day colour observance", "difference": "Colour play has different consent, skin, water and crowd guidance and is a separately selected lane.", "source_ids": ["incredible-india-holi"], "separate_lane_required": true},
+        {"variant_id": "dol-hola-lathmar", "scope": "West Bengal, Punjab and Barsana-area distinct observances", "difference": "Dol Jatra/Dol Purnima, Hola Mohalla and Lathmar Holi have materially different stories, authorities or practices and are not folded into this lane.", "source_ids": ["incredible-india-holi"], "separate_lane_required": true},
+        {"variant_id": "other-regional-fire-tradition", "scope": "Distinct regional or sampradaya fire observance", "difference": "A materially different deity, story, calendar rule or ritual authority needs its own sourced applicability lane; geography alone does not.", "source_ids": ["drik-delhi-holika-dahan-2027", "drik-holika-dahan-description"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "Never build or light a bonfire inside a home, on a roof or balcony, on a road, under wires or without the responsible organiser and local permissions.",
+        "Do not bring or burn plastic, rubber, painted or treated wood, garbage, batteries, aerosols, liquid fuel or fireworks; Devam provides no fuel recipe.",
+        "Children must stay with a responsible adult and away from open fire, matches, lighters, embers and crowd pressure; secure loose clothing, scarves and hair.",
+        "Locate clear exits and leave if passages are blocked, temporary wiring is unsafe, the crowd crosses the barrier or no accountable organiser is visible.",
+        "Check local AQI. Young children, older adults, pregnant people and those with asthma, other respiratory illness or cardiovascular illness are higher-risk and may need to avoid smoke exposure.",
+        "For cough, wheeze, chest discomfort, breathlessness, dizziness or worsening symptoms, move away and seek appropriate medical care; this guide is not medical advice.",
+        "Do not touch the fire, walk through smoke, approach embers, improvise circumambulation or throw offerings. Hand an accepted item only to an authorised organiser outside the barrier.",
+        "Holika Dahan does not guarantee purification, prosperity, protection, victory or erasure of wrongdoing; concrete repair remains necessary.",
+        "The selected Vishnu Purana chapter does not contain Holika's fire episode. Keep the fixed Prahlada story and contemporary living Holika account source-labelled.",
+        "The Delhi time is a fixture, not a national time. The Banaras convention materially differs, and every public programme is a local/live fact.",
+        "Next-day Holi/Dhulandi and materially different Dol, Hola Mohalla or Lathmar observances are outside this procedure."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["holika-dahan"],
+      "title": "होलिका दहन: उत्तर भारत के लिए अग्नि-रहित गृह-स्मरण और सार्वजनिक सहभागिता मार्ग",
+      "short_answer": "दिल्ली में 2027 के लिए उद्धृत दिन रविवार 21 मार्च और समय 18:33-20:55 है; दूसरे स्थान के लिए पुनर्गणना और स्वीकृत पंचांग आवश्यक है। घर में अग्नि न बनाएं: स्रोत-चिह्नित प्रह्लाद कथा और अलग चिह्नित जीवित होलिका कथा पढ़ें, प्रार्थना या मौन करें, एक हानिकारक आदत/विवाद सुधारने का ठोस काम चुनें। सार्वजनिक आयोजन में आयोजक और समय सत्यापित करें, AQI देखें, सुरक्षा-सीमा के पीछे रहें, बच्चों को साथ रखें, अग्नि में कुछ न डालें और धुएं, भीड़, तार या निकास असुरक्षित हों तो लौट जाएं।",
+      "significance": {
+        "text": "जीवित प्रथा में छोटी होली भी कहलाने वाला होलिका दहन रंग वाली होली की पूर्वसंध्या पर होता है। वर्तमान सार्वजनिक वृत्तांत इसे प्रह्लाद की रक्षा, होलिका की पराजय और बुराई पर अच्छाई की विजय से जोड़ते हैं। Devam एक राष्ट्रीय पूजा, निश्चित शुद्धि या अग्नि जलाने का अधिकार घोषित किए बिना स्मरण और सुरक्षित सहभागिता देता है।",
+        "source_ids": ["incredible-india-holi", "drik-holika-dahan-description"],
+        "scope_note": "केवल उत्तर भारतीय गृह-स्मरण और सामान्य सार्वजनिक सहभागिता; रंग वाली होली तथा भौतिक रूप से अलग क्षेत्रीय पर्व अलग हैं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "prahlada-steadfast-under-persecution-hi",
+          "title": "प्रह्लाद अडिग रहते हैं",
+          "summary": "चुने हुए विष्णु पुराण अध्याय में हिरण्यकशिपु अपने पुत्र प्रह्लाद की विष्णु-भक्ति से क्रुद्ध होता है। शिक्षक और धमकियां बालक को नहीं बदलते; उसे मारने के अनेक प्रयास होते हैं, फिर भी वह बचता है और भक्ति की शिक्षा देता रहता है। यह स्थिर-स्रोत कथा दबाव में साहस और रक्षा को आधार देती है, पर इस अध्याय में होलिका की अग्नि वाली घटना नहीं है।",
+          "tradition_scope": "विष्णु पुराण, प्रथम अंश, अध्याय 17, एच. एच. विल्सन का सार्वजनिक-डोमेन अनुवाद",
+          "source_ids": ["vishnu-purana-wilson-1-17"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "living-holika-fire-account-hi",
+          "title": "प्रचलित होलिका-अग्नि वृत्तांत",
+          "summary": "Incredible India का वर्तमान पर्व-वृत्तांत कहता है कि हिरण्यकशिपु ने होलिका की सहायता से प्रह्लाद को मारना चाहा; होलिका अग्नि में जली और प्रह्लाद बच गया। Devam इसे प्रचलित जीवित पर्व-कथा कहता है—चुने हुए विष्णु पुराण अध्याय की सामग्री या एकमात्र उत्पत्ति-कथा नहीं।",
+          "tradition_scope": "भारत सरकार का समकालीन पर्व-वृत्तांत",
+          "source_ids": ["incredible-india-holi"],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "symbolic-leaving-harm-hi",
+          "title": "हानि से हटने का प्रतीक",
+          "summary": "वर्तमान पर्व-विवरण सार्वजनिक अग्नि को बुराई पर अच्छाई और नकारात्मकता छोड़ने का प्रतीक बताते हैं। परिवार बिना अग्नि के एक हानिकारक आदत या अनसुलझे विवाद को पहचानकर सुरक्षित, ठोस सुधार कर सकता है; किसी आध्यात्मिक फल की गारंटी नहीं है।",
+          "tradition_scope": "समकालीन जीवित अर्थ से लिया गया अग्नि-रहित चिंतन, औपचारिक कर्मकांड नहीं",
+          "source_ids": ["incredible-india-holi", "ncdc-air-pollution-health-advisory-2022"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "community-symbolic-bonfire-hi",
+          "population_scope": "उत्तर भारत के अनेक मोहल्ला, मंदिर और सामुदायिक संदर्भ",
+          "description": "उत्तरदायी आयोजक प्रतीकात्मक अग्नि जलाता है; परिवार एकत्र होकर कथा और प्रार्थना सुन सकते हैं। अग्नि की रचना, ईंधन, सामग्री, दूरी और समापन स्थानीय सुरक्षा/पर्यावरण नियमों के अधीन आयोजक के निर्णय हैं।",
+          "source_ids": ["incredible-india-holi", "drik-holika-dahan-description", "delhi-fire-temporary-structures"],
+          "instructional": false
+        },
+        {
+          "practice_id": "prahlada-holika-story-and-prayer-hi",
+          "population_scope": "प्रह्लाद-होलिका जीवित वृत्तांत मानने वाले परिवार और सार्वजनिक सभा",
+          "description": "कथा और प्रार्थना प्रह्लाद की दृढ़ता तथा हानि की प्रतीकात्मक पराजय पर केंद्रित हो सकती है। सही शब्द और धर्मार्थ परिवार, मंदिर या आयोजक के हैं।",
+          "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"],
+          "instructional": false
+        },
+        {
+          "practice_id": "local-grain-custom-hi",
+          "population_scope": "उत्तर भारत के कुछ स्थानीय और पारिवारिक संदर्भ",
+          "description": "कुछ विवरण हरे अनाज भूनने या सूखी प्राकृतिक सामग्री की बात करते हैं। यह वर्णन है, सहभागी को अग्नि के पास जाने या कुछ फेंकने की अनुमति नहीं; आयोजक का निर्देश मानें या इसे छोड़ दें।",
+          "source_ids": ["drik-holika-dahan-description", "incredible-india-holi"],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "holika-dahan-hi-minimum-v1",
+          "label": "10 मिनट का अग्नि-रहित स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "सुलभ Devam चिंतन; औपचारिक होलिका पूजा, व्रत, मंत्र, होम या पारिवारिक अधिकार का विकल्प नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {"item": "इस पैक का एक स्रोत-चिह्नित वृत्तांत", "required": true, "substitutions": ["विश्वसनीय ऑडियो पाठ", "परिवार-सदस्य द्वारा पढ़ा संक्षिप्त सार"], "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"]},
+            {"item": "एक सुधार-काम लिखने के लिए कागज या निजी नोट", "required": false, "substitutions": ["काम मन में याद रखें", "विश्वस्त परिवार-सदस्य को बताएं"], "source_ids": ["incredible-india-holi"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "अपने शहर और स्वीकृत पंचांग से दिन तय करें। 21 मार्च 2027 और 18:33-20:55 केवल दिल्ली-संदर्भ के लिए लें।", "why": "पूर्णिमा, प्रदोष और भद्रा के कारण परिणाम स्थान और परंपरा पर निर्भर है।", "source_ids": ["drik-delhi-holika-dahan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "अग्नि से दूर साफ और हवादार स्थान चुनें; अलाव, धूप या दीया आवश्यक नहीं है।", "why": "घर में अग्नि या धुआं बढ़ाए बिना अर्थ का स्मरण हो सकता है।", "source_ids": ["ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 3, "instruction": "प्रह्लाद कथा और अलग चिह्नित जीवित होलिका कथा पढ़ें; उनके स्रोत-लेबल न मिलाएं।", "why": "स्थिर पुराण अध्याय और वर्तमान पर्व-कथा अलग दावों को आधार देते हैं।", "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"], "optional": false},
+            {"ordinal": 4, "instruction": "साहस और हानि से मुक्ति के लिए परिवार-ज्ञात प्रार्थना, अपने शब्द या एक मिनट मौन रखें।", "why": "वर्तमान वृत्तांत प्रार्थना बताते हैं; निश्चित शब्द निजी या पारिवारिक हैं।", "source_ids": ["incredible-india-holi"], "optional": false},
+            {"ordinal": 5, "instruction": "बिना दोषारोपण या असुरक्षित सामना किए एक हानिकारक आदत/विवाद और उसका एक ठोस सुधार-काम चुनें।", "why": "यह गलत काम जादुई ढंग से मिटने का दावा किए बिना प्रतीक को कर्म में बदलता है।", "source_ids": ["incredible-india-holi"], "optional": false}
+          ],
+          "closing": {"text": "धन्यवाद के साथ समाप्त करें, नोट निजी रखें और सुधार-काम का समय तय करें। कुछ जलाना या फेंकना नहीं है।", "source_ids": ["incredible-india-holi", "ncdc-air-pollution-health-advisory-2022"], "scope_note": "यह चिंतनात्मक समापन है; नकारात्मकता या परिणाम मिटने की गारंटी नहीं।"},
+          "source_ids": ["drik-delhi-holika-dahan-2027", "vishnu-purana-wilson-1-17", "incredible-india-holi", "ncdc-air-pollution-health-advisory-2022"]
+        },
+        {
+          "procedure_id": "holika-dahan-hi-standard-v1",
+          "label": "अग्नि-रहित पारिवारिक कथा, प्रार्थना और सुधार",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सीमित पारिवारिक स्मरण। स्थापित पारिवारिक प्रथा इससे ऊपर है; यह सार्वभौम होलिका पूजा नहीं बनाता।",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "materials": [
+            {"item": "स्रोत-चिह्नित प्रह्लाद और होलिका वृत्तांत", "required": true, "substitutions": ["स्रोत-लेबल रखते हुए केवल एक वृत्तांत पढ़ें", "सुलभ ऑडियो लें"], "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"]},
+            {"item": "वैकल्पिक बिजली का प्रकाश", "required": false, "substitutions": ["कमरे की सामान्य रोशनी", "कोई प्रतीकात्मक प्रकाश नहीं"], "source_ids": ["ncdc-air-pollution-health-advisory-2022"]},
+            {"item": "परिवार का एक सुरक्षित सेवा या सुधार-काम", "required": true, "substitutions": ["निजी क्षमा-योजना", "घर का उपयोगी काम", "बाद में चुना दान"], "source_ids": ["incredible-india-holi"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय दिन और यह जांचें कि परिवार दिल्ली-जैसा संध्या नियम या कोई अन्य स्वीकृत परंपरा मानता है।", "why": "उद्धृत बनारस परंपरा समय को भौतिक रूप से बदलती है।", "source_ids": ["drik-delhi-holika-dahan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "पूछें कि कौन भाग नहीं लेना चाहता और किसे धुएं, अग्नि या भोजन से बचना है; गृह-रूप अग्नि-रहित रखें।", "why": "सहभागिता स्वैच्छिक है और गृह-विधि में धुएं की जरूरत नहीं।", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 3, "instruction": "साफ स्थान पर बैठें और उपयोगी हो तो बिजली की रोशनी करें; छत, बालकनी, सड़क या घर के भीतर अलाव न बनाएं।", "why": "खुले दहन और अनियंत्रित अग्नि से वायु और अग्नि जोखिम बढ़ता है।", "source_ids": ["up-police-fire-services", "ncdc-air-pollution-health-advisory-2022", "delhi-environment-ambient-air"], "optional": false},
+            {"ordinal": 4, "instruction": "पहले प्रह्लाद की स्थिर-स्रोत कथा पढ़ें, फिर होलिका-अग्नि घटना को स्पष्टतः वर्तमान जीवित पर्व-वृत्तांत कहें।", "why": "इससे बाद की कथा चुने हुए पुराण अध्याय पर गलत ढंग से नहीं चढ़ती।", "source_ids": ["vishnu-purana-wilson-1-17", "incredible-india-holi"], "optional": false},
+            {"ordinal": 5, "instruction": "परिवार-ज्ञात प्रार्थना या मौन रखें। अनिवार्य मंत्र, गिनती, व्रत या समृद्धि का वादा न गढ़ें।", "why": "सार्वजनिक साक्ष्य प्रार्थना बताता है, एक सार्वभौम गृह-विधान नहीं।", "source_ids": ["incredible-india-holi"], "optional": false},
+            {"ordinal": 6, "instruction": "इच्छुक व्यक्ति एक सुरक्षित हानि-घटाने वाला काम चुनें—विवाद सुधारना, अपव्यय रोकना, सहायता करना या गलती ठीक करना।", "why": "ठोस काम अग्नि द्वारा परिणाम मिटने का भ्रम बनाए बिना प्रतीक का सम्मान करता है।", "source_ids": ["incredible-india-holi"], "optional": true},
+            {"ordinal": 7, "instruction": "बाद में सार्वजनिक आयोजन जाना हो तो घर से निकलने से पहले आयोजक, मार्ग, AQI और पहुंच-सुविधा जांचें।", "why": "सार्वजनिक समय और सुरक्षा स्थितियां जीवित तथ्य हैं।", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "delhi-fire-temporary-structures"], "optional": true}
+          ],
+          "closing": {"text": "धन्यवाद के साथ समाप्त कर चुने सुधार-काम का वास्तविक समय तय करें। बिजली की रोशनी बंद करें और कोई पूजा-कचरा न छोड़ें।", "source_ids": ["incredible-india-holi", "delhi-environment-ambient-air"], "scope_note": "परिवार अपनी स्थापित समापन-विधि ले सकता है।"},
+          "source_ids": ["drik-delhi-holika-dahan-2027", "vishnu-purana-wilson-1-17", "incredible-india-holi", "up-police-fire-services", "ncdc-air-pollution-health-advisory-2022"]
+        },
+        {
+          "procedure_id": "holika-dahan-hi-elaborate-v1",
+          "label": "आयोजक-नियंत्रित होलिका दहन में सामान्य सहभागिता",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "केवल सहभागी मार्गदर्शन। स्थान, ईंधन, अग्नि-प्रज्वलन, सामग्री, पुरोहितीय क्रिया और बुझाने की जिम्मेदारी आयोजक, अग्निशमन/स्थानीय प्राधिकरण और अनुष्ठान-अधिकारी की है।",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "materials": [
+            {"item": "सत्यापित आयोजक, समय, मार्ग और आपात संपर्क", "required": true, "substitutions": ["इसके बदले घर की अग्नि-रहित विधि करें"], "source_ids": ["drik-delhi-holika-dahan-2027", "delhi-fire-temporary-structures"]},
+            {"item": "मौसम-अनुकूल शरीर से सटे वस्त्र और सुरक्षित जूते", "required": true, "substitutions": ["सुरक्षित वस्त्र या पहुंच न हो तो न जाएं"], "source_ids": ["up-police-fire-services"]},
+            {"item": "आयोजक द्वारा स्पष्टतः स्वीकृत सामग्री", "required": false, "substitutions": ["खाली हाथ जाएं", "सुरक्षा-सीमा के पीछे से प्रार्थना करें"], "source_ids": ["incredible-india-holi"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "आयोजक का जीवित आरंभ-समय सत्यापित करें और दिल्ली का समय दूसरे शहर में न लगाएं।", "why": "पंचांग-निर्णय और आयोजन समय दोनों स्थानीय हैं।", "source_ids": ["drik-delhi-holika-dahan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "स्थानीय AQI और अपना स्वास्थ्य-जोखिम देखें। छोटे बच्चे, वृद्ध, गर्भवती व्यक्ति तथा श्वसन या हृदय रोग वाले लोग खराब स्थिति या चिकित्सकीय सलाह में धुएं से बचें।", "why": "भारत सरकार की स्वास्थ्य सलाह इन समूहों को वायु प्रदूषण के प्रति अधिक संवेदनशील बताती है।", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 3, "instruction": "पहुंचकर साफ निकास, सुरक्षा-सीमा और जिम्मेदार स्वयंसेवक पहचानें। निकास बंद हों, भीड़ अग्नि की ओर धकेले, अस्थायी तार असुरक्षित हों या बच्चों पर नजर न रह सके तो लौट जाएं।", "why": "स्पष्ट बचाव-मार्ग और सुरक्षित अस्थायी संरचना मूल अग्नि सावधानियां हैं।", "source_ids": ["up-police-fire-services", "delhi-fire-temporary-structures"], "optional": false},
+            {"ordinal": 4, "instruction": "आयोजक की सीमा के पीछे रहें, बच्चों को जिम्मेदार वयस्क के साथ रखें, ढीले दुपट्टे और बाल बांधें, माचिस, लाइटर, ईंधन, एरोसोल या पटाखे अग्नि की ओर न ले जाएं।", "why": "बच्चे और ढीले वस्त्र खुली अग्नि में अधिक जोखिम में हैं; प्रज्वलन आयोजक का काम है।", "source_ids": ["up-police-fire-services"], "optional": false},
+            {"ordinal": 5, "instruction": "केवल आयोजक-निर्देशित सार्वजनिक कथा, प्रार्थना या दूर की गति में जुड़ें। ढांचे को न छुएं, धुएं से न गुजरें, अंगारों के पास न जाएं और पास से परिक्रमा न गढ़ें।", "why": "स्रोत सभा और प्रार्थना बताते हैं, असुरक्षित निकटता की अनुमति नहीं।", "source_ids": ["incredible-india-holi", "up-police-fire-services"], "optional": false},
+            {"ordinal": 6, "instruction": "अग्नि में कुछ न डालें। परिचित सामग्री स्वीकार हो तो सीमा के बाहर अधिकृत आयोजक को दें; प्लास्टिक, रबर, रंगा/उपचारित लकड़ी, कचरा, बैटरी, एरोसोल, तरल ईंधन या पटाखे कभी न फेंकें।", "why": "सहभागी को अग्नि या वायु-प्रदूषण जोखिम नहीं बनाना चाहिए।", "source_ids": ["ncdc-air-pollution-health-advisory-2022", "delhi-environment-ambient-air", "delhi-fire-temporary-structures"], "optional": false},
+            {"ordinal": 7, "instruction": "धुएं से आंख में जलन, खांसी, घरघराहट, सीने में असुविधा, सांस फूलना या चक्कर हो तो तुरंत दूर जाएं; गंभीर या बढ़ते लक्षण में चिकित्सा सहायता लें।", "why": "ये भारत सरकार की वायु-प्रदूषण सलाह में दिए लक्षण हैं।", "source_ids": ["ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022"], "optional": false},
+            {"ordinal": 8, "instruction": "सार्वजनिक कार्यक्रम समाप्त होने पर खुले मार्ग से निकलें। खतरे वाले क्षेत्र में अंगारे, राख या सामान लेने वापस न जाएं।", "why": "अग्नि मार्गदर्शन पहले बाहर निकलने और खतरे में पुनः प्रवेश न करने को प्राथमिकता देता है।", "source_ids": ["up-police-fire-services"], "optional": false}
+          ],
+          "closing": {"text": "आयोजक की समापन घोषणा मानें, अपने समूह के सभी लोगों को गिनें, जरूरत हो तो खुले हाथ/चेहरा धोएं और निजी कचरा साथ ले जाएं। अंगारे और स्थल-समापन आयोजक का काम है।", "source_ids": ["up-police-fire-services", "delhi-fire-temporary-structures", "delhi-environment-ambient-air"], "scope_note": "राख तभी लें जब स्थापित पारिवारिक प्रथा और आयोजक दोनों सुरक्षित हस्तांतरण की अनुमति दें।"},
+          "source_ids": ["drik-delhi-holika-dahan-2027", "incredible-india-holi", "up-police-fire-services", "delhi-fire-temporary-structures", "ncdc-air-pollution-public-advisory-2021", "ncdc-air-pollution-health-advisory-2022", "delhi-environment-ambient-air"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "fire-free-home-versus-public-attendance-hi", "scope": "उत्तर भारतीय गृह और सामान्य सहभागी", "difference": "ये एक ही मार्ग की दो सुरक्षित विधियां हैं; उपस्थित होने से उपयोगकर्ता अग्नि-आयोजक नहीं बनता।", "source_ids": ["incredible-india-holi", "up-police-fire-services"], "separate_lane_required": false},
+        {"variant_id": "family-material-or-prayer-choice-hi", "scope": "पारिवारिक प्रथा", "difference": "प्रार्थना, फूल, अनाज, वस्त्र या प्रतिमा न होना छोटा पारिवारिक चुनाव है; इससे राज्य-मार्ग नहीं बनता।", "source_ids": ["incredible-india-holi", "drik-holika-dahan-description"], "separate_lane_required": false},
+        {"variant_id": "banaras-after-midnight-timing-hi", "scope": "बनारस/उत्तर भारतीय समय-परंपरा", "difference": "उद्धृत परंपरा मान्य समय को आधी रात के बाद ले जाती है; यह स्थानीय स्वीकृत पंचांग मांगने वाला भौतिक कैलेंडर-अंतर है।", "source_ids": ["drik-delhi-holika-dahan-2027"], "separate_lane_required": true},
+        {"variant_id": "priest-or-organiser-fire-rite-hi", "scope": "मंदिर, पुरोहित, समिति या अधिकृत आयोजक", "difference": "अग्नि-रचना, प्रज्वलन, ईंधन, निकट अनुष्ठान, औपचारिक सामग्री और बुझाने के लिए अलग कर्मकांड और सुरक्षा अधिकार चाहिए।", "source_ids": ["delhi-fire-temporary-structures", "up-police-fire-services"], "separate_lane_required": true},
+        {"variant_id": "holi-dhulandi-colour-day-hi", "scope": "अगले दिन का रंग-पर्व", "difference": "रंग खेलने में सहमति, त्वचा, पानी और भीड़ का अलग मार्गदर्शन चाहिए और यह अलग चयनित मार्ग है।", "source_ids": ["incredible-india-holi"], "separate_lane_required": true},
+        {"variant_id": "dol-hola-lathmar-hi", "scope": "पश्चिम बंगाल, पंजाब और बरसाना-क्षेत्र के विशिष्ट पर्व", "difference": "डोल जात्रा/डोल पूर्णिमा, होला मोहल्ला और लठमार होली की कथा, अधिकार या अभ्यास भौतिक रूप से अलग हैं; इन्हें यहां नहीं मिलाया जाता।", "source_ids": ["incredible-india-holi"], "separate_lane_required": true},
+        {"variant_id": "other-regional-fire-tradition-hi", "scope": "अलग क्षेत्रीय या संप्रदाय अग्नि-पर्व", "difference": "अलग देवता, कथा, पंचांग नियम या अनुष्ठान-अधिकार के लिए अपना स्रोतित प्रयोज्यता मार्ग चाहिए; केवल भूगोल पर्याप्त नहीं।", "source_ids": ["drik-delhi-holika-dahan-2027", "drik-holika-dahan-description"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "घर, छत, बालकनी या सड़क पर, तारों के नीचे अथवा जिम्मेदार आयोजक और स्थानीय अनुमति के बिना अलाव कभी न बनाएं या जलाएं।",
+        "प्लास्टिक, रबर, रंगी या उपचारित लकड़ी, कचरा, बैटरी, एरोसोल, तरल ईंधन या पटाखे न लाएं/जलाएं; Devam कोई ईंधन-विधि नहीं देता।",
+        "बच्चों को जिम्मेदार वयस्क के साथ और खुली अग्नि, माचिस, लाइटर, अंगारे तथा भीड़ के दबाव से दूर रखें; ढीले वस्त्र, दुपट्टे और बाल सुरक्षित करें।",
+        "साफ निकास पहचानें; मार्ग बंद हों, अस्थायी तार असुरक्षित हों, भीड़ सीमा लांघे या जिम्मेदार आयोजक न दिखे तो लौट जाएं।",
+        "स्थानीय AQI जांचें। छोटे बच्चे, वृद्ध, गर्भवती व्यक्ति तथा अस्थमा, अन्य श्वसन रोग या हृदय रोग वाले लोग अधिक जोखिम में हैं और उन्हें धुएं से बचना पड़ सकता है।",
+        "खांसी, घरघराहट, सीने में असुविधा, सांस फूलना, चक्कर या बढ़ते लक्षण में दूर जाएं और उचित चिकित्सा सहायता लें; यह चिकित्सा सलाह नहीं है।",
+        "अग्नि न छुएं, धुएं से न गुजरें, अंगारों के पास न जाएं, परिक्रमा न गढ़ें और सामग्री न फेंकें। स्वीकृत वस्तु केवल सीमा के बाहर अधिकृत आयोजक को दें।",
+        "होलिका दहन शुद्धि, समृद्धि, रक्षा, विजय या गलत काम मिटने की गारंटी नहीं देता; ठोस सुधार जरूरी रहता है।",
+        "चुने विष्णु पुराण अध्याय में होलिका-अग्नि घटना नहीं है। स्थिर प्रह्लाद कथा और वर्तमान जीवित होलिका वृत्तांत के स्रोत-लेबल अलग रखें।",
+        "दिल्ली का समय संदर्भ है, राष्ट्रीय समय नहीं। बनारस परंपरा भौतिक रूप से अलग है और हर सार्वजनिक कार्यक्रम स्थानीय/जीवित तथ्य है।",
+        "अगले दिन की होली/धुलंडी तथा भौतिक रूप से अलग डोल, होला मोहल्ला या लठमार पर्व इस विधि से बाहर हैं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
