@@ -1,0 +1,53 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-apara-padma-purana-source-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "apara-to-padma-purana-mahatmya-source-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/apara-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-apara-mahatmya-list-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_apara_mahatmya_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Apara mahatmya",
+        "hi": "अपरा का पूरा स्रोत-नाम वाला माहात्म्य पढ़ें"
+      },
+      "scope": {
+        "statement": "The ritual pack uses a bounded mahatmya summary from the reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 50. A future scripture/story owner should provide the lawful full expression, Sanskrit and edition coordinates, and reception context while preserving the grave-wrong list, abortion phrase, caste/battle/preceptor norms, false testimony and measurement, fraudulent professional claims, pilgrimage and gift comparisons, fasting, hell, absolution and attributed results as source facts rather than reproductive stigma, caste ranking, military shaming, suppression of criticism, accusation standards, universal ritual instructions or guarantees. This reviewed chapter has no developed origin story; none should be fabricated or silently imported.",
+        "geography_codes": [
+          "north-india",
+          "west-india"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india"
+        ],
+        "time_scope": "Locally resolved Krishna-paksha Apara Ekadashi; reviewed ordinary 2027 fixture 1 June",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 50; Sanskrit, edition, reception and any additional story-expression review unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365627.html",
+          "claim_scope": "Reviewed lines 54-65 containing the mahatmya list, social and professional claims, comparisons, fasting and attributed results."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/apara-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual timing, no-story finding, reproductive privacy, equal dignity, truthful-claim action, complaint safety, professional routing, closing and major-variant boundaries."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

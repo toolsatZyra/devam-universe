@@ -1,0 +1,1043 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "apara-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "apara-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Krishna-paksha Apara Ekadashi for you?",
+      "Does your family follow ordinary Smarta Apara, or a materially different Gauna/Vaishnava date, fast or parana rule?",
+      "Would discussion of killing, reproductive history, caste, battle, teachers, fraud, hell or professional misconduct be distressing or unsafe?",
+      "Would private reflection with no disclosure, accusation, writing, contact or public correction be safer?",
+      "Does anyone need a non-fasting, fed, hydrated, rested and material-free form?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "apara-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "apara-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "apara-ekadashi",
+        "language_code": "en",
+        "note": "This is the ordinary North/West Smarta Apara household lane. Chapter 50 is a mahatmya list, not a developed origin story. Its abortion, caste, battle, teacher, pilgrimage, gift, hell and absolution language is source material—not Devam's medical, legal, dignity or universal-practice rule."
+      },
+      {
+        "observance_slug": "apara-ekadashi",
+        "language_code": "hi",
+        "note": "यह सामान्य उत्तर/पश्चिम स्मार्त अपरा गृह-मार्ग है। अध्याय 50 माहात्म्य-सूची है, विकसित उत्पत्ति-कथा नहीं। गर्भ-समापन, जाति, युद्ध, गुरु, तीर्थ, दान, नरक और पाप-मुक्ति की भाषा स्रोत-सामग्री है—देवम का चिकित्सकीय, कानूनी, गरिमा या सार्वभौम अभ्यास-नियम नहीं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-apara-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "apara-krishna-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "apara-private-nonfast-truthful-claim-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Andhra Pradesh and Indian ISKCON fixtures place ordinary Apara Ekadashi on Tuesday 1 June 2027. North purnimanta pages label it Jyeshtha Krishna while South amanta pages may label the same occurrence Vaishakha Krishna; resolve identity from the user's Indian city and accepted authority rather than the month name. Never copy displayed tithi/parana times, this date or a named temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-apara-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 50: Apara Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed mahatmya list, professional-fraud language, source-era social norms, pilgrimage and gift comparisons, fasting and attributed results; source facts rather than consumer moral, legal or ritual rules",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365627.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 50",
+        "reviewed_lines": "54-65",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-apara-2027",
+      "title": "2027 Apara Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian ordinary, regional and ISKCON date discovery for Apara on 1 June 2027 and nominal purnimanta/amanta month difference; no portable parana or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/apara/apara-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-06-01",
+        "identity": "Apara Krishna Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-mtp-act",
+      "title": "The Medical Termination of Pregnancy Act, 1971",
+      "publisher": "India Code, Government of India",
+      "source_role": "official current statutory framework for termination by registered medical practitioners and protection of a woman's privacy; not case-specific medical or legal advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1593",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "act": "34 of 1971",
+        "sections": "3-5A",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and material timing/authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-apara-research",
+      "title": "Apara Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of no-story finding, reproductive privacy, equal dignity, truthful claims and measures, safe complaints, professional routing, accountability and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/apara-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "apara-ekadashi"
+      ],
+      "title": "Apara Ekadashi: make one claim or measure more truthful",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Apara Ekadashi today. A complete home form is private and non-fasting: remember Vishnu, hear chapter 50 as a source-labelled mahatmya list—not an invented origin story—choose one claim, measure or record within your responsibility, verify or correct it through a safe authoritative route, and close without accusation, reproductive disclosure or claims that ritual erases grave harm. No pilgrimage, gift, confession, fast or vigil is required.",
+      "significance": {
+        "text": "Chapter 50 lists grave wrongs, false testimony, deceptive measures and fraudulent professional claims, then compares Apara's promised merit with pilgrimages and gifts. It also contains abortion, caste, battle, teacher and hell language that Devam does not make universal. A bounded meaning is truthful claims and measures: correct what is yours, verify evidence, disclose limits, preserve privacy and use accountable routes when harm is serious.",
+        "source_ids": [
+          "padma-purana-apara-deshpande",
+          "india-code-mtp-act",
+          "devam-apara-research"
+        ],
+        "scope_note": "Source-labelled ethical reflection; not reproductive, caste, military, educational, professional, medical, legal, supernatural or absolution advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "apara-mahatmya-list-en",
+          "title": "The Apara mahatmya list in Padma Purana chapter 50",
+          "summary": "Yudhishthira asks Krishna about Jyeshtha's dark-half Ekadashi. Krishna names Apara and lists acts the chapter treats as grave wrongs, including killing, a phrase translated as procuring abortion, criticism, sexual conduct, false testimony, false weights and measures, purported false texts, fraudulent astrology and medicine, a kshatriya leaving battle and a disciple criticising a teacher. It promises release through Apara, compares the vow with baths, pilgrimages, ancestor offerings, sacrifice and gifts, and concludes with fasting, Vishnu worship, heaven and Vishnu's world. This is a mahatmya catalogue, not a developed character story. Devam preserves its integrity concerns and source-era abortion, caste, battle, teacher, pilgrimage, gift, hell and absolution claims without adopting them as medical, legal, dignity or universal ritual rules. It does not fabricate or import an origin story.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 50",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-apara-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "apara-en-truthful-claim",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Vishnu remembrance, bounded source mahatmya, one private claim/measure verification or correction and a non-fasting close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "apara-en-formal-vow-context",
+          "population_scope": "Families or institutions with a separately inherited or authorised formal practice",
+          "description": "A formal authority may prescribe fasting, mantra, pilgrimage, gifts, food and parana. This ordinary guide does not reconstruct them or promise absolution.",
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "devam-apara-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "apara-en-minimum-v1",
+          "label": "Private truthful-claim correction",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "drik-apara-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "materials": [
+            {
+              "item": "A private, safe place",
+              "required": false,
+              "substitutions": [
+                "Use a brief mental form",
+                "Postpone until privacy is safe"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            },
+            {
+              "item": "An optional authoritative source or secure record",
+              "required": false,
+              "substitutions": [
+                "Use no material",
+                "Correct a low-risk claim directly"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Apara Ekadashi. Do not infer the date or parana from an English month label.",
+              "why": "Timing is deterministic, local and tradition-aware.",
+              "source_ids": [
+                "drik-apara-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, medicine, hygiene and sleep normal. Do not begin fasting, pilgrimage, eclipse bathing, sacrifice or gift practice from this guide.",
+              "why": "The fed, hydrated and rested route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, family prayer or silence. No image, confession, disclosure or material is needed.",
+              "why": "Devotion remains accessible without an invented universal mantra.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the chapter-50-labelled mahatmya. Say explicitly that it has no developed origin story and that its abortion, caste, battle, teacher, pilgrimage, gift, hell and absolution language is source material, not a modern rule.",
+              "why": "The source is preserved without fabricating a story or universalising its norms.",
+              "source_ids": [
+                "padma-purana-apara-deshpande",
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Privately choose one claim, measure, bill, credential, record or forwarded message within your own responsibility. Do not select a fault for someone else or expose reproductive, medical, sexual or complaint information.",
+              "why": "Truthfulness starts with controllable conduct and privacy.",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Verify it through an authoritative source, correct or withdraw the inaccurate part, disclose a relevant limit, or preserve evidence for the proper complaint route. Do not accuse a person of fraud without evidence.",
+              "why": "A proportionate correction improves reliability without public shaming or amateur investigation.",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and complete only the safe correction. Preserve safety, restitution, reporting, professional discipline and law; claim no acquittal, absolution, fame or heaven.",
+              "why": "Ritual cannot erase serious harm or certify professional conduct.",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately, eat, hydrate, take medicine and rest normally. This route starts no fast, pilgrimage, gift, disclosure, accusation, contact or parana.",
+            "source_ids": [
+              "devam-apara-research"
+            ],
+            "scope_note": "Qualified medical, legal, professional, consumer, workplace or safeguarding support remains separate and may be necessary."
+          }
+        },
+        {
+          "procedure_id": "apara-en-standard-v1",
+          "label": "Consent-led family information hygiene",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "family-led ordinary remembrance; no public confession, accusation or formal fast",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "drik-apara-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            },
+            {
+              "item": "Optional authoritative public page or household record",
+              "required": false,
+              "substitutions": [
+                "No material",
+                "A verbal correction of one's own claim"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the local Apara date and choose the fed, rested family form. Ask whether everyone wants the source discussion; anyone may use silence or leave.",
+              "why": "Date, health and consent come first.",
+              "source_ids": [
+                "drik-apara-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Remember Vishnu with the family's familiar prayer, name or silence. Keep food, water, medicine, hygiene and sleep normal.",
+              "why": "No universal mantra or fast is invented.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Describe chapter 50 as a mahatmya list, not a character story. Name its professional-fraud concern and also its reproductive, caste, battle, teacher and hell language as source-era claims that Devam does not universalise.",
+              "why": "The account remains honest about both useful integrity themes and harmful generalisation risks.",
+              "source_ids": [
+                "padma-purana-apara-deshpande",
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person privately chooses one low-risk information-hygiene action: correct their own quantity, source, message or limitation. Do not debate anyone's pregnancy, caste, military history, teacher complaint or alleged misconduct.",
+              "why": "The action improves household reliability without exposure or coercion.",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close without predictions or forced apologies. Use qualified medical, legal, workplace, consumer, regulatory or safeguarding routes when the issue is serious.",
+              "why": "A devotional close may accompany but cannot replace accountable processes.",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "End without extracting a disclosure, apology or admission. Share ordinary food if safe and let each person's correction remain private; no one owes public confession or forgiveness.",
+            "source_ids": [
+              "devam-apara-research"
+            ],
+            "scope_note": "Minor family expression stays inside this lane; formal vow or professional process requires its own authority."
+          }
+        },
+        {
+          "procedure_id": "apara-en-elaborate-v1",
+          "label": "Verified ordinary temple visit",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "ordinary visitor at a named institution with a currently verified programme",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-apara-2027",
+            "india-code-mtp-act",
+            "devam-apara-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified temple notice and safe travel",
+              "required": true,
+              "substitutions": [
+                "Stay home and use the complete minimum form"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named temple's current programme, entry, safety, offerings and return travel. Do not infer a time from a calendar card.",
+              "why": "A living institution controls its current schedule.",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Participate only as an ordinary visitor. Do not copy priest-led fasts, baths, pilgrimage, gifts, confession, absolution or parana from this guide.",
+              "why": "Those practices require separate current authority.",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Refuse questions about pregnancy or medical history, forced disclosure, caste ranking, silencing of complaints, private access, unwanted touch, payment pressure or unsafe contact. Leave if unsafe.",
+              "why": "Devotion does not remove privacy, dignity, consent, safety or law.",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Return safely, eat and rest normally, and complete only one verified correction without claiming acquittal, professional clearance, heaven or a result.",
+              "why": "The ordinary meaning remains bounded and non-guaranteeing.",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Treat the institution's ordinary visitor exit as the close. Stay home if current information or safe travel cannot be verified; the private non-fasting form is complete.",
+            "source_ids": [
+              "devam-apara-research"
+            ],
+            "scope_note": "The institution controls its rite; no programme overrides privacy, dignity, health, consent, safety or law."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-record-and-household-form",
+          "scope": "Minor household expression",
+          "difference": "Language, image/no image, water/food/no offering, authoritative page/no material, secure reminder/no writing, prayer/silence and individual/family expression do not change the core work.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-fast-parana-authority",
+          "scope": "Material timing or sampradaya authority",
+          "difference": "A different civil date, food rule, fast, mantra or parana does not inherit ordinary Smarta guidance.",
+          "source_ids": [
+            "drik-apara-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "medical-reproductive-legal-or-professional-route",
+          "scope": "Qualified confidential process",
+          "difference": "Pregnancy, medical, legal, military, workplace, credential, consumer, whistleblowing or safeguarding issues require qualified evidence, privacy and duties.",
+          "source_ids": [
+            "india-code-mtp-act",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "additional-apara-story-expression",
+          "scope": "Different source expression",
+          "difference": "Any developed origin story absent from chapter 50 needs its own fixed source and owner review.",
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-pilgrimage-gift-or-fast-rite",
+          "scope": "Inherited or priest-led authority",
+          "difference": "Pilgrimage, eclipse bath, ancestor rite, sacrifice, gifts, fast and parana materially change the action and authority.",
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme",
+          "scope": "Institution-specific rite",
+          "difference": "Live timing, priest action, access, safeguarding, fees and offerings require the named institution.",
+          "source_ids": [
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi",
+          "scope": "Another Ekadashi identity",
+          "difference": "Mohini, Nirjala and other Ekadashis have different timing, source content or practices.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A private, non-fasting, fed, hydrated, rested, no-touch, no-flame, no-purchase, no-disclosure, image-free, writing-free and material-free form is complete.",
+        "Never ask about pregnancy, abortion, miscarriage, fertility, sexual history or medical records. Preserve confidential qualified care and never delay urgent care.",
+        "Do not rank dignity by caste, occupation, military service, teacher status, religious learning, disability, wealth, sex, pregnancy outcome or observance.",
+        "Do not silence complaints, whistleblowing, review, disagreement or safeguarding disclosure by calling criticism a sin. Preserve evidence and use safe routes.",
+        "Do not accuse a doctor, astrologer, teacher, merchant, witness or anyone else of fraud without evidence and due process. Verify credentials and claims through authoritative channels.",
+        "Serious violence, killing, false testimony, fraud or professional misconduct is not erased by fasting, prayer or regret. Preserve safety, restitution, reporting, discipline and law.",
+        "No pilgrimage, eclipse bath, ancestor rite, animal/cow/land/gold gift, sacrifice, public confession, contact or payment is required.",
+        "Do not begin fasting here. Never change insulin, medicine, meals, hydration, hygiene or sleep.",
+        "Chapter 50 contains no developed origin story. Do not invent one or import an unreviewed popular tale.",
+        "No sin removal, acquittal, professional licence or clearance, fame, heaven, Vishnu's world, purity or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "apara-ekadashi"
+      ],
+      "title": "अपरा एकादशी: एक दावा या माप अधिक सत्य करें",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज अपरा एकादशी है। घर का पूर्ण रूप निजी और बिना उपवास है: विष्णु-स्मरण करें, अध्याय 50 को स्रोत-नाम वाली माहात्म्य-सूची सुनें—गढ़ी हुई उत्पत्ति-कथा नहीं—अपनी जिम्मेदारी का एक दावा, माप या अभिलेख चुनें, सुरक्षित प्रामाणिक मार्ग से जाँच/सुधार करें और आरोप, गर्भ-सूचना के खुलासे या गंभीर हानि मिटने के दावे के बिना बंद करें। तीर्थ, दान, स्वीकारोक्ति, उपवास या जागरण जरूरी नहीं।",
+      "significance": {
+        "text": "अध्याय 50 गंभीर गलतियाँ, झूठी गवाही, धोखेदार माप और पेशेवर झूठे दावे गिनाकर अपरा के फल की तुलना तीर्थ और दान से करता है। उसमें गर्भ-समापन, जाति, युद्ध, गुरु और नरक की भाषा भी है जिसे देवम सार्वभौम नहीं करता। सीमित अर्थ है सत्य दावे और माप: अपना सुधारें, प्रमाण जाँचें, सीमा बताएं, निजता रखें और गंभीर हानि में जवाबदेह मार्ग लें।",
+        "source_ids": [
+          "padma-purana-apara-deshpande",
+          "india-code-mtp-act",
+          "devam-apara-research"
+        ],
+        "scope_note": "स्रोत-नाम वाला नैतिक चिंतन; गर्भ, जाति, सेना, शिक्षा, पेशा, चिकित्सा, कानून, अलौकिक या पाप-मुक्ति सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "apara-mahatmya-list-hi",
+          "title": "पद्मपुराण अध्याय 50 की अपरा माहात्म्य-सूची",
+          "summary": "युधिष्ठिर कृष्ण से ज्येष्ठ कृष्ण-पक्ष की एकादशी पूछते हैं। कृष्ण अपरा नाम बताकर उन कामों की सूची देते हैं जिन्हें अध्याय गंभीर पाप कहता है: हत्या, गर्भ-समापन का एक अनूदित वाक्य, निन्दा, यौन आचरण, झूठी गवाही, गलत बाट-माप, कथित झूठे ग्रन्थ, धोखेदार ज्योतिष/चिकित्सा, युद्ध छोड़ता क्षत्रिय और गुरु की आलोचना करता शिष्य। पाठ अपरा से मुक्ति का दावा, स्नान, तीर्थ, पितृ-कर्म, यज्ञ और दान से तुलना, फिर उपवास, विष्णु-पूजा, स्वर्ग और विष्णुलोक कहता है। यह माहात्म्य-सूची है, विकसित चरित्र-कथा नहीं। देवम सत्यता की चिंता और स्रोत-कालीन गर्भ, जाति, युद्ध, गुरु, तीर्थ, दान, नरक व पाप-मुक्ति दावे रखता है, पर उन्हें चिकित्सकीय, कानूनी, गरिमा या सार्वभौम अनुष्ठान-नियम नहीं बनाता। कोई उत्पत्ति-कथा गढ़ी या जोड़ी नहीं गई।",
+          "tradition_scope": "पद्मपुराण उत्तरखण्ड अध्याय 50 का समीक्षित देशपाण्डे अंग्रेजी रूप",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-apara-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "apara-hi-truthful-claim",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त व्यक्ति या गृह",
+          "description": "विष्णु-स्मरण, सीमित स्रोत-माहात्म्य, एक निजी दावा/माप जाँच या सुधार और बिना उपवास समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "apara-hi-formal-vow-context",
+          "population_scope": "अलग विरासत या अधिकृत औपचारिक विधि वाले परिवार/संस्थान",
+          "description": "औपचारिक प्राधिकारी उपवास, मंत्र, तीर्थ, दान, भोजन और पारण दे सकता है। यह सामान्य मार्ग उन्हें नहीं गढ़ता या पाप-मुक्ति सुनिश्चित नहीं करता।",
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "devam-apara-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "apara-hi-minimum-v1",
+          "label": "निजी सत्य-दावा सुधार",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "drik-apara-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "materials": [
+            {
+              "item": "निजी और सुरक्षित स्थान",
+              "required": false,
+              "substitutions": [
+                "संक्षिप्त मानसिक रूप करें",
+                "निजता सुरक्षित होने तक टालें"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक प्रामाणिक स्रोत या सुरक्षित अभिलेख",
+              "required": false,
+              "substitutions": [
+                "कोई सामग्री नहीं",
+                "कम-जोखिम दावा सीधे सुधारें"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त प्राधिकारी में आज अपरा एकादशी है। अंग्रेजी माह-नाम से तिथि या पारण न निकालें।",
+              "why": "समय निर्धार्य, स्थानीय और परम्परा-सचेत है।",
+              "source_ids": [
+                "drik-apara-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, जल, दवा, स्वच्छता और नींद सामान्य रखें। इस मार्ग से उपवास, तीर्थ, ग्रहण-स्नान, यज्ञ या दान शुरू न करें।",
+              "why": "भोजन-जल और विश्राम वाला रूप पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का परिचित नाम, पारिवारिक प्रार्थना या मौन रखें। चित्र, स्वीकारोक्ति, खुलासा या सामग्री जरूरी नहीं।",
+              "why": "सार्वभौम मंत्र गढ़े बिना भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "अध्याय 50 नाम वाला माहात्म्य सुनें। साफ कहें कि इसमें विकसित उत्पत्ति-कथा नहीं; गर्भ-समापन, जाति, युद्ध, गुरु, तीर्थ, दान, नरक और पाप-मुक्ति की भाषा स्रोत-सामग्री है, आधुनिक नियम नहीं।",
+              "why": "स्रोत कथा गढ़े या पुराने मानदंड सार्वभौम बनाए बिना सुरक्षित रहता है।",
+              "source_ids": [
+                "padma-purana-apara-deshpande",
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अपनी जिम्मेदारी का एक दावा, माप, बिल, योग्यता, अभिलेख या अग्रेषित संदेश निजी रूप से चुनें। दूसरे का दोष न चुनें और गर्भ, चिकित्सा, यौन या शिकायत-सूचना न खोलें।",
+              "why": "सत्यता अपने नियंत्रित आचरण और निजता से शुरू होती है।",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "उसे प्रामाणिक स्रोत से जाँचें, गलत भाग सुधारें/वापस लें, सीमा बताएं, या उचित शिकायत-मार्ग के लिए प्रमाण सुरक्षित रखें। प्रमाण बिना किसी को धोखेबाज न कहें।",
+              "why": "अनुपातपूर्ण सुधार सार्वजनिक अपमान या शौकिया जाँच के बिना भरोसा बढ़ाता है।",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता से बंद करें और केवल सुरक्षित सुधार करें। सुरक्षा, प्रतिपूर्ति, रिपोर्ट, पेशेवर अनुशासन और कानून रखें; बरी होना, पाप-मुक्ति, यश या स्वर्ग न कहें।",
+              "why": "अनुष्ठान गंभीर हानि नहीं मिटाता या पेशेवर आचरण प्रमाणित नहीं करता।",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "निजी कृतज्ञता से बंद करें; सामान्य भोजन, जल, दवा और विश्राम रखें। यह मार्ग उपवास, तीर्थ, दान, खुलासा, आरोप, संपर्क या पारण शुरू नहीं करता।",
+            "source_ids": [
+              "devam-apara-research"
+            ],
+            "scope_note": "योग्य चिकित्सा, कानून, पेशेवर, उपभोक्ता, कार्यस्थल या सुरक्षा सहायता अलग रह सकती है।"
+          }
+        },
+        {
+          "procedure_id": "apara-hi-standard-v1",
+          "label": "सहमति-आधारित पारिवारिक सूचना-सफाई",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; सार्वजनिक स्वीकारोक्ति, आरोप या औपचारिक उपवास नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "drik-apara-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु-चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "चित्र नहीं",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक प्रामाणिक सार्वजनिक पृष्ठ या गृह-अभिलेख",
+              "required": false,
+              "substitutions": [
+                "कोई सामग्री नहीं",
+                "अपने दावे का मौखिक सुधार"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय अपरा तिथि और भोजन-जल, विश्रामयुक्त पारिवारिक रूप की पुष्टि करें। पूछें कि सभी स्रोत-चर्चा चाहते हैं या नहीं; कोई मौन रख या बाहर जा सकता है।",
+              "why": "तिथि, स्वास्थ्य और सहमति पहले हैं।",
+              "source_ids": [
+                "drik-apara-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "परिवार की परिचित प्रार्थना, विष्णु-नाम या मौन रखें। भोजन, जल, दवा, स्वच्छता और नींद सामान्य रहें।",
+              "why": "सार्वभौम मंत्र या उपवास नहीं गढ़ा जाता।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "अध्याय 50 को चरित्र-कथा नहीं, माहात्म्य-सूची कहें। पेशेवर धोखे की चिंता और गर्भ, जाति, युद्ध, गुरु, नरक वाली भाषा को स्रोत-कालीन दावा कहें जिसे देवम सार्वभौम नहीं करता।",
+              "why": "विवरण उपयोगी सत्यता-विषय और हानिकारक सामान्यीकरण-जोखिम दोनों रखता है।",
+              "source_ids": [
+                "padma-purana-apara-deshpande",
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति कम-जोखिम सूचना-सफाई का अपना काम निजी रूप से चुने: अपनी मात्रा, स्रोत, संदेश या सीमा सुधारें। किसी के गर्भ, जाति, सैनिक इतिहास, गुरु-शिकायत या आरोप पर बहस न करें।",
+              "why": "काम उजागर या दबाव डाले बिना घर का भरोसा बढ़ाता है।",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "फल या जबरन माफी के बिना बंद करें। गंभीर विषय में योग्य चिकित्सा, कानून, कार्यस्थल, उपभोक्ता, नियामक या सुरक्षा मार्ग लें।",
+              "why": "भक्ति-समापन जवाबदेह प्रक्रिया के साथ हो सकता है, उसका विकल्प नहीं।",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "खुलासा, माफी या स्वीकारोक्ति निकलवाए बिना बंद करें। सुरक्षित हो तो सामान्य भोजन लें और हर व्यक्ति का सुधार निजी रहने दें; कोई सार्वजनिक स्वीकारोक्ति या क्षमा नहीं देता।",
+            "source_ids": [
+              "devam-apara-research"
+            ],
+            "scope_note": "छोटा पारिवारिक अंतर इसी मार्ग में रहता है; औपचारिक व्रत या पेशेवर प्रक्रिया अलग प्राधिकार चाहती है।"
+          }
+        },
+        {
+          "procedure_id": "apara-hi-elaborate-v1",
+          "label": "सत्यापित सामान्य मंदिर-यात्रा",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित संस्थान में सामान्य आगंतुक",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-apara-2027",
+            "india-code-mtp-act",
+            "devam-apara-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित मंदिर-सूचना और सुरक्षित यात्रा",
+              "required": true,
+              "substitutions": [
+                "घर रहकर पूर्ण न्यूनतम रूप करें"
+              ],
+              "source_ids": [
+                "devam-apara-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित मंदिर से वर्तमान कार्यक्रम, प्रवेश, सुरक्षा, चढ़ावे और वापसी सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।",
+              "why": "जीवित संस्थान अपना कार्यक्रम नियंत्रित करता है।",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित उपवास, स्नान, तीर्थ, दान, स्वीकारोक्ति, पाप-मुक्ति या पारण की नकल न करें।",
+              "why": "ये काम अलग वर्तमान प्राधिकार चाहते हैं।",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "गर्भ/चिकित्सा प्रश्न, जबरन खुलासा, जाति-क्रम, शिकायत दबाना, निजी पहुँच, अनचाहा स्पर्श, भुगतान-दबाव या असुरक्षित संपर्क मना करें। असुरक्षित हो तो निकलें।",
+              "why": "भक्ति निजता, गरिमा, सहमति, सुरक्षा या कानून नहीं हटाती।",
+              "source_ids": [
+                "india-code-mtp-act",
+                "devam-apara-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सुरक्षित लौटकर सामान्य भोजन और विश्राम करें; बरी होना, पेशेवर मंजूरी, स्वर्ग या फल कहे बिना केवल एक सत्यापित सुधार करें।",
+              "why": "सामान्य अर्थ सीमित और गैर-गारंटी है।",
+              "source_ids": [
+                "devam-apara-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "संस्थान का सामान्य आगंतुक-निकास समापन है। वर्तमान सूचना या सुरक्षित यात्रा सत्यापित न हो तो घर रहें; निजी बिना-उपवास रूप पूर्ण है।",
+            "source_ids": [
+              "devam-apara-research"
+            ],
+            "scope_note": "संस्थान अपनी विधि नियंत्रित करता है; कोई कार्यक्रम निजता, गरिमा, स्वास्थ्य, सहमति, सुरक्षा या कानून नहीं हटाता।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-record-and-household-form-hi",
+          "scope": "छोटा गृह-अंतर",
+          "difference": "भाषा, चित्र/नहीं, जल/भोजन/नहीं, प्रामाणिक पृष्ठ/नहीं, सुरक्षित स्मरण/लेखन नहीं, प्रार्थना/मौन और व्यक्ति/परिवार मूल काम नहीं बदलते।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-fast-parana-authority-hi",
+          "scope": "भिन्न समय या सम्प्रदाय प्राधिकार",
+          "difference": "अलग दिन, भोजन-नियम, उपवास, मंत्र या पारण सामान्य स्मार्त मार्ग नहीं अपनाते।",
+          "source_ids": [
+            "drik-apara-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "medical-reproductive-legal-or-professional-route-hi",
+          "scope": "योग्य गोपनीय प्रक्रिया",
+          "difference": "गर्भ, चिकित्सा, कानून, सेना, कार्यस्थल, योग्यता, उपभोक्ता, शिकायत या सुरक्षा विषय प्रमाण, निजता और योग्य कर्तव्य चाहते हैं।",
+          "source_ids": [
+            "india-code-mtp-act",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "additional-apara-story-expression-hi",
+          "scope": "अलग स्रोत-रूप",
+          "difference": "अध्याय 50 से अनुपस्थित विकसित उत्पत्ति-कथा अपना स्थिर स्रोत और स्वामी-समीक्षा चाहती है।",
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-pilgrimage-gift-or-fast-rite-hi",
+          "scope": "विरासत या पुरोहित-नेतृत्व प्राधिकार",
+          "difference": "तीर्थ, ग्रहण-स्नान, पितृ-कर्म, यज्ञ, दान, उपवास और पारण काम तथा प्राधिकार बदलते हैं।",
+          "source_ids": [
+            "padma-purana-apara-deshpande",
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-hi",
+          "scope": "संस्थान-विशिष्ट विधि",
+          "difference": "जीवित समय, पुरोहित-कर्म, प्रवेश, सुरक्षा, शुल्क और चढ़ावे नामित संस्थान चाहते हैं।",
+          "source_ids": [
+            "devam-apara-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi-hi",
+          "scope": "अन्य एकादशी पहचान",
+          "difference": "मोहिनी, निर्जला और अन्य एकादशियों की तिथि, स्रोत या अभ्यास अलग हैं।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "निजी, बिना उपवास, भोजन-जल, विश्राम, बिना स्पर्श, लौ, खरीद, खुलासा, चित्र, लेखन और सामग्री का रूप पूर्ण है।",
+        "गर्भ, गर्भ-समापन, गर्भपात, प्रजनन, यौन इतिहास या चिकित्सा-अभिलेख न पूछें। गोपनीय योग्य देखभाल रखें और तत्काल उपचार न रोकें।",
+        "जाति, पेशा, सैनिक सेवा, गुरु-स्थिति, धार्मिक ज्ञान, विकलांगता, धन, लिंग, गर्भ-परिणाम या व्रत से गरिमा न तौलें।",
+        "शिकायत, सचेतक सूचना, समीक्षा, असहमति या सुरक्षा-खुलासे को निन्दा का पाप कहकर न दबाएं। प्रमाण बचाएं और सुरक्षित मार्ग लें।",
+        "डॉक्टर, ज्योतिषी, गुरु, व्यापारी, गवाह या किसी को प्रमाण और उचित प्रक्रिया बिना धोखेबाज न कहें। योग्यता और दावे प्रामाणिक मार्ग से जाँचें।",
+        "गंभीर हिंसा, हत्या, झूठी गवाही, धोखा या पेशेवर दुराचार उपवास, प्रार्थना या पछतावे से नहीं मिटता। सुरक्षा, प्रतिपूर्ति, रिपोर्ट, अनुशासन और कानून रखें।",
+        "तीर्थ, ग्रहण-स्नान, पितृ-कर्म, पशु/गाय/भूमि/सोना दान, यज्ञ, सार्वजनिक स्वीकारोक्ति, संपर्क या भुगतान जरूरी नहीं।",
+        "यहाँ उपवास शुरू न करें। इंसुलिन, दवा, भोजन, जल, स्वच्छता या नींद न बदलें।",
+        "अध्याय 50 में विकसित उत्पत्ति-कथा नहीं। कोई कथा न गढ़ें या असमीक्षित लोकप्रिय कथा न जोड़ें।",
+        "पाप-मुक्ति, बरी होना, पेशेवर लाइसेंस/मंजूरी, यश, स्वर्ग, विष्णुलोक, शुद्धि या कोई फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

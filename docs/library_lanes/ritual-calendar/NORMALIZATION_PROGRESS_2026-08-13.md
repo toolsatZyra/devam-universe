@@ -371,6 +371,29 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published. The Pankoddhar denominator correction remains open and uncounted.
 
+The twenty-seventh post-freeze item is complete at the bilingual authored-library
+layer: `apara-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
+reviewed 1 June 2027 ordinary fixture and gives a private, non-fasting, fed,
+hydrated, rested, no-disclosure and material-free route: Vishnu remembrance,
+chapter 50 explicitly labelled as a mahatmya list rather than an origin story,
+one claim/measure/record within the participant's responsibility, one safe
+verification or correction, and a non-absolving close.
+
+The chapter's grave-wrong list, abortion phrase, caste/battle/preceptor norms,
+false testimony and measures, fraudulent-professional claims, pilgrimage and
+gift comparisons, fasting, hell and promised absolution remain source facts.
+Devam does not invent a character story, ask about reproductive history, rank
+dignity by caste or service, silence complaint/whistleblowing, accuse a
+professional without evidence, or claim ritual erases violence, fraud or
+misconduct. Minor household expression stays inside this lane; material
+timing/fast authority, professional processes, additional story expressions,
+named institutions and other Ekadashis remain separate.
+
+Exact accepted-authoring coverage is now **27 completed after freeze / 181
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published. The Pankoddhar denominator correction remains open and uncounted.
+
 The twenty-sixth post-freeze item is complete at the bilingual authored-library
 layer: `mohini-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
 reviewed 16 May 2027 ordinary fixture while explicitly recording chapter 49's
