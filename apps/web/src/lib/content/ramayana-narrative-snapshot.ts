@@ -67,6 +67,7 @@ import { RAMAYANA_SITA_BOW_PLAYABLE_SCENES } from "../../data/ramayana-sita-bow-
 import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana-weddings-challenge-playable";
 import { RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES } from "../../data/ramayana-lakshmana-joins-library-scenes";
 import { RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES } from "../../data/ramayana-rama-accepts-exile-library-scenes";
+import { RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES } from "../../data/ramayana-cosmic-conquests-library-scenes";
 import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
 import { RAMAYANA_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-thin-turn-library-scenes";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
@@ -197,6 +198,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "golden-deer-separates-house",
     "lakshmana-joins",
     "rama-accepts-exile",
+    "conquest-crosses-cosmic-worlds",
   ]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
@@ -265,6 +267,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES,
     ...RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES,
     ...RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES,
+    ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
   ]) {
     const turn = pack.compass.turns[scene.turnId];
     if (!turn) throw new Error(`Ramayana library scene has no backbone turn: ${scene.id}`);
@@ -273,6 +276,16 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     }
     if (scene.spanSha256s.length !== scene.sourceEnd - scene.sourceStart + 1) {
       throw new Error(`Ramayana library scene has an incomplete source-span set: ${scene.id}`);
+    }
+    if (turn.sourceRange.kandaSlug === "uttara") {
+      const expectedSpanSha256s = getDuttKandaSpanSha256s(
+        turn.sourceRange.kandaSlug,
+        scene.sourceStart,
+        scene.sourceEnd,
+      );
+      if (JSON.stringify(scene.spanSha256s) !== JSON.stringify(expectedSpanSha256s)) {
+        throw new Error(`Ramayana library scene source spans drifted from the retained section registry: ${scene.id}`);
+      }
     }
     const siblings = scenesByTurnId.get(scene.turnId) ?? [];
     siblings.push({
@@ -372,6 +385,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_TWINS_SING_SITA_RETURNS_PLAYABLE_SCENES,
     ...RAMAYANA_LAST_DEPARTURES_PLAYABLE_SCENES,
   ]) {
+    if (libraryReplacementSceneIds.has(playable.id)) continue;
     const outline = sourcePartitionedOutlineById.get(playable.id);
     if (!outline) throw new Error(`Ramayana playable beginning has no source outline: ${playable.id}`);
     const turn = pack.compass.turns[outline.turnId];
@@ -406,6 +420,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   }
 
   for (const outline of sourcePartitionedOutlines) {
+    if (libraryReplacementSceneIds.has(outline.id)) continue;
     const turn = pack.compass.turns[outline.turnId];
     if (!turn) throw new Error(`Ramayana outline has no backbone turn: ${outline.id}`);
     if (outline.sourceStart < turn.sourceRange.startOrdinal || outline.sourceEnd > turn.sourceRange.endOrdinal) {
