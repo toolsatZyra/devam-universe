@@ -1,0 +1,175 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "maha-bharani-pitru-story-and-formal-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "maha-bharani-to-existing-pitru-remembrance",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/maha-bharani-ancestor-remembrance-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/pitru-paksha-delhi-remembrance-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_private_remembrance_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Maha Bharani reuses the safe private Pitru remembrance boundary",
+        "hi": "महा भरणी सुरक्षित private Pitru remembrance boundary reuse करती है"
+      },
+      "scope": {
+        "statement": "The reviewed lane reuses private remembrance and no-contact safety only; the Delhi 2026 content remains partial and does not own 2027 timing or formal Shraddha.",
+        "geography_codes": [
+          "IN-DL",
+          "IN"
+        ],
+        "tradition_codes": [
+          "pitru-paksha-bharani"
+        ],
+        "time_scope": "Pitru Paksha; location-resolved Bharani aparahna",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "ritual/pitru-paksha-delhi-remembrance-content-v1",
+          "claim_scope": "Existing private remembrance and explicit applicability limitation."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-maha-bharani-research",
+          "claim_scope": "Reused boundary is partial and non-formal."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "maha-bharani-to-formal-shraddha-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/maha-bharani-ancestor-remembrance-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-maha-bharani-shraddha-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_named_formal_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Formal Maha Bharani Shraddha requires a named current authority",
+        "hi": "Formal महा भरणी श्राद्ध के लिए named current authority चाहिए"
+      },
+      "scope": {
+        "statement": "Ancestor applicability, performer, once-versus-annual rule, pinda, til, kusa, tarpan, fire, mantra, payment and closing are intentionally unresolved owner work.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "authority-routed-shraddha"
+        ],
+        "time_scope": "Location-resolved Bharani aparahna",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "living_practice",
+          "ref": "drik-bharani-madhubani-rule",
+          "claim_scope": "Living timing and practice statements show material authority differences."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-maha-bharani-research",
+          "claim_scope": "Formal procedure cannot be safely nationalised."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "maha-bharani-to-nachiketa-story-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/maha-bharani-ancestor-remembrance-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/katha-upanishad-nachiketa-yama-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_death_discernment_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Nachiketa asks Yama about death and the good",
+        "hi": "नचिकेता यम से मृत्यु और श्रेय के बारे में पूछते हैं"
+      },
+      "scope": {
+        "statement": "The pack uses the complete public-domain Katha Upanishad scene as bounded reflection, not Maha Bharani origin, Shraddha vidhi, child instruction or afterlife proof.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "upanishadic-story-context"
+        ],
+        "time_scope": null,
+        "source_expression_scope": "Max Muller 1884, Sacred Books of the East volume 15"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "max-muller-katha-upanishad:first-and-second-valli",
+          "claim_scope": "Nachiketa's three boons, refusal of temporary pleasures and Yama's teaching."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-maha-bharani-research",
+          "claim_scope": "Story is source context rather than invented observance origin."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "maha-bharani-not-kodungallur-bharani",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/maha-bharani-ancestor-remembrance-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "festival/kodungallur-bharani-kerala-owner"
+      },
+      "relationship_family": "identity",
+      "predicate": "must_not_be_confused_with",
+      "directionality": "bidirectional",
+      "consumer_label": {
+        "en": "Maha Bharani Shraddha is not Kodungallur Bharani",
+        "hi": "महा भरणी श्राद्ध Kodungallur Bharani नहीं है"
+      },
+      "scope": {
+        "statement": "The shared word Bharani does not merge a Pitru Paksha ancestor-remembrance day with Kerala's distinct Kodungallur temple-festival identity.",
+        "geography_codes": [
+          "IN",
+          "IN-KL"
+        ],
+        "tradition_codes": [
+          "pitru-paksha-bharani",
+          "kodungallur-temple-festival"
+        ],
+        "time_scope": null,
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-maha-bharani-research",
+          "claim_scope": "Identity-confusion boundary frozen before authoring."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
