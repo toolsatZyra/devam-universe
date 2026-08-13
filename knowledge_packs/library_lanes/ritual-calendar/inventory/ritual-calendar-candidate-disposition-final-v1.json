@@ -1,0 +1,838 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_CANDIDATE_DISPOSITION_V1",
+  "batch_id": "final-census-disposition-v1",
+  "census_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-comprehensive-census-v3.json",
+  "reviewed_at": "2026-08-13",
+  "scope": "Final 133 raw labels: conservative candidate acceptance unless explicit repository reuse, alias/sequence routing, owner boundary, non-action calendar status, selected-scope exclusion or authority block applies.",
+  "evidence_refs": [
+    {
+      "ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-comprehensive-census-v3.json",
+      "role": "Exact remaining labels and regional discovery membership."
+    },
+    {
+      "ref": "knowledge_packs/library_lanes/ritual-calendar/research/final-census-disposition-audit-2027-v1.md",
+      "role": "Disposition rules, exclusions, blocks and completion caveat."
+    },
+    {
+      "ref": "knowledge_packs/rituals/",
+      "role": "Existing compact ritual packs verified by filename before reuse."
+    },
+    {
+      "ref": "knowledge_packs/inventories/parallel-library-work-v1.json",
+      "role": "Devi owner boundary for Banada Ashtami and Vijayadashami names."
+    }
+  ],
+  "counts": {
+    "source_labels_dispositioned": 133,
+    "accepted_distinct_lane": 95,
+    "alias_of_accepted_lane": 25,
+    "blocked_requires_authority_or_source": 5,
+    "hero_owned_cross_link_only": 4,
+    "descriptive_calendar_event_not_puja_or_observance": 3,
+    "outside_selected_sanatana_scope": 1
+  },
+  "entries": [
+    {
+      "source_label": "Aadi Perukku",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "aadi-perukku",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Agastya Arghya",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "agastya-arghya-delhi-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Agni Nakshatram Begins",
+      "disposition": "descriptive_calendar_event_not_puja_or_observance",
+      "canonical_candidate_id": "agni-nakshatram-begins",
+      "rationale": "Calendar/season marker retained for day explanation but not counted as a standalone puja or vidhi."
+    },
+    {
+      "source_label": "Agni Nakshatram Ends",
+      "disposition": "descriptive_calendar_event_not_puja_or_observance",
+      "canonical_candidate_id": "agni-nakshatram-ends",
+      "rationale": "Calendar/season marker retained for day explanation but not counted as a standalone puja or vidhi."
+    },
+    {
+      "source_label": "Ahoi Ashtami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ahoi-ashtami-north-india-household-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Akshaya Navami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "akshaya-navami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Anant Chaturdashi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ananta-chaturdashi-north-west-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Andal Jayanthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "andal-jayanthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Andolana Trutiya",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "andolana-trutiya",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Aniruddha Chaturthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "aniruddha-chaturthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Atla Tadde",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "atla-tadde",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Avani Avittam",
+      "disposition": "blocked_requires_authority_or_source",
+      "canonical_candidate_id": "avani-avittam",
+      "rationale": "Upakarma/Gayatri practice depends on Vedic shakha, sampradaya, eligibility and qualified guidance; generic DIY instructions are unsafe."
+    },
+    {
+      "source_label": "Avani Avittam *Rigveda",
+      "disposition": "blocked_requires_authority_or_source",
+      "canonical_candidate_id": "avani-avittam-rigveda",
+      "rationale": "Upakarma/Gayatri practice depends on Vedic shakha, sampradaya, eligibility and qualified guidance; generic DIY instructions are unsafe."
+    },
+    {
+      "source_label": "Avani Avittam *Samaveda",
+      "disposition": "blocked_requires_authority_or_source",
+      "canonical_candidate_id": "avani-avittam-samaveda",
+      "rationale": "Upakarma/Gayatri practice depends on Vedic shakha, sampradaya, eligibility and qualified guidance; generic DIY instructions are unsafe."
+    },
+    {
+      "source_label": "Avani Avittam *Yajurveda",
+      "disposition": "blocked_requires_authority_or_source",
+      "canonical_candidate_id": "avani-avittam-yajurveda",
+      "rationale": "Upakarma/Gayatri practice depends on Vedic shakha, sampradaya, eligibility and qualified guidance; generic DIY instructions are unsafe."
+    },
+    {
+      "source_label": "Bachha Baras Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "bachha-baras-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Balarama Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "balarama-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Banada Ashtami",
+      "disposition": "hero_owned_cross_link_only",
+      "canonical_candidate_id": "shakambhari-banada-ashtami",
+      "owner_lane_id": "devi-consumer",
+      "rationale": "Clear Devi/Navaratri owner identity; existing typed owner proposal target is reused."
+    },
+    {
+      "source_label": "Basoda",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "basoda",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Bhanu Saptami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "bhanu-saptami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Bhishma Ashtami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "bhishma-ashtami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Bhishma Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "bhishma-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Bhogi Pandigai",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "bhogi-pandigai",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Bol Choth",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "bol-choth",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Champa Shashthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "champa-shashthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Chandra Darshana",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "chandra-darshana",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Chandra Grahan *Upachchaya",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "chandra-grahan-upachchaya",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Chhath Puja",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "chhath-bihar-purvanchal-participant-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Damodara Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "damodara-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Dasahara",
+      "disposition": "hero_owned_cross_link_only",
+      "canonical_candidate_id": "vijayadashami",
+      "owner_lane_id": "devi-consumer",
+      "rationale": "Clear Devi/Navaratri owner identity; existing typed owner proposal target is reused."
+    },
+    {
+      "source_label": "Dasara",
+      "disposition": "hero_owned_cross_link_only",
+      "canonical_candidate_id": "vijayadashami",
+      "owner_lane_id": "devi-consumer",
+      "rationale": "Clear Devi/Navaratri owner identity; existing typed owner proposal target is reused."
+    },
+    {
+      "source_label": "Dattatreya Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "dattatreya-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Dev Diwali",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "dev-deepawali-varanasi-participant-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Dharo Atham",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "dharo-atham",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Dussehra",
+      "disposition": "hero_owned_cross_link_only",
+      "canonical_candidate_id": "vijayadashami",
+      "owner_lane_id": "devi-consumer",
+      "rationale": "Clear Devi/Navaratri owner identity; existing typed owner proposal target is reused."
+    },
+    {
+      "source_label": "Ganga Dussehra",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ganga-dussehra",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Ganga Puja",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ganga-puja",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Ganga Pujan",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ganga-puja-regional",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Ganga Saptami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ganga-saptami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Gangaur",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "gangaur",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Garuda Panjami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "garuda-panjami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Gayathri Japam",
+      "disposition": "blocked_requires_authority_or_source",
+      "canonical_candidate_id": "gayathri-japam",
+      "rationale": "Upakarma/Gayatri practice depends on Vedic shakha, sampradaya, eligibility and qualified guidance; generic DIY instructions are unsafe."
+    },
+    {
+      "source_label": "Gayatri Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "gayatri-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Geeta Dinam",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "gita-jayanti-reading-reflection-content-v1",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Gita Jayanti",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "gita-jayanti-reading-reflection-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Gopalakala",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "gopalakala",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Gudi Padwa",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "gudi-padwa",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Guruvayur Ekadasi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "guruvayur-ekadasi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Hariyali Teej",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "hariyali-teej",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Hartalika Teej",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "hartalika-teej-north-west-india-participant-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Jalaram Bapa Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "jalaram-bapa-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Jamai Shashti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "jamai-shashti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Jayaparvati Vrat Begins",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "jayaparvati-vrat-begins",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Jayaparvati Vrat Ends",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "jayaparvati-vrat-cycle",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Kajari Teej",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kajari-teej",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kalabhairav Jayanti",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "kalabhairava-jayanti-north-kashi-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Kalashtami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kalashtami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kalki Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kalki-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kalki Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kalki-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kamanahabba",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kamanahabba",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kansa Vadh",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kansa-vadh",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Karadaiyan Nombu",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "karadaiyan-nombu",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Karthigai Deepam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "karthigai-deepam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Karwa Chauth",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "karwa-chauth-north-india-household-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Kevda Trij",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kevda-trij",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kokila Vrat",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kokila-vrat",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kurma Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kurma-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kurma Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kurma-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Kurmavathara Dinam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "kurmavathara-dinam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Magh Bihu",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "magh-bihu",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Magha Shraddha",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "magha-shraddha",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Maha Bharani",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "maha-bharani",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Mahalaya",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "mahalaya",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Makaravilakku",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "makaravilakku",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Malayalam New Year",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "malayalam-new-year",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Mandalakala Begins",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "mandalakala-cycle",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Mandalakala Pooja",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "mandalakala-pooja",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Masi Magam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "masi-magam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Matsya Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "matsya-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Matsyavathara Dinam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "matsyavathara-dinam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Mattu Pongal",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "mattu-pongal",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Narada Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "narada-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Narasimha Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "narasimha-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Nutan Varsh Prarambha",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "nutan-varsh-prarambha",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Onam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "onam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Padmanabha Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "padmanabha-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Painkuni Uthram",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "panguni-uthiram",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Panguni Uthiram",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "panguni-uthiram",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Pitrupaksha Begins",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "pitru-paksha-delhi-remembrance-content-v1",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Pohela Boishakha",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "pohela-boishakha",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Pola",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "pola",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Pongal",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "pongal",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Pradyumna Chaturthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "pradyumna-chaturthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Puthandu",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "puthandu",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Rabindranath Tagore Jayanti",
+      "disposition": "outside_selected_sanatana_scope",
+      "canonical_candidate_id": "rabindranath-tagore-jayanti",
+      "rationale": "Cultural commemoration is preserved for wider Devam routing but is outside the selected Sanatana puja denominator."
+    },
+    {
+      "source_label": "Radha Ashtami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "radha-ashtami-iskcon-participant-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Ramalakshmana Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ramalakshmana-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Ramanuja Jayanthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ramanuja-jayanthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Ranga Panchami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ranga-panchami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Rishi Panchami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "rishi-panchami-saptarishi-reflection-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Sankarshana Chaturthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "sankarshana-chaturthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Shani Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "shani-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Shani Trayodashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "shani-trayodashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Sheetala Ashtami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "sheetala-ashtami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Shitala Satam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "shitala-satam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Simhasta Kumbha @Nashik",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "simhasta-kumbha-nashik",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Simhasta Kumbha ends @Nashik",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "simhasta-kumbha-nashik",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Sita Navami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "sita-navami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Solar New Year",
+      "disposition": "descriptive_calendar_event_not_puja_or_observance",
+      "canonical_candidate_id": "solar-new-year",
+      "rationale": "Calendar/season marker retained for day explanation but not counted as a standalone puja or vidhi."
+    },
+    {
+      "source_label": "Somvati Amas",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "somavati-amavasya-recurring",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Soora Samharam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "soora-samharam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Subrahmanya Sashti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "subrahmanya-sashti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Surya Grahan *Purna",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "surya-grahan-purna",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Surya Grahan *Valayakara",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "surya-grahan-valayakara",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Swaminarayan Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "swaminarayan-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Thai Pooyam",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "thai-pusam",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Thai Pusam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "thai-pusam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Thrissur Pooram",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "thrissur-pooram",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Tulasi Vivah",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "tulasi-vivah-general-baps-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Uttarayana",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "solar-ingress-makara",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Vaikasi Visakam",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vaikasi-visakam",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Varaha Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "varaha-jayanti",
+      "rationale": "Sequence marker or regional spelling routes to an existing/accepted candidate without creating a state copy."
+    },
+    {
+      "source_label": "Varaha Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "varaha-jayanti",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Vasant Panchami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vasant-panchami",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Vasudeva Chaturthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vasudeva-chaturthi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Vasudeva Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vasudeva-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Vat Savitri Vrat",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vat-savitri-vrat",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Vishu",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vishu",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Vishwakarma Puja",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "vishwakarma-puja-bengal-workplace-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Vivah Panchami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "vivaha-panchami-north-india-content-v1",
+      "rationale": "Existing repository ritual content is reused for this source label; reuse does not prove all selected state or setting variants complete."
+    },
+    {
+      "source_label": "Vrishabhotsava",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vrishabhotsava",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Yamuna Chhath",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "yamuna-chhath",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    },
+    {
+      "source_label": "Yogeshwara Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "yogeshwara-dwadashi",
+      "rationale": "Named observance conservatively retained for source-grounded applicability and practice research; calendar discovery alone does not complete it."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_NORMALIZED_DENOMINATOR_V4",
+  "version": 4,
+  "frozen_at": "2026-08-13",
+  "census_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-comprehensive-census-v3.json",
+  "disposition_files": [
+    "ritual-calendar-candidate-disposition-annual-aliases-v1.json",
+    "ritual-calendar-candidate-disposition-ekadashi-v1.json",
+    "ritual-calendar-candidate-disposition-final-v1.json",
+    "ritual-calendar-candidate-disposition-hero-owners-supplemental-v1.json",
+    "ritual-calendar-candidate-disposition-hero-owners-v1.json",
+    "ritual-calendar-candidate-disposition-lunar-phase-v1.json",
+    "ritual-calendar-candidate-disposition-recurring-v1.json",
+    "ritual-calendar-candidate-disposition-solar-v1.json"
+  ],
+  "raw_census_audit": {
+    "source_labels": 425,
+    "dispositioned_source_labels": 425,
+    "undispositioned_source_labels": 0,
+    "state_counts": {
+      "accepted_distinct_lane": 208,
+      "alias_of_accepted_lane": 79,
+      "hero_owned_cross_link_only": 103,
+      "alias_of_hero_owned_candidate": 24,
+      "blocked_requires_authority_or_source": 6,
+      "descriptive_calendar_event_not_puja_or_observance": 3,
+      "outside_selected_sanatana_scope": 2
+    }
+  },
+  "normalized_named_work_items": {
+    "selected_denominator": 403,
+    "completed_starting_layer": 105,
+    "incomplete_ritual_calendar_authoring": 208,
+    "owner_targets_with_typed_proposals": 84,
+    "blocked_with_concrete_authority_gap": 6
+  },
+  "normalized_derivation": "Canonical candidate/family plus material applicability context for accepted items; canonical owner lane plus target for owner items; unique canonical block id for blocked items. Aliases, descriptive markers and selected-scope exclusions do not create authoring items.",
+  "day_answer_denominator": {
+    "cells": 19480,
+    "verified_complete_cells_at_freeze": 0,
+    "reason": "No cumulative projection audit yet proves all applicable observances and ordinary-day answers for each of 487 days x 20 state routes x 2 settings."
+  },
+  "completion_rule": "All 208 ritual-calendar authoring items must meet the bilingual ritual product contract or be moved to a concrete reviewed block; all 84 owner targets retain typed proposals; six existing blocks remain explicit until resolved; and all 19,480 day-answer cells resolve deterministically. The 105 starting-layer items remain authored-library completion only, not hosted or released."
+}

@@ -44,6 +44,12 @@ ANNUAL_ALIAS_DISPOSITION = (
     / "inventory"
     / "ritual-calendar-candidate-disposition-annual-aliases-v1.json"
 )
+FINAL_DISPOSITION = (
+    LANE / "inventory" / "ritual-calendar-candidate-disposition-final-v1.json"
+)
+NORMALIZED_DENOMINATOR = (
+    LANE / "inventory" / "ritual-calendar-normalized-denominator-v4.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
 SANKASHTI_LINKS = (
     LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
@@ -51,6 +57,7 @@ SANKASHTI_LINKS = (
 SHAKAMBHARI_LINKS = (
     LANE / "cross-links" / "shakambhari-purnima-owner-proposal-v1.json"
 )
+BANADA_LINKS = LANE / "cross-links" / "banada-ashtami-owner-proposal-v1.json"
 HERO_OWNER_LINKS = [
     LANE / "cross-links" / "ganesha-owner-candidates-v1.json",
     LANE / "cross-links" / "devi-owner-candidates-v1.json",
@@ -327,6 +334,7 @@ def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint()
         load(HERO_OWNER_DISPOSITION),
         load(HERO_OWNER_SUPPLEMENTAL_DISPOSITION),
         load(ANNUAL_ALIAS_DISPOSITION),
+        load(FINAL_DISPOSITION),
     ]
     all_labels = [
         entry["source_label"]
@@ -334,9 +342,9 @@ def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint()
         for entry in batch["entries"]
     ]
     candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
-    assert len(all_labels) == len(set(all_labels)) == 292
+    assert len(all_labels) == len(set(all_labels)) == 425
     assert set(all_labels) <= candidate_labels
-    assert len(candidate_labels - set(all_labels)) == 133
+    assert candidate_labels == set(all_labels)
 
     owner = load(HERO_OWNER_DISPOSITION)
     assert owner["counts"] == {
@@ -441,6 +449,80 @@ def test_annual_alias_batch_preserves_verified_material_date_differences():
         "nagula-chavithi"
     )
     assert by_label["Chhoti Holi"]["canonical_candidate_id"] == "holika-dahan"
+
+
+def test_final_disposition_closes_raw_census_without_claiming_authoring_complete():
+    final = load(FINAL_DISPOSITION)
+    assert final["counts"] == {
+        "source_labels_dispositioned": 133,
+        "accepted_distinct_lane": 95,
+        "alias_of_accepted_lane": 25,
+        "blocked_requires_authority_or_source": 5,
+        "hero_owned_cross_link_only": 4,
+        "descriptive_calendar_event_not_puja_or_observance": 3,
+        "outside_selected_sanatana_scope": 1,
+    }
+    by_label = {entry["source_label"]: entry for entry in final["entries"]}
+    for label in (
+        "Avani Avittam",
+        "Avani Avittam *Rigveda",
+        "Avani Avittam *Samaveda",
+        "Avani Avittam *Yajurveda",
+        "Gayathri Japam",
+    ):
+        assert by_label[label]["disposition"] == (
+            "blocked_requires_authority_or_source"
+        )
+    assert by_label["Solar New Year"]["disposition"] == (
+        "descriptive_calendar_event_not_puja_or_observance"
+    )
+    assert by_label["Rabindranath Tagore Jayanti"]["disposition"] == (
+        "outside_selected_sanatana_scope"
+    )
+    assert by_label["Balarama Jayanti"]["disposition"] == "accepted_distinct_lane"
+
+
+def test_v4_normalized_denominator_and_all_owner_proposals_are_exact():
+    denominator = load(NORMALIZED_DENOMINATOR)
+    assert denominator["raw_census_audit"] == {
+        "source_labels": 425,
+        "dispositioned_source_labels": 425,
+        "undispositioned_source_labels": 0,
+        "state_counts": {
+            "accepted_distinct_lane": 208,
+            "alias_of_accepted_lane": 79,
+            "hero_owned_cross_link_only": 103,
+            "alias_of_hero_owned_candidate": 24,
+            "blocked_requires_authority_or_source": 6,
+            "descriptive_calendar_event_not_puja_or_observance": 3,
+            "outside_selected_sanatana_scope": 2,
+        },
+    }
+    assert denominator["normalized_named_work_items"] == {
+        "selected_denominator": 403,
+        "completed_starting_layer": 105,
+        "incomplete_ritual_calendar_authoring": 208,
+        "owner_targets_with_typed_proposals": 84,
+        "blocked_with_concrete_authority_gap": 6,
+    }
+    assert 105 + 208 + 84 + 6 == 403
+    assert denominator["day_answer_denominator"]["cells"] == 19_480
+    assert denominator["day_answer_denominator"][
+        "verified_complete_cells_at_freeze"
+    ] == 0
+
+    schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    owner_paths = (
+        [SANKASHTI_LINKS, SHAKAMBHARI_LINKS, BANADA_LINKS]
+        + HERO_OWNER_LINKS
+        + HERO_OWNER_SUPPLEMENTAL_LINKS
+    )
+    proposal_count = 0
+    for path in owner_paths:
+        pack = load(path)
+        Draft202012Validator(schema).validate(pack)
+        proposal_count += len(pack["proposals"])
+    assert proposal_count == 84
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():

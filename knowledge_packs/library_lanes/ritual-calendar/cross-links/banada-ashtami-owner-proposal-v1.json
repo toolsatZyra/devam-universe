@@ -1,0 +1,51 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-banada-ashtami-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "banada-ashtami-candidate-to-devi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/banada-ashtami-census"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/shakambhari-banada-ashtami"
+      },
+      "relationship_family": "festival",
+      "predicate": "requests_owner_scoped_observance_lane",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Banada Ashtami candidate for Devi-owner review",
+        "hi": "बनदा अष्टमी अभ्यर्थी: देवी-स्वामी लेन की समीक्षा हेतु"
+      },
+      "scope": {
+        "statement": "Marathi calendar Banada Ashtami candidate; exact Shakambhari/Devi identity, date rule and practice remain for Devi-owner review.",
+        "geography_codes": [
+          "IN-MH"
+        ],
+        "tradition_codes": [
+          "devi-devotional-unresolved"
+        ],
+        "time_scope": "2027 discovery occurrence; deterministic local rule required.",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "ritual-calendar-candidate-disposition-final-v1",
+          "claim_scope": "Routes Banada Ashtami to the Devi owner without inventing a household ritual or identity equivalence."
+        },
+        {
+          "evidence_kind": "claim",
+          "ref": "parallel-library-work-v1 devi-consumer ownership",
+          "claim_scope": "Devi identity, narrative and materially scoped observance practice belong to the Devi owner lane."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

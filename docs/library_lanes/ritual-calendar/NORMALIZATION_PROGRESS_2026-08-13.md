@@ -5,8 +5,8 @@ Active denominator: `ritual-calendar-comprehensive-census-v3.json`.
 ## Reviewed dispositions
 
 - Raw source-label denominator: **425**
-- Dispositioned in reviewed batch files: **292**
-- Remaining undispositioned: **133**
+- Dispositioned in reviewed batch files: **425**
+- Remaining undispositioned: **0**
 
 The recurring batch covers 43 labels:
 
@@ -42,9 +42,19 @@ name routes and twenty-two remain distinct candidates. Direct date review
 prevented false merges of Parashurama Dwadashi with Parashurama Jayanti and
 Vamana Dwadashi with Vamana Jayanti.
 
+The final raw-census batch covers 133 labels: ninety-five accepted research
+candidates, twenty-five reuse/alias routes, five concrete authority blocks,
+four owner routes, three non-action markers and one selected-scope exclusion.
+
+Raw-label normalization is complete. Version 4 freezes the actual named-work
+denominator at 403: 105 completed starting-layer items, 208 incomplete ritual-
+calendar authoring items, 84 owner targets with typed proposals and six blocks.
+The separate 19,480 day-answer cells remain unverified at this freeze.
+
 ## Cross-lane state
 
-Eighty-three typed proposals (twelve Sankashti, one Shakambhari, forty-five
+Eighty-four typed proposals (twelve Sankashti, one Shakambhari, one Banada
+Ashtami, forty-five
 clear owner candidates and twenty-five supplemental owner targets) are
 `proposed_for_integration` with unresolved
 Ganesha/Devi/Diwali targets. No canonical anchor, shared graph or owner record
@@ -53,7 +63,6 @@ was created or modified.
 ## What these counts do not mean
 
 Dispositioned does not mean authored, bilingual, user-complete, projected,
-hosted, release-reviewed or published. The 133 remaining labels still include
-annual regional observances,
-hero-owned worlds, descriptive calendar events and possible out-of-scope
-labels. Each must be decided explicitly.
+hosted, release-reviewed or published. All raw labels are decided, but 208
+accepted ritual-calendar work items still require evidence-backed bilingual
+completion and the day-cell denominator remains unresolved.
