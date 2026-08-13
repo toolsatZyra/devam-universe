@@ -81,6 +81,7 @@ import { RAMAYANA_FIRST_LANKA_WAR_LIBRARY_SCENES } from "../../data/ramayana-fir
 import { RAMAYANA_KAIKASI_BOONS_LIBRARY_SCENES } from "../../data/ramayana-kaikasi-boons-library-scenes";
 import { RAMAYANA_KARTAVIRYA_CAPTURE_LIBRARY_SCENES } from "../../data/ramayana-kartavirya-capture-library-scenes";
 import { RAMAYANA_PROPHECY_CHOICE_LIBRARY_SCENES } from "../../data/ramayana-prophecy-choice-library-scenes";
+import { RAMAYANA_SWETADVIPA_DEPARTURES_LIBRARY_SCENES } from "../../data/ramayana-swetadvipa-departures-library-scenes";
 import { RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES } from "../../data/ramayana-chitrakoot-approach-library-scenes";
 import { RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES } from "../../data/ramayana-sagara-ganga-library-scenes";
 import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
@@ -229,6 +230,14 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "kubera-falls-kailasa-refuses",
     "vedavati-and-kings-name-consequence",
     "ravana-challenges-death",
+    "rule-begins-as-daily-work",
+    "janaka-and-kings-return-home",
+    "gifts-circle-back-to-the-alliance",
+    "hanuman-and-friends-say-goodbye",
+    "pushpaka-returns-with-permission",
+    "sita-asks-for-a-hermitage-visit",
+    "rumour-turns-captivity-against-sita",
+    "rama-summons-his-brothers-in-grief",
   ]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
@@ -304,6 +313,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_KAIKASI_BOONS_LIBRARY_SCENES,
     ...RAMAYANA_KARTAVIRYA_CAPTURE_LIBRARY_SCENES,
     ...RAMAYANA_PROPHECY_CHOICE_LIBRARY_SCENES,
+    ...RAMAYANA_SWETADVIPA_DEPARTURES_LIBRARY_SCENES,
     ...RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES,
     ...RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES,
     ...RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES,

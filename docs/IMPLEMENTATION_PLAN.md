@@ -11,7 +11,7 @@ The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-466 substantial scenes and 2,067
+466 substantial scenes and 2,078
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -286,13 +286,13 @@ and English story continuations while preserving the existing visual cues,
 source addresses, and world routes; user-visible journey copy no longer exposes
 editorial or citation apparatus. Exact Uttara 1–123 section-span hashes were
 independently re-derived from the retained Dutt bytes and now ground 95
-substantial bilingual playable scenes containing 350 beats across the complete
+substantial bilingual playable scenes containing 361 beats across the complete
 selected Uttara range. The first whole-journey adversarial review is complete.
 It found five thin turns that needed additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
 leaks in consumer copy; the copy leaks are repaired. All five thin turns now
-clear the provisional depth floor through eighty-eight exact data-only scenes
-replacing twenty-four compressed story blocks. The same source-partitioned repair now
+clear the provisional depth floor through ninety-six exact data-only scenes
+replacing twenty-five compressed story blocks. The same source-partitioned repair now
 expands the ten-section `lakshmana-joins` departure summary into five scenes
 covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
 farewells, and expands the seven-section `rama-accepts-exile` summary into
@@ -343,8 +343,16 @@ and forest path of Rama and Sita, and chooses to plan a conflict. Agastya's late
 explanation and its devotional listening promise remain distinct from historical
 certainty, ritual guarantee, consent, inevitability, or acquittal. The prior scene's
 out-of-span Swetadvipa material has been removed; that memorable journey begins
-in Uttara 46 and remains a separately tracked repair rather than being borrowed
-across the retained source boundary. It also replaces
+in Uttara 46. The completed Uttara 46–53 repair now restores that journey and
+corrects the entire shifted departures sequence through Rama's first morning of
+rule, Janaka and the allied kings returning home, the redistribution of gifts,
+Hanuman's farewell, Pushpaka's permission chain, Sita's freely chosen one-night
+hermitage visit, and the public rumour that weaponizes her forced captivity.
+The repair preserves the Swetadvipa women's agency without bodily ridicule,
+tests Agastya's later protection language against the established abduction and
+confinement, treats Bharata's flourishing-reign description as epic ideal rather
+than measured health or climate data, and stops at the end of section 53 before
+Rama's section-54 decision or summons. It also replaces
 the compressed Uttara 29–30 captive-women-and-family-war summary with two exact
 scenes and ten bilingual beats. The first keeps the abducted women distinct,
 names the relatives and households they grieve, preserves their collective

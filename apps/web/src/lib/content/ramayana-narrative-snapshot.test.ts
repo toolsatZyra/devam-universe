@@ -14,7 +14,7 @@ describe("Ramayana consumer narrative snapshot", () => {
       orientationOnlyTurns: 0,
       playableScenes: 466,
       draftSceneOutlines: 0,
-      bilingualBeats: 2067,
+      bilingualBeats: 2078,
     });
     expect(snapshot.boundary).toContain("does not claim a complete consumer Ramayana");
   });

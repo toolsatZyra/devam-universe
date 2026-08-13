@@ -92,7 +92,7 @@ function validateSnapshot(snapshot) {
   }
   if (snapshot.counters.playableScenes !== 466
     || snapshot.counters.draftSceneOutlines !== 0
-    || snapshot.counters.bilingualBeats !== 2067) {
+    || snapshot.counters.bilingualBeats !== 2078) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
