@@ -68,6 +68,7 @@ import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana
 import { RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES } from "../../data/ramayana-lakshmana-joins-library-scenes";
 import { RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES } from "../../data/ramayana-rama-accepts-exile-library-scenes";
 import { RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES } from "../../data/ramayana-cosmic-conquests-library-scenes";
+import { RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES } from "../../data/ramayana-sagara-ganga-library-scenes";
 import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
 import { RAMAYANA_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-thin-turn-library-scenes";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
@@ -199,6 +200,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "lakshmana-joins",
     "rama-accepts-exile",
     "conquest-crosses-cosmic-worlds",
+    "sagara-line-brings-ganga-down",
   ]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
@@ -268,6 +270,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES,
     ...RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
+    ...RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES,
   ]) {
     const turn = pack.compass.turns[scene.turnId];
     if (!turn) throw new Error(`Ramayana library scene has no backbone turn: ${scene.id}`);
@@ -277,7 +280,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     if (scene.spanSha256s.length !== scene.sourceEnd - scene.sourceStart + 1) {
       throw new Error(`Ramayana library scene has an incomplete source-span set: ${scene.id}`);
     }
-    if (turn.sourceRange.kandaSlug === "uttara") {
+    if (["bala", "uttara"].includes(turn.sourceRange.kandaSlug)) {
       const expectedSpanSha256s = getDuttKandaSpanSha256s(
         turn.sourceRange.kandaSlug,
         scene.sourceStart,

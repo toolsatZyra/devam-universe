@@ -19,6 +19,7 @@ describe("Ramayana selected-expression adversarial review", () => {
     expect(scenes
       .filter((scene) => scene.beats.length < 3 || scene.beats.length > 7)
       .map((scene) => [scene.id, scene.beats.length])).toEqual([
+        ["bhagiratha-brings-ganga-from-sky-to-ashes", 8],
         ["mahendra-launches-the-messenger", 12],
         ["despair-yields-to-ashoka-grove", 8],
         ["trijatas-dream-breaks-the-circle", 9],
