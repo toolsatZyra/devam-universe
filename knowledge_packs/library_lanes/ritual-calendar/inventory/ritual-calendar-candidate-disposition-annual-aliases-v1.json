@@ -1,0 +1,427 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_CANDIDATE_DISPOSITION_V1",
+  "batch_id": "annual-alias-normalization-v1",
+  "census_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-comprehensive-census-v3.json",
+  "reviewed_at": "2026-08-13",
+  "scope": "High-confidence annual spelling/name clusters with separate contexts retained where the date or tithi identity may materially differ.",
+  "evidence_refs": [
+    {
+      "ref": "knowledge_packs/library_lanes/ritual-calendar/research/annual-alias-rule-audit-2027-v1.md",
+      "role": "Documents alias and material-variant decisions."
+    },
+    {
+      "ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-comprehensive-census-v3.json",
+      "role": "Exact regional source labels and calendar membership."
+    },
+    {
+      "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/mahashivaratri-north-west-smarta-household-2027-v1.json",
+      "role": "Existing Mahashivaratri lane reused rather than duplicated."
+    }
+  ],
+  "counts": {
+    "source_labels_dispositioned": 57,
+    "accepted_distinct_lane": 22,
+    "alias_of_accepted_lane": 35
+  },
+  "entries": [
+    {
+      "source_label": "Akha Trij",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "akshaya-tritiya",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Akshaya Thiruthiyai",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "akshaya-tritiya",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Akshaya Trithiya",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "akshaya-tritiya",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Akshaya Tritiya",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "akshaya-tritiya",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Akshaya Trutiya",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "akshaya-tritiya",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Ashtami Rohini",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "krishna-janmashtami-south-rohini",
+      "required_applicability_context": "malayalam-solar-lunar-context",
+      "rationale": "South Rohini naming/timing context may change the civil date and requires a scoped lane."
+    },
+    {
+      "source_label": "Astami Rohini",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "krishna-janmashtami-south-rohini",
+      "required_applicability_context": "south-regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Chhoti Holi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "holika-dahan",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Dhuleti",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "holi-colour-day",
+      "required_applicability_context": "regional-colour-day-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Dhulivandan",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "holi-colour-day",
+      "required_applicability_context": "regional-colour-day-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Gokulastami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "krishna-janmashtami-south-rohini",
+      "required_applicability_context": "south-regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Hanuman Janmotsava",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "hanuman-jayanti-north-and-shared",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Hanuman Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "hanuman-jayanti-north-and-shared",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Hanuman Jayanthi *Tamil",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "hanuman-jayanthi-tamil",
+      "required_applicability_context": "tamil-calendar",
+      "rationale": "Tamil calendar date is materially distinct from the North reference."
+    },
+    {
+      "source_label": "Hanuman Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "hanuman-jayanti-north-and-shared",
+      "required_applicability_context": "north-and-shared",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Hanuman Puja",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "hanuman-puja-gujarati",
+      "required_applicability_context": "gujarati-practice-context",
+      "rationale": "A practice-labelled candidate is retained separately until evidence establishes equivalence to a Jayanti lane."
+    },
+    {
+      "source_label": "Hanumana Jayanti",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "hanuman-jayanti-north-and-shared",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Hanumath Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "hanuman-jayanthi-tamil",
+      "required_applicability_context": "tamil-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Holi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "holi-colour-day",
+      "required_applicability_context": "multi-regional-consent-led",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Holi Hunnime",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "holi-colour-day",
+      "required_applicability_context": "regional-colour-day-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Holika Dahan",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "holika-dahan",
+      "required_applicability_context": "north-west-and-shared",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Jagannath Rathyatra",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "jagannath-ratha-yatra",
+      "required_applicability_context": "multi-regional-participation",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Krishna Janmashtami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "krishna-janmashtami-north-and-shared",
+      "required_applicability_context": "north-and-shared",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Maha Shivaratri",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "mahashivaratri-north-west-smarta-household-2027-v1",
+      "required_applicability_context": "existing-lane-canonical-label",
+      "rationale": "Existing complete lane is reused; generic/regional spelling does not create a duplicate."
+    },
+    {
+      "source_label": "Masik Krishna Janmashtami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "masika-krishna-janmashtami",
+      "required_applicability_context": "recurring-monthly",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Nag Pancham",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "nag-panchami",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Nag Panchami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "nag-panchami",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Naga Panchami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "nag-panchami",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Nagara Panchami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "nag-panchami",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Nagula Chavithi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "nagula-chavithi",
+      "required_applicability_context": "telugu",
+      "rationale": "Telugu Chavithi timing and practice context is materially distinct from Panchami."
+    },
+    {
+      "source_label": "Narasimha Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "narasimha-jayanti",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Narasimha Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "narasimha-jayanti",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Nrisinha Jayanti",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "narasimha-jayanti",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Parashurama Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "parashurama-dwadashi",
+      "required_applicability_context": "telugu-dwadashi",
+      "rationale": "The Telugu 2027 date is May 17, distinct from Parashurama Jayanti on May 8; retain a separate candidate."
+    },
+    {
+      "source_label": "Parashurama Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "parashurama-jayanti",
+      "required_applicability_context": "regional-calendar-alias-or-associated-tithi",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Parashurama Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "parashurama-jayanti",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Rakhi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "raksha-bandhan",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Rakhi Bandhan",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "raksha-bandhan",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Raksha Bandhan",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "raksha-bandhan",
+      "required_applicability_context": "multi-regional-consent-led",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Rama Navami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "rama-navami",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Rath Yatra",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "jagannath-ratha-yatra",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Ratha Jatra",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "jagannath-ratha-yatra",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Ratha Saptami",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ratha-saptami",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Ratha Sapthami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ratha-saptami",
+      "required_applicability_context": "tamil-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Sankara Jayanthi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "shankara-jayanti",
+      "required_applicability_context": "south-india",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Shivarathri",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "mahashivaratri-north-west-smarta-household-2027-v1",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Existing complete lane is reused; generic/regional spelling does not create a duplicate."
+    },
+    {
+      "source_label": "Shivaratri",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "mahashivaratri-north-west-smarta-household-2027-v1",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Existing complete lane is reused; generic/regional spelling does not create a duplicate."
+    },
+    {
+      "source_label": "Shree Rama Navami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "rama-navami",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Shree Ramanavami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "rama-navami",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Shree Shankara Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "shankara-jayanti",
+      "required_applicability_context": "malayalam-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Shri Rama Navami",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "rama-navami",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Ugadi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "ugadi-yugadi",
+      "required_applicability_context": "telugu-kannada-and-shared",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Ugadi - Telugu New Year",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ugadi-yugadi",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Vamana Dwadashi",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vamana-dwadashi",
+      "required_applicability_context": "telugu-dwadashi",
+      "rationale": "The Telugu 2027 date is April 17, distinct from Vamana Jayanti on September 12; retain a separate candidate."
+    },
+    {
+      "source_label": "Vamana Jayanthi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "vamana-jayanti",
+      "required_applicability_context": "regional-calendar-alias-or-associated-tithi",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    },
+    {
+      "source_label": "Vamana Jayanti",
+      "disposition": "accepted_distinct_lane",
+      "canonical_candidate_id": "vamana-jayanti",
+      "required_applicability_context": "multi-regional",
+      "rationale": "Named observance candidate retained; practice, story, eligibility and local timing still require scoped evidence."
+    },
+    {
+      "source_label": "Yugadi",
+      "disposition": "alias_of_accepted_lane",
+      "canonical_candidate_id": "ugadi-yugadi",
+      "required_applicability_context": "regional-alias",
+      "rationale": "Regional spelling/name routes to the same candidate because the discovery calendars establish no material action difference; reopen if later evidence changes timing, eligibility or sequence."
+    }
+  ]
+}

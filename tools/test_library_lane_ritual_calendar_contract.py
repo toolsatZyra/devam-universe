@@ -39,6 +39,11 @@ HERO_OWNER_SUPPLEMENTAL_DISPOSITION = (
     / "inventory"
     / "ritual-calendar-candidate-disposition-hero-owners-supplemental-v1.json"
 )
+ANNUAL_ALIAS_DISPOSITION = (
+    LANE
+    / "inventory"
+    / "ritual-calendar-candidate-disposition-annual-aliases-v1.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
 SANKASHTI_LINKS = (
     LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
@@ -321,6 +326,7 @@ def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint()
         load(EKADASHI_DISPOSITION),
         load(HERO_OWNER_DISPOSITION),
         load(HERO_OWNER_SUPPLEMENTAL_DISPOSITION),
+        load(ANNUAL_ALIAS_DISPOSITION),
     ]
     all_labels = [
         entry["source_label"]
@@ -328,9 +334,9 @@ def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint()
         for entry in batch["entries"]
     ]
     candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
-    assert len(all_labels) == len(set(all_labels)) == 235
+    assert len(all_labels) == len(set(all_labels)) == 292
     assert set(all_labels) <= candidate_labels
-    assert len(candidate_labels - set(all_labels)) == 190
+    assert len(candidate_labels - set(all_labels)) == 133
 
     owner = load(HERO_OWNER_DISPOSITION)
     assert owner["counts"] == {
@@ -405,6 +411,36 @@ def test_supplemental_owner_routes_regional_names_without_claiming_vasant_pancha
         assert len(pack["proposals"]) == expected[owner_key]
         total += len(pack["proposals"])
     assert total == 25
+
+
+def test_annual_alias_batch_preserves_verified_material_date_differences():
+    batch = load(ANNUAL_ALIAS_DISPOSITION)
+    assert batch["counts"] == {
+        "source_labels_dispositioned": 57,
+        "accepted_distinct_lane": 22,
+        "alias_of_accepted_lane": 35,
+    }
+    entries = batch["entries"]
+    labels = [entry["source_label"] for entry in entries]
+    assert len(labels) == len(set(labels)) == 57
+    by_label = {entry["source_label"]: entry for entry in entries}
+    assert by_label["Parashurama Dwadashi"]["canonical_candidate_id"] == (
+        "parashurama-dwadashi"
+    )
+    assert by_label["Parashurama Dwadashi"]["disposition"] == (
+        "accepted_distinct_lane"
+    )
+    assert by_label["Vamana Dwadashi"]["canonical_candidate_id"] == (
+        "vamana-dwadashi"
+    )
+    assert by_label["Vamana Dwadashi"]["disposition"] == "accepted_distinct_lane"
+    assert by_label["Hanuman Jayanthi *Tamil"]["canonical_candidate_id"] == (
+        "hanuman-jayanthi-tamil"
+    )
+    assert by_label["Nagula Chavithi"]["canonical_candidate_id"] == (
+        "nagula-chavithi"
+    )
+    assert by_label["Chhoti Holi"]["canonical_candidate_id"] == "holika-dahan"
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():

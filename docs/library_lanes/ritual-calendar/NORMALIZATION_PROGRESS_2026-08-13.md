@@ -5,8 +5,8 @@ Active denominator: `ritual-calendar-comprehensive-census-v3.json`.
 ## Reviewed dispositions
 
 - Raw source-label denominator: **425**
-- Dispositioned in reviewed batch files: **235**
-- Remaining undispositioned: **190**
+- Dispositioned in reviewed batch files: **292**
+- Remaining undispositioned: **133**
 
 The recurring batch covers 43 labels:
 
@@ -37,6 +37,11 @@ including South-Indian Navarathri/Ayutha/Vidyarambham, Bengali Akal Bodhon and
 Kalparambha, regional Diwali names, and two additional Ganesha observances.
 Vasant Panchami remains ritual-calendar work for actionable Saraswati guidance.
 
+The annual-alias batch covers 57 labels. Thirty-five are spelling or regional
+name routes and twenty-two remain distinct candidates. Direct date review
+prevented false merges of Parashurama Dwadashi with Parashurama Jayanti and
+Vamana Dwadashi with Vamana Jayanti.
+
 ## Cross-lane state
 
 Eighty-three typed proposals (twelve Sankashti, one Shakambhari, forty-five
@@ -48,7 +53,7 @@ was created or modified.
 ## What these counts do not mean
 
 Dispositioned does not mean authored, bilingual, user-complete, projected,
-hosted, release-reviewed or published. The 190 remaining labels still include
+hosted, release-reviewed or published. The 133 remaining labels still include
 annual regional observances,
 hero-owned worlds, descriptive calendar events and possible out-of-scope
 labels. Each must be decided explicitly.
