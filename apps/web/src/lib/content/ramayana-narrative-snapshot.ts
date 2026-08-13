@@ -76,6 +76,7 @@ import { RAMAYANA_JATAYU_RESISTANCE_LIBRARY_SCENES } from "../../data/ramayana-j
 import { RAMAYANA_VISHVAMITRA_VASISHTA_LIBRARY_SCENES } from "../../data/ramayana-vishvamitra-vasishta-library-scenes";
 import { RAMAYANA_TRISHANKU_LIBRARY_SCENES } from "../../data/ramayana-trishanku-library-scenes";
 import { RAMAYANA_GUHA_FIRST_NIGHT_LIBRARY_SCENES } from "../../data/ramayana-guha-first-night-library-scenes";
+import { RAMAYANA_RAMA_SUMMONS_LIBRARY_SCENES } from "../../data/ramayana-rama-summons-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
@@ -232,6 +233,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "king-vishvamitra-meets-vasishta",
     "trishanku-suspended-between-worlds",
     "guha-shows-first-night",
+    "rama-crosses-celebration",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
     "two-lineages-reach-lanka",
@@ -333,6 +335,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_VISHVAMITRA_VASISHTA_LIBRARY_SCENES,
     ...RAMAYANA_TRISHANKU_LIBRARY_SCENES,
     ...RAMAYANA_GUHA_FIRST_NIGHT_LIBRARY_SCENES,
+    ...RAMAYANA_RAMA_SUMMONS_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
@@ -364,6 +367,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
         && ((scene.sourceStart >= 26 && scene.sourceEnd <= 30)
           || (scene.sourceStart >= 41 && scene.sourceEnd <= 45)))
       || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 78 && scene.sourceEnd <= 82)
+      || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 15 && scene.sourceEnd <= 18)
       || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 86 && scene.sourceEnd <= 89)
       || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 99 && scene.sourceEnd <= 103)
       || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 108 && scene.sourceEnd <= 112)
