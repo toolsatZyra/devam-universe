@@ -8,7 +8,7 @@
     "attribution": "Traditionally attributed to Goswami Tulsidas",
     "primary_language_note": "The work is principally Awadhi in Devanagari; approachable Hindi and English meaning are separate consumer layers."
   },
-  "purpose": "Let a reader complete the source work in canonical order at their own pace, including one fixed-edition page, one meaningful passage, one doha/chaupai unit, or one kanda at a time, instead of encountering disconnected summaries or compulsory historical commentary.",
+  "purpose": "Let a reader complete the source work in canonical order at their own pace, including one fixed-edition page, one meaningful passage, one natural source unit, or one kanda at a time, instead of encountering disconnected summaries or compulsory historical commentary.",
   "authoritative_source_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
   "source_denominator": {
     "scan_coordinates": 1172,
@@ -22,21 +22,24 @@
   "canonical_reading_progress": {
     "completed_contiguous_batches": [
       {
-        "pack": "knowledge_packs/devotional/ramcharitmanas-balakanda-293-339-v1.json",
+        "pack": "knowledge_packs/devotional/ramcharitmanas-balakanda-293-361-v1.json",
         "division": "Balakanda",
         "canonical_group_start": 293,
-        "canonical_group_end": 339,
-        "passages": 47,
-        "source_units": 264,
-        "bilingual_meanings": 47,
-        "fixed_scan_pages": [354, 404],
-        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+        "canonical_group_end": 361,
+        "passages": 69,
+        "source_units": 377,
+        "bilingual_meanings": 69,
+        "fixed_scan_pages": [354, 424],
+        "reaches_division_end": true,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval_reaching_balakanda_end"
       }
     ],
-    "completed_passages": 47,
-    "completed_source_units": 264,
+    "completed_passages": 69,
+    "completed_source_units": 377,
+    "completed_full_divisions": 0,
     "work_wide_natural_passage_denominator": "discovery_and_reconciliation_in_progress",
-    "boundary": "The first contiguous interval now covers Balakanda groups 293-339 with natural chhand and soratha boundaries preserved, but it does not complete Balakanda or the work. The 345-page q1 count remains a raw page/commentary transcription-quality counter, not the remaining consumer source-text denominator."
+    "boundary": "The contiguous interval now covers Balakanda groups 293-361 and reaches the kanda's closing soratha with every natural boundary preserved. It does not complete Balakanda because groups 1-292 are absent, and it does not complete the work. The 345-page q1 count remains a raw page/commentary transcription-quality counter, not the remaining consumer source-text denominator."
   },
   "reading_modes": [
     {
@@ -65,11 +68,11 @@
     },
     {
       "mode_id": "one_source_unit_daily",
-      "label": { "en": "One doha or chaupai a day", "hi": "प्रतिदिन एक दोहा या चौपाई" },
+      "label": { "en": "One source unit a day", "hi": "प्रतिदिन एक पाठ-इकाई" },
       "unit": "canonically_ordered_source_unit_with_containing_passage_context",
       "progression": "next_unread_source_unit",
       "availability": "selected_batch_available_work_completion_pending",
-      "boundary": "A reader may stop after one source unit, but the product keeps the surrounding natural passage and its Hindi and English meaning available so that a line is not stripped of context."
+      "boundary": "A reader may stop after one chaupai, doha, soratha, chhand, or other retained natural source unit, but the product keeps the surrounding passage and its Hindi and English meaning available so that a line is not stripped of context."
     },
     {
       "mode_id": "kanda_progression",
