@@ -1,0 +1,1038 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "kamada-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "kamada-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve the Shukla-paksha Kamada Ekadashi for you?",
+      "Does your family follow ordinary Smarta Kamada, or a materially different Gauna/Vaishnava date, food or parana rule?",
+      "Would a story involving royal punishment, dehumanising transformation and one spouse helping another be distressing or unsafe today?",
+      "Would one private, bounded offer of help—with no contact, disclosure, money or reconciliation—be safer?",
+      "Does anyone need a non-fasting, well-rested, no-touch, no-flame and material-free form?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "kamada-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "kamada-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "kamada-ekadashi",
+        "language_code": "en",
+        "note": "This is the ordinary North/West Smarta Kamada household lane. The source's performance lapse, royal curse, demon form, spouse's voluntary fast, merit transfer, restoration and results are story claims—not permission to punish mistakes, diagnose a curse, impose a rescue duty or promise any desire."
+      },
+      {
+        "observance_slug": "kamada-ekadashi",
+        "language_code": "hi",
+        "note": "यह सामान्य उत्तर/पश्चिम स्मार्त कामदा गृह-मार्ग है। स्रोत में प्रदर्शन की चूक, राजा का शाप, राक्षस-रूप, पत्नी का स्वेच्छिक उपवास, पुण्य-समर्पण, पुनः रूप-प्राप्ति और फल कथा-दावे हैं—गलती पर दंड, शाप का निदान, जीवनसाथी पर बचाव का कर्तव्य या हर इच्छा पूरी होने का वादा नहीं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-kamada-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "kamada-shukla-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "kamada-private-nonfast-voluntary-support-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Andhra Pradesh, Telugu, Gujarati and ISKCON fixtures place ordinary Kamada Ekadashi on Saturday 17 April 2027. Month labels may differ under purnimanta and amanta conventions; resolve identity from the user's Indian city and accepted authority rather than the English month name. Never copy displayed tithi/parana times, this date or a named temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-kamada-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 47: Kamada Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Lalita-Lalita account, performance lapse, royal curse, spouse action, merit transfer and attributed restoration; source facts rather than punishment, diagnosis, compulsory care or guarantee",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365624.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 47",
+        "reviewed_lines": "54-83",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-kamada-2027",
+      "title": "2027 Kamada Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian regional and ISKCON calendar discovery evidence for ordinary Kamada on 17 April 2027; no portable parana or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/kamada/kamada-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-04-17",
+        "identity": "Kamada Shukla Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "nhm-mental-health-social-worker",
+      "title": "Manual of Mental Health for Social Workers",
+      "publisher": "National Health Mission, Ministry of Health and Family Welfare",
+      "source_role": "official boundary rejecting possession, curse and evil-spirit explanations for mental disorders",
+      "rights_lane": "citation_only",
+      "url": "https://nhm.gov.in/images/pdf/programmes/NMHP/Training_Manuals/Manual_of_Mental_Health_for_Social_Worker.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "myths about possession, curses and mental disorders",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-kamada-research",
+      "title": "Kamada Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of bounded retelling, proportionate response to mistakes, voluntary support, non-diagnostic safety, non-guarantee and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/kamada-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "kamada-ekadashi"
+      ],
+      "title": "Kamada Ekadashi: support without self-erasure",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Kamada Ekadashi today. A complete home form is non-fasting: remember Vishnu, hear the Padma-Purana-labelled Lalita-Lalita account without its grotesque body inventory, and choose either one proportionate correction for your own mistake or one bounded offer of help that may be refused. No fast, merit transfer, curse-removal, spouse rescue, contact or promised desire is required.",
+      "significance": {
+        "text": "The reviewed chapter depicts Lalita's words stumbling while he remembers his wife, King Pundarika's disproportionate curse, Lalita's voluntary search for help and the text's merit-transfer restoration. Devam does not treat affection or a performance error as sin and does not make one spouse responsible for saving another. A bounded meaning is support without self-erasure and proportionate response to mistakes: correct what is yours, ask what help is wanted, respect refusal and promise no result.",
+        "source_ids": [
+          "padma-purana-kamada-deshpande",
+          "devam-kamada-research"
+        ],
+        "scope_note": "Source-labelled ethical reflection; not relationship, legal, clinical, supernatural, merit-transfer or wish-fulfilment advice."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "kamada-lalita-lalita-en",
+          "title": "Lalita and Lalita in Padma Purana chapter 47",
+          "summary": "Krishna tells Yudhishthira an old account Vasistha told King Dilipa. In Nagapura, the gandharva Lalita and celestial nymph Lalita are a loving couple. While the husband performs before King Pundarika without his wife present, remembering her makes his words stumble. Karkotaka reports the error, and the angry king curses him into a demon form. The reviewed expression gives a grotesque body inventory; Devam omits it. Lalita follows her husband in grief and asks a sage for help. The sage names Kamada Ekadashi and tells her to observe its vow and give the merit to him. The chapter says she fasts, dedicates the merit before Vishnu and a brahmana, and her husband is immediately restored; it attributes removal of sin and merit to the observance and hearing its account. Devam preserves affection, the performance lapse, disproportionate royal power, Lalita's voluntary action, merit transfer and restoration as source facts. It does not make a mistake punishable, dehumanise illness or disability, impose a wife's rescue duty, diagnose a curse or promise any desired outcome.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 47",
+          "source_ids": [
+            "padma-purana-kamada-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "kamada-en-voluntary-support",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Vishnu remembrance, bounded source account, one proportionate correction or consent-safe offer of practical support, and a non-fasting close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "kamada-en-formal-vow-context",
+          "population_scope": "Families or institutions with a separately inherited or authorised formal practice",
+          "description": "A formal authority may prescribe fasting, merit dedication, mantra, food or parana rules. This ordinary guide does not reconstruct them or promise a result.",
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "devam-kamada-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "kamada-en-minimum-v1",
+          "label": "Private support or proportionate correction",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "drik-kamada-2027",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "materials": [
+            {
+              "item": "A private, safe place",
+              "required": true,
+              "substitutions": [
+                "Use only a brief mental form",
+                "Postpone until privacy is safe"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            },
+            {
+              "item": "An optional private reminder",
+              "required": false,
+              "substitutions": [
+                "Do not write",
+                "Act directly without recording another person"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Kamada Ekadashi. Do not derive the date or parana from the story.",
+              "why": "The timing and authority are deterministic and local.",
+              "source_ids": [
+                "drik-kamada-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Choose normal food, water, medicine and sleep. Do not begin fasting, deprivation or vigil from this guide.",
+              "why": "The non-fasting and rested route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, short family prayer or silence. No image or material is needed.",
+              "why": "Devotion remains accessible without an invented universal mantra.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 47. Omit the grotesque body inventory and label curse, demon form, merit transfer and restoration as source claims.",
+              "why": "The source is preserved without dehumanisation or diagnosis.",
+              "source_ids": [
+                "padma-purana-kamada-deshpande",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Choose one lane: correct one mistake within your own responsibility, or think of one person you may safely support. Do not assume they need rescue.",
+              "why": "The practice separates accountability from compulsory care.",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "If offering help, ask what would help and accept no, silence or changed consent. Offer only a bounded action within your capacity; do not demand contact, disclosure, money, forgiveness or reconciliation.",
+              "why": "Support belongs to the recipient and remains voluntary.",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and complete only the safe action. Preserve boundaries, qualified care, reporting and law; claim no merit transfer, curse removal or guaranteed desire.",
+              "why": "Ritual cannot replace safety or guarantee outcomes.",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately with gratitude, eat, hydrate, take medicine and rest normally. Complete only the correction or wanted support within your capacity; this route starts no fast, contact, spouse duty, merit-transfer formula, curse removal or parana.",
+            "source_ids": [
+              "devam-kamada-research",
+              "devam-ekadashi-recurring-scaffold"
+            ],
+            "scope_note": "Qualified health, legal, workplace, safeguarding or survivor support remains separate and may be necessary."
+          }
+        },
+        {
+          "procedure_id": "kamada-en-standard-v1",
+          "label": "Consent-led family support reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "family-led ordinary remembrance; no compulsory disclosure, rescue duty or formal merit dedication",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "drik-kamada-2027",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "Optional water or fruit for a simple offering",
+              "required": false,
+              "substitutions": [
+                "No offering",
+                "Use ordinary safe food later"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the local Kamada date and choose the non-fasting family form. Ask whether everyone wants the story and discussion; anyone may use silence or leave.",
+              "why": "Date, health and consent come first.",
+              "source_ids": [
+                "drik-kamada-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Remember Vishnu with the family's familiar prayer, name or silence. Keep food, water, medicine and rest normal.",
+              "why": "No universal mantra or fast is invented.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Tell the bounded Padma Purana account: affection, a performance lapse, disproportionate curse, Lalita's voluntary help, and merit-transfer restoration as a source claim. Omit the grotesque body inventory.",
+              "why": "The story remains recognisable without modelling dehumanisation.",
+              "source_ids": [
+                "padma-purana-kamada-deshpande",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person names privately either one proportionate correction of their own or one bounded offer of help. Do not assign wives, women, children or carers responsibility for another adult.",
+              "why": "Support and responsibility stay voluntary and correctly owned.",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close without predictions. Carry out only wanted, affordable and safe help; use qualified routes for danger, health, law, abuse or workplace duties.",
+              "why": "A devotional close does not guarantee or replace real-world support.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Share ordinary food or water if safe, end the family discussion without extracting promises, and let each person keep their action private. No one owes fasting, rescue, money, contact or a particular outcome.",
+            "source_ids": [
+              "devam-kamada-research"
+            ],
+            "scope_note": "Minor family expression stays within this lane; formal vow and merit-dedication rules require their own authority."
+          }
+        },
+        {
+          "procedure_id": "kamada-en-elaborate-v1",
+          "label": "Verified ordinary temple visit",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "ordinary visitor conduct at a named institution with current verified programme",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-kamada-2027",
+            "nhm-mental-health-social-worker",
+            "devam-kamada-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified current temple information and safe travel plan",
+              "required": true,
+              "substitutions": [
+                "Stay home and use the complete minimum route"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named temple's current programme, entry, safety, offerings and return travel. Do not infer a time from a calendar card.",
+              "why": "A living institution controls its current schedule.",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Participate only as an ordinary visitor. Do not copy priest-led fasting, merit-dedication, wish-fulfilment, curse-removal or parana rules from this guide.",
+              "why": "Those practices require separate live authority.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Refuse forced disclosure, private access, restraint, beating, isolation, medication advice, unwanted touch, payment pressure or contact with an unsafe person. Leave if unsafe.",
+              "why": "Devotion does not remove consent, health, safeguarding or law.",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Return safely, rest, and complete only one voluntary action without claiming that the visit will grant a desire, restore a person or repair a relationship.",
+              "why": "The ordinary meaning is bounded and non-guaranteeing.",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Treat the institution's ordinary visitor exit as the close. Stay home if current information or safe travel cannot be verified; the private non-fasting form is complete.",
+            "source_ids": [
+              "devam-kamada-research"
+            ],
+            "scope_note": "The institution controls its rite; no programme overrides health, consent, safety or law."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-writing-and-household-form",
+          "scope": "Minor household expression",
+          "difference": "Language, image/no image, water/fruit/no offering, private writing/no writing, familiar prayer/silence and individual/family form do not change the core action.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "formal-vow-or-merit-dedication-en",
+          "scope": "Inherited or priest-led formal authority",
+          "difference": "Fasting, sankalpa, merit recipient, mantra, food and parana rules materially change the action and require their own authority.",
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority",
+          "scope": "Different date or parana authority",
+          "difference": "A materially different date, food rule or parana is not merged with ordinary Smarta timing.",
+          "source_ids": [
+            "drik-kamada-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "curse-possession-or-exorcism",
+          "scope": "Supernatural diagnosis or removal claim",
+          "difference": "Diagnosis, restraint, touch, isolation, medication and health risks materially differ; Devam does not provide or validate this route.",
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "nhm-mental-health-social-worker"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme",
+          "scope": "Institution-specific liturgy",
+          "difference": "Live schedule, priest-led acts, access, safeguarding, fees and offerings require the named institution.",
+          "source_ids": [
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-professional-support",
+          "scope": "Legal, clinical, safeguarding, workplace or survivor route",
+          "difference": "Danger, illness, abuse, legal or workplace needs require evidence, duties and qualified help that ritual cannot replace.",
+          "source_ids": [
+            "nhm-mental-health-social-worker",
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi",
+          "scope": "Another Ekadashi identity",
+          "difference": "Kamada, Varuthini and other named Ekadashis have different timing, story or practice evidence.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A private, non-fasting, rested, no-touch, no-flame, no-purchase, image-free, writing-free and material-free form is complete.",
+        "Affection, remembering a loved one and a performance mistake are not sin or grounds for humiliation, threats, violence, retaliation or dehumanisation.",
+        "The grotesque demon-body inventory is omitted. Never use demon imagery for disability, illness, appearance, appetite, addiction, anger, trauma or a mistake.",
+        "Lalita's help is voluntary in the source. No spouse, woman, child or carer owes rescue, fasting, secrecy, money, access, forgiveness, reconciliation or continued contact.",
+        "Support requires consent and may be refused or withdrawn. Never tell someone to stay with or return to an unsafe partner; no-contact and safety plans remain valid.",
+        "The story does not diagnose possession, curse, mental illness, disability, trauma or behaviour. Do not restrain, beat, isolate, fast, stop medication or perform exorcism.",
+        "Do not hide abuse, coercion, exploitation, theft or professional misconduct as loyalty. Preserve safety, evidence, reporting, restitution, treatment and legal duties.",
+        "Do not begin or intensify fasting here. Never change insulin, medicine, meals or hydration; use qualified medical advice for an inherited fast.",
+        "‘Kamada’ is not a guarantee of a chosen person, marriage, pregnancy, cure, wealth, job, examination, immigration, legal or other desired result.",
+        "Curse release, merit transfer, restored form/status, forgiveness, relationship repair, purity, success or any outcome is not guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "kamada-ekadashi"
+      ],
+      "title": "कामदा एकादशी: स्वयं को मिटाए बिना सहायता",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज कामदा एकादशी है। घर का पूर्ण रूप बिना उपवास है: विष्णु-स्मरण करें, पद्मपुराण-नाम वाली ललित-ललिता कथा विकृत शरीर-वर्णन के बिना सुनें, फिर अपनी गलती का एक अनुपातपूर्ण सुधार या अस्वीकार की जा सकने वाली एक सीमित सहायता चुनें। उपवास, पुण्य-समर्पण, शाप-निवारण, जीवनसाथी का बचाव, संपर्क या इच्छा-पूर्ति का वादा जरूरी नहीं।",
+      "significance": {
+        "text": "समीक्षित अध्याय में पत्नी को याद करते समय ललित के शब्द चूकते हैं, राजा पुण्डरीक अनुपातहीन शाप देता है, ललिता स्वेच्छा से सहायता खोजती है और पाठ पुण्य-समर्पण से रूप-प्राप्ति बताता है। देवम स्नेह या प्रदर्शन की चूक को पाप नहीं मानता और किसी जीवनसाथी को दूसरे का उद्धारक नहीं बनाता। सीमित अर्थ है—स्वयं को मिटाए बिना सहायता और गलती पर अनुपातपूर्ण प्रतिक्रिया: अपना सुधार करें, पूछें कि कौन-सी सहायता चाहिए, मना करने का सम्मान करें और फल का वादा न करें।",
+        "source_ids": [
+          "padma-purana-kamada-deshpande",
+          "devam-kamada-research"
+        ],
+        "scope_note": "स्रोत-नाम वाला नैतिक चिंतन; संबंध, कानून, चिकित्सा, अलौकिक निदान, पुण्य-समर्पण या इच्छा-पूर्ति की सलाह नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "kamada-lalita-lalita-hi",
+          "title": "पद्मपुराण अध्याय 47 में ललित और ललिता",
+          "summary": "कृष्ण युधिष्ठिर को वह पुरानी कथा सुनाते हैं जो वसिष्ठ ने राजा दिलीप से कही थी। नागपुर में गन्धर्व ललित और अप्सरा ललिता प्रेमपूर्ण दम्पति हैं। पत्नी के बिना राजा पुण्डरीक के सामने प्रदर्शन करते समय उसे याद करने से ललित के शब्द चूकते हैं। कर्कोटक यह गलती बताता है और क्रोधित राजा उसे राक्षस-रूप का शाप देता है। समीक्षित पाठ शरीर का विकृत विवरण देता है; देवम उसे छोड़ता है। ललिता दुःख में पति के साथ जाती है और एक ऋषि से सहायता पूछती है। ऋषि कामदा एकादशी का व्रत करके उसका पुण्य पति को देने को कहते हैं। अध्याय कहता है कि वह उपवास और पुण्य-समर्पण करती है और पति तुरन्त गन्धर्व-रूप पाता है; पाठ व्रत और कथा-श्रवण के फल बताता है। देवम स्नेह, प्रदर्शन की चूक, राजा की अनुपातहीन सत्ता, ललिता की स्वैच्छिक क्रिया, पुण्य-समर्पण और पुनः रूप-प्राप्ति को स्रोत-तथ्य रखता है। यह गलती पर दंड, बीमारी/विकलांगता का अमानवीकरण, पत्नी का अनिवार्य बचाव-कर्तव्य, शाप का निदान या किसी इच्छा का निश्चित फल नहीं बनता।",
+          "tradition_scope": "पद्मपुराण उत्तरखण्ड अध्याय 47 का समीक्षित देशपाण्डे अंग्रेजी रूप",
+          "universal_origin_claimed": false,
+          "source_ids": [
+            "padma-purana-kamada-deshpande"
+          ]
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "kamada-hi-voluntary-support",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त व्यक्ति या गृह",
+          "description": "विष्णु-स्मरण, सीमित स्रोत-कथा, अपनी गलती का एक अनुपातपूर्ण सुधार या सहमति-सुरक्षित सहायता, और बिना उपवास समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "kamada-hi-formal-vow-context",
+          "population_scope": "अलग विरासत या अधिकृत औपचारिक विधि वाले परिवार/संस्थान",
+          "description": "औपचारिक प्राधिकारी उपवास, पुण्य-समर्पण, मंत्र, भोजन या पारण-नियम दे सकता है। यह सामान्य मार्ग उन्हें गढ़ता या फल सुनिश्चित नहीं करता।",
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "devam-kamada-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "kamada-hi-minimum-v1",
+          "label": "निजी सहायता या अनुपातपूर्ण सुधार",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "drik-kamada-2027",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "materials": [
+            {
+              "item": "निजी और सुरक्षित स्थान",
+              "required": true,
+              "substitutions": [
+                "केवल संक्षिप्त मानसिक रूप करें",
+                "निजता सुरक्षित होने तक टालें"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक निजी स्मरण",
+              "required": false,
+              "substitutions": [
+                "कुछ न लिखें",
+                "दूसरे की बात दर्ज किए बिना सीधे काम करें"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त प्राधिकारी में आज कामदा एकादशी है। कथा से तिथि या पारण न निकालें।",
+              "why": "समय और प्राधिकार स्थानीय तथा निर्धार्य हैं।",
+              "source_ids": [
+                "drik-kamada-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, जल, दवा और नींद चुनें। इस मार्ग से उपवास, वंचना या जागरण शुरू न करें।",
+              "why": "बिना उपवास और विश्रामयुक्त रूप पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का परिचित नाम, छोटा पारिवारिक प्रार्थना-वाक्य या मौन रखें। चित्र या सामग्री जरूरी नहीं।",
+              "why": "सार्वभौम मंत्र गढ़े बिना भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पद्मपुराण अध्याय 47 नाम वाली छोटी कथा सुनें। विकृत शरीर-वर्णन छोड़ें; शाप, राक्षस-रूप, पुण्य-समर्पण और पुनः रूप-प्राप्ति को स्रोत-दावा कहें।",
+              "why": "स्रोत अमानवीकरण या निदान के बिना सुरक्षित रहता है।",
+              "source_ids": [
+                "padma-purana-kamada-deshpande",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "एक मार्ग चुनें: अपनी जिम्मेदारी की एक गलती सुधारें, या ऐसे व्यक्ति को याद करें जिसकी आप सुरक्षित सहायता कर सकते हैं। यह न मानें कि उसे बचाव चाहिए।",
+              "why": "अभ्यास जवाबदेही और अनिवार्य देखभाल अलग रखता है।",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सहायता देनी हो तो पूछें कि क्या उपयोगी होगा; ना, मौन या बदली सहमति मानें। अपनी क्षमता में सीमित काम दें; संपर्क, खुलासा, पैसा, माफी या मेल-मिलाप न मांगें।",
+              "why": "सहायता पाने वाला व्यक्ति उसके स्वरूप को नियंत्रित करता है।",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता से बंद करें और केवल सुरक्षित काम करें। सीमा, योग्य सहायता, रिपोर्ट और कानून रखें; पुण्य-स्थानांतरण, शाप-मुक्ति या इच्छा-फल का दावा न करें।",
+              "why": "अनुष्ठान सुरक्षा नहीं बदलता और फल सुनिश्चित नहीं करता।",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "निजी कृतज्ञता से बंद करें; सामान्य भोजन, जल, दवा और विश्राम रखें। अपनी क्षमता में केवल सुधार या चाही गई सहायता करें; यह मार्ग उपवास, संपर्क, जीवनसाथी-कर्तव्य, पुण्य-विधि, शाप-निवारण या पारण शुरू नहीं करता।",
+            "source_ids": [
+              "devam-kamada-research",
+              "devam-ekadashi-recurring-scaffold"
+            ],
+            "scope_note": "योग्य स्वास्थ्य, कानून, कार्यस्थल, सुरक्षा या पीड़ित-सहायता अलग रह सकती है।"
+          }
+        },
+        {
+          "procedure_id": "kamada-hi-standard-v1",
+          "label": "सहमति-आधारित पारिवारिक सहायता-चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; अनिवार्य खुलासा, बचाव-कर्तव्य या औपचारिक पुण्य-समर्पण नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "drik-kamada-2027",
+            "nhm-mental-health-social-worker",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु-चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "चित्र नहीं",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "सरल चढ़ावे के लिए वैकल्पिक जल या फल",
+              "required": false,
+              "substitutions": [
+                "कोई चढ़ावा नहीं",
+                "बाद में सामान्य सुरक्षित भोजन"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय कामदा तिथि और बिना उपवास पारिवारिक रूप की पुष्टि करें। पूछें कि सभी कथा/चर्चा चाहते हैं या नहीं; कोई मौन रख या बाहर जा सकता है।",
+              "why": "तिथि, स्वास्थ्य और सहमति पहले हैं।",
+              "source_ids": [
+                "drik-kamada-2027",
+                "icmr-type1-diabetes-fasting",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "परिवार की परिचित प्रार्थना, विष्णु-नाम या मौन रखें। भोजन, जल, दवा और विश्राम सामान्य रहें।",
+              "why": "सार्वभौम मंत्र या उपवास नहीं गढ़ा जाता।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सीमित पद्मपुराण कथा कहें: स्नेह, प्रदर्शन की चूक, अनुपातहीन शाप, ललिता की स्वैच्छिक सहायता और स्रोत-दावे के रूप में पुण्य से रूप-प्राप्ति। विकृत शरीर-वर्णन छोड़ें।",
+              "why": "कथा अमानवीकरण का आदर्श बने बिना पहचानी जाती है।",
+              "source_ids": [
+                "padma-purana-kamada-deshpande",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति निजी रूप से अपना एक अनुपातपूर्ण सुधार या सीमित सहायता चुने। पत्नी, स्त्री, बच्चे या देखभालकर्ता को दूसरे वयस्क का जिम्मेदार न बनाएं।",
+              "why": "सहायता और जिम्मेदारी स्वैच्छिक तथा सही व्यक्ति की रहती है।",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "फल बताए बिना बंद करें। केवल चाही गई, वहनीय और सुरक्षित सहायता करें; संकट, स्वास्थ्य, कानून, दुर्व्यवहार या कार्यस्थल-कर्तव्य के लिए योग्य मार्ग लें।",
+              "why": "भक्ति-समापन वास्तविक सहायता का विकल्प या गारंटी नहीं।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित हो तो सामान्य भोजन/जल लें, वादा निकलवाए बिना चर्चा बंद करें और हर व्यक्ति का काम निजी रहने दें। कोई उपवास, बचाव, पैसा, संपर्क या फल नहीं देता।",
+            "source_ids": [
+              "devam-kamada-research"
+            ],
+            "scope_note": "छोटा पारिवारिक अंतर इसी मार्ग में रहता है; औपचारिक व्रत और पुण्य-समर्पण अलग प्राधिकार चाहता है।"
+          }
+        },
+        {
+          "procedure_id": "kamada-hi-elaborate-v1",
+          "label": "सत्यापित सामान्य मंदिर-यात्रा",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित संस्थान में सामान्य आगंतुक",
+          "form": "institutional_participation",
+          "estimated_minutes": 45,
+          "source_ids": [
+            "drik-kamada-2027",
+            "nhm-mental-health-social-worker",
+            "devam-kamada-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित मंदिर-सूचना और सुरक्षित यात्रा",
+              "required": true,
+              "substitutions": [
+                "घर रहकर पूर्ण न्यूनतम रूप करें"
+              ],
+              "source_ids": [
+                "devam-kamada-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित मंदिर से वर्तमान कार्यक्रम, प्रवेश, सुरक्षा, चढ़ावे और वापसी सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।",
+              "why": "जीवित संस्थान अपना कार्यक्रम नियंत्रित करता है।",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित उपवास, पुण्य-समर्पण, इच्छा-पूर्ति, शाप-निवारण या पारण की नकल न करें।",
+              "why": "ये काम अलग जीवित प्राधिकार चाहते हैं।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "जबरन खुलासा, निजी पहुँच, बंधन, मारपीट, एकांत, दवा-सलाह, अनचाहा स्पर्श, भुगतान-दबाव या असुरक्षित व्यक्ति से संपर्क मना करें। असुरक्षित हो तो निकलें।",
+              "why": "भक्ति सहमति, स्वास्थ्य, सुरक्षा या कानून नहीं हटाती।",
+              "source_ids": [
+                "nhm-mental-health-social-worker",
+                "devam-kamada-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "सुरक्षित लौटकर विश्राम करें और केवल एक स्वैच्छिक काम करें; यात्रा से इच्छा, रूप-प्राप्ति या संबंध-सुधार निश्चित न कहें।",
+              "why": "सामान्य अर्थ सीमित और गैर-गारंटी है।",
+              "source_ids": [
+                "devam-kamada-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "संस्थान का सामान्य आगंतुक-निकास समापन है। वर्तमान सूचना या सुरक्षित यात्रा सत्यापित न हो तो घर रहें; निजी बिना-उपवास रूप पूर्ण है।",
+            "source_ids": [
+              "devam-kamada-research"
+            ],
+            "scope_note": "संस्थान अपनी विधि नियंत्रित करता है; कोई कार्यक्रम स्वास्थ्य, सहमति, सुरक्षा या कानून नहीं हटाता।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-writing-and-household-form-hi",
+          "scope": "छोटा गृह-अंतर",
+          "difference": "भाषा, चित्र/नहीं, जल/फल/नहीं, स्मरण/लेखन नहीं, परिचित प्रार्थना/मौन और व्यक्ति/परिवार मूल काम नहीं बदलते।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "formal-vow-or-merit-dedication-hi",
+          "scope": "विरासत या पुरोहित-नेतृत्व औपचारिक प्राधिकार",
+          "difference": "उपवास, संकल्प, पुण्य-प्राप्तकर्ता, मंत्र, भोजन और पारण-नियम काम बदलते हैं और अपना प्राधिकार चाहते हैं।",
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-hi",
+          "scope": "अलग तिथि या पारण प्राधिकार",
+          "difference": "भिन्न तिथि, भोजन-नियम या पारण सामान्य स्मार्त समय में नहीं मिलते।",
+          "source_ids": [
+            "drik-kamada-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "curse-possession-or-exorcism-hi",
+          "scope": "अलौकिक निदान या निवारण-दावा",
+          "difference": "निदान, बंधन, स्पर्श, एकांत, दवा और स्वास्थ्य-जोखिम अलग हैं; देवम यह मार्ग नहीं देता/मानता।",
+          "source_ids": [
+            "padma-purana-kamada-deshpande",
+            "nhm-mental-health-social-worker"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-hi",
+          "scope": "संस्थान-विशिष्ट विधि",
+          "difference": "जीवित समय, पुरोहित-कर्म, प्रवेश, सुरक्षा, शुल्क और चढ़ावे नामित संस्थान चाहते हैं।",
+          "source_ids": [
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-professional-support-hi",
+          "scope": "कानूनी, चिकित्सकीय, सुरक्षा, कार्यस्थल या पीड़ित मार्ग",
+          "difference": "संकट, बीमारी, दुर्व्यवहार, कानून या कार्यस्थल-आवश्यकता योग्य प्रमाण, कर्तव्य और सहायता चाहती है जिसे अनुष्ठान नहीं बदलता।",
+          "source_ids": [
+            "nhm-mental-health-social-worker",
+            "devam-kamada-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi-hi",
+          "scope": "अन्य एकादशी पहचान",
+          "difference": "पापमोचनी, वरुथिनी और अन्य एकादशियों की तिथि, कथा या अभ्यास अलग हैं।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "निजी, बिना उपवास, विश्रामयुक्त, बिना स्पर्श, लौ, खरीद, चित्र, लेखन और सामग्री का रूप पूर्ण है।",
+        "स्नेह, प्रियजन को याद करना और प्रदर्शन की गलती पाप या अपमान, धमकी, हिंसा, बदला या अमानवीकरण का आधार नहीं।",
+        "विकृत राक्षस-शरीर वर्णन छोड़ा गया है। विकलांगता, बीमारी, रूप, भूख, लत, क्रोध, आघात या गलती के लिए राक्षस-छवि न लगाएं।",
+        "स्रोत में ललिता की सहायता स्वैच्छिक है। जीवनसाथी, स्त्री, बच्चा या देखभालकर्ता बचाव, उपवास, गोपनीयता, पैसा, पहुँच, माफी, मेल-मिलाप या संपर्क नहीं देता।",
+        "सहायता के लिए सहमति चाहिए और वह मना/वापस हो सकती है। किसी को असुरक्षित साथी के साथ रहने/लौटने न कहें; संपर्क-विराम और सुरक्षा-योजना मानें।",
+        "कथा possession, शाप, मानसिक बीमारी, विकलांगता, आघात या व्यवहार का निदान नहीं। बंधन, मारपीट, एकांत, जबरन उपवास, दवा रोकना या झाड़-फूँक न करें।",
+        "दुर्व्यवहार, दबाव, शोषण, चोरी या पेशेवर दुराचार को निष्ठा कहकर न छिपाएं। सुरक्षा, प्रमाण, रिपोर्ट, प्रतिपूर्ति, उपचार और कानून रखें।",
+        "यहाँ उपवास शुरू या कड़ा न करें। इंसुलिन, दवा, भोजन या जल न बदलें; विरासत उपवास में योग्य चिकित्सकीय सलाह लें।",
+        "‘कामदा’ चुना साथी, विवाह, गर्भ, इलाज, धन, नौकरी, परीक्षा, आव्रजन, कानूनी या दूसरी इच्छा का वादा नहीं।",
+        "शाप-मुक्ति, पुण्य-समर्पण, रूप/स्थिति वापसी, माफी, संबंध-सुधार, शुद्धि, सफलता या कोई फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

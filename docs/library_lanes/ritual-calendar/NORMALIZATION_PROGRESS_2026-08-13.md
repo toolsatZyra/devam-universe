@@ -351,6 +351,32 @@ authored library content has not been projected, hosted, independently released
 or published. The evidence-confirmed Pankoddhar denominator correction remains
 open and uncounted pending a reviewed successor freeze.
 
+The twenty-fourth post-freeze item is complete at the bilingual authored-library
+layer: `kamada-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
+reviewed 17 April 2027 ordinary fixture and gives a private, non-fasting,
+well-rested, no-touch, no-flame, writing-free and material-free route: Vishnu
+remembrance, a chapter-47-labelled Lalita-Lalita account, and either one
+proportionate correction for the participant's own mistake or one bounded offer
+of help that the other person may refuse.
+
+The source's affection, performance lapse, Karkotaka's report, Pundarika's
+disproportionate curse, grotesque body inventory, Lalita's voluntary support,
+fast, merit dedication and attributed restoration remain source facts. The body
+inventory is omitted from ordinary copy; a mistake is not grounds for
+humiliation; no spouse, woman or carer is assigned a rescue duty; curse and
+demon form are not diagnoses; and “Kamada” is not a guarantee that any desired
+person, relationship, health, wealth, education, migration or legal result will
+occur. Language, image/no image, optional reminder/no writing and familiar
+prayer/silence remain inside the lane. Formal vow or merit dedication,
+different timing authority, supernatural-removal claims, named institutions,
+qualified professional routes and other named Ekadashis remain separate.
+
+Exact accepted-authoring coverage is now **24 completed after freeze / 184
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published. The evidence-confirmed Pankoddhar denominator correction remains
+open and uncounted pending a reviewed successor freeze.
+
 The twenty-third post-freeze item is complete at the bilingual authored-library
 layer: `papamochani-ekadashi-north-west-smarta-household-2027-v1`. It preserves
 the reviewed 2 April 2027 ordinary fixture and gives a private, non-fasting,

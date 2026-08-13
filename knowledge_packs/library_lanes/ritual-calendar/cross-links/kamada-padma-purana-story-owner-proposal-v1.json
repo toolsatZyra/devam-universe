@@ -1,0 +1,53 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-kamada-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "kamada-to-padma-purana-lalita-lalita-story-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kamada-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-kamada-lalita-lalita-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_kamada_lalita_lalita_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Kamada account",
+        "hi": "कामदा की पूरी स्रोत-नाम वाली कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "The ritual pack uses a bounded retelling from the reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 47. A future story/scripture owner should provide the lawful full expression, Sanskrit and edition coordinates, and reception context while preserving Lalita's affection and performance lapse, Karkotaka's report, Pundarika's disproportionate royal curse, the grotesque body inventory, Lalita's voluntary accompaniment and request for help, her fast and merit dedication, supernatural restoration and attributed results as source facts rather than punishment norms, dehumanising descriptions, compulsory spouse or women's rescue duty, diagnosis, universal ritual instructions or guaranteed desire fulfilment.",
+        "geography_codes": [
+          "north-india",
+          "west-india"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india"
+        ],
+        "time_scope": "Locally resolved Chaitra Shukla Kamada Ekadashi; reviewed 2027 fixture 17 April",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 47; Sanskrit, edition and reception owner review unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365624.html",
+          "claim_scope": "Reviewed lines 54-83 narrating Lalita and Lalita, the performance lapse, Pundarika's curse, forest wandering, the sage's instruction, merit dedication and attributed restoration."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/kamada-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual timing, bounded source account, proportionate-response and voluntary-support framing, non-diagnostic safety, no-guarantee closing and major-variant routing."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
