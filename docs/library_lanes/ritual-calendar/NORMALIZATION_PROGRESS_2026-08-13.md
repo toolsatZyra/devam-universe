@@ -707,3 +707,23 @@ Exact accepted-authoring coverage is now **177 completed after freeze / 31
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first Sheetala regional-observance checkpoint
+
+Three accepted answers are complete as bilingual applicability lanes: Basoda,
+Sheetala Ashtami and Gujarati Shitala Satam.
+
+The frozen denominator retains Basoda and Sheetala Ashtami separately, while
+current sources commonly identify them as overlapping names for the same
+post-Holi observance. The consumer routes cross-identify that overlap and never
+generate duplicate puja. Gujarati Shitala Satam remains materially separate:
+it follows Randhan Chhath in Shravana. Sheetala's historic pox association is
+source-labelled devotional history, never a cure or substitute for vaccination
+or medical care. Previous-day food is optional and subordinate to FSSAI cooling,
+refrigeration and time limits; safe fresh or shelf-stable food, or no food
+offering, is always an available substitution.
+
+Exact accepted-authoring coverage is now **180 completed after freeze / 28
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
