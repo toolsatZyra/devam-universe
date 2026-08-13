@@ -11,7 +11,7 @@ The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-452 substantial scenes and 1,981
+454 substantial scenes and 1,993
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -55,7 +55,7 @@ still illustrates 55 scenes across seven districts and gives only 14 turns a
 direct visual entrance; 35 turns still stop at orientation before their
 authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
-452 scenes and compiles 451 story-order, 94 character-path, 50 place-echo and
+454 scenes and compiles 453 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
@@ -285,14 +285,14 @@ route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
 source addresses, and world routes; user-visible journey copy no longer exposes
 editorial or citation apparatus. Exact Uttara 1–123 section-span hashes were
-independently re-derived from the retained Dutt bytes and now ground 81
-substantial bilingual playable scenes containing 264 beats across the complete
+independently re-derived from the retained Dutt bytes and now ground 83
+substantial bilingual playable scenes containing 276 beats across the complete
 selected Uttara range. The first whole-journey adversarial review is complete.
 It found five thin turns that needed additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
 leaks in consumer copy; the copy leaks are repaired. All five thin turns now
-clear the provisional depth floor through sixty-six exact data-only scenes
-replacing sixteen compressed story blocks. The same source-partitioned repair now
+clear the provisional depth floor through sixty-nine exact data-only scenes
+replacing seventeen compressed story blocks. The same source-partitioned repair now
 expands the ten-section `lakshmana-joins` departure summary into five scenes
 covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
 farewells, and expands the seven-section `rama-accepts-exile` summary into
@@ -306,7 +306,7 @@ the Sagara-to-Ganga summary with six source-unit scenes for Sagara's family, the
 Kapila, Anshuman's recovery, Bhagiratha's descent of Ganga, and the completed
 water rites, while removing the prior unsupported claim that the selected
 source described Ganga consenting to the descent. It also confirms the
-larger experience gap between the complete 452-scene authored projection and
+larger experience gap between the complete 454-scene authored projection and
 the 55 scenes currently illustrated in the live journey. On the user's
 2026-08-13 direction, image generation and UI-world projection are paused; the
 final six-section summary identified by the first audit has also been split into
@@ -331,7 +331,16 @@ Rama's alarmed return, fear and blame racing toward the empty Panchavati
 cottage, and Lakshmana's account of the pressured conflict that drew him away.
 Omens remain interpreted signs, catastrophic projections remain fears, and
 Sita's and Lakshmana's conflict speech is not promoted into verified character
-fact. Uttara 17–19 is now separated into Vedavati's refusal, escape, death and
+fact. The latest source-partitioned repair replaces the compressed Uttara 11–13
+Lanka-household block with three exact scenes: Sumali and Prahasta turn
+remembered loss into pressure before Kubera's household strategically withdraws;
+marriages and Meghanada's birth establish the ruling family without inventing
+the women's absent perspectives; and Kumbhakarna's imposed sleep runs beside
+Ravana's expanding violence, Kubera's rejected correction, and the explicit
+murder of his messenger. The replacement preserves displacement, choice,
+responsibility, and violence rather than presenting Lanka as harmless vacant
+property or the next war as inevitable. Uttara 17–19 is now separated into
+Vedavati's refusal, escape, death and
 the selected retelling's Sita connection; Marutta's interrupted sacrifice,
 protected restraint, killed noncombatants and animal-origin tale; and
 Anaranya's lost battle and future warning about Rama. Death in fire is not
