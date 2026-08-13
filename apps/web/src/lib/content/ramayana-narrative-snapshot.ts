@@ -71,6 +71,7 @@ import { RAMAYANA_SITA_CHOOSES_ROAD_LIBRARY_SCENES } from "../../data/ramayana-s
 import { RAMAYANA_CITY_FOLLOWS_LIBRARY_SCENES } from "../../data/ramayana-city-follows-library-scenes";
 import { RAMAYANA_CROWN_REFUSED_LIBRARY_SCENES } from "../../data/ramayana-crown-refused-library-scenes";
 import { RAMAYANA_BROTHERS_MEET_LIBRARY_SCENES } from "../../data/ramayana-brothers-meet-library-scenes";
+import { RAMAYANA_SANDALS_TRUST_LIBRARY_SCENES } from "../../data/ramayana-sandals-trust-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
@@ -222,6 +223,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "city-follows-car",
     "crown-refused-road",
     "brothers-meet-death-news",
+    "sandals-hold-kingdom",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
     "two-lineages-reach-lanka",
@@ -318,6 +320,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_CITY_FOLLOWS_LIBRARY_SCENES,
     ...RAMAYANA_CROWN_REFUSED_LIBRARY_SCENES,
     ...RAMAYANA_BROTHERS_MEET_LIBRARY_SCENES,
+    ...RAMAYANA_SANDALS_TRUST_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
@@ -350,6 +353,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
           || (scene.sourceStart >= 41 && scene.sourceEnd <= 45)))
       || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 78 && scene.sourceEnd <= 82)
       || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 99 && scene.sourceEnd <= 103)
+      || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 108 && scene.sourceEnd <= 112)
       || (turn.sourceRange.kandaSlug === "aranya" && scene.sourceStart >= 54 && scene.sourceEnd <= 68);
     if (hasCompleteRegisteredSpans) {
       const expectedSpanSha256s = getDuttKandaSpanSha256s(

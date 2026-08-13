@@ -56,7 +56,7 @@ describe("consumer-content MVP inventory", () => {
   });
 
   it("makes bilingual story continuity primary and source apparatus non-default", () => {
-    expect(inventory.snapshot_date).toBe("2026-08-12");
+    expect(inventory.snapshot_date).toBe("2026-08-13");
     expect(inventory.audience).toContain("Ordinary Hindi- or English-speaking Indian adults");
     expect(inventory.consumer_record_contract.languages).toEqual(["hi", "en"]);
     expect(inventory.consumer_record_contract.story_fields).toEqual([
@@ -79,11 +79,11 @@ describe("consumer-content MVP inventory", () => {
       playable_turns: 49,
       outlined_turns: 0,
       orientation_only_turns: 0,
-      playable_scenes: 482,
+      playable_scenes: 486,
       draft_scene_outlines: 0,
-      bilingual_beats: 2141,
-      scenes_with_place_paths: 482,
-      story_order_links: 481,
+      bilingual_beats: 2166,
+      scenes_with_place_paths: 486,
+      story_order_links: 485,
       character_path_links: 94,
       place_echo_links: 50,
       parallel_thread_links: 22,

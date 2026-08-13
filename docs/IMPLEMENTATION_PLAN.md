@@ -11,7 +11,7 @@ The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-482 substantial scenes and 2,141
+486 substantial scenes and 2,166
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -55,7 +55,7 @@ still illustrates 55 scenes across seven districts and gives only 14 turns a
 direct visual entrance; 35 turns still stop at orientation before their
 authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
-482 scenes and compiles 481 story-order, 94 character-path, 50 place-echo and
+486 scenes and compiles 485 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
@@ -292,7 +292,7 @@ It found five thin turns that needed additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
 leaks in consumer copy; the copy leaks are repaired. All five thin turns now
 clear the provisional depth floor. The accumulated compression repairs now
-provide 116 exact data-only scenes replacing 29 compressed story blocks. The same source-partitioned repair now
+provide 121 exact data-only scenes replacing 30 compressed story blocks. The same source-partitioned repair now
 expands the ten-section `lakshmana-joins` departure summary into five scenes
 covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
 farewells, and expands the seven-section `rama-accepts-exile` summary into
@@ -383,6 +383,15 @@ violence and hierarchy; Bharata reveals Dasharatha's death and asks Rama home;
 and the family's Mandakini mourning retains Sita's grief, simple forest
 offerings, physical mutual support and the expedition's disturbance of
 wildlife. It also replaces
+the `sandals-hold-kingdom` summary across Ayodhya 108–112 with five exact scenes
+and thirty-one bilingual beats. Javali's sceptical case remains attributed
+persuasion rather than narrator settlement; Rama's truth argument is retained
+without converting its violent caste and anti-Buddhist polemic into present-day
+instruction; Vasishta's cosmology and genealogy remain traditional epic claims
+rather than verified history; Bharata's fast and later self-harm ultimatum are
+treated as distress and coercion rather than devotional models; cosmic purpose
+does not erase choice; and the sandals remain a negotiated temporary proxy,
+not independent divinity or a guarantee of just rule. It also replaces
 the compressed Uttara 29–30 captive-women-and-family-war summary with two exact
 scenes and ten bilingual beats. The first keeps the abducted women distinct,
 names the relatives and households they grieve, preserves their collective
@@ -398,7 +407,7 @@ the Sagara-to-Ganga summary with six source-unit scenes for Sagara's family, the
 Kapila, Anshuman's recovery, Bhagiratha's descent of Ganga, and the completed
 water rites, while removing the prior unsupported claim that the selected
 source described Ganga consenting to the descent. It also confirms the
-larger experience gap between the complete 482-scene authored projection and
+larger experience gap between the complete 486-scene authored projection and
 the 55 scenes currently illustrated in the live journey. On the user's
 2026-08-13 direction, image generation and UI-world projection are paused; the
 final six-section summary identified by the first audit has also been split into
