@@ -533,3 +533,22 @@ Exact accepted-authoring coverage is now **105 completed after freeze / 103
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 These packs are authored and internally reviewed only; they are not projected,
 hosted, independently culturally reviewed, released or published.
+
+## Evidence-first named Dwadashi batch checkpoint
+
+Eleven accepted Dwadashi items are complete as bilingual applicability lanes:
+ten month-sequenced Telugu-calendar Vishnu-form labels and Gujarat Bachha
+Baras. One 2027 lunar-calendar spine resolves the sequence, while every date
+remains a location-specific fixture requiring recomputation.
+
+The ten Vishnu-form lanes use Bhagavad Gita 4.4-8 only as a labelled
+avatar/dharma context, never as the Dwadashi's invented origin. Bachha Baras
+instead reuses the reviewed Nandini/cow-calf story boundary and requires no
+live animal. Formal fast, vigil, parana, mantra, temple/family rites and animal
+handling remain named-owner routes. Cosmetic language and state expression do
+not create variants.
+
+Exact accepted-authoring coverage is now **116 completed after freeze / 92
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
