@@ -29,6 +29,11 @@ HOLI_PACK = (
 GUDI_PADWA_PACK = (
     LANE / "packs" / "gudi-padwa-maharashtra-household-2027-v1.json"
 )
+UGADI_YUGADI_PACK = (
+    LANE
+    / "packs"
+    / "ugadi-yugadi-karnataka-andhra-telangana-household-2027-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -735,8 +740,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 6
-    assert progress["remaining_authoring_items"] == 202
+    assert progress["completed_after_freeze"] == 7
+    assert progress["remaining_authoring_items"] == 201
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -745,6 +750,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "holika-dahan-north-india-household-participant-2027-v1",
         "holi-dhulandi-north-india-consent-led-household-2027-v1",
         "gudi-padwa-maharashtra-household-2027-v1",
+        "ugadi-yugadi-karnataka-andhra-telangana-household-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -1333,3 +1339,128 @@ def test_gudi_padwa_major_difference_timing_and_adversarial_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "गुड़ी पड़वा".encode("utf-8") in raw
     assert GUDI_PADWA_PACK.stat().st_size < 100_000
+
+
+def test_ugadi_yugadi_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(UGADI_YUGADI_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["observance_slugs"] == ["ugadi-yugadi"]
+    assert pack["applicability"]["region_codes"] == ["IN-KA", "IN-AP", "IN-TG"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 10
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_ugadi_yugadi_is_bilingual_actionable_and_state_routed():
+    pack = load(UGADI_YUGADI_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(
+            not story["universal_origin_claimed"]
+            for story in entry["origin_narratives"]
+        )
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["minimum"]["form"] == "accessible_short"
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    english_standard = localized["en"]["procedures"][1]
+    standard_text = " ".join(step["instruction"] for step in english_standard["steps"])
+    assert "Karnataka may use trusted family Bevu Bella" in standard_text
+    assert "Andhra Pradesh/Telangana may use trusted family Ugadi Pachadi" in standard_text
+    assert "taste nothing" in standard_text
+
+
+def test_ugadi_yugadi_major_difference_timing_and_adversarial_boundaries():
+    pack = load(UGADI_YUGADI_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "7 April" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {
+            variant["variant_id"].removesuffix("-hi"): variant
+            for variant in entry["variants"]
+        }
+        for variant_id in (
+            "karnataka-bevu-bella",
+            "andhra-telangana-ugadi-pachadi",
+            "minor-household-materials",
+            "no-taste-accessible-form",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "temple-or-public-panchanga",
+            "family-sampradaya-deity-puja",
+            "gudi-padwa-or-other-new-year",
+            "chaitra-navaratri",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "one hindu or indian new year",
+        "difference is major",
+        "optional, not medicine",
+        "unknown neem",
+        "allergens",
+        "balcony/window",
+        "non-slip",
+        "oil bath",
+        "touching feet require consent",
+        "not verified history",
+        "annual forecasts",
+        "institution-owned",
+        "local/live",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "एकमात्र हिंदू या भारतीय नववर्ष",
+        "अंतर मुख्य है",
+        "औषधि",
+        "अज्ञात नीम",
+        "एलर्जेन",
+        "बालकनी/खिड़की",
+        "गैर-फिसलन",
+        "तेल-स्नान",
+        "पैर छूना सहमति",
+        "सत्यापित इतिहास",
+        "वार्षिक फलादेश",
+        "संस्था-स्वामित्व",
+        "स्थानीय/जीवित",
+    ):
+        assert term in localized["hi"]
+
+    raw = UGADI_YUGADI_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "उगादी / युगादी".encode("utf-8") in raw
+    assert UGADI_YUGADI_PACK.stat().st_size < 100_000
