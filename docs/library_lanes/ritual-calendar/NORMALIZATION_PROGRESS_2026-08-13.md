@@ -151,3 +151,20 @@ Exact accepted-authoring coverage is now **11 completed after freeze / 197
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The twelfth post-freeze item is complete at the bilingual authored-library
+layer: `guru-purnima-general-gratitude-household-participant-2027-v1`. Its
+pan-India general route centres source-labelled Vyasa knowledge transmission,
+specific gratitude and one responsible learning action. Parent, academic
+teacher, mentor, coach, arts/yoga teacher or spiritual teacher; private or
+welcome contact; flower, message, gift/no gift; and fast/non-fast remain within
+the lane. Formal diksha-guru/sampradaya worship, Vyasa Puja liturgy,
+Buddhist/Jain observance and named pilgrimage/institution programmes remain
+separate because authority, eligibility, story or ordered action changes
+materially. One typed proposal points to the existing Ganguli Mahabharata
+anchor without copying its full story.
+
+Exact accepted-authoring coverage is now **12 completed after freeze / 196
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

@@ -155,3 +155,34 @@ teacher service from observation.
 Current web sources checked 2026-08-13. Drik's displayed 09:18-11:44 clock is
 for Washington, D.C., not India; only the 18 July 2027 civil-date discovery
 fixture is carried forward until an Indian city is explicitly resolved.
+
+## Completed pack and adversarial review
+
+The frozen item is now fulfilled by:
+
+- `packs/guru-purnima-general-gratitude-household-participant-2027-v1.json`;
+  and
+- `cross-links/guru-purnima-mahabharata-owner-link-v1.json`.
+
+Adversarial review checked English and Hindi for: a universal national Guru
+Puja; collapsing epic transmission into a festival date or Vyasa birth proof;
+interchanging parent, academic teacher, mentor, teaching guru and diksha guru;
+compelled praise, forgiveness, contact, public naming, bowing, feet-touching,
+secrecy, isolation, service, allegiance or intimacy; private child contact or
+data sharing; suppression of grievance, ICC, safeguarding, police or emergency
+routes; unofficial gifts, property, PIN/OTP or payment-for-favour; dangerous
+fasting; unsafe food; copied Washington clock times; and guaranteed blessing,
+liberation, knowledge, examination, healing, protection, merit or karma claims.
+Each failure mode is explicitly prohibited or routed to a separate authority.
+
+Parent/teacher/mentor type, living/deceased/private remembrance, gift/no gift,
+fast/non-fast, food, language and dress remain within the general lane. Formal
+diksha-guru/sampradaya worship, Vyasa Puja liturgy, Buddhist and Jain
+observances, named pilgrimage/institution programmes and the full epic context
+remain separate because authority, eligibility, story or ordered action changes
+materially.
+
+Validation result: 60/60 directly callable ritual-calendar checks pass. Exact
+coverage is 12/208 accepted authoring items, 196 remaining, 0/19,480 verified
+day cells. Authored is not projected, hosted, independently released or
+published.

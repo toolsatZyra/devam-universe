@@ -1,0 +1,33 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-guru-purnima-mahabharata-owner-link-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "guru-purnima-general-gratitude-to-ganguli-vyasa-transmission",
+      "from_ref": {"lane_local_id": "ritual-calendar/guru-purnima-general-gratitude-household-participant-2027-v1"},
+      "to_ref": {"canonical_id": "devam:source-expression:mahabharata-ganguli-consumer-v1"},
+      "relationship_family": "story",
+      "predicate": "uses_source_labelled_vyasa_knowledge_transmission_context_from",
+      "directionality": "directed",
+      "consumer_label": {"en": "Read Vyasa's composition and teaching in full epic context", "hi": "व्यास की रचना और शिक्षण का पूर्ण महाकाव्य संदर्भ पढ़ें"},
+      "scope": {
+        "statement": "The ritual pack uses four bounded moments from the Ganguli Adi Parva opening—organisation, comprehension, teaching and onward recitation—while keeping the living Guru Purnima/Vyasa Purnima association separate and requesting the full epic context from its owner.",
+        "geography_codes": ["pan-india"],
+        "tradition_codes": ["ashadha-purnima-general-gratitude"],
+        "time_scope": "Local Ashadha Shukla Purnima; 2027 civil-date fixture 18 July",
+        "source_expression_scope": "Ganguli English Mahabharata expression, Adi Parva opening, retained lines 374-510"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "source_passage", "ref": "source_vault object sha256:246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826 lines 374-510", "claim_scope": "Vyasa publishes detailed/abridged forms, considers teaching, teaches Suka and other disciples, and directs Vaisampayana's recitation."},
+        {"evidence_kind": "official_current", "ref": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2143875&lang=2&reg=48", "claim_scope": "Current public evidence for Vyasa Purnima, the teaching-guru/diksha-guru distinction and separate gurukula customs."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/guru-purnima-general-gratitude-household-participant-2027-v1.json", "claim_scope": "Bilingual timing, source-layer separation, consent-led gratitude, household/institution actions, child/financial/health safety and major variants."}
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    }
+  ]
+}
