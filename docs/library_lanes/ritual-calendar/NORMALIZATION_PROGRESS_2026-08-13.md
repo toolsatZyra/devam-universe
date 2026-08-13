@@ -138,3 +138,16 @@ the existing Ganguli Mahabharata anchor without copying the full epic story.
 Exact accepted-authoring coverage is now **10 completed after freeze / 198
 remaining / 208 total**. Verified day-answer cells remain **0 / 19,480**;
 authored is not projected, hosted, released or published.
+
+The eleventh post-freeze item is the frozen
+`vat-savitri-north-west-participant-v1` umbrella. It is complete through two
+reviewed applicability packs: North Jyeshtha Amavasya and Maharashtra/West
+Jyeshtha Purnima. The umbrella advances the denominator once, not twice. The
+separate packs are required because the deterministic tithi and civil date
+differ materially; thread colour/count, food, dress, language and known family
+fasting choices remain within-lane variants rather than state copies.
+
+Exact accepted-authoring coverage is now **11 completed after freeze / 197
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

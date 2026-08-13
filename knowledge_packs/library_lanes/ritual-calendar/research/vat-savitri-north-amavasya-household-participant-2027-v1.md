@@ -53,7 +53,7 @@ can prevent death through a ritual.
 | Difference | Decision | Reason |
 |---|---|---|
 | North Jyeshtha Amavasya household and ordinary banyan participant | selected lane | Same civil-date rule and bounded action core. |
-| West Jyeshtha Purnima, especially Maharashtra/Goa/Gujarat | separate companion lane | Different deterministic date and living regional evidence. |
+| West Jyeshtha Purnima, especially Maharashtra/Gujarat/Karnataka | separate companion lane | Different deterministic date and living regional evidence. |
 | Thread colour/count, flower, fruit, food, dress, language | note within lane | Material preferences do not change timing, eligibility or authority. |
 | Fast/non-fast | note within lane | Non-fasting must be complete; health changes intensity, not the date lane. |
 | Married woman, spouse-inclusive couple, widow/single/divorced/queer or general story reflection | scoped options within consumer lane | Do not police identity or imply moral failure; no one is required to claim a husband. A family/sampradaya may retain a narrower formal vrata boundary. |
@@ -114,3 +114,31 @@ circuits are optional; dizziness/pain or site rules end movement.
 Current web sources checked 2026-08-13. Official tourism descriptions are
 living-practice evidence, not universal ritual authority; their strict-fast,
 gender and longevity language is not copied as an instruction or guarantee.
+
+## Completed umbrella and adversarial review
+
+The frozen `vat-savitri-north-west-participant-v1` item is fulfilled by two
+named packs and counted once:
+
+1. `vat-savitri-north-amavasya-household-participant-2027-v1`; and
+2. `vat-purnima-west-household-participant-2027-v1`.
+
+The West pack uses Friday 18 June 2027 only as a civil-date fixture and labels
+the cited page's displayed 01:04-02:43 interval as Paris, not an Indian clock.
+Every Indian city must be recomputed. The North fixture remains Friday 4 June;
+the two timing rules are never blended.
+
+Adversarial review checked both English and Hindi for: universalisation;
+state-copy proliferation; strict-fast prescription; spouse longevity,
+resurrection, fertility or widowhood guarantees; wife responsibility for
+illness/death; identity policing; coerced intimacy, service or disclosure;
+tree constriction, fire, poured food or litter; unsafe circumambulation; and
+copying a foreign or North clock into the West lane. Each failure mode is
+explicitly prohibited or routed. Both packs retain three actionable tiers,
+complete substitutions and closings, while the full epic remains with the
+canonical Mahabharata owner through two typed proposals.
+
+Validation result: 58/58 directly callable ritual-calendar checks pass. Exact
+coverage is 11/208 accepted authoring items, 197 remaining, 0/19,480 verified
+day cells. Authored is not projected, hosted, independently released or
+published.

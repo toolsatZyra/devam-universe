@@ -59,6 +59,9 @@ VAT_SAVITRI_NORTH_PACK = (
     / "packs"
     / "vat-savitri-north-amavasya-household-participant-2027-v1.json"
 )
+VAT_PURNIMA_WEST_PACK = (
+    LANE / "packs" / "vat-purnima-west-household-participant-2027-v1.json"
+)
 VAT_SAVITRI_LINKS = (
     LANE / "cross-links" / "vat-savitri-mahabharata-owner-links-v1.json"
 )
@@ -768,8 +771,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 10
-    assert progress["remaining_authoring_items"] == 198
+    assert progress["completed_after_freeze"] == 11
+    assert progress["remaining_authoring_items"] == 197
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -782,7 +785,15 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ram-navami-north-india-household-participant-2027-v1",
         "hanuman-jayanti-north-india-household-participant-2027-v1",
         "akshaya-tritiya-north-west-household-participant-2027-v1",
+        "vat-savitri-north-amavasya-household-participant-2027-v1",
+        "vat-purnima-west-household-participant-2027-v1",
     ]
+    assert progress["completed_umbrella_components"] == {
+        "vat-savitri-north-west-participant-v1": [
+            "vat-savitri-north-amavasya-household-participant-2027-v1",
+            "vat-purnima-west-household-participant-2027-v1",
+        ]
+    }
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
 
@@ -1894,7 +1905,7 @@ def test_akshaya_tritiya_major_difference_financial_legal_and_authority_boundari
     assert AKSHAYA_TRITIYA_PACK.stat().st_size < 100_000
 
 
-def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_without_progress_credit():
+def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_with_single_umbrella_credit():
     ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
     pack = load(VAT_SAVITRI_NORTH_PACK)
     Draft202012Validator(ritual_schema).validate(pack)
@@ -1927,8 +1938,11 @@ def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_without_progress
     link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
     links = load(VAT_SAVITRI_LINKS)
     Draft202012Validator(link_schema).validate(links)
-    assert len(links["proposals"]) == 1
-    proposal = links["proposals"][0]
+    assert len(links["proposals"]) == 2
+    proposal = next(
+        item for item in links["proposals"]
+        if item["proposal_id"].startswith("vat-savitri-north-amavasya")
+    )
     assert proposal["to_ref"]["canonical_id"] == (
         "devam:source-expression:mahabharata-ganguli-consumer-v1"
     )
@@ -1937,11 +1951,15 @@ def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_without_progress
         "uses_source_labelled_savitri_satyavan_context_from"
     )
 
-    # The frozen umbrella item is not complete until its West Purnima companion passes.
+    # Two material applicability packs complete one frozen umbrella item, not two.
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 10
-    assert progress["remaining_authoring_items"] == 198
-    assert pack["lane_id"] not in progress["completed_lane_ids"]
+    assert progress["completed_after_freeze"] == 11
+    assert progress["remaining_authoring_items"] == 197
+    assert pack["lane_id"] in progress["completed_lane_ids"]
+    assert VAT_PURNIMA_WEST_PACK.stem in progress["completed_lane_ids"]
+    assert progress["completed_umbrella_components"][
+        "vat-savitri-north-west-participant-v1"
+    ] == [pack["lane_id"], VAT_PURNIMA_WEST_PACK.stem]
 
 
 def test_vat_savitri_north_is_bilingual_actionable_and_preserves_major_timing_split():
@@ -2029,3 +2047,111 @@ def test_vat_savitri_north_is_bilingual_actionable_and_preserves_major_timing_sp
     raw.decode("utf-8", errors="strict")
     assert "वट सावित्री".encode("utf-8") in raw
     assert VAT_SAVITRI_NORTH_PACK.stat().st_size < 100_000
+
+
+def test_vat_purnima_west_is_a_distinct_bilingual_complete_lane():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(VAT_PURNIMA_WEST_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["lane_id"] == "vat-purnima-west-household-participant-2027-v1"
+    assert pack["applicability"]["region_codes"] == [
+        "west-india", "IN-MH", "IN-GJ", "IN-KA"
+    ]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 11
+    referenced = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key == "source_ids":
+                    referenced.extend(child)
+                else:
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    assert set(referenced) <= source_ids
+
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert "Friday 18 June" in calendar["freshness_note"]
+    assert "Paris location, not an Indian clock" in calendar["freshness_note"]
+    assert "North Amavasya fixture of Friday 4 June" in calendar["freshness_note"]
+
+    localized = {
+        entry["language_code"]: entry for entry in pack["localized_content"]
+    }
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert [len(procedures[tier]["steps"]) for tier in ("minimum", "standard", "elaborate")] == [5, 8, 6]
+
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        suffix = "-hi" if entry["language_code"] == "hi" else ""
+        for base in (
+            "nonfast-or-known-family-fast",
+            "thread-colour-count-or-no-thread",
+            "married-woman-formal-or-inclusive-reflection",
+            "minor-west-food-dress-language",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is False
+        for base in (
+            "vat-savitri-north-amavasya",
+            "formal-priest-led-or-three-night-vrata",
+            "full-mahabharata-story",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is True
+
+    english = json.dumps(localized["en"], ensure_ascii=False).lower()
+    for term in (
+        "maharashtra's current state description",
+        "strict fast",
+        "flowers, coconut and turmeric",
+        "north amavasya",
+        "non-fasting is complete",
+        "not proof that a vrata can resurrect",
+        "consent is specific and revocable",
+        "do not nail, cut, scrape, paint or constrict",
+    ):
+        assert term in english
+
+    hindi = json.dumps(localized["hi"], ensure_ascii=False)
+    for term in (
+        "महाराष्ट्र का वर्तमान राज्य-वर्णन",
+        "कठोर उपवास",
+        "फूल, नारियल, हल्दी",
+        "उत्तर अमावस्या",
+        "बिना उपवास पूर्ण",
+        "पुनर्जीवन",
+        "सहमति",
+        "कील",
+    ):
+        assert term in hindi
+
+    links = load(VAT_SAVITRI_LINKS)
+    west = next(
+        proposal for proposal in links["proposals"]
+        if proposal["proposal_id"].startswith("vat-purnima-west")
+    )
+    assert west["to_ref"]["canonical_id"] == (
+        "devam:source-expression:mahabharata-ganguli-consumer-v1"
+    )
+    assert west["target_resolution"] == "existing_anchor"
+    assert west["predicate"] == "uses_source_labelled_savitri_satyavan_context_from"
+
+    raw = VAT_PURNIMA_WEST_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "वट सावित्री".encode("utf-8") in raw
+    assert VAT_PURNIMA_WEST_PACK.stat().st_size < 100_000
