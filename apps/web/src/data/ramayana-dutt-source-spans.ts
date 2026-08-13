@@ -1,6 +1,10 @@
 import { DUTT_BALA_SECTION_SPAN_SHA256 } from "./ramayana-bala-source-spans";
 
 const DUTT_AYODHYA_SECTION_SPAN_SHA256: Record<number, string> = {
+  8: "d2703ae41a50b1e9ae2ce4e9e40fea55ffcdaff4407d1a602a8632a540aab43c",
+  9: "582ebcc0bddf1cd21b56f477b5d1d99871ddc489361bcb724d507270a5290c14",
+  10: "63b0ab4d5255d23025775d1efdfc10fd14e0c796e38143aa2f3cb08fc7bd8cd2",
+  11: "d8b655fa22adb9aa34e18ac0f23ee6d798ec5c125bae8307f6b2186b89b19468",
   15: "a9afa38bf4d7ef28e2e1c0fe814c5cc2fc6d28e7450b35759fe9c26bca591487",
   16: "fef1f313ec83cc5a2760a8651181f2388da73338f87b9070dd11b348f1c86f46",
   17: "f5cdfeea7a73423ad227e0c9bfc963de85b327547cf79fb7428c0046cd4b809b",

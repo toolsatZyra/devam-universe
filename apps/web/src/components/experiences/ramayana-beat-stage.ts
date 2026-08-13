@@ -16,7 +16,7 @@ const stages: Record<string, RamayanaBeatStage> = {
   "manthara-sees-rooftops": { focusX: 35, focusY: 45, zoom: 1.18, motif: "reveal", color: "248,178,88" },
   "news-reaches-manthara": { focusX: 35, focusY: 47, zoom: 1.22, motif: "message", color: "230,147,83" },
   "kaikeyi-first-rejoices": { focusX: 68, focusY: 52, zoom: 1.2, motif: "gather", color: "246,192,111" },
-  "gift-is-thrown-aside": { focusX: 57, focusY: 61, zoom: 1.23, motif: "reveal", color: "187,129,106" },
+  "kaikeyi-offers-the-celebratory-gift": { focusX: 57, focusY: 61, zoom: 1.23, motif: "reveal", color: "187,129,106" },
   "manthara-reframes-future": { focusX: 67, focusY: 48, zoom: 1.22, motif: "memory", color: "193,123,105" },
   "kaikeyi-enters-anger-room": { focusX: 72, focusY: 57, zoom: 1.24, motif: "waiting", color: "162,104,116" },
   "dasharatha-renews-promise": { focusX: 54, focusY: 55, zoom: 1.21, motif: "gather", color: "216,151,100" },
