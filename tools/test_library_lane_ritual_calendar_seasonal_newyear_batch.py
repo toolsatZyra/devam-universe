@@ -82,7 +82,7 @@ def test_links_progress_matrix_and_unprojected_boundary():
  assert len(links["proposals"])==12 and len({x["proposal_id"] for x in links["proposals"]})==12
  assert all(x["target_resolution"]=="unresolved_owner_lane" for x in links["proposals"])
  p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json")
- assert p["completed_after_freeze"]==170 and p["remaining_authoring_items"]==38
+ assert p["completed_after_freeze"]==174 and p["remaining_authoring_items"]==34
  assert p["completed_after_freeze"]+p["remaining_authoring_items"]==208
  for lane_id in IDS:
   assert p["completed_lane_ids"].count(lane_id)==1

@@ -152,8 +152,8 @@ def test_pitru_batch_cross_links_and_progress_reconcile():
 
     progress = load(PROGRESS)
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 170
-    assert progress["remaining_authoring_items"] == 38
+    assert progress["completed_after_freeze"] == 174
+    assert progress["remaining_authoring_items"] == 34
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     for key in KEYS:
         lane_id = f"{key}-shraddha-north-west-authority-router-2027-v1"

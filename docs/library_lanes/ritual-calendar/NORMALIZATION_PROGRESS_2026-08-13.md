@@ -668,3 +668,23 @@ Exact accepted-authoring coverage is now **170 completed after freeze / 38
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first Ganga-Yamuna river-observance checkpoint
+
+Four accepted named answers are complete as bilingual applicability lanes:
+Ganga Dussehra, Bengali/Assamese Ganga Puja, Ganga Saptami and Yamuna Chhath.
+
+The batch uses Valmiki Ramayana Bala Kanda 42-44 as the labelled Bhagiratha,
+Shiva, Ganga and Jahnu narrative spine without treating purification language
+as permission to erase accountability. It preserves Jyeshtha-Dashami Ganga
+Dussehra and Bengali/Assamese Ganga Puja as separate consumer routes, keeps
+Jahnavi-focused Saptami distinct, and scopes Yamuna Chhath to its material
+Braj/Mathura identity rather than November Surya Chhath. Current temple, ghat,
+boat, bathing, procession and formal-offering routes remain with named owners.
+No household route directs river entry or disposal of ritual material into
+water bodies.
+
+Exact accepted-authoring coverage is now **174 completed after freeze / 34
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
