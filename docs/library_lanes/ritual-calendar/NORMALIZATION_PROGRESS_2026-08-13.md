@@ -327,3 +327,26 @@ Exact accepted-authoring coverage is now **21 completed after freeze / 187
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The twenty-second post-freeze item is complete at the bilingual authored-library
+layer: `amalaki-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
+reviewed 18 March 2027 ordinary fixture and provides a no-tree, no-fruit,
+non-fasting, well-rested, no-flame and material-free route: Vishnu remembrance,
+a chapter-45-labelled account, one permission-safe non-harming care action and
+a safe close. The amalaki creation theology, deity locations, social exclusion
+categories, clay bath, gold Parashurama image, gem jar, many lamps, vigil,
+circumambulation, invocations, recipient hierarchy and promised results remain
+source facts—not science, medicine, denial of dignity, universal steps or
+guarantees. The popular hunter/King Vasuratha story is absent from the reviewed
+expression and is not silently imported.
+
+Language, fruit/no fruit, lawful tree image/no image, owned plant/no plant and
+familiar prayer/silence remain inside the lane. Formal authority, materially
+different timing, a named tree/temple site, an additional source expression or
+another named Ekadashi remains separate.
+
+Exact accepted-authoring coverage is now **22 completed after freeze / 186
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published. The evidence-confirmed Pankoddhar denominator correction remains
+open and uncounted pending a reviewed successor freeze.

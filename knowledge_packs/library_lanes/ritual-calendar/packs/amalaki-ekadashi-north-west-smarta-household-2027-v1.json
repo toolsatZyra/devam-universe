@@ -1,0 +1,306 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "amalaki-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["amalaki-ekadashi"],
+  "applicability": {
+    "region_codes": ["north-india", "west-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Phalguna Shukla Ekadashi for you?",
+      "Does your family follow ordinary Smarta Amalaki, or a materially different Vaishnava/Dvadashi-Pushya authority?",
+      "Do you have lawful, safe permission to approach a particular amla tree, or would a no-tree home form be better?",
+      "Does anyone need a non-fasting, no-fruit, no-flame, no-vigil or accessible form?",
+      "Are you asking for the reviewed chapter 45 account or a separately sourced hunter/King Vasuratha story?"
+    ],
+    "context_pairs": [
+      {"region_code": "north-india", "tradition_code": "smarta-north-india", "observance_slug": "amalaki-ekadashi"},
+      {"region_code": "west-india", "tradition_code": "smarta-west-india", "observance_slug": "amalaki-ekadashi"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "amalaki-ekadashi", "language_code": "en", "note": "This is the ordinary North/West Smarta Amalaki household lane. No amla tree, fruit, fast, vigil, flame, gold image or gift is required. Chapter 45's tree theology and formal Parashurama-image rite are source claims, not botany, medicine or a universal minimum. The hunter/King Vasuratha story is not in the reviewed expression and is not imported."},
+      {"observance_slug": "amalaki-ekadashi", "language_code": "hi", "note": "यह सामान्य उत्तर/पश्चिम स्मार्त आमलकी गृह-मार्ग है। आँवला वृक्ष/फल, उपवास, जागरण, लौ, स्वर्ण-प्रतिमा या दान अनिवार्य नहीं। अध्याय 45 की वृक्ष-धर्मकथा और औपचारिक परशुराम-प्रतिमा विधि स्रोत-दावे हैं—वनस्पति-विज्ञान, चिकित्सा या सार्वभौम न्यूनतम नहीं। शिकारी/राजा वसुरथ कथा समीक्षित अभिव्यक्ति में नहीं, इसलिए जोड़ी नहीं गई।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-amalaki-2027", "devam-ekadashi-rule-audit"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "amalaki-phalguna-shukla-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "amalaki-nonfast-no-tree-no-vigil-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North-reference, Punjab, Andhra Pradesh, Bengali, Malayalam and ISKCON fixtures place ordinary Amalaki Ekadashi on Thursday 18 March 2027. Chapter 45 also discusses a special Dvadashi-Pushya conjunction; do not conflate it with a civil-date label. Resolve the user's Indian city and accepted authority. Never copy displayed tithi/parana times, this date or a named tree/temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-amalaki-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 45: Amalaki Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed amalaki creation theology, formal tree/Parashurama-image rite, social categories and attributed results; source facts rather than science, medicine or universal instructions",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365622.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Uttara Khanda chapter 45", "reviewed_lines": "56-98", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "drik-amalaki-2027",
+      "title": "2027 Amalaki Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian regional and ISKCON calendar discovery evidence for ordinary Amalaki on 18 March 2027; no portable parana or ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/amalaki/amalaki-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-03-18", "identity": "Phalguna Shukla Amalaki Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "mcgm-religious-festival-fire-safety",
+      "title": "Codified Fire Safety Requirements for Religious Festivals",
+      "publisher": "Municipal Corporation of Greater Mumbai",
+      "source_role": "stable-base, controlled-lamp and fire-supervision boundary; not Amalaki practice evidence",
+      "rights_lane": "citation_only",
+      "url": "https://www.mcgm.gov.in/irj/go/km/docs/documents/Online%20Services/Codified%20Fire%20safety%20requirements%20for%20religious%20festival%20such%20as%20Ganeshotsav%20%26%20Navratri%20etc.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "controlled religious lamp", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "fssai-amla-ingredient-context",
+      "title": "Compendium of Food Safety and Standards Regulations for Health Supplements and Nutraceuticals",
+      "publisher": "Food Safety and Standards Authority of India",
+      "source_role": "identity of Indian gooseberry/amla as a listed ingredient; does not support consumer cure or dosage claims",
+      "rights_lane": "citation_only",
+      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Compendium_Nutra_29_09_2021.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"ingredient": "Emblica officinalis / Indian gooseberry / amla", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "Fasting and Feasting in T1DM", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"}
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"paths": ["knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json", "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"]}
+    },
+    {
+      "source_id": "devam-amalaki-research",
+      "title": "Amalaki Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of no-tree-required practice, non-harming care, tree/property/fire/food/fasting safety, no social exclusion, source absence and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/amalaki-ekadashi-north-west-smarta-household-2027-v1.md"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["amalaki-ekadashi"],
+      "title": "Amalaki Ekadashi: reverence through non-harming care",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Amalaki Ekadashi today. A complete home form needs no tree or fruit: remember Vishnu, hear the Padma-Purana-labelled amalaki account, state that its theology and formal rite are source claims, choose one permission-safe act of care for a living system, and close with gratitude. Fasting, vigil, flame, circumambulation, fruit consumption, gold, gems, gifts or a tree visit are not required.",
+      "significance": {
+        "text": "The reviewed Padma Purana chapter calls the amalaki/dhatri tree dear to Vishnu and locates deities throughout it. Devam preserves this as textual theology, not botanical or medical fact. A bounded present-day meaning is reverence expressed as non-harming care: notice dependence on living systems and take one lawful action without damaging a tree, excluding a person, buying status materials or claiming that symbolism offsets environmental harm.",
+        "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"],
+        "scope_note": "Source-labelled meaning; not botany, history, medicine, environmental certification or guaranteed merit."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "amalaki-creation-and-vow-en",
+          "title": "The amalaki tree and formal vow in Padma Purana chapter 45",
+          "summary": "Krishna tells Yudhishthira what Vasistha told Mandhatri. After cosmic inundation, the chapter says a luminous drop associated with Brahma became the first amalaki tree. A heavenly voice identifies Vishnu and describes deities living through its roots, trunk, branches, leaves, flowers and fruit. The chapter then gives a hard formal rite: fasting; avoiding categories of people the translation labels fallen, thieves, heretics or immoral; a clay bath; a gold Parashurama image; a flawless jar with five gems, umbrella, sandals, fragrance, garland, incense, many lamps and parched grain; body-part invocations, vigil, song, music, stories, repeated circumambulation, gifts, feeding Brahmanas and a fraternity meal. It promises Vishnu's world, sin removal, wealth, grain, heaven, salvation and merit. Devam treats creation theology, social exclusions, materials, ordered rite and results as source facts—not science, medical advice, universal household instructions, denial of dignity or guarantees. The popular hunter/King Vasuratha story is not present in this reviewed expression and is not added.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 45",
+          "source_ids": ["padma-purana-amalaki-deshpande"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {"practice_id": "amalaki-en-ordinary-remembrance", "population_scope": "Ordinary North/West Smarta household or individual after local date resolution", "description": "Vishnu remembrance, a bounded source account, gratitude and one non-harming care action. No tree, fruit, fast, vigil or material is necessary.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "instructional": false},
+        {"practice_id": "amalaki-en-formal-tree-rite-context", "population_scope": "Families or institutions with a separately inherited or authorised formal practice", "description": "A formal authority may use a tree site, Parashurama image, jar, lamps, vigil, circumambulation, parana or gifts. This guide labels the source sequence but does not reconstruct or universalise it.", "source_ids": ["padma-purana-amalaki-deshpande"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "amalaki-en-minimum-v1", "label": "No-tree remembrance and one care action", "tier": "minimum", "setting": "individual", "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution", "form": "accessible_short", "estimated_minutes": 12, "source_ids": ["padma-purana-amalaki-deshpande", "drik-amalaki-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-amalaki-research"],
+          "materials": [
+            {"item": "A safe quiet place", "required": true, "substitutions": ["Remain safely where you are", "Use the shortest mental form"], "source_ids": ["devam-amalaki-research"]},
+            {"item": "A safe way to remember one care action", "required": false, "substitutions": ["Write it", "Complete it directly"], "source_ids": ["devam-amalaki-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Amalaki Ekadashi. Do not derive the date or parana from the story.", "why": "The tithi and authority are deterministic and local.", "source_ids": ["drik-amalaki-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose normal food, water, medicine and sleep. Do not begin fasting, fruit dosing or a vigil from this guide.", "why": "The non-fasting, no-fruit and rested route is complete.", "source_ids": ["icmr-type1-diabetes-fasting", "fssai-amla-ingredient-context", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Remember Vishnu with a familiar name, short family prayer or silence. No image, tree or fruit is needed.", "why": "Devotion remains accessible without an invented universal mantra.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 45. State that the tree creation, deity locations, formal rite, social categories and results are textual claims, not science, medicine or universal rules.", "why": "The source stays visible without unsupported transfer.", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Notice one living system that supports daily life, without touching or approaching it: a tree, plant, soil, water or a caregiver's work.", "why": "Attention requires no property access or material.", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 6, "instruction": "Choose one lawful, permission-safe, non-harming action: avoid damage, reduce waste, water an owned plant correctly, remove litter safely with permission, or support a verified care effort.", "why": "Reverence becomes bounded care rather than symbolic entitlement.", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 7, "instruction": "Close with gratitude and complete only the safe action. Do not claim cure, immunity, sin removal, wealth, salvation or environmental offset.", "why": "No result is guaranteed and ordinary responsibility remains.", "source_ids": ["devam-amalaki-research"], "optional": false}
+          ],
+          "closing": {"text": "Close with gratitude, eat, hydrate, take medicine and rest normally, then complete only the non-harming action within your control. This route starts no fast, vigil, tree visit, flame or parana.", "source_ids": ["devam-amalaki-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "An inherited vrata/parana remains with the responsible authority and clinical guidance where needed."}
+        },
+        {
+          "procedure_id": "amalaki-en-standard-v1", "label": "Family remembrance without tree damage", "tier": "standard", "setting": "family_led", "authority_scope": "family-led ordinary remembrance; no formal tree or priest-led rite", "form": "traditional_household", "estimated_minutes": 25, "source_ids": ["padma-purana-amalaki-deshpande", "drik-amalaki-2027", "devam-ekadashi-recurring-scaffold", "mcgm-religious-festival-fire-safety", "icmr-type1-diabetes-fasting", "devam-amalaki-research"],
+          "materials": [
+            {"item": "Optional lawful tree picture, existing Vishnu image/text or amla fruit", "required": false, "substitutions": ["No image or fruit", "An owned healthy plant", "Silence"], "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"]},
+            {"item": "Paper for a care plan", "required": false, "substitutions": ["A verbal plan", "Private individual actions"], "source_ids": ["devam-amalaki-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the date and ask who wishes to join. Ask about food, allergy, fasting, smoke, mobility and outdoor-safety needs; participation and disclosure are voluntary.", "why": "The route adapts before materials are chosen.", "source_ids": ["drik-amalaki-2027", "icmr-type1-diabetes-fasting", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Begin with familiar Vishnu remembrance or silence. Use no tree or fruit if safer; do not treat eating amla as medicine, a dose or completion requirement.", "why": "Food and medical boundaries remain clear.", "source_ids": ["fssai-amla-ingredient-context", "devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Hear the source-labelled account. Explicitly reject shunning or withholding ordinary care based on caste, sect, belief, occupation, alleged purity or the chapter's social labels.", "why": "Textual categories do not govern consumer dignity or access.", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Each willing person chooses one permission-safe care action. Do not tie, nail, paint, cut, climb, burn near, pour unknown liquid on, leave food/plastic at or crowd a tree.", "why": "Care must not damage the living subject or property.", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Close before fatigue. Extinguish every flame, keep reusable items at home, store or eat suitable fruit normally, provide food/water/medicine and leave no litter.", "why": "The close prevents fire, food, fasting and waste harm.", "source_ids": ["mcgm-religious-festival-fire-safety", "icmr-type1-diabetes-fasting", "devam-amalaki-research"], "optional": false}
+          ],
+          "closing": {"text": "Offer gratitude in the family's familiar way and move to the consent-safe care action. No one owes fruit consumption, tree contact, fasting, vigil, gift, payment or a promised result.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "scope_note": "Do not use this guide to calculate parana, prescribe amla or authorise work on someone else's tree."}
+        },
+        {
+          "procedure_id": "amalaki-en-elaborate-v1", "label": "Ordinary verified tree-site or temple visit", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "ordinary visitor conduct at a named permitted site with current verified programme", "form": "institutional_participation", "estimated_minutes": 45, "source_ids": ["padma-purana-amalaki-deshpande", "mcgm-religious-festival-fire-safety", "devam-amalaki-research"],
+          "materials": [{"item": "Verified current site information, permission and safe travel plan", "required": true, "substitutions": ["Stay home and use the complete minimum route"], "source_ids": ["devam-amalaki-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the named site's current programme, property permission, path accessibility, crowd, fire rules, offerings and return transport directly. Do not infer a schedule from a calendar card.", "why": "A living site controls access and activity.", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Attend only as an ordinary visitor. Do not imitate the gold-image, gem-jar, clay-bath, many-lamp, vigil, circumambulation-count or gift rite from this guide.", "why": "Formal authority and safety materially differ.", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Use only the permitted stable path. Do not touch, bind, damage or feed a tree, light flame near vegetation, block access, consume unknown offerings or leave materials. Leave if conditions are unsafe.", "why": "Reverence cannot override property, ecology, fire, food or access safety.", "source_ids": ["mcgm-religious-festival-fire-safety", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Return safely, rest and complete one private care action without claiming medical, spiritual or environmental results.", "why": "The household meaning stays bounded.", "source_ids": ["devam-amalaki-research"], "optional": false}
+          ],
+          "closing": {"text": "Follow the site's ordinary visitor exit. If current permission or safe access cannot be verified, stay home; the no-tree, non-fasting route is complete.", "source_ids": ["devam-amalaki-research"], "scope_note": "Only the institution or owner controls the site; no authority can waive health, consent, property, fire or environmental law."}
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-fruit-image-and-household-form", "scope": "Minor household expression", "difference": "Language, amla fruit/no fruit, lawful tree image/no image, existing Vishnu image/no image, flower/no flower, owned plant/no plant and familiar prayer/silence do not change the core action.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "separate_lane_required": false},
+        {"variant_id": "formal-tree-parashurama-image-vigil-gift-rite", "scope": "Formal inherited or authorised rite", "difference": "Clay bath, gold image, gem jar, many lamps, vigil, repeated circumambulation, invocations, parana and recipient-specific gifts materially change authority, cost, action and safety.", "source_ids": ["padma-purana-amalaki-deshpande"], "separate_lane_required": true},
+        {"variant_id": "gauna-vaishnava-or-dvadashi-pushya-authority", "scope": "Different timing or parana authority", "difference": "A materially different date, Dvadashi-Pushya rule, food practice or parana is not merged with ordinary Smarta timing.", "source_ids": ["padma-purana-amalaki-deshpande", "drik-amalaki-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "named-tree-site-or-temple-programme", "scope": "Institution or property-specific event", "difference": "Live schedule, permission, path, crowd, priest-led acts, offerings and fire rules require the named owner or institution.", "source_ids": ["devam-amalaki-research"], "separate_lane_required": true},
+        {"variant_id": "hunter-king-vasuratha-story-expression", "scope": "Additional unreviewed narrative", "difference": "That story is absent from the reviewed chapter 45 expression and requires its own fixed source, labels and owner review before use.", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi", "scope": "Another Ekadashi identity", "difference": "Papamochani, Kamada and other named Ekadashis have different timing, story or practice evidence.", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "A no-tree, no-fruit, non-fasting, well-rested, no-flame, no-purchase, image-free and material-free form is complete.",
+        "The amalaki creation and deity-location account is source theology, not botanical, historical or medical fact.",
+        "Do not shun, label or deny ordinary care, food, service or dignity based on caste, sect, belief, occupation, purity or the chapter's social categories.",
+        "The clay bath, gold Parashurama image, gem jar, many lamps, vigil, repeated circumambulation, invocations and recipient-specific gifts are a formal textual rite, not universal household steps.",
+        "Do not enter private or hazardous land; climb, cut, break, scrape, nail, paint, bind, hang weight from, dig around, burn near, pour unknown liquids on, leave food or plastic at, or crowd a tree.",
+        "Amla fruit is optional food, not medicine here. Do not prescribe dosage, cure or immunity, and do not consume unknown, spoiled, contaminated or unsuitable fruit.",
+        "No vigil or overnight lamp is required. Use daylight, supervised electric light or none; keep any chosen flame on a stable non-combustible base away from foliage and fully extinguish it.",
+        "Do not begin or intensify fasting here. Never change insulin, medicines, meals or hydration; use qualified clinical advice for an inherited fast.",
+        "Giving is voluntary, affordable, useful and requested; it must not cause debt or depend on caste, gender, purity, reciprocal blessing or ritual access.",
+        "No cure, immunity, longevity, sin removal, wealth, grain, heaven, salvation, merit, environmental offset or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["amalaki-ekadashi"],
+      "title": "आमलकी एकादशी: अहिंसक देखभाल से श्रद्धा",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज आमलकी एकादशी है। घर का पूर्ण रूप वृक्ष या फल बिना हो सकता है—विष्णु स्मरण, पद्म-पुराण नाम वाली आमलकी कथा, उसकी धर्मकथा/औपचारिक विधि को स्रोत-दावा कहना, एक अनुमति-सुरक्षित देखभाल का काम और कृतज्ञ समापन। उपवास, जागरण, लौ, परिक्रमा, फल खाना, सोना, रत्न, दान या वृक्ष-यात्रा अनिवार्य नहीं।",
+      "significance": {"text": "समीक्षित पद्म पुराण अध्याय आँवला/धात्री वृक्ष को विष्णु-प्रिय बताकर उसमें देवताओं का स्थान कहता है। देवम इसे ग्रंथ की धर्मकथा मानता है, वनस्पति या चिकित्सा-तथ्य नहीं। सीमित वर्तमान अर्थ है अहिंसक देखभाल—जीवित प्रणालियों पर निर्भरता पहचानकर वृक्ष को क्षति, व्यक्ति का बहिष्कार, प्रतिष्ठा-सामग्री की खरीद या प्रतीक से पर्यावरणीय हानि मिटाने का दावा किए बिना एक वैध काम।", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "scope_note": "स्रोत-नाम वाला अर्थ; वनस्पति-विज्ञान, इतिहास, चिकित्सा, पर्यावरण-प्रमाणन या निश्चित पुण्य नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "amalaki-creation-and-vow-hi", "title": "पद्म पुराण अध्याय 45 में आमलकी वृक्ष और औपचारिक व्रत", "summary": "कृष्ण युधिष्ठिर को वसिष्ठ-मांधाता संवाद बताते हैं। ब्रह्मांडीय जल-प्लावन के बाद अध्याय कहता है कि ब्रह्मा से जुड़ी चमकीली बूँद पहला आमलकी वृक्ष बनी। आकाशवाणी विष्णु की पहचान कर जड़, तना, शाखा, पत्ती, फूल और फल में देवताओं का स्थान कहती है। फिर कठिन औपचारिक विधि आती है—उपवास; अनुवाद में पतित, चोर, विधर्मी या दुराचारी कहे वर्गों से दूरी; मिट्टी-स्नान; स्वर्ण परशुराम प्रतिमा; पाँच रत्न, छाता, जूते, सुगंध, माला, धूप, अनेक दीप और लावा वाला निर्दोष कलश; अंग-नाम पूजा, जागरण, गीत, संगीत, कथा, बार-बार परिक्रमा, दान, ब्राह्मण-भोजन और बिरादरी-भोजन। अध्याय विष्णु-लोक, पाप-नाश, धन, अन्न, स्वर्ग, मोक्ष और पुण्य कहता है। देवम सृष्टि-धर्मकथा, सामाजिक बहिष्कार, सामग्री, क्रम और फल को स्रोत-तथ्य मानता है—विज्ञान, चिकित्सा, सार्वभौम गृह-निर्देश, गरिमा रोकने का नियम या गारंटी नहीं। लोकप्रिय शिकारी/राजा वसुरथ कथा इस समीक्षित अभिव्यक्ति में नहीं, इसलिए नहीं जोड़ी गई।", "tradition_scope": "पद्म पुराण उत्तर खंड अध्याय 45 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति", "source_ids": ["padma-purana-amalaki-deshpande"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "amalaki-hi-ordinary-remembrance", "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त गृह या व्यक्ति", "description": "विष्णु स्मरण, सीमित स्रोत-कथा, कृतज्ञता और एक अहिंसक देखभाल का काम। वृक्ष, फल, उपवास, जागरण या सामग्री जरूरी नहीं।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "instructional": false},
+        {"practice_id": "amalaki-hi-formal-tree-rite-context", "population_scope": "अलग विरासत या अधिकृत औपचारिक अभ्यास वाले परिवार/संस्थान", "description": "औपचारिक प्राधिकार वृक्ष-स्थल, परशुराम प्रतिमा, कलश, दीप, जागरण, परिक्रमा, पारण या दान उपयोग कर सकता है। यह मार्ग स्रोत-क्रम का नाम देता है, पुनर्निर्माण या सार्वभौमिकरण नहीं।", "source_ids": ["padma-purana-amalaki-deshpande"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "amalaki-hi-minimum-v1", "label": "बिना वृक्ष स्मरण और एक देखभाल", "tier": "minimum", "setting": "individual", "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण", "form": "accessible_short", "estimated_minutes": 12, "source_ids": ["padma-purana-amalaki-deshpande", "drik-amalaki-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-amalaki-research"],
+          "materials": [
+            {"item": "सुरक्षित शांत स्थान", "required": true, "substitutions": ["जहाँ हैं वहीं सुरक्षित रहें", "छोटा मानसिक रूप"], "source_ids": ["devam-amalaki-research"]},
+            {"item": "एक देखभाल का काम याद रखने का सुरक्षित साधन", "required": false, "substitutions": ["लिखें", "सीधे पूरा करें"], "source_ids": ["devam-amalaki-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "पुष्टि करें कि शहर और मान्य सामान्य स्मार्त प्राधिकार आज आमलकी एकादशी बताते हैं। कथा से तिथि या पारण न निकालें।", "why": "तिथि और प्राधिकार स्थानीय व नियत हैं।", "source_ids": ["drik-amalaki-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "सामान्य भोजन, जल, दवा और नींद लें। इस मार्ग से उपवास, फल की खुराक या जागरण शुरू न करें।", "why": "बिना उपवास, फल और जागरण का रूप पूर्ण है।", "source_ids": ["icmr-type1-diabetes-fasting", "fssai-amla-ingredient-context", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 3, "instruction": "परिचित नाम, छोटी पारिवारिक प्रार्थना या मौन से विष्णु स्मरण करें। चित्र, वृक्ष या फल जरूरी नहीं।", "why": "गढ़े सार्वभौम मंत्र बिना भक्ति सुलभ है।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 4, "instruction": "छोटी कथा को पद्म पुराण अध्याय 45 कहकर सुनें। वृक्ष-सृष्टि, देव-स्थान, औपचारिक विधि, सामाजिक वर्ग और फल ग्रंथ-दावे हैं—विज्ञान, चिकित्सा या सार्वभौम नियम नहीं।", "why": "असमर्थित स्थानांतरण बिना स्रोत बचता है।", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 5, "instruction": "बिना पास गए या छुए दैनिक जीवन सहारा देने वाली एक जीवित प्रणाली देखें—वृक्ष, पौधा, मिट्टी, जल या देखभाल का श्रम।", "why": "ध्यान के लिए संपत्ति-प्रवेश या सामग्री नहीं चाहिए।", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 6, "instruction": "एक वैध, अनुमति-सुरक्षित, अहिंसक काम चुनें—क्षति रोकना, अपशिष्ट घटाना, अपने पौधे को सही जल, अनुमति से सुरक्षित कचरा हटाना या सत्यापित देखभाल प्रयास।", "why": "श्रद्धा प्रतीकात्मक अधिकार नहीं, सीमित देखभाल बनती है।", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 7, "instruction": "कृतज्ञता से समापन कर केवल सुरक्षित काम करें। इलाज, प्रतिरक्षा, पाप-नाश, धन, मोक्ष या पर्यावरणीय भरपाई न कहें।", "why": "फल निश्चित नहीं और सामान्य जिम्मेदारी रहती है।", "source_ids": ["devam-amalaki-research"], "optional": false}
+          ],
+          "closing": {"text": "कृतज्ञता से समापन कर सामान्य भोजन/जल/दवा/विश्राम लें और केवल अपने नियंत्रण की अहिंसक देखभाल करें। यह मार्ग उपवास, जागरण, वृक्ष-यात्रा, लौ या पारण शुरू नहीं करता।", "source_ids": ["devam-amalaki-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "विरासत व्रत/पारण जिम्मेदार प्राधिकार और जरूरत पर चिकित्सकीय मार्गदर्शन में है।"}
+        },
+        {
+          "procedure_id": "amalaki-hi-standard-v1", "label": "वृक्ष-क्षति बिना पारिवारिक स्मरण", "tier": "standard", "setting": "family_led", "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; औपचारिक वृक्ष या पुरोहित विधि नहीं", "form": "traditional_household", "estimated_minutes": 25, "source_ids": ["padma-purana-amalaki-deshpande", "drik-amalaki-2027", "devam-ekadashi-recurring-scaffold", "mcgm-religious-festival-fire-safety", "icmr-type1-diabetes-fasting", "devam-amalaki-research"],
+          "materials": [
+            {"item": "वैकल्पिक वैध वृक्ष-चित्र, मौजूदा विष्णु चित्र/पाठ या आँवला फल", "required": false, "substitutions": ["चित्र/फल नहीं", "अपना स्वस्थ पौधा", "मौन"], "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"]},
+            {"item": "देखभाल योजना का कागज", "required": false, "substitutions": ["मौखिक योजना", "निजी काम"], "source_ids": ["devam-amalaki-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "तिथि तय कर पूछें कौन जुड़ना चाहता है। भोजन, एलर्जी, उपवास, धुआँ, गतिशीलता और बाहर की सुरक्षा पूछें; सहभागिता/खुलासा स्वैच्छिक हैं।", "why": "सामग्री से पहले मार्ग अनुकूल होता है।", "source_ids": ["drik-amalaki-2027", "icmr-type1-diabetes-fasting", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 2, "instruction": "परिचित विष्णु स्मरण या मौन से शुरू करें। वृक्ष/फल न रखना पूर्ण है; आँवला खाने को दवा, खुराक या पूर्णता-शर्त न मानें।", "why": "भोजन और चिकित्सा सीमा साफ रहती है।", "source_ids": ["fssai-amla-ingredient-context", "devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 3, "instruction": "स्रोत-नाम कथा सुनें। जाति, सम्प्रदाय, विश्वास, पेशा, कथित शुद्धता या अध्याय के सामाजिक नामों पर सामान्य देखभाल/भोजन/गरिमा रोकना स्पष्टतः अस्वीकार करें।", "why": "ग्रंथ-वर्ग उपभोक्ता गरिमा या प्रवेश नहीं नियंत्रित करते।", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 4, "instruction": "इच्छुक व्यक्ति अनुमति-सुरक्षित देखभाल चुनें। वृक्ष पर धागा कसना, कील/रंग, काटना, चढ़ना, पास लौ, अज्ञात द्रव, भोजन/प्लास्टिक छोड़ना या भीड़ न करें।", "why": "देखभाल जीव या संपत्ति को हानि नहीं देती।", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 5, "instruction": "थकान से पहले बंद करें। हर लौ बुझाएँ, पुनः उपयोग वस्तु घर रखें, उपयुक्त फल सामान्यतः रखें/खाएँ, भोजन/जल/दवा दें और कचरा न छोड़ें।", "why": "समापन आग, भोजन, उपवास और अपशिष्ट हानि रोकता है।", "source_ids": ["mcgm-religious-festival-fire-safety", "icmr-type1-diabetes-fasting", "devam-amalaki-research"], "optional": false}
+          ],
+          "closing": {"text": "परिवार के परिचित ढंग से कृतज्ञता देकर सहमति-सुरक्षित देखभाल करें। कोई फल, वृक्ष-स्पर्श, उपवास, जागरण, दान, भुगतान या निश्चित फल नहीं देता।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "scope_note": "इस मार्ग से पारण, आँवला-नुस्खा या दूसरे के वृक्ष पर काम अधिकृत न करें।"}
+        },
+        {
+          "procedure_id": "amalaki-hi-elaborate-v1", "label": "सत्यापित सामान्य वृक्ष-स्थल या मंदिर यात्रा", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित अनुमत स्थल में सामान्य आगंतुक", "form": "institutional_participation", "estimated_minutes": 45, "source_ids": ["padma-purana-amalaki-deshpande", "mcgm-religious-festival-fire-safety", "devam-amalaki-research"],
+          "materials": [{"item": "सत्यापित स्थल-सूचना, अनुमति और सुरक्षित यात्रा", "required": true, "substitutions": ["घर रहकर पूर्ण न्यूनतम रूप करें"], "source_ids": ["devam-amalaki-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "नामित स्थल से वर्तमान कार्यक्रम, संपत्ति-अनुमति, रास्ता, भीड़, आग-नियम, चढ़ावा और लौटने का साधन सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।", "why": "जीवित स्थल प्रवेश और गतिविधि नियंत्रित करता है।", "source_ids": ["devam-amalaki-research"], "optional": false},
+            {"ordinal": 2, "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से स्वर्ण-प्रतिमा, रत्न-कलश, मिट्टी-स्नान, अनेक दीप, जागरण, परिक्रमा-गिनती या दान-विधि की नकल न करें।", "why": "औपचारिक प्राधिकार और सुरक्षा अलग हैं।", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 3, "instruction": "केवल अनुमत स्थिर रास्ता लें। वृक्ष छुएँ/बाँधें/क्षति/भोजन न दें, वनस्पति पास लौ न जलाएँ, रास्ता न रोकें, अज्ञात चढ़ावा न खाएँ और सामग्री न छोड़ें। असुरक्षित हो तो निकलें।", "why": "श्रद्धा संपत्ति, पर्यावरण, आग, भोजन या प्रवेश-सुरक्षा नहीं हटाती।", "source_ids": ["mcgm-religious-festival-fire-safety", "devam-amalaki-research"], "optional": false},
+            {"ordinal": 4, "instruction": "सुरक्षित लौटकर आराम करें और चिकित्सकीय, आध्यात्मिक या पर्यावरणीय फल कहे बिना निजी देखभाल करें।", "why": "गृह-अर्थ सीमित रहता है।", "source_ids": ["devam-amalaki-research"], "optional": false}
+          ],
+          "closing": {"text": "स्थल का सामान्य आगंतुक-निकास मानें। वर्तमान अनुमति या सुरक्षित प्रवेश सत्यापित न हो तो घर रहें; बिना वृक्ष और उपवास का रूप पूर्ण है।", "source_ids": ["devam-amalaki-research"], "scope_note": "संस्थान/मालिक स्थल नियंत्रित करते हैं; कोई स्वास्थ्य, सहमति, संपत्ति, आग या पर्यावरण कानून नहीं हटाता।"}
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-fruit-image-and-household-form-hi", "scope": "छोटा गृह-अंतर", "difference": "भाषा, आँवला फल/नहीं, वैध वृक्ष-चित्र/नहीं, मौजूदा विष्णु चित्र/नहीं, फूल/नहीं, अपना पौधा/नहीं और प्रार्थना/मौन मूल काम नहीं बदलते।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-amalaki-research"], "separate_lane_required": false},
+        {"variant_id": "formal-tree-parashurama-image-vigil-gift-rite-hi", "scope": "औपचारिक विरासत या अधिकृत विधि", "difference": "मिट्टी-स्नान, स्वर्ण प्रतिमा, रत्न-कलश, अनेक दीप, जागरण, परिक्रमा, अंग-आह्वान, पारण और खास दान प्राधिकार, लागत, क्रम और सुरक्षा बदलते हैं।", "source_ids": ["padma-purana-amalaki-deshpande"], "separate_lane_required": true},
+        {"variant_id": "gauna-vaishnava-or-dvadashi-pushya-authority-hi", "scope": "अलग समय या पारण प्राधिकार", "difference": "भिन्न तिथि, द्वादशी-पुष्य नियम, भोजन या पारण को सामान्य स्मार्त समय में नहीं मिलाते।", "source_ids": ["padma-purana-amalaki-deshpande", "drik-amalaki-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "named-tree-site-or-temple-programme-hi", "scope": "संस्थान या संपत्ति-विशिष्ट आयोजन", "difference": "जीवित समय, अनुमति, रास्ता, भीड़, पुरोहित-कर्म, चढ़ावा और आग-नियम नामित मालिक/संस्थान चाहते हैं।", "source_ids": ["devam-amalaki-research"], "separate_lane_required": true},
+        {"variant_id": "hunter-king-vasuratha-story-expression-hi", "scope": "अतिरिक्त असमीक्षित कथा", "difference": "यह कथा समीक्षित अध्याय 45 अभिव्यक्ति में नहीं; उपयोग से पहले अपना स्थिर स्रोत, नाम और मालिक समीक्षा चाहिए।", "source_ids": ["padma-purana-amalaki-deshpande", "devam-amalaki-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi-hi", "scope": "अन्य एकादशी पहचान", "difference": "पापमोचनी, कामदा और अन्य एकादशियों की तिथि, कथा या अभ्यास अलग है।", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "बिना वृक्ष, फल, उपवास, जागरण, लौ, खरीद, चित्र और सामग्री का रूप पूर्ण है।",
+        "आमलकी सृष्टि और देव-स्थान कथा स्रोत-धर्मकथा है—वनस्पति, इतिहास या चिकित्सा-तथ्य नहीं।",
+        "जाति, सम्प्रदाय, विश्वास, पेशा, शुद्धता या अध्याय के सामाजिक वर्ग पर किसी को दूर, नामित या सामान्य देखभाल/भोजन/सेवा/गरिमा से वंचित न करें।",
+        "मिट्टी-स्नान, स्वर्ण परशुराम प्रतिमा, रत्न-कलश, अनेक दीप, जागरण, परिक्रमा, आह्वान और खास दान औपचारिक ग्रंथ-विधि हैं—सार्वभौम गृह-कदम नहीं।",
+        "निजी/खतरनाक भूमि में न जाएँ; वृक्ष पर चढ़ें, काटें, तोड़ें, खुरचें, कील/रंग, कसाव, भार, खुदाई, पास आग, अज्ञात द्रव, भोजन/प्लास्टिक या भीड़ न करें।",
+        "आँवला वैकल्पिक भोजन है, यहाँ दवा नहीं। खुराक, इलाज या प्रतिरक्षा न लिखें; अज्ञात, खराब, दूषित या अनुपयुक्त फल न खाएँ।",
+        "जागरण या रातभर दीप जरूरी नहीं। दिन, निगरानी वाली बिजली रोशनी या कुछ नहीं पूर्ण है; चुनी लौ स्थिर अज्वलनशील आधार पर पत्तों से दूर रखकर पूरी बुझाएँ।",
+        "यहाँ उपवास शुरू या कड़ा न करें। इंसुलिन, दवा, भोजन या जल न बदलें; विरासत उपवास में योग्य चिकित्सकीय सलाह लें।",
+        "दान स्वैच्छिक, सस्ता, उपयोगी और माँगा हुआ हो; कर्ज न कराए और जाति, लिंग, शुद्धता, आशीर्वाद या अनुष्ठान प्रवेश पर निर्भर न हो।",
+        "इलाज, प्रतिरक्षा, आयु, पाप-नाश, धन, अन्न, स्वर्ग, मोक्ष, पुण्य, पर्यावरणीय भरपाई या कोई फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

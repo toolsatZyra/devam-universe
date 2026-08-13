@@ -1,6 +1,7 @@
 # Amalaki Ekadashi ordinary North/West Smarta household research (2027)
 
-Status: reviewed research checkpoint; named item not yet counted.
+Status: reviewed source and completion record; named ordinary Amalaki item
+counted once after bilingual pack validation.
 
 ## Selected applicability lane
 
@@ -154,11 +155,20 @@ gem, lamp, incense, grain, umbrella, sandals or gift is required.
 - Devam Ekadashi rule audit, candidate disposition, recurring packs and this
   lane's reviewed safety synthesis.
 
-## Remaining completion gate
+## Completion and adversarial-review gate
 
-This item remains uncounted until a bilingual pack passes schema/source closure,
-English/Hindi shape parity, 18-March timing, no-tree-required and non-fasting/
-no-vigil completeness, tree/property/fire/food safeguards, no medical or
-guaranteed-result claim, no social exclusion, explicit formal-rite separation,
-safe closing and major-variant review. Research is not authored, projected,
-hosted, independently released or published.
+The bilingual pack passed the shared schema, source closure, strict UTF-8,
+English/Hindi procedure-shape parity and 18-March timing checks. Its complete
+ordinary route is no-tree, no-fruit, non-fasting, well-rested, no-flame,
+no-purchase and material-free. The formal clay-bath, gold Parashurama image,
+gem-jar, many-lamp, vigil, circumambulation, invocation and gift sequence stays
+source-labelled and separately authorised.
+
+Adversarial review must continue to reject tree/property damage, unsafe paths,
+unattended flame, food or medical amla claims, fasting or sleep pressure, caste/
+sect/purity exclusion, debt-causing gifts, guaranteed results and silent import
+of the absent hunter/King Vasuratha story. Minor expression remains inside the
+lane; only materially different timing, formal authority, named site, source
+expression or named Ekadashi routes separately. The ordinary Amalaki item is
+counted once at the authored-library layer. It remains unprojected across all
+19,480 day cells, unhosted, not independently released and unpublished.
