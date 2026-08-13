@@ -1,6 +1,6 @@
 # Seasonal, new-year and harvest batch: frozen evidence matrix v1
 
-Reviewed: 2026-08-13  
+Reviewed: 2026-08-13
 Exact denominator: **twelve accepted named answers**. This freeze precedes new
 pack generation and does not change the repository-wide 208-item denominator.
 
