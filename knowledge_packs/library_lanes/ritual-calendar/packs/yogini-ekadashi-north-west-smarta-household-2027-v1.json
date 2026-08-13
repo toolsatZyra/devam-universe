@@ -1,0 +1,1082 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "yogini-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "yogini-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Ashadha Krishna Yogini Ekadashi for you?",
+      "Does your family follow ordinary Smarta remembrance or a materially different Gauna/Vaishnava date, fast or parana authority?",
+      "Would disease, curse, sexual blame, employer punishment, separation or cure claims be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, treatment, dressing care, privacy, touch boundaries, work breaks or rest?",
+      "Would a private, material-free form with no disclosure, confession, contact or travel be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "yogini-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "yogini-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "yogini-ekadashi",
+        "language_code": "en",
+        "note": "Ordinary North/West Smarta household lane. Chapter 52 links a missed flower delivery, sexual blame, curse, expulsion, leprosy and cure; these are source events, not Devam's medical, marital, employment or universal-practice rules."
+      },
+      {
+        "observance_slug": "yogini-ekadashi",
+        "language_code": "hi",
+        "note": "सामान्य उत्तर/पश्चिम स्मार्त गृह-मार्ग। अध्याय 52 छूटी पुष्प-सेवा, यौन-दोष, शाप, निष्कासन, कुष्ठ और इलाज जोड़ता है; ये स्रोत-घटनाएँ हैं, देवम के चिकित्सा, वैवाहिक, रोजगार या सार्वभौम अभ्यास-नियम नहीं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-yogini-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "yogini-krishna-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "yogini-private-repair-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North/West, Maharashtra, Andhra Pradesh, Chhattisgarh, West Bengal and Indian ISKCON fixtures place ordinary Yogini Ekadashi on Wednesday 30 June 2027, Ashadha Krishna Ekadashi. Resolve the user's Indian city, sunrise and accepted family/sampradaya rule live; never copy displayed tithi/parana times, this date or a temple schedule elsewhere."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-yogini-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 52: Yogini Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Hemamali-Kubera-Markandeya account, curse, disease, cure and attributed merit as source facts rather than medical or employment rules",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365629.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 52",
+        "reviewed_lines": "54-78",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-yogini-2027",
+      "title": "2027 Yogini Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "ordinary, regional and Indian ISKCON date discovery for 30 June 2027; no portable parana, fasting or temple authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/yogini/yogini-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-06-30",
+        "identity": "Ashadha Krishna Yogini Ekadashi",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "dghs-nlep-current",
+      "title": "National Leprosy Eradication Programme",
+      "publisher": "Directorate General of Health Services, Ministry of Health and Family Welfare, Government of India",
+      "source_role": "official current early detection, treatment, rehabilitation, dignity and zero-stigma/discrimination boundary",
+      "rights_lane": "citation_only",
+      "url": "https://dghs.mohfw.gov.in/nlep.php",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": "Overview, Mission, Objectives and Strategy",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "mohfw-nlep-medical-officer-manual",
+      "title": "National Leprosy Eradication: Training Manual for Medical Officer",
+      "publisher": "Ministry of Health and Family Welfare, Government of India",
+      "source_role": "official anti-curse, curability, non-isolation, non-discrimination, privacy and consent-led counselling messages",
+      "rights_lane": "citation_only",
+      "url": "https://www.clinicalestablishments.mohfw.gov.in/sites/default/files/standard-treatment-guidelines/50.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "page": "29",
+        "lines": "1241-1277 in reviewed extraction",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen named-Ekadashi identity and material timing/authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-yogini-research",
+      "title": "Yogini Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of disease dignity, spouse privacy, accountability, employment, non-fasting, closing and major-variant boundaries",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/yogini-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "yogini-ekadashi"
+      ],
+      "title": "Yogini Ekadashi: repair one missed responsibility without blame or stigma",
+      "short_answer": "Confirm Yogini Ekadashi from your city and accepted ordinary Smarta Panchang. A complete home form is non-fasting: keep food, water, medicine and treatment normal; remember Vishnu; hear the source-labelled Hemamali story without treating disease as curse or Vishalakshi as the cause; privately choose one proportionate repair or truthful limit within your own responsibility; and close without confession, contact, cure claim or guaranteed merit.",
+      "significance": {
+        "text": "Padma Purana chapter 52 tells how Hemamali misses Kubera's flower delivery while staying with Vishalakshi, is cursed with separation, expulsion and what the translation calls eighteen kinds of leprosy, truthfully tells Markandeya, observes Yogini-vrata and is said to be cured. Devam preserves the account while rejecting disease-as-curse, spouse blame and punitive workplace authority. A bounded meaning is to acknowledge one's own missed responsibility and choose proportionate repair without stigma.",
+        "source_ids": [
+          "padma-purana-yogini-deshpande",
+          "dghs-nlep-current",
+          "mohfw-nlep-medical-officer-manual",
+          "devam-yogini-research"
+        ],
+        "scope_note": "Source-labelled devotional reflection; not diagnosis, cure, employment discipline, confession, legal advice or guaranteed merit."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "yogini-hemamali-kubera-markandeya-en",
+          "title": "Hemamali's missed delivery, punishment and meeting with Markandeya",
+          "summary": "Yudhishthira asks Krishna about Ashadha Krishna Ekadashi. Krishna names Yogini and tells of Kubera's flower-collector Hemamali, who brings lotuses from Manasa but stays home with his wife Vishalakshi instead of delivering them for Shiva worship. Yakshas report him through sexualised blame. Kubera summons the frightened worker, insults him and curses him to separation, expulsion and eighteen kinds of leprosy. Suffering and wandering, Hemamali meets Markandeya and truthfully describes the missed duty and curse. Markandeya prescribes Yogini-vrata; the chapter says Hemamali observes it, the disease disappears and the vow gives vast merit and freedom from sin. Disease, curse, cure and merit are source claims, not medical causation, workplace authority or guarantees; Vishalakshi is not the cause of his decision.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 52",
+          "source_ids": [
+            "padma-purana-yogini-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "yogini-en-safe-remembrance",
+          "population_scope": "Ordinary North/West Smarta household or individual after local date resolution",
+          "description": "Fed and hydrated Vishnu remembrance, bounded Hemamali account, private proportionate repair and normal close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "dghs-nlep-current",
+            "devam-yogini-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "yogini-en-formal-vow-context",
+          "population_scope": "Families or institutions with separately inherited and clinically reviewed authority",
+          "description": "The source prescribes a vow and attributes cure and merit; this ordinary guide does not reconstruct fasting, flowers, feeding or parana and promises no cure.",
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "icmr-type1-diabetes-fasting",
+            "devam-yogini-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "yogini-en-minimum-v1",
+          "label": "Private proportionate repair",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "ordinary self/family guidance after local date resolution; no fasting, medical, employment or temple authority",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "drik-yogini-2027",
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-yogini-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional private reminder or safe record",
+              "required": false,
+              "substitutions": [
+                "No writing",
+                "A purely mental choice"
+              ],
+              "source_ids": [
+                "devam-yogini-research"
+              ]
+            },
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Yogini Ekadashi. Do not infer a date or parana from the civil month.",
+              "why": "Timing is deterministic, local and tradition-aware.",
+              "source_ids": [
+                "drik-yogini-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, prescribed medicine, insulin, treatment, dressing or wound care, hygiene, work breaks and sleep normal. Do not begin fasting from this guide.",
+              "why": "The fed, hydrated and treated non-fasting route is complete.",
+              "source_ids": [
+                "dghs-nlep-current",
+                "mohfw-nlep-medical-officer-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, family prayer or silence. No image, mantra, flower, flame, touch, purchase or offering is required.",
+              "why": "Devotion remains accessible without inventing a universal formula.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the bounded Hemamali account. Say that its sexual blame, curse, expulsion, disease, cure and merit are source events and claims—not medical causation, workplace authority or guaranteed results.",
+              "why": "The source is preserved without spreading stigma or coercion.",
+              "source_ids": [
+                "padma-purana-yogini-deshpande",
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Privately identify one missed responsibility within your own control. Do not name a spouse's fault, expose sexual or medical information, inspect skin, or select a worker or patient for correction.",
+              "why": "Accountability begins with one's own conduct and respects privacy.",
+              "source_ids": [
+                "mohfw-nlep-medical-officer-manual",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Choose one proportionate safe repair: correct a date or record, complete a still-useful task, arrange a handover, notify through an ordinary safe channel, or state a truthful limit. No confession or contact is required.",
+              "why": "Repair should reduce practical harm without humiliation, retaliation or unsafe access.",
+              "source_ids": [
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with gratitude and continue normal care. Preserve evidence and qualified routes where needed; claim no cure, absolution, restored body, job, relationship, merit or salvation.",
+              "why": "Ritual does not erase consequences or replace care.",
+              "source_ids": [
+                "dghs-nlep-current",
+                "padma-purana-yogini-deshpande",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately with normal food, water, medicine, work breaks and rest. No fast, confession, contact, cure claim or parana begins here.",
+            "source_ids": [
+              "dghs-nlep-current",
+              "devam-yogini-research"
+            ],
+            "scope_note": "Medical, employment, legal, safeguarding and institutional routes remain separate."
+          }
+        },
+        {
+          "procedure_id": "yogini-en-standard-v1",
+          "label": "Consent-led family responsibility reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "ordinary self/family guidance after local date resolution; no fasting, medical, employment or temple authority",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "drik-yogini-2027",
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-yogini-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "Optional authoritative service or policy page",
+              "required": false,
+              "substitutions": [
+                "No material",
+                "Use a qualified route only if needed"
+              ],
+              "source_ids": [
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Resolve Yogini locally and invite only willing participants. Anyone may use the private short form, decline the story or leave without explanation.",
+              "why": "Consent and local timing precede a family form.",
+              "source_ids": [
+                "drik-yogini-2027",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal meals, water, medicines, treatment, privacy, touch boundaries, breaks and sleep available without surveillance or comment.",
+              "why": "No family observance may withhold care or create disease stigma.",
+              "source_ids": [
+                "dghs-nlep-current",
+                "mohfw-nlep-medical-officer-manual",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use familiar Vishnu remembrance and tell the Hemamali–Kubera–Markandeya account without sexualised insults. Explicitly reject disease as curse and Vishalakshi as the cause.",
+              "why": "The story can be heard without spouse blame or false medical explanation.",
+              "source_ids": [
+                "padma-purana-yogini-deshpande",
+                "mohfw-nlep-medical-officer-manual",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person may privately choose their own small repair or truthful limit. Do not make a group confession, employer tribunal, diagnosis discussion or reconciliation exercise.",
+              "why": "Family reflection is not a disciplinary or clinical process.",
+              "source_ids": [
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close without fasting, flowers, prostration, mass feeding, donation, medical claim or contact. Use qualified services for health, discrimination, employment or safety concerns.",
+              "why": "Professional routes remain available and separate.",
+              "source_ids": [
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately with normal food, water, medicine, work breaks and rest. No fast, confession, contact, cure claim or parana begins here.",
+            "source_ids": [
+              "dghs-nlep-current",
+              "devam-yogini-research"
+            ],
+            "scope_note": "Medical, employment, legal, safeguarding and institutional routes remain separate."
+          }
+        },
+        {
+          "procedure_id": "yogini-en-elaborate-v1",
+          "label": "Current named temple participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "ordinary self/family guidance after local date resolution; no fasting, medical, employment or temple authority",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "drik-yogini-2027",
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-yogini-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified current temple programme and safe access plan",
+              "required": false,
+              "substitutions": [
+                "Do not attend",
+                "Use the complete home form"
+              ],
+              "source_ids": [
+                "devam-yogini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the current named temple programme, local date, access, fees, offerings and safeguarding before travel. A calendar card is not a live schedule.",
+              "why": "Institutional details change.",
+              "source_ids": [
+                "drik-yogini-2027",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Attend only if travel and access are safe. Keep normal water, food, medicine, treatment and disability support; decline touch, disclosure, fasting or private access.",
+              "why": "Temple participation does not suspend care, dignity or consent.",
+              "source_ids": [
+                "dghs-nlep-current",
+                "mohfw-nlep-medical-officer-manual",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Observe only the verified public programme. Do not copy its fast, mantra, flowers, feeding, gifts or parana into a household guide, and do not seek a ritual cure.",
+              "why": "Institutional liturgy and medical care have distinct authorities.",
+              "source_ids": [
+                "padma-purana-yogini-deshpande",
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Leave at any time and return safely. Close with normal care and no claim of cure, purity, restored work or guaranteed merit.",
+              "why": "A safe exit is part of participation.",
+              "source_ids": [
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close privately with normal food, water, medicine, work breaks and rest. No fast, confession, contact, cure claim or parana begins here.",
+            "source_ids": [
+              "dghs-nlep-current",
+              "devam-yogini-research"
+            ],
+            "scope_note": "Medical, employment, legal, safeguarding and institutional routes remain separate."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-writing-and-household-form",
+          "scope": "ordinary household",
+          "difference": "Language, image/no-image, prayer/silence, private reminder/no writing and individual/family form are minor and stay in this lane.",
+          "source_ids": [
+            "devam-yogini-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-en",
+          "scope": "material timing authority",
+          "difference": "A different date, formal fast, food, mantra, vigil or parana requires separate authority.",
+          "source_ids": [
+            "drik-yogini-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-medical-care-en",
+          "scope": "professional care",
+          "difference": "Leprosy or other skin/nerve symptoms, treatment, reactions, disability, rehabilitation and mental health are medical routes.",
+          "source_ids": [
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "employment-legal-or-safeguarding-route-en",
+          "scope": "professional accountability",
+          "difference": "Discipline, discrimination, privacy, accommodation, dismissal, retaliation or abuse requires current qualified routes.",
+          "source_ids": [
+            "devam-yogini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-en",
+          "scope": "institution",
+          "difference": "A current temple schedule, rite, access, fees, flowers and offerings require live verification.",
+          "source_ids": [
+            "devam-yogini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi-en",
+          "scope": "observance identity",
+          "difference": "Nirjala, Devshayani and other Ekadashis keep separate timing, stories and procedures.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A complete ordinary form is non-fasting, fed, hydrated, treated, rested, no-touch, no-flame, no-purchase, no-flower, no-disclosure, image-free, writing-free and material-free.",
+        "Leprosy is a disease, not a curse, sexual consequence, sin, impurity or punishment; ritual does not diagnose or cure it.",
+        "Do not diagnose, inspect skin, photograph, shame, isolate, expel, discriminate or delay qualified diagnosis, treatment, rehabilitation or disability care.",
+        "Do not blame Vishalakshi, a spouse, woman, worker, patient or affected person for another person's conduct or illness; adult consensual affection is not wrongdoing.",
+        "A missed responsibility does not justify Kubera's insults, curse, separation, expulsion, homelessness, discriminatory firing, retaliation or denial of care.",
+        "No one owes confession, employer access to sexual or medical information, contact, reconciliation, touch, fasting, flowers, travel, prostration, feeding or donation.",
+        "Preserve evidence, privacy, reasonable accommodation, restitution, employment procedures, medical care, safeguarding and law where relevant.",
+        "No cure, sin removal, purity, restored body, job, relationship, merit, salvation or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "yogini-ekadashi"
+      ],
+      "title": "योगिनी एकादशी: दोष या कलंक बिना एक छूटी जिम्मेदारी सुधारें",
+      "short_answer": "अपने शहर और मान्य सामान्य स्मार्त पंचांग से योगिनी एकादशी की पुष्टि करें। पूर्ण गृह-रूप गैर-उपवास है: भोजन, जल, दवा और उपचार सामान्य रखें; विष्णु-स्मरण करें; हेममाली की स्रोत-नामित कथा को रोग का शाप या विशालाक्षी को कारण बनाए बिना सुनें; अपनी जिम्मेदारी में एक अनुपातिक सुधार या सच्ची सीमा निजी रूप से चुनें; और स्वीकारोक्ति, संपर्क, इलाज के दावे या निश्चित पुण्य बिना समापन करें।",
+      "significance": {
+        "text": "पद्मपुराण अध्याय 52 में हेममाली विशालाक्षी के साथ रुककर कुबेर के फूल पहुँचाना भूलते हैं, अलगाव, निष्कासन और अनुवाद में कहे अठारह प्रकार के कुष्ठ का शाप पाते हैं, मार्कण्डेय को सच बताते हैं, योगिनी-व्रत करते हैं और उनके रोग-मुक्त होने की बात आती है। देवम कथा सुरक्षित रखता है पर रोग को शाप, पत्नी को दोष और दंडात्मक मालिक-अधिकार नहीं मानता। सीमित अर्थ है अपनी छूटी जिम्मेदारी स्वीकार कर कलंक बिना अनुपातिक सुधार चुनना।",
+        "source_ids": [
+          "padma-purana-yogini-deshpande",
+          "dghs-nlep-current",
+          "mohfw-nlep-medical-officer-manual",
+          "devam-yogini-research"
+        ],
+        "scope_note": "स्रोत-नामित भक्ति-चिंतन; निदान, इलाज, रोजगार-दंड, स्वीकारोक्ति, कानूनी सलाह या निश्चित पुण्य नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "yogini-hemamali-kubera-markandeya-hi",
+          "title": "हेममाली की छूटी सेवा, दंड और मार्कण्डेय से भेंट",
+          "summary": "युधिष्ठिर कृष्ण से आषाढ़ कृष्ण एकादशी पूछते हैं। कृष्ण योगिनी नाम देकर कुबेर के पुष्प-संग्राहक हेममाली की कथा कहते हैं। वे मानस से कमल लाते पर शिव-पूजा के लिए पहुँचाने की जगह पत्नी विशालाक्षी के साथ घर रुकते हैं। यक्ष यौन-दोष वाली भाषा में सूचना देते हैं। कुबेर डरे कर्मी को बुलाकर अपमानित करते और अलगाव, निष्कासन तथा अठारह प्रकार के कुष्ठ का शाप देते हैं। पीड़ित हेममाली मार्कण्डेय से मिलकर छूटी सेवा और शाप सच बताते हैं। मार्कण्डेय योगिनी-व्रत बताते हैं; अध्याय रोग मिटने, बड़े पुण्य और पाप-मुक्ति का दावा करता है। रोग, शाप, इलाज और पुण्य स्रोत-दावे हैं, चिकित्सकीय कारण, मालिक-अधिकार या गारंटी नहीं; विशालाक्षी उनके निर्णय का कारण नहीं।",
+          "tradition_scope": "पद्मपुराण उत्तरखंड अध्याय 52 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति",
+          "source_ids": [
+            "padma-purana-yogini-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "yogini-hi-safe-remembrance",
+          "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त गृह या व्यक्ति",
+          "description": "भोजन और जल सहित विष्णु-स्मरण, सीमित हेममाली कथा, निजी अनुपातिक सुधार और सामान्य समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "dghs-nlep-current",
+            "devam-yogini-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "yogini-hi-formal-vow-context",
+          "population_scope": "अलग परंपरागत और चिकित्सकीय रूप से समीक्षित अधिकार वाले परिवार या संस्था",
+          "description": "स्रोत व्रत बताकर इलाज और पुण्य का दावा करता है; यह सामान्य मार्ग उपवास, फूल, भोजन या पारण नहीं बनाता और इलाज नहीं वादा करता।",
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "icmr-type1-diabetes-fasting",
+            "devam-yogini-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "yogini-hi-minimum-v1",
+          "label": "निजी अनुपातिक सुधार",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य निजी/पारिवारिक मार्ग; उपवास, चिकित्सा, रोजगार या मंदिर-अधिकार नहीं",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "drik-yogini-2027",
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-yogini-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक निजी स्मरण या सुरक्षित रिकॉर्ड",
+              "required": false,
+              "substitutions": [
+                "बिना लेखन",
+                "केवल मन में चुनाव"
+              ],
+              "source_ids": [
+                "devam-yogini-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने शहर और मान्य सामान्य स्मार्त पंचांग से पुष्टि करें कि आज योगिनी एकादशी है। नागरिक महीने से तिथि या पारण न निकालें।",
+              "why": "तिथि स्थानीय और परंपरा-सापेक्ष है।",
+              "source_ids": [
+                "drik-yogini-2027",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, जल, लिखी दवा, इंसुलिन, उपचार, पट्टी या घाव-देखभाल, स्वच्छता, काम के विराम और नींद जारी रखें। यहाँ से उपवास शुरू न करें।",
+              "why": "भोजन, जल और उपचार वाला गैर-उपवास रूप पूर्ण है।",
+              "source_ids": [
+                "dghs-nlep-current",
+                "mohfw-nlep-medical-officer-manual",
+                "icmr-type1-diabetes-fasting",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का स्मरण परिचित नाम, पारिवारिक प्रार्थना या मौन से करें। चित्र, मंत्र, फूल, अग्नि, स्पर्श, खरीद या चढ़ावा जरूरी नहीं।",
+              "why": "बिना सार्वभौम मंत्र गढ़े भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हेममाली की सीमित कथा सुनें। स्पष्ट कहें कि यौन-दोषारोपण, शाप, निष्कासन, रोग, इलाज और पुण्य स्रोत की घटनाएँ व दावे हैं—चिकित्सकीय कारण, रोजगार-अधिकार या गारंटी नहीं।",
+              "why": "स्रोत कलंक या दबाव फैलाए बिना सुरक्षित रहता है।",
+              "source_ids": [
+                "padma-purana-yogini-deshpande",
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अपने नियंत्रण की एक छूटी जिम्मेदारी निजी रूप से पहचानें। जीवनसाथी को दोष न दें, यौन या चिकित्सकीय जानकारी न खोलें, त्वचा न जाँचें और किसी कर्मी या रोगी को सुधार के लिए न चुनें।",
+              "why": "जवाबदेही अपने आचरण से शुरू होती और निजता रखती है।",
+              "source_ids": [
+                "mohfw-nlep-medical-officer-manual",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "एक सुरक्षित अनुपातिक सुधार चुनें: तिथि या रिकॉर्ड ठीक करें, अभी उपयोगी काम पूरा करें, काम सौंपें, सामान्य सुरक्षित माध्यम से सूचना दें, या सच्ची सीमा बताएँ। स्वीकारोक्ति या संपर्क जरूरी नहीं।",
+              "why": "सुधार अपमान, प्रतिशोध या असुरक्षित पहुँच बिना व्यावहारिक हानि घटाए।",
+              "source_ids": [
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "कृतज्ञता से समापन कर सामान्य देखभाल जारी रखें। जरूरत पर प्रमाण और योग्य मार्ग बचाएँ; इलाज, पाप-मुक्ति, शरीर, नौकरी, संबंध, पुण्य या मुक्ति की बहाली का दावा न करें।",
+              "why": "अनुष्ठान परिणाम या देखभाल नहीं मिटाता।",
+              "source_ids": [
+                "dghs-nlep-current",
+                "padma-purana-yogini-deshpande",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा, काम के विराम और आराम के साथ निजी समापन करें। यहाँ उपवास, स्वीकारोक्ति, संपर्क, इलाज का दावा या पारण शुरू नहीं होता।",
+            "source_ids": [
+              "dghs-nlep-current",
+              "devam-yogini-research"
+            ],
+            "scope_note": "चिकित्सा, रोजगार, कानूनी, सुरक्षा और संस्थागत मार्ग अलग रहते हैं।"
+          }
+        },
+        {
+          "procedure_id": "yogini-hi-standard-v1",
+          "label": "सहमति वाला पारिवारिक जिम्मेदारी-चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य निजी/पारिवारिक मार्ग; उपवास, चिकित्सा, रोजगार या मंदिर-अधिकार नहीं",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "drik-yogini-2027",
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-yogini-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "वैकल्पिक प्रामाणिक सेवा या नीति पृष्ठ",
+              "required": false,
+              "substitutions": [
+                "बिना सामग्री",
+                "जरूरत पर ही योग्य मार्ग लें"
+              ],
+              "source_ids": [
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "योगिनी की स्थानीय तिथि तय करें और केवल इच्छुक लोगों को बुलाएँ। कोई भी निजी छोटा रूप चुन, कथा छोड़ या बिना कारण बताए जा सकता है।",
+              "why": "सहमति और स्थानीय तिथि पहले आते हैं।",
+              "source_ids": [
+                "drik-yogini-2027",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, जल, दवा, उपचार, निजता, स्पर्श-सीमा, विराम और नींद बिना निगरानी या टिप्पणी उपलब्ध रखें।",
+              "why": "परिवार का पर्व देखभाल नहीं रोकता और रोग-कलंक नहीं बनाता।",
+              "source_ids": [
+                "dghs-nlep-current",
+                "mohfw-nlep-medical-officer-manual",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित विष्णु-स्मरण करें और हेममाली–कुबेर–मार्कण्डेय कथा यौन अपमान बिना कहें। रोग को शाप और विशालाक्षी को कारण मानने से स्पष्ट इनकार करें।",
+              "why": "कथा जीवनसाथी-दोष और झूठे चिकित्सकीय कारण बिना सुनी जा सकती है।",
+              "source_ids": [
+                "padma-purana-yogini-deshpande",
+                "mohfw-nlep-medical-officer-manual",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति अपना छोटा सुधार या सच्ची सीमा निजी रखे। समूह-स्वीकारोक्ति, मालिक की अदालत, रोग-चर्चा या मेल-मिलाप अभ्यास न बनाएँ।",
+              "why": "पारिवारिक चिंतन अनुशासन या चिकित्सा-प्रक्रिया नहीं।",
+              "source_ids": [
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "उपवास, फूल, दण्डवत, सामूहिक भोजन, दान, इलाज का दावा या संपर्क बिना समापन करें। स्वास्थ्य, भेदभाव, रोजगार या सुरक्षा चिंता में योग्य सेवा लें।",
+              "why": "पेशेवर मार्ग अलग और उपलब्ध रहते हैं।",
+              "source_ids": [
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा, काम के विराम और आराम के साथ निजी समापन करें। यहाँ उपवास, स्वीकारोक्ति, संपर्क, इलाज का दावा या पारण शुरू नहीं होता।",
+            "source_ids": [
+              "dghs-nlep-current",
+              "devam-yogini-research"
+            ],
+            "scope_note": "चिकित्सा, रोजगार, कानूनी, सुरक्षा और संस्थागत मार्ग अलग रहते हैं।"
+          }
+        },
+        {
+          "procedure_id": "yogini-hi-elaborate-v1",
+          "label": "वर्तमान नामित मंदिर-भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "स्थानीय तिथि के बाद सामान्य निजी/पारिवारिक मार्ग; उपवास, चिकित्सा, रोजगार या मंदिर-अधिकार नहीं",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-yogini-deshpande",
+            "drik-yogini-2027",
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-yogini-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित वर्तमान मंदिर कार्यक्रम और सुरक्षित प्रवेश योजना",
+              "required": false,
+              "substitutions": [
+                "न जाएँ",
+                "पूर्ण गृह-रूप अपनाएँ"
+              ],
+              "source_ids": [
+                "devam-yogini-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "यात्रा से पहले वर्तमान नामित मंदिर कार्यक्रम, स्थानीय तिथि, प्रवेश, शुल्क, चढ़ावा और सुरक्षा जाँचें। पंचांग-कार्ड जीवित कार्यक्रम नहीं।",
+              "why": "संस्थागत विवरण बदलते हैं।",
+              "source_ids": [
+                "drik-yogini-2027",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "यात्रा और प्रवेश सुरक्षित हों तभी जाएँ। सामान्य जल, भोजन, दवा, उपचार और विकलांगता-सहायता रखें; स्पर्श, खुलासा, उपवास या निजी पहुँच मना कर सकते हैं।",
+              "why": "मंदिर-भागीदारी देखभाल, गरिमा या सहमति नहीं रोकती।",
+              "source_ids": [
+                "dghs-nlep-current",
+                "mohfw-nlep-medical-officer-manual",
+                "icmr-type1-diabetes-fasting"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल सत्यापित सार्वजनिक कार्यक्रम देखें। उसके उपवास, मंत्र, फूल, भोजन, दान या पारण को घर का निर्देश न बनाएँ और अनुष्ठानिक इलाज न खोजें।",
+              "why": "संस्थागत विधि और चिकित्सा के अलग अधिकार हैं।",
+              "source_ids": [
+                "padma-purana-yogini-deshpande",
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "कभी भी लौटें और सुरक्षित घर आएँ। सामान्य देखभाल के साथ समापन करें; इलाज, शुद्धि, काम की बहाली या निश्चित पुण्य का दावा न करें।",
+              "why": "सुरक्षित निकास भागीदारी का भाग है।",
+              "source_ids": [
+                "dghs-nlep-current",
+                "devam-yogini-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा, काम के विराम और आराम के साथ निजी समापन करें। यहाँ उपवास, स्वीकारोक्ति, संपर्क, इलाज का दावा या पारण शुरू नहीं होता।",
+            "source_ids": [
+              "dghs-nlep-current",
+              "devam-yogini-research"
+            ],
+            "scope_note": "चिकित्सा, रोजगार, कानूनी, सुरक्षा और संस्थागत मार्ग अलग रहते हैं।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "language-image-writing-and-household-form-hi",
+          "scope": "सामान्य गृह-अभ्यास",
+          "difference": "भाषा, चित्र/बिना चित्र, प्रार्थना/मौन, निजी स्मरण/बिना लेखन और निजी/पारिवारिक रूप छोटे अंतर हैं और इसी मार्ग में रहते हैं।",
+          "source_ids": [
+            "devam-yogini-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-or-vaishnava-authority-hi",
+          "scope": "मुख्य तिथि-अधिकार",
+          "difference": "अलग तिथि, औपचारिक उपवास, भोजन, मंत्र, जागरण या पारण के लिए अलग अधिकार चाहिए।",
+          "source_ids": [
+            "drik-yogini-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "qualified-medical-care-hi",
+          "scope": "पेशेवर देखभाल",
+          "difference": "कुष्ठ या अन्य त्वचा/तंत्रिका लक्षण, उपचार, प्रतिक्रिया, विकलांगता, पुनर्वास और मानसिक स्वास्थ्य चिकित्सा-मार्ग हैं।",
+          "source_ids": [
+            "dghs-nlep-current",
+            "mohfw-nlep-medical-officer-manual"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "employment-legal-or-safeguarding-route-hi",
+          "scope": "पेशेवर जवाबदेही",
+          "difference": "अनुशासन, भेदभाव, निजता, उचित सुविधा, बर्खास्तगी, प्रतिशोध या दुर्व्यवहार के लिए वर्तमान योग्य मार्ग चाहिए।",
+          "source_ids": [
+            "devam-yogini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-temple-programme-hi",
+          "scope": "संस्था",
+          "difference": "वर्तमान मंदिर कार्यक्रम, विधि, प्रवेश, शुल्क, फूल और चढ़ावे की जीवित पुष्टि चाहिए।",
+          "source_ids": [
+            "devam-yogini-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "other-named-ekadashi-hi",
+          "scope": "पर्व-पहचान",
+          "difference": "निर्जला, देवशयनी और अन्य एकादशी की तिथि, कथा और विधि अलग रहती है।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन और जल सहित, उपचारयुक्त, विश्रामपूर्ण, बिना स्पर्श, बिना अग्नि, बिना खरीद, बिना फूल, बिना खुलासा, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "कुष्ठ एक रोग है, शाप, यौन परिणाम, पाप, अशुद्धि या दंड नहीं; अनुष्ठान उसका निदान या इलाज नहीं करता।",
+        "निदान न करें, त्वचा न जाँचें, फोटो न लें, अपमान, अलगाव, निष्कासन या भेदभाव न करें और योग्य निदान, उपचार, पुनर्वास या विकलांगता-देखभाल न रोकें।",
+        "विशालाक्षी, जीवनसाथी, स्त्री, कर्मी, रोगी या प्रभावित व्यक्ति को दूसरे के आचरण या बीमारी के लिए दोष न दें; वयस्क सहमति वाला स्नेह गलत नहीं।",
+        "छूटी जिम्मेदारी कुबेर के अपमान, शाप, अलगाव, निष्कासन, बेघर करने, भेदभावपूर्ण बर्खास्तगी, प्रतिशोध या देखभाल रोकने को उचित नहीं बनाती।",
+        "किसी पर स्वीकारोक्ति, मालिक को यौन/चिकित्सकीय जानकारी, संपर्क, मेल, स्पर्श, उपवास, फूल, यात्रा, दण्डवत, भोजन या दान का दायित्व नहीं।",
+        "जहाँ जरूरी हो प्रमाण, निजता, उचित सुविधा, प्रतिपूर्ति, रोजगार-प्रक्रिया, चिकित्सा, सुरक्षा और कानून बचाएँ।",
+        "इलाज, पाप-मुक्ति, शुद्धि, शरीर, नौकरी, संबंध, पुण्य, मुक्ति या किसी फल की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
