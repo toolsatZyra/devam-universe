@@ -1,0 +1,63 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-ram-navami-epic-owner-links-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "ram-navami-practice-to-dutt-ramayana-birth-context",
+      "from_ref": {"lane_local_id": "ritual-calendar/ram-navami-north-india-household-participant-2027-v1"},
+      "to_ref": {"canonical_id": "devam:source-expression:ramayana-dutt-consumer-v1"},
+      "relationship_family": "story",
+      "predicate": "requests_rama_birth_story_context_from_epic_owner",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Ram Navami practice guidance linked to the source-grounded Rama birth narrative",
+        "hi": "राम नवमी व्यवहार मार्ग को स्रोत-आधारित राम-जन्म कथा से जोड़ने का प्रस्ताव"
+      },
+      "scope": {
+        "statement": "North India Ram Navami household and ordinary participant guidance only; the full Bala Kanda birth narrative, wider Rama identity and epic continuity remain with epics-integration.",
+        "geography_codes": ["north-india", "IN-UP", "IN-DL", "IN-BR", "IN-CG"],
+        "tradition_codes": ["north-india-rama-devotional-household", "ordinary-rama-temple-participant"],
+        "time_scope": "Annual Chaitra Shukla Navami; 2027 reference is 15 April with location-dependent Madhyahna.",
+        "source_expression_scope": "Dutt English expression, Bala Kanda XVIII, birth and Ayodhya celebration pointer only; no copied full narrative."
+      },
+      "evidence_refs": [
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/ram-navami-north-india-household-participant-2027-v1.json", "claim_scope": "Bilingual applicability, timing, source-labelled summaries, household and participant procedures, safety and material variants."},
+        {"evidence_kind": "source_passage", "ref": "source-vault sha256:7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034 Bala Kanda XVIII", "claim_scope": "Fixed source expression for Rama's ninth-lunar-day birth to Kausalya, Ayodhya celebration and the princes' naming."},
+        {"evidence_kind": "devam_synthesis", "ref": "knowledge_packs/inventories/canonical-consumer-anchors-v1.json:devam:source-expression:ramayana-dutt-consumer-v1", "claim_scope": "The coordination registry assigns this source expression and narrative series to epics-integration."}
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ram-navami-practice-to-ramcharitmanas-reading-context",
+      "from_ref": {"lane_local_id": "ritual-calendar/ram-navami-north-india-household-participant-2027-v1"},
+      "to_ref": {"canonical_id": "devam:text:ramcharitmanas"},
+      "relationship_family": "text",
+      "predicate": "requests_family_reading_context_from_epic_owner",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Ram Navami practice guidance linked to the Ramcharitmanas text owner",
+        "hi": "राम नवमी व्यवहार मार्ग को रामचरितमानस ग्रंथ-मालिक से जोड़ने का प्रस्ताव"
+      },
+      "scope": {
+        "statement": "The practice lane may recommend a lawful family-owned Ramcharitmanas reading without selecting, reproducing or prescribing a passage; textual context remains with epics-integration.",
+        "geography_codes": ["north-india", "IN-UP", "IN-DL", "IN-BR", "IN-CG"],
+        "tradition_codes": ["north-india-rama-devotional-household"],
+        "time_scope": "Annual Ram Navami household reading option; never a required completion condition.",
+        "source_expression_scope": "Canonical Ramcharitmanas text pointer only; no verse, edition, translation or recitation rule is asserted by ritual-calendar."
+      },
+      "evidence_refs": [
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/ram-navami-north-india-household-participant-2027-v1.json", "claim_scope": "The household procedure offers a lawful owned reading as optional and leaves passage choice to family or textual owner."},
+        {"evidence_kind": "official_current", "ref": "Ministry of Tourism Newsletter March 2023: Rama Navami", "claim_scope": "Current public descriptive evidence that Ramayana reading and Rama-katha are living observance practices."},
+        {"evidence_kind": "devam_synthesis", "ref": "knowledge_packs/inventories/canonical-consumer-anchors-v1.json:devam:text:ramcharitmanas", "claim_scope": "The coordination registry assigns the Ramcharitmanas text anchor to epics-integration."}
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    }
+  ]
+}

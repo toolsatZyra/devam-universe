@@ -34,6 +34,12 @@ UGADI_YUGADI_PACK = (
     / "packs"
     / "ugadi-yugadi-karnataka-andhra-telangana-household-2027-v1.json"
 )
+RAMA_NAVAMI_PACK = (
+    LANE / "packs" / "ram-navami-north-india-household-participant-2027-v1.json"
+)
+RAMA_NAVAMI_LINKS = (
+    LANE / "cross-links" / "ram-navami-epic-owner-links-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -740,8 +746,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 7
-    assert progress["remaining_authoring_items"] == 201
+    assert progress["completed_after_freeze"] == 8
+    assert progress["remaining_authoring_items"] == 200
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -751,6 +757,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "holi-dhulandi-north-india-consent-led-household-2027-v1",
         "gudi-padwa-maharashtra-household-2027-v1",
         "ugadi-yugadi-karnataka-andhra-telangana-household-2027-v1",
+        "ram-navami-north-india-household-participant-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -1464,3 +1471,153 @@ def test_ugadi_yugadi_major_difference_timing_and_adversarial_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "उगादी / युगादी".encode("utf-8") in raw
     assert UGADI_YUGADI_PACK.stat().st_size < 100_000
+
+
+def test_rama_navami_pack_and_epic_owner_links_are_schema_valid():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(RAMA_NAVAMI_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["observance_slugs"] == ["rama-navami"]
+    assert pack["applicability"]["region_codes"] == [
+        "north-india", "IN-UP", "IN-DL", "IN-BR", "IN-CG"
+    ]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 12
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    links = load(RAMA_NAVAMI_LINKS)
+    Draft202012Validator(link_schema).validate(links)
+    assert len(links["proposals"]) == 2
+    assert {proposal["to_ref"]["canonical_id"] for proposal in links["proposals"]} == {
+        "devam:source-expression:ramayana-dutt-consumer-v1",
+        "devam:text:ramcharitmanas",
+    }
+    assert all(
+        proposal["target_resolution"] == "existing_anchor"
+        for proposal in links["proposals"]
+    )
+
+
+def test_rama_navami_is_bilingual_actionable_and_keeps_story_owner_boundary():
+    pack = load(RAMA_NAVAMI_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(
+            not story["universal_origin_claimed"]
+            for story in entry["origin_narratives"]
+        )
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["minimum"]["form"] == "accessible_short"
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    dutt = next(source for source in pack["sources"] if source["source_id"] == "dutt-ramayana-bala-18-birth")
+    assert dutt["artifact_sha256"] == (
+        "7d3b9e1613d60dfacea39f2564243e943cf38703eadb7245d92337b238082034"
+    )
+    assert dutt["citation_coordinates"]["section"] == "Bala Kanda XVIII"
+    english_stories = " ".join(
+        story["summary"] for story in localized["en"]["origin_narratives"]
+    ).lower()
+    assert "concise pointer" in english_stories
+    assert "not the full story" in english_stories
+
+
+def test_rama_navami_major_difference_timing_fasting_and_temple_boundaries():
+    pack = load(RAMA_NAVAMI_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "15 April" in calendar["freshness_note"]
+    assert "11:04–13:38" in calendar["freshness_note"]
+    assert "never copy" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {
+            variant["variant_id"].removesuffix("-hi"): variant
+            for variant in entry["variants"]
+        }
+        for variant_id in (
+            "non-fasting-or-family-fast",
+            "local-madhyahna-or-practical-time",
+            "minor-household-materials",
+            "image-book-or-material-light",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "temple-birth-service",
+            "ayodhya-mela-or-procession",
+            "chaitra-navaratri",
+            "regional-kalyanam-or-other-institution",
+            "full-rama-story-and-text",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "not a universal national ritual",
+        "full rama story",
+        "fasting is optional",
+        "insulin",
+        "pregnancy",
+        "eating-disorder history",
+        "needed water or food",
+        "allergens",
+        "diya unattended",
+        "not a national clock time",
+        "institution-owned",
+        "local/live",
+        "sarayu",
+        "do not promise merit",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "सार्वभौम राष्ट्रीय अनुष्ठान नहीं",
+        "पूर्ण राम-कथा",
+        "उपवास वैकल्पिक",
+        "इंसुलिन",
+        "गर्भावस्था",
+        "भोजन-विकार का इतिहास",
+        "जरूरी जल/भोजन",
+        "एलर्जेन",
+        "दीया कभी अकेला",
+        "राष्ट्रीय घड़ी नहीं",
+        "संस्था-स्वामित्व",
+        "स्थानीय/जीवित",
+        "सरयू",
+        "गारंटी न दें",
+    ):
+        assert term in localized["hi"]
+
+    raw = RAMA_NAVAMI_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "राम नवमी".encode("utf-8") in raw
+    assert RAMA_NAVAMI_PACK.stat().st_size < 100_000
