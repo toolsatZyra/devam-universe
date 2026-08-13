@@ -1,0 +1,2451 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "monthly-purnima-batch-11-owner-and-story-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "pausha-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pausha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "पौष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Pausha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pausha-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pausha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "पौष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Pausha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pausha-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pausha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "पौष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Pausha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pausha-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pausha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-pausha-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "पौष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Pausha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "pausha-purnima-to-shakambhari-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/pausha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/shakambhari-purnima"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+        "hi": "पौष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Pausha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "magha-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/magha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "माघ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Magha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "magha-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/magha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "माघ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Magha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "magha-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/magha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "माघ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Magha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "magha-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/magha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-magha-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "माघ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Magha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "magha-purnima-to-holy-dip-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/magha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-magha-purnima-ghat-mela-or-masi-magam"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Holy-dip, mela/ghat, Masi Magam and named temple routes materially change water, crowd, schedule and authority",
+        "hi": "माघ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Holy-dip, mela/ghat, Masi Magam and named temple routes materially change water, crowd, schedule and authority.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Magha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Holy-dip, mela/ghat, Masi Magam and named temple routes materially change water, crowd, schedule and authority."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-phalguna-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-holika-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/holika-dahan-north-india-household-participant-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-holi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/holi-dhulandi-north-india-consent-led-household-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "phalguna-purnima-to-dol-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/phalguna-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-dol-purnima-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners.",
+        "hi": "फाल्गुन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Phalguna Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Holika Dahan/Holi, Dol Purnima, Kamanahabba, Anvadhan/Ishti and regional spring rites are separate owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaitra-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaitra-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "चैत्र पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Chaitra Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaitra-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaitra-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "चैत्र पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Chaitra Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaitra-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaitra-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "चैत्र पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Chaitra Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaitra-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaitra-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-chaitra-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "चैत्र पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Chaitra Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "chaitra-purnima-to-hanuman-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/chaitra-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/hanuman-jayanti-north-india-household-participant-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The completed North/West Hanuman Jayanti lane and materially different regional Hanuman dates remain separate.",
+        "hi": "चैत्र पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The completed North/West Hanuman Jayanti lane and materially different regional Hanuman dates remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Chaitra Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The completed North/West Hanuman Jayanti lane and materially different regional Hanuman dates remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishakha-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishakha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "वैशाख पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishakha-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishakha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "वैशाख पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishakha-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishakha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "वैशाख पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishakha-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishakha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-vaishakha-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "वैशाख पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishakha-purnima-to-buddha-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishakha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "external/buddha-purnima-religious-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Buddha Purnima is outside this selected Sanatana lane; Kurma and other named Jayanti/temple routes remain sepa",
+        "hi": "वैशाख पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Buddha Purnima is outside this selected Sanatana lane; Kurma and other named Jayanti/temple routes remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Buddha Purnima is outside this selected Sanatana lane; Kurma and other named Jayanti/temple routes remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishakha-purnima-to-kurma-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishakha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-kurma-jayanti-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Buddha Purnima is outside this selected Sanatana lane; Kurma and other named Jayanti/temple routes remain sepa",
+        "hi": "वैशाख पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Buddha Purnima is outside this selected Sanatana lane; Kurma and other named Jayanti/temple routes remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Vaishakha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Buddha Purnima is outside this selected Sanatana lane; Kurma and other named Jayanti/temple routes remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "jyeshtha-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/jyeshtha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "ज्येष्ठ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Jyeshtha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "jyeshtha-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/jyeshtha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "ज्येष्ठ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Jyeshtha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "jyeshtha-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/jyeshtha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "ज्येष्ठ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Jyeshtha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "jyeshtha-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/jyeshtha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-jyeshtha-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "ज्येष्ठ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Jyeshtha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "jyeshtha-purnima-to-vat-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/jyeshtha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/vat-purnima-west-household-participant-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The completed West Vat Purnima lane, Snana Yatra, holy-dip and named temple routes remain separate.",
+        "hi": "ज्येष्ठ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The completed West Vat Purnima lane, Snana Yatra, holy-dip and named temple routes remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Jyeshtha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The completed West Vat Purnima lane, Snana Yatra, holy-dip and named temple routes remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "jyeshtha-purnima-to-snana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/jyeshtha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-snana-yatra-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The completed West Vat Purnima lane, Snana Yatra, holy-dip and named temple routes remain separate.",
+        "hi": "ज्येष्ठ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The completed West Vat Purnima lane, Snana Yatra, holy-dip and named temple routes remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Jyeshtha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The completed West Vat Purnima lane, Snana Yatra, holy-dip and named temple routes remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashadha-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "आषाढ़ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashadha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashadha-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "आषाढ़ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashadha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashadha-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "आषाढ़ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashadha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashadha-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-ashadha-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "आषाढ़ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashadha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashadha-purnima-to-guru-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/guru-purnima-general-gratitude-household-participant-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The completed Guru/Vyasa Purnima gratitude lane, Buddhist Ashadha observance, Kokila Vrat and institutions rem",
+        "hi": "आषाढ़ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The completed Guru/Vyasa Purnima gratitude lane, Buddhist Ashadha observance, Kokila Vrat and institutions remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashadha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The completed Guru/Vyasa Purnima gratitude lane, Buddhist Ashadha observance, Kokila Vrat and institutions remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashadha-purnima-to-religious-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashadha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "external/buddhist-ashadha-purnima-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The completed Guru/Vyasa Purnima gratitude lane, Buddhist Ashadha observance, Kokila Vrat and institutions rem",
+        "hi": "आषाढ़ पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The completed Guru/Vyasa Purnima gratitude lane, Buddhist Ashadha observance, Kokila Vrat and institutions remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashadha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The completed Guru/Vyasa Purnima gratitude lane, Buddhist Ashadha observance, Kokila Vrat and institutions remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-shravana-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-raksha-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/raksha-bandhan-consent-led-sibling-household-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own tim",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-narali-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/narali-purnima-maharashtra-coastal-participant-2027-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own tim",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-upakarma-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-upakarma-jandhyala-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own tim",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shravana-purnima-to-gamha-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shravana-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-gamha-purnima-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own tim",
+        "hi": "श्रावण पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Shravana Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Raksha Bandhan, Narali/Gamha Purnima, Upakarma/Jandhyala, Satyanarayana and other owners require their own timing and procedure."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashwina-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashwina-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "आश्विन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashwina Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashwina-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashwina-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "आश्विन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashwina Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashwina-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashwina-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "आश्विन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashwina Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashwina-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashwina-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-ashwina-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "आश्विन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashwina Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashwina-purnima-to-sharad-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashwina-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/kojagara-sharad-purnima-north-west-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Sharad Purnima, North/West Kojagara and Devi-owner Kojagari Lakshmi Puja are separate practice owners.",
+        "hi": "आश्विन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Sharad Purnima, North/West Kojagara and Devi-owner Kojagari Lakshmi Puja are separate practice owners.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashwina Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Sharad Purnima, North/West Kojagara and Devi-owner Kojagari Lakshmi Puja are separate practice owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "ashwina-purnima-to-devi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ashwina-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/kojagara-lakshmi-puja"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Sharad Purnima, North/West Kojagara and Devi-owner Kojagari Lakshmi Puja are separate practice owners.",
+        "hi": "आश्विन पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Sharad Purnima, North/West Kojagara and Devi-owner Kojagari Lakshmi Puja are separate practice owners.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Ashwina Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Sharad Purnima, North/West Kojagara and Devi-owner Kojagari Lakshmi Puja are separate practice owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kartika-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kartika-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "कार्तिक पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Kartika Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kartika-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kartika-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "कार्तिक पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Kartika Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kartika-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kartika-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "कार्तिक पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Kartika Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kartika-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kartika-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-kartika-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "कार्तिक पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Kartika Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kartika-purnima-to-dev-deepawali-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kartika-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/dev-deepawali-varanasi-participant-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Dev Deepawali, Tripurari, Boita/temple/ghat and other named routes remain separate.",
+        "hi": "कार्तिक पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Dev Deepawali, Tripurari, Boita/temple/ghat and other named routes remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Kartika Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Dev Deepawali, Tripurari, Boita/temple/ghat and other named routes remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kartika-purnima-to-regional-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kartika-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-kartika-purnima-regional-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Dev Deepawali, Tripurari, Boita/temple/ghat and other named routes remain separate.",
+        "hi": "कार्तिक पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Dev Deepawali, Tripurari, Boita/temple/ghat and other named routes remain separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Kartika Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Dev Deepawali, Tripurari, Boita/temple/ghat and other named routes remain separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "margashirsha-purnima-to-generic-base",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/margashirsha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/purnima-amavasya-north-west-india-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "reuses_generic_purnima_safety_boundary_from",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "hi": "मार्गशीर्ष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Reuse the generic non-fasting Purnima reflection and safety boundary.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Margashirsha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Reuse the generic non-fasting Purnima reflection and safety boundary."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "margashirsha-purnima-to-soma-story",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/margashirsha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/mahabharata-soma-rohini-daksha-prabhasa"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_lunar_change_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "hi": "मार्गशीर्ष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "The Soma account is reflection on lunar change, not this month's origin or vidhi.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Margashirsha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "The Soma account is reflection on lunar change, not this month's origin or vidhi."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "margashirsha-purnima-to-satyanarayana-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/margashirsha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/product-cleared-satyanarayana-puja-katha-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_product_cleared_named_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "hi": "मार्गशीर्ष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Margashirsha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Satyanarayana timing, story, sankalpa, materials, prasada and closing need a product-cleared owner."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "margashirsha-purnima-to-institution-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/margashirsha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "institution/named-margashirsha-purnima-current-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_institution_authority_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "hi": "मार्गशीर्ष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Margashirsha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Named temple, ghat, mela or community schedule, access, materials and closing are current owner facts."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "margashirsha-purnima-to-dattatreya-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/margashirsha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-dattatreya-jayanti-authority"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Dattatreya Jayanti, Annapurna/Devi, Karthigai and named institutional observances are separate.",
+        "hi": "मार्गशीर्ष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Dattatreya Jayanti, Annapurna/Devi, Karthigai and named institutional observances are separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Margashirsha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Dattatreya Jayanti, Annapurna/Devi, Karthigai and named institutional observances are separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "margashirsha-purnima-to-devi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/margashirsha-purnima-recurring-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/annapurna-jayanti"
+      },
+      "relationship_family": "practice",
+      "predicate": "routes_material_month_overlay_to",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Dattatreya Jayanti, Annapurna/Devi, Karthigai and named institutional observances are separate.",
+        "hi": "मार्गशीर्ष पूर्णिमा: material owner link"
+      },
+      "scope": {
+        "statement": "Dattatreya Jayanti, Annapurna/Devi, Karthigai and named institutional observances are separate.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "monthly-purnima-recurring"
+        ],
+        "time_scope": "Locally resolved Margashirsha Shukla Purnima",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-monthly-purnima-batch-research",
+          "claim_scope": "Dattatreya Jayanti, Annapurna/Devi, Karthigai and named institutional observances are separate."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

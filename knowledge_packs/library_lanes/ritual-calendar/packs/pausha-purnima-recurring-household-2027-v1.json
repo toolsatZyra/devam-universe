@@ -1,0 +1,1540 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "pausha-purnima-recurring-household-2027-v1",
+  "observance_slugs": [
+    "pausha-purnima"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-WB",
+      "IN-BR",
+      "IN-CG",
+      "IN-KA",
+      "IN-TN",
+      "IN-KL",
+      "IN-OD",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "monthly-purnima-recurring",
+      "family-specific-hindu"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city, civil date, local Shukla Purnima and accepted lunar-month convention apply?",
+      "Do you mean generic Pausha Purnima, Purnima Vrat/Satyanarayana, or a named month overlay: Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+      "Does your family have an established text, elder, priest, sampradaya or institution for the named route?",
+      "Would divine marriage, unequal affection, curse, illness, sacred-water bathing or parent-command language be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, sleep, child care, accessibility and no water, roof, flame, crowd, travel or financial pressure?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-WB",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-BR",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-CG",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-KA",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-TN",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-KL",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-MH",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-OD",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      },
+      {
+        "region_code": "IN-AP",
+        "tradition_code": "monthly-purnima-recurring",
+        "observance_slug": "pausha-purnima"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "pausha-purnima",
+        "language_code": "en",
+        "note": "Generic recurring-Purnima household route only. Same-day Satyanarayana, named month overlays, Shraddha, Anvadhan/Ishti and temple programmes remain separate. Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners."
+      },
+      {
+        "observance_slug": "pausha-purnima",
+        "language_code": "hi",
+        "note": "केवल सामान्य आवर्ती-पूर्णिमा घरेलू मार्ग। उसी दिन के सत्यनारायण, named month overlays, श्राद्ध, अन्वाधान/इष्टि और मंदिर programme अलग हैं। शाकम्भरी पूर्णिमा/देवी practice, named सत्यनारायण व्रत और temple programmes के अलग owners चाहिए."
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-purnima-new-delhi-2027",
+      "devam-lunar-phase-disposition",
+      "devam-bhadrapada-purnima-lane",
+      "devam-monthly-purnima-batch-research"
+    ],
+    "timing_kind": "astronomical",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "pausha-shukla-purnima-local-month-convention-v1",
+    "closing_decision_rule_id": "pausha-fed-rested-no-result-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed New Delhi fixture: Pausha Purnima is 22 January 2027. The current list displays the generic Purnima and Purnima-vrat date together for this fixture. Recompute local Shukla Purnima, sunrise/day boundary and month convention; named temple and practice schedules require current owners."
+  },
+  "sources": [
+    {
+      "source_id": "drik-purnima-india-2027",
+      "title": "2027 Purnima Days",
+      "source_role": "independent 15 September Pausha Shukla Purnima comparison fixture; not a portable clock or complete vidhi",
+      "rights_lane": "citation_only",
+      "publisher": "Drik Panchang",
+      "url": "https://www.drikpanchang.com/vrats/purnimasidates.html?lang=en&year=2027",
+      "citation_coordinates": {
+        "locator": "Pausha Purnima Vrat, September 15, 2027"
+      }
+    },
+    {
+      "source_id": "ganguli-mahabharata-soma-prabhasa",
+      "title": "Mahabharata, Shalya Parva, section 35",
+      "source_role": "complete public-domain English Soma-Rohini-Daksha-Prabhasa story and waxing/waning account",
+      "rights_lane": "derivative_allowed",
+      "publisher": "K. M. Ganguli via ibiblio/Sripedia",
+      "url": "https://www.ibiblio.org/sripedia/ebooks/mb/m09/m09035.htm",
+      "citation_coordinates": {
+        "locator": "From Baladeva's arrival at Prabhasa through Soma's recovery and departure"
+      }
+    },
+    {
+      "source_id": "kumbhaghonam-shalya-soma-sanskrit",
+      "title": "Mahabharata Shalya Parva Kumbhaghonam Sanskrit text",
+      "source_role": "Sanskrit witness for Soma, Rohini, the nakshatra-named wives' complaint and Daksha's equality command",
+      "rights_lane": "citation_only",
+      "publisher": "Sanskrit Documents",
+      "url": "https://sanskritdocuments.org/mirrors/mahabharata/mbhK/unic/mbhK09_sa.html",
+      "citation_coordinates": {
+        "locator": "Shalya Parva chapter 36 in this edition, especially verses 6-11 onward"
+      }
+    },
+    {
+      "source_id": "devam-lunar-phase-disposition",
+      "title": "Ritual-calendar lunar-phase disposition",
+      "source_role": "frozen purnima-pausha monthly-recurring applicability denominator and no-special-vidhi boundary",
+      "rights_lane": "internal_only",
+      "publisher": "Devam",
+      "url": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-candidate-disposition-lunar-phase-v1.json",
+        "locator": "Pausha Purnima entry"
+      }
+    },
+    {
+      "source_id": "devam-pitru-paksha-partial",
+      "title": "Pitru Paksha Delhi remembrance content",
+      "source_role": "partial family/death-tithi authority and no-automatic-applicability boundary; not complete current Pausha Purnima",
+      "rights_lane": "internal_only",
+      "publisher": "Devam",
+      "url": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/rituals/pitru-paksha-delhi-remembrance-content-v1.json",
+        "locator": "Purnima Shraddha and family-practice notes"
+      }
+    },
+    {
+      "source_id": "gita-press-satyanarayana-lead",
+      "title": "Gita Press Shri Satyanarayana Vrata Katha catalog lead",
+      "source_role": "records that an owner source exists but product reuse/masters remain permission-pending; no text copied",
+      "rights_lane": "internal_only",
+      "publisher": "Gita Press catalogued by Devam",
+      "url": null,
+      "citation_coordinates": {
+        "path": "source_vault/catalogs/source-leads.csv",
+        "locator": "AQ-04688"
+      }
+    },
+    {
+      "source_id": "mohfw-diabetes-prolonged-fasting-faq43",
+      "title": "Ministry of Health diabetes FAQ",
+      "source_role": "official prolonged-fasting risk boundary; not individual medical advice",
+      "rights_lane": "citation_only",
+      "publisher": "Ministry of Health and Family Welfare, Government of India",
+      "url": "https://www.mohfw.gov.in/sites/default/files/DiabetesMellitusFAQs.pdf",
+      "citation_coordinates": {
+        "locator": "FAQ 43"
+      }
+    },
+    {
+      "source_id": "gidm-holy-dip-safety-2025",
+      "title": "GIDM Holy Dip safety advisory",
+      "source_role": "water, ghat, crowd and emergency safety boundary",
+      "rights_lane": "citation_only",
+      "publisher": "Gujarat Institute of Disaster Management",
+      "url": "https://gidm.gujarat.gov.in/sites/default/files/2025-01/Do%27s%20%26%20Don%27ts_Holy%20Dip_English.pdf",
+      "citation_coordinates": {
+        "locator": "Holy Dip do's and don'ts"
+      }
+    },
+    {
+      "source_id": "india-emergency-112",
+      "title": "Emergency Response Support System 112",
+      "source_role": "India emergency escalation",
+      "rights_lane": "citation_only",
+      "publisher": "Government of India",
+      "url": "https://112.gov.in/",
+      "citation_coordinates": {
+        "locator": "Pan-India emergency number 112"
+      }
+    },
+    {
+      "source_id": "drik-purnima-new-delhi-2027",
+      "title": "2027 Purnima and Pournami days for New Delhi",
+      "publisher": "Drik Panchang",
+      "source_role": "Current location-labelled full-moon list, actual-Purnima versus vrat timing and 2027 fixture; formal practice claims remain attributed",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/purnimasidates.html?time-format=24hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "month": "Pausha",
+        "actual_purnima": "22 January 2027",
+        "timing_note": "The current list displays the generic Purnima and Purnima-vrat date together for this fixture."
+      }
+    },
+    {
+      "source_id": "devam-monthly-purnima-batch-research",
+      "title": "Eleven-lane monthly Purnima evidence matrix",
+      "publisher": "Devam",
+      "source_role": "Shared research, material overlay routing and acceptance boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/monthly-purnima-batch-11-evidence-matrix-2027-v1.md",
+        "month": "Pausha"
+      }
+    },
+    {
+      "source_id": "devam-bhadrapada-purnima-lane",
+      "title": "Completed Bhadrapada Purnima recurring household lane",
+      "publisher": "Devam",
+      "source_role": "Reviewed reusable generic monthly-Purnima structure and bounded Soma story",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "lane_id": "bhadrapada-purnima-recurring-household-2027-v1"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "short_answer": "Confirm city, local Shukla Purnima and accepted month convention; 22 January 2027 is only a New Delhi fixture. For generic Pausha Purnima keep normal care, hear the two labelled stories, use silence or a familiar prayer, and do not copy fasting, Satyanarayana, Shraddha, fire, holy-dip or named-overlay rites. Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+      "significance": {
+        "text": "Pausha Purnima is the Pausha-month instance of Shukla Purnima in the reviewed naming convention. Devam's bounded meaning is to notice the completion of a waxing cycle, change and responsible care without inventing one national deity, fast, altar or promised result. The optional Mahabharata Soma story explains lunar change in its own epic-tirtha context, not this day's universal origin. Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+        "source_ids": [
+          "drik-purnima-new-delhi-2027",
+          "drik-purnima-india-2027",
+          "devam-lunar-phase-disposition",
+          "devam-monthly-purnima-batch-research",
+          "ganguli-mahabharata-soma-prabhasa",
+          "kumbhaghonam-shalya-soma-sanskrit"
+        ],
+        "scope_note": "Monthly recurring household route only; not Satyanarayana, named month overlays, Shraddha, Anvadhan/Ishti or a named temple."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "pausha-calendar-identity-en",
+          "title": "A full-moon calendar identity, not one national ritual",
+          "summary": "The reviewed North/reference calendar calls the local Pausha Shukla full-moon instance Pausha Purnima. It completes the waxing fortnight in that month convention. Other month systems and same-day observances may name or use the day differently. The tithi identity does not prove one national fast, Satyanarayana altar, holy dip, ancestor rite, fire rite, deity or promised benefit. Current city, sunrise/day boundary and accepted Panchang determine applicability.",
+          "tradition_scope": "Current location-aware Purnima calendar identity",
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "soma-rohini-daksha-prabhasa-en",
+          "title": "Soma, Rohini, Daksha and Prabhasa",
+          "summary": "The Mahabharata places this account inside Baladeva's pilgrimage during the gathering war. At Prabhasa, Janamejaya asks why Soma lost and recovered his splendour. Vaishampayana says Daksha gave twenty-seven daughters, associated with the constellations and the reckoning of time, to Soma. Soma delighted in Rohini and lived with her while neglecting the others. They went to Daksha and complained. Daksha told Soma to behave equally and sent the daughters back, but Soma continued to favour Rohini. They returned, sought protection and said his conduct had not changed. After another ignored warning, Daksha cursed Soma with a wasting illness. Soma diminished day by day; herbs lost their juices and living creatures also declined. The gods asked what had happened and then appealed to Daksha. Daksha said his words could not simply become false, but offered a partial resolution: Soma must behave equally, go where the Sarasvati meets the western ocean, honour Mahadeva and recover his form. Soma reached Prabhasa, bathed there on the new-moon day and regained his cool rays. The account says he would thereafter wane for half a month and wax for half a month. Soma and the creatures returned; Daksha again warned him not to disregard the women. Vaishampayana closes by explaining Prabhasa's name through Soma's recovered radiance, and Baladeva continues to the next tirtha. This is a Shalya Parva story of lunar change and Prabhasa, not Pausha Purnima's universal origin or a current bathing instruction. Its divine marriage, curse, illness and command are source events: no person owes marriage, affection, sex, equal intimacy, reconciliation, cure, travel, water entry or obedience to a parent.",
+          "tradition_scope": "Mahabharata, Shalya Parva section 35; Ganguli translation with Kumbhaghonam Sanskrit witness",
+          "source_ids": [
+            "ganguli-mahabharata-soma-prabhasa",
+            "kumbhaghonam-shalya-soma-sanskrit",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "generic-full-moon-remembrance-en",
+          "population_scope": "Individuals and families asking for a non-sectarian recurring-Purnima route",
+          "description": "A material-free story, silence/familiar prayer, safe optional moon notice and affordable care act can answer the generic request without impersonating a formal vrata.",
+          "source_ids": [
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "named-practices-remain-separate-en",
+          "population_scope": "Families or institutions with an established named authority",
+          "description": "Current sources associate the day with Satyanarayana, named month overlays, Shraddha and other practices, but their texts, eligibility, materials, fasting/fire rules and closing are materially distinct. Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "devam-pitru-paksha-partial",
+            "gita-press-satyanarayana-lead",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "pausha-private-en",
+          "label": "Private material-free Purnima remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Generic monthly-Purnima remembrance; no formal vrata, sankalpa, mantra, katha, Shraddha, sacred fire, holy dip or temple action.",
+          "form": "accessible_short",
+          "estimated_minutes": 16,
+          "materials": [
+            {
+              "item": "The two source-labelled summaries",
+              "required": true,
+              "substitutions": [
+                "Audio reading",
+                "A trusted reader",
+                "Silent reflection on the labelled account"
+              ],
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "A safe ordinary resting place",
+              "required": false,
+              "substitutions": [
+                "Chair or bed",
+                "Indoor floor seat",
+                "Any accessible place"
+              ],
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm city, civil date, local Shukla Purnima and the accepted month convention. If unresolved, keep this as an undated reflection; never copy the New Delhi tithi clock.",
+              "why": "Purnima identity and civil-day selection are location and convention aware.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "drik-purnima-india-2027",
+                "devam-lunar-phase-disposition",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Check whether you actually mean generic Purnima, Satyanarayana Puja, Uma-Maheshwar vrata, Purnima Shraddha, Anvadhan/Ishti or a named temple. Stop and route any named practice separately.",
+              "why": "A shared date is not a shared procedure.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "gita-press-satyanarayana-lead",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep normal food, water, medicine, insulin, sleep and hygiene. Begin no fast, vigil, holy dip, moonrise wait, fire or travel from this pack.",
+              "why": "The generic lane creates no bodily duty.",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the calendar identity and the full source-labelled Soma-Rohini-Daksha-Prabhasa story; say it is not Pausha Purnima's origin or a current bathing instruction.",
+              "why": "Source attribution prevents epic story from becoming invented vidhi.",
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "State the present-day boundary: illness is not punishment, and no person owes marriage, affection, sex, equal intimacy, reconciliation, cure, travel, water entry or obedience to a parent.",
+              "why": "Divine narrative events do not authorise coercion in real relationships.",
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Optionally sit in silence, use a familiar family prayer, or notice the moon from a safe indoor, window or ground-level place if visible. Moon visibility, mantra and Sanskrit are not tests.",
+              "why": "The minimum form is accessible and material-free.",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Choose one small affordable care act or none, then close without claiming happiness, prosperity, cure, children, marital fortune, ancestor liberation, sin removal or multiplied merit.",
+              "why": "Care stays voluntary and no story result becomes a promise.",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Close in silence or a familiar sentence, then resume normal food, water, medicine, sleep and responsibilities; no result is required.",
+            "source_ids": [
+              "drik-purnima-new-delhi-2027",
+              "drik-purnima-india-2027",
+              "devam-lunar-phase-disposition",
+              "devam-monthly-purnima-batch-research",
+              "ganguli-mahabharata-soma-prabhasa",
+              "kumbhaghonam-shalya-soma-sanskrit",
+              "mohfw-diabetes-prolonged-fasting-faq43",
+              "gidm-holy-dip-safety-2025",
+              "india-emergency-112"
+            ],
+            "scope_note": "Resolve current local Purnima and route every named formal practice to its own authority."
+          },
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research",
+            "devam-pitru-paksha-partial",
+            "gita-press-satyanarayana-lead",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "ganguli-mahabharata-soma-prabhasa",
+            "kumbhaghonam-shalya-soma-sanskrit"
+          ]
+        },
+        {
+          "procedure_id": "pausha-family-en",
+          "label": "Consent-led family Purnima reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Generic monthly-Purnima remembrance; no formal vrata, sankalpa, mantra, katha, Shraddha, sacred fire, holy dip or temple action.",
+          "form": "traditional_household",
+          "estimated_minutes": 28,
+          "materials": [
+            {
+              "item": "The two source-labelled summaries",
+              "required": true,
+              "substitutions": [
+                "Audio reading",
+                "A trusted reader",
+                "Silent reflection on the labelled account"
+              ],
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "A safe ordinary resting place",
+              "required": false,
+              "substitutions": [
+                "Chair or bed",
+                "Indoor floor seat",
+                "Any accessible place"
+              ],
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "Optional familiar family prayer or reflection",
+              "required": false,
+              "substitutions": [
+                "Silence",
+                "One line of gratitude",
+                "No prayer"
+              ],
+              "source_ids": [
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "Optional safe familiar food and water",
+              "required": false,
+              "substitutions": [
+                "Normal meal",
+                "Water only",
+                "No shared food"
+              ],
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm local Pausha Shukla Purnima and that everyone wants the generic route, not a named formal practice.",
+              "why": "Applicability and consent come before action.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "drik-purnima-india-2027",
+                "devam-lunar-phase-disposition",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Offer silence, listening, partial participation and an easy exit. Require no belief, disclosure, touch, eye contact, image, prayer or relationship agreement.",
+              "why": "A family observance must remain voluntary.",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep normal care and a safe indoor or ground-level setting; use no fast, sacred-water bath, roof, ledge, unsupervised flame, crowd or compulsory moon wait.",
+              "why": "The route must not create avoidable health or fall/water/fire risk.",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Tell both stories concisely and label the divine marriage, curse, illness, bath and waxing/waning explanation as source events, not duties or medical claims.",
+              "why": "Labels preserve narrative without importing its social order.",
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Let each willing person name one changing situation and one boundary or care response. No one must discuss marriage, health, fertility, grief, ancestors or conflict.",
+              "why": "Reflection cannot become compelled private disclosure.",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Use only a familiar family prayer, silence or safe optional moon notice. Do not improvise Satyanarayana Katha, Uma-Maheshwar vrata, Shraddha, fire offerings or mantra.",
+              "why": "Formal routes retain their owner texts and authorities.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "gita-press-satyanarayana-lead",
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Share normal familiar food/water if wanted, meet medication and sleep needs, and close without result claims, compulsory donation, priest fee or prasada.",
+              "why": "The family close restores ordinary care and financial choice.",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank participants, meet ordinary care needs and put away optional items; disagreement, stopping and no special feeling are valid closings.",
+            "source_ids": [
+              "drik-purnima-new-delhi-2027",
+              "drik-purnima-india-2027",
+              "devam-lunar-phase-disposition",
+              "devam-monthly-purnima-batch-research",
+              "ganguli-mahabharata-soma-prabhasa",
+              "kumbhaghonam-shalya-soma-sanskrit",
+              "mohfw-diabetes-prolonged-fasting-faq43",
+              "gidm-holy-dip-safety-2025",
+              "india-emergency-112"
+            ],
+            "scope_note": "Resolve current local Purnima and route every named formal practice to its own authority."
+          },
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "ganguli-mahabharata-soma-prabhasa",
+            "kumbhaghonam-shalya-soma-sanskrit",
+            "devam-pitru-paksha-partial",
+            "gita-press-satyanarayana-lead"
+          ]
+        },
+        {
+          "procedure_id": "pausha-temple-en",
+          "label": "Named temple visitor route",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor-only: the named current institution owns its programme, eligibility, offerings, food/fast rules, mantra and closing.",
+          "form": "institutional_participation",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "Current official visitor information for the named institution",
+              "required": true,
+              "substitutions": [
+                "Official phone notice",
+                "On-site notice",
+                "Do not attend while unresolved"
+              ],
+              "source_ids": [
+                "devam-monthly-purnima-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Name the current institution and identify whether its programme is general Purnima, Satyanarayana, named month overlays, Shraddha, Anvadhan/Ishti or another observance.",
+              "why": "The institution's programme determines the route.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Verify the official current date, schedule, visitor eligibility, accessibility, offerings, food/fast rules, fire or water exposure, queue and closing. Do not infer them here.",
+              "why": "Live institutional facts can change.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "drik-purnima-india-2027",
+                "devam-lunar-phase-disposition",
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep food, water, medicine, mobility support and an easy exit; skip any unsafe fast, crowd, water, roof, flame, travel or overnight condition.",
+              "why": "Health and emergency rules override attendance.",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Participate only in authorised visitor areas. Ask before photography, touch, recitation, offerings or receiving food, and never enter ritual water or handle fire without current instruction and safety.",
+              "why": "Visitor participation does not confer officiating authority.",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Do not copy the temple's mantra, sankalpa, katha, Shraddha, fire sequence, fasting rule, donation amount or closing home.",
+              "why": "Institutional action is not generic household instruction.",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "gita-press-satyanarayana-lead",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Leave safely, meet ordinary care needs, and treat blessings or benefit language as that authority's teaching—not Devam's guarantee.",
+              "why": "The route ends without promised spiritual, medical or family results.",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Exit through the authorised route, meet food/water/medicine/rest needs and copy no institutional procedure home.",
+            "source_ids": [
+              "drik-purnima-new-delhi-2027",
+              "drik-purnima-india-2027",
+              "devam-lunar-phase-disposition",
+              "devam-monthly-purnima-batch-research",
+              "ganguli-mahabharata-soma-prabhasa",
+              "kumbhaghonam-shalya-soma-sanskrit",
+              "mohfw-diabetes-prolonged-fasting-faq43",
+              "gidm-holy-dip-safety-2025",
+              "india-emergency-112"
+            ],
+            "scope_note": "Resolve current local Purnima and route every named formal practice to its own authority."
+          },
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "devam-pitru-paksha-partial",
+            "devam-monthly-purnima-batch-research",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "gita-press-satyanarayana-lead"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-en",
+          "scope": "Selected North/West and shared-state household expression",
+          "difference": "Language, spelling, Purnima/Pournami vocabulary, dress, food preference, familiar deity name, image/no-image and silence are minor; they do not create state procedures.",
+          "separate_lane_required": false,
+          "source_ids": [
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "pausha-named-overlay-owner-en",
+          "scope": "Named Pausha Purnima overlays",
+          "difference": "Shakambhari Purnima/Devi practice, named Satyanarayana vrata and temple programmes require separate owners.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "satyanarayana-owner-en",
+          "scope": "Named Satyanarayana Puja/Katha",
+          "difference": "Distinct narrative corpus, sankalpa, officiation, offerings and prasada; the identified source lead is not product-cleared here.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "gita-press-satyanarayana-lead",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "purnima-shraddha-owner-en",
+          "scope": "Purnima Shraddha and Pitru Paksha",
+          "difference": "Death-tithi, ancestor applicability, performer and family/priest authority materially change the route; no ancestor contact is inferred.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-pitru-paksha-partial",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "anvadhan-ishti-owner-en",
+          "scope": "Anvadhan and Ishti",
+          "difference": "Sacred fire, mantra, sequence and ritual eligibility require a qualified Vedic authority.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "named-temple-en",
+          "scope": "Named current temple or institution",
+          "difference": "Live programme, visitor rules, offerings, queues, fire/water/food conditions and closing belong to the institution.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "variant_id": "safety-needs-en",
+          "scope": "Medical, fasting, food, medicine, pregnancy, childhood, disability, grief, water, travel, crowd, flame, roof or financial needs",
+          "difference": "Safety can modify or stop participation and always overrides ritual completion.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "devam-monthly-purnima-batch-research"
+          ]
+        }
+      ],
+      "title": "Pausha Purnima",
+      "safety_and_boundaries": [
+        "No fast, dehydration, meal delay, medicine change, vigil, holy dip, roof, ledge, isolated outdoor place, flame, travel, crowd or moon sighting is required.",
+        "Illness, infertility, poverty, grief, relationship conflict and lunar change are not punishment.",
+        "No one owes marriage, affection, sex, equal intimacy, reconciliation, parent obedience, disclosure, forgiveness, belief, donation, priest fee, prasada, mantra or Sanskrit.",
+        "Never promise happiness, prosperity, cure, children, marital fortune, ancestor liberation, sin removal or multiplied merit.",
+        "Satyanarayana, named month overlays, Shraddha, Anvadhan/Ishti and named temples retain separate owners; do not imitate them.",
+        "Use 112 for an immediate emergency; current medical and institutional safety rules override this pack.",
+        "Authored means this lane only, not projected, hosted, reviewed as release, or published."
+      ],
+      "observance_slugs": [
+        "pausha-purnima"
+      ]
+    },
+    {
+      "language_code": "hi",
+      "short_answer": "City, local Shukla Purnima और accepted month convention confirm करें; 22 जनवरी 2027 केवल New Delhi fixture है। Generic पौष पूर्णिमा में normal care रखें, दो labelled stories सुनें, मौन या familiar prayer लें और fasting, सत्यनारायण, श्राद्ध, fire, holy-dip या named-overlay rites copy न करें। शाकम्भरी पूर्णिमा/देवी practice, named सत्यनारायण व्रत और temple programmes के अलग owners चाहिए.",
+      "significance": {
+        "text": "पौष पूर्णिमा समीक्षित नाम-परम्परा में पौष मास की शुक्ल पूर्णिमा है। Devam का सीमित अर्थ बढ़ते चन्द्र-चक्र की पूर्णता, परिवर्तन और जिम्मेदार देखभाल को पहचानना है—एक राष्ट्रीय देवता, उपवास, वेदी या निश्चित फल गढ़ना नहीं। वैकल्पिक महाभारत सोम-कथा अपने महाकाव्य-तीर्थ संदर्भ में चन्द्र-परिवर्तन समझाती है, दिन की सार्वभौमिक उत्पत्ति नहीं। शाकम्भरी पूर्णिमा/देवी practice, named सत्यनारायण व्रत और temple programmes के अलग owners चाहिए.",
+        "source_ids": [
+          "drik-purnima-new-delhi-2027",
+          "drik-purnima-india-2027",
+          "devam-lunar-phase-disposition",
+          "devam-monthly-purnima-batch-research",
+          "ganguli-mahabharata-soma-prabhasa",
+          "kumbhaghonam-shalya-soma-sanskrit"
+        ],
+        "scope_note": "केवल मासिक आवर्ती घरेलू मार्ग; सत्यनारायण, named month overlays, श्राद्ध, अन्वाधान/इष्टि या नामित मंदिर नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "pausha-calendar-identity-hi",
+          "title": "पूर्णिमा की पंचांगीय पहचान, एक राष्ट्रीय कर्म नहीं",
+          "summary": "समीक्षित उत्तर/reference पंचांग स्थानीय पौष शुक्ल पूर्णिमा को पौष पूर्णिमा कहता है। उस मास-परम्परा में यह शुक्ल पक्ष पूरा करती है। दूसरी मास-पद्धतियाँ और उसी दिन के observance अलग नाम या उपयोग रख सकते हैं। तिथि-परिचय एक राष्ट्रीय उपवास, सत्यनारायण वेदी, पवित्र स्नान, पूर्वज-कर्म, अग्नि-कर्म, देवता या निश्चित फल सिद्ध नहीं करता। वर्तमान शहर, सूर्योदय/day-boundary और मान्य पंचांग applicability तय करते हैं।",
+          "tradition_scope": "वर्तमान स्थान-सचेत पूर्णिमा पंचांग पहचान",
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "soma-rohini-daksha-prabhasa-hi",
+          "title": "सोम, रोहिणी, दक्ष और प्रभास",
+          "summary": "महाभारत यह प्रसंग युद्ध की तैयारी के बीच बलदेव की तीर्थयात्रा में रखता है। प्रभास में जनमेजय पूछते हैं कि सोम की कांति क्यों घटी और कैसे लौटी। वैशम्पायन कहते हैं कि दक्ष ने नक्षत्रों और समय-गणना से जुड़ी अपनी सत्ताईस पुत्रियाँ सोम को दीं। सोम रोहिणी में विशेष अनुरक्त रहे और अन्य स्त्रियों की उपेक्षा की। वे दक्ष के पास शिकायत लेकर गईं। दक्ष ने सोम से सबके साथ समभाव रखने को कहा और पुत्रियों को वापस भेजा, पर सोम फिर रोहिणी को ही प्राथमिकता देते रहे। स्त्रियाँ दोबारा गईं, सुरक्षा माँगीं और कहा कि व्यवहार नहीं बदला। दूसरी चेतावनी भी न मानने पर दक्ष ने सोम को क्षय का शाप दिया। सोम दिन-प्रतिदिन क्षीण हुए; औषधियों का रस घटा और जीव भी दुर्बल होने लगे। देवताओं ने कारण पूछा और दक्ष से शाप शान्त करने की प्रार्थना की। दक्ष ने कहा कि वचन पूरी तरह उलटा नहीं जा सकता, पर उपाय बताया: सोम समभाव रखें, सरस्वती और पश्चिमी समुद्र के संगम पर जाएँ, महादेव का सम्मान करें और रूप पाएँ। सोम प्रभास पहुँचे, अमावस्या को स्नान किया और शीतल किरणें फिर मिलीं। कथा आगे आधे मास क्षय और आधे मास वृद्धि बताती है। सोम और प्राणी लौटे; दक्ष ने फिर स्त्रियों की उपेक्षा न करने को कहा। वैशम्पायन सोम की लौटी प्रभा से प्रभास नाम समझाकर कथा बन्द करते हैं और बलदेव अगले तीर्थ की ओर जाते हैं। यह शल्य पर्व की चन्द्र-परिवर्तन और प्रभास कथा है, पौष पूर्णिमा की सार्वभौमिक उत्पत्ति या आज का स्नान-निर्देश नहीं। दिव्य विवाह, शाप, रोग और आदेश स्रोत-घटनाएँ हैं: कोई व्यक्ति विवाह, स्नेह, यौन सम्बन्ध, समान निकटता, मेल-मिलाप, इलाज, यात्रा, जल-प्रवेश या माता-पिता की आज्ञा का ऋणी नहीं।",
+          "tradition_scope": "महाभारत शल्य पर्व section 35; Ganguli अनुवाद और Kumbhaghonam संस्कृत साक्षी",
+          "source_ids": [
+            "ganguli-mahabharata-soma-prabhasa",
+            "kumbhaghonam-shalya-soma-sanskrit",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "generic-full-moon-remembrance-hi",
+          "population_scope": "असम्प्रदायिक आवर्ती-पूर्णिमा मार्ग पूछने वाले व्यक्ति और परिवार",
+          "description": "सामग्री-मुक्त कथा, मौन/परिचित प्रार्थना, सुरक्षित वैकल्पिक चन्द्र-दर्शन और सस्ता देखभाल-काम औपचारिक व्रत का अभिनय किए बिना सामान्य प्रश्न का उत्तर दे सकते हैं।",
+          "source_ids": [
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "named-practices-remain-separate-hi",
+          "population_scope": "स्थापित नामित प्राधिकार वाले परिवार या संस्था",
+          "description": "वर्तमान स्रोत दिन से सत्यनारायण, named month overlays, श्राद्ध और अन्य कर्म जोड़ते हैं, पर उनके पाठ, पात्रता, सामग्री, उपवास/अग्नि नियम और समापन बड़े रूप से अलग हैं। शाकम्भरी पूर्णिमा/देवी practice, named सत्यनारायण व्रत और temple programmes के अलग owners चाहिए.",
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "devam-pitru-paksha-partial",
+            "gita-press-satyanarayana-lead",
+            "devam-monthly-purnima-batch-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "pausha-private-hi",
+          "label": "निजी सामग्री-मुक्त पूर्णिमा स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "सामान्य मासिक-पूर्णिमा स्मरण; कोई औपचारिक व्रत, संकल्प, मंत्र, कथा, श्राद्ध, पवित्र अग्नि, पवित्र स्नान या मंदिर-कर्म नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 16,
+          "materials": [
+            {
+              "item": "दो स्रोत-चिह्नित कथा-सार",
+              "required": true,
+              "substitutions": [
+                "ऑडियो पाठ",
+                "विश्वसनीय पाठक",
+                "चिह्नित कथा पर मौन चिंतन"
+              ],
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "सुरक्षित सामान्य विश्राम-स्थान",
+              "required": false,
+              "substitutions": [
+                "कुर्सी या बिस्तर",
+                "घर का फर्श-आसन",
+                "कोई सुलभ स्थान"
+              ],
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "शहर, नागरिक तारीख, स्थानीय शुक्ल पूर्णिमा और मान्य मास-परम्परा की पुष्टि करें। न सुलझे तो इसे तारीख-रहित चिंतन रखें; नई दिल्ली की तिथि-घड़ी न नकल करें।",
+              "why": "पूर्णिमा पहचान और नागरिक दिन स्थान तथा परम्परा-सचेत हैं।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "drik-purnima-india-2027",
+                "devam-lunar-phase-disposition",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "जाँचें कि प्रश्न सामान्य पूर्णिमा, सत्यनारायण पूजा, उमा-महेश्वर व्रत, पूर्णिमा श्राद्ध, अन्वाधान/इष्टि या नामित मंदिर का है। नामित practice को रोककर अलग route दें।",
+              "why": "एक तारीख का अर्थ एक procedure नहीं।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "gita-press-satyanarayana-lead",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सामान्य भोजन, जल, दवा, insulin, नींद और स्वच्छता रखें। इस pack से उपवास, जागरण, पवित्र स्नान, चन्द्रोदय-प्रतीक्षा, अग्नि या यात्रा शुरू न करें।",
+              "why": "सामान्य lane कोई शारीरिक कर्तव्य नहीं बनाता।",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पंचांगीय पहचान और पूरी स्रोत-चिह्नित सोम-रोहिणी-दक्ष-प्रभास कथा सुनें; कहें कि यह पौष पूर्णिमा की उत्पत्ति या आज का स्नान-निर्देश नहीं।",
+              "why": "स्रोत-लेबल महाकाव्य कथा को गढ़ी विधि बनने से रोकता है।",
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "आज की सीमा कहें: रोग दण्ड नहीं, और कोई व्यक्ति विवाह, स्नेह, यौन सम्बन्ध, समान निकटता, मेल-मिलाप, इलाज, यात्रा, जल-प्रवेश या माता-पिता की आज्ञा का ऋणी नहीं।",
+              "why": "दिव्य कथा वास्तविक सम्बन्धों में दबाव की अनुमति नहीं देती।",
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "वैकल्पिक रूप से मौन बैठें, परिचित पारिवारिक प्रार्थना लें, या चन्द्र दिखे तो सुरक्षित घर/window/ground-level स्थान से देखें। चन्द्र-दर्शन, मंत्र और संस्कृत परीक्षा नहीं।",
+              "why": "न्यूनतम रूप सुलभ और सामग्री-मुक्त है।",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "एक छोटा सस्ता देखभाल-काम या कुछ नहीं चुनें; सुख, समृद्धि, इलाज, संतान, वैवाहिक सौभाग्य, पूर्वज-मुक्ति, पाप-नाश या कई गुना पुण्य का दावा किए बिना बन्द करें।",
+              "why": "देखभाल स्वैच्छिक और कथा-फल वादा नहीं बनता।",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "मौन या परिचित वाक्य से बन्द कर सामान्य भोजन, जल, दवा, नींद और जिम्मेदारियाँ लें; कोई फल आवश्यक नहीं।",
+            "source_ids": [
+              "drik-purnima-new-delhi-2027",
+              "drik-purnima-india-2027",
+              "devam-lunar-phase-disposition",
+              "devam-monthly-purnima-batch-research",
+              "ganguli-mahabharata-soma-prabhasa",
+              "kumbhaghonam-shalya-soma-sanskrit",
+              "mohfw-diabetes-prolonged-fasting-faq43",
+              "gidm-holy-dip-safety-2025",
+              "india-emergency-112"
+            ],
+            "scope_note": "वर्तमान स्थानीय पूर्णिमा तय करें और हर नामित औपचारिक practice को उसके अपने प्राधिकार में भेजें।"
+          },
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research",
+            "devam-pitru-paksha-partial",
+            "gita-press-satyanarayana-lead",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "ganguli-mahabharata-soma-prabhasa",
+            "kumbhaghonam-shalya-soma-sanskrit"
+          ]
+        },
+        {
+          "procedure_id": "pausha-family-hi",
+          "label": "Consent-led पारिवारिक पूर्णिमा चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सामान्य मासिक-पूर्णिमा स्मरण; कोई औपचारिक व्रत, संकल्प, मंत्र, कथा, श्राद्ध, पवित्र अग्नि, पवित्र स्नान या मंदिर-कर्म नहीं।",
+          "form": "traditional_household",
+          "estimated_minutes": 28,
+          "materials": [
+            {
+              "item": "दो स्रोत-चिह्नित कथा-सार",
+              "required": true,
+              "substitutions": [
+                "ऑडियो पाठ",
+                "विश्वसनीय पाठक",
+                "चिह्नित कथा पर मौन चिंतन"
+              ],
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "सुरक्षित सामान्य विश्राम-स्थान",
+              "required": false,
+              "substitutions": [
+                "कुर्सी या बिस्तर",
+                "घर का फर्श-आसन",
+                "कोई सुलभ स्थान"
+              ],
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित पारिवारिक प्रार्थना या चिंतन",
+              "required": false,
+              "substitutions": [
+                "मौन",
+                "कृतज्ञता की एक पंक्ति",
+                "कोई प्रार्थना नहीं"
+              ],
+              "source_ids": [
+                "devam-monthly-purnima-batch-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक सुरक्षित परिचित भोजन और जल",
+              "required": false,
+              "substitutions": [
+                "सामान्य भोजन",
+                "केवल जल",
+                "कोई साझा भोजन नहीं"
+              ],
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय पौष शुक्ल पूर्णिमा और सबकी सामान्य route की इच्छा तय करें, नामित औपचारिक practice नहीं।",
+              "why": "Applicability और consent कर्म से पहले हैं।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "drik-purnima-india-2027",
+                "devam-lunar-phase-disposition",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "मौन, सुनना, आंशिक भागीदारी और आसान exit दें। विश्वास, खुलासा, स्पर्श, eye contact, चित्र, प्रार्थना या सम्बन्ध-सहमति अनिवार्य न करें।",
+              "why": "पारिवारिक observance स्वैच्छिक रहे।",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सामान्य देखभाल और सुरक्षित indoor/ground-level स्थान रखें; उपवास, पवित्र जल-स्नान, छत, किनारा, बिना निगरानी दीप, भीड़ या चन्द्र-प्रतीक्षा न करें।",
+              "why": "स्वास्थ्य, गिरने, जल और अग्नि का टालने योग्य खतरा न बने।",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "दोनों कथाएँ संक्षेप में सुनाएँ और दिव्य विवाह, शाप, रोग, स्नान तथा चन्द्र-परिवर्तन को स्रोत-घटना कहें, कर्तव्य या medical claim नहीं।",
+              "why": "लेबल कथा बचाकर उसका सामाजिक क्रम नहीं थोपता।",
+              "source_ids": [
+                "ganguli-mahabharata-soma-prabhasa",
+                "kumbhaghonam-shalya-soma-sanskrit",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "हर इच्छुक व्यक्ति एक बदलती स्थिति और एक सीमा या care response बताए। विवाह, स्वास्थ्य, fertility, grief, पूर्वज या conflict बताना जरूरी नहीं।",
+              "why": "चिंतन जबरन निजी खुलासा नहीं बन सकता।",
+              "source_ids": [
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "केवल परिचित पारिवारिक प्रार्थना, मौन या सुरक्षित वैकल्पिक चन्द्र-दर्शन लें। सत्यनारायण कथा, उमा-महेश्वर व्रत, श्राद्ध, अग्नि-आहुति या मंत्र न गढ़ें।",
+              "why": "औपचारिक route अपने owner पाठ और प्राधिकार में रहें।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "gita-press-satyanarayana-lead",
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "चाहें तो सामान्य परिचित भोजन/जल लें, दवा और नींद पूरी करें, और फल-दावे, अनिवार्य दान, priest fee या प्रसाद के बिना बन्द करें।",
+              "why": "समापन सामान्य देखभाल और आर्थिक चुनाव लौटाता है।",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "भागीदारों को धन्यवाद दें, सामान्य care needs पूरी करें और वैकल्पिक वस्तु हटा दें; असहमति, रुकना और विशेष भावना न होना वैध closing हैं।",
+            "source_ids": [
+              "drik-purnima-new-delhi-2027",
+              "drik-purnima-india-2027",
+              "devam-lunar-phase-disposition",
+              "devam-monthly-purnima-batch-research",
+              "ganguli-mahabharata-soma-prabhasa",
+              "kumbhaghonam-shalya-soma-sanskrit",
+              "mohfw-diabetes-prolonged-fasting-faq43",
+              "gidm-holy-dip-safety-2025",
+              "india-emergency-112"
+            ],
+            "scope_note": "वर्तमान स्थानीय पूर्णिमा तय करें और हर नामित औपचारिक practice को उसके अपने प्राधिकार में भेजें।"
+          },
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "ganguli-mahabharata-soma-prabhasa",
+            "kumbhaghonam-shalya-soma-sanskrit",
+            "devam-pitru-paksha-partial",
+            "gita-press-satyanarayana-lead"
+          ]
+        },
+        {
+          "procedure_id": "pausha-temple-hi",
+          "label": "नामित मंदिर visitor route",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल visitor: नामित वर्तमान संस्था अपने programme, पात्रता, offerings, भोजन/उपवास नियम, मंत्र और closing की owner है।",
+          "form": "institutional_participation",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "नामित संस्था की वर्तमान आधिकारिक visitor सूचना",
+              "required": true,
+              "substitutions": [
+                "आधिकारिक फोन सूचना",
+                "on-site notice",
+                "अनसुलझा हो तो न जाएँ"
+              ],
+              "source_ids": [
+                "devam-monthly-purnima-batch-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "वर्तमान संस्था का नाम और programme पहचानें: सामान्य पूर्णिमा, सत्यनारायण, named month overlays, श्राद्ध, अन्वाधान/इष्टि या अन्य।",
+              "why": "संस्था का programme route तय करता है।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "आधिकारिक वर्तमान तारीख, schedule, visitor पात्रता, accessibility, offerings, भोजन/उपवास नियम, अग्नि/जल exposure, queue और closing जाँचें। यहाँ अनुमान न लगाएँ।",
+              "why": "जीवित संस्थागत तथ्य बदल सकते हैं।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "drik-purnima-india-2027",
+                "devam-lunar-phase-disposition",
+                "devam-monthly-purnima-batch-research",
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "भोजन, जल, दवा, mobility support और आसान exit रखें; असुरक्षित उपवास, भीड़, जल, छत, अग्नि, यात्रा या overnight condition छोड़ें।",
+              "why": "स्वास्थ्य और emergency नियम attendance से ऊपर हैं।",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "केवल authorised visitor area में भाग लें। फोटो, स्पर्श, पाठ, offering या भोजन से पहले पूछें; वर्तमान निर्देश और सुरक्षा बिना ritual water या अग्नि न छुएँ।",
+              "why": "Visitor भागीदारी officiating authority नहीं देती।",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "मंदिर का मंत्र, संकल्प, कथा, श्राद्ध, अग्नि-क्रम, उपवास, दान-राशि या closing घर न नकल करें।",
+              "why": "संस्थागत action सामान्य घरेलू निर्देश नहीं।",
+              "source_ids": [
+                "drik-purnima-new-delhi-2027",
+                "devam-pitru-paksha-partial",
+                "gita-press-satyanarayana-lead",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सुरक्षित बाहर आएँ, सामान्य care needs पूरी करें, और आशीर्वाद/फल-भाषा को उस authority की teaching मानें—Devam की guarantee नहीं।",
+              "why": "Route आध्यात्मिक, medical या family result के वादे बिना समाप्त हो।",
+              "source_ids": [
+                "mohfw-diabetes-prolonged-fasting-faq43",
+                "gidm-holy-dip-safety-2025",
+                "india-emergency-112",
+                "devam-monthly-purnima-batch-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Authorised route से निकलें, भोजन/जल/दवा/आराम पूरा करें और संस्थागत procedure घर न लाएँ।",
+            "source_ids": [
+              "drik-purnima-new-delhi-2027",
+              "drik-purnima-india-2027",
+              "devam-lunar-phase-disposition",
+              "devam-monthly-purnima-batch-research",
+              "ganguli-mahabharata-soma-prabhasa",
+              "kumbhaghonam-shalya-soma-sanskrit",
+              "mohfw-diabetes-prolonged-fasting-faq43",
+              "gidm-holy-dip-safety-2025",
+              "india-emergency-112"
+            ],
+            "scope_note": "वर्तमान स्थानीय पूर्णिमा तय करें और हर नामित औपचारिक practice को उसके अपने प्राधिकार में भेजें।"
+          },
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "devam-pitru-paksha-partial",
+            "devam-monthly-purnima-batch-research",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "gita-press-satyanarayana-lead"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-hi",
+          "scope": "चयनित उत्तर/पश्चिम और साझा-state घरेलू expression",
+          "difference": "भाषा, spelling, पूर्णिमा/Pournami शब्द, dress, food preference, परिचित deity name, image/no-image और मौन minor हैं; state procedure नहीं बनाते।",
+          "separate_lane_required": false,
+          "source_ids": [
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "pausha-named-overlay-owner-hi",
+          "scope": "Named पौष पूर्णिमा overlays",
+          "difference": "शाकम्भरी पूर्णिमा/देवी practice, named सत्यनारायण व्रत और temple programmes के अलग owners चाहिए.",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "satyanarayana-owner-hi",
+          "scope": "नामित सत्यनारायण पूजा/कथा",
+          "difference": "अलग narrative corpus, संकल्प, officiation, offerings और प्रसाद; पहचाना source lead यहाँ product-cleared नहीं।",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "gita-press-satyanarayana-lead",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "purnima-shraddha-owner-hi",
+          "scope": "पूर्णिमा श्राद्ध और पितृ पक्ष",
+          "difference": "मृत्यु-तिथि, पूर्वज applicability, performer और family/priest authority route को materially बदलते हैं; ancestor contact अनुमान नहीं।",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-pitru-paksha-partial",
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "anvadhan-ishti-owner-hi",
+          "scope": "अन्वाधान और इष्टि",
+          "difference": "पवित्र अग्नि, मंत्र, sequence और ritual eligibility को qualified Vedic authority चाहिए।",
+          "separate_lane_required": true,
+          "source_ids": [
+            "devam-monthly-purnima-batch-research"
+          ]
+        },
+        {
+          "variant_id": "named-temple-hi",
+          "scope": "नामित वर्तमान मंदिर या संस्था",
+          "difference": "जीवित programme, visitor rules, offerings, queues, अग्नि/जल/भोजन conditions और closing संस्था के हैं।",
+          "separate_lane_required": true,
+          "source_ids": [
+            "drik-purnima-new-delhi-2027",
+            "drik-purnima-india-2027",
+            "devam-lunar-phase-disposition",
+            "devam-monthly-purnima-batch-research",
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "variant_id": "safety-needs-hi",
+          "scope": "Medical, fasting, food, medicine, pregnancy, childhood, disability, grief, water, travel, crowd, flame, roof या financial needs",
+          "difference": "सुरक्षा participation बदल या रोक सकती है और ritual completion से हमेशा ऊपर है।",
+          "separate_lane_required": true,
+          "source_ids": [
+            "mohfw-diabetes-prolonged-fasting-faq43",
+            "gidm-holy-dip-safety-2025",
+            "india-emergency-112",
+            "devam-monthly-purnima-batch-research"
+          ]
+        }
+      ],
+      "title": "पौष पूर्णिमा",
+      "safety_and_boundaries": [
+        "उपवास, निर्जलीकरण, meal delay, दवा बदलना, जागरण, पवित्र स्नान, छत, किनारा, isolated outdoor place, अग्नि, यात्रा, भीड़ या चन्द्र-दर्शन आवश्यक नहीं।",
+        "रोग, infertility, गरीबी, शोक, relationship conflict और चन्द्र-परिवर्तन दण्ड नहीं।",
+        "कोई विवाह, स्नेह, यौन सम्बन्ध, समान निकटता, मेल-मिलाप, parent obedience, disclosure, forgiveness, belief, दान, priest fee, प्रसाद, मंत्र या संस्कृत का ऋणी नहीं।",
+        "सुख, समृद्धि, इलाज, संतान, वैवाहिक सौभाग्य, पूर्वज-मुक्ति, पाप-नाश या कई गुना पुण्य का वादा न करें।",
+        "सत्यनारायण, named month overlays, श्राद्ध, अन्वाधान/इष्टि और नामित मंदिर के अलग owners हैं; उनकी नकल न करें।",
+        "तुरन्त emergency में 112 लें; वर्तमान medical और institutional safety rules इस pack से ऊपर हैं।",
+        "Authored का अर्थ केवल यह lane है, projected, hosted, release-reviewed या published नहीं।"
+      ],
+      "observance_slugs": [
+        "pausha-purnima"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "Not projected, hosted or published; named formal practices remain separate owner lanes."
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}

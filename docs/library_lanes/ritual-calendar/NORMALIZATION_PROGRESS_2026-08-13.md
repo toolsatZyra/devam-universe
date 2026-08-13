@@ -489,3 +489,23 @@ Exact accepted-authoring coverage is now **65 completed after freeze / 143
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 These packs are authored and internally reviewed only; they are not projected,
 hosted, independently released or published.
+
+## Evidence-first monthly Purnima batch checkpoint
+
+Eleven remaining generic monthly-Purnima items are complete as independent
+bilingual lanes: Pausha, Magha, Phalguna, Chaitra, Vaishakha, Jyeshtha,
+Ashadha, Shravana, Ashwina, Kartika and Margashirsha. They reuse one reviewed
+calendar/story/safety spine while retaining their separate deterministic month
+identity and material owner routes.
+
+Shravana and Kartika explicitly separate the actual Purnima day from the
+displayed Purnima-vrat day. Guru Purnima, Hanuman Jayanti, Vat Purnima, Raksha
+Bandhan, Narali/Gamha, Sharad/Kojagara, Dev Deepawali, Shakambhari, Masi Magam,
+Dol, Buddha Purnima, Dattatreya Jayanti, Satyanarayana, Shraddha, Vedic fire and
+named institutions are routed rather than imported. Cosmetic state and language
+differences remain unified.
+
+Exact accepted-authoring coverage is now **76 completed after freeze / 132
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed still does not mean projected, hosted,
+independently released or published.
