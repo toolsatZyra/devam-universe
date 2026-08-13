@@ -65,6 +65,7 @@ import { RAMAYANA_PRINCES_PLAYABLE_SCENES } from "../../data/ramayana-princes-pl
 import { RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES } from "../../data/ramayana-mithila-road-playable";
 import { RAMAYANA_SITA_BOW_PLAYABLE_SCENES } from "../../data/ramayana-sita-bow-playable";
 import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana-weddings-challenge-playable";
+import { RAMAYANA_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-thin-turn-library-scenes";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
 import { buildPlayableStoryDistrictIndex } from "../domain/playable-story-district";
 import { buildStoryNarrativeMap } from "../domain/story-narrative-map";
@@ -184,6 +185,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   const mapPlaceById = new Map(narrativeMap.places.map((place) => [place.id, place]));
   const playableDistrict = buildPlayableStoryDistrictIndex(pack, journey.stops, narrativeMap);
   const districtPlacesBySceneId = new Map<string, string[]>();
+  const libraryReplacementSceneIds = new Set(["coronation-dawn", "janasthana-falls"]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
     if (!place) throw new Error(`Ramayana playable district references an unknown map place: ${placeId}`);
@@ -199,6 +201,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     if (!districtMoments) throw new Error(`Ramayana district moments are missing: ${district.id}`);
 
     for (const sceneId of district.momentIds) {
+      if (libraryReplacementSceneIds.has(sceneId)) continue;
       const moment = districtMoments[sceneId];
       const stop = stopById.get(sceneId);
       if (!moment || !stop) throw new Error(`Ramayana playable scene is incomplete: ${sceneId}`);
@@ -243,6 +246,43 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       });
       scenesByTurnId.set(turnId, siblings);
     }
+  }
+
+  for (const scene of RAMAYANA_THIN_TURN_LIBRARY_SCENES) {
+    const turn = pack.compass.turns[scene.turnId];
+    if (!turn) throw new Error(`Ramayana library scene has no backbone turn: ${scene.id}`);
+    if (scene.sourceStart < turn.sourceRange.startOrdinal || scene.sourceEnd > turn.sourceRange.endOrdinal) {
+      throw new Error(`Ramayana library scene exceeds its source-bounded turn: ${scene.id}`);
+    }
+    if (scene.spanSha256s.length !== scene.sourceEnd - scene.sourceStart + 1) {
+      throw new Error(`Ramayana library scene has an incomplete source-span set: ${scene.id}`);
+    }
+    const siblings = scenesByTurnId.get(scene.turnId) ?? [];
+    siblings.push({
+      id: scene.id,
+      detailOrdinal: scene.detailOrdinal,
+      readiness: "playable",
+      title: scene.title,
+      synopsis: scene.synopsis,
+      narrative: {
+        en: sceneNarrative(scene.moment, "en"),
+        hi: sceneNarrative(scene.moment, "hi"),
+      },
+      source: {
+        sourceSha256: turn.sourceRange.sourceSha256,
+        sourceGlobalOrdinal: scene.sourceGlobalOrdinal,
+        sourceOrdinal: scene.sourceStart,
+        sourceEndOrdinal: scene.sourceEnd,
+        sourceAddressKind: "section_span_set",
+        spanSha256: scene.spanSha256s.length === 1 ? scene.spanSha256s[0] : undefined,
+        spanSha256s: scene.spanSha256s,
+      },
+      nodeIds: scene.nodeIds,
+      characters: [...new Set(scene.moment.beats.flatMap((beat) => beat.characterIds))],
+      places: scene.places,
+      beats: scene.moment.beats.map((beat, index) => ({ ...beat, ordinal: index + 1 })),
+    });
+    scenesByTurnId.set(scene.turnId, siblings);
   }
 
   const sourcePartitionedOutlines = [

@@ -85,11 +85,39 @@ describe("Ramayana selected-expression adversarial review", () => {
         beats: turn.scenes.reduce((sum, scene) => sum + scene.beats.length, 0),
       }))
       .filter((turn) => turn.scenes < 3 || turn.beats < 12)).toEqual([
-        { id: "coronation-dawn", scenes: 1, beats: 4 },
         { id: "deeper-into-forest", scenes: 2, beats: 11 },
         { id: "panchavati-surpanakha", scenes: 2, beats: 11 },
-        { id: "war-at-janasthana", scenes: 1, beats: 6 },
         { id: "golden-deer-plot", scenes: 2, beats: 10 },
       ]);
+  });
+
+  it("keeps the coronation and Janasthana depth repairs on exact non-overlapping source ranges", () => {
+    const repairedScenes = [
+      ["dasharatha-chooses-rama", 1, 2, 2],
+      ["ayodhya-prepares-the-heir", 3, 4, 2],
+      ["rama-and-sita-keep-the-night", 5, 6, 2],
+      ["surpanakha-brings-fourteen-fighters", 18, 20, 3],
+      ["khara-marches-under-omens", 21, 24, 4],
+      ["dushana-and-trishira-fall", 25, 27, 3],
+      ["khara-falls-akampana-carries-news", 28, 30, 3],
+    ] as const;
+
+    expect(repairedScenes.map(([id]) => {
+      const scene = sceneById.get(id);
+      expect(scene, id).toBeDefined();
+      return [
+        scene!.id,
+        scene!.source.sourceOrdinal,
+        scene!.source.sourceEndOrdinal,
+        scene!.source.spanSha256s?.length,
+        scene!.source.sourceAddressKind,
+      ];
+    })).toEqual(repairedScenes.map(([id, start, end, spanCount]) => [
+      id,
+      start,
+      end,
+      spanCount,
+      "section_span_set",
+    ]));
   });
 });

@@ -11,7 +11,7 @@ The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-402 substantial scenes and 1,746
+407 substantial scenes and 1,771
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -55,7 +55,7 @@ still illustrates 55 scenes across seven districts and gives only 14 turns a
 direct visual entrance; 35 turns still stop at orientation before their
 authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
-402 scenes and compiles 401 story-order, 94 character-path, 50 place-echo and
+407 scenes and compiles 406 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
@@ -290,12 +290,16 @@ substantial bilingual playable scenes containing 234 beats across the complete
 selected Uttara range. The first whole-journey adversarial review is complete.
 It found five thin turns that need additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
-leaks in consumer copy; the copy leaks are repaired. It also confirms the
-larger experience gap between the complete 402-scene authored projection and
+leaks in consumer copy; the copy leaks are repaired. Coronation dawn and the
+Janasthana war are now repaired as seven exact data-only scenes replacing two
+compressed story blocks, leaving three thin turns. It also confirms the
+larger experience gap between the complete 407-scene authored projection and
 the 55 scenes currently illustrated in the live journey. The next boundary is
 closing that experience projection gap with lazy, reversible districts, not
 adding another compass summary or pretending corpus coverage is visual-world
-completion.
+completion. On the user's 2026-08-13 direction, image generation and UI-world
+projection are paused; current work concentrates on accumulating the bilingual
+Ramayana library, exact source partitions, characters, places, and relationships.
 
 The normalized narrative layer and deterministic Ramayana seed compiler keep
 all seven bilingual arcs and 49 backbone turns while publishing only scenes

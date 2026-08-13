@@ -2,11 +2,18 @@
 
 Status: **first full-corpus review checkpoint — 2026-08-13**
 
+Priority update: on the user's later 2026-08-13 direction, this lane is
+library-first. Image generation and UI-world projection are paused until the
+user explicitly reauthorizes them. The first data-only repair now replaces the
+compressed coronation-dawn and Janasthana blocks with seven exact,
+non-overlapping scenes. The current corpus is 407 scenes and 1,771 bilingual
+beats; three of the original five thin turns remain in the queue below.
+
 ## Decision
 
 Devam has a complete beginning-to-end consumer retelling of one selected
 Manmatha Nath Dutt English expression: 652 source-ordered units are represented
-exactly once by 49 turns, 402 substantial English/Hindi scenes, and 1,746
+exactly once by 49 turns, 407 substantial English/Hindi scenes, and 1,771
 bilingual beats. This is not yet a complete illustrated Ramayana world and must
 not be described that way.
 
@@ -18,7 +25,7 @@ still presents them as orientation because equivalent art, district loading,
 and reversible world navigation have not been projected. The next product
 priority is to close this experience gap, not to write a second summary layer.
 
-## Evidence reviewed
+## Evidence reviewed at the first checkpoint
 
 - complete narrative snapshot: 7 arcs, 49 turns, 402 scenes, 1,746 beats;
 - exact selected-source partition: all 652 units represented once;
@@ -39,7 +46,7 @@ priority is to close this experience gap, not to write a second summary layer.
 
 - Every selected-source unit belongs to exactly one scene under exactly one
   turn; the corpus does not hide skipped intervals behind famous moments.
-- All 402 English narratives, all 402 Hindi narratives, and all 1,746 visual
+- All 407 English narratives, all 407 Hindi narratives, and all 1,771 visual
   directions are unique. The review found no repeated filler blocks.
 - Hindi and English consumer fields contain clean Unicode, not rendered
   mojibake or replacement characters.
@@ -74,7 +81,7 @@ These scenes are not thin summaries. Their risk is interaction fatigue. They
 must not be split mechanically when one source unit supplies the whole event;
 an internal phase/chapter control is safer than duplicating a source range.
 
-Five turns fall below the provisional depth target of at least three scenes and
+At the time of the first review, five turns fell below the provisional depth target of at least three scenes and
 twelve beats:
 
 | Turn | Scenes | Beats | Repair priority |
@@ -85,38 +92,39 @@ twelve beats:
 | `war-at-janasthana` | 1 | 6 | Highest: thirteen source units are compressed into one scene. |
 | `golden-deer-plot` | 2 | 10 | Separate coercion of Maricha, deception, and household separation where source boundaries permit. |
 
-The automated review freezes these ten exceptions by identity and count. A new
+The automated review freezes these exceptions by identity and count. A new
 exception fails the suite; removing an exception also requires updating the
-test, making progress explicit.
+test, making progress explicit. `coronation-dawn` and `war-at-janasthana` are
+now removed from the thin-turn queue after source-partitioned library repair;
+`deeper-into-forest`, `panchavati-surpanakha`, and `golden-deer-plot` remain.
 
 ## Experience and art-direction judgment
 
-The 402-scene corpus is the correct data layer, but most of it is not yet the
+The 407-scene corpus is the correct data layer, but most of it is not yet the
 experience the user described. Visual cues are not visual worlds. Database
 links are not traversal rewards. The journey must project the same authored
 scene into four reversible lenses—main story, narrative place, character path,
 and story thread—while loading art and copy by district rather than shipping the
 whole corpus to the browser.
 
-The next illustrated tranche should close the five thin turns first because
-they are already visible near completed districts and create the sharpest
-quality discontinuities. Each new scene needs a distinct tableau or a clearly
-authored animated composition, a recognizable biome and cast, immediate
-previous/next movement, place and character exits, and exact restoration of the
-originating lens. It must not become another prose panel.
+The next library tranche should close the remaining three thin turns first
+because they contain the sharpest story-density discontinuities. Each scene
+must preserve exact source partitioning, substantial English and Hindi action,
+motivation and consequence, character/place continuity, and reversible graph
+links. Visual production is deliberately deferred.
 
 ## Next gates
 
-1. Correct the five thin turns with exact source partitioning and no invented
-   filler.
+1. Correct the remaining three thin turns with exact source partitioning and no
+   invented filler.
 2. Add phase navigation for the five long scenes without duplicating source
    identity.
-3. Make all 49 turns open their authored scenes through lazy district payloads;
-   retain honest visual-readiness labels until art is present.
-4. Extend browser acceptance from seven districts to each newly illustrated
-   tranche on desktop and mobile, including touch pan/pinch, keyboard movement,
-   back-stack restoration, and reduced motion.
-5. Conduct observed ordinary-user comprehension and enjoyment testing. Passing
+3. Deepen character, place, event, and cross-tradition relationships from the
+   same story records without creating duplicate story bodies.
+4. Resume illustrated-district and browser work only after explicit user
+   authorization.
+5. Conduct observed ordinary-user comprehension and enjoyment testing when the
+   experience lane resumes. Passing
    automated mechanics is not evidence that the experience is engaging.
 
 No hosted database, production deployment, or external service was mutated by
