@@ -68,6 +68,7 @@ import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana
 import { RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES } from "../../data/ramayana-lakshmana-joins-library-scenes";
 import { RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES } from "../../data/ramayana-rama-accepts-exile-library-scenes";
 import { RAMAYANA_SITA_CHOOSES_ROAD_LIBRARY_SCENES } from "../../data/ramayana-sita-chooses-road-library-scenes";
+import { RAMAYANA_CITY_FOLLOWS_LIBRARY_SCENES } from "../../data/ramayana-city-follows-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
@@ -216,6 +217,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "lakshmana-joins",
     "rama-accepts-exile",
     "sita-chooses-road",
+    "city-follows-car",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
     "two-lineages-reach-lanka",
@@ -309,6 +311,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES,
     ...RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES,
     ...RAMAYANA_SITA_CHOOSES_ROAD_LIBRARY_SCENES,
+    ...RAMAYANA_CITY_FOLLOWS_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
@@ -336,7 +339,9 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
       throw new Error(`Ramayana library scene has an incomplete source-span set: ${scene.id}`);
     }
     const hasCompleteRegisteredSpans = ["bala", "uttara"].includes(turn.sourceRange.kandaSlug)
-      || (turn.sourceRange.kandaSlug === "ayodhya" && scene.sourceStart >= 26 && scene.sourceEnd <= 30)
+      || (turn.sourceRange.kandaSlug === "ayodhya"
+        && ((scene.sourceStart >= 26 && scene.sourceEnd <= 30)
+          || (scene.sourceStart >= 41 && scene.sourceEnd <= 45)))
       || (turn.sourceRange.kandaSlug === "aranya" && scene.sourceStart >= 54 && scene.sourceEnd <= 68);
     if (hasCompleteRegisteredSpans) {
       const expectedSpanSha256s = getDuttKandaSpanSha256s(
