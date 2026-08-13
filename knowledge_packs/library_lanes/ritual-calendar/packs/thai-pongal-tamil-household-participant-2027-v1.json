@@ -1,0 +1,1570 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "thai-pongal-tamil-household-participant-2027-v1",
+  "observance_slugs": [
+    "bhogi-tamil",
+    "thai-pongal",
+    "mattu-pongal",
+    "kaanum-pongal"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN-TN",
+      "tamil-diaspora"
+    ],
+    "tradition_codes": [
+      "tamil-household-harvest-observance",
+      "general-surya-gratitude"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "household",
+      "individual",
+      "family_led",
+      "temple",
+      "community"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and accepted family Tamil calendar should resolve the four days?",
+      "Does your Tamil regional, caste, community, farming, temple or sampradaya form change the order, words, food, kolam, offering or animal participation?",
+      "Are you cooking at home, joining a temple/community programme, visiting a farm, or seeking a material-light remembrance?",
+      "Could flame, hot liquid, smoke, air quality, milk or nut allergy, diabetes, food storage, animal behaviour, crowds, travel or accessibility create risk?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-TN",
+        "tradition_code": "tamil-household-harvest-observance",
+        "observance_slug": "thai-pongal"
+      },
+      {
+        "region_code": "IN-TN",
+        "tradition_code": "general-surya-gratitude",
+        "observance_slug": "thai-pongal"
+      },
+      {
+        "region_code": "tamil-diaspora",
+        "tradition_code": "tamil-household-harvest-observance",
+        "observance_slug": "thai-pongal"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "thai-pongal",
+        "language_code": "en",
+        "note": "A Chennai-reference Tamil household and ordinary-participant lane for the four-day Pongal sequence; established family and institutional forms override it."
+      },
+      {
+        "observance_slug": "thai-pongal",
+        "language_code": "hi",
+        "note": "चार-दिवसीय पोंगल क्रम का चेन्नई-संदर्भित तमिल गृह और सामान्य सहभागिता मार्ग; स्थापित पारिवारिक और संस्थागत रूप इसे प्रतिस्थापित करते हैं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-chennai-bhogi-2027",
+      "drik-chennai-pongal-2027",
+      "drik-chennai-mattu-pongal-2027",
+      "drik-chennai-kaanum-pongal-2027"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "tamil-pongal-four-day-sequence-local-solar-ingress-v1",
+    "closing_decision_rule_id": "kaanum-family-or-community-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Chennai 2027 fixture: Bhogi 14 January, Thai Pongal 15 January, Mattu Pongal 16 January and Kaanum Pongal 17 January. The Chennai ingress is 21:14 on 14 January and the cited daylight period on 15 January is 06:35-18:02. Recompute outside Chennai and verify live programmes."
+  },
+  "sources": [
+    {
+      "source_id": "tn-cooperation-pongal-sequence-2024",
+      "title": "Tamil Nadu Cooperation Department monthly bulletin, December 2024",
+      "publisher": "Tamil Nadu Cooperative Union / Cooperation Department",
+      "source_role": "official current evidence for the four-day Tamil Pongal sequence, gratitude to agricultural animals and contemporary ingredient context",
+      "rights_lane": "citation_only",
+      "url": "https://www.tncu.tn.gov.in/doc/2024_dec_en.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "published": "2024-12",
+        "topic": "Bhogi, Thai Pongal, Uzhavar Thirunal and Kaanum Pongal"
+      }
+    },
+    {
+      "source_id": "tn-raj-bhavan-pongal-2019",
+      "title": "Pongal celebration press release, 15 January 2019",
+      "publisher": "Raj Bhavan, Tamil Nadu",
+      "source_role": "official Tamil Nadu evidence for kolam, floral decoration, sweet Pongal in earthen pots, Surya offering, cattle gratitude and social gathering",
+      "rights_lane": "citation_only",
+      "url": "https://tnrajbhavantour.tn.gov.in/tnrb-website-archive/Archives/Website1621/PressReleases/2019/PR150119-1.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "page": 2,
+        "lines": "29-38"
+      }
+    },
+    {
+      "source_id": "incredible-india-pongal-coimbatore",
+      "title": "Pongal Festival",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "official descriptive evidence for Tamil harvest gratitude, overflowing rice, four-day differentiation, Sun offering and cattle context",
+      "rights_lane": "citation_only",
+      "url": "https://www.prod.incredibleindia.gov.in/content/incredible-india-v2/en/destinations/coimbatore/pongal-festival.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": [
+          "Pongal Festival",
+          "four-day harvest festival"
+        ],
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "incredible-india-colours-pongal",
+      "title": "Colours of India: Pongal celebration",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "current descriptive evidence for kolam, boiling rice, Pongalo Pongal expression and gratitude to Sun, nature and farm animals",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/colours-of-india",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Pongal",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "president-india-harvest-greeting-2026",
+      "title": "President's greetings on Lohri, Makar Sankranti, Pongal and Magh Bihu",
+      "publisher": "President of India",
+      "source_role": "current official evidence that Pongal is a distinct named agricultural festival associated with nature and farmers",
+      "rights_lane": "citation_only",
+      "url": "https://www.presidentofindia.gov.in/press_releases/presidents-greetings-eve-lohri-makar-sankranti-pongal-and-magh-bihu-0",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "published": "2026-01-12"
+      }
+    },
+    {
+      "source_id": "drik-chennai-pongal-2027",
+      "title": "2027 Makar Sankranti and Pongal time for Chennai",
+      "publisher": "DrikPanchang",
+      "source_role": "Chennai practitioner-calendar fixture for Thai Pongal and the local solar-ingress daylight period",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/sankranti/makar-sankranti-date-time.html?geoname-id=1264527&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "thai_pongal": "2027-01-15",
+        "sankranti_moment": "2027-01-14T21:14",
+        "punya_kala": "2027-01-15T06:35/18:02"
+      }
+    },
+    {
+      "source_id": "drik-chennai-bhogi-2027",
+      "title": "2027 Bhogi Pandigai day for Chennai",
+      "publisher": "DrikPanchang",
+      "source_role": "practitioner-calendar fixture for the first day of the Chennai Pongal sequence",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/pongal/bhogi-pandigai-date-time.html?geoname-id=1264527&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "bhogi": "2027-01-14"
+      }
+    },
+    {
+      "source_id": "drik-chennai-mattu-pongal-2027",
+      "title": "2027 Mattu Pongal day for Chennai",
+      "publisher": "DrikPanchang",
+      "source_role": "practitioner-calendar fixture and descriptive evidence for the cattle-gratitude day",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/pongal/mattu-pongal-date-time.html?geoname-id=1264527&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "mattu_pongal": "2027-01-16"
+      }
+    },
+    {
+      "source_id": "drik-chennai-kaanum-pongal-2027",
+      "title": "2027 Kaanum Pongal day for Chennai",
+      "publisher": "DrikPanchang",
+      "source_role": "practitioner-calendar fixture for the fourth and final day of the Tamil sequence",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/pongal/kaanum-pongal-date-time.html?geoname-id=1264527&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "kaanum_pongal": "2027-01-17"
+      }
+    },
+    {
+      "source_id": "tnpcb-bhogi-air-pollution",
+      "title": "Environmental awareness: Bhogi Festival",
+      "publisher": "Tamil Nadu Pollution Control Board",
+      "source_role": "authoritative safety evidence against burning waste tyres, tubes, plastics, cloth and other polluting materials during Bhogi",
+      "rights_lane": "citation_only",
+      "url": "https://tnpcb.gov.in/environmentalAwareness.php",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Bhogi Festival",
+        "programme_year": 2022
+      }
+    },
+    {
+      "source_id": "india-code-pca-act-1960",
+      "title": "Prevention of Cruelty to Animals Act, 1960",
+      "publisher": "India Code, Government of India",
+      "source_role": "current legal boundary requiring reasonable care and prevention of unnecessary pain or suffering to animals",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1547?view_type=browse",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": [
+          3,
+          11
+        ]
+      }
+    },
+    {
+      "source_id": "fssai-food-safety-at-home",
+      "title": "Food Safety at Home",
+      "publisher": "Food Safety and Standards Authority of India",
+      "source_role": "household food-safety evidence for clean water, thorough cooking, boiling unpasteurised milk, prompt eating, safe holding and cross-contamination control",
+      "rights_lane": "citation_only",
+      "url": "https://fssai.gov.in/flipbook.php?bookid=31",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "rules": [
+          1,
+          2,
+          3,
+          4,
+          8
+        ]
+      }
+    },
+    {
+      "source_id": "fssai-milk-allergen-guidance-2019",
+      "title": "Guidance Document: Milk and Milk Products",
+      "publisher": "Food Safety and Standards Authority of India",
+      "source_role": "food-safety evidence for milk, nut and other allergen disclosure and cross-contact control",
+      "rights_lane": "citation_only",
+      "url": "https://www.fssai.gov.in/upload/uploadfiles/files/Guidance_Document_Milk_14_03_2019.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "3.4.2 Allergen Control and Management"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "bhogi-tamil",
+        "thai-pongal",
+        "mattu-pongal",
+        "kaanum-pongal"
+      ],
+      "title": "Thai Pongal: Tamil four-day household and participant guide",
+      "short_answer": "For Chennai in 2027: Bhogi is 14 January, Thai Pongal 15 January, Mattu Pongal 16 January and Kaanum Pongal 17 January. Follow your established family form. Otherwise renew without burning waste, cook a small safe pot of Pongal and thank Surya, express non-harming gratitude to cattle and farmers, then connect with family or community.",
+      "significance": {
+        "text": "Pongal is a Tamil harvest thanksgiving centred on Surya, nature, farmers, food and agricultural animals. Its four named days move through renewal, cooking and offering Pongal, gratitude to cattle, and family/community connection. Overflow signifies abundance in documented living explanation, but safety and avoiding waste take priority.",
+        "source_ids": [
+          "tn-cooperation-pongal-sequence-2024",
+          "tn-raj-bhavan-pongal-2019",
+          "incredible-india-pongal-coimbatore",
+          "president-india-harvest-greeting-2026"
+        ],
+        "scope_note": "Tamil Nadu and Tamil household context; no claim that every Tamil family, caste, region, religion or institution follows one vidhi."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "four-days-of-gratitude",
+          "title": "Four days, four relationships",
+          "summary": "Tamil Nadu government descriptions present Pongal as a four-day sequence: Bhogi renewal, Thai Pongal harvest and Sun gratitude, Mattu Pongal recognition of agricultural animals, and Kaanum Pongal social connection. Devam treats this as a living sequence, not a single national rite.",
+          "tradition_scope": "Contemporary official Tamil Nadu living-practice description",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "pot-that-overflows",
+          "title": "The pot that overflows",
+          "summary": "Government tourism explains the name through rice and milk rising and spilling over while Pongal is cooked. In living celebration the moment expresses abundance and joy. The source does not require a dangerous spill or guarantee future prosperity.",
+          "tradition_scope": "Contemporary Ministry of Tourism festival explanation",
+          "source_ids": [
+            "incredible-india-pongal-coimbatore",
+            "incredible-india-colours-pongal"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "sun-food-and-labour",
+          "title": "Sun, harvest and the chain of care",
+          "summary": "Official greetings connect Pongal with agricultural tradition, nature and farmers; Tamil accounts add the cattle that assist agriculture. The story is one of interdependence: food reaches a household through sunlight, land, water, labour, animals and community.",
+          "tradition_scope": "Contemporary civic and Tamil public explanation",
+          "source_ids": [
+            "president-india-harvest-greeting-2026",
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "tamil-household-thai-pongal",
+          "population_scope": "Many Tamil households in Tamil Nadu and Tamil communities elsewhere",
+          "description": "Households may clean, make kolam, cook sweet or savoury Pongal, welcome the rise of the pot, offer food to Surya, express gratitude and share a meal. Exact pot, stove, prayer, ingredients and order vary.",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "incredible-india-pongal-coimbatore",
+            "incredible-india-colours-pongal"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "bhogi-renewal",
+          "population_scope": "Tamil households observing the first day",
+          "description": "Cleaning and letting go of unusable things mark renewal. Current pollution guidance makes repair, donation, recycling and lawful disposal the safe form; mixed-waste burning is not endorsed.",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tnpcb-bhogi-air-pollution"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "mattu-cattle-gratitude",
+          "population_scope": "Farming households and communities connected with cattle",
+          "description": "Mattu Pongal recognises cows and bulls that assist agriculture. Any direct contact or decoration belongs to competent regular keepers and must not cause fear, pain or suffering.",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019",
+            "india-code-pca-act-1960"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "kaanum-social-connection",
+          "population_scope": "Families and communities observing the fourth day",
+          "description": "Relatives and friends may gather or visit in goodwill. Travel, consent, health and family circumstance determine whether this is an outing, home meeting, call or quiet remembrance.",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "drik-chennai-kaanum-pongal-2027"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "thai-pongal-en-minimum-v1",
+          "label": "15-minute material-light Thai Pongal gratitude",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Accessible Tamil Pongal remembrance for someone unable to cook or follow a full family sequence; not a formal puja, fire rite or cattle rite.",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {
+              "item": "Confirmed local Thai Pongal date",
+              "required": true,
+              "substitutions": [
+                "A trusted family Tamil calendar"
+              ],
+              "source_ids": [
+                "drik-chennai-pongal-2027"
+              ]
+            },
+            {
+              "item": "A safe quiet place and one source-labelled account",
+              "required": true,
+              "substitutions": [
+                "A short audio reading",
+                "Silent reflection"
+              ],
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "president-india-harvest-greeting-2026"
+              ]
+            },
+            {
+              "item": "A small serving of safe food",
+              "required": false,
+              "substitutions": [
+                "Fruit",
+                "No food offering"
+              ],
+              "source_ids": [
+                "fssai-food-safety-at-home"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the local day. Use Friday 15 January 2027 only for the Chennai fixture.",
+              "why": "Thai Pongal follows the local Tamil solar-calendar resolution.",
+              "source_ids": [
+                "drik-chennai-pongal-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Clean a small place without lighting a Bhogi fire or burning household waste.",
+              "why": "Renewal can be expressed safely; polluting waste burning is specifically discouraged.",
+              "source_ids": [
+                "tnpcb-bhogi-air-pollution",
+                "tn-cooperation-pongal-sequence-2024"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Face a bright safe space without staring at the Sun and thank Surya, nature, farmers and animals that sustain food production in your own words.",
+              "why": "This preserves sourced gratitude without fabricating a Tamil or Sanskrit mantra.",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "tn-cooperation-pongal-sequence-2024",
+                "tn-raj-bhavan-pongal-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Read the four-day account below and choose one practical act: prevent food waste, thank a food worker, help a farmer-supporting cause, or call family.",
+              "why": "The act remains connected to harvest gratitude and social care without promising prosperity.",
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "tn-raj-bhavan-pongal-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "If safe food is available, set aside or share a small portion after checking dietary needs.",
+              "why": "Food sharing remains optional and hygienic.",
+              "source_ids": [
+                "fssai-food-safety-at-home",
+                "fssai-milk-allergen-guidance-2019"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Close with thanks in your own or family words, eat normally, and store or refrigerate leftovers safely.",
+            "source_ids": [
+              "fssai-food-safety-at-home",
+              "president-india-harvest-greeting-2026"
+            ],
+            "scope_note": "Plain lay close; no ritual result or Tamil recitation is supplied."
+          },
+          "source_ids": [
+            "drik-chennai-pongal-2027",
+            "tn-cooperation-pongal-sequence-2024",
+            "president-india-harvest-greeting-2026"
+          ]
+        },
+        {
+          "procedure_id": "thai-pongal-en-standard-v1",
+          "label": "45-minute bounded household Thai Pongal",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "A bounded lay household form from official living-practice descriptions; an established Tamil family method replaces it.",
+          "form": "traditional_household",
+          "estimated_minutes": 45,
+          "materials": [
+            {
+              "item": "Clean cooking area and stable pot",
+              "required": true,
+              "substitutions": [
+                "An ordinary saucepan on a safe indoor stove"
+              ],
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "Rice and safe water",
+              "required": true,
+              "substitutions": [
+                "A small portion appropriate to the household"
+              ],
+              "source_ids": [
+                "incredible-india-pongal-coimbatore",
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "Milk",
+              "required": false,
+              "substitutions": [
+                "Water",
+                "A medically suitable milk alternative"
+              ],
+              "source_ids": [
+                "incredible-india-colours-pongal",
+                "fssai-milk-allergen-guidance-2019"
+              ]
+            },
+            {
+              "item": "Jaggery and optional dal, ghee, nuts or raisins",
+              "required": false,
+              "substitutions": [
+                "Savoury Pongal",
+                "Household-safe ingredients"
+              ],
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "fssai-milk-allergen-guidance-2019"
+              ]
+            },
+            {
+              "item": "Pot-safe overflow catcher or larger vessel",
+              "required": true,
+              "substitutions": [
+                "Cook without deliberate overflow and name the symbolism"
+              ],
+              "source_ids": [
+                "incredible-india-pongal-coimbatore",
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "Kolam materials",
+              "required": false,
+              "substitutions": [
+                "Chalk",
+                "Paper drawing",
+                "No kolam"
+              ],
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "incredible-india-colours-pongal"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the Chennai-reference day or your locally resolved Tamil date, and choose an indoor or permitted outdoor cooking place away from children, loose clothing and traffic.",
+              "why": "Calendar and fire safety must both be resolved.",
+              "source_ids": [
+                "drik-chennai-pongal-2027",
+                "fssai-food-safety-at-home"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Clean the cooking and prayer space. Make a family kolam if known, or a small chalk or paper design; do not claim one pattern as mandatory.",
+              "why": "Kolam is documented, while design and material vary.",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "incredible-india-colours-pongal"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Wash hands, use safe water and ingredients, disclose milk and nut allergens, and boil unpasteurised milk before use.",
+              "why": "Pongal is food and must meet ordinary food-safety needs.",
+              "source_ids": [
+                "fssai-food-safety-at-home",
+                "fssai-milk-allergen-guidance-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Cook a manageable pot of Pongal. If your family welcomes an overflow, use a stable oversized vessel and controlled heat with an adult attending it; otherwise prevent overflow and name its abundance symbolism.",
+              "why": "Overflow is documented meaning, not permission for burns, spills or waste.",
+              "source_ids": [
+                "incredible-india-pongal-coimbatore",
+                "incredible-india-colours-pongal",
+                "fssai-food-safety-at-home"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "When the food reaches the family's chosen point, use the family expression such as 'Pongalo Pongal' if known, or simply acknowledge gratitude. Do not invent words or repetition counts.",
+              "why": "The exclamation is documented but not imposed.",
+              "source_ids": [
+                "incredible-india-colours-pongal"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Place a small safe serving before the family's established Surya representation or in a clean dedicated place; if no offering practice is known, pause in gratitude without materials.",
+              "why": "Sweet Pongal offered to Surya is documented, but household authority and accessible substitution are preserved.",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "incredible-india-pongal-coimbatore"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Thank Surya, nature, farmers, agricultural workers and animals in plain language or the family's known prayer.",
+              "why": "This reflects the festival's sourced agricultural meaning.",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "tn-cooperation-pongal-sequence-2024"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 8,
+              "instruction": "Serve the food hygienically after checking allergies and dietary restrictions; cool and refrigerate leftovers promptly.",
+              "why": "Sharing must not override milk, nut, sugar or food-storage safety.",
+              "source_ids": [
+                "fssai-food-safety-at-home",
+                "fssai-milk-allergen-guidance-2019"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Offer thanks, turn off heat and flame, clean the area, keep edible food in safe use, and compost or dispose of unavoidable plant waste lawfully.",
+            "source_ids": [
+              "fssai-food-safety-at-home",
+              "tnpcb-bhogi-air-pollution"
+            ],
+            "scope_note": "Household food-and-gratitude close, not a temple dismissal rite."
+          },
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "incredible-india-pongal-coimbatore",
+            "drik-chennai-pongal-2027",
+            "fssai-food-safety-at-home"
+          ]
+        },
+        {
+          "procedure_id": "thai-pongal-en-elaborate-v1",
+          "label": "Four-day family and ordinary community participation",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "Lay participation across the named sequence. Temple liturgy, animal handling, farm rites and regulated events remain with competent family, institutional, veterinary and civil authorities.",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "Current four-day family or venue plan",
+              "required": true,
+              "substitutions": [
+                "Use only the Thai Pongal household procedure"
+              ],
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "drik-chennai-pongal-2027"
+              ]
+            },
+            {
+              "item": "Lawful reuse, donation and waste-sorting containers",
+              "required": false,
+              "substitutions": [
+                "Municipal collection plan"
+              ],
+              "source_ids": [
+                "tnpcb-bhogi-air-pollution"
+              ]
+            },
+            {
+              "item": "Safe cooked Pongal or host-approved contribution",
+              "required": false,
+              "substitutions": [
+                "No food contribution"
+              ],
+              "source_ids": [
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "Animal contact plan",
+              "required": false,
+              "substitutions": [
+                "Observe from a safe distance",
+                "Thank a farmer without animal contact"
+              ],
+              "source_ids": [
+                "india-code-pca-act-1960"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Before Bhogi, sort unused items for repair, reuse, donation, recycling or lawful collection. Do not burn tyres, tubes, plastics, cloth, e-waste, painted wood or mixed rubbish.",
+              "why": "Tamil Nadu pollution guidance identifies waste burning as harmful.",
+              "source_ids": [
+                "tnpcb-bhogi-air-pollution"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "On Thai Pongal, follow the standard household procedure or the current public/temple programme. Check entry, fire, food and accessibility rules directly.",
+              "why": "A calendar date does not provide a live venue schedule.",
+              "source_ids": [
+                "drik-chennai-pongal-2027",
+                "tn-raj-bhavan-pongal-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "On Mattu Pongal, express gratitude to cattle and those who care for them without approaching an unfamiliar animal. Only a regular competent keeper may decide whether any animal welcomes cleaning, feeding or decoration.",
+              "why": "The day honours agricultural animals, while law requires welfare and freedom from unnecessary pain.",
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "tn-raj-bhavan-pongal-2019",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Do not paint horns or skin, force-feed, restrain, startle, crowd, ride or lead an animal through this guide. Do not treat Jallikattu or another animal event as a DIY ritual.",
+              "why": "This pack cannot establish animal consent, health, legal conditions or event safety.",
+              "source_ids": [
+                "india-code-pca-act-1960",
+                "drik-chennai-mattu-pongal-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "On Kaanum Pongal, visit or contact relatives and friends according to family custom, consent, health and travel safety; a quiet call is a valid substitute.",
+              "why": "The cited living description connects the day with relatives, friendship and goodwill.",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "drik-chennai-kaanum-pongal-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "At every public event, use only public participation areas, follow organisers and take all waste away. Do not improvise temple, farm or animal procedures.",
+              "why": "Institutional and keeper authority remains intact.",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close the fourth day with thanks to family, community, farmers, nature and animals; return borrowed items, store food safely and complete lawful waste disposal.",
+            "source_ids": [
+              "tn-cooperation-pongal-sequence-2024",
+              "tn-raj-bhavan-pongal-2019",
+              "fssai-food-safety-at-home"
+            ],
+            "scope_note": "Lay four-day close; regional family conclusions may differ."
+          },
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019",
+            "tnpcb-bhogi-air-pollution",
+            "india-code-pca-act-1960"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "apartment-or-urban-household",
+          "scope": "Tamil urban or apartment household",
+          "difference": "Use an indoor stove, paper/chalk kolam, lawful waste sorting and non-contact animal gratitude. Outdoor fire and cattle access are not required.",
+          "source_ids": [
+            "tnpcb-bhogi-air-pollution",
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "sweet-or-savoury-pongal",
+          "scope": "Household food expression",
+          "difference": "Sweet Sakkarai Pongal is documented, while ingredient and savoury forms differ. Food choice alone does not create another ritual lane.",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "tn-cooperation-pongal-sequence-2024",
+            "fssai-milk-allergen-guidance-2019"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "farming-household-mattu",
+          "scope": "Tamil farming households with cattle",
+          "difference": "A competent regular keeper may have an established welfare-aware Mattu Pongal form. This pack supplies gratitude and safety boundaries, not animal-handling instructions.",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "temple-or-public-pongal",
+          "scope": "Institutional/community programme",
+          "difference": "Public cooking, worship and cultural programmes follow current organiser rules; ordinary participation stays within this lane, while liturgy is not copied.",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "andhra-telangana-sankranti-sequence",
+          "scope": "Andhra Pradesh and Telangana Bhogi/Pedda Panduga/Kanuma/Mukkanuma",
+          "difference": "The named day sequence and living practices differ materially and require a separate sourced applicability lane.",
+          "source_ids": [
+            "drik-chennai-bhogi-2027"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "jallikattu-or-regulated-animal-event",
+          "scope": "Regulated animal event context",
+          "difference": "This is not a household ritual variant. Legal, veterinary, participant and spectator rules require a separate safety-governed event answer.",
+          "source_ids": [
+            "drik-chennai-mattu-pongal-2027",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "family-specific-kolam-prayer-and-offering",
+          "scope": "Tamil regional, caste, community or sampradaya family form",
+          "difference": "A known inherited sequence may materially change words, order and materials and overrides this generic lane; Devam does not universalise it.",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "daily_sequence": [
+        {
+          "ordinal": 1,
+          "common_name": "Bhogi",
+          "reflection": "Renew responsibly: repair, reuse, donate, recycle and clean without burning harmful waste.",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tnpcb-bhogi-air-pollution"
+          ],
+          "calendar_note": "Chennai 2027 fixture: Thursday 14 January; local Tamil calendar still governs."
+        },
+        {
+          "ordinal": 2,
+          "common_name": "Thai Pongal / Surya Pongal",
+          "reflection": "Cook and share Pongal safely, thank Surya, nature, farmers and all who sustain food.",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "incredible-india-pongal-coimbatore",
+            "drik-chennai-pongal-2027"
+          ],
+          "calendar_note": "Chennai 2027 fixture: Friday 15 January; cited daylight period 06:35-18:02."
+        },
+        {
+          "ordinal": 3,
+          "common_name": "Mattu Pongal",
+          "reflection": "Express gratitude to agricultural animals and their keepers without causing fear, restraint or pain.",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "india-code-pca-act-1960",
+            "drik-chennai-mattu-pongal-2027"
+          ],
+          "calendar_note": "Chennai 2027 fixture: Saturday 16 January."
+        },
+        {
+          "ordinal": 4,
+          "common_name": "Kaanum Pongal",
+          "reflection": "Renew family and community connection through consensual, safe visiting or contact.",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "drik-chennai-kaanum-pongal-2027"
+          ],
+          "calendar_note": "Chennai 2027 fixture: Sunday 17 January."
+        }
+      ],
+      "safety_and_boundaries": [
+        "Do not burn tyres, tubes, plastics, cloth, electrical waste, painted material or mixed rubbish for Bhogi. Follow current local fire, air-quality, waste and housing rules; sorting, repair, donation and lawful collection are valid.",
+        "Hot milk, rice and jaggery can foam and cause severe burns. Use a stable oversized pot, controlled heat, an attending adult, dry handles and a clear child-free area; symbolic non-overflow is valid.",
+        "Use safe water, boil unpasteurised milk, wash hands and utensils, avoid raw-to-cooked cross-contact, eat promptly, and refrigerate leftovers. Never pack very hot food in unsafe plastic.",
+        "Milk and tree nuts are allergens and sugar may be unsuitable for some people. Disclose ingredients, prevent cross-contact, offer a medically suitable substitute and never pressure anyone to eat prasada.",
+        "Do not stare directly at the Sun. Outdoor cooking, flame, smoke and rooftop activity are optional and must yield to weather, air quality, housing and fire rules.",
+        "Do not approach, feed, touch, paint, restrain, ride or decorate unfamiliar cattle. A competent regular keeper and animal welfare determine any contact; gratitude from a distance is complete for this guide.",
+        "Jallikattu and other regulated animal events are not DIY ritual steps. Check current law and official spectator advice; avoiding the event is always valid.",
+        "Temple, community, farm and public schedules are live facts. Confirm entry, accessibility, food, fire, animal and crowd rules directly.",
+        "Prosperity is not promised by overflow, offering, animal contact, visiting or food. Family circumstances and non-harming substitutions take priority."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "bhogi-tamil",
+        "thai-pongal",
+        "mattu-pongal",
+        "kaanum-pongal"
+      ],
+      "title": "थाई पोंगल: तमिल चार-दिवसीय गृह और सहभागिता मार्गदर्शिका",
+      "short_answer": "चेन्नई 2027 में भोगी 14 जनवरी, थाई पोंगल 15 जनवरी, मट्टू पोंगल 16 जनवरी और कानुम पोंगल 17 जनवरी है। स्थापित पारिवारिक रूप अपनाएँ। अन्यथा कचरा जलाए बिना नवीकरण, सुरक्षित छोटा पोंगल पकाकर सूर्य को धन्यवाद, पशु और किसान के प्रति अहिंसक कृतज्ञता, फिर परिवार/समुदाय से संपर्क करें।",
+      "significance": {
+        "text": "पोंगल सूर्य, प्रकृति, किसान, भोजन और कृषि-पशुओं के प्रति तमिल फसल-कृतज्ञता है। चार दिन नवीकरण, पोंगल पकाने/अर्पण, पशु-कृतज्ञता और परिवार/समुदाय संबंध की ओर बढ़ते हैं। जीवित विवरण में उफान प्रचुरता का प्रतीक है, पर सुरक्षा और अपव्यय रोकना पहले है।",
+        "source_ids": [
+          "tn-cooperation-pongal-sequence-2024",
+          "tn-raj-bhavan-pongal-2019",
+          "incredible-india-pongal-coimbatore",
+          "president-india-harvest-greeting-2026"
+        ],
+        "scope_note": "तमिलनाडु और तमिल गृह संदर्भ; हर तमिल परिवार, जाति, क्षेत्र, धर्म या संस्था की एक विधि होने का दावा नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "four-days-of-gratitude",
+          "title": "चार दिन, चार संबंध",
+          "summary": "तमिलनाडु के सरकारी विवरण पोंगल को चार-दिवसीय क्रम बताते हैं: भोगी नवीकरण, थाई पोंगल फसल और सूर्य-कृतज्ञता, मट्टू पोंगल कृषि-पशु सम्मान, और कानुम पोंगल सामाजिक संबंध। देवम् इसे जीवित क्रम मानता है, एक राष्ट्रीय कर्मकांड नहीं।",
+          "tradition_scope": "समकालीन आधिकारिक तमिलनाडु जीवित-प्रथा विवरण",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "pot-that-overflows",
+          "title": "उफनता पात्र",
+          "summary": "सरकारी पर्यटन विवरण पोंगल नाम को पकते चावल-दूध के ऊपर उठने और बहने से जोड़ता है। जीवित उत्सव में यह प्रचुरता और आनंद व्यक्त करता है। स्रोत खतरनाक उफान अनिवार्य नहीं करता और भविष्य की समृद्धि की गारंटी नहीं देता।",
+          "tradition_scope": "समकालीन पर्यटन मंत्रालय पर्व-विवरण",
+          "source_ids": [
+            "incredible-india-pongal-coimbatore",
+            "incredible-india-colours-pongal"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "sun-food-and-labour",
+          "title": "सूर्य, भोजन और श्रम की शृंखला",
+          "summary": "आधिकारिक संदेश पोंगल को कृषि-परंपरा, प्रकृति और किसानों से जोड़ते हैं; तमिल विवरण कृषि-सहायक पशु भी जोड़ते हैं। कथा परस्पर निर्भरता की है: सूर्य, भूमि, जल, श्रम, पशु और समुदाय से भोजन घर तक आता है।",
+          "tradition_scope": "समकालीन नागरिक और तमिल सार्वजनिक विवरण",
+          "source_ids": [
+            "president-india-harvest-greeting-2026",
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "tamil-household-thai-pongal",
+          "population_scope": "तमिलनाडु और बाहर के अनेक तमिल परिवार",
+          "description": "परिवार सफाई, कोलम, मीठा/नमकीन पोंगल, पात्र का उठना, सूर्य को भोजन, कृतज्ञता और भोजन-वितरण कर सकते हैं। पात्र, चूल्हा, प्रार्थना, सामग्री और क्रम बदलते हैं।",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "incredible-india-pongal-coimbatore",
+            "incredible-india-colours-pongal"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "bhogi-renewal",
+          "population_scope": "पहला दिन मानने वाले तमिल परिवार",
+          "description": "सफाई और अनुपयोगी वस्तु छोड़ना नवीकरण दर्शाता है। वर्तमान प्रदूषण मार्गदर्शन में मरम्मत, दान, रीसाइक्लिंग और वैध निस्तारण सुरक्षित रूप हैं; मिला कचरा जलाना समर्थित नहीं।",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tnpcb-bhogi-air-pollution"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "mattu-cattle-gratitude",
+          "population_scope": "पशु-संबद्ध कृषक परिवार और समुदाय",
+          "description": "मट्टू पोंगल कृषि-सहायक गाय-बैल का सम्मान करता है। सीधा संपर्क/सजावट योग्य नियमित पालक के अधीन है और भय, पीड़ा या कष्ट नहीं देना चाहिए।",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019",
+            "india-code-pca-act-1960"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "kaanum-social-connection",
+          "population_scope": "चौथा दिन मानने वाले परिवार और समुदाय",
+          "description": "रिश्तेदार और मित्र सद्भाव से मिल सकते हैं। यात्रा, सहमति, स्वास्थ्य और परिस्थिति तय करती है कि यह बाहर जाना, घर मिलना, फोन या शांत स्मरण हो।",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "drik-chennai-kaanum-pongal-2027"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "thai-pongal-hi-minimum-v1",
+          "label": "15 मिनट का सामग्री-हल्का थाई पोंगल कृतज्ञता-स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "पूर्ण पारिवारिक क्रम या पकाने में असमर्थ व्यक्ति के लिए सुलभ तमिल पोंगल स्मरण; औपचारिक पूजा, अग्नि-कर्म या पशु-कर्म नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {
+              "item": "स्थानीय थाई पोंगल तिथि",
+              "required": true,
+              "substitutions": [
+                "विश्वसनीय पारिवारिक तमिल पंचांग"
+              ],
+              "source_ids": [
+                "drik-chennai-pongal-2027"
+              ]
+            },
+            {
+              "item": "सुरक्षित शांत स्थान और एक स्रोत-चिह्नित विवरण",
+              "required": true,
+              "substitutions": [
+                "छोटा ऑडियो पाठ",
+                "मौन चिंतन"
+              ],
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "president-india-harvest-greeting-2026"
+              ]
+            },
+            {
+              "item": "सुरक्षित भोजन का छोटा भाग",
+              "required": false,
+              "substitutions": [
+                "फल",
+                "कोई भोजन-अर्पण नहीं"
+              ],
+              "source_ids": [
+                "fssai-food-safety-at-home"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय दिन निश्चित करें। शुक्रवार 15 जनवरी 2027 केवल चेन्नई-संदर्भ है।",
+              "why": "थाई पोंगल स्थानीय तमिल सौर-पंचांग से निश्चित होता है।",
+              "source_ids": [
+                "drik-chennai-pongal-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोगी की आग जलाए या घरेलू कचरा जलाए बिना छोटा स्थान साफ करें।",
+              "why": "नवीकरण सुरक्षित ढंग से हो सकता है; प्रदूषणकारी कचरा-दहन के विरुद्ध स्पष्ट चेतावनी है।",
+              "source_ids": [
+                "tnpcb-bhogi-air-pollution",
+                "tn-cooperation-pongal-sequence-2024"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सूर्य को सीधे देखे बिना उजले सुरक्षित स्थान की ओर बैठें और अपनी भाषा में सूर्य, प्रकृति, किसान तथा खाद्य-उत्पादन में सहायक पशुओं को धन्यवाद दें।",
+              "why": "स्रोत-समर्थित कृतज्ञता रहती है; तमिल या संस्कृत मंत्र नहीं गढ़ा जाता।",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "tn-cooperation-pongal-sequence-2024",
+                "tn-raj-bhavan-pongal-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "नीचे का चार-दिवसीय विवरण पढ़ें और एक काम चुनें: भोजन-अपव्यय रोकना, खाद्य-कर्मी को धन्यवाद, किसान-सहायता, या परिवार से संपर्क।",
+              "why": "यह फसल-कृतज्ञता को आचरण से जोड़ता है, समृद्धि की गारंटी से नहीं।",
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "tn-raj-bhavan-pongal-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "सुरक्षित भोजन हो तो आहार-आवश्यकता जाँचकर थोड़ा बाँटें या अलग रखें।",
+              "why": "भोजन-वितरण वैकल्पिक और स्वच्छ रहता है।",
+              "source_ids": [
+                "fssai-food-safety-at-home",
+                "fssai-milk-allergen-guidance-2019"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "अपनी या पारिवारिक भाषा में धन्यवाद देकर समाप्त करें, सामान्य भोजन करें और बचा भोजन सुरक्षित ठंडा/भंडारित करें।",
+            "source_ids": [
+              "fssai-food-safety-at-home",
+              "president-india-harvest-greeting-2026"
+            ],
+            "scope_note": "सरल गृह-समापन; कोई फल या तमिल पाठ नहीं दिया गया।"
+          },
+          "source_ids": [
+            "drik-chennai-pongal-2027",
+            "tn-cooperation-pongal-sequence-2024",
+            "president-india-harvest-greeting-2026"
+          ]
+        },
+        {
+          "procedure_id": "thai-pongal-hi-standard-v1",
+          "label": "45 मिनट का सीमित गृह थाई पोंगल",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "आधिकारिक जीवित-प्रथा विवरणों से बना सीमित गृह-रूप; स्थापित तमिल पारिवारिक विधि इसे प्रतिस्थापित करती है।",
+          "form": "traditional_household",
+          "estimated_minutes": 45,
+          "materials": [
+            {
+              "item": "स्वच्छ पकाने की जगह और स्थिर पात्र",
+              "required": true,
+              "substitutions": [
+                "सुरक्षित घरेलू चूल्हे पर सामान्य पतीला"
+              ],
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "चावल और सुरक्षित पानी",
+              "required": true,
+              "substitutions": [
+                "परिवार के अनुरूप छोटा भाग"
+              ],
+              "source_ids": [
+                "incredible-india-pongal-coimbatore",
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "दूध",
+              "required": false,
+              "substitutions": [
+                "पानी",
+                "चिकित्सकीय रूप से उपयुक्त दूध-विकल्प"
+              ],
+              "source_ids": [
+                "incredible-india-colours-pongal",
+                "fssai-milk-allergen-guidance-2019"
+              ]
+            },
+            {
+              "item": "गुड़ और वैकल्पिक दाल, घी, मेवे या किशमिश",
+              "required": false,
+              "substitutions": [
+                "नमकीन पोंगल",
+                "परिवार-सुरक्षित सामग्री"
+              ],
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "fssai-milk-allergen-guidance-2019"
+              ]
+            },
+            {
+              "item": "उफान सँभालने योग्य बड़ा स्थिर पात्र",
+              "required": true,
+              "substitutions": [
+                "जानबूझकर उफान न देकर उसका प्रतीक बताना"
+              ],
+              "source_ids": [
+                "incredible-india-pongal-coimbatore",
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "कोलम सामग्री",
+              "required": false,
+              "substitutions": [
+                "खड़िया",
+                "कागज पर चित्र",
+                "कोई कोलम नहीं"
+              ],
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "incredible-india-colours-pongal"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "चेन्नई-संदर्भ या स्थानीय तमिल तिथि निश्चित करें और बच्चों, ढीले वस्त्र तथा यातायात से दूर सुरक्षित अंदरूनी या अनुमत बाहरी पकाने की जगह चुनें।",
+              "why": "पंचांग और अग्नि-सुरक्षा दोनों निश्चित होने चाहिए।",
+              "source_ids": [
+                "drik-chennai-pongal-2027",
+                "fssai-food-safety-at-home"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "पकाने/पूजा की जगह साफ करें। ज्ञात पारिवारिक कोलम बनाएँ या छोटा खड़िया/कागज चित्र; किसी एक आकृति को अनिवार्य न कहें।",
+              "why": "कोलम दर्ज है, रूप और सामग्री बदलते हैं।",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "incredible-india-colours-pongal"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "हाथ धोएँ, सुरक्षित पानी-सामग्री लें, दूध/मेवा एलर्जी बताएँ और अपाश्चुरीकृत दूध उबालें।",
+              "why": "पोंगल भोजन है और सामान्य खाद्य-सुरक्षा आवश्यक है।",
+              "source_ids": [
+                "fssai-food-safety-at-home",
+                "fssai-milk-allergen-guidance-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "संभालने योग्य मात्रा पकाएँ। परिवार में उफान का रिवाज हो तो बड़ा स्थिर पात्र, नियंत्रित आँच और वयस्क निगरानी रखें; अन्यथा उफान रोककर उसके प्रचुरता-प्रतीक को कहें।",
+              "why": "उफान का अर्थ दर्ज है, जलने, गिरने या अपव्यय की अनुमति नहीं।",
+              "source_ids": [
+                "incredible-india-pongal-coimbatore",
+                "incredible-india-colours-pongal",
+                "fssai-food-safety-at-home"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "परिवार में ज्ञात हो तो उचित समय 'पोंगलो पोंगल' कहें; अन्यथा सरल कृतज्ञता व्यक्त करें। शब्द या जप-संख्या न गढ़ें।",
+              "why": "उद्घोष दर्ज है, पर थोपा नहीं जाता।",
+              "source_ids": [
+                "incredible-india-colours-pongal"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "छोटा सुरक्षित भाग परिवार की स्थापित सूर्य-प्रतिमा के आगे या स्वच्छ निश्चित स्थान पर रखें; अर्पण-विधि न पता हो तो बिना सामग्री मौन धन्यवाद दें।",
+              "why": "सूर्य को शक्करै पोंगल अर्पण दर्ज है, पर गृह-अधिकार और सुलभ विकल्प बचते हैं।",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "incredible-india-pongal-coimbatore"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "अपनी भाषा या पारिवारिक प्रार्थना में सूर्य, प्रकृति, किसान, कृषि-कर्मी और पशुओं को धन्यवाद दें।",
+              "why": "यह पर्व के कृषि-अर्थ को बनाए रखता है।",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "tn-cooperation-pongal-sequence-2024"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 8,
+              "instruction": "एलर्जी और आहार-सीमा जाँचकर भोजन परोसें; बचा भोजन शीघ्र ठंडा करके सुरक्षित रखें।",
+              "why": "वितरण दूध, मेवा, शर्करा या भंडारण-सुरक्षा से ऊपर नहीं।",
+              "source_ids": [
+                "fssai-food-safety-at-home",
+                "fssai-milk-allergen-guidance-2019"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "धन्यवाद दें, आँच/लौ बंद करें, जगह साफ करें, खाद्य उपयोग में रखें और अनिवार्य पौध-कचरा कानूनसम्मत ढंग से कंपोस्ट/निस्तारित करें।",
+            "source_ids": [
+              "fssai-food-safety-at-home",
+              "tnpcb-bhogi-air-pollution"
+            ],
+            "scope_note": "गृह भोजन-कृतज्ञता समापन; मंदिर-विसर्जन नहीं।"
+          },
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "incredible-india-pongal-coimbatore",
+            "drik-chennai-pongal-2027",
+            "fssai-food-safety-at-home"
+          ]
+        },
+        {
+          "procedure_id": "thai-pongal-hi-elaborate-v1",
+          "label": "चार-दिवसीय परिवार और सामान्य सामुदायिक सहभागिता",
+          "tier": "elaborate",
+          "setting": "community_participation",
+          "authority_scope": "नामित क्रम में सामान्य सहभागिता। मंदिर-विधान, पशु-संभाल, कृषि-कर्म और नियंत्रित आयोजन योग्य परिवार, संस्था, पशु-चिकित्सा और नागरिक अधिकारियों के अधीन हैं।",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "वर्तमान चार-दिवसीय परिवार या स्थल-योजना",
+              "required": true,
+              "substitutions": [
+                "केवल थाई पोंगल गृह-विधि"
+              ],
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "drik-chennai-pongal-2027"
+              ]
+            },
+            {
+              "item": "पुनःउपयोग, दान और कचरा-छँटाई पात्र",
+              "required": false,
+              "substitutions": [
+                "नगरपालिका संग्रह योजना"
+              ],
+              "source_ids": [
+                "tnpcb-bhogi-air-pollution"
+              ]
+            },
+            {
+              "item": "सुरक्षित पका पोंगल या मेजबान-अनुमत योगदान",
+              "required": false,
+              "substitutions": [
+                "कोई खाद्य योगदान नहीं"
+              ],
+              "source_ids": [
+                "fssai-food-safety-at-home"
+              ]
+            },
+            {
+              "item": "पशु-संपर्क योजना",
+              "required": false,
+              "substitutions": [
+                "सुरक्षित दूरी से देखना",
+                "बिना पशु-संपर्क किसान को धन्यवाद"
+              ],
+              "source_ids": [
+                "india-code-pca-act-1960"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "भोगी से पहले अनुपयोगी वस्तुएँ मरम्मत, पुनःउपयोग, दान, रीसाइक्लिंग या वैध संग्रह के लिए छाँटें। टायर, ट्यूब, प्लास्टिक, कपड़ा, ई-कचरा, रंगा लकड़ी या मिला कचरा न जलाएँ।",
+              "why": "तमिलनाडु प्रदूषण मार्गदर्शन कचरा-दहन को हानिकारक बताता है।",
+              "source_ids": [
+                "tnpcb-bhogi-air-pollution"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "थाई पोंगल पर मानक गृह-विधि या वर्तमान सार्वजनिक/मंदिर कार्यक्रम अपनाएँ। प्रवेश, आग, भोजन और सुगमता-नियम सीधे जाँचें।",
+              "why": "पंचांग तिथि जीवित स्थल कार्यक्रम नहीं देती।",
+              "source_ids": [
+                "drik-chennai-pongal-2027",
+                "tn-raj-bhavan-pongal-2019"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "मट्टू पोंगल पर पशुओं और उनकी देखभाल करने वालों को धन्यवाद दें, पर अपरिचित पशु के पास न जाएँ। केवल नियमित योग्य पालक तय करे कि पशु सफाई, भोजन या सजावट सहज स्वीकार करता है।",
+              "why": "दिन कृषि-पशुओं का सम्मान करता है; कानून कल्याण और अनावश्यक पीड़ा से रक्षा माँगता है।",
+              "source_ids": [
+                "tn-cooperation-pongal-sequence-2024",
+                "tn-raj-bhavan-pongal-2019",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "इस मार्गदर्शिका से सींग/त्वचा न रंगें, जबरन न खिलाएँ, बाँधें, डराएँ, भीड़ करें, सवारी करें या पशु न ले जाएँ। जल्लीकट्टू या अन्य पशु-आयोजन को स्वयं-करें पूजा न मानें।",
+              "why": "यह पैक पशु की सहजता, स्वास्थ्य, कानून या आयोजन-सुरक्षा निश्चित नहीं कर सकता।",
+              "source_ids": [
+                "india-code-pca-act-1960",
+                "drik-chennai-mattu-pongal-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "कानुम पोंगल पर पारिवारिक रिवाज, सहमति, स्वास्थ्य और यात्रा-सुरक्षा के अनुसार रिश्तेदार/मित्र से मिलें या संपर्क करें; शांत फोन भी मान्य विकल्प है।",
+              "why": "जीवित विवरण इस दिन को रिश्तों, मित्रता और सद्भाव से जोड़ता है।",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "drik-chennai-kaanum-pongal-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "हर सार्वजनिक आयोजन में केवल सार्वजनिक सहभागिता क्षेत्र लें, आयोजकों को मानें और कचरा वापस ले जाएँ। मंदिर, खेत या पशु-विधि स्वयं न बनाएँ।",
+              "why": "संस्था और पालक का अधिकार सुरक्षित रहता है।",
+              "source_ids": [
+                "tn-raj-bhavan-pongal-2019",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "चौथे दिन परिवार, समुदाय, किसान, प्रकृति और पशुओं को धन्यवाद देकर समाप्त करें; उधार वस्तु लौटाएँ, भोजन सुरक्षित रखें और वैध कचरा-निस्तारण पूरा करें।",
+            "source_ids": [
+              "tn-cooperation-pongal-sequence-2024",
+              "tn-raj-bhavan-pongal-2019",
+              "fssai-food-safety-at-home"
+            ],
+            "scope_note": "सामान्य चार-दिवसीय समापन; क्षेत्रीय परिवार अलग कर सकते हैं।"
+          },
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tn-raj-bhavan-pongal-2019",
+            "tnpcb-bhogi-air-pollution",
+            "india-code-pca-act-1960"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "apartment-or-urban-household",
+          "scope": "तमिल शहरी या अपार्टमेंट परिवार",
+          "difference": "अंदरूनी चूल्हा, कागज/खड़िया कोलम, वैध कचरा-छँटाई और बिना संपर्क पशु-कृतज्ञता लें। बाहरी आग और पशु-पहुँच आवश्यक नहीं।",
+          "source_ids": [
+            "tnpcb-bhogi-air-pollution",
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "sweet-or-savoury-pongal",
+          "scope": "पारिवारिक खाद्य रूप",
+          "difference": "शक्करै पोंगल दर्ज है; सामग्री और नमकीन रूप बदलते हैं। केवल भोजन-चयन से अलग पूजा-मार्ग नहीं बनता।",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "tn-cooperation-pongal-sequence-2024",
+            "fssai-milk-allergen-guidance-2019"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "farming-household-mattu",
+          "scope": "पशु वाले तमिल कृषक परिवार",
+          "difference": "नियमित योग्य पालक की स्थापित पशु-कल्याण-संगत मट्टू पोंगल विधि हो सकती है। यह पैक कृतज्ञता और सुरक्षा देता है, पशु-संभाल निर्देश नहीं।",
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "temple-or-public-pongal",
+          "scope": "संस्थागत/सामुदायिक कार्यक्रम",
+          "difference": "सार्वजनिक पकाना, पूजा और सांस्कृतिक कार्यक्रम वर्तमान आयोजक नियम मानते हैं; सामान्य सहभागिता इसी मार्ग में, विधान की नकल नहीं।",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "andhra-telangana-sankranti-sequence",
+          "scope": "आंध्र प्रदेश/तेलंगाना भोगी-पेद्दा पंडुगा-कनुमा-मुक्कनुमा",
+          "difference": "नामित दिन-क्रम और जीवित प्रथा में बड़ा अंतर है; अलग स्रोतित प्रयोज्यता मार्ग चाहिए।",
+          "source_ids": [
+            "drik-chennai-bhogi-2027"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "jallikattu-or-regulated-animal-event",
+          "scope": "नियंत्रित पशु-आयोजन संदर्भ",
+          "difference": "यह गृह-पूजा रूप नहीं। कानूनी, पशु-चिकित्सा, सहभागी और दर्शक नियमों वाला अलग सुरक्षा-शासित उत्तर चाहिए।",
+          "source_ids": [
+            "drik-chennai-mattu-pongal-2027",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "family-specific-kolam-prayer-and-offering",
+          "scope": "तमिल क्षेत्रीय, जाति, समुदाय या संप्रदाय पारिवारिक रूप",
+          "difference": "ज्ञात विरासत-क्रम शब्द, क्रम और सामग्री बदल सकता है और इस सामान्य मार्ग को प्रतिस्थापित करता है; देवम् उसे सार्वभौमिक नहीं बनाता।",
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "daily_sequence": [
+        {
+          "ordinal": 1,
+          "common_name": "भोगी",
+          "reflection": "जिम्मेदारी से नवीकरण करें: मरम्मत, पुनःउपयोग, दान, रीसाइक्लिंग और सफाई; हानिकारक कचरा न जलाएँ।",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "tnpcb-bhogi-air-pollution"
+          ],
+          "calendar_note": "चेन्नई 2027 संदर्भ: गुरुवार 14 जनवरी; स्थानीय तमिल पंचांग ही निर्णायक है।"
+        },
+        {
+          "ordinal": 2,
+          "common_name": "थाई पोंगल / सूर्य पोंगल",
+          "reflection": "पोंगल सुरक्षित पकाएँ/बाँटें और सूर्य, प्रकृति, किसान तथा भोजन-सहायक सभी को धन्यवाद दें।",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "incredible-india-pongal-coimbatore",
+            "drik-chennai-pongal-2027"
+          ],
+          "calendar_note": "चेन्नई 2027 संदर्भ: शुक्रवार 15 जनवरी; उद्धृत दिन-काल 06:35-18:02।"
+        },
+        {
+          "ordinal": 3,
+          "common_name": "मट्टू पोंगल",
+          "reflection": "कृषि-पशुओं और पालकों को भय, बंधन या पीड़ा दिए बिना धन्यवाद दें।",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-cooperation-pongal-sequence-2024",
+            "india-code-pca-act-1960",
+            "drik-chennai-mattu-pongal-2027"
+          ],
+          "calendar_note": "चेन्नई 2027 संदर्भ: शनिवार 16 जनवरी।"
+        },
+        {
+          "ordinal": 4,
+          "common_name": "कानुम पोंगल",
+          "reflection": "सहमति और सुरक्षा के साथ मिलकर या संपर्क करके परिवार/समुदाय संबंध नया करें।",
+          "ritual_requirement": false,
+          "source_ids": [
+            "tn-raj-bhavan-pongal-2019",
+            "drik-chennai-kaanum-pongal-2027"
+          ],
+          "calendar_note": "चेन्नई 2027 संदर्भ: रविवार 17 जनवरी।"
+        }
+      ],
+      "safety_and_boundaries": [
+        "भोगी पर टायर, ट्यूब, प्लास्टिक, कपड़ा, ई-कचरा, रंगी सामग्री या मिला कचरा न जलाएँ। वर्तमान आग, वायु-गुणवत्ता, कचरा और आवास नियम मानें; छँटाई, मरम्मत, दान और वैध संग्रह मान्य हैं।",
+        "गर्म दूध, चावल और गुड़ झाग बनाकर गंभीर जलन दे सकते हैं। बड़ा स्थिर पात्र, नियंत्रित आँच, उपस्थित वयस्क, सूखे हैंडल और बच्चों से खाली क्षेत्र रखें; बिना उफान प्रतीक मान्य है।",
+        "सुरक्षित पानी लें, अपाश्चुरीकृत दूध उबालें, हाथ/बर्तन धोएँ, कच्चे-पके संपर्क से बचें, शीघ्र खाएँ और बचा भोजन ठंडा रखें। बहुत गर्म भोजन असुरक्षित प्लास्टिक में न भरें।",
+        "दूध और मेवे एलर्जेन हैं; शर्करा कुछ लोगों के लिए अनुपयुक्त है। सामग्री बताएँ, क्रॉस-कॉन्टैक्ट रोकें, चिकित्सकीय उपयुक्त विकल्प दें और प्रसाद खाने का दबाव न डालें।",
+        "सूर्य को सीधे न देखें। बाहरी पकाना, आग, धुआँ और छत गतिविधि वैकल्पिक हैं और मौसम, वायु-गुणवत्ता, आवास तथा अग्नि-नियम मानते हैं।",
+        "अपरिचित पशु के पास न जाएँ, खिलाएँ, छुएँ, रंगें, बाँधें, सवारी करें या सजाएँ। योग्य नियमित पालक और पशु-कल्याण संपर्क तय करें; दूरी से धन्यवाद इस मार्ग में पूर्ण है।",
+        "जल्लीकट्टू और अन्य नियंत्रित पशु-आयोजन स्वयं-करें पूजा-चरण नहीं। वर्तमान कानून और आधिकारिक दर्शक-सलाह जाँचें; आयोजन से दूर रहना सदैव मान्य है।",
+        "मंदिर, समुदाय, खेत और सार्वजनिक कार्यक्रम जीवित तथ्य हैं। प्रवेश, सुगमता, भोजन, आग, पशु और भीड़-नियम सीधे जाँचें।",
+        "उफान, अर्पण, पशु-संपर्क, यात्रा या भोजन से समृद्धि की गारंटी नहीं। पारिवारिक परिस्थिति और अहिंसक विकल्प पहले हैं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

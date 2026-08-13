@@ -11,6 +11,9 @@ PACK = LANE / "packs" / "mahashivaratri-north-west-smarta-household-2027-v1.json
 MAKAR_PACK = (
     LANE / "packs" / "makar-sankranti-north-west-household-2027-v1.json"
 )
+PONGAL_PACK = (
+    LANE / "packs" / "thai-pongal-tamil-household-participant-2027-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -717,11 +720,122 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 1
-    assert progress["remaining_authoring_items"] == 207
+    assert progress["completed_after_freeze"] == 2
+    assert progress["remaining_authoring_items"] == 206
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
-        "makar-sankranti-north-west-household-2027-v1"
+        "makar-sankranti-north-west-household-2027-v1",
+        "thai-pongal-tamil-household-participant-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
+
+
+def test_thai_pongal_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(PONGAL_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["observance_slugs"] == [
+        "bhogi-tamil",
+        "thai-pongal",
+        "mattu-pongal",
+        "kaanum-pongal",
+    ]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 12
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_thai_pongal_is_bilingual_four_day_and_actionable():
+    pack = load(PONGAL_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert [day["ordinal"] for day in entry["daily_sequence"]] == [1, 2, 3, 4]
+        assert len(entry["origin_narratives"]) >= 3
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+
+def test_thai_pongal_preserves_only_material_variants_as_separate():
+    for entry in load(PONGAL_PACK)["localized_content"]:
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        for variant_id in (
+            "apartment-or-urban-household",
+            "sweet-or-savoury-pongal",
+            "farming-household-mattu",
+            "temple-or-public-pongal",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "andhra-telangana-sankranti-sequence",
+            "jallikattu-or-regulated-animal-event",
+            "family-specific-kolam-prayer-and-offering",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+
+def test_thai_pongal_adversarial_safety_and_calendar_boundaries():
+    pack = load(PONGAL_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    for date in ("14 January", "15 January", "16 January", "17 January"):
+        assert date in calendar["freshness_note"]
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "tyres",
+        "severe burns",
+        "unpasteurised milk",
+        "allergens",
+        "directly at the sun",
+        "unfamiliar cattle",
+        "jallikattu",
+        "live facts",
+        "is not promised",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "टायर",
+        "गंभीर जलन",
+        "अपाश्चुरीकृत दूध",
+        "एलर्जेन",
+        "सूर्य को सीधे",
+        "अपरिचित पशु",
+        "जल्लीकट्टू",
+        "जीवित तथ्य",
+        "गारंटी नहीं",
+    ):
+        assert term in localized["hi"]
+
+    raw = PONGAL_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "थाई पोंगल".encode("utf-8") in raw
+    assert PONGAL_PACK.stat().st_size < 100_000

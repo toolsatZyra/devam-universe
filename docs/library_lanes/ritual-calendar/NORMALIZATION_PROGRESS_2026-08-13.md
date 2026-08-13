@@ -80,3 +80,14 @@ and priest-led shraddha remain separate applicability work.
 Exact accepted-authoring coverage is now **1 completed after freeze / 207
 remaining / 208 total**. The completed starting layer remains 105. Verified
 day-answer cells remain **0 / 19,480** because authored is not projected.
+
+The second post-freeze item is also complete at the bilingual authored-library
+layer: `thai-pongal-tamil-household-participant-2027-v1`. It preserves Bhogi,
+Thai/Surya Pongal, Mattu Pongal and Kaanum Pongal as one materially distinct
+Tamil four-day sequence. Apartment adaptations and sweet/savoury food choices
+remain within the lane; Andhra/Telangana's named sequence, regulated animal
+events and materially different inherited family forms do not get collapsed
+into it.
+
+Exact accepted-authoring coverage is now **2 completed after freeze / 206
+remaining / 208 total**. Verified day-answer cells remain **0 / 19,480**.
