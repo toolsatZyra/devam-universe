@@ -12,9 +12,9 @@ describe("Ramayana consumer narrative snapshot", () => {
       playableTurns: 49,
       outlinedTurns: 0,
       orientationOnlyTurns: 0,
-      playableScenes: 486,
+      playableScenes: 490,
       draftSceneOutlines: 0,
-      bilingualBeats: 2166,
+      bilingualBeats: 2189,
     });
     expect(snapshot.boundary).toContain("does not claim a complete consumer Ramayana");
   });
@@ -23,7 +23,7 @@ describe("Ramayana consumer narrative snapshot", () => {
     const scenes = snapshot.turns.flatMap((turn) => turn.scenes
       .filter((scene) => scene.readiness === "playable")
       .map((scene) => ({ turn, scene })));
-    expect(new Set(scenes.map(({ scene }) => scene.id)).size).toBe(486);
+    expect(new Set(scenes.map(({ scene }) => scene.id)).size).toBe(490);
     const beatIds = scenes.flatMap(({ scene }) => scene.beats.map((beat) => beat.id));
     expect(new Set(beatIds).size).toBe(beatIds.length);
     for (const { turn, scene } of scenes) {
