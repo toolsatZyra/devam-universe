@@ -1,0 +1,201 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "narali-purnima-maharashtra-coastal-participant-2027-v1",
+  "observance_slugs": ["narali-purnima"],
+  "applicability": {
+    "region_codes": ["IN-MH", "west-india", "konkan-coast", "mumbai-thane-palghar-coast"],
+    "tradition_codes": ["narali-purnima-ordinary-household", "narali-purnima-invited-shore-participant"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "community"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which coastal Maharashtra/Konkan location and accepted Panchang resolve Shravana Purnima?",
+      "Are you a member or invited guest of the Koli/fishing community leading the rite, or seeking an ordinary household gratitude route?",
+      "Who controls shoreline access, coconut handling, prayer, tide, crowd, child supervision, photographs and waste?",
+      "Does any plan involve a boat, harbour, voyage or fishing, requiring current fisheries, port, vessel, crew, IMD and INCOIS clearance?",
+      "Would surf, rain, rocks, crowding, coconut allergy/weight/blades, food, travel, cultural privacy or environmental impact make an alternative safer?"
+    ],
+    "context_pairs": [
+      {"region_code": "IN-MH", "tradition_code": "narali-purnima-ordinary-household", "observance_slug": "narali-purnima"},
+      {"region_code": "konkan-coast", "tradition_code": "narali-purnima-invited-shore-participant", "observance_slug": "narali-purnima"},
+      {"region_code": "mumbai-thane-palghar-coast", "tradition_code": "narali-purnima-invited-shore-participant", "observance_slug": "narali-purnima"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "narali-purnima", "language_code": "en", "note": "Coastal Maharashtra ordinary household and invited shore-participant lane, explicitly grounded in Koli/Hindu fishing-community living practice. Community prayer, sea offering, boats and fishing operations are not generalized."},
+      {"observance_slug": "narali-purnima", "language_code": "hi", "note": "यह तटीय महाराष्ट्र का सामान्य परिवार और आमंत्रित तट-सहभागी मार्ग है, जिसका स्रोत कोली/हिंदू मछुआरा समुदाय की जीवित प्रथा है। समुदाय की प्रार्थना, समुद्र-अर्पण, नाव और मत्स्य संचालन सार्वभौम नहीं किए गए।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-mumbai-purnima-boundary-2027", "drik-marathi-narali-2027"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "narali-purnima-local-shravana-purnima-v1",
+    "closing_decision_rule_id": "narali-purnima-shore-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Mumbai 2027 discovery fixture: Tuesday 17 August, with local Purnima ending 12:58. A foreign Marathi-calendar result displayed Monday 16 August and is not portable. Recompute for the user's city. Tide, shoreline, community programme, harbour, voyage, fishing and sea-state decisions always require live authorities."
+  },
+  "sources": [
+    {"source_id": "akashvani-narali-2025", "title": "Fishermen community in Mumbai, Thane and Palghar celebrate Narali Purnima", "publisher": "Akashvani News", "source_role": "current public living account of Koli community provenance, coconut sea offering, prayer, Koliwada decoration, clothing and dance", "rights_lane": "citation_only", "url": "https://newsonair.gov.in/fshermen-community-in-mumbai-thane-palghar-celebrate-narali-purnima/", "artifact_sha256": null, "citation_coordinates": {"published": "2025-08-08", "checked": "2026-08-13"}},
+    {"source_id": "utsav-narali-mumbai", "title": "Narali Purnima", "publisher": "Utsav, Ministry of Tourism", "source_role": "current public account of Maharashtra/Konkan fishing-community observance, Varuna prayer, coconut food, boat preparation and ceremonial trip; not a universal or operational instruction", "rights_lane": "citation_only", "url": "https://utsav.gov.in/view-event/narali-purnima-2", "artifact_sha256": null, "citation_coordinates": {"event_year": 2024, "checked": "2026-08-13"}},
+    {"source_id": "nfdb-fishing-festivals", "title": "Fishing Festivals of India: Narali Purnima", "publisher": "National Fisheries Development Board", "source_role": "official fisheries-sector description of Shravana Purnima, Maharashtra Hindu fishing communities, coconut offering and fishing-season association; not live clearance", "rights_lane": "citation_only", "url": "https://nfdb.gov.in/PDF/FFIN.pdf", "artifact_sha256": null, "citation_coordinates": {"section": "2.7", "page": 6}},
+    {"source_id": "drik-marathi-narali-2027", "title": "2027 Marathi calendar occurrence for Narali Purnima", "publisher": "DrikPanchang", "source_role": "practitioner occurrence evidence; foreign date result is retained only to prove location sensitivity and is not copied to Mumbai", "rights_lane": "citation_only", "url": "https://www.drikpanchang.com/marathi/calendar/marathi-calendar.html?year=2027", "artifact_sha256": null, "citation_coordinates": {"displayed_foreign_date": "2027-08-16", "warning": "not Mumbai"}},
+    {"source_id": "drik-mumbai-purnima-boundary-2027", "title": "2027 Mumbai Krishna Pratipada and preceding Purnima boundary", "publisher": "DrikPanchang", "source_role": "Mumbai-local practitioner evidence that Shravana Purnima ends 12:58 on 17 August 2027", "rights_lane": "citation_only", "url": "https://www.drikpanchang.com/panchang/tithi/daily/krishna-pratipada-date-time.html?time-format=24hour&year=2027", "artifact_sha256": null, "citation_coordinates": {"location": "Mumbai, India", "purnima_ends": "2027-08-17T12:58+05:30"}},
+    {"source_id": "imd-mumbai-marine", "title": "RMC Mumbai marine services and fishermen warnings", "publisher": "India Meteorological Department", "source_role": "live official coastal weather, fishermen, port and sea-area warning route", "rights_lane": "citation_only", "url": "https://mausam.imd.gov.in/mumbai/?lang=en", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "incois-svas", "title": "Small Vessel Advisory and Forecast Services", "publisher": "Indian National Centre for Ocean Information Services", "source_role": "official boat-specific coastal overturning-risk forecast boundary", "rights_lane": "citation_only", "url": "https://www.incois.gov.in/site/services/SVA_overview.jsp", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13", "coverage": "Maharashtra small vessels"}},
+    {"source_id": "incois-osf", "title": "Ocean State Forecast", "publisher": "Indian National Centre for Ocean Information Services", "source_role": "official live wind, wave, current and coastal sea-state forecast route", "rights_lane": "citation_only", "url": "https://incois.gov.in/oceanservices/osfforecast.jsp", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "maharashtra-fisheries-faq", "title": "Maharashtra Fisheries Department FAQ", "publisher": "Department of Fisheries, Government of Maharashtra", "source_role": "official evidence that mechanized fishing ban dates and training are regulatory/operational matters, not festival permissions", "rights_lane": "citation_only", "url": "https://fisheries.maharashtra.gov.in/%E0%A4%B8%E0%A4%A4%E0%A4%A4-%E0%A4%B5%E0%A4%BF%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A4%B2%E0%A5%87-%E0%A4%9C%E0%A4%BE%E0%A4%A3%E0%A4%BE%E0%A4%B0%E0%A5%87-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A5%8D/", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13", "faq": 11}},
+    {"source_id": "fssai-home", "title": "Food Safety at Home", "publisher": "Food Safety and Standards Authority of India", "source_role": "coconut food preparation and storage safety", "rights_lane": "citation_only", "url": "https://www.fssai.gov.in/flipbook.php?bookid=31", "artifact_sha256": null, "citation_coordinates": {"rules": [1,2,3,4,8]}},
+    {"source_id": "fssai-allergens", "title": "Declared food allergens", "publisher": "Food Safety and Standards Authority of India", "source_role": "allergen checks for coconut foods", "rights_lane": "citation_only", "url": "https://fssai.gov.in/faqs/?cat=13", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}}
+  ],
+  "localized_content": [
+    {
+      "language_code": "en", "observance_slugs": ["narali-purnima"],
+      "title": "Narali Purnima: Maharashtra coastal household and shore-participant guide",
+      "short_answer": "For Mumbai in 2027, resolve Tuesday 17 August locally; do not copy a foreign 16 August result. A complete safe form is to hear the source-labelled Koli community accounts, place a coconut or coconut-free symbol on a dry stable surface, offer familiar gratitude for sea, rain and fishing labour, take one practical coastal/community-support action, and retain, cook or share the coconut. No water entry, throwing, Varuna mantra, boat, voyage, fishing, fast or safety guarantee is required.",
+      "significance": {"text": "Narali Purnima is a Shravana Purnima coastal observance especially associated with Koli and other Hindu fishing communities of Maharashtra and the Konkan. Current public sources describe coconut offering, prayer to Varuna/the sea, preparation of boats and nets, coconut food, dance and the seasonal hope of returning to fishing. Devam honours that livelihood and cultural provenance without turning a community rite into a national household ritual or a scientific sea-safety decision.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "nfdb-fishing-festivals"], "scope_note": "Ordinary household and invited shore participation only; no community prayer leadership, vessel or fishing authority."},
+      "origin_narratives": [
+        {"narrative_id": "koliwadas-2025-living-account", "title": "Koliwadas mark Narali Purnima in 2025", "summary": "Akashvani reported Koli communities in Mumbai, Thane and Palghar decorating Koliwadas, offering coconuts to the sea, praying for calm/protection and dancing in traditional clothing. This is a dated living account, not an origin myth or a promise that ritual controls natural hazards.", "tradition_scope": "Koli community living practice reported by Akashvani, 2025", "source_ids": ["akashvani-narali-2025"], "universal_origin_claimed": false},
+        {"narrative_id": "preparing-boats-and-community-day", "title": "Preparation, food, song and a ceremonial trip", "summary": "The Ministry of Tourism account describes fishing communities repairing nets, painting and decorating boats, making coconut rice, praying, singing and dancing, and making a short ceremonial trip. Devam preserves this as community description; an ordinary user is not instructed to board, launch, repair or operate a vessel.", "tradition_scope": "Current Maharashtra/Ministry of Tourism living account", "source_ids": ["utsav-narali-mumbai"], "universal_origin_claimed": false},
+        {"narrative_id": "livelihood-season-association", "title": "A fishing-season threshold in public memory", "summary": "NFDB describes Narali Purnima as marking the close of a monsoon non-fishing period in community practice and a hoped-for safe return to work. Government bans, vessel fitness, crew status and live forecasts—not the festival alone—control any real fishing decision.", "tradition_scope": "Official fisheries-sector festival description, bounded by current regulation", "source_ids": ["nfdb-fishing-festivals", "maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-osf"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "community-varuna-sea-offering", "population_scope": "Koli and other Hindu fishing communities in coastal Maharashtra/Konkan", "description": "Community members may lead prayer to Varuna/the sea and a managed coconut offering. Exact words, leaders, tide, handling and access belong to the community/local authority.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "nfdb-fishing-festivals"], "instructional": false},
+        {"practice_id": "boats-nets-dance-and-food", "population_scope": "Some fishing settlements and invited participants", "description": "Boats/nets may be repaired or decorated, groups dance and sing, and coconut dishes are shared. Vessel work and performance are skilled/community activities; coconut style and dress are within-lane materials.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "instructional": false},
+        {"practice_id": "ordinary-coastal-gratitude", "population_scope": "Some coastal households and invited non-community participants", "description": "An ordinary participant may express gratitude for sea and fishing labour, support coastal livelihoods and use a retained coconut or symbolic object without entering or littering the water.", "source_ids": ["akashvani-narali-2025", "nfdb-fishing-festivals", "incois-osf"], "instructional": false}
+      ],
+      "procedures": [
+        {"procedure_id": "narali-en-home-v1", "label": "20-minute dry household gratitude form", "tier": "minimum", "setting": "household", "authority_scope": "Ordinary participant reflection; no community prayer, sea offering, vessel or fishing operation is invented.", "form": "accessible_short", "estimated_minutes": 20,
+          "materials": [
+            {"item": "Whole coconut or coconut-free sea/livelihood symbol", "required": false, "substitutions": ["Coconut image", "Shell already owned", "Bowl of clean water kept indoors", "No object"], "source_ids": ["akashvani-narali-2025", "nfdb-fishing-festivals"]},
+            {"item": "Safe coconut food or other suitable food", "required": false, "substitutions": ["Allergen-safe fruit", "No food"], "source_ids": ["utsav-narali-mumbai", "fssai-home", "fssai-allergens"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve local Shravana Purnima. For Mumbai use 17 August 2027 as the discovery fixture and reject the foreign 16 August clock/date result.", "why": "Tithi selection is location-aware.", "source_ids": ["drik-mumbai-purnima-boundary-2027", "drik-marathi-narali-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Hear the three labelled living accounts and name the Koli/fishing-community provenance. Do not present this as an invented household origin story.", "why": "Cultural ownership and evidence remain visible.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "nfdb-fishing-festivals"], "optional": false},
+            {"ordinal": 3, "instruction": "Place the coconut or substitute on a stable dry surface. Say familiar words of gratitude for sea, rain, boats, fishers and all coastal labour; do not invent a Varuna mantra.", "why": "Gratitude is accessible without claiming ritual authority.", "source_ids": ["akashvani-narali-2025"], "optional": false},
+            {"ordinal": 4, "instruction": "Take one practical action: buy fairly from a known fisher/vendor, learn a current safety alert, reduce marine plastic, support an authorized community effort, or thank someone whose labour sustains the coast.", "why": "Livelihood respect becomes concrete without promising catch or protection.", "source_ids": ["nfdb-fishing-festivals", "incois-osf"], "optional": false},
+            {"ordinal": 5, "instruction": "Retain, cook or share the coconut safely, or put away the substitute. Do not throw anything into sea, river or drain from this ordinary route.", "why": "Devotion does not require marine litter or impact injury.", "source_ids": ["fssai-home", "incois-osf"], "optional": false}
+          ],
+          "closing": {"text": "Close with thanks and one reminder: prayer may express hope, but current forecasts, regulation and trained decisions govern sea work.", "source_ids": ["imd-mumbai-marine", "incois-osf", "maharashtra-fisheries-faq"]},
+          "source_ids": ["akashvani-narali-2025", "nfdb-fishing-festivals", "drik-mumbai-purnima-boundary-2027", "incois-osf"]
+        },
+        {"procedure_id": "narali-en-shore-v1", "label": "Invited community shoreline participation", "tier": "standard", "setting": "community_participation", "authority_scope": "Guest actions only under a named community/local organizer; no independent offering, water entry or prayer leadership.", "form": "institutional_participation", "estimated_minutes": null,
+          "materials": [{"item": "Organizer's current meeting and safety information", "required": true, "substitutions": ["Observe from a legal dry public area", "Official community stream", "Household form"], "source_ids": ["akashvani-narali-2025", "imd-mumbai-marine", "incois-osf"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm the named community organizer, legal access, exact time/place, tide plan, barriers, child supervision, coconut handling, photography and waste rules.", "why": "A calendar date does not establish safe access or guest permission.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "optional": false},
+            {"ordinal": 2, "instruction": "On the day check IMD fishermen/coastal warnings, INCOIS Ocean State/Small Vessel advisories and local instructions. Cancel or stay home whenever authorities or conditions advise.", "why": "Sea hazards override the programme.", "source_ids": ["imd-mumbai-marine", "incois-svas", "incois-osf"], "optional": false},
+            {"ordinal": 3, "instruction": "Remain on the designated dry side of barriers and under direct child supervision. Never enter surf, rocks, jetty or breakwater, and never turn your back on waves.", "why": "An offering is not a reason to accept drowning or impact risk.", "source_ids": ["imd-mumbai-marine", "incois-osf"], "optional": false},
+            {"ordinal": 4, "instruction": "Follow only guest actions offered by leaders. Do not independently throw a coconut, repeat private prayer, touch boats/nets, record people or costume Koli identity.", "why": "Physical safety and cultural consent are both required.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "optional": false},
+            {"ordinal": 5, "instruction": "Pay fairly for food/craft/performance, check allergens, remove your waste and leave when directed. Do not board any vessel under this procedure.", "why": "Guest participation ends before maritime operation.", "source_ids": ["fssai-allergens", "incois-svas"], "optional": false}
+          ],
+          "closing": {"text": "Thank the hosts without claiming their rite. Record or post only with specific consent, and keep working-harbour locations/private prayer private when requested.", "source_ids": ["akashvani-narali-2025"]},
+          "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "imd-mumbai-marine", "incois-osf"]
+        },
+        {"procedure_id": "narali-en-maritime-boundary-v1", "label": "Boat or fishing request: stop and route to operations", "tier": "elaborate", "setting": "individual", "authority_scope": "Routing guidance only; this pack never authorizes boarding, launch, voyage or fishing.", "form": "institutional_participation", "estimated_minutes": 5,
+          "materials": [{"item": "Current official operational clearance set", "required": true, "substitutions": ["Remain ashore", "Join household gratitude form"], "source_ids": ["maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-svas", "incois-osf"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Stop using ritual guidance if the plan includes boarding, launching, a ceremonial trip or fishing.", "why": "Those are maritime operations, not household ritual actions.", "source_ids": ["incois-svas"], "optional": false},
+            {"ordinal": 2, "instruction": "Route to the vessel owner/master, trained crew, harbour/port, current Fisheries order, vessel/legal/insurance/passenger requirements, IMD and INCOIS advisories.", "why": "Multiple live authorities control safe operation.", "source_ids": ["maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-svas", "incois-osf"], "optional": false},
+            {"ordinal": 3, "instruction": "If any authority, warning, vessel, crew or passenger condition is unresolved, remain ashore. Festival timing supplies no clearance and no exception.", "why": "Uncertainty at sea is a stop condition.", "source_ids": ["imd-mumbai-marine", "incois-svas", "incois-osf"], "optional": false}
+          ],
+          "closing": {"text": "Complete the day ashore through gratitude and community support. No voyage or catch is required for observance.", "source_ids": ["nfdb-fishing-festivals"]},
+          "source_ids": ["maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-svas", "incois-osf"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-food-dress-and-symbol", "scope": "Coastal Maharashtra/Konkan ordinary households", "difference": "Marathi/Konkani/Hindi/English, coconut dish, clothing, dance and retained coconut/picture/no object remain within the lane.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "separate_lane_required": false},
+        {"variant_id": "koli-community-varuna-sea-offering", "scope": "Koli/fishing-community managed rite", "difference": "Leaders, words, cultural ownership, tide, shoreline and offering handling require community authority.", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "separate_lane_required": true},
+        {"variant_id": "boat-puja-procession-or-trip", "scope": "Vessel-based community programme", "difference": "Vessel, crew, passengers, harbour, navigation, weather and insurance materially change.", "source_ids": ["utsav-narali-mumbai", "incois-svas"], "separate_lane_required": true},
+        {"variant_id": "commercial-fishing-resumption", "scope": "Occupational fishing operation", "difference": "Current ban/order, licence, vessel, crew, PFZ/OSF and warnings—not ritual—control.", "source_ids": ["maharashtra-fisheries-faq", "incois-osf", "imd-mumbai-marine"], "separate_lane_required": true},
+        {"variant_id": "inland-water-varuna-offering", "scope": "River, lake or reservoir", "difference": "Coastal evidence does not establish inland ecology, access, authority or safe ritual.", "source_ids": ["nfdb-fishing-festivals"], "separate_lane_required": true},
+        {"variant_id": "other-shravana-purnima-observance", "scope": "Raksha Bandhan, Upakarma or another same-day practice", "difference": "Eligibility, story, ritual object and action differ materially.", "source_ids": ["drik-marathi-narali-2027"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "Never enter surf, rocks, breakwater, jetty or floodwater for an offering. Children require direct responsible-adult control behind local barriers.",
+        "Do not independently throw coconuts or objects where they can strike people, vessels or wildlife. Retaining, cooking, sharing or no object is complete.",
+        "A festival calendar is not sea clearance. IMD, INCOIS, Fisheries, harbour, vessel master, trained crew and current conditions control maritime activity.",
+        "Do not imitate, record or commercialize Koli prayer, clothing or identity without permission; do not touch working boats/nets or expose private locations.",
+        "Check coconut allergy, blade/weight risk, food hygiene and storage. Coconut-free participation is complete.",
+        "Prayer expresses hope but guarantees no calm sea, disaster protection, catch, income, safe voyage or legal permission."
+      ]
+    },
+    {
+      "language_code": "hi", "observance_slugs": ["narali-purnima"],
+      "title": "नारळी पूर्णिमा: महाराष्ट्र तटीय परिवार और तट-सहभागी मार्ग",
+      "short_answer": "मुंबई में 2027 के लिए मंगलवार 17 अगस्त स्थानीय रूप से तय करें; विदेशी 16 अगस्त परिणाम न लें। सुरक्षित पूर्ण रूप है—स्रोत-लेबल कोली समुदाय विवरण सुनना, सूखी स्थिर जगह पर नारियल या नारियल-मुक्त संकेत, समुद्र/वर्षा/मछुआरा श्रम के लिए परिचित कृतज्ञता, तट/समुदाय समर्थन का एक काम और नारियल को रखना, पकाना या बाँटना। जल में उतरना/फेंकना, वरुण मंत्र, नाव, यात्रा, मछली पकड़ना, उपवास या सुरक्षा गारंटी आवश्यक नहीं।",
+      "significance": {"text": "नारळी पूर्णिमा श्रावण पूर्णिमा का तटीय पालन है, विशेषतः महाराष्ट्र और कोंकण के कोली तथा अन्य हिंदू मछुआरा समुदायों से जुड़ा। सार्वजनिक स्रोत नारियल अर्पण, वरुण/समुद्र प्रार्थना, नाव-जाल तैयारी, नारियल भोजन, नृत्य और काम पर लौटने की मौसमी आशा बताते हैं। देवम इस आजीविका और सांस्कृतिक स्रोत का सम्मान करता है; इसे राष्ट्रीय घरेलू विधि या वैज्ञानिक समुद्र-सुरक्षा निर्णय नहीं बनाता।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "nfdb-fishing-festivals"], "scope_note": "सामान्य परिवार और आमंत्रित तट सहभाग; समुदाय प्रार्थना, नाव या मत्स्य संचालन अधिकार नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "koliwadas-2025-living-account-hi", "title": "2025 में कोलीवाड़ों का नारळी पूर्णिमा पालन", "summary": "आकाशवाणी ने मुंबई, ठाणे और पालघर के कोली समुदायों द्वारा कोलीवाड़े सजाने, समुद्र को नारियल देने, शांत जल/सुरक्षा प्रार्थना और पारंपरिक वस्त्र में नृत्य की खबर दी। यह दिनांकित जीवित विवरण है, उत्पत्ति-कथा या प्राकृतिक संकट नियंत्रित करने का वादा नहीं।", "tradition_scope": "आकाशवाणी-रिपोर्टित कोली जीवित प्रथा, 2025", "source_ids": ["akashvani-narali-2025"], "universal_origin_claimed": false},
+        {"narrative_id": "preparing-boats-and-community-day-hi", "title": "तैयारी, भोजन, गीत और औपचारिक यात्रा", "summary": "पर्यटन मंत्रालय का विवरण जाल सुधारना, नाव सजाना, नारळी भात, प्रार्थना, गीत-नृत्य और छोटी औपचारिक यात्रा बताता है। यह समुदाय-वर्णन है; सामान्य व्यक्ति को नाव चढ़ने, उतारने, सुधारने या चलाने का निर्देश नहीं।", "tradition_scope": "वर्तमान महाराष्ट्र/पर्यटन मंत्रालय जीवित विवरण", "source_ids": ["utsav-narali-mumbai"], "universal_origin_claimed": false},
+        {"narrative_id": "livelihood-season-association-hi", "title": "लोक-स्मृति में मत्स्य मौसम की देहरी", "summary": "एनएफडीबी इसे समुदाय में मानसून गैर-मछली अवधि के अंत और काम पर सुरक्षित लौटने की आशा से जोड़ता है। वास्तविक निर्णय सरकारी रोक, नाव, दल और जीवित पूर्वानुमान करते हैं—त्योहार अकेला नहीं।", "tradition_scope": "सरकारी मत्स्य-क्षेत्र उत्सव विवरण, वर्तमान नियम से सीमित", "source_ids": ["nfdb-fishing-festivals", "maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-osf"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "community-varuna-sea-offering-hi", "population_scope": "तटीय महाराष्ट्र/कोंकण के कोली और अन्य हिंदू मछुआरा समुदाय", "description": "समुदाय वरुण/समुद्र प्रार्थना और व्यवस्थित नारियल अर्पण कर सकता है। शब्द, नेता, ज्वार, संचालन और पहुँच समुदाय/स्थानीय अधिकार में।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "nfdb-fishing-festivals"], "instructional": false},
+        {"practice_id": "boats-nets-dance-and-food-hi", "population_scope": "कुछ मछुआरा बस्तियाँ और आमंत्रित सहभागी", "description": "नाव/जाल सुधार या सजाए, गीत-नृत्य और नारियल भोजन हो सकते हैं। नाव-काम/प्रदर्शन कौशल/समुदाय गतिविधि; भोजन-वस्त्र सामग्री विविधता।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "instructional": false},
+        {"practice_id": "ordinary-coastal-gratitude-hi", "population_scope": "कुछ तटीय परिवार और आमंत्रित गैर-समुदाय सहभागी", "description": "सामान्य सहभागी समुद्र/मछुआरा श्रम के लिए कृतज्ञता, आजीविका समर्थन और जल में उतरे/कचरा डाले बिना रखा नारियल या संकेत ले सकता है।", "source_ids": ["akashvani-narali-2025", "nfdb-fishing-festivals", "incois-osf"], "instructional": false}
+      ],
+      "procedures": [
+        {"procedure_id": "narali-hi-home-v1", "label": "20 मिनट का सूखा घरेलू कृतज्ञता रूप", "tier": "minimum", "setting": "household", "authority_scope": "सामान्य चिंतन; समुदाय प्रार्थना, समुद्र अर्पण, नाव या मत्स्य संचालन नहीं गढ़ा जाता।", "form": "accessible_short", "estimated_minutes": 20,
+          "materials": [
+            {"item": "नारियल या नारियल-मुक्त समुद्र/आजीविका संकेत", "required": false, "substitutions": ["नारियल चित्र", "पहले से शंख", "घर में स्वच्छ जल कटोरा", "कोई वस्तु नहीं"], "source_ids": ["akashvani-narali-2025", "nfdb-fishing-festivals"]},
+            {"item": "सुरक्षित नारियल भोजन या उपयुक्त दूसरा भोजन", "required": false, "substitutions": ["एलर्जी-सुरक्षित फल", "भोजन नहीं"], "source_ids": ["utsav-narali-mumbai", "fssai-home", "fssai-allergens"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय श्रावण पूर्णिमा तय करें। मुंबई के लिए 17 अगस्त 2027 संकेत लें और विदेशी 16 अगस्त परिणाम अस्वीकार करें।", "why": "तिथि स्थान-निर्भर है।", "source_ids": ["drik-mumbai-purnima-boundary-2027", "drik-marathi-narali-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "तीन लेबल वाले जीवित विवरण सुनें और कोली/मछुआरा समुदाय स्रोत बताएँ; इसे घरेलू उत्पत्ति-कथा न गढ़ें।", "why": "सांस्कृतिक स्वामित्व और प्रमाण स्पष्ट रहते हैं।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "nfdb-fishing-festivals"], "optional": false},
+            {"ordinal": 3, "instruction": "नारियल/विकल्प सूखी स्थिर जगह रखें। समुद्र, वर्षा, नाव, मछुआरे और तटीय श्रम के लिए परिचित धन्यवाद कहें; वरुण मंत्र न गढ़ें।", "why": "कर्म-अधिकार का दावा बिना कृतज्ञता संभव है।", "source_ids": ["akashvani-narali-2025"], "optional": false},
+            {"ordinal": 4, "instruction": "ज्ञात मछुआरे/विक्रेता से उचित खरीद, सुरक्षा चेतावनी सीखना, समुद्री प्लास्टिक घटाना, अधिकृत समुदाय मदद या तटीय श्रमिक धन्यवाद जैसा एक काम करें।", "why": "पकड़/सुरक्षा वादा बिना आजीविका सम्मान ठोस होता है।", "source_ids": ["nfdb-fishing-festivals", "incois-osf"], "optional": false},
+            {"ordinal": 5, "instruction": "नारियल रखें, सुरक्षित पकाएँ/बाँटें या विकल्प हटा दें। इस सामान्य मार्ग में समुद्र, नदी या नाली में कुछ न फेंकें।", "why": "भक्ति समुद्री कचरा या चोट नहीं माँगती।", "source_ids": ["fssai-home", "incois-osf"], "optional": false}
+          ],
+          "closing": {"text": "धन्यवाद और स्मरण से बंद करें: प्रार्थना आशा है; समुद्री काम वर्तमान पूर्वानुमान, नियम और प्रशिक्षित निर्णय से चलता है।", "source_ids": ["imd-mumbai-marine", "incois-osf", "maharashtra-fisheries-faq"]},
+          "source_ids": ["akashvani-narali-2025", "nfdb-fishing-festivals", "drik-mumbai-purnima-boundary-2027", "incois-osf"]
+        },
+        {"procedure_id": "narali-hi-shore-v1", "label": "आमंत्रित समुदाय तट सहभाग", "tier": "standard", "setting": "community_participation", "authority_scope": "नामित समुदाय/स्थानीय आयोजक में अतिथि कर्म; स्वतंत्र अर्पण, जल प्रवेश या प्रार्थना नेतृत्व नहीं।", "form": "institutional_participation", "estimated_minutes": null,
+          "materials": [{"item": "आयोजक की वर्तमान बैठक और सुरक्षा सूचना", "required": true, "substitutions": ["कानूनी सूखे सार्वजनिक स्थान से देखें", "आधिकारिक प्रसारण", "घरेलू रूप"], "source_ids": ["akashvani-narali-2025", "imd-mumbai-marine", "incois-osf"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "समुदाय आयोजक, कानूनी पहुँच, समय/स्थान, ज्वार योजना, अवरोध, बाल निगरानी, नारियल, फोटो और कचरा नियम तय करें।", "why": "पंचांग सुरक्षित पहुँच/अतिथि अनुमति नहीं देता।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "optional": false},
+            {"ordinal": 2, "instruction": "उसी दिन आईएमडी चेतावनी, इनकॉइस समुद्र/छोटी नाव सलाह और स्थानीय निर्देश देखें; मनाही/असुरक्षा में रद्द या घर रहें।", "why": "समुद्री संकट कार्यक्रम पर हावी है।", "source_ids": ["imd-mumbai-marine", "incois-svas", "incois-osf"], "optional": false},
+            {"ordinal": 3, "instruction": "निर्धारित सूखी सीमा में रहें और बच्चों पर सीधी निगरानी रखें। लहर, चट्टान, जेटी, ब्रेकवॉटर में न जाएँ और लहरों से पीठ न करें।", "why": "अर्पण डूबने/टक्कर का जोखिम स्वीकारने का कारण नहीं।", "source_ids": ["imd-mumbai-marine", "incois-osf"], "optional": false},
+            {"ordinal": 4, "instruction": "केवल नेता द्वारा दिए अतिथि कर्म करें। स्वतंत्र नारियल न फेंकें, निजी प्रार्थना न दोहराएँ, नाव/जाल न छुएँ, रिकॉर्ड न करें और कोली पहचान का वेश न बनाएं।", "why": "शारीरिक सुरक्षा और सांस्कृतिक सहमति दोनों चाहिए।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "optional": false},
+            {"ordinal": 5, "instruction": "भोजन/शिल्प/प्रदर्शन का उचित भुगतान, एलर्जी जाँच, अपना कचरा हटाना और निर्देश में निकलना करें। इस क्रम में नाव पर न चढ़ें।", "why": "अतिथि सहभाग समुद्री संचालन से पहले बंद होता है।", "source_ids": ["fssai-allergens", "incois-svas"], "optional": false}
+          ],
+          "closing": {"text": "मेजबान को धन्यवाद दें, कर्म पर दावा न करें। स्पष्ट सहमति से ही रिकॉर्ड/पोस्ट करें और माँगे जाने पर कामकाजी बंदरगाह/निजी प्रार्थना गोपनीय रखें।", "source_ids": ["akashvani-narali-2025"]},
+          "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai", "imd-mumbai-marine", "incois-osf"]
+        },
+        {"procedure_id": "narali-hi-maritime-boundary-v1", "label": "नाव या मत्स्य अनुरोध: रुकें और संचालन को भेजें", "tier": "elaborate", "setting": "individual", "authority_scope": "केवल रूटिंग; यह पैक चढ़ना, नाव उतारना, यात्रा या मछली पकड़ना अधिकृत नहीं करता।", "form": "institutional_participation", "estimated_minutes": 5,
+          "materials": [{"item": "वर्तमान आधिकारिक संचालन स्वीकृति समूह", "required": true, "substitutions": ["तट पर रहें", "घरेलू कृतज्ञता रूप"], "source_ids": ["maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-svas", "incois-osf"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "योजना में नाव चढ़ना, उतारना, औपचारिक यात्रा या मछली हो तो कर्म मार्गदर्शन उपयोग रोकें।", "why": "ये समुद्री संचालन हैं, घरेलू कर्म नहीं।", "source_ids": ["incois-svas"], "optional": false},
+            {"ordinal": 2, "instruction": "नाव मालिक/मास्टर, प्रशिक्षित दल, बंदरगाह, वर्तमान मत्स्य आदेश, नाव/कानून/बीमा/यात्री जरूरत, आईएमडी और इनकॉइस को भेजें।", "why": "कई जीवित अधिकार सुरक्षित संचालन नियंत्रित करते हैं।", "source_ids": ["maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-svas", "incois-osf"], "optional": false},
+            {"ordinal": 3, "instruction": "कोई अधिकार, चेतावनी, नाव, दल या यात्री स्थिति अनसुलझी हो तो तट पर रहें। त्योहार समय कोई अनुमति/अपवाद नहीं।", "why": "समुद्री अनिश्चितता रुकने का कारण है।", "source_ids": ["imd-mumbai-marine", "incois-svas", "incois-osf"], "optional": false}
+          ],
+          "closing": {"text": "कृतज्ञता और समुदाय समर्थन से तट पर दिन पूरा करें। पालन के लिए यात्रा या पकड़ आवश्यक नहीं।", "source_ids": ["nfdb-fishing-festivals"]},
+          "source_ids": ["maharashtra-fisheries-faq", "imd-mumbai-marine", "incois-svas", "incois-osf"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-food-dress-and-symbol-hi", "scope": "तटीय महाराष्ट्र/कोंकण सामान्य परिवार", "difference": "मराठी/कोंकणी/हिंदी/अंग्रेजी, नारियल भोजन, वस्त्र, नृत्य और रखा नारियल/चित्र/कुछ नहीं इसी मार्ग में।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "separate_lane_required": false},
+        {"variant_id": "koli-community-varuna-sea-offering-hi", "scope": "कोली/मछुआरा समुदाय व्यवस्थित कर्म", "difference": "नेता, शब्द, सांस्कृतिक स्वामित्व, ज्वार, तट और अर्पण संचालन हेतु समुदाय अधिकार।", "source_ids": ["akashvani-narali-2025", "utsav-narali-mumbai"], "separate_lane_required": true},
+        {"variant_id": "boat-puja-procession-or-trip-hi", "scope": "नाव-आधारित समुदाय कार्यक्रम", "difference": "नाव, दल, यात्री, बंदरगाह, नौवहन, मौसम और बीमा बदलते हैं।", "source_ids": ["utsav-narali-mumbai", "incois-svas"], "separate_lane_required": true},
+        {"variant_id": "commercial-fishing-resumption-hi", "scope": "व्यावसायिक मत्स्य संचालन", "difference": "वर्तमान रोक/आदेश, लाइसेंस, नाव, दल, पीएफजेड/ओएसएफ और चेतावनी—कर्म नहीं—नियंत्रित करते हैं।", "source_ids": ["maharashtra-fisheries-faq", "incois-osf", "imd-mumbai-marine"], "separate_lane_required": true},
+        {"variant_id": "inland-water-varuna-offering-hi", "scope": "नदी, झील या जलाशय", "difference": "तटीय प्रमाण अंतर्देशीय पारिस्थितिकी, पहुँच, अधिकार या सुरक्षित कर्म सिद्ध नहीं करता।", "source_ids": ["nfdb-fishing-festivals"], "separate_lane_required": true},
+        {"variant_id": "other-shravana-purnima-observance-hi", "scope": "रक्षा बंधन, उपाकर्म या अन्य पालन", "difference": "पात्रता, कथा, कर्म-वस्तु और क्रिया अलग हैं।", "source_ids": ["drik-marathi-narali-2027"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "अर्पण के लिए लहर, चट्टान, ब्रेकवॉटर, जेटी या बाढ़ में न जाएँ। बच्चे जिम्मेदार वयस्क की सीधी निगरानी में स्थानीय अवरोध के पीछे रहें।",
+        "नारियल/वस्तु स्वतंत्र रूप से न फेंकें जहाँ लोग, नाव या वन्यजीव घायल हों। रखना, पकाना, बाँटना या बिना वस्तु पूर्ण है।",
+        "त्योहार पंचांग समुद्र अनुमति नहीं। आईएमडी, इनकॉइस, मत्स्य विभाग, बंदरगाह, नाव मास्टर, प्रशिक्षित दल और वर्तमान स्थिति संचालन नियंत्रित करते हैं।",
+        "अनुमति बिना कोली प्रार्थना, वस्त्र या पहचान की नकल/रिकॉर्ड/व्यापार न करें; कामकाजी नाव-जाल न छुएँ और निजी स्थान न खोलें।",
+        "नारियल एलर्जी, चाकू/वजन जोखिम, खाद्य स्वच्छता और भंडारण जाँचें। नारियल-मुक्त सहभाग पूर्ण है।",
+        "प्रार्थना शांत समुद्र, आपदा सुरक्षा, पकड़, आय, सुरक्षित यात्रा या कानूनी अनुमति की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": ["Full Koli community prayer/sea-offering practice remains community-owned and requires a dedicated living-tradition owner.", "Every vessel, voyage, harbour and fishing operation remains under live maritime/fisheries authorities.", "No deterministic day-cell projection exists."],
+    "review_status": "internal_beta_reviewed"
+  }
+}

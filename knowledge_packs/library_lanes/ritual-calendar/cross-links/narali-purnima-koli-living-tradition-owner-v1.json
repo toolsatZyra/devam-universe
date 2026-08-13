@@ -1,0 +1,33 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-narali-purnima-koli-living-tradition-owner-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "narali-purnima-to-koli-community-practice-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/narali-purnima-maharashtra-coastal-participant-2027-v1"},
+      "to_ref": {"lane_local_id": "living-traditions/koli-narali-purnima-community-practice"},
+      "relationship_family": "practice",
+      "predicate": "requests_community_reviewed_prayer_offering_and_livelihood_context",
+      "directionality": "directed",
+      "consumer_label": {"en": "Learn the community-reviewed Koli Narali Purnima practice", "hi": "समुदाय-समीक्षित कोली नारळी पूर्णिमा प्रथा समझें"},
+      "scope": {
+        "statement": "The ritual-calendar pack supplies only ordinary dry household, invited shore-participant and maritime stop/routing guidance. A future living-tradition owner must document community-authorized prayer, leadership, coconut handling, boats, songs, dance and livelihood context without extraction or universalization.",
+        "geography_codes": ["IN-MH", "konkan-coast", "mumbai-thane-palghar-coast"],
+        "tradition_codes": ["koli-narali-purnima-community-owned"],
+        "time_scope": "Local Shravana Purnima; Mumbai 2027 discovery fixture 17 August",
+        "source_expression_scope": "Current Akashvani, Ministry of Tourism and NFDB living accounts; community review unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "official_current", "ref": "https://newsonair.gov.in/fshermen-community-in-mumbai-thane-palghar-celebrate-narali-purnima/", "claim_scope": "Dated public account of Koli community provenance, coconut offering, prayer, Koliwada decoration and dance."},
+        {"evidence_kind": "living_practice", "ref": "https://utsav.gov.in/view-event/narali-purnima-2", "claim_scope": "Current tourism description of boats, nets, food, prayer, song, dance and ceremonial trip, not community authorization for reuse."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/narali-purnima-maharashtra-coastal-participant-2027-v1.json", "claim_scope": "Bilingual timing, living accounts, dry/shore participant actions, maritime stop boundary, materials, safety, closing and variants."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

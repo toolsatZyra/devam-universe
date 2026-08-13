@@ -91,6 +91,12 @@ ONAM_PACK = LANE / "packs" / "onam-kerala-household-participant-2027-v1.json"
 ONAM_LINK = (
     LANE / "cross-links" / "onam-vamana-mahabali-story-owner-proposal-v1.json"
 )
+NARALI_PACK = (
+    LANE / "packs" / "narali-purnima-maharashtra-coastal-participant-2027-v1.json"
+)
+NARALI_LINK = (
+    LANE / "cross-links" / "narali-purnima-koli-living-tradition-owner-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -797,8 +803,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 15
-    assert progress["remaining_authoring_items"] == 193
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -817,6 +823,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "raksha-bandhan-consent-led-sibling-household-2027-v1",
         "varalakshmi-vratam-south-india-household-participant-2027-v1",
         "onam-kerala-household-participant-2027-v1",
+        "narali-purnima-maharashtra-coastal-participant-2027-v1",
     ]
     assert progress["completed_umbrella_components"] == {
         "vat-savitri-north-west-participant-v1": [
@@ -1983,8 +1990,8 @@ def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_with_single_umbr
 
     # Two material applicability packs complete one frozen umbrella item, not two.
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 15
-    assert progress["remaining_authoring_items"] == 193
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert VAT_PURNIMA_WEST_PACK.stem in progress["completed_lane_ids"]
     assert progress["completed_umbrella_components"][
@@ -2231,8 +2238,8 @@ def test_guru_purnima_pack_and_mahabharata_link_are_schema_valid_and_complete():
     )
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 15
-    assert progress["remaining_authoring_items"] == 193
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert (
         "knowledge_packs/library_lanes/ritual-calendar/packs/"
@@ -2394,8 +2401,8 @@ def test_raksha_bandhan_pack_links_and_progress_are_schema_valid():
     assert tagore["target_resolution"] == "unresolved_owner_lane"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 15
-    assert progress["remaining_authoring_items"] == 193
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert (
         "knowledge_packs/library_lanes/ritual-calendar/packs/"
@@ -2528,8 +2535,8 @@ def test_varalakshmi_participant_pack_and_devi_link_are_schema_valid():
     assert proposal["predicate"] == "requests_owned_identity_story_and_theology_context"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 15
-    assert progress["remaining_authoring_items"] == 193
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
     assert pack["lane_id"] in progress["completed_lane_ids"]
 
 
@@ -2624,8 +2631,8 @@ def test_onam_pack_and_unresolved_story_link_are_schema_valid():
     assert proposal["predicate"] == "requests_full_source_labelled_vamana_mahabali_context"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 15
-    assert progress["remaining_authoring_items"] == 193
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
     assert pack["lane_id"] in progress["completed_lane_ids"]
 
 
@@ -2690,3 +2697,106 @@ def test_onam_is_bilingual_actionable_and_major_variant_bounded():
     raw.decode("utf-8", errors="strict")
     assert "ओणम".encode("utf-8") in raw
     assert ONAM_PACK.stat().st_size < 100_000
+
+
+def test_narali_pack_and_koli_owner_link_are_schema_valid():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(NARALI_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["lane_id"] == "narali-purnima-maharashtra-coastal-participant-2027-v1"
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 11
+    refs = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    refs.extend(child)
+                else:
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    assert set(refs) <= source_ids
+
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    links = load(NARALI_LINK)
+    Draft202012Validator(link_schema).validate(links)
+    proposal = links["proposals"][0]
+    assert proposal["to_ref"]["lane_local_id"] == "living-traditions/koli-narali-purnima-community-practice"
+    assert proposal["target_resolution"] == "unresolved_owner_lane"
+    assert proposal["predicate"] == "requests_community_reviewed_prayer_offering_and_livelihood_context"
+
+    progress = load(AUTHORING_PROGRESS)
+    assert progress["completed_after_freeze"] == 16
+    assert progress["remaining_authoring_items"] == 192
+    assert pack["lane_id"] in progress["completed_lane_ids"]
+
+
+def test_narali_is_bilingual_shore_safe_and_maritime_bounded():
+    pack = load(NARALI_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "Tuesday 17 August" in calendar["freshness_note"]
+    assert "Monday 16 August" in calendar["freshness_note"]
+    assert "not portable" in calendar["freshness_note"]
+
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    shapes = []
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 3
+        assert len(entry["typical_practices"]) == 3
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        shape = [(tier, len(procedures[tier]["materials"]), len(procedures[tier]["steps"])) for tier in ("minimum", "standard", "elaborate")]
+        assert shape == [("minimum", 2, 5), ("standard", 1, 5), ("elaborate", 1, 3)]
+        shapes.append(shape)
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        suffix = "-hi" if entry["language_code"] == "hi" else ""
+        assert variants["language-food-dress-and-symbol" + suffix]["separate_lane_required"] is False
+        for base in (
+            "koli-community-varuna-sea-offering",
+            "boat-puja-procession-or-trip",
+            "commercial-fishing-resumption",
+            "inland-water-varuna-offering",
+            "other-shravana-purnima-observance",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is True
+    assert shapes[0] == shapes[1]
+
+    english = json.dumps(localized["en"], ensure_ascii=False).lower()
+    for term in (
+        "not an origin myth",
+        "do not invent a varuna mantra",
+        "do not throw anything into sea, river or drain",
+        "never enter surf, rocks, jetty or breakwater",
+        "do not board any vessel under this procedure",
+        "festival timing supplies no clearance",
+        "guarantees no calm sea, disaster protection, catch, income",
+    ):
+        assert term in english
+    hindi = json.dumps(localized["hi"], ensure_ascii=False)
+    for term in (
+        "उत्पत्ति-कथा",
+        "वरुण मंत्र न गढ़ें",
+        "समुद्र, नदी या नाली में कुछ न फेंकें",
+        "लहर, चट्टान, जेटी, ब्रेकवॉटर में न जाएँ",
+        "इस क्रम में नाव पर न चढ़ें",
+        "त्योहार समय कोई अनुमति",
+        "शांत समुद्र, आपदा सुरक्षा, पकड़, आय",
+    ):
+        assert term in hindi
+
+    raw = NARALI_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "नारळी पूर्णिमा".encode("utf-8") in raw
+    assert NARALI_PACK.stat().st_size < 100_000

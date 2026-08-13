@@ -122,3 +122,20 @@ Current sources checked 2026-08-13. The exact Mumbai Narali page did not render
 through the research browser, so the date is corroborated through the local
 Mumbai Purnima/Pratipada boundary and the 2027 Marathi-calendar occurrence.
 This is a discovery fixture, not a replacement for deterministic projection.
+
+## Completed pack and adversarial review
+
+Completed `narali-purnima-maharashtra-coastal-participant-2027-v1` with matched
+English/Hindi meaning, three dated living accounts, typical practice, dry-home,
+invited-shore and maritime-stop procedures, materials, substitutions, closing,
+safety and six major-variant decisions. The typed link leaves full community
+prayer/offering/livelihood documentation with an unresolved living-tradition
+owner.
+
+Adversarial review verifies that the pack does not invent a Varuna story or
+mantra; copy a foreign 16 August date into Mumbai; universalize Koli identity;
+independently instruct coconut throwing, water entry, boat work, boarding,
+launch, voyage or fishing; treat the ritual as weather, vessel, legal or catch
+clearance; promise calm seas, protection, catch or income; or frame marine
+litter and cultural extraction as devotion. Authored status is not projected,
+hosted, published or released.

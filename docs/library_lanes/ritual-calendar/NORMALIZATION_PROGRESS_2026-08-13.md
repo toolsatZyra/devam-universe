@@ -220,3 +220,19 @@ Exact accepted-authoring coverage is now **15 completed after freeze / 193
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The sixteenth post-freeze item is complete at the bilingual authored-library
+layer: `narali-purnima-maharashtra-coastal-participant-2027-v1`. It provides a
+dry household gratitude form, invited shoreline participant route and explicit
+stop/routing answer for every boat or fishing request. Marathi/Konkani/Hindi/
+English, coconut foods, dress, dance and retained coconut/picture/no object
+remain within the lane. Community-led Koli Varuna/sea offering, boat rites or
+trips, commercial fishing resumption, inland-water offerings and other
+Shravana Purnima observances remain separate because cultural ownership,
+environment, vessel, regulation, eligibility or action changes materially. A
+typed proposal requests a future community-reviewed living-tradition owner.
+
+Exact accepted-authoring coverage is now **16 completed after freeze / 192
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.
