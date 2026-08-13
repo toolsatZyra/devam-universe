@@ -13,7 +13,18 @@ ALL_YEAR_SEED = LANE / "inventory" / "ritual-calendar-selected-scope-v2.json"
 COMPREHENSIVE_CENSUS = (
     LANE / "inventory" / "ritual-calendar-comprehensive-census-v3.json"
 )
+RECURRING_DISPOSITION = (
+    LANE
+    / "inventory"
+    / "ritual-calendar-candidate-disposition-recurring-v1.json"
+)
+SOLAR_DISPOSITION = (
+    LANE / "inventory" / "ritual-calendar-candidate-disposition-solar-v1.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
+SANKASHTI_LINKS = (
+    LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
+)
 
 
 def load(path: Path):
@@ -98,6 +109,84 @@ def test_major_difference_rule_prevents_state_copy_proliferation():
     excluded = census["settings_boundary"]["excluded_from_diy"]
     assert "priest-led temple liturgy" in excluded
     assert "initiation-restricted practice" in excluded
+
+
+def test_recurring_candidate_disposition_is_exact_nonoverlapping_and_in_census():
+    census = load(COMPREHENSIVE_CENSUS)
+    batch = load(RECURRING_DISPOSITION)
+    candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
+    entries = batch["entries"]
+    labels = [entry["source_label"] for entry in entries]
+    assert len(labels) == len(set(labels)) == 43
+    assert set(labels) <= candidate_labels
+    assert batch["counts"] == {
+        "source_labels_dispositioned": 43,
+        "hero_owned_cross_link_only": 12,
+        "alias_of_hero_owned_candidate": 24,
+        "alias_of_accepted_lane": 7,
+    }
+    allowed = set(census["candidate_disposition_states"])
+    assert all(entry["disposition"] in allowed for entry in entries)
+    assert len(candidate_labels - set(labels)) == 382
+    sankashti = [entry for entry in entries if "sankasht" in entry["source_label"].lower()]
+    assert len(sankashti) == 36
+    assert len({entry["canonical_candidate_id"] for entry in sankashti}) == 12
+    pradosha = [entry for entry in entries if "Pradosh" in entry["source_label"]]
+    assert len(pradosha) == 7
+    assert {entry["canonical_candidate_id"] for entry in pradosha} == {
+        "pradosha-recurring"
+    }
+
+
+def test_sankashti_owner_proposals_are_typed_and_unresolved_without_placeholders():
+    schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    pack = load(SANKASHTI_LINKS)
+    Draft202012Validator(schema).validate(pack)
+    assert len(pack["proposals"]) == 12
+    assert all(
+        proposal["target_resolution"] == "unresolved_owner_lane"
+        for proposal in pack["proposals"]
+    )
+    assert all(
+        proposal["predicate"] == "requests_owner_scoped_recurring_instance"
+        for proposal in pack["proposals"]
+    )
+    assert len(
+        {proposal["to_ref"]["lane_local_id"] for proposal in pack["proposals"]}
+    ) == 12
+
+
+def test_solar_disposition_preserves_material_regional_timing_contexts():
+    census = load(COMPREHENSIVE_CENSUS)
+    recurring = load(RECURRING_DISPOSITION)
+    solar = load(SOLAR_DISPOSITION)
+    candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
+    recurring_labels = {entry["source_label"] for entry in recurring["entries"]}
+    entries = solar["entries"]
+    labels = [entry["source_label"] for entry in entries]
+    assert len(labels) == len(set(labels)) == 32
+    assert set(labels) <= candidate_labels
+    assert set(labels).isdisjoint(recurring_labels)
+    assert len({entry["canonical_family_id"] for entry in entries}) == 12
+    assert all(entry["disposition"] == "accepted_distinct_lane" for entry in entries)
+    assert solar["counts"] == {
+        "source_labels_dispositioned": 32,
+        "accepted_distinct_lane": 32,
+        "canonical_solar_families": 12,
+    }
+    by_label = {entry["source_label"]: entry for entry in entries}
+    assert {
+        by_label["Makara Sankranti"]["canonical_family_id"],
+        by_label["Uttarayana Makar Sankranti"]["canonical_family_id"],
+        by_label["Makaram Sankramam"]["canonical_family_id"],
+    } == {"solar-ingress-makara"}
+    assert by_label["Mahabisuba Pana Sankranti"][
+        "required_applicability_context"
+    ] == "odia_solar"
+    assert by_label["Karkatakam Sankramam"][
+        "required_applicability_context"
+    ] == "malayalam_solar"
+    assert len(candidate_labels - recurring_labels - set(labels)) == 350
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():
