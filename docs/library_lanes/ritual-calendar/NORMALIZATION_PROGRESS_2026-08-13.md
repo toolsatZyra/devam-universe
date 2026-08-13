@@ -106,3 +106,21 @@ The new typed link points to the already counted
 owner target to the frozen count of 84. Exact accepted-authoring coverage is
 now **3 completed after freeze / 205 remaining / 208 total**. Verified
 day-answer cells remain **0 / 19,480**.
+
+Later reviewed batches completed Holika Dahan, Holi/Dhulandi, Gudi Padwa,
+Ugadi/Yugadi and Ram Navami. Their individual lane packs, research dossiers and
+exclusive validator assertions are the detailed audit record.
+
+The ninth post-freeze item is complete at the bilingual authored-library layer:
+`hanuman-jayanti-north-india-household-participant-2027-v1`. It answers the
+North/West Chaitra Purnima household and ordinary temple-participant route,
+with a 20 April 2027 reference fixture. Ordinary differences in flowers,
+sweets, reading, language, fast, image, sindoor or oil stay inside the lane.
+Tamil and Kannada December dates, named Kartika institutions, and multi-day
+temple liturgy remain separate because they materially change timing or
+authority. Typed links point to the existing Dutt Ramayana and Hanuman Chalisa
+anchors without copying owner content.
+
+Exact accepted-authoring coverage is now **9 completed after freeze / 199
+remaining / 208 total**. Verified day-answer cells remain **0 / 19,480**;
+authored is not projected, hosted, released or published.

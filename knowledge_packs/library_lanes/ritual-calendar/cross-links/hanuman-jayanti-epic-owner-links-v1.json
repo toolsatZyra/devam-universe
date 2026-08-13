@@ -1,0 +1,43 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-hanuman-jayanti-epic-owner-links-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "hanuman-jayanti-practice-to-dutt-ramayana-context",
+      "from_ref": {"lane_local_id": "ritual-calendar/hanuman-jayanti-north-india-household-participant-2027-v1"},
+      "to_ref": {"canonical_id": "devam:source-expression:ramayana-dutt-consumer-v1"},
+      "relationship_family": "story",
+      "predicate": "uses_source_labelled_hanuman_context_from",
+      "directionality": "directed",
+      "consumer_label": {"en": "Read Hanuman's story in its epic context", "hi": "हनुमान की कथा महाकाव्य-संदर्भ में पढ़ें"},
+      "scope": {"statement": "The ritual pack paraphrases only the Uttara Kanda Section XL account and requests the owner for the complete source context.", "geography_codes": ["north-india", "west-india"], "tradition_codes": ["chaitra-purnima-hanuman-devotional-household"], "time_scope": "Chaitra Purnima observance; 2027 fixture 20 April", "source_expression_scope": "Dutt English Ramayana expression, Uttara Kanda Section XL"},
+      "evidence_refs": [
+        {"evidence_kind": "source_passage", "ref": "source_vault object sha256:076d03a68387f8ccd43b0cc211829f017ef120746d7b0f68a401f1c6fb4b221d lines 4231-4375", "claim_scope": "Rama's praise of Hanuman and Agastya's childhood sun-reaching account."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/hanuman-jayanti-north-india-household-participant-2027-v1.json", "claim_scope": "Bilingual applicability, timing, bounded story summaries, actions and safety."}
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "hanuman-jayanti-practice-to-hanuman-chalisa-text",
+      "from_ref": {"lane_local_id": "ritual-calendar/hanuman-jayanti-north-india-household-participant-2027-v1"},
+      "to_ref": {"canonical_id": "devam:text:hanuman-chalisa"},
+      "relationship_family": "text",
+      "predicate": "offers_optional_owned_devotional_reading",
+      "directionality": "directed",
+      "consumer_label": {"en": "Optional Hanuman Chalisa reading", "hi": "वैकल्पिक हनुमान चालीसा पाठ"},
+      "scope": {"statement": "The household guide offers an owned Hanuman Chalisa reading as one optional devotional choice and does not copy or mandate its text.", "geography_codes": ["north-india", "west-india"], "tradition_codes": ["chaitra-purnima-hanuman-devotional-household"], "time_scope": "Chaitra Purnima and family devotional practice", "source_expression_scope": "Canonical Hanuman Chalisa text owner"},
+      "evidence_refs": [
+        {"evidence_kind": "official_current", "ref": "https://www.incredibleindia.gov.in/en/rajasthan/kota/godawari-dham", "claim_scope": "Current public description of Hanuman Chalisa chanting at a living temple."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/hanuman-jayanti-north-india-household-participant-2027-v1.json", "claim_scope": "The pack leaves passage, language, repetition and recitation choice to family and owner."}
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    }
+  ]
+}

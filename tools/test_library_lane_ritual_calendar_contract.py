@@ -40,6 +40,14 @@ RAMA_NAVAMI_PACK = (
 RAMA_NAVAMI_LINKS = (
     LANE / "cross-links" / "ram-navami-epic-owner-links-v1.json"
 )
+HANUMAN_JAYANTI_PACK = (
+    LANE
+    / "packs"
+    / "hanuman-jayanti-north-india-household-participant-2027-v1.json"
+)
+HANUMAN_JAYANTI_LINKS = (
+    LANE / "cross-links" / "hanuman-jayanti-epic-owner-links-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -746,8 +754,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 8
-    assert progress["remaining_authoring_items"] == 200
+    assert progress["completed_after_freeze"] == 9
+    assert progress["remaining_authoring_items"] == 199
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -758,6 +766,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "gudi-padwa-maharashtra-household-2027-v1",
         "ugadi-yugadi-karnataka-andhra-telangana-household-2027-v1",
         "ram-navami-north-india-household-participant-2027-v1",
+        "hanuman-jayanti-north-india-household-participant-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -1621,3 +1630,138 @@ def test_rama_navami_major_difference_timing_fasting_and_temple_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "राम नवमी".encode("utf-8") in raw
     assert RAMA_NAVAMI_PACK.stat().st_size < 100_000
+
+
+def test_hanuman_jayanti_pack_and_owner_links_are_schema_valid():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(HANUMAN_JAYANTI_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["observance_slugs"] == ["hanuman-jayanti"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 15
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    links = load(HANUMAN_JAYANTI_LINKS)
+    Draft202012Validator(link_schema).validate(links)
+    assert len(links["proposals"]) == 2
+    assert {proposal["to_ref"]["canonical_id"] for proposal in links["proposals"]} == {
+        "devam:source-expression:ramayana-dutt-consumer-v1",
+        "devam:text:hanuman-chalisa",
+    }
+    assert all(proposal["target_resolution"] == "existing_anchor" for proposal in links["proposals"])
+
+
+def test_hanuman_jayanti_is_bilingual_actionable_and_source_bounded():
+    pack = load(HANUMAN_JAYANTI_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["minimum"]["form"] == "accessible_short"
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    dutt = next(source for source in pack["sources"] if source["source_id"] == "dutt-ramayana-uttara-40-hanuman")
+    assert dutt["artifact_sha256"] == "076d03a68387f8ccd43b0cc211829f017ef120746d7b0f68a401f1c6fb4b221d"
+    assert dutt["citation_coordinates"]["section"] == "Uttara Kanda XL"
+    stories = " ".join(story["summary"] for story in localized["en"]["origin_narratives"]).lower()
+    assert "concise source pointer" in stories
+    assert "one textual account" in stories
+    assert "left jaw breaks" in stories
+
+
+def test_hanuman_jayanti_major_date_material_and_safety_boundaries():
+    pack = load(HANUMAN_JAYANTI_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "20 April" in calendar["freshness_note"]
+    assert "Tamil 27 December" in calendar["freshness_note"]
+    assert "Kannada 11 December" in calendar["freshness_note"]
+    assert "never copy" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {variant["variant_id"].removesuffix("-hi"): variant for variant in entry["variants"]}
+        for variant_id in (
+            "non-fasting-or-family-fast",
+            "chalisa-bhajan-ramayana-or-silence",
+            "flower-food-sindoor-oil-or-material-light",
+            "minor-state-household-preferences",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "tamil-hanuman-jayanthi-date",
+            "kannada-hanuman-jayanti-date",
+            "kartika-named-institution-date",
+            "multi-day-temple-liturgy-or-procession",
+            "full-hanuman-story-and-chalisa-text",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "not a universal national ritual",
+        "full hanuman story",
+        "fasting is optional",
+        "insulin",
+        "eating-disorder history",
+        "never ingest sindoor",
+        "documented lead risk",
+        "real monkeys are wildlife",
+        "do not feed",
+        "allergens",
+        "not a national clock/date",
+        "institution-owned",
+        "local/live",
+        "do not promise strength",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "सार्वभौम राष्ट्रीय अनुष्ठान",
+        "पूर्ण हनुमान-कथा",
+        "उपवास वैकल्पिक",
+        "इंसुलिन",
+        "भोजन-विकार का इतिहास",
+        "कभी न निगलें",
+        "सीसा-जोखिम",
+        "वास्तविक बंदर वन्यजीव",
+        "न खिलाएँ",
+        "एलर्जेन",
+        "राष्ट्रीय घड़ी/तिथि नहीं",
+        "संस्था-स्वामित्व",
+        "स्थानीय/जीवित",
+        "गारंटी न दें",
+    ):
+        assert term in localized["hi"]
+
+    raw = HANUMAN_JAYANTI_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "हनुमान जयंती".encode("utf-8") in raw
+    assert HANUMAN_JAYANTI_PACK.stat().st_size < 100_000
