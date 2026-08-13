@@ -26,6 +26,9 @@ HOLIKA_PACK = (
 HOLI_PACK = (
     LANE / "packs" / "holi-dhulandi-north-india-consent-led-household-2027-v1.json"
 )
+GUDI_PADWA_PACK = (
+    LANE / "packs" / "gudi-padwa-maharashtra-household-2027-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -631,7 +634,7 @@ def test_makar_sankranti_pack_conforms_and_closes_all_source_references():
     assert pack["product_status"]["open_gaps"] == []
 
     source_ids = {source["source_id"] for source in pack["sources"]}
-    assert len(source_ids) == len(pack["sources"]) >= 12
+    assert len(source_ids) == len(pack["sources"]) >= 14
 
     def walk(value):
         if isinstance(value, dict):
@@ -732,8 +735,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 5
-    assert progress["remaining_authoring_items"] == 203
+    assert progress["completed_after_freeze"] == 6
+    assert progress["remaining_authoring_items"] == 202
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -741,6 +744,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "basant-panchami-north-and-east-household-participant-2027-v1",
         "holika-dahan-north-india-household-participant-2027-v1",
         "holi-dhulandi-north-india-consent-led-household-2027-v1",
+        "gudi-padwa-maharashtra-household-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -1206,3 +1210,126 @@ def test_holi_consent_safety_timing_and_major_difference_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "होली / धुलंडी".encode("utf-8") in raw
     assert HOLI_PACK.stat().st_size < 100_000
+
+
+def test_gudi_padwa_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(GUDI_PADWA_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["observance_slugs"] == ["gudi-padwa"]
+    assert pack["applicability"]["region_codes"] == ["IN-MH"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 12
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_gudi_padwa_is_bilingual_actionable_and_accessible_without_height():
+    pack = load(GUDI_PADWA_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["minimum"]["form"] == "accessible_short"
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    assert "material-light" in localized["en"]["procedures"][0]["label"].lower()
+    standard_materials = " ".join(
+        material["item"] + " " + " ".join(material["substitutions"])
+        for material in localized["en"]["procedures"][1]["materials"]
+    ).lower()
+    assert "tabletop" in standard_materials
+
+
+def test_gudi_padwa_major_difference_timing_and_adversarial_boundaries():
+    pack = load(GUDI_PADWA_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "7 April" in calendar["freshness_note"]
+
+    for entry in pack["localized_content"]:
+        variants = {
+            variant["variant_id"].removesuffix("-hi"): variant
+            for variant in entry["variants"]
+        }
+        for variant_id in (
+            "material-light-tabletop-or-raised",
+            "cloth-flower-vessel-food",
+            "neem-jaggery-optional",
+            "apartment-housing-restriction",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "public-shobhayatra",
+            "temple-priest-led-service",
+            "ugadi-yugadi",
+            "other-new-year-or-navaratri",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "one hindu or indian new year",
+        "overhead wires",
+        "balcony/window",
+        "tabletop form is complete",
+        "secure or omit",
+        "away from diya",
+        "non-slip",
+        "national flag",
+        "neem-jaggery is optional",
+        "allergens",
+        "take the gudi down",
+        "not verified history",
+        "local/live",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "एकमात्र हिंदू या भारतीय नववर्ष",
+        "ऊपरी तार",
+        "बालकनी/खिड़की",
+        "मेज-रूप पूर्ण",
+        "बंधा/हटा",
+        "दीया",
+        "गैर-फिसलन",
+        "राष्ट्रीय ध्वज",
+        "नीम-गुड़ वैकल्पिक",
+        "एलर्जेन",
+        "गुड़ी उतारें",
+        "सत्यापित इतिहास",
+        "स्थानीय/जीवित",
+    ):
+        assert term in localized["hi"]
+
+    raw = GUDI_PADWA_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "गुड़ी पड़वा".encode("utf-8") in raw
+    assert GUDI_PADWA_PACK.stat().st_size < 100_000
