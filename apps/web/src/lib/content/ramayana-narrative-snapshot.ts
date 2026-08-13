@@ -80,6 +80,7 @@ import { RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES } from "../../data/ramayana
 import { RAMAYANA_FIRST_LANKA_WAR_LIBRARY_SCENES } from "../../data/ramayana-first-lanka-war-library-scenes";
 import { RAMAYANA_KAIKASI_BOONS_LIBRARY_SCENES } from "../../data/ramayana-kaikasi-boons-library-scenes";
 import { RAMAYANA_KARTAVIRYA_CAPTURE_LIBRARY_SCENES } from "../../data/ramayana-kartavirya-capture-library-scenes";
+import { RAMAYANA_PROPHECY_CHOICE_LIBRARY_SCENES } from "../../data/ramayana-prophecy-choice-library-scenes";
 import { RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES } from "../../data/ramayana-chitrakoot-approach-library-scenes";
 import { RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES } from "../../data/ramayana-sagara-ganga-library-scenes";
 import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
@@ -218,6 +219,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "first-lanka-war-ends-in-retreat",
     "kaikasi-sons-and-boons",
     "kartavirya-captures-ravana",
+    "prophecy-does-not-erase-choice",
     "sagara-line-brings-ganga-down",
     "chitrakoot-hears-army",
     "rambha-curse-and-indras-capture",
@@ -301,6 +303,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_FIRST_LANKA_WAR_LIBRARY_SCENES,
     ...RAMAYANA_KAIKASI_BOONS_LIBRARY_SCENES,
     ...RAMAYANA_KARTAVIRYA_CAPTURE_LIBRARY_SCENES,
+    ...RAMAYANA_PROPHECY_CHOICE_LIBRARY_SCENES,
     ...RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES,
     ...RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES,
     ...RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES,
