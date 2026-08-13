@@ -1,0 +1,70 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-utpanna-ekadashi-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "utpanna-to-padma-mura-ekadashi-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/utpanna-utpatti-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-utpanna-mura-ekadashi-devi-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_complete_source_labelled_mura_ekadashi_emergence_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the complete source-labelled Mura and Ekadashi Devi account",
+        "hi": "मुर और एकादशी देवी की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "Preserve Padma Purana 6.38's Mahadwadashi and vow frame, caste exclusion, Mura's conquest, gods' appeal, mass warfare, Vishnu's defeat/withdrawal/sleep, Mura's pursuit, the armed maiden's independent emergence, combat and speech, Mura's death, Vishnu's waking, her negotiated boon and attributed results without turning mythic violence, sleep attack, caste hierarchy, fasting, female protective labour, absolution or enemy destruction into Devam instructions.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-DL",
+          "IN-HR",
+          "IN-RJ",
+          "IN-UP",
+          "IN-UK",
+          "IN-PB",
+          "IN-MH",
+          "IN-GJ",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved ordinary Margashirsha Krishna Utpanna/Utpatti; reviewed 2027 fixture 24 November",
+        "source_expression_scope": "N. A. Deshpande English expression and displayed Sanskrit of Padma Purana 6.38; other recensions and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365615.html",
+          "claim_scope": "Reviewed complete chapter, verses 1-118."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/utpanna-utpatti-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, full story, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
