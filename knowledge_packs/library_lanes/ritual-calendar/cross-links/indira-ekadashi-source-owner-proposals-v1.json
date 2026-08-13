@@ -1,0 +1,117 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-indira-ekadashi-source-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "indira-to-padma-indrasena-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/indira-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-indira-indrasena-narada-father-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_indrasena_narada_father_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Indrasena and Narada account",
+        "hi": "इंद्रसेन और नारद की पूरी स्रोत-नामित कथा पढ़ें"
+      },
+      "scope": {
+        "statement": "Preserve Padma Purana 6.58's Indrasena, Narada, father's message, vow-defect and former-birth claims, merit-transfer request, full formal procedure and attributed afterlife outcomes without turning them into facts, blame or ordinary instructions.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-MH",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved Ashvina Krishna Indira; reviewed 2027 fixture 26 September",
+        "source_expression_scope": "N. A. Deshpande English expression and displayed Sanskrit of Padma Purana Uttara Khanda chapter 58; other recensions unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365635.html",
+          "claim_scope": "Reviewed verses 1-36 with the complete Indrasena-Narada-father sequence."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/indira-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "indira-to-formal-shraddha-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/indira-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "practice/indira-ekadashi-formal-shraddha-source-context"
+      },
+      "relationship_family": "practice",
+      "predicate": "requests_formal_indira_shraddha_authority_and_applicability_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Understand the separate formal Indira Shraddha context",
+        "hi": "अलग औपचारिक इंदिरा श्राद्ध संदर्भ समझें"
+      },
+      "scope": {
+        "statement": "A future practice owner must resolve death-tithi and relationship applicability, performer and lineage authority, Salagrama, pinda/tarpana, grains, feeding, dakshina, fasting and Dwadashi close without claiming one national procedure or marking Ekadashi Shraddha complete through this ordinary pack.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-MH",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "family-lineage-authority"
+        ],
+        "time_scope": "Indira and separately resolved Ekadashi Shraddha applicability",
+        "source_expression_scope": "Padma Purana 6.58 and Narada Purana 4.120 formal source expressions; living lineages unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/narada-purana-english/d/doc1857985.html",
+          "claim_scope": "Reviewed formal Indira fasting, Salagrama, Shraddha, feeding and dakshina passage."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/research/indira-ekadashi-north-west-smarta-household-2027-v1.md",
+          "claim_scope": "Audited separation between ordinary Indira and formal Ekadashi Shraddha."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

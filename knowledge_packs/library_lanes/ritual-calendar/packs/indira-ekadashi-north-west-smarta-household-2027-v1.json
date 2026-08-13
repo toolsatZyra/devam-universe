@@ -1,0 +1,1254 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "indira-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "indira-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-WB",
+      "IN-BR",
+      "IN-CG",
+      "IN-KA",
+      "IN-TN",
+      "IN-KL",
+      "IN-OD",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "ordinary-ekadashi-household"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted Panchang resolve Ashvina Krishna Indira for you?",
+      "Are you asking for ordinary Indira remembrance or the separately applicable Ekadashi Shraddha/formal ancestor rite?",
+      "Would naming a deceased person, afterlife claims, family contact or photographs be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, dental care, sleep and no ritual objects?",
+      "Would a material-free, no-name, no-contact and no-action form be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "indira-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "indira-ekadashi"
+      },
+      {
+        "region_code": "IN-WB",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "indira-ekadashi"
+      },
+      {
+        "region_code": "IN-KA",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "indira-ekadashi"
+      },
+      {
+        "region_code": "IN-AP",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "indira-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "indira-ekadashi",
+        "language_code": "en",
+        "note": "Ordinary Indira remains distinct from the separately inventoried Ekadashi Shraddha even when both labels share a date."
+      },
+      {
+        "observance_slug": "indira-ekadashi",
+        "language_code": "hi",
+        "note": "सामान्य इंदिरा, अलग सूचीबद्ध एकादशी श्राद्ध से अलग रहती है, भले दोनों नाम एक दिन हों।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "padma-purana-indira-deshpande",
+      "padma-purana-indira-sanskrit",
+      "drik-indira-shraddha-2027",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "indira-ashvina-krishna-ekadashi-local-ordinary-smarta-v1",
+    "closing_decision_rule_id": "indira-private-remembrance-no-afterlife-claim-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed Indian fixtures place ordinary Indira Ekadashi on Sunday 26 September 2027; an Amravati fixture also labels Ekadashi Shraddha that day, which remains a separate denominator item. Recompute city, sunrise, tithi/day-boundary and accepted authority; never copy displayed times, parana or Shraddha applicability."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-indira-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 58: Indira Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Indrasena, Narada, father, vow-defect, merit-transfer, formal procedure and attributed afterlife sequence",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365635.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-36",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "padma-purana-indira-sanskrit",
+      "title": "Padma Purana 6.58 Sanskrit text",
+      "publisher": "Sanskrit text surfaced by Wisdomlib",
+      "source_role": "displayed Sanskrit identity and sequence witness",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/padma-purana-sanskrit/d/doc428113.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-36",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "narada-purana-indira-formal",
+      "title": "Narada Purana, Purva-bhaga, Chapter 120: Indira formal vrata",
+      "publisher": "English translation surfaced by Wisdomlib",
+      "source_role": "formal fasting, Salagrama, Shraddha, Padmanabha, feeding, dakshina and ancestor-uplift context; not ordinary instruction",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/narada-purana-english/d/doc1857985.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "41b-44",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-indira-shraddha-2027",
+      "title": "2027 Indira Ekadashi and Ekadashi Shraddha Indian fixtures",
+      "publisher": "DrikPanchang and Devam calendar census",
+      "source_role": "26 September Indian identity, same-day separate labels and five-system occurrence; no portable parana or universal practice authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/telugu/panchanga/telugu-day-panchanga.html?date=26%2F09%2F2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "ordinary_civil_date": "2027-09-26",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "mohfw-tele-manas",
+      "title": "National Tele Mental Health Programme Tele-MANAS",
+      "publisher": "Ministry of Health and Family Welfare / Press Information Bureau",
+      "source_role": "current India mental-health support routing; not ritual evidence",
+      "rights_lane": "citation_only",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=1866498",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "numbers": "14416 and 1800-89-14416",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary Indira denominator identity and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu-remembrance scaffold",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-pitru-paksha-remembrance-boundary",
+      "title": "Pitru Paksha Delhi remembrance content",
+      "publisher": "Devam",
+      "source_role": "privacy, grief, non-coercion and no-decision-about-formal-performer boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/rituals/pitru-paksha-delhi-remembrance-content-v1.json"
+      }
+    },
+    {
+      "source_id": "devam-indira-research",
+      "title": "Indira Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local timing, story, grief, Shraddha separation, safety, closing and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/indira-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "indira-ekadashi"
+      ],
+      "title": "Indira Ekadashi",
+      "short_answer": "Confirm local Ashvina Krishna Ekadashi first. For a safe ordinary home form, stay fed, hydrated and rested; remember Vishnu and, if you wish, a deceased or absent elder privately; hear the source-labelled Indrasena story; continue one safe value already yours; and close without afterlife promises. Ekadashi Shraddha and formal ancestor rites are separate lanes.",
+      "significance": {
+        "text": "Indira is an Ashvina Krishna Ekadashi whose Padma Purana account connects King Indrasena, Narada, his deceased father, a requested transfer of vow merit and attributed passage to Vishnu's abode. A bounded contemporary meaning is remembrance without afterlife certainty: continue one safe value or responsibility without making grief a debt.",
+        "source_ids": [
+          "padma-purana-indira-deshpande",
+          "padma-purana-indira-sanskrit",
+          "narada-purana-indira-formal",
+          "devam-indira-research"
+        ],
+        "scope_note": "Textual account plus Devam synthesis; not a universal national Shraddha."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-indira-indrasena-en",
+          "title": "Indrasena receives Narada's message",
+          "summary": "Yudhishthira asks Krishna about Ashvina Krishna Ekadashi. Krishna names Indira and tells of Vishnu-devoted King Indrasena of Mahishmati. Narada says he saw the king's father in Yama's world because of an attributed vow defect or former-birth obstruction; the father asks his son to give Indira merit so he may reach heaven. Narada prescribes Dashami baths, Shraddha, one meal and floor sleep; an Ekadashi fast, dental restriction, Salagrama bath, incense, sandal and vigil; and Dwadashi Vishnu worship, Shraddha with grains, feeding, gifts and a kin meal. The king observes with his palace, sons and servants; the source attributes his father's travel on Garuda to Vishnu's abode and later heaven for Indrasena. These are source claims, not consumer guarantees, afterlife facts or ordinary instructions.",
+          "tradition_scope": "Padma Purana Uttara Khanda 6.58, Deshpande English expression and Sanskrit witness",
+          "source_ids": [
+            "padma-purana-indira-deshpande",
+            "padma-purana-indira-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "narada-indira-formal-en",
+          "title": "Narada Purana's formal Indira expression",
+          "summary": "Narada Purana 4.120 names Indira and describes fasting, midday Shraddha before Salagrama, next-morning Padmanabha worship, Brahmana feeding and dakshina, with an ancestor-uplift claim. It corroborates a materially formal authority lane; it does not show that every Indira observer performs Shraddha.",
+          "tradition_scope": "Narada Purana formal vrata context",
+          "source_ids": [
+            "narada-purana-indira-formal"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "formal-source-practice-en",
+          "population_scope": "Reviewed Padma and Narada source expressions",
+          "description": "The texts describe fasting, vigil, Vishnu/Padmanabha and Salagrama worship, Shraddha, grain foods, Brahmana feeding/dakshina and Dwadashi closing. These are descriptive source facts, not generic instructions.",
+          "source_ids": [
+            "padma-purana-indira-deshpande",
+            "narada-purana-indira-formal"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "ordinary-remembrance-en",
+          "population_scope": "Ordinary North/West Smarta household synthesis",
+          "description": "A safe complete form is fed, hydrated, rested and material-free: Vishnu remembrance, a source-labelled story, optional private remembrance and one consent-led value or care action.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-indira-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "indira-private-minimum-en",
+          "label": "Private, material-free Indira remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Ordinary North/West Smarta household synthesis; not Shraddha, fasting or afterlife authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "materials": [
+            {
+              "item": "A quiet moment",
+              "required": false,
+              "substitutions": [
+                "A seated pause",
+                "Silence",
+                "No dedicated time"
+              ],
+              "source_ids": [
+                "devam-indira-research"
+              ]
+            },
+            {
+              "item": "Optional familiar Vishnu/Padmanabha support",
+              "required": false,
+              "substitutions": [
+                "A known prayer",
+                "An existing image or text",
+                "No image and silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-indira-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm local ordinary Indira Ekadashi and distinguish it from separately applicable Ekadashi Shraddha, a Vaishnava calendar or a family authority.",
+              "why": "Same-date labels do not create one universal procedure.",
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, medicine, insulin, hygiene, dental care, child feeding and sleep; begin no fast, vigil or parana.",
+              "why": "The safe ordinary route is complete without restriction.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Choose private remembrance, a general reflection on continuity, silence or no observance; no deceased person's name or details are required.",
+              "why": "Grief and privacy do not create a disclosure duty.",
+              "source_ids": [
+                "devam-pitru-paksha-remembrance-boundary",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Remember Vishnu or Padmanabha with a familiar name, family prayer or silence; no image, mantra, offering or material is required.",
+              "why": "This keeps the ordinary devotional centre without inventing formal worship.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Hear the complete Indrasena account: Narada's message, the attributed vow defect, the requested merit transfer, the formal Dashami-to-Dwadashi procedure, the king's observance and the attributed afterlife result.",
+              "why": "A source-labelled story includes difficult facts and does not become instruction.",
+              "source_ids": [
+                "padma-purana-indira-deshpande",
+                "padma-purana-indira-sanskrit",
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "State aloud or privately: these are source claims, not proof that a deceased person suffers, a descendant owes rescue or a ritual changes the afterlife.",
+              "why": "This prevents blame, coercion and false certainty.",
+              "source_ids": [
+                "padma-purana-indira-deshpande",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Optionally continue one safe value or care responsibility already yours, or choose no action.",
+              "why": "Meaning may be lived without contact, money, disclosure or ritual labour.",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "Close with normal food, water, rest and privacy; claim no merit transfer, ancestor uplift, heaven, sin removal, message or guaranteed result.",
+              "why": "A bounded close avoids invented parana and promises.",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Return to ordinary food, water, medicine, dental care, sleep and privacy. The material-free form is complete.",
+            "source_ids": [
+              "devam-indira-research"
+            ],
+            "scope_note": "Ordinary North/West Smarta household synthesis; not Shraddha, fasting or afterlife authority."
+          },
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-indira-research",
+            "icmr-type1-diabetes-fasting",
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-ekadashi-recurring-scaffold",
+            "padma-purana-indira-deshpande",
+            "padma-purana-indira-sanskrit",
+            "narada-purana-indira-formal"
+          ]
+        },
+        {
+          "procedure_id": "indira-family-standard-en",
+          "label": "Consent-led family remembrance",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Consent-led household reflection; not lineage, priest or performer authority.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "A private shared moment",
+              "required": false,
+              "substitutions": [
+                "Separate private pauses",
+                "Remote silence",
+                "No gathering"
+              ],
+              "source_ids": [
+                "devam-indira-research"
+              ]
+            },
+            {
+              "item": "Optional consent-cleared existing memory",
+              "required": false,
+              "substitutions": [
+                "One quality recalled without naming",
+                "No photograph",
+                "No writing"
+              ],
+              "source_ids": [
+                "devam-indira-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the date and that the group wants ordinary Indira remembrance, not a formal Ekadashi Shraddha.",
+              "why": "Applicability comes before procedure.",
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Offer an easy no, private exit and no-observance option before any name, image or story is introduced.",
+              "why": "Consent remains active in grief and family settings.",
+              "source_ids": [
+                "devam-pitru-paksha-remembrance-boundary",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep everyone fed, hydrated, medicated, rested and free to maintain normal hygiene and dental care.",
+              "why": "No participant owes restriction.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Ask only whether a name may be spoken; do not ask for death tithi, cause, image, family history or afterlife belief.",
+              "why": "The ordinary lane does not collect formal applicability or private grief data.",
+              "source_ids": [
+                "devam-pitru-paksha-remembrance-boundary",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Tell the full Indrasena-Narada account and label vow defect, Yama's world, merit transfer, Garuda and Vishnu's abode as claims of the source.",
+              "why": "Attribution preserves the text without asserting its cosmology.",
+              "source_ids": [
+                "padma-purana-indira-deshpande",
+                "padma-purana-indira-sanskrit",
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Each willing person may recall one quality or continue one accepted care responsibility; silence and no action are complete.",
+              "why": "No son, heir, priest, debtor, rescuer or recipient role is assigned.",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close without food rites, names list, payment, donation, forgiveness demand, reconciliation or promised result.",
+              "why": "The family form must not impersonate Shraddha.",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank willing participants, protect what was shared, and return to normal meals and rest without interpreting tears, dreams or silence as signs.",
+            "source_ids": [
+              "devam-indira-research"
+            ],
+            "scope_note": "Consent-led household reflection; not lineage, priest or performer authority."
+          },
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-indira-research",
+            "devam-pitru-paksha-remembrance-boundary",
+            "icmr-type1-diabetes-fasting",
+            "padma-purana-indira-deshpande",
+            "padma-purana-indira-sanskrit",
+            "narada-purana-indira-formal"
+          ]
+        },
+        {
+          "procedure_id": "indira-temple-participation-en",
+          "label": "Named temple or institution participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor-only guidance; the named institution owns its current formal practice.",
+          "form": "institutional_participation",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "Current named-institution information",
+              "required": false,
+              "substitutions": [
+                "Official notice",
+                "Direct desk confirmation",
+                "Do not attend if unverified"
+              ],
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-indira-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the institution's current date, visitor status, and whether its programme is Indira devotion, Ekadashi Shraddha or both.",
+              "why": "A shared date does not transfer authority.",
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Check fasting and food rules, Salagrama/image authority, ancestor-name privacy, priest eligibility, materials, fees, accessibility, photography, crowd plan and exit.",
+              "why": "These materially change safety, privacy and applicability.",
+              "source_ids": [
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remain only in the authorised visitor area and keep normal medical, food, water and mobility needs.",
+              "why": "Attendance does not require copying a formal restriction.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Do not handle Salagrama, food, pinda, water, remains or another person's image, and do not submit names or money under pressure.",
+              "why": "The ordinary pack grants no object, ritual or payment authority.",
+              "source_ids": [
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Leave if consent, privacy, health or verified authority is not maintained.",
+              "why": "A cancelled, remote or home form is complete.",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Do not copy the public rite home or infer an afterlife result from attendance.",
+              "why": "Institutional participation remains bounded to that institution.",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Exit safely and meet ordinary food, water, medicine and rest needs; attendance guarantees no religious or afterlife result.",
+            "source_ids": [
+              "devam-indira-research"
+            ],
+            "scope_note": "Visitor-only guidance; the named institution owns its current formal practice."
+          },
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-indira-research",
+            "narada-purana-indira-formal",
+            "icmr-type1-diabetes-fasting"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-en",
+          "scope": "Ordinary Indira across selected Indian states",
+          "difference": "The five reviewed calendar systems share the Indira identity. Language, month vocabulary, dress, food preference, familiar Vishnu name, remembered relationship, image/no-image and silence are minor differences, not separate state rituals.",
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "ekadashi-shraddha-en",
+          "scope": "Frozen Ekadashi Shraddha denominator",
+          "difference": "Death tithi, deceased relationship, performer, lineage, sampradaya, priest, pinda/tarpana, food, material and closing rules materially change the answer.",
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-indira-vrata-en",
+          "scope": "Padma/Narada formal Indira",
+          "difference": "Dashami preparation, fasting, floor sleep, dental restriction, vigil, Salagrama, Shraddha, grains, feeding, dakshina, kin roles and Dwadashi close require their own authority.",
+          "source_ids": [
+            "padma-purana-indira-deshpande",
+            "narada-purana-indira-formal",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "family-lineage-authority-en",
+          "scope": "Family, lineage, community, guru or priest authority",
+          "difference": "A material change to performer, eligibility, food, materials, timing or close cannot be inferred from state or model memory.",
+          "source_ids": [
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "vaishnava-calendar-en",
+          "scope": "Smarta/Vaishnava day or parana authority",
+          "difference": "Different sunrise, tithi/day-boundary, authority or closing window requires deterministic recomputation.",
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "institution-or-professional-en",
+          "scope": "Named institution, funeral, legal, remains, inheritance, grief or crisis need",
+          "difference": "Registration, names, fees, objects, officiants, privacy or professional duties are outside ordinary household authority.",
+          "source_ids": [
+            "mohfw-tele-manas",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "The complete ordinary form is non-fasting, fed, hydrated, rested, normal dental care, no-vigil, no-flame, no-incense, no-image-handling, no-food rite, no-water rite, no-purchase, no-donation, no-contact, no-disclosure, image-free, writing-free, photo-free and material-free.",
+        "Death, grief, illness, poverty or distress is not punishment, impurity, karma proof, vow failure or moral failure.",
+        "Do not claim where a deceased person is, relay messages, or promise merit transfer, ancestor uplift, heaven, salvation, sin removal, peace for the dead, dreams, signs or another result.",
+        "Caste, birth, gender, marital status, fertility, kinship, adoption, inheritance and priestly access do not rank dignity, grief, remembrance, food, prayer, safety or participation.",
+        "Do not approach, touch, move, wash, dress, photograph or handle a dead body, ashes, remains, memorial object, Salagrama or another person's image from this guide.",
+        "Do not perform pinda, tarpana or Shraddha, prepare ritual food, collect ancestor names, pay a fee or donate from this ordinary guide.",
+        "Grief has no required display or timetable; no public post, contact, forgiveness, reconciliation, disclosure or action is owed.",
+        "For difficult-to-manage grief or distress, seek qualified local help; Tele-MANAS offers 24x7 multilingual support at 14416 and 1800-89-14416, while imminent danger requires 112 or emergency care.",
+        "No one owes fasting, vigil, merit transfer, prayer, ancestor details, ritual labour, payment, food, donation or participation for another person's hope.",
+        "Serious harm, neglect, abuse or legal duties are not erased by fasting, Shraddha, merit transfer, prayer, hearing or regret.",
+        "Authored means only this reviewed lane pack; it is not projected, hosted, independently released or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "indira-ekadashi"
+      ],
+      "title": "इंदिरा एकादशी",
+      "short_answer": "पहले स्थानीय आश्विन कृष्ण एकादशी की पुष्टि करें। सुरक्षित सामान्य गृह रूप में भोजन, पानी और विश्राम जारी रखें; विष्णु को याद करें; चाहें तो किसी दिवंगत या अनुपस्थित बड़े को निजी रूप से स्मरण करें; स्रोत-नामित इंद्रसेन कथा सुनें; अपनी एक सुरक्षित जिम्मेदारी जारी रखें; और परलोक-वादे बिना समापन करें। एकादशी श्राद्ध और औपचारिक पितृ-कर्म अलग लेन हैं।",
+      "significance": {
+        "text": "इंदिरा आश्विन कृष्ण एकादशी है। पद्म पुराण की कथा राजा इंद्रसेन, नारद, उनके दिवंगत पिता, व्रत-पुण्य देने के अनुरोध और विष्णुलोक जाने के स्रोत-दावे को जोड़ती है। सीमित आज का अर्थ है परलोक-निश्चितता बिना स्मरण: शोक को ऋण बनाए बिना एक सुरक्षित मूल्य या जिम्मेदारी जारी रखना।",
+        "source_ids": [
+          "padma-purana-indira-deshpande",
+          "padma-purana-indira-sanskrit",
+          "narada-purana-indira-formal",
+          "devam-indira-research"
+        ],
+        "scope_note": "पाठ-कथा और Devam संश्लेषण; सार्वभौमिक राष्ट्रीय श्राद्ध नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-indira-indrasena-hi",
+          "title": "इंद्रसेन को नारद का संदेश",
+          "summary": "युधिष्ठिर कृष्ण से आश्विन कृष्ण एकादशी पूछते हैं। कृष्ण इंदिरा नाम देते और माहिष्मती के विष्णु-भक्त राजा इंद्रसेन की कथा कहते हैं। नारद बताते हैं कि स्रोत के अनुसार व्रत-दोष या पूर्वजन्म की बाधा से राजा के पिता यमलोक में हैं; पिता पुत्र से इंदिरा-पुण्य देने को कहते हैं। नारद दशमी के स्नान, श्राद्ध, एक भोजन और भूमि-शयन; एकादशी के उपवास, दाँत न साफ करने, शालग्राम-स्नान, धूप-चंदन और जागरण; तथा द्वादशी की विष्णु-पूजा, अनाज से श्राद्ध, ब्राह्मण-भोजन/दक्षिणा और संबंधियों के भोजन की विधि बताते हैं। राजा महल, पुत्रों और सेवकों सहित पालन करता है; स्रोत पिता के गरुड़ पर विष्णुलोक जाने और बाद में इंद्रसेन के स्वर्ग जाने का फल बताता है। ये स्रोत के दावे हैं, उपभोक्ता गारंटी, परलोक-तथ्य या सामान्य निर्देश नहीं।",
+          "tradition_scope": "पद्म पुराण उत्तरखंड 6.58, देशपांडे अंग्रेजी अभिव्यक्ति और संस्कृत साक्ष्य",
+          "source_ids": [
+            "padma-purana-indira-deshpande",
+            "padma-purana-indira-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "narada-indira-formal-hi",
+          "title": "नारद पुराण की औपचारिक इंदिरा अभिव्यक्ति",
+          "summary": "नारद पुराण 4.120 इंदिरा नाम देकर उपवास, शालग्राम के सामने मध्याह्न श्राद्ध, अगली सुबह पद्मनाभ-पूजा, ब्राह्मण-भोजन और दक्षिणा तथा पितृ-उद्धार का दावा बताता है। यह अलग औपचारिक प्राधिकार लेन का प्रमाण है; हर इंदिरा पालक के श्राद्ध करने का प्रमाण नहीं।",
+          "tradition_scope": "नारद पुराण औपचारिक व्रत संदर्भ",
+          "source_ids": [
+            "narada-purana-indira-formal"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "formal-source-practice-hi",
+          "population_scope": "समीक्षित पद्म और नारद स्रोत अभिव्यक्तियाँ",
+          "description": "पाठ उपवास, जागरण, विष्णु/पद्मनाभ और शालग्राम पूजा, श्राद्ध, अनाज, ब्राह्मण-भोजन/दक्षिणा और द्वादशी समापन बताते हैं। ये वर्णनात्मक स्रोत-तथ्य हैं, सामान्य निर्देश नहीं।",
+          "source_ids": [
+            "padma-purana-indira-deshpande",
+            "narada-purana-indira-formal"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "ordinary-remembrance-hi",
+          "population_scope": "सामान्य उत्तर/पश्चिम स्मार्त गृह-संश्लेषण",
+          "description": "सुरक्षित पूर्ण रूप भोजन-पानी सहित, विश्रामपूर्ण और सामग्री-रहित है: विष्णु-स्मरण, स्रोत-नामित कथा, वैकल्पिक निजी स्मरण और सहमति-आधारित एक मूल्य या देखभाल कार्य।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-indira-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "indira-private-minimum-hi",
+          "label": "निजी, सामग्री-रहित इंदिरा स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "सामान्य उत्तर/पश्चिम स्मार्त गृह-संश्लेषण; श्राद्ध, उपवास या परलोक प्राधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 12,
+          "materials": [
+            {
+              "item": "एक शांत क्षण",
+              "required": false,
+              "substitutions": [
+                "बैठकर विराम",
+                "मौन",
+                "अलग समय नहीं"
+              ],
+              "source_ids": [
+                "devam-indira-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित विष्णु/पद्मनाभ सहारा",
+              "required": false,
+              "substitutions": [
+                "परिचित प्रार्थना",
+                "पहले से उपलब्ध चित्र या पाठ",
+                "बिना चित्र मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-indira-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय सामान्य इंदिरा एकादशी की पुष्टि करें और इसे अलग लागू होने वाले एकादशी श्राद्ध, वैष्णव पंचांग या पारिवारिक प्राधिकार से अलग रखें।",
+              "why": "एक ही दिन के नाम एक सार्वभौमिक विधि नहीं बनाते।",
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, इंसुलिन, स्वच्छता, दाँतों की देखभाल, बाल-भोजन और नींद जारी रखें; उपवास, जागरण या पारण शुरू न करें।",
+              "why": "सुरक्षित सामान्य रूप बिना रोक के पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "निजी स्मरण, निरंतरता पर सामान्य चिंतन, मौन या कुछ न करना चुनें; मृत व्यक्ति का नाम या विवरण आवश्यक नहीं।",
+              "why": "शोक और निजता खुलासा करने का कर्तव्य नहीं बनाते।",
+              "source_ids": [
+                "devam-pitru-paksha-remembrance-boundary",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "विष्णु या पद्मनाभ को परिचित नाम, पारिवारिक प्रार्थना या मौन से याद करें; चित्र, मंत्र, अर्पण या सामग्री आवश्यक नहीं।",
+              "why": "यह औपचारिक पूजा गढ़े बिना भक्ति-केंद्र रखता है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "इंद्रसेन की पूरी कथा सुनें: नारद का संदेश, स्रोत में कहा गया व्रत-दोष, पुण्य-दान का अनुरोध, दशमी से द्वादशी की औपचारिक विधि, राजा का पालन और स्रोत में कहा गया परलोक-फल।",
+              "why": "स्रोत-नामित कथा कठिन तथ्यों को रखती है, उन्हें निर्देश नहीं बनाती।",
+              "source_ids": [
+                "padma-purana-indira-deshpande",
+                "padma-purana-indira-sanskrit",
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "कहें या मन में रखें: ये स्रोत के दावे हैं; इससे यह सिद्ध नहीं होता कि मृत व्यक्ति कष्ट में है, वंशज पर बचाने का ऋण है या अनुष्ठान परलोक बदलता है।",
+              "why": "यह दोष, दबाव और झूठी निश्चितता रोकता है।",
+              "source_ids": [
+                "padma-purana-indira-deshpande",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "चाहें तो पहले से अपनी एक सुरक्षित जिम्मेदारी या मूल्य जारी रखें; कोई काम न करना भी पूर्ण है।",
+              "why": "अर्थ के लिए संपर्क, पैसा, खुलासा या अनुष्ठान-श्रम जरूरी नहीं।",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "सामान्य भोजन, पानी, विश्राम और निजता से समापन करें; पुण्य-दान, पितृ-उद्धार, स्वर्ग, पाप-मुक्ति, संदेश या निश्चित फल न मानें।",
+              "why": "सीमित समापन कल्पित पारण और वादे रोकता है।",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, पानी, दवा, दाँतों की देखभाल, नींद और निजता पर लौटें। सामग्री-रहित रूप पूर्ण है।",
+            "source_ids": [
+              "devam-indira-research"
+            ],
+            "scope_note": "सामान्य उत्तर/पश्चिम स्मार्त गृह-संश्लेषण; श्राद्ध, उपवास या परलोक प्राधिकार नहीं।"
+          },
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-indira-research",
+            "icmr-type1-diabetes-fasting",
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-ekadashi-recurring-scaffold",
+            "padma-purana-indira-deshpande",
+            "padma-purana-indira-sanskrit",
+            "narada-purana-indira-formal"
+          ]
+        },
+        {
+          "procedure_id": "indira-family-standard-hi",
+          "label": "सहमति-आधारित पारिवारिक स्मरण",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सहमति-आधारित गृह-चिंतन; वंश, पुरोहित या कर्ता का प्राधिकार नहीं।",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "निजी साझा क्षण",
+              "required": false,
+              "substitutions": [
+                "अलग निजी विराम",
+                "दूर से मौन",
+                "कोई सभा नहीं"
+              ],
+              "source_ids": [
+                "devam-indira-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक सहमति-स्वीकृत पुरानी स्मृति",
+              "required": false,
+              "substitutions": [
+                "नाम बिना एक गुण",
+                "कोई फोटो नहीं",
+                "कोई लेखन नहीं"
+              ],
+              "source_ids": [
+                "devam-indira-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "तिथि और यह इच्छा पुष्टि करें कि समूह सामान्य इंदिरा स्मरण चाहता है, औपचारिक एकादशी श्राद्ध नहीं।",
+              "why": "प्रक्रिया से पहले लागू होना तय होता है।",
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "किसी नाम, चित्र या कथा से पहले सहज मना करने, निजी बाहर जाने और कुछ न करने का विकल्प दें।",
+              "why": "परिवार और शोक में सहमति सक्रिय रहती है।",
+              "source_ids": [
+                "devam-pitru-paksha-remembrance-boundary",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सबको भोजन, पानी, दवा, विश्राम, सामान्य स्वच्छता और दाँतों की देखभाल जारी रखने दें।",
+              "why": "किसी पर रोक का ऋण नहीं।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "केवल पूछें कि नाम बोला जा सकता है या नहीं; मृत्यु-तिथि, कारण, चित्र, पारिवारिक इतिहास या परलोक-विश्वास न पूछें।",
+              "why": "सामान्य लेन औपचारिक लागू-डेटा या निजी शोक-विवरण नहीं लेती।",
+              "source_ids": [
+                "devam-pitru-paksha-remembrance-boundary",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "पूरी इंद्रसेन-नारद कथा कहें और व्रत-दोष, यमलोक, पुण्य-दान, गरुड़ और विष्णुलोक को स्रोत के दावे बताएं।",
+              "why": "स्रोत-नामकरण पाठ बचाता है, ब्रह्मांड-वर्णन को तथ्य नहीं बनाता।",
+              "source_ids": [
+                "padma-purana-indira-deshpande",
+                "padma-purana-indira-sanskrit",
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "इच्छुक व्यक्ति एक गुण याद करे या स्वीकृत देखभाल-जिम्मेदारी जारी रखे; मौन और कोई काम न करना पूर्ण है।",
+              "why": "पुत्र, वारिस, पुरोहित, ऋणी, उद्धारक या प्राप्तकर्ता भूमिका न दें।",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "भोजन-विधि, नाम-सूची, शुल्क, दान, क्षमा-दबाव, मेल-मिलाप या फल-वादे बिना समापन करें।",
+              "why": "पारिवारिक रूप श्राद्ध की नकल नहीं करता।",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "इच्छुक लोगों को धन्यवाद दें, साझा बात निजी रखें और आँसू, स्वप्न या मौन को संकेत माने बिना सामान्य भोजन व विश्राम पर लौटें।",
+            "source_ids": [
+              "devam-indira-research"
+            ],
+            "scope_note": "सहमति-आधारित गृह-चिंतन; वंश, पुरोहित या कर्ता का प्राधिकार नहीं।"
+          },
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-indira-research",
+            "devam-pitru-paksha-remembrance-boundary",
+            "icmr-type1-diabetes-fasting",
+            "padma-purana-indira-deshpande",
+            "padma-purana-indira-sanskrit",
+            "narada-purana-indira-formal"
+          ]
+        },
+        {
+          "procedure_id": "indira-temple-participation-hi",
+          "label": "नामित मंदिर या संस्था में भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल आगंतुक मार्गदर्शन; नामित संस्था अपनी वर्तमान औपचारिक प्रथा की स्वामी है।",
+          "form": "institutional_participation",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "वर्तमान नामित-संस्था जानकारी",
+              "required": false,
+              "substitutions": [
+                "आधिकारिक सूचना",
+                "डेस्क से सीधी पुष्टि",
+                "सत्यापन न हो तो न जाएँ"
+              ],
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-indira-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "संस्था की वर्तमान तिथि, आगंतुक स्थिति और कार्यक्रम इंदिरा भक्ति, एकादशी श्राद्ध या दोनों में से क्या है, सत्यापित करें।",
+              "why": "एक ही तिथि प्राधिकार नहीं देती।",
+              "source_ids": [
+                "drik-indira-shraddha-2027",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "उपवास/भोजन नियम, शालग्राम/चित्र अधिकार, पितृ-नाम निजता, पुरोहित पात्रता, सामग्री, शुल्क, पहुँच, फोटोग्राफी, भीड़ योजना और निकास जाँचें।",
+              "why": "ये सुरक्षा, निजता और लागू होने को बड़ा बदलते हैं।",
+              "source_ids": [
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल अधिकृत आगंतुक क्षेत्र में रहें और सामान्य चिकित्सा, भोजन, पानी व गतिशीलता जरूरतें रखें।",
+              "why": "उपस्थिति औपचारिक रोक की नकल नहीं मांगती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "शालग्राम, भोजन, पिंड, जल, अवशेष या दूसरे का चित्र न संभालें; दबाव में नाम या पैसा न दें।",
+              "why": "सामान्य पैक वस्तु, अनुष्ठान या भुगतान अधिकार नहीं देता।",
+              "source_ids": [
+                "narada-purana-indira-formal",
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "सहमति, निजता, स्वास्थ्य या सत्यापित अधिकार न रहे तो निकलें।",
+              "why": "रद्द, दूरस्थ या गृह रूप पूर्ण है।",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सार्वजनिक विधि घर पर न उतारें और उपस्थिति से परलोक-फल न मानें।",
+              "why": "संस्था-भागीदारी उसी संस्था तक सीमित है।",
+              "source_ids": [
+                "devam-indira-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित निकलें और सामान्य भोजन, पानी, दवा व विश्राम लें; उपस्थिति किसी धार्मिक या परलोक-फल की गारंटी नहीं।",
+            "source_ids": [
+              "devam-indira-research"
+            ],
+            "scope_note": "केवल आगंतुक मार्गदर्शन; नामित संस्था अपनी वर्तमान औपचारिक प्रथा की स्वामी है।"
+          },
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-indira-research",
+            "narada-purana-indira-formal",
+            "icmr-type1-diabetes-fasting"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-hi",
+          "scope": "चुने राज्यों में सामान्य इंदिरा",
+          "difference": "पाँच समीक्षित पंचांग प्रणालियों में इंदिरा की पहचान समान है। भाषा, मास-शब्द, वस्त्र, भोजन पसंद, परिचित विष्णु नाम, स्मरण-संबंध, चित्र/बिना चित्र और मौन छोटे अंतर हैं, अलग राज्य-अनुष्ठान नहीं।",
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "ekadashi-shraddha-hi",
+          "scope": "स्थिर एकादशी श्राद्ध denominator",
+          "difference": "मृत्यु-तिथि, दिवंगत संबंध, कर्ता, वंश, संप्रदाय, पुरोहित, पिंड/तर्पण, भोजन, सामग्री और समापन उत्तर को बड़ा बदलते हैं।",
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-indira-vrata-hi",
+          "scope": "पद्म/नारद औपचारिक इंदिरा",
+          "difference": "दशमी तैयारी, उपवास, भूमि-शयन, दंत-रोक, जागरण, शालग्राम, श्राद्ध, अनाज, भोजन, दक्षिणा, संबंधी भूमिकाएँ और द्वादशी समापन को अलग प्राधिकार चाहिए।",
+          "source_ids": [
+            "padma-purana-indira-deshpande",
+            "narada-purana-indira-formal",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "family-lineage-authority-hi",
+          "scope": "परिवार, वंश, समुदाय, गुरु या पुरोहित प्राधिकार",
+          "difference": "कर्ता, पात्रता, भोजन, सामग्री, समय या समापन में बड़ा बदलाव राज्य या मॉडल-स्मृति से नहीं गढ़ा जा सकता।",
+          "source_ids": [
+            "devam-pitru-paksha-remembrance-boundary",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "vaishnava-calendar-hi",
+          "scope": "स्मार्त/वैष्णव दिन या पारण प्राधिकार",
+          "difference": "सूर्योदय, तिथि-दिन सीमा, प्राधिकार या समापन-खिड़की अलग हो तो नियत पुनर्गणना चाहिए।",
+          "source_ids": [
+            "drik-indira-shraddha-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "institution-or-professional-hi",
+          "scope": "नामित संस्था, अंतिम संस्कार, कानूनी, अवशेष, उत्तराधिकार, शोक या संकट जरूरत",
+          "difference": "पंजीकरण, नाम, शुल्क, वस्तु, कर्ता, निजता या विशेषज्ञ दायित्व सामान्य गृह-अधिकार से बाहर हैं।",
+          "source_ids": [
+            "mohfw-tele-manas",
+            "devam-indira-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सामान्य रूप गैर-उपवास, भोजन-पानी सहित, विश्रामपूर्ण, सामान्य दंत-देखभाल, बिना जागरण, अग्नि, धूप, चित्र-संभाल, भोजन-विधि, जल-विधि, खरीद, दान, संपर्क, खुलासा, चित्र, लेखन, फोटो और सामग्री का है।",
+        "मृत्यु, शोक, बीमारी, गरीबी या संकट दंड, अशुद्धि, कर्म-प्रमाण, व्रत-विफलता या नैतिक विफलता नहीं।",
+        "दिवंगत कहाँ हैं यह न बताएं, संदेश न पहुँचाएं और पुण्य-दान, पितृ-उद्धार, स्वर्ग, मोक्ष, पाप-मुक्ति, मृतक की शांति, स्वप्न, संकेत या अन्य फल का वादा न करें।",
+        "जाति, जन्म, लिंग, वैवाहिक स्थिति, प्रजनन, संबंध, दत्तक, उत्तराधिकार या पुरोहित पहुँच गरिमा, शोक, स्मरण, भोजन, प्रार्थना, सुरक्षा या भागीदारी नहीं तौलते।",
+        "इस मार्ग से शव, राख, अवशेष, स्मृति-वस्तु, शालग्राम या दूसरे का चित्र न छुएँ, हिलाएँ, धोएँ, सजाएँ, फोटो लें या संभालें।",
+        "पिंड, तर्पण या श्राद्ध न करें; अनुष्ठानिक भोजन न बनाएँ; पितृ-नाम न लें; शुल्क या दान न दें।",
+        "शोक का आवश्यक प्रदर्शन या समय-सारिणी नहीं; सार्वजनिक पोस्ट, संपर्क, क्षमा, मेल-मिलाप, खुलासा या काम देय नहीं।",
+        "शोक या संकट संभालना कठिन हो तो योग्य स्थानीय मदद लें; Tele-MANAS 14416 और 1800-89-14416 पर 24x7 बहुभाषी सहायता देता है; तत्काल खतरे में 112 या आपात देखभाल लें।",
+        "किसी दूसरे की आशा के लिए उपवास, जागरण, पुण्य-दान, प्रार्थना, पितृ-विवरण, अनुष्ठान-श्रम, भुगतान, भोजन, दान या भागीदारी देय नहीं।",
+        "गंभीर हानि, लापरवाही, दुर्व्यवहार या कानूनी दायित्व उपवास, श्राद्ध, पुण्य-दान, प्रार्थना, श्रवण या पछतावे से नहीं मिटते।",
+        "रचित का अर्थ केवल यह समीक्षित लेन पैक है; यह प्रक्षेपित, होस्ट, स्वतंत्र रूप से रिलीज-समीक्षित या प्रकाशित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
