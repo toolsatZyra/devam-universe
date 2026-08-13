@@ -1,0 +1,101 @@
+{
+  "contract": "DEVAM_GANESHA_LANE_SOURCE_REGISTRY_V1",
+  "version": 1,
+  "lane_id": "ganesha-consumer",
+  "snapshot_date": "2026-08-13",
+  "boundary": "Lane-local metadata only. Large source payloads remain outside Git. Current web facts require freshness review; a cited temple belief is not automatically textual history or archaeology.",
+  "narrative_sources": [
+    {
+      "source_id": "ganesha-purana-wikisource-revisions-batch-1",
+      "title": "Ganesha Purana Sanskrit Wikisource pinned revisions, batch 1",
+      "source_object_sha256": "14aab00040e20c533ce5fdd769d58fd4ebfec62dfd67729a569bb29124a23233",
+      "bytes": 2100027,
+      "rights_lane": "product_allowed_with_attribution_and_share_alike_compliance",
+      "source_role": "Fixed Sanskrit source for the first 50 provider pages of the selected two-khanda expression; no payload copied into this lane.",
+      "fixed": true
+    },
+    {
+      "source_id": "ganesha-purana-wikisource-revisions-batch-2",
+      "title": "Ganesha Purana Sanskrit Wikisource pinned revisions, batch 2",
+      "source_object_sha256": "0cf4723a2f49f5a431b03b0577b48cd1b8bbaee4355d8811a3d48e5509c1a1b3",
+      "bytes": 891270,
+      "rights_lane": "product_allowed_with_attribution_and_share_alike_compliance",
+      "source_role": "Fixed Sanskrit source for the last 15 provider pages of the selected two-khanda expression; no payload copied into this lane.",
+      "fixed": true
+    },
+    {
+      "source_id": "shiva-purana-kumara-khanda-13-20-fixed-web-expression",
+      "title": "Shiva Purana, Rudra Samhita, Kumara Khanda 13-20, J. L. Shastri English translation",
+      "publisher": "Wisdomlib presentation of the Motilal Banarsidass translation",
+      "rights_lane": "citation_only_sequence_reference",
+      "source_role": "Fixed chapter-and-verse sequence reference. Devam consumer narration must be independently expressed; no translation prose is copied.",
+      "fixed": true,
+      "observed_at": "2026-08-13",
+      "chapters": [
+        {"chapter": 13, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226133.html", "response_bytes": 30280, "response_sha256": "3b93f175661797b85ed1bf9a4c4b73d35d15ea5e091f87cb53dd6d4e6e7b9b66"},
+        {"chapter": 14, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226134.html", "response_bytes": 30594, "response_sha256": "7079f82ad3a55eeeeb9823715e34ca626e121df753b689909da347b4e31e8107"},
+        {"chapter": 15, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226135.html", "response_bytes": 33745, "response_sha256": "ee2e40654f8b1259aaa2405643de014dae0f5a7d4de59eb5feb776039bef8c6e"},
+        {"chapter": 16, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226136.html", "response_bytes": 31590, "response_sha256": "aa07e7f49f638afe2cd3ab31c0131c9220302214bf3824ec4a098e557094b5bb"},
+        {"chapter": 17, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226137.html", "response_bytes": 30923, "response_sha256": "062b80b34f17da3780379d207256da0579bdb439b3dfd10aebce96f044f8e0e0"},
+        {"chapter": 18, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226138.html", "response_bytes": 32704, "response_sha256": "dc8172fdf458dede68588560b7cf1d4038ab6314913efd23de74da399d09a76f"},
+        {"chapter": 19, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226139.html", "response_bytes": 29929, "response_sha256": "23f257d5ad1cde116d05258c41ec04a88239b920c6219c502cd0054a873d0345"},
+        {"chapter": 20, "url": "https://www.wisdomlib.org/hinduism/book/shiva-purana-english/d/doc226140.html", "response_bytes": 30955, "response_sha256": "302883a4de13bc9357ad6cbc018cc083e0828297d5642fa88817125c5fea087f"}
+      ]
+    },
+    {
+      "source_id": "mahabharata-ganguli-fixed-expression-adi-1",
+      "title": "Mahabharata, K. M. Ganguli expression, Adi Parva section 1",
+      "rights_lane": "public_domain_product_usable",
+      "source_role": "Fixed English expression for the Vyasa-Ganesha scribe episode; the repository-qualified source unit remains owned by the epics lane.",
+      "fixed": true,
+      "external_url": "https://www.gutenberg.org/ebooks/15474",
+      "cross_lane_copy_created": false
+    },
+    {
+      "source_id": "brahma-vaivarta-purana-sen-1920-ganesa-khanda",
+      "title": "Brahma-vaivarta Puranam, Ganesa Khanda, translated by Rajendra Nath Sen",
+      "date": "1920",
+      "publisher": "Panini Office, Allahabad",
+      "internet_archive_identifier": "brahmavaivartapu04allauoft",
+      "pdf_file": "brahmavaivartapu04allauoft.pdf",
+      "pdf_bytes": 33531264,
+      "pdf_md5": "0379d40695aeec95386a7f6385c2dcdd",
+      "pdf_sha1": "fe347c3b5723c18b8350570684fe4101acf924d4",
+      "rights_lane": "public_domain_product_usable",
+      "source_role": "Fixed public-domain English expression for Ganesa Khanda chapters 42-46; no payload copied into Git.",
+      "fixed": true,
+      "url": "https://archive.org/details/brahmavaivartapu04allauoft"
+    }
+  ],
+  "current_authoritative_sources": [
+    {
+      "source_id": "maharashtra-tourism-ashtavinayak-eight-2026-08-13",
+      "publisher": "Department of Tourism, Government of Maharashtra",
+      "rights_lane": "citation_only",
+      "source_role": "Current official tourism orientation and separately labelled local sacred narratives for the eight Ashtavinayak shrines.",
+      "freshness_review_by": "2027-02-13",
+      "pages": [
+        {"temple_id": "mayureshwar-morgaon", "url": "https://maharashtratourism.gov.in/ashtavinayak/morgaon/", "response_bytes": 641431, "response_sha256": "3b66cecd3bcabbd6fbbad88e4afeb9f0c152610f2125b6770158ad5e759c899c"},
+        {"temple_id": "siddhivinayak-siddhatek", "url": "https://maharashtratourism.gov.in/ashtavinayak/siddhatek/", "response_bytes": 640759, "response_sha256": "878b6febeaa08a51cbc0e801f2af90b322babd1033f77ae44f760e8ea4a1408c"},
+        {"temple_id": "ballaleshwar-pali", "url": "https://maharashtratourism.gov.in/ashtavinayak/pali/", "response_bytes": 641085, "response_sha256": "b881826e04be999d18d37f4341217d8c2fee671f3b40e1bbcd5f65bd2abd9671"},
+        {"temple_id": "varadavinayak-mahad", "url": "https://maharashtratourism.gov.in/ashtavinayak/mahad/", "response_bytes": 641602, "response_sha256": "8151e854a4ea8041240c44bc9c8107c89dbdb0997e622d93fd89b922d96cbd42"},
+        {"temple_id": "chintamani-theur", "url": "https://maharashtratourism.gov.in/ashtavinayak/theur/", "response_bytes": 631320, "response_sha256": "744581033c4e191779033e84290ee016d71912e3af3b4b51833bab505695b252"},
+        {"temple_id": "girijatmaj-lenyadri", "url": "https://maharashtratourism.gov.in/ashtavinayak/lenyadri/", "response_bytes": 641142, "response_sha256": "c6f33bfe7b9ed85840d685b4b6a773f24290e0b468bf7326ba5d8dea63fa61f2"},
+        {"temple_id": "vighneshwar-ozar", "url": "https://maharashtratourism.gov.in/ashtavinayak/ozar/", "response_bytes": 640441, "response_sha256": "7cab9e0eb1a61280704d4d109118e29cf39dc0cb3b8d62ea2444ef2aa40269e7"},
+        {"temple_id": "mahaganapati-ranjangaon", "url": "https://maharashtratourism.gov.in/ashtavinayak/ranjangaon/", "response_bytes": 640482, "response_sha256": "97b3e9b1473271b238a3eaf8fe7ccb7b5d2db7280a964d65349ef9100e910bea"}
+      ],
+      "observed_at": "2026-08-13"
+    },
+    {"source_id": "siddhivinayak-trust-about-2026-08-13", "publisher": "Shree Siddhivinayak Ganapati Mandir Trust", "url": "https://www.siddhivinayak.org/about-the-temple/", "observed_at": "2026-08-13", "response_bytes": 77562, "response_sha256": "47ffa1519ccb8735cd8732f2632ef3da7198342ba09a697d36aefb0053d4a4e9", "rights_lane": "citation_only", "source_role": "Official institutional identity, consecration date, image description, and trust history; not proof of every sacred-history claim.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "dagdusheth-trust-about-2026-08-13", "publisher": "Shrimant Dagdusheth Halwai Sarvajanik Ganpati Trust", "url": "https://www.dagdushethganpati.com/about", "observed_at": "2026-08-13", "response_bytes": 35009, "response_sha256": "2f6e68a51df9eed4fc13ab62ff30d3faa691634553de6b62d39f47ed0e5ed7e1", "rights_lane": "citation_only", "source_role": "Official institution history, public Ganeshotsav identity, and current social role.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "chittoor-district-kanipakam-2026-08-13", "publisher": "Chittoor District Administration, Government of Andhra Pradesh", "url": "https://chittoor.ap.gov.in/tourist-place/kanipakam/", "observed_at": "2026-08-13", "response_bytes": 121508, "response_sha256": "54c65a6f02e4f4b4a1700f003bb3ed9bf7fcc6bc2fd9cfc58edb8d3ac406ed02", "rights_lane": "citation_only", "source_role": "Current government identity and location; temple belief claims remain labelled as living belief.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "tiruchirappalli-district-rockfort-2026-08-13", "publisher": "Tiruchirappalli District Administration, Government of Tamil Nadu", "url": "https://tiruchirappalli.nic.in/tourist-place/rockfort-temple/", "observed_at": "2026-08-13", "response_bytes": 123110, "response_sha256": "565df1dd6f8fd4fa3df6d578fe914d227c1f338664d37e7ce3ee866c8dfabb52", "rights_lane": "citation_only", "source_role": "Current government identity, physical setting, access context, and surrounding geography.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "maharashtra-tourism-ganesh-chaturthi-2026-08-13", "publisher": "Department of Tourism, Government of Maharashtra", "url": "https://maharashtratourism.gov.in/festivals/ganesh-chaturthi/", "observed_at": "2026-08-13", "response_bytes": 626643, "response_sha256": "10d75343868789fb05dd12433e5a8335c277ddb82afb30ec2ecc46380f753e50", "rights_lane": "citation_only", "source_role": "Current Maharashtra festival context, household/community distinction, duration variation, and public Ganeshotsav account.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "goa-dip-chavath-2025", "publisher": "Department of Information and Publicity, Government of Goa", "url": "https://dip.goa.gov.in/governor-extends-ganesh-chaturthi-greetings/", "observed_at": "2026-08-13", "response_bytes": 122299, "response_sha256": "6c04a6f511b09d0a9cd53178c0d3dde1d158f13b1e62a299ab1514d6213039fc", "rights_lane": "citation_only", "source_role": "Current official evidence for the Chavath name, family gathering, Matoli, sweets, prayer, and eco-friendly emphasis; not a complete household vidhi.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "goa-art-culture-matoli-2025", "publisher": "Directorate of Art and Culture, Government of Goa", "url": "https://artandculture.goa.gov.in/pages/newsAndEvents/newEventDetail/ak9GdnRJR0xjZjRhSm82eTZlRHMzZz09OjqANFk2DOJ4rgbben5mIn7d", "observed_at": "2026-08-13", "response_bytes": 35918, "response_sha256": "3976f8f209ace07dbf1d63d6df8b222170fbe955051aa271148840fe389d2d12", "rights_lane": "citation_only", "source_role": "Current official evidence that Matoli is a household tradition and Dekhava a separately scoped public-mandal practice; not ritual authority.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "bmc-ganpati-visarjan-current-2026-08-13", "publisher": "Brihanmumbai Municipal Corporation", "url": "https://www.mcgm.gov.in/irj/portal/anonymous/qlGanpatiDeQR", "observed_at": "2026-08-13", "rights_lane": "citation_only", "source_role": "Current official participant guidance for artificial immersion ponds, separate nirmalya collection and avoidance of plastic bags; locations remain live and must be rechecked.", "freshness_review_by": "2026-09-01"},
+    {"source_id": "cpcb-revised-idol-immersion-guidelines-2020", "publisher": "Central Pollution Control Board", "url": "https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS8yOTVfMTU4OTI3Mzk4Nl9tZWRpYXBob3RvMjQzNjUucGRm", "observed_at": "2026-08-13", "rights_lane": "citation_only", "source_role": "National environmental and public-body framework for idol materials, designated immersion arrangements and waste segregation; local current orders control actual sites.", "freshness_review_by": "2027-02-13"},
+    {"source_id": "tn-dipr-vinayagar-immersion-guidelines-2025", "publisher": "Department of Information and Public Relations, Government of Tamil Nadu", "url": "https://dipr.tn.gov.in/ords/r/dipr/info-prdept103/press-release1?p33_file_id=17279&request=APPLICATION_PROCESS%3DGET_FILE", "observed_at": "2026-08-13", "rights_lane": "citation_only", "source_role": "Official Tamil Nadu evidence for natural biodegradable clay or mud, rejection of PoP/plastic/thermocol/toxic paint, and immersion only at district-notified places. The 2025 site list is expired; only the safety principles are reusable.", "freshness_review_by": "2026-09-01"},
+    {"source_id": "green-ganesha-chaturthi-tamil-nadu-ethnography-2023", "publisher": "Religions, MDPI", "url": "https://doi.org/10.3390/rel14010022", "observed_at": "2026-08-13", "rights_lane": "citation_only_cc_by", "source_role": "Peer-reviewed ethnographic context for Tamil Nadu naming, domestic clay-image practice and the modern environmental reframing. One field site does not establish every Tamil household procedure.", "freshness_review_by": "2028-08-13"}
+  ]
+}

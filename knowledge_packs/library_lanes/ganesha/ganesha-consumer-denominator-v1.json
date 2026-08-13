@@ -1,0 +1,160 @@
+{
+  "contract": "DEVAM_GANESHA_CONSUMER_DENOMINATOR_V1",
+  "version": 1,
+  "lane_id": "ganesha-consumer",
+  "frozen_on": "2026-08-13",
+  "coordination_commit": "cf0e9406ea2120a77d9b2c4cd5552148e0a9aaaf",
+  "status": "frozen_before_new_story_authoring",
+  "boundary": "This is the finite consumer-MVP Ganesha lane, not every Ganesha text, temple, form, festival, family practice, regional tradition, or historical claim.",
+  "completion_rule": "Every accepted story family has a substantial beginning-to-end English and Hindi scene sequence; every accepted practice lane meets the ritual contract for its named applicability; every selected temple has a current evidence-scoped bilingual record; all required characters, places, and living connections are represented; and every remaining selected-scope gap is zero or explicitly blocked.",
+  "story_families": [
+    {
+      "story_family_id": "ganesha-purana-four-yuga-spine",
+      "title_en": "The four-yuga Ganesha Purana narrative spine",
+      "title_hi": "गणेशपुराण की चार-युग कथा-रीढ़",
+      "selected_expression": "Exact pinned Sanskrit Wikisource Ganesha Purana, Krida Khanda 1-155",
+      "source_scope": "Krida Khanda chapters 1-155, reconciled through the four principal avatar movements without claiming every discourse passage is a separate consumer scene",
+      "source_refs": ["ganesha-purana-wikisource-revisions-batch-1", "ganesha-purana-wikisource-revisions-batch-2"],
+      "required_terminal": "The selected expression's Krida Khanda and whole-work closing formulas",
+      "state_at_freeze": "source_complete_story_not_authored"
+    },
+    {
+      "story_family_id": "parvati-guardian-battle-restoration",
+      "title_en": "Parvati's guardian, the battle at the doorway, and Ganesha's restoration",
+      "title_hi": "पार्वती का द्वारपाल, द्वार का संघर्ष और गणेश का पुनर्जीवन",
+      "selected_expression": "Shiva Purana, Rudra Samhita, Kumara Khanda 13-18",
+      "source_scope": "One explicitly Shiva-Purana account; other birth accounts remain variants rather than corrections",
+      "source_refs": ["shiva-purana-kumara-khanda-13-20-fixed-web-expression"],
+      "required_terminal": "Ganesha restored, recognized, and given his place among the ganas",
+      "state_at_freeze": "fixed_source_identified_story_not_authored"
+    },
+    {
+      "story_family_id": "family-circumambulation-contest",
+      "title_en": "The brothers' journey and Ganesha's circumambulation of his parents",
+      "title_hi": "दो भाइयों की यात्रा और गणेश की माता-पिता की परिक्रमा",
+      "selected_expression": "Shiva Purana, Rudra Samhita, Kumara Khanda 19-20",
+      "source_scope": "The selected Shiva-Purana family contest and its consequence; not a universal account of Kartikeya's family relations",
+      "source_refs": ["shiva-purana-kumara-khanda-13-20-fixed-web-expression"],
+      "required_terminal": "The contest is resolved and its family consequences are retained",
+      "state_at_freeze": "fixed_source_identified_story_not_authored"
+    },
+    {
+      "story_family_id": "vyasa-and-ganesha-scribe",
+      "title_en": "Vyasa and Ganesha make the Mahabharata writable",
+      "title_hi": "व्यास और गणेश महाभारत को लिखित रूप देते हैं",
+      "selected_expression": "K. M. Ganguli Mahabharata, Adi Parva section 1",
+      "source_scope": "The selected Ganguli expression, while disclosing that the scribe episode is not present in the critical-edition main text",
+      "source_refs": ["mahabharata-ganguli-fixed-expression-adi-1"],
+      "required_terminal": "The conditions, composition, and writing collaboration are complete",
+      "state_at_freeze": "fixed_source_available_story_not_authored"
+    },
+    {
+      "story_family_id": "parashurama-and-the-broken-tusk",
+      "title_en": "Parashurama, the guarded doorway, and the broken tusk",
+      "title_hi": "परशुराम, रोका गया द्वार और टूटा हुआ दाँत",
+      "selected_expression": "Brahma Vaivarta Purana, Ganesa Khanda 42-45, Rajendra Nath Sen 1920 English expression",
+      "source_scope": "One source-attributed explanation of Ekadanta; other broken-tusk accounts remain separately named variants",
+      "source_refs": ["brahma-vaivarta-purana-sen-1920-ganesa-khanda"],
+      "required_terminal": "Conflict, injury, response, and reconciliation are complete",
+      "state_at_freeze": "public-domain-source-identified-story_not_authored"
+    },
+    {
+      "story_family_id": "ganesha-and-tulasi",
+      "title_en": "Ganesha and Tulasi: desire, refusal, and mutual curses",
+      "title_hi": "गणेश और तुलसी: इच्छा, अस्वीकार और परस्पर शाप",
+      "selected_expression": "Brahma Vaivarta Purana, Ganesa Khanda 46, Rajendra Nath Sen 1920 English expression",
+      "source_scope": "A period-bound Puranic encounter; it is not modern relationship advice and does not erase Tulasi's later sacred standing",
+      "source_refs": ["brahma-vaivarta-purana-sen-1920-ganesa-khanda"],
+      "required_terminal": "Both speeches, consequences, and the narrative's closing resolution are retained",
+      "state_at_freeze": "public-domain-source-identified-story_not_authored"
+    }
+  ],
+  "blocked_story_extensions": [
+    {
+      "extension_id": "mudgala-purana-eight-form-cycle",
+      "reason": "The retained nine-khanda carrier is internal_only_rights_review_pending, has no usable text layer or translation, and cannot lawfully ground consumer copy in this lane.",
+      "required_to_unblock": "A product-cleared fixed expression plus source-aligned English/Hindi translation or independently reviewable transcription.",
+      "not_counted_as_completed": true
+    },
+    {
+      "extension_id": "every-puranic-birth-and-broken-tusk-variant",
+      "reason": "The consumer MVP selects and labels representative fixed expressions; an exhaustive all-Purana variant concordance is a later denominator.",
+      "required_to_unblock": "A separately frozen variant-concordance denominator.",
+      "not_counted_as_completed": true
+    }
+  ],
+  "practice_lanes": [
+    {
+      "practice_lane_id": "ganesh-chaturthi-west-india-smarta-household",
+      "applicability": "West India Smarta household or individual, with family practice taking priority",
+      "existing_record": "knowledge_packs/rituals/ganesh-chaturthi-west-india-content-v1.json",
+      "state_at_freeze": "reusable_user_complete_internal_beta_requires_lane_local_audit_and_link"
+    },
+    {
+      "practice_lane_id": "maharashtra-public-ganeshotsav-participant",
+      "applicability": "A visitor or community participant in a Maharashtra public Ganeshotsav; not pandal management or priest-led liturgy",
+      "existing_record": null,
+      "state_at_freeze": "missing"
+    },
+    {
+      "practice_lane_id": "goa-chavath-household-participant",
+      "applicability": "A Goa household participant seeking a scoped Chavath orientation; established family practice takes priority",
+      "existing_record": null,
+      "state_at_freeze": "missing"
+    },
+    {
+      "practice_lane_id": "south-india-vinayaka-chaturthi-household-participant",
+      "applicability": "A Tamil Nadu household participant seeking a bounded Pillaiyar/Vinayaka Chaturthi orientation; not a pan-South-India universal ritual",
+      "existing_record": null,
+      "state_at_freeze": "missing"
+    }
+  ],
+  "temples": [
+    {"temple_id": "mayureshwar-morgaon", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "siddhivinayak-siddhatek", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "ballaleshwar-pali", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "varadavinayak-mahad", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "chintamani-theur", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "girijatmaj-lenyadri", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "vighneshwar-ozar", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "mahaganapati-ranjangaon", "group": "ashtavinayak", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "siddhivinayak-prabhadevi", "group": "major-living-temple", "state_at_freeze": "partial_official_material_exists"},
+    {"temple_id": "dagdusheth-halwai-pune", "group": "major-living-temple", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "varasiddhi-vinayaka-kanipakam", "group": "major-living-temple", "state_at_freeze": "missing_current_record"},
+    {"temple_id": "uchi-pillayar-tiruchirappalli", "group": "major-living-temple", "state_at_freeze": "missing_current_record"}
+  ],
+  "required_character_families": [
+    "Ganesha and his source-specific names/forms",
+    "Parvati, Shiva, Kartikeya, and the Shiva ganas",
+    "Vyasa and Brahma in the selected Mahabharata scribe account",
+    "Parashurama in the selected broken-tusk account",
+    "Tulasi in the selected Brahma Vaivarta account",
+    "the four principal Ganesha Purana avatar movements and their named opponents/allies",
+    "Riddhi and Siddhi only where the selected expression or living temple evidence supports them",
+    "Mushika only with source-specific identity and role"
+  ],
+  "required_place_families": [
+    "Kailasa as narrative geography",
+    "the composition setting of the selected Mahabharata scribe account without invented coordinates",
+    "the places traversed by the selected Ganesha Purana narrative spine",
+    "the eight Ashtavinayak locations",
+    "Mumbai and Pune public Ganeshotsav contexts",
+    "Goa Chavath context",
+    "Tiruchirappalli and Kanipakam living-temple contexts"
+  ],
+  "living_connection_requirements": [
+    "Each story family links to Ganesha and its source expression.",
+    "Ganesh Chaturthi links to the household, public-participant, Goa, and Tamil Nadu lanes without treating them as one procedure.",
+    "The Ashtavinayak circuit links eight distinct temple identities without collapsing their local narratives.",
+    "Temple sacred narratives, institutional history, current worship, and visitor facts remain separate claim scopes.",
+    "Cross-lane identities are submitted as typed proposals; unresolved owner-lane targets remain unresolved."
+  ],
+  "freeze_counts": {
+    "accepted_story_families": 6,
+    "blocked_story_extensions": 2,
+    "accepted_practice_lanes": 4,
+    "selected_temples": 12,
+    "ashtavinayak_temples": 8,
+    "other_major_living_temples": 4
+  }
+}

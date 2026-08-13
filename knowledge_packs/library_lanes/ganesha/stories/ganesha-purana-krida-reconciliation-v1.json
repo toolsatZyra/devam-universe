@@ -1,0 +1,76 @@
+{
+  "contract": "DEVAM_LONG_SOURCE_RECONCILIATION_V1",
+  "reconciliation_id": "ganesha-purana-krida-1-155-v1",
+  "lane_id": "ganesha-consumer",
+  "source_expression": "Pinned Sanskrit Wikisource Ganesha Purana, Krida Khanda 1-155",
+  "source_refs": ["ganesha-purana-wikisource-revisions-batch-1", "ganesha-purana-wikisource-revisions-batch-2"],
+  "status": "reconciled_for_consumer_authoring",
+  "translation_boundary": "The source is Sanskrit. English and Hindi consumer narration are Devam source-aligned renderings, not inherited translations or a claim to a critical edition.",
+  "coverage_rule": "Every integer chapter 1-155 occurs once in the ordered ranges below. Compression keeps the source's frame, transitions, teaching sequence and ending; it does not imply that every subsidiary combat is a separate story family.",
+  "movements": [
+    {
+      "movement_id": "vinayaka-mahotkata-satya-yuga",
+      "chapters": {"start": 1, "end": 72},
+      "consumer_form": "Nine scenes",
+      "ranges": [
+        {"start": 1, "end": 5, "function": "Frame, four-yuga forecast, Aditi and Kashyapa's longing, and the approach of the first manifestation"},
+        {"start": 6, "end": 10, "function": "Vinayaka's birth, childhood disclosure and the names by which the child is recognized"},
+        {"start": 11, "end": 20, "function": "Departure toward Kashi, repeated attacks on the road and the city's rescue"},
+        {"start": 21, "end": 30, "function": "Childhood encounters, demons released or defeated, devotion tested, and Vamana's story embedded in the narration"},
+        {"start": 31, "end": 38, "function": "Children restored, Shami and Mandara accounts, and the widening sacred landscape"},
+        {"start": 39, "end": 50, "function": "Durasada and Dhundhiraja, Divodasa, boons, and a vision of Ganesha's realm"},
+        {"start": 51, "end": 60, "function": "Threats converge; Narantaka advances, the king is seized and released, and the war opens"},
+        {"start": 61, "end": 69, "function": "Devantaka's siege after Narantaka's fall, cosmic disclosure, strategy, weapon combat and the defeat of the second brother"},
+        {"start": 70, "end": 72, "function": "Return to Kashi, leave-taking, return to the hermitage and close of Vinayaka's life movement"}
+      ]
+    },
+    {
+      "movement_id": "mayuresha-treta-yuga",
+      "chapters": {"start": 73, "end": 126},
+      "consumer_form": "Eight scenes",
+      "ranges": [
+        {"start": 73, "end": 80, "function": "Sindhu's birth and boon, the growth of his power, captivity of the gods, and the turn toward Gauri"},
+        {"start": 81, "end": 85, "function": "Gauri's discipline, the child's manifestation, and the first attacks"},
+        {"start": 86, "end": 95, "function": "A chain of shape-changing adversaries, the child's victories and a disclosure of cosmic form"},
+        {"start": 96, "end": 105, "function": "Dispute, alliances and boons, the Kamalasura conflict, and another vision that corrects divisive understanding"},
+        {"start": 106, "end": 113, "function": "Preparation for the campaign, counsels, envoys and the deaths of Sindhu's allies Mitra and Kaustubha"},
+        {"start": 114, "end": 120, "function": "War spreads, Durga speaks, Kala and Vikala fall, and Sindhu faces counsel from his father"},
+        {"start": 121, "end": 125, "function": "The decisive struggle with Sindhu and the freeing of the powers he had confined"},
+        {"start": 126, "end": 126, "function": "Mayuresha's movement closes after order is restored"}
+      ]
+    },
+    {
+      "movement_id": "gajanana-dvapara-yuga",
+      "chapters": {"start": 127, "end": 137},
+      "consumer_form": "Four scenes",
+      "ranges": [
+        {"start": 127, "end": 130, "function": "Sindura's origin and violence, Gauri's longing and Gajanana's manifestation"},
+        {"start": 131, "end": 133, "function": "Conflict with the Gandharvas, journey to Kailasa and meeting Parashara"},
+        {"start": 134, "end": 136, "function": "The mouse vehicle's source-specific past, the campaign and Sindura's defeat"},
+        {"start": 137, "end": 137, "function": "King Varenya asks for teaching after failing to recognize the abandoned divine child"}
+      ]
+    },
+    {
+      "movement_id": "ganesha-gita-and-frame-close",
+      "chapters": {"start": 138, "end": 155},
+      "consumer_form": "Five scenes",
+      "ranges": [
+        {"start": 138, "end": 140, "function": "Varenya's questions and the opening disciplines of the Ganesha Gita"},
+        {"start": 141, "end": 145, "function": "Action, knowledge, steadiness, devotion and the vision of the divine woven through ordinary duty"},
+        {"start": 146, "end": 148, "function": "The teaching's culmination and Varenya's changed understanding"},
+        {"start": 149, "end": 152, "function": "Sages depart, Vyasa receives grace at Siddhikshetra, and Somakanta and Hemakantha reach their narrative resolutions"},
+        {"start": 153, "end": 153, "function": "Somakanta's people follow him to Ganesha's realm and the frame's royal journey is resolved"},
+        {"start": 154, "end": 154, "function": "The fifty-six Vinayakas of Kashi are named within the source's sacred geography"},
+        {"start": 155, "end": 155, "function": "Fruit-of-hearing claims, final illustrative accounts and the selected text's whole-work closing formulas"}
+      ]
+    }
+  ],
+  "audit": {
+    "expected_chapter_count": 155,
+    "covered_chapter_count": 155,
+    "duplicate_chapters": [],
+    "missing_chapters": [],
+    "source_end_verified": true,
+    "terminal_colophon": "Krida Khanda chapter 155, phalashruti and whole-work close"
+  }
+}

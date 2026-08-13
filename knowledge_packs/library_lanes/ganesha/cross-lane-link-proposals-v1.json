@@ -1,0 +1,119 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ganesha-consumer-links-v1",
+  "lane_id": "ganesha-consumer",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "four-yuga-spine-depicts-ganesha",
+      "from_ref": {"lane_local_id": "story/ganesha-purana-four-yuga-spine"},
+      "to_ref": {"canonical_id": "devam:being:ganesha"},
+      "relationship_family": "story", "predicate": "depicts_source_specific_manifestations_of", "directionality": "directed",
+      "consumer_label": {"en": "tells four source-specific Ganesha movements", "hi": "गणेश के चार स्रोत-विशिष्ट रूपों की कथा कहती है"},
+      "scope": {"statement": "Only the pinned Ganesha Purana Krida Khanda 1-155 expression.", "source_expression_scope": "Ganesha Purana Krida Khanda 1-155", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "ganesha-purana-krida-1-155-v1", "claim_scope": "Four movements reconciled across all 155 chapters."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "doorway-restoration-depicts-ganesha",
+      "from_ref": {"lane_local_id": "story/parvati-guardian-battle-restoration"},
+      "to_ref": {"canonical_id": "devam:being:ganesha"},
+      "relationship_family": "story", "predicate": "depicts_birth_and_restoration_of", "directionality": "directed",
+      "consumer_label": {"en": "tells one birth, death and restoration account", "hi": "जन्म, मृत्यु और पुनर्जीवन की एक कथा कहती है"},
+      "scope": {"statement": "Shiva Purana Shvetakalpa doorway account only.", "source_expression_scope": "Shiva Purana Kumara Khanda 13-18", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "shiva-purana-family-cycle-v1", "claim_scope": "Chapters 13-18 beginning-to-end scene sequence."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "family-contest-depicts-ganesha",
+      "from_ref": {"lane_local_id": "story/family-circumambulation-contest"},
+      "to_ref": {"canonical_id": "devam:being:ganesha"},
+      "relationship_family": "story", "predicate": "depicts_family_contest_of", "directionality": "directed",
+      "consumer_label": {"en": "tells Ganesha's family circumambulation contest", "hi": "गणेश की पारिवारिक परिक्रमा-प्रतियोगिता कहती है"},
+      "scope": {"statement": "Shiva Purana family account and its Kartikeya consequence only.", "source_expression_scope": "Shiva Purana Kumara Khanda 19-20", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "shiva-purana-family-cycle-v1", "claim_scope": "Chapters 19-20 sequence including family consequences."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "scribe-story-depicts-ganesha",
+      "from_ref": {"lane_local_id": "story/vyasa-and-ganesha-scribe"},
+      "to_ref": {"canonical_id": "devam:being:ganesha"},
+      "relationship_family": "story", "predicate": "depicts_as_scribe_collaborator", "directionality": "directed",
+      "consumer_label": {"en": "shows Ganesha as Vyasa's writing collaborator", "hi": "गणेश को व्यास के लेखन-सहकर्मी रूप में दिखाती है"},
+      "scope": {"statement": "Selected Ganguli Adi Parva section 1 expression only.", "source_expression_scope": "Ganguli Mahabharata Adi Parva section 1", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "scribe-tusk-tulasi-stories-v1", "claim_scope": "Reciprocal conditions and composition collaboration."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "scribe-story-belongs-to-mahabharata-expression",
+      "from_ref": {"lane_local_id": "story/vyasa-and-ganesha-scribe"},
+      "to_ref": {"canonical_id": "devam:source-expression:mahabharata-ganguli-consumer-v1"},
+      "relationship_family": "text", "predicate": "is_episode_in_selected_expression", "directionality": "directed",
+      "consumer_label": {"en": "appears in the selected Ganguli expression", "hi": "चुनी हुई गांगुली पाठ-अभिव्यक्ति में आती है"},
+      "scope": {"statement": "Vulgate/Ganguli expression; absent from critical-edition main text.", "source_expression_scope": "Ganguli Mahabharata Adi Parva section 1", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "mahabharata-ganguli-fixed-expression-adi-1", "claim_scope": "Brahma recommends Ganesha and the two conditions follow."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "broken-tusk-story-depicts-ganesha",
+      "from_ref": {"lane_local_id": "story/parashurama-and-broken-tusk"},
+      "to_ref": {"canonical_id": "devam:being:ganesha"},
+      "relationship_family": "story", "predicate": "explains_ekadanta_in_source", "directionality": "directed",
+      "consumer_label": {"en": "gives one source-specific Ekadanta explanation", "hi": "एकदन्त की एक स्रोत-विशिष्ट व्याख्या देती है"},
+      "scope": {"statement": "Brahma Vaivarta Ganesa Khanda 42-45 only; other tusk accounts remain variants.", "source_expression_scope": "Brahma Vaivarta Ganesa Khanda 42-45", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "scribe-tusk-tulasi-stories-v1", "claim_scope": "Doorway conflict, axe injury and reconciliation."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "tulasi-story-depicts-ganesha",
+      "from_ref": {"lane_local_id": "story/ganesha-and-tulasi"},
+      "to_ref": {"canonical_id": "devam:being:ganesha"},
+      "relationship_family": "story", "predicate": "depicts_refusal_and_reciprocal_curse_of", "directionality": "directed",
+      "consumer_label": {"en": "tells Ganesha's refusal and reciprocal curse", "hi": "गणेश के अस्वीकार और प्रतिशाप की कथा कहती है"},
+      "scope": {"statement": "Brahma Vaivarta Ganesa Khanda 46, not modern relationship advice.", "source_expression_scope": "Brahma Vaivarta Ganesa Khanda 46", "time_scope": null},
+      "evidence_refs": [{"evidence_kind": "source_passage", "ref": "scribe-tusk-tulasi-stories-v1", "claim_scope": "Refusal, both curses and later sacred standing retained."}],
+      "confidence": "high", "target_resolution": "existing_anchor", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "observance-has-west-india-household-lane",
+      "from_ref": {"canonical_id": "devam:observance:ganesh-chaturthi"},
+      "to_ref": {"lane_local_id": "practice/west-india-smarta-household"},
+      "relationship_family": "practice", "predicate": "has_scoped_practice_lane", "directionality": "directed",
+      "consumer_label": {"en": "has a West-India Smarta household lane", "hi": "पश्चिम-भारत का स्मार्त घरेलू मार्ग रखती है"},
+      "scope": {"statement": "West India Smarta household or individual; family practice overrides.", "geography_codes": ["west-india"], "tradition_codes": ["smarta-west-india"], "time_scope": "Bhadrapada Shukla Chaturthi resolved by Panchang", "source_expression_scope": null},
+      "evidence_refs": [{"evidence_kind": "ritual_lane", "ref": "ganesh-chaturthi-west-india-content-v1", "claim_scope": "Existing complete internal-beta household content."}],
+      "confidence": "high", "target_resolution": "lane_local", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "observance-has-maharashtra-public-lane",
+      "from_ref": {"canonical_id": "devam:observance:ganesh-chaturthi"},
+      "to_ref": {"lane_local_id": "practice/maharashtra-public-participant"},
+      "relationship_family": "practice", "predicate": "has_scoped_practice_lane", "directionality": "directed",
+      "consumer_label": {"en": "has a Maharashtra public-participant lane", "hi": "महाराष्ट्र का सार्वजनिक सहभागी मार्ग रखती है"},
+      "scope": {"statement": "Maharashtra visitor or participant, excluding management and priestly liturgy.", "geography_codes": ["IN-MH"], "tradition_codes": ["public-ganeshotsav"], "time_scope": "Host institution's announced duration", "source_expression_scope": null},
+      "evidence_refs": [{"evidence_kind": "ritual_lane", "ref": "maharashtra-public-ganeshotsav-participant", "claim_scope": "Complete public participant procedure and safety boundary."}],
+      "confidence": "high", "target_resolution": "lane_local", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "observance-has-goa-chavath-lane",
+      "from_ref": {"canonical_id": "devam:observance:ganesh-chaturthi"},
+      "to_ref": {"lane_local_id": "practice/goa-chavath-household"},
+      "relationship_family": "practice", "predicate": "has_scoped_practice_lane", "directionality": "directed",
+      "consumer_label": {"en": "has a Goan household Chavath lane", "hi": "गोवा का घरेलू चवथ मार्ग रखती है"},
+      "scope": {"statement": "Goa household guest or family participant; household authority governs.", "geography_codes": ["IN-GA"], "tradition_codes": ["goa-chavath-household"], "time_scope": "Family-selected duration after local Panchang resolution", "source_expression_scope": null},
+      "evidence_refs": [{"evidence_kind": "living_practice", "ref": "goa-dip-chavath-2025", "claim_scope": "Chavath, family reunion, Matoli, sweets and prayer."}],
+      "confidence": "high", "target_resolution": "lane_local", "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "observance-has-tamil-nadu-household-lane",
+      "from_ref": {"canonical_id": "devam:observance:ganesh-chaturthi"},
+      "to_ref": {"lane_local_id": "practice/tamil-nadu-vinayagar-household"},
+      "relationship_family": "practice", "predicate": "has_scoped_practice_lane", "directionality": "directed",
+      "consumer_label": {"en": "has a Tamil Nadu Vinayagar household lane", "hi": "तमिलनाडु का विनायगर घरेलू मार्ग रखती है"},
+      "scope": {"statement": "Tamil Nadu household participant only, not pan-South-India equivalence.", "geography_codes": ["IN-TN"], "tradition_codes": ["tamil-household"], "time_scope": "Local Panchang and current district immersion order", "source_expression_scope": null},
+      "evidence_refs": [{"evidence_kind": "ritual_lane", "ref": "south-india-vinayaka-chaturthi-household-participant", "claim_scope": "Complete bounded household participant procedure."}],
+      "confidence": "high", "target_resolution": "lane_local", "integration_status": "proposed"
+    }
+  ]
+}
