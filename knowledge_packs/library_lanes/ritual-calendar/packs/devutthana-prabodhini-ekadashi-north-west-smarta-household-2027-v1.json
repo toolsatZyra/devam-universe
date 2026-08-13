@@ -1,0 +1,1249 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "devutthana-prabodhini-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": [
+    "devutthana-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-WB",
+      "IN-BR",
+      "IN-CG",
+      "IN-KA",
+      "IN-TN",
+      "IN-KL",
+      "IN-OD",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "smarta-north-india",
+      "smarta-west-india",
+      "ordinary-ekadashi-household"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted ordinary Panchang resolve Kartika Shukla Ekadashi?",
+      "Is this ordinary Devutthana, a Gauna/Vaishnava/Mahadwadashi authority, Tulasi Vivah, or BAPS Prabodhini?",
+      "Does anyone require normal food, water, medicine, insulin, sleep, child care or a no-plant/no-flame form?",
+      "Is a named Chaturmas close, temple programme, hatadi/annakut, prasad or parana being requested?",
+      "Would a private material-free form with no disclosure or action be safer?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "smarta-north-india",
+        "observance_slug": "devutthana-ekadashi"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "smarta-west-india",
+        "observance_slug": "devutthana-ekadashi"
+      },
+      {
+        "region_code": "IN-WB",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "devutthana-ekadashi"
+      },
+      {
+        "region_code": "IN-KA",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "devutthana-ekadashi"
+      },
+      {
+        "region_code": "IN-AP",
+        "tradition_code": "ordinary-ekadashi-household",
+        "observance_slug": "devutthana-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "devutthana-ekadashi",
+        "language_code": "en",
+        "note": "Devutthana, Prabodhini, Haribodhini and Deva Utthapan are ordinary aliases here; Tulasi Vivah, BAPS Prabodhini and authority-specific Gauna/Vaishnava dates remain separate material routes."
+      },
+      {
+        "observance_slug": "devutthana-ekadashi",
+        "language_code": "hi",
+        "note": "यहाँ देवउठनी, प्रबोधिनी, हरिबोधिनी और देव उत्थापन सामान्य पर्याय हैं; तुलसी विवाह, BAPS प्रबोधिनी और अधिकार-विशिष्ट गौण/वैष्णव तिथियाँ अलग महत्वपूर्ण मार्ग हैं।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-devutthana-tulasi-2027",
+      "devam-ekadashi-rule-audit",
+      "devam-devutthana-research"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "devutthana-kartika-shukla-ekadashi-local-ordinary-smarta-v1",
+    "closing_decision_rule_id": "devutthana-fed-rested-no-plant-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed Indian fixtures place ordinary Devutthana/Prabodhini on Wednesday 10 November 2027 and a reviewed Uttar Pradesh Tulasi Vivah fixture on Thursday 11 November. Recompute city, sunrise, tithi/day-boundary, Mahadwadashi, parana and named authority; never copy displayed times or merge Tulasi Vivah."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-devutthana-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 61: Prabodhini Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "complete 68-verse mahatmya and practice catalogue",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365638.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-68",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "padma-purana-devutthana-sanskrit",
+      "title": "Padma Purana 6.61 Sanskrit text",
+      "publisher": "Sanskrit text surfaced by Wisdomlib",
+      "source_role": "displayed Sanskrit identity and catalogue witness",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/padma-purana-sanskrit/d/doc428116.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-68",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-devutthana-tulasi-2027",
+      "title": "2027 ordinary Devutthana and separate Tulasi Vivah Indian fixtures",
+      "publisher": "DrikPanchang and Devam calendar inventories",
+      "source_role": "10 November ordinary identity, 11 November reviewed Tulasi Vivah distinction; no portable parana",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/ekadashidates.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "ordinary_civil_date": "2027-11-10",
+        "tulasi_vivah_fixture": "2027-11-11",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "baps-prabodhini-ekadashi",
+      "title": "Prabodhini Ekadashi",
+      "publisher": "BAPS Swaminarayan Sanstha",
+      "source_role": "named Swaminarayan nirjala, hatadi/annakut, night arti, prasad and seasonal-food expression",
+      "rights_lane": "citation_only",
+      "url": "https://www.baps.org/cultureandheritage/Traditions/AnnualCelebrationsandFestivals/PrabhodiniEkadashi.aspx",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "ordinary alias, selected denominator and authority/date boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu-remembrance scaffold",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-devutthana-research",
+      "title": "Devutthana/Prabodhini ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local timing, catalogue, safety, closing and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/devutthana-prabodhini-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "devutthana-ekadashi"
+      ],
+      "title": "Devutthana / Prabodhini Ekadashi",
+      "short_answer": "Confirm local ordinary Kartika Shukla Ekadashi. Keep food, water, medicine and sleep normal; remember Vishnu; hear the complete source-labelled Padma 6.61 mahatmya catalogue; keep BAPS practice and Tulasi Vivah separate; optionally resume one small safe responsibility already yours; and close without fasting, vigil, plant, flame, donation or promised result.",
+      "significance": {
+        "text": "Padma Purana 6.61 calls Prabodhini the day Vishnu ‘keeps awake’ and gives an extensive mahatmya catalogue of fast, vigil, fruits, gifts, story, materials and Tulasi. Devam's bounded meaning is renewed attention to one safe responsibility already yours, without fear or deprivation; ritual does not erase harm.",
+        "source_ids": [
+          "padma-purana-devutthana-deshpande",
+          "padma-purana-devutthana-sanskrit",
+          "devam-devutthana-research"
+        ],
+        "scope_note": "Source-labelled mahatmya plus labelled Devam synthesis; not a universal national fast or Chaturmas close."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-devutthana-mahatmya-en",
+          "title": "The Padma Purana Prabodhini mahatmya catalogue",
+          "summary": "Yudhishthira asks Krishna about Kartika Shukla Ekadashi; Krishna relays a Narada-Brahma dialogue. The chapter catalogues Vishnu's awakening, roaring sacred waters, fast and vigil, absolution, proper performance, death, ancestors, sons and grandsons, wealth, intellect, kingdom, grain and happiness, rebirth, other-person food, story study, song and dance, flowers, fruits, camphor, agaru and saffron, conch-water arghya, a preceptor meal, clothing and dakshina, ketaki, agasti, mango and the seeing, touching, planting and sprinkling of Tulasi. These are source claims and a practice catalogue—not a developed human plot, universal instructions or verified outcomes.",
+          "tradition_scope": "Padma Purana Uttara Khanda 6.61, Deshpande English expression and displayed Sanskrit",
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "formal-source-catalogue-en",
+          "population_scope": "Reviewed Padma Purana expression",
+          "description": "The chapter praises fast, vigil, story, song and dance, many offerings, arghya, preceptor meal/clothing/dakshina and Tulasi actions; these are descriptive source facts, not generic household instructions.",
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "ordinary-safe-awakening-en",
+          "population_scope": "Ordinary North/West Smarta household synthesis",
+          "description": "A safe complete form is fed, hydrated, rested, plant-free and material-free: Vishnu remembrance, the complete source catalogue, explicit boundaries and one optional small safe responsibility.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "devam-devutthana-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "devutthana-minimum-en",
+          "label": "Private, fed and material-free remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Ordinary North/West Smarta household synthesis; not fasting, Tulasi Vivah, BAPS or guessed Vaishnava authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {
+              "item": "Familiar Vishnu or Govinda support",
+              "required": false,
+              "substitutions": [
+                "A familiar prayer",
+                "Silence",
+                "No image"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ]
+            },
+            {
+              "item": "Your optional existing safe reminder",
+              "required": false,
+              "substitutions": [
+                "A mental reminder",
+                "No writing",
+                "No action"
+              ],
+              "source_ids": [
+                "devam-devutthana-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm Devutthana/Prabodhini with your city and accepted ordinary Panchang; keep Gauna/Vaishnava timing, Tulasi Vivah and BAPS Prabodhini separate.",
+              "why": "Those routes can materially differ in date, authority and action.",
+              "source_ids": [
+                "drik-devutthana-tulasi-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Continue normal food, water, medicine, insulin, hygiene, child care and sleep; begin no fast, nirjala, vigil or parana.",
+              "why": "The safe ordinary route does not restrict nourishment or rest.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu, Govinda or Janardana with a familiar name, prayer or silence; no image, mantra, plant or offering is required.",
+              "why": "This gives a devotional centre without inventing formal worship.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the complete source-labelled Padma 6.61 catalogue: Vishnu's awakening, fast and vigil, absolution, right-way pressure, ancestors and family, sons and grandsons, wealth, other-person food, story, song and dance, materials, preceptor gifts and Tulasi claims.",
+              "why": "The chapter is a 68-verse mahatmya and practice catalogue, not a developed human plot.",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Hear the BAPS distinction: nirjala, a fresh-vegetable hatadi/annakut, night arti, prasad and seasonal-food teaching belong to that named Swaminarayan route.",
+              "why": "It cannot be universalised as a Gujarat, West India or household rule.",
+              "source_ids": [
+                "baps-prabodhini-ekadashi",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "State the boundary: ritual does not erase harm or accountability; accept no lost-merit, hell, rebirth, health, wealth, descendant, ancestor-rescue, food-purity or donation pressure.",
+              "why": "The source's promised fruits and threats are not verified outcomes or generic instructions.",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Optionally resume one small safe responsibility already yours, such as reopening your own safe reminder, or choose no action.",
+              "why": "The bounded awakening meaning is renewed attention, not clearing every deferred task.",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "Close fed, hydrated and rested, with no parana, miracle test, Tulasi wedding enactment or outcome check.",
+              "why": "The material-free ordinary form is complete here.",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Continue ordinary food, water, medicine and sleep. Do not treat illness, wealth, descendants, dreams, ancestors or later events as ritual outcomes.",
+            "source_ids": [
+              "devam-devutthana-research"
+            ],
+            "scope_note": "Ordinary North/West Smarta household synthesis; not fasting, Tulasi Vivah, BAPS or guessed Vaishnava authority."
+          },
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "drik-devutthana-tulasi-2027",
+            "baps-prabodhini-ekadashi",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devutthana-research"
+          ]
+        },
+        {
+          "procedure_id": "devutthana-family-en",
+          "label": "Consent-led family remembrance",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Ordinary North/West Smarta household synthesis; not fasting, Tulasi Vivah, BAPS or guessed Vaishnava authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "Familiar Vishnu or Govinda support",
+              "required": false,
+              "substitutions": [
+                "A familiar prayer",
+                "Silence",
+                "No image"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ]
+            },
+            {
+              "item": "Your optional existing safe reminder",
+              "required": false,
+              "substitutions": [
+                "A mental reminder",
+                "No writing",
+                "No action"
+              ],
+              "source_ids": [
+                "devam-devutthana-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the date and ordinary route; give everyone an easy no, a private pause and an exit without explanation.",
+              "why": "Family status and age do not replace consent.",
+              "source_ids": [
+                "drik-devutthana-tulasi-2027",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep food, water, medicine, child care and sleep normal; assign no fast, vigil, plant, flame, smoke, food rite or ritual role.",
+              "why": "The shared form remains safe and material-free.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use a familiar Vishnu remembrance or silence; nobody must speak, sing, dance, read or profess belief.",
+              "why": "The source performance catalogue is not compulsory participation.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "padma-purana-devutthana-deshpande",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear a complete source-labelled summary of the 68-verse mahatmya catalogue and state that it is not a developed human plot.",
+              "why": "This prevents an invented king, demon, awakening enactment or Tulasi wedding story.",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Label the absolution, caste/birth, lost-merit, descendant, wealth, ancestor and other-person food claims as source claims, not family facts or instructions.",
+              "why": "This prevents fear, stigma and outcome blame.",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Optionally let each person choose one safe responsibility already theirs; nobody owes an announcement, proof, contact or completed task.",
+              "why": "Consent and bounded responsibility remain intact.",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close without parana, donation, Tulasi handling, promised result or treating later events as signs.",
+              "why": "The ordinary family form is complete.",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Continue ordinary food, water, medicine and sleep. Do not treat illness, wealth, descendants, dreams, ancestors or later events as ritual outcomes.",
+            "source_ids": [
+              "devam-devutthana-research"
+            ],
+            "scope_note": "Ordinary North/West Smarta household synthesis; not fasting, Tulasi Vivah, BAPS or guessed Vaishnava authority."
+          },
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "drik-devutthana-tulasi-2027",
+            "baps-prabodhini-ekadashi",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devutthana-research"
+          ]
+        },
+        {
+          "procedure_id": "devutthana-temple-en",
+          "label": "Verified named-temple or institutional participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Ordinary North/West Smarta household synthesis; not fasting, Tulasi Vivah, BAPS or guessed Vaishnava authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "Familiar Vishnu or Govinda support",
+              "required": false,
+              "substitutions": [
+                "A familiar prayer",
+                "Silence",
+                "No image"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ]
+            },
+            {
+              "item": "Your optional existing safe reminder",
+              "required": false,
+              "substitutions": [
+                "A mental reminder",
+                "No writing",
+                "No action"
+              ],
+              "source_ids": [
+                "devam-devutthana-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Ask the institution for the current city, date, ordinary/Gauna/Vaishnava authority, Mahadwadashi, parana and Tulasi Vivah boundary.",
+              "why": "An old or another-city schedule is not portable.",
+              "source_ids": [
+                "drik-devutthana-tulasi-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Ask whether this is an ordinary temple programme or a BAPS/other named sampradaya nirjala, hatadi, night-arti, prasad or Chaturmas-closing route.",
+              "why": "A named practice cannot be made a state-wide or all-temple rule.",
+              "source_ids": [
+                "baps-prabodhini-ekadashi",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Verify visitor role, food and allergens, plant and image authority, flame and smoke, crowd, accessibility, photography, donation and safe exit.",
+              "why": "These materially change participation.",
+              "source_ids": [
+                "baps-prabodhini-ekadashi",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Handle no food, prasad, Tulasi, image, conch water, lamp or incense without permission; continue medically required food, water and medicine.",
+              "why": "Temple participation does not override health, food or object authority.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Join only authorised elements; declining fast, vigil, song, dance, donation, service, photography or plant handling is acceptable.",
+              "why": "Observer status or an early exit remains valid.",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "If the programme is unsafe, unclear or cancelled, use the material-free home form and continue ordinary food, water and sleep.",
+              "why": "A remote or home form is complete.",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Continue ordinary food, water, medicine and sleep. Do not treat illness, wealth, descendants, dreams, ancestors or later events as ritual outcomes.",
+            "source_ids": [
+              "devam-devutthana-research"
+            ],
+            "scope_note": "Ordinary North/West Smarta household synthesis; not fasting, Tulasi Vivah, BAPS or guessed Vaishnava authority."
+          },
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "drik-devutthana-tulasi-2027",
+            "baps-prabodhini-ekadashi",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devutthana-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "ordinary-aliases-en",
+          "scope": "Devutthana, Prabodhini, Haribodhini and Deva Utthapan",
+          "difference": "One ordinary route; name, language or month vocabulary alone does not create a state variant.",
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-vaishnava-en",
+          "scope": "Location and authority-specific Gauna, Vaishnava, Utthana or Mahadwadashi",
+          "difference": "Date, authority and parana can materially differ; current local computation is required.",
+          "source_ids": [
+            "drik-devutthana-tulasi-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "tulasi-vivah-en",
+          "scope": "Tulasi Vivah on separately resolved Ekadashi/Dwadashi",
+          "difference": "Plant wedding, materials, family/sampradaya authority and a separate reviewed 2027 date.",
+          "source_ids": [
+            "drik-devutthana-tulasi-2027",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "baps-prabodhini-en",
+          "scope": "BAPS/Swaminarayan Prabodhini",
+          "difference": "Nirjala, fresh-vegetable hatadi/annakut, night arti, prasad and seasonal-food teaching.",
+          "source_ids": [
+            "baps-prabodhini-ekadashi",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-family-temple-en",
+          "scope": "Named family, guru, Chaturmas or temple authority",
+          "difference": "Fast, vigil, vow close, mantra, plant, image, flame, food, gift and parana.",
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-nearby-en",
+          "scope": "Medical, legal, plant, food-safety or nearby observance needs",
+          "difference": "Professional route or separate identity for Bhishma Panchak, Yogeshwara Dwadashi, Pradosha and local Chaturmas closes.",
+          "source_ids": [
+            "icmr-type1-diabetes-fasting",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "The complete ordinary form is non-fasting, fed, hydrated, rested, no-vigil, plant-free, flame-free, smoke-free, fragrance-free, no-food-rite, no-purchase, no-donation, no-contact, no-disclosure, image-free, writing-free and material-free.",
+        "Do not promise or threaten sin removal, lost merit, hell, rebirth, salvation, Vishnu's world, ancestor emancipation, sons or grandsons, fertility, intellect, kingdom, wealth, grain, health, happiness or fortune.",
+        "Violence, abuse, discrimination, fraud, neglect and legal duties are not erased by ritual.",
+        "Never rank dignity, safety, justice, grief, food or worship access by caste, birth, gender, marital status, fertility, lineage or wealth.",
+        "Continue ordinary food, water, medicine, insulin, child care and sleep; do not reject safe food from another household, caste, community, school or workplace.",
+        "Do not touch, pluck, plant, sprinkle, water, move or offer Tulasi or another plant without owner and tradition authority plus ordinary allergy and plant safety.",
+        "Do not light camphor or incense, create smoke or fragrance, blow a conch, prepare a vegetable offering or handle public prasad from this guide.",
+        "BAPS nirjala, hatadi, night arti and seasonal-food teaching are named institutional practices, not an ordinary state rule or medical/food-safety guarantee.",
+        "Nobody owes fasting, vigil, song, dance, prayer, plant care, donation, prior-vow completion, disclosure or action for another person's hope.",
+        "Do not enact Tulasi Vivah inside this Ekadashi household form; resolve its separate date and authority.",
+        "‘Vishnu awakens’ is a source-labelled religious meaning, not a claim that household action controls a deity or cosmic time.",
+        "Do not create state variants for language, spelling, dress, food preference, familiar Vishnu name, image/no-image or silence alone."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "devutthana-ekadashi"
+      ],
+      "title": "देवउठनी / प्रबोधिनी एकादशी",
+      "short_answer": "अपने शहर के सामान्य पंचांग से कार्तिक शुक्ल एकादशी की पुष्टि करें। भोजन-पानी-दवा और नींद सामान्य रखते हुए विष्णु का परिचित स्मरण करें, पद्मपुराण 6.61 की पूरी स्रोत-नामित माहात्म्य-सूची सुनें, BAPS और तुलसी विवाह को अलग मार्ग मानें, चाहें तो अपनी एक छोटी सुरक्षित जिम्मेदारी फिर शुरू करें, और बिना उपवास, जागरण, पौधा, लौ, दान या परिणाम-दावे के समाप्त करें।",
+      "significance": {
+        "text": "पद्मपुराण 6.61 प्रबोधिनी को विष्णु के ‘जागने’ का दिन कहता और उपवास-जागरण, फल, दान, कथा, सामग्री तथा तुलसी की विस्तृत माहात्म्य-सूची देता है। Devam का सीमित अर्थ है: भय या वंचना के बिना अपनी एक सुरक्षित जिम्मेदारी पर ध्यान लौटाना; अनुष्ठान हानि नहीं मिटाता।",
+        "source_ids": [
+          "padma-purana-devutthana-deshpande",
+          "padma-purana-devutthana-sanskrit",
+          "devam-devutthana-research"
+        ],
+        "scope_note": "स्रोत-नामित माहात्म्य और लेबल किया Devam संश्लेषण; कोई सार्वभौमिक राष्ट्रीय उपवास या चातुर्मास-समापन नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "padma-devutthana-mahatmya-hi",
+          "title": "पद्मपुराण की प्रबोधिनी माहात्म्य-सूची",
+          "summary": "युधिष्ठिर कृष्ण से कार्तिक शुक्ल एकादशी पूछते हैं; कृष्ण नारद और ब्रह्मा का संवाद सुनाते हैं। अध्याय विष्णु-जागरण, तीर्थों की गर्जना, उपवास-जागरण, पाप-मोचन, सही ढंग, मृत्यु, पूर्वज, पुत्र-पौत्र, धन-बुद्धि-राज्य-अन्न-सुख, पुनर्जन्म, दूसरे का भोजन, कथा-पाठ, गायन-नृत्य, फूल-फल-कपूर-अगरु-केसर, शंख-जल अर्घ्य, गुरु को भोजन-वस्त्र-दक्षिणा, केतकी-अगस्ति-आम और तुलसी के देखने-स्पर्श-रोपण-सिंचन के फल गिनाता है। यह स्रोत के दावे और आचार-सूची हैं—विकसित मानवीय कथा, सार्वभौमिक निर्देश या सत्यापित परिणाम नहीं।",
+          "tradition_scope": "Padma Purana Uttara Khanda 6.61, Deshpande English expression and displayed Sanskrit",
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "formal-source-catalogue-hi",
+          "population_scope": "Reviewed Padma Purana expression",
+          "description": "अध्याय उपवास, जागरण, कथा, गायन-नृत्य, अनेक चढ़ावे, अर्घ्य, गुरु-भोजन/वस्त्र/दक्षिणा और तुलसी-क्रियाएँ प्रशंसित करता है; ये वर्णनात्मक स्रोत तथ्य हैं, सामान्य घरेलू निर्देश नहीं।",
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "ordinary-safe-awakening-hi",
+          "population_scope": "Ordinary North/West Smarta household synthesis",
+          "description": "सुरक्षित पूरा रूप भोजन-पानी और आराम सहित, पौधा और सामग्री-रहित है: विष्णु-स्मरण, पूरी स्रोत-सूची, स्पष्ट सीमा और वैकल्पिक छोटी सुरक्षित जिम्मेदारी।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "devam-devutthana-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "devutthana-minimum-hi",
+          "label": "निजी, भोजन-पानी सहित सामग्री-रहित स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "सामान्य उत्तर/पश्चिम स्मार्त घरेलू संश्लेषण; उपवास, तुलसी विवाह, BAPS या अनुमानित वैष्णव अधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "materials": [
+            {
+              "item": "परिचित विष्णु/गोविंद स्मरण",
+              "required": false,
+              "substitutions": [
+                "परिचित प्रार्थना",
+                "मौन",
+                "कोई चित्र नहीं"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ]
+            },
+            {
+              "item": "अपना वैकल्पिक सुरक्षित स्मरण-पत्र",
+              "required": false,
+              "substitutions": [
+                "मानसिक स्मरण",
+                "कुछ न लिखना",
+                "कोई कार्य नहीं"
+              ],
+              "source_ids": [
+                "devam-devutthana-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने शहर और मान्य सामान्य पंचांग से देवउठनी/प्रबोधिनी एकादशी की पुष्टि करें; गौण/वैष्णव तिथि, तुलसी विवाह और BAPS प्रबोधिनी को अलग रखें।",
+              "why": "इन मार्गों की तिथि, अधिकार और क्रिया materially अलग हो सकती है।",
+              "source_ids": [
+                "drik-devutthana-tulasi-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, इंसुलिन, स्वच्छता, बच्चों की देखभाल और नींद जारी रखें; उपवास, निर्जला, जागरण या पारण शुरू न करें।",
+              "why": "सुरक्षित सामान्य मार्ग भोजन-पानी और आराम नहीं रोकता।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु, गोविंद या जनार्दन को परिचित नाम, प्रार्थना या मौन से स्मरण करें; चित्र, मंत्र, पौधा या चढ़ावा आवश्यक नहीं है।",
+              "why": "यह बिना औपचारिक पूजा गढ़े भक्ति-केंद्र देता है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पद्मपुराण 6.61 की पूरी स्रोत-नामित स्तुति-सूची सुनें: विष्णु-जागरण, उपवास-जागरण, पाप-मोचन, गलत ढंग से करने का दबाव, पूर्वज/परिवार, पुत्र-पौत्र, धन, दूसरे का भोजन, कथा, गायन-नृत्य, सामग्री, गुरु-दक्षिणा और तुलसी के दावे।",
+              "why": "यह अध्याय विकसित मानवीय कथा नहीं, 68 श्लोकों की माहात्म्य और आचार-सूची है।",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "BAPS का भेद सुनें: निर्जला, सब्जियों की हाटड़ी/अन्नकूट, रात्रि आरती, प्रसाद और मौसमी आहार की शिक्षा उस नामित स्वामीनारायण मार्ग की है।",
+              "why": "इसे गुजरात, पश्चिम भारत या सभी घरों का नियम नहीं बनाया जा सकता।",
+              "source_ids": [
+                "baps-prabodhini-ekadashi",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सीमा कहें: अनुष्ठान हानि या उत्तरदायित्व नहीं मिटाता; खोए पुण्य, नरक, पुनर्जन्म, स्वास्थ्य, धन, संतान, पूर्वज-मुक्ति, भोजन-अशुद्धि या दान का दबाव स्वीकार नहीं है।",
+              "why": "स्रोत के फल और चेतावनियाँ सत्यापित परिणाम या सामान्य निर्देश नहीं हैं।",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "चाहें तो अपनी पहले से मौजूद एक छोटी सुरक्षित जिम्मेदारी फिर शुरू करें—जैसे अपना सुरक्षित स्मरण-पत्र खोलना—या कुछ न करें।",
+              "why": "‘जागरण’ का सीमित अर्थ ध्यान लौटाना है, हर लंबित काम पूरा करना नहीं।",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 8,
+              "instruction": "भोजन, पानी और आराम के साथ समाप्त करें; कोई पारण, चमत्कार-दावा, तुलसी-विवाह अभिनय या परिणाम-जाँच न करें।",
+              "why": "सामग्री-रहित सामान्य रूप यहीं पूरा है।",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, पानी, दवा और नींद जारी रखें। बीमारी, धन, संतान, स्वप्न, पूर्वज या बाद की घटना को अनुष्ठान का परिणाम न मानें।",
+            "source_ids": [
+              "devam-devutthana-research"
+            ],
+            "scope_note": "सामान्य उत्तर/पश्चिम स्मार्त घरेलू संश्लेषण; उपवास, तुलसी विवाह, BAPS या अनुमानित वैष्णव अधिकार नहीं।"
+          },
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "drik-devutthana-tulasi-2027",
+            "baps-prabodhini-ekadashi",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devutthana-research"
+          ]
+        },
+        {
+          "procedure_id": "devutthana-family-hi",
+          "label": "सहमति-आधारित परिवार स्मरण",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सामान्य उत्तर/पश्चिम स्मार्त घरेलू संश्लेषण; उपवास, तुलसी विवाह, BAPS या अनुमानित वैष्णव अधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 20,
+          "materials": [
+            {
+              "item": "परिचित विष्णु/गोविंद स्मरण",
+              "required": false,
+              "substitutions": [
+                "परिचित प्रार्थना",
+                "मौन",
+                "कोई चित्र नहीं"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ]
+            },
+            {
+              "item": "अपना वैकल्पिक सुरक्षित स्मरण-पत्र",
+              "required": false,
+              "substitutions": [
+                "मानसिक स्मरण",
+                "कुछ न लिखना",
+                "कोई कार्य नहीं"
+              ],
+              "source_ids": [
+                "devam-devutthana-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "तिथि और सामान्य मार्ग की पुष्टि करें; सभी को आसान ‘नहीं’, निजी विराम और बिना कारण बताए निकलने का विकल्प दें।",
+              "why": "परिवार या उम्र सहमति का स्थान नहीं लेते।",
+              "source_ids": [
+                "drik-devutthana-tulasi-2027",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, पानी, दवा, बच्चों की देखभाल और नींद सामान्य रखें; कोई उपवास, जागरण, पौधा, लौ, धुआँ, भोजन-विधि या भूमिका न बाँटें।",
+              "why": "साझा रूप भी सुरक्षित और सामग्री-रहित रहता है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "विष्णु का परिचित स्मरण करें या मौन चुनें; किसी को बोलना, गाना, नाचना, पढ़ना या विश्वास जताना आवश्यक नहीं।",
+              "why": "स्रोत की प्रदर्शन-सूची भागीदारी की बाध्यता नहीं है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "padma-purana-devutthana-deshpande",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "68-श्लोक की माहात्म्य-सूची का पूरा, स्रोत-नामित सार सुनें; स्पष्ट करें कि यह विकसित मानवीय कथा नहीं है।",
+              "why": "गढ़ी हुई राजा-दैत्या या तुलसी-विवाह कथा से बचना जरूरी है।",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "हानि-मोचन, जाति/जन्म, खोए पुण्य, संतान, धन, पूर्वज और दूसरे के भोजन वाले दावों को स्रोत-दावे कहें, परिवार का सत्य या निर्देश नहीं।",
+              "why": "इससे भय, कलंक और परिणाम-दोषारोपण रुकता है।",
+              "source_ids": [
+                "padma-purana-devutthana-deshpande",
+                "padma-purana-devutthana-sanskrit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो हर व्यक्ति अपनी एक सुरक्षित जिम्मेदारी चुन सकता है; किसी को घोषणा, प्रमाण, संपर्क या काम पूरा करना नहीं है।",
+              "why": "सहमति और सीमित जिम्मेदारी बनी रहती है।",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "बिना पारण, दान, तुलसी-स्पर्श, परिणाम या बाद की घटना को संकेत माने समाप्त करें।",
+              "why": "सामान्य परिवार रूप पूरा है।",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, पानी, दवा और नींद जारी रखें। बीमारी, धन, संतान, स्वप्न, पूर्वज या बाद की घटना को अनुष्ठान का परिणाम न मानें।",
+            "source_ids": [
+              "devam-devutthana-research"
+            ],
+            "scope_note": "सामान्य उत्तर/पश्चिम स्मार्त घरेलू संश्लेषण; उपवास, तुलसी विवाह, BAPS या अनुमानित वैष्णव अधिकार नहीं।"
+          },
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "drik-devutthana-tulasi-2027",
+            "baps-prabodhini-ekadashi",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devutthana-research"
+          ]
+        },
+        {
+          "procedure_id": "devutthana-temple-hi",
+          "label": "नामित मंदिर या संस्था में सत्यापित भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "सामान्य उत्तर/पश्चिम स्मार्त घरेलू संश्लेषण; उपवास, तुलसी विवाह, BAPS या अनुमानित वैष्णव अधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "परिचित विष्णु/गोविंद स्मरण",
+              "required": false,
+              "substitutions": [
+                "परिचित प्रार्थना",
+                "मौन",
+                "कोई चित्र नहीं"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-devutthana-research"
+              ]
+            },
+            {
+              "item": "अपना वैकल्पिक सुरक्षित स्मरण-पत्र",
+              "required": false,
+              "substitutions": [
+                "मानसिक स्मरण",
+                "कुछ न लिखना",
+                "कोई कार्य नहीं"
+              ],
+              "source_ids": [
+                "devam-devutthana-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "संस्था से वर्तमान शहर, तिथि, सामान्य/गौण/वैष्णव अधिकार, महाद्वादशी, पारण और तुलसी विवाह की सीमा पूछें।",
+              "why": "पुरानी या दूसरे शहर की समय-सारणी पोर्टेबल नहीं है।",
+              "source_ids": [
+                "drik-devutthana-tulasi-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "पूछें कि यह सामान्य मंदिर कार्यक्रम है या BAPS/अन्य नामित सम्प्रदाय का निर्जला, हाटड़ी, रात्रि आरती, प्रसाद या चातुर्मास-समापन मार्ग।",
+              "why": "नामित अभ्यास को राज्य या सभी मंदिरों का नियम नहीं बनाया जा सकता।",
+              "source_ids": [
+                "baps-prabodhini-ekadashi",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "आगंतुक-भूमिका, भोजन/एलर्जी, पौधा और चित्र-अधिकार, लौ/धुआँ, भीड़, सुगमता, फोटो, दान और सुरक्षित निकास सत्यापित करें।",
+              "why": "ये भागीदारी को materially बदलते हैं।",
+              "source_ids": [
+                "baps-prabodhini-ekadashi",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "बिना अनुमति भोजन, प्रसाद, तुलसी, चित्र, शंख-जल, दीप या धूप न संभालें; स्वास्थ्य के लिए आवश्यक भोजन-पानी-दवा जारी रखें।",
+              "why": "मंदिर-भागीदारी चिकित्सा, खाद्य या वस्तु-अधिकार नहीं बदलती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "केवल अधिकृत भाग लें; उपवास, जागरण, गायन, नृत्य, दान, सेवा, फोटो या पौधा-स्पर्श से मना करना स्वीकार्य है।",
+              "why": "दर्शक या शीघ्र निकलना भी वैध है।",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "असुरक्षित, अस्पष्ट या रद्द कार्यक्रम में घर का सामग्री-रहित रूप चुनें और सामान्य भोजन-पानी-नींद जारी रखें।",
+              "why": "दूरस्थ या घरेलू रूप पूरा है।",
+              "source_ids": [
+                "devam-devutthana-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, पानी, दवा और नींद जारी रखें। बीमारी, धन, संतान, स्वप्न, पूर्वज या बाद की घटना को अनुष्ठान का परिणाम न मानें।",
+            "source_ids": [
+              "devam-devutthana-research"
+            ],
+            "scope_note": "सामान्य उत्तर/पश्चिम स्मार्त घरेलू संश्लेषण; उपवास, तुलसी विवाह, BAPS या अनुमानित वैष्णव अधिकार नहीं।"
+          },
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "drik-devutthana-tulasi-2027",
+            "baps-prabodhini-ekadashi",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-devutthana-research"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "ordinary-aliases-hi",
+          "scope": "Devutthana, Prabodhini, Haribodhini and Deva Utthapan",
+          "difference": "एक ही सामान्य मार्ग; केवल नाम, भाषा या माह-शब्दावली अलग होने पर नया राज्य-वेरिएंट नहीं।",
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "gauna-vaishnava-hi",
+          "scope": "Location and authority-specific Gauna, Vaishnava, Utthana or Mahadwadashi",
+          "difference": "तिथि, अधिकार और पारण materially अलग हो सकते हैं; वर्तमान स्थानीय गणना चाहिए।",
+          "source_ids": [
+            "drik-devutthana-tulasi-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "tulasi-vivah-hi",
+          "scope": "Tulasi Vivah on separately resolved Ekadashi/Dwadashi",
+          "difference": "पौधा-विवाह, सामग्री, परिवार/सम्प्रदाय अधिकार और अलग 2027 तिथि।",
+          "source_ids": [
+            "drik-devutthana-tulasi-2027",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "baps-prabodhini-hi",
+          "scope": "BAPS/Swaminarayan Prabodhini",
+          "difference": "निर्जला, सब्जियों की हाटड़ी/अन्नकूट, रात्रि आरती, प्रसाद और मौसमी आहार शिक्षा।",
+          "source_ids": [
+            "baps-prabodhini-ekadashi",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-family-temple-hi",
+          "scope": "Named family, guru, Chaturmas or temple authority",
+          "difference": "उपवास, जागरण, व्रत-समापन, मंत्र, पौधा, चित्र, लौ, भोजन, दान और पारण।",
+          "source_ids": [
+            "padma-purana-devutthana-deshpande",
+            "padma-purana-devutthana-sanskrit",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-nearby-hi",
+          "scope": "Medical, legal, plant, food-safety or nearby observance needs",
+          "difference": "विशेषज्ञ मार्ग या भीष्म पंचक, योगेश्वर द्वादशी, प्रदोष और स्थानीय चातुर्मास-समापन की अलग पहचान।",
+          "source_ids": [
+            "icmr-type1-diabetes-fasting",
+            "devam-devutthana-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूरा सामान्य रूप भोजन-पानी सहित, आरामयुक्त, बिना उपवास-जागरण, पौधा, लौ, धुआँ, सुगंध, भोजन-विधि, खरीद, दान, संपर्क, खुलासा, चित्र, लेखन और सामग्री के है।",
+        "पाप-मोचन, खोया पुण्य, नरक, पुनर्जन्म, मोक्ष, विष्णु-लोक, पूर्वज-मुक्ति, पुत्र-पौत्र, प्रजनन, बुद्धि, राज्य, धन, अन्न, स्वास्थ्य, सुख या भाग्य का वादा या डर न दें।",
+        "हिंसा, दुर्व्यवहार, भेदभाव, धोखा, उपेक्षा या कानूनी उत्तरदायित्व अनुष्ठान से नहीं मिटते।",
+        "जाति, जन्म, लिंग, वैवाहिक स्थिति, संतान, वंश या धन से मानव गरिमा, सुरक्षा, न्याय, शोक, भोजन या पूजा-अधिकार न आँकें।",
+        "सामान्य भोजन, पानी, दवा, इंसुलिन, बच्चों की देखभाल और नींद जारी रखें; दूसरे घर, जाति, समुदाय, स्कूल या कार्यस्थल का सुरक्षित भोजन न ठुकराएँ।",
+        "मालिक और परम्परा की अनुमति तथा सामान्य एलर्जी/पौधा-सुरक्षा बिना तुलसी या अन्य पौधा न छुएँ, तोड़ें, लगाएँ, सींचें, हटाएँ या चढ़ाएँ।",
+        "इस मार्ग से कपूर/धूप न जलाएँ, धुआँ/सुगंध न बनाएँ, शंख न बजाएँ, सब्जी-चढ़ावा या सार्वजनिक प्रसाद न संभालें।",
+        "BAPS निर्जला, हाटड़ी, रात्रि आरती और मौसमी भोजन शिक्षा नामित संस्थागत अभ्यास हैं, सामान्य राज्य-नियम या चिकित्सा/खाद्य-सुरक्षा गारंटी नहीं।",
+        "किसी पर उपवास, जागरण, गायन, नृत्य, प्रार्थना, पौधा-सेवा, दान, पूर्व व्रत पूरा करने, खुलासा या दूसरे के लिए कर्म का दायित्व नहीं।",
+        "तुलसी विवाह को इस एकादशी के घरेलू रूप में न अभिनय करें; उसकी अलग तिथि और अधिकार जाँचें।",
+        "‘विष्णु जागते हैं’ स्रोत-नामित धार्मिक अर्थ है; घरेलू कर्म से देवता या ब्रह्मांडीय समय नियंत्रित होने का दावा नहीं।",
+        "भाषा, वर्तनी, वस्त्र, भोजन-पसंद, परिचित विष्णु नाम, चित्र/बिना चित्र या मौन मात्र से राज्य-वेरिएंट न बनाएँ।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "0 of 19,480 day cells projected",
+      "No current city/authority Panchang service connected",
+      "Gauna/Vaishnava, Tulasi Vivah and BAPS routes not completed by this pack",
+      "Not hosted, independently released or published"
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}
