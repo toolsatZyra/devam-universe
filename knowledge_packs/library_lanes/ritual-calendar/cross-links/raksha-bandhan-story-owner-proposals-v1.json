@@ -1,0 +1,56 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-raksha-bandhan-story-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "raksha-bandhan-draupadi-krishna-popular-association-audit",
+      "from_ref": {"lane_local_id": "ritual-calendar/raksha-bandhan-consent-led-sibling-household-2027-v1"},
+      "to_ref": {"canonical_id": "devam:source-expression:mahabharata-ganguli-consumer-v1"},
+      "relationship_family": "association",
+      "predicate": "requests_owner_verification_of_popular_rakhi_association",
+      "directionality": "directed",
+      "consumer_label": {"en": "Check the popular Draupadi-Krishna Rakhi association against the epic", "hi": "द्रौपदी-कृष्ण की प्रचलित राखी-कथा को महाभारत से जाँचें"},
+      "scope": {
+        "statement": "Current Ministry of Tourism pages associate Draupadi binding Krishna's injured finger with Raksha Bandhan, but this ritual pack has not established that association in the retained Mahabharata expression and does not present it as fixed-text fact.",
+        "geography_codes": ["pan-india"],
+        "tradition_codes": ["raksha-bandhan-sibling-household"],
+        "time_scope": "Current living retelling checked 2026-08-13",
+        "source_expression_scope": "Ganguli English Mahabharata expression; exact supporting passage unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "official_current", "ref": "https://www.incredibleindia.gov.in/en/festivals-and-events/rakshabandhan", "claim_scope": "Current Ministry of Tourism page retells the injured-finger cloth episode as a Raksha Bandhan association."},
+        {"evidence_kind": "official_current", "ref": "https://maharashtratourism.gov.in/festivals/raksha-bandhan/", "claim_scope": "Current Maharashtra Tourism page repeats the association as living festival history."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/raksha-bandhan-consent-led-sibling-household-2027-v1.json", "claim_scope": "The bilingual pack labels the account as a current retelling and explicitly declines a universal or fixed-text origin claim."}
+      ],
+      "confidence": "contested",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "raksha-bandhan-tagore-1905-history-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/raksha-bandhan-consent-led-sibling-household-2027-v1"},
+      "to_ref": {"lane_local_id": "history/tagore-rakhi-1905"},
+      "relationship_family": "history",
+      "predicate": "uses_current_retelling_of_civic_rakhi_mobilisation",
+      "directionality": "directed",
+      "consumer_label": {"en": "Explore Tagore's 1905 civic use of rakhi", "hi": "1905 में टैगोर के नागरिक राखी-प्रयोग को समझें"},
+      "scope": {
+        "statement": "The ritual pack briefly labels a current official retelling of Tagore encouraging rakhi as a sign of Hindu-Muslim unity during opposition to Bengal's partition; a future history owner should verify and narrate the episode in full context.",
+        "geography_codes": ["IN-WB"],
+        "tradition_codes": ["rakhi-civic-symbolism"],
+        "time_scope": "1905 historical episode; current source checked 2026-08-13",
+        "source_expression_scope": "Incredible India summary only; primary historical materials unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "official_current", "ref": "https://www.incredibleindia.gov.in/en/festivals-and-events/rakshabandhan", "claim_scope": "Current Ministry of Tourism page recounts Tagore's use of rakhi during the Bengal partition movement."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/raksha-bandhan-consent-led-sibling-household-2027-v1.json", "claim_scope": "The bilingual pack uses only a bounded labelled retelling and does not infer a household instruction from civic history."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

@@ -168,3 +168,21 @@ Exact accepted-authoring coverage is now **12 completed after freeze / 196
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The thirteenth post-freeze item is complete at the bilingual authored-library
+layer: `raksha-bandhan-consent-led-sibling-household-2027-v1`. It preserves the
+common sister-brother Rakhi form while requiring consent for touch, tying,
+tilak, gifts, food, images and posting; siblings, cousins, other kin and chosen
+siblings remain within the lane when participants agree. Language, sweets,
+dress, thread style and no-gift/no-flame/remote forms are not state copies.
+Narali Purnima, Upakarma/Avani Avittam, priest-led raksha-sutra and named public
+or temple programmes remain separate because ritual object, eligibility,
+authority, setting or ordered action changes materially. Popular Draupadi-
+Krishna and Lakshmi-Bali accounts are labelled as current official retellings,
+not fixed-text or universal-origin proof; typed proposals request story/history
+owner verification without creating duplicate placeholders.
+
+Exact accepted-authoring coverage is now **13 completed after freeze / 195
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

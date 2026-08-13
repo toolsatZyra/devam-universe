@@ -1,0 +1,237 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "raksha-bandhan-consent-led-sibling-household-2027-v1",
+  "observance_slugs": ["raksha-bandhan"],
+  "applicability": {
+    "region_codes": ["pan-india", "north-india", "west-india", "east-india", "south-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ", "IN-WB", "IN-BR", "IN-CG", "IN-OD", "IN-KA", "IN-AP", "IN-TN", "IN-KL"],
+    "tradition_codes": ["raksha-bandhan-sibling-household", "rakhi-consent-led-kinship"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "community", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Shravana Purnima, Bhadra and the usable tying window?",
+      "Who freely wants to take part, what sibling or kin relationship do they use, and is touch, tilak, tying, food, gifting, photography or public naming welcome?",
+      "Is the request for ordinary household Rakhi, rather than Narali Purnima, Upakarma or Avani Avittam, a priest-led raksha-sutra, or a named public or temple programme?",
+      "Would a remote greeting, private remembrance or no contact be safer or more truthful because of distance, bereavement, estrangement, abuse, illness or sensory needs?",
+      "Are there child-safety, skin, circulation, flame, food-allergen, diabetes, travel, crowd, privacy, scam or budget concerns?"
+    ],
+    "context_pairs": [
+      {"region_code": "pan-india", "tradition_code": "raksha-bandhan-sibling-household", "observance_slug": "raksha-bandhan"},
+      {"region_code": "north-india", "tradition_code": "raksha-bandhan-sibling-household", "observance_slug": "raksha-bandhan"},
+      {"region_code": "west-india", "tradition_code": "raksha-bandhan-sibling-household", "observance_slug": "raksha-bandhan"},
+      {"region_code": "east-india", "tradition_code": "rakhi-consent-led-kinship", "observance_slug": "raksha-bandhan"},
+      {"region_code": "south-india", "tradition_code": "rakhi-consent-led-kinship", "observance_slug": "raksha-bandhan"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "raksha-bandhan", "language_code": "en", "note": "Pan-India consent-led household Rakhi lane. It preserves the common sister-brother form without making gender, touch, a protection promise, gift, sweet, flame, temple or Sanskrit compulsory."},
+      {"observance_slug": "raksha-bandhan", "language_code": "hi", "note": "यह अखिल-भारत सहमति-आधारित घरेलू राखी मार्ग है। इसमें प्रचलित बहन-भाई रूप स्पष्ट है, पर लिंग, स्पर्श, रक्षा-वचन, उपहार, मिठाई, दीपक, मंदिर या संस्कृत अनिवार्य नहीं हैं।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-raksha-bandhan-2027"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "raksha-bandhan-local-shravana-purnima-bhadra-v1",
+    "closing_decision_rule_id": "raksha-bandhan-consent-led-close-v1",
+    "live_schedule_required": false,
+    "freshness_note": "2027 discovery fixture: Monday 16 August. The cited page displayed Washington, D.C. clock times; never copy them to India. Recompute Shravana Purnima, Bhadra and the accepted usable window for the user's Indian city and family Panchang. Named temple or public programmes require a live schedule in their own lane."
+  },
+  "sources": [
+    {"source_id": "incredible-india-raksha-bandhan", "title": "Raksha Bandhan: Strengthening the bonds of sibling love", "publisher": "Incredible India, Ministry of Tourism, Government of India", "source_role": "current official living-practice description for sibling/relative participation, tilak, aarti, rakhi, wishes, food and optional gifts; also supplies explicitly contemporary retellings rather than fixed-text proof", "rights_lane": "citation_only", "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/rakshabandhan", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13", "lines": "679-721"}},
+    {"source_id": "maharashtra-tourism-raksha-bandhan", "title": "Raksha Bandhan", "publisher": "Directorate of Tourism, Government of Maharashtra", "source_role": "current state evidence for Shravana Purnima, sister-brother and broader friend/relative forms, shared food and the material separation of Narali Purnima", "rights_lane": "citation_only", "url": "https://maharashtratourism.gov.in/festivals/raksha-bandhan/", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13", "lines": "1473-1511"}},
+    {"source_id": "president-raksha-bandhan-2023", "title": "President of India's greetings on the eve of Raksha Bandhan", "publisher": "President of India", "source_role": "official public evidence for love, wishes for happiness, prosperity and health, and social harmony; descriptive greeting, not a compulsory instruction or outcome guarantee", "rights_lane": "citation_only", "url": "https://www.presidentofindia.gov.in/press_releases/president-indias-greetings-eve-raksha-bandhan-0", "artifact_sha256": null, "citation_coordinates": {"published": "2023-08-29", "checked": "2026-08-13"}},
+    {"source_id": "drik-raksha-bandhan-2027", "title": "2027 Raksha Bandhan date and timing", "publisher": "DrikPanchang", "source_role": "practitioner evidence for Shravana Purnima, location-dependent Bhadra avoidance and a 2027 civil-date fixture; its displayed foreign clock is not Indian timing", "rights_lane": "citation_only", "url": "https://www.drikpanchang.com/festivals/raksha-bandhan/raksha-bandhan-date-time.html?year=2027", "artifact_sha256": null, "citation_coordinates": {"civil_date": "2027-08-16", "displayed_location": "Washington, D.C., United States", "warning": "do not copy displayed clock to India", "lines": "145-200"}},
+    {"source_id": "education-school-safety-guidelines", "title": "Guidelines on School Safety and Security", "publisher": "Department of School Education and Literacy, Ministry of Education", "source_role": "official child-safety and accountability boundary for contact, travel, images, personal data and adult-led programmes", "rights_lane": "citation_only", "url": "https://dsel.education.gov.in/sites/default/files/update/guidelines_sss.pdf", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13", "topic": "whole-school safety, accountability and zero tolerance"}},
+    {"source_id": "fssai-food-safety-at-home", "title": "Food Safety at Home", "publisher": "Food Safety and Standards Authority of India", "source_role": "official household food preparation, serving and storage guidance", "rights_lane": "citation_only", "url": "https://www.fssai.gov.in/flipbook.php?bookid=31", "artifact_sha256": null, "citation_coordinates": {"rules": [1, 2, 3, 4, 8]}},
+    {"source_id": "fssai-allergen-label-guidance", "title": "Nutrition labels and declared food allergens", "publisher": "Food Safety and Standards Authority of India", "source_role": "official evidence to disclose and check allergens in shared sweets and foods", "rights_lane": "citation_only", "url": "https://fssai.gov.in/faqs/?cat=13", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "cybercrime-reporting-portal", "title": "National Cyber Crime Reporting Portal FAQ", "publisher": "Indian Cyber Crime Coordination Centre, Ministry of Home Affairs", "source_role": "official reporting route for online financial fraud and other cybercrime; supports remote gift, impersonation, payment and evidence-preservation safeguards", "rights_lane": "citation_only", "url": "https://www.cybercrime.gov.in/webform/FAQ.aspx", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}},
+    {"source_id": "ndma-sachet-live-alerts", "title": "SACHET National Disaster Alert Portal", "publisher": "National Disaster Management Authority, Government of India", "source_role": "authoritative location-specific weather and hazard alerts for monsoon travel, queues and crowds", "rights_lane": "citation_only", "url": "https://sachet.ndma.gov.in/", "artifact_sha256": null, "citation_coordinates": {"checked": "2026-08-13"}}
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["raksha-bandhan"],
+      "title": "Raksha Bandhan: consent-led sibling and kin guide",
+      "short_answer": "For 2027, start with Monday 16 August but confirm Shravana Purnima and Bhadra for your Indian city. Ask before touch or tying. A complete simple form is to exchange a loose thread, card or message, offer one good wish, hear the other person's wish, and agree on one realistic act of mutual care. The familiar sister-ties/brother-gifts form is common, not compulsory; gender, lifelong protection, tilak, flame, sweet, money and temple are optional.",
+      "significance": {"text": "Raksha Bandhan, or Rakhi, is widely observed as a renewal of affection, trust and care in a sibling relationship. Current official sources foreground sisters tying rakhis to brothers and brothers offering gifts, while also noting cousins, relatives and friends. Devam keeps that traditional form visible but interprets care reciprocally: no participant becomes subordinate, controlled, indebted or responsible for guaranteeing another person's safety.", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023"], "scope_note": "General household relationship lane; not Narali Purnima, Upakarma/Avani Avittam, priest-led raksha-sutra, or a named programme."},
+      "origin_narratives": [
+        {"narrative_id": "draupadi-krishna-current-retelling", "title": "Draupadi binds Krishna's injured finger", "summary": "Incredible India currently retells a story in which Krishna cuts his finger and Draupadi tears cloth from her sari to stop the bleeding; the cloth is then associated with Raksha Bandhan. Devam labels this a Ministry of Tourism retelling. This pack has not established it as a fixed Mahabharata passage or as the universal origin of Rakhi.", "tradition_scope": "Current official tourism retelling; not fixed-text proof", "source_ids": ["incredible-india-raksha-bandhan"], "universal_origin_claimed": false},
+        {"narrative_id": "lakshmi-bali-current-retelling", "title": "Lakshmi, Bali and a bond of kinship", "summary": "The same current tourism page retells Lakshmi visiting King Bali, tying a rakhi on Shravana Purnima and revealing her identity; Bali then asks Vishnu to return with her. This is presented as one living legend, not a verified universal origin, domestic command or guarantee that tying a thread changes another person's duty.", "tradition_scope": "Current Ministry of Tourism living legend", "source_ids": ["incredible-india-raksha-bandhan"], "universal_origin_claimed": false},
+        {"narrative_id": "tagore-unity-current-historical-retelling", "title": "Tagore's civic use of rakhi in 1905", "summary": "As a current official historical retelling, Incredible India recounts that during the proposed partition of Bengal, Rabindranath Tagore encouraged Hindu and Muslim participants to tie rakhi as a sign of unity. This later civic use expands the symbol beyond one household, but it does not erase the household sibling form or authorize compulsory public participation.", "tradition_scope": "Current official historical retelling of a 1905 civic use", "source_ids": ["incredible-india-raksha-bandhan"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "traditional-sister-brother-exchange", "population_scope": "Many Hindu and culturally participating Indian families", "description": "A sister may perform aarti or tilak, tie a rakhi and offer wishes or sweets; a brother may give a gift and express care. Each element is offered and may be declined or adapted.", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023"], "instructional": false},
+        {"practice_id": "extended-kin-and-remote-form", "population_scope": "Some cousins, relatives, friends, chosen siblings and families living apart", "description": "Some extend rakhi to cousins, relatives or friends, or send threads, cards, messages and gifts from a distance. Relationship labels and contact are agreed, not assigned by the sender.", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"], "instructional": false},
+        {"practice_id": "shared-food-and-family-time", "population_scope": "Many participating households", "description": "Families may share sweets or a meal after the exchange. Regional food choices are material variants inside this lane, subject to consent, allergens, dietary needs and food safety.", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "fssai-food-safety-at-home", "fssai-allergen-label-guidance"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "raksha-bandhan-en-minimum-v1", "label": "10-minute no-flame mutual-care form", "tier": "minimum", "setting": "individual", "authority_scope": "Accessible household relationship practice; no mantra, gender role, touch, gift or protection contract is imposed.", "form": "accessible_short", "estimated_minutes": 10,
+          "materials": [
+            {"item": "A plain soft thread, card or message", "required": false, "substitutions": ["A drawn rakhi", "A spoken greeting", "Private remembrance", "No material"], "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm local Shravana Purnima and any Bhadra rule your family follows. Treat 16 August 2027 as a date fixture only, not a universal clock window.", "why": "The usable time depends on location and accepted Panchang.", "source_ids": ["drik-raksha-bandhan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Ask the other person whether they want to participate and whether a message, card, thread or no-contact remembrance is welcome. Ask separately before touching or taking a photograph.", "why": "Relationship affection does not replace consent.", "source_ids": ["incredible-india-raksha-bandhan", "education-school-safety-guidelines"], "optional": false},
+            {"ordinal": 3, "instruction": "Offer one specific wish for the person's well-being. If both want a thread, tie it loosely; otherwise exchange the card, message or spoken wish.", "why": "The core is an expressed bond, not a required object.", "source_ids": ["president-raksha-bandhan-2023", "maharashtra-tourism-raksha-bandhan"], "optional": false},
+            {"ordinal": 4, "instruction": "Invite the other person's wish or boundary without demanding a protection promise, gift, reply or public display.", "why": "Care is reciprocal and freely expressed.", "source_ids": ["incredible-india-raksha-bandhan", "president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 5, "instruction": "Each person names one small realistic act of mutual care, such as a scheduled call, help with a task, respectful space or emergency contact plan.", "why": "A bounded action is safer and more useful than an absolute lifelong guarantee.", "source_ids": ["president-raksha-bandhan-2023"], "optional": false}
+          ],
+          "closing": {"text": "Close with thanks, नमस्ते or a familiar blessing. Remove the thread whenever the wearer wishes; no duration proves affection.", "source_ids": ["maharashtra-tourism-raksha-bandhan"]},
+          "source_ids": ["drik-raksha-bandhan-2027", "incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023"]
+        },
+        {
+          "procedure_id": "raksha-bandhan-en-household-v1", "label": "Traditional household exchange with consent choices", "tier": "standard", "setting": "household", "authority_scope": "Common sister-brother household form, adaptable to consenting siblings or kin; not a priest-led raksha-sutra or Vedic thread rite.", "form": "traditional_household", "estimated_minutes": 25,
+          "materials": [
+            {"item": "Clean soft rakhi or plain thread", "required": false, "substitutions": ["Card", "Fabric band without sharp parts", "Message", "No thread"], "source_ids": ["incredible-india-raksha-bandhan"]},
+            {"item": "Tilak and rice", "required": false, "substitutions": ["Water mark", "Flower", "Verbal blessing", "No forehead mark"], "source_ids": ["incredible-india-raksha-bandhan"]},
+            {"item": "Lamp", "required": false, "substitutions": ["LED lamp", "Room light", "No flame"], "source_ids": ["incredible-india-raksha-bandhan"]},
+            {"item": "Safe sweet, fruit or meal", "required": false, "substitutions": ["Allergen-safe food", "Unsweetened food", "No food"], "source_ids": ["fssai-food-safety-at-home", "fssai-allergen-label-guidance"]},
+            {"item": "Pre-budgeted gift", "required": false, "substitutions": ["Letter", "Useful service", "Shared time", "No gift"], "source_ids": ["incredible-india-raksha-bandhan", "cybercrime-reporting-portal"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the local date and accepted Bhadra window, then agree who participates and the order if several people are present.", "why": "Timing and participation are context-dependent.", "source_ids": ["drik-raksha-bandhan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "Prepare a clean surface and only the agreed materials. Keep flame, pins, beads and food hazards away from children and vulnerable participants.", "why": "A smaller safe thali is complete.", "source_ids": ["education-school-safety-guidelines", "fssai-food-safety-at-home"], "optional": false},
+            {"ordinal": 3, "instruction": "Ask permission for tilak. If welcomed, apply a small mark and optional rice; otherwise offer a flower, words or no mark.", "why": "Forehead contact and materials are optional.", "source_ids": ["incredible-india-raksha-bandhan"], "optional": true},
+            {"ordinal": 4, "instruction": "If a lamp is safe and wanted, make one small guarded aarti movement; otherwise use an LED or omit it.", "why": "The source describes aarti, but flame is not required for completion.", "source_ids": ["incredible-india-raksha-bandhan"], "optional": true},
+            {"ordinal": 5, "instruction": "Offer a well-being wish and ask permission to tie. Tie loosely on the chosen wrist, or present the card/message instead.", "why": "The thread symbolizes the relationship but cannot override bodily choice.", "source_ids": ["incredible-india-raksha-bandhan", "president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 6, "instruction": "The recipient responds with their own good wish or chosen words. Replace a one-way protection vow with a realistic statement of mutual respect and availability.", "why": "Official sources describe affection and harmony; they do not require control or an unlimited guarantee.", "source_ids": ["president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 7, "instruction": "Offer food only after checking allergens and dietary needs. Exchange only affordable, unpressured gifts; a no-gift form is complete.", "why": "Food and gifts should not create harm or debt.", "source_ids": ["fssai-food-safety-at-home", "fssai-allergen-label-guidance", "cybercrime-reporting-portal"], "optional": true},
+            {"ordinal": 8, "instruction": "Share family time or one agreed act of care, then let every wearer decide when to remove the rakhi.", "why": "Closing honours the bond without policing the object.", "source_ids": ["maharashtra-tourism-raksha-bandhan"], "optional": false}
+          ],
+          "closing": {"text": "Thank one another and put out the flame. Store or dispose of food safely; remove sharp decorations before reuse or disposal. No gift value, post, photograph or length of wear measures love.", "source_ids": ["fssai-food-safety-at-home", "maharashtra-tourism-raksha-bandhan"]},
+          "source_ids": ["drik-raksha-bandhan-2027", "incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023", "fssai-food-safety-at-home", "fssai-allergen-label-guidance"]
+        },
+        {
+          "procedure_id": "raksha-bandhan-en-remote-v1", "label": "Remote, estranged or no-contact observance", "tier": "elaborate", "setting": "family_led", "authority_scope": "Distance- and boundary-safe household option; not an institutional delivery, fundraising or public campaign.", "form": "fuller_family_or_teacher_led", "estimated_minutes": 20,
+          "materials": [
+            {"item": "Known safe contact channel", "required": false, "substitutions": ["Guardian-approved family call", "Posted card without valuables", "Private journal", "No contact"], "source_ids": ["education-school-safety-guidelines", "cybercrime-reporting-portal"]},
+            {"item": "Optional parcel or digital gift", "required": false, "substitutions": ["Message", "Later shared time", "No gift"], "source_ids": ["cybercrime-reporting-portal"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Choose contact, delayed contact, private remembrance or no observance according to safety and the relationship—not family pressure.", "why": "Distance, grief, abuse and estrangement can materially change what is safe.", "source_ids": ["education-school-safety-guidelines"], "optional": false},
+            {"ordinal": 2, "instruction": "If contacting, ask whether a Rakhi greeting is welcome and use an already verified channel. Children use guardian-approved contact only.", "why": "Consent and child safety apply online as well as in person.", "source_ids": ["education-school-safety-guidelines", "cybercrime-reporting-portal"], "optional": false},
+            {"ordinal": 3, "instruction": "Send a short specific wish without demanding an immediate reply, reconciliation, address, photograph, public post or relationship label.", "why": "A greeting is not leverage for access.", "source_ids": ["president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 4, "instruction": "Before any payment or parcel, verify the person and destination separately. Never share OTP, PIN, password or identity documents; report suspected fraud through the official route.", "why": "Festival urgency is commonly exploitable by impersonation and payment fraud.", "source_ids": ["cybercrime-reporting-portal"], "optional": true},
+            {"ordinal": 5, "instruction": "Close after the message or private reflection. A missing reply, undelivered parcel or no contact does not invalidate the observance.", "why": "Completion must not depend on another person's availability.", "source_ids": ["maharashtra-tourism-raksha-bandhan"], "optional": false}
+          ],
+          "closing": {"text": "Keep private what should remain private. If the exchange raises distress or danger, stop contact and use trusted support or the appropriate emergency/safeguarding route.", "source_ids": ["education-school-safety-guidelines"]},
+          "source_ids": ["education-school-safety-guidelines", "cybercrime-reporting-portal", "president-raksha-bandhan-2023"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "relationship-and-gender", "scope": "Consenting sisters, brothers, siblings, cousins, relatives, friends or chosen siblings", "difference": "Use the participants' own relationship terms and exchange wishes reciprocally. Identity or gender alone does not require a state pack.", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"], "separate_lane_required": false},
+        {"variant_id": "materials-language-and-food", "scope": "All selected states and household languages", "difference": "Thread style, tilak, aarti, sweet, meal, clothing and language are optional within-lane choices unless an authority-bound rite changes the ordered actions.", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"], "separate_lane_required": false},
+        {"variant_id": "narali-purnima", "scope": "Maharashtra and other western coastal fishing communities", "difference": "Sea/coconut offering, livelihood community and coastal safety create a materially different observance.", "source_ids": ["maharashtra-tourism-raksha-bandhan"], "separate_lane_required": true},
+        {"variant_id": "upakarma-avani-avittam", "scope": "Veda-branch and community-specific sacred-thread renewal", "difference": "Eligibility, mantra, teacher/priest authority and sacred-thread replacement are not DIY Rakhi variations.", "source_ids": ["drik-raksha-bandhan-2027"], "separate_lane_required": true},
+        {"variant_id": "priest-or-temple-raksha-sutra", "scope": "Priest-led, deity-centred or temple-distributed protective thread", "difference": "Ritual authority, recipient, mantra and live institutional rules materially differ from a sibling exchange.", "source_ids": ["drik-raksha-bandhan-2027"], "separate_lane_required": true},
+        {"variant_id": "named-public-programme", "scope": "School, military, political, civic, environmental or temple event", "difference": "Live schedule, consent, safeguarding, crowd and symbolic-purpose evidence are required before actionable guidance.", "source_ids": ["incredible-india-raksha-bandhan", "education-school-safety-guidelines", "ndma-sachet-live-alerts"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "Participation, relationship labels, touch, tying, tilak, food, gifts, images and posting each require consent; one yes does not imply the others.",
+        "Tie loosely and remove immediately for pain, numbness, swelling, colour change, itching or distress. Avoid sharp pins, shedding glitter and small detachable parts around young children.",
+        "Use an LED or no lamp around children, oxygen, loose hair/clothing, pets, crowds or fire restrictions. Never leave a flame unattended.",
+        "Check allergens, dietary needs, hygiene and safe storage. Sweet food is optional and no-food participation is complete.",
+        "No gift, loan, transfer, OTP, password, photograph, public post, reconciliation, secrecy, obedience or lifelong protection guarantee is owed.",
+        "Mutual care never authorizes surveillance or control of clothing, movement, friends, education, work, money, marriage, sexuality or medical choices.",
+        "A child uses guardian-approved contact and never privately meets, pays or sends personal data to an adult for a festival programme.",
+        "For monsoon travel or crowds, check live institutional information and official local hazard alerts. Staying home is complete."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["raksha-bandhan"],
+      "title": "रक्षा बंधन: सहमति-आधारित भाई-बहन और आत्मीय संबंध मार्गदर्शन",
+      "short_answer": "2027 के लिए सोमवार 16 अगस्त से शुरुआत करें, पर अपने भारतीय शहर के लिए श्रावण पूर्णिमा और भद्रा की पुष्टि करें। स्पर्श या राखी बाँधने से पहले पूछें। सरल पूर्ण रूप है—ढीला धागा, कार्ड या संदेश; एक शुभकामना; दूसरे की इच्छा सुनना; और परस्पर देखभाल का एक व्यावहारिक काम तय करना। बहन बाँधे और भाई उपहार दे—यह प्रचलित रूप है, बाध्यता नहीं।",
+      "significance": {"text": "रक्षा बंधन या राखी भाई-बहन तथा अन्य सहमत आत्मीय संबंधों में स्नेह, विश्वास और देखभाल को नया करने का दिन माना जाता है। सरकारी स्रोत बहन द्वारा भाई को राखी और भाई द्वारा उपहार के परिचित रूप को प्रमुखता देते हैं, साथ ही चचेरे-ममेरे संबंधियों, रिश्तेदारों और मित्रों का भी उल्लेख करते हैं। देवम देखभाल को परस्पर रखता है; कोई व्यक्ति अधीन, नियंत्रित, ऋणी या दूसरे की सुरक्षा का गारंटर नहीं बनता।", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023"], "scope_note": "सामान्य घरेलू संबंध मार्ग; नारली पूर्णिमा, उपाकर्म/अवनि अवित्तम, पुरोहित-नेतृत्व रक्षा-सूत्र या नामित कार्यक्रम नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "draupadi-krishna-current-retelling-hi", "title": "द्रौपदी द्वारा कृष्ण की घायल उँगली बाँधना", "summary": "इन्क्रेडिबल इंडिया अभी यह कथा सुनाता है कि कृष्ण की उँगली कटने पर द्रौपदी ने अपनी साड़ी का कपड़ा फाड़कर बाँधा और उस कपड़े को रक्षा बंधन से जोड़ा गया। देवम इसे पर्यटन मंत्रालय की वर्तमान पुनर्कथा कहता है। इस पैक ने इसे महाभारत का स्थिर पाठांश या राखी की सार्वभौम उत्पत्ति सिद्ध नहीं किया है।", "tradition_scope": "वर्तमान सरकारी पर्यटन पुनर्कथा; स्थिर-पाठ प्रमाण नहीं", "source_ids": ["incredible-india-raksha-bandhan"], "universal_origin_claimed": false},
+        {"narrative_id": "lakshmi-bali-current-retelling-hi", "title": "लक्ष्मी, बलि और आत्मीयता का बंधन", "summary": "उसी पर्यटन पृष्ठ में लक्ष्मी के राजा बलि के पास जाने, श्रावण पूर्णिमा पर राखी बाँधने और अपना परिचय देने की कथा है; फिर बलि विष्णु से लक्ष्मी के साथ लौटने का अनुरोध करते हैं। यह एक जीवित लोक-कथा है, सार्वभौम उत्पत्ति, घरेलू आदेश या कर्तव्य बदल देने वाले धागे का प्रमाण नहीं।", "tradition_scope": "पर्यटन मंत्रालय की वर्तमान जीवित कथा", "source_ids": ["incredible-india-raksha-bandhan"], "universal_origin_claimed": false},
+        {"narrative_id": "tagore-unity-current-historical-retelling-hi", "title": "1905 में टैगोर द्वारा राखी का नागरिक प्रयोग", "summary": "इन्क्रेडिबल इंडिया बताता है कि बंगाल विभाजन के प्रस्ताव के समय रवीन्द्रनाथ टैगोर ने हिंदू और मुस्लिम सहभागियों को एकता के संकेत के रूप में राखी बाँधने के लिए प्रेरित किया। यह बाद का नागरिक प्रयोग प्रतीक का दायरा बढ़ाता है, पर घरेलू भाई-बहन रूप को मिटाता या सार्वजनिक भागीदारी अनिवार्य नहीं करता।", "tradition_scope": "1905 के नागरिक प्रयोग की वर्तमान सरकारी ऐतिहासिक पुनर्कथा", "source_ids": ["incredible-india-raksha-bandhan"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "traditional-sister-brother-exchange-hi", "population_scope": "अनेक हिंदू और सांस्कृतिक रूप से सहभागी भारतीय परिवार", "description": "बहन आरती या तिलक कर सकती है, राखी बाँधकर शुभकामना या मिठाई दे सकती है; भाई उपहार दे और देखभाल व्यक्त कर सकता है। हर क्रिया प्रस्ताव है और उसे मना या बदला जा सकता है।", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023"], "instructional": false},
+        {"practice_id": "extended-kin-and-remote-form-hi", "population_scope": "कुछ चचेरे-ममेरे संबंधी, रिश्तेदार, मित्र, चुने हुए भाई-बहन और दूर रहने वाले परिवार", "description": "कुछ लोग राखी को रिश्तेदारों या मित्रों तक बढ़ाते हैं, या दूर से धागा, कार्ड, संदेश और उपहार भेजते हैं। संबंध का नाम और संपर्क सहमति से हो, भेजने वाला उसे थोपे नहीं।", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"], "instructional": false},
+        {"practice_id": "shared-food-and-family-time-hi", "population_scope": "अनेक सहभागी परिवार", "description": "राखी के बाद मिठाई या भोजन साझा किया जा सकता है। अलग राज्य का भोजन इसी मार्ग की सामग्री-विविधता है; सहमति, एलर्जी, आहार और खाद्य-सुरक्षा लागू रहते हैं।", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "fssai-food-safety-at-home", "fssai-allergen-label-guidance"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "raksha-bandhan-hi-minimum-v1", "label": "10 मिनट का बिना लौ वाला परस्पर देखभाल रूप", "tier": "minimum", "setting": "individual", "authority_scope": "सुलभ घरेलू संबंध अभ्यास; मंत्र, लिंग-भूमिका, स्पर्श, उपहार या सुरक्षा-अनुबंध थोपा नहीं जाता।", "form": "accessible_short", "estimated_minutes": 10,
+          "materials": [{"item": "सादा मुलायम धागा, कार्ड या संदेश", "required": false, "substitutions": ["बनाई हुई कागज़ी राखी", "मौखिक शुभकामना", "निजी स्मरण", "कोई सामग्री नहीं"], "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय श्रावण पूर्णिमा और परिवार की भद्रा-परंपरा की पुष्टि करें। 16 अगस्त 2027 को केवल तारीख-संकेत मानें, सार्वभौम घड़ी-समय नहीं।", "why": "उपयोगी समय स्थान और स्वीकृत पंचांग पर निर्भर है।", "source_ids": ["drik-raksha-bandhan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "पूछें कि दूसरा व्यक्ति भाग लेना चाहता है या नहीं और संदेश, कार्ड, धागा अथवा बिना संपर्क का स्मरण स्वीकार है या नहीं। स्पर्श और तस्वीर के लिए अलग अनुमति लें।", "why": "संबंध का स्नेह सहमति का स्थान नहीं लेता।", "source_ids": ["incredible-india-raksha-bandhan", "education-school-safety-guidelines"], "optional": false},
+            {"ordinal": 3, "instruction": "उसके कल्याण की एक स्पष्ट शुभकामना दें। दोनों चाहें तो धागा ढीला बाँधें; नहीं तो कार्ड, संदेश या मौखिक शुभकामना दें।", "why": "मूल भाव व्यक्त संबंध है, अनिवार्य वस्तु नहीं।", "source_ids": ["president-raksha-bandhan-2023", "maharashtra-tourism-raksha-bandhan"], "optional": false},
+            {"ordinal": 4, "instruction": "दूसरे की शुभकामना या सीमा सुनें; रक्षा-वचन, उपहार, उत्तर या सार्वजनिक प्रदर्शन न माँगें।", "why": "देखभाल परस्पर और स्वेच्छिक है।", "source_ids": ["incredible-india-raksha-bandhan", "president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 5, "instruction": "दोनों परस्पर देखभाल का एक छोटा व्यावहारिक काम बताएँ—जैसे तय फोन, किसी काम में मदद, सम्मानजनक दूरी या आपात संपर्क योजना।", "why": "सीमित काम असीम जीवनभर की गारंटी से अधिक सुरक्षित और उपयोगी है।", "source_ids": ["president-raksha-bandhan-2023"], "optional": false}
+          ],
+          "closing": {"text": "धन्यवाद, नमस्ते या परिचित आशीष से समापन करें। पहनने वाला जब चाहे धागा उतार सकता है; पहनने की अवधि प्रेम का प्रमाण नहीं।", "source_ids": ["maharashtra-tourism-raksha-bandhan"]},
+          "source_ids": ["drik-raksha-bandhan-2027", "incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023"]
+        },
+        {
+          "procedure_id": "raksha-bandhan-hi-household-v1", "label": "सहमति-विकल्पों सहित पारंपरिक घरेलू आदान-प्रदान", "tier": "standard", "setting": "household", "authority_scope": "प्रचलित बहन-भाई घरेलू रूप, सहमत भाई-बहन या आत्मीय संबंधों के लिए अनुकूलनीय; पुरोहित-नेतृत्व रक्षा-सूत्र या वैदिक सूत्र-कर्म नहीं।", "form": "traditional_household", "estimated_minutes": 25,
+          "materials": [
+            {"item": "स्वच्छ मुलायम राखी या सादा धागा", "required": false, "substitutions": ["कार्ड", "बिना नुकीले भाग की कपड़े की पट्टी", "संदेश", "धागा नहीं"], "source_ids": ["incredible-india-raksha-bandhan"]},
+            {"item": "तिलक और अक्षत", "required": false, "substitutions": ["जल का चिह्न", "फूल", "मौखिक आशीष", "माथे पर चिह्न नहीं"], "source_ids": ["incredible-india-raksha-bandhan"]},
+            {"item": "दीपक", "required": false, "substitutions": ["एलईडी दीपक", "कमरे की रोशनी", "लौ नहीं"], "source_ids": ["incredible-india-raksha-bandhan"]},
+            {"item": "सुरक्षित मिठाई, फल या भोजन", "required": false, "substitutions": ["एलर्जी-सुरक्षित भोजन", "बिना मिठास का भोजन", "भोजन नहीं"], "source_ids": ["fssai-food-safety-at-home", "fssai-allergen-label-guidance"]},
+            {"item": "पहले तय बजट का उपहार", "required": false, "substitutions": ["पत्र", "उपयोगी सेवा", "साथ समय", "उपहार नहीं"], "source_ids": ["incredible-india-raksha-bandhan", "cybercrime-reporting-portal"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "स्थानीय तारीख और मान्य भद्रा-समय तय करें; कई लोग हों तो भागीदारी और क्रम पहले सहमति से तय करें।", "why": "समय और भागीदारी संदर्भ-निर्भर हैं।", "source_ids": ["drik-raksha-bandhan-2027"], "optional": false},
+            {"ordinal": 2, "instruction": "स्वच्छ स्थान पर केवल स्वीकृत सामग्री रखें। लौ, पिन, मोती और खाद्य जोखिम बच्चों तथा संवेदनशील लोगों से दूर रखें।", "why": "छोटी सुरक्षित थाली भी पूर्ण है।", "source_ids": ["education-school-safety-guidelines", "fssai-food-safety-at-home"], "optional": false},
+            {"ordinal": 3, "instruction": "तिलक की अनुमति पूछें। स्वीकार हो तो छोटा तिलक और वैकल्पिक अक्षत लगाएँ; नहीं तो फूल, शब्द या कोई चिह्न नहीं।", "why": "माथे का स्पर्श और सामग्री वैकल्पिक हैं।", "source_ids": ["incredible-india-raksha-bandhan"], "optional": true},
+            {"ordinal": 4, "instruction": "दीपक सुरक्षित और स्वीकार हो तो एक छोटी संरक्षित आरती करें; अन्यथा एलईडी लें या छोड़ दें।", "why": "स्रोत आरती बताता है, पर पूर्णता के लिए लौ आवश्यक नहीं।", "source_ids": ["incredible-india-raksha-bandhan"], "optional": true},
+            {"ordinal": 5, "instruction": "कल्याण की कामना करें और बाँधने की अनुमति लें। चुनी कलाई पर ढीली राखी बाँधें या कार्ड/संदेश दें।", "why": "धागा संबंध का संकेत है, शरीर पर अधिकार नहीं।", "source_ids": ["incredible-india-raksha-bandhan", "president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 6, "instruction": "प्राप्तकर्ता अपनी शुभकामना या चुने हुए शब्द कहे। एकतरफा रक्षा-वचन के बदले परस्पर सम्मान और उपलब्धता का व्यावहारिक कथन करें।", "why": "सरकारी स्रोत स्नेह और सद्भाव बताते हैं, नियंत्रण या असीम गारंटी नहीं।", "source_ids": ["president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 7, "instruction": "एलर्जी और आहार पूछकर ही भोजन दें। केवल सस्ता, दबाव-मुक्त उपहार दें; बिना उपहार का रूप पूर्ण है।", "why": "भोजन और उपहार हानि या ऋण न बनाएँ।", "source_ids": ["fssai-food-safety-at-home", "fssai-allergen-label-guidance", "cybercrime-reporting-portal"], "optional": true},
+            {"ordinal": 8, "instruction": "परिवार के साथ समय या देखभाल का तय काम करें; राखी कब उतारनी है यह पहनने वाला तय करे।", "why": "समापन वस्तु की निगरानी किए बिना संबंध का सम्मान करता है।", "source_ids": ["maharashtra-tourism-raksha-bandhan"], "optional": false}
+          ],
+          "closing": {"text": "एक-दूसरे को धन्यवाद दें और लौ बुझाएँ। भोजन सुरक्षित रखें; दोबारा उपयोग या विसर्जन से पहले नुकीली सजावट हटाएँ। उपहार की कीमत, पोस्ट, फोटो या पहनने की अवधि प्रेम का माप नहीं।", "source_ids": ["fssai-food-safety-at-home", "maharashtra-tourism-raksha-bandhan"]},
+          "source_ids": ["drik-raksha-bandhan-2027", "incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan", "president-raksha-bandhan-2023", "fssai-food-safety-at-home", "fssai-allergen-label-guidance"]
+        },
+        {
+          "procedure_id": "raksha-bandhan-hi-remote-v1", "label": "दूर, अलग या बिना संपर्क का पालन", "tier": "elaborate", "setting": "family_led", "authority_scope": "दूरी और सीमाओं के अनुकूल घरेलू विकल्प; संस्थागत भेजाव, चंदा या सार्वजनिक अभियान नहीं।", "form": "fuller_family_or_teacher_led", "estimated_minutes": 20,
+          "materials": [
+            {"item": "पहले से ज्ञात सुरक्षित संपर्क माध्यम", "required": false, "substitutions": ["अभिभावक-स्वीकृत पारिवारिक कॉल", "कीमती वस्तु बिना डाक कार्ड", "निजी डायरी", "संपर्क नहीं"], "source_ids": ["education-school-safety-guidelines", "cybercrime-reporting-portal"]},
+            {"item": "वैकल्पिक पार्सल या डिजिटल उपहार", "required": false, "substitutions": ["संदेश", "बाद में साथ समय", "उपहार नहीं"], "source_ids": ["cybercrime-reporting-portal"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "सुरक्षा और संबंध के अनुसार संपर्क, देर से संपर्क, निजी स्मरण या कोई पालन नहीं चुनें—परिवार के दबाव से नहीं।", "why": "दूरी, शोक, हिंसा और अलगाव सुरक्षित विकल्प बदल सकते हैं।", "source_ids": ["education-school-safety-guidelines"], "optional": false},
+            {"ordinal": 2, "instruction": "संपर्क करना हो तो पूछें कि राखी संदेश स्वीकार है या नहीं और पहले से सत्यापित माध्यम लें। बच्चे केवल अभिभावक-स्वीकृत संपर्क करें।", "why": "सहमति और बाल-सुरक्षा ऑनलाइन भी लागू हैं।", "source_ids": ["education-school-safety-guidelines", "cybercrime-reporting-portal"], "optional": false},
+            {"ordinal": 3, "instruction": "तुरंत उत्तर, मेल-मिलाप, पता, फोटो, सार्वजनिक पोस्ट या संबंध का नाम माँगे बिना छोटी स्पष्ट शुभकामना भेजें।", "why": "शुभकामना पहुँच पाने का दबाव नहीं है।", "source_ids": ["president-raksha-bandhan-2023"], "optional": false},
+            {"ordinal": 4, "instruction": "भुगतान या पार्सल से पहले व्यक्ति और पता अलग माध्यम से जाँचें। ओटीपी, पिन, पासवर्ड या पहचान-पत्र न दें; संदेह हो तो सरकारी पोर्टल लें।", "why": "त्योहार की जल्दी में पहचान और भुगतान धोखा हो सकता है।", "source_ids": ["cybercrime-reporting-portal"], "optional": true},
+            {"ordinal": 5, "instruction": "संदेश या निजी चिंतन के बाद समापन करें। उत्तर न आना, पार्सल न पहुँचना या संपर्क न करना पालन को अधूरा नहीं बनाता।", "why": "पूर्णता दूसरे की उपलब्धता पर निर्भर नहीं होनी चाहिए।", "source_ids": ["maharashtra-tourism-raksha-bandhan"], "optional": false}
+          ],
+          "closing": {"text": "जिसे निजी रहना चाहिए उसे निजी रखें। संवाद से संकट या खतरा बढ़े तो संपर्क रोकें और विश्वसनीय सहायता या उचित आपात/सुरक्षा मार्ग लें।", "source_ids": ["education-school-safety-guidelines"]},
+          "source_ids": ["education-school-safety-guidelines", "cybercrime-reporting-portal", "president-raksha-bandhan-2023"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "relationship-and-gender-hi", "scope": "सहमत बहनें, भाई, भाई-बहन, चचेरे-ममेरे संबंधी, रिश्तेदार, मित्र या चुने हुए भाई-बहन", "difference": "सहभागियों के अपने संबंध-शब्द लें और शुभकामना परस्पर दें। पहचान या लिंग मात्र से राज्य-पैक नहीं बनता।", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"], "separate_lane_required": false},
+        {"variant_id": "materials-language-and-food-hi", "scope": "सभी चुने राज्य और घरेलू भाषाएँ", "difference": "धागे की शैली, तिलक, आरती, मिठाई, भोजन, वस्त्र और भाषा इसी मार्ग के वैकल्पिक चुनाव हैं, जब तक अधिकार-आधारित कर्म का क्रम न बदले।", "source_ids": ["incredible-india-raksha-bandhan", "maharashtra-tourism-raksha-bandhan"], "separate_lane_required": false},
+        {"variant_id": "narali-purnima-hi", "scope": "महाराष्ट्र और अन्य पश्चिमी तटीय मछुआरा समुदाय", "difference": "समुद्र/नारियल अर्पण, आजीविका समुदाय और तटीय सुरक्षा इसे अलग पालन बनाते हैं।", "source_ids": ["maharashtra-tourism-raksha-bandhan"], "separate_lane_required": true},
+        {"variant_id": "upakarma-avani-avittam-hi", "scope": "वेद-शाखा और समुदाय-विशिष्ट यज्ञोपवीत नवीकरण", "difference": "पात्रता, मंत्र, गुरु/पुरोहित अधिकार और सूत्र बदलना घरेलू राखी की DIY विविधता नहीं।", "source_ids": ["drik-raksha-bandhan-2027"], "separate_lane_required": true},
+        {"variant_id": "priest-or-temple-raksha-sutra-hi", "scope": "पुरोहित-नेतृत्व, देवता-केंद्रित या मंदिर-वितरित रक्षा-सूत्र", "difference": "कर्म-अधिकार, प्राप्तकर्ता, मंत्र और संस्था के जीवित नियम भाई-बहन आदान-प्रदान से अलग हैं।", "source_ids": ["drik-raksha-bandhan-2027"], "separate_lane_required": true},
+        {"variant_id": "named-public-programme-hi", "scope": "विद्यालय, सैन्य, राजनीतिक, नागरिक, पर्यावरण या मंदिर कार्यक्रम", "difference": "कार्रवाई से पहले जीवित समय-सारिणी, सहमति, सुरक्षा, भीड़ और प्रतीकात्मक उद्देश्य का प्रमाण चाहिए।", "source_ids": ["incredible-india-raksha-bandhan", "education-school-safety-guidelines", "ndma-sachet-live-alerts"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "भागीदारी, संबंध का नाम, स्पर्श, बाँधना, तिलक, भोजन, उपहार, फोटो और पोस्ट—हर एक के लिए अलग सहमति चाहिए।",
+        "राखी ढीली बाँधें; दर्द, सुन्नपन, सूजन, रंग बदलना, खुजली या परेशानी हो तो तुरंत उतारें। छोटे बच्चों के पास पिन, झड़ती चमकीली सामग्री और अलग होने वाले छोटे भाग न रखें।",
+        "बच्चे, ऑक्सीजन, खुले बाल/कपड़े, पालतू पशु, भीड़ या अग्नि-प्रतिबंध हों तो एलईडी या बिना दीपक का रूप लें। लौ अकेली न छोड़ें।",
+        "एलर्जी, आहार, स्वच्छता और सुरक्षित भंडारण जाँचें। मिठाई वैकल्पिक है; बिना भोजन का पालन पूर्ण है।",
+        "उपहार, ऋण, धन-हस्तांतरण, ओटीपी, पासवर्ड, फोटो, सार्वजनिक पोस्ट, मेल-मिलाप, गोपनीयता, आज्ञाकारिता या जीवनभर सुरक्षा की गारंटी किसी पर देय नहीं।",
+        "परस्पर देखभाल कपड़े, आवागमन, मित्र, शिक्षा, काम, धन, विवाह, लैंगिकता या चिकित्सा निर्णयों की निगरानी या नियंत्रण की अनुमति नहीं देती।",
+        "बच्चा अभिभावक-स्वीकृत संपर्क ही करे और त्योहार के नाम पर किसी वयस्क से अकेले न मिले, भुगतान या निजी डेटा न भेजे।",
+        "मानसून यात्रा या भीड़ के लिए संस्था की ताज़ा सूचना और सरकारी स्थानीय चेतावनी देखें। घर पर रहना भी पूर्ण है।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": ["No deterministic day-cell projection has been produced.", "Named institutional programmes, Narali Purnima, Upakarma/Avani Avittam and priest-led raksha-sutra remain separate owner lanes.", "Popular story associations are current official retellings; fixed primary-text verification remains unresolved and is not claimed."],
+    "review_status": "internal_beta_reviewed"
+  }
+}

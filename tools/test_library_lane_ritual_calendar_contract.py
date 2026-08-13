@@ -73,6 +73,14 @@ GURU_PURNIMA_PACK = (
 GURU_PURNIMA_LINK = (
     LANE / "cross-links" / "guru-purnima-mahabharata-owner-link-v1.json"
 )
+RAKSHA_BANDHAN_PACK = (
+    LANE
+    / "packs"
+    / "raksha-bandhan-consent-led-sibling-household-2027-v1.json"
+)
+RAKSHA_BANDHAN_LINKS = (
+    LANE / "cross-links" / "raksha-bandhan-story-owner-proposals-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -779,8 +787,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 12
-    assert progress["remaining_authoring_items"] == 196
+    assert progress["completed_after_freeze"] == 13
+    assert progress["remaining_authoring_items"] == 195
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -796,6 +804,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "vat-savitri-north-amavasya-household-participant-2027-v1",
         "vat-purnima-west-household-participant-2027-v1",
         "guru-purnima-general-gratitude-household-participant-2027-v1",
+        "raksha-bandhan-consent-led-sibling-household-2027-v1",
     ]
     assert progress["completed_umbrella_components"] == {
         "vat-savitri-north-west-participant-v1": [
@@ -1962,8 +1971,8 @@ def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_with_single_umbr
 
     # Two material applicability packs complete one frozen umbrella item, not two.
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 12
-    assert progress["remaining_authoring_items"] == 196
+    assert progress["completed_after_freeze"] == 13
+    assert progress["remaining_authoring_items"] == 195
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert VAT_PURNIMA_WEST_PACK.stem in progress["completed_lane_ids"]
     assert progress["completed_umbrella_components"][
@@ -2210,8 +2219,8 @@ def test_guru_purnima_pack_and_mahabharata_link_are_schema_valid_and_complete():
     )
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 12
-    assert progress["remaining_authoring_items"] == 196
+    assert progress["completed_after_freeze"] == 13
+    assert progress["remaining_authoring_items"] == 195
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert (
         "knowledge_packs/library_lanes/ritual-calendar/packs/"
@@ -2327,3 +2336,147 @@ def test_guru_purnima_is_bilingual_actionable_source_layered_and_power_safe():
     raw.decode("utf-8", errors="strict")
     assert "गुरु पूर्णिमा".encode("utf-8") in raw
     assert GURU_PURNIMA_PACK.stat().st_size < 100_000
+
+
+def test_raksha_bandhan_pack_links_and_progress_are_schema_valid():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(RAKSHA_BANDHAN_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["lane_id"] == (
+        "raksha-bandhan-consent-led-sibling-household-2027-v1"
+    )
+    assert pack["observance_slugs"] == ["raksha-bandhan"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 9
+    referenced = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    referenced.extend(child)
+                else:
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    assert set(referenced) <= source_ids
+
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    links = load(RAKSHA_BANDHAN_LINKS)
+    Draft202012Validator(link_schema).validate(links)
+    assert len(links["proposals"]) == 2
+    by_id = {proposal["proposal_id"]: proposal for proposal in links["proposals"]}
+    draupadi = by_id["raksha-bandhan-draupadi-krishna-popular-association-audit"]
+    assert draupadi["confidence"] == "contested"
+    assert draupadi["target_resolution"] == "existing_anchor"
+    assert draupadi["to_ref"]["canonical_id"] == (
+        "devam:source-expression:mahabharata-ganguli-consumer-v1"
+    )
+    tagore = by_id["raksha-bandhan-tagore-1905-history-owner"]
+    assert tagore["target_resolution"] == "unresolved_owner_lane"
+
+    progress = load(AUTHORING_PROGRESS)
+    assert progress["completed_after_freeze"] == 13
+    assert progress["remaining_authoring_items"] == 195
+    assert pack["lane_id"] in progress["completed_lane_ids"]
+    assert (
+        "knowledge_packs/library_lanes/ritual-calendar/packs/"
+        + pack["lane_id"]
+        + ".json"
+    ) in progress["completed_pack_refs"]
+
+
+def test_raksha_bandhan_is_bilingual_consent_led_and_major_variant_bounded():
+    pack = load(RAKSHA_BANDHAN_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is False
+    assert "Monday 16 August" in calendar["freshness_note"]
+    assert "Washington, D.C." in calendar["freshness_note"]
+    assert "never copy" in calendar["freshness_note"]
+    assert "Recompute" in calendar["freshness_note"]
+
+    localized = {
+        entry["language_code"]: entry for entry in pack["localized_content"]
+    }
+    assert set(localized) == {"en", "hi"}
+    shapes = []
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 3
+        assert len(entry["typical_practices"]) == 3
+        assert all(
+            not story["universal_origin_claimed"]
+            for story in entry["origin_narratives"]
+        )
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        shape = [
+            (tier, len(procedures[tier]["materials"]), len(procedures[tier]["steps"]))
+            for tier in ("minimum", "standard", "elaborate")
+        ]
+        assert shape == [
+            ("minimum", 1, 5),
+            ("standard", 5, 8),
+            ("elaborate", 2, 5),
+        ]
+        shapes.append(shape)
+        assert all(procedure["closing"]["text"] for procedure in entry["procedures"])
+
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        suffix = "-hi" if entry["language_code"] == "hi" else ""
+        for base in ("relationship-and-gender", "materials-language-and-food"):
+            assert variants[base + suffix]["separate_lane_required"] is False
+        for base in (
+            "narali-purnima",
+            "upakarma-avani-avittam",
+            "priest-or-temple-raksha-sutra",
+            "named-public-programme",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is True
+    assert shapes[0] == shapes[1]
+
+    english_stories = " ".join(
+        story["summary"] for story in localized["en"]["origin_narratives"]
+    ).lower()
+    assert "has not established it as a fixed mahabharata passage" in english_stories
+    assert "not a verified universal origin" in english_stories
+    assert "current official historical retelling" in english_stories
+
+    english = json.dumps(localized["en"], ensure_ascii=False).lower()
+    for term in (
+        "ask before touch or tying",
+        "familiar sister-ties/brother-gifts form is common, not compulsory",
+        "relationship affection does not replace consent",
+        "without demanding a protection promise",
+        "one-way protection vow",
+        "no-gift form is complete",
+        "never share otp, pin, password",
+        "mutual care never authorizes surveillance",
+        "staying home is complete",
+    ):
+        assert term in english
+
+    hindi = json.dumps(localized["hi"], ensure_ascii=False)
+    for term in (
+        "सहमति-आधारित",
+        "प्रचलित रूप है, बाध्यता नहीं",
+        "संबंध का स्नेह सहमति का स्थान नहीं लेता",
+        "रक्षा-वचन",
+        "बिना उपहार का रूप पूर्ण है",
+        "ओटीपी, पिन, पासवर्ड",
+        "निगरानी या नियंत्रण",
+        "घर पर रहना भी पूर्ण है",
+    ):
+        assert term in hindi
+
+    raw = RAKSHA_BANDHAN_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "रक्षा बंधन".encode("utf-8") in raw
+    assert RAKSHA_BANDHAN_PACK.stat().st_size < 100_000
