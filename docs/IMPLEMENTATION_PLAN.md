@@ -11,7 +11,7 @@ The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-456 substantial scenes and 2,005
+457 substantial scenes and 2,012
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -55,7 +55,7 @@ still illustrates 55 scenes across seven districts and gives only 14 turns a
 direct visual entrance; 35 turns still stop at orientation before their
 authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
-456 scenes and compiles 455 story-order, 94 character-path, 50 place-echo and
+457 scenes and compiles 456 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
@@ -285,14 +285,14 @@ route rather than being duplicated. Its 29 beats now carry substantial Hindi
 and English story continuations while preserving the existing visual cues,
 source addresses, and world routes; user-visible journey copy no longer exposes
 editorial or citation apparatus. Exact Uttara 1–123 section-span hashes were
-independently re-derived from the retained Dutt bytes and now ground 85
-substantial bilingual playable scenes containing 288 beats across the complete
+independently re-derived from the retained Dutt bytes and now ground 86
+substantial bilingual playable scenes containing 295 beats across the complete
 selected Uttara range. The first whole-journey adversarial review is complete.
 It found five thin turns that needed additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
 leaks in consumer copy; the copy leaks are repaired. All five thin turns now
-clear the provisional depth floor through seventy-two exact data-only scenes
-replacing eighteen compressed story blocks. The same source-partitioned repair now
+clear the provisional depth floor through seventy-four exact data-only scenes
+replacing nineteen compressed story blocks. The same source-partitioned repair now
 expands the ten-section `lakshmana-joins` departure summary into five scenes
 covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
 farewells, and expands the seven-section `rama-accepts-exile` summary into
@@ -302,11 +302,22 @@ blessing. It also replaces the six-section `conquest-crosses-cosmic-worlds`
 summary with separate source-unit stories for the Nivatakavacha alliance and
 Varuna campaign, Bali's lesson, Surya's unanswered ultimatum, Mandhata's duel,
 the Moon's resistance, and the western-island cosmic encounter. It also replaces
+the compressed Uttara 29–30 captive-women-and-family-war summary with two exact
+scenes and ten bilingual beats. The first keeps the abducted women distinct,
+names the relatives and households they grieve, preserves their collective
+condemnation as an epic-world utterance, and follows Surpanakha's accusation
+that Ravana killed her husband into the Dandaka arrangement that cannot repair
+the loss. The second separates Indrajit's epic war-power rites from modern
+ritual instruction, keeps Vibhishana's period-bound marriage-transfer norm from
+becoming a current consent rule, and centres Kumbhinasi's fearful but effective
+intervention before Ravana can kill Madhu. Madhu's survival and later alliance
+do not retroactively make Kumbhinasi's original abduction harmless or desired.
+It also replaces
 the Sagara-to-Ganga summary with six source-unit scenes for Sagara's family, the destructive horse search,
 Kapila, Anshuman's recovery, Bhagiratha's descent of Ganga, and the completed
 water rites, while removing the prior unsupported claim that the selected
 source described Ganga consenting to the descent. It also confirms the
-larger experience gap between the complete 456-scene authored projection and
+larger experience gap between the complete 457-scene authored projection and
 the 55 scenes currently illustrated in the live journey. On the user's
 2026-08-13 direction, image generation and UI-world projection are paused; the
 final six-section summary identified by the first audit has also been split into

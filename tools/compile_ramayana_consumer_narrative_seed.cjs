@@ -90,16 +90,16 @@ function validateSnapshot(snapshot) {
     || snapshot.counters.orientationOnlyTurns !== 0) {
     throw new Error("Unexpected Ramayana playable-turn boundary");
   }
-  if (snapshot.counters.playableScenes !== 456
+  if (snapshot.counters.playableScenes !== 457
     || snapshot.counters.draftSceneOutlines !== 0
-    || snapshot.counters.bilingualBeats !== 2005) {
+    || snapshot.counters.bilingualBeats !== 2012) {
     throw new Error("Unexpected Ramayana detailed-content shape");
   }
   const momentSlugs = [
     ...snapshot.turns.map((turn) => turnSlug(turn.id)),
     ...snapshot.turns.flatMap((turn) => turn.scenes.map((scene) => sceneSlug(scene.id))),
   ];
-  if (new Set(momentSlugs).size !== 505) throw new Error("Narrative moment slugs must be unique");
+  if (new Set(momentSlugs).size !== 506) throw new Error("Narrative moment slugs must be unique");
   for (const turn of snapshot.turns) {
     const expectedReadiness = turn.coverage === "playable"
       ? "playable"

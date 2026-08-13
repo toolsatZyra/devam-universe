@@ -1,0 +1,282 @@
+{
+  "contract": "DEVAM_STORY_UNIVERSE_COVERAGE_V1",
+  "version": 1,
+  "snapshot_date": "2026-08-13",
+  "approval_state": "active_goal_scope",
+  "audience": "Ordinary Hindi- or English-speaking Indian adults who expect complete, engaging stories rather than scholarly apparatus or one-line summaries.",
+  "boundary": "This is the canonical registry of approved library denominators and missing denominators for the active goal. It references authoritative enumerators instead of duplicating story prose. Exhausting version 1 permits only a version-1 selected-scope claim, never civilizational completeness.",
+  "governing_contracts": [
+    "docs/CONSUMER_CONTENT_MVP_CONTRACT.md",
+    "docs/PARALLEL_LIBRARY_AUTHORING_CONTRACT.md",
+    "docs/RITUAL_AND_OBSERVANCE_PRODUCT_CONTRACT.md"
+  ],
+  "completion_states": [
+    "denominator_missing",
+    "denominator_fixed",
+    "source_reconciliation",
+    "authoring",
+    "depth_repair",
+    "review_pending",
+    "consumer_complete_en_hi",
+    "excluded_documented"
+  ],
+  "required_dimensions": [
+    "work",
+    "story_cycle",
+    "episode",
+    "character",
+    "deity",
+    "place",
+    "temple",
+    "festival",
+    "ritual",
+    "historical_connection",
+    "living_practice_connection"
+  ],
+  "completion_rule": "Every collection must reach consumer_complete_en_hi or excluded_documented. A fixed source, source unit, graph node, outline, summary, acquired byte count, or database row is not a completed consumer story.",
+  "collections": [
+    {
+      "collection_id": "ramayana-selected-dutt-expression",
+      "priority": 1,
+      "kind": "selected_source_expression",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:source-expression:ramayana-dutt-consumer-v1", "devam:being:rama", "devam:being:hanuman"],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "living_practice_connection"],
+      "denominator": {
+        "state": "fixed",
+        "authoritative_enumerator": "apps/web/src/lib/content/ramayana-narrative-snapshot.ts#buildRamayanaNarrativeSnapshot",
+        "source_units": 652,
+        "story_cycles": 49,
+        "current_episodes": 457
+      },
+      "completion": {"state": "depth_repair", "substantial_bilingual_beats": 2012},
+      "remaining_boundary": "Finish the whole-journey compression and continuity audit, replace every material one-line substitute, review character and place traversal, and keep broader Ramayana expressions outside this selected-expression completion claim."
+    },
+    {
+      "collection_id": "mahabharata-selected-ganguli-expression",
+      "priority": 2,
+      "kind": "selected_source_expression",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:source-expression:mahabharata-ganguli-consumer-v1", "devam:being:krishna"],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "historical_connection", "living_practice_connection"],
+      "denominator": {
+        "state": "fixed",
+        "authoritative_enumerator": "knowledge_packs/inventories/mahabharata-consumer-backbone-v1.json",
+        "source_units": 2107,
+        "story_cycles": 77,
+        "current_authored_story_cycles": 12
+      },
+      "completion": {"state": "authoring", "current_episodes": 111, "substantial_bilingual_beats": 516},
+      "remaining_boundary": "Author substantial English and Hindi scenes beneath the remaining 65 turns, then run a whole-expression continuity and omission audit before projection."
+    },
+    {
+      "collection_id": "ramcharitmanas-daily-reading",
+      "priority": 3,
+      "kind": "daily_reading_expression",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:text:ramcharitmanas", "devam:being:rama", "devam:being:hanuman"],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "living_practice_connection"],
+      "denominator": {
+        "state": "fixed",
+        "authoritative_enumerator": "knowledge_packs/inventories/consumer-content-mvp-v1.json#/lanes/ramcharitmanas-daily-reading",
+        "fixed_narrative_pages": 1172,
+        "prepared_narrative_pages": 813,
+        "held_text_bearing_pages": 345,
+        "structural_blank_scan_pages": 14
+      },
+      "completion": {"state": "source_reconciliation"},
+      "remaining_boundary": "Correct or source-address the 345 held text-bearing pages, then create the canonical approachable Hindi and English daily-reading sequence."
+    },
+    {
+      "collection_id": "hanuman-chalisa-reading-and-meaning",
+      "priority": 4,
+      "kind": "devotional_reading_expression",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:text:hanuman-chalisa", "devam:being:hanuman", "devam:being:rama"],
+      "required_dimensions": ["work", "episode", "character", "living_practice_connection"],
+      "denominator": {
+        "state": "fixed",
+        "authoritative_enumerator": "knowledge_packs/inventories/consumer-content-mvp-v1.json#/lanes/hanuman-chalisa",
+        "reading_units": 43
+      },
+      "completion": {"state": "review_pending"},
+      "remaining_boundary": "Complete independent cultural and linguistic review; saved progress and hosted projection are separate product states rather than library-completion evidence."
+    },
+    {
+      "collection_id": "ganesha-story-world",
+      "priority": 5,
+      "kind": "hero_story_world",
+      "owner_lane_id": "ganesha-consumer",
+      "canonical_anchor_ids": ["devam:being:ganesha", "devam:observance:ganesh-chaturthi"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/library_lanes/ganesha/coverage-v1.json"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Freeze the selected Ganesha story-family, character, place, temple, Ganesh Chaturthi, Ganeshotsav, and living-practice denominator before additional completion claims."
+    },
+    {
+      "collection_id": "durga-navaratri-durga-puja-story-world",
+      "priority": 6,
+      "kind": "hero_story_world",
+      "owner_lane_id": "devi-consumer",
+      "canonical_anchor_ids": ["devam:being:durga", "devam:being:parvati", "devam:observance:shardiya-navaratri", "devam:observance:durga-puja"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/library_lanes/devi/coverage-v1.json"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Freeze the selected Devi Mahatmya and connected Durga, Navaratri, Durga Puja, place, temple, and practice denominator without flattening textual or regional identities."
+    },
+    {
+      "collection_id": "kali-and-kali-puja-story-world",
+      "priority": 7,
+      "kind": "hero_story_world",
+      "owner_lane_id": "devi-consumer",
+      "canonical_anchor_ids": ["devam:being:kali", "devam:being:parvati", "devam:observance:bengal-kali-puja"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/library_lanes/devi/coverage-v1.json"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Enumerate selected Kali narratives, form relationships, Bengal Kali Puja lanes, places, temples, and living practices without treating one form or festival account as universal."
+    },
+    {
+      "collection_id": "lakshmi-story-world",
+      "priority": 8,
+      "kind": "hero_story_world",
+      "owner_lane_id": "devi-consumer",
+      "canonical_anchor_ids": ["devam:being:lakshmi", "devam:observance:diwali-lakshmi-puja"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/library_lanes/devi/coverage-v1.json"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Define selected Lakshmi narrative expressions and separately scoped Diwali, vrata, temple, regional, and household-practice connections."
+    },
+    {
+      "collection_id": "saraswati-story-world",
+      "priority": 9,
+      "kind": "hero_story_world",
+      "owner_lane_id": "devi-consumer",
+      "canonical_anchor_ids": ["devam:being:saraswati"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/library_lanes/devi/coverage-v1.json"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Define selected Saraswati narratives, Vasant Panchami and other named practice lanes, major places, and selected temple connections."
+    },
+    {
+      "collection_id": "shiva-parvati-story-world",
+      "priority": 10,
+      "kind": "hero_story_world",
+      "owner_lane_id": "ritual-calendar",
+      "canonical_anchor_ids": ["devam:being:shiva", "devam:being:parvati", "devam:observance:mahashivaratri"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/shiva-parvati-story-world"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Assign a dedicated authoring owner and freeze selected Shiva-Parvati narrative expressions, connected festivals, major places, temples, and scoped practices."
+    },
+    {
+      "collection_id": "rama-hanuman-beyond-selected-expression",
+      "priority": 11,
+      "kind": "connected_story_world",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:being:rama", "devam:being:hanuman"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/rama-hanuman-beyond-selected-expression"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Inventory the selected wider Rama and Hanuman traditions, festivals, devotional stories, places, temples, and practices without treating the Dutt expression as the whole tradition."
+    },
+    {
+      "collection_id": "krishna-story-world",
+      "priority": 12,
+      "kind": "hero_story_world",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:being:krishna", "devam:being:vishnu"],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/krishna-story-world"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Select and structurally reconcile the Krishna expressions required across Mahabharata, Harivamsha, Bhagavata and connected traditions before story-completeness claims."
+    },
+    {
+      "collection_id": "vishnu-major-avatar-story-worlds",
+      "priority": 13,
+      "kind": "multi_hero_story_world",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:being:vishnu", "devam:being:rama", "devam:being:krishna"],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/vishnu-major-avatar-story-worlds"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Define the approved major-avatar list and selected source expressions, retaining explicit theological and textual scope for every avatar relationship."
+    },
+    {
+      "collection_id": "diwali-deepavali-multi-tradition-world",
+      "priority": 14,
+      "kind": "festival_story_world",
+      "owner_lane_id": "diwali-consumer",
+      "canonical_anchor_ids": ["devam:observance:diwali", "devam:observance:dhantrayodashi", "devam:observance:diwali-lakshmi-puja", "devam:observance:bengal-kali-puja"],
+      "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "historical_connection", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/library_lanes/diwali/coverage-v1.json"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Freeze the multi-day and materially distinct regional and tradition-specific denominator, with separately attributed origin stories and complete named practice lanes."
+    },
+    {
+      "collection_id": "september-december-festival-and-ritual-layer",
+      "priority": 15,
+      "kind": "ritual_calendar",
+      "owner_lane_id": "ritual-calendar",
+      "canonical_anchor_ids": [],
+      "required_dimensions": ["festival", "ritual", "place", "historical_connection", "living_practice_connection"],
+      "denominator": {"state": "partial", "authoritative_enumerator": "docs/PANCHANG_SEPTEMBER_DECEMBER_2026_COVERAGE.md"},
+      "completion": {"state": "authoring"},
+      "remaining_boundary": "Reconcile every named observance and applicability lane against the ritual product contract; deterministic date coverage alone is not story or practice completion."
+    },
+    {
+      "collection_id": "panchatantra-selected-expression",
+      "priority": 16,
+      "kind": "story_collection",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": [],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "historical_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/panchatantra-selected-expression"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Identify one lawful suitable complete expression, reconcile it beginning to end, and define the English and Hindi consumer-story sequence."
+    },
+    {
+      "collection_id": "prioritized-puranic-and-devotional-story-families",
+      "priority": 17,
+      "kind": "story_family_registry",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": ["devam:being:ganesha", "devam:being:durga", "devam:being:kali", "devam:being:lakshmi", "devam:being:saraswati", "devam:being:shiva", "devam:being:parvati", "devam:being:vishnu", "devam:being:krishna", "devam:being:rama", "devam:being:hanuman"],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/prioritized-puranic-and-devotional-story-families"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Inventory and rank complete selected expressions and bounded multi-source syntheses connected to the approved hero worlds; never substitute isolated passages for a complete named work."
+    },
+    {
+      "collection_id": "connected-places-temples-and-sacred-geographies",
+      "priority": 18,
+      "kind": "connected_living_culture",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": [],
+      "required_dimensions": ["place", "temple", "historical_connection", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/connected-places-temples-and-sacred-geographies"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Derive the selected place and temple backlog from completed narratives and hero worlds, separating narrative geography, living belief, archaeology, history, institutions, and visitor facts."
+    },
+    {
+      "collection_id": "kings-kingdoms-and-cultural-history",
+      "priority": 19,
+      "kind": "connected_history",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": [],
+      "required_dimensions": ["story_cycle", "episode", "character", "place", "historical_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/kings-kingdoms-and-cultural-history"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Define the selected consumer history denominator and keep epic kingship, attested history, archaeology, later memory, and political geography as separate claim layers."
+    },
+    {
+      "collection_id": "yoga-and-meditation-story-and-practice-world",
+      "priority": 20,
+      "kind": "living_wisdom",
+      "owner_lane_id": "epics-integration",
+      "canonical_anchor_ids": [],
+      "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "historical_connection", "living_practice_connection"],
+      "denominator": {"state": "missing", "authoritative_enumerator": "knowledge_packs/inventories/story-universe-coverage-v1.json#/collections/yoga-and-meditation-story-and-practice-world"},
+      "completion": {"state": "denominator_missing"},
+      "remaining_boundary": "Select source expressions and safe practice scopes; separate textual teachings, later schools, modern institutions, health claims, and consumer guidance."
+    }
+  ]
+}
