@@ -648,3 +648,23 @@ Exact accepted-authoring coverage is now **166 completed after freeze / 42
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first monthly named Vinayaka Chaturthi checkpoint
+
+Four accepted named answers are complete as bilingual applicability lanes:
+Vasudeva, Sankarshana, Pradyumna and Aniruddha Chaturthi.
+
+Current evidence identifies these as Chaitra-through-Ashadha monthly Shukla
+Chaturthi names for forms of Ganesha in the reviewed Vinayaka tradition, not
+Krishna-family anniversaries inferred from the overlapping names. Each lane
+preserves its complete current source-labelled narrative sequence and the
+traditional household practice route, while keeping formal mantra, nyasa,
+fast, parana, donation and temple forms with named owners. The stories' caste,
+compulsion, menstruation, illness, sexual violence, animal harm, cure and
+liberation claims remain attributed narrative elements, never consumer
+instructions, diagnosis or guarantees.
+
+Exact accepted-authoring coverage is now **170 completed after freeze / 38
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
