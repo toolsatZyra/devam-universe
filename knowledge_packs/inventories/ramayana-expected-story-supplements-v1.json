@@ -32,6 +32,15 @@
       "coverage_state": "consumer_complete_en_hi_source_aligned",
       "database_projection": "supabase/migrations/20260813235500_seed_ramayana_expected_stories_uttarkanda_frames.sql",
       "hosted_database_applied": false
+    },
+    {
+      "pack_id": "ramayana-expected-stories-popular-living-bridges-v1",
+      "path": "knowledge_packs/library_lanes/ramayana/expected-stories-popular-living-bridges-v1.json",
+      "story_count": 5,
+      "episode_count": 35,
+      "coverage_state": "consumer_complete_en_hi_source_bounded_reception_and_living_bridges",
+      "database_projection": "supabase/migrations/20260814013000_seed_ramayana_expected_stories_popular_living_bridges.sql",
+      "hosted_database_applied": false
     }
   ],
   "source_registry": [
@@ -202,8 +211,10 @@
       "expression_scopes": ["popular_performance", "popular_adaptation", "later_telling"],
       "relationship_to_selected_expression": "distinct_motif_inside_covered_event",
       "nearest_selected_cycle_ids": ["golden-deer-plot", "sita-is-taken"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_research_needed",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "popular_reception_aligned_lineage_not_universal",
+      "consumer_story_id": "ramayana-popular-lakshman-rekha-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-popular-living-bridges-v1",
       "evidence_source_ids": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
       "boundary": "Do not attribute the drawn-line episode to Valmiki, Dutt, or Ramcharitmanas until exact textual lineage is verified."
     },
@@ -214,8 +225,10 @@
       "expression_scopes": ["popular_devotional", "later_telling", "popular_adaptation"],
       "relationship_to_selected_expression": "distinct_motif_inside_covered_event",
       "nearest_selected_cycle_ids": ["toward-pampa"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_research_needed",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "selected_scene_plus_popular_reception_motif_aligned",
+      "consumer_story_id": "ramayana-popular-shabari-tasted-berries-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-popular-living-bridges-v1",
       "evidence_source_ids": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
       "boundary": "The selected Dutt story contains Shabari's welcome and gathered food, but not necessarily the popular tasted-berries motif."
     },
@@ -240,8 +253,10 @@
       "expression_scopes": ["regional_telling", "popular_devotional"],
       "relationship_to_selected_expression": "distinct_motif_inside_covered_event",
       "nearest_selected_cycle_ids": ["ocean-and-bridge"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "regional_lineage_identified_deeper_reconciliation_needed",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "regional_reception_aligned_not_selected_expression",
+      "consumer_story_id": "ramayana-regional-bridge-squirrel-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-popular-living-bridges-v1",
       "evidence_source_ids": ["ramayana-dutt-selected-inventory", "ucpress-many-ramayanas-squirrel"],
       "boundary": "Label as a widely loved regional/popular motif; do not claim that it appears in the selected Dutt/Valmiki expression."
     },
@@ -252,8 +267,10 @@
       "expression_scopes": ["living_temple", "later_telling"],
       "relationship_to_selected_expression": "living_connection_not_epic_event",
       "nearest_selected_cycle_ids": ["ocean-and-bridge", "ravanas-final-battle"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "temple_tradition_and_textual_story_must_be_separated",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "official_living_temple_tradition_grounded_layers_separated",
+      "consumer_story_id": "ramayana-living-rameswaram-linga-tradition-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-popular-living-bridges-v1",
       "evidence_source_ids": ["ramayana-dutt-selected-inventory", "incredible-india-rameswaram"],
       "boundary": "Keep temple tradition, later textual accounts, pilgrimage fact and epic narrative as separately evidenced layers."
     },
@@ -380,8 +397,10 @@
       "expression_scopes": ["north_indian_living_festival", "ayodhya_deepotsav"],
       "relationship_to_selected_expression": "living_connection_not_epic_event",
       "nearest_selected_cycle_ids": ["road-home"],
-      "coverage_state": "connected_content_exists_needs_denominator_review",
-      "source_alignment_state": "living_lane_already_separately_evidenced",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "selected_return_plus_living_festival_lane_aligned",
+      "consumer_story_id": "ramayana-living-diwali-rama-homecoming-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-popular-living-bridges-v1",
       "evidence_source_ids": ["ramayana-dutt-selected-inventory", "incredible-india-diwali"],
       "boundary": "This is a major North Indian and Ayodhya association, not the universal origin of every Diwali or Deepavali tradition."
     }

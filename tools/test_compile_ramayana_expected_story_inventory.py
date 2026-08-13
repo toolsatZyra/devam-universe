@@ -59,26 +59,29 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
         }:
             row = by_id[expectation_id]
             self.assertNotIn("ramayana-dutt-selected-expression", row["expression_scopes"])
-            self.assertNotEqual(row["coverage_state"], "consumer_complete_en_hi")
+            if row["coverage_state"] == "consumer_complete_en_hi":
+                self.assertTrue(row["consumer_story_id"].startswith("ramayana-"))
+                self.assertNotEqual(row["consumer_story_pack_id"], "ramayana-dutt-consumer-v1")
 
     def test_counters_keep_selected_and_supplemental_claims_separate(self):
         counters = self.data["counters"]
         self.assertEqual(counters["selected_expression_story_cycles"], 49)
         self.assertEqual(counters["supplemental_expected_stories"], len(self.data["supplemental_rows"]))
-        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 12)
-        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 12)
+        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 17)
+        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 17)
         self.assertEqual(self.data["completion_state"], "supplemental_expected_story_authoring_required")
 
-    def test_three_major_batches_project_exactly_twelve_canonical_story_ids(self):
+    def test_four_major_batches_project_exactly_seventeen_canonical_story_ids(self):
         completed = [row for row in self.data["supplemental_rows"] if row["coverage_state"] == "consumer_complete_en_hi"]
-        self.assertEqual(len(completed), 12)
-        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 12)
+        self.assertEqual(len(completed), 17)
+        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 17)
         self.assertEqual(
             {row["consumer_story_pack_id"] for row in completed},
             {
                 "ramayana-expected-stories-beginnings-exile-v1",
                 "ramayana-expected-stories-war-messengers-v1",
                 "ramayana-expected-stories-uttarkanda-frames-v1",
+                "ramayana-expected-stories-popular-living-bridges-v1",
             },
         )
         self.assertEqual(
@@ -87,6 +90,7 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
                 "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json",
                 "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json",
                 "knowledge_packs/library_lanes/ramayana/expected-stories-uttarkanda-frames-v1.json",
+                "knowledge_packs/library_lanes/ramayana/expected-stories-popular-living-bridges-v1.json",
             ],
         )
 

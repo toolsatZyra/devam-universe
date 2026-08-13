@@ -1,0 +1,572 @@
+{
+  "contract": "DEVAM_RAMAYANA_EXPECTED_STORIES_POPULAR_LIVING_BRIDGES_V1",
+  "version": 1,
+  "authored_at": "2026-08-14",
+  "audience": "Ordinary Hindi- or English-speaking Indian adults who know these scenes from family telling, performance, television, pilgrimage, or festival life.",
+  "purpose": "Complete five audience-expected Rama-world journeys while keeping selected-epic text, later reception, living temple tradition, modern place, and current festival practice separately attributable.",
+  "completion_boundary": "Each story supplies a complete beginning-to-end consumer sequence for its named expectation. The first three remain reception or regional stories rather than claims about every Ramayana. Rameswaram and Diwali connect sacred narrative to living India without turning belief into historical proof or one regional practice into a universal rule.",
+  "source_registry": [
+    {
+      "source_id": "ramayana-dutt-selected-inventory",
+      "kind": "internal_selected_expression_inventory",
+      "locator": "knowledge_packs/inventories/ramayana-story-universe-v1.json",
+      "rights_lane": "internal_product_grounding",
+      "evidence_role": "Exact selected-expression story coverage and the nearest canonical moments. Absence proves only that the familiar added motif is not in this selected projection."
+    },
+    {
+      "source_id": "sagar-ramayan-series",
+      "kind": "copyrighted_adaptation_coverage_cue",
+      "url": "https://production.sagarworld.com/ramayan",
+      "observed_at": "2026-08-13",
+      "rights_lane": "coverage_cue_only_no_copying",
+      "evidence_role": "Audience-familiar adaptation used only to confirm expected scene identity and granularity; no script, dialogue, shot, or protected expression is copied."
+    },
+    {
+      "source_id": "ucpress-many-ramayanas-squirrel",
+      "kind": "scholarly_regional_comparison",
+      "url": "https://publishing.cdlib.org/ucpressebooks/view?anchor.id=0&brand=eschol&chunk.id=d0e4590&doc.view=content&docId=ft6870073m&toc.depth=1",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Scholarly evidence for the bridge-squirrel motif in regional telling and popular visual culture; not evidence for the selected Dutt expression."
+    },
+    {
+      "source_id": "incredible-india-ramanathaswamy-temple",
+      "kind": "official_tourism_reference",
+      "url": "https://www.incredibleindia.gov.in/en/tamil-nadu/rameswaram/sri-ramanathaswamy-temple",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Current temple identity and the explicitly legendary Ramalingam, Vishvalingam, Hanuman, and worship-order account."
+    },
+    {
+      "source_id": "tnhrce-ramanathaswamy-temple",
+      "kind": "official_temple_administration_reference",
+      "url": "https://rameswaramramanathar.hrce.tn.gov.in/",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Current institutional identity of Arulmigu Ramanathaswamy Temple in Rameswaram; operational details must be checked live rather than frozen here."
+    },
+    {
+      "source_id": "incredible-india-diwali",
+      "kind": "official_living_festival_reference",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/diwali",
+      "observed_at": "2026-08-13",
+      "rights_lane": "reference_only",
+      "evidence_role": "Contemporary multi-day, multi-regional Diwali context including the Ayodhya homecoming association."
+    },
+    {
+      "source_id": "devam-ramayana-living-world-records",
+      "kind": "internal_reviewed_living_world_projection",
+      "locators": [
+        "knowledge_packs/library_lanes/ramayana/living-places-v1.json",
+        "knowledge_packs/library_lanes/ramayana/temples-v1.json",
+        "knowledge_packs/library_lanes/ramayana/festivals-and-performances-v1.json"
+      ],
+      "rights_lane": "internal_product_grounding",
+      "evidence_role": "Reviewed bilingual Rameswaram, Ramanathaswamy Temple, Ayodhya, and Diwali-homecoming context with modern-place and living-practice boundaries."
+    }
+  ],
+  "shared_boundaries": [
+    "A familiar reception story is not silently attributed to Valmiki, Dutt, Ramcharitmanas, or every regional telling.",
+    "No dialogue from a television adaptation is copied or paraphrased as though it were scripture.",
+    "Sacred geography and temple origin traditions are presented as living belief, not archaeological, geological, or chronological proof.",
+    "Present-day festival and temple participation varies by family, region, institution, and date; this story pack does not prescribe a universal ritual.",
+    "Devotional promises, purity claims, marital symbols, and supernatural events are not converted into medical, legal, historical, or compulsory social guidance."
+  ],
+  "stories": [
+    {
+      "expectation_id": "popular-lakshman-rekha",
+      "story_id": "ramayana-popular-lakshman-rekha-v1",
+      "sequence_group": "exile_reception",
+      "expression_scope": "Audience-familiar later performance and adaptation story placed beside, not inside, the selected Dutt golden-deer and abduction sequence.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "The line Lakshmana draws before leaving Sita", "hi": "सीता को छोड़ने से पहले लक्ष्मण द्वारा खींची गई रेखा"},
+      "source_alignment": {
+        "source_family": "popular_performance_and_adaptation_reception",
+        "source_refs": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+        "selected_expression_relation": "The selected Dutt sequence contains Maricha's cry, Sita's urgent demand, Lakshmana's departure, Ravana's disguise, and the abduction, but not the familiar drawn-line device.",
+        "alignment_note": "The pack tells the complete familiar line story without claiming a single ancient textual origin or importing television dialogue."
+      },
+      "characters": ["sita", "lakshmana", "rama", "maricha", "ravana"],
+      "places": ["panchavati-hut", "panchavati-forest"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "golden-deer-plot", "relationship": "popularly_expands_departure_from", "inverse_relationship": "has_later_reception_expansion", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "sita-is-taken", "relationship": "popularly_precedes", "inverse_relationship": "has_popular_line_preceding", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "sita", "relationship": "centres_decision_of", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "lakshmana", "relationship": "centres_departure_of", "inverse_relationship": "appears_in", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "lakshman-rekha-echo-in-the-forest",
+          "ordinal": 1,
+          "source_refs": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+          "title": {"en": "A cry arrives in Rama's voice", "hi": "राम की आवाज़ जैसी पुकार सुनाई देती है"},
+          "narration": {
+            "en": "Rama has followed the golden deer deep into the forest, leaving Sita and Lakshmana at the hut. When Maricha dies, he imitates Rama's voice and cries for help. Sita hears danger rather than deception. The quiet shelter suddenly feels like a place where waiting could cost Rama his life.",
+            "hi": "राम स्वर्ण-मृग के पीछे वन में बहुत दूर जा चुके हैं और कुटिया पर सीता तथा लक्ष्मण हैं। मरते समय मारीच राम जैसी आवाज़ में सहायता की पुकार लगाता है। सीता को छल नहीं, संकट सुनाई देता है। सुरक्षित लगने वाली कुटिया अचानक ऐसी जगह बन जाती है जहाँ प्रतीक्षा राम के जीवन पर भारी पड़ सकती है।"
+          }
+        },
+        {
+          "episode_id": "lakshman-rekha-two-duties-collide",
+          "ordinal": 2,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "Lakshmana faces two duties at once", "hi": "लक्ष्मण के सामने दो कर्तव्य टकराते हैं"},
+          "narration": {
+            "en": "Lakshmana trusts Rama's strength and suspects that the voice is a trick. Sita insists that he go. Fear sharpens the disagreement, and words are spoken under pressure. Lakshmana must choose between Rama's instruction to guard Sita and Sita's direct demand that he search for Rama. No choice now feels free of risk.",
+            "hi": "लक्ष्मण को राम की शक्ति पर भरोसा है और उन्हें संदेह है कि आवाज़ छल है। सीता आग्रह करती हैं कि वे तुरंत जाएँ। भय के कारण विवाद तीखा हो जाता है और दबाव में कठोर शब्द निकलते हैं। लक्ष्मण के सामने राम की सीता-रक्षा की आज्ञा और सीता की राम को खोजने की मांग टकराती है। कोई भी विकल्प जोखिम से खाली नहीं है।"
+          }
+        },
+        {
+          "episode_id": "lakshman-rekha-the-protective-boundary",
+          "ordinal": 3,
+          "source_refs": ["sagar-ramayan-series"],
+          "title": {"en": "The remembered line becomes a final precaution", "hi": "लोक-स्मृति की रेखा अंतिम सावधानी बनती है"},
+          "narration": {
+            "en": "In the popular telling, Lakshmana accepts that he must leave but tries to preserve one last layer of safety. He marks a boundary around the shelter and asks Sita not to cross it. The line is not part of the selected Dutt scene; it belongs to the later performance and adaptation memory being told here.",
+            "hi": "लोकप्रिय कथा में लक्ष्मण समझते हैं कि उन्हें जाना ही होगा, पर वे सुरक्षा की एक अंतिम व्यवस्था करना चाहते हैं। वे कुटिया के चारों ओर सीमा खींचकर सीता से उसे पार न करने का अनुरोध करते हैं। यह रेखा चयनित दत्त प्रसंग में नहीं है; यहाँ इसे बाद की प्रदर्शन और रूपांतरण परंपरा की स्मृति के रूप में बताया जा रहा है।"
+          }
+        },
+        {
+          "episode_id": "lakshman-rekha-ravana-arrives-as-guest",
+          "ordinal": 4,
+          "source_refs": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+          "title": {"en": "Ravana turns hospitality into a trap", "hi": "रावण अतिथि-सत्कार को जाल बनाता है"},
+          "narration": {
+            "en": "After Lakshmana leaves, Ravana approaches in an ascetic disguise and asks for alms. Sita tries to honour a guest while remaining cautious. In the familiar line story, he refuses to receive her offering from within the boundary. He uses a valued duty of hospitality to pressure her toward the place where his plan can work.",
+            "hi": "लक्ष्मण के जाने के बाद रावण साधु का वेश धारण करके भिक्षा मांगता है। सीता सावधानी रखते हुए भी अतिथि का सम्मान करना चाहती हैं। रेखा वाली लोकप्रिय कथा में वह सीमा के भीतर से दिया गया अन्न लेने से इंकार करता है। वह अतिथि-सत्कार के मूल्यवान कर्तव्य को दबाव बनाकर सीता को उस स्थान तक लाना चाहता है जहाँ उसका छल सफल हो सके।"
+          }
+        },
+        {
+          "episode_id": "lakshman-rekha-crossing-does-not-transfer-blame",
+          "ordinal": 5,
+          "source_refs": ["sagar-ramayan-series"],
+          "title": {"en": "Crossing the line does not make the abduction her fault", "hi": "रेखा पार करना अपहरण का दोष सीता पर नहीं डालता"},
+          "narration": {
+            "en": "Sita crosses the remembered boundary to give alms. Ravana immediately abandons the disguise, declares his intention, and seizes her despite her refusal. The moral responsibility remains Ravana's: he designed the deception, exploited trust, and used force. The line can dramatize danger, but it must never become a device for blaming the abducted woman.",
+            "hi": "सीता भिक्षा देने के लिए लोक-स्मृति की सीमा पार करती हैं। रावण तुरंत वेश त्याग देता है, अपना उद्देश्य प्रकट करता है और सीता के स्पष्ट विरोध के बावजूद उन्हें बलपूर्वक ले जाता है। नैतिक जिम्मेदारी रावण की है—छल उसी ने रचा, विश्वास का दुरुपयोग उसी ने किया और बल उसी ने प्रयोग किया। रेखा खतरे को नाटकीय बना सकती है, पर अपहृत स्त्री को दोष देने का साधन नहीं बन सकती।"
+          }
+        },
+        {
+          "episode_id": "lakshman-rekha-story-returns-to-the-shared-trail",
+          "ordinal": 6,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "The popular variant rejoins the abduction trail", "hi": "लोकप्रिय रूप फिर अपहरण की मुख्य कथा से जुड़ता है"},
+          "narration": {
+            "en": "From this point, the reception story rejoins the wider abduction journey: Sita resists, calls to Rama and Lakshmana, appeals to the landscape, and leaves signs for those who may follow. A reader can move back to the selected expression without confusing the added line with its text, or continue into Jatayu's resistance and Rama's broken trail.",
+            "hi": "यहाँ से लोक-प्रचलित कथा फिर व्यापक अपहरण-यात्रा से जुड़ती है। सीता विरोध करती हैं, राम और लक्ष्मण को पुकारती हैं, प्रकृति को साक्षी बनाती हैं और पीछे आने वालों के लिए संकेत छोड़ती हैं। पाठक चयनित अभिव्यक्ति में लौट सकता है, बिना यह माने कि रेखा उसी पाठ का भाग है, या जटायु के प्रतिरोध और राम की टूटी खोज-रेखा की ओर बढ़ सकता है।"
+          }
+        }
+      ],
+      "transition": {"en": "Return to the selected abduction sequence or follow the audience-familiar forest stories around Shabari.", "hi": "चयनित अपहरण-क्रम में लौटें या शबरी से जुड़ी लोक-परिचित वन-कथाओं की ओर बढ़ें।"},
+      "boundary_note": "This completes the familiar Lakshman Rekha reception story without attributing the drawn line to the selected Dutt expression or using it to blame Sita for Ravana's coercion."
+    },
+    {
+      "expectation_id": "popular-shabari-tasted-berries",
+      "story_id": "ramayana-popular-shabari-tasted-berries-v1",
+      "sequence_group": "exile_reception",
+      "expression_scope": "Popular devotional and adaptation expansion of Shabari's source-grounded welcome and gathered-food scene.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Shabari chooses the sweetest berries for Rama", "hi": "शबरी राम के लिए सबसे मीठे बेर चुनती हैं"},
+      "source_alignment": {
+        "source_family": "popular_devotional_reception_beside_selected_hospitality_scene",
+        "source_refs": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+        "selected_expression_relation": "The selected Dutt expression includes Shabari's long-awaited welcome and gathered forest food; the tasting of each berry is treated here as a later familiar devotional motif.",
+        "alignment_note": "The narration preserves the motif's devotional meaning while refusing caste humiliation, hygiene instruction, or invented script dialogue."
+      },
+      "characters": ["shabari", "rama", "lakshmana", "matanga"],
+      "places": ["shabari-hermitage", "pampa-region"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "toward-pampa", "relationship": "popularly_expands_welcome_within", "inverse_relationship": "has_devotional_reception_expansion", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "hanuman-meets-rama", "relationship": "prepares_route_toward", "inverse_relationship": "follows_shabari_guidance", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "shabari", "relationship": "centres_devotion_of", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "rama", "relationship": "welcomes", "inverse_relationship": "is_welcomed_in", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "shabari-berry-years-of-preparation",
+          "ordinal": 1,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "A welcome is prepared over many years", "hi": "वर्षों तक एक स्वागत की तैयारी होती है"},
+          "narration": {
+            "en": "Shabari lives in the forest community shaped by her teacher Matanga's memory. She keeps the hermitage ready and waits for Rama, not knowing the exact day of his arrival. Her story begins with sustained attention rather than spectacle: clearing a place, gathering what the forest offers, and refusing to let long waiting make hospitality careless.",
+            "hi": "शबरी अपने गुरु मतंग की स्मृति से जुड़े वन-आश्रम में रहती हैं। वे स्थान को तैयार रखती हैं और राम की प्रतीक्षा करती हैं, जबकि आगमन का दिन निश्चित नहीं है। उनकी कथा चमत्कार से नहीं, दीर्घकालीन सजगता से शुरू होती है—स्थान सँवारना, वन में उपलब्ध फल जुटाना और लंबी प्रतीक्षा के कारण अतिथि-सत्कार को ढीला न पड़ने देना।"
+          }
+        },
+        {
+          "episode_id": "shabari-berry-rama-and-lakshmana-arrive",
+          "ordinal": 2,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "The searched-for guests finally arrive", "hi": "जिन अतिथियों की प्रतीक्षा थी वे अंततः आते हैं"},
+          "narration": {
+            "en": "Rama and Lakshmana reach the hermitage while searching for Sita. Shabari recognizes the moment she has prepared for and receives them with water, a resting place, and gathered food. The brothers arrive carrying grief and urgency; her welcome does not erase their loss, but it gives them a pause in which care and direction can return.",
+            "hi": "सीता की खोज करते हुए राम और लक्ष्मण आश्रम पहुँचते हैं। शबरी उस क्षण को पहचान लेती हैं जिसके लिए वे वर्षों से तैयार थीं और जल, विश्राम-स्थान तथा जुटाए हुए फलों से उनका स्वागत करती हैं। दोनों भाई दुःख और बेचैनी लेकर आए हैं; शबरी का सत्कार उनकी हानि मिटाता नहीं, पर उन्हें ऐसा विराम देता है जिसमें देखभाल और दिशा फिर मिल सकती है।"
+          }
+        },
+        {
+          "episode_id": "shabari-berry-the-popular-act-of-selection",
+          "ordinal": 3,
+          "source_refs": ["sagar-ramayan-series"],
+          "title": {"en": "The familiar telling makes every berry a choice", "hi": "लोकप्रिय कथा में हर बेर एक सोच-समझकर किया चुनाव बनता है"},
+          "narration": {
+            "en": "In the familiar devotional version, Shabari tastes the berries one by one so that Rama receives only the sweet ones. The act is not presented as a rule for serving food. It is a story image of concentrated care: she has little wealth to display, so the quality of her attention becomes the heart of the offering.",
+            "hi": "लोकप्रिय भक्ति-कथा में शबरी बेरों को एक-एक करके चखती हैं ताकि राम को केवल मीठे बेर मिलें। यह भोजन परोसने की कोई विधि नहीं है। यह गहरी देखभाल का कथात्मक चित्र है—शबरी के पास दिखाने के लिए धन नहीं, इसलिए उनकी सजगता और प्रेम ही भेंट का केंद्र बन जाते हैं।"
+          }
+        },
+        {
+          "episode_id": "shabari-berry-rama-receives-the-offering",
+          "ordinal": 4,
+          "source_refs": ["sagar-ramayan-series"],
+          "title": {"en": "Rama receives care rather than measuring status", "hi": "राम पद नहीं, भावना और देखभाल स्वीकार करते हैं"},
+          "narration": {
+            "en": "Rama accepts the offered fruit as an expression of Shabari's devotion. Retellings often use the scene to challenge pride about wealth, rank, or social distance. Devam does not invent a universal speech for Rama or turn one devotional motif into a hygiene lesson. The consumer meaning lies in receiving another person's sincere care without contempt.",
+            "hi": "राम शबरी के फलों को उनकी भक्ति और देखभाल की अभिव्यक्ति के रूप में स्वीकार करते हैं। अनेक पुनर्कथन इस प्रसंग से धन, पद या सामाजिक दूरी के अहंकार को चुनौती देते हैं। देवम् राम के लिए कोई सार्वभौमिक भाषण नहीं गढ़ता और न इस भक्ति-प्रसंग को स्वच्छता की शिक्षा बनाता है। उपभोक्ता अर्थ है—किसी की सच्ची देखभाल को तिरस्कार के बिना स्वीकार करना।"
+          }
+        },
+        {
+          "episode_id": "shabari-berry-welcome-becomes-guidance",
+          "ordinal": 5,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "Hospitality turns back toward the search", "hi": "अतिथि-सत्कार फिर खोज की दिशा बनता है"},
+          "narration": {
+            "en": "Shabari does more than feed the travellers. She helps orient Rama and Lakshmana toward the Pampa region and the next people who may help them. The meeting therefore belongs inside the moving Ramayana, not outside it as an isolated moral anecdote. Her long preparation becomes useful because it restores both strength and a path forward.",
+            "hi": "शबरी केवल यात्रियों को भोजन नहीं देतीं। वे राम और लक्ष्मण को पम्पा क्षेत्र तथा उन लोगों की दिशा बताती हैं जो खोज में सहायता कर सकते हैं। इसलिए यह मिलन रामायण की गतिशील यात्रा का भाग है, अलग पड़ी नैतिक कहानी नहीं। उनकी लंबी तैयारी इसलिए सार्थक होती है क्योंकि वह शक्ति भी लौटाती है और आगे का मार्ग भी दिखाती है।"
+          }
+        },
+        {
+          "episode_id": "shabari-berry-memory-and-source-boundary",
+          "ordinal": 6,
+          "source_refs": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+          "title": {"en": "One remembered detail carries a larger welcome", "hi": "एक स्मरणीय विवरण पूरे स्वागत की याद सँभालता है"},
+          "narration": {
+            "en": "The tasted berries became the detail many families remember, while source expressions differ about the exact food and action. A reader can keep that devotional memory and still see the boundary: Shabari's waiting, welcome, gathered food, guidance, and place in Rama's search are broader than the later motif. The story now returns toward Pampa and Hanuman.",
+            "hi": "चखे हुए बेर वह विवरण बन गए जिसे बहुत-से परिवार याद रखते हैं, जबकि स्रोत-अभिव्यक्तियाँ भोजन और क्रिया के ठीक रूप में अलग हैं। पाठक भक्ति-स्मृति को रख सकता है और सीमा भी समझ सकता है—शबरी की प्रतीक्षा, स्वागत, जुटाया भोजन, मार्गदर्शन और राम की खोज में उनका स्थान बाद के लोक-प्रचलित विवरण से कहीं व्यापक है। कथा अब पम्पा और हनुमान की ओर लौटती है।"
+          }
+        }
+      ],
+      "transition": {"en": "Follow Rama from Shabari's hermitage toward Pampa, Sugriva, and Hanuman.", "hi": "शबरी के आश्रम से राम के साथ पम्पा, सुग्रीव और हनुमान की दिशा में आगे बढ़ें।"},
+      "boundary_note": "This completes the tasted-berries reception story while preserving the selected expression's broader hospitality scene and avoiding a false claim that every Ramayana contains the motif."
+    },
+    {
+      "expectation_id": "regional-bridge-squirrel",
+      "story_id": "ramayana-regional-bridge-squirrel-v1",
+      "sequence_group": "bridge_reception",
+      "expression_scope": "Regional and popular devotional bridge-building story placed beside the selected Nala-led ocean bridge sequence.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "The squirrel who joins the building of Rama's bridge", "hi": "राम का सेतु बनाने में जुटी गिलहरी"},
+      "source_alignment": {
+        "source_family": "regional_telling_and_popular_visual_reception",
+        "source_refs": ["ramayana-dutt-selected-inventory", "ucpress-many-ramayanas-squirrel"],
+        "selected_expression_relation": "The selected Dutt expression gives Nala and the vanara force the bridge-building action; the squirrel is a separately labelled regional and popular addition.",
+        "alignment_note": "The complete small-helper story is retained without presenting its body stripes, divine touch, or exact dialogue as universal textual history."
+      },
+      "characters": ["rama", "nala", "hanuman", "squirrel", "vanara-builders"],
+      "places": ["ocean-shore", "setu-building-ground", "rameswaram-living"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "ocean-and-bridge", "relationship": "regionally_expands_building_within", "inverse_relationship": "has_regional_small_helper_story", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "nala", "relationship": "joins_work_led_by", "inverse_relationship": "receives_small_helper_in_reception", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "rama", "relationship": "receives_recognition_from", "inverse_relationship": "recognizes_service_in", "bidirectional": true},
+        {"target_kind": "story", "target_id": "ramayana-living-rameswaram-linga-tradition-v1", "relationship": "opens_living_rameswaram_world", "inverse_relationship": "returns_to_bridge_reception", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "bridge-squirrel-a-worksite-larger-than-one-helper",
+          "ordinal": 1,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "An army begins work against the scale of the sea", "hi": "समुद्र के विराट आकार के सामने सेना काम शुरू करती है"},
+          "narration": {
+            "en": "After the ocean crossing is negotiated, Nala directs the vanara force in building a causeway. Trees, rocks, labour, planning, and collective movement fill the shore. The task is immense and physically dangerous. The regional squirrel story enters this already crowded worksite; it does not replace Nala's leadership or the labour of the larger force.",
+            "hi": "समुद्र पार करने का मार्ग तय होने के बाद नल वानर-सेना को सेतु निर्माण में संगठित करते हैं। तट पर वृक्ष, शिलाएँ, योजना, श्रम और लगातार चलती टोली दिखाई देती है। काम विशाल और जोखिमपूर्ण है। क्षेत्रीय गिलहरी-कथा इसी व्यस्त कार्यस्थल में प्रवेश करती है; वह नल के नेतृत्व या पूरी सेना के श्रम को प्रतिस्थापित नहीं करती।"
+          }
+        },
+        {
+          "episode_id": "bridge-squirrel-carries-what-it-can",
+          "ordinal": 2,
+          "source_refs": ["ucpress-many-ramayanas-squirrel"],
+          "title": {"en": "A small animal carries a small share", "hi": "एक छोटा जीव अपने हिस्से का छोटा भार उठाता है"},
+          "narration": {
+            "en": "A squirrel sees the construction and begins moving grains of sand or tiny pebbles toward the growing bridge. Its contribution cannot match a boulder carried by a powerful builder. Yet it repeatedly runs between shore and work, using the body and strength it has. The story makes scale visible without treating smallness as uselessness.",
+            "hi": "एक गिलहरी निर्माण देखती है और रेत के कण या छोटी कंकड़ियाँ बढ़ते सेतु तक ले जाने लगती है। उसका योगदान किसी शक्तिशाली निर्माता द्वारा उठाई शिला जितना बड़ा नहीं हो सकता। फिर भी वह अपने शरीर और सामर्थ्य के अनुसार तट और कार्यस्थल के बीच बार-बार दौड़ती है। कथा आकार का अंतर दिखाती है, पर छोटेपन को निरर्थक नहीं मानती।"
+          }
+        },
+        {
+          "episode_id": "bridge-squirrel-busyness-creates-friction",
+          "ordinal": 3,
+          "source_refs": ["ucpress-many-ramayanas-squirrel"],
+          "title": {"en": "The crowded worksite does not automatically welcome it", "hi": "व्यस्त कार्यस्थल उसे तुरंत स्वीकार नहीं करता"},
+          "narration": {
+            "en": "Larger workers may laugh at the squirrel, dismiss the grains, or worry that it is underfoot. Different retellings shape this tension differently, so Devam does not fix one speaker or insult as universal. The important turn is clear: a collective project can overlook sincere service when it judges value only by visible size and force.",
+            "hi": "बड़े कामगार गिलहरी पर हँस सकते हैं, उसके कणों को नगण्य मान सकते हैं या उसके पैरों के बीच आने से परेशान हो सकते हैं। अलग पुनर्कथन इस तनाव को अलग ढंग से बताते हैं, इसलिए देवम् किसी एक वक्ता या अपमान को सार्वभौमिक नहीं बनाता। मुख्य मोड़ स्पष्ट है—सामूहिक काम केवल दिखने वाले आकार और बल से मूल्य आँके तो सच्चे सहयोग को अनदेखा कर सकता है।"
+          }
+        },
+        {
+          "episode_id": "bridge-squirrel-rama-notices-effort",
+          "ordinal": 4,
+          "source_refs": ["ucpress-many-ramayanas-squirrel"],
+          "title": {"en": "Rama notices effort without confusing it with scale", "hi": "राम प्रयास को देखते हैं, उसे आकार से नहीं मिलाते"},
+          "narration": {
+            "en": "Rama recognizes that the squirrel is giving what it can. His attention does not claim that sand alone built the causeway or that skill and coordination do not matter. It widens the community of contributors. Leadership here means seeing both the engineer who organizes the crossing and the small participant whose repeated effort expresses belonging.",
+            "hi": "राम पहचानते हैं कि गिलहरी अपनी पूरी क्षमता से काम कर रही है। इसका अर्थ यह नहीं कि केवल रेत ने सेतु बना दिया या कौशल और संगठन का महत्व नहीं रहा। उनका ध्यान योगदानकर्ताओं के समुदाय को व्यापक करता है। यहाँ नेतृत्व नल जैसे आयोजक और बार-बार प्रयास करने वाले छोटे सहभागी—दोनों को देखने की क्षमता है।"
+          }
+        },
+        {
+          "episode_id": "bridge-squirrel-touch-and-stripes-remain-tradition",
+          "ordinal": 5,
+          "source_refs": ["ucpress-many-ramayanas-squirrel"],
+          "title": {"en": "The remembered touch explains the squirrel's stripes", "hi": "स्मरणीय स्पर्श गिलहरी की धारियों से जुड़ता है"},
+          "narration": {
+            "en": "Many tellings say Rama strokes the squirrel in appreciation and that the marks of his fingers remain as stripes. This is sacred and visual folklore, not zoological explanation. The image endures because gratitude becomes visible on the helper's body. Other tellings and local animal traditions need not share the same origin account.",
+            "hi": "कई कथाओं में राम स्नेह से गिलहरी की पीठ सहलाते हैं और उनकी उँगलियों के निशान धारियों के रूप में रह जाते हैं। यह पवित्र लोक-स्मृति और दृश्य कथा है, प्राणी-विज्ञान का स्पष्टीकरण नहीं। चित्र इसलिए टिकता है क्योंकि कृतज्ञता सहायक के शरीर पर दिखाई देने लगती है। अन्य कथाओं या स्थानीय जीव-परंपराओं को यही उत्पत्ति मानना आवश्यक नहीं।"
+          }
+        },
+        {
+          "episode_id": "bridge-squirrel-the-bridge-keeps-growing",
+          "ordinal": 6,
+          "source_refs": ["ramayana-dutt-selected-inventory", "ucpress-many-ramayanas-squirrel"],
+          "title": {"en": "Recognition returns everyone to the shared task", "hi": "सम्मान सबको फिर साझा काम की ओर लौटाता है"},
+          "narration": {
+            "en": "The squirrel continues its small journeys while the organized force completes the crossing. The story does not end by making one helper the whole project; it ends by giving different capacities a place within common work. From the remembered bridge, the user can return to Nala's selected-expression sequence or enter the living coastal and temple world of Rameswaram.",
+            "hi": "गिलहरी अपनी छोटी यात्राएँ जारी रखती है और संगठित सेना सेतु को पूरा करती है। कथा एक छोटे सहायक को पूरा प्रकल्प बनाकर समाप्त नहीं होती; वह अलग-अलग क्षमताओं को साझा काम में स्थान देकर पूरी होती है। स्मरण किए गए सेतु से पाठक नल के चयनित प्रसंग में लौट सकता है या रामेश्वरम के जीवित तटीय और मंदिर-जगत में प्रवेश कर सकता है।"
+          }
+        }
+      ],
+      "transition": {"en": "Move from the remembered bridge to Rameswaram's separately sourced Rama-Shiva temple tradition.", "hi": "स्मरण किए गए सेतु से रामेश्वरम की अलग स्रोतबद्ध राम-शिव मंदिर-परंपरा की ओर बढ़ें।"},
+      "boundary_note": "This completes the regional squirrel story without inserting it into the selected Dutt expression, erasing Nala and collective labour, or presenting sacred stripes as zoological history."
+    },
+    {
+      "expectation_id": "living-rameswaram-linga-tradition",
+      "story_id": "ramayana-living-rameswaram-linga-tradition-v1",
+      "sequence_group": "living_afterlife",
+      "expression_scope": "Living Ramanathaswamy Temple tradition and official current-place context connected to, but not collapsed into, the selected epic bridge and return sequences.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Rama, Hanuman, Shiva, and the two remembered lingams of Rameswaram", "hi": "राम, हनुमान, शिव और रामेश्वरम के दो स्मरणीय लिंग"},
+      "source_alignment": {
+        "source_family": "living_temple_origin_tradition_and_current_official_place_record",
+        "source_refs": ["incredible-india-ramanathaswamy-temple", "tnhrce-ramanathaswamy-temple", "devam-ramayana-living-world-records"],
+        "selected_expression_relation": "The selected Dutt expression supplies the ocean bridge and return geography; the linga-installation and worship-order story is a separately governed living Rameswaram temple tradition.",
+        "alignment_note": "The story follows the official tourism account's Ramalingam, Hanuman-brought Vishvalingam, and remembered first-worship order while treating them as legend and current tradition rather than epic or archaeological proof."
+      },
+      "characters": ["rama", "sita", "lakshmana", "hanuman", "shiva"],
+      "places": ["rameswaram-living", "ramanathaswamy-temple", "ocean-shore", "kailash-tradition"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "ocean-and-bridge", "relationship": "shares_sacred_coast_with", "inverse_relationship": "opens_living_temple_tradition", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "road-home", "relationship": "living_tradition_places_worship_around_return", "inverse_relationship": "opens_rameswaram_return_tradition", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "shiva", "relationship": "centres_worship_of", "inverse_relationship": "is_worshipped_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "hanuman", "relationship": "remembers_service_of", "inverse_relationship": "serves_in", "bidirectional": true},
+        {"target_kind": "story", "target_id": "ramayana-regional-bridge-squirrel-v1", "relationship": "returns_to_bridge_reception", "inverse_relationship": "opens_living_rameswaram_world", "bidirectional": true},
+        {"target_kind": "living_place", "target_id": "rameswaram-living", "relationship": "continues_as", "inverse_relationship": "hosts_tradition_of", "bidirectional": true},
+        {"target_kind": "temple", "target_id": "ramanathaswamy-temple", "relationship": "centres_current_institution", "inverse_relationship": "carries_tradition_of", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "rameswaram-ocean-threshold",
+          "ordinal": 1,
+          "source_refs": ["ramayana-dutt-selected-inventory", "devam-ramayana-living-world-records"],
+          "title": {"en": "The epic reaches the ocean threshold", "hi": "महाकथा समुद्र की दहलीज पर पहुँचती है"},
+          "narration": {
+            "en": "In the selected epic journey, Rama's alliance reaches the southern shore and must cross the sea to Lanka. Prayer, anger, negotiation with the ocean, Nala's direction, and collective bridge-building form that narrative sequence. Living Rameswaram receives this coast as sacred geography, while Devam keeps literary location, present island, and geological claims distinct.",
+            "hi": "चयनित महाकथा में राम की मित्र-सेना दक्षिणी तट पर पहुँचती है और लंका जाने के लिए समुद्र पार करना आवश्यक होता है। प्रार्थना, क्रोध, समुद्र से संवाद, नल का निर्देशन और सामूहिक सेतु-निर्माण उस कथात्मक क्रम के भाग हैं। जीवित रामेश्वरम इस तट को पवित्र भूगोल मानता है, जबकि देवम् साहित्यिक स्थान, आज के द्वीप और भूवैज्ञानिक दावों को अलग रखता है।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-return-and-worship-need",
+          "ordinal": 2,
+          "source_refs": ["incredible-india-ramanathaswamy-temple"],
+          "title": {"en": "The temple tradition turns victory toward worship", "hi": "मंदिर-परंपरा विजय को पूजा की ओर मोड़ती है"},
+          "narration": {
+            "en": "A living temple-origin tradition places Rama at Rameswaram in connection with Shiva worship, often around the return from Lanka and reflection on the violence of war. This is not part of the selected Dutt return sequence in the same form. Its narrative work is to refuse a simple victory ending and make devotion, responsibility, and humility follow battle.",
+            "hi": "जीवित मंदिर-उत्पत्ति परंपरा राम को रामेश्वरम में शिव-पूजा से जोड़ती है, प्रायः लंका से वापसी और युद्ध की हिंसा पर विचार के संदर्भ में। यही रूप चयनित दत्त वापसी-क्रम का भाग नहीं है। इस कथा का काम विजय को सरल अंत न बनने देना और युद्ध के बाद भक्ति, जिम्मेदारी तथा विनम्रता को सामने लाना है।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-hanuman-sent-for-linga",
+          "ordinal": 3,
+          "source_refs": ["incredible-india-ramanathaswamy-temple"],
+          "title": {"en": "Hanuman undertakes another service journey", "hi": "हनुमान एक और सेवा-यात्रा पर निकलते हैं"},
+          "narration": {
+            "en": "In the remembered account, Hanuman is asked to bring a linga from Kailash for the worship. He departs with the speed and commitment familiar from his search for Sita and mountain-bearing journey. The story does not treat him as a convenient errand-runner; his effort, distance, and desire to bring a worthy object create the tension that follows.",
+            "hi": "स्मरणीय कथा में हनुमान को पूजा के लिए कैलाश से लिंग लाने भेजा जाता है। वे उसी गति और समर्पण से निकलते हैं जो सीता की खोज और पर्वत लाने की यात्रा में दिखाई देता है। कथा उन्हें केवल सामान लाने वाला पात्र नहीं बनाती; उनका प्रयास, दूरी और उपयुक्त वस्तु लाने की इच्छा आगे आने वाले तनाव को जन्म देती है।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-time-passes-at-the-shore",
+          "ordinal": 4,
+          "source_refs": ["incredible-india-ramanathaswamy-temple"],
+          "title": {"en": "The worship time approaches before Hanuman returns", "hi": "हनुमान के लौटने से पहले पूजा का समय निकट आता है"},
+          "narration": {
+            "en": "Hanuman does not return within the expected time, while the chosen moment for worship approaches. The people at the shore face a practical devotional question: should the act be delayed indefinitely or should a locally available form be prepared? Different retellings assign advice and timing differently, so Devam preserves the decision without inventing one universal ritual timetable.",
+            "hi": "हनुमान अपेक्षित समय में नहीं लौटते और पूजा का चुना हुआ क्षण निकट आता है। तट पर उपस्थित लोगों के सामने व्यावहारिक भक्ति-प्रश्न है—क्या पूजा अनिश्चित समय तक टाली जाए या उपलब्ध सामग्री से रूप तैयार किया जाए? अलग पुनर्कथन सलाह और समय को अलग बताते हैं, इसलिए देवम् निर्णय को रखता है पर कोई सार्वभौमिक पूजा-सारिणी नहीं गढ़ता।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-sand-ramalingam",
+          "ordinal": 5,
+          "source_refs": ["incredible-india-ramanathaswamy-temple"],
+          "title": {"en": "The Ramalingam is formed from the shore", "hi": "तट की रेत से रामलिंगम बनाया जाता है"},
+          "narration": {
+            "en": "The official tourism account remembers a linga made from sand, commonly associated with Sita's action, so worship can proceed. The form is known as the Ramalingam and is linked with the main deity. Devam presents this as temple lore: meaningful to devotees and institutional memory, but not a claim that the present material object has been archaeologically dated to the epic event.",
+            "hi": "आधिकारिक पर्यटन-विवरण में रेत से बनाया गया लिंग स्मरण किया जाता है, जिसे सामान्यतः सीता की क्रिया से जोड़ा जाता है, ताकि पूजा आगे बढ़ सके। यह रूप रामलिंगम कहलाता है और मुख्य देवता से जुड़ा है। देवम् इसे मंदिर-कथा के रूप में रखता है—भक्तों और संस्थागत स्मृति के लिए अर्थपूर्ण, पर वर्तमान वस्तु को महाकाव्य घटना तक पुरातात्त्विक रूप से दिनांकित करने का दावा नहीं।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-hanuman-returns-with-vishvalingam",
+          "ordinal": 6,
+          "source_refs": ["incredible-india-ramanathaswamy-temple"],
+          "title": {"en": "Hanuman returns and finds the worship begun", "hi": "हनुमान लौटते हैं और पूजा आरंभ पा चुके हैं"},
+          "narration": {
+            "en": "Hanuman returns with the linga he has brought from Kailash, remembered as the Vishvalingam, and discovers that another form has already been installed or worshipped. The moment can hold disappointment because his difficult service appears to have arrived too late. Retellings dramatize his reaction differently; Devam keeps the emotion without inventing aggression or dialogue as universal fact.",
+            "hi": "हनुमान कैलाश से लाया लिंग लेकर लौटते हैं, जिसे विश्वलिंगम के रूप में स्मरण किया जाता है, और देखते हैं कि दूसरा रूप स्थापित या पूजित हो चुका है। कठिन सेवा के देर से पहुँचने का भाव उन्हें निराश कर सकता है। पुनर्कथन उनकी प्रतिक्रिया को अलग-अलग नाटकीय रूप देते हैं; देवम् भावना रखता है, पर आक्रामकता या संवाद को सार्वभौमिक तथ्य नहीं बनाता।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-first-honour-for-hanuman-service",
+          "ordinal": 7,
+          "source_refs": ["incredible-india-ramanathaswamy-temple"],
+          "title": {"en": "A remembered worship order honours both forms", "hi": "स्मरणीय पूजा-क्रम दोनों रूपों का सम्मान करता है"},
+          "narration": {
+            "en": "The temple tradition says Rama directs that the Vishvalingam brought by Hanuman be worshipped first, before the Ramalingam. The resolution does not discard the form already used, nor does it treat Hanuman's labour as pointless. It creates an order in which timely local action and a devotee's long service can both remain visible.",
+            "hi": "मंदिर-परंपरा कहती है कि राम हनुमान द्वारा लाए विश्वलिंगम की पूजा रामलिंगम से पहले करने का निर्देश देते हैं। समाधान पहले उपयोग किए गए रूप को हटाता नहीं और हनुमान के श्रम को व्यर्थ भी नहीं मानता। यह ऐसा क्रम बनाता है जिसमें समय पर किया स्थानीय कार्य और भक्त की लंबी सेवा—दोनों दिखाई देते हैं।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-temple-is-living-not-frozen",
+          "ordinal": 8,
+          "source_refs": ["tnhrce-ramanathaswamy-temple", "devam-ramayana-living-world-records"],
+          "title": {"en": "The story continues inside a living Shiva temple", "hi": "कथा एक जीवित शिव-मंदिर के भीतर आगे चलती है"},
+          "narration": {
+            "en": "Today Ramanathaswamy Temple is an operating Shiva temple and pilgrimage institution on Rameswaram Island, not merely a Ramayana exhibit. Its corridors, shrines, sacred-water traditions, staff, rules, and worshipping communities have their own life. A visitor must follow current official guidance; this narrative does not freeze timings, bathing procedure, dress, queues, or access conditions.",
+            "hi": "आज रामनाथस्वामी मंदिर रामेश्वरम द्वीप पर सक्रिय शिव-मंदिर और तीर्थ-संस्था है, केवल रामायण प्रदर्शनी नहीं। उसके गलियारे, देवालय, तीर्थ-जल परंपराएँ, कर्मचारी, नियम और पूजा-समुदाय अपना स्वतंत्र जीवन रखते हैं। आगंतुक को वर्तमान आधिकारिक निर्देश मानने चाहिए; यह कथा समय, स्नान-विधि, वस्त्र, कतार या प्रवेश-स्थितियों को स्थायी नहीं मानती।"
+          }
+        },
+        {
+          "episode_id": "rameswaram-many-routes-remain-open",
+          "ordinal": 9,
+          "source_refs": ["devam-ramayana-living-world-records"],
+          "title": {"en": "Rameswaram opens several truthful paths", "hi": "रामेश्वरम कई सत्यनिष्ठ मार्ग खोलता है"},
+          "narration": {
+            "en": "From this node, a user can return to Nala's bridge, follow Hanuman's service, explore Shiva devotion, enter the current temple record, or visit the real coastal landscapes of Pamban and Dhanushkodi. Those paths are connected but not identical. Sacred association does not erase cyclone history, marine ecology, local communities, transport, or visitor safety.",
+            "hi": "इस नोड से उपयोगकर्ता नल के सेतु पर लौट सकता है, हनुमान की सेवा-यात्रा देख सकता है, शिव-भक्ति में प्रवेश कर सकता है, वर्तमान मंदिर-विवरण खोल सकता है या पम्बन और धनुषकोडी के वास्तविक तटीय भू-दृश्य देख सकता है। ये मार्ग जुड़े हैं, पर एक नहीं। पवित्र संबंध चक्रवात-इतिहास, समुद्री पारिस्थितिकी, स्थानीय समुदाय, यातायात या आगंतुक-सुरक्षा को मिटाता नहीं।"
+          }
+        }
+      ],
+      "transition": {"en": "Return to the epic bridge, remain in the living Shiva temple, or follow Rama's road home toward Ayodhya and Diwali.", "hi": "महाकथा के सेतु पर लौटें, जीवित शिव-मंदिर में रहें या राम की अयोध्या-वापसी और दीवाली की ओर बढ़ें।"},
+      "boundary_note": "This completes the selected living Rameswaram linga tradition, not every Rameswaram sthala-purana, current temple procedure, historical construction phase, or proof of epic geography."
+    },
+    {
+      "expectation_id": "living-diwali-rama-homecoming",
+      "story_id": "ramayana-living-diwali-rama-homecoming-v1",
+      "sequence_group": "living_afterlife",
+      "expression_scope": "One major North Indian and Ayodhya-centred living Diwali association connected to the selected epic return, alongside rather than above other Diwali traditions.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Rama's homecoming and the lamps of the Diwali story", "hi": "राम की घर-वापसी और दीवाली के दीपों की कथा"},
+      "source_alignment": {
+        "source_family": "selected_epic_return_plus_current_multi_regional_festival_context",
+        "source_refs": ["ramayana-dutt-selected-inventory", "incredible-india-diwali", "devam-ramayana-living-world-records"],
+        "selected_expression_relation": "The selected Dutt expression supplies the complete Lanka-to-Ayodhya return and coronation sequence. The lamp-lit Diwali association is a separately labelled living festival memory.",
+        "alignment_note": "The story makes the homecoming lane complete while preserving Jain, Sikh, Shakta, Vaishnava, regional-new-year, harvest, trade, Naraka, Lakshmi, Kali, Govardhan, and sibling observances as separate connected worlds."
+      },
+      "characters": ["rama", "sita", "lakshmana", "hanuman", "bharata", "shatrughna", "ayodhya-citizens"],
+      "places": ["lanka", "sky-road", "bharadvaja-hermitage", "nandigrama", "ayodhya-living"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "road-home", "relationship": "living_festival_remembers", "inverse_relationship": "opens_living_diwali_association", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "companions-depart", "relationship": "continues_after_coronation_toward", "inverse_relationship": "follows_homecoming_festival_memory", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "rama", "relationship": "celebrates_return_of", "inverse_relationship": "is_remembered_by", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "sita", "relationship": "celebrates_return_of", "inverse_relationship": "is_remembered_by", "bidirectional": true},
+        {"target_kind": "living_place", "target_id": "ayodhya-living", "relationship": "continues_in", "inverse_relationship": "hosts_memory_of", "bidirectional": true},
+        {"target_kind": "festival", "target_id": "diwali-rama-homecoming", "relationship": "continues_as", "inverse_relationship": "remembers_story_of", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "diwali-homecoming-war-has-ended",
+          "ordinal": 1,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "The road home begins after a costly war", "hi": "महँगे युद्ध के बाद घर-वापसी का मार्ग शुरू होता है"},
+          "narration": {
+            "en": "Ravana is dead, Sita has survived captivity and a coercive public ordeal, and Lanka is grieving its losses. The return cannot begin as uncomplicated triumph. Rama, Sita, Lakshmana, Hanuman, and their allies depart with victory, exhaustion, unresolved harm, and the knowledge that Bharata has been waiting through the promised years of exile.",
+            "hi": "रावण मारा जा चुका है, सीता बंदी जीवन और दबावपूर्ण सार्वजनिक अग्नि-परीक्षा से बची हैं, और लंका अपने मृतकों का शोक मना रही है। वापसी केवल सरल विजय के रूप में शुरू नहीं हो सकती। राम, सीता, लक्ष्मण, हनुमान और सहयोगी विजय, थकान, अनसुलझी पीड़ा तथा भरत की वर्षों लंबी प्रतीक्षा की स्मृति के साथ प्रस्थान करते हैं।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-the-sky-road-remembers",
+          "ordinal": 2,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "The journey retraces the places that changed them", "hi": "यात्रा उन स्थानों को फिर देखती है जिन्होंने सबको बदल दिया"},
+          "narration": {
+            "en": "The aerial road north becomes a journey through memory. The travellers look back toward the bridge, Kishkindha, forest dwellings, rivers, hermitages, and places of loss and alliance. Sita is not merely cargo being returned; she hears and responds within the journey. Geography gathers the scattered epic into one path toward home.",
+            "hi": "उत्तर की आकाश-यात्रा स्मृतियों की यात्रा बन जाती है। यात्री सेतु, किष्किन्धा, वन-निवास, नदियाँ, आश्रम और हानि तथा मित्रता के स्थानों को फिर देखते हैं। सीता केवल वापस लाई जा रही वस्तु नहीं हैं; वे यात्रा के भीतर सुनती और प्रतिक्रिया देती हैं। भूगोल बिखरी महाकथा को घर की ओर जाती एक राह में जोड़ता है।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-hanuman-carries-news-ahead",
+          "ordinal": 3,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "Hanuman reaches waiting Bharata before the procession", "hi": "मुख्य दल से पहले हनुमान प्रतीक्षारत भरत तक पहुँचते हैं"},
+          "narration": {
+            "en": "Near the end of the journey, Hanuman is sent ahead to tell Bharata that Rama is returning. Bharata has lived under the discipline of a temporary trust, governing in Rama's name rather than treating the sandals and throne as permanent possession. The message releases years of fear that the promised return might never happen.",
+            "hi": "यात्रा के अंत में हनुमान को भरत को राम की वापसी का समाचार देने आगे भेजा जाता है। भरत ने अस्थायी दायित्व के अनुशासन में जीवन बिताया है—पादुकाओं और सिंहासन को स्थायी अधिकार न मानकर राम के नाम से व्यवस्था संभाली है। संदेश वर्षों के उस भय को खोल देता है कि कहीं वचनबद्ध वापसी कभी न हो।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-ayodhya-prepares",
+          "ordinal": 4,
+          "source_refs": ["ramayana-dutt-selected-inventory", "incredible-india-diwali"],
+          "title": {"en": "A city prepares to receive those it lost", "hi": "नगर उन लोगों के स्वागत की तैयारी करता है जिन्हें उसने खो दिया था"},
+          "narration": {
+            "en": "The news moves through Nandigrama and Ayodhya. Roads, homes, public spaces, music, garlands, lamps, and gathered people become part of the remembered welcome. The festival association grows from this emotional shape: darkness giving way to visible return, households and city sharing preparation, and separation ending in a public homecoming.",
+            "hi": "समाचार नन्दिग्राम और अयोध्या में फैलता है। मार्ग, घर, सार्वजनिक स्थान, संगीत, मालाएँ, दीप और एकत्र लोग स्मरणीय स्वागत का भाग बनते हैं। त्योहार-संबंध इसी भावात्मक आकार से बढ़ता है—अंधकार के बाद दिखाई देती वापसी, घर और नगर की साझा तैयारी, और लंबे वियोग का सार्वजनिक घर-आगमन में बदलना।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-reunions-before-coronation",
+          "ordinal": 5,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "Homecoming means reunion before it means kingship", "hi": "घर-वापसी पहले मिलन है, बाद में राजसत्ता"},
+          "narration": {
+            "en": "Rama meets Bharata and Shatrughna; the brothers, mothers, companions, and people receive those who left. The return of authority follows the return of relationships. Bharata relinquishes the trust he never claimed as his own, and preparations for coronation begin. The story's reward is not merely a throne but the repair of a broken household and city.",
+            "hi": "राम भरत और शत्रुघ्न से मिलते हैं; भाई, माताएँ, साथी और नगर उन लोगों का स्वागत करते हैं जो वर्षों पहले गए थे। सत्ता की वापसी संबंधों की वापसी के बाद आती है। भरत उस दायित्व को लौटा देते हैं जिसे उन्होंने अपना स्थायी अधिकार नहीं माना था और राज्याभिषेक की तैयारी शुरू होती है। कथा का प्रतिफल केवल सिंहासन नहीं, टूटा परिवार और नगर फिर जुड़ना है।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-coronation-and-public-hope",
+          "ordinal": 6,
+          "source_refs": ["ramayana-dutt-selected-inventory"],
+          "title": {"en": "Coronation turns return into a new public beginning", "hi": "राज्याभिषेक वापसी को सार्वजनिक नए आरंभ में बदलता है"},
+          "narration": {
+            "en": "Rama and Sita are enthroned within a large public and ritual transition. Allies who carried the struggle are honoured, and governance resumes after years of absence. Later devotional memory sees hope in this renewal, but Devam does not use Ram Rajya language as historical statistics or hide the difficult events that follow in other parts of the tradition.",
+            "hi": "राम और सीता व्यापक सार्वजनिक तथा अनुष्ठानिक परिवर्तन के बीच सिंहासन पर बैठते हैं। संघर्ष में साथ देने वाले सहयोगियों का सम्मान होता है और वर्षों की अनुपस्थिति के बाद शासन फिर आरंभ होता है। बाद की भक्ति-स्मृति इस नवीनीकरण में आशा देखती है, पर देवम् रामराज्य को ऐतिहासिक आँकड़ा नहीं बनाता और परंपरा में आगे आने वाली कठिन घटनाओं को छिपाता नहीं।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-one-diwali-lane-among-many",
+          "ordinal": 7,
+          "source_refs": ["incredible-india-diwali", "devam-ramayana-living-world-records"],
+          "title": {"en": "The lamps open one Diwali story, not the only one", "hi": "दीप दीवाली की एक कथा खोलते हैं, अकेली कथा नहीं"},
+          "narration": {
+            "en": "Across much of North Indian public memory, Diwali lights are associated with Rama, Sita, and Lakshmana returning to Ayodhya. Yet the wider festival period also carries Lakshmi Puja, Bengal Kali Puja, Naraka Chaturdashi and Tamil Deepavali, Jain and Sikh remembrances, regional new years, Govardhan Puja, Bhai Dooj, and other distinct meanings.",
+            "hi": "उत्तर भारत की व्यापक सार्वजनिक स्मृति में दीवाली के दीप राम, सीता और लक्ष्मण की अयोध्या-वापसी से जुड़े हैं। फिर भी पूरे पर्व-काल में लक्ष्मी पूजा, बंगाल की काली पूजा, नरक चतुर्दशी और तमिल दीपावली, जैन तथा सिख स्मृतियाँ, क्षेत्रीय नववर्ष, गोवर्धन पूजा, भाई दूज और अन्य स्वतंत्र अर्थ भी शामिल हैं।"
+          }
+        },
+        {
+          "episode_id": "diwali-homecoming-living-ayodhya-and-home-practice",
+          "ordinal": 8,
+          "source_refs": ["incredible-india-diwali", "devam-ramayana-living-world-records"],
+          "title": {"en": "The story continues in homes and living Ayodhya", "hi": "कथा घरों और जीवित अयोध्या में आगे चलती है"},
+          "narration": {
+            "en": "People today may light lamps, clean and decorate homes, share food, visit family or temples, tell the homecoming story, or join public celebrations such as Ayodhya's Deepotsav. None is imposed here as a universal minimum. Event access, crowd conditions, dates, fire safety, and local rules require current guidance; a flame-free remembrance remains valid.",
+            "hi": "आज लोग दीप जला सकते हैं, घर साफ और सजाकर भोजन बाँट सकते हैं, परिवार या मंदिर जा सकते हैं, घर-वापसी की कथा सुना सकते हैं या अयोध्या के दीपोत्सव जैसे सार्वजनिक आयोजन में भाग ले सकते हैं। यहाँ किसी एक क्रिया को सार्वभौमिक न्यूनतम नहीं बनाया गया है। आयोजन-प्रवेश, भीड़, तिथि, अग्नि-सुरक्षा और स्थानीय नियमों के लिए वर्तमान निर्देश आवश्यक हैं; बिना वास्तविक लौ के स्मरण भी मान्य है।"
+          }
+        }
+      ],
+      "transition": {"en": "Return to the complete road-home story or branch into the separately governed Lakshmi Puja, Kali Puja, Naraka Chaturdashi, Govardhan, Jain, Sikh, and regional Diwali worlds.", "hi": "पूरी घर-वापसी कथा में लौटें या अलग संचालित लक्ष्मी पूजा, काली पूजा, नरक चतुर्दशी, गोवर्धन, जैन, सिख और क्षेत्रीय दीवाली-जगतों में जाएँ।"},
+      "boundary_note": "This completes the selected Rama-homecoming Diwali lane, not every Diwali origin, region, observance, current Ayodhya event, or universal household ritual."
+    }
+  ],
+  "batch_counters": {
+    "story_count": 5,
+    "episode_count": 35,
+    "consumer_languages": ["en", "hi"],
+    "source_family_count": 5,
+    "selected_dutt_expression_claims_added": 0,
+    "living_place_story_count": 1,
+    "living_festival_story_count": 1
+  },
+  "completion_state": "consumer_complete_en_hi_source_bounded_reception_and_living_bridges"
+}

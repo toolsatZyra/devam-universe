@@ -120,10 +120,11 @@ This completes the registered living-world authoring denominator only; the
 whole-journey continuity review remains open. The consumer-expected story
 checklist now names 71 rows: 49 complete selected-expression cycles, twelve
 source-aligned Ramcharitmanas supplements completed through 140 bilingual
-episodes, and 10 open supplements across performance, regional, devotional,
-temple, and living-festival scopes. Broader Ramayana expressions remain separate
+episodes, five separately labelled reception and living-world supplements
+completed through 35 more bilingual episodes, and 5 open supplements across
+later performance and Hanuman devotional scopes. Broader Ramayana expressions remain separate
 denominators, and every supplement must be authored or explicitly excluded
-without being back-projected into Dutt. Those 140 story episodes do not count
+without being back-projected into Dutt. Those 175 story episodes do not count
 toward the separate 1,158-page gapless Ramcharitmanas reading denominator. The payload-free
 source-term inventory is a supplementary way to find high-signal metadata gaps;
 its ordinary capitalized words, epithets, and spelling variants are not a

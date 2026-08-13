@@ -41,10 +41,17 @@ the Kakabhushundi-Garuda frame and its embedded biography and teachings, through
 46 more bilingual episodes aligned to fixed scan pages 1071-1223. The three
 canonical packs and their draft database projections therefore cover twelve
 expected stories through 140 episodes while keeping them separate from the Dutt
-expression and leaving hosted data unchanged. Ten supplements remain open. The
-next work is the separately sourced popular, regional, temple, performance, and
-living-practice batch, followed by one consolidated whole-Ramayana continuity
-review.
+expression and leaving hosted data unchanged. A fourth pack completes five
+more consumer expectations through 35 bilingual episodes: the popular Lakshman
+Rekha and tasted-berries reception stories, the regional bridge squirrel, the
+living Ramanathaswamy Temple linga tradition, and the North Indian/Ayodhya
+Diwali homecoming lane. It separates selected epic text, later reception,
+living belief, current institution, real place, and regional festival practice;
+no television dialogue or source payload is copied. Seventeen supplements are
+now complete through 175 episodes and five remain open: Sulochana-Meghnad,
+Ahiravana/Mahiravana, the Lava-Kusha horse confrontation, Hanuman opening his
+chest, and the Hanuman sindoor tradition. Complete that final batch, then run
+one consolidated whole-Ramayana continuity review.
 
 Checkpoint 2026-08-13 (end-to-end devotional reading correction):
 Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered
