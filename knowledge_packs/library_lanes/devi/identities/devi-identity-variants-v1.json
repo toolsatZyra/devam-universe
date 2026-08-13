@@ -1,0 +1,55 @@
+{
+  "contract": "DEVAM_DEVI_IDENTITY_VARIANTS_V1",
+  "lane_id": "devi-consumer",
+  "status": "authored_not_projected",
+  "dossiers": [
+    {
+      "dossier_id": "devi/durga-chandika-ambika-mahamaya-source-scope",
+      "consumer_explanation": {
+        "en": "Within the selected Devi Mahatmya sequence, Mahamaya names the power Medhas uses to explain delusion and awakening; Ambika and Chandika name the Goddess acting in the battles; Durga appears in praise and in a promised future crisis. The text relates these names within one sacred narrative, but a name in this expression is not permission to collapse every later theology, icon or temple deity into one database identity.",
+        "hi": "चयनित देवीमाहात्म्य क्रम में महामाया वह शक्ति हैं जिनसे मेधा ऋषि मोह और जागरण समझाते हैं; अंबिका और चंडिका युद्ध में कार्यरत देवी के नाम हैं; दुर्गा स्तुति तथा भविष्य के एक संकट के वचन में आती हैं। ग्रंथ इन नामों को एक पवित्र कथा में जोड़ता है, पर इस अभिव्यक्ति का नाम हर बाद के दर्शन, प्रतिमा या मंदिर-देवी को एक ही डेटाबेस पहचान बनाने की अनुमति नहीं देता।"
+      },
+      "identity_rule": "Use source-scoped predicates such as named_as, praised_as, manifests_in_episode_as and withdraws_into; do not assert universal same_as."
+    },
+    {
+      "dossier_id": "devi/kaushiki-kalika-source-sequence",
+      "consumer_explanation": {
+        "en": "Chapter 85 says a radiant form emerges from Parvati's bodily sheath and is called Kaushiki, while the remaining Parvati becomes dark and is called Kalika in the Himalaya. Chapter 87 later calls the fierce forehead-emergent form Kali. These are exact narrative statements in one provider sequence. Comparison with living Kali traditions must be proposed, not silently resolved.",
+        "hi": "अध्याय 85 में पार्वती के शरीर-कोश से निकला दीप्त रूप कौशिकी कहलाता है और शेष पार्वती हिमालय में श्याम होकर कालिका कहलाती हैं। अध्याय 87 में ललाट से निकले उग्र रूप को काली कहा जाता है। ये एक प्रदाता-क्रम के सटीक कथात्मक कथन हैं। जीवित काली परंपराओं से तुलना प्रस्तावित की जा सकती है, चुपचाप पहचान तय नहीं की जा सकती।"
+      },
+      "identity_rule": "Keep Kaushiki, chapter-85 Kalika and chapter-87 Kali as source-bounded names/forms with explicit episode coordinates."
+    },
+    {
+      "dossier_id": "devi/chamunda-naming-episode",
+      "consumer_explanation": {
+        "en": "In chapter 87, Kali brings Chanda and Munda to Chandika, who gives her the name Chamunda for that deed. This is a naming event, not a complete history of Chamunda worship. Living Chamunda temples and traditions require their own sources and may preserve different iconography, lineage and theology.",
+        "hi": "अध्याय 87 में काली चंड और मुंड को चंडिका के पास लाती हैं और चंडिका उस कर्म के कारण उन्हें चामुंडा नाम देती हैं। यह नामकरण-घटना है, चामुंडा-उपासना का पूरा इतिहास नहीं। जीवित चामुंडा मंदिरों और परंपराओं के लिए अलग स्रोत चाहिए; उनकी प्रतिमा, वंश और दर्शन भिन्न हो सकते हैं।"
+      },
+      "identity_rule": "Assert receives_name_in_episode; never use the episode alone as universal identity resolution."
+    },
+    {
+      "dossier_id": "devi/kali-anchor-versus-source-bounded-kalika-and-chamunda",
+      "consumer_explanation": {
+        "en": "The shared Kali anchor coordinates a broad consumer doorway. The Devi Mahatmya's Kalika, Kali and Chamunda are source-bounded narrative identities; Kalighat's Kali, Dakshineswar's Bhavatarini and the presiding deity of a Kali Puja institution are living temple or tradition identities. They may be linked through worship, name, form or comparison, but none is automatically a duplicate of another.",
+        "hi": "साझा काली एंकर व्यापक उपभोक्ता-द्वार का समन्वय करता है। देवीमाहात्म्य की कालिका, काली और चामुंडा स्रोत-सीमित कथात्मक पहचानें हैं; कालीघाट की काली, दक्षिणेश्वर की भवतारिणी और किसी काली-पूजा संस्था की अधिष्ठात्री जीवित मंदिर या परंपरा की पहचान हैं। उन्हें उपासना, नाम, रूप या तुलना से जोड़ा जा सकता है, पर कोई अपने-आप दूसरे की प्रतिलिपि नहीं।"
+      },
+      "identity_rule": "Prefer worships_as, temple_presiding_name, compared_with_source_form and festival_honours; prohibit automatic same_as or is_form_of."
+    },
+    {
+      "dossier_id": "devi/lakshmi-devimahatmya-kojagara-and-diwali-layers",
+      "consumer_explanation": {
+        "en": "The Devi Mahatmya uses Shri and Lakshmi language inside praise and cosmology. North/West Kojagara preserves a Lakshmi night emphasis alongside other regional Krishna, harvest and cultural emphases. West India Diwali Lakshmi Puja is a separately owned observance with its own Amavasya timing and household practice. Kolhapur Ambabai/Mahalakshmi is a living temple identity. Shared naming does not prove one festival origin or one procedure.",
+        "hi": "देवीमाहात्म्य स्तुति और विश्व-दृष्टि में श्री तथा लक्ष्मी भाषा का उपयोग करता है। उत्तर/पश्चिम कोजागरा में लक्ष्मी-रात्रि का एक केंद्र है, साथ ही अन्य क्षेत्रीय कृष्ण, फसल और सांस्कृतिक केंद्र भी हैं। पश्चिम भारत की दीपावली लक्ष्मी-पूजा अमावस्या समय और घरेलू आचरण वाली अलग स्वामित्व-रेखा है। कोल्हापुर अंबाबाई/महालक्ष्मी जीवित मंदिर-देवी की पहचान है। समान नाम एक ही उत्सव-उत्पत्ति या एक ही विधि सिद्ध नहीं करता।"
+      },
+      "identity_rule": "Keep textual epithet, seasonal observance, Diwali observance and temple deity as separate identity scopes."
+    },
+    {
+      "dossier_id": "devi/navadurga-living-framework-versus-devimahatmya-chapter-sequence",
+      "consumer_explanation": {
+        "en": "The familiar nine-day Navadurga sequence is a living Navaratri framework used in some households and public explanations. The Devi Mahatmya itself is a thirteen-chapter work arranged through three large battle accounts and a frame story; its chapters are not nine Navadurga days. Devam can let users traverse both, but it must not map one-to-one without a separately sourced tradition.",
+        "hi": "परिचित नौ-दिवसीय नवदुर्गा क्रम कुछ घरों और सार्वजनिक व्याख्याओं में प्रयुक्त जीवित नवरात्रि ढाँचा है। देवीमाहात्म्य तेरह अध्यायों का ग्रंथ है जिसमें कथा-फ्रेम और तीन बड़े युद्ध-आख्यान हैं; उसके अध्याय नौ नवदुर्गा-दिन नहीं हैं। देवम दोनों यात्राएँ दिखा सकता है, पर अलग स्रोत वाली परंपरा के बिना एक-से-एक मानचित्र नहीं बना सकता।"
+      },
+      "identity_rule": "Represent Navadurga-day association as a scoped living-practice layer, never as the selected text's chapter structure."
+    }
+  ]
+}

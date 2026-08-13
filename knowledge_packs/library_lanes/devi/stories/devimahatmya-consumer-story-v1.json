@@ -1,0 +1,463 @@
+{
+  "contract": "DEVAM_BILINGUAL_CONSUMER_STORY_V1",
+  "story_id": "devi/devimahatmya-selected-revisions-v1",
+  "lane_id": "devi-consumer",
+  "status": "authored_not_projected",
+  "source_boundary": {
+    "work": "Devi Mahatmya within the Markandeya Purana",
+    "selected_expression": "Sanskrit Wikisource exact revisions covering chapters 81-93",
+    "chapters": 13,
+    "source_units": 588,
+    "translation_input": "knowledge_packs/durga/devimahatmya-devam-translations-v1.jsonl",
+    "translation_status": "AI-assisted internal-beta source-aligned translations; not independently Sanskrit-reviewed",
+    "scope_note": "This story follows one pinned provider sequence. It does not stand for every recension, translation, Shakta theology, festival origin, or ritual authority."
+  },
+  "consumer_intro": {
+    "en": "A defeated king and a merchant rejected by his own family meet at a forest hermitage. Both understand their losses, yet neither can stop caring about what has hurt them. Sage Medhas answers their question with three linked accounts of the Goddess: the power that wakes discernment, the strength that gathers when the world is overrun, and the many forms that act together without ceasing to be one. The tale returns at the end to the two listeners and to the different futures they ask for.",
+    "hi": "पराजित राजा सुरथ और अपने ही परिवार से निकाले गए वैश्य समाधि वन के एक आश्रम में मिलते हैं। दोनों अपनी हानि समझते हैं, फिर भी उस संसार से ममता नहीं छोड़ पाते जिसने उन्हें चोट पहुँचाई है। मेधा ऋषि उनके प्रश्न का उत्तर देवी की तीन जुड़ी कथाओं से देते हैं—वह शक्ति जो विवेक को जगाती है, वह सामर्थ्य जो संकट में बिखरी शक्तियों को एक करती है, और वे अनेक रूप जो मिलकर कार्य करते हुए भी एक ही देवी में स्थित रहते हैं। अंत में कथा फिर दोनों श्रोताओं के पास लौटती है और दिखाती है कि वे अलग-अलग वर क्यों माँगते हैं।"
+  },
+  "moments": [
+    {
+      "moment_id": "dm-01-suratha-loses-his-kingdom",
+      "ordinal": 1,
+      "chapter": 81,
+      "source_range": {"start_verse": 1, "end_verse": 14},
+      "title": {"en": "A king without a kingdom", "hi": "राज्य से वंचित राजा"},
+      "place": {"en": "Suratha's former kingdom and the forest hermitage", "hi": "सुरथ का पूर्व राज्य और वन-आश्रम"},
+      "narrative": {
+        "en": "King Suratha rules carefully, but a smaller enemy defeats him. Back in his capital, powerful ministers strip away his treasury and army. He rides into the forest on the pretext of hunting and reaches the peaceful hermitage of Sage Medhas, where even animals that would normally attack one another live quietly. Safety does not quiet his mind: he keeps imagining the condition of his city, his war elephants and the servants now controlled by others.",
+        "hi": "राजा सुरथ सावधानी से शासन करता है, फिर भी कम संख्या वाली शत्रु-सेना उसे हरा देती है। राजधानी लौटने पर शक्तिशाली मंत्री उसका कोष और सेना भी छीन लेते हैं। वह शिकार का बहाना बनाकर अकेला वन में निकलता है और मेधा ऋषि के शांत आश्रम पहुँचता है, जहाँ स्वभाव से विरोधी पशु भी साथ रहते हैं। आश्रम की सुरक्षा भी उसके मन को शांत नहीं करती; वह बार-बार अपने नगर, युद्ध-हाथियों और अब दूसरों के अधीन सेवकों की चिंता करता है।"
+      },
+      "beats": [
+        {"en": "Defeat removes Suratha's military power.", "hi": "पराजय सुरथ की सैन्य शक्ति छीन लेती है।"},
+        {"en": "His own ministers complete the dispossession.", "hi": "उसके अपने मंत्री राज्य-हरण को पूरा कर देते हैं।"},
+        {"en": "The hermitage protects his body, but not his anxious attachment.", "hi": "आश्रम उसके शरीर को शरण देता है, पर चिंतित ममता बनी रहती है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-02-samadhi-cannot-stop-caring",
+      "ordinal": 2,
+      "chapter": 81,
+      "source_range": {"start_verse": 15, "end_verse": 27},
+      "title": {"en": "The merchant who still worries", "hi": "वह वैश्य जो अब भी चिंता करता है"},
+      "place": {"en": "Near Medhas's hermitage", "hi": "मेधा ऋषि के आश्रम के पास"},
+      "narrative": {
+        "en": "Suratha meets a grieving merchant named Samadhi. Greedy relatives, wife and sons have driven Samadhi from his home and taken his wealth. He knows what they did, but still wonders whether they are safe and well. Suratha recognises the same contradiction in himself. The two men do not dismiss their care as stupidity; they decide to ask why clear knowledge has not dissolved possessiveness and affection.",
+        "hi": "सुरथ की भेंट समाधि नामक दुःखी वैश्य से होती है। लोभ से प्रेरित संबंधियों, पत्नी और पुत्रों ने उसे घर से निकालकर धन ले लिया है। वह उनके व्यवहार को समझता है, फिर भी सोचता रहता है कि वे सुरक्षित और स्वस्थ हैं या नहीं। सुरथ अपने भीतर भी यही विरोध देखता है। दोनों अपनी ममता को केवल मूर्खता कहकर नहीं टालते; वे जानना चाहते हैं कि तथ्य समझ लेने पर भी मोह और स्नेह क्यों बने रहते हैं।"
+      },
+      "beats": [
+        {"en": "Samadhi names betrayal without denying his continuing love.", "hi": "समाधि विश्वासघात को पहचानते हुए भी अपने बचे हुए स्नेह से इनकार नहीं करता।"},
+        {"en": "Suratha sees his own attachment reflected in another life.", "hi": "सुरथ दूसरे जीवन में अपनी ही ममता का प्रतिबिंब देखता है।"},
+        {"en": "Together they turn private pain into a question for the sage.", "hi": "दोनों निजी पीड़ा को ऋषि के सामने रखे जाने योग्य प्रश्न बनाते हैं।"}
+      ]
+    },
+    {
+      "moment_id": "dm-03-medhas-explains-mahamaya",
+      "ordinal": 3,
+      "chapter": 81,
+      "source_range": {"start_verse": 28, "end_verse": 44},
+      "title": {"en": "Knowing is not the same as being free", "hi": "जान लेना मुक्त हो जाना नहीं है"},
+      "place": {"en": "Medhas's hermitage", "hi": "मेधा ऋषि का आश्रम"},
+      "narrative": {
+        "en": "Suratha asks why wise people can remain caught in attachment. Medhas replies that perception and instinct operate in many creatures, not only in learned humans: birds feed their young even while hungry, and beings act under powerful habits of care and survival. He names the cosmic force behind binding delusion Mahamaya. In this text she both sustains ordinary existence and, when approached as knowledge, opens a way beyond confusion.",
+        "hi": "सुरथ पूछता है कि समझदार मनुष्य भी मोह में क्यों बँधे रहते हैं। मेधा ऋषि बताते हैं कि देखना, चाहना और स्वभावगत व्यवहार केवल विद्वान मनुष्यों में नहीं होते; भूखे पक्षी भी अपने बच्चों को दाना देते हैं और जीव देखभाल तथा जीवन-रक्षा की गहरी वृत्तियों से चलते हैं। वे बाँधने वाले इस विश्वव्यापी प्रभाव को महामाया कहते हैं। इसी ग्रंथ में वह संसार को धारण भी करती हैं और ज्ञानरूप में समझी जाएँ तो भ्रम से बाहर जाने का मार्ग भी खोलती हैं।"
+      },
+      "beats": [
+        {"en": "The sage refuses the easy answer that attachment belongs only to the ignorant.", "hi": "ऋषि इस आसान उत्तर को अस्वीकार करते हैं कि मोह केवल अज्ञानी का दोष है।"},
+        {"en": "He places human conflict inside a wider field of embodied life.", "hi": "वे मानवीय द्वंद्व को समस्त देहधारी जीवन के व्यापक क्षेत्र में रखते हैं।"},
+        {"en": "Mahamaya is introduced as both binding power and possible awakening.", "hi": "महामाया को बंधन की शक्ति और संभावित जागरण—दोनों रूपों में प्रस्तुत किया जाता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-04-suratha-asks-who-the-goddess-is",
+      "ordinal": 4,
+      "chapter": 81,
+      "source_range": {"start_verse": 45, "end_verse": 49},
+      "title": {"en": "The question that opens three stories", "hi": "वह प्रश्न जो तीन कथाएँ खोलता है"},
+      "place": {"en": "Medhas's hermitage", "hi": "मेधा ऋषि का आश्रम"},
+      "narrative": {
+        "en": "Suratha does not stop at an abstract explanation. He asks who Mahamaya is, how she manifests, what she does and what her nature is. Medhas answers that she is eternal even when stories speak of her appearing at particular moments. The first account begins at a cosmic ocean, when Vishnu sleeps and Brahma faces danger.",
+        "hi": "सुरथ केवल दार्शनिक उत्तर पर नहीं रुकता। वह पूछता है—महामाया कौन हैं, कैसे प्रकट होती हैं, क्या करती हैं और उनका स्वरूप क्या है। मेधा ऋषि कहते हैं कि कथाएँ उनके विशेष समय पर प्रकट होने की बात करती हैं, फिर भी वे नित्य हैं। पहली कथा उस आदिकालीन जल से शुरू होती है जहाँ विष्णु सो रहे हैं और ब्रह्मा संकट में हैं।"
+      },
+      "beats": [
+        {"en": "Suratha asks for story, action and identity—not a label alone.", "hi": "सुरथ केवल नाम नहीं, कथा, कर्म और स्वरूप पूछता है।"},
+        {"en": "Medhas distinguishes eternal presence from narrated manifestation.", "hi": "मेधा ऋषि नित्य उपस्थिति और कथा में वर्णित प्राकट्य का अंतर रखते हैं।"},
+        {"en": "The hermitage conversation opens into the first cosmic episode.", "hi": "आश्रम का संवाद पहली विश्व-आदिकथा में प्रवेश करता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-05-yoganidra-wakes-vishnu",
+      "ordinal": 5,
+      "chapter": 81,
+      "source_range": {"start_verse": 50, "end_verse": 78},
+      "title": {"en": "The sleep that becomes awakening", "hi": "वह निद्रा जो जागरण बनती है"},
+      "place": {"en": "The cosmic ocean", "hi": "आदिकालीन समुद्र"},
+      "narrative": {
+        "en": "Madhu and Kaitabha arise while Vishnu lies in deep yogic sleep and move to kill Brahma. Unable to wake Vishnu, Brahma praises the Goddess present as his sleep—also as memory, intelligence, nourishment, peace and the power through which embodied existence appears. She withdraws from Vishnu's senses; he wakes and battles the two asuras. Their pride lets him choose the condition under which they can be defeated, and the danger ends. Medhas closes the episode by turning immediately to another manifestation of the same Goddess.",
+        "hi": "जब विष्णु गहन योगनिद्रा में हैं, तब मधु और कैटभ उत्पन्न होकर ब्रह्मा को मारने बढ़ते हैं। विष्णु को जगा न पाने पर ब्रह्मा उसी निद्रारूप देवी की स्तुति करते हैं—जो स्मृति, बुद्धि, पोषण, शांति और देहधारी संसार के प्रकट होने की शक्ति भी हैं। देवी विष्णु की इंद्रियों से हटती हैं; वे जागकर दोनों असुरों से युद्ध करते हैं। उनका अहंकार ही ऐसी शर्त कहलवा देता है जिसमें उनका वध संभव होता है। संकट समाप्त होते ही मेधा ऋषि उसी देवी के अगले प्राकट्य की कथा आरंभ करते हैं।"
+      },
+      "beats": [
+        {"en": "Brahma identifies the apparent obstacle—sleep—as divine power.", "hi": "ब्रह्मा दिखने वाली बाधा—निद्रा—को ही देवी की शक्ति के रूप में पहचानते हैं।"},
+        {"en": "Her withdrawal makes wakeful action possible.", "hi": "उनका हटना जागृत कर्म को संभव बनाता है।"},
+        {"en": "The victory depends on awakening and on the asuras' own pride.", "hi": "विजय जागरण और असुरों के अपने अहंकार—दोनों पर निर्भर होती है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-06-mahisha-takes-the-gods-offices",
+      "ordinal": 6,
+      "chapter": 82,
+      "source_range": {"start_verse": 1, "end_verse": 8},
+      "title": {"en": "Power seized from the worlds", "hi": "लोकों से छीनी गई सत्ता"},
+      "place": {"en": "The three worlds and the assembly of the gods", "hi": "तीनों लोक और देवताओं की सभा"},
+      "narrative": {
+        "en": "A long war ends with Mahishasura driving the gods from their offices. He takes over the functions associated with the sun, wind, fire, moon, death and waters, while the defeated gods wander like mortals. They bring the full account to Brahma, Shiva and Vishnu. Their anger is not presented as a private insult: the ordered responsibilities of the worlds have been captured by one ruler.",
+        "hi": "लंबे युद्ध के बाद महिषासुर देवताओं को उनके पदों से हटा देता है। वह सूर्य, वायु, अग्नि, चंद्र, मृत्यु और जल से जुड़े कार्यों पर अधिकार कर लेता है, और पराजित देवता मनुष्यों की तरह भटकते हैं। वे ब्रह्मा, शिव और विष्णु के सामने पूरी स्थिति रखते हैं। यह केवल निजी अपमान नहीं है; संसार के अलग-अलग दायित्व एक शासक ने हथिया लिए हैं।"
+      },
+      "beats": [
+        {"en": "Mahisha's victory becomes a takeover of cosmic offices.", "hi": "महिष की विजय विश्व-व्यवस्था के पदों पर कब्जा बन जाती है।"},
+        {"en": "The displaced gods describe the consequence rather than hiding defeat.", "hi": "पदच्युत देवता पराजय छिपाने के बजाय उसके परिणाम बताते हैं।"},
+        {"en": "Their shared crisis prepares a shared response.", "hi": "साझा संकट एक संयुक्त उत्तर की भूमिका बनाता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-07-radiances-become-the-goddess",
+      "ordinal": 7,
+      "chapter": 82,
+      "source_range": {"start_verse": 9, "end_verse": 31},
+      "title": {"en": "Many radiances, one warrior", "hi": "अनेक तेज, एक योद्धा"},
+      "place": {"en": "The mountain-filled divine assembly", "hi": "पर्वतों से घिरी दिव्य सभा"},
+      "narrative": {
+        "en": "Radiance bursts from the angry faces and bodies of the gods and gathers into a single blazing female form. Each power contributes to her body; then the gods give weapons, ornaments, a lion and other signs of sovereignty drawn from their own resources. The scene does not make her a passive collection. Once manifest, she laughs and roars with such force that earth and mountains shake, and the gods answer with cries of victory.",
+        "hi": "क्रोधित देवताओं के मुख और शरीर से तेज निकलकर एक प्रज्वलित स्त्री-रूप में एकत्र होता है। अलग-अलग शक्तियाँ उनके अंग बनाती हैं; फिर देवता अपने ही साधनों से शस्त्र, आभूषण, सिंह और राजसत्ता के चिह्न अर्पित करते हैं। यह दृश्य देवी को निष्क्रिय जोड़ नहीं बनाता। प्रकट होते ही उनकी हँसी और गर्जना से पृथ्वी तथा पर्वत काँपते हैं और देवता जयघोष करते हैं।"
+      },
+      "beats": [
+        {"en": "Separated powers become capable of coordinated action.", "hi": "बिखरी शक्तियाँ समन्वित कर्म में सक्षम होती हैं।"},
+        {"en": "Weapons are entrusted, not used to control the Goddess.", "hi": "शस्त्र उन्हें सौंपे जाते हैं, उनसे देवी को नियंत्रित नहीं किया जाता।"},
+        {"en": "Her own voice announces the new centre of the battle.", "hi": "उनकी अपनी गर्जना युद्ध के नए केंद्र की घोषणा करती है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-08-the-armies-collide",
+      "ordinal": 8,
+      "chapter": 82,
+      "source_range": {"start_verse": 32, "end_verse": 70},
+      "title": {"en": "The field fills with armies", "hi": "युद्धभूमि सेनाओं से भर जाती है"},
+      "place": {"en": "The battlefield between the divine and asura hosts", "hi": "देवी और असुर सेनाओं की युद्धभूमि"},
+      "narrative": {
+        "en": "Mahishasura hears the uproar and sends commanders with enormous chariot, elephant, horse and foot formations. Chandika cuts down volleys of weapons while her lion attacks through the ranks. From her breath arise supporting hosts who fight, drum and sound conches. The text lingers on the scale and violence of the clash before the surviving commanders and Mahisha himself enter the next stage; victory is not reduced to one effortless gesture.",
+        "hi": "महिषासुर गर्जना सुनकर विशाल रथ, हाथी, घोड़े और पैदल दलों सहित सेनापतियों को भेजता है। चंडिका शस्त्र-वर्षा को काटती हैं और उनका सिंह पंक्तियों में धावा बोलता है। उनकी श्वास से सहायक गण उत्पन्न होकर लड़ते, नगाड़े बजाते और शंख फूँकते हैं। ग्रंथ अगले चरण में बचे सेनापतियों और स्वयं महिष के आने से पहले संघर्ष की व्यापकता और हिंसा पर ठहरता है; विजय को एक सहज इशारे तक सीमित नहीं करता।"
+      },
+      "beats": [
+        {"en": "Mahisha answers the Goddess with organized military scale.", "hi": "महिष देवी का उत्तर संगठित विशाल सेना से देता है।"},
+        {"en": "The Goddess's breath becomes a community of supporting action.", "hi": "देवी की श्वास सहयोगी कर्म करने वाले गणों में बदलती है।"},
+        {"en": "The first army breaks, but the central opponent remains.", "hi": "पहली सेना टूटती है, पर मुख्य प्रतिद्वंद्वी अभी शेष है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-09-commanders-fall-before-ambika",
+      "ordinal": 9,
+      "chapter": 83,
+      "source_range": {"start_verse": 1, "end_verse": 22},
+      "title": {"en": "The commanders enter one by one", "hi": "सेनापति एक-एक कर उतरते हैं"},
+      "place": {"en": "Mahisha's collapsing battlefield", "hi": "महिष की टूटती युद्धभूमि"},
+      "narrative": {
+        "en": "Commander Chikshura covers Ambika with arrows, but she cuts his volleys, bow, chariot and support away before meeting his final charge. Chamara attacks from an elephant; the Goddess's lion wrestles the elephant and kills him. Other commanders rush in with different weapons and are defeated by the Goddess, her hosts and her mount. Their fall strips away the layers protecting Mahishasura and forces him to fight directly.",
+        "hi": "सेनापति चिक्षुर अंबिका पर बाणों की वर्षा करता है, पर वे उसके बाण, धनुष, रथ और सहारा काटकर उसके अंतिम आक्रमण का सामना करती हैं। चामर हाथी पर चढ़कर आता है; देवी का सिंह हाथी से भिड़ता और उसे मार गिराता है। अन्य सेनापति अलग-अलग शस्त्रों के साथ आते हैं और देवी, उनके गण तथा सिंह से पराजित होते हैं। उनके पतन से महिषासुर की रक्षा-परतें हटती हैं और उसे स्वयं युद्ध में उतरना पड़ता है।"
+      },
+      "beats": [
+        {"en": "Chikshura loses each layer of military advantage.", "hi": "चिक्षुर अपनी सैन्य बढ़त की हर परत खोता है।"},
+        {"en": "The lion acts as an ally, not decorative transport.", "hi": "सिंह केवल वाहन नहीं, सक्रिय सहयोगी बनता है।"},
+        {"en": "With the commanders gone, Mahisha can no longer remain behind an army.", "hi": "सेनापतियों के गिरने पर महिष सेना के पीछे नहीं रह सकता।"}
+      ]
+    },
+    {
+      "moment_id": "dm-10-mahishasura-changes-form",
+      "ordinal": 10,
+      "chapter": 83,
+      "source_range": {"start_verse": 23, "end_verse": 44},
+      "title": {"en": "The opponent who will not hold one shape", "hi": "वह प्रतिद्वंद्वी जो एक रूप में नहीं टिकता"},
+      "place": {"en": "The churned earth of the final Mahisha battle", "hi": "महिष के अंतिम युद्ध से मथी हुई धरती"},
+      "narrative": {
+        "en": "Mahishasura charges as a buffalo, scattering the Goddess's hosts, tearing earth with his hooves and hurling mountains with his horns. When bound, he shifts through lion, armed man and elephant forms, refusing a stable contest. The Goddess drinks, laughs at his pride and pins the buffalo form as he begins to emerge again. She kills him in that exposed transition. The gods and sages celebrate because the seized order of the worlds can now be restored.",
+        "hi": "महिषासुर भैंसे के रूप में धावा बोलकर देवी के गणों को बिखेरता, खुरों से धरती चीरता और सींगों से पर्वत फेंकता है। बाँधे जाने पर वह सिंह, शस्त्रधारी पुरुष और हाथी के रूप बदलता है, मानो किसी एक संघर्ष में टिकने से इंकार कर रहा हो। देवी उसके गर्व पर हँसती हैं, पीती हैं और भैंसे से फिर निकलते समय उसे दबोच लेती हैं। उसी अधखुले संक्रमण में उसका वध होता है। देवता और ऋषि इसलिए आनंद मनाते हैं कि अब हथियाई हुई विश्व-व्यवस्था लौट सकती है।"
+      },
+      "beats": [
+        {"en": "Mahisha turns shape-changing into a weapon.", "hi": "महिष रूप-परिवर्तन को शस्त्र बना देता है।"},
+        {"en": "The Goddess holds him at the moment concealment fails.", "hi": "जहाँ छिपाव टूटता है, देवी उसी क्षण उसे रोकती हैं।"},
+        {"en": "His death closes the first great restoration, not the whole text.", "hi": "उसका वध पहली बड़ी पुनर्स्थापना पूरी करता है, पूरे ग्रंथ को नहीं।"}
+      ]
+    },
+    {
+      "moment_id": "dm-11-the-gods-praise-and-ask-remembrance",
+      "ordinal": 11,
+      "chapter": 84,
+      "source_range": {"start_verse": 1, "end_verse": 38},
+      "title": {"en": "After victory, a promise for future danger", "hi": "विजय के बाद भविष्य के संकट का वचन"},
+      "place": {"en": "The restored assembly of the gods", "hi": "देवताओं की पुनर्स्थापित सभा"},
+      "narrative": {
+        "en": "The gods praise the Goddess not only as battlefield power but as discernment, faith, modesty, livelihood, learning and the difficult passage beyond distress. They remember the frightening force of her weapons and the beauty that remained visible even in combat. When she offers a boon, they ask that remembering her in future calamity should bring help. She agrees and vanishes. Medhas then signals that another crisis will call forth another manifestation.",
+        "hi": "देवता देवी की स्तुति केवल युद्ध-शक्ति के रूप में नहीं, बल्कि विवेक, श्रद्धा, लज्जा, आजीविका, विद्या और संकट से पार ले जाने वाली शक्ति के रूप में करते हैं। वे उनके शस्त्रों की भयानकता और युद्ध के बीच भी दिखाई देने वाली सुंदरता—दोनों को याद रखते हैं। देवी वर माँगने को कहती हैं तो वे भविष्य के संकट में स्मरण करने पर सहायता चाहते हैं। देवी स्वीकार कर अंतर्धान होती हैं। मेधा ऋषि संकेत देते हैं कि अगला संकट एक नए प्राकट्य को बुलाएगा।"
+      },
+      "beats": [
+        {"en": "Praise widens the Goddess beyond the battlefield.", "hi": "स्तुति देवी को युद्धभूमि से कहीं व्यापक रूप में दिखाती है।"},
+        {"en": "The gods ask for future responsiveness rather than private reward.", "hi": "देवता निजी पुरस्कार नहीं, भविष्य के संकट में उत्तरदायी सहायता माँगते हैं।"},
+        {"en": "One manifestation withdraws before the next story begins.", "hi": "अगली कथा से पहले एक प्रकट रूप अंतर्धान होता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-12-shumbha-and-nishumbha-seize-power",
+      "ordinal": 12,
+      "chapter": 85,
+      "source_range": {"start_verse": 1, "end_verse": 39},
+      "title": {"en": "The old promise is remembered", "hi": "पुराना वचन याद किया जाता है"},
+      "place": {"en": "The Himalaya after a second dispossession", "hi": "दूसरे सत्ता-हरण के बाद हिमालय"},
+      "narrative": {
+        "en": "Shumbha and Nishumbha seize the three worlds, sacrificial shares and treasured possessions of the gods. Driven out again, the gods remember the promise given after Mahisha's defeat and go to the Himalaya. Their hymn addresses the Goddess as consciousness, sleep, hunger, shadow, power, thirst, patience, birth, modesty, peace, faith, beauty, livelihood, memory, compassion and even error within beings. The response will arise inside this landscape rather than arrive as a simple repeat of the earlier warrior.",
+        "hi": "शुंभ और निशुंभ तीनों लोक, यज्ञभाग और देवताओं की मूल्यवान वस्तुएँ छीन लेते हैं। फिर से निकाले गए देवता महिष-वध के बाद मिला वचन याद कर हिमालय जाते हैं। उनकी स्तुति देवी को प्राणियों में चेतना, निद्रा, भूख, छाया, शक्ति, प्यास, क्षमा, जन्म, लज्जा, शांति, श्रद्धा, कांति, आजीविका, स्मृति, करुणा और भ्रम तक के रूप में संबोधित करती है। उत्तर इसी हिमालयी दृश्य के भीतर प्रकट होगा; पहले योद्धा-रूप की साधारण पुनरावृत्ति नहीं होगा।"
+      },
+      "beats": [
+        {"en": "A second regime repeats dispossession in a new story cycle.", "hi": "दूसरा शासन नई कथा-चक्र में फिर सत्ता-हरण करता है।"},
+        {"en": "Memory of a promise becomes collective action.", "hi": "एक पुराने वचन की स्मृति सामूहिक कर्म बनती है।"},
+        {"en": "The hymn locates divine presence in ordinary and troubling experience alike.", "hi": "स्तुति दिव्य उपस्थिति को सहज और कठिन—दोनों अनुभवों में पहचानती है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-13-kaushiki-emerges-and-kalika-is-named",
+      "ordinal": 13,
+      "chapter": 85,
+      "source_range": {"start_verse": 40, "end_verse": 58},
+      "title": {"en": "Kaushiki and the darkened mountain form", "hi": "कौशिकी और पर्वत पर श्याम हुआ रूप"},
+      "place": {"en": "The Ganga in the Himalaya", "hi": "हिमालय में गंगा तट"},
+      "narrative": {
+        "en": "Parvati arrives and asks whom the gods are praising. A radiant form emerges from her bodily sheath and answers; the text names this form Kaushiki. The remaining Parvati becomes dark and is called Kalika in the Himalaya. Chanda and Munda see Ambika's beauty and report it to Shumbha. This source-bounded sequence relates Kaushiki, Kalika and Ambika, but it does not by itself settle every later theological identity bearing the names Kali, Durga or Parvati.",
+        "hi": "पार्वती आकर पूछती हैं कि देवता किसकी स्तुति कर रहे हैं। उनके शरीर-कोश से एक दीप्त रूप निकलकर उत्तर देता है; ग्रंथ उसे कौशिकी नाम देता है। शेष पार्वती श्याम हो जाती हैं और हिमालय में कालिका कहलाती हैं। चंड और मुंड अंबिका का सौंदर्य देखकर शुंभ को बताते हैं। यह स्रोत-सीमित क्रम कौशिकी, कालिका और अंबिका को जोड़ता है, पर इसी से काली, दुर्गा या पार्वती नाम वाली हर बाद की धार्मिक पहचान तय नहीं हो जाती।"
+      },
+      "beats": [
+        {"en": "A question from Parvati becomes a manifestation scene.", "hi": "पार्वती का प्रश्न प्राकट्य-दृश्य बन जाता है।"},
+        {"en": "The text gives Kaushiki and Kalika distinct positions in one sequence.", "hi": "ग्रंथ एक ही क्रम में कौशिकी और कालिका को अलग स्थान देता है।"},
+        {"en": "The spies turn a sacred manifestation into information for conquest.", "hi": "गुप्तचर दिव्य प्राकट्य को विजय की सूचना में बदल देते हैं।"}
+      ]
+    },
+    {
+      "moment_id": "dm-14-the-messenger-and-the-vow",
+      "ordinal": 14,
+      "chapter": 85,
+      "source_range": {"start_verse": 59, "end_verse": 79},
+      "title": {"en": "The Goddess answers an order with her own condition", "hi": "देवी आदेश के सामने अपनी शर्त रखती हैं"},
+      "place": {"en": "The Himalayan mountain where Ambika stands", "hi": "हिमालय का वह पर्वत जहाँ अंबिका स्थित हैं"},
+      "narrative": {
+        "en": "Shumbha's messenger lists everything his ruler has seized and treats the Goddess as one more treasure who should choose either brother. Ambika acknowledges their power but recalls her own declared condition: only one who defeats her in battle may claim her. The messenger mocks the idea that a woman alone could face their armies and warns that she may be dragged away. She does not surrender or pretend their strength is unreal; she sends him back with her answer intact.",
+        "hi": "शुंभ का दूत उसके स्वामी द्वारा छीनी गई सारी संपदा गिनाता है और देवी को भी ऐसी ही एक वस्तु मानता है जिसे दोनों भाइयों में से किसी को चुन लेना चाहिए। अंबिका उनकी शक्ति स्वीकार करती हैं, पर अपनी कही शर्त याद दिलाती हैं—जो उन्हें युद्ध में जीते, वही दावा कर सकता है। दूत उपहास करता है कि अकेली स्त्री उनकी सेनाओं का सामना कैसे करेगी और घसीटकर ले जाने की धमकी देता है। देवी न समर्पण करती हैं, न उनकी शक्ति को काल्पनिक बताती हैं; वे अपना उत्तर ज्यों का त्यों वापस भेजती हैं।"
+      },
+      "beats": [
+        {"en": "The messenger mistakes possession for entitlement.", "hi": "दूत कब्जे को अधिकार समझ लेता है।"},
+        {"en": "Ambika answers from a vow she defines herself.", "hi": "अंबिका अपनी स्वयं निर्धारित प्रतिज्ञा से उत्तर देती हैं।"},
+        {"en": "The refusal converts attempted acquisition into open conflict.", "hi": "अस्वीकार हरण के प्रयास को खुले संघर्ष में बदल देता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-15-dhumralochana-and-the-lion",
+      "ordinal": 15,
+      "chapter": 86,
+      "source_range": {"start_verse": 1, "end_verse": 20},
+      "title": {"en": "A command to seize her fails", "hi": "देवी को पकड़ने का आदेश विफल होता है"},
+      "place": {"en": "The snowy Himalayan slope", "hi": "हिमालय की हिमाच्छादित ढलान"},
+      "narrative": {
+        "en": "Enraged by the refusal, Shumbha sends Dhumralochana with sixty thousand fighters and orders him to drag the Goddess away. Dhumralochana repeats the threat. Ambika answers with a single sound that reduces him to ashes, and her lion tears through the charging force. Shumbha responds not by reconsidering but by ordering Chanda and Munda to seize her, bind her and kill anyone who protects her.",
+        "hi": "अस्वीकार से क्रोधित शुंभ धूम्रलोचन को साठ हजार सैनिकों के साथ भेजता और देवी को घसीटकर लाने का आदेश देता है। धूम्रलोचन वही धमकी दोहराता है। अंबिका की एक हुंकार उसे भस्म कर देती है और उनका सिंह आक्रमणकारी सेना को चीर देता है। शुंभ विचार बदलने के बजाय चंड-मुंड को देवी को पकड़ने, बाँधने और उनकी रक्षा करने वाले को मारने का आदेश देता है।"
+      },
+      "beats": [
+        {"en": "Coercion is stated plainly as the mission.", "hi": "बलपूर्वक पकड़ना ही स्पष्ट अभियान है।"},
+        {"en": "Ambika's voice stops its commander.", "hi": "अंबिका की आवाज ही सेनापति को रोक देती है।"},
+        {"en": "Shumbha escalates after the first seizure attempt fails.", "hi": "पहला हरण-प्रयास विफल होने पर शुंभ हिंसा बढ़ाता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-16-kali-enters-the-battle",
+      "ordinal": 16,
+      "chapter": 87,
+      "source_range": {"start_verse": 1, "end_verse": 24},
+      "title": {"en": "Kali bursts from the frown", "hi": "भृकुटि से काली का प्रकट होना"},
+      "place": {"en": "Ambika's Himalayan battlefield", "hi": "अंबिका की हिमालयी युद्धभूमि"},
+      "narrative": {
+        "en": "Chanda and Munda surround Ambika with a fourfold army. Anger bends her brow, and Kali suddenly emerges from her forehead carrying sword and noose. Her terrifying body and unrestrained movement overturn elephants, horses, chariots and fighters. Chanda attacks with arrows and Munda with discus-like weapons, but Kali kills them and carries their heads back to Chandika. The violence belongs to this battle narrative; it is not a template for treating human opponents as demons.",
+        "hi": "चंड और मुंड चार अंगों वाली सेना से अंबिका को घेरते हैं। क्रोध से उनकी भृकुटि तनती है और ललाट से तलवार तथा पाश धारण किए काली अचानक प्रकट होती हैं। उनका भयानक शरीर और अनियंत्रित गति हाथी, घोड़े, रथ और योद्धाओं को उलट देती है। चंड बाणों और मुंड चक्राकार शस्त्रों से आक्रमण करते हैं, पर काली दोनों का वध कर उनके सिर चंडिका के पास ले आती हैं। यह हिंसा इसी युद्ध-कथा की है; मनुष्य विरोधियों को असुर कहने का नमूना नहीं।"
+      },
+      "beats": [
+        {"en": "The surrounding army produces a new fierce manifestation.", "hi": "घेरती हुई सेना एक नए उग्र प्राकट्य को बुलाती है।"},
+        {"en": "Kali breaks the machinery of forced capture.", "hi": "काली बलपूर्वक हरण की सैन्य व्यवस्था तोड़ती हैं।"},
+        {"en": "She returns to Chandika with the battle's result.", "hi": "वे युद्ध का परिणाम लेकर चंडिका के पास लौटती हैं।"}
+      ]
+    },
+    {
+      "moment_id": "dm-17-kali-receives-the-name-chamunda",
+      "ordinal": 17,
+      "chapter": 87,
+      "source_range": {"start_verse": 25, "end_verse": 26},
+      "title": {"en": "The name Chamunda is given", "hi": "चामुंडा नाम दिया जाता है"},
+      "place": {"en": "Before Chandika after the battle", "hi": "युद्ध के बाद चंडिका के सामने"},
+      "narrative": {
+        "en": "Kali presents Chanda and Munda to Chandika. Chandika names her Chamunda because she has seized and defeated the pair. The source gives a precise narrative relationship among Kali, Chandika and the newly conferred name. Devam preserves that precision rather than converting every living Chamunda, Kali or Durga tradition into automatic identity.",
+        "hi": "काली चंड और मुंड को चंडिका के सामने प्रस्तुत करती हैं। दोनों को पकड़कर पराजित करने के कारण चंडिका उन्हें चामुंडा नाम देती हैं। स्रोत काली, चंडिका और इस नए नाम के बीच एक सटीक कथात्मक संबंध देता है। देवम इसी सटीकता को रखता है; हर जीवित चामुंडा, काली या दुर्गा परंपरा को अपने-आप एक ही पहचान नहीं बनाता।"
+      },
+      "beats": [
+        {"en": "The return makes the fierce action answerable within the shared campaign.", "hi": "वापसी उग्र कर्म को संयुक्त अभियान के भीतर उत्तरदायी बनाती है।"},
+        {"en": "Chandika gives a name tied to a particular deed.", "hi": "चंडिका एक विशेष कर्म से जुड़ा नाम देती हैं।"},
+        {"en": "Later identities require their own evidence beyond this naming verse.", "hi": "बाद की पहचानों के लिए इस नामकरण श्लोक से अलग प्रमाण चाहिए।"}
+      ]
+    },
+    {
+      "moment_id": "dm-18-the-mothers-assemble",
+      "ordinal": 18,
+      "chapter": 88,
+      "source_range": {"start_verse": 1, "end_verse": 28},
+      "title": {"en": "Many powers take the field", "hi": "अनेक शक्तियाँ युद्धभूमि में उतरती हैं"},
+      "place": {"en": "The battlefield encircled by Shumbha's full force", "hi": "शुंभ की पूरी सेना से घिरी युद्धभूमि"},
+      "narrative": {
+        "en": "Shumbha summons every remaining clan. As the armies close in, powers associated with Brahma, Shiva, Skanda, Vishnu, Varaha, Narasimha and Indra arrive in corresponding female forms. Chandika also sends Shiva as her messenger and is called Shivaduti in this episode. The message offers withdrawal and restored cosmic offices before battle resumes. The many forms are coordinated agents with distinct iconography and action, not interchangeable labels.",
+        "hi": "शुंभ बचे हुए सभी कुलों को बुलाता है। सेनाएँ घेरती हैं तो ब्रह्मा, शिव, स्कंद, विष्णु, वराह, नरसिंह और इंद्र से जुड़ी शक्तियाँ उनके अनुरूप स्त्री-रूपों में आती हैं। इसी प्रसंग में चंडिका शिव को दूत बनाकर भेजती हैं और शिवदूती कहलाती हैं। संदेश युद्ध से पहले लौट जाने और विश्व के पद वापस करने का अवसर देता है। ये अनेक रूप अलग चिह्न और कर्म वाली समन्वित शक्तियाँ हैं, बदलकर लगाए जा सकने वाले नाम नहीं।"
+      },
+      "beats": [
+        {"en": "Shumbha concentrates force; the Goddess answers with plurality.", "hi": "शुंभ शक्ति केंद्रित करता है; देवी बहुरूपता से उत्तर देती हैं।"},
+        {"en": "A final message offers retreat before renewed battle.", "hi": "युद्ध फिर शुरू होने से पहले अंतिम संदेश लौटने का अवसर देता है।"},
+        {"en": "Each Mother enters with a distinct form and function.", "hi": "हर मातृका अलग रूप और कार्य के साथ आती है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-19-raktabija-multiplies",
+      "ordinal": 19,
+      "chapter": 88,
+      "source_range": {"start_verse": 29, "end_verse": 61},
+      "title": {"en": "Every fallen drop becomes another fighter", "hi": "हर गिरी बूँद नया योद्धा बनती है"},
+      "place": {"en": "The multiplying battlefield", "hi": "गुणित होती युद्धभूमि"},
+      "narrative": {
+        "en": "The Mothers defeat many attackers, but Raktabija creates a different crisis: every drop of his blood that reaches the ground produces another fighter of his size and strength. Ordinary attacks therefore enlarge the enemy. Chandika changes the strategy. She tells Kali to open her mouth, catch the blood and consume the new forms while the other powers continue striking. Once the reproduction loop is stopped, Raktabija is drained and falls.",
+        "hi": "मातृकाएँ अनेक आक्रमणकारियों को हराती हैं, पर रक्तबीज अलग संकट पैदा करता है—उसके रक्त की हर बूँद भूमि पर गिरकर उसी आकार और शक्ति का नया योद्धा बना देती है। सामान्य आक्रमण इसलिए शत्रु को बढ़ाता है। चंडिका रणनीति बदलती हैं। वे काली से मुख फैलाकर रक्त और उससे बनते रूपों को ग्रहण करने को कहती हैं, जबकि अन्य शक्तियाँ प्रहार जारी रखती हैं। बढ़ने का चक्र रुकते ही रक्तबीज रक्तहीन होकर गिरता है।"
+      },
+      "beats": [
+        {"en": "Repeated force makes the problem larger.", "hi": "बार-बार का साधारण बल समस्या को और बड़ा करता है।"},
+        {"en": "Chandika diagnoses the mechanism and changes the plan.", "hi": "चंडिका समस्या की प्रक्रिया पहचानकर योजना बदलती हैं।"},
+        {"en": "Kali and the Mothers coordinate to stop recurrence before the final blow.", "hi": "अंतिम प्रहार से पहले काली और मातृकाएँ मिलकर पुनरुत्पत्ति रोकती हैं।"}
+      ]
+    },
+    {
+      "moment_id": "dm-20-nishumbha-falls-and-rises",
+      "ordinal": 20,
+      "chapter": 89,
+      "source_range": {"start_verse": 1, "end_verse": 18},
+      "title": {"en": "Nishumbha refuses the first fall", "hi": "निशुंभ पहली पराजय स्वीकार नहीं करता"},
+      "place": {"en": "The battlefield after Raktabija", "hi": "रक्तबीज के बाद की युद्धभूमि"},
+      "narrative": {
+        "en": "After Suratha briefly asks for more detail, Medhas returns to the battle. Nishumbha attacks the Goddess and her lion with sword, shield, spear and mace. Each weapon is broken. A spear-strike brings him down, and Shumbha charges in anger when he sees his brother fall. The pause is deceptive: Nishumbha will rise again with multiplied arms, revealing that the conflict has not yet reached its decisive form.",
+        "hi": "सुरथ थोड़ी और कथा पूछता है और मेधा ऋषि फिर युद्ध पर लौटते हैं। निशुंभ तलवार, ढाल, शक्ति और गदा से देवी तथा उनके सिंह पर आक्रमण करता है। उसका हर शस्त्र टूटता है। देवी की शक्ति उसे गिराती है और भाई को गिरा देखकर शुंभ क्रोध में आगे आता है। यह विराम भ्रामक है—निशुंभ अनेक भुजाओं के साथ फिर उठेगा, जिससे पता चलता है कि संघर्ष अभी निर्णायक रूप तक नहीं पहुँचा।"
+      },
+      "beats": [
+        {"en": "Suratha remains an active listener inside the frame.", "hi": "सुरथ कथा-फ्रेम में सक्रिय श्रोता बना रहता है।"},
+        {"en": "Nishumbha loses one weapon after another.", "hi": "निशुंभ एक के बाद एक शस्त्र खोता है।"},
+        {"en": "His first fall intensifies Shumbha's involvement rather than ending the war.", "hi": "उसका पहला पतन युद्ध समाप्त नहीं करता, शुंभ की भागीदारी बढ़ाता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-21-nishumbhas-hidden-force-is-drawn-out",
+      "ordinal": 21,
+      "chapter": 89,
+      "source_range": {"start_verse": 19, "end_verse": 39},
+      "title": {"en": "The force inside Nishumbha emerges", "hi": "निशुंभ के भीतर की शक्ति बाहर आती है"},
+      "place": {"en": "The crowded final battlefield", "hi": "अंतिम भीड़भरी युद्धभूमि"},
+      "narrative": {
+        "en": "Shumbha and the Goddess exchange weapons while Kali, Shivaduti and the lion shake the field. Nishumbha rises with ten thousand arms and throws a vast discus; when those weapons fail, he charges again. Chandika pierces his heart. A great figure emerges from within him declaring its strength, but the Goddess cuts it down and Nishumbha finally dies. The allies then clear the remaining host, leaving Shumbha alone with the claim that the Goddess wins only through others.",
+        "hi": "शुंभ और देवी शस्त्रों का आदान-प्रदान करते हैं, जबकि काली, शिवदूती और सिंह युद्धभूमि हिला देते हैं। निशुंभ दस हजार भुजाओं के साथ उठकर विशाल चक्र फेंकता है; वे शस्त्र विफल होने पर फिर दौड़ता है। चंडिका उसके हृदय को भेदती हैं। उसके भीतर से एक विशाल पुरुष अपनी शक्ति की घोषणा करते हुए निकलता है, पर देवी उसे भी काट देती हैं और निशुंभ अंततः मरता है। सहयोगी शेष सेना हटाते हैं और शुंभ अकेला रह जाता है—इस आरोप के साथ कि देवी दूसरों के सहारे जीतती हैं।"
+      },
+      "beats": [
+        {"en": "Nishumbha returns in exaggerated strength.", "hi": "निशुंभ अतिरंजित शक्ति के साथ लौटता है।"},
+        {"en": "The inner claimant is exposed and defeated.", "hi": "भीतर छिपा दावेदार प्रकट होकर पराजित होता है।"},
+        {"en": "The emptied field prepares Shumbha's challenge about unity and plurality.", "hi": "खाली होती भूमि शुंभ के एकता और अनेकता वाले आरोप की भूमिका बनाती है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-22-the-many-return-into-one",
+      "ordinal": 22,
+      "chapter": 90,
+      "source_range": {"start_verse": 1, "end_verse": 8},
+      "title": {"en": "The many forms withdraw", "hi": "अनेक रूप लौट जाते हैं"},
+      "place": {"en": "The field where only Shumbha remains", "hi": "वह युद्धभूमि जहाँ केवल शुंभ बचा है"},
+      "narrative": {
+        "en": "Shumbha accuses Durga of relying on the strength of others. The Goddess answers that she alone is present and that the other powers are her manifestations. Brahmani and the other forms return into her, leaving Ambika standing alone. The scene does not erase what the distinct forms just did; it places their coordinated plurality and underlying unity together before the final duel.",
+        "hi": "शुंभ दुर्गा पर दूसरों की शक्ति के सहारे लड़ने का आरोप लगाता है। देवी उत्तर देती हैं कि यहाँ वे ही हैं और बाकी शक्तियाँ उनकी विभूतियाँ हैं। ब्रह्माणी और अन्य रूप उनमें लौट जाते हैं, और अंबिका अकेली खड़ी रहती हैं। यह दृश्य अलग रूपों के किए कर्म को मिटाता नहीं; अंतिम द्वंद्व से पहले उनकी समन्वित अनेकता और आधारभूत एकता—दोनों को साथ रखता है।"
+      },
+      "beats": [
+        {"en": "Shumbha tries to turn collaboration into weakness.", "hi": "शुंभ सहयोग को कमजोरी सिद्ध करना चाहता है।"},
+        {"en": "The Goddess names the many as her manifestations.", "hi": "देवी अनेक रूपों को अपनी विभूतियाँ कहती हैं।"},
+        {"en": "Their withdrawal creates the one-to-one contest he demanded.", "hi": "उनका लौटना वही आमने-सामने का युद्ध बनाता है जिसकी उसने माँग की थी।"}
+      ]
+    },
+    {
+      "moment_id": "dm-23-shumbha-falls-and-the-world-settles",
+      "ordinal": 23,
+      "chapter": 90,
+      "source_range": {"start_verse": 9, "end_verse": 27},
+      "title": {"en": "The duel across earth and sky", "hi": "धरती और आकाश का अंतिम द्वंद्व"},
+      "place": {"en": "Earth and sky above the battlefield", "hi": "युद्धभूमि के ऊपर धरती और आकाश"},
+      "narrative": {
+        "en": "Shumbha and Ambika cut apart each other's weapons until the fight becomes hand-to-hand. He carries her into the sky, where they continue without support beneath their feet. She hurls him down; he rises once more and charges. Her spear finally brings him to earth. His fall is followed by environmental release: ominous clouds clear, rivers return to their courses, winds become gentle and the directions grow quiet.",
+        "hi": "शुंभ और अंबिका एक-दूसरे के शस्त्र काटते-काटते हाथापाई तक पहुँचते हैं। वह उन्हें आकाश में ले जाता है, जहाँ पैरों के नीचे कोई सहारा नहीं और युद्ध फिर भी चलता है। देवी उसे भूमि पर फेंकती हैं; वह फिर उठकर दौड़ता है। अंततः उनका शूल उसे धरती पर गिरा देता है। उसके पतन के बाद प्रकृति भी शिथिल होती है—अपशकुनी बादल छँटते हैं, नदियाँ अपने मार्ग में लौटती हैं, वायु शुभ होती है और दिशाएँ शांत हो जाती हैं।"
+      },
+      "beats": [
+        {"en": "Weapons give way to direct physical struggle.", "hi": "शस्त्रों का युद्ध सीधे शारीरिक संघर्ष में बदलता है।"},
+        {"en": "The duel leaves the ground and returns to it.", "hi": "द्वंद्व भूमि छोड़कर आकाश में जाता और फिर धरती पर लौटता है।"},
+        {"en": "Restored natural order marks the consequence of victory.", "hi": "प्रकृति का संतुलन लौटना विजय का परिणाम दिखाता है।"}
+      ]
+    },
+    {
+      "moment_id": "dm-24-narayani-praise-and-future-manifestations",
+      "ordinal": 24,
+      "chapter": 91,
+      "source_range": {"start_verse": 1, "end_verse": 51},
+      "title": {"en": "Praise looks backward and forward", "hi": "स्तुति अतीत और भविष्य दोनों देखती है"},
+      "place": {"en": "The luminous field after Shumbha's fall", "hi": "शुंभ के पतन के बाद प्रकाशित युद्धभूमि"},
+      "narrative": {
+        "en": "The gods praise Narayani as refuge, intelligence, time, knowledge and the power underlying creation, preservation and dissolution. They address several forms that appeared in the battle without treating their distinct weapons and actions as meaningless. Asked to protect the worlds, the Goddess promises future manifestations in particular crises—among them forms associated with Vindhya, drought-relieving vegetation, Durga, Bhima and Bhramari. These are predictions inside this text, not a complete catalogue of every later goddess tradition.",
+        "hi": "देवता नारायणी की स्तुति शरण, बुद्धि, काल, विद्या तथा सृष्टि, पालन और संहार की आधार-शक्ति के रूप में करते हैं। वे युद्ध में आए अनेक रूपों को संबोधित करते हैं और उनके अलग शस्त्र तथा कर्म को निरर्थक नहीं बनाते। लोक-रक्षा की प्रार्थना पर देवी भविष्य के विशेष संकटों में प्रकट होने का वचन देती हैं—विंध्य, अकाल में वनस्पति से पोषण, दुर्गा, भीमा और भ्रामरी से जुड़े रूपों सहित। ये इसी ग्रंथ की भविष्यवाणियाँ हैं, बाद की हर देवी-परंपरा की पूरी सूची नहीं।"
+      },
+      "beats": [
+        {"en": "The praise remembers both unity and differentiated forms.", "hi": "स्तुति एकता और अलग-अलग रूप—दोनों को याद रखती है।"},
+        {"en": "Protection is linked to particular future conditions.", "hi": "रक्षा को भविष्य की विशेष परिस्थितियों से जोड़ा जाता है।"},
+        {"en": "The story horizon expands without claiming an exhaustive goddess map.", "hi": "कथा का क्षितिज फैलता है, पर सभी देवी परंपराओं की संपूर्ण सूची का दावा नहीं करता।"}
+      ]
+    },
+    {
+      "moment_id": "dm-25-the-goddess-speaks-of-hearing-the-story",
+      "ordinal": 25,
+      "chapter": 92,
+      "source_range": {"start_verse": 1, "end_verse": 38},
+      "title": {"en": "The text describes its own hearing", "hi": "ग्रंथ अपने श्रवण की महिमा बताता है"},
+      "place": {"en": "The divine discourse and Medhas's hermitage frame", "hi": "देवी का उपदेश और मेधा ऋषि का कथा-फ्रेम"},
+      "narrative": {
+        "en": "The Goddess describes benefits the source attributes to reciting or hearing her Mahatmya, especially in danger, worship and seasonal observance. The chapter also recalls the three major victories and says the story creates fearlessness and wellbeing. Medhas resumes his own voice and explains the Goddess as the power who deludes, sustains and, when propitious, grants understanding. Devam presents these as claims made by the historical sacred text, not empirical guarantees or a self-led ritual prescription.",
+        "hi": "देवी बताती हैं कि इस माहात्म्य के पाठ या श्रवण से—विशेषकर संकट, पूजा और ऋतु-उत्सव में—कौन-से फल मिलते हैं; ये उसी स्रोत के दावे हैं। अध्याय तीन प्रमुख विजयों को भी याद करता और कथा को अभय तथा कल्याण से जोड़ता है। फिर मेधा ऋषि अपनी वाणी में लौटकर देवी को मोह उत्पन्न करने, संसार धारण करने और प्रसन्न होने पर समझ देने वाली शक्ति बताते हैं। देवम इन्हें ऐतिहासिक पवित्र ग्रंथ के कथन के रूप में रखता है, अनुभवजन्य गारंटी या स्वयं करने योग्य अनुष्ठान-विधि के रूप में नहीं।"
+      },
+      "beats": [
+        {"en": "The Goddess links hearing to the story's own devotional use.", "hi": "देवी श्रवण को कथा के अपने भक्तिपरक उपयोग से जोड़ती हैं।"},
+        {"en": "Source promises remain attributable source claims.", "hi": "स्रोत के फल-वचन उसी स्रोत के नाम से रहते हैं।"},
+        {"en": "Medhas brings the cosmic accounts back to Suratha's original question.", "hi": "मेधा ऋषि विश्वव्यापी कथाओं को सुरथ के मूल प्रश्न से फिर जोड़ते हैं।"}
+      ]
+    },
+    {
+      "moment_id": "dm-26-suratha-and-samadhi-choose-different-boons",
+      "ordinal": 26,
+      "chapter": 93,
+      "source_range": {"start_verse": 1, "end_verse": 17},
+      "title": {"en": "Two listeners ask for different futures", "hi": "दो श्रोता अलग भविष्य माँगते हैं"},
+      "place": {"en": "A riverbank and the return from worship", "hi": "नदी तट और साधना से वापसी"},
+      "narrative": {
+        "en": "After hearing the full account, Suratha and Samadhi leave the hermitage for a riverbank and undertake focused worship of the Goddess. She appears and invites each to ask. Suratha wants his lost kingdom restored and a future position that cannot be taken from him; Samadhi asks for knowledge that will free him from possessive attachment. Both receive what they seek. The ending does not force one human need into the other: worldly restoration and liberating understanding remain distinct responses to the pain that opened the story.",
+        "hi": "पूरी कथा सुनने के बाद सुरथ और समाधि आश्रम से नदी तट पर जाकर देवी की एकाग्र साधना करते हैं। देवी प्रकट होकर दोनों से वर माँगने को कहती हैं। सुरथ अपना खोया राज्य और भविष्य में ऐसा पद चाहता है जिसे कोई छीन न सके; समाधि उस ममता से मुक्त करने वाला ज्ञान माँगता है जिसने उसे बाँध रखा था। दोनों को उनका माँगा वर मिलता है। अंत एक मनुष्य की आवश्यकता को दूसरे पर नहीं थोपता—सांसारिक पुनर्स्थापना और मुक्तिदायक समझ उस पीड़ा के दो अलग उत्तर बने रहते हैं जिससे कथा शुरू हुई थी।"
+      },
+      "beats": [
+        {"en": "Hearing leads both men to deliberate practice rather than instant relief.", "hi": "श्रवण दोनों को तत्काल राहत के बजाय विचारपूर्वक साधना तक ले जाता है।"},
+        {"en": "Suratha asks for restored responsibility and durable rule.", "hi": "सुरथ पुनः दायित्व और स्थिर शासन माँगता है।"},
+        {"en": "Samadhi asks to be free of the possessiveness he first could not explain.", "hi": "समाधि उसी ममता से मुक्ति माँगता है जिसे आरंभ में समझ नहीं पा रहा था।"}
+      ]
+    }
+  ]
+}

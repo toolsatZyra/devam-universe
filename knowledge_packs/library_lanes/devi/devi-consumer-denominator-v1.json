@@ -1,0 +1,107 @@
+{
+  "contract": "DEVAM_DEVI_CONSUMER_DENOMINATOR_V1",
+  "lane_id": "devi-consumer",
+  "version": 1,
+  "frozen_on": "2026-08-13",
+  "coordination_commit": "cf0e9406ea2120a77d9b2c4cd5552148e0a9aaaf",
+  "branch": "codex/devi-consumer-mvp",
+  "status": "frozen_before_new_authoring",
+  "completion_claim_boundary": "Completion applies only to this selected consumer-MVP denominator. It is not completion of all Devi traditions, texts, recensions, Shakti Peethas, temples, Navaratri worlds, Durga Puja practices, Kali traditions, or Lakshmi traditions.",
+  "selected_denominator": {
+    "devimahatmya_expression": {
+      "source_boundary": "Sanskrit Wikisource exact revisions covering Markandeya Purana chapters 81-93",
+      "chapters": 13,
+      "source_units": 588,
+      "story_moments": 26,
+      "languages": ["en", "hi"],
+      "moments_per_chapter": {
+        "81": 5,
+        "82": 3,
+        "83": 2,
+        "84": 1,
+        "85": 3,
+        "86": 1,
+        "87": 2,
+        "88": 2,
+        "89": 2,
+        "90": 2,
+        "91": 1,
+        "92": 1,
+        "93": 1
+      },
+      "completion_rule": "Every one of the 588 ordered source units is covered exactly once by one of 26 source ranges; every moment has substantial English and Hindi action, motivation, consequence, character and place continuity; chapter sequence and frame return remain traversable."
+    },
+    "owned_practice_lanes": [
+      "shardiya-navaratri-north-west-india-smarta-household",
+      "bengal-durga-puja-kolkata-participant",
+      "bengal-mahashtami-community-participant",
+      "gujarat-navaratri-garba-community-participant",
+      "karnataka-gombe-habba-saraswati-ayudha-participant",
+      "masika-durgashtami-north-west-remembrance",
+      "kojagara-sharad-purnima-north-west-lakshmi-context"
+    ],
+    "cross_lane_observance_connections": [
+      "devam:observance:bengal-kali-puja",
+      "devam:observance:diwali-lakshmi-puja"
+    ],
+    "identity_and_variant_dossiers": [
+      "durga-chandika-ambika-mahamaya-source-scope",
+      "kaushiki-kalika-source-sequence",
+      "chamunda-naming-episode",
+      "kali-anchor-versus-source-bounded-kalika-and-chamunda",
+      "lakshmi-devimahatmya-kojagara-and-diwali-layers",
+      "navadurga-living-framework-versus-devimahatmya-chapter-sequence"
+    ],
+    "living_place_and_temple_dossiers": [
+      "kolkata-durga-puja-and-kumartuli",
+      "kalighat-kali-temple",
+      "dakshineswar-kali-temple",
+      "kamakhya-temple-nilachal",
+      "mata-vaishno-devi-bhawan-and-yatra",
+      "mahalakshmi-ambabai-temple-kolhapur",
+      "sringeri-sharadamba-temple-and-peetham"
+    ],
+    "cross_link_proposal_packs": 1,
+    "lane_validator_files": 1
+  },
+  "existing_material_audit": {
+    "reusable_source_grounding": [
+      "knowledge_packs/durga/devimahatmya-devam-translations-v1.jsonl",
+      "knowledge_packs/durga/devimahatmya-semantic-graph-v1.json",
+      "ingestion/reports/devimahatmya-wikisource-sanskrit-ingestion-v1.json",
+      "ingestion/reports/devimahatmya-devam-translations-v1.json",
+      "ingestion/reports/markandeya-purana-pargiter-devimahatmya-selected-passages-v1.json"
+    ],
+    "reusable_scoped_practice_records": [
+      "knowledge_packs/rituals/shardiya-navaratri-north-west-india-content-v1.json",
+      "knowledge_packs/rituals/bengal-durga-puja-participant-content-v1.json",
+      "knowledge_packs/rituals/bengal-mahashtami-community-participant-2026-v1.json",
+      "knowledge_packs/rituals/karnataka-saraswati-ayudha-puja-content-v1.json",
+      "knowledge_packs/rituals/masika-durgashtami-north-west-content-v1.json",
+      "knowledge_packs/rituals/kojagara-sharad-purnima-north-west-content-v1.json"
+    ],
+    "cross_lane_reference_only": [
+      "knowledge_packs/rituals/bengal-kali-puja-participant-content-v1.json",
+      "knowledge_packs/rituals/diwali-lakshmi-puja-west-india-content-v1.json"
+    ],
+    "partial_not_counted_as_consumer_story_completion": [
+      "The 20-entity Devi Mahatmya semantic graph is a source-bounded index, not a detailed story.",
+      "The 588 English/Hindi beta translations are verse-aligned evidence, not an approachable continuous consumer narrative.",
+      "Existing Atlas nodes, migrations and app routes are projections and are outside this lane's write authority.",
+      "Selected Pargiter passages do not constitute a complete English narrative expression.",
+      "Historical ritual manuals and OCR-quarantined scans do not establish current universal practice."
+    ]
+  },
+  "initial_coverage": {
+    "story_moments_complete": 0,
+    "story_moments_total": 26,
+    "owned_practice_lanes_complete": 6,
+    "owned_practice_lanes_total": 7,
+    "identity_dossiers_complete": 0,
+    "identity_dossiers_total": 6,
+    "living_place_dossiers_complete": 0,
+    "living_place_dossiers_total": 7,
+    "cross_lane_connection_groups_complete": 0,
+    "cross_lane_connection_groups_total": 2
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "contract": "DEVAM_DEVI_LANE_COVERAGE_STATUS_V1",
+  "lane_id": "devi-consumer",
+  "denominator_id": "devi-consumer-denominator-v1",
+  "status": "selected_denominator_authored_not_projected",
+  "as_of": "2026-08-13",
+  "coverage": {
+    "devimahatmya_source_units_covered": 588,
+    "devimahatmya_source_units_total": 588,
+    "bilingual_story_moments_complete": 26,
+    "bilingual_story_moments_total": 26,
+    "owned_practice_lanes_complete": 7,
+    "owned_practice_lanes_total": 7,
+    "cross_lane_observance_connections_complete": 2,
+    "cross_lane_observance_connections_total": 2,
+    "identity_variant_dossiers_complete": 6,
+    "identity_variant_dossiers_total": 6,
+    "living_place_temple_dossiers_complete": 7,
+    "living_place_temple_dossiers_total": 7,
+    "cross_link_proposal_packs_complete": 1,
+    "cross_link_proposal_packs_total": 1,
+    "lane_validator_files_complete": 1,
+    "lane_validator_files_total": 1
+  },
+  "remaining_selected_denominator_gaps": [],
+  "blocked_selected_denominator_gaps": [],
+  "state_boundaries": {
+    "authored": true,
+    "lane_validated": true,
+    "adversarial_review_complete": true,
+    "independently_culturally_reviewed": false,
+    "integrated_into_shared_canonical_data": false,
+    "projected_to_application": false,
+    "hosted": false,
+    "released": false
+  },
+  "verification": {
+    "lane_validator": "11/11 checks passed",
+    "semantic_graph_compiler": "2/2 checks passed",
+    "cross_link_schema": "Draft 2020-12 validation passed inside the lane validator",
+    "write_scope": "Only Devi lane globs are changed",
+    "blocked_checks": [
+      "The pre-existing source-vault-backed translation compiler and standalone draft validator cannot run in this isolated worktree because source_vault object c7fe701aedeedffde57a51b21aa4f8fec697a7922939fb59ffa985e22cc9b7ae is absent. No source payload was copied into Git or the worktree."
+    ]
+  },
+  "known_outside_scope": [
+    "All Devi Mahatmya recensions, editions and independently reviewed translations",
+    "Complete Devi Bhagavata, Kalika Purana, Devi Gita and wider Shakta textual traditions",
+    "All Shakti Peethas, temples, goddess identities and regional sacred geographies",
+    "Chaitra and other Navaratris, Nepal Dashain and every regional or family Navaratri practice",
+    "Priest-led, initiation-bound, tantric, consecration, bali, homa and complete temple liturgies",
+    "All Bengali household and bonedi-bari Durga Puja variants",
+    "All Kali Puja and Lakshmi Puja procedures, which remain owned by the Diwali lane where assigned",
+    "Bengali, Gujarati, Kannada, Assamese and other regional-language consumer translations"
+  ]
+}
