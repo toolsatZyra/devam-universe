@@ -1,0 +1,32 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-vat-savitri-mahabharata-owner-links-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "vat-savitri-north-amavasya-to-ganguli-savitri-context",
+      "from_ref": {"lane_local_id": "ritual-calendar/vat-savitri-north-amavasya-household-participant-2027-v1"},
+      "to_ref": {"canonical_id": "devam:source-expression:mahabharata-ganguli-consumer-v1"},
+      "relationship_family": "story",
+      "predicate": "uses_source_labelled_savitri_satyavan_context_from",
+      "directionality": "directed",
+      "consumer_label": {"en": "Read Savitri and Satyavan in full epic context", "hi": "सावित्री और सत्यवान का पूर्ण महाकाव्य संदर्भ पढ़ें"},
+      "scope": {
+        "statement": "The North ritual pack uses a bounded four-moment account from Ganguli Vana Parva CCXLI-CCXLVII and requests the full story from its canonical owner without importing the epic fast or restoration as ritual instruction or promise.",
+        "geography_codes": ["north-india"],
+        "tradition_codes": ["jyeshtha-amavasya-vat-savitri-household"],
+        "time_scope": "North Jyeshtha Amavasya; Delhi 2027 fixture 4 June",
+        "source_expression_scope": "Ganguli English Mahabharata expression, Vana Parva CCXLI-CCXLVII"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "source_passage", "ref": "source_vault object sha256:246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826 lines 55970-56390", "claim_scope": "Savitri's choice, Narada's warning, severe fast, Satyavan's death, dialogue with Yama, boons and restoration."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/vat-savitri-north-amavasya-household-participant-2027-v1.json", "claim_scope": "Bilingual North Amavasya timing, source-labelled story, household/site actions, tree and health safety, consent and material variants."}
+      ],
+      "confidence": "high",
+      "target_resolution": "existing_anchor",
+      "integration_status": "proposed"
+    }
+  ]
+}

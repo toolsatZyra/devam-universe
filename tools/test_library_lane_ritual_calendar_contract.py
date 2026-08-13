@@ -54,6 +54,14 @@ AKSHAYA_TRITIYA_PACK = (
 AKSHAYA_TRITIYA_LINK = (
     LANE / "cross-links" / "akshaya-tritiya-mahabharata-owner-link-v1.json"
 )
+VAT_SAVITRI_NORTH_PACK = (
+    LANE
+    / "packs"
+    / "vat-savitri-north-amavasya-household-participant-2027-v1.json"
+)
+VAT_SAVITRI_LINKS = (
+    LANE / "cross-links" / "vat-savitri-mahabharata-owner-links-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -1884,3 +1892,140 @@ def test_akshaya_tritiya_major_difference_financial_legal_and_authority_boundari
     raw.decode("utf-8", errors="strict")
     assert "अक्षय तृतीया".encode("utf-8") in raw
     assert AKSHAYA_TRITIYA_PACK.stat().st_size < 100_000
+
+
+def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_without_progress_credit():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(VAT_SAVITRI_NORTH_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["lane_id"] == (
+        "vat-savitri-north-amavasya-household-participant-2027-v1"
+    )
+    assert pack["observance_slugs"] == ["vat-savitri"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 12
+    referenced = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key == "source_ids":
+                    referenced.extend(child)
+                else:
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    assert set(referenced) <= source_ids
+
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    links = load(VAT_SAVITRI_LINKS)
+    Draft202012Validator(link_schema).validate(links)
+    assert len(links["proposals"]) == 1
+    proposal = links["proposals"][0]
+    assert proposal["to_ref"]["canonical_id"] == (
+        "devam:source-expression:mahabharata-ganguli-consumer-v1"
+    )
+    assert proposal["target_resolution"] == "existing_anchor"
+    assert proposal["predicate"] == (
+        "uses_source_labelled_savitri_satyavan_context_from"
+    )
+
+    # The frozen umbrella item is not complete until its West Purnima companion passes.
+    progress = load(AUTHORING_PROGRESS)
+    assert progress["completed_after_freeze"] == 10
+    assert progress["remaining_authoring_items"] == 198
+    assert pack["lane_id"] not in progress["completed_lane_ids"]
+
+
+def test_vat_savitri_north_is_bilingual_actionable_and_preserves_major_timing_split():
+    pack = load(VAT_SAVITRI_NORTH_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "4 June" in calendar["freshness_note"]
+    assert "18 June" in calendar["freshness_note"]
+    assert "West Purnima" in calendar["freshness_note"]
+
+    localized = {
+        entry["language_code"]: entry for entry in pack["localized_content"]
+    }
+    assert set(localized) == {"en", "hi"}
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert len(entry["typical_practices"]) == 4
+        assert all(
+            not story["universal_origin_claimed"]
+            for story in entry["origin_narratives"]
+        )
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert len(procedures["minimum"]["steps"]) >= 5
+        assert len(procedures["standard"]["steps"]) >= 8
+        assert len(procedures["elaborate"]["steps"]) >= 6
+        assert all(procedure["closing"]["text"] for procedure in entry["procedures"])
+
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        suffix = "-hi" if entry["language_code"] == "hi" else ""
+        for base in (
+            "nonfast-or-known-family-fast",
+            "thread-colour-count-or-no-thread",
+            "married-woman-formal-or-inclusive-reflection",
+            "minor-north-food-dress-language",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is False
+        for base in (
+            "vat-purnima-west",
+            "formal-priest-led-or-three-night-vrata",
+            "full-mahabharata-story",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is True
+
+    english = json.dumps(localized["en"], ensure_ascii=False).lower()
+    for term in (
+        "not a universal national ritual",
+        "severe three-night fast",
+        "non-fasting is complete",
+        "not proof that a vrata can resurrect",
+        "urgent symptoms require medical action",
+        "no wife or partner is responsible",
+        "consent is specific and revocable",
+        "do not nail, cut, scrape, paint or constrict",
+        "caretaker permission",
+        "west purnima companion",
+    ):
+        assert term in english
+
+    hindi = json.dumps(localized["hi"], ensure_ascii=False)
+    for term in (
+        "सार्वभौम राष्ट्रीय अनुष्ठान नहीं",
+        "तीन-रात्रि उपवास",
+        "बिना उपवास पूर्ण",
+        "पुनर्जीवन",
+        "चिकित्सकीय सहायता",
+        "जिम्मेदारी नहीं",
+        "सहमति",
+        "कील",
+        "पालक अनुमति",
+        "पश्चिम पूर्णिमा साथी",
+    ):
+        assert term in hindi
+
+    ganguli = next(
+        source for source in pack["sources"]
+        if source["source_id"] == "ganguli-mahabharata-savitri"
+    )
+    assert ganguli["artifact_sha256"] == (
+        "246325dcb8966a13990ab66f38b1cab230724fe0b1ad135bd6fb12222baa4826"
+    )
+    raw = VAT_SAVITRI_NORTH_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "वट सावित्री".encode("utf-8") in raw
+    assert VAT_SAVITRI_NORTH_PACK.stat().st_size < 100_000
