@@ -107,7 +107,7 @@ humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
 survivors and the grief of bereaved women. Historically situated social and
 prescriptive material remains contextualized rather than presented as timeless
 consumer instruction. All 77 backbone records remain `planned_not_playable`;
-the first eleven now have companion `authored_not_projected` scene packs.
+the first twelve now have companion `authored_not_projected` scene packs.
 Canonical graph entities, shared database projection and product integration
 remain later boundaries. See
 `MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
@@ -255,6 +255,25 @@ counter-counsel of Bhishma, Drona and Vidura before the return to Hastinapura
 and the labour-filled transformation of Khandavaprastha into Indraprastha.
 The first eleven turns now total 101 exact-span scenes and 465 substantial
 Hindi/English beats through Adi 209; 66 turns remain at backbone-plan depth.
+
+The twelfth turn is now fully scene-authored as ten scenes and 51 bilingual
+beats across Adi 210–223. Narada's warning opens the household-rule sequence
+through the Sunda–Upasunda and Tilottama story without treating Tilottama as
+the cause of the brothers' violence. The Indraprastha rule, cattle alarm and
+Arjuna's chosen exile remain distinct from Draupadi's unrecorded participation
+in making that rule. Arjuna's journeys then retain Ulupi's coercive pressure,
+Chitrangada's unrecorded direct assent and the Manipur succession condition;
+the five-water apsara episode keeps its punitive gendered curse inside the
+epic's frame rather than endorsing it. Krishna welcomes Arjuna through
+Prabhasa and Raivataka into Dwaraka before Subhadra's forced taking: male
+approval, later reconciliation and eventual marriage are not rewritten as her
+prior consent. The Yadava mobilization, Krishna's argument, return to
+Indraprastha, Draupadi's pain, Subhadra's deferential presentation, alliance,
+Abhimanyu and the five sons born to Draupadi complete the turn without making
+Draupadi an obstacle, treating deference as parity, or reducing children and
+people assigned to service to inventory. The first twelve turns now total 111
+exact-span scenes and 516 substantial Hindi/English beats through Adi 223; 65
+turns remain at backbone-plan depth.
 
 The existing seven-scene road-home district remains the single Yuddha 122–128
 route rather than being duplicated. Its 29 beats now carry substantial Hindi

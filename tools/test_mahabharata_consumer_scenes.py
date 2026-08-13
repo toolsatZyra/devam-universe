@@ -28,6 +28,8 @@ PACK_PATHS = [
     ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-road-panchala-part-2-v1.json",
     ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-draupadi-choice-marriage-part-1-v1.json",
     ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-draupadi-choice-marriage-part-2-v1.json",
+    ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-shared-marriage-arjuna-subhadra-part-1-v1.json",
+    ROOT / "knowledge_packs" / "mahabharata" / "consumer-scenes-shared-marriage-arjuna-subhadra-part-2-v1.json",
 ]
 PLAN_PATH = ROOT / "ingestion" / "plans" / "mahabharata-kisari-mohan-ganguli-project-gutenberg-source-qualification-v1.json"
 BACKBONE_PATH = ROOT / "knowledge_packs" / "inventories" / "mahabharata-consumer-backbone-v1.json"
@@ -49,10 +51,10 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
     def test_batch_contract_and_honest_status(self) -> None:
         self.assertTrue(all(pack["contract"] == "DEVAM_MAHABHARATA_CONSUMER_SCENES_V1" for pack in self.packs))
         self.assertTrue(all(pack["status"] == "authored_not_projected" for pack in self.packs))
-        self.assertEqual(101, len(self.scenes))
-        self.assertEqual(465, sum(len(scene["beats"]) for scene in self.scenes))
-        self.assertEqual(101, sum(pack["coverage"]["scene_count"] for pack in self.packs))
-        self.assertEqual(465, sum(pack["coverage"]["beat_count"] for pack in self.packs))
+        self.assertEqual(111, len(self.scenes))
+        self.assertEqual(516, sum(len(scene["beats"]) for scene in self.scenes))
+        self.assertEqual(111, sum(pack["coverage"]["scene_count"] for pack in self.packs))
+        self.assertEqual(516, sum(pack["coverage"]["beat_count"] for pack in self.packs))
         self.assertTrue(all(scene["status"] == "authored_not_projected" for scene in self.scenes))
 
     def test_scenes_partition_every_completed_backbone_turn_exactly(self) -> None:
@@ -75,6 +77,7 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
             "survive-fire-live-strangers",
             "road-to-panchala",
             "draupadi-choice-marriage",
+            "shared-marriage-arjuna-subhadra",
         ]:
             source_range = turns[turn_id]["source_range"]
             self.assertEqual(
@@ -224,6 +227,26 @@ class MahabharataConsumerScenesTest(unittest.TestCase):
         self.assertEqual(pack["batch_id"], completion["coverage"]["completes_backbone_turn_with_batch_id"])
         self.assertEqual(200, completion["coverage"]["source_start_ordinal"])
         self.assertEqual(209, completion["coverage"]["source_end_ordinal"])
+
+    def test_partial_shared_marriage_arjuna_subhadra_batch_names_its_remaining_range(self) -> None:
+        pack = next(
+            pack
+            for pack in self.packs
+            if pack["batch_id"] == "narada-household-rule-arjuna-ulupi-and-chitrangada"
+        )
+        completion = next(
+            pack
+            for pack in self.packs
+            if pack["batch_id"] == "apsaras-prabhasa-subhadra-return-and-children"
+        )
+        self.assertFalse(pack["coverage"]["completes_backbone_turn"])
+        self.assertEqual(210, pack["coverage"]["source_start_ordinal"])
+        self.assertEqual(217, pack["coverage"]["source_end_ordinal"])
+        self.assertEqual(218, pack["coverage"]["remaining_source_start_ordinal"])
+        self.assertEqual(223, pack["coverage"]["remaining_source_end_ordinal"])
+        self.assertEqual(pack["batch_id"], completion["coverage"]["completes_backbone_turn_with_batch_id"])
+        self.assertEqual(218, completion["coverage"]["source_start_ordinal"])
+        self.assertEqual(223, completion["coverage"]["source_end_ordinal"])
 
     def test_every_scene_reconstructs_from_the_fixed_source(self) -> None:
         units = {
