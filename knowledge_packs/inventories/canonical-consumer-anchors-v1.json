@@ -1,0 +1,129 @@
+{
+  "contract": "DEVAM_CANONICAL_CONSUMER_ANCHORS_V1",
+  "version": 1,
+  "snapshot_date": "2026-08-13",
+  "boundary": "A small coordination registry for identities shared by two or more initial consumer-library lanes. It is not a complete entity registry, a theological identity map, or a civilizational denominator.",
+  "anchors": [
+    {
+      "canonical_id": "devam:source-expression:ramayana-dutt-consumer-v1",
+      "normalized_family": "source_expression",
+      "owner_lane_id": "epics-integration",
+      "preferred_name": {"en": "Ramayana — selected Dutt expression", "hi": "रामायण — चयनित दत्त अभिव्यक्ति"},
+      "aliases": ["ramayana-dutt-consumer-v1"],
+      "existing_refs": {"atlas_node_slug": "ramayana", "narrative_series_id": "ramayana-dutt-consumer-v1"}
+    },
+    {
+      "canonical_id": "devam:source-expression:mahabharata-ganguli-consumer-v1",
+      "normalized_family": "source_expression",
+      "owner_lane_id": "epics-integration",
+      "preferred_name": {"en": "Mahabharata — selected Ganguli expression", "hi": "महाभारत — चयनित गांगुली अभिव्यक्ति"},
+      "aliases": ["mahabharata", "mahabharata-ganguli-consumer-v1"],
+      "existing_refs": {"narrative_series_id": "mahabharata"}
+    },
+    {
+      "canonical_id": "devam:text:ramcharitmanas",
+      "normalized_family": "source_expression",
+      "owner_lane_id": "epics-integration",
+      "preferred_name": {"en": "Ramcharitmanas", "hi": "रामचरितमानस"},
+      "aliases": ["ramcharitmanas"],
+      "existing_refs": {"atlas_node_slug": "ramcharitmanas"}
+    },
+    {
+      "canonical_id": "devam:text:hanuman-chalisa",
+      "normalized_family": "source_expression",
+      "owner_lane_id": "epics-integration",
+      "preferred_name": {"en": "Hanuman Chalisa", "hi": "हनुमान चालीसा"},
+      "aliases": ["hanuman-chalisa"],
+      "existing_refs": {"atlas_node_slug": "hanuman-chalisa"}
+    },
+    {
+      "canonical_id": "devam:being:ganesha",
+      "normalized_family": "being_person",
+      "owner_lane_id": "ganesha-consumer",
+      "preferred_name": {"en": "Ganesha", "hi": "गणेश"},
+      "aliases": ["Ganapati", "Vinayaka", "गणपति", "विनायक"],
+      "existing_refs": {"atlas_node_slug": "ganesha"}
+    },
+    {
+      "canonical_id": "devam:observance:ganesh-chaturthi",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "ganesha-consumer",
+      "preferred_name": {"en": "Ganesh Chaturthi", "hi": "गणेश चतुर्थी"},
+      "aliases": ["Ganeshotsav", "गणेशोत्सव"],
+      "existing_refs": {"atlas_node_slug": "ganesh-chaturthi", "observance_slug": "ganesh-chaturthi"}
+    },
+    {
+      "canonical_id": "devam:being:durga",
+      "normalized_family": "being_person",
+      "owner_lane_id": "devi-consumer",
+      "preferred_name": {"en": "Durga", "hi": "दुर्गा"},
+      "aliases": ["Maa Durga", "माँ दुर्गा"],
+      "existing_refs": {"atlas_node_slug": "durga"}
+    },
+    {
+      "canonical_id": "devam:being:kali",
+      "normalized_family": "being_person",
+      "owner_lane_id": "devi-consumer",
+      "preferred_name": {"en": "Kali", "hi": "काली"},
+      "aliases": ["Maa Kali", "माँ काली"],
+      "existing_refs": {},
+      "identity_boundary": "The existing source-bounded Kalika and living Kali-form nodes are relationship candidates, not automatic same-identity aliases for this shared anchor."
+    },
+    {
+      "canonical_id": "devam:observance:shardiya-navaratri",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "devi-consumer",
+      "preferred_name": {"en": "Shardiya Navaratri", "hi": "शारदीय नवरात्रि"},
+      "aliases": ["Navratri", "Navaratri", "नवरात्रि"],
+      "existing_refs": {"atlas_node_slug": "shardiya-navaratri", "observance_slug": "shardiya-navaratri"}
+    },
+    {
+      "canonical_id": "devam:observance:durga-puja",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "devi-consumer",
+      "preferred_name": {"en": "Durga Puja", "hi": "दुर्गा पूजा"},
+      "aliases": ["Durgotsav", "दुर्गोत्सव"],
+      "existing_refs": {"atlas_node_slug": "durga-puja", "observance_slug": "durga-puja"}
+    },
+    {
+      "canonical_id": "devam:observance:diwali",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "diwali-consumer",
+      "preferred_name": {"en": "Diwali / Deepavali", "hi": "दीवाली / दीपावली"},
+      "aliases": ["Deepavali", "दीपावली", "दीवाली"],
+      "existing_refs": {"atlas_node_slug": "diwali", "observance_slug": "diwali"}
+    },
+    {
+      "canonical_id": "devam:observance:dhantrayodashi",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "diwali-consumer",
+      "preferred_name": {"en": "Dhantrayodashi / Dhanteras", "hi": "धनत्रयोदशी / धनतेरस"},
+      "aliases": ["Dhanteras", "धनतेरस"],
+      "existing_refs": {"atlas_node_slug": "dhantrayodashi", "observance_slug": "dhantrayodashi"}
+    },
+    {
+      "canonical_id": "devam:observance:diwali-lakshmi-puja",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "diwali-consumer",
+      "preferred_name": {"en": "Diwali Lakshmi Puja", "hi": "दीवाली लक्ष्मी पूजा"},
+      "aliases": ["Lakshmi Puja", "लक्ष्मी पूजा"],
+      "existing_refs": {"atlas_node_slug": "lakshmi-puja", "observance_slug": "diwali-lakshmi-puja"}
+    },
+    {
+      "canonical_id": "devam:observance:bengal-kali-puja",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "diwali-consumer",
+      "preferred_name": {"en": "Bengal Kali Puja", "hi": "बंगाल काली पूजा"},
+      "aliases": ["Shyama Puja", "श्यामा पूजा"],
+      "existing_refs": {"atlas_node_slug": "kali-puja", "observance_slug": "kali-puja"}
+    },
+    {
+      "canonical_id": "devam:observance:mahashivaratri",
+      "normalized_family": "time_observance",
+      "owner_lane_id": "ritual-calendar",
+      "preferred_name": {"en": "Mahashivaratri", "hi": "महाशिवरात्रि"},
+      "aliases": ["Maha Shivaratri", "महाशिवरात्रि"],
+      "existing_refs": {"observance_slug": "mahashivaratri"}
+    }
+  ]
+}

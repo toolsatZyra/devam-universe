@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devam.app/schemas/cross-lane-link-proposal-v1.schema.json",
+  "title": "Devam cross-lane relationship proposals",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract", "proposal_pack_id", "lane_id", "anchor_registry_version", "status", "proposals"],
+  "properties": {
+    "contract": {"const": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1"},
+    "proposal_pack_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*-v[0-9]+$"},
+    "lane_id": {"enum": ["ganesha-consumer", "devi-consumer", "diwali-consumer", "ritual-calendar"]},
+    "anchor_registry_version": {"const": 1},
+    "status": {"const": "proposed_for_integration"},
+    "proposals": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/proposal"}
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "hi"],
+      "properties": {
+        "en": {"type": "string", "minLength": 12},
+        "hi": {"type": "string", "minLength": 8}
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canonical_id": {"type": "string", "pattern": "^devam:[a-z-]+:[a-z0-9][a-z0-9-]*$"},
+        "lane_local_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*$"}
+      },
+      "oneOf": [
+        {"required": ["canonical_id"]},
+        {"required": ["lane_local_id"]}
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_kind", "ref", "claim_scope"],
+      "properties": {
+        "evidence_kind": {"enum": ["source_passage", "claim", "ritual_lane", "official_current", "academic_historical", "living_practice", "devam_synthesis"]},
+        "ref": {"type": "string", "minLength": 3},
+        "claim_scope": {"type": "string", "minLength": 12}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 20},
+        "geography_codes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "tradition_codes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "time_scope": {"type": ["string", "null"]},
+        "source_expression_scope": {"type": ["string", "null"]}
+      }
+    },
+    "proposal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_id", "from_ref", "to_ref", "relationship_family", "predicate", "directionality", "consumer_label", "scope", "evidence_refs", "confidence", "target_resolution", "integration_status"],
+      "properties": {
+        "proposal_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "from_ref": {"$ref": "#/$defs/reference"},
+        "to_ref": {"$ref": "#/$defs/reference"},
+        "relationship_family": {"enum": ["story", "festival", "practice", "place", "identity", "time", "history", "kinship", "text", "teaching", "association"]},
+        "predicate": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "not": {"enum": ["related_to", "same_as", "is_form_of", "origin_of"]}
+        },
+        "directionality": {"enum": ["directed", "bidirectional"]},
+        "consumer_label": {"$ref": "#/$defs/localizedText"},
+        "scope": {"$ref": "#/$defs/scope"},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}},
+        "confidence": {"enum": ["high", "medium", "contested"]},
+        "target_resolution": {"enum": ["existing_anchor", "lane_local", "unresolved_owner_lane"]},
+        "integration_status": {"const": "proposed"}
+      }
+    }
+  }
+}
