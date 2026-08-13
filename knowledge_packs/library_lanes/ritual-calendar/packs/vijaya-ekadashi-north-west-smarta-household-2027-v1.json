@@ -1,0 +1,306 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "vijaya-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["vijaya-ekadashi"],
+  "applicability": {
+    "region_codes": ["north-india", "west-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Phalguna Krishna Ekadashi for you?",
+      "Does your family follow ordinary Smarta Vijaya, or a Gauna/Vaishnava authority with a materially different date or parana rule?",
+      "Are you asking for ordinary Vijaya household guidance or the separate Pankoddhar event at Sri Lokanath Temple in Puri?",
+      "Would Sita's abduction, war, killing, conquest, water or unsafe-authority discussion be distressing or unsuitable today?",
+      "Would a private, non-fasting, well-rested, no-flame, no-water-visit and material-free form be safer?"
+    ],
+    "context_pairs": [
+      {"region_code": "north-india", "tradition_code": "smarta-north-india", "observance_slug": "vijaya-ekadashi"},
+      {"region_code": "west-india", "tradition_code": "smarta-west-india", "observance_slug": "vijaya-ekadashi"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "vijaya-ekadashi", "language_code": "en", "note": "This is the ordinary North/West Smarta Vijaya household lane. The formal Dashami-to-Dvadashi pitcher, seven-grain, golden-image, vigil, river and recipient-specific gift sequence is a source rite, not a universal minimum. Puri Sri Lokanath Pankoddhar is a separate Shaiva institution event, not a minor Odia wording difference."},
+      {"observance_slug": "vijaya-ekadashi", "language_code": "hi", "note": "यह सामान्य उत्तर/पश्चिम स्मार्त विजया गृह-मार्ग है। दशमी से द्वादशी का कलश, सात अनाज, स्वर्ण-प्रतिमा, जागरण, नदी और खास प्राप्तकर्ता वाला क्रम स्रोत-विधि है—सार्वभौम न्यूनतम नहीं। पुरी श्री लोकनाथ का पंकोद्धार अलग शैव संस्थागत आयोजन है, केवल ओड़िया नाम-अंतर नहीं।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-vijaya-2027", "devam-ekadashi-rule-audit"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "vijaya-phalguna-krishna-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "vijaya-nonfast-rested-no-water-visit-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North-reference, Mumbai, Bihar, Haryana, Tamil and ISKCON fixtures place ordinary Vijaya Ekadashi on Thursday 4 March 2027. Resolve the user's Indian city and accepted authority. Never copy displayed tithi or parana times, this date, or a named temple schedule into another city or year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-vijaya-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 44: Vijya Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Rama-Bakadalbhya account, formal pitcher rite and attributed victory/results; source facts rather than universal instructions or guarantees",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365621.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Uttara Khanda chapter 44", "reviewed_lines": "54-77", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "drik-vijaya-2027",
+      "title": "2027 Vijaya Ekadashi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian calendar discovery evidence for ordinary Vijaya on 4 March 2027; no portable parana or generic ritual authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/ekadashis/vijaya/vijaya-ekadashi-date-time.html?year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-03-04", "identity": "Phalguna Krishna Vijaya Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "odisha-endowment-lokanath",
+      "title": "Lokanath temple",
+      "publisher": "Odisha Hindu Religious Endowment Commission",
+      "source_role": "authoritative evidence that Pankoddhar is a materially separate annual Sri Lokanath Shaiva institution event",
+      "rights_lane": "citation_only",
+      "url": "https://hinduendowments.odisha.gov.in/temples/lokanatha-temple/",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "About", "claim": "sanctum water removal and annual linga visibility on Pankoddhar Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "dghs-unintentional-injury-strategy",
+      "title": "National Strategy for Prevention of Unintentional Injury",
+      "publisher": "Directorate General of Health Services, Ministry of Health and Family Welfare",
+      "source_role": "child water supervision and drowning-prevention boundary",
+      "rights_lane": "citation_only",
+      "url": "https://dghs.mohfw.gov.in/uploads/assets/TAaOO7nsx9I0v978vY8cWde6cO0NJBCWEE9s5DcD.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Drowning prevention", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "Fasting and Feasting in T1DM", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"}
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu/Rama remembrance scaffold and family/sampradaya boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"paths": ["knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json", "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"]}
+    },
+    {
+      "source_id": "devam-vijaya-research",
+      "title": "Vijaya Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of survivor-sensitive story, lawful preparation, no-guarantee framing, water safety, affordable giving, Pankoddhar separation and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/vijaya-ekadashi-north-west-smarta-household-2027-v1.md"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["vijaya-ekadashi"],
+      "title": "Vijaya Ekadashi: courage, preparation and a lawful next step",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Vijaya Ekadashi today. A complete home form is non-fasting and well-rested: remember Vishnu or Rama, hear the Padma-Purana-labelled account, name one legitimate obstacle without calling a person an enemy, choose one lawful next step and one safety check, then close with gratitude. A new vessel, seven grains, gold image, vigil, river visit, immersion, gift or temple attendance is not required.",
+      "significance": {
+        "text": "The reviewed Padma Purana chapter places Rama before an apparently impassable ocean and narrates his seeking counsel before action. It attributes the crossing and victory to a detailed Vijaya vow. Devam preserves that claim as textual theology, not a guaranteed method. A bounded present-day meaning is courage with preparation: seek sound advice, protect affected people and take one lawful, proportionate step without turning another human being into an enemy.",
+        "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"],
+        "scope_note": "Source-labelled meaning and ethical reflection; not military, legal, medical, financial or success prediction."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "vijaya-rama-bakadalbhya-en",
+          "title": "Rama seeks Bakadalbhya's counsel in the Padma Purana",
+          "summary": "In Uttara Khanda chapter 44, Yudhishthira asks Krishna about Phalguna Krishna Ekadashi. Krishna reports a Brahma-Narada narration. After Sita's abduction, Jatayu's death, Rama's alliance with Sugriva and Hanuman's return from Lanka, Rama asks how the army can cross the ocean. Lakshmana directs him to the sage Bakadalbhya. The sage prescribes Vijaya: a Dashami pitcher with water, sprouts, seven grains, barley and a golden Narayana image; Ekadashi worship, stories, lamp and vigil; then a Dvadashi river-side act and recipient-specific gift. The chapter says Rama followed it, crossed, recovered Sita and defeated Ravana, and it promises victory and other results. Sita's abduction is violence against her and never her fault. War, killing, conquest, expensive materials, vigil, water placement, recipient hierarchy and promised victory are source facts—not ordinary consumer instructions or guaranteed outcomes.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 44",
+          "source_ids": ["padma-purana-vijaya-deshpande"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {"practice_id": "vijaya-en-ordinary-remembrance", "population_scope": "Ordinary North/West Smarta household or individual after local date resolution", "description": "Remember Vishnu or Rama, hear the bounded source account, choose one lawful next step and close safely. A non-fasting, material-free form is complete.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"], "instructional": false},
+        {"practice_id": "vijaya-en-formal-textual-rite-context", "population_scope": "Families or institutions with an inherited or authorised formal practice", "description": "Some inherited or authorised practice may use a pitcher, grains, image, lamp, vigil, parana or formal gift. Follow only the responsible family, priest, temple or sampradaya authority; this guide does not reconstruct it.", "source_ids": ["padma-purana-vijaya-deshpande"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "vijaya-en-minimum-v1", "label": "Prepared, lawful next step", "tier": "minimum", "setting": "individual", "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution", "form": "accessible_short", "estimated_minutes": 12, "source_ids": ["padma-purana-vijaya-deshpande", "drik-vijaya-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-vijaya-research"],
+          "materials": [
+            {"item": "A safe, quiet place", "required": true, "substitutions": ["Remain safely where you are", "Use the shortest mental form"], "source_ids": ["devam-vijaya-research"]},
+            {"item": "A safe way to record one action", "required": false, "substitutions": ["Remember it", "Complete it directly"], "source_ids": ["devam-vijaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm that your city and accepted ordinary Smarta authority identify today as Vijaya Ekadashi. Do not calculate the date or parana from this story.", "why": "Tithi and authority are deterministic and local.", "source_ids": ["drik-vijaya-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose normal food, water, medicine and sleep as needed. Do not begin a fast or vigil from this guide.", "why": "The non-fasting and rested route is complete.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Remember Vishnu or Rama with a familiar name, short family prayer or silence.", "why": "Devotion does not require an invented universal mantra.", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 44. State that Sita's abduction is violence against her and that the formal rite and promised victory are textual claims.", "why": "The source remains visible without victim-blame or false certainty.", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Name one legitimate obstacle without naming a person an enemy. Ask what evidence, permission, skill or support is missing.", "why": "Preparation replaces domination and magical certainty.", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 6, "instruction": "Choose one lawful, proportionate next step and one safety check: seek qualified advice, gather a document, request support, pause an unsafe action or use an authorised grievance or emergency route.", "why": "The action stays within your responsibility.", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 7, "instruction": "Close with gratitude and carry out only the safe action. Do not claim that ritual guarantees victory, recovery, profit, reconciliation or another result.", "why": "Accountability and uncertainty govern the close.", "source_ids": ["devam-vijaya-research"], "optional": false}
+          ],
+          "closing": {"text": "Close with gratitude, eat, hydrate, take medicine and rest normally, then complete only the lawful action within your control. This route starts no fast, vigil, immersion or parana.", "source_ids": ["devam-vijaya-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "An inherited vrata/parana remains with the responsible authority and clinical guidance where needed."}
+        },
+        {
+          "procedure_id": "vijaya-en-standard-v1", "label": "Family remembrance and preparation", "tier": "standard", "setting": "family_led", "authority_scope": "family-led ordinary remembrance; no priest-led or formal textual rite", "form": "traditional_household", "estimated_minutes": 25, "source_ids": ["padma-purana-vijaya-deshpande", "drik-vijaya-2027", "devam-ekadashi-recurring-scaffold", "dghs-unintentional-injury-strategy", "icmr-type1-diabetes-fasting", "devam-vijaya-research"],
+          "materials": [
+            {"item": "Optional existing Vishnu or Rama image, text or clean vessel", "required": false, "substitutions": ["No image or vessel", "A flower", "Silence"], "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"]},
+            {"item": "Paper for a shared plan", "required": false, "substitutions": ["A verbal plan", "Private individual actions"], "source_ids": ["devam-vijaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the date and ask who wishes to join. Obtain consent before mentioning abduction, violence, war, workplace conflict, water danger or unsafe relationships; give children a non-graphic summary.", "why": "Sensitive participation is voluntary.", "source_ids": ["drik-vijaya-2027", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Begin with familiar Vishnu or Rama remembrance or silence. Keep any optional vessel at home; do not buy precious metal or prepare seven grains as a universal requirement.", "why": "Ordinary devotion is materially accessible.", "source_ids": ["devam-ekadashi-recurring-scaffold", "padma-purana-vijaya-deshpande"], "optional": false},
+            {"ordinal": 3, "instruction": "Hear the source-labelled account and distinguish counsel, preparation and protected action from war, conquest, guaranteed success and the formal rite.", "why": "Textual facts do not become generic instructions.", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Each willing person chooses one safe action within their role. Do not pressure disclosure, forgiveness, reconciliation, spending, fasting, a river trip or contact with an unsafe authority.", "why": "Consent and safeguarding remain in force.", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Close before fatigue. Extinguish every flame, keep reusable materials at home, provide food, water, medicine and safe transport, and protect private notes.", "why": "The close prevents foreseeable harm.", "source_ids": ["dghs-unintentional-injury-strategy", "icmr-type1-diabetes-fasting", "devam-vijaya-research"], "optional": false}
+          ],
+          "closing": {"text": "Offer gratitude in the family's familiar way and move to a consent-safe, lawful action. No one owes a fast, vigil, gift, disclosure, forgiveness or predicted success.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"], "scope_note": "Do not use this guide to calculate parana, settle a dispute or certify a plan."}
+        },
+        {
+          "procedure_id": "vijaya-en-elaborate-v1", "label": "Ordinary verified temple visit", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "ordinary visitor conduct at a named institution with current verified programme", "form": "institutional_participation", "estimated_minutes": 45, "source_ids": ["padma-purana-vijaya-deshpande", "dghs-unintentional-injury-strategy", "devam-vijaya-research"],
+          "materials": [{"item": "Verified current temple information and safe travel plan", "required": true, "substitutions": ["Stay home and use the complete minimum route"], "source_ids": ["devam-vijaya-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the named temple's current Vijaya programme, access, crowd conditions, offerings and return transport directly. Do not infer a schedule from a calendar card.", "why": "Live institutions control their own programmes.", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Attend only as an ordinary visitor. Do not imitate a priest-led pitcher rite, fast, vigil, parana, river act or gift hierarchy from this guide.", "why": "Formal authority is separate.", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Do not enter water, approach an unsafe edge, leave a child unsupervised, consume unknown sanctum water or abandon any material. Leave if crowding, coercion, fatigue or access is unsafe.", "why": "Devotion does not override drowning, health or safeguarding risk.", "source_ids": ["dghs-unintentional-injury-strategy", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Return safely, rest and complete one private lawful action without claiming victory or another guaranteed result.", "why": "The household meaning remains bounded.", "source_ids": ["devam-vijaya-research"], "optional": false}
+          ],
+          "closing": {"text": "Follow the institution's ordinary visitor exit and close. If current information or safe conditions cannot be verified, stay home; the non-fasting, no-water-visit route is complete.", "source_ids": ["devam-vijaya-research"], "scope_note": "Only the institution controls its liturgy; no institution can waive health, consent, environmental law or safety."}
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-material-and-household-form", "scope": "Minor household expression", "difference": "Language, ordinary flower/fruit, safe vessel/no vessel, image/no image, familiar prayer/silence and family style do not change the core action.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"], "separate_lane_required": false},
+        {"variant_id": "formal-pitcher-grain-vigil-river-gift-rite", "scope": "Formal inherited or authorised rite", "difference": "Dashami preparation, seven grains, image, vigil, water-side action, parana and recipient authority materially change ordered action, cost and safety.", "source_ids": ["padma-purana-vijaya-deshpande"], "separate_lane_required": true},
+        {"variant_id": "gauna-or-vaishnava-authority", "scope": "Different date or parana authority", "difference": "A materially different date, food rule or parana is not merged with ordinary Smarta timing.", "source_ids": ["drik-vijaya-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "pankoddhar-sri-lokanath-puri", "scope": "Odisha Shaiva institution event", "difference": "Sanctum water removal and annual Sri Lokanath darshan require the temple's live authority and are not a regional household alias.", "source_ids": ["odisha-endowment-lokanath", "devam-vijaya-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme", "scope": "Institution-specific liturgy", "difference": "Live schedule, crowd, priest-led acts, access and offerings require the named institution.", "source_ids": ["devam-vijaya-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi", "scope": "Another Ekadashi identity", "difference": "Amalaki, Papamochani and other named Ekadashis have different timing, story or practice evidence.", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "A non-fasting, well-rested, no-flame, no-water-visit, no-purchase, image-free and material-free form is complete.",
+        "Sita's abduction is violence against her. It is never her fault, a romance, a test of purity or a reason to demand survivor disclosure, forgiveness or reconciliation.",
+        "War, killing and conquest are story events, not instructions to identify a human enemy, retaliate, dominate, harass or bypass law.",
+        "The pitcher, sprouts, seven grains, barley, golden image, lamp, vigil, river act and recipient-specific gift are a formal textual sequence, not universal household steps.",
+        "Do not enter a river, stream, sea, pond, ghat or sanctum; do not lean over an unsafe edge; supervise children continuously around water; and do not immerse or abandon any material.",
+        "No overnight lamp or vigil is required. Use daylight, an electric light or none; supervise and fully extinguish any flame; stop before fatigue.",
+        "Do not begin or intensify fasting here. Never change insulin, medicines, meals or hydration; use qualified clinical advice for an inherited fast.",
+        "Giving is voluntary, affordable, useful and consent-based. It must not cause debt or depend on caste, gender, purity, reciprocal blessing or ritual access.",
+        "Legal, medical, financial, workplace, relationship and safety decisions require qualified evidence and lawful routes. Ritual does not certify a strategy.",
+        "No victory, recovery, release, profit, exam result, legal outcome, relationship outcome, heaven, merit, absolution or other result is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["vijaya-ekadashi"],
+      "title": "विजया एकादशी: साहस, तैयारी और वैध अगला कदम",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज विजया एकादशी है। घर का पूर्ण रूप बिना उपवास और विश्रामयुक्त है—विष्णु या राम का स्मरण, पद्म-पुराण नाम वाली कथा, किसी व्यक्ति को शत्रु कहे बिना एक वास्तविक बाधा, एक वैध अगला कदम और एक सुरक्षा-जाँच चुनकर कृतज्ञता से समापन करें। नया कलश, सात अनाज, स्वर्ण-प्रतिमा, जागरण, नदी-यात्रा, विसर्जन, दान या मंदिर जाना अनिवार्य नहीं।",
+      "significance": {"text": "समीक्षित पद्म पुराण अध्याय राम को कठिन समुद्र के सामने कार्य से पहले सलाह लेते दिखाता और विस्तृत विजया-व्रत से पारगमन/विजय जोड़ता है। देवम इसे ग्रंथ का धार्मिक दावा मानता है, निश्चित उपाय नहीं। सीमित वर्तमान अर्थ है—तैयारी सहित साहस: उचित सलाह, प्रभावित लोगों की रक्षा और किसी मनुष्य को शत्रु बनाए बिना एक वैध, अनुपातपूर्ण कदम।", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "scope_note": "स्रोत-नाम वाला अर्थ; सैन्य, कानूनी, चिकित्सकीय, आर्थिक या सफलता-भविष्यवाणी नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "vijaya-rama-bakadalbhya-hi", "title": "पद्म पुराण में राम और बकदाल्भ्य की कथा", "summary": "उत्तर खंड अध्याय 44 में युधिष्ठिर कृष्ण से फाल्गुन कृष्ण एकादशी पूछते हैं। कृष्ण ब्रह्मा-नारद संवाद में राम की कथा कहते हैं। सीता के अपहरण, जटायु की मृत्यु, सुग्रीव से मैत्री और हनुमान के लंका से लौटने के बाद राम समुद्र पार करने का उपाय पूछते हैं। लक्ष्मण उन्हें ऋषि बकदाल्भ्य के पास भेजते हैं। ऋषि दशमी के जल/अंकुर भरे कलश, सात अनाज, जौ और स्वर्ण नारायण प्रतिमा; एकादशी की पूजा, कथा, दीप और जागरण; तथा द्वादशी की नदी-किनारे क्रिया और खास दान वाला विजया-व्रत बताते हैं। अध्याय राम के पालन, पारगमन, सीता की वापसी और रावण पर विजय के साथ विजय आदि फल जोड़ता है। सीता का अपहरण उनके विरुद्ध हिंसा है, उनका दोष नहीं। युद्ध, वध, विजय, महँगी सामग्री, जागरण, जल-क्रिया, प्राप्तकर्ता-क्रम और निश्चित फल स्रोत-तथ्य हैं—सामान्य उपभोक्ता-निर्देश या गारंटी नहीं।", "tradition_scope": "पद्म पुराण उत्तर खंड अध्याय 44 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति", "source_ids": ["padma-purana-vijaya-deshpande"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "vijaya-hi-ordinary-remembrance", "population_scope": "स्थानीय तिथि-पुष्टि के बाद सामान्य उत्तर/पश्चिम स्मार्त गृह या व्यक्ति", "description": "विष्णु या राम स्मरण, सीमित स्रोत-कथा, एक वैध कदम और सुरक्षित समापन। बिना उपवास और सामग्री का रूप पूर्ण है।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"], "instructional": false},
+        {"practice_id": "vijaya-hi-formal-textual-rite-context", "population_scope": "विरासत या अधिकृत औपचारिक अभ्यास वाले परिवार या संस्थान", "description": "कुछ विरासत/अधिकृत मार्ग में कलश, अनाज, प्रतिमा, दीप, जागरण, पारण या औपचारिक दान हो सकते हैं। केवल जिम्मेदार परिवार, पुरोहित, मंदिर या सम्प्रदाय मानें; यह मार्ग पुनर्निर्माण नहीं करता।", "source_ids": ["padma-purana-vijaya-deshpande"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "vijaya-hi-minimum-v1", "label": "तैयार, वैध अगला कदम", "tier": "minimum", "setting": "individual", "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण", "form": "accessible_short", "estimated_minutes": 12, "source_ids": ["padma-purana-vijaya-deshpande", "drik-vijaya-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-vijaya-research"],
+          "materials": [
+            {"item": "सुरक्षित शांत स्थान", "required": true, "substitutions": ["जहाँ हैं वहीं सुरक्षित रहें", "सबसे छोटा मानसिक रूप"], "source_ids": ["devam-vijaya-research"]},
+            {"item": "एक काम सुरक्षित लिखने का साधन", "required": false, "substitutions": ["मन में रखें", "सीधे पूरा करें"], "source_ids": ["devam-vijaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "पुष्टि करें कि शहर और मान्य सामान्य स्मार्त प्राधिकार आज विजया एकादशी बताते हैं। कथा से तिथि या पारण न निकालें।", "why": "तिथि और प्राधिकार स्थानीय व नियत हैं।", "source_ids": ["drik-vijaya-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "जरूरत के अनुसार सामान्य भोजन, जल, दवा और नींद लें। इस मार्ग से उपवास या जागरण शुरू न करें।", "why": "बिना उपवास और विश्राम का रूप पूर्ण है।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "परिचित नाम, छोटी पारिवारिक प्रार्थना या मौन से विष्णु या राम का स्मरण करें।", "why": "भक्ति के लिए गढ़ा सार्वभौम मंत्र जरूरी नहीं।", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "छोटी कथा को स्पष्ट रूप से पद्म पुराण अध्याय 44 कहकर सुनें। कहें कि सीता का अपहरण उनके विरुद्ध हिंसा है और औपचारिक विधि/विजय ग्रंथ-दावे हैं।", "why": "स्रोत पीड़िता-दोष या झूठी निश्चितता बिना बचता है।", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "किसी व्यक्ति को शत्रु कहे बिना एक वास्तविक बाधा नामित करें। पूछें कौन-सा प्रमाण, अनुमति, कौशल या सहयोग चाहिए।", "why": "तैयारी प्रभुत्व और जादुई निश्चितता की जगह लेती है।", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 6, "instruction": "एक वैध अनुपातपूर्ण कदम और सुरक्षा-जाँच चुनें—योग्य सलाह, दस्तावेज, सहयोग, असुरक्षित काम रोकना या अधिकृत शिकायत/आपात मार्ग।", "why": "काम आपकी जिम्मेदारी में रहता है।", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 7, "instruction": "कृतज्ञता से समापन कर केवल सुरक्षित काम करें। अनुष्ठान से विजय, इलाज, लाभ, मेल-मिलाप या कोई फल निश्चित न कहें।", "why": "समापन में जवाबदेही और अनिश्चितता रहती है।", "source_ids": ["devam-vijaya-research"], "optional": false}
+          ],
+          "closing": {"text": "कृतज्ञता से समापन करें, सामान्य भोजन/जल/दवा/विश्राम लें और केवल अपने नियंत्रण का वैध काम करें। यह मार्ग उपवास, जागरण, विसर्जन या पारण शुरू नहीं करता।", "source_ids": ["devam-vijaya-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "विरासत व्रत/पारण जिम्मेदार प्राधिकार और जरूरत पर चिकित्सकीय मार्गदर्शन में है।"}
+        },
+        {
+          "procedure_id": "vijaya-hi-standard-v1", "label": "पारिवारिक स्मरण और तैयारी", "tier": "standard", "setting": "family_led", "authority_scope": "परिवार-नेतृत्व सामान्य स्मरण; पुरोहित या औपचारिक ग्रंथ-विधि नहीं", "form": "traditional_household", "estimated_minutes": 25, "source_ids": ["padma-purana-vijaya-deshpande", "drik-vijaya-2027", "devam-ekadashi-recurring-scaffold", "dghs-unintentional-injury-strategy", "icmr-type1-diabetes-fasting", "devam-vijaya-research"],
+          "materials": [
+            {"item": "वैकल्पिक मौजूदा विष्णु/राम चित्र, पाठ या साफ पात्र", "required": false, "substitutions": ["चित्र/पात्र नहीं", "फूल", "मौन"], "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"]},
+            {"item": "साझा योजना का कागज", "required": false, "substitutions": ["मौखिक योजना", "निजी काम"], "source_ids": ["devam-vijaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "तिथि तय कर पूछें कौन जुड़ना चाहता है। अपहरण, हिंसा, युद्ध, कामकाजी विवाद, जल-खतरा या असुरक्षित संबंध से पहले सहमति लें; बच्चों को गैर-विवरणात्मक सार दें।", "why": "संवेदनशील सहभागिता स्वैच्छिक है।", "source_ids": ["drik-vijaya-2027", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "परिचित विष्णु/राम स्मरण या मौन से शुरू करें। वैकल्पिक पात्र घर में रखें; बहुमूल्य धातु या सात अनाज को सार्वभौम आवश्यकता न बनाएँ।", "why": "सामान्य भक्ति सुलभ रहती है।", "source_ids": ["devam-ekadashi-recurring-scaffold", "padma-purana-vijaya-deshpande"], "optional": false},
+            {"ordinal": 3, "instruction": "स्रोत-नाम कथा सुनकर सलाह, तैयारी और सुरक्षित काम को युद्ध, विजय, निश्चित सफलता और औपचारिक विधि से अलग करें।", "why": "ग्रंथ-तथ्य सामान्य निर्देश नहीं बनते।", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "इच्छुक व्यक्ति अपनी भूमिका का सुरक्षित काम चुनें। खुलासा, क्षमा, मेल-मिलाप, खर्च, उपवास, नदी-यात्रा या असुरक्षित सत्ता से संपर्क का दबाव न दें।", "why": "सहमति और सुरक्षा लागू रहती है।", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "थकान से पहले बंद करें। हर लौ बुझाएँ, पुनः उपयोग सामग्री घर रखें, भोजन/जल/दवा/सुरक्षित यात्रा दें और निजी नोट बचाएँ।", "why": "समापन संभावित हानि रोकता है।", "source_ids": ["dghs-unintentional-injury-strategy", "icmr-type1-diabetes-fasting", "devam-vijaya-research"], "optional": false}
+          ],
+          "closing": {"text": "परिवार के परिचित ढंग से कृतज्ञता देकर सहमति-सुरक्षित वैध काम करें। कोई उपवास, जागरण, दान, खुलासा, क्षमा या निश्चित सफलता नहीं देता।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"], "scope_note": "इस मार्ग से पारण, विवाद-समापन या योजना का प्रमाणन न करें।"}
+        },
+        {
+          "procedure_id": "vijaya-hi-elaborate-v1", "label": "सत्यापित सामान्य मंदिर-यात्रा", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "वर्तमान सत्यापित कार्यक्रम वाले नामित संस्थान में सामान्य आगंतुक", "form": "institutional_participation", "estimated_minutes": 45, "source_ids": ["padma-purana-vijaya-deshpande", "dghs-unintentional-injury-strategy", "devam-vijaya-research"],
+          "materials": [{"item": "सत्यापित मंदिर-सूचना और सुरक्षित यात्रा-योजना", "required": true, "substitutions": ["घर रहकर पूर्ण न्यूनतम रूप करें"], "source_ids": ["devam-vijaya-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "नामित मंदिर से वर्तमान विजया कार्यक्रम, प्रवेश, भीड़, चढ़ावा और लौटने का साधन सत्यापित करें। कैलेंडर कार्ड से समय न गढ़ें।", "why": "जीवित संस्थान अपना कार्यक्रम नियंत्रित करते हैं।", "source_ids": ["devam-vijaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित कलश-विधि, उपवास, जागरण, पारण, नदी-क्रिया या दान-क्रम की नकल न करें।", "why": "औपचारिक प्राधिकार अलग है।", "source_ids": ["padma-purana-vijaya-deshpande", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "जल में न उतरें, असुरक्षित किनारे न जाएँ, बच्चे को अकेला न छोड़ें, अज्ञात गर्भगृह-जल न पिएँ और सामग्री न छोड़ें। भीड़, दबाव, थकान या प्रवेश असुरक्षित हो तो निकलें।", "why": "भक्ति जल, स्वास्थ्य या सुरक्षा-जोखिम नहीं हटाती।", "source_ids": ["dghs-unintentional-injury-strategy", "devam-vijaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "सुरक्षित लौटकर आराम करें और विजय या निश्चित फल कहे बिना एक निजी वैध काम करें।", "why": "गृह-अर्थ सीमित रहता है।", "source_ids": ["devam-vijaya-research"], "optional": false}
+          ],
+          "closing": {"text": "संस्था का सामान्य आगंतुक-निकास मानें। वर्तमान सूचना या सुरक्षित स्थिति सत्यापित न हो तो घर रहें; बिना उपवास और जल-यात्रा का रूप पूर्ण है।", "source_ids": ["devam-vijaya-research"], "scope_note": "संस्था अपनी विधि नियंत्रित करती है; कोई संस्था स्वास्थ्य, सहमति, पर्यावरण-कानून या सुरक्षा नहीं हटाती।"}
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-material-and-household-form-hi", "scope": "छोटा गृह-अंतर", "difference": "भाषा, सामान्य फूल/फल, सुरक्षित पात्र/नहीं, चित्र/नहीं, परिचित प्रार्थना/मौन और परिवार-शैली मूल काम नहीं बदलते।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-vijaya-research"], "separate_lane_required": false},
+        {"variant_id": "formal-pitcher-grain-vigil-river-gift-rite-hi", "scope": "औपचारिक विरासत या अधिकृत विधि", "difference": "दशमी तैयारी, सात अनाज, प्रतिमा, जागरण, जल-क्रिया, पारण और प्राप्तकर्ता-प्राधिकार क्रम, लागत व सुरक्षा बदलते हैं।", "source_ids": ["padma-purana-vijaya-deshpande"], "separate_lane_required": true},
+        {"variant_id": "gauna-or-vaishnava-authority-hi", "scope": "अलग तिथि या पारण प्राधिकार", "difference": "भिन्न तिथि, भोजन-नियम या पारण को सामान्य स्मार्त समय में नहीं मिलाते।", "source_ids": ["drik-vijaya-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "pankoddhar-sri-lokanath-puri-hi", "scope": "ओडिशा शैव संस्थागत आयोजन", "difference": "गर्भगृह जल-निकासी और वार्षिक श्री लोकनाथ दर्शन मंदिर का जीवित प्राधिकार चाहते हैं; यह क्षेत्रीय गृह-उपनाम नहीं।", "source_ids": ["odisha-endowment-lokanath", "devam-vijaya-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme-hi", "scope": "संस्थान-विशिष्ट विधि", "difference": "जीवित समय, भीड़, पुरोहित-कर्म, प्रवेश और चढ़ावे नामित संस्थान के अधीन हैं।", "source_ids": ["devam-vijaya-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi-hi", "scope": "अन्य एकादशी पहचान", "difference": "आमलकी, पापमोचनी और अन्य एकादशियों की तिथि, कथा या अभ्यास अलग है।", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "बिना उपवास, विश्रामयुक्त, बिना लौ, जल-यात्रा, खरीद, चित्र और सामग्री का रूप पूर्ण है।",
+        "सीता का अपहरण उनके विरुद्ध हिंसा है। यह उनका दोष, प्रेम-कथा, शुद्धता-परीक्षा या पीड़ित से खुलासा, क्षमा या मेल-मिलाप माँगने का कारण नहीं।",
+        "युद्ध, वध और विजय कथा-घटनाएँ हैं—किसी मनुष्य को शत्रु कहना, बदला, प्रभुत्व, उत्पीड़न या कानून तोड़ना निर्देश नहीं।",
+        "कलश, अंकुर, सात अनाज, जौ, स्वर्ण-प्रतिमा, दीप, जागरण, नदी-क्रिया और खास दान औपचारिक ग्रंथ-क्रम हैं, सार्वभौम गृह-कदम नहीं।",
+        "नदी, नाला, समुद्र, तालाब, घाट या गर्भगृह-जल में न उतरें; असुरक्षित किनारे न झुकें; जल के पास बच्चों की लगातार निगरानी करें; कोई सामग्री विसर्जित या परित्यक्त न करें।",
+        "रातभर दीप या जागरण जरूरी नहीं। दिन का प्रकाश, बिजली की रोशनी या कुछ नहीं पूर्ण है; लौ की निगरानी कर पूरी बुझाएँ; थकान से पहले रुकें।",
+        "यहाँ उपवास शुरू या कड़ा न करें। इंसुलिन, दवा, भोजन या जल न बदलें; विरासत उपवास के लिए योग्य चिकित्सकीय सलाह लें।",
+        "दान स्वैच्छिक, सस्ता, उपयोगी और सहमति-आधारित हो; कर्ज न कराए और जाति, लिंग, शुद्धता, आशीर्वाद या अनुष्ठान-प्रवेश पर निर्भर न हो।",
+        "कानूनी, चिकित्सकीय, आर्थिक, कामकाजी, संबंध और सुरक्षा निर्णय योग्य प्रमाण और वैध मार्ग चाहते हैं। अनुष्ठान योजना प्रमाणित नहीं करता।",
+        "विजय, इलाज, मुक्ति, लाभ, परीक्षा, मुकदमा, संबंध, स्वर्ग, पुण्य, पाप-मुक्ति या कोई फल निश्चित नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

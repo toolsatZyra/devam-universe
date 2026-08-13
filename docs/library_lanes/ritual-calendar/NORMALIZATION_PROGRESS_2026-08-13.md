@@ -306,3 +306,24 @@ Exact accepted-authoring coverage is now **20 completed after freeze / 188
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The twenty-first post-freeze item is complete at the bilingual authored-library
+layer: `vijaya-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
+reviewed ordinary Smarta fixture of 4 March 2027 and gives a non-fasting,
+well-rested, no-flame, no-water-visit household route centred on source-labelled
+Rama/Bakadalbhya context, preparation and one lawful next step. Sita's abduction,
+war, killing, conquest, the detailed pitcher/grain/golden-image/vigil/river/gift
+rite and promised victory remain textual facts—not survivor blame, generic
+strategy, universal steps or guarantees. Minor language, ordinary material and
+household differences stay inside the lane.
+
+Authoritative Odisha evidence also reopens the former `Pankoddhar Ekadashi`
+alias disposition: Sri Lokanath Temple's annual sanctum-water-removal and
+linga-darshan event is a materially separate Shaiva institution route, not a
+minor Odia name variant. It has an unresolved typed owner/denominator-correction
+proposal and is not counted as complete here.
+
+Exact accepted-authoring coverage is now **21 completed after freeze / 187
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

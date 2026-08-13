@@ -1,6 +1,7 @@
 # Vijaya Ekadashi ordinary North/West Smarta household research (2027)
 
-Status: reviewed research checkpoint; named item not yet counted.
+Status: reviewed source and completion record; named ordinary Vijaya item counted
+once after bilingual pack validation.
 
 ## Selected applicability lane
 
@@ -173,11 +174,22 @@ sprouts, betel, coconut, incense, flame, overnight vigil, river trip or gift.
   Ekadashi packs (frozen identity, current alias disposition, non-fasting
   scaffold and family/sampradaya boundary).
 
-## Remaining completion gate
+## Completion and adversarial-review gate
 
-This item remains uncounted until a bilingual pack passes schema/source closure,
-English/Hindi procedure parity, 4-March timing, non-fasting/no-vigil/no-water-
-immersion completeness, nonviolent and non-guaranteed “victory” framing,
-Sita/survivor sensitivity, affordable consent-based giving, safe closing, and
-explicit Pankoddhar separation. Research is not authored, projected, hosted,
+The bilingual pack passed the shared schema, source closure, English/Hindi
+procedure-shape parity, strict UTF-8, 4-March timing and explicit Pankoddhar
+separation checks. The ordinary minimum is non-fasting, rested, material-free,
+no-flame and no-water-visit. The detailed pitcher/grain/golden-image/vigil/
+river/gift sequence remains labelled as a formal textual rite rather than a
+universal household vidhi.
+
+Adversarial review must continue to reject survivor blame, a human “enemy,”
+retaliation, unsafe water entry or immersion, child water access, overnight
+lamp/vigil, coerced or debt-causing gifts, ritual replacement of qualified
+advice, and any guaranteed victory or result. Minor household expression stays
+inside the lane; only materially different authority, ordered action, place or
+safety routes separately. The named ordinary Vijaya item is counted once at the
+authored-library layer. The newly evidenced Pankoddhar institution route remains
+an unresolved denominator-correction/owner proposal and is not silently counted
+as completed. Nothing here is projected across 19,480 day cells, hosted,
 independently released or published.

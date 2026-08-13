@@ -1,0 +1,31 @@
+{
+  "contract": "DEVAM_RITUAL_CALENDAR_DENOMINATOR_CORRECTION_CANDIDATES_V1",
+  "version": 1,
+  "created_at": "2026-08-13",
+  "frozen_denominator_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-normalized-denominator-v4.json",
+  "frozen_accepted_authoring_denominator": 208,
+  "status": "open_corrections_require_reviewed_successor_freeze",
+  "correction_candidates": [
+    {
+      "correction_id": "pankoddhar-sri-lokanath-puri-material-institution-lane-v1",
+      "source_label": "Pankoddhar Ekadashi",
+      "prior_disposition_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-candidate-disposition-ekadashi-v1.json",
+      "prior_disposition": "alias_of_accepted_lane:ekadashi-vijaya",
+      "evidence_result": "prior_alias_assumption_contradicted",
+      "material_difference": "The Odisha Hindu Religious Endowment Commission describes a place-bound Shaiva event at Sri Lokanath Temple, Puri: annual sanctum-water removal and linga visibility before Mahashivaratri. Deity, institution, setting, ordered action, live schedule, water/health safeguards and authority differ materially from the ordinary Vijaya household lane.",
+      "proposed_applicability_lane_id": "pankoddhar-sri-lokanath-puri-institution-participant-v1",
+      "proposed_count_effect_if_accepted": 1,
+      "current_count_effect": 0,
+      "status": "evidence_confirmed_pending_successor_denominator_freeze_and_institution_research",
+      "official_evidence": {
+        "publisher": "Odisha Hindu Religious Endowment Commission",
+        "url": "https://hinduendowments.odisha.gov.in/temples/lokanatha-temple/",
+        "checked": "2026-08-13"
+      },
+      "owner_proposal_ref": "knowledge_packs/library_lanes/ritual-calendar/cross-links/vijaya-story-and-pankoddhar-owner-proposals-v1.json",
+      "safety_boundary": "Do not reproduce sanctum water removal at home, advise entry into water, consumption of unknown sanctum water or decomposed offerings, or infer a current temple schedule.",
+      "not_completed_by_lane_ids": ["vijaya-ekadashi-north-west-smarta-household-2027-v1"]
+    }
+  ],
+  "count_note": "The active frozen authoring denominator remains 208 until a reviewed successor denominator is repository-frozen. This file prevents the evidence-confirmed Pankoddhar material lane from being silently lost or falsely counted under ordinary Vijaya."
+}
