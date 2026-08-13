@@ -552,3 +552,22 @@ Exact accepted-authoring coverage is now **116 completed after freeze / 92
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first regional lunar-phase batch checkpoint
+
+Thirteen remaining accepted full-/new-moon regional labels are complete as
+bilingual lanes. Shared public-domain Soma and Nachiketa narrative spines avoid
+thirteen invented origin myths, while every pack retains its own regional
+calendar rule and material practice boundary.
+
+The batch preserves voluntary silence for Mauni; consent and crowd safety for
+Dol; Chitragupta surveillance boundaries; spouse dignity for Savitri; repeated
+Monday-new-moon resolution for Somavati; named-owner routing for Gamha and
+Madana; motherhood/child and Matrika/Yogini boundaries for Pithori; distinct
+Tamil/Odia ancestor routes; and Sharad milk, moonlight and sleep safety.
+Cosmetic language and state expression do not create variants.
+
+Exact accepted-authoring coverage is now **129 completed after freeze / 79
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
