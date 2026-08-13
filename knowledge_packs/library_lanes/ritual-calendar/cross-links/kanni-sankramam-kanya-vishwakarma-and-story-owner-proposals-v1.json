@@ -1,0 +1,139 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "kanni-sankramam-kanya-vishwakarma-and-story-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "kanni-to-reviewed-kanya-calendar-route",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kanni-sankramam-kerala-malayalam-solar-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/kanya-sankranti-north-west-shared-household-2027-v1"
+      },
+      "relationship_family": "time",
+      "predicate": "shares_solar_ingress_family_with_distinct_calendar_authority",
+      "directionality": "bidirectional",
+      "consumer_label": {
+        "en": "Kanni and Kanya share a solar-ingress family but use distinct calendar authority",
+        "hi": "कन्नि और कन्या एक सौर-प्रवेश family साझा करते हैं पर calendar authority अलग है"
+      },
+      "scope": {
+        "statement": "The reviewed lanes share a material-free solar-transition, story and safety core. Malayalam Kanni and North/shared Kanya retain distinct regional naming and accepted calendar/date authority even when a sampled civil date matches.",
+        "geography_codes": [
+          "IN-KL",
+          "IN"
+        ],
+        "tradition_codes": [
+          "malayalam-solar",
+          "north-or-shared-solar-household"
+        ],
+        "time_scope": "Locally resolved sidereal Chingam/Simha-to-Kanni/Kanya ingress",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "ritual-calendar/kanya-sankranti-north-west-shared-household-2027-v1",
+          "claim_scope": "Reviewed reusable practice core and distinct applicability."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-kanni-research",
+          "claim_scope": "Malayalam timing authority must not be collapsed into North/shared Kanya."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kanni-to-existing-bengal-vishwakarma-workplace-lane",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kanni-sankramam-kerala-malayalam-solar-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual/vishwakarma-puja-bengal-workplace-content-v1"
+      },
+      "relationship_family": "practice",
+      "predicate": "may_share_date_with_distinct_workplace_practice",
+      "directionality": "bidirectional",
+      "consumer_label": {
+        "en": "Bengal Vishwakarma Puja is a separate workplace route",
+        "hi": "बंगाल विश्वकर्मा पूजा अलग workplace route है"
+      },
+      "scope": {
+        "statement": "A sampled calendar may show Vishwakarma Puja on the Kanni date, but Bengal workplace tools, machinery, organiser and shutdown/restart safety are not Kerala Kanni household practice.",
+        "geography_codes": [
+          "IN-KL",
+          "IN-WB"
+        ],
+        "tradition_codes": [
+          "malayalam-solar",
+          "regional-bengal-workplace"
+        ],
+        "time_scope": "Potential shared civil date only",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "ritual/vishwakarma-puja-bengal-workplace-content-v1",
+          "claim_scope": "Existing owner for materially distinct workplace practice."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-kanni-research",
+          "claim_scope": "Date overlap does not merge procedure."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "kanni-to-aditya-hridaya-story-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/kanni-sankramam-kerala-malayalam-solar-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/valmiki-ramayana-aditya-hridaya-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "uses_surya_story_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Agastya teaches Rama the Aditya Hridaya",
+        "hi": "अगस्त्य राम को आदित्य हृदय सिखाते हैं"
+      },
+      "scope": {
+        "statement": "The Kanni pack reuses Yuddha Kanda 6.107 as an optional complete Surya story, not as Kanni Sankramam's origin, a generic mantra instruction, real-person enemy metaphor or result guarantee.",
+        "geography_codes": [
+          "IN-KL"
+        ],
+        "tradition_codes": [
+          "malayalam-solar"
+        ],
+        "time_scope": null,
+        "source_expression_scope": "IIT Kanpur Valmiki Ramayan Sanskrit and translation, Yuddha Kanda 6.107"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "iitk-valmiki-aditya-hridaya:6.107.1-31",
+          "claim_scope": "Complete Agastya-Rama battlefield teaching and attributed results."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-kanni-research",
+          "claim_scope": "The ritual pack summarises but does not own or prescribe the epic chapter."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
