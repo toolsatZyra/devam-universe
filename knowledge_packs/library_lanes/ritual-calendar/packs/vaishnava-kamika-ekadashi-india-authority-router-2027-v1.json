@@ -1,0 +1,1107 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "vaishnava-kamika-ekadashi-india-authority-router-2027-v1",
+  "observance_slugs": [
+    "vaishnava-kamika-ekadashi"
+  ],
+  "applicability": {
+    "region_codes": [
+      "india",
+      "north-india",
+      "west-india",
+      "east-india",
+      "south-india",
+      "IN-WB",
+      "IN-BR",
+      "IN-CT",
+      "IN-KA",
+      "IN-TN",
+      "IN-KL",
+      "IN-MH",
+      "IN-OD",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "named-vaishnava-calendar-authority"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which named Vaishnava sampradaya, inherited family calendar or institution is your accepted authority?",
+      "Does that authority explicitly return Vaishnava Kamika for your Indian city, or are you looking only at a generic discovery label?",
+      "Are you asking about Vaishnava Kamika, ordinary Kamika, or the separately frozen same-date Gauna authority item?",
+      "Does your named authority provide a current fast, food and parana rule, or do you need the complete fed and material-free fallback?",
+      "Would Tulasi cure, lamp, vigil, caste, reproductive, Yama, ancestor or absolution language be distressing or unsafe?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "india",
+        "tradition_code": "named-vaishnava-calendar-authority",
+        "observance_slug": "vaishnava-kamika-ekadashi"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "vaishnava-kamika-ekadashi",
+        "language_code": "en",
+        "note": "Use only when a named Vaishnava sampradaya, family calendar or institution explicitly returns Vaishnava Kamika. The reviewed New Delhi ISKCON-profile fixture is Friday 30 July 2027; it does not prove every Vaishnava authority or merge same-date Gauna."
+      },
+      {
+        "observance_slug": "vaishnava-kamika-ekadashi",
+        "language_code": "hi",
+        "note": "केवल तब उपयोग करें जब नामित वैष्णव संप्रदाय, पारिवारिक पंचांग या संस्था स्पष्ट वैष्णव कामिका बताए। समीक्षित नई दिल्ली इस्कॉन-प्रोफाइल तिथि शुक्रवार 30 जुलाई 2027 है; यह हर वैष्णव प्राधिकार सिद्ध नहीं करती और उसी दिन की गौण वस्तु को नहीं मिलाती।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+      "iskcon-official-festival-lunar-calendar",
+      "iskcon-gbc-2001-vaishnava-calendar",
+      "iskcon-gbc-2013-gcal",
+      "devam-ekadashi-rule-audit"
+    ],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "vaishnava-kamika-named-sampradaya-family-or-institution-authority-v1",
+    "closing_decision_rule_id": "vaishnava-kamika-fed-material-free-router-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "A reviewed New Delhi ISKCON-profile fixture places Kamika on Friday 30 July 2027, after ordinary Kamika on 29 July and on the same discovery date as Gauna Kamika. This does not prove every Vaishnava authority. Resolve the named sampradaya, inherited family calendar or institution and city live; publish no portable date, tithi time, food rule or parana."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-kamika-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 54: Kamika Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed nested mahatmya dialogue, no developed story, Tulasi, lamp, vigil, pilgrimage and gift comparisons, caste and abortion language, attributed cure and results as source facts",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365631.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Uttara Khanda chapter 54",
+        "reviewed_lines": "54-76",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "padma-purana-devshayani-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 53: Devashayani Ekadashi",
+      "publisher": "N. A. Deshpande translation surfaced by Wisdomlib",
+      "source_role": "preceding chapter's two bright-half Kamika labels; source-expression tension only, not ordinary Kamika timing authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365630.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "reviewed_lines": "59 and 69",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+      "title": "2027 New Delhi ISKCON-profile Kamika discovery fixture",
+      "publisher": "DrikPanchang",
+      "source_role": "current location-specific 30 July discovery date and evidence that a published parana exists; the parana and food rules are deliberately not copied",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/iskcon/ekadashi/kamika/kamika-ekadashi-date-parana-time.html?geoname-id=1261481&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-07-30",
+        "location": "New Delhi",
+        "profile": "ISKCON",
+        "parana_not_copied": true,
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-mtp-act",
+      "title": "The Medical Termination of Pregnancy Act, 1971",
+      "publisher": "India Code, Government of India",
+      "source_role": "official current statutory and reproductive-privacy boundary; not case-specific medical or legal advice",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1593",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": "3-5A",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary and Vaishnava/Vaishnava Kamika identity and material authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu remembrance scaffold and family authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "devam-vaishnava-kamika-research",
+      "title": "Vaishnava Kamika India authority-router research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local named-authority, no-universal-Vaishnava-rule, reusable mahatmya, safe fallback and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/vaishnava-kamika-india-authority-router-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "iskcon-official-festival-lunar-calendar",
+      "title": "Festivals",
+      "publisher": "International Society for Krishna Consciousness",
+      "source_role": "official statement that Vaishnava festival dates use a lunar calendar and vary year to year",
+      "rights_lane": "citation_only",
+      "url": "https://iskcon.org/festival/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "section": "Celebrating Together",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "iskcon-gbc-2001-vaishnava-calendar",
+      "title": "2001 GBC Resolution 608: Vaisnava Calendar",
+      "publisher": "ISKCON Governing Body Commission",
+      "source_role": "official multi-calendar history, Gaudiya Math difference and Vaishnava Calendar Committee authority",
+      "rights_lane": "citation_only",
+      "url": "https://gbc.iskcon.org/2001/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "resolution": "608",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "iskcon-gbc-2013-gcal",
+      "title": "2013 GBC Resolution 313: Licensing GCal Software",
+      "publisher": "ISKCON Governing Body Commission",
+      "source_role": "official GCal committee, ownership and institutional calculation-system evidence",
+      "rights_lane": "citation_only",
+      "url": "https://gbc.iskcon.org/gbc_res/GBCRES13.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "resolution": "313",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "iskcon-bangalore-calendar-2026-2027",
+      "title": "Vaishnava Calendar 2026-2027",
+      "publisher": "ISKCON Bangalore",
+      "source_role": "official evidence that a named institution can select Dvadasi fasting and named closing labels; published range ends March 2027 and does not prove July",
+      "rights_lane": "citation_only",
+      "url": "https://www.iskconbangalore.org/vaishnava-calendar/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "published_range_end": "2027-03",
+        "july_2027_not_established": true,
+        "checked": "2026-08-13"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "vaishnava-kamika-ekadashi"
+      ],
+      "title": "Vaishnava Kamika: route to a named authority, not one national ritual",
+      "short_answer": "First name your Vaishnava sampradaya, inherited family calendar or institution and confirm that it explicitly returns Vaishnava Kamika for your city. A reviewed New Delhi ISKCON-profile fixture is Friday 30 July 2027, but it does not govern every Vaishnava or merge same-date Gauna. If authority is unknown, use the complete fed, rested and material-free fallback: Vishnu/Krishna remembrance, the bounded chapter-54 mahatmya with no developed origin story or generic Vaishnava calculation rule, optional modest care, and a normal close without fast, parana, vigil, lamp, Tulasi, disclosure, cure or absolution claims.",
+      "significance": {
+        "text": "Vaishnava Kamika changes the responsible sampradaya, family or institutional calendar authority. Official ISKCON/GBC evidence confirms named calendar governance and year-varying lunar dates, not one rule for all Vaishnavas. Padma Purana chapter 54 supplies the shared Kamika mahatmya but no ISKCON, Gaudiya, Sri Vaishnava, Madhva, Ramanandi, Vallabha, Swaminarayan or generic Vaishnava algorithm. Devam therefore routes formal practice to the named authority and keeps a complete safe fallback.",
+        "source_ids": [
+          "padma-purana-kamika-deshpande",
+          "iskcon-official-festival-lunar-calendar",
+          "iskcon-gbc-2001-vaishnava-calendar",
+          "iskcon-gbc-2013-gcal",
+          "devam-vaishnava-kamika-research"
+        ],
+        "scope_note": "Named-authority routing and bounded Kamika reflection; not a universal Vaishnava date, fast, food, mantra, parana, plant, fire or temple instruction."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "vaishnava-kamika-mahatmya-dialogue-en",
+          "title": "The shared Kamika mahatmya, not one Vaishnava origin or calendar story",
+          "summary": "Yudhishthira asks Krishna about Shravana Krishna Ekadashi. Krishna says Brahma once answered Narada's questions about its name, deity, manner and merit. Brahma names Kamika and praises Hari, Vishnu, Madhusudana and Krishna worship. He compares its merit with sacrifices, pilgrimage baths, land, cow, gold, silver and gems; praises an overnight vigil, Tulasi leaves, touching, planting and sprinkling; praises a day-and-night ghee or sesame-oil lamp; invokes Yama, ancestors, caste and birth; and says the vow removes even killing a Brahmana and a phrase translated as causing abortion. It promises salvation, Vishnu's world and sin removal. This is a mahatmya catalogue, not a developed character story. All cure, purity, caste, reproductive, fire, ancestor and guaranteed-result language remains source content, not Devam's instruction. The chapter gives no generic Vaishnava calendar algorithm or separate sampradaya story; the reviewed 30 July classification comes only from current calendar evidence.",
+          "tradition_scope": "Reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 54",
+          "source_ids": [
+            "padma-purana-kamika-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "vaishnava-kamika-en-safe-router",
+          "population_scope": "User whose named Vaishnava authority explicitly returns Vaishnava Kamika, or user needing the authority-unknown fallback",
+          "description": "Authority identification followed by fed and rested Vishnu/Krishna remembrance, bounded mahatmya, optional modest care and a normal material-free close.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "vaishnava-kamika-en-formal-context",
+          "population_scope": "Named sampradaya, inherited family or institution with a current verified calendar and practice rule",
+          "description": "Formal date, food, mantra, fasting and parana belong to that named authority and are not reconstructed by this router.",
+          "source_ids": [
+            "iskcon-gbc-2001-vaishnava-calendar",
+            "iskcon-gbc-2013-gcal",
+            "icmr-type1-diabetes-fasting",
+            "devam-vaishnava-kamika-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "vaishnava-kamika-en-minimum-v1",
+          "label": "Private Vaishnava-authority remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "named current Vaishnava sampradaya, inherited family or institution authority; otherwise complete fed material-free fallback only",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-kamika-deshpande",
+            "padma-purana-devshayani-deshpande",
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional private reminder",
+              "required": false,
+              "substitutions": [
+                "No writing",
+                "A mental care commitment"
+              ],
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ]
+            },
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Name the accepted Vaishnava sampradaya, inherited family calendar or institution and confirm that it explicitly returns Vaishnava Kamika for your city. The reviewed New Delhi ISKCON-profile fixture is 30 July 2027; do not generalise it or merge same-date Gauna.",
+              "why": "A named authority, city and current result determine applicability; Vaishnava is not one national calendar.",
+              "source_ids": [
+                "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+                "iskcon-official-festival-lunar-calendar",
+                "iskcon-gbc-2001-vaishnava-calendar",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, prescribed medicine, insulin, child feeding, hygiene and sleep. Begin no fast, food restriction, overnight vigil or parana from this guide.",
+              "why": "The fed, hydrated and rested Vaishnava route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu with a familiar name, family prayer or silence. No image, mantra, Tulasi, plant, leaf, lamp, oil, flame, offering or purchase is required.",
+              "why": "Devotion remains accessible without inventing a Vaishnava rite.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the chapter-54-labelled dialogue and state that it contains no developed origin story and no generic Vaishnava, ISKCON or sampradaya calculation rule.",
+              "why": "The fixed source remains recognisable without fabricating Vaishnava authority.",
+              "source_ids": [
+                "padma-purana-kamika-deshpande",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Name the chapter's Tulasi cure, touch, planting, lamp, vigil, pilgrimage, gifts, caste, abortion, Yama, ancestor and salvation language as source claims, not instructions or guarantees.",
+              "why": "Sensitive claims must remain source-labelled and bounded.",
+              "source_ids": [
+                "padma-purana-kamika-deshpande",
+                "india-code-mtp-act",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "If useful, choose one modest no-purchase care action already within your responsibility. Do not touch, water, buy or handle a plant from this guide.",
+              "why": "Modest care reflects the source comparison without creating a plant rite.",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with normal food, medicine and sleep. Publish or calculate no parana and claim no cure, purity, absolution, ancestor benefit, heaven, salvation or Vishnu's world.",
+              "why": "A bounded close preserves care and authority.",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal food, water, medicine and sleep. No fast, food rule, parana, vigil, lamp, Tulasi rite or donation begins here.",
+            "source_ids": [
+              "devam-vaishnava-kamika-research"
+            ],
+            "scope_note": "Ordinary, Vaishnava, medical, reproductive, botanical, fire and institutional routes remain separate."
+          }
+        },
+        {
+          "procedure_id": "vaishnava-kamika-en-standard-v1",
+          "label": "Consent-led family Vaishnava remembrance",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "named current Vaishnava sampradaya, inherited family or institution authority; otherwise complete fed material-free fallback only",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-kamika-deshpande",
+            "padma-purana-devshayani-deshpande",
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "materials": [
+            {
+              "item": "Optional existing Vishnu image or text",
+              "required": false,
+              "substitutions": [
+                "No image",
+                "A familiar name or silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "Optional private care reminder",
+              "required": false,
+              "substitutions": [
+                "No writing",
+                "No care action"
+              ],
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Name and verify the same Vaishnava authority for the city, then invite only willing participants. If authority is unknown or sources conflict, use the complete safe fallback.",
+              "why": "Timing and consent precede a family form.",
+              "source_ids": [
+                "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep meals, water, medicine, sleep and ordinary plant care unchanged. Use no fast, parana, vigil, flame, lamp, oil, Tulasi handling, pilgrimage or donation.",
+              "why": "The material-free route is complete.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Use familiar Vishnu remembrance and tell the bounded mahatmya without inventing a Vaishnava story. Omit caste slurs and reproductive inquiry; label cure, absolution and ancestor claims.",
+              "why": "The source remains recognisable without repeating harm as Devam's voice.",
+              "source_ids": [
+                "padma-purana-kamika-deshpande",
+                "india-code-mtp-act",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Each willing person may choose or decline one private modest-care action. Do not expose health history, compare merit, pressure spending or handle another person's plant.",
+              "why": "Care must preserve consent, ownership and privacy.",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Close normally. Keep ordinary Kamika, same-date Gauna, each formal sampradaya or institution, fast/parana and named temple programme separate.",
+              "why": "Materially different authority remains outside this pack.",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal food, water, medicine and sleep. No fast, food rule, parana, vigil, lamp, Tulasi rite or donation begins here.",
+            "source_ids": [
+              "devam-vaishnava-kamika-research"
+            ],
+            "scope_note": "Ordinary, Vaishnava, medical, reproductive, botanical, fire and institutional routes remain separate."
+          }
+        },
+        {
+          "procedure_id": "vaishnava-kamika-en-elaborate-v1",
+          "label": "Verified named-institution participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "named current Vaishnava sampradaya, inherited family or institution authority; otherwise complete fed material-free fallback only",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-kamika-deshpande",
+            "padma-purana-devshayani-deshpande",
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "materials": [
+            {
+              "item": "Verified current temple programme and safe access plan",
+              "required": false,
+              "substitutions": [
+                "Do not attend",
+                "Use the complete home form"
+              ],
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named institution's official current calendar and public programme, including access, food, plant, flame, photography, donation, crowd and safeguarding rules.",
+              "why": "A discovery label is not a live programme.",
+              "source_ids": [
+                "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Attend only if safe; keep normal food, water, medicine and sleep, and decline fasting, touch, plant handling, flame, disclosure, donation or private access.",
+              "why": "Institutional participation does not suspend care or consent.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Observe only the verified public programme. Do not copy its liturgy, food rule, parana, vigil, lamp, Tulasi or offering into household instructions.",
+              "why": "Institutional authority is not portable.",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Leave at any time and close at home with normal care. A remote or cancelled form is complete; claim no guaranteed result.",
+              "why": "A safe exit preserves the lane.",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with normal food, water, medicine and sleep. No fast, food rule, parana, vigil, lamp, Tulasi rite or donation begins here.",
+            "source_ids": [
+              "devam-vaishnava-kamika-research"
+            ],
+            "scope_note": "Ordinary, Vaishnava, medical, reproductive, botanical, fire and institutional routes remain separate."
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "vaishnava-minor-expression-en",
+          "scope": "Minor household expression",
+          "difference": "Language, familiar Vishnu/Krishna name, image/no-image, silence, dress and an optional private care reminder remain inside the router.",
+          "source_ids": [
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "ordinary-or-gauna-authority-en",
+          "scope": "Different timing authority",
+          "difference": "Ordinary and Gauna Kamika are separately frozen date/authority items.",
+          "source_ids": [
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-vaishnava-authority-en",
+          "scope": "Material sampradaya, family or institutional difference",
+          "difference": "Each authority whose date, eligibility, mantra, food, sequence or close differs needs its own verified route; ISKCON evidence is not universal Vaishnava evidence.",
+          "source_ids": [
+            "iskcon-gbc-2001-vaishnava-calendar",
+            "iskcon-gbc-2013-gcal",
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-fast-parana-en",
+          "scope": "Formal vrata",
+          "difference": "Any fast, food, parana, vigil, lamp or Tulasi procedure requires its named authority and safety review.",
+          "source_ids": [
+            "icmr-type1-diabetes-fasting",
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-or-temple-en",
+          "scope": "Professional care or named temple",
+          "difference": "Clinical fasting and live temple programmes remain separate routes.",
+          "source_ids": [
+            "icmr-type1-diabetes-fasting",
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "A complete authority-unknown Vaishnava fallback is non-fasting, fed, hydrated, rested, no-vigil, no-touch, no-flame, no-purchase, no-Tulasi, no-plant, no-leaf, no-disclosure, image-free, writing-free and material-free.",
+        "Do not select a Vaishnava date from a generic label, convenience, state, ethnicity, dress, surname, initiation claim or temple visit; named current authority is required.",
+        "Do not publish or calculate parana from this router, and do not extend ISKCON evidence to every Vaishnava community.",
+        "Do not pluck, touch, ingest, apply, sprinkle, plant, buy, water or distribute Tulasi from this guide; ritual does not diagnose or cure disease.",
+        "Do not stay awake overnight, drive or work while sleep-deprived, or light or leave an unattended lamp; introduce no ghee, sesame oil, smoke, flame or allergen.",
+        "Never ask about pregnancy, abortion, miscarriage, fertility, sexual history or medical records; do not shame or obstruct lawful confidential care.",
+        "Do not rank dignity by caste, birth, family, occupation, wealth, observance, disability, health or reproductive history.",
+        "Do not travel for pilgrimage bathing, enter water, stage sacrifice, transfer land, acquire or gift an animal, spend or donate from this guide.",
+        "Serious killing, violence, abuse or other harm is not erased by Tulasi, lamp, vigil, fasting, hearing or regret.",
+        "No disease removal, bodily purification, calamity prevention, good birth, ancestor benefit, sin removal, absolution, heaven, salvation or Vishnu's world is guaranteed."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "vaishnava-kamika-ekadashi"
+      ],
+      "title": "वैष्णव कामिका: एक राष्ट्रीय विधि नहीं, नामित प्राधिकार का मार्ग",
+      "short_answer": "पहले अपना नामित वैष्णव संप्रदाय, विरासत पारिवारिक पंचांग या संस्था बताएँ और पुष्टि करें कि वह आपके शहर के लिए स्पष्ट वैष्णव कामिका देता है। समीक्षित नई दिल्ली इस्कॉन-प्रोफाइल तिथि शुक्रवार 30 जुलाई 2027 है, पर वह हर वैष्णव को नियंत्रित नहीं करती और उसी दिन की गौण वस्तु को नहीं मिलाती। प्राधिकार अज्ञात हो तो पूर्ण भोजन, जल, दवा और नींद वाला सामग्री-मुक्त विकल्प अपनाएँ: विष्णु/कृष्ण स्मरण, बिना विकसित उत्पत्ति-कथा या सामान्य वैष्णव गणना नियम वाला सीमित अध्याय-54 माहात्म्य, वैकल्पिक छोटी देखभाल और उपवास, पारण, जागरण, दीप, तुलसी, खुलासा, इलाज या पाप-मुक्ति दावे बिना सामान्य समापन।",
+      "significance": {
+        "text": "वैष्णव कामिका उत्तरदायी संप्रदाय, परिवार या संस्था का पंचांग-प्राधिकार बदलती है। आधिकारिक इस्कॉन/जीबीसी साक्ष्य नामित पंचांग शासन और वर्षानुसार बदलती चंद्र तिथियाँ सिद्ध करता है, सभी वैष्णवों का एक नियम नहीं। पद्मपुराण अध्याय 54 साझा कामिका माहात्म्य देता है, पर इस्कॉन, गौड़ीय, श्रीवैष्णव, माध्व, रामानंदी, वल्लभ, स्वामिनारायण या सामान्य वैष्णव गणना नियम नहीं।",
+        "source_ids": [
+          "padma-purana-kamika-deshpande",
+          "iskcon-official-festival-lunar-calendar",
+          "iskcon-gbc-2001-vaishnava-calendar",
+          "iskcon-gbc-2013-gcal",
+          "devam-vaishnava-kamika-research"
+        ],
+        "scope_note": "नामित-प्राधिकार मार्ग और सीमित कामिका चिंतन; सार्वभौमिक वैष्णव तिथि, उपवास, भोजन, मंत्र, पारण, पौधा, अग्नि या मंदिर निर्देश नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "vaishnava-kamika-mahatmya-dialogue-hi",
+          "title": "साझा कामिका माहात्म्य, एक वैष्णव उत्पत्ति या पंचांग-कथा नहीं",
+          "summary": "युधिष्ठिर कृष्ण से श्रावण कृष्ण एकादशी पूछते हैं। कृष्ण कहते हैं कि ब्रह्मा ने कभी नारद के नाम, देवता, विधि और पुण्य प्रश्न का उत्तर दिया। ब्रह्मा कामिका नाम देकर हरि, विष्णु, मधुसूदन और कृष्ण पूजा की प्रशंसा करते हैं। वे फल की तुलना यज्ञ, तीर्थ-स्नान, भूमि, गाय, सोना, चाँदी और रत्न से; रातभर जागरण, तुलसी पत्ते, स्पर्श, रोपण और छिड़काव से; दिन-रात घी या तिल-तेल दीप से करते; यम, पूर्वज, जाति और जन्म कहते; और ब्राह्मण-हत्या तथा गर्भ-समापन कराना अनूदित वाक्य तक मिटने का दावा करते हैं। यह माहात्म्य-सूची है, विकसित चरित्र-कथा नहीं। इलाज, शुद्धि, जाति, प्रजनन, अग्नि, पूर्वज और निश्चित फल स्रोत-सामग्री हैं, देवम निर्देश नहीं। अध्याय कोई सामान्य वैष्णव गणना नियम या अलग संप्रदाय-कथा नहीं देता; 30 जुलाई का वर्गीकरण केवल वर्तमान पंचांग साक्ष्य से आता है।",
+          "tradition_scope": "पद्मपुराण उत्तरखंड अध्याय 54 की समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति",
+          "source_ids": [
+            "padma-purana-kamika-deshpande"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "vaishnava-kamika-hi-safe-router",
+          "population_scope": "जिसका नामित वैष्णव प्राधिकार स्पष्ट वैष्णव कामिका बताए या जिसे प्राधिकार-अज्ञात सुरक्षित विकल्प चाहिए",
+          "description": "प्राधिकार पहचान के बाद भोजन और विश्राम सहित विष्णु/कृष्ण स्मरण, सीमित माहात्म्य, वैकल्पिक छोटी देखभाल और सामान्य सामग्री-मुक्त समापन।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "vaishnava-kamika-hi-formal-context",
+          "population_scope": "वर्तमान सत्यापित पंचांग और अभ्यास नियम वाला नामित संप्रदाय, परिवार या संस्था",
+          "description": "औपचारिक तिथि, भोजन, मंत्र, उपवास और पारण उसी प्राधिकार के हैं; यह मार्ग उन्हें पुनर्निर्मित नहीं करता।",
+          "source_ids": [
+            "iskcon-gbc-2001-vaishnava-calendar",
+            "iskcon-gbc-2013-gcal",
+            "icmr-type1-diabetes-fasting",
+            "devam-vaishnava-kamika-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "vaishnava-kamika-hi-minimum-v1",
+          "label": "निजी वैष्णव-प्राधिकार स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "नामित वर्तमान वैष्णव संप्रदाय, विरासत परिवार या संस्था प्राधिकार; अन्यथा केवल पूर्ण भोजन-सहित सामग्री-मुक्त विकल्प",
+          "form": "accessible_short",
+          "estimated_minutes": 15,
+          "source_ids": [
+            "padma-purana-kamika-deshpande",
+            "padma-purana-devshayani-deshpande",
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक निजी स्मरण",
+              "required": false,
+              "substitutions": [
+                "बिना लेखन",
+                "मन में देखभाल दायित्व"
+              ],
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित वैष्णव संप्रदाय, विरासत पारिवारिक पंचांग या संस्था बताएँ और पुष्टि करें कि वह आपके शहर के लिए वैष्णव कामिका देता है। समीक्षित नई दिल्ली इस्कॉन-प्रोफाइल तिथि 30 जुलाई 2027 है; इसे सार्वभौमिक न करें और उसी दिन की गौण वस्तु न मिलाएँ।",
+              "why": "नामित प्राधिकार, शहर और वर्तमान परिणाम अनुप्रयोग तय करते हैं; वैष्णव एक राष्ट्रीय पंचांग नहीं।",
+              "source_ids": [
+                "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+                "iskcon-official-festival-lunar-calendar",
+                "iskcon-gbc-2001-vaishnava-calendar",
+                "devam-ekadashi-rule-audit"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, जल, निर्धारित दवा, इंसुलिन, बच्चों का भोजन, स्वच्छता और नींद रखें। यहाँ से उपवास, भोजन-रोक, रातभर जागरण या पारण शुरू न करें।",
+              "why": "भोजन, जल और विश्राम सहित वैष्णव मार्ग पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित विष्णु-नाम, पारिवारिक प्रार्थना या मौन से स्मरण करें। चित्र, मंत्र, तुलसी, पौधा, पत्ता, दीप, तेल, अग्नि, अर्पण या खरीद आवश्यक नहीं।",
+              "why": "सार्वभौमिक वैष्णव विधि गढ़े बिना भक्ति सुलभ रहती है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "अध्याय-54-नामित संवाद सुनें और कहें कि इसमें विकसित उत्पत्ति-कथा या सामान्य वैष्णव, इस्कॉन या संप्रदाय गणना नियम नहीं।",
+              "why": "स्थिर स्रोत बिना वैष्णव प्राधिकार गढ़े पहचाना रहता है।",
+              "source_ids": [
+                "padma-purana-kamika-deshpande",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "तुलसी-इलाज, स्पर्श, रोपण, दीप, जागरण, तीर्थ, दान, जाति, गर्भ-समापन, यम, पूर्वज और मुक्ति भाषा को स्रोत-दावा कहें, निर्देश या गारंटी नहीं।",
+              "why": "संवेदनशील दावे स्रोत-नामित और सीमित रहें।",
+              "source_ids": [
+                "padma-purana-kamika-deshpande",
+                "india-code-mtp-act",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो अपनी जिम्मेदारी में एक छोटा बिना-खरीद देखभाल काम चुनें। इस मार्ग से पौधा न छुएँ, सींचें, खरीदें या संभालें।",
+              "why": "छोटी देखभाल पौधा-विधि बनाए बिना स्रोत की तुलना रखती है।",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "सामान्य भोजन, दवा और नींद से समापन करें। पारण न प्रकाशित या गणना करें और इलाज, शुद्धि, पाप-मुक्ति, पूर्वज-लाभ, स्वर्ग, मुक्ति या विष्णुलोक न कहें।",
+              "why": "सीमित समापन देखभाल और प्राधिकार रखता है।",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा और नींद से समापन करें। यहाँ उपवास, भोजन-नियम, पारण, जागरण, दीप, तुलसी-विधि या दान शुरू नहीं होता।",
+            "source_ids": [
+              "devam-vaishnava-kamika-research"
+            ],
+            "scope_note": "सामान्य, वैष्णव, चिकित्सा, प्रजनन, पौधा, अग्नि और संस्थागत मार्ग अलग हैं।"
+          }
+        },
+        {
+          "procedure_id": "vaishnava-kamika-hi-standard-v1",
+          "label": "सहमति वाला पारिवारिक वैष्णव स्मरण",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "नामित वर्तमान वैष्णव संप्रदाय, विरासत परिवार या संस्था प्राधिकार; अन्यथा केवल पूर्ण भोजन-सहित सामग्री-मुक्त विकल्प",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "source_ids": [
+            "padma-purana-kamika-deshpande",
+            "padma-purana-devshayani-deshpande",
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "materials": [
+            {
+              "item": "वैकल्पिक मौजूदा विष्णु चित्र या पाठ",
+              "required": false,
+              "substitutions": [
+                "बिना चित्र",
+                "परिचित नाम या मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold"
+              ]
+            },
+            {
+              "item": "वैकल्पिक निजी देखभाल स्मरण",
+              "required": false,
+              "substitutions": [
+                "बिना लेखन",
+                "बिना देखभाल काम"
+              ],
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "शहर के लिए वही नामित वैष्णव प्राधिकार सत्यापित करें और केवल इच्छुक लोगों को बुलाएँ। प्राधिकार अज्ञात या स्रोत-विरोध हो तो पूर्ण सुरक्षित विकल्प लें।",
+              "why": "समय और सहमति पारिवारिक रूप से पहले हैं।",
+              "source_ids": [
+                "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "भोजन, जल, दवा, नींद और सामान्य पौधा-देखभाल अपरिवर्तित रखें। उपवास, पारण, जागरण, अग्नि, दीप, तेल, तुलसी-स्पर्श, तीर्थ या दान न करें।",
+              "why": "सामग्री-मुक्त मार्ग पूर्ण है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित विष्णु-स्मरण और सीमित माहात्म्य रखें; वैष्णव कथा न गढ़ें। जाति-अपशब्द और प्रजनन पूछताछ छोड़ें; इलाज, पाप-मुक्ति और पूर्वज-दावे नामित करें।",
+              "why": "स्रोत देवम की हानिकारक आवाज बने बिना पहचाना रहता है।",
+              "source_ids": [
+                "padma-purana-kamika-deshpande",
+                "india-code-mtp-act",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "हर इच्छुक व्यक्ति निजी छोटी देखभाल चुन या छोड़ सकता है। स्वास्थ्य इतिहास न खोलें, पुण्य न तुलना करें, खर्च का दबाव न दें और दूसरे का पौधा न छुएँ।",
+              "why": "देखभाल सहमति, स्वामित्व और गोपनीयता रखे।",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "सामान्य समापन करें। सामान्य कामिका, उसी दिन की गौण, प्रत्येक औपचारिक संप्रदाय या संस्था, उपवास/पारण और नामित मंदिर कार्यक्रम अलग रखें।",
+              "why": "भिन्न प्राधिकार इस पैक से बाहर है।",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा और नींद से समापन करें। यहाँ उपवास, भोजन-नियम, पारण, जागरण, दीप, तुलसी-विधि या दान शुरू नहीं होता।",
+            "source_ids": [
+              "devam-vaishnava-kamika-research"
+            ],
+            "scope_note": "सामान्य, वैष्णव, चिकित्सा, प्रजनन, पौधा, अग्नि और संस्थागत मार्ग अलग हैं।"
+          }
+        },
+        {
+          "procedure_id": "vaishnava-kamika-hi-elaborate-v1",
+          "label": "सत्यापित नामित संस्था-भागीदारी",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "नामित वर्तमान वैष्णव संप्रदाय, विरासत परिवार या संस्था प्राधिकार; अन्यथा केवल पूर्ण भोजन-सहित सामग्री-मुक्त विकल्प",
+          "form": "institutional_participation",
+          "estimated_minutes": 40,
+          "source_ids": [
+            "padma-purana-kamika-deshpande",
+            "padma-purana-devshayani-deshpande",
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "india-code-mtp-act",
+            "icmr-type1-diabetes-fasting",
+            "devam-ekadashi-rule-audit",
+            "devam-ekadashi-recurring-scaffold",
+            "devam-vaishnava-kamika-research"
+          ],
+          "materials": [
+            {
+              "item": "सत्यापित वर्तमान मंदिर कार्यक्रम और सुरक्षित प्रवेश योजना",
+              "required": false,
+              "substitutions": [
+                "न जाएँ",
+                "पूर्ण गृह-रूप अपनाएँ"
+              ],
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित संस्था का आधिकारिक वर्तमान पंचांग और सार्वजनिक कार्यक्रम, प्रवेश, भोजन, पौधा, अग्नि, फोटो, दान, भीड़ और सुरक्षा नियम सत्यापित करें।",
+              "why": "पंचांग-नाम जीवित कार्यक्रम नहीं।",
+              "source_ids": [
+                "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सुरक्षित हो तभी जाएँ; सामान्य भोजन, जल, दवा और नींद रखें तथा उपवास, स्पर्श, पौधा, अग्नि, खुलासा, दान या निजी प्रवेश छोड़ें।",
+              "why": "संस्था-भागीदारी देखभाल या सहमति नहीं रोकती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल सत्यापित सार्वजनिक कार्यक्रम देखें। उसकी पूजा, भोजन-नियम, पारण, जागरण, दीप, तुलसी या अर्पण को घर के निर्देश में न नकल करें।",
+              "why": "संस्थागत प्राधिकार पोर्टेबल नहीं।",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "कभी भी लौटें और घर पर सामान्य देखभाल से समापन करें। दूरस्थ या रद्द रूप पूर्ण है; निश्चित फल न कहें।",
+              "why": "सुरक्षित निकास मार्ग रखता है।",
+              "source_ids": [
+                "devam-vaishnava-kamika-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सामान्य भोजन, जल, दवा और नींद से समापन करें। यहाँ उपवास, भोजन-नियम, पारण, जागरण, दीप, तुलसी-विधि या दान शुरू नहीं होता।",
+            "source_ids": [
+              "devam-vaishnava-kamika-research"
+            ],
+            "scope_note": "सामान्य, वैष्णव, चिकित्सा, प्रजनन, पौधा, अग्नि और संस्थागत मार्ग अलग हैं।"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "vaishnava-minor-expression-hi",
+          "scope": "छोटी गृह-अभिव्यक्ति",
+          "difference": "भाषा, परिचित विष्णु/कृष्ण नाम, चित्र/बिना चित्र, मौन, वेश और वैकल्पिक निजी स्मरण इसी मार्ग में रहते हैं।",
+          "source_ids": [
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "ordinary-or-gauna-authority-hi",
+          "scope": "भिन्न समय-प्राधिकार",
+          "difference": "सामान्य और गौण कामिका अलग जमी तिथि/प्राधिकार वस्तुएँ हैं।",
+          "source_ids": [
+            "drik-iskcon-vaishnava-kamika-new-delhi-2027",
+            "devam-ekadashi-rule-audit"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-vaishnava-authority-hi",
+          "scope": "भौतिक संप्रदाय, परिवार या संस्था अंतर",
+          "difference": "जिस प्राधिकार की तिथि, पात्रता, मंत्र, भोजन, क्रम या समापन बदलता है उसे अलग सत्यापित मार्ग चाहिए; इस्कॉन साक्ष्य सार्वभौमिक वैष्णव साक्ष्य नहीं।",
+          "source_ids": [
+            "iskcon-gbc-2001-vaishnava-calendar",
+            "iskcon-gbc-2013-gcal",
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "formal-fast-parana-hi",
+          "scope": "औपचारिक व्रत",
+          "difference": "उपवास, भोजन, पारण, जागरण, दीप या तुलसी-विधि को नामित प्राधिकार और सुरक्षा समीक्षा चाहिए।",
+          "source_ids": [
+            "icmr-type1-diabetes-fasting",
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "professional-or-temple-hi",
+          "scope": "पेशेवर देखभाल या नामित मंदिर",
+          "difference": "चिकित्सकीय उपवास और जीवित मंदिर कार्यक्रम अलग मार्ग हैं।",
+          "source_ids": [
+            "icmr-type1-diabetes-fasting",
+            "devam-vaishnava-kamika-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण प्राधिकार-अज्ञात वैष्णव विकल्प गैर-उपवास, भोजन और जल सहित, विश्रामपूर्ण, बिना जागरण, बिना स्पर्श, बिना अग्नि, बिना खरीद, बिना तुलसी, बिना पौधा, बिना पत्ता, बिना खुलासा, बिना चित्र, बिना लेखन और बिना सामग्री का है।",
+        "सामान्य नाम, सुविधा, राज्य, जातीयता, वेश, उपनाम, दीक्षा-दावा या मंदिर-यात्रा से वैष्णव तिथि न चुनें; नामित वर्तमान प्राधिकार आवश्यक है।",
+        "इस मार्ग से पारण न प्रकाशित या गणना करें और इस्कॉन साक्ष्य को हर वैष्णव समुदाय पर लागू न करें।",
+        "इस मार्ग से तुलसी न तोड़ें, छुएँ, खाएँ, लगाएँ, छिड़कें, रोपें, खरीदें, सींचें या बाँटें; अनुष्ठान रोग का निदान या इलाज नहीं।",
+        "रातभर न जागें, नींद की कमी में गाड़ी/काम न करें और दीप न जलाएँ या अकेला न छोड़ें; घी, तिल तेल, धुआँ, अग्नि या एलर्जेन न लाएँ।",
+        "गर्भावस्था, गर्भ-समापन, गर्भपात, प्रजनन, यौन इतिहास या चिकित्सा रिकॉर्ड कभी न पूछें; गोपनीय कानूनी देखभाल न रोकें।",
+        "जाति, जन्म, परिवार, पेशा, धन, व्रत, विकलांगता, स्वास्थ्य या प्रजनन इतिहास से गरिमा न तौलें।",
+        "इस मार्ग से तीर्थ-स्नान यात्रा, पानी में प्रवेश, यज्ञ, भूमि हस्तांतरण, पशु लेना/देना, खर्च या दान न करें।",
+        "गंभीर हत्या, हिंसा, दुर्व्यवहार या अन्य हानि तुलसी, दीप, जागरण, उपवास, श्रवण या पछतावे से नहीं मिटती।",
+        "रोग-मुक्ति, शरीर-शुद्धि, विपत्ति-रोक, अच्छा जन्म, पूर्वज लाभ, पाप-मुक्ति, स्वर्ग, मुक्ति या विष्णुलोक की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

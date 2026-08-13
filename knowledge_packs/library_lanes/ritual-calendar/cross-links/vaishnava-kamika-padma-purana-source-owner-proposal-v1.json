@@ -1,0 +1,51 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-vaishnava-kamika-padma-purana-source-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "vaishnava-kamika-to-padma-purana-mahatmya-source-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishnava-kamika-ekadashi-india-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-kamika-mahatmya-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_kamika_mahatmya_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the full source-labelled Kamika mahatmya",
+        "hi": "कामिका का पूरा स्रोत-नामित माहात्म्य पढ़ें"
+      },
+      "scope": {
+        "statement": "The Vaishnava authority router reuses chapter 54 but finds no generic Vaishnava or sampradaya calculation rule in it. A future owner should preserve the nested dialogue, sensitive language and absence of a developed origin story while keeping source context separate from living calendar authority.",
+        "geography_codes": [
+          "india"
+        ],
+        "tradition_codes": [
+          "named-vaishnava-calendar-authority"
+        ],
+        "time_scope": "Named-authority Vaishnava Kamika; reviewed New Delhi ISKCON-profile fixture 30 July 2027, separate from ordinary and same-date Gauna",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 54; Sanskrit, edition and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365631.html",
+          "claim_scope": "Reviewed Kamika mahatmya and absence of a generic Vaishnava calculation rule."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/vaishnava-kamika-ekadashi-india-authority-router-2027-v1.json",
+          "claim_scope": "Bilingual named-authority router, safe fallback, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
