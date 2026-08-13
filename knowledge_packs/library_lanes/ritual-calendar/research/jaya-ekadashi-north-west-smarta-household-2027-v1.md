@@ -129,12 +129,22 @@ workplace or interpersonal accountability.
   family/sampradaya authority limits; reuse, not named completion).
 - ICMR, *Guidelines for Management of Type 1 Diabetes Mellitus* (fasting safety).
 
-## Remaining completion gate
+## Completion and adversarial review
 
-The named item remains uncounted until its bilingual JSON pack passes schema,
-source closure, English/Hindi shape parity, 17-February timing, Jaya/Bhaimi
-authority distinction, non-fasting/warm/sleep-safe completeness, no objectifying
-body detail, no attraction/sexuality blame, no supernatural diagnosis or curse-
-removal instruction, proportionate-repair framing, closing, no promised result
-and major-variant review. Research is not authored, projected, hosted,
-release-reviewed or published.
+The bilingual JSON pack passed the shared ritual schema, source closure,
+English/Hindi procedure-shape parity, 17-February timing, Jaya/Bhaimi authority
+distinction, closing and strict UTF-8 checks on 2026-08-13. The review confirmed
+that every procedure has contiguous ordinals and a close; the warm, rested,
+non-fasting route is complete; and no universal Hindu/Indian instruction,
+required fast, vigil, touch, attraction/sexuality blame, supernatural diagnosis,
+exorcism or guaranteed curse removal appears.
+
+Adversarial readings for a child, a person in health crisis, a person facing an
+unsafe authority, and someone interpreting the story literally all resolve to
+consent, immediate safety, qualified support and proportionate action. Minor
+language, material, music and household-form differences stay in this lane.
+Only a materially different authority/timing rule, formal fast-vigil-parana,
+curse/possession/exorcism claim, named temple programme or another named
+Ekadashi routes elsewhere. The named item is therefore counted once at the
+authored-library layer. It remains unprojected across all 19,480 day cells,
+unhosted, not independently released and unpublished.

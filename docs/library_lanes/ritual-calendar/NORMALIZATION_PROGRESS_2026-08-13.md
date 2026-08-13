@@ -288,3 +288,21 @@ Exact accepted-authoring coverage is now **19 completed after freeze / 189
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The twentieth post-freeze item is complete at the bilingual authored-library
+layer: `jaya-ekadashi-north-west-smarta-household-2027-v1`. It preserves the
+reviewed ordinary Smarta fixture of 17 February 2027 and does not merge a
+same-day Bhaimi or named Vaishnava programme merely by date. The Padma Purana
+account's attraction, unequal power, curse, supernatural forms, cold,
+deprivation, touch and sleeplessness remain source events, never consumer
+instructions. Its complete safe route is warm, rested, non-fasting, no-touch,
+no-flame and material-free. It does not diagnose possession, prescribe
+exorcism or require reconciliation with unsafe authority. Language, ordinary
+materials, music and family-known prayer remain inside the lane; a material
+authority, formal fast/vigil/parana, curse-removal rite, named temple programme
+or another named Ekadashi remains separate.
+
+Exact accepted-authoring coverage is now **20 completed after freeze / 188
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

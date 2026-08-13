@@ -1,0 +1,287 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "jaya-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["jaya-ekadashi"],
+  "applicability": {
+    "region_codes": ["north-india", "west-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Magha Shukla Ekadashi for you?",
+      "Does your family follow ordinary Smarta Jaya, or a Vaishnava/ISKCON authority that uses Bhaimi or another programme label?",
+      "Would discussion of attraction, sexualised description, workplace power, punishment, supernatural forms or cold exposure be distressing or unsuitable today?",
+      "Does your family already have an Ekadashi fast, prayer, reading, vigil or parana rule?",
+      "Would a private, non-fasting, warm, well-rested, no-touch, no-flame and material-free form be safer?"
+    ],
+    "context_pairs": [
+      {"region_code": "north-india", "tradition_code": "smarta-north-india", "observance_slug": "jaya-ekadashi"},
+      {"region_code": "west-india", "tradition_code": "smarta-west-india", "observance_slug": "jaya-ekadashi"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "jaya-ekadashi", "language_code": "en", "note": "This is the ordinary North/West Smarta Jaya household lane. A same-day Bhaimi or named Vaishnava programme is not merged merely by date. The story's attraction, curse, supernatural forms, cold, deprivation, clinging and sleeplessness are source events, not moral or ritual instructions."},
+      {"observance_slug": "jaya-ekadashi", "language_code": "hi", "note": "यह सामान्य उत्तर/पश्चिम स्मार्त जया गृह-मार्ग है। उसी दिन का भैमी या नामित वैष्णव कार्यक्रम केवल तिथि के कारण नहीं मिलाया गया। कथा का आकर्षण, शाप, अलौकिक रूप, ठंड, अभाव, एक-दूसरे से चिपकना और जागना स्रोत-घटनाएँ हैं—न नैतिक आदेश, न अनुष्ठान।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-jaya-2027", "devam-ekadashi-rule-audit"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "jaya-magha-shukla-ekadashi-local-smarta-v1",
+    "closing_decision_rule_id": "jaya-nonfast-warm-rested-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed North-reference, Maharashtra, Andhra Pradesh, Telugu and Malayalam fixtures place ordinary Jaya Ekadashi on Wednesday 17 February 2027. A reviewed ISKCON profile labels the same civil day Bhaimi Ekadashi; same date does not prove the same story, food, worship or parana. Resolve the user's Indian city and accepted authority. Never copy displayed tithi/parana times or this date into another year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-jaya-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 43: Jaya Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed source-labelled Malyavat and Pushpadanti/Pushpavati account; objectifying description, attraction, curse, supernatural forms, deprivation and results are textual facts rather than Devam morals or instructions",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365620.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Uttara Khanda chapter 43", "reviewed_lines": "53-79", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "drik-jaya-2027",
+      "title": "2027 Jaya and same-day Bhaimi calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian calendar discovery evidence for ordinary Jaya on 17 February and a same-day ISKCON Bhaimi label; no portable parana authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?time-format=12hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"civil_date": "2027-02-17", "ordinary_identity": "Magha Shukla Jaya Ekadashi", "same_day_authority_label": "ISKCON Bhaimi Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary named-Ekadashi identity and material authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"}
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu/Krishna remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"paths": ["knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json", "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"]}
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "Fasting and Feasting in T1DM", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-jaya-research",
+      "title": "Jaya Ekadashi North/West Smarta household research dossier",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local synthesis of non-objectifying retelling, proportionate power/repair framing, non-diagnostic supernatural boundary, warmth, rest, consent and closing",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/jaya-ekadashi-north-west-smarta-household-2027-v1.md"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["jaya-ekadashi"],
+      "title": "Jaya Ekadashi: dignity, proportionate response and safe repair",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Jaya Ekadashi today. A complete home form is warm, rested and non-fasting: remember Vishnu or Krishna, hear the Padma-Purana-labelled account without its objectifying body inventory, identify one dehumanising label or disproportionate response to stop, and choose one proportionate repair or dignity-protecting action. Cold exposure, thirst, fasting, sleeplessness, touch, curse-removal, exorcism, flame and temple attendance are not required.",
+      "significance": {
+        "text": "The reviewed Padma Purana chapter calls Magha Shukla Ekadashi Jaya and tells of celestial performers punished with dehumanising forms after attraction disrupts a performance. Devam does not endorse the punishment or treat attraction as sin. A bounded present-day meaning is to resist dehumanising labels, respond proportionately to error, protect consent and dignity, and make accountable repair without using ritual to erase harm or law.",
+        "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"],
+        "scope_note": "Source-labelled meaning and ethical reflection; not history, supernatural diagnosis, curse removal, workplace advice or guaranteed release."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "jaya-malyavat-pushpavati-en",
+          "title": "The Padma Purana's account of Malyavat and Pushpavati",
+          "summary": "In Uttara Khanda chapter 43, Yudhishthira asks Krishna about Magha's bright-fortnight Ekadashi. Krishna names Jaya and tells of Indra presiding over celestial music and dance. The reviewed expression gives an extended, objectifying description of Pushpadanti/Pushpavati's body; Devam omits that inventory. She and Malyavat are attracted to one another, and their attention affects the timing and execution of their performance. Indra interprets the lapse as disobedience and curses them into forms the translation calls goblins. In the Himalaya they suffer cold, grief and bodily distress. On Jaya Ekadashi they involuntarily have no food or water, kill no creature, tremble, cling together for warmth and cannot sleep. The chapter interprets this as observance and says their forms are restored on Dvadashi. Devam does not treat attraction, consensual affection, sexuality or a performance error as sin; does not recommend punishment, exposure, fasting, touch or sleep deprivation; does not diagnose anyone as supernatural; and does not promise absolution, Vaikuntha or release from a curse.",
+          "tradition_scope": "Padma Purana, Uttara Khanda chapter 43 in the reviewed Deshpande English expression",
+          "source_ids": ["padma-purana-jaya-deshpande"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {"practice_id": "ordinary-jaya-household-en", "population_scope": "North/West ordinary Smarta households after local date resolution", "description": "Households may remember Vishnu/Krishna, hear the Jaya account, offer fruit or light, practise restraint or repair, and follow an inherited Ekadashi vrata. Story framing, music, materials, fast and close vary and are not universal.", "source_ids": ["padma-purana-jaya-deshpande", "devam-ekadashi-recurring-scaffold"], "instructional": false},
+        {"practice_id": "ordinary-jaya-temple-en", "population_scope": "Invited ordinary participant in a named Vishnu/Krishna temple programme", "description": "A temple may publish its own date, story, worship, fast, vigil, donation, food and parana programme. Its live authority governs; a visitor does not copy priest-led or supernatural claims from this household guide.", "source_ids": ["devam-jaya-research", "devam-ekadashi-recurring-scaffold"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "jaya-en-minimum-v1", "label": "Warm, rested remembrance and proportionate repair", "tier": "minimum", "setting": "individual", "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution", "form": "accessible_short", "estimated_minutes": 12,
+          "materials": [
+            {"item": "A warm, safe and quiet place", "required": true, "substitutions": ["Remain safely where you are and use the shortest route"], "source_ids": ["devam-jaya-research"]},
+            {"item": "A safe way to note one proportionate action", "required": false, "substitutions": ["A mental note", "Complete the action directly"], "source_ids": ["devam-jaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm that Today or your accepted local Smarta Panchang identifies ordinary Jaya Ekadashi for your city. A Bhaimi or named Vaishnava programme stays with that authority even on the same date.", "why": "A shared civil day does not prove shared story, worship, food or close.", "source_ids": ["drik-jaya-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose warmth, hydration, food, medicine and rest as normally needed. Do not reproduce the story's cold, thirst, hunger, bare ground or sleeplessness.", "why": "Those are involuntary story events, not spiritual techniques.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Remember Vishnu or Krishna with a family-known name or short prayer; silence is complete.", "why": "The route remains devotional without inventing a universal mantra.", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 43. Omit the body inventory and state that attraction and a performance mistake are not treated as sin by this guide.", "why": "The source is preserved without objectification or moral blame.", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Name one dehumanising label, disproportionate reaction or misuse of authority that you can stop in your own conduct. Do not diagnose another person or force reconciliation.", "why": "The reflection applies inwardly without claiming power over others.", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 6, "instruction": "Choose one proportionate repair or dignity-protecting action: correct insulting language, apologise without demanding forgiveness, document harm, use a safe grievance route, or support someone without exposing them.", "why": "A concrete, bounded action is more responsible than claiming ritual erases harm.", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 7, "instruction": "Close with gratitude and complete the safe action. Maintain warmth, hydration, food, medication and sleep; leave unsafe authority or contact rather than treating endurance as devotion.", "why": "Safety and dignity govern the close.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "optional": false}
+          ],
+          "closing": {"text": "Close with gratitude, remain warm and rested, and carry out only the proportionate action within your control. This route starts no fast or vigil and supplies no parana or curse-removal claim.", "source_ids": ["devam-jaya-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "An inherited vrata/parana remains with the responsible family, temple or sampradaya authority and clinical guidance where needed."},
+          "source_ids": ["padma-purana-jaya-deshpande", "drik-jaya-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-jaya-research"]
+        },
+        {
+          "procedure_id": "jaya-en-family-v1", "label": "Consent-led family reading and dignity action", "tier": "standard", "setting": "family_led", "authority_scope": "family-guided non-fasting or already-established safe household form", "form": "traditional_household", "estimated_minutes": 30,
+          "materials": [
+            {"item": "Source-labelled chapter summary or identifiable edition", "required": true, "substitutions": ["Use the age-appropriate labelled summary", "Use the minimum route"], "source_ids": ["padma-purana-jaya-deshpande"]},
+            {"item": "Paper for one private repair or safeguarding action", "required": false, "substitutions": ["A mental note", "No written record of private details"], "source_ids": ["devam-jaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the date and ask who wishes to join. Obtain consent before discussing attraction, relationships, punishment, workplace harm or supernatural imagery; use an age-appropriate summary for children.", "why": "Participation and sensitive discussion are voluntary.", "source_ids": ["drik-jaya-2027", "devam-jaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Begin with familiar Vishnu/Krishna remembrance or silence. Do not require music, dance, touch, embracing, fasting, vigil or a partner.", "why": "Story elements are not household requirements.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-jaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Read the coherent source-labelled account without sexualised body detail. Discuss the difference between accountable correction and humiliating or dehumanising punishment.", "why": "The source's power conflict can support proportionate reflection without reproducing objectification.", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Each willing person chooses one action within their responsibility. Do not name another person's private experience, demand forgiveness, diagnose possession or ask anyone to return to an unsafe authority or relationship.", "why": "Repair must preserve consent, privacy and safeguarding.", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Close before fatigue, extinguish every flame, protect written notes, and confirm that everyone has warmth, food, water, medicine, safe transport and rest.", "why": "The story's deprivation is not repeated in the close.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "optional": false}
+          ],
+          "closing": {"text": "Offer gratitude in the family's familiar way and move to a consent-safe, proportionate action. No one owes disclosure, touch, reconciliation, fasting or forgiveness.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-jaya-research"], "scope_note": "Do not use this guide to calculate parana, diagnose a curse or close a grievance."
+          },
+          "source_ids": ["padma-purana-jaya-deshpande", "drik-jaya-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-jaya-research"]
+        },
+        {
+          "procedure_id": "jaya-en-temple-v1", "label": "Ordinary participant at a named temple", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "visitor participation only; institution controls liturgy, story framing and close", "form": "institutional_participation", "estimated_minutes": 45,
+          "materials": [{"item": "Verified official live schedule and safe travel plan", "required": true, "substitutions": ["Official remote programme", "Stay home and use the minimum route"], "source_ids": ["devam-jaya-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the institution's official date/name, hours, entry, accessibility, crowd, food, donation, photography and safeguarding rules; confirm whether it follows Jaya, Bhaimi or another authority profile.", "why": "Same date does not establish the same programme.", "source_ids": ["drik-jaya-2027", "devam-jaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Attend only as an ordinary visitor. Do not imitate priest-led mantra, fast, vigil, curse-removal, exorcism, supernatural diagnosis or parana from this guide.", "why": "These actions and claims require separate authority and may create harm.", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Decline unsafe touch, isolation, restraint, medication advice, payment or photography; keep children with their guardian and leave if crowd, cold, late hours or authority conduct feels unsafe.", "why": "Devotion does not waive consent, health or safeguarding.", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Return safely, rest and complete one private proportionate action without claiming purification, curse removal, supernatural release or another guaranteed result.", "why": "The household meaning remains bounded and non-diagnostic.", "source_ids": ["devam-jaya-research"], "optional": false}
+          ],
+          "closing": {"text": "Follow the institution's ordinary visitor exit and close. If the live programme or safe conditions cannot be verified, stay home; the warm non-fasting route is complete.", "source_ids": ["devam-jaya-research"], "scope_note": "Only the institution controls its liturgy, food and parana; no institution can waive health, consent or law."},
+          "source_ids": ["drik-jaya-2027", "devam-jaya-research"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-material-music-and-household-form", "scope": "Ordinary North/West household", "difference": "Language, fruit/flower, dress, image/no-image, music/no music, familiar prayer and safe non-fast/established-fast context do not create state copies.", "source_ids": ["devam-jaya-research"], "separate_lane_required": false},
+        {"variant_id": "bhaimi-or-named-vaishnava-authority", "scope": "Same-day Vaishnava/ISKCON profile", "difference": "The same 17 February date can carry a different name, story, food, worship and parana authority and requires its own verified route when those materially differ.", "source_ids": ["drik-jaya-2027", "devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "formal-fast-vigil-or-parana", "scope": "Inherited or sampradaya vrata", "difference": "Food, water, sleep, eligibility, medicine and close materially change and remain with the responsible authority and clinician.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "curse-possession-or-exorcism", "scope": "Supernatural diagnosis or removal claim", "difference": "Diagnosis, restraint, touch, isolation, health risk and authority materially differ; this ritual lane cannot provide or validate them.", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme", "scope": "Named Vishnu/Krishna institution", "difference": "Live naming, story, liturgy, fast, vigil, eligibility, food, donation and close belong to the institution.", "source_ids": ["devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi", "scope": "Another monthly Ekadashi", "difference": "Another named Ekadashi has its own lunar identity and source-labelled story even when a safe devotional scaffold is reused.", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "A warm, rested, non-fasting, no-touch, no-flame, no-purchase, image-free and material-free form is complete.",
+        "Mutual attraction, consensual affection, sexuality and a performance mistake are not treated as sin by this guide. Indra's curse is a source event, not disciplinary advice.",
+        "The reviewed expression's objectifying body inventory is omitted from ordinary consumer copy. Do not sexualise, shame or publicly identify a participant.",
+        "Do not reproduce hunger, thirst, cold exposure, outdoor sleeping, isolation, wakefulness or physical clinging. These are involuntary story events, not fasting, vigil, intimacy or devotion instructions.",
+        "A story cannot diagnose possession, a curse, mental illness, disability, trauma or unusual behaviour. It cannot justify restraint, beating, isolation, forced fasting, medication withdrawal or exorcism.",
+        "If someone is cold, dehydrated, faint, confused, unsafe outdoors or sleep deprived, stop and address immediate safety; do not interpret symptoms as spiritual progress.",
+        "Children, pregnant/breastfeeding people, older adults, people with diabetes or another condition, anyone taking medicine with food, people with eating-disorder history, or people doing heat/heavy labour must not start or intensify fasting from Devam.",
+        "Do not change insulin, medicine, meals or hydration. Type 1 diabetes is a high-risk fasting context.",
+        "Touch, embracing, relationship discussion, music, dance, performance, photography and public storytelling require consent. Children stay with a responsible guardian.",
+        "Ritual does not require silence, forgiveness, reconciliation, or return to an unsafe leader, workplace or relationship. Accountability, grievance, safeguarding and law remain in force.",
+        "No absolution, purification, supernatural transformation, curse removal, Vaikuntha, merit, desired object or other result is guaranteed.",
+        "Authored means this named library lane only; it is not projected to day cards, hosted, independently release-reviewed or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["jaya-ekadashi"],
+      "title": "जया एकादशी: गरिमा, अनुपातपूर्ण प्रतिक्रिया और सुरक्षित सुधार",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज जया एकादशी है। घर का पूर्ण रूप गर्म, विश्रामयुक्त और बिना-उपवास है—विष्णु या कृष्ण का स्मरण करें, शरीर का वस्तुकरण करने वाला विवरण छोड़ी हुई पद्म-पुराण नाम वाली कथा सुनें, एक अमानवीय नाम या अनुपातहीन प्रतिक्रिया रोकें और सुरक्षित सुधार/गरिमा-रक्षा का एक काम चुनें। ठंड, प्यास, उपवास, जागरण, स्पर्श, शाप-निवारण, झाड़-फूँक, लौ और मंदिर जाना अनिवार्य नहीं हैं।",
+      "significance": {"text": "समीक्षित पद्म पुराण अध्याय माघ शुक्ल एकादशी को जया कहता और आकर्षण से प्रस्तुति बिगड़ने पर अमानवीय रूपों में दंडित दिव्य कलाकारों की कथा कहता है। देवम दंड का समर्थन या आकर्षण को पाप नहीं मानता। सीमित वर्तमान अर्थ है—अमानवीय नामों का विरोध, त्रुटि पर अनुपातपूर्ण प्रतिक्रिया, सहमति और गरिमा की रक्षा, और अनुष्ठान से हानि या कानून मिटाने के बजाय जिम्मेदार सुधार।", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "scope_note": "स्रोत-नाम वाला अर्थ और नैतिक चिंतन; इतिहास, अलौकिक निदान, शाप-निवारण, कार्यस्थल सलाह या निश्चित मुक्ति नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "jaya-malyavat-pushpavati-hi", "title": "पद्म पुराण में माल्यवत और पुष्पवती की कथा", "summary": "उत्तर खंड अध्याय 43 में युधिष्ठिर कृष्ण से माघ शुक्ल एकादशी पूछते हैं। कृष्ण इसे जया कहते और इन्द्र की सभा में दिव्य संगीत/नृत्य की कथा बताते हैं। समीक्षित अभिव्यक्ति पुष्पदंती/पुष्पवती के शरीर का लंबा वस्तुकरण करती है; देवम वह सूची छोड़ता है। वह और माल्यवत एक-दूसरे से आकर्षित हैं और ध्यान भटकने से प्रस्तुति की लय/समय बिगड़ता है। इन्द्र इसे अवज्ञा मानकर उन्हें ऐसे रूपों का शाप देते हैं जिन्हें अनुवाद ‘goblin’ कहता है। हिमालय में वे ठंड, दुःख और शारीरिक कष्ट झेलते हैं। जया के दिन अनायास भोजन/जल नहीं मिलता, वे जीव नहीं मारते, काँपते, गर्मी के लिए साथ चिपकते और सो नहीं पाते। अध्याय इसे पालन मानकर द्वादशी पर रूप लौटने की बात कहता है। देवम आकर्षण, सहमति-युक्त स्नेह, यौनिकता या प्रस्तुति-त्रुटि को पाप नहीं कहता; दंड, ठंड, उपवास, स्पर्श या नींद-कमी नहीं सुझाता; किसी को अलौकिक नहीं ठहराता; और पाप-मुक्ति, वैकुण्ठ या शाप-मुक्ति नहीं देता।", "tradition_scope": "समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति में पद्म पुराण, उत्तर खंड अध्याय 43", "source_ids": ["padma-purana-jaya-deshpande"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "ordinary-jaya-household-hi", "population_scope": "स्थानीय तिथि-पुष्टि वाले उत्तर/पश्चिम के सामान्य स्मार्त गृह", "description": "परिवार विष्णु/कृष्ण स्मरण, जया कथा, फल/प्रकाश, संयम/सुधार और स्थापित एकादशी-व्रत कर सकते हैं। कथा-ढंग, संगीत, सामग्री, उपवास और समापन बदलते हैं और सार्वभौम नहीं।", "source_ids": ["padma-purana-jaya-deshpande", "devam-ekadashi-recurring-scaffold"], "instructional": false},
+        {"practice_id": "ordinary-jaya-temple-hi", "population_scope": "नामित विष्णु/कृष्ण मंदिर का आमंत्रित सामान्य सहभागी", "description": "मंदिर अपनी तिथि, कथा, पूजा, उपवास, जागरण, दान, भोजन और पारण प्रकाशित कर सकता है। उसका जीवित प्राधिकार लागू होगा; आगंतुक इस गृह-मार्ग से पुरोहित-कर्म या अलौकिक दावा नहीं अपनाता।", "source_ids": ["devam-jaya-research", "devam-ekadashi-recurring-scaffold"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "jaya-hi-minimum-v1", "label": "गर्म, विश्रामयुक्त स्मरण और अनुपातपूर्ण सुधार", "tier": "minimum", "setting": "individual", "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण", "form": "accessible_short", "estimated_minutes": 12,
+          "materials": [
+            {"item": "गर्म, सुरक्षित और शांत स्थान", "required": true, "substitutions": ["जहाँ हैं वहीं सुरक्षित रहकर सबसे छोटा मार्ग करें"], "source_ids": ["devam-jaya-research"]},
+            {"item": "एक अनुपातपूर्ण काम लिखने का सुरक्षित साधन", "required": false, "substitutions": ["मन में रखें", "काम सीधे पूरा करें"], "source_ids": ["devam-jaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "देखें कि Today या आपका मान्य स्थानीय स्मार्त पंचांग आपके शहर में सामान्य जया एकादशी बता रहा है। उसी दिन का भैमी या नामित वैष्णव कार्यक्रम उसी प्राधिकार के पास रहेगा।", "why": "समान नागरिक दिन से कथा, पूजा, भोजन या समापन समान सिद्ध नहीं होते।", "source_ids": ["drik-jaya-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "सामान्य जरूरत के अनुसार गर्मी, जल, भोजन, दवा और विश्राम चुनें। कथा की ठंड, प्यास, भूख, नंगी जमीन या जागरण की नकल न करें।", "why": "ये अनायास कथा-घटनाएँ हैं, आध्यात्मिक तकनीक नहीं।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "परिचित नाम या छोटी प्रार्थना से विष्णु या कृष्ण का स्मरण करें; मौन पूर्ण है।", "why": "सार्वभौम मंत्र गढ़े बिना भक्ति रहती है।", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "छोटी कथा को स्पष्ट रूप से पद्म पुराण अध्याय 43 कहकर पढ़ें/सुनें। शरीर-सूची छोड़ें और कहें कि इस मार्ग में आकर्षण या प्रस्तुति-त्रुटि पाप नहीं।", "why": "वस्तुकरण और नैतिक दोष के बिना स्रोत बचता है।", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "अपने आचरण में एक अमानवीय नाम, अनुपातहीन प्रतिक्रिया या सत्ता-दुरुपयोग नामित करें जिसे रोक सकते हैं। दूसरे का निदान या जबरन मेल-मिलाप न करें।", "why": "चिंतन दूसरों पर सत्ता का दावा किए बिना भीतर लागू होता है।", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 6, "instruction": "एक अनुपातपूर्ण सुधार या गरिमा-रक्षा चुनें—अपमानजनक शब्द सुधारना, क्षमा की माँग बिना माफी, हानि दर्ज करना, सुरक्षित शिकायत-मार्ग या गोपनीय समर्थन।", "why": "ठोस सीमित काम इस दावे से अधिक जिम्मेदार है कि अनुष्ठान हानि मिटाता है।", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 7, "instruction": "कृतज्ञता से समापन करके सुरक्षित काम करें। गर्मी, जल, भोजन, दवा और नींद बनाए रखें; सहने को भक्ति मानने के बजाय असुरक्षित सत्ता या संपर्क से निकलें।", "why": "सुरक्षा और गरिमा समापन नियंत्रित करते हैं।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "optional": false}
+          ],
+          "closing": {"text": "कृतज्ञता से समापन करें, गर्म और विश्रामयुक्त रहें और अपने नियंत्रण का अनुपातपूर्ण काम करें। यह मार्ग उपवास या जागरण शुरू नहीं करता और पारण या शाप-निवारण नहीं देता।", "source_ids": ["devam-jaya-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "स्थापित व्रत/पारण जिम्मेदार परिवार, मंदिर या सम्प्रदाय और जरूरत पर चिकित्सकीय मार्गदर्शन के अधीन है।"},
+          "source_ids": ["padma-purana-jaya-deshpande", "drik-jaya-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-jaya-research"]
+        },
+        {
+          "procedure_id": "jaya-hi-family-v1", "label": "सहमति-आधारित पारिवारिक पाठ और गरिमा-काम", "tier": "standard", "setting": "family_led", "authority_scope": "परिवार-निर्देशित बिना-उपवास या पहले से स्थापित सुरक्षित गृह-रूप", "form": "traditional_household", "estimated_minutes": 30,
+          "materials": [
+            {"item": "स्रोत-नाम वाली अध्याय-संक्षेप या पहचान योग्य संस्करण", "required": true, "substitutions": ["आयु-अनुकूल नामित संक्षेप", "न्यूनतम मार्ग"], "source_ids": ["padma-purana-jaya-deshpande"]},
+            {"item": "निजी सुधार या सुरक्षा-काम का कागज", "required": false, "substitutions": ["मन में रखें", "निजी विवरण न लिखें"], "source_ids": ["devam-jaya-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "तिथि तय करें और पूछें कौन जुड़ना चाहता है। आकर्षण, संबंध, दंड, कार्यस्थल हानि या अलौकिक चित्र की चर्चा से पहले सहमति लें; बच्चों को आयु-अनुकूल संक्षेप दें।", "why": "सहभागिता और संवेदनशील चर्चा स्वैच्छिक हैं।", "source_ids": ["drik-jaya-2027", "devam-jaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "परिचित विष्णु/कृष्ण स्मरण या मौन से शुरू करें। संगीत, नृत्य, स्पर्श, आलिंगन, उपवास, जागरण या साथी अनिवार्य न करें।", "why": "कथा-तत्व गृह-आवश्यकता नहीं हैं।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-jaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "यौनिक शरीर-विवरण बिना स्रोत-नाम वाली पूरी संक्षिप्त कथा पढ़ें। जिम्मेदार सुधार और अपमानजनक/अमानवीय दंड का अंतर चर्चा करें।", "why": "सत्ता-संघर्ष वस्तुकरण दोहराए बिना अनुपातपूर्ण चिंतन दे सकता है।", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "इच्छुक व्यक्ति अपनी जिम्मेदारी का काम चुनें। किसी का निजी अनुभव न बताएँ, क्षमा न माँगें, ‘possession’ का निदान न करें और असुरक्षित सत्ता/संबंध में लौटने को न कहें।", "why": "सुधार सहमति, निजता और सुरक्षा बचाए।", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 5, "instruction": "थकान से पहले समापन करें, हर लौ बुझाएँ, पर्चियाँ सुरक्षित रखें और सबके लिए गर्मी, भोजन, जल, दवा, सुरक्षित यात्रा और आराम सुनिश्चित करें।", "why": "कथा का अभाव समापन में नहीं दोहरता।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "optional": false}
+          ],
+          "closing": {"text": "परिवार के परिचित ढंग से कृतज्ञता दें और सहमति-सुरक्षित अनुपातपूर्ण काम करें। कोई खुलासा, स्पर्श, मेल-मिलाप, उपवास या क्षमा नहीं देता।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-jaya-research"], "scope_note": "इस मार्ग से पारण, शाप-निदान या शिकायत का समापन न करें।"},
+          "source_ids": ["padma-purana-jaya-deshpande", "drik-jaya-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-jaya-research"]
+        },
+        {
+          "procedure_id": "jaya-hi-temple-v1", "label": "नामित मंदिर में सामान्य सहभागिता", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "केवल आगंतुक सहभागिता; संस्था विधि, कथा-संदर्भ और समापन नियंत्रित करती है", "form": "institutional_participation", "estimated_minutes": 45,
+          "materials": [{"item": "सत्यापित आधिकारिक जीवित सूचना और सुरक्षित यात्रा योजना", "required": true, "substitutions": ["आधिकारिक दूरस्थ कार्यक्रम", "घर रहकर न्यूनतम मार्ग"], "source_ids": ["devam-jaya-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "संस्था की आधिकारिक तिथि/नाम, समय, प्रवेश, सुगमता, भीड़, भोजन, दान, चित्र और सुरक्षा नियम जाँचें; पूछें वह जया, भैमी या दूसरा प्राधिकार मानती है।", "why": "समान तिथि से समान कार्यक्रम सिद्ध नहीं होता।", "source_ids": ["drik-jaya-2027", "devam-jaya-research"], "optional": false},
+            {"ordinal": 2, "instruction": "केवल सामान्य आगंतुक बनें। इस मार्ग से पुरोहित-मंत्र, उपवास, जागरण, शाप-निवारण, झाड़-फूँक, अलौकिक निदान या पारण की नकल न करें।", "why": "इन कामों और दावों में अलग प्राधिकार और हानि-जोखिम है।", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 3, "instruction": "असुरक्षित स्पर्श, एकांत, बंधन, दवा-सलाह, भुगतान या चित्र मना करें; बच्चे अभिभावक के साथ रहें और भीड़, ठंड, देर या सत्ता-आचरण असुरक्षित हो तो निकलें।", "why": "भक्ति सहमति, स्वास्थ्य या सुरक्षा नहीं हटाती।", "source_ids": ["devam-jaya-research"], "optional": false},
+            {"ordinal": 4, "instruction": "सुरक्षित लौटकर आराम करें और पवित्रीकरण, शाप-मुक्ति, अलौकिक मुक्ति या निश्चित फल कहे बिना निजी अनुपातपूर्ण काम करें।", "why": "गृह-अर्थ सीमित और गैर-निदानात्मक रहता है।", "source_ids": ["devam-jaya-research"], "optional": false}
+          ],
+          "closing": {"text": "संस्था का सामान्य आगंतुक-निकास और समापन मानें। जीवित कार्यक्रम या सुरक्षित स्थिति सत्यापित न हो तो घर रहें; गर्म बिना-उपवास मार्ग पूर्ण है।", "source_ids": ["devam-jaya-research"], "scope_note": "केवल संस्था अपनी विधि, भोजन और पारण नियंत्रित करती है; कोई संस्था स्वास्थ्य, सहमति या कानून नहीं हटाती।"},
+          "source_ids": ["drik-jaya-2027", "devam-jaya-research"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-material-music-and-household-form-hi", "scope": "सामान्य उत्तर/पश्चिम गृह", "difference": "भाषा, फल/फूल, वस्त्र, चित्र/बिना-चित्र, संगीत/बिना संगीत, परिचित प्रार्थना और सुरक्षित बिना-उपवास/स्थापित व्रत राज्य की प्रतियाँ नहीं बनाते।", "source_ids": ["devam-jaya-research"], "separate_lane_required": false},
+        {"variant_id": "bhaimi-or-named-vaishnava-authority-hi", "scope": "उसी दिन का वैष्णव/इस्कॉन प्रोफाइल", "difference": "17 फरवरी की समान तिथि पर नाम, कथा, भोजन, पूजा और पारण प्राधिकार बदल सकता है; भौतिक अंतर हो तो सत्यापित अलग मार्ग चाहिए।", "source_ids": ["drik-jaya-2027", "devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "formal-fast-vigil-or-parana-hi", "scope": "स्थापित या सम्प्रदाय-व्रत", "difference": "भोजन, जल, नींद, पात्रता, दवा और समापन बदलते हैं और जिम्मेदार प्राधिकार/चिकित्सक के अधीन रहते हैं।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "curse-possession-or-exorcism-hi", "scope": "अलौकिक निदान या निवारण-दावा", "difference": "निदान, बंधन, स्पर्श, एकांत, स्वास्थ्य-जोखिम और प्राधिकार बदलते हैं; यह ritual lane इन्हें दे या सत्यापित नहीं कर सकता।", "source_ids": ["padma-purana-jaya-deshpande", "devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme-hi", "scope": "नामित विष्णु/कृष्ण संस्था", "difference": "जीवित नाम, कथा, विधि, उपवास, जागरण, पात्रता, भोजन, दान और समापन संस्था के हैं।", "source_ids": ["devam-jaya-research"], "separate_lane_required": true},
+        {"variant_id": "other-named-ekadashi-hi", "scope": "दूसरी नामित मासिक एकादशी", "difference": "सुरक्षित भक्ति-ढाँचा पुनः उपयोग हो सकता है, पर दूसरी एकादशी की चंद्र-पहचान और स्रोत-नाम वाली कथा अलग है।", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "गर्म, विश्रामयुक्त, बिना उपवास, स्पर्श, लौ, खरीद, चित्र और सामग्री का रूप पूर्ण है।",
+        "आपसी आकर्षण, सहमति-युक्त स्नेह, यौनिकता और प्रस्तुति-त्रुटि को यह मार्ग पाप नहीं मानता। इन्द्र का शाप स्रोत-घटना है, अनुशासन-सलाह नहीं।",
+        "समीक्षित अभिव्यक्ति की शरीर-वस्तुकरण सूची सामान्य उपभोक्ता प्रति से हटाई गई है। किसी सहभागी को यौनिक, शर्मिंदा या सार्वजनिक रूप से नामित न करें।",
+        "भूख, प्यास, ठंड, बाहर सोना, एकांत, जागरण या शारीरिक चिपकाव की नकल न करें। ये अनायास कथा-घटनाएँ हैं, उपवास, जागरण, अंतरंगता या भक्ति-निर्देश नहीं।",
+        "कथा ‘possession’, शाप, मानसिक बीमारी, विकलांगता, आघात या असामान्य व्यवहार का निदान नहीं कर सकती। इससे बंधन, मारपीट, एकांत, जबरन उपवास, दवा रोकना या झाड़-फूँक उचित नहीं होते।",
+        "कोई ठंडा, निर्जलित, बेहोश, भ्रमित, बाहर असुरक्षित या नींद-वंचित हो तो रुककर तत्काल सुरक्षा करें; लक्षणों को आध्यात्मिक प्रगति न मानें।",
+        "बच्चे, गर्भवती/स्तनपान कराने वाले, बुजुर्ग, मधुमेह/बीमारी वाले, भोजन के साथ दवा लेने वाले, भोजन-विकार इतिहास वाले या गर्मी/भारी श्रम करने वाले देवम से उपवास शुरू या कठोर न करें।",
+        "इंसुलिन, दवा, भोजन या जल न बदलें। टाइप-1 मधुमेह उच्च-जोखिम उपवास स्थिति है।",
+        "स्पर्श, आलिंगन, संबंध-चर्चा, संगीत, नृत्य, प्रस्तुति, चित्र और सार्वजनिक कथा के लिए सहमति चाहिए। बच्चे जिम्मेदार अभिभावक के साथ रहें।",
+        "अनुष्ठान मौन, क्षमा, मेल-मिलाप या असुरक्षित नेता, कार्यस्थल या संबंध में लौटना अनिवार्य नहीं करता। जवाबदेही, शिकायत, सुरक्षा और कानून लागू रहते हैं।",
+        "पाप-मुक्ति, पवित्रीकरण, अलौकिक रूपांतरण, शाप-निवारण, वैकुण्ठ, पुण्य, इच्छित वस्तु या अन्य फल की कोई गारंटी नहीं है।",
+        "Authored का अर्थ केवल यह नामित library lane है; day cards पर projected, hosted, स्वतंत्र release-reviewed या published नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

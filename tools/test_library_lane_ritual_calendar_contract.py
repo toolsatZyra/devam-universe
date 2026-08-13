@@ -121,6 +121,12 @@ SHATTILA_PACK = (
 SHATTILA_LINK = (
     LANE / "cross-links" / "shattila-padma-purana-story-owner-proposal-v1.json"
 )
+JAYA_PACK = (
+    LANE / "packs" / "jaya-ekadashi-north-west-smarta-household-2027-v1.json"
+)
+JAYA_LINK = (
+    LANE / "cross-links" / "jaya-padma-purana-story-owner-proposal-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -827,8 +833,8 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
@@ -851,6 +857,7 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "saphala-ekadashi-north-west-smarta-household-2027-v1",
         "pausha-putrada-ekadashi-north-west-smarta-household-2027-v1",
         "shattila-ekadashi-north-west-smarta-household-2027-v1",
+        "jaya-ekadashi-north-west-smarta-household-2027-v1",
     ]
     assert progress["completed_umbrella_components"] == {
         "vat-savitri-north-west-participant-v1": [
@@ -2017,8 +2024,8 @@ def test_vat_savitri_north_pack_and_owner_link_are_schema_valid_with_single_umbr
 
     # Two material applicability packs complete one frozen umbrella item, not two.
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert VAT_PURNIMA_WEST_PACK.stem in progress["completed_lane_ids"]
     assert progress["completed_umbrella_components"][
@@ -2265,8 +2272,8 @@ def test_guru_purnima_pack_and_mahabharata_link_are_schema_valid_and_complete():
     )
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert (
         "knowledge_packs/library_lanes/ritual-calendar/packs/"
@@ -2428,8 +2435,8 @@ def test_raksha_bandhan_pack_links_and_progress_are_schema_valid():
     assert tagore["target_resolution"] == "unresolved_owner_lane"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert pack["lane_id"] in progress["completed_lane_ids"]
     assert (
         "knowledge_packs/library_lanes/ritual-calendar/packs/"
@@ -2562,8 +2569,8 @@ def test_varalakshmi_participant_pack_and_devi_link_are_schema_valid():
     assert proposal["predicate"] == "requests_owned_identity_story_and_theology_context"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert pack["lane_id"] in progress["completed_lane_ids"]
 
 
@@ -2658,8 +2665,8 @@ def test_onam_pack_and_unresolved_story_link_are_schema_valid():
     assert proposal["predicate"] == "requests_full_source_labelled_vamana_mahabali_context"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert pack["lane_id"] in progress["completed_lane_ids"]
 
 
@@ -2760,8 +2767,8 @@ def test_narali_pack_and_koli_owner_link_are_schema_valid():
     assert proposal["predicate"] == "requests_community_reviewed_prayer_offering_and_livelihood_context"
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert pack["lane_id"] in progress["completed_lane_ids"]
 
 
@@ -2856,8 +2863,8 @@ def test_saphala_pack_is_schema_valid_source_closed_and_counted_once():
     assert set(refs) <= source_ids
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert progress["completed_lane_ids"].count(pack["lane_id"]) == 1
     assert progress["completed_pack_refs"].count(
         "knowledge_packs/library_lanes/ritual-calendar/packs/"
@@ -2976,8 +2983,8 @@ def test_pausha_putrada_pack_link_and_progress_are_valid():
     )
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert progress["completed_lane_ids"].count(pack["lane_id"]) == 1
 
 
@@ -3086,8 +3093,8 @@ def test_shattila_pack_link_and_progress_are_valid():
     )
 
     progress = load(AUTHORING_PROGRESS)
-    assert progress["completed_after_freeze"] == 19
-    assert progress["remaining_authoring_items"] == 189
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
     assert progress["completed_lane_ids"].count(pack["lane_id"]) == 1
 
 
@@ -3154,3 +3161,127 @@ def test_shattila_is_bilingual_sesame_safe_and_major_variant_bounded():
     raw.decode("utf-8", errors="strict")
     assert "षटतिला एकादशी".encode("utf-8") in raw
     assert SHATTILA_PACK.stat().st_size < 100_000
+
+
+def test_jaya_pack_link_and_progress_are_valid():
+    ritual_schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(JAYA_PACK)
+    Draft202012Validator(ritual_schema).validate(pack)
+    assert pack["lane_id"] == "jaya-ekadashi-north-west-smarta-household-2027-v1"
+    assert pack["observance_slugs"] == ["jaya-ekadashi"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 6
+    refs = []
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    refs.extend(child)
+                else:
+                    walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+    assert set(refs) <= source_ids
+
+    links = load(JAYA_LINK)
+    link_schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    Draft202012Validator(link_schema).validate(links)
+    proposal = links["proposals"][0]
+    assert proposal["to_ref"]["lane_local_id"] == (
+        "story/padma-purana-jaya-malyavat-pushpavati-source-context"
+    )
+    assert proposal["target_resolution"] == "unresolved_owner_lane"
+    assert proposal["predicate"] == (
+        "requests_full_source_labelled_jaya_malyavat_pushpavati_context"
+    )
+
+    progress = load(AUTHORING_PROGRESS)
+    assert progress["completed_after_freeze"] == 20
+    assert progress["remaining_authoring_items"] == 188
+    assert progress["completed_lane_ids"].count(pack["lane_id"]) == 1
+    assert progress["completed_pack_refs"].count(
+        "knowledge_packs/library_lanes/ritual-calendar/packs/"
+        "jaya-ekadashi-north-west-smarta-household-2027-v1.json"
+    ) == 1
+
+
+def test_jaya_is_bilingual_safe_and_only_major_variants_split():
+    pack = load(JAYA_PACK)
+    calendar = pack["calendar"]
+    assert calendar["location_aware"] is True
+    assert calendar["tradition_aware"] is True
+    assert calendar["live_schedule_required"] is True
+    assert "Wednesday 17 February 2027" in calendar["freshness_note"]
+    assert "same date does not prove the same story" in calendar["freshness_note"]
+
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    shapes = []
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 1
+        assert len(entry["typical_practices"]) == 2
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        shape = [
+            (tier, len(procedures[tier]["materials"]), len(procedures[tier]["steps"]))
+            for tier in ("minimum", "standard", "elaborate")
+        ]
+        assert shape == [("minimum", 2, 7), ("standard", 2, 5), ("elaborate", 1, 4)]
+        shapes.append(shape)
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        suffix = "-hi" if entry["language_code"] == "hi" else ""
+        assert variants["language-material-music-and-household-form" + suffix][
+            "separate_lane_required"
+        ] is False
+        for base in (
+            "bhaimi-or-named-vaishnava-authority",
+            "formal-fast-vigil-or-parana",
+            "curse-possession-or-exorcism",
+            "named-temple-programme",
+            "other-named-ekadashi",
+        ):
+            assert variants[base + suffix]["separate_lane_required"] is True
+    assert shapes[0] == shapes[1]
+
+    english = json.dumps(localized["en"], ensure_ascii=False).lower()
+    for term in (
+        "a warm, rested, non-fasting, no-touch, no-flame, no-purchase, image-free and material-free form is complete",
+        "attraction, consensual affection, sexuality and a performance mistake are not treated as sin",
+        "objectifying body inventory is omitted",
+        "cannot justify restraint, beating, isolation, forced fasting, medication withdrawal or exorcism",
+        "does not require silence, forgiveness, reconciliation, or return to an unsafe leader",
+        "no absolution, purification, supernatural transformation, curse removal",
+    ):
+        assert term in english
+    for forbidden in (
+        "must fast",
+        "must stay awake",
+        "must embrace",
+        "attraction is sin",
+        "performance error is sin",
+        "you should diagnose possession",
+        "perform exorcism",
+        "curse removal is guaranteed",
+    ):
+        assert forbidden not in english
+
+    hindi = json.dumps(localized["hi"], ensure_ascii=False)
+    for term in (
+        "गर्म, विश्रामयुक्त, बिना उपवास, स्पर्श, लौ, खरीद, चित्र और सामग्री का रूप पूर्ण है",
+        "आपसी आकर्षण, सहमति-युक्त स्नेह, यौनिकता और प्रस्तुति-त्रुटि को यह मार्ग पाप नहीं मानता",
+        "दवा रोकना या झाड़-फूँक उचित नहीं होते",
+        "क्षमा, मेल-मिलाप या असुरक्षित नेता, कार्यस्थल या संबंध में लौटना अनिवार्य नहीं करता",
+    ):
+        assert term in hindi
+
+    raw = JAYA_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "जया एकादशी".encode("utf-8") in raw
+    assert JAYA_PACK.stat().st_size < 100_000
