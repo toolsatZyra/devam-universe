@@ -4,8 +4,8 @@
   "updated_at": "2026-08-13",
   "denominator_ref": "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-normalized-denominator-v4.json",
   "accepted_authoring_denominator": 208,
-  "completed_after_freeze": 190,
-  "remaining_authoring_items": 18,
+  "completed_after_freeze": 176,
+  "remaining_authoring_items": 32,
   "open_denominator_correction_refs": [
     "knowledge_packs/library_lanes/ritual-calendar/inventory/ritual-calendar-denominator-correction-candidates-v1.json"
   ],
@@ -405,9 +405,29 @@
     "devshayani-ekadashi-v1": [
       "devshayani-ekadashi-north-west-smarta-household-2027-v1",
       "ashadhi-ekadashi-maharashtra-varkari-participant-2027-v1"
+    ],
+    "pitru-paksha-delhi-remembrance-content-v1": [
+      "purnima-shraddha-north-west-authority-router-2027-v1",
+      "pratipada-shraddha-north-west-authority-router-2027-v1",
+      "dwitiya-shraddha-north-west-authority-router-2027-v1",
+      "tritiya-shraddha-north-west-authority-router-2027-v1",
+      "chaturthi-shraddha-north-west-authority-router-2027-v1",
+      "panchami-shraddha-north-west-authority-router-2027-v1",
+      "shashthi-shraddha-north-west-authority-router-2027-v1",
+      "saptami-shraddha-north-west-authority-router-2027-v1",
+      "ashtami-shraddha-north-west-authority-router-2027-v1",
+      "navami-shraddha-north-west-authority-router-2027-v1",
+      "dashami-shraddha-north-west-authority-router-2027-v1",
+      "ekadashi-shraddha-north-west-authority-router-2027-v1",
+      "chaturdashi-shraddha-north-west-authority-router-2027-v1"
     ]
   },
+  "non_denominator_utility_lane_ids": [
+    "dwadashi-shraddha-north-west-authority-router-2027-v1",
+    "trayodashi-shraddha-north-west-authority-router-2027-v1"
+  ],
+  "denominator_reconciliation_ref": "knowledge_packs/library_lanes/ritual-calendar/research/accepted-denominator-reconciliation-2027-v1.md",
   "verified_complete_day_cells": 0,
   "day_cell_note": "The completed named pack is not yet a deterministic projection across the 19,480 day-answer cells. No day cell is counted complete without a cumulative projection audit.",
-  "status_semantics": "Completed counts accepted denominator items, not pack files. One umbrella item may require multiple materially distinct applicability packs, as Vat Savitri does. It does not mean projected, hosted, independently released or published."
+  "status_semantics": "Completed counts accepted denominator items, not pack files. Umbrella items can require multiple material packs; useful non-denominator routers are labelled and never increase accepted-item coverage. It does not mean projected, hosted, independently released or published."
 }

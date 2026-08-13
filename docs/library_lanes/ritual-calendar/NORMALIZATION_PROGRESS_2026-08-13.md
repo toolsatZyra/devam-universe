@@ -490,6 +490,18 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 These packs are authored and internally reviewed only; they are not projected,
 hosted, independently released or published.
 
+## Accepted-denominator accounting correction
+
+A cumulative accepted-ID-to-pack reconciliation found that 19 useful Pitru
+packs had been counted as 19 denominator items although they map to five
+accepted items. The 13 death-tithi routers are components of one accepted
+Pitrupaksha-begins umbrella; Dwadashi and Trayodashi Shraddha are useful
+non-denominator routers. No pack is deleted, but 14 excess count credits are
+removed. The exact accepted coverage is therefore **176 completed / 32
+remaining / 208**, with all 32 names frozen in the lane-local reconciliation
+file. Authored still does not mean projected, hosted, independently released or
+published.
+
 ## Evidence-first monthly Purnima batch checkpoint
 
 Eleven remaining generic monthly-Purnima items are complete as independent
