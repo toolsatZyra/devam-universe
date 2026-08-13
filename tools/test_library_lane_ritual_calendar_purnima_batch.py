@@ -175,8 +175,8 @@ def test_purnima_batch_cross_links_and_progress_reconcile():
 
     progress = load(PROGRESS)
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 180
-    assert progress["remaining_authoring_items"] == 28
+    assert progress["completed_after_freeze"] == 183
+    assert progress["remaining_authoring_items"] == 25
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     for key in KEYS:
         lane_id = f"{key}-purnima-recurring-household-2027-v1"

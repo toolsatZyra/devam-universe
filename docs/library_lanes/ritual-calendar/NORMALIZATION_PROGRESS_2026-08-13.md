@@ -727,3 +727,22 @@ Exact accepted-authoring coverage is now **180 completed after freeze / 28
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first Naga-Garuda observance checkpoint
+
+Three accepted answers are complete as bilingual applicability lanes: Nag
+Panchami, Telugu Nagula Chavithi and South-Indian Garuda Panchami.
+
+The batch separates common Shravana Shukla Nag Panchami, Gujarati Shravana
+Krishna Nag Pancham, Telugu post-Diwali Kartika Nagula Chavithi, and a current
+owner-routed Garuda Panchami. Ganguli's Mahabharata Astika Parva supplies the
+labelled Kadru, Vinata, Garuda, Naga and Astika narrative spine without turning
+deception, enslavement, predation, revenge or snake destruction into consumer
+instructions. No route seeks, handles, displays, feeds or disturbs a live
+snake. Milk is not required. Suspected snakebite routes immediately to clinical
+care/112 and never to mantra, cutting, sucking, tourniquets or snake stones.
+
+Exact accepted-authoring coverage is now **183 completed after freeze / 25
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
