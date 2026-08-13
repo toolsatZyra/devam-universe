@@ -11,7 +11,7 @@ from tools.compile_source_vault_tei_ingestion import canonical_json
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PACK_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-balakanda-293-323-v1.json"
+PACK_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-balakanda-293-339-v1.json"
 PLAN_PATH = ROOT / "ingestion/plans/ramcharitmanas-wikisource-belvedere-pages-v1.json"
 REPORT_PATH = ROOT / "ingestion/reports/ramcharitmanas-wikisource-belvedere-pages-v1.json"
 
@@ -20,7 +20,19 @@ SEQUENCE_KEY = "ramcharitmanas-belvedere-normalized-reading-v1"
 SCAN_SHA256 = "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2"
 PLAN_SHA256 = "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab"
 REPORT_SHA256 = "8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c"
-EXPECTED_PACK_SHA256 = "4909e4b0aa7e20d59739fa85eb12e2e1bd6c9b1610b3d3401acae20fda7adbdd"
+EXPECTED_PACK_SHA256 = "87647120f8fa15216fc8ad6c32988b86b7a26194f0a5f854d22855598dfbd114"
+
+
+def expected_kinds_for_group(group: int) -> list[str]:
+    kinds = ["chaupai"] * (5 if group in {325, 327} else 4)
+    if group in {311, 316, 317, 318, 319, 320, 321, 322, 323, 336}:
+        kinds.append("chhand")
+    if group == 323:
+        kinds.append("chhand")
+    if group in {324, 325, 326, 327}:
+        kinds.extend(["chhand"] * 4)
+    kinds.append("soratha" if group in {295, 311, 336} else "doha")
+    return kinds
 
 
 def sha256_bytes(value: bytes) -> str:
@@ -66,9 +78,9 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
     product_pages = {row["scan_page"]: row for row in report["pages"]}
 
     passages = pack.get("passages", [])
-    expected_groups = list(range(293, 324))
+    expected_groups = list(range(293, 340))
     if [int(row["canonical_group_label"]) for row in passages] != expected_groups:
-        raise ValueError("passages must be the contiguous groups 293..323")
+        raise ValueError("passages must be the contiguous groups 293..339")
     if pack.get("selected_scope", {}).get("complete_work") is not False:
         raise ValueError("bounded batch must deny complete-work status")
 
@@ -91,12 +103,7 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
             raise ValueError(f"bilingual meaning is too compressed at group {group}")
 
         units = passage.get("source_units", [])
-        expected_kinds = ["chaupai"] * 4
-        if group in {311, 316, 317, 318, 319, 320, 321, 322, 323}:
-            expected_kinds.append("chhand")
-        if group == 323:
-            expected_kinds.append("chhand")
-        expected_kinds.append("soratha" if group in {295, 311} else "doha")
+        expected_kinds = expected_kinds_for_group(group)
         if [row["unit_kind"] for row in units] != expected_kinds:
             raise ValueError(f"natural unit grammar drift at group {group}")
         if passage.get("source_unit_count") != len(expected_kinds):
@@ -134,12 +141,12 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
             if evidence != expected:
                 raise ValueError(f"pinned page evidence drift at scan page {page}")
 
-    if len(all_units) != 165 or [row["batch_unit_ordinal"] for row in all_units] != list(range(1, 166)):
-        raise ValueError("interval must contain exactly 165 consecutively numbered units")
-    if len({row["unit_id"] for row in all_units}) != 165 or len({row["source_order_key"] for row in all_units}) != 165:
+    if len(all_units) != 264 or [row["batch_unit_ordinal"] for row in all_units] != list(range(1, 265)):
+        raise ValueError("interval must contain exactly 264 consecutively numbered units")
+    if len({row["unit_id"] for row in all_units}) != 264 or len({row["source_order_key"] for row in all_units}) != 264:
         raise ValueError("source units must have unique stable identities and order keys")
-    if all_pages != set(range(354, 385)):
-        raise ValueError("interval must be evidenced by fixed scan pages 354..384")
+    if all_pages != set(range(354, 405)):
+        raise ValueError("interval must be evidenced by fixed scan pages 354..404")
 
     text = PACK_PATH.read_text(encoding="utf-8", errors="strict")
     if "तदपि प्रीति कै रीति सुहाई" not in text or "तदपि प्रीति कै प्रीति सुहाई" in text:

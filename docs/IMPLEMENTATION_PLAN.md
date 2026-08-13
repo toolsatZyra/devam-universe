@@ -62,7 +62,9 @@ Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered
 reading works, not collections of summaries. The Ramcharitmanas contract
 defines full-work, one-page-daily, short-passage-daily, kanda-progression, and
 exact-resume modes over 1,158 text-bearing pages; all remain incomplete until
-the 345 held pages and bilingual meaning layer are resolved. The Hanuman
+every source-text interval and its bilingual meaning layer are resolved. The
+345 q1 pages remain a raw page/commentary quality counter rather than the
+consumer source-work denominator. The Hanuman
 Chalisa pack exposes complete 43-unit recitation and an optional source-ordered
 one-unit-daily path now, while persistent resume remains product work. Reading
 pace is user choice, not a Panchang rule or ritual prescription.
@@ -71,23 +73,24 @@ increment either continuous-reading denominator. The reading experience must
 support the ordinary behavior of finishing the work end to end, pausing after a
 page or source-bounded passage, and returning to the exact next position.
 
-Checkpoint 2026-08-14 (first natural Ramcharitmanas reading batch):
+Checkpoint 2026-08-14 (extended natural Ramcharitmanas reading batch):
 The consumer denominator is now the complete canonical source work, not every
-line of a historical edition's commentary. Balakanda groups 293-323 form
-a continuous 165-unit source sequence. A one-doha-or-chaupai pace advances through
+line of a historical edition's commentary. Balakanda groups 293-339 form
+a continuous 264-unit source sequence. A one-doha-or-chaupai pace advances through
 those same units and retains the containing natural passage plus its bilingual
 meaning, so a daily-sized selection is never detached from context. This is
-the first contiguous corrected interval: 31 natural passages, 165 ordered source
+the first contiguous corrected interval: 47 natural passages, 264 ordered source
 units, and fresh approachable Hindi and English meaning for every passage,
-fixed to scan pages 354-384. The clean web stream accelerated mismatch
+fixed to scan pages 354-404. The clean web stream accelerated mismatch
 discovery but is reference-only; product text was reconciled against the
 retained public-domain scan, including correction of a reference-stream error
-from `preeti kai preeti` to the scanned `preeti kai reeti`. A first-class local
+from `preeti kai preeti` to the scanned `preeti kai reeti` and repair of a
+collapsed-word boundary in group 324. A first-class local
 reading schema now separates ordered source units, bilingual passage aids, and
 user-controlled exact progress from narrative adaptations. The complete work
 remains open beyond this batch, and no hosted migration was applied. The
 bounded source, meaning, rights, claim, and schema review is recorded in
-`docs/RAMCHARITMANAS_BALAKANDA_293_323_READING_AUDIT_2026-08-14.md`.
+`docs/RAMCHARITMANAS_BALAKANDA_293_339_READING_AUDIT_2026-08-14.md`.
 
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
