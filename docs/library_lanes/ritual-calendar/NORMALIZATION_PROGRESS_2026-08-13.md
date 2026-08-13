@@ -91,3 +91,18 @@ into it.
 
 Exact accepted-authoring coverage is now **2 completed after freeze / 206
 remaining / 208 total**. Verified day-answer cells remain **0 / 19,480**.
+
+The third post-freeze item is complete at the bilingual authored-library layer:
+`basant-panchami-north-and-east-household-participant-2027-v1`. It gives the
+North Indian household answer and a materially distinct ordinary school,
+temple or public-pandal participant procedure for Bihar and West Bengal.
+Yellow materials, school setting and an image-free household remain within
+the lane. Child initiation, institution-led idol lifecycle, Navaratri
+Saraswati observances and other non-identical Basant traditions remain
+separate authority/applicability contexts.
+
+The new typed link points to the already counted
+`devi-consumer/saraswati-puja-multi-context` target; it does not add a new
+owner target to the frozen count of 84. Exact accepted-authoring coverage is
+now **3 completed after freeze / 205 remaining / 208 total**. Verified
+day-answer cells remain **0 / 19,480**.

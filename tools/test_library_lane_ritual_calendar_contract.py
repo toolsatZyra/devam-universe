@@ -14,6 +14,12 @@ MAKAR_PACK = (
 PONGAL_PACK = (
     LANE / "packs" / "thai-pongal-tamil-household-participant-2027-v1.json"
 )
+BASANT_PACK = (
+    LANE / "packs" / "basant-panchami-north-and-east-household-participant-2027-v1.json"
+)
+BASANT_OWNER_LINK = (
+    LANE / "cross-links" / "basant-panchami-saraswati-owner-link-v1.json"
+)
 AUTHORING_PROGRESS = (
     LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
 )
@@ -720,12 +726,13 @@ def test_authoring_progress_reconciles_to_frozen_v4_denominator():
         "ritual-calendar-normalized-denominator-v4.json"
     )
     assert progress["accepted_authoring_denominator"] == 208
-    assert progress["completed_after_freeze"] == 2
-    assert progress["remaining_authoring_items"] == 206
+    assert progress["completed_after_freeze"] == 3
+    assert progress["remaining_authoring_items"] == 205
     assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
     assert progress["completed_lane_ids"] == [
         "makar-sankranti-north-west-household-2027-v1",
         "thai-pongal-tamil-household-participant-2027-v1",
+        "basant-panchami-north-and-east-household-participant-2027-v1",
     ]
     assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
     assert progress["verified_complete_day_cells"] == 0
@@ -839,3 +846,122 @@ def test_thai_pongal_adversarial_safety_and_calendar_boundaries():
     raw.decode("utf-8", errors="strict")
     assert "थाई पोंगल".encode("utf-8") in raw
     assert PONGAL_PACK.stat().st_size < 100_000
+
+
+def test_basant_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(BASANT_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["observance_slugs"] == ["vasant-panchami"]
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 12
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_basant_is_bilingual_actionable_and_owner_bounded():
+    pack = load(BASANT_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    assert pack["applicability"]["region_codes"] == [
+        "IN-DL",
+        "north-india",
+        "IN-BR",
+        "IN-WB",
+    ]
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 3
+        assert all(not story["universal_origin_claimed"] for story in entry["origin_narratives"])
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+    schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    link = load(BASANT_OWNER_LINK)
+    Draft202012Validator(schema).validate(link)
+    proposal = link["proposals"][0]
+    assert proposal["to_ref"]["lane_local_id"] == (
+        "devi-consumer/saraswati-puja-multi-context"
+    )
+    assert proposal["target_resolution"] == "unresolved_owner_lane"
+    existing = load(LANE / "cross-links" / "devi-owner-candidates-v1.json")
+    existing_targets = {
+        item["to_ref"]["lane_local_id"] for item in existing["proposals"]
+    }
+    assert proposal["to_ref"]["lane_local_id"] in existing_targets
+
+
+def test_basant_major_difference_and_adversarial_safety_boundaries():
+    pack = load(BASANT_PACK)
+    assert pack["calendar"]["location_aware"] is True
+    assert pack["calendar"]["tradition_aware"] is True
+    assert pack["calendar"]["live_schedule_required"] is True
+    assert "11 February" in pack["calendar"]["freshness_note"]
+    for entry in pack["localized_content"]:
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        for variant_id in (
+            "yellow-material-expression",
+            "west-bengal-bihar-student-public-puja",
+            "household-without-image-or-mantra",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is False
+        for variant_id in (
+            "institution-led-idol-lifecycle",
+            "child-vidyarambha-akshara-initiation",
+            "navaratri-saraswati-puja",
+            "other-basant-traditions",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in pack["localized_content"]
+    }
+    for term in (
+        "electronics",
+        "essential textbooks",
+        "allergens",
+        "children",
+        "blocked passages",
+        "immerse",
+        "priest-led",
+        "guarantees marks",
+        "local/live",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "इलेक्ट्रॉनिक्स",
+        "जरूरी पाठ्यपुस्तक",
+        "एलर्जी",
+        "बच्चों",
+        "बंद मार्ग",
+        "विसर्जित",
+        "पुरोहितीय",
+        "अंक",
+        "स्थानीय/जीवित",
+    ):
+        assert term in localized["hi"]
+
+    raw = BASANT_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "बसंत पंचमी".encode("utf-8") in raw
+    assert BASANT_PACK.stat().st_size < 100_000

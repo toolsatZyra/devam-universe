@@ -1,0 +1,60 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-basant-panchami-saraswati-owner-link-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "basant-panchami-practice-lane-to-saraswati-owner-context",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/basant-panchami-north-and-east-household-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "devi-consumer/saraswati-puja-multi-context"
+      },
+      "relationship_family": "identity",
+      "predicate": "requests_identity_story_context_from_owner",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Basant Panchami practice guidance linked to the Saraswati identity and story owner",
+        "hi": "बसंत पंचमी व्यवहार मार्ग को सरस्वती पहचान और कथा-मालिक से जोड़ने का प्रस्ताव"
+      },
+      "scope": {
+        "statement": "North/East Basant Panchami household and ordinary participant guidance only; Saraswati identity, full narratives and other Saraswati observance worlds remain with the Devi owner.",
+        "geography_codes": [
+          "IN-DL",
+          "north-india",
+          "IN-BR",
+          "IN-WB"
+        ],
+        "tradition_codes": [
+          "general-saraswati-devotional-household",
+          "student-learning-observance"
+        ],
+        "time_scope": "Annual Vasant Panchami; Kolkata fixture 2027-02-11 with local Panchami/Purvahna dependency.",
+        "source_expression_scope": "Spring, learning and attributed Bihar living account only; no universal Saraswati origin claim."
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "ritual_lane",
+        "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/basant-panchami-north-and-east-household-participant-2027-v1.json",
+          "claim_scope": "Bilingual applicability, timing, living accounts, household and public-participant procedures, materials, safety and major variants."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "ritual-calendar/devi-owner-candidates-v1:saraswati-puja-multi-context",
+          "claim_scope": "The existing owner-target proposal already reserves generic Saraswati identity and story context for devi-consumer."
+        },
+        {
+          "evidence_kind": "official_current",
+          "ref": "PIB Basant Panchami greeting 2026 and Akashvani celebration report 2026",
+          "claim_scope": "Current public evidence for spring, nature, learning, arts, students and Saraswati association; not detailed ritual authority."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

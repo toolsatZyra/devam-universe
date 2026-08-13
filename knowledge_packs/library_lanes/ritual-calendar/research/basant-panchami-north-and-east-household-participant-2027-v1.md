@@ -1,4 +1,4 @@
-# Basant Panchami / Saraswati Puja North-East lane: research dossier v1
+# Basant Panchami / Saraswati Puja North and East lane: research dossier v1
 
 Checked: 2026-08-13
 
@@ -21,13 +21,13 @@ The Kolkata practitioner-calendar fixture is Thursday 11 February 2027. Its sugg
 - A West Bengal government school page and current university records: examples of student/campus participation, decoration, music/arts and priest-led public puja. They remain institution-specific descriptions.
 - Delhi Fire Service / Government fire guidance: temporary pandal exits, electrical clearance, extinguishers, separation of cooking and prohibition of open flame/fireworks near temporary structures.
 - CPCB and West Bengal idol-immersion rules: natural clay and colours, no PoP/toxic paint/plastic, remove and segregate worship material, and use designated authority-scheduled immersion sites. Ordinary users should follow organisers rather than conduct immersion independently.
-- FSSAI household guidance reused for offered/shared food: safe water, clean hands/utensils, allergen disclosure, prompt serving and safe storage.
+- FSSAI household and allergen guidance reused for offered/shared food: safe water, clean hands/utensils, explicit allergen awareness, prompt serving and safe storage.
 
 ## Consumer procedure boundary
 
 The material-light form uses one book, instrument or creative tool already owned by the user, a source-labelled spring/learning reflection and one concrete learning action. The household form permits cleaning a learning space, respectfully placing familiar books/instruments, a safe optional flower/food/lamp, family-known prayer or silence, reading/study, sharing safe food and returning materials to use. It never fabricates mantra, repetition count, initiation, fast or exam-success promise.
 
-The public-participation form tells the user to confirm programme and accessibility, keep exits clear, join only public actions, let the institution/priest define offerings and idol rites, safeguard minors and belongings, decline coerced food or ritual, and follow designated visarjan/waste arrangements. It does not teach image installation, consecration, homa, animal sacrifice, priestly worship, immersion or child-initiation rites.
+The public-participation form tells the user to confirm programme and accessibility, keep exits clear, join only public actions, let the institution/priest define offerings and idol rites, safeguard minors and belongings, decline coerced food or ritual, and follow designated visarjan/waste arrangements. It does not teach image installation, consecration, homa, priestly worship, immersion or child-initiation rites.
 
 ## Major-difference routing
 
@@ -53,9 +53,10 @@ The public-participation form tells the user to confirm programme and accessibil
 10. https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS8yOTVfMTU4OTI3Mzk4Nl9tZWRpYXBob3RvMjQzNjUucGRm
 11. https://www.wbpcb.gov.in/writereaddata/files/idol_immersion_procedure.pdf
 12. https://fssai.gov.in/flipbook.php?bookid=31
+13. https://fssai.gov.in/faqs/?p=1778
 
-## Research gaps before pack completion
+## Pack review resolution
 
-- Confirm the exact ritual-calendar-to-Devi-owner cross-link predicate and source scope without increasing the already frozen owner-target denominator.
-- Use only the cited living beliefs as attributed narratives; do not import a creation/manifestation myth from model memory.
-- Ensure English/Hindi parity, ordered materials/substitutions/closing, child safeguarding, book/electronic safety, fire/crowd/food/immersion safety and explicit no-exam-result promise in validators.
+- The typed link targets the existing `devi-consumer/saraswati-puja-multi-context` owner request and does not create another owner target.
+- The pack uses only the cited spring, educational and attributed Bihar living accounts; it imports no creation or manifestation story from model memory.
+- English/Hindi parity, ordered materials/substitutions/closing, child safeguarding, book/electronic safety, fire/crowd/food/immersion safety and the no-exam-result boundary are validator requirements.
