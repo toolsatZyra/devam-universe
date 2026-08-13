@@ -29,6 +29,11 @@ LUNAR_PHASE_DISPOSITION = (
 EKADASHI_DISPOSITION = (
     LANE / "inventory" / "ritual-calendar-candidate-disposition-ekadashi-v1.json"
 )
+HERO_OWNER_DISPOSITION = (
+    LANE
+    / "inventory"
+    / "ritual-calendar-candidate-disposition-hero-owners-v1.json"
+)
 LINKS = LANE / "cross-links" / "mahashivaratri-cross-lane-proposals-v1.json"
 SANKASHTI_LINKS = (
     LANE / "cross-links" / "sankashti-recurring-owner-proposals-v1.json"
@@ -36,6 +41,11 @@ SANKASHTI_LINKS = (
 SHAKAMBHARI_LINKS = (
     LANE / "cross-links" / "shakambhari-purnima-owner-proposal-v1.json"
 )
+HERO_OWNER_LINKS = [
+    LANE / "cross-links" / "ganesha-owner-candidates-v1.json",
+    LANE / "cross-links" / "devi-owner-candidates-v1.json",
+    LANE / "cross-links" / "diwali-owner-candidates-v1.json",
+]
 
 
 def load(path: Path):
@@ -290,6 +300,69 @@ def test_ekadashi_disposition_preserves_regional_aliases_and_date_variants():
         "required_applicability_context"
     ] == "gauna-date-variant"
     assert len(candidate_labels - prior_labels - set(labels)) == 276
+
+
+def test_hero_owner_disposition_is_exact_and_all_batches_are_globally_disjoint():
+    census = load(COMPREHENSIVE_CENSUS)
+    batches = [
+        load(RECURRING_DISPOSITION),
+        load(SOLAR_DISPOSITION),
+        load(LUNAR_PHASE_DISPOSITION),
+        load(EKADASHI_DISPOSITION),
+        load(HERO_OWNER_DISPOSITION),
+    ]
+    all_labels = [
+        entry["source_label"]
+        for batch in batches
+        for entry in batch["entries"]
+    ]
+    candidate_labels = {candidate["source_label"] for candidate in census["candidates"]}
+    assert len(all_labels) == len(set(all_labels)) == 203
+    assert set(all_labels) <= candidate_labels
+    assert len(candidate_labels - set(all_labels)) == 222
+
+    owner = load(HERO_OWNER_DISPOSITION)
+    assert owner["counts"] == {
+        "source_labels_dispositioned": 54,
+        "ganesha_consumer": 12,
+        "devi_consumer": 23,
+        "diwali_consumer": 19,
+        "normalized_owner_targets": 45,
+    }
+    assert all(
+        entry["disposition"] == "hero_owned_cross_link_only"
+        for entry in owner["entries"]
+    )
+
+
+def test_clear_hero_owner_proposals_are_schema_valid_and_target_only_owner_lanes():
+    schema = load(ROOT / "schemas" / "cross-lane-link-proposal-v1.schema.json")
+    expected = {
+        "ganesha-consumer": 12,
+        "devi-consumer": 17,
+        "diwali-consumer": 16,
+    }
+    total = 0
+    for path in HERO_OWNER_LINKS:
+        pack = load(path)
+        Draft202012Validator(schema).validate(pack)
+        proposals = pack["proposals"]
+        total += len(proposals)
+        target_owner = next(iter(expected))
+        for owner in expected:
+            if owner.split("-")[0] in path.name:
+                target_owner = owner
+                break
+        assert len(proposals) == expected[target_owner]
+        assert all(
+            proposal["to_ref"]["lane_local_id"].startswith(target_owner + "/")
+            for proposal in proposals
+        )
+        assert all(
+            proposal["target_resolution"] == "unresolved_owner_lane"
+            for proposal in proposals
+        )
+    assert total == 45
 
 
 def test_cross_link_pack_conforms_and_uses_canonical_anchor():
