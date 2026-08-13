@@ -610,3 +610,20 @@ Exact accepted-authoring coverage is now **149 completed after freeze / 59
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first regional women's and family-vrat batch checkpoint
+
+Eight accepted named answers are complete as bilingual applicability lanes:
+Karadaiyan Nombu, Gangaur, Jayaparvati Vrat, Kokila Vrat, Hariyali Teej,
+Kajari Teej, Kevda Trij and Atla Tadde.
+
+The batch preserves Tamil, Rajasthan/North, Gujarat and Telugu calendar and
+practice identities without turning spouse, marriage, fasting, thread, moon,
+swing, fragrance, food or procession forms into duties. Kokila's reviewed
+Gujarati and generic fixtures remain visibly different. Full stories, formal
+fasts, family rites and organiser programmes remain with current owners.
+
+Exact accepted-authoring coverage is now **157 completed after freeze / 51
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.

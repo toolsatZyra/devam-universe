@@ -86,7 +86,7 @@ def test_crosslinks_progress_matrix_and_unprojected_boundary():
     assert len({x["proposal_id"] for x in links["proposals"]}) == 22
     assert all(x["target_resolution"] == "unresolved_owner_lane" for x in links["proposals"])
     p = load(LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json")
-    assert p["completed_after_freeze"] == 149 and p["remaining_authoring_items"] == 59
+    assert p["completed_after_freeze"] == 157 and p["remaining_authoring_items"] == 51
     assert p["completed_after_freeze"] + p["remaining_authoring_items"] == 208
     for lane_id in IDS:
         assert p["completed_lane_ids"].count(lane_id) == 1
