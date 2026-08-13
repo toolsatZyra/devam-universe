@@ -94,7 +94,10 @@ describe("Ramayana selected-expression adversarial review", () => {
       ["ayodhya-prepares-the-heir", 3, 4, 2],
       ["rama-and-sita-keep-the-night", 5, 6, 2],
       ["surpanakha-brings-fourteen-fighters", 18, 20, 3],
-      ["khara-marches-under-omens", 21, 24, 4],
+      ["khara-turns-humiliation-into-a-mass-march", 21, 21, 1],
+      ["the-march-crosses-a-sky-of-omens", 22, 22, 1],
+      ["rama-moves-sita-and-lakshmana-to-shelter", 23, 23, 1],
+      ["the-massed-assault-opens-at-panchavati", 24, 24, 1],
       ["dushana-and-trishira-fall", 25, 27, 3],
       ["khara-falls-akampana-carries-news", 28, 30, 3],
     ] as const;

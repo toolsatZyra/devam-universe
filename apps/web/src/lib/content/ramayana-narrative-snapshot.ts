@@ -80,6 +80,7 @@ import { RAMAYANA_RAMA_SUMMONS_LIBRARY_SCENES } from "../../data/ramayana-rama-s
 import { RAMAYANA_MANTHARA_TWO_BOONS_LIBRARY_SCENES } from "../../data/ramayana-manthara-two-boons-library-scenes";
 import { RAMAYANA_CITY_WITHOUT_KING_LIBRARY_SCENES } from "../../data/ramayana-city-without-king-library-scenes";
 import { RAMAYANA_FAMILY_ASKS_HOME_LIBRARY_SCENES } from "../../data/ramayana-family-asks-home-library-scenes";
+import { RAMAYANA_KHARA_MARCH_LIBRARY_SCENES } from "../../data/ramayana-khara-march-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
@@ -240,6 +241,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "fear-becomes-demands",
     "city-without-king",
     "family-asks-rama-home",
+    "khara-marches-under-omens",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
     "two-lineages-reach-lanka",
@@ -328,7 +330,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   }
 
   for (const scene of [
-    ...RAMAYANA_THIN_TURN_LIBRARY_SCENES,
+    ...RAMAYANA_THIN_TURN_LIBRARY_SCENES.filter((scene) => scene.id !== "khara-marches-under-omens"),
     ...RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES,
     ...RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES,
     ...RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES,
@@ -345,6 +347,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_MANTHARA_TWO_BOONS_LIBRARY_SCENES,
     ...RAMAYANA_CITY_WITHOUT_KING_LIBRARY_SCENES,
     ...RAMAYANA_FAMILY_ASKS_HOME_LIBRARY_SCENES,
+    ...RAMAYANA_KHARA_MARCH_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
