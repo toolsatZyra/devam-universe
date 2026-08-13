@@ -110,9 +110,9 @@ temples, and 12 festivals or performance traditions. All 48 have substantial
 English and Hindi consumer context with story links and evidence boundaries.
 This completes the registered living-world authoring denominator only; the
 whole-journey continuity review remains open. The consumer-expected story
-checklist now names 71 rows: 49 complete selected-expression cycles, seven
-source-aligned Ramcharitmanas supplements completed through 69 bilingual
-episodes, and 15 open supplements across performance, regional, devotional,
+checklist now names 71 rows: 49 complete selected-expression cycles, ten
+source-aligned Ramcharitmanas supplements completed through 94 bilingual
+episodes, and 12 open supplements across performance, regional, devotional,
 temple, and living-festival scopes. Broader Ramayana expressions remain separate
 denominators, and every supplement must be authored or explicitly excluded
 without being back-projected into Dutt. The payload-free

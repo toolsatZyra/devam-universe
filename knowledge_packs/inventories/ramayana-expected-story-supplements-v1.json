@@ -14,6 +14,15 @@
       "coverage_state": "consumer_complete_en_hi_source_aligned",
       "database_projection": "supabase/migrations/20260813130000_seed_ramayana_expected_stories_beginnings_exile.sql",
       "hosted_database_applied": false
+    },
+    {
+      "pack_id": "ramayana-expected-stories-war-messengers-v1",
+      "path": "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json",
+      "story_count": 3,
+      "episode_count": 25,
+      "coverage_state": "consumer_complete_en_hi_source_aligned",
+      "database_projection": "supabase/migrations/20260813163000_seed_ramayana_expected_stories_war_messengers.sql",
+      "hosted_database_applied": false
     }
   ],
   "source_registry": [
@@ -208,8 +217,10 @@
       "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
       "relationship_to_selected_expression": "additional_scene_within_covered_arc",
       "nearest_selected_cycle_ids": ["lanka-surrounded"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_range_aligned",
+      "consumer_story_id": "ramayana-manas-angada-immovable-foot-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-war-messengers-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
       "boundary": "Separate the familiar Manas/performance challenge from Angada material already present in the selected expression."
     },
@@ -244,8 +255,10 @@
       "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
       "relationship_to_selected_expression": "additional_scene_within_covered_arc",
       "nearest_selected_cycle_ids": ["indrajits-last-war"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_range_aligned",
+      "consumer_story_id": "ramayana-manas-kalnemi-deception-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-war-messengers-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
       "boundary": "Place within the Manas/popular medicine-mountain journey, not automatically within the selected Dutt account."
     },
@@ -256,8 +269,10 @@
       "expression_scopes": ["ramcharitmanas", "north_indian_performance", "popular_adaptation"],
       "relationship_to_selected_expression": "additional_scene_within_covered_arc",
       "nearest_selected_cycle_ids": ["indrajits-last-war"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required",
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_range_aligned",
+      "consumer_story_id": "ramayana-manas-bharata-shoots-hanuman-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-war-messengers-v1",
       "evidence_source_ids": ["ramcharitmanas-wikisource-ingestion", "iitk-ramcharitmanas", "sagar-ramayan-series"],
       "boundary": "Retain its devotional and dramatic logic without conflating it with other Sanjeevani narratives."
     },

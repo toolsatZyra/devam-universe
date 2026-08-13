@@ -131,7 +131,11 @@ class RamayanaExpectedStoryBatchTest(unittest.TestCase):
 
     def test_completed_supplement_rows_resolve_back_to_this_pack(self) -> None:
         pack_by_expectation = {row["expectation_id"]: row for row in self.pack["stories"]}
-        completed = [row for row in self.supplements["supplements"] if row["coverage_state"] == "consumer_complete_en_hi"]
+        completed = [
+            row
+            for row in self.supplements["supplements"]
+            if row.get("consumer_story_pack_id") == "ramayana-expected-stories-beginnings-exile-v1"
+        ]
         self.assertEqual(len(completed), 7)
         for row in completed:
             self.assertEqual(row["consumer_story_pack_id"], "ramayana-expected-stories-beginnings-exile-v1")

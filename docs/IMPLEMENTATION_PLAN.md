@@ -33,9 +33,13 @@ connection. The first major batch completes seven source-aligned
 Ramcharitmanas expectations through 69 substantial bilingual episodes: the
 Shiva-Sati-Parvati frame, Narada's delusion, Manu-Shatarupa's boon,
 Pratapbhanu's fall, Rama's childhood, Pushpavatika/Gauri, and Kevat's crossing.
-The canonical pack and its draft database projection keep those stories
-separate from the Dutt expression and leave hosted data unchanged. Fifteen
-supplements remain open. The next work is the forest/war batch, followed by one
+The second batch completes Angada's full embassy and planted-foot challenge,
+Kalnemi's deception, and Bharata's encounter with the mountain-bearing Hanuman
+through 25 more bilingual episodes. Both canonical packs and their draft
+database projections keep these ten stories separate from the Dutt expression
+and leave hosted data unchanged. Twelve supplements remain open. The next work
+is the remaining Manas frame/teaching material and the separately sourced
+popular, regional, temple, and living-practice batch, followed by one
 consolidated whole-Ramayana continuity review.
 
 Checkpoint 2026-08-13 (end-to-end devotional reading correction):

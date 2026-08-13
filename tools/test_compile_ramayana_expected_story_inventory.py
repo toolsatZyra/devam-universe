@@ -65,18 +65,27 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
         counters = self.data["counters"]
         self.assertEqual(counters["selected_expression_story_cycles"], 49)
         self.assertEqual(counters["supplemental_expected_stories"], len(self.data["supplemental_rows"]))
-        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 7)
-        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 7)
+        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 10)
+        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 10)
         self.assertEqual(self.data["completion_state"], "supplemental_expected_story_authoring_required")
 
-    def test_first_major_batch_projects_exactly_seven_canonical_story_ids(self):
+    def test_two_major_batches_project_exactly_ten_canonical_story_ids(self):
         completed = [row for row in self.data["supplemental_rows"] if row["coverage_state"] == "consumer_complete_en_hi"]
-        self.assertEqual(len(completed), 7)
-        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 7)
-        self.assertEqual({row["consumer_story_pack_id"] for row in completed}, {"ramayana-expected-stories-beginnings-exile-v1"})
+        self.assertEqual(len(completed), 10)
+        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 10)
+        self.assertEqual(
+            {row["consumer_story_pack_id"] for row in completed},
+            {
+                "ramayana-expected-stories-beginnings-exile-v1",
+                "ramayana-expected-stories-war-messengers-v1",
+            },
+        )
         self.assertEqual(
             self.data["authoritative_inputs"]["consumer_story_packs"],
-            ["knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json"],
+            [
+                "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json",
+                "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json",
+            ],
         )
 
     def test_compiled_checklist_does_not_duplicate_authored_titles_boundaries_or_sources(self):
