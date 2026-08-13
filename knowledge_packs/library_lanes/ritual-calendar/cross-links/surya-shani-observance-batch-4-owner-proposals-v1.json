@@ -1,0 +1,170 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "surya-shani-observance-batch-4-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "ratha-saptami-to-current-practice-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/ratha-saptami-surya-household-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "practice/ratha-saptami-current-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_practice_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Ratha Saptami: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "hi": "रथ सप्तमी: औपचारिक मंदिर, मंत्र, उपवास, होम, अभिषेक, ज्योतिष और क्षेत्रीय विधि वर्तमान नामित स्वामियों के पास है।"
+      },
+      "scope": {
+        "statement": "Ratha Saptami: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "geography_codes": [
+          "IN",
+          "north-india",
+          "west-india",
+          "south-india"
+        ],
+        "tradition_codes": [
+          "surya-ratha-saptami"
+        ],
+        "time_scope": "Magha Shukla Saptami",
+        "source_expression_scope": "Current owner verification required"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-surya-shani-batch-4",
+          "claim_scope": "Ratha Saptami: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "bhanu-saptami-to-current-practice-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/bhanu-saptami-recurring-surya-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "practice/bhanu-saptami-current-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_practice_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Bhanu Saptami: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "hi": "भानु सप्तमी: औपचारिक मंदिर, मंत्र, उपवास, होम, अभिषेक, ज्योतिष और क्षेत्रीय विधि वर्तमान नामित स्वामियों के पास है।"
+      },
+      "scope": {
+        "statement": "Bhanu Saptami: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "geography_codes": [
+          "IN",
+          "north-india",
+          "west-india",
+          "south-india"
+        ],
+        "tradition_codes": [
+          "recurring-surya-sunday-saptami"
+        ],
+        "time_scope": "Sunday plus locally assigned Saptami",
+        "source_expression_scope": "Current owner verification required"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-surya-shani-batch-4",
+          "claim_scope": "Bhanu Saptami: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shani-jayanti-to-current-practice-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shani-jayanti-amavasya-household-temple-participant-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "practice/shani-jayanti-current-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_practice_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Shani Jayanti: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "hi": "शनि जयंती: औपचारिक मंदिर, मंत्र, उपवास, होम, अभिषेक, ज्योतिष और क्षेत्रीय विधि वर्तमान नामित स्वामियों के पास है।"
+      },
+      "scope": {
+        "statement": "Shani Jayanti: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "geography_codes": [
+          "IN",
+          "north-india",
+          "south-india"
+        ],
+        "tradition_codes": [
+          "shani-jayanti-amavasya"
+        ],
+        "time_scope": "locally assigned Shani Jayanti Amavasya",
+        "source_expression_scope": "Current owner verification required"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-surya-shani-batch-4",
+          "claim_scope": "Shani Jayanti: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "shani-trayodashi-to-current-practice-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/shani-trayodashi-recurring-owner-routed-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "practice/shani-trayodashi-current-owner"
+      },
+      "relationship_family": "practice",
+      "predicate": "requires_current_practice_owner_for",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Shani Trayodashi: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "hi": "शनि त्रयोदशी: औपचारिक मंदिर, मंत्र, उपवास, होम, अभिषेक, ज्योतिष और क्षेत्रीय विधि वर्तमान नामित स्वामियों के पास है।"
+      },
+      "scope": {
+        "statement": "Shani Trayodashi: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners.",
+        "geography_codes": [
+          "IN",
+          "south-india",
+          "IN-KA",
+          "IN-AP",
+          "IN-TG",
+          "IN-TN"
+        ],
+        "tradition_codes": [
+          "saturday-trayodashi-owner-routed"
+        ],
+        "time_scope": "Saturday plus locally assigned Trayodashi; Pradosha requires post-sunset overlap",
+        "source_expression_scope": "Current owner verification required"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-surya-shani-batch-4",
+          "claim_scope": "Shani Trayodashi: formal temple, mantra, fast, homa, abhisheka, astrology and regional practice remains with current named owners."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

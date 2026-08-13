@@ -1,0 +1,1408 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "ratha-saptami-surya-household-participant-2027-v1",
+  "observance_slugs": [
+    "ratha-saptami"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN",
+      "north-india",
+      "west-india",
+      "south-india"
+    ],
+    "tradition_codes": [
+      "surya-ratha-saptami"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city, accepted Panchang and family or temple route applies?",
+      "Is this label co-listed with another observance that should be performed only once?",
+      "Are fasting, medicine, vision, mobility, flame, oil, travel, crowd or accessibility risks relevant?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN",
+        "tradition_code": "surya-ratha-saptami",
+        "observance_slug": "ratha-saptami"
+      },
+      {
+        "region_code": "north-india",
+        "tradition_code": "surya-ratha-saptami",
+        "observance_slug": "ratha-saptami"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "surya-ratha-saptami",
+        "observance_slug": "ratha-saptami"
+      },
+      {
+        "region_code": "south-india",
+        "tradition_code": "surya-ratha-saptami",
+        "observance_slug": "ratha-saptami"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "ratha-saptami",
+        "language_code": "en",
+        "note": "an annual Surya observance on Magha Shukla Saptami. Do not merge this annual observance with every Bhanu Saptami."
+      },
+      {
+        "observance_slug": "ratha-saptami",
+        "language_code": "hi",
+        "note": "माघ शुक्ल सप्तमी का वार्षिक सूर्य-पर्व। इस वार्षिक पर्व को हर भानु सप्तमी में न मिलाएँ।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-ratha-saptami-pune-2027",
+      "devam-surya-shani-batch-4"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "ratha-saptami-calendar-rule-v1",
+    "closing_decision_rule_id": "ratha-saptami-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Pune fixture: Saturday 13 February 2027; Magha Shukla Saptami; observational sunrise 07:04. Recompute the city, Saptami day assignment, Arunodaya and sunrise. Never copy a fixture, temple schedule, fast or closing."
+  },
+  "sources": [
+    {
+      "source_id": "drik-ratha-saptami-pune-2027",
+      "title": "2027 Ratha Saptami date for Pune",
+      "publisher": "Drik Panchang",
+      "source_role": "2027 city fixture, Magha Shukla Saptami identity, current Surya Jayanti narrative and living-practice discovery",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/festivals/ratha-saptami/ratha-saptami-date-time.html?geoname-id=1259229",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "date": "2027-02-13",
+        "saptami": "02:59 to 02:06 next day",
+        "sunrise": "07:04",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-surya-shani-batch-4",
+      "title": "Surya and Shani observance batch 4 evidence matrix",
+      "publisher": "Devam",
+      "source_role": "frozen denominator, timing, overlap, procedure, attribution and safety boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/surya-shani-observance-batch-4-evidence-matrix-2027-v1.md",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "vishnu-purana-wilson-iii-2",
+      "title": "The Vishnu Purana, Book III, Chapter II",
+      "publisher": "H. H. Wilson translation (1840), Internet Sacred Text Archive",
+      "source_role": "fixed public-domain expression for the source-labelled Surya, Sanjna, Chhaya and Shanaishchara genealogy; not a calendar or modern vidhi source",
+      "rights_lane": "derivative_allowed",
+      "url": "https://sacred-texts.com/hin/vp/vp076.htm",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "book": "III",
+        "chapter": "II",
+        "page": 266,
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "nasa-solar-viewing-safety",
+      "title": "Eye Safety During a Total Solar Eclipse",
+      "publisher": "NASA Science",
+      "source_role": "authoritative boundary against looking directly at the Sun without appropriate protection; this pack never requires solar viewing",
+      "rights_lane": "citation_only",
+      "url": "https://science.nasa.gov/eclipses/safety/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary showing religious fasting can be high risk and supporting a non-fasting complete route",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-emergency-112",
+      "title": "Emergency Response Support System 112",
+      "publisher": "Government of India",
+      "source_role": "India emergency escalation",
+      "rights_lane": "citation_only",
+      "url": "https://112.gov.in/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "ratha-saptami"
+      ],
+      "title": "Ratha Saptami",
+      "short_answer": "Ratha Saptami is an annual Surya observance on Magha Shukla Saptami. Pune fixture: Saturday 13 February 2027; Magha Shukla Saptami; observational sunrise 07:04. Recompute the city, Saptami day assignment, Arunodaya and sunrise. A complete home form is non-fasting and material-light: confirm the date, keep ordinary care, remember the deity through a source-labelled account, choose prayer/reflection/service, and close without promised results.",
+      "significance": {
+        "text": "The bounded meaning is remembrance expressed through attention, ethical conduct, gratitude and responsible action. Do not merge this annual observance with every Bhanu Saptami. Regional, family, temple, mantra, fast, astrology and formal offering routes remain with their named owners.",
+        "source_ids": [
+          "drik-ratha-saptami-pune-2027",
+          "devam-surya-shani-batch-4",
+          "vishnu-purana-wilson-iii-2",
+          "nasa-solar-viewing-safety",
+          "icmr-type1-diabetes-fasting",
+          "india-emergency-112"
+        ],
+        "scope_note": "Bounded living-practice guidance, not a universal national ritual."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "ratha-saptami-identity-en",
+          "title": "Source-labelled observance identity",
+          "summary": "A current practitioner calendar calls the day Surya Jayanti and presents the belief that Surya began illuminating the world on it. This is an attributed observance narrative, not one proven universal origin.",
+          "tradition_scope": "surya-ratha-saptami",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "ratha-saptami-genealogy-limit-en",
+          "title": "Fixed genealogy and its limit",
+          "summary": "Vishnu Purana III.2 supplies a fixed public-domain Surya–Sanjna–Chhaya–Shanaishchara genealogy. It does not itself assign this observance, its modern date, materials or results.",
+          "tradition_scope": "Vishnu Purana III.2 source layer",
+          "source_ids": [
+            "vishnu-purana-wilson-iii-2",
+            "devam-surya-shani-batch-4"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ratha-saptami-current-practice-en",
+          "population_scope": "Families and temple participants who recognize this named observance",
+          "description": "Current routes may include an Arunodaya bath, sunrise arghya, Surya prayer, lamp, incense, red flowers, fasting and charity. Every element is optional in this accessible household lane.",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "ratha-saptami-minimum-en",
+          "label": "Short complete form",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "No formal mantra, fast, homa, abhisheka, astrology, temple schedule, direct solar viewing or promised-result authority.",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "Existing image or no object",
+              "required": false,
+              "substitutions": [
+                "spoken remembrance",
+                "source-labelled reading",
+                "silence"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "A small vessel of ordinary water",
+              "required": false,
+              "substitutions": [
+                "no water offering",
+                "indoor prayer",
+                "service action"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "Optional flower, lamp substitute or charity note",
+              "required": false,
+              "substitutions": [
+                "electric light",
+                "drawing",
+                "nothing"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the city, accepted Panchang and rule: Magha Shukla Saptami. Treat every displayed 2027 date and clock time as a reviewed fixture, not a portable national answer.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, prescribed medicine, infant and child feeding, pregnancy or lactation nutrition, sleep and accessibility. Do not begin a fast by default.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Prepare a clean, stable place indoors or outdoors. Use an existing image or no object; no purchase, flame, smoke, oil, river entry, rooftop or crowd is required.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "A current practitioner calendar calls the day Surya Jayanti and presents the belief that Surya began illuminating the world on it. This is an attributed observance narrative, not one proven universal origin.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "If offering arghya, stand securely and pour a small amount into a bowl or soil without looking directly at the Sun; indoor prayer is equally complete.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Close with thanks or silence and ordinary care. Nothing here guarantees health, longevity, prosperity, luck, sin removal, protection, horoscope change, dosha reduction, Sade Sati relief, merit or liberation.",
+            "source_ids": [
+              "drik-ratha-saptami-pune-2027",
+              "devam-surya-shani-batch-4",
+              "vishnu-purana-wilson-iii-2",
+              "nasa-solar-viewing-safety",
+              "icmr-type1-diabetes-fasting",
+              "india-emergency-112"
+            ],
+            "scope_note": "No guaranteed result."
+          },
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4",
+            "vishnu-purana-wilson-iii-2",
+            "nasa-solar-viewing-safety",
+            "icmr-type1-diabetes-fasting",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "ratha-saptami-standard-en",
+          "label": "Household meaning and practice",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "No formal mantra, fast, homa, abhisheka, astrology, temple schedule, direct solar viewing or promised-result authority.",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "Existing image or no object",
+              "required": false,
+              "substitutions": [
+                "spoken remembrance",
+                "source-labelled reading",
+                "silence"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "A small vessel of ordinary water",
+              "required": false,
+              "substitutions": [
+                "no water offering",
+                "indoor prayer",
+                "service action"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "Optional flower, lamp substitute or charity note",
+              "required": false,
+              "substitutions": [
+                "electric light",
+                "drawing",
+                "nothing"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the city, accepted Panchang and rule: Magha Shukla Saptami. Treat every displayed 2027 date and clock time as a reviewed fixture, not a portable national answer.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, prescribed medicine, infant and child feeding, pregnancy or lactation nutrition, sleep and accessibility. Do not begin a fast by default.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Prepare a clean, stable place indoors or outdoors. Use an existing image or no object; no purchase, flame, smoke, oil, river entry, rooftop or crowd is required.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "A current practitioner calendar calls the day Surya Jayanti and presents the belief that Surya began illuminating the world on it. This is an attributed observance narrative, not one proven universal origin.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "If offering arghya, stand securely and pour a small amount into a bowl or soil without looking directly at the Sun; indoor prayer is equally complete.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Choose one: a family-known prayer, attributable reading, quiet reflection, an apology or responsible repair, service, or charity within your means.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with thanks or silence, clean and dry the place, store materials safely, resume ordinary care and make no guaranteed-result claim.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with thanks or silence and ordinary care. Nothing here guarantees health, longevity, prosperity, luck, sin removal, protection, horoscope change, dosha reduction, Sade Sati relief, merit or liberation.",
+            "source_ids": [
+              "drik-ratha-saptami-pune-2027",
+              "devam-surya-shani-batch-4",
+              "vishnu-purana-wilson-iii-2",
+              "nasa-solar-viewing-safety",
+              "icmr-type1-diabetes-fasting",
+              "india-emergency-112"
+            ],
+            "scope_note": "No guaranteed result."
+          },
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4",
+            "vishnu-purana-wilson-iii-2",
+            "nasa-solar-viewing-safety",
+            "icmr-type1-diabetes-fasting",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "ratha-saptami-elaborate-en",
+          "label": "Fuller family or temple-preparation form",
+          "tier": "elaborate",
+          "setting": "family_led",
+          "authority_scope": "No formal mantra, fast, homa, abhisheka, astrology, temple schedule, direct solar viewing or promised-result authority.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 40,
+          "materials": [
+            {
+              "item": "Existing image or no object",
+              "required": false,
+              "substitutions": [
+                "spoken remembrance",
+                "source-labelled reading",
+                "silence"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "A small vessel of ordinary water",
+              "required": false,
+              "substitutions": [
+                "no water offering",
+                "indoor prayer",
+                "service action"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "Optional flower, lamp substitute or charity note",
+              "required": false,
+              "substitutions": [
+                "electric light",
+                "drawing",
+                "nothing"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the city, accepted Panchang and rule: Magha Shukla Saptami. Treat every displayed 2027 date and clock time as a reviewed fixture, not a portable national answer.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, prescribed medicine, infant and child feeding, pregnancy or lactation nutrition, sleep and accessibility. Do not begin a fast by default.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Prepare a clean, stable place indoors or outdoors. Use an existing image or no object; no purchase, flame, smoke, oil, river entry, rooftop or crowd is required.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "A current practitioner calendar calls the day Surya Jayanti and presents the belief that Surya began illuminating the world on it. This is an attributed observance narrative, not one proven universal origin.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "If offering arghya, stand securely and pour a small amount into a bowl or soil without looking directly at the Sun; indoor prayer is equally complete.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Choose one: a family-known prayer, attributable reading, quiet reflection, an apology or responsible repair, service, or charity within your means.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close with thanks or silence, clean and dry the place, store materials safely, resume ordinary care and make no guaranteed-result claim.",
+              "why": "Keeps timing, attribution, safety and owner boundaries explicit.",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with thanks or silence and ordinary care. Nothing here guarantees health, longevity, prosperity, luck, sin removal, protection, horoscope change, dosha reduction, Sade Sati relief, merit or liberation.",
+            "source_ids": [
+              "drik-ratha-saptami-pune-2027",
+              "devam-surya-shani-batch-4",
+              "vishnu-purana-wilson-iii-2",
+              "nasa-solar-viewing-safety",
+              "icmr-type1-diabetes-fasting",
+              "india-emergency-112"
+            ],
+            "scope_note": "No guaranteed result."
+          },
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4",
+            "vishnu-purana-wilson-iii-2",
+            "nasa-solar-viewing-safety",
+            "icmr-type1-diabetes-fasting",
+            "india-emergency-112"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "ratha-saptami-calendar-en",
+          "scope": "Calendar and recurrence",
+          "difference": "Pune fixture: Saturday 13 February 2027; Magha Shukla Saptami; observational sunrise 07:04. Recompute the city, Saptami day assignment, Arunodaya and sunrise. Do not merge this annual observance with every Bhanu Saptami.",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "ratha-saptami-owner-en",
+          "scope": "Family, regional and temple owner",
+          "difference": "Current routes may include an Arunodaya bath, sunrise arghya, Surya prayer, lamp, incense, red flowers, fasting and charity. Every element is optional in this accessible household lane. Formal mantra, fast, homa, abhisheka, astrology, temple schedule and priestly services are not supplied generically.",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "ratha-saptami-accessible-en",
+          "scope": "Accessible complete substitution",
+          "difference": "Indoor, seated, no-object, non-fasting, no-flame and silent forms are complete; assistance and disability access take priority.",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "separate_lane_required": false
+        }
+      ],
+      "safety_and_boundaries": [
+        "Never stare at the Sun. No direct solar viewing, unsafe predawn travel, river entry, rooftop exposure, smoke or open flame is required.",
+        "Keep normal hydration, nutrition, prescribed medicine, child care, pregnancy/lactation needs, sleep and disability access; fasting is optional and may be unsafe.",
+        "Do not diagnose astrology, prescribe remedies, pour oil on public objects, handle hot oil or conduct homa/abhisheka without the responsible owner.",
+        "Treat health, wealth, sin, luck, justice, protection and astrological results only as attributed beliefs, never promises. For an immediate emergency in India call 112."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "ratha-saptami"
+      ],
+      "title": "रथ सप्तमी",
+      "short_answer": "रथ सप्तमी माघ शुक्ल सप्तमी का वार्षिक सूर्य-पर्व है। पुणे उदाहरण: शनिवार 13 फ़रवरी 2027; माघ शुक्ल सप्तमी; दृश्य सूर्योदय 07:04। नगर, सप्तमी-दिन, अरुणोदय और सूर्योदय फिर निकालें। पूर्ण घरेलू रूप बिना उपवास और कम सामग्री वाला है: तिथि जाँचें, सामान्य देखभाल रखें, स्रोत-चिह्नित कथा से स्मरण करें, प्रार्थना/चिंतन/सेवा चुनें और निश्चित फल के बिना समापन करें।",
+      "significance": {
+        "text": "सीमित अर्थ सावधानी, नैतिक आचरण, कृतज्ञता और जिम्मेदार कर्म से स्मरण है। इस वार्षिक पर्व को हर भानु सप्तमी में न मिलाएँ। क्षेत्रीय, कुल, मंदिर, मंत्र, उपवास, ज्योतिष और औपचारिक अर्पण अपने नामित स्वामी के पास रहते हैं।",
+        "source_ids": [
+          "drik-ratha-saptami-pune-2027",
+          "devam-surya-shani-batch-4",
+          "vishnu-purana-wilson-iii-2",
+          "nasa-solar-viewing-safety",
+          "icmr-type1-diabetes-fasting",
+          "india-emergency-112"
+        ],
+        "scope_note": "सीमित जीवित-अभ्यास मार्गदर्शन, सार्वभौमिक राष्ट्रीय विधि नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "ratha-saptami-identity-hi",
+          "title": "स्रोत-चिह्नित पर्व पहचान",
+          "summary": "वर्तमान व्यवहारिक पंचांग इसे सूर्य जयंती कहता है और इस दिन सूर्य द्वारा जगत को प्रकाशित करना आरम्भ करने की मान्यता देता है। यह स्रोत-चिह्नित पर्व-कथा है, सिद्ध सार्वभौमिक उद्गम नहीं।",
+          "tradition_scope": "surya-ratha-saptami",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "ratha-saptami-genealogy-limit-hi",
+          "title": "स्थिर वंश-कथा और उसकी सीमा",
+          "summary": "विष्णु पुराण 3.2 का सार्वजनिक-डोमेन अनुवाद सूर्य–संज्ञा–छाया–शनैश्चर की वंश-कथा देता है। वह स्वयं इस पर्व, आधुनिक तिथि, सामग्री या फल का नियम नहीं देता।",
+          "tradition_scope": "Vishnu Purana III.2 source layer",
+          "source_ids": [
+            "vishnu-purana-wilson-iii-2",
+            "devam-surya-shani-batch-4"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "ratha-saptami-current-practice-hi",
+          "population_scope": "इस नामित पर्व को मानने वाले परिवार और मंदिर-भागीदार",
+          "description": "वर्तमान मार्गों में अरुणोदय-स्नान, सूर्योदय-अर्घ्य, सूर्य-प्रार्थना, दीप, धूप, लाल फूल, उपवास और दान मिल सकते हैं। इस सरल घरेलू मार्ग में हर वस्तु वैकल्पिक है।",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "ratha-saptami-minimum-hi",
+          "label": "संक्षिप्त पूर्ण रूप",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "औपचारिक मंत्र, उपवास, होम, अभिषेक, ज्योतिष, मंदिर समय, प्रत्यक्ष सूर्य-दर्शन या निश्चित फल का अधिकार नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "मौजूदा चित्र या कोई वस्तु नहीं",
+              "required": false,
+              "substitutions": [
+                "मौखिक स्मरण",
+                "स्रोत-चिह्नित पाठ",
+                "मौन"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "साधारण जल का छोटा पात्र",
+              "required": false,
+              "substitutions": [
+                "जल-अर्पण नहीं",
+                "घर के भीतर प्रार्थना",
+                "सेवा-कर्म"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "वैकल्पिक फूल, दीप-विकल्प या दान-पर्ची",
+              "required": false,
+              "substitutions": [
+                "बिजली का प्रकाश",
+                "चित्र",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नगर, मान्य पंचांग और नियम जाँचें: Magha Shukla Saptami। 2027 की हर दिखाई तिथि और घड़ी को जाँचा उदाहरण मानें, पूरे भारत की स्थायी तिथि नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, शिशु/बाल आहार, गर्भावस्था या स्तनपान पोषण, नींद और सुगमता बनाए रखें। उपवास अपने-आप आरम्भ न करें।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "घर या बाहर साफ और स्थिर स्थान चुनें। मौजूदा चित्र या कोई वस्तु न लें; खरीद, आग, धुआँ, तेल, नदी, छत या भीड़ आवश्यक नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "वर्तमान व्यवहारिक पंचांग इसे सूर्य जयंती कहता है और इस दिन सूर्य द्वारा जगत को प्रकाशित करना आरम्भ करने की मान्यता देता है। यह स्रोत-चिह्नित पर्व-कथा है, सिद्ध सार्वभौमिक उद्गम नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अर्घ्य दें तो सुरक्षित खड़े होकर थोड़ा जल पात्र या मिट्टी में डालें और सूर्य को सीधे न देखें; घर के भीतर प्रार्थना भी पूर्ण है।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "धन्यवाद या मौन और सामान्य देखभाल से समापन करें। यहाँ स्वास्थ्य, दीर्घायु, समृद्धि, भाग्य, पाप-नाश, रक्षा, कुंडली-परिवर्तन, दोष-शांति, साढ़ेसाती राहत, पुण्य या मुक्ति की गारंटी नहीं।",
+            "source_ids": [
+              "drik-ratha-saptami-pune-2027",
+              "devam-surya-shani-batch-4",
+              "vishnu-purana-wilson-iii-2",
+              "nasa-solar-viewing-safety",
+              "icmr-type1-diabetes-fasting",
+              "india-emergency-112"
+            ],
+            "scope_note": "निश्चित फल नहीं।"
+          },
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4",
+            "vishnu-purana-wilson-iii-2",
+            "nasa-solar-viewing-safety",
+            "icmr-type1-diabetes-fasting",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "ratha-saptami-standard-hi",
+          "label": "घरेलू अर्थ और अभ्यास",
+          "tier": "standard",
+          "setting": "household",
+          "authority_scope": "औपचारिक मंत्र, उपवास, होम, अभिषेक, ज्योतिष, मंदिर समय, प्रत्यक्ष सूर्य-दर्शन या निश्चित फल का अधिकार नहीं।",
+          "form": "traditional_household",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "मौजूदा चित्र या कोई वस्तु नहीं",
+              "required": false,
+              "substitutions": [
+                "मौखिक स्मरण",
+                "स्रोत-चिह्नित पाठ",
+                "मौन"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "साधारण जल का छोटा पात्र",
+              "required": false,
+              "substitutions": [
+                "जल-अर्पण नहीं",
+                "घर के भीतर प्रार्थना",
+                "सेवा-कर्म"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "वैकल्पिक फूल, दीप-विकल्प या दान-पर्ची",
+              "required": false,
+              "substitutions": [
+                "बिजली का प्रकाश",
+                "चित्र",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नगर, मान्य पंचांग और नियम जाँचें: Magha Shukla Saptami। 2027 की हर दिखाई तिथि और घड़ी को जाँचा उदाहरण मानें, पूरे भारत की स्थायी तिथि नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, शिशु/बाल आहार, गर्भावस्था या स्तनपान पोषण, नींद और सुगमता बनाए रखें। उपवास अपने-आप आरम्भ न करें।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "घर या बाहर साफ और स्थिर स्थान चुनें। मौजूदा चित्र या कोई वस्तु न लें; खरीद, आग, धुआँ, तेल, नदी, छत या भीड़ आवश्यक नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "वर्तमान व्यवहारिक पंचांग इसे सूर्य जयंती कहता है और इस दिन सूर्य द्वारा जगत को प्रकाशित करना आरम्भ करने की मान्यता देता है। यह स्रोत-चिह्नित पर्व-कथा है, सिद्ध सार्वभौमिक उद्गम नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अर्घ्य दें तो सुरक्षित खड़े होकर थोड़ा जल पात्र या मिट्टी में डालें और सूर्य को सीधे न देखें; घर के भीतर प्रार्थना भी पूर्ण है।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "एक विकल्प चुनें: परिवार-परिचित प्रार्थना, स्रोत-चिह्नित पाठ, शांत चिंतन, क्षमा या जिम्मेदार सुधार, सेवा अथवा सामर्थ्य में दान।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "धन्यवाद या मौन से बंद करें, स्थान साफ-सूखा करें, सामग्री सुरक्षित रखें, सामान्य देखभाल जारी रखें और निश्चित फल न बताएं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "धन्यवाद या मौन और सामान्य देखभाल से समापन करें। यहाँ स्वास्थ्य, दीर्घायु, समृद्धि, भाग्य, पाप-नाश, रक्षा, कुंडली-परिवर्तन, दोष-शांति, साढ़ेसाती राहत, पुण्य या मुक्ति की गारंटी नहीं।",
+            "source_ids": [
+              "drik-ratha-saptami-pune-2027",
+              "devam-surya-shani-batch-4",
+              "vishnu-purana-wilson-iii-2",
+              "nasa-solar-viewing-safety",
+              "icmr-type1-diabetes-fasting",
+              "india-emergency-112"
+            ],
+            "scope_note": "निश्चित फल नहीं।"
+          },
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4",
+            "vishnu-purana-wilson-iii-2",
+            "nasa-solar-viewing-safety",
+            "icmr-type1-diabetes-fasting",
+            "india-emergency-112"
+          ]
+        },
+        {
+          "procedure_id": "ratha-saptami-elaborate-hi",
+          "label": "विस्तृत परिवार या मंदिर-तैयारी रूप",
+          "tier": "elaborate",
+          "setting": "family_led",
+          "authority_scope": "औपचारिक मंत्र, उपवास, होम, अभिषेक, ज्योतिष, मंदिर समय, प्रत्यक्ष सूर्य-दर्शन या निश्चित फल का अधिकार नहीं।",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 40,
+          "materials": [
+            {
+              "item": "मौजूदा चित्र या कोई वस्तु नहीं",
+              "required": false,
+              "substitutions": [
+                "मौखिक स्मरण",
+                "स्रोत-चिह्नित पाठ",
+                "मौन"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "साधारण जल का छोटा पात्र",
+              "required": false,
+              "substitutions": [
+                "जल-अर्पण नहीं",
+                "घर के भीतर प्रार्थना",
+                "सेवा-कर्म"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            },
+            {
+              "item": "वैकल्पिक फूल, दीप-विकल्प या दान-पर्ची",
+              "required": false,
+              "substitutions": [
+                "बिजली का प्रकाश",
+                "चित्र",
+                "कुछ नहीं"
+              ],
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नगर, मान्य पंचांग और नियम जाँचें: Magha Shukla Saptami। 2027 की हर दिखाई तिथि और घड़ी को जाँचा उदाहरण मानें, पूरे भारत की स्थायी तिथि नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, शिशु/बाल आहार, गर्भावस्था या स्तनपान पोषण, नींद और सुगमता बनाए रखें। उपवास अपने-आप आरम्भ न करें।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "घर या बाहर साफ और स्थिर स्थान चुनें। मौजूदा चित्र या कोई वस्तु न लें; खरीद, आग, धुआँ, तेल, नदी, छत या भीड़ आवश्यक नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "वर्तमान व्यवहारिक पंचांग इसे सूर्य जयंती कहता है और इस दिन सूर्य द्वारा जगत को प्रकाशित करना आरम्भ करने की मान्यता देता है। यह स्रोत-चिह्नित पर्व-कथा है, सिद्ध सार्वभौमिक उद्गम नहीं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "अर्घ्य दें तो सुरक्षित खड़े होकर थोड़ा जल पात्र या मिट्टी में डालें और सूर्य को सीधे न देखें; घर के भीतर प्रार्थना भी पूर्ण है।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "एक विकल्प चुनें: परिवार-परिचित प्रार्थना, स्रोत-चिह्नित पाठ, शांत चिंतन, क्षमा या जिम्मेदार सुधार, सेवा अथवा सामर्थ्य में दान।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "धन्यवाद या मौन से बंद करें, स्थान साफ-सूखा करें, सामग्री सुरक्षित रखें, सामान्य देखभाल जारी रखें और निश्चित फल न बताएं।",
+              "why": "समय, स्रोत, सुरक्षा और स्वामी-सीमा स्पष्ट रहती है।",
+              "source_ids": [
+                "drik-ratha-saptami-pune-2027",
+                "devam-surya-shani-batch-4",
+                "vishnu-purana-wilson-iii-2",
+                "nasa-solar-viewing-safety",
+                "icmr-type1-diabetes-fasting",
+                "india-emergency-112"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "धन्यवाद या मौन और सामान्य देखभाल से समापन करें। यहाँ स्वास्थ्य, दीर्घायु, समृद्धि, भाग्य, पाप-नाश, रक्षा, कुंडली-परिवर्तन, दोष-शांति, साढ़ेसाती राहत, पुण्य या मुक्ति की गारंटी नहीं।",
+            "source_ids": [
+              "drik-ratha-saptami-pune-2027",
+              "devam-surya-shani-batch-4",
+              "vishnu-purana-wilson-iii-2",
+              "nasa-solar-viewing-safety",
+              "icmr-type1-diabetes-fasting",
+              "india-emergency-112"
+            ],
+            "scope_note": "निश्चित फल नहीं।"
+          },
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4",
+            "vishnu-purana-wilson-iii-2",
+            "nasa-solar-viewing-safety",
+            "icmr-type1-diabetes-fasting",
+            "india-emergency-112"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "ratha-saptami-calendar-hi",
+          "scope": "पंचांग और आवृत्ति",
+          "difference": "पुणे उदाहरण: शनिवार 13 फ़रवरी 2027; माघ शुक्ल सप्तमी; दृश्य सूर्योदय 07:04। नगर, सप्तमी-दिन, अरुणोदय और सूर्योदय फिर निकालें। इस वार्षिक पर्व को हर भानु सप्तमी में न मिलाएँ।",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "ratha-saptami-owner-hi",
+          "scope": "कुल, क्षेत्र और मंदिर स्वामी",
+          "difference": "वर्तमान मार्गों में अरुणोदय-स्नान, सूर्योदय-अर्घ्य, सूर्य-प्रार्थना, दीप, धूप, लाल फूल, उपवास और दान मिल सकते हैं। इस सरल घरेलू मार्ग में हर वस्तु वैकल्पिक है। औपचारिक मंत्र, उपवास, होम, अभिषेक, ज्योतिष, मंदिर समय और पुरोहित सेवा सामान्य रूप से नहीं दी जाती।",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "ratha-saptami-accessible-hi",
+          "scope": "सुगम पूर्ण विकल्प",
+          "difference": "घर के भीतर, बैठकर, बिना वस्तु, बिना उपवास, बिना आग और मौन रूप पूर्ण हैं; सहायता और दिव्यांग-सुगमता पहले है।",
+          "source_ids": [
+            "drik-ratha-saptami-pune-2027",
+            "devam-surya-shani-batch-4"
+          ],
+          "separate_lane_required": false
+        }
+      ],
+      "safety_and_boundaries": [
+        "सूर्य को कभी सीधे न देखें। प्रत्यक्ष सूर्य-दर्शन, असुरक्षित भोर-यात्रा, नदी, छत, धुआँ या खुली आग आवश्यक नहीं।",
+        "सामान्य पानी, पोषण, दवा, बाल-देखभाल, गर्भावस्था/स्तनपान आवश्यकता, नींद और दिव्यांग-सुगमता रखें; उपवास वैकल्पिक और असुरक्षित हो सकता है।",
+        "ज्योतिषीय निदान या उपाय न लिखें, सार्वजनिक वस्तु पर तेल न डालें, गरम तेल न सँभालें और जिम्मेदार स्वामी बिना होम/अभिषेक न करें।",
+        "स्वास्थ्य, धन, पाप, भाग्य, न्याय, रक्षा और ज्योतिषीय फल को केवल स्रोत-चिह्नित मान्यता मानें, वादा नहीं। भारत में तत्काल आपात स्थिति पर 112 करें।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [
+      "Not projected, hosted or published; formal temple, mantra, fast, homa, abhisheka and astrology routes remain current-owner responsibilities."
+    ],
+    "review_status": "internal_beta_reviewed"
+  }
+}

@@ -553,6 +553,20 @@ remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
 
+## Evidence-first Surya and Shani observance checkpoint
+
+Four distinct answers are complete without turning co-listed names into
+duplicate rites: Ratha Saptami, recurring Bhanu Saptami, Shani Jayanti, and
+recurring Shani Trayodashi. The batch records annual versus recurring rules,
+the North/South lunar-month naming difference for one Shani Jayanti occurrence,
+and the Saturday-Trayodashi/Shani-Pradosh overlap. Consumer routes are bilingual,
+non-fasting by default, safe for vision and ordinary care, and route formal
+temple, mantra, homa, abhisheka, oil and astrology work to named owners.
+
+Exact accepted-authoring coverage is now **190 completed after freeze / 18
+remaining / 208 accepted denominator**. Authored still does not mean projected,
+hosted, independently released or published.
+
 ## Evidence-first regional lunar-phase batch checkpoint
 
 Thirteen remaining accepted full-/new-moon regional labels are complete as
