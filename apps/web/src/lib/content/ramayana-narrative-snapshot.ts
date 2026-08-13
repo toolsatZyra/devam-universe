@@ -81,6 +81,7 @@ import { RAMAYANA_MANTHARA_TWO_BOONS_LIBRARY_SCENES } from "../../data/ramayana-
 import { RAMAYANA_CITY_WITHOUT_KING_LIBRARY_SCENES } from "../../data/ramayana-city-without-king-library-scenes";
 import { RAMAYANA_FAMILY_ASKS_HOME_LIBRARY_SCENES } from "../../data/ramayana-family-asks-home-library-scenes";
 import { RAMAYANA_KHARA_MARCH_LIBRARY_SCENES } from "../../data/ramayana-khara-march-library-scenes";
+import { RAMAYANA_RISHYASRINGA_LIBRARY_SCENES } from "../../data/ramayana-rishyasringa-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
@@ -242,6 +243,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "city-without-king",
     "family-asks-rama-home",
     "khara-marches-under-omens",
+    "rishyasringa-brought-from-seclusion",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
     "two-lineages-reach-lanka",
@@ -348,6 +350,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_CITY_WITHOUT_KING_LIBRARY_SCENES,
     ...RAMAYANA_FAMILY_ASKS_HOME_LIBRARY_SCENES,
     ...RAMAYANA_KHARA_MARCH_LIBRARY_SCENES,
+    ...RAMAYANA_RISHYASRINGA_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
@@ -460,7 +463,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
   const sourcePartitionedOutlineById = new Map(sourcePartitionedOutlines.map((outline) => [outline.id, outline]));
   for (const playable of [
     ...RAMAYANA_BEGINNINGS_PLAYABLE_SCENES,
-    ...RAMAYANA_HEIRS_PLAYABLE_SCENES,
+    ...RAMAYANA_HEIRS_PLAYABLE_SCENES.filter(({ id }) => id !== "rishyasringa-brought-from-seclusion"),
     ...RAMAYANA_PRINCES_PLAYABLE_SCENES,
     ...RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES,
     ...RAMAYANA_SITA_BOW_PLAYABLE_SCENES,

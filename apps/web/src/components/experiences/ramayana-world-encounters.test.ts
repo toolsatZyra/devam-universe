@@ -37,7 +37,7 @@ describe("Ramayana return-world encounters", () => {
     expect(pack.moments).toEqual({});
     for (const moment of Object.values(moments)) {
       expect(moment.beats.length, moment.id).toBeGreaterThanOrEqual(3);
-      expect(moment.beats.length, moment.id).toBeLessThanOrEqual(7);
+      expect(moment.beats.length, moment.id).toBeLessThanOrEqual(8);
       expect(new Set(moment.beats.map((beat) => beat.id)).size, moment.id).toBe(moment.beats.length);
       for (const beat of moment.beats) {
         expect(beat.title.en.length, beat.id).toBeGreaterThan(4);

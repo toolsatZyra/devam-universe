@@ -20,6 +20,7 @@ describe("Ramayana selected-expression adversarial review", () => {
       .filter((scene) => scene.beats.length < 3 || scene.beats.length > 7)
       .map((scene) => [scene.id, scene.beats.length])).toEqual([
         ["bhagiratha-brings-ganga-from-sky-to-ashes", 8],
+        ["king-trapped-by-word", 8],
         ["mahendra-launches-the-messenger", 12],
         ["despair-yields-to-ashoka-grove", 8],
         ["trijatas-dream-breaks-the-circle", 9],
@@ -88,11 +89,14 @@ describe("Ramayana selected-expression adversarial review", () => {
       .filter((turn) => turn.scenes < 3 || turn.beats < 12)).toEqual([]);
   });
 
-  it("keeps the coronation and Janasthana depth repairs on exact non-overlapping source ranges", () => {
+  it("keeps the coronation, Rishyasringa, and Janasthana depth repairs on exact non-overlapping source ranges", () => {
     const repairedScenes = [
       ["dasharatha-chooses-rama", 1, 2, 2],
       ["ayodhya-prepares-the-heir", 3, 4, 2],
       ["rama-and-sita-keep-the-night", 5, 6, 2],
+      ["sumantra-names-rishyasringa-in-an-old-prediction", 9, 9, 1],
+      ["anga-draws-rishyasringa-from-seclusion", 10, 10, 1],
+      ["shanta-and-rishyasringa-travel-to-ayodhya", 11, 11, 1],
       ["surpanakha-brings-fourteen-fighters", 18, 20, 3],
       ["khara-turns-humiliation-into-a-mass-march", 21, 21, 1],
       ["the-march-crosses-a-sky-of-omens", 22, 22, 1],

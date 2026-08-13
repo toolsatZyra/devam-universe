@@ -9,7 +9,7 @@ describe("Ramayana district payload", () => {
     expect(response.headers.get("cache-control")).toContain("immutable");
     expect(payload).toMatchObject({ ok: true, districtId: "ayodhya-exile-v1" });
     expect(Object.keys(payload.moments)).toEqual(["coronation-dawn", "manthara-sees-city", "fear-becomes-demands", "king-trapped-by-word", "rama-crosses-celebration", "rama-accepts-exile", "sita-chooses-road", "lakshmana-joins"]);
-    expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(36);
+    expect(Object.values(payload.moments).flatMap((moment) => moment.beats)).toHaveLength(40);
   });
 
   it("serves the contiguous first-rivers district without pulling another district into the payload", async () => {

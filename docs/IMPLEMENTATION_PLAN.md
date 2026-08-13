@@ -7,11 +7,24 @@ edition comparison, verse counts, citations and scholarly dispute in the normal
 experience. Provenance, rights, source identity, uncertainty and materially
 important variants remain mandatory internal grounding, not primary UI.
 
+Checkpoint 2026-08-13 (Ramayana denominator-first library pass):
+`knowledge_packs/inventories/ramayana-story-universe-v1.json` now fixes and
+enumerates the selected Ramayana MVP denominator at 49 story cycles, 517
+playable scenes, 2,340 bilingual beats, 18 living places, 18 temples, and 12
+festivals or performance traditions. All 48 registered living-world items now
+have substantial approachable English and Hindi story/context records,
+exploration links, evidence references, and explicit epic-belief/history/current
+practice boundaries. The living-item authoring queue is empty; completion of
+the selected Ramayana collection still requires the named-character and
+narrative-place reconciliation across all 652 source units plus adversarial
+continuity review. These counters are a versioned selected scope, not every
+Ramayana expression, place claim, temple, or living tradition.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
 compass, and all 49 turns corpus-playable in the prepared projection through
-515 substantial scenes and 2,325
+517 substantial scenes and 2,340
 bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
 hidden assault and final battle; Lanka's civilian and family losses; Rama's
 rejection of collective punishment; Ravana's grief-driven threat to Sita;
@@ -55,7 +68,7 @@ still illustrates 55 scenes across seven districts and gives only 14 turns a
 direct visual entrance; 35 turns still stop at orientation before their
 authored scenes.
 The shared Ramayana projection now retains at least one narrative place for all
-515 scenes and compiles 514 story-order, 94 character-path, 50 place-echo and
+517 scenes and compiles 516 story-order, 94 character-path, 50 place-echo and
 22 parallel-thread links. Its public RPC returns reversible story connections,
 characters, places and threads while continuing to omit source apparatus. This
 projection remains prepared locally and has not been applied to hosted Supabase.
@@ -292,7 +305,7 @@ It found five thin turns that needed additional narrative staging, five long
 scenes that need internal phase navigation, and five genuine source-apparatus
 leaks in consumer copy; the copy leaks are repaired. All five thin turns now
 clear the provisional depth floor. The accumulated compression repairs now
-provide 159 exact data-only scenes replacing 39 compressed story blocks. The same source-partitioned repair now
+provide 162 exact data-only scenes replacing 40 compressed story blocks. The same source-partitioned repair now
 expands the ten-section `lakshmana-joins` departure summary into five scenes
 covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
 farewells, and expands the seven-section `rama-accepts-exile` summary into
@@ -479,7 +492,18 @@ ableist and self-diminishing comparisons, crowd consent, grief suppression,
 threats toward Kaikeyi, caste and life-stage rules, royal marriage transfer,
 male-heir theology, and inherited obligation without erasing the brothers'
 unresolved ethical disagreement. It also replaces
-the `khara-marches-under-omens` summary across logical Aranya 21–24 with four
+the Balakanda 9–11 `rishyasringa-brought-from-seclusion` summary with three
+exact scenes and fifteen bilingual beats. Sumantra's remembered prediction,
+Rishyasringa's deliberately narrow upbringing, Anga's drought, the court's
+delegated deception, Rishyasringa's sincere hospitality, the courtesans'
+commissioned concealment, the return route to Anga, the rain, the unrecorded
+deliberation around the marriage with Shanta, Dasharatha's later request, the
+couple's journey, and Ayodhya's welcome now remain distinct. Literary rainfall
+causation is not science; delegated manipulation retains institutional
+responsibility; limited experience is not consent; relief does not invent
+Shanta's or Rishyasringa's unrecorded choices; and royal friendship does not
+prove equal refusal power. It also replaces the
+`khara-marches-under-omens` summary across logical Aranya 21–24 with four
 exact scenes and twenty bilingual beats while preserving the retained shift to
 printed sections XXII–XXV. Khara's honour-driven mobilisation, the 14,000-person
 march, literary omens and ecological disruption, Rama's shelter decision, the
@@ -505,7 +529,7 @@ the Sagara-to-Ganga summary with six source-unit scenes for Sagara's family, the
 Kapila, Anshuman's recovery, Bhagiratha's descent of Ganga, and the completed
 water rites, while removing the prior unsupported claim that the selected
 source described Ganga consenting to the descent. It also confirms the
-larger experience gap between the complete 515-scene authored projection and
+larger experience gap between the complete 517-scene authored projection and
 the 55 scenes currently illustrated in the live journey. On the user's
 2026-08-13 direction, image generation and UI-world projection are paused; the
 final six-section summary identified by the first audit has also been split into
