@@ -1,0 +1,1444 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "makar-sankranti-north-west-household-2027-v1",
+  "observance_slugs": [
+    "makar-sankranti"
+  ],
+  "applicability": {
+    "region_codes": [
+      "IN-DL",
+      "north-india",
+      "west-india"
+    ],
+    "tradition_codes": [
+      "general-surya-devotional-household",
+      "lay-seasonal-observance"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "household",
+      "individual",
+      "family_led",
+      "temple",
+      "community"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which city and accepted family or temple Panchang should resolve the solar-ingress day and usable period?",
+      "Does your family follow a regional, sampradaya, temple or shraddha procedure that must replace this bounded lay guide?",
+      "Do you want a home remembrance, ordinary temple visit, authorised-ghat participation or only the regional recreational activity?",
+      "Could fasting, diabetes, medication, sesame allergy, sugar restriction, flame, direct Sun exposure, deep water, crowds, rooftops, kite thread or power lines create a safety risk?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "IN-DL",
+        "tradition_code": "general-surya-devotional-household",
+        "observance_slug": "makar-sankranti"
+      },
+      {
+        "region_code": "north-india",
+        "tradition_code": "lay-seasonal-observance",
+        "observance_slug": "makar-sankranti"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "lay-seasonal-observance",
+        "observance_slug": "makar-sankranti"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "makar-sankranti",
+        "language_code": "en",
+        "note": "This is a Delhi-reference North/West lay household and ordinary participant lane. It separates only materially different regional observances; family, temple and local Panchang authority overrides it."
+      },
+      {
+        "observance_slug": "makar-sankranti",
+        "language_code": "hi",
+        "note": "यह दिल्ली-संदर्भित उत्तर/पश्चिम भारतीय गृह और सामान्य सहभागिता मार्ग है। केवल वास्तविक बड़े अंतर पर क्षेत्रीय मार्ग अलग होता है; परिवार, मंदिर और स्थानीय पंचांग की प्रामाणिक विधि इसे प्रतिस्थापित करती है।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-makar-sankranti-delhi-2027"
+    ],
+    "timing_kind": "astronomical",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "solar-ingress-makara-local-punya-kala-v1",
+    "closing_decision_rule_id": "no-fast-close-after-household-remembrance-or-venue-exit-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Delhi fixture: ingress 21:14 on 14 January 2027; observance and Punya Kala on 15 January 2027, 07:15-17:46, with Maha Punya Kala 07:15-09:00. Recompute for location and accepted Panchang; recheck every live venue."
+  },
+  "sources": [
+    {
+      "source_id": "drik-makar-sankranti-delhi-2027",
+      "title": "2027 Makar Sankranti date and time for Delhi",
+      "publisher": "DrikPanchang",
+      "source_role": "Delhi practitioner-calendar fixture and descriptive evidence for Punya Kala, Surya worship, bathing, charity and specialist shraddha",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/sankranti/makar-sankranti-date-time.html?geoname-id=1273294",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-01-15",
+        "timezone": "Asia/Kolkata",
+        "sankranti_moment": "2027-01-14T21:14",
+        "punya_kala": "2027-01-15T07:15/17:46",
+        "maha_punya_kala": "2027-01-15T07:15/09:00"
+      }
+    },
+    {
+      "source_id": "ganguli-bhishma-uttarayana",
+      "title": "Mahabharata, Anushasana Parva: Bhishma and the Sun's northern course",
+      "publisher": "Kisari Mohan Ganguli public-domain translation via Internet Sacred Text Archive",
+      "source_role": "fixed epic narrative association for Bhishma awaiting the Sun's northern course; not a universal festival-origin claim",
+      "rights_lane": "derivative_allowed",
+      "url": "https://archive.sacred-texts.com/hin/m13/m13b133.htm",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "passage": "Bhishma observes the Sun entering its northerly course before departing",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "president-india-harvest-greeting-2026",
+      "title": "President's greetings on the eve of Lohri, Makar Sankranti, Pongal and Magh Bihu",
+      "publisher": "President of India",
+      "source_role": "current official public description of distinct harvest festivals, gratitude to nature and recognition of farmers",
+      "rights_lane": "citation_only",
+      "url": "https://www.presidentofindia.gov.in/press_releases/presidents-greetings-eve-lohri-makar-sankranti-pongal-and-magh-bihu-0",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "published": "2026-01-12",
+        "claim": "distinct festivals express agricultural traditions and gratitude"
+      }
+    },
+    {
+      "source_id": "akashvani-makar-sankranti-surya",
+      "title": "Aaj Savere festival bulletin mentioning Makar Sankranti",
+      "publisher": "Akashvani / News On AIR",
+      "source_role": "current cultural corroboration for Surya, Makara solar transition and regional naming",
+      "rights_lane": "citation_only",
+      "url": "https://newsonair.gov.in/bulletins-detail/aaj-savere-641/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13",
+        "topic": "Makar Sankranti"
+      }
+    },
+    {
+      "source_id": "incredible-india-sidhi-makar-fair-2027",
+      "title": "Makar Sankranti Fair, Madhya Pradesh",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "scoped living-practice evidence for Sidhi river bathing, donation, sesame/jaggery and community worship",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/festivals-and-events/madhya-pradesh/makar-sankranti-fair",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "location": "Sidhi, Madhya Pradesh",
+        "event_dates": "2027-01-14/2027-01-15"
+      }
+    },
+    {
+      "source_id": "gujarat-tourism-uttarayan-kite",
+      "title": "International Kite Festival: About Uttarayan",
+      "publisher": "Tourism Corporation of Gujarat Limited",
+      "source_role": "official Gujarat-specific evidence for Uttarayan kite-flying as a cultural expression",
+      "rights_lane": "citation_only",
+      "url": "https://ikf.gujarattourism.com/about.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "scope": "Gujarat and Ahmedabad",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "incredible-india-patna-tilkut",
+      "title": "15 must-have local dishes in Patna",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "Bihar-specific evidence for tilkut association with Makar Sankranti",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/bihar/patna/15-must-have-local-dishes-in-patna",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "food": "tilkut",
+        "festival": "Makar Sankranti"
+      }
+    },
+    {
+      "source_id": "incredible-india-raipur-tilgur",
+      "title": "Exploring the culinary delights of Raipur",
+      "publisher": "Ministry of Tourism, Government of India",
+      "source_role": "Chhattisgarh-specific evidence for tilgur as a local sesame-jaggery food",
+      "rights_lane": "citation_only",
+      "url": "https://www.incredibleindia.gov.in/en/chhattisgarh/raipur/exploring-the-culinary-delights-of-raipur",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "food": "tilgur",
+        "scope": "Raipur, Chhattisgarh"
+      }
+    },
+    {
+      "source_id": "ngt-manjha-order-2017",
+      "title": "Order in Original Application No. 384 of 2016 concerning kite thread",
+      "publisher": "National Green Tribunal",
+      "source_role": "legal and injury-safety evidence against synthetic, nylon, glass- or metal-coated kite thread",
+      "rights_lane": "citation_only",
+      "url": "https://dste.py.gov.in/ppcc/pdf/Legal/Hon%E2%80%99ble%20NGT%20Orders/384%20of%202016%20dt.%2011.07.2017.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "order_date": "2017-07-11",
+        "topic": "manjha"
+      }
+    },
+    {
+      "source_id": "kpdcl-kite-electrical-safety",
+      "title": "Kite-flying electrical safety advisory",
+      "publisher": "Kashmir Power Distribution Corporation Limited",
+      "source_role": "authoritative electrical-safety boundary for kite-flying near overhead lines",
+      "rights_lane": "citation_only",
+      "url": "https://kpdcl.jk.gov.in/page/aElJM1lMbTkrcVhET0NsdFRhbDkvQT09",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "avoid overhead power lines",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "gidm-holy-dip-safety-2025",
+      "title": "Concept note on safety during holy dips",
+      "publisher": "Gujarat Institute of Disaster Management",
+      "source_role": "current government disaster-safety evidence for currents, deep water, crowd control, designated zones and lifeguards",
+      "rights_lane": "citation_only",
+      "url": "https://gidm.gujarat.gov.in/sites/default/files/concept_note/2025-04-08-Concept%20Note.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "date": "2025-04-08",
+        "topics": [
+          "drowning",
+          "stampede",
+          "designated zones",
+          "lifeguards"
+        ]
+      }
+    },
+    {
+      "source_id": "ntr-police-ghat-safety",
+      "title": "Krishna Pushkaralu: safety and conduct guidance",
+      "publisher": "NTR District Police",
+      "source_role": "official participant guidance for authorised ghats, queues, minimal baggage, no soap, plastic or litter",
+      "rights_lane": "citation_only",
+      "url": "https://vijayawadapolice.ap.gov.in/?page_id=10456",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "ghat participant safety",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "mohfw-diabetes-prolonged-fasting-faq43",
+      "title": "Diabetes Mellitus FAQ, question 43: prolonged fasting",
+      "publisher": "Directorate General of Health Services, Ministry of Health and Family Welfare, Government of India",
+      "source_role": "medical boundary for diabetes, insulin, medication timing and prolonged fasting",
+      "rights_lane": "citation_only",
+      "url": "https://dghs.mohfw.gov.in/uploads/assets/FTQHV3zrwD8qHFnFiXRXIrjAo6BFUdILJFfyAcqk.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "question": 43,
+        "topic": "prolonged fasting"
+      }
+    },
+    {
+      "source_id": "fssai-sesame-allergen",
+      "title": "SOP for handling an allergen guest",
+      "publisher": "Food Safety and Standards Authority of India",
+      "source_role": "food-safety evidence for sesame allergy disclosure and cross-contact control",
+      "rights_lane": "citation_only",
+      "url": "https://hygiene.fssai.gov.in/files/reports/quiz15152547_sop%20-handling%20allergen%20guest-%2008.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "allergen": "sesame",
+        "topic": "cross-contact"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "makar-sankranti"
+      ],
+      "title": "Makar Sankranti: North/West household and participant guide",
+      "short_answer": "For Delhi, observe on Friday 15 January 2027; the cited Punya Kala is 07:15-17:46. Recalculate outside Delhi. Keep your established family form; otherwise bathe safely at home, remember Surya, express gratitude, offer or share safe food if desired, give within your means and close without treating fasting, river bathing or kite-flying as compulsory.",
+      "significance": {
+        "text": "Makar Sankranti marks the Sun's transition into Makara in the cited calendar and is widely associated with Surya, the northward seasonal course, harvest gratitude, nature and the work of farmers. Regional festivals around this season remain distinct rather than one national ritual.",
+        "source_ids": [
+          "drik-makar-sankranti-delhi-2027",
+          "akashvani-makar-sankranti-surya",
+          "president-india-harvest-greeting-2026"
+        ],
+        "scope_note": "North/West lay explanation; not a claim that every region, family or tradition assigns identical meaning."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "sun-enters-makara",
+          "title": "The calendar turning: Surya enters Makara",
+          "summary": "The practitioner calendar identifies the observance through the Sun's ingress into Makara and resolves a daylight Punya Kala when the Delhi ingress occurs after sunset. This is a timing and meaning frame, not a mythic origin story.",
+          "tradition_scope": "Contemporary practitioner-calendar explanation for the Delhi fixture",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "akashvani-makar-sankranti-surya"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "bhishma-awaits-uttarayana",
+          "title": "Bhishma waits for the northern course",
+          "summary": "In Ganguli's Mahabharata expression, Bhishma remains on the bed of arrows until the Sun turns to its northern course, then prepares to depart. Devam presents this as an epic Uttarayana association; the passage does not establish one universal origin or household vidhi for Makar Sankranti.",
+          "tradition_scope": "Mahabharata, Ganguli public-domain English expression",
+          "source_ids": [
+            "ganguli-bhishma-uttarayana"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "harvest-gratitude-plural-festivals",
+          "title": "One season, several named festivals",
+          "summary": "The President's greeting names Lohri, Makar Sankranti, Pongal and Magh Bihu separately while connecting them with agricultural traditions, nature and farmers. The useful story is one of seasonal gratitude and regional plurality, not a single national ceremony.",
+          "tradition_scope": "Contemporary official civic description",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "sidhi-river-fair-living-practice",
+          "title": "A living fair at Sidhi",
+          "summary": "Government tourism material describes a Makar Sankranti fair in Sidhi, Madhya Pradesh, with river bathing, donations, worship, sesame-jaggery foods and community activity. It documents one living place-based expression and does not prescribe river bathing for every user.",
+          "tradition_scope": "Current Sidhi, Madhya Pradesh fair description",
+          "source_ids": [
+            "incredible-india-sidhi-makar-fair-2027"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "north-west-household-surya-remembrance",
+          "population_scope": "Some North and West Indian lay households",
+          "description": "Households may bathe, remember or worship Surya, place a simple food offering, give charity and share seasonal foods during the locally resolved period. Fasting, exact materials and mantras vary and are not defaults here.",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "akashvani-makar-sankranti-surya"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "madhya-pradesh-fair-participation",
+          "population_scope": "Participants in documented Madhya Pradesh fair contexts such as Sidhi",
+          "description": "River bathing, donation, sesame-jaggery foods, worship and public activity occur in the cited fair. Safe authorised access and venue rules are essential.",
+          "source_ids": [
+            "incredible-india-sidhi-makar-fair-2027",
+            "gidm-holy-dip-safety-2025"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "gujarat-kite-recreation",
+          "population_scope": "Many Gujarat Uttarayan participants",
+          "description": "Kite-flying is a prominent cultural celebration. It is optional recreation, not a substitute for or required part of the household ritual answer.",
+          "source_ids": [
+            "gujarat-tourism-uttarayan-kite"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "regional-sesame-foods",
+          "population_scope": "Families in parts of Bihar, Chhattisgarh and other North/West contexts",
+          "description": "Sesame-jaggery foods such as tilkut and tilgur may be prepared or shared. Recipes and names vary; allergy and dietary safety override custom.",
+          "source_ids": [
+            "incredible-india-patna-tilkut",
+            "incredible-india-raipur-tilgur",
+            "fssai-sesame-allergen"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "makar-sankranti-north-west-en-minimum-v1",
+          "label": "10-minute material-light Surya remembrance",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Accessible Devam lay remembrance; not a formal puja, vrata, fast, shraddha or priest-led rite.",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "A locally resolved date and a safe quiet place",
+              "required": true,
+              "substitutions": [
+                "A brief seated pause at home"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "A source-labelled story or family-known prayer",
+              "required": false,
+              "substitutions": [
+                "Silent gratitude"
+              ],
+              "source_ids": [
+                "ganguli-bhishma-uttarayana",
+                "president-india-harvest-greeting-2026"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm the local observance date. Use 15 January 2027 only for the Delhi reference and do not copy its clock times elsewhere.",
+              "why": "Solar ingress and the usable daylight period are location-dependent.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Wash or bathe safely at home, then sit without looking directly at the Sun.",
+              "why": "Bathing is commonly described, while home bathing avoids unsafe water and direct Sun-gazing.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "gidm-holy-dip-safety-2025"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "In your own language, thank Surya, nature and the people whose work brings food to your home.",
+              "why": "This is a sourced meaning expressed without inventing a mantra or promised result.",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "akashvani-makar-sankranti-surya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Read or hear the Bhishma association above, or keep a short silence.",
+              "why": "The story remains source-labelled and optional.",
+              "source_ids": [
+                "ganguli-bhishma-uttarayana"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Set aside a safe food portion or affordable donation for a person or channel you trust.",
+              "why": "Charity is attested; the amount and recipient remain voluntary.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Close with gratitude in your own or your family's words. Eat normally and complete the donation when practical.",
+            "source_ids": [
+              "president-india-harvest-greeting-2026",
+              "drik-makar-sankranti-delhi-2027"
+            ],
+            "scope_note": "Plain lay close; no ritual result is promised."
+          },
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "ganguli-bhishma-uttarayana",
+            "president-india-harvest-greeting-2026"
+          ]
+        },
+        {
+          "procedure_id": "makar-sankranti-north-west-en-standard-v1",
+          "label": "30-minute bounded household remembrance",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "A bounded lay household form assembled from cited living-practice evidence; an established family practice replaces it.",
+          "form": "traditional_household",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "A clean household prayer place",
+              "required": true,
+              "substitutions": [
+                "A cleared table or quiet seated space"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "A small portion of ordinary food for naivedya",
+              "required": false,
+              "substitutions": [
+                "Fruit",
+                "No material offering"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "Sesame-jaggery food",
+              "required": false,
+              "substitutions": [
+                "A sesame-free family food",
+                "Fruit when sugar intake is restricted"
+              ],
+              "source_ids": [
+                "incredible-india-patna-tilkut",
+                "incredible-india-raipur-tilgur",
+                "fssai-sesame-allergen"
+              ]
+            },
+            {
+              "item": "Lamp",
+              "required": false,
+              "substitutions": [
+                "Electric lamp",
+                "No flame"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "Donation or shareable food",
+              "required": false,
+              "substitutions": [
+                "A later verified donation",
+                "A non-material act of help"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Resolve the date and any Punya Kala using your location and accepted Panchang; Delhi's 2027 fixture is 15 January.",
+              "why": "The ingress occurred after sunset in Delhi, so the cited calendar places the usable period on the following daylight date.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Clean the small space, wash or bathe safely, and gather only what your household can use without waste.",
+              "why": "Preparation is kept practical and non-hazardous.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "ntr-police-ghat-safety"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "State a simple intention to remember Surya and practise gratitude and generosity; do not invent a Sanskrit vow.",
+              "why": "The pack supports meaning without claiming mantra authority.",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "akashvani-makar-sankranti-surya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "If established in your home, light a lamp safely and place a small food offering; otherwise continue without materials.",
+              "why": "Naivedya is attested, but flame and food are not made mandatory.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Use a family-known Surya prayer or name. If none is known, speak gratitude plainly or remain silent.",
+              "why": "No mantra, pronunciation or repetition count is fabricated.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "akashvani-makar-sankranti-surya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Tell the source-labelled Bhishma story as an Uttarayana association, not as the one origin of every regional festival.",
+              "why": "This preserves the difference between epic association and universal history.",
+              "source_ids": [
+                "ganguli-bhishma-uttarayana"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Offer or set aside a donation or safe food share without attaching a guaranteed outcome.",
+              "why": "Charity is sourced while recipient, amount and result remain bounded.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 8,
+              "instruction": "Share edible food only after checking sesame, sugar and other dietary needs.",
+              "why": "Sesame foods are regional options and can be unsafe for some people.",
+              "source_ids": [
+                "fssai-sesame-allergen",
+                "incredible-india-patna-tilkut",
+                "incredible-india-raipur-tilgur"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank Surya in the family's customary words, extinguish flame, return ordinary food to hygienic use, and dispose of nothing in a river or public place.",
+            "source_ids": [
+              "drik-makar-sankranti-delhi-2027",
+              "ntr-police-ghat-safety"
+            ],
+            "scope_note": "A practical household close, not a priestly visarjana or shraddha close."
+          },
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "ganguli-bhishma-uttarayana",
+            "president-india-harvest-greeting-2026",
+            "fssai-sesame-allergen"
+          ]
+        },
+        {
+          "procedure_id": "makar-sankranti-north-west-en-elaborate-v1",
+          "label": "Ordinary temple or authorised-ghat participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor guidance only. Temple liturgy, priest-led offerings, shraddha and restricted rites remain with the institution or qualified family authority.",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "Current temple or ghat programme and local timing",
+              "required": true,
+              "substitutions": [
+                "Remain at home and use the household procedure"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "gidm-holy-dip-safety-2025"
+              ]
+            },
+            {
+              "item": "Minimal permitted belongings and drinking water",
+              "required": true,
+              "substitutions": [
+                "Items specified by the venue"
+              ],
+              "source_ids": [
+                "ntr-police-ghat-safety"
+              ]
+            },
+            {
+              "item": "Donation",
+              "required": false,
+              "substitutions": [
+                "Official digital donation",
+                "No donation"
+              ],
+              "source_ids": [
+                "incredible-india-sidhi-makar-fair-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Check the current venue schedule, entry rules, accessibility, weather, crowd advice and local Punya Kala before leaving.",
+              "why": "A calendar page does not supply a live institutional programme.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "gidm-holy-dip-safety-2025"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "If entering water, use only an authorised, supervised ghat or bathing zone. Skip it for deep water, strong current, crowding or any health concern; bathing at home is a complete safety substitute for this guide.",
+              "why": "Holy-dip settings carry drowning and crowd risks.",
+              "source_ids": [
+                "gidm-holy-dip-safety-2025",
+                "ntr-police-ghat-safety"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Carry minimal permitted items, follow queues and staff instructions, and do not use soap, plastic or leave offerings in the water.",
+              "why": "This protects participants and the site.",
+              "source_ids": [
+                "ntr-police-ghat-safety",
+                "gidm-holy-dip-safety-2025"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Receive darshan or join only the public parts of worship. Ask the temple about offerings; do not improvise at the shrine.",
+              "why": "Institutional authority determines temple procedure.",
+              "source_ids": [
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "If you wish, donate only through a channel you trust and can afford.",
+              "why": "Donation is voluntary and no outcome is guaranteed.",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Leave calmly with all belongings and waste. Do any Gujarat-style kite-flying later as a separate recreation under current law and the safety rules below.",
+              "why": "Kite-flying is regional recreation, not a required ritual step.",
+              "source_ids": [
+                "gujarat-tourism-uttarayan-kite",
+                "ngt-manjha-order-2017",
+                "kpdcl-kite-electrical-safety"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "Finish with quiet gratitude, follow the venue's exit route, hydrate and return home safely.",
+            "source_ids": [
+              "gidm-holy-dip-safety-2025",
+              "ntr-police-ghat-safety"
+            ],
+            "scope_note": "Visitor close only; it does not complete a priest-led rite on the user's behalf."
+          },
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "incredible-india-sidhi-makar-fair-2027",
+            "gidm-holy-dip-safety-2025",
+            "ntr-police-ghat-safety"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "gujarat-uttarayan-kite",
+          "scope": "Gujarat cultural/recreational expression",
+          "difference": "Kite-flying is a prominent optional Uttarayan activity. It does not change the household Surya-remembrance core and is never a required ritual step.",
+          "source_ids": [
+            "gujarat-tourism-uttarayan-kite",
+            "ngt-manjha-order-2017",
+            "kpdcl-kite-electrical-safety"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "bihar-chhattisgarh-sesame-foods",
+          "scope": "Bihar and Chhattisgarh food expressions",
+          "difference": "Tilkut in Bihar and tilgur in Chhattisgarh are locally documented food expressions. Use allergy- and health-safe substitutions; food naming alone does not require a separate ritual lane.",
+          "source_ids": [
+            "incredible-india-patna-tilkut",
+            "incredible-india-raipur-tilgur",
+            "fssai-sesame-allergen"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "madhya-pradesh-sidhi-river-fair",
+          "scope": "Sidhi, Madhya Pradesh public fair participation",
+          "difference": "River bathing, donations and community activity are documented at this fair; they are not universal household requirements.",
+          "source_ids": [
+            "incredible-india-sidhi-makar-fair-2027",
+            "gidm-holy-dip-safety-2025"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "punjab-haryana-maghi",
+          "scope": "Punjab/Haryana Maghi context",
+          "difference": "Maghi has a materially distinct regional identity and living-practice context and must be authored in its own applicability lane.",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "tamil-pongal",
+          "scope": "Tamil Nadu Pongal sequence",
+          "difference": "Pongal is a materially distinct named festival sequence and is not a Tamil copy of this generic lane.",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "assam-magh-bihu",
+          "scope": "Assam Magh Bihu",
+          "difference": "Magh Bihu is a distinct Assamese festival identity and requires its own source and practice lane.",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bengal-poush-sankranti",
+          "scope": "West Bengal Poush Sankranti",
+          "difference": "Bengal's named seasonal and food-practice context needs its own evidence before actionable guidance is offered.",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "odia-makar-observance",
+          "scope": "Odisha Makar observance",
+          "difference": "Odia timing, deity and local-practice contexts require their own applicability lane when they materially alter the answer.",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "priest-led-shraddha",
+          "scope": "Families whose authority includes Sankranti shraddha",
+          "difference": "The calendar source mentions shraddha, but this pack provides no DIY ancestral rite. Follow qualified family or priestly authority.",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "Fasting is optional and is not instructed by this pack. People using insulin should not fast; people with diabetes or medication needs should seek clinician guidance before changing food or medicines.",
+        "Sesame is an allergen. Check labels, ingredients and cross-contact before offering or sharing til foods; use a sesame-free substitute when needed.",
+        "Do not stare directly at the Sun. Keep lamps supervised, stable and away from children, clothing and dry decorations; an electric light or no flame is valid.",
+        "River bathing is never required here. Use only authorised supervised zones, avoid deep water and strong currents, obey crowd controls, and substitute a home bath whenever safety is uncertain.",
+        "Do not put soap, plastic, food, lamps or ritual waste into water. Carry all belongings and waste out.",
+        "For kite-flying, check current local law; never use synthetic, nylon, glass- or metal-coated thread. Use lawful plain cotton, stay away from power lines, roads, roof edges and birds, and supervise children.",
+        "Shraddha and priest-led temple rites are outside this DIY lane. Use qualified family, sampradaya or institutional authority.",
+        "Temple and ghat schedules are live facts. Confirm them directly; a 2027 calendar fixture does not guarantee entry, programme or accessibility.",
+        "Give only what you can afford through a trusted channel. No donation, fast, bath, food or recitation is promised to produce a specific result."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "makar-sankranti"
+      ],
+      "title": "मकर संक्रांति: उत्तर/पश्चिम गृह और सहभागिता मार्गदर्शिका",
+      "short_answer": "दिल्ली में शुक्रवार 15 जनवरी 2027 को पालन करें; उद्धृत पुण्यकाल 07:15-17:46 है। दिल्ली से बाहर पुनर्गणना करें। स्थापित पारिवारिक रूप रखें; अन्यथा घर पर सुरक्षित स्नान, सूर्य-स्मरण, कृतज्ञता, इच्छानुसार सुरक्षित भोजन/दान और सरल समापन करें। उपवास, नदी-स्नान या पतंगबाजी अनिवार्य नहीं हैं।",
+      "significance": {
+        "text": "उद्धृत पंचांग में मकर संक्रांति सूर्य के मकर राशि में प्रवेश से जुड़ी है और सूर्य, उत्तरायण के मौसमी भाव, फसल, प्रकृति तथा किसानों के श्रम के प्रति कृतज्ञता से व्यापक रूप से संबद्ध है। इसी समय के क्षेत्रीय पर्व अलग पहचान रखते हैं; वे एक ही राष्ट्रीय विधि नहीं हैं।",
+        "source_ids": [
+          "drik-makar-sankranti-delhi-2027",
+          "akashvani-makar-sankranti-surya",
+          "president-india-harvest-greeting-2026"
+        ],
+        "scope_note": "उत्तर/पश्चिम भारतीय सामान्य गृह-संदर्भ; हर क्षेत्र, परिवार या परंपरा में समान अर्थ का दावा नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "sun-enters-makara",
+          "title": "पंचांग का मोड़: सूर्य का मकर में प्रवेश",
+          "summary": "प्रयोगकर्ता पंचांग सूर्य के मकर में प्रवेश से पर्व पहचानता है और दिल्ली में प्रवेश सूर्यास्त के बाद होने पर अगले दिन का पुण्यकाल देता है। यह समय और अर्थ का आधार है, कोई सार्वभौमिक उत्पत्ति-कथा नहीं।",
+          "tradition_scope": "दिल्ली-संदर्भ का समकालीन पंचांग-विवरण",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "akashvani-makar-sankranti-surya"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "bhishma-awaits-uttarayana",
+          "title": "भीष्म उत्तरायण की प्रतीक्षा करते हैं",
+          "summary": "गांगुली के महाभारत-अनुवाद में भीष्म बाणशय्या पर सूर्य की उत्तर दिशा की गति तक ठहरते हैं और फिर प्रस्थान की तैयारी करते हैं। देवम् इसे उत्तरायण से जुड़ा महाकाव्य-संबंध मानता है; यह हर परिवार की विधि या पर्व की एकमात्र उत्पत्ति नहीं बताता।",
+          "tradition_scope": "महाभारत, गांगुली का सार्वजनिक-डोमेन अंग्रेजी रूप",
+          "source_ids": [
+            "ganguli-bhishma-uttarayana"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "harvest-gratitude-plural-festivals",
+          "title": "एक ऋतु, कई नाम वाले पर्व",
+          "summary": "राष्ट्रपति के संदेश में लोहड़ी, मकर संक्रांति, पोंगल और माघ बिहू अलग-अलग नाम से आते हैं, साथ ही कृषि-परंपरा, प्रकृति और किसानों का सम्मान जुड़ता है। अर्थ मौसमी कृतज्ञता और क्षेत्रीय विविधता है, एक राष्ट्रीय कर्मकांड नहीं।",
+          "tradition_scope": "समकालीन आधिकारिक नागरिक विवरण",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "universal_origin_claimed": false
+        },
+        {
+          "narrative_id": "sidhi-river-fair-living-practice",
+          "title": "सीधी का जीवित मेला",
+          "summary": "सरकारी पर्यटन सामग्री सीधी, मध्य प्रदेश के मेले में नदी-स्नान, दान, पूजा, तिल-गुड़ खाद्य और सामुदायिक गतिविधि दर्ज करती है। यह एक स्थान-विशेष की जीवित अभिव्यक्ति है, हर उपयोगकर्ता को नदी-स्नान का निर्देश नहीं।",
+          "tradition_scope": "वर्तमान सीधी, मध्य प्रदेश मेला-विवरण",
+          "source_ids": [
+            "incredible-india-sidhi-makar-fair-2027"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "north-west-household-surya-remembrance",
+          "population_scope": "उत्तर और पश्चिम भारत के कुछ सामान्य गृहस्थ परिवार",
+          "description": "परिवार स्थानीय समय में स्नान, सूर्य-स्मरण/पूजा, छोटा नैवेद्य, दान और मौसमी भोजन बाँट सकते हैं। उपवास, सामग्री और मंत्र बदलते हैं और यहाँ डिफ़ॉल्ट नहीं।",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "akashvani-makar-sankranti-surya"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "madhya-pradesh-fair-participation",
+          "population_scope": "सीधी जैसे दर्ज मध्य प्रदेश मेला-संदर्भ के सहभागी",
+          "description": "उद्धृत मेले में नदी-स्नान, दान, तिल-गुड़ खाद्य, पूजा और सार्वजनिक गतिविधि होती है। अधिकृत सुरक्षित प्रवेश और स्थल-नियम आवश्यक हैं।",
+          "source_ids": [
+            "incredible-india-sidhi-makar-fair-2027",
+            "gidm-holy-dip-safety-2025"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "gujarat-kite-recreation",
+          "population_scope": "गुजरात उत्तरायण के अनेक सहभागी",
+          "description": "पतंगबाजी प्रमुख सांस्कृतिक उत्सव है। यह वैकल्पिक मनोरंजन है, गृह-विधि का अनिवार्य भाग या उसका विकल्प नहीं।",
+          "source_ids": [
+            "gujarat-tourism-uttarayan-kite"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "regional-sesame-foods",
+          "population_scope": "बिहार, छत्तीसगढ़ और अन्य उत्तर/पश्चिम संदर्भों के कुछ परिवार",
+          "description": "तिलकुट और तिलगुड़ जैसे तिल-गुड़ खाद्य बनाए या बाँटे जा सकते हैं। नाम और विधि बदलते हैं; एलर्जी और आहार-सुरक्षा परंपरा से ऊपर है।",
+          "source_ids": [
+            "incredible-india-patna-tilkut",
+            "incredible-india-raipur-tilgur",
+            "fssai-sesame-allergen"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "makar-sankranti-north-west-hi-minimum-v1",
+          "label": "10 मिनट का सामग्री-रहित सूर्य-स्मरण",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "सुलभ देवम् गृह-स्मरण; यह औपचारिक पूजा, व्रत, उपवास, श्राद्ध या पुरोहित-कर्म नहीं है।",
+          "form": "accessible_short",
+          "estimated_minutes": 10,
+          "materials": [
+            {
+              "item": "स्थानीय रूप से निश्चित तिथि और सुरक्षित शांत स्थान",
+              "required": true,
+              "substitutions": [
+                "घर पर थोड़ी देर सुरक्षित बैठना"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "स्रोत-चिह्नित कथा या परिवार में ज्ञात प्रार्थना",
+              "required": false,
+              "substitutions": [
+                "मौन कृतज्ञता"
+              ],
+              "source_ids": [
+                "ganguli-bhishma-uttarayana",
+                "president-india-harvest-greeting-2026"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "स्थानीय तिथि की पुष्टि करें। 15 जनवरी 2027 केवल दिल्ली-संदर्भ के लिए है; उसके समय दूसरी जगह न अपनाएँ।",
+              "why": "सौर प्रवेश और उपयोगी दिन का काल स्थान पर निर्भर है।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "घर पर सुरक्षित स्नान या हाथ-मुँह धोकर बैठें; सूर्य को सीधे न देखें।",
+              "why": "स्नान प्रचलित है, पर घर का स्नान जल और नेत्र-सुरक्षा बचाता है।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "gidm-holy-dip-safety-2025"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "अपनी भाषा में सूर्य, प्रकृति और भोजन पहुँचाने वाले लोगों के प्रति धन्यवाद कहें।",
+              "why": "यह स्रोत-समर्थित अर्थ है; कोई मंत्र या फल नहीं गढ़ा गया।",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "akashvani-makar-sankranti-surya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "ऊपर दी भीष्म-कथा पढ़ें/सुनें या थोड़ी देर मौन रहें।",
+              "why": "कथा स्रोत-चिह्नित और वैकल्पिक रहती है।",
+              "source_ids": [
+                "ganguli-bhishma-uttarayana"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "सुरक्षित भोजन का भाग या अपनी सामर्थ्य का दान किसी विश्वसनीय व्यक्ति/माध्यम के लिए अलग रखें।",
+              "why": "दान प्रमाणित प्रथा है; मात्रा और प्राप्तकर्ता स्वैच्छिक हैं।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "अपनी या पारिवारिक भाषा में धन्यवाद देकर समाप्त करें, सामान्य भोजन करें और सुविधानुसार दान पूरा करें।",
+            "source_ids": [
+              "president-india-harvest-greeting-2026",
+              "drik-makar-sankranti-delhi-2027"
+            ],
+            "scope_note": "सरल गृह-समापन; किसी फल की गारंटी नहीं।"
+          },
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "ganguli-bhishma-uttarayana",
+            "president-india-harvest-greeting-2026"
+          ]
+        },
+        {
+          "procedure_id": "makar-sankranti-north-west-hi-standard-v1",
+          "label": "30 मिनट का सीमित गृह-स्मरण",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "उद्धृत जीवित प्रथाओं से बना सीमित गृह-रूप; स्थापित पारिवारिक विधि इसे प्रतिस्थापित करती है।",
+          "form": "traditional_household",
+          "estimated_minutes": 30,
+          "materials": [
+            {
+              "item": "स्वच्छ गृह-पूजा स्थान",
+              "required": true,
+              "substitutions": [
+                "साफ मेज या शांत बैठने की जगह"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "नैवेद्य के लिए साधारण भोजन का छोटा भाग",
+              "required": false,
+              "substitutions": [
+                "फल",
+                "कोई सामग्री नहीं"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "तिल-गुड़ का खाद्य",
+              "required": false,
+              "substitutions": [
+                "तिल-रहित पारिवारिक भोजन",
+                "शर्करा सीमित हो तो फल या उपयुक्त विकल्प"
+              ],
+              "source_ids": [
+                "incredible-india-patna-tilkut",
+                "incredible-india-raipur-tilgur",
+                "fssai-sesame-allergen"
+              ]
+            },
+            {
+              "item": "दीप",
+              "required": false,
+              "substitutions": [
+                "बिजली का दीप",
+                "बिना लौ"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ]
+            },
+            {
+              "item": "दान या बाँटने योग्य भोजन",
+              "required": false,
+              "substitutions": [
+                "बाद में सत्यापित दान",
+                "सेवा का गैर-भौतिक कार्य"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपने स्थान और स्वीकृत पंचांग से तिथि तथा पुण्यकाल निश्चित करें; दिल्ली 2027 का संदर्भ 15 जनवरी है।",
+              "why": "दिल्ली में प्रवेश सूर्यास्त के बाद था, इसलिए उद्धृत पंचांग ने अगले दिन का काल दिया।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "छोटा स्थान साफ करें, सुरक्षित स्नान या हाथ-मुँह धोएँ और केवल उपयोगी सामग्री रखें।",
+              "why": "तैयारी व्यावहारिक और अपव्यय-रहित रहती है।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "ntr-police-ghat-safety"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सूर्य-स्मरण, कृतज्ञता और उदारता का सरल संकल्प अपनी भाषा में कहें; संस्कृत वचन न गढ़ें।",
+              "why": "यह अर्थ देता है, मंत्र-अधिकार का दावा नहीं।",
+              "source_ids": [
+                "president-india-harvest-greeting-2026",
+                "akashvani-makar-sankranti-surya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "घर में प्रचलित हो तो सुरक्षित दीप और छोटा नैवेद्य रखें; अन्यथा बिना सामग्री आगे बढ़ें।",
+              "why": "नैवेद्य प्रमाणित है, पर लौ और भोजन अनिवार्य नहीं।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 5,
+              "instruction": "परिवार में ज्ञात सूर्य-प्रार्थना या नाम लें। न पता हो तो सरल धन्यवाद या मौन रखें।",
+              "why": "मंत्र, उच्चारण या जप-संख्या नहीं गढ़ी जाती।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "akashvani-makar-sankranti-surya"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "भीष्म की स्रोत-चिह्नित कथा उत्तरायण-संबंध के रूप में कहें, हर क्षेत्र के पर्व की एकमात्र उत्पत्ति के रूप में नहीं।",
+              "why": "महाकाव्य-संबंध और सार्वभौमिक इतिहास अलग रहते हैं।",
+              "source_ids": [
+                "ganguli-bhishma-uttarayana"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 7,
+              "instruction": "दान या सुरक्षित भोजन-भाग अलग रखें; किसी निश्चित फल का दावा न करें।",
+              "why": "दान स्रोत-समर्थित है, किंतु मात्रा, पात्र और फल सीमित हैं।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 8,
+              "instruction": "खाद्य बाँटने से पहले तिल, शर्करा और अन्य आहार-आवश्यकताओं की जाँच करें।",
+              "why": "तिल वाले क्षेत्रीय खाद्य कुछ लोगों के लिए असुरक्षित हो सकते हैं।",
+              "source_ids": [
+                "fssai-sesame-allergen",
+                "incredible-india-patna-tilkut",
+                "incredible-india-raipur-tilgur"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "पारिवारिक शब्दों में सूर्य को धन्यवाद दें, लौ बुझाएँ, खाद्य स्वच्छ रखें और नदी या सार्वजनिक स्थान में कुछ न छोड़ें।",
+            "source_ids": [
+              "drik-makar-sankranti-delhi-2027",
+              "ntr-police-ghat-safety"
+            ],
+            "scope_note": "व्यावहारिक गृह-समापन; पुरोहितीय विसर्जन या श्राद्ध-समापन नहीं।"
+          },
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "ganguli-bhishma-uttarayana",
+            "president-india-harvest-greeting-2026",
+            "fssai-sesame-allergen"
+          ]
+        },
+        {
+          "procedure_id": "makar-sankranti-north-west-hi-elaborate-v1",
+          "label": "सामान्य मंदिर या अधिकृत घाट सहभागिता",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल आगंतुक मार्गदर्शन। मंदिर-विधान, पुरोहितीय अर्पण, श्राद्ध और सीमित कर्म संस्था या योग्य पारिवारिक अधिकारी के अधीन हैं।",
+          "form": "institutional_participation",
+          "estimated_minutes": null,
+          "materials": [
+            {
+              "item": "वर्तमान मंदिर/घाट कार्यक्रम और स्थानीय समय",
+              "required": true,
+              "substitutions": [
+                "घर पर रहकर गृह-विधि अपनाएँ"
+              ],
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "gidm-holy-dip-safety-2025"
+              ]
+            },
+            {
+              "item": "न्यूनतम अनुमत सामान और पीने का पानी",
+              "required": true,
+              "substitutions": [
+                "स्थल द्वारा बताई सामग्री"
+              ],
+              "source_ids": [
+                "ntr-police-ghat-safety"
+              ]
+            },
+            {
+              "item": "दान",
+              "required": false,
+              "substitutions": [
+                "आधिकारिक डिजिटल दान",
+                "कोई दान नहीं"
+              ],
+              "source_ids": [
+                "incredible-india-sidhi-makar-fair-2027"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "निकलने से पहले वर्तमान समय, प्रवेश, सुगमता, मौसम, भीड़-सलाह और स्थानीय पुण्यकाल जाँचें।",
+              "why": "पंचांग-पृष्ठ जीवित संस्थागत कार्यक्रम नहीं बताता।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "gidm-holy-dip-safety-2025"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "जल में जाना हो तो केवल अधिकृत, निगरानी वाले घाट/क्षेत्र में जाएँ। गहराई, तेज धारा, भीड़ या स्वास्थ्य-संदेह हो तो न जाएँ; इस मार्गदर्शिका में घर का स्नान पूर्ण सुरक्षित विकल्प है।",
+              "why": "पवित्र स्नान-स्थलों पर डूबने और भीड़ का जोखिम है।",
+              "source_ids": [
+                "gidm-holy-dip-safety-2025",
+                "ntr-police-ghat-safety"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "कम अनुमत सामान रखें, कतार और कर्मियों की बात मानें; साबुन, प्लास्टिक या सामग्री जल में न छोड़ें।",
+              "why": "यह लोगों और स्थल की रक्षा करता है।",
+              "source_ids": [
+                "ntr-police-ghat-safety",
+                "gidm-holy-dip-safety-2025"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "दर्शन करें या केवल सार्वजनिक पूजा में जुड़ें। अर्पण के बारे में मंदिर से पूछें; गर्भगृह में स्वयं विधि न बनाएँ।",
+              "why": "मंदिर-विधि संस्था निर्धारित करती है।",
+              "source_ids": [
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "इच्छा हो तो केवल विश्वसनीय और सामर्थ्य के भीतर दान करें।",
+              "why": "दान स्वैच्छिक है और फल की गारंटी नहीं।",
+              "source_ids": [
+                "drik-makar-sankranti-delhi-2027",
+                "incredible-india-sidhi-makar-fair-2027"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 6,
+              "instruction": "शांतिपूर्वक अपना सामान और कचरा लेकर निकलें। गुजरात-शैली पतंगबाजी बाद में अलग मनोरंजन के रूप में वर्तमान कानून और नीचे की सुरक्षा के साथ ही करें।",
+              "why": "पतंगबाजी क्षेत्रीय मनोरंजन है, अनिवार्य पूजा-चरण नहीं।",
+              "source_ids": [
+                "gujarat-tourism-uttarayan-kite",
+                "ngt-manjha-order-2017",
+                "kpdcl-kite-electrical-safety"
+              ],
+              "optional": true
+            }
+          ],
+          "closing": {
+            "text": "शांत धन्यवाद के साथ समाप्त करें, स्थल का निकास मार्ग मानें, पानी पिएँ और सुरक्षित घर लौटें।",
+            "source_ids": [
+              "gidm-holy-dip-safety-2025",
+              "ntr-police-ghat-safety"
+            ],
+            "scope_note": "केवल आगंतुक-समापन; यह पुरोहितीय कर्म पूरा नहीं करता।"
+          },
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "incredible-india-sidhi-makar-fair-2027",
+            "gidm-holy-dip-safety-2025",
+            "ntr-police-ghat-safety"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "gujarat-uttarayan-kite",
+          "scope": "गुजरात का सांस्कृतिक/मनोरंजक रूप",
+          "difference": "पतंगबाजी उत्तरायण की प्रमुख वैकल्पिक गतिविधि है। यह गृह सूर्य-स्मरण का मूल नहीं बदलती और पूजा का अनिवार्य चरण नहीं है।",
+          "source_ids": [
+            "gujarat-tourism-uttarayan-kite",
+            "ngt-manjha-order-2017",
+            "kpdcl-kite-electrical-safety"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "bihar-chhattisgarh-sesame-foods",
+          "scope": "बिहार और छत्तीसगढ़ के खाद्य रूप",
+          "difference": "बिहार में तिलकुट और छत्तीसगढ़ में तिलगुड़ स्थानीय खाद्य रूप हैं। एलर्जी और स्वास्थ्य-अनुकूल विकल्प रखें; केवल खाद्य-नाम अलग होने से नई विधि नहीं बनती।",
+          "source_ids": [
+            "incredible-india-patna-tilkut",
+            "incredible-india-raipur-tilgur",
+            "fssai-sesame-allergen"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "madhya-pradesh-sidhi-river-fair",
+          "scope": "सीधी, मध्य प्रदेश का सार्वजनिक मेला",
+          "difference": "इस मेले में नदी-स्नान, दान और सामुदायिक गतिविधि दर्ज हैं; वे हर घर की अनिवार्यता नहीं।",
+          "source_ids": [
+            "incredible-india-sidhi-makar-fair-2027",
+            "gidm-holy-dip-safety-2025"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "punjab-haryana-maghi",
+          "scope": "पंजाब/हरियाणा माघी संदर्भ",
+          "difference": "माघी की अलग क्षेत्रीय पहचान और जीवित प्रथा है; इसकी अलग प्रयोज्यता-विधि चाहिए।",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027",
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "tamil-pongal",
+          "scope": "तमिलनाडु पोंगल क्रम",
+          "difference": "पोंगल अलग नाम और बहुदिवसीय क्रम वाला पर्व है; यह इस सामान्य मार्ग का तमिल प्रतिरूप नहीं।",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "assam-magh-bihu",
+          "scope": "असम माघ बिहू",
+          "difference": "माघ बिहू की विशिष्ट असमिया पहचान है और अलग स्रोत-प्रथा मार्ग चाहिए।",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bengal-poush-sankranti",
+          "scope": "पश्चिम बंगाल पौष संक्रांति",
+          "difference": "बंगाल के मौसमी और खाद्य संदर्भ के लिए निर्देश देने से पहले अलग प्रमाण चाहिए।",
+          "source_ids": [
+            "president-india-harvest-greeting-2026"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "odia-makar-observance",
+          "scope": "ओडिशा मकर पालन",
+          "difference": "जहाँ ओड़िया समय, देवता या स्थानीय प्रथा उत्तर को बदलते हैं, वहाँ अलग प्रयोज्यता मार्ग चाहिए।",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "priest-led-shraddha",
+          "scope": "संक्रांति श्राद्ध मानने वाले परिवार",
+          "difference": "पंचांग स्रोत श्राद्ध का उल्लेख करता है, पर यह पैक स्वयं करने की पैतृक विधि नहीं देता। योग्य पारिवारिक या पुरोहितीय अधिकारी का अनुसरण करें।",
+          "source_ids": [
+            "drik-makar-sankranti-delhi-2027"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "उपवास वैकल्पिक है और यह पैक उसका निर्देश नहीं देता। इंसुलिन लेने वाले उपवास न करें; मधुमेह या दवा वाले व्यक्ति भोजन/दवा बदलने से पहले चिकित्सकीय सलाह लें।",
+        "तिल एलर्जेन है। तिल-खाद्य देने से पहले सामग्री, लेबल और क्रॉस-कॉन्टैक्ट जाँचें; आवश्यकता पर तिल-रहित विकल्प लें।",
+        "सूर्य को सीधे न देखें। दीप को स्थिर, निगरानी में और बच्चों, वस्त्र तथा सूखी सजावट से दूर रखें; बिजली का दीप या बिना लौ स्वीकार्य है।",
+        "नदी-स्नान यहाँ अनिवार्य नहीं। केवल अधिकृत निगरानी वाले क्षेत्र में जाएँ, गहरे जल और तेज धारा से बचें, भीड़-नियम मानें और संदेह में घर का स्नान करें।",
+        "साबुन, प्लास्टिक, भोजन, दीप या पूजा-कचरा जल में न डालें। अपना सामान और कचरा वापस ले जाएँ।",
+        "पतंगबाजी में वर्तमान स्थानीय कानून जाँचें; सिंथेटिक, नायलॉन, काँच या धातु-लेपित डोर कभी न लें। वैध सादी सूती डोर रखें, बिजली तार, सड़क, छत के किनारे और पक्षियों से दूर रहें और बच्चों की निगरानी करें।",
+        "श्राद्ध और पुरोहितीय मंदिर-कर्म इस स्वयं-करें मार्ग से बाहर हैं। योग्य परिवार, संप्रदाय या संस्था का अनुसरण करें।",
+        "मंदिर और घाट के कार्यक्रम जीवित तथ्य हैं। सीधे पुष्टि करें; 2027 पंचांग प्रवेश, कार्यक्रम या सुगमता की गारंटी नहीं।",
+        "केवल सामर्थ्य के भीतर विश्वसनीय माध्यम से दान करें। दान, उपवास, स्नान, भोजन या पाठ से किसी निश्चित फल की गारंटी नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

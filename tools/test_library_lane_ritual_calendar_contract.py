@@ -8,6 +8,12 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 LANE = ROOT / "knowledge_packs" / "library_lanes" / "ritual-calendar"
 PACK = LANE / "packs" / "mahashivaratri-north-west-smarta-household-2027-v1.json"
+MAKAR_PACK = (
+    LANE / "packs" / "makar-sankranti-north-west-household-2027-v1.json"
+)
+AUTHORING_PROGRESS = (
+    LANE / "inventory" / "ritual-calendar-authoring-progress-v1.json"
+)
 INVENTORY = LANE / "inventory" / "ritual-calendar-selected-scope-v1.json"
 ALL_YEAR_SEED = LANE / "inventory" / "ritual-calendar-selected-scope-v2.json"
 COMPREHENSIVE_CENSUS = (
@@ -598,3 +604,124 @@ def test_lane_files_stay_inside_exclusive_paths():
     for path in LANE.rglob("*"):
         if path.is_file():
             assert any(root == path.resolve() or root in path.resolve().parents for root in expected_roots)
+
+
+def test_makar_sankranti_pack_conforms_and_closes_all_source_references():
+    schema = load(ROOT / "schemas" / "ritual-observance-content-v1.schema.json")
+    pack = load(MAKAR_PACK)
+    Draft202012Validator(schema).validate(pack)
+    assert pack["lane_id"] == "makar-sankranti-north-west-household-2027-v1"
+    assert pack["product_status"]["classification"] == "user_complete_lane"
+    assert all(pack["product_status"]["completed_dimensions"].values())
+    assert pack["product_status"]["open_gaps"] == []
+
+    source_ids = {source["source_id"] for source in pack["sources"]}
+    assert len(source_ids) == len(pack["sources"]) >= 12
+
+    def walk(value):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_ids", "resolution_source_ids"}:
+                    assert set(child) <= source_ids
+                walk(child)
+        elif isinstance(value, list):
+            for child in value:
+                walk(child)
+
+    walk(pack)
+
+
+def test_makar_sankranti_is_bilingual_actionable_and_location_aware():
+    pack = load(MAKAR_PACK)
+    localized = {entry["language_code"]: entry for entry in pack["localized_content"]}
+    assert set(localized) == {"en", "hi"}
+    assert pack["calendar"]["location_aware"] is True
+    assert pack["calendar"]["tradition_aware"] is True
+    assert pack["calendar"]["live_schedule_required"] is True
+    assert "15 January 2027" in pack["calendar"]["freshness_note"]
+    assert "Recompute" in pack["calendar"]["freshness_note"]
+
+    for entry in localized.values():
+        assert len(entry["origin_narratives"]) == 4
+        assert all(
+            narrative["universal_origin_claimed"] is False
+            for narrative in entry["origin_narratives"]
+        )
+        procedures = {procedure["tier"]: procedure for procedure in entry["procedures"]}
+        assert set(procedures) == {"minimum", "standard", "elaborate"}
+        assert procedures["standard"]["form"] == "traditional_household"
+        assert procedures["elaborate"]["form"] == "institutional_participation"
+        for procedure in procedures.values():
+            ordinals = [step["ordinal"] for step in procedure["steps"]]
+            assert ordinals == list(range(1, len(ordinals) + 1))
+            assert procedure["closing"]["text"]
+            assert all("substitutions" in material for material in procedure["materials"])
+
+
+def test_makar_major_difference_rule_does_not_clone_minor_state_customs():
+    pack = load(MAKAR_PACK)
+    for entry in pack["localized_content"]:
+        variants = {variant["variant_id"]: variant for variant in entry["variants"]}
+        assert variants["gujarat-uttarayan-kite"]["separate_lane_required"] is False
+        assert variants["bihar-chhattisgarh-sesame-foods"]["separate_lane_required"] is False
+        assert variants["madhya-pradesh-sidhi-river-fair"]["separate_lane_required"] is False
+        for variant_id in (
+            "punjab-haryana-maghi",
+            "tamil-pongal",
+            "assam-magh-bihu",
+            "bengal-poush-sankranti",
+            "odia-makar-observance",
+            "priest-led-shraddha",
+        ):
+            assert variants[variant_id]["separate_lane_required"] is True
+
+
+def test_makar_adversarial_safety_boundaries_are_explicit_in_both_languages():
+    localized = {
+        entry["language_code"]: " ".join(entry["safety_and_boundaries"]).lower()
+        for entry in load(MAKAR_PACK)["localized_content"]
+    }
+    for term in (
+        "insulin",
+        "sesame",
+        "directly at the sun",
+        "authorised supervised",
+        "synthetic",
+        "power lines",
+        "shraddha",
+        "no donation",
+    ):
+        assert term in localized["en"]
+    for term in (
+        "इंसुलिन",
+        "तिल एलर्जेन",
+        "सूर्य को सीधे",
+        "अधिकृत निगरानी",
+        "सिंथेटिक",
+        "बिजली तार",
+        "श्राद्ध",
+        "गारंटी नहीं",
+    ):
+        assert term in localized["hi"]
+
+    raw = MAKAR_PACK.read_bytes()
+    raw.decode("utf-8", errors="strict")
+    assert "मकर संक्रांति".encode("utf-8") in raw
+    assert MAKAR_PACK.stat().st_size < 100_000
+
+
+def test_authoring_progress_reconciles_to_frozen_v4_denominator():
+    denominator = load(NORMALIZED_DENOMINATOR)
+    progress = load(AUTHORING_PROGRESS)
+    assert progress["denominator_ref"].endswith(
+        "ritual-calendar-normalized-denominator-v4.json"
+    )
+    assert progress["accepted_authoring_denominator"] == 208
+    assert progress["completed_after_freeze"] == 1
+    assert progress["remaining_authoring_items"] == 207
+    assert progress["completed_after_freeze"] + progress["remaining_authoring_items"] == 208
+    assert progress["completed_lane_ids"] == [
+        "makar-sankranti-north-west-household-2027-v1"
+    ]
+    assert denominator["day_answer_denominator"]["verified_complete_cells_at_freeze"] == 0
+    assert progress["verified_complete_day_cells"] == 0

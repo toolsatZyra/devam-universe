@@ -66,3 +66,17 @@ Dispositioned does not mean authored, bilingual, user-complete, projected,
 hosted, release-reviewed or published. All raw labels are decided, but 208
 accepted ritual-calendar work items still require evidence-backed bilingual
 completion and the day-cell denominator remains unresolved.
+
+## Authoring progress after the freeze
+
+The first post-freeze item is complete at the bilingual authored-library layer:
+`makar-sankranti-north-west-household-2027-v1`. It covers the bounded
+North/West household core and ordinary temple or authorised-ghat participation.
+Gujarat kite-flying, Bihar/Chhattisgarh sesame foods and the Sidhi fair remain
+within-lane notes because they do not change the core household action. Maghi,
+Pongal, Magh Bihu, Bengal Poush Sankranti, materially different Odia practice,
+and priest-led shraddha remain separate applicability work.
+
+Exact accepted-authoring coverage is now **1 completed after freeze / 207
+remaining / 208 total**. The completed starting layer remains 105. Verified
+day-answer cells remain **0 / 19,480** because authored is not projected.
