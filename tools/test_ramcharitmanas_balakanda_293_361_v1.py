@@ -139,10 +139,12 @@ class RamcharitmanasBalakanda293To361Test(unittest.TestCase):
             ["closing-chhand", "361"],
         )
 
-    def test_reading_contract_counts_the_batch_without_counting_old_commentary(self):
+    def test_reading_contract_counts_reviewed_batches_without_counting_old_commentary(self):
         progress = self.contract["canonical_reading_progress"]
-        self.assertEqual(progress["completed_passages"], 69)
-        self.assertEqual(progress["completed_source_units"], 377)
+        self.assertEqual(progress["completed_passages"], 81)
+        self.assertEqual(progress["completed_source_units"], 436)
+        self.assertEqual(progress["completed_contiguous_batches"][0]["passages"], 69)
+        self.assertEqual(progress["completed_contiguous_batches"][0]["source_units"], 377)
         self.assertIn("not the remaining consumer source-text denominator", progress["boundary"])
         self.assertIn("Old-edition commentary is optional", self.contract["completion_rule"])
         self.assertIn("Story summaries", self.contract["completion_rule"])

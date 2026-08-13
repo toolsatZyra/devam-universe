@@ -42,12 +42,17 @@ class DevotionalEndToEndReadingContractTest(unittest.TestCase):
         self.assertTrue(all(row["availability"] != "consumer_complete" for row in modes.values()))
         self.assertIn("beginning to end", self.manas["completion_rule"])
         self.assertIn("Story summaries", self.manas["completion_rule"])
-        self.assertEqual(self.manas["canonical_reading_progress"]["completed_passages"], 69)
-        self.assertEqual(self.manas["canonical_reading_progress"]["completed_source_units"], 377)
+        self.assertEqual(self.manas["canonical_reading_progress"]["completed_passages"], 81)
+        self.assertEqual(self.manas["canonical_reading_progress"]["completed_source_units"], 436)
         self.assertEqual(self.manas["canonical_reading_progress"]["completed_full_divisions"], 0)
-        batch = self.manas["canonical_reading_progress"]["completed_contiguous_batches"][0]
+        batches = self.manas["canonical_reading_progress"]["completed_contiguous_batches"]
+        self.assertEqual(len(batches), 2)
+        batch = batches[0]
         self.assertTrue(batch["reaches_division_end"])
         self.assertFalse(batch["complete_division"])
+        self.assertEqual(batches[1]["canonical_group_start"], "invocation")
+        self.assertEqual(batches[1]["canonical_group_end"], 11)
+        self.assertFalse(batches[1]["reaches_division_end"])
         self.assertIn("commentary", self.manas["canonical_reading_progress"]["boundary"])
         consumer_lane = next(row for row in self.consumer_inventory["lanes"] if row["lane_id"] == "ramcharitmanas-daily-reading")
         coverage_lane = next(row for row in self.coverage_inventory["collections"] if row["collection_id"] == "ramcharitmanas-daily-reading")

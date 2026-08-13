@@ -95,6 +95,25 @@ remains open beyond this batch, and no hosted migration was applied. The
 bounded source, meaning, rights, claim, and schema review is recorded in
 `docs/RAMCHARITMANAS_BALAKANDA_293_361_READING_AUDIT_2026-08-14.md`.
 
+Checkpoint 2026-08-14 (Ayodhyakanda opening Ramcharitmanas reading batch):
+The corrected forward reading tail now continues across the kanda boundary
+through Ayodhyakanda's three opening shlokas, opening doha, and narrative groups
+1-11: 12 natural passages, 59 source units, and fresh Hindi and English meaning
+for each passage on fixed scan pages 425-436. The batch preserves the selected
+scan's separately labelled opening doha 1 and narrative doha 1, ends after the
+gods ask Saraswati to turn Rama toward forest exile, and deliberately stops
+before her response in group 12. Rendered-page review corrected collapsed and
+misread reference text including `सब बिधि गुरु`, `बोलेउ`, `बरिस`, `हरषि`,
+`बीथिन्ह`, `तोरन`, `गुरु आगमन`, `तेहि अवसर`, and `चोरहि` against the fixed
+carrier. The combined reviewed forward tail is now 81 passages and 436 source
+units from Balakanda group 293 through Ayodhyakanda doha 11. No kanda or work is
+complete: Balakanda groups 1-292 and Ayodhyakanda group 12 onward remain open.
+The complete book remains the product; page, passage, source-unit, or kanda
+daily reading is optional pacing over that same order, with exact resume. The
+existing reusable reading migration can represent the batch, but no payload SQL
+was added and no hosted database was changed. The review is recorded in
+`docs/RAMCHARITMANAS_AYODHYAKANDA_OPENING_11_READING_AUDIT_2026-08-14.md`.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
