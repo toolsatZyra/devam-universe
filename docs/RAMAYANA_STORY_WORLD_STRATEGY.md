@@ -4,11 +4,11 @@ Status: **revised product and game-direction contract — current checkpoint 202
 
 Current implementation has two separate completion states that must not be
 collapsed. The selected 652-unit Dutt expression is completely partitioned
-across 49 story turns and 417 substantial bilingual scenes containing 1,813
+across 49 story turns and 423 substantial bilingual scenes containing 1,842
 beats. That is a real beginning-to-end consumer-story corpus for one bounded
 English expression, with Hindi retelling, source addresses, characters, places,
-visual direction, and compiled traversal links. Twenty-two exact data-only
-scenes now replace seven formerly compressed blocks across coronation dawn,
+visual direction, and compiled traversal links. Twenty-nine exact data-only
+scenes now replace eight formerly compressed blocks across coronation dawn,
 Ayodhya's departure, deeper forest, Panchavati, Janasthana, and the golden-deer plot;
 this deepens the library without adding images or changing the live district.
 It is not every Ramayana
@@ -28,7 +28,7 @@ The initial world pack continues to carry only compact previews, nodes, routes,
 and district identity. Detailed beat scripts load for the entered district and
 media preloads only immediate neighbours. Any older checkpoint language below
 that reports fewer than seven districts, fewer than 14 visual entrances, more
-than 35 orientation turns, or the whole 417-scene corpus as already illustrated
+than 35 orientation turns, or the whole 423-scene corpus as already illustrated
 is superseded by this checkpoint.
 
 Library-first priority update (2026-08-13): image generation and visual-world

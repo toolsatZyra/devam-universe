@@ -176,4 +176,33 @@ describe("Ramayana selected-expression adversarial review", () => {
       "section_span_set",
     ]));
   });
+
+  it("keeps Rama, Kausalya, and Lakshmana's exile debate on seven exact source sections", () => {
+    const repairedScenes = [
+      ["rama-answers-kaikeyi-and-leaves-the-chamber", 19, 19],
+      ["kausalya-hears-the-coronation-is-gone", 20, 20],
+      ["lakshmana-calls-for-resistance", 21, 21],
+      ["rama-turns-coronation-work-into-departure-work", 22, 22],
+      ["lakshmana-argues-against-destiny", 23, 23],
+      ["kausalya-releases-rama-to-the-road", 24, 24],
+      ["kausalya-builds-a-world-of-protection", 25, 25],
+    ] as const;
+    const turn = snapshot.turns.find((candidate) => candidate.id === "exile-accepted");
+    expect(turn).toBeDefined();
+    expect(turn!.scenes
+      .filter((scene) => repairedScenes.some(([id]) => id === scene.id))
+      .map((scene) => [
+        scene.id,
+        scene.source.sourceOrdinal,
+        scene.source.sourceEndOrdinal,
+        scene.source.spanSha256s?.length,
+        scene.source.sourceAddressKind,
+      ])).toEqual(repairedScenes.map(([id, start, end]) => [
+      id,
+      start,
+      end,
+      1,
+      "section_span_set",
+    ]));
+  });
 });

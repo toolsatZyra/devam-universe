@@ -66,6 +66,7 @@ import { RAMAYANA_MITHILA_ROAD_PLAYABLE_SCENES } from "../../data/ramayana-mithi
 import { RAMAYANA_SITA_BOW_PLAYABLE_SCENES } from "../../data/ramayana-sita-bow-playable";
 import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana-weddings-challenge-playable";
 import { RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES } from "../../data/ramayana-lakshmana-joins-library-scenes";
+import { RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES } from "../../data/ramayana-rama-accepts-exile-library-scenes";
 import { RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-remaining-thin-turn-library-scenes";
 import { RAMAYANA_THIN_TURN_LIBRARY_SCENES } from "../../data/ramayana-thin-turn-library-scenes";
 import { buildRamayanaStoryWorldPack, getRamayanaDistrictMoments } from "../../data/ramayana-story-world";
@@ -195,6 +196,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "ravana-chooses-deception",
     "golden-deer-separates-house",
     "lakshmana-joins",
+    "rama-accepts-exile",
   ]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
@@ -262,6 +264,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_THIN_TURN_LIBRARY_SCENES,
     ...RAMAYANA_REMAINING_THIN_TURN_LIBRARY_SCENES,
     ...RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES,
+    ...RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES,
   ]) {
     const turn = pack.compass.turns[scene.turnId];
     if (!turn) throw new Error(`Ramayana library scene has no backbone turn: ${scene.id}`);
