@@ -627,3 +627,24 @@ Exact accepted-authoring coverage is now **157 completed after freeze / 51
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first named avatar-remembrance batch checkpoint
+
+Nine accepted named answers are complete as bilingual applicability lanes:
+Matsyavathara Dinam, Parashurama Jayanti, Narasimha Jayanti, Kurma Jayanti,
+Kurmavathara Dinam, Kalki Jayanti, Varaha Jayanti, Balarama Jayanti and Vamana
+Jayanti.
+
+The batch preserves the generic and Malayalam Kurma routes separately, keeps
+same-deity Dwadashi routes distinct, and exposes reviewed city/date conflicts
+instead of turning 2027 fixtures into permanent dates. Bhagavad Gita 4.4-8 is
+used only as labelled shared avatar context, never as an invented anniversary
+origin. Full named stories, fasts, mantras, abhisheka and temple or sampradaya
+programmes remain with current owners. Violence, caste domination, conquest,
+animal imagery, apocalypse and liberation claims are never instructions or
+guarantees.
+
+Exact accepted-authoring coverage is now **166 completed after freeze / 42
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.
