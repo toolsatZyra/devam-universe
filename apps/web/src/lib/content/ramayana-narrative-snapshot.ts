@@ -73,6 +73,7 @@ import { RAMAYANA_CROWN_REFUSED_LIBRARY_SCENES } from "../../data/ramayana-crown
 import { RAMAYANA_BROTHERS_MEET_LIBRARY_SCENES } from "../../data/ramayana-brothers-meet-library-scenes";
 import { RAMAYANA_SANDALS_TRUST_LIBRARY_SCENES } from "../../data/ramayana-sandals-trust-library-scenes";
 import { RAMAYANA_JATAYU_RESISTANCE_LIBRARY_SCENES } from "../../data/ramayana-jatayu-resistance-library-scenes";
+import { RAMAYANA_VISHVAMITRA_VASISHTA_LIBRARY_SCENES } from "../../data/ramayana-vishvamitra-vasishta-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
 import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_EMPTY_COTTAGE_LIBRARY_SCENES } from "../../data/ramayana-empty-cottage-library-scenes";
@@ -226,6 +227,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "brothers-meet-death-news",
     "sandals-hold-kingdom",
     "jatayu-rises-sky-road",
+    "king-vishvamitra-meets-vasishta",
     "conquest-crosses-cosmic-worlds",
     "captive-women-and-family-war",
     "two-lineages-reach-lanka",
@@ -324,6 +326,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_BROTHERS_MEET_LIBRARY_SCENES,
     ...RAMAYANA_SANDALS_TRUST_LIBRARY_SCENES,
     ...RAMAYANA_JATAYU_RESISTANCE_LIBRARY_SCENES,
+    ...RAMAYANA_VISHVAMITRA_VASISHTA_LIBRARY_SCENES,
     ...RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES,
     ...RAMAYANA_CAPTIVES_FAMILY_WAR_LIBRARY_SCENES,
     ...RAMAYANA_LANKA_BEFORE_RAVANA_LIBRARY_SCENES,
