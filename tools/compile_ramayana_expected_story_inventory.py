@@ -51,7 +51,7 @@ def compile_inventory() -> dict:
     return {
         "contract": "DEVAM_RAMAYANA_EXPECTED_STORY_CHECKLIST_V1",
         "version": 1,
-        "generated_at": "2026-08-13",
+        "generated_at": "2026-08-14",
         "audience": supplements["audience"],
         "boundary": supplements["boundary"],
         "completion_rule": "A selected-expression row is complete only inside that expression. Every supplemental expectation must become consumer_complete_en_hi in its labelled expression, or be explicitly excluded with a reviewed scope reason.",

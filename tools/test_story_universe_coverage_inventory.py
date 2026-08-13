@@ -72,7 +72,15 @@ class StoryUniverseCoverageInventoryTest(unittest.TestCase):
                 self.assertIn(item["completion"]["state"], allowed)
                 self.assertTrue(item["remaining_boundary"])
                 self.assertTrue(set(item["required_dimensions"]).issubset(self.inventory["required_dimensions"]))
-        self.assertNotIn("consumer_complete_en_hi", {item["completion"]["state"] for item in self.inventory["collections"]})
+        complete_ids = {
+            item["collection_id"]
+            for item in self.inventory["collections"]
+            if item["completion"]["state"] == "consumer_complete_en_hi"
+        }
+        self.assertEqual(
+            {"ramayana-selected-dutt-expression", "rama-hanuman-beyond-selected-expression"},
+            complete_ids,
+        )
 
     def test_all_canonical_anchor_references_resolve(self) -> None:
         anchor_ids = {anchor["canonical_id"] for anchor in self.anchors["anchors"]}

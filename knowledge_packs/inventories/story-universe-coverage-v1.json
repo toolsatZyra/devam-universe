@@ -1,7 +1,7 @@
 {
   "contract": "DEVAM_STORY_UNIVERSE_COVERAGE_V1",
   "version": 1,
-  "snapshot_date": "2026-08-13",
+  "snapshot_date": "2026-08-14",
   "approval_state": "active_goal_scope",
   "audience": "Ordinary Hindi- or English-speaking Indian adults who expect complete, engaging stories rather than scholarly apparatus or one-line summaries.",
   "boundary": "This is the canonical registry of approved library denominators and missing denominators for the active goal. It references authoritative enumerators instead of duplicating story prose. Exhausting version 1 permits only a version-1 selected-scope claim, never civilizational completeness.",
@@ -55,8 +55,8 @@
         "temples": 18,
         "festivals_and_performances": 12
       },
-      "completion": {"state": "authoring", "selected_expression_rows_complete_en_hi": 49, "supplemental_expected_story_rows_complete_en_hi": 17, "supplemental_expected_story_rows_open": 5, "substantial_bilingual_beats": 2340, "supplemental_bilingual_episode_beats": 175, "registered_living_items_complete_en_hi": 48, "source_term_reconciliation_inventory": "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json", "source_term_candidates": 4323, "source_terms_needing_classification": 3957, "resolved_terms_missing_from_some_covering_episodes": 306},
-      "remaining_boundary": "Author or explicitly exclude the remaining 5 separately scoped consumer-expected supplements, then complete one consolidated continuity review. Seventeen supplements are complete through 175 bilingual episode beats across four packs: 12 source-aligned Ramcharitmanas stories and 5 separately labelled reception and living-world bridges. They remain story-world records and do not complete the separate 1,158-page reading lane. Keep performance, regional, devotional, temple, and living-festival claims separately labelled; the selected Dutt expression covers only its 49 rows. The 4,323-term lexical inventory remains a supplementary diagnostic rather than a blocking story queue."
+      "completion": {"state": "consumer_complete_en_hi", "selected_expression_rows_complete_en_hi": 49, "supplemental_expected_story_rows_complete_en_hi": 22, "supplemental_expected_story_rows_open": 0, "substantial_bilingual_beats": 2340, "supplemental_bilingual_episode_beats": 220, "registered_living_items_complete_en_hi": 48, "adversarial_review": "docs/RAMAYANA_EXPECTED_STORY_V1_ADVERSARIAL_REVIEW_2026-08-14.md", "source_term_reconciliation_inventory": "knowledge_packs/inventories/ramayana-source-term-reconciliation-v1.json", "source_term_candidates": 4323, "source_terms_needing_classification": 3957, "resolved_terms_missing_from_some_covering_episodes": 306},
+      "remaining_boundary": "Version-one selected scope is reviewed and complete. Wider Ramayana expressions require separate denominators; these story records do not complete the 1,158-page Ramcharitmanas reading lane. Keep performance, regional, devotional, temple, and living-festival claims labelled. The 4,323-term lexical inventory remains a supplementary diagnostic rather than a blocking story queue."
     },
     {
       "collection_id": "mahabharata-selected-ganguli-expression",
@@ -78,7 +78,8 @@
     {
       "collection_id": "ramcharitmanas-daily-reading",
       "priority": 3,
-      "kind": "daily_reading_expression",
+      "kind": "complete_ordered_reading_expression",
+      "primary_use": "Beginning-to-end reading work with exact resume; daily units are optional pacing modes, not excerpt substitutes.",
       "owner_lane_id": "epics-integration",
       "canonical_anchor_ids": ["devam:text:ramcharitmanas", "devam:being:rama", "devam:being:hanuman"],
       "required_dimensions": ["work", "story_cycle", "episode", "character", "place", "living_practice_connection"],
@@ -93,12 +94,13 @@
         "reading_modes": 5
       },
       "completion": {"state": "source_reconciliation"},
-      "remaining_boundary": "Correct or source-address the 345 held text-bearing pages, create approachable Hindi and English meaning for every canonical unit, then verify gapless full-work, one-page, short-passage, kanda, and exact-resume modes."
+      "remaining_boundary": "Correct or source-address the 345 held text-bearing pages, create approachable Hindi and English meaning for every canonical unit, then verify one gapless beginning-to-end work with full-work, one-page, short-passage, kanda, and exact-resume modes. Story summaries and supplements never reduce this denominator."
     },
     {
       "collection_id": "hanuman-chalisa-reading-and-meaning",
       "priority": 4,
-      "kind": "devotional_reading_expression",
+      "kind": "complete_ordered_devotional_reading_expression",
+      "primary_use": "Beginning-to-end recitation and reading work; one-doha-or-chaupai daily reading is an optional pacing mode, while meaning and context accompany the complete text.",
       "owner_lane_id": "epics-integration",
       "canonical_anchor_ids": ["devam:text:hanuman-chalisa", "devam:being:hanuman", "devam:being:rama"],
       "required_dimensions": ["work", "episode", "character", "living_practice_connection"],
@@ -109,7 +111,7 @@
         "reading_modes": 3
       },
       "completion": {"state": "review_pending", "complete_recitation_content_available": true, "one_unit_daily_content_available": true, "resume_persistence_available": false},
-      "remaining_boundary": "Complete independent cultural and linguistic review and implement user-controlled resume persistence. The 43-unit complete recitation and optional one-unit-daily content paths already exist; hosted projection remains separate product state."
+      "remaining_boundary": "Complete independent cultural and linguistic review and implement user-controlled exact resume persistence. The canonically ordered 43-unit beginning-to-end recitation and optional one-doha-or-chaupai daily paths already exist; summaries or selected units never complete this lane, and hosted projection remains separate product state."
     },
     {
       "collection_id": "ganesha-story-world",
@@ -185,8 +187,8 @@
       "canonical_anchor_ids": ["devam:being:rama", "devam:being:hanuman"],
       "required_dimensions": ["story_cycle", "episode", "character", "deity", "place", "temple", "festival", "ritual", "living_practice_connection"],
       "denominator": {"state": "fixed_v1_consumer_expectation_slice", "authoritative_enumerator": "knowledge_packs/inventories/ramayana-expected-story-checklist-v1.json", "supplemental_expected_story_rows": 22},
-      "completion": {"state": "authoring", "consumer_complete_en_hi": 17, "open": 5},
-      "remaining_boundary": "Source-reconcile and author the remaining 5 version-one later-performance and Hanuman devotional expectations. Seventeen supplements are complete in four packs with 175 bilingual episodes. Story completion here does not complete the continuous Ramcharitmanas reading work. Adversarially review the full version before expansion; do not describe it as every Rama or Hanuman tradition."
+      "completion": {"state": "consumer_complete_en_hi", "consumer_complete_en_hi": 22, "open": 0, "bilingual_episodes": 220, "adversarial_review": "docs/RAMAYANA_EXPECTED_STORY_V1_ADVERSARIAL_REVIEW_2026-08-14.md"},
+      "remaining_boundary": "Version-one selected scope is reviewed and complete. Expansion requires a new approved denominator; this does not complete continuous Ramcharitmanas reading and must never be described as every Rama or Hanuman tradition."
     },
     {
       "collection_id": "krishna-story-world",

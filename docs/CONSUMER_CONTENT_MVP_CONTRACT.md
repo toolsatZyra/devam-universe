@@ -6,7 +6,8 @@ Build and complete the Devam MVP for ordinary Indian users around a
 comprehensive, consumer-ready English and Hindi story and living-practice
 knowledge base. Lawfully acquire, retain, structure and, where necessary,
 translate the complete narrative content needed for the MVP: the full Ramayana
-and Mahabharata story universes; Ramcharitmanas daily reading; Hanuman Chalisa;
+and Mahabharata story universes; complete, ordered, resumable Ramcharitmanas
+and Hanuman Chalisa reading works with optional daily-unit paths;
 approachable stories from prioritized Puranic, devotional, Panchatantra,
 historical and cultural traditions; practical festival and ritual guidance;
 and the connected characters, places, temples, kingdoms, history, yoga,
@@ -116,15 +117,14 @@ Sanatana Dharma, Indian culture or Indian wisdom.
 The versioned Ramayana enumerator now additionally fixes 18 living places, 18
 temples, and 12 festivals or performance traditions. All 48 have substantial
 English and Hindi consumer context with story links and evidence boundaries.
-This completes the registered living-world authoring denominator only; the
-whole-journey continuity review remains open. The consumer-expected story
-checklist now names 71 rows: 49 complete selected-expression cycles, twelve
-source-aligned Ramcharitmanas supplements completed through 140 bilingual
-episodes, five separately labelled reception and living-world supplements
-completed through 35 more bilingual episodes, and 5 open supplements across
-later performance and Hanuman devotional scopes. Broader Ramayana expressions remain separate
-denominators, and every supplement must be authored or explicitly excluded
-without being back-projected into Dutt. Those 175 story episodes do not count
+This completes the registered living-world authoring denominator. The
+whole-version continuity and adversarial review passes for the defined v1 scope
+in `RAMAYANA_EXPECTED_STORY_V1_ADVERSARIAL_REVIEW_2026-08-14.md`. The consumer-expected story
+checklist now names 71 rows: 49 complete selected-expression cycles and all 22
+version-one supplements completed through 220 bilingual episodes. The supplements include twelve
+source-aligned Ramcharitmanas stories and ten separately labelled performance,
+regional, devotional, temple, and festival stories. Broader Ramayana expressions remain separate
+denominators, and no supplement is back-projected into Dutt. Those 220 story episodes do not count
 toward the separate 1,158-page gapless Ramcharitmanas reading denominator. The payload-free
 source-term inventory is a supplementary way to find high-signal metadata gaps;
 its ordinary capitalized words, epithets, and spelling variants are not a

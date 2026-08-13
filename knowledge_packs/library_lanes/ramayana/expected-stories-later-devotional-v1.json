@@ -1,0 +1,687 @@
+{
+  "contract": "DEVAM_RAMAYANA_EXPECTED_STORIES_LATER_DEVOTIONAL_V1",
+  "version": 1,
+  "authored_at": "2026-08-14",
+  "audience": "Ordinary Hindi- or English-speaking Indian adults who know these stories through performance, family telling, television, calendars, temples, or devotional art.",
+  "purpose": "Complete the final five Ramayana v1 audience expectations while keeping later performance, regional branches, modern devotional story, living practice, and the selected epic expression separately attributable.",
+  "completion_boundary": "Each named expectation has a beginning-to-end bilingual consumer sequence. This pack does not claim that any of its later stories occurs in Valmiki, in the selected Dutt expression, or in every Ramayana tradition.",
+  "source_registry": [
+    {
+      "source_id": "ramayana-dutt-selected-inventory",
+      "kind": "internal_selected_expression_inventory",
+      "locator": "knowledge_packs/inventories/ramayana-story-universe-v1.json",
+      "rights_lane": "internal_product_grounding",
+      "evidence_role": "Nearest selected-expression moments and negative boundary; absence here is not absence from every Ramayana."
+    },
+    {
+      "source_id": "sagar-ramayan-series",
+      "kind": "copyrighted_adaptation_coverage_cue",
+      "url": "https://production.sagarworld.com/ramayan",
+      "observed_at": "2026-08-14",
+      "rights_lane": "coverage_cue_only_no_copying",
+      "evidence_role": "Confirms audience familiarity and useful episode granularity only; no dialogue, script, shot, or protected expression is copied."
+    },
+    {
+      "source_id": "ucsd-sulochana-performance-history",
+      "kind": "scholarly_performance_history",
+      "url": "https://escholarship.org/content/qt81d966m2/qt81d966m2.pdf",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Documents a nineteenth-century Marathi stage plot in which Indrajit's severed arm informs Sulochana, who seeks his head; also documents a sati ending that Devam identifies as harmful historical performance material rather than an ideal."
+    },
+    {
+      "source_id": "valmiki-yuddha-90-indrajit-death",
+      "kind": "public_domain_epic_reference",
+      "url": "https://sanskritdocuments.org/sites/valmikiramayan/yuddha/sarga90/yuddha_90_prose.htm",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Epic reference for Lakshmana killing Indrajit; it does not establish the later Sulochana arm-and-head performance story."
+    },
+    {
+      "source_id": "sohini-pillai-ahiravana-scholarship",
+      "kind": "scholarly_regional_comparison",
+      "url": "https://escholarship.org/content/qt9dv5m9wg/qt9dv5m9wg.pdf",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Documents Ahiravana and/or Mahiravana as a popular later tale absent from most Valmiki recensions and elaborated across several eastern, Sanskrit, and Marathi Ramayana traditions."
+    },
+    {
+      "source_id": "sathya-sai-nether-region",
+      "kind": "modern_devotional_retelling",
+      "url": "https://www.ssssahitya.org/vahinis/ramakatha-rasavahini/the-nether-region",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only_no_copying",
+      "evidence_role": "One explicitly modern devotional Mahiravana, Patala, Hanuman, and Makaradhwaja telling; not a universal or earliest version."
+    },
+    {
+      "source_id": "ttd-lava-kusha-ashvamedha-brief",
+      "kind": "official_institutional_devotional_reference",
+      "url": "https://ebooks.tirumala.org/downloads/sundarakandaenglish.pdf",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only_no_copying",
+      "evidence_role": "Tirumala Tirupati Devasthanams' expressly brief Lava-Kusha account: the horse, escalating confrontations, Rama's arrival, Hanuman finding Sita, recognition, Sita's earth return, revival, and return to Ayodhya."
+    },
+    {
+      "source_id": "lutgendorf-hanuman-tale",
+      "kind": "scholarly_reception_history",
+      "url": "https://doi.org/10.1093/acprof:oso/9780195309225.001.0001",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only_no_copying",
+      "evidence_role": "Scholarly documentation and analysis of the pearl-necklace/chest and sindoor stories, their variations, reception, iconography, and living-practice connections."
+    }
+  ],
+  "shared_boundaries": [
+    "Later performance and devotional stories remain labelled; familiarity never makes them part of Valmiki or the selected Dutt expression.",
+    "Material variants are narrated as branches, not reconciled into one invented master plot.",
+    "No television dialogue, staging, shot design, or other protected expression is copied.",
+    "Sati is historical harmful practice, not devotion, proof of fidelity, prescription, or an ending Devam invites a user to emulate.",
+    "Sindoor, marriage symbols, temple offerings, weekdays, vows, and promised fruits vary; this pack gives no universal ritual instruction or guaranteed outcome.",
+    "Supernatural events are story-world claims, not medical, historical, legal, or scientific claims."
+  ],
+  "canonical_local_entities": [
+    {"entity_id": "sulochana", "label": {"en": "Sulochana", "hi": "सुलोचना"}, "scope": "Later performance wife of Indrajit; not asserted as a character in the selected expression."},
+    {"entity_id": "mahiravana", "label": {"en": "Mahiravana", "hi": "महीरावण"}, "scope": "Name used in one or more later regional underworld-rescue branches; not silently identical to Ahiravana."},
+    {"entity_id": "ahiravana", "label": {"en": "Ahiravana", "hi": "अहिरावण"}, "scope": "Name used in one or more later regional underworld-rescue branches; kinship and plot vary."},
+    {"entity_id": "makaradhwaja", "label": {"en": "Makaradhwaja", "hi": "मकरध्वज"}, "scope": "Later underworld-rescue character identified in popular tradition as Hanuman's son."},
+    {"entity_id": "vanara-guards", "label": {"en": "Vanara guards", "hi": "वानर प्रहरी"}, "scope": "Collective performance-role identifier, not one historical person."}
+  ],
+  "canonical_local_places": [
+    {"place_id": "lanka-battlefield", "label": {"en": "Lanka battlefield", "hi": "लंका की रणभूमि"}, "claim_layer": "narrative_geography"},
+    {"place_id": "lanka-palace", "label": {"en": "Lanka palace", "hi": "लंका का राजमहल"}, "claim_layer": "narrative_geography"},
+    {"place_id": "rama-war-camp", "label": {"en": "Rama's war camp", "hi": "राम का युद्ध-शिविर"}, "claim_layer": "narrative_geography"},
+    {"place_id": "lanka-war-camp", "label": {"en": "Lanka war camp", "hi": "लंका युद्ध-शिविर"}, "claim_layer": "narrative_geography"},
+    {"place_id": "patala-gateway", "label": {"en": "Gateway to Patala", "hi": "पाताल का द्वार"}, "claim_layer": "later_narrative_geography"},
+    {"place_id": "patala-sanctum", "label": {"en": "Patala sanctum", "hi": "पाताल का अनुष्ठान-स्थल"}, "claim_layer": "later_narrative_geography"},
+    {"place_id": "valmiki-ashram", "label": {"en": "Valmiki's ashram", "hi": "वाल्मीकि का आश्रम"}, "claim_layer": "narrative_geography"},
+    {"place_id": "ashvamedha-horse-route", "label": {"en": "Ashvamedha horse route", "hi": "अश्वमेध-अश्व का मार्ग"}, "claim_layer": "narrative_geography"},
+    {"place_id": "forest-battlefield", "label": {"en": "Forest confrontation ground", "hi": "वन की मुठभेड़-भूमि"}, "claim_layer": "narrative_geography"},
+    {"place_id": "ayodhya", "label": {"en": "Ayodhya", "hi": "अयोध्या"}, "claim_layer": "shared_narrative_and_modern_place_identifier"},
+    {"place_id": "ayodhya-coronation-hall", "label": {"en": "Ayodhya coronation hall", "hi": "अयोध्या का राज्याभिषेक-सभागार"}, "claim_layer": "later_narrative_setting"},
+    {"place_id": "ayodhya-palace", "label": {"en": "Ayodhya palace", "hi": "अयोध्या का राजमहल"}, "claim_layer": "later_narrative_setting"},
+    {"place_id": "ayodhya-court", "label": {"en": "Ayodhya court", "hi": "अयोध्या का दरबार"}, "claim_layer": "later_narrative_setting"}
+  ],
+  "connection_stubs": [
+    {"connection_id": "hanuman-sindoor-offering-variants", "kind": "living_practice", "state": "separate_current_verification_required", "boundary": "Story relationship only; no temple procedure is completed or prescribed by this pack."}
+  ],
+  "stories": [
+    {
+      "expectation_id": "popular-sulochana-meghnad",
+      "story_id": "ramayana-popular-sulochana-meghnad-v1",
+      "sequence_group": "war_performance",
+      "expression_scope": "Later Marathi performance and wider popular reception placed after Indrajit's death, not inside the selected epic expression.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Sulochana receives the news of Meghnad's death", "hi": "सुलोचना को मेघनाद की मृत्यु का समाचार मिलता है"},
+      "source_alignment": {
+        "source_family": "later_marathi_performance_reception",
+        "source_refs": ["valmiki-yuddha-90-indrajit-death", "ucsd-sulochana-performance-history", "sagar-ramayan-series"],
+        "selected_expression_relation": "The selected expression ends Indrajit's battle but does not contain the flying arm, written message, smiling head, or Sulochana's retrieval journey.",
+        "alignment_note": "The arm-and-head sequence follows documented later performance history. Its sati ending is disclosed critically rather than retold as a devotional ideal."
+      },
+      "characters": ["sulochana", "indrajit", "lakshmana", "ravana", "rama", "vanara-guards"],
+      "places": ["lanka-battlefield", "lanka-palace", "rama-war-camp"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "indrajits-last-war", "relationship": "later_performance_follows", "inverse_relationship": "has_later_performance_afterlife", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "sulochana", "relationship": "centres_grief_and_agency_of", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "indrajit", "relationship": "responds_to_death_of", "inverse_relationship": "death_is_received_in", "bidirectional": true}
+      ],
+      "transition": {"en": "Return to Indrajit's selected-expression battle, or continue into the separately labelled regional underworld rescue traditions.", "hi": "इंद्रजित के चयनित-पाठ युद्ध में लौटें या अलग नामित क्षेत्रीय पाताल-उद्धार परंपराओं में आगे बढ़ें।"},
+      "episodes": [
+        {
+          "episode_id": "sulochana-meghnad-falls-in-battle",
+          "ordinal": 1,
+          "source_refs": ["valmiki-yuddha-90-indrajit-death", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "Lakshmana defeats Indrajit", "hi": "लक्ष्मण इंद्रजित को पराजित करते हैं"},
+          "narration": {
+            "en": "In the war outside Lanka, Lakshmana finally kills Ravana's son Indrajit, also remembered as Meghnad. That death belongs to the epic battle sequence. The later Sulochana story begins only after this shared event and asks what the news means inside the household he has left behind.",
+            "hi": "लंका के बाहर युद्ध में लक्ष्मण अंततः रावण के पुत्र इंद्रजित, जिन्हें मेघनाद भी कहा जाता है, का वध करते हैं। यह मृत्यु महाकाव्य के युद्ध-क्रम का भाग है। बाद की सुलोचना-कथा इसी साझा घटना के बाद आरम्भ होकर पूछती है कि यह समाचार पीछे छूटे परिवार तक कैसे पहुँचता है।"
+          }
+        },
+        {
+          "episode_id": "sulochana-arm-enters-palace",
+          "ordinal": 2,
+          "source_refs": ["ucsd-sulochana-performance-history"],
+          "title": {"en": "A severed arm carries the news", "hi": "कटा हुआ हाथ समाचार लेकर आता है"},
+          "narration": {
+            "en": "In the documented stage telling, an arm severed in battle flies into Sulochana's chamber. The impossible arrival turns distant warfare into immediate personal loss. She does not yet have a messenger she can question, only a fragment of the person whose fate she must understand.",
+            "hi": "दर्ज रंगमंचीय कथा में युद्ध में कटा हुआ हाथ उड़कर सुलोचना के कक्ष में पहुँचता है। यह असम्भव आगमन दूर चल रहे युद्ध को तत्काल निजी क्षति में बदल देता है। उनके सामने कोई ऐसा दूत नहीं है जिससे वे प्रश्न कर सकें; केवल उस व्यक्ति का अंग है जिसकी नियति उन्हें समझनी है।"
+          }
+        },
+        {
+          "episode_id": "sulochana-arm-writes-message",
+          "ordinal": 3,
+          "source_refs": ["ucsd-sulochana-performance-history"],
+          "title": {"en": "The arm writes what happened", "hi": "हाथ लिखकर घटना बताता है"},
+          "narration": {
+            "en": "The arm writes that Meghnad has been killed. Sulochana's uncertainty becomes grief, but the stage image also gives her knowledge that the palace might otherwise conceal or delay. The device belongs to this performance lineage; Devam does not present it as a scene found in every Ramayana.",
+            "hi": "वह हाथ लिखकर बताता है कि मेघनाद मारे गए हैं। सुलोचना की आशंका शोक में बदल जाती है, पर यह रंगमंचीय दृश्य उन्हें वह जानकारी भी देता है जिसे राजमहल छिपा या देर से पहुँचा सकता था। यह युक्ति इसी प्रदर्शन-परंपरा की है; देवम् इसे हर रामायण में उपस्थित घटना नहीं बताता।"
+          }
+        },
+        {
+          "episode_id": "sulochana-asks-ravana-for-leave",
+          "ordinal": 4,
+          "source_refs": ["ucsd-sulochana-performance-history"],
+          "title": {"en": "Sulochana decides to recover Meghnad's head", "hi": "सुलोचना मेघनाद का सिर वापस लाने का निश्चय करती हैं"},
+          "narration": {
+            "en": "The later play says that Meghnad's head is in Rama's camp. Sulochana asks Ravana for permission to cross the enemy line and recover it. Her journey moves her out of the protected palace and into a field shaped by decisions made by Ravana, Meghnad, and the armies, yet she must bear the consequence herself.",
+            "hi": "बाद का नाटक बताता है कि मेघनाद का सिर राम के शिविर में है। सुलोचना रावण से शत्रु-पंक्ति पार कर उसे वापस लाने की अनुमति माँगती हैं। उनकी यात्रा उन्हें सुरक्षित राजमहल से उस रणभूमि में ले जाती है जिसे रावण, मेघनाद और सेनाओं के निर्णयों ने बनाया, पर परिणाम उन्हें स्वयं उठाना पड़ता है।"
+          }
+        },
+        {
+          "episode_id": "sulochana-enters-rama-camp",
+          "ordinal": 5,
+          "source_refs": ["ucsd-sulochana-performance-history"],
+          "title": {"en": "She asks Rama's camp for the head", "hi": "वे राम के शिविर से सिर माँगती हैं"},
+          "narration": {
+            "en": "Sulochana reaches the opposing camp and states why she has come. The request changes the scene from combat to the handling of a dead opponent and a grieving relative. Rama's side must decide whether victory will include humiliation or whether the remains can be returned with dignity.",
+            "hi": "सुलोचना विरोधी शिविर में पहुँचकर अपने आने का कारण बताती हैं। यह अनुरोध दृश्य को युद्ध से हटाकर मृत प्रतिद्वंद्वी और शोकग्रस्त परिजन के साथ व्यवहार की ओर ले जाता है। राम के पक्ष को तय करना है कि विजय अपमान तक जाएगी या अवशेष सम्मानपूर्वक लौटाए जाएँगे।"
+          }
+        },
+        {
+          "episode_id": "sulochana-head-smiles-in-test",
+          "ordinal": 6,
+          "source_refs": ["ucsd-sulochana-performance-history"],
+          "title": {"en": "The performance gives the dead head a final sign", "hi": "प्रदर्शन मृत सिर से अंतिम संकेत दिलाता है"},
+          "narration": {
+            "en": "In this stage version, members of the camp ask Sulochana to make the head smile before they return it. The head smiles, confirming the bond as the play imagines it, and is restored to her. This supernatural test is a feature of the documented performance, not a measure by which any real person's grief or fidelity should be judged.",
+            "hi": "इस रंगमंचीय रूप में शिविर के लोग सिर लौटाने से पहले सुलोचना से उसे मुस्कराने को कहते हैं। नाटक की कल्पना में सिर मुस्कराकर संबंध की पहचान देता है और उन्हें लौटा दिया जाता है। यह अलौकिक परीक्षा दर्ज प्रदर्शन की विशेषता है, किसी वास्तविक व्यक्ति के शोक या निष्ठा को परखने का मानदंड नहीं।"
+          }
+        },
+        {
+          "episode_id": "sulochana-performance-ending-bounded",
+          "ordinal": 7,
+          "source_refs": ["ucsd-sulochana-performance-history"],
+          "title": {"en": "The old stage ending requires a clear boundary", "hi": "पुराने रंगमंचीय अंत को स्पष्ट सीमा के साथ समझना आवश्यक है"},
+          "narration": {
+            "en": "The historical stage account continues toward Sulochana entering Meghnad's funeral pyre. Devam records that ending because hiding it would falsify the lineage, but does not dramatize it as fulfilment, purity, or devotion. Sati was a lethal social practice: the consumer journey closes on her receipt of the remains, her grief, and the obligation to remember the ending critically.",
+            "hi": "ऐतिहासिक रंगमंचीय विवरण आगे सुलोचना के मेघनाद की चिता में प्रवेश तक जाता है। देवम् उस अंत को छिपाता नहीं, क्योंकि ऐसा करना परंपरा को गलत बनाता, पर उसे पूर्णता, पवित्रता या भक्ति के रूप में नाटकीय भी नहीं बनाता। सती एक घातक सामाजिक प्रथा थी; उपभोक्ता-यात्रा अवशेष मिलने, उनके शोक और उस अंत को आलोचनात्मक स्मृति में रखने की जिम्मेदारी पर समाप्त होती है।"
+          }
+        }
+      ]
+    },
+    {
+      "expectation_id": "regional-ahiravana-mahiravana-rescue",
+      "story_id": "ramayana-regional-ahiravana-mahiravana-rescue-v1",
+      "sequence_group": "war_regional",
+      "expression_scope": "A variant-aware later regional story map: an eastern Mahiravana family and a popular Panchamukhi Ahiravana/Mahiravana family share a rescue scaffold but retain different names and mechanics.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Hanuman descends to rescue Rama and Lakshmana", "hi": "हनुमान राम और लक्ष्मण की रक्षा के लिए पाताल उतरते हैं"},
+      "source_alignment": {
+        "source_family": "later_regional_ahiravana_mahiravana_families",
+        "source_refs": ["sohini-pillai-ahiravana-scholarship", "sathya-sai-nether-region", "sagar-ramayan-series"],
+        "selected_expression_relation": "This subterranean abduction and rescue is absent from the selected expression and is placed beside the late Lanka war rather than inserted into it.",
+        "alignment_note": "Shared episodes are followed by two explicitly labelled branches. Ahiravana and Mahiravana are not silently treated as one stable character."
+      },
+      "characters": ["hanuman", "rama", "lakshmana", "mahiravana", "ahiravana", "makaradhwaja", "vibhishana"],
+      "places": ["lanka-war-camp", "patala-gateway", "patala-sanctum"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "indrajits-last-war", "relationship": "regional_war_interlude_near", "inverse_relationship": "has_regional_interlude", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "ravanas-final-battle", "relationship": "regional_war_interlude_before", "inverse_relationship": "has_regional_preceding_interlude", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "hanuman", "relationship": "centres_rescue_by", "inverse_relationship": "rescues_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "makaradhwaja", "relationship": "introduces_later_son_tradition_of", "inverse_relationship": "appears_in", "bidirectional": true}
+      ],
+      "transition": {"en": "Return to the selected Lanka war, compare the two rescue branches, or move forward to the Lava-Kusha reception story.", "hi": "चयनित लंका-युद्ध में लौटें, उद्धार की दोनों शाखाओं की तुलना करें या लव-कुश की लोक-स्वीकृति कथा में आगे बढ़ें।"},
+      "episodes": [
+        {
+          "episode_id": "ahiravana-war-seeks-hidden-ally",
+          "ordinal": 1,
+          "source_refs": ["sohini-pillai-ahiravana-scholarship", "sathya-sai-nether-region"],
+          "title": {"en": "The later tale opens a road beneath the war", "hi": "बाद की कथा युद्ध के नीचे एक नया मार्ग खोलती है"},
+          "narration": {
+            "en": "As Ravana's position worsens, later Ramayana traditions bring in a subterranean ally called Mahiravana, Ahiravana, or sometimes both. His relationship to Ravana also changes across tellings. What remains stable is the new danger: Rama and Lakshmana can be removed from the battlefield without being defeated in open combat.",
+            "hi": "रावण की स्थिति बिगड़ने पर बाद की रामायण-परंपराएँ महीरावण, अहिरावण अथवा कभी दोनों नामों वाले पाताल-स्थित सहयोगी को लाती हैं। रावण से उसका संबंध भी कथाओं में बदलता है। स्थिर तत्व नया संकट है: राम और लक्ष्मण को खुले युद्ध में हराए बिना रणभूमि से हटाया जा सकता है।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-hanuman-guards-camp",
+          "ordinal": 2,
+          "source_refs": ["sathya-sai-nether-region", "sagar-ramayan-series"],
+          "title": {"en": "Hanuman turns himself into the camp's guard", "hi": "हनुमान स्वयं शिविर के प्रहरी बनते हैं"},
+          "narration": {
+            "en": "Vibhishana warns that deception, not a frontal attack, is likely. Hanuman surrounds or guards the sleeping camp, determined that no stranger will reach the brothers. The defence is powerful against force, but it depends on recognizing whom to trust.",
+            "hi": "विभीषण चेताते हैं कि सामने से आक्रमण नहीं, छल होने की आशंका है। हनुमान सोते हुए शिविर को घेरकर अथवा उसके द्वार पर खड़े होकर निश्चय करते हैं कि कोई अपरिचित राम-लक्ष्मण तक नहीं पहुँचेगा। यह रक्षा बल के विरुद्ध शक्तिशाली है, पर इसकी सफलता इस पर निर्भर है कि विश्वसनीय रूप को पहचाना जा सके।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-trusted-disguise-opens-way",
+          "ordinal": 3,
+          "source_refs": ["sathya-sai-nether-region", "sagar-ramayan-series"],
+          "title": {"en": "A trusted appearance defeats the outer guard", "hi": "विश्वसनीय रूप बाहरी पहरे को पार कर जाता है"},
+          "narration": {
+            "en": "The abductor enters through disguise, illusion, or a form the guards believe they know. Versions disagree about the exact disguise, so Devam does not choose one as universal. The important turn is that trust is imitated successfully and the brothers are taken before the camp understands what has happened.",
+            "hi": "अपहरणकर्ता वेश, माया अथवा ऐसे रूप से भीतर आता है जिसे प्रहरी परिचित मान लेते हैं। कथाएँ सटीक वेश पर सहमत नहीं, इसलिए देवम् किसी एक को सार्वभौमिक नहीं बनाता। निर्णायक मोड़ यह है कि विश्वास की सफल नकल होती है और शिविर को घटना समझ आने से पहले दोनों भाई उठा लिए जाते हैं।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-brothers-taken-to-patala",
+          "ordinal": 4,
+          "source_refs": ["sohini-pillai-ahiravana-scholarship", "sathya-sai-nether-region"],
+          "title": {"en": "Rama and Lakshmana disappear into Patala", "hi": "राम और लक्ष्मण पाताल ले जाए जाते हैं"},
+          "narration": {
+            "en": "Rama and Lakshmana are carried into an underworld kingdom where the captor intends a sacrificial killing. The deity, rite, and kinship details differ materially among branches. The shared story pressure is immediate: the battlefield army has lost both leaders, and rescue requires finding a route into a world outside its map.",
+            "hi": "राम और लक्ष्मण को पाताल के राज्य में ले जाया जाता है, जहाँ अपहरणकर्ता बलि द्वारा उनकी हत्या करना चाहता है। देवता, अनुष्ठान और पारिवारिक संबंधों का विवरण शाखाओं में बहुत बदलता है। साझा संकट तत्काल है: रणभूमि की सेना ने दोनों नेताओं को खो दिया है और बचाव के लिए अपने मानचित्र से बाहर की दुनिया का मार्ग खोजना होगा।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-hanuman-descends",
+          "ordinal": 5,
+          "source_refs": ["sathya-sai-nether-region", "sohini-pillai-ahiravana-scholarship"],
+          "title": {"en": "Hanuman follows the hidden passage downward", "hi": "हनुमान गुप्त मार्ग से नीचे उतरते हैं"},
+          "narration": {
+            "en": "When the loss is discovered, Hanuman takes responsibility for pursuit rather than surrendering to shame over the failed guard. Clues lead him down toward Patala. The rescue changes from battlefield strength to navigation, recognition, restraint, and speed before the threatened sacrifice can occur.",
+            "hi": "अपहरण का पता लगने पर हनुमान असफल पहरे की लज्जा में रुकने के बजाय पीछा करने की जिम्मेदारी लेते हैं। संकेत उन्हें पाताल की ओर नीचे ले जाते हैं। अब बचाव रणभूमि के बल से बदलकर मार्ग-खोज, पहचान, संयम और प्रस्तावित बलि से पहले की गति का काम बन जाता है।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-makaradhwaja-at-gate",
+          "ordinal": 6,
+          "source_refs": ["sathya-sai-nether-region", "sohini-pillai-ahiravana-scholarship"],
+          "title": {"en": "Makaradhwaja guards the gate", "hi": "मकरध्वज द्वार की रक्षा करता है"},
+          "narration": {
+            "en": "At the entrance Hanuman meets Makaradhwaja, a formidable guard who identifies himself in this later tradition as Hanuman's son. Popular versions explain the birth through a drop from Hanuman entering a fish, but details vary. Hanuman is surprised, yet the immediate conflict is duty: the guard will not abandon his post and the rescuer cannot turn back.",
+            "hi": "प्रवेश-द्वार पर हनुमान की भेंट शक्तिशाली प्रहरी मकरध्वज से होती है, जो इस बाद की परंपरा में स्वयं को हनुमान का पुत्र बताता है। लोकप्रिय रूप उसके जन्म को हनुमान से निकली एक बूँद के मछली तक पहुँचने से जोड़ते हैं, पर विवरण बदलते हैं। हनुमान चकित हैं, फिर भी तत्काल टकराव कर्तव्य का है: प्रहरी पद नहीं छोड़ेगा और रक्षक लौट नहीं सकता।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-father-son-contest",
+          "ordinal": 7,
+          "source_refs": ["sathya-sai-nether-region"],
+          "title": {"en": "The unexpected father and son fight without hatred", "hi": "अप्रत्याशित पिता-पुत्र बिना वैर के लड़ते हैं"},
+          "narration": {
+            "en": "Hanuman and Makaradhwaja test one another in combat because their duties point in opposite directions. Hanuman overcomes and restrains him rather than treating the newly discovered relationship as permission to demand obedience. The gate opens, but Makaradhwaja's loyalty remains part of his character rather than a defect erased by defeat.",
+            "hi": "हनुमान और मकरध्वज युद्ध में एक-दूसरे की परीक्षा लेते हैं, क्योंकि उनके कर्तव्य विपरीत दिशाओं में हैं। हनुमान उसे पराजित कर बाँधते हैं, पर नए मिले संबंध को आज्ञाकारिता माँगने का अधिकार नहीं बनाते। द्वार खुलता है, किन्तु मकरध्वज की निष्ठा उसकी चरित्र-विशेषता बनी रहती है, हार से मिटा दोष नहीं।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-eastern-mahiravana-branch",
+          "ordinal": 8,
+          "source_refs": ["sohini-pillai-ahiravana-scholarship", "sathya-sai-nether-region"],
+          "title": {"en": "Branch A: Mahiravana's nether kingdom", "hi": "शाखा क: महीरावण का पाताल-राज्य"},
+          "narration": {
+            "en": "In one eastern and modern devotional family, Mahiravana is the principal ruler whom Hanuman must outwit and defeat inside Patala. Some related tellings add Ahiravana as another figure or a later combatant; others do not. This branch therefore keeps Mahiravana's name and sequence without importing the five-lamp mechanism from a different popular family.",
+            "hi": "एक पूर्वी और आधुनिक भक्तिपरक कथा-परिवार में महीरावण पाताल का मुख्य शासक है, जिसे हनुमान को छल समझकर पराजित करना है। कुछ संबंधित कथाएँ अहिरावण को अलग या बाद के योद्धा के रूप में जोड़ती हैं, कुछ नहीं। इसलिए यह शाखा महीरावण का नाम और क्रम सुरक्षित रखती है, दूसरी लोकप्रिय शाखा के पाँच दीपक इसमें नहीं मिलाती।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-panchamukhi-five-lamp-branch",
+          "ordinal": 9,
+          "source_refs": ["sohini-pillai-ahiravana-scholarship", "sagar-ramayan-series"],
+          "title": {"en": "Branch B: five lamps and Panchamukhi Hanuman", "hi": "शाखा ख: पाँच दीपक और पंचमुखी हनुमान"},
+          "narration": {
+            "en": "A widely familiar popular branch says the captor's life is protected by five lamps burning in different directions. Hanuman assumes a five-faced form so the flames can be extinguished together, then defeats the captor. This Panchamukhi solution is told as its own reception branch; it is not backfilled into every Mahiravana or Ahiravana text.",
+            "hi": "बहुत परिचित लोकप्रिय शाखा कहती है कि अपहरणकर्ता का जीवन अलग दिशाओं में जलते पाँच दीपकों से सुरक्षित है। हनुमान पंचमुखी रूप धारण कर सभी लौ एक साथ बुझाते हैं और फिर शत्रु को पराजित करते हैं। यह पंचमुखी समाधान अपनी अलग लोक-स्वीकृति शाखा है; इसे हर महीरावण या अहिरावण पाठ में पीछे से नहीं जोड़ा जाता।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-sacrifice-stopped",
+          "ordinal": 10,
+          "source_refs": ["sathya-sai-nether-region", "sagar-ramayan-series"],
+          "title": {"en": "The threatened sacrifice is stopped", "hi": "प्रस्तावित बलि रोक दी जाती है"},
+          "narration": {
+            "en": "Whichever branch a listener follows, Hanuman reaches Rama and Lakshmana before the planned killing is completed. He breaks the captor's control and frees them. Devam leaves the ritual's named recipient and exact method inside its branch because combining them would invent a false agreement among traditions.",
+            "hi": "श्रोता जिस भी शाखा का अनुसरण करे, हनुमान प्रस्तावित हत्या पूरी होने से पहले राम और लक्ष्मण तक पहुँचते हैं। वे अपहरणकर्ता का नियंत्रण तोड़कर दोनों को मुक्त करते हैं। देवम् अनुष्ठान के नामित देवता और सटीक विधि को उसी शाखा में रखता है, क्योंकि उन्हें जोड़ना परंपराओं के बीच झूठी सहमति गढ़ना होगा।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-makaradhwaja-after-rescue",
+          "ordinal": 11,
+          "source_refs": ["sathya-sai-nether-region"],
+          "title": {"en": "Some tellings leave Makaradhwaja with a kingdom", "hi": "कुछ कथाएँ मकरध्वज को राज्य सौंपती हैं"},
+          "narration": {
+            "en": "In a common later resolution, Makaradhwaja is released and entrusted with responsibility for the nether kingdom after its ruler falls. The ending honours his demonstrated loyalty while redirecting it away from captivity and sacrifice. Because not every branch gives him the same office, this remains a labelled outcome rather than the single canonical ending.",
+            "hi": "एक सामान्य बाद के समाधान में शासक के पतन के बाद मकरध्वज को मुक्त कर पाताल-राज्य की जिम्मेदारी दी जाती है। यह अंत उसकी सिद्ध निष्ठा का सम्मान करते हुए उसे बंदीकरण और बलि से दूर दिशा देता है। हर शाखा उसे यही पद नहीं देती, इसलिए यह एक नामित परिणाम है, एकमात्र प्रामाणिक अंत नहीं।"
+          }
+        },
+        {
+          "episode_id": "ahiravana-return-to-lanka-war",
+          "ordinal": 12,
+          "source_refs": ["sohini-pillai-ahiravana-scholarship", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "The rescued brothers return to the unfinished war", "hi": "बचाए गए दोनों भाई अधूरे युद्ध में लौटते हैं"},
+          "narration": {
+            "en": "Hanuman brings Rama and Lakshmana back from the hidden world, restoring the leaders the army believed it had lost. The regional adventure now rejoins the familiar Lanka-war horizon. In Devam navigation, the user can return to the selected epic battle without being told that this later detour occurred inside that expression.",
+            "hi": "हनुमान राम और लक्ष्मण को गुप्त लोक से वापस लाते हैं और सेना को वे नेता मिल जाते हैं जिन्हें वह खो चुकी समझती थी। क्षेत्रीय साहसिक कथा अब परिचित लंका-युद्ध के क्षितिज से फिर जुड़ती है। देवम् में उपयोगकर्ता चयनित महाकाव्य-युद्ध पर लौट सकता है, बिना यह कहे कि यह बाद की यात्रा उसी पाठ में हुई थी।"
+          }
+        }
+      ]
+    },
+    {
+      "expectation_id": "popular-luv-kush-ashvamedha-confrontation",
+      "story_id": "ramayana-popular-lava-kusha-ashvamedha-v1",
+      "sequence_group": "aftermath_reception",
+      "expression_scope": "Tirumala Tirupati Devasthanams' expressly brief popular Lava-Kusha battle account expanded into a coherent consumer sequence, separate from the selected Dutt sacrifice-and-recitation sequence.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Lava and Kusha stop Rama's sacrificial horse", "hi": "लव और कुश राम के यज्ञ-अश्व को रोकते हैं"},
+      "source_alignment": {
+        "source_family": "modern_institutional_popular_lava_kusha_retelling",
+        "source_refs": ["ttd-lava-kusha-ashvamedha-brief", "ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+        "selected_expression_relation": "The selected expression has the Ashvamedha and the twins singing Rama's story but not this full escalating horse-battle sequence.",
+        "alignment_note": "The TTD brief supplies the named confrontation order and ending. Devam adds no television dialogue or unsupported combat choreography."
+      },
+      "characters": ["lava", "kusha", "sita", "valmiki", "rama", "shatrughna", "bharata", "lakshmana", "hanuman"],
+      "places": ["valmiki-ashram", "ashvamedha-horse-route", "forest-battlefield", "ayodhya"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "kingdom-tales-and-twins", "relationship": "popularly_expands_after", "inverse_relationship": "has_popular_battle_expansion", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "twins-sing-sita-returns", "relationship": "popularly_reframes_recognition_in", "inverse_relationship": "has_popular_recognition_variant", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "lava", "relationship": "centres_choice_of", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "kusha", "relationship": "centres_choice_of", "inverse_relationship": "appears_in", "bidirectional": true}
+      ],
+      "transition": {"en": "Return to the selected twins-and-sacrifice sequence or continue into Hanuman's separately documented devotional afterlife.", "hi": "जुड़वाँ और यज्ञ के चयनित क्रम में लौटें या हनुमान की अलग दर्ज भक्तिपरक उत्तरकथाओं में आगे बढ़ें।"},
+      "episodes": [
+        {
+          "episode_id": "lava-kusha-sita-finds-refuge",
+          "ordinal": 1,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "Sita reaches Valmiki's refuge", "hi": "सीता वाल्मीकि के आश्रम में शरण पाती हैं"},
+          "narration": {
+            "en": "After Sita is sent away from Ayodhya while pregnant, Valmiki gives her refuge in his ashram. The popular brief links the exile to public accusation, but that explanation does not make the decision harmless or consensual. The forest becomes the home in which her children will grow without knowing their full connection to Ayodhya.",
+            "hi": "गर्भवती सीता को अयोध्या से भेजे जाने के बाद वाल्मीकि उन्हें अपने आश्रम में शरण देते हैं। लोकप्रिय संक्षिप्त कथा वनवास को जन-आरोप से जोड़ती है, पर यह कारण निर्णय को अहानिकर या सहमति-आधारित नहीं बनाता। वन वह घर बनता है जहाँ उनके बच्चे अयोध्या से अपना पूरा संबंध जाने बिना बड़े होंगे।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-raised-and-trained",
+          "ordinal": 2,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Lava and Kusha grow into skilled students", "hi": "लव और कुश कुशल शिष्य बनते हैं"},
+          "narration": {
+            "en": "Sita gives birth to twins, Lava and Kusha. Valmiki's ashram provides education in learning, archery, warfare, and the disciplines expected in the telling of capable princes. Their skill does not arrive suddenly at the horse: it grows through a childhood whose teachers and mother prepare them for a world that has not yet recognized them.",
+            "hi": "सीता जुड़वाँ पुत्रों लव और कुश को जन्म देती हैं। वाल्मीकि का आश्रम उन्हें ज्ञान, धनुर्विद्या, युद्ध-कौशल और समर्थ राजकुमारों के लिए अपेक्षित अनुशासन की शिक्षा देता है। अश्व के सामने उनका कौशल अचानक नहीं आता; वह उस बाल्यकाल में बनता है जहाँ गुरु और माता उन्हें ऐसी दुनिया के लिए तैयार करते हैं जिसने अभी उन्हें पहचाना नहीं।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-learn-rama-story",
+          "ordinal": 3,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "The twins learn to carry Rama's story", "hi": "जुड़वाँ राम की कथा को स्वर देना सीखते हैं"},
+          "narration": {
+            "en": "Valmiki teaches the twins the Ramayana, and they become its young reciters. They can carry the public story of Rama before the hidden family relationship is resolved. This creates the central tension of their later meeting: they know the king through narrative and reputation, while he does not yet know them as his sons.",
+            "hi": "वाल्मीकि जुड़वाँ भाइयों को रामायण सिखाते हैं और वे उसके युवा गायक बनते हैं। पारिवारिक संबंध खुलने से पहले ही वे राम की सार्वजनिक कथा को स्वर दे सकते हैं। यही उनकी बाद की भेंट का केंद्रीय तनाव बनता है: वे राजा को कथा और कीर्ति से जानते हैं, जबकि राजा उन्हें अभी अपने पुत्रों के रूप में नहीं जानते।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-horse-released",
+          "ordinal": 4,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Rama releases the Ashvamedha horse", "hi": "राम अश्वमेध का अश्व छोड़ते हैं"},
+          "narration": {
+            "en": "During Rama's Ashvamedha, a marked horse is released to travel under military protection. In the TTD account, allowing it to pass accepts the sponsoring king's claim, while stopping it signals readiness to contest that claim. The horse therefore carries political meaning as well as ritual meaning wherever it goes.",
+            "hi": "राम के अश्वमेध में चिह्नित अश्व को सैनिक सुरक्षा के साथ विचरण के लिए छोड़ा जाता है। टीटीडी की कथा में उसे निर्बाध जाने देना यज्ञकर्ता राजा के दावे को स्वीकारना है, जबकि रोकना उस दावे को चुनौती देना। इसलिए अश्व जहाँ जाता है, वहाँ अनुष्ठानिक अर्थ के साथ राजनीतिक अर्थ भी ले जाता है।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-stop-and-tie-horse",
+          "ordinal": 5,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "The twins stop and tether the horse", "hi": "जुड़वाँ अश्व को रोककर बाँध देते हैं"},
+          "narration": {
+            "en": "Lava and Kusha find the wandering horse, stop it, and tie it near the ashram. What may first look like two children keeping an attractive animal is, under the horse's inscription and escort, a direct challenge. Their decision forces Ayodhya's representatives to speak with people they do not recognize before choosing violence.",
+            "hi": "लव और कुश घूमते अश्व को पाकर रोकते और आश्रम के निकट बाँध देते हैं। जो पहले दो बच्चों द्वारा सुंदर पशु को रोकना लग सकता है, वह अश्व के लेख और सैनिक दल के कारण सीधी चुनौती है। उनका निर्णय अयोध्या के प्रतिनिधियों को हिंसा चुनने से पहले ऐसे लोगों से बात करने को बाध्य करता है जिन्हें वे पहचानते नहीं।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-refuse-soldiers",
+          "ordinal": 6,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "The first soldiers cannot persuade or defeat them", "hi": "पहले सैनिक उन्हें न मना पाते हैं, न हरा पाते हैं"},
+          "narration": {
+            "en": "The escort tells the twins that the horse belongs to Rama, conqueror of Lanka, and orders its release. Lava and Kusha refuse. Fighting follows, and the soldiers return to Ayodhya defeated, turning a local encounter into news that the royal court can no longer ignore.",
+            "hi": "सैनिक जुड़वाँ भाइयों को बताते हैं कि अश्व लंका-विजेता राम का है और उसे छोड़ने का आदेश देते हैं। लव और कुश मना कर देते हैं। युद्ध होता है और सैनिक पराजित होकर अयोध्या लौटते हैं; स्थानीय मुठभेड़ अब ऐसा समाचार बन जाती है जिसे राजदरबार अनदेखा नहीं कर सकता।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-shatrughna-falls",
+          "ordinal": 7,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Shatrughna leads the next attempt", "hi": "शत्रुघ्न अगला प्रयास लेकर आते हैं"},
+          "narration": {
+            "en": "Rama sends Shatrughna with a larger force to recover the horse. The twins meet the escalation with the training they have received and leave Shatrughna unconscious. The result deepens the puzzle: unknown young fighters have now defeated not merely an escort but a prince of Ayodhya.",
+            "hi": "राम शत्रुघ्न को बड़ी सेना के साथ अश्व वापस लाने भेजते हैं। जुड़वाँ अपने प्रशिक्षण से इस बढ़े हुए बल का सामना करते हैं और शत्रुघ्न को मूर्छित कर देते हैं। रहस्य गहरा जाता है: अज्ञात बाल योद्धाओं ने केवल सैनिक दल नहीं, अयोध्या के राजकुमार को भी पराजित किया है।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-bharata-lakshmana-fall",
+          "ordinal": 8,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Bharata and Lakshmana also fail to bring the horse back", "hi": "भरत और लक्ष्मण भी अश्व वापस नहीं ला पाते"},
+          "narration": {
+            "en": "The TTD sequence next sends Bharata and Lakshmana with their armies. They too are defeated and rendered unconscious. Each escalation raises the cost while withholding the fact that could stop it: the combatants belong to the same family, but the knowledge is still divided between forest and court.",
+            "hi": "टीटीडी का क्रम आगे भरत और लक्ष्मण को उनकी सेनाओं के साथ भेजता है। वे भी पराजित होकर मूर्छित होते हैं। हर बढ़ता टकराव कीमत बढ़ाता है, जबकि उसे रोक सकने वाला तथ्य छिपा रहता है: योद्धा एक ही परिवार के हैं, पर यह ज्ञान अभी वन और दरबार के बीच बँटा है।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-rama-arrives",
+          "ordinal": 9,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Rama comes to see the young challengers himself", "hi": "राम स्वयं युवा चुनौतीकर्ताओं को देखने आते हैं"},
+          "narration": {
+            "en": "Reports of the twins' courage and refusal finally bring Rama to the forest battlefield. He sees how young they are and is reluctant to fight, but they challenge him to recover the horse. He uses restrained weapons in the account, while their precise answers make him wonder who could have trained them so well.",
+            "hi": "जुड़वाँ भाइयों के साहस और अडिगता की खबर अंततः राम को वन की रणभूमि तक लाती है। उनकी कम आयु देखकर राम लड़ने में संकोच करते हैं, पर वे उन्हें अश्व छुड़ाने की चुनौती देते हैं। कथा में राम संयत अस्त्र चलाते हैं और उनके सटीक प्रत्युत्तर देखकर सोचते हैं कि उन्हें इतना उत्तम प्रशिक्षण किसने दिया।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-hanuman-recognizes-resemblance",
+          "ordinal": 10,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Hanuman follows a resemblance back to the ashram", "hi": "हनुमान समानता का संकेत लेकर आश्रम जाते हैं"},
+          "narration": {
+            "en": "Hanuman notices that the boys resemble Rama and Lakshmana in youth. Instead of treating resemblance as proof, he goes to the ashram to find their mother and discovers Sita there. Recognition now becomes an investigation that can reconnect the battlefield to the family history it has been missing.",
+            "hi": "हनुमान देखते हैं कि बालक युवावस्था के राम और लक्ष्मण जैसे लगते हैं। समानता को प्रमाण मान लेने के बजाय वे उनकी माता को खोजने आश्रम जाते हैं और वहाँ सीता को पाते हैं। अब पहचान एक ऐसी जाँच बनती है जो रणभूमि को उससे छूटे पारिवारिक इतिहास से फिर जोड़ सकती है।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-valmiki-reveals-history",
+          "ordinal": 11,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief"],
+          "title": {"en": "Valmiki and Sita bring the hidden history into the open", "hi": "वाल्मीकि और सीता छिपे इतिहास को सामने लाते हैं"},
+          "narration": {
+            "en": "Valmiki, Sita, and the ashram community come to the field. Valmiki explains what happened after Sita was sent away and identifies Lava and Kusha as Rama's sons. The revelation stops the conflict by replacing the category of unknown challengers with the relationship that court and children had both been denied.",
+            "hi": "वाल्मीकि, सीता और आश्रम के लोग रणभूमि में आते हैं। वाल्मीकि बताते हैं कि सीता को भेजे जाने के बाद क्या हुआ और लव-कुश को राम के पुत्रों के रूप में पहचानते हैं। यह उद्घाटन ‘अज्ञात चुनौतीकर्ता’ की श्रेणी को उस संबंध से बदलकर युद्ध रोकता है जिससे दरबार और बच्चों दोनों को वंचित रखा गया था।"
+          }
+        },
+        {
+          "episode_id": "lava-kusha-revival-reunion-and-sita-return",
+          "ordinal": 12,
+          "source_refs": ["ttd-lava-kusha-ashvamedha-brief", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "Recognition restores the family but does not erase Sita's ending", "hi": "पहचान परिवार को जोड़ती है, पर सीता के अंत को नहीं मिटाती"},
+          "narration": {
+            "en": "The twins use what Valmiki taught them to revive those left unconscious, and the TTD brief says the reunited family returns toward Ayodhya. It also places Sita's return to Mother Earth at this recognition scene. The sons are acknowledged, but the ending does not undo the exile or turn Sita's departure into evidence that the earlier harm was justified.",
+            "hi": "जुड़वाँ वाल्मीकि से सीखी विद्या से मूर्छित लोगों को पुनर्जीवित करते हैं और टीटीडी की संक्षिप्त कथा परिवार को अयोध्या की ओर लौटाती है। वही कथा इसी पहचान-दृश्य पर सीता का धरती माता में लौटना भी रखती है। पुत्र स्वीकारे जाते हैं, पर यह अंत वनवास को मिटाता नहीं और न सीता के प्रस्थान को पहले हुए अन्याय का औचित्य बनाता है।"
+          }
+        }
+      ]
+    },
+    {
+      "expectation_id": "popular-hanuman-opens-chest",
+      "story_id": "ramayana-popular-hanuman-opens-chest-v1",
+      "sequence_group": "devotional_afterlife",
+      "expression_scope": "Modern popular devotional necklace-and-heart story documented in reception history and devotional art, not a Valmiki or selected-Dutt episode.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Hanuman reveals Rama and Sita in his heart", "hi": "हनुमान अपने हृदय में राम और सीता का दर्शन कराते हैं"},
+      "source_alignment": {
+        "source_family": "modern_popular_hanuman_devotional_tale",
+        "source_refs": ["lutgendorf-hanuman-tale", "ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+        "selected_expression_relation": "The selected expression includes Sita giving Hanuman a necklace but not the pearl-breaking test or opening of the chest.",
+        "alignment_note": "The complete popular devotional sequence follows scholarly reception documentation without copying its prose or attributing the tale to Valmiki."
+      },
+      "characters": ["hanuman", "rama", "sita", "ayodhya-court"],
+      "places": ["ayodhya-coronation-hall"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "companions-depart", "relationship": "devotional_afterlife_follows", "inverse_relationship": "has_devotional_afterlife", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "hanuman", "relationship": "reveals_devotion_of", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "devotional_text", "target_id": "hanuman-chalisa", "relationship": "shares_rama_bhakti_world_with", "inverse_relationship": "connects_to_story", "bidirectional": true}
+      ],
+      "transition": {"en": "Open the complete Hanuman Chalisa reading, return to the coronation, or follow the separate modern sindoor story.", "hi": "संपूर्ण हनुमान चालीसा पाठ खोलें, राज्याभिषेक पर लौटें या अलग आधुनिक सिंदूर-कथा में जाएँ।"},
+      "episodes": [
+        {
+          "episode_id": "hanuman-chest-coronation-gifts",
+          "ordinal": 1,
+          "source_refs": ["lutgendorf-hanuman-tale", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "Ayodhya honours those who made the return possible", "hi": "अयोध्या वापसी सम्भव बनाने वालों का सम्मान करती है"},
+          "narration": {
+            "en": "After Rama's return and coronation, companions receive gifts and recognition for their service. The public celebration also creates a question especially sharp for Hanuman: what object could equal a relationship he experiences as continuous service? The later devotional tale begins inside that mismatch between royal treasure and inward value.",
+            "hi": "राम की वापसी और राज्याभिषेक के बाद सहयोगियों को उनकी सेवा के लिए उपहार और सम्मान मिलता है। सार्वजनिक उत्सव हनुमान के लिए एक विशेष प्रश्न भी खड़ा करता है: निरंतर सेवा के रूप में जीए गए संबंध के बराबर कौन-सी वस्तु हो सकती है? बाद की भक्तिपरक कथा राजकीय धन और भीतरी मूल्य के इसी अंतर से आरम्भ होती है।"
+          }
+        },
+        {
+          "episode_id": "hanuman-chest-sita-gives-necklace",
+          "ordinal": 2,
+          "source_refs": ["lutgendorf-hanuman-tale", "ramayana-dutt-selected-inventory"],
+          "title": {"en": "Sita gives Hanuman a pearl necklace", "hi": "सीता हनुमान को मोतियों की माला देती हैं"},
+          "narration": {
+            "en": "Sita gives Hanuman a precious pearl necklace. A necklace gift is present in the selected expression, but the actions that follow belong to later reception. Hanuman accepts the honour, then studies the pearls rather than simply wearing or displaying them.",
+            "hi": "सीता हनुमान को बहुमूल्य मोतियों की माला देती हैं। माला का उपहार चयनित पाठ में है, पर आगे की घटनाएँ बाद की लोक-स्वीकृति की हैं। हनुमान सम्मान स्वीकारते हैं, फिर उसे केवल पहनने या दिखाने के बजाय मोतियों को ध्यान से जाँचते हैं।"
+          }
+        },
+        {
+          "episode_id": "hanuman-chest-searches-pearls",
+          "ordinal": 3,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "He searches each pearl for Rama", "hi": "वे हर मोती में राम को खोजते हैं"},
+          "narration": {
+            "en": "Hanuman turns the pearls, listens to or inspects them, and begins opening them one by one. Courtiers see a valuable gift being destroyed; Hanuman sees objects being tested for the only value that matters to him. He says that a pearl without Rama has no use in his service.",
+            "hi": "हनुमान मोतियों को घुमाकर, सुनकर अथवा देखकर एक-एक कर खोलने लगते हैं। दरबारियों को बहुमूल्य उपहार नष्ट होता दिखता है; हनुमान उन वस्तुओं को उस एक मूल्य पर परख रहे हैं जो उनके लिए आवश्यक है। वे कहते हैं कि जिसमें राम नहीं, वह मोती उनकी सेवा में उपयोगी नहीं।"
+          }
+        },
+        {
+          "episode_id": "hanuman-chest-court-challenges-him",
+          "ordinal": 4,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "The court turns his test back on him", "hi": "दरबार वही कसौटी हनुमान पर रखता है"},
+          "narration": {
+            "en": "Someone in the assembly asks whether Hanuman's own body contains Rama; if not, by his rule it too would be worthless. The challenge exposes the difference between a slogan and a claim he is prepared to embody. Hanuman does not retreat into explanation.",
+            "hi": "सभा में कोई पूछता है कि क्या हनुमान के अपने शरीर में राम हैं; यदि नहीं, तो उनकी कसौटी से शरीर भी व्यर्थ होगा। यह चुनौती नारे और उस दावे का अंतर सामने लाती है जिसे वे स्वयं जीने को तैयार हैं। हनुमान केवल शब्दों की सफाई में पीछे नहीं हटते।"
+          }
+        },
+        {
+          "episode_id": "hanuman-chest-opens-heart",
+          "ordinal": 5,
+          "source_refs": ["lutgendorf-hanuman-tale", "sagar-ramayan-series"],
+          "title": {"en": "Hanuman opens his chest", "hi": "हनुमान अपना वक्ष खोलते हैं"},
+          "narration": {
+            "en": "In the devotional miracle, Hanuman opens his chest. Rama and Sita are revealed enthroned within his heart, and some versions extend Rama's name through his whole body. The image makes inward devotion visible; it is not anatomy, self-harm guidance, or an event attributed here to the selected epic.",
+            "hi": "भक्तिपरक चमत्कार में हनुमान अपना वक्ष खोलते हैं। उनके हृदय में राम और सीता विराजमान दिखाई देते हैं और कुछ रूप पूरे शरीर में राम-नाम दिखाते हैं। यह छवि अंतःकरण की भक्ति को दृश्य बनाती है; यह शरीर-विज्ञान, आत्म-हानि का निर्देश या चयनित महाकाव्य की घटना नहीं।"
+          }
+        },
+        {
+          "episode_id": "hanuman-chest-rama-embraces",
+          "ordinal": 6,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "Rama heals and embraces his devotee", "hi": "राम अपने भक्त को स्वस्थ कर गले लगाते हैं"},
+          "narration": {
+            "en": "The assembly's doubt turns to wonder. Rama rises, embraces Hanuman, and in the tale restores his chest. The answer to the challenge is not that pearls or bodies are inherently worthless, but that Hanuman measures his own identity through remembered relationship and service.",
+            "hi": "सभा का संशय विस्मय में बदल जाता है। कथा में राम उठकर हनुमान को गले लगाते और उनका वक्ष पुनः स्वस्थ कर देते हैं। चुनौती का उत्तर यह नहीं कि मोती या शरीर अपने आप में व्यर्थ हैं, बल्कि यह कि हनुमान अपनी पहचान को स्मरण, संबंध और सेवा से मापते हैं।"
+          }
+        },
+        {
+          "episode_id": "hanuman-chest-returns-to-living-image",
+          "ordinal": 7,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "The story continues through devotional art", "hi": "कथा भक्तिपरक चित्रकला में आगे जीवित रहती है"},
+          "narration": {
+            "en": "The open-chest Hanuman becomes a widely recognizable visual statement of Rama-bhakti. A user may move from this story to Hanuman's wider devotional world or the complete Hanuman Chalisa reading, but the image does not replace either text. Its role is to make one later devotional understanding memorable and navigable.",
+            "hi": "खुले हृदय वाले हनुमान राम-भक्ति का व्यापक रूप से पहचाना जाने वाला दृश्य-चिह्न बनते हैं। उपयोगकर्ता यहाँ से हनुमान की व्यापक भक्तिपरक दुनिया या संपूर्ण हनुमान चालीसा पाठ तक जा सकता है, पर छवि किसी पाठ का स्थान नहीं लेती। उसका काम एक बाद की भक्ति-समझ को स्मरणीय और अन्वेषण योग्य बनाना है।"
+          }
+        }
+      ]
+    },
+    {
+      "expectation_id": "popular-hanuman-sindoor",
+      "story_id": "ramayana-popular-hanuman-sindoor-v1",
+      "sequence_group": "devotional_afterlife",
+      "expression_scope": "Modern popular devotional explanation for Hanuman's sindoor association, with living practice kept separate from the story's promised fruits and from universal ritual instruction.",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {"en": "Hanuman covers himself in sindoor for Rama", "hi": "हनुमान राम के लिए स्वयं को सिंदूर से ढक लेते हैं"},
+      "source_alignment": {
+        "source_family": "modern_popular_hanuman_sindoor_tale",
+        "source_refs": ["lutgendorf-hanuman-tale"],
+        "selected_expression_relation": "The tale has no known premodern textual source in the scholarly reception study and is not part of the selected expression.",
+        "alignment_note": "The narration preserves the familiar story while marking its modern explanatory character. Appended weekday and wish-fulfilment promises are disclosed as variant phalashruti, not guaranteed guidance."
+      },
+      "characters": ["hanuman", "rama", "sita", "ayodhya-court"],
+      "places": ["ayodhya-palace", "ayodhya-court"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "companions-depart", "relationship": "devotional_afterlife_follows", "inverse_relationship": "has_devotional_afterlife", "bidirectional": true},
+        {"target_kind": "story", "target_id": "ramayana-popular-hanuman-opens-chest-v1", "relationship": "shares_modern_devotional_family_with", "inverse_relationship": "shares_modern_devotional_family_with", "bidirectional": true},
+        {"target_kind": "living_practice", "target_id": "hanuman-sindoor-offering-variants", "relationship": "later_explains", "inverse_relationship": "has_popular_explanatory_story", "bidirectional": true}
+      ],
+      "transition": {"en": "Return to Hanuman's devotional stories or open a separately current-verified temple record before considering any living offering practice.", "hi": "हनुमान की भक्तिपरक कथाओं में लौटें या किसी जीवित अर्पण-प्रथा पर जाने से पहले अलग वर्तमान-सत्यापित मंदिर-अभिलेख खोलें।"},
+      "episodes": [
+        {
+          "episode_id": "hanuman-sindoor-palace-service",
+          "ordinal": 1,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "Hanuman wants every part of life to become service", "hi": "हनुमान जीवन के हर भाग को सेवा बनाना चाहते हैं"},
+          "narration": {
+            "en": "The popular story places Hanuman in Rama's palace, always eager to remain close and useful. Some versions begin when the royal couple enters private space and Hanuman wonders why Sita may accompany Rama where he cannot. That prelude is optional across tellings, but it establishes his literal, searching devotion rather than entitlement to their privacy.",
+            "hi": "लोकप्रिय कथा हनुमान को राम के महल में रखती है, जहाँ वे सदा निकट रहकर सेवा करना चाहते हैं। कुछ रूप तब आरम्भ होते हैं जब राजदंपती निजी कक्ष में जाते हैं और हनुमान सोचते हैं कि सीता वहाँ जा सकती हैं, वे क्यों नहीं। यह भूमिका सभी कथाओं में नहीं, पर उनकी सीधी, जिज्ञासु भक्ति दिखाती है, निजी स्थान पर अधिकार नहीं।"
+          }
+        },
+        {
+          "episode_id": "hanuman-sindoor-sees-sita",
+          "ordinal": 2,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "He sees Sita applying sindoor", "hi": "वे सीता को सिंदूर लगाते देखते हैं"},
+          "narration": {
+            "en": "Hanuman sees Sita place sindoor in the parting of her hair and asks why she does it. Within the social world of the tale, it is an auspicious sign associated with a married woman. Devam reports that context without turning it into a requirement for every woman, marriage, region, or household.",
+            "hi": "हनुमान सीता को माँग में सिंदूर लगाते देखकर उसका कारण पूछते हैं। कथा के सामाजिक संसार में यह विवाहित स्त्री से जुड़ा मंगल-चिह्न है। देवम् इस संदर्भ को बताता है, पर इसे हर स्त्री, विवाह, क्षेत्र या परिवार के लिए अनिवार्य नियम नहीं बनाता।"
+          }
+        },
+        {
+          "episode_id": "hanuman-sindoor-hears-popular-meaning",
+          "ordinal": 3,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "Sita gives the answer remembered in the tale", "hi": "सीता कथा में स्मरण किया गया उत्तर देती हैं"},
+          "narration": {
+            "en": "Sita answers, in the familiar story, that she wears it for Rama's long life or wellbeing. The statement expresses the belief inside the modern devotional tale; it is not medical causation or a promise that a cosmetic determines another person's lifespan. Hanuman receives it with the wholehearted literalness that drives the next turn.",
+            "hi": "परिचित कथा में सीता उत्तर देती हैं कि वे इसे राम की दीर्घायु अथवा कुशलता के लिए लगाती हैं। यह कथानक के भीतर की मान्यता है; यह चिकित्सकीय कारण या यह वादा नहीं कि प्रसाधन किसी की आयु निर्धारित करता है। हनुमान इसे अपने पूर्ण और सीधेसादे समर्पण के साथ सुनते हैं, जिससे अगला मोड़ बनता है।"
+          }
+        },
+        {
+          "episode_id": "hanuman-sindoor-reasons-with-devotion",
+          "ordinal": 4,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "A small mark becomes, in his mind, a whole-body offering", "hi": "उनके मन में छोटा चिह्न पूरे शरीर का अर्पण बन जाता है"},
+          "narration": {
+            "en": "Hanuman reasons that if a small amount expresses care for Rama, covering every hair of his body would express even more. The logic is deliberately comic and devotional rather than ritual jurisprudence. It reveals a character who does not calculate a minimum offering when he believes Rama may benefit.",
+            "hi": "हनुमान सोचते हैं कि यदि थोड़ा-सा सिंदूर राम के लिए मंगल की कामना व्यक्त करता है, तो शरीर के हर रोम को ढकना उससे भी अधिक समर्पण होगा। यह तर्क जानबूझकर हास्यपूर्ण और भक्तिपरक है, अनुष्ठान-विधि नहीं। यह ऐसे चरित्र को दिखाता है जो राम के हित की कल्पना करते समय न्यूनतम अर्पण की गणना नहीं करता।"
+          }
+        },
+        {
+          "episode_id": "hanuman-sindoor-covers-body",
+          "ordinal": 5,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "Hanuman returns completely red-orange", "hi": "हनुमान पूरे लाल-नारंगी होकर लौटते हैं"},
+          "narration": {
+            "en": "He covers himself in sindoor and returns to Rama's court from head to tail in radiant red-orange. The assembly reacts with surprise and laughter because a familiar marital mark has been expanded beyond ordinary scale. Sita understands the question that produced the spectacle, while Rama asks Hanuman to explain himself.",
+            "hi": "वे स्वयं को सिंदूर से ढककर सिर से पूँछ तक चमकते लाल-नारंगी रूप में राम के दरबार लौटते हैं। सभा आश्चर्य और हँसी से प्रतिक्रिया करती है, क्योंकि परिचित वैवाहिक चिह्न सामान्य सीमा से बहुत आगे बढ़ गया है। सीता उस प्रश्न को समझती हैं जिससे यह दृश्य बना और राम हनुमान से कारण पूछते हैं।"
+          }
+        },
+        {
+          "episode_id": "hanuman-sindoor-rama-embraces",
+          "ordinal": 6,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "Rama recognizes the intention beneath the spectacle", "hi": "राम दृश्य के पीछे का भाव पहचानते हैं"},
+          "narration": {
+            "en": "Hanuman says that he wants Rama's life and wellbeing multiplied by every hair he has covered. Rama responds to the intention with affection and embraces him. The devotional resolution values love expressed without self-interest; it does not establish that using more material produces more spiritual or worldly reward.",
+            "hi": "हनुमान कहते हैं कि वे अपने ढके हुए हर रोम के बराबर राम की आयु और कुशलता की कामना करते हैं। राम उस भाव को प्रेम से स्वीकारकर उन्हें गले लगाते हैं। भक्तिपरक समाधान निष्काम प्रेम को महत्त्व देता है; यह नियम नहीं बनाता कि अधिक सामग्री से अधिक आध्यात्मिक या सांसारिक फल मिलेगा।"
+          }
+        },
+        {
+          "episode_id": "hanuman-sindoor-story-and-practice-separated",
+          "ordinal": 7,
+          "source_refs": ["lutgendorf-hanuman-tale"],
+          "title": {"en": "The later story explains a practice without governing it", "hi": "बाद की कथा प्रथा का अर्थ बताती है, उसे सार्वभौमिक रूप से नियंत्रित नहीं करती"},
+          "narration": {
+            "en": "Scholarly reception history notes no known premodern textual source for this story and sees it as a modern explanation for Hanuman's widespread sindoor association. Some versions append Tuesday offerings and promised wish fulfilment; Devam labels those as variant phalashruti, not guarantees. Actual temple handling, permitted materials, days, and who may apply them belong to each institution's current rules, not this story.",
+            "hi": "लोक-स्वीकृति के विद्वत इतिहास में इस कथा का कोई ज्ञात पूर्व-आधुनिक पाठ-स्रोत नहीं मिलता और इसे हनुमान से सिंदूर के व्यापक संबंध की आधुनिक व्याख्या माना गया है। कुछ रूप मंगलवार के अर्पण और मनोकामना-पूर्ति का फल जोड़ते हैं; देवम् उन्हें कथा-विशेष का फलश्रुति-वचन कहता है, गारंटी नहीं। मंदिर में सामग्री, दिन और लगाने की अनुमति प्रत्येक संस्था के वर्तमान नियमों से तय होगी, इस कथा से नहीं।"
+          }
+        }
+      ]
+    }
+  ],
+  "batch_counters": {
+    "stories": 5,
+    "episodes": 45,
+    "consumer_complete_en_hi": 5,
+    "variant_branches_kept_separate": 2,
+    "selected_expression_backprojections": 0
+  }
+}

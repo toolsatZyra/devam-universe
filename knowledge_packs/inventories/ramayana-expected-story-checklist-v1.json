@@ -1,7 +1,7 @@
 {
   "contract": "DEVAM_RAMAYANA_EXPECTED_STORY_CHECKLIST_V1",
   "version": 1,
-  "generated_at": "2026-08-13",
+  "generated_at": "2026-08-14",
   "audience": "Ordinary Hindi- or English-speaking Indian adults who expect the familiar Ramayana story world as well as an explicitly labelled selected source expression.",
   "boundary": "This is a versioned consumer-expectation denominator, not a declaration that every item occurs in Valmiki, Dutt, Ramcharitmanas, every Ramlila, or every regional telling. Each item remains separately scoped until its source lineage and consumer narrative are reviewed.",
   "completion_rule": "A selected-expression row is complete only inside that expression. Every supplemental expectation must become consumer_complete_en_hi in its labelled expression, or be explicitly excluded with a reviewed scope reason.",
@@ -12,7 +12,8 @@
       "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json",
       "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json",
       "knowledge_packs/library_lanes/ramayana/expected-stories-uttarkanda-frames-v1.json",
-      "knowledge_packs/library_lanes/ramayana/expected-stories-popular-living-bridges-v1.json"
+      "knowledge_packs/library_lanes/ramayana/expected-stories-popular-living-bridges-v1.json",
+      "knowledge_packs/library_lanes/ramayana/expected-stories-later-devotional-v1.json"
     ]
   },
   "counters": {
@@ -20,11 +21,10 @@
     "supplemental_expected_stories": 22,
     "total_expected_story_rows": 71,
     "selected_expression_rows_complete_en_hi": 49,
-    "supplemental_rows_complete_en_hi": 17,
-    "supplemental_rows_open": 5,
+    "supplemental_rows_complete_en_hi": 22,
+    "supplemental_rows_open": 0,
     "supplemental_coverage_states": {
-      "candidate_not_authored": 5,
-      "consumer_complete_en_hi": 17
+      "consumer_complete_en_hi": 22
     }
   },
   "selected_expression_rows": [
@@ -650,8 +650,10 @@
       "nearest_selected_cycle_ids": [
         "indrajits-last-war"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_research_needed"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "later_marathi_performance_lineage_aligned_harm_boundary_reviewed",
+      "consumer_story_id": "ramayana-popular-sulochana-meghnad-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1"
     },
     {
       "expectation_id": "regional-ahiravana-mahiravana-rescue",
@@ -665,8 +667,10 @@
         "indrajits-last-war",
         "ravanas-final-battle"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "variant_families_and_names_need_reconciliation"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "variant_families_reconciled_without_plot_merger",
+      "consumer_story_id": "ramayana-regional-ahiravana-mahiravana-rescue-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1"
     },
     {
       "expectation_id": "popular-luv-kush-ashvamedha-confrontation",
@@ -680,8 +684,10 @@
         "kingdom-tales-and-twins",
         "twins-sing-sita-returns"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_and_variant_outcomes_needed"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "ttd_popular_brief_aligned_selected_expression_kept_separate",
+      "consumer_story_id": "ramayana-popular-lava-kusha-ashvamedha-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1"
     },
     {
       "expectation_id": "manas-kakabhushundi-garuda-dialogue",
@@ -724,8 +730,10 @@
       "nearest_selected_cycle_ids": [
         "companions-depart"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_research_needed"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "modern_devotional_reception_history_aligned",
+      "consumer_story_id": "ramayana-popular-hanuman-opens-chest-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1"
     },
     {
       "expectation_id": "popular-hanuman-sindoor",
@@ -737,8 +745,10 @@
       "nearest_selected_cycle_ids": [
         "companions-depart"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "story_lineage_and_living_offering_research_needed"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "modern_explanatory_story_aligned_living_practice_separated",
+      "consumer_story_id": "ramayana-popular-hanuman-sindoor-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1"
     },
     {
       "expectation_id": "living-diwali-rama-homecoming",
@@ -764,7 +774,12 @@
     "sagar-ramayan-series",
     "ucpress-many-ramayanas-squirrel",
     "incredible-india-rameswaram",
-    "incredible-india-diwali"
+    "incredible-india-diwali",
+    "ucsd-sulochana-performance-history",
+    "sohini-pillai-ahiravana-scholarship",
+    "sathya-sai-nether-region",
+    "ttd-lava-kusha-ashvamedha-brief",
+    "lutgendorf-hanuman-tale"
   ],
-  "completion_state": "supplemental_expected_story_authoring_required"
+  "completion_state": "approved_version_complete"
 }

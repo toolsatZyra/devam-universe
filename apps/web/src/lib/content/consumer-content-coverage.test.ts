@@ -56,7 +56,7 @@ describe("consumer-content MVP inventory", () => {
   });
 
   it("makes bilingual story continuity primary and source apparatus non-default", () => {
-    expect(inventory.snapshot_date).toBe("2026-08-13");
+    expect(inventory.snapshot_date).toBe("2026-08-14");
     expect(inventory.audience).toContain("Ordinary Hindi- or English-speaking Indian adults");
     expect(inventory.consumer_record_contract.languages).toEqual(["hi", "en"]);
     expect(inventory.consumer_record_contract.story_fields).toEqual([
@@ -78,8 +78,8 @@ describe("consumer-content MVP inventory", () => {
       expected_story_checklist: "knowledge_packs/inventories/ramayana-expected-story-checklist-v1.json",
       expected_story_rows: 71,
       selected_expression_rows_complete_en_hi: 49,
-      supplemental_expected_story_rows_complete_en_hi: 17,
-      supplemental_expected_story_rows_open: 5,
+      supplemental_expected_story_rows_complete_en_hi: 22,
+      supplemental_expected_story_rows_open: 0,
       whole_story_turns: 49,
       playable_turns: 49,
       outlined_turns: 0,
@@ -87,8 +87,8 @@ describe("consumer-content MVP inventory", () => {
       playable_scenes: 517,
       draft_scene_outlines: 0,
       bilingual_beats: 2340,
-      supplemental_bilingual_episode_beats: 175,
-      total_selected_and_supplemental_bilingual_narrative_units: 2515,
+      supplemental_bilingual_episode_beats: 220,
+      total_selected_and_supplemental_bilingual_narrative_units: 2560,
       scenes_with_place_paths: 517,
       story_order_links: 516,
       character_path_links: 94,

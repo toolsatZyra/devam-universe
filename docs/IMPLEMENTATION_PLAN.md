@@ -47,11 +47,15 @@ Rekha and tasted-berries reception stories, the regional bridge squirrel, the
 living Ramanathaswamy Temple linga tradition, and the North Indian/Ayodhya
 Diwali homecoming lane. It separates selected epic text, later reception,
 living belief, current institution, real place, and regional festival practice;
-no television dialogue or source payload is copied. Seventeen supplements are
-now complete through 175 episodes and five remain open: Sulochana-Meghnad,
-Ahiravana/Mahiravana, the Lava-Kusha horse confrontation, Hanuman opening his
-chest, and the Hanuman sindoor tradition. Complete that final batch, then run
-one consolidated whole-Ramayana continuity review.
+no television dialogue or source payload is copied. A fifth pack completes the
+final five version-one expectations through 45 more bilingual episodes. It
+retains Sulochana's later-performance and harmful-sati boundary, separate
+Ahiravana/Mahiravana branches, the TTD Lava-Kusha battle reception, and the
+modern devotional status of the Hanuman chest and sindoor stories. All 22
+supplements are now authored through 220 episodes. The consolidated
+whole-Ramayana v1 continuity and adversarial review passes in
+`RAMAYANA_EXPECTED_STORY_V1_ADVERSARIAL_REVIEW_2026-08-14.md`; wider expressions
+remain separate denominators.
 
 Checkpoint 2026-08-13 (end-to-end devotional reading correction):
 Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered

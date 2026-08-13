@@ -41,6 +41,15 @@
       "coverage_state": "consumer_complete_en_hi_source_bounded_reception_and_living_bridges",
       "database_projection": "supabase/migrations/20260814013000_seed_ramayana_expected_stories_popular_living_bridges.sql",
       "hosted_database_applied": false
+    },
+    {
+      "pack_id": "ramayana-expected-stories-later-devotional-v1",
+      "path": "knowledge_packs/library_lanes/ramayana/expected-stories-later-devotional-v1.json",
+      "story_count": 5,
+      "episode_count": 45,
+      "coverage_state": "consumer_complete_en_hi_source_bounded_later_regional_and_devotional",
+      "database_projection": "supabase/migrations/20260814030000_seed_ramayana_expected_stories_later_devotional.sql",
+      "hosted_database_applied": false
     }
   ],
   "source_registry": [
@@ -103,6 +112,46 @@
       "observed_at": "2026-08-13",
       "rights_lane": "reference_only",
       "evidence_role": "Contemporary multi-day and multi-regional Diwali context including the Ayodhya homecoming association."
+    },
+    {
+      "source_id": "ucsd-sulochana-performance-history",
+      "kind": "scholarly_performance_history",
+      "url": "https://escholarship.org/content/qt81d966m2/qt81d966m2.pdf",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Documents the later Marathi stage arm, head-recovery, and sati plot; Devam critically bounds the harmful ending."
+    },
+    {
+      "source_id": "sohini-pillai-ahiravana-scholarship",
+      "kind": "scholarly_regional_comparison",
+      "url": "https://escholarship.org/content/qt9dv5m9wg/qt9dv5m9wg.pdf",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only",
+      "evidence_role": "Documents the later, multi-regional Ahiravana and Mahiravana tradition and its absence from most Valmiki recensions."
+    },
+    {
+      "source_id": "sathya-sai-nether-region",
+      "kind": "modern_devotional_retelling",
+      "url": "https://www.ssssahitya.org/vahinis/ramakatha-rasavahini/the-nether-region",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only_no_copying",
+      "evidence_role": "One explicitly modern Mahiravana, Patala, Hanuman, and Makaradhwaja telling; not a universal branch."
+    },
+    {
+      "source_id": "ttd-lava-kusha-ashvamedha-brief",
+      "kind": "official_institutional_devotional_reference",
+      "url": "https://ebooks.tirumala.org/downloads/sundarakandaenglish.pdf",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only_no_copying",
+      "evidence_role": "Supplies the expressly brief popular Lava-Kusha horse confrontation, recognition, revival, and return sequence."
+    },
+    {
+      "source_id": "lutgendorf-hanuman-tale",
+      "kind": "scholarly_reception_history",
+      "url": "https://doi.org/10.1093/acprof:oso/9780195309225.001.0001",
+      "observed_at": "2026-08-14",
+      "rights_lane": "reference_only_no_copying",
+      "evidence_role": "Documents and analyzes the modern pearl-necklace/chest and sindoor stories and their living reception."
     }
   ],
   "supplements": [
@@ -309,10 +358,12 @@
       "expression_scopes": ["popular_performance", "popular_adaptation", "later_telling"],
       "relationship_to_selected_expression": "later_or_regional_extension",
       "nearest_selected_cycle_ids": ["indrajits-last-war"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_research_needed",
-      "evidence_source_ids": ["sagar-ramayan-series"],
-      "boundary": "Do not invent Sulochana's dialogue, agency, or sati outcome; source and reception require explicit review."
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "later_marathi_performance_lineage_aligned_harm_boundary_reviewed",
+      "consumer_story_id": "ramayana-popular-sulochana-meghnad-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1",
+      "evidence_source_ids": ["ucsd-sulochana-performance-history", "sagar-ramayan-series"],
+      "boundary": "The arm-and-head performance sequence is later reception; its sati ending is recorded as harmful historical material, never devotion or instruction."
     },
     {
       "expectation_id": "regional-ahiravana-mahiravana-rescue",
@@ -321,10 +372,12 @@
       "expression_scopes": ["regional_telling", "later_telling", "popular_adaptation"],
       "relationship_to_selected_expression": "later_or_regional_extension",
       "nearest_selected_cycle_ids": ["indrajits-last-war", "ravanas-final-battle"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "variant_families_and_names_need_reconciliation",
-      "evidence_source_ids": ["sagar-ramayan-series"],
-      "boundary": "Ahiravana and Mahiravana versions must remain separately attributable when their plots materially differ."
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "variant_families_reconciled_without_plot_merger",
+      "consumer_story_id": "ramayana-regional-ahiravana-mahiravana-rescue-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1",
+      "evidence_source_ids": ["sohini-pillai-ahiravana-scholarship", "sathya-sai-nether-region", "sagar-ramayan-series"],
+      "boundary": "The eastern Mahiravana family and popular Panchamukhi five-lamp family remain labelled branches; names, kinship, rites, and mechanics are not silently merged."
     },
     {
       "expectation_id": "popular-luv-kush-ashvamedha-confrontation",
@@ -333,10 +386,12 @@
       "expression_scopes": ["later_telling", "regional_telling", "popular_adaptation"],
       "relationship_to_selected_expression": "later_or_regional_extension",
       "nearest_selected_cycle_ids": ["kingdom-tales-and-twins", "twins-sing-sita-returns"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_and_variant_outcomes_needed",
-      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
-      "boundary": "Do not let the popular battle cycle overwrite the selected expression's account of the twins and sacrifice."
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "ttd_popular_brief_aligned_selected_expression_kept_separate",
+      "consumer_story_id": "ramayana-popular-lava-kusha-ashvamedha-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1",
+      "evidence_source_ids": ["ramayana-dutt-selected-inventory", "ttd-lava-kusha-ashvamedha-brief", "sagar-ramayan-series"],
+      "boundary": "The TTD popular battle cycle remains separate from the selected expression's sacrifice and twins-recitation account."
     },
     {
       "expectation_id": "manas-kakabhushundi-garuda-dialogue",
@@ -373,10 +428,12 @@
       "expression_scopes": ["popular_devotional", "visual_tradition", "popular_adaptation"],
       "relationship_to_selected_expression": "devotional_afterlife",
       "nearest_selected_cycle_ids": ["companions-depart"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "source_lineage_research_needed",
-      "evidence_source_ids": ["sagar-ramayan-series"],
-      "boundary": "Present as a devotional story only after locating its textual and reception history; do not attribute it to Valmiki by familiarity."
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "modern_devotional_reception_history_aligned",
+      "consumer_story_id": "ramayana-popular-hanuman-opens-chest-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1",
+      "evidence_source_ids": ["lutgendorf-hanuman-tale", "ramayana-dutt-selected-inventory", "sagar-ramayan-series"],
+      "boundary": "The selected expression contains the necklace gift but not the pearl test or opened chest; the latter remain a modern devotional story."
     },
     {
       "expectation_id": "popular-hanuman-sindoor",
@@ -385,10 +442,12 @@
       "expression_scopes": ["popular_devotional", "living_practice"],
       "relationship_to_selected_expression": "devotional_afterlife",
       "nearest_selected_cycle_ids": ["companions-depart"],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "story_lineage_and_living_offering_research_needed",
-      "evidence_source_ids": [],
-      "boundary": "Research the devotional story and regional offering practices separately; never universalize temple procedure."
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "modern_explanatory_story_aligned_living_practice_separated",
+      "consumer_story_id": "ramayana-popular-hanuman-sindoor-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-later-devotional-v1",
+      "evidence_source_ids": ["lutgendorf-hanuman-tale"],
+      "boundary": "The story has no known premodern textual source in the scholarly account; Tuesday promises and actual temple application remain variant practice, not guarantees or universal procedure."
     },
     {
       "expectation_id": "living-diwali-rama-homecoming",
