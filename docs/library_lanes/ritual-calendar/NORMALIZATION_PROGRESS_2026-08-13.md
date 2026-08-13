@@ -571,3 +571,24 @@ Exact accepted-authoring coverage is now **129 completed after freeze / 79
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
 Authored and internally reviewed does not mean projected, hosted, independently
 culturally reviewed, released or published.
+
+## Evidence-first seasonal, new-year and harvest batch checkpoint
+
+Twelve accepted named answers are complete as bilingual applicability lanes:
+Aadi Perukku; Bhogi; Magh Bihu; Makaravilakku; Malayalam New Year;
+Mandalakala Pooja; Mattu Pongal; Nutan Varsh Prarambha; Pohela Boishakha;
+Pongal; Puthandu; and Vishu.
+
+Bhogi, Mattu and the generic Pongal index reuse the complete reviewed Tamil
+four-day Pongal lane rather than duplicating it. The batch preserves Tamil
+water gratitude, Assamese harvest and organiser-owned fire customs, Bengali
+New Year and optional Haal Khata, the Vishu/Chingam-1 distinction, Puthandu,
+the generic Chaitra Samvat index, and two institution-owned Sabarimala routes.
+Minor food, clothing, flower, language and decoration choices stay within the
+lane; materially different fire, water, animal, trader, temple and pilgrimage
+forms remain with their current named owners.
+
+Exact accepted-authoring coverage is now **141 completed after freeze / 67
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**.
+Authored and internally reviewed does not mean projected, hosted, independently
+culturally reviewed, released or published.

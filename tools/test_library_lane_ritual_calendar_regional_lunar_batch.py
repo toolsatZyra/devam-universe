@@ -69,7 +69,7 @@ def test_links_progress_matrix_and_unprojected_boundary():
  links=load(LANE/"cross-links"/"regional-lunar-phase-batch-13-owner-proposals-v1.json"); schema=load(ROOT/"schemas"/"cross-lane-link-proposal-v1.schema.json"); Draft202012Validator(schema).validate(links)
  assert len(links["proposals"])==26 and len({x["proposal_id"] for x in links["proposals"]})==26
  assert all(x["target_resolution"]=="unresolved_owner_lane" for x in links["proposals"])
- p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json"); assert p["completed_after_freeze"]==129 and p["remaining_authoring_items"]==79
+ p=load(LANE/"inventory"/"ritual-calendar-authoring-progress-v1.json"); assert p["completed_after_freeze"]==141 and p["remaining_authoring_items"]==67
  assert p["completed_after_freeze"]+p["remaining_authoring_items"]==208
  for lane_id in IDS:
   assert p["completed_lane_ids"].count(lane_id)==1
