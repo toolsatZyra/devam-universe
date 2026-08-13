@@ -1,0 +1,32 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-pausha-putrada-padma-purana-story-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "pausha-putrada-to-padma-purana-suketumat-story-owner",
+      "from_ref": {"lane_local_id": "ritual-calendar/pausha-putrada-ekadashi-north-west-smarta-household-2027-v1"},
+      "to_ref": {"lane_local_id": "story/padma-purana-putrada-suketumat-campaka-source-context"},
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_putrada_suketumat_campaka_context",
+      "directionality": "directed",
+      "consumer_label": {"en": "Read the full source-labelled Suketumat and Campaka account", "hi": "सुकेतुमत और चम्पका की पूरी स्रोत-नाम वाली कथा पढ़ें"},
+      "scope": {
+        "statement": "The ritual pack uses a bounded retelling from the reviewed Deshpande English expression of Padma Purana, Uttara Khanda chapter 41. A future story/scripture owner should provide the lawful full expression, Sanskrit and edition coordinates, and reception/variant context while preserving male-heir ideology, infertility grief, suicidal thought, fasting and promised birth as textual facts rather than Devam values, treatment or guarantees.",
+        "geography_codes": ["north-india", "west-india"],
+        "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+        "time_scope": "Locally resolved Pausha Shukla Ekadashi; ordinary 2027 fixture 18 January",
+        "source_expression_scope": "N. A. Deshpande English translation, Padma Purana Uttara Khanda chapter 41; Sanskrit, edition and reception owner review unresolved"
+      },
+      "evidence_refs": [
+        {"evidence_kind": "source_passage", "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365618.html", "claim_scope": "Reviewed chapter 41 expression naming Putrada and narrating Suketumat, Campaka, male-lineage grief, suicidal thought, the sages, vow, Dvadashi close and attributed birth."},
+        {"evidence_kind": "ritual_lane", "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/pausha-putrada-ekadashi-north-west-smarta-household-2027-v1.json", "claim_scope": "Bilingual ordinary-date household/participant guidance, equal-worth framing, reproductive privacy, crisis safety, closing and major-variant routing."}
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

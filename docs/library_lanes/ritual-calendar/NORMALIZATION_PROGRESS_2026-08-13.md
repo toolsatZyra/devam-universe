@@ -254,3 +254,20 @@ Exact accepted-authoring coverage is now **17 completed after freeze / 191
 remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
 authored library content has not been projected, hosted, independently released
 or published.
+
+The eighteenth post-freeze item is complete at the bilingual authored-library
+layer: `pausha-putrada-ekadashi-north-west-smarta-household-2027-v1`. It keeps
+the reviewed ordinary Smarta fixture of 18 January 2027 separate from the
+material Gauna/Vaishnava 19 January lane. Its safe core is Vishnu/Krishna
+remembrance, a Padma-Purana-labelled Suketumat and Campaka account, a private
+hope without demanding an outcome, and one act of equal care. The chapter's
+male-heir ideology, infertility grief, suicidal thought, fast and attributed
+birth remain textual facts rather than Devam values or instructions. Language,
+ordinary materials, image/no-image and voluntary non-fast/established-fast
+context do not create state copies; next-day authority, formal fertility or
+priest-led rites, named temple programmes and Shravana Putrada remain separate.
+
+Exact accepted-authoring coverage is now **18 completed after freeze / 190
+remaining / 208 total**. Verified complete day cells remain **0 / 19,480**;
+authored library content has not been projected, hosted, independently released
+or published.

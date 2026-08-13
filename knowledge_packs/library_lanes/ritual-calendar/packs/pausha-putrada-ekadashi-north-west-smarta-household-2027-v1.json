@@ -1,0 +1,302 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "pausha-putrada-ekadashi-north-west-smarta-household-2027-v1",
+  "observance_slugs": ["pausha-putrada-ekadashi"],
+  "applicability": {
+    "region_codes": ["north-india", "west-india", "IN-DL", "IN-HR", "IN-RJ", "IN-UP", "IN-UK", "IN-PB", "IN-MH", "IN-GJ"],
+    "tradition_codes": ["smarta-north-india", "smarta-west-india"],
+    "institution_codes": [],
+    "settings": ["individual", "household", "family_led", "temple"],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city and accepted family Panchang resolve Pausha Shukla Ekadashi for you?",
+      "Do you follow the ordinary Smarta date, or a Gauna, Vaishnava or temple authority that selects the next civil day?",
+      "Does your family already have an established Ekadashi vrata, food rule, prayer, reading or parana practice?",
+      "Would discussion of fertility, pregnancy, loss, adoption, lineage, gender or suicide be distressing or unsafe today?",
+      "Would a private, non-fasting, no-flame, image-free and material-free form be safer?"
+    ],
+    "context_pairs": [
+      {"region_code": "north-india", "tradition_code": "smarta-north-india", "observance_slug": "pausha-putrada-ekadashi"},
+      {"region_code": "west-india", "tradition_code": "smarta-west-india", "observance_slug": "pausha-putrada-ekadashi"}
+    ],
+    "observance_context_notes": [
+      {"observance_slug": "pausha-putrada-ekadashi", "language_code": "en", "note": "This is the ordinary North/West Smarta household lane. Other states may use it only when their accepted Panchang resolves the same ordinary observance. The 2027 Gauna/Vaishnava next-day result, inherited vrata, fertility rite and named temple liturgy are not silently merged."},
+      {"observance_slug": "pausha-putrada-ekadashi", "language_code": "hi", "note": "यह उत्तर/पश्चिम का सामान्य स्मार्त गृह-मार्ग है। दूसरे राज्य इसे तभी अपनाएँ जब उनका मान्य पंचांग यही सामान्य पालन निर्धारित करे। 2027 की अगले दिन वाली गौण/वैष्णव तिथि, स्थापित व्रत, प्रजनन-कर्म और नामित मंदिर-विधि इसमें नहीं मिलाए गए हैं।"}
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": ["drik-pausha-putrada-2027", "devam-ekadashi-rule-audit"],
+    "timing_kind": "textual_rule",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "pausha-shukla-ekadashi-local-ordinary-smarta-v1",
+    "closing_decision_rule_id": "pausha-putrada-nonfast-or-established-authority-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed 2027 Indian fixtures place ordinary Pausha Putrada Ekadashi on Monday 18 January and separately place Gauna/Vaishnava Pausha Putrada Ekadashi on Tuesday 19 January. Resolve the user's city and accepted Panchang. The 19 January result is a different authority lane, not a minor state variant. Never copy a foreign-city time, generic parana window or these dates into another year."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-putrada-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 41: Putrada Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed source-labelled Suketumat and Campaka account; male-heir assumptions, suicidal thought, fast and promised birth are textual facts, not Devam values, treatment or guarantees",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365618.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {"section": "Uttara Khanda chapter 41", "reviewed_lines": "55-86", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "drik-pausha-putrada-2027",
+      "title": "2027 Pausha Putrada, Gauna and Vaishnava calendar fixtures",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian calendar discovery evidence separating ordinary 18 January from Gauna/Vaishnava 19 January; no portable parana authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?time-format=24hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {"ordinary_fixture": "2027-01-18", "gauna_vaishnava_fixture": "2027-01-19", "lunar_identity": "Pausha Shukla Ekadashi", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary-versus-Gauna/Vaishnava named applicability boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"}
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu/Krishna remembrance scaffold and family/sampradaya authority boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"paths": ["knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json", "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"]}
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official clinical boundary treating day-long Ekadashi fasting as high risk for type 1 diabetes and supporting exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {"topic": "Fasting and Feasting in T1DM", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "india-erss-112",
+      "title": "Emergency Response Support System",
+      "publisher": "Government of India",
+      "source_role": "current official emergency route for imminent danger, including medical emergency and witnessed suicide attempt",
+      "rights_lane": "citation_only",
+      "url": "https://112.gov.in/",
+      "artifact_sha256": null,
+      "citation_coordinates": {"number": "112", "coverage": "all Indian States and Union Territories", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "mohfw-tele-manas",
+      "title": "National Tele Mental Health Programme",
+      "publisher": "Directorate General of Health Services, Ministry of Health and Family Welfare",
+      "source_role": "current official 24x7 mental-health support route; not an emergency substitute when danger is imminent",
+      "rights_lane": "citation_only",
+      "url": "https://dghs.mohfw.gov.in/national-mental-health-programme.php",
+      "artifact_sha256": null,
+      "citation_coordinates": {"short_code": "14416", "toll_free": "1800-89-14416", "checked": "2026-08-13"}
+    },
+    {
+      "source_id": "devam-pausha-putrada-research",
+      "title": "Pausha Putrada Ekadashi North/West Smarta household research dossier",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local evidence synthesis for equal-worth framing, reproductive privacy, crisis safety, substitutions and consumer routes",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {"path": "knowledge_packs/library_lanes/ritual-calendar/research/pausha-putrada-ekadashi-north-west-smarta-household-2027-v1.md"}
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": ["pausha-putrada-ekadashi"],
+      "title": "Pausha Putrada Ekadashi: hope without coercion or promises",
+      "short_answer": "First confirm that your city and accepted ordinary Smarta Panchang identify Pausha Putrada Ekadashi today. A complete home form is to remember Vishnu or Krishna, hear the Padma-Purana-labelled Suketumat and Campaka account with its male-heir assumptions named, hold one hope without demanding an outcome, and perform one act of equal care. Fasting, fertility disclosure, a flame, purchase, priest, special offering and temple visit are not required.",
+      "significance": {
+        "text": "The reviewed Padma Purana chapter calls Pausha Shukla Ekadashi Putrada and places a couple's desire for a son inside a patriarchal lineage world. Devam preserves that textual fact without endorsing son preference. A bounded present-day meaning is to hold hopes without coercion, affirm the equal worth of daughters and children of every gender, respect people who do not or cannot parent, and turn devotion toward responsible care rather than a promised conception.",
+        "source_ids": ["padma-purana-putrada-deshpande", "devam-pausha-putrada-research"],
+        "scope_note": "Source-labelled meaning and ethical reflection; not fertility advice, prediction, history or a universal value."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "pausha-putrada-suketumat-campaka-en",
+          "title": "The Padma Purana's account of Suketumat and Campaka",
+          "summary": "In Uttara Khanda chapter 41, Yudhishthira asks Krishna about the bright-fortnight Ekadashi of Pausha. Krishna names it Putrada and associates it with Vishnu. King Suketumat of Bhadravati and queen Campaka have no son; the chapter voices grief and a patriarchal belief that a male heir must continue lineage and ancestral offerings. The king becomes despondent and thinks of ending his life, rejects suicide, leaves for the forest and reaches a lake where sages identified as the Visvedevas call the day Putrada. They advise the vow. The chapter says the king observes it, breaks the fast on Dvadashi, and Campaka later bears a son who becomes king. These are claims of this textual world. Devam does not prescribe fasting or isolation, endorse son preference, blame Campaka, treat childlessness as failure, or promise conception, a child's sex, lineage, heaven or any other result.",
+          "tradition_scope": "Padma Purana, Uttara Khanda chapter 41 in the reviewed Deshpande English expression",
+          "source_ids": ["padma-purana-putrada-deshpande"],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {"practice_id": "ordinary-smarta-putrada-remembrance-en", "population_scope": "North/West ordinary Smarta households after local date resolution", "description": "Households may remember Vishnu, hear a Putrada account, hold a family hope, offer fruit or light and follow an inherited Ekadashi vrata. These practices are descriptive and vary; fertility disclosure, son preference, fasting and promised results are not universal.", "source_ids": ["padma-purana-putrada-deshpande", "devam-ekadashi-recurring-scaffold"], "instructional": false},
+        {"practice_id": "ordinary-temple-participation-en", "population_scope": "Invited ordinary participants in a named Vishnu or Krishna temple programme", "description": "A temple may publish its own date, worship, reading, donation, food or parana programme. Its live rules govern; a visitor does not copy priest-led rites or fertility claims from a calendar card.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "pausha-putrada-en-minimum-v1", "label": "Private non-fasting remembrance and equal-care action", "tier": "minimum", "setting": "individual", "authority_scope": "self-guided ordinary Smarta remembrance after local date resolution", "form": "accessible_short", "estimated_minutes": 12,
+          "materials": [
+            {"item": "A quiet safe place", "required": true, "substitutions": ["Sit safely where you are"], "source_ids": ["devam-ekadashi-recurring-scaffold"]},
+            {"item": "Paper for one private hope and care action", "required": false, "substitutions": ["A mental note", "No stated hope; choose only the care action"], "source_ids": ["devam-pausha-putrada-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Confirm that Today or your accepted local Smarta Panchang identifies ordinary Pausha Putrada Ekadashi for your city. If it selects the 19 January 2027 Gauna/Vaishnava route or another date, stop and follow that authority.", "why": "Ordinary and Gauna/Vaishnava applicability changes the civil day and close.", "source_ids": ["drik-pausha-putrada-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "Choose privacy. You do not need to disclose fertility, pregnancy, loss, adoption, relationship status, medical history or family plans to participate.", "why": "The observance cannot create consent to intimate disclosure.", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Sit safely and remember Vishnu or Krishna with a family-known name or short prayer; silence is complete.", "why": "This keeps devotion without inventing a universal mantra or requiring material.", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "Read or hear the short account explicitly labelled Padma Purana chapter 41. Name its son preference and lineage assumptions as features of that textual world, not duties for anyone today.", "why": "Honest framing preserves the source without universalising its patriarchy.", "source_ids": ["padma-purana-putrada-deshpande", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 5, "instruction": "If safe, write one hope without specifying or demanding another person's body, pregnancy, child's sex or decision. Skipping the hope is complete.", "why": "Hope must not become reproductive coercion or prediction.", "source_ids": ["devam-pausha-putrada-research"], "optional": true},
+            {"ordinal": 6, "instruction": "Choose one concrete act of equal care for an existing child, dependant, partner, elder, friend or community member, regardless of gender or family form.", "why": "Care is actionable without claiming a fertility outcome.", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 7, "instruction": "Close with gratitude and carry out the care action. Eat, drink, rest and take medicines normally unless your clinician and established authority have provided a safe plan.", "why": "A non-fasting close is complete and health takes priority.", "source_ids": ["icmr-type1-diabetes-fasting", "devam-pausha-putrada-research"], "optional": false}
+          ],
+          "closing": {"text": "Close with gratitude, keep or destroy the private note as you choose, and complete the equal-care action. This route does not start a fast and therefore supplies no parana.", "source_ids": ["devam-pausha-putrada-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "An inherited vrata closes only under the same responsible family, temple or sampradaya authority that established it, with clinical guidance where needed."},
+          "source_ids": ["padma-purana-putrada-deshpande", "drik-pausha-putrada-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-pausha-putrada-research"]
+        },
+        {
+          "procedure_id": "pausha-putrada-en-family-v1", "label": "Consent-led family reading and care", "tier": "standard", "setting": "family_led", "authority_scope": "family-guided non-fasting or already-established safe household form", "form": "traditional_household", "estimated_minutes": 30,
+          "materials": [
+            {"item": "Source-labelled chapter summary or identifiable edition", "required": true, "substitutions": ["Listen to the labelled summary", "Use the private minimum route"], "source_ids": ["padma-purana-putrada-deshpande"]},
+            {"item": "Optional water, fruit or electric light", "required": false, "substitutions": ["No offering", "Daylight", "No image"], "source_ids": ["devam-pausha-putrada-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "Resolve the ordinary Smarta date and ask who wishes to join. No one must discuss fertility, pregnancy, loss, adoption, marriage, medical status or plans.", "why": "Family participation must be voluntary and private.", "source_ids": ["drik-pausha-putrada-2027", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Begin with familiar Vishnu/Krishna remembrance or silence. Do not add an unfamiliar mantra, fertility sankalpa or priestly act.", "why": "The family route stays within ordinary household authority.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Read the coherent source-labelled account. Explicitly affirm that daughters and children of every gender have equal worth, and that parenthood and biological children are not duties imposed here.", "why": "The chapter's patriarchal lineage assumptions must not become consumer guidance.", "source_ids": ["padma-purana-putrada-deshpande", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Invite willing participants to choose one equal-care, repair or service action. Do not ask for reproductive testimony or make a shared wish about another person's body.", "why": "Action can be communal without coercion or intimate disclosure.", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 5, "instruction": "Close before fatigue, store food safely, extinguish every flame and let each person complete or privately decline the action.", "why": "Rest, consent and safety govern the close.", "source_ids": ["devam-pausha-putrada-research"], "optional": false}
+          ],
+          "closing": {"text": "Offer gratitude in the family's familiar way, affirm equal dignity without predicting a birth, and move to the chosen care action. Do not announce parana from this guide.", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"], "scope_note": "A family fast remains optional, health-sensitive and controlled by its established authority."},
+          "source_ids": ["padma-purana-putrada-deshpande", "drik-pausha-putrada-2027", "devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"]
+        },
+        {
+          "procedure_id": "pausha-putrada-en-temple-v1", "label": "Ordinary participant at a named temple", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "visitor participation only; institution controls liturgy, eligibility and close", "form": "institutional_participation", "estimated_minutes": 45,
+          "materials": [{"item": "Verified official live schedule and safe travel plan", "required": true, "substitutions": ["Official remote programme", "Stay home and use the minimum route"], "source_ids": ["devam-pausha-putrada-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "Verify the temple's official date, hours, access, crowd, food, photography, donation and safeguarding rules; confirm whether it follows the ordinary or Gauna/Vaishnava date.", "why": "A generic calendar does not prove a live programme or authority profile.", "source_ids": ["drik-pausha-putrada-2027", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 2, "instruction": "Attend only as an ordinary participant. Do not copy priest-led sankalpa, mantra, havan, fertility rite, food rule or parana from this guide.", "why": "Institutional actions and eligibility cannot be inferred.", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 3, "instruction": "Decline pressure to disclose reproductive history, buy a promised remedy, pay an unverified account, share documents, accept touch or permit photography. Keep children with their guardian.", "why": "Devotion does not waive privacy, consent, financial safety or child safeguarding.", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 4, "instruction": "Leave safely and perform one private equal-care action without claiming conception, a child's sex, health, merit or another result.", "why": "The actionable close is useful without becoming a fertility promise.", "source_ids": ["devam-pausha-putrada-research"], "optional": false}
+          ],
+          "closing": {"text": "Follow the temple's announced visitor exit and close. If a reliable programme or safe setting is not confirmed, stay home; the private route is complete.", "source_ids": ["devam-pausha-putrada-research"], "scope_note": "Only the institution controls its liturgy, food and parana."},
+          "source_ids": ["drik-pausha-putrada-2027", "devam-pausha-putrada-research"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-material-image-and-family-form", "scope": "Ordinary North/West household", "difference": "Language, fruit/flower, dress, image/no-image, family-known prayer, hope/no hope and safe non-fast/established-fast choice do not create state copies.", "source_ids": ["devam-pausha-putrada-research"], "separate_lane_required": false},
+        {"variant_id": "gauna-or-vaishnava-next-day", "scope": "Gauna and Vaishnava authorities", "difference": "The 19 January 2027 selection changes civil date, authority and parana applicability and requires its frozen named lane.", "source_ids": ["drik-pausha-putrada-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "fertility-or-priest-led-rite", "scope": "Formal reproductive, sankalpa, havan or priest-led setting", "difference": "Eligibility, claims, intimate data, materials, payment, authority and ordered actions differ materially; this household pack cannot supply it.", "source_ids": ["devam-pausha-putrada-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme", "scope": "Named Vishnu/Krishna institution", "difference": "Live timing, liturgy, eligibility, food, donation and closing belong to the institution.", "source_ids": ["devam-pausha-putrada-research"], "separate_lane_required": true},
+        {"variant_id": "shravana-putrada-ekadashi", "scope": "Shravana Shukla Putrada", "difference": "The other Putrada Ekadashi has a different lunar month and source-labelled account and remains a separate named item.", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "A private, non-fasting, no-flame, no-purchase, image-free and material-free form is complete.",
+        "Son preference belongs to the reviewed chapter's patriarchal textual world; daughters and children of every gender have equal worth.",
+        "Childlessness, infertility, pregnancy loss, adoption, assisted reproduction or having daughters is not sin, deficient devotion, family failure or unpaid ancestral debt.",
+        "No one is responsible for another person's conception, pregnancy, lineage, health or spiritual result. Never pressure anyone to conceive, disclose, marry, remain married, pursue treatment, adopt or perform a vrata.",
+        "This lane cannot diagnose infertility, ensure conception, determine a child's sex, prevent pregnancy loss or replace qualified fertility, obstetric or mental-health care.",
+        "A child, pregnant or breastfeeding person, older adult, person with diabetes or another condition, anyone taking medicine with food, person with eating-disorder history, or person doing heat/heavy labour must not start or intensify fasting from Devam.",
+        "Do not change insulin, medicine, meals or hydration. Type 1 diabetes is a high-risk fasting context.",
+        "The king's suicidal thought is a story event, never a ritual model. If there is imminent danger in India, call 112 or go to emergency care; for 24x7 mental-health support, Tele-MANAS lists 14416 and 1800-89-14416. Do not leave the person alone when immediate safety is at risk.",
+        "Never buy a guaranteed fertility result or share intimate records, identity documents, bank credentials or OTP with an unverified claimant.",
+        "No son, child, conception, child's sex, family harmony, health, prosperity, merit, heaven or other result is guaranteed.",
+        "Authored means this named library lane only; it is not projected to day cards, hosted, independently release-reviewed or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": ["pausha-putrada-ekadashi"],
+      "title": "पौष पुत्रदा एकादशी: बिना दबाव और फल-वचन के आशा",
+      "short_answer": "पहले पुष्टि करें कि आपके शहर और मान्य सामान्य स्मार्त पंचांग में आज पौष पुत्रदा एकादशी है। घर का पूर्ण रूप है—विष्णु या कृष्ण का स्मरण, पद्म-पुराण नाम सहित सुकेतुमत और चम्पका की कथा सुनना और उसके पुत्र-प्रधान दृष्टिकोण को स्पष्ट करना, बिना फल माँगे एक आशा रखना और समान देखभाल का एक काम करना। उपवास, प्रजनन-विवरण, दीपक, खरीद, पुरोहित, विशेष अर्पण और मंदिर जाना अनिवार्य नहीं हैं।",
+      "significance": {"text": "समीक्षित पद्म पुराण अध्याय पौष शुक्ल एकादशी को पुत्रदा कहता और दम्पति की पुत्र-कामना को पितृसत्तात्मक वंश-व्यवस्था में रखता है। देवम इस ग्रंथ-सत्य को सुरक्षित रखता है, पुत्र-प्राथमिकता का समर्थन नहीं करता। सीमित वर्तमान अर्थ है—बिना दबाव आशा रखना, बेटियों और हर लिंग के बच्चों का समान मूल्य मानना, माता-पिता न बनने या न बन पाने वालों का सम्मान करना और निश्चित गर्भधारण के बजाय जिम्मेदार देखभाल करना।", "source_ids": ["padma-purana-putrada-deshpande", "devam-pausha-putrada-research"], "scope_note": "स्रोत-नाम वाला अर्थ और नैतिक चिंतन; प्रजनन-सलाह, भविष्यवाणी, इतिहास या सार्वभौम मूल्य नहीं।"},
+      "origin_narratives": [
+        {"narrative_id": "pausha-putrada-suketumat-campaka-hi", "title": "पद्म पुराण में सुकेतुमत और चम्पका की कथा", "summary": "उत्तर खंड अध्याय 41 में युधिष्ठिर कृष्ण से पौष के शुक्ल पक्ष की एकादशी पूछते हैं। कृष्ण इसे पुत्रदा कहते और विष्णु से जोड़ते हैं। भद्रावती के राजा सुकेतुमत और रानी चम्पका का पुत्र नहीं है; अध्याय दुःख और इस पितृसत्तात्मक मान्यता को स्वर देता है कि पुरुष उत्तराधिकारी वंश और पितृ-अर्पण चलाए। राजा निराश होकर जीवन समाप्त करने का विचार करता, आत्महत्या को अस्वीकार करता, वन जाता और झील पर विश्वेदेव कहे गए ऋषियों से मिलता है। वे दिन को पुत्रदा बताते और व्रत की सलाह देते हैं। अध्याय कहता है कि राजा व्रत और द्वादशी-पारण करता है और बाद में चम्पका को पुत्र होता है जो राजा बनता है। ये उस ग्रंथ-जगत के दावे हैं। देवम उपवास/एकांत नहीं बताता, पुत्र-प्राथमिकता नहीं मानता, चम्पका को दोष नहीं देता, निस्संतानता को विफलता नहीं कहता और गर्भधारण, बच्चे का लिंग, वंश, स्वर्ग या कोई फल नहीं देता।", "tradition_scope": "समीक्षित देशपांडे अंग्रेजी अभिव्यक्ति में पद्म पुराण, उत्तर खंड अध्याय 41", "source_ids": ["padma-purana-putrada-deshpande"], "universal_origin_claimed": false}
+      ],
+      "typical_practices": [
+        {"practice_id": "ordinary-smarta-putrada-remembrance-hi", "population_scope": "स्थानीय तिथि-पुष्टि वाले उत्तर/पश्चिम के सामान्य स्मार्त गृह", "description": "परिवार विष्णु-स्मरण, पुत्रदा कथा, पारिवारिक आशा, फल/प्रकाश और स्थापित एकादशी-व्रत कर सकते हैं। ये वर्णनात्मक और बदलते रूप हैं; प्रजनन-विवरण, पुत्र-प्राथमिकता, उपवास और निश्चित फल सार्वभौम नहीं हैं।", "source_ids": ["padma-purana-putrada-deshpande", "devam-ekadashi-recurring-scaffold"], "instructional": false},
+        {"practice_id": "ordinary-temple-participation-hi", "population_scope": "नामित विष्णु या कृष्ण मंदिर के आमंत्रित सामान्य सहभागी", "description": "मंदिर अपनी तिथि, पूजा, पाठ, दान, भोजन या पारण बता सकता है। उसकी जीवित सूचना लागू होगी; आगंतुक कैलेंडर कार्ड से पुरोहित-कर्म या प्रजनन-दावा नहीं अपनाता।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"], "instructional": false}
+      ],
+      "procedures": [
+        {
+          "procedure_id": "pausha-putrada-hi-minimum-v1", "label": "निजी बिना-उपवास स्मरण और समान-देखभाल", "tier": "minimum", "setting": "individual", "authority_scope": "स्थानीय तिथि-पुष्टि के बाद स्वयं किया सामान्य स्मार्त स्मरण", "form": "accessible_short", "estimated_minutes": 12,
+          "materials": [
+            {"item": "शांत सुरक्षित स्थान", "required": true, "substitutions": ["जहाँ हैं वहीं सुरक्षित बैठें"], "source_ids": ["devam-ekadashi-recurring-scaffold"]},
+            {"item": "एक निजी आशा और देखभाल का काम लिखने का कागज", "required": false, "substitutions": ["मन में रखें", "आशा न लिखें; केवल देखभाल चुनें"], "source_ids": ["devam-pausha-putrada-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "देखें कि Today या आपका मान्य स्थानीय स्मार्त पंचांग आपके शहर में सामान्य पौष पुत्रदा एकादशी बता रहा है। 19 जनवरी 2027 का गौण/वैष्णव मार्ग या दूसरी तिथि हो तो रुककर उसी प्राधिकार का पालन करें।", "why": "सामान्य और गौण/वैष्णव चयन नागरिक दिन और समापन बदलता है।", "source_ids": ["drik-pausha-putrada-2027", "devam-ekadashi-rule-audit"], "optional": false},
+            {"ordinal": 2, "instruction": "निजता चुनें। भाग लेने के लिए प्रजनन, गर्भावस्था, हानि, दत्तक, संबंध, चिकित्सा-इतिहास या परिवार-योजना बताना आवश्यक नहीं है।", "why": "पालन अंतरंग जानकारी की सहमति नहीं बनाता।", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 3, "instruction": "सुरक्षित बैठकर परिचित नाम या छोटी प्रार्थना से विष्णु या कृष्ण का स्मरण करें; मौन पूर्ण है।", "why": "इससे सार्वभौम मंत्र या सामग्री गढ़े बिना भक्ति रहती है।", "source_ids": ["devam-ekadashi-recurring-scaffold"], "optional": false},
+            {"ordinal": 4, "instruction": "छोटी कथा को स्पष्ट रूप से पद्म पुराण अध्याय 41 कहकर पढ़ें/सुनें। पुत्र-प्राथमिकता और वंश-मान्यता को उस ग्रंथ-जगत की विशेषता कहें, आज का कर्तव्य नहीं।", "why": "ईमानदार संदर्भ स्रोत को बचाता है और पितृसत्ता को सार्वभौम नहीं बनाता।", "source_ids": ["padma-purana-putrada-deshpande", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 5, "instruction": "सुरक्षित हो तो ऐसी एक आशा लिखें जो किसी और के शरीर, गर्भ, बच्चे के लिंग या निर्णय की माँग न करे। आशा छोड़ना भी पूर्ण है।", "why": "आशा प्रजनन-दबाव या भविष्यवाणी न बने।", "source_ids": ["devam-pausha-putrada-research"], "optional": true},
+            {"ordinal": 6, "instruction": "किसी मौजूदा बच्चे, आश्रित, साथी, बुजुर्ग, मित्र या समुदाय के लिए लिंग और परिवार-रूप से परे समान देखभाल का एक काम चुनें।", "why": "बिना प्रजनन-फल के देखभाल कार्रवाई बनती है।", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 7, "instruction": "कृतज्ञता से समापन करके देखभाल का काम करें। चिकित्सक और स्थापित प्राधिकार की सुरक्षित योजना न हो तो सामान्य रूप से खाएँ, पिएँ, आराम करें और दवा लें।", "why": "बिना-उपवास समापन पूर्ण है और स्वास्थ्य पहले है।", "source_ids": ["icmr-type1-diabetes-fasting", "devam-pausha-putrada-research"], "optional": false}
+          ],
+          "closing": {"text": "कृतज्ञता से समापन करें, निजी पर्ची रखना/नष्ट करना स्वयं तय करें और समान-देखभाल का काम पूरा करें। इस मार्ग ने उपवास शुरू नहीं किया, इसलिए पारण नहीं देता।", "source_ids": ["devam-pausha-putrada-research", "devam-ekadashi-recurring-scaffold"], "scope_note": "स्थापित व्रत उसी जिम्मेदार परिवार, मंदिर या सम्प्रदाय के अधीन बंद होगा जिसने उसे निर्धारित किया; जरूरत पर चिकित्सकीय मार्गदर्शन लें।"},
+          "source_ids": ["padma-purana-putrada-deshpande", "drik-pausha-putrada-2027", "devam-ekadashi-recurring-scaffold", "icmr-type1-diabetes-fasting", "devam-pausha-putrada-research"]
+        },
+        {
+          "procedure_id": "pausha-putrada-hi-family-v1", "label": "सहमति-आधारित पारिवारिक पाठ और देखभाल", "tier": "standard", "setting": "family_led", "authority_scope": "परिवार-निर्देशित बिना-उपवास या पहले से स्थापित सुरक्षित गृह-रूप", "form": "traditional_household", "estimated_minutes": 30,
+          "materials": [
+            {"item": "स्रोत-नाम वाली अध्याय-संक्षेप या पहचान योग्य संस्करण", "required": true, "substitutions": ["नामित संक्षेप सुनें", "निजी न्यूनतम मार्ग"], "source_ids": ["padma-purana-putrada-deshpande"]},
+            {"item": "वैकल्पिक जल, फल या विद्युत प्रकाश", "required": false, "substitutions": ["कोई अर्पण नहीं", "दिन का प्रकाश", "बिना चित्र"], "source_ids": ["devam-pausha-putrada-research"]}
+          ],
+          "steps": [
+            {"ordinal": 1, "instruction": "सामान्य स्मार्त तिथि तय करें और पूछें कौन जुड़ना चाहता है। किसी को प्रजनन, गर्भ, हानि, दत्तक, विवाह, चिकित्सा या योजना बताना आवश्यक नहीं।", "why": "परिवार में सहभागिता स्वैच्छिक और निजी रहे।", "source_ids": ["drik-pausha-putrada-2027", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 2, "instruction": "परिचित विष्णु/कृष्ण स्मरण या मौन से आरम्भ करें। अपरिचित मंत्र, प्रजनन-संकल्प या पुरोहित-कर्म न जोड़ें।", "why": "परिवार-मार्ग सामान्य गृह-अधिकार में रहता है।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 3, "instruction": "स्रोत-नाम सहित पूरी संक्षिप्त कथा पढ़ें। स्पष्ट कहें कि बेटियों और हर लिंग के बच्चों का समान मूल्य है और माता-पिता बनना या जैविक बच्चा होना यहाँ थोपा कर्तव्य नहीं।", "why": "अध्याय की पितृसत्तात्मक वंश-मान्यता उपभोक्ता-निर्देश न बने।", "source_ids": ["padma-purana-putrada-deshpande", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 4, "instruction": "इच्छुक लोग समान देखभाल, सुधार या सेवा का काम चुनें। प्रजनन-कथा न पूछें और किसी दूसरे के शरीर के लिए सामूहिक इच्छा न बनाएँ।", "why": "बिना दबाव या अंतरंग खुलासे के सामूहिक कार्रवाई संभव है।", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 5, "instruction": "थकान से पहले समापन करें, भोजन सुरक्षित रखें, हर लौ बुझाएँ और हर व्यक्ति को काम करना या निजी रूप से छोड़ना स्वीकार करें।", "why": "आराम, सहमति और सुरक्षा समापन नियंत्रित करते हैं।", "source_ids": ["devam-pausha-putrada-research"], "optional": false}
+          ],
+          "closing": {"text": "परिवार के परिचित ढंग से कृतज्ञता दें, जन्म की भविष्यवाणी किए बिना समान गरिमा मानें और देखभाल का काम करें। इस मार्ग से पारण घोषित न करें।", "source_ids": ["devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"], "scope_note": "पारिवारिक उपवास वैकल्पिक, स्वास्थ्य-संवेदनशील और स्थापित प्राधिकार के अधीन है।"},
+          "source_ids": ["padma-purana-putrada-deshpande", "drik-pausha-putrada-2027", "devam-ekadashi-recurring-scaffold", "devam-pausha-putrada-research"]
+        },
+        {
+          "procedure_id": "pausha-putrada-hi-temple-v1", "label": "नामित मंदिर में सामान्य सहभागिता", "tier": "elaborate", "setting": "temple_participation", "authority_scope": "केवल आगंतुक सहभागिता; संस्था विधि, पात्रता और समापन नियंत्रित करती है", "form": "institutional_participation", "estimated_minutes": 45,
+          "materials": [{"item": "सत्यापित आधिकारिक जीवित सूचना और सुरक्षित यात्रा योजना", "required": true, "substitutions": ["आधिकारिक दूरस्थ कार्यक्रम", "घर रहकर न्यूनतम मार्ग"], "source_ids": ["devam-pausha-putrada-research"]}],
+          "steps": [
+            {"ordinal": 1, "instruction": "मंदिर की आधिकारिक तिथि, समय, प्रवेश, सुगमता, भीड़, भोजन, चित्र, दान और सुरक्षा नियम जाँचें; पूछें कि वह सामान्य या गौण/वैष्णव दिन मानता है।", "why": "सामान्य कैलेंडर जीवित कार्यक्रम या प्राधिकार सिद्ध नहीं करता।", "source_ids": ["drik-pausha-putrada-2027", "devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 2, "instruction": "केवल सामान्य सहभागी बनें। इस मार्ग से पुरोहित-संकल्प, मंत्र, हवन, प्रजनन-कर्म, भोजन-नियम या पारण की नकल न करें।", "why": "संस्था के कर्म और पात्रता अनुमान से तय नहीं होते।", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 3, "instruction": "प्रजनन-इतिहास बताने, निश्चित उपाय खरीदने, असत्यापित खाते में भुगतान, दस्तावेज देने, स्पर्श या चित्र के दबाव को मना करें। बच्चे अभिभावक के साथ रहें।", "why": "भक्ति निजता, सहमति, वित्तीय सुरक्षा या बाल-सुरक्षा नहीं हटाती।", "source_ids": ["devam-pausha-putrada-research"], "optional": false},
+            {"ordinal": 4, "instruction": "सुरक्षित लौटकर समान देखभाल का निजी काम करें और गर्भ, बच्चे का लिंग, स्वास्थ्य, पुण्य या अन्य फल का दावा न करें।", "why": "उपयोगी समापन प्रजनन-वचन नहीं बनता।", "source_ids": ["devam-pausha-putrada-research"], "optional": false}
+          ],
+          "closing": {"text": "मंदिर का घोषित आगंतुक-निकास और समापन मानें। विश्वसनीय कार्यक्रम या सुरक्षित व्यवस्था न मिले तो घर रहें; निजी मार्ग पूर्ण है।", "source_ids": ["devam-pausha-putrada-research"], "scope_note": "संस्था ही अपनी विधि, भोजन और पारण नियंत्रित करती है।"},
+          "source_ids": ["drik-pausha-putrada-2027", "devam-pausha-putrada-research"]
+        }
+      ],
+      "variants": [
+        {"variant_id": "language-material-image-and-family-form-hi", "scope": "सामान्य उत्तर/पश्चिम गृह", "difference": "भाषा, फल/फूल, वस्त्र, चित्र/बिना-चित्र, परिचित प्रार्थना, आशा/बिना आशा और सुरक्षित बिना-उपवास/स्थापित व्रत राज्य की प्रतियाँ नहीं बनाते।", "source_ids": ["devam-pausha-putrada-research"], "separate_lane_required": false},
+        {"variant_id": "gauna-or-vaishnava-next-day-hi", "scope": "गौण और वैष्णव प्राधिकार", "difference": "19 जनवरी 2027 का चयन नागरिक तिथि, प्राधिकार और पारण-अनुप्रयोग बदलता है और उसका अलग नामित मार्ग चाहिए।", "source_ids": ["drik-pausha-putrada-2027", "devam-ekadashi-rule-audit"], "separate_lane_required": true},
+        {"variant_id": "fertility-or-priest-led-rite-hi", "scope": "औपचारिक प्रजनन, संकल्प, हवन या पुरोहित-कर्म", "difference": "पात्रता, दावे, अंतरंग डेटा, सामग्री, भुगतान, प्राधिकार और क्रम बदलते हैं; यह गृह-पैक इसे नहीं दे सकता।", "source_ids": ["devam-pausha-putrada-research"], "separate_lane_required": true},
+        {"variant_id": "named-temple-programme-hi", "scope": "नामित विष्णु/कृष्ण संस्था", "difference": "जीवित समय, विधि, पात्रता, भोजन, दान और समापन संस्था के हैं।", "source_ids": ["devam-pausha-putrada-research"], "separate_lane_required": true},
+        {"variant_id": "shravana-putrada-ekadashi-hi", "scope": "श्रावण शुक्ल पुत्रदा", "difference": "दूसरी पुत्रदा का चंद्र-मास और स्रोत-नाम वाली कथा अलग है और वह अलग नामित item है।", "source_ids": ["devam-ekadashi-rule-audit"], "separate_lane_required": true}
+      ],
+      "safety_and_boundaries": [
+        "निजी, बिना उपवास, लौ, खरीद, चित्र और सामग्री का रूप पूर्ण है।",
+        "पुत्र-प्राथमिकता समीक्षित अध्याय के पितृसत्तात्मक ग्रंथ-जगत की है; बेटियों और हर लिंग के बच्चों का समान मूल्य है।",
+        "निस्संतानता, बांझपन, गर्भ-हानि, दत्तक, सहायक प्रजनन या बेटियाँ होना पाप, कम भक्ति, पारिवारिक विफलता या पितृ-ऋण नहीं है।",
+        "कोई व्यक्ति दूसरे के गर्भ, गर्भावस्था, वंश, स्वास्थ्य या आध्यात्मिक फल का जिम्मेदार नहीं। किसी पर गर्भधारण, खुलासा, विवाह, विवाह बनाए रखने, उपचार, दत्तक या व्रत का दबाव न डालें।",
+        "यह मार्ग बांझपन का निदान, गर्भधारण, बच्चे का लिंग, गर्भ-हानि रोकने या योग्य प्रजनन, प्रसूति अथवा मानसिक-स्वास्थ्य देखभाल का विकल्प नहीं है।",
+        "बच्चे, गर्भवती/स्तनपान कराने वाले, बुजुर्ग, मधुमेह/बीमारी वाले, भोजन के साथ दवा लेने वाले, भोजन-विकार इतिहास वाले या गर्मी/भारी श्रम करने वाले देवम से उपवास शुरू या कठोर न करें।",
+        "इंसुलिन, दवा, भोजन या जल न बदलें। टाइप-1 मधुमेह उच्च-जोखिम उपवास स्थिति है।",
+        "राजा का आत्महत्या-विचार कथा की घटना है, अनुष्ठान का आदर्श नहीं। भारत में तत्काल खतरा हो तो 112 पर कॉल करें या आपात देखभाल लें; 24x7 मानसिक-स्वास्थ्य सहायता के लिए Tele-MANAS 14416 और 1800-89-14416 देता है। तत्काल सुरक्षा-जोखिम में व्यक्ति को अकेला न छोड़ें।",
+        "निश्चित प्रजनन-फल न खरीदें और असत्यापित व्यक्ति को अंतरंग रिकॉर्ड, पहचान-पत्र, बैंक विवरण या OTP न दें।",
+        "पुत्र, बच्चा, गर्भधारण, बच्चे का लिंग, पारिवारिक सामंजस्य, स्वास्थ्य, समृद्धि, पुण्य, स्वर्ग या अन्य फल की कोई गारंटी नहीं है।",
+        "Authored का अर्थ केवल यह नामित library lane है; day cards पर projected, hosted, स्वतंत्र release-reviewed या published नहीं।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {"applicability": true, "timing": true, "significance": true, "origin_narratives": true, "typical_practice": true, "actionable_vidhi": true, "materials_and_substitutions": true, "variants": true, "evidence": true},
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}
