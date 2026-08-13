@@ -1,0 +1,104 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "vaishnava-rama-authority-and-story-owner-proposals-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "vaishnava-rama-shares-padma-story-with-ordinary-rama",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishnava-rama-ekadashi-india-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/rama-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "relationship_family": "story",
+      "predicate": "shares_source_story_with",
+      "directionality": "bidirectional",
+      "consumer_label": {
+        "en": "Shares the Padma Purana Rama story",
+        "hi": "पद्म पुराण की रमा कथा साझा है"
+      },
+      "scope": {
+        "statement": "The two lanes share Padma Purana 6.60 and its full safety-sensitive story, while their date and authority applicability remain distinct.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "ordinary-ekadashi-household",
+          "vaishnava-authority-specific"
+        ],
+        "time_scope": "Rama Ekadashi as locally resolved; reviewed 2027 samples show ordinary 25 October and Vaishnava 26 October",
+        "source_expression_scope": "N. A. Deshpande English expression and displayed Sanskrit of Padma Purana Uttara Khanda 6.60"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "padma-purana-rama-deshpande:6.60.1-54",
+          "claim_scope": "Complete Mucukunda-Candrabhaga-Shobhana story used in both lanes."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "ritual-calendar/rama-ekadashi-north-west-smarta-household-2027-v1",
+          "claim_scope": "Existing lane-local ordinary Rama pack owns the completed ordinary applicability route."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-vaishnava-rama-research",
+          "claim_scope": "Authority/date difference does not create a second textual origin story."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "lane_local",
+      "integration_status": "proposed"
+    },
+    {
+      "proposal_id": "vaishnava-rama-requires-named-current-calendar-authority",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/vaishnava-rama-ekadashi-india-authority-router-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "ritual-calendar/named-vaishnava-current-calendar-authority"
+      },
+      "relationship_family": "time",
+      "predicate": "requires_current_calendar_authority",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Check the named Vaishnava calendar",
+        "hi": "नामित वैष्णव पंचांग जाँचें"
+      },
+      "scope": {
+        "statement": "The civil day, Gauna or Mahadvadashi status and parana require the user's named current authority and city; no universal institution is asserted.",
+        "geography_codes": [
+          "IN"
+        ],
+        "tradition_codes": [
+          "vaishnava-authority-specific"
+        ],
+        "time_scope": "Current city, year, sunrise/arunodaya and tithi boundary",
+        "source_expression_scope": null
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "living_practice",
+          "ref": "drik-vaishnava-rama-korba-2027",
+          "claim_scope": "Independent practitioner fixture demonstrates an authority-specific date while disclaiming official status."
+        },
+        {
+          "evidence_kind": "living_practice",
+          "ref": "drik-rama-vijayawada-2027",
+          "claim_scope": "Reviewed Indian fixture displays ordinary and Vaishnava Rama on different civil dates."
+        },
+        {
+          "evidence_kind": "devam_synthesis",
+          "ref": "devam-vaishnava-rama-research",
+          "claim_scope": "Named current authority must override sampled discovery fixtures."
+        }
+      ],
+      "confidence": "high",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}

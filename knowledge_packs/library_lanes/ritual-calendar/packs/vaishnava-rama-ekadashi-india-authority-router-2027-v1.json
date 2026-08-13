@@ -1,0 +1,1389 @@
+{
+  "contract": "DEVAM_RITUAL_OBSERVANCE_CONTENT_V1",
+  "lane_id": "vaishnava-rama-ekadashi-india-authority-router-2027-v1",
+  "observance_slugs": [
+    "rama-ekadashi-vaishnava"
+  ],
+  "applicability": {
+    "region_codes": [
+      "north-india",
+      "west-india",
+      "IN-DL",
+      "IN-HR",
+      "IN-RJ",
+      "IN-UP",
+      "IN-UK",
+      "IN-PB",
+      "IN-MH",
+      "IN-GJ",
+      "IN-WB",
+      "IN-BR",
+      "IN-CG",
+      "IN-KA",
+      "IN-TN",
+      "IN-KL",
+      "IN-OD",
+      "IN-AP"
+    ],
+    "tradition_codes": [
+      "vaishnava-authority-specific",
+      "named-sampradaya-calendar",
+      "named-temple-calendar"
+    ],
+    "institution_codes": [],
+    "settings": [
+      "individual",
+      "household",
+      "family_led",
+      "temple"
+    ],
+    "family_practice_overrides_generic_guidance": true,
+    "material_context_questions": [
+      "Which Indian city, civil date and named Vaishnava sampradaya, temple, institution or accepted household calendar apply?",
+      "Does that current authority label the day ordinary, Gauna, Vaishnava or Mahadvadashi, and does it select 25 or 26 October 2027 for your city?",
+      "Do you want a safe fed devotional remembrance or that authority's formal fast, vigil, worship and parana?",
+      "Would coercive fasting, animal deprivation, death, cremation, widowhood, dead-person messages or reunion content be distressing or unsafe?",
+      "Does anyone need normal food, water, medicine, child or animal care, sleep, accessibility or an easy private exit?"
+    ],
+    "context_pairs": [
+      {
+        "region_code": "north-india",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "west-india",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-WB",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-CG",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-KA",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-TN",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-KL",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-MH",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-OD",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-AP",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      },
+      {
+        "region_code": "IN-BR",
+        "tradition_code": "vaishnava-authority-specific",
+        "observance_slug": "rama-ekadashi-vaishnava"
+      }
+    ],
+    "observance_context_notes": [
+      {
+        "observance_slug": "rama-ekadashi-vaishnava",
+        "language_code": "en",
+        "note": "Use only for a named current Vaishnava authority that materially selects this route. Reviewed samples show ordinary Rama on 25 October 2027 and Vaishnava Rama on 26 October, but neither date nor parana is universal or portable."
+      },
+      {
+        "observance_slug": "rama-ekadashi-vaishnava",
+        "language_code": "hi",
+        "note": "इसे केवल उस नामित वर्तमान वैष्णव प्राधिकार के लिए उपयोग करें जो इस मार्ग को वास्तव में चुनता है। समीक्षा किए नमूनों में सामान्य रमा 25 अक्तूबर 2027 और वैष्णव रमा 26 अक्तूबर को है, पर कोई तारीख या पारण सार्वभौमिक अथवा दूसरे स्थान पर लागू नहीं है।"
+      }
+    ]
+  },
+  "calendar": {
+    "resolution_source_ids": [
+      "drik-rama-vijayawada-2027",
+      "drik-vaishnava-rama-korba-2027",
+      "drik-vaishnava-rama-kolkata-2027",
+      "devam-ekadashi-rule-audit",
+      "devam-vaishnava-rama-research"
+    ],
+    "timing_kind": "mixed",
+    "location_aware": true,
+    "tradition_aware": true,
+    "decision_rule_id": "vaishnava-rama-named-current-authority-city-rule-v1",
+    "closing_decision_rule_id": "vaishnava-rama-fed-hydrated-authority-safe-close-v1",
+    "live_schedule_required": true,
+    "freshness_note": "Reviewed Indian samples place ordinary Rama on Monday 25 October 2027 and the Vaishnava route on Tuesday 26 October. Confirm current city, named official authority, sunrise/arunodaya, tithi/day-boundary, Gauna or Mahadvadashi status and parana; never copy either date, a displayed time or an independent GCal fixture to another context."
+  },
+  "sources": [
+    {
+      "source_id": "padma-purana-rama-deshpande",
+      "title": "Padma Purana, Uttara Khanda, Chapter 60: Rama Ekadashi",
+      "publisher": "N. A. Deshpande translation, Motilal Banarsidass expression surfaced by Wisdomlib",
+      "source_role": "fixed Mucukunda, Candrabhaga and Shobhana story with coercive fast, animal deprivation, death, survival, city, messenger, transformation, merit and reunion claims",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365637.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-54",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "padma-purana-rama-sanskrit",
+      "title": "Padma Purana 6.60 Sanskrit text",
+      "publisher": "Sanskrit text surfaced by Wisdomlib",
+      "source_role": "displayed Sanskrit identity and complete story sequence witness",
+      "rights_lane": "citation_only",
+      "url": "https://www.wisdomlib.org/hinduism/book/padma-purana-sanskrit/d/doc428115.html",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "verses": "1-54",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "icmr-type1-diabetes-fasting",
+      "title": "Guidelines for Management of Type 1 Diabetes Mellitus",
+      "publisher": "Indian Council of Medical Research",
+      "source_role": "official fasting-risk boundary and exemption without guilt",
+      "rights_lane": "citation_only",
+      "url": "https://www.icmr.gov.in/icmrobject/custom_data/pdf/resource-guidelines/ICMR_Guidelines_for_Management_of_Type_1_Diabetes.pdf",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "topic": "Fasting and Feasting in T1DM",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-code-pca-act-1960",
+      "title": "Prevention of Cruelty to Animals Act, 1960",
+      "publisher": "India Code, Government of India",
+      "source_role": "current legal boundary requiring reasonable care and prevention of unnecessary pain or suffering to animals",
+      "rights_lane": "citation_only",
+      "url": "https://www.indiacode.nic.in/handle/123456789/1547?view_type=browse",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "sections": [
+          3,
+          11
+        ],
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "india-emergency-112",
+      "title": "Emergency Response Support System 112",
+      "publisher": "Ministry of Home Affairs, Government of India",
+      "source_role": "official India emergency route for imminent medical or safety danger",
+      "rights_lane": "citation_only",
+      "url": "https://112.gov.in/",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-rule-audit",
+      "title": "Ekadashi candidate rule audit 2027",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "frozen ordinary Rama and separate Gauna/Vaishnava Rama denominator boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/ekadashi-rule-audit-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-ekadashi-recurring-scaffold",
+      "title": "Ekadashi recurring devotional content and practice packs",
+      "publisher": "Devam",
+      "source_role": "bilingual non-fasting Vishnu-remembrance scaffold",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "paths": [
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-content-v1.json",
+          "knowledge_packs/rituals/ekadashi-recurring-devotional-practice-v1.json"
+        ]
+      }
+    },
+    {
+      "source_id": "drik-rama-vijayawada-2027",
+      "title": "2027 Rama Ekadashi fixture for Vijayawada",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian discovery fixture distinguishing ordinary 25 October from Vaishnava 26 October; no universal date or portable parana",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1253184&time-format=12hour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "ordinary_civil_date": "2027-10-25",
+        "vaishnava_civil_date": "2027-10-26",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-vaishnava-rama-korba-2027",
+      "title": "2027 ISKCON/Vaishnava Ekadashi fixture for Korba",
+      "publisher": "DrikPanchang independent GCal-rule implementation",
+      "source_role": "current practitioner-calendar discovery evidence for 26 October, expressly not official GBC, temple or portable parana authority",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1266122&time-format=24plushour&year=2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-10-26",
+        "limitation": "independently created; mismatch may be software error",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "drik-vaishnava-rama-kolkata-2027",
+      "title": "26 October 2027 Rama daily fixture for Kolkata",
+      "publisher": "DrikPanchang",
+      "source_role": "Indian discovery fixture displaying ordinary parana plus Gauna and Vaishnava Rama; no universal date or portable parana",
+      "rights_lane": "citation_only",
+      "url": "https://www.drikpanchang.com/marathi/panchang/marathi-day-panchang.html?geoname-id=1275004&date=26%2F10%2F2027",
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "civil_date": "2027-10-26",
+        "checked": "2026-08-13"
+      }
+    },
+    {
+      "source_id": "devam-rama-research",
+      "title": "Rama Ekadashi ordinary North/West Smarta household research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local shared complete story context and ordinary-lane boundary",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/rama-ekadashi-north-west-smarta-household-2027-v1.md"
+      }
+    },
+    {
+      "source_id": "devam-vaishnava-rama-research",
+      "title": "Vaishnava Rama Ekadashi India authority-router research (2027)",
+      "publisher": "Devam ritual-calendar lane",
+      "source_role": "lane-local authority, timing, full-story, safe procedure, closing and major-variant synthesis",
+      "rights_lane": "internal_only",
+      "url": null,
+      "artifact_sha256": null,
+      "citation_coordinates": {
+        "path": "knowledge_packs/library_lanes/ritual-calendar/research/vaishnava-rama-ekadashi-india-authority-router-2027-v1.md"
+      }
+    }
+  ],
+  "localized_content": [
+    {
+      "language_code": "en",
+      "observance_slugs": [
+        "rama-ekadashi-vaishnava"
+      ],
+      "title": "Vaishnava Rama Ekadashi: named-authority route",
+      "short_answer": "First confirm your city and named current Vaishnava sampradaya, temple, institution or household calendar: reviewed Indian samples place ordinary Rama on 25 October 2027 and the Vaishnava route on 26 October, but no date or parana is universal. For a complete safe form, keep everyone and every animal fed, hydrated and rested; remember Vishnu; hear the full source-labelled Mucukunda-Candrabhaga-Shobhana story; reject coercion, deprivation, death-as-success and survivor duty; optionally protect one care safeguard; and close without guessing formal practice.",
+      "significance": {
+        "text": "This lane exists because a named Vaishnava authority can materially select a different civil day from ordinary Rama. Padma Purana 6.60 supplies the shared Mucukunda-Candrabhaga-Shobhana story; it does not supply one national institutional fast. A bounded Devam meaning is that calendar difference can matter while life, food, water, medicine, rest and free consent remain protected.",
+        "source_ids": [
+          "padma-purana-rama-deshpande",
+          "padma-purana-rama-sanskrit",
+          "drik-rama-vijayawada-2027",
+          "drik-vaishnava-rama-korba-2027",
+          "drik-vaishnava-rama-kolkata-2027",
+          "devam-ekadashi-rule-audit",
+          "devam-vaishnava-rama-research"
+        ],
+        "scope_note": "Fixed shared textual story plus labelled Devam synthesis and authority routing; not an all-Vaishnava, state-wide or national prescription."
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "vaishnava-rama-shared-padma-mucukunda-candrabhaga-shobhana-en",
+          "title": "Mucukunda's decree, Shobhana's death and Candrabhaga's attributed reunion",
+          "summary": "Yudhishthira asks Krishna about Kartika Krishna Ekadashi. Krishna names Rama and tells of King Mucukunda, whose daughter Candrabhaga is given in marriage to weak Shobhana. At the king's home a drum announces that nobody may eat; even elephants, horses, young animals and other animals are denied food and water. Candrabhaga knows Shobhana cannot bear hunger but warns that eating brings censure. He fasts under this pressure, suffers severely and dies at sunrise. Mucukunda has him cremated; Candrabhaga does not abandon her body with him and remains alive at her father's home. The source places Shobhana in an ornate but unstable city on Mandara. Pilgrim Somasharman meets him and relays his request to Candrabhaga. She asks to go there and says her merit will stabilise the city. Vamadeva sprinkles her with Vedic mantras; the source attributes a divine body and reunion to this and to her Ekadashi observance since after age eight. Her merit stabilises the city, and the couple enjoy divine life. These are source events and claims, not fasting, animal, child, funeral, widowhood, grief-contact, merit-transfer or reunion instructions.",
+          "tradition_scope": "Padma Purana Uttara Khanda 6.60, Deshpande English expression and displayed Sanskrit",
+          "source_ids": [
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit",
+            "devam-rama-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "named-vaishnava-authority-practice-en",
+          "population_scope": "Users following a named current Vaishnava authority",
+          "description": "The authority may distinguish the observance day, Gauna or Mahadvadashi status, fast, worship, vigil and parana. Verify its official current calendar; an independent fixture or temple visit does not create a universal duty.",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "authority-aware-safe-reflection-en",
+          "population_scope": "Safe individual or household synthesis",
+          "description": "A complete alternative is fed, hydrated, rested and material-free: confirm authority, remember Vishnu, hear the full source-labelled story, state consent and survival boundaries, and optionally protect one existing care safeguard.",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "devam-vaishnava-rama-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "vaishnava-rama-private-en",
+          "label": "Private, fed named-authority reflection",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "Safe authority-aware synthesis; not a formal sampradaya fast, worship or parana.",
+          "form": "accessible_short",
+          "estimated_minutes": 14,
+          "materials": [
+            {
+              "item": "A quiet moment",
+              "required": false,
+              "substitutions": [
+                "A seated pause",
+                "Silence",
+                "No dedicated time"
+              ],
+              "source_ids": [
+                "devam-rama-research"
+              ]
+            },
+            {
+              "item": "Optional familiar Vishnu or Janardana support",
+              "required": false,
+              "substitutions": [
+                "A known prayer",
+                "An existing image or text",
+                "No image and silence"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-rama-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm your city, civil date and named current Vaishnava authority. If any is unknown, show the ordinary and authority-specific choices without declaring today correct.",
+              "why": "A state label or the word Vaishnava does not determine the calendar rule.",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Keep normal food, water, medicine, insulin, hygiene, child feeding, animal care and sleep; begin no fast, vigil or parana from this router.",
+              "why": "The safe route protects life and does not repeat the story's deprivation.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remember Vishnu or Janardana with a familiar name, prayer or silence; no image, mantra, offering or material is required.",
+              "why": "This preserves a devotional centre without inventing institutional worship.",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Hear the complete Mucukunda-Candrabhaga-Shobhana sequence: decree, animal deprivation, known weakness, pressure, severe hunger, death, Candrabhaga's survival, cremation, unstable city, messenger, Vamadeva's sprinkling, childhood observance, merit and attributed reunion.",
+              "why": "The shared source story must preserve coercion, death and survival rather than a miracle-only summary.",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "State privately: pressure is not consent; death is not ritual success; no child or animal loses food or water; no survivor owes merit, self-harm or reunion; source afterlife claims are not verified facts.",
+              "why": "This prevents dangerous imitation, blame and grief pressure.",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research",
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Optionally protect one food, water, medicine, rest or easy-exit safeguard already within your lawful care; no purchase, disclosure, confrontation, contact or action is required.",
+              "why": "A safe meaning strengthens ordinary care without expanding responsibility.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close fed, hydrated and rested, without blame, miracle claim or guessed parana. For a formal vrata, use the named authority's current instructions and retain medical safety.",
+              "why": "The safe router is complete and does not impersonate the authority.",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Remain fed, hydrated and rested. If you seek a formal vrata, use the named authority's current official instructions without surrendering medical safety.",
+            "source_ids": [
+              "devam-vaishnava-rama-research"
+            ],
+            "scope_note": "Complete safe router; not official institutional procedure."
+          },
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit"
+          ]
+        },
+        {
+          "procedure_id": "vaishnava-rama-family-en",
+          "label": "Consent-led authority-aware family reflection",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "Consent-led household reflection; not guru, priest, fasting, funeral or grief authority.",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 22,
+          "materials": [
+            {
+              "item": "A private shared moment",
+              "required": false,
+              "substitutions": [
+                "Separate private pauses",
+                "Remote silence",
+                "No gathering"
+              ],
+              "source_ids": [
+                "devam-rama-research"
+              ]
+            },
+            {
+              "item": "Optional familiar Vishnu support",
+              "required": false,
+              "substitutions": [
+                "One familiar name",
+                "A known prayer",
+                "No image or spoken words"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-rama-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Confirm city, date, named authority and whether the group wants this safe reflection rather than a formal fast.",
+              "why": "Applicability and consent precede a group procedure.",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Explain that the date difference comes from authority rules, not from a state's or person's greater devotion; offer an easy no and private exit.",
+              "why": "Calendar plurality must not become hierarchy or pressure.",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Keep every person and animal normally fed and hydrated, with medicine, school, mobility, hygiene and sleep unchanged.",
+              "why": "No family or institution may recreate the royal decree.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Tell the complete story and label the divine city, messenger report, mantra transformation, merit stabilisation and reunion as source claims.",
+              "why": "Attribution preserves the text without claiming afterlife knowledge.",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Say that Shobhana's death is not success, Candrabhaga is not to blame, and her survival is not disloyalty.",
+              "why": "The gathering must not romanticise dangerous fasting, self-harm, sati or survivor duty.",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Optionally let each person privately protect one care safeguard already theirs; do not ask what they chose.",
+              "why": "No health, grief, faith or family disclosure is required.",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "Close without fasting, animal restriction, role-play, sprinkling, funeral action, merit transfer, contact demand or promised reunion.",
+              "why": "The consent-led family form is complete.",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Thank willing participants, protect privacy and return to ordinary care. Date choice, refusal, tears, silence or dreams are not devotion tests or signs.",
+            "source_ids": [
+              "devam-vaishnava-rama-research"
+            ],
+            "scope_note": "Consent-led reflection; not formal sampradaya or temple practice."
+          },
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit"
+          ]
+        },
+        {
+          "procedure_id": "vaishnava-rama-temple-en",
+          "label": "Named Vaishnava temple or institution participation",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "Visitor-only guidance; the named current authority owns its calendar and formal practice.",
+          "form": "institutional_participation",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "Current named-institution information",
+              "required": false,
+              "substitutions": [
+                "Official notice",
+                "Direct desk confirmation",
+                "Do not attend if unverified"
+              ],
+              "source_ids": [
+                "drik-vaishnava-rama-korba-2027",
+                "devam-rama-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "Verify the named authority's official current calendar, city, ordinary/Gauna/Vaishnava/Mahadvadashi label and visitor status.",
+              "why": "Independent fixtures are discovery evidence, not official GBC, temple or sampradaya authority.",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "Check fast and food rules, parana, mantra or initiation limits, child and animal safeguards, medicine, accessibility, crowd control, emergency plan, photography, donation and exit.",
+              "why": "These materially affect health, consent, privacy and safety.",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research",
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "Remain only in visitor-authorised areas and keep normal food, water, medicine, child care, animal care, mobility and rest needs.",
+              "why": "Attendance does not create a fast, vigil or ritual role.",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "Do not enact death, cremation, dead-person messages, Vedic sprinkling, merit transfer or reunion, and do not disclose private grief or health details under pressure.",
+              "why": "This router grants no funeral, teacher, afterlife or counselling authority.",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "Leave and seek appropriate help if anyone or any animal is denied necessary food, water, medicine, rest or safety.",
+              "why": "A cancelled, remote or home form is complete; imminent danger in India can use 112.",
+              "source_ids": [
+                "india-code-pca-act-1960",
+                "india-emergency-112",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "Do not copy the public rite or displayed parana home and do not infer faith, salvation, reunion or other outcomes from attendance.",
+              "why": "The named authority owns its programme and no result is guaranteed.",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "Exit safely and meet ordinary food, water, medicine and rest needs. Attendance and a displayed parana guarantee no religious, medical, grief or afterlife result.",
+            "source_ids": [
+              "devam-vaishnava-rama-research"
+            ],
+            "scope_note": "Visitor guidance only; not a copied temple procedure."
+          },
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "india-emergency-112",
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-en",
+          "scope": "Selected Indian states under the same named-authority question",
+          "difference": "Language, spelling, month vocabulary, dress, food preference, familiar Vishnu name, image/no-image and silence are minor; sampled state fixtures do not create state rituals.",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "ordinary-rama-en",
+          "scope": "Completed ordinary Rama household lane",
+          "difference": "Ordinary Rama can fall on a different civil day and has its own accepted Panchang authority; reviewed samples show 25 October before the 26 October Vaishnava route.",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "devam-rama-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-authority-formal-en",
+          "scope": "Named sampradaya, temple or institution",
+          "difference": "Gauna or Mahadvadashi status, fast, worship, mantra, food rule, vigil and parana require that authority's official current instructions.",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "child-animal-medical-en",
+          "scope": "Child, animal, medical, disability, nutrition or sleep need",
+          "difference": "Normal care and qualified professional guidance govern these needs; source deprivation and childhood observance are not instructions.",
+          "source_ids": [
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit",
+            "devam-vaishnava-rama-research",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bereavement-funeral-crisis-en",
+          "scope": "Bereavement, self-harm, funeral, remains, widowhood, coercion, abuse, legal or crisis need",
+          "difference": "Professional, family-authorised and legal processes—not this ritual router—govern safety, remains, grief, reporting and emergency response.",
+          "source_ids": [
+            "india-emergency-112",
+            "devam-vaishnava-rama-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "nearby-observance-en",
+          "scope": "Govatsa/Vasu Baras, Padmanabha Dwadashi, Dhanteras, Yama Deepam or another nearby observance",
+          "difference": "Different identity, timing, deity-centre, animal practice, materials or closing requires its own denominator and authority.",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "The complete safe authority-aware form is non-fasting, fed, hydrated, rested, no-vigil, no-flame, no-animal restriction, no-funeral handling, no-sprinkling, no-purchase, no-donation, no-contact, no-disclosure, image-free, writing-free and material-free.",
+        "Never withhold or reduce food, water, medicine, insulin, child feeding, hygiene or sleep because of this guide. Never withhold food or water from an animal for a human observance.",
+        "Consent under royal, institutional, employer, school, elder, spouse, family or social pressure is not free consent. Nobody may impose fasting or vigil.",
+        "Shobhana's hunger, severe distress and death are warnings, not a ritual model. Death is not ritual success, destiny proof or devotion proof.",
+        "Children keep normal food, water, medicine, school and sleep. A source claim of observance after age eight creates no present-day child vrata.",
+        "Candrabhaga is not to blame for a coercive royal system. A spouse is not property, enforcement labour, merit supply or rescue duty.",
+        "Candrabhaga remains alive after her husband's death. No person owes self-harm, sati, death, widowhood conduct, reunion, forgiveness or continuing contact.",
+        "Do not approach, touch, move, wash, dress, photograph, cremate or handle a dead body, pyre, ash, remains or memorial object from this guide.",
+        "Do not claim contact with the dead, relay messages, locate an afterlife, interpret dreams or signs, or promise reunion, divine body or city, salvation, pleasure, wealth, sin removal or Vishnu's world.",
+        "Illness, death, grief, poverty, instability or failed hopes are not proof of weak faith, sin, destiny, impurity or ritual failure.",
+        "Do not rank dignity, eligibility, truth, prayer, food, water or safety by caste, birth, gender, marital status, health, disability, age, kinship or wealth.",
+        "For imminent danger in India, call 112 or seek emergency care; do not continue a restriction while waiting for ritual advice.",
+        "No one owes fasting, vigil, prayer, merit, belief, disclosure, contact, forgiveness, donation, family role or action for another person's hope.",
+        "Authored means only this reviewed named-authority router; it does not universalise Vaishnava practice and is not projected, hosted, independently released or published."
+      ]
+    },
+    {
+      "language_code": "hi",
+      "observance_slugs": [
+        "rama-ekadashi-vaishnava"
+      ],
+      "title": "वैष्णव रमा एकादशी: नामित-प्राधिकार मार्ग",
+      "short_answer": "पहले अपना नगर और नामित वर्तमान वैष्णव संप्रदाय, मंदिर, संस्था या स्वीकृत पारिवारिक पंचांग निश्चित करें। समीक्षा किए भारतीय नमूनों में सामान्य रमा 25 अक्तूबर 2027 और वैष्णव मार्ग 26 अक्तूबर को है, पर तारीख और पारण सार्वभौमिक नहीं हैं। पूर्ण सुरक्षित रूप में सब मनुष्यों और पशुओं का सामान्य भोजन, पानी और विश्राम जारी रखें; विष्णु का स्मरण करें; मुकुंद-चंद्रभागा-शोभन की पूरी स्रोत-नामित कथा सुनें; दबाव, वंचना, मृत्यु को सफलता मानना और जीवित व्यक्ति पर उद्धार-कर्तव्य अस्वीकार करें; चाहें तो एक देखभाल-सुरक्षा बचाएँ; और औपचारिक विधि का अनुमान लगाए बिना समापन करें।",
+      "significance": {
+        "text": "यह मार्ग इसलिए अलग है कि नामित वैष्णव प्राधिकार सामान्य रमा से अलग नागरिक दिन चुन सकता है। पद्म पुराण 6.60 साझा मुकुंद-चंद्रभागा-शोभन कथा देता है; वह एक राष्ट्रीय संस्थागत उपवास नहीं देता। सीमित Devam अर्थ है कि पंचांग-अंतर महत्वपूर्ण हो सकता है, जबकि जीवन, भोजन, पानी, दवा, विश्राम और स्वतंत्र सहमति सुरक्षित रहते हैं।",
+        "source_ids": [
+          "padma-purana-rama-deshpande",
+          "padma-purana-rama-sanskrit",
+          "drik-rama-vijayawada-2027",
+          "drik-vaishnava-rama-korba-2027",
+          "drik-vaishnava-rama-kolkata-2027",
+          "devam-ekadashi-rule-audit",
+          "devam-vaishnava-rama-research"
+        ],
+        "scope_note": "स्थिर साझा स्रोत-कथा, नामित Devam अर्थ और प्राधिकार मार्ग; सभी वैष्णवों, किसी राज्य या राष्ट्र की सार्वभौमिक विधि नहीं।"
+      },
+      "origin_narratives": [
+        {
+          "narrative_id": "vaishnava-rama-shared-padma-mucukunda-candrabhaga-shobhana-hi",
+          "title": "मुचुकुंद की आज्ञा, शोभन की मृत्यु और चंद्रभागा का स्रोत-कथित पुनर्मिलन",
+          "summary": "युधिष्ठिर कृष्ण से कार्तिक कृष्ण एकादशी पूछते हैं। कृष्ण रमा नाम देकर राजा मुचुकुंद की कथा कहते हैं, जिसकी बेटी चंद्रभागा शोभन को विवाह में दी जाती है। राजा के घर ढोल से घोषणा होती है कि कोई न खाए; हाथी, घोड़े, छोटे पशु और अन्य पशुओं का भोजन-पानी भी रोका जाता है। चंद्रभागा जानती है कि कमजोर शोभन भूख नहीं सह सकता, पर बताती है कि खाने पर निंदा होगी। वह दबाव में उपवास करता, तीव्र कष्ट पाता और सूर्योदय पर मर जाता है। मुचुकुंद उसका दाह कराते हैं; चंद्रभागा पति के साथ शरीर नहीं त्यागती और पिता के घर जीवित रहती है। स्रोत शोभन को मंदर पर सुंदर पर अस्थिर नगर में रखता है। यात्री सोमशर्मा उससे मिलकर संदेश चंद्रभागा तक लाता है। वह वहाँ जाने और अपने पुण्य से नगर स्थिर करने को कहती है। वामदेव वैदिक मंत्रों से जल छिड़कते हैं; स्रोत इसे और आठ वर्ष के बाद से उसके एकादशी पालन को दिव्य शरीर व पुनर्मिलन से जोड़ता है। उसका पुण्य नगर स्थिर करता और दंपति दिव्य जीवन पाते हैं। ये स्रोत की घटनाएँ और दावे हैं, उपवास, पशु, बाल, अंतिम-संस्कार, विधवापन, मृत-संपर्क, पुण्य-दान या पुनर्मिलन निर्देश नहीं।",
+          "tradition_scope": "पद्म पुराण उत्तरखंड 6.60, देशपांडे अंग्रेजी अभिव्यक्ति और प्रदर्शित संस्कृत",
+          "source_ids": [
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit",
+            "devam-rama-research"
+          ],
+          "universal_origin_claimed": false
+        }
+      ],
+      "typical_practices": [
+        {
+          "practice_id": "named-vaishnava-authority-practice-hi",
+          "population_scope": "नामित वर्तमान वैष्णव प्राधिकार मानने वाले उपयोगकर्ता",
+          "description": "प्राधिकार दिन, गौण या महाद्वादशी स्थिति, उपवास, पूजा, जागरण और पारण अलग कर सकता है। उसका वर्तमान आधिकारिक पंचांग जाँचें; स्वतंत्र fixture या मंदिर-उपस्थिति सार्वभौमिक कर्तव्य नहीं बनाती।",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research"
+          ],
+          "instructional": false
+        },
+        {
+          "practice_id": "authority-aware-safe-reflection-hi",
+          "population_scope": "सुरक्षित निजी या घरेलू Devam रूप",
+          "description": "पूर्ण विकल्प भोजन-पानी सहित, विश्रामपूर्ण और सामग्री-मुक्त है: प्राधिकार जाँचें, विष्णु-स्मरण करें, पूरी स्रोत-नामित कथा सुनें, सहमति और जीवन-रक्षा सीमाएँ कहें, और चाहें तो एक मौजूदा देखभाल-सुरक्षा बचाएँ।",
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "devam-vaishnava-rama-research"
+          ],
+          "instructional": false
+        }
+      ],
+      "procedures": [
+        {
+          "procedure_id": "vaishnava-rama-private-hi",
+          "label": "निजी, भोजन-पानी सहित नामित-प्राधिकार चिंतन",
+          "tier": "minimum",
+          "setting": "individual",
+          "authority_scope": "सुरक्षित प्राधिकार-सचेत Devam रूप; औपचारिक संप्रदाय उपवास, पूजा या पारण नहीं।",
+          "form": "accessible_short",
+          "estimated_minutes": 14,
+          "materials": [
+            {
+              "item": "एक शांत क्षण",
+              "required": false,
+              "substitutions": [
+                "बैठकर विराम",
+                "मौन",
+                "अलग समय नहीं"
+              ],
+              "source_ids": [
+                "devam-rama-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित विष्णु या जनार्दन सहारा",
+              "required": false,
+              "substitutions": [
+                "परिचित प्रार्थना",
+                "पहले से उपलब्ध चित्र या पाठ",
+                "बिना चित्र मौन"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-rama-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "अपना नगर, नागरिक तारीख और नामित वर्तमान वैष्णव प्राधिकार जाँचें। इनमें से कुछ अज्ञात हो तो आज को सही घोषित किए बिना सामान्य और प्राधिकार-विशिष्ट विकल्प दिखाएँ।",
+              "why": "राज्य का नाम या केवल ‘वैष्णव’ शब्द पंचांग-नियम निश्चित नहीं करता।",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "सामान्य भोजन, पानी, दवा, इंसुलिन, स्वच्छता, बाल-भोजन, पशु-देखभाल और नींद जारी रखें; इस मार्ग से उपवास, जागरण या पारण शुरू न करें।",
+              "why": "सुरक्षित रूप जीवन बचाता है और कथा की वंचना नहीं दोहराता।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "परिचित नाम, प्रार्थना या मौन से विष्णु या जनार्दन का स्मरण करें; चित्र, मंत्र, अर्पण या सामग्री जरूरी नहीं।",
+              "why": "यह संस्थागत पूजा गढ़े बिना भक्ति-केंद्र रखता है।",
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "मुकुंद-चंद्रभागा-शोभन का पूरा क्रम सुनें: राजाज्ञा, पशु-वंचना, ज्ञात कमजोरी, दबाव, तीव्र भूख, मृत्यु, चंद्रभागा का जीवित रहना, दाह, अस्थिर नगर, संदेशवाहक, वामदेव का छिड़काव, बाल्यकाल से पालन, पुण्य और स्रोत-कथित पुनर्मिलन।",
+              "why": "साझा स्रोत-कथा को चमत्कार-मात्र सारांश नहीं, दबाव, मृत्यु और जीवन बचाए रखना चाहिए।",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "निजी रूप से कहें: दबाव सहमति नहीं; मृत्यु सफलता नहीं; बाल या पशु का भोजन-पानी नहीं रुकेगा; जीवित व्यक्ति पर पुण्य, आत्महानि या पुनर्मिलन का ऋण नहीं; परलोक-दावे सत्यापित तथ्य नहीं।",
+              "why": "यह खतरनाक अनुकरण, दोष और शोक-दबाव रोकता है।",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research",
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो अपने वैध देखभाल-क्षेत्र में भोजन, पानी, दवा, विश्राम या आसान निकास की एक सुरक्षा बचाएँ; खरीद, खुलासा, टकराव, संपर्क या काम जरूरी नहीं।",
+              "why": "सुरक्षित अर्थ जिम्मेदारी बढ़ाए बिना सामान्य देखभाल मजबूत करता है।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "भोजन-पानी और विश्राम के साथ, बिना दोष, चमत्कार-दावे या अनुमानित पारण के समापन करें। औपचारिक व्रत के लिए नामित प्राधिकार के वर्तमान निर्देश और चिकित्सा-सुरक्षा अपनाएँ।",
+              "why": "सुरक्षित मार्ग पूरा है और प्राधिकार की नकल नहीं करता।",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "भोजन-पानी और विश्राम जारी रखें। औपचारिक व्रत चाहिए तो चिकित्सा-सुरक्षा छोड़े बिना नामित प्राधिकार के वर्तमान आधिकारिक निर्देश लें।",
+            "source_ids": [
+              "devam-vaishnava-rama-research"
+            ],
+            "scope_note": "पूर्ण सुरक्षित मार्ग; आधिकारिक संस्थागत विधि नहीं।"
+          },
+          "source_ids": [
+            "devam-ekadashi-recurring-scaffold",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit"
+          ]
+        },
+        {
+          "procedure_id": "vaishnava-rama-family-hi",
+          "label": "सहमति-आधारित प्राधिकार-सचेत पारिवारिक चिंतन",
+          "tier": "standard",
+          "setting": "family_led",
+          "authority_scope": "सहमति-आधारित घरेलू चिंतन; गुरु, पुरोहित, उपवास, अंतिम-संस्कार या शोक प्राधिकार नहीं।",
+          "form": "fuller_family_or_teacher_led",
+          "estimated_minutes": 22,
+          "materials": [
+            {
+              "item": "निजी साझा क्षण",
+              "required": false,
+              "substitutions": [
+                "अलग निजी विराम",
+                "दूर से मौन",
+                "कोई सभा नहीं"
+              ],
+              "source_ids": [
+                "devam-rama-research"
+              ]
+            },
+            {
+              "item": "वैकल्पिक परिचित विष्णु सहारा",
+              "required": false,
+              "substitutions": [
+                "एक परिचित नाम",
+                "परिचित प्रार्थना",
+                "बिना चित्र या बोले शब्द"
+              ],
+              "source_ids": [
+                "devam-ekadashi-recurring-scaffold",
+                "devam-rama-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नगर, तारीख, नामित प्राधिकार और यह जाँचें कि समूह औपचारिक उपवास के बदले यह सुरक्षित चिंतन चाहता है।",
+              "why": "लागू होना और सहमति समूह-विधि से पहले हैं।",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "समझाएँ कि तारीख का अंतर प्राधिकार-नियम से है, किसी राज्य या व्यक्ति की अधिक भक्ति से नहीं; आसान ‘नहीं’ और निजी निकास दें।",
+              "why": "पंचांग-विविधता पदानुक्रम या दबाव न बने।",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "सब मनुष्यों और पशुओं का सामान्य भोजन-पानी, दवा, स्कूल, चलने-सहायता, स्वच्छता और नींद जारी रखें।",
+              "why": "परिवार या संस्था राजाज्ञा दोहरा नहीं सकती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "पूरी कथा कहें और दिव्य नगर, संदेश, मंत्र-परिवर्तन, पुण्य से स्थिरता और पुनर्मिलन को स्रोत-दावा कहें।",
+              "why": "स्रोत-नामांकन परलोक-ज्ञान का दावा किए बिना पाठ बचाता है।",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "कहें कि शोभन की मृत्यु सफलता नहीं, चंद्रभागा दोषी नहीं, और उसका जीवित रहना निष्ठाहीनता नहीं।",
+              "why": "समूह खतरनाक उपवास, आत्महानि, सती या जीवित व्यक्ति के ऋण का महिमामंडन न करे।",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "चाहें तो हर व्यक्ति अपनी एक मौजूदा देखभाल-सुरक्षा निजी रूप से बचाए; उसने क्या चुना यह न पूछें।",
+              "why": "स्वास्थ्य, शोक, आस्था या परिवार का खुलासा जरूरी नहीं।",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": true
+            },
+            {
+              "ordinal": 7,
+              "instruction": "उपवास, पशु-वंचना, अभिनय, छिड़काव, अंतिम-संस्कार क्रिया, पुण्य-हस्तांतरण, संपर्क-दबाव या पुनर्मिलन-वादा बिना समापन करें।",
+              "why": "सहमति-आधारित पारिवारिक रूप पूरा है।",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "इच्छुक लोगों को धन्यवाद दें, निजता बचाएँ और सामान्य देखभाल पर लौटें। तारीख-चयन, मना करना, आँसू, मौन या सपना भक्ति-परीक्षा या संकेत नहीं।",
+            "source_ids": [
+              "devam-vaishnava-rama-research"
+            ],
+            "scope_note": "सहमति-आधारित चिंतन; औपचारिक संप्रदाय या मंदिर प्रथा नहीं।"
+          },
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit"
+          ]
+        },
+        {
+          "procedure_id": "vaishnava-rama-temple-hi",
+          "label": "नामित वैष्णव मंदिर या संस्था सहभागिता",
+          "tier": "elaborate",
+          "setting": "temple_participation",
+          "authority_scope": "केवल आगंतुक मार्गदर्शन; नामित वर्तमान प्राधिकार अपने पंचांग और औपचारिक प्रथा का स्वामी है।",
+          "form": "institutional_participation",
+          "estimated_minutes": 25,
+          "materials": [
+            {
+              "item": "वर्तमान नामित-संस्था जानकारी",
+              "required": false,
+              "substitutions": [
+                "आधिकारिक सूचना",
+                "डेस्क से सीधी पुष्टि",
+                "सत्यापन न हो तो न जाएँ"
+              ],
+              "source_ids": [
+                "drik-vaishnava-rama-korba-2027",
+                "devam-rama-research"
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "ordinal": 1,
+              "instruction": "नामित प्राधिकार का वर्तमान आधिकारिक पंचांग, नगर, सामान्य/गौण/वैष्णव/महाद्वादशी नाम और आगंतुक स्थिति जाँचें।",
+              "why": "स्वतंत्र fixtures आधिकारिक GBC, मंदिर या संप्रदाय प्राधिकार नहीं हैं।",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 2,
+              "instruction": "उपवास और भोजन नियम, पारण, मंत्र या दीक्षा-सीमा, बाल और पशु सुरक्षा, दवा, सुगमता, भीड़, आपात योजना, फोटो, दान और निकास जाँचें।",
+              "why": "ये स्वास्थ्य, सहमति, निजता और सुरक्षा को वास्तव में बदलते हैं।",
+              "source_ids": [
+                "drik-rama-vijayawada-2027",
+                "drik-vaishnava-rama-korba-2027",
+                "drik-vaishnava-rama-kolkata-2027",
+                "devam-ekadashi-rule-audit",
+                "devam-vaishnava-rama-research",
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 3,
+              "instruction": "केवल आगंतुक-अधिकृत क्षेत्र में रहें और सामान्य भोजन, पानी, दवा, बाल-देखभाल, पशु-देखभाल, चलने-सहायता और विश्राम जारी रखें।",
+              "why": "उपस्थिति उपवास, जागरण या अनुष्ठानिक भूमिका नहीं बनाती।",
+              "source_ids": [
+                "icmr-type1-diabetes-fasting",
+                "india-code-pca-act-1960",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 4,
+              "instruction": "मृत्यु, दाह, मृतक-संदेश, वैदिक छिड़काव, पुण्य-हस्तांतरण या पुनर्मिलन न निभाएँ; दबाव में निजी शोक या स्वास्थ्य विवरण न दें।",
+              "why": "यह मार्ग अंतिम-संस्कार, गुरु, परलोक या परामर्श प्राधिकार नहीं देता।",
+              "source_ids": [
+                "padma-purana-rama-deshpande",
+                "padma-purana-rama-sanskrit",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 5,
+              "instruction": "किसी व्यक्ति या पशु को जरूरी भोजन, पानी, दवा, विश्राम या सुरक्षा न मिले तो निकलें और उचित सहायता लें।",
+              "why": "रद्द, दूरस्थ या घरेलू रूप पूरा है; भारत में तत्काल खतरे पर 112 उपयोग हो सकता है।",
+              "source_ids": [
+                "india-code-pca-act-1960",
+                "india-emergency-112",
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            },
+            {
+              "ordinal": 6,
+              "instruction": "सार्वजनिक विधि या दिखाया पारण घर में न उतारें और उपस्थिति से आस्था, मोक्ष, पुनर्मिलन या अन्य फल न मानें।",
+              "why": "नामित प्राधिकार अपने कार्यक्रम का स्वामी है; फल की गारंटी नहीं।",
+              "source_ids": [
+                "devam-vaishnava-rama-research"
+              ],
+              "optional": false
+            }
+          ],
+          "closing": {
+            "text": "सुरक्षित निकलें और सामान्य भोजन, पानी, दवा व विश्राम लें। उपस्थिति या दिखाया पारण किसी धार्मिक, चिकित्सीय, शोक या परलोक-फल की गारंटी नहीं।",
+            "source_ids": [
+              "devam-vaishnava-rama-research"
+            ],
+            "scope_note": "केवल आगंतुक मार्गदर्शन; मंदिर-विधि की नकल नहीं।"
+          },
+          "source_ids": [
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960",
+            "india-emergency-112",
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit"
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "variant_id": "selected-states-minor-expression-hi",
+          "scope": "एक ही नामित-प्राधिकार प्रश्न वाले चुने भारतीय राज्य",
+          "difference": "भाषा, वर्तनी, मास-शब्द, वस्त्र, भोजन पसंद, परिचित विष्णु नाम, चित्र/बिना चित्र और मौन छोटे अंतर हैं; नमूना state fixtures अलग राज्य-अनुष्ठान नहीं बनाते।",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research"
+          ],
+          "separate_lane_required": false
+        },
+        {
+          "variant_id": "ordinary-rama-hi",
+          "scope": "पूर्ण सामान्य रमा घरेलू मार्ग",
+          "difference": "सामान्य रमा का अलग नागरिक दिन और स्वीकृत पंचांग प्राधिकार हो सकता है; समीक्षा नमूनों में 26 अक्तूबर वैष्णव मार्ग से पहले 25 अक्तूबर है।",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "devam-rama-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "named-authority-formal-hi",
+          "scope": "नामित संप्रदाय, मंदिर या संस्था",
+          "difference": "गौण या महाद्वादशी स्थिति, उपवास, पूजा, मंत्र, भोजन नियम, जागरण और पारण को उस प्राधिकार के वर्तमान आधिकारिक निर्देश चाहिए।",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "child-animal-medical-hi",
+          "scope": "बाल, पशु, चिकित्सा, विकलांगता, पोषण या नींद जरूरत",
+          "difference": "सामान्य देखभाल और योग्य विशेषज्ञ मार्गदर्शन लागू है; स्रोत की वंचना और बाल्यकाल पालन निर्देश नहीं हैं।",
+          "source_ids": [
+            "padma-purana-rama-deshpande",
+            "padma-purana-rama-sanskrit",
+            "devam-vaishnava-rama-research",
+            "icmr-type1-diabetes-fasting",
+            "india-code-pca-act-1960"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "bereavement-funeral-crisis-hi",
+          "scope": "शोक, आत्महानि, अंतिम-संस्कार, अवशेष, विधवापन, दबाव, दुर्व्यवहार, कानूनी या संकट जरूरत",
+          "difference": "विशेषज्ञ, परिवार-अधिकृत और कानूनी प्रक्रियाएँ—यह अनुष्ठान मार्ग नहीं—सुरक्षा, अवशेष, शोक, रिपोर्टिंग और आपात प्रतिक्रिया चलाती हैं।",
+          "source_ids": [
+            "india-emergency-112",
+            "devam-vaishnava-rama-research"
+          ],
+          "separate_lane_required": true
+        },
+        {
+          "variant_id": "nearby-observance-hi",
+          "scope": "गोवत्स/वसु बारस, पद्मनाभ द्वादशी, धनतेरस, यम दीपम या पास का अन्य observance",
+          "difference": "अलग पहचान, समय, देवता-केंद्र, पशु-प्रथा, सामग्री या समापन को अपना denominator और प्राधिकार चाहिए।",
+          "source_ids": [
+            "drik-rama-vijayawada-2027",
+            "drik-vaishnava-rama-korba-2027",
+            "drik-vaishnava-rama-kolkata-2027",
+            "devam-ekadashi-rule-audit",
+            "devam-vaishnava-rama-research"
+          ],
+          "separate_lane_required": true
+        }
+      ],
+      "safety_and_boundaries": [
+        "पूर्ण सुरक्षित प्राधिकार-सचेत रूप गैर-उपवास, भोजन-पानी सहित, विश्रामपूर्ण, बिना जागरण, अग्नि, पशु-वंचना, अंतिम-संस्कार संभाल, छिड़काव, खरीद, दान, संपर्क, खुलासा, चित्र, लेखन और सामग्री का है।",
+        "इस मार्ग के कारण भोजन, पानी, दवा, इंसुलिन, बाल-भोजन, स्वच्छता या नींद कभी न रोकें या घटाएँ। मानव पालन के लिए पशु का भोजन-पानी कभी न रोकें।",
+        "राजा, संस्था, नियोक्ता, स्कूल, बड़ा, जीवनसाथी, परिवार या समाज के दबाव में सहमति स्वतंत्र नहीं। कोई उपवास या जागरण थोप नहीं सकता।",
+        "शोभन की भूख, तीव्र पीड़ा और मृत्यु चेतावनी हैं, अनुष्ठान-आदर्श नहीं। मृत्यु अनुष्ठान की सफलता, भाग्य या भक्ति का प्रमाण नहीं।",
+        "बच्चों का सामान्य भोजन, पानी, दवा, स्कूल और नींद जारी रहें। आठ वर्ष के बाद पालन का स्रोत-दावा आज का बाल-व्रत नहीं बनाता।",
+        "दबावपूर्ण राज-व्यवस्था के लिए चंद्रभागा दोषी नहीं। जीवनसाथी संपत्ति, दबाव लागू करने वाला श्रम, पुण्य-भंडार या उद्धार-कर्तव्य नहीं।",
+        "चंद्रभागा पति की मृत्यु के बाद जीवित रहती है। कोई आत्महानि, सती, मृत्यु, विधवा आचरण, पुनर्मिलन, क्षमा या जारी संपर्क नहीं देता।",
+        "इस मार्ग से शव, चिता, राख, अवशेष या स्मृति-वस्तु के पास न जाएँ, छुएँ, हिलाएँ, धोएँ, सजाएँ, फोटो लें, दाह करें या संभालें।",
+        "मृतक से संपर्क, संदेश, परलोक-स्थान, स्वप्न/संकेत का दावा न करें; पुनर्मिलन, दिव्य शरीर/नगर, मोक्ष, सुख, धन, पाप-मुक्ति या विष्णुलोक का वादा न करें।",
+        "बीमारी, मृत्यु, शोक, गरीबी, अस्थिरता या असफल आशा कमजोर आस्था, पाप, भाग्य, अशुद्धि या अनुष्ठान-विफलता का प्रमाण नहीं।",
+        "जाति, जन्म, लिंग, वैवाहिक स्थिति, स्वास्थ्य, विकलांगता, आयु, संबंध या धन से गरिमा, पात्रता, सत्य, प्रार्थना, भोजन, पानी या सुरक्षा न तौलें।",
+        "भारत में तत्काल खतरे पर 112 कॉल करें या आपात देखभाल लें; अनुष्ठान सलाह की प्रतीक्षा में रोक जारी न रखें।",
+        "दूसरे की आशा के लिए उपवास, जागरण, प्रार्थना, पुण्य, विश्वास, खुलासा, संपर्क, क्षमा, दान, पारिवारिक भूमिका या काम देय नहीं।",
+        "रचित का अर्थ केवल यह समीक्षित नामित-प्राधिकार मार्ग है; यह वैष्णव प्रथा को सार्वभौमिक नहीं करता और प्रक्षेपित, होस्ट, स्वतंत्र रिलीज-समीक्षित या प्रकाशित नहीं है।"
+      ]
+    }
+  ],
+  "product_status": {
+    "classification": "user_complete_lane",
+    "completed_dimensions": {
+      "applicability": true,
+      "timing": true,
+      "significance": true,
+      "origin_narratives": true,
+      "typical_practice": true,
+      "actionable_vidhi": true,
+      "materials_and_substitutions": true,
+      "variants": true,
+      "evidence": true
+    },
+    "open_gaps": [],
+    "review_status": "internal_beta_reviewed"
+  }
+}

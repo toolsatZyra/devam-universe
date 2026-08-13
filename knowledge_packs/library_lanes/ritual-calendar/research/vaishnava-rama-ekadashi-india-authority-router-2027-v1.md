@@ -243,14 +243,14 @@ because a discovery fixture was sampled there.
 - N. A. Deshpande expression and displayed Sanskrit of *Padma Purana*, Uttara
   Khanda 6.60: complete story and sensitive source facts; checked 2026-08-13.
 - Korba 2027 ISKCON/Vaishnava fixture:
-  <https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?time-format=24plushour&year=2027>;
+  <https://www.drikpanchang.com/iskcon/iskcon-ekadashi-list.html?geoname-id=1266122&time-format=24plushour&year=2027>;
   Tuesday 26 October and explicit independent-GCal limitation; discovery
   evidence only, not official institutional authority or portable parana.
 - Vijayawada 2027 general fixture:
-  <https://www.drikpanchang.com/vrats/ekadashidates.html?time-format=12hour&year=2027>;
+  <https://www.drikpanchang.com/vrats/ekadashidates.html?geoname-id=1253184&time-format=12hour&year=2027>;
   ordinary 25 October and Vaishnava 26 October; discovery evidence only.
 - Kolkata 26 October 2027 fixture:
-  <https://www.drikpanchang.com/marathi/panchang/marathi-day-panchang.html?date=26%2F10%2F2027>;
+  <https://www.drikpanchang.com/marathi/panchang/marathi-day-panchang.html?geoname-id=1275004&date=26%2F10%2F2027>;
   ordinary parana plus Gauna and Vaishnava display; discovery evidence only.
 - Lane-local 2026 Delhi/Mumbai/Chennai Ekadashi fixture and 2027 rule audit:
   deterministic city/profile dependency and non-portability.
