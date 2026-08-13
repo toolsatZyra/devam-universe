@@ -1,0 +1,63 @@
+{
+  "contract": "DEVAM_CROSS_LANE_LINK_PROPOSALS_V1",
+  "proposal_pack_id": "ritual-calendar-papankusha-padma-purana-source-owner-proposal-v1",
+  "lane_id": "ritual-calendar",
+  "anchor_registry_version": 1,
+  "status": "proposed_for_integration",
+  "proposals": [
+    {
+      "proposal_id": "papankusha-to-padma-mahatmya-owner",
+      "from_ref": {
+        "lane_local_id": "ritual-calendar/papankusha-pashankusha-ekadashi-north-west-smarta-household-2027-v1"
+      },
+      "to_ref": {
+        "lane_local_id": "story/padma-purana-papankusha-mahatmya-source-context"
+      },
+      "relationship_family": "story",
+      "predicate": "requests_full_source_labelled_papankusha_mahatmya_context",
+      "directionality": "directed",
+      "consumer_label": {
+        "en": "Read the complete source-labelled Papankusha mahatmya",
+        "hi": "पूरी स्रोत-नामित पापांकुशा माहात्म्य-सूची पढ़ें"
+      },
+      "scope": {
+        "statement": "Preserve Padma Purana 6.59 as a 28-verse mahatmya catalogue—not an invented plot—including reciprocal Shaiva/Vaishnava hell threats, accidental-fast absolution, fast/vigil superiority, health/family/wealth and thirty-relative promises, Brahmana gifts, poverty pressure, noble-birth hierarchy and disease claims without making them Devam facts, guarantees or instructions.",
+        "geography_codes": [
+          "north-india",
+          "west-india",
+          "IN-WB",
+          "IN-BR",
+          "IN-CG",
+          "IN-KA",
+          "IN-TN",
+          "IN-KL",
+          "IN-MH",
+          "IN-OD",
+          "IN-AP"
+        ],
+        "tradition_codes": [
+          "smarta-north-india",
+          "smarta-west-india",
+          "ordinary-ekadashi-household"
+        ],
+        "time_scope": "Locally resolved Ashvina Shukla Papankusha/Pashankusha; reviewed 2027 fixture 11 October",
+        "source_expression_scope": "N. A. Deshpande English expression and displayed Sanskrit of Padma Purana Uttara Khanda chapter 59; other recensions and reception unresolved"
+      },
+      "evidence_refs": [
+        {
+          "evidence_kind": "source_passage",
+          "ref": "https://www.wisdomlib.org/hinduism/book/the-padma-purana/d/doc365636.html",
+          "claim_scope": "Reviewed verses 1-28 with the complete Papankusha mahatmya catalogue."
+        },
+        {
+          "evidence_kind": "ritual_lane",
+          "ref": "knowledge_packs/library_lanes/ritual-calendar/packs/papankusha-pashankusha-ekadashi-north-west-smarta-household-2027-v1.json",
+          "claim_scope": "Bilingual ordinary applicability, safe procedures, substitutions, closing and major variants."
+        }
+      ],
+      "confidence": "medium",
+      "target_resolution": "unresolved_owner_lane",
+      "integration_status": "proposed"
+    }
+  ]
+}
