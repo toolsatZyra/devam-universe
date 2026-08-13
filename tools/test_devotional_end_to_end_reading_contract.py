@@ -34,6 +34,8 @@ class DevotionalEndToEndReadingContractTest(unittest.TestCase):
         self.assertEqual(modes["kanda_progression"]["progression"], "1_to_7")
         self.assertTrue(all(row["label"]["en"] and row["label"]["hi"] for row in modes.values()))
         self.assertTrue(all(row["availability"] != "consumer_complete" for row in modes.values()))
+        self.assertIn("beginning to end", self.manas["completion_rule"])
+        self.assertIn("Story summaries", self.manas["completion_rule"])
 
     def test_hanuman_chalisa_is_complete_in_source_order_with_bilingual_meaning(self):
         readings = self.chalisa["readings"]
@@ -49,6 +51,7 @@ class DevotionalEndToEndReadingContractTest(unittest.TestCase):
         self.assertEqual(modes["one_reading_unit_daily"]["availability"], "consumer_content_available")
         self.assertEqual(modes["resume_exact_position"]["availability"], "product_persistence_pending")
         self.assertTrue(all("boundary" in row for row in modes.values()))
+        self.assertIn("end-to-end recitation", self.chalisa["daily_path"]["completion_state"])
 
     def test_hindi_labels_are_valid_utf8_not_mojibake(self):
         raw = MANAS_PATH.read_text(encoding="utf-8") + CHALISA_PATH.read_text(encoding="utf-8")

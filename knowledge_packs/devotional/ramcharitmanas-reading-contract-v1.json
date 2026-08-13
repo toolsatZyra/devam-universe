@@ -8,7 +8,7 @@
     "attribution": "Traditionally attributed to Goswami Tulsidas",
     "primary_language_note": "The work is principally Awadhi in Devanagari; approachable Hindi and English meaning are separate consumer layers."
   },
-  "purpose": "Let a reader complete the work in source order at their own pace instead of encountering disconnected summaries or scholarly records.",
+  "purpose": "Let a reader complete the work in source order at their own pace, including one page or one source-bounded passage at a time, instead of encountering disconnected summaries or scholarly records.",
   "authoritative_source_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
   "source_denominator": {
     "scan_coordinates": 1172,
@@ -68,5 +68,5 @@
     "default_hidden": ["source_hash", "ocr_diagnostics", "edition_comparison", "verse_count_audit"]
   },
   "completion_state": "source_reconciliation_before_end_to_end_reading",
-  "completion_rule": "Complete only when all 1,158 text-bearing pages can be read in exact order, every consumer unit has usable Hindi and English meaning, all five modes preserve the same canonical position, and resume behavior is verified."
+  "completion_rule": "Complete only when all 1,158 text-bearing pages can be read from beginning to end in exact order, every consumer unit has usable Hindi and English meaning, page-daily and passage-daily pacing never breaks the canonical sequence, all five modes preserve the same position, and resume behavior is verified. Story summaries and story-world episode packs never satisfy this reading denominator."
 }

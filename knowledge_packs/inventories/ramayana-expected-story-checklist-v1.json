@@ -10,7 +10,8 @@
     "expected_story_supplements": "knowledge_packs/inventories/ramayana-expected-story-supplements-v1.json",
     "consumer_story_packs": [
       "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json",
-      "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json"
+      "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json",
+      "knowledge_packs/library_lanes/ramayana/expected-stories-uttarkanda-frames-v1.json"
     ]
   },
   "counters": {
@@ -18,12 +19,12 @@
     "supplemental_expected_stories": 22,
     "total_expected_story_rows": 71,
     "selected_expression_rows_complete_en_hi": 49,
-    "supplemental_rows_complete_en_hi": 10,
-    "supplemental_rows_open": 12,
+    "supplemental_rows_complete_en_hi": 12,
+    "supplemental_rows_open": 10,
     "supplemental_coverage_states": {
-      "candidate_not_authored": 11,
+      "candidate_not_authored": 9,
       "connected_content_exists_needs_denominator_review": 1,
-      "consumer_complete_en_hi": 10
+      "consumer_complete_en_hi": 12
     }
   },
   "selected_expression_rows": [
@@ -684,8 +685,10 @@
         "later-reign",
         "last-departures"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "exact_ramcharitmanas_passages_required"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_range_aligned",
+      "consumer_story_id": "ramayana-manas-kakabhushundi-garuda-dialogue-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-uttarkanda-frames-v1"
     },
     {
       "expectation_id": "manas-uttar-kanda-bhakti-teachings",
@@ -697,8 +700,10 @@
         "later-reign",
         "last-departures"
       ],
-      "coverage_state": "candidate_not_authored",
-      "source_alignment_state": "teaching_units_need_separate_daily_reading_design"
+      "coverage_state": "consumer_complete_en_hi",
+      "source_alignment_state": "exact_ramcharitmanas_range_aligned_reading_lane_separate",
+      "consumer_story_id": "ramayana-manas-uttarkanda-ramrajya-teachings-v1",
+      "consumer_story_pack_id": "ramayana-expected-stories-uttarkanda-frames-v1"
     },
     {
       "expectation_id": "popular-hanuman-opens-chest",

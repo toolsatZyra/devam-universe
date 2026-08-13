@@ -35,12 +35,16 @@ Shiva-Sati-Parvati frame, Narada's delusion, Manu-Shatarupa's boon,
 Pratapbhanu's fall, Rama's childhood, Pushpavatika/Gauri, and Kevat's crossing.
 The second batch completes Angada's full embassy and planted-foot challenge,
 Kalnemi's deception, and Bharata's encounter with the mountain-bearing Hanuman
-through 25 more bilingual episodes. Both canonical packs and their draft
-database projections keep these ten stories separate from the Dutt expression
-and leave hosted data unchanged. Twelve supplements remain open. The next work
-is the remaining Manas frame/teaching material and the separately sourced
-popular, regional, temple, and living-practice batch, followed by one
-consolidated whole-Ramayana continuity review.
+through 25 more bilingual episodes. The third batch completes the Uttarkanda
+court and public sequence through Ram Rajya and Rama's citizen teachings, then
+the Kakabhushundi-Garuda frame and its embedded biography and teachings, through
+46 more bilingual episodes aligned to fixed scan pages 1071-1223. The three
+canonical packs and their draft database projections therefore cover twelve
+expected stories through 140 episodes while keeping them separate from the Dutt
+expression and leaving hosted data unchanged. Ten supplements remain open. The
+next work is the separately sourced popular, regional, temple, performance, and
+living-practice batch, followed by one consolidated whole-Ramayana continuity
+review.
 
 Checkpoint 2026-08-13 (end-to-end devotional reading correction):
 Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered
@@ -51,6 +55,10 @@ the 345 held pages and bilingual meaning layer are resolved. The Hanuman
 Chalisa pack exposes complete 43-unit recitation and an optional source-ordered
 one-unit-daily path now, while persistent resume remains product work. Reading
 pace is user choice, not a Panchang rule or ritual prescription.
+Story packs, including the 140 completed Ramcharitmanas story episodes, do not
+increment either continuous-reading denominator. The reading experience must
+support the ordinary behavior of finishing the work end to end, pausing after a
+page or source-bounded passage, and returning to the exact next position.
 
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,

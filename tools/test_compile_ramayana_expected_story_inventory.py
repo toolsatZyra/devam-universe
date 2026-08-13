@@ -65,19 +65,20 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
         counters = self.data["counters"]
         self.assertEqual(counters["selected_expression_story_cycles"], 49)
         self.assertEqual(counters["supplemental_expected_stories"], len(self.data["supplemental_rows"]))
-        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 10)
-        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 10)
+        self.assertEqual(counters["supplemental_rows_complete_en_hi"], 12)
+        self.assertEqual(counters["supplemental_rows_open"], len(self.data["supplemental_rows"]) - 12)
         self.assertEqual(self.data["completion_state"], "supplemental_expected_story_authoring_required")
 
-    def test_two_major_batches_project_exactly_ten_canonical_story_ids(self):
+    def test_three_major_batches_project_exactly_twelve_canonical_story_ids(self):
         completed = [row for row in self.data["supplemental_rows"] if row["coverage_state"] == "consumer_complete_en_hi"]
-        self.assertEqual(len(completed), 10)
-        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 10)
+        self.assertEqual(len(completed), 12)
+        self.assertEqual(len({row["consumer_story_id"] for row in completed}), 12)
         self.assertEqual(
             {row["consumer_story_pack_id"] for row in completed},
             {
                 "ramayana-expected-stories-beginnings-exile-v1",
                 "ramayana-expected-stories-war-messengers-v1",
+                "ramayana-expected-stories-uttarkanda-frames-v1",
             },
         )
         self.assertEqual(
@@ -85,6 +86,7 @@ class RamayanaExpectedStoryInventoryTest(unittest.TestCase):
             [
                 "knowledge_packs/library_lanes/ramayana/expected-stories-beginnings-exile-v1.json",
                 "knowledge_packs/library_lanes/ramayana/expected-stories-war-messengers-v1.json",
+                "knowledge_packs/library_lanes/ramayana/expected-stories-uttarkanda-frames-v1.json",
             ],
         )
 

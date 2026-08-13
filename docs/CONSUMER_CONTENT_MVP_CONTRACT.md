@@ -58,12 +58,20 @@ A selected expression is consumer-complete only when:
 Completeness does not require a screen per verse or section. It does require
 that no material story interval disappears behind a heading or a source count.
 
-### Short devotional or daily-reading work
+### Devotional or daily-reading work
 
-The complete text or selected lawful expression must be available in a readable
-sequence, with approachable English and Hindi meaning, a sensible daily unit,
-and optional audio/visual enrichment later. Source text and translation remain
-distinguishable internally even when the public surface is simple.
+These works are books or recitation sequences that people actually read from
+beginning to end. A story summary, selected quotation, search index, or
+story-world adaptation never completes this lane. The complete text or selected
+lawful expression must be available in canonical order, with approachable
+Hindi and English meaning and an exact saved position. Short works such as
+Hanuman Chalisa need both uninterrupted full recitation and an optional
+one-doha-or-chaupai daily path. Long works such as Ramcharitmanas need continuous
+reading plus source-bounded page, passage, and major-division progression so a
+reader may choose one unit a day or continue at any pace. Product labels use the
+work's actual units rather than calling every unit a Sanskrit shloka. Source
+text and Devam meaning remain distinguishable internally even when the public
+surface is simple; optional audio or visual enrichment comes later.
 
 ### Festival or ritual
 
@@ -110,12 +118,13 @@ temples, and 12 festivals or performance traditions. All 48 have substantial
 English and Hindi consumer context with story links and evidence boundaries.
 This completes the registered living-world authoring denominator only; the
 whole-journey continuity review remains open. The consumer-expected story
-checklist now names 71 rows: 49 complete selected-expression cycles, ten
-source-aligned Ramcharitmanas supplements completed through 94 bilingual
-episodes, and 12 open supplements across performance, regional, devotional,
+checklist now names 71 rows: 49 complete selected-expression cycles, twelve
+source-aligned Ramcharitmanas supplements completed through 140 bilingual
+episodes, and 10 open supplements across performance, regional, devotional,
 temple, and living-festival scopes. Broader Ramayana expressions remain separate
 denominators, and every supplement must be authored or explicitly excluded
-without being back-projected into Dutt. The payload-free
+without being back-projected into Dutt. Those 140 story episodes do not count
+toward the separate 1,158-page gapless Ramcharitmanas reading denominator. The payload-free
 source-term inventory is a supplementary way to find high-signal metadata gaps;
 its ordinary capitalized words, epithets, and spelling variants are not a
 consumer-story completion queue.
