@@ -68,6 +68,7 @@ import { RAMAYANA_WEDDINGS_CHALLENGE_PLAYABLE_SCENES } from "../../data/ramayana
 import { RAMAYANA_LAKSHMANA_JOINS_LIBRARY_SCENES } from "../../data/ramayana-lakshmana-joins-library-scenes";
 import { RAMAYANA_RAMA_ACCEPTS_EXILE_LIBRARY_SCENES } from "../../data/ramayana-rama-accepts-exile-library-scenes";
 import { RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES } from "../../data/ramayana-rambha-indra-library-scenes";
+import { RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES } from "../../data/ramayana-grief-search-library-scenes";
 import { RAMAYANA_COSMIC_CONQUESTS_LIBRARY_SCENES } from "../../data/ramayana-cosmic-conquests-library-scenes";
 import { RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES } from "../../data/ramayana-chitrakoot-approach-library-scenes";
 import { RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES } from "../../data/ramayana-sagara-ganga-library-scenes";
@@ -205,6 +206,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     "sagara-line-brings-ganga-down",
     "chitrakoot-hears-army",
     "rambha-curse-and-indras-capture",
+    "grief-searches-everywhere",
   ]);
   for (const [placeId, links] of Object.entries(playableDistrict.byMapPlaceId)) {
     const place = mapPlaceById.get(placeId);
@@ -277,6 +279,7 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     ...RAMAYANA_SAGARA_GANGA_LIBRARY_SCENES,
     ...RAMAYANA_CHITRAKOOT_APPROACH_LIBRARY_SCENES,
     ...RAMAYANA_RAMBHA_INDRA_LIBRARY_SCENES,
+    ...RAMAYANA_GRIEF_SEARCH_LIBRARY_SCENES,
   ]) {
     const turn = pack.compass.turns[scene.turnId];
     if (!turn) throw new Error(`Ramayana library scene has no backbone turn: ${scene.id}`);
@@ -286,7 +289,9 @@ export function buildRamayanaNarrativeSnapshot(): RamayanaNarrativeSnapshot {
     if (scene.spanSha256s.length !== scene.sourceEnd - scene.sourceStart + 1) {
       throw new Error(`Ramayana library scene has an incomplete source-span set: ${scene.id}`);
     }
-    if (["bala", "uttara"].includes(turn.sourceRange.kandaSlug)) {
+    const hasCompleteRegisteredSpans = ["bala", "uttara"].includes(turn.sourceRange.kandaSlug)
+      || (turn.sourceRange.kandaSlug === "aranya" && scene.sourceStart >= 54 && scene.sourceEnd <= 68);
+    if (hasCompleteRegisteredSpans) {
       const expectedSpanSha256s = getDuttKandaSpanSha256s(
         turn.sourceRange.kandaSlug,
         scene.sourceStart,
