@@ -189,6 +189,25 @@ required. A one-page, one-passage, one-doha, or one-chaupai daily path is an
 optional pace through the complete book, never a substitute for it. See
 docs/RAMCHARITMANAS_AYODHYAKANDA_79_142_READING_AUDIT_2026-08-14.md.
 
+Checkpoint 2026-08-14 (Ayodhyakanda 143-188 Ramcharitmanas reading batch):
+The forward reading tail now covers Sumantra's empty-chariot return, Dasharatha's
+last conversation and death, the concealed summons to Bharata, Bharata's return
+and rejection of an unchosen crown, Shatrughna's assault on Manthara and
+Bharata's intervention, Kausalya's recognition of Bharata's non-complicity,
+Dasharatha's funeral, the succession council, and Ayodhya's departure toward
+Chitrakoot through the Tamasa and Gomati halts. The batch contains 46 natural
+passages and 232 exact ordered source units with fresh Hindi and English meaning
+on fixed scan pages 568-609. The cumulative reviewed set is 258 passages and
+1,329 units through doha 188; group 189 begins the next Guha-conflict arc. The
+review bounds acute grief and self-condemnation, concealed information,
+misogynistic and disability-directed abuse, physical assault, caste and gender
+rhetoric, dangerous obedience examples, monarchy, succession pressure, funeral
+rites, omens, and divine claims. Bharata's absence, lack of consent, crown
+refusal, intervention against further violence, and practical protection of
+Ayodhya remain explicit. The existing reading schema remains sufficient, so no
+new migration or hosted mutation was needed. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_143_188_READING_AUDIT_2026-08-14.md.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic

@@ -55,15 +55,15 @@ class RamcharitmanasAyodhyakanda12To22Tests(unittest.TestCase):
 
     def test_contract_and_inventories_agree_on_cumulative_boundary(self) -> None:
         progress = self.contract["canonical_reading_progress"]
-        self.assertEqual(progress["completed_passages"], 212)
-        self.assertEqual(progress["completed_source_units"], 1097)
-        self.assertEqual(len(progress["completed_contiguous_batches"]), 6)
+        self.assertEqual(progress["completed_passages"], 258)
+        self.assertEqual(progress["completed_source_units"], 1329)
+        self.assertEqual(len(progress["completed_contiguous_batches"]), 7)
         this_batch = progress["completed_contiguous_batches"][2]
         self.assertEqual((this_batch["canonical_group_start"], this_batch["canonical_group_end"]), (12, 22))
         mvp_lane = next(row for row in self.mvp["lanes"] if row["lane_id"] == "ramcharitmanas-daily-reading")
         coverage_lane = next(row for row in self.coverage["collections"] if row["collection_id"] == "ramcharitmanas-daily-reading")
-        self.assertEqual(mvp_lane["current"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 142")
-        self.assertEqual(coverage_lane["denominator"]["completed_source_units"], 1097)
+        self.assertEqual(mvp_lane["current"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 188")
+        self.assertEqual(coverage_lane["denominator"]["completed_source_units"], 1329)
         self.assertEqual(coverage_lane["completion"]["consumer_complete_full_kandas"], 0)
 
     def test_existing_schema_supports_sequence_and_exact_resume_without_payload_copy(self) -> None:
