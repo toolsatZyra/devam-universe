@@ -150,6 +150,23 @@ payload SQL or hosted mutation was required. Future authoring should use whole
 works, whole kandas, or large coherent arcs and one shared validation pass,
 rather than repeated tiny release-style batches.
 
+Checkpoint 2026-08-14 (Ayodhyakanda 40-78 Ramcharitmanas reading batch):
+The forward reading tail now advances in one coherent family-decision arc from
+Kaikeyi stating the binding command through Rama's acceptance, Ayodhya and
+Dasharatha's grief, Rama's disclosure to Kaushalya, Sita's informed insistence
+on accompanying him, Lakshmana's request and Sumitra's counsel, and the three
+returning to Dasharatha. It stops at doha 78 when Dasharatha asks Sita to remain
+in Ayodhya, before her reply and the final departure preparations. The batch
+contains 39 passages and 197 exact source-ordered units with fresh Hindi and
+English meaning on fixed scan pages 466-504. The cumulative corrected set is
+now 148 passages and 775 source units; no kanda or complete work is claimed.
+The review preserves Bharata's absent consent, Sita's stated choice, period
+misogyny and caste/class stereotypes, devotional family ideals, grief and death
+language, and attributed karma or supernatural claims without converting them
+into modern advice. The reusable payload-free reading schema remains
+sufficient and no hosted service was changed. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_40_78_READING_AUDIT_2026-08-14.md.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic

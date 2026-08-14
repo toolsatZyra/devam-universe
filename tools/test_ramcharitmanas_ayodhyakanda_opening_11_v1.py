@@ -47,10 +47,10 @@ class RamcharitmanasAyodhyakandaOpening11Tests(unittest.TestCase):
 
     def test_contract_counts_and_forward_endpoint_match(self) -> None:
         progress = self.contract["canonical_reading_progress"]
-        self.assertEqual(progress["completed_passages"], 109)
-        self.assertEqual(progress["completed_source_units"], 578)
+        self.assertEqual(progress["completed_passages"], 148)
+        self.assertEqual(progress["completed_source_units"], 775)
         self.assertEqual(progress["completed_full_divisions"], 0)
-        self.assertEqual(len(progress["completed_contiguous_batches"]), 4)
+        self.assertEqual(len(progress["completed_contiguous_batches"]), 5)
         opening = progress["completed_contiguous_batches"][1]
         self.assertEqual(opening["canonical_group_start"], "invocation")
         self.assertEqual(opening["canonical_group_end"], 11)
@@ -59,12 +59,12 @@ class RamcharitmanasAyodhyakandaOpening11Tests(unittest.TestCase):
     def test_inventories_match_the_reviewed_selected_scope(self) -> None:
         mvp_lane = next(row for row in self.mvp["lanes"] if row["lane_id"] == "ramcharitmanas-daily-reading")
         coverage_lane = next(row for row in self.coverage["collections"] if row["collection_id"] == "ramcharitmanas-daily-reading")
-        self.assertEqual(mvp_lane["current"]["consumer_complete_contiguous_passages"], 109)
-        self.assertEqual(mvp_lane["current"]["consumer_complete_source_units"], 578)
-        self.assertEqual(mvp_lane["current"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 39")
-        self.assertEqual(coverage_lane["denominator"]["completed_contiguous_passages"], 109)
-        self.assertEqual(coverage_lane["denominator"]["completed_source_units"], 578)
-        self.assertEqual(coverage_lane["denominator"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 39")
+        self.assertEqual(mvp_lane["current"]["consumer_complete_contiguous_passages"], 148)
+        self.assertEqual(mvp_lane["current"]["consumer_complete_source_units"], 775)
+        self.assertEqual(mvp_lane["current"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 78")
+        self.assertEqual(coverage_lane["denominator"]["completed_contiguous_passages"], 148)
+        self.assertEqual(coverage_lane["denominator"]["completed_source_units"], 775)
+        self.assertEqual(coverage_lane["denominator"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 78")
         self.assertFalse(mvp_lane["current"]["complete_end_to_end_reading_available"])
         self.assertEqual(coverage_lane["completion"]["consumer_complete_full_kandas"], 0)
 

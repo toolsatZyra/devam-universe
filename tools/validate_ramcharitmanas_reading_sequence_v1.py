@@ -94,8 +94,9 @@ def validate_sequence() -> dict[str, Any]:
 
     if total_passages != progress["completed_passages"] or total_units != progress["completed_source_units"]:
         raise ValueError("cumulative reading denominator drift")
-    if ayodhya_groups != list(range(1, 40)):
-        raise ValueError("Ayodhyakanda forward sequence must be gapless through group 39")
+    ayodhya_forward_endpoint = max(ayodhya_groups)
+    if ayodhya_groups != list(range(1, ayodhya_forward_endpoint + 1)):
+        raise ValueError(f"Ayodhyakanda forward sequence must be gapless through group {ayodhya_forward_endpoint}")
     modes = {row["mode_id"]: row for row in contract["reading_modes"]}
     required_modes = {
         "complete_work_continuous", "one_page_daily", "short_passage_daily",
@@ -111,7 +112,7 @@ def validate_sequence() -> dict[str, Any]:
         "reviewed_packs": reviewed_packs,
         "completed_passages": total_passages,
         "completed_source_units": total_units,
-        "ayodhya_forward_endpoint": 39,
+        "ayodhya_forward_endpoint": ayodhya_forward_endpoint,
         "complete_full_kandas": progress["completed_full_divisions"],
         "complete_work": False,
     }
