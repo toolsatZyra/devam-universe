@@ -12,15 +12,16 @@ MIGRATION_PATH = ROOT / "supabase/migrations/20260814040000_add_devotional_readi
 FAMILY_ARC_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-40-78-v1.json"
 JOURNEY_ARC_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-79-142-v1.json"
 RETURN_ARC_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-143-188-v1.json"
+BHARATA_JOURNEY_PATH = ROOT / "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-189-225-v1.json"
 
 
 class RamcharitmanasReadingSequenceTests(unittest.TestCase):
     def test_all_registered_batches_share_one_gapless_sequence(self) -> None:
         result = validate_sequence()
         self.assertEqual(result["result"], "PASS")
-        self.assertEqual(result["completed_passages"], 258)
-        self.assertEqual(result["completed_source_units"], 1329)
-        self.assertEqual(result["ayodhya_forward_endpoint"], 188)
+        self.assertEqual(result["completed_passages"], 295)
+        self.assertEqual(result["completed_source_units"], 1516)
+        self.assertEqual(result["ayodhya_forward_endpoint"], 225)
         self.assertEqual(result["complete_full_kandas"], 0)
         self.assertFalse(result["complete_work"])
 
@@ -71,9 +72,9 @@ class RamcharitmanasReadingSequenceTests(unittest.TestCase):
         coverage = json.loads(COVERAGE_PATH.read_text(encoding="utf-8"))
         mvp_lane = next(row for row in mvp["lanes"] if row["lane_id"] == "ramcharitmanas-daily-reading")
         coverage_lane = next(row for row in coverage["collections"] if row["collection_id"] == "ramcharitmanas-daily-reading")
-        self.assertEqual(mvp_lane["current"]["consumer_complete_source_units"], 1329)
-        self.assertEqual(coverage_lane["denominator"]["completed_source_units"], 1329)
-        self.assertEqual(mvp_lane["current"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 188")
+        self.assertEqual(mvp_lane["current"]["consumer_complete_source_units"], 1516)
+        self.assertEqual(coverage_lane["denominator"]["completed_source_units"], 1516)
+        self.assertEqual(mvp_lane["current"]["contiguous_forward_endpoint"], "Ayodhyakanda doha 225")
         migration = MIGRATION_PATH.read_text(encoding="utf-8")
         for token in ("reading_sequences", "reading_passages", "reading_units", "user_reading_progress", "last_completed_unit_key"):
             self.assertIn(token, migration)
@@ -101,6 +102,28 @@ class RamcharitmanasReadingSequenceTests(unittest.TestCase):
         for term in ("lack of consent", "misogynistic", "not normalized", "or universal"):
             self.assertIn(term, combined)
         self.assertNotIn("तेहि पर देन कहहु तुम्ह टीका॥ तेहि पर देन", combined)
+
+    def test_guha_prayag_and_kamadgiri_arc_is_complete(self) -> None:
+        pack = json.loads(BHARATA_JOURNEY_PATH.read_text(encoding="utf-8"))
+        passages = pack["passages"]
+        units = [unit for passage in passages for unit in passage["source_units"]]
+        self.assertEqual([int(row["canonical_group_label"]) for row in passages], list(range(189, 226)))
+        self.assertEqual(len(passages), 37)
+        self.assertEqual(len(units), 187)
+        self.assertEqual(passages[0]["source_locator"]["scan_pages"], [610])
+        self.assertEqual(passages[-1]["source_locator"]["scan_pages"], [644])
+        self.assertTrue(all(len(row["meaning"]["en"]) >= 180 for row in passages))
+        self.assertTrue(all(len(row["meaning"]["hi"]) >= 160 for row in passages))
+        self.assertTrue(all(row["source_units"][-1]["unit_kind"] in {"doha", "soratha"} for row in passages))
+        self.assertEqual([unit["batch_unit_ordinal"] for unit in units], list(range(1, 188)))
+        self.assertTrue(all(
+            [evidence["scan_page"] for evidence in row["source_locator"]["page_evidence"]]
+            == row["source_locator"]["scan_pages"] for row in passages
+        ))
+        combined = json.dumps(passages, ensure_ascii=False).lower()
+        for term in ("mistaken suspicion", "not normalized", "traditional", "variant"):
+            self.assertIn(term, combined)
+        self.assertNotIn("discovery_meaning_en", combined)
 
 
 if __name__ == "__main__":

@@ -208,6 +208,26 @@ Ayodhya remain explicit. The existing reading schema remains sufficient, so no
 new migration or hosted mutation was needed. See
 docs/RAMCHARITMANAS_AYODHYAKANDA_143_188_READING_AUDIT_2026-08-14.md.
 
+Checkpoint 2026-08-14 (Ayodhyakanda 189-225 Ramcharitmanas reading batch):
+The forward reading tail now covers Guha's mistaken alarm and defensive
+preparations, his decision to verify Bharata's intent, Bharata's embrace of
+Guha, Ramghat and the former grass bed, the Ganga crossing, Prayag and the
+Triveni prayer, Bharadwaja's reassurance and miraculous hospitality, the
+Indra-Brihaspati exchange, the Yamuna crossing, village conversations, route
+memory, and the first sight of Kamadgiri. The batch contains 37 natural passages
+and 187 exact ordered source units with fresh Hindi and English meaning on
+fixed scan pages 610-644. The cumulative reviewed set is 295 passages and 1,516
+units through doha 225; group 226 begins Sita's dream and the news of Bharata's
+arrival. The review bounds mistaken suspicion, preemptive violence and
+self-sacrifice rhetoric, caste stigma and period community labels, monarchy,
+omens, sacred-water prayer, supernatural voices and hospitality, devotional
+absolutes, ascetic deprivation, royal labour and environmental burden, and
+celestial pleasure imagery. The standard normalized doha-218 reading remains
+the selected expression while the additional line displayed in the old scan is
+retained only as variant evidence. The existing payload-free reading schema
+remains sufficient, so no migration or hosted mutation was needed. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_189_225_READING_AUDIT_2026-08-14.md.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
