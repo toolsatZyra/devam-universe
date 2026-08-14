@@ -36,6 +36,7 @@ def validate_sequence() -> dict[str, Any]:
     all_passage_ids: set[str] = set()
     all_unit_ids: set[str] = set()
     ayodhya_groups: list[int] = []
+    ayodhya_passages: list[dict[str, Any]] = []
     reviewed_packs: list[str] = []
 
     for batch in batches:
@@ -83,11 +84,12 @@ def validate_sequence() -> dict[str, Any]:
                     raise ValueError(f"source unit scan drift: {unit['unit_id']}")
 
         if batch["division"] == "Ayodhyakanda":
-            ayodhya_groups.extend(
-                int(passage["canonical_group_label"])
-                for passage in passages
+            numbered = [
+                passage for passage in passages
                 if passage["canonical_group_label"] != "invocation"
-            )
+            ]
+            ayodhya_groups.extend(int(passage["canonical_group_label"]) for passage in numbered)
+            ayodhya_passages.extend(passages)
         total_passages += len(passages)
         total_units += len(units)
         reviewed_packs.append(batch["pack"])
@@ -97,6 +99,13 @@ def validate_sequence() -> dict[str, Any]:
     ayodhya_forward_endpoint = max(ayodhya_groups)
     if ayodhya_groups != list(range(1, ayodhya_forward_endpoint + 1)):
         raise ValueError(f"Ayodhyakanda forward sequence must be gapless through group {ayodhya_forward_endpoint}")
+    for index, passage in enumerate(ayodhya_passages):
+        expected_previous = None if index == 0 else ayodhya_passages[index - 1]["passage_id"]
+        expected_next = None if index == len(ayodhya_passages) - 1 else ayodhya_passages[index + 1]["passage_id"]
+        if passage["previous_passage_id"] != expected_previous:
+            raise ValueError(f"Ayodhyakanda previous-link drift: {passage['passage_id']}")
+        if passage["next_passage_id"] != expected_next:
+            raise ValueError(f"Ayodhyakanda next-link drift: {passage['passage_id']}")
     modes = {row["mode_id"]: row for row in contract["reading_modes"]}
     required_modes = {
         "complete_work_continuous", "one_page_daily", "short_passage_daily",

@@ -19,7 +19,7 @@ SEQUENCE_KEY = "ramcharitmanas-belvedere-normalized-reading-v1"
 SCAN_SHA256 = "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2"
 PLAN_SHA256 = "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab"
 REPORT_SHA256 = "8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c"
-EXPECTED_PACK_SHA256 = "62be80a3a93140a1c1b748b0e4b62ec02539e94f2fa6016f5d821b0ffc4ffc5b"
+EXPECTED_PACK_SHA256 = "7fe1b8672d4e54380f1774b25dc27e9bb75f3bf25e5eb965b56f3b9bd6596582"
 EXPECTED_PAGE_MAP = {
     12: [436, 437], 13: [437, 438], 14: [438, 439],
     15: [439, 440], 16: [440, 441], 17: [441, 442],
@@ -88,8 +88,8 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
     for index, passage in enumerate(passages):
         group = groups[index]
         expected_id = f"ramcharitmanas-ayodhyakanda-{group:04d}"
-        previous_id = None if group == 12 else f"ramcharitmanas-ayodhyakanda-{group - 1:04d}"
-        next_id = None if group == 22 else f"ramcharitmanas-ayodhyakanda-{group + 1:04d}"
+        previous_id = f"ramcharitmanas-ayodhyakanda-{group - 1:04d}"
+        next_id = f"ramcharitmanas-ayodhyakanda-{group + 1:04d}"
         if passage["passage_id"] != expected_id or passage["source_order_key"] != f"02:{group:04d}":
             raise ValueError(f"passage identity or order drift at {group}")
         if passage["previous_passage_id"] != previous_id or passage["next_passage_id"] != next_id:

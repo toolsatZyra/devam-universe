@@ -87,7 +87,10 @@ the forward endpoint Ayodhyakanda doha 22. Full-work and daily-reading
 availability remain false until the complete sequence exists.
 
 Reviewed pack SHA-256:
-`62be80a3a93140a1c1b748b0e4b62ec02539e94f2fa6016f5d821b0ffc4ffc5b`.
+`7fe1b8672d4e54380f1774b25dc27e9bb75f3bf25e5eb965b56f3b9bd6596582`.
+The fixity was refreshed when reviewed neighbouring batches supplied the valid
+backward link to group 11 and forward link to group 23; source text and meaning
+did not change.
 
 ## Validation
 

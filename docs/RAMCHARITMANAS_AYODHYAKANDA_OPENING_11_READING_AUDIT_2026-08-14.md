@@ -100,7 +100,9 @@ and daily-reading availability remain false until the complete sequence exists;
 progress persistence remains product work.
 
 Reviewed pack SHA-256:
-`8d6c92a814d37e1e98aa523ab7ca1ecdcbc8e282bfbc4f7f1c03ad9c8275cbb3`.
+`8da80f7e73162bc3b937f9c88986648afe649bc709abe7fb237ca1e0fb73e86a`.
+The fixity was refreshed when the later reviewed batch supplied the now-valid
+forward link from group 11 to group 12; source text and meaning did not change.
 
 ## Validation
 

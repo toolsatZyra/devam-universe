@@ -167,6 +167,28 @@ into modern advice. The reusable payload-free reading schema remains
 sufficient and no hosted service was changed. See
 docs/RAMCHARITMANAS_AYODHYAKANDA_40_78_READING_AUDIT_2026-08-14.md.
 
+Checkpoint 2026-08-14 (Ayodhyakanda 79-142 Ramcharitmanas reading batch):
+The forward reading tail now advances through the whole departure-and-settlement
+journey: the family leaves Dasharatha's palace; Ayodhya follows to the Tamasa;
+Rama leaves the sleeping citizens; Guha hosts and guards the travellers;
+Lakshmana's night teaching, Sumantra's plea, Sita's repeated choice, Kevat's
+crossing, Prayag, Yamuna, roadside communities, Valmiki's inward and practical
+answers, and Chitrakoot settlement remain in source order. The narrator then
+turns back to Sumantra and the empty chariot at doha 142. The batch contains 64
+natural passages and 322 exact source-ordered units with fresh Hindi and English
+meaning on fixed scan pages 504-567. The cumulative corrected set is now 212
+passages and 1,097 source units; no kanda or complete work is claimed. The review
+preserves Sita's stated agency; Guha's, Kevat's, Kol and Kirat communities' local
+knowledge and voluntary choices; period hierarchy, gender and caste language;
+grief and death speech; devotional philosophy, sacred geography, and
+supernatural claims without turning them into modern advice, unpaid-labour
+expectations, verified geography, or scientific history. The reusable
+payload-free reading schema still supports full-work, page, passage, source-unit,
+kanda, and exact-resume modes, so no migration payload or hosted mutation was
+required. A one-page, one-passage, one-doha, or one-chaupai daily path is an
+optional pace through the complete book, never a substitute for it. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_79_142_READING_AUDIT_2026-08-14.md.
+
 The current Ramayana implementation now carries one complete Dutt English
 expression with 652 source-ordered units derived from its printed headings,
 whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic

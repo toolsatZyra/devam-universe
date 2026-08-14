@@ -20,7 +20,7 @@ SEQUENCE_KEY = "ramcharitmanas-belvedere-normalized-reading-v1"
 SCAN_SHA256 = "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2"
 PLAN_SHA256 = "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab"
 REPORT_SHA256 = "8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c"
-EXPECTED_PACK_SHA256 = "8d6c92a814d37e1e98aa523ab7ca1ecdcbc8e282bfbc4f7f1c03ad9c8275cbb3"
+EXPECTED_PACK_SHA256 = "8da80f7e73162bc3b937f9c88986648afe649bc709abe7fb237ca1e0fb73e86a"
 
 EXPECTED_PAGE_MAP = {
     "invocation": [425, 426],
@@ -101,7 +101,11 @@ def validate_pack(pack: dict[str, Any]) -> dict[str, Any]:
         order_group = 0 if label == "invocation" else int(label)
         expected_id = "ramcharitmanas-ayodhyakanda-invocation" if label == "invocation" else f"ramcharitmanas-ayodhyakanda-{int(label):04d}"
         expected_previous = None if index == 0 else passages[index - 1]["passage_id"]
-        expected_next = None if index == len(passages) - 1 else ("ramcharitmanas-ayodhyakanda-0001" if label == "invocation" else f"ramcharitmanas-ayodhyakanda-{int(label) + 1:04d}")
+        expected_next = (
+            "ramcharitmanas-ayodhyakanda-0012"
+            if index == len(passages) - 1
+            else ("ramcharitmanas-ayodhyakanda-0001" if label == "invocation" else f"ramcharitmanas-ayodhyakanda-{int(label) + 1:04d}")
+        )
         if passage["passage_id"] != expected_id or passage["source_order_key"] != f"02:{order_group:04d}":
             raise ValueError(f"passage identity or order drift at {label}")
         if passage["previous_passage_id"] != expected_previous or passage["next_passage_id"] != expected_next:
