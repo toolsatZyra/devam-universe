@@ -1,0 +1,200 @@
+{
+  "contract": "DEVAM_RAMCHARITMANAS_END_TO_END_READING_V1",
+  "version": 1,
+  "authored_at": "2026-08-13",
+  "work": {
+    "slug": "ramcharitmanas",
+    "title": { "en": "Ramcharitmanas", "hi": "रामचरितमानस" },
+    "attribution": "Traditionally attributed to Goswami Tulsidas",
+    "primary_language_note": "The work is principally Awadhi in Devanagari; approachable Hindi and English meaning are separate consumer layers."
+  },
+  "purpose": "Let a reader complete the source work in canonical order at their own pace, with optional one-fixed-edition-page, one-meaningful-passage, one-natural-source-unit, or one-kanda pacing, instead of encountering disconnected summaries or compulsory historical commentary.",
+  "authoritative_source_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
+  "source_denominator": {
+    "scan_coordinates": 1172,
+    "text_bearing_pages": 1158,
+    "structural_blank_pages": 14,
+    "prepared_product_passages": 813,
+    "held_text_bearing_pages": 345,
+    "sopanas_or_kandas": 7,
+    "partition_invariant": "Every source-text interval in the selected expression must appear once in canonical order. The 1,158 text-bearing fixed-scan pages and 14 structural blanks preserve pagination and evidence coordinates; the edition's old commentary is an optional historical layer, not part of the consumer source-work completion denominator."
+  },
+  "canonical_reading_progress": {
+    "completed_contiguous_batches": [
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-balakanda-293-361-v1.json",
+        "division": "Balakanda",
+        "canonical_group_start": 293,
+        "canonical_group_end": 361,
+        "passages": 69,
+        "source_units": 377,
+        "bilingual_meanings": 69,
+        "fixed_scan_pages": [354, 424],
+        "reaches_division_end": true,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval_reaching_balakanda_end"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-opening-11-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": "invocation",
+        "canonical_group_end": 11,
+        "passages": 12,
+        "source_units": 59,
+        "bilingual_meanings": 12,
+        "fixed_scan_pages": [425, 436],
+        "reaches_division_start": true,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval_beginning_ayodhyakanda"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-12-22-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 12,
+        "canonical_group_end": 22,
+        "passages": 11,
+        "source_units": 55,
+        "bilingual_meanings": 11,
+        "fixed_scan_pages": [436, 447],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-23-39-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 23,
+        "canonical_group_end": 39,
+        "passages": 17,
+        "source_units": 87,
+        "bilingual_meanings": 17,
+        "fixed_scan_pages": [447, 465],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-40-78-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 40,
+        "canonical_group_end": 78,
+        "passages": 39,
+        "source_units": 197,
+        "bilingual_meanings": 39,
+        "fixed_scan_pages": [466, 504],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-79-142-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 79,
+        "canonical_group_end": 142,
+        "passages": 64,
+        "source_units": 322,
+        "bilingual_meanings": 64,
+        "fixed_scan_pages": [504, 567],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-143-188-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 143,
+        "canonical_group_end": 188,
+        "passages": 46,
+        "source_units": 232,
+        "bilingual_meanings": 46,
+        "fixed_scan_pages": [568, 609],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      },
+      {
+        "pack": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-189-225-v1.json",
+        "division": "Ayodhyakanda",
+        "canonical_group_start": 189,
+        "canonical_group_end": 225,
+        "passages": 37,
+        "source_units": 187,
+        "bilingual_meanings": 37,
+        "fixed_scan_pages": [610, 644],
+        "reaches_division_start": false,
+        "reaches_division_end": false,
+        "complete_division": false,
+        "state": "consumer_complete_en_hi_for_selected_contiguous_interval"
+      }
+    ],
+    "completed_passages": 295,
+    "completed_source_units": 1516,
+    "completed_full_divisions": 0,
+    "work_wide_natural_passage_denominator": "discovery_and_reconciliation_in_progress",
+    "boundary": "The corrected forward tail now runs continuously from Balakanda group 293 through its closing soratha and into Ayodhyakanda's invocation and groups 1-225. It follows Bharata from Ayodhya through Guha's mistaken alarm, Ramghat and Prayag, Bharadwaja's welcome, the Indra-Brihaspati exchange, and the approach to Kamadgiri, stopping before Sita's dream and news of Bharata begin in group 226. It completes no kanda because Balakanda groups 1-292 and the rest of Ayodhyakanda are absent, and it does not complete the work. The complete book is the product; a page, passage, doha, chaupai, source unit, or kanda is an optional pace through it. The 345-page q1 count remains a raw page/commentary transcription-quality counter, not the remaining consumer source-text denominator."
+  },
+  "reading_modes": [
+    {
+      "mode_id": "complete_work_continuous",
+      "label": { "en": "Read from beginning to end", "hi": "आरंभ से अंत तक पढ़ें" },
+      "unit": "canonical_source_text_sequence_with_page_and_passage_views",
+      "progression": "first_source_unit_to_last_without_gaps",
+      "availability": "pending_complete_text_correction",
+      "boundary": "The mode cannot be called complete until every source-text interval in all seven kandas is corrected and ordered. Historical commentary transcription is optional."
+    },
+    {
+      "mode_id": "one_page_daily",
+      "label": { "en": "One page a day", "hi": "प्रतिदिन एक पृष्ठ" },
+      "unit": "source_ordered_text_bearing_page",
+      "progression": "next_unread_page",
+      "availability": "pending_complete_text_correction",
+      "boundary": "A page is tied to this fixed source carrier; another edition may paginate the work differently. Page mode presents the source text on that page and does not force readers through the edition's old commentary."
+    },
+    {
+      "mode_id": "short_passage_daily",
+      "label": { "en": "One short passage a day", "hi": "प्रतिदिन एक छोटा पाठ" },
+      "unit": "meaningful_source_bounded_passage",
+      "progression": "source_order_after_segmentation",
+      "availability": "segmentation_pending",
+      "boundary": "Doha, chaupai and surrounding context must not be split in a way that breaks meaning merely to fit a fixed length."
+    },
+    {
+      "mode_id": "one_source_unit_daily",
+      "label": { "en": "One source unit a day", "hi": "प्रतिदिन एक पाठ-इकाई" },
+      "unit": "canonically_ordered_source_unit_with_containing_passage_context",
+      "progression": "next_unread_source_unit",
+      "availability": "selected_batch_available_work_completion_pending",
+      "boundary": "A reader may stop after one chaupai, doha, soratha, chhand, or other retained natural source unit, but the product keeps the surrounding passage and its Hindi and English meaning available so that a line is not stripped of context."
+    },
+    {
+      "mode_id": "kanda_progression",
+      "label": { "en": "Read kanda by kanda", "hi": "काण्ड-दर-काण्ड पढ़ें" },
+      "unit": "one_of_seven_source_divisions",
+      "progression": "1_to_7",
+      "availability": "pending_complete_text_correction",
+      "boundary": "The seven divisions vary greatly in length; the product does not imply that each must be completed in one day."
+    },
+    {
+      "mode_id": "resume_exact_position",
+      "label": { "en": "Continue where I stopped", "hi": "जहाँ रुके थे वहीं से आगे पढ़ें" },
+      "unit": "source_position",
+      "progression": "saved_last_completed_unit_plus_one",
+      "availability": "product_persistence_pending",
+      "boundary": "Saved progress is user-controlled product state and must not be inferred from ritual obligation or calendar date."
+    }
+  ],
+  "consumer_layers": {
+    "primary_reading": "source text in source order",
+    "required_companions": ["approachable_hindi_meaning", "approachable_english_meaning"],
+    "optional_on_demand": ["source_identity", "variant_note", "provenance", "uncertainty"],
+    "default_hidden": ["source_hash", "ocr_diagnostics", "edition_comparison", "verse_count_audit"]
+  },
+  "completion_state": "canonical_source_sequence_and_bilingual_meaning_authoring",
+  "completion_rule": "Complete only when the entire selected Ramcharitmanas source text can be read from beginning to end in exact canonical order, every meaningful passage has usable Hindi and English meaning, page, passage, source-unit and kanda pacing never breaks the sequence, and all modes preserve the same exact resume position. Old-edition commentary is optional reference material; Story summaries and story-world episode packs never satisfy this reading denominator."
+}

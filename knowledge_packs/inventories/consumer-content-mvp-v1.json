@@ -1,0 +1,171 @@
+{
+  "contract": "DEVAM_CONSUMER_CONTENT_MVP_V1",
+  "snapshot_date": "2026-08-14",
+  "audience": "Ordinary Hindi- or English-speaking Indian adults accustomed to mobile content and game-like exploration.",
+  "default_experience": "Complete approachable stories and practical living-culture guidance. Source and scholarly apparatus is deliberate progressive disclosure.",
+  "boundary": "This inventory is the selected consumer MVP backlog, not a census or completeness percentage for Sanatana Dharma, Indian culture, or Indian wisdom.",
+  "consumer_record_contract": {
+    "languages": ["hi", "en"],
+    "story_fields": ["title", "synopsis", "narrative", "action", "motivation", "consequence"],
+    "navigation_fields": ["characters", "places", "precedes", "follows", "living_connections"],
+    "default_hidden_internal_fields": ["source_hashes", "edition_comparison", "verse_counts", "citations", "scholarly_disputes"],
+    "disclosure_boundary": "Internal grounding remains available to deliberate source and why actions, but it is not default story chrome. Material safety, applicability, uncertainty, or disagreement is surfaced when hiding it would mislead the user."
+  },
+  "lanes": [
+    {
+      "priority": 1,
+      "lane_id": "ramayana-consumer-story",
+      "status": "consumer_complete_en_hi_selected_v1_scope",
+      "required_outcome": "A beginning-to-end English and Hindi Ramayana story backbone shared by Atlas, Search, and Sarthi.",
+      "current": {
+        "selected_expression_source_units": 652,
+        "expected_story_checklist": "knowledge_packs/inventories/ramayana-expected-story-checklist-v1.json",
+        "expected_story_rows": 71,
+        "selected_expression_rows_complete_en_hi": 49,
+        "supplemental_expected_story_rows_complete_en_hi": 22,
+        "supplemental_expected_story_rows_open": 0,
+        "whole_story_turns": 49,
+        "playable_turns": 49,
+        "outlined_turns": 0,
+        "orientation_only_turns": 0,
+        "playable_scenes": 517,
+        "draft_scene_outlines": 0,
+        "bilingual_beats": 2340,
+        "supplemental_bilingual_episode_beats": 220,
+        "total_selected_and_supplemental_bilingual_narrative_units": 2560,
+        "scenes_with_place_paths": 517,
+        "story_order_links": 516,
+        "character_path_links": 94,
+        "place_echo_links": 50,
+        "parallel_thread_links": 22,
+        "living_atlas_connections": 6,
+        "registered_living_places": 18,
+        "registered_temples": 18,
+        "registered_festivals_and_performances": 12,
+        "registered_living_items_complete_en_hi": 48,
+        "public_rpc_returns_multidimensional_connections": true,
+        "database_projection_migration_prepared": true,
+        "hosted_database_projection_applied": false
+      },
+      "next_boundary": "The consolidated Ramayana v1 continuity and adversarial review passes in docs/RAMAYANA_EXPECTED_STORY_V1_ADVERSARIAL_REVIEW_2026-08-14.md. Preserve the selected-scope boundary while wider expressions receive their own denominators. The 220 supplemental episodes do not increment the separate 1,158-page Ramcharitmanas reading denominator, and hosted database mutation remains separately authorized work."
+    },
+    {
+      "priority": 2,
+      "lane_id": "ramcharitmanas-daily-reading",
+      "status": "canonical_reading_sequence_authoring",
+      "required_outcome": "The complete Ramcharitmanas in canonical source order, readable from beginning to end with exact resume, plus optional one-page, one-source-unit, short-passage, and kanda pacing modes and approachable Hindi and English meaning. Excerpts or story adaptations never complete this lane.",
+      "current": {
+        "reading_contract": "knowledge_packs/devotional/ramcharitmanas-reading-contract-v1.json",
+        "fixed_narrative_pages": 1172,
+        "text_bearing_pages": 1158,
+        "prepared_narrative_pages": 813,
+        "held_text_bearing_pages": 345,
+        "structural_blank_scan_pages": 14,
+        "q1_pages_dual_witness_screened": 345,
+        "q1_pages_promoted": 0,
+        "consumer_complete_contiguous_passages": 295,
+        "consumer_complete_source_units": 1516,
+        "consumer_complete_bilingual_meanings": 295,
+        "first_completed_interval": "knowledge_packs/devotional/ramcharitmanas-balakanda-293-361-v1.json",
+        "latest_completed_interval": "knowledge_packs/devotional/ramcharitmanas-ayodhyakanda-189-225-v1.json",
+        "contiguous_interval_reaches_balakanda_end": true,
+        "contiguous_forward_endpoint": "Ayodhyakanda doha 225",
+        "consumer_complete_full_kandas": 0,
+        "defined_reading_modes": 6,
+        "complete_end_to_end_reading_available": false,
+        "daily_reading_available": false,
+        "resume_persistence_available": false
+      },
+      "next_boundary": "The corrected forward tail now reaches Ayodhyakanda doha 225 after Guha's mistaken alarm, Bharata's meeting with Guha, Ramghat and Prayag, Bharadwaja's welcome, the Indra-Brihaspati exchange, and the approach to Kamadgiri. Continue from group 226 while separately backfilling missing Balakanda groups 1-292; reconcile large coherent intervals against the fixed scan and create fresh Hindi and English meaning for every natural passage. Then verify one gapless beginning-to-end work with full-work, page, passage, source-unit, kanda, and exact-resume modes. The complete book is the product; a page, passage, doha, chaupai, source unit, or kanda per day is only optional pacing. The 345 q1 pages remain a raw page/commentary quality counter; old commentary restoration is not a consumer completion requirement. Story packs and selected excerpts never reduce this denominator."
+    },
+    {
+      "priority": 3,
+      "lane_id": "hanuman-chalisa",
+      "status": "consumer_pack_integrated_beta",
+      "required_outcome": "One complete lawful canonically ordered Devanagari expression readable or recitable from beginning to end, with exact resume, optional one-doha-or-chaupai daily pacing, and approachable English and Hindi meaning. Meaning-only or selected-unit records never complete this lane.",
+      "current": {
+        "reading_contract": "knowledge_packs/devotional/hanuman-chalisa-consumer-v1.json",
+        "identified_product_lane": true,
+        "fixed_source_carrier_acquired": true,
+        "reading_units": 43,
+        "opening_dohas": 2,
+        "chaupais": 40,
+        "closing_dohas": 1,
+        "hindi_text_available": true,
+        "hindi_meaning_available": true,
+        "english_meaning_available": true,
+        "devotional_reading_sequence_available": true,
+        "complete_recitation_mode_available": true,
+        "one_reading_unit_daily_mode_available": true,
+        "defined_reading_modes": 3,
+        "atlas_search_sarthi_integration": true,
+        "persistent_saved_progress_available": false,
+        "hosted_database_projection_applied": false
+      },
+      "next_boundary": "Run independent cultural and linguistic review and implement user-controlled exact resume persistence; the canonically ordered 43-unit beginning-to-end recitation and optional one-doha-or-chaupai daily paths already exist. Apply hosted changes only with explicit authorization."
+    },
+    {
+      "priority": 4,
+      "lane_id": "mahabharata-consumer-story",
+      "status": "complete_bilingual_consumer_backbone_plan_story_pending",
+      "required_outcome": "A beginning-to-end English and Hindi Mahabharata story backbone with characters, kingdoms, places, teachings, and living connections.",
+      "current": {
+        "ganguli_project_gutenberg_volumes_preserved": 4,
+        "fixed_source_objects": 4,
+        "fixed_source_bytes": 15262892,
+        "major_parvas_qualified": 18,
+        "source_relative_section_units": 2107,
+        "source_unit_root_sha256": "e476857f386c8faf48be9463d0cba9523f68652bdb8e14fc6951727f04d1040c",
+        "books_1_through_18_present": true,
+        "harivamsha_included": false,
+        "product_synthesis_rights_lane_qualified": true,
+        "consumer_backbone_arcs": 12,
+        "consumer_backbone_turns": 77,
+        "fixed_source_units_partitioned_once": 2107,
+        "bilingual_turn_titles_and_promises": 77,
+        "turns_with_authored_scenes": 12,
+        "partially_authored_turns": 0,
+        "source_units_with_authored_scenes": 223,
+        "substantial_bilingual_scenes": 111,
+        "substantial_bilingual_beats": 516,
+        "consumer_story_available": false,
+        "product_projection_available": false
+      },
+      "next_boundary": "Author and adversarially review substantial English/Hindi scenes and beats beneath all 77 turns, then compile the shared character, kingdom, place, teaching, and separately governed living-connection graph. The bilingual backbone is a complete plan, not yet a consumer story or playable world."
+    },
+    {
+      "priority": 5,
+      "lane_id": "hero-stories-and-practices",
+      "status": "partial",
+      "required_outcome": "Deep consumer stories and practical living connections for Ganesha, Durga/Navaratri/Durga Puja, and Diwali/Deepavali.",
+      "current": {
+        "selected_sources_present": true,
+        "scoped_ritual_lanes_present": true,
+        "consumer_story_complete": false
+      },
+      "next_boundary": "Define and complete the story denominator for each hero without weakening the existing ritual applicability contract."
+    },
+    {
+      "priority": 6,
+      "lane_id": "panchatantra-and-prioritized-puranic-stories",
+      "status": "audit_required",
+      "required_outcome": "Complete suitable story collections and prioritized Puranic stories in approachable English and Hindi.",
+      "current": {
+        "consumer_story_collection_available": false
+      },
+      "next_boundary": "Identify lawful complete expressions and rank story families by connection to the MVP hero worlds and likely consumer demand."
+    },
+    {
+      "priority": 7,
+      "lane_id": "connected-living-culture",
+      "status": "partial",
+      "required_outcome": "Reliable connected places, temples, kingdoms, history, yoga, meditation, festivals, rituals, and living practices required by the story worlds.",
+      "current": {
+        "selected_atlas_connections_present": true,
+        "september_december_scoped_ritual_lanes_present": true,
+        "mvp_connected_denominator_complete": false
+      },
+      "next_boundary": "Derive the exact connected-data backlog from completed narrative moments and the ritual contract."
+    }
+  ]
+}

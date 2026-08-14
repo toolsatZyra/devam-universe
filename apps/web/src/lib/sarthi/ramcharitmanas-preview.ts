@@ -1,9 +1,9 @@
 import type { EvidenceCitation, GroundedSarthiAnswer, SarthiRequest } from "./contracts";
 
 const EDITION_TITLE = "Belvedere Press Prayag second edition with Hindi Wikisource page transcriptions (pinned 2026-08-08)";
-const PASSAGE_ROOT_SHA256 = "92d01efa89a55cc555944a654f11dd3ccd4a1e1f23ac5c2dca204b49ea8cdf26";
+const PASSAGE_ROOT_SHA256 = "7f65790c6a6b2a0ff52c63d9664ab0ae4aa6e94a1c476c10ee297acf33787f93";
 const HOSTED_VERIFICATION_SHA256 = "29746a552a55bf176fb798f6fb39b88a821a48aa808316fc43031d2bd3c90e17";
-const SOURCE_BOUNDARY = "One fixed Belvedere Press Ramcharitmanas edition with 802 published proofread/validated beta page projections across seven sopanas. Another 359 low-quality pages and 11 malformed-markup pages remain outside retrieval; this is not every edition, recension, commentary, performance, translation, or living tradition.";
+const SOURCE_BOUNDARY = "One fixed Belvedere Press Ramcharitmanas edition with all 813 proofread/validated beta page projections across seven sopanas. Another 345 unproofread text-bearing pages remain outside retrieval; 14 q0 scan coordinates are verified structural blanks, not missing story text. The expanded 813-page database projection is prepared but not applied to the hosted database in this checkpoint, and this is not every edition, recension, commentary, performance, translation, or living tradition.";
 
 const sopanaStarts = [
   [1, "बालकाण्ड", "4be8a138eea6e49498f6c3a8aff6cb058a0126eecf4441b1dbddb6babc74ad37", 1, "8b7e28f116a1aacdcc4f184ad5569bb907e05e13be25aa9a04f496e3c6ddaa6a", 52, "e6cad89eb3ee35b501b53206ea55c9cb1bdf8a3986bbb86de3a34c5de5a0624a", "पृष्ठ:रामचरितमानस.pdf/५२"],
@@ -53,8 +53,8 @@ export function searchRamcharitmanasPreview(query: string, languageCode?: string
     id: `ramcharitmanas-belvedere-seven-sopana-${hindi ? "hi" : "en"}`,
     title: hindi ? "रामचरितमानस के सात सोपान" : "Ramcharitmanas: seven sopanas",
     statement: hindi
-      ? "देवम् में बेलवेडियर प्रेस के एक निश्चित संस्करण के सातों सोपानों से 802 स्रोत-सम्बद्ध बीटा पृष्ठ प्रकाशित हैं। 359 कम-गुणवत्ता वाले पृष्ठ और 11 मार्कअप-विसंगतियाँ अभी खोज से बाहर हैं।"
-      : "Devam currently publishes 802 source-addressed beta pages across all seven sopanas of one fixed Belvedere Press Ramcharitmanas edition; 359 low-quality pages and 11 markup anomalies remain outside retrieval.",
+      ? "देवम् के तैयार उत्पाद प्रक्षेपण में बेलवेडियर प्रेस के एक निश्चित संस्करण के सातों सोपानों से सभी 813 प्रमाणित बीटा पृष्ठ हैं। 359 अप्रमाणित या रिक्त पृष्ठ अभी खोज से बाहर हैं।"
+      : "Devam's prepared product projection contains all 813 proofread or validated beta pages across the seven sopanas of one fixed Belvedere Press Ramcharitmanas edition; 345 unproofread text-bearing pages remain outside retrieval, while 14 q0 scan coordinates are structural blanks.",
     languageCode: hindi ? "hi" as const : "en" as const,
     claimKind: "source_bounded_structure" as const,
     citations: citations(),
@@ -71,8 +71,8 @@ export function answerRamcharitmanasPreview(request: SarthiRequest): GroundedSar
     ok: true,
     mode: "deterministic_source_bounded_preview",
     answer: hindi
-      ? "रामचरितमानस तुलसीदास की अवधी राम-कथा है। देवम् में अभी बेलवेडियर प्रेस के एक निश्चित संस्करण के सातों सोपानों—बाल, अयोध्या, अरण्य, किष्किन्धा, सुन्दर, लङ्का और उत्तर—से 802 स्रोत-सम्बद्ध बीटा पृष्ठ उपलब्ध हैं। 359 कम-गुणवत्ता वाले पृष्ठ और 11 मार्कअप-विसंगतियाँ अभी खोज में नहीं हैं, इसलिए इसे सम्पूर्ण रामचरितमानस-परम्परा न समझें।"
-      : "Ramcharitmanas is Tulsidas's Awadhi devotional telling of the Rama story. Devam currently has 802 source-addressed beta pages across all seven sopanas—Bala, Ayodhya, Aranya, Kishkindha, Sundara, Lanka, and Uttara—from one fixed Belvedere Press edition. Another 359 low-quality pages and 11 markup anomalies remain outside retrieval, so this is not the complete Ramcharitmanas tradition.",
+      ? "रामचरितमानस तुलसीदास की अवधी राम-कथा है। देवम् के तैयार उत्पाद प्रक्षेपण में बेलवेडियर प्रेस के एक निश्चित संस्करण के सातों सोपानों—बाल, अयोध्या, अरण्य, किष्किन्धा, सुन्दर, लङ्का और उत्तर—से सभी 813 प्रमाणित बीटा पृष्ठ हैं। 359 अप्रमाणित या रिक्त पृष्ठ अभी खोज में नहीं हैं, इसलिए इसे सम्पूर्ण रामचरितमानस-परम्परा न समझें।"
+      : "Ramcharitmanas is Tulsidas's Awadhi devotional telling of the Rama story. Devam's prepared product projection contains all 813 proofread or validated beta pages across the seven sopanas—Bala, Ayodhya, Aranya, Kishkindha, Sundara, Lanka, and Uttara—from one fixed Belvedere Press edition. Another 345 unproofread text-bearing pages remain outside retrieval; 14 q0 scan coordinates are structural blanks, so this is not the complete Ramcharitmanas tradition.",
     citations: citations(),
     alternativesAvailable: true,
     sourceBoundary: SOURCE_BOUNDARY,
@@ -82,7 +82,8 @@ export function answerRamcharitmanasPreview(request: SarthiRequest): GroundedSar
 export const RAMCHARITMANAS_PREVIEW_FIXITY = {
   passageRootSha256: PASSAGE_ROOT_SHA256,
   hostedVerificationSha256: HOSTED_VERIFICATION_SHA256,
-  publishedPageCount: 802,
-  excludedPageCount: 370,
+  publishedPageCount: 813,
+  excludedPageCount: 359,
+  hostedDatabaseProjectionApplied: false,
   completeRamcharitmanasTradition: false,
 } as const;

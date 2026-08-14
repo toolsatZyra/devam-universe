@@ -378,6 +378,105 @@ verification.
 - 5/5 focused product-projection tests pass; and
 - `database_applied_by_this_compiler=false`.
 
+#### Exact-revision layout recovery (2026-08-12)
+
+The 11 held quality-qualified pages were re-audited against their pinned raw
+Wikisource revisions. Their failures were provider layout-brace defects, not
+missing narrative text. The compiler now recovers those braces only when the
+raw revision content matches one of 11 explicit SHA-256 allowlist entries; the
+same malformed content with any byte changed still fails closed. Unknown
+templates remain rejected, and no source spelling, OCR, wording, or numbering
+is corrected.
+
+The prepared packet therefore contains all 813 proofread or validated pages:
+808 at quality level 3 and 5 at level 4. A subsequent fixed-scan reconciliation
+showed that the remaining 359 held coordinates consist of 345 substantial but
+unproofread Wikisource transcriptions and 14 structural blank scan pages, not
+14 missing story-text pages. A live read-only Wikisource API check on
+2026-08-12 found no revision or quality-state changes across those coordinates.
+Only the 345 text-bearing pages remain correction inputs.
+
+- prepared packet SHA-256
+  `8414805e9b8bab77f63ecc83539601cd3505d03569af1a94a6d128ba3ff78e53`;
+- prepared passage root SHA-256
+  `7f65790c6a6b2a0ff52c63d9664ab0ae4aa6e94a1c476c10ee297acf33787f93`;
+- compiler SHA-256
+  `756f794afef574789892bba9f6ee1155a733d7904ce9070888b2349c6ee01b56`;
+- product report SHA-256
+  `4e79be5be405e1a932e9692fdc58d00b7bfa3f91e44b5be298e28e7af4aa43d1`;
+- focused compiler-test SHA-256
+  `74ccee3de276bbb2976f4e9b1be3fd5d3a27469e1b617b68f9a923e4d1391f14`;
+- 813 prepared passages across all seven sopanas;
+- 0 remaining projection anomalies;
+- `database_applied_by_this_compiler=false`; and
+- the older 802-passage hosted application below remains historical evidence,
+  not evidence that the expanded 813-passage projection is hosted.
+
+#### Held-page denominator reconciliation (2026-08-12)
+
+The 14 q0 coordinates were rendered directly from the fixed 1,240-page scan at
+a pinned scale and grayscale threshold, cross-checked against the empty
+edition-matched IA coordinate OCR, and sampled visually. All 14 are structural
+blank pages. None contains missing printed story text. This closes the selected
+edition's text-bearing denominator at 1,158 pages: 813 prepared and 345 still
+unproofread. No page text was corrected or promoted by this classification.
+
+- held-page recovery report SHA-256
+  `e044460d5c172bc130afdf3a594f9d751a833e49ad737b4fcb7013f24eb8d5b9`;
+- reconciled prepared packet SHA-256
+  `939c0fdef4274fe047dfc2c0535c5ebdc47e0c0086df6f62a9e74926c9000ddf`;
+- unchanged prepared passage root SHA-256
+  `7f65790c6a6b2a0ff52c63d9664ab0ae4aa6e94a1c476c10ee297acf33787f93`;
+- reconciled product report SHA-256
+  `992fb1bda6aedd3888a1ceda0ec6435d302cc1501ecbce9bfa2a2cbd711a41be`;
+- held-page profiler/test SHA-256
+  `2faa7ecb72b4c06a4b10bb626f066a14495ea682fa95648b6e184c0174a9ebcc` /
+  `fc93ce60e6ee2c8eb666f767101081e8d59b3b431ddd77550df18d46ff14c43a`;
+- product compiler/test SHA-256
+  `31b0ed19b2e42d791c7219b576ce262825eca399f389f94104fc1b5706a0b7ec` /
+  `ad403caece6e31c3d18722fad30d55f7f85eb44eb52f6819968193a40ca6d446`;
+- exact structural blank pages: 150, 185, 266, 330, 529, 792, 820, 829, 840,
+  853, 866, 941, 1075, and 1088;
+- missing q0 transcription pages: 0;
+- remaining text-correction pages: 345; and
+- prepared product passage count remains 813.
+
+#### Q1 dual-witness screen (2026-08-12)
+
+Every one of the 345 unproofread text-bearing pages was compared with the
+edition-matched IA coordinate OCR after both witnesses were reduced to their
+Devanagari character streams. The 813 proofread/validated pages supplied the
+control distribution. At the control's fifth-percentile similarity and length
+thresholds, 340 q1 pages fall inside the descriptive envelope and five fall
+outside it: 381, 415, 847, 994, and 1024.
+
+This is a correction screen, not a promotion gate. Visual adjudication of the
+five outliers found OCR truncation, dense/noisy print, and visible q1
+transcription defects. Samples inside the envelope also retain consumer-facing
+errors. Therefore all 345 pages remain held: witness agreement does not prove
+exactness and unverified text is not used as translation input. IIT Kanpur's
+complete Devanagari reader is catalogued as a rights-unresolved correction lead;
+Sanskrit Documents' seven-kanda electronic collection is catalogued but not
+acquired because its stated reuse terms restrict reposting and commercial use.
+
+A bounded local trial then tested PaddleOCR 3.7.0's dedicated Devanagari
+PP-OCRv5 mobile recognizer on fixed difficult page 381. PaddlePaddle 3.0.0 and
+3.3.1, first with the default v6 detector and then the matching v5 mobile
+detector, both failed in the Windows oneDNN execution path before emitting any
+recognized text. The candidate is therefore rejected for scale on this
+workstation. No generated OCR or model payload is retained in the repository or
+source vault, and this negative result does not change the 345-page hold.
+
+- dual-witness report SHA-256
+  `9fea0c9d47b8ff33b3b45dd7416856a1784a69ba8defa4a64e4f15a909ff27bd`;
+- profiler SHA-256
+  `dfb1fc87c428df7b3c2181f5be43359f257496d871bd24ed747d212a416af652`;
+- focused test SHA-256
+  `cf7b2598825a636109e8334bbf98a6696787f9c983b27cf4420afc1973e4ff1d`;
+- 340 in-envelope / 5 manually adjudicated outliers / 0 promoted; and
+- 11/11 screen checks pass, with no source, database, or external-service
+  mutation.
+
 #### Hosted product application
 
 The 21 bounded, idempotent SQL batches were applied to the isolated

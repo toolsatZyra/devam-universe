@@ -1,30 +1,40 @@
 # Ramayana story-world strategy
 
-Status: **revised product and game-direction contract — 2026-08-10**
+Status: **revised product and game-direction contract — current checkpoint 2026-08-13**
 
-Current implementation checkpoint: the story world now has three explicit
-illustrated districts rather than one hidden late-epic doorway. **The night the
-road changed** covers Ayodhyā Kāṇḍa source units I–XL exactly once across eight
-scene-specific tableaux and thirty-six bilingual beats. **Across the first
-rivers** continues contiguously through XLI–LVI with eight new tableaux and
-forty bilingual beats: Ayodhya follows the car, the citizens wake at the
-Tamasa, Guha and Lakshmana keep watch, Sumantra turns back, the three cross the
-Ganga and Yamuna, and a home is built at Chitrakoot. **The road home** retains
-seven tableaux and twenty-nine bilingual beats across Yuddha Kāṇḍa CXXIV–CXXX.
-Each district has its own sequence, progress, completion, replay, and return to
-the common compass; the player never auto-jumps across the unfinished middle
-of the epic.
+Current implementation has two separate completion states that must not be
+collapsed. The selected 652-unit Dutt expression is completely partitioned
+across 49 story turns and 423 substantial bilingual scenes containing 1,842
+beats. That is a real beginning-to-end consumer-story corpus for one bounded
+English expression, with Hindi retelling, source addresses, characters, places,
+visual direction, and compiled traversal links. Twenty-nine exact data-only
+scenes now replace eight formerly compressed blocks across coronation dawn,
+Ayodhya's departure, deeper forest, Panchavati, Janasthana, and the golden-deer plot;
+this deepens the library without adding images or changing the live district.
+It is not every Ramayana
+tradition and it is not yet a beginning-to-end illustrated game world.
 
-The initial world pack carries only bilingual previews, nodes, routes, and the
-district index and remains below 180 KB raw / 35 KB gzip. Complete beat scripts
-load only for the district entered, each below 75 KB raw / 18 KB gzip, while
-media preloads only immediate neighbours. Five compass turns are now playable
-entrances and forty-four remain honestly labelled orientation. The visual-world
-selector is presented before the thinner forty-nine-turn atlas, so the finished
-worlds are visible without knowing which story arc hides them. Any older
-checkpoint language below that calls the road home the only playable district,
-describes two districts, or describes forty-eight orientation turns is
-superseded by this checkpoint.
+The live journey exposes 55 illustrated scenes across seven detailed districts:
+coronation-to-exile, the first rivers, the empty throne, the road asking Rama
+home, deeper Dandaka, Panchavati-to-abduction, and the road home. Fourteen of the
+49 compass turns have direct illustrated entrances; 35 retain story orientation
+while their authored scenes await equivalent visual-world projection. Every
+detailed district has sequence, progress, replay, and return to the common
+compass. The app therefore has a complete selected-expression story corpus but
+only a 55-scene illustrated subset. See
+`RAMAYANA_WHOLE_JOURNEY_ADVERSARIAL_REVIEW_2026-08-13.md`.
+
+The initial world pack continues to carry only compact previews, nodes, routes,
+and district identity. Detailed beat scripts load for the entered district and
+media preloads only immediate neighbours. Any older checkpoint language below
+that reports fewer than seven districts, fewer than 14 visual entrances, more
+than 35 orientation turns, or the whole 423-scene corpus as already illustrated
+is superseded by this checkpoint.
+
+Library-first priority update (2026-08-13): image generation and visual-world
+projection are paused until the user explicitly reauthorizes them. Current work
+accumulates complete bilingual stories, exact source partitions, characters,
+places, and relationships; the 55-scene illustrated subset remains unchanged.
 
 ## North star
 

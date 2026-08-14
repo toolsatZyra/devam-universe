@@ -1,0 +1,48 @@
+import type { RamayanaSceneOutline } from "./ramayana-beginnings-outline";
+
+export const RAMAYANA_LEAP_ACROSS_OCEAN_SCENE_OUTLINES: RamayanaSceneOutline[] = [
+  {
+    id: "mahendra-launches-the-messenger",
+    turnId: "leap-across-ocean",
+    ordinal: 1,
+    sourceStart: 1,
+    sourceEnd: 1,
+    title: { en: "Mahendra launches the messenger", hi: "महेंद्र से दूत की उड़ान आरंभ होती है" },
+    synopsis: { en: "Hanuman turns the force of Mahendra into a vast flight, honours Mainaka without losing time, answers Surasa with intelligence, survives Simhika's shadow-grip, and reaches Lanka by changing scale whenever the crossing demands it.", hi: "हनुमान महेंद्र की शक्ति से विराट उड़ान भरते हैं, बिना समय खोए मैनाक का आदर करते हैं, सुरसा की परीक्षा बुद्धि से पार करते हैं, सिंहिका की छाया-पकड़ से बचते हैं और हर चुनौती के अनुसार अपना आकार बदलते हुए लंका पहुँचते हैं।" },
+    characters: ["Hanuman", "Wind", "Ocean", "Mainaka", "Indra", "Surasa", "Simhika", "Sita", "Rama"],
+    places: ["Mahendra mountain", "Southern sea", "Mainaka mountain", "Sky above the ocean", "Lanka coast", "Lamba peak"],
+  },
+  {
+    id: "lanka-changes-the-mission-to-stealth",
+    turnId: "leap-across-ocean",
+    ordinal: 2,
+    sourceStart: 2,
+    sourceEnd: 2,
+    title: { en: "Lanka changes the mission to stealth", hi: "लंका अभियान को गुप्त खोज में बदल देती है" },
+    synopsis: { en: "The city is beautiful, inhabited, and almost impossibly defended; Hanuman refuses to mistake arrival for victory, decides that learning whether Sita lives comes first, and waits for darkness in a form small enough to enter unseen.", hi: "नगर सुंदर, जीवंत और लगभग अभेद्य है; हनुमान पहुँच जाने को विजय नहीं मानते, पहले यह जानने का निर्णय लेते हैं कि सीता जीवित हैं या नहीं, और अदृश्य प्रवेश के लिए छोटा रूप धरकर अँधेरे की प्रतीक्षा करते हैं।" },
+    characters: ["Hanuman", "Sita", "Rama", "Lakshmana", "Sugriva", "Ravana"],
+    places: ["Lanka coast", "Northern gate of Lanka", "Lanka fortifications", "Lanka gardens"],
+  },
+  {
+    id: "the-city-guardian-tests-entry",
+    turnId: "leap-across-ocean",
+    ordinal: 3,
+    sourceStart: 3,
+    sourceEnd: 3,
+    title: { en: "The city guardian tests entry", hi: "नगर की रक्षिका प्रवेश की परीक्षा लेती है" },
+    synopsis: { en: "Lankini stops the small intruder and strikes first; Hanuman answers with restrained force, spares her when she falls, and receives both entry and a warning that Sita's abduction has brought Lanka to a turning point.", hi: "लंकिनी छोटे घुसपैठिये को रोककर पहले प्रहार करती है; हनुमान सीमित बल से उत्तर देते हैं, उसके गिरने पर दया करते हैं और प्रवेश के साथ यह चेतावनी पाते हैं कि सीता-हरण लंका को निर्णायक मोड़ पर ले आया है।" },
+    characters: ["Hanuman", "Lankini", "Sita", "Ravana", "Brahma", "Rama", "Lakshmana"],
+    places: ["Northern wall of Lanka", "Lanka at night"],
+  },
+  {
+    id: "hanuman-enters-the-watched-city",
+    turnId: "leap-across-ocean",
+    ordinal: 4,
+    sourceStart: 4,
+    sourceEnd: 4,
+    title: { en: "Hanuman enters the watched city", hi: "हनुमान निगरानी से भरे नगर में प्रवेश करते हैं" },
+    synopsis: { en: "Hanuman crosses the wall rather than the gate and discovers a city of music, worship, households, disguises, spies, soldiers, and immense wealth before reaching the guarded inner residence of Ravana.", hi: "हनुमान द्वार के बजाय दीवार पार करके ऐसे नगर में उतरते हैं जहाँ संगीत, उपासना, घर-परिवार, वेश बदलते गुप्तचर, सैनिक और अपार वैभव साथ मौजूद हैं; अंततः वे रावण के सुरक्षित भीतरी निवास तक पहुँचते हैं।" },
+    characters: ["Hanuman", "Ravana", "Lanka residents", "Lanka guards", "Lanka spies"],
+    places: ["Lanka wall", "Lanka streets", "Ravana's palace", "Ravana's inner residence"],
+  },
+];

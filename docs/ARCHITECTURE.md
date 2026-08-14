@@ -28,6 +28,13 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 ## Data plane
 
 - Supabase/Postgres: users, profiles, entities, relationships, claims, claim evidence, source metadata, passages, ritual procedures, Panchang facts, journeys, challenges, subscriptions, and analytics events.
+- Complete devotional works use a separate ordered-reading projection:
+  `reading_sequences`, natural `reading_passages`, smallest resumable
+  `reading_units`, bilingual passage meanings, and user-owned exact progress.
+  Page, passage, source-unit and kanda modes are views over one sequence; a
+  narrative adaptation or daily excerpt can never satisfy a missing interval.
+  Historical edition commentary remains attached as optional evidence rather
+  than being copied into the consumer completion denominator.
 - Product analytics is first-party and content-free: a 90-day pseudonymous session
   funnel records only allow-listed surface events and bounded categorical targets.
   Search text, Sarthi messages, location and ritual selections, email, user ids,
@@ -67,6 +74,21 @@ Use the smallest architecture that supports a real vertical slice and preserves 
 Core evidence classes: scripture/primary source; commentary/translation; academic/archaeological; official/current; living/oral/regional/family practice; and Devam synthesis.
 
 Every claim can carry source, passage, edition, language, geography, time, tradition, confidence, conflict, and rights lane. Generated translations and syntheses remain explicitly attributable.
+
+Consumer narrative is a first-class database projection rather than an
+application-only collection of cards. The lean narrative model consists of:
+
+- a `narrative_series` record for the selected story universe and expression boundary;
+- ordered `narrative_arcs`, bilingual `narrative_arc_texts`, and backbone `narrative_moments` that cover the story from beginning to end, with playable scene moments nested beneath the same backbone turn;
+- localized `narrative_moment_texts` and ordered `narrative_beats` in English and Hindi;
+- source-span links from moments or beats to existing passages;
+- typed character, place, polity, festival, ritual and teaching participation; and
+- reversible moment-to-moment and moment-to-living-world links.
+
+Source apparatus remains attached to these records for editorial integrity and
+retrieval, but public story queries project consumer copy first. A source passage,
+claim or graph node is not counted as story coverage until it participates in a
+reviewed beginning-to-end narrative sequence.
 
 Public exact retrieval uses two narrow Postgres RPCs rather than a browser or
 app secret. One projects published product-compatible claims and suppresses

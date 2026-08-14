@@ -1,0 +1,560 @@
+{
+  "contract": "DEVAM_HANUMAN_CHALISA_CONSUMER_V1",
+  "status": "beta_product_ready",
+  "created_at": "2026-08-12",
+  "work": {
+    "slug": "hanuman-chalisa",
+    "title": { "en": "Hanuman Chalisa", "hi": "हनुमान चालीसा" },
+    "attribution": "Traditionally attributed to Goswami Tulsidas",
+    "language_code": "awa",
+    "script_code": "Deva",
+    "consumer_note": {
+      "en": "This is an Awadhi devotional hymn written in Devanagari, not a Sanskrit text.",
+      "hi": "यह देवनागरी में लिखी अवधी भक्ति-रचना है, संस्कृत पाठ नहीं।"
+    },
+    "structure": {
+      "opening_dohas": 2,
+      "chaupais": 40,
+      "closing_dohas": 1,
+      "reading_units": 43
+    }
+  },
+  "source_expression": {
+    "fixed_carrier_sha256": "b39721a0a96f21d659b6b74f32ff5e0469220b5fa2813cc93733702d43ac02d5",
+    "fixed_carrier_bytes": 2050271,
+    "fixed_carrier_object": "objects/sha256/b3/b39721a0a96f21d659b6b74f32ff5e0469220b5fa2813cc93733702d43ac02d5",
+    "rights_revision_sha256": "ca3a6f1ee697889245befa79e3311278452eb9daf29d5241c60ae936744750cb",
+    "rights_revision_id": 1187801078,
+    "provider": "Wikimedia Commons",
+    "provider_page": "https://commons.wikimedia.org/wiki/File:Hanuman_Chalisa_4x3.jpg",
+    "attribution": "RahulKSaini / Wikimedia Commons",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "rights_lane": "derivative_allowed",
+    "transcription_status": "Devam manual normalized Devanagari transcription of the fixed graphic, beta-reviewed against the visible carrier",
+    "numbering_note": "The graphic visually groups each consecutive pair of standard chaupais under printed labels 1-20; this consumer pack separates them into the conventional forty chaupai reading units numbered 1-40.",
+    "source_original_claimed": false,
+    "critical_edition_claimed": false
+  },
+  "scope": {
+    "positive_boundary": "Complete consumer reading sequence for the two opening dohas, forty chaupais, and closing doha visible in one fixed CC BY-SA graphic carrier, with Devam-authored simple Hindi and English meanings.",
+    "not_claimed": [
+      "a critical edition or adjudication of all manuscript and printed variants",
+      "Gita Press text, commentary, design, pronunciation, audio, or rights",
+      "a Sanskrit original",
+      "a mandatory ritual procedure, prescribed repetition count, or universal practice rule",
+      "medical protection, guaranteed relief, supernatural certainty, or promised worldly result",
+      "every Hanuman hymn, story, temple, tradition, performance, or regional practice"
+    ],
+    "devotional_claim_boundary": {
+      "en": "Where the hymn promises protection, healing, freedom, success, or closeness to Rama, Devam explains the devotional meaning without turning it into medical advice or a guaranteed outcome.",
+      "hi": "जहाँ पाठ रक्षा, रोग-मुक्ति, बन्धन से छुटकारा, सिद्धि या राम-सान्निध्य का आश्वासन देता है, देवम् उसका भक्तिपरक अर्थ समझाता है; उसे चिकित्सकीय सलाह या निश्चित फल की गारंटी नहीं बनाता।"
+    }
+  },
+  "daily_path": {
+    "cycle_length": 43,
+    "order": "source_order",
+    "selection_rule": "A user may continue from their saved place or start at unit 1; calendar date and Panchang do not control the reading.",
+    "completion_state": "All 43 units contain the reading text and approachable Hindi and English meaning; the same canonical sequence supports both end-to-end recitation and an optional one-unit-per-day pace."
+  },
+  "reading_modes": [
+    {
+      "mode_id": "complete_recitation",
+      "label": { "en": "Read the complete Hanuman Chalisa", "hi": "पूरी हनुमान चालीसा पढ़ें" },
+      "ordinals": { "start": 1, "end": 43 },
+      "availability": "consumer_content_available",
+      "boundary": "The sequence is complete for this fixed carrier; Devam does not prescribe a repetition count or promise an outcome."
+    },
+    {
+      "mode_id": "one_reading_unit_daily",
+      "label": { "en": "One doha or chaupai a day", "hi": "प्रतिदिन एक दोहा या चौपाई" },
+      "ordinals": { "start": 1, "end": 43 },
+      "selection_rule": "Read the next source-ordered unit; calendar date and Panchang do not choose it.",
+      "availability": "consumer_content_available",
+      "boundary": "This is an optional reading pace, not a traditional mandate."
+    },
+    {
+      "mode_id": "resume_exact_position",
+      "label": { "en": "Continue where I stopped", "hi": "जहाँ रुके थे वहीं से आगे पढ़ें" },
+      "ordinals": { "start": 1, "end": 43 },
+      "selection_rule": "Continue at the saved last-completed ordinal plus one, or restart at ordinal 1.",
+      "availability": "product_persistence_pending",
+      "boundary": "Saved progress is user-controlled and must remain separate from devotional claims."
+    }
+  ],
+  "readings": [
+    {
+      "ordinal": 1,
+      "kind": "opening_doha",
+      "source_number": 1,
+      "text": "श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि।\nबरनऊँ रघुबर बिमल जसु, जो दायकु फल चारि॥",
+      "meaning": {
+        "en": "The poet begins by honouring the teacher and clearing the mind before telling Rama's radiant story, which is understood to support a full and meaningful life.",
+        "hi": "कवि गुरु को प्रणाम करके मन को निर्मल करने और फिर राम के उज्ज्वल चरित्र का गान शुरू करने की बात कहते हैं—ऐसा चरित्र जो जीवन को अर्थ और दिशा देता है।"
+      },
+      "themes": ["teacher", "rama-story", "inner-preparation"]
+    },
+    {
+      "ordinal": 2,
+      "kind": "opening_doha",
+      "source_number": 2,
+      "text": "बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार।\nबल बुद्धि बिद्या देहु मोहिं, हरहु कलेस बिकार॥",
+      "meaning": {
+        "en": "Recognising personal limits, the poet remembers Hanuman and asks for strength, good judgment, learning, and freedom from distressing habits.",
+        "hi": "अपनी सीमाएँ स्वीकार कर कवि हनुमान का स्मरण करते हैं और शक्ति, सही बुद्धि, ज्ञान तथा मन के कष्टकारी विकारों से मुक्ति माँगते हैं।"
+      },
+      "themes": ["humility", "strength", "wisdom"]
+    },
+    {
+      "ordinal": 3,
+      "kind": "chaupai",
+      "source_number": 1,
+      "text": "जय हनुमान ज्ञान गुन सागर।\nजय कपीस तिहुँ लोक उजागर॥",
+      "meaning": {
+        "en": "Hanuman is praised as an ocean of knowledge and virtue whose renown shines through every realm.",
+        "hi": "हनुमान को ज्ञान और गुणों का अथाह सागर कहा गया है, जिनकी कीर्ति तीनों लोकों में प्रकाश फैलाती है।"
+      },
+      "themes": ["knowledge", "virtue", "praise"]
+    },
+    {
+      "ordinal": 4,
+      "kind": "chaupai",
+      "source_number": 2,
+      "text": "रामदूत अतुलित बल धामा।\nअंजनि-पुत्र पवनसुत नामा॥",
+      "meaning": {
+        "en": "He is Rama's messenger, a home of incomparable strength, remembered as Anjani's son and the son of the wind.",
+        "hi": "वे राम के दूत और अनुपम शक्ति के धाम हैं; उन्हें अंजनी-पुत्र और पवनसुत के रूप में स्मरण किया जाता है।"
+      },
+      "themes": ["rama-service", "strength", "identity"]
+    },
+    {
+      "ordinal": 5,
+      "kind": "chaupai",
+      "source_number": 3,
+      "text": "महाबीर बिक्रम बजरंगी।\nकुमति निवार सुमति के संगी॥",
+      "meaning": {
+        "en": "Hanuman's courage is joined to wise action: he pushes harmful thinking away and stands beside good judgment.",
+        "hi": "हनुमान की वीरता विवेक से जुड़ी है—वे गलत सोच हटाने और अच्छी बुद्धि का साथ देने वाले माने जाते हैं।"
+      },
+      "themes": ["courage", "discernment", "good-judgment"]
+    },
+    {
+      "ordinal": 6,
+      "kind": "chaupai",
+      "source_number": 4,
+      "text": "कंचन बरन बिराज सुबेसा।\nकानन कुंडल कुंचित केसा॥",
+      "meaning": {
+        "en": "The hymn pauses on Hanuman's luminous appearance—golden in colour, beautifully dressed, with earrings and curling hair.",
+        "hi": "पाठ हनुमान के तेजस्वी रूप का चित्र बनाता है—स्वर्णिम देह, सुंदर वेश, कानों में कुंडल और घुँघराले केश।"
+      },
+      "themes": ["appearance", "radiance", "devotional-image"]
+    },
+    {
+      "ordinal": 7,
+      "kind": "chaupai",
+      "source_number": 5,
+      "text": "हाथ वज्र औ ध्वजा बिराजै।\nकाँधे मूँज जनेऊ साजै॥",
+      "meaning": {
+        "en": "The thunderbolt and flag show readiness and resolve, while the sacred thread marks disciplined responsibility.",
+        "hi": "हाथ का वज्र और ध्वजा तत्परता और संकल्प दिखाते हैं; कंधे का जनेऊ अनुशासन और जिम्मेदारी का चिह्न है।"
+      },
+      "themes": ["resolve", "discipline", "symbols"]
+    },
+    {
+      "ordinal": 8,
+      "kind": "chaupai",
+      "source_number": 6,
+      "text": "शंकर सुवन केसरीनंदन।\nतेज प्रताप महा जग बंदन॥",
+      "meaning": {
+        "en": "Hanuman is linked with Shiva and Kesari, and the hymn says the world honours his brilliance and courageous power.",
+        "hi": "हनुमान को शंकर से जुड़ा और केसरी का पुत्र कहा गया है; संसार उनके तेज और पराक्रम का सम्मान करता है।"
+      },
+      "themes": ["lineage", "radiance", "honour"]
+    },
+    {
+      "ordinal": 9,
+      "kind": "chaupai",
+      "source_number": 7,
+      "text": "विद्यावान गुनी अति चातुर।\nराम काज करिबे को आतुर॥",
+      "meaning": {
+        "en": "Knowledge, character, and practical intelligence become meaningful because Hanuman is always ready to use them in Rama's service.",
+        "hi": "ज्ञान, गुण और चतुराई उनके भीतर सेवा बनकर प्रकट होते हैं—वे राम का काम करने के लिए सदा तत्पर हैं।"
+      },
+      "themes": ["skill", "service", "readiness"]
+    },
+    {
+      "ordinal": 10,
+      "kind": "chaupai",
+      "source_number": 8,
+      "text": "प्रभु चरित्र सुनिबे को रसिया।\nराम लखन सीता मन बसिया॥",
+      "meaning": {
+        "en": "Hanuman delights in hearing Rama's story, while Rama, Lakshmana, and Sita remain alive in his heart.",
+        "hi": "हनुमान को राम-कथा सुनने में आनंद मिलता है और राम, लक्ष्मण तथा सीता उनके हृदय में बसे रहते हैं।"
+      },
+      "themes": ["story-listening", "devotion", "rama-family"]
+    },
+    {
+      "ordinal": 11,
+      "kind": "chaupai",
+      "source_number": 9,
+      "text": "सूक्ष्म रूप धरि सियहिं दिखावा।\nबिकट रूप धरि लंक जरावा॥",
+      "meaning": {
+        "en": "He becomes gentle and small when meeting Sita, then fearsome when confronting Lanka—the right form for the need before him.",
+        "hi": "सीता के सामने वे कोमल और सूक्ष्म रूप लेते हैं, फिर लंका का सामना करते समय विकराल बनते हैं—स्थिति के अनुसार सही शक्ति चुनते हैं।"
+      },
+      "themes": ["sita", "adaptability", "lanka"]
+    },
+    {
+      "ordinal": 12,
+      "kind": "chaupai",
+      "source_number": 10,
+      "text": "भीम रूप धरि असुर सँहारे।\nरामचंद्र के काज सँवारे॥",
+      "meaning": {
+        "en": "In the battle story Hanuman takes a formidable form, defeats destructive forces, and brings Rama's difficult mission closer to completion.",
+        "hi": "युद्ध-कथा में हनुमान प्रचंड रूप लेकर विनाशकारी शक्तियों को रोकते और राम के कठिन काम को पूरा करने में सहायता करते हैं।"
+      },
+      "themes": ["battle", "protection", "rama-mission"]
+    },
+    {
+      "ordinal": 13,
+      "kind": "chaupai",
+      "source_number": 11,
+      "text": "लाय सजीवन लखन जियाए।\nश्रीरघुबीर हरषि उर लाए॥",
+      "meaning": {
+        "en": "Hanuman brings the life-restoring medicine for Lakshmana; Rama responds with joy and embraces him.",
+        "hi": "हनुमान लक्ष्मण के लिए जीवन बचाने वाली औषधि लाते हैं; राम आनंद से उन्हें हृदय से लगा लेते हैं।"
+      },
+      "themes": ["lakshmana", "healing-mission", "embrace"]
+    },
+    {
+      "ordinal": 14,
+      "kind": "chaupai",
+      "source_number": 12,
+      "text": "रघुपति कीन्ही बहुत बड़ाई।\nतुम मम प्रिय भरतहि सम भाई॥",
+      "meaning": {
+        "en": "Rama praises Hanuman and says he is as dear as Bharata—a bond of affection, trust, and chosen kinship.",
+        "hi": "राम हनुमान की प्रशंसा करके उन्हें भरत जितना प्रिय बताते हैं—यह प्रेम, भरोसे और चुने हुए पारिवारिक संबंध का क्षण है।"
+      },
+      "themes": ["rama", "bharata", "chosen-family"]
+    },
+    {
+      "ordinal": 15,
+      "kind": "chaupai",
+      "source_number": 13,
+      "text": "सहस बदन तुम्हरो जस गावैं।\nअस कहि श्रीपति कंठ लगावैं॥",
+      "meaning": {
+        "en": "Rama says even a thousand mouths could keep singing Hanuman's worth, then draws him into an embrace.",
+        "hi": "राम कहते हैं कि हजार मुख भी हनुमान का यश गाते रहें तो कम है, और फिर उन्हें गले लगा लेते हैं।"
+      },
+      "themes": ["praise", "embrace", "devotion"]
+    },
+    {
+      "ordinal": 16,
+      "kind": "chaupai",
+      "source_number": 14,
+      "text": "सनकादिक ब्रह्मादि मुनीसा।\nनारद सारद सहित अहीसा॥",
+      "meaning": {
+        "en": "The hymn imagines sages and divine figures—from Sanaka and Brahma to Narada, Saraswati, and Shesha—joining in Hanuman's praise.",
+        "hi": "पाठ में सनक, ब्रह्मा, नारद, सरस्वती और शेष जैसे ऋषि-दैवी पात्र भी हनुमान की प्रशंसा करते दिखते हैं।"
+      },
+      "themes": ["sages", "divine-praise", "cosmic-community"]
+    },
+    {
+      "ordinal": 17,
+      "kind": "chaupai",
+      "source_number": 15,
+      "text": "जम कुबेर दिगपाल जहाँ ते।\nकबि कोबिद कहि सके कहाँ ते॥",
+      "meaning": {
+        "en": "Yama, Kubera, guardians of the directions, poets, and scholars are all said to fall short of fully describing Hanuman.",
+        "hi": "यम, कुबेर, दिशाओं के रक्षक, कवि और विद्वान—कोई भी हनुमान के गुणों का पूरा वर्णन नहीं कर सकता।"
+      },
+      "themes": ["indescribable-worth", "poets", "guardians"]
+    },
+    {
+      "ordinal": 18,
+      "kind": "chaupai",
+      "source_number": 16,
+      "text": "तुम उपकार सुग्रीवहिं कीन्हा।\nराम मिलाय राज पद दीन्हा॥",
+      "meaning": {
+        "en": "Hanuman helps Sugriva meet Rama and regain leadership, showing how a trusted connector can change a life.",
+        "hi": "हनुमान सुग्रीव को राम से मिलाते और नेतृत्व वापस पाने में मदद करते हैं—सही लोगों को जोड़ने वाली सेवा जीवन बदल सकती है।"
+      },
+      "themes": ["sugriva", "alliance", "restoration"]
+    },
+    {
+      "ordinal": 19,
+      "kind": "chaupai",
+      "source_number": 17,
+      "text": "तुम्हरो मंत्र बिभीषन माना।\nलंकेश्वर भए सब जग जाना॥",
+      "meaning": {
+        "en": "Vibhishana accepts Hanuman's counsel, leaves Ravana's course, and later becomes Lanka's ruler—a story of difficult moral realignment.",
+        "hi": "विभीषण हनुमान की सलाह मानकर रावण का मार्ग छोड़ते हैं और आगे चलकर लंका के राजा बनते हैं—यह कठिन नैतिक दिशा बदलने की कथा है।"
+      },
+      "themes": ["vibhishana", "counsel", "moral-choice"]
+    },
+    {
+      "ordinal": 20,
+      "kind": "chaupai",
+      "source_number": 18,
+      "text": "जुग सहस्र जोजन पर भानू।\nलील्यो ताहि मधुर फल जानू॥",
+      "meaning": {
+        "en": "The child Hanuman's immense energy appears in the famous image of leaping toward the distant sun as if it were a sweet fruit.",
+        "hi": "बाल हनुमान की अपार ऊर्जा उस प्रसिद्ध दृश्य में प्रकट होती है जहाँ वे दूर चमकते सूर्य को मीठा फल समझकर उसकी ओर छलाँग लगाते हैं।"
+      },
+      "themes": ["child-hanuman", "sun", "boundless-energy"]
+    },
+    {
+      "ordinal": 21,
+      "kind": "chaupai",
+      "source_number": 19,
+      "text": "प्रभु मुद्रिका मेलि मुख माहीं।\nजलधि लाँघि गये अचरज नाहीं॥",
+      "meaning": {
+        "en": "Carrying Rama's ring as a sign for Sita, Hanuman crosses the ocean; focused service makes the extraordinary journey feel natural to the hymn.",
+        "hi": "सीता के लिए राम की पहचान-चिह्न मुद्रिका लेकर हनुमान समुद्र पार करते हैं; लक्ष्यपूर्ण सेवा में असाधारण यात्रा भी स्वाभाविक लगती है।"
+      },
+      "themes": ["ring", "ocean-crossing", "sita-mission"]
+    },
+    {
+      "ordinal": 22,
+      "kind": "chaupai",
+      "source_number": 20,
+      "text": "दुर्गम काज जगत के जेते।\nसुगम अनुग्रह तुम्हरे तेते॥",
+      "meaning": {
+        "en": "Devotees look to Hanuman's grace for courage when work feels impossible; the verse turns overwhelm into the possibility of a next step.",
+        "hi": "जब काम असम्भव लगे, भक्त हनुमान की कृपा से साहस माँगते हैं; यह चौपाई भारी कठिनाई को अगले सम्भव कदम में बदलने की आशा देती है।"
+      },
+      "themes": ["difficult-work", "grace", "courage"]
+    },
+    {
+      "ordinal": 23,
+      "kind": "chaupai",
+      "source_number": 21,
+      "text": "राम दुआरे तुम रखवारे।\nहोत न आज्ञा बिनु पैसारे॥",
+      "meaning": {
+        "en": "Hanuman is imagined as guardian at Rama's door, representing devoted service, discernment, and safe passage toward the sacred.",
+        "hi": "हनुमान को राम-द्वार का रक्षक कहा गया है—यह समर्पित सेवा, विवेक और पवित्रता की ओर सुरक्षित प्रवेश का रूपक है।"
+      },
+      "themes": ["guardian", "rama-door", "discernment"]
+    },
+    {
+      "ordinal": 24,
+      "kind": "chaupai",
+      "source_number": 22,
+      "text": "सब सुख लहै तुम्हारी सरना।\nतुम रक्षक काहू को डर ना॥",
+      "meaning": {
+        "en": "The devotional voice says refuge in Hanuman brings well-being and courage, allowing fear to loosen its grip.",
+        "hi": "भक्ति की भाषा में हनुमान की शरण सुख और साहस देती है, जिससे भय की पकड़ ढीली पड़ती है।"
+      },
+      "themes": ["refuge", "courage", "fear"]
+    },
+    {
+      "ordinal": 25,
+      "kind": "chaupai",
+      "source_number": 23,
+      "text": "आपन तेज सम्हारो आपै।\nतीनों लोक हाँक तें काँपै॥",
+      "meaning": {
+        "en": "Hanuman alone can contain his immense force; when it is released, the hymn says every realm feels it. Power here includes self-control.",
+        "hi": "हनुमान की शक्ति इतनी विशाल है कि उसे वे स्वयं ही सँभाल सकते हैं; पाठ बताता है कि उसका प्रकट होना तीनों लोकों को हिला देता है। शक्ति में आत्म-संयम भी शामिल है।"
+      },
+      "themes": ["self-control", "power", "cosmic-force"]
+    },
+    {
+      "ordinal": 26,
+      "kind": "chaupai",
+      "source_number": 24,
+      "text": "भूत पिशाच निकट नहिं आवै।\nमहाबीर जब नाम सुनावै॥",
+      "meaning": {
+        "en": "The hymn expresses protective faith: remembering the great hero Hanuman helps devotees face frightening presences and thoughts.",
+        "hi": "यह चौपाई रक्षा के विश्वास को व्यक्त करती है—महावीर हनुमान का स्मरण भयावह उपस्थितियों और विचारों का सामना करने का साहस देता है।"
+      },
+      "themes": ["protection", "fear", "remembrance"]
+    },
+    {
+      "ordinal": 27,
+      "kind": "chaupai",
+      "source_number": 25,
+      "text": "नासै रोग हरै सब पीरा।\nजपत निरंतर हनुमत बीरा॥",
+      "meaning": {
+        "en": "In devotional language, steady remembrance of Hanuman is associated with relief from illness and pain. It can support hope and resilience, but it does not replace medical care.",
+        "hi": "भक्तिपरक भाषा में हनुमान के निरन्तर स्मरण को रोग और पीड़ा से राहत की आशा से जोड़ा गया है। यह मनोबल दे सकता है, पर चिकित्सा का स्थान नहीं लेता।"
+      },
+      "themes": ["healing-hope", "remembrance", "safety-boundary"]
+    },
+    {
+      "ordinal": 28,
+      "kind": "chaupai",
+      "source_number": 26,
+      "text": "संकट तें हनुमान छुड़ावै।\nमन क्रम बचन ध्यान जो लावै॥",
+      "meaning": {
+        "en": "The hymn says wholehearted attention—in thought, action, and speech—opens a path through crisis with Hanuman's help.",
+        "hi": "पाठ कहता है कि मन, कर्म और वचन से एकाग्र स्मरण करने वाला व्यक्ति हनुमान की सहायता से संकट पार करने की राह पाता है।"
+      },
+      "themes": ["crisis", "wholehearted-attention", "help"]
+    },
+    {
+      "ordinal": 29,
+      "kind": "chaupai",
+      "source_number": 27,
+      "text": "सब पर राम तपस्वी राजा।\nतिन के काज सकल तुम साजा॥",
+      "meaning": {
+        "en": "Rama is praised as the disciplined sovereign, and Hanuman as the one who faithfully brings Rama's work to completion.",
+        "hi": "राम को तपस्वी राजा और हनुमान को उनके काम पूरे करने वाला निष्ठावान सहयोगी कहा गया है।"
+      },
+      "themes": ["rama", "leadership", "faithful-service"]
+    },
+    {
+      "ordinal": 30,
+      "kind": "chaupai",
+      "source_number": 28,
+      "text": "और मनोरथ जो कोई लावै।\nसोइ अमित जीवन फल पावै॥",
+      "meaning": {
+        "en": "The hymn welcomes people who bring their deepest hopes to Hanuman and voices confidence in abundant spiritual fruit, without making a transactional guarantee.",
+        "hi": "यह चौपाई लोगों को अपनी गहरी कामनाएँ हनुमान के सामने रखने देती है और भरपूर आध्यात्मिक फल की आशा व्यक्त करती है—इसे लेन-देन वाली गारंटी नहीं बनाती।"
+      },
+      "themes": ["hope", "aspiration", "devotional-fruit"]
+    },
+    {
+      "ordinal": 31,
+      "kind": "chaupai",
+      "source_number": 29,
+      "text": "चारों जुग परताप तुम्हारा।\nहै परसिद्ध जगत उजियारा॥",
+      "meaning": {
+        "en": "Hanuman's courage and service are said to shine through all four ages, keeping his example alive across time.",
+        "hi": "हनुमान का पराक्रम और सेवा चारों युगों में प्रकाशमान बताए गए हैं—उनका उदाहरण समय के पार जीवित रहता है।"
+      },
+      "themes": ["four-ages", "lasting-example", "radiance"]
+    },
+    {
+      "ordinal": 32,
+      "kind": "chaupai",
+      "source_number": 30,
+      "text": "साधु-संत के तुम रखवारे।\nअसुर निकंदन राम दुलारे॥",
+      "meaning": {
+        "en": "He protects seekers and saints, confronts destructive forces, and remains beloved of Rama.",
+        "hi": "वे साधकों और संतों के रक्षक, विनाशकारी शक्तियों का सामना करने वाले और राम के प्रिय हैं।"
+      },
+      "themes": ["protection", "saints", "rama-beloved"]
+    },
+    {
+      "ordinal": 33,
+      "kind": "chaupai",
+      "source_number": 31,
+      "text": "अष्ट सिद्धि नौ निधि के दाता।\nअस बर दीन जानकी माता॥",
+      "meaning": {
+        "en": "The hymn recalls Sita blessing Hanuman with the capacity to share extraordinary abilities and forms of abundance; the emphasis is her trust and grace, not a promised technique for gain.",
+        "hi": "पाठ सीता के उस वरदान को याद करता है जिसमें हनुमान को विशेष शक्तियाँ और समृद्धि बाँटने की क्षमता मिलती है; केन्द्र सीता का विश्वास और कृपा है, लाभ पाने की कोई निश्चित विधि नहीं।"
+      },
+      "themes": ["sita", "blessing", "abundance"]
+    },
+    {
+      "ordinal": 34,
+      "kind": "chaupai",
+      "source_number": 32,
+      "text": "राम रसायन तुम्हरे पासा।\nसदा रहो रघुपति के दासा॥",
+      "meaning": {
+        "en": "Hanuman carries the life-giving essence of devotion to Rama and chooses to remain Rama's servant.",
+        "hi": "हनुमान के पास राम-भक्ति का जीवनदायी रस है और वे सदा रघुपति के सेवक बने रहने का चुनाव करते हैं।"
+      },
+      "themes": ["rama-devotion", "service", "life-giving-essence"]
+    },
+    {
+      "ordinal": 35,
+      "kind": "chaupai",
+      "source_number": 33,
+      "text": "तुम्हरे भजन राम को पावै।\nजनम-जनम के दुख बिसरावै॥",
+      "meaning": {
+        "en": "Devotion to Hanuman is presented as a path toward Rama, helping old sorrow lose its hold on the heart.",
+        "hi": "हनुमान की भक्ति को राम तक पहुँचने का मार्ग बताया गया है, जहाँ पुराना दुःख हृदय पर अपनी पकड़ खोने लगता है।"
+      },
+      "themes": ["path-to-rama", "devotion", "sorrow"]
+    },
+    {
+      "ordinal": 36,
+      "kind": "chaupai",
+      "source_number": 34,
+      "text": "अंतकाल रघुबर पुर जाई।\nजहाँ जन्म हरि-भक्त कहाई॥",
+      "meaning": {
+        "en": "The hymn imagines life's end as arrival in Rama's presence and future identity as a devotee of Hari—a devotional hope about ultimate belonging.",
+        "hi": "पाठ जीवन के अन्त को राम की उपस्थिति में पहुँचने और आगे हरि-भक्त के रूप में रहने की आशा से देखता है—यह परम अपनत्व की भक्तिपरक कल्पना है।"
+      },
+      "themes": ["life-end", "belonging", "hari-devotion"]
+    },
+    {
+      "ordinal": 37,
+      "kind": "chaupai",
+      "source_number": 35,
+      "text": "और देवता चित्त न धरई।\nहनुमत सेइ सर्व सुख करई॥",
+      "meaning": {
+        "en": "This is the hymn's voice of single-pointed devotion: for this path, serving Hanuman is enough. It is not a judgment on other traditions or people's chosen forms of worship.",
+        "hi": "यह एकनिष्ठ भक्ति की भाषा है—इस मार्ग में हनुमान की सेवा ही पर्याप्त मानी गई है। यह अन्य परम्पराओं या लोगों की आराधना का निर्णय नहीं है।"
+      },
+      "themes": ["single-pointed-devotion", "hanuman-service", "tradition-boundary"]
+    },
+    {
+      "ordinal": 38,
+      "kind": "chaupai",
+      "source_number": 36,
+      "text": "संकट कटै मिटै सब पीरा।\nजो सुमिरै हनुमत बलबीरा॥",
+      "meaning": {
+        "en": "Remembering strong and heroic Hanuman is voiced as a source of courage and relief in trouble; the promise belongs to devotional faith, not guaranteed crisis prevention.",
+        "hi": "बलवीर हनुमान का स्मरण संकट में साहस और राहत का स्रोत बताया गया है; यह भक्तिपरक विश्वास है, हर संकट मिटने की निश्चित गारंटी नहीं।"
+      },
+      "themes": ["crisis", "courage", "devotional-promise"]
+    },
+    {
+      "ordinal": 39,
+      "kind": "chaupai",
+      "source_number": 37,
+      "text": "जै जै जै हनुमान गोसाईं।\nकृपा करहु गुरुदेव की नाईं॥",
+      "meaning": {
+        "en": "The devotee celebrates Hanuman and asks for compassionate guidance like that of a trusted teacher.",
+        "hi": "भक्त हनुमान की जय बोलकर उनसे विश्वसनीय गुरु जैसी करुणामय कृपा और मार्गदर्शन माँगता है।"
+      },
+      "themes": ["praise", "grace", "guidance"]
+    },
+    {
+      "ordinal": 40,
+      "kind": "chaupai",
+      "source_number": 38,
+      "text": "जो सत बार पाठ कर कोई।\nछूटहि बंदि महा सुख होई॥",
+      "meaning": {
+        "en": "The hymn associates devoted repetition with freedom from bondage and deep well-being. Devam does not prescribe a count or promise legal, physical, or supernatural release.",
+        "hi": "पाठ श्रद्धापूर्ण पुनरावृत्ति को बन्धन से मुक्ति और गहरे सुख से जोड़ता है। देवम् कोई संख्या निर्धारित नहीं करता और कानूनी, शारीरिक या अलौकिक मुक्ति की गारंटी नहीं देता।"
+      },
+      "themes": ["repetition", "freedom", "practice-boundary"]
+    },
+    {
+      "ordinal": 41,
+      "kind": "chaupai",
+      "source_number": 39,
+      "text": "जो यह पढ़ै हनुमान चालीसा।\nहोय सिद्धि साखी गौरीसा॥",
+      "meaning": {
+        "en": "The hymn says reading the Chalisa brings fulfilment, with Shiva named as witness. Devam presents this as devotional testimony rather than a measurable guarantee.",
+        "hi": "चालीसा का पाठ सिद्धि देने वाला कहा गया है और शिव को साक्षी माना गया है। देवम् इसे भक्तिपरक साक्ष्य के रूप में रखता है, मापी जा सकने वाली गारंटी के रूप में नहीं।"
+      },
+      "themes": ["reading", "fulfilment", "shiva-witness"]
+    },
+    {
+      "ordinal": 42,
+      "kind": "chaupai",
+      "source_number": 40,
+      "text": "तुलसीदास सदा हरि चेरा।\nकीजै नाथ हृदय महँ डेरा॥",
+      "meaning": {
+        "en": "Tulsidas identifies himself as Hari's servant and asks Hanuman to make a lasting home in his heart.",
+        "hi": "तुलसीदास स्वयं को हरि का सेवक बताते हैं और हनुमान से अपने हृदय में स्थायी निवास करने की प्रार्थना करते हैं।"
+      },
+      "themes": ["tulsidas", "service", "heart-home"]
+    },
+    {
+      "ordinal": 43,
+      "kind": "closing_doha",
+      "source_number": 1,
+      "text": "पवनतनय संकट हरन, मंगल मूरति रूप।\nराम लखन सीता सहित, हृदय बसहु सुर भूप॥",
+      "meaning": {
+        "en": "The closing prayer remembers the wind's son as a remover of distress and asks Hanuman—together with Rama, Lakshmana, and Sita—to dwell in the heart.",
+        "hi": "समापन प्रार्थना पवनपुत्र को संकट हरने वाला मंगलमय रूप मानती है और हनुमान से राम, लक्ष्मण और सीता सहित हृदय में बसने की विनती करती है।"
+      },
+      "themes": ["closing-prayer", "rama-family", "heart-home"]
+    }
+  ]
+}

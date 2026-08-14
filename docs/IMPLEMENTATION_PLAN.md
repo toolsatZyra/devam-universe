@@ -1,5 +1,823 @@
 # Implementation plan
 
+Checkpoint 2026-08-11 (consumer story-first goal correction): the controlling
+MVP priority is now the ordinary Hindi- or English-speaking Indian consumer.
+Complete stories and useful living practice outrank Sanskrit presentation,
+edition comparison, verse counts, citations and scholarly dispute in the normal
+experience. Provenance, rights, source identity, uncertainty and materially
+important variants remain mandatory internal grounding, not primary UI.
+
+Checkpoint 2026-08-13 (Ramayana denominator-first library pass):
+`knowledge_packs/inventories/ramayana-story-universe-v1.json` now fixes and
+enumerates the selected Ramayana MVP denominator at 49 story cycles, 517
+playable scenes, 2,340 bilingual beats, 18 living places, 18 temples, and 12
+festivals or performance traditions. All 48 registered living-world items now
+have substantial approachable English and Hindi story/context records,
+exploration links, evidence references, and explicit epic-belief/history/current
+practice boundaries. The living-item authoring queue is empty; completion of
+the selected Ramayana collection still requires an adversarial whole-journey
+continuity and expected-story review. A payload-free lexical diagnostic
+enumerates 4,323 capitalized source terms, including 3,957 unresolved ordinary
+words, epithets, collectives, and spelling variants. It is supplementary rather
+than a blocking story queue: only high-signal character or place gaps found
+during the journey review should be repaired. These counters are a versioned
+selected scope, not every Ramayana expression, place claim, temple, or living
+tradition.
+
+The separate consumer-expectation checklist now adds the missing product
+denominator that source-unit coverage could not provide. It combines the 49
+selected-expression cycles with 22 explicitly separate expectations drawn from
+Ramcharitmanas, Ramlila and audience-familiar adaptations, regional tellings,
+devotional afterlives, Rameswaram tradition, and the Diwali homecoming
+connection. The first major batch completes seven source-aligned
+Ramcharitmanas expectations through 69 substantial bilingual episodes: the
+Shiva-Sati-Parvati frame, Narada's delusion, Manu-Shatarupa's boon,
+Pratapbhanu's fall, Rama's childhood, Pushpavatika/Gauri, and Kevat's crossing.
+The second batch completes Angada's full embassy and planted-foot challenge,
+Kalnemi's deception, and Bharata's encounter with the mountain-bearing Hanuman
+through 25 more bilingual episodes. The third batch completes the Uttarkanda
+court and public sequence through Ram Rajya and Rama's citizen teachings, then
+the Kakabhushundi-Garuda frame and its embedded biography and teachings, through
+46 more bilingual episodes aligned to fixed scan pages 1071-1223. The three
+canonical packs and their draft database projections therefore cover twelve
+expected stories through 140 episodes while keeping them separate from the Dutt
+expression and leaving hosted data unchanged. A fourth pack completes five
+more consumer expectations through 35 bilingual episodes: the popular Lakshman
+Rekha and tasted-berries reception stories, the regional bridge squirrel, the
+living Ramanathaswamy Temple linga tradition, and the North Indian/Ayodhya
+Diwali homecoming lane. It separates selected epic text, later reception,
+living belief, current institution, real place, and regional festival practice;
+no television dialogue or source payload is copied. A fifth pack completes the
+final five version-one expectations through 45 more bilingual episodes. It
+retains Sulochana's later-performance and harmful-sati boundary, separate
+Ahiravana/Mahiravana branches, the TTD Lava-Kusha battle reception, and the
+modern devotional status of the Hanuman chest and sindoor stories. All 22
+supplements are now authored through 220 episodes. The consolidated
+whole-Ramayana v1 continuity and adversarial review passes in
+`RAMAYANA_EXPECTED_STORY_V1_ADVERSARIAL_REVIEW_2026-08-14.md`; wider expressions
+remain separate denominators.
+
+Checkpoint 2026-08-13 (end-to-end devotional reading correction):
+Ramcharitmanas and Hanuman Chalisa are explicitly modelled as complete ordered
+reading works, not collections of summaries. The Ramcharitmanas contract
+defines full-work, one-page-daily, short-passage-daily, kanda-progression, and
+exact-resume modes over 1,158 text-bearing pages; all remain incomplete until
+every source-text interval and its bilingual meaning layer are resolved. The
+345 q1 pages remain a raw page/commentary quality counter rather than the
+consumer source-work denominator. The Hanuman
+Chalisa pack exposes complete 43-unit recitation and an optional source-ordered
+one-unit-daily path now, while persistent resume remains product work. Reading
+pace is user choice, not a Panchang rule or ritual prescription.
+Story packs, including the 140 completed Ramcharitmanas story episodes, do not
+increment either continuous-reading denominator. The reading experience must
+support the ordinary behavior of finishing the work end to end, pausing after a
+page or source-bounded passage, and returning to the exact next position.
+
+Checkpoint 2026-08-14 (Balakanda-closing Ramcharitmanas reading batch):
+The consumer denominator is now the complete canonical source work, not every
+line of a historical edition's commentary. Balakanda groups 293-361 form
+a continuous 377-unit source sequence. A one-natural-source-unit pace advances through
+those same units and retains the containing natural passage plus its bilingual
+meaning, so a daily-sized selection is never detached from context. This is
+the current contiguous corrected interval: 69 natural passages, 377 ordered source
+units, and fresh approachable Hindi and English meaning for every passage,
+fixed to scan pages 354-424. It reaches Balakanda's closing soratha but does
+not complete the kanda because groups 1-292 remain absent. The clean web stream accelerated mismatch
+discovery but is reference-only; product text was reconciled against the
+retained public-domain scan, including correction of a reference-stream error
+from `preeti kai preeti` to the scanned `preeti kai reeti`, repair of a
+collapsed-word boundary in group 324, and correction of group 341 from
+`kohu mohu mamata madu tyagi` to the scanned `krodha moha mamata mada tyagi`.
+A first-class local
+reading schema now separates ordered source units, bilingual passage aids, and
+user-controlled exact progress from narrative adaptations. The complete work
+remains open beyond this batch, and no hosted migration was applied. The
+bounded source, meaning, rights, claim, and schema review is recorded in
+`docs/RAMCHARITMANAS_BALAKANDA_293_361_READING_AUDIT_2026-08-14.md`.
+
+Checkpoint 2026-08-14 (Ayodhyakanda opening Ramcharitmanas reading batch):
+The corrected forward reading tail now continues across the kanda boundary
+through Ayodhyakanda's three opening shlokas, opening doha, and narrative groups
+1-11: 12 natural passages, 59 source units, and fresh Hindi and English meaning
+for each passage on fixed scan pages 425-436. The batch preserves the selected
+scan's separately labelled opening doha 1 and narrative doha 1, ends after the
+gods ask Saraswati to turn Rama toward forest exile, and deliberately stops
+before her response in group 12. Rendered-page review corrected collapsed and
+misread reference text including `सब बिधि गुरु`, `बोलेउ`, `बरिस`, `हरषि`,
+`बीथिन्ह`, `तोरन`, `गुरु आगमन`, `तेहि अवसर`, and `चोरहि` against the fixed
+carrier. The combined reviewed forward tail is now 81 passages and 436 source
+units from Balakanda group 293 through Ayodhyakanda doha 11. No kanda or work is
+complete: Balakanda groups 1-292 and Ayodhyakanda group 12 onward remain open.
+The complete book remains the product; page, passage, source-unit, or kanda
+daily reading is optional pacing over that same order, with exact resume. The
+existing reusable reading migration can represent the batch, but no payload SQL
+was added and no hosted database was changed. The review is recorded in
+`docs/RAMCHARITMANAS_AYODHYAKANDA_OPENING_11_READING_AUDIT_2026-08-14.md`.
+
+Checkpoint 2026-08-14 (Ayodhyakanda 12-22 Ramcharitmanas reading batch):
+The forward reading tail now carries the complete Saraswati-Manthara-Kaikeyi
+persuasion episode through doha 22: 11 natural passages, 55 source units, and
+fresh Hindi and English meaning for each passage on fixed scan pages 436-447.
+It preserves Saraswati's reluctance, the poem's criticism of the gods,
+Manthara's staged distress and escalating conspiracy, Kaikeyi's initial love
+for Rama, the conversion of uncertainty into fear, the two-boon strategy, and
+the final instruction to enter the anger chamber. Consumer aids explicitly
+attribute divine causation, fate, omens, astrology, ableist and misogynistic
+slurs, servitude language, self-harm statements, and coercive oath tactics
+rather than presenting them as fact or advice. The reviewed cumulative tail is
+now 92 passages and 491 units from Balakanda group 293 through Ayodhyakanda
+doha 22. No kanda or work is complete; group 23, where Kaikeyi acts, is next,
+and Balakanda groups 1-292 remain absent. The existing reusable reading schema
+still covers the batch, so no payload SQL or hosted mutation was required. See
+`docs/RAMCHARITMANAS_AYODHYAKANDA_12_22_READING_AUDIT_2026-08-14.md`.
+
+Checkpoint 2026-08-14 (Ayodhyakanda 23-39 Ramcharitmanas reading batch):
+The corrected forward reading tail now continues through one larger dramatic
+arc: Kaikeyi enters the anger chamber; Dasharatha arrives without knowing her
+terms; the two old boons are elicited under an oath; Kaikeyi demands Bharata's
+coronation and Rama's fourteen-year exile; Dasharatha pleads, collapses, and
+endures the night; and Sumantra brings Rama before the stricken king at doha
+39. The batch contains 17 natural passages, 87 ordered source units, and fresh
+Hindi and English meaning for every passage on fixed scan pages 447-465.
+Consumer context preserves absent consent, coercive oath and death threats,
+period misogyny and hierarchy, harmful widow-death imagery, bodily distress,
+and attributed fate or supernatural causation without turning them into advice
+or verified history. The reviewed cumulative tail is now 109 passages and 578
+source units. No kanda or work is complete: Rama has not yet heard the demands,
+Ayodhyakanda group 40 onward remains open, and Balakanda groups 1-292 remain
+absent. The existing reusable reading schema still covers the batch, so no
+payload SQL or hosted mutation was required. Future authoring should use whole
+works, whole kandas, or large coherent arcs and one shared validation pass,
+rather than repeated tiny release-style batches.
+
+Checkpoint 2026-08-14 (Ayodhyakanda 40-78 Ramcharitmanas reading batch):
+The forward reading tail now advances in one coherent family-decision arc from
+Kaikeyi stating the binding command through Rama's acceptance, Ayodhya and
+Dasharatha's grief, Rama's disclosure to Kaushalya, Sita's informed insistence
+on accompanying him, Lakshmana's request and Sumitra's counsel, and the three
+returning to Dasharatha. It stops at doha 78 when Dasharatha asks Sita to remain
+in Ayodhya, before her reply and the final departure preparations. The batch
+contains 39 passages and 197 exact source-ordered units with fresh Hindi and
+English meaning on fixed scan pages 466-504. The cumulative corrected set is
+now 148 passages and 775 source units; no kanda or complete work is claimed.
+The review preserves Bharata's absent consent, Sita's stated choice, period
+misogyny and caste/class stereotypes, devotional family ideals, grief and death
+language, and attributed karma or supernatural claims without converting them
+into modern advice. The reusable payload-free reading schema remains
+sufficient and no hosted service was changed. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_40_78_READING_AUDIT_2026-08-14.md.
+
+Checkpoint 2026-08-14 (Ayodhyakanda 79-142 Ramcharitmanas reading batch):
+The forward reading tail now advances through the whole departure-and-settlement
+journey: the family leaves Dasharatha's palace; Ayodhya follows to the Tamasa;
+Rama leaves the sleeping citizens; Guha hosts and guards the travellers;
+Lakshmana's night teaching, Sumantra's plea, Sita's repeated choice, Kevat's
+crossing, Prayag, Yamuna, roadside communities, Valmiki's inward and practical
+answers, and Chitrakoot settlement remain in source order. The narrator then
+turns back to Sumantra and the empty chariot at doha 142. The batch contains 64
+natural passages and 322 exact source-ordered units with fresh Hindi and English
+meaning on fixed scan pages 504-567. The cumulative corrected set is now 212
+passages and 1,097 source units; no kanda or complete work is claimed. The review
+preserves Sita's stated agency; Guha's, Kevat's, Kol and Kirat communities' local
+knowledge and voluntary choices; period hierarchy, gender and caste language;
+grief and death speech; devotional philosophy, sacred geography, and
+supernatural claims without turning them into modern advice, unpaid-labour
+expectations, verified geography, or scientific history. The reusable
+payload-free reading schema still supports full-work, page, passage, source-unit,
+kanda, and exact-resume modes, so no migration payload or hosted mutation was
+required. A one-page, one-passage, one-doha, or one-chaupai daily path is an
+optional pace through the complete book, never a substitute for it. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_79_142_READING_AUDIT_2026-08-14.md.
+
+Checkpoint 2026-08-14 (Ayodhyakanda 143-188 Ramcharitmanas reading batch):
+The forward reading tail now covers Sumantra's empty-chariot return, Dasharatha's
+last conversation and death, the concealed summons to Bharata, Bharata's return
+and rejection of an unchosen crown, Shatrughna's assault on Manthara and
+Bharata's intervention, Kausalya's recognition of Bharata's non-complicity,
+Dasharatha's funeral, the succession council, and Ayodhya's departure toward
+Chitrakoot through the Tamasa and Gomati halts. The batch contains 46 natural
+passages and 232 exact ordered source units with fresh Hindi and English meaning
+on fixed scan pages 568-609. The cumulative reviewed set is 258 passages and
+1,329 units through doha 188; group 189 begins the next Guha-conflict arc. The
+review bounds acute grief and self-condemnation, concealed information,
+misogynistic and disability-directed abuse, physical assault, caste and gender
+rhetoric, dangerous obedience examples, monarchy, succession pressure, funeral
+rites, omens, and divine claims. Bharata's absence, lack of consent, crown
+refusal, intervention against further violence, and practical protection of
+Ayodhya remain explicit. The existing reading schema remains sufficient, so no
+new migration or hosted mutation was needed. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_143_188_READING_AUDIT_2026-08-14.md.
+
+Checkpoint 2026-08-14 (Ayodhyakanda 189-225 Ramcharitmanas reading batch):
+The forward reading tail now covers Guha's mistaken alarm and defensive
+preparations, his decision to verify Bharata's intent, Bharata's embrace of
+Guha, Ramghat and the former grass bed, the Ganga crossing, Prayag and the
+Triveni prayer, Bharadwaja's reassurance and miraculous hospitality, the
+Indra-Brihaspati exchange, the Yamuna crossing, village conversations, route
+memory, and the first sight of Kamadgiri. The batch contains 37 natural passages
+and 187 exact ordered source units with fresh Hindi and English meaning on
+fixed scan pages 610-644. The cumulative reviewed set is 295 passages and 1,516
+units through doha 225; group 226 begins Sita's dream and the news of Bharata's
+arrival. The review bounds mistaken suspicion, preemptive violence and
+self-sacrifice rhetoric, caste stigma and period community labels, monarchy,
+omens, sacred-water prayer, supernatural voices and hospitality, devotional
+absolutes, ascetic deprivation, royal labour and environmental burden, and
+celestial pleasure imagery. The standard normalized doha-218 reading remains
+the selected expression while the additional line displayed in the old scan is
+retained only as variant evidence. The existing payload-free reading schema
+remains sufficient, so no migration or hosted mutation was needed. See
+docs/RAMCHARITMANAS_AYODHYAKANDA_189_225_READING_AUDIT_2026-08-14.md.
+
+The current Ramayana implementation now carries one complete Dutt English
+expression with 652 source-ordered units derived from its printed headings,
+whose numbering/transcription anomalies remain explicitly bounded, and a 49-turn bilingual whole-epic
+compass, and all 49 turns corpus-playable in the prepared projection through
+517 substantial scenes and 2,340
+bilingual beats. The exact playable span covers all of Yuddha 1–128: Indrajit's
+hidden assault and final battle; Lanka's civilian and family losses; Rama's
+rejection of collective punishment; Ravana's grief-driven threat to Sita;
+Lakshmana's protection of Vibhishana, grave injury and supported recovery;
+Matali and Ravana's charioteer as skilled collaborators; the Aditya Hridaya
+pause; the seven-day final duel; Ravana's death; the grieving survivors who
+return to Lanka; the funeral aftermath; Sita's public accusation and coercive
+fire ordeal; divine and family interventions; the restoration of fallen allies;
+the aerial road home; Bharata's waiting; Ayodhya's welcome; the coronation; and
+the histories behind the war, from the older Lanka lineages through Ravana's
+campaigns, the harms named by Vedavati and Rambha, the limits set by Kartavirya
+and Vali, Hanuman's remembered strength, and the divine frame that does not
+erase Ravana's choices or Sita's suffering; the allies' departures; the return
+of Pushpaka by consent; Sita's pregnancy and freely chosen hermitage visit; and
+the public prejudice that converts her forced captivity into suspicion; the
+deceptive journey across the Ganga; Sita choosing survival and sending her own
+message; Valmiki's community offering refuge without another ordeal; and the
+prophecy frame that does not excuse abandonment. The kingdom-tales-and-twins
+turn now adds public access and repair, family coercion, animal petitioners,
+Shatrughna's Lavana campaign and civic rebuilding, Sita giving birth within her
+care community, and the twins' performed memory across Uttara 62–84. The later
+reign turn now carries the grieving father's public accusation; the court's
+caste-ranked theory and Shambuka's killing without turning it into a modern
+norm; Sweta's ungiven abundance; Arajās's explicit refusal, Danda's assault and
+the collective destruction behind Dandaka; Bharata stopping a ruinous
+Rajasuya; Vritra, Indra and ecological fallout; and Ila/Ilā's transformation,
+consent, divided memory, Pururava and restoration across Uttara 85–102. The
+twins-sing-Sita-returns turn adds the Ashvamedha's public world, Lava and
+Kusha's performed memory, their refusal of royal payment, Rama's recognition,
+Valmiki's testimony, Sita's final public ordeal and self-directed departure,
+and the refusal to romanticise Rama's destructive grief across Uttara 103–110.
+The last-departures turn completes the selected-expression backbone through
+the years after Sita; the mothers' deaths; dynastic expansion and the mass
+violence beneath new cities; Kala's sealed audience; Lakshmana's impossible
+choice, renunciation and death; the succession of Kusha, Lava and the brothers'
+sons; the differentiated futures of Hanuman, Vibhishana and the old alliance;
+Ayodhya's departure; the Sarayu crossing; and civic renewal after the
+devotional epilogue across Uttara 111–123. No turn remains orientation-only in
+the authored corpus or prepared database projection. The current live journey
+still illustrates 55 scenes across seven districts and gives only 14 turns a
+direct visual entrance; 35 turns still stop at orientation before their
+authored scenes.
+The shared Ramayana projection now retains at least one narrative place for all
+517 scenes and compiles 516 story-order, 94 character-path, 50 place-echo and
+22 parallel-thread links. Its public RPC returns reversible story connections,
+characters, places and threads while continuing to omit source apparatus. This
+projection remains prepared locally and has not been applied to hosted Supabase.
+Six curated, bilingual turn-to-Atlas links now carry the same shared projection
+into living Diwali, Vivaha Panchami, Ramlila, Kishkindha/Anegundi, Hanuman
+Chalisa, and Anjanadri worlds. The RPC preserves these as first-class
+`livingConnections` with consumer labels and Atlas destinations, while each
+destination keeps its own source, regional, historical, practice, and
+uncertainty boundary. This closes the missing story-to-living-world data
+mechanic; it does not make those living worlds part of the selected Dutt text.
+Ramcharitmanas now compiles all 813 proofread or validated pages of its
+1,172-page fixed expression after exact-revision recovery of 11 malformed
+provider-layout projections; 345 unproofread text-bearing pages remain held, while
+all 14 q0 coordinates are verified structural blank scan pages rather than
+missing story text.
+All 345 q1 pages have also been dual-witness screened against edition-matched IA
+OCR. Although 340 fall inside the accepted-page control envelope, visible
+transcription defects prevent bulk promotion; all 345 remain correction or
+source-addressed consumer-synthesis inputs, not verified translation input.
+A bounded PaddleOCR Devanagari trial on a fixed difficult page failed in the
+Windows oneDNN detector runtime before emitting text under both the default v6
+and matching v5 mobile detectors. It is not approved for scale; no model or OCR
+payload enters the repository or source vault, and consumer synthesis remains
+source-addressed rather than dependent on unverified machine transcription.
+Hanuman Chalisa now has one fixed, attributed CC BY-SA 4.0 carrier and a
+complete 43-unit consumer sequence: two opening dohas, forty chaupais and one
+closing doha, each with beta-reviewed normalized Devanagari text and simple
+Hindi and English meaning. Its deterministic reading doorway is integrated
+through the Living Atlas, Search and Sārthi, while persistent saved progress,
+the shared database projection, hosted application and independent cultural
+and linguistic review remain explicit gaps.
+
+The retained Ganguli Mahabharata source is now structurally qualified as one
+complete fixed English expression: four Project Gutenberg text objects,
+15,262,892 bytes, all 18 major parvas across books 1–18, and 2,107
+source-relative section units. Every source unit reconstructs by hash and byte
+span and losslessly covers its selected narrative-body interval; provider
+header, footer, licence and trademark framing remain outside the denominator.
+Literal electronic-text anomalies remain explicit, including a reordered Adi
+marker and gaps in Sabha, Drona and Santi. Harivamsha, Hindi, consumer story,
+characters, kingdoms, places, teachings, shared database projection and hosted
+application remain false. The fixed source-unit root is
+`e476857f386c8faf48be9463d0cba9523f68652bdb8e14fc6951727f04d1040c`.
+`MAHABHARATA_GANGULI_SOURCE_QUALIFICATION_2026-08-12.md` records the exact
+rights, structure, carrier and completion boundaries. Panchatantra retains the
+gap recorded in the consumer-content inventory.
+
+The complete fixed Mahabharata denominator is now partitioned exactly once into
+a consumer-facing bilingual backbone plan: 12 broad arcs and 77 ordered turns
+cover all 2,107 source-relative units. Every turn has an English and Hindi title
+and story promise plus initial character, place, kingdom and thematic traversal
+facets. The plan explicitly names consequential harms such as Draupadi's public
+humiliation, Abhimanyu's many-against-one killing, the attack on sleeping
+survivors and the grief of bereaved women. Historically situated social and
+prescriptive material remains contextualized rather than presented as timeless
+consumer instruction. All 77 backbone records remain `planned_not_playable`;
+the first twelve now have companion `authored_not_projected` scene packs.
+Canonical graph entities, shared database projection and product integration
+remain later boundaries. See
+`MAHABHARATA_CONSUMER_BACKBONE_2026-08-12.md`.
+
+Detailed Mahabharata authoring has begun beneath that map. The first four turns
+now contain 22 exact-span scenes and 96 substantial Hindi/English beats across
+Adi source ordinals 1–74. The opening batch covers Sauti and the layered act of
+carrying memory; Samantapanchaka as narrative geography; Uttanka's transfer of
+a private grievance into royal policy; Puloma, Chyavana and the dispute over a
+witness's responsibility; Ruru's half-life bargain for Pramadvara; and
+Dundubha's interruption of indiscriminate revenge. The complete Astika cycle
+then connects Kadru and Vinata, Garuda's recovery of amrita without consuming
+it, the serpent community's survival debate, Parikshit's misconduct and death,
+the two Jaratkarus and Astika's birth, Janamejaya's conversion of grief into
+policy, the operating sacrifice, Astika's guarded entry and the final command
+to stop. Every scene includes characters, places and visual staging. They
+remain `authored_not_projected`, so this is real story-corpus progress but not
+yet a playable consumer surface.
+
+The fourth turn adds the nested demand for a detailed family history;
+Satyavati's river upbringing, negotiation with Parashara and relationship to
+Vyasa; the epic's explicitly mythic descent-and-lineage frame; and Shakuntala's
+complete path from Kanva's protected household through her negotiated condition
+with Dushmanta, years of raising Sarvadamana, the king's public denial, her
+argument about truth and parenthood, and Bharata's recognition. It keeps
+caregiving kin primary, unequal power visible and divine confirmation from
+retroactively making the public denial harmless.
+
+The fifth turn is now fully scene-authored as ten scenes and 43 bilingual beats
+across Adi 75–94. Its first three scenes cover the ancestry route into Yayati;
+Kacha's repeated murders, Devayani's repeated interventions, Shukra's embodied
+transfer of restoration knowledge and the failed marriage proposal; and the
+Devayani–Sharmishtha conflict from mixed garments through the well, Yayati's
+rescue and Sharmishtha's coerced service for the safety of her people. Seven
+completion scenes then follow Devayani's negotiated marriage and the unequal
+two-household palace; Sharmishtha's request for children; discovery and
+Shukra's curse; the four sons' refusals and Puru's costly acceptance; Yayati's
+thousand-year experiment with desire; restoration and contested succession;
+forest renunciation; the pride that causes his fall from heaven; questioning
+and freely offered help from his descendants; and the Puru-line bridge toward
+the central Kuru household. No Yayati source interval remains hidden behind the
+turn title.
+
+The sixth turn is now fully scene-authored as thirteen scenes and 56 bilingual
+beats across Adi 95–114. It does more than introduce Bhishma: the journey
+connects the Kuru ancestry to Mahabhisha, Ganga and the Vasus; Shantanu's
+conditional marriage and seven infant deaths; Devavrata's return and terrible
+succession vow; Satyavati's sons; Amba's lost agency; Vichitravirya's death;
+Satyavati's intervention with Vyasa; the births and unequal court positions of
+Dhritarashtra, Pandu and Vidura; Mandavya's challenge to disproportionate
+punishment; Gandhari's marriage; Kunti's Durvasa mantra, encounter with Surya
+and separation from Karna; Kunti and Madri's marriages to Pandu; and Pandu's
+campaigns and forest retirement. Sacred explanation never erases the human
+cost of infant death, coercive dynastic pressure, unequal status, or constrained
+choice. The first six turns now total 45 exact-span scenes and 195 substantial
+Hindi/English beats; 71 turns remain authored only at backbone-plan depth.
+
+The seventh turn is now fully scene-authored as twelve scenes and 57 bilingual
+beats across Adi 115–129. The journey preserves Gandhari's two-year pregnancy,
+the one hundred and one guarded portions, Duhsala and Yuyutsu; retains the
+hundred brothers as named identities without forcing a consumer through an
+unreadable roll call; follows Kindama's death and curse; and shows how Pandu's
+fear of childlessness becomes unequal dynastic pressure on Kunti. It carries
+Yudhishthira, Bhima, Arjuna, Nakula and Sahadeva through their distinct births,
+Kunti's boundaries and Madri's request for motherhood. It then treats Pandu's
+final encounter as forced despite Madri's resistance, keeps Madri's
+self-immolation period-bound rather than prescriptive, and follows Kunti and
+the five bereaved children back to Hastinapura. The closing movement connects
+the city's mourning, Satyavati's withdrawal, Bhima's harmful childhood play,
+Duryodhana's premeditated poisoning and drowning attempt, Bhima's explicitly
+mythic Naga-world recovery, Yuyutsu's warning, and the cousins' move into
+weapons training. The first seven turns now total 57 exact-span scenes and 252
+substantial Hindi/English beats; 70 turns remain at backbone-plan depth.
+
+The eighth turn is now fully scene-authored as twelve scenes and 60 bilingual
+beats across Adi 130–142. It follows Kripa and Kripi's adoption; Drona's
+training, poverty and class-shaped conflict with Drupada; Arjuna's discipline;
+and Ekalavya's exclusion, self-education and coerced thumb payment without
+softening either structural harm or the injured dog. The tournament preserves
+Karna's demonstrated equality, Kunti's constrained silence, Adhiratha's real
+parenthood, Bhima's status humiliation and Duryodhana's defence as both
+socially meaningful and politically binding. Drona then turns a concealed
+student promise into war against Drupada, while the scenes retain casualties,
+coercion and territorial partition instead of treating them as consequence-free
+heroics. Yudhishthira's appointment and the brothers' growing power lead into
+Kanika's ruthless counsel, which remains dangerous character content rather
+than consumer instruction. The first eight turns now total 69 exact-span
+scenes and 312 substantial Hindi/English beats through Adi 142; 69 turns remain
+at backbone-plan depth.
+
+The ninth turn is now fully scene-authored as twelve scenes and 55 bilingual
+beats across Adi 143–166. The conspiracy retains Dhritarashtra's consent,
+Varanavata's genuine public welcome and Purochana's weaponised architecture;
+Vidura's code, miner and boat form a distributed rescue rather than a lone
+hero's insight. The lac-house escape names the Nishada mother and five sons as
+innocent casualties whose misidentified bodies protect the fugitives. Forest
+exile then centres Hidimbi's refusal of her brother's killing order, her own
+petition and the bounded agreement with Bhima before Ghatotkacha enters the
+family as son and autonomous ally. In Ekachakra, Baka is a coercive protection
+system imposed through rotating food, animal and human tribute. The host
+father, wife, daughter and young son each receive a full voice without turning
+period-bound gender or caste duties into modern instruction. Bhima's
+intervention ends both Baka and the continuing human-killing demand while the
+family's hidden identity remains protected. The first nine turns now total 81
+exact-span scenes and 367 substantial Hindi/English beats through Adi 166; 68
+turns remain at backbone-plan depth.
+
+The tenth turn is now fully scene-authored as twelve scenes and 57 bilingual
+beats across Adi 167–185. A travelling guest carries news of Draupadi's
+svayamvara into the Ekachakra household; the nested account follows Drupada's
+revenge search, the queen's excluded timing, and the separate fire-births of
+Dhrishtadyumna and Draupadi without reducing either child to prophecy.
+Kunti's practical migration proposal receives the assent of every son, while
+Vyasa's prior-life explanation remains an internal epic claim rather than
+Draupadi's supplied consent. At the Ganga, Arjuna and Angaraparna move from an
+access dispute through Kumbhinasi's life-saving intervention into reciprocal
+friendship and the Tapati–Samvarana–Kuru ancestry journey. The fixed carrier's
+printed CLXXVII/CLXXVI disorder and corrupted transition remain explicit
+source metadata, not consumer copy or silent editorial repair. The later
+nested histories keep Nandini's agency, Vasishtha's suicidal grief,
+Adrisyanti's accompaniment, Aurva's redirected survivor rage, Pulastya's
+rejection of collective punishment, and Madayanti's decisive refusal and
+limited consent evidence visible. Dhaumya freely accepts the guiding role
+before the expanded party approaches Panchala. The first ten turns now total
+93 exact-span scenes and 424 substantial Hindi/English beats through Adi 185;
+67 turns remain at backbone-plan depth.
+
+The eleventh turn is now fully scene-authored as eight scenes and 41 bilingual
+beats across Adi 186–209. It treats the svayamvara as a navigable political
+world rather than a single target shot: the disguised family enters crowded
+Kampilya; Drupada's private hope shapes the public test; Draupadi's recorded
+refusal stops Karna without turning its status reasoning into a modern rule;
+Arjuna wins; and defeated rulers attack the declared result. At the potter's
+house, Kunti's unseeing statement, Arjuna's objection, Yudhishthira's
+shared-marriage declaration and the selected expression's missing direct
+answer from Draupadi remain separate facts. Dhrishtadyumna's surveillance,
+Drupada's status prejudice, Panchala's identity tests and the family's reveal
+lead into explicit objections from Drupada and Dhrishtadyumna. Vyasa's private
+celestial and prior-life explanations are framed as internal epic claims that
+persuade Drupada, not supplied consent or a current marital prescription. The
+successive ceremonies retain period-bound household ideals, bodily claims and
+gift language behind context boundaries. The final scenes expose Duryodhana's
+manipulation and murder proposals, Karna's escalation to open war, and the
+counter-counsel of Bhishma, Drona and Vidura before the return to Hastinapura
+and the labour-filled transformation of Khandavaprastha into Indraprastha.
+The first eleven turns now total 101 exact-span scenes and 465 substantial
+Hindi/English beats through Adi 209; 66 turns remain at backbone-plan depth.
+
+The twelfth turn is now fully scene-authored as ten scenes and 51 bilingual
+beats across Adi 210–223. Narada's warning opens the household-rule sequence
+through the Sunda–Upasunda and Tilottama story without treating Tilottama as
+the cause of the brothers' violence. The Indraprastha rule, cattle alarm and
+Arjuna's chosen exile remain distinct from Draupadi's unrecorded participation
+in making that rule. Arjuna's journeys then retain Ulupi's coercive pressure,
+Chitrangada's unrecorded direct assent and the Manipur succession condition;
+the five-water apsara episode keeps its punitive gendered curse inside the
+epic's frame rather than endorsing it. Krishna welcomes Arjuna through
+Prabhasa and Raivataka into Dwaraka before Subhadra's forced taking: male
+approval, later reconciliation and eventual marriage are not rewritten as her
+prior consent. The Yadava mobilization, Krishna's argument, return to
+Indraprastha, Draupadi's pain, Subhadra's deferential presentation, alliance,
+Abhimanyu and the five sons born to Draupadi complete the turn without making
+Draupadi an obstacle, treating deference as parity, or reducing children and
+people assigned to service to inventory. The first twelve turns now total 111
+exact-span scenes and 516 substantial Hindi/English beats through Adi 223; 65
+turns remain at backbone-plan depth.
+
+The existing seven-scene road-home district remains the single Yuddha 122–128
+route rather than being duplicated. Its 29 beats now carry substantial Hindi
+and English story continuations while preserving the existing visual cues,
+source addresses, and world routes; user-visible journey copy no longer exposes
+editorial or citation apparatus. Exact Uttara 1–123 section-span hashes were
+independently re-derived from the retained Dutt bytes and now ground 95
+substantial bilingual playable scenes containing 361 beats across the complete
+selected Uttara range. The first whole-journey adversarial review is complete.
+It found five thin turns that needed additional narrative staging, five long
+scenes that need internal phase navigation, and five genuine source-apparatus
+leaks in consumer copy; the copy leaks are repaired. All five thin turns now
+clear the provisional depth floor. The accumulated compression repairs now
+provide 162 exact data-only scenes replacing 40 compressed story blocks. The same source-partitioned repair now
+expands the ten-section `lakshmana-joins` departure summary into five scenes
+covering choice, weapons, gifts, palace conflict, bark clothing, blessings, and
+farewells, and expands the seven-section `rama-accepts-exile` summary into
+separate scenes for Rama's answer, Kausalya's grief, Lakshmana's two resistance
+arguments, Rama's de-escalation, Kausalya's release, and her protection
+blessing. It also replaces the six-section `conquest-crosses-cosmic-worlds`
+summary with separate source-unit stories for the Nivatakavacha alliance and
+Varuna campaign, Bali's lesson, Surya's unanswered ultimatum, Mandhata's duel,
+the Moon's resistance, and the western-island cosmic encounter. It also replaces
+the compressed Uttara 3–5 two-lineages summary with three exact scenes and
+fifteen bilingual beats. Kubera's protection office and settlement retain
+Lanka's earlier Rakshasa residents and displacement memory; Sukesha's rescue
+centres the abandoned infant and Parvati's compassion without turning a boon
+into inherited destiny; and Malyavan, Sumali, and Mali build family and city
+before their own commands turn security into harm. Rakshasa identity, ordinary
+residents, descendants, and Lanka itself are not assigned collective moral
+guilt for those rulers' chosen conduct. It also replaces the compressed Uttara
+6–8 first-Lanka-war summary with three exact scenes and fifteen bilingual beats.
+The causal chain now preserves the harmed communities' petitions, Shiva's
+bounded referral, Vishnu's epic-war promise, Malyavan's rejected pre-war
+warning, and Sumali and Mali's decision to escalate. The battle retains army
+organization, collaborators, animals, mass loss, Mali's death, Malyavan's
+protection claim for retreating fighters, Vishnu's conflicting promise, and the
+surviving households' displacement to the nether regions. This makes the later
+vacant Lanka an explained consequence without assigning the rulers' decisions
+to every Rakshasa or resident. It also replaces the compressed Uttara 9-10
+Kaikasi-and-boons summary with two exact scenes and ten bilingual beats. Kaikasi
+reaches Visrava under her father's dynastic mandate but speaks and changes the
+announced future; birth omens, appearance, and Rakshasa lineage are not treated
+as inherited moral destiny. The three brothers' austerities lead to distinct
+choices: Ravana creates the human vulnerability through contempt, Vibhishana
+asks for ethical steadiness without endorsing the source's lineage prejudice,
+and Kumbhakarna's sleep boon remains explicitly shaped by Brahma and Saraswati's
+interference with his speech rather than a free, informed preference. It also replaces
+the compressed Uttara 36-38 Kartavirya-captures-Ravana summary with three exact
+scenes and fifteen bilingual beats. Rama's question restores defeats hidden by a
+conqueror's record; the Narmada remains an inhabited river world while Ravana's
+epic worship is kept distinct from modern ritual instruction. The river reversal
+is not invented as a targeted attack, whereas Ravana's immediate escalation, the
+killing of Arjuna's guards, Kartavirya's victory, Ravana's binding, and the failed
+rescue attempt remain explicit. Pulastya acknowledges the defeat before invoking
+family and ascetic authority, so negotiated release and fire-witnessed friendship
+end captivity without becoming Ravana's victory, repair, or lasting reform. It also replaces
+the compressed Uttara 43-45 prophecy summary with three exact scenes and fifteen
+bilingual beats. Sanatkumara's account now remains attributed theology: Ravana
+asks about Narayana and the fate of those killed by Hari, hears the future names
+and forest path of Rama and Sita, and chooses to plan a conflict. Agastya's later
+explanation and its devotional listening promise remain distinct from historical
+certainty, ritual guarantee, consent, inevitability, or acquittal. The prior scene's
+out-of-span Swetadvipa material has been removed; that memorable journey begins
+in Uttara 46. The completed Uttara 46–53 repair now restores that journey and
+corrects the entire shifted departures sequence through Rama's first morning of
+rule, Janaka and the allied kings returning home, the redistribution of gifts,
+Hanuman's farewell, Pushpaka's permission chain, Sita's freely chosen one-night
+hermitage visit, and the public rumour that weaponizes her forced captivity.
+The repair preserves the Swetadvipa women's agency without bodily ridicule,
+tests Agastya's later protection language against the established abduction and
+confinement, treats Bharata's flourishing-reign description as epic ideal rather
+than measured health or climate data, and stops at the end of section 53 before
+Rama's section-54 decision or summons. Ayodhya 26–30 now replaces the single
+`sita-chooses-road` summary with five exact scenes and twenty bilingual beats:
+Sita discovers that coronation has become exile; rejects the palace as her only
+future; hears Rama's complete forest warning; renews her choice through
+period-bound marital and devotional language; and moves into joint preparation
+after acute distress. The sequence preserves her repeated informed choice,
+keeps ancient marital hierarchy and gendered insult from becoming current
+advice, and neither romanticises self-harm nor makes suffering the price of
+having her decision respected. Ayodhya 41–45 now replaces the `city-follows-car`
+summary with five exact scenes and twenty bilingual beats. The departure grows
+from palace lament into city-wide disruption; Dasharatha loses the dust trail
+and returns to an emptied palace; Kausalya imagines hardship and homecoming;
+Sumitra offers bounded poetic consolation; and citizens slow the road until
+Rama walks beside the elders. Epic celestial imagery remains attributed,
+Bharata is not assigned knowledge or guilt while absent, and Sita's chosen
+companionship is not converted into a universal marital rule. Ayodhya 78–82
+now replaces the `crown-refused-road` summary with five exact scenes and twenty
+bilingual beats. Shatrughna's assault on Manthara remains harm rather than
+gratifying revenge, Bharata's initial participation and later intervention both
+remain visible, and bodily ridicule is excluded. Bharata's two public refusals,
+the skilled labour and environmental cost of royal road-building, the silenced
+morning praise, and the full expedition mobilization become distinct story
+movements without presuming Rama's agreement to return. Ayodhya 99–103 now
+replaces the `brothers-meet-death-news` summary with five exact scenes and
+twenty-five bilingual beats. Bharata reads the worked forest household before
+the reunion; Rama's full governance examination keeps counsel, pay, justice,
+agriculture, water, defence, revenue and access distinct while bounding period
+violence and hierarchy; Bharata reveals Dasharatha's death and asks Rama home;
+and the family's Mandakini mourning retains Sita's grief, simple forest
+offerings, physical mutual support and the expedition's disturbance of
+wildlife. It also replaces
+the `sandals-hold-kingdom` summary across Ayodhya 108–112 with five exact scenes
+and thirty-one bilingual beats. Javali's sceptical case remains attributed
+persuasion rather than narrator settlement; Rama's truth argument is retained
+without converting its violent caste and anti-Buddhist polemic into present-day
+instruction; Vasishta's cosmology and genealogy remain traditional epic claims
+rather than verified history; Bharata's fast and later self-harm ultimatum are
+treated as distress and coercion rather than devotional models; cosmic purpose
+does not erase choice; and the sandals remain a negotiated temporary proxy,
+not independent divinity or a guarantee of just rule. It also replaces
+the `jatayu-rises-sky-road` summary across Aranya 49–53 with five exact scenes
+and twenty-nine bilingual beats. Jatayu's decision to resist despite the
+unequal fight, his destruction of Ravana's aerial war equipment, and his
+living fall remain distinct from the later death scene in which he can testify
+to Rama. Sita continues to speak, resist, interpret danger, grieve Jatayu, and
+deliberately drop a signal for the five vanaras before Lanka. The landscape's
+poetic witness and the epic's cosmic-purpose language do not make forced
+capture good, excuse Ravana, erase Sita's non-consent, or assign collective
+guilt to every Rakshasa; material provision inside Lanka does not convert
+confinement into hospitality. It also replaces
+the `king-vishvamitra-meets-vasishta` summary across logical Balakanda 50–54
+with five exact scenes and twenty-eight bilingual beats. The sequence now
+keeps the hospitable meeting, Shabala's abundance, the failed purchase,
+forced seizure, Shabala's return and resistance, the destruction borne by
+armies and sons, Vishvamitra's weapon-seeking austerity, the burning
+hermitage, the Brahma staff, and the still-incomplete turn toward self-change
+distinct. Shabala remains a living participant rather than transferable
+wealth; period caste polemic, outsider labels for named peoples, mythic
+weapons, collective violence, and supernatural claims are all explicitly
+bounded. Logical ordinals remain authoritative because earlier missing and
+duplicated printed headings make them differ from the displayed Roman labels.
+It also replaces
+the `trishanku-suspended-between-worlds` summary across logical Balakanda
+55–58 with four exact scenes and twenty-one bilingual beats. The sequence now
+keeps Vishvamitra's incomplete recognition, Trishanku's bodily-heaven request,
+Vasishta's refusal, the sons' curse, the court's abandonment, Vishvamitra's
+refuge, the invitation and caste exclusion, the retaliatory curse, the
+fear-shadowed rite, divine silence, ascent, rejection, fall, counter-creation,
+and negotiated suspended refuge distinct. Consumer narration identifies
+caste-degrading labels as period hierarchy rather than present human worth,
+does not treat fear as consent, and keeps curses, bodily ascent, and cosmic
+creation inside the epic's supernatural world rather than historical fact or
+reproducible practice. It also replaces
+the `guha-shows-first-night` summary across Ayodhya 86–89 with four exact
+scenes and twenty-two bilingual beats. Guha's offered bed and shared guard,
+Lakshmana's vigil and anxious Ayodhya memory, Bharata's collapse and family
+care, his practical questions, the water and grass-bed routine, the traces of
+Rama and Sita under the Ingudi tree, Bharata's bounded substitution proposal,
+and the labour-intensive Ganga crossing now remain distinct. The narration
+does not treat distress as devotional proof, ancient warrior or marital ideals
+as present commands, Bharata's guilt as accurate responsibility, or the
+expedition's loving purpose as erasing damage to dwellings and riverbanks. It
+also replaces the `fear-becomes-demands` summary across Ayodhya 8–11 with four
+exact scenes and twenty-four bilingual beats. Manthara's rejection of the
+gift, fear-based succession argument, Kaikeyi's initial defence of Rama, the
+old battlefield boons, fourteen-year political calculation, scripted anger
+room, ableist body praise, life threats, Dasharatha's arrival with good news,
+offers of absolute power, uninformed oath, invoked witnesses, and final demands
+now remain distinct. The adjacent section-7 live moment now ends with Kaikeyi
+offering the gift, so Manthara's rejection no longer leaks across its retained
+source boundary. The retelling preserves both women's agency without making
+disability or household rank a moral cause, keeps Bharata's absent consent
+visible, and identifies coercion, self-harm rhetoric, unchecked kingship, and
+monarchical hierarchy as unsafe or period-bound rather than exemplary. It also
+replaces the `rama-crosses-celebration` summary across Ayodhya 15–18 with
+four exact scenes and twenty bilingual beats. The public preparations,
+Sumantra's cheerful summons, Rama and Sita's understandable misreading of the
+bare message, the decorated procession, successive palace thresholds,
+Dasharatha's near-silence, Kaikeyi's conditioned disclosure, Rama's uninformed
+precommitment, and the final demands for Bharata's crown and Rama's fourteen
+years in Dandaka now remain distinct. Eight girls named among ceremonial
+materials are treated as people rather than ritual objects; period hierarchy
+and marital ideals are not current measures of worth; Rama's self-harm rhetoric
+is not instruction; the retained narrator's gendered abuse is not repeated;
+and Bharata remains absent without consent to the crown. It also replaces the
+`city-without-king` summary across Ayodhya 65–68 with four exact scenes and
+twenty-four bilingual beats. Palace routine now discovers Dasharatha's death;
+Kausalya's and the other queens' grief remains distinct from prediction and
+collective blame; the body is preserved while rites wait; the council's
+monarchical theory is separated from its practical governance concerns; and
+four named messengers carry an urgent but deliberately incomplete summons to
+Bharata along a long remembered route. The retelling treats palace workers as
+people rather than ceremonial objects, interrupts rather than idealises
+self-harm, identifies oil preservation as period royal practice, and bounds
+gendered blame, patriarchal and caste-ranked order, cosmic causation, absolute
+kingship, Bharata's absent consent, secrecy, and literary geography. It also replaces
+the `family-asks-rama-home` summary across Ayodhya 104–107 with four exact
+scenes and twenty bilingual beats. The mothers' walk along Rama's water path,
+Kausalya's encounter with Lakshmana's labour and Dasharatha's memorial food,
+the reunion with Rama, Lakshmana, and Sita, Bharata's return of the unchosen
+crown, Rama's meditation on mortality, Bharata's argument for correcting a
+parent's wrong, and Rama's final division of city and forest duty now remain
+distinct. The retelling bounds service hierarchy, ritual prescription,
+ableist and self-diminishing comparisons, crowd consent, grief suppression,
+threats toward Kaikeyi, caste and life-stage rules, royal marriage transfer,
+male-heir theology, and inherited obligation without erasing the brothers'
+unresolved ethical disagreement. It also replaces
+the Balakanda 9–11 `rishyasringa-brought-from-seclusion` summary with three
+exact scenes and fifteen bilingual beats. Sumantra's remembered prediction,
+Rishyasringa's deliberately narrow upbringing, Anga's drought, the court's
+delegated deception, Rishyasringa's sincere hospitality, the courtesans'
+commissioned concealment, the return route to Anga, the rain, the unrecorded
+deliberation around the marriage with Shanta, Dasharatha's later request, the
+couple's journey, and Ayodhya's welcome now remain distinct. Literary rainfall
+causation is not science; delegated manipulation retains institutional
+responsibility; limited experience is not consent; relief does not invent
+Shanta's or Rishyasringa's unrecorded choices; and royal friendship does not
+prove equal refusal power. It also replaces the
+`khara-marches-under-omens` summary across logical Aranya 21–24 with four
+exact scenes and twenty bilingual beats while preserving the retained shift to
+printed sections XXII–XXV. Khara's honour-driven mobilisation, the 14,000-person
+march, literary omens and ecological disruption, Rama's shelter decision, the
+sky witnesses' ranked prayer, the opening wounds and mass counterattack,
+survivors' flight, Dushana's renewed command, and the Gandharva weapon now
+remain distinct. Revenge is not justice; Rakshasa lineage is not collective
+guilt; omen language is not science or modern divination; hierarchy does not
+set dignity; situational protection does not erase Sita's agency; and mass
+death, animal harm, retreat, injury, and supernatural warfare are not game
+rewards, cowardice, spectacle, or replicable technique. It also replaces
+the compressed Uttara 29–30 captive-women-and-family-war summary with two exact
+scenes and ten bilingual beats. The first keeps the abducted women distinct,
+names the relatives and households they grieve, preserves their collective
+condemnation as an epic-world utterance, and follows Surpanakha's accusation
+that Ravana killed her husband into the Dandaka arrangement that cannot repair
+the loss. The second separates Indrajit's epic war-power rites from modern
+ritual instruction, keeps Vibhishana's period-bound marriage-transfer norm from
+becoming a current consent rule, and centres Kumbhinasi's fearful but effective
+intervention before Ravana can kill Madhu. Madhu's survival and later alliance
+do not retroactively make Kumbhinasi's original abduction harmless or desired.
+It also replaces
+the Sagara-to-Ganga summary with six source-unit scenes for Sagara's family, the destructive horse search,
+Kapila, Anshuman's recovery, Bhagiratha's descent of Ganga, and the completed
+water rites, while removing the prior unsupported claim that the selected
+source described Ganga consenting to the descent. It also confirms the
+larger experience gap between the complete 517-scene authored projection and
+the 55 scenes currently illustrated in the live journey. On the user's
+2026-08-13 direction, image generation and UI-world projection are paused; the
+final six-section summary identified by the first audit has also been split into
+source-unit scenes for Bharata's disciplined halt, Rama and Sita's Chitrakoot
+home, life along the Mandakini, Lakshmana's violent misreading of the approaching
+army, Rama's de-escalation, and Bharata's loving final approach. A further library
+repair splits Uttara 31–35 into Rambha's explicit refusals, testimony, and the
+future limit that does not repair her assault; the heaven campaign and Sumali's
+death; Meghanada's darkness and its friendly fire; Indra's capture; and Brahma's
+negotiated release, conditional boon, and victim-blaming Ahalya retelling. The
+consumer synthesis preserves that the same retelling says Ahalya was deceived
+and did not act willingly, so its inherited blame is not carried forward as
+truth. The same repair now splits Aranya 60–64 into five source-unit scenes for
+the living-forest search, Rama's collapse and Lakshmana's practical search plan,
+the feared return to Ayodhya and Mithila without Sita, accumulated grief and
+self-blame, and the Godavari-to-southward-trail evidence that precedes Rama's
+collective-punishment threat. Feared outcomes remain distinct from established
+evidence, acute grief is not presented as instruction, and the transition into
+Lakshmana's de-escalation remains intact. The immediately preceding Aranya
+57–59 summary is likewise split into Maricha's final false-cry mechanism and
+Rama's alarmed return, fear and blame racing toward the empty Panchavati
+cottage, and Lakshmana's account of the pressured conflict that drew him away.
+Omens remain interpreted signs, catastrophic projections remain fears, and
+Sita's and Lakshmana's conflict speech is not promoted into verified character
+fact. The latest source-partitioned repair replaces the compressed Uttara 11–13
+Lanka-household block with three exact scenes: Sumali and Prahasta turn
+remembered loss into pressure before Kubera's household strategically withdraws;
+marriages and Meghanada's birth establish the ruling family without inventing
+the women's absent perspectives; and Kumbhakarna's imposed sleep runs beside
+Ravana's expanding violence, Kubera's rejected correction, and the explicit
+murder of his messenger. The replacement preserves displacement, choice,
+responsibility, and violence rather than presenting Lanka as harmless vacant
+property or the next war as inevitable. The adjacent Uttara 14–16 block is now
+three exact scenes for the named Yaksha defence and Suryabhanu's last stand;
+Manibhadra's counterattack, Kubera's attributed rebuke and violent loss of
+Pushpaka; and the vehicle's refusal at Kailasa, Ravana's harmful ridicule of
+Nandi, the failed mountain-lifting boast, and Shiva's release, naming and
+conditional gift of Chandrahasa. Resistance is not erased by the boon,
+Pushpaka retains its ownership history, Kubera's moral claims do not become
+personalised user threats, and bodily difference is never made a legitimate
+object of contempt. Uttara 17–19 is now separated into
+Vedavati's refusal, escape, death and
+the selected retelling's Sita connection; Marutta's interrupted sacrifice,
+protected restraint, killed noncombatants and animal-origin tale; and
+Anaranya's lost battle and future warning about Rama. Death in fire is not
+instruction, submission under threat is not consent, and prophecy does not
+erase later choices. Uttara 20–22 now follows with separate scenes for Narada's
+redirection of Ravana toward Yama, Ravana's disruption of the source-world
+realm of consequences and destruction of its defending host, and the
+seven-night duel that Brahma ends to avoid falsifying either Ravana's boon or
+Yama's fatal rod. Epic punishments remain non-instructional, release does not
+erase imperial motive, and Yama's constrained withdrawal is not inflated into
+unrestricted supremacy. The next library boundary is
+continuing the compression audit across other high-compression blocks
+while deepening characters, places,
+events, and relationships without pretending corpus coverage is visual-world
+completion. Interaction phasing remains deferred with other UI work.
+
+The normalized narrative layer and deterministic Ramayana seed compiler keep
+all seven bilingual arcs and 49 backbone turns while publishing only scenes
+that contain complete bilingual beats. Exact source and span hashes remain in
+compact source-range metadata, and source-vault bytes remain in their one-copy
+store. The generated migration is prepared for local validation but is not
+authority to apply it to hosted Supabase; external database mutation still
+requires explicit release authorization.
+
+The revised critical path is:
+
+1. freeze the consumer-content contract and one lean, machine-readable coverage inventory;
+2. add the first-class narrative database projection without duplicating source bytes;
+3. finish all 49 Ramayana story turns in substantial English/Hindi consumer form and publish them through the shared data layer;
+4. convert Ramcharitmanas into a complete searchable, beginning-to-end reading lane with optional daily pacing, then add Hanuman Chalisa under the same complete-work rule;
+5. structurally qualify the retained Ganguli Mahabharata set and build its complete English/Hindi narrative backbone;
+6. deepen Ganesha, Durga and Diwali stories while retaining the existing practical ritual contracts;
+7. expand prioritized Puranic, Panchatantra, place, temple, kingdom, yoga, meditation and living-culture lanes from the same contract; and
+8. verify that Search, Sarthi and the Living Atlas all consume the shared story/practice records while the normal UI keeps source apparatus out of the way.
+
+This is a product backlog and completion boundary, not a revival of the retired
+Track A/Track B proof system. See `CONSUMER_CONTENT_MVP_CONTRACT.md`.
+
 Checkpoint 2026-08-10 (seventh Ramayana illustrated district candidate):
 **Panchavati breaks open** continues the selected Manmatha Nath Dutt Aranya
 sequence from source-ordered passages 13 through 53. Eight original full-screen

@@ -6,6 +6,7 @@ import { answerGaneshaPuranaPreview } from "./ganesha-purana-preview";
 import { answerDevimahatmyaSemanticPreview } from "./devimahatmya-semantic-preview";
 import { answerDuttRamayanaPreview } from "./dutt-ramayana-preview";
 import { answerHeroPreview } from "./hero-preview";
+import { answerHanumanChalisaPreview } from "./hanuman-chalisa-preview";
 import { answerRamcharitmanasPreview } from "./ramcharitmanas-preview";
 import { answerReviewedRamayanaReflection } from "./ramayana-reflection";
 import { resolvePracticeGuidance } from "../practice/practice-guidance";
@@ -1287,6 +1288,9 @@ function answerSarthiBase(request: SarthiRequest): GroundedSarthiAnswer | Sarthi
 
   const duttRamayanaPreview = answerDuttRamayanaPreview(request);
   if (duttRamayanaPreview) return duttRamayanaPreview;
+
+  const hanumanChalisaPreview = answerHanumanChalisaPreview(request);
+  if (hanumanChalisaPreview) return hanumanChalisaPreview;
 
   const ramcharitmanasPreview = answerRamcharitmanasPreview(request);
   if (ramcharitmanasPreview) return ramcharitmanasPreview;

@@ -848,6 +848,7 @@ test("exact Search keeps all four hero lanes source-bounded", async ({ page }) =
     ["What should I do for Ganesh Chaturthi?", "ganesh-chaturthi-west-india-content-v1-en-exact-guidance"],
     ["What should I do for Shardiya Navaratri?", "shardiya-navaratri-north-west-india-content-v1-en-exact-guidance"],
     ["Ramcharitmanas seven sopanas Belvedere Press", "ramcharitmanas-belvedere-seven-sopana-en"],
+    ["Hanuman Chalisa chaupai 40", "hanuman-chalisa-reading-42-en"],
     ["How should I do Lakshmi Puja at home?", "diwali-lakshmi-puja-west-india-content-v1-en-exact-guidance"],
   ] as const;
 
@@ -872,12 +873,12 @@ test("Sarthi answers from the bounded Ramcharitmanas edition and enforces the gu
   await page.goto("/sarthi");
   await page.getByLabel("Message Sarthi").fill("Tell me about Ramcharitmanas");
   await page.getByRole("button", { name: "Send" }).click();
-  await expect(page.getByText(/802 source-addressed beta pages/)).toBeVisible();
+  await expect(page.getByText(/all 813 proofread or validated beta pages/)).toBeVisible();
   await expect(page.getByText(/not the complete Ramcharitmanas tradition/)).toBeVisible();
   const sources = page.getByText("Open 7 sources", { exact: true });
   await expect(sources).toBeVisible();
   await sources.click();
-  await expect(page.getByText(/Another 359 low-quality pages and 11 markup anomalies remain outside retrieval/)).toBeVisible();
+  await expect(page.getByText(/Another 345 unproofread text-bearing pages remain outside retrieval/).last()).toBeVisible();
 
   await page.getByLabel("Message Sarthi").fill("What else should I explore?");
   await page.getByRole("button", { name: "Send" }).click();

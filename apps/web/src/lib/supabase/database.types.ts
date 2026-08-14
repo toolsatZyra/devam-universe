@@ -1158,6 +1158,13 @@ export type Database = {
       }
     }
     Functions: {
+      get_public_narrative_series: {
+        Args: {
+          language_filter?: string
+          series_slug: string
+        }
+        Returns: Json
+      }
       search_public_passages: {
         Args: {
           language_filter?: string

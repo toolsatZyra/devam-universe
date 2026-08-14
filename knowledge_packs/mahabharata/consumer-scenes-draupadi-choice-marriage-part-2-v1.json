@@ -1,0 +1,235 @@
+{
+  "contract": "DEVAM_MAHABHARATA_CONSUMER_SCENES_V1",
+  "snapshot_date": "2026-08-12",
+  "series_id": "mahabharata",
+  "batch_id": "weddings-kuru-council-return-and-indraprastha",
+  "status": "authored_not_projected",
+  "source_qualification": {
+    "qualification_id": "mahabharata-kisari-mohan-ganguli-project-gutenberg-source-qualification-v1",
+    "source_unit_root_sha256": "e476857f386c8faf48be9463d0cba9523f68652bdb8e14fc6951727f04d1040c",
+    "expression_boundary": "One fixed Ganguli English expression. These scenes preserve the source's successive-wedding, alliance, hostile-counsel and return sequence while labelling period-bound prescriptions and objectifying or misogynistic character claims as attributed material rather than current Devam guidance."
+  },
+  "coverage": {
+    "turn_ids": ["draupadi-choice-marriage"],
+    "parva_slug": "adi",
+    "source_start_ordinal": 200,
+    "source_end_ordinal": 209,
+    "scene_count": 3,
+    "beat_count": 16,
+    "completes_backbone_turn": true,
+    "completes_backbone_turn_with_batch_id": "svayamvara-kunti-statement-and-panchala-deliberation"
+  },
+  "scenes": [
+    {
+      "id": "five-weddings-seal-the-panchala-alliance",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 6,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 200, "end_ordinal": 201, "span_sha256": "b2f9115e5ef27516deb3fb230161c0b1d95e6feb6a719aef506a1ae4b14745a2"},
+      "title": {"en": "Successive weddings turn an extraordinary decision into a powerful alliance", "hi": "क्रमिक विवाह असाधारण निर्णय को शक्तिशाली गठबंधन में बदल देते हैं"},
+      "decisive_change": {
+        "en": "Drupada accepts Vyasa's explanation, five ceremonies are performed on successive days, and gifts plus family blessings establish Draupadi and the Pandavas as the centre of a new Panchala–Kuru alliance.",
+        "hi": "द्रुपद व्यास की व्याख्या स्वीकार करते हैं, पाँच दिनों में क्रम से विवाह-संस्कार होते हैं, और उपहार तथा पारिवारिक आशीर्वाद द्रौपदी व पांडवों को नए पांचाल-कुरु गठबंधन का केंद्र बनाते हैं।"
+      },
+      "characters": ["draupadi", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "drupada", "dhaumya", "kunti", "krishna"],
+      "places": ["panchala-wedding-hall", "drupadas-palace", "panchala-inner-apartments", "panchala-court"],
+      "visual_identity": "Five successive ceremonial paths share one fire-lit hall, then widen into gift, kinship and alliance routes; the experience should keep Draupadi centrally visible while contextual notes prevent extraordinary bodily claims or period household ideals from becoming gameplay facts or current prescriptions.",
+      "beats": [
+        {
+          "id": "drupada-accepts-the-mythic-explanation",
+          "title": {"en": "Drupada yields to what he now understands as destiny", "hi": "द्रुपद उस बात को स्वीकार करते हैं जिसे अब वे नियति समझते हैं"},
+          "narration": {
+            "en": "After the private account, Drupada says he will carry out the arrangement because he believes it has been ordained by Shiva and the gods. His acceptance resolves the father's objection within the story's theological world. It does not retroactively transform every concern into ignorance, and it still does not give the selected expression a direct scene in which Draupadi weighs the proposal aloud before the ceremonies begin.",
+            "hi": "निजी कथा सुनने के बाद द्रुपद कहते हैं कि वे व्यवस्था पूरी करेंगे क्योंकि अब वे इसे शिव और देवताओं द्वारा नियत मानते हैं। उनका स्वीकार कथा के धार्मिक संसार में पिता की आपत्ति सुलझाता है। इससे सभी चिंताएँ पीछे से अज्ञान नहीं बन जातीं और चुने गए स्रोत में फिर भी ऐसा सीधा दृश्य नहीं आता जहाँ संस्कारों से पहले द्रौपदी प्रस्ताव पर खुलकर विचार करती हों।"
+          },
+          "visual_direction": "Close Drupada's objection route as accepted-by-character, not universally disproved; keep a separate source-limitation marker beside Draupadi's response path rather than fabricating a speech.",
+          "character_ids": ["drupada", "vyasa", "draupadi", "pandavas", "shiva-memory"]
+        },
+        {
+          "id": "dhaumya-conducts-five-successive-ceremonies",
+          "title": {"en": "Dhaumya conducts a separate wedding on each successive day", "hi": "धौम्य हर अगले दिन एक अलग विवाह-संस्कार कराते हैं"},
+          "narration": {
+            "en": "The palace prepares, Draupadi enters adorned for the ceremony, and Dhaumya kindles the fire. Yudhishthira marries her first, followed on successive days by Bhima, Arjuna, Nakula and Sahadeva. The narrator also reports that she regains virginity after each marriage. That extraordinary bodily claim belongs to the epic narration; Devam can retain it as attributed source content but should not visualise it as anatomy, medical fact or a purity mechanic.",
+            "hi": "महल सजता है, द्रौपदी विवाह के लिए अलंकृत होकर आती हैं और धौम्य अग्नि प्रज्वलित करते हैं। पहले युधिष्ठिर, फिर अगले दिनों में भीम, अर्जुन, नकुल और सहदेव उनसे विवाह करते हैं। कथाकार यह भी कहता है कि हर विवाह के बाद उनका कौमार्य लौट आता था। यह असाधारण शारीरिक दावा महाकाव्य-कथन का हिस्सा है; देवम इसे स्रोत-आधारित कथन के रूप में रख सकता है, पर शरीर-विज्ञान, चिकित्सकीय तथ्य या शुद्धता-माप की तरह नहीं दिखाएगा।"
+          },
+          "visual_direction": "Use five distinct procession paths around the same ceremonial fire and mark the narrator's extraordinary claim only in optional context; never inspect Draupadi's body or reward a virginity state.",
+          "character_ids": ["draupadi", "dhaumya", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "drupada"]
+        },
+        {
+          "id": "drupadas-gifts-make-the-alliance-material",
+          "title": {"en": "Drupada's gifts give the new alliance vehicles, wealth and public weight", "hi": "द्रुपद के उपहार नए गठबंधन को साधन, धन और सार्वजनिक शक्ति देते हैं"},
+          "narration": {
+            "en": "Drupada gives chariots, elephants, wealth, clothing and attendants to the new household. The gifts are described on a royal scale and make the alliance materially visible. People listed as female servants in the period text must not become inventory items or ownership rewards in the experience. They should appear, if represented, as historically situated members of a courtly labour system whose personhood is not erased by the source's gift language.",
+            "hi": "द्रुपद नए परिवार को रथ, हाथी, धन, वस्त्र और सेवक-सेविकाएँ देते हैं। उपहार राजसी पैमाने पर बताए गए हैं और गठबंधन की वास्तविक शक्ति दिखाते हैं। समय-विशेष के पाठ में उपहार के रूप में गिनी गई महिला सेविकाओं को अनुभव में सूची की वस्तु या स्वामित्व-पुरस्कार नहीं बनाया जा सकता। यदि वे दिखाई जाएँ तो दरबारी श्रम-व्यवस्था के ऐतिहासिक सदस्य हों, जिनकी मनुष्यता स्रोत की दान-भाषा से मिटती नहीं।"
+          },
+          "visual_direction": "Turn gifts into mobility, household and diplomatic capacity routes; depict attendants as named or grouped people moving under constrained historical institutions, never as stackable resources.",
+          "character_ids": ["drupada", "draupadi", "pandavas", "panchala-court-workers", "panchala-attendants"]
+        },
+        {
+          "id": "kunti-blesses-draupadi-with-period-household-ideals",
+          "title": {"en": "Kunti welcomes Draupadi through the ideals and burdens of her time", "hi": "कुंती अपने समय के आदर्शों और बोझों के साथ द्रौपदी का स्वागत करती हैं"},
+          "narration": {
+            "en": "Draupadi greets Kunti after the weddings. Kunti blesses her with prosperity, long-lived children, queenship, hospitality and devotion to her husbands, drawing comparisons with celebrated couples. The blessing is affectionate and politically expansive, but its household duties and expectations of motherhood are period-bound. They describe Kunti's hopes in this scene; they are not mandatory instructions for women or marriage in the modern product.",
+            "hi": "विवाहों के बाद द्रौपदी कुंती को प्रणाम करती हैं। कुंती उन्हें समृद्धि, दीर्घायु संतान, रानी बनने, अतिथि-सत्कार और पतियों के प्रति समर्पण का आशीर्वाद देती हैं तथा प्रसिद्ध दंपतियों से तुलना करती हैं। आशीर्वाद स्नेहपूर्ण और राजनीतिक रूप से व्यापक है, पर गृह-कर्तव्य और मातृत्व की अपेक्षाएँ समय-विशेष की हैं। वे इस दृश्य में कुंती की आशाएँ हैं; आधुनिक उत्पाद में स्त्रियों या विवाह के लिए अनिवार्य निर्देश नहीं।"
+          },
+          "visual_direction": "Show each blessing as Kunti's warm future image branching around Draupadi, with period-context labels on domestic and maternal expectations; avoid task lists or compliance meters.",
+          "character_ids": ["kunti", "draupadi", "pandavas", "panchala-women"]
+        },
+        {
+          "id": "krishnas-gifts-open-the-yadava-alliance-route",
+          "title": {"en": "Krishna's gifts make the Yadava connection publicly tangible", "hi": "कृष्ण के उपहार यादव संबंध को सार्वजनिक और ठोस बनाते हैं"},
+          "narration": {
+            "en": "Krishna sends ornaments, cloth, vehicles, animals, household goods and wealth, and Yudhishthira accepts them. The gesture is more than celebration: it signals that the surviving Pandavas now have a powerful friend beyond Panchala. On the political map, the potter's-house fugitives have become the meeting point of Panchala, Yadava and Kuru lines, even before Hastinapura formally acknowledges their return.",
+            "hi": "कृष्ण आभूषण, वस्त्र, वाहन, पशु, घरेलू सामग्री और धन भेजते हैं, जिन्हें युधिष्ठिर स्वीकार करते हैं। यह केवल उत्सव नहीं; इससे संकेत मिलता है कि जीवित पांडवों को पांचाल से परे एक शक्तिशाली मित्र मिल गया है। राजनीतिक मानचित्र पर कुम्हार के घर में छिपे भगोड़े अब पांचाल, यादव और कुरु रेखाओं का मिलन-बिंदु बन गए हैं, जबकि हस्तिनापुर ने अभी औपचारिक वापसी स्वीकार भी नहीं की।"
+          },
+          "visual_direction": "Animate a Dwaraka-to-Panchala support route whose payload becomes transport and alliance capacity rather than glittering loot; end with three regional lines converging on the new household.",
+          "character_ids": ["krishna", "yudhishthira", "draupadi", "pandavas", "yadava-messengers"]
+        }
+      ]
+    },
+    {
+      "id": "hastinapura-plots-against-the-new-alliance",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 7,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 202, "end_ordinal": 204, "span_sha256": "e9a982f3e153f90387fe3b7d9c5ded63f4d8ef8835f2f87554ec1cf315ec397c"},
+      "title": {"en": "News reaches Hastinapura, where relief gives way to covert plans and open war talk", "hi": "समाचार हस्तिनापुर पहुँचता है, जहाँ राहत गुप्त षड्यंत्र और खुले युद्ध की बात में बदलती है"},
+      "decisive_change": {
+        "en": "The world learns the Pandavas survived, but Dhritarashtra's public welcome masks Duryodhana's proposals for manipulation and murder, while Karna rejects intrigue only to recommend immediate military destruction.",
+        "hi": "दुनिया जानती है कि पांडव जीवित हैं, पर धृतराष्ट्र का सार्वजनिक स्वागत दुर्योधन की फूट, छल और हत्या की योजनाएँ छिपाता है; कर्ण गुप्त चालों को नकारते हुए भी तत्काल सैन्य विनाश की सलाह देते हैं।"
+      },
+      "characters": ["dhritarashtra", "vidura", "duryodhana", "duhsasana", "karna", "draupadi", "pandavas", "drupada", "krishna"],
+      "places": ["road-to-hastinapura", "hastinapura-court", "dhritarashtras-private-council", "panchala-alliance-map"],
+      "visual_identity": "News routes race back to Hastinapura, where one court splits into public and private layers; hostile ideas appear as rejected threat vectors aimed at relationships and lives, not selectable tactics, and the player sees how Draupadi becomes a political target without making her responsible for the hostility.",
+      "beats": [
+        {
+          "id": "the-world-learns-that-the-pandavas-returned-from-the-dead",
+          "title": {"en": "Spies carry the impossible news: the Pandavas survived", "hi": "गुप्तचर असंभव समाचार लाते हैं—पांडव जीवित हैं"},
+          "narration": {
+            "en": "Rulers leave Panchala knowing that the disguised archer was Arjuna, the tree-wielding defender was Bhima and Draupadi married the Pandavas. Because the family had been reported dead in the lac-house fire, their appearance feels like a return from death and revives public condemnation of the plot. Duryodhana's party travels home in fear because survival is now joined to Panchala's army and Krishna's friendship.",
+            "hi": "राजा पांचाल से यह जानते हुए लौटते हैं कि वेश बदला धनुर्धर अर्जुन था, वृक्ष उठाने वाला रक्षक भीम था और द्रौपदी का विवाह पांडवों से हुआ। लाक्षागृह में परिवार को मृत बताया गया था, इसलिए उनका प्रकट होना मृत्यु से लौटने जैसा लगता है और साजिश की सार्वजनिक निंदा फिर जागती है। दुर्योधन का पक्ष भय के साथ लौटता है, क्योंकि जीवित पांडव अब पांचाल की सेना और कृष्ण की मित्रता से जुड़े हैं।"
+          },
+          "visual_direction": "Send the verified survival signal along every departing kingdom route and restore five extinguished nodes on the map; hostile Kuru routes should darken in response without suggesting their fear proves guilt alone.",
+          "character_ids": ["pandavas", "draupadi", "drupada", "krishna", "duryodhana", "duhsasana", "departing-rulers"]
+        },
+        {
+          "id": "viduras-good-news-exposes-dhritarashtras-first-assumption",
+          "title": {"en": "Vidura announces Kuru prosperity, and Dhritarashtra briefly thinks Duryodhana won", "hi": "विदुर कुरुओं की समृद्धि बताते हैं और धृतराष्ट्र क्षण भर दुर्योधन की जीत समझते हैं"},
+          "narration": {
+            "en": "Vidura tells Dhritarashtra that the Kurus prosper, meaning that the Pandavas live and have gained Draupadi and Panchala's support. Dhritarashtra initially assumes Draupadi chose Duryodhana and orders ornaments prepared; only then does Vidura explain the truth. The king publicly says the Pandavas are dear to him, but later admits that he was concealing his mind from Vidura. The court's welcome is therefore politically unstable from its first moment.",
+            "hi": "विदुर धृतराष्ट्र से कहते हैं कि कुरुओं का भाग्य बढ़ा है—अर्थात पांडव जीवित हैं और उन्हें द्रौपदी तथा पांचाल का साथ मिला है। धृतराष्ट्र पहले समझते हैं कि द्रौपदी ने दुर्योधन को चुना और आभूषण तैयार करने का आदेश देते हैं; तब विदुर सच्चाई बताते हैं। राजा सार्वजनिक रूप से पांडवों को प्रिय कहते हैं, पर बाद में मानते हैं कि वे विदुर से अपना मन छिपा रहे थे। इसलिए दरबार का स्वागत पहले क्षण से राजनीतिक रूप से अस्थिर है।"
+          },
+          "visual_direction": "Layer the court dialogue so the first mistaken celebration visibly redirects when Vidura clarifies the news, then reveal a separate private-council route without labelling disability as moral blindness.",
+          "character_ids": ["vidura", "dhritarashtra", "duryodhana", "pandavas", "draupadi", "drupada"]
+        },
+        {
+          "id": "duryodhana-proposes-breaking-relationships-and-killing-bhima",
+          "title": {"en": "Duryodhana proposes bribery, jealousy, sexual manipulation and murder", "hi": "दुर्योधन रिश्वत, ईर्ष्या, यौन छल और हत्या की योजनाएँ रखते हैं"},
+          "narration": {
+            "en": "In private, Duryodhana suggests bribing Panchala, sowing division among the brothers, turning Draupadi against them, using women to provoke conflict and secretly killing Bhima. These are attributed hostile proposals, including violence and misogynistic assumptions; they are not clever strategic options for the user to optimise. Their narrative function is to show how the new household's relationships and Draupadi's personhood immediately become targets of political control.",
+            "hi": "निजी सभा में दुर्योधन पांचाल को रिश्वत देने, भाइयों में फूट डालने, द्रौपदी को उनके विरुद्ध करने, स्त्रियों का उपयोग करके संघर्ष भड़काने और भीम की गुप्त हत्या की योजना रखते हैं। ये हिंसा और स्त्री-विरोधी धारणाओं सहित शत्रुतापूर्ण प्रस्ताव हैं; खिलाड़ी के लिए सुधारने योग्य चतुर रणनीतियाँ नहीं। इनका कथा-कार्य यह दिखाना है कि नए परिवार के संबंध और द्रौपदी की मनुष्यता तुरंत राजनीतिक नियंत्रण का लक्ष्य बन जाते हैं।"
+          },
+          "visual_direction": "Render each proposal as a red threat vector that fails ethical and factual checks, never as a clickable mission tree; centre the people and relationships endangered at each endpoint.",
+          "character_ids": ["duryodhana", "dhritarashtra", "karna", "bhima", "draupadi", "pandavas", "drupada"]
+        },
+        {
+          "id": "karna-rejects-intrigue-but-calls-for-annihilation",
+          "title": {"en": "Karna rejects covert schemes and recommends open destruction", "hi": "कर्ण गुप्त चालों को नकारकर खुले विनाश की सलाह देते हैं"},
+          "narration": {
+            "en": "Karna argues that subtle plots failed even when the Pandavas were younger and nearby. He says the brothers cannot be divided and that Draupadi will not abandon them after choosing them in adversity. His speech then generalises crudely about women and urges an immediate army attack before Panchala and Krishna become stronger. Rejecting manipulation does not make his counsel peaceful or ethically sound; it replaces covert violence with proposed mass violence.",
+            "hi": "कर्ण कहते हैं कि जब पांडव छोटे और पास थे तब भी गुप्त चालें असफल रहीं। उनके अनुसार भाइयों में फूट नहीं डाली जा सकती और विपत्ति में चुनने के बाद द्रौपदी उन्हें नहीं छोड़ेंगी। फिर उनका भाषण स्त्रियों के बारे में अपमानजनक सामान्यीकरण करता है और पांचाल तथा कृष्ण के और मजबूत होने से पहले सेना से हमला माँगता है। छल को नकारना उनकी सलाह को शांतिपूर्ण या नैतिक नहीं बनाता; वह गुप्त हिंसा की जगह व्यापक खुली हिंसा रखती है।"
+          },
+          "visual_direction": "Collapse Duryodhana's covert vectors, then show Karna replacing them with one large invasion route marked as escalatory threat; explicitly quarantine his misogynistic generalisation as character speech.",
+          "character_ids": ["karna", "duryodhana", "dhritarashtra", "draupadi", "pandavas", "drupada", "krishna"]
+        },
+        {
+          "id": "dhritarashtra-calls-the-elders-into-the-decision",
+          "title": {"en": "Dhritarashtra opens the decision to Bhishma, Drona and Vidura", "hi": "धृतराष्ट्र निर्णय में भीष्म, द्रोण और विदुर को बुलाते हैं"},
+          "narration": {
+            "en": "Dhritarashtra praises Karna's call for force but does not act immediately. He summons Bhishma, Drona and Vidura into council with Duryodhana and Karna. The pause matters because the Kuru response is still contestable: secret hostility has not yet become policy, and elders who recognise the Pandavas' claim can redirect the state. The next scene becomes a struggle over restitution, reputation and survival rather than a battle already decided.",
+            "hi": "धृतराष्ट्र कर्ण की बल-प्रधान सलाह की प्रशंसा करते हैं, पर तुरंत कार्य नहीं करते। वे दुर्योधन और कर्ण के साथ भीष्म, द्रोण तथा विदुर को सभा में बुलाते हैं। यह विराम महत्वपूर्ण है, क्योंकि कुरु प्रतिक्रिया अभी बदल सकती है—गुप्त शत्रुता अभी नीति नहीं बनी और पांडवों के अधिकार को मानने वाले बुज़ुर्ग राज्य की दिशा मोड़ सकते हैं। अगला दृश्य तय युद्ध नहीं, बल्कि अधिकार-वापसी, प्रतिष्ठा और जीवन की बहस बनता है।"
+          },
+          "visual_direction": "Freeze the invasion route before activation and open three counsel paths into the chamber; the user should understand that speech and institutional pressure can still alter the outcome.",
+          "character_ids": ["dhritarashtra", "bhishma", "drona", "vidura", "duryodhana", "karna"]
+        }
+      ]
+    },
+    {
+      "id": "the-kuru-council-restores-a-share-and-the-pandavas-build-indraprastha",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 8,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 205, "end_ordinal": 209, "span_sha256": "2636af959e13e2e30d9376f6ed56aaea032fc85e4b0274cf5cb8f7a0cd7736e5"},
+      "title": {"en": "The council secures a return, but restitution becomes a frontier at Khandavaprastha", "hi": "सभा वापसी सुनिश्चित करती है, पर अधिकार-वापसी खांडवप्रस्थ की सीमा बन जाती है"},
+      "decisive_change": {
+        "en": "Bhishma, Drona and Vidura defeat the immediate war plan, Vidura escorts the family home, and the Pandavas receive an undeveloped half-share that they transform into Indraprastha rather than simple restoration at Hastinapura.",
+        "hi": "भीष्म, द्रोण और विदुर तत्काल युद्ध-योजना रोकते हैं, विदुर परिवार को घर लाते हैं, और पांडवों को अविकसित आधा हिस्सा मिलता है जिसे वे हस्तिनापुर में सरल पुनर्स्थापना के बजाय इंद्रप्रस्थ में बदलते हैं।"
+      },
+      "characters": ["bhishma", "drona", "vidura", "dhritarashtra", "duryodhana", "karna", "drupada", "krishna", "kunti", "draupadi", "pandavas", "hastinapura-citizens"],
+      "places": ["hastinapura-council", "panchala-court", "road-to-hastinapura", "hastinapura", "khandavaprastha", "indraprastha"],
+      "visual_identity": "A three-voice council extinguishes the invasion path, a return procession reconnects the exiles to cheering citizens, and then the map deliberately refuses a neat ending: the restored share lies in an unreclaimed landscape that changes layer by layer into Indraprastha through people, labour and migration.",
+      "beats": [
+        {
+          "id": "bhishma-demands-an-equal-paternal-share",
+          "title": {"en": "Bhishma makes survival and equal inheritance the basis of peace", "hi": "भीष्म जीवन और समान पैतृक अधिकार को शांति का आधार बनाते हैं"},
+          "narration": {
+            "en": "Bhishma rejects conflict with the Pandavas, saying Pandu's sons are as near to him as Dhritarashtra's. He argues that both branches regard the kingdom as paternal inheritance and calls for half to be given quietly. He also names the public stain left by the lac-house plot and says the family's survival creates a chance to remove it. His case links restitution to kinship, lawful claim and the Kuru house's damaged reputation.",
+            "hi": "भीष्म पांडवों से संघर्ष अस्वीकार करते हैं और कहते हैं कि पांडु के पुत्र उन्हें धृतराष्ट्र के पुत्रों जितने ही निकट हैं। दोनों शाखाएँ राज्य को पैतृक अधिकार मानती हैं, इसलिए वे शांतिपूर्वक आधा हिस्सा देने को कहते हैं। वे लाक्षागृह की साजिश से लगी सार्वजनिक बदनामी भी बताते हैं और कहते हैं कि परिवार का जीवित लौटना उसे मिटाने का अवसर है। उनका तर्क रिश्ते, वैध अधिकार और कुरु घराने की क्षतिग्रस्त प्रतिष्ठा को अधिकार-वापसी से जोड़ता है।"
+          },
+          "visual_direction": "Split the inherited Kuru map into two visible claims of equal origin, then overlay the lac-house stain as a reputational wound that can be reduced by restitution rather than battle.",
+          "character_ids": ["bhishma", "dhritarashtra", "duryodhana", "pandavas", "kunti", "pandu-memory"]
+        },
+        {
+          "id": "drona-supports-return-and-karna-attacks-the-advisers",
+          "title": {"en": "Drona supports return; Karna tries to discredit the counsel", "hi": "द्रोण वापसी का समर्थन करते हैं और कर्ण सलाहकारों को बदनाम करते हैं"},
+          "narration": {
+            "en": "Drona agrees that the Pandavas should receive a share and proposes respectful messages, gifts and a formal escort from Panchala. Karna accuses Bhishma and Drona of speaking against Dhritarashtra's interest and invokes destiny to belittle practical counsel. Drona answers that Karna's intent is to injure the Pandavas and warns that ignoring reconciliation may destroy the Kurus. The council exposes competing definitions of loyalty: protecting one claimant versus preserving the whole house.",
+            "hi": "द्रोण सहमत होते हैं कि पांडवों को हिस्सा मिलना चाहिए और पांचाल को सम्मानित संदेश, उपहार तथा औपचारिक वापसी-दल भेजने का सुझाव देते हैं। कर्ण भीष्म और द्रोण पर धृतराष्ट्र के हित के विरुद्ध बोलने का आरोप लगाकर व्यावहारिक सलाह को भाग्य के तर्क से छोटा करते हैं। द्रोण उत्तर देते हैं कि कर्ण का उद्देश्य पांडवों को हानि पहुँचाना है और मेल न करने पर कुरुओं के विनाश की चेतावनी देते हैं। सभा वफादारी की दो परिभाषाएँ सामने लाती है—एक दावेदार की रक्षा या पूरे घराने को बचाना।"
+          },
+          "visual_direction": "Keep Drona's diplomatic route and Karna's fatalist counterargument visually distinct; let the former connect living institutions while the latter isolates the court behind an all-or-nothing claim.",
+          "character_ids": ["drona", "karna", "bhishma", "dhritarashtra", "duryodhana", "pandavas", "drupada"]
+        },
+        {
+          "id": "vidura-connects-right-claim-public-will-and-survival",
+          "title": {"en": "Vidura argues that justice is also the only workable strategy", "hi": "विदुर बताते हैं कि न्याय ही एकमात्र व्यावहारिक रणनीति भी है"},
+          "narration": {
+            "en": "Vidura supports Bhishma and Drona, reminds Dhritarashtra that the Pandavas' claim precedes his sons', and points to their powerful alliances with Panchala and Krishna. He also says citizens are eager to see the survivors. War would pursue by force what conciliation can secure, while kind treatment could protect the Kuru family and repair public trust. His argument does not rest only on the brothers' invincibility; it joins legal claim, popular feeling and prevention of mass loss.",
+            "hi": "विदुर भीष्म और द्रोण का समर्थन करते हैं, धृतराष्ट्र को याद दिलाते हैं कि पांडवों का अधिकार उनके पुत्रों से पहले है, और पांचाल तथा कृष्ण के मजबूत गठबंधन दिखाते हैं। वे कहते हैं कि नागरिक भी जीवित राजकुमारों को देखने के लिए उत्सुक हैं। युद्ध उस चीज़ को बल से पाने की कोशिश करेगा जो मेल से मिल सकती है, जबकि सद्भाव कुरु परिवार को बचाकर जनता का विश्वास सुधार सकता है। उनका तर्क केवल भाइयों की अजेयता पर नहीं; वैध अधिकार, जनभावना और व्यापक हानि की रोकथाम को जोड़ता है।"
+          },
+          "visual_direction": "Combine three evidence layers—inheritance, public voices and alliance strength—into one reconciliation route; do not reduce Vidura's case to a power-level comparison.",
+          "character_ids": ["vidura", "dhritarashtra", "bhishma", "drona", "pandavas", "drupada", "krishna", "hastinapura-citizens"]
+        },
+        {
+          "id": "vidura-carries-the-invitation-to-panchala",
+          "title": {"en": "Dhritarashtra authorises return, and Vidura carries the invitation himself", "hi": "धृतराष्ट्र वापसी स्वीकारते हैं और विदुर स्वयं निमंत्रण लेकर जाते हैं"},
+          "narration": {
+            "en": "Dhritarashtra accepts the elders' advice and sends Vidura with gifts to Panchala. Vidura embraces the Pandavas, honours Drupada and asks that Kunti, Draupadi and the brothers return to their ancestral city. Drupada will not command them away; he asks for their own desire and the judgment of Krishna and Balarama. The return therefore emerges through several permissions and relationships, not through Dhritarashtra simply reclaiming authority over the survivors.",
+            "hi": "धृतराष्ट्र बुज़ुर्गों की सलाह स्वीकारकर विदुर को उपहारों सहित पांचाल भेजते हैं। विदुर पांडवों को गले लगाते, द्रुपद का सम्मान करते और कुंती, द्रौपदी तथा भाइयों को पैतृक नगर लौटने का निमंत्रण देते हैं। द्रुपद उन्हें आदेश देकर नहीं भेजते; वे उनकी अपनी इच्छा और कृष्ण-बलराम की राय पूछते हैं। इस तरह वापसी कई सहमतियों और रिश्तों से बनती है, केवल धृतराष्ट्र द्वारा जीवित परिवार पर अधिकार लौटाने से नहीं।"
+          },
+          "visual_direction": "Make Vidura's journey a repaired diplomatic road carrying gifts and an invitation, then show separate assent nodes in Panchala; avoid a single royal command pulling the family like pieces.",
+          "character_ids": ["dhritarashtra", "vidura", "drupada", "krishna", "balarama", "kunti", "draupadi", "pandavas"]
+        },
+        {
+          "id": "hastinapura-welcomes-the-family-but-sends-them-elsewhere",
+          "title": {"en": "Citizens welcome the survivors before the court assigns them a distant half", "hi": "नागरिक जीवित परिवार का स्वागत करते हैं, फिर दरबार उन्हें दूर का आधा हिस्सा देता है"},
+          "narration": {
+            "en": "The family returns in procession and Hastinapura's citizens greet Yudhishthira as a protector and remember Pandu with affection. After formal greetings, Dhritarashtra tells the brothers to settle at Khandavaprastha so renewed conflict will not arise and calls it half the kingdom. The settlement recognises a share but also removes them from the established capital. Restitution is therefore real and incomplete at once, opening a new frontier rather than restoring the old life they lost.",
+            "hi": "परिवार जुलूस में लौटता है और हस्तिनापुर के नागरिक युधिष्ठिर का रक्षक की तरह स्वागत करते तथा पांडु को प्रेम से याद करते हैं। औपचारिक मिलन के बाद धृतराष्ट्र भाइयों से कहते हैं कि नया संघर्ष रोकने के लिए वे खांडवप्रस्थ बसें और इसे राज्य का आधा हिस्सा बताते हैं। यह व्यवस्था अधिकार मानती भी है और उन्हें स्थापित राजधानी से दूर भी करती है। इसलिए अधिकार-वापसी एक साथ वास्तविक और अधूरी है—खोया पुराना जीवन लौटाने के बजाय नया सीमांत खुलता है।"
+          },
+          "visual_direction": "Let citizen voices fill the return route, then visibly divert the family away from the central palace toward an undeveloped region; present the half-share as mixed restitution, not an uncomplicated victory reward.",
+          "character_ids": ["yudhishthira", "draupadi", "kunti", "pandavas", "dhritarashtra", "bhishma", "hastinapura-citizens"]
+        },
+        {
+          "id": "khandavaprastha-becomes-indraprastha-through-settlement",
+          "title": {"en": "An unreclaimed landscape becomes Indraprastha through migration and work", "hi": "अविकसित भूभाग प्रवास और श्रम से इंद्रप्रस्थ बनता है"},
+          "narration": {
+            "en": "The Pandavas accept Khandavaprastha, select and measure a site with Vyasa's help and build a fortified city. Scholars, merchants, craftspeople and other settlers arrive; streets, homes, gardens, ponds and public life spread across the landscape. The source celebrates the finished city, but an explorable world should reveal the people and labour inside that transformation rather than treat it as instant magical construction. Indraprastha becomes a new home, while Krishna eventually returns to Dwaraka.",
+            "hi": "पांडव खांडवप्रस्थ स्वीकारते हैं, व्यास की सहायता से स्थान चुनकर मापते हैं और सुरक्षित नगर बनाते हैं। विद्वान, व्यापारी, शिल्पी और अनेक बसने वाले आते हैं; सड़कें, घर, बाग, तालाब और सार्वजनिक जीवन पूरे भूभाग में फैलते हैं। स्रोत तैयार नगर का वैभव बताता है, पर खोजयोग्य संसार इस बदलाव में लोगों और श्रम को दिखाए, इसे तत्काल जादुई निर्माण न बनाए। इंद्रप्रस्थ नया घर बनता है और अंततः कृष्ण द्वारका लौटते हैं।"
+          },
+          "visual_direction": "Reveal the city in layered time—survey lines, water, roads, homes, workshops, gardens and institutions—with settlers as agents of change; keep a reversible map path back to Hastinapura, Panchala and Dwaraka.",
+          "character_ids": ["pandavas", "draupadi", "kunti", "vyasa", "krishna", "indraprastha-settlers", "craftspeople", "merchants", "scholars"]
+        }
+      ]
+    }
+  ]
+}

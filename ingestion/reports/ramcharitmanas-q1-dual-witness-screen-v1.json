@@ -1,0 +1,3301 @@
+{
+  "contract": "DEVAM_RAMCHARITMANAS_Q1_DUAL_WITNESS_SCREEN_V1",
+  "result": "PASS",
+  "decision": "SCREEN_COMPLETE_NO_BULK_PROMOTION",
+  "inputs": {
+    "wikisource_plan_sha256": "fbc2a25045bcf8dcbfcb8a5dd2c5388fe8263c209567d515b27f138d0882c0ab",
+    "wikisource_acquisition_report_sha256": "8a6547f3c2f74194a29a885d2b7529ce9fcdd06daa51e7e32c6f48f2e0a2cf7c",
+    "ia_coordinate_ocr_sha256": "4dba066cfbe3677601fa07c81c08de4fe1f99051c201cee3d45d097af93686b6",
+    "held_page_recovery": {
+      "path": "ingestion/reports/ramcharitmanas-held-page-recovery-v1.json",
+      "sha256": "e044460d5c172bc130afdf3a594f9d751a833e49ad737b4fcb7013f24eb8d5b9"
+    }
+  },
+  "method": {
+    "witness_a": "Pinned Hindi Wikisource page transcription projected to Devanagari characters after deterministic layout-markup removal.",
+    "witness_b": "Edition-matched Internet Archive coordinate OCR projected to Devanagari characters.",
+    "control": "All 813 Wikisource quality 3 or 4 narrative pages.",
+    "screen": "A q1 page is inside the descriptive control envelope when both sequence similarity and character-length ratio meet the quality-3/4 fifth-percentile thresholds.",
+    "claim_boundary": "The screen detects unusual witness divergence. It cannot prove exactness, correct shared errors, or substitute for linguistic review."
+  },
+  "control_distribution": {
+    "page_count": 813,
+    "sequence_similarity": {
+      "0": 0.0,
+      "1": 0.33905597,
+      "5": 0.72781965,
+      "10": 0.77009326,
+      "25": 0.82635094,
+      "50": 0.85082212,
+      "75": 0.8677686,
+      "90": 0.88173326,
+      "95": 0.88849322,
+      "99": 0.90331377,
+      "100": 0.92396377
+    },
+    "length_ratio": {
+      "0": 0.0,
+      "1": 0.69133602,
+      "5": 0.93918288,
+      "10": 0.94753799,
+      "25": 0.95788043,
+      "50": 0.96866295,
+      "75": 0.9803198,
+      "90": 0.99143508,
+      "95": 0.99571651,
+      "99": 0.99852581,
+      "100": 1.0
+    }
+  },
+  "q1_distribution": {
+    "page_count": 345,
+    "sequence_similarity": {
+      "0": 0.29714912,
+      "1": 0.75614367,
+      "5": 0.79245491,
+      "10": 0.81740985,
+      "25": 0.8410596,
+      "50": 0.86060606,
+      "75": 0.87543362,
+      "90": 0.88651525,
+      "95": 0.89021049,
+      "99": 0.89796356,
+      "100": 0.90423012
+    },
+    "length_ratio": {
+      "0": 0.30565497,
+      "1": 0.93968692,
+      "5": 0.94711857,
+      "10": 0.95580019,
+      "25": 0.96686547,
+      "50": 0.9759519,
+      "75": 0.98563218,
+      "90": 0.99303178,
+      "95": 0.99634712,
+      "99": 0.99903258,
+      "100": 0.99932615
+    }
+  },
+  "screen_result": {
+    "control_percentile": 5,
+    "minimum_sequence_similarity": 0.72781965,
+    "minimum_length_ratio": 0.93918288,
+    "inside_control_envelope_page_count": 340,
+    "outside_control_envelope_pages": [
+      381,
+      415,
+      847,
+      994,
+      1024
+    ],
+    "outside_control_envelope_page_count": 5
+  },
+  "manual_adjudication": [
+    {
+      "scan_page": 381,
+      "finding": "IA OCR drops lower commentary; the q1 transcription still contains visible character and word errors.",
+      "product_status": "held_for_correction"
+    },
+    {
+      "scan_page": 415,
+      "finding": "IA OCR omits lines; the q1 transcription also contains visible corruptions and a broken line sequence.",
+      "product_status": "held_for_correction"
+    },
+    {
+      "scan_page": 847,
+      "finding": "Dense noisy print produces divergent errors in both witnesses; neither is safe as consumer text without correction.",
+      "product_status": "held_for_correction"
+    },
+    {
+      "scan_page": 994,
+      "finding": "The skewed scan causes severe IA OCR truncation; the more complete q1 transcription still contains malformed and omitted text.",
+      "product_status": "held_for_correction"
+    },
+    {
+      "scan_page": 1024,
+      "finding": "Character counts agree but both witnesses retain visible corruptions; similarity alone would conceal consumer-facing errors.",
+      "product_status": "held_for_correction"
+    }
+  ],
+  "q1_rows": [
+    {
+      "scan_page": 355,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1507,
+      "ia_ocr_devanagari_characters": 1509,
+      "sequence_similarity": 0.86339523,
+      "length_ratio": 0.99867462,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 358,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1486,
+      "ia_ocr_devanagari_characters": 1517,
+      "sequence_similarity": 0.87645688,
+      "length_ratio": 0.97956493,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 360,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1305,
+      "ia_ocr_devanagari_characters": 1331,
+      "sequence_similarity": 0.8831563,
+      "length_ratio": 0.98046582,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 361,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1452,
+      "ia_ocr_devanagari_characters": 1482,
+      "sequence_similarity": 0.86707566,
+      "length_ratio": 0.97975709,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 362,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1337,
+      "ia_ocr_devanagari_characters": 1389,
+      "sequence_similarity": 0.87454145,
+      "length_ratio": 0.96256299,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 363,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1440,
+      "ia_ocr_devanagari_characters": 1388,
+      "sequence_similarity": 0.82602546,
+      "length_ratio": 0.96388889,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 364,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1431,
+      "ia_ocr_devanagari_characters": 1470,
+      "sequence_similarity": 0.87969666,
+      "length_ratio": 0.97346939,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 365,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1420,
+      "ia_ocr_devanagari_characters": 1449,
+      "sequence_similarity": 0.86929244,
+      "length_ratio": 0.9799862,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 366,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1485,
+      "ia_ocr_devanagari_characters": 1536,
+      "sequence_similarity": 0.89639192,
+      "length_ratio": 0.96679688,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 367,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1567,
+      "ia_ocr_devanagari_characters": 1633,
+      "sequence_similarity": 0.8375,
+      "length_ratio": 0.95958359,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 368,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1483,
+      "ia_ocr_devanagari_characters": 1484,
+      "sequence_similarity": 0.85136502,
+      "length_ratio": 0.99932615,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 369,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1389,
+      "ia_ocr_devanagari_characters": 1429,
+      "sequence_similarity": 0.87650816,
+      "length_ratio": 0.9720084,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 370,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1533,
+      "ia_ocr_devanagari_characters": 1549,
+      "sequence_similarity": 0.85204413,
+      "length_ratio": 0.98967076,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 371,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1272,
+      "ia_ocr_devanagari_characters": 1328,
+      "sequence_similarity": 0.85461538,
+      "length_ratio": 0.95783133,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 372,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1212,
+      "ia_ocr_devanagari_characters": 1261,
+      "sequence_similarity": 0.87747675,
+      "length_ratio": 0.96114195,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 373,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1413,
+      "ia_ocr_devanagari_characters": 1404,
+      "sequence_similarity": 0.86261981,
+      "length_ratio": 0.99363057,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 374,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1534,
+      "ia_ocr_devanagari_characters": 1624,
+      "sequence_similarity": 0.86383787,
+      "length_ratio": 0.94458128,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 375,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1302,
+      "ia_ocr_devanagari_characters": 1344,
+      "sequence_similarity": 0.87528345,
+      "length_ratio": 0.96875,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 376,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1512,
+      "ia_ocr_devanagari_characters": 1556,
+      "sequence_similarity": 0.89765319,
+      "length_ratio": 0.97172237,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 377,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1231,
+      "ia_ocr_devanagari_characters": 1264,
+      "sequence_similarity": 0.84088176,
+      "length_ratio": 0.97389241,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 378,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1490,
+      "ia_ocr_devanagari_characters": 1542,
+      "sequence_similarity": 0.87532982,
+      "length_ratio": 0.96627756,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 379,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1420,
+      "ia_ocr_devanagari_characters": 1452,
+      "sequence_similarity": 0.87743733,
+      "length_ratio": 0.97796143,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 380,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1259,
+      "ia_ocr_devanagari_characters": 1298,
+      "sequence_similarity": 0.88150176,
+      "length_ratio": 0.96995378,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 381,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1486,
+      "ia_ocr_devanagari_characters": 1104,
+      "sequence_similarity": 0.71274131,
+      "length_ratio": 0.74293405,
+      "inside_control_envelope": false
+    },
+    {
+      "scan_page": 382,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1335,
+      "ia_ocr_devanagari_characters": 1413,
+      "sequence_similarity": 0.84279476,
+      "length_ratio": 0.9447983,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 383,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1198,
+      "ia_ocr_devanagari_characters": 1273,
+      "sequence_similarity": 0.84985836,
+      "length_ratio": 0.94108405,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 384,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1680,
+      "ia_ocr_devanagari_characters": 1701,
+      "sequence_similarity": 0.89500148,
+      "length_ratio": 0.98765432,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 385,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1202,
+      "ia_ocr_devanagari_characters": 1231,
+      "sequence_similarity": 0.86970818,
+      "length_ratio": 0.97644192,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 386,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1510,
+      "ia_ocr_devanagari_characters": 1475,
+      "sequence_similarity": 0.86432161,
+      "length_ratio": 0.97682119,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 387,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1420,
+      "ia_ocr_devanagari_characters": 1461,
+      "sequence_similarity": 0.88233252,
+      "length_ratio": 0.97193703,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 388,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1458,
+      "ia_ocr_devanagari_characters": 1492,
+      "sequence_similarity": 0.85016949,
+      "length_ratio": 0.9772118,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 389,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1584,
+      "ia_ocr_devanagari_characters": 1601,
+      "sequence_similarity": 0.86342229,
+      "length_ratio": 0.98938164,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 390,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1406,
+      "ia_ocr_devanagari_characters": 1432,
+      "sequence_similarity": 0.88090204,
+      "length_ratio": 0.98184358,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 391,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1306,
+      "ia_ocr_devanagari_characters": 1329,
+      "sequence_similarity": 0.87893738,
+      "length_ratio": 0.98269375,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 392,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1358,
+      "ia_ocr_devanagari_characters": 1389,
+      "sequence_similarity": 0.87368038,
+      "length_ratio": 0.97768179,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 393,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1513,
+      "ia_ocr_devanagari_characters": 1558,
+      "sequence_similarity": 0.85053728,
+      "length_ratio": 0.97111682,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 394,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1450,
+      "ia_ocr_devanagari_characters": 1448,
+      "sequence_similarity": 0.85921325,
+      "length_ratio": 0.99862069,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 395,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1476,
+      "ia_ocr_devanagari_characters": 1512,
+      "sequence_similarity": 0.88353414,
+      "length_ratio": 0.97619048,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 396,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1290,
+      "ia_ocr_devanagari_characters": 1320,
+      "sequence_similarity": 0.85977011,
+      "length_ratio": 0.97727273,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 397,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1398,
+      "ia_ocr_devanagari_characters": 1472,
+      "sequence_similarity": 0.88222997,
+      "length_ratio": 0.94972826,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 398,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1266,
+      "ia_ocr_devanagari_characters": 1291,
+      "sequence_similarity": 0.8455221,
+      "length_ratio": 0.98063517,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 399,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1493,
+      "ia_ocr_devanagari_characters": 1511,
+      "sequence_similarity": 0.85952064,
+      "length_ratio": 0.98808736,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 400,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1386,
+      "ia_ocr_devanagari_characters": 1398,
+      "sequence_similarity": 0.89367816,
+      "length_ratio": 0.99141631,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 401,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1229,
+      "ia_ocr_devanagari_characters": 1243,
+      "sequence_similarity": 0.8487055,
+      "length_ratio": 0.98873693,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 402,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1347,
+      "ia_ocr_devanagari_characters": 1388,
+      "sequence_similarity": 0.87897623,
+      "length_ratio": 0.9704611,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 403,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1625,
+      "ia_ocr_devanagari_characters": 1613,
+      "sequence_similarity": 0.8702903,
+      "length_ratio": 0.99261538,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 404,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1435,
+      "ia_ocr_devanagari_characters": 1460,
+      "sequence_similarity": 0.87530225,
+      "length_ratio": 0.98287671,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 405,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1270,
+      "ia_ocr_devanagari_characters": 1305,
+      "sequence_similarity": 0.89398058,
+      "length_ratio": 0.97318008,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 406,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1286,
+      "ia_ocr_devanagari_characters": 1319,
+      "sequence_similarity": 0.88829175,
+      "length_ratio": 0.97498105,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 407,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1335,
+      "ia_ocr_devanagari_characters": 1400,
+      "sequence_similarity": 0.83290676,
+      "length_ratio": 0.95357143,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 408,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1347,
+      "ia_ocr_devanagari_characters": 1369,
+      "sequence_similarity": 0.89175258,
+      "length_ratio": 0.98392988,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 409,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1345,
+      "ia_ocr_devanagari_characters": 1408,
+      "sequence_similarity": 0.82746095,
+      "length_ratio": 0.95525568,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 410,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1671,
+      "ia_ocr_devanagari_characters": 1709,
+      "sequence_similarity": 0.83254438,
+      "length_ratio": 0.97776477,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 411,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1470,
+      "ia_ocr_devanagari_characters": 1488,
+      "sequence_similarity": 0.84178499,
+      "length_ratio": 0.98790323,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 412,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1341,
+      "ia_ocr_devanagari_characters": 1368,
+      "sequence_similarity": 0.88593577,
+      "length_ratio": 0.98026316,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 413,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1389,
+      "ia_ocr_devanagari_characters": 1442,
+      "sequence_similarity": 0.84634405,
+      "length_ratio": 0.96324549,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 414,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1460,
+      "ia_ocr_devanagari_characters": 1495,
+      "sequence_similarity": 0.90423012,
+      "length_ratio": 0.97658863,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 415,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1263,
+      "ia_ocr_devanagari_characters": 1033,
+      "sequence_similarity": 0.79703833,
+      "length_ratio": 0.8178939,
+      "inside_control_envelope": false
+    },
+    {
+      "scan_page": 416,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1468,
+      "ia_ocr_devanagari_characters": 1514,
+      "sequence_similarity": 0.88128773,
+      "length_ratio": 0.96961691,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 417,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1349,
+      "ia_ocr_devanagari_characters": 1380,
+      "sequence_similarity": 0.83693661,
+      "length_ratio": 0.97753623,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 418,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1426,
+      "ia_ocr_devanagari_characters": 1475,
+      "sequence_similarity": 0.87280248,
+      "length_ratio": 0.96677966,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 419,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1454,
+      "ia_ocr_devanagari_characters": 1484,
+      "sequence_similarity": 0.86385296,
+      "length_ratio": 0.97978437,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 517,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1489,
+      "ia_ocr_devanagari_characters": 1528,
+      "sequence_similarity": 0.88896255,
+      "length_ratio": 0.97447644,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 518,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1409,
+      "ia_ocr_devanagari_characters": 1443,
+      "sequence_similarity": 0.8997195,
+      "length_ratio": 0.97643798,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 519,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1408,
+      "ia_ocr_devanagari_characters": 1427,
+      "sequence_similarity": 0.89100529,
+      "length_ratio": 0.98668535,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 520,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1671,
+      "ia_ocr_devanagari_characters": 1704,
+      "sequence_similarity": 0.8877037,
+      "length_ratio": 0.9806338,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 521,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1427,
+      "ia_ocr_devanagari_characters": 1343,
+      "sequence_similarity": 0.84404332,
+      "length_ratio": 0.94113525,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 522,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1628,
+      "ia_ocr_devanagari_characters": 1652,
+      "sequence_similarity": 0.8902439,
+      "length_ratio": 0.98547215,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 523,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1469,
+      "ia_ocr_devanagari_characters": 1460,
+      "sequence_similarity": 0.84533971,
+      "length_ratio": 0.99387338,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 524,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1474,
+      "ia_ocr_devanagari_characters": 1481,
+      "sequence_similarity": 0.85414552,
+      "length_ratio": 0.99527346,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 525,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1394,
+      "ia_ocr_devanagari_characters": 1440,
+      "sequence_similarity": 0.88637968,
+      "length_ratio": 0.96805556,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 526,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1595,
+      "ia_ocr_devanagari_characters": 1632,
+      "sequence_similarity": 0.86086148,
+      "length_ratio": 0.97732843,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 527,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1640,
+      "ia_ocr_devanagari_characters": 1702,
+      "sequence_similarity": 0.87133453,
+      "length_ratio": 0.96357227,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 530,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1470,
+      "ia_ocr_devanagari_characters": 1489,
+      "sequence_similarity": 0.89286921,
+      "length_ratio": 0.98723976,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 531,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1498,
+      "ia_ocr_devanagari_characters": 1526,
+      "sequence_similarity": 0.88756614,
+      "length_ratio": 0.98165138,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 532,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1381,
+      "ia_ocr_devanagari_characters": 1428,
+      "sequence_similarity": 0.87646849,
+      "length_ratio": 0.96708683,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 533,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1458,
+      "ia_ocr_devanagari_characters": 1479,
+      "sequence_similarity": 0.87640449,
+      "length_ratio": 0.98580122,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 534,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1564,
+      "ia_ocr_devanagari_characters": 1575,
+      "sequence_similarity": 0.8805352,
+      "length_ratio": 0.99301587,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 535,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1391,
+      "ia_ocr_devanagari_characters": 1413,
+      "sequence_similarity": 0.83523538,
+      "length_ratio": 0.98443029,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 536,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1461,
+      "ia_ocr_devanagari_characters": 1497,
+      "sequence_similarity": 0.87356322,
+      "length_ratio": 0.9759519,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 537,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1410,
+      "ia_ocr_devanagari_characters": 1444,
+      "sequence_similarity": 0.88927821,
+      "length_ratio": 0.97645429,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 538,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1557,
+      "ia_ocr_devanagari_characters": 1610,
+      "sequence_similarity": 0.85822545,
+      "length_ratio": 0.96708075,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 539,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1426,
+      "ia_ocr_devanagari_characters": 1442,
+      "sequence_similarity": 0.88075314,
+      "length_ratio": 0.9889043,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 540,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1570,
+      "ia_ocr_devanagari_characters": 1581,
+      "sequence_similarity": 0.87400825,
+      "length_ratio": 0.99304238,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 541,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1411,
+      "ia_ocr_devanagari_characters": 1441,
+      "sequence_similarity": 0.87938289,
+      "length_ratio": 0.97918112,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 542,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1442,
+      "ia_ocr_devanagari_characters": 1482,
+      "sequence_similarity": 0.88987688,
+      "length_ratio": 0.97300945,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 543,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1567,
+      "ia_ocr_devanagari_characters": 1593,
+      "sequence_similarity": 0.89050633,
+      "length_ratio": 0.98367859,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 544,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1550,
+      "ia_ocr_devanagari_characters": 1548,
+      "sequence_similarity": 0.88637831,
+      "length_ratio": 0.99870968,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 545,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1454,
+      "ia_ocr_devanagari_characters": 1474,
+      "sequence_similarity": 0.86680328,
+      "length_ratio": 0.98643148,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 546,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1428,
+      "ia_ocr_devanagari_characters": 1468,
+      "sequence_similarity": 0.87016575,
+      "length_ratio": 0.97275204,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 547,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1435,
+      "ia_ocr_devanagari_characters": 1463,
+      "sequence_similarity": 0.85990338,
+      "length_ratio": 0.98086124,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 548,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1436,
+      "ia_ocr_devanagari_characters": 1476,
+      "sequence_similarity": 0.88049451,
+      "length_ratio": 0.97289973,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 549,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1651,
+      "ia_ocr_devanagari_characters": 1607,
+      "sequence_similarity": 0.84468999,
+      "length_ratio": 0.97334949,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 550,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1592,
+      "ia_ocr_devanagari_characters": 1632,
+      "sequence_similarity": 0.87903226,
+      "length_ratio": 0.9754902,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 551,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1445,
+      "ia_ocr_devanagari_characters": 1441,
+      "sequence_similarity": 0.89327789,
+      "length_ratio": 0.99723183,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 552,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1581,
+      "ia_ocr_devanagari_characters": 1604,
+      "sequence_similarity": 0.88477237,
+      "length_ratio": 0.98566085,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 553,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1333,
+      "ia_ocr_devanagari_characters": 1347,
+      "sequence_similarity": 0.88656716,
+      "length_ratio": 0.98960653,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 554,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1501,
+      "ia_ocr_devanagari_characters": 1546,
+      "sequence_similarity": 0.89202494,
+      "length_ratio": 0.97089263,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 555,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1569,
+      "ia_ocr_devanagari_characters": 1571,
+      "sequence_similarity": 0.88152866,
+      "length_ratio": 0.99872693,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 556,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1385,
+      "ia_ocr_devanagari_characters": 1402,
+      "sequence_similarity": 0.88625762,
+      "length_ratio": 0.98787447,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 557,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1419,
+      "ia_ocr_devanagari_characters": 1426,
+      "sequence_similarity": 0.86608084,
+      "length_ratio": 0.99509116,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 558,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1420,
+      "ia_ocr_devanagari_characters": 1440,
+      "sequence_similarity": 0.87342657,
+      "length_ratio": 0.98611111,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 559,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1519,
+      "ia_ocr_devanagari_characters": 1563,
+      "sequence_similarity": 0.88643738,
+      "length_ratio": 0.97184901,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 560,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1558,
+      "ia_ocr_devanagari_characters": 1566,
+      "sequence_similarity": 0.89820743,
+      "length_ratio": 0.99489144,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 562,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1520,
+      "ia_ocr_devanagari_characters": 1600,
+      "sequence_similarity": 0.86987179,
+      "length_ratio": 0.95,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 563,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1510,
+      "ia_ocr_devanagari_characters": 1533,
+      "sequence_similarity": 0.87282287,
+      "length_ratio": 0.98499674,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 564,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1370,
+      "ia_ocr_devanagari_characters": 1451,
+      "sequence_similarity": 0.85714286,
+      "length_ratio": 0.94417643,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 565,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1543,
+      "ia_ocr_devanagari_characters": 1549,
+      "sequence_similarity": 0.86287193,
+      "length_ratio": 0.99612653,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 566,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1465,
+      "ia_ocr_devanagari_characters": 1514,
+      "sequence_similarity": 0.86270561,
+      "length_ratio": 0.9676354,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 567,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1569,
+      "ia_ocr_devanagari_characters": 1604,
+      "sequence_similarity": 0.88622754,
+      "length_ratio": 0.97817955,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 568,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1451,
+      "ia_ocr_devanagari_characters": 1489,
+      "sequence_similarity": 0.88027211,
+      "length_ratio": 0.97447952,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 569,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1471,
+      "ia_ocr_devanagari_characters": 1516,
+      "sequence_similarity": 0.86173418,
+      "length_ratio": 0.97031662,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 570,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1543,
+      "ia_ocr_devanagari_characters": 1565,
+      "sequence_similarity": 0.85199485,
+      "length_ratio": 0.98594249,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 571,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1526,
+      "ia_ocr_devanagari_characters": 1560,
+      "sequence_similarity": 0.86001296,
+      "length_ratio": 0.97820513,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 572,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1537,
+      "ia_ocr_devanagari_characters": 1569,
+      "sequence_similarity": 0.86864134,
+      "length_ratio": 0.97960484,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 573,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1426,
+      "ia_ocr_devanagari_characters": 1438,
+      "sequence_similarity": 0.87639665,
+      "length_ratio": 0.99165508,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 574,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1433,
+      "ia_ocr_devanagari_characters": 1484,
+      "sequence_similarity": 0.8645869,
+      "length_ratio": 0.96563342,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 575,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1444,
+      "ia_ocr_devanagari_characters": 1434,
+      "sequence_similarity": 0.8533704,
+      "length_ratio": 0.99307479,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 576,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1697,
+      "ia_ocr_devanagari_characters": 1763,
+      "sequence_similarity": 0.88786127,
+      "length_ratio": 0.96256381,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 577,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1592,
+      "ia_ocr_devanagari_characters": 1631,
+      "sequence_similarity": 0.85634502,
+      "length_ratio": 0.97608829,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 578,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1596,
+      "ia_ocr_devanagari_characters": 1622,
+      "sequence_similarity": 0.8769422,
+      "length_ratio": 0.98397041,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 579,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1706,
+      "ia_ocr_devanagari_characters": 1742,
+      "sequence_similarity": 0.88225058,
+      "length_ratio": 0.9793341,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 580,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1528,
+      "ia_ocr_devanagari_characters": 1587,
+      "sequence_similarity": 0.88539326,
+      "length_ratio": 0.96282294,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 581,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1542,
+      "ia_ocr_devanagari_characters": 1579,
+      "sequence_similarity": 0.873438,
+      "length_ratio": 0.97656745,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 582,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1313,
+      "ia_ocr_devanagari_characters": 1361,
+      "sequence_similarity": 0.88182498,
+      "length_ratio": 0.96473181,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 583,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1460,
+      "ia_ocr_devanagari_characters": 1517,
+      "sequence_similarity": 0.86865972,
+      "length_ratio": 0.96242584,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 584,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1480,
+      "ia_ocr_devanagari_characters": 1514,
+      "sequence_similarity": 0.8744155,
+      "length_ratio": 0.97754293,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 585,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1415,
+      "ia_ocr_devanagari_characters": 1416,
+      "sequence_similarity": 0.87177676,
+      "length_ratio": 0.99929379,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 586,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1542,
+      "ia_ocr_devanagari_characters": 1582,
+      "sequence_similarity": 0.88924456,
+      "length_ratio": 0.97471555,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 587,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1543,
+      "ia_ocr_devanagari_characters": 1573,
+      "sequence_similarity": 0.86264442,
+      "length_ratio": 0.98092816,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 588,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1390,
+      "ia_ocr_devanagari_characters": 1432,
+      "sequence_similarity": 0.87810064,
+      "length_ratio": 0.97067039,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 589,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1518,
+      "ia_ocr_devanagari_characters": 1552,
+      "sequence_similarity": 0.87035831,
+      "length_ratio": 0.97809278,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 590,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1370,
+      "ia_ocr_devanagari_characters": 1427,
+      "sequence_similarity": 0.88737934,
+      "length_ratio": 0.96005606,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 591,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1372,
+      "ia_ocr_devanagari_characters": 1427,
+      "sequence_similarity": 0.87173991,
+      "length_ratio": 0.9614576,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 592,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1477,
+      "ia_ocr_devanagari_characters": 1516,
+      "sequence_similarity": 0.89007685,
+      "length_ratio": 0.97427441,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 593,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1402,
+      "ia_ocr_devanagari_characters": 1432,
+      "sequence_similarity": 0.8659139,
+      "length_ratio": 0.97905028,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 594,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1404,
+      "ia_ocr_devanagari_characters": 1424,
+      "sequence_similarity": 0.90381895,
+      "length_ratio": 0.98595506,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 595,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1430,
+      "ia_ocr_devanagari_characters": 1438,
+      "sequence_similarity": 0.86262204,
+      "length_ratio": 0.99443672,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 596,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1397,
+      "ia_ocr_devanagari_characters": 1438,
+      "sequence_similarity": 0.88818342,
+      "length_ratio": 0.97148818,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 597,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1650,
+      "ia_ocr_devanagari_characters": 1664,
+      "sequence_similarity": 0.88533494,
+      "length_ratio": 0.99158654,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 598,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1359,
+      "ia_ocr_devanagari_characters": 1399,
+      "sequence_similarity": 0.88687455,
+      "length_ratio": 0.97140815,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 599,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1365,
+      "ia_ocr_devanagari_characters": 1409,
+      "sequence_similarity": 0.86229272,
+      "length_ratio": 0.96877218,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 600,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1387,
+      "ia_ocr_devanagari_characters": 1438,
+      "sequence_similarity": 0.84106195,
+      "length_ratio": 0.96453408,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 601,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1408,
+      "ia_ocr_devanagari_characters": 1460,
+      "sequence_similarity": 0.86122734,
+      "length_ratio": 0.96438356,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 602,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1518,
+      "ia_ocr_devanagari_characters": 1569,
+      "sequence_similarity": 0.85973437,
+      "length_ratio": 0.96749522,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 603,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1543,
+      "ia_ocr_devanagari_characters": 1623,
+      "sequence_similarity": 0.87428932,
+      "length_ratio": 0.95070856,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 604,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1404,
+      "ia_ocr_devanagari_characters": 1461,
+      "sequence_similarity": 0.85933682,
+      "length_ratio": 0.96098563,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 605,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1311,
+      "ia_ocr_devanagari_characters": 1335,
+      "sequence_similarity": 0.861678,
+      "length_ratio": 0.98202247,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 606,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1607,
+      "ia_ocr_devanagari_characters": 1656,
+      "sequence_similarity": 0.88936561,
+      "length_ratio": 0.97041063,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 607,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1411,
+      "ia_ocr_devanagari_characters": 1398,
+      "sequence_similarity": 0.83161267,
+      "length_ratio": 0.99078668,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 608,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1385,
+      "ia_ocr_devanagari_characters": 1436,
+      "sequence_similarity": 0.89613612,
+      "length_ratio": 0.96448468,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 609,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1425,
+      "ia_ocr_devanagari_characters": 1405,
+      "sequence_similarity": 0.85371025,
+      "length_ratio": 0.98596491,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 610,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1455,
+      "ia_ocr_devanagari_characters": 1488,
+      "sequence_similarity": 0.84743459,
+      "length_ratio": 0.97782258,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 611,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1356,
+      "ia_ocr_devanagari_characters": 1372,
+      "sequence_similarity": 0.88049853,
+      "length_ratio": 0.98833819,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 612,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1477,
+      "ia_ocr_devanagari_characters": 1539,
+      "sequence_similarity": 0.86074271,
+      "length_ratio": 0.9597141,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 613,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1510,
+      "ia_ocr_devanagari_characters": 1561,
+      "sequence_similarity": 0.88114621,
+      "length_ratio": 0.96732864,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 614,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1389,
+      "ia_ocr_devanagari_characters": 1436,
+      "sequence_similarity": 0.85026549,
+      "length_ratio": 0.96727019,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 615,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1476,
+      "ia_ocr_devanagari_characters": 1533,
+      "sequence_similarity": 0.86540379,
+      "length_ratio": 0.962818,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 616,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1555,
+      "ia_ocr_devanagari_characters": 1595,
+      "sequence_similarity": 0.85079365,
+      "length_ratio": 0.97492163,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 617,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1397,
+      "ia_ocr_devanagari_characters": 1401,
+      "sequence_similarity": 0.86275911,
+      "length_ratio": 0.9971449,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 618,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1394,
+      "ia_ocr_devanagari_characters": 1482,
+      "sequence_similarity": 0.86161335,
+      "length_ratio": 0.94062078,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 620,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1417,
+      "ia_ocr_devanagari_characters": 1455,
+      "sequence_similarity": 0.87674095,
+      "length_ratio": 0.97388316,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 705,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1177,
+      "ia_ocr_devanagari_characters": 1229,
+      "sequence_similarity": 0.80964256,
+      "length_ratio": 0.95768918,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 706,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1379,
+      "ia_ocr_devanagari_characters": 1389,
+      "sequence_similarity": 0.83526012,
+      "length_ratio": 0.99280058,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 707,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1428,
+      "ia_ocr_devanagari_characters": 1369,
+      "sequence_similarity": 0.82445477,
+      "length_ratio": 0.95868347,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 708,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1402,
+      "ia_ocr_devanagari_characters": 1415,
+      "sequence_similarity": 0.83564075,
+      "length_ratio": 0.99081272,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 709,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1421,
+      "ia_ocr_devanagari_characters": 1497,
+      "sequence_similarity": 0.86771761,
+      "length_ratio": 0.9492318,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 710,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1504,
+      "ia_ocr_devanagari_characters": 1537,
+      "sequence_similarity": 0.84511674,
+      "length_ratio": 0.9785296,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 711,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1502,
+      "ia_ocr_devanagari_characters": 1550,
+      "sequence_similarity": 0.85845347,
+      "length_ratio": 0.96903226,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 712,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1610,
+      "ia_ocr_devanagari_characters": 1613,
+      "sequence_similarity": 0.81849209,
+      "length_ratio": 0.99814011,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 713,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1480,
+      "ia_ocr_devanagari_characters": 1508,
+      "sequence_similarity": 0.83199465,
+      "length_ratio": 0.98143236,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 714,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1453,
+      "ia_ocr_devanagari_characters": 1445,
+      "sequence_similarity": 0.79434092,
+      "length_ratio": 0.99449415,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 715,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1349,
+      "ia_ocr_devanagari_characters": 1406,
+      "sequence_similarity": 0.84137931,
+      "length_ratio": 0.95945946,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 716,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1302,
+      "ia_ocr_devanagari_characters": 1338,
+      "sequence_similarity": 0.84318182,
+      "length_ratio": 0.97309417,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 717,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1566,
+      "ia_ocr_devanagari_characters": 1570,
+      "sequence_similarity": 0.82015306,
+      "length_ratio": 0.99745223,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 718,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1454,
+      "ia_ocr_devanagari_characters": 1504,
+      "sequence_similarity": 0.88708587,
+      "length_ratio": 0.96675532,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 719,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1376,
+      "ia_ocr_devanagari_characters": 1402,
+      "sequence_similarity": 0.87185025,
+      "length_ratio": 0.98145506,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 720,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1316,
+      "ia_ocr_devanagari_characters": 1294,
+      "sequence_similarity": 0.84061303,
+      "length_ratio": 0.98328267,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 721,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1519,
+      "ia_ocr_devanagari_characters": 1551,
+      "sequence_similarity": 0.87687296,
+      "length_ratio": 0.97936815,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 722,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1379,
+      "ia_ocr_devanagari_characters": 1407,
+      "sequence_similarity": 0.80330223,
+      "length_ratio": 0.9800995,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 723,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1376,
+      "ia_ocr_devanagari_characters": 1381,
+      "sequence_similarity": 0.87631483,
+      "length_ratio": 0.99637944,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 724,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1402,
+      "ia_ocr_devanagari_characters": 1440,
+      "sequence_similarity": 0.79521464,
+      "length_ratio": 0.97361111,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 725,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1580,
+      "ia_ocr_devanagari_characters": 1638,
+      "sequence_similarity": 0.85146053,
+      "length_ratio": 0.96459096,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 726,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1444,
+      "ia_ocr_devanagari_characters": 1450,
+      "sequence_similarity": 0.79198341,
+      "length_ratio": 0.99586207,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 727,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1439,
+      "ia_ocr_devanagari_characters": 1453,
+      "sequence_similarity": 0.84370678,
+      "length_ratio": 0.99036476,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 728,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1302,
+      "ia_ocr_devanagari_characters": 1335,
+      "sequence_similarity": 0.82366325,
+      "length_ratio": 0.9752809,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 729,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1395,
+      "ia_ocr_devanagari_characters": 1417,
+      "sequence_similarity": 0.85490754,
+      "length_ratio": 0.98447424,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 730,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1309,
+      "ia_ocr_devanagari_characters": 1333,
+      "sequence_similarity": 0.81756245,
+      "length_ratio": 0.9819955,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 731,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1273,
+      "ia_ocr_devanagari_characters": 1291,
+      "sequence_similarity": 0.83931357,
+      "length_ratio": 0.98605732,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 732,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1324,
+      "ia_ocr_devanagari_characters": 1346,
+      "sequence_similarity": 0.8494382,
+      "length_ratio": 0.98365527,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 733,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1426,
+      "ia_ocr_devanagari_characters": 1434,
+      "sequence_similarity": 0.82027972,
+      "length_ratio": 0.9944212,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 734,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1478,
+      "ia_ocr_devanagari_characters": 1509,
+      "sequence_similarity": 0.82825578,
+      "length_ratio": 0.97945659,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 735,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1317,
+      "ia_ocr_devanagari_characters": 1322,
+      "sequence_similarity": 0.84729064,
+      "length_ratio": 0.99621785,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 736,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1493,
+      "ia_ocr_devanagari_characters": 1566,
+      "sequence_similarity": 0.76495587,
+      "length_ratio": 0.95338442,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 737,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1459,
+      "ia_ocr_devanagari_characters": 1509,
+      "sequence_similarity": 0.87061995,
+      "length_ratio": 0.96686547,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 738,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1385,
+      "ia_ocr_devanagari_characters": 1373,
+      "sequence_similarity": 0.83103698,
+      "length_ratio": 0.99133574,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 739,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 864,
+      "ia_ocr_devanagari_characters": 871,
+      "sequence_similarity": 0.77463977,
+      "length_ratio": 0.99196326,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 740,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1553,
+      "ia_ocr_devanagari_characters": 1603,
+      "sequence_similarity": 0.83079848,
+      "length_ratio": 0.96880848,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 741,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1432,
+      "ia_ocr_devanagari_characters": 1450,
+      "sequence_similarity": 0.83761277,
+      "length_ratio": 0.98758621,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 742,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1570,
+      "ia_ocr_devanagari_characters": 1560,
+      "sequence_similarity": 0.8370607,
+      "length_ratio": 0.99363057,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 743,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1197,
+      "ia_ocr_devanagari_characters": 1208,
+      "sequence_similarity": 0.85488565,
+      "length_ratio": 0.99089404,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 744,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1325,
+      "ia_ocr_devanagari_characters": 1364,
+      "sequence_similarity": 0.83302343,
+      "length_ratio": 0.97140762,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 745,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1421,
+      "ia_ocr_devanagari_characters": 1445,
+      "sequence_similarity": 0.84159107,
+      "length_ratio": 0.983391,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 746,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1587,
+      "ia_ocr_devanagari_characters": 1631,
+      "sequence_similarity": 0.86948415,
+      "length_ratio": 0.97302269,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 747,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1292,
+      "ia_ocr_devanagari_characters": 1306,
+      "sequence_similarity": 0.84526559,
+      "length_ratio": 0.98928025,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 748,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1379,
+      "ia_ocr_devanagari_characters": 1369,
+      "sequence_similarity": 0.87190684,
+      "length_ratio": 0.99274837,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 749,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1465,
+      "ia_ocr_devanagari_characters": 1475,
+      "sequence_similarity": 0.86802721,
+      "length_ratio": 0.99322034,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 750,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1427,
+      "ia_ocr_devanagari_characters": 1461,
+      "sequence_similarity": 0.80886427,
+      "length_ratio": 0.97672827,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 751,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1499,
+      "ia_ocr_devanagari_characters": 1541,
+      "sequence_similarity": 0.87828947,
+      "length_ratio": 0.97274497,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 752,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1413,
+      "ia_ocr_devanagari_characters": 1434,
+      "sequence_similarity": 0.83245522,
+      "length_ratio": 0.98535565,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 753,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1505,
+      "ia_ocr_devanagari_characters": 1544,
+      "sequence_similarity": 0.85733027,
+      "length_ratio": 0.97474093,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 754,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1500,
+      "ia_ocr_devanagari_characters": 1524,
+      "sequence_similarity": 0.76124339,
+      "length_ratio": 0.98425197,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 755,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1543,
+      "ia_ocr_devanagari_characters": 1577,
+      "sequence_similarity": 0.86602564,
+      "length_ratio": 0.97844008,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 756,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1383,
+      "ia_ocr_devanagari_characters": 1443,
+      "sequence_similarity": 0.84854919,
+      "length_ratio": 0.95841996,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 757,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1432,
+      "ia_ocr_devanagari_characters": 1480,
+      "sequence_similarity": 0.85782967,
+      "length_ratio": 0.96756757,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 758,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1437,
+      "ia_ocr_devanagari_characters": 1418,
+      "sequence_similarity": 0.80420315,
+      "length_ratio": 0.98677801,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 759,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1483,
+      "ia_ocr_devanagari_characters": 1526,
+      "sequence_similarity": 0.86606846,
+      "length_ratio": 0.97182176,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 760,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1348,
+      "ia_ocr_devanagari_characters": 1333,
+      "sequence_similarity": 0.82208131,
+      "length_ratio": 0.9888724,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 761,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1465,
+      "ia_ocr_devanagari_characters": 1513,
+      "sequence_similarity": 0.84419073,
+      "length_ratio": 0.96827495,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 779,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1363,
+      "ia_ocr_devanagari_characters": 1422,
+      "sequence_similarity": 0.81292639,
+      "length_ratio": 0.95850914,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 780,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1469,
+      "ia_ocr_devanagari_characters": 1562,
+      "sequence_similarity": 0.86704058,
+      "length_ratio": 0.94046095,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 781,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1441,
+      "ia_ocr_devanagari_characters": 1487,
+      "sequence_similarity": 0.84972678,
+      "length_ratio": 0.96906523,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 782,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1385,
+      "ia_ocr_devanagari_characters": 1472,
+      "sequence_similarity": 0.84914246,
+      "length_ratio": 0.94089674,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 783,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1393,
+      "ia_ocr_devanagari_characters": 1465,
+      "sequence_similarity": 0.85794262,
+      "length_ratio": 0.95085324,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 784,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1450,
+      "ia_ocr_devanagari_characters": 1492,
+      "sequence_similarity": 0.83480625,
+      "length_ratio": 0.97184987,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 785,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1339,
+      "ia_ocr_devanagari_characters": 1384,
+      "sequence_similarity": 0.84392214,
+      "length_ratio": 0.96748555,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 786,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1521,
+      "ia_ocr_devanagari_characters": 1572,
+      "sequence_similarity": 0.81668283,
+      "length_ratio": 0.96755725,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 787,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1495,
+      "ia_ocr_devanagari_characters": 1532,
+      "sequence_similarity": 0.864222,
+      "length_ratio": 0.97584856,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 788,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1332,
+      "ia_ocr_devanagari_characters": 1359,
+      "sequence_similarity": 0.86287625,
+      "length_ratio": 0.98013245,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 789,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1568,
+      "ia_ocr_devanagari_characters": 1607,
+      "sequence_similarity": 0.83527559,
+      "length_ratio": 0.97573118,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 790,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1515,
+      "ia_ocr_devanagari_characters": 1562,
+      "sequence_similarity": 0.8638284,
+      "length_ratio": 0.96991037,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 791,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1529,
+      "ia_ocr_devanagari_characters": 1544,
+      "sequence_similarity": 0.82134722,
+      "length_ratio": 0.99028497,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 794,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1468,
+      "ia_ocr_devanagari_characters": 1511,
+      "sequence_similarity": 0.80698221,
+      "length_ratio": 0.97154203,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 795,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1397,
+      "ia_ocr_devanagari_characters": 1431,
+      "sequence_similarity": 0.83946252,
+      "length_ratio": 0.97624039,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 796,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1481,
+      "ia_ocr_devanagari_characters": 1507,
+      "sequence_similarity": 0.8935743,
+      "length_ratio": 0.98274718,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 797,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1625,
+      "ia_ocr_devanagari_characters": 1710,
+      "sequence_similarity": 0.84437781,
+      "length_ratio": 0.9502924,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 798,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1481,
+      "ia_ocr_devanagari_characters": 1531,
+      "sequence_similarity": 0.84594954,
+      "length_ratio": 0.96734161,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 799,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1375,
+      "ia_ocr_devanagari_characters": 1404,
+      "sequence_similarity": 0.87441526,
+      "length_ratio": 0.97934473,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 800,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1460,
+      "ia_ocr_devanagari_characters": 1496,
+      "sequence_similarity": 0.82882273,
+      "length_ratio": 0.97593583,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 801,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1375,
+      "ia_ocr_devanagari_characters": 1431,
+      "sequence_similarity": 0.86386315,
+      "length_ratio": 0.96086653,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 802,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1549,
+      "ia_ocr_devanagari_characters": 1560,
+      "sequence_similarity": 0.85429399,
+      "length_ratio": 0.99294872,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 803,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1498,
+      "ia_ocr_devanagari_characters": 1536,
+      "sequence_similarity": 0.86816084,
+      "length_ratio": 0.97526042,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 804,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1450,
+      "ia_ocr_devanagari_characters": 1488,
+      "sequence_similarity": 0.8645337,
+      "length_ratio": 0.97446237,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 805,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1418,
+      "ia_ocr_devanagari_characters": 1487,
+      "sequence_similarity": 0.82547332,
+      "length_ratio": 0.95359785,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 806,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1569,
+      "ia_ocr_devanagari_characters": 1566,
+      "sequence_similarity": 0.86060606,
+      "length_ratio": 0.99808795,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 807,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1198,
+      "ia_ocr_devanagari_characters": 1218,
+      "sequence_similarity": 0.8410596,
+      "length_ratio": 0.98357964,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 808,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 841,
+      "ia_ocr_devanagari_characters": 876,
+      "sequence_similarity": 0.78043098,
+      "length_ratio": 0.96004566,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 809,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1515,
+      "ia_ocr_devanagari_characters": 1533,
+      "sequence_similarity": 0.86351706,
+      "length_ratio": 0.98825832,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 810,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1431,
+      "ia_ocr_devanagari_characters": 1455,
+      "sequence_similarity": 0.86763687,
+      "length_ratio": 0.98350515,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 811,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1636,
+      "ia_ocr_devanagari_characters": 1729,
+      "sequence_similarity": 0.86240713,
+      "length_ratio": 0.94621168,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 812,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1553,
+      "ia_ocr_devanagari_characters": 1621,
+      "sequence_similarity": 0.8689351,
+      "length_ratio": 0.95805059,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 813,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1459,
+      "ia_ocr_devanagari_characters": 1479,
+      "sequence_similarity": 0.86589517,
+      "length_ratio": 0.98647735,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 814,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1546,
+      "ia_ocr_devanagari_characters": 1580,
+      "sequence_similarity": 0.86180422,
+      "length_ratio": 0.97848101,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 815,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1433,
+      "ia_ocr_devanagari_characters": 1464,
+      "sequence_similarity": 0.86917501,
+      "length_ratio": 0.97882514,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 816,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1426,
+      "ia_ocr_devanagari_characters": 1476,
+      "sequence_similarity": 0.84355617,
+      "length_ratio": 0.96612466,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 817,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1648,
+      "ia_ocr_devanagari_characters": 1698,
+      "sequence_similarity": 0.85654513,
+      "length_ratio": 0.97055359,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 818,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1503,
+      "ia_ocr_devanagari_characters": 1518,
+      "sequence_similarity": 0.88315127,
+      "length_ratio": 0.99011858,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 819,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1453,
+      "ia_ocr_devanagari_characters": 1493,
+      "sequence_similarity": 0.85471826,
+      "length_ratio": 0.97320831,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 822,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1531,
+      "ia_ocr_devanagari_characters": 1591,
+      "sequence_similarity": 0.88981422,
+      "length_ratio": 0.96228787,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 823,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1398,
+      "ia_ocr_devanagari_characters": 1375,
+      "sequence_similarity": 0.85827624,
+      "length_ratio": 0.98354793,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 824,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1459,
+      "ia_ocr_devanagari_characters": 1473,
+      "sequence_similarity": 0.85538881,
+      "length_ratio": 0.99049559,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 825,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1372,
+      "ia_ocr_devanagari_characters": 1392,
+      "sequence_similarity": 0.85238784,
+      "length_ratio": 0.98563218,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 826,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1453,
+      "ia_ocr_devanagari_characters": 1486,
+      "sequence_similarity": 0.87853011,
+      "length_ratio": 0.97779273,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 827,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1467,
+      "ia_ocr_devanagari_characters": 1529,
+      "sequence_similarity": 0.84779706,
+      "length_ratio": 0.95945062,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 830,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1466,
+      "ia_ocr_devanagari_characters": 1498,
+      "sequence_similarity": 0.87921727,
+      "length_ratio": 0.97863818,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 831,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1440,
+      "ia_ocr_devanagari_characters": 1510,
+      "sequence_similarity": 0.85220339,
+      "length_ratio": 0.95364238,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 832,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1530,
+      "ia_ocr_devanagari_characters": 1586,
+      "sequence_similarity": 0.86071887,
+      "length_ratio": 0.96469105,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 833,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1407,
+      "ia_ocr_devanagari_characters": 1489,
+      "sequence_similarity": 0.84944751,
+      "length_ratio": 0.94492948,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 834,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1455,
+      "ia_ocr_devanagari_characters": 1470,
+      "sequence_similarity": 0.87179487,
+      "length_ratio": 0.98979592,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 835,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1517,
+      "ia_ocr_devanagari_characters": 1538,
+      "sequence_similarity": 0.86350245,
+      "length_ratio": 0.9863459,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 836,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1184,
+      "ia_ocr_devanagari_characters": 1211,
+      "sequence_similarity": 0.87515658,
+      "length_ratio": 0.97770438,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 837,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1319,
+      "ia_ocr_devanagari_characters": 1359,
+      "sequence_similarity": 0.85287528,
+      "length_ratio": 0.97056659,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 838,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1478,
+      "ia_ocr_devanagari_characters": 1520,
+      "sequence_similarity": 0.88592395,
+      "length_ratio": 0.97236842,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 839,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1473,
+      "ia_ocr_devanagari_characters": 1469,
+      "sequence_similarity": 0.86267845,
+      "length_ratio": 0.99728445,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 842,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1642,
+      "ia_ocr_devanagari_characters": 1695,
+      "sequence_similarity": 0.8888223,
+      "length_ratio": 0.96873156,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 843,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1582,
+      "ia_ocr_devanagari_characters": 1623,
+      "sequence_similarity": 0.8599064,
+      "length_ratio": 0.97473814,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 844,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1306,
+      "ia_ocr_devanagari_characters": 1341,
+      "sequence_similarity": 0.86664148,
+      "length_ratio": 0.97390007,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 845,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1533,
+      "ia_ocr_devanagari_characters": 1578,
+      "sequence_similarity": 0.87817422,
+      "length_ratio": 0.97148289,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 846,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1498,
+      "ia_ocr_devanagari_characters": 1580,
+      "sequence_similarity": 0.84860299,
+      "length_ratio": 0.94810127,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 847,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1896,
+      "ia_ocr_devanagari_characters": 2019,
+      "sequence_similarity": 0.79029374,
+      "length_ratio": 0.93907875,
+      "inside_control_envelope": false
+    },
+    {
+      "scan_page": 848,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1843,
+      "ia_ocr_devanagari_characters": 1932,
+      "sequence_similarity": 0.78728477,
+      "length_ratio": 0.95393375,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 849,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1390,
+      "ia_ocr_devanagari_characters": 1419,
+      "sequence_similarity": 0.88430046,
+      "length_ratio": 0.97956307,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 850,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 889,
+      "ia_ocr_devanagari_characters": 893,
+      "sequence_similarity": 0.87317621,
+      "length_ratio": 0.99552072,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 922,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 795,
+      "ia_ocr_devanagari_characters": 751,
+      "sequence_similarity": 0.77231565,
+      "length_ratio": 0.94465409,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 958,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1517,
+      "ia_ocr_devanagari_characters": 1581,
+      "sequence_similarity": 0.82246611,
+      "length_ratio": 0.95951929,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 959,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1432,
+      "ia_ocr_devanagari_characters": 1496,
+      "sequence_similarity": 0.79918033,
+      "length_ratio": 0.95721925,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 960,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1365,
+      "ia_ocr_devanagari_characters": 1390,
+      "sequence_similarity": 0.81814882,
+      "length_ratio": 0.98201439,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 961,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1316,
+      "ia_ocr_devanagari_characters": 1390,
+      "sequence_similarity": 0.83444198,
+      "length_ratio": 0.94676259,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 962,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1361,
+      "ia_ocr_devanagari_characters": 1372,
+      "sequence_similarity": 0.84083425,
+      "length_ratio": 0.99198251,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 963,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1645,
+      "ia_ocr_devanagari_characters": 1701,
+      "sequence_similarity": 0.83383144,
+      "length_ratio": 0.96707819,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 964,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1387,
+      "ia_ocr_devanagari_characters": 1421,
+      "sequence_similarity": 0.75213675,
+      "length_ratio": 0.97607319,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 965,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1450,
+      "ia_ocr_devanagari_characters": 1482,
+      "sequence_similarity": 0.82060027,
+      "length_ratio": 0.97840756,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 966,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1450,
+      "ia_ocr_devanagari_characters": 1367,
+      "sequence_similarity": 0.79091232,
+      "length_ratio": 0.94275862,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 967,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1558,
+      "ia_ocr_devanagari_characters": 1613,
+      "sequence_similarity": 0.87543362,
+      "length_ratio": 0.96590205,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 968,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1579,
+      "ia_ocr_devanagari_characters": 1567,
+      "sequence_similarity": 0.84869676,
+      "length_ratio": 0.99240025,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 969,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1390,
+      "ia_ocr_devanagari_characters": 1432,
+      "sequence_similarity": 0.87810064,
+      "length_ratio": 0.97067039,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 970,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1349,
+      "ia_ocr_devanagari_characters": 1368,
+      "sequence_similarity": 0.8340081,
+      "length_ratio": 0.98611111,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 971,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1491,
+      "ia_ocr_devanagari_characters": 1520,
+      "sequence_similarity": 0.84357356,
+      "length_ratio": 0.98092105,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 972,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1294,
+      "ia_ocr_devanagari_characters": 1299,
+      "sequence_similarity": 0.86309294,
+      "length_ratio": 0.99615089,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 973,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1385,
+      "ia_ocr_devanagari_characters": 1441,
+      "sequence_similarity": 0.86270347,
+      "length_ratio": 0.9611381,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 974,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1379,
+      "ia_ocr_devanagari_characters": 1430,
+      "sequence_similarity": 0.81737273,
+      "length_ratio": 0.96433566,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 975,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1429,
+      "ia_ocr_devanagari_characters": 1468,
+      "sequence_similarity": 0.85122541,
+      "length_ratio": 0.97343324,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 976,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1587,
+      "ia_ocr_devanagari_characters": 1667,
+      "sequence_similarity": 0.81376767,
+      "length_ratio": 0.9520096,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 977,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1427,
+      "ia_ocr_devanagari_characters": 1472,
+      "sequence_similarity": 0.84994826,
+      "length_ratio": 0.96942935,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 978,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1447,
+      "ia_ocr_devanagari_characters": 1445,
+      "sequence_similarity": 0.8153527,
+      "length_ratio": 0.99861783,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 979,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1429,
+      "ia_ocr_devanagari_characters": 1467,
+      "sequence_similarity": 0.84392265,
+      "length_ratio": 0.9740968,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 980,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1410,
+      "ia_ocr_devanagari_characters": 1474,
+      "sequence_similarity": 0.82177531,
+      "length_ratio": 0.95658073,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 981,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1407,
+      "ia_ocr_devanagari_characters": 1433,
+      "sequence_similarity": 0.87746479,
+      "length_ratio": 0.98185625,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 982,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1367,
+      "ia_ocr_devanagari_characters": 1378,
+      "sequence_similarity": 0.83278689,
+      "length_ratio": 0.99201742,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 983,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1413,
+      "ia_ocr_devanagari_characters": 1470,
+      "sequence_similarity": 0.84980923,
+      "length_ratio": 0.96122449,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 984,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1478,
+      "ia_ocr_devanagari_characters": 1506,
+      "sequence_similarity": 0.84316354,
+      "length_ratio": 0.9814077,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 985,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1769,
+      "ia_ocr_devanagari_characters": 1828,
+      "sequence_similarity": 0.86294134,
+      "length_ratio": 0.96772429,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 986,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1347,
+      "ia_ocr_devanagari_characters": 1380,
+      "sequence_similarity": 0.84121746,
+      "length_ratio": 0.97608696,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 987,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1641,
+      "ia_ocr_devanagari_characters": 1694,
+      "sequence_similarity": 0.84437781,
+      "length_ratio": 0.96871311,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 988,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1410,
+      "ia_ocr_devanagari_characters": 1428,
+      "sequence_similarity": 0.83932347,
+      "length_ratio": 0.98739496,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 989,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1442,
+      "ia_ocr_devanagari_characters": 1490,
+      "sequence_similarity": 0.85607094,
+      "length_ratio": 0.96778523,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 990,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1408,
+      "ia_ocr_devanagari_characters": 1487,
+      "sequence_similarity": 0.85803109,
+      "length_ratio": 0.9468729,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 991,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1584,
+      "ia_ocr_devanagari_characters": 1649,
+      "sequence_similarity": 0.85245902,
+      "length_ratio": 0.96058217,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 992,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1696,
+      "ia_ocr_devanagari_characters": 1671,
+      "sequence_similarity": 0.78348678,
+      "length_ratio": 0.98525943,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 993,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1383,
+      "ia_ocr_devanagari_characters": 1456,
+      "sequence_similarity": 0.84184572,
+      "length_ratio": 0.94986264,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 994,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1397,
+      "ia_ocr_devanagari_characters": 427,
+      "sequence_similarity": 0.29714912,
+      "length_ratio": 0.30565497,
+      "inside_control_envelope": false
+    },
+    {
+      "scan_page": 995,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1543,
+      "ia_ocr_devanagari_characters": 1616,
+      "sequence_similarity": 0.84267173,
+      "length_ratio": 0.95482673,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 996,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1395,
+      "ia_ocr_devanagari_characters": 1450,
+      "sequence_similarity": 0.76625659,
+      "length_ratio": 0.96206897,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 997,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1399,
+      "ia_ocr_devanagari_characters": 1404,
+      "sequence_similarity": 0.85479843,
+      "length_ratio": 0.99643875,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 998,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1542,
+      "ia_ocr_devanagari_characters": 1537,
+      "sequence_similarity": 0.82819097,
+      "length_ratio": 0.99675746,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 999,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1508,
+      "ia_ocr_devanagari_characters": 1538,
+      "sequence_similarity": 0.81746553,
+      "length_ratio": 0.98049415,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1000,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1371,
+      "ia_ocr_devanagari_characters": 1413,
+      "sequence_similarity": 0.77298851,
+      "length_ratio": 0.97027601,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1001,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1376,
+      "ia_ocr_devanagari_characters": 1400,
+      "sequence_similarity": 0.86167147,
+      "length_ratio": 0.98285714,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1002,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1454,
+      "ia_ocr_devanagari_characters": 1453,
+      "sequence_similarity": 0.77055384,
+      "length_ratio": 0.99931224,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1003,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1232,
+      "ia_ocr_devanagari_characters": 1288,
+      "sequence_similarity": 0.86428571,
+      "length_ratio": 0.95652174,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1004,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1360,
+      "ia_ocr_devanagari_characters": 1395,
+      "sequence_similarity": 0.78039927,
+      "length_ratio": 0.97491039,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1005,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1444,
+      "ia_ocr_devanagari_characters": 1479,
+      "sequence_similarity": 0.87170715,
+      "length_ratio": 0.97633536,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1006,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1451,
+      "ia_ocr_devanagari_characters": 1471,
+      "sequence_similarity": 0.81861739,
+      "length_ratio": 0.98640381,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1007,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1410,
+      "ia_ocr_devanagari_characters": 1446,
+      "sequence_similarity": 0.81372549,
+      "length_ratio": 0.97510373,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1008,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1400,
+      "ia_ocr_devanagari_characters": 1456,
+      "sequence_similarity": 0.79481793,
+      "length_ratio": 0.96153846,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1009,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1431,
+      "ia_ocr_devanagari_characters": 1476,
+      "sequence_similarity": 0.82834537,
+      "length_ratio": 0.9695122,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1010,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1329,
+      "ia_ocr_devanagari_characters": 1349,
+      "sequence_similarity": 0.81777446,
+      "length_ratio": 0.9851742,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1011,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1340,
+      "ia_ocr_devanagari_characters": 1393,
+      "sequence_similarity": 0.83644347,
+      "length_ratio": 0.96195262,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1012,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1347,
+      "ia_ocr_devanagari_characters": 1410,
+      "sequence_similarity": 0.83786725,
+      "length_ratio": 0.95531915,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1013,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1319,
+      "ia_ocr_devanagari_characters": 1356,
+      "sequence_similarity": 0.85981308,
+      "length_ratio": 0.97271386,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1014,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1251,
+      "ia_ocr_devanagari_characters": 1306,
+      "sequence_similarity": 0.81423543,
+      "length_ratio": 0.95788668,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1015,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1355,
+      "ia_ocr_devanagari_characters": 1390,
+      "sequence_similarity": 0.87067395,
+      "length_ratio": 0.97482014,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1024,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1375,
+      "ia_ocr_devanagari_characters": 1374,
+      "sequence_similarity": 0.72680975,
+      "length_ratio": 0.99927273,
+      "inside_control_envelope": false
+    },
+    {
+      "scan_page": 1057,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 1497,
+      "ia_ocr_devanagari_characters": 1554,
+      "sequence_similarity": 0.84234677,
+      "length_ratio": 0.96332046,
+      "inside_control_envelope": true
+    },
+    {
+      "scan_page": 1071,
+      "wikisource_quality_level": 1,
+      "wikisource_devanagari_characters": 793,
+      "ia_ocr_devanagari_characters": 819,
+      "sequence_similarity": 0.84119107,
+      "length_ratio": 0.96825397,
+      "inside_control_envelope": true
+    }
+  ],
+  "correction_witness_leads": [
+    {
+      "provider": "IIT Kanpur Ramcharitmanas",
+      "url": "https://www.ramcharitmanas.iitk.ac.in/language/devanagari",
+      "observed_scope": "Complete structured Devanagari reading corpus across seven kandas.",
+      "rights_status": "rights_unresolved_not_acquired_not_product_usable"
+    },
+    {
+      "provider": "Sanskrit Documents Tulsidas collection",
+      "url": "https://sanskritdocuments.org/tulasidasa/",
+      "observed_scope": "All seven Ramcharitmanas kandas in volunteer-prepared electronic formats.",
+      "rights_status": "reposting_and_commercial_reuse_restricted_not_acquired"
+    }
+  ],
+  "local_ocr_candidate_benchmark": {
+    "candidate": "PaddleOCR dedicated Devanagari PP-OCRv5 mobile recognizer",
+    "runtime": {
+      "platform": "Windows",
+      "python": "3.12.10",
+      "paddleocr": "3.7.0",
+      "paddlepaddle_attempts": [
+        "3.0.0",
+        "3.3.1"
+      ]
+    },
+    "fixed_input_scan_page": 381,
+    "detector_attempts": [
+      "PP-OCRv6_medium_det",
+      "PP-OCRv5_mobile_det"
+    ],
+    "recognizer": "devanagari_PP-OCRv5_mobile_rec",
+    "result": "RUNTIME_INCOMPATIBLE_BEFORE_OCR_OUTPUT",
+    "failure_boundary": "Both official detector variants failed in the Windows oneDNN execution path before any recognized text was emitted.",
+    "recognized_text_generated": false,
+    "model_payload_retained_in_repository_or_source_vault": false,
+    "approved_for_scale": false,
+    "decision": "DO_NOT_SCALE_ON_THIS_WORKSTATION"
+  },
+  "product_boundary": {
+    "q1_pages_screened": 345,
+    "q1_pages_promoted": 0,
+    "q1_pages_remaining_for_correction_or_derived_consumer_synthesis": 345,
+    "dual_witness_agreement_proves_exactness": false,
+    "bulk_product_promotion_allowed": false,
+    "unverified_text_allowed_as_translation_input": false,
+    "external_correction_witness_payload_acquired": false,
+    "local_ocr_candidate_output_generated": false,
+    "local_ocr_candidate_approved_for_scale": false,
+    "database_mutated": false,
+    "next_required_step": "Build a source-range-addressed Hindi/English daily-reading synthesis from corrected or independently reconciled text, and use manual adjudication only for unusual witness divergences."
+  },
+  "mutation_boundary": {
+    "source_payload_copied": false,
+    "source_text_corrected": false,
+    "local_ocr_model_retained": false,
+    "passages_published": false,
+    "database_mutated": false,
+    "external_service_mutated": false
+  },
+  "checks": {
+    "held_recovery_fixity_matches": true,
+    "held_recovery_closes_345_text_pages": true,
+    "control_count_is_exact": true,
+    "q1_count_is_exact": true,
+    "all_q1_pages_are_nonempty_in_both_witnesses": true,
+    "control_envelope_split_is_exact": true,
+    "all_outliers_are_manually_adjudicated_and_held": true,
+    "no_q1_page_is_promoted": true,
+    "local_ocr_candidate_failed_closed": true,
+    "product_claims_fail_closed": true,
+    "mutation_boundary_is_read_only": true
+  },
+  "passed": 11,
+  "total": 11
+}

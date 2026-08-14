@@ -180,11 +180,27 @@ describe("library search orchestration", () => {
     expect(result.results[0]).toMatchObject({
       id: "ramcharitmanas-belvedere-seven-sopana-en",
       claimKind: "source_bounded_structure",
-      statement: expect.stringContaining("802 source-addressed beta pages"),
+      statement: expect.stringContaining("all 813 proofread or validated beta pages"),
     });
     expect(result.results[0].citations).toHaveLength(7);
-    expect(result.results[0].sourceBoundary).toContain("359 low-quality pages");
-    expect(result.results[0].sourceBoundary).toContain("11 malformed-markup pages");
+    expect(result.results[0].sourceBoundary).toContain("345 unproofread text-bearing pages");
+    expect(result.results[0].sourceBoundary).toContain("not applied to the hosted database");
+  });
+
+  it("opens the complete Hanuman Chalisa and resolves numbered reading units", async () => {
+    const overview = await searchLibrary("Hanuman Chalisa", "en");
+    expect(overview.results[0]).toMatchObject({
+      id: "hanuman-chalisa-complete-reading-en",
+      claimKind: "complete_devotional_reading_structure",
+      statement: expect.stringContaining("complete reading sequence"),
+    });
+    const reading = await searchLibrary("Hanuman Chalisa chaupai 40", "en");
+    expect(reading.results[0]).toMatchObject({
+      id: "hanuman-chalisa-reading-42-en",
+      claimKind: "complete_devotional_reading_unit",
+      statement: expect.stringContaining("Tulsidas identifies himself"),
+    });
+    expect(reading.results[0].citations[0].locator).toMatchObject({ reading_ordinal: 42, source_number: 40 });
   });
 
   it("finds the exact user-complete Maha Ashtami participant lane before broader hero results", async () => {

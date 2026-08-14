@@ -1,0 +1,575 @@
+{
+  "contract": "DEVAM_RAMAYANA_EXPECTED_STORIES_UTTARKANDA_FRAMES_V1",
+  "version": 1,
+  "authored_at": "2026-08-13",
+  "audience": "Ordinary Hindi- or English-speaking Indian adults who want the closing Ramcharitmanas journey and its nested narration frame without needing prior textual study.",
+  "purpose": "Complete two high-salience Uttarkanda expectations as detailed, source-ordered consumer sequences while preserving the separate beginning-to-end daily-reading denominator.",
+  "completion_boundary": "The first story covers the return, coronation, Ram Rajya and public devotional instruction before the narrative frame shifts. The second follows the entire Garuda-Kakabhushundi frame, Kakabhushundi's remembered lives, major knowledge-and-bhakti teachings, Garuda's questions and the work's close. Neither story substitutes for reading all 1,158 text-bearing pages.",
+  "source_registry": [
+    {
+      "source_id": "ramcharitmanas-belvedere-fixed-scan",
+      "title": "Ramcharitmanas, Belvedere Press second-edition fixed scan",
+      "work_expression": "Tulsidas's principally Awadhi Ramcharitmanas in Devanagari",
+      "scan_sha256": "6d570d531ebada1912f6e930212393fec2200765a0b731b73b8e7135ea0f70f2",
+      "ingestion_report": "ingestion/reports/ramcharitmanas-wikisource-product-ingestion-v1.json",
+      "rights_lane": "derivative_allowed",
+      "rights_note": "The underlying 1925 scan is public domain. Pinned Hindi Wikisource transcriptions are CC BY-SA 4.0; attribution and share-alike obligations remain attached to transcription-derived product material.",
+      "evidence_role": "Exact fixed-carrier Uttarkanda pages used to align the sequences. No source bytes are copied into this pack."
+    },
+    {
+      "source_id": "iitk-ramcharitmanas-reference",
+      "title": "IIT Kanpur Ramcharitmanas",
+      "url": "https://www.ramcharitmanas.iitk.ac.in/",
+      "rights_lane": "reference_only",
+      "evidence_role": "University-hosted kanda and doha navigation used as a secondary locator; Devam consumer prose is not copied from the site."
+    }
+  ],
+  "shared_boundaries": [
+    "Ram Rajya is narrated as the Ramcharitmanas devotional ideal, not verified demographic, medical, ecological or administrative history.",
+    "The work's period hierarchy, caste and gender generalizations are neither hidden when relevant nor converted into universal modern guidance.",
+    "Divine vision, curse, rebirth, cosmic multiplicity and miraculous longevity are sacred-narrative events rather than modern historical findings.",
+    "Teachings are presented as attributable statements within this expression. They do not replace personal judgment, medical care, law, or the diversity of living Hindu traditions.",
+    "The consumer narration is Devam-authored and does not copy the fixed scan's commentary or any television dialogue."
+  ],
+  "stories": [
+    {
+      "expectation_id": "manas-uttar-kanda-bhakti-teachings",
+      "story_id": "ramayana-manas-uttarkanda-ramrajya-teachings-v1",
+      "sequence_group": "aftermath",
+      "expression_scope": "ramcharitmanas",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {
+        "en": "Return, coronation and Ram Rajya: the public journey before the closing frame",
+        "hi": "वापसी, राज्याभिषेक और रामराज्य: अंतिम कथा-भूमिका से पहले की सार्वजनिक यात्रा"
+      },
+      "source_alignment": {
+        "source_id": "ramcharitmanas-belvedere-fixed-scan",
+        "kanda": "Uttarkanda",
+        "scan_pages_inclusive": [1071, 1130],
+        "doha_range_inclusive": [1, 51],
+        "secondary_locator": "IITK Uttarkanda opening through doha 51",
+        "alignment_note": "The range begins at the seventh sopana opening, follows Rama's arrival, reunions, coronation, companions' departure, Ram Rajya, Sanaka's visit, Rama's instruction to citizens, Vashistha and Narada, and ends as the Shiva-Parvati narration prepares to shift to Garuda and Kakabhushundi."
+      },
+      "characters": ["rama", "sita", "bharata", "lakshmana", "shatrughna", "hanuman", "kaikeyi", "kaushalya", "sumitra", "vasishtha", "narada", "vibhishana", "sugriva", "angada", "shiva", "parvati"],
+      "places": ["the sky above Ayodhya", "Nandigrama", "Ayodhya", "Rama's coronation hall", "the Sarayu ghats", "the mango grove outside Ayodhya"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "road-home", "relationship": "continues_return_and_coronation_after", "inverse_relationship": "continues_into_expression_specific_coronation", "bidirectional": true},
+        {"target_kind": "story_cycle", "target_id": "later-reign", "relationship": "provides_expression_specific_ideal_reign_for", "inverse_relationship": "has_parallel_expression_telling", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "rama", "relationship": "centres_on", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "hanuman", "relationship": "establishes_continuing_service_of", "inverse_relationship": "continues_service_in", "bidirectional": true},
+        {"target_kind": "story", "target_id": "ramayana-manas-kakabhushundi-garuda-dialogue-v1", "relationship": "precedes_closing_narration_frame", "inverse_relationship": "follows_court_and_public_sequence", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "uttar-pushpaka-approaches-ayodhya",
+          "ordinal": 1,
+          "source_scan_pages": [1071, 1074],
+          "title": {"en": "The returning company sees Ayodhya again", "hi": "वापसी का दल फिर अयोध्या को देखता है"},
+          "narration": {
+            "en": "The closing book opens with Rama, Sita, Lakshmana and their companions travelling toward Ayodhya in the Pushpaka. Rama points out familiar places and the city comes into view after years of exile and war. Arrival is not treated as a single triumphant cut; the story first restores geography, memory and anticipation.",
+            "hi": "अंतिम काण्ड में राम, सीता, लक्ष्मण और उनके साथी पुष्पक से अयोध्या की ओर आते हैं। राम परिचित स्थान दिखाते हैं और वनवास तथा युद्ध के वर्षों बाद नगर सामने आता है। वापसी को एक ही विजयी क्षण में नहीं समेटा गया; कथा पहले भूगोल, स्मृति और प्रतीक्षा को फिर जोड़ती है।"
+          }
+        },
+        {
+          "episode_id": "uttar-hanuman-brings-news-to-bharata",
+          "ordinal": 2,
+          "source_scan_pages": [1074, 1077],
+          "title": {"en": "Hanuman reaches the waiting Bharata", "hi": "हनुमान प्रतीक्षा करते भरत तक समाचार पहुँचाते हैं"},
+          "narration": {
+            "en": "Rama sends Hanuman ahead to learn Bharata's state and announce the return. Hanuman finds Bharata living austerely, still measuring his life by Rama's promised homecoming. The news ends a long uncertainty: Rama is safe, Sita and Lakshmana are with him, and the returning company is already near Ayodhya.",
+            "hi": "राम हनुमान को आगे भेजते हैं ताकि भरत की स्थिति जानें और वापसी का समाचार दें। हनुमान भरत को तपस्वी जीवन में पाते हैं, जो अब भी राम के लौटने की प्रतिज्ञा से अपना समय माप रहे हैं। समाचार लंबी अनिश्चितता समाप्त करता है: राम सुरक्षित हैं, सीता और लक्ष्मण साथ हैं और दल अयोध्या के निकट पहुँच चुका है।"
+          }
+        },
+        {
+          "episode_id": "uttar-bharata-prepares-the-welcome",
+          "ordinal": 3,
+          "source_scan_pages": [1077, 1080],
+          "title": {"en": "Private relief becomes a city's preparation", "hi": "निजी राहत पूरे नगर की तैयारी बन जाती है"},
+          "narration": {
+            "en": "Bharata's relief quickly becomes public action. Messengers, families, teachers and citizens prepare to receive the exiles, while the sandals that represented Rama's authority are carried back toward their owner. The gathering joins palace and street, grief and celebration, but does not erase the different losses each person brings to the reunion.",
+            "hi": "भरत की राहत शीघ्र सार्वजनिक तैयारी बनती है। संदेशवाहक, परिवार, गुरु और नगरवासी वनवासियों के स्वागत के लिए निकलते हैं, और राम की सत्ता का प्रतीक रही खड़ाऊँ उनके स्वामी की ओर लौटती हैं। सभा महल और सड़क, शोक और उत्सव को जोड़ती है, पर हर व्यक्ति की अलग हानि मिटाती नहीं।"
+          }
+        },
+        {
+          "episode_id": "uttar-brothers-and-mothers-reunite",
+          "ordinal": 4,
+          "source_scan_pages": [1080, 1084],
+          "title": {"en": "The brothers and mothers meet after fourteen years", "hi": "चौदह वर्ष बाद भाई और माताएँ मिलते हैं"},
+          "narration": {
+            "en": "Bharata falls before Rama and the brothers embrace; Sita and Lakshmana meet the mothers and elders. Rama honours Kaikeyi as well as Kaushalya and Sumitra, refusing to turn the public return into revenge against one mother. The reunion carries affection, shame, relief and remembered absence, including Dasharatha's death.",
+            "hi": "भरत राम के सामने गिरते हैं और भाई गले मिलते हैं; सीता और लक्ष्मण माताओं तथा बड़ों से मिलते हैं। राम कौशल्या और सुमित्रा के साथ कैकेयी का भी सम्मान करते हैं और सार्वजनिक वापसी को एक माता से बदला लेने का अवसर नहीं बनाते। मिलन में प्रेम, लज्जा, राहत और दशरथ की मृत्यु सहित अनुपस्थिति की स्मृति साथ रहती है।"
+          }
+        },
+        {
+          "episode_id": "uttar-coronation-is-prepared",
+          "ordinal": 5,
+          "source_scan_pages": [1084, 1088],
+          "title": {"en": "Exile ends through preparation, bathing and restored roles", "hi": "तैयारी, स्नान और भूमिकाओं की पुनर्स्थापना से वनवास समाप्त होता है"},
+          "narration": {
+            "en": "The returning ascetic appearance gives way to preparations for rule. Hair is dressed, bathing and clothing are arranged, and the companions are received according to their relationships with the household and city. These period court rites mark transition inside the narrative; they are not instructions that a modern family must reproduce.",
+            "hi": "वापसी का तपस्वी रूप अब राज्य की तैयारी में बदलता है। जटाएँ सँवारी जाती हैं, स्नान और वस्त्र की व्यवस्था होती है और साथियों का परिवार तथा नगर से उनके संबंध के अनुसार स्वागत किया जाता है। ये तत्कालीन राजकीय विधियाँ कथा के भीतर परिवर्तन चिह्नित करती हैं; आधुनिक परिवार के लिए अनिवार्य निर्देश नहीं हैं।"
+          }
+        },
+        {
+          "episode_id": "uttar-rama-and-sita-are-enthroned",
+          "ordinal": 6,
+          "source_scan_pages": [1088, 1093],
+          "title": {"en": "Rama and Sita take the throne amid a shared celebration", "hi": "साझे उत्सव के बीच राम और सीता सिंहासन ग्रहण करते हैं"},
+          "narration": {
+            "en": "Vasishtha conducts the coronation and Rama is enthroned with Sita. Bharata, Lakshmana, Shatrughna, Hanuman, Vibhishana, Angada and other companions take visible places in the ceremony, while music and praise fill the city. The scene restores kingship but also displays the network that made the return possible.",
+            "hi": "वसिष्ठ राज्याभिषेक कराते हैं और राम सीता के साथ सिंहासन ग्रहण करते हैं। भरत, लक्ष्मण, शत्रुघ्न, हनुमान, विभीषण, अंगद और अन्य साथी समारोह में स्पष्ट स्थान लेते हैं, जबकि नगर संगीत और स्तुति से भरता है। दृश्य राजसत्ता लौटाता है, साथ ही उस पूरे संबंध-जाल को दिखाता है जिसने वापसी संभव की।"
+          }
+        },
+        {
+          "episode_id": "uttar-praise-interprets-the-coronation",
+          "ordinal": 7,
+          "source_scan_pages": [1092, 1097],
+          "title": {"en": "Sacred praise turns the political event into devotional meaning", "hi": "पवित्र स्तुति राजकीय घटना को भक्तिपरक अर्थ देती है"},
+          "narration": {
+            "en": "The Vedas in personified form, Shiva and other divine voices praise Rama and ask for devotion. Their speeches shift the coronation from court history within the plot to the work's theological interpretation of Rama. Devam preserves that attribution: these are devotional claims spoken by sacred figures in the text, not neutral historical testimony.",
+            "hi": "मानवीकृत वेद, शिव और अन्य दिव्य स्वर राम की स्तुति करके भक्ति माँगते हैं। उनके कथन राज्याभिषेक को कथानक की राजकीय घटना से राम की भक्तिपरक व्याख्या में बदलते हैं। देवम यह संबद्धता स्पष्ट रखता है: ये ग्रंथ के पवित्र पात्रों के धार्मिक कथन हैं, तटस्थ ऐतिहासिक साक्ष्य नहीं।"
+          }
+        },
+        {
+          "episode_id": "uttar-allies-prepare-to-return-home",
+          "ordinal": 8,
+          "source_scan_pages": [1097, 1101],
+          "title": {"en": "The alliance must separate after the victory", "hi": "विजय के बाद सहयोगी दल को अलग होना पड़ता है"},
+          "narration": {
+            "en": "After an extended stay, Rama gives gifts and asks Sugriva, Vibhishana, Jambavan, Nala, Nila and the other allies to return to their own peoples. Gratitude does not require permanent possession of the companions. Their departure restores responsibilities in Kishkindha, Lanka and elsewhere while preserving friendship across distance.",
+            "hi": "कुछ समय साथ रहने के बाद राम सुग्रीव, विभीषण, जाम्बवान, नल, नील और अन्य सहयोगियों को उपहार देकर अपने-अपने लोगों के पास लौटने को कहते हैं। कृतज्ञता साथियों पर स्थायी अधिकार नहीं बनती। उनका प्रस्थान किष्किन्धा, लंका और अन्य स्थानों की जिम्मेदारियाँ लौटाता है, जबकि दूरी के पार मित्रता बनी रहती है।"
+          }
+        },
+        {
+          "episode_id": "uttar-angada-struggles-to-leave",
+          "ordinal": 9,
+          "source_scan_pages": [1100, 1102],
+          "title": {"en": "Angada's loyalty makes departure painful", "hi": "अंगद की निष्ठा विदाई को कठिन बना देती है"},
+          "narration": {
+            "en": "Angada repeatedly looks back and hopes Rama will ask him to remain. He speaks of his dependence after Bali's death and finds separation difficult, but Rama consoles, honours and sends him with the others. The episode allows attachment and duty to pull in different directions without treating affection as ownership.",
+            "hi": "अंगद बार-बार पीछे देखते हैं और मन में चाहते हैं कि राम उन्हें रुकने को कहें। बाली की मृत्यु के बाद वे अपने आश्रय की बात रखते हैं और अलग होना कठिन पाते हैं, पर राम उन्हें समझाकर, सम्मान देकर साथियों के साथ भेजते हैं। प्रसंग प्रेम और कर्तव्य को अलग दिशाओं में खींचते दिखाता है, प्रेम को स्वामित्व नहीं बनाता।"
+          }
+        },
+        {
+          "episode_id": "uttar-hanuman-remains-in-service",
+          "ordinal": 10,
+          "source_scan_pages": [1101, 1103],
+          "title": {"en": "Hanuman receives a different path from the departing allies", "hi": "हनुमान को विदा होते साथियों से अलग मार्ग मिलता है"},
+          "narration": {
+            "en": "Hanuman asks Sugriva for permission to remain in Rama's service and continues in Ayodhya. His path differs from Angada's departure and Vibhishana's kingship because relationships create different obligations. The scene becomes the bridge from wartime service to Hanuman's enduring devotional presence in Rama's story world.",
+            "hi": "हनुमान सुग्रीव से राम की सेवा में रहने की अनुमति माँगते हैं और अयोध्या में बने रहते हैं। उनका मार्ग अंगद की विदाई और विभीषण के राजधर्म से अलग है, क्योंकि संबंध अलग जिम्मेदारियाँ बनाते हैं। यह दृश्य युद्धकालीन सेवा को रामकथा में हनुमान की स्थायी भक्तिपरक उपस्थिति से जोड़ता है।"
+          }
+        },
+        {
+          "episode_id": "uttar-ramrajya-is-described-as-an-ideal",
+          "ordinal": 11,
+          "source_scan_pages": [1103, 1106],
+          "title": {"en": "Ram Rajya appears as the work's ideal of ordered wellbeing", "hi": "रामराज्य ग्रंथ के सुव्यवस्थित कल्याण-आदर्श के रूप में आता है"},
+          "narration": {
+            "en": "The text describes a reign without mutual hostility, pervasive fear or ordinary suffering, where people follow their duties and live in affection. This is poetic and theological idealisation, not a recoverable statistical report. Its consumer value lies in the aspirations it dramatizes—security, restraint, mutual care and accountable rule—while its period social order remains historically bounded.",
+            "hi": "ग्रंथ ऐसे राज्य का वर्णन करता है जहाँ परस्पर वैर, व्यापक भय और सामान्य दुख नहीं, लोग अपने कर्तव्य निभाते और प्रेम से रहते हैं। यह काव्यात्मक तथा धार्मिक आदर्शीकरण है, पुनर्निर्मित किया जा सकने वाला सांख्यिकीय प्रतिवेदन नहीं। इसका महत्व सुरक्षा, संयम, परस्पर देखभाल और उत्तरदायी शासन की आकांक्षा में है, जबकि इसका तत्कालीन सामाजिक क्रम ऐतिहासिक सीमा में रहता है।"
+          }
+        },
+        {
+          "episode_id": "uttar-nature-and-prosperity-mirror-the-reign",
+          "ordinal": 12,
+          "source_scan_pages": [1105, 1108],
+          "title": {"en": "Nature, harvest and ritual abundance mirror moral harmony", "hi": "प्रकृति, उपज और यज्ञ-समृद्धि नैतिक सामंजस्य का प्रतिबिंब बनते हैं"},
+          "narration": {
+            "en": "Moon, sun, rain, trees, fields and animals are portrayed as cooperating with human wellbeing, while Rama performs royal sacrifices and gives generously. The environment functions as literary confirmation that the realm is in balance. These verses cannot be used as climate data, universal ritual prescription or proof that no one suffered historically.",
+            "hi": "चन्द्र, सूर्य, वर्षा, वृक्ष, खेत और पशु मानव कल्याण के साथ सहयोग करते दिखते हैं, जबकि राम राजकीय यज्ञ और दान करते हैं। प्रकृति साहित्यिक संकेत बनती है कि राज्य संतुलित है। इन वर्णनों को जलवायु आँकड़ा, सार्वभौम अनुष्ठान-निर्देश या इतिहास में किसी के न दुखी होने का प्रमाण नहीं बनाया जा सकता।"
+          }
+        },
+        {
+          "episode_id": "uttar-ayodhya-public-life-expands",
+          "ordinal": 13,
+          "source_scan_pages": [1108, 1112],
+          "title": {"en": "The ideal reign is given streets, ghats, gardens and daily life", "hi": "आदर्श राज्य को गलियाँ, घाट, बगीचे और दैनिक जीवन मिलता है"},
+          "narration": {
+            "en": "The narration moves through Ayodhya's homes, markets, Sarayu ghats, temples, gardens and hermit dwellings. Citizens bathe, worship, converse and enjoy material beauty, giving the political ideal a lived cityscape. Period ranking appears in the description and must remain source context rather than a template for present-day civic equality.",
+            "hi": "कथा अयोध्या के घरों, बाज़ारों, सरयू घाटों, मंदिरों, बगीचों और तपस्वियों के निवासों से गुजरती है। नागरिक स्नान, पूजा, संवाद और नगर की सुंदरता का अनुभव करते हैं, जिससे राजनीतिक आदर्श को जीता-जागता नगर मिलता है। वर्णन में तत्कालीन श्रेणियाँ हैं; उन्हें आज की नागरिक समानता का नमूना नहीं बनाया जाता।"
+          }
+        },
+        {
+          "episode_id": "uttar-sanaka-sages-visit-rama",
+          "ordinal": 14,
+          "source_scan_pages": [1112, 1117],
+          "title": {"en": "The Sanaka sages bring contemplation into the royal world", "hi": "सनकादिक मुनि राजकीय संसार में चिंतन का आयाम लाते हैं"},
+          "narration": {
+            "en": "The ancient Sanaka sages arrive in Ayodhya, and Rama receives them with humility rather than using kingship to claim spiritual superiority. Their praise and exchange connect courtly rule with contemplative devotion. When they depart, the narrative has placed learning and hospitality inside the ideal reign rather than outside it.",
+            "hi": "प्राचीन सनकादिक मुनि अयोध्या आते हैं और राम राजसत्ता के आधार पर आध्यात्मिक श्रेष्ठता जताने के बजाय विनम्रता से उनका स्वागत करते हैं। उनकी स्तुति और संवाद राजधर्म को चिंतनशील भक्ति से जोड़ते हैं। विदा होने तक कथा ज्ञान और आतिथ्य को आदर्श शासन के भीतर स्थापित कर देती है।"
+          }
+        },
+        {
+          "episode_id": "uttar-citizens-ask-rama-for-guidance",
+          "ordinal": 15,
+          "source_scan_pages": [1117, 1121],
+          "title": {"en": "Rama invites citizens to question him without fear", "hi": "राम नागरिकों को निर्भय होकर प्रश्न और असहमति रखने देते हैं"},
+          "narration": {
+            "en": "Rama gathers citizens and says they should stop him if he speaks or acts wrongly, opening the instruction with an accountability claim rather than blind obedience. He then speaks about the opportunity and responsibility of human life. The assembly's consent belongs to the literary scene and does not erase unequal power in historical monarchy.",
+            "hi": "राम नागरिकों को बुलाकर कहते हैं कि यदि वे गलत बात या कार्य करें तो उन्हें रोका जाए; शिक्षा अंध आज्ञापालन के बजाय उत्तरदायित्व से शुरू होती है। फिर वे मानव जीवन के अवसर और जिम्मेदारी पर बोलते हैं। सभा की सहमति साहित्यिक दृश्य का भाग है और ऐतिहासिक राजतंत्र की असमान शक्ति मिटाती नहीं।"
+          }
+        },
+        {
+          "episode_id": "uttar-public-teaching-connects-choice-company-and-devotion",
+          "ordinal": 16,
+          "source_scan_pages": [1120, 1126],
+          "title": {"en": "The public teaching links ethical choice, good company and devotion", "hi": "सार्वजनिक शिक्षा नैतिक चुनाव, सत्संग और भक्ति को जोड़ती है"},
+          "narration": {
+            "en": "Rama contrasts a life spent only in appetite with one directed through discernment, service, good company and remembrance of the divine. He describes devotion as accessible rather than reserved for elaborate technique, while warning against hostility and harmful company. Period social language remains attributable to the work, not Devam's universal judgment of people.",
+            "hi": "राम केवल इच्छापूर्ति में बीतते जीवन की तुलना विवेक, सेवा, सत्संग और ईश्वर-स्मरण से निर्देशित जीवन से करते हैं। वे भक्ति को जटिल साधना तक सीमित नहीं रखते और वैर तथा हानिकारक संगति से सावधान करते हैं। तत्कालीन सामाजिक भाषा ग्रंथ की संबद्ध वाणी है, लोगों पर देवम का सार्वभौम निर्णय नहीं।"
+          }
+        },
+        {
+          "episode_id": "uttar-citizens-answer-and-return-home",
+          "ordinal": 17,
+          "source_scan_pages": [1125, 1127],
+          "title": {"en": "The listeners respond before returning to ordinary life", "hi": "श्रोता उत्तर देकर अपने सामान्य जीवन में लौटते हैं"},
+          "narration": {
+            "en": "The citizens answer with affection, identify Rama as a source of guidance and then return to their homes discussing what they heard. The teaching therefore ends in dispersed daily life rather than permanent court attendance. Their praise is part of a devotional polity and should not be mistaken for independently verified unanimous public opinion.",
+            "hi": "नागरिक प्रेम से उत्तर देते हैं, राम को मार्गदर्शन का स्रोत मानते हैं और सुनी बात पर चर्चा करते हुए घर लौटते हैं। शिक्षा स्थायी दरबार-उपस्थिति में नहीं, बिखरे हुए दैनिक जीवन में समाप्त होती है। उनकी स्तुति भक्तिपरक राज्य की कथा है, स्वतंत्र रूप से सत्यापित सर्वसम्मत जनमत नहीं।"
+          }
+        },
+        {
+          "episode_id": "uttar-vasishtha-and-narada-close-the-court-sequence",
+          "ordinal": 18,
+          "source_scan_pages": [1127, 1130],
+          "title": {"en": "Vasishtha and Narada turn the closing court scenes back toward devotion", "hi": "वसिष्ठ और नारद अंतिम दरबारी दृश्यों को फिर भक्ति की ओर मोड़ते हैं"},
+          "narration": {
+            "en": "Vasishtha visits and asks that love for Rama's feet never diminish; later Narada arrives with his vina and sings Rama's qualities. Their requests frame learning, office and artistic praise as incomplete without devotion. Shiva then tells Parvati that the narrated deeds are inexhaustible and introduces the account he heard through Kakabhushundi and Garuda.",
+            "hi": "वसिष्ठ आकर वर माँगते हैं कि रामचरणों का प्रेम कभी कम न हो; बाद में नारद वीणा लेकर आते और राम के गुण गाते हैं। उनके अनुरोध ज्ञान, पद और कला को भक्ति के बिना अधूरा बताते हैं। फिर शिव पार्वती से कहते हैं कि रामचरित अनंत है और काकभुशुण्डि तथा गरुड़ से मिली कथा-भूमिका आरंभ करते हैं।"
+          }
+        }
+      ],
+      "transition": {
+        "en": "The public chronology pauses. Parvati now asks how a crow-sage could teach Garuda and how Shiva heard that account, opening a nested story about doubt, memory, many lives and devotion.",
+        "hi": "सार्वजनिक कालक्रम यहाँ ठहरता है। पार्वती पूछती हैं कि एक काग-मुनि ने गरुड़ को कैसे शिक्षा दी और शिव ने वह कथा कैसे सुनी; इससे संशय, स्मृति, अनेक जन्म और भक्ति की भीतर-की-कथा खुलती है।"
+      },
+      "boundary_note": "This completes the source-bounded Ram Rajya and public-teaching expectation before the narration frame shifts. It does not complete the separate 1,158-page Ramcharitmanas reading work, assert historical utopia, or universalize period social rules."
+    },
+    {
+      "expectation_id": "manas-kakabhushundi-garuda-dialogue",
+      "story_id": "ramayana-manas-kakabhushundi-garuda-dialogue-v1",
+      "sequence_group": "aftermath",
+      "expression_scope": "ramcharitmanas",
+      "consumer_state": "consumer_complete_en_hi",
+      "title": {
+        "en": "Garuda and Kakabhushundi: doubt, many lives and the meaning of devotion",
+        "hi": "गरुड़ और काकभुशुण्डि: संशय, अनेक जन्म और भक्ति का अर्थ"
+      },
+      "source_alignment": {
+        "source_id": "ramcharitmanas-belvedere-fixed-scan",
+        "kanda": "Uttarkanda",
+        "scan_pages_inclusive": [1131, 1223],
+        "doha_range_inclusive": [52, 130],
+        "secondary_locator": "IITK Uttarkanda doha 52 through the seventh-sopana close",
+        "alignment_note": "The range begins with Parvati's questions about Kakabhushundi and Garuda, follows Garuda's doubt, the blue-mountain meeting, the embedded Rama-story recital, Kakabhushundi's childhood vision and remembered births, the knowledge/bhakti teaching, practical questions and resolution, and ends at the Ramcharitmanas close."
+      },
+      "characters": ["shiva", "parvati", "garuda", "kakabhushundi", "rama", "narada", "brahma", "hanuman", "lomasha", "kakabhushundi's unnamed guru"],
+      "places": ["Kailasa", "Brahma's realm", "Shiva's presence", "the blue mountain north of Meru", "Kakabhushundi's lakeside banyan assembly", "Ayodhya across many cycles", "Ujjain", "Mount Meru and Lomasha's banyan"],
+      "relationships": [
+        {"target_kind": "story_cycle", "target_id": "later-reign", "relationship": "forms_expression_specific_theological_frame_beyond", "inverse_relationship": "has_separate_expression_frame", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "garuda", "relationship": "centres_on", "inverse_relationship": "appears_in", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "shiva", "relationship": "is_recounted_by", "inverse_relationship": "recounts", "bidirectional": true},
+        {"target_kind": "entity", "target_id": "parvati", "relationship": "answers_questions_of", "inverse_relationship": "asks_about", "bidirectional": true},
+        {"target_kind": "story", "target_id": "ramayana-manas-uttarkanda-ramrajya-teachings-v1", "relationship": "follows_court_and_public_sequence", "inverse_relationship": "precedes_closing_narration_frame", "bidirectional": true}
+      ],
+      "episodes": [
+        {
+          "episode_id": "kakabhushundi-parvati-asks-about-the-crow-sage",
+          "ordinal": 1,
+          "source_scan_pages": [1131, 1134],
+          "title": {"en": "Parvati asks why Garuda learned from a crow", "hi": "पार्वती पूछती हैं कि गरुड़ ने एक काग से शिक्षा क्यों ली"},
+          "narration": {
+            "en": "After hearing the court sequence, Parvati asks Shiva about the account beneath it: how Kakabhushundi obtained Rama's story, why he has a crow's body, why the learned Garuda went to him and how Shiva heard their exchange. Her questions prevent the narrator's authority from remaining unexplained and open the nested frame deliberately.",
+            "hi": "दरबारी कथा सुनने के बाद पार्वती शिव से उसके भीतर की कथा पूछती हैं: काकभुशुण्डि को रामकथा कैसे मिली, उन्हें काग-देह क्यों मिली, ज्ञानी गरुड़ उनके पास क्यों गए और शिव ने उनका संवाद कैसे सुना। उनके प्रश्न कथावाचक की सत्ता को अनकहा नहीं रहने देते और भीतर की कथा सोच-समझकर खोलते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-shiva-describes-the-blue-mountain",
+          "ordinal": 2,
+          "source_scan_pages": [1134, 1136],
+          "title": {"en": "Shiva locates a timeless storytelling assembly", "hi": "शिव कालातीत कथा-सभा का स्थान बताते हैं"},
+          "narration": {
+            "en": "Shiva describes a blue mountain north of Meru with four great trees, a clear lake and an assembly of old birds. Kakabhushundi lives there beyond ordinary cycles of destruction and tells Rama's story beneath a banyan. Shiva once listened in the form of a swan, which explains how this dialogue reaches Parvati.",
+            "hi": "शिव मेरु के उत्तर एक नील पर्वत बताते हैं जहाँ चार विशाल वृक्ष, निर्मल सरोवर और वृद्ध पक्षियों की सभा है। काकभुशुण्डि वहाँ सामान्य प्रलय-चक्र से परे रहते और वटवृक्ष के नीचे रामकथा कहते हैं। शिव ने कभी हंस-रूप में उसे सुना था; इसी से यह संवाद पार्वती तक पहुँचता है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-garuda-doubts-after-the-serpent-bond",
+          "ordinal": 3,
+          "source_scan_pages": [1136, 1139],
+          "title": {"en": "Seeing Rama bound in battle unsettles Garuda", "hi": "युद्ध में राम को बँधा देखकर गरुड़ का विश्वास डगमगाता है"},
+          "narration": {
+            "en": "Garuda had freed Rama and Lakshmana from the serpent weapon, but the sight of the divine hero apparently needing rescue produced doubt. He could not reconcile the human vulnerability he witnessed with what he believed about Rama. Narada, Brahma and finally Shiva treat the doubt as powerful Maya, not as a question to punish.",
+            "hi": "गरुड़ ने नागपाश से राम और लक्ष्मण को मुक्त किया था, पर दिव्य नायक को सहायता की आवश्यकता जैसी स्थिति देखकर उनके मन में संशय हुआ। वे देखी हुई मानवीय असहायता और राम के बारे में अपने विश्वास को जोड़ नहीं पाए। नारद, ब्रह्मा और अंततः शिव इस संशय को दंड योग्य प्रश्न नहीं, प्रबल माया का प्रभाव मानते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-shiva-sends-garuda-to-lived-story",
+          "ordinal": 4,
+          "source_scan_pages": [1138, 1141],
+          "title": {"en": "Shiva sends Garuda to hear rather than receive a formula", "hi": "शिव गरुड़ को सूत्र देने के बजाय कथा सुनने भेजते हैं"},
+          "narration": {
+            "en": "Shiva says doubt this deep will not disappear through a quick abstract answer. Garuda should enter good company and hear Rama's story where it is continually remembered. He directs him to Kakabhushundi's mountain, making patient listening and relationship the method by which confusion can change into understanding.",
+            "hi": "शिव कहते हैं कि इतना गहरा संशय किसी छोटे दार्शनिक सूत्र से नहीं मिटेगा। गरुड़ को सत्संग में जाकर वहाँ रामकथा सुननी चाहिए जहाँ उसका निरंतर स्मरण होता है। वे उन्हें काकभुशुण्डि के पर्वत भेजते हैं; धैर्य से सुनना और संबंध ही भ्रम को समझ में बदलने की विधि बनते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-garuda-arrives-at-the-bird-assembly",
+          "ordinal": 5,
+          "source_scan_pages": [1140, 1142],
+          "title": {"en": "Garuda arrives as a listener among older birds", "hi": "गरुड़ वृद्ध पक्षियों की सभा में श्रोता बनकर आते हैं"},
+          "narration": {
+            "en": "At the mountain, Garuda bathes, approaches the banyan and finds elderly birds gathering for the story. Kakabhushundi and the assembly welcome the powerful king of birds without turning hierarchy into distance. Garuda takes the listener's place, and the host begins with the narrative rather than demanding that the visitor first defend his doubt.",
+            "hi": "पर्वत पर गरुड़ स्नान करके वटवृक्ष के पास पहुँचते हैं और वृद्ध पक्षियों को कथा के लिए जुटा पाते हैं। काकभुशुण्डि और सभा शक्तिशाली पक्षिराज का स्वागत करते हैं, पर पदक्रम को दूरी नहीं बनाते। गरुड़ श्रोता का स्थान लेते हैं और मेज़बान उनसे संशय का बचाव माँगने से पहले कथा शुरू करते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-recites-the-rama-journey",
+          "ordinal": 6,
+          "source_scan_pages": [1142, 1146],
+          "title": {"en": "Kakabhushundi recites the Rama journey from birth to coronation", "hi": "काकभुशुण्डि जन्म से राज्याभिषेक तक रामयात्रा सुनाते हैं"},
+          "narration": {
+            "en": "Kakabhushundi recounts the long Rama story in ordered landmarks: birth and childhood, marriage, exile, forest losses, alliances, Lanka, war, return and coronation. This embedded recital shows what Garuda hears, but it is an index inside the frame rather than Devam's substitute for the separately authored beginning-to-end Ramayana narrative.",
+            "hi": "काकभुशुण्डि रामकथा को क्रमबद्ध पड़ावों में कहते हैं: जन्म और बाललीला, विवाह, वनवास, वन की हानियाँ, मित्रता, लंका, युद्ध, वापसी और राज्याभिषेक। यह भीतर की पुनर्कथा बताती है कि गरुड़ क्या सुनते हैं, पर देवम की अलग से लिखी आरंभ-से-अंत रामायण का स्थान लेने वाला सार नहीं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-host-names-doubt-as-grace",
+          "ordinal": 7,
+          "source_scan_pages": [1146, 1149],
+          "title": {"en": "The host asks what remains unresolved", "hi": "कथावाचक पूछते हैं कि अब भी कौन-सा संशय बचा है"},
+          "narration": {
+            "en": "After the recital, Kakabhushundi asks Garuda to state the remaining question. He interprets the visit as grace because Garuda's confusion created the meeting and allowed the assembly to hear again. The response neither mocks the original doubt nor pretends that hearing plot points alone automatically resolves the problem of divine and human appearance.",
+            "hi": "पुनर्कथा के बाद काकभुशुण्डि गरुड़ से बचा हुआ प्रश्न स्पष्ट करने को कहते हैं। वे इस आगमन को कृपा मानते हैं, क्योंकि गरुड़ का भ्रम मिलन का कारण बना और सभा ने कथा फिर सुनी। उत्तर न तो पुराने संशय का उपहास करता है, न मानता है कि घटनाएँ सुन लेना दिव्य और मानवीय रूप की समस्या अपने-आप सुलझा देता है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-explains-maya-and-embodied-play",
+          "ordinal": 8,
+          "source_scan_pages": [1149, 1152],
+          "title": {"en": "Kakabhushundi explains why embodied divine action can confuse", "hi": "काकभुशुण्डि बताते हैं कि देहधारी दिव्य लीला भ्रमित क्यों कर सकती है"},
+          "narration": {
+            "en": "Kakabhushundi distinguishes Rama's underlying divinity from the grief, effort, friendship and danger displayed in embodied play. Maya can make even learned observers treat one level as the whole truth. He does not ask Garuda to deny what he saw; he places the battlefield vulnerability inside the Ramcharitmanas theological frame.",
+            "hi": "काकभुशुण्डि राम की मूल दिव्यता को देहधारी लीला में दिखते शोक, प्रयास, मित्रता और संकट से अलग स्तर पर समझाते हैं। माया ज्ञानी दर्शक को भी एक स्तर को पूरा सत्य मानने पर विवश कर सकती है। वे गरुड़ से देखी घटना नकारने को नहीं कहते, बल्कि युद्ध की असहायता को मानस की धार्मिक रूपरेखा में रखते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-remembers-child-rama-in-ayodhya",
+          "ordinal": 9,
+          "source_scan_pages": [1151, 1154],
+          "title": {"en": "Kakabhushundi recalls watching child Rama across a cycle", "hi": "काकभुशुण्डि एक कल्प में बाल राम को देखने की स्मृति बताते हैं"},
+          "narration": {
+            "en": "To show that he too was confused, Kakabhushundi remembers travelling to Ayodhya during one manifestation and delighting in Rama's childhood play with his brothers. The small body, ordinary courtyard movement and family affection drew him close, yet also made it difficult to hold together infinity and the behaviour of a child.",
+            "hi": "यह दिखाने के लिए कि वे स्वयं भी भ्रमित हुए थे, काकभुशुण्डि एक प्राकट्य में अयोध्या जाकर राम और भाइयों की बाललीला देखने की स्मृति बताते हैं। छोटा शरीर, आँगन की सामान्य गति और पारिवारिक स्नेह उन्हें आकर्षित करते हैं, पर अनंत सत्ता और बालक के व्यवहार को साथ समझना कठिन भी बनाते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-flees-the-reaching-arm",
+          "ordinal": 10,
+          "source_scan_pages": [1154, 1156],
+          "title": {"en": "A playful attempt to catch the crow becomes a cosmic pursuit", "hi": "काग को पकड़ने का बाल-खेल ब्रह्मांडीय पीछा बन जाता है"},
+          "narration": {
+            "en": "Child Rama reaches toward the crow, and Kakabhushundi flies away. No matter how far he crosses the sky and cosmic regions, Rama's arm remains near. The playful courtyard gesture expands beyond ordinary space until the exhausted bird closes his eyes and is drawn into a vision that overturns his measure of distance.",
+            "hi": "बाल राम काग को पकड़ने हाथ बढ़ाते हैं और काकभुशुण्डि उड़ जाते हैं। वे आकाश और ब्रह्मांडीय लोकों में जितनी दूर जाते हैं, राम की भुजा उतनी ही पास रहती है। आँगन का खेल सामान्य दूरी से बाहर फैलता है; थका पक्षी आँख बंद करता है और ऐसी दृष्टि में प्रवेश करता है जो दूरी की उसकी समझ बदल देती है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-sees-universes-within-rama",
+          "ordinal": 11,
+          "source_scan_pages": [1156, 1159],
+          "title": {"en": "Inside Rama, Kakabhushundi sees innumerable worlds and tellings", "hi": "राम के भीतर काकभुशुण्डि असंख्य जगत और कथाएँ देखते हैं"},
+          "narration": {
+            "en": "Kakabhushundi enters through Rama's mouth and sees countless universes, creators, Shivas, suns, moons, mountains, rivers and versions of Ayodhya. In each world the forms vary while Rama's presence remains central. The vision is sacred cosmology within the story, not an astronomical model or proof of one scientifically measured multiverse.",
+            "hi": "काकभुशुण्डि राम के मुख से भीतर जाकर असंख्य ब्रह्मांड, ब्रह्मा, शिव, सूर्य, चन्द्र, पर्वत, नदियाँ और अयोध्या के अनेक रूप देखते हैं। हर जगत में रूप बदलते हैं, पर राम की उपस्थिति केंद्र में रहती है। यह कथा की पवित्र ब्रह्मांड-दृष्टि है, खगोलीय मॉडल या वैज्ञानिक रूप से मापा बहुब्रह्मांड नहीं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-returns-and-asks-only-for-devotion",
+          "ordinal": 12,
+          "source_scan_pages": [1159, 1162],
+          "title": {"en": "Returned to the courtyard, the crow asks for devotion", "hi": "आँगन में लौटकर काग केवल भक्ति माँगते हैं"},
+          "narration": {
+            "en": "The overwhelming vision ends with Kakabhushundi again before child Rama. Offered a boon, he does not choose supernatural power, release or knowledge by itself; he asks for unwavering devotion. The choice establishes the value hierarchy that will guide the remaining dialogue, where knowledge matters but does not replace loving relationship.",
+            "hi": "विराट दर्शन के बाद काकभुशुण्डि फिर बाल राम के सामने आ जाते हैं। वर माँगने पर वे केवल शक्ति, मुक्ति या ज्ञान नहीं चुनते; वे अविचल भक्ति माँगते हैं। यही चुनाव आगे के संवाद की मूल्य-व्यवस्था तय करता है, जहाँ ज्ञान महत्वपूर्ण है पर प्रेमपूर्ण संबंध का स्थान नहीं लेता।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-rama-grants-memory-and-freedom-from-fear",
+          "ordinal": 13,
+          "source_scan_pages": [1161, 1165],
+          "title": {"en": "Rama grants devotion, insight and continuing remembrance", "hi": "राम भक्ति, समझ और निरंतर स्मृति का वर देते हैं"},
+          "narration": {
+            "en": "Rama praises the request and grants devotion along with knowledge, discernment, freedom from ordinary fear and access to his recurring play. Kakabhushundi remains in a crow body by choice and affection rather than shame. The boon explains his unusual memory and longevity inside this expression's sacred causation.",
+            "hi": "राम इस वर की प्रशंसा करके भक्ति के साथ ज्ञान, विवेक, सामान्य भय से मुक्ति और अपनी आवर्ती लीला देखने का अवसर देते हैं। काकभुशुण्डि काग-देह को लज्जा से नहीं, प्रेम और चुनाव से बनाए रखते हैं। वर इसी ग्रंथ की पवित्र कारण-व्यवस्था में उनकी असाधारण स्मृति और दीर्घता समझाता है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-teaches-from-experience-not-status",
+          "ordinal": 14,
+          "source_scan_pages": [1165, 1169],
+          "title": {"en": "Personal experience becomes a bounded teaching about devotion", "hi": "निज अनुभव भक्ति पर सीमाबद्ध शिक्षा बनता है"},
+          "narration": {
+            "en": "Kakabhushundi tells Garuda that suffering and confusion do not end through status, technique or argument alone. He uses chains of comparisons to connect trust, discipline, knowledge and devotion while admitting that Rama's greatness cannot be exhausted by any speaker. The teaching is attributed counsel, not a guarantee that faith prevents every hardship.",
+            "hi": "काकभुशुण्डि गरुड़ से कहते हैं कि दुख और भ्रम केवल पद, विधि या तर्क से समाप्त नहीं होते। वे उपमाओं की शृंखला से विश्वास, अनुशासन, ज्ञान और भक्ति को जोड़ते हैं, साथ ही मानते हैं कि कोई वक्ता राम की महिमा पूरी नहीं कह सकता। यह संबद्ध शिक्षा है, यह गारंटी नहीं कि श्रद्धा हर कठिनाई रोक देगी।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-garuda-recognizes-his-first-doubt",
+          "ordinal": 15,
+          "source_scan_pages": [1169, 1171],
+          "title": {"en": "Garuda sees his earlier conclusion differently", "hi": "गरुड़ अपने पुराने निष्कर्ष को नए ढंग से देखते हैं"},
+          "narration": {
+            "en": "Garuda responds with tears and regret that he reduced the beginningless divine to only the human appearance he saw in battle. His doubt has not been silenced by rank; it has been reworked through story, another witness's confusion and a relationship of trust. He now asks about Kakabhushundi himself rather than leaving immediately.",
+            "hi": "गरुड़ आँसुओं के साथ पछताते हैं कि युद्ध में देखे मानवीय रूप को ही पूरा सत्य मानकर उन्होंने अनादि दिव्यता को सीमित कर दिया। उनका संशय पद के दबाव से चुप नहीं हुआ; कथा, दूसरे साक्षी के भ्रम और विश्वासपूर्ण संबंध से बदला है। अब वे तुरंत जाने के बजाय काकभुशुण्डि के जीवन के बारे में पूछते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-garuda-asks-four-biographical-questions",
+          "ordinal": 16,
+          "source_scan_pages": [1170, 1172],
+          "title": {"en": "Four questions turn the teacher's authority into a life story", "hi": "चार प्रश्न शिक्षक की प्रामाणिकता को जीवनकथा में बदलते हैं"},
+          "narration": {
+            "en": "Garuda asks why Kakabhushundi has a crow body, where he received this story, why time does not overpower him and why visitors lose confusion near the hermitage. Kakabhushundi welcomes the questions and begins recalling many births. Authority must now be explained through mistakes, consequences and received grace rather than claimed as innate perfection.",
+            "hi": "गरुड़ पूछते हैं कि काकभुशुण्डि को काग-देह क्यों मिली, कथा कहाँ मिली, काल उन्हें क्यों नहीं व्यापता और आश्रम में आने पर भ्रम क्यों घटता है। काकभुशुण्डि प्रश्नों का स्वागत करके अनेक जन्म याद करते हैं। अब उनकी प्रामाणिकता जन्मजात पूर्णता के दावे से नहीं, भूल, परिणाम और मिली कृपा से समझाई जाएगी।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-proud-shaiva-birth-in-kali-age",
+          "ordinal": 17,
+          "source_scan_pages": [1172, 1181],
+          "title": {"en": "A proud sectarian life in Ayodhya begins the biography", "hi": "अयोध्या का अभिमानी संप्रदायवादी जीवन आत्मकथा की शुरुआत करता है"},
+          "narration": {
+            "en": "Kakabhushundi recalls an earlier Kali age when he was born in Ayodhya, prospered and worshipped Shiva while insulting other deities and traditions. He describes the age through severe moral decline, then notes a countercurrent: remembrance of the divine name remains accessible. A famine eventually drives him from Ayodhya to Ujjain.",
+            "hi": "काकभुशुण्डि एक पुराने कलियुग को याद करते हैं जब वे अयोध्या में जन्मे, संपन्न हुए और शिव की पूजा करते हुए दूसरे देवों तथा परंपराओं का अपमान करते थे। वे युग को तीव्र नैतिक पतन से चित्रित करते हैं, फिर एक प्रतिपक्ष बताते हैं: ईश्वर-नाम का स्मरण अब भी सुलभ है। अकाल उन्हें अंततः अयोध्या से उज्जैन ले जाता है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-insults-his-guru-and-receives-shivas-curse",
+          "ordinal": 18,
+          "source_scan_pages": [1181, 1188],
+          "title": {"en": "Pride turns a teacher's care into an occasion for insult", "hi": "अहंकार गुरु की करुणा को अपमान के अवसर में बदल देता है"},
+          "narration": {
+            "en": "In Ujjain an unnamed teacher initiates and guides him with patience, but sectarian pride grows. When the guru enters a Shiva temple, the disciple refuses to rise. Shiva condemns the ingratitude and curses him to serpent births. The guru does not celebrate punishment; he prays for mercy until the curse is bounded and transformed into a path of eventual learning.",
+            "hi": "उज्जैन में एक अनाम गुरु उन्हें दीक्षा देकर धैर्य से मार्ग दिखाते हैं, पर संप्रदायवादी गर्व बढ़ता जाता है। शिवमंदिर में गुरु आने पर शिष्य उठता नहीं। शिव कृतघ्नता पर उसे सर्प-जन्मों का शाप देते हैं। गुरु दंड पर प्रसन्न नहीं होते; वे करुणा की प्रार्थना करते हैं, जिससे शाप सीमित होकर आगे सीखने का मार्ग बनता है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-remembers-many-bodies-and-one-kind-guru",
+          "ordinal": 19,
+          "source_scan_pages": [1187, 1191],
+          "title": {"en": "Many births change the body without erasing memory", "hi": "अनेक जन्म देह बदलते हैं, स्मृति नहीं मिटाते"},
+          "narration": {
+            "en": "The cursed being passes through many bodies while retaining memory and increasingly turning toward Rama. Across the changes, he remembers the first guru's gentleness rather than using punishment as proof of his own importance. Eventually born as a Brahmin, he seeks teachers who can explain devotion to Rama in embodied, personal form.",
+            "hi": "शापित जीव अनेक देहों से गुजरता है, पर स्मृति बनी रहती है और उसका मन धीरे-धीरे राम की ओर मुड़ता है। परिवर्तनों में वह दंड को अपनी महत्ता का प्रमाण नहीं बनाता, बल्कि पहले गुरु की कोमलता याद रखता है। अंततः ब्राह्मण जन्म में वह ऐसे शिक्षक खोजता है जो साकार, संबंधपूर्ण रामभक्ति समझा सकें।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-debates-lomasha-and-becomes-a-crow",
+          "ordinal": 20,
+          "source_scan_pages": [1191, 1195],
+          "title": {"en": "A dispute with Lomasha ends in the crow form", "hi": "लोमश से विवाद काग-देह में परिणत होता है"},
+          "narration": {
+            "en": "At Mount Meru he asks the sage Lomasha for instruction in worship of Rama with form, while Lomasha initially teaches the formless absolute. Repeated disagreement becomes heated, and the sage curses the insistent student to become a crow. Kakabhushundi accepts the change without retaliation, which shifts the emotional direction of the encounter.",
+            "hi": "मेरु पर वे लोमश मुनि से साकार राम-उपासना की शिक्षा माँगते हैं, जबकि लोमश पहले निर्गुण ब्रह्म समझाते हैं। बार-बार का मतभेद उग्र होता है और मुनि आग्रहशील शिष्य को काग होने का शाप देते हैं। काकभुशुण्डि प्रतिशोध के बिना परिवर्तन स्वीकार करते हैं, जिससे संवाद की भाव-दिशा बदल जाती है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-lomasha-reconsiders-and-grants-the-story",
+          "ordinal": 21,
+          "source_scan_pages": [1194, 1198],
+          "title": {"en": "Lomasha reconsiders and transmits the Rama story", "hi": "लोमश पुनर्विचार करके रामकथा सौंपते हैं"},
+          "narration": {
+            "en": "Seeing the crow's composure and devotion, Lomasha's anger passes. He calls him back, teaches the Rama story and grants blessings connected with memory, chosen death, insight and a refuge where Maya loses force. The teacher's correction matters: authority is not shown as never erring, but as capable of recognizing harm and restoring the relationship.",
+            "hi": "काग की स्थिरता और भक्ति देखकर लोमश का क्रोध शांत होता है। वे उसे वापस बुलाकर रामकथा सिखाते और स्मृति, इच्छामृत्यु, ज्ञान तथा माया के कम प्रभाव वाले आश्रय से जुड़े वर देते हैं। शिक्षक का सुधार महत्वपूर्ण है: प्रामाणिकता कभी न चूकने में नहीं, हानि पहचानकर संबंध सुधारने में भी दिखती है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-compares-knowledge-and-devotion",
+          "ordinal": 22,
+          "source_scan_pages": [1198, 1207],
+          "title": {"en": "Knowledge and devotion are compared without making them enemies", "hi": "ज्ञान और भक्ति की तुलना उन्हें शत्रु बनाए बिना होती है"},
+          "narration": {
+            "en": "Kakabhushundi uses extended metaphors of a lamp and a wish-fulfilling jewel to describe knowledge and devotion. Knowledge requires careful preparation and can be disturbed by pride, distraction and sensory desire; devotion provides a durable relationship of servant and served. The passage argues priority within this text, not contempt for learning.",
+            "hi": "काकभुशुण्डि दीपक और चिंतामणि के विस्तृत रूपकों से ज्ञान और भक्ति समझाते हैं। ज्ञान सावधान तैयारी माँगता है और गर्व, विकर्षण तथा विषय-इच्छा से बाधित हो सकता है; भक्ति सेवक-सेव्य का टिकाऊ संबंध देती है। प्रसंग इस ग्रंथ के भीतर प्राथमिकता बताता है, ज्ञान का अपमान नहीं करता।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-garuda-asks-seven-human-questions",
+          "ordinal": 23,
+          "source_scan_pages": [1207, 1209],
+          "title": {"en": "Garuda asks seven questions about human value and harm", "hi": "गरुड़ मानव मूल्य और हानि पर सात प्रश्न पूछते हैं"},
+          "narration": {
+            "en": "Garuda asks about the rarest valuable body, greatest suffering, greatest happiness, the nature of saintly and harmful conduct, highest merit, gravest wrong and the diseases of the mind. These questions turn the dialogue from the teacher's biography toward recognizable human life. Kakabhushundi answers through the ethical and devotional vocabulary of the work.",
+            "hi": "गरुड़ सबसे दुर्लभ मूल्यवान देह, सबसे बड़ा दुख, सबसे बड़ा सुख, संत और हानिकारक आचरण, श्रेष्ठ पुण्य, गंभीर पाप और मन के रोगों पर सात प्रश्न करते हैं। संवाद शिक्षक की आत्मकथा से सामान्य मानव जीवन की ओर मुड़ता है। काकभुशुण्डि ग्रंथ की नैतिक और भक्तिपरक भाषा में उत्तर देते हैं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-answers-with-human-life-company-and-nonharm",
+          "ordinal": 24,
+          "source_scan_pages": [1208, 1211],
+          "title": {"en": "The answers centre human opportunity, good company and non-harm", "hi": "उत्तर मानव अवसर, सत्संग और अहिंसा को केंद्र में रखते हैं"},
+          "narration": {
+            "en": "Kakabhushundi values human birth as an opportunity, names poverty as severe suffering and the company of saints as deep happiness. He praises non-harm and condemns slander and conduct that damages others. Period examples and social labels require care, but the sequence clearly moves ethical attention away from prestige and toward how lives affect one another.",
+            "hi": "काकभुशुण्डि मानव जन्म को अवसर मानते हैं, गरीबी को बड़ा दुख और संत-संग को गहरा सुख बताते हैं। वे अहिंसा की प्रशंसा करते और निंदा तथा दूसरों को हानि पहुँचाने वाले आचरण को गंभीर मानते हैं। तत्कालीन उदाहरणों और सामाजिक नामों में सावधानी चाहिए, पर क्रम प्रतिष्ठा से ध्यान हटाकर जीवन के पारस्परिक प्रभाव पर रखता है।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-maps-mental-suffering-as-disease",
+          "ordinal": 25,
+          "source_scan_pages": [1210, 1214],
+          "title": {"en": "Desire, anger, greed and pride become a map of mental illness", "hi": "काम, क्रोध, लोभ और अहंकार मन के रोगों का मानचित्र बनते हैं"},
+          "narration": {
+            "en": "The dialogue describes attachment as a root disorder and links desire, anger, greed, jealousy, pride and grief to interacting illnesses of the mind. Devotion, disciplined conduct, trust and good company become the text's remedy metaphor. This is spiritual psychology, not clinical diagnosis or a reason to replace professional mental-health care.",
+            "hi": "संवाद मोह को मूल विकार बताकर काम, क्रोध, लोभ, ईर्ष्या, अहंकार और शोक को परस्पर जुड़े मानसिक रोगों से तुलना करता है। भक्ति, संयमित आचरण, विश्वास और सत्संग ग्रंथ का उपचार-रूपक बनते हैं। यह आध्यात्मिक मनोविज्ञान है, चिकित्सकीय निदान या पेशेवर मानसिक स्वास्थ्य सेवा छोड़ने का कारण नहीं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-garuda-departs-with-doubt-resolved",
+          "ordinal": 26,
+          "source_scan_pages": [1214, 1217],
+          "title": {"en": "Garuda leaves after gratitude replaces confusion", "hi": "भ्रम के स्थान पर कृतज्ञता आने के बाद गरुड़ विदा होते हैं"},
+          "narration": {
+            "en": "Garuda says his questions have been answered and repeatedly honours the teacher before returning. Kakabhushundi treats the visit as mutually beneficial because it renewed the telling of Rama's story. Shiva then brings the account back to Parvati, closing one nesting level without pretending that every possible theological question has been exhausted.",
+            "hi": "गरुड़ कहते हैं कि उनके प्रश्नों का उत्तर मिल गया है और बार-बार शिक्षक का सम्मान करके लौटते हैं। काकभुशुण्डि इस आगमन को दोनों के लिए हितकारी मानते हैं, क्योंकि रामकथा फिर कही गई। शिव कथा को वापस पार्वती तक लाते हैं और यह भीतरी स्तर बंद करते हैं, बिना यह दावा किए कि हर धार्मिक प्रश्न समाप्त हो गया।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-shiva-states-the-fruit-with-boundaries",
+          "ordinal": 27,
+          "source_scan_pages": [1216, 1220],
+          "title": {"en": "Shiva describes hearing the story as a path toward devotion", "hi": "शिव कथा-श्रवण को भक्ति की ओर जाने वाला मार्ग बताते हैं"},
+          "narration": {
+            "en": "Shiva tells Parvati that the practices praised in scripture find their fruit in devotion and that sustained, trusting hearing can nurture it. The claim belongs to the work's devotional promise. It is not a measurable guarantee of worldly success, cure, protection from harm or a mandatory schedule for every reader.",
+            "hi": "शिव पार्वती से कहते हैं कि शास्त्रों में प्रशंसित साधनों का फल भक्ति में मिलता है और विश्वास से निरंतर कथा सुनना उसे पोषित कर सकता है। यह ग्रंथ का भक्तिपरक आश्वासन है; सांसारिक सफलता, रोगमुक्ति, हानि से सुरक्षा या हर पाठक के लिए अनिवार्य समय-सारणी की मापी हुई गारंटी नहीं।"
+          }
+        },
+        {
+          "episode_id": "kakabhushundi-the-work-closes-and-reading-remains-open",
+          "ordinal": 28,
+          "source_scan_pages": [1219, 1223],
+          "title": {"en": "The seventh sopana closes, but the reading path remains beginning to end", "hi": "सप्तम सोपान समाप्त होता है, पर पाठ-यात्रा आरंभ से अंत तक खुली रहती है"},
+          "narration": {
+            "en": "The final verses praise Rama's story, remember the work's composition and close the seventh sopana. They present the Manas as a lake entered through devotion, bringing the framing metaphor to completion. This episode marks the textual end; Devam's separate daily-reading lane must still expose every source-ordered page, passage and resume point rather than replacing them with these episodes.",
+            "hi": "अंतिम पद रामकथा की महिमा कहते, रचना को स्मरण करते और सप्तम सोपान समाप्त करते हैं। वे मानस को भक्ति से प्रवेश किए जाने वाले सरोवर की तरह रखते हैं और आरंभिक रूपक पूरा करते हैं। यह पाठ का अंतिम बिंदु है; देवम की अलग दैनिक-पाठ धारा को फिर भी हर क्रमबद्ध पृष्ठ, अंश और पुनःआरंभ स्थान देना होगा, इन प्रसंगों से उन्हें बदलना नहीं।"
+          }
+        }
+      ],
+      "transition": {
+        "en": "The Ramcharitmanas closes, while its reader can return to the beginning or enter the separate complete reading sequence by page, passage and kanda. The frame also connects outward to Hanuman, Garuda, Shiva and later devotional traditions without claiming that every tradition tells it identically.",
+        "hi": "रामचरितमानस समाप्त होता है, पर पाठक आरंभ पर लौट सकता या अलग संपूर्ण पाठ-क्रम में पृष्ठ, अंश और काण्ड के अनुसार प्रवेश कर सकता है। यह कथा-भूमिका हनुमान, गरुड़, शिव और आगे की भक्तिपरक परंपराओं से जुड़ती है, बिना यह कहे कि हर परंपरा इसे समान रूप से बताती है।"
+      },
+      "boundary_note": "This completes the detailed Kakabhushundi-Garuda consumer sequence and the closing-frame teaching assigned to this expectation. It does not establish every claim as history, turn spiritual metaphors into medical advice, or complete the separate page-by-page Ramcharitmanas reading denominator."
+    }
+  ],
+  "batch_counters": {
+    "story_count": 2,
+    "episode_count": 46,
+    "consumer_languages": ["en", "hi"],
+    "source_expression_count": 1,
+    "source_scan_page_union_count": 153,
+    "selected_dutt_expression_claims_added": 0
+  },
+  "completion_state": "two_uttarkanda_expectations_consumer_complete_en_hi_source_aligned"
+}

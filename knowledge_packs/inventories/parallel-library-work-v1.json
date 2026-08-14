@@ -1,0 +1,125 @@
+{
+  "contract": "DEVAM_PARALLEL_LIBRARY_WORK_V1",
+  "version": 1,
+  "snapshot_date": "2026-08-13",
+  "coordination_branch": "codex/consumer-story-first-knowledge-base",
+  "boundary": "Five isolated consumer-library lanes. Lane progress is selected-scope progress, not civilizational completeness, product projection, hosted state, or release acceptance.",
+  "shared_state_owner_lane_id": "epics-integration",
+  "shared_state_paths": [
+    "knowledge_packs/inventories/consumer-content-mvp-v1.json",
+    "knowledge_packs/inventories/canonical-consumer-anchors-v1.json",
+    "knowledge_packs/inventories/story-universe-coverage-v1.json",
+    "knowledge_packs/inventories/parallel-library-work-v1.json",
+    "apps/web/**",
+    "supabase/**",
+    "docs/IMPLEMENTATION_PLAN.md"
+  ],
+  "lanes": [
+    {
+      "lane_id": "epics-integration",
+      "title": "Epics and cross-lane integration",
+      "task_kind": "current_task",
+      "suggested_branch": "codex/consumer-story-first-knowledge-base",
+      "status": "active_library_completion_goal",
+      "sole_shared_state_owner": true,
+      "initial_denominator": {
+        "state": "fixed",
+        "selected_ramayana_expression_turns": 49,
+        "selected_ramayana_expression_scenes": 413,
+        "selected_ramayana_expression_bilingual_beats": 1794,
+        "mahabharata_backbone_turns": 77,
+        "mahabharata_accepted_turns": 11,
+        "mahabharata_remaining_turns_before_paused_uncommitted_work": 66,
+        "completion_rule": "Zero missing selected-expression intervals, substantial English/Hindi continuity, adversarial whole-story review, and separate integration-state reporting."
+      },
+      "exclusive_write_globs": [
+        "knowledge_packs/mahabharata/**",
+        "knowledge_packs/ramayana/**",
+        "knowledge_packs/inventories/**",
+        "docs/CONSUMER_CONTENT_MVP_CONTRACT.md",
+        "docs/IMPLEMENTATION_PLAN.md",
+        "apps/web/**",
+        "supabase/**",
+        "tools/test_mahabharata_*.py"
+      ],
+      "formal_goal": "Complete the Devam consumer epic library and act as the sole integration lane for parallel library authoring. Resume and finish the source-bounded Mahabharata English/Hindi story backbone through all 77 turns with substantial scenes and beats; adversarially review the existing complete 49-turn Ramayana selected-expression journey; preserve the paused Mahabharata checkpoint; and integrate accepted Ganesha, Devi, Diwali and ritual-lane outputs through canonical IDs and typed, evidence-scoped relationships. Maintain shared coverage inventories and graph projections without duplicating story text. Do not mutate hosted services or publish production changes without explicit authorization."
+    },
+    {
+      "lane_id": "ganesha-consumer",
+      "title": "Ganesha consumer library",
+      "task_kind": "isolated_worktree_task",
+      "suggested_branch": "codex/library-ganesha-consumer",
+      "status": "foundation_ready",
+      "sole_shared_state_owner": false,
+      "initial_denominator": {
+        "state": "must_be_frozen_before_new_authoring",
+        "required_dimensions": ["selected story families", "characters", "places", "temples", "Ganesh Chaturthi and Ganeshotsav applicability lanes", "living connections"],
+        "completion_rule": "Every accepted story family is complete in substantial English/Hindi moments, every accepted practice is complete for its named lane, and all remaining selected-scope gaps are zero or explicitly blocked."
+      },
+      "exclusive_write_globs": [
+        "knowledge_packs/library_lanes/ganesha/**",
+        "docs/library_lanes/ganesha/**",
+        "tools/test_library_lane_ganesha*.py"
+      ],
+      "formal_goal": "Build the complete defined consumer-MVP Ganesha world in approachable English and Hindi. First inventory and bound the selected story families, festivals, practices, characters, places and temples; then complete every accepted story in substantial beginning-to-end scenes rather than summaries. Cover Ganesh Chaturthi and regional Ganeshotsav practice through scoped actionable records. Use fixed sources for narrative content and current authoritative research for living temples and practices. Write only Ganesha-lane packs and cross-link proposals; do not edit shared registries, global inventories, migrations, app projections or other lanes. Continue autonomously in reviewed batches until the defined lane denominator is genuinely complete."
+    },
+    {
+      "lane_id": "devi-consumer",
+      "title": "Devi, Navaratri and Durga Puja consumer library",
+      "task_kind": "isolated_worktree_task",
+      "suggested_branch": "codex/library-devi-consumer",
+      "status": "foundation_ready",
+      "sole_shared_state_owner": false,
+      "initial_denominator": {
+        "state": "must_be_frozen_before_new_authoring",
+        "required_dimensions": ["selected Devi story expressions", "Durga and Kali identities without flattening", "Navaratri lanes", "Durga Puja lanes", "places", "temples", "living connections"],
+        "completion_rule": "Every accepted story expression or family is complete in substantial English/Hindi moments, every accepted practice is complete for its named lane, and all remaining selected-scope gaps are zero or explicitly blocked."
+      },
+      "exclusive_write_globs": [
+        "knowledge_packs/library_lanes/devi/**",
+        "docs/library_lanes/devi/**",
+        "tools/test_library_lane_devi*.py"
+      ],
+      "formal_goal": "Build the complete defined consumer-MVP Devi world in approachable English and Hindi, including Durga, the full selected Devi Mahatmya story sequence, Navaratri, Durga Puja, Kali and Kali Puja connections, relevant Lakshmi traditions, major places and selected temples. Preserve differences among textual narratives, goddess identities, regional traditions, festival practices and modern institutions. Produce detailed stories and scoped actionable living-practice records. Write only Devi-lane packs and cross-link proposals; do not modify shared canonical data, migrations, application projections or other lanes. Continue autonomously in reviewed batches until the defined lane denominator is genuinely complete."
+    },
+    {
+      "lane_id": "diwali-consumer",
+      "title": "Diwali and Deepavali consumer library",
+      "task_kind": "isolated_worktree_task",
+      "suggested_branch": "codex/library-diwali-consumer",
+      "status": "foundation_ready",
+      "sole_shared_state_owner": false,
+      "initial_denominator": {
+        "state": "must_be_frozen_before_new_authoring",
+        "required_dimensions": ["multi-day observance sequence", "materially distinct regional worlds", "separately attributed origin narratives", "present practices", "characters", "places", "selected temples", "living connections"],
+        "completion_rule": "Every accepted regional or tradition-specific world has substantial English/Hindi stories and complete named practice lanes without any universal-origin collapse, and all remaining selected-scope gaps are zero or explicitly blocked."
+      },
+      "exclusive_write_globs": [
+        "knowledge_packs/library_lanes/diwali/**",
+        "docs/library_lanes/diwali/**",
+        "tools/test_library_lane_diwali*.py"
+      ],
+      "formal_goal": "Build the complete defined consumer-MVP Diwali/Deepavali world in approachable English and Hindi. Cover the multi-day cycle and materially distinct regional worlds, their full associated stories, present practices, characters, places and selected temples. Keep Rama's return, Narakasura traditions, Lakshmi Puja, Kali Puja, Bali traditions, Jain, Sikh and other relevant lanes separately attributed rather than inventing one universal origin. Write only Diwali-lane packs and cross-link proposals; do not edit shared registries, global inventories, migrations, application projections or other lanes. Continue autonomously in reviewed batches until the defined lane denominator is genuinely complete."
+    },
+    {
+      "lane_id": "ritual-calendar",
+      "title": "Ritual and observance calendar library",
+      "task_kind": "isolated_worktree_task",
+      "suggested_branch": "codex/library-ritual-calendar",
+      "status": "foundation_ready",
+      "sole_shared_state_owner": false,
+      "initial_denominator": {
+        "state": "inventory_must_be_reconciled_before_expansion",
+        "starting_priority": "Complete and audit the existing September-December denominator before widening through recurring and high-demand annual observances.",
+        "required_dimensions": ["observance identity", "applicability", "deterministic timing dependency", "meaning", "origin narratives", "typical practice", "actionable steps", "materials and substitutions", "safety", "closing", "variants", "evidence"],
+        "completion_rule": "Every accepted applicability lane passes the ritual product contract and every remaining inventory item is explicitly incomplete, blocked, hero-owned or outside the selected scope."
+      },
+      "exclusive_write_globs": [
+        "knowledge_packs/library_lanes/ritual-calendar/**",
+        "docs/library_lanes/ritual-calendar/**",
+        "tools/test_library_lane_ritual_calendar*.py"
+      ],
+      "formal_goal": "Build a systematic consumer ritual and observance library in English and Hindi, beginning with complete September-December coverage and then expanding through recurring and high-demand annual observances. Create an explicit inventory and complete one named applicability lane at a time: meaning, source-labelled stories, who commonly observes it, deterministic timing dependency, typical practice, ordered actionable steps, materials, substitutions, safety, closing and material variants. Never invent a universal national ritual or infer instructions from model memory alone. Write only ritual-calendar lane packs and cross-link proposals; do not modify shared canonical graph data, hero-owned observance records, migrations, application projections or other lanes. Continue autonomously in reviewed batches until the defined lane denominator is genuinely complete."
+    }
+  ]
+}

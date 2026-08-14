@@ -11,14 +11,14 @@ class SourceCatalogSearchIndexTest(unittest.TestCase):
         cls.index = compile_index()
 
     def test_exact_source_vault_census(self) -> None:
-        self.assertEqual(self.index["sourceObjectCount"], 8491)
-        self.assertEqual(self.index["sourceObjectBytes"], 6167702553)
+        self.assertEqual(self.index["sourceObjectCount"], 8493)
+        self.assertEqual(self.index["sourceObjectBytes"], 6169753470)
         self.assertEqual(
             self.index["sourceSummarySha256"],
-            "f5093b53c64a0c23110c1360392eeb33a969ff987f39546f8dafd138c62cac3e",
+            "bec4dee70e83360e51f569c411c6e690df371338068acef7209e40fea41339c1",
         )
-        self.assertEqual(len(self.index["records"]), 8491)
-        self.assertEqual(len({row["sha256"] for row in self.index["records"]}), 8491)
+        self.assertEqual(len(self.index["records"]), 8493)
+        self.assertEqual(len({row["sha256"] for row in self.index["records"]}), 8493)
 
     def test_ramcharitmanas_revision_carriers_are_discoverable_without_text_promotion(self) -> None:
         report_path = Path("ingestion/reports/ramcharitmanas-wikisource-belvedere-pages-v1.json")

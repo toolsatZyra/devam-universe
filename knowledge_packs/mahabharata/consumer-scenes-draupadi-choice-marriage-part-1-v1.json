@@ -1,0 +1,360 @@
+{
+  "contract": "DEVAM_MAHABHARATA_CONSUMER_SCENES_V1",
+  "snapshot_date": "2026-08-12",
+  "series_id": "mahabharata",
+  "batch_id": "svayamvara-kunti-statement-and-panchala-deliberation",
+  "status": "authored_not_projected",
+  "source_qualification": {
+    "qualification_id": "mahabharata-kisari-mohan-ganguli-project-gutenberg-source-qualification-v1",
+    "source_unit_root_sha256": "e476857f386c8faf48be9463d0cba9523f68652bdb8e14fc6951727f04d1040c",
+    "expression_boundary": "One fixed Ganguli English expression. These scenes distinguish what the narrator reports, what characters argue, and what the selected expression does not record—especially Draupadi's own response to the proposed shared marriage. They are consumer synthesis, not a critical edition, universal prescription, or proof of consent not supplied by the source."
+  },
+  "coverage": {
+    "turn_ids": ["draupadi-choice-marriage"],
+    "parva_slug": "adi",
+    "source_start_ordinal": 186,
+    "source_end_ordinal": 199,
+    "scene_count": 5,
+    "beat_count": 25,
+    "completes_backbone_turn": false,
+    "remaining_source_start_ordinal": 200,
+    "remaining_source_end_ordinal": 209
+  },
+  "scenes": [
+    {
+      "id": "panchala-gathers-for-draupadis-svayamvara",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 1,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 186, "end_ordinal": 188, "span_sha256": "30c32f1057161008cf9d9a0277aac45bc845375905c4e86aa8872120a87120c6"},
+      "title": {"en": "Panchala becomes a crowded world built around Draupadi's choice", "hi": "द्रौपदी के चुनाव के लिए पांचाल एक जीवंत और भीड़ भरी दुनिया बनता है"},
+      "decisive_change": {
+        "en": "The disguised Pandavas enter Kampilya among travelling crowds, while Drupada's hidden hope for Arjuna shapes a public contest whose announced result still depends on Draupadi placing the garland.",
+        "hi": "वेश बदले पांडव यात्रियों की भीड़ के साथ कांपिल्य पहुँचते हैं। अर्जुन के लिए द्रुपद की छिपी आशा एक कठिन सार्वजनिक प्रतियोगिता बनाती है, पर घोषित परिणाम तब भी द्रौपदी द्वारा वरमाला पहनाने पर निर्भर है।"
+      },
+      "characters": ["draupadi", "dhrishtadyumna", "drupada", "arjuna", "yudhishthira", "bhima", "kunti", "krishna", "karna", "duryodhana"],
+      "places": ["road-to-panchala", "kampilya", "potters-house", "svayamvara-amphitheatre"],
+      "visual_identity": "A pilgrim road flows into a many-tiered festival city: potters, performers and ordinary spectators occupy the foreground, royal balconies rise above them, and the bow mechanism forms one bright route toward Draupadi rather than turning her into scenery or a collectible prize.",
+      "beats": [
+        {
+          "id": "travellers-turn-the-road-into-an-invitation",
+          "title": {"en": "Travellers invite the hidden family into Panchala's great gathering", "hi": "यात्री छिपे हुए परिवार को पांचाल के महान उत्सव में बुलाते हैं"},
+          "narration": {
+            "en": "On the road from Ekachakra, the Pandavas and Kunti meet groups travelling to Drupada's capital. They speak of Draupadi, Dhrishtadyumna, visiting rulers, actors, singers, storytellers and public gifts. The brothers accept the invitation without revealing who they are. The road therefore carries more than a marriage rumour: it brings fugitives into a temporary city where every social layer may witness an event capable of changing alliances.",
+            "hi": "एकचक्रा से निकलते समय पांडव और कुंती पांचाल जा रहे अनेक यात्रियों से मिलते हैं। वे द्रौपदी, धृष्टद्युम्न, आए हुए राजाओं, कलाकारों, गायकों, कथावाचकों और सार्वजनिक दान की चर्चा करते हैं। भाई अपनी पहचान बताए बिना उनके साथ चलने को तैयार होते हैं। यह मार्ग केवल विवाह का समाचार नहीं लाता; वह भगोड़े परिवार को ऐसे अस्थायी नगर में ले जाता है जहाँ हर वर्ग के लोग बदलते गठबंधनों के साक्षी बन सकते हैं।"
+          },
+          "visual_direction": "Let the player merge with several moving caravans and overhear different fragments of the event; each group should add people, music or news to the horizon instead of opening a text panel.",
+          "character_ids": ["yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "kunti", "travelling-brahmanas"]
+        },
+        {
+          "id": "the-family-enters-kampilya-without-a-name",
+          "title": {"en": "The family reaches Kampilya and lives behind an ordinary doorway", "hi": "परिवार कांपिल्य पहुँचकर एक साधारण द्वार के पीछे गुमनाम रहता है"},
+          "narration": {
+            "en": "After meeting Vyasa on the way, the family travels in slow stages through woods and beside lakes before entering southern Panchala. They stay in a potter's house and continue the modest routine that protects their disguise. Beyond that doorway the capital swells for days, but their hidden life remains physically close to working households. This gives the player two simultaneous scales: an intimate refuge and a festival city expanding around it.",
+            "hi": "मार्ग में व्यास से मिलने के बाद परिवार जंगलों और झीलों के किनारे धीरे-धीरे चलता हुआ दक्षिण पांचाल पहुँचता है। वे एक कुम्हार के घर में ठहरते हैं और अपनी पहचान बचाने वाली साधारण दिनचर्या जारी रखते हैं। उस द्वार के बाहर राजधानी कई दिनों तक फैलते उत्सव से भरती जाती है, जबकि उनका गुप्त जीवन मेहनतकश परिवारों के बीच रहता है। खिलाड़ी एक साथ दो स्तर देखता है—छोटा सुरक्षित घर और उसके चारों ओर बढ़ता विशाल नगर।"
+          },
+          "visual_direction": "Make the potter's kiln a warm, reusable home marker inside a growing city map; the player should be able to look from its quiet courtyard toward increasingly crowded festival routes.",
+          "character_ids": ["kunti", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "vyasa", "potter-household"]
+        },
+        {
+          "id": "drupada-builds-a-test-around-a-private-hope",
+          "title": {"en": "Drupada hides his hope for Arjuna inside a public test", "hi": "द्रुपद अर्जुन के लिए अपनी आशा को सार्वजनिक परीक्षा में छिपाते हैं"},
+          "narration": {
+            "en": "Drupada has long hoped that Arjuna will marry Draupadi, though he has not announced that wish. He commissions an exceptionally difficult bow and a suspended moving target, declaring that the person who strings the bow and shoots through the machine will obtain the marriage. The contest is public, yet its design is not neutral: the father has shaped it around the ability of the man he privately wants to appear.",
+            "hi": "द्रुपद लंबे समय से चाहते हैं कि द्रौपदी का विवाह अर्जुन से हो, पर उन्होंने यह इच्छा सार्वजनिक नहीं की। वे अत्यंत कठोर धनुष और ऊपर घूमते लक्ष्य की व्यवस्था कराते हैं तथा घोषणा करते हैं कि जो धनुष चढ़ाकर यंत्र के छेद से लक्ष्य भेदेगा वही विवाह पाएगा। प्रतियोगिता सार्वजनिक है, फिर भी उसका निर्माण निष्पक्ष नहीं; पिता ने उसे उस व्यक्ति की क्षमता के अनुसार बनाया है जिसके आने की उन्हें गुप्त आशा है।"
+          },
+          "visual_direction": "Show the engineering route from Drupada's private planning chamber to the public arena; translucent aim lines may suggest the intended archer without identifying or guaranteeing him.",
+          "character_ids": ["drupada", "draupadi", "dhrishtadyumna", "arjuna", "panchala-engineers"]
+        },
+        {
+          "id": "the-amphitheatre-fills-for-sixteen-days",
+          "title": {"en": "Sixteen days of spectacle make the arena a temporary world", "hi": "सोलह दिनों का उत्सव रंगभूमि को एक अस्थायी संसार बना देता है"},
+          "narration": {
+            "en": "Rulers, teachers, citizens, performers and visitors occupy mansions, platforms and streets around the amphitheatre. Music, fragrance, food and gifts make the gathering more than a line of contestants. The disguised Pandavas sit among Brahmanas rather than in royal seats. On the sixteenth day Draupadi enters with a garland, and Dhrishtadyumna explains the mechanism and the qualifications before presenting the assembled candidates to his sister.",
+            "hi": "राजा, आचार्य, नगरवासी, कलाकार और यात्री रंगभूमि के चारों ओर बने भवनों, मंचों और गलियों में भर जाते हैं। संगीत, सुगंध, भोजन और दान इस आयोजन को प्रतियोगियों की कतार से कहीं बड़ा बनाते हैं। वेश बदले पांडव राजसी आसनों पर नहीं, ब्राह्मणों के बीच बैठते हैं। सोलहवें दिन द्रौपदी वरमाला लेकर आती हैं और धृष्टद्युम्न यंत्र तथा शर्तें समझाकर अपनी बहन को उपस्थित प्रत्याशियों से परिचित कराते हैं।"
+          },
+          "visual_direction": "Build the amphitheatre as a navigable hub with ground crowds, performer rings, royal terraces and the disguised seating area; the sixteenth day should arrive through changing activity, not a date card.",
+          "character_ids": ["draupadi", "dhrishtadyumna", "drupada", "pandavas", "assembled-rulers", "citizens", "performers"]
+        },
+        {
+          "id": "draupadi-hears-the-field-before-the-test-begins",
+          "title": {"en": "Draupadi is shown the immense political field gathered around her", "hi": "द्रौपदी अपने चारों ओर जुटे विशाल राजनीतिक संसार को देखती हैं"},
+          "narration": {
+            "en": "Dhrishtadyumna recites a long field of Kuru, Gandhara, Madra, Magadha, Yadava and other rulers and warriors. The list is not useful as a wall of names; it reveals how many rival houses have converged and how Draupadi's marriage can redirect power across the map. Krishna and Balarama are present among the Yadavas, while the five brothers remain unannounced in the crowd. Every major political route is now waiting on one arena.",
+            "hi": "धृष्टद्युम्न कुरु, गांधार, मद्र, मगध, यादव और अनेक अन्य राज्यों के राजाओं तथा योद्धाओं का लंबा परिचय देते हैं। यह नामों की दीवार नहीं, बल्कि इस बात का दृश्य है कि कितने प्रतिद्वंद्वी घराने एक जगह आ मिले हैं और द्रौपदी का विवाह पूरे मानचित्र की शक्ति बदल सकता है। यादवों में कृष्ण और बलराम उपस्थित हैं, जबकि पाँचों भाई भीड़ में अनजान बैठे हैं। अब अनेक राजनीतिक मार्ग एक ही रंगभूमि पर ठहरे हैं।"
+          },
+          "visual_direction": "Translate the catalogue into a constellation of kingdom routes illuminating around the arena as each delegation is named; return the camera to Draupadi hearing them, rather than lingering on a collectible roster.",
+          "character_ids": ["draupadi", "dhrishtadyumna", "krishna", "balarama", "karna", "duryodhana", "assembled-rulers", "pandavas"]
+        }
+      ]
+    },
+    {
+      "id": "draupadi-refuses-karna-arjuna-hits-the-mark",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 2,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 189, "end_ordinal": 192, "span_sha256": "5248cb6e54672c9197b5f89a44a9409ff8662199aa6dcae3fcfac4bfc168caa9"},
+      "title": {"en": "Draupadi refuses Karna, Arjuna strikes the mark, and the arena turns violent", "hi": "द्रौपदी कर्ण को अस्वीकार करती हैं, अर्जुन लक्ष्य भेदते हैं और रंगभूमि हिंसक हो उठती है"},
+      "decisive_change": {
+        "en": "Draupadi's recorded refusal stops Karna, the disguised Arjuna completes the test, and defeated rulers attack Drupada before Bhima, Arjuna and Krishna bring the public contest to a dangerous close.",
+        "hi": "द्रौपदी का दर्ज किया गया अस्वीकार कर्ण को रोकता है, वेश बदले अर्जुन परीक्षा पूरी करते हैं, और पराजित राजा द्रुपद पर चढ़ दौड़ते हैं; तब भीम, अर्जुन और कृष्ण उस सार्वजनिक प्रतियोगिता को कठिन संघर्ष के बाद समाप्त कराते हैं।"
+      },
+      "characters": ["draupadi", "karna", "arjuna", "bhima", "drupada", "krishna", "balarama", "salya", "assembled-rulers"],
+      "places": ["svayamvara-amphitheatre", "arena-target", "arena-battlefield", "route-to-potters-house"],
+      "visual_identity": "The arena shifts through three readable states—failed attempts, a sharp spoken refusal, and a successful shot—before its ceremonial geometry fractures into combat routes; Draupadi remains a moving participant throughout, never a trophy hovering at the finish line.",
+      "beats": [
+        {
+          "id": "krishna-recognises-fire-under-ashes",
+          "title": {"en": "Krishna recognises the hidden brothers before the crowd does", "hi": "भीड़ से पहले कृष्ण छिपे हुए भाइयों को पहचान लेते हैं"},
+          "narration": {
+            "en": "As proud rulers rise one after another, Krishna studies five men seated among the Brahmanas and identifies Yudhishthira, Bhima, Arjuna and the twins to Balarama. The recognition does not expose them. It creates a quiet line of knowledge across the noisy arena: one ally now understands that Kunti's family survived the fire, while the hostile Kuru party still sees only anonymous spectators.",
+            "hi": "जब गर्वित राजा एक-एक करके उठते हैं, कृष्ण ब्राह्मणों के बीच बैठे पाँच पुरुषों को ध्यान से देखते हैं और बलराम से युधिष्ठिर, भीम, अर्जुन तथा जुड़वाँ भाइयों की पहचान करते हैं। वे उन्हें सार्वजनिक नहीं करते। शोर भरी रंगभूमि में ज्ञान की एक शांत रेखा बनती है—एक मित्र जान जाता है कि कुंती का परिवार आग से बच गया, जबकि शत्रु कुरु पक्ष अभी उन्हें साधारण दर्शक समझता है।"
+          },
+          "visual_direction": "Use a restrained sightline between Krishna and the disguised seats, with five embers briefly visible beneath ash-toned clothing; do not trigger a public reveal or omniscient label above them.",
+          "character_ids": ["krishna", "balarama", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva"]
+        },
+        {
+          "id": "draupadis-refusal-stops-karna",
+          "title": {"en": "Draupadi's spoken refusal ends Karna's attempt", "hi": "द्रौपदी का स्पष्ट अस्वीकार कर्ण का प्रयास रोक देता है"},
+          "narration": {
+            "en": "After other rulers fail even to string the bow, Karna raises and strings it. The Pandavas believe the target is effectively won. Draupadi then says aloud that she will not choose a Suta as her husband. Karna laughs bitterly, looks toward the sun and sets the drawn bow aside. The source records both her decisive speech and its status-based reasoning; the story should preserve her agency without converting that reasoning into a timeless social rule or hiding its injury.",
+            "hi": "अन्य राजाओं के धनुष चढ़ाने में विफल होने के बाद कर्ण उसे उठाकर चढ़ा देते हैं। पांडव समझते हैं कि लक्ष्य अब लगभग जीत लिया गया है। तभी द्रौपदी ऊँचे स्वर में कहती हैं कि वे सूत को पति नहीं चुनेंगी। कर्ण कटु हँसी के साथ सूर्य की ओर देखते हैं और चढ़ा हुआ धनुष रख देते हैं। स्रोत उनका निर्णायक वचन और उसका जन्म-आधारित कारण दोनों देता है; कथा उनकी सक्रियता बचाए, पर उस कारण को आज का सामाजिक नियम न बनाए और उसकी चोट भी न छिपाए।"
+          },
+          "visual_direction": "Stop the target machinery at Draupadi's voice and move the focal line from Karna's bow to her; show Karna's response with dignity and hurt, without a caste-ranking meter or celebratory rejection effect.",
+          "character_ids": ["draupadi", "karna", "pandavas", "assembled-rulers"]
+        },
+        {
+          "id": "arjuna-steps-out-of-the-wrong-seating-section",
+          "title": {"en": "Arjuna crosses the arena from the spectators' side", "hi": "अर्जुन दर्शकों की ओर से उठकर रंगभूमि पार करते हैं"},
+          "narration": {
+            "en": "When the rulers have failed, Arjuna rises from among the Brahmanas. Some spectators fear that an unknown youth will make them ridiculous; others read his build and resolve and urge that he be allowed to try. He honours the bow, strings it quickly and sends five arrows through the machine to bring down the target. The victory is a spatial reversal: the successful contender comes not from the royal terraces but from the apparently powerless crowd.",
+            "hi": "राजाओं की विफलता के बाद अर्जुन ब्राह्मण दर्शकों के बीच से उठते हैं। कुछ लोगों को डर है कि अनजान युवक सबकी हँसी कराएगा; दूसरे उसके शरीर और निश्चय को देखकर प्रयास की अनुमति माँगते हैं। वह धनुष को प्रणाम करके तुरंत चढ़ाता है और यंत्र के छेद से पाँच बाण चलाकर लक्ष्य गिरा देता है। यह विजय स्थान का उलटाव है—सफल योद्धा राजसी दीर्घा से नहीं, साधारण दिखने वाली भीड़ से आता है।"
+          },
+          "visual_direction": "Give the player one uninterrupted walk from the low spectator ring to the bow, then track all five arrows through the moving aperture; preserve crowd uncertainty until the target actually falls.",
+          "character_ids": ["arjuna", "draupadi", "drupada", "brahmana-spectators", "assembled-rulers"]
+        },
+        {
+          "id": "defeated-rulers-attack-choice-itself",
+          "title": {"en": "The defeated rulers answer the result by attacking Drupada and threatening Draupadi", "hi": "पराजित राजा परिणाम के उत्तर में द्रुपद पर हमला और द्रौपदी को धमकी देते हैं"},
+          "narration": {
+            "en": "Draupadi approaches Arjuna with the garland, but many defeated rulers refuse to accept a result that benefits someone they take for a Brahmana. Their speech escalates from grievance against Drupada to a threat to burn Draupadi herself. They rush the king with weapons. Bhima uproots a tree and Arjuna takes his bow, turning celebration into defence against men who would erase the woman's choice and punish her father for honouring the announced test.",
+            "hi": "द्रौपदी वरमाला लेकर अर्जुन के पास जाती हैं, पर अनेक पराजित राजा उस परिणाम को मानने से इनकार करते हैं जो उनके अनुसार एक ब्राह्मण के पक्ष में गया है। उनकी शिकायत द्रुपद के विरुद्ध क्रोध से बढ़कर द्रौपदी को ही जला देने की धमकी बन जाती है। वे हथियार लेकर राजा पर टूट पड़ते हैं। भीम वृक्ष उखाड़ते हैं और अर्जुन धनुष सँभालते हैं; उत्सव अब उन पुरुषों से रक्षा बन जाता है जो स्त्री के चुनाव को मिटाकर घोषित शर्त निभाने पर उसके पिता को दंड देना चाहते हैं।"
+          },
+          "visual_direction": "Shatter the ceremonial rings into clear protection routes around Draupadi and Drupada; threats should register as danger, never as a combat reward or an opportunity for the player to harm her.",
+          "character_ids": ["draupadi", "drupada", "arjuna", "bhima", "assembled-rulers"]
+        },
+        {
+          "id": "krishna-ends-the-arena-battle-without-revealing-the-family",
+          "title": {"en": "Bhima and Arjuna hold the field until Krishna secures a retreat", "hi": "भीम और अर्जुन मैदान थामते हैं, फिर कृष्ण सुरक्षित प्रस्थान कराते हैं"},
+          "narration": {
+            "en": "Arjuna meets Karna in an intense exchange while Bhima grapples with Salya and throws him without causing grave injury. The rulers begin to suspect that the unknown fighters are no ordinary Brahmanas. Krishna argues that the winner acquired the result under the announced terms and persuades the gathering to stop. Bhima, Arjuna and Draupadi leave through the crowd while their full identity remains concealed, carrying the consequence of the arena back toward the potter's house.",
+            "hi": "अर्जुन कर्ण के साथ तीव्र धनुर्विद्या में भिड़ते हैं, जबकि भीम शल्य से कुश्ती करके उन्हें बिना गंभीर चोट पहुँचाए दूर फेंकते हैं। राजाओं को संदेह होने लगता है कि ये अनजान योद्धा साधारण ब्राह्मण नहीं हैं। कृष्ण कहते हैं कि विजेता ने घोषित शर्त के अनुसार परिणाम पाया है और सभा को युद्ध रोकने के लिए मनाते हैं। भीम, अर्जुन और द्रौपदी भीड़ से निकलते हैं, पर उनकी पूरी पहचान अभी छिपी रहती है; रंगभूमि का परिणाम अब कुम्हार के घर की ओर बढ़ता है।"
+          },
+          "visual_direction": "Let combat de-escalate visibly as Krishna's intervention closes hostile routes one by one; the escape path should remain crowded and difficult, with Draupadi travelling alongside rather than being carried as an object.",
+          "character_ids": ["arjuna", "karna", "bhima", "salya", "krishna", "draupadi", "assembled-rulers"]
+        }
+      ]
+    },
+    {
+      "id": "kuntis-unseeing-words-create-a-family-crisis",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 3,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 193, "end_ordinal": 193, "span_sha256": "d41a99342ad189ce4f56412731a1960291c3b8a5aae6070e606460371edf8f2f"},
+      "title": {"en": "Kunti speaks without seeing Draupadi, and the household must face what follows", "hi": "कुंती द्रौपदी को देखे बिना बोलती हैं और परिवार को उसके परिणाम का सामना करना पड़ता है"},
+      "decisive_change": {
+        "en": "A habitual phrase spoken before Kunti sees Draupadi becomes the basis of a shared-marriage proposal; the men deliberate and the source shows Draupadi looking at them, but records no direct answer from her in this crucial exchange.",
+        "hi": "द्रौपदी को देखने से पहले कुंती की कही सामान्य बात साझा विवाह के प्रस्ताव का आधार बन जाती है। पुरुष निर्णय पर विचार करते हैं और स्रोत द्रौपदी को उन्हें देखते हुए दिखाता है, पर इस निर्णायक संवाद में उसका सीधा उत्तर दर्ज नहीं करता।"
+      },
+      "characters": ["draupadi", "kunti", "yudhishthira", "arjuna", "bhima", "nakula", "sahadeva", "krishna", "balarama"],
+      "places": ["potters-house", "potters-house-inner-room", "potters-house-courtyard"],
+      "visual_identity": "The vast arena contracts into one modest room where sightlines matter: Kunti speaks from behind a threshold, Draupadi enters the frame only afterward, and the brothers' glances form a tightening network that must never be mistaken for her voiced agreement.",
+      "beats": [
+        {
+          "id": "kunti-speaks-before-she-sees-who-has-arrived",
+          "title": {"en": "A familiar instruction is spoken before Kunti sees Draupadi", "hi": "द्रौपदी को देखने से पहले कुंती एक परिचित निर्देश कह देती हैं"},
+          "narration": {
+            "en": "At the potter's house the returning brothers describe what they have brought as alms. Kunti, still inside and unable to see them, tells them to share what they have obtained. She then sees Draupadi, recognises the human consequence of her words and immediately asks how the situation can be resolved without making her statement false or causing distress and wrong to the Panchala princess. The source presents error and alarm, not a deliberate maternal selection of Draupadi for five sons.",
+            "hi": "कुम्हार के घर लौटे भाई अपनी प्राप्ति को भिक्षा की भाषा में बताते हैं। भीतर बैठी कुंती उन्हें देख नहीं रही होतीं और कहती हैं कि जो मिला है उसे सब बाँट लो। फिर द्रौपदी को देखकर वे अपने शब्दों का मानवीय परिणाम समझती हैं और तुरंत पूछती हैं कि उनकी बात झूठी हुए बिना तथा पांचाल की राजकुमारी को कष्ट या अन्याय दिए बिना इसका समाधान कैसे हो। स्रोत इसे भूल और चिंता के रूप में दिखाता है, पाँच पुत्रों के लिए जानबूझकर किया गया मातृ-चयन नहीं।"
+          },
+          "visual_direction": "Stage the line across an obstructed doorway so the player knows Kunti cannot see; when Draupadi enters her view, replace any celebratory cue with a pause, concern and an open unresolved path.",
+          "character_ids": ["kunti", "draupadi", "arjuna", "bhima", "yudhishthira", "nakula", "sahadeva"]
+        },
+        {
+          "id": "arjuna-refuses-to-step-over-his-elder-brothers",
+          "title": {"en": "Arjuna rejects a quick wedding that would bypass his elder brothers", "hi": "अर्जुन बड़े भाइयों को पीछे छोड़कर तुरंत विवाह करने से इनकार करते हैं"},
+          "narration": {
+            "en": "Yudhishthira first tells Arjuna that he won Draupadi and should marry her. Arjuna refuses, arguing that the elder brothers must marry before him and asking Yudhishthira to decide after reflection. His objection is about fraternal order rather than a recorded consultation with Draupadi. The conversation therefore shifts authority from the contest winner to the eldest brother while her future remains under discussion in the same room.",
+            "hi": "युधिष्ठिर पहले अर्जुन से कहते हैं कि द्रौपदी को उसने जीता है, इसलिए वही विवाह करे। अर्जुन मना करते हैं और कहते हैं कि बड़े भाइयों का विवाह पहले होना चाहिए तथा युधिष्ठिर सोचकर निर्णय लें। उनकी आपत्ति भ्रातृ-क्रम से जुड़ी है, द्रौपदी से दर्ज परामर्श से नहीं। इस तरह अधिकार प्रतियोगिता-विजेता से ज्येष्ठ भाई की ओर चला जाता है, जबकि उसी कमरे में उसके भविष्य पर चर्चा जारी रहती है।"
+          },
+          "visual_direction": "Move the decision focus from Arjuna to Yudhishthira through their sightline, but keep Draupadi visibly present at equal scale; do not render the exchange as a menu in which brothers allocate her.",
+          "character_ids": ["arjuna", "yudhishthira", "draupadi", "bhima", "nakula", "sahadeva", "kunti"]
+        },
+        {
+          "id": "glances-become-yudhishthiras-reason-for-sharing-the-marriage",
+          "title": {"en": "Yudhishthira reads his brothers' desire and proposes one marriage shared by five", "hi": "युधिष्ठिर भाइयों की इच्छा देखकर पाँचों के साझा विवाह का प्रस्ताव रखते हैं"},
+          "narration": {
+            "en": "The brothers look at Draupadi and at one another; the narrator says desire fills them. Draupadi also looks at them. Yudhishthira recalls Vyasa's earlier words, fears division among the brothers and declares that Draupadi will be wife to all five. The brothers receive the decision gladly. The selected expression does not record Draupadi speaking agreement or refusal here, so her glance cannot honestly be upgraded into consent by the consumer retelling.",
+            "hi": "भाई द्रौपदी और एक-दूसरे को देखते हैं; कथाकार कहता है कि उनमें इच्छा जागती है। द्रौपदी भी उन्हें देखती हैं। युधिष्ठिर व्यास की पिछली बात याद करते हैं, भाइयों में फूट से डरते हैं और घोषणा करते हैं कि द्रौपदी पाँचों की पत्नी होंगी। भाई प्रसन्न होकर निर्णय स्वीकार करते हैं। इस जगह चुना गया स्रोत द्रौपदी की मौखिक सहमति या असहमति दर्ज नहीं करता, इसलिए उपभोक्ता कथा उनकी दृष्टि को ईमानदारी से सहमति नहीं बना सकती।"
+          },
+          "visual_direction": "Show every recorded gaze but leave Draupadi's response route visibly unresolved; a contextual marker may state that no spoken answer is preserved, while ordinary narration avoids pretending to know her interior decision.",
+          "character_ids": ["draupadi", "yudhishthira", "arjuna", "bhima", "nakula", "sahadeva", "vyasa-memory"]
+        },
+        {
+          "id": "krishna-and-balarama-confirm-the-survivors-privately",
+          "title": {"en": "Krishna and Balarama enter the refuge and confirm the family survived", "hi": "कृष्ण और बलराम आश्रय में आकर परिवार के जीवित होने की पुष्टि करते हैं"},
+          "narration": {
+            "en": "Krishna and Balarama arrive quietly at the potter's house. Krishna identifies himself, greets Kunti and tells Yudhishthira that power is recognisable even when covered, just as fire shows beneath ash. He celebrates their escape from the lac-house plot but urges continued secrecy so the assembled rulers do not discover them too soon. Their kinship gives the hidden family its first informed external allies after the contest.",
+            "hi": "कृष्ण और बलराम चुपचाप कुम्हार के घर आते हैं। कृष्ण अपना परिचय देते हैं, कुंती से मिलते हैं और युधिष्ठिर से कहते हैं कि राख में छिपी आग की तरह सामर्थ्य पहचाना जा सकता है। वे लाक्षागृह की साजिश से बच निकलने पर प्रसन्न होते हैं, पर सावधान करते हैं कि आए हुए राजा अभी उन्हें न पहचानें। इस रिश्तेदारी से प्रतियोगिता के बाद छिपे परिवार को पहली बार ऐसे बाहरी साथी मिलते हैं जो सच्चाई जानते हैं।"
+          },
+          "visual_direction": "Create a private kinship link inside the refuge that does not broadcast onto the city map; Krishna's fire-under-ash image can gently illuminate the brothers and fade before he leaves.",
+          "character_ids": ["krishna", "balarama", "kunti", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "draupadi"]
+        },
+        {
+          "id": "the-household-crisis-remains-open-after-the-visitors-leave",
+          "title": {"en": "The secret is safer, but Draupadi's future remains unsettled", "hi": "पहचान सुरक्षित है, पर द्रौपदी का भविष्य अभी तय नहीं हुआ है"},
+          "narration": {
+            "en": "Krishna and Balarama leave before other rulers can follow their trail. The family now knows that trusted kin recognise them, yet no wedding has occurred and Panchala has not accepted the proposed arrangement. Kunti's accidental sentence, Yudhishthira's declaration and Draupadi's unrecorded response remain distinct facts. The next move must therefore lead outward to Drupada's household rather than treating the brothers' internal conclusion as a completed marriage.",
+            "hi": "अन्य राजा उनका पीछा कर सकें उससे पहले कृष्ण और बलराम लौट जाते हैं। परिवार जानता है कि विश्वसनीय संबंधी उन्हें पहचान चुके हैं, पर अभी विवाह नहीं हुआ और पांचाल ने प्रस्ताव स्वीकार नहीं किया है। कुंती का अनजाना वाक्य, युधिष्ठिर की घोषणा और द्रौपदी की दर्ज न हुई प्रतिक्रिया तीन अलग तथ्य बने रहते हैं। इसलिए अगला कदम द्रुपद के परिवार की ओर जाएगा; भाइयों के भीतर हुआ निर्णय पूरा विवाह नहीं माना जा सकता।"
+          },
+          "visual_direction": "Leave three separate unresolved threads above the refuge—identity, Panchala recognition and marriage deliberation—and advance only the identity thread to safe; no wedding-complete badge should appear.",
+          "character_ids": ["draupadi", "kunti", "yudhishthira", "arjuna", "bhima", "nakula", "sahadeva", "krishna", "balarama"]
+        }
+      ]
+    },
+    {
+      "id": "dhrishtadyumna-traces-the-strangers-to-their-refuge",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 4,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 194, "end_ordinal": 196, "span_sha256": "6cbb3d1088ce1891a91702256db144bcf6e0418438918e35f8e1d19dfb93df7b"},
+      "title": {"en": "Dhrishtadyumna follows the strangers and Panchala tests their identity", "hi": "धृष्टद्युम्न अजनबियों का पीछा करते हैं और पांचाल उनकी पहचान परखता है"},
+      "decisive_change": {
+        "en": "Panchala moves from anxious surveillance and status prejudice toward strong evidence that Draupadi has joined the surviving Pandavas, bringing the hidden family from a potter's refuge into Drupada's palace.",
+        "hi": "पांचाल चिंतित निगरानी और जन्म-आधारित पूर्वाग्रह से आगे बढ़कर इस मजबूत प्रमाण तक पहुँचता है कि द्रौपदी जीवित पांडवों के साथ हैं; अब छिपा परिवार कुम्हार के आश्रय से द्रुपद के राजमहल की ओर जाता है।"
+      },
+      "characters": ["dhrishtadyumna", "drupada", "draupadi", "kunti", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "panchala-priest"],
+      "places": ["potters-house", "potters-house-night", "drupadas-palace", "panchala-feast-hall"],
+      "visual_identity": "A stealth route shadows the family from arena to refuge, then turns into an evidence board built from meals, speech and conduct; the scene exposes Panchala's status anxieties without making caste classification the player's truth-finding mechanic.",
+      "beats": [
+        {
+          "id": "dhrishtadyumna-hides-near-the-potters-house",
+          "title": {"en": "Dhrishtadyumna follows his sister and watches the refuge in secret", "hi": "धृष्टद्युम्न अपनी बहन का पीछा करके आश्रय को गुप्त रूप से देखते हैं"},
+          "narration": {
+            "en": "Uncertain who has taken Draupadi from the arena, Dhrishtadyumna dismisses his attendants and conceals himself near the potter's house. He watches the returning family and listens through the night. His concern for his sister and his father's political fear explain the pursuit, but it is still surveillance conducted without the household's knowledge. The story should let users understand that tension rather than turn spying on Draupadi into harmless comic stealth.",
+            "hi": "रंगभूमि से द्रौपदी को कौन ले गया यह निश्चित न होने पर धृष्टद्युम्न सेवकों को हटाकर कुम्हार के घर के पास छिपते हैं। वे लौटते परिवार को देखते और रात की बातचीत सुनते हैं। बहन की चिंता तथा पिता का राजनीतिक भय इस पीछा करने का कारण समझाते हैं, पर यह फिर भी परिवार की जानकारी के बिना की गई निगरानी है। कथा इस तनाव को दिखाए, द्रौपदी पर जासूसी को हल्का-फुल्का खेल न बनाए।"
+          },
+          "visual_direction": "Use constrained sight and hearing zones from Dhrishtadyumna's position, clearly marking them as incomplete observations; never give the player invasive control inside Draupadi's private space.",
+          "character_ids": ["dhrishtadyumna", "draupadi", "kunti", "pandavas"]
+        },
+        {
+          "id": "draupadi-enters-the-households-daily-labour",
+          "title": {"en": "A shared meal reveals how the disguised household actually lives", "hi": "साझा भोजन छिपे परिवार के वास्तविक जीवन को सामने लाता है"},
+          "narration": {
+            "en": "Kunti guides Draupadi through the household's food distribution: offerings and guests first, a large portion for Bhima, and the remainder divided among the family including Draupadi herself. The source says she follows these instructions cheerfully, but this domestic action does not answer the unresolved marriage question. At night the brothers speak of weapons and armies, giving the hidden observer evidence that their claimed social appearance is not their full identity.",
+            "hi": "कुंती द्रौपदी को घर के भोजन-वितरण का क्रम बताती हैं—पहले अर्पण और अतिथि, फिर भीम के लिए बड़ा भाग, और शेष परिवार में, जिसमें द्रौपदी स्वयं भी शामिल हैं। स्रोत कहता है कि वे निर्देश प्रसन्नता से निभाती हैं, पर यह घरेलू काम अनसुलझे विवाह-प्रश्न का उत्तर नहीं है। रात में भाई शस्त्रों और सेनाओं की बातें करते हैं, जिससे छिपे दर्शक को संकेत मिलता है कि उनका बाहरी वेश उनकी पूरी पहचान नहीं।"
+          },
+          "visual_direction": "Make food move through visible care routes with Draupadi participating, while keeping the marriage thread separate; later, let fragments of military conversation reach the watcher without exposing private dialogue wholesale.",
+          "character_ids": ["draupadi", "kunti", "bhima", "yudhishthira", "arjuna", "nakula", "sahadeva", "dhrishtadyumna"]
+        },
+        {
+          "id": "drupadas-relief-is-entangled-with-status-prejudice",
+          "title": {"en": "Drupada hopes for Arjuna while speaking the prejudice of his court", "hi": "द्रुपद अर्जुन की आशा रखते हुए अपने दरबार का जन्म-आधारित पूर्वाग्रह व्यक्त करते हैं"},
+          "narration": {
+            "en": "Dhrishtadyumna reports the unknown archer, Bhima's strength, the mother at the refuge and the brothers' military conversation. Drupada is relieved by the possibility that they are the Pandavas, yet his questions also demean people he regards as lower status and imagine Draupadi's marriage chiefly as honour placed on his own head. Consumer narration must report that prejudice as his historically situated fear, not invite users to classify human worth by it.",
+            "hi": "धृष्टद्युम्न अनजान धनुर्धर, भीम की शक्ति, आश्रय में बैठी माता और भाइयों की सैन्य बातचीत का विवरण देते हैं। उनके पांडव होने की संभावना से द्रुपद को राहत मिलती है, पर उनके प्रश्न उन लोगों को नीचा बताते हैं जिन्हें वे निम्न जन्म का मानते हैं और द्रौपदी के विवाह को मुख्यतः अपने सम्मान का प्रश्न बनाते हैं। उपभोक्ता कथा इस पूर्वाग्रह को उनके समय और भय का हिस्सा बताए, मनुष्यों का मूल्य उसी से न आँके।"
+          },
+          "visual_direction": "Show Drupada's possible-identity map branching through his biased assumptions, then visually flag those assumptions as character beliefs rather than reliable rankings or player filters.",
+          "character_ids": ["drupada", "dhrishtadyumna", "draupadi", "arjuna", "bhima", "kunti"]
+        },
+        {
+          "id": "panchalas-priest-asks-and-yudhishthira-keeps-the-name-back",
+          "title": {"en": "A respectful messenger asks who they are, but Yudhishthira answers with the contest", "hi": "सम्मानित दूत पहचान पूछता है, पर युधिष्ठिर प्रतियोगिता के परिणाम से उत्तर देते हैं"},
+          "narration": {
+            "en": "Drupada sends his priest to ask whether the strangers are Pandu's sons. Yudhishthira receives him with care but does not yet reveal the family name. He argues that Drupada publicly fixed the test and the unknown archer fulfilled it, so the king should not regret the result merely because he lacks lineage information. His answer protects the disguise while exposing a contradiction: the court advertised ability as the condition but now seeks birth credentials after the outcome.",
+            "hi": "द्रुपद अपने पुरोहित को यह पूछने भेजते हैं कि क्या अजनबी पांडु के पुत्र हैं। युधिष्ठिर उनका आदर करते हैं, पर अभी परिवार का नाम नहीं बताते। वे कहते हैं कि द्रुपद ने सार्वजनिक परीक्षा रखी और अनजान धनुर्धर ने उसे पूरा किया, इसलिए वंश की जानकारी न होने भर से राजा को परिणाम पर पछताना नहीं चाहिए। उत्तर पहचान बचाते हुए विरोधाभास दिखाता है—दरबार ने योग्यता को शर्त बताया था, पर परिणाम के बाद जन्म-परिचय माँग रहा है।"
+          },
+          "visual_direction": "Stage the conversation as two evidence routes—public rule fulfilled and private identity withheld—without a deceptive-dialogue score; the tension is institutional inconsistency, not cleverness points.",
+          "character_ids": ["panchala-priest", "yudhishthira", "bhima", "arjuna", "draupadi", "drupada"]
+        },
+        {
+          "id": "drupadas-feast-tests-conduct-instead-of-blood",
+          "title": {"en": "The palace lays out many lives, and the brothers reveal what they know", "hi": "महल अनेक जीवन-पथ सामने रखता है और भाई अपने कौशल से पहचान देते हैं"},
+          "narration": {
+            "en": "The family accepts a palace invitation, with Kunti and Draupadi travelling together. Drupada arranges objects associated with learning, agriculture, crafts, sport and war to observe what draws the strangers. They sit confidently in age order and attend most closely to weapons, strengthening Panchala's belief that they are trained rulers. This is circumstantial recognition through conduct, not a scientific test of inherited identity, and it prepares a direct conversation rather than completing it.",
+            "hi": "परिवार राजमहल का निमंत्रण स्वीकार करता है और कुंती तथा द्रौपदी साथ यात्रा करती हैं। द्रुपद ज्ञान, खेती, शिल्प, खेल और युद्ध से जुड़ी वस्तुएँ सजाकर देखते हैं कि अजनबी किस ओर आकर्षित होते हैं। वे आयु-क्रम से निडर बैठते और शस्त्रों पर अधिक ध्यान देते हैं, जिससे पांचाल का विश्वास बढ़ता है कि वे प्रशिक्षित राजकुमार हैं। यह व्यवहार से मिला परिस्थितिजन्य संकेत है, जन्म की वैज्ञानिक परीक्षा नहीं; अब सीधी बातचीत की तैयारी होती है।"
+          },
+          "visual_direction": "Offer a palace hall rich with real tools and crafts but keep observation passive; avoid a class-selection quiz, and let the family's coordinated movement become the clue that advances the story.",
+          "character_ids": ["drupada", "dhrishtadyumna", "kunti", "draupadi", "yudhishthira", "bhima", "arjuna", "nakula", "sahadeva"]
+        }
+      ]
+    },
+    {
+      "id": "drupada-learns-the-truth-and-challenges-the-shared-marriage",
+      "turn_id": "draupadi-choice-marriage",
+      "detail_ordinal": 5,
+      "status": "authored_not_projected",
+      "source_range": {"parva_slug": "adi", "start_ordinal": 197, "end_ordinal": 199, "span_sha256": "d2e8e644d296cade96ccb3384ae557c5b602b0e619a35232569e85e7d0d1030f"},
+      "title": {"en": "The Pandavas reveal themselves, and Drupada challenges the marriage plan", "hi": "पांडव अपनी पहचान बताते हैं और द्रुपद विवाह-योजना को चुनौती देते हैं"},
+      "decisive_change": {
+        "en": "The alliance becomes possible when Yudhishthira reveals the survivors, but the proposed shared marriage meets explicit objections before Vyasa supplies private mythic explanations that persuade Drupada without recording Draupadi's own deliberation.",
+        "hi": "युधिष्ठिर के जीवित पांडवों की पहचान बताने पर गठबंधन संभव होता है, पर साझा विवाह के प्रस्ताव पर स्पष्ट आपत्तियाँ उठती हैं। व्यास निजी मिथकीय व्याख्याएँ देकर द्रुपद को मनाते हैं, फिर भी द्रौपदी की अपनी विचार-प्रक्रिया दर्ज नहीं होती।"
+      },
+      "characters": ["draupadi", "drupada", "dhrishtadyumna", "yudhishthira", "kunti", "vyasa", "arjuna", "bhima", "nakula", "sahadeva"],
+      "places": ["drupadas-palace", "panchala-council-hall", "private-council-room", "mythic-himalaya"],
+      "visual_identity": "A public identity reveal opens a bright political bridge, but the marriage question enters a darker council chamber with visibly separated speakers; Vyasa's nested celestial story appears as a framed mythic world, never as objective evidence that fills Draupadi's missing voice.",
+      "beats": [
+        {
+          "id": "yudhishthira-reveals-the-family-and-drupada-promises-support",
+          "title": {"en": "Yudhishthira names the survivors and Drupada pledges restoration", "hi": "युधिष्ठिर जीवित परिवार का नाम बताते हैं और द्रुपद राज्य-वापसी का साथ देते हैं"},
+          "narration": {
+            "en": "Asked directly, Yudhishthira says that he, Bhima, Arjuna, Nakula and Sahadeva are Pandu's sons. He recounts their escape from the lac house. Drupada moves from uncertainty to joy, condemns the plot against them and promises support for restoring Yudhishthira's paternal throne. Draupadi's marriage is now inseparable from a Panchala–Pandava alliance capable of changing the balance at Hastinapura.",
+            "hi": "सीधे पूछे जाने पर युधिष्ठिर बताते हैं कि वे, भीम, अर्जुन, नकुल और सहदेव पांडु के पुत्र हैं। वे लाक्षागृह से बचने की पूरी बात कहते हैं। द्रुपद संदेह से आनंद की ओर जाते हैं, उनके विरुद्ध साजिश की निंदा करते हैं और युधिष्ठिर का पैतृक राज्य लौटाने में सहायता का वचन देते हैं। अब द्रौपदी का विवाह पांचाल-पांडव गठबंधन से अलग नहीं, जो हस्तिनापुर की शक्ति बदल सकता है।"
+          },
+          "visual_direction": "Unmask the five identities together and reconnect their severed Kuru lineage route, then extend a new Panchala alliance bridge; keep Draupadi visible at the junction because the political change runs through her life.",
+          "character_ids": ["yudhishthira", "bhima", "arjuna", "nakula", "sahadeva", "drupada", "draupadi", "kunti"]
+        },
+        {
+          "id": "drupada-expects-arjuna-and-hears-a-different-plan",
+          "title": {"en": "Drupada prepares for Arjuna and instead hears that all five will marry", "hi": "द्रुपद अर्जुन के विवाह की तैयारी करते हैं, पर पाँचों का प्रस्ताव सुनते हैं"},
+          "narration": {
+            "en": "Drupada asks Arjuna to take Draupadi's hand with the expected rites. Yudhishthira responds that he too must marry and then says she will be common wife to all five, citing Kunti's instruction and a family rule of equal sharing. The language treats Draupadi as a jewel obtained by the brothers. Consumer storytelling must retain that troubling frame as Yudhishthira's argument rather than silently endorse it or repeat it as the application's own description of her.",
+            "hi": "द्रुपद अपेक्षित रीति से अर्जुन और द्रौपदी का विवाह कराने को कहते हैं। युधिष्ठिर उत्तर देते हैं कि उनका भी विवाह होना है और फिर कहते हैं कि द्रौपदी पाँचों की साझा पत्नी होंगी; वे कुंती के निर्देश और प्राप्त वस्तु को बराबर बाँटने के पारिवारिक नियम का हवाला देते हैं। इस भाषा में द्रौपदी को भाइयों द्वारा मिली मणि कहा गया है। उपभोक्ता कथा इसे युधिष्ठिर का समस्याग्रस्त तर्क माने, चुपचाप स्वीकार न करे और ऐप की अपनी भाषा न बनाए।"
+          },
+          "visual_direction": "Visually separate Drupada's expected Arjuna route from Yudhishthira's five-way proposal; do not draw ownership tethers from brothers to Draupadi or label her as shared loot.",
+          "character_ids": ["drupada", "yudhishthira", "arjuna", "draupadi", "kunti", "bhima", "nakula", "sahadeva"]
+        },
+        {
+          "id": "drupada-and-dhrishtadyumna-object-before-vyasa-arrives",
+          "title": {"en": "Drupada and Dhrishtadyumna refuse to treat the proposal as self-evidently right", "hi": "द्रुपद और धृष्टद्युम्न प्रस्ताव को स्वतः उचित मानने से इनकार करते हैं"},
+          "narration": {
+            "en": "Drupada objects that he knows no accepted practice allowing one woman several husbands. Dhrishtadyumna raises the relation between elder and younger brothers and says he cannot approve with a clear conscience. Yudhishthira invokes subtle morality, precedents and obedience to his mother; Kunti fears her words becoming false. Their disagreement matters: the marriage is debated, not an uncontested command that everyone instantly regards as timeless virtue.",
+            "hi": "द्रुपद आपत्ति करते हैं कि वे ऐसी स्वीकृत प्रथा नहीं जानते जिसमें एक स्त्री के अनेक पति हों। धृष्टद्युम्न बड़े और छोटे भाइयों के संबंध का प्रश्न उठाकर कहते हैं कि वे साफ अंतरात्मा से सहमत नहीं हो सकते। युधिष्ठिर सूक्ष्म धर्म, पुराने उदाहरण और माता की आज्ञा बताते हैं; कुंती को अपने शब्द झूठे होने का भय है। यह मतभेद महत्वपूर्ण है—विवाह पर बहस होती है, वह ऐसा निर्विवाद आदेश नहीं जिसे सब तुरंत शाश्वत धर्म मान लें।"
+          },
+          "visual_direction": "Arrange speakers around a council circle with objections remaining lit after each reply; avoid a morality score that declares one historical argument universally correct before the scene resolves.",
+          "character_ids": ["drupada", "dhrishtadyumna", "yudhishthira", "kunti", "draupadi", "pandavas"]
+        },
+        {
+          "id": "vyasa-takes-drupada-aside-and-opens-a-celestial-origin-story",
+          "title": {"en": "Vyasa moves the dispute into a private mythic explanation", "hi": "व्यास विवाद को निजी मिथकीय व्याख्या की ओर ले जाते हैं"},
+          "narration": {
+            "en": "Vyasa arrives during the unresolved council, hears each position and says the practice has become obsolete even while affirming Yudhishthira's conclusion. He then takes Drupada alone into a private room. His nested account tells of five former Indras sent into human birth and the celestial Sri appointed as their common wife, and grants Drupada a vision of the brothers in celestial forms. This is an internal epic explanation offered to the father, not modern social instruction or a recorded conversation with Draupadi.",
+            "hi": "अनसुलझी सभा में व्यास आते हैं, सभी पक्ष सुनते हैं और युधिष्ठिर के निष्कर्ष को स्वीकार करते हुए भी कहते हैं कि यह प्रथा अब लुप्त हो चुकी है। फिर वे द्रुपद को अकेले निजी कक्ष में ले जाते हैं। उनकी कथा पाँच पूर्व इंद्रों के मानव जन्म और दिव्य श्री को उनकी साझा पत्नी नियुक्त किए जाने की बात कहती है तथा द्रुपद को भाइयों का दिव्य रूप दिखाती है। यह पिता को दी गई महाकाव्य की आंतरिक व्याख्या है, आज का सामाजिक निर्देश या द्रौपदी से दर्ज संवाद नहीं।"
+          },
+          "visual_direction": "Frame the celestial story inside a clearly bounded vision entered from the private room; retain an exit back to the unresolved human council so mythic imagery does not overwrite who was actually consulted.",
+          "character_ids": ["vyasa", "drupada", "five-former-indras", "sri", "pandavas", "draupadi"]
+        },
+        {
+          "id": "a-prior-life-boon-is-used-to-persuade-drupada",
+          "title": {"en": "A second origin story persuades Drupada but does not supply Draupadi's missing answer", "hi": "दूसरी जन्म-कथा द्रुपद को मनाती है, पर द्रौपदी का अनुपस्थित उत्तर नहीं देती"},
+          "narration": {
+            "en": "Vyasa adds that in a prior life a woman repeatedly asked Shiva for a fully accomplished husband and received a promise of five husbands in a future birth; he identifies Draupadi with that woman and calls the marriage preordained. Drupada is invited to act after hearing this. The account explains why characters accept an extraordinary marriage within this selected expression. It does not establish a universal marital prescription, erase the earlier objections, or provide direct consent that the text has not recorded from Draupadi herself.",
+            "hi": "व्यास दूसरी कथा जोड़ते हैं कि पिछले जन्म में एक स्त्री ने शिव से बार-बार सर्वगुणसंपन्न पति माँगा और भविष्य जन्म में पाँच पति मिलने का वर पाया; वे द्रौपदी को उसी स्त्री से जोड़कर विवाह को पूर्वनियत बताते हैं। द्रुपद से यह सुनकर निर्णय करने को कहा जाता है। यह कथा चुने गए स्रोत में पात्रों द्वारा असाधारण विवाह स्वीकार करने का कारण समझाती है। वह सार्वभौमिक विवाह-नियम नहीं बनाती, पिछली आपत्तियाँ नहीं मिटाती और द्रौपदी की वह सीधी सहमति नहीं देती जो पाठ ने दर्ज नहीं की।"
+          },
+          "visual_direction": "Show the prior-life request as attributed mythic memory with five echoes of one wish, then return to Draupadi in the present without placing words, approval gestures or destiny chains on her that the source does not give.",
+          "character_ids": ["vyasa", "drupada", "prior-life-woman", "shiva", "draupadi", "pandavas"]
+        }
+      ]
+    }
+  ]
+}

@@ -48,6 +48,7 @@ import {
   RAMAYANA_PANCHAVATI_SCENE_NODE_IDS,
 } from "./ramayana-panchavati-abduction";
 import { buildRamayanaCompass } from "./ramayana-compass";
+import { RAMAYANA_ROAD_HOME_BEAT_DEPTH } from "./ramayana-road-home-depth";
 import { RAMAYANA_LIVING_PORTAL_NODE_IDS, RAMAYANA_LIVING_ROUTE_EDGE_IDS_BY_NODE, RAMAYANA_LIVING_ROUTE_ROOT_IDS } from "./ramayana-living-portal-contract";
 import type { WorldNodeFamily } from "@/lib/domain/atlas";
 import type { StoryMoment, StoryWorldNode, StoryWorldPack, StoryWorldRoute } from "@/lib/domain/story-world";
@@ -163,7 +164,7 @@ const moments: Record<string, StoryMoment> = {
       { id: "exile-clothes-fall-away", title: { en: "The signs of exile are removed", hi: "वनवास के चिह्न उतरते हैं" }, narration: { en: "Rama, Lakshmana, Bharata, Sugriva, and Vibhishana bathe; the matted hair is cut and ceremonial clothes are prepared. Sita and the vanara women are adorned for the entry.", hi: "राम, लक्ष्मण, भरत, सुग्रीव और विभीषण स्नान करते हैं; जटाएँ काटी जाती हैं और राजकीय वस्त्र तैयार होते हैं। सीता और वानर स्त्रियाँ नगर-प्रवेश के लिए सजती हैं।" }, visualCue: "Bark, dust, water, cloth, and ornaments mark a visible transition between lives.", characterIds: ["rama", "sita", "lakshmana", "bharata", "sugriva", "vibhishana"] },
       { id: "city-entry", title: { en: "Ayodhya receives the whole story", hi: "अयोध्या पूरी कथा का स्वागत करती है" }, narration: { en: "Music and crowds accompany the entry. Rama publicly tells Ayodhya about Sugriva's friendship, Hanuman's prowess, and the work of the allies, so the victory is not reduced to one hero.", hi: "संगीत और जनसमूह नगर-प्रवेश के साथ चलते हैं। राम अयोध्या को सुग्रीव की मित्रता, हनुमान के पराक्रम और सभी साथियों के कार्य बताते हैं, ताकि विजय केवल एक नायक की न रह जाए।" }, visualCue: "The procession enters beneath flags while brief visions of the allies' deeds rise over the crowd.", characterIds: ["rama", "hanuman", "sugriva", "vibhishana"] },
       { id: "coronation-and-gifts", title: { en: "A crown, then gratitude", hi: "मुकुट, फिर कृतज्ञता" }, narration: { en: "Vasishta and the gathered officiants install Rama with Sita beside him. Honours move outward to the allies; Sita gives Hanuman the pearl necklace, remembering his service.", hi: "वसिष्ठ और अन्य आचार्य सीता के साथ राम का राज्याभिषेक करते हैं। सम्मान साथियों तक पहुँचता है; सीता हनुमान की सेवा याद कर उन्हें मोतियों का हार देती हैं।" }, visualCue: "Water, crown, white umbrellas, and the pearl necklace form four bright visual beats.", characterIds: ["rama", "sita", "vasishta", "hanuman", "sugriva", "vibhishana"] },
-      { id: "rule-begins", title: { en: "The ending opens into duty", hi: "अंत से कर्तव्य शुरू होता है" }, narration: { en: "The companions eventually return to their own worlds, and governance begins. The selected telling closes with an idealized vision of Rama's reign; Devam presents that as this source's sacred narrative, not a modern historical statistic.", hi: "साथी अंततः अपने-अपने लोक लौटते हैं और शासन आरंभ होता है। चुना हुआ पाठ राम-राज्य की आदर्श छवि के साथ समाप्त होता है; देवम इसे इसी स्रोत की पवित्र कथा मानता है, आधुनिक ऐतिहासिक आँकड़ा नहीं।" }, visualCue: "Departing paths spread from Ayodhya as the city settles into a dawn panorama.", characterIds: ["rama", "bharata", "lakshmana", "sugriva", "vibhishana"] },
+      { id: "rule-begins", title: { en: "The ending opens into duty", hi: "अंत से कर्तव्य शुरू होता है" }, narration: { en: "The companions eventually return to their own communities, and governance begins. Ayodhya's vision of a flourishing reign now becomes a promise that daily decisions must attempt to honour.", hi: "साथी अंततः अपने-अपने समुदायों में लौटते हैं और शासन आरंभ होता है। अयोध्या के समृद्ध शासन का स्वप्न अब ऐसा वचन बनता है जिसे रोज़ के निर्णयों में निभाने का प्रयास करना होगा।" }, visualCue: "Departing paths spread from Ayodhya as the city settles into a dawn panorama.", characterIds: ["rama", "bharata", "lakshmana", "sugriva", "vibhishana"] },
     ],
   },
 };
@@ -284,5 +285,22 @@ export function buildRamayanaStoryWorldPack(): StoryWorldPack {
 export function getRamayanaDistrictMoments(districtId: string): Record<string, StoryMoment> | null {
   const district = storyDistricts.find((candidate) => candidate.id === districtId);
   if (!district) return null;
-  return Object.fromEntries(district.momentIds.map((momentId) => [momentId, moments[momentId]]));
+  return Object.fromEntries(district.momentIds.map((momentId) => {
+    const moment = moments[momentId];
+    if (districtId !== "road-home-v1") return [momentId, moment];
+    return [momentId, {
+      ...moment,
+      beats: moment.beats.map((beat) => {
+        const depth = RAMAYANA_ROAD_HOME_BEAT_DEPTH[beat.id];
+        if (!depth) throw new Error(`Road-home beat has no depth continuation: ${beat.id}`);
+        return {
+          ...beat,
+          narration: {
+            en: `${beat.narration.en} ${depth.en}`,
+            hi: `${beat.narration.hi} ${depth.hi}`,
+          },
+        };
+      }),
+    }];
+  }));
 }
